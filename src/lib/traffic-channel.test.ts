@@ -8,7 +8,9 @@ describe("traffic channel", () => {
     expect(classifyTrafficChannel("https://www.google.com/search?q=cfa")).toBe("google");
     expect(classifyTrafficChannel("https://chatgpt.com/")).toBe("chatgpt");
     expect(classifyTrafficChannel("https://chat.openai.com/")).toBe("chatgpt");
-    expect(classifyTrafficChannel("https://bing.com/")).toBe("other");
+    expect(classifyTrafficChannel("https://www.bing.com/")).toBe("bing");
+    expect(classifyTrafficChannel("https://bing.com/search?q=ascp+mls")).toBe("bing");
+    expect(classifyTrafficChannel("https://www.msn.com/")).toBe("bing");
   });
 
   it("classifies llm from utm even when referrer is empty", () => {

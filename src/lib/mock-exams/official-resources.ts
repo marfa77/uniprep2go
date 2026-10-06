@@ -716,6 +716,24 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "ascp-mls-readiness-check": {
+    certifier: "ASCP Board of Certification — MLS(ASCP)",
+    verifyAtUrl: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLS",
+    sources: [
+      {
+        label: "ASCP BOC — Medical Laboratory Scientist (MLS)",
+        url: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLS",
+      },
+      {
+        label: "ASCP BOC — About the examination",
+        url: "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+      },
+      {
+        label: "ASCP BOC — MLS content guideline PDF",
+        url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf",
+      },
+    ],
+  },
   "ascp-mlt-readiness-check": {
     certifier: "ASCP Board of Certification — MLT(ASCP)",
     verifyAtUrl: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLT",

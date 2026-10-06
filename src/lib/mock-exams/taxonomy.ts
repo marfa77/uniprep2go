@@ -439,7 +439,7 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
   "ascp-mls-readiness-check": {
     verticalId: "lab",
     familyId: "ascp",
-    searchAliases: ["MLS", "ASCP", "medical laboratory"],
+    searchAliases: ["MLS", "ASCP MLS", "medical laboratory scientist", "CLS", "clinical lab scientist"],
   },
   "rd-exam-readiness-check": {
     verticalId: "nutrition",

@@ -94,6 +94,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). Free 60Q / 45 min / 84% cognitive diagnostic live now — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
     "Planned 60-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety). Free 60Q / 75 min diagnostic live now — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
+  "ascp-mls-anki-deck":
+    "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). Free 60Q / 90 min diagnostic live now — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
     "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). Free 60Q / 75 min diagnostic live now — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
   "aswb-bachelors-anki-deck":
@@ -205,6 +207,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned AHA BLS Provider Anki for 2025 adult CPR/AED, infant heel-of-1-hand or 2-thumb compressions, FBAO cycles, and team dynamics. Free 60-question / 45-minute / 84% cognitive check is live; official HeartCode BLS cognitive is about 25 questions / 84% plus skills. Not a BLS card and not Heartsaver/ACLS.",
   "ardms-spi-anki-deck":
     "Planned ARDMS SPI Anki for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check is live; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
+  "ascp-mls-anki-deck":
+    "Planned ASCP MLS Anki for blood bank, chemistry, hematology, and microbiology/immunology. Free 60-question / 90-minute readiness check is live; official BOC MLS is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLT.",
   "ascp-mlt-anki-deck":
     "Planned ASCP MLT Anki for blood bank, chemistry, hematology, and microbiology. Free 60-question / 75-minute readiness check is live; official BOC MLT is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLS and not the California-only 80Q / 2h form.",
   "aswb-bachelors-anki-deck":
@@ -476,6 +480,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full 110-item SPI form and not an image-heavy specialty bank.",
+  },
+  "ascp-mls-anki-deck": {
+    ourEdge: [
+      "Planned 60-card MLS Anki for blood bank, chemistry, hematology, microbiology/immunology",
+      "Free 60Q / 90 min timed diagnostic live now — first mock free, no signup",
+      "Honest: official BOC MLS is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
+      "≠ ASCP MLT technician credential",
+    ],
+    summaryProse:
+      "OpenExamPrep and CareerEmployer 200+ banks plus ASCP’s paid BOC interactive exam own volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLT dump.",
   },
   "ascp-mlt-anki-deck": {
     ourEdge: [
@@ -2040,6 +2054,24 @@ Candidates confuse SPL with axial resolution, treat 90° Doppler as a strong shi
 ### What this does not replace
 
 ARDMS/Inteleos registration or a full 110-item sitting. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ARDMS material.`,
+
+  "ascp-mls-anki-deck": `### What is inside
+
+Planned **60** flashcards across blood bank, chemistry, hematology, and microbiology/immunology — the same four buckets as the free readiness check. Built for ASCP BOC **MLS** scientist judgment (antibody ID, transfusion practice, hemolysis flags, CBC smear holds, cultures), not MLT-only technician dumps and not phlebotomy-only PBT.
+
+### Plan with the free MLS mock (live now)
+
+**Start:** Take the [free 60-question ASCP MLS readiness check](/mock-exams/ascp-mls-readiness-check) (90 minutes / 70% diagnostic). **Then:** Use the BOC MLS content guideline and a full-length CAT-style bank for stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+
+Official ASCP BOC MLS: **100 multiple-choice questions / 2 hours 30 minutes / computer-adaptive / scaled pass 400** (100–999). Our mock is a shorter linear diagnostic. Official content also weights urinalysis, immunology, and laboratory operations (5–10% each) — those themes appear inside the four UniPrep buckets, not as extra topics. MLT(ASCP) is a separate technician exam.
+
+### Pitfalls this deck targets (when live)
+
+Candidates treat a 60Q free check as the 100-item CAT, confuse MLS with MLT, or skip clerical ID and specimen-integrity items. Cards force scientist-level decisions under spaced recall.
+
+### What this does not replace
+
+ASCP BOC registration, Pearson VUE scheduling, or a full-length CAT bank. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ASCP BOC material.`,
 
   "ascp-mlt-anki-deck": `### What is inside
 

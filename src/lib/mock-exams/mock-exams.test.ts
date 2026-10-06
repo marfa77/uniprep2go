@@ -957,6 +957,14 @@ describe("llm visibility", () => {
     expect(buildMockExamMarkdown(cdcp)).toContain("68%");
     expect(buildMockExamFacts(cdcp).runnable).toBe(true);
 
+    const mls = getMockExamConfig("ascp-mls-readiness-check")!;
+    expect(mls.questionCount).toBe(60);
+    expect(mls.durationMinutes).toBe(90);
+    expect(mls.officialSourceNote).toMatch(/100/);
+    expect(mls.officialSourceNote).toMatch(/not MLT/i);
+    expect(buildMockExamMarkdown(mls)).toContain("Medical Laboratory Scientist");
+    expect(buildMockExamFacts(mls).runnable).toBe(true);
+
     const nebosh = getMockExamConfig("nebosh-readiness-check")!;
     expect(buildMockExamMarkdown(nebosh)).toContain("NEBOSH");
     expect(buildMockExamMarkdown(nebosh)).toContain("GIC1");

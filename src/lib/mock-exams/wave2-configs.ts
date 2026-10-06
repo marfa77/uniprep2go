@@ -424,10 +424,14 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "hematology", label: "Hematology & hemostasis" },
       { id: "micro-immuno", label: "Microbiology & immunology" },
     ]),
-    officialSourceNote: "ASCP BOC MLS content themes. Not an ASCP exam.",
-    description: "Free 60-question ASCP MLS readiness check.",
-    examBody: "ASCP BOC",
+    officialSourceNote:
+      "Official ASCP BOC MLS(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This free check is a shorter 60-question / 90-minute linear diagnostic on four benches (blood bank, chemistry, hematology, microbiology/immunology) — not CAT and not MLT. Independent UniPrep2Go practice — not ASCP BOC material.",
+    description:
+      "Free 60-question ASCP MLS readiness check (90 min) with topic scoring — shorter than the official 100-question CAT.",
+    examBody: "ASCP Board of Certification",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    searchAliases: ["MLS", "ASCP MLS", "medical laboratory scientist", "CLS"],
+    lastUpdated: "2026-10-06",
   }),
   nicheReadinessConfig({
     slug: "rd-exam-readiness-check",

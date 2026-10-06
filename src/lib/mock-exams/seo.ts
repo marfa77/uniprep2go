@@ -556,6 +556,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Sonography students and working sonographers sitting SPI as the physics gate — not ABD/OB image interpretation and not ARRT sonography.",
     practiceTestLabel: "ARDMS SPI practice test",
   },
+  "ascp-mls-readiness-check": {
+    title: "Free ASCP MLS Practice Test 2026 | 60Q Lab Mock",
+    description:
+      "ASCP MLS practice test — first mock free, no signup: 60 timed questions, 90 minutes, 70% readiness target. Official BOC MLS is 100Q CAT / 2h30 / scaled 400. Independent — not ASCP material. Not MLT.",
+    keywords: [
+      "ascp mls practice test",
+      "free mls practice test",
+      "mls ascp practice exam",
+      "medical laboratory scientist practice test",
+      "ascp mls mock",
+      "mls anki",
+    ],
+    headline: "Free ASCP MLS Practice Test — 60 Lab Questions",
+    intro:
+      "A timed 60-question / 90-minute diagnostic for ASCP BOC MLS — blood bank, chemistry, hematology, and microbiology/immunology. Official MLS(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLT technician.",
+    audience:
+      "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
+    practiceTestLabel: "ASCP MLS practice test",
+  },
   "ascp-mlt-readiness-check": {
     title: "Free ASCP MLT Practice Test 2026 | 60Q Lab Mock",
     description:

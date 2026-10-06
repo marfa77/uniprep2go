@@ -3712,6 +3712,74 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "ASCP® and BOC® marks belong to the American Society for Clinical Pathology. UniPrep2Go is not affiliated with or endorsed by ASCP.",
   },
+  "ascp-mls": {
+    examKey: "ascp-mls",
+    pageHeading: "ASCP MLS Exam — Facts, Content Areas & Prep",
+    intro:
+      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 90-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
+    exam_facts: {
+      exam_name: "Medical Laboratory Scientist — MLS(ASCP) / MLS(ASCPi)",
+      administered_by: "ASCP Board of Certification (BOC)",
+      question_count: "100 multiple-choice, one best answer (computer adaptive)",
+      time_limit: "2 hours 30 minutes",
+      scoring_scale: "Scaled 100–999 (ASCP BOC CAT)",
+      passing_score: "Scaled 400 (no fixed percent correct)",
+      delivery: "Computer adaptive testing (CAT) via Pearson VUE — confirm when you book",
+      outline_effective_date:
+        "Current ASCP BOC MLS content guideline — verify at ascp.org (guideline PDF on BOC site)",
+      verify_at_url: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLS",
+    },
+    official_sources: [
+      {
+        label: "ASCP BOC — Medical Laboratory Scientist (MLS)",
+        url: "https://www.ascp.org/boc/explore-credentials/view-all-credentials/MLS",
+      },
+      {
+        label: "ASCP BOC — About the examination (100Q / 2h30 / scaled 400)",
+        url: "https://www.ascp.org/boc/earn-a-credential/examination-process/about-the-examination",
+      },
+      {
+        label: "ASCP BOC — MLS(ASCP) / MLS(ASCPi) content guideline PDF",
+        url: "https://ascpcontentwebsite.blob.core.windows.net/boccontent/docs/default-source/explore-credentials/content-guidelines/ascp_ascpi_mls_content_guideline.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Blood Banking", weight: "17–22% official · UniPrep mock 25% (15 of 60)" },
+      { domain: "Chemistry", weight: "17–22% official · UniPrep mock 25%" },
+      { domain: "Hematology", weight: "17–22% official · UniPrep mock 25%" },
+      { domain: "Microbiology", weight: "17–22% official · UniPrep mock 25% (with immunology items)" },
+      { domain: "Urinalysis and Other Body Fluids", weight: "5–10% official (folded into UniPrep chemistry items)" },
+      { domain: "Immunology", weight: "5–10% official (folded into UniPrep micro/immuno items)" },
+      { domain: "Laboratory Operations", weight: "5–10% official (QC/safety folded into UniPrep topics)" },
+    ],
+    whats_changed: [
+      "National MLS(ASCP) remains 100 CAT items / 2 hours 30 minutes / scaled 400 — third-party mocks that use a percent pass are not the BOC scale.",
+      "UniPrep’s free check is 60 questions / 90 minutes / 70% diagnostic with four benches — not CAT and not 1:1 BOC percentages.",
+      "MLT(ASCP) is a separate technician credential with the same sitting shape but a different guideline and eligibility path.",
+    ],
+    high_yield_facts: [
+      "Official MLS(ASCP): 100 CAT MCQ / 2h30 / scaled 400 (100–999). UniPrep free check: 60Q / 90 min / 70% linear diagnostic.",
+      "Heaviest official areas: blood bank, chemistry, hematology, and microbiology (17–22% each); UA, immunology, and lab ops 5–10% each.",
+      "MLS is scientist-level — ASCP MLT is a separate technician credential.",
+      "Packed RBCs 1–6°C; platelets 20–24°C with agitation; do not report hemolyzed potassium as the patient’s K.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ASCP MLS exam?",
+        a: "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s free check is a shorter 60-question / 90-minute linear diagnostic.",
+      },
+      {
+        q: "Is UniPrep’s MLS check the official ASCP exam?",
+        a: "No. The free 60-question check is independent practice. The matching Anki deck is planned (waitlist). Not ASCP BOC material.",
+      },
+      {
+        q: "Is MLS the same as MLT?",
+        a: "No. MLS(ASCP) is the medical laboratory scientist credential. MLT(ASCP) is the medical laboratory technician exam with a different content guideline and eligibility path.",
+      },
+    ],
+    trademark_note:
+      "ASCP® and BOC® marks belong to the American Society for Clinical Pathology. UniPrep2Go is not affiliated with or endorsed by ASCP.",
+  },
   "aswb-bachelors": {
     examKey: "aswb-bachelors",
     pageHeading: "ASWB Bachelors Exam — Facts, Blueprint & Prep",
@@ -4490,6 +4558,7 @@ const deckExamKeyMap: Record<string, string> = {
   "aha-bls-provider-anki-deck": "aha-bls",
   "ardms-spi-anki-deck": "ardms-spi",
   "ascp-mlt-anki-deck": "ascp-mlt",
+  "ascp-mls-anki-deck": "ascp-mls",
   "aswb-bachelors-anki-deck": "aswb-bachelors",
   "aswb-clinical-anki-deck": "aswb-clinical",
   "barber-state-anki-deck": "nic-barber-theory",

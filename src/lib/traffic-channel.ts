@@ -1,6 +1,6 @@
 import { isLlmUtm } from "./traffic-attribution";
 
-export type TrafficChannel = "google" | "chatgpt" | "llm" | "direct" | "other";
+export type TrafficChannel = "google" | "bing" | "chatgpt" | "llm" | "direct" | "other";
 
 export type TrafficChannelOptions = {
   utmSource?: string;
@@ -9,6 +9,7 @@ export type TrafficChannelOptions = {
 
 export const TRAFFIC_CHANNELS: TrafficChannel[] = [
   "google",
+  "bing",
   "chatgpt",
   "llm",
   "direct",
@@ -61,6 +62,15 @@ export function classifyTrafficChannel(
   }
 
   if (
+    host === "bing.com" ||
+    host.endsWith(".bing.com") ||
+    host === "msn.com" ||
+    host.endsWith(".msn.com")
+  ) {
+    return "bing";
+  }
+
+  if (
     host === "chatgpt.com" ||
     host.endsWith(".chatgpt.com") ||
     host === "chat.openai.com" ||
@@ -82,6 +92,7 @@ export function classifyTrafficChannel(
 
 export const trafficChannelLabels: Record<TrafficChannel, string> = {
   google: "Google",
+  bing: "Bing",
   chatgpt: "ChatGPT",
   llm: "LLM",
   direct: "Direct",
@@ -91,6 +102,7 @@ export const trafficChannelLabels: Record<TrafficChannel, string> = {
 export function emptyChannelCounts(): Record<TrafficChannel, number> {
   return {
     google: 0,
+    bing: 0,
     chatgpt: 0,
     llm: 0,
     direct: 0,

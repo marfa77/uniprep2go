@@ -75,6 +75,7 @@ const sampleStats: FunnelStats = {
     periodReturning: 5,
     periodByChannel: {
       google: 12,
+      bing: 0,
       chatgpt: 4,
       llm: 3,
       direct: 5,
@@ -109,6 +110,7 @@ const sampleStats: FunnelStats = {
     },
     pathsByChannel: {
       google: {},
+      bing: {},
       chatgpt: {},
       llm: {},
       direct: {},
@@ -126,6 +128,7 @@ const sampleStats: FunnelStats = {
         },
         byChannel: {
           google: 4,
+          bing: 0,
           chatgpt: 2,
           llm: 1,
           direct: 12,
@@ -137,7 +140,7 @@ const sampleStats: FunnelStats = {
         unique: 22,
         pageViews: 210,
         paths: { "/": { unique: 9, views: 15 } },
-        byChannel: { google: 3, chatgpt: 1, llm: 0, direct: 14, other: 4 },
+        byChannel: { google: 3, bing: 0, chatgpt: 1, llm: 0, direct: 14, other: 4 },
         byCountry: { US: 8 },
       },
     },
@@ -239,14 +242,14 @@ describe("telegram stats", () => {
               unique: 477,
               pageViews: 898,
               paths,
-              byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
+              byChannel: { google: 0, bing: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
               byCountry: { SG: 458, CN: 9, US: 6 },
             },
             "2026-06-08": {
               unique: 13,
               pageViews: 26,
               paths: { "/": { unique: 5, views: 8 } },
-              byChannel: { google: 2, chatgpt: 0, llm: 1, direct: 8, other: 2 },
+              byChannel: { google: 2, bing: 0, chatgpt: 0, llm: 1, direct: 8, other: 2 },
               byCountry: { US: 7, DE: 3 },
             },
           },
@@ -292,6 +295,15 @@ describe("telegram stats", () => {
         referrer: "https://google.com/",
       },
       {
+        eventId: "b1",
+        name: "mock_landing_view",
+        deckSlug: "ascp-mls-anki-deck",
+        occurredAt: "2026-06-10T10:20:00.000Z",
+        visitorId: "b-v1",
+        path: "/mock-exams/ascp-mls-readiness-check",
+        referrer: "https://www.bing.com/",
+      },
+      {
         eventId: "c1",
         name: "page_view",
         deckSlug: "czech-a2-cce-anki-deck",
@@ -329,6 +341,8 @@ describe("telegram stats", () => {
       "/blog/us-naturalization-civics-test-100-questions-only-10 — 2 (2u)",
     );
     expect(block).toContain("/mock-exams/us-citizenship-readiness-check — 1 (1u)");
+    expect(block).toContain("Top pages (Bing · recent):");
+    expect(block).toContain("/mock-exams/ascp-mls-readiness-check — 1 (1u)");
     expect(block).toContain("Top pages (LLM · ChatGPT+LLM · recent):");
     expect(block).toContain("/blog/czech-cce-language-vs-realie-civics-two-exams — 1 (1u)");
     expect(block).toContain(
@@ -345,6 +359,7 @@ describe("telegram stats", () => {
         ...sampleStats.visitors,
         lifetimeByChannel: {
           google: 20,
+          bing: 0,
           chatgpt: 6,
           llm: 4,
           direct: 5,
@@ -355,6 +370,7 @@ describe("telegram stats", () => {
             "/decks/california-real-estate-exam-anki-deck": 8,
             "/decks/cfa-level-1-anki-deck": 5,
           },
+          bing: {},
           chatgpt: {
             "/decks/frm-part-1-anki-deck": 3,
           },
@@ -368,6 +384,7 @@ describe("telegram stats", () => {
           google: {
             "/blog/us-naturalization-civics-test-100-questions-only-10": 5,
           },
+          bing: {},
           chatgpt: {
             "/blog/czech-cce-language-vs-realie-civics-two-exams": 2,
           },
@@ -407,6 +424,7 @@ describe("telegram stats", () => {
         ...sampleStats.visitors,
         pathsByChannel: {
           google: {},
+          bing: {},
           chatgpt: {},
           llm: {},
           direct: {},
@@ -416,6 +434,7 @@ describe("telegram stats", () => {
           google: {
             "/decks/california-real-estate-exam-anki-deck": 2,
           },
+          bing: {},
           chatgpt: {
             "/decks/frm-part-1-anki-deck": 1,
           },
@@ -443,6 +462,7 @@ describe("telegram stats", () => {
             "/blog/us-naturalization-civics-test-100-questions-only-10": 5,
             "/mock-exams/us-citizenship-readiness-check": 3,
           },
+          bing: {},
           chatgpt: {
             "/blog/czech-cce-language-vs-realie-civics-two-exams": 2,
           },
@@ -614,7 +634,7 @@ describe("telegram stats", () => {
         unique: 477,
         pageViews: 898,
         paths,
-        byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
+        byChannel: { google: 0, bing: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
         byCountry: { SG: 458, CN: 9, US: 6 },
       },
     };
@@ -675,7 +695,7 @@ describe("telegram stats", () => {
               unique: 20,
               pageViews: 400,
               paths,
-              byChannel: { google: 2, chatgpt: 0, llm: 0, direct: 18, other: 0 },
+              byChannel: { google: 2, bing: 0, chatgpt: 0, llm: 0, direct: 18, other: 0 },
               byCountry: { US: 20 },
             },
           },
@@ -717,7 +737,7 @@ describe("telegram stats", () => {
                 "/mock-exams/aha-bls-provider-readiness-check": { unique: 3, views: 5 },
                 "/decks/series-63-anki-deck": { unique: 2, views: 4 },
               },
-              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 9, other: 0 },
+              byChannel: { google: 1, bing: 0, chatgpt: 0, llm: 0, direct: 9, other: 0 },
               byCountry: { US: 10 },
             },
             "2026-06-04": {
@@ -727,7 +747,7 @@ describe("telegram stats", () => {
                 "/mock-exams/aha-bls-provider-readiness-check": { unique: 2, views: 3 },
                 "/decks/series-63-anki-deck": { unique: 4, views: 6 },
               },
-              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 7, other: 0 },
+              byChannel: { google: 1, bing: 0, chatgpt: 0, llm: 0, direct: 7, other: 0 },
               byCountry: { US: 8 },
             },
             "2026-05-20": {
@@ -737,7 +757,7 @@ describe("telegram stats", () => {
                 "/mock-exams/aha-bls-provider-readiness-check": { unique: 40, views: 80 },
                 "/decks/series-63-anki-deck": { unique: 40, views: 80 },
               },
-              byChannel: { google: 2, chatgpt: 0, llm: 0, direct: 48, other: 0 },
+              byChannel: { google: 2, bing: 0, chatgpt: 0, llm: 0, direct: 48, other: 0 },
               byCountry: { US: 50 },
             },
           },
@@ -774,7 +794,7 @@ describe("telegram stats", () => {
                 "/decks/keep": { unique: 3, views: 5 },
                 "/decks/drop": { unique: 1, views: 30 },
               },
-              byChannel: { google: 1, chatgpt: 0, llm: 0, direct: 3, other: 0 },
+              byChannel: { google: 1, bing: 0, chatgpt: 0, llm: 0, direct: 3, other: 0 },
               byCountry: { US: 4 },
             },
           },

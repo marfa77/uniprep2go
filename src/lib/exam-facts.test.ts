@@ -254,6 +254,15 @@ describe("exam facts layer", () => {
     expect(profile!.candidate_qa.some((item) => /ABD|OB/i.test(item.a))).toBe(true);
   });
 
+  it("returns an ASCP MLS profile with 100Q CAT / scaled 400 honesty", () => {
+    const profile = getExamFactsProfileForDeck("ascp-mls-anki-deck");
+    expect(profile).not.toBeNull();
+    expect(profile!.exam_facts.question_count).toMatch(/100/);
+    expect(profile!.exam_facts.passing_score).toMatch(/400/);
+    expect(profile!.exam_facts.time_limit).toMatch(/2 hours 30/);
+    expect(profile!.candidate_qa.some((item) => /MLT/i.test(item.a))).toBe(true);
+  });
+
   it("returns an ASCP MLT profile with 100Q CAT / scaled 400 honesty", () => {
     const profile = getExamFactsProfileForDeck("ascp-mlt-anki-deck");
     expect(profile).not.toBeNull();

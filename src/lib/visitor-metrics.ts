@@ -74,6 +74,7 @@ export type VisitorMetrics = {
 function emptyChannelPathCounts(): Record<TrafficChannel, Record<string, number>> {
   return {
     google: {},
+    bing: {},
     chatgpt: {},
     llm: {},
     direct: {},
@@ -140,6 +141,7 @@ type GlobalWithVisitorSets = typeof globalThis & {
 function emptyChannelSets(): Record<TrafficChannel, Set<string>> {
   return {
     google: new Set(),
+    bing: new Set(),
     chatgpt: new Set(),
     llm: new Set(),
     direct: new Set(),
@@ -361,6 +363,7 @@ function buildDailySnapshotsFromMemoryStore(store: VisitorSetStore): Record<stri
       paths,
       byChannel: {
         google: channelBucket.google.size,
+        bing: channelBucket.bing.size,
         chatgpt: channelBucket.chatgpt.size,
         llm: channelBucket.llm.size,
         direct: channelBucket.direct.size,
@@ -968,7 +971,7 @@ async function writeCachedValue(client: RedisLike, key: string, value: unknown, 
   }
 }
 
-const PATH_CHANNEL_RANK_CHANNELS: TrafficChannel[] = ["google", "chatgpt", "llm"];
+const PATH_CHANNEL_RANK_CHANNELS: TrafficChannel[] = ["google", "bing", "chatgpt", "llm"];
 
 export async function readVisitorMetricsFromRedis(client: RedisLike): Promise<VisitorMetrics> {
   const [
@@ -1243,13 +1246,9 @@ async function readDailySnapshotsFromRedis(
       unique,
       pageViews,
       paths,
-      byChannel: {
-        google: channelCounts[0] ?? 0,
-        chatgpt: channelCounts[1] ?? 0,
-        llm: channelCounts[2] ?? 0,
-        direct: channelCounts[3] ?? 0,
-        other: channelCounts[4] ?? 0,
-      },
+      byChannel: Object.fromEntries(
+        TRAFFIC_CHANNELS.map((channel, index) => [channel, channelCounts[index] ?? 0]),
+      ) as Record<TrafficChannel, number>,
       byCountry,
     };
 

@@ -1279,16 +1279,27 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "ascp-mls-readiness-check": explainer({
     practiceTestName: "ASCP MLS Practice Test",
     whatIsExam:
-      "The ASCP Board of Certification Medical Laboratory Scientist (MLS) exam certifies clinical lab scientists across blood bank, chemistry, hematology, microbiology, and lab operations.",
+      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 90-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
     administeredBy: "ASCP Board of Certification",
+    officialFormat:
+      "100 one-best-answer multiple-choice questions, computer adaptive, 2 hours 30 minutes, Pearson VUE; scaled pass 400 (100–999). UniPrep’s free check is 60 questions / 90 minutes / 70% diagnostic on four benches — not CAT and not 1:1 BOC percentages.",
+    whoFor:
+      "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
+    howToPrepare:
+      "Take this free 60-question timed check for a topic report, then use the BOC MLS content guideline and a full-length CAT-style bank for stamina. The matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
     examFaqs: [
       {
-        question: "What is the ASCP MLS exam?",
+        question: "How many questions are on the ASCP MLS exam?",
         answer:
-          "MLS (ASCP) is the primary national certification exam for medical laboratory scientists / clinical lab scientists.",
+          "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s free check is a shorter 60-question / 90-minute linear diagnostic.",
+      },
+      {
+        question: "Is MLS the same as MLT?",
+        answer:
+          "No. MLS(ASCP) is the medical laboratory scientist credential. MLT(ASCP) is the technician exam with a different content guideline and eligibility path.",
       },
     ],
-    keywords: ["ascp mls practice test", "medical laboratory scientist practice exam"],
+    keywords: ["ascp mls practice test", "medical laboratory scientist practice exam", "free mls mock"],
   }),
   "rd-exam-readiness-check": explainer({
     practiceTestName: "RD Exam Practice Test",

@@ -1,0 +1,1229 @@
+{
+  "ascp-mls-readiness-check": {
+    "ascp-mls-readiness-check-blood-bank-001": {
+      "prompt": "A patient's forward ABO typing shows 4+ agglutination with anti-A and 0 with anti-B. Which result is the forward-type interpretation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The plasma contains anti-B, consistent with group A"
+        },
+        {
+          "id": "b",
+          "text": "The plasma contains anti-A, consistent with group B"
+        },
+        {
+          "id": "c",
+          "text": "The red cells express A antigen but not B antigen"
+        },
+        {
+          "id": "d",
+          "text": "The red cells express D antigen but not A or B antigen"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Forward typing tests patient red cells with known antisera. Reactivity with anti-A alone demonstrates A antigen on the cells, so the forward type is group A.",
+      "distractorExplanations": {
+        "a": "This predicts the expected reverse-type plasma antibody; forward typing directly identifies red-cell antigens, not antibodies in plasma.",
+        "b": "Anti-A in plasma would support group B in reverse typing, but the observed anti-A reagent reaction demonstrates A antigen on the patient's cells.",
+        "d": "D status requires a separate anti-D test; anti-A and anti-B reactions cannot establish whether the patient's cells express D antigen."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-002": {
+      "prompt": "A patient's red cells type as group O. Which reverse-typing setup and expected result would confirm that ABO assignment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Patient plasma tested with group O screening cells; both cells nonreactive"
+        },
+        {
+          "id": "b",
+          "text": "Patient plasma tested with A1 and B reagent cells; both cells reactive"
+        },
+        {
+          "id": "c",
+          "text": "Patient red cells tested with anti-A and anti-B; both reagents nonreactive"
+        },
+        {
+          "id": "d",
+          "text": "Patient plasma tested with an autocontrol and antibody panel; all cells reactive"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Reverse typing detects expected ABO isoagglutinins in patient plasma. Group O plasma normally contains both anti-A and anti-B, so it reacts with both A1 and B reagent cells.",
+      "distractorExplanations": {
+        "a": "Group O screening cells are used to detect unexpected non-ABO antibodies; because they lack A and B antigens, they cannot confirm expected anti-A and anti-B.",
+        "c": "Testing patient red cells with anti-A and anti-B repeats the forward type; reverse typing requires patient plasma and known A1 and B cells.",
+        "d": "An autocontrol and panel investigate unexpected antibodies or autoantibodies; they do not provide the reciprocal ABO confirmation supplied by A1 and B cells."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-004": {
+      "prompt": "A pretransfusion specimen has concordant ABO/Rh typing. The plasma reacts 2+ with screening cell II at the AHG phase but not with cells I or III. What does this test result establish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An expected ABO isoagglutinin is present in the plasma"
+        },
+        {
+          "id": "b",
+          "text": "The patient's red cells are coated with IgG in vivo"
+        },
+        {
+          "id": "c",
+          "text": "An unexpected red-cell antibody may be present and requires identification"
+        },
+        {
+          "id": "d",
+          "text": "The donor unit is incompatible with the patient's plasma"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An antibody screen tests patient plasma against reagent group O cells. AHG-phase reactivity with one screening cell suggests an unexpected antibody and calls for an identification panel.",
+      "distractorExplanations": {
+        "a": "Expected anti-A or anti-B is evaluated by reverse ABO typing with A1 and B cells, not by an AHG screen using group O cells.",
+        "b": "In-vivo coating of the patient's red cells is detected by a DAT; the antibody screen detects antibody free in plasma by an indirect antiglobulin test.",
+        "d": "A screen uses reagent cells rather than the selected donor unit, so it cannot by itself establish that a particular unit is crossmatch-incompatible."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-005": {
+      "prompt": "An antibody screen is nonreactive at immediate spin and 37°C but becomes 2+ after washing and adding AHG. Why was the AHG phase necessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It cross-links IgG-sensitized red cells that do not directly agglutinate"
+        },
+        {
+          "id": "b",
+          "text": "It supplies complement so cold IgM can bind at room temperature"
+        },
+        {
+          "id": "c",
+          "text": "It removes plasma proteins that cause rouleaux at immediate spin"
+        },
+        {
+          "id": "d",
+          "text": "It lowers zeta potential in the same way as LISS enhancement medium"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "IgG can sensitize red cells without spanning the distance between them. Anti-human globulin bridges cell-bound IgG, converting sensitization into visible agglutination.",
+      "distractorExplanations": {
+        "b": "AHG detects IgG and/or complement already attached to red cells; it does not supply complement or promote room-temperature IgM binding.",
+        "c": "Saline replacement or another rouleaux investigation addresses excess plasma proteins; adding AHG after washing is designed to detect sensitization.",
+        "d": "LISS enhances antibody uptake by changing ionic strength, whereas AHG cross-links globulin-coated cells after unbound globulin has been washed away."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-006": {
+      "prompt": "A patient has a clinically significant anti-E. The technologist selects an E-negative donor unit and performs an AHG crossmatch. Which combination is being tested in the major crossmatch?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Donor plasma against the patient's red cells"
+        },
+        {
+          "id": "b",
+          "text": "Patient plasma against group O screening cells"
+        },
+        {
+          "id": "c",
+          "text": "Patient plasma against red cells from the selected donor unit"
+        },
+        {
+          "id": "d",
+          "text": "Patient red cells against the patient's own plasma"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "The major crossmatch combines recipient plasma with red cells from the selected donor unit. It checks for serologic incompatibility that the antibody screen or identification may not predict.",
+      "distractorExplanations": {
+        "a": "Donor plasma tested against recipient cells describes the historical minor crossmatch, not the routinely performed recipient-plasma major crossmatch.",
+        "b": "Patient plasma tested against reagent group O cells is the antibody screen; it does not test the actual red cells from the selected donor unit.",
+        "d": "Patient cells tested with the patient's own plasma form an autocontrol, which helps evaluate autoantibody reactivity rather than donor compatibility."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-007": {
+      "prompt": "An RhD-negative pregnant patient has immune anti-D, and fetal testing indicates a D-positive fetus. Which maternal antibody characteristic creates the risk for severe HDFN?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pentameric IgM anti-D crosses the placenta and fixes complement"
+        },
+        {
+          "id": "b",
+          "text": "IgG anti-D crosses the placenta and destroys fetal D-positive red cells"
+        },
+        {
+          "id": "c",
+          "text": "IgA anti-D enters fetal circulation and suppresses erythropoiesis"
+        },
+        {
+          "id": "d",
+          "text": "IgE anti-D coats fetal red cells and causes intravascular agglutination"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Maternal IgG anti-D crosses the placenta and binds D-positive fetal red cells, leading to immune clearance, fetal anemia, and potentially severe hemolytic disease.",
+      "distractorExplanations": {
+        "a": "IgM is too large to cross the placenta; clinically important HDFN from anti-D is mediated by the placentally transported IgG class.",
+        "c": "Anti-D responsible for HDFN is IgG, not IgA; fetal anemia results primarily from immune destruction of sensitized red cells.",
+        "d": "IgE is associated with immediate hypersensitivity rather than red-cell alloimmune HDFN; anti-D-mediated fetal red-cell clearance is an IgG process."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-008": {
+      "prompt": "A bleeding patient with disseminated intravascular coagulation has prolonged PT and aPTT with depletion of multiple coagulation factors. Which component best addresses this deficit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Packed red blood cells"
+        },
+        {
+          "id": "b",
+          "text": "Apheresis platelets"
+        },
+        {
+          "id": "c",
+          "text": "Fresh frozen plasma"
+        },
+        {
+          "id": "d",
+          "text": "Washed red blood cells"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Fresh frozen plasma supplies multiple soluble coagulation factors and is appropriate for a bleeding patient with broad factor depletion and abnormal coagulation tests.",
+      "distractorExplanations": {
+        "a": "Packed red cells restore oxygen-carrying capacity and red-cell mass; they do not replace the multiple soluble clotting factors depleted in DIC.",
+        "b": "Platelets treat clinically important thrombocytopenia or platelet dysfunction, but they do not correct simultaneous deficiency of multiple plasma factors.",
+        "d": "Washing red cells removes most residual plasma proteins to reduce severe allergic reactions; it does not create a factor-replacement product."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-011": {
+      "prompt": "An unsensitized D-negative patient delivers a D-positive infant. The fetal bleed screen is negative. What is the purpose of administering the standard postpartum RhIG dose within the recommended interval?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevent maternal anti-D formation after exposure to fetal D-positive cells"
+        },
+        {
+          "id": "b",
+          "text": "Remove anti-D already produced by the mother during this pregnancy"
+        },
+        {
+          "id": "c",
+          "text": "Prevent maternal anti-c formation after exposure to fetal red cells"
+        },
+        {
+          "id": "d",
+          "text": "Treat hemolysis in the D-positive newborn by coating fetal red cells"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "RhIG provides passive anti-D that clears or masks fetal D-positive red cells before the unsensitized mother mounts active anti-D, reducing risk in future pregnancies.",
+      "distractorExplanations": {
+        "b": "RhIG prevents primary D alloimmunization; it cannot eliminate established maternal immune anti-D or reverse prior sensitization.",
+        "c": "RhIG is specific for the D antigen and does not prevent alloimmunization to other Rh antigens such as c.",
+        "d": "Postpartum RhIG is given to protect the mother from alloimmunization, not to treat the infant; coating neonatal cells would worsen immune clearance."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-012": {
+      "prompt": "A patient develops falling hemoglobin and jaundice seven days after transfusion. The posttransfusion DAT is positive, but the pretransfusion DAT was negative. What does the positive DAT demonstrate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Free alloantibody in the patient's plasma reacting with screening cells"
+        },
+        {
+          "id": "b",
+          "text": "IgG and/or complement coating circulating red cells in vivo"
+        },
+        {
+          "id": "c",
+          "text": "A red-cell membrane defect causing nonimmune hemolysis"
+        },
+        {
+          "id": "d",
+          "text": "ABO antibodies detected by reverse typing with A1 and B cells"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The DAT detects immunoglobulin and/or complement already attached to circulating red cells. A newly positive DAT supports immune sensitization in this delayed reaction workup.",
+      "distractorExplanations": {
+        "a": "Free antibody in plasma is detected by an indirect antiglobulin test such as the antibody screen; the DAT tests washed patient red cells directly.",
+        "c": "Intrinsic membrane disorders can shorten red-cell survival but generally produce a negative DAT because immunoglobulin or complement is not coating the cells.",
+        "d": "Reverse typing detects expected ABO antibodies in plasma with reagent A1 and B cells; it does not assess in-vivo sensitization of circulating cells."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-014": {
+      "prompt": "An antibody panel reacts at AHG with cells 1, 4, and 8. All three are K-positive, while the nonreactive cells are K-negative. What is the best next step before reporting anti-K?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rule out additional antibodies with antigen-positive nonreactive cells and confirm the pattern with the rule of three"
+        },
+        {
+          "id": "b",
+          "text": "Report anti-K from the three reactive cells because matching one antigen column is sufficient"
+        },
+        {
+          "id": "c",
+          "text": "Rule out anti-K using K-positive reactive cells and confirm specificity with one K-negative cell"
+        },
+        {
+          "id": "d",
+          "text": "Ignore AHG-phase reactivity and repeat the panel only at immediate spin to identify anti-K"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A matching pattern is only presumptive. The scientist must exclude other clinically significant antibodies with appropriate nonreactive cells and obtain independent support such as the rule of three.",
+      "distractorExplanations": {
+        "b": "Pattern matching alone can miss an antibody mixture; identification requires systematic exclusions and adequate positive and negative examples.",
+        "c": "Antibodies are ruled out with nonreactive cells that possess the corresponding antigen; reactive K-positive cells support rather than exclude anti-K.",
+        "d": "Anti-K is commonly an IgG antibody detected at 37°C/AHG; restricting testing to immediate spin can remove the clinically relevant phase."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-015": {
+      "prompt": "A chronically transfused patient repeatedly develops febrile nonhemolytic reactions despite ABO-compatible units. Which component modification most directly reduces recurrence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Irradiation of red blood cells"
+        },
+        {
+          "id": "b",
+          "text": "Prestorage leukoreduction of red blood cells"
+        },
+        {
+          "id": "c",
+          "text": "Washing of red blood cells"
+        },
+        {
+          "id": "d",
+          "text": "Volume reduction of red blood cells"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Prestorage leukoreduction removes most donor leukocytes before cytokines accumulate, reducing febrile nonhemolytic reactions and also lowering HLA alloimmunization risk.",
+      "distractorExplanations": {
+        "a": "Irradiation prevents transfusion-associated graft-versus-host disease by disabling donor T lymphocytes; it is not the primary modification for febrile reactions.",
+        "c": "Washing removes residual plasma proteins and is mainly used for recurrent severe allergic reactions, not leukocyte-mediated febrile reactions.",
+        "d": "Volume reduction limits the amount of component infused but does not specifically remove the leukocytes and cytokines implicated in febrile reactions."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-001": {
+      "prompt": "A 72-year-old patient has a serum creatinine of 2.4 mg/dL, increased from 1.0 mg/dL one month ago. Which interpretation is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The increase indicates enhanced tubular reabsorption of creatinine"
+        },
+        {
+          "id": "b",
+          "text": "The increase is a direct marker of impaired hepatic protein synthesis"
+        },
+        {
+          "id": "c",
+          "text": "The increase is consistent with reduced glomerular filtration"
+        },
+        {
+          "id": "d",
+          "text": "The increase indicates diabetic glomerular hyperfiltration"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A substantial rise in serum creatinine is consistent with a fall in glomerular filtration, although muscle mass, medications, and assay interference must also be considered.",
+      "distractorExplanations": {
+        "a": "Creatinine undergoes slight tubular secretion rather than clinically important reabsorption; increased reabsorption does not explain this result.",
+        "b": "Hepatic synthetic failure is evaluated with markers such as albumin and prothrombin time; creatinine primarily reflects renal filtration.",
+        "d": "Glomerular hyperfiltration tends to increase creatinine clearance and may lower serum creatinine, the opposite of this pattern."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-002": {
+      "prompt": "A patient with confusion has a measured serum sodium of 121 mmol/L. How should the sodium result be classified?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypernatremia"
+        },
+        {
+          "id": "b",
+          "text": "Hypokalemia"
+        },
+        {
+          "id": "c",
+          "text": "Hypercalcemia"
+        },
+        {
+          "id": "d",
+          "text": "Hyponatremia"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A serum sodium of 121 mmol/L is below the usual adult reference interval and is therefore hyponatremia; neurologic symptoms can occur when the decrease is severe or rapid.",
+      "distractorExplanations": {
+        "a": "Hypernatremia denotes sodium above, not below, the reference interval and therefore describes the opposite abnormality.",
+        "b": "Hypokalemia refers to a decreased potassium concentration; the reported analyte in this case is sodium.",
+        "c": "Hypercalcemia refers to an increased calcium concentration and cannot be assigned from a low sodium result."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-003": {
+      "prompt": "A patient with suspected acute hepatocellular injury has several enzyme tests ordered. Which result is most directly associated with hepatocyte injury?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased GGT and ALP"
+        },
+        {
+          "id": "b",
+          "text": "Increased CK and LD"
+        },
+        {
+          "id": "c",
+          "text": "Increased ALT and AST"
+        },
+        {
+          "id": "d",
+          "text": "Increased lipase and amylase"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "ALT and AST are released with hepatocyte injury; ALT is more liver-specific, whereas the magnitude and pattern of both aminotransferases help characterize the process.",
+      "distractorExplanations": {
+        "a": "GGT and ALP rise primarily in cholestatic or biliary patterns rather than serving as the most direct markers of hepatocyte injury.",
+        "b": "CK is associated with skeletal or cardiac muscle injury, and LD is nonspecific; this pair does not best identify hepatocellular injury.",
+        "d": "Lipase and amylase are used principally to evaluate pancreatic injury, not damage to hepatocytes."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-004": {
+      "prompt": "A clinician asks what period of glycemic control is represented by a patient's HbA1c result. Which response is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The preceding 1–2 days"
+        },
+        {
+          "id": "b",
+          "text": "The preceding 2–3 months"
+        },
+        {
+          "id": "c",
+          "text": "The preceding 2–3 weeks"
+        },
+        {
+          "id": "d",
+          "text": "Approximately the preceding 6 weeks only"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "HbA1c reflects glycation over the erythrocyte life span and estimates average glycemia during roughly the prior 2–3 months, with greater influence from recent weeks.",
+      "distractorExplanations": {
+        "a": "A 1–2-day interval is represented by current plasma or capillary glucose measurements, not by hemoglobin glycation.",
+        "c": "A 2–3-week interval is better represented by fructosamine because circulating proteins have a shorter life span than erythrocytes.",
+        "d": "Six weeks captures only part of the HbA1c interval; erythrocyte exposure permits assessment across approximately 2–3 months."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-007": {
+      "prompt": "A patient presents 4 hours after onset of crushing chest pain. The laboratory measures serial cardiac troponin and CK-MB concentrations primarily to assess which process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Myocardial injury"
+        },
+        {
+          "id": "b",
+          "text": "Renal tubular acidosis"
+        },
+        {
+          "id": "c",
+          "text": "Thyroid nodule activity"
+        },
+        {
+          "id": "d",
+          "text": "Increased bone turnover"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Cardiac troponin is the preferred biochemical marker of myocardial injury; CK-MB has historical and selected serial-use roles but is less cardiac-specific.",
+      "distractorExplanations": {
+        "b": "Renal tubular acidosis is evaluated with electrolytes, bicarbonate, blood gases, urine pH, and the urinary anion gap, not cardiac markers.",
+        "c": "Thyroid nodules are evaluated with TSH, thyroid hormones, imaging, and sometimes cytology; troponin and CK-MB do not assess nodule activity.",
+        "d": "Bone turnover is assessed with markers such as bone-specific ALP or collagen products, not cardiac troponin or CK-MB."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-008": {
+      "prompt": "An arterial blood gas shows pH 7.24 and HCO3− 14 mmol/L. Serum electrolytes produce an increased anion gap. Which disorder most plausibly accounts for this pattern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diarrhea causing bicarbonate loss"
+        },
+        {
+          "id": "b",
+          "text": "Lactic acidosis from tissue hypoperfusion"
+        },
+        {
+          "id": "c",
+          "text": "Primary respiratory alkalosis"
+        },
+        {
+          "id": "d",
+          "text": "Vomiting-induced metabolic alkalosis"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Low pH and bicarbonate identify metabolic acidosis, while the increased anion gap indicates unmeasured anions; lactate accumulation during hypoperfusion fits this pattern.",
+      "distractorExplanations": {
+        "a": "Diarrheal bicarbonate loss usually causes a hyperchloremic metabolic acidosis with a normal anion gap rather than an increased gap.",
+        "c": "Primary respiratory alkalosis has a low PCO2 and an alkaline pH; it does not explain this acidemic high-gap pattern.",
+        "d": "Vomiting removes gastric acid and ordinarily causes metabolic alkalosis with increased bicarbonate, the opposite disturbance."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-009": {
+      "prompt": "A jaundiced patient has increased total bilirubin with a predominantly conjugated (direct) fraction and increased ALP. Which mechanism best explains the findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduced UGT1A1 activity in Gilbert syndrome"
+        },
+        {
+          "id": "b",
+          "text": "Accelerated erythrocyte destruction"
+        },
+        {
+          "id": "c",
+          "text": "Physiologic neonatal bilirubin production"
+        },
+        {
+          "id": "d",
+          "text": "Impaired biliary excretion from cholestasis"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "A predominantly conjugated bilirubin increase with elevated ALP supports impaired excretion through the biliary system; hepatocellular disease can also increase direct bilirubin.",
+      "distractorExplanations": {
+        "a": "Gilbert syndrome reduces bilirubin conjugation and causes a mild unconjugated, not predominantly conjugated, hyperbilirubinemia.",
+        "b": "Hemolysis increases bilirubin production before hepatic conjugation and therefore primarily raises the unconjugated fraction.",
+        "c": "Physiologic neonatal jaundice is primarily unconjugated because bilirubin production is high and conjugating capacity is immature."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-010": {
+      "prompt": "A patient has fatigue, low free T4, and no history of pituitary disease. Which TSH result would most strongly support primary hypothyroidism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "TSH within the euthyroid reference interval"
+        },
+        {
+          "id": "b",
+          "text": "TSH suppressed below the reference interval"
+        },
+        {
+          "id": "c",
+          "text": "TSH increased above the reference interval"
+        },
+        {
+          "id": "d",
+          "text": "TSH unchanged after excess exogenous T4"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "In primary hypothyroidism, deficient thyroid hormone production reduces negative feedback on the pituitary, producing low free T4 with an increased TSH concentration.",
+      "distractorExplanations": {
+        "a": "A normal TSH does not strongly support primary gland failure when free T4 is low and should prompt consideration of central disease or other causes.",
+        "b": "A suppressed TSH is expected in primary hyperthyroidism or excess thyroid hormone exposure, not untreated primary hypothyroidism.",
+        "d": "Exogenous T4 ordinarily suppresses pituitary TSH through negative feedback; failure to change is not the characteristic primary hypothyroid pattern."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-011": {
+      "prompt": "A scientist calculates serum osmolality to investigate an osmolal gap. Which measured analytes belong in the commonly used conventional-unit calculation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Albumin, globulins, and fibrinogen"
+        },
+        {
+          "id": "b",
+          "text": "Potassium, calcium, and magnesium"
+        },
+        {
+          "id": "c",
+          "text": "Ethanol, mannitol, and ketones"
+        },
+        {
+          "id": "d",
+          "text": "Sodium, glucose, and blood urea nitrogen"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "The common calculated osmolality formula in conventional units is 2 × sodium + glucose/18 + BUN/2.8; sodium and accompanying anions provide the largest contribution.",
+      "distractorExplanations": {
+        "a": "Proteins create colloid oncotic pressure but contribute few particles to measured osmolality because their molar concentrations are low.",
+        "b": "These cations are present at much lower concentrations than sodium and are not terms in the standard calculated-osmolality formula.",
+        "c": "Ethanol and mannitol may create an osmolal gap, but they are not normal terms in the standard calculation used to detect that gap."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-013": {
+      "prompt": "A patient has markedly increased ALP. GGT is also increased, while calcium and phosphate are unremarkable. Which source of the ALP is most likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bone, as in Paget disease"
+        },
+        {
+          "id": "b",
+          "text": "Placenta in late pregnancy"
+        },
+        {
+          "id": "c",
+          "text": "Hepatobiliary tissue"
+        },
+        {
+          "id": "d",
+          "text": "Intestine after a fatty meal"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Concurrent elevation of GGT supports a hepatobiliary source for increased ALP because GGT rises in cholestatic liver disease but not in isolated bone disorders.",
+      "distractorExplanations": {
+        "a": "Bone disease can markedly increase ALP, but isolated bone ALP production does not cause a corresponding increase in GGT.",
+        "b": "Placental ALP may rise physiologically in late pregnancy without increasing GGT; the paired enzyme pattern points to hepatobiliary tissue.",
+        "d": "Intestinal ALP may rise after a fatty meal in some blood-group secretors, but it does not account for increased GGT."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-014": {
+      "prompt": "Vancomycin therapeutic drug monitoring is ordered at steady state, and the protocol requests a trough concentration. When should the specimen be collected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One week after therapy has been discontinued"
+        },
+        {
+          "id": "b",
+          "text": "Immediately before the next scheduled dose"
+        },
+        {
+          "id": "c",
+          "text": "At a random time after the infusion"
+        },
+        {
+          "id": "d",
+          "text": "At the expected postinfusion peak time"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A trough specimen is collected immediately before the next dose to approximate the lowest concentration in the dosing interval; exact timing must follow the drug protocol.",
+      "distractorExplanations": {
+        "a": "A specimen collected after therapy ends cannot guide dosing during treatment and does not represent a steady-state trough.",
+        "c": "An untimed random specimen cannot be interpreted against a trough target because concentration depends on elapsed time since the dose.",
+        "d": "A postinfusion peak evaluates a different pharmacokinetic point and is not interchangeable with a predose trough."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-015": {
+      "prompt": "A nonhemolyzed serum specimen has a potassium concentration of 6.7 mmol/L. Which clinical consequence makes prompt critical-value communication necessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isolated ST elevation diagnostic of myocardial infarction"
+        },
+        {
+          "id": "b",
+          "text": "Loss of all cardiac electrical activity without preceding changes"
+        },
+        {
+          "id": "c",
+          "text": "Prominent U waves caused by accelerated repolarization"
+        },
+        {
+          "id": "d",
+          "text": "Peaked T waves with risk of conduction disturbance and arrhythmia"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Severe hyperkalemia alters myocardial conduction and may progress from peaked T waves to QRS widening, arrhythmia, and cardiac arrest, requiring urgent notification.",
+      "distractorExplanations": {
+        "a": "Hyperkalemia can mimic several ECG abnormalities, but isolated diagnostic ST elevation is not its characteristic or inevitable consequence.",
+        "b": "Cardiac arrest may occur, but progressive repolarization and conduction abnormalities commonly precede it; the option incorrectly excludes those changes.",
+        "c": "Prominent U waves are associated with hypokalemia rather than hyperkalemia and therefore represent the opposite potassium disturbance."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-001": {
+      "prompt": "A patient with anemia has an MCV of 68 fL. How should the anemia be classified by red cell size?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hypochromic"
+        },
+        {
+          "id": "b",
+          "text": "Nonregenerative"
+        },
+        {
+          "id": "c",
+          "text": "Microcytic"
+        },
+        {
+          "id": "d",
+          "text": "Anisocytic"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "An MCV below the adult reference interval indicates that the average red cell is smaller than normal, so the anemia is classified as microcytic. Iron deficiency and thalassemia are common causes.",
+      "distractorExplanations": {
+        "a": "Hypochromia describes reduced hemoglobinization and is assessed with MCHC and smear appearance, not classified from MCV alone.",
+        "b": "Regenerative status reflects marrow output and requires a corrected reticulocyte count or reticulocyte production index.",
+        "d": "Anisocytosis means variation in red cell size and is reflected by RDW or smear review; it is not the MCV size class."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-002": {
+      "prompt": "An adult has microcytic, hypochromic red cells. Which iron-study pattern most strongly supports iron deficiency anemia?",
+      "options": [
+        {
+          "id": "a",
+          "text": "High ferritin, low serum iron, and low TIBC"
+        },
+        {
+          "id": "b",
+          "text": "Normal ferritin, normal serum iron, and normal TIBC"
+        },
+        {
+          "id": "c",
+          "text": "High ferritin, high serum iron, and low TIBC"
+        },
+        {
+          "id": "d",
+          "text": "Low ferritin, low serum iron, and high TIBC"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Iron deficiency depletes storage iron, lowering ferritin and serum iron. The liver increases transferrin production, raising TIBC; transferrin saturation therefore falls.",
+      "distractorExplanations": {
+        "a": "High ferritin with low iron and low TIBC is more consistent with inflammation-mediated iron restriction than uncomplicated iron deficiency.",
+        "b": "Normal storage iron and transport measures do not support depleted iron stores despite the microcytic morphology.",
+        "c": "High ferritin and serum iron suggest iron loading or ineffective erythropoiesis rather than iron deficiency."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-003": {
+      "prompt": "A patient has thrombocytopenia, increased LDH, and fragmented red cells on the peripheral smear. Which process best explains the red cell morphology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Megaloblastic erythropoiesis"
+        },
+        {
+          "id": "b",
+          "text": "Red cell membrane loss"
+        },
+        {
+          "id": "c",
+          "text": "Microangiopathic shear injury"
+        },
+        {
+          "id": "d",
+          "text": "Oxidant denaturation of hemoglobin"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Schistocytes are red cell fragments produced by mechanical shearing through fibrin strands or damaged microvasculature. With thrombocytopenia and hemolysis, they support a microangiopathic process such as TTP or DIC.",
+      "distractorExplanations": {
+        "a": "Megaloblastic anemia produces macro-ovalocytes and hypersegmented neutrophils rather than red cell fragments.",
+        "b": "Membrane loss produces spherocytes lacking central pallor; it does not create the helmet and triangular fragments described.",
+        "d": "Oxidant injury produces Heinz bodies and bite or blister cells after splenic removal of denatured hemoglobin."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-004": {
+      "prompt": "An analyzer flags leukocytosis, and smear review shows increased bands and metamyelocytes. How should this differential finding be reported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Left shift"
+        },
+        {
+          "id": "b",
+          "text": "Right shift"
+        },
+        {
+          "id": "c",
+          "text": "Reactive lymphocytosis"
+        },
+        {
+          "id": "d",
+          "text": "Toxic change without immaturity"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "An increased proportion of immature neutrophil forms, including bands and metamyelocytes, is a left shift. It commonly accompanies acute inflammation or infection and should be distinguished from toxic morphologic change.",
+      "distractorExplanations": {
+        "b": "A right shift refers to hypersegmented mature neutrophils, classically associated with megaloblastic change, not increased immature forms.",
+        "c": "Reactive lymphocytosis is defined by activated lymphocyte morphology and does not describe bands or metamyelocytes.",
+        "d": "Toxic granulation, Döhle bodies, and vacuoles may accompany a left shift, but immature neutrophils themselves establish the left shift."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-005": {
+      "prompt": "A patient receiving stable warfarin therapy requires routine laboratory monitoring. Which result is the appropriate standardized measure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Thrombin time"
+        },
+        {
+          "id": "b",
+          "text": "Activated partial thromboplastin time"
+        },
+        {
+          "id": "c",
+          "text": "Platelet function assay closure time"
+        },
+        {
+          "id": "d",
+          "text": "Prothrombin time reported as INR"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Warfarin reduces vitamin K–dependent factors, and the short half-life of factor VII makes PT particularly responsive. Reporting PT as INR standardizes thromboplastin sensitivity across laboratories.",
+      "distractorExplanations": {
+        "a": "Thrombin time evaluates conversion of fibrinogen to fibrin and is especially sensitive to thrombin inhibitors or heparin contamination.",
+        "b": "The aPTT assesses intrinsic and common pathways and is traditionally used to monitor unfractionated heparin, not stable warfarin therapy.",
+        "c": "Closure time assesses platelet-dependent primary hemostasis and does not quantify the vitamin K antagonist effect."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-006": {
+      "prompt": "A nonheparinized plasma sample has a prolonged aPTT and a normal PT. Which finding can produce this screening-test pattern?",
+      "distractorExplanations": {
+        "a": "Isolated factor VII deficiency prolongs PT because factor VII belongs to the extrinsic pathway; it does not selectively prolong aPTT.",
+        "c": "Warfarin and early vitamin K deficiency prolong PT first because factor VII has the shortest half-life.",
+        "d": "Factor XIII deficiency leaves PT and aPTT normal, while severe fibrinogen deficiency affects the common endpoint and can prolong both tests."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-007": {
+      "prompt": "A postoperative patient has an elevated D-dimer result. Which interpretation is most accurate before imaging or other diagnostic evidence is available?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only fibrinogen, not fibrin, has been degraded"
+        },
+        {
+          "id": "b",
+          "text": "Venous thromboembolism has been confirmed"
+        },
+        {
+          "id": "c",
+          "text": "Fibrinolysis is reduced"
+        },
+        {
+          "id": "d",
+          "text": "Cross-linked fibrin formation and breakdown have occurred"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "D-dimer is released when plasmin degrades cross-linked fibrin, proving that clot formation and fibrinolysis occurred. Surgery can elevate it, so a positive result is nonspecific and does not confirm venous thromboembolism.",
+      "distractorExplanations": {
+        "a": "Fibrinogen degradation can produce other fibrin degradation products, but D-dimer specifically requires breakdown of cross-linked fibrin.",
+        "b": "An elevated D-dimer is sensitive but nonspecific; postoperative inflammation and tissue injury can elevate it without venous thromboembolism.",
+        "c": "Reduced fibrinolysis would decrease release of fibrin breakdown products; elevated D-dimer demonstrates active fibrin degradation."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-008": {
+      "prompt": "A patient with lifelong hemolytic anemia has a positive sickling screen. Which laboratory method best identifies and quantifies the hemoglobin fractions present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serum ferritin immunoassay"
+        },
+        {
+          "id": "b",
+          "text": "Hemoglobin electrophoresis"
+        },
+        {
+          "id": "c",
+          "text": "Eosin-5-maleimide binding test"
+        },
+        {
+          "id": "d",
+          "text": "Fluorescent spot test"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Hemoglobin electrophoresis separates hemoglobin fractions according to charge and can identify patterns involving Hb S, Hb C, Hb A2, and Hb F. Confirmatory methods may be needed when variants comigrate.",
+      "distractorExplanations": {
+        "a": "Ferritin estimates iron stores and helps evaluate iron deficiency or overload; it does not separate hemoglobin fractions.",
+        "c": "Eosin-5-maleimide binding evaluates red cell membrane protein loss in hereditary spherocytosis, not hemoglobin variants.",
+        "d": "A fluorescent spot test screens for G6PD activity and does not identify or quantify abnormal hemoglobin fractions."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-009": {
+      "prompt": "A patient develops anemia after acute blood loss. Which result, appearing after the marrow has had time to respond, best demonstrates increased erythropoiesis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased corrected reticulocyte count"
+        },
+        {
+          "id": "b",
+          "text": "Decreased erythropoietin concentration"
+        },
+        {
+          "id": "c",
+          "text": "Decreased immature reticulocyte fraction"
+        },
+        {
+          "id": "d",
+          "text": "Increased nucleated red cells without reticulocytosis"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "A rising reticulocyte count reflects release of newly produced red cells in response to erythropoietin stimulation. The result should be corrected for the degree of anemia when marrow adequacy is assessed.",
+      "distractorExplanations": {
+        "b": "Tissue hypoxia increases renal erythropoietin after blood loss; a decrease would not drive the expected marrow response.",
+        "c": "The immature reticulocyte fraction usually rises during accelerated erythropoiesis because younger reticulocytes enter circulation.",
+        "d": "Nucleated red cells can reflect severe marrow stress, but without reticulocytosis they do not demonstrate an effective erythroid response."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-010": {
+      "prompt": "A lavender-top tube prevents clot formation while preserving cellular morphology for a CBC. What is the anticoagulant's principal mechanism?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inhibiting thrombin directly"
+        },
+        {
+          "id": "b",
+          "text": "Binding antithrombin to inhibit factor Xa"
+        },
+        {
+          "id": "c",
+          "text": "Chelating ionized calcium"
+        },
+        {
+          "id": "d",
+          "text": "Converting calcium to an insoluble salt"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "EDTA chelates ionized calcium required for multiple coagulation reactions. At the proper blood-to-additive ratio, it prevents clotting while preserving blood cell morphology for automated counts and smear review.",
+      "distractorExplanations": {
+        "a": "Direct thrombin inhibition is the action of agents such as dabigatran or argatroban, not EDTA in a CBC tube.",
+        "b": "Heparin potentiates antithrombin inhibition of thrombin and factor Xa; EDTA instead removes available calcium.",
+        "d": "Sodium citrate binds calcium reversibly for coagulation testing; EDTA chelates calcium rather than precipitating it as a salt."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-011": {
+      "prompt": "An asymptomatic patient has a platelet count of 42 × 10^9/L. The analyzer flags platelet clumps, and clumps are present at the feathered edge of the EDTA smear. What is the best next laboratory action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Report the EDTA platelet count with no qualification"
+        },
+        {
+          "id": "b",
+          "text": "Recollect in sodium citrate and obtain a corrected platelet count"
+        },
+        {
+          "id": "c",
+          "text": "Estimate platelets only from the clumped EDTA smear"
+        },
+        {
+          "id": "d",
+          "text": "Incubate the EDTA tube overnight before repeating the count"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "EDTA-dependent platelet clumping can cause a spuriously low automated count. Recollection in citrate often prevents the in vitro clumping; the result must be corrected for citrate dilution according to laboratory procedure.",
+      "distractorExplanations": {
+        "a": "Reporting the flagged EDTA result as valid could misclassify an in vitro artifact as clinically significant thrombocytopenia.",
+        "c": "Clumps make an accurate smear estimate unreliable; an alternate-anticoagulant specimen is needed for a reportable count.",
+        "d": "Prolonged storage promotes additional preanalytic change and does not reliably reverse EDTA-dependent platelet clumping."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-012": {
+      "prompt": "A smear from a patient with macrocytic anemia shows oval macrocytes and neutrophils with six or more nuclear lobes. Which deficiency pattern is most consistent with these findings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iron deficiency"
+        },
+        {
+          "id": "b",
+          "text": "Erythropoietin deficiency"
+        },
+        {
+          "id": "c",
+          "text": "Vitamin B12 or folate deficiency"
+        },
+        {
+          "id": "d",
+          "text": "Acute blood loss"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "Vitamin B12 or folate deficiency impairs DNA synthesis, producing megaloblastic maturation. Macro-ovalocytes and hypersegmented neutrophils are classic peripheral-smear findings.",
+      "distractorExplanations": {
+        "a": "Iron deficiency usually produces microcytic, hypochromic red cells and does not explain hypersegmented neutrophils.",
+        "b": "Reduced erythropoietin commonly causes a hypoproliferative normocytic anemia without megaloblastic neutrophil changes.",
+        "d": "Acute blood loss is initially normocytic and may later cause polychromasia from reticulocytosis, not hypersegmentation."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-013": {
+      "prompt": "A patient has mucosal bleeding, a normal PT and aPTT, and impaired platelet aggregation. Which process is primarily defective?",
+      "explanation": "Primary hemostasis forms the initial platelet plug through vascular response, platelet adhesion, activation, and aggregation. Normal PT and aPTT do not exclude a platelet or von Willebrand factor disorder.",
+      "distractorExplanations": {
+        "b": "Plasmin-mediated fibrin breakdown is fibrinolysis, which occurs after fibrin clot formation rather than during platelet-plug formation.",
+        "c": "Factor XIII cross-linking stabilizes fibrin at the end of secondary hemostasis and does not explain isolated impaired platelet aggregation.",
+        "d": "Vitamin K–dependent factors participate in secondary coagulation; clinically important deficiencies generally prolong PT before causing this isolated platelet pattern."
+      }
+    },
+    "ascp-mls-readiness-check-hematology-015": {
+      "prompt": "A patient with an inflammatory disorder has increased fibrinogen and prominent rouleaux on the blood smear. What effect is expected on the erythrocyte sedimentation rate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decreased ESR because aggregates settle slowly"
+        },
+        {
+          "id": "b",
+          "text": "Increased ESR because rouleaux settle rapidly"
+        },
+        {
+          "id": "c",
+          "text": "Unchanged ESR because fibrinogen affects only coagulation"
+        },
+        {
+          "id": "d",
+          "text": "Invalid ESR because rouleaux prevents sedimentation"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Increased fibrinogen reduces the repulsive forces between red cells and promotes rouleaux. These aggregates settle faster than individual cells, producing an increased ESR; the finding remains nonspecific.",
+      "distractorExplanations": {
+        "a": "Rouleaux aggregates have a lower surface-area-to-mass ratio than separate red cells and therefore settle faster, not slower.",
+        "c": "Fibrinogen is a major acute-phase protein that promotes rouleaux, so its effect extends beyond its role in coagulation.",
+        "d": "Rouleaux is a physiologic driver of faster sedimentation and does not by itself invalidate a properly performed ESR."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-001": {
+      "prompt": "A blood culture becomes positive after 10 hours. The smear shows purple cocci in clusters. Which cell-envelope feature best explains the observed Gram reaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A thick peptidoglycan layer retains the crystal violet–iodine complex during decolorization"
+        },
+        {
+          "id": "b",
+          "text": "An outer membrane rich in lipopolysaccharide binds the crystal violet–iodine complex"
+        },
+        {
+          "id": "c",
+          "text": "A mycolic-acid layer retains carbolfuchsin after treatment with acid-alcohol"
+        },
+        {
+          "id": "d",
+          "text": "A thin peptidoglycan layer takes up safranin before the alcohol decolorization step"
+        }
+      ],
+      "correctOptionId": "a",
+      "explanation": "Gram-positive organisms have a thick peptidoglycan wall that traps the crystal violet–iodine complex when alcohol is applied, so the cells remain purple. The cluster morphology additionally supports a staphylococcal isolate, although morphology alone does not establish the species.",
+      "distractorExplanations": {
+        "b": "Lipopolysaccharide is part of the Gram-negative outer membrane. Alcohol disrupts that membrane and the thin wall loses crystal violet, allowing the counterstain to appear.",
+        "c": "Mycolic acids account for acid-fast retention of carbolfuchsin by organisms such as Mycobacterium; they do not explain purple cocci on a Gram stain.",
+        "d": "Safranin is applied after decolorization. Organisms with thin peptidoglycan lose crystal violet and then become pink-red, rather than remaining purple."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-002": {
+      "prompt": "Two catalase-positive, gram-positive coccal isolates are recovered from separate blood-culture sets. Which additional test best distinguishes Staphylococcus aureus from most other staphylococci?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PYR hydrolysis, because S. aureus is PYR positive and other staphylococci are negative"
+        },
+        {
+          "id": "b",
+          "text": "Bile-esculin hydrolysis, because S. aureus blackens the medium within 24 hours"
+        },
+        {
+          "id": "c",
+          "text": "Optochin susceptibility, because S. aureus produces a zone around the optochin disk"
+        },
+        {
+          "id": "d",
+          "text": "Coagulase testing, because S. aureus produces bound and/or free coagulase"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Catalase separates staphylococci from streptococci and enterococci but does not identify S. aureus within the staphylococci. Detection of clumping factor or free coagulase differentiates S. aureus from most clinically encountered coagulase-negative staphylococci.",
+      "distractorExplanations": {
+        "a": "PYR is useful for organisms such as Enterococcus and Streptococcus pyogenes. It is not the routine defining test that separates S. aureus from coagulase-negative staphylococci.",
+        "b": "Bile-esculin hydrolysis supports identification of enterococci and group D streptococci, which are catalase negative; it is not the confirmatory branch for this isolate.",
+        "c": "Optochin susceptibility distinguishes Streptococcus pneumoniae from viridans-group streptococci. Those organisms are catalase negative and have a different microscopic arrangement."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-003": {
+      "prompt": "A traveler with cyclic fever has delicate ring forms in erythrocytes, multiple rings in some cells, and crescent-shaped gametocytes on a thin blood film. Which organism is most likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Babesia microti"
+        },
+        {
+          "id": "b",
+          "text": "Plasmodium malariae"
+        },
+        {
+          "id": "c",
+          "text": "Plasmodium vivax"
+        },
+        {
+          "id": "d",
+          "text": "Plasmodium falciparum"
+        }
+      ],
+      "correctOptionId": "d",
+      "explanation": "Multiple delicate rings within one erythrocyte and crescent or banana-shaped gametocytes are characteristic of Plasmodium falciparum. Because mature trophozoites sequester in the microvasculature, peripheral smears may show mainly rings and gametocytes.",
+      "distractorExplanations": {
+        "a": "Babesia may show ring forms and a Maltese-cross tetrad, but it does not produce malaria pigment or crescent-shaped gametocytes.",
+        "b": "P. malariae classically produces band-form trophozoites and rosette schizonts in normal-sized erythrocytes, not crescent-shaped gametocytes.",
+        "c": "P. vivax enlarges infected erythrocytes and may show Schüffner stippling and amoeboid trophozoites; its gametocytes are round rather than crescent shaped."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-004": {
+      "prompt": "An auramine-rhodamine screen of concentrated sputum is positive. Before reporting acid-fast bacilli, which procedure should the technologist use to confirm the fluorescent finding morphologically?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Repeat the smear with a Gram stain and look for branching gram-positive rods"
+        },
+        {
+          "id": "b",
+          "text": "Stain a new or restained smear by Ziehl-Neelsen or Kinyoun and examine for acid-fast rods"
+        },
+        {
+          "id": "c",
+          "text": "Apply India ink and examine for organisms surrounded by a clear capsule"
+        },
+        {
+          "id": "d",
+          "text": "Apply a modified trichrome stain and examine for intracellular microsporidial spores"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "Fluorochrome staining is sensitive for screening, but positive smears are commonly confirmed with a carbolfuchsin acid-fast stain such as Ziehl-Neelsen or Kinyoun. Acid-fast rods retain carbolfuchsin after acid-alcohol decolorization because of their lipid-rich walls.",
+      "distractorExplanations": {
+        "a": "A Gram stain can characterize organisms such as Nocardia but is not the confirmatory stain for a positive mycobacterial fluorochrome screen.",
+        "c": "India ink demonstrates an encapsulated yeast in cerebrospinal fluid and does not confirm acid-fast bacilli in a respiratory specimen.",
+        "d": "Modified trichrome is used for microsporidia, usually in stool or other appropriate specimens; it does not verify auramine-positive mycobacteria."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-007": {
+      "prompt": "A nasopharyngeal specimen is positive for influenza A by a multiplex NAAT. Which laboratory finding is most useful for determining whether the virus belongs to a newly circulating subtype?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Growth on sheep blood agar followed by catalase and oxidase testing"
+        },
+        {
+          "id": "b",
+          "text": "Subtype-specific molecular testing or sequencing of viral gene targets"
+        },
+        {
+          "id": "c",
+          "text": "Visualization of viral particles by routine Gram staining of the specimen"
+        },
+        {
+          "id": "d",
+          "text": "A fourfold rise in heterophile antibody titer between acute and convalescent sera"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "A general influenza A NAAT establishes that influenza A RNA is present but may not assign the hemagglutinin and neuraminidase subtype. Subtype-specific amplification or sequence analysis provides the genetic information needed for characterization and surveillance.",
+      "distractorExplanations": {
+        "a": "Viruses do not grow as colonies on routine bacteriologic media, and catalase or oxidase reactions characterize bacteria rather than influenza strains.",
+        "c": "Influenza virions are below the resolution of routine light microscopy and do not produce a diagnostic Gram-stain morphology.",
+        "d": "Heterophile antibody testing supports infectious mononucleosis caused by Epstein-Barr virus; it neither diagnoses influenza nor assigns an influenza subtype."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-008": {
+      "prompt": "Acute and convalescent sera collected 3 weeks apart are tested in the same run. The pathogen-specific IgG titer rises from 1:16 to 1:128. How should this result be interpreted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The unchanged IgM concentration excludes a recent infection"
+        },
+        {
+          "id": "b",
+          "text": "The convalescent specimen is negative because IgG is not useful in serology"
+        },
+        {
+          "id": "c",
+          "text": "The eightfold rise in IgG titer supports a recent infection or seroconversion"
+        },
+        {
+          "id": "d",
+          "text": "The acute specimen proves lifelong immunity because its IgG titer is detectable"
+        }
+      ],
+      "correctOptionId": "c",
+      "explanation": "A fourfold or greater rise in antibody titer between appropriately timed acute and convalescent specimens is significant evidence of recent infection. Here, the increase from 1:16 to 1:128 is an eightfold rise, provided both sera were tested by the same method under comparable conditions.",
+      "distractorExplanations": {
+        "a": "IgM may be absent, transient, delayed, or unreliable in some assays. A significant paired-serum IgG rise can support recent infection even without a diagnostic IgM result.",
+        "b": "IgG is useful when paired specimens demonstrate seroconversion or a significant titer increase; dismissing all IgG results ignores the value of paired serology.",
+        "d": "A single low detectable IgG titer may reflect past exposure, vaccination, or nonspecific reactivity and does not by itself establish durable protection."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-012": {
+      "prompt": "Minutes after receiving penicillin, a patient develops urticaria, bronchospasm, and hypotension. Which immunologic mechanism best accounts for this reaction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "IgG immune complexes deposit in tissues and activate complement"
+        },
+        {
+          "id": "b",
+          "text": "Drug-specific IgE cross-links on mast cells and triggers mediator release"
+        },
+        {
+          "id": "c",
+          "text": "Cytotoxic T lymphocytes recognize drug-modified cells after several days"
+        },
+        {
+          "id": "d",
+          "text": "IgM binds cell-surface antigen and causes complement-mediated cytolysis"
+        }
+      ],
+      "correctOptionId": "b",
+      "explanation": "The rapid onset of urticaria, bronchospasm, and shock is a type I immediate hypersensitivity reaction. Penicillin-related antigen cross-links drug-specific IgE already bound to mast-cell Fc receptors, causing release of histamine and other inflammatory mediators.",
+      "distractorExplanations": {
+        "a": "Immune-complex deposition is a type III mechanism and more often causes disorders such as serum sickness or an Arthus reaction rather than immediate anaphylaxis.",
+        "c": "T-cell-mediated injury is a delayed type IV reaction that develops over many hours to days, not within minutes of drug administration.",
+        "d": "Antibody directed against a cell-surface target is a type II mechanism, as in some cytopenias; it does not explain IgE-mediated bronchospasm and urticaria."
+      }
+    },
+    "ascp-mls-readiness-check-blood-bank-003": {
+      "explanation": "Weak D interpretation affects RhIG and transfusion decisions; follow current AABB/lab policy. Further testing follows laboratory policy.",
+      "distractorExplanations": {
+        "a": "A negative antibody screen without transfusion history does not resolve a weak or discrepant D type that still affects RhIG eligibility.",
+        "b": "Concordant forward and reverse ABO results are the expected finding and raise no D-typing concern.",
+        "c": "A clear-cut D-positive reaction with a valid control is an unambiguous result that needs no further D workup."
+      }
+    },
+    "ascp-mls-readiness-check-chemistry-012": {
+      "explanation": "Cellular glycolysis consumes glucose unless fluoride tubes/prompt separation used.",
+      "distractorExplanations": {
+        "a": "Glycolysis consumes glucose in unseparated cells, so the measured value falls; it does not rise.",
+        "c": "Red cells consume glucose rather than release it; prolonged cell contact lowers the result by roughly 5–7% per hour.",
+        "d": "Capping prevents evaporation but not glycolysis; prompt separation or a fluoride tube is what preserves glucose."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-009": {
+      "explanation": "Common contaminants appear in single sets; true pathogens often repeatedly isolated with compatible clinic.",
+      "distractorExplanations": {
+        "a": "The same Gram-negative rod in multiple independently drawn sets from a septic patient is treated as true bacteremia, not contamination.",
+        "b": "S. aureus is rarely a contaminant; even one positive bottle is treated as true bacteremia and worked up.",
+        "c": "CoNS in multiple separately drawn sets with a prosthetic device suggests true infection, not contamination."
+      }
+    },
+    "ascp-mls-readiness-check-micro-immuno-013": {
+      "explanation": "Laboratories diagnose C. difficile with GDH and toxin EIA plus or minus NAAT algorithms on unformed stool only.",
+      "distractorExplanations": {
+        "a": "Culture also grows nontoxigenic strains and is slow; diagnosis requires toxin or toxin-gene detection.",
+        "b": "Formed stool is rejected; testing is limited to unformed stool to avoid detecting mere colonization.",
+        "c": "O&P and acid-fast stains target parasites such as Cryptosporidium, not toxigenic C. difficile."
+      }
+    }
+  }
+}

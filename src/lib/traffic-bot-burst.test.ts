@@ -17,7 +17,7 @@ function burstSnapshot(overrides: Partial<DailyTrafficSnapshot> = {}): DailyTraf
     unique: 477,
     pageViews: 898,
     paths,
-    byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
+    byChannel: { google: 0, bing: 0, chatgpt: 0, llm: 0, direct: 475, other: 2 },
     byCountry: { SG: 458, CN: 9, US: 6, BR: 4 },
     ...overrides,
   };
@@ -41,7 +41,7 @@ describe("traffic bot burst", () => {
           "/decks/cfa-level-1-anki-deck": { unique: 8, views: 12 },
           "/": { unique: 5, views: 7 },
         },
-        byChannel: { google: 4, chatgpt: 2, llm: 1, direct: 12, other: 4 },
+        byChannel: { google: 4, bing: 0, chatgpt: 2, llm: 1, direct: 12, other: 4 },
         byCountry: { US: 10, DE: 3 },
       }),
     ).toBe(false);
@@ -56,7 +56,7 @@ describe("traffic bot burst", () => {
           "/": { unique: 80, views: 90 },
           "/decks/cfa-level-1-anki-deck": { unique: 20, views: 30 },
         },
-        byChannel: { google: 0, chatgpt: 0, llm: 0, direct: 98, other: 2 },
+        byChannel: { google: 0, bing: 0, chatgpt: 0, llm: 0, direct: 98, other: 2 },
         byCountry: { US: 90, CA: 10 },
       }),
     ).toBe(false);
@@ -69,7 +69,7 @@ describe("traffic bot burst", () => {
         unique: 13,
         pageViews: 26,
         paths: { "/": { unique: 5, views: 8 } },
-        byChannel: { google: 2, chatgpt: 0, llm: 1, direct: 8, other: 2 },
+        byChannel: { google: 2, bing: 0, chatgpt: 0, llm: 1, direct: 8, other: 2 },
         byCountry: { US: 7, DE: 3 },
       },
     };

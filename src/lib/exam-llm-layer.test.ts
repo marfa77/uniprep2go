@@ -255,6 +255,8 @@ describe("exam-llm-layer", () => {
     expect(highIntent).toContain("/mock-exams/aha-bls-provider-readiness-check");
     expect(highIntent).toContain("ARDMS SPI practice test free");
     expect(highIntent).toContain("/mock-exams/ardms-spi-readiness-check");
+    expect(highIntent).toContain("ASCP MLS practice test free");
+    expect(highIntent).toContain("/mock-exams/ascp-mls-readiness-check");
     expect(highIntent).toContain("ASCP MLT practice test free");
     expect(highIntent).toContain("/mock-exams/ascp-mlt-readiness-check");
     expect(highIntent).toContain("ASWB Bachelors practice test free");

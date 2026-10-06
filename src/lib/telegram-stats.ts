@@ -765,6 +765,7 @@ function rankPaths(
 
 const CHANNEL_STICKY_PRIORITY: Record<TrafficChannel, number> = {
   google: 3,
+  bing: 3,
   chatgpt: 3,
   llm: 3,
   other: 1,
@@ -941,20 +942,26 @@ function formatChannelTopPagesBlock(options: {
   return lines;
 }
 
-/** Top pages from Google vs ChatGPT/LLM — prefer period path∩channel, else all-time, else recent. */
+/** Top pages from Google vs Bing vs ChatGPT/LLM — prefer period path∩channel, else all-time, else recent. */
 export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
   const googleLifetime = stats.visitors.lifetimeByChannel.google ?? 0;
+  const bingLifetime = stats.visitors.lifetimeByChannel.bing ?? 0;
   const llmLifetime =
     (stats.visitors.lifetimeByChannel.chatgpt ?? 0) + (stats.visitors.lifetimeByChannel.llm ?? 0);
   const googlePeriod = stats.visitors.periodByChannel.google ?? 0;
+  const bingPeriod = stats.visitors.periodByChannel.bing ?? 0;
   const llmPeriod =
     (stats.visitors.periodByChannel.chatgpt ?? 0) + (stats.visitors.periodByChannel.llm ?? 0);
 
   const googleRecent = aggregateTopPathsByChannels(stats.recentEvents, ["google"]);
+  const bingRecent = aggregateTopPathsByChannels(stats.recentEvents, ["bing"]);
   const llmRecent = aggregateTopPathsByChannels(stats.recentEvents, ["chatgpt", "llm"]);
 
   const googleLifetimePaths = rankPathsFromUniqueCounts(
     stats.visitors.lifetimePathsByChannel?.google,
+  );
+  const bingLifetimePaths = rankPathsFromUniqueCounts(
+    stats.visitors.lifetimePathsByChannel?.bing,
   );
   const llmLifetimePaths = rankPathsFromUniqueCounts(
     mergeChannelPathCounts(stats.visitors.lifetimePathsByChannel, ["chatgpt", "llm"]),
@@ -964,6 +971,11 @@ export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
     stats.visitors.lifetimePathsByChannel?.google,
     stats.visitors.pathsByChannel?.google,
     googleRecent.ranked,
+  );
+  const bing = pickChannelPathRanks(
+    stats.visitors.lifetimePathsByChannel?.bing,
+    stats.visitors.pathsByChannel?.bing,
+    bingRecent.ranked,
   );
   const llm = pickChannelPathRanks(
     mergeChannelPathCounts(stats.visitors.lifetimePathsByChannel, ["chatgpt", "llm"]),
@@ -980,6 +992,15 @@ export function formatSearchAndLlmTopPages(stats: FunnelStats, limit = 5) {
       recentRanked: googleRecent.ranked,
       limit,
       emptyHint: `none yet (all-time Google uniques: ${googleLifetime}; period: ${googlePeriod}; checked last ${recentWindow} events)`,
+    }),
+    "",
+    ...formatChannelTopPagesBlock({
+      label: "Bing",
+      primary: bing,
+      lifetimeRanked: bingLifetimePaths,
+      recentRanked: bingRecent.ranked,
+      limit,
+      emptyHint: `none yet (all-time Bing uniques: ${bingLifetime}; period: ${bingPeriod}; checked last ${recentWindow} events)`,
     }),
     "",
     ...formatChannelTopPagesBlock({
