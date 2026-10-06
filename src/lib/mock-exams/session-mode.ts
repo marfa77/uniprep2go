@@ -14,6 +14,11 @@ export function mockSessionModeLabel(mode: MockSessionMode) {
  * `mock:{slug}:start:learn`, `mock:{slug}:start:exam`, `mock:{slug}:complete:learn`.
  * Legacy `mock:{slug}:start` (no mode segment) counts as exam.
  */
+export function parseMockSlugFromSource(source: string | null | undefined): string | undefined {
+  const match = source?.match(/^mock:([^:]+)/);
+  return match?.[1];
+}
+
 export function parseMockSessionModeFromSource(
   source: string | null | undefined,
 ): MockSessionMode | undefined {

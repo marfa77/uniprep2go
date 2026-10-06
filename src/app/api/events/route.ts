@@ -4,6 +4,9 @@ import { getCatalogDeckBySlug } from "@/lib/decks";
 import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
+import { isAgentUserAgent } from "@/lib/mock-exams/miss-cohort";
+import { recordUniqueMockStart } from "@/lib/mock-exams/mock-start-count-store";
+import { parseMockSlugFromSource } from "@/lib/mock-exams/session-mode";
 import {
   notifyCheckoutClick,
   notifyMockPassCheckoutClick,
@@ -106,6 +109,20 @@ export async function POST(request: Request) {
     if (shouldRecordFunnelEvent(event, request)) {
       console.info("[funnel_event]", JSON.stringify(event));
       await recordFunnelEvent(event);
+      if (
+        event.name === "mock_started" &&
+        !isAgentUserAgent(event.userAgent) &&
+        event.visitorId
+      ) {
+        const startSlug = parseMockSlugFromSource(event.source);
+        if (startSlug) {
+          try {
+            await recordUniqueMockStart({ slug: startSlug, visitorId: event.visitorId });
+          } catch (error) {
+            console.error("[mock_start_count] record failed", error);
+          }
+        }
+      }
     }
 
     return new Response(null, { status: 204 });

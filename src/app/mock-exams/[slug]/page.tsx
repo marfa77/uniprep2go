@@ -26,6 +26,7 @@ import {
 } from "@/components/mock-exams/mock-seo-sections";
 import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
 import { MockMissCohortPanel } from "@/components/mock-exams/mock-miss-cohort";
+import { MockStartCountNote } from "@/components/mock-exams/mock-start-count";
 import { getPublicMissCohort } from "@/lib/mock-exams/miss-cohort-store";
 import {
   MockCitizenshipGuideCtaBar,
@@ -264,6 +265,7 @@ export default async function MockExamPage({
             runnable={runnable}
           />
         ) : null}
+        <MockStartCountNote slug={config.slug} />
 
         <MockExamSnapshot config={config} />
         <MockMissCohortPanel config={config} cohort={missCohort} />

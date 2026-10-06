@@ -5,6 +5,7 @@ import {
   learnOptionFeedback,
   parseMockSessionMode,
   parseMockSessionModeFromSource,
+  parseMockSlugFromSource,
 } from "./session-mode";
 
 describe("mock session mode", () => {
@@ -28,6 +29,9 @@ describe("mock session mode", () => {
     ).toBe("learn");
     expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:start")).toBe("exam");
     expect(parseMockSessionModeFromSource("mock:epa-608-readiness-check:landing")).toBeUndefined();
+    expect(parseMockSlugFromSource("mock:rd-exam-readiness-check:start:exam:free")).toBe(
+      "rd-exam-readiness-check",
+    );
     expect(
       countMockStartsByMode({
         "mock:a:start:exam": 3,

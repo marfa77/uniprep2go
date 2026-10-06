@@ -23,6 +23,9 @@ vi.mock("@/lib/telegram-notify", () => ({
   notifyMockPassRedeem,
 }));
 vi.mock("@/lib/funnel-store", () => ({ recordFunnelEvent }));
+vi.mock("@/lib/mock-exams/mock-start-count-store", () => ({
+  recordUniqueMockStart: vi.fn(async () => ({ recorded: true })),
+}));
 vi.mock("@/lib/checkout-pricing", () => ({
   getPricedDeckBySlug: vi.fn(async () => pricedDeck),
   formatDeckPriceLabel: vi.fn(() => "$11 USD"),
