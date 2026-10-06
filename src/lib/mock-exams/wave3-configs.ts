@@ -460,6 +460,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     linkedDeckSlug: "medical-scribe-anki-deck",
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
+    ankiDeckCardCount: 120,
     topics: fourNicheTopics([
       { id: "documentation", label: "Clinical documentation" },
       { id: "terminology", label: "Terminology" },
@@ -467,10 +468,12 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "compliance", label: "Privacy & compliance" }
     ]),
     officialSourceNote:
-      "Mapped to medical scribe documentation, terminology, EHR workflow, and HIPAA competencies. Independent UniPrep2Go readiness check — 60Q / 75 min / 70%, not the AHDPG MSCE (~100Q / 75 min / 80%) and not an NHA CCMA or CMA clinical-assistant exam.",
+      "Mapped to medical scribe documentation, terminology, EHR workflow, and HIPAA competencies. Independent UniPrep2Go readiness check — 60Q / 75 min / 70% from a 120 unique bank, not the AHDPG MSCE (~100Q / 75 min / 80%) and not an NHA CCMA or CMA clinical-assistant exam.",
     description: "Free 60-question Medical Scribe readiness check with topic scoring.",
     examBody: "Employer / training-program scribe competencies (AHDPG MSCE, ACMSS-style paths)",
-    questionSourceNote: "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap).",
+    questionSourceNote:
+      "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded to 120 unique 2026-10-06).",
+    lastUpdated: "2026-10-06",
     searchAliases: ["medical scribe", "scribe certification"],
   }),
   nicheReadinessConfig({

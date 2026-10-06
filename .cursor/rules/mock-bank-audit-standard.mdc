@@ -32,6 +32,18 @@ Goal: every live bank is the **best practice bank on the market** for its exam, 
 
 **Bank level**: covers every official content area in roughly blueprint weight, with ≥3 items per topic; varied difficulty; 0 duplicates or near-duplicate template families; session Q count / time / pass line honest vs the official exam on both mock and deck pages.
 
+### Session / bank size (locked 2026-10-06 — we sell Mock Pass retakes)
+
+Do **not** race OpenExamPrep/Career Employer on 200+ items. Product is timed diagnostic → weak topics → Anki, first mock free then $5 / 5 attempts.
+
+| Type | Session | Unique bank floor | Notes |
+|---|---|---|---|
+| Wave / niche default | **60** (4×15) | **≥120** (min 90) | Selling 5 retakes of a 60-from-60 bank is a shuffle of the same stems |
+| Money / official-adjacent | 75–120 when we can author it | ≥ **2× session** | SIE 75, PTCB/ServSafe 90, RD 120, Series 7 60 of 125 — always disclose vs official CAT/length |
+| Quick diagnostic SKU | 25 | ≥75 | Must say diagnostic in title; not the only paid mock for a 100+ exam |
+
+No `(Drill N)` copies toward the bank floor. Expand unique items in the same live-start pass when bank < floor. Do not silently stretch session to official CAT length without a real bank.
+
 ## 3. Metric gates (`npm run audit:bank-quality`)
 
 FAIL (must be 0 or within limit): invalid key · duplicate or near-duplicate/templated stems · duplicate options · all/none of the above · missing / template / thin distractor notes (incl. "Not the best answer here; the right answer is …", **"This item asks" / "The matching answer is" Wave-3 pads**) · thin explanations · boilerplate stem wrappers ("On the X Mock…", "Select the best answer.", **"This X mock is:"**) · distractor copied from another item's correct answer > 5% · correct = longest option > 30% · correct >40% longer than every distractor > 10% · any key letter outside 15–35% (n ≥ 40).

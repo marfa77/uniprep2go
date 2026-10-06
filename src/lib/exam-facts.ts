@@ -3486,7 +3486,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "The MSCE mixes fill-in-the-blank with multiple-choice items — pure MCQ banks, including UniPrep’s, do not match that format exactly.",
       "AMSP vs CMSP: CMSP requires 200+ documented front-line scribe hours in addition to passing the MSCE — verify with AHDPG.",
       "AHDPG cites The Joint Commission’s updated position that documentation assistants may enter orders at a provider’s direction; those not authorized to submit leave orders pending for licensed staff to verify.",
-      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic plus planned Anki.",
+      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic plus a $11 / 120-card Anki.",
       "Do not confuse scribe credentials with NHA CCMA or CMA (AAMA) clinical medical assistant exams.",
     ],
     high_yield_facts: [
@@ -3506,7 +3506,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s medical scribe check the official exam?",
-        a: "No. The free 60-question / 75-minute / 70% check is an independent multiple-choice diagnostic with topic scoring. The matching Anki deck is planned (waitlist). Not AHDPG, ACMSS, or employer material.",
+        a: "No. The free 60-question / 75-minute / 70% check is an independent multiple-choice diagnostic with topic scoring, drawn from a 120 unique bank. The matching Anki deck is $11 / 120 cards on Gumroad. Not AHDPG, ACMSS, or employer material.",
       },
       {
         q: "Is a scribe exam the same as CCMA or CMA?",

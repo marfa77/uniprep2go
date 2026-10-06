@@ -4,7 +4,7 @@ import type { MockExamConfig, MockExamConfigDraft, MockTopic } from "./types";
 export const NICHE_DISCLAIMER =
   "This is an independent readiness diagnostic from UniPrep2Go. It is not official exam-board material and does not award certification or guarantee a passing score.";
 
-/** Compact niche mock: 60 scored items (4 × 15). */
+/** Compact niche mock: 60 scored items (4 × 15). Paid retakes need unique bank ≥120 (min 90). */
 export const NICHE_TOPIC_QUESTIONS = 15;
 export const NICHE_SESSION_QUESTIONS = NICHE_TOPIC_QUESTIONS * 4;
 

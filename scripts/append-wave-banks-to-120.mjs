@@ -28,6 +28,8 @@ const SOURCE_BY_SLUG = {
     "Original UniPrep2Go local bank (Belgium Flanders MO).",
   "luxembourg-vivre-ensemble-readiness-check":
     "Original UniPrep2Go local bank (Luxembourg Vivre ensemble).",
+  "medical-scribe-readiness-check":
+    "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06).",
 };
 
 function parseArgs(argv) {

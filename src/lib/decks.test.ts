@@ -851,6 +851,7 @@ describe("deck catalog", () => {
       "ga-real-estate-anki-deck": "Georgia Real Estate Anki Deck — 60 Flashcards",
       "il-real-estate-anki-deck": "Illinois Real Estate Anki Deck — 60 Flashcards",
       "ma-real-estate-anki-deck": "Massachusetts Real Estate Anki Deck — 60 Flashcards",
+      "medical-scribe-anki-deck": "Medical Scribe Anki Deck — 120 Flashcards",
       "mi-real-estate-anki-deck": "Michigan Real Estate Anki Deck — 60 Flashcards",
       "nc-real-estate-anki-deck": "North Carolina Real Estate Anki Deck — 60 Flashcards",
       "nj-real-estate-anki-deck": "New Jersey Real Estate Anki Deck — 60 Flashcards",

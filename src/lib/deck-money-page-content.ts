@@ -139,7 +139,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "veterinary-assistant-anki-deck":
     "Planned 60-card veterinary assistant / AVA Anki. Free 60Q / 75 min diagnostic live now — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
-    "Planned 60-card medical scribe Anki (documentation, terminology, EHR workflow, HIPAA). Free 60Q / 75 min diagnostic live now — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
+    "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + free 60Q / 75 min diagnostic from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "ielts-toefl-english-for-turkish-speakers-anki-deck":
@@ -713,13 +713,13 @@ export const positioningOverrides: Partial<
   },
   "medical-scribe-anki-deck": {
     ourEdge: [
-      "Planned 60-card medical scribe Anki (documentation, terminology, EHR, HIPAA)",
-      "60Q / 75 min timed diagnostic live now — first mock free, no signup",
+      "$11 / 120 medical scribe Anki cards (documentation, terminology, EHR, HIPAA)",
+      "60Q / 75 min timed diagnostic from a 120 unique bank — first mock free, no signup",
       "Honest: AHDPG MSCE ~100Q / 75 min / 80%; our check is shorter",
       "≠ NHA CCMA / CMA (AAMA) clinical assistant",
     ],
     summaryProse:
-      "OpenExamPrep and PracticeTestGeeks win on free MSCE-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus a planned ownable Anki waitlist — not a full MSCE form and not a CCMA/CMA clinical-skills bank.",
+      "OpenExamPrep and PracticeTestGeeks win on free MSCE-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus an ownable 120-card Anki — not a full MSCE form and not a CCMA/CMA clinical-skills bank.",
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
@@ -1276,7 +1276,7 @@ NAVTA-approved program completion, VetMedTeam enrollment, or an exam mentor/proc
 
   "medical-scribe-anki-deck": `### What this page is
 
-A planned **60**-card medical scribe Anki (clinical documentation, terminology, EHR workflow, privacy & compliance) paired with a **live free 60-question** timed readiness check. The deck is **not a live Gumroad SKU** yet — waitlist only.
+A **$11 / 120**-card medical scribe Anki (clinical documentation, terminology, EHR workflow, privacy & compliance) paired with a **live free 60-question** timed readiness check drawn from a **120 unique** bank — so Mock Pass retakes are not the same 60 stems shuffled.
 
 ### Scribe vs CCMA / CMA
 
@@ -1288,7 +1288,7 @@ A common path, AHDPG’s Medical Scribe Certification Exam (MSCE), is typically 
 
 ### Plan with the free mock
 
-**Start:** Take the [free Medical Scribe readiness check](/mock-exams/medical-scribe-readiness-check). Use the topic report (documentation, terminology, EHR, compliance) to prioritize study. **When Anki ships:** drill weak rows only.
+**Start:** Take the [free Medical Scribe readiness check](/mock-exams/medical-scribe-readiness-check). Use the topic report (documentation, terminology, EHR, compliance) to prioritize study. **Then:** drill weak rows in this Anki deck.
 
 ### What this does not replace
 
