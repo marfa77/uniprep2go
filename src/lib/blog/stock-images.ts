@@ -753,6 +753,34 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "exam-prep-tools-comparison-uniprep2go": {
+    hero: {
+      id: "exam-prep-tools-hub-hero",
+      alt: "Desk with laptop, notebook, and flashcards for professional exam prep comparison",
+      caption: "Different platforms solve different jobs — pick by the gap you have now",
+      queries: [
+        "laptop notebook flashcards studying desk exam",
+        "professional studying laptop notes certification",
+        "student laptop textbook desk exam preparation",
+      ],
+      mustInclude: ["laptop", "study", "desk", "notebook", "exam", "student"],
+      mustExclude: ["party", "gaming", "covid"],
+    },
+    inline: [
+      {
+        id: "exam-prep-tools-hub-workflow",
+        alt: "Handwritten study notes and index cards for a timed mock then targeted recall loop",
+        caption: "Diagnose with a timed mock, then drill only the weak topics",
+        queries: [
+          "index cards handwritten study notes desk",
+          "flashcards paper studying active recall",
+          "timer studying notes exam desk",
+        ],
+        mustInclude: ["card", "note", "study", "flashcard", "notebook"],
+        mustExclude: ["covid", "vaccine"],
+      },
+    ],
+  },
   "anki-vs-quizlet-professional-exam-prep": {
     hero: {
       id: "anki-vs-quizlet-hero",

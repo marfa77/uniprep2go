@@ -641,7 +641,7 @@ const rawDecks: Deck[] = [
       cards: "444",
       topics: "All four FRM Part 1 books, weighted 20/20/30/30 like the exam, across 62 reading-level sections",
       formulas: "Every card: question, explanation, worked example, and common mistake; 176 MathJax formula cards",
-      examYear: "Current FRM Part 1 cycle",
+      examYear: "2026 FRM Part 1 Learning Objectives (GARP)",
       delivery: "Digital download through Gumroad (460 KB)",
     },
     topicCoverage: [
@@ -724,7 +724,7 @@ const rawDecks: Deck[] = [
       cards: "300",
       topics: "FINRA SIE topic weights: capital markets, products and risks, trading, accounts, prohibited activities, and regulation",
       formulas: "Concept explanations, exam traps, and MathJax support where needed",
-      examYear: "Current SIE exam cycle",
+      examYear: "FINRA SIE (75 scored + 5 pretest since Oct 27, 2025)",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
@@ -802,7 +802,7 @@ const rawDecks: Deck[] = [
       cards: "300",
       topics: "FINRA Series 7 job functions: communications, account opening, products, recommendations, suitability, records, order handling, settlement, and trade processing",
       formulas: "Worked example and common-mistake note on every card; 50 formula cards (bond yields, options strategies, margin, financial ratios) rendered with MathJax",
-      examYear: "Current Series 7 Top-Off exam cycle",
+      examYear: "FINRA Series 7 Top-Off (125 scored + 5 pretest)",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [

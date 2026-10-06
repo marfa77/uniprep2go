@@ -25,6 +25,7 @@ export const GOOGLE_SITEMAP_HUB_PATHS = [
 
 export const GOOGLE_SITEMAP_SUPPORT_PATHS = [
   { path: "/anki-starter-kit", priority: 0.9 },
+  { path: "/about", priority: 0.82 },
   { path: "/how-to-import-cfa-anki-deck", priority: 0.7 },
   { path: "/cfa-level-1-anki-deck-vs-curriculum", priority: 0.7 },
 ] as const;
@@ -69,7 +70,7 @@ export const GOOGLE_SITEMAP_COMICS_LASTMOD = "2026-07-28";
 export const GOOGLE_SITEMAP_SUPPORT_LASTMOD = "2026-08-27";
 
 const MONEY_BLOG_SLUG_PATTERN =
-  /finra|sie|series-|cfa|frm|servsafe|ptcb|pharmacy|excpt|california-real-estate|real-estate-dre|real-estate-psi|mrics/i;
+  /finra|sie|series-|cfa|frm|servsafe|ptcb|pharmacy|excpt|california-real-estate|real-estate-dre|real-estate-psi|mrics|exam-prep-tools/i;
 
 const US_MONEY_DECK_SLUG_PATTERN =
   /sie|series-|cfa|frm|ptcb|excpt|servsafe|real-estate|insurance|life-and-health|property-casualty|gmat|gre|sat|pmp|nclex|shrm|cfp|enrolled-agent|finra/i;

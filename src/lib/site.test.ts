@@ -7,6 +7,7 @@ describe("site config", () => {
     expect(siteConfig.googleAnalyticsId).toBe("G-NDF8PVD7N3");
     expect(siteConfig.ahrefsAnalyticsKey).toBe("X11yI8gl/4QXmr55ol2GlA");
     expect(legalLinks.map((link) => link.href)).toEqual([
+      "/about",
       "/privacy",
       "/terms",
       "/cookies",

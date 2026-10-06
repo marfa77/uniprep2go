@@ -1,4 +1,5 @@
 import { withMockAccessDisclosure } from "@/lib/mock-exams/mock-access-faq";
+import { examPrepToolsComparisonPost } from "./posts/exam-prep-tools-comparison";
 import { ankiDeckShelfLifePost } from "./posts/anki-deck-shelf-life";
 import { ankiVsQuizletExamPrepPost } from "./posts/anki-vs-quizlet-exam-prep";
 import { australianCitizenshipTestPost } from "./posts/australian-citizenship-test";
@@ -81,6 +82,7 @@ export function withBlogStockImages(draft: BlogPostDraft): BlogPost {
 }
 
 const blogPostDrafts: BlogPostDraft[] = [
+  examPrepToolsComparisonPost,
   czechCceLanguageVsRealiePost,
   wallonieCitoyenneteParcoursIntegrationPost,
   australianCitizenshipTestPost,

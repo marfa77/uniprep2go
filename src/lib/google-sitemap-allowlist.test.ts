@@ -56,6 +56,7 @@ describe("google sitemap allowlist", () => {
     }
 
     expect(urls).toContain(absoluteUrl("/anki-starter-kit"));
+    expect(urls).toContain(absoluteUrl("/about"));
     expect(urls).toContain(absoluteUrl("/how-to-import-cfa-anki-deck"));
     expect(urls).toContain(absoluteUrl("/cfa-level-1-anki-deck-vs-curriculum"));
   });

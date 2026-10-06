@@ -20,6 +20,7 @@ describe("blog guides", () => {
   it("publishes niche cluster guides with FAQ and product links", () => {
     const posts = getAllBlogPosts();
     expect(posts.map((post) => post.slug)).toEqual([
+      "exam-prep-tools-comparison-uniprep2go",
       "czech-cce-language-vs-realie-civics-two-exams",
       "wallonie-citoyennete-francais-a2-parcours-integration",
       "australian-citizenship-test-our-common-bond-complete-guide",
@@ -183,6 +184,18 @@ describe("blog guides", () => {
     expect(getBlogPostsByCluster("well-ap").map((post) => post.slug)).toEqual([
       "well-ap-vs-fitwel-certification-2026",
     ]);
+    expect(getBlogPostsByCluster("exam-prep-tools").map((post) => post.slug)).toEqual([
+      "exam-prep-tools-comparison-uniprep2go",
+    ]);
+    const hub = getBlogPostBySlug("exam-prep-tools-comparison-uniprep2go");
+    expect(hub?.title).toContain("Best Free Exam Prep");
+    const glance = hub?.sections[0]?.blocks.find((block) => block.type === "table");
+    expect(glance && glance.type === "table" ? glance.rows.flat().join(" ") : "").toContain(
+      "](/mock-exams)",
+    );
+    expect(glance && glance.type === "table" ? glance.rows.flat().join(" ") : "").toContain(
+      "open-exam-prep.com",
+    );
     expect(getBlogPostsByCluster("anki-study").map((post) => post.slug).sort()).toEqual([
       "anki-vs-quizlet-professional-exam-prep",
       "how-long-anki-decks-stay-current-exam-shelf-life",

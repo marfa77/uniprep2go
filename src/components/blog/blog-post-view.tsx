@@ -20,14 +20,39 @@ import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary, btnQuiet } from "@/lib/ui-button-classes";
 
-/** Render inline **bold** markers from author content. */
+/** Render inline **bold** and [label](href) from author content. */
 function RichText({ text }: Readonly<{ text: string }>) {
-  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
   return (
     <>
       {parts.map((part, index) => {
         if (part.startsWith("**") && part.endsWith("**")) {
           return <strong key={index}>{part.slice(2, -2)}</strong>;
+        }
+        const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+        if (link) {
+          const [, label, href] = link;
+          if (href.startsWith("/") && !href.startsWith("//")) {
+            return (
+              <Link
+                className="font-medium text-[#1f3a5f] underline underline-offset-4"
+                href={href}
+                key={index}
+              >
+                {label}
+              </Link>
+            );
+          }
+          return (
+            <a
+              className="font-medium text-[#1f3a5f] underline underline-offset-4"
+              href={href}
+              key={index}
+              rel="noopener noreferrer"
+            >
+              {label}
+            </a>
+          );
         }
         return <span key={index}>{part}</span>;
       })}
@@ -153,7 +178,7 @@ function Block({ block }: Readonly<{ block: BlogBlock }>) {
                       }
                       key={`${row[0]}-${cellIndex}`}
                     >
-                      {cell}
+                      <RichText text={cell} />
                     </td>
                   ))}
                 </tr>
@@ -259,7 +284,7 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "BlogPosting",
+        "@type": ["Article", "BlogPosting"],
         "@id": `${pageUrl}#article`,
         headline: post.title,
         description: post.metaDescription,
@@ -336,7 +361,7 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
           {post.title}
         </h1>
         <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
-          {post.publishedAt} · UniPrep2Go Blog
+          {post.publishedAt} · Updated {post.publishedAt} · UniPrep2Go editorial
         </p>
         <p className="mt-6 text-lg leading-8 text-[#4f493e]">
           <RichText text={post.intro} />
@@ -348,7 +373,7 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
 
         {post.sections.map((section, sectionIndex) => (
           <section className="mt-12" key={section.heading}>
-            <h2 className="text-2xl font-semibold tracking-tight">{section.heading}</h2>
+            <h2 className="text-2xl font-semibold tracking-tight" id={section.heading.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")}>{section.heading}</h2>
             {section.blocks.map((block, index) => (
               <Block block={block} key={`${section.heading}-${block.type}-${index}`} />
             ))}
@@ -364,7 +389,9 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
             {post.faqs.map((faq) => (
               <article className="p-5" key={faq.question}>
                 <h3 className="font-semibold">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-[#5f5749]">{faq.answer}</p>
+                <p className="mt-2 leading-7 text-[#5f5749]">
+                  <RichText text={faq.answer} />
+                </p>
               </article>
             ))}
           </div>

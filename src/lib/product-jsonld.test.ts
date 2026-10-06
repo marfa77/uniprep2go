@@ -107,6 +107,7 @@ describe("product json-ld", () => {
     expect(buildSiteOrganizationJsonLd()).toMatchObject({
       "@type": "Organization",
       name: "UniPrep2Go",
+      publishingPrinciples: "https://uniprep2go.study/about",
       contactPoint: {
         "@type": "ContactPoint",
         email: "support@uniprep2go.study",

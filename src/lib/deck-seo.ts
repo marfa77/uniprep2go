@@ -844,11 +844,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s free 90-question timed mock plus the separate 300-card Anki deck for weak-topic repair.",
   },
   "california-real-estate-exam-anki-deck": {
-    title: "CA Real Estate Salesperson Anki | 400 DRE Cards + Free Mock",
-    headline: "California Real Estate Salesperson Anki — 400 DRE Cards + Free Mock",
+    title: "CA Real Estate Salesperson Anki | 250 DRE Cards + Free Mock",
+    headline: "California Real Estate Salesperson Anki — 250 DRE Cards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
-      "Best California DRE salesperson Anki: 400 CA-only cards (agency, disclosures, contracts, math) + free 60-question CA practice test. Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
+      "Best California DRE salesperson Anki: 250 CA-only cards (agency, disclosures, contracts, math) + free 60-question CA practice test. Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
     keywords: [
       "best california real estate anki deck",
       "california real estate anki deck",

@@ -25,6 +25,8 @@ import {
   MockExamWhoForSection,
 } from "@/components/mock-exams/mock-seo-sections";
 import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
+import { MockMissCohortPanel } from "@/components/mock-exams/mock-miss-cohort";
+import { getPublicMissCohort } from "@/lib/mock-exams/miss-cohort-store";
 import {
   MockCitizenshipGuideCtaBar,
   MockCitizenshipGuideFailTraps,
@@ -196,6 +198,7 @@ export default async function MockExamPage({
       ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
       : seoCopy.whatIsExam);
   const citizenshipGuide = getCitizenshipGuideContent(config.slug);
+  const missCohort = await getPublicMissCohort(config.slug);
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -263,6 +266,7 @@ export default async function MockExamPage({
         ) : null}
 
         <MockExamSnapshot config={config} />
+        <MockMissCohortPanel config={config} cohort={missCohort} />
         {mockExamVersion ? <DeckExamVersionBlock model={mockExamVersion} /> : null}
         <MockExamVisualHero config={config} />
 

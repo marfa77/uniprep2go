@@ -18,6 +18,21 @@ US organic + LLM → free timed mock → topic readiness report → fix weak top
 ~1.5k page impr / 10 clicks / 90d — **distribution problem, not conversion.**  
 Only ~26% of impr have query attribution. Do **not** invent winners from page-only positions.
 
+**Four layers — do not collapse catalog size into “Google ignores the site.”**
+
+| Layer | What it is | Source |
+|---|---|---|
+| 1 Catalog | Live products / waitlists | `availableDecks` + mock configs |
+| 2 SEO URL | Pages we *want* in Google | `sitemap.xml` (`shouldIndex*` + allowlist) |
+| 3 Index | What Google actually indexed | URL Inspection / Page indexing report — **not** Performance CSV |
+| 4 Performance | Impr / clicks / position | `npm run gsc:export` pages + query×page |
+
+No-perf-row in GSC pages CSV ≠ not indexed (Inspection: MLT mock indexed, 0 impr). Sitewide quality is unproven until Coverage counts exist. Next audit: **Index → Performance → URL class**, not catalog count.
+
+**Bing = lab, Google = scale.** On-site Bing mock:starts prove intent, not Bing rank. Do **not** open a second weekly title track for Bing, and do **not** rewrite a URL because a *different* SKU converted from Bing. Gold mine = same query×page Bing Webmaster pos 1–10 **and** GSC pos 30–100 — blocked until `tmp/bing-export-*` exists. IndexNow stays; pulse channel `bing` is measurement.
+
+**Do not** noindex Bing-converting wave mocks to “shrink inventory.” That kills the lab. Thin state-RE outside CA/FL/TX/NY is already noindex.
+
 **This week’s wedges (max 1–2 URLs):**
 
 1. `/decks/series-63-anki-deck` ← attributed `series 63 flashcards`

@@ -26,6 +26,15 @@ describe("deck SEO magnets", () => {
     expect(buildDeckSeoTitle(deck!)).toBe("U.S. Citizenship Exam Prep | 128 Flashcards");
   });
 
+  it("uses the live 250-card California DRE count, not the retired 400", () => {
+    const deck = getDeckBySlug("california-real-estate-exam-anki-deck");
+    expect(deck?.facts.cards).toBe("250");
+    expect(buildDeckSeoTitle(deck!)).toContain("250");
+    expect(buildDeckSeoTitle(deck!)).not.toContain("400");
+    expect(buildDeckSeoHeadline(deck!)).toContain("250");
+    expect(buildDeckSeoDescription(deck!)).toContain("250");
+  });
+
   it("frames SIE as exam prep with free mock", () => {
     const deck = getDeckBySlug("sie-exam-anki-deck");
     expect(buildDeckSeoTitle(deck!)).toContain("SIE");

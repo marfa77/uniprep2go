@@ -184,6 +184,8 @@ export function buildSiteOrganizationJsonLd() {
     "@id": `${siteConfig.url}/#organization`,
     name: siteConfig.name,
     url: siteConfig.url,
+    description: siteConfig.primaryPositioning,
+    publishingPrinciples: `${siteConfig.url}/about`,
     contactPoint: {
       "@type": "ContactPoint" as const,
       email: siteConfig.contactEmail,

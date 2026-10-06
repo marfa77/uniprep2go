@@ -63,6 +63,8 @@ Deepen-in-place on existing `/mock-exams/*` + `/decks/*` + `/blog/*`. No new URL
 | High-intent query on a Layer B URL with weak snippet | B | Rewrite title/meta only on that URL. |
 | LLM/GEO after a Layer B or A content change | Both | Sync exam-facts + curated `llms.txt` cite for **that** slug. No catalog dump. |
 | CTR optimization at avg pos &gt; 30 | — | **Skip** — fix rankings first. |
+| Bing organic mock:start / Bing referrer (on-site) | Lab | **Do not rewrite the page to "look like Google."** Content already satisfied intent for that click. Log URL vs GSC. If Google already pos 8–25 with impr and 0 clicks → snippet/CTR is the Google bottleneck (only if URL is on Layer B allowlist). If Google 0 impr / unknown → Track A index, not a new SKU. |
+| Bing Webmaster pos 1–10 **and** Google pos 30–100 on the **same query×page** | Gold mine | Point-edit only that URL, max 1–2/week, still Layer B cap. **Blocked until Bing Webmaster query×page export exists** — on-site Bing starts ≠ Bing rank. |
 
 ## Weekly allowlist
 
@@ -78,7 +80,121 @@ Hero = outcome-first diagnostic prep for live Layer B money (PTCB free mock, Ser
 
 Pricing, Gumroad IDs, auth, DB banks, layout CSS, invented official pass rates, SIE/7/63 mock title churn while SIE is unknown, USCIS/building/language/comics weekly ships, new SKUs, OpenRouter audits, state-RE catalog growth, `/exams/` migration, mass topical blog clusters without GSC proof, CTR-only rewrites on deep-page URLs.
 
+## Bing as Google lab (locked 2026-10-06)
+
+**Roles:** Bing = early SEO validation (index + rank + mock:start on thinner SERPs). Google = scale. Do **not** run a second weekly title track for Bing. IndexNow stays as-is.
+
+**Do not invent Bing ranks.** Until a Bing Webmaster query×page CSV lives next to `tmp/gsc-export-*`, the only Bing proof is on-site: `referrer` host bing.com (pulse channel `bing` since 2026-10-06) and `mock:…:start` with Bing referrer. Pulse uniques ≠ position 4.
+
+**GSC vs Bing starts (export 2026-10-05, 90d pages; Bing from live-start ledger, not Webmaster):**
+
+| URL | Bing proof | Google 90d clicks / impr / pos | Read |
+|-----|------------|--------------------------------:|------|
+| `/mock-exams/ascp-mls-readiness-check` | Learn start US/NC 2026-10-06 | 0 / 2 / 6.0 | Bing converted; Google barely sees it — **index/trust**, do not rewrite again this week |
+| `/mock-exams/ascp-mlt-readiness-check` | Boston Learn 2026-10-04 | not in pages-90d | Google unknown — Track A, not Layer B |
+| `/mock-exams/rd-exam-readiness-check` | PH Exam 2026-10-05 | 0 / 6 / 34.8 | Closest to “Bing intent + Google deep page” |
+| `/mock-exams/cda-childcare-readiness-check` | WI 2026-10-03 | 0 / 1 / 1.0 | 1 impr junk pos — not a ranking win |
+| `/mock-exams/ardms-spi-readiness-check` | Seoul Learn 2026-10-04 | not in pages-90d | Google unknown |
+| `/mock-exams/medical-scribe-readiness-check` | PH Exam | 0 / 4 / 30.0 | Thin Google; Anki waitlist |
+| `/decks/gre-anki-deck` | Hanoi Bing checkout 2026-10-04 | 0 / 3 / 43.7 | Conversion ≠ Google SERP |
+| `/mock-exams/cfa-level-1-readiness-check` | *not* a Bing-start SKU | 0 / **164** / 17.5 | Google already distributes; **0 clicks** = snippet, not discovery |
+| `/mock-exams/frm-part-1-readiness-check` | *not* a Bing-start SKU | 0 / 33 / 15.5 | Same: Google page 2, no CTR |
+| `/decks/series-7-anki-deck` | no Bing rank yet | 0 / 17 / 20.2; qp `series 7 flashcards` 6 @12.5 | Stay Layer B flashcards; do not retarget for Bing |
+| `/decks/ptcb-study-guide-2026` | no Bing rank yet | 1 / 20 / 15.7 | Keep outline wedge |
+| `/decks/servsafe-manager-complete-study-guide` | no Bing rank yet | 0 / 28 / 23.6; qp study guide 16 @24.6 | Observe; not Bing-lab gold |
+
+**Implication:** Bing is converting **thin-SERP wave mocks** Google has not adopted. Google’s volume sits on **CFA L1 / FRM / Series 7 / ServSafe** with impressions and almost no clicks. Mixing those two lists into one rewrite queue is how we churn the wrong URLs.
+
+**Next measurement (not a content pass):** Bing Webmaster Tools → query×page 28d/90d into `tmp/bing-export-YYYY-MM-DD/` (needs API key; none in repo). Pulse Top pages (Bing) after the 2026-10-06 channel split. Then fill Bing pos vs Google pos. No page rewrites from this table.
+
+## Four SEO layers (locked 2026-10-06)
+
+Do **not** treat 124 decks + 153 mocks as “Google is ignoring a 277-page farm.” Those are **layer 1–2**. Sitewide quality is unproven until layer 3 (index) is counted.
+
+| Layer | Count (2026-10-06) | Source |
+|---|---:|---|
+| 1 Catalog | 124 available decks · mocks live/waitlist as configs | `decks.ts` / mock configs |
+| 2 SEO URL | **333** in Google sitemap (153 mock + 124 deck + 23 vertical + 9 money blog + 11 comic + hubs) | live `/sitemap.xml` |
+| 3 Index | **sample only** (URL Inspection API) | not in `gsc:export` Performance |
+| 4 Performance 90d | 202 page rows (169 overlap sitemap; 33 GSC-only, mostly citizenship blogs we already dropped from sitemap) | `tmp/gsc-export-2026-10-05/pages-90d.csv` |
+
+Repeat: `npm run gsc:export` then `npm run gsc:url-layers` (`--inspect=/path` for Coverage on a sample). Ledger: `tmp/gsc-export-*/URL_LAYERS.md`.
+
+### Layer 2 × 4 (sitemap vs pages-90d)
+
+| class | sitemap | in GSC pages | no perf row | clicks | pos 1–10 0c | 11–25 0c | 26–50 0c | 51+ 0c |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| home | 1 | 1 | 0 | 1 | 0 | 0 | 0 | 0 |
+| hub-other | 12 | 9 | 3 | 0 | 2 | 1 | 6 | 0 |
+| mock | 153 | 76 | 77 | 0 | 19 | 14 | 27 | 16 |
+| mock-vertical | 23 | 8 | 15 | 0 | 7 | 1 | 0 | 0 |
+| deck | 124 | 65 | 59 | 8 | 9 | 14 | 24 | 10 |
+| blog (sitemap money) | 9 | 8 | 1 | 0 | 1 | 0 | 4 | 3 |
+| comic | 11 | 2 | 9 | 0 | 2 | 0 | 0 | 0 |
+
+**NO_PERF_ROW ≠ not indexed.** Inspection 2026-10-06: `/mock-exams/ascp-mlt-readiness-check` has **no** GSC page row and is **Submitted and indexed**.
+
+### Layer 3 sample (URL Inspection, 2026-10-06)
+
+| URL | Coverage | Last crawl | Layer 4 90d |
+|---|---|---|---|
+| `/` | Submitted and indexed | 2026-09-30 | 3 clicks / 82 impr @ 31.6 |
+| CFA L1 mock | Submitted and indexed | 2026-09-20 | 0 / **164** @ 17.5 → ranking/snippet, not discovery |
+| SIE full mock | **Discovered — currently not indexed** | — | Layer C wait still correct |
+| MLS mock | Submitted and indexed | 2026-08-28 (pre-rewrite) | 0 / 2 @ 6.0 |
+| MLT mock | Submitted and indexed | 2026-08-28 | no perf row |
+| Series 7 deck | Submitted and indexed | 2026-09-12 | 0 / 17 @ 20.2 (`series 7 flashcards` @ 12.5) |
+| Series 63 deck | Submitted and indexed | 2026-09-17 | 1 / 17 @ 33.4 |
+| PTCB study guide | Submitted and indexed | 2026-10-05 | 1 / 20 @ 15.7 |
+
+Money pages Google *does* know are mostly **indexed + weak rank/CTR**. The SIE mock is the known discovery hole. Full Page indexing totals still needed from GSC UI for Scenario A/B/C sitewide.
+
+### What this does to the diagnosis
+
+| Status | Meaning here |
+|---|---|
+| Indexed + 0 impr (MLT) | relevance / demand / query targeting — not “Google never saw it” |
+| Indexed + pos ~12–25 + 0 clicks (CFA L1, FRM, Series 7) | understands the URL; does not pick it / snippet fails |
+| Discovered not indexed (SIE mock) | crawl/index selection — **do not** weekly title-churn |
+| Crawled not indexed | still the strengthen-now rule on money URLs; **not seen** on this 8-URL sample |
+| Catalog size | **not a proven sitewide penalty** |
+
+P1 leftover: template sameness and fact drift (CA 400→250 overlay fixed in repo, unshipped). P2 backlinks still unmeasured.
+
+## URL class actions (KEEP / NOINDEX / CONSOLIDATE / BOOST)
+
+Already in code (do not redo):
+
+- **NOINDEX:** state-RE mocks except CA/FL/TX/NY; planned/waitlist decks; GEO `/*.md`; Googlebot `?utm_source=llm`; legal/contact/llms out of sitemap; citizenship blogs out of sitemap.
+- **Homepage:** 8 acquisition mocks + 4 pillars. Catalog is collapsed `<details>` below the fold.
+- **Do not** build `/exams/{slug}/` or `/finance/cfa/…` until Layer B proves demand.
+- **Do not** mass-noindex Bing-converting wave mocks.
+
+| Class | Action | Why |
+|-------|--------|-----|
+| Layer B allowlist + Series 7 flashcards | **BOOST** | GSC-attributed commercial queries |
+| CFA L1 / FRM mocks (indexed, impr, 0 clicks) | **KEEP INDEXED** | Performance problem, not index |
+| DELF/CELI decks | **KEEP INDEXED** | Only real Google clicks |
+| Bing-converting wave mocks | **KEEP INDEXED** | Lab URLs |
+| SIE mock | **KEEP** sitemap + internal links; **no title churn** | Discovered not indexed |
+| Remaining state-RE swarm | **NOINDEX** (already) | Thin |
+| Planned Anki | **NOINDEX** (already) | Not for sale |
+| Citizenship blogs | **CONSOLIDATE** | Live, out of Google sitemap; several still get GSC impr @ pos 50–80 |
+| `/about` | **BOOST** when shipped | Publisher / methodology |
+
 ## Run log
+
+### 2026-10-06 — Four-layer index audit (not catalog size)
+
+**Why:** Sitewide “too many pages” was not proven. Inspection sample: money URLs Submitted and indexed except SIE mock = Discovered not indexed. CFA L1 = indexed + 164 impr 0 clicks. MLT = indexed + no Performance row.  
+**Shipped (repo):** `npm run gsc:url-layers`; strategy layers 1–4; CA 250 overlay + `/about` still unpushed.  
+**Pause:** no mass noindex; no SIE title churn; no `/finance/` URL tree.
+
+### 2026-10-06 — Bing lab lock (no page rewrites)
+
+**Why:** Bing already sends mock:starts; Google 90d still ~14 clicks. Risk was treating Bing as a second SEO track or rewriting Google impression URLs because Bing converts elsewhere.  
+**Shipped:** on-site `bing` channel in pulse (commit `9d338f0`). Strategy: Bing = validation, Google = scale; gold-mine query×page blocked until Webmaster export.  
+**Pause:** no MLS/CDA/SPI title churn; no CFA/FRM CTR rewrites off allowlist.
 
 ### 2026-10-05 — Layer B: Series 7 flashcards (GSC pos 12.5)
 

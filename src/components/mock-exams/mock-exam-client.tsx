@@ -33,6 +33,7 @@ import { trackMockEvent } from "./mock-analytics";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
 import { useSearchParams } from "next/navigation";
 import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
+import { getOrCreateVisitorId } from "@/lib/visitor-id";
 
 type Screen = "landing" | "exam" | "results";
 
@@ -319,6 +320,23 @@ export function MockExamClient({
       mockSlug: config.slug,
       source: `mock:${config.slug}:complete:${sessionMode}`,
     });
+    if (sessionMode === "exam") {
+      void fetch("/api/mock-exams/miss-cohort", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          slug: config.slug,
+          visitorId: getOrCreateVisitorId(),
+          sessionMode,
+          topics: nextReport.topicResults.map((topic) => ({
+            topicId: topic.topicId,
+            correct: topic.correct,
+            total: topic.total,
+          })),
+        }),
+        keepalive: true,
+      });
+    }
     trackMockEvent({
       name: "mock_result_view",
       deckSlug: config.linkedDeckSlug,

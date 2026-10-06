@@ -52,6 +52,7 @@ export const siteConfig = {
 } as const;
 
 export const legalLinks = [
+  { href: "/about", label: "About & methodology" },
   { href: "/privacy", label: "Privacy Policy" },
   { href: "/terms", label: "Terms of Service" },
   { href: "/cookies", label: "Cookie Policy" },
