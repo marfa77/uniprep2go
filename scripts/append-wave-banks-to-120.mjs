@@ -30,6 +30,8 @@ const SOURCE_BY_SLUG = {
     "Original UniPrep2Go local bank (Luxembourg Vivre ensemble).",
   "medical-scribe-readiness-check":
     "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06).",
+  "ardms-spi-readiness-check":
+    "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07).",
 };
 
 function parseArgs(argv) {

@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-016",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "A diagnostic pulse has a frequency of 5 MHz. What is its period?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.0 microseconds (treating T as f)"
+      },
+      {
+        "id": "b",
+        "text": "2.0 microseconds (as if f were 0.5 MHz)"
+      },
+      {
+        "id": "c",
+        "text": "0.50 microseconds (as if f were 2 MHz)"
+      },
+      {
+        "id": "d",
+        "text": "0.20 microseconds (T = 1/f)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Period and frequency are reciprocals: T = 1/f. For 5 MHz (5 × 10^6 Hz), T = 1/(5 × 10^6) = 0.2 × 10^−6 s = 0.2 μs.",
+    "distractorExplanations": {
+      "a": "Uses T = f instead of T = 1/f, giving 5 μs.",
+      "b": "Confuses 1/0.5 MHz with the 5 MHz period.",
+      "c": "Would be correct for 2 MHz, not for 5 MHz."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-017",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "In soft tissue (c ≈ 1540 m/s), how does wavelength change if operating frequency doubles from 3 MHz to 6 MHz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wavelength halves because λ equals c divided by f"
+      },
+      {
+        "id": "b",
+        "text": "Wavelength doubles because λ equals c multiplied by f"
+      },
+      {
+        "id": "c",
+        "text": "Wavelength stays the same because soft-tissue speed is fixed"
+      },
+      {
+        "id": "d",
+        "text": "Wavelength quadruples following an amplitude-squared rule"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Wavelength equals propagation speed divided by frequency (λ = c/f). Doubling f halves λ when c is constant in soft tissue.",
+    "distractorExplanations": {
+      "b": "Multiplies instead of divides frequency into speed.",
+      "c": "Assumes wavelength depends only on medium speed.",
+      "d": "Confuses intensity A^2 scaling with wavelength."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-018",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "If acoustic amplitude is doubled while beam area stays constant, how do power and intensity change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both power and intensity increase by a factor of two"
+      },
+      {
+        "id": "b",
+        "text": "Both power and intensity increase by a factor of four"
+      },
+      {
+        "id": "c",
+        "text": "Power doubles while intensity remains essentially unchanged"
+      },
+      {
+        "id": "d",
+        "text": "Intensity doubles while power increases about eightfold"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Power and intensity are each proportional to amplitude squared. Doubling amplitude multiplies both by 2^2 = 4 when area is unchanged.",
+    "distractorExplanations": {
+      "a": "Treats power/intensity as linear with amplitude.",
+      "c": "Mixes area change with amplitude; area was held constant.",
+      "d": "Uses A^3 for power instead of the A^2 relationship."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-019",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "A 4 MHz beam travels 5 cm through soft tissue then returns. Compared with a 2 cm one-way path at the same frequency, total attenuation is roughly:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Smaller because longer paths reduce the attenuation rate"
+      },
+      {
+        "id": "b",
+        "text": "Unchanged because frequency alone sets total attenuation"
+      },
+      {
+        "id": "c",
+        "text": "Greater because attenuation accumulates over a longer path"
+      },
+      {
+        "id": "d",
+        "text": "Greater mainly because impedance mismatch grows with depth"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Soft-tissue attenuation increases with both path length and frequency (often ~0.5 dB/cm/MHz). Longer round-trip distance means more dB loss at the same f.",
+    "distractorExplanations": {
+      "a": "Reverses the path-length effect on attenuation.",
+      "b": "Ignores that attenuation coefficient is applied per cm.",
+      "d": "Confuses reflection at interfaces with absorption along the path."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-020",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "The half-value layer (HVL) for a given frequency in soft tissue is the depth at which:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wavelength equals half of the original soft-tissue wavelength"
+      },
+      {
+        "id": "b",
+        "text": "Pressure amplitude falls to one-quarter of the start value"
+      },
+      {
+        "id": "c",
+        "text": "Operating frequency drops by half because of attenuation"
+      },
+      {
+        "id": "d",
+        "text": "Intensity falls to one-half of its initial value (−3 dB)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "HVL is the thickness of tissue that reduces intensity to 50% of the incident value, which is a −3 dB intensity change.",
+    "distractorExplanations": {
+      "a": "Confuses half-value layer with a change in wavelength; attenuation does not halve the transmitted frequency.",
+      "b": "A pressure amplitude of one-quarter is not the HVL condition. Half intensity corresponds to pressure amplitude about 0.707 of its initial value.",
+      "c": "Attenuation reduces pressure amplitude and intensity, not the transmitted operating frequency."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-021",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "At a soft tissue–bone interface, a large fraction of the incident beam is reflected mainly because:",
+    "options": [
+      {
+        "id": "a",
+        "text": "A large acoustic-impedance mismatch increases reflection"
+      },
+      {
+        "id": "b",
+        "text": "Propagation speeds match, so transmitted energy cannot enter bone"
+      },
+      {
+        "id": "c",
+        "text": "Wavelength in bone is typically shorter than in soft tissue"
+      },
+      {
+        "id": "d",
+        "text": "Bone absorbs transmitted energy before any reflection can occur"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Intensity reflection depends on impedance mismatch: R = [(Z2 − Z1)/(Z2 + Z1)]^2. Soft tissue and bone have very different Z, so reflection is strong.",
+    "distractorExplanations": {
+      "b": "Speed mismatch drives refraction more than reflection fraction.",
+      "c": "Wavelength difference alone does not set reflection coefficient.",
+      "d": "Absorption after transmission is separate from interface reflection."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-022",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "A smooth liver capsule much larger than the wavelength returns a bright echo mainly when the beam is nearly perpendicular. That geometry is best described as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diffuse scattering that is strongest at near-grazing incidence"
+      },
+      {
+        "id": "b",
+        "text": "Specular reflection from a large, smooth interface"
+      },
+      {
+        "id": "c",
+        "text": "Rayleigh scattering from structures much smaller than wavelength"
+      },
+      {
+        "id": "d",
+        "text": "Refraction that bends the transmitted beam toward the normal"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Specular reflection occurs at large, smooth interfaces; strongest return is near normal incidence with i = r. Diffuse scatter redirects energy in many directions.",
+    "distractorExplanations": {
+      "a": "Diffuse scatter is weaker and less angle-dependent than specular.",
+      "c": "Rayleigh applies to scatterers << λ (e.g., RBCs), not organ capsules.",
+      "d": "Refraction is transmission with bending, not the bright specular echo."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-023",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Two wavelets from adjacent points on a wavefront arrive in phase at a location in the field. The combined pressure amplitude there is best explained by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Destructive interference canceling both wavelets completely"
+      },
+      {
+        "id": "b",
+        "text": "Snell's law bending each wavelet through the same angle"
+      },
+      {
+        "id": "c",
+        "text": "Constructive interference adding the wavelet contributions"
+      },
+      {
+        "id": "d",
+        "text": "Impedance matching that removes all relative phase differences"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Huygens’ principle treats each point as a source of wavelets. In-phase arrival produces constructive interference, increasing net amplitude.",
+    "distractorExplanations": {
+      "a": "Destructive interference occurs for out-of-phase arrivals.",
+      "b": "Snell's law describes refraction at interfaces, not in-phase summing.",
+      "d": "Matching layers affect transmission; they do not create phase addition."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-024",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Comparing two media with similar density, the stiffer medium (higher bulk modulus) typically shows:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lower propagation speed because density alone determines speed"
+      },
+      {
+        "id": "b",
+        "text": "Identical speed because frequency fixes propagation speed"
+      },
+      {
+        "id": "c",
+        "text": "Higher speed whenever acoustic impedance of the medium is lower"
+      },
+      {
+        "id": "d",
+        "text": "Higher propagation speed because speed rises with stiffness"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Propagation speed rises with stiffness (bulk modulus) and falls with density: roughly c = √(B/ρ). At similar ρ, greater stiffness yields faster sound.",
+    "distractorExplanations": {
+      "a": "Density alone does not determine c when stiffness differs.",
+      "b": "Frequency sets wavelength via λ = c/f, not the medium's c.",
+      "c": "Lower Z does not cause higher c; Z = ρc relates the quantities."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-025",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "A pulsed system transmits for 2 μs and listens for 198 μs in each pulse-listen cycle. Duty factor is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 1% because DF equals PD divided by PRP (2/200)"
+      },
+      {
+        "id": "b",
+        "text": "About 2% using a 100 μs pulse repetition period"
+      },
+      {
+        "id": "c",
+        "text": "About 50% as if transmit and listen times were equal"
+      },
+      {
+        "id": "d",
+        "text": "About 99% by counting listening time as the duty factor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Duty factor = pulse duration / pulse repetition period. Here PRP = 2 + 198 = 200 μs, so DF = 2/200 = 0.01 = 1%.",
+    "distractorExplanations": {
+      "b": "Uses wrong PRP (100 μs instead of 200 μs).",
+      "c": "Would require PD equal to listening time, which is not given.",
+      "d": "Confuses listening fraction with transmitting duty factor."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-026",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Spatial pulse length (SPL) differs from pulse duration (PD) in that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "SPL is the same as PD after converting units to microseconds"
+      },
+      {
+        "id": "b",
+        "text": "SPL is distance (n × λ); PD is time (n × T)"
+      },
+      {
+        "id": "c",
+        "text": "SPL equals period multiplied by the pulse repetition frequency"
+      },
+      {
+        "id": "d",
+        "text": "SPL is the waiting time from one pulse start to the next (PRP)"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pulse duration is time (n × T). Spatial pulse length is distance (n × λ). Related by SPL = c × PD in the medium, but they are not identical units.",
+    "distractorExplanations": {
+      "a": "PD is time; SPL is length—unit conversion alone does not equate them.",
+      "c": "Period × PRF is dimensionless duty-related, not SPL.",
+      "d": "PRP is the interval between pulses, not the pulse's spatial length."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-027",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "A heavily damped transducer produces a short pulse with a wide frequency bandwidth. Relative to a lightly damped narrow-band design, its quality factor (Q) is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher because short pulses raise resonance sharpness"
+      },
+      {
+        "id": "b",
+        "text": "Unchanged because Q tracks matching-layer thickness alone"
+      },
+      {
+        "id": "c",
+        "text": "Lower because Q equals center frequency divided by bandwidth"
+      },
+      {
+        "id": "d",
+        "text": "Higher because a wider bandwidth means a sharper resonance"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Quality factor is center frequency divided by bandwidth. Short, damped pulses broaden bandwidth and therefore lower Q; imaging favors low Q for axial resolution.",
+    "distractorExplanations": {
+      "a": "Short pulses widen bandwidth and reduce Q, not raise it.",
+      "b": "Matching layer affects transmission efficiency, not Q definition.",
+      "d": "Wider bandwidth means less sharp resonance (lower Q)."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-028",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Red blood cells are much smaller than the ultrasound wavelength. Echoes from blood are therefore dominated by:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Specular reflection of similar strength at every beam angle"
+      },
+      {
+        "id": "b",
+        "text": "Complete absorption leaving essentially no usable backscatter"
+      },
+      {
+        "id": "c",
+        "text": "Refraction that steers the whole beam toward the heart chambers"
+      },
+      {
+        "id": "d",
+        "text": "Rayleigh scattering that increases strongly with frequency"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Structures ≪ λ produce Rayleigh scattering (intensity often ~f^4). Specular reflection needs large smooth interfaces, not RBC-scale scatterers.",
+    "distractorExplanations": {
+      "a": "Specular needs interfaces large and smooth relative to λ.",
+      "b": "Blood does produce weak backscatter used in Doppler imaging.",
+      "c": "Refraction at vessel walls is separate from RBC-scale scatter."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-029",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "Using the soft-tissue range equation, an echo round-trip time of 130 μs corresponds to a reflector depth of about:",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 cm using the 13 μs per cm of depth rule"
+      },
+      {
+        "id": "b",
+        "text": "5 cm if round-trip time were counted as 26 μs per cm"
+      },
+      {
+        "id": "c",
+        "text": "13 cm if the conversion were treated as 10 μs per cm"
+      },
+      {
+        "id": "d",
+        "text": "65 cm if the conversion were treated as 2 μs per cm"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The 13 μs/cm rule of thumb: depth (cm) ≈ round-trip time (μs) / 13. So 130 μs → 10 cm. (One-way time is half that.)",
+    "distractorExplanations": {
+      "b": "Uses 26 μs/cm (one-way style) incorrectly on round-trip time.",
+      "c": "Inverts the 13 μs and 10 cm relationship.",
+      "d": "Treats 2 μs/cm as if it were the soft-tissue round-trip rule."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-physics-basics-030",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "physics-basics",
+    "prompt": "If received intensity doubles relative to a reference, the intensity change in decibels is approximately:",
+    "options": [
+      {
+        "id": "a",
+        "text": "About +6 dB which fits amplitude ×2 or intensity ×4"
+      },
+      {
+        "id": "b",
+        "text": "About +3 dB for an intensity factor of two"
+      },
+      {
+        "id": "c",
+        "text": "About +10 dB which fits an intensity factor near ten"
+      },
+      {
+        "id": "d",
+        "text": "About −3 dB which describes intensity falling by one-half"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "On the intensity dB scale, a factor of 2 corresponds to about +3 dB (10 log10(2) ≈ 3). A factor of 10 is +10 dB; amplitude ×2 is about +6 dB.",
+    "distractorExplanations": {
+      "a": "+6 dB is roughly amplitude ×2 or intensity ×4.",
+      "c": "+10 dB corresponds to an intensity factor of about 10.",
+      "d": "−3 dB is a halving of intensity, not a doubling."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-016",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A designer sets the matching layer thickness near one-quarter wavelength at the operating frequency. What is the main purpose of that choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lengthen the pulse to raise quality factor"
+      },
+      {
+        "id": "b",
+        "text": "Block heat transfer into the piezoelectric crystal"
+      },
+      {
+        "id": "c",
+        "text": "Steer the beam electronically without delay lines"
+      },
+      {
+        "id": "d",
+        "text": "Improve transmission by reducing the probe–tissue impedance mismatch"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A λ/4 matching layer provides an intermediate impedance step between high-Z PZT and low-Z tissue, improving transmission and reducing reflection at the probe face.",
+    "distractorExplanations": {
+      "a": "Damping shortens pulses; matching does not lengthen them for Q.",
+      "b": "Thermal isolation is not why the matching layer is λ/4 thick.",
+      "c": "Steering uses element timing; matching layer is an acoustic coupler."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-017",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Compared with a lightly damped crystal, adding heavy backing material behind the PZT typically produces which tradeoff?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shorter pulses and better axial resolution, but lower sensitivity"
+      },
+      {
+        "id": "b",
+        "text": "Longer pulses and better axial resolution, with higher sensitivity"
+      },
+      {
+        "id": "c",
+        "text": "Narrower bandwidth and deeper penetration at the same output"
+      },
+      {
+        "id": "d",
+        "text": "Thicker matching layer and stronger side-lobe amplitude"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Backing damps ringing so spatial pulse length falls and axial resolution improves, but less acoustic energy is available, so echo sensitivity drops.",
+    "distractorExplanations": {
+      "b": "Heavy damping shortens, not lengthens, the pulse; sensitivity falls.",
+      "c": "Damping widens bandwidth; it does not trade for deeper penetration alone.",
+      "d": "Matching layer thickness and side lobes are not the primary backing tradeoff."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-018",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "During transducer manufacture, a PZT element is accidentally heated above its Curie temperature. What is the likely result?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Its center frequency rises temporarily, but polarization is unchanged"
+      },
+      {
+        "id": "b",
+        "text": "Its polarization is lost, destroying normal piezoelectric behavior"
+      },
+      {
+        "id": "c",
+        "text": "Its matching layer automatically changes from quarter-wave to half-wave thickness"
+      },
+      {
+        "id": "d",
+        "text": "It becomes a continuous-wave element while retaining receive sensitivity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Heating polarized PZT above its Curie temperature can depolarize the ceramic, so it no longer converts electrical and mechanical energy normally. Routine probe care must follow the manufacturer’s temperature and disinfection limits, but an autoclave does not necessarily exceed the Curie point.",
+    "distractorExplanations": {
+      "a": "Crossing the Curie temperature can permanently depolarize PZT; it is not merely a reversible frequency shift.",
+      "c": "Matching-layer thickness is a physical construction dimension and does not double when the crystal is overheated.",
+      "d": "Continuous-wave operation depends on transducer construction and excitation, not Curie-temperature damage."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-019",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "During a cardiac exam you switch from a linear sequenced array on the neck to a sector phased array on the chest. How do these arrays mainly differ in beam direction control?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Linear arrays steer with delays; phased arrays fire one fixed element"
+      },
+      {
+        "id": "b",
+        "text": "Both arrays rely on a rotating acoustic mirror for every scan line"
+      },
+      {
+        "id": "c",
+        "text": "Linear arrays sequence groups; phased arrays steer with timed delays"
+      },
+      {
+        "id": "d",
+        "text": "Phased arrays sequence fixed groups; linear arrays use annular rings"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Linear sequenced arrays create parallel lines by switching which element group fires; phased arrays apply progressive time delays so one aperture steers and focuses sector lines.",
+    "distractorExplanations": {
+      "a": "Delay steering is the phased-array hallmark; linear sequencing walks groups.",
+      "b": "Mechanical mirrors are historical; modern arrays use electronic timing.",
+      "d": "Annular rings are a different geometry, not how linear scanners work."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-020",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "An older annular-array probe is described in a physics review. What focusing behavior best matches classic annular arrays?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They steer electronically in elevation without any mechanical motion"
+      },
+      {
+        "id": "b",
+        "text": "They fire rectangular elements in sequence like a linear array"
+      },
+      {
+        "id": "c",
+        "text": "They produce continuous-wave Doppler signals without imaging focus"
+      },
+      {
+        "id": "d",
+        "text": "Electronic focusing by concentric rings, with mechanical beam steering"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Annular arrays use concentric ring elements with delay timing for electronic focusing; historically, steering or sweeping often still required mechanical motion of the assembly.",
+    "distractorExplanations": {
+      "a": "Classic annular designs focused electronically but did not fully replace mechanical sweep.",
+      "b": "Rectangular sequencing describes linear arrays, not annular rings.",
+      "c": "Annular arrays were imaging transducers with focusing, not CW-only probes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-021",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A thin vessel appears and disappears as you rock the probe slightly out of plane. Which beam property most limits that elevational (slice-thickness) detail?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lens and aperture geometry, which set beam thickness with depth"
+      },
+      {
+        "id": "b",
+        "text": "Pulse duration, which sets elevational beam width by itself"
+      },
+      {
+        "id": "c",
+        "text": "PRF selection, which directly narrows the out-of-plane focus"
+      },
+      {
+        "id": "d",
+        "text": "Reject control, which electronically thins the elevation plane"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Elevational resolution depends on beam thickness perpendicular to the scan plane, largely set by the lens and aperture geometry rather than axial pulse length or PRF.",
+    "distractorExplanations": {
+      "b": "Pulse duration governs axial resolution, not elevational thickness.",
+      "c": "PRF controls timing/aliasing tradeoffs, not slice-thickness focusing.",
+      "d": "Reject is a display threshold; it does not reshape the elevation beam."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-022",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "At a depth still within the near field of an unfocused single-element beam, intensity patterns oscillate before the natural focus. Which zone naming is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fraunhofer zone is the shallowest region before any divergence starts"
+      },
+      {
+        "id": "b",
+        "text": "Fresnel before the natural focus; Fraunhofer beyond it"
+      },
+      {
+        "id": "c",
+        "text": "Fresnel zone begins after the beam has already fully diverged"
+      },
+      {
+        "id": "d",
+        "text": "Near and far zones swap names when frequency increases"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The Fresnel (near) zone extends from the face to the natural focus; beyond that, the Fraunhofer (far) zone shows progressive divergence of the beam.",
+    "distractorExplanations": {
+      "a": "Fraunhofer is the far zone after the natural focus, not the shallowest near field.",
+      "c": "Fresnel is the near field before divergence dominates past the focus.",
+      "d": "Zone names stay the same; frequency changes NZL length, not the labels."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-023",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Holding soft-tissue speed fixed, how do larger aperture diameter and higher frequency affect the natural focus depth (near-zone length)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Larger aperture or higher frequency shortens the near-zone length"
+      },
+      {
+        "id": "b",
+        "text": "Aperture size changes NZL but frequency has no effect on NZL"
+      },
+      {
+        "id": "c",
+        "text": "Either change lengthens the near zone"
+      },
+      {
+        "id": "d",
+        "text": "Frequency changes NZL but aperture diameter leaves NZL unchanged"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Near-zone length scales approximately with aperture diameter squared over wavelength, so bigger crystal diameter or higher frequency (shorter λ) pushes the natural focus deeper.",
+    "distractorExplanations": {
+      "a": "Both larger D and higher f increase NZL; they do not shorten it.",
+      "b": "Frequency enters via wavelength; it does affect NZL.",
+      "d": "Aperture diameter is a primary NZL term; it is not irrelevant."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-024",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A phased-array system focuses a transmit beam at 6 cm by applying different start times across elements. What is that mechanism called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mechanical focusing using a fixed external acoustic mirror"
+      },
+      {
+        "id": "b",
+        "text": "Apodization that randomly blanks half the elements each pulse"
+      },
+      {
+        "id": "c",
+        "text": "Grating-lobe suppression by raising the pulse repetition frequency"
+      },
+      {
+        "id": "d",
+        "text": "Electronic focusing with programmed delays across the aperture"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Transmit focus is formed by delaying outer elements relative to central ones so wavefronts arrive in phase at the chosen depth—electronic delay focusing.",
+    "distractorExplanations": {
+      "a": "Fixed mirrors are passive; programmed delays are electronic focusing.",
+      "b": "Apodization weights amplitude; it is not the primary focus-delay method.",
+      "c": "PRF does not create the geometric focus delay pattern across elements."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-025",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "While echoes return from many depths, the scanner continuously updates receive delays so the listening focus tracks depth. What concept is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dynamic receive focusing that retunes delays as echoes arrive"
+      },
+      {
+        "id": "b",
+        "text": "Single fixed receive focus locked for the entire listening interval"
+      },
+      {
+        "id": "c",
+        "text": "Transmit multifocus that keeps one receive delay for every depth"
+      },
+      {
+        "id": "d",
+        "text": "Duty-factor limiting that freezes delays after the first returning echo"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dynamic receive focusing changes element delays during reception so the receive focus follows depth, improving lateral detail without requiring multiple transmits for every depth.",
+    "distractorExplanations": {
+      "b": "A single fixed receive delay cannot stay optimal at every depth.",
+      "c": "Transmit multifocus is separate; dynamic receive updates listening delays.",
+      "d": "Duty factor is on/off timing of pulses, not receive delay tracking."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-026",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "Off-axis artifactual echoes appear as grating lobes when element spacing is relatively large. How does that differ from ordinary side lobes, and what helps?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Side lobes arise from array pitch; grating lobes are single-element diffraction"
+      },
+      {
+        "id": "b",
+        "text": "Grating lobes arise from array pitch; closer spacing and subdicing help"
+      },
+      {
+        "id": "c",
+        "text": "Grating lobes shrink when you increase element spacing past one wavelength"
+      },
+      {
+        "id": "d",
+        "text": "Side lobes and grating lobes are identical and cannot be mitigated"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Side lobes are weak off-axis energy from finite apertures; grating lobes are stronger replicas tied to periodic element spacing. Subdicing, tighter pitch, and apodization reduce grating lobes.",
+    "distractorExplanations": {
+      "a": "Side lobes occur with single elements too; grating lobes need array spacing.",
+      "c": "Larger pitch worsens grating lobes; closer spacing reduces them.",
+      "d": "They differ in cause; mitigation with pitch control and apodization exists."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-027",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "To reduce unwanted off-axis energy, the beam former drives outer elements with lower amplitude than central elements. What is this technique called, and why?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dynamic receive focusing—delay changes that raise outer-element drive"
+      },
+      {
+        "id": "b",
+        "text": "Matching-layer tuning—impedance steps that blank central elements"
+      },
+      {
+        "id": "c",
+        "text": "Apodization—amplitude shading that suppresses off-axis lobes"
+      },
+      {
+        "id": "d",
+        "text": "Spatial compounding—frame averaging that boosts grating-lobe peaks"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Apodization applies amplitude weights (stronger center, weaker edges) across the aperture so side-lobe and grating-lobe levels fall, at some cost to main-lobe width.",
+    "distractorExplanations": {
+      "a": "Dynamic receive focusing adjusts delays, not primarily amplitude shading.",
+      "b": "Matching layers couple acoustically; they do not blank central elements.",
+      "d": "Compounding averages steer angles; it is not amplitude apodization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-028",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A broadband multifrequency probe lets the operator select a lower or higher center frequency on the same footprint. What tradeoff should you expect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher frequency deepens penetration while axial detail worsens"
+      },
+      {
+        "id": "b",
+        "text": "Lower frequency sharpens elevational focus without changing attenuation"
+      },
+      {
+        "id": "c",
+        "text": "Bandwidth choice removes Curie temperature limits on sterilization"
+      },
+      {
+        "id": "d",
+        "text": "Higher frequency improves resolution but reduces penetration"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Broadband transducers support selectable operating bands; raising frequency shortens wavelength and can improve resolution, but attenuation rises so penetration falls.",
+    "distractorExplanations": {
+      "a": "Higher frequency cuts penetration and tends to improve, not worsen, detail.",
+      "b": "Lower frequency favors penetration; it does not magically sharpen elevation alone.",
+      "c": "Bandwidth selection does not change Curie temperature or autoclave safety."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-029",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "A continuous-wave Doppler probe is built differently from a pulsed imaging crystal. Which construction feature is typical of CW transducers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Little or no backing material, yielding high Q and long continuous ringing"
+      },
+      {
+        "id": "b",
+        "text": "Heavy backing for short pulses and very wide imaging bandwidth"
+      },
+      {
+        "id": "c",
+        "text": "Quarter-wave matching with a shared single crystal for transmit and receive"
+      },
+      {
+        "id": "d",
+        "text": "Annular rings that electronically steer color boxes in two planes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CW Doppler favors narrowband, efficiently ringing crystals: backing is minimized or omitted (high Q), and separate transmit/receive elements often run continuously.",
+    "distractorExplanations": {
+      "b": "Heavy backing is for short pulsed imaging pulses, not classic CW probes.",
+      "c": "CW probes commonly use separate Tx/Rx crystals; shared single-crystal CW is atypical.",
+      "d": "Annular electronic 2-D steering is not the defining CW construction feature."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-transducers-beam-030",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "transducers-beam",
+    "prompt": "During sector scanning, the system must both steer each line and place the focus. Which subsystem applies the element timing that accomplishes that?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The scan converter, which creates acoustic time delays in tissue"
+      },
+      {
+        "id": "b",
+        "text": "The beam former, which sets delays for steering and focusing"
+      },
+      {
+        "id": "c",
+        "text": "The matching layer controller, which phases each element electrically"
+      },
+      {
+        "id": "d",
+        "text": "The reject circuit, which sequences delays after demodulation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The beam former generates transmit and receive delay patterns across elements so wavefronts steer to the desired angle and converge at the chosen focus.",
+    "distractorExplanations": {
+      "a": "Scan conversion maps echo data to display pixels; it does not form acoustic delays.",
+      "c": "Matching layers are passive acoustic couplers, not electronic delay controllers.",
+      "d": "Reject thresholds amplitudes after detection; it does not create steer/focus delays."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-016",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "A spectral waveform appears below the baseline after the probe orientation and steering are changed. Before reporting a true flow-direction change, what should the operator verify?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise the wall filter until the directional waveform is removed"
+      },
+      {
+        "id": "b",
+        "text": "Enable tissue harmonics to reverse the spectral frequency shift"
+      },
+      {
+        "id": "c",
+        "text": "Increase ensemble length so the spectral baseline flips automatically"
+      },
+      {
+        "id": "d",
+        "text": "Check spectral invert, beam steering, angle geometry, and a known reference direction"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Spectral polarity depends on motion relative to the beam and on display inversion. Verifying invert, steering, angle geometry, and a known reference direction separates a setup change from a genuine reversal without making a clinical diagnosis from display polarity alone.",
+    "distractorExplanations": {
+      "a": "The wall filter suppresses low-frequency shifts; erasing the waveform cannot validate its direction.",
+      "b": "Tissue harmonics affect B-mode image formation and do not reverse spectral Doppler polarity.",
+      "c": "Ensemble length affects estimate stability and temporal resolution, not spectral baseline polarity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-017",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "A pulsed-Doppler spectrum wraps around the baseline in a high-velocity jet. Which control change most directly raises the Nyquist limit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase PRF within the depth-imposed limit"
+      },
+      {
+        "id": "b",
+        "text": "Widen the color box while leaving PRF unchanged"
+      },
+      {
+        "id": "c",
+        "text": "Raise the wall filter without touching PRF"
+      },
+      {
+        "id": "d",
+        "text": "Switch to harmonic B-mode frequencies alone"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Nyquist limit equals PRF/2. Raising PRF increases the highest unambiguous velocity before wraparound.",
+    "distractorExplanations": {
+      "b": "A wider color box often forces a lower PRF budget rather than raising Nyquist.",
+      "c": "Wall filter removes low shifts; it does not raise the Nyquist ceiling.",
+      "d": "B-mode harmonics do not set the pulsed-Doppler Nyquist limit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-018",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "After a control change, peak systole remains on the spectrum but slow diastolic venous flow vanishes from the baseline. What is the most likely explanation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sample gate moved into air outside the body wall"
+      },
+      {
+        "id": "b",
+        "text": "An overly high wall filter removed low-frequency shifts"
+      },
+      {
+        "id": "c",
+        "text": "Color write priority disabled on a duplex preset"
+      },
+      {
+        "id": "d",
+        "text": "Thermal index display turned off on the monitor"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "High-pass wall filters erase near-baseline shifts. Over-filtering removes diastolic or venous flow while loud systolic peaks survive.",
+    "distractorExplanations": {
+      "a": "An extracorporeal gate would lose the whole tracing, not diastole alone.",
+      "c": "Write priority affects color versus B-mode layering, not isolated diastolic wipeout.",
+      "d": "Hiding TI does not remove selected Doppler frequency bands."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-019",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "You lengthen the PW sample gate so it spans from near wall to far wall of a vessel. The spectrum typically becomes:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Narrower, because longer gates cancel spectral width"
+      },
+      {
+        "id": "b",
+        "text": "Immune to aliasing without any PRF change"
+      },
+      {
+        "id": "c",
+        "text": "Broader because the gate includes more velocity laminae"
+      },
+      {
+        "id": "d",
+        "text": "Forced to a Doppler angle of zero degrees"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A longer gate mixes slow wall-adjacent and faster central velocities, widening the spectrum (spectral broadening).",
+    "distractorExplanations": {
+      "a": "Longer gates usually increase—not decrease—velocity spread in the trace.",
+      "b": "Gate length does not raise PRF or the Nyquist limit by itself.",
+      "d": "Beam–flow geometry sets angle; gate length does not reset it to zero."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-020",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Volume flow is roughly conserved through a focal luminal narrowing. Mean velocity in the narrowest segment should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fall because every narrowing slows red cells uniformly"
+      },
+      {
+        "id": "b",
+        "text": "Stay fixed because pressure drop cancels area change"
+      },
+      {
+        "id": "c",
+        "text": "Become undefined until a stent restores area"
+      },
+      {
+        "id": "d",
+        "text": "Rise because the same flow crosses a smaller area"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Continuity: Q ≈ A·v. When area shrinks at fixed volume flow, mean velocity in the jet rises.",
+    "distractorExplanations": {
+      "a": "Stenotic jets accelerate; they do not uniformly decelerate flow.",
+      "b": "Bernoulli links pressure and velocity, yet smaller area still drives higher jet speed.",
+      "c": "Flow continues through a stenosis; velocity remains defined."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-021",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Which change pushes a vessel toward turbulent rather than laminar flow (higher Reynolds number)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher velocity and diameter with lower viscosity"
+      },
+      {
+        "id": "b",
+        "text": "Lower velocity in a tiny capillary with higher viscosity"
+      },
+      {
+        "id": "c",
+        "text": "Any parabolic profile, regardless of speed or size"
+      },
+      {
+        "id": "d",
+        "text": "Setting the Doppler angle to ninety degrees in software"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reynolds number rises with velocity and diameter and falls with viscosity. High Re favors disturbed or turbulent flow.",
+    "distractorExplanations": {
+      "b": "That combination lowers Re and favors stable laminar flow.",
+      "c": "Parabolic laminar profiles exist at low Re; they are not turbulent by definition.",
+      "d": "Doppler angle changes measured shift, not the fluid-dynamic Re of the blood."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-022",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Resistive index on a carotid-style tracing is calculated as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "(Peak systolic − end-diastolic) ÷ mean velocity across the cycle"
+      },
+      {
+        "id": "b",
+        "text": "(PSV − EDV) ÷ PSV"
+      },
+      {
+        "id": "c",
+        "text": "Peak systolic velocity ÷ Doppler angle in degrees"
+      },
+      {
+        "id": "d",
+        "text": "End-diastolic velocity alone without using systole"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "RI = (PSV − EDV) / PSV. It summarizes pulsatility using the systolic and diastolic peaks.",
+    "distractorExplanations": {
+      "a": "Using mean velocity is a different pulsatility-style ratio, not standard RI.",
+      "c": "Angle in degrees is not part of the RI formula.",
+      "d": "RI needs both the systolic and diastolic peaks."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-023",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "You increase color packet (ensemble) length while holding line density fixed. The usual tradeoff is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Higher frame rate with no time cost per line"
+      },
+      {
+        "id": "b",
+        "text": "Wall filters becoming unnecessary for clutter"
+      },
+      {
+        "id": "c",
+        "text": "More stable velocity estimates but a lower frame rate"
+      },
+      {
+        "id": "d",
+        "text": "Automatic conversion of power mode into CW spectral"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Larger packets spend more pulses per color line, improving estimates but costing time, so frame rate falls.",
+    "distractorExplanations": {
+      "a": "Extra pulses per line cost time; frame rate usually drops.",
+      "b": "Clutter rejection still needs an appropriate wall filter.",
+      "d": "Packet size does not change the Doppler mode family by itself."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-024",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "A variance or turbulence color tag lights up inside a jet. That display most often means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perfectly uniform plug flow with one velocity"
+      },
+      {
+        "id": "b",
+        "text": "That soft-tissue TI has crossed a fixed legal limit"
+      },
+      {
+        "id": "c",
+        "text": "That the matching layer thickness is incorrect"
+      },
+      {
+        "id": "d",
+        "text": "A wide velocity distribution within the sample"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Variance encodes velocity spread within the packet — a clue to disturbed or turbulent flow, not a bioeffects citation or transducer build error.",
+    "distractorExplanations": {
+      "a": "Uniform plug flow shows low variance.",
+      "b": "TI is a heating index and is separate from variance maps.",
+      "c": "Matching-layer design is unrelated to color variance meaning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-025",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "When comparing power Doppler with velocity color Doppler for slow trickle flow, power mode is generally:",
+    "options": [
+      {
+        "id": "a",
+        "text": "More sensitive to slow flow and less angle-dependent"
+      },
+      {
+        "id": "b",
+        "text": "Equally precise for peak cm/s quantification as PW spectral"
+      },
+      {
+        "id": "c",
+        "text": "Free of flash or clutter without any filtering"
+      },
+      {
+        "id": "d",
+        "text": "The required mode whenever a pressure gradient is needed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Power Doppler encodes signal strength, aiding detection of slow flow with less angle/aliasing quirks, but it does not replace quantitative spectral velocity.",
+    "distractorExplanations": {
+      "b": "Peak velocity quantification still needs spectral (or calibrated velocity) methods.",
+      "c": "Motion clutter and flash can still appear; filters remain relevant.",
+      "d": "Simplified Bernoulli gradients need reliable peak velocities, not power amplitude alone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-026",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Triplex imaging on a vascular preset typically shows which combination together?",
+    "options": [
+      {
+        "id": "a",
+        "text": "B-mode, M-mode, and an anatomic measurement package"
+      },
+      {
+        "id": "b",
+        "text": "B-mode, color flow, and spectral Doppler"
+      },
+      {
+        "id": "c",
+        "text": "B-mode, color flow, and M-mode without a spectral tracing"
+      },
+      {
+        "id": "d",
+        "text": "Continuous-wave Doppler and M-mode without a B-mode image"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Triplex means simultaneous B-mode + color + spectral. It is informative but expensive in frame-rate and PRF budget.",
+    "distractorExplanations": {
+      "a": "M-mode plus measurements does not supply the color and spectral Doppler components of triplex imaging.",
+      "c": "Color plus M-mode still lacks the spectral Doppler component required for triplex imaging.",
+      "d": "A nonimaging CW and M-mode combination is not the three-mode B/color/spectral display called triplex."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-027",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "With a deep PW gate and a very high PRF, echoes from an earlier pulse may be mapped to the wrong depth. That error is called:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Velocity aliasing from sampling a shift above the Nyquist limit"
+      },
+      {
+        "id": "b",
+        "text": "Mirror-image artifact from a strong specular reflector"
+      },
+      {
+        "id": "c",
+        "text": "Range ambiguity"
+      },
+      {
+        "id": "d",
+        "text": "Spectral broadening from including many velocities in one gate"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "If a new pulse is sent before prior echoes return, late echoes can be assigned to the wrong range — classic range ambiguity.",
+    "distractorExplanations": {
+      "a": "Velocity aliasing wraps frequencies across the baseline; it does not assign late echoes to the wrong depth.",
+      "b": "Mirror image duplicates anatomy across a strong reflector rather than misassigning a late pulse echo in range.",
+      "d": "Spectral broadening widens the velocity distribution and is not a pulse-to-pulse depth assignment error."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-028",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "Using the simplified Bernoulli relation ΔP ≈ 4v² (mmHg with v in m/s), a peak jet of 3 m/s predicts a pressure drop of about:",
+    "options": [
+      {
+        "id": "a",
+        "text": "12 mmHg (as if computing 4 × 3 without squaring)"
+      },
+      {
+        "id": "b",
+        "text": "9 mmHg (as if computing 3² without multiplying by 4)"
+      },
+      {
+        "id": "c",
+        "text": "3 mmHg (as if reporting the velocity number itself)"
+      },
+      {
+        "id": "d",
+        "text": "36 mmHg (because 4 × 3² = 36)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "4 × 3² = 4 × 9 = 36 mmHg. The simplified form ignores proximal velocity and viscous losses.",
+    "distractorExplanations": {
+      "a": "Omitting the square underestimates the gradient (4 × 3 = 12).",
+      "b": "Using only 3² = 9 forgets the leading factor of 4.",
+      "c": "The velocity in m/s is an input, not the mmHg result."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-029",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "If cross-sectional area halves and volume flow is unchanged, mean velocity through that section should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approximately double"
+      },
+      {
+        "id": "b",
+        "text": "Fall to about half of the original value"
+      },
+      {
+        "id": "c",
+        "text": "Remain exactly the same as before"
+      },
+      {
+        "id": "d",
+        "text": "Drop to an undefined value until area recovers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "From Q = A·v, if area halves at fixed flow, mean velocity roughly doubles under continuity.",
+    "distractorExplanations": {
+      "b": "Halving area raises velocity for fixed flow; it does not cut velocity in half.",
+      "c": "Velocity must change when area changes at fixed volume flow.",
+      "d": "Flow continues; velocity stays defined as Q/A."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-doppler-hemodynamics-030",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "doppler-hemodynamics",
+    "prompt": "A weaker duplicate spectral waveform appears mirrored across the baseline when gain is high and the beam is near perpendicular. A common label for this is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comet-tail reverberation from a surgical clip"
+      },
+      {
+        "id": "b",
+        "text": "Spectral mirror / crosstalk"
+      },
+      {
+        "id": "c",
+        "text": "Dead-zone ring-down in the first millimeters"
+      },
+      {
+        "id": "d",
+        "text": "Elevational slice-thickness fill-in of a cyst"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Over-gained Doppler near 90° can leak energy into the opposite channel, painting a mirrored spectrum (crosstalk).",
+    "distractorExplanations": {
+      "a": "Comet-tail is a B-mode reverberation trail, not a spectral baseline mirror.",
+      "c": "Dead zone is a near-field B-mode QA limit.",
+      "d": "Slice-thickness fill-in is an elevational B-mode partial-volume effect."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-016",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Bright, closely spaced echoes taper deep to a surgical clip without a long fluid path. The best match is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simple through-transmission enhancement behind clear fluid"
+      },
+      {
+        "id": "b",
+        "text": "Refraction edge shadowing along a curved interface"
+      },
+      {
+        "id": "c",
+        "text": "Random electrical interference lines across the sector"
+      },
+      {
+        "id": "d",
+        "text": "Comet-tail reverberation from a strong discrete reflector"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Comet-tail is a compact reverberation trail from small strong reflectors such as clips. Enhancement brightens deep tissue; edge shadows are dark bands.",
+    "distractorExplanations": {
+      "a": "Enhancement brightens tissue deep to fluid; it is not a tapering trail from a clip.",
+      "b": "Edge shadowing is a dark refractive band, not a bright tapering trail.",
+      "c": "Electrical noise is usually irregular bright lines, not a localized taper."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-017",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "A reflector lying in fat is painted deeper than its true anatomic depth. The best explanation is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The assumed 1540 m/s exceeds fat’s true speed"
+      },
+      {
+        "id": "b",
+        "text": "Fat’s speed above 1540 m/s pulls every reflector too shallow"
+      },
+      {
+        "id": "c",
+        "text": "TGC miscalibration is the sole way displayed depth can err"
+      },
+      {
+        "id": "d",
+        "text": "Color PRF directly rewrites B-mode ranging equations"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Range uses c·t/2 with assumed c≈1540 m/s. Slower fat lengthens round-trip time, so the reflector is placed too deep.",
+    "distractorExplanations": {
+      "b": "Fat is slower than average soft tissue, so the bias is deeper rather than shallower.",
+      "c": "TGC changes brightness versus depth; it does not rewrite speed-of-sound ranging.",
+      "d": "PRF is a Doppler timing control, not the B-mode speed assumption."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-018",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "An oblique interface bends the beam; a reflector looks laterally shifted and a dark edge band appears. Call this primarily:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mirror-image duplication deep to a diaphragm-like reflector"
+      },
+      {
+        "id": "b",
+        "text": "Refraction artifact"
+      },
+      {
+        "id": "c",
+        "text": "Elevational slice-thickness fill-in of a tiny cyst"
+      },
+      {
+        "id": "d",
+        "text": "Color-bar wraparound from an undersampled jet"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Refraction at speed mismatches changes ray path, causing lateral misregistration and edge shadows.",
+    "distractorExplanations": {
+      "a": "Mirror image duplicates structures deep to a strong specular reflector.",
+      "c": "Partial-volume fill-in is elevational averaging inside a voxel.",
+      "d": "Aliasing wraparound is a Doppler display issue, not refraction."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-019",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Echoes travel a longer indirect route before returning, so the machine places the reflector too deep. That pattern is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "An automatic improvement in axial resolution"
+      },
+      {
+        "id": "b",
+        "text": "New anatomy created by tissue-harmonic imaging"
+      },
+      {
+        "id": "c",
+        "text": "Multipath artifact"
+      },
+      {
+        "id": "d",
+        "text": "Piezoelectric failure from exceeding Curie temperature"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Multipath lengthens travel time; with straight-line ranging assumed, displayed depth is overestimated.",
+    "distractorExplanations": {
+      "a": "This is misregistration, not a resolution upgrade.",
+      "b": "Harmonics change contrast and clutter; they do not define multipath depth error.",
+      "d": "Curie damage destroys piezoelectricity; it is not this path-length display error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-020",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "A vessel appears twice — once at the true depth and again deeper beyond a strong specular reflector. The deeper copy is most likely:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proof a second real vessel must exist at that depth"
+      },
+      {
+        "id": "b",
+        "text": "Side-lobe debris filling a simple cyst lumen"
+      },
+      {
+        "id": "c",
+        "text": "Near-field dead-zone ring-down at the skin line"
+      },
+      {
+        "id": "d",
+        "text": "Mirror-image artifact"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Strong specular reflectors (for example diaphragm) can bounce echoes so a virtual image is painted deep to the true structure.",
+    "distractorExplanations": {
+      "a": "Mirror copies are common at strong reflectors and may not be real anatomy.",
+      "b": "Side-lobe fill-in adds internal echoes to cysts; it is not a deep duplicate vessel.",
+      "c": "Dead zone is a near-field limit, not a deep mirror copy."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-021",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Low-level echoes appear inside an otherwise simple cyst because energy arrived from off-axis lobes. This is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Side-lobe or grating-lobe fill-in"
+      },
+      {
+        "id": "b",
+        "text": "Acoustic shadowing distal to a calculus"
+      },
+      {
+        "id": "c",
+        "text": "Proof the main beam has zero off-axis energy"
+      },
+      {
+        "id": "d",
+        "text": "A thermal-index color overlay on the cyst"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Side or grating lobes can map off-axis echoes into the main-beam line of sight, filling cysts with debris-like echoes.",
+    "distractorExplanations": {
+      "b": "Shadowing darkens tissue distal to attenuators; it does not fill cysts with echoes.",
+      "c": "Real beams have side lobes; assuming zero off-axis energy is incorrect.",
+      "d": "TI is a safety index, not a cyst fill-in mechanism."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-022",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "A thin cyst fills with echoes because the elevational beam is thicker than the cyst diameter. Label this:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comet-tail trail from a metallic surgical clip"
+      },
+      {
+        "id": "b",
+        "text": "Partial-volume / slice-thickness artifact"
+      },
+      {
+        "id": "c",
+        "text": "Spectral mirror crosstalk across the baseline"
+      },
+      {
+        "id": "d",
+        "text": "Pulsed-Doppler range ambiguity at high PRF"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Elevational thickness averages cyst and adjacent tissue in one voxel, producing internal echoes that mimic debris.",
+    "distractorExplanations": {
+      "a": "Comet-tail is a reverberation trail from a strong point reflector.",
+      "c": "Spectral mirror is a Doppler display duplicate across baseline.",
+      "d": "Range ambiguity is a pulsed-Doppler depth-assignment timing error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-023",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Bright vertical spikes march across the sector with no anatomic pattern. A first troubleshooting step is to check for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sudden doubling of axial resolution in soft tissue"
+      },
+      {
+        "id": "b",
+        "text": "Matching-layer detachment inside every linear probe"
+      },
+      {
+        "id": "c",
+        "text": "Nearby electrical interference or a damaged cable"
+      },
+      {
+        "id": "d",
+        "text": "A requirement to keep output power at maximum"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Electrical interference often paints periodic bright lines. Inspect cables, grounding, and nearby equipment before blaming tissue.",
+    "distractorExplanations": {
+      "a": "Noise spikes are not a resolution upgrade.",
+      "b": "A matching-layer problem would degrade imaging differently than marching EMI lines.",
+      "d": "ALARA favors the lowest output that still answers the clinical question."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-024",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "On a grayscale image of nearly isoechoic tissues, contrast resolution refers primarily to the system’s ability to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Separate two closely spaced reflectors along the beam axis"
+      },
+      {
+        "id": "b",
+        "text": "Read peak systolic velocity directly in centimeters per second"
+      },
+      {
+        "id": "c",
+        "text": "Raise PRF without changing the imaging depth setting on the console"
+      },
+      {
+        "id": "d",
+        "text": "Distinguish subtle differences in echo amplitude"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Contrast resolution means amplitude discrimination between similar grays. Axial or lateral resolution means spatial separation of close reflectors.",
+    "distractorExplanations": {
+      "a": "Separating close axial reflectors is spatial (axial) resolution.",
+      "b": "Velocity readout is a Doppler measurement task.",
+      "c": "PRF versus depth is a timing tradeoff, not contrast resolution."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-025",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Pin targets at known spacing in a tissue-mimicking phantom are used mainly to check:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spatial measurement accuracy and detail-resolution performance"
+      },
+      {
+        "id": "b",
+        "text": "Acoustic output by treating pin brightness as a direct intensity reading"
+      },
+      {
+        "id": "c",
+        "text": "Contrast resolution by counting low-contrast targets rather than pin spacing"
+      },
+      {
+        "id": "d",
+        "text": "Doppler sensitivity by finding the lowest flow speed in a flow phantom"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Phantom pins at known distances test caliper accuracy, dead zone, and detail resolution under controlled conditions.",
+    "distractorExplanations": {
+      "b": "Pin brightness is not a calibrated measurement of acoustic output; hydrophone or radiation-force methods are used for output characterization.",
+      "c": "Low-contrast targets assess contrast resolution, whereas known pin spacing assesses distance accuracy and spatial detail.",
+      "d": "A moving-string or flow phantom assesses Doppler performance; stationary pin targets test spatial imaging performance."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-026",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "On a phantom, the first few millimeters under the probe face stay uncleared by ring-down. That region is the:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Far-field Fraunhofer zone where focusing disappears"
+      },
+      {
+        "id": "b",
+        "text": "Near-field dead zone from transmit ring-down"
+      },
+      {
+        "id": "c",
+        "text": "Doppler wall-filter stopband on a spectral trace"
+      },
+      {
+        "id": "d",
+        "text": "Proof soft-tissue speed equals exactly 1600 m/s"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Dead zone is the shallow depth where transmitter ring-down prevents useful echoes. QA tracks it; standoffs can help clinically.",
+    "distractorExplanations": {
+      "a": "Dead zone is a near-field limit, not a far-zone diffraction claim.",
+      "c": "Wall filters are Doppler controls on frequency shift, not B-mode dead zone.",
+      "d": "Assumed average soft-tissue speed for ranging remains near 1540 m/s."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-027",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Mechanical index on the display is most closely tied to risk of:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steady heating tracked by thermal index alone"
+      },
+      {
+        "id": "b",
+        "text": "Autoclave damage to a piezoelectric element"
+      },
+      {
+        "id": "c",
+        "text": "Cavitation-related bioeffects"
+      },
+      {
+        "id": "d",
+        "text": "Refraction edge shadows beside a vessel"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MI indexes cavitation likelihood; TI indexes heating. ALARA uses both together with exposure time and output.",
+    "distractorExplanations": {
+      "a": "Heating risk is the thermal index domain, not MI’s primary meaning.",
+      "b": "Curie/autoclave damage is a probe-care failure, not the MI bioeffect index.",
+      "d": "Refraction shadows are imaging artifacts, not an MI readout meaning."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-028",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Which condition makes the thermal index for bone (TIB) the most relevant displayed thermal index?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The beam traverses only homogeneous soft tissue with no bone near the focus"
+      },
+      {
+        "id": "b",
+        "text": "A color variance map shows a broad velocity distribution"
+      },
+      {
+        "id": "c",
+        "text": "A matching layer is being checked during probe manufacture"
+      },
+      {
+        "id": "d",
+        "text": "Ossified bone at or near the focus, where heating concentrates"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "TIB estimates temperature rise when bone is at or near the beam focus. Bone absorbs ultrasound strongly, so this model is more relevant than the soft-tissue index when the focal region includes ossified bone.",
+    "distractorExplanations": {
+      "a": "Homogeneous soft tissue without bone near the focus is modeled by a soft-tissue thermal index rather than TIB.",
+      "b": "Color variance describes velocity spread and is not an acoustic-heating safety index.",
+      "c": "Matching-layer inspection is a manufacturing task and does not determine which patient thermal index applies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-029",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Which approach best follows ALARA while keeping the exam diagnostic?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use receiver gain before increasing acoustic output"
+      },
+      {
+        "id": "b",
+        "text": "Keep output at 100% and reduce gain as the first step"
+      },
+      {
+        "id": "c",
+        "text": "Hide MI and TI readouts so they cannot influence scanning"
+      },
+      {
+        "id": "d",
+        "text": "Hold high output indefinitely while the image is frozen"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Receiver gain amplifies returning echoes without raising transmitted intensity. ALARA minimizes power and dwell time while still answering the question.",
+    "distractorExplanations": {
+      "b": "High output with low gain still delivers more acoustic energy than needed.",
+      "c": "Hiding indices does not reduce acoustic exposure.",
+      "d": "Long high-output holds are opposite of minimizing exposure time."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "ardms-spi-readiness-check-artifacts-safety-030",
+    "examSlug": "ardms-spi-readiness-check",
+    "topicId": "artifacts-safety",
+    "prompt": "Regulatory acoustic-output characterization in a water tank commonly uses:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The on-screen MI value without any independent acoustic measurement"
+      },
+      {
+        "id": "b",
+        "text": "A calibrated hydrophone plus radiation-force power measurements"
+      },
+      {
+        "id": "c",
+        "text": "A grayscale tissue phantom with calipers but no pressure sensor"
+      },
+      {
+        "id": "d",
+        "text": "A Doppler flow phantom used only to verify displayed velocity"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Calibrated hydrophones and radiation-force balances quantify pressure and intensity for standards. On-screen MI/TI are operator indices derived from such work.",
+    "distractorExplanations": {
+      "a": "MI is a derived operator index; regulatory characterization relies on calibrated measurements of the acoustic field.",
+      "c": "A grayscale phantom checks imaging performance, not absolute acoustic pressure or output power.",
+      "d": "A flow phantom checks Doppler measurement performance and cannot replace calibrated acoustic-output instrumentation."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
   }
 ]

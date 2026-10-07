@@ -93,7 +93,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "aha-bls-provider-anki-deck":
     "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). Free 60Q / 45 min / 84% cognitive diagnostic live now — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
-    "Planned 60-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety). Free 60Q / 75 min diagnostic live now — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
+    "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + free 60Q / 75 min diagnostic from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "ascp-mls-anki-deck":
     "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). Free 60Q / 90 min diagnostic live now — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
@@ -206,7 +206,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "aha-bls-provider-anki-deck":
     "Planned AHA BLS Provider Anki for 2025 adult CPR/AED, infant heel-of-1-hand or 2-thumb compressions, FBAO cycles, and team dynamics. Free 60-question / 45-minute / 84% cognitive check is live; official HeartCode BLS cognitive is about 25 questions / 84% plus skills. Not a BLS card and not Heartsaver/ACLS.",
   "ardms-spi-anki-deck":
-    "Planned ARDMS SPI Anki for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check is live; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
+    "$11 ARDMS SPI Anki (120 unique cards) for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check from the same 120 bank; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
   "ascp-mls-anki-deck":
     "Planned ASCP MLS Anki for blood bank, chemistry, hematology, and microbiology/immunology. Free 60-question / 90-minute readiness check is live; official BOC MLS is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLT.",
   "ascp-mlt-anki-deck":
@@ -473,13 +473,13 @@ export const positioningOverrides: Partial<
   },
   "ardms-spi-anki-deck": {
     ourEdge: [
-      "Planned 60-card SPI Anki for physics, transducers, Doppler, artifacts/safety",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "$11 / 120 unique SPI Anki cards for physics, transducers, Doppler, artifacts/safety",
+      "Free 60Q / 75 min timed diagnostic from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
       "Honest: official SPI is ~110Q / 2h / scaled 555 — our mock is shorter",
       "Text/physics only — ≠ ABD/OB image interpretation",
     ],
     summaryProse:
-      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full 110-item SPI form and not an image-heavy specialty bank.",
+      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus an ownable $11 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
@@ -2037,23 +2037,29 @@ Candidates still use two-finger infant compressions, skip back blows on adult FB
 
 An AHA Training Center course, skills testing, or a Provider card. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not AHA material.`,
 
-  "ardms-spi-anki-deck": `### What is inside
+  "ardms-spi-anki-deck": `### What this page is
 
-Planned **60** flashcards across ultrasound physics, transducers & beam formation, Doppler & hemodynamics, and artifacts/quality/safety — the same four buckets as the free readiness check. Built for SPI formulas (c = fλ, Z = ρc, axial resolution ≈ SPL/2, Doppler equation), not ABD/OB image dumps.
+A **$11 / 120**-card ARDMS SPI Anki (ultrasound physics, transducers & beam, Doppler & hemodynamics, artifacts/quality/safety) paired with a **live free 60-question** timed readiness check drawn from a **120 unique** bank — so Mock Pass retakes are not the same 60 stems shuffled.
 
-### Plan with the free SPI mock (live now)
+### SPI vs ABD / OB
 
-**Start:** Take the [free 60-question ARDMS SPI readiness check](/mock-exams/ardms-spi-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use ARDMS/Inteleos outlines and a full-length physics bank for stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+SPI is **physics and instrumentation**. It is **not** the ARDMS Abdominal or OB/GYN specialty exams (image interpretation). Cards stay text/physics: formulas, beam formation, Doppler, artifacts, and ALARA — not organ image dumps.
 
-Official SPI: **about 110 multiple-choice questions / 2 hours / scaled pass 555 (300–700)**. Our mock is shorter and text/physics only.
+### Official form honesty
 
-### Pitfalls this deck targets (when live)
+Official SPI is about **110 multiple-choice questions / 2 hours / scaled pass 555 (300–700)**. UniPrep’s free check is a shorter **60Q / 75 min / 70%** diagnostic from the same 120 bank — not a full SPI form.
 
-Candidates confuse SPL with axial resolution, treat 90° Doppler as a strong shift, or sit ABD image items thinking they are SPI. Cards force physics judgment under spaced recall.
+### Plan with the free mock
+
+**Start:** Take the [free ARDMS SPI readiness check](/mock-exams/ardms-spi-readiness-check). Use the topic report to prioritize study. **Then:** drill weak rows in this Anki deck (15–20 cards/day).
+
+### Pitfalls this deck targets
+
+Candidates confuse SPL with axial resolution, treat 90° Doppler as a strong shift, mix MI with TI, or sit ABD image items thinking they are SPI. Cards force physics judgment under spaced recall.
 
 ### What this does not replace
 
-ARDMS/Inteleos registration or a full 110-item sitting. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not ARDMS material.`,
+ARDMS/Inteleos registration or a full 110-item sitting. Independent prep — not ARDMS material.`,
 
   "ascp-mls-anki-deck": `### What is inside
 

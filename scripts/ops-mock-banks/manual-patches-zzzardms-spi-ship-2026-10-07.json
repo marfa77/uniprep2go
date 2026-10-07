@@ -1,0 +1,772 @@
+{
+  "ardms-spi-readiness-check": {
+    "ardms-spi-readiness-check-artifacts-safety-017": {
+      "options": [
+        {
+          "id": "a",
+          "text": "The assumed 1540 m/s exceeds fat’s true speed"
+        },
+        {
+          "id": "b",
+          "text": "Fat’s speed above 1540 m/s pulls every reflector too shallow"
+        },
+        {
+          "id": "c",
+          "text": "TGC miscalibration is the sole way displayed depth can err"
+        },
+        {
+          "id": "d",
+          "text": "Color PRF directly rewrites B-mode ranging equations"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-artifacts-safety-023": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Sudden doubling of axial resolution in soft tissue"
+        },
+        {
+          "id": "b",
+          "text": "Matching-layer detachment inside every linear probe"
+        },
+        {
+          "id": "c",
+          "text": "Nearby electrical interference or a damaged cable"
+        },
+        {
+          "id": "d",
+          "text": "A requirement to keep output power at maximum"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-artifacts-safety-024": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Separate two closely spaced reflectors along the beam axis"
+        },
+        {
+          "id": "b",
+          "text": "Read peak systolic velocity directly in centimeters per second"
+        },
+        {
+          "id": "c",
+          "text": "Raise PRF without changing the imaging depth setting on the console"
+        },
+        {
+          "id": "d",
+          "text": "Distinguish subtle differences in echo amplitude"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-artifacts-safety-025": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Spatial measurement accuracy and detail-resolution performance"
+        },
+        {
+          "id": "b",
+          "text": "Acoustic output by treating pin brightness as a direct intensity reading"
+        },
+        {
+          "id": "c",
+          "text": "Contrast resolution by counting low-contrast targets rather than pin spacing"
+        },
+        {
+          "id": "d",
+          "text": "Doppler sensitivity by finding the lowest flow speed in a flow phantom"
+        }
+      ],
+      "distractorExplanations": {
+        "b": "Pin brightness is not a calibrated measurement of acoustic output; hydrophone or radiation-force methods are used for output characterization.",
+        "c": "Low-contrast targets assess contrast resolution, whereas known pin spacing assesses distance accuracy and spatial detail.",
+        "d": "A moving-string or flow phantom assesses Doppler performance; stationary pin targets test spatial imaging performance."
+      }
+    },
+    "ardms-spi-readiness-check-artifacts-safety-026": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Far-field Fraunhofer zone where focusing disappears"
+        },
+        {
+          "id": "b",
+          "text": "Near-field dead zone from transmit ring-down"
+        },
+        {
+          "id": "c",
+          "text": "Doppler wall-filter stopband on a spectral trace"
+        },
+        {
+          "id": "d",
+          "text": "Proof soft-tissue speed equals exactly 1600 m/s"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-artifacts-safety-028": {
+      "prompt": "Which condition makes the thermal index for bone (TIB) the most relevant displayed thermal index?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The beam traverses only homogeneous soft tissue with no bone near the focus"
+        },
+        {
+          "id": "b",
+          "text": "A color variance map shows a broad velocity distribution"
+        },
+        {
+          "id": "c",
+          "text": "A matching layer is being checked during probe manufacture"
+        },
+        {
+          "id": "d",
+          "text": "Ossified bone at or near the focus, where heating concentrates"
+        }
+      ],
+      "explanation": "TIB estimates temperature rise when bone is at or near the beam focus. Bone absorbs ultrasound strongly, so this model is more relevant than the soft-tissue index when the focal region includes ossified bone.",
+      "distractorExplanations": {
+        "a": "Homogeneous soft tissue without bone near the focus is modeled by a soft-tissue thermal index rather than TIB.",
+        "b": "Color variance describes velocity spread and is not an acoustic-heating safety index.",
+        "c": "Matching-layer inspection is a manufacturing task and does not determine which patient thermal index applies."
+      }
+    },
+    "ardms-spi-readiness-check-artifacts-safety-029": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Use receiver gain before increasing acoustic output"
+        },
+        {
+          "id": "b",
+          "text": "Keep output at 100% and reduce gain as the first step"
+        },
+        {
+          "id": "c",
+          "text": "Hide MI and TI readouts so they cannot influence scanning"
+        },
+        {
+          "id": "d",
+          "text": "Hold high output indefinitely while the image is frozen"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-artifacts-safety-030": {
+      "options": [
+        {
+          "id": "a",
+          "text": "The on-screen MI value without any independent acoustic measurement"
+        },
+        {
+          "id": "b",
+          "text": "A calibrated hydrophone plus radiation-force power measurements"
+        },
+        {
+          "id": "c",
+          "text": "A grayscale tissue phantom with calipers but no pressure sensor"
+        },
+        {
+          "id": "d",
+          "text": "A Doppler flow phantom used only to verify displayed velocity"
+        }
+      ],
+      "distractorExplanations": {
+        "a": "MI is a derived operator index; regulatory characterization relies on calibrated measurements of the acoustic field.",
+        "c": "A grayscale phantom checks imaging performance, not absolute acoustic pressure or output power.",
+        "d": "A flow phantom checks Doppler measurement performance and cannot replace calibrated acoustic-output instrumentation."
+      }
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-016": {
+      "prompt": "A spectral waveform appears below the baseline after the probe orientation and steering are changed. Before reporting a true flow-direction change, what should the operator verify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raise the wall filter until the directional waveform is removed"
+        },
+        {
+          "id": "b",
+          "text": "Enable tissue harmonics to reverse the spectral frequency shift"
+        },
+        {
+          "id": "c",
+          "text": "Increase ensemble length so the spectral baseline flips automatically"
+        },
+        {
+          "id": "d",
+          "text": "Check spectral invert, beam steering, angle geometry, and a known reference direction"
+        }
+      ],
+      "explanation": "Spectral polarity depends on motion relative to the beam and on display inversion. Verifying invert, steering, angle geometry, and a known reference direction separates a setup change from a genuine reversal without making a clinical diagnosis from display polarity alone.",
+      "distractorExplanations": {
+        "a": "The wall filter suppresses low-frequency shifts; erasing the waveform cannot validate its direction.",
+        "b": "Tissue harmonics affect B-mode image formation and do not reverse spectral Doppler polarity.",
+        "c": "Ensemble length affects estimate stability and temporal resolution, not spectral baseline polarity."
+      }
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-017": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase PRF within the depth-imposed limit"
+        },
+        {
+          "id": "b",
+          "text": "Widen the color box while leaving PRF unchanged"
+        },
+        {
+          "id": "c",
+          "text": "Raise the wall filter without touching PRF"
+        },
+        {
+          "id": "d",
+          "text": "Switch to harmonic B-mode frequencies alone"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-018": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Sample gate moved into air outside the body wall"
+        },
+        {
+          "id": "b",
+          "text": "An overly high wall filter removed low-frequency shifts"
+        },
+        {
+          "id": "c",
+          "text": "Color write priority disabled on a duplex preset"
+        },
+        {
+          "id": "d",
+          "text": "Thermal index display turned off on the monitor"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-019": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Narrower, because longer gates cancel spectral width"
+        },
+        {
+          "id": "b",
+          "text": "Immune to aliasing without any PRF change"
+        },
+        {
+          "id": "c",
+          "text": "Broader because the gate includes more velocity laminae"
+        },
+        {
+          "id": "d",
+          "text": "Forced to a Doppler angle of zero degrees"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-021": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher velocity and diameter with lower viscosity"
+        },
+        {
+          "id": "b",
+          "text": "Lower velocity in a tiny capillary with higher viscosity"
+        },
+        {
+          "id": "c",
+          "text": "Any parabolic profile, regardless of speed or size"
+        },
+        {
+          "id": "d",
+          "text": "Setting the Doppler angle to ninety degrees in software"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-022": {
+      "options": [
+        {
+          "id": "a",
+          "text": "(Peak systolic − end-diastolic) ÷ mean velocity across the cycle"
+        },
+        {
+          "id": "b",
+          "text": "(PSV − EDV) ÷ PSV"
+        },
+        {
+          "id": "c",
+          "text": "Peak systolic velocity ÷ Doppler angle in degrees"
+        },
+        {
+          "id": "d",
+          "text": "End-diastolic velocity alone without using systole"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-023": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher frame rate with no time cost per line"
+        },
+        {
+          "id": "b",
+          "text": "Wall filters becoming unnecessary for clutter"
+        },
+        {
+          "id": "c",
+          "text": "More stable velocity estimates but a lower frame rate"
+        },
+        {
+          "id": "d",
+          "text": "Automatic conversion of power mode into CW spectral"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-024": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Perfectly uniform plug flow with one velocity"
+        },
+        {
+          "id": "b",
+          "text": "That soft-tissue TI has crossed a fixed legal limit"
+        },
+        {
+          "id": "c",
+          "text": "That the matching layer thickness is incorrect"
+        },
+        {
+          "id": "d",
+          "text": "A wide velocity distribution within the sample"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-025": {
+      "options": [
+        {
+          "id": "a",
+          "text": "More sensitive to slow flow and less angle-dependent"
+        },
+        {
+          "id": "b",
+          "text": "Equally precise for peak cm/s quantification as PW spectral"
+        },
+        {
+          "id": "c",
+          "text": "Free of flash or clutter without any filtering"
+        },
+        {
+          "id": "d",
+          "text": "The required mode whenever a pressure gradient is needed"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-026": {
+      "options": [
+        {
+          "id": "a",
+          "text": "B-mode, M-mode, and an anatomic measurement package"
+        },
+        {
+          "id": "b",
+          "text": "B-mode, color flow, and spectral Doppler"
+        },
+        {
+          "id": "c",
+          "text": "B-mode, color flow, and M-mode without a spectral tracing"
+        },
+        {
+          "id": "d",
+          "text": "Continuous-wave Doppler and M-mode without a B-mode image"
+        }
+      ],
+      "distractorExplanations": {
+        "a": "M-mode plus measurements does not supply the color and spectral Doppler components of triplex imaging.",
+        "c": "Color plus M-mode still lacks the spectral Doppler component required for triplex imaging.",
+        "d": "A nonimaging CW and M-mode combination is not the three-mode B/color/spectral display called triplex."
+      }
+    },
+    "ardms-spi-readiness-check-doppler-hemodynamics-027": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Velocity aliasing from sampling a shift above the Nyquist limit"
+        },
+        {
+          "id": "b",
+          "text": "Mirror-image artifact from a strong specular reflector"
+        },
+        {
+          "id": "c",
+          "text": "Range ambiguity"
+        },
+        {
+          "id": "d",
+          "text": "Spectral broadening from including many velocities in one gate"
+        }
+      ],
+      "distractorExplanations": {
+        "a": "Velocity aliasing wraps frequencies across the baseline; it does not assign late echoes to the wrong depth.",
+        "b": "Mirror image duplicates anatomy across a strong reflector rather than misassigning a late pulse echo in range.",
+        "d": "Spectral broadening widens the velocity distribution and is not a pulse-to-pulse depth assignment error."
+      }
+    },
+    "ardms-spi-readiness-check-physics-basics-019": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Smaller because longer paths reduce the attenuation rate"
+        },
+        {
+          "id": "b",
+          "text": "Unchanged because frequency alone sets total attenuation"
+        },
+        {
+          "id": "c",
+          "text": "Greater because attenuation accumulates over a longer path"
+        },
+        {
+          "id": "d",
+          "text": "Greater mainly because impedance mismatch grows with depth"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-physics-basics-020": {
+      "distractorExplanations": {
+        "a": "Confuses half-value layer with a change in wavelength; attenuation does not halve the transmitted frequency.",
+        "b": "A pressure amplitude of one-quarter is not the HVL condition. Half intensity corresponds to pressure amplitude about 0.707 of its initial value.",
+        "c": "Attenuation reduces pressure amplitude and intensity, not the transmitted operating frequency."
+      }
+    },
+    "ardms-spi-readiness-check-physics-basics-021": {
+      "options": [
+        {
+          "id": "a",
+          "text": "A large acoustic-impedance mismatch increases reflection"
+        },
+        {
+          "id": "b",
+          "text": "Propagation speeds match, so transmitted energy cannot enter bone"
+        },
+        {
+          "id": "c",
+          "text": "Wavelength in bone is typically shorter than in soft tissue"
+        },
+        {
+          "id": "d",
+          "text": "Bone absorbs transmitted energy before any reflection can occur"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-physics-basics-022": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Diffuse scattering that is strongest at near-grazing incidence"
+        },
+        {
+          "id": "b",
+          "text": "Specular reflection from a large, smooth interface"
+        },
+        {
+          "id": "c",
+          "text": "Rayleigh scattering from structures much smaller than wavelength"
+        },
+        {
+          "id": "d",
+          "text": "Refraction that bends the transmitted beam toward the normal"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-physics-basics-026": {
+      "options": [
+        {
+          "id": "a",
+          "text": "SPL is the same as PD after converting units to microseconds"
+        },
+        {
+          "id": "b",
+          "text": "SPL is distance (n × λ); PD is time (n × T)"
+        },
+        {
+          "id": "c",
+          "text": "SPL equals period multiplied by the pulse repetition frequency"
+        },
+        {
+          "id": "d",
+          "text": "SPL is the waiting time from one pulse start to the next (PRP)"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-physics-basics-027": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher because short pulses raise resonance sharpness"
+        },
+        {
+          "id": "b",
+          "text": "Unchanged because Q tracks matching-layer thickness alone"
+        },
+        {
+          "id": "c",
+          "text": "Lower because Q equals center frequency divided by bandwidth"
+        },
+        {
+          "id": "d",
+          "text": "Higher because a wider bandwidth means a sharper resonance"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-016": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Lengthen the pulse to raise quality factor"
+        },
+        {
+          "id": "b",
+          "text": "Block heat transfer into the piezoelectric crystal"
+        },
+        {
+          "id": "c",
+          "text": "Steer the beam electronically without delay lines"
+        },
+        {
+          "id": "d",
+          "text": "Improve transmission by reducing the probe–tissue impedance mismatch"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-017": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Shorter pulses and better axial resolution, but lower sensitivity"
+        },
+        {
+          "id": "b",
+          "text": "Longer pulses and better axial resolution, with higher sensitivity"
+        },
+        {
+          "id": "c",
+          "text": "Narrower bandwidth and deeper penetration at the same output"
+        },
+        {
+          "id": "d",
+          "text": "Thicker matching layer and stronger side-lobe amplitude"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-018": {
+      "prompt": "During transducer manufacture, a PZT element is accidentally heated above its Curie temperature. What is the likely result?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Its center frequency rises temporarily, but polarization is unchanged"
+        },
+        {
+          "id": "b",
+          "text": "Its polarization is lost, destroying normal piezoelectric behavior"
+        },
+        {
+          "id": "c",
+          "text": "Its matching layer automatically changes from quarter-wave to half-wave thickness"
+        },
+        {
+          "id": "d",
+          "text": "It becomes a continuous-wave element while retaining receive sensitivity"
+        }
+      ],
+      "explanation": "Heating polarized PZT above its Curie temperature can depolarize the ceramic, so it no longer converts electrical and mechanical energy normally. Routine probe care must follow the manufacturer’s temperature and disinfection limits, but an autoclave does not necessarily exceed the Curie point.",
+      "distractorExplanations": {
+        "a": "Crossing the Curie temperature can permanently depolarize PZT; it is not merely a reversible frequency shift.",
+        "c": "Matching-layer thickness is a physical construction dimension and does not double when the crystal is overheated.",
+        "d": "Continuous-wave operation depends on transducer construction and excitation, not Curie-temperature damage."
+      }
+    },
+    "ardms-spi-readiness-check-transducers-beam-019": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Linear arrays steer with delays; phased arrays fire one fixed element"
+        },
+        {
+          "id": "b",
+          "text": "Both arrays rely on a rotating acoustic mirror for every scan line"
+        },
+        {
+          "id": "c",
+          "text": "Linear arrays sequence groups; phased arrays steer with timed delays"
+        },
+        {
+          "id": "d",
+          "text": "Phased arrays sequence fixed groups; linear arrays use annular rings"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-020": {
+      "options": [
+        {
+          "id": "a",
+          "text": "They steer electronically in elevation without any mechanical motion"
+        },
+        {
+          "id": "b",
+          "text": "They fire rectangular elements in sequence like a linear array"
+        },
+        {
+          "id": "c",
+          "text": "They produce continuous-wave Doppler signals without imaging focus"
+        },
+        {
+          "id": "d",
+          "text": "Electronic focusing by concentric rings, with mechanical beam steering"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-021": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Lens and aperture geometry, which set beam thickness with depth"
+        },
+        {
+          "id": "b",
+          "text": "Pulse duration, which sets elevational beam width by itself"
+        },
+        {
+          "id": "c",
+          "text": "PRF selection, which directly narrows the out-of-plane focus"
+        },
+        {
+          "id": "d",
+          "text": "Reject control, which electronically thins the elevation plane"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-022": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Fraunhofer zone is the shallowest region before any divergence starts"
+        },
+        {
+          "id": "b",
+          "text": "Fresnel before the natural focus; Fraunhofer beyond it"
+        },
+        {
+          "id": "c",
+          "text": "Fresnel zone begins after the beam has already fully diverged"
+        },
+        {
+          "id": "d",
+          "text": "Near and far zones swap names when frequency increases"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-023": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Larger aperture or higher frequency shortens the near-zone length"
+        },
+        {
+          "id": "b",
+          "text": "Aperture size changes NZL but frequency has no effect on NZL"
+        },
+        {
+          "id": "c",
+          "text": "Either change lengthens the near zone"
+        },
+        {
+          "id": "d",
+          "text": "Frequency changes NZL but aperture diameter leaves NZL unchanged"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-024": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Mechanical focusing using a fixed external acoustic mirror"
+        },
+        {
+          "id": "b",
+          "text": "Apodization that randomly blanks half the elements each pulse"
+        },
+        {
+          "id": "c",
+          "text": "Grating-lobe suppression by raising the pulse repetition frequency"
+        },
+        {
+          "id": "d",
+          "text": "Electronic focusing with programmed delays across the aperture"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-026": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Side lobes arise from array pitch; grating lobes are single-element diffraction"
+        },
+        {
+          "id": "b",
+          "text": "Grating lobes arise from array pitch; closer spacing and subdicing help"
+        },
+        {
+          "id": "c",
+          "text": "Grating lobes shrink when you increase element spacing past one wavelength"
+        },
+        {
+          "id": "d",
+          "text": "Side lobes and grating lobes are identical and cannot be mitigated"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-027": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Dynamic receive focusing—delay changes that raise outer-element drive"
+        },
+        {
+          "id": "b",
+          "text": "Matching-layer tuning—impedance steps that blank central elements"
+        },
+        {
+          "id": "c",
+          "text": "Apodization—amplitude shading that suppresses off-axis lobes"
+        },
+        {
+          "id": "d",
+          "text": "Spatial compounding—frame averaging that boosts grating-lobe peaks"
+        }
+      ]
+    },
+    "ardms-spi-readiness-check-transducers-beam-028": {
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher frequency deepens penetration while axial detail worsens"
+        },
+        {
+          "id": "b",
+          "text": "Lower frequency sharpens elevational focus without changing attenuation"
+        },
+        {
+          "id": "c",
+          "text": "Bandwidth choice removes Curie temperature limits on sterilization"
+        },
+        {
+          "id": "d",
+          "text": "Higher frequency improves resolution but reduces penetration"
+        }
+      ]
+    }
+  }
+}

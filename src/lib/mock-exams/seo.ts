@@ -551,7 +551,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free ARDMS SPI Practice Test — 60 Ultrasound Physics Questions",
     intro:
-      "A timed 60-question / 75-minute text diagnostic for ARDMS SPI — ultrasound physics, transducers and beam formation, Doppler/hemodynamics, and artifacts/safety. Official SPI is about 110 multiple-choice questions in 2 hours with a scaled pass of 555 (300–700). This check is shorter, has no image items, and is not ABD/OB specialty. Planned 60-card Anki waitlist. Independent prep — not ARDMS/Inteleos material.",
+      "A timed 60-question / 75-minute text diagnostic for ARDMS SPI — ultrasound physics, transducers and beam formation, Doppler/hemodynamics, and artifacts/safety — drawn from a 120 unique bank. Official SPI is about 110 multiple-choice questions in 2 hours with a scaled pass of 555 (300–700). This check is shorter, has no image items, and is not ABD/OB specialty. Matching $11 / 120-card Anki is live. Independent prep — not ARDMS/Inteleos material.",
     audience:
       "Sonography students and working sonographers sitting SPI as the physics gate — not ABD/OB image interpretation and not ARRT sonography.",
     practiceTestLabel: "ARDMS SPI practice test",

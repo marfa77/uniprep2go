@@ -3610,7 +3610,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
     domain_weights: [
-      { domain: "Ultrasound physics basics", weight: "UniPrep mock 25% (15 of 60)" },
+      { domain: "Ultrasound physics basics", weight: "UniPrep mock 25% (session 15 of 60; bank 30 of 120)" },
       { domain: "Transducers & beam formation", weight: "UniPrep mock 25%" },
       { domain: "Doppler & hemodynamics", weight: "UniPrep mock 25%" },
       { domain: "Artifacts, quality & safety", weight: "UniPrep mock 25%" },
@@ -3618,9 +3618,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "Confirm current SPI item count, time, and scaled pass in the live ARDMS/Inteleos bulletin — third-party blogs still quote older forms.",
       "SPI remains physics/instrumentation; image-heavy ABD/OB specialty exams are separate ARDMS sittings.",
+      "UniPrep Anki is live at $11 / 120 unique cards paired with a free 60Q timed diagnostic from the same 120 bank.",
     ],
     high_yield_facts: [
-      "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s free check is 60 Q / 75 min / 70% diagnostic.",
+      "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s free check is 60 Q / 75 min / 70% from a 120 unique bank.",
       "Propagation speed c = fλ; acoustic impedance Z = density × speed.",
       "Spatial pulse length = n × λ; axial resolution ≈ SPL/2.",
       "Doppler shift fd = 2 v f0 cosθ / c; shift ≈ 0 at 90°.",
@@ -3629,11 +3630,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ARDMS SPI exam?",
-        a: "About 110 multiple-choice questions in 2 hours. The scaled passing score is 555 on a 300–700 scale. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
+        a: "About 110 multiple-choice questions in 2 hours. The scaled passing score is 555 on a 300–700 scale. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic drawn from a 120 unique bank.",
       },
       {
         q: "Is UniPrep’s SPI check the official ARDMS exam?",
-        a: "No. The free 60-question check is independent text/physics practice. The matching Anki deck is planned (waitlist). Not ARDMS/Inteleos material.",
+        a: "No. The free 60-question check is independent text/physics practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS/Inteleos material.",
       },
       {
         q: "Does SPI include ABD or OB image items?",

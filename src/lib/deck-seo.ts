@@ -1164,6 +1164,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Scribes and scribe candidates who want a free timed documentation-and-HIPAA diagnostic before an employer check or AHDPG MSCE — then a 120-card .apkg for weak topics. Not a CCMA/CMA clinical-skills pathway.",
   },
+  "ardms-spi-anki-deck": {
+    title: "ARDMS SPI Anki 2026 | 120 Cards + Free 60Q Mock",
+    headline: "ARDMS SPI Exam Prep — 120 Flashcards + Free Mock",
+    studyLabel: "ARDMS SPI ultrasound physics exam prep",
+    description:
+      "ARDMS SPI Anki: 120 cards on ultrasound physics, transducers/beam, Doppler, and artifacts/safety — plus a free 60-question timed practice test from a 120 unique bank. Official SPI is ~110Q / 2h / scaled 555. Text/physics only — not ABD/OB. Independent — not ARDMS material.",
+    keywords: [
+      "ardms spi anki",
+      "spi flashcards",
+      "ultrasound physics anki",
+      "spi practice test",
+      "free ardms spi practice test",
+    ],
+    intro:
+      "Sonography students and working sonographers who want a free timed SPI physics diagnostic before the official ~110Q sitting — then a 120-card .apkg for weak topics. Not ABD/OB image interpretation.",
+  },
   "bench-energy-metal-trader-anki-deck": {
     title: "Best Metal Trader Anki | 202 LME Desk Cards",
     headline: "Best Metal Trader Anki — 202 LME & Metals Desk Cards",
