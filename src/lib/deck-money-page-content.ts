@@ -207,6 +207,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned AHA BLS Provider Anki for 2025 adult CPR/AED, infant heel-of-1-hand or 2-thumb compressions, FBAO cycles, and team dynamics. Free 60-question / 45-minute / 84% cognitive check is live; official HeartCode BLS cognitive is about 25 questions / 84% plus skills. Not a BLS card and not Heartsaver/ACLS.",
   "ardms-spi-anki-deck":
     "$11 ARDMS SPI Anki (120 unique cards) for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. Free 60-question / 75-minute readiness check from the same 120 bank; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
+  "abo-optician-anki-deck":
+    "$11 ABO Optician (NOCE) Anki (120 unique cards) for basic optics, lenses/materials, fitting/adjustments, and instruments/regs. Free 60-question / 75-minute readiness check from the same 120 bank; official ABO-NCLE NOCE is typically 125 questions / 2 hours with a criterion-referenced pass. Spectacle only — not NCLE contacts and not optometry.",
   "ascp-mls-anki-deck":
     "Planned ASCP MLS Anki for blood bank, chemistry, hematology, and microbiology/immunology. Free 60-question / 90-minute readiness check is live; official BOC MLS is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLT.",
   "ascp-mlt-anki-deck":
@@ -480,6 +482,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus an ownable $11 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
+  },
+  "abo-optician-anki-deck": {
+    ourEdge: [
+      "$11 / 120 unique ABO NOCE Anki cards for optics, lenses, fitting, instruments/regs",
+      "Free 60Q / 75 min timed diagnostic from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
+      "Honest: official NOCE is typically 125Q / 2h, criterion-referenced pass — our mock is shorter",
+      "Spectacle NOCE only — ≠ NCLE contacts, ≠ optometry",
+    ],
+    summaryProse:
+      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic with topic scoring plus an ownable $11 / 120-card Anki — not a full 125-item NOCE substitute and not NCLE.",
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
@@ -2493,11 +2505,11 @@ NASAA/FINRA registration or the official Series 65. Independent prep — not NAS
 
   "mortgage-loan-originator-anki-deck": `### What is inside
 
-120 SAFE MLO MCQ cards across origination process, mortgage products, federal law, and ethics/Uniform State Content — aligned to the free timed MLO readiness check.
+240 SAFE MLO MCQ cards across origination process, mortgage products, federal law, and ethics/Uniform State Content — built from the same 240 unique bank as the free timed MLO readiness check.
 
 ### Plan with the free MLO mock
 
-15–20 cards/day, then the [free 120-question SAFE MLO readiness check](/mock-exams/mortgage-loan-originator-readiness-check). Confirm current NMLS national test length and cut score before exam day; use this deck for weak-topic repair after the diagnostic.
+15–20 cards/day, then the [free 120-question / 120-minute SAFE MLO readiness check](/mock-exams/mortgage-loan-originator-readiness-check). Official NMLS national is 120 items (115 scored) / 190 minutes / 75% — our mock matches item count with a shorter clock and a 70% readiness target. Use this deck for weak-topic repair after the diagnostic.
 
 ### Pitfalls this deck targets
 
@@ -2506,6 +2518,22 @@ Candidates over-drill products and under-drill RESPA/TILA/ECOA ethics judgments.
 ### What this does not replace
 
 NMLS enrollment or the official SAFE MLO national test. Independent prep — not NMLS material.`,
+
+  "abo-optician-anki-deck": `### What is inside
+
+120 ABO Optician (NOCE) MCQ cards across basic optics, lenses & materials, fitting & adjustments, and instruments & regulations — built from the same 120 unique bank as the free timed readiness check.
+
+### Plan with the free ABO mock
+
+15–20 cards/day, then the [free 60-question ABO Optician readiness check](/mock-exams/abo-optician-readiness-check). Official ABO-NCLE NOCE is typically 125 questions / 2 hours with a criterion-referenced pass (not a published percent cut). Use this deck for weak-topic repair after the diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates confuse index with Abbe/dispersion, skip vertex-distance power changes, and mix NCLE contact-lens rules into spectacle NOCE prep.
+
+### What this does not replace
+
+ABO-NCLE certification or the NCLE contact-lens exam. Independent prep — not ABO-NCLE material.`,
 
   "bench-energy-metal-trader-anki-deck": `### What is inside
 

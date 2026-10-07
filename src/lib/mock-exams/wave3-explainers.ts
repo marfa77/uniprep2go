@@ -598,20 +598,35 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "abo-optician-readiness-check": {
     practiceTestName: "ABO Optician Practice Test",
-    whatIsExam: "The ABO basic optician exam certifies knowledge of ophthalmic optics, lenses, fitting, and related regulations for dispensing opticians.",
-    administeredBy: "American Board of Opticianry",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with American Board of Opticianry.",
+    whatIsExam:
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians on ophthalmic optics, lenses, fitting/dispensing, instruments, and related regulations — separate from the NCLE contact-lens exam.",
+    administeredBy: "ABO-NCLE",
+    officialFormat:
+      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a free 60-question / 75-minute diagnostic.",
     examFaqs: [
       {
-        question: "What is the ABO Optician exam?",
-        answer: "The ABO basic optician exam certifies knowledge of ophthalmic optics, lenses, fitting, and related regulations for dispensing opticians.",
+        question: "What is the ABO Optician (NOCE) exam?",
+        answer:
+          "The ABO-NCLE NOCE (ABO Basic) is the national spectacle opticianry competency exam covering optics, lenses, fitting, instruments, and regulations. NCLE contact lenses are a separate exam.",
+      },
+      {
+        question: "How many questions are on the official ABO NOCE?",
+        answer:
+          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
       },
       {
         question: "Is this an official ABO Optician exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from American Board of Opticianry.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official ABO-NCLE exam material.",
       },
     ],
-    keywords: ["abo practice test", "optician exam practice test", "abo-ncle practice test", "abo optician practice exam"],
+    keywords: [
+      "abo practice test",
+      "optician exam practice test",
+      "abo-ncle practice test",
+      "abo optician practice exam",
+      "NOCE practice test",
+    ],
   },
   "acsm-cpt-readiness-check": {
     practiceTestName: "ACSM CPT Practice Test",
@@ -1184,20 +1199,35 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "mortgage-loan-originator-readiness-check": {
     practiceTestName: "SAFE MLO Practice Test",
-    whatIsExam: "The SAFE Mortgage Loan Originator Test (national component + state where required) licenses MLOs through NMLS for residential mortgage origination.",
-    administeredBy: "NMLS / SAFE MLO",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NMLS / SAFE MLO.",
+    whatIsExam:
+      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content licenses residential MLOs through NMLS (plus any separate state component your state still requires).",
+    administeredBy: "NMLS / CSBS (SAFE MLO)",
+    officialFormat:
+      "Official national test: 120 items (115 scored + 5 pretest) / 190 minutes / 75% pass (SAFE Act). Verify the NMLS MLO Testing Handbook. This UniPrep2Go session is a free 120-question / 120-minute / 70% readiness diagnostic — same item count, shorter clock, diagnostic cut.",
     examFaqs: [
       {
         question: "What is the SAFE MLO exam?",
-        answer: "The SAFE Mortgage Loan Originator Test (national component + state where required) licenses MLOs through NMLS for residential mortgage origination.",
+        answer:
+          "The SAFE MLO National Test with UST content is the NMLS national exam for residential mortgage loan originators. Some states still require additional state testing — confirm in NMLS.",
+      },
+      {
+        question: "How many questions are on the official SAFE MLO national test?",
+        answer:
+          "120 items (115 scored + 5 unscored pretest) in 190 minutes, with a 75% passing score. UniPrep’s free check is 120 questions in 120 minutes with a 70% readiness target.",
       },
       {
         question: "Is this an official SAFE MLO exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NMLS / SAFE MLO.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official NMLS exam material.",
       },
     ],
-    keywords: ["safe mlo practice test", "nmls exam practice test", "mortgage loan originator practice test", "safe mlo practice exam"],
+    keywords: [
+      "safe mlo practice test",
+      "nmls exam practice test",
+      "mortgage loan originator practice test",
+      "safe mlo practice exam",
+      "NMLS practice test",
+    ],
   },
   "wastewater-operator-1-readiness-check": {
     practiceTestName: "Wastewater Operator Level 1 Practice Test",

@@ -3583,6 +3583,113 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "AHA®, HeartCode®, and BLS Provider marks belong to the American Heart Association. UniPrep2Go is not affiliated with or endorsed by AHA.",
   },
+  "safe-mlo": {
+    examKey: "safe-mlo",
+    pageHeading: "SAFE MLO Exam — Facts, NMLS Outline & Prep",
+    intro:
+      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content is the NMLS national exam for residential MLOs. Official sittings are 120 items (115 scored + 5 pretest) in 190 minutes with a 75% passing score under the SAFE Act. UniPrep2Go’s free check is a 120-question / 120-minute / 70% readiness diagnostic from a 240 unique bank, paired with a live $11 / 240-card Anki. Independent prep — not NMLS exam material.",
+    exam_facts: {
+      exam_name: "SAFE Mortgage Loan Originator National Test with Uniform State Test Content",
+      administered_by: "NMLS / CSBS (Prometric delivery)",
+      question_count: "120 items (115 scored + 5 unscored pretest)",
+      time_limit: "190 minutes (+ appointment buffer for tutorial/survey)",
+      passing_score: "75% (SAFE Act floor)",
+      delivery: "Prometric test center or online proctoring — confirm in NMLS",
+      outline_effective_date: "Current NMLS MLO Testing Handbook / content outline — verify at nationwidelicensingsystem.org",
+      verify_at_url:
+        "https://mortgage.nationwidelicensingsystem.org/knowledge/products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_guide/mlo_testing_hbk_intro-1.html",
+    },
+    official_sources: [
+      {
+        label: "NMLS — SAFE MLO testing overview",
+        url: "https://mortgage.nationwidelicensingsystem.org/knowledge/products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_guide/mlo_testing_hbk_intro-1.html",
+      },
+      {
+        label: "NMLS — SAFE MLO content outline",
+        url: "https://mortgage.nationwidelicensingsystem.org/knowledge/products/nmls/pubs/testingHbk/education/mlo_testing/mlo_test_faq/mlo_testing_hbk_testOutline-1.html",
+      },
+    ],
+    domain_weights: [
+      { domain: "Mortgage loan origination activities", weight: "Official ~27%; UniPrep mock bucket Origination" },
+      { domain: "Federal mortgage-related laws", weight: "Official ~24%; UniPrep mock bucket Federal law" },
+      { domain: "General mortgage knowledge / products", weight: "Official ~20%; UniPrep mock bucket Products" },
+      { domain: "Ethics", weight: "Official ~18%; UniPrep mock bucket Ethics & USC" },
+      { domain: "Uniform State Content", weight: "Official ~11%; folded into UniPrep Ethics & USC" },
+    ],
+    whats_changed: [
+      "Confirm current national item count, 190-minute seat time, and 75% cut in the live NMLS Testing Handbook.",
+      "UniPrep’s free check matches the 120-item count but uses a shorter 120-minute clock and a 70% readiness target.",
+      "Linked Anki is live at $11 / 240 unique cards from the same bank (Mock Pass retakes are not a 120-stem shuffle).",
+    ],
+    high_yield_facts: [
+      "Official national: 120 items / 190 min / 75%; UniPrep free check: 120Q / 120m / 70% from a 240 unique bank.",
+      "TRID: Loan Estimate within 3 business days of application; Closing Disclosure generally 3 business days before consummation.",
+      "RESPA §8 prohibits kickbacks and unearned fees for settlement-service referrals.",
+      "ATR/QM rules require documenting ability to repay — QM is a compliance path, not an ATR exemption.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the SAFE MLO national test?",
+        a: "120 items (115 scored + 5 pretest) in 190 minutes, with a 75% passing score. UniPrep’s free check is 120 questions in 120 minutes with a 70% readiness target.",
+      },
+      {
+        q: "Is UniPrep’s SAFE MLO check the official NMLS exam?",
+        a: "No. It is an independent diagnostic. The matching Anki deck is a live $11 / 240-card .apkg on Gumroad. Not NMLS material.",
+      },
+    ],
+    trademark_note:
+      "NMLS® and SAFE® marks belong to their respective owners. UniPrep2Go is not affiliated with or endorsed by NMLS or CSBS.",
+  },
+  "abo-ncle-noce": {
+    examKey: "abo-ncle-noce",
+    pageHeading: "ABO Optician (NOCE) Exam — Facts & Prep",
+    intro:
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s free check is a 60-question / 75-minute / 70% diagnostic from a 120 unique bank, paired with a live $11 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
+    exam_facts: {
+      exam_name: "National Opticianry Competency Examination (NOCE / ABO Basic)",
+      administered_by: "ABO-NCLE (Prometric delivery)",
+      question_count: "Typically 125 multiple-choice (about 100 scored + pretest)",
+      time_limit: "2 hours",
+      passing_score: "Criterion-referenced (Modified Angoff); no published percent cut",
+      delivery: "Prometric test center or ProProctor remote — confirm with ABO-NCLE",
+      outline_effective_date: "Current ABO-NCLE Basic Examination Handbook — verify at abo-ncle.org",
+      verify_at_url: "https://www.abo-ncle.org/ABONCLE/ABONCLE/Exams/ABO-NCLE-Exams/ABO-NCLE-Basic-Exam.aspx",
+    },
+    official_sources: [
+      {
+        label: "ABO-NCLE — Basic Exam",
+        url: "https://www.abo-ncle.org/ABONCLE/ABONCLE/Exams/ABO-NCLE-Exams/ABO-NCLE-Basic-Exam.aspx",
+      },
+    ],
+    domain_weights: [
+      { domain: "Basic optics", weight: "UniPrep mock 25%" },
+      { domain: "Lenses & materials", weight: "UniPrep mock 25%" },
+      { domain: "Fitting & adjustments", weight: "UniPrep mock 25%" },
+      { domain: "Instruments & regulations", weight: "UniPrep mock 25%" },
+    ],
+    whats_changed: [
+      "Confirm current NOCE item count and seating rules in the live Basic Examination Handbook.",
+      "NCLE contact-lens exam is a separate credential — do not mix CLRE content into NOCE prep.",
+      "Linked Anki is live at $11 / 120 unique cards from the same bank as the free timed 60Q diagnostic.",
+    ],
+    high_yield_facts: [
+      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep free check is 60Q / 75m / 70% from a 120 unique bank + $11 / 120 Anki.",
+      "Index of refraction governs how much light slows/bends; Abbe number tracks dispersion.",
+      "Vertex distance changes effective power for higher prescriptions.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the ABO NOCE?",
+        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
+      },
+      {
+        q: "Is this the NCLE contact-lens exam?",
+        a: "No. UniPrep’s ABO Optician check targets the spectacle NOCE. NCLE/CLRE is a separate contact-lens exam.",
+      },
+    ],
+    trademark_note:
+      "ABO-NCLE® and related marks belong to ABO-NCLE. UniPrep2Go is not affiliated with or endorsed by ABO-NCLE.",
+  },
   "ardms-spi": {
     examKey: "ardms-spi",
     pageHeading: "ARDMS SPI Exam — Facts, Physics Outline & Prep",
@@ -4558,6 +4665,8 @@ const deckExamKeyMap: Record<string, string> = {
   "medical-scribe-anki-deck": "medical-scribe",
   "aha-bls-provider-anki-deck": "aha-bls",
   "ardms-spi-anki-deck": "ardms-spi",
+  "mortgage-loan-originator-anki-deck": "safe-mlo",
+  "abo-optician-anki-deck": "abo-ncle-noce",
   "ascp-mlt-anki-deck": "ascp-mlt",
   "ascp-mls-anki-deck": "ascp-mls",
   "aswb-bachelors-anki-deck": "aswb-bachelors",

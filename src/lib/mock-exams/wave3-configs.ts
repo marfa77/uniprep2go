@@ -551,11 +551,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "fitting", label: "Fitting & adjustments" },
       { id: "instruments", label: "Instruments & regulations" }
     ]),
-    officialSourceNote: "Mapped to American Board of Opticianry themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ABO Optician readiness check with topic scoring.",
-    examBody: "American Board of Opticianry",
+    officialSourceNote:
+      "Independent diagnostic on ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) themes — optics, lenses, fitting, instruments/regs. Official NOCE is typically 125 MCQ / 2 hours (about 100 scored + pretest); pass is criterion-referenced (Modified Angoff) and ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target. Spectacle NOCE only — not NCLE contact lenses and not optometry. Not ABO-NCLE exam material.",
+    description:
+      "Free 60-question ABO Optician (NOCE) readiness check with topic scoring — shorter than the official ~125Q / 2h form.",
+    examBody: "ABO-NCLE (NOCE / ABO Basic)",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
-    searchAliases: ["ABO", "optician exam", "ABO-NCLE"],
+    searchAliases: ["ABO", "optician exam", "ABO-NCLE", "NOCE practice test"],
+    lastUpdated: "2026-10-07",
   }),
   nicheReadinessConfig({
     slug: "acsm-cpt-readiness-check",
@@ -1127,11 +1130,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Independent diagnostic on NMLS SAFE MLO national test themes (origination, products, federal law, ethics/USC). Confirm current NMLS national test length and cut score before exam day. This UniPrep2Go mock is 120 questions / 120 minutes / 70% readiness target. Not NMLS exam material.",
-    description: "Free 120-question SAFE MLO readiness check with topic scoring.",
+      "Independent diagnostic on NMLS SAFE MLO National Test with Uniform State Test content (origination, products, federal law, ethics/USC). Official national test: 120 items (115 scored + 5 pretest) / 190 minutes / 75% pass (SAFE Act floor) — verify the NMLS MLO Testing Handbook. This UniPrep2Go mock is 120 questions / 120 minutes / 70% readiness target (shorter clock, diagnostic cut — not the official 75%/190m form). Not NMLS exam material.",
+    description:
+      "Free 120-question SAFE MLO readiness check with topic scoring — same item count as national, shorter than official 190 minutes.",
     examBody: "NMLS / SAFE MLO",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
-    searchAliases: ["SAFE MLO", "NMLS exam", "mortgage loan originator"],
+    searchAliases: ["SAFE MLO", "NMLS exam", "mortgage loan originator", "NMLS practice test"],
+    lastUpdated: "2026-10-07",
   }),
   nicheReadinessConfig({
     slug: "wastewater-operator-1-readiness-check",

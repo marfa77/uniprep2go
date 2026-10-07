@@ -62,6 +62,7 @@ export const WAVE_FORCE_LAUNCH_SLUGS = new Set([
   "rd-exam-anki-deck",
   "medical-scribe-anki-deck",
   "ardms-spi-anki-deck",
+  "abo-optician-anki-deck",
 ]);
 
 export type BuildingAnkiDeckSlug = keyof typeof buildingCatalog.products;
@@ -159,6 +160,7 @@ const LAUNCH_SAMPLE_IMAGE_SLUGS = new Set([
   "luxembourg-vivre-ensemble-anki-deck",
   "belgium-flanders-mo-anki-deck",
   "mortgage-loan-originator-anki-deck",
+  "abo-optician-anki-deck",
   "series-6-anki-deck",
   "series-65-anki-deck",
   "cfp-certification-anki-deck",
