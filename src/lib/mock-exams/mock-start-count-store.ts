@@ -35,9 +35,12 @@ export async function recordUniqueMockStart(input: {
 
 export async function getPublicMockStartCount(slug: string): Promise<number | null> {
   const client = getRedisClient();
-  if (!client) return null;
-  const raw = await client.get<number | string>(countKey(slug));
-  const n = typeof raw === "number" ? raw : Number(raw);
-  if (!Number.isFinite(n)) return null;
-  return publicMockStartCount(n);
+  let real = 0;
+  if (client) {
+    const raw = await client.get<number | string>(countKey(slug));
+    const n = typeof raw === "number" ? raw : Number(raw);
+    if (Number.isFinite(n) && n > 0) real = n;
+  }
+  // Floors still publish when Redis is empty / offline (marketing bootstrap).
+  return publicMockStartCount(real, slug);
 }

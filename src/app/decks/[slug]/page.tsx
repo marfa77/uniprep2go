@@ -23,6 +23,7 @@ import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
 import { DeckStickyCheckoutBar } from "@/components/decks/deck-sticky-checkout-bar";
+import { DeckPurchaseCountNote } from "@/components/decks/deck-purchase-count";
 import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
 import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
@@ -413,6 +414,8 @@ export default async function DeckPage({
             secure checkout
           </p>
         ) : null}
+
+        {!isPlanned ? <DeckPurchaseCountNote slug={deck.slug} /> : null}
 
         {isPlanned ? (
           <DeckWaitlistCta

@@ -1,11 +1,19 @@
-/** Unique first starts shown on the mock landing. Hide tiny counts. */
+import { withSocialProofFloor } from "@/lib/social-proof";
+
+/** Hide only empty / broken values — floors keep most live mocks visible. */
 export const MOCK_START_PUBLISH_MIN = 3;
 
-export function publicMockStartCount(uniqueStarters: number): number | null {
-  if (uniqueStarters < MOCK_START_PUBLISH_MIN) {
+export function publicMockStartCount(
+  uniqueStarters: number,
+  slug?: string,
+): number | null {
+  const display = slug
+    ? withSocialProofFloor("mockStarts", slug, uniqueStarters)
+    : uniqueStarters;
+  if (display < MOCK_START_PUBLISH_MIN) {
     return null;
   }
-  return uniqueStarters;
+  return display;
 }
 
 export function mockStartCountCopy(uniqueStarters: number): string {

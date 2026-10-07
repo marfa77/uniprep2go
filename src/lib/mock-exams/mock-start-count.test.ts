@@ -3,10 +3,11 @@ import { mockStartCountCopy, publicMockStartCount } from "./mock-start-count";
 import { parseMockSlugFromSource } from "./session-mode";
 
 describe("mock start count", () => {
-  it("hides counts below the unique-starter floor", () => {
+  it("formats copy and applies marketing floors when a slug is provided", () => {
     expect(publicMockStartCount(0)).toBeNull();
     expect(publicMockStartCount(2)).toBeNull();
     expect(publicMockStartCount(3)).toBe(3);
+    expect(publicMockStartCount(0, "ptcb-pharmacy-technician-mock")).toBeGreaterThanOrEqual(260);
     expect(mockStartCountCopy(3)).toBe("3 people have started this timed check");
   });
 
