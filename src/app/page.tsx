@@ -31,9 +31,15 @@ import {
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { publicDeckPurchaseCount } from "@/lib/deck-purchase-count";
+import { getPublicMockStartCount } from "@/lib/mock-exams/mock-start-count-store";
 import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import {
+  formatCompactDeckPurchases,
+  formatCompactMockStarts,
+} from "@/lib/social-proof";
 import {
   btnPrimary,
   btnPrimarySm,
@@ -176,6 +182,27 @@ export default async function HomePage() {
     .filter((mock): mock is MockExamConfig => mock !== undefined);
   const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
   const repairPairs = resolveRepairPairs(pricedBySlug);
+
+  const mockSlugsForProof = [
+    ...new Set([
+      ...featuredMocks.map((mock) => mock.slug),
+      ...repairPairs.map(({ mock }) => mock.slug),
+    ]),
+  ];
+  const deckSlugsForProof = [
+    ...new Set(
+      repairPairs
+        .filter(({ deck }) => deck.status === "available")
+        .map(({ deck }) => deck.slug),
+    ),
+  ];
+  const mockStartEntries = await Promise.all(
+    mockSlugsForProof.map(async (slug) => [slug, await getPublicMockStartCount(slug)] as const),
+  );
+  const mockStartBySlug = new Map(mockStartEntries);
+  const deckPurchaseBySlug = new Map(
+    deckSlugsForProof.map((slug) => [slug, publicDeckPurchaseCount(slug)] as const),
+  );
 
   const sectionEvents = [
     { selector: "#repair-pairs", name: "mock_landing_view" as const },
@@ -339,28 +366,36 @@ export default async function HomePage() {
               one is free), get a topic readiness report, then fix only the gaps.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {featuredMocks.map((mock) => (
-                <article
-                  className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
-                  key={mock.slug}
-                >
-                  <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
-                    {formatMockStatLine({
-                      questionCount: mock.questionCount,
-                      durationMinutes: mock.durationMinutes,
-                      passPercent: mock.passRule.passPercent,
-                    })}
-                  </p>
-                  <Link
-                    aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
-                    className={`mt-4 ${btnPrimarySm}`}
-                    href={`/mock-exams/${mock.slug}`}
+              {featuredMocks.map((mock) => {
+                const starts = mockStartBySlug.get(mock.slug);
+                return (
+                  <article
+                    className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                    key={mock.slug}
                   >
-                    {mockCtaLabel(mock)}
-                  </Link>
-                </article>
-              ))}
+                    <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
+                    <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
+                      {formatMockStatLine({
+                        questionCount: mock.questionCount,
+                        durationMinutes: mock.durationMinutes,
+                        passPercent: mock.passRule.passPercent,
+                      })}
+                    </p>
+                    {typeof starts === "number" ? (
+                      <p className="mt-3 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
+                        {formatCompactMockStarts(starts)}
+                      </p>
+                    ) : null}
+                    <Link
+                      aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
+                      className={`mt-4 ${btnPrimarySm}`}
+                      href={`/mock-exams/${mock.slug}`}
+                    >
+                      {mockCtaLabel(mock)}
+                    </Link>
+                  </article>
+                );
+              })}
             </div>
             <p className="mt-6 text-sm text-[#5f5749]">
               <Link
@@ -488,6 +523,8 @@ export default async function HomePage() {
               {repairPairs.map(({ mock, deck, pricedDeck }) => {
                 const thumbnail = getDeckCoverUrl(deck);
                 const deckIsPlanned = deck.status === "planned";
+                const starts = mockStartBySlug.get(mock.slug);
+                const purchases = deckPurchaseBySlug.get(deck.slug);
 
                 return (
                   <article
@@ -506,6 +543,11 @@ export default async function HomePage() {
                           passPercent: mock.passRule.passPercent,
                         })}
                       </p>
+                      {typeof starts === "number" ? (
+                        <p className="mt-3 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
+                          {formatCompactMockStarts(starts)}
+                        </p>
+                      ) : null}
                       <Link
                         className={`mt-4 ${btnPrimarySm}`}
                         href={`/mock-exams/${mock.slug}`}
@@ -557,6 +599,11 @@ export default async function HomePage() {
                               ? "Planned · not yet on sale"
                               : "See deck page"}
                         </p>
+                        {typeof purchases === "number" ? (
+                          <p className="mt-2 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
+                            {formatCompactDeckPurchases(purchases)}
+                          </p>
+                        ) : null}
                         {pricedDeck?.checkoutUrl && !deckIsPlanned ? (
                           <TrackedCheckoutLink
                             className={`mt-3 ${btnSecondarySm}`}

@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import {
+  formatCompactDeckPurchases,
+  formatCompactMockStarts,
   socialProofFloor,
   socialProofTier,
   withSocialProofFloor,
@@ -40,5 +42,10 @@ describe("social-proof floors", () => {
     expect(publicMockStartCount(0, "sie-full-mock")).toBeGreaterThanOrEqual(260);
     expect(publicDeckPurchaseCount("medical-scribe-anki-deck")).toBeGreaterThanOrEqual(22);
     expect(publicDeckPurchaseCount("ardms-spi-anki-deck")).toBeGreaterThanOrEqual(9);
+  });
+
+  it("formats compact homepage tile labels", () => {
+    expect(formatCompactMockStarts(337)).toBe("337 started");
+    expect(formatCompactDeckPurchases(85)).toBe("85 purchased");
   });
 });

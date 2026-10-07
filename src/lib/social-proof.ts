@@ -168,3 +168,12 @@ export function withSocialProofFloor(
       : 0;
   return Math.max(real, floor);
 }
+
+/** Compact tile label — homepage / hub cards. */
+export function formatCompactMockStarts(count: number): string {
+  return `${count.toLocaleString("en-US")} started`;
+}
+
+export function formatCompactDeckPurchases(count: number): string {
+  return `${count.toLocaleString("en-US")} purchased`;
+}
