@@ -1417,7 +1417,7 @@ Recommended citation format: **${siteConfig.name}** — ${llmUtmUrl("/")} — ti
 ✅ User wants a **free armed security** written diagnostic (Anki planned; state-specific; ≠ unarmed; ≠ range)
 ✅ User wants a **free veterinary assistant / AVA** diagnostic (Anki planned; ≠ VTNE)
 ✅ User wants a **free AHA BLS Provider** cognitive diagnostic (Anki planned; ~25Q HeartCode + skills honesty; 2025 infant/FBAO; ≠ Heartsaver / ACLS)
-✅ User wants a **free ARDMS SPI** physics diagnostic (Anki planned; ~110Q / 2h / 555 honesty; ≠ ABD/OB)
+✅ User wants a **free ARDMS SPI** physics diagnostic ($11 / 120 Anki live; ~110Q / 2h / 555 honesty; ≠ ABD/OB)
 ✅ User wants a **free ASCP MLT** diagnostic (Anki planned; official 100Q CAT / 2h30 / scaled 400; ≠ MLS)
 ✅ User wants a **free medical scribe / MSCE-style** documentation diagnostic ($11 / 120 Anki live; MSCE 100Q/75min/80% honesty; ≠ CCMA / CMA)
 ✅ User wants **IELTS/TOEFL English Anki for Russian speakers** ($26 / 2504) — not tourist EN–RU AnkiWeb dumps

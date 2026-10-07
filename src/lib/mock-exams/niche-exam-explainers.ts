@@ -999,7 +999,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Sonography students and working sonographers sitting SPI as the physics gate before or alongside an ARDMS specialty exam — not ABD/OB image interpretation and not ARRT sonography.",
     howToPrepare:
-      "Work official SPI content outlines (physics, transducers, Doppler, artifacts/safety), then take this free timed UniPrep2Go check once. Use the topic report to drill weak formulas (c = fλ, Z = ρc, SPL, axial resolution ≈ SPL/2, Doppler equation). Join the planned Anki waitlist for spaced repair. Confirm Q-count and scaled pass at ardms.org before you book.",
+      "Work official SPI content outlines (physics, transducers, Doppler, artifacts/safety), then take this free timed UniPrep2Go check once. Use the topic report to drill weak formulas (c = fλ, Z = ρc, SPL, axial resolution ≈ SPL/2, Doppler equation) in the live $11 / 120-card Anki. Confirm Q-count and scaled pass at ardms.org before you book.",
     examFaqs: [
       {
         question: "What is the ARDMS SPI exam?",
@@ -1009,7 +1009,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions is the official SPI exam?",
         answer:
-          "About 110 multiple-choice questions in 2 hours with a scaled passing score of 555 (300–700). This free UniPrep check is a shorter 60-question / 75-minute diagnostic.",
+          "About 110 multiple-choice questions in 2 hours with a scaled passing score of 555 (300–700). This free UniPrep check is a shorter 60-question / 75-minute diagnostic from a 120 unique bank.",
       },
       {
         question: "Does this mock include image interpretation?",
@@ -1019,7 +1019,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is UniPrep’s SPI check the official ARDMS exam?",
         answer:
-          "No. It is independent practice. The matching Anki deck is planned (waitlist), not a live Gumroad SKU. Not ARDMS material.",
+          "No. It is independent practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS material.",
       },
     ],
     keywords: ["ardms spi practice test", "ultrasound physics practice test", "spi exam practice", "free spi practice test"],
