@@ -11,9 +11,9 @@ const plannedDeckOverrides: Record<string, (deck: PlannedDeck) => PlannedDeck> =
     faqs: [
       ...deck.faqs,
       {
-        question: "Will this deck cover the 2027 NBRC RT Examination?",
+        question: "Is this the right prep for the 2027 NBRC RT Examination?",
         answer:
-          "That is the plan. The bank behind the free check targets clinical content shared by the TMC and the RT Examination: blood gases, ventilator management, oxygen and aerosol devices, infection control, neonatal and pediatric resuscitation, and emergencies. The RT Examination also adds a clinical-judgment portion and more neonatal and pediatric items, so verify your exam form and eligibility at nbrc.org.",
+          "Largely, yes. The bank behind the free check targets clinical content shared by the TMC and the RT Examination: blood gases, ventilator management, oxygen and aerosol devices, infection control, neonatal and pediatric resuscitation, and emergencies. The RT Examination also adds a clinical-judgment portion and more neonatal and pediatric items, so verify your exam form and eligibility at nbrc.org.",
       },
     ],
   }),

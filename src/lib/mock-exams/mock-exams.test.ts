@@ -286,7 +286,12 @@ describe("mock exam configs", () => {
     expect(config?.officialSourceNote).toContain("160 multiple-choice items (140 scored + 20 pretest) in 3 hours");
     expect(config?.officialSourceNote).toContain("December 31, 2026");
     expect(config?.officialSourceNote).toContain("185 items (160 scored) in 4 hours");
-    expect(getDeckBySlug("nbrc-tmc-anki-deck")?.directAnswer).toContain("January 4, 2027");
+    const deck = getDeckBySlug("nbrc-tmc-anki-deck");
+    expect(deck?.directAnswer).toContain("January 4, 2027");
+    const { buildMergedDeckFaqs } = await import("../deck-faq");
+    expect(buildMergedDeckFaqs(deck!).map((faq) => faq.question)).toContain(
+      "Is this the right prep for the 2027 NBRC RT Examination?",
+    );
   });
 
   it("runs Luxembourg Vivre ensemble in the official 40Q / 60 min 10-20-10 format", () => {
