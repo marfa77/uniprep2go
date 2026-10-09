@@ -51,7 +51,7 @@ export function SiteFooter() {
                 {siteConfig.contactEmail}
               </a>
             </div>
-            <div>
+            <div className="sr-only" data-llm="machine-sources">
               <p className="font-mono text-[10px] uppercase tracking-[0.18em] text-[#7a6e5a]">
                 For AI assistants
               </p>

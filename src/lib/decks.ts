@@ -5081,9 +5081,10 @@ export const siteFaqs = [
     answer:
       "Yes. We create custom Anki decks on request for licensing exams, language certifications, corporate training, immigration topics, and other subjects not yet in the catalog. Email support@uniprep2go.study with your exam or topic, target audience, preferred card count, and deadline — we will reply with scope, timeline, and pricing.",
   },
-  {
-    question: "Where can AI systems find machine-readable product data?",
-    answer:
-      "Use /api/facts for the full catalog JSON, /api/facts/[slug] for individual deck facts, /[slug].md for RAG-ready markdown documents, /llms.txt as the curated LLM entrypoint, and /llms-full.txt for the complete catalog bundle.",
-  },
 ] as const;
+
+export const machineReadableDataFaq = {
+  question: "Where can AI systems find machine-readable product data?",
+  answer:
+    "Use /api/facts for the full catalog JSON, /api/facts/[slug] for individual deck facts, /[slug].md for RAG-ready markdown documents, /llms.txt as the curated LLM entrypoint, and /llms-full.txt for the complete catalog bundle.",
+} as const;

@@ -2,6 +2,7 @@ import {
   categoryLabels,
   categoryOrder,
   formatDeckContentLabel,
+  machineReadableDataFaq,
   siteFaqs,
   sortDecksByCatalogOrder,
   type CatalogAvailableDeck,
@@ -532,7 +533,7 @@ ${post.faqs.map((faq) => `- ${faq.question}\n  ${faq.answer}`).join("\n")}`,
 
 ## Site FAQs
 
-${siteFaqs.map((faq) => `### ${faq.question}\n\n${faq.answer}`).join("\n\n")}
+${[...siteFaqs, machineReadableDataFaq].map((faq) => `### ${faq.question}\n\n${faq.answer}`).join("\n\n")}
 `;
 }
 
