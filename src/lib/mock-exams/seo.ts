@@ -332,7 +332,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "frm-part-1-readiness-check": {
     title: "Free FRM Part 1 Practice Test 2026 | 50-Question Readiness Check",
     description:
-      "Free FRM Part 1 practice: 50 timed questions across all 4 GARP topic weights, 120 minutes, topic scoring — then repair with the $29 / 444-card FRM Anki deck. Independent — not GARP material.",
+      "Free FRM Part 1 practice: 50 timed questions from a 100-question bank across all 4 GARP topic weights, 120 minutes, topic scoring — then repair with the $29 / 444-card FRM Anki deck. Not GARP material.",
     keywords: [
       "frm part 1 practice test",
       "frm mock exam",
@@ -346,6 +346,23 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $29 / 444-card Anki deck.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
     practiceTestLabel: "FRM Part 1 practice test",
+  },
+  "nbrc-tmc-readiness-check": {
+    title: "Free NBRC TMC Practice Test 2026 | 60Q + 2027 RT Exam",
+    description:
+      "Free NBRC TMC practice test: 60 timed scenario questions from a 120-question bank (ABGs, ventilators, equipment, neonatal and emergency care) with a weak-topic report. TMC ends Dec 31, 2026; the content carries into the 2027 RT Exam. Not NBRC material.",
+    keywords: [
+      "nbrc tmc practice test",
+      "free tmc practice exam",
+      "tmc exam practice questions",
+      "nbrc rt exam 2027 practice",
+      "respiratory therapy practice test",
+    ],
+    headline: "Free NBRC TMC & 2027 RT Exam Readiness Check",
+    intro:
+      "A timed 60-question respiratory therapy diagnostic drawn from a 120-question scenario bank: blood gases, ventilator graphics and settings, oxygen and aerosol devices, infection control, NIV and medications, neonatal resuscitation, and emergencies. The real TMC is 160 items in 3 hours and runs through December 31, 2026; from January 4, 2027 NBRC replaces TMC and CSE with one 185-item RT Examination. The clinical content here is shared by both exams.",
+    audience: "Respiratory therapy students and graduates sitting the NBRC TMC before the end of 2026, or the new RT Examination from 2027.",
+    practiceTestLabel: "NBRC TMC practice test",
   },
   "series-63-readiness-check": {
     title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
@@ -1495,11 +1512,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "finland-kansalaisuuskoe-readiness-check": {
     title: "Free Finland Kansalaisuuskoe Practice Test | 60 Questions (Finnish)",
     description:
-      "Free Finnish kansalaisuuskoe practice: 60 timed questions for the 2027 citizenship test path. Applications from 1 Mar 2027 — Migri organises; official bank not published yet. Independent mock-only prep (no Anki deck).",
+      "Free Finnish kansalaisuuskoe practice: 60 timed questions from a 120-question bank, scored by theme. For citizenship applications from 1 Mar 2027 (ages 18–64); official bank not published yet. Independent mock-only prep.",
     keywords: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti", "Suomen kansalaisuuskoe"],
     headline: "Free Finland Kansalaisuuskoe Readiness Check",
     intro:
-      "Timed Finnish-language diagnostic for Finland’s new kansalaisuuskoe (applications from 1 March 2027). Confirm final Migri format when learning materials publish — this page is independent theme practice, not official Maahanmuuttovirasto material.",
+      "Timed Finnish-language diagnostic for Finland’s new kansalaisuuskoe (applications from 1 March 2027, applicants aged 18–64). Each attempt draws 60 of 120 unique questions across state and democracy, history and the EU, rights, and everyday services, then shows your weak themes. Confirm the final Migri format when the University of Helsinki learning material publishes — independent practice, not official Maahanmuuttovirasto material.",
     audience:
       "Applicants preparing Finland’s 2027 citizenship knowledge test in Finnish or comparing Nordic civics pathways.",
     practiceTestLabel: "Kansalaisuuskoe harjoitustesti",
@@ -1507,9 +1524,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "fi-FI": {
         title: "Ilmainen kansalaisuuskoe-harjoitustesti | 60 kysymystä suomeksi",
         description:
-          "Ilmainen ajoitettu kansalaisuuskoe-harjoitustesti: 60 monivalintaa Migri-teemoista (2027-polku). Virallinen pankki ei ole vielä julkaistu — itsenäinen harjoitus, ei Maahanmuuttoviraston materiaalia.",
+          "Ilmainen ajoitettu kansalaisuuskoe-harjoitustesti: 60 monivalintaa 120 kysymyksen pankista, tulos teemoittain (2027-polku). Virallinen pankki ei ole vielä julkaistu — itsenäinen harjoitus, ei Maahanmuuttoviraston materiaalia.",
         intro:
-          "Suomenkielinen harjoitustesti tulevaan kansalaisuuskokeeseen (hakemukset 1.3.2027 alkaen). Tarkista lopullinen muoto migri.fi-sivuilta, kun oppimateriaali julkaistaan.",
+          "Suomenkielinen harjoitustesti tulevaan kansalaisuuskokeeseen (hakemukset 1.3.2027 alkaen, 18–64-vuotiaat hakijat). Jokainen kierros arpoo 60 kysymystä 120:n pankista: valtio ja demokratia, historia ja EU, oikeudet sekä palvelut ja arki. Tarkista lopullinen muoto migri.fi-sivuilta, kun Helsingin yliopiston oppimateriaali julkaistaan.",
       },
     },
   },

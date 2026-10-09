@@ -2933,9 +2933,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       question_count:
         "Government proposals cited roughly 20–40 multiple-choice questions — confirm binding count when Migri publishes materials",
       time_limit: "Computer-based test; official timer not stably published yet — verify migri.fi",
-      passing_score: "Government proposals cited about 70% — confirm on migri.fi when materials publish",
+      passing_score:
+        "Amended Citizenship Act (SäädK 552/2026): pass by answering most (valtaosa) of the questions correctly; government proposals cited about 70% — exact threshold may be set by government decree, confirm on migri.fi",
       delivery:
-        "Computer-based in Finnish or Swedish for working-age applicants (typically 18–65) on applications from 1 March 2027; exemptions may apply for Finnish/Swedish matriculation or higher-education degree",
+        "Digital multiple-choice test taken on site in Finnish or Swedish, for applicants aged 18–64 on applications from 1 March 2027. Planned test locations: Helsinki capital region, Tampere, Turku, Oulu, Vaasa, Kuopio and Rovaniemi. Exemptions: Finnish/Swedish matriculation exam or a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons",
       verify_at_url: "https://migri.fi/en/citizenship",
     },
     official_sources: [
@@ -2953,12 +2954,13 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Public services & everyday civic life", weight: "Migri-published themes" },
     ],
     high_yield_facts: [
-      "Citizenship Act changes effective 1 January 2027; kansalaisuuskoe applies to applications submitted from 1 March 2027.",
+      "Citizenship Act amendment SäädK 552/2026 takes effect 1 January 2027; kansalaisuuskoe applies to applications submitted from 1 March 2027.",
       "Transition: applications by 28 February 2027 are processed under prior rules — confirm your filing date on migri.fi.",
-      "Migri organises the test; University of Helsinki learning package publishes on migri.fi before the first sitting.",
-      "Test language is Finnish or Swedish — not English.",
-      "Exemptions may include Finnish/Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish.",
-      "UniPrep2Go offers a free 60-question / 45-minute / 70% Finnish diagnostic only — no Anki deck on this pathway.",
+      "Applies to applicants aged 18–64; under-18s and those 65+ are outside the test requirement.",
+      "Migri organises the test; the University of Helsinki writes the learning material and questions, published around the turn of 2026–2027, with the first sittings expected around March 2027.",
+      "Test language is Finnish or Swedish — not English. Digital multiple-choice, taken on site in seven planned locations (capital region, Tampere, Turku, Oulu, Vaasa, Kuopio, Rovaniemi).",
+      "Exemptions: Finnish/Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons.",
+      "UniPrep2Go offers a free 60-question / 45-minute / 70% Finnish diagnostic drawn from a 120-question unique bank (30 per theme) — mock-only, no Anki deck on this pathway.",
     ],
     candidate_qa: [
       {
@@ -2971,7 +2973,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What pass score will Finland use?",
-        a: "Government communications cited about 70% on proposed MCQs — confirm final rules when Migri publishes.",
+        a: "The amended Act says you pass by answering most (valtaosa) questions correctly; government communications cited about 70%. The exact threshold may come by government decree — confirm on migri.fi.",
       },
       {
         q: "Does UniPrep2Go sell a Finland kansalaisuuskoe Anki deck?",

@@ -319,7 +319,7 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
   "nbrc-tmc-readiness-check": {
     verticalId: "allied-health",
     familyId: "respiratory",
-    searchAliases: ["TMC", "NBRC", "respiratory therapy"],
+    searchAliases: ["TMC", "NBRC", "RT Examination", "CRT", "RRT", "respiratory therapy"],
   },
   "ptcb-pharmacy-technician-mock": {
     verticalId: "allied-health",

@@ -323,21 +323,25 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
   }),
   nicheReadinessConfig({
     slug: "nbrc-tmc-readiness-check",
-    title: "NBRC TMC Respiratory Therapist Readiness Check",
+    title: "NBRC TMC & 2027 RT Exam Readiness Check",
     shortTitle: "NBRC TMC",
     linkedDeckSlug: "nbrc-tmc-anki-deck",
-    durationMinutes: 90,
+    durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
-    topics: fourNicheTopics([
-      { id: "patient-data", label: "Patient data evaluation" },
-      { id: "equipment", label: "Equipment & quality control" },
-      { id: "therapeutics", label: "Therapeutics & interventions" },
-      { id: "emergency", label: "Emergency & special procedures" },
-    ]),
-    officialSourceNote: "NBRC TMC content themes. Not an NBRC exam.",
-    description: "Free 60-question NBRC TMC readiness check for respiratory therapy candidates.",
+    topics: [
+      { id: "patient-data", label: "Patient data: ABGs, assessment, PFTs, imaging", questionCount: 18, weightPercent: 30, targetPercent: 70 },
+      { id: "equipment", label: "Equipment, quality control & infection control", questionCount: 12, weightPercent: 20, targetPercent: 70 },
+      { id: "therapeutics", label: "Interventions: ventilation, NIV, medications, airway care", questionCount: 18, weightPercent: 30, targetPercent: 70 },
+      { id: "emergency", label: "Emergency, neonatal & pediatric care", questionCount: 12, weightPercent: 20, targetPercent: 70 },
+    ],
+    officialSourceNote:
+      "Official NBRC TMC: 160 multiple-choice items (140 scored + 20 pretest) in 3 hours; low cut score earns CRT, high cut score adds CSE eligibility. Content outline: Patient Data 50, Troubleshooting/QC/Infection Control 20, Initiation & Modification of Interventions 70 scored items. TMC ends December 31, 2026 (last application December 15, 2026); from January 4, 2027 the single NBRC Respiratory Therapy (RT) Examination replaces TMC + CSE: 185 items (160 scored) in 4 hours, low cut = CRT, high cut = RRT. This 60-question, 75-minute check is a shorter diagnostic across the clinical content both exams share. Not an NBRC exam.",
+    description:
+      "Free 60-question NBRC TMC and 2027 RT Examination readiness check: ABGs, ventilator management, equipment troubleshooting, neonatal and emergency scenarios, drawn from a 120-question bank with a weak-topic report.",
     examBody: "NBRC",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote:
+      "Original UniPrep2Go 120-question scenario bank (36 patient data / 24 equipment & infection control / 36 interventions / 24 emergency, neonatal & pediatric), rewritten 2026-10-09 to the TMC outline areas that carry into the 2027 RT Examination. Each attempt draws 60 (18/12/18/12). Not NBRC SAE or exam items.",
+    lastUpdated: "2026-10-09",
   }),
   nicheReadinessConfig({
     slug: "pest-control-applicator-readiness-check",

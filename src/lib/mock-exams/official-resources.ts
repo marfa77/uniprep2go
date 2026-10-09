@@ -992,7 +992,7 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
         url: "https://migri.fi/kansalaisuuskoe",
       },
       {
-        label: "HE — Citizenship Act amendment (learning materials / test)",
+        label: "University of Helsinki — citizenship test learning materials",
         url: "https://helsinki.fi/en/news/education/helsinki-university-prepares-learning-materials-finlands-citizenship-test",
       },
     ],

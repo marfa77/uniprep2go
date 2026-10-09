@@ -15,7 +15,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     "denmark-indfoedsretsproeven-47-percent-pass-rate",
   ],
   intro:
-    "**Finland is adding a citizenship knowledge test.** The amended Citizenship Act takes effect on **1 January 2027**, and applications submitted from **1 March 2027** must generally pass kansalaisuuskoe unless an exemption applies (for example a Finnish or Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish). Maahanmuuttovirasto (Migri) will organise a computer-based test in **Finnish or Swedish** for working-age applicants. The University of Helsinki is preparing learning materials to publish on migri.fi before the first sitting. Government communications have cited roughly **20–40 multiple-choice questions** and about a **70% pass** threshold — treat those numbers as provisional until Migri locks the format. As of August 2026, there is no official public question bank. This guide covers confirmed dates, who is affected, and how to prep with the free Finnish mock while you wait.",
+    "**Finland is adding a citizenship knowledge test.** The amended Citizenship Act takes effect on **1 January 2027**, and applications submitted from **1 March 2027** must generally pass kansalaisuuskoe unless an exemption applies (a Finnish or Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons). Maahanmuuttovirasto (Migri) will organise a digital multiple-choice test, taken on site in **Finnish or Swedish**, for applicants aged **18–64**. The University of Helsinki writes the learning material and questions; the material is due around the turn of 2026–2027. The amended Act (SäädK 552/2026) says you pass by answering **most** questions correctly; government communications have cited roughly **20–40 multiple-choice questions** and about **70%** — treat those numbers as provisional until Migri locks the format. As of October 2026, there is no official public question bank. This guide covers confirmed dates, who is affected, and how to prep with the free Finnish mock while you wait.",
   mockSlug: "finland-kansalaisuuskoe-readiness-check",
   deckSlug: "finland-kansalaisuuskoe-anki-deck",
   cta: {
@@ -46,7 +46,8 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
             ["Citizenship Act amendment effective", "1 January 2027"],
             ["Applications requiring kansalaisuuskoe", "Submitted from 1 March 2027"],
             ["Transition window ends", "28 February 2027 (earlier filings under prior rules)"],
-            ["Official learning materials", "Published on migri.fi before first test (Helsinki University)"],
+            ["Official learning materials", "Around the turn of 2026–2027 on migri.fi (University of Helsinki)"],
+            ["First test sittings", "Expected around March 2027"],
           ],
         },
         {
@@ -66,10 +67,11 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
           type: "ul",
           items: [
             "Organiser: Maahanmuuttovirasto (Migri)",
-            "Study pack: University of Helsinki → migri.fi",
+            "Learning material and questions: University of Helsinki → migri.fi",
             "Languages: Finnish or Swedish",
-            "Typical age band discussed: working-age applicants (18–65)",
-            "Possible exemptions: matriculation / degree in Finnish or Swedish",
+            "Applies to applicants aged 18–64",
+            "Format: digital multiple-choice, taken on site (capital region, Tampere, Turku, Oulu, Vaasa, Kuopio, Rovaniemi)",
+            "Exemptions: matriculation exam or a Finland-completed degree in Finnish or Swedish, or very weighty reasons",
           ],
         },
       ],
@@ -112,7 +114,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     {
       question: "Is there a free practice test?",
       answer:
-        "UniPrep2Go hosts a free 60-question Finnish diagnostic at /mock-exams/finland-kansalaisuuskoe-readiness-check. It is independent prep, not Migri material.",
+        "UniPrep2Go hosts a free 60-question Finnish diagnostic at /mock-exams/finland-kansalaisuuskoe-readiness-check, drawn from 120 unique questions so retakes show new items. It is independent prep, not Migri material.",
     },
     {
       question: "Will UniPrep2Go release an Anki deck?",
@@ -121,7 +123,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     {
       question: "Who is exempt from kansalaisuuskoe?",
       answer:
-        "Migri lists exemptions such as a Finnish or Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish — confirm your case officially.",
+        "Migri lists a Finnish or Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons. Applicants under 18 or aged 65+ are outside the test requirement — confirm your case officially.",
     },
     {
       question: "Where will official study materials appear?",

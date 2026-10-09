@@ -566,16 +566,37 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nbrc-tmc-readiness-check": explainer({
     practiceTestName: "NBRC TMC Practice Test",
     whatIsExam:
-      "The Therapist Multiple-Choice (TMC) Examination from the National Board for Respiratory Care is the written exam path toward the CRT/RRT credentials for respiratory therapists. It covers patient data, troubleshooting, and interventions across respiratory care.",
+      "The Therapist Multiple-Choice (TMC) Examination from the National Board for Respiratory Care has 160 multiple-choice items (140 scored, 20 pretest) in 3 hours. The low cut score earns the CRT credential; the high cut score also makes you eligible for the Clinical Simulation Examination (CSE) toward the RRT. Scored content: Patient Data 50 items, Troubleshooting and Quality Control of Devices and Infection Control 20, Initiation and Modification of Interventions 70. The TMC is retired after December 31, 2026; from January 4, 2027 the single Respiratory Therapy (RT) Examination replaces TMC and CSE.",
     administeredBy: "National Board for Respiratory Care (NBRC)",
     examFaqs: [
       {
         question: "What is the NBRC TMC exam?",
         answer:
-          "TMC is NBRC’s multiple-choice exam used in the respiratory therapy credentialing pathway (CRT/RRT).",
+          "The TMC is NBRC's 160-item, 3-hour multiple-choice exam (140 scored). It has two cut scores: the low cut earns the CRT credential, and the high cut adds eligibility for the Clinical Simulation Examination, the second step to the RRT.",
+      },
+      {
+        question: "Is the TMC being replaced in 2027?",
+        answer:
+          "Yes. NBRC accepts the last TMC applications on December 15, 2026, and the last TMC test date is December 31, 2026. From January 4, 2027 the Respiratory Therapy (RT) Examination replaces both TMC and CSE: 185 multiple-choice items (160 scored, 25 pretest) in 4 hours, with a low cut score for CRT and a high cut score for RRT. Check nbrc.org for your own eligibility.",
+      },
+      {
+        question: "Is this practice test still useful for the 2027 RT Examination?",
+        answer:
+          "Mostly, yes. The 120-question bank covers clinical content that both exams test: blood gases, ventilator management, oxygen and aerosol devices, infection control, neonatal and pediatric resuscitation, and emergencies. The RT Examination adds a clinical-judgment portion and more neonatal and pediatric items, so pair this check with the free NBRC RT practice exam.",
+      },
+      {
+        question: "How is this check different from the real TMC?",
+        answer:
+          "It is a 60-question, 75-minute diagnostic drawn from a 120-question original bank, not 160 items in 3 hours, and it does not reproduce NBRC cut scores. Use it to find weak topics (patient data, equipment, interventions, emergency care), then take the official NBRC practice exam or a Self-Assessment Examination before test day.",
       },
     ],
-    keywords: ["nbrc tmc practice test", "tmc exam practice", "respiratory therapy practice test"],
+    keywords: [
+      "nbrc tmc practice test",
+      "tmc exam practice",
+      "free tmc practice exam",
+      "nbrc rt exam 2027 practice",
+      "respiratory therapy practice test",
+    ],
   }),
   "nremt-emt-readiness-check": explainer({
     practiceTestName: "NREMT EMT Practice Test",

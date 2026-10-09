@@ -309,20 +309,20 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     },
     topics: [
-      { id: "foundations", label: "Foundations of Risk Management", weightPercent: 20, targetPercent: 70 },
-      { id: "quant-analysis", label: "Quantitative Analysis", weightPercent: 20, targetPercent: 70 },
-      { id: "financial-markets", label: "Financial Markets and Products", weightPercent: 30, targetPercent: 70 },
-      { id: "valuation-models", label: "Valuation and Risk Models", weightPercent: 30, targetPercent: 70 },
+      { id: "foundations", label: "Foundations of Risk Management", weightPercent: 20, questionCount: 10, targetPercent: 70 },
+      { id: "quant-analysis", label: "Quantitative Analysis", weightPercent: 20, questionCount: 10, targetPercent: 70 },
+      { id: "financial-markets", label: "Financial Markets and Products", weightPercent: 30, questionCount: 15, targetPercent: 70 },
+      { id: "valuation-models", label: "Valuation and Risk Models", weightPercent: 30, questionCount: 15, targetPercent: 70 },
     ],
     officialSourceNote:
       "Readiness check aligned to 2026 FRM Part 1 topic weights. Official exam: 100 multiple-choice questions, 4 hours; GARP does not publish a fixed passing score and sets the cutoff each cycle. UniPrep2Go readiness target: 70%. Not official GARP exam material.",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the FRM Part 1 readiness check (50 items weighted 10 Foundations / 10 Quantitative Analysis / 15 Financial Markets and Products / 15 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer).",
+      "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 100-item bank weighted 20 Foundations / 20 Quantitative Analysis / 30 Financial Markets and Products / 30 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Half were written for the mock; half are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 50-question FRM Part 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "A free 50-question FRM Part 1 readiness diagnostic drawn from a 100-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-10-02",
+    lastUpdated: "2026-10-09",
   },
   {
     slug: "series-7-readiness-check",

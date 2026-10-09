@@ -101,8 +101,8 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     shortName: "Finland Kansalaisuuskoe",
     subtitle: "No Anki deck for sale — use the free Finnish-language readiness check.",
     directAnswer:
-      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the free 60-question Finnish mock at /mock-exams/finland-kansalaisuuskoe-readiness-check and study Migri learning materials when the University of Helsinki package publishes on migri.fi.",
-    lastUpdated: "2026-08-27",
+      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the free 60-question Finnish mock (drawn from 120 unique questions) at /mock-exams/finland-kansalaisuuskoe-readiness-check and study the University of Helsinki learning material when Migri publishes it around the turn of 2026–2027.",
+    lastUpdated: "2026-10-09",
     audience: "Applicants preparing Finland’s 2027 citizenship knowledge test.",
     format: ".apkg",
     coverImage: "/covers/finland-kansalaisuuskoe-anki-deck.webp",
@@ -128,12 +128,13 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
       },
       {
         question: "Where is the free practice test?",
-        answer: "Take the 60-question mock at /mock-exams/finland-kansalaisuuskoe-readiness-check.",
+        answer:
+          "Take the 60-question, 45-minute Finnish mock at /mock-exams/finland-kansalaisuuskoe-readiness-check. Each attempt draws from 120 unique questions across four themes and reports your weak themes.",
       },
       {
         question: "When does the official test apply?",
         answer:
-          "Citizenship applications submitted from 1 March 2027 require the kansalaisuuskoe unless an exemption applies. Confirm on migri.fi.",
+          "Citizenship applications submitted from 1 March 2027 by applicants aged 18–64 require the kansalaisuuskoe unless an exemption applies (Finnish/Swedish matriculation, a Finnish- or Swedish-language degree completed in Finland, or very weighty reasons). Confirm on migri.fi.",
       },
     ],
   },

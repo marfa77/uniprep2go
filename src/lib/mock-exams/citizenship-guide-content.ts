@@ -136,18 +136,18 @@ const GUIDE_CONTENT: Record<CitizenshipGuidePilotSlug, CitizenshipGuideContent> 
     comparisonNote:
       "Migri will publish binding rules and learning materials before the first sitting. Figures below mix confirmed law dates with provisional format discussion — confirm on migri.fi.",
     rows: [
-      { label: "Applies from", official: "Applications from 1 March 2027", diagnostic: "Practice anytime (prep hub)" },
-      { label: "Questions", official: "~20–40 MCQ (provisional — confirm Migri)", diagnostic: "60 multiple-choice" },
+      { label: "Applies from", official: "Applications from 1 March 2027, ages 18–64", diagnostic: "Practice anytime (prep hub)" },
+      { label: "Questions", official: "~20–40 MCQ (provisional — confirm Migri)", diagnostic: "60 per attempt from a 120-question bank" },
       { label: "Time", official: "Not stably published yet", diagnostic: "45 minutes" },
-      { label: "Pass score", official: "~70% proposed — confirm Migri", diagnostic: "70% on this diagnostic" },
-      { label: "Language", official: "Finnish or Swedish", diagnostic: "Finnish (this page)" },
-      { label: "Source", official: "Migri + Helsinki University pack", diagnostic: "Independent theme practice — not Migri items" },
+      { label: "Pass score", official: "Most answers correct by law; ~70% proposed — confirm Migri", diagnostic: "70% on this diagnostic" },
+      { label: "Language", official: "Finnish or Swedish, digital on site", diagnostic: "Finnish (this page)" },
+      { label: "Source", official: "Migri + University of Helsinki material and questions", diagnostic: "Independent theme practice — not Migri items" },
     ],
     languageVsCivics: {
       heading: "Kansalaisuuskoe is society knowledge — not English practice",
       paragraphs: [
         "The citizenship test covers Finnish legislation, rights, equality, history, and culture in Finnish or Swedish. English study guides alone will not match exam-day language requirements.",
-        "Exemptions may apply if you hold a Finnish/Swedish matriculation exam or a higher-education degree completed in Finnish or Swedish — verify your case on migri.fi before you assume you must sit the test.",
+        "Exemptions apply if you hold a Finnish/Swedish matriculation exam or a higher-education degree completed in Finland in Finnish or Swedish, or for very weighty reasons — verify your case on migri.fi before you assume you must sit the test.",
       ],
     },
     failTrapsHeading: "Common mistakes before March 2027",

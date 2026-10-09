@@ -258,15 +258,35 @@ describe("mock exam configs", () => {
       const expectedBank =
         slug === "luxembourg-vivre-ensemble-readiness-check"
           ? 168
-          : slug === "belgium-flanders-mo-readiness-check"
+      : slug === "belgium-flanders-mo-readiness-check" ||
+          slug === "finland-kansalaisuuskoe-readiness-check"
             ? 120
             : 60;
       expect(questions, slug).toHaveLength(expectedBank);
-      if (slug === "belgium-flanders-mo-readiness-check") {
+      if (expectedBank === 120) {
         expect(getMockExamConfig(slug)?.questionCount).toBe(60);
       }
       expect(questions[0]?.sourceNote, slug).toContain(note);
     }
+  });
+
+  it("runs NBRC TMC as 60 of a 120-item bank and discloses the 2027 RT Examination switch", async () => {
+    const { getDeckBySlug } = await import("../decks");
+    const config = getMockExamConfig("nbrc-tmc-readiness-check");
+    expect(config?.questionCount).toBe(60);
+    expect(config?.topics.map((topic) => [topic.id, topic.questionCount])).toEqual([
+      ["patient-data", 18],
+      ["equipment", 12],
+      ["therapeutics", 18],
+      ["emergency", 12],
+    ]);
+    const { questions, errors } = getQuestionBankForExam("nbrc-tmc-readiness-check");
+    expect(errors).toEqual([]);
+    expect(questions).toHaveLength(120);
+    expect(config?.officialSourceNote).toContain("160 multiple-choice items (140 scored + 20 pretest) in 3 hours");
+    expect(config?.officialSourceNote).toContain("December 31, 2026");
+    expect(config?.officialSourceNote).toContain("185 items (160 scored) in 4 hours");
+    expect(getDeckBySlug("nbrc-tmc-anki-deck")?.directAnswer).toContain("January 4, 2027");
   });
 
   it("runs Luxembourg Vivre ensemble in the official 40Q / 60 min 10-20-10 format", () => {

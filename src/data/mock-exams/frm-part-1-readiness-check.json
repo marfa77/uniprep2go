@@ -330,6 +330,336 @@
     "sourceNote": "From UniPrep2Go deck content (frm_part1_p0_authored.csv, FRM-9). · Local QA repair (stems/distractors)"
   },
   {
+    "id": "frm-part-1-readiness-check-foundations-011",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A bank targeting a AA rating sizes economic capital at the 99.95% one-year loss quantile. For its corporate loan book that quantile is $480 million and expected loss is $60 million. How much economic capital should the bank hold against the book?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$60 million"
+      },
+      {
+        "id": "b",
+        "text": "$420 million"
+      },
+      {
+        "id": "c",
+        "text": "$480 million"
+      },
+      {
+        "id": "d",
+        "text": "$540 million"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Economic capital covers unexpected loss: the loss quantile at the target confidence level minus expected loss, so $480M − $60M = $420M. Expected loss is already absorbed by loan pricing and provisions. The 99.95% level matches the very low default probability of a AA-rated firm.",
+    "distractorExplanations": {
+      "a": "$60 million is the expected loss, which pricing and provisions cover; capital is held for the unexpected part above it.",
+      "c": "Holding the full $480 million quantile double-counts the $60 million of expected loss already covered by pricing.",
+      "d": "Adds expected loss to the quantile instead of subtracting it; EL reduces the capital need, it does not increase it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-1 Economic Capital) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-012",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A lending business earns revenue of $50 million, has operating costs of $20 million and expected losses of $10 million, and is allocated $125 million of economic capital. The bank's hurdle rate is 12%. What is the line's RAROC?",
+    "options": [
+      {
+        "id": "a",
+        "text": "16%, above the 12% hurdle"
+      },
+      {
+        "id": "b",
+        "text": "24%, above the 12% hurdle"
+      },
+      {
+        "id": "c",
+        "text": "32%, above the 12% hurdle"
+      },
+      {
+        "id": "d",
+        "text": "40%, well above the 12% hurdle"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RAROC = (revenue − costs − expected loss) / economic capital = (50 − 20 − 10) / 125 = 16%. Because 16% exceeds the 12% hurdle (the cost of equity), the line creates value. Economic capital, not accounting equity, belongs in the denominator because it reflects the risk each business takes.",
+    "distractorExplanations": {
+      "b": "Leaves expected loss out of the numerator: (50 − 20) / 125 = 24%. EL is a cost of lending and must be deducted.",
+      "c": "Deducts expected loss but forgets operating costs: (50 − 10) / 125 = 32%.",
+      "d": "Divides revenue alone by capital (50 / 125); RAROC uses risk-adjusted net income, not gross revenue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-1 RAROC) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-013",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A $100 million securitized pool has three tranches: equity 0–5%, mezzanine 5–15% and senior 15–100%. Cumulative pool losses reach $8 million. What share of the mezzanine tranche's principal is written off?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3%"
+      },
+      {
+        "id": "b",
+        "text": "30%"
+      },
+      {
+        "id": "c",
+        "text": "80%"
+      },
+      {
+        "id": "d",
+        "text": "100%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Losses run down the waterfall: the equity tranche absorbs the first $5M and is wiped out, and the remaining $3M hits the mezzanine. The mezzanine is $10M thick (5% to 15% of $100M), so it loses $3M / $10M = 30% of its principal. The senior tranche is untouched until losses exceed $15M.",
+    "distractorExplanations": {
+      "a": "$3M is 3% of the whole pool, but the question asks for the loss relative to the $10M mezzanine tranche.",
+      "c": "Charges the full $8M to the $10M mezzanine, skipping the equity tranche that absorbs the first $5M.",
+      "d": "Assumes the mezzanine is wiped out once equity is gone; it loses only the $3M of losses above its 5% attachment point."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-4 Tranching and Loss Waterfall) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-014",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A bank buys five-year protection on $10 million of Firm X debt at a CDS spread of 200 bp. Firm X defaults and the ISDA auction sets recovery at 35%. Ignoring accrued premium, what does the protection seller pay the bank at settlement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$200,000"
+      },
+      {
+        "id": "b",
+        "text": "$3.5 million"
+      },
+      {
+        "id": "c",
+        "text": "$6.5 million"
+      },
+      {
+        "id": "d",
+        "text": "$10.0 million"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A CDS pays notional × (1 − recovery) after a credit event: $10M × (1 − 0.35) = $6.5M. The bank sheds Firm X's default risk but takes counterparty risk on the seller, as AIG's 2008 near-failure showed: protection is only as good as the party writing it.",
+    "distractorExplanations": {
+      "a": "$200,000 is the annual premium the buyer pays (200 bp × $10M), not the default payment it receives.",
+      "b": "$3.5 million is the recovery value of the debt; the seller pays the loss, which is notional minus recovery.",
+      "d": "Paying full notional ignores the 35% recovery that the buyer keeps or is credited through the auction."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-4 Credit Default Swap) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-015",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A stock has return volatility of 30% and a correlation of 0.6 with the market, whose volatility is 15%. What is the stock's beta?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.027"
+      },
+      {
+        "id": "b",
+        "text": "0.30"
+      },
+      {
+        "id": "c",
+        "text": "0.60"
+      },
+      {
+        "id": "d",
+        "text": "1.20"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Beta = correlation × (σ stock / σ market) = 0.6 × 30% / 15% = 1.20, equivalently Cov / σm². The stock carries 1.2 times the market's systematic risk. Total volatility alone does not set beta: a volatile stock with low market correlation can have a low beta.",
+    "distractorExplanations": {
+      "a": "0.027 is the covariance (0.6 × 0.30 × 0.15); beta divides it by the market variance of 0.0225.",
+      "b": "Inverts the volatility ratio: 0.6 × 15 / 30 = 0.30. Beta scales by stock volatility over market volatility.",
+      "c": "Treats the correlation coefficient as beta; beta also scales by the ratio of the two volatilities."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-5 Beta) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-016",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A portfolio holds 60% in stocks (volatility 20%) and 40% in bonds (volatility 8%), and the correlation between them is 0.2. What is the portfolio's volatility?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12.7%"
+      },
+      {
+        "id": "b",
+        "text": "13.0%"
+      },
+      {
+        "id": "c",
+        "text": "15.2%"
+      },
+      {
+        "id": "d",
+        "text": "21.5%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "σp² = 0.6²(0.20²) + 0.4²(0.08²) + 2(0.6)(0.4)(0.2)(0.20)(0.08) = 0.0144 + 0.001024 + 0.001536 = 0.01696, so σp ≈ 13.0%. That is below the 15.2% weighted average because correlation is less than +1, which is the diversification benefit.",
+    "distractorExplanations": {
+      "a": "Forgets the factor 2 on the covariance term, so the variance comes out at 0.01619 instead of 0.01696.",
+      "c": "The 15.2% weighted average of volatilities is the portfolio volatility only if correlation is +1.",
+      "d": "Adds the full variances without squaring the weights, overstating risk well above either asset's volatility mix."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-5 Two-Asset Portfolio Volatility) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-017",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A stock's expected return is 9%. Its beta to GDP growth is 1.5 and to inflation −0.8. This year GDP grows 1 percentage point more than expected and inflation comes in 0.5 point above expectations. Ignoring firm-specific news, what return does the multifactor model predict?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8.6%"
+      },
+      {
+        "id": "b",
+        "text": "9.0%"
+      },
+      {
+        "id": "c",
+        "text": "10.1%"
+      },
+      {
+        "id": "d",
+        "text": "10.9%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Realized return = expected return + Σ beta × factor surprise = 9% + 1.5(1%) + (−0.8)(0.5%) = 9% + 1.5% − 0.4% = 10.1%. Only surprises move returns, because expected factor values are already in prices. The negative inflation beta means an upside inflation surprise lowers the return.",
+    "distractorExplanations": {
+      "a": "Includes the inflation surprise but drops the 1.5% contribution from the GDP surprise.",
+      "b": "Assumes surprises are already priced; expected values are in the price, but surprises are what move realized returns.",
+      "d": "Adds the inflation term; with a −0.8 beta, inflation above expectations subtracts 0.4%."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-6 Multifactor Return Model) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-018",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "Two well-diversified portfolios, A and B, each have a beta of 1.0 to the single factor in an APT model. A is priced to return 10% and B 8%. What trade does APT imply on $1 million per leg?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buy A and short B for about $20,000 with no net factor exposure"
+      },
+      {
+        "id": "b",
+        "text": "Buy B and short A for about $20,000 with no net factor exposure"
+      },
+      {
+        "id": "c",
+        "text": "Buy A unhedged for about $100,000 of riskless profit"
+      },
+      {
+        "id": "d",
+        "text": "No trade, since equal betas show that both are fairly priced at 9%"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "With equal factor betas, the two portfolios must offer the same expected return. Going long $1M of A and short $1M of B cancels the factor exposure, and idiosyncratic risk is negligible in well-diversified portfolios, so the 2% gap ($20,000) is riskless profit until prices adjust. The argument does not work for single stocks.",
+    "distractorExplanations": {
+      "b": "Reverses the legs: shorting the higher-return portfolio and buying the lower one loses about $20,000.",
+      "c": "An unhedged long keeps full factor risk, so its $100,000 expected return is not a riskless arbitrage profit.",
+      "d": "Equal betas require equal expected returns; the 2-point gap is the arbitrage opportunity, not evidence of fair pricing."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-6 APT Arbitrage) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-019",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A bank's risk team is tagging climate exposures: flood damage to the collateral behind its coastal mortgages, and weaker repayment capacity at coal producers after a new carbon tax. Which classification is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both are physical risk, because each starts from a climate-related event"
+      },
+      {
+        "id": "b",
+        "text": "Flood damage is transition risk; the carbon-tax hit is physical risk"
+      },
+      {
+        "id": "c",
+        "text": "Both are transition risk, because each reflects the move to a low-carbon economy"
+      },
+      {
+        "id": "d",
+        "text": "Flood damage is physical risk; the carbon-tax hit is transition risk"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Physical risk is loss from climate events and long-term shifts such as floods, storms and heat. Transition risk is loss from the move to a low-carbon economy: policy, carbon pricing, technology and demand. Both flow through existing credit, market and operational risks, so climate is a driver to embed in them, not a separate silo.",
+    "distractorExplanations": {
+      "a": "A carbon tax is a policy change, not a weather event, so the coal exposure is transition risk.",
+      "b": "Swaps the two definitions: floods are physical events, and carbon pricing is a transition policy.",
+      "c": "Flood damage to collateral is a physical hazard; it does not come from policy or technology change."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-8 Climate Risk: Physical vs Transition) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-020",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "Northern Rock held mostly prime UK mortgages, yet it needed Bank of England emergency support in September 2007 and suffered the first UK bank run in over a century. What was the core failure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About three-quarters of its funding came from securitization and wholesale markets that froze in August 2007"
+      },
+      {
+        "id": "b",
+        "text": "Heavy subprime credit losses on its mortgage book wiped out its capital before funding markets froze"
+      },
+      {
+        "id": "c",
+        "text": "Rogue trading losses in its treasury unit were hidden from the board until auditors found them"
+      },
+      {
+        "id": "d",
+        "text": "A sharp rise in Bank Rate made its fixed-rate mortgage book loss-making and triggered a depositor panic"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Northern Rock funded rapid mortgage growth mainly through securitization and wholesale markets, with only about a quarter from retail deposits. When those markets closed in August 2007 it could not roll its funding, despite sound assets. The lessons are funding concentration, liquidity stress testing and deposit insurance design.",
+    "distractorExplanations": {
+      "b": "Its assets were largely prime; the failure was funding liquidity, not credit losses on the mortgage book.",
+      "c": "That describes a rogue-trading case such as Barings or Société Générale, not Northern Rock's funding run.",
+      "d": "Interest rate risk was not the trigger; the run began when wholesale funding markets froze."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FRM-9 Northern Rock) into a scored MCQ, 2026-10-09."
+  },
+  {
     "id": "frm-part-1-readiness-check-quant-analysis-001",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "quant-analysis",
@@ -658,6 +988,336 @@
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (frm_part1_quant_ported.csv, QA-1). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-011",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A bank assigns a 70% probability to an expansion next year, when a borrower segment's PD is 1%, and a 30% probability to a recession, when its PD is 5%. What is the segment's unconditional one-year PD?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.5%"
+      },
+      {
+        "id": "b",
+        "text": "2.2%"
+      },
+      {
+        "id": "c",
+        "text": "3.0%"
+      },
+      {
+        "id": "d",
+        "text": "6.0%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "By the total probability rule, P(default) = Σ P(default | scenario) × P(scenario) = 0.7 × 1% + 0.3 × 5% = 0.7% + 1.5% = 2.2%. The scenarios must be mutually exclusive and cover all outcomes, which expansion and recession do here.",
+    "distractorExplanations": {
+      "a": "Keeps only the recession branch (0.3 × 5%) and drops the 0.7% contributed by the expansion scenario.",
+      "c": "Takes a simple average of 1% and 5% without weighting each PD by its scenario probability.",
+      "d": "Adds the two conditional PDs; probabilities across scenarios must be weighted, not summed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-1 Total Probability Rule) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-012",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A bank's major operational losses arrive independently at an average rate of 3 per year. Using a Poisson model, what is the probability of exactly 2 such losses next year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.0%"
+      },
+      {
+        "id": "b",
+        "text": "14.9%"
+      },
+      {
+        "id": "c",
+        "text": "22.4%"
+      },
+      {
+        "id": "d",
+        "text": "44.8%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "P(X = k) = λ^k e^(−λ) / k!. With λ = 3 and k = 2: 3² × e^(−3) / 2! = 9 × 0.0498 / 2 ≈ 22.4%. Poisson suits independent events at a constant rate; if losses cluster, the variance exceeds λ and the model understates tail counts.",
+    "distractorExplanations": {
+      "a": "5.0% is P(zero losses) = e^(−3), not the probability of exactly two.",
+      "b": "14.9% is P(exactly one loss) = 3e^(−3).",
+      "d": "Omits the division by 2!, doubling the correct probability."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-3 Poisson Distribution) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-013",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A correctly calibrated 99% one-day VaR model is backtested over 250 independent trading days. What are the expected number of exceptions and its standard deviation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mean 2.5, standard deviation about 1.57"
+      },
+      {
+        "id": "b",
+        "text": "Mean 2.5, standard deviation about 0.10"
+      },
+      {
+        "id": "c",
+        "text": "Mean 2.5, standard deviation about 2.48"
+      },
+      {
+        "id": "d",
+        "text": "Mean 12.5, standard deviation about 3.45"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Exceptions follow a binomial distribution with n = 250 and p = 0.01. Mean = np = 2.5; variance = np(1 − p) = 2.475, so the standard deviation is √2.475 ≈ 1.57. The test assumes independent days; clustered exceptions break the binomial model.",
+    "distractorExplanations": {
+      "b": "0.10 is the standard deviation of a single day's Bernoulli outcome, √(0.01 × 0.99), not of the 250-day count.",
+      "c": "2.48 is the variance np(1 − p); the standard deviation is its square root.",
+      "d": "Uses a 5% exception probability, which belongs to a 95% VaR, not the 99% model being tested."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-3 Bernoulli and Binomial) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-014",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A hedger is long the spot asset (return volatility 4%) and short one futures contract of equal value (volatility 5%). The correlation between spot and futures returns is 0.9. What is the volatility of the hedged position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.05%"
+      },
+      {
+        "id": "b",
+        "text": "2.2%"
+      },
+      {
+        "id": "c",
+        "text": "6.4%"
+      },
+      {
+        "id": "d",
+        "text": "8.8%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "For a long-short position, Var(X − Y) = σX² + σY² − 2ρσXσY = 0.0016 + 0.0025 − 2(0.9)(0.04)(0.05) = 0.0005, so volatility ≈ 2.2%. The covariance term takes a minus sign because the futures leg is short; that is what makes the hedge reduce risk.",
+    "distractorExplanations": {
+      "a": "Reports the variance (0.0005) as if it were the volatility; volatility is its square root, about 2.2%.",
+      "c": "Drops the covariance term, which treats spot and futures as uncorrelated and ignores the hedge.",
+      "d": "Uses a plus sign on the covariance term, as if both legs were long, so the 'hedge' adds risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-4 Variance of a Sum) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-015",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A strategy's 36 monthly returns have a mean of 1.2% and a standard error of the mean of 0.5%. Using a critical t-value of 2.03, which statement about the 95% confidence interval is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "[0.70%, 1.70%]; zero lies outside, so a zero mean is rejected at 5%"
+      },
+      {
+        "id": "b",
+        "text": "[−4.89%, 7.29%]; zero lies inside, so a zero mean cannot be rejected"
+      },
+      {
+        "id": "c",
+        "text": "[0.18%, 2.22%]; there is a 95% probability the true mean lies in it"
+      },
+      {
+        "id": "d",
+        "text": "[0.18%, 2.22%]; zero lies outside, so a zero mean is rejected at 5%"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CI = mean ± t × SE = 1.2% ± 2.03 × 0.5% = 1.2% ± 1.02% = [0.18%, 2.22%]. Zero is outside, consistent with rejecting a zero mean at 5%. The 95% describes the procedure: 95% of such intervals would contain the true mean in repeated samples.",
+    "distractorExplanations": {
+      "a": "Uses ±1 standard error instead of ±2.03 standard errors, so the interval is far too narrow.",
+      "b": "Uses the 3.0% sample standard deviation instead of the 0.5% standard error of the mean.",
+      "c": "The bounds are right, but a frequentist interval is not a 95% probability statement about this one interval."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-6 Confidence Interval) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-016",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A quant backtests 20 independent trading rules, none of which has a true edge, each at the 5% significance level. What is the chance that at least one rule looks significant, and what per-test level would a Bonferroni correction use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 64%; test each rule at 0.25%"
+      },
+      {
+        "id": "b",
+        "text": "About 5%; test each rule at 0.25%"
+      },
+      {
+        "id": "c",
+        "text": "About 64%; keep testing each rule at 5%"
+      },
+      {
+        "id": "d",
+        "text": "About 100%; test each rule at 0.25%"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "P(at least one false positive) = 1 − 0.95^20 ≈ 64%. Bonferroni divides the overall α by the number of tests: 5% / 20 = 0.25% per rule. Reporting the best of 20 backtests at the usual 5% level is data snooping, because luck alone makes one rule look good.",
+    "distractorExplanations": {
+      "b": "5% is the false-positive rate of a single test; across 20 independent tests the chance of at least one rises to about 64%.",
+      "c": "The 64% is right, but keeping 5% per test leaves the family-wide error rate at 64%; the correction lowers the per-test level.",
+      "d": "Adds probabilities (20 × 5%); the chance of at least one false positive is 1 − 0.95^20, not 100%."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-6 Multiple Testing) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-017",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A regression with n = 54 observations and k = 3 slope coefficients has a total sum of squares of 400 and a residual sum of squares of 100. What are R² and the standard error of the regression (SER)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "R² = 0.25; SER ≈ 1.41"
+      },
+      {
+        "id": "b",
+        "text": "R² = 0.75; SER ≈ 1.36"
+      },
+      {
+        "id": "c",
+        "text": "R² = 0.75; SER ≈ 2.45"
+      },
+      {
+        "id": "d",
+        "text": "R² = 0.75; SER ≈ 1.41"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ESS = TSS − RSS = 300, so R² = ESS / TSS = 0.75. The SER uses the residual sum of squares and the degrees of freedom n − k − 1 = 50: SER = √(100 / 50) ≈ 1.41. Check whether a text labels the residual sum SSE or SSR before computing.",
+    "distractorExplanations": {
+      "a": "0.25 is RSS / TSS, the unexplained share; R² is the explained share, 1 − 0.25.",
+      "b": "Divides RSS by n = 54 instead of the n − k − 1 = 50 degrees of freedom.",
+      "c": "Uses the explained sum of squares (300) instead of the residual sum (100) inside the SER."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-8 Sum of Squares Decomposition) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-018",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "Regressing one explanatory variable, X1, on the model's other regressors gives an R² of 0.90. What is X1's variance inflation factor (VIF), and what does it imply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "VIF = 0.10: X1 adds only 10% unique information, so it must be dropped"
+      },
+      {
+        "id": "b",
+        "text": "VIF = 10: X1's coefficient variance is inflated tenfold, a common warning level"
+      },
+      {
+        "id": "c",
+        "text": "VIF = 1.11: the inflation is minor, so multicollinearity can safely be ignored"
+      },
+      {
+        "id": "d",
+        "text": "VIF = 10: the OLS coefficient on X1 is biased and should not be used"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "VIF = 1 / (1 − R²) = 1 / 0.10 = 10, so the sampling variance of X1's coefficient is ten times what it would be with uncorrelated regressors. A VIF of 10 is a common threshold for concern. Multicollinearity makes estimates imprecise and unstable, but it does not bias them.",
+    "distractorExplanations": {
+      "a": "0.10 is 1 − R², the denominator of the VIF, not the VIF itself.",
+      "c": "Computes 1 / R² instead of 1 / (1 − R²), which badly understates the inflation.",
+      "d": "Multicollinearity inflates standard errors but leaves OLS coefficients unbiased; only perfect collinearity prevents estimation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-9 Multicollinearity) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-019",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A Monte Carlo option pricer uses 10,000 paths, and the simulated discounted payoffs have a standard deviation of $20. What is the standard error of the price estimate, and how many paths cut it to $0.10?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$0.20; 40,000 paths"
+      },
+      {
+        "id": "b",
+        "text": "$0.20; 20,000 paths"
+      },
+      {
+        "id": "c",
+        "text": "$0.002; 40,000 paths"
+      },
+      {
+        "id": "d",
+        "text": "$0.20; 100,000 paths"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SE = σ / √N = $20 / √10,000 = $0.20. Because error falls with the square root of N, halving it to $0.10 needs four times as many paths: 40,000. Variance reduction techniques such as antithetic or control variates can cut error without adding draws.",
+    "distractorExplanations": {
+      "b": "Doubling the paths cuts the error by only about 29% (to $0.14), not by half.",
+      "c": "Divides σ by N instead of √N; the standard error of a simulated mean scales with 1 / √N.",
+      "d": "Ten times the paths cuts error by √10 ≈ 3.2, overshooting; halving needs exactly four times the draws."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-13 Monte Carlo Sampling Error) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-020",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A default model is tested on 1,000 loans, 50 of which default. It flags 60 loans, and 40 of the flagged loans default. What are the model's precision and recall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Precision 4%, recall 80%"
+      },
+      {
+        "id": "b",
+        "text": "Precision 80%, recall 66.7%"
+      },
+      {
+        "id": "c",
+        "text": "Precision 97%, recall 80%"
+      },
+      {
+        "id": "d",
+        "text": "Precision 67%, recall 80%"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Precision = true positives / predicted positives = 40 / 60 ≈ 67%: two-thirds of flags are real defaults. Recall = true positives / actual positives = 40 / 50 = 80%: the model catches 80% of defaults. Accuracy is (40 + 930) / 1,000 = 97%, but on imbalanced data a model that never flags would still score 95%.",
+    "distractorExplanations": {
+      "a": "Divides true positives by all 1,000 loans; precision uses only the 60 loans the model flagged.",
+      "b": "Swaps the two metrics: precision is 40 / 60 and recall is 40 / 50.",
+      "c": "97% is accuracy, (40 + 930) / 1,000, which looks high on imbalanced data and is not precision."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, QA-15 Confusion Matrix Metrics) into a scored MCQ, 2026-10-09."
   },
   {
     "id": "frm-part-1-readiness-check-financial-markets-001",
@@ -1155,6 +1815,501 @@
     "sourceNote": "From UniPrep2Go deck content (frm_part1_p1_authored.csv, QA-15). · Local QA repair (stems/distractors)"
   },
   {
+    "id": "frm-part-1-readiness-check-financial-markets-016",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A property-casualty insurer reports a loss ratio of 72% and an expense ratio of 30%. Investment income on its float equals 4% of premiums. Which statement is most accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Combined ratio is 102%, so the insurer is losing money overall despite its float"
+      },
+      {
+        "id": "b",
+        "text": "Combined ratio is 42%, so underwriting is highly profitable"
+      },
+      {
+        "id": "c",
+        "text": "Combined ratio is 98% after investment income, an underwriting profit"
+      },
+      {
+        "id": "d",
+        "text": "Combined ratio is 102%, an underwriting loss offset by investment income"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Combined ratio = loss ratio + expense ratio = 72% + 30% = 102%, a 2% underwriting loss. Investment income on the float (4% of premiums) is not part of the combined ratio but more than offsets that loss, so the insurer is profitable overall.",
+    "distractorExplanations": {
+      "a": "Above 100% means an underwriting loss, but investment income of 4% of premiums can still make the insurer profitable.",
+      "b": "Subtracts the expense ratio from the loss ratio; the combined ratio adds them.",
+      "c": "Investment income is not netted into the combined ratio; underwriting alone is still at 102%."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-2 Combined Ratio) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-017",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A defined benefit plan is exactly fully funded: assets and liabilities are both $1 billion. Liability duration is 15 and asset duration is 6. If discount rates fall 100 bp, what is the approximate new funding ratio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "87%"
+      },
+      {
+        "id": "b",
+        "text": "92%"
+      },
+      {
+        "id": "c",
+        "text": "100%"
+      },
+      {
+        "id": "d",
+        "text": "108%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Liabilities rise about 15% to $1.15B and assets about 6% to $1.06B, so the funding ratio falls to 1.06 / 1.15 ≈ 92%. Holding bonds does not hedge a DB plan unless asset duration matches liability duration; liability-driven investing extends asset duration for that reason.",
+    "distractorExplanations": {
+      "a": "Applies the 15% rise to liabilities but ignores the 6% gain on the plan's assets.",
+      "c": "Assumes a bond portfolio is a hedge regardless of duration; the 9-year duration gap leaves the plan exposed.",
+      "d": "Inverts the ratio (liabilities over assets); the funding ratio is assets divided by liabilities."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-2 Pension Funding Status) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-018",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A hedge fund charges 2 and 20. Assets grow from $100 million to $115 million before fees. The management fee is 2% of year-end assets, and the incentive fee is 20% of the gain net of the management fee. What is the total fee?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$3.00 million"
+      },
+      {
+        "id": "b",
+        "text": "$4.60 million"
+      },
+      {
+        "id": "c",
+        "text": "$4.84 million"
+      },
+      {
+        "id": "d",
+        "text": "$5.30 million"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Management fee = 2% × $115M = $2.30M. Incentive fee = 20% × ($15M − $2.30M) = $2.54M. Total = $4.84M. Whether the incentive fee is charged before or after the management fee, and on which asset base, changes the investor's net return.",
+    "distractorExplanations": {
+      "a": "$3.00M is the incentive fee on the gross gain alone, leaving out the management fee.",
+      "b": "Charges the 2% on starting assets ($2.0M) and the incentive on $13M; the terms use year-end assets.",
+      "d": "Computes the incentive fee on the gross $15M gain ($3.0M) instead of the gain net of the management fee."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-3 Hedge Fund Fees) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-019",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A bank has two swaps with the same counterparty under one ISDA master agreement: one worth +$10 million to the bank and one worth −$7 million. The counterparty defaults. What is the bank's credit exposure with and without netting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$3 million either way, because offsetting trades cancel anyway"
+      },
+      {
+        "id": "b",
+        "text": "$0 with netting, because the agreement nets all exposure to zero"
+      },
+      {
+        "id": "c",
+        "text": "$3 million with netting; $10 million without, and the $7 million owed is cancelled"
+      },
+      {
+        "id": "d",
+        "text": "$3 million with netting; $10 million without, while still owing the $7 million"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Netting combines all trades with one defaulted counterparty into a single net claim: $10M − $7M = $3M. Without netting, the bank has a $10M claim in bankruptcy but must still pay the $7M it owes on the losing trade. Bilateral netting works only within one counterparty; multilateral netting needs a CCP.",
+    "distractorExplanations": {
+      "a": "Without a netting agreement, trades do not offset in default; the administrator can demand payment on losing trades.",
+      "b": "Netting reduces exposure to the net positive value, $3M here, not to zero.",
+      "c": "The $7M owed is not cancelled without netting; the bank must pay it while waiting on its $10M claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-5 Netting) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-020",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "An investor buys a stock at $50 using 50% initial margin, and the broker's maintenance margin is 30%. Below what price will she receive a margin call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$25.00"
+      },
+      {
+        "id": "b",
+        "text": "$35.00"
+      },
+      {
+        "id": "c",
+        "text": "$35.71"
+      },
+      {
+        "id": "d",
+        "text": "$50.00"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "She borrows $25 per share. A margin call comes when equity / value falls below 30%: (P − 25) / P = 0.30, so P = 25 / 0.70 ≈ $35.71. In formula form, P = P0(1 − IM) / (1 − MM) = 50 × 0.5 / 0.7.",
+    "distractorExplanations": {
+      "a": "$25 is the loan per share; equity would be zero there, well past the 30% maintenance trigger.",
+      "b": "Multiplies the price by (1 − MM); the trigger divides the loan by (1 − MM).",
+      "d": "Uses the 50% initial margin as the trigger, which would call the position immediately; maintenance margin applies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-5 Buying on Margin) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-021",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A systemically important CCP's two members with the largest stressed exposures beyond their initial margin would leave uncovered losses of $3.0 billion and $2.5 billion; the next largest is $1.8 billion. Under the PFMI Cover 2 standard, how large must its prefunded default resources be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$2.75 billion"
+      },
+      {
+        "id": "b",
+        "text": "$3.0 billion"
+      },
+      {
+        "id": "c",
+        "text": "$5.5 billion"
+      },
+      {
+        "id": "d",
+        "text": "$7.3 billion"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cover 2 requires prefunded resources to withstand the simultaneous default of the two members with the largest stressed exposures beyond their margin, in extreme but plausible conditions: $3.0B + $2.5B = $5.5B. Systemically important CCPs and those clearing complex products must meet Cover 2; others meet Cover 1.",
+    "distractorExplanations": {
+      "a": "Averages the two largest exposures; the standard covers both defaults at once, so they are added.",
+      "b": "$3.0B meets Cover 1 (the single largest member), not the Cover 2 standard for systemically important CCPs.",
+      "d": "Adds the third member too; Cover 2 covers the two largest exposures, not three."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-6 CCP Default Fund Sizing) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-022",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A grain merchant short-hedges its inventory. When the hedge is opened, the basis (spot minus futures) is −$0.50 per bushel; when it is closed, the basis is −$0.10. What happened to the basis, and how does it affect the merchant's effective selling price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The basis strengthened by $0.40, raising the effective price by $0.40"
+      },
+      {
+        "id": "b",
+        "text": "The basis weakened by $0.40, lowering the effective price by $0.40"
+      },
+      {
+        "id": "c",
+        "text": "The basis strengthened by $0.40, lowering the effective price by $0.40"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, because a full hedge locks the opening futures price"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Basis rose from −$0.50 to −$0.10, so spot gained $0.40 relative to futures: the basis strengthened. A short hedger's effective price is the closing spot plus the futures gain, which equals the opening futures price plus the closing basis, so it is $0.40 better than a hedge closed at the opening basis.",
+    "distractorExplanations": {
+      "b": "Moving from −$0.50 to −$0.10 is a rise in spot relative to futures, which is a strengthening, not a weakening.",
+      "c": "The direction is right, but a stronger basis helps a short hedger; it hurts a long hedger.",
+      "d": "A hedge removes price risk but not basis risk; the effective price depends on the basis when the hedge is lifted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-7 Futures Basis) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-023",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A firm hedges a $10 million spot position with futures. The minimum-variance hedge ratio is 0.9, and one futures contract is currently worth $510,000. Using the tailed hedge, how many contracts should it trade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "9 contracts"
+      },
+      {
+        "id": "b",
+        "text": "18 contracts"
+      },
+      {
+        "id": "c",
+        "text": "20 contracts"
+      },
+      {
+        "id": "d",
+        "text": "22 contracts"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The tailed hedge sizes contracts in dollar values: N = h* × VA / VF = 0.9 × $10,000,000 / $510,000 ≈ 17.6, so about 18 contracts. Because futures settle daily, sizing by current values (and updating as prices move) keeps the hedge aligned with the exposure.",
+    "distractorExplanations": {
+      "a": "Assumes each contract covers $1 million of exposure; the contract value is $510,000.",
+      "c": "Ignores the 0.9 hedge ratio: $10M / $510,000 ≈ 19.6 contracts.",
+      "d": "Divides by the hedge ratio instead of multiplying: $10M / (0.9 × $510,000) ≈ 21.8."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-8 Tailing the Hedge) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-024",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "Six months ago a trader went long a one-year forward with a delivery price of $105. The forward price for the same delivery date is now $110, six months remain, and the continuously compounded risk-free rate is 4%. What is the long position worth today?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$0.00"
+      },
+      {
+        "id": "b",
+        "text": "$4.90"
+      },
+      {
+        "id": "c",
+        "text": "$5.00"
+      },
+      {
+        "id": "d",
+        "text": "$5.10"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A forward's value is the present value of the gap between today's forward price and the delivery price: f = (110 − 105) × e^(−0.04 × 0.5) = 5 × e^(−0.02) ≈ $4.90. A forward is worth zero only at inception; its value moves with the forward price afterwards.",
+    "distractorExplanations": {
+      "a": "Forwards are worth zero only when entered; once the forward price moves, the contract has value.",
+      "c": "Uses the undiscounted $5 gap; the gain is received at delivery, six months away, so it must be discounted.",
+      "d": "Compounds the $5 forward by e^(0.02) instead of discounting it to today."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-10 Value of an Existing Forward) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-025",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A non-dividend asset trades at $100 spot, the one-year continuously compounded risk-free rate is 5%, and the one-year forward trades at $108. What arbitrage is available, and what is the profit per unit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Short spot, invest $100 and buy forward at $108, earning about $2.87"
+      },
+      {
+        "id": "b",
+        "text": "Borrow $100, buy spot and sell forward at $108, earning $8.00"
+      },
+      {
+        "id": "c",
+        "text": "Borrow $100, buy spot and sell forward at $108, earning $3.00"
+      },
+      {
+        "id": "d",
+        "text": "Borrow $100, buy spot and sell forward at $108, earning about $2.87"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The fair forward is 100 × e^0.05 ≈ $105.13, so the $108 forward is rich. Cash-and-carry: borrow $100, buy the asset, sell forward at $108. At maturity deliver, receive $108 and repay $105.13, locking in about $2.87. Storage costs or income would change the fair forward.",
+    "distractorExplanations": {
+      "a": "Shorting spot and buying the overpriced forward is the reverse trade; it loses about $2.87 here.",
+      "b": "Ignores financing: the $100 loan costs $5.13 in interest by maturity.",
+      "c": "Uses simple 5% interest ($105.00); the stated rate is continuously compounded, so repayment is $105.13."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-10 Cash-and-Carry Arbitrage) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-026",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "Copper trades at $9,000 per tonne. The risk-free rate is 4%, storage costs are 1% per year and the convenience yield is 3% per year, all continuously compounded. What is the one-year forward price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$9,182"
+      },
+      {
+        "id": "b",
+        "text": "$9,367"
+      },
+      {
+        "id": "c",
+        "text": "$9,461"
+      },
+      {
+        "id": "d",
+        "text": "$9,750"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "F = S × e^((r + u − y)T) = 9,000 × e^(0.04 + 0.01 − 0.03) = 9,000 × e^0.02 ≈ $9,182. Storage raises the forward; the convenience yield, the benefit of holding physical inventory, lowers it. Consumption commodities need both terms, unlike financial assets.",
+    "distractorExplanations": {
+      "b": "Uses the financial-asset formula 9,000 × e^0.04, ignoring storage costs and convenience yield.",
+      "c": "Adds storage (e^0.05) but leaves out the convenience yield, which reduces the forward price.",
+      "d": "Adds the convenience yield instead of subtracting it: 9,000 × e^0.08."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-11 Commodity Cost of Carry) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-027",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A non-dividend-paying stock trades at $51. A six-month European call has a $50 strike, and the risk-free rate is 12% with continuous compounding. What is the call's no-arbitrage lower bound?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1.00"
+      },
+      {
+        "id": "b",
+        "text": "$3.83"
+      },
+      {
+        "id": "c",
+        "text": "$3.91"
+      },
+      {
+        "id": "d",
+        "text": "$47.09"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A European call on a non-dividend stock is worth at least S − Ke^(−rT) = 51 − 50 × e^(−0.06) = 51 − 47.09 ≈ $3.91. Below that, buying the call and shorting the stock while investing the proceeds locks in a profit. S − K ignores the interest earned by paying the strike later.",
+    "distractorExplanations": {
+      "a": "S − K ignores the time value of money on the strike; the bound uses the present value of K.",
+      "b": "Discounts the strike with simple 6% interest (50 / 1.06) instead of continuous compounding.",
+      "d": "$47.09 is the present value of the strike itself; the bound is the stock price minus that amount."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-13 Lower Bounds on Option Prices) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-028",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A trader buys a $50 call for $5 and sells a $55 call for $2, both on the same stock and with the same expiry. What are the maximum profit and the breakeven stock price at expiry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Maximum profit $5; breakeven $53"
+      },
+      {
+        "id": "b",
+        "text": "Maximum profit $2; breakeven $55"
+      },
+      {
+        "id": "c",
+        "text": "Maximum profit unlimited; breakeven $53"
+      },
+      {
+        "id": "d",
+        "text": "Maximum profit $2; breakeven $53"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The bull call spread costs $5 − $2 = $3. Above $55 it pays the $5 strike difference, so maximum profit = $5 − $3 = $2. Breakeven = lower strike + net cost = $50 + $3 = $53. The short $55 call caps the upside in exchange for the cheaper entry.",
+    "distractorExplanations": {
+      "a": "$5 is the maximum payoff (strike difference); profit subtracts the $3 net premium.",
+      "b": "Breakeven is the lower strike plus the net premium ($53), not the upper strike.",
+      "c": "The short $55 call caps gains above $55, so upside is not unlimited."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-14 Bull and Bear Spreads) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-029",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A mortgage pass-through pool prepays at a conditional prepayment rate (CPR) of 6%. What is the corresponding single monthly mortality rate (SMM)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.487%"
+      },
+      {
+        "id": "b",
+        "text": "0.500%"
+      },
+      {
+        "id": "c",
+        "text": "0.514%"
+      },
+      {
+        "id": "d",
+        "text": "52.4%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "SMM = 1 − (1 − CPR)^(1/12) = 1 − 0.94^(1/12) ≈ 0.514% per month. The formula compounds survival of principal over 12 months. Dividing the CPR by 12 understates the monthly rate, because each month's prepayment applies to a shrinking balance.",
+    "distractorExplanations": {
+      "a": "Computes (1.06)^(1/12) − 1, compounding growth instead of the survival of principal.",
+      "b": "Divides the CPR by 12, ignoring that prepayments compound on the remaining balance each month.",
+      "d": "Runs the conversion the wrong way, treating 6% as the SMM and annualizing it: 1 − 0.94^12."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-18 SMM and CPR) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-030",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A manager wants to fully hedge a $10 million bond portfolio with duration 6.8, using Treasury futures priced at $93,062.50 per contract with a duration of 9.2. How many contracts should she trade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buy 79 contracts"
+      },
+      {
+        "id": "b",
+        "text": "Sell 79 contracts"
+      },
+      {
+        "id": "c",
+        "text": "Sell 107 contracts"
+      },
+      {
+        "id": "d",
+        "text": "Sell 145 contracts"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Match dollar durations: N = (P × DP) / (FC × DF) = (10,000,000 × 6.8) / (93,062.50 × 9.2) = 68,000,000 / 856,175 ≈ 79. She sells futures because a short position gains when rates rise and offsets the portfolio's loss.",
+    "distractorExplanations": {
+      "a": "Buying futures adds duration; to hedge a long bond portfolio she must sell them.",
+      "c": "Matches face values (10,000,000 / 93,062.50 ≈ 107) and ignores the two durations.",
+      "d": "Inverts the duration ratio, multiplying by 9.2 / 6.8 instead of 6.8 / 9.2."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, FMP-19 Duration-Based Futures Hedge) into a scored MCQ, 2026-10-09."
+  },
+  {
     "id": "frm-part-1-readiness-check-valuation-models-001",
     "examSlug": "frm-part-1-readiness-check",
     "topicId": "valuation-models",
@@ -1648,5 +2803,500 @@
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-12). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-016",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "Desk A reports a one-day 95% VaR of $1.0 million. Assuming normal, independent daily returns with zero mean, what is the equivalent 10-day 99% VaR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1.42 million"
+      },
+      {
+        "id": "b",
+        "text": "$3.16 million"
+      },
+      {
+        "id": "c",
+        "text": "$4.48 million"
+      },
+      {
+        "id": "d",
+        "text": "$14.16 million"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Rescale the confidence level by the ratio of z-values: $1.0M × 2.33 / 1.645 ≈ $1.42M one-day 99% VaR. Then scale the horizon by √10: $1.42M × 3.162 ≈ $4.48M. VaR figures are comparable only at the same confidence level and horizon.",
+    "distractorExplanations": {
+      "a": "Converts the confidence level to 99% but leaves the horizon at one day.",
+      "b": "Scales the horizon by √10 but keeps the 95% confidence level.",
+      "d": "Scales by 10 days instead of √10; under i.i.d. returns VaR grows with the square root of time."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-1 VaR Confidence Level and Horizon) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-017",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A desk is short an at-the-money straddle, so its net delta is close to zero, and its delta-normal VaR comes out near zero. What is the best assessment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The VaR understates risk: big moves either way cause losses a linear model misses"
+      },
+      {
+        "id": "b",
+        "text": "The VaR is reliable: a delta-neutral position carries very little one-day market risk"
+      },
+      {
+        "id": "c",
+        "text": "The VaR overstates risk: negative gamma makes losses shrink as the price moves"
+      },
+      {
+        "id": "d",
+        "text": "The VaR is reliable once the confidence level is raised from 99% to 99.9%"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Delta-normal VaR treats value changes as linear in the risk factor. A short straddle has near-zero delta but large negative gamma, so a big move in either direction produces large losses that the linear model cannot see. Nonlinear books need full revaluation by historical or Monte Carlo simulation.",
+    "distractorExplanations": {
+      "b": "Delta neutrality only removes first-order risk; the short straddle's negative gamma loses money on large moves.",
+      "c": "Negative gamma makes losses grow, not shrink, as the underlying moves away from the strike.",
+      "d": "A higher confidence level only scales the same near-zero linear estimate; it still misses the gamma losses."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-2 Linear vs Nonlinear Portfolios) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-018",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "Two desks have stand-alone 99% VaRs of $3 million and $4 million, and the correlation between their P&Ls is 0.3. Under the delta-normal approach, what is the combined 99% VaR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$5.35 million"
+      },
+      {
+        "id": "b",
+        "text": "$5.67 million"
+      },
+      {
+        "id": "c",
+        "text": "$7.00 million"
+      },
+      {
+        "id": "d",
+        "text": "$32.20 million"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "VaRp = √(VaR1² + VaR2² + 2ρVaR1VaR2) = √(9 + 16 + 2 × 0.3 × 3 × 4) = √32.2 ≈ $5.67M. Diversified VaR is below the $7M sum because the desks are less than perfectly correlated; adding stand-alone VaRs assumes a correlation of +1.",
+    "distractorExplanations": {
+      "a": "Omits the factor 2 on the cross term: √(25 + 3.6) ≈ $5.35M.",
+      "c": "Adding stand-alone VaRs assumes perfect correlation and ignores the diversification benefit.",
+      "d": "Stops at the sum of squares (9 + 16 + 7.2 = 32.2) and forgets to take the square root."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-2 Two-Asset Delta-Normal VaR) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-019",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "An options book has a delta of −500 and a gamma of −40 (per $1 move in the underlying). Using the delta-gamma approximation, what is the change in the book's value if the underlying rises $5?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−$3,500"
+      },
+      {
+        "id": "b",
+        "text": "−$3,000"
+      },
+      {
+        "id": "c",
+        "text": "−$2,500"
+      },
+      {
+        "id": "d",
+        "text": "−$2,000"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ΔV ≈ Δ × ΔS + ½ × Γ × ΔS² = −500 × 5 + 0.5 × (−40) × 25 = −2,500 − 500 = −$3,000. The negative gamma adds $500 of loss beyond what delta alone predicts, which is why delta-normal VaR understates risk for short option books.",
+    "distractorExplanations": {
+      "a": "Drops the ½ in the gamma term, doubling the second-order loss to $1,000.",
+      "c": "Uses delta alone; the short-gamma book loses an extra $500 from curvature.",
+      "d": "Applies the gamma term with the wrong sign; for a short-gamma book it adds to the loss."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-2 Delta-Gamma Approximation) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-020",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A GARCH(1,1) model has a long-run daily variance of 0.0001 (1% volatility) and persistence α + β = 0.98. Today's daily variance is 0.0004 (2% volatility). What daily volatility does the model expect 30 days ahead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 1.00%"
+      },
+      {
+        "id": "b",
+        "text": "About 1.55%"
+      },
+      {
+        "id": "c",
+        "text": "About 1.62%"
+      },
+      {
+        "id": "d",
+        "text": "About 2.00%, unchanged"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Expected variance k days ahead = VL + (α + β)^k × (σt² − VL) = 0.0001 + 0.98^30 × 0.0003 ≈ 0.0001 + 0.545 × 0.0003 ≈ 0.000264, so volatility ≈ 1.62%. With persistence near 1, volatility reverts to its long-run level slowly.",
+    "distractorExplanations": {
+      "a": "Assumes full reversion within 30 days; with persistence 0.98, about 55% of the gap remains.",
+      "b": "Applies the decay to the volatility gap (1% + 0.545 × 1%) instead of the variance gap.",
+      "d": "Assumes today's high volatility persists unchanged; GARCH forecasts revert toward the long-run variance."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-3 Volatility Forecasting with GARCH) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-021",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A borrower's five-year CDS trades at 240 bp, and expected recovery is 40%. Assuming a constant hazard rate, what is the approximate cumulative probability of default over five years?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4.0%"
+      },
+      {
+        "id": "b",
+        "text": "11.3%"
+      },
+      {
+        "id": "c",
+        "text": "12.0%"
+      },
+      {
+        "id": "d",
+        "text": "18.1%"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The hazard rate is about spread / (1 − R) = 2.4% / 0.6 = 4% per year. With a constant hazard rate, the cumulative PD = 1 − e^(−λt) = 1 − e^(−0.20) ≈ 18.1%. Simply multiplying 4% by 5 years (20%) would ignore that a firm can only default if it has survived.",
+    "distractorExplanations": {
+      "a": "4.0% is the annual hazard rate, not the five-year cumulative default probability.",
+      "b": "Uses the 2.4% spread as the hazard rate, ignoring the 40% recovery: 1 − e^(−0.12).",
+      "c": "Multiplies the spread by five years; the hazard rate must first be grossed up for recovery."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-4 Hazard Rate) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-022",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A borrower has a $10 million revolving credit line, of which $4 million is drawn. The bank applies a 50% credit conversion factor to the undrawn amount. What is the exposure at default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$4 million"
+      },
+      {
+        "id": "b",
+        "text": "$5 million"
+      },
+      {
+        "id": "c",
+        "text": "$7 million"
+      },
+      {
+        "id": "d",
+        "text": "$10 million"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "EAD = drawn + CCF × undrawn = $4M + 0.5 × $6M = $7M. Borrowers heading for default tend to draw down unused commitments, so EAD on a revolver includes part of the undrawn amount, not just today's balance.",
+    "distractorExplanations": {
+      "a": "Uses only the drawn balance, missing the drawdown that typically happens before default.",
+      "b": "Applies the 50% factor to the whole $10 million line instead of only the $6 million undrawn.",
+      "d": "Treats the full $10 million limit as drawn; the conversion factor expects only half the undrawn amount to be used."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-6 Exposure at Default) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-023",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "Two loans each have an unexpected loss of $420,000, and the correlation between their losses is 0.2. What is the two-loan portfolio's unexpected loss?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$594,000"
+      },
+      {
+        "id": "b",
+        "text": "$623,000"
+      },
+      {
+        "id": "c",
+        "text": "$651,000"
+      },
+      {
+        "id": "d",
+        "text": "$840,000"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "ULp = √(UL1² + UL2² + 2ρUL1UL2) = √(2 × 420,000² × (1 + 0.2)) = 420,000 × √2.4 ≈ $651,000. With correlation 0.2 the portfolio UL is well below the $840,000 sum; the ULs add only when losses are perfectly correlated.",
+    "distractorExplanations": {
+      "a": "Assumes zero correlation (420,000 × √2), dropping the cross term.",
+      "b": "Omits the factor 2 on the cross term: 420,000 × √2.2.",
+      "d": "Adds the two ULs, which assumes perfect correlation and ignores diversification."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-6 Portfolio Unexpected Loss) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-024",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "In a Merton model, a firm's assets are worth $100 million, debt of $70 million is due in one year, asset volatility is 25% and the expected asset return is 5%. What is the one-year probability of default?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4.0%"
+      },
+      {
+        "id": "b",
+        "text": "6.7%"
+      },
+      {
+        "id": "c",
+        "text": "7.6%"
+      },
+      {
+        "id": "d",
+        "text": "93.3%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "DD = [ln(100/70) + (0.05 − 0.25²/2) × 1] / 0.25 = (0.357 + 0.019) / 0.25 ≈ 1.50, so PD = N(−1.50) ≈ 6.7%. Equity is a call on the firm's assets struck at the debt. Asset volatility, not equity volatility, belongs in the formula; it is lower for leveraged firms.",
+    "distractorExplanations": {
+      "a": "Adds σ²/2 to the drift instead of subtracting it, which raises DD to about 1.75.",
+      "c": "Drops the (μ − σ²/2)T drift term, giving DD ≈ 1.43.",
+      "d": "N(1.50) is the probability of not defaulting; PD is N(−DD)."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-6 Merton Structural Model) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-025",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A bank's risk committee asks what combination of events would push its CET1 ratio below 7%. The team works backward and finds that a regional property crash plus a deposit run would do it. What exercise is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reverse stress test: start from a failure outcome and find the scenarios that cause it"
+      },
+      {
+        "id": "b",
+        "text": "Sensitivity analysis: shock one risk factor at a time and measure the impact on capital ratios"
+      },
+      {
+        "id": "c",
+        "text": "Historical scenario: replay a past crisis such as 2008 against today's portfolio"
+      },
+      {
+        "id": "d",
+        "text": "VaR backtest: compare realized losses with the model's predicted tail losses"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Reverse stress testing starts from an outcome that would break the business model, such as a capital or liquidity breach, and works backward to the scenarios that produce it. It exposes vulnerabilities and blind spots that a standard scenario set would miss.",
+    "distractorExplanations": {
+      "b": "Sensitivity analysis moves one factor forward to see the impact; it does not search backward from a failure point.",
+      "c": "A historical scenario applies past market moves; this exercise starts from a target outcome instead.",
+      "d": "Backtesting checks VaR exceptions against realized P&L; it is not a scenario search."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-8 Reverse Stress Testing) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-026",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A one-year zero-coupon bond prices at 96.15 per 100 face, and a two-year 5% annual-coupon bond prices at 99.85. What two-year spot rate does bootstrapping imply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.00%"
+      },
+      {
+        "id": "b",
+        "text": "5.08%"
+      },
+      {
+        "id": "c",
+        "text": "5.11%"
+      },
+      {
+        "id": "d",
+        "text": "10.48%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The one-year zero gives z1 = 100 / 96.15 − 1 ≈ 4.0%. Strip the first coupon at that rate: 99.85 − 5 / 1.04 = 95.04, so (1 + z2)² = 105 / 95.04 and z2 ≈ 5.11%. Each longer spot rate is solved using the shorter ones already found.",
+    "distractorExplanations": {
+      "a": "5% is the bond's coupon rate; with the bond priced below par, the spot rate is higher.",
+      "b": "5.08% is the two-year bond's yield to maturity, a blend of both spot rates, not the two-year spot rate.",
+      "d": "10.48% is the cumulative two-year return (1 + z2)² − 1; spot rates are quoted per year."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-9 Bootstrapping Spot Rates) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-027",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A trader holds $10 million face of a bond priced at 102 per 100 face, with a modified duration of 8. What is the position's DV01?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$816"
+      },
+      {
+        "id": "b",
+        "text": "$8,000"
+      },
+      {
+        "id": "c",
+        "text": "$8,160"
+      },
+      {
+        "id": "d",
+        "text": "$81,600"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "DV01 = modified duration × market value × 0.0001 = 8 × $10,200,000 × 0.0001 = $8,160 per basis point. Market value, not face value, is the base. DV01 per $100 face (0.0816 here) must be scaled to the position size before hedging.",
+    "distractorExplanations": {
+      "a": "Slips a factor of 10 when scaling the per-100 DV01 (0.0816) up to $10 million face.",
+      "b": "Uses $10 million face value instead of the $10.2 million market value.",
+      "d": "Uses 0.001 instead of 0.0001, which is a 10 bp change rather than 1 bp."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-12 DV01) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-028",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A callable bond is priced at 100. If yields fall 25 bp its model price is 101.2, and if they rise 25 bp it is 98.4. What is its effective duration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "4.8"
+      },
+      {
+        "id": "b",
+        "text": "5.6"
+      },
+      {
+        "id": "c",
+        "text": "6.4"
+      },
+      {
+        "id": "d",
+        "text": "11.2"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Deff = (P− − P+) / (2 × P0 × Δy) = (101.2 − 98.4) / (2 × 100 × 0.0025) = 2.8 / 0.5 = 5.6. Effective duration reprices the bond with its embedded option, so it captures the call that caps price gains when yields fall. Modified duration would miss that.",
+    "distractorExplanations": {
+      "a": "Uses only the yield-down move (1.2 / 0.25); the call option makes the two sides asymmetric, so both are needed.",
+      "c": "Uses only the yield-up move (1.6 / 0.25), which ignores the capped upside when yields fall.",
+      "d": "Forgets the 2 in the denominator, although the yield change spans 50 bp in total."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-12 Effective Duration) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-029",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A bond portfolio has key rate durations of 0.5 at 2 years, 2.0 at 5 years and 3.5 at 10 years, for an effective duration of about 6.0. If only the 10-year rate rises 100 bp, what is the approximate change in portfolio value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A loss of about 0.5%"
+      },
+      {
+        "id": "b",
+        "text": "A loss of about 2.0%"
+      },
+      {
+        "id": "c",
+        "text": "A loss of about 3.5%"
+      },
+      {
+        "id": "d",
+        "text": "A loss of about 6.0%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A key rate duration measures sensitivity to one key rate with the others held fixed. A 100 bp rise in the 10-year rate alone moves value by about −3.5 × 1% = −3.5%. The key rate durations sum to effective duration, so −6.0% applies only to a parallel shift.",
+    "distractorExplanations": {
+      "a": "0.5 is the 2-year key rate duration, which responds only to a shift in the 2-year rate.",
+      "b": "2.0 is the 5-year key rate duration; this shock moves only the 10-year rate.",
+      "d": "6.0 is total effective duration, which applies to a parallel shift of the whole curve, not one key rate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-13 Key Rate Duration) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-030",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A delta-hedged options book has a gamma of 2,000 (per $1) and a theta of −$600 per day. Over one day the stock moves $1. What is the book's approximate P&L?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−$600"
+      },
+      {
+        "id": "b",
+        "text": "+$400"
+      },
+      {
+        "id": "c",
+        "text": "+$1,000"
+      },
+      {
+        "id": "d",
+        "text": "+$1,400"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "P&L ≈ Δ × ΔS + ½ × Γ × ΔS² + Θ × Δt = 0 + 0.5 × 2,000 × 1² − 600 = +$400. A delta-hedged long-gamma book earns from realized moves and pays time decay; it profits only when the move is large enough to beat theta.",
+    "distractorExplanations": {
+      "a": "Counts only time decay; the $1 move produces a $1,000 gamma gain that more than offsets it.",
+      "c": "Counts the gamma gain but forgets the $600 of theta paid for one day.",
+      "d": "Drops the ½ in the gamma term, which doubles the gamma gain."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-16 Delta-Gamma P&L Approximation) into a scored MCQ, 2026-10-09."
   }
 ]
