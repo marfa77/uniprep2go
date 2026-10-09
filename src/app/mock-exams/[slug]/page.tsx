@@ -27,6 +27,7 @@ import {
 import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
 import { MockMissCohortPanel } from "@/components/mock-exams/mock-miss-cohort";
 import { MockStartCountNote } from "@/components/mock-exams/mock-start-count";
+import { MockHeroAccessCta } from "@/components/mock-exams/mock-hero-access-cta";
 import { getPublicMissCohort } from "@/lib/mock-exams/miss-cohort-store";
 import {
   MockCitizenshipGuideCtaBar,
@@ -200,6 +201,9 @@ export default async function MockExamPage({
       : seoCopy.whatIsExam);
   const citizenshipGuide = getCitizenshipGuideContent(config.slug);
   const missCohort = await getPublicMissCohort(config.slug);
+  const showHeroAccessCta =
+    Boolean(accessState) && config.status !== "coming_soon" && runnable && isMockPaywallEnabled();
+  const heroDeckHidden = citizenshipGuide?.deckCta === "hidden";
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -231,6 +235,13 @@ export default async function MockExamPage({
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {seoCopy.headline}
         </h1>
+        {showHeroAccessCta ? (
+          <MockHeroAccessCta
+            config={config}
+            linkedCheckout={heroDeckHidden ? null : linkedCheckout}
+            linkedDeck={heroDeckHidden ? undefined : linkedDeck}
+          />
+        ) : null}
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
 
         <OfficialSourceTrustStrip
@@ -242,12 +253,14 @@ export default async function MockExamPage({
 
         {citizenshipGuide ? (
           <>
-            <MockCitizenshipGuideCtaBar
-              guide={citizenshipGuide}
-              linkedCheckout={linkedCheckout}
-              linkedDeck={linkedDeck}
-              variant="top"
-            />
+            {showHeroAccessCta ? null : (
+              <MockCitizenshipGuideCtaBar
+                guide={citizenshipGuide}
+                linkedCheckout={linkedCheckout}
+                linkedDeck={linkedDeck}
+                variant="top"
+              />
+            )}
             <MockCitizenshipGuideFormatTable guide={citizenshipGuide} />
           </>
         ) : null}
