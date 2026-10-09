@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { getDeckPracticeMock } from "@/lib/deck-funnel";
 import { getIntentPageDecks, getIntentPagePrimaryDeck, type IntentPage } from "@/lib/intent-pages";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -23,6 +24,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
   ).filter((deck): deck is NonNullable<typeof deck> => deck !== undefined);
   const primaryDeck =
     (catalogPrimary ? await getPricedDeckBySlug(catalogPrimary.slug) : undefined) ?? decks[0];
+  const practiceMock = primaryDeck ? getDeckPracticeMock(primaryDeck.slug) : undefined;
   const offers = page.externalOffers ?? [];
   const hasOffers = offers.length > 0;
 
@@ -110,7 +112,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           {page.directAnswer}
         </p>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+        <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
           {primaryDeck ? (
             <>
               <TrackedCheckoutLink
@@ -124,6 +126,11 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
               <Link className={btnSecondary} href={`/decks/${primaryDeck.slug}`}>
                 View deck details
               </Link>
+              {practiceMock ? (
+                <Link className={btnSecondary} href={`/mock-exams/${practiceMock.slug}`}>
+                  Free {practiceMock.questionCount}-question practice test
+                </Link>
+              ) : null}
             </>
           ) : primaryOffer ? (
             <>
