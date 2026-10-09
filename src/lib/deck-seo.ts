@@ -793,6 +793,15 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Looking for Series 63 flashcards after SIE/Series 7? Start with the free 60-question timed readiness check, then drill only the weak state-law topics in this 250-card deck before the state sit.",
   },
+  "series-65-anki-deck": {
+    title: "Series 65 Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+  },
+  "series-66-anki-deck": {
+    title: "Series 66 Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+  },
+  "cfp-certification-anki-deck": {
+    title: "CFP Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+  },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",
     headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
