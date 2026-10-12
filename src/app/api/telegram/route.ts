@@ -1,4 +1,5 @@
 import { after } from "next/server";
+import { clearAdminBotHistory, handleAdminBotMessage, type AdminBotMessage } from "@/lib/admin-bot/agent";
 import { syncAllCheckoutPrices } from "@/lib/checkout-pricing";
 import { getFunnelStats, resetAllFunnelStats, resetFunnelStats } from "@/lib/funnel-store";
 import { formatCentsUsd, markPartnerPaid } from "@/lib/partner-ledger";
@@ -25,21 +26,66 @@ import {
 } from "@/lib/telegram-stats";
 import { sendTelegramMessage } from "@/lib/telegram-client";
 
+export const maxDuration = 300;
+
 type TelegramUpdate = {
-  message?: {
+  message?: AdminBotMessage & {
     chat?: {
       id?: number | string;
     };
-    text?: string;
   };
 };
 
+const ADMIN_HELP = [
+  "Пиши или говори голосом обычным языком — отвечу по данным UniPrep2Go (воронка, клики, партнёры, каталог).",
+  "",
+  "Команды:",
+  "/stats — отчёт воронки",
+  "/sync — синхронизировать цены с checkout",
+  "/partner_digest — разослать дайджесты партнёрам",
+  "/partner_payouts [YYYY-MM] — отчёт по выплатам",
+  "/partner_paid <partnerId> <YYYY-MM> <reference> — отметить выплату",
+  "/reset-stats, /reset-all-stats — сбросить статистику",
+  "/new — очистить контекст диалога с ассистентом",
+].join("\n");
+
+function isAdminChat(chatId: number | string) {
+  const allowed = process.env.TELEGRAM_CHAT_ID?.trim();
+  return Boolean(allowed) && String(chatId) === allowed;
+}
+
+async function handleAdminMessage(chatId: number | string, message: AdminBotMessage) {
+  const key = String(chatId);
+  const command = (message.text ?? "").trim().split(/\s+/)[0]?.toLowerCase().split("@")[0];
+
+  if (command === "/new") {
+    await clearAdminBotHistory(key);
+    await sendTelegramMessage(chatId, "Контекст диалога очищен.");
+    return;
+  }
+
+  if (command === "/help" || command === "/start") {
+    await sendTelegramMessage(chatId, ADMIN_HELP);
+    return;
+  }
+
+  after(() => handleAdminBotMessage(key, message));
+}
+
 export async function POST(request: Request) {
   const update = (await request.json()) as TelegramUpdate;
-  const chatId = update.message?.chat?.id;
-  const text = update.message?.text;
+  const message = update.message;
+  const chatId = message?.chat?.id;
+  const text = message?.text;
 
-  if (!chatId || !text) {
+  if (!message || !chatId) {
+    return Response.json({ ok: true });
+  }
+
+  if (!text) {
+    if (isAdminChat(chatId)) {
+      await handleAdminMessage(chatId, message);
+    }
     return Response.json({ ok: true });
   }
 
@@ -60,6 +106,9 @@ export async function POST(request: Request) {
     !wantsPartnerPayouts &&
     !wantsPartnerPaid
   ) {
+    if (isAdminChat(chatId)) {
+      await handleAdminMessage(chatId, message);
+    }
     return Response.json({ ok: true });
   }
 
