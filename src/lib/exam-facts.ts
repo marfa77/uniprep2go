@@ -2697,7 +2697,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ACSM readiness check the real ACSM exam?",
-        a: "No. The free 120-question readiness check and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
+        a: "No. The free 60-question readiness check (drawn from a 120-item bank) and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
       },
     ],
     trademark_note:

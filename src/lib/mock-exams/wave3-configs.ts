@@ -362,16 +362,17 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     topics: fourNicheTopics([
       { id: "adls", label: "ADLs & personal care" },
       { id: "safety", label: "Home safety & infection" },
-      { id: "obs", label: "Observation & reporting" },
+      { id: "obs", label: "Observation, reporting & communication" },
       { id: "ethics", label: "Ethics & boundaries" }
     ]),
     officialSourceNote:
-      "Independent readiness check on home health aide competency themes (ADLs, home safety, observation/reporting, ethics). Official HHA evaluations are state-specific (often written + skills). Not a state board or CMS exam.",
+      "Federal rule 42 CFR 484.80 requires at least 75 hours of home health aide training (including at least 16 hours of supervised practical training) and a competency evaluation by a registered nurse: communication, vital signs, hygiene and grooming, transfers, and range of motion must be observed with a patient or pseudo-patient; other subjects may be written, oral, or observed. There is no national question count, time limit, or pass score — the training program or agency sets them. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item bank (15 per topic each attempt), with a 70% readiness target. Not a state, CMS, or agency exam.",
     description:
-      "Free 60-question Home Health Aide practice test (75 min, 70% readiness) covering ADLs, safety, observation, and ethics — pairs with the planned HHA Anki waitlist. Independent prep; state exams vary.",
-    examBody: "State HHA competency / federal home-health aide training themes",
+      "Free 60-question Home Health Aide practice test (75 min) drawn from a 120-item bank, scored by topic: personal care, home safety and infection control, observation and reporting, ethics. Written to the 42 CFR 484.80 subjects; the real evaluation is set by your program.",
+    examBody: "Home health agency / training program competency evaluation (42 CFR 484.80)",
     questionSourceNote:
-      "UniPrep2Go Wave 3 HHA bank — home-care framed (client/aide/agency), finance contaminants removed, unique stems, balanced A–D, thick explanations (2026-08-13).",
+      "Original UniPrep2Go 120-item home-care bank mapped to the 42 CFR 484.80 competency subjects (content-reviewed 2026-10-12).",
+    lastUpdated: "2026-10-12",
     searchAliases: ["home health aide", "HHA exam", "home health aide practice test", "HHA competency test"],
   }),
   nicheReadinessConfig({
@@ -565,24 +566,22 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     title: "ACSM CPT Readiness Check",
     shortTitle: "ACSM CPT",
     linkedDeckSlug: "acsm-cpt-anki-deck",
-    durationMinutes: 120,
-    questionCount: 120,
-    topics: fourNicheTopics(
-      [
-        { id: "assessment", label: "Client assessment" },
-        { id: "programming", label: "Exercise programming" },
-        { id: "science", label: "Exercise science" },
-        { id: "behavior", label: "Behavior & safety" },
-      ],
-      70,
-      30,
-    ),
+    durationMinutes: 75,
+    questionCount: NICHE_SESSION_QUESTIONS,
+    topics: fourNicheTopics([
+      { id: "assessment", label: "Client assessment" },
+      { id: "programming", label: "Exercise programming" },
+      { id: "science", label: "Exercise science" },
+      { id: "behavior", label: "Behavior & safety" },
+    ]),
     officialSourceNote:
-      "Mapped to ACSM-CPT themes (Domains I–IV). Official ACSM-CPT: 135 items (120 scored + 15 pretest), 150 minutes, scaled pass 550 on 200–800 — verify Candidate Handbook / FAQs at acsm.org. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent UniPrep2Go prep — not ACSM exam material.",
-    description: "Free 120-question ACSM CPT readiness check with topic scoring.",
+      "Mapped to ACSM-CPT themes (Domains I–IV). Official ACSM-CPT: 135 items (120 scored + 15 pretest), 150 minutes, scaled pass 550 on 200–800 — verify Candidate Handbook / FAQs at acsm.org. This UniPrep2Go check is a shorter 60-question / 75-minute diagnostic drawn from a 120-item bank (15 per topic each attempt), with a 70% readiness target. Independent UniPrep2Go prep — not ACSM exam material.",
+    description:
+      "Free 60-question ACSM CPT readiness check (75 min) with topic scoring, drawn from a 120-item bank — shorter than the official 135-item / 150-minute exam.",
     examBody: "ACSM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality, content-reviewed 2026-10-12).",
     searchAliases: ["ACSM CPT", "ACSM personal trainer"],
+    lastUpdated: "2026-10-12",
   }),
   nicheReadinessConfig({
     slug: "nsca-cpt-readiness-check",

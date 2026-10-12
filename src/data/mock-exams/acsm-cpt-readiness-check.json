@@ -56,7 +56,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "RHR is a simple baseline; programming still needs goals, history, and other assessments.",
+    "explanation": "Resting heart rate, taken after several minutes of quiet rest, is a baseline for cardiorespiratory fitness and the HRrest term in the Karvonen formula. A falling RHR over weeks of training usually signals better aerobic fitness; it says nothing about strength, body fat, or bone density.",
     "distractorExplanations": {
       "a": "A 1RM needs strength testing or prediction from submaximal lifts; resting HR gives no strength data.",
       "b": "Body fat needs skinfolds, BIA, or another composition method.",
@@ -81,7 +81,7 @@
       },
       {
         "id": "c",
-        "text": "Resting blood pressure"
+        "text": "Single-leg stance balance test"
       },
       {
         "id": "d",
@@ -89,11 +89,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The overhead squat assessment observes dynamic movement compensations along the kinetic chain; a plumb-line check is static, and sit-and-reach and BP give other data types.",
+    "explanation": "The overhead squat assessment watches the whole kinetic chain (feet, knees, hips, trunk, arms) through a loaded movement and reveals compensations such as knee valgus, forward lean, or arms falling forward. A plumb-line check and a balance hold are static, and sit-and-reach measures one range.",
     "distractorExplanations": {
       "a": "A plumb-line check views static standing posture; it does not load the kinetic chain through movement like the OHSA.",
       "b": "Sit-and-reach measures hamstring and low-back flexibility at one range, not movement compensations under load.",
-      "c": "BP is a vital sign, not a movement screen."
+      "c": "A single-leg stance test times static balance; it does not show multi-joint compensations through a loaded squat pattern."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -122,7 +122,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Knee valgus often pairs with weak hip abductors/external rotators and overactive adductors/TFL patterns.",
+    "explanation": "Knee valgus is a frontal-plane control problem: weak or underactive gluteus medius and hip external rotators let the femur adduct and internally rotate, often with overactive adductors and TFL. Correctives strengthen the hip abductors and external rotators and cue knees over toes.",
     "distractorExplanations": {
       "b": "Weak plantar flexors do not pull the knees inward; valgus is a frontal-plane hip control problem.",
       "c": "Posterior pelvic tilt from tight hamstrings shows as a rounded low back, not knees caving in.",
@@ -155,7 +155,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Preparticipation screening tools identify red flags; they do not replace clinical diagnosis or all legal forms.",
+    "explanation": "The PAR-Q+ is a self-administered preparticipation screening questionnaire. Its yes/no health questions flag conditions or symptoms that call for follow-up or medical clearance before activity. It does not measure fitness, estimate VO2max, or replace informed consent.",
     "distractorExplanations": {
       "a": "The PAR-Q+ is a health-history questionnaire; it cannot estimate aerobic capacity or substitute for a fitness test.",
       "c": "Screening and informed consent are separate documents; one does not replace the other.",
@@ -168,40 +168,40 @@
     "id": "acsm-cpt-readiness-check-assessment-006",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Which site is commonly included in circumference-based body composition formulas?",
+    "prompt": "A trainer uses the U.S. Navy circumference method to estimate a male client's body fat. Which measurements does it require?",
     "options": [
       {
         "id": "a",
-        "text": "Upper-arm skinfold at the triceps only"
+        "text": "Height and body weight only, as in BMI"
       },
       {
         "id": "b",
-        "text": "Resting heart rate taken at the wrist"
+        "text": "Chest, abdomen, and thigh skinfolds"
       },
       {
         "id": "c",
-        "text": "Waist, with other sites per protocol"
+        "text": "Neck and waist girths plus height"
       },
       {
         "id": "d",
-        "text": "Chest girth measured at full inhalation"
+        "text": "Waist and hip girths for a ratio"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Waist, hip, neck, and limb sites appear in various circumference protocols; choose the protocol’s sites.",
+    "explanation": "The U.S. Navy (Hodgdon-Beckett) method estimates body fat from girths: for men, neck and waist circumference plus height; women add hip girth. It needs only a tape measure, so it suits clients who dislike calipers, but it is less accurate than DXA or hydrostatic weighing.",
     "distractorExplanations": {
-      "a": "Triceps skinfold is a skinfold site, not a circumference site.",
-      "b": "Resting heart rate is a cardiovascular measure, not a body-composition circumference.",
-      "d": "Circumference protocols measure at end of normal exhalation, and chest girth is not a standard formula site."
+      "a": "Height and weight give BMI, which cannot separate fat from lean mass; the Navy method adds neck and waist girths.",
+      "b": "Chest, abdomen, and thigh is the Jackson-Pollock 3-site skinfold protocol for men, which uses calipers, not a tape.",
+      "d": "Waist-to-hip ratio is a fat-distribution risk marker, not a body-fat percentage formula."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
   },
   {
     "id": "acsm-cpt-readiness-check-assessment-007",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "In a pushing assessment, shoulders elevating commonly indicates overactivity of:",
+    "prompt": "In a pushing assessment, the client's shoulders elevate toward the ears. This most commonly indicates:",
     "options": [
       {
         "id": "a",
@@ -221,7 +221,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Scapular elevation compensations often involve upper trap/levator overactivity.",
+    "explanation": "Shoulders shrugging toward the ears during a push or pull is a classic compensation: the upper trapezius and levator scapulae are overactive and dominate scapular control, often with a weak lower trapezius. Correctives relax or stretch the upper traps and train the scapular depressors.",
     "distractorExplanations": {
       "a": "Shoulder elevation means the upper trapezius is overworking, not weak.",
       "b": "Tight rhomboids retract the scapulae; they do not cause shrugging during a push.",
@@ -254,7 +254,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Elevated BP can contraindicate or modify exercise; trainers refer as indicated.",
+    "explanation": "Resting BP is checked before exercise because uncontrolled hypertension raises cardiovascular risk during exertion. Readings well above normal are referred to a clinician, and vigorous work waits until BP is evaluated and controlled. The trainer screens and refers but never diagnoses.",
     "distractorExplanations": {
       "b": "Target heart rate comes from HRmax or HRR methods, not from a BP reading.",
       "c": "Low readings warrant symptom checks, but they do not automatically rule out training.",
@@ -320,7 +320,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Janda’s lower crossed pattern: anterior pelvic tilt with the classic tight/weak pairings.",
+    "explanation": "Janda's lower crossed syndrome pairs tight hip flexors and lumbar erectors with weak gluteals and abdominals, tilting the pelvis anteriorly and increasing lumbar lordosis. Correctives lengthen the hip flexors and strengthen the glutes and deep abdominals.",
     "distractorExplanations": {
       "a": "Tight chest and upper traps with weak neck flexors is upper crossed syndrome.",
       "b": "Tight hamstrings and glutes pull the pelvis into posterior tilt, the opposite pattern.",
@@ -353,7 +353,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Sharp pain is a stop-and-refer cue; trainers do not diagnose injuries.",
+    "explanation": "Sharp or joint-line pain during an assessment is a stop signal, unlike the dull muscular effort of hard work. The trainer ends the movement, documents what happened, and refers to a qualified health professional; diagnosing or training around the pain is outside CPT scope.",
     "distractorExplanations": {
       "a": "Sharp joint pain is a stop signal, not something to train around with lighter load.",
       "b": "Changing equipment still loads the painful joint without knowing the cause.",
@@ -419,7 +419,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "SLS reveals frontal-plane control deficits at hip/knee and trunk strategies.",
+    "explanation": "The single-leg squat tests frontal-plane control of the hip, knee, and trunk. Common compensations are knee valgus (weak hip abductors and external rotators), hip drop on the free side (weak gluteus medius), and trunk lean toward the stance leg to offload the hip.",
     "distractorExplanations": {
       "a": "A neutral foot position is the goal, not a compensation.",
       "c": "Level arms are part of the test setup, not a fault.",
@@ -485,7 +485,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Forward lean often relates to tight calves/hip flexors and weak posterior chain; interpret the whole kinetic chain.",
+    "explanation": "Excessive forward lean in the overhead squat usually means tight calves (soleus, gastrocnemius) and hip flexors with weak glutes and erector spinae. Limited ankle dorsiflexion keeps the shins upright, so the hips move back and the trunk tips forward to keep the body over the feet.",
     "distractorExplanations": {
       "b": "Tight hamstrings pull the pelvis back; they do not cause excessive forward lean.",
       "c": "Weak calves and an overactive tibialis would ease dorsiflexion, not limit it.",
@@ -518,7 +518,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Impact drills require landing control and strength baselines to manage injury risk.",
+    "explanation": "Plyometrics load joints with high landing forces, so clients should first show adequate lower-body strength and controlled landings: soft knees, hips back, knees tracking over toes. Start with low-intensity jumps and low volume, then progress height and complexity.",
     "distractorExplanations": {
       "a": "Aerobic base does not show the strength and landing control that impact drills need.",
       "b": "Fast squats show little about absorbing landing forces.",
@@ -535,15 +535,15 @@
     "options": [
       {
         "id": "a",
-        "text": "About 30–60 seconds between sets"
+        "text": "About 15–30 seconds between sets"
       },
       {
         "id": "b",
-        "text": "About 60–90 seconds between sets"
+        "text": "About 30–60 seconds between sets"
       },
       {
         "id": "c",
-        "text": "About 90–120 seconds between sets"
+        "text": "About 60–90 seconds between sets"
       },
       {
         "id": "d",
@@ -551,11 +551,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "High-load strength work needs longer rest than endurance circuits.",
+    "explanation": "Heavy strength sets near maximal load need long rest, about 2–3 minutes or more and 3–5 minutes for the heaviest sets, so phosphocreatine can resynthesize and each set keeps its load and technique. Rests of 30–90 seconds suit hypertrophy and muscular endurance.",
     "distractorExplanations": {
-      "a": "Short rest suits muscular endurance, not maximal strength.",
-      "b": "This rest range is typical of hypertrophy work.",
-      "c": "Two minutes may not fully restore phosphocreatine for heavy sets near maximum."
+      "a": "Rest this short suits circuit-style muscular endurance; phosphocreatine barely recovers in 30 seconds.",
+      "b": "Thirty to sixty seconds suits muscular endurance or hypertrophy, not near-maximal strength sets.",
+      "c": "Sixty to ninety seconds is typical of hypertrophy work and is too short to recover for heavy strength sets."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -584,7 +584,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Progress complexity and load after pattern competency.",
+    "explanation": "Squat progressions move from stable and simple to loaded and complex: a box or bodyweight squat teaches depth and the hip hinge, a goblet squat adds a front load that helps upright posture, and a barbell comes only once the pattern is consistent.",
     "distractorExplanations": {
       "b": "Starting with a loaded barbell skips pattern learning; progress from simpler to harder.",
       "c": "A pistol squat is an advanced single-leg skill and a poor second step.",
@@ -630,7 +630,7 @@
     "id": "acsm-cpt-readiness-check-programming-005",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "programming",
-    "prompt": "For a client with the goal of fat loss, resistance training is valuable because it",
+    "prompt": "For a client with the goal of fat loss, resistance training is valuable mainly because:",
     "options": [
       {
         "id": "a",
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Resistance training protects muscle during weight loss; nutrition and cardio still matter.",
+    "explanation": "In a calorie deficit the body loses lean mass as well as fat; resistance training signals muscles to keep that mass, which supports resting metabolism and function. Fat loss itself still comes from the overall energy deficit, and spot reduction does not occur.",
     "distractorExplanations": {
       "a": "Steady aerobic work usually burns more calories per session than typical lifting.",
       "b": "Spot reduction is a myth; fat loss happens across the whole body.",
@@ -683,7 +683,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Bracing with controlled breathing manages intra-abdominal pressure; Valsalva may be used carefully in advanced lifters without contraindications.",
+    "explanation": "For heavy lifts, clients brace the trunk, then exhale through the sticking point of the concentric phase and inhale during the eccentric. This keeps intra-abdominal pressure for spinal support without prolonged breath-holding, which spikes blood pressure.",
     "distractorExplanations": {
       "a": "Prolonged breath-holding spikes blood pressure and is risky for many clients.",
       "b": "Rapid shallow breathing prevents a stable brace.",
@@ -749,7 +749,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Deloads manage fatigue while maintaining some training stimulus.",
+    "explanation": "A deload is a planned short period, often a week, in which volume and/or intensity drop while the movement patterns stay. It lets accumulated fatigue dissipate so performance can rebound; it is neither a testing week nor full rest after an injury.",
     "distractorExplanations": {
       "a": "Maximal testing adds stress; a deload reduces it.",
       "c": "A deload keeps some training; it is not injury rest.",
@@ -782,7 +782,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Progress by reducing base of support, adding instability, vision challenges, and reactions.",
+    "explanation": "Balance work progresses by narrowing the base of support (two feet, tandem, then single leg), adding an unstable surface (floor, then foam), removing vision, and adding reactive tasks such as catching. Single-leg stance on foam while catching combines several of these demands.",
     "distractorExplanations": {
       "a": "Closing the eyes adds difficulty, but a two-foot base is still wide and stable.",
       "b": "A single leg on a firm surface lacks instability and reactive demands.",
@@ -848,7 +848,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Start with controlled anti-extension/anti-rotation stability before aggressive loaded trunk work.",
+    "explanation": "Beginner core training starts with low-load stability work such as bridges, dead bugs, and bird dogs, which teaches bracing and anti-extension or anti-rotation control. Loaded flexion, end-range rotation, and hanging work come later, once the client controls a neutral spine.",
     "distractorExplanations": {
       "a": "Loaded spinal flexion is harder on the spine and comes after basic stability.",
       "c": "End-range loaded rotation is an advanced, higher-risk movement.",
@@ -881,10 +881,10 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "SAQ drills improve acceleration, COD, and reactive ability alongside other programming.",
+    "explanation": "SAQ (speed, agility, quickness) drills such as ladder work, cone cuts, and reaction starts train acceleration, change of direction, and reaction time through neuromuscular coordination. They are short, high-quality efforts with full recovery, not a strength, hypertrophy, or aerobic method.",
     "distractorExplanations": {
       "a": "Heavy low-rep work builds maximal strength, not agility.",
-      "b": "Long steady work builds aerobic capacity.",
+      "b": "Long steady-state work builds aerobic capacity; SAQ drills are short, maximal-quality efforts.",
       "d": "Hypertrophy comes from resistance volume, not agility drills."
     },
     "difficulty": "easy",
@@ -914,7 +914,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Arms-fall-forward often involves tight lats/pecs and weak scapular retractors/depressors.",
+    "explanation": "When the arms fall forward in the overhead squat, tight latissimus dorsi and pectorals pull the arms down while weak middle/lower trapezius and rhomboids fail to hold the scapulae. Correctives lengthen the lats and chest, then strengthen the scapular retractors and depressors.",
     "distractorExplanations": {
       "a": "Calf work addresses heel lift or foot turn-out, not the arms.",
       "b": "More chest loading reinforces the tightness that pulls the arms forward.",
@@ -947,11 +947,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hypertrophy commonly uses mid-range reps with sufficient tension and volume.",
+    "explanation": "Hypertrophy programs commonly use about 6–12 reps per set at roughly 67–85% 1RM with moderate rest, building enough mechanical tension and volume to grow muscle. Fewer heavy reps emphasize maximal strength, many light reps emphasize endurance, and explosive low reps train power.",
     "distractorExplanations": {
       "b": "One to five heavy reps mainly builds maximal strength.",
       "c": "Very high reps with light loads target muscular endurance.",
-      "d": "Low-rep explosive work trains power."
+      "d": "Three to six explosive reps with light-to-moderate loads train power, not muscle size."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -980,7 +980,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Warm-ups prepare tissues and motor patterns; they should not create excessive fatigue.",
+    "explanation": "A dynamic warm-up of light aerobic work and movement-specific drills raises muscle temperature and heart rate, increases range of motion, and rehearses the patterns of the workout. Long static holds or fatiguing drills right before lifting can reduce force in the working sets.",
     "distractorExplanations": {
       "a": "Long static holds before lifting can briefly reduce force output.",
       "c": "Pre-fatiguing target muscles lowers force in the working sets; it is an advanced intensity technique, not a warm-up goal.",
@@ -1046,7 +1046,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Biceps brachii inserts primarily on the radial tuberosity and bicipital aponeurosis.",
+    "explanation": "The biceps brachii originates on the scapula (short head on the coracoid process, long head on the supraglenoid tubercle) and inserts on the radial tuberosity and bicipital aponeurosis. That insertion lets it flex the elbow and supinate the forearm.",
     "distractorExplanations": {
       "a": "The coracoid process is an origin of the short head of the biceps, not its insertion.",
       "b": "The lateral epicondyle is the origin of the wrist extensors.",
@@ -1112,7 +1112,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Gluteus maximus is the primary hip extensor; iliopsoas/rectus femoris flex the hip; tibialis anterior dorsiflexes.",
+    "explanation": "The gluteus maximus is the prime mover for hip extension, as in standing up from a squat, with the hamstrings as synergists. The iliopsoas and rectus femoris flex the hip, and the TFL assists hip flexion and abduction.",
     "distractorExplanations": {
       "a": "The iliopsoas is the primary hip flexor.",
       "c": "The rectus femoris flexes the hip and extends the knee.",
@@ -1145,11 +1145,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Sagittal = left/right; frontal = anterior/posterior; transverse = superior/inferior.",
+    "explanation": "The sagittal plane divides the body into left and right halves; flexion and extension happen in it. The frontal (coronal) plane divides front from back (abduction and adduction), and the transverse plane divides upper from lower (rotation).",
     "distractorExplanations": {
-      "a": "Frontal separates front and back.",
-      "b": "Transverse separates upper and lower.",
-      "d": "Scapular plane is a functional arm-elevation plane, not a cardinal body plane."
+      "a": "The frontal (coronal) plane divides the body into front and back; abduction and adduction happen in it.",
+      "b": "The transverse plane divides the body into upper and lower parts; rotation happens in it.",
+      "d": "The scapular plane is a functional arm-elevation plane about 30 degrees forward of the frontal plane, not a cardinal body plane."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1178,11 +1178,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tendons connect muscle to bone; ligaments connect bone to bone; bursae reduce friction.",
+    "explanation": "Tendons are dense connective tissue that attach muscle to bone and transmit muscle force to the skeleton. Ligaments connect bone to bone, articular cartilage covers joint surfaces, and bursae are fluid sacs that reduce friction.",
     "distractorExplanations": {
-      "a": "Ligaments connect bone to bone.",
-      "b": "Bursae are fluid sacs that reduce friction.",
-      "c": "Cartilage covers joint surfaces and cushions them."
+      "a": "Ligaments connect bone to bone and stabilize joints; they do not attach muscle.",
+      "b": "Bursae are fluid-filled sacs that cushion and reduce friction; they attach nothing.",
+      "c": "Articular cartilage covers bone ends and cushions joints; it does not attach muscle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1310,7 +1310,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Middle trapezius and rhomboids retract the scapula; serratus anterior protracts/upwardly rotates.",
+    "explanation": "Scapular retraction (pulling the shoulder blades together, as in a seated row) is produced by the rhomboids and middle trapezius. Serratus anterior and pectoralis minor protract the scapula, and upper trapezius and levator scapulae elevate it.",
     "distractorExplanations": {
       "a": "Serratus anterior and pectoralis minor protract the scapula.",
       "b": "Upper trapezius and levator scapulae elevate the scapula.",
@@ -1343,7 +1343,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "TrA is a local stabilizer that supports segmental control; global movers create larger trunk motions.",
+    "explanation": "The transverse abdominis is a deep local stabilizer: it wraps the trunk like a corset and raises intra-abdominal pressure to stiffen the lumbar spine before limb movement. Global muscles such as the rectus abdominis, obliques, and erector spinae create the larger trunk motions.",
     "distractorExplanations": {
       "b": "The rectus abdominis is the prime mover for trunk flexion.",
       "c": "The obliques are the prime movers for trunk rotation.",
@@ -1376,7 +1376,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Shoulder abduction/adduction occur in the frontal plane; flexion/extension are sagittal; rotation is transverse.",
+    "explanation": "At the shoulder, abduction and adduction (as in a lateral raise or lat pulldown) happen in the frontal plane. Flexion and extension are sagittal, and internal/external rotation is transverse. Pronation and supination happen at the forearm, not the shoulder.",
     "distractorExplanations": {
       "a": "Flexion/extension are sagittal-plane actions.",
       "c": "Rotation occurs primarily in the transverse plane.",
@@ -1409,7 +1409,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Force peaks near optimal sarcomere length; too short or too long reduces cross-bridge capacity.",
+    "explanation": "Length–tension relationship: force is highest near resting length, where actin and myosin overlap enough to form the most cross-bridges. When a muscle is fully shortened the filaments crowd each other, and when overstretched too few cross-bridges form, so force falls at both extremes.",
     "distractorExplanations": {
       "a": "When fully shortened, filaments overlap too much and force drops.",
       "b": "When overstretched, too few cross-bridges can form.",
@@ -1442,7 +1442,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Very short maximal efforts rely primarily on phosphagen stores; oxidative metabolism dominates longer work.",
+    "explanation": "Maximal efforts of about 10 seconds rely mainly on the ATP–PC (phosphagen) system, which regenerates ATP from stored creatine phosphate almost instantly. Fast glycolysis takes over from roughly 10–30 seconds to about 2 minutes, and oxidative metabolism dominates longer, submaximal work.",
     "distractorExplanations": {
       "a": "Aerobic metabolism is too slow to meet the demand of a maximal 10-second effort.",
       "b": "Fat oxidation is the slowest ATP pathway.",
@@ -1475,7 +1475,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Agonists produce the main action; antagonists oppose; synergists assist; stabilizers control unwanted motion.",
+    "explanation": "The agonist (prime mover) is the muscle chiefly responsible for a joint action, such as the biceps in an elbow curl. Synergists assist it, the antagonist (the triceps here) relaxes and lengthens to allow the action, and stabilizers hold nearby joints still.",
     "distractorExplanations": {
       "b": "The antagonist relaxes and lengthens to allow the action.",
       "c": "A muscle that assists the prime mover with the same action is a synergist, not the agonist itself.",
@@ -1508,7 +1508,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "MI uses empathy, evocative questions, and partnership rather than confrontation alone.",
+    "explanation": "Motivational interviewing is a collaborative, client-centered style that uses open questions, affirmations, reflections, and summaries to explore ambivalence and draw out the client's own reasons for change. Unrequested advice, pressure, or lecturing tends to increase resistance.",
     "distractorExplanations": {
       "b": "MI evokes the client's own reasons rather than leading with advice.",
       "c": "Consequences and pressure increase resistance; MI avoids them.",
@@ -1541,7 +1541,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Fluid deficits raise heart rate for a given workload and raise heat illness risk.",
+    "explanation": "Sweat losses reduce plasma volume, so stroke volume falls and heart rate climbs at the same workload (cardiovascular drift) while sweating and heat loss decline. Losing more than about 2% of body weight impairs endurance performance and raises heat-illness risk.",
     "distractorExplanations": {
       "a": "Dehydration reduces sweating capacity and raises core temperature.",
       "c": "Heart rate rises at a given workload when plasma volume falls (cardiovascular drift).",
@@ -1574,7 +1574,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Open questions invite reflection and problem-solving; closed questions limit dialogue.",
+    "explanation": "Open-ended questions begin with words like what, how, or tell me, and cannot be answered yes or no; they invite the client to explain barriers and possible solutions. Closed or either-or questions are useful for facts but limit the conversation.",
     "distractorExplanations": {
       "a": "This invites a yes or no answer, so it is closed.",
       "b": "This is a yes/no question even though it is polite.",
@@ -1607,7 +1607,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Diabetes MNT and medication management require licensed clinicians.",
+    "explanation": "Planning meals to treat diabetes is medical nutrition therapy, which belongs to registered dietitians and physicians, often alongside medication changes. A CPT may share general healthy-eating guidelines but refers disease-specific diets and glucose management.",
     "distractorExplanations": {
       "a": "Designing a disease-specific meal plan and reviewing glucose logs is medical nutrition therapy, outside CPT scope.",
       "b": "Setting targets for a diabetic client is clinical nutrition therapy.",
@@ -1640,7 +1640,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Sleep and periodization are foundational; modalities are adjuncts.",
+    "explanation": "Recovery rests on adequate sleep (7–9 hours for most adults), enough energy and protein, and planned progression with lighter days. Ice baths, massage, and stretching are optional extras; frequent cold immersion can even blunt strength and hypertrophy gains.",
     "distractorExplanations": {
       "b": "Frequent cold water immersion can blunt strength and hypertrophy gains.",
       "c": "This is far more rest than typical periodization requires.",
@@ -1673,7 +1673,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Risk management combines screening, documentation, competence, and referral.",
+    "explanation": "Trainers reduce negligence risk by screening and getting clearance where needed, documenting sessions, staying within scope and competence, keeping equipment safe, and referring when appropriate. Waivers and facility insurance do not replace that standard of care.",
     "distractorExplanations": {
       "a": "Thin notes weaken a trainer's defense; clear records reduce liability.",
       "c": "Facility insurance may not cover an independent trainer's negligence.",
@@ -1706,7 +1706,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Alcohol can displace nutrients, disrupt sleep, and add energy without supporting training adaptations.",
+    "explanation": "Alcohol provides 7 kcal per gram with little nutritional value, impairs sleep quality, reduces muscle protein synthesis after training, and promotes fluid loss. Occasional moderate intake is a lifestyle choice; regular excess undermines recovery and body-composition goals.",
     "distractorExplanations": {
       "a": "Alcohol reduces muscle protein synthesis after training.",
       "b": "Alcohol provides 7 kcal/g, and those calories can contribute to fat gain.",
@@ -1739,7 +1739,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CPTs educate with general guidelines; disease-specific MNT and diagnosis are for licensed clinicians.",
+    "explanation": "A CPT can share general, evidence-based guidance such as the Dietary Guidelines for Americans or MyPlate. Individualized plans to treat disease, such as high cholesterol, diabetes, or food allergies, are medical nutrition therapy for a registered dietitian or physician.",
     "distractorExplanations": {
       "b": "Planning meals to treat a disease is medical nutrition therapy.",
       "c": "Elimination diets for allergies need clinical supervision.",
@@ -1772,7 +1772,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Glycolysis uses carbohydrate (glucose/glycogen); fat is slower oxidative fuel; fiber is not a rapid ATP source.",
+    "explanation": "Glycolysis breaks down glucose and muscle glycogen, so carbohydrate is the fuel for high-intensity anaerobic work. Fat and ketones are oxidized aerobically, which is too slow for high-intensity efforts, and protein supplies only a small share of exercise energy.",
     "distractorExplanations": {
       "a": "Fat is oxidized aerobically and is too slow for glycolysis.",
       "c": "Protein contributes little energy during intense exercise.",
@@ -1789,11 +1789,11 @@
     "options": [
       {
         "id": "a",
-        "text": "About 0.5–0.8 g/kg/day, at or below the RDA"
+        "text": "About 0.5–0.6 g/kg/day, below the RDA"
       },
       {
         "id": "b",
-        "text": "About 3.0–4.0 g/kg/day for all active adults"
+        "text": "About 0.8 g/kg/day regardless of training load"
       },
       {
         "id": "c",
@@ -1801,15 +1801,15 @@
       },
       {
         "id": "d",
-        "text": "About 0.8 g/kg/day regardless of training load"
+        "text": "About 3.0–4.0 g/kg/day for all active adults"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Active individuals usually need more than sedentary RDAs; extreme values are unnecessary or unrealistic.",
+    "explanation": "Sport-nutrition position stands put protein needs for most regularly exercising adults at about 1.2–2.0 g/kg/day, depending on training type, goals, and energy intake. The RDA of 0.8 g/kg covers sedentary adults; intakes far above 2 g/kg add little for most clients.",
     "distractorExplanations": {
-      "a": "This is at or below the sedentary RDA and too low for most active adults.",
-      "b": "Intakes this high exceed what is needed for most exercisers.",
-      "d": "0.8 g/kg is the sedentary RDA; active adults usually need more."
+      "a": "This is below the 0.8 g/kg RDA, so it would not even meet sedentary needs, let alone training recovery.",
+      "b": "0.8 g/kg is the sedentary RDA; regularly exercising adults usually need more for repair and adaptation.",
+      "d": "Intakes this high exceed what most exercisers can use; benefits plateau around 1.6–2.0 g/kg."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1838,7 +1838,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Implementation intentions, tracking, and feedback support adherence.",
+    "explanation": "Goals turn into action through specific action plans (what, when, and where to train, also called implementation intentions) plus self-monitoring such as workout logs or step counts, with regular feedback. Distant outcome goals and end-only rewards give little day-to-day guidance.",
     "distractorExplanations": {
       "a": "Outcome goals without weekly actions give no clear next step.",
       "b": "Quotes may inspire briefly, but they are not a behavior-change technique.",
@@ -1871,7 +1871,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Privacy is an ethical/legal duty; limited exceptions exist for legal obligations and consent.",
+    "explanation": "Client information is confidential. A trainer shares it only with the client's consent, preferably written, or when the law requires it, such as a subpoena or mandated report. Physicians, family members, and managers do not get access just by asking.",
     "distractorExplanations": {
       "b": "Sharing with a physician still requires the client's consent.",
       "c": "Family members have no right to the client's information without consent.",
@@ -1904,7 +1904,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Supplement advice has legal/ethical limits; disease claims and invasive procedures are out of scope.",
+    "explanation": "Supplements are loosely regulated, and individualized advice on products or doses is outside CPT scope. A trainer can share general, evidence-based information and refer clinical questions to a physician or registered dietitian, avoiding sales conflicts of interest.",
     "distractorExplanations": {
       "a": "Third-party seals reduce contamination risk, but recommending specific products still stretches CPT scope of practice.",
       "c": "Selling products creates a conflict of interest and is not evidence-based guidance.",
@@ -1937,7 +1937,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "SMART structure improves clarity and accountability for client outcomes.",
+    "explanation": "SMART goals are Specific, Measurable, Attainable, Relevant, and Time-bound. Example: walk 30 minutes on 4 weekdays for the next 6 weeks, instead of get fitter. The structure makes progress trackable and gives clear review points.",
     "distractorExplanations": {
       "a": "These words are not the standard SMART acronym.",
       "b": "Meaningful, Active, Reviewed, and Targeted are not SMART terms.",
@@ -1970,7 +1970,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Professional practice requires honesty, consent, and legal compliance.",
+    "explanation": "Professional practice means written contracts and policies (cancellations, refunds, payment), transparent pricing, and honest marketing claims. Results guarantees, untypical before-and-after photos, and undisclosed variable pricing invite complaints and legal risk.",
     "distractorExplanations": {
       "a": "Results guarantees overpromise; outcomes depend on many factors outside the trainer's control.",
       "b": "Client photos need written consent and can mislead if results are not typical.",
@@ -2003,7 +2003,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Cardiovascular symptoms during daily activity are red flags that require medical clearance before exercise testing.",
+    "explanation": "Chest tightness on mild exertion such as one flight of stairs is a possible sign of myocardial ischemia. Under ACSM screening, signs or symptoms suggestive of cardiovascular disease call for medical clearance before any exercise testing or training, whatever the resting values.",
     "distractorExplanations": {
       "a": "A submaximal test still loads the heart of a client with possible cardiac symptoms.",
       "b": "Starting exercise before evaluation ignores a red-flag symptom.",
@@ -2036,7 +2036,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Brief quiet sitting stabilizes readings before using BP in risk stratification.",
+    "explanation": "About 5 minutes of seated quiet rest, feet flat and arm supported at heart level, lets short-term rises from walking in, caffeine, or anxiety settle. Readings taken without that rest overestimate resting BP; take two or more readings and average them.",
     "distractorExplanations": {
       "b": "Cuff temperature does not affect the reading.",
       "c": "Monitors do not need a calibration period between clients.",
@@ -2069,7 +2069,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Step tests use heart rate response after standardized stepping to estimate aerobic capacity.",
+    "explanation": "The YMCA 3-minute step test uses a 12-inch step at a metronome-set 96 beats per minute (24 steps a minute). The score is the heart rate counted for one minute right after stepping; a lower recovery heart rate means better aerobic fitness, judged against age and sex norms.",
     "distractorExplanations": {
       "a": "Cadence is fixed by a metronome; step count is not the score.",
       "c": "The fixed cadence makes this a submaximal aerobic test, not an anaerobic one.",
@@ -2102,7 +2102,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Informed consent clarifies scope, risks, and voluntary participation.",
+    "explanation": "Informed consent explains the planned activities, their expected benefits and risks, and the client's right to ask questions and to stop at any time. It documents voluntary, informed participation; it does not promise results and does not remove liability for negligence.",
     "distractorExplanations": {
       "a": "Credentials may be shared, but they are not the core of informed consent.",
       "b": "Consent documents do not remove liability for negligence.",
@@ -2135,7 +2135,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Central adiposity correlates with metabolic and cardiovascular risk beyond BMI alone.",
+    "explanation": "Waist circumference estimates abdominal (visceral) fat, which predicts type 2 diabetes, hypertension, and heart disease beyond BMI. ACSM treats roughly >102 cm (40 in) for men and >88 cm (35 in) for women as high-risk cutoffs.",
     "distractorExplanations": {
       "a": "Waist size does not assess bone density.",
       "b": "Waist circumference does not measure flexibility.",
@@ -2156,23 +2156,23 @@
       },
       {
         "id": "b",
-        "text": "Maximal lower-body power"
+        "text": "Upper-body maximal strength"
       },
       {
         "id": "c",
-        "text": "Static hamstring flexibility"
+        "text": "Upper-body muscular power"
       },
       {
         "id": "d",
-        "text": "Resting metabolic rate"
+        "text": "Trunk isometric endurance"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A cadence or to-fatigue push-up test estimates local muscular endurance of pressing musculature.",
+    "explanation": "Push-ups to fatigue (the ACSM push-up test stops at form failure) count how many submaximal reps the chest, shoulders, and triceps can repeat, which is local muscular endurance. Maximal strength needs a 1RM or predicted 1RM, and power needs a fast, explosive test.",
     "distractorExplanations": {
-      "b": "Power requires speed-loaded measures.",
-      "c": "Hamstrings are not the primary push-up limiter.",
-      "d": "RMR is not measured by push-ups."
+      "b": "Maximal strength is one all-out rep, measured by a 1RM or predicted 1RM; 24 submaximal reps measure endurance.",
+      "c": "Power needs fast, explosive output such as a medicine-ball throw; a paced push-up test does not measure speed.",
+      "d": "The trunk holds a plank during push-ups, but the test is scored on pressing reps; trunk endurance has its own plank test."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2201,7 +2201,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Multiple trials improve reliability; protocols specify how to select the final value.",
+    "explanation": "Skinfold protocols take at least two measurements per site, rotating through the sites, and average readings within 1–2 mm of each other; if they differ more, a third is taken. Rotating lets the tissue recover from compression and improves reliability.",
     "distractorExplanations": {
       "a": "A single reading is unreliable; protocols require repeat measurements.",
       "c": "Choosing the highest value biases the estimate upward.",
@@ -2267,7 +2267,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Sit-and-reach primarily reflects posterior chain flexibility at the hip and spine.",
+    "explanation": "The sit-and-reach test mainly reflects hamstring and low-back (lumbar) flexibility. A poor score suggests tight hamstrings or limited lumbar flexion; it does not assess the shoulders, hip flexors, or ankles, which have their own tests.",
     "distractorExplanations": {
       "a": "Shoulder mobility is assessed with tests such as the back scratch test.",
       "b": "Hip flexor length is checked with the Thomas test.",
@@ -2300,7 +2300,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Comfortable conversation without singing approximates moderate intensity; only a few words indicates vigorous work.",
+    "explanation": "The talk test is a simple intensity check: at moderate intensity a client can talk in full sentences but not sing; vigorous intensity allows only a few words between breaths. It is handy for clients on beta-blockers or when heart-rate monitoring is impractical.",
     "distractorExplanations": {
       "b": "Being able to sing suggests light intensity.",
       "c": "Only a few words at a time suggests vigorous intensity.",
@@ -2317,7 +2317,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Wrist ulnar deviation"
+        "text": "Ankle plantar flexion"
       },
       {
         "id": "b",
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Cervical rotation"
+        "text": "Hip internal rotation"
       },
       {
         "id": "d",
-        "text": "Eye convergence"
+        "text": "Thoracic extension"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Heel lift often compensates for restricted ankle dorsiflexion when squatting to depth.",
+    "explanation": "Heels rising during a squat usually signal limited ankle dorsiflexion: the shins cannot travel forward over the feet, so the client shifts onto the toes to reach depth. Tight gastrocnemius and soleus are the usual cause; calf mobility work is the standard corrective.",
     "distractorExplanations": {
-      "a": "Wrist motion does not drive heel rise.",
-      "c": "Neck rotation is unrelated.",
-      "d": "Vision convergence is not the primary limiter."
+      "a": "Plantar flexion is the motion the heels-up compensation uses; the restriction is in the opposite direction, dorsiflexion.",
+      "c": "Limited hip rotation tends to turn the feet out or shift the hips sideways, not lift the heels.",
+      "d": "Limited thoracic extension shows up as the arms falling forward or the trunk rounding, not as heel rise."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2366,7 +2366,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Uncontrolled hypertension plus syncope warrants physician evaluation before maximal testing.",
+    "explanation": "Uncontrolled hypertension plus syncope (fainting) are warning signs that need medical evaluation before any maximal exertion. Controlled hypertension, a healed joint replacement, or well-controlled diabetes allow testing and training with sensible monitoring and modifications.",
     "distractorExplanations": {
       "a": "Controlled hypertension usually allows training with monitoring.",
       "b": "A healed joint replacement may limit impact but is not a cardiac red flag.",
@@ -2379,31 +2379,31 @@
     "id": "acsm-cpt-readiness-check-assessment-028",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "assessment",
-    "prompt": "Bioelectrical impedance analysis for body composition is least reliable immediately after:",
+    "prompt": "Bioelectrical impedance analysis (BIA) gives the least reliable body-fat estimate when the test is done shortly after:",
     "options": [
       {
         "id": "a",
-        "text": "8 hours of sleep in a euhydrated state"
+        "text": "An overnight fast with normal fluid intake"
       },
       {
         "id": "b",
-        "text": "Standardized morning voiding with stable hydration"
+        "text": "Emptying the bladder about 30 minutes earlier"
       },
       {
         "id": "c",
-        "text": "Quiet sitting for five minutes"
+        "text": "Lying supine quietly for 5–10 minutes"
       },
       {
         "id": "d",
-        "text": "Vigorous exercise or large acute fluid shifts"
+        "text": "A hard workout or drinking a lot of fluid"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Fluid and electrolyte shifts from sweat or exercise distort BIA resistance readings.",
+    "explanation": "BIA estimates body water from electrical resistance and converts it to fat-free mass, so anything that shifts body fluid distorts it. Testing right after vigorous exercise, heavy sweating, a large drink, or alcohol is unreliable; protocols call for normal hydration, no recent exercise, and an empty bladder.",
     "distractorExplanations": {
-      "a": "Overnight rest supports stable hydration.",
-      "b": "Morning voiding is part of standard protocol.",
-      "c": "Quiet sitting stabilizes vitals, not BIA error from sweat."
+      "a": "An overnight fast with normal hydration is the standard pre-test condition; it improves BIA reliability.",
+      "b": "Voiding about 30 minutes before testing is part of the standard BIA protocol, not a source of error.",
+      "c": "A few minutes of supine rest lets body fluids redistribute and is a normal protocol step before BIA."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -2432,7 +2432,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Karvonen uses HRR: (HRmax − HRrest) × intensity + HRrest.",
+    "explanation": "Karvonen (heart rate reserve) method: target HR = [(HRmax − HRrest) × % intensity] + HRrest. It needs resting HR, maximal HR (measured or age-predicted), and the chosen intensity. Example: HRmax 180, HRrest 60, 60% gives (120 × 0.6) + 60 = 132 bpm.",
     "distractorExplanations": {
       "b": "Body weight is not part of the HRR formula.",
       "c": "Blood pressure is not used in the Karvonen formula.",
@@ -2498,7 +2498,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Older deconditioned clients need technique, moderate loads, and higher initial rep ranges.",
+    "explanation": "ACSM suggests older or deconditioned beginners start at light intensity (about 40–50% 1RM) for 10–15 repetitions, emphasizing control and technique. Load rises gradually as tolerance builds; free weights and machines both work, and weight loss is not a prerequisite.",
     "distractorExplanations": {
       "a": "Six to eight reps is heavier than a deconditioned older adult needs at first.",
       "b": "Machines help, but restricting to machines for months is unnecessary.",
@@ -2531,7 +2531,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Adults benefit from ≥150 min/wk moderate aerobic activity or vigorous equivalents.",
+    "explanation": "ACSM and the US Physical Activity Guidelines recommend at least 150 minutes a week of moderate aerobic activity, or 75 minutes of vigorous activity, or an equivalent mix. Moving toward 300 minutes of moderate activity brings additional health benefits.",
     "distractorExplanations": {
       "b": "75 minutes is the vigorous-intensity equivalent, not the moderate target.",
       "c": "300 minutes is the upper moderate range for added benefit, not the vigorous minimum.",
@@ -2564,7 +2564,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Spotting means hands near the bar, watching path, and assisting only as needed.",
+    "explanation": "A bench spotter stands at the head of the bench with hands close to the bar, watches the bar path, and helps only if the bar stalls or the lifter asks. Lifter and spotter agree on the number of reps and the signal before the set starts.",
     "distractorExplanations": {
       "a": "Spotting at the elbows gives no control of the bar.",
       "c": "Touching the bar on every rep changes the lift and hides true effort.",
@@ -2597,7 +2597,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Endurance adaptations use sustained submaximal repetitions and limited rest.",
+    "explanation": "Muscular endurance training uses light loads (about 50% 1RM or less) for 15–20 or more repetitions with short rest, so muscles learn to resist fatigue. Heavy loads with long rest build maximal strength; moderate loads taken near failure mainly build hypertrophy.",
     "distractorExplanations": {
       "a": "Heavy low-rep work with long rest builds maximal strength.",
       "b": "Moderate reps to failure mainly target hypertrophy.",
@@ -2630,7 +2630,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Supported split squats reduce balance demand while preserving lunge pattern learning.",
+    "explanation": "To regress a lunge for a client with poor balance, keep the feet stationary and add a stable support: a split squat holding a rail or bench keeps the lunge pattern while reducing balance demand. Walking, lateral, overhead, or unstable-surface versions are progressions.",
     "distractorExplanations": {
       "a": "Walking lunges add forward motion, which increases balance demand.",
       "b": "An unstable pad makes balance harder, not easier.",
@@ -2663,7 +2663,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Beginners typically start with 3 moderate sessions weekly and progress safely.",
+    "explanation": "For beginners, ACSM suggests starting aerobic training about 3 days a week at light-to-moderate intensity and progressing toward 3–5 days. Starting near daily invites overuse, while once a week or less is too little stimulus for meaningful adaptation.",
     "distractorExplanations": {
       "b": "Daily sessions from week one progress too quickly for a beginner.",
       "c": "One day a week is too little to produce meaningful adaptation.",
@@ -2696,7 +2696,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Controlled hypertension allows training with breathing cues and moderate loading.",
+    "explanation": "Clients with controlled hypertension can resistance-train with moderate loads and higher repetitions. Cue continuous breathing (exhale on exertion), because breath-holding and very heavy, low-rep sets cause large acute blood-pressure spikes.",
     "distractorExplanations": {
       "a": "Heavy low-rep sets encourage breath-holding and BP spikes.",
       "c": "Upper-body work is appropriate with sensible load and breathing.",
@@ -2729,7 +2729,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Novices need conservative intervals, adequate recovery, and preparation.",
+    "explanation": "Sedentary clients start intervals with short, moderate work bouts and longer recovery, for example a 1:2 or 1:3 work-to-rest ratio, alongside steady aerobic work. Work share and intensity rise gradually; all-out efforts and 1:1 ratios come later.",
     "distractorExplanations": {
       "a": "Equal work and rest is too demanding for most sedentary clients at first.",
       "b": "All-out efforts are inappropriate for a sedentary beginner.",
@@ -2762,7 +2762,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tempo runs improve the pace that can be sustained near threshold.",
+    "explanation": "Tempo runs at a comfortably hard pace held for about 20 minutes train near the lactate threshold, raising the pace a runner can sustain before lactate accumulates. That directly supports a faster 5K; VO2max repeats, hill sprints, and easy long runs train other qualities.",
     "distractorExplanations": {
       "a": "Short all-out repeats target VO2max and anaerobic capacity, not threshold.",
       "b": "Hill sprints build power and economy; tempo runs build threshold.",
@@ -2795,7 +2795,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Periodization shifts rep ranges and load to emphasize strength after hypertrophy.",
+    "explanation": "Linear periodization typically moves from hypertrophy (about 6–12 reps, moderate rest) to strength (about 1–6 reps at heavier loads, 2–5 minutes rest). Lowering reps while raising load shifts the emphasis from muscle size to maximal force production.",
     "distractorExplanations": {
       "b": "Higher reps with lighter loads shift toward endurance.",
       "c": "More sets at the same reps adds volume, not a strength emphasis.",
@@ -2828,7 +2828,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Low-impact cardio and controlled resistance can maintain function in OA when monitored.",
+    "explanation": "For knee osteoarthritis, ACSM favors low-impact aerobic work such as cycling, swimming, or walking plus resistance training, keeping pain mild and short-lived. Exercise reduces pain and improves function; prolonged rest leads to deconditioning and stiffness.",
     "distractorExplanations": {
       "a": "Deep loaded squats can aggravate an arthritic knee, and loading does not rebuild cartilage.",
       "c": "Running is still high impact, even on soft surfaces.",
@@ -2861,7 +2861,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Light activity promotes recovery without repeating maximal neuromuscular stress.",
+    "explanation": "Active recovery uses light, low-effort movement such as walking, easy cycling, or mobility drills to promote blood flow and reduce stiffness without adding training stress. Another heavy session or more squats extends fatigue; full inactivity is unnecessary after a normal hard workout.",
     "distractorExplanations": {
       "a": "A heavy session is not recovery, even for different muscles.",
       "b": "Complete inactivity is not needed after a normal hard session.",
@@ -2894,7 +2894,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hip hinge patterns distribute load to hips and hamstrings rather than rounding the lumbar spine.",
+    "explanation": "Teaching the hip hinge first trains the client to push the hips back with a neutral spine, so the hips and hamstrings take the load. Without that pattern, beginners tend to round the lower back under the bar, which increases lumbar flexion and injury risk.",
     "distractorExplanations": {
       "a": "Grip is trained separately; the hinge does not affect grip.",
       "b": "Some knee flexion is part of a correct conventional setup.",
@@ -2927,7 +2927,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hiking demands endurance, leg strength, and managed fatigue across sessions.",
+    "explanation": "Multi-day hiking needs leg strength and muscular endurance for climbs and descents, an aerobic base for long hours on the trail, and planned recovery days so fatigue does not build up before the trip. Training should mirror those demands (specificity).",
     "distractorExplanations": {
       "b": "Upper-body strength and sprints do not match hiking demands.",
       "c": "Hiking needs endurance as well as strength.",
@@ -2960,7 +2960,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "DOMS is common after novel eccentric stress; modify load and refer if pain is joint-level or persistent.",
+    "explanation": "Delayed-onset soreness peaks 24–72 hours after unaccustomed eccentric work and is expected. The trainer reduces volume and intensity, uses light activity, and lets the muscles recover; persistent, joint-level, or sharp pain is referred rather than diagnosed.",
     "distractorExplanations": {
       "a": "Repeating the same eccentric load on sore muscles delays recovery.",
       "c": "Heavy loading of sore muscles is not recovery.",
@@ -2993,7 +2993,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Concentric actions shorten the muscle while it develops force.",
+    "explanation": "In a concentric action the muscle shortens while producing tension because its force exceeds the load, as the biceps does when the dumbbell rises. Eccentric actions lengthen under tension (lowering), and isometric actions produce tension with no change in length.",
     "distractorExplanations": {
       "a": "Lengthening under tension is an eccentric action.",
       "b": "Constant length under tension is isometric.",
@@ -3026,7 +3026,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Lowering lengthens the pecs under load (eccentric) as the arms move away from the midline.",
+    "explanation": "During the lowering phase of a push-up, the pectoralis major lengthens under tension to control the descent, which is an eccentric action. It works with the triceps and anterior deltoid, then shortens concentrically to push the body back up.",
     "distractorExplanations": {
       "b": "Concentric means shortening, which happens while pushing up.",
       "c": "The pecs work through the whole descent, not only at the bottom.",
@@ -3059,7 +3059,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Specific Adaptations to Imposed Demands: the body adapts to the stress applied.",
+    "explanation": "SAID (Specific Adaptation to Imposed Demands) means the body adapts to the exact type of stress applied: heavy lifting builds strength, long runs build aerobic endurance, balance work builds balance. Programs should therefore match the client's goal and activity.",
     "distractorExplanations": {
       "a": "Adaptation slows as clients get fitter; this is not SAID.",
       "c": "Losing gains after stopping is the reversibility principle.",
@@ -3088,15 +3088,15 @@
       },
       {
         "id": "d",
-        "text": "No defined plane"
+        "text": "Scapular plane"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Shoulder abduction/adduction in the frontal plane lifts the arm to the side.",
+    "explanation": "A lateral raise lifts the arm out to the side (shoulder abduction), which happens in the frontal plane. Front raises are sagittal (flexion), reverse flys are transverse (horizontal abduction), and scaption raises the arm about 30 degrees forward of the frontal plane.",
     "distractorExplanations": {
-      "a": "Flexion/extension is sagittal.",
-      "b": "Rotation is transverse.",
-      "d": "All human motion occurs in planes."
+      "a": "Sagittal-plane shoulder motion is flexion and extension, as in a front raise, not a lateral raise.",
+      "b": "Transverse-plane shoulder motion is rotation or horizontal abduction, as in a reverse fly.",
+      "d": "Raising the arm about 30 degrees forward of the side is scaption (scapular plane); a true lateral raise is straight out to the side."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3105,11 +3105,11 @@
     "id": "acsm-cpt-readiness-check-science-020",
     "examSlug": "acsm-cpt-readiness-check",
     "topicId": "science",
-    "prompt": "A maximal 6-second sprint relies predominantly on:",
+    "prompt": "Dana, a recreational runner, jogs steadily for 30 minutes at a pace where she can still hold a conversation. Which energy system supplies most of her ATP?",
     "options": [
       {
         "id": "a",
-        "text": "Aerobic metabolism of carbohydrate"
+        "text": "The ATP–PC (phosphagen) system"
       },
       {
         "id": "b",
@@ -3117,21 +3117,21 @@
       },
       {
         "id": "c",
-        "text": "Oxidation of fatty acids"
+        "text": "Amino acid oxidation from muscle protein"
       },
       {
         "id": "d",
-        "text": "The ATP–PC (phosphagen) system"
+        "text": "The oxidative (aerobic) system"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Very short maximal efforts use stored phosphagen before glycolysis dominates.",
+    "explanation": "Steady submaximal work lasting more than a few minutes is fueled mainly by the oxidative system, which burns carbohydrate and fat in the mitochondria. At conversational pace oxygen supply meets demand, so lactate stays near resting levels and the jog can continue for a long time.",
     "distractorExplanations": {
-      "a": "Aerobic metabolism is too slow for a 6-second maximal sprint.",
-      "b": "Glycolysis grows after several seconds but does not dominate a 6-second sprint.",
-      "c": "Fat oxidation is the slowest energy pathway."
+      "a": "Phosphagen stores cover only about the first 10 seconds of hard work; they cannot fuel a 30-minute jog.",
+      "b": "Anaerobic glycolysis dominates hard efforts of roughly 30 seconds to 2 minutes; at conversational pace lactate barely rises.",
+      "c": "Protein usually supplies only about 5–10% of energy in prolonged exercise, rising mainly when glycogen runs low."
     },
-    "difficulty": "easy",
+    "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
   },
   {
@@ -3146,23 +3146,23 @@
       },
       {
         "id": "b",
-        "text": "Pure oxidative phosphorylation"
+        "text": "ATP–PC (phosphagen) system"
       },
       {
         "id": "c",
-        "text": "Fat oxidation at maximal pace"
+        "text": "Aerobic oxidation of carbohydrate"
       },
       {
         "id": "d",
-        "text": "Protein deamination"
+        "text": "Aerobic oxidation of fatty acids"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "400 m efforts rely heavily on fast glycolysis with rising aerobic contribution.",
+    "explanation": "An all-out 400 m lasts roughly 45–70 seconds, the range in which anaerobic glycolysis supplies most of the ATP, producing lactate and the familiar burn. The phosphagen system covers only the first seconds, and aerobic metabolism rises during the lap but is too slow to dominate.",
     "distractorExplanations": {
-      "b": "Max pace cannot be sustained by fat alone.",
-      "c": "Fat oxidation is too slow for 400 m max effort.",
-      "d": "Protein is not the main fuel here."
+      "b": "Phosphagen stores last about 10 seconds of maximal work; an all-out 400 m takes roughly 45–70 seconds.",
+      "c": "Aerobic carbohydrate use rises during the lap but cannot supply ATP fast enough to dominate at all-out pace.",
+      "d": "Fat oxidation is the slowest ATP pathway and contributes little at maximal intensity."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality)."
@@ -3191,7 +3191,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The Frank-Starling mechanism and contractility raise stroke volume during exercise.",
+    "explanation": "Stroke volume rises during upright exercise because the muscle pump and venoconstriction increase venous return (Frank-Starling: more filling, stronger contraction) and sympathetic drive increases contractility. Falling resistance in working muscle also eases ejection.",
     "distractorExplanations": {
       "a": "Heart rate rises during exercise, so filling time shortens.",
       "c": "Sweat loss reduces blood volume and tends to lower stroke volume.",
@@ -3224,7 +3224,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Type IIx fibers produce high power but fatigue quickly.",
+    "explanation": "Type IIx (fast glycolytic) fibers contract fastest and produce the most force and power but have few mitochondria, so they fatigue quickly. They are recruited last, in heavy or explosive efforts. Type I fibers are slow and oxidative; Type IIa fibers sit in between.",
     "distractorExplanations": {
       "a": "Slow, oxidative fibers are Type I.",
       "b": "Mixed oxidative-glycolytic fibers are Type IIa.",
@@ -3257,7 +3257,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Working muscle vasodilates while flow is shunted from less active tissues.",
+    "explanation": "During exercise, local metabolites dilate arterioles in working muscle while sympathetic vasoconstriction diverts blood away from the gut and kidneys. Together with a higher cardiac output, this raises muscle blood flow from about 15–20% of cardiac output at rest to as much as 80–85% in hard exercise.",
     "distractorExplanations": {
       "a": "Heart rate helps, but local vessel changes are key to redirecting flow.",
       "b": "Working muscle vessels dilate; constriction would reduce flow.",
@@ -3290,7 +3290,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Eccentric emphasis causes microdamage that peaks soreness around 24–72 hours.",
+    "explanation": "DOMS after unaccustomed eccentric work such as downhill running comes from muscle microdamage and the inflammation that follows, peaking about 24–72 hours later. Lactate is cleared within about an hour after exercise and does not cause next-day soreness.",
     "distractorExplanations": {
       "b": "Lactate clears within about an hour and does not cause soreness days later.",
       "c": "Dehydration does not explain soreness peaking 24–72 hours later.",
@@ -3323,7 +3323,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Valsalva increases IAP and can spike BP; use caution with hypertensive clients.",
+    "explanation": "Holding the breath against a closed glottis (Valsalva) raises intrathoracic and intra-abdominal pressure. That stiffens the trunk but also sharply raises blood pressure, which can then drop when the breath is released, so hypertensive and cardiac clients should avoid it.",
     "distractorExplanations": {
       "a": "Blood pressure rises during the strain; it can drop after release.",
       "c": "Breath-holding increases trunk stiffness and spinal stability.",
@@ -3356,7 +3356,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Beta-blockers limit HR elevation; RPE and workload may track intensity better.",
+    "explanation": "Beta-blockers lower resting and exercise heart rate and blunt the heart-rate response, so age-predicted HR zones are unreliable. Use RPE, the talk test, or a heart-rate range measured during a test taken on the medication.",
     "distractorExplanations": {
       "a": "Beta-blockers lower, not raise, maximal and exercise heart rate.",
       "b": "Beta-blockers usually lower blood pressure.",
@@ -3389,7 +3389,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Non-functional overreaching progresses to performance loss and systemic symptoms.",
+    "explanation": "Overtraining syndrome follows prolonged training stress with too little recovery: performance falls for weeks despite rest, with persistent fatigue, disturbed sleep, mood changes, and frequent illness. Short-term soreness, plateaus, and higher appetite are normal training responses.",
     "distractorExplanations": {
       "a": "Gains followed by a plateau are normal training responses.",
       "b": "Short-term DOMS is normal after new or hard sessions.",
@@ -3422,7 +3422,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A rapid eccentric phase followed by concentric action improves power via elastic and neural mechanisms.",
+    "explanation": "The stretch-shortening cycle is a rapid eccentric pre-stretch followed immediately by a concentric action, as in a countermovement jump. Elastic energy stored in muscle and tendon plus the stretch reflex add force, but only if the transition (amortization phase) is short.",
     "distractorExplanations": {
       "b": "A long pause lets stored elastic energy dissipate.",
       "c": "The cycle depends on a fast eccentric phase, not a slow one.",
@@ -3455,7 +3455,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "EPOC repays oxygen debt and supports recovery processes after hard work.",
+    "explanation": "EPOC (excess post-exercise oxygen consumption) is the raised oxygen uptake after exercise, used to restore phosphocreatine, clear lactate, cool the body, and bring heart rate and breathing back to rest. It is larger and lasts longer after intense than after easy exercise.",
     "distractorExplanations": {
       "a": "The oxygen deficit occurs at the start of exercise, not afterward.",
       "c": "Ventilatory threshold is an intensity marker during exercise.",
@@ -3488,7 +3488,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "MI explores ambivalence collaboratively before prescribing action steps.",
+    "explanation": "In MI the first move is to reflect the client's ambivalence (you want to train, and time feels like the barrier) and ask what small change might fit. Offering solutions, risk lectures, or a ready-made program before that exploration tends to trigger resistance.",
     "distractorExplanations": {
       "a": "Offering solutions first skips exploring the client's ambivalence.",
       "b": "Leading with risks can increase resistance in MI.",
@@ -3521,7 +3521,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clear business boundaries protect scope, time, and confidentiality.",
+    "explanation": "When a former client keeps asking for free programming, the trainer restates the agreement politely and offers paid options. Clear, consistent boundaries protect the business relationship; free ad hoc work, silence, or review-for-discount deals create ethical and practical problems.",
     "distractorExplanations": {
       "b": "Ad hoc free work blurs boundaries and sets expectations.",
       "c": "Ignoring the client is unprofessional; boundaries should be stated clearly.",
@@ -3554,7 +3554,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "SMART goals specify behavior, measure, timeline, and realistic scope.",
+    "explanation": "A SMART goal names a specific behavior (swap one 20-oz soda for water), a measurable amount (one per weekday), an attainable step, and a time frame (4 weeks). Vague goals such as drink less or as much as possible cannot be tracked or reviewed.",
     "distractorExplanations": {
       "a": "This lacks a measurable amount and a clear timeline.",
       "c": "An abrupt all-or-nothing quit is rarely attainable as a first step and sets no time frame for review.",
@@ -3620,7 +3620,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Mandatory reporting laws may require disclosure to protective services.",
+    "explanation": "Trainers who work with minors may be mandated reporters under state law or employer policy. Reasonable suspicion, not proof, triggers a report to child protective services or police; confronting the parents or waiting for more evidence can put the child at greater risk.",
     "distractorExplanations": {
       "a": "Confronting parents can put the child at further risk.",
       "b": "Reporting laws require acting on reasonable suspicion, not proof.",
@@ -3653,7 +3653,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Disordered eating signs warrant referral; CPTs do not provide eating-disorder treatment.",
+    "explanation": "Stress-linked binge eating may signal disordered eating. The CPT listens without judgment, does not diagnose or prescribe diets, and refers to a physician, registered dietitian, or mental health professional. Compensatory restriction or extra exercise can worsen the cycle.",
     "distractorExplanations": {
       "b": "Meal plans for disordered eating need an RD or clinician.",
       "c": "Compensatory restriction can reinforce the binge cycle.",
@@ -3686,7 +3686,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pre-hydration and ongoing replacement support performance and thermoregulation.",
+    "explanation": "For long sessions in heat, clients should start well hydrated (about 5–7 mL/kg roughly 4 hours before) and replace sweat losses during exercise, keeping body-mass loss under about 2%. Thirst alone can lag behind fluid needs in hot conditions.",
     "distractorExplanations": {
       "a": "Thirst can lag behind fluid needs during long sessions in heat.",
       "c": "A large bolus just before exercise is poorly absorbed and uncomfortable.",
@@ -3719,7 +3719,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Restrictive meal plans for ED history require specialized interdisciplinary care.",
+    "explanation": "A history of disordered eating makes restrictive dieting a clinical risk. The trainer declines to prescribe aggressive deficits and refers to a registered dietitian or therapist who specializes in eating disorders, while keeping training supportive and within scope.",
     "distractorExplanations": {
       "a": "Any prescribed deficit is risky with an eating disorder history and outside scope.",
       "b": "Physician sign-off does not bring clinical diet design into CPT scope.",
@@ -3752,7 +3752,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Mastery experiences and tracking reinforce belief in capability.",
+    "explanation": "Self-efficacy grows mostly from mastery experiences, so new exercisers need achievable short-term goals and self-monitoring that let them see success. Encouragement and watching similar peers succeed also help; comparison with advanced clients can undermine it.",
     "distractorExplanations": {
       "a": "Rare reviews give few chances for mastery experiences.",
       "b": "Comparison with advanced exercisers can lower self-efficacy.",
@@ -3785,7 +3785,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Documentation supports continuity, safety, and professional standards.",
+    "explanation": "Session notes should record the exercises, loads, sets and reps, the client's responses (RPE, symptoms), and any adverse events. Good records support safe progression, continuity between trainers, and a defense if the trainer's care is ever questioned.",
     "distractorExplanations": {
       "b": "Full medical records are not routine session notes.",
       "c": "Attendance and billing leave out safety and progression details.",
@@ -3818,7 +3818,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Impairment creates safety and liability risks; training should not proceed.",
+    "explanation": "A client visibly impaired by alcohol cannot exercise safely: balance, judgment, and heart rhythm are affected, and the trainer would carry the liability. Postpone the session, make sure the client gets home safely, and document the incident.",
     "distractorExplanations": {
       "a": "Training an impaired client at any intensity is unsafe.",
       "c": "Machines do not remove the risks of impairment.",
@@ -3851,7 +3851,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Effective coaching adapts communication and plans to client context.",
+    "explanation": "Cultural competence means learning about each client's values, beliefs, and practices (dress, diet, gender preferences, holidays) and adapting communication and programs to fit them. Ignoring culture and assigning goals by stereotype both fail the client.",
     "distractorExplanations": {
       "a": "One template ignores differences in values and needs.",
       "b": "Avoiding the topic can miss needs such as dress or dietary practices.",
@@ -3884,7 +3884,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Preparation sits between contemplation and action with near-term intent.",
+    "explanation": "In the transtheoretical (stages of change) model, preparation means the client intends to act within the next month and is taking small steps, such as joining a gym. Contemplation is intent within 6 months, action is regular exercise for under 6 months, and maintenance is 6 months or more.",
     "distractorExplanations": {
       "a": "Thinking about change within six months is contemplation.",
       "b": "Six or more months of regular exercise is maintenance.",
@@ -3917,7 +3917,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Professional responses protect confidentiality while correcting clear errors when appropriate.",
+    "explanation": "A professional reply to an inaccurate review is brief, calm, and factual, offers to talk offline, and never reveals client information, which would breach confidentiality. Posting records, detailed rebuttals, or soliciting reviews to bury it make things worse.",
     "distractorExplanations": {
       "b": "Sharing client records breaches confidentiality.",
       "c": "Soliciting reviews to bury criticism is deceptive.",
@@ -3950,7 +3950,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Support networks reinforce consistency and positive identity around activity.",
+    "explanation": "Social support from family, friends, group classes, or a trainer improves adherence by adding accountability, encouragement, and a sense that exercise is normal for people like me. It complements goal setting and professional guidance rather than replacing them.",
     "distractorExplanations": {
       "a": "Support works alongside goals and monitoring, not instead of them.",
       "c": "Ranking can discourage beginners; it is not the main support mechanism.",

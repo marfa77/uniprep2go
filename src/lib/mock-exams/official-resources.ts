@@ -570,6 +570,13 @@ const BODY_RESOURCES: Array<{ match: RegExp | string; resource: BodyResource }> 
     },
   },
   {
+    match: /484\.80|home health agency/i,
+    resource: {
+      certifier: "Home health agency / training program (42 CFR 484.80)",
+      verifyAtUrl: "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-G/part-484/subpart-B/section-484.80",
+    },
+  },
+  {
     match: /nurse aide|NNAAP|Credentia|HHA|medication aide/i,
     resource: {
       certifier: "State nurse aide registry / Credentia NNAAP",

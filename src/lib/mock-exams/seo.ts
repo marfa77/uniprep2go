@@ -52,7 +52,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
     return {
       title: `Free ${practiceName} 2026 | Coming Soon`,
       description: niche
-        ? `${practiceName} coming soon on UniPrep2Go: planned ${config.questionCount}-question timed diagnostic (${config.durationMinutes} min, ${config.passRule.passPercent}% target) with topic scoring. Notify when it launches. ${niche.administeredBy}. Independent prep — not official exam material.`
+        ? `${practiceName} coming soon on UniPrep2Go: planned ${config.questionCount}-question timed diagnostic (${config.durationMinutes} min, ${config.passRule.passPercent}% target) with topic scoring. Notify when it launches. ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
         : `${config.shortTitle} free practice test coming soon: planned ${config.questionCount} timed questions, notify when live. Independent prep — not official exam material.`,
       keywords: [
         ...(niche?.keywords ?? []),
@@ -81,7 +81,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
   return {
     title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
     description: niche
-      ? `${practiceName}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review — first mock free, no signup. ${niche.administeredBy}. Independent prep — not official exam material.`
+      ? `${practiceName}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review — first mock free, no signup. ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
       : `Online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report — first mock free, no signup. Independent prep — not official exam material.`,
     keywords: [
       ...(niche?.keywords ?? []),
@@ -683,6 +683,25 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "CNAs completing medication-aide training for long-term care — not LPNs/RNs and not CNA-only candidates.",
     practiceTestLabel: "Medication Aide practice test",
   },
+  "home-health-aide-readiness-check": {
+    title: "Free Home Health Aide Practice Test 2026 | 60Q Timed HHA Mock",
+    description:
+      "Free HHA practice test — no signup: 60 timed questions (75 min) from a 120-item bank, scored by topic, with a teaching note on every wrong answer. Written to the 42 CFR 484.80 competency subjects. Independent — not a state or agency exam.",
+    keywords: [
+      "home health aide practice test",
+      "hha practice test free",
+      "hha competency test",
+      "home health aide exam questions",
+      "hha exam 42 cfr 484.80",
+      "home health aide anki",
+    ],
+    headline: "Free Home Health Aide (HHA) Practice Test — 60 Questions",
+    intro:
+      "A timed 60-question / 75-minute HHA diagnostic — 15 questions each on personal care, home safety and infection control, observation and reporting, and ethics, drawn from a 120-item bank so retakes differ. Questions follow the subjects a registered nurse must evaluate under 42 CFR 484.80 (75-hour training, at least 16 hours supervised practical). There is no national question count or pass score; your agency or training program sets them, and the hands-on skills are checked in person. Planned Home Health Aide Anki deck on the waitlist.",
+    audience:
+      "Home health aide trainees and new aides at Medicare-certified home health agencies preparing for the competency evaluation — not the CNA nurse aide exam and not a medication aide test.",
+    practiceTestLabel: "Home Health Aide practice test",
+  },
   "nail-technician-state-readiness-check": {
     title: "Free Nail Technician Practice Test 2026 | 60Q NIC Mock",
     description:
@@ -1089,9 +1108,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "RD Exam practice test",
   },
   "acsm-cpt-readiness-check": {
-    title: "Free ACSM CPT Practice Test 2026 | 120 Questions Online",
+    title: "Free ACSM CPT Practice Test 2026 | 60Q Timed Mock",
     description:
-      "Free ACSM CPT practice: 120 timed questions / 120 minutes with topic scoring — then repair with the $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored) / 150 min / scaled 550. Independent — not ACSM material.",
+      "Free ACSM CPT practice test: 60 timed questions / 75 min from a 120-item bank, topic scores, answer review — then the $11 / 120-card Anki deck. Official ACSM-CPT: 135 items / 150 min / scaled 550. Not ACSM material.",
     keywords: [
       "acsm cpt practice test",
       "acsm personal trainer practice exam",
@@ -1099,9 +1118,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "acsm cpt anki",
       "acsm certification practice test",
     ],
-    headline: "Free ACSM CPT Readiness Check",
+    headline: "Free ACSM CPT Practice Test — 60 Questions",
     intro:
-      "A free 120-question / 120-minute ACSM CPT readiness check with topic scoring — then drill weak domains in the linked $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored + 15 pretest) / 150 minutes / scaled pass 550.",
+      "A free 60-question / 75-minute ACSM CPT readiness check with topic scoring — each attempt draws 15 items per topic from a 120-item bank, so retakes see new questions. Then drill weak domains in the linked $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored + 15 pretest) / 150 minutes / scaled pass 550.",
     audience:
       "Personal trainer candidates preparing for the ACSM Certified Personal Trainer exam who want a timed baseline before paid Q-banks.",
     practiceTestLabel: "ACSM CPT practice test",

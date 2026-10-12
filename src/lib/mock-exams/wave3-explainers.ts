@@ -333,11 +333,11 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   "home-health-aide-readiness-check": {
     practiceTestName: "Home Health Aide Practice Test",
     whatIsExam:
-      "Home health aide (HHA) competency checks confirm that aides can deliver personal care in a client’s home under a nurse-directed care plan. Typical domains include ADLs (bathing, dressing, toileting, feeding), home safety and infection control, observation/reporting of changes, and ethics/boundaries/privacy. Requirements are state-driven: many U.S. states require approved training hours plus a written and/or skills competency evaluation before working for a Medicare-certified home health agency. This UniPrep2Go page is an independent 60-question timed diagnostic (75 minutes, 70% readiness pass) — not a state board exam and not a substitute for your state’s official skills checklist.",
+      "The home health aide (HHA) competency evaluation confirms that an aide can safely give personal care in a client’s home under a nurse-directed care plan. For aides of Medicare-certified agencies, federal rule 42 CFR 484.80 requires at least 75 hours of training (at least 16 of them supervised practical training) and an evaluation by a registered nurse covering every listed subject; states may add hours or their own test. This UniPrep2Go page is an independent 60-question / 75-minute diagnostic drawn from a 120-item bank, scored by topic — not a state, CMS, or agency exam and not a skills check.",
     administeredBy:
-      "State health departments / approved HHA training programs (often aligned to federal home-health aide training themes for Medicare-certified agencies). Confirm your state board or training program outline.",
+      "Your home health agency or approved training program, under 42 CFR 484.80 and any stricter state rules — confirm the format with them.",
     officialFormat:
-      "Official evaluations vary by state (written MCQ and/or skills demo). UniPrep mock: 60 multiple-choice questions, 75 minutes, 70% readiness pass with topic scoring — knowledge drill only, not the official skills lab.",
+      "No national question count, time limit, or pass score. Under 42 CFR 484.80 a registered nurse must observe communication, vital signs, hygiene and grooming, transfers and ambulation, and range of motion and positioning with a patient or pseudo-patient; other subjects may be written, oral, or observed, and an aide who is unsatisfactory in more than one required area has not passed. UniPrep mock: 60 multiple-choice questions, 75 minutes, 70% readiness target with topic scoring — knowledge drill only, not the skills demonstration.",
     whoFor:
       "Trainees and working HHAs preparing state competency or agency orientation quizzes; CNA→HHA transition candidates who need home-care framing (client home, care plan, reporting). Not a substitute for supervised skills practice.",
     howToPrepare:
@@ -355,8 +355,8 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       },
       {
         id: "obs",
-        label: "Observation & reporting",
-        blurb: "What to watch for, what to document, and when to escalate to the nurse or supervisor.",
+        label: "Observation, reporting & communication",
+        blurb: "Vital signs and normal ranges, changes to report now versus at the visit note, documentation, and communicating with clients who have hearing, language, or memory barriers.",
       },
       {
         id: "ethics",
@@ -368,7 +368,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "What is the Home Health Aide exam?",
         answer:
-          "Most states require HHA training plus a competency evaluation (written and/or skills) covering personal care, safety, observation, and ethics for aides working in client homes under a care plan. Exact format is state-specific.",
+          "It is the competency evaluation an aide must pass before working for a Medicare-certified home health agency. Under 42 CFR 484.80 a registered nurse checks every required subject — communication, observation and reporting, vital signs, infection control, home safety, emergencies, nutrition, personal care, transfers, and range of motion — with hands-on tasks observed and the rest by written or oral test. The program sets the number of questions and the pass mark.",
       },
       {
         question: "Is this an official Home Health Aide exam?",
@@ -383,7 +383,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on this UniPrep2Go practice test?",
         answer:
-          "60 multiple-choice questions in 75 minutes with a 70% readiness pass mark and topic scoring across ADLs, safety, observation, and ethics.",
+          "Each attempt is 60 multiple-choice questions in 75 minutes — 15 from each topic, drawn from a 120-item bank so retakes differ — with a 70% readiness target and topic scores for personal care, home safety and infection control, observation and reporting, and ethics.",
       },
       {
         question: "Does New York (or my state) use this exact exam?",

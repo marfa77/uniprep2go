@@ -141,18 +141,18 @@ describe("mock exam configs", () => {
     expect(isMockExamRunnable(slug)).toBe(true);
     const { questions, errors } = getQuestionBankForExam(slug);
     expect(errors).toEqual([]);
-    expect(questions).toHaveLength(60);
+    expect(questions).toHaveLength(120);
     const stems = new Set(questions.map((q) => q.prompt.trim().toLowerCase()));
-    expect(stems.size).toBe(60);
+    expect(stems.size).toBe(120);
     const answers = { a: 0, b: 0, c: 0, d: 0 };
     for (const q of questions) {
       answers[q.correctOptionId as keyof typeof answers] += 1;
       expect(q.explanation.split(/\s+/).length).toBeGreaterThanOrEqual(15);
       const blob = [q.prompt, ...q.options.map((o) => o.text), q.explanation].join(" ");
-      expect(blob).not.toMatch(/FDIC|US securities|this concept always eliminates/i);
+      expect(blob).not.toMatch(/FDIC|US securities|this concept always eliminates|Best answer:/i);
       expect(blob).not.toMatch(/\b(nursing home|OBRA|nurse aide|\bNA\b|CNA)\b/i);
     }
-    expect(answers).toEqual({ a: 15, b: 15, c: 15, d: 15 });
+    expect(answers).toEqual({ a: 30, b: 30, c: 30, d: 30 });
   });
 
   it("ships thick explainers + honest format notes for every citizenship mock with Anki", async () => {

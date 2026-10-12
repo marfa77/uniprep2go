@@ -65,7 +65,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "parapro-anki-deck":
     "Planned 60-card ParaPro Anki (reading, writing, math, classroom application). Take the free 60Q / 75 min diagnostic now — official ETS ParaPro is 90Q / 150 min.",
   "acsm-cpt-anki-deck":
-    "$11 / 120 ACSM-CPT cards + free 120Q timed check — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
+    "$11 / 120 ACSM-CPT cards + free 60Q / 75-min timed check from the same 120-item bank — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
   "ashrae-certifications-anki-deck":
     "$11 / 250 ASHRAE multi-cred cards + free 50Q diagnostic — ownable .apkg vs mega free Q-banks; keep ASHRAE’s official 30Q practice separate.",
   "nebosh-anki-deck":
@@ -1024,7 +1024,7 @@ ASHRAE eligibility, application fees, credential-specific study guides, or the o
 
 ### 2–3 week study plan with the free mock
 
-**Week 1:** 15–20 new cards/day across assessment and programming (PAR-Q+/risk, FITT-style loading). **Week 2:** Add science and behavior/safety cards; sit the [free 120-question ACSM CPT readiness check](/mock-exams/acsm-cpt-readiness-check). **Final days:** Review-only Anki on weak topics — keep official ACSM timing practice separate (**135 items / 150 minutes / scaled pass 550**).
+**Week 1:** 15–20 new cards/day across assessment and programming (PAR-Q+/risk, FITT-style loading). **Week 2:** Add science and behavior/safety cards; sit the [free 60-question ACSM CPT readiness check](/mock-exams/acsm-cpt-readiness-check) (75 minutes, drawn from the 120-item bank). **Final days:** Review-only Anki on weak topics — keep official ACSM timing practice separate (**135 items / 150 minutes / scaled pass 550**).
 
 ### Pitfalls this deck targets
 
