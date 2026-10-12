@@ -58,6 +58,8 @@ export type BlogPost = {
     mockLabel?: string;
     deckLabel: string;
     summary: string;
+    /** Buy-first block right after the intro — replaces the top CTA band */
+    introBuyLeadIn?: string;
     /** Optional third-party / sibling product links (Prep2Go, comics, etc.) */
     extraLinks?: Array<{ href: string; label: string }>;
   };

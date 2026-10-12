@@ -276,10 +276,46 @@ function CtaBand({
   );
 }
 
+function IntroBuyBlock({
+  post,
+  deck,
+  leadIn,
+}: Readonly<{ post: BlogPost; deck: PricedDeck; leadIn: string }>): ReactNode {
+  const checkoutLabel = getDeckCheckoutCtaLabel(deck, formatDeckPriceLabel(deck));
+
+  return (
+    <section aria-label={`Buy ${deck.shortName}`} className="mt-6" id="intro-buy">
+      <p className="text-base font-semibold text-[#18140f]">{leadIn}</p>
+      <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+        <TrackedCheckoutLink
+          className={btnPrimary}
+          deckSlug={deck.slug}
+          href={deck.checkoutUrl}
+          source={`blog:${post.slug}:intro`}
+        >
+          {checkoutLabel}
+        </TrackedCheckoutLink>
+      </div>
+      {post.mockSlug && post.cta.mockLabel ? (
+        <p className="mt-3 text-sm leading-6 text-[#5f5749]">
+          Not ready to buy?{" "}
+          <Link
+            className="font-medium text-[#1f3a5f] underline underline-offset-4"
+            href={`/mock-exams/${post.mockSlug}`}
+          >
+            {post.cta.mockLabel} →
+          </Link>
+        </p>
+      ) : null}
+    </section>
+  );
+}
+
 export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
   const pageUrl = absoluteUrl(`/blog/${post.slug}`);
   const related = getRelatedBlogPosts(post);
   const deck = (await getPricedDeckBySlug(post.deckSlug)) ?? null;
+  const introBuyLeadIn = deck?.checkoutUrl ? post.cta.introBuyLeadIn : undefined;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -367,9 +403,13 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
           <RichText text={post.intro} />
         </p>
 
+        {deck && introBuyLeadIn ? (
+          <IntroBuyBlock deck={deck} leadIn={introBuyLeadIn} post={post} />
+        ) : null}
+
         <StockFigure image={post.hero} priority />
 
-        <CtaBand deck={deck} post={post} />
+        {introBuyLeadIn ? null : <CtaBand deck={deck} post={post} />}
 
         {post.sections.map((section, sectionIndex) => (
           <section className="mt-12" key={section.heading}>

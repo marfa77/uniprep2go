@@ -330,9 +330,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Life & Health insurance practice test",
   },
   "frm-part-1-readiness-check": {
-    title: "Free FRM Part 1 Practice Test 2026 | 50-Question Readiness Check",
+    title: "FRM Part 1 Practice Questions — Free 50Q Mock Test 2026",
     description:
-      "Free FRM Part 1 practice: 50 timed questions from a 100-question bank across all 4 GARP topic weights, 120 minutes, topic scoring — then repair with the $29 / 444-card FRM Anki deck. Not GARP material.",
+      "Free FRM Part 1 mock test: 50 timed practice questions across all 4 GARP topics, 120 minutes, topic scoring. First mock free, then $5 for 5.",
     keywords: [
       "frm part 1 practice test",
       "frm mock exam",
@@ -341,7 +341,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "garp frm readiness check",
       "frm part 1 exam prep",
     ],
-    headline: "Free FRM Part 1 Readiness Check",
+    headline: "Free FRM Part 1 Practice Questions & Mock Test",
     intro:
       "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $29 / 444-card Anki deck.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",

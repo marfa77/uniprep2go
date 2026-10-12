@@ -637,11 +637,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "delf-b2-french-anki-deck": {
-    title: "DELF DALF TCF TEF French Anki Deck | 2115 Flashcards",
-    headline: "DELF DALF TCF TEF French Exam Prep — 2115 Flashcards",
+    title: "DELF B2 French Anki Deck — 2,115 Cards (DELF/TCF), $26",
+    headline: "DELF B2 French Anki Deck — 2,115 Flashcards (also DALF, TCF, TEF)",
     studyLabel: "DELF DALF TCF TEF French exam prep",
     description:
-      "French Anki deck with 2,115 flashcards for DELF, DALF, TCF Canada, TEF Canada, TCF ANF, and TCF général — plus shared lexicon for fide / Swiss residency French. Native audio and examples. Independent study aid — not official France Éducation international, IRCC, or fide / SEM material.",
+      "DELF B2 French Anki deck: 2,115 flashcards with native audio, also for DALF, TCF and TEF Canada. $26 one-time. Not official exam material.",
     keywords: [
       "delf anki deck",
       "dalf anki deck",
@@ -661,11 +661,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
-    title: "Best CFA Level 1 Anki Deck 2026 | 348 Cards + Free Mock",
-    headline: "CFA Level 1 Exam Prep — 348 Flashcards + Free Mock",
+    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $29 | UniPrep2Go",
+    headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best independent CFA Level 1 Anki deck for 2026: focused 348 cards across all 10 topic weights, free 60-question timed mock with topic scoring, and printable formula PDF companion — not a 1,600-card dump. Not CFA Institute material.",
+      "CFA Level 1 Anki deck for 2026: 348 cards across all 10 topics, $29 one-time. Plus a free 60-question timed mock. Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -694,11 +694,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the free 60-question / 120-minute mock to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA L2 Formula Sheet 2026 | 219 Formulas + 80Q Drill",
+    title: "CFA Level 2 Formula Sheet 2026 — 219 Formulas PDF, $19",
     headline: "CFA Level 2 Formula Sheet PDF 2026 — 219 Formulas + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 formula sheet PDF: 219 typeset formulas, 276 definitions, 80-question recall drill, 60 print pages. Official L2 is 88 item-set questions / 22 vignettes — this is a retrieval companion, not a one-page cheat sheet. Free 60Q timed mock + 495-card Anki. Not CFA Institute curriculum.",
+      "CFA Level 2 formula sheet PDF for 2026: 219 formulas, 276 definitions, 80-question recall drill, 60 printable pages. $19. Not CFA Institute material.",
     keywords: [
       "cfa level 2 formula sheet",
       "cfa level 2 formula reference",
@@ -819,11 +819,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Food-service managers need TCS temperature and HACCP recall under the clock — use the free 90-question timed mock, then drill weak domains in the $19 / 300-card Anki (PDF guide sold separately).",
   },
   "ptcb-pharmacy-technician-anki-deck": {
-    title: "PTCB Exam Prep 2026 | Free Mock + 300 PTCE Cards",
-    headline: "PTCB Exam Prep — Free Practice Test + 300 PTCE Flashcards",
+    title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $11",
+    headline: "PTCB Anki Deck — 300 PTCE Flashcards + Free Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB exam prep for the January 2026 PTCE: free 90-question timed mock with domain readiness scoring, plus 300 flashcards in 2026 PTCE proportions (60 high-yield drugs, interactions, DEA, DSCSA, safety, sigs, days-supply math). Independent — not official PTCB material.",
+      "PTCB Anki deck for the 2026 PTCE: 300 flashcards on drugs, law, DSCSA, safety, sigs and days-supply math. $11 one-time + free 90-question mock.",
     keywords: [
       "ptcb exam prep",
       "ptcb anki deck",
@@ -835,7 +835,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US pharmacy technician candidates take the free 90-question PTCB mock first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "PTCB Outline 2026 Study Guide | Free Mock + PDF",
+    title: "PTCB Study Guide PDF 2026 — PTCE Outline, $19",
     headline: "PTCB Outline & Blueprint 2026 — Printable Study Guide + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:

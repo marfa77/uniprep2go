@@ -7,6 +7,15 @@ export function getDeckShortPitch(deck: Deck): string {
   return pitchOverrides[deck.slug] ?? deck.subtitle;
 }
 
+/** Deck-page checkout name when the URL intent is narrower than the catalog shortName. */
+const deckPageCheckoutNameOverrides: Partial<Record<string, string>> = {
+  "delf-b2-french-anki-deck": "DELF B2 French",
+};
+
+export function getDeckPageCheckoutName(deck: Pick<Deck, "slug" | "shortName">): string {
+  return deckPageCheckoutNameOverrides[deck.slug] ?? deck.shortName;
+}
+
 /** Overview block — 2–3 sentences; not repeated elsewhere on the page. */
 export function getDeckLongDescription(deck: Deck): string {
   if (longDescriptionOverrides[deck.slug]) {

@@ -2,10 +2,10 @@ import type { BlogPostDraft } from "../types";
 
 export const mricsApcVsAssocricsPost: BlogPostDraft = {
   slug: "mrics-apc-vs-assocrics-pathway-cost",
-  title: "MRICS APC vs AssocRICS: Pathway, Cost, and the 2-Year Gap Nobody Explains",
-  titleTag: "MRICS APC vs AssocRICS: Pathway, Cost & Career Impact 2026",
+  title: "AssocRICS vs MRICS APC: Cost, Timeline, and Pathway (2026)",
+  titleTag: "AssocRICS vs MRICS 2026: Cost, Time & Pathway Compared",
   metaDescription:
-    "AssocRICS takes 6 months and costs £1,000. MRICS APC takes 2+ years and costs £3,000+. Here is which one your employer values, and why some people get stuck in the middle.",
+    "AssocRICS vs MRICS: AssocRICS takes about 6 months and £1,000; the MRICS APC 2+ years and £3,000+. Which to choose, and how to move up later.",
   publishedAt: "2026-07-27",
   eyebrow: "RICS · Chartered surveying",
   clusterId: "mrics",
@@ -22,6 +22,7 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
     deckLabel: "Drill RICS competencies with Anki",
     summary:
       "Preparing for the MRICS APC final assessment? Take the free readiness check on ethics, standards, and client judgment, then drill the competency framework with the MRICS APC Anki deck.",
+    introBuyLeadIn: "Preparing for the APC?",
   },
   sections: [
     {

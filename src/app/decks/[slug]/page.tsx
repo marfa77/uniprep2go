@@ -17,6 +17,7 @@ import { DeckApkgPendingNotice } from "@/components/decks/deck-apkg-pending-noti
 import { DeckCompanionProductSection } from "@/components/decks/deck-companion-product-section";
 import { DeckExamVersionBlock } from "@/components/decks/deck-exam-version-block";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
+import { DeckHeroBuyBlock } from "@/components/decks/deck-hero-buy-block";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
 import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-section";
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
@@ -40,7 +41,11 @@ import {
   isMockFirstDeckPage,
   isSameBankCompanion,
 } from "@/lib/deck-funnel";
-import { formatProductNoun, getDeckShortPitch } from "@/lib/deck-page-copy";
+import {
+  formatProductNoun,
+  getDeckPageCheckoutName,
+  getDeckShortPitch,
+} from "@/lib/deck-page-copy";
 import {
   catalogAvailableDecks,
   catalogPlannedDecks,
@@ -169,7 +174,10 @@ export default async function DeckPage({
   const availableDeck = !isPlanned ? (deck as AvailableDeck) : null;
   const priceLabel = availableDeck ? formatDeckPriceLabel(availableDeck) : "Coming soon";
   const checkoutCtaLabel = availableDeck
-    ? getDeckCheckoutCtaLabel(availableDeck, priceLabel)
+    ? getDeckCheckoutCtaLabel(
+        { ...availableDeck, shortName: getDeckPageCheckoutName(availableDeck) },
+        priceLabel,
+      )
     : "Notify me when Anki launches";
   const linkedMock = getDeckLinkedMock(deck.slug);
   const practiceMock = getDeckPracticeMock(deck.slug);
@@ -303,6 +311,101 @@ export default async function DeckPage({
         <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
           <div className="max-w-3xl">
             <p className="text-xl leading-8 text-[#18140f]">{shortPitch}</p>
+            {availableDeck && availableDeck.checkoutProvider !== "App Store" ? (
+              <DeckHeroBuyBlock
+                checkoutCtaLabel={checkoutCtaLabel}
+                deck={availableDeck}
+                practiceMock={practiceMock}
+                secondaryLink={practiceMock ? undefined : secondaryCta}
+              />
+            ) : (
+              <>
+                <div
+                  className="mt-6 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
+                  id="deck-hero-cta"
+                >
+                  {isPlanned ? (
+                    <>
+                      {practiceMock ? (
+                        <Link
+                          aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                          className={btnPrimary}
+                          href={`/mock-exams/${practiceMock.slug}`}
+                        >
+                          Try free {practiceMock.questionCount}-question practice test
+                        </Link>
+                      ) : null}
+                      <DeckWaitlistCta
+                        compact
+                        deckSlug={deck.slug}
+                        deckTitle={deck.shortName}
+                        mockSlug={practiceMock?.slug}
+                      />
+                    </>
+                  ) : mockFirst && practiceMock ? (
+                    <>
+                      <Link
+                        aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                        className={btnPrimary}
+                        href={`/mock-exams/${practiceMock.slug}`}
+                      >
+                        Try free {practiceMock.questionCount}-question practice test
+                      </Link>
+                      <TrackedCheckoutLink
+                        aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
+                        className={btnSecondary}
+                        deckSlug={deck.slug}
+                        href={availableDeck!.checkoutUrl}
+                        source="deck_page_cta"
+                      >
+                        {checkoutCtaLabel}
+                      </TrackedCheckoutLink>
+                    </>
+                  ) : (
+                    <>
+                      <TrackedCheckoutLink
+                        aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
+                        className={btnPrimary}
+                        deckSlug={deck.slug}
+                        href={availableDeck!.checkoutUrl}
+                        source="deck_page_cta"
+                      >
+                        {checkoutCtaLabel}
+                      </TrackedCheckoutLink>
+                      {practiceMock ? (
+                        <Link
+                          aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                          className={btnSecondary}
+                          href={`/mock-exams/${practiceMock.slug}`}
+                        >
+                          Try free {practiceMock.questionCount}-question practice test
+                        </Link>
+                      ) : availableDeck?.checkoutProvider === "App Store" ? (
+                        <Link
+                          className={btnSecondary}
+                          href={availableDeck.checkoutUrl}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          View on App Store
+                        </Link>
+                      ) : (
+                        <Link className={btnSecondary} href={secondaryCta.href}>
+                          {secondaryCta.label}
+                        </Link>
+                      )}
+                    </>
+                  )}
+                </div>
+                {isPlanned ? (
+                  <p className="mt-3 text-sm text-[#5f5749]">
+                    Anki deck planned — free practice test is live now. Waitlist pings the founder in
+                    Telegram.
+                  </p>
+                ) : null}
+              </>
+            )}
+            {!isPlanned ? <DeckPurchaseCountNote slug={deck.slug} /> : null}
           </div>
           {heroImage ? (
             <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
@@ -326,96 +429,6 @@ export default async function DeckPage({
           profile={examFactsProfile}
           variant="deck"
         />
-
-        <div
-          className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap"
-          id="deck-hero-cta"
-        >
-          {isPlanned ? (
-            <>
-              {practiceMock ? (
-                <Link
-                  aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                  className={btnPrimary}
-                  href={`/mock-exams/${practiceMock.slug}`}
-                >
-                  Try free {practiceMock.questionCount}-question practice test
-                </Link>
-              ) : null}
-              <DeckWaitlistCta
-                compact
-                deckSlug={deck.slug}
-                deckTitle={deck.shortName}
-                mockSlug={practiceMock?.slug}
-              />
-            </>
-          ) : mockFirst && practiceMock ? (
-            <>
-              <Link
-                aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                className={btnPrimary}
-                href={`/mock-exams/${practiceMock.slug}`}
-              >
-                Try free {practiceMock.questionCount}-question practice test
-              </Link>
-              <TrackedCheckoutLink
-                aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
-                className={btnSecondary}
-                deckSlug={deck.slug}
-                href={availableDeck!.checkoutUrl}
-                source="deck_page_cta"
-              >
-                {checkoutCtaLabel}
-              </TrackedCheckoutLink>
-            </>
-          ) : (
-            <>
-              <TrackedCheckoutLink
-                aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
-                className={btnPrimary}
-                deckSlug={deck.slug}
-                href={availableDeck!.checkoutUrl}
-                source="deck_page_cta"
-              >
-                {checkoutCtaLabel}
-              </TrackedCheckoutLink>
-              {practiceMock ? (
-                <Link
-                  aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
-                  className={btnSecondary}
-                  href={`/mock-exams/${practiceMock.slug}`}
-                >
-                  Try free {practiceMock.questionCount}-question practice test
-                </Link>
-              ) : availableDeck?.checkoutProvider === "App Store" ? (
-                <Link
-                  className={btnSecondary}
-                  href={availableDeck.checkoutUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  View on App Store
-                </Link>
-              ) : (
-                <Link className={btnSecondary} href={secondaryCta.href}>
-                  {secondaryCta.label}
-                </Link>
-              )}
-            </>
-          )}
-        </div>
-        {isPlanned ? (
-          <p className="mt-3 text-sm text-[#5f5749]">
-            Anki deck planned — free practice test is live now. Waitlist pings the founder in Telegram.
-          </p>
-        ) : availableDeck?.checkoutProvider !== "App Store" ? (
-          <p className="mt-3 text-sm text-[#5f5749]">
-            Instant {deck.format === "PDF" ? "PDF" : ".apkg"} download · {availableDeck!.checkoutProvider}{" "}
-            secure checkout
-          </p>
-        ) : null}
-
-        {!isPlanned ? <DeckPurchaseCountNote slug={deck.slug} /> : null}
 
         {isPlanned ? (
           <DeckWaitlistCta

@@ -16,6 +16,11 @@ const nextConfig: NextConfig = {
         destination: "/decks",
         permanent: true,
       },
+      {
+        source: "/decks/ptcb-anki-deck",
+        destination: "/decks/ptcb-pharmacy-technician-anki-deck",
+        permanent: true,
+      },
     ];
   },
 };
