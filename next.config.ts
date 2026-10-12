@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   experimental: {
     optimizePackageImports: ["lucide-react"],
   },
+  outputFileTracingIncludes: {
+    "/api/telegram": ["./src/data/admin-bot/knowledge.json"],
+  },
   async redirects() {
     return [
       // No standalone pricing page — list prices live on the deck catalog.

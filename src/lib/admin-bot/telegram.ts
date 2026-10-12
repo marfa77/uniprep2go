@@ -36,8 +36,14 @@ function normalizeHtml(s: string): string {
     .replace(/(^|[^*\w])\*([^*\n]+?)\*(?![*\w])/g, "$1<i>$2</i>")
     .replace(/`([^`\n]+)`/g, "<code>$1</code>")
     .replace(/^#{1,6}\s*(.+)$/gm, "<b>$1</b>")
-    .replace(/<br\s*\/?>/gi, "\n")
-    .replace(/<\/?(p|ul|ol|li|h\d|div|span)[^>]*>/gi, "");
+    .replace(/^\s*-{3,}\s*$/gm, "")
+    .replace(/<h\d[^>]*>([\s\S]*?)<\/h\d>/gi, "\n<b>$1</b>")
+    .replace(/<code>([^<]*\n[^<]*)<\/code>/g, "<pre>$1</pre>")
+    .replace(/<br\s*\/?>|<hr\s*\/?>/gi, "\n")
+    .replace(/[ \t]*<li[^>]*>\s*/gi, "• ")
+    .replace(/<\/?(p|ul|ol|li|h\d|div|span)[^>]*>/gi, "")
+    .replace(/\n{3,}/g, "\n\n")
+    .trim();
 }
 
 function chunks(text: string): string[] {

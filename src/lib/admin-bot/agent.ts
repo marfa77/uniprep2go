@@ -11,6 +11,15 @@ import { getPartnerCatalog } from "@/lib/partners";
 import { getRedisClient } from "@/lib/redis";
 import { toTelegramStatsMessages } from "@/lib/telegram-stats";
 import { agent, filePart, type Content, type FunctionDecl, type Part } from "./gemini";
+import { BANKS_FUNCTION, KNOWLEDGE_FUNCTIONS, knowledgeIndex, runKnowledgeTool } from "./knowledge";
+import {
+  SETTINGS_FUNCTIONS,
+  loadSettings,
+  runSettingsTool,
+  settingsPrompt,
+  type BotSettings,
+  type ReportKey,
+} from "./settings";
 import { downloadFile, escapeHtml, send, typing } from "./telegram";
 
 export type AdminBotMessage = {
@@ -281,8 +290,11 @@ async function runTool(name: string, args: Record<string, unknown>): Promise<unk
         })),
       };
     }
-    default:
-      throw new Error(`unknown tool ${name}`);
+    default: {
+      const result = runKnowledgeTool(name, args) ?? (await runSettingsTool(name, args));
+      if (result === undefined) throw new Error(`unknown tool ${name}`);
+      return result;
+    }
   }
 }
 
@@ -294,15 +306,34 @@ function capped(value: unknown): unknown {
 
 const hasGumroad = () => Boolean(process.env.GUMROAD_ACCESS_TOKEN?.trim());
 
-function systemPrompt(): string {
+const MARKETER = `Ты growth-маркетолог уровня лучших команд B2C SaaS, edtech и маркетплейсов цифровых продуктов: SEO и AEO (цитирование в ChatGPT, Perplexity, Gemini), контент-маркетинг, комьюнити и соцсети (Threads, Reddit, профильные форумы и группы), партнёрства и авторы-партнёры, email/lifecycle, CRO лендингов и checkout, ценообразование и бандлы, unit-экономика.
+Как ты даёшь рекомендации по трафику, привлечению и продажам:
+- Сначала факты: сними цифры инструментами (трафик и источники, шаги воронки, продажи) и найди в базе знаний, что уже делали, что решили и какие правила действуют. Не предлагай то, что уже сделано, отвергнуто или запрещено правилами проекта, — сошлись на документ или коммит.
+- Диагноз: где узкое место воронки (показы → визиты → вовлечение → checkout → оплата → повтор) и почему — с цифрами.
+- 3–5 действий по приоритету ICE (эффект × уверенность / усилия). Для каждого: что именно сделать (страница, канал, текст, оффер, цена), ожидаемый эффект, метрика и когда проверить.
+- Отделяй быстрые победы (на этой неделе) от ставок (месяц и больше). Предпочитай то, что агенты Cursor сделают в коде и контенте, и бесплатные каналы; платную рекламу предлагай только с расчётом окупаемости.
+- Рынок, конкуренты, спрос и цены ищи в Google и давай со ссылками.
+- Говори прямо, как сильный консультант: если идея слабая — скажи и предложи лучше.
+- Когда действие требует правки сайта или кода, дай готовую задачу для агента Cursor (что, где, критерий готовности) — Павел её скопирует.`;
+
+const SETTINGS_RULES = `Что ты можешь менять сам (только это; данные, сайт и код ты не меняешь):
+- Формат отчётов команд бота — set_report_format / reset_report_format. Когда Павел просит изменить отчёт («сделай /stats короче», «добавь конверсию по колодам», «убери страны»), сохрани полную спецификацию нового формата с учётом текущего, коротко перескажи, что изменится, и предложи проверить командой. Свой формат может включать данные любых твоих инструментов. Вернуть стандартный — reset_report_format.
+- Заметки — remember / forget: цели, приоритеты, решения, предпочтения Павла. Сохраняй, когда он просит запомнить, ставит цель или правило работы.`;
+
+const CUSTOM_REPORT_RULES = `Сейчас ты не ведёшь диалог, а собираешь регулярный отчёт команды бота по сохранённому формату Павла.
+- Строго следуй формату: секции, порядок, метрики, стиль.
+- Цифры — только из переданных данных и инструментов, точные значения. Чего посчитать нельзя — пиши «нет данных».
+- Только Telegram HTML (<b>, <i>, <code>, <pre>, <a href>), без <h1>–<h6>, <ul>, <li>, <br> и markdown. Без вступлений, пояснений о процессе и вопросов в конце.`;
+
+function systemPrompt(settings: BotSettings): string {
   const now = new Date();
   const lisbon = now.toLocaleString("ru-RU", { timeZone: "Europe/Lisbon", dateStyle: "full", timeStyle: "short" });
   const money = hasGumroad()
     ? "Реальные оплаты — gumroad_sales (аккаунт Gumroad общий с Prep2Go и PixID: фото на паспорт PixID — это не UniPrep, отделяй их, когда считаешь выручку UniPrep2Go)."
     : "Реальных оплат Gumroad у тебя нет (кроме партнёрских колод) — о выручке говори, что её видно в Gumroad dashboard, а сам опирайся на клики gumroad_click в воронке.";
-  return `Ты — аналитик и операционный помощник Павла, основателя UniPrep2Go (uniprep2go.study). Пишешь ему в личный админ-бот @mariccol_bot.
+  return `Ты — аналитик, операционный помощник и growth-маркетолог Павла, основателя UniPrep2Go (uniprep2go.study). Пишешь ему в личный админ-бот @mariccol_bot.
 
-О продукте: каталог Anki-колод и mock-экзаменов для профессиональных сертификаций и экзаменов (финансы, медицина, IT, строительство, гражданство и др.). Колоды продаются через Gumroad (часть — Lemon Squeezy / App Store). Есть партнёрская программа: авторы колод получают долю с продаж. Аналитика — собственная воронка событий в Redis (page_view → checkout_intent → gumroad_click и т. п.). ${money}
+О продукте: каталог Anki-колод и mock-экзаменов для профессиональных сертификаций и экзаменов (финансы, медицина, IT, строительство, гражданство и др.). Колоды продаются через Gumroad (часть — Lemon Squeezy / App Store). Есть партнёрская программа: авторы колод получают долю с продаж. Аналитика — собственная воронка событий в Redis (page_view → checkout_intent → gumroad_click и т. п.). Каналы: органика Google по длинному хвосту «<экзамен> practice test / anki deck», LLM-трафик, Threads, партнёры-авторы. Команда — Павел и AI-агенты Cursor. ${money}
 
 Сейчас: ${lisbon} (Лиссабон). UTC: ${now.toISOString()}. Даты событий — UTC.
 
@@ -310,11 +341,21 @@ function systemPrompt(): string {
 - Цифры и факты о бизнесе — только из инструментов. Не угадывай. Если данных нет — так и скажи и предложи, где их взять (например, Gumroad dashboard).
 - Для общей картины — funnel_stats; для конкретики — recent_events, partner_sales, partner_report, deck_catalog${hasGumroad() ? ", gumroad_sales" : ""}.
 - Называй период, к которому относятся цифры. Делай короткий вывод: что растёт, что проседает, что сделать.
-- Ничего не меняешь в системе. Для действий подскажи команду: /sync (цены), /partner_paid <partnerId> <YYYY-MM> <reference>, /reset-stats.
+- Ты знаешь проект изнутри: правила работы агентов Cursor (.cursor/rules — стандарты качества, например mock-bank-audit-standard), AGENTS.md, документы и ledgers (bank-audit-ledger — какие банки доведены до стандарта и когда), историю коммитов и сводку банков вопросов. На вопросы «что делали / что обновили / какой стандарт / какие правила / статус банка или колоды» сначала используй search_knowledge, recent_changes, mock_banks, read_doc — и только потом говори, что данных нет. Ссылайся на документ или дату коммита.
 - Внешние факты (экзамены, конкуренты, цены рынка) можно искать в Google и давать со ссылкой.
-- Отвечай по-русски, коротко и по делу. Форматирование — Telegram HTML: <b>, <i>, <code>, <a href>. Без markdown-таблиц и заголовков #.
+- Отвечай по-русски, коротко и по делу. Форматирование — только Telegram HTML: <b>, <i>, <code>, <pre>, <a href>, <blockquote>. Заголовки секций — <b>, списки — строки с «• » или «1.». Никаких <h1>–<h6>, <ul>, <li>, <br>, <p>, markdown (**, #, ---) и таблиц. Рекомендации и планы — плотно, без воды: лучше 4 сильных пункта, чем 10 общих.
 
-Команды бота (работают без модели): /stats, /sync, /partner_digest, /partner_payouts, /partner_paid, /reset-stats, /new — очистить контекст диалога.`;
+${MARKETER}
+Перед советами по росту загляни в стратегию проекта: docs/SEO_AUTOPILOT_STRATEGY.md, docs/SEO_WEEKLY_AUTOPILOT.md, docs/AEO.md, свежие docs/seo-weekly и docs/aeo-audits, docs/mock-bank-qa/competitor-aeo-ledger.md и правила .cursor/rules/seo-dual-track-top.mdc, gsc-crawled-not-indexed-strengthen.mdc, llm-visibility.mdc, competitor-aeo-cadence.mdc, threads-smart-agent-gpt-sol.mdc. Деньги UniPrep2Go — продажи колод и mock-экзаменов: смотри, какие колоды и экзамены дают визиты, checkout_intent и gumroad_click, где трафик есть, а кликов в оплату нет, и какие банки вопросов доведены до стандарта (mock_banks).
+
+${SETTINGS_RULES}
+Для действий подскажи команду: /sync (цены), /partner_paid <partnerId> <YYYY-MM> <reference>, /reset-stats.
+
+${settingsPrompt(settings)}
+
+Команды бота (работают без модели): /stats и /partner_payouts (с аргументом default — всегда стандартный вид), /sync, /partner_digest, /partner_paid, /reset-stats, /new — очистить контекст диалога.
+
+База знаний. ${knowledgeIndex()}`;
 }
 
 type Turn = { role: "user" | "model"; text: string };
@@ -371,17 +412,57 @@ async function userParts(msg: AdminBotMessage): Promise<{ parts: Part[]; logText
   return text ? { parts: [{ text }], logText: text } : null;
 }
 
-export function answerAdminBot(parts: Part[], history: Turn[] = []): Promise<string> {
+async function onCall(name: string, args: Record<string, unknown>) {
+  console.log(`[admin-bot] tool ${name} ${JSON.stringify(args)}`);
+  return capped(await runTool(name, args));
+}
+
+function dataFunctions(): FunctionDecl[] {
+  return [
+    ...(hasGumroad() ? FUNCTIONS : FUNCTIONS.filter((f) => f.name !== "gumroad_sales")),
+    ...KNOWLEDGE_FUNCTIONS,
+    BANKS_FUNCTION,
+  ];
+}
+
+export async function answerAdminBot(parts: Part[], history: Turn[] = []): Promise<string> {
   const contents: Content[] = history.map((t) => ({ role: t.role, parts: [{ text: t.text }] }));
   return agent({
-    system: systemPrompt(),
+    system: systemPrompt(await loadSettings()),
     history: contents,
     userParts: parts,
-    functions: hasGumroad() ? FUNCTIONS : FUNCTIONS.filter((f) => f.name !== "gumroad_sales"),
-    onCall: async (name, args) => {
-      console.log(`[admin-bot] tool ${name} ${JSON.stringify(args)}`);
-      return capped(await runTool(name, args));
-    },
+    functions: [...dataFunctions(), ...SETTINGS_FUNCTIONS],
+    onCall,
+  });
+}
+
+const MAX_REPORT_DATA_CHARS = 150_000;
+
+async function standardReportData(report: ReportKey, arg?: string): Promise<unknown> {
+  if (report === "partner_payouts") {
+    const month = arg && /^\d{4}-\d{2}$/.test(arg) ? arg : new Date().toISOString().slice(0, 7);
+    return { month, standardReport: await toPartnerPayoutReportMessage(month) };
+  }
+  const stats = await funnelStats();
+  const { recentEvents, ...aggregates } = stats;
+  return {
+    standardReport: toTelegramStatsMessages(stats).join("\n\n"),
+    aggregates,
+    recentEvents: recentEvents.slice(0, 300),
+  };
+}
+
+/** Report for a slash command in Pavel's saved format; null when the command uses the built-in format. */
+export async function customReport(report: ReportKey, settings: BotSettings, arg?: string): Promise<string | null> {
+  const format = settings.reports[report]?.format;
+  if (!format) return null;
+  const data = JSON.stringify(await standardReportData(report, arg)).slice(0, MAX_REPORT_DATA_CHARS);
+  return agent({
+    system: `${systemPrompt(settings)}\n\n${CUSTOM_REPORT_RULES}`,
+    history: [],
+    userParts: [{ text: `Собери отчёт /${report}.\n\nФормат:\n${format}\n\nДанные стандартного отчёта (JSON):\n${data}` }],
+    functions: dataFunctions(),
+    onCall,
   });
 }
 

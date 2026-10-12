@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run check:boilerplate && next build",
+    "build": "npm run admin-bot:knowledge && npm run check:boilerplate && next build",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
@@ -57,7 +57,8 @@
     "setup:gumroad-citizenship-bundle": "node scripts/setup-gumroad-citizenship-bundle.mjs",
     "setup:gumroad-civic-decks": "node scripts/setup-gumroad-civic-decks.mjs",
     "publish:gumroad-language-landings": "python3 scripts/publish-language-gumroad-landings.py",
-    "audit:bank": "bash scripts/audit-bank-pipeline.sh"
+    "audit:bank": "bash scripts/audit-bank-pipeline.sh",
+    "admin-bot:knowledge": "node scripts/build-admin-bot-knowledge.mjs --out src/data/admin-bot/knowledge.json --docs \"AGENTS.md,README.md,.cursor/*.md,.cursor/*.mdc,docs/*.md\" --banks src/data/mock-exams"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

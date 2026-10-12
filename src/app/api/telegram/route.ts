@@ -1,5 +1,7 @@
 import { after } from "next/server";
-import { clearAdminBotHistory, handleAdminBotMessage, type AdminBotMessage } from "@/lib/admin-bot/agent";
+import { clearAdminBotHistory, customReport, handleAdminBotMessage, type AdminBotMessage } from "@/lib/admin-bot/agent";
+import { loadSettings, type BotSettings, type ReportKey } from "@/lib/admin-bot/settings";
+import { send } from "@/lib/admin-bot/telegram";
 import { syncAllCheckoutPrices } from "@/lib/checkout-pricing";
 import { getFunnelStats, resetAllFunnelStats, resetFunnelStats } from "@/lib/funnel-store";
 import { formatCentsUsd, markPartnerPaid } from "@/lib/partner-ledger";
@@ -37,13 +39,14 @@ type TelegramUpdate = {
 };
 
 const ADMIN_HELP = [
-  "Пиши или говори голосом обычным языком — отвечу по данным UniPrep2Go (воронка, клики, партнёры, каталог).",
+  "Пиши или говори голосом обычным языком — отвечу по данным UniPrep2Go (воронка, клики, партнёры, каталог), дам рекомендации по росту и продажам.",
+  "Можно попросить поменять вид отчёта (например «сделай /stats короче, сначала клики в Gumroad») или запомнить цель — бот сохранит.",
   "",
   "Команды:",
-  "/stats — отчёт воронки",
+  "/stats — отчёт воронки (/stats default — стандартный вид, даже если задан свой)",
   "/sync — синхронизировать цены с checkout",
   "/partner_digest — разослать дайджесты партнёрам",
-  "/partner_payouts [YYYY-MM] — отчёт по выплатам",
+  "/partner_payouts [YYYY-MM] [default] — отчёт по выплатам",
   "/partner_paid <partnerId> <YYYY-MM> <reference> — отметить выплату",
   "/reset-stats, /reset-all-stats — сбросить статистику",
   "/new — очистить контекст диалога с ассистентом",
@@ -72,6 +75,31 @@ async function handleAdminMessage(chatId: number | string, message: AdminBotMess
   after(() => handleAdminBotMessage(key, message));
 }
 
+async function standardReport(report: ReportKey, month: string): Promise<string[]> {
+  return report === "stats"
+    ? toTelegramStatsMessages(await getFunnelStats())
+    : [await toPartnerPayoutReportMessage(month)];
+}
+
+async function sendCustomReport(chatId: number | string, report: ReportKey, settings: BotSettings, month: string) {
+  try {
+    const text = await customReport(report, settings, month);
+    if (text) {
+      await send(chatId, text);
+      return;
+    }
+  } catch (error) {
+    console.error(`[telegram] custom /${report} failed`, error);
+    await sendTelegramMessage(
+      chatId,
+      `⚠️ Свой формат /${report} не собрался (${error instanceof Error ? error.message.slice(0, 200) : "unknown error"}) — показываю стандартный.`,
+    );
+  }
+  for (const message of await standardReport(report, month)) {
+    await sendTelegramMessage(chatId, message);
+  }
+}
+
 export async function POST(request: Request) {
   const update = (await request.json()) as TelegramUpdate;
   const message = update.message;
@@ -89,7 +117,8 @@ export async function POST(request: Request) {
     return Response.json({ ok: true });
   }
 
-  const wantsStats = shouldReturnStats(text);
+  const builtIn = /\sdefault$/i.test(text.trim());
+  const wantsStats = shouldReturnStats(text) || /^\/stats(@mariccol_bot)?\s+default$/i.test(text.trim());
   const wantsReset = shouldResetStats(text);
   const wantsResetAll = shouldResetAllStats(text);
   const wantsSync = shouldSyncPrices(text);
@@ -120,6 +149,16 @@ export async function POST(request: Request) {
   }
 
   await rememberTelegramNotifyChatId(chatId);
+
+  const report: ReportKey | null = wantsStats ? "stats" : wantsPartnerPayouts ? "partner_payouts" : null;
+  if (report && !builtIn && isAdminChat(chatId)) {
+    const settings = await loadSettings().catch(() => null);
+    if (settings?.reports[report]) {
+      await sendTelegramMessage(chatId, `⏳ Собираю /${report} в твоём формате…`);
+      after(() => sendCustomReport(chatId, report, settings, parsePartnerPayoutMonth(text)));
+      return Response.json({ ok: true });
+    }
+  }
 
   if (wantsPartnerDigest) {
     after(async () => {

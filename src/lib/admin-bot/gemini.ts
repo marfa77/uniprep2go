@@ -52,6 +52,8 @@ export function filePart(buffer: Buffer, mime: string): Part {
   return { inline_data: { mime_type: mime, data: buffer.toString("base64") } };
 }
 
+const MAX_STEPS = 14;
+
 export async function agent(opts: {
   system: string;
   history: Content[];
@@ -61,13 +63,17 @@ export async function agent(opts: {
   model?: string;
 }): Promise<string> {
   const contents: Content[] = [...opts.history, { role: "user", parts: opts.userParts }];
-  for (let step = 0; step < 8; step++) {
+  for (let step = 0; step < MAX_STEPS; step++) {
+    const last = step === MAX_STEPS - 1;
     const data = await call(
       {
         system_instruction: { parts: [{ text: opts.system }] },
         contents,
         tools: [{ google_search: {} }, { functionDeclarations: opts.functions }],
-        toolConfig: { includeServerSideToolInvocations: true },
+        toolConfig: {
+          includeServerSideToolInvocations: true,
+          functionCallingConfig: { mode: last ? "NONE" : "AUTO" },
+        },
         generationConfig: { temperature: 0.3 },
       },
       opts.model || ADMIN_BOT_MODEL
