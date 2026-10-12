@@ -1,6 +1,5 @@
 import { getAllBlogPosts } from "./blog";
 import { availableDecks } from "./decks";
-import { gaivotaEpisodes, gaivotaSeries } from "./gaivota-comics";
 import { getAllMockExams } from "./mock-exams/configs";
 import { getVerticalSummaries } from "./mock-exams/hub-clusters";
 import { shouldIndexMockExam } from "./seo";
@@ -8,9 +7,10 @@ import { shouldIndexMockExam } from "./seo";
 /**
  * Google sitemap policy (Opus + founder):
  * Fix GSC flood by removing llms.txt-as-Sitemap / UTM discovery — not by starving revenue.
- * INCLUDE: hubs, all available decks, all indexable mocks, mock verticals, Gaivota comics,
- *   money blog, commercial intent, CFA support pages.
- * EXCLUDE: legal, contact, llms catalogs, non-money blog, cursor-rules intent.
+ * INCLUDE: hubs, available decks, all indexable mocks, mock verticals, every blog post,
+ *   commercial intent, CFA support pages.
+ * EXCLUDE: legal, contact, llms catalogs, cursor-rules intent, and off-niche pages that stay
+ *   live but out of the sitemap: Gaivota comics and Prep2Go iOS app listings.
  */
 
 export const GOOGLE_SITEMAP_HUB_PATHS = [
@@ -63,9 +63,6 @@ export const LAYER_B_BLOG_SLUGS = ["life-in-the-uk-test-why-one-in-three-fail"] 
 /** Stable hub lastmod — do not stamp every deploy. Bump only when hub copy ships. */
 export const GOOGLE_SITEMAP_HUB_LASTMOD = "2026-08-27";
 
-/** Comics lastmod — freeze weekly SEO; bump only when an episode ships. */
-export const GOOGLE_SITEMAP_COMICS_LASTMOD = "2026-07-28";
-
 /** Support / intent lastmod when page has no content date field. */
 export const GOOGLE_SITEMAP_SUPPORT_LASTMOD = "2026-08-27";
 
@@ -102,8 +99,15 @@ export function deckSitemapPriority(slug: string, category: string): number {
   return 0.88;
 }
 
+/** Prep2Go iOS app listings (survival guides) — not UniPrep2Go products. */
+export function isPrep2GoAppDeckSlug(slug: string): boolean {
+  return slug.endsWith("-prep2go-app");
+}
+
 export function getGoogleSitemapDeckSlugs(): string[] {
-  return availableDecks.map((deck) => deck.slug);
+  return availableDecks
+    .filter((deck) => !isPrep2GoAppDeckSlug(deck.slug))
+    .map((deck) => deck.slug);
 }
 
 export function getGoogleSitemapMockSlugs(): string[] {
@@ -116,18 +120,8 @@ export function getGoogleSitemapVerticalPaths(): string[] {
   return getVerticalSummaries().map((vertical) => vertical.href);
 }
 
-/** Sold comic series: hub + every episode with a pagePath. */
-export function getGoogleSitemapComicPaths(): string[] {
-  const episodePaths = gaivotaEpisodes
-    .map((ep) => ep.pagePath)
-    .filter((path): path is string => Boolean(path));
-  return [gaivotaSeries.hubPath, ...episodePaths];
-}
-
 export function getGoogleSitemapBlogSlugs(): string[] {
-  return getAllBlogPosts()
-    .filter((post) => isGoogleSitemapMoneyBlogSlug(post.slug))
-    .map((post) => post.slug);
+  return getAllBlogPosts().map((post) => post.slug);
 }
 
 export function isExcludedFromGoogleSitemap(pathname: string): boolean {

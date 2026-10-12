@@ -2,19 +2,21 @@ import { describe, expect, it } from "vitest";
 import sitemap from "../app/sitemap";
 import robots from "../app/robots";
 import { availableDecks } from "./decks";
+import { getAllBlogPosts } from "./blog";
 import { gaivotaEpisodes, gaivotaSeries } from "./gaivota-comics";
 import {
   getGoogleSitemapBlogSlugs,
-  getGoogleSitemapComicPaths,
+  getGoogleSitemapDeckSlugs,
   getGoogleSitemapMockSlugs,
   getGoogleSitemapVerticalPaths,
   GOOGLE_SITEMAP_INTENT_SLUGS,
+  isPrep2GoAppDeckSlug,
 } from "./google-sitemap-allowlist";
 import { shouldIndexMockExam } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
 
 describe("google sitemap allowlist", () => {
-  it("keeps all for-sale decks, indexable mocks, comics, and vertical hubs", () => {
+  it("keeps for-sale decks, indexable mocks, every blog post, and vertical hubs", () => {
     const urls = sitemap().map((entry) => entry.url);
     const unique = new Set(urls);
 
@@ -22,10 +24,11 @@ describe("google sitemap allowlist", () => {
     expect(urls.length).toBeGreaterThanOrEqual(280);
     expect(urls.length).toBeLessThanOrEqual(360);
 
-    for (const deck of availableDecks) {
-      expect(urls).toContain(absoluteUrl(`/decks/${deck.slug}`));
+    const deckSlugs = getGoogleSitemapDeckSlugs();
+    for (const slug of deckSlugs) {
+      expect(urls).toContain(absoluteUrl(`/decks/${slug}`));
     }
-    expect(urls.filter((url) => url.includes("/decks/")).length).toBe(availableDecks.length);
+    expect(urls.filter((url) => url.includes("/decks/")).length).toBe(deckSlugs.length);
 
     const mockSlugs = getGoogleSitemapMockSlugs();
     expect(mockSlugs.length).toBeGreaterThan(100);
@@ -39,18 +42,12 @@ describe("google sitemap allowlist", () => {
     }
     expect(getGoogleSitemapVerticalPaths().length).toBeGreaterThanOrEqual(20);
 
-    expect(urls).toContain(absoluteUrl(gaivotaSeries.hubPath));
-    for (const episode of gaivotaEpisodes) {
-      if (!episode.pagePath) continue;
-      expect(urls).toContain(absoluteUrl(episode.pagePath));
-    }
-    expect(getGoogleSitemapComicPaths().length).toBe(1 + gaivotaEpisodes.filter((ep) => ep.pagePath).length);
-
     for (const slug of GOOGLE_SITEMAP_INTENT_SLUGS) {
       expect(urls).toContain(absoluteUrl(`/${slug}`));
     }
     expect(urls).not.toContain(absoluteUrl("/cursor-rules-for-indie-hackers"));
 
+    expect(getGoogleSitemapBlogSlugs().length).toBe(getAllBlogPosts().length);
     for (const slug of getGoogleSitemapBlogSlugs()) {
       expect(urls).toContain(absoluteUrl(`/blog/${slug}`));
     }
@@ -76,9 +73,23 @@ describe("google sitemap allowlist", () => {
       expect(urls).not.toContain(`${siteConfig.url}${path}`);
     }
 
-    // Citizenship blog posts stay live but out of Google sitemap noise.
-    expect(urls).not.toContain(absoluteUrl("/blog/portugal-nationality-test"));
-    expect(urls).not.toContain(absoluteUrl("/blog/us-naturalization-civics"));
+  });
+
+  it("keeps off-niche comics and Prep2Go app listings out of the Google sitemap", () => {
+    const urls = sitemap().map((entry) => entry.url);
+
+    expect(urls).not.toContain(absoluteUrl(gaivotaSeries.hubPath));
+    for (const episode of gaivotaEpisodes) {
+      if (!episode.pagePath) continue;
+      expect(urls).not.toContain(absoluteUrl(episode.pagePath));
+    }
+    expect(urls.some((url) => url.includes("/comics/"))).toBe(false);
+
+    const appDecks = availableDecks.filter((deck) => isPrep2GoAppDeckSlug(deck.slug));
+    expect(appDecks.length).toBeGreaterThan(0);
+    for (const deck of appDecks) {
+      expect(urls).not.toContain(absoluteUrl(`/decks/${deck.slug}`));
+    }
   });
 
   it("lists only sitemap.xml in robots and blocks Googlebot llm UTM duplicates", () => {
@@ -92,7 +103,7 @@ describe("google sitemap allowlist", () => {
       ? config.rules.find((rule) => rule.userAgent === "Googlebot")
       : undefined;
     expect(googleRule?.allow).toBe("/");
-    expect(googleRule?.disallow).toEqual(["/*?utm_source=llm", "/*.md$"]);
+    expect(googleRule?.disallow).toEqual(["/*?utm_source=llm"]);
   });
 
   it("uses content dates for lastmod and elevates Layer B money priorities", () => {
