@@ -2,7 +2,10 @@ import { getAllBlogPosts } from "./blog";
 import { availableDecks } from "./decks";
 import { getAllMockExams } from "./mock-exams/configs";
 import { getVerticalSummaries } from "./mock-exams/hub-clusters";
+import { isPrep2GoAppDeckSlug } from "./prep2go-app-decks";
 import { shouldIndexMockExam } from "./seo";
+
+export { isPrep2GoAppDeckSlug };
 
 /**
  * Google sitemap policy (Opus + founder):
@@ -97,11 +100,6 @@ export function deckSitemapPriority(slug: string, category: string): number {
     return 0.8;
   }
   return 0.88;
-}
-
-/** Prep2Go iOS app listings (survival guides) — not UniPrep2Go products. */
-export function isPrep2GoAppDeckSlug(slug: string): boolean {
-  return slug.endsWith("-prep2go-app");
 }
 
 export function getGoogleSitemapDeckSlugs(): string[] {

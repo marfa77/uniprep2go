@@ -6,6 +6,11 @@ export const PREP2GO_APP_STORE_URL =
 
 export const PREP2GO_APP_STORE_MONTHLY_PRICE = 4.99;
 
+/** Prep2Go iOS app listings (survival guides) — not UniPrep2Go products. */
+export function isPrep2GoAppDeckSlug(slug: string): boolean {
+  return slug.endsWith("-prep2go-app");
+}
+
 type Prep2GoAppDeckInput = {
   slug: string;
   title: string;

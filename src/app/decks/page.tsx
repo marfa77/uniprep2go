@@ -104,7 +104,11 @@ export default async function DecksHubPage() {
 
         {groups.map((group) =>
           group.decks.length > 0 ? (
-            <section className="mt-12" key={group.category}>
+            <section
+              className="mt-12 scroll-mt-24"
+              id={`catalog-${group.category}`}
+              key={group.category}
+            >
               <h2 className="text-2xl font-semibold tracking-tight">
                 {categoryLabels[group.category] ?? group.category}
               </h2>

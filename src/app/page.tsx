@@ -30,7 +30,8 @@ import {
 } from "@/lib/building-cert-clusters";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
-import { buildFeaturedMockItemListJsonLd, buildMockExamItemListJsonLd } from "@/lib/mock-exams/llm";
+import { buildFeaturedMockItemListJsonLd } from "@/lib/mock-exams/llm";
+import { isPrep2GoAppDeckSlug } from "@/lib/prep2go-app-decks";
 import { publicDeckPurchaseCount } from "@/lib/deck-purchase-count";
 import { getPublicMockStartCount } from "@/lib/mock-exams/mock-start-count-store";
 import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
@@ -46,6 +47,9 @@ import {
   btnSecondary,
   btnSecondarySm,
 } from "@/lib/ui-button-classes";
+
+/** Homepage HTML budget is <200 KB; the full catalog renders on /decks. */
+const HOME_CATALOG_DECKS_PER_GROUP = 6;
 
 const examCategories = [
   {
@@ -182,6 +186,18 @@ export default async function HomePage() {
     .filter((mock): mock is MockExamConfig => mock !== undefined);
   const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
   const repairPairs = resolveRepairPairs(pricedBySlug);
+  const homeCatalogGroups = catalogGroups
+    .map((group) => {
+      const decks = group.decks.filter((deck) => !isPrep2GoAppDeckSlug(deck.slug));
+      return {
+        category: group.category,
+        label: group.label,
+        total: decks.length,
+        topDecks: decks.slice(0, HOME_CATALOG_DECKS_PER_GROUP),
+      };
+    })
+    .filter((group) => group.topDecks.length > 0);
+  const homeCatalogDecks = homeCatalogGroups.flatMap((group) => group.topDecks);
 
   const mockSlugsForProof = [
     ...new Set([
@@ -224,8 +240,7 @@ export default async function HomePage() {
         },
       },
       buildSiteOrganizationJsonLd(),
-      buildCatalogItemListJsonLd(availableDecks),
-      buildMockExamItemListJsonLd({ indexedOnly: true }),
+      buildCatalogItemListJsonLd(homeCatalogDecks),
       buildFeaturedMockItemListJsonLd([...featuredMockSlugs]),
       {
         "@type": "FAQPage",
@@ -624,103 +639,53 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Catalog stays collapsed below fold — full product list without homepage billboard */}
+        {/* Top picks per category; the full list lives on /decks so the homepage stays light */}
         <section id="catalog" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
               Flashcard deck catalog
             </h2>
             <p className="mt-2 text-[#4f493e]">
-              Paid Anki decks and printable PDFs for daily drilling after a mock report. Expand a
-              category to browse — US licensing and finance exams are listed first.
+              Paid Anki decks and printable PDFs for daily drilling after a mock report. Top picks
+              per category below — the{" "}
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/decks"
+              >
+                full catalog of {availableDecks.length} products
+              </Link>{" "}
+              lists every deck.
             </p>
-            <div className="mt-8 space-y-3">
-              {catalogGroups.map((group) => (
-                <details
-                  className="group rounded-3xl border border-[#18140f]/10 bg-[#fffaf0]/70 open:bg-[#fffaf0]"
+            <div className="mt-8 grid gap-4 md:grid-cols-2">
+              {homeCatalogGroups.map((group) => (
+                <div
+                  className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
                   id={`catalog-${group.category}`}
                   key={group.category}
                 >
-                  <summary className="cursor-pointer list-none px-5 py-4 marker:content-none [&::-webkit-details-marker]:hidden">
-                    <div className="flex items-center justify-between gap-4">
-                      <div>
-                        <h3 className="text-lg font-semibold text-[#18140f]">{group.label}</h3>
-                        <p className="mt-1 text-sm text-[#5f5749]">
-                          {group.decks.length} product{group.decks.length === 1 ? "" : "s"}
-                        </p>
-                      </div>
-                      <span
-                        aria-hidden="true"
-                        className="text-sm font-medium text-[#1f3a5f] transition group-open:rotate-180"
-                      >
-                        ▼
-                      </span>
-                    </div>
-                  </summary>
-                  <ul className="divide-y divide-[#18140f]/10 border-t border-[#18140f]/10">
-                    {group.decks.map((deck) => {
-                      const thumbnail = getDeckCoverUrl(deck);
-
-                      return (
-                        <li
-                          className="flex flex-col gap-4 px-5 py-4 sm:flex-row sm:items-center sm:justify-between"
-                          key={deck.slug}
+                  <h3 className="text-lg font-semibold text-[#18140f]">{group.label}</h3>
+                  <ul className="mt-3 space-y-2 text-sm">
+                    {group.topDecks.map((deck) => (
+                      <li className="flex items-baseline justify-between gap-4" key={deck.slug}>
+                        <Link
+                          className="font-medium text-[#18140f] hover:underline"
+                          href={`/decks/${deck.slug}`}
                         >
-                          <div className="flex min-w-0 items-start gap-4">
-                            {thumbnail ? (
-                              <Link
-                                aria-label={`View ${deck.title}`}
-                                className="shrink-0 overflow-hidden rounded-2xl border border-[#18140f]/10 bg-[#f6efe8]"
-                                href={`/decks/${deck.slug}`}
-                              >
-                                <Image
-                                  alt=""
-                                  aria-hidden
-                                  className="h-16 w-28 object-cover object-left"
-                                  height={64}
-                                  src={thumbnail}
-                                  unoptimized={isPreoptimizedPublicImage(thumbnail)}
-                                  width={112}
-                                />
-                              </Link>
-                            ) : null}
-                            <div className="min-w-0">
-                              <Link
-                                className="font-medium text-[#18140f] hover:underline"
-                                href={`/decks/${deck.slug}`}
-                              >
-                                {deck.title}
-                              </Link>
-                              <p className="mt-1 text-sm text-[#5f5749]">
-                                {formatDeckContentLabel(deck)} · {deck.facts.examYear} ·{" "}
-                                {deck.checkoutProvider}
-                              </p>
-                            </div>
-                          </div>
-                          <div className="flex shrink-0 items-center gap-4 text-sm sm:pl-0">
-                            <span className="font-medium text-[#18140f]">
-                              {formatDeckPriceLabel(deck)}
-                            </span>
-                            <Link
-                              className={btnSecondarySm}
-                              href={`/decks/${deck.slug}`}
-                            >
-                              Details
-                            </Link>
-                            <TrackedCheckoutLink
-                              className={btnPrimarySm}
-                              deckSlug={deck.slug}
-                              href={deck.checkoutUrl}
-                              source="catalog_buy"
-                            >
-                              {getCheckoutActionLabel(deck.checkoutProvider)}
-                            </TrackedCheckoutLink>
-                          </div>
-                        </li>
-                      );
-                    })}
+                          {deck.shortName}
+                        </Link>
+                        <span className="shrink-0 text-[#5f5749]">
+                          {formatDeckPriceLabel(deck)}
+                        </span>
+                      </li>
+                    ))}
                   </ul>
-                </details>
+                  <Link
+                    className="mt-4 inline-block text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                    href={`/decks#catalog-${group.category}`}
+                  >
+                    All {group.total} {group.label.toLowerCase()} products →
+                  </Link>
+                </div>
               ))}
             </div>
           </div>
