@@ -1434,11 +1434,11 @@
       },
       {
         "id": "d",
-        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other."
+        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. The two move in opposite directions, so they partly offset each other."
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other. Formula: $$\\text{If horizon} < \\text{Duration: price risk dominates}$$ Example: Duration immunization: set portfolio duration = investment horizon → price risk and reinvestment risk exactly offset → target return locked regardless of rate changes.",
+    "explanation": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. The two move in opposite directions, so they partly offset each other. Formula: $$\\text{If horizon} < \\text{Duration: price risk dominates}$$ Example: Duration immunization: set portfolio Macaulay duration = investment horizon (with asset PV ≥ liability PV and enough convexity). After a small parallel rate shift, price and reinvestment effects roughly offset and the target return is approximately locked; large or non-parallel moves break the offset.",
     "distractorExplanations": {
       "a": "For premium bonds: YTC < YTM (call likely). Investor should use lower of YTM/YTC = yield to worst (YTW).",
       "b": "Portfolio duration is value-weighted average. To change portfolio duration: add/remove longer or shorter bonds or use derivatives.",
@@ -1502,7 +1502,7 @@
       },
       {
         "id": "d",
-        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other."
+        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. The two move in opposite directions, so they partly offset each other."
       }
     ],
     "correctOptionId": "b",
@@ -1510,7 +1510,7 @@
     "distractorExplanations": {
       "a": "This ordering is a common exam question. Memorize: discount bond investor gains toward par → YTM > CY. Premium bond loses to par → YTM < CY.",
       "c": "Spot rates are bootstrapped from coupon bond prices. Each spot rate is unique to its maturity — unlike YTM which blends multiple periods.",
-      "d": "Price risk and reinvestment risk move in opposite directions. Duration = horizon → immunized. If rates rise: price falls but reinvestment income rises; net effect = zero."
+      "d": "Describes price risk versus reinvestment risk, not this concept; the two only roughly offset when Macaulay duration ≈ horizon and for small parallel shifts, not exactly."
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (frm_part1_valuation_ported.csv, VRM-11)."
@@ -1566,7 +1566,7 @@
       },
       {
         "id": "c",
-        "text": "Matching portfolio duration to investment horizon so that price risk and reinvestment risk offset — locks in target return regardless of parallel yield curve shifts."
+        "text": "Setting asset PV ≥ liability PV and Macaulay duration = horizon, with asset convexity above the liability's, so small parallel yield shifts roughly offset."
       },
       {
         "id": "d",
@@ -1577,7 +1577,7 @@
     "explanation": "Second-order measure of price sensitivity — captures curvature of price-yield relationship. Always positive for standard bonds. Formula: $$Convexity \\approx \\frac{P_+ + P_- - 2P_0}{P_0 \\times (\\Delta r)^2}$$ Example: P₀=$1000, P+(Δr=+1bp)=$999.25, P-(Δr=-1bp)=$1000.76 → Convexity = (999.25+1000.76-2000) / (1000×0.0001²) = 10.",
     "distractorExplanations": {
       "a": "BSM assumes constant volatility — reality shows volatility smile/skew. BSM overprices OTM puts (fat tails) and misprices near expiry.",
-      "c": "Immunization works for ONE parallel shift. Must rebalance as duration changes over time. Doesn't protect against non-parallel shifts or large moves.",
+      "c": "Describes classical immunization, not convexity; immunization also needs PV and convexity conditions and protects only against small parallel shifts.",
       "d": "To hedge: match DV01 of position with offsetting instrument. Hedge ratio = DV01(position) / DV01(hedge instrument)."
     },
     "difficulty": "medium",

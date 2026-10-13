@@ -99,19 +99,14 @@ export function SiteFooter() {
               Prep2Go languages
             </a>
             <span aria-hidden>·</span>
-            <Link
+            <a
               className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
-              href="/comics/gaivota-em-portugal"
+              href="https://www.prep2go.study/comics/gaivota-em-portugal"
+              rel="noopener"
+              target="_blank"
             >
               Gaivota comics
-            </Link>
-            <span aria-hidden>·</span>
-            <Link
-              className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"
-              href="/comics/gaivota-em-portugal/03-aljubarrota"
-            >
-              Aljubarrota (Ep.03)
-            </Link>
+            </a>
             <span aria-hidden>·</span>
             <a
               className="underline decoration-[#18140f]/15 underline-offset-2 transition hover:text-[#4f493e]"

@@ -104,7 +104,7 @@ describe("exam-llm-layer", () => {
     const category = buildMockAiCategory(leedConfig);
 
     expect(description.length).toBeLessThanOrEqual(500);
-    expect(description).toContain("50 timed questions");
+    expect(description).toContain("60 timed questions");
     expect(description).toContain("170");
     expect(category).toContain("exam-prep");
     expect(category).toContain("mock-exam");

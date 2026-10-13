@@ -169,7 +169,7 @@ describe("anki-deck-launch", () => {
       expect(launched.apkgStatus).toBe("ready");
       expect(launched.checkoutUrl).toContain("leed-green-associate-anki-deck");
       expect(launched.checkoutProvider).toBe("Gumroad");
-      expect(launched.facts.cards).toBe("250");
+      expect(launched.facts.cards).toBe("120");
       expect(launched.facts.delivery).toContain("instant download");
       expect(launched.importSteps?.length).toBeGreaterThan(0);
     }

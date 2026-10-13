@@ -636,27 +636,27 @@
     "options": [
       {
         "id": "a",
-        "text": "2.5 hours"
+        "text": "5 hours"
       },
       {
         "id": "b",
-        "text": "4 hours"
+        "text": "8⅓ hours"
       },
       {
         "id": "c",
-        "text": "4.5 hours"
+        "text": "10 hours"
       },
       {
         "id": "d",
-        "text": "5 hours"
+        "text": "12.5 hours"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Combined rate is 20 + 30 = 50 cabinets per hour, so time is 250 / 50 = 5 hours. Adding the rates is required; averaging 20 and 30 would understate the joint output.",
+    "correctOptionId": "a",
+    "explanation": "Rates of crews working at the same time add: 20 + 30 = 50 cabinets per hour. Time = work ÷ rate = 250 ÷ 50 = 5 hours. Check: in 5 hours Crew A installs 100 and Crew B installs 150, for 250 in total.",
     "distractorExplanations": {
-      "a": "Divides 250 by 100, as if the crews each did 50 per hour or the rates were doubled.",
-      "b": "Uses 250 / 62.5 or treats B’s 30 as the only rate after a 4-hour guess.",
-      "c": "Averages the two rates (25 per hour) and computes 250 / 55.5 ≈ 4.5, not 50 per hour."
+      "b": "Uses only Crew B's 30 cabinets per hour (250 ÷ 30 ≈ 8⅓) and ignores Crew A's contribution to the joint rate.",
+      "c": "Averages the two rates to 25 cabinets per hour and divides 250 ÷ 25 = 10, but crews working together add their rates.",
+      "d": "Uses only Crew A's 20 cabinets per hour (250 ÷ 20 = 12.5), as if Crew B never joined the job."
     },
     "difficulty": "easy",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."
@@ -1941,9 +1941,9 @@
     "correctOptionId": "a",
     "explanation": "Write n = 4k for a positive integer k. Then 2n = 8k, which is always a multiple of 8. The other three expressions each fail for at least one multiple of 4, so only 2n is forced.",
     "distractorExplanations": {
-      "b": "n + 4 is a multiple of 8 only when n ≡ 4 (mod 8). For n = 20, which is a multiple of 4, n + 4 = 24 is not a multiple of 8.",
+      "b": "n + 4 is a multiple of 8 only when n is an odd multiple of 4 (n = 4, 12, 20, …). For n = 8, n + 4 = 12, which is not a multiple of 8.",
       "c": "n/2 is a multiple of 2, but for n = 4 it equals 2, which is not a multiple of 8.",
-      "d": "3n is a multiple of 8 only when n already supplies a factor 8/gcd(3,8)=8. For n = 4, 3n = 12 is not a multiple of 8."
+      "d": "3 shares no factor with 8, so 3n is a multiple of 8 only when n already is. For n = 4, 3n = 12 is not a multiple of 8."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."
@@ -2220,27 +2220,27 @@
     "options": [
       {
         "id": "a",
-        "text": "No other landfill change, such as new gas flares, began in the same window and actually cut methane."
+        "text": "The methane decline was not wholly caused by some other landfill change, such as new gas flares, in those months."
       },
       {
         "id": "b",
-        "text": "Households in every neighborhood will sort food scraps as carefully as the pilot zone did once the service is rolled from the pilot zone to the remaining wards."
+        "text": "Households in every remaining ward will sort food scraps at least as carefully as households on the first routes."
       },
       {
         "id": "c",
-        "text": "Compost collection costs less per ton than expanding remaining landfill capacity over the next capital-planning cycle the public works board will vote on."
+        "text": "Collecting compost costs the city less per ton than adding the same amount of new landfill capacity would cost."
       },
       {
         "id": "d",
-        "text": "Methane readings at dumps in neighboring cities rose over the same nine months while Harbor City's own dump was the only site adding weekly organics pickup."
+        "text": "Methane readings at landfills in neighboring cities rose over the same months that Harbor City's readings fell."
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The officials treat the methane drop as an effect of compost pickup. That causal leap fails unless competing landfill changes in the same period can be ruled out.",
+    "explanation": "The officials infer that compost pickup caused the 18 percent drop. If some other landfill change, such as new flares, fully accounted for the decline, compost caused none of it and the argument collapses (negation test). The argument needs only that the drop was not entirely due to something else, not that compost was the sole factor.",
     "distractorExplanations": {
-      "b": "Citywide sorting diligence would matter for expansion success, not for the causal claim already made.",
-      "c": "Relative cost is a budget issue, not a required premise of the methane-cause argument.",
-      "d": "Other cities' methane trends are unused in the officials' reasoning about Harbor City."
+      "b": "Sorting quality in other wards affects how well an expansion performs, but the argument survives if some wards sort less carefully, so it is not required.",
+      "c": "A cost comparison could strengthen the case for expansion, yet negating it leaves the methane-cause reasoning intact, so it is not a required premise.",
+      "d": "Rising methane elsewhere would strengthen the causal claim, but the argument does not depend on neighboring cities' trends; it helps without being required."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."
@@ -2271,9 +2271,9 @@
     "correctOptionId": "b",
     "explanation": "A physiological pathway—fewer microsleeps among actual room users—ties the rooms to alertness, which is the proposed cause of fewer errors.",
     "distractorExplanations": {
-      "a": "Day-shift demand does not show that night errors fell because of naps.",
+      "a": "Day-shift nurses wanting similar rooms shows demand, not that night-shift errors fell because nurses napped in them.",
       "c": "Cafeteria hours are an independent change that could confound, not confirm, the causal story.",
-      "d": "New hires could explain fewer errors without any effect from nap rooms."
+      "d": "More newly licensed nurses on nights would, if anything, be expected to raise dispensing errors, so this does nothing to tie the decline to nap rooms."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."
@@ -4167,27 +4167,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Hospital North's cafeteria scores higher on patient surveys, which does not explain a higher raw death rate among surgical patients."
+        "text": "Hospital North's patient-satisfaction surveys rate its meals and rooms higher than Hospital South's surveys do."
       },
       {
         "id": "b",
-        "text": "Hospital South performs more outpatient wart removals than North, which might dilute South's rate without showing that North is more skilled."
+        "text": "Hospital South's surgeons publish more research papers each year than Hospital North's surgeons publish."
       },
       {
         "id": "c",
-        "text": "Parking is cheaper in Hospital South's garage than in North's, which is irrelevant to reconciling reputation with crude surgical deaths."
+        "text": "Hospital North charges higher fees for most surgical procedures than Hospital South charges for the same work."
       },
       {
         "id": "d",
-        "text": "North accepts a far higher share of unstable transfers, so its mix is sicker even if its surgical skill is greater."
+        "text": "North receives far more unstable transfers from other hospitals, so its surgical patients arrive much sicker."
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A sicker incoming mix can raise raw death rates at a more capable trauma center, reconciling reputation with the crude statistic.",
+    "explanation": "A far sicker incoming mix can raise a capable trauma center's raw death rate. If North takes most unstable transfers, its higher crude rate is compatible with surgeons judging it the stronger center, which reconciles the two claims.",
     "distractorExplanations": {
-      "a": "Cafeteria scores do not explain surgical death rates.",
-      "b": "Wart removals at South would lower South's death rate by diluting the denominator, which could widen North's gap but does not show North is stronger.",
-      "c": "Parking prices are irrelevant to surgical outcomes."
+      "a": "Satisfaction with meals and rooms says nothing about surgical risk or skill, so North's higher death rate is left unexplained.",
+      "b": "More research output at South, if anything, supports South's reputation, so it deepens rather than resolves the conflict with surgeons' view.",
+      "c": "Higher fees at North describe pricing, not patient severity or outcomes, so they cannot explain why the stronger center has more deaths."
     },
     "difficulty": "hard",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."
@@ -4398,27 +4398,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Tourist brochures were not reprinted for six weeks, which is too minor to reverse a national trade-balance prediction."
+        "text": "Exporters advertised their newly lower foreign-currency prices heavily across their main overseas markets."
       },
       {
         "id": "b",
-        "text": "The central bank published the exchange rate on its website, which is a transparency step rather than a cost channel for exporters."
+        "text": "The central bank had announced weeks in advance that it expected the currency to weaken during that quarter."
       },
       {
         "id": "c",
-        "text": "Domestic firms rely on imported parts billed in foreign currency, so export costs rose with the depreciation, which does not explain import-cost pass-through on the country's exports."
+        "text": "Most exporters rely on imported parts billed in foreign currency, so their production costs rose with the drop."
       },
       {
         "id": "d",
-        "text": "A trading partner's soccer team won a regional tournament that month."
+        "text": "Residents took more domestic holidays instead of trips abroad, since foreign travel had become pricier for them."
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "If exporters' imported inputs rise in local cost as the currency falls, export prices need not become more competitive, so the trade balance can worsen.",
+    "correctOptionId": "c",
+    "explanation": "The economist assumes depreciation makes exports cheaper for foreigners. If exporters' imported parts are billed in foreign currency, their costs rise as the currency falls, so export prices need not drop while the import bill grows. That explains why the trade balance worsened.",
     "distractorExplanations": {
-      "a": "Brochure lag is too minor to reverse a national trade-balance prediction.",
-      "b": "Publishing the rate is transparency, not a cost channel.",
-      "c": "A soccer result does not explain import-cost pass-through on exports."
+      "a": "Heavier marketing of cheaper exports should raise export volume, which deepens the puzzle instead of explaining why the balance got worse.",
+      "b": "Announcing the expected drop in advance changes nothing about export costs or import bills, so it cannot explain the balance moving the wrong way.",
+      "d": "Fewer trips abroad cut spending on foreign services, which pushes the balance toward improvement and makes the worsening harder to explain."
     },
     "difficulty": "hard",
     "sourceNote": "Ops rewrite 2026-10-04 current GMAT Exam (no SC, no Quant geometry, DS only in DI)."

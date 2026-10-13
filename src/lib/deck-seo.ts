@@ -981,9 +981,9 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "BMS / BAS Exam Prep | 200+ Cards + Free Mock",
   },
   "leed-green-associate-anki-deck": {
-    title: "LEED GA Prep | 250+ Cards + Free Mock",
+    title: "LEED GA Prep | 120 Cards + Free Mock",
     description:
-      "LEED Green Associate exam prep: 250 flashcards covering v4.1 concepts and process domains. Free 50-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
+      "LEED Green Associate exam prep: 120 flashcards written to the LEED v5 exam specifications. Free 60-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
     keywords: [
       "leed green associate exam prep",
       "leed ga exam prep free",
@@ -993,7 +993,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
   },
   "leed-ap-bd-c-anki-deck": {
-    title: "LEED AP BD+C Prep | 250+ Cards + Free Mock",
+    title: "LEED AP BD+C Prep | 120 Cards + Free Mock",
   },
   "well-ap-anki-deck": {
     title: "WELL AP Exam Prep | 250+ Cards + Free Mock",

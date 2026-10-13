@@ -1657,7 +1657,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Equivalent Melanopic Lux (EML) at the eye"
+        "text": "Melanopic EDI measured at the eye"
       },
       {
         "id": "b",
@@ -1673,14 +1673,14 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WELL Light concepts emphasize circadian-effective illumination evaluated at the occupant's eye using melanopic weighting, commonly expressed as EML rather than generic illuminance alone.",
+    "explanation": "WELL v2 Light evaluates circadian-effective light with melanopic equivalent daylight illuminance (melanopic EDI), measured on the vertical plane at the occupant's eye; older WELL text expressed the same targets as equivalent melanopic lux (EML), roughly 1.1 times melanopic EDI. Workplane lumens, wattage or CRI do not capture melanopic stimulus.",
     "distractorExplanations": {
       "b": "Horizontal workplane lux does not account for vertical eye-level exposure or melanopic spectrum weighting.",
       "c": "Wattage does not describe spectral content or retinal circadian response.",
       "d": "CRI describes color rendering quality, not circadian stimulus."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-002",
@@ -1719,34 +1719,34 @@
     "id": "well-ap-readiness-check-light-movement-thermal-003",
     "examSlug": "well-ap-readiness-check",
     "topicId": "light-movement-thermal",
-    "prompt": "Under ASHRAE Standard 55 thermal comfort principles referenced in WELL Thermal Comfort, what does PMV primarily indicate?",
+    "prompt": "A comfort model for a sunny conference room returns PMV +0.9 in mid-afternoon. How should the WELL project team read this result against ASHRAE 55?",
     "options": [
       {
         "id": "a",
-        "text": "Percentage of occupants predicted to be dissatisfied with the space"
+        "text": "Occupants feel slightly cool, so the room needs more heating that afternoon"
       },
       {
         "id": "b",
-        "text": "Mean radiant temperature of the surfaces surrounding an occupant"
+        "text": "The room is comfortable, since any PMV between −1 and +1 meets ASHRAE 55"
       },
       {
         "id": "c",
-        "text": "Metabolic rate of occupants expressed in met units for each activity"
+        "text": "PMV +0.9 means 90% of occupants are satisfied with the room conditions"
       },
       {
         "id": "d",
-        "text": "Predicted mean vote of thermal sensation on a comfort scale"
+        "text": "Occupants lean warm, outside the ±0.5 band, so heat gain should be reduced"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "PMV (Predicted Mean Vote) models average thermal sensation based on environmental and personal factors such as air temperature, radiant temperature, humidity, air speed, clothing, and metabolic rate.",
+    "explanation": "PMV predicts the average thermal sensation on a seven-point scale from −3 (cold) to +3 (hot). ASHRAE 55's comfort zone for mechanically conditioned spaces is PMV −0.5 to +0.5, which corresponds to about 10% or fewer dissatisfied (PPD). At +0.9 occupants lean warm and roughly a fifth are predicted dissatisfied, so solar or internal gains, supply air or air speed need attention.",
     "distractorExplanations": {
-      "a": "That describes PPD (Predicted Percentage Dissatisfied), which is derived from PMV but is a separate index.",
-      "b": "Mean radiant temperature is one input to the PMV calculation, not what the PMV index itself represents.",
-      "c": "Metabolic rate (met) is an input to PMV alongside clothing, air temperature, radiant temperature, air speed and humidity."
+      "a": "Positive PMV values mean warm sensations; +0.9 leans warm, so adding heat would make the conference room worse.",
+      "b": "ASHRAE 55 sets the comfort zone at PMV −0.5 to +0.5 for conditioned spaces; +0.9 falls outside that range.",
+      "c": "PMV is a thermal sensation vote, not a percentage; PPD at +0.9 is about 22% dissatisfied, well above the 10% target."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-004",
@@ -1983,34 +1983,34 @@
     "id": "well-ap-readiness-check-light-movement-thermal-011",
     "examSlug": "well-ap-readiness-check",
     "topicId": "light-movement-thermal",
-    "prompt": "Which color temperature strategy during daytime hours generally supports alertness in office environments while maintaining visual comfort?",
+    "prompt": "A lighting designer compares two 4000 K LED luminaires for open-office workstations pursuing WELL L03 Circadian Lighting Design. What decides which one better meets the circadian target?",
     "options": [
       {
         "id": "a",
-        "text": "Warm 2700 K lighting during the day to reduce eye strain and match residential settings"
+        "text": "The one with the higher CRI, since color fidelity sets its circadian stimulus"
       },
       {
         "id": "b",
-        "text": "Neutral to cool-white spectrum with adequate melanopic content during working hours"
+        "text": "The melanopic EDI each delivers at the eye, from its spectrum and output"
       },
       {
         "id": "c",
-        "text": "Cool 6500 K lighting at maximum output in the morning and evening, dimmed at midday"
+        "text": "Nothing separates them, because equal CCT means equal circadian effect"
       },
       {
         "id": "d",
-        "text": "Low-intensity lighting below 150 lux with high color rendering for visual comfort"
+        "text": "The one with lower wattage, since efficiency sets melanopic content"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Daytime lighting with appropriate spectrum and intensity supports visual performance and circadian entrainment; WELL Light encourages designed day-night contrast rather than flat warm dim light all day.",
+    "explanation": "Correlated color temperature only summarizes how warm or cool light looks; two 4000 K sources can have different spectral power distributions and therefore different melanopic ratios. WELL L03 is judged by melanopic equivalent daylight illuminance (melanopic EDI) on the vertical plane at the eye, which combines the luminaire's spectrum with how much light actually reaches the occupant.",
     "distractorExplanations": {
-      "a": "Warm 2700 K light has low melanopic content, which provides weaker daytime circadian stimulus for alertness.",
-      "c": "Bright cool light in the evening delays the circadian clock; strong melanopic light belongs in daytime working hours.",
-      "d": "Good color rendering does not offset very low illuminance, which gives little melanopic stimulus for daytime alertness."
+      "a": "CRI describes how faithfully colors render, not how strongly light stimulates the melanopsin-containing cells that drive circadian response.",
+      "c": "CCT is a single appearance number; spectra behind the same CCT can differ, so melanopic content and melanopic EDI can differ too.",
+      "d": "Wattage reflects energy use and efficacy, not the spectral content or the amount of light reaching the eye that L03 measures."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-012",
@@ -2082,34 +2082,34 @@
     "id": "well-ap-readiness-check-light-movement-thermal-014",
     "examSlug": "well-ap-readiness-check",
     "topicId": "light-movement-thermal",
-    "prompt": "Which metric pair is commonly used together to describe thermal environment acceptability under ASHRAE 55?",
+    "prompt": "An engineer's PMV/PPD model for a new spin-class studio reuses the office defaults of 1.1 met and 1.0 clo. Which correction matters most before the results are used?",
     "options": [
       {
         "id": "a",
-        "text": "PMV and PPD (Predicted Percentage Dissatisfied)"
+        "text": "Set metabolic rate and clothing to suit the vigorous, lightly clad riders"
       },
       {
         "id": "b",
-        "text": "MRT and SHGC (Solar Heat Gain Coefficient)"
+        "text": "Raise the mean radiant temperature input to match the office default value"
       },
       {
         "id": "c",
-        "text": "EML and CCT (Equivalent Melanopic Lux, Color Temperature)"
+        "text": "Swap the PMV model for a daylight metric such as spatial daylight autonomy"
       },
       {
         "id": "d",
-        "text": "sDA and ASE (Annual Sunlight Exposure)"
+        "text": "Keep the inputs, since PMV does not depend on activity or clothing levels"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PMV estimates mean thermal sensation while PPD estimates the percentage of occupants likely dissatisfied, forming the standard thermal comfort evaluation pair in ASHRAE 55.",
+    "explanation": "PMV and PPD are calculated from four environmental inputs (air temperature, mean radiant temperature, air speed and humidity) and two personal inputs: metabolic rate (met) and clothing insulation (clo). Spin-class riders have a far higher metabolic rate and wear much less clothing than seated office workers, so office defaults would misjudge comfort badly; the personal inputs must match the actual activity.",
     "distractorExplanations": {
-      "b": "Mean radiant temperature is a PMV input and SHGC is a glazing property; neither pair expresses acceptability under ASHRAE 55.",
-      "c": "EML and CCT are lighting metrics used in WELL Light, not thermal comfort indices from ASHRAE 55.",
-      "d": "sDA and ASE are daylighting metrics from IES LM-83, not ASHRAE 55 thermal acceptability measures."
+      "b": "Mean radiant temperature is an environmental input modeled for the room; copying an office default does not fix the personal inputs.",
+      "c": "sDA is a daylight metric and cannot assess thermal comfort; PMV/PPD is right once its inputs reflect the activity.",
+      "d": "Metabolic rate and clothing insulation are two of PMV's six inputs, so leaving office values in a spin studio skews the result."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-015",
@@ -2269,12 +2269,12 @@
     "correctOptionId": "d",
     "explanation": "Tunable-white systems allow programmed or manual shifts in color temperature and output to create day-evening contrast aligned with WELL Light circadian design.",
     "distractorExplanations": {
-      "a": "CRI describes color fidelity; circadian lighting in WELL is measured with melanopic metrics such as EML.",
+      "a": "CRI describes color fidelity; circadian lighting in WELL is measured with melanopic metrics such as melanopic EDI at the eye.",
       "b": "Tunable spectrum does not reduce luminaire luminance; glare control depends on optics, shielding and placement.",
       "c": "Flicker performance depends on the driver; tunable-white fixtures exist to vary spectrum and intensity over the day."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-020",
@@ -2577,34 +2577,34 @@
     "id": "well-ap-readiness-check-light-movement-thermal-029",
     "examSlug": "well-ap-readiness-check",
     "topicId": "light-movement-thermal",
-    "prompt": "A project measures Equivalent Melanopic Lux (EML) at 9 a.m. near a window workstation. Why is time of day important for interpretation?",
+    "prompt": "A lighting designer documents WELL L03 Circadian Lighting Design for open-office workstations. What must the electric lighting design show?",
     "options": [
       {
         "id": "a",
-        "text": "EML depends on the sun's angle, so readings must be adjusted to an equivalent solar-noon value before comparison"
+        "text": "The target met on the horizontal work plane at a single noon reading"
       },
       {
         "id": "b",
-        "text": "Circadian-effective light targets vary by time of day to support appropriate day-night entrainment"
+        "text": "The target met at eye level, vertically, for 4+ hours starting by noon"
       },
       {
         "id": "c",
-        "text": "EML is measured on the horizontal plane, so morning sun distorts the horizontal reading"
+        "text": "A morning target that steps down to a lower target each hour after noon"
       },
       {
         "id": "d",
-        "text": "Morning readings include electric light, while WELL counts daylight only in EML values"
+        "text": "The target met by daylight alone, with the electric lighting switched off"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "WELL Light evaluates whether daytime periods provide adequate circadian stimulus relative to time-of-day expectations, not a single static threshold at all hours.",
+    "explanation": "WELL v2 L03 sets minimum melanopic EDI thresholds at workstations, about 136 melanopic EDI (150 EML) for 1 point or 250 (275 EML) for 3 points, with lower targets when daylight is enhanced, measured on the vertical plane at eye level. The level must be maintained for at least four hours, beginning no later than noon; it is a minimum held for a duration, not a target that varies hour by hour.",
     "distractorExplanations": {
-      "a": "EML is not normalized to noon; WELL compares readings with time-of-day targets for circadian entrainment.",
-      "c": "EML for circadian assessment is measured vertically at the eye, not on the horizontal work plane.",
-      "d": "EML counts melanopic light from any source, daylight or electric, measured at the eye."
+      "a": "Circadian light is measured vertically at the eye, where it enters the eye, and must last at least four hours, not one noon reading.",
+      "c": "L03 uses a minimum threshold held for a duration, not a schedule of hourly targets; evening dimming is a separate strategy.",
+      "d": "L03 relies on electric lighting at workstations; enhanced daylight can lower the threshold but does not replace the electric design."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-030",
@@ -3105,34 +3105,34 @@
     "id": "well-ap-readiness-check-light-movement-thermal-045",
     "examSlug": "well-ap-readiness-check",
     "topicId": "light-movement-thermal",
-    "prompt": "Which metric flags floor area at risk of glare and overheating because it receives more than 1,000 lux of direct beam light for over 250 occupied hours a year?",
+    "prompt": "A daylight simulation for a south-facing open office shows sDA300,50% met across 80% of the floor, but a deep perimeter band exceeds ASE1000,250 (over 1,000 lux of direct sun for more than 250 hours a year). What should the design team conclude?",
     "options": [
       {
         "id": "a",
-        "text": "Daylight factor measured at a single point under a CIE overcast sky at the work plane"
+        "text": "The strong sDA result shows glare is controlled, so the design can proceed"
       },
       {
         "id": "b",
-        "text": "Annual sunlight exposure (ASE), reported alongside spatial daylight autonomy"
+        "text": "Daylight is plentiful, but the perimeter needs exterior shading or glazing control"
       },
       {
         "id": "c",
-        "text": "Unified Glare Rating calculated for each luminaire in the occupied zone across the working year"
+        "text": "Modeling interior blinds as closed in the ASE run is the right way to fix the result"
       },
       {
         "id": "d",
-        "text": "Equivalent Melanopic Lux measured at the eye at 9 a.m. on a set date each season"
+        "text": "Switching to a single-point daylight factor check will remove the sunlight issue"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ASE (ASE1000,250) is the share of floor area receiving over 1,000 lux of direct sunlight for more than 250 occupied hours a year; it is paired with sDA so a design gets enough daylight without excessive glare or overheating.",
+    "explanation": "sDA and ASE answer different questions: sDA shows whether enough daylight reaches the floor, while ASE flags area hit by enough direct sun to cause glare and heat gain. A high sDA with a large ASE band means the perimeter needs sun control such as exterior shading, fins, light shelves or lower-transmittance glazing, rechecked so sDA stays strong. Per IES LM-83, interior blinds are excluded from the ASE calculation.",
     "distractorExplanations": {
-      "a": "Daylight factor is a static point ratio under one overcast sky, so it cannot count annual hours of direct sun.",
-      "c": "UGR rates discomfort glare from electric luminaires and does not track hours of direct sunlight over the year.",
-      "d": "EML is a point-in-time circadian measure at the eye, not an annual cumulative direct-sunlight metric."
+      "a": "sDA counts adequate daylight, not excess; a large ASE band is the separate warning that direct sun will cause glare and overheating.",
+      "c": "IES LM-83 excludes interior shades from the ASE calculation, so closing them in the model hides the problem instead of solving it.",
+      "d": "A daylight factor uses an overcast sky with no direct sun, so it cannot assess sunlight exposure; changing metrics avoids the issue."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-light-movement-thermal-046",
@@ -3399,37 +3399,37 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-mind-community-004",
+    "id": "well-ap-readiness-check-mind-community-052",
     "examSlug": "well-ap-readiness-check",
     "topicId": "mind-community",
-    "prompt": "Which employer program best exemplifies WELL v2 Civic Engagement (C11) volunteering strategies?",
+    "prompt": "Before schematic design of a new WELL headquarters, the owner wants to show the project followed an integrative design process. Which early step best demonstrates it?",
     "options": [
       {
         "id": "a",
-        "text": "A matching-gift program open to senior staff alone, with no volunteering component"
+        "text": "Hire a WELL Performance Testing Agent to sample air quality before design starts"
       },
       {
         "id": "b",
-        "text": "An annual team-building retreat focused on internal collaboration skills"
+        "text": "Ask the architect to choose features alone and present the scorecard at handover"
       },
       {
         "id": "c",
-        "text": "Paid volunteer time off paired with organized community service opportunities"
+        "text": "Hold a stakeholder charrette to set health goals and assign who owns each one"
       },
       {
         "id": "d",
-        "text": "Mandatory weekend volunteering tracked as part of performance reviews"
+        "text": "Copy a past project's scorecard so the team can skip early goal-setting meetings"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "WELL v2 moved v1 'altruism' into the Community concept as C11 Civic Engagement, which rewards paid volunteer time and organized community service opportunities that connect people to purposeful prosocial activity.",
+    "explanation": "WELL's integrative design feature (C02) centers on bringing owners, designers, operators and occupant representatives together early, typically in a charrette, to agree on health and well-being goals, map them to WELL features and decide who is responsible for each. Doing this before schematic design lets the goals shape the design instead of being retrofitted at documentation time.",
     "distractorExplanations": {
-      "a": "Limiting the program to senior staff excludes most employees, and no volunteering component is offered at all.",
-      "b": "Internal team-building builds collaboration but does not involve giving time or service to the wider community.",
-      "d": "Making volunteering mandatory and tying it to reviews makes it coercive, which undermines the well-being benefit."
+      "a": "Performance testing verifies a finished building; testing an empty site before design does nothing to align stakeholders on goals.",
+      "b": "Having one discipline pick features alone is the opposite of integrative design, which relies on shared early decision-making.",
+      "d": "Reusing an old scorecard skips the stakeholder goal-setting that the feature is meant to document for this specific project."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-mind-community-005",
@@ -3765,34 +3765,34 @@
     "id": "well-ap-readiness-check-mind-community-015",
     "examSlug": "well-ap-readiness-check",
     "topicId": "mind-community",
-    "prompt": "A university building renovation must meet WELL Community universal design. Which corridor detail is most critical for mobility device users?",
+    "prompt": "A university renovation documents WELL's accessibility and universal design feature against the 2010 ADA Standards. One corridor is 48 inches wide and 300 feet long. What does this route need to comply?",
     "options": [
       {
         "id": "a",
-        "text": "Minimum 36-inch clear passage width with passing spaces at intervals"
+        "text": "Passing spaces at least 60 by 60 inches, no more than 200 feet apart"
       },
       {
         "id": "b",
-        "text": "Continuous handrails on both sides, with corridor widths set by egress occupant load"
+        "text": "Nothing more, because 48 inches already exceeds the 36-inch minimum clear width"
       },
       {
         "id": "c",
-        "text": "Thick carpet with cushioned underlay to reduce noise along the corridor route"
+        "text": "Widening to 72 inches along its full length so two wheelchairs can always pass"
       },
       {
         "id": "d",
-        "text": "Raised thresholds at each doorway to separate floor finishes between rooms"
+        "text": "Handrails on both sides, which the ADA requires along every accessible route"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Adequate corridor clear width and passing spaces are fundamental universal design requirements so wheelchair and scooter users can navigate independently.",
+    "explanation": "Under the 2010 ADA Standards, an accessible route needs a 36-inch minimum clear width (section 403.5.1), and any route narrower than 60 inches must provide passing spaces at intervals of 200 feet maximum (403.5.3). A passing space is either a 60-by-60-inch area or a T-shaped intersection, so this 48-inch, 300-foot corridor needs at least one along its length.",
     "distractorExplanations": {
-      "b": "Egress widths are sized for evacuation capacity, not mobility-device passage and passing space requirements.",
-      "c": "Thick, cushioned carpet raises rolling resistance for wheelchairs; firm, stable surfaces are needed.",
-      "d": "Raised thresholds create level changes that obstruct mobility devices; transitions should be flush or beveled."
+      "b": "36 inches is the minimum width, but routes narrower than 60 inches also need passing spaces at most 200 feet apart.",
+      "c": "The ADA does not require a 72-inch width; periodic 60-by-60-inch passing spaces let two wheelchair users pass on a narrower route.",
+      "d": "Handrails are required on ramps and stairs, not on level corridors; level accessible routes need width and passing spaces instead."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-mind-community-016",
@@ -4029,34 +4029,34 @@
     "id": "well-ap-readiness-check-mind-community-023",
     "examSlug": "well-ap-readiness-check",
     "topicId": "mind-community",
-    "prompt": "Which hearing-accessibility feature supports universal design in a conference center?",
+    "prompt": "At a renovated conference center, attendees who use hearing aids report they cannot follow ballroom presentations even though the PA system is loud and clear to others. Which retrofit most directly fixes this?",
     "options": [
       {
         "id": "a",
-        "text": "Sound masking raised to higher levels inside assembly spaces"
+        "text": "Raise the sound masking level in the ballroom during presentations"
       },
       {
         "id": "b",
-        "text": "Higher-STC partitions between assembly rooms and corridors"
+        "text": "Upgrade the ballroom walls to a higher STC rating against corridors"
       },
       {
         "id": "c",
-        "text": "Hearing loop (induction loop) systems in assembly spaces"
+        "text": "Install a hearing loop or assistive listening system tied to the PA"
       },
       {
         "id": "d",
-        "text": "Louder PA speakers in assembly spaces with no assistive link"
+        "text": "Turn up the PA loudspeakers and add more of them around the whole room"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Hearing loops transmit audio directly to compatible hearing aids and cochlear implants, a recognized universal design strategy for equitable access to spoken information.",
+    "explanation": "Hearing aids pick up room reverberation and background noise along with the talker, so a louder PA helps little. A hearing (induction) loop or other assistive listening system feeds the PA signal directly to telecoil-equipped hearing aids, cochlear implants or receivers, delivering clean speech at any seat, which is a core universal design strategy for assembly spaces.",
     "distractorExplanations": {
-      "a": "Sound masking lowers speech intelligibility on purpose; raising it in assembly rooms makes listening harder for hearing-aid users.",
+      "a": "Sound masking lowers speech intelligibility on purpose; raising it in the ballroom makes listening harder for hearing-aid users.",
       "b": "STC upgrades block sound between rooms for privacy; they do not deliver speech to hearing aids or cochlear implants.",
       "d": "Turning up loudspeakers adds reverberant noise and still gives hearing-aid users no direct audio feed like an induction loop does."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-mind-community-024",
@@ -4719,37 +4719,37 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-mind-community-044",
+    "id": "well-ap-readiness-check-mind-community-051",
     "examSlug": "well-ap-readiness-check",
     "topicId": "mind-community",
-    "prompt": "A corporate campus donates skilled volunteer hours to build affordable housing with a local nonprofit. Which WELL v2 Community feature is most directly demonstrated?",
+    "prompt": "A 300-employee owner-occupied office is setting up the C04 Occupant Survey. Managers want to see each person's answers so they can follow up individually. How should the team respond?",
     "options": [
       {
         "id": "a",
-        "text": "Health and wellness promotion through a fitness challenge"
+        "text": "Agree, as long as employees can opt out of having their name shown"
       },
       {
         "id": "b",
-        "text": "Responsible labor practices through contractor wage audits"
+        "text": "Survey only the managers' direct reports, since they can act on results"
       },
       {
         "id": "c",
-        "text": "Civic engagement through community volunteering"
+        "text": "Keep responses anonymous and report results only in aggregated form"
       },
       {
         "id": "d",
-        "text": "Housing equality through affordable unit set-asides on site"
+        "text": "Run the survey once before certification and skip later annual rounds"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Skills-based volunteering for a community nonprofit is C11 Civic Engagement in the WELL v2 Community concept (the successor to v1 Mind 'altruism'); it connects employees to purposeful prosocial activity.",
+    "explanation": "WELL v2 C04 requires that all eligible employees be invited annually, with reminders, and that participant-identifying data be protected through measures such as anonymous reporting and secure storage. Results are communicated only in aggregate so no individual can be identified, analysis is done by a qualified survey professional, and aggregated results are reported through the WELL platform each year.",
     "distractorExplanations": {
-      "a": "A fitness challenge is health and wellness promotion; donating skilled volunteer hours is engagement with the wider community.",
-      "b": "Wage audits address labor practices in the supply chain, not employees volunteering with a housing nonprofit.",
-      "d": "Housing equity concerns affordable units within the project itself; volunteering off site for a nonprofit is civic engagement."
+      "a": "C04 protects participant-identifying data; showing named answers to managers, even with an opt-out, breaks that protection.",
+      "b": "C04 invites all eligible employees, not a subset chosen by managers, so the results reflect the whole occupant population.",
+      "d": "C04 is an ongoing requirement: the survey is administered and results are reported annually, not only once before certification."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-mind-community-045",
@@ -5811,34 +5811,34 @@
     "id": "well-ap-readiness-check-sound-materials-027",
     "examSlug": "well-ap-readiness-check",
     "topicId": "sound-materials",
-    "prompt": "For a WELL open office targeting acoustic comfort during focused work, which background noise design target is most consistent with common NC guidance for such spaces?",
+    "prompt": "An HVAC designer is assigning background-noise criteria to spaces in a WELL office. Which space should get the lowest (quietest) NC target?",
     "options": [
       {
         "id": "a",
-        "text": "NC 20–25 with balanced spectrum, as specified for recording studios"
+        "text": "The open-plan workstation area, where staff do focused individual desk work"
       },
       {
         "id": "b",
-        "text": "NC in the low-to-mid 30s to low 40s range with balanced spectrum"
+        "text": "The teleconference room, where remote speech must stay intelligible"
       },
       {
         "id": "c",
-        "text": "NC 50–55 with balanced spectrum, relying on HVAC noise as masking"
+        "text": "The main lobby, where visitors wait and check in at reception"
       },
       {
         "id": "d",
-        "text": "NC 60–65 with balanced spectrum, as in industrial production areas"
+        "text": "The staff café, where people gather and talk during breaks"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Open offices generally require moderate, balanced background levels—often in the NC 35–45 range depending on program and masking—so HVAC noise does not distract yet can support speech privacy when combined with absorption and layout strategies. Sound masking can supplement that background where speech privacy is needed.",
+    "explanation": "Rooms built for listening need the quietest background: conference and teleconference rooms are typically designed around NC 25–30 so speech picked up by microphones and heard over loudspeakers stays clear. Open offices are usually set higher, around NC 40, because steady background sound helps mask nearby conversations, while lobbies and cafés tolerate NC 40–45 or more.",
     "distractorExplanations": {
-      "a": "NC 20–25 suits studios and concert halls; in an open office it is so quiet that nearby speech becomes highly intelligible.",
-      "c": "NC 50–55 suits lobbies or kitchens; it is too loud for focused work, and HVAC noise is a poor substitute for tuned masking.",
-      "d": "NC 60–65 belongs in industrial or plant spaces and would be distracting and fatiguing in an open office."
+      "a": "Open offices benefit from moderate background sound that masks nearby speech; a very low NC makes neighboring conversations more distracting.",
+      "c": "Lobbies are transient spaces with no sustained listening task, so they tolerate a higher background level than meeting rooms.",
+      "d": "Cafés are social spaces with high activity noise; a strict low NC target there brings little benefit compared with meeting rooms."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-sound-materials-028",
@@ -6039,37 +6039,37 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-sound-materials-034",
+    "id": "well-ap-readiness-check-sound-materials-052",
     "examSlug": "well-ap-readiness-check",
     "topicId": "sound-materials",
-    "prompt": "An environmental consultant confirms friable asbestos-containing pipe insulation in a mechanical room scheduled for upgrade. What is the correct project response?",
+    "prompt": "A WELL campus project keeps an outdoor wooden play structure built in 1998. What should the team assess before reopening it to children?",
     "options": [
       {
         "id": "a",
-        "text": "Use the mechanical contractor's crew with N95 masks, wet methods, and bagged disposal in standard dumpsters"
+        "text": "Whether the wood meets current fire-retardant treatment rules for play equipment"
       },
       {
         "id": "b",
-        "text": "Encapsulate the friable insulation and proceed with the mechanical upgrade around it without notifying occupants"
+        "text": "Whether the finish is low-VOC under CDPH chamber testing for indoor products"
       },
       {
         "id": "c",
-        "text": "Use licensed abatement contractors, isolation barriers, negative pressure, and proper disposal per regulations"
+        "text": "Whether the wood is CCA-treated, then seal or replace it and check nearby soil"
       },
       {
         "id": "d",
-        "text": "Use licensed abatement contractors but schedule removal during occupied hours with positive pressure to the work area"
+        "text": "Whether the structure's acoustic reflections exceed outdoor play-area limits"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Confirmed friable asbestos requires regulated abatement with trained personnel, containment, air monitoring as required, and lawful disposal. WELL projects must protect workers and future occupants from fiber release during renovation.",
+    "explanation": "Chromated copper arsenate (CCA) was widely used on outdoor wood until US residential use ended at the close of 2003, so a 1998 play structure may leach arsenic onto hands and into the soil below. WELL's Materials concept addresses this risk: identify CCA-treated wood, then seal it regularly or replace it, and check the surrounding soil for arsenic, especially where children play.",
     "distractorExplanations": {
-      "a": "Friable asbestos removal requires licensed abatement workers and regulated disposal, not general crews and standard dumpsters.",
-      "b": "An upgrade around friable material will disturb it, and skipping notification ignores occupant protection requirements.",
-      "d": "Positive pressure pushes fibers out of the work area; abatement uses negative pressure and isolation from occupants."
+      "a": "Fire-retardant treatment is not the concern for outdoor play wood; older pressure-treated lumber may contain arsenic from CCA.",
+      "b": "CDPH chamber testing addresses VOC emissions from interior products; the outdoor hazard here is arsenic from CCA treatment.",
+      "d": "Acoustic reflection is not a hazard criterion for play equipment; the health risk from 1998 lumber is arsenic exposure."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-sound-materials-035",
@@ -6237,37 +6237,37 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-sound-materials-040",
+    "id": "well-ap-readiness-check-sound-materials-051",
     "examSlug": "well-ap-readiness-check",
     "topicId": "sound-materials",
-    "prompt": "An acoustical consultant conducts a pre-design noise survey with sound level meters and octave-band analysis. How should the team use these data in a WELL Sound workflow?",
+    "prompt": "A new office faces a busy freeway, and the acoustician warns that low-frequency truck rumble will be the main intrusion through the windows. Which rating should guide the facade glazing selection?",
     "options": [
       {
         "id": "a",
-        "text": "Map measured levels to floor plans, identify exceedances versus targets, and prioritize acoustic treatments by zone"
+        "text": "Outdoor-Indoor Transmission Class (OITC), weighted for traffic noise"
       },
       {
         "id": "b",
-        "text": "Average the readings into one building-wide dBA value and compare it with a single WELL limit for the project"
+        "text": "Sound Transmission Class (STC), tuned to speech-frequency sound"
       },
       {
         "id": "c",
-        "text": "Use the readings to set partition STC values from lab data without linking them to floor plan zones"
+        "text": "Noise Reduction Coefficient (NRC), based on surface sound absorption"
       },
       {
         "id": "d",
-        "text": "Submit the raw readings as performance verification in place of post-occupancy acoustic testing"
+        "text": "Impact Insulation Class (IIC), based on footfall noise through floors"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Noise surveys support evidence-based design by linking measured spectra and levels to specific spaces. Mapped results inform whether to adjust HVAC, add masking, improve isolation, or increase absorption where occupants experience distraction.",
+    "explanation": "OITC (ASTM E1332) rates facade assemblies against a source spectrum dominated by low-frequency transportation noise such as trucks, trains and aircraft, so it predicts traffic intrusion better than STC. Two windows with the same STC can differ markedly in OITC; laminated or asymmetric insulating glass with a wider air gap usually improves the low-frequency result.",
     "distractorExplanations": {
-      "b": "A building-wide average hides zone-level problems; WELL targets vary by space type and need spatial mapping.",
-      "c": "Without linking readings to zones, the team cannot see where exceedances occur or which treatments to prioritize.",
-      "d": "Pre-design surveys inform design; they do not replace performance verification of the completed, occupied space."
+      "b": "STC is weighted toward speech frequencies and can overstate a window's performance against low-frequency traffic rumble.",
+      "c": "NRC describes how much sound a surface absorbs inside a room; it says nothing about blocking noise through the facade.",
+      "d": "IIC rates floor-ceiling assemblies against impact sources such as footsteps, not airborne traffic noise through windows."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-sound-materials-041",
@@ -6765,70 +6765,70 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-well-certification-portfolio-006",
+    "id": "well-ap-readiness-check-well-certification-portfolio-051",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Which statement best distinguishes WELL v2 Preconditions from Optimizations?",
+    "prompt": "A project in a country with its own drinking-water testing method wants to use that method instead of the one a WELL Water feature specifies. What is the correct route?",
     "options": [
       {
         "id": "a",
-        "text": "Preconditions are optional strategies worth extra points; Optimizations are the mandatory baseline for each level"
+        "text": "Use the local method and explain the swap in the final documentation"
       },
       {
         "id": "b",
-        "text": "Preconditions are mandatory baseline requirements; Optimizations are optional strategies that earn points"
+        "text": "Seek an IWBI-approved alternative adherence path (AAP) before submitting"
       },
       {
         "id": "c",
-        "text": "Preconditions earn the most points per feature; Optimizations are optional strategies with no scoring weight"
+        "text": "Mark the feature not applicable, since local code takes priority over WELL"
       },
       {
         "id": "d",
-        "text": "Preconditions apply to Core projects only; Optimizations are the mandatory baseline for other project types"
+        "text": "Ask the Performance Testing Agent to accept the local method during testing"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "WELL v2 separates mandatory health baselines (Preconditions) from scored enhancements (Optimizations) that determine Bronze through Platinum levels. Those optimization points determine the certification level achieved.",
+    "explanation": "When a project wants to meet a feature's intent by a different method, it requests an alternative adherence path (AAP) from IWBI, or uses an existing published AAP or equivalency that covers the same situation. Approval comes before the documentation is reviewed; swapping methods on your own, declaring the feature not applicable or negotiating on site are not recognized compliance routes.",
     "distractorExplanations": {
-      "a": "This reverses the roles: Preconditions are the mandatory baseline, and Optimizations are optional point-earning strategies.",
-      "c": "Preconditions earn no points; they are pass/fail requirements, and Optimizations are where all points come from.",
-      "d": "Preconditions apply to every WELL project, and Optimizations are optional for every project type."
+      "a": "Substituting a method without IWBI approval leaves the feature non-compliant; the change must be approved as an AAP first.",
+      "c": "Local codes do not make a WELL feature not applicable; the project meets WELL or uses an approved alternative path.",
+      "d": "Testing agents follow WELL's verification protocols; they cannot approve a different method, which is IWBI's decision."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
-    "id": "well-ap-readiness-check-well-certification-portfolio-007",
+    "id": "well-ap-readiness-check-well-certification-portfolio-054",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "An existing occupied headquarters wants a WELL mark focused on measured operational outcomes in key performance areas without pursuing full feature-by-feature certification. Which program fits best?",
+    "prompt": "In a WELL Core tower, the lobby, corridors and building management office make up 1.8% of total floor area. How should the team plan performance testing?",
     "options": [
       {
         "id": "a",
-        "text": "WELL v1 compliance pathway"
+        "text": "Test only those common areas, since leased floors fall outside WELL Core"
       },
       {
         "id": "b",
-        "text": "LEED O+M Platinum equivalency"
+        "text": "Skip testing, since WELL Core projects certify on documentation alone"
       },
       {
         "id": "c",
-        "text": "WELL Performance Rating"
+        "text": "Add tenant spaces to reach 2.5% of floor area, before or after move-in"
       },
       {
         "id": "d",
-        "text": "WELL Precertification"
+        "text": "Wait until every tenant has moved in, then test each leased floor in full"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "WELL Performance Rating evaluates operational performance in areas such as Air, Water, Light, Thermal Comfort, and Sound through measurable data rather than full WELL v2 feature documentation.",
+    "explanation": "WELL Core requires at least 2.5% of total building floor area to be available for performance testing, including all common areas and spaces under building management control. If those make up less than 2.5%, the project supplements with tenant spaces, and testing in leased space can take place before or after tenants occupy it.",
     "distractorExplanations": {
-      "a": "WELL v1 is a legacy program; new projects typically pursue WELL v2 or Performance Rating.",
-      "b": "LEED O+M is a separate green building rating system, not a WELL operational pathway.",
-      "d": "Precertification is a design-phase designation, not an operational performance rating."
+      "a": "The WELL Core boundary is the whole building including leased space, and common areas below 2.5% must be supplemented with tenant space.",
+      "b": "WELL Core projects undergo performance verification like other WELL projects; documentation alone does not complete certification.",
+      "d": "Testing is sampled rather than every floor, and leased-space testing can occur before or after occupancy, so waiting is unnecessary."
     },
-    "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "hard",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-008",
@@ -6900,67 +6900,67 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-010",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Compared with WELL v1, WELL v2 introduced which structural change to how projects achieve certification levels?",
+    "prompt": "A WELL v1 Gold building is moving to WELL v2 at recertification, and the team is re-filing acoustic and thermal strategies it documented under the v1 Comfort concept. Where do they belong in WELL v2?",
     "options": [
       {
         "id": "a",
-        "text": "A percentage-of-Optimizations system with levels based on the share of features achieved"
+        "text": "In the Mind concept, which absorbed the v1 Comfort concept in v2"
       },
       {
         "id": "b",
-        "text": "A prerequisite-and-credit system adopted directly from LEED v4 rating categories"
+        "text": "In the Movement concept, which replaced the v1 Comfort concept in v2"
       },
       {
         "id": "c",
-        "text": "A pass/fail system with Preconditions only, dropping Optimizations from certification levels"
+        "text": "In a single Comfort concept that carries over from v1 unchanged in v2"
       },
       {
         "id": "d",
-        "text": "A point-based system with Preconditions plus scored Optimizations across unified scorecards"
+        "text": "In the separate Sound and Thermal Comfort concepts introduced in v2"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "WELL v2 restructured certification around mandatory Preconditions and flexible, point-based Optimizations organized into concept scorecards, improving adaptability across project types.",
+    "explanation": "WELL v1 had seven concepts (Air, Water, Nourishment, Light, Fitness, Comfort, Mind), with acoustics and thermal control grouped under Comfort. WELL v2 expanded to ten concepts: Air, Water, Nourishment, Light, Movement, Thermal Comfort, Sound, Materials, Mind and Community. Acoustic strategies map to Sound and thermal strategies to Thermal Comfort, while v1 Fitness became Movement.",
     "distractorExplanations": {
-      "a": "Levels based on the share of Optimizations achieved describe WELL v1; v2 moved to a points-based scorecard.",
-      "b": "Prerequisites and credits are LEED terms; WELL v2 uses its own Preconditions and point-scored Optimizations.",
-      "c": "WELL v2 kept Optimizations and assigned them points; levels depend on the points earned beyond Preconditions."
+      "a": "Mind covers mental health, restoration and nature; acoustic and thermal strategies moved to their own v2 concepts instead.",
+      "b": "Movement replaced the v1 Fitness concept; acoustic and thermal strategies went to the new Sound and Thermal Comfort concepts.",
+      "c": "WELL v2 split the v1 Comfort concept apart; there is no single Comfort concept in the ten-concept v2 structure."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
-    "id": "well-ap-readiness-check-well-certification-portfolio-011",
+    "id": "well-ap-readiness-check-well-certification-portfolio-052",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Many items reference a project scenario document describing building type, occupancy, and proposed strategies. What is the primary purpose of this scenario format?",
+    "prompt": "A hotel group wants annual third-party verification of its cleaning, emergency preparedness and air and water management policies across properties, without design changes or full certification. Which IWBI offering fits?",
     "options": [
       {
         "id": "a",
-        "text": "To test memorization of every Optimization point value and feature number listed on the current WELL v2 scorecard"
+        "text": "WELL Core Certification, the base-building certification pathway"
       },
       {
         "id": "b",
-        "text": "To substitute for the WELL v2 scorecard by letting candidates choose their own feature targets"
+        "text": "WELL Precertification, based on design commitments and drawings"
       },
       {
         "id": "c",
-        "text": "To evaluate application of WELL requirements to realistic project decisions rather than isolated fact recall"
+        "text": "WELL Health-Safety Rating, an operations-focused annual rating"
       },
       {
         "id": "d",
-        "text": "To assess candidates' ability to draft GBCI registration agreements and owner contract terms"
+        "text": "WELL Community, a certification for districts and neighborhoods"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Scenario-based exam items mirror practitioner judgment by presenting project context and asking candidates to select appropriate WELL strategies, documentation, or compliance paths.",
+    "explanation": "The WELL Health-Safety Rating is an evidence-based, third-party-verified rating of facility operations and management policies such as cleaning and sanitization, emergency preparedness, health service resources, air and water quality management and stakeholder communication. It focuses on operations rather than design, suits portfolios of existing buildings and is renewed annually.",
     "distractorExplanations": {
-      "a": "Scenario items test applying requirements to project decisions, not rote recall of point values or feature numbers.",
-      "b": "The scenario is an exam device; it does not replace the scorecard a real project uses for certification.",
-      "d": "Contract drafting is outside the WELL AP exam; scenarios test applying WELL requirements to realistic decisions."
+      "a": "WELL Core certifies a tenant-occupied base building against the full WELL v2 standard, which is more than an operations-only rating.",
+      "b": "Precertification recognizes design intent before construction is finished; it does not verify ongoing operational policies.",
+      "d": "WELL Community addresses districts and neighborhoods, not policy verification across a hotel group's existing properties."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-012",
@@ -7032,7 +7032,7 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-014",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A WELL v2 New and Existing Interiors project meets all Preconditions but earns only 35 optimization points. What is the certification outcome?",
+    "prompt": "An owner-occupied WELL v2 interiors project meets all Preconditions but earns only 35 optimization points. What is the certification outcome?",
     "options": [
       {
         "id": "a",
@@ -7059,7 +7059,7 @@
       "d": "Preconditions are pass/fail and add no points; Silver requires 50 optimization points."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-015",
@@ -7098,67 +7098,67 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-016",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Which WELL v2 project type scorecard would a tenant improvement of floors 8–12 in a leased office tower most likely pursue?",
+    "prompt": "A law firm leases floors 8–12 of a multitenant tower and will fit them out for its own staff. Which WELL v2 enrollment fits the firm's project?",
     "options": [
       {
         "id": "a",
-        "text": "WELL v2 New and Existing Interiors"
+        "text": "WELL Certification, as an owner-occupied interiors project"
       },
       {
         "id": "b",
-        "text": "WELL Community"
+        "text": "WELL Community, as a district-scale certification"
       },
       {
         "id": "c",
-        "text": "WELL v2 Core and Shell only, with no interiors scope"
+        "text": "WELL Core Certification for the base building only"
       },
       {
         "id": "d",
-        "text": "WELL Performance Rating exclusively, with no interiors certification option"
+        "text": "WELL Performance Rating, since tenant fit-outs have no certification option"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Tenant improvements within a portion of a building typically align with the Interiors scorecard, which addresses occupant-facing strategies within the project boundary.",
+    "explanation": "In WELL v2 the firm is the project owner for its own space and its staff are the regular occupants, so the fit-out enrolls in WELL Certification. IWBI treats interiors projects, where the boundary is under half of the base building, as a special case of owner-occupied projects; WELL Core instead covers a mostly tenant-occupied base building as a whole.",
     "distractorExplanations": {
-      "b": "WELL Community applies to district-scale developments, not a single tenant floorscape.",
-      "c": "Core and Shell covers base building elements; a tenant fit-out is an Interiors scope.",
-      "d": "Interiors certification and Performance Rating are distinct pathways; tenant fit-outs commonly use Interiors."
+      "b": "WELL Community applies to districts and neighborhoods, not five leased floors inside one office tower.",
+      "c": "WELL Core covers a whole base building registered by its owner; a tenant's own fit-out uses WELL Certification.",
+      "d": "Performance Rating is a separate operational mark; the firm's fit-out can pursue full WELL Certification."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-017",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A candidate studying for the WELL AP exam sees a scenario PDF describing a 200,000-sf headquarters with a central kitchen and open offices. Several questions ask which documentation type proves a nourishment policy is implemented. This testing approach emphasizes",
+    "prompt": "A 200,000-sf owner-occupied headquarters with a central cafeteria is documenting N02 Nutritional Transparency, which requires nutrition information for food sold on site. Which evidence best shows the policy is in place?",
     "options": [
       {
         "id": "a",
-        "text": "Recalling feature numbers and point values for each Nourishment Optimization"
+        "text": "A letter from the food-service vendor promising to add labels next year"
       },
       {
         "id": "b",
-        "text": "Calculating kitchen ventilation rates for the central food service area"
+        "text": "Kitchen exhaust calculations stamped by the mechanical engineer of record"
       },
       {
         "id": "c",
-        "text": "Selecting menu items that meet nutritional thresholds for the cafeteria"
+        "text": "A list of the feature's point value copied from the WELL v2 scorecard"
       },
       {
         "id": "d",
-        "text": "Matching feature requirements to appropriate evidence types in context"
+        "text": "The labeling policy plus photos of labeled menus, confirmed on-site"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Scenario-based questions test whether candidates can identify correct compliance pathways and documentation for specific features within a described project context.",
+    "explanation": "WELL documents operational features with evidence that matches the requirement: a policy or operations document describing the commitment, plus annotated documents or photographs showing it in practice, with implementation spot-checked during performance verification. A promise of future action, unrelated engineering data or a scorecard extract does not show the labeling is happening.",
     "distractorExplanations": {
-      "a": "The questions ask which evidence proves implementation, which is applied reasoning rather than recall of point values.",
-      "b": "Kitchen ventilation calculations are engineering tasks; the questions ask about documentation types for a policy.",
-      "c": "Menu selection is a design or operations task; the items test matching requirements to the right evidence."
+      "a": "A promise of future labeling shows intent, not implementation; WELL needs evidence the requirement is met now.",
+      "b": "Kitchen exhaust data relate to air quality, not to whether nutrition information is displayed for food sold.",
+      "c": "A point value from the scorecard proves nothing about the project; evidence must show the labeling is in practice."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-018",
@@ -7197,34 +7197,34 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-019",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A developer completes a base building core and shell with shared HVAC and facade but without tenant fit-outs. Which certification scope aligns with this delivery model?",
+    "prompt": "A developer completes a speculative office tower with shared HVAC, facade and lobbies but no tenant fit-outs; tenants will occupy nearly all floor area. Which WELL v2 pathway fits this base building?",
     "options": [
       {
         "id": "a",
-        "text": "WELL Community district certification"
+        "text": "WELL Community, as a district-level certification for the tower"
       },
       {
         "id": "b",
-        "text": "WELL v2 New and Existing Interiors"
+        "text": "WELL Certification, the owner-occupied pathway, registered for the whole tower"
       },
       {
         "id": "c",
-        "text": "WELL Equity Rating"
+        "text": "WELL Equity Rating, as the program for base-building delivery"
       },
       {
         "id": "d",
-        "text": "WELL v2 Core and Shell"
+        "text": "WELL Core Certification, the pathway for tenant-occupied base buildings"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Core and Shell certification addresses base building systems and shared elements that affect future tenant spaces without requiring completed interior fit-outs.",
+    "explanation": "WELL Core Certification is IWBI's pathway for core and shell (base) buildings where at least 75% of the area is tenant-occupied or tenant-accessible common space. The whole building, including leased space, is registered, and features are scoped to what the owner controls or must provide building-wide. Older labels such as 'Core and Shell' or 'New and Existing Interiors' are WELL v1 project types.",
     "distractorExplanations": {
-      "a": "Community certification applies to multi-building districts, not a single core-and-shell tower alone.",
-      "b": "Interiors certification applies when tenant spaces are within the project boundary and fit-out scope.",
-      "c": "WELL Equity is a distinct rating focused on equity outcomes, not the default base building delivery scope."
+      "a": "WELL Community is for districts and neighborhoods; a single base-building tower uses WELL Core Certification.",
+      "b": "WELL Certification fits owner-occupied projects; here tenants unaffiliated with the developer will fill nearly all the space.",
+      "c": "WELL Equity Rating recognizes equity-focused policies and practices; it is not a certification pathway for base buildings."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-020",
@@ -7362,34 +7362,34 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-024",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A project registered under WELL v1 years ago is renovating. The team wants to certify under the current version of the standard. They should",
+    "prompt": "An owner-occupied headquarters registered under WELL v1 years ago is now renovating, and the owner's own staff fill the building. The team wants to certify under the current standard. Which path fits?",
     "options": [
       {
         "id": "a",
-        "text": "Continue under WELL v1, since a registered project cannot later move to v2"
+        "text": "Stay in WELL v1, because a v1 registration cannot move to a later version"
       },
       {
         "id": "b",
-        "text": "Pursue WELL v2 using the WELL Community scorecard for the renovation"
+        "text": "Move to WELL v2 and enroll in WELL Core, because the work is a renovation"
       },
       {
         "id": "c",
-        "text": "Pursue WELL Performance Rating, which is the v2 path for renovations"
+        "text": "Pursue WELL Performance Rating, which replaces certification for renovations"
       },
       {
         "id": "d",
-        "text": "Pursue WELL v2 using the scorecard appropriate to the renovation scope"
+        "text": "Move to WELL v2 and enroll in WELL Certification, the owner-occupied path"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "WELL v2 is the current version and v1 projects may transition to it. v1 also used preconditions and optimizations, but v2 adds a points-based scorecard with flexible optimizations, so the team picks the v2 scorecard that fits the renovation scope.",
+    "explanation": "WELL v2 is the current version, and v1 projects can transition to it. In v2 the enrollment type follows who occupies the space, not whether the work is new or a renovation: buildings whose regular occupants are affiliated with the owner use WELL Certification, while WELL Core is reserved for base buildings where tenants and tenant-accessible common areas make up at least 75% of the area.",
     "distractorExplanations": {
-      "a": "v1 projects can transition to v2, and IWBI encourages it; the team wants the current standard.",
-      "b": "WELL Community is for districts and neighborhoods, not a single building renovation.",
-      "c": "Performance Rating is a separate operational mark, not the WELL v2 certification path for a renovation."
+      "a": "IWBI lets v1 projects transition to WELL v2, and the team specifically wants the current standard rather than the legacy one.",
+      "b": "WELL Core depends on tenant occupancy of at least 75% of the area, not on renovation scope; this building is filled by the owner's staff.",
+      "c": "Performance Rating is a separate operational mark based on measured data; it does not replace WELL Certification for renovations."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-025",
@@ -7461,40 +7461,40 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-027",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Which statement accurately describes how optimization points are organized in WELL v2?",
+    "prompt": "An owner-occupied WELL v2 project meets every Precondition and documents 63 optimization points; every concept has at least 2 points except Sound, which has 1. What level can it achieve?",
     "options": [
       {
         "id": "a",
-        "text": "Points are distributed across concept scorecards; projects earn points only for Optimizations they pursue and document"
+        "text": "WELL Silver, because Gold also needs 2 or more points in every concept"
       },
       {
         "id": "b",
-        "text": "Points are distributed across concept scorecards; projects earn points for Preconditions and Optimizations alike"
+        "text": "WELL Gold, because 63 points clears the 60-point Gold threshold alone"
       },
       {
         "id": "c",
-        "text": "Points are pooled into one shared total; projects receive every Optimization point once Preconditions are met"
+        "text": "WELL Bronze, because a concept with 1 point drops the project a level"
       },
       {
         "id": "d",
-        "text": "Points are distributed across concepts; each concept requires the same minimum score before any level is awarded"
+        "text": "No level, because every concept needs 3 points before any certification"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WELL v2 Optimizations are optional, point-bearing features organized within concept areas; teams select strategies aligned with project goals and scorecard applicability.",
+    "explanation": "For owner-occupied WELL Certification, IWBI pairs each point threshold with a minimum per concept: Bronze 40 points (no minimum), Silver 50 points (1 per concept), Gold 60 points (2 per concept) and Platinum 80 points (3 per concept). With 63 points but only 1 in Sound, the project meets Silver's requirements but not Gold's. WELL Core projects have no per-concept minimum.",
     "distractorExplanations": {
-      "b": "Preconditions earn no points; only documented Optimizations contribute to the certification level.",
-      "c": "Meeting Preconditions does not award Optimization points; each Optimization must be pursued and documented.",
-      "d": "Levels are set by total optimization points, with projects choosing where to earn them rather than a uniform minimum."
+      "b": "Total points are not enough for Gold under WELL Certification; each concept also needs at least 2 points.",
+      "c": "One point per concept satisfies the Silver minimum, so 63 points with 1 in Sound still reaches Silver, not Bronze.",
+      "d": "A 3-point-per-concept minimum applies only to Platinum; Bronze needs none and Silver needs 1 per concept."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "hard",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-028",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A landlord certifies the base building under WELL Core and Shell, and a tenant later certifies its fit-out under WELL Interiors in the same tower. How should a WELL AP describe this relationship?",
+    "prompt": "A landlord earns WELL Core Certification for a tower, and a tenant later earns WELL Certification for its own leased floors. How should a WELL AP describe this relationship?",
     "options": [
       {
         "id": "a",
@@ -7502,7 +7502,7 @@
       },
       {
         "id": "b",
-        "text": "Core and Shell automatically certifies all future tenant spaces without Interiors review"
+        "text": "WELL Core automatically certifies all tenant spaces without their own review"
       },
       {
         "id": "c",
@@ -7510,18 +7510,18 @@
       },
       {
         "id": "d",
-        "text": "Complementary scorecards addressing different scopes within the same property"
+        "text": "Complementary marks covering different scopes within the same property"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Core and Shell and Interiors address different project boundaries; both can coexist when respective scopes are independently documented and verified.",
+    "explanation": "WELL Core and WELL Certification address different project boundaries: the base building and a tenant's own space. Both can coexist in one property when each scope is documented and verified on its own, and a tenant project can often build on base-building strategies already in place.",
     "distractorExplanations": {
       "a": "Multiple WELL certifications can apply to different scopes within one property.",
-      "b": "Tenant interiors still require their own compliance demonstration within the Interiors boundary.",
-      "c": "Scorecards differ; documentation aligns to each scope's applicable features."
+      "b": "Tenant spaces still need their own compliance demonstration within the tenant's WELL Certification boundary.",
+      "c": "Scorecards differ: WELL Core uses its own point values and applicability, so documentation aligns to each scope."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-029",
@@ -7659,34 +7659,34 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-033",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A candidate reads an exam scenario PDF for a WELL Core and Shell office tower with a future multitenant layout. Questions ask which party must document tenant guidance for ventilation commissioning. This reflects the exam's emphasis on",
+    "prompt": "A developer enrolls a multitenant office tower in WELL Core Certification. Tenants employ their own staff, and only building management reports to the owner. How should the team treat C06 Health Services and Benefits?",
     "options": [
       {
         "id": "a",
-        "text": "Understanding scope-specific responsibilities between base building and tenant teams"
+        "text": "Apply it to staff under the owner's control, such as building management"
       },
       {
         "id": "b",
-        "text": "Recalling ASHRAE 62.1 ventilation rate tables for multitenant office occupancies"
+        "text": "Require every tenant to adopt the benefits in its lease before certification"
       },
       {
         "id": "c",
-        "text": "Calculating outdoor airflow for each future tenant floor from occupant density"
+        "text": "Skip it, since WELL Core projects exclude every Community concept feature"
       },
       {
         "id": "d",
-        "text": "Assigning ventilation commissioning to GBCI reviewers during the on-site verification visit"
+        "text": "Meet it across the whole building, the same scope as bicycle storage under V04"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WELL AP scenarios often test whether candidates understand which features fall within Core and Shell versus Interiors scopes and what documentation each party provides.",
+    "explanation": "WELL Core sets applicability by who a feature can reach. Features such as daylight design strategies (L05) or bicycle storage (V04) must be met across the whole building, but employer-type features such as C06 Health Services and Benefits or C10 Family Support apply to people and spaces under the project owner's purview, which in a multitenant tower means the building management staff.",
     "distractorExplanations": {
-      "b": "The question asks which party documents tenant guidance, a scope responsibility issue, not ventilation table recall.",
-      "c": "Airflow calculations are engineering tasks; the item tests who is responsible in a Core project with tenants.",
-      "d": "GBCI reviews and certifies; commissioning and tenant guidance are project team responsibilities."
+      "b": "WELL Core does not require tenants to adopt employer benefits; the owner documents C06 for the staff it actually controls.",
+      "c": "WELL Core keeps the Community concept; features are scoped to the owner's purview or to the whole building rather than dropped.",
+      "d": "Whole-building scope applies to features like L05 and V04 that serve every occupant; employee benefits reach only the owner's own staff."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-034",
@@ -7890,34 +7890,34 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-040",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "A WELL AP exam item references a scenario PDF noting that a project is 'WELL v2 New and Existing Building' with shared amenities and a single owner-operator. The candidate should recognize this scorecard applies when",
+    "prompt": "A company owns a 10-story office building, fills six floors with its own staff and leases four floors to unaffiliated tenants; common areas are small. Which WELL v2 enrollment type fits the whole building?",
     "options": [
       {
         "id": "a",
-        "text": "The project boundary covers one tenant floor where the owner leases space to multiple occupants"
+        "text": "WELL Core Certification, because four floors are leased to outside tenants"
       },
       {
         "id": "b",
-        "text": "The project boundary covers core and shell only, with tenant interiors left to future occupants"
+        "text": "WELL Community, because the building serves more than one organization"
       },
       {
         "id": "c",
-        "text": "The project boundary includes the whole building with owner control over shared systems and policies"
+        "text": "WELL Certification, as tenant and common space fall short of Core's 75%"
       },
       {
         "id": "d",
-        "text": "The project boundary covers several buildings on a campus under one district-level scorecard"
+        "text": "WELL Performance Rating, because the building is already occupied"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The New and Existing Buildings scorecard covers whole-building projects where the certifying entity controls shared building systems and occupant-facing amenities.",
+    "explanation": "WELL Core is reserved for base buildings where at least 75% of the project area is occupied by tenants or serves as common space accessible to all tenants. Here tenants hold about 40% of the floors plus small common areas, well short of 75%, and most regular occupants are the owner's staff, so the building enrolls in WELL Certification, the owner-occupied pathway.",
     "distractorExplanations": {
-      "a": "A single leased tenant floor is an interiors-type scope, not a whole building under one owner-operator.",
-      "b": "Core and shell scope leaves interiors to tenants; this scenario has a single owner-operator controlling the whole building.",
-      "d": "Multi-building districts fall under WELL Community, not a single-building scorecard."
+      "a": "Leasing some floors is not enough; WELL Core needs at least 75% of the area tenant-occupied or common, and this building is near 40–50%.",
+      "b": "WELL Community covers districts and neighborhoods, not one office building that happens to house two organizations.",
+      "d": "Performance Rating is a separate operational mark based on measured data, not the enrollment type for full WELL certification."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-041",
@@ -7986,37 +7986,37 @@
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
   },
   {
-    "id": "well-ap-readiness-check-well-certification-portfolio-043",
+    "id": "well-ap-readiness-check-well-certification-portfolio-053",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "Under WELL v2, a project may pursue Optimizations selectively. This flexibility exists primarily because",
+    "prompt": "A team pursuing WELL v2 Certification has documented Air optimizations that would add up to 15 points. How many of those points count toward the project's total?",
     "options": [
       {
         "id": "a",
-        "text": "Optimizations are optional enhancements while Preconditions establish a universal baseline"
+        "text": "12 points, the per-concept cap, so the team should earn the rest elsewhere"
       },
       {
         "id": "b",
-        "text": "Preconditions become optional once a project selects enough Optimizations to reach Silver"
+        "text": "15 points, because WELL v2 places no cap on points within any concept"
       },
       {
         "id": "c",
-        "text": "IWBI assigns Optimizations to each project type, and teams choose the order of completion"
+        "text": "10 points, because each concept is capped at one-tenth of the 100-point total"
       },
       {
         "id": "d",
-        "text": "Optimizations carry equal points, so any combination yields the same certification outcome"
+        "text": "15 points, as long as every Air Precondition is met before submittal"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The v2 framework intentionally separates mandatory baselines from optional scored strategies so teams can tailor wellness goals to project constraints and certification level targets.",
+    "explanation": "WELL v2 caps optimization scoring at 12 points per concept, with up to 100 points across the 10 concepts (Innovation points are counted separately). Points documented beyond 12 in Air add nothing, so the team gets more value shifting effort to concepts still below the cap, which also helps meet the per-concept minimums for Silver and above.",
     "distractorExplanations": {
-      "b": "Preconditions stay mandatory at every level; flexibility exists only within the optional Optimizations.",
-      "c": "Teams choose which Optimizations to pursue; IWBI does not assign a fixed set by project type.",
-      "d": "Optimizations carry different point values; flexibility comes from their optional status, not equal weighting."
+      "b": "WELL v2 limits each concept to 12 points, so extra Air points beyond 12 do not count toward the total.",
+      "c": "The cap is 12 points per concept, not 10; ten concepts at 12 exceed 100, which is why the overall total is capped at 100.",
+      "d": "Preconditions are pass/fail gates and do not unlock extra points; the 12-point concept cap applies regardless."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-044",
@@ -8187,34 +8187,34 @@
     "id": "well-ap-readiness-check-well-certification-portfolio-049",
     "examSlug": "well-ap-readiness-check",
     "topicId": "well-certification-portfolio",
-    "prompt": "In a scenario-based exam item, a mixed-use project lists separate operators for retail and residential portions with different policies. The candidate must determine feature applicability. This tests knowledge of:",
+    "prompt": "An owner operates the residential floors of a mixed-use tower, while unaffiliated tenants lease and run the ground-floor retail. The owner wants WELL for the homes only. Which project boundary fits WELL v2?",
     "options": [
       {
         "id": "a",
-        "text": "Project boundary definition and how operational control affects feature responsibility"
+        "text": "Register the dwelling units and resident common areas, excluding leased retail"
       },
       {
         "id": "b",
-        "text": "Scorecard selection rules for choosing WELL Community over WELL v2 Certification"
+        "text": "Register the whole tower for WELL Core, since the retail tenants are unaffiliated"
       },
       {
         "id": "c",
-        "text": "Performance testing sequences for mixed-use buildings during on-site verification"
+        "text": "Register only the retail floors, since leased space must define the boundary"
       },
       {
         "id": "d",
-        "text": "Portfolio enrollment rules for organizations with multiple building operators"
+        "text": "Register the residential floors under WELL Community, since uses are mixed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "WELL AP scenarios frequently assess whether candidates can map features to the correct scope based on project boundaries, occupancy types, and operational control.",
+    "explanation": "IWBI lets mixed-use buildings with dwelling units either pursue WELL v2 across the entire building or pursue WELL for residential only in the areas for residents (dwelling unit interiors, their private outdoor space and shared resident common spaces) while excluding leased retail, restaurant and office space. Multifamily residential projects must use the WELL Certification pathway, not WELL Core.",
     "distractorExplanations": {
-      "b": "WELL Community covers districts; the item asks how separate operators affect who is responsible for features.",
-      "c": "Testing sequences are a verification logistics topic; the item tests boundary and operational control.",
-      "d": "Portfolio concerns multiple assets under one organization; this is one project with separate operators."
+      "b": "Multifamily residential projects must use WELL Certification rather than WELL Core, and Core also needs 75% tenant-occupied or common area.",
+      "c": "The owner wants the homes certified; leased retail run by unaffiliated tenants can be excluded rather than made the boundary.",
+      "d": "WELL Community is a district-scale program; a residential portion of one building uses WELL Certification instead."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "well-ap-readiness-check-well-certification-portfolio-050",

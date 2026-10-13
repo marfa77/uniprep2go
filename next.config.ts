@@ -30,6 +30,17 @@ const nextConfig: NextConfig = {
       },
       // Language-exam decks moved to Prep2Go — 301 every per-deck URL to the matching landing.
       ...buildRetiredLanguageDeckRedirects(),
+      // Gaivota comics are sold on Prep2Go (Lemon) — same paths there.
+      {
+        source: "/comics/gaivota-em-portugal",
+        destination: "https://www.prep2go.study/comics/gaivota-em-portugal",
+        permanent: true,
+      },
+      {
+        source: "/comics/gaivota-em-portugal/:path*",
+        destination: "https://www.prep2go.study/comics/gaivota-em-portugal/:path*",
+        permanent: true,
+      },
       {
         source: "/ciple-a2-anki-deck-for-portuguese-citizenship",
         destination: RETIRED_LANGUAGE_DECK_REDIRECTS["ciple-a2-european-portuguese-anki-deck"],

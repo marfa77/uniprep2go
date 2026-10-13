@@ -866,7 +866,7 @@
       },
       {
         "id": "c",
-        "text": "For independent projects: both give same accept/reject decision. For mutually exclusive projects: NPV preferred when conflict arises (different scale or timing of cash flows)."
+        "text": "For independent projects with conventional cash flows: both give the same accept/reject decision. For mutually exclusive projects: NPV preferred when conflict arises (different scale or timing of cash flows)."
       },
       {
         "id": "d",
@@ -874,7 +874,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "For independent projects: both give same accept/reject decision. For mutually exclusive projects: NPV preferred when conflict arises (different scale or timing of cash flows). Formula: $$\\text{Conflict when: scale differs or CF timing differs}$$ Example: Project A: NPV=$50M, IRR=25%. Project B: NPV=$80M, IRR=18%. IRR ranks A first; NPV ranks B first. Choose B (higher NPV = more value created)",
+    "explanation": "For independent projects with conventional cash flows: both give the same accept/reject decision. For mutually exclusive projects: NPV preferred when conflict arises (different scale or timing of cash flows). Formula: $$\\text{Conflict when: scale differs or CF timing differs}$$ Example: Project A: NPV=$50M, IRR=25%. Project B: NPV=$80M, IRR=18%. IRR ranks A first; NPV ranks B first. Choose B (higher NPV = more value created)",
     "distractorExplanations": {
       "a": "Conventional independent projects get the same accept/reject decision from both; IRR ignores scale, which is why NPV wins when rankings conflict.",
       "b": "Conflicts come from differences in scale or cash-flow timing, and payback is not the tie-breaker; NPV is preferred.",
@@ -1402,7 +1402,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. These risks offset each other."
+        "text": "Price risk: bond price falls when rates rise (affects holders who sell before maturity). Reinvestment risk: coupons reinvested at lower rates when rates fall. The two move in opposite directions, so they partly offset each other."
       },
       {
         "id": "b",
@@ -1420,7 +1420,7 @@
     "correctOptionId": "d",
     "explanation": "Weighted average time to receive bond's cash flows — weights are PV of each cash flow as proportion of bond price. Measured in years. Formula: $$D_{Mac} = \\frac{\\sum_{t=1}^{n} t \\times \\frac{CF_t}{(1+r)^t}}{P}$$ Example: Zero-coupon bond: Macaulay duration = maturity. 10-year 5% coupon bond at par: Mac duration ≈ 7.8 years (less than maturity due to coupons)",
     "distractorExplanations": {
-      "a": "Price risk and reinvestment risk move in opposite directions. Duration = horizon → immunized. If rates rise: price falls but reinvestment income rises; net effect = zero.",
+      "a": "Describes price risk versus reinvestment risk, not this concept; the two only roughly offset when Macaulay duration ≈ horizon and for small parallel shifts, not exactly.",
       "b": "Par rates, spot rates, and forward rates contain identical information — one can be derived from any other. CFA tests all three conversions.",
       "c": "Price-yield relationship is convex — price rises more when yields fall than it falls when yields rise by same amount. This is positive convexity."
     },
@@ -1516,7 +1516,7 @@
       },
       {
         "id": "d",
-        "text": "Futures: exchange-traded, standardized, daily mark-to-market (variation margin), centrally cleared (no counterparty risk). Forwards: OTC, customizable, settled at expiry, counterparty risk."
+        "text": "Futures: exchange-traded, standardized, daily mark-to-market (variation margin), centrally cleared (counterparty risk greatly reduced, not eliminated). Forwards: OTC, customizable, settled at expiry, bilateral counterparty risk."
       }
     ],
     "correctOptionId": "b",
@@ -2022,7 +2022,7 @@
       },
       {
         "id": "c",
-        "text": "Futures: exchange-traded, standardized, daily mark-to-market (variation margin), centrally cleared (no counterparty risk). Forwards: OTC, customizable, settled at expiry, counterparty risk."
+        "text": "Futures: exchange-traded, standardized, daily mark-to-market (variation margin), centrally cleared (counterparty risk greatly reduced, not eliminated). Forwards: OTC, customizable, settled at expiry, bilateral counterparty risk."
       },
       {
         "id": "d",

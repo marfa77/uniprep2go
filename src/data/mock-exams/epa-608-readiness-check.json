@@ -40,19 +40,19 @@
     "options": [
       {
         "id": "a",
-        "text": "80% of the refrigerant charge"
+        "text": "80% of the charge"
       },
       {
         "id": "b",
-        "text": "85% of the refrigerant charge"
+        "text": "85% of the charge"
       },
       {
         "id": "c",
-        "text": "90% of the refrigerant charge"
+        "text": "90% of the charge"
       },
       {
         "id": "d",
-        "text": "95% of the refrigerant charge"
+        "text": "95% of the charge"
       }
     ],
     "correctOptionId": "c",
@@ -63,7 +63,7 @@
       "d": "95% is not required in the small-appliance rule; 90% with a running compressor, or a 4-inch vacuum, satisfies it."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-core-003",
@@ -363,37 +363,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-core-012",
+    "id": "epa-608-readiness-check-core-051",
     "examSlug": "epa-608-readiness-check",
     "topicId": "core",
-    "prompt": "What is the required action when a technician discovers that refrigerant recovery equipment has not been properly certified by an EPA-approved testing organization?",
+    "prompt": "A technician notices a sharp, acrid smell in a basement mechanical room where an R-22 unit is leaking next to a running gas-fired boiler. What is the most serious immediate hazard?",
     "options": [
       {
         "id": "a",
-        "text": "Continue using the equipment but document the issue for future reference"
+        "text": "R-22 is flammable, so the leak can ignite at the boiler and explode"
       },
       {
         "id": "b",
-        "text": "Discontinue use until equipment meets EPA certification standards"
+        "text": "R-22 drawn into the flame breaks down into toxic gases such as phosgene"
       },
       {
         "id": "c",
-        "text": "Reduce recovery efficiency requirements by 50% to compensate"
+        "text": "R-22 vapor is lighter than air and collects at the ceiling near the flue"
       },
       {
         "id": "d",
-        "text": "Use the equipment only for systems containing less than 15 pounds of refrigerant"
+        "text": "R-22 destroys ozone in the room air, leaving too little to breathe safely"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "EPA regulations require that all refrigerant recovery equipment be certified by an EPA-approved testing organization. Uncertified equipment must not be used for recovery operations, regardless of system size or other factors.",
+    "explanation": "R-22 is an A1 (nonflammable, low-toxicity) refrigerant, but when its vapor is drawn into an open flame or touches a very hot surface it decomposes into toxic, corrosive products such as phosgene, hydrochloric acid and hydrofluoric acid; the acrid smell is the warning. Shut down the burner if it is safe to do so, ventilate, leave the space and use proper respiratory protection before stopping the leak.",
     "distractorExplanations": {
-      "a": "Documentation does not make non-compliant equipment legal to use; EPA requires actual certification.",
-      "c": "Recovery efficiency standards cannot be arbitrarily reduced; they are fixed regulatory requirements.",
-      "d": "System size does not exempt the requirement for certified recovery equipment under EPA regulations."
+      "a": "R-22 carries an A1 safety rating, meaning it does not propagate a flame; the danger at the burner is decomposition, not an explosion.",
+      "c": "Refrigerant vapor is several times heavier than air, so it pools near the floor and in pits, where it can also displace oxygen.",
+      "d": "Ozone depletion happens in the stratosphere; the indoor risks are toxic decomposition products and oxygen displacement, not lost ozone."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-core-013",
@@ -506,7 +506,7 @@
       },
       {
         "id": "b",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches of mercury vacuum, the pre-1993 machine level"
       },
       {
         "id": "c",
@@ -525,7 +525,7 @@
       "d": "0 psig is the level for R-22 appliances under 200 pounds, not a 250-pound R-410A appliance."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-core-017",
@@ -564,34 +564,34 @@
     "id": "epa-608-readiness-check-core-018",
     "examSlug": "epa-608-readiness-check",
     "topicId": "core",
-    "prompt": "When must a technician immediately stop work and contact their supervisor during refrigerant recovery operations?",
+    "prompt": "While recovering an R-22 rooftop unit, a technician finds the saturation pressure at the measured temperature matches no single refrigerant, and the service log shows another company once topped it off with R-407C. How should the recovered refrigerant be handled?",
     "options": [
       {
         "id": "a",
-        "text": "When the recovery cylinder reaches 60% of its rated liquid capacity"
+        "text": "Recover it into the shop's R-22 cylinder, since R-22 is the nameplate refrigerant"
       },
       {
         "id": "b",
-        "text": "When the ambient temperature exceeds 90°F while recovery is running"
+        "text": "Vent the remainder once the cylinder is full, because mixtures cannot be reclaimed"
       },
       {
         "id": "c",
-        "text": "When they suspect the presence of mixed refrigerants in the system"
+        "text": "Recover it into a separate cylinder labeled as mixed and send it for reclaim or analysis"
       },
       {
         "id": "d",
-        "text": "When the recovery machine pulls the system into an inches-of-mercury vacuum"
+        "text": "Recycle it on site and charge it into another customer's R-22 system after filtering"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Technicians must immediately stop work when mixed refrigerants are suspected because different refrigerant types require separate handling, storage, and processing. Mixed refrigerants cannot be recycled and may require special disposal procedures, making proper identification critical for regulatory compliance and safety.",
+    "explanation": "A pressure-temperature mismatch plus a top-off with a different refrigerant points to a mixture. Section 608 bans venting and bars charging recovered refrigerant into another owner's equipment unless it has been reclaimed, so the charge goes into its own clearly labeled cylinder, kept apart from clean R-22, and is shipped to a reclaimer that can identify it and reprocess or destroy it. No rule requires stopping work for a supervisor; correct segregation is the requirement.",
     "distractorExplanations": {
-      "a": "The fill limit is 80% of capacity by weight; 60% is still within the safe range and is no reason to stop work.",
-      "b": "High ambient temperature calls for watching cylinder pressure, but it is not a stop-and-escalate trigger like suspected mixed refrigerant.",
-      "d": "Pulling the system into a vacuum is the normal goal of recovery, not a sign that something is wrong."
+      "a": "Adding a suspected blend to a clean R-22 cylinder contaminates the whole cylinder, which a reclaimer may then refuse or charge to destroy.",
+      "b": "Venting is prohibited for every regulated refrigerant, mixed or not; mixtures are recovered and sent for reclaim or destruction.",
+      "d": "Recovered refrigerant may go into another owner's appliance only after reclaim to AHRI 700 purity; on-site recycling of a blend does not qualify."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-core-019",
@@ -1361,7 +1361,7 @@
     "options": [
       {
         "id": "a",
-        "text": "the primary environmental concern that led to the regulation of chlorofluorocarbon refrigerants under the Clean Air Act always eliminates"
+        "text": "CFCs trap heat in the lower atmosphere, which was the main reason for the ban"
       },
       {
         "id": "b",
@@ -1369,22 +1369,22 @@
       },
       {
         "id": "c",
-        "text": "the primary environmental concern that led to the regulation of chlorofluorocarbon refrigerants under the Clean Air Act has no"
+        "text": "CFCs react with ground-level smog to form ozone that damages the lungs"
       },
       {
         "id": "d",
-        "text": "the primary environmental concern that led to the regulation of chlorofluorocarbon refrigerants under the Clean Air Act is identical to"
+        "text": "CFCs break down quickly in rain clouds and fall back to earth as acid rain"
       }
     ],
     "correctOptionId": "b",
     "explanation": "CFCs were regulated primarily because they deplete stratospheric ozone. When CFCs reach the stratosphere, UV radiation breaks them down, releasing chlorine atoms that catalytically destroy ozone molecules, creating the ozone hole.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “CFCs release chlorine atoms that catalytically destroy stratospheric ozone molecules”.",
-      "c": "Not the best answer here; the right answer is “CFCs release chlorine atoms that catalytically destroy stratospheric ozone molecules”.",
-      "d": "Not the best answer here; the right answer is “CFCs release chlorine atoms that catalytically destroy stratospheric ozone molecules”."
+      "a": "CFCs are also greenhouse gases, but the Clean Air Act Title VI rules and Montreal Protocol targeted them for stratospheric ozone loss.",
+      "c": "Ground-level ozone comes from smog chemistry with NOx and VOCs; CFCs are inert in the lower atmosphere, which lets them reach the stratosphere.",
+      "d": "CFCs are stable and long-lived in the lower atmosphere, so they drift up to the stratosphere instead of washing out as acid rain."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Local QA repair (stems/distractors)"
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Local QA repair (stems/distractors) · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-core-043",
@@ -1588,34 +1588,34 @@
     "id": "epa-608-readiness-check-core-049",
     "examSlug": "epa-608-readiness-check",
     "topicId": "core",
-    "prompt": "A technician is transporting recovered refrigerant cylinders in a service van during summer conditions when ambient temperatures reach 95°F. What is the most important safety consideration to prevent cylinder failure?",
+    "prompt": "A technician loads two recovery cylinders of R-410A into a service van on a 95°F day. Both are filled to 75% by weight and will ride in a shaded, ventilated rack. Which check must also pass before the cylinders are transported?",
     "options": [
       {
         "id": "a",
-        "text": "Keep cylinders in an air-conditioned compartment or shaded area"
+        "text": "Each is a DOT-approved recovery cylinder within its 5-year hydrostatic test date"
       },
       {
         "id": "b",
-        "text": "Ensure cylinders are filled to exactly 80% capacity by weight"
+        "text": "Each has been vented down to below 150 psig so the relief valve cannot open"
       },
       {
         "id": "c",
-        "text": "Transport only DOT-approved cylinders with current hydrostatic test dates"
+        "text": "Each is laid on its side so liquid refrigerant keeps the relief valve cool"
       },
       {
         "id": "d",
-        "text": "Maintain cylinder pressure below 150 psig during transport"
+        "text": "Each is emptied to under 50% of capacity, the summer limit for transport"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Temperature control is critical because refrigerant pressure increases significantly with temperature. Keeping cylinders cool prevents excessive pressure buildup that could cause cylinder failure or relief valve activation.",
+    "explanation": "Fill level and shade are already handled, so the remaining requirement is the container itself. Recovered refrigerant must travel in a DOT-approved refillable recovery cylinder (gray body, yellow top) that is within its hydrostatic retest date stamped on the shoulder, typically every 5 years; an out-of-date cylinder may not be refilled or offered for transport. Cylinders also ride upright and secured, with the contents labeled.",
     "distractorExplanations": {
-      "b": "The 80% fill limit is important but doesn't address the immediate temperature-related pressure increase during hot weather transport.",
-      "c": "While proper DOT cylinders are required, this doesn't address the specific temperature-related safety concern during hot weather transport.",
-      "d": "Pressure limits vary by refrigerant type and are automatically controlled by temperature; the key is controlling temperature rather than monitoring specific pressure values."
+      "b": "Venting to lower the pressure is illegal, and R-410A at 95°F sits near 300 psig in any properly filled cylinder; there is no 150 psig transport rule.",
+      "c": "Cylinders travel upright and secured so the relief valve stays in the vapor space; lying flat can put liquid at the valve if it opens.",
+      "d": "The fill limit is 80% of rated capacity year-round; there is no separate 50% summer transport limit in Section 608 or DOT rules."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-core-050",
@@ -1658,7 +1658,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches Hg vacuum"
       },
       {
         "id": "b",
@@ -1666,11 +1666,11 @@
       },
       {
         "id": "c",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches Hg vacuum"
       },
       {
         "id": "d",
-        "text": "15 inches of mercury vacuum"
+        "text": "15 inches Hg vacuum"
       }
     ],
     "correctOptionId": "a",
@@ -1681,7 +1681,7 @@
       "d": "15 inches of mercury vacuum exceeds EPA requirements and is not a standard recovery level for any small appliance category."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-1-002",
@@ -1823,19 +1823,19 @@
     "options": [
       {
         "id": "a",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches Hg vacuum"
       },
       {
         "id": "b",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches Hg vacuum"
       },
       {
         "id": "c",
-        "text": "15 inches of mercury vacuum"
+        "text": "15 inches Hg vacuum"
       },
       {
         "id": "d",
-        "text": "25 inches of mercury vacuum"
+        "text": "25 inches Hg vacuum"
       }
     ],
     "correctOptionId": "b",
@@ -1846,7 +1846,7 @@
       "d": "25 inches Hg vacuum is the low-pressure appliance level for pre-1993 recovery equipment, not a small-appliance level."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-1-007",
@@ -2285,7 +2285,7 @@
     "options": [
       {
         "id": "a",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches Hg vacuum"
       },
       {
         "id": "b",
@@ -2293,11 +2293,11 @@
       },
       {
         "id": "c",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches Hg vacuum"
       },
       {
         "id": "d",
-        "text": "15 inches of mercury vacuum"
+        "text": "15 inches Hg vacuum"
       }
     ],
     "correctOptionId": "a",
@@ -2308,7 +2308,7 @@
       "d": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-1-022",
@@ -2813,19 +2813,19 @@
     "options": [
       {
         "id": "a",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches Hg vacuum"
       },
       {
         "id": "b",
-        "text": "2 inches of mercury vacuum"
+        "text": "2 inches Hg vacuum"
       },
       {
         "id": "c",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches Hg vacuum"
       },
       {
         "id": "d",
-        "text": "15 inches of mercury vacuum"
+        "text": "15 inches Hg vacuum"
       }
     ],
     "correctOptionId": "a",
@@ -2836,7 +2836,7 @@
       "d": "15 inches applies to high-pressure appliances of 200 pounds or more, not small appliances."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-1-038",
@@ -3077,19 +3077,19 @@
     "options": [
       {
         "id": "a",
-        "text": "4 inches of mercury vacuum"
+        "text": "4 inches Hg vacuum"
       },
       {
         "id": "b",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches Hg vacuum"
       },
       {
         "id": "c",
-        "text": "15 inches of mercury vacuum"
+        "text": "15 inches Hg vacuum"
       },
       {
         "id": "d",
-        "text": "25 inches of mercury vacuum"
+        "text": "25 inches Hg vacuum"
       }
     ],
     "correctOptionId": "a",
@@ -3100,7 +3100,7 @@
       "d": "25 inches Hg vacuum is the low-pressure level for pre-1993 recovery equipment, not a small-appliance level."
     },
     "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-1-046",
@@ -3466,37 +3466,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-2-009",
+    "id": "epa-608-readiness-check-type-2-052",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "A technician is recovering refrigerant from a Type II appliance and notices that the recovery process has slowed significantly even though the system pressure gauge still shows positive pressure. What is the most likely cause and appropriate action?",
+    "prompt": "A technician has repaired a leak on an R-22 rooftop unit and wants to pressurize the empty system to confirm the repair before evacuation. Which setup is appropriate?",
     "options": [
       {
         "id": "a",
-        "text": "The recovery cylinder is full and should be replaced with an empty cylinder"
+        "text": "Oxygen from a torch cylinder, because it is dry and shows leaks with bubbles"
       },
       {
         "id": "b",
-        "text": "The compressor has failed, so recovery should stop at the current positive pressure"
+        "text": "Compressed shop air, because it holds no refrigerant and can be vented later"
       },
       {
         "id": "c",
-        "text": "The recovery machine filter is clogged and needs replacement"
+        "text": "Nitrogen fed straight from the cylinder valve to reach test pressure quickly"
       },
       {
         "id": "d",
-        "text": "Liquid refrigerant has pooled in the evaporator and the system should be heated"
+        "text": "Dry nitrogen through a regulator, kept below the unit's rated test pressure"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "When recovery slows but positive pressure remains, liquid refrigerant has likely pooled in low areas like the evaporator. Applying heat to these areas will vaporize the liquid, allowing continued recovery and ensuring complete refrigerant removal.",
+    "explanation": "Leak testing uses dry nitrogen, optionally with a trace of the system refrigerant for an electronic detector, metered through a pressure regulator with a relief valve in the line and never above the lowest design or test pressure marked on the unit. Oxygen can explode on contact with compressor oil, shop air adds moisture and can form combustible mixtures with oil under pressure, and an unregulated nitrogen cylinder holds over 2,000 psig.",
     "distractorExplanations": {
-      "a": "A full recovery cylinder would typically cause high pressure warnings or automatic shutoff, not just slow recovery with remaining system pressure.",
-      "b": "Stopping at positive pressure leaves refrigerant in the system; slow transfer at positive pressure points to pooled liquid.",
-      "c": "While a clogged filter could slow recovery, it wouldn't typically leave positive pressure in the system if recovery had been proceeding normally."
+      "a": "Oxygen reacts violently with oil under pressure and can cause an explosion; it is never used to pressurize a refrigeration system.",
+      "b": "Shop air carries moisture and oil vapor into the circuit, and air mixed with oil under pressure can ignite; dry nitrogen is required.",
+      "c": "A full nitrogen cylinder holds over 2,000 psig, so without a regulator the system can be over-pressurized and rupture."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-2-010",
@@ -3840,7 +3840,7 @@
       },
       {
         "id": "b",
-        "text": "Recover refrigerant to 10 inches of mercury vacuum"
+        "text": "Recover to 10 inches Hg vacuum, the level for R-22 units of 200+ pounds"
       },
       {
         "id": "c",
@@ -3859,7 +3859,7 @@
       "c": "15 inches applies to other high-pressure refrigerants at 200 pounds or more, not R-22."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-2-022",
@@ -3895,37 +3895,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-2-023",
+    "id": "epa-608-readiness-check-type-2-051",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "When using self-contained recovery equipment on a Type II appliance, a technician notices the recovery rate has become very slow even though the system gauge still shows 25 psig. What is the most likely explanation for this situation?",
+    "prompt": "After brazing in a new evaporator coil, a technician evacuates an R-410A split system to 400 microns, closes the valve to the vacuum pump and watches a micron gauge. Over 15 minutes the reading climbs to 1,500 microns and then holds steady. What does this most likely indicate?",
     "options": [
       {
         "id": "a",
-        "text": "The recovery equipment has reached its maximum capacity"
+        "text": "A leak in the system that a nitrogen pressure test must locate before charging"
       },
       {
         "id": "b",
-        "text": "Most remaining refrigerant is in liquid form in the evaporator"
+        "text": "Moisture still boiling off inside, so the system needs more evacuation time"
       },
       {
         "id": "c",
-        "text": "The recovery equipment's internal pump has failed"
+        "text": "A dry, tight system that is ready to be charged with the R-410A at once"
       },
       {
         "id": "d",
-        "text": "The system has reached equilibrium and no more recovery is possible"
+        "text": "A faulty micron gauge, since a sealed system cannot rise once it is isolated"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When recovery slows significantly while system pressure remains positive, it typically indicates that most of the remaining refrigerant is in liquid form, often pooled in the evaporator or other low points. Liquid refrigerant vaporizes slowly, causing the recovery rate to decrease dramatically.",
+    "explanation": "In a standing vacuum (decay) test, a rise that levels off is the classic sign of moisture or other contaminants still vaporizing inside the system; the pressure stops climbing once their vapor pressure is reached. A leak lets air in continuously, so the reading keeps rising toward atmospheric. The fix is more evacuation, often with fresh pump oil, larger hoses or core-removal tools, until the system holds near 500 microns.",
     "distractorExplanations": {
-      "a": "Recovery equipment capacity refers to storage volume, not the ability to continue recovering refrigerant from a pressurized system.",
-      "c": "If the pump had failed, recovery would stop completely rather than just slow down significantly.",
-      "d": "With 25 psig still showing, the system has not reached equilibrium - there is still recoverable refrigerant present."
+      "a": "A leak keeps admitting air, so the gauge keeps climbing without leveling; a rise that plateaus points to moisture rather than a leak.",
+      "c": "A dry, tight system holds close to its isolation reading; settling at 1,500 microns shows moisture remains and dehydration is incomplete.",
+      "d": "Pressure rise after isolation is real and diagnostic: vaporizing moisture or a leak raises it, so the gauge reading is not suspect."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-2-024",
@@ -3939,7 +3939,7 @@
       },
       {
         "id": "b",
-        "text": "Recover refrigerant to 10 inches of mercury vacuum before opening the system"
+        "text": "Recover to 10 inches of mercury vacuum, as for an HFC unit this size"
       },
       {
         "id": "c",
@@ -3958,7 +3958,7 @@
       "d": "A split system's condenser coil cannot be valved off from the rest of the charge, so the circuit being opened must be recovered to 0 psig."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-2-025",
@@ -4264,7 +4264,7 @@
     "id": "epa-608-readiness-check-type-2-035",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "A technician is using active recovery on a Type II appliance containing 12 pounds of R-410A. The recovery machine has been running for 45 minutes and the system pressure has dropped to 15 psig, but the recovery rate has slowed significantly. What is the most appropriate next step?",
+    "prompt": "A technician is using active recovery on a Type II appliance containing 12 pounds of R-410A. After 45 minutes the system pressure has dropped to 15 psig, the recovery rate has slowed sharply, and frost is forming on the evaporator coil. What is the most appropriate next step?",
     "options": [
       {
         "id": "a",
@@ -4284,14 +4284,14 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "A slow rate at positive pressure means liquid is still boiling off, so heating the evaporator speeds recovery. For a 12-pound R-410A unit the target is 10 inches of Hg vacuum with recovery equipment made after November 15, 1993.",
+    "explanation": "Frost on the evaporator while the unit still reads 15 psig shows liquid refrigerant boiling off there and chilling the coil, which is why the transfer rate has dropped. Heating the evaporator speeds that vaporization. For a 12-pound R-410A unit the target is 10 inches of Hg vacuum with recovery equipment made after November 15, 1993.",
     "distractorExplanations": {
       "a": "0 psig is not the target for R-410A under 200 pounds (it needs 10 inches), and the slow rate points to liquid that heat would boil off.",
       "b": "Passive recovery would be even slower at this pressure level and is not the most efficient method to complete the recovery process.",
       "d": "15 psig is still positive pressure; this R-410A unit must reach 10 inches of Hg vacuum before recovery is complete."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-2-036",
@@ -4331,34 +4331,34 @@
     "id": "epa-608-readiness-check-type-2-037",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "When servicing the filter-drier on a Type II appliance containing 25 pounds of R-134a, a technician needs to open the liquid line. The system is currently operating normally with proper pressures. What recovery requirement must be met before opening the system?",
+    "prompt": "A technician will replace the filter-drier on a 25-pound R-134a comfort cooling system. Service valves isolate the liquid-line section, the recovery machine was built in 2019, and the section will be evacuated with a vacuum pump after the new drier is brazed in. What must the isolated section reach before it is opened?",
     "options": [
       {
         "id": "a",
-        "text": "Isolate and recover refrigerant from the liquid line to atmospheric pressure"
+        "text": "10 inches of mercury vacuum, the level for this charge size and machine age"
       },
       {
         "id": "b",
-        "text": "Pump the charge into the condenser and open the liquid line while it still reads 5 psig"
+        "text": "0 psig, since replacing a filter-drier is not classed as a major repair"
       },
       {
         "id": "c",
-        "text": "Recover refrigerant from the entire system to 15 inches Hg vacuum"
+        "text": "15 inches of mercury vacuum, the level for any HFC appliance of this type"
       },
       {
         "id": "d",
-        "text": "No recovery required if the repair can be completed in under 15 minutes"
+        "text": "4 inches of mercury vacuum, since only an isolated section is being opened"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "When opening any part of a Type II system for service, the refrigerant must be recovered from that section to atmospheric pressure (0 psig) at minimum. The liquid line can typically be isolated using service valves before recovery.",
+    "explanation": "Under 40 CFR 82.156(b), an appliance or isolated component must be evacuated to its Table 1 level before it is opened. For a non-R-22 high-pressure appliance under 200 pounds and recovery equipment built after November 15, 1993, that is 10 inches Hg vacuum. The 0 psig allowance applies only when the repair is not major AND the appliance will not be evacuated to the environment afterward; this section will be vacuum-pumped once the drier is in, so the exception does not apply.",
     "distractorExplanations": {
-      "b": "Opening at 5 psig still releases refrigerant; the isolated section must be recovered to at least atmospheric pressure.",
-      "c": "Full system recovery to 15 inches Hg vacuum is not required for minor component replacement when the section can be properly isolated.",
-      "d": "Time limits do not exempt the requirement for proper refrigerant recovery before opening any pressurized system components."
+      "b": "The 0 psig exception needs both a non-major repair and no later evacuation to the environment; the planned vacuum-pump dehydration rules it out.",
+      "c": "15 inches applies to other high-pressure appliances holding 200 pounds or more; a 25-pound R-134a system is in the under-200-pound row.",
+      "d": "4 inches is the level for recovery machines built before November 15, 1993; an isolated section still uses the Table 1 row for its charge."
     },
-    "difficulty": "easy",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "hard",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-2-038",
@@ -4397,34 +4397,34 @@
     "id": "epa-608-readiness-check-type-2-039",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-2",
-    "prompt": "During recovery from a Type II appliance using active methods, a technician notices the recovery machine is pulling 28 inches of mercury vacuum but liquid refrigerant is still visible in the sight glass. The recovery process has been running for 25 minutes. What should the technician conclude?",
+    "prompt": "During active recovery from a 30-pound R-410A rooftop unit, the recovery machine's inlet gauge drops to 28 inches of mercury vacuum within minutes, yet the unit's liquid-line sight glass still shows liquid and a gauge on the unit's suction port reads 90 psig. What is the most likely explanation?",
     "options": [
       {
         "id": "a",
-        "text": "Recovery is complete since proper vacuum level has been achieved"
+        "text": "Recovery is complete, because the machine has already pulled a deep vacuum"
       },
       {
         "id": "b",
-        "text": "The sight glass shows trapped oil, not refrigerant, so recovery can stop"
+        "text": "The liquid in the sight glass is oil, so recovery can stop at this reading"
       },
       {
         "id": "c",
-        "text": "Recovery should continue until no liquid is visible in the sight glass"
+        "text": "A closed valve or restriction is blocking flow between the unit and the machine"
       },
       {
         "id": "d",
-        "text": "Switch to passive recovery methods to complete the process"
+        "text": "The unit is empty, and its 90 psig port reading is a faulty gauge at that port"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Even though the recovery machine shows good vacuum, the presence of liquid refrigerant in the sight glass indicates recovery is not complete. The process should continue until all visible liquid has been removed from the system.",
+    "explanation": "Completion is judged at the appliance, not at the machine inlet: Section 608 requires the appliance, including all liquid, to reach its Table 1 level (10 inches Hg vacuum for this R-410A unit with post-1993 equipment). A deep vacuum at the inlet while the unit still holds 90 psig and visible liquid means nothing is flowing, so check for a front-seated service valve, a hose without a core depressor or a clogged inlet filter, then resume recovery.",
     "distractorExplanations": {
-      "a": "Vacuum level alone does not indicate complete recovery; liquid refrigerant remaining in the system means more recovery is needed.",
-      "b": "Visible liquid in the sight glass means refrigerant is still present; recovery should continue until it clears.",
-      "d": "Active recovery should be continued rather than switching methods, as it is more effective for removing remaining liquid refrigerant."
+      "a": "A vacuum at the machine inlet only shows the hose side is empty; the unit still reads 90 psig, so its charge has not been recovered.",
+      "b": "Oil does not hold the unit at 90 psig; that pressure is refrigerant, and the rule requires all liquid refrigerant to be removed.",
+      "d": "Two independent signs, the 90 psig reading and liquid in the sight glass, show refrigerant remains; blaming one gauge ignores the other."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-2-040",
@@ -4733,7 +4733,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Recover refrigerant to 10 inches of mercury vacuum"
+        "text": "Recover the charge to 10 inches of mercury vacuum before the motor swap"
       },
       {
         "id": "b",
@@ -4751,12 +4751,12 @@
     "correctOptionId": "b",
     "explanation": "Since the repair involves only the evaporator fan motor and electrical connections without opening the refrigerant circuit, no recovery is required. Recovery is only mandated when the refrigerant circuit will be opened for repairs or maintenance.",
     "distractorExplanations": {
-      "a": "This vacuum level applies when opening the system for major component replacement, but the refrigerant circuit remains closed for fan motor replacement.",
-      "c": "Recovering only to atmospheric pressure would be insufficient even if recovery were required, and recovery isn't needed for this non-invasive repair.",
-      "d": "This is the standard vacuum requirement for opening Type II systems, but it doesn't apply when the refrigerant circuit stays intact."
+      "a": "Recovery applies only when the refrigerant circuit is opened; a fan motor swap leaves the sealed circuit intact, so no evacuation level applies.",
+      "c": "No evacuation level applies when the circuit stays closed; recovering to 0 psig would waste time and risk an unnecessary release.",
+      "d": "15 inches applies to other high-pressure appliances of 200 pounds or more being opened; this 18-pound circuit is not opened at all."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-2-050",
@@ -5002,7 +5002,7 @@
       },
       {
         "id": "b",
-        "text": "0 psig (atmospheric pressure)"
+        "text": "0 psig, equal to atmospheric pressure"
       },
       {
         "id": "c",
@@ -5021,7 +5021,7 @@
       "d": "15 inches is a high-pressure appliance level for 200 pounds or more, not a low-pressure non-major repair level."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-3-009",
@@ -5750,37 +5750,37 @@
     "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
   },
   {
-    "id": "epa-608-readiness-check-type-3-033",
+    "id": "epa-608-readiness-check-type-3-051",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-3",
-    "prompt": "When recovering refrigerant from a low-pressure appliance, what specific equipment requirement must be met to prevent contamination?",
+    "prompt": "Before draining oil from an R-123 chiller during scheduled maintenance, what should the technician do to keep refrigerant dissolved in the oil from being lost with it?",
     "options": [
       {
         "id": "a",
-        "text": "Recovery equipment must be designed to operate at pressures below atmospheric"
+        "text": "Heat the oil to about 130°F so the dissolved refrigerant boils out first"
       },
       {
         "id": "b",
-        "text": "Recovery equipment must have a built-in filter-drier rated for the specific refrigerant"
+        "text": "Chill the oil below 40°F so the refrigerant stays bound in the oil phase"
       },
       {
         "id": "c",
-        "text": "Recovery equipment must be capable of achieving 29 inches of mercury vacuum"
+        "text": "Pressurize the sump with nitrogen to 25 psig and drain the oil quickly"
       },
       {
         "id": "d",
-        "text": "Recovery equipment must include automatic purge capabilities for non-condensables"
+        "text": "Drain the oil cold and later count the lost refrigerant on the leak log"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Recovery equipment used for low-pressure appliances must be specifically designed to operate at pressures below atmospheric pressure to effectively remove refrigerant from systems that operate in vacuum conditions. Standard recovery equipment may not function properly in these conditions.",
+    "explanation": "Refrigerant dissolves readily in chiller oil, and cool oil can hold a large share of it. Warming the oil to about 130°F before removal drives the dissolved refrigerant back out so it stays in the machine or goes to recovery instead of leaving with the drained oil, which keeps the release to a minimum and makes the used oil safer to handle.",
     "distractorExplanations": {
-      "b": "Filter-driers are important but not the primary equipment requirement specific to low-pressure appliance recovery.",
-      "c": "While deep vacuum capability is important, the key requirement is that equipment can operate below atmospheric pressure during recovery.",
-      "d": "Purge capabilities are beneficial but not the fundamental requirement for low-pressure appliance recovery equipment."
+      "b": "Cold oil holds more dissolved refrigerant, not less; chilling it before draining carries extra refrigerant out with the oil.",
+      "c": "Pushing 25 psig into a low-pressure machine exceeds its 15 psig rupture disc rating and still leaves refrigerant dissolved in the oil.",
+      "d": "Draining cold oil releases avoidable refrigerant, and recording it afterward does not cure a release the procedure should have prevented."
     },
-    "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "difficulty": "medium",
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-3-034",
@@ -5856,7 +5856,7 @@
     "options": [
       {
         "id": "a",
-        "text": "10 inches of mercury vacuum"
+        "text": "10 inches of mercury vacuum, a high-pressure level"
       },
       {
         "id": "b",
@@ -5879,7 +5879,7 @@
       "c": "About 29 inches (25 mm Hg absolute) is the level for newer equipment; pre-1993 machines must reach 25 inches."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question). · Factual point-fix 2026-10-13"
   },
   {
     "id": "epa-608-readiness-check-type-3-037",
@@ -6182,34 +6182,34 @@
     "id": "epa-608-readiness-check-type-3-046",
     "examSlug": "epa-608-readiness-check",
     "topicId": "type-3",
-    "prompt": "What is the primary reason that low-pressure appliances pose a unique environmental risk compared to high-pressure systems?",
+    "prompt": "An R-123 chiller's purge log shows the purge unit now runs about twice as many hours per week as it did last season, with no change in load. What does this most likely indicate, and what should follow?",
     "options": [
       {
         "id": "a",
-        "text": "They contain larger refrigerant charges that increase leak potential"
+        "text": "Refrigerant is escaping, so the purge run-time limit should be raised"
       },
       {
         "id": "b",
-        "text": "They operate below atmospheric pressure, allowing air and moisture infiltration"
+        "text": "Air is leaking in, so leak-test it after warming it to no more than 10 psig"
       },
       {
         "id": "c",
-        "text": "They use R-123, which has a higher ozone depletion potential than R-11"
+        "text": "The chiller is overcharged, so some refrigerant should be removed"
       },
       {
         "id": "d",
-        "text": "They operate above atmospheric pressure, which forces refrigerant out through leaks"
+        "text": "Moisture is normal in a vacuum machine, so no action is needed yet"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Low-pressure appliances operate below atmospheric pressure, which means any leak allows air and moisture to enter the system rather than refrigerant escaping. This infiltration can lead to system contamination, reduced efficiency, and potential refrigerant degradation, creating unique environmental and operational concerns.",
+    "explanation": "An R-123 low-pressure chiller's evaporator runs below atmospheric pressure, so leaks pull air and moisture in rather than pushing refrigerant out. The purge unit removes those non-condensables, which makes rising purge run time the standard early warning of an in-leak. The machine is then leak-tested by raising its internal pressure with controlled hot water or heater blankets, never above 10 psig, so the 15 psig rupture disc is not blown.",
     "distractorExplanations": {
-      "a": "While low-pressure appliances often have large charges, the pressure differential is the primary environmental concern, not just charge size.",
-      "c": "R-11 has an ODP of 1.0 while R-123 is about 0.02; R-123 replaced R-11 to cut ozone damage.",
-      "d": "That describes high-pressure systems; low-pressure appliances run below atmosphere and pull air and moisture in."
+      "a": "Low-pressure machines leak air in, not refrigerant out, at the evaporator; raising the purge limit hides the in-leak instead of finding it.",
+      "c": "An overcharge does not admit air; purge run time tracks non-condensables entering the machine, which points to an in-leak.",
+      "d": "Air and moisture are contaminants that form acid and raise condensing pressure; rising purge time calls for a leak search, not waiting."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go via OpenRouter with cross-validation (original readiness-check question)."
+    "sourceNote": "UniPrep2Go factual point-fix 2026-10-13 (external reviewer notes)."
   },
   {
     "id": "epa-608-readiness-check-type-3-047",

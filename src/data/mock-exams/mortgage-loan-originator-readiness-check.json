@@ -1489,31 +1489,31 @@
     "id": "mortgage-loan-originator-readiness-check-ethics-001",
     "examSlug": "mortgage-loan-originator-readiness-check",
     "topicId": "ethics",
-    "prompt": "Charging a borrower a fee for which no service is performed is",
+    "prompt": "A mortgage company charges the borrower a $350 'courier coordination' fee and passes half of it to a title agent who did no work on the file. How is this arrangement best described?",
     "options": [
       {
         "id": "a",
-        "text": "A permissible fee if disclosed on the Loan Estimate"
+        "text": "A permissible charge because it was itemized on the Loan Estimate"
       },
       {
         "id": "b",
-        "text": "A TILA finance charge violation subject to rescission"
+        "text": "A TILA finance-charge error that gives the borrower a rescission right"
       },
       {
         "id": "c",
-        "text": "An unearned fee / potential RESPA Section 8 violation"
+        "text": "A split of an unearned fee, a potential RESPA Section 8(b) violation"
       },
       {
         "id": "d",
-        "text": "A zero-tolerance violation curable by a lender credit"
+        "text": "A zero-tolerance overage that a lender credit at closing fully cures"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "RESPA Section 8 prohibits accepting or charging an unearned fee when no actual settlement service is performed. Merely disclosing the charge does not make it lawful.",
+    "explanation": "RESPA Section 8(b) bars giving or accepting any portion, split, or percentage of a settlement charge other than for services actually performed. The title agent did nothing yet received half the fee, so the charge was split for no service. Under Freeman v. Quicken Loans (2012), 8(b) requires such a split between two or more persons; a fee one provider keeps undivided is not itself an 8(b) violation, though other law may still apply.",
     "distractorExplanations": {
-      "a": "Disclosure does not cure an unearned fee; RESPA Section 8(b) requires an actual settlement service to support the charge.",
-      "b": "A finance-charge error may implicate TILA, but a fee collected without a performed service is specifically a RESPA Section 8 issue.",
-      "d": "TRID tolerance cures address certain fee increases, not whether an underlying fee was earned through a real settlement service."
+      "a": "Itemizing a charge on the Loan Estimate does not make an unearned split lawful; Section 8(b) asks whether services were actually performed, not whether the fee was disclosed.",
+      "b": "TILA rescission applies to certain refinances of a principal dwelling and is not triggered by sharing an unearned settlement fee; the defect here is a RESPA Section 8 issue.",
+      "d": "TRID tolerance cures refund fees that exceed their Loan Estimate amounts; a refund does not legalize sharing a fee with a provider who performed no settlement service."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for SAFE MLO themes (expanded to 240 unique 2026-10-07)."
@@ -6671,31 +6671,31 @@
     "id": "mortgage-loan-originator-readiness-check-fed-law-053",
     "examSlug": "mortgage-loan-originator-readiness-check",
     "topicId": "fed-law",
-    "prompt": "A mortgage company receives a $12,000 cash payment and a separate suspicious wire pattern suggesting structuring. What should the MLO do rather than promise the borrower secrecy or a filing outcome?",
+    "prompt": "A nonbank mortgage company receives $12,000 in cash from a borrower toward closing costs, and the borrower's wires into the file follow a pattern suggesting structuring. What should the MLO do rather than promise the borrower secrecy or a filing outcome?",
     "options": [
       {
         "id": "a",
-        "text": "Escalate the activity under the company's BSA/AML procedures for CTR and SAR evaluation"
+        "text": "Escalate both under the company's AML program for Form 8300 and SAR review"
       },
       {
         "id": "b",
-        "text": "Tell the borrower that a SAR will be filed and provide a copy after submission in a residential purchase file"
+        "text": "Tell the borrower a SAR will be filed and send them a copy after submission"
       },
       {
         "id": "c",
-        "text": "Split the cash receipt across days so no currency report is considered under national SAFE themes"
+        "text": "Have the borrower split the cash into amounts under $10,000 on separate days"
       },
       {
         "id": "d",
-        "text": "Reject the file solely because any transaction above $10,000 proves money laundering for this borrower application"
+        "text": "File a Currency Transaction Report, as a bank does for cash over $10,000"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Currency transactions over $10,000 can trigger CTR duties, while suspicious patterns may warrant SAR review; the MLO should follow the institution's procedures and preserve SAR confidentiality.",
+    "explanation": "Nonbank residential mortgage lenders and originators must keep an AML program and file SARs (31 CFR Part 1029), but FinCEN does not require them to file CTRs. Cash over $10,000 received in the business is reported on IRS/FinCEN Form 8300, and the structuring pattern is a SAR question. The MLO escalates under company procedures and keeps any SAR confidential.",
     "distractorExplanations": {
-      "b": "SAR existence and contents are confidential and must not be disclosed to the subject.",
-      "c": "Helping structure payments to evade reporting compounds the AML concern.",
-      "d": "A reporting threshold does not itself prove a crime or mandate automatic credit denial."
+      "b": "SAR confidentiality bars telling the subject that a SAR is or will be filed; disclosing it or handing over a copy is itself a violation.",
+      "c": "Advising the borrower to break cash into sub-$10,000 pieces is helping structure the payment to evade reporting, a federal crime in its own right.",
+      "d": "The CTR is a duty of banks and other BSA-defined financial institutions; FinCEN's 2012 rule gave nonbank RMLOs AML and SAR duties only, so large cash goes on Form 8300."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for SAFE MLO themes (expanded to 240 unique 2026-10-07)."

@@ -25,7 +25,7 @@ export const portugalNationalityTestPost: BlogPostDraft = {
       "Prep the civic themes with the free Portugal Nacionalidade readiness check (Prep2Go-sourced bank). For A2 language evidence, use the CIPLE A2 deck on Prep2Go. For history immersion, read Gaivota em Portugal comics and browse Prep2Go.",
     extraLinks: [
       {
-        href: "/comics/gaivota-em-portugal",
+        href: "https://www.prep2go.study/comics/gaivota-em-portugal",
         label: "Gaivota em Portugal — Portuguese history comics (free Ep.01)",
       },
       {

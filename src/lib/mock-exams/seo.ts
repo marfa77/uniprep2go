@@ -951,9 +951,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Medical scribe practice test",
   },
   "leed-green-associate-readiness-check": {
-    title: "Free LEED Green Associate Practice Test | 50-Question Readiness Check",
+    title: "Free LEED Green Associate Practice Test | 60-Question v5 Readiness Check",
     description:
-      "Free LEED GA practice: 50 timed questions / 100 minutes / 70% diagnostic across LEED domains, then repair with the $11 / 250+ LEED GA Anki deck. Official GBCI exam is 100Q / 2h / scaled 170. Independent — not USGBC material.",
+      "Free LEED GA (v5) practice: 60 timed questions / 75 minutes from a 120-item bank, weighted to the GBCI blueprint, 70% diagnostic — then repair with the $11 / 120-card LEED GA Anki deck. Official GBCI exam is 100Q / 2h / scaled 170. Independent — not USGBC material.",
     keywords: [
       "leed green associate practice test",
       "leed ga exam questions",
@@ -964,15 +964,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED Green Associate Readiness Check",
     intro:
-      "A timed 50-question LEED GA diagnostic (100 minutes, 70% readiness target) modeled on GBCI credit categories — then drill weak domains in the linked $11 / 250 Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200). Not a free 700-question lead-gen bank.",
+      "A timed 60-question LEED GA diagnostic (75 minutes, 70% readiness target) drawn from a 120-item bank written to the LEED v5 test specifications and weighted like the GBCI blueprint — then drill weak domains in the linked $11 / 120-card Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200), based on LEED v5 since 2026. Not a free 700-question lead-gen bank.",
     audience:
       "Architects, engineers, sustainability consultants, and students entering green building who want a baseline before USGBC exam registration.",
     practiceTestLabel: "LEED Green Associate practice test",
   },
   "leed-ap-bd-c-readiness-check": {
-    title: "Free LEED AP BD+C Practice Test | 50-Question Readiness Check",
+    title: "Free LEED AP BD+C Practice Test | 60-Question v5 Readiness Check",
     description:
-      "Free LEED AP Building Design + Construction practice questions: 50 timed questions, 100 minutes, 70% readiness target, credit-category diagnosis, and full answer review. Independent LEED AP prep — not USGBC material.",
+      "Free LEED AP Building Design + Construction (v5) practice questions: 60 timed questions, 75 minutes, from a 120-item bank weighted to the GBCI blueprint, 70% readiness target, credit-category diagnosis, and full answer review. Independent LEED AP prep — not USGBC material.",
     keywords: [
       "leed ap bd+c practice test",
       "leed ap exam questions",
@@ -982,15 +982,15 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED AP BD+C Readiness Check",
     intro:
-      "A timed LEED AP BD+C readiness diagnostic for the design and construction specialty — prerequisites, credits, and LEED project roles. Requires LEED Green Associate for the official AP credential.",
+      "A timed 60-question / 75-minute LEED AP BD+C diagnostic written to the LEED v5 specialty specifications — process and integrative assessments, location, sites and water, energy and commissioning, embodied carbon and materials, and IEQ — drawn from a 120-item bank so retakes differ. The official exam moved to LEED v5 (v4 testing ended June 28, 2026). Requires LEED Green Associate for the official AP credential.",
     audience:
       "Design professionals, sustainability consultants, and LEED GA holders preparing for the LEED AP BD+C specialty exam.",
     practiceTestLabel: "LEED AP BD+C practice test",
   },
   "leed-ap-om-readiness-check": {
-    title: "Free LEED AP O+M Practice Test | 50-Question Mock",
+    title: "Free LEED AP O+M Practice Test | 60-Question v5 Mock",
     description:
-      "Free LEED AP Operations + Maintenance practice questions online: 50 timed questions across process, sites, water, energy, and IEQ for existing buildings, 100 minutes, 70% readiness target, and full answer review. Independent LEED prep — not USGBC/GBCI material.",
+      "Free LEED AP Operations + Maintenance (v5) practice questions online: 60 timed questions across process, sites, water, energy, and IEQ for existing buildings, 75 minutes, from a 120-item bank weighted to the GBCI blueprint, 70% readiness target, and full answer review. Independent LEED prep — not USGBC/GBCI material.",
     keywords: [
       "leed ap o+m practice test",
       "leed operations and maintenance exam",
@@ -1000,7 +1000,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED AP O+M Readiness Check",
     intro:
-      "A timed LEED AP Operations + Maintenance readiness diagnostic for existing-building teams — process and integrative planning, transportation and sites, water, energy/atmosphere, and materials/IEQ — aligned to GBCI specialty domains.",
+      "A timed 60-question / 75-minute LEED AP Operations + Maintenance diagnostic written to the LEED v5 O+M specifications — assessments and O+M plans, transportation performance, water metering, energy, GHG and refrigerant performance, waste, and IEQ operations — drawn from a 120-item bank so retakes differ. The official specialty exam moved to LEED v5 (v4 testing ended June 28, 2026).",
     audience:
       "Facility managers, sustainability leads, and LEED Green Associates preparing for the LEED AP O+M specialty exam on existing buildings.",
     practiceTestLabel: "LEED AP O+M practice test",

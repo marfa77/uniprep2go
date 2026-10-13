@@ -3831,24 +3831,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "During pre-design, the integrative process requires establishing performance targets early. Which approach best demonstrates this methodology?",
+        question: "A mixed-use project team wants its development to strengthen the surrounding neighborhood economy, one of the aims of equitable development in LEED. Which action best supports that aim?",
         answer:
-          "Correct: (c) Defining sustainability goals and performance metrics before design development begins. Integrative process emphasizes early goal-setting so the team aligns decisions with sustainability objectives from the start.",
+          "Correct: (a) Prioritizing local hiring, locally owned ground-floor tenants, and nearby suppliers Supporting the local economy means the project's spending and activity stay in the community: hiring local workers, leasing to local businesses, and buying from nearby suppliers. This keeps economic benefits close to existing residents and complements walkable, mixed-use street life.",
         imageUrl: "/samples/leed-green-associate-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A mechanical engineer finds that daylight harvesting could reduce HVAC size requirements. This best illustrates which integrative process principle?",
+        question: "A developer is choosing between publishing its own green building checklist and pursuing LEED certification. Which benefit does LEED offer that a self-declared checklist cannot?",
         answer:
-          "Correct: (b) Systems thinking and cross-disciplinary collaboration. Systems thinking considers how building systems interact and identifies synergies across disciplines.",
+          "Correct: (b) Independent third-party review confirming the project met published LEED requirements LEED's market value rests on verification: GBCI reviews project documentation against published requirements, so owners, tenants and investors can trust the claim. A self-written checklist has no independent reviewer, which is why it carries less credibility in leasing, financing and public disclosure.",
         imageUrl: "/samples/leed-green-associate-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "When establishing sustainability context during integrative process planning, which factor is most critical?",
+        question: "Early in design, a team wants to cut the size and cost of the HVAC plant for a new office building. Which sequence of decisions follows the load-reduction approach that LEED encourages?",
         answer:
-          "Correct: (b) The local climate, site conditions, and regional environmental priorities. Context analysis informs which LEED credits and strategies fit the specific project location.",
+          "Correct: (a) Improve envelope and reduce internal loads first, then size efficient equipment, then add renewables Loads come first: a better envelope, shading, and lower lighting and plug loads shrink heating and cooling demand, so the mechanical plant can be smaller and cheaper. Efficient equipment then serves the reduced load, and renewable energy or green power covers what remains, so less capacity has to be bought.",
         imageUrl: "/samples/leed-green-associate-anki-deck-sample-3.webp",
       },
     ],
@@ -3856,7 +3853,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED Green Associate practice test?",
         answer:
-          "Yes. Take the free 50-question LEED GA readiness check at uniprep2go.study/mock-exams/leed-green-associate-readiness-check.",
+          "Yes. Take the free 60-question LEED GA readiness check at uniprep2go.study/mock-exams/leed-green-associate-readiness-check.",
       },
       {
         question: "Is this official USGBC material?",
@@ -3893,24 +3890,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question:
-          "A project team is conducting an integrative design charrette for a new office building. Which participant would be MOST critical during early conceptual design to optimize energy performance and daylighting?",
+        question: "A team modeling indoor fixture water use for a large retail store entered only its full-time-equivalent employees. Which correction will most improve the accuracy of both baseline and design case?",
         answer:
-          "Correct: (b) Building envelope consultant. Envelope expertise is essential early because thermal performance, daylighting, and energy efficiency integrate at the building skin.",
+          "Correct: (a) Add visitors (transients) with their own lower uses per day, alongside FTE staff Indoor water calculations multiply occupants by uses per day and fixture rates. In retail, visitors far outnumber staff but use restrooms fewer times per day than employees, so they are entered as a separate occupant type with their own use rate. Leaving them out distorts both cases and the fixture mix.",
         imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-1.webp",
       },
       {
-        question:
-          "A mixed-use development near transit wants a strategy that addresses multiple Location and Transportation credit intents through coordinated policies and mode-shift programs. Which option best fits?",
+        question: "A project in Germany wants to demonstrate compliance using a European standard in place of a US referenced standard cited in a LEED requirement. Which mechanism supports this?",
         answer:
-          "Correct: (d) Implement a comprehensive transportation demand management program. TDM combines policies, incentives, and monitoring to reduce drive-alone trips across multiple LT strategies.",
+          "Correct: (c) A USGBC-recognized equivalency or alternative compliance path LEED is used worldwide, so USGBC recognizes equivalent standards and publishes alternative compliance paths that let projects outside the US meet a requirement using comparable local standards. A team relies on those published equivalencies, or requests a ruling if none exists, rather than substituting a standard on its own authority.",
         imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "During integrative process, the mechanical engineer finds a conflict between optimal energy performance and acceptable indoor air quality. What should the team do FIRST?",
+        question: "A tenant asks what it actually receives when it buys Energy Attribute Certificates (EACs), such as renewable energy certificates. Which explanation should the LEED AP give?",
         answer:
-          "Correct: (d) Schedule a collaborative workshop with all relevant disciplines. Integrative process emphasizes cross-discipline problem-solving to find synergistic solutions.",
+          "Correct: (c) A tradable claim to the environmental attributes of one megawatt-hour of renewable generation An EAC separates the environmental attributes of renewable generation from the physical electricity. Each certificate typically represents one megawatt-hour, and retiring it lets the holder claim that quantity of renewable electricity use without any change to the power physically delivered.",
         imageUrl: "/samples/leed-ap-bd-c-anki-deck-sample-3.webp",
       },
     ],
@@ -3918,7 +3912,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED AP BD+C practice test?",
         answer:
-          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/leed-ap-bd-c-readiness-check.",
+          "Yes. Take the free 60-question readiness check at uniprep2go.study/mock-exams/leed-ap-bd-c-readiness-check.",
       },
       {
         question: "Do I need LEED Green Associate first?",
@@ -3935,44 +3929,42 @@ const rawDecks: Deck[] = [
     shortName: "LEED AP O+M",
     subtitle: "A planned spaced-repetition deck for LEED AP Operations + Maintenance on existing buildings.",
     directAnswer:
-      "The LEED AP O+M Anki Deck is a planned UniPrep2Go product with 250 flashcards for GBCI LEED AP Operations + Maintenance. It is not yet available for purchase. Take the free LEED AP O+M readiness check first. Requires LEED Green Associate for the specialty pathway.",
-    lastUpdated: "2026-07-16",
+      "The LEED AP O+M Anki Deck is a planned UniPrep2Go product with 120 flashcards written to the LEED v5 O+M exam specifications for GBCI LEED AP Operations + Maintenance. It is not yet available for purchase. Take the free LEED AP O+M readiness check first. Requires LEED Green Associate for the specialty pathway.",
+    lastUpdated: "2026-10-13",
     audience:
       "Facility managers, building engineers, and LEED Green Associates pursuing LEED AP O+M for existing-building operations.",
     format: ".apkg",
     facts: {
-      cards: "250",
+      cards: "120",
       topics: "Process & integrative planning, location & sites, water, energy & atmosphere, materials & IEQ",
       formulas: "High-yield O+M performance, metering, commissioning, waste, IAQ, and green cleaning drills",
-      examYear: "LEED AP O+M (GBCI specialty; LEED v5 transition window)",
+      examYear: "LEED AP O+M (GBCI specialty; LEED v5 beta, final v5 exam expected early 2027)",
       delivery: "Digital download (planned)",
     },
     topicCoverage: [
-      { name: "LEED Process and Integrative Planning", examWeight: "~20% of O+M domains", cards: "50" },
-      { name: "Location, Transportation, and Sustainable Sites", examWeight: "~16%", cards: "50" },
-      { name: "Water Efficiency", examWeight: "~10%", cards: "50" },
-      { name: "Energy and Atmosphere", examWeight: "~24% (heaviest O+M domain)", cards: "50" },
-      { name: "Materials, Resources, and IEQ", examWeight: "~30%", cards: "50" },
+      { name: "LEED Process and Integrative Planning", examWeight: "20 of 85 scored v5 items", cards: "28" },
+      { name: "Location, Transportation, and Sustainable Sites", examWeight: "13 of 85", cards: "18" },
+      { name: "Water Efficiency", examWeight: "7 of 85", cards: "12" },
+      { name: "Energy and Atmosphere", examWeight: "21 of 85 (heaviest O+M domain)", cards: "30" },
+      { name: "Materials, Resources, and IEQ", examWeight: "24 of 85", cards: "32" },
     ],
     sampleCards: [
       {
-        question:
-          "A campus is adding 2 EV charging stations for O+M transportation credits. What else should the team verify?",
+        question: "Local health officials report a surge in respiratory illness. Which set of measures reflects a respiratory-disease management mode for the building's HVAC?",
         answer:
-          "Correct: (a) Confirm stations are installed, powered, and accessible for intended users during the performance period. Chargers must be available for occupants/visitors as intended and documented during the performance period.",
+          "Correct: (d) Increase outdoor air where capacity allows, raise filtration on recirculated air, add portable HEPA units When the contaminant is an infectious aerosol generated indoors, the mode aims to lower its concentration: more outdoor air for dilution where coil capacity allows, higher-efficiency filtration on recirculated air, and portable HEPA air cleaners in dense or poorly ventilated rooms. A Resilient Spaces management mode sets out these levers, and the triggers for using them, before the event.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-1.webp",
       },
       {
-        question: "An O+M team wants to reduce site runoff pollution. Which action is most aligned?",
+        question: "In the reporting year, a building burned natural gas on site producing 265 t CO2e, purchased grid electricity producing 400 t CO2e, and lost refrigerant equal to 20 t CO2e. What are its Scope 1 emissions?",
         answer:
-          "Correct: (b) Maintain bioretention areas and keep storm inlets clear of sediment and debris. O+M site credits favor maintaining vegetated practices and reducing untreated runoff.",
+          "Correct: (b) 285 t CO2e Scope 1 covers direct emissions from sources the building controls: on-site fuel combustion and refrigerant leakage. 265 + 20 = 285 t CO2e. Purchased electricity is an indirect Scope 2 emission, reported separately even though it results from the building's own consumption.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-2.webp",
       },
       {
-        question:
-          "Operators want energy savings without capital retrofit. Which AHU optimal start action helps?",
+        question: "A bird collision facade assessment assigns each exterior material a threat factor and weights it by facade area. Which element should the team expect to carry the highest threat factor?",
         answer:
-          "Correct: (b) Implement and verify BAS schedules/setpoints that match actual occupancy. Tuning schedules and setpoints is a core O+M energy strategy when comfort requirements are still met.",
+          "Correct: (d) A clear glass skybridge where birds can see sky and trees through both sides Threat factors rank how hazardous a material or condition is to birds, and the facade result is area-weighted. Transparent fly-through conditions such as glass corners, skybridges, and glass railings are among the most dangerous because birds perceive a clear flight path; opaque, screened, or densely patterned surfaces rate far lower. Reducing high-threat glazing area lowers the weighted result.",
         imageUrl: "/samples/leed-ap-om-anki-deck-sample-3.webp",
       },
     ],
@@ -3980,12 +3972,12 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED AP O+M practice test?",
         answer:
-          "Yes. Take the free 50-question LEED AP O+M readiness check at uniprep2go.study/mock-exams/leed-ap-om-readiness-check. The paid Anki deck includes 250 cards from the same validated bank.",
+          "Yes. Take the free 60-question / 75-minute LEED AP O+M readiness check at uniprep2go.study/mock-exams/leed-ap-om-readiness-check. The Anki deck holds the same 120 LEED v5 items as cards.",
       },
       {
         question: "Do I need LEED Green Associate before LEED AP O+M?",
         answer:
-          "Yes for the specialty-only exam path — an active LEED GA is required. Combined GA + AP sittings may be available in some languages/centers; verify current GBCI registration options.",
+          "Yes for the specialty-only exam path — an active LEED GA is required. The LEED v5 AP beta exams are not offered in a combined GA + AP format; verify current GBCI registration options for your test date.",
       },
       {
         question: "How is this different from LEED AP BD+C?",
@@ -4027,7 +4019,7 @@ const rawDecks: Deck[] = [
       {
         question: "A WELL v2 project team is designing open-plan office lighting to support circadian health. Which metric is most directly used to evaluate melanopic (circadian-effective) light exposure?",
         answer:
-          "Correct: (a) Equivalent Melanopic Lux (EML) at the eye WELL Light concepts emphasize circadian-effective illumination evaluated at the occupant's eye using melanopic weighting, commonly expressed as EML rather than generic illuminance alone.",
+          "Correct: (a) Melanopic equivalent daylight illuminance (melanopic EDI) at the eye. WELL v2 circadian lighting criteria are set in melanopic EDI measured at the occupant's eye, with timing and duration requirements, rather than generic illuminance alone.",
         imageUrl: "/samples/well-ap-anki-deck-sample-1.webp",
       },
       {

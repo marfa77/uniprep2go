@@ -392,10 +392,11 @@ describe("mock exam configs", () => {
   });
 
 
-  it("defines LEED AP O+M topic counts that sum to 50", () => {
+  it("defines LEED AP O+M topic counts that sum to 60", () => {
     const config = getMockExamConfig("leed-ap-om-readiness-check");
-    expect(config?.questionCount).toBe(50);
-    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(50);
+    expect(config?.questionCount).toBe(60);
+    expect(config?.durationMinutes).toBe(75);
+    expect(config?.topics.reduce((sum, topic) => sum + (topic.questionCount ?? 0), 0)).toBe(60);
     expect(config?.topics.map((t) => t.weightPercent).reduce((a, b) => a + b, 0)).toBe(100);
     expect(validateMockExamConfig(config!)).toEqual([]);
   });
