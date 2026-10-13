@@ -2011,12 +2011,12 @@ const rawDecks: Deck[] = [
     slug: "polish-a2-certyfikat-anki-deck",
     category: "language",
     status: "available",
-    title: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1491 Flashcards",
+    title: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1489 Flashcards",
     shortName: "Polish A2 Certyfikat",
     subtitle:
-      "1,491 Polish flashcards for Certyfikat języka polskiego A2 and Polish residence or citizenship language prep.",
+      "1,489 Polish flashcards for Certyfikat języka polskiego A2 and Polish residence or citizenship language prep.",
     directAnswer:
-      "UniPrep2Go sells a Polish A2 Certyfikat Anki deck with 1,491 high-frequency vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday life in Poland. Built for the state Certyfikat języka polskiego (as a Foreign Language) A2 pathway and the language side of residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — language vocabulary only, not Polish citizenship civics.",
+      "UniPrep2Go sells a Polish A2 Certyfikat Anki deck with 1,489 high-frequency vocabulary cards, audio, and practical example sentences for work, housing, services, and everyday life in Poland. Built for the state Certyfikat języka polskiego (as a Foreign Language) A2 pathway and the language side of residence and citizenship requirements. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — language vocabulary only, not Polish citizenship civics.",
     lastUpdated: "2026-09-21",
     audience:
       "Certyfikat języka polskiego A2 learners and applicants preparing Polish for residence or citizenship language requirements.",
@@ -2026,7 +2026,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1491",
+      cards: "1489",
       topics: "Certyfikat języka polskiego A2, Polish residence and citizenship language vocabulary",
       formulas: "Audio + example sentences for Certyfikat A2 and daily-life themes",
       examYear: "Current Certyfikat / residence-citizenship cycle",
@@ -2064,7 +2064,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,491 high-frequency Polish vocabulary words with audio and Anki-ready review for Certyfikat A2-style themes.",
+          "1,489 high-frequency Polish vocabulary words with audio and Anki-ready review for Certyfikat A2-style themes.",
       },
       {
         question: "What file format is delivered?",
@@ -2076,12 +2076,12 @@ const rawDecks: Deck[] = [
     slug: "polish-a2-for-ukrainian-speakers-anki-deck",
     category: "language",
     status: "available",
-    title: "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
+    title: "Polish A2 for Ukrainian Speakers Anki Deck — 1489 Flashcards",
     shortName: "Polish A2 for Ukrainian Speakers",
     subtitle:
-      "1,491 Polish A2 flashcards for Certyfikat and residence language — with Ukrainian support on every card.",
+      "1,489 Polish A2 flashcards for Certyfikat and residence language — with Ukrainian support on every card.",
     directAnswer:
-      "UniPrep2Go sells a Polish A2 for Ukrainian Speakers Anki deck with 1,491 high-frequency Polish vocabulary cards, Ukrainian glosses, bilingual examples, native Polish audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Certyfikat języka polskiego A2 and the language side of residence requirements in Poland. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Polish citizenship civics deck.",
+      "UniPrep2Go sells a Polish A2 for Ukrainian Speakers Anki deck with 1,489 high-frequency Polish vocabulary cards, Ukrainian glosses, bilingual examples, native Polish audio, and illustrations. Built from the Prep2Go app bank for Ukrainian-speaking candidates preparing Certyfikat języka polskiego A2 and the language side of residence requirements in Poland. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Independent study aid — not a Polish citizenship civics deck.",
     lastUpdated: "2026-09-21",
     audience:
       "Ukrainian-speaking Certyfikat A2 and Polish residence-language candidates using Anki for exam and everyday vocabulary.",
@@ -2092,7 +2092,7 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1491",
+      cards: "1489",
       topics:
         "Certyfikat A2 and Polish residence language vocabulary with Ukrainian bilingual support",
       formulas: "Audio + Ukrainian glosses + bilingual example sentences",
@@ -2136,7 +2136,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,491 Polish vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native Polish audio, and illustrations.",
+          "1,489 Polish vocabulary cards from the Prep2Go app: Ukrainian glosses, bilingual examples, native Polish audio, and illustrations.",
       },
       {
         question: "What file format is delivered?",

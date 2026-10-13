@@ -537,7 +537,7 @@ SPECS: dict[str, dict[str, Any]] = {
     },
     "polish-a2-certyfikat-anki-deck": {
         "label": "Polish A2 Certyfikat",
-        "headline": "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1491 Flashcards",
+        "headline": "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1489 Flashcards",
         "exam": "Certyfikat języka polskiego A2 · residence · citizenship language",
         "hook": (
             "Polish vocabulary for Certyfikat języka polskiego A2 and the language side of "
@@ -556,7 +556,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Certyfikat A2 · residence · citizenship language",
         "deck_covers": (
-            "1,491 high-frequency Polish vocabulary cards with audio and practical "
+            "1,489 high-frequency Polish vocabulary cards with audio and practical "
             "example sentences for work, housing, services, and everyday interaction."
         ),
         "not_included": (
@@ -567,19 +567,19 @@ SPECS: dict[str, dict[str, Any]] = {
             "Residence and citizenship timelines reward consistent Polish recall. "
             "Spaced Anki keeps everyday Polish available under exam pressure."
         ),
-        "cards": "1491",
+        "cards": "1489",
         "format_note": "Anki .apkg with audio and examples",
         "sample_captions": ["uniwersytet", "biuro", "rynek"],
         "facts": [
             ("Pathways", "Certyfikat · residence · citizenship language"),
-            ("Cards", "1491 vocabulary"),
+            ("Cards", "1489 vocabulary"),
             ("Media", "Audio + examples"),
             ("Delivery", "Instant .apkg"),
         ],
     },
     "polish-a2-for-ukrainian-speakers-anki-deck": {
         "label": "Polish A2 for Ukrainian Speakers",
-        "headline": "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
+        "headline": "Polish A2 for Ukrainian Speakers Anki Deck — 1489 Flashcards",
         "exam": "Certyfikat A2 · residence language — for Ukrainian speakers",
         "hook": (
             "Polish A2 vocabulary for Ukrainian speakers preparing Certyfikat języka polskiego "
@@ -599,7 +599,7 @@ SPECS: dict[str, dict[str, Any]] = {
         ),
         "pathways": "Certyfikat A2 · residence language · Ukrainian support",
         "deck_covers": (
-            "1,491 Polish vocabulary cards with Ukrainian glosses, bilingual examples, "
+            "1,489 Polish vocabulary cards with Ukrainian glosses, bilingual examples, "
             "native Polish audio, and illustrations."
         ),
         "not_included": (
@@ -610,12 +610,12 @@ SPECS: dict[str, dict[str, Any]] = {
             "Certyfikat and residence language success depends on automatic everyday Polish. "
             "Ukrainian support speeds early comprehension while audio forces Polish recall."
         ),
-        "cards": "1491",
+        "cards": "1489",
         "format_note": "Anki .apkg with audio, images, and Ukrainian glosses",
         "sample_captions": ["uniwersytet", "biuro", "rynek"],
         "facts": [
             ("Pathways", "Certyfikat · residence language"),
-            ("Cards", "1491 vocabulary"),
+            ("Cards", "1489 vocabulary"),
             ("Support", "Ukrainian glosses"),
             ("Delivery", "Instant .apkg"),
         ],

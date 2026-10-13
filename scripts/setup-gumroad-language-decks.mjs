@@ -184,12 +184,12 @@ const SPECS = {
     fileNames: ["Czech_CCE_Residence_Citizenship_Anki_Deck.apkg"],
   },
   "polish-a2-certyfikat-anki-deck": {
-    name: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1491 Flashcards",
+    name: "Polish A2 Certyfikat Residence Citizenship Anki Deck — 1489 Flashcards",
     summary:
-      "1,491 Polish cards for Certyfikat języka polskiego A2 and residence or citizenship language prep.",
+      "1,489 Polish cards for Certyfikat języka polskiego A2 and residence or citizenship language prep.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Certyfikat języka polskiego</strong> A2 and residence or citizenship language prep.</p>",
-      "<p><strong>1,491</strong> high-frequency Polish cards with audio and practical example sentences for everyday life in Poland — language vocabulary only, not Polish citizenship civics.</p>",
+      "<p><strong>1,489</strong> high-frequency Polish cards with audio and practical example sentences for everyday life in Poland — language vocabulary only, not Polish citizenship civics.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
     ].join(""),
@@ -198,12 +198,12 @@ const SPECS = {
     fileNames: ["Polish_A2_Certyfikat_Residence_Citizenship_Anki_Deck.apkg"],
   },
   "polish-a2-for-ukrainian-speakers-anki-deck": {
-    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1491 Flashcards",
+    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1489 Flashcards",
     summary:
-      "1,491 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
+      "1,489 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Certyfikat języka polskiego A2</strong> and residence or citizenship language.</p>",
-      "<p><strong>1,491</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p><strong>1,489</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
       "<p>Not Polish citizenship civics (wiedza o Polsce). Distinct from the English-gloss Polish Certyfikat deck.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
       "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",

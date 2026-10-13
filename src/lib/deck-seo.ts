@@ -285,11 +285,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "CCE learners preparing residence or citizenship language requirements use daily Czech vocabulary recall alongside speaking practice.",
   },
   "polish-a2-certyfikat-anki-deck": {
-    title: "Polish A2 Certyfikat Anki Deck | 1491 Cards",
-    headline: "Polish A2 Certyfikat Prep — 1491 Flashcards",
+    title: "Polish A2 Certyfikat Anki Deck | 1489 Cards",
+    headline: "Polish A2 Certyfikat Prep — 1489 Flashcards",
     studyLabel: "Polish Certyfikat A2 exam prep",
     description:
-      "Polish Anki deck with 1491 flashcards for Certyfikat języka polskiego A2 and residence or citizenship language prep. Independent study aid — not official Certyfikat material.",
+      "Polish Anki deck with 1489 flashcards for Certyfikat języka polskiego A2 and residence or citizenship language prep. Independent study aid — not official Certyfikat material.",
     keywords: [
       "polish certyfikat anki",
       "certyfikat jezyka polskiego anki",
@@ -301,11 +301,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Certyfikat języka polskiego A2 learners preparing residence or citizenship language requirements use daily Polish vocabulary recall — not a Polish civics deck.",
   },
   "polish-a2-for-ukrainian-speakers-anki-deck": {
-    title: "Polish A2 for Ukrainian Speakers Anki | 1491 Cards",
-    headline: "Polish A2 for Ukrainian Speakers — 1491 Flashcards",
+    title: "Polish A2 for Ukrainian Speakers Anki | 1489 Cards",
+    headline: "Polish A2 for Ukrainian Speakers — 1489 Flashcards",
     studyLabel: "Polish A2 for Ukrainian speakers exam prep",
     description:
-      "Polish Anki deck with 1491 flashcards for Ukrainian speakers preparing Certyfikat języka polskiego A2 and residence language — Ukrainian glosses, bilingual examples, and native Polish audio. Independent study aid — not official Certyfikat material.",
+      "Polish Anki deck with 1489 flashcards for Ukrainian speakers preparing Certyfikat języka polskiego A2 and residence language — Ukrainian glosses, bilingual examples, and native Polish audio. Independent study aid — not official Certyfikat material.",
     keywords: [
       "polish for ukrainian speakers anki",
       "польська для українців anki",
