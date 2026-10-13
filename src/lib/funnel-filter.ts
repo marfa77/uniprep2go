@@ -1,5 +1,6 @@
 import type { FunnelEvent } from "./analytics";
 import { shouldExcludeFunnelTraffic } from "./funnel-exclude";
+import { isSpoofedBrowserFingerprint } from "./traffic-bot";
 
 const LEGACY_NOISE_SOURCES = new Set(["section_view"]);
 
@@ -8,9 +9,13 @@ export function isInternalFunnelEvent(event: Pick<FunnelEvent, "internal">) {
 }
 
 export function shouldRecordFunnelEvent(
-  event: Pick<FunnelEvent, "internal">,
+  event: Pick<FunnelEvent, "internal"> & Partial<Pick<FunnelEvent, "screen">>,
   request?: Pick<Request, "headers">,
 ) {
+  if (isSpoofedBrowserFingerprint(event)) {
+    return false;
+  }
+
   if (shouldExcludeFunnelTraffic({
     internal: event.internal,
     cookieHeader: request?.headers.get("cookie"),

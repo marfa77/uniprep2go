@@ -43,6 +43,42 @@ describe("POST /api/events", () => {
     recordFunnelEvent.mockClear();
   });
 
+  it("drops the SG data-center Chrome fingerprint before stats and Telegram alerts", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const body = {
+      name: "mock_started",
+      deckSlug: "nclex-rn-anki-deck",
+      source: "mock:nclex-rn-readiness-check",
+      timezone: "Asia/Shanghai",
+      screen: "1366x1366",
+    };
+    const headers = {
+      "Content-Type": "application/json",
+      "x-vercel-ip-country": "SG",
+      "x-forwarded-for": "47.82.10.20",
+      "user-agent":
+        "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
+    };
+
+    const bot = await POST(
+      new Request("https://uniprep2go.study/api/events", { method: "POST", headers, body: JSON.stringify(body) }),
+    );
+    expect(bot.status).toBe(204);
+    expect(recordFunnelEvent).not.toHaveBeenCalled();
+    expect(notifyMockStarted).not.toHaveBeenCalled();
+
+    const human = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: { ...headers, "x-vercel-ip-country": "US", "x-forwarded-for": "151.200.1.2" },
+        body: JSON.stringify({ ...body, timezone: "America/New_York", screen: "1440x900" }),
+      }),
+    );
+    expect(human.status).toBe(204);
+    expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
+    expect(notifyMockStarted).toHaveBeenCalledTimes(1);
+  });
+
   it("sends a Telegram DM when a visitor clicks Mock Pass checkout", async () => {
     const { POST } = await import("@/app/api/events/route");
     const response = await POST(

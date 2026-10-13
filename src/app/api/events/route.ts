@@ -3,6 +3,7 @@ import { getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 import { recordFunnelEvent } from "@/lib/funnel-store";
+import { isSpoofedBrowserFingerprint } from "@/lib/traffic-bot";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { isAgentUserAgent } from "@/lib/mock-exams/miss-cohort";
 import { recordUniqueMockStart } from "@/lib/mock-exams/mock-start-count-store";
@@ -49,6 +50,10 @@ export async function POST(request: Request) {
         undefined,
       userAgent: request.headers.get("user-agent") ?? undefined,
     });
+
+    if (isSpoofedBrowserFingerprint(event)) {
+      return new Response(null, { status: 204 });
+    }
 
     if (event.name === "checkout_click") {
       const deck =

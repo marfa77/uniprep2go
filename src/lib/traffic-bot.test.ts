@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { isBotUserAgent } from "./traffic-bot";
+import { isBotUserAgent, isSpoofedBrowserFingerprint } from "./traffic-bot";
 
 describe("traffic bot detection", () => {
   it("flags common crawlers and automation user agents", () => {
@@ -31,5 +31,17 @@ describe("traffic bot detection", () => {
     expect(isBotUserAgent(undefined)).toBe(false);
     expect(isBotUserAgent("")).toBe(false);
     expect(isBotUserAgent("   ")).toBe(false);
+  });
+
+  it("flags the square 1366x1366 data-center Chrome fingerprint", () => {
+    expect(isSpoofedBrowserFingerprint({ screen: "1366x1366" })).toBe(true);
+    expect(isSpoofedBrowserFingerprint({ screen: "1920x1920" })).toBe(true);
+  });
+
+  it("keeps real phone, tablet, and desktop screens", () => {
+    for (const screen of ["402x874", "1920x1080", "1024x1366", "1366x768", "800x800", "", undefined]) {
+      expect(isSpoofedBrowserFingerprint({ screen })).toBe(false);
+    }
+    expect(isSpoofedBrowserFingerprint(undefined)).toBe(false);
   });
 });

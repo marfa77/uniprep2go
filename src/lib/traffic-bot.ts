@@ -61,6 +61,25 @@ const BOT_USER_AGENT_PATTERNS = [
   /uniprep2go-/i,
 ] as const;
 
+export type ClientFingerprint = {
+  screen?: string;
+};
+
+/**
+ * Chrome-UA scrapers that pass the user-agent filter (Alibaba/Tencent cloud exits geolocated
+ * SG or US, Asia/Shanghai timezone) report a square 1366x1366 screen no real device has.
+ */
+export function isSpoofedBrowserFingerprint(input: ClientFingerprint | null | undefined) {
+  const match = input?.screen?.trim().match(/^(\d+)x(\d+)$/);
+
+  if (!match) {
+    return false;
+  }
+
+  const width = Number(match[1]);
+  return width >= 1000 && width === Number(match[2]);
+}
+
 export function isBotUserAgent(userAgent: string | null | undefined) {
   const normalized = userAgent?.trim();
 
