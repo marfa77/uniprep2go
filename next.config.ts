@@ -1,5 +1,9 @@
 import type { NextConfig } from "next";
 import path from "node:path";
+import {
+  RETIRED_LANGUAGE_DECK_REDIRECTS,
+  buildRetiredLanguageDeckRedirects,
+} from "./src/lib/retired-language-decks";
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -23,6 +27,13 @@ const nextConfig: NextConfig = {
         source: "/decks/ptcb-anki-deck",
         destination: "/decks/ptcb-pharmacy-technician-anki-deck",
         permanent: true,
+      },
+      // Language-exam decks moved to Prep2Go — 301 every per-deck URL to the matching landing.
+      ...buildRetiredLanguageDeckRedirects(),
+      {
+        source: "/ciple-a2-anki-deck-for-portuguese-citizenship",
+        destination: RETIRED_LANGUAGE_DECK_REDIRECTS["ciple-a2-european-portuguese-anki-deck"],
+        statusCode: 301,
       },
     ];
   },

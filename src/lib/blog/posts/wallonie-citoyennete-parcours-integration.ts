@@ -34,8 +34,8 @@ export const wallonieCitoyenneteParcoursIntegrationPost: BlogPostDraft = {
         label: "Readiness check Flandre MO (si vous êtes en Flandre)",
       },
       {
-        href: "/decks/delf-b2-french-anki-deck",
-        label: "Deck Anki DELF B2 français (future-proof B1/B2)",
+        href: "https://www.prep2go.study/shop/delf-a2-anki-deck",
+        label: "French DELF deck on Prep2Go",
       },
       {
         href: "https://www.prep2go.study",

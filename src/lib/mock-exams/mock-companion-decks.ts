@@ -1,3 +1,4 @@
+import { getRetiredLanguageDeckRedirect } from "../retired-language-decks";
 import type { MockExamConfig } from "./types";
 
 export type MockCompanionDeckLink = {
@@ -17,8 +18,8 @@ const MOCK_COMPANION_DECKS: Partial<Record<string, MockCompanionDeckLink[]>> = {
       eyebrow: "Taalpilaar · NT2 A2",
       title: "Dutch A2 Inburgering Anki — language pillar",
       body:
-        "Flanders inburgering requires Dutch (NT2 A2) separately from MO civics. This live 2,000-card deck builds the vocabulary pillar — not maatschappelijke oriëntatie content.",
-      ctaLabel: "Open Dutch A2 deck — $26",
+        "Flanders inburgering requires Dutch (NT2 A2) separately from MO civics. The Dutch A2 Inburgering deck on Prep2Go builds the vocabulary pillar — not maatschappelijke oriëntatie content.",
+      ctaLabel: "Get the Dutch A2 deck on Prep2Go",
     },
     {
       deckSlug: "belgium-flanders-mo-anki-deck",
@@ -54,6 +55,12 @@ export async function buildMockCompanionCheckouts(
     [];
 
   for (const link of links) {
+    const prep2goUrl = getRetiredLanguageDeckRedirect(link.deckSlug);
+    if (prep2goUrl) {
+      out.push({ ...link, href: prep2goUrl, external: false, offsite: true });
+      continue;
+    }
+
     const deck = await resolveDeck(link.deckSlug);
     const href = deck?.checkoutUrl ?? `/decks/${link.deckSlug}`;
     const priceToken = deck?.priceLabel ?? "";

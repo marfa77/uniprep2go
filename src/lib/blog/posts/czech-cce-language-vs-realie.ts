@@ -20,9 +20,9 @@ export const czechCceLanguageVsRealiePost: BlogPostDraft = {
   deckSlug: "czech-a2-cce-anki-deck",
   cta: {
     mockLabel: "Take the free Czech Citizenship readiness check",
-    deckLabel: "Get the Czech CCE Residence Citizenship Anki deck",
+    deckLabel: "Get the Czech CCE deck on Prep2Go",
     summary:
-      "Language first? Drill A2/B1 with the Czech CCE Anki deck. Civics next? Use the free Czech Citizenship readiness check, then the Czech Citizenship Anki deck for reálie. Read the complete reálie guide for the 30-topic / 300-question strategy.",
+      "Language first? Drill A2/B1 with the Czech CCE deck on Prep2Go. Civics next? Use the free Czech Citizenship readiness check, then the Czech Citizenship Anki deck for reálie. Read the complete reálie guide for the 30-topic / 300-question strategy.",
     extraLinks: [
       {
         href: "/blog/czech-citizenship-exam-zkouska-z-realii-complete-guide",
@@ -237,7 +237,7 @@ export const czechCceLanguageVsRealiePost: BlogPostDraft = {
     {
       question: "What does UniPrep2Go offer for each exam?",
       answer:
-        "Language: Czech CCE Anki deck. Civics: free Czech Citizenship readiness check plus planned Czech Citizenship Anki waitlist. Neither replaces official ÚJOP / NPI materials.",
+        "Language: Czech CCE deck on Prep2Go. Civics: free Czech Citizenship readiness check plus planned Czech Citizenship Anki waitlist. Neither replaces official ÚJOP / NPI materials.",
     },
   ],
   bottomLine:

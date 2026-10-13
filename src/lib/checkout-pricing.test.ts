@@ -29,7 +29,7 @@ describe("checkout pricing", () => {
   it("extracts Lemon variant id from checkout URL", () => {
     expect(
       parseLemonVariantId(
-        "https://ciple-a2.lemonsqueezy.com/checkout/buy/753c8eb8-f49b-46d6-bc0e-a725f451de31",
+        "https://prep2go.lemonsqueezy.com/checkout/buy/753c8eb8-f49b-46d6-bc0e-a725f451de31",
       ),
     ).toBe("753c8eb8-f49b-46d6-bc0e-a725f451de31");
   });
@@ -38,7 +38,7 @@ describe("checkout pricing", () => {
     resetLemonVariantIndexCache();
     process.env.LEMON_SQUEEZY_API_KEY = "test-lemon-key";
 
-    const base = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const base = getCatalogDeckBySlug("leben-in-deutschland-anki-deck");
     expect(base).toBeDefined();
 
     const lemonDeck = {
@@ -46,7 +46,7 @@ describe("checkout pricing", () => {
       checkoutProvider: "Lemon Squeezy" as const,
       checkoutSeller: "Prep2Go" as const,
       checkoutUrl:
-        "https://ciple-a2.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
+        "https://prep2go.lemonsqueezy.com/checkout/buy/6f688637-f5ce-440f-8d2a-7614379ee3ca",
     };
 
     vi.stubGlobal(
@@ -136,7 +136,7 @@ describe("checkout pricing", () => {
   });
 
   it("marks pending decks without leaking raw price placeholders", () => {
-    const deck = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const deck = getCatalogDeckBySlug("cfa-level-1-anki-deck");
     expect(deck).toBeDefined();
 
     const pending = applyPendingPriceToDeck(deck!);
@@ -209,7 +209,7 @@ describe("checkout pricing", () => {
   });
 
   it("ignores stale Lemon memory cache after a deck moves to Gumroad", async () => {
-    const deck = getCatalogDeckBySlug("delf-b2-french-anki-deck");
+    const deck = getCatalogDeckBySlug("cfa-level-1-anki-deck");
     expect(deck).toBeDefined();
     expect(deck!.checkoutProvider).toBe("Gumroad");
 
@@ -224,8 +224,8 @@ describe("checkout pricing", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const resolved = await resolveDeckPrice(deck!);
-    expect(resolved.price.amount).toBe(26);
-    expect(resolved.directAnswer).toContain("$26 USD");
+    expect(resolved.price.amount).toBe(29);
+    expect(resolved.directAnswer).toContain("$29 USD");
     expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();

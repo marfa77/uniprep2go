@@ -15,7 +15,7 @@ import {
 describe("telegram checkout alerts", () => {
   it("formats Gumroad checkout click messages with deck facts", () => {
     const gumroadCatalog = getCatalogDeckBySlug("cfa-level-1-anki-deck");
-    const languageCatalog = getCatalogDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const languageCatalog = getCatalogDeckBySlug("leben-in-deutschland-anki-deck");
 
     expect(gumroadCatalog).toBeDefined();
     expect(languageCatalog).toBeDefined();
@@ -27,7 +27,7 @@ describe("telegram checkout alerts", () => {
       source: "gumroad",
     });
     const languageDeck = applyPriceRecordToDeck(languageCatalog!, {
-      amount: 26,
+      amount: 9,
       currency: "USD",
       syncedAt: "2026-07-22T00:00:00.000Z",
       source: "gumroad",
@@ -59,7 +59,7 @@ describe("telegram checkout alerts", () => {
 
     expect(languageMessage).toContain("Provider: Gumroad");
     expect(languageMessage).toContain(
-      "https://pixidstudio.gumroad.com/l/ciple-a2-european-portuguese-anki-deck?wanted=true",
+      "https://pixidstudio.gumroad.com/l/leben-in-deutschland-anki-deck?wanted=true",
     );
   });
 });

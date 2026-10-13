@@ -18,9 +18,9 @@ export const italyCitizenshipB1Post: BlogPostDraft = {
     "**If you search for “the Italian citizenship test,” you will find nothing.** Italy has no civic knowledge exam like Spain’s CCSE or Germany’s Leben in Deutschland. The only test most residence and marriage applicants need is a **B1 Italian language certificate** — CILS B1 Cittadinanza or CELI 2 Cittadinanza. No Roman Empire quiz, no constitution MCQ — just proof you can converse in Italian. This guide explains why the “citizenship test” does not exist, what B1 actually covers, and which paths skip it entirely.",
   deckSlug: "celi-b1-italian-anki-deck",
   cta: {
-    deckLabel: "Get the CELI / CILS / PLIDA Italian Anki deck",
+    deckLabel: "Get the Italian CELI deck on Prep2Go",
     summary:
-      "Italy has no civics mock — only language. Drill B1 vocabulary for CELI, CILS, and PLIDA (including cittadinanza language pathways) with the Italian Anki deck, and browse Prep2Go for related immigration decks before you pay ~€200 for the real exam.",
+      "Italy has no civics mock — only language. Drill B1 vocabulary for CELI, CILS, and PLIDA (including cittadinanza language pathways) with the Italian deck on Prep2Go before you pay ~€200 for the real exam.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

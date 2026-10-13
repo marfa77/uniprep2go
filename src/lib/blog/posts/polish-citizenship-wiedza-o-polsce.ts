@@ -20,17 +20,17 @@ export const polishCitizenshipWiedzaOPolscePost: BlogPostDraft = {
   deckSlug: "polish-a2-certyfikat-anki-deck",
   cta: {
     mockLabel: "Take the free Polish Citizenship readiness check",
-    deckLabel: "Get the Polish A2 Certyfikat Anki deck",
+    deckLabel: "Get the Polish A2 Certyfikat deck on Prep2Go",
     summary:
-      "Today’s bottleneck is PaF language — drill with the Polish Certyfikat Anki deck. Future-proof civic themes with the free Polish Citizenship readiness check, and drill wiedza / civics themes with the Polish Citizenship Anki deck.",
+      "Today’s bottleneck is PaF language — drill with the Polish Certyfikat deck on Prep2Go. Future-proof civic themes with the free Polish Citizenship readiness check, and drill wiedza / civics themes with the Polish Citizenship Anki deck.",
     extraLinks: [
       {
         href: "/decks/polish-citizenship-anki-deck",
         label: "Polish Citizenship Anki waitlist (civics / wiedza)",
       },
       {
-        href: "/decks/polish-a2-for-ukrainian-speakers-anki-deck",
-        label: "Polish A2 for Ukrainian Speakers Anki deck",
+        href: "https://www.prep2go.study/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck",
+        label: "Polish A2 for Ukrainian Speakers deck on Prep2Go",
       },
       {
         href: "https://www.prep2go.study",
@@ -291,7 +291,7 @@ export const polishCitizenshipWiedzaOPolscePost: BlogPostDraft = {
     {
       question: "What Anki products does UniPrep2Go offer for Poland?",
       answer:
-        "The Polish A2 Certyfikat Anki deck (and Ukrainian-speaker variant) supports language prep now. The Polish Citizenship Anki deck is a planned waitlist product for civics/wiedza themes, paired with the free readiness check.",
+        "The Polish A2 Certyfikat deck on Prep2Go (and its Ukrainian-speaker variant) supports language prep now. The Polish Citizenship Anki deck is a planned waitlist product for civics/wiedza themes, paired with the free readiness check.",
     },
     {
       question: "Is UniPrep2Go official NAWA or MSWiA material?",
@@ -300,5 +300,5 @@ export const polishCitizenshipWiedzaOPolscePost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Polish citizenship today is a **language** challenge (PaF B1), not a trivia challenge — but the policy window may close toward B2, longer residence, and a real test obywatelski. Book B1 if you qualify now, do not confuse A2 or Karta Polaka with naturalisation, and use UniPrep2Go’s Certyfikat Anki + free civics readiness check / waitlist to stay ahead of the gap.",
+    "Polish citizenship today is a **language** challenge (PaF B1), not a trivia challenge — but the policy window may close toward B2, longer residence, and a real test obywatelski. Book B1 if you qualify now, do not confuse A2 or Karta Polaka with naturalisation, and use the Certyfikat deck on Prep2Go + the free civics readiness check / waitlist to stay ahead of the gap.",
 };

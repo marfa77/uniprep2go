@@ -60,21 +60,6 @@ describe("deck money pages", () => {
       "ptcb-pharmacy-technician-anki-deck",
       "ptcb-study-guide-2026",
       "servsafe-manager-anki-deck",
-      "swedish-a2-sfi-anki-deck",
-      "ielts-toefl-english-for-french-speakers-anki-deck",
-      "ielts-toefl-english-for-arabic-speakers-anki-deck",
-      "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
-      "ielts-toefl-english-for-russian-speakers-anki-deck",
-      "ielts-toefl-english-for-spanish-speakers-anki-deck",
-      "ielts-toefl-english-for-portuguese-speakers-anki-deck",
-      "ielts-toefl-english-for-turkish-speakers-anki-deck",
-      "greek-a2-ellinomatheia-anki-deck",
-      "czech-a2-cce-anki-deck",
-      "polish-a2-certyfikat-anki-deck",
-      "polish-a2-for-ukrainian-speakers-anki-deck",
-      "german-a2-for-ukrainian-speakers-anki-deck",
-      "german-a2-for-russian-speakers-anki-deck",
-      "ciple-a2-european-portuguese-anki-deck",
     ]) {
       const content = getDeckUniqueContent(getDeckBySlug(slug)!);
       expect(content?.length).toBeGreaterThan(600);

@@ -20,13 +20,13 @@ export const spainCitizenshipCcseDelePost: BlogPostDraft = {
   deckSlug: "dele-a2-spanish-anki-deck",
   cta: {
     mockLabel: "Take the free CCSE España readiness check",
-    deckLabel: "Get the DELE / SIELE Spanish Anki deck",
+    deckLabel: "Get the DELE A2 deck on Prep2Go",
     summary:
-      "Drill civics with the free CCSE readiness check (Prep2Go-sourced). Build DELE A2 vocabulary with the Spanish Anki deck, join the DELE+CCSE bundle waitlist, and browse Prep2Go before you pay ~€215 for both official exams.",
+      "Drill civics with the free CCSE readiness check (Prep2Go-sourced). Build DELE A2 vocabulary with the DELE A2 deck on Prep2Go and drill CCSE civics with the CCSE España Anki deck before you pay ~€215 for both official exams.",
     extraLinks: [
       {
-        href: "/decks/dele-a2-ccse-spanish-citizenship-bundle",
-        label: "DELE + CCSE Spanish citizenship Anki bundle (waitlist)",
+        href: "/decks/ccse-espana-anki-deck",
+        label: "CCSE España Anki deck (civics)",
       },
       {
         href: "https://www.prep2go.study",

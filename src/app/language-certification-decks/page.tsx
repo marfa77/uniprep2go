@@ -12,26 +12,27 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "@/lib/retired-language-decks";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = leafPageTitle("Language Exam Anki Decks | CIPLE, DELE, DELF, NT2");
+  const title = leafPageTitle("Citizenship & Language Anki Decks");
 
   return withAiMetadata(
     finalize({
       title,
       description:
-        "Nineteen multi-pathway language Anki decks ($26), DELF Prim printable French flashcards for ages 7–12 ($12), Citizenship & Naturalization Anki Bundle for six countries ($20), plus Swiss Citizenship Anki Bundle DE/FR/IT ($12).",
+        "Country citizenship civics Anki decks and DELF Prim printable French flashcards for ages 7–12. Language-exam Anki decks (CIPLE, DELE, DELF, CELI, Inburgering, IELTS / TOEFL English) are sold on Prep2Go.",
       alternates: { canonical: "/language-certification-decks" },
       openGraph: {
-        title: "Language Certification Anki Decks | UniPrep2Go",
-        description: "Independent Anki flashcard decks for European language and citizenship exams.",
+        title: "Citizenship & Language Anki Decks | UniPrep2Go",
+        description: "Independent citizenship civics Anki decks; language-exam decks are sold on Prep2Go.",
         url: "/language-certification-decks",
       },
     }),
     {
       aiDescription:
-        "UniPrep2Go language certification products cover twenty-two curated multi-pathway Anki decks on Gumroad, DELF Prim printable French flashcards for ages 7–12, a Citizenship & Naturalization Anki Bundle for Germany, France, UK, Canada, Australia, and the U.S., and a Swiss Citizenship Anki Bundle (German, French, Italian federal Staatskunde): CIPLE CAPLE Portuguese citizenship, DELF DALF TCF TEF French, DELE SIELE Spanish, Dutch Inburgering NT2, German Goethe telc ÖSD DTZ, Danish Prøve i Dansk PD2 PD3, Norwegian Norskprøve residence/citizenship, Swedish SFI residence/citizenship, Greek Ellinomatheia residence/citizenship, Czech CCE residence/citizenship, Polish A2 Certyfikat residence/citizenship, Polish A2 for Ukrainian Speakers, CELI CILS PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English for French Speakers, IELTS / TOEFL English for Arabic Speakers, IELTS / TOEFL English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), IELTS / TOEFL English for Portuguese Speakers (BR), and IELTS / TOEFL English for Turkish Speakers ($5 / 952 cards).",
+        "UniPrep2Go lists country citizenship civics Anki decks (one country per product) and DELF Prim printable French flashcards for ages 7–12. Language-exam Anki decks — CIPLE, DELE, DELF, CELI, DTZ, Inburgering, Scandinavian, Greek, Czech, Polish, and IELTS / TOEFL English-for-X — are sold on Prep2Go (https://www.prep2go.study/shop), not on UniPrep2Go.",
       aiCategory: "Language exam prep hub",
       path: "/language-certification-decks",
       linkLlmsCatalog: true,
@@ -49,7 +50,7 @@ export default async function LanguageCertificationDecksPage() {
       {
         "@type": "WebPage",
         "@id": `${absoluteUrl("/language-certification-decks")}#webpage`,
-        name: "Language Certification Anki Decks",
+        name: "Citizenship & Language Anki Decks",
         url: absoluteUrl("/language-certification-decks"),
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
@@ -70,33 +71,34 @@ export default async function LanguageCertificationDecksPage() {
         tabIndex={-1}
       >
         <LlmFactsStrip
-          hubName="language certification hub"
+          hubName="citizenship & language hub"
           hubPath="/language-certification-decks"
           pathwayCount={languageDecks.length}
           variant="hub"
         />
         <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Language &amp; immigration</p>
         <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Language certification Anki decks
+          Citizenship &amp; language Anki decks
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          Nineteen multi-pathway Anki decks ($26) for CIPLE / CAPLE Portuguese, DELF / DALF / TCF / TEF
-          French, DELE / SIELE Spanish (language only — not a CCSE civics bundle), Dutch Inburgering /
-          NT2, German Goethe / telc / ÖSD / DTZ, Danish Prøve i Dansk, Norwegian Norskprøve, Swedish
-          SFI, Greek Ellinomatheia, Czech CCE, Polish A2 Certyfikat, Polish A2 for Ukrainian Speakers, CELI / CILS / PLIDA Italian, German A2 for Ukrainian Speakers, German A2 for Russian Speakers, IELTS / TOEFL English
-          for French Speakers, IELTS / TOEFL English for Arabic Speakers, and IELTS / TOEFL
-          English for Ukrainian Speakers, IELTS / TOEFL English for Russian Speakers, IELTS / TOEFL English for Spanish Speakers (LatAm), and IELTS / TOEFL English for Portuguese Speakers (BR) — plus DELF Prim printable French flashcards for ages 7–12 ($12) and a
-          Citizenship &amp; Naturalization Anki Bundle for six countries ($20). We do not publish
-          separate timed practice mocks for language certifications; each product page is the study
-          guide + checkout.
+          UniPrep2Go lists country citizenship civics Anki decks — each paired with a free timed
+          readiness check — plus DELF Prim printable French flashcards for ages 7–12.
+        </p>
+        <p className="mt-4 max-w-3xl text-base leading-8 text-[#4f493e]">
+          {RETIRED_LANGUAGE_DECKS_NOTE}:{" "}
+          <a
+            className="font-medium text-[#1f3a5f] underline underline-offset-4"
+            href={PREP2GO_SHOP_URL}
+            rel="noopener"
+          >
+            prep2go.study/shop
+          </a>
+          .
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link
-            className={btnPrimary}
-            href="/ciple-a2-anki-deck-for-portuguese-citizenship"
-          >
-            CIPLE A2 pathway
-          </Link>
+          <a className={btnPrimary} href={PREP2GO_SHOP_URL} rel="noopener">
+            Language-exam decks on Prep2Go
+          </a>
           <Link className={btnSecondary} href="/language-exam-vs-citizenship-civics-anki">
             Language vs civics
           </Link>
@@ -108,33 +110,8 @@ export default async function LanguageCertificationDecksPage() {
           </Link>
         </div>
 
-        <section className="mt-12 max-w-3xl" id="how-to-choose">
-          <h2 className="text-2xl font-semibold tracking-tight">How to choose a language deck</h2>
-          <p className="mt-4 text-base leading-8 text-[#4f493e]">
-            Pick the exam body or immigration pathway you must satisfy, then buy the matching Anki
-            bank — do not mix Brazilian Portuguese into CIPLE prep, or CCSE civics into a DELE-only
-            purchase. Residence and citizenship language rules change; always confirm your required
-            level with the official authority before you schedule. Use 15–20 new cards per day with
-            audio, and keep speaking/listening practice separate from Anki.
-          </p>
-          <p className="mt-4 text-base leading-8 text-[#4f493e]">
-            Portugal: CIPLE / CAPLE for residency and citizenship language. France: one French bank
-            covers DELF / DALF, TCF Canada / TEF Canada, TCF ANF, and TCF général — the same lexicon
-            also helps fide / Swiss residency French (Swiss civics is a separate bundle). Germany:
-            Goethe / telc / ÖSD / DTZ, with soft overlap for Einbürgerung language and fide German.
-            Italy: CELI / CILS / PLIDA including permesso / cittadinanza language. Netherlands:
-            Inburgering / NT2 (not Flanders MO civics). Spain: DELE / SIELE language only — CCSE is
-            planned separately.             Denmark / Norway / Sweden / Greece / Czechia / Poland: residence and
-            citizenship language decks (civics tests are separate mocks/waitlists). Switzerland:
-            Swiss Citizenship Anki Bundle for Staatskunde; use French or German language decks for
-            fide vocab. Ukrainian speakers preparing German A2 / DTZ should use the German A2 for Ukrainian Speakers deck; Ukrainian speakers preparing Polish Certyfikat should use the Polish A2 for Ukrainian Speakers deck; Russian speakers should use the German A2 for Russian Speakers deck. English exams for French, Arabic, Ukrainian, Russian, Spanish (LatAm), or
-            Portuguese (BR) speakers: matching IELTS / TOEFL decks. Kids: DELF Prim printable, not
-            the adult French Anki.
-          </p>
-        </section>
-
         <section className="mt-12">
-          <h2 className="text-2xl font-semibold">All language decks ({languageDecks.length})</h2>
+          <h2 className="text-2xl font-semibold">All decks on this hub ({languageDecks.length})</h2>
           <ul className="mt-5 space-y-3">
             {languageDecks.map((deck) => (
               <li key={deck.slug}>
@@ -153,22 +130,24 @@ export default async function LanguageCertificationDecksPage() {
         </section>
 
         <section className="mt-12 max-w-3xl" id="faq">
-          <h2 className="text-2xl font-semibold tracking-tight">Language deck FAQ</h2>
+          <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
           <dl className="mt-6 space-y-5">
             <div>
               <dt className="font-semibold tracking-tight">Are these official exam materials?</dt>
               <dd className="mt-2 text-base leading-8 text-[#4f493e]">
                 No. UniPrep2Go / PixID Studio decks are independent study aids. They are not
-                affiliated with CAPLE, Instituto Cervantes, France Éducation international, Goethe,
-                or other exam bodies.
+                affiliated with any government, immigration authority, or exam body.
               </dd>
             </div>
             <div>
-              <dt className="font-semibold tracking-tight">Do you sell timed language mocks?</dt>
+              <dt className="font-semibold tracking-tight">Where are the CIPLE, DELE, DELF, and IELTS decks?</dt>
               <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                Not for these language pathways. Free timed readiness checks on UniPrep2Go focus on
-                US licensing and building certifications. Language products are Anki (or printable)
-                vocabulary banks with pathway-specific study guides on each deck page.
+                Language-exam Anki decks moved to Prep2Go. Old UniPrep2Go deck links redirect to the
+                matching Prep2Go page; browse the full lineup at{" "}
+                <a className="underline underline-offset-2" href={PREP2GO_SHOP_URL} rel="noopener">
+                  prep2go.study/shop
+                </a>
+                .
               </dd>
             </div>
             <div>

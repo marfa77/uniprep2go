@@ -13,6 +13,7 @@ import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { btnChip } from "@/lib/ui-button-classes";
+import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "@/lib/retired-language-decks";
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = leafPageTitle("Anki Decks & Exam Prep Catalog | UniPrep2Go");
@@ -32,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go deck catalog: Anki flashcards and PDFs for US licensing, finance credentials, building certifications, language exams, and Prep2Go Immigration apps.",
+        "UniPrep2Go deck catalog: Anki flashcards and PDFs for US licensing, finance credentials, building certifications, citizenship civics, and Prep2Go Immigration apps. Language-exam Anki decks are sold on Prep2Go.",
       aiCategory: "Exam prep catalog",
       path: "/decks",
       linkLlmsCatalog: true,
@@ -82,7 +83,7 @@ export default async function DecksHubPage() {
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           All available UniPrep2Go study products — flashcard decks and PDFs for US licensing,
-          finance, building certifications, language exams, and more. Prefer a free timed mock
+          finance, building certifications, citizenship tests, and more. Prefer a free timed mock
           first? Start at{" "}
           <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">
             free practice tests
@@ -127,6 +128,15 @@ export default async function DecksHubPage() {
                   </li>
                 ))}
               </ul>
+              {group.category === "language" ? (
+                <p className="mt-4 text-sm leading-6 text-[#5f5749]">
+                  {RETIRED_LANGUAGE_DECKS_NOTE}:{" "}
+                  <a className="underline underline-offset-2" href={PREP2GO_SHOP_URL} rel="noopener">
+                    prep2go.study/shop
+                  </a>
+                  .
+                </p>
+              ) : null}
             </section>
           ) : null,
         )}

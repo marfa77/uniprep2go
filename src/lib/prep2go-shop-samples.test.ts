@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { availableDecks } from "./decks";
+import { isRetiredLanguageDeckSlug } from "./retired-language-decks";
 import {
   UNIPREP_TO_SHOP_PREVIEW_KEY,
   buildShopPreviewSampleCards,
@@ -47,45 +48,16 @@ describe("Prep2Go shop preview samples", () => {
     });
   });
 
-  it("applies shop previews to all mapped available language decks", () => {
+  it("does not surface retired language decks through shop preview mappings", () => {
     const availableMapped = Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY).filter((slug) =>
       availableDecks.some((deck) => deck.slug === slug),
     );
 
-    expect(availableMapped.sort()).toEqual(
-      [
-        "ciple-a2-european-portuguese-anki-deck",
-        "delf-b2-french-anki-deck",
-        "dele-a2-spanish-anki-deck",
-        "dele-a2-ccse-spanish-citizenship-bundle",
-        "dutch-a2-inburgering-anki-deck",
-        "german-a2-anki-deck",
-        "german-a2-for-ukrainian-speakers-anki-deck",
-        "german-a2-for-russian-speakers-anki-deck",
-        "celi-b1-italian-anki-deck",
-        "danish-a2-prove-i-dansk-anki-deck",
-        "norwegian-a2-norskprove-anki-deck",
-        "swedish-a2-sfi-anki-deck",
-        "greek-a2-ellinomatheia-anki-deck",
-        "czech-a2-cce-anki-deck",
-        "polish-a2-certyfikat-anki-deck",
-        "polish-a2-for-ukrainian-speakers-anki-deck",
-        "ielts-toefl-english-for-french-speakers-anki-deck",
-        "ielts-toefl-english-for-arabic-speakers-anki-deck",
-        "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
-        "ielts-toefl-english-for-russian-speakers-anki-deck",
-        "ielts-toefl-english-for-spanish-speakers-anki-deck",
-        "ielts-toefl-english-for-portuguese-speakers-anki-deck",
-        "ielts-toefl-english-for-turkish-speakers-anki-deck",
-      ].sort(),
-    );
-
-    for (const slug of availableMapped) {
-      const deck = availableDecks.find((item) => item.slug === slug);
-
-      expect(deck).toBeDefined();
-      expect(deck?.sampleCards).toHaveLength(3);
-      expect(deck?.sampleCards[0]?.question).not.toMatch(/^What is included in /);
+    expect(availableMapped).toEqual([]);
+    for (const slug of Object.keys(UNIPREP_TO_SHOP_PREVIEW_KEY)) {
+      if (isRetiredLanguageDeckSlug(slug)) {
+        expect(availableDecks.some((deck) => deck.slug === slug), slug).toBe(false);
+      }
     }
   });
 });

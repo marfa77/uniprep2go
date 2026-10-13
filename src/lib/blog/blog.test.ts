@@ -13,6 +13,7 @@ import {
 } from "./index";
 import { getMockExamConfig } from "../mock-exams/configs";
 import { getDeckBySlug } from "../decks";
+import { getRetiredLanguageDeckRedirect, isRetiredLanguageDeckSlug } from "../retired-language-decks";
 import { fitMetaDescription, fitSeoTitle } from "../seo";
 import { absoluteUrl } from "../site";
 
@@ -80,7 +81,18 @@ describe("blog guides", () => {
       } else {
         expect(post.cta.mockLabel).toBeUndefined();
       }
-      expect(["available", "planned"]).toContain(getDeckBySlug(post.deckSlug)?.status);
+      if (isRetiredLanguageDeckSlug(post.deckSlug)) {
+        expect(getRetiredLanguageDeckRedirect(post.deckSlug)).toMatch(/^https:\/\/www\.prep2go\.study\/shop\//);
+        expect(post.cta.deckLabel, post.slug).toContain("on Prep2Go");
+      } else {
+        expect(["available", "planned"]).toContain(getDeckBySlug(post.deckSlug)?.status);
+      }
+      for (const link of post.cta.extraLinks ?? []) {
+        const deckSlug = link.href.match(/^\/decks\/([^/?#]+)/)?.[1];
+        if (deckSlug) {
+          expect(isRetiredLanguageDeckSlug(deckSlug), `${post.slug} → ${link.href}`).toBe(false);
+        }
+      }
     }
   });
 

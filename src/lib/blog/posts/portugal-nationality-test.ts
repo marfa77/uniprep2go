@@ -20,9 +20,9 @@ export const portugalNationalityTestPost: BlogPostDraft = {
   deckSlug: "ciple-a2-european-portuguese-anki-deck",
   cta: {
     mockLabel: "Take the free Portugal Nacionalidade readiness check",
-    deckLabel: "Get the CIPLE CAPLE Portuguese Anki deck",
+    deckLabel: "Get the CIPLE A2 deck on Prep2Go",
     summary:
-      "Prep the civic themes with the free Portugal Nacionalidade readiness check (Prep2Go-sourced bank). For A2 language evidence, use the CIPLE CAPLE European Portuguese Anki deck. For history immersion, read Gaivota em Portugal comics and browse Prep2Go.",
+      "Prep the civic themes with the free Portugal Nacionalidade readiness check (Prep2Go-sourced bank). For A2 language evidence, use the CIPLE A2 deck on Prep2Go. For history immersion, read Gaivota em Portugal comics and browse Prep2Go.",
     extraLinks: [
       {
         href: "/comics/gaivota-em-portugal",
@@ -169,7 +169,7 @@ export const portugalNationalityTestPost: BlogPostDraft = {
             },
             {
               title: "4. Build bilingual flashcards + CIPLE if needed",
-              body: "If Portuguese is functional but not fluent, card fronts in Portuguese with English explanations. Official test language is likely Portuguese. Non-CPLP applicants still need A2 — drill with the CIPLE CAPLE Anki deck and Prep2Go.study language products.",
+              body: "If Portuguese is functional but not fluent, card fronts in Portuguese with English explanations. Official test language is likely Portuguese. Non-CPLP applicants still need A2 — drill with the CIPLE A2 deck on Prep2Go.",
             },
           ],
         },

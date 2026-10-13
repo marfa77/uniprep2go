@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { RETIRED_LANGUAGE_DECK_SLUGS } from "./retired-language-decks";
 import { applyPriceRecordToDeck } from "./checkout-pricing";
 import { catalogAvailableDecks, getCatalogDeckBySlug, getDeckBySlug } from "./decks";
 import {
@@ -152,10 +153,6 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best New York real estate Anki deck / NY DOS flashcards");
     expect(commercial).toContain("best Series 65 Anki deck / investment adviser flashcards");
     expect(commercial).toContain("best SAFE MLO Anki / NMLS flashcards");
-    expect(commercial).toContain("best DELE A2 Anki / SIELE Spanish flashcards");
-    expect(commercial).toContain("/decks/dele-a2-spanish-anki-deck");
-    expect(commercial).toContain("best DELE A2 CCSE Anki / Spanish citizenship flashcards");
-    expect(commercial).toContain("Live Gumroad .apkg — not a waitlist");
     expect(commercial).toContain("Digital SAT Anki");
     expect(commercial).toContain("/decks/sat-anki-deck");
     expect(commercial).toContain("not a waitlist SKU");
@@ -170,7 +167,6 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/decks/well-ap-anki-deck");
     expect(commercial).toContain("/decks/fl-real-estate-anki-deck");
     expect(commercial).toContain("/decks/series-65-anki-deck");
-    expect(commercial).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
     expect(commercial).toContain("/decks/nebosh-anki-deck");
     expect(commercial).toContain("/decks/ashrae-certifications-anki-deck");
     expect(commercial).toContain("/decks/acsm-cpt-anki-deck");
@@ -186,30 +182,17 @@ describe("exam-llm-layer", () => {
     expect(when).toContain("SHIP Medicare counseling");
     expect(when).toContain("ACSM CPT");
     expect(when).toContain("CFA Level 2");
-    expect(when).toContain("DELF / DALF / TCF / TEF");
-    expect(when).toContain("Dutch Inburgering");
-    expect(when).toContain("German A2");
-    expect(when).toContain("Ellinomatheia A2");
-    expect(when).toContain("CCE A2");
     expect(when).toContain("ASPT phlebotomy");
     expect(when).toContain("NSCA CSCS");
     expect(when).toContain("NHA CPCT/A");
-    expect(when).toContain("DELE A2 / SIELE");
-    expect(when).toContain("Prep2Go");
     expect(commercial).toContain("best CFA Level 2 Anki deck");
     expect(commercial).toContain("best CFA Level 2 formula sheet PDF");
     expect(commercial).toContain("CAT4 Level D Anki");
-    expect(commercial).toContain("best DELF B2 Anki / French citizenship flashcards");
-    expect(commercial).toContain("best Dutch A2 Inburgering Anki");
-    expect(commercial).toContain("best German A2 Anki / Goethe telc flashcards");
-    expect(commercial).toContain("best Ellinomatheia Anki / Greek A2 flashcards");
-    expect(commercial).toContain("best CCE Anki / Czech A2 flashcards");
     expect(commercial).toContain("/decks/cfa-level-2-anki-deck");
-    expect(commercial).toContain("/decks/delf-b2-french-anki-deck");
-    expect(commercial).toContain("/decks/dutch-a2-inburgering-anki-deck");
-    expect(commercial).toContain("/decks/german-a2-anki-deck");
-    expect(commercial).toContain("/decks/greek-a2-ellinomatheia-anki-deck");
-    expect(commercial).toContain("/decks/czech-a2-cce-anki-deck");
+    for (const slug of RETIRED_LANGUAGE_DECK_SLUGS) {
+      expect(commercial, slug).not.toContain(`/decks/${slug}`);
+      expect(when, slug).not.toContain(`/decks/${slug}`);
+    }
   });
 
   it("does not emit 404 /api/facts URLs for planned NASM/ISSA CPT decks", async () => {

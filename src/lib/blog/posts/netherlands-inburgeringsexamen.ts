@@ -18,9 +18,9 @@ export const netherlandsInburgeringsexamenPost: BlogPostDraft = {
     "**Most people think the Dutch integration exam is a language test. It is not.** It is five separate exams — four language skills plus a society module — that you must pass within three years. Some candidates need A2. Others need B1. Some must complete a labour-market portfolio. Others sign a participation statement at city hall. Get one requirement wrong and your residence permit is at risk. This guide maps the five parts, who needs A2 versus B1, the €250–€350 cost, and the speaking section that eliminates many candidates.",
   deckSlug: "dutch-a2-inburgering-anki-deck",
   cta: {
-    deckLabel: "Get the Dutch NT2 / Inburgering Anki deck",
+    deckLabel: "Get the Dutch Inburgering deck on Prep2Go",
     summary:
-      "No separate free KNM mock is live yet — drill Dutch A2/B1 vocabulary for Lezen, Luisteren, Schrijven, and Spreken with the Inburgering Anki deck, then browse Prep2Go for related immigration decks before you pay €50 per DUO module.",
+      "No separate free KNM mock is live yet — drill Dutch A2/B1 vocabulary for Lezen, Luisteren, Schrijven, and Spreken with the Inburgering deck on Prep2Go before you pay €50 per DUO module.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

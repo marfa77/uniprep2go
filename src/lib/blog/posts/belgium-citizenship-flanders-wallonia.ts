@@ -20,9 +20,9 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   deckSlug: "dutch-a2-inburgering-anki-deck",
   cta: {
     mockLabel: "Take the free Belgium Flanders MO readiness check",
-    deckLabel: "Get the Dutch A2 Inburgering Anki deck",
+    deckLabel: "Get the Dutch A2 Inburgering deck on Prep2Go",
     summary:
-      "Flanders track? Drill civic themes with the free Flanders MO readiness check, then lock Dutch with the Inburgering Anki deck. Wallonia track? Use the Wallonie Citoyenneté readiness check. Join the civics Anki waitlists before you pay the €1,030 fee.",
+      "Flanders track? Drill civic themes with the free Flanders MO readiness check, then lock Dutch with the Inburgering deck on Prep2Go. Wallonia track? Use the Wallonie Citoyenneté readiness check. Join the civics Anki waitlists before you pay the €1,030 fee.",
     extraLinks: [
       {
         href: "/mock-exams/belgium-wallonie-citoyennete-readiness-check",

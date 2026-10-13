@@ -20,9 +20,9 @@ export const franceNaturalization2026Post: BlogPostDraft = {
   deckSlug: "delf-b2-french-anki-deck",
   cta: {
     mockLabel: "Take the free Naturalisation française readiness check",
-    deckLabel: "Get the DELF / DALF / TCF / TEF French Anki deck",
+    deckLabel: "Get the French DELF deck on Prep2Go",
     summary:
-      "Drill republican civics with the free Naturalisation française readiness check, then the $9 Naturalisation française Anki deck. Bridge B1→B2 with the French language Anki deck (DELF, DALF, TCF, TEF).",
+      "Drill republican civics with the free Naturalisation française readiness check, then the $9 Naturalisation française Anki deck. Bridge B1→B2 with the French language deck on Prep2Go.",
     extraLinks: [
       {
         href: "/decks/naturalisation-francaise-anki-deck",

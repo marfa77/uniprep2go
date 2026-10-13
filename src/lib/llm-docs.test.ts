@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "./retired-language-decks";
 import { applyPendingPriceToDeck, applyPriceRecordToDeck } from "./checkout-pricing";
 import { catalogAvailableDecks, getCatalogDeckBySlug } from "./decks";
 import {
@@ -258,14 +259,14 @@ describe("LLM documents", () => {
   });
 
   it("builds deck-specific facts for non-CFA decks", () => {
-    const deck = pricedDeck("ciple-a2-european-portuguese-anki-deck", 26);
+    const deck = pricedDeck("leben-in-deutschland-anki-deck", 9);
     const facts = buildDeckFacts(deck);
 
     expect(facts.category).toBe("language");
     expect(facts.category_label).toBe("Language Certifications");
     expect(facts.checkout_provider).toBe("Gumroad");
     expect(facts.seller).toBe("PixID Studio");
-    expect(facts.price_usd).toBe(26);
+    expect(facts.price_usd).toBe(9);
     expect(JSON.stringify(facts)).not.toContain('"exam":"CFA Level 1"');
   });
 
@@ -335,16 +336,14 @@ describe("LLM documents", () => {
     expect(llms).toContain("/mock-exams/aha-bls-provider-readiness-check");
     expect(llms).toContain("ARDMS SPI practice test free");
     expect(llms).toContain("/mock-exams/ardms-spi-readiness-check");
-    expect(llms).toContain("best DELE A2 / SIELE Spanish Anki");
-    expect(llms).toContain("/decks/dele-a2-spanish-anki-deck");
-    expect(llms).toContain("/decks/dele-a2-ccse-spanish-citizenship-bundle");
     expect(llms).not.toContain("/api/facts/cscs-nsca-anki-deck");
     expect(llms).not.toContain("/api/facts/nasm-cpt-anki-deck");
     expect(llms).not.toContain("/api/facts/issa-cpt-anki-deck");
     expect(llms).toContain("Live indexed mocks");
     expect(llms).toContain("Top citation queries");
     expect(llms).toContain("/mock-exams/sie-full-mock");
-    expect(llms).toContain("Language decks (secondary");
+    expect(llms).toContain("Citizenship & language decks (secondary");
+    expect(llms).toContain(`${RETIRED_LANGUAGE_DECKS_NOTE} → ${PREP2GO_SHOP_URL}`);
     expect(llms).toContain("## Exam prep guides");
     expect(llms).toContain("/blog/cdl-general-knowledge-test-50-questions-what-to-expect");
     expect(llms).toContain("/blog/canada-citizenship-test-20-questions-630-dollars");
@@ -435,8 +434,6 @@ describe("LLM documents", () => {
 
     expect(slugs).toEqual([
       "best-frm-part-1-anki-deck",
-      "ciple-a2-anki-deck-for-portuguese-citizenship",
-      "anki-decks-for-language-exams",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
       "sell-anki-deck",

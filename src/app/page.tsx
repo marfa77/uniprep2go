@@ -74,11 +74,11 @@ const examCategories = [
     cta: "Open certifications hub",
   },
   {
-    title: "Admissions & language",
+    title: "Admissions & citizenship",
     description:
-      "SAT, GRE, GMAT, and language/citizenship prep stay in the catalog — not the primary US acquisition push.",
+      "SAT, GRE, GMAT, and citizenship civics prep stay in the catalog — language-exam decks are sold on Prep2Go.",
     href: "/language-certification-decks",
-    cta: "Browse language & admissions",
+    cta: "Browse citizenship & admissions",
   },
 ] as const;
 
@@ -458,7 +458,7 @@ export default async function HomePage() {
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
               US licensing is the primary acquisition push. Finance and professional certifications
-              stay ready. Admissions and language remain in the catalog without homepage promotion.
+              stay ready. Admissions and citizenship decks remain in the catalog without homepage promotion.
             </p>
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {examCategories.map((category) => (

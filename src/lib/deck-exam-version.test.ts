@@ -20,7 +20,7 @@ describe("mock labels", () => {
 
 describe("buildDeckExamVersionModel", () => {
   it("returns null when profile is null", () => {
-    const deck = getDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const deck = getDeckBySlug("leben-in-deutschland-anki-deck");
     expect(deck).toBeDefined();
     expect(buildDeckExamVersionModel(deck!, null)).toBeNull();
   });

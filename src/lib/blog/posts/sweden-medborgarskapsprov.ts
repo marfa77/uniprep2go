@@ -20,9 +20,9 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   deckSlug: "swedish-a2-sfi-anki-deck",
   cta: {
     mockLabel: "Take the free Sweden Medborgarskapsprov readiness check",
-    deckLabel: "Get the Swedish SFI Anki deck",
+    deckLabel: "Get the Swedish SFI deck on Prep2Go",
     summary:
-      "Practice Samhällskunskap themes with the free Sweden Medborgarskapsprov readiness check (Prep2Go-sourced). Build Swedish with the SFI Anki deck, and drill civics with the Medborgarskapsprov Anki deck.",
+      "Practice Samhällskunskap themes with the free Sweden Medborgarskapsprov readiness check (Prep2Go-sourced). Build Swedish with the SFI deck on Prep2Go, and drill civics with the Medborgarskapsprov Anki deck.",
     extraLinks: [
       {
         href: "/decks/sweden-medborgarskapsprov-anki-deck",

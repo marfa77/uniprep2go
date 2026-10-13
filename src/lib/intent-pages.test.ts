@@ -1,9 +1,9 @@
 import { describe, expect, it } from "vitest";
-import civicCatalog from "@/data/gumroad/civic-anki-decks.json";
 import sitemap from "../app/sitemap";
 import robots from "../app/robots";
 import { availableDecks, catalogPlannedDecks } from "./decks";
 import { intentPages } from "./intent-pages";
+import { isRetiredLanguageDeckSlug } from "./retired-language-decks";
 import { getAllMockExams } from "./mock-exams/configs";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import { shouldIndexMockExam } from "./seo";
@@ -13,8 +13,6 @@ describe("intent pages visibility", () => {
   it("defines the initial high-intent visibility pages", () => {
     expect(intentPages.map((page) => page.slug)).toEqual([
       "best-frm-part-1-anki-deck",
-      "ciple-a2-anki-deck-for-portuguese-citizenship",
-      "anki-decks-for-language-exams",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
       "sell-anki-deck",
@@ -54,43 +52,16 @@ describe("intent pages visibility", () => {
     expect(absoluteUrl(`/${page!.slug}`)).toBe(`${siteConfig.url}/sell-anki-deck`);
   });
 
-  it("lists every available language deck on the language exam intent page", () => {
-    const page = intentPages.find((item) => item.slug === "anki-decks-for-language-exams");
-    const civicSlugs = new Set(Object.keys(civicCatalog.products));
-    const languageDeckSlugs = availableDecks
-      .filter((deck) => deck.category === "language" && !civicSlugs.has(deck.slug))
-      .map((deck) => deck.slug);
+  it("routes language-exam deck intent to Prep2Go without linking retired decks", () => {
+    const page = intentPages.find((item) => item.slug === "language-exam-vs-citizenship-civics-anki");
 
     expect(page).toBeDefined();
-    expect(page?.deckSlugs).toEqual(languageDeckSlugs);
-    expect(page?.directAnswer).toContain("CIPLE CAPLE Portuguese");
-    expect(page?.directAnswer).toContain("German Goethe telc ÖSD DTZ");
-    expect(page?.directAnswer).toContain("Norwegian Norskprøve");
-    expect(page?.directAnswer).toContain("Swedish SFI");
-    expect(page?.directAnswer).toContain("Greek Ellinomatheia");
-    expect(page?.directAnswer).toContain("Czech CCE");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for French Speakers");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Arabic Speakers");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Ukrainian Speakers");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Russian Speakers");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Spanish Speakers (LatAm)");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Portuguese Speakers (BR)");
-    expect(page?.directAnswer).toContain("IELTS / TOEFL English for Turkish Speakers");
-    expect(page?.directAnswer).toContain("twenty-two curated");
-    expect(page?.directAnswer).toContain("DELF DALF TCF TEF French");
-    expect(page?.directAnswer).toContain("CELI CILS PLIDA Italian");
-    expect(page?.directAnswer).not.toContain("DELE CCSE");
-    expect(page?.directAnswer).toContain("DELE SIELE Spanish");
-    expect(page?.directAnswer).toContain("twenty-two curated multi-pathway language Anki decks");
-    expect(page?.directAnswer).toContain("German A2 for Ukrainian Speakers");
-    expect(page?.directAnswer).toContain("German A2 for Russian Speakers");
-    expect(page?.directAnswer).toContain("Polish A2 Certyfikat");
-    expect(page?.directAnswer).toContain("Polish A2 for Ukrainian Speakers");
-    expect(page?.directAnswer).toContain("DELF Prim printable");
-    expect(page?.directAnswer).toContain("ages 7–12");
-    expect(page?.directAnswer).toContain("$9 country Anki decks");
-    expect(page?.directAnswer).toContain("Leben in Deutschland");
-    expect(page?.directAnswer).toContain("Gumroad");
+    expect(page?.directAnswer).toContain("Prep2Go");
+    for (const intent of intentPages) {
+      for (const deckSlug of intent.deckSlugs ?? []) {
+        expect(isRetiredLanguageDeckSlug(deckSlug), `${intent.slug} → ${deckSlug}`).toBe(false);
+      }
+    }
   });
 
   it("keeps commercial intent + deck/mock magnets; drops llms catalogs from Google sitemap", () => {

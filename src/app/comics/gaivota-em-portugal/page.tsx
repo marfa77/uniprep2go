@@ -5,6 +5,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { gaivotaEpisodes, gaivotaHubPageTitle, gaivotaSeries } from "@/lib/gaivota-comics";
 import { withAiMetadata } from "@/lib/llm-meta";
+import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECK_REDIRECTS } from "@/lib/retired-language-decks";
 import { siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -66,9 +67,9 @@ export default function GaivotaHubPage() {
           <Link className={btnPrimary} href={ep01.pagePath!}>
             Read Ep.01 free — O Terramoto (1755)
           </Link>
-          <Link className={btnSecondary} href="/language-certification-decks">
-            Language Anki decks
-          </Link>
+          <a className={btnSecondary} href={PREP2GO_SHOP_URL} rel="noopener">
+            Language decks on Prep2Go
+          </a>
           <Link className={btnSecondary} href="/comics/gaivota-em-portugal/02-25-de-abril">
             Ep.02 — 25 de Abril
           </Link>
@@ -156,12 +157,13 @@ export default function GaivotaHubPage() {
           <p className="mt-4 text-sm text-[#5c574e]">
             Pairs well with CIPLE A2 and other Prep2Go Portuguese Anki decks — culture and reading, not only flashcards.
           </p>
-          <Link
+          <a
             className="mt-3 inline-block text-sm font-semibold underline underline-offset-2"
-            href="/decks/ciple-a2-european-portuguese-anki-deck"
+            href={RETIRED_LANGUAGE_DECK_REDIRECTS["ciple-a2-european-portuguese-anki-deck"]}
+            rel="noopener"
           >
-            CIPLE A2 Anki deck →
-          </Link>
+            Get the CIPLE A2 deck on Prep2Go →
+          </a>
         </section>
       </main>
       <SiteFooter />

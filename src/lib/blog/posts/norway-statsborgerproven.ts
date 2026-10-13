@@ -20,9 +20,9 @@ export const norwayStatsborgerprovenPost: BlogPostDraft = {
   deckSlug: "norwegian-a2-norskprove-anki-deck",
   cta: {
     mockLabel: "Take the free Norway Statsborgerprøven readiness check",
-    deckLabel: "Get the Norskprøve Anki deck",
+    deckLabel: "Get the Norwegian Norskprøve deck on Prep2Go",
     summary:
-      "Drill civic themes with the free Norway Statsborgerprøven readiness check (Prep2Go-sourced bank). Lock Norwegian vocabulary with the Norskprøve Anki deck, and drill civics with the Statsborgerprøven Anki deck before your HK-dir sitting.",
+      "Drill civic themes with the free Norway Statsborgerprøven readiness check (Prep2Go-sourced bank). Lock Norwegian vocabulary with the Norskprøve deck on Prep2Go, and drill civics with the Statsborgerprøven Anki deck before your HK-dir sitting.",
     extraLinks: [
       {
         href: "/decks/norway-statsborgerproven-anki-deck",

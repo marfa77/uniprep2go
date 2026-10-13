@@ -20,9 +20,9 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
   deckSlug: "czech-a2-cce-anki-deck",
   cta: {
     mockLabel: "Take the free Czech Citizenship readiness check",
-    deckLabel: "Get the Czech CCE Residence Citizenship Anki deck",
+    deckLabel: "Get the Czech CCE deck on Prep2Go",
     summary:
-      "Drill civic themes with the free 60-question Czech Citizenship readiness check. For B1/A2 language evidence, use the Czech CCE Anki deck. Drill reálie with the $9 Czech Citizenship Anki deck.",
+      "Drill civic themes with the free 60-question Czech Citizenship readiness check. For B1/A2 language evidence, use the Czech CCE deck on Prep2Go. Drill reálie with the $9 Czech Citizenship Anki deck.",
     extraLinks: [
       {
         href: "/decks/czech-citizenship-anki-deck",
@@ -263,7 +263,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
     {
       question: "Where can I practice before booking?",
       answer:
-        "Use NPI’s official interactive model and the free UniPrep2Go Czech Citizenship readiness check (60 timed MCQs with topic scoring). Use the Czech Citizenship Anki deck for spaced-repetition civics cards; use the Czech CCE Anki deck for language vocabulary.",
+        "Use NPI’s official interactive model and the free UniPrep2Go Czech Citizenship readiness check (60 timed MCQs with topic scoring). Use the Czech Citizenship Anki deck for spaced-repetition civics cards; use the Czech CCE deck on Prep2Go for language vocabulary.",
     },
     {
       question: "What score should I hit on practice tests before booking?",

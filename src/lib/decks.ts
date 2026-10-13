@@ -9,6 +9,7 @@ import { wave1PlannedDecks } from "./wave1-planned-decks";
 import { wave2PlannedDecks } from "./wave2-planned-decks";
 import { wave3PlannedDecks } from "./wave3-planned-decks";
 import { wave4PlannedDecks } from "./wave4-planned-decks";
+import { isRetiredLanguageDeckSlug } from "./retired-language-decks";
 
 export type DeckStatus = "available" | "planned";
 
@@ -1408,7 +1409,7 @@ const rawDecks: Deck[] = [
       },
     ],
   },
-  // ── Language certifications (curated Gumroad lineup @ $26) ────────────
+  // ── Language certifications — RETIRED (sold on Prep2Go; filtered out of `decks`, see retired-language-decks.ts) ────────────
   {
     slug: "ciple-a2-european-portuguese-anki-deck",
     category: "language",
@@ -4860,8 +4861,11 @@ const uniqueWavePlannedDecks = [
   ...wave4PlannedDecks,
 ].filter((deck) => !existingCatalogSlugs.has(deck.slug));
 
+/** Language-exam decks now sold only on Prep2Go — records stay above for history, never rendered or sold. */
 export const decks: Deck[] = applyAnkiDeckLaunchToCatalog(
-  [...rawDecks, ...uniqueWavePlannedDecks].map(enrichDeckWithShopPreviews),
+  [...rawDecks, ...uniqueWavePlannedDecks]
+    .filter((deck) => !isRetiredLanguageDeckSlug(deck.slug))
+    .map(enrichDeckWithShopPreviews),
 )
   .map(applySoldSamplesToDeck)
   .map((deck) => ({ ...deck, faqs: withMockAccessDisclosure(deck.faqs) }));
@@ -5000,18 +5004,6 @@ export const RELATED_DECK_PEER_GROUPS: string[][] = [
   ["sie-exam-anki-deck", "series-7-anki-deck", "series-63-anki-deck"],
   ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
   ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
-  // English-for-* family — cross-link siblings so Google sees distinct gloss editions (PT was crawled-not-indexed as near-dupe).
-  [
-    "ielts-toefl-english-for-portuguese-speakers-anki-deck",
-    "ielts-toefl-english-for-spanish-speakers-anki-deck",
-    "ielts-toefl-english-for-russian-speakers-anki-deck",
-    "ielts-toefl-english-for-ukrainian-speakers-anki-deck",
-    "ielts-toefl-english-for-french-speakers-anki-deck",
-    "ielts-toefl-english-for-arabic-speakers-anki-deck",
-    "ielts-toefl-english-for-turkish-speakers-anki-deck",
-  ],
-  // CIPLE (PT-PT nationality) ↔ English-for-Brazilians (IELTS/TOEFL) — wrong-product pair.
-  ["ciple-a2-european-portuguese-anki-deck", "ielts-toefl-english-for-portuguese-speakers-anki-deck"],
 ];
 
 export function getRelatedDecks(deck: Pick<Deck, "slug" | "category">, limit = 4): Deck[] {
@@ -5034,7 +5026,7 @@ export const siteFaqs = [
   {
     question: "What is UniPrep2Go?",
     answer:
-      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog includes US licensing (FINRA, insurance, real estate, ServSafe, PTCB), building and sustainability credentials (EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE), finance exams (CFA, FRM), MBA admissions (GMAT Focus), language certifications, free citizenship practice mocks with a Gumroad Anki bundle, and Prep2Go Immigration survival guides on the App Store.",
+      "UniPrep2Go is a US-first exam prep site built around free timed online practice tests and readiness checks — with topic scoring, answer review, and pass/no-pass reports — plus independent Anki flashcard decks and printable PDF cram sheets you can use to drill weak topics after a mock. The catalog includes US licensing (FINRA, insurance, real estate, ServSafe, PTCB), building and sustainability credentials (EPA 608, LEED, WELL AP, BMS, MRICS, CFPS, NEBOSH, CDCP, CEM, ASHRAE), finance exams (CFA, FRM), MBA admissions (GMAT Focus), free citizenship practice mocks with country civics Anki decks, and Prep2Go Immigration survival guides on the App Store. Language-exam Anki decks (CIPLE, DELE, DELF, IELTS / TOEFL English-for-X, and more) are sold on Prep2Go.",
   },
   {
     question: "Which US exams does UniPrep2Go cover?",

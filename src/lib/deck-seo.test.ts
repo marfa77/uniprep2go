@@ -50,7 +50,7 @@ describe("deck SEO magnets", () => {
   });
 
   it("uses exam prep framing for language decks without anki-first titles", () => {
-    const deck = getDeckBySlug("ciple-a2-european-portuguese-anki-deck");
+    const deck = getDeckBySlug("leben-in-deutschland-anki-deck");
     expect(buildDeckSeoTitle(deck!)).toContain("Exam Prep");
     expect(buildDeckSeoTitle(deck!)).not.toContain("UniPrep2Go");
   });

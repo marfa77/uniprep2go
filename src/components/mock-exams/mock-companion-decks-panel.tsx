@@ -12,6 +12,8 @@ export type MockCompanionCheckout = {
   href: string;
   ctaLabel: string;
   external: boolean;
+  /** Sold on Prep2Go, not a UniPrep checkout — plain outbound link, no checkout tracking. */
+  offsite?: boolean;
 };
 
 type MockCompanionDecksPanelProps = {
@@ -39,7 +41,24 @@ export function MockCompanionDecksPanel({ config, companions }: MockCompanionDec
             <p className="font-mono text-xs uppercase tracking-[0.18em] text-[#1f3a5f]">{link.eyebrow}</p>
             <p className="mt-2 font-semibold text-[#18140f]">{link.title}</p>
             <p className="mt-2 flex-1 text-sm leading-7 text-[#4f493e]">{link.body}</p>
-            {link.external ? (
+            {link.offsite ? (
+              <a
+                className="mt-4 inline-flex min-h-11 items-center justify-center rounded-full border border-[#18140f]/20 px-5 text-sm font-semibold text-[#18140f] transition hover:border-[#18140f]"
+                href={link.href}
+                onClick={() =>
+                  trackMockEvent({
+                    name: "mock_deck_cta_click",
+                    deckSlug: link.deckSlug,
+                    mockSlug: config.slug,
+                    source: `mock_report:${config.slug}:companion_${link.role}`,
+                  })
+                }
+                rel="noopener"
+                target="_blank"
+              >
+                {link.ctaLabel}
+              </a>
+            ) : link.external ? (
               <TrackedCheckoutLink
                 className="mt-4 inline-flex min-h-11 items-center justify-center rounded-full bg-[#18140f] px-5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f]"
                 deckSlug={link.deckSlug}

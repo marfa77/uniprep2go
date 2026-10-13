@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { getRetiredLanguageDeckRedirect, isRetiredLanguageDeckSlug } from "../retired-language-decks";
 import { getMockAccessState, isFullReportUnlocked } from "./access";
 import { getAllMockExams, getMockExamConfig, primaryMock, validateMockExamConfig } from "./configs";
 import {
@@ -36,7 +37,6 @@ describe("mock exam configs", () => {
     const { getCatalogDeckBySlug } = await import("../decks");
     const languageFunnelExceptions = new Set([
       "citizenship-naturalization-anki-bundle",
-      "dele-a2-ccse-spanish-citizenship-bundle",
       "swiss-citizenship-anki-deck",
       "czech-citizenship-anki-deck",
       "polish-citizenship-anki-deck",
@@ -60,6 +60,7 @@ describe("mock exam configs", () => {
       "naturalizzazione-svizzera-anki-deck",
     ]);
     for (const config of getAllMockExams()) {
+      expect(isRetiredLanguageDeckSlug(config.linkedDeckSlug), config.slug).toBe(false);
       // Civics mocks may funnel to Gumroad Anki bundles filed under language.
       if (languageFunnelExceptions.has(config.linkedDeckSlug)) continue;
       const deck = getCatalogDeckBySlug(config.linkedDeckSlug);
@@ -83,13 +84,16 @@ describe("mock exam configs", () => {
     }
   });
 
-  it("imports CCSE España readiness mock from Prep2Go and links the live DELE+CCSE companion", async () => {
+  it("imports CCSE España readiness mock from Prep2Go and sends the DELE+CCSE companion to Prep2Go", async () => {
     const { getDeckBySlug } = await import("../decks");
     const config = getMockExamConfig("ccse-espana-readiness-check");
     expect(config?.status).toBe("live");
     expect(config?.linkedDeckSlug).toBe("ccse-espana-anki-deck");
     expect(getDeckBySlug("ccse-espana-anki-deck")?.status).toBe("available");
-    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")?.status).toBe("available");
+    expect(getDeckBySlug("dele-a2-ccse-spanish-citizenship-bundle")).toBeUndefined();
+    expect(getRetiredLanguageDeckRedirect("dele-a2-ccse-spanish-citizenship-bundle")).toMatch(
+      /^https:\/\/www\.prep2go\.study\/shop\//,
+    );
     expect(config?.questionCount).toBe(60);
     expect(isMockExamRunnable("ccse-espana-readiness-check")).toBe(true);
     const { questions, errors } = getQuestionBankForExam("ccse-espana-readiness-check");

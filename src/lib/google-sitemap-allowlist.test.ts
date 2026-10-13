@@ -116,9 +116,10 @@ describe("google sitemap allowlist", () => {
     expect((home?.lastModified as Date).toISOString().slice(0, 10)).not.toBe(today);
 
     const series63 = byUrl.get(absoluteUrl("/decks/series-63-anki-deck"));
-    const polish = byUrl.get(absoluteUrl("/decks/polish-a2-certyfikat-anki-deck"));
+    const polish = byUrl.get(absoluteUrl("/decks/polish-citizenship-anki-deck"));
     expect(series63?.priority).toBe(0.99);
     expect(polish?.priority).toBe(0.72);
+    expect(byUrl.has(absoluteUrl("/decks/polish-a2-certyfikat-anki-deck"))).toBe(false);
 
     const lifeHealth = byUrl.get(
       absoluteUrl("/mock-exams/life-and-health-insurance-readiness-check"),

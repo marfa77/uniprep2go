@@ -17,6 +17,7 @@ import {
   type PricedDeck,
 } from "@/lib/checkout-pricing";
 import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
+import { getRetiredLanguageDeckRedirect } from "@/lib/retired-language-decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary, btnQuiet } from "@/lib/ui-button-classes";
 
@@ -201,6 +202,7 @@ function CtaBand({
   const priceLabel = deck ? formatDeckPriceLabel(deck) : null;
   const checkoutLabel =
     deck && priceLabel ? getDeckCheckoutCtaLabel(deck, priceLabel) : post.cta.deckLabel;
+  const prep2goDeckUrl = getRetiredLanguageDeckRedirect(post.deckSlug);
 
   return (
     <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#1f3a5f]/5 px-5 py-6 sm:px-6">
@@ -211,7 +213,15 @@ function CtaBand({
             {post.cta.mockLabel}
           </Link>
         ) : null}
-        {deck?.checkoutUrl ? (
+        {prep2goDeckUrl ? (
+          <a
+            className={post.mockSlug ? btnSecondary : btnPrimary}
+            href={prep2goDeckUrl}
+            rel="noopener"
+          >
+            {post.cta.deckLabel}
+          </a>
+        ) : deck?.checkoutUrl ? (
           <TrackedCheckoutLink
             className={post.mockSlug ? btnSecondary : btnPrimary}
             deckSlug={deck.slug}
