@@ -1126,7 +1126,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "CLP applicants who want a free timed General Knowledge diagnostic before their state CDL manual — then a planned 60-card .apkg for spaced repair. Knowledge only; skills/road and endorsements are separate.",
   },
   "armed-security-officer-anki-deck": {
-    title: "Armed Security Anki | Planned 60 Cards + Free Mock",
+    title: "Armed Security Anki | Planned 120 Cards + Free Mock",
     headline: "Armed Security Officer Prep — Planned Cards + Free 60Q Test",
     studyLabel: "armed security officer exam prep",
     description:

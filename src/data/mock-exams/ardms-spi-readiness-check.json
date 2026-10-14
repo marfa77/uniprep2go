@@ -36,7 +36,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-002",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Wavelength equals",
+    "prompt": "Which equation gives the wavelength of an ultrasound wave?",
     "options": [
       {
         "id": "a",
@@ -56,7 +56,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "λ = c/f; higher frequency → shorter wavelength → better axial resolution generally.",
+    "explanation": "Wavelength is the distance one cycle occupies: λ = c/f. In soft tissue λ (mm) ≈ 1.54 ÷ f (MHz), so a 5 MHz beam has λ ≈ 0.31 mm. Raising frequency shortens wavelength, which shortens the pulse and improves axial resolution.",
     "distractorExplanations": {
       "a": "Multiplying speed by frequency gives the wrong units; wavelength is speed divided by frequency (λ = c/f).",
       "b": "SPL equals cycles × wavelength, so wavelength is SPL divided by the number of cycles, not multiplied by it.",
@@ -69,7 +69,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-003",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Propagation speed is determined primarily by:",
+    "prompt": "What primarily determines the propagation speed of sound in a medium?",
     "options": [
       {
         "id": "a",
@@ -89,7 +89,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Soft tissue average ~1540 m/s; stiffer media generally faster sound.",
+    "explanation": "Propagation speed is a property of the medium, not the transducer: c rises with stiffness and falls with density. Stiff, hard-to-compress media carry sound fastest, so bone > soft tissue (≈1540 m/s) > fat > lung/air. Frequency, amplitude, PRF and depth settings do not change it.",
     "distractorExplanations": {
       "a": "Frequency is set by the source; speed is a property of the medium and is the same for all frequencies in soft tissue.",
       "b": "Amplitude and intensity describe the strength of the wave; they do not change how fast sound travels in a medium.",
@@ -135,7 +135,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-005",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Period and frequency are",
+    "prompt": "Which statement about period and frequency is correct?",
     "options": [
       {
         "id": "a",
@@ -155,7 +155,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Source (transducer) determines frequency/period; medium determines speed.",
+    "explanation": "Period is the time for one cycle and frequency is cycles per second, so T = 1/f: a 5 MHz wave has a period of 0.2 µs. Both are set by the sound source (the transducer), not the medium; the medium sets propagation speed, and c/f gives wavelength.",
     "distractorExplanations": {
       "a": "The sound source (transducer) sets both period and frequency; the medium sets propagation speed.",
       "b": "As frequency rises the period gets shorter, so the two are inversely related, not directly proportional.",
@@ -201,15 +201,15 @@
     "id": "ardms-spi-readiness-check-physics-basics-007",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Attenuation in soft tissue increases when:",
+    "prompt": "A sonographer images the same organ under different conditions. Attenuation of the beam in soft tissue increases when:",
     "options": [
       {
         "id": "a",
-        "text": "Frequency decreases with path fixed always reducing attenuation"
+        "text": "Frequency decreases over the same path length"
       },
       {
         "id": "b",
-        "text": "You freeze the image"
+        "text": "Transmit output power is increased"
       },
       {
         "id": "c",
@@ -217,15 +217,15 @@
       },
       {
         "id": "d",
-        "text": "Gain is increased (true attenuation change)"
+        "text": "Receiver gain is turned up"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Attenuation coefficient rises with frequency; more depth → more loss.",
+    "explanation": "Attenuation (dB) ≈ attenuation coefficient × path length, and in soft tissue the coefficient is about 0.5 dB/cm per MHz. Doubling either frequency or path length doubles the dB loss. Output power and receiver gain change echo brightness, not how much the tissue weakens the beam.",
     "distractorExplanations": {
-      "a": "Lower f penetrates better.",
-      "b": "Freeze doesn't change physics.",
-      "d": "Gain amplifies display, not true attenuation."
+      "a": "Lowering frequency reduces the attenuation coefficient (≈0.5 dB/cm/MHz), so loss falls; that is why low frequencies penetrate deeper.",
+      "b": "Attenuation in dB is a ratio, so higher output raises echo strength at every depth but leaves the dB loss per cm unchanged and raises patient exposure.",
+      "d": "Receiver gain amplifies echoes after they return; it compensates for attenuation on the display but does not change the loss in tissue."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -234,7 +234,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-008",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "The decibel (dB) scale for intensity ratios is",
+    "prompt": "One intensity reading rises by 3 dB and another by 10 dB. Which description of the decibel scale is correct?",
     "options": [
       {
         "id": "a",
@@ -254,7 +254,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Know common dB doublings for intensity/amplitude conventions taught in SPI.",
+    "explanation": "Decibels are logarithmic: dB = 10 log(I2/I1) for intensity. +3 dB ≈ ×2, +10 dB = ×10, +20 dB = ×100, and −3 dB halves intensity. Because dB is a ratio it always needs a reference and is not an absolute unit such as W/cm².",
     "distractorExplanations": {
       "a": "The dB scale is logarithmic, not linear; +3 dB doubles intensity rather than tripling it.",
       "b": "3 dB does double intensity, but 10 dB is a factor of 10; a factor of 100 is 20 dB.",
@@ -267,7 +267,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-009",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Specular reflection occurs when:",
+    "prompt": "Which condition produces a specular reflection, such as the bright echo from the diaphragm?",
     "options": [
       {
         "id": "a",
@@ -275,7 +275,7 @@
       },
       {
         "id": "b",
-        "text": "Scatterers are much smaller than wavelength only (Rayleigh)"
+        "text": "Scatterers are much smaller than the wavelength"
       },
       {
         "id": "c",
@@ -287,9 +287,9 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Specular reflections are angle-dependent; diffuse scattering from rough surfaces.",
+    "explanation": "Specular reflection occurs at a boundary that is smooth and large compared with the wavelength and has an impedance mismatch. It acts like a mirror (angle of reflection = angle of incidence), so it is brightest at 90° incidence and weakens or is missed as the beam becomes oblique.",
     "distractorExplanations": {
-      "b": "Rayleigh is small scatterers.",
+      "b": "Reflectors much smaller than the wavelength, such as red blood cells, cause Rayleigh scattering in all directions, not mirror-like specular reflection.",
       "c": "Rough, irregular interfaces cause diffuse scattering (backscatter) in many directions, not specular reflection.",
       "d": "With equal impedances there is no mismatch, so no reflection of any kind occurs at the boundary."
     },
@@ -366,7 +366,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-012",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Refraction occurs when a sound beam",
+    "prompt": "A beam crosses the boundary between two soft tissues. Under which condition will it refract?",
     "options": [
       {
         "id": "a",
@@ -386,7 +386,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Snell's law: refraction needs oblique incidence and speed mismatch.",
+    "explanation": "Snell's law (sin θt ÷ sin θi = c2 ÷ c1) predicts refraction only when two conditions are both met: oblique incidence and different propagation speeds on each side. At normal incidence, or with equal speeds, the transmitted beam continues straight even if impedances differ.",
     "distractorExplanations": {
       "a": "At normal (90°) incidence there is no refraction even when speeds differ; obliquity is required.",
       "c": "An impedance mismatch alone causes reflection; refraction requires a difference in propagation speeds.",
@@ -465,7 +465,7 @@
     "id": "ardms-spi-readiness-check-physics-basics-015",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "physics-basics",
-    "prompt": "Decibels (dB) in ultrasound describe",
+    "prompt": "Ultrasound systems report attenuation, gain and output settings in decibels (dB). What does the decibel express?",
     "options": [
       {
         "id": "a",
@@ -485,7 +485,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "dB express ratios (e.g., attenuation, gain changes) logarithmically.",
+    "explanation": "A decibel is 10 log of an intensity (or power) ratio, so it always compares a value with a reference. The logarithmic ratio compresses huge ranges into small numbers: 30 dB of attenuation means intensity fell to 1/1000. It carries no absolute units, frequency or depth.",
     "distractorExplanations": {
       "a": "W/cm² is the absolute unit of intensity; decibels express relative ratios, not absolute values.",
       "c": "Frequency is measured in hertz; decibels are logarithmic ratios of intensity or amplitude, not frequency.",
@@ -498,7 +498,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-001",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Piezoelectric effect means:",
+    "prompt": "The same PZT element in a transducer both sends pulses and detects returning echoes. Which property makes this possible?",
     "options": [
       {
         "id": "a",
@@ -518,7 +518,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "PZT elements transmit and receive; Curie temperature destroys piezoelectricity if overheated.",
+    "explanation": "The piezoelectric effect is reciprocal: an applied voltage deforms the crystal to send a pressure pulse, and returning echo pressure deforms it to produce a voltage. That is why one PZT element can transmit and receive. Heating above the Curie point permanently destroys this property.",
     "distractorExplanations": {
       "a": "Shape change driven by a magnetic field is magnetostriction, not the piezoelectric effect, which uses voltage.",
       "b": "Heating does not produce the ultrasound pulse; voltage deforms the crystal directly, and heat can destroy it above the Curie point.",
@@ -630,7 +630,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-005",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Lateral resolution is best at the",
+    "prompt": "Where along a focused beam is lateral resolution best?",
     "options": [
       {
         "id": "a",
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Focusing improves lateral resolution at the focal zone; multiple foci reduce frame rate.",
+    "explanation": "Lateral resolution equals beam width, so it is best where the beam is narrowest: the focus, at the end of the near zone. An unfocused disc narrows to about half its diameter there and focusing narrows it further; the beam is wider at the face and widens again in the diverging far zone.",
     "distractorExplanations": {
       "a": "At the face the beam is as wide as the crystal, about twice its width at the focus.",
       "b": "The beam diverges in the far zone, so lateral resolution degrades beyond the focus.",
@@ -663,7 +663,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-006",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Linear sequenced arrays create rectangular images by:",
+    "prompt": "How does a linear sequenced array build its rectangular image?",
     "options": [
       {
         "id": "a",
@@ -683,7 +683,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Linear = rectangle; convex = blunted sector; phased = sector from small footprint.",
+    "explanation": "A linear sequenced array fires a small group of adjacent elements to form one scan line, then shifts the group one element along the face and repeats. Parallel, unsteered lines give a rectangular image as wide as the footprint; phased arrays steer with timing delays and produce a sector instead.",
     "distractorExplanations": {
       "a": "Steering with phased time delays from a small footprint produces a sector image, which is a phased array.",
       "c": "A motor-driven single element is an older mechanical sector transducer, not a linear sequenced array.",
@@ -729,7 +729,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-008",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Grating lobes are reduced by:",
+    "prompt": "An image from a linear array shows off-axis grating-lobe echoes. Which combination of design and beam-forming techniques reduces grating lobes?",
     "options": [
       {
         "id": "a",
@@ -749,7 +749,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Grating/side lobes create artifacts and degrade lateral resolution.",
+    "explanation": "Grating lobes come from the regular spacing of array elements and grow when element pitch is large relative to wavelength. Spacing elements about half a wavelength apart, subdicing each element into smaller pieces, and apodization (weaker drive to outer elements) push lobe energy down.",
     "distractorExplanations": {
       "a": "More power and gain raise lobe energy along with the main beam; they do not suppress grating lobes.",
       "b": "Wider element spacing makes grating lobes worse; elements should be spaced closely (about half a wavelength).",
@@ -762,7 +762,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-009",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Duty factor is",
+    "prompt": "Which expression defines the duty factor of a pulsed ultrasound system?",
     "options": [
       {
         "id": "a",
@@ -782,7 +782,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "DF is unitless (the fraction of time transmitting); CW Doppler DF = 1; imaging DF is very small.",
+    "explanation": "Duty factor is the fraction of time the system is transmitting: DF = pulse duration ÷ pulse repetition period (= PD × PRF). It is unitless and ranges from 0 to 1; imaging is typically under 1%, and continuous-wave Doppler, which always transmits, has a DF of 1.",
     "distractorExplanations": {
       "b": "That inverts the ratio and would give values above 1; duty factor is PD/PRP, a fraction of time transmitting.",
       "c": "Frame rate is not the pulse repetition frequency; duty factor uses PD × PRF (equivalently PD/PRP).",
@@ -861,7 +861,7 @@
     "id": "ardms-spi-readiness-check-transducers-beam-012",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "transducers-beam",
-    "prompt": "Increasing the number of transmit foci typically",
+    "prompt": "A sonographer adds two more transmit focal zones to an abdominal image. What is the typical result?",
     "options": [
       {
         "id": "a",
@@ -881,7 +881,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Multiple foci improve lateral resolution over depth at a temporal-resolution cost.",
+    "explanation": "Each transmit focal zone needs its own pulse along every scan line, so extra foci keep the beam narrow over a longer depth range (better lateral resolution) but take more time per frame, lowering frame rate and temporal resolution. Axial resolution depends on spatial pulse length, not focusing.",
     "distractorExplanations": {
       "b": "Each extra focus needs another transmit pulse per line, so frame rate falls rather than rises.",
       "c": "Focusing narrows beam width, which affects lateral resolution; axial resolution depends on SPL.",
@@ -1026,7 +1026,7 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-002",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "At a Doppler angle of 90°",
+    "prompt": "A sonographer aligns the Doppler beam perpendicular (90°) to flow in a vessel. What happens to the Doppler shift?",
     "options": [
       {
         "id": "a",
@@ -1046,7 +1046,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Avoid 90°; aim for ≤60° for quantitative vascular Doppler when possible.",
+    "explanation": "The Doppler shift is proportional to cos θ: Δf = 2·f0·v·cos θ ÷ c. At 90°, cos θ = 0, so no shift is detected even when blood moves fast. Near 90° small angle errors cause large velocity errors, so vascular velocity measurements keep θ at or below 60°.",
     "distractorExplanations": {
       "a": "Cos θ equals 1 at 0°, where the shift is maximal; at 90° cosine is 0.",
       "b": "Angles near 90° give the largest velocity errors; keep the angle at or below 60° for velocity estimates.",
@@ -1125,27 +1125,27 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-005",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Bernoulli equation simplified in echo estimates pressure gradients from:",
+    "prompt": "In echocardiography, which expression does the simplified (modified) Bernoulli equation use to estimate a pressure gradient from peak jet velocity?",
     "options": [
       {
         "id": "a",
-        "text": "v^2/4 (velocity squared over 4)"
+        "text": "v²/4 (velocity squared over 4)"
       },
       {
         "id": "b",
-        "text": "4v (peak velocity × 4)"
+        "text": "4v (peak velocity times 4)"
       },
       {
         "id": "c",
-        "text": "4v^2 (modified Bernoulli)"
+        "text": "4v² (velocity squared times 4)"
       },
       {
         "id": "d",
-        "text": "8v^2 (doubled for valves)"
+        "text": "8v² (doubled for valve jets)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "ΔP ≈ 4v² relates peak velocity to pressure drop across stenoses/valves.",
+    "explanation": "The simplified Bernoulli equation is ΔP ≈ 4v², with v in m/s and ΔP in mmHg. It drops viscous and acceleration terms and assumes proximal velocity is negligible. Velocity is squared, so a 4 m/s jet predicts 64 mmHg and doubling velocity quadruples the gradient.",
     "distractorExplanations": {
       "a": "The factor 4 multiplies v², it does not divide it; ΔP = 4v² in mmHg with v in m/s.",
       "b": "The velocity must be squared; ΔP = 4v², so 4 m/s gives 64 mmHg, not 16 mmHg.",
@@ -1158,7 +1158,7 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-006",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Reynolds number predicts",
+    "prompt": "What does the Reynolds number predict about blood flow?",
     "options": [
       {
         "id": "a",
@@ -1178,7 +1178,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "High Reynolds (high velocity, large diameter, low viscosity) → turbulence; spectral window fill-in.",
+    "explanation": "Reynolds number (Re) = velocity × vessel diameter × density ÷ viscosity. It predicts whether flow stays laminar or turns turbulent: above roughly 2000 flow tends toward turbulence, as in post-stenotic jets that fill in the spectral window. It does not compute gradients, volume flow or the Nyquist limit.",
     "distractorExplanations": {
       "a": "Pressure drop across a stenosis is estimated with the Bernoulli equation, not the Reynolds number.",
       "c": "Volume flow is described by Poiseuille's law (Q = ΔP/R), not by the Reynolds number.",
@@ -1191,7 +1191,7 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-007",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Color Doppler packet size (ensemble length) tradeoff",
+    "prompt": "Which statement best describes the color Doppler packet size (ensemble length) tradeoff?",
     "options": [
       {
         "id": "a",
@@ -1211,7 +1211,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Color is multi-pulse; compromises among area, depth, packets, and PRF.",
+    "explanation": "Color Doppler estimates mean velocity at each pixel from a packet of several pulses fired down the same line. More pulses per packet give more accurate velocity estimates and better slow-flow sensitivity, but each line takes longer, so frame rate falls. The Nyquist limit is still set by PRF.",
     "distractorExplanations": {
       "a": "Each extra pulse per line takes time, so larger packets lower the frame rate.",
       "b": "Smaller packets raise frame rate but reduce sensitivity and velocity accuracy; the tradeoff is reversed.",
@@ -1224,31 +1224,31 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-008",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Wall filters (high-pass) remove",
+    "prompt": "During a spectral Doppler exam, the wall filter acts as a high-pass filter. What is it designed to remove?",
     "options": [
       {
         "id": "a",
-        "text": "Only the highest arterial velocities always as their purpose"
+        "text": "The highest-velocity signals at peak systole"
       },
       {
         "id": "b",
-        "text": "ECG signals in the ultrasound machine power cord"
+        "text": "Aliased signals above the Nyquist limit"
       },
       {
         "id": "c",
-        "text": "All useful diastolic venous flow by design goal when set optimally"
+        "text": "Random electronic noise across all frequencies"
       },
       {
         "id": "d",
-        "text": "Low-frequency Doppler shifts from vessel wall/clutter motion"
+        "text": "Low-frequency wall and tissue clutter shifts"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Excessive wall filter can wipe out slow flow (e.g., venous/diastolic)",
+    "explanation": "A wall filter is a high-pass filter: it rejects Doppler shifts below a set cutoff, which come mainly from slowly moving vessel walls and tissue (clutter or wall thump). Set too high, it also erases genuine slow venous or diastolic flow, so keep the cutoff as low as clutter allows.",
     "distractorExplanations": {
-      "a": "Not for removing peak arterial.",
-      "b": "Not electrical ECG filtering definition.",
-      "c": "Overfiltering harms slow flow."
+      "a": "A high-pass filter passes high Doppler frequencies, so peak systolic signals remain; only shifts below the cutoff are rejected.",
+      "b": "Aliasing is a sampling limit corrected by raising PRF, moving the baseline or using CW; a wall filter cannot remove wraparound.",
+      "c": "Broadband electronic noise is handled by gain, reject and averaging; a high-pass filter only cuts low-frequency Doppler shifts."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1620,7 +1620,7 @@
     "id": "ardms-spi-readiness-check-artifacts-safety-005",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "artifacts-safety",
-    "prompt": "Side lobe/grating lobe artifacts can create",
+    "prompt": "Strong reflectors lying outside the main beam can still return echoes through side lobes or grating lobes. What artifact do these lobes create?",
     "options": [
       {
         "id": "a",
@@ -1640,7 +1640,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Reduce with apodization; recognize as artifact vs real masses.",
+    "explanation": "The system assumes every echo came from along the main beam axis. Energy sent and received through side lobes (single elements) or grating lobes (arrays) returns from off-axis reflectors, so it is painted as false echoes on the scan line, often inside cysts or vessels. Apodization and subdicing reduce it.",
     "distractorExplanations": {
       "b": "Equally spaced echoes from parallel reflectors are reverberation, not side- or grating-lobe artifact.",
       "c": "Lobe artifacts affect both B-mode and Doppler, placing off-axis echoes as if they were on the beam axis.",
@@ -1686,7 +1686,7 @@
     "id": "ardms-spi-readiness-check-artifacts-safety-007",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "artifacts-safety",
-    "prompt": "Mechanical index (MI) relates most to risk of:",
+    "prompt": "Before scanning, a sonographer checks the mechanical index (MI) on the display. MI relates most closely to the risk of:",
     "options": [
       {
         "id": "a",
@@ -1706,7 +1706,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "TI relates to heating; MI to mechanical/cavitation; contrast agents raise cavitation concern.",
+    "explanation": "MI estimates the likelihood of mechanical bioeffects, chiefly cavitation: MI = derated peak rarefactional pressure (MPa) ÷ √(center frequency in MHz). Higher negative pressure and lower frequency raise MI, and gas bodies such as contrast microbubbles increase cavitation concern. Heating is tracked by TI.",
     "distractorExplanations": {
       "a": "Bone heating is estimated by the thermal index for bone (TIB), not the mechanical index.",
       "b": "Aliasing is a Doppler sampling artifact related to low PRF, not a bioeffect indexed by MI.",
@@ -1719,7 +1719,7 @@
     "id": "ardms-spi-readiness-check-artifacts-safety-008",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "artifacts-safety",
-    "prompt": "Thermal index (TI) estimates",
+    "prompt": "What does the thermal index (TI) shown on the scanner display estimate?",
     "options": [
       {
         "id": "a",
@@ -1739,7 +1739,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "TIS/TIB/TIC variants depend on assumptions; minimize dwell especially with bone/fetal concerns.",
+    "explanation": "TI is the ratio of transmitted acoustic power to the power estimated to raise tissue temperature by 1 °C under modeled conditions. It estimates, rather than measures, heating from absorption, with TIS (soft tissue), TIB (bone at the focus) and TIC (cranial bone at the surface) versions.",
     "distractorExplanations": {
       "a": "Cavitation likelihood from peak rarefactional pressure is described by the mechanical index (MI), not TI.",
       "b": "TI is a modeled ratio of output power to the power needed to raise tissue 1°C, not a measured temperature.",
@@ -1818,7 +1818,7 @@
     "id": "ardms-spi-readiness-check-artifacts-safety-011",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "artifacts-safety",
-    "prompt": "Comet-tail artifact is a form of:",
+    "prompt": "Which artifact category does a comet-tail artifact belong to?",
     "options": [
       {
         "id": "a",
@@ -1838,7 +1838,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Comet-tail is a dense reverberation pattern from metal/cholesterol etc.",
+    "explanation": "Comet tail is a form of reverberation: sound bounces between two closely spaced strong reflectors (metal clip, cholesterol crystals, gas), so echoes arrive so close together that they merge into a tapering, solid-looking bright trail deep to the object, weakening with each bounce.",
     "distractorExplanations": {
       "a": "A duplicated structure across the diaphragm is mirror-image artifact, not comet tail.",
       "b": "Refraction at curved edges produces edge shadows, not the tapering echo trail of a comet tail.",
@@ -1871,7 +1871,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "If listening time is too short, late echoes are mis-mapped to shallow depths.",
+    "explanation": "Range ambiguity happens when the PRF is too high for the imaging depth: echoes from deep reflectors are still returning after the next pulse is sent. The system times them from the newer pulse and places them too shallow. Lowering PRF (e.g. by increasing the depth setting) removes it.",
     "distractorExplanations": {
       "b": "A low PRF gives a long listening time, so every echo returns before the next pulse; that prevents range ambiguity.",
       "c": "Back-and-forth reflection between parallel interfaces is reverberation artifact.",
@@ -1970,7 +1970,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ALARA: as low as reasonably achievable exposure consistent with diagnostic needs.",
+    "explanation": "ALARA means As Low As Reasonably Achievable: use the least acoustic output and the shortest dwell time that still give a diagnostic exam. Increase receiver gain before output power, watch both TI (bone heating matters in fetal scans) and MI, and avoid unnecessary Doppler on the fetus.",
     "distractorExplanations": {
       "a": "ALARA still requires diagnostic images; a nondiagnostic scan adds repeat exposure without benefit.",
       "c": "ALARA calls for increasing receiver gain first and output power only if needed, the reverse order.",
@@ -3105,31 +3105,31 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-020",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Volume flow is roughly conserved through a focal luminal narrowing. Mean velocity in the narrowest segment should:",
+    "prompt": "A sonographer samples flow through a focal arterial stenosis. Assuming volume flow is conserved, mean velocity in the narrowest segment should:",
     "options": [
       {
         "id": "a",
-        "text": "Fall because every narrowing slows red cells uniformly"
+        "text": "Fall, because the narrowing adds resistance and slows blood"
       },
       {
         "id": "b",
-        "text": "Stay fixed because pressure drop cancels area change"
+        "text": "Stay the same, because volume flow through it is unchanged"
       },
       {
         "id": "c",
-        "text": "Become undefined until a stent restores area"
+        "text": "Fall, because pressure builds up inside the narrowed segment"
       },
       {
         "id": "d",
-        "text": "Rise because the same flow crosses a smaller area"
+        "text": "Rise, because the same flow crosses a smaller area"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Continuity: Q ≈ A·v. When area shrinks at fixed volume flow, mean velocity in the jet rises.",
+    "explanation": "The continuity equation states Q = A × v: the same volume of blood per second must pass every cross-section. When area falls at a stenosis, mean velocity must rise in proportion, which is why peak velocity is the main stenosis grading criterion. Pressure falls where velocity rises (Bernoulli).",
     "distractorExplanations": {
-      "a": "Stenotic jets accelerate; they do not uniformly decelerate flow.",
-      "b": "Bernoulli links pressure and velocity, yet smaller area still drives higher jet speed.",
-      "c": "Flow continues through a stenosis; velocity remains defined."
+      "a": "Added resistance can lower total flow, but with flow conserved a smaller area forces a faster jet, not a slower one.",
+      "b": "Unchanged volume flow is exactly why velocity changes: Q = A × v, so a smaller area needs a higher velocity.",
+      "c": "Bernoulli shows the opposite: where velocity rises in a narrowing, pressure falls, so no pressure build-up slows the flow."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
@@ -3171,11 +3171,11 @@
     "id": "ardms-spi-readiness-check-doppler-hemodynamics-022",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "doppler-hemodynamics",
-    "prompt": "Resistive index on a carotid-style tracing is calculated as:",
+    "prompt": "A sonographer measures PSV and EDV on a renal artery spectral tracing. The resistive index (RI) is calculated as:",
     "options": [
       {
         "id": "a",
-        "text": "(Peak systolic − end-diastolic) ÷ mean velocity across the cycle"
+        "text": "(PSV − EDV) ÷ mean velocity"
       },
       {
         "id": "b",
@@ -3183,19 +3183,19 @@
       },
       {
         "id": "c",
-        "text": "Peak systolic velocity ÷ Doppler angle in degrees"
+        "text": "PSV ÷ EDV"
       },
       {
         "id": "d",
-        "text": "End-diastolic velocity alone without using systole"
+        "text": "EDV ÷ PSV"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "RI = (PSV − EDV) / PSV. It summarizes pulsatility using the systolic and diastolic peaks.",
+    "explanation": "RI (Pourcelot index) = (PSV − EDV) ÷ PSV. It runs from 0 to 1: strong diastolic flow in low-resistance beds such as the kidney or internal carotid gives a low RI, while absent diastolic flow gives RI = 1. Dividing by mean velocity instead gives the pulsatility index.",
     "distractorExplanations": {
-      "a": "Using mean velocity is a different pulsatility-style ratio, not standard RI.",
-      "c": "Angle in degrees is not part of the RI formula.",
-      "d": "RI needs both the systolic and diastolic peaks."
+      "a": "Dividing PSV − EDV by the time-averaged mean velocity gives the pulsatility index (PI), a different resistance measure.",
+      "c": "PSV ÷ EDV is the systolic/diastolic (S/D) ratio used in umbilical artery studies, not the resistive index.",
+      "d": "EDV ÷ PSV equals 1 − RI; it rises as resistance falls, the opposite direction of the resistive index."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
@@ -3373,27 +3373,27 @@
     "options": [
       {
         "id": "a",
-        "text": "12 mmHg (as if computing 4 × 3 without squaring)"
+        "text": "3 mmHg"
       },
       {
         "id": "b",
-        "text": "9 mmHg (as if computing 3² without multiplying by 4)"
+        "text": "9 mmHg"
       },
       {
         "id": "c",
-        "text": "3 mmHg (as if reporting the velocity number itself)"
+        "text": "12 mmHg"
       },
       {
         "id": "d",
-        "text": "36 mmHg (because 4 × 3² = 36)"
+        "text": "36 mmHg"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "4 × 3² = 4 × 9 = 36 mmHg. The simplified form ignores proximal velocity and viscous losses.",
+    "explanation": "Simplified Bernoulli: ΔP ≈ 4v² (mmHg, with v in m/s). Square first, then multiply: 3² = 9, and 4 × 9 = 36 mmHg. Because velocity is squared, small velocity errors grow, and the shortcut ignores proximal velocity, which matters once it exceeds about 1.5 m/s.",
     "distractorExplanations": {
-      "a": "Omitting the square underestimates the gradient (4 × 3 = 12).",
-      "b": "Using only 3² = 9 forgets the leading factor of 4.",
-      "c": "The velocity in m/s is an input, not the mmHg result."
+      "a": "3 is the jet velocity in m/s, the input to the formula; reporting it as mmHg skips the 4v² calculation entirely.",
+      "b": "9 is only v² (3²); the result still has to be multiplied by 4, giving 36 mmHg.",
+      "c": "12 comes from 4 × 3, which skips squaring the velocity; the gradient is 4 × 9 = 36 mmHg."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
@@ -3418,15 +3418,15 @@
       },
       {
         "id": "d",
-        "text": "Drop to an undefined value until area recovers"
+        "text": "Quadruple, because velocity scales with area squared"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "From Q = A·v, if area halves at fixed flow, mean velocity roughly doubles under continuity.",
+    "explanation": "Continuity: Q = A × v, so with Q fixed, v = Q ÷ A and halving area doubles mean velocity. Velocity quadruples only when diameter halves, because area depends on diameter squared (A = πr²); do not confuse an area reduction with a diameter reduction.",
     "distractorExplanations": {
-      "b": "Halving area raises velocity for fixed flow; it does not cut velocity in half.",
-      "c": "Velocity must change when area changes at fixed volume flow.",
-      "d": "Flow continues; velocity stays defined as Q/A."
+      "b": "Velocity is inversely proportional to area at fixed flow, so halving area doubles velocity rather than halving it.",
+      "c": "With Q = A × v and Q fixed, any change in area must change velocity; it cannot stay the same.",
+      "d": "Quadrupling happens when diameter halves (area falls to one-quarter); here the area itself halves, so velocity doubles."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for SPI physics topics (expanded to 120 unique 2026-10-07)."
@@ -3534,7 +3534,7 @@
     "id": "ardms-spi-readiness-check-artifacts-safety-018",
     "examSlug": "ardms-spi-readiness-check",
     "topicId": "artifacts-safety",
-    "prompt": "An oblique interface bends the beam; a reflector looks laterally shifted and a dark edge band appears. Call this primarily:",
+    "prompt": "Scanning across an oblique fat–muscle boundary, a reflector appears displaced sideways from its true position and a dark band appears beneath a curved edge. Call this primarily:",
     "options": [
       {
         "id": "a",
@@ -3554,7 +3554,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Refraction at speed mismatches changes ray path, causing lateral misregistration and edge shadows.",
+    "explanation": "Refraction follows Snell's law: at oblique incidence on a propagation-speed mismatch, the transmitted beam bends. The scanner assumes straight-line travel, so reflectors are placed sideways from their true position (sometimes duplicated), and beam bending at curved edges creates edge shadows.",
     "distractorExplanations": {
       "a": "Mirror image duplicates structures deep to a strong specular reflector.",
       "c": "Partial-volume fill-in is elevational averaging inside a voxel.",

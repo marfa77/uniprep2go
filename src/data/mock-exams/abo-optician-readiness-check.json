@@ -106,15 +106,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Frequency becomes lower while wavelength stays constant when the numbers are close"
+        "text": "Frequency becomes lower while wavelength stays the same as in air"
       },
       {
         "id": "b",
-        "text": "Frequency becomes higher while wavelength becomes longer on a standard Rx order"
+        "text": "Frequency stays constant while wavelength becomes longer in glass"
       },
       {
         "id": "c",
-        "text": "Frequency stays constant while wavelength becomes longer in typical exam scenarios"
+        "text": "Frequency drops by the index while wavelength also becomes shorter"
       },
       {
         "id": "d",
@@ -124,9 +124,9 @@
     "correctOptionId": "d",
     "explanation": "A wave's frequency is fixed by its source and remains constant across a boundary. Because light slows in the lens and v = fλ, its wavelength becomes shorter.",
     "distractorExplanations": {
-      "a": "The boundary does not change frequency, and wavelength must change when wave speed changes.",
-      "b": "Neither a frequency increase nor a longer wavelength is consistent with slower travel in the lens.",
-      "c": "With unchanged frequency and reduced speed, the wavelength shortens rather than lengthens."
+      "a": "Frequency is fixed by the source and does not drop at a boundary; it is the wavelength that shortens as the wave slows.",
+      "b": "A longer wavelength would require faster travel; light slows in the lens, so with fixed frequency the wavelength shortens.",
+      "c": "If both frequency and wavelength fell by the index, speed would fall by the index squared; only wavelength scales with v = c/n."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -502,15 +502,15 @@
     "options": [
       {
         "id": "a",
-        "text": "+2.00 D because the object is a real source when the numbers are close"
+        "text": "+2.00 D because the reciprocal of 0.50 m is a positive value"
       },
       {
         "id": "b",
-        "text": "-0.50 D because the source is 50 cm away on a standard Rx order"
+        "text": "+0.50 D because vergence equals the source distance in meters"
       },
       {
         "id": "c",
-        "text": "+0.50 D because the rays travel to the right in typical exam scenarios"
+        "text": "-0.50 D because diverging light uses the distance in meters"
       },
       {
         "id": "d",
@@ -520,9 +520,9 @@
     "correctOptionId": "d",
     "explanation": "Diverging incident light has negative vergence. With the real object 0.50 m to the left, L = 1/(-0.50) = -2.00 D under the standard vergence convention.",
     "distractorExplanations": {
-      "a": "A real source sends diverging rays to the plane, so its incident vergence is negative rather than positive.",
-      "b": "This choice uses distance in meters without taking the reciprocal required for vergence.",
-      "c": "Direction of travel alone does not set the sign; convergence is positive and divergence is negative."
+      "a": "The magnitude is right but the sign is reversed: diverging light from a real object to the left has negative vergence.",
+      "b": "This uses the distance itself instead of its reciprocal and also gives diverging light a positive sign.",
+      "c": "The negative sign fits diverging light, but vergence is 1/distance in meters, so 0.50 m gives 2.00 D, not 0.50 D."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1133,22 +1133,22 @@
       },
       {
         "id": "b",
-        "text": "The finished back vertex power including sphere and cylinder under common office practice"
+        "text": "The finished back vertex power of the lens including its cylinder"
       },
       {
         "id": "c",
-        "text": "The material index based on the measured center thickness when the numbers are close"
+        "text": "The refractive index of the lens material from the surface sag reading"
       },
       {
         "id": "d",
-        "text": "The induced prism at the patient's specified decentration on a standard Rx order"
+        "text": "The induced prism at the patient's specified decentration point"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A lens clock measures surface curvature and displays an approximate surface power based on its calibration. A lensometer is needed for finished vertex power and prism.",
     "distractorExplanations": {
       "b": "Back vertex sphere, cylinder, and axis are neutralized with a lensometer rather than a surface-curvature clock.",
-      "c": "Center thickness and curvature do not let this instrument identify the refractive index of an unknown material.",
+      "c": "A lens clock assumes a fixed calibration index (commonly 1.53); its sag reading cannot reveal the index of an unknown material.",
       "d": "Induced prism requires lens power and decentration data or a lensometer reading, not a surface clock alone."
     },
     "difficulty": "easy",
@@ -1195,11 +1195,11 @@
     "options": [
       {
         "id": "a",
-        "text": "The shorter corridor removes the near add from the lower portion of the lens for this dispensing case"
+        "text": "The shorter corridor reduces the near add below the power on the order"
       },
       {
         "id": "b",
-        "text": "The shorter corridor creates a visible line between distance and near zones under common office practice"
+        "text": "The shorter corridor gives a wider intermediate zone with less peripheral blur"
       },
       {
         "id": "c",
@@ -1207,15 +1207,15 @@
       },
       {
         "id": "d",
-        "text": "The compressed design changes the prescribed cylinder into vertical prism when the numbers are close"
+        "text": "The compressed corridor requires a higher fitting height than a standard design"
       }
     ],
     "correctOptionId": "c",
     "explanation": "A short corridor reaches the full add over less vertical distance, fitting a shallow frame but often compressing the intermediate region and increasing sensitivity to placement.",
     "distractorExplanations": {
-      "a": "A short-corridor progressive still reaches its ordered near addition in the designated near reference area.",
-      "b": "Progressive designs remain line-free; a visible segment line belongs to a conventional multifocal design.",
-      "d": "Corridor length affects the power progression and peripheral aberrations, not conversion of cylinder into prescribed prism."
+      "a": "Corridor length changes how quickly the add is reached, not its amount; the ordered addition is still delivered in the near zone.",
+      "b": "This reverses the tradeoff: reaching the add over fewer millimeters steepens the power gradient, narrowing the intermediate zone.",
+      "d": "Short-corridor designs exist to allow a lower minimum fitting height in shallow frames, not to demand a higher one."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1265,23 +1265,23 @@
       },
       {
         "id": "b",
-        "text": "It is the standard method of correcting anisometropic vertical imbalance at near for this dispensing case"
+        "text": "It is a slab-off that corrects the vertical prism imbalance at near caused by anisometropia"
       },
       {
         "id": "c",
-        "text": "It increases the near addition so the corridor can be made substantially shorter under common office practice"
+        "text": "It must be listed as prescribed prism and verified against the written Rx order"
       },
       {
         "id": "d",
-        "text": "It rotates the cylinder axes to offset peripheral progressive astigmatism when the numbers are close"
+        "text": "It is position-of-wear compensation that adjusts powers for tilt, wrap, and vertex"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Prism thinning introduces balancing prism, commonly base down, to improve progressive lens thickness and appearance. It is not the same as prism ordered to treat a binocular condition.",
     "distractorExplanations": {
-      "b": "Near vertical imbalance is addressed with calculated slab-off or prescribed prism, not routine progressive prism thinning.",
-      "c": "The near addition is prescribed and remains independent of the balancing prism used during lens surfacing.",
-      "d": "Cylinder axis is part of the prescription; prism thinning neither rotates it nor removes progressive aberration."
+      "b": "Slab-off removes base-up prism from one lens to offset anisometropic near imbalance; prism thinning is equal base-down prism in both lenses.",
+      "c": "Equal yoked thinning prism is a cosmetic lab step, not part of the written Rx; it is checked as equal in both lenses at the PRP.",
+      "d": "Position-of-wear compensation recalculates sphere, cylinder, and axis for tilt and wrap; prism thinning only reduces thickness."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1426,7 +1426,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A blue-blocking treatment designed to absorb short-wavelength display light for this dispensing case"
+        "text": "A photochromic lens that darkens in bright sun to cut reflected water glare"
       },
       {
         "id": "b",
@@ -1434,19 +1434,19 @@
       },
       {
         "id": "c",
-        "text": "An aspheric front surface designed to reduce off-axis lens aberrations under common office practice"
+        "text": "A mirror coating that reflects most of the glare away from the wearer's eyes"
       },
       {
         "id": "d",
-        "text": "A higher Abbe material designed to reduce transverse chromatic aberration when the numbers are close"
+        "text": "A gradient tint darkest at the lower edge to absorb reflections from the water"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Light reflected from horizontal surfaces such as water becomes strongly horizontally polarized. A properly oriented polarized sunglass filter suppresses that glare.",
     "distractorExplanations": {
-      "a": "A blue-filter treatment changes selected wavelength transmission but does not target glare according to its polarization direction.",
-      "c": "Aspheric geometry manages lens form and peripheral optics; it does not selectively block reflected horizontal glare.",
-      "d": "A higher Abbe value reduces chromatic dispersion but does not provide the filtering action of polarized sunglasses."
+      "a": "Photochromic darkening lowers overall transmission but does not filter by polarization, so horizontally polarized glare stays bright.",
+      "c": "A mirror coating reduces total light equally in all orientations; it lacks the axis-selective action needed for surface glare.",
+      "d": "A gradient tint only darkens one zone of the lens and does nothing selective about the polarized nature of water glare."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1661,22 +1661,22 @@
       },
       {
         "id": "b",
-        "text": "A single-vision distance lens centered for far vision across the office lens under common office practice"
+        "text": "A general-purpose progressive with its distance zone sized for driving and walking"
       },
       {
         "id": "c",
-        "text": "A polarized driving lens designed primarily for reflected outdoor glare when the numbers are close"
+        "text": "A single-vision reading lens powered for documents and used for the monitors too"
       },
       {
         "id": "d",
-        "text": "A high-add Executive bifocal designed primarily for full-width close reading on a standard Rx order"
+        "text": "A high-add Executive bifocal providing full-width reading across the lower lens"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An occupational or office design can devote more lens area to intermediate monitor distance and near documents than a general-purpose progressive, but it is not intended for driving.",
     "distractorExplanations": {
-      "b": "A distance-only lens does not supply the intermediate and near support needed for prolonged monitor and document work.",
-      "c": "Polarized driving lenses target outdoor reflected glare and do not create the workstation's required intermediate power.",
+      "b": "A general-purpose progressive devotes the upper lens to distance and gives a narrow intermediate corridor for all-day monitor work.",
+      "c": "A reading lens focused for document distance leaves monitors at intermediate distance blurred, so it cannot cover both tasks.",
       "d": "An Executive supplies distance and near powers but lacks the broad dedicated intermediate range needed for monitor distance."
     },
     "difficulty": "medium",
@@ -1822,7 +1822,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A very low Abbe value, because color dispersion strengthens drilled attachment points in typical exam scenarios"
+        "text": "A high-index glass lens, because a denser material resists cracking around each hole"
       },
       {
         "id": "b",
@@ -1830,19 +1830,19 @@
       },
       {
         "id": "c",
-        "text": "A steep front base curve, because surface curvature prevents stress at every hole for this dispensing case"
+        "text": "Standard CR-39 plastic, because it is the most impact-resistant lens material on the market"
       },
       {
         "id": "d",
-        "text": "A dark solid tint, because visible absorption improves the lens material's toughness under common office practice"
+        "text": "A steeper base curve with thicker edges so the mounting hardware grips more firmly"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Drilled mountings concentrate mechanical stress around small holes. A tough, drill-friendly material such as Trivex helps resist cracking while remaining lightweight.",
     "distractorExplanations": {
-      "a": "Abbe value describes chromatic dispersion and has no strengthening effect around drilled attachment holes.",
-      "c": "Base curve influences lens form and optics but cannot guarantee that a brittle material will withstand drilling stress.",
-      "d": "Tint changes visible-light transmission and appearance, not the substrate's resistance to cracking around hardware."
+      "a": "Glass is brittle and poorly suited to drilled mountings; density does not prevent chips and cracks radiating from the holes.",
+      "c": "CR-39 tends to crack and chip at drill holes and is less impact resistant than Trivex or polycarbonate.",
+      "d": "Steeper curves and thick edges change lens form and appearance but do not make a brittle material resist stress at the holes."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1888,15 +1888,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase the add power because base-curve changes indicate progressing presbyopia under common office practice"
+        "text": "Advise a two-week adaptation period because verified power means the lenses are correct"
       },
       {
         "id": "b",
-        "text": "Rotate both cylinder axes because a flatter base curve automatically changes axis when the numbers are close"
+        "text": "Remake both lenses in a higher-index material to cancel the magnification change"
       },
       {
         "id": "c",
-        "text": "Apply a darker tint because reduced transmission restores the former magnification on a standard Rx order"
+        "text": "Refer the wearer for a new refraction because spatial distortion means the Rx changed"
       },
       {
         "id": "d",
@@ -1906,9 +1906,9 @@
     "correctOptionId": "d",
     "explanation": "Changing lens form can alter spectacle magnification, peripheral optics, and adaptation even when vertex power verifies. Comparing the old base curve and fitting variables is appropriate.",
     "distractorExplanations": {
-      "a": "Near addition addresses accommodative demand; a base-curve adaptation complaint does not establish a need for more add.",
-      "b": "Cylinder axis is prescribed and does not rotate merely because the selected front surface curve is different.",
-      "c": "Tint controls light transmission and does not restore the former lens form, peripheral optics, or magnification."
+      "a": "Verified back vertex power does not rule out a form complaint; the base-curve change itself alters magnification and peripheral optics.",
+      "b": "Changing index alters thickness and curves again but does not restore the familiar lens form that the wearer adapted to.",
+      "c": "The Rx is unchanged and verified; distortion after a base-curve change is a lens-form issue that a new refraction would not fix."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1925,23 +1925,23 @@
       },
       {
         "id": "b",
-        "text": "The near addition has been omitted from the central progressive corridor for this dispensing case"
+        "text": "The fitting crosses were set too high, so the near zone sits below the pupils"
       },
       {
         "id": "c",
-        "text": "The lens material has changed into prism because the fitting cross is visible under common office practice"
+        "text": "A low Abbe material is causing color blur that appears in the lower lens sides"
       },
       {
         "id": "d",
-        "text": "The distance prescription exists in the lower sides instead of the upper lens when the numbers are close"
+        "text": "The laboratory omitted the prism thinning that normally removes lateral blur"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A progressive surface blends distance, intermediate, and near powers continuously. The design distributes unwanted astigmatism into peripheral regions outside the usable corridor.",
     "distractorExplanations": {
-      "b": "Clear vision through the corridor indicates that progressive powers are present rather than that the near addition was omitted.",
-      "c": "The fitting cross is a layout reference, and neither its marking nor the substrate transforms lens power into prism.",
-      "d": "The lower lateral blur comes from design aberration; the primary distance zone remains in the upper portion."
+      "b": "A fitting-height error shifts the whole corridor vertically; clear corridor vision with lateral blur points to normal design astigmatism.",
+      "c": "Low Abbe value causes off-axis color fringes, not the swimming sensation and blur typical of progressive peripheral astigmatism.",
+      "d": "Prism thinning only balances thickness; it cannot remove the unwanted surface astigmatism built into a progressive's lateral zones."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -1954,7 +1954,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The distance PD multiplied by the carrier lens sphere power in typical exam scenarios"
+        "text": "The distance from the segment top to the distance optical center times the sphere"
       },
       {
         "id": "b",
@@ -1962,19 +1962,19 @@
       },
       {
         "id": "c",
-        "text": "The segment width multiplied by the refractive index of the lens for this dispensing case"
+        "text": "The segment width in centimeters multiplied by the add power of the segment"
       },
       {
         "id": "d",
-        "text": "The fitting height multiplied by the front surface base curve under common office practice"
+        "text": "The segment height above the lower eyewire multiplied by the add power"
       }
     ],
     "correctOptionId": "b",
     "explanation": "At the segment boundary, image jump equals the segment add times the vertical distance in centimeters from the segment top to the segment optical center.",
     "distractorExplanations": {
-      "a": "Distance PD and carrier power can affect horizontal induced prism, but they do not define segment image jump.",
-      "c": "Segment width and material index influence design choices but are not the Prentice-rule variables for image jump.",
-      "d": "Fitting height locates the segment before the eye; base curve does not replace add and segment optical-center distance."
+      "a": "Image jump comes from the segment's own prism, so it uses the add and the segment optical center, not the distance lens and its OC.",
+      "c": "Segment width sets the near field size; Prentice's rule for jump uses the vertical distance from segment top to its optical center.",
+      "d": "Segment height locates the line in the frame; jump depends on the segment-top-to-segment-OC distance, not on fitting height."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2020,7 +2020,7 @@
     "options": [
       {
         "id": "a",
-        "text": "At the geometric center of each boxed lens shape in typical exam scenarios for this dispensing case"
+        "text": "At the geometric center of each boxed lens shape regardless of pupil position"
       },
       {
         "id": "b",
@@ -2028,18 +2028,18 @@
       },
       {
         "id": "c",
-        "text": "At the lower eyelid regardless of the progressive design for this dispensing case"
+        "text": "At the lower lid margin, as for a flat-top bifocal segment line placement"
       },
       {
         "id": "d",
-        "text": "At the prism reference point printed below the cross under common office practice"
+        "text": "At the prism reference point, which should sit directly over each pupil center"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The progressive fitting cross aligns the manufacturer's distance and corridor design with the wearer's pupil after the frame has been adjusted.",
     "distractorExplanations": {
       "a": "The geometric center describes frame layout and usually does not coincide with the wearer's pupil or progressive fitting point.",
-      "c": "Lower-lid placement is a traditional bifocal reference, not the universal location for a progressive fitting cross.",
+      "c": "Lower-lid placement is the traditional flat-top bifocal reference; a progressive fitting cross belongs at pupil center for most designs.",
       "d": "The prism reference point is a verification location below the fitting cross and is not centered over the pupil."
     },
     "difficulty": "easy",
@@ -2053,11 +2053,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase both monocular PD values by the same amount under common office practice"
+        "text": "Remeasure the monocular PDs because tilt changes horizontal centration"
       },
       {
         "id": "b",
-        "text": "Move both fitting crosses toward the temporal lens edges when the numbers are close"
+        "text": "Lower the fitting crosses 1 mm per degree of added pantoscopic tilt"
       },
       {
         "id": "c",
@@ -2065,15 +2065,15 @@
       },
       {
         "id": "d",
-        "text": "Change the lens material to one with a higher index on a standard Rx order"
+        "text": "Accept the new tilt because tilt mainly changes the cosmetic look of the frame"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Pantoscopic tilt changes how the lenses sit before the eyes and can alter effective optics and the usable vertical position of a progressive design.",
     "distractorExplanations": {
-      "a": "Pantoscopic tilt is a vertical frame-position issue and does not justify changing the wearer's horizontal monocular PDs.",
-      "b": "Temporal relocation changes horizontal centration but does not correct a frame whose vertical angle differs from the measured position.",
-      "d": "Refractive index affects lens thickness and surface power, but it does not correct an inaccurate wearing-position measurement."
+      "a": "Pantoscopic tilt is a vertical-angle change; it does not alter horizontal monocular PD, so remeasuring PD misses the real problem.",
+      "b": "The frame should be returned to its measured position; the single-vision guideline is about 1 mm per 2 degrees, not per degree.",
+      "d": "Tilt changes effective power and the vertical position of the progressive zones, so it is an optical variable, not just cosmetic."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2086,15 +2086,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The monocular PD, which shifts when the pads are replaced on a standard Rx order"
+        "text": "The pantoscopic tilt, which changes the power along the vertical meridian"
       },
       {
         "id": "b",
-        "text": "The cylinder axis, which rotates as the frame moves forward in typical exam scenarios"
+        "text": "The fitting height, which shifts the optical centers above the pupils"
       },
       {
         "id": "c",
-        "text": "The material Abbe value, which falls as the lens moves outward for this dispensing case"
+        "text": "The optical-center spacing, which widens as the lenses move farther forward"
       },
       {
         "id": "d",
@@ -2104,9 +2104,9 @@
     "correctOptionId": "d",
     "explanation": "Vertex distance is the separation between the back lens surface and the cornea; changes matter most in higher-powered prescriptions.",
     "distractorExplanations": {
-      "a": "Monocular PD is an anatomical horizontal measurement and does not change because the frame sits farther from the eyes.",
-      "b": "Moving a lens forward changes its effective vergence at the eye but does not physically rotate the prescribed cylinder axis.",
-      "c": "Abbe value is a property of the lens material and remains constant when the wearing position changes."
+      "a": "Tilt describes the angle of the lens plane; the complaint follows a change in lens-to-eye distance, which is vertex distance.",
+      "b": "Pad changes can alter height, but the stated change is cornea-to-lens distance, the variable that alters effective power.",
+      "c": "Moving lenses forward does not change the horizontal distance between optical centers; that spacing is fixed at edging."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2123,23 +2123,23 @@
       },
       {
         "id": "b",
-        "text": "Whether the frame PD equals the patient's binocular near PD when the numbers are close"
+        "text": "Whether the frame's effective diameter is large enough for the chosen lens blank size"
       },
       {
         "id": "c",
-        "text": "Whether the bridge DBL is larger than the vertical B measurement on a standard Rx order"
+        "text": "Whether the bridge DBL leaves enough room for the near zone to be inset"
       },
       {
         "id": "d",
-        "text": "Whether the lens optical center is placed at the lower eyewire in typical exam scenarios"
+        "text": "Whether the add power must be lowered so the near zone fits the shallow frame"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A shallow frame may require a compatible short-corridor design, but the manufacturer's minimum fitting height must still be met.",
     "distractorExplanations": {
-      "b": "Frame PD and near PD are different measurements; equality between them does not determine available progressive corridor depth.",
-      "c": "DBL and B describe different frame dimensions, and their relative sizes do not establish progressive corridor suitability.",
-      "d": "Progressive layout follows the fitting cross and design markings, not placement of an optical center at the eyewire."
+      "b": "Effective diameter governs blank size for decentration; it does not address vertical room below the fitting cross for the corridor.",
+      "c": "Near inset is a horizontal design feature tied to PD; the shallow-frame issue is vertical space between cross and lower eyewire.",
+      "d": "The add is prescribed and cannot be cut to suit a frame; the fix is a compatible short-corridor design or a deeper frame."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2152,7 +2152,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A cylinder axis shift caused by the oversized frame PD under common office practice"
+        "text": "Unwanted vertical prism caused by the wider optical-center separation"
       },
       {
         "id": "b",
@@ -2160,19 +2160,19 @@
       },
       {
         "id": "c",
-        "text": "A higher add power caused by the wider center separation when the numbers are close"
+        "text": "A cylinder axis error caused by the lenses being edged off center"
       },
       {
         "id": "d",
-        "text": "A shorter vertex distance caused by nasal lens decentration on a standard Rx order"
+        "text": "A change in sphere power caused by viewing away from the optical centers"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Looking away from a powered lens's optical center induces prism according to Prentice's rule, so a PD placement error requires prism verification.",
     "distractorExplanations": {
-      "a": "Decentration makes the wearer view away from the optical center but does not rotate the cylinder axis ground into the lens.",
-      "c": "Add power is prescribed and manufactured into a multifocal; horizontal optical-center spacing does not increase it.",
-      "d": "Vertex distance depends on frame and pad position before the face, not on where the lenses were edged horizontally."
+      "a": "Horizontal OC spacing errors produce horizontal prism; vertical prism comes from unequal optical-center heights, not a PD error.",
+      "c": "Decentration moves the optical center but does not rotate the cylinder; axis is set by lens orientation during edging.",
+      "d": "Viewing 2 mm from each OC mainly induces prism by Prentice's rule; the sphere power of the lens is unchanged by decentration."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2185,11 +2185,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Place the segment top at the center of the distance pupil in typical exam scenarios"
+        "text": "Place the segment top at the pupil center, then lower it for active wearers"
       },
       {
         "id": "b",
-        "text": "Place the segment bottom level with the lower eyelid margin for this dispensing case"
+        "text": "Place the segment top 5 mm below the lower lid, then raise it for reading"
       },
       {
         "id": "c",
@@ -2197,15 +2197,15 @@
       },
       {
         "id": "d",
-        "text": "Place the segment top at the upper edge of the frame bridge under common office practice"
+        "text": "Place the segment top level with the frame's datum line for symmetric layout"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The lower-lid level is a common starting point for a flat-top bifocal segment, with final height modified for posture, occupation, and prior wear.",
     "distractorExplanations": {
-      "a": "Pupil-center placement is generally too high for a conventional flat-top bifocal and can intrude on distance vision.",
-      "b": "Using the segment bottom at the lower lid places the useful segment much too low because the top line is the fitting reference.",
-      "d": "Bridge geometry does not provide a reliable vertical reference for the wearer's near line of sight."
+      "a": "Pupil-center height is the progressive fitting-cross reference; a flat-top segment there would block straight-ahead distance vision.",
+      "b": "Starting 5 mm below the lid places the segment too low, forcing the wearer to drop the eyes or tilt the head excessively to read.",
+      "d": "The datum line is a frame-geometry reference; segment height is taken from the wearer's lower lid, not the frame midline."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2218,15 +2218,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Tighten the temple bend so the frame pulls harder on the nose in typical exam scenarios"
+        "text": "Increase the temple bend tension so less of the frame weight rests on the nose pads"
       },
       {
         "id": "b",
-        "text": "Reduce the frame PD by bending the eyewires inward at the bridge for this dispensing case"
+        "text": "Replace the pads with smaller hard pads that sit closer to the bridge"
       },
       {
         "id": "c",
-        "text": "Rotate both lenses in the eyewires to move their centers upward under common office practice"
+        "text": "Widen the pad spread so the frame drops lower and closer to the face"
       },
       {
         "id": "d",
@@ -2236,9 +2236,9 @@
     "correctOptionId": "d",
     "explanation": "Nose-pad arms control pad contact, frame height, and lens-to-eye position; they should be adjusted symmetrically for comfort and clearance.",
     "distractorExplanations": {
-      "a": "Excess temple tension can increase pressure and does not directly create broader, properly aligned nose-pad contact.",
-      "b": "Frame PD is a boxed frame dimension and should not be altered by deforming the bridge to relieve pad pressure.",
-      "c": "Rotating lenses risks axis and layout errors and does not correct pad angle or inadequate eyelash clearance."
+      "a": "Extra temple tension adds pressure behind the ears and does not change pad angle or move the lenses away from the lashes.",
+      "b": "Smaller hard pads concentrate force on less skin and typically let the lenses sit even closer to the eyes.",
+      "c": "Widening the pads drops the frame lower and closer, which worsens lash contact and leaves pad pressure poorly distributed."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2255,23 +2255,23 @@
       },
       {
         "id": "b",
-        "text": "The distance optical-center height in each finished lens under common office practice"
+        "text": "The pantoscopic tilt, which shifts frame weight onto the backs of the ears"
       },
       {
         "id": "c",
-        "text": "The lens material index and front-surface base curve when the numbers are close"
+        "text": "The nose pad spread, which pushes the frame back against both ears"
       },
       {
         "id": "d",
-        "text": "The binocular PD and the frame's effective diameter on a standard Rx order"
+        "text": "The temple length printed on the arm, which should match the head width"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A bend that begins too early or hooks too sharply concentrates force behind the ears; temple contour should follow the head without pinching.",
     "distractorExplanations": {
-      "b": "Optical-center height can affect vision and vertical prism, but it does not create localized pressure behind both ears.",
-      "c": "Index and base curve influence lens optics and cosmetics rather than the physical contour of the temple bend.",
-      "d": "PD and effective diameter guide lens centration and blank size, not the pressure applied by the temple ends."
+      "b": "Tilt changes the lens angle before the eyes; localized soreness behind both ears points to bend placement and earpiece pressure.",
+      "c": "The frame sits level and comfortable at the bridge, so pad spread is not the source of pressure concentrated behind the ears.",
+      "d": "Head width is handled by temple spread; the printed length alone does not reveal a bend that starts too early or hooks too tightly."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2284,7 +2284,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The wrap converts the prescribed cylinder power into added near power when the numbers are close"
+        "text": "The wrap induces prism, but sphere and cylinder remain exactly as ordered"
       },
       {
         "id": "b",
@@ -2292,19 +2292,19 @@
       },
       {
         "id": "c",
-        "text": "The wrap raises the lens material's index as the eyewires curve on a standard Rx order in typical exam scenarios"
+        "text": "The wrap mainly increases vertex distance, which matters most for high-powered plus lenses"
       },
       {
         "id": "d",
-        "text": "The wrap eliminates the need to measure monocular pupillary distances in typical exam scenarios"
+        "text": "The wrap requires a lower fitting height because the lenses tilt downward"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Substantial face-form wrap changes the lens orientation to the visual axes and can create effective sphere, cylinder, and prism effects.",
     "distractorExplanations": {
-      "a": "Wrap does not transform cylinder into an addition; compensation addresses the optical effects of lens tilt.",
-      "c": "Refractive index is fixed by the selected material and is not increased by curving or angling the frame.",
-      "d": "Accurate monocular centration remains important in wrapped frames because each lens must align with its corresponding visual axis."
+      "a": "Face-form tilt changes effective sphere and induces cylinder as well as prism, so leaving sphere and cylinder uncompensated is the error.",
+      "c": "Wrap usually brings the temporal edges closer; its main effect is oblique-tilt power error, not a vertex-distance increase.",
+      "d": "Face-form wrap is a horizontal angle; downward lens tilt is pantoscopic, so wrap alone does not call for a lower fitting height."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2317,11 +2317,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Raise both fitting crosses immediately without checking the original layout under common office practice"
+        "text": "Advise two more weeks of adaptation before checking any of the fitting measurements"
       },
       {
         "id": "b",
-        "text": "Increase face-form wrap until the peripheral blur feels less noticeable when the numbers are close"
+        "text": "Switch to a longer-corridor design immediately to widen both the intermediate and near zones"
       },
       {
         "id": "c",
@@ -2329,15 +2329,15 @@
       },
       {
         "id": "d",
-        "text": "Replace the lenses with a stronger add while keeping all measurements on a standard Rx order"
+        "text": "Remake the lenses with a lower add so the peripheral distortion becomes less noticeable"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Progressive complaints should be investigated systematically because an Rx, layout, centration, height, or frame-position error can mimic adaptation difficulty.",
     "distractorExplanations": {
-      "a": "Changing fitting height before verification can hide the actual cause and may create a new vertical placement error.",
-      "b": "Arbitrarily increasing wrap changes effective optics and may worsen distortion instead of identifying the source.",
-      "d": "A stronger add narrows usable zones and is inappropriate unless the prescription itself has been re-evaluated by the prescriber."
+      "a": "Several days of persistent swim and head turning call for objective checks first; layout or Rx errors will not resolve with wear.",
+      "b": "Changing design before verifying Rx, markings, PDs, and heights may hide the fabrication or fitting error behind the symptoms.",
+      "d": "Add power is prescribed; reducing it to soften distortion changes the Rx without the prescriber and skips verification."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2387,23 +2387,23 @@
       },
       {
         "id": "b",
-        "text": "Compare the horizontal DBL with the frame's effective diameter under common office practice"
+        "text": "Compare the monocular PDs because horizontal decentration is what causes the diplopia"
       },
       {
         "id": "c",
-        "text": "Increase the pantoscopic tilt equally on both sides of the frame when the numbers are close"
+        "text": "Increase the pantoscopic tilt on the lower side until both lenses look level"
       },
       {
         "id": "d",
-        "text": "Measure the temple lengths but leave the frame position unchanged on a standard Rx order"
+        "text": "Order base-up prism in the lower lens to balance the vertical displacement"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Unequal vertical lens position in powered lenses can induce differential vertical prism, so frame alignment and OC heights must be checked promptly.",
     "distractorExplanations": {
-      "b": "DBL and effective diameter are frame and blank-size dimensions; they do not identify unequal vertical viewing points.",
-      "c": "Equal tilt changes do not level a frame that sits lower on one side and may introduce additional optical effects.",
-      "d": "Temple length may contribute to skew, but measuring it without correcting and rechecking frame level does not assess induced prism."
+      "b": "A frame sitting lower on one side creates vertical, not horizontal, prism; comparing monocular PDs does not reveal the cause.",
+      "c": "Pantoscopic tilt rotates the lenses about a horizontal axis and cannot raise one side; the frame must be leveled at temples or pads.",
+      "d": "Adding prism treats a fitting fault as a prescription change; the frame should be leveled and OC heights verified first."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2416,7 +2416,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Select a larger frame so there is room for the child to grow in typical exam scenarios for this dispensing case"
+        "text": "Select a larger frame so the child has room to grow during the next school year"
       },
       {
         "id": "b",
@@ -2424,19 +2424,19 @@
       },
       {
         "id": "c",
-        "text": "Lower both optical centers to match the frame's slipped position for this dispensing case"
+        "text": "Fit a sports strap so the frame stays on, without changing the bridge fit"
       },
       {
         "id": "d",
-        "text": "Add a stronger prescription so vision remains clear above the lenses under common office practice"
+        "text": "Lower both optical centers so the child can see through the lenses where the frame slips"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Children need a stable, correctly sized frame so the prescribed lens areas remain before the eyes during normal movement and activity.",
     "distractorExplanations": {
       "a": "An oversized frame is more likely to slip and can increase lens thickness, weight, and centration problems.",
-      "c": "Moving optical centers to match a poor fit accepts instability instead of keeping the frame in its intended wearing position.",
-      "d": "Prescription power is determined by the prescriber and cannot compensate for a child looking outside the lenses."
+      "c": "A strap may hold the frame on but does not correct the poor bridge and temple fit that lets the lenses slide below the pupils.",
+      "d": "Moving optical centers to match a poor fit accepts instability instead of keeping the frame in its intended wearing position."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2449,11 +2449,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Dispense the pair because lens power is the main acceptance criterion for this dispensing case"
+        "text": "Dispense the pair because neutralized lens power is the main acceptance test"
       },
       {
         "id": "b",
-        "text": "Record the skew and ask the patient to return after adaptation under common office practice"
+        "text": "Dispense the pair and schedule a follow-up adjustment after a week of adaptation"
       },
       {
         "id": "c",
@@ -2461,15 +2461,15 @@
       },
       {
         "id": "d",
-        "text": "Change the pupillary-distance record to match the skewed position when the numbers are close"
+        "text": "Re-edge the lenses so their optical centers line up with the skewed frame position"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Final inspection includes on-face alignment, vertex, tilt, comfort, and lens placement; correct power alone does not make a skewed pair ready.",
     "distractorExplanations": {
       "a": "Correct neutralization does not rule out poor frame position, unequal heights, discomfort, or induced prism during wear.",
-      "b": "Adaptation cannot correct a mechanical skew, and delaying adjustment exposes the wearer to avoidable visual and comfort problems.",
-      "d": "The patient's anatomical PD should remain accurate; records must not be altered to legitimize a faulty frame position."
+      "b": "Adaptation cannot straighten a mechanical skew; releasing the pair first exposes the wearer to discomfort and induced prism.",
+      "d": "Re-edging to fit a skewed frame locks in the misalignment; the frame should be straightened and the lenses rechecked instead."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2548,7 +2548,7 @@
     "options": [
       {
         "id": "a",
-        "text": "It determines the patient's exact monocular near PD from frame shape on a standard Rx order"
+        "text": "It equals the frame's A measurement, so it adds nothing beyond the horizontal boxing width"
       },
       {
         "id": "b",
@@ -2556,19 +2556,19 @@
       },
       {
         "id": "c",
-        "text": "It establishes the finished lens back vertex power after edging in typical exam scenarios"
+        "text": "It sets the decentration per lens as half of frame PD minus the patient PD"
       },
       {
         "id": "d",
-        "text": "It measures the bridge opening at the narrowest point of the frame for this dispensing case"
+        "text": "It is the DBL plus the A measurement, which gives the frame PD for the order"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Effective diameter is twice the longest radius from the geometric center to the lens edge and is used with decentration for blank-size planning.",
     "distractorExplanations": {
-      "a": "Near PD is measured from the wearer and cannot be derived from the outline or effective diameter of a frame.",
-      "c": "Back vertex power is verified with a lensometer; effective diameter is a geometric sizing measurement.",
-      "d": "The bridge opening is DBL, whereas effective diameter describes the lens shape's greatest center-to-edge requirement."
+      "a": "Effective diameter is twice the longest center-to-edge radius; for irregular shapes it often exceeds A, so it is checked separately.",
+      "c": "Decentration comes from frame PD and patient PD; effective diameter is the shape term that decentration is added to for blank size.",
+      "d": "A plus DBL defines frame PD; effective diameter is a separate lens-shape measurement used for minimum blank size."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2581,11 +2581,11 @@
     "options": [
       {
         "id": "a",
-        "text": "4 mm total inward decentration, or 2 mm per lens when the numbers are close"
+        "text": "4 mm total inward decentration, or 2 mm per lens if symmetric"
       },
       {
         "id": "b",
-        "text": "8 mm total outward decentration, or 4 mm per lens on a standard Rx order"
+        "text": "8 mm total outward decentration, or 4 mm per lens if symmetric"
       },
       {
         "id": "c",
@@ -2593,7 +2593,7 @@
       },
       {
         "id": "d",
-        "text": "72 mm total decentration because frame PD equals A plus DBL in typical exam scenarios"
+        "text": "16 mm total inward decentration, or 8 mm per lens if symmetric"
       }
     ],
     "correctOptionId": "c",
@@ -2601,7 +2601,7 @@
     "distractorExplanations": {
       "a": "Two millimeters per lens would account for just 4 mm total and would leave the optical centers too far apart.",
       "b": "Because the frame PD exceeds the patient PD, the optical centers must move inward rather than outward.",
-      "d": "Seventy-two millimeters is the frame PD itself, not the amount by which each optical center must be displaced."
+      "d": "This treats the 8 mm total as a per-lens figure; 72 minus 64 is 8 mm total, so each lens moves 4 mm inward."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2651,23 +2651,23 @@
       },
       {
         "id": "b",
-        "text": "Install smaller hard pads and angle their lower edges into the nose in typical exam scenarios"
+        "text": "Install smaller hard pads angled so their lower edges press into the nose"
       },
       {
         "id": "c",
-        "text": "Spread the temple tips wider so they exert less stabilizing contact for this dispensing case"
+        "text": "Shorten the temples so the earpieces pull the frame back more firmly"
       },
       {
         "id": "d",
-        "text": "Increase vertex distance by moving both lenses farther from the eyes under common office practice"
+        "text": "Increase pantoscopic tilt so more of the frame weight rests on the cheeks"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Soft silicone pads can add grip and distribute load when their size and angle match the nose, though material sensitivity and maintenance still matter.",
     "distractorExplanations": {
       "b": "Smaller pads concentrate pressure, and edge contact can cause soreness rather than stable, comfortable support.",
-      "c": "Reducing temple stabilization may allow more movement and does not improve the nose-pad contact area.",
-      "d": "Moving lenses forward changes wearing position but does not by itself improve pad grip or distribute frame weight."
+      "c": "Temple length is already correct; shortening it creates pressure behind the ears without enlarging the small pad contact area.",
+      "d": "A frame resting on the cheeks is a fitting fault; more tilt does not improve pad grip and may bring the lenses onto the face."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2680,7 +2680,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Tighten the silicone pads against the nose to prevent movement on a standard Rx order in typical exam scenarios"
+        "text": "Tighten the silicone pads against the nose so they no longer rub on the skin during wear"
       },
       {
         "id": "b",
@@ -2688,19 +2688,19 @@
       },
       {
         "id": "c",
-        "text": "Remove the pads and let the metal pad boxes contact the skin in typical exam scenarios for this dispensing case"
+        "text": "Switch to larger silicone pads of the same compound to spread the pressure"
       },
       {
         "id": "d",
-        "text": "Coat the irritated area with lens cleaner before each wear for this dispensing case under common office practice"
+        "text": "Remove the pads and let the bare metal pad arms rest directly on the skin"
       }
     ],
     "correctOptionId": "b",
     "explanation": "When irritation appears material-related, the optician can use an alternative compatible pad material, ensure clean broad contact, and advise medical evaluation if needed.",
     "distractorExplanations": {
       "a": "Increasing pressure can worsen irritation and does not address a possible sensitivity to the pad material.",
-      "c": "Bare metal pad hardware creates concentrated pressure and may introduce an additional material-contact concern.",
-      "d": "Lens cleaner is not a skin treatment and may further irritate tissue; persistent symptoms warrant appropriate medical advice."
+      "c": "Pressure is already appropriate; a larger pad of the same silicone keeps the suspected material against the irritated skin.",
+      "d": "Bare metal pad hardware creates concentrated pressure and may introduce an additional material-contact concern."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2713,11 +2713,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Cylinder axis orientation in each lens with the frame removed on a standard Rx order"
+        "text": "Pantoscopic tilt, since excess tilt makes the frame tip forward on downgaze"
       },
       {
         "id": "b",
-        "text": "The progressive add power at the distance reference circles in typical exam scenarios"
+        "text": "Pad arm height, since the pads are likely sitting too low on the nose bridge"
       },
       {
         "id": "c",
@@ -2725,15 +2725,15 @@
       },
       {
         "id": "d",
-        "text": "Effective diameter of the lenses after they have been edged for this dispensing case"
+        "text": "Frame PD, since a frame PD wider than the patient's PD lets the frame slide"
       }
     ],
     "correctOptionId": "c",
     "explanation": "When bridge support is acceptable, temple splay and bend placement are common mechanical causes of forward slipping and should be adjusted without over-tightening.",
     "distractorExplanations": {
-      "a": "Cylinder axis can affect clarity but does not explain why the entire frame physically slides when the wearer looks down.",
-      "b": "Add power is checked in the near reference area and does not control mechanical retention on the head.",
-      "d": "Effective diameter helps select an uncut blank and has no role in adjusting a completed frame's temple grip."
+      "a": "Tilt changes the lens angle, but the slipping occurs because the temples do not hold the head; bend and spread control retention.",
+      "b": "The pads sit evenly with no pressure marks, so bridge support is adequate; the temples are the likely cause of forward slipping.",
+      "d": "Frame PD affects decentration and lens centration, not how firmly the temples grip the head during downward gaze."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2783,23 +2783,23 @@
       },
       {
         "id": "b",
-        "text": "The frame A measurement against the patient's binocular PD under common office practice"
+        "text": "The monocular PDs, since a too-wide PD pushes the near zone out of the reading corridor"
       },
       {
         "id": "c",
-        "text": "The lens material Abbe value against the ordered bridge size when the numbers are close"
+        "text": "The add power, since a weaker add forces the chin up to reach near focus"
       },
       {
         "id": "d",
-        "text": "The temple length against the effective diameter of the lenses on a standard Rx order"
+        "text": "The base curve, since a flatter curve moves the near zone lower in the lens"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Excessive chin elevation for near can indicate a progressive fitting height or layout problem, so restored markings and measured heights should be compared.",
     "distractorExplanations": {
-      "b": "A and PD determine horizontal decentration; they do not directly locate the progressive near zone vertically.",
-      "c": "Abbe value concerns chromatic dispersion and has no measurement relationship with bridge size or near-zone height.",
-      "d": "Temple length and effective diameter are mechanical and blank-sizing values that do not locate the progressive corridor."
+      "b": "PD errors shift the near zone horizontally and narrow its usable width; needing to lift the chin points to a vertical height error.",
+      "c": "A weak add makes the wearer hold material farther away; chin elevation to find near indicates the near zone sits too low.",
+      "d": "Base curve affects lens form and magnification but does not relocate the progressive near zone vertically on the lens."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2812,7 +2812,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Lower the frame by opening the temples without measuring the result in typical exam scenarios for this dispensing case"
+        "text": "Lower the frame by widening the pad spread and dispense without remeasuring the height"
       },
       {
         "id": "b",
@@ -2820,19 +2820,19 @@
       },
       {
         "id": "c",
-        "text": "Rotate each lens until the segment line reaches the lower lid for this dispensing case under common office practice"
+        "text": "Remake both lenses at once with the segment tops 3 mm lower than originally ordered"
       },
       {
         "id": "d",
-        "text": "Increase the add power so the segment is useful from farther away under common office practice"
+        "text": "Advise the wearer to tilt the head up while walking until the segment line no longer bothers them"
       }
     ],
     "correctOptionId": "b",
     "explanation": "A segment that is too high may intrude on distance gaze, but the optician must first verify order, on-face height, posture, and adjustment.",
     "distractorExplanations": {
       "a": "Arbitrarily lowering the frame can create poor bridge fit, vertex changes, and unstable optical alignment.",
-      "c": "Rotating lenses can alter cylinder axis and does not provide a controlled or acceptable method of changing segment height.",
-      "d": "Changing add power does not relocate the visible segment line and requires authorization from the prescriber."
+      "c": "Ordering a remake before confirming ordered height, posture, and frame position may repeat or create a new height error.",
+      "d": "Coaching an unnatural head posture masks a measurable fitting problem instead of verifying segment height and frame position."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2845,11 +2845,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Advise longer adaptation without checking the finished lenses or frame in typical exam scenarios"
+        "text": "Advise two weeks of adaptation, since new high-powered lenses commonly cause some doubling"
       },
       {
         "id": "b",
-        "text": "Lower both temples equally to create additional pantoscopic tilt for this dispensing case under common office practice"
+        "text": "Add base-up prism to one lens to cancel the doubling without remeasuring the pair"
       },
       {
         "id": "c",
@@ -2857,15 +2857,15 @@
       },
       {
         "id": "d",
-        "text": "Widen the bridge so the horizontal optical centers move farther apart under common office practice"
+        "text": "Refer the patient for a binocular vision exam before checking the finished lenses"
       }
     ],
     "correctOptionId": "c",
     "explanation": "New vertical diplopia can result from differential vertical prism or a fabrication and fitting error; systematic verification comes before adaptation advice.",
     "distractorExplanations": {
       "a": "Adaptation advice is premature when an objective power, prism, height, or alignment error may be present.",
-      "b": "Equal pantoscopic change does not specifically correct differential vertical prism and can alter effective optics.",
-      "d": "Changing horizontal center separation addresses horizontal centration and does not resolve a vertical imbalance complaint."
+      "b": "Adding prism alters the prescription without authority and skips the objective checks that would find the actual imbalance.",
+      "d": "Referral may follow later, but powers, prism, and heights should be checked first because a fabrication or fitting error is common."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2915,23 +2915,23 @@
       },
       {
         "id": "b",
-        "text": "Equal near-zone access because both lenses have the same add power on a standard Rx order"
+        "text": "Distance blur in the right eye because the pupil now sits in the corridor"
       },
       {
         "id": "c",
-        "text": "A material-index difference that produces color fringes in one eye in typical exam scenarios"
+        "text": "Horizontal diplopia because the vertical error induces base-out prism"
       },
       {
         "id": "d",
-        "text": "A wider binocular PD because the right cross is vertically displaced for this dispensing case"
+        "text": "No symptoms, since the left lens compensates for the right fitting error"
       }
     ],
     "correctOptionId": "a",
     "explanation": "A unilateral fitting-height error misaligns one progressive corridor with its eye, producing asymmetric head posture, blur, or binocular discomfort.",
     "distractorExplanations": {
-      "b": "Matching add powers do not compensate for one corridor being vertically misplaced relative to its pupil.",
-      "c": "Vertical cross placement does not change refractive index; material dispersion is unrelated to the fitting-height error.",
-      "d": "Binocular PD is a horizontal anatomical distance and cannot become wider because one cross is too low."
+      "b": "With the cross 3 mm below the pupil, the eye looks through the distance zone; the problem is reaching the lowered right near zone.",
+      "c": "A vertical height error affects vertical zone alignment; it does not create base-out horizontal prism or horizontal doubling.",
+      "d": "Each eye uses its own corridor; a correct left fit cannot compensate for the right corridor sitting 3 mm lower."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -2944,7 +2944,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Change the recorded PD to compensate for the added lens tilt for this dispensing case"
+        "text": "Leave the wrap and order compensated lenses for the new face-form angle"
       },
       {
         "id": "b",
@@ -2952,19 +2952,19 @@
       },
       {
         "id": "c",
-        "text": "Increase both segment heights by the amount of horizontal wrap under common office practice"
+        "text": "Increase pantoscopic tilt by the same angle to offset the extra face-form wrap"
       },
       {
         "id": "d",
-        "text": "Thin the temporal lens edges to remove the induced optical effects when the numbers are close"
+        "text": "Re-edge the lenses with more bevel tilt so they sit flatter in the wrapped frame"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The frame should match the wearing position used for lens design and compensation; unplanned wrap can alter effective power and prism.",
     "distractorExplanations": {
-      "a": "PD is an anatomical centration measurement and should not be changed to conceal an incorrect face-form angle.",
-      "c": "Horizontal wrap and vertical segment height are different parameters, so one cannot be corrected by adding the other.",
-      "d": "Edge thinning changes lens thickness and cosmetics but does not reverse tilt-induced sphere, cylinder, or prism effects."
+      "a": "Remaking lenses for an accidental adjustment is wasteful; the frame should match the wearing position the lenses were made for.",
+      "c": "Pantoscopic tilt is a vertical angle; adding it introduces a second tilt error rather than cancelling horizontal face-form wrap.",
+      "d": "Bevel changes cannot undo face-form tilt; the lenses still sit obliquely to the visual axes until the frame is readjusted."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3105,7 +3105,7 @@
     "id": "abo-optician-readiness-check-instruments-005",
     "examSlug": "abo-optician-readiness-check",
     "topicId": "instruments",
-    "prompt": "While using a millimeter PD ruler, the optician closes the left eye to measure the patient's right eye and then reverses eyes. What problem is this alternating-eye technique intended to reduce?",
+    "prompt": "While using a millimeter PD ruler, the optician closes the right eye to sight the patient's right pupil with the left eye, then reverses eyes for the patient's left pupil. What problem is this alternating-eye technique intended to reduce?",
     "options": [
       {
         "id": "a",
@@ -3113,23 +3113,23 @@
       },
       {
         "id": "b",
-        "text": "Vertex change caused by the ruler touching the frame when the numbers are close"
+        "text": "Accommodation caused by the patient focusing on the examiner's face"
       },
       {
         "id": "c",
-        "text": "Accommodation caused by measuring the frame bridge on a standard Rx order"
+        "text": "Ruler tilt caused by the optician holding the ruler at an angle"
       },
       {
         "id": "d",
-        "text": "Prism induced by viewing through the lens periphery in typical exam scenarios"
+        "text": "Pupil size change caused by the penlight shining into one eye"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Alternating the examiner's viewing eye helps keep the patient's line of sight aligned with the eye being measured, reducing fixation-related parallax in a manual PD.",
     "distractorExplanations": {
-      "b": "A PD ruler does not establish vertex distance, and light contact with the frame does not create the principal error described.",
-      "c": "Bridge measurement does not drive accommodation; fixation distance and target placement influence the near-versus-distance PD.",
-      "d": "The patient is being measured before lens centration is set, so spectacle-lens peripheral prism is not the source of this error."
+      "b": "Accommodation changes focus, not the lateral position of the pupils being sighted; the alternating technique targets sighting parallax.",
+      "c": "Ruler tilt is controlled by resting the ruler level on the nose; alternating eyes addresses the examiner's line of sight.",
+      "d": "Pupil size does not shift the pupil center used for PD, and a ruler PD does not depend on shining light into one eye."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3175,11 +3175,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Determine whether the patient's refraction has changed under common office practice"
+        "text": "Determine whether the patient's refraction has changed since the exam"
       },
       {
         "id": "b",
-        "text": "Identify the refractive index of the lens material when the numbers are close"
+        "text": "Measure the base curve so the lab can match the next pair's lens form"
       },
       {
         "id": "c",
@@ -3187,14 +3187,14 @@
       },
       {
         "id": "d",
-        "text": "Confirm that the frame temples fit behind both ears on a standard Rx order"
+        "text": "Check that the frame fit and temple bends suit the wearer's head"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Neutralization is objective finished-lens verification: measured sphere, cylinder, axis, and prism are compared with the order and applicable tolerances.",
     "distractorExplanations": {
       "a": "A change in refraction requires a new clinical examination; lensometry evaluates the spectacles rather than the patient's eyes.",
-      "b": "A lensometer reads optical power but does not uniquely identify material index, which comes from records or material testing.",
+      "b": "Base curve is measured with a lens clock; neutralization reads back vertex sphere, cylinder, axis, and prism against the order.",
       "d": "Temple fit is evaluated on the patient's face during adjustment and cannot be established through optical neutralization."
     },
     "difficulty": "easy",
@@ -3245,23 +3245,23 @@
       },
       {
         "id": "b",
-        "text": "Heat the hinges until the metal changes color visibly for this dispensing case"
+        "text": "Heat the metal hinges first so the acetate front softens from within"
       },
       {
         "id": "c",
-        "text": "Warm the mounted lenses until the bevel begins to soften under common office practice"
+        "text": "Warm the front with the lenses in place so they reshape with the frame"
       },
       {
         "id": "d",
-        "text": "Hold one spot near the heater until the frame bubbles when the numbers are close"
+        "text": "Hold one spot close to the heater until it is soft enough to bend sharply"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Controlled, even warming makes cellulose acetate pliable enough to adjust with less risk of cracking, whitening, or creating a sharp localized bend.",
     "distractorExplanations": {
-      "b": "Discoloring a metal hinge indicates excessive heat and can damage finishes, solder, or nearby plastic components.",
-      "c": "Spectacle lenses and coatings should be protected from heat; the frame material, not the lens bevel, is softened.",
-      "d": "Bubbling signals overheating and permanent material damage; heat should be distributed and continually monitored."
+      "b": "Hinges are not the target; heating metal hardware risks finish and pin damage, while the acetate itself needs even, direct warming.",
+      "c": "Heat can craze lens coatings and the lens does not reshape with the frame; lenses are protected or removed during heavy warming.",
+      "d": "Concentrated heat on one spot risks bubbling and a sharp kink; warming should be even and the bend made gradually."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3307,11 +3307,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Rotate the frame markings to agree with the work order on a standard Rx order"
+        "text": "Re-mark the lens along the ordered axis and dispense the pair"
       },
       {
         "id": "b",
-        "text": "Ask the wearer whether visual acuity seems acceptable in typical exam scenarios"
+        "text": "Ask the wearer whether vision seems acceptable and then dispense"
       },
       {
         "id": "c",
@@ -3319,13 +3319,13 @@
       },
       {
         "id": "d",
-        "text": "Change the written axis to match the instrument reading for this dispensing case"
+        "text": "Change the written axis on the order to match the lens reading"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The optician should first exclude technique and instrument error by confirming target focus, stable lens positioning, proper axis-wheel reading, and lensometer calibration.",
     "distractorExplanations": {
-      "a": "Moving reference marks conceals the discrepancy but does not change the cylinder axis manufactured into the lens.",
+      "a": "Re-marking conceals the discrepancy but does not change the cylinder axis manufactured into the lens.",
       "b": "Subjective acceptance does not replace objective verification against the prescription and ANSI tolerance.",
       "d": "An optician must verify the ordered prescription, not alter the prescriber's axis to legitimize a manufacturing variance."
     },
@@ -3340,15 +3340,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Accept the dress lenses if their powers meet ANSI Z80.1 on a standard Rx order"
+        "text": "Accept the dress lenses because their powers meet ANSI Z80.1 tolerance"
       },
       {
         "id": "b",
-        "text": "Add side shields to any frame and treat it as compliant in typical exam scenarios"
+        "text": "Add clip-on side shields so the dress frame meets the Z87.1 standard"
       },
       {
         "id": "c",
-        "text": "Use thicker dress lenses without checking frame markings for this dispensing case"
+        "text": "Refit with polycarbonate dress lenses, since that material is impact rated"
       },
       {
         "id": "d",
@@ -3360,7 +3360,7 @@
     "distractorExplanations": {
       "a": "ANSI Z80.1 power accuracy addresses prescription ophthalmic lenses, not occupational impact and coverage certification.",
       "b": "Side shields alone do not establish that the frame, lenses, components, and markings satisfy the required protector rating.",
-      "c": "Lens thickness by itself does not prove compliance; the complete protector must meet the applicable requirements and markings."
+      "c": "Polycarbonate lenses in a dress frame lack the Z87.1-marked frame and complete protector testing required for occupational use."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3377,23 +3377,23 @@
       },
       {
         "id": "b",
-        "text": "State the full prescription loudly so the patient can confirm it when the numbers are close"
+        "text": "Read the full prescription aloud at the counter so the patient can confirm it"
       },
       {
         "id": "c",
-        "text": "Give the record to a companion who knows the patient's name on a standard Rx order"
+        "text": "Hand the work order to a companion who knows the patient's birth date"
       },
       {
         "id": "d",
-        "text": "Leave the open work order on the counter during adjustment in typical exam scenarios"
+        "text": "Ask the patient to sign a HIPAA waiver before discussing any details"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Privacy safeguards apply to spoken and written protected information, so staff should verify the recipient, limit disclosure, and use a suitably discreet setting.",
     "distractorExplanations": {
       "b": "Broadcasting prescription details exposes protected information to bystanders beyond what the transaction requires.",
-      "c": "Knowing a name does not establish authorization; the patient's permission or another valid basis is needed for disclosure.",
-      "d": "An unattended work order can expose identifiers and clinical information to people who have no reason to see it."
+      "c": "Knowing a birth date does not establish authorization; the patient's permission or another valid basis is needed for disclosure.",
+      "d": "HIPAA permits discussing the patient's own care with the patient without a waiver; the safeguard needed here is discretion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3406,7 +3406,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Rinse it briefly with water and return it to display under common office practice"
+        "text": "Rinse it with water and return it to the display between patients"
       },
       {
         "id": "b",
@@ -3414,18 +3414,18 @@
       },
       {
         "id": "c",
-        "text": "Wipe the lenses with a dry cloth to remove fingerprints when the numbers are close"
+        "text": "Wipe it with acetone so residue is removed from the touched areas"
       },
       {
         "id": "d",
-        "text": "Wait until closing time to clean all tried-on frames on a standard Rx order"
+        "text": "Set it aside and clean the tried-on frames together at closing time"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Cleaning and appropriate disinfection between users reduces cross-contamination while a product compatible with the frame and lenses prevents avoidable material damage.",
     "distractorExplanations": {
-      "a": "Water may remove visible debris but does not provide the disinfection step required by the facility's infection-control procedure.",
-      "c": "A dry cloth improves appearance but does not disinfect nose pads, temples, bridge surfaces, or other touched areas.",
+      "a": "Water may remove visible debris but does not provide the disinfection step required by the infection-control procedure.",
+      "c": "Acetone dissolves or crazes many frame plastics and lens coatings; the disinfectant must be compatible with the frame material.",
       "d": "End-of-day processing leaves each subsequent wearer exposed to contamination deposited earlier in the day."
     },
     "difficulty": "easy",
@@ -3472,15 +3472,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Front surface against the stop with the eyewire centered for this dispensing case"
+        "text": "Front surface against the stop with the optical center centered"
       },
       {
         "id": "b",
-        "text": "Back surface tilted until the mires appear most circular under common office practice"
+        "text": "Back surface tilted slightly so the eyewire clears the lens stop"
       },
       {
         "id": "c",
-        "text": "Front surface raised slightly to imitate wearing position when the numbers are close"
+        "text": "Either surface against the stop because high minus readings are equal"
       },
       {
         "id": "d",
@@ -3490,9 +3490,9 @@
     "correctOptionId": "d",
     "explanation": "Spectacle prescriptions are normally verified as back vertex power, so the back surface faces the lens stop and the intended reference point is centered without tilt.",
     "distractorExplanations": {
-      "a": "Placing the front surface against the stop produces a front-vertex relationship and can be significant in stronger powers.",
-      "b": "Tilting a lens can induce apparent sphere, cylinder, and prism changes rather than improve the validity of the reading.",
-      "c": "Lensometry requires stable instrument alignment; simulated pantoscopic position is not used for routine back vertex verification."
+      "a": "Placing the front surface against the stop gives front vertex power, which differs noticeably from back vertex in strong lenses.",
+      "b": "Tilting a lens to clear the eyewire induces apparent sphere, cylinder, and prism changes; the lens must sit flat on the stop.",
+      "c": "Front and back vertex powers differ in high-powered lenses, so surface orientation changes the reading; back vertex is specified."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3509,23 +3509,23 @@
       },
       {
         "id": "b",
-        "text": "Increase the cylinder axis until the target becomes clear on a standard Rx order"
+        "text": "Rotate the axis wheel through 180 degrees until the mires sharpen"
       },
       {
         "id": "c",
-        "text": "Mark a new optical center near the edge of the lens in typical exam scenarios"
+        "text": "Move the lens toward its edge to search for a point that focuses"
       },
       {
         "id": "d",
-        "text": "Assume the lens material has an unusable Abbe value for this dispensing case"
+        "text": "Assume the lens has a cylinder too strong for the instrument range"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An improperly focused eyepiece or out-of-calibration lensometer can make every lens appear unclear, so instrument setup should be checked before judging the job.",
     "distractorExplanations": {
-      "b": "The axis control rotates cylinder orientation but cannot correct a blurred reticle or calibration problem affecting all readings.",
+      "b": "The axis wheel rotates cylinder orientation but cannot correct a blurred reticle or calibration problem affecting all readings.",
       "c": "Relocating the measurement point does not repair an instrument whose reticle or target system is improperly focused.",
-      "d": "Low Abbe value can cause wearer color fringing, but it does not ordinarily prevent lensometer target neutralization."
+      "d": "Ordinary prescription cylinders are within lensometer range; when no setting focuses, eyepiece and calibration are checked first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The cylinder axis points toward the prism apex for this dispensing case"
+        "text": "The cylinder axis agrees with the direction of the prism base"
       },
       {
         "id": "b",
@@ -3546,11 +3546,11 @@
       },
       {
         "id": "c",
-        "text": "The optical center remains at the boxed lens center under common office practice"
+        "text": "The optical center is located at the boxed center of the lens"
       },
       {
         "id": "d",
-        "text": "The front base curve equals the prism magnitude when the numbers are close"
+        "text": "The prism reading is taken at the geometric center of the frame"
       }
     ],
     "correctOptionId": "b",
@@ -3558,7 +3558,7 @@
     "distractorExplanations": {
       "a": "Cylinder axis describes the meridian of cylinder orientation and does not establish the ordered prism base direction.",
       "c": "Prescribed prism commonly displaces the reference point from a zero-prism optical center, so boxed-center coincidence is not required.",
-      "d": "Base curve is surface curvature measured in diopters and has no requirement to numerically match prescribed prism."
+      "d": "Prism is verified at the major reference point set by the wearer's PD and height, not at the frame's geometric center."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3604,15 +3604,15 @@
     "options": [
       {
         "id": "a",
-        "text": "A Geneva lens clock seated on the back lens surface on a standard Rx order"
+        "text": "A Geneva lens clock placed on the back surface of the lens"
       },
       {
         "id": "b",
-        "text": "A pupillometer aligned with the patient's visual axes in typical exam scenarios"
+        "text": "A pupillometer set to the patient's fixation distance"
       },
       {
         "id": "c",
-        "text": "A thickness caliper closed across the lens center for this dispensing case"
+        "text": "A thickness caliper closed across the center of the lens"
       },
       {
         "id": "d",
@@ -3624,7 +3624,7 @@
     "distractorExplanations": {
       "a": "A Geneva lens clock estimates surface curvature and provides no direct cornea-to-lens distance measurement.",
       "b": "A pupillometer records horizontal pupil centration; it is not configured to measure lens-to-eye separation.",
-      "c": "A thickness caliper measures distance between two lens surfaces, not distance from the lens to the cornea."
+      "c": "A thickness caliper measures the distance between two lens surfaces, not the distance from the lens to the cornea."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3641,23 +3641,23 @@
       },
       {
         "id": "b",
-        "text": "The prescribed prism produced by lens decentration for this dispensing case"
+        "text": "The prescribed prism produced by decentration of the lens"
       },
       {
         "id": "c",
-        "text": "The vertex distance produced by frame adjustment under common office practice"
+        "text": "The lens thickness produced by the sag of each meridian"
       },
       {
         "id": "d",
-        "text": "The material index produced by chromatic dispersion when the numbers are close"
+        "text": "The cylinder axis produced by the steeper of the two meridians"
       }
     ],
     "correctOptionId": "a",
     "explanation": "On a toric surface, the two principal meridians have different surface powers; subtracting those lens-clock readings estimates the surface cylinder.",
     "distractorExplanations": {
       "b": "Prism depends on power and displacement from the optical center and is verified with a lensometer, not two surface curves.",
-      "c": "Vertex distance is a physical lens-to-eye spacing measured with a distometer and is unrelated to meridional curvature difference.",
-      "d": "Refractive index is a material property; a conventional lens clock assumes a calibration index rather than measuring it."
+      "c": "Sag relates curvature to chord, but the difference between two clock readings is a power difference, not a thickness.",
+      "d": "The axis is the orientation of a principal meridian; the numerical difference between readings gives cylinder power, not axis."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3670,7 +3670,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The prescriber releases it after the patient orders one pair for this dispensing case"
+        "text": "The prescriber releases it once the patient orders a pair of eyewear from the office"
       },
       {
         "id": "b",
@@ -3678,19 +3678,19 @@
       },
       {
         "id": "c",
-        "text": "The prescriber sends it to a seller but withholds the patient copy under common office practice"
+        "text": "The prescriber releases it after the patient signs a liability waiver form"
       },
       {
         "id": "d",
-        "text": "The prescriber adds a separate release fee before providing it when the numbers are close"
+        "text": "The prescriber may charge a separate release fee before handing it over"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The FTC Eyeglass Rule requires prescribers to give patients their eyeglass prescription after the examination, without conditioning release on buying eyewear.",
     "distractorExplanations": {
-      "a": "Conditioning prescription release on a product purchase interferes with the patient's ability to comparison shop.",
-      "c": "A seller may receive an authorized copy, but that does not replace the required prescription release to the patient.",
-      "d": "A separate release charge is not appropriate; the prescription is part of the completed eye examination obligation."
+      "a": "Conditioning prescription release on an eyewear purchase interferes with the patient's ability to comparison shop.",
+      "c": "The Eyeglass Rule bars conditioning release on a liability waiver; the prescriber may request a signed confirmation of receipt.",
+      "d": "A separate release charge is not allowed; the prescription is part of the completed eye examination obligation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Infer the missing value from the patient's previous glasses for this dispensing case"
+        "text": "Copy the missing value from the patient's previous glasses and proceed"
       },
       {
         "id": "b",
-        "text": "Choose the value that produces the thinnest finished lenses under common office practice"
+        "text": "Ask the patient to confirm the missing value from memory and proceed"
       },
       {
         "id": "c",
@@ -3715,14 +3715,14 @@
       },
       {
         "id": "d",
-        "text": "Ask the laboratory to select a clinically reasonable value when the numbers are close"
+        "text": "Let the laboratory fill in a clinically typical value for the missing field"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The dispenser should resolve illegible, incomplete, or suspicious prescription information with the authorized prescriber rather than guessing or changing clinical directions.",
     "distractorExplanations": {
       "a": "An old pair may reflect a different prescription and cannot supply a missing value in the current order.",
-      "b": "Cosmetic lens thickness is not a valid basis for inventing sphere, cylinder, axis, add, or prism information.",
+      "b": "Patient recall is not an authorized prescription source; altered or incomplete values must be clarified with the prescriber.",
       "d": "The laboratory fabricates the authorized order; it does not prescribe a missing clinical value for the patient."
     },
     "difficulty": "easy",
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Remove the guard to watch the bevel contact more closely for this dispensing case"
+        "text": "Remove the splash guard so the bevel contact on the wheel can be watched more closely"
       },
       {
         "id": "b",
-        "text": "Rely on the spectacle job being edged as personal protection under common office practice"
+        "text": "Rely on the employee's own prescription glasses as the eye protection"
       },
       {
         "id": "c",
-        "text": "Hold the lens by hand near the moving wheel for stability when the numbers are close"
+        "text": "Wear a dust mask and gloves, since the slurry is the main hazard here"
       },
       {
         "id": "d",
@@ -3755,8 +3755,8 @@
     "explanation": "Appropriate personal protective equipment, intact guarding, training, and established machine procedures reduce exposure to chips, splashes, and moving parts.",
     "distractorExplanations": {
       "a": "Removing a guard defeats an engineering control and increases exposure to debris and moving machine components.",
-      "b": "The workpiece is not certified personal protective equipment and cannot protect the operator's eyes or face reliably.",
-      "c": "Placing hands near a moving wheel increases entanglement and abrasion risk; approved holders and operating methods should be used."
+      "b": "Ordinary prescription glasses are not Z87.1-rated protectors and cannot reliably stop flying chips or splashes.",
+      "c": "A mask and gloves address inhalation and skin contact but leave the eyes exposed to flying chips and slurry."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3773,22 +3773,22 @@
       },
       {
         "id": "b",
-        "text": "Smell a small sample to determine which cleaner it contains for this dispensing case"
+        "text": "Smell a small sample to work out which cleaner the bottle contains"
       },
       {
         "id": "c",
-        "text": "Mix it with a labeled cleaner to compare the resulting color under common office practice"
+        "text": "Use it on the edger, since most lab cleaners share similar hazards"
       },
       {
         "id": "d",
-        "text": "Use a small amount while wearing gloves and note the reaction when the numbers are close"
+        "text": "Use a small amount while wearing gloves and watch the edger for any reaction"
       }
     ],
     "correctOptionId": "a",
     "explanation": "An unidentified chemical should not be used. Hazard communication requires proper labeling and access to safety data so handling, storage, PPE, and first aid are known.",
     "distractorExplanations": {
       "b": "Intentional inhalation can expose the worker to harmful vapors and is not an acceptable chemical-identification method.",
-      "c": "Mixing unknown chemicals can release heat, toxic gas, or splashes and also contaminates the labeled product.",
+      "c": "Lab chemicals differ in hazards and compatibility; an unlabeled product cannot be used until identified from its label and SDS.",
       "d": "Gloves do not control unknown inhalation, reactivity, or compatibility hazards, and experimentation is not proper identification."
     },
     "difficulty": "medium",
@@ -3802,7 +3802,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Finish the current edging cycle before leaving the machine for this dispensing case"
+        "text": "Finish the current edging cycle, then go to the eyewash station"
       },
       {
         "id": "b",
@@ -3810,11 +3810,11 @@
       },
       {
         "id": "c",
-        "text": "Neutralize the chemical with a different laboratory solution under common office practice"
+        "text": "Neutralize the chemical with a different laboratory solution before flushing"
       },
       {
         "id": "d",
-        "text": "Cover the eye with a dry pad and wait for symptoms when the numbers are close"
+        "text": "Check the safety data sheet first, then begin flushing the eye"
       }
     ],
     "correctOptionId": "b",
@@ -3822,7 +3822,7 @@
     "distractorExplanations": {
       "a": "Delaying irrigation prolongs chemical contact and can worsen injury; equipment can be secured by another trained employee.",
       "c": "Adding another chemical can create a reaction and additional tissue damage; water flushing is the standard initial response.",
-      "d": "A dry cover traps residue against the eye and delays decontamination, even when pain or redness has not yet developed."
+      "d": "SDS review comes after flushing starts; every second of delay increases chemical contact time with the eye."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3835,11 +3835,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Use a lens clock to compare front curves at the eyewires on a standard Rx order"
+        "text": "Use a lens clock to compare the front curves of the two lenses"
       },
       {
         "id": "b",
-        "text": "Use a pupillometer to compare distance and near pupil sizes in typical exam scenarios"
+        "text": "Use a pupillometer to compare the two pupil heights in the frame"
       },
       {
         "id": "c",
@@ -3847,7 +3847,7 @@
       },
       {
         "id": "d",
-        "text": "Use calipers to compare nasal and temporal edge thickness for this dispensing case"
+        "text": "Use calipers to compare the top and bottom edge thickness of each lens"
       }
     ],
     "correctOptionId": "c",
@@ -3905,23 +3905,23 @@
       },
       {
         "id": "b",
-        "text": "Permitted axis error depends mainly on the lens material index for this dispensing case"
+        "text": "Permitted axis error becomes wider as cylinder power increases"
       },
       {
         "id": "c",
-        "text": "Permitted axis error expands as the frame eye size increases under common office practice"
+        "text": "Permitted axis error is a fixed plus or minus 5 degrees for any cylinder"
       },
       {
         "id": "d",
-        "text": "Permitted axis error is set by the front base curve alone when the numbers are close"
+        "text": "Permitted axis error depends on the sphere power of the prescription"
       }
     ],
     "correctOptionId": "a",
     "explanation": "ANSI Z80.1 axis tolerances are tiered by cylinder power because a small rotational error produces greater optical consequence when cylinder magnitude is higher.",
     "distractorExplanations": {
-      "b": "Material index affects lens form and thickness, but the finished-lens cylinder-axis tolerance is tied to cylinder magnitude.",
-      "c": "Frame dimensions influence decentration and blank size, not the allowable rotational error of the prescribed cylinder.",
-      "d": "Base curve is a design choice and does not by itself determine whether the finished cylinder axis meets tolerance."
+      "b": "The tolerance tightens rather than widens, because a small rotation of a strong cylinder creates a larger residual cylinder error.",
+      "c": "Z80.1 uses tiered tolerances, from about 14 degrees for weak cylinders down to about 2 degrees for strong ones, not one value.",
+      "d": "Axis tolerance is tiered by cylinder magnitude; sphere power does not determine how much rotational error is allowed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
@@ -3934,7 +3934,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Near fixation increases the physical bridge width of the frame on a standard Rx order"
+        "text": "Near fixation dilates the pupils and changes the measured center"
       },
       {
         "id": "b",
@@ -3942,19 +3942,19 @@
       },
       {
         "id": "c",
-        "text": "Near fixation changes the refractive index of the lens material in typical exam scenarios"
+        "text": "Near fixation makes the pupils move outward for reading tasks"
       },
       {
         "id": "d",
-        "text": "Near fixation rotates the prescribed cylinder axes nasally for this dispensing case"
+        "text": "Near fixation raises the eyes, so the fitting height must change"
       }
     ],
     "correctOptionId": "b",
     "explanation": "The eyes converge for a near target, so near monocular PD values are smaller than distance values and should correspond to the intended working distance.",
     "distractorExplanations": {
-      "a": "The bridge is a fixed frame dimension; changing gaze distance alters eye position rather than frame geometry.",
-      "c": "Refractive index is a fixed property of the selected material and does not vary with the patient's fixation.",
-      "d": "Cylinder axes are prescription meridians and do not rotate merely because the patient looks from distance to near."
+      "a": "Near fixation constricts rather than dilates the pupils, and pupil size does not explain the inward shift of the pupil centers.",
+      "c": "The eyes converge, not diverge, for near targets, so near PD is smaller than distance PD.",
+      "d": "Near viewing lowers rather than raises the gaze, and the question concerns horizontal pupil positions for near PD."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."

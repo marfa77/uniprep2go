@@ -883,6 +883,7 @@ describe("llm visibility", () => {
         "series-79-readiness-check",
         "cfp-certification-readiness-check",
         "series-99-readiness-check",
+        "armed-security-officer-readiness-check",
       ]);
       expect(getQuestionBank(config.slug)).toHaveLength(
         expandedWave4.has(config.slug) ? 120 : 60,

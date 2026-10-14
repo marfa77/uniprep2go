@@ -63,7 +63,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "pmp-anki-deck":
     "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
   "parapro-anki-deck":
-    "Planned 60-card ParaPro Anki (reading, writing, math, classroom application). Take the free 60Q / 75 min diagnostic now — official ETS ParaPro is 90Q / 150 min.",
+    "Planned 120-card ParaPro Anki (reading, writing, math, classroom application). Take the free 60Q / 75 min diagnostic now — official ETS ParaPro is 90Q / 150 min.",
   "acsm-cpt-anki-deck":
     "$11 / 120 ACSM-CPT cards + free 60Q / 75-min timed check from the same 120-item bank — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
   "ashrae-certifications-anki-deck":
@@ -135,7 +135,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cdl-general-knowledge-anki-deck":
     "Planned 60-card CDL General Knowledge Anki. Free 60Q / 75 min diagnostic live now — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
   "armed-security-officer-anki-deck":
-    "Planned 60-card armed security Anki. Free 60Q / 75 min written diagnostic live now — state-specific; ≠ unarmed card; range qualification separate.",
+    "Planned 120-card armed security Anki. Free 60Q / 75 min written diagnostic live now — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
     "Planned 60-card veterinary assistant / AVA Anki. Free 60Q / 75 min diagnostic live now — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
@@ -425,7 +425,7 @@ export const positioningOverrides: Partial<
   },
   "parapro-anki-deck": {
     ourEdge: [
-      "Planned 60-card ParaPro Anki for reading, writing, math, classroom application",
+      "Planned 120-card ParaPro Anki for reading, writing, math, classroom application",
       "Free 60Q / 75 min diagnostic live now — official ETS form is 90Q / 150 min",
       "Honest cut-score note: many districts use 460 — verify locally",
       "Independent prep — not ETS exam material",
@@ -705,7 +705,7 @@ export const positioningOverrides: Partial<
   },
   "armed-security-officer-anki-deck": {
     ourEdge: [
-      "Planned 60-card armed security written Anki",
+      "Planned 120-card armed security written Anki",
       "Free 60Q / 75 min timed written diagnostic live now",
       "Honest: licensing is state-specific — no single national form",
       "≠ Unarmed guard card; range/live-fire qualification separate",
@@ -1969,7 +1969,7 @@ PMI eligibility hours, authorized training, or the official Pearson VUE / online
 
   "parapro-anki-deck": `### What is inside
 
-Planned 60-card ParaPro Anki for ETS Assessment 1755 themes: reading skills, writing skills, mathematics, and classroom application. Same topic map as the free timed readiness check.
+Planned 120-card ParaPro Anki for ETS Assessment 1755 themes: reading skills, writing skills, mathematics, and classroom application. Same topic map as the free timed readiness check.
 
 ### Plan with the free ParaPro mock (live now)
 
