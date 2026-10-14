@@ -837,7 +837,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NREMT themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question NREMT EMR readiness check with topic scoring.",
     examBody: "NREMT",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["EMR exam", "NREMT EMR", "emergency medical responder"],
   }),
   nicheReadinessConfig({
@@ -856,7 +856,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NHA themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question ExCPT Pharmacy Technician readiness check with topic scoring.",
     examBody: "NHA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["ExCPT", "NHA pharmacy technician"],
   }),
   nicheReadinessConfig({
@@ -934,7 +934,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to SHRM themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question SHRM-SCP readiness check with topic scoring.",
     examBody: "SHRM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["SHRM-SCP", "SHRM senior certified professional"],
   }),
   nicheReadinessConfig({
@@ -978,7 +978,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       "There is no public national SHIP counselor exam with a published item count or pass score. State programs schedule certification (often via SHIP TA Center OCCT); module quizzes and sit-downs vary by state. This 60-question / 75-minute diagnostic is independent Medicare-counseling prep — not a state SHIP certificate.",
     description: "Free 60-question SHIP Medicare Counseling readiness check with topic scoring.",
     examBody: "State Health Insurance Assistance Programs",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["SHIP counselor", "Medicare counseling exam", "SHIP certification"],
   }),
 ];

@@ -2457,7 +2457,7 @@ DBPR/FREC registration, required coursework, or the official Pearson VUE exam. I
 
   "tx-real-estate-anki-deck": `### What is inside
 
-60 Texas-focused MCQ cards across TRELA/TREC license law, contracts & agency, finance/closing math, and property practice. Same themes as the free timed Texas readiness check.
+120 Texas-focused MCQ cards across TRELA/TREC license law, contracts & agency, finance/closing math, and property practice. Same themes as the free timed Texas readiness check.
 
 ### Plan with the free TX mock
 

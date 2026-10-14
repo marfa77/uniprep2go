@@ -3,7 +3,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-001",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "ASHRAE TC 9.9 recommended inlet air temperature ranges for most IT equipment are",
+    "prompt": "How does ASHRAE TC 9.9 guidance define acceptable inlet air conditions for IT equipment?",
     "options": [
       {
         "id": "a",
@@ -69,7 +69,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-003",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Chilled water supply temperature elevation (within ASHRAE limits) can",
+    "prompt": "What can raising the chilled water supply temperature (within ASHRAE limits) achieve?",
     "options": [
       {
         "id": "a",
@@ -102,7 +102,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-004",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Hot aisle containment primarily improves",
+    "prompt": "What does hot aisle containment primarily improve?",
     "options": [
       {
         "id": "a",
@@ -135,7 +135,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-005",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Free cooling (economizer) in a chilled water plant uses",
+    "prompt": "What does free cooling (economizer mode) use in a chilled water plant?",
     "options": [
       {
         "id": "a",
@@ -168,7 +168,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-006",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Cooling tower approach temperature is",
+    "prompt": "How is cooling tower approach temperature defined?",
     "options": [
       {
         "id": "a",
@@ -201,31 +201,31 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-007",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Relative humidity too low in a data hall increases risk of:",
+    "prompt": "A site in a cold, dry climate spends heavily on humidifiers to hold the hall at 45% RH. Which change reflects current ASHRAE TC 9.9 guidance on the low-humidity limit?",
     "options": [
       {
         "id": "a",
-        "text": "Condensation on cold pipes only at high RH"
+        "text": "Keep at least 40% RH at all times, as ESD risk climbs sharply below that for any equipment"
       },
       {
         "id": "b",
-        "text": "Unlimited corrosion at 5% RH"
+        "text": "Control humidity on RH measured at the CRAH return, which best represents server inlets"
       },
       {
         "id": "c",
-        "text": "Eliminating need for humidification systems"
+        "text": "Raise the supply air temperature, which raises RH and so lowers the static discharge risk"
       },
       {
         "id": "d",
-        "text": "Electrostatic discharge damaging components"
+        "text": "Use a dew-point lower limit (about -9 °C DP), with grounding and ESD flooring for static"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Low relative humidity (RH) in a data hall increases the risk of electrostatic discharge (ESD) because dry air is a poor conductor, allowing static charges to build up on surfaces and equipment. This can lead to damaging discharges when contact is made with sensitive electronic components.",
+    "explanation": "Since its 2015 thermal guidelines, ASHRAE TC 9.9 expresses the recommended lower moisture limit as a dew point of about -9 °C rather than a minimum RH. Research on ESD showed that with grounded equipment, dissipative flooring and wrist straps, low humidity is acceptable, so dry-climate sites can cut humidifier energy substantially.",
     "distractorExplanations": {
-      "a": "Condensation is primarily associated with high relative humidity and cold surfaces, where the air's moisture content exceeds its capacity to remain a vapor. Low RH actually reduces the risk of condensation.",
-      "b": "Very low relative humidity (e.g., 5% RH) significantly reduces the risk of condensation and corrosion, as there is insufficient moisture in the air to facilitate these processes. However, this condition dramatically increases the risk of electrostatic discharge.",
-      "c": "Low relative humidity often necessitates the use of humidification systems to maintain the recommended environmental conditions within a data hall. Ignoring this need can lead to increased ESD events and potential equipment damage."
+      "a": "The 40-55% RH band is a legacy rule; ASHRAE research showed ESD risk at low humidity is manageable with proper grounding and ESD practice.",
+      "b": "ASHRAE limits apply at the IT inlet, and return-air RH is skewed by the higher return temperature.",
+      "c": "Warming air at the same moisture content lowers its relative humidity, so higher supply temperature makes the air drier, not more humid."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -234,7 +234,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-008",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Relative humidity too high in a data hall increases risk of:",
+    "prompt": "A data hall's humidity control fails and RH climbs well above the recommended band. What risk increases?",
     "options": [
       {
         "id": "a",
@@ -267,7 +267,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-009",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "In-row cooling places units",
+    "prompt": "Where are in-row cooling units placed?",
     "options": [
       {
         "id": "a",
@@ -300,7 +300,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-010",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Rear-door heat exchangers remove heat by:",
+    "prompt": "How does a rear-door heat exchanger remove heat?",
     "options": [
       {
         "id": "a",
@@ -333,7 +333,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-011",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Thermal mass in a data hall (slab, walls) can",
+    "prompt": "What role does thermal mass (slab, walls) play in a data hall?",
     "options": [
       {
         "id": "a",
@@ -366,7 +366,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-012",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Delta-T across chilled water loops should be optimized because",
+    "prompt": "Why should delta-T across a chilled water loop be optimised?",
     "options": [
       {
         "id": "a",
@@ -399,7 +399,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-013",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Adiabatic cooling on air handlers/pre-coolers",
+    "prompt": "How does adiabatic cooling on air handlers or pre-coolers work?",
     "options": [
       {
         "id": "a",
@@ -432,7 +432,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-014",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Water treatment for cooling towers addresses",
+    "prompt": "What does cooling tower water treatment address?",
     "options": [
       {
         "id": "a",
@@ -465,7 +465,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-015",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Legionella risk management in water systems includes:",
+    "prompt": "Which measures form part of Legionella risk management for cooling water systems?",
     "options": [
       {
         "id": "a",
@@ -498,7 +498,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-016",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "CRAC units in a legacy room without containment often suffer",
+    "prompt": "What problems do CRAC units in a legacy room without containment often suffer?",
     "options": [
       {
         "id": "a",
@@ -531,7 +531,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-017",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Supply air temperature setpoint should align with:",
+    "prompt": "What should the supply air temperature setpoint be aligned with?",
     "options": [
       {
         "id": "a",
@@ -564,7 +564,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-018",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Leak detection under raised floors for chilled water pipes helps",
+    "prompt": "What does leak detection under a raised floor carrying chilled water pipes help achieve?",
     "options": [
       {
         "id": "a",
@@ -597,7 +597,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-019",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Immersion cooling tanks require",
+    "prompt": "What does deploying immersion cooling tanks require?",
     "options": [
       {
         "id": "a",
@@ -630,7 +630,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-020",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Waterside economizer mode is most effective when",
+    "prompt": "When is waterside economizer mode most effective?",
     "options": [
       {
         "id": "a",
@@ -663,7 +663,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-021",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Hot spot mitigation at a single rack often starts with:",
+    "prompt": "A single rack shows a hot spot. Where does mitigation usually start?",
     "options": [
       {
         "id": "a",
@@ -696,31 +696,31 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-022",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Chiller plant N+1 redundancy means:",
+    "prompt": "A chiller plant needs three chillers to meet the design load and has four installed (N+1). While one chiller is out for planned maintenance, what is the plant's redundancy position?",
     "options": [
       {
         "id": "a",
-        "text": "No chillers installed"
+        "text": "It stays N+1, because the remaining chillers share the load equally"
       },
       {
         "id": "b",
-        "text": "Chillers shared with office only without capacity review"
+        "text": "It becomes 2N, because the standby chiller is now running at full duty"
       },
       {
         "id": "c",
-        "text": "Unlimited oversubscription without monitoring"
+        "text": "It becomes N-1, so the IT load must be reduced for the duration"
       },
       {
         "id": "d",
-        "text": "One spare chiller capacity beyond required N"
+        "text": "It runs at N with no spare, so another failure would cut capacity"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Chiller plant N+1 redundancy signifies that there is one additional chiller capacity beyond the minimum required to meet the full load (N), ensuring that the data center can maintain cooling even if one chiller fails or is taken offline for maintenance. This design provides a critical level of fault tolerance and operational flexibility.",
+    "explanation": "With N = 3 and four installed, taking one chiller out for maintenance leaves exactly N. The plant still meets the design load but has no redundancy, so a second chiller failure during the work would drop capacity below demand. This is why maintenance windows on N+1 plants are kept short and risk-assessed.",
     "distractorExplanations": {
-      "a": "The idea that N+1 redundancy means no chillers are installed is a fundamental misunderstanding of cooling system design; N+1 specifically refers to having a surplus of operational chillers. Chiller plants are essential for providing chilled water in many data center cooling architectures.",
-      "b": "The misconception that N+1 redundancy implies chillers are shared with an office without capacity review ignores the critical need for dedicated and appropriately sized cooling capacity for data center operations. Data center cooling requirements are distinct and often more stringent than office cooling.",
-      "c": "Unlimited oversubscription without monitoring is a dangerous misconception regarding N+1 redundancy; while N+1 provides a buffer, it does not permit unchecked oversubscription. Proper monitoring and capacity planning are always necessary to prevent overloading the system and ensure reliable cooling."
+      "a": "Equal load sharing does not create a spare; with one of four out, all three remaining chillers are needed for the design load.",
+      "b": "2N means two complete full-capacity systems; bringing a standby unit online in an N+1 plant does not double capacity.",
+      "c": "Three chillers still meet the design load, so the plant is at N, not N-1, and no IT load reduction is needed."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -729,7 +729,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-023",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Airflow CFM requirements per kW of IT load depend on",
+    "prompt": "What determines the airflow (CFM) needed per kW of IT load?",
     "options": [
       {
         "id": "a",
@@ -762,7 +762,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-024",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Perimeter CRAC/CRAH placement can cause",
+    "prompt": "What problem can perimeter-only CRAC/CRAH placement cause?",
     "options": [
       {
         "id": "a",
@@ -795,7 +795,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-025",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Thermal imaging of rack fronts reveals",
+    "prompt": "What does thermal imaging of rack fronts reveal?",
     "options": [
       {
         "id": "a",
@@ -828,7 +828,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-026",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Makeup water for cooling towers compensates for:",
+    "prompt": "What losses does cooling tower makeup water replace?",
     "options": [
       {
         "id": "a",
@@ -861,7 +861,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-027",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Glycol in outdoor chilled water loops prevents",
+    "prompt": "What does glycol in outdoor chilled water loops prevent?",
     "options": [
       {
         "id": "a",
@@ -894,7 +894,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-028",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Cold aisle containment risks if poorly designed include",
+    "prompt": "What risks arise from a poorly designed cold aisle containment system?",
     "options": [
       {
         "id": "a",
@@ -927,7 +927,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-029",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Indirect evaporative cooling separates",
+    "prompt": "What does indirect evaporative cooling keep separate?",
     "options": [
       {
         "id": "a",
@@ -960,7 +960,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-030",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Sensible heat ratio in data halls is typically",
+    "prompt": "What is the typical sensible heat ratio of a data hall cooling load?",
     "options": [
       {
         "id": "a",
@@ -993,7 +993,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-031",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Chilled water pipe insulation primary purpose is",
+    "prompt": "What is the primary purpose of chilled water pipe insulation?",
     "options": [
       {
         "id": "a",
@@ -1026,7 +1026,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-032",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Fan wall (fan array) designs offer",
+    "prompt": "What do fan wall (fan array) designs offer?",
     "options": [
       {
         "id": "a",
@@ -1059,7 +1059,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-033",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Return air grilles at high level in hot aisle designs support",
+    "prompt": "What do high-level return air grilles in hot aisle designs support?",
     "options": [
       {
         "id": "a",
@@ -1092,7 +1092,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-034",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Water usage effectiveness (WUE) measures",
+    "prompt": "What does Water Usage Effectiveness (WUE) measure?",
     "options": [
       {
         "id": "a",
@@ -1125,7 +1125,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-035",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "CRAH fan speed modulation via VFD saves energy by:",
+    "prompt": "How does VFD control of CRAH fan speed save energy?",
     "options": [
       {
         "id": "a",
@@ -1158,7 +1158,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-036",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Thermal ride-through during chiller restart relies on",
+    "prompt": "During a chiller restart, what does thermal ride-through rely on?",
     "options": [
       {
         "id": "a",
@@ -1224,7 +1224,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-038",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Underfloor blockages from cables reduce",
+    "prompt": "What do underfloor blockages from cables reduce?",
     "options": [
       {
         "id": "a",
@@ -1257,7 +1257,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-039",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Supply plenum pressure too high with containment can",
+    "prompt": "With containment in place, what can excessive supply plenum pressure cause?",
     "options": [
       {
         "id": "a",
@@ -1290,7 +1290,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-040",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Cooling redundancy for Tier III typically requires:",
+    "prompt": "What cooling redundancy does an Uptime Institute Tier III design typically require?",
     "options": [
       {
         "id": "a",
@@ -1323,7 +1323,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-041",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Liquid cooling direct-to-chip systems still need",
+    "prompt": "What do direct-to-chip liquid cooling systems still need?",
     "options": [
       {
         "id": "a",
@@ -1356,7 +1356,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-042",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Night or winter free cooling strategies schedule",
+    "prompt": "What do night or winter free cooling strategies schedule?",
     "options": [
       {
         "id": "a",
@@ -1389,7 +1389,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-043",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Air filter MERV ratings in CRAH units affect",
+    "prompt": "What do MERV filter ratings in CRAH units affect?",
     "options": [
       {
         "id": "a",
@@ -1422,7 +1422,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-044",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Hot aisle / cold aisle with missing blanking panels typically shows",
+    "prompt": "In a hot aisle/cold aisle layout with missing blanking panels, what is typically observed?",
     "options": [
       {
         "id": "a",
@@ -1455,7 +1455,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-045",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Chilled water storage tanks can provide",
+    "prompt": "What can chilled water storage tanks provide?",
     "options": [
       {
         "id": "a",
@@ -1488,7 +1488,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-046",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Environmental monitoring system (EMS) alarms on dew point help",
+    "prompt": "What do dew point alarms in an environmental monitoring system help the operator do?",
     "options": [
       {
         "id": "a",
@@ -1521,7 +1521,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-047",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Retrofit of containment on running site requires:",
+    "prompt": "How should containment be retrofitted in a live data hall?",
     "options": [
       {
         "id": "a",
@@ -1554,7 +1554,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-048",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Cooling capacity is commonly specified in:",
+    "prompt": "In what units is cooling capacity commonly specified?",
     "options": [
       {
         "id": "a",
@@ -1587,7 +1587,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-049",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Excess dehumidification in CRACs during low load can",
+    "prompt": "What can excess dehumidification by CRAC units at low load cause?",
     "options": [
       {
         "id": "a",
@@ -1620,7 +1620,7 @@
     "id": "cdcp-readiness-check-cooling-water-thermal-050",
     "examSlug": "cdcp-readiness-check",
     "topicId": "cooling-water-thermal",
-    "prompt": "Facility water storage for fire suppression or cooling must",
+    "prompt": "What must facility water storage for fire suppression and cooling satisfy?",
     "options": [
       {
         "id": "a",
@@ -1653,7 +1653,7 @@
     "id": "cdcp-readiness-check-fire-security-network-001",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "NFPA 75 primarily addresses fire protection for:",
+    "prompt": "During a design review the fire engineer cites NFPA 75. What does that standard primarily address?",
     "options": [
       {
         "id": "a",
@@ -1686,7 +1686,7 @@
     "id": "cdcp-readiness-check-fire-security-network-002",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "NFPA 76 focuses on",
+    "prompt": "A carrier hotel operator is asked to show compliance with NFPA 76. Which facilities does that standard cover?",
     "options": [
       {
         "id": "a",
@@ -1719,7 +1719,7 @@
     "id": "cdcp-readiness-check-fire-security-network-003",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Clean agent fire suppression (e.g., FM-200, Novec 1230) is chosen because",
+    "prompt": "Why do operators specify a clean agent such as FM-200 or Novec 1230 for a data hall instead of another extinguishing medium?",
     "options": [
       {
         "id": "a",
@@ -1739,7 +1739,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clean agent fire suppression systems are chosen for data centers and other sensitive environments because they extinguish fires by chemical reaction or oxygen displacement without leaving corrosive or conductive residues. This characteristic is crucial for protecting energized electronic equipment and minimizing downtime after a fire event. That makes it suitable for energized equipment.",
+    "explanation": "Clean agents such as FM-200 (HFC-227ea) and Novec 1230 (FK-5-1-12) put out fire mainly by absorbing heat, at design concentrations that are safe for briefly occupied rooms. They are electrically non-conductive and evaporate without residue, so energised IT equipment is not damaged and the hall can return to service quickly.",
     "distractorExplanations": {
       "b": "FM-200 and Novec 1230 extinguish mainly by heat absorption at concentrations safe for occupied spaces; they do not remove oxygen.",
       "c": "That describes water mist; clean agents are gaseous and leave no water residue.",
@@ -1752,7 +1752,7 @@
     "id": "cdcp-readiness-check-fire-security-network-004",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Pre-action sprinkler systems in data halls typically",
+    "prompt": "A data hall is protected by a pre-action sprinkler system. Which operating feature makes this system type suitable for IT spaces?",
     "options": [
       {
         "id": "a",
@@ -1772,7 +1772,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pre-action sprinkler systems are commonly used in data halls because they require a two-step activation process: a fire detection event (e.g., smoke detector) and then a sprinkler head activation (due to heat). This dual confirmation significantly reduces the risk of accidental water discharge, which is critical for protecting sensitive IT equipment.",
+    "explanation": "In a pre-action system the pipes stay dry (often supervised with air) until the detection system confirms a fire and opens the pre-action valve; water then reaches only the closed heads, and each head still has to fuse from heat. Double-interlock designs need both detection and head operation. This guards IT space against a knocked head or a single false alarm flooding the room.",
     "distractorExplanations": {
       "b": "That describes a wet-pipe system; pre-action pipes stay dry until detection opens the valve.",
       "c": "That is a deluge system with open heads; pre-action uses closed heads that must each fuse after the pipes fill.",
@@ -1785,7 +1785,7 @@
     "id": "cdcp-readiness-check-fire-security-network-005",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "VESDA (very early smoke detection apparatus) samples air to:",
+    "prompt": "A site installs VESDA sampling pipes above its rack rows. What is that system designed to do?",
     "options": [
       {
         "id": "a",
@@ -1818,7 +1818,7 @@
     "id": "cdcp-readiness-check-fire-security-network-006",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Fire compartmentation in a data centre aims to:",
+    "prompt": "Why does a data centre design divide the building into fire compartments?",
     "options": [
       {
         "id": "a",
@@ -1851,7 +1851,7 @@
     "id": "cdcp-readiness-check-fire-security-network-007",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Gaseous suppression discharge may require",
+    "prompt": "A clean agent system is being commissioned for a sealed data hall. Which supporting controls are typically tied to the discharge sequence?",
     "options": [
       {
         "id": "a",
@@ -1884,7 +1884,7 @@
     "id": "cdcp-readiness-check-fire-security-network-008",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Physical security mantrap (airlock) controls",
+    "prompt": "A data hall entrance is fitted with a mantrap (airlock). What does the mantrap control?",
     "options": [
       {
         "id": "a",
@@ -1917,7 +1917,7 @@
     "id": "cdcp-readiness-check-fire-security-network-009",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Biometric access control adds",
+    "prompt": "A site replaces shared PIN keypads at the data hall with fingerprint readers. What security benefit does biometric access control add?",
     "options": [
       {
         "id": "a",
@@ -1950,7 +1950,7 @@
     "id": "cdcp-readiness-check-fire-security-network-010",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "CCTV retention policies should align with:",
+    "prompt": "A colocation operator is setting how long CCTV footage is kept. What should the retention period be based on?",
     "options": [
       {
         "id": "a",
@@ -1983,7 +1983,7 @@
     "id": "cdcp-readiness-check-fire-security-network-011",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Intrusion detection on perimeter fencing may use",
+    "prompt": "A site wants to detect intruders climbing or cutting its perimeter fence. Which sensing technologies are typically used for this?",
     "options": [
       {
         "id": "a",
@@ -2016,7 +2016,7 @@
     "id": "cdcp-readiness-check-fire-security-network-012",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Visitor management in a colocation facility requires:",
+    "prompt": "A colocation customer brings an outside contractor to work in its cage. What does sound visitor management require?",
     "options": [
       {
         "id": "a",
@@ -2049,7 +2049,7 @@
     "id": "cdcp-readiness-check-fire-security-network-013",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Structured cabling TIA-568 recommends",
+    "prompt": "A network designer checks a planned horizontal copper link against TIA-568. What does that standard specify?",
     "options": [
       {
         "id": "a",
@@ -2082,7 +2082,7 @@
     "id": "cdcp-readiness-check-fire-security-network-014",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Single-mode fiber is preferred for:",
+    "prompt": "For which type of link is single-mode fiber normally the preferred choice?",
     "options": [
       {
         "id": "a",
@@ -2115,7 +2115,7 @@
     "id": "cdcp-readiness-check-fire-security-network-015",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Multimode fiber OM4 supports",
+    "prompt": "What does OM4 multimode fiber offer in a data centre cabling design?",
     "options": [
       {
         "id": "a",
@@ -2148,7 +2148,7 @@
     "id": "cdcp-readiness-check-fire-security-network-016",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Meet-me room security typically includes:",
+    "prompt": "How is a meet-me room (MMR) in a colocation facility typically secured?",
     "options": [
       {
         "id": "a",
@@ -2181,7 +2181,7 @@
     "id": "cdcp-readiness-check-fire-security-network-017",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Cable fire stopping at rated walls must use",
+    "prompt": "A contractor runs new cable bundles through a two-hour fire-rated wall. What must be used to seal the penetration?",
     "options": [
       {
         "id": "a",
@@ -2214,7 +2214,7 @@
     "id": "cdcp-readiness-check-fire-security-network-018",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Emergency lighting in egress paths",
+    "prompt": "What role does emergency lighting play along the egress paths of a data centre?",
     "options": [
       {
         "id": "a",
@@ -2247,7 +2247,7 @@
     "id": "cdcp-readiness-check-fire-security-network-019",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Safety shower/eyewash near battery rooms addresses",
+    "prompt": "Why is a safety shower and eyewash station installed next to a vented lead-acid battery room?",
     "options": [
       {
         "id": "a",
@@ -2280,7 +2280,7 @@
     "id": "cdcp-readiness-check-fire-security-network-020",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Hot work permits in a live data centre",
+    "prompt": "A contractor must weld a support bracket inside a live data centre. What does the hot work permit control?",
     "options": [
       {
         "id": "a",
@@ -2313,7 +2313,7 @@
     "id": "cdcp-readiness-check-fire-security-network-021",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Smoke control during fire events may use",
+    "prompt": "During a fire event in a multi-hall building, how is smoke control typically achieved?",
     "options": [
       {
         "id": "a",
@@ -2346,7 +2346,7 @@
     "id": "cdcp-readiness-check-fire-security-network-022",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Access control anti-passback prevents",
+    "prompt": "An access control system is configured with anti-passback. What does that feature prevent?",
     "options": [
       {
         "id": "a",
@@ -2366,7 +2366,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Access control anti-passback is a security feature designed to prevent unauthorized entry or credential sharing by enforcing a strict sequence of entry and exit. It ensures that a badge used to enter a controlled area must also be used to exit before it can be used to enter again, preventing tailgating or credential pass-back. This blocks tailgating and credential pass-back.",
+    "explanation": "Anti-passback enforces an in/out sequence for each badge: once a badge is used to enter an area, it must record an exit before it can enter again. That stops a cardholder from passing the badge back through the door to a second person, and flags tailgaters who entered without a read and then try to badge out.",
     "distractorExplanations": {
       "a": "Expired or terminated credentials are handled by revocation and expiry dates, not anti-passback logic.",
       "b": "Held-open doors are detected by door-prop alarms; anti-passback tracks each badge's entry/exit sequence.",
@@ -2379,7 +2379,7 @@
     "id": "cdcp-readiness-check-fire-security-network-023",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Network redundancy via diverse paths means:",
+    "prompt": "A site claims its network connectivity is redundant through diverse paths. What should that mean physically?",
     "options": [
       {
         "id": "a",
@@ -2412,7 +2412,7 @@
     "id": "cdcp-readiness-check-fire-security-network-024",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Patch panel labeling standards (e.g., TIA-606) improve",
+    "prompt": "What does adopting a cabling administration standard such as TIA-606 for patch panels mainly improve?",
     "options": [
       {
         "id": "a",
@@ -2445,7 +2445,7 @@
     "id": "cdcp-readiness-check-fire-security-network-025",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Water mist systems in some IT-adjacent areas",
+    "prompt": "How do the water mist systems used in some IT-adjacent areas work?",
     "options": [
       {
         "id": "a",
@@ -2478,7 +2478,7 @@
     "id": "cdcp-readiness-check-fire-security-network-026",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Security operations center (SOC) integration pulls",
+    "prompt": "A campus security operations centre (SOC) is being integrated with site systems. What does SOC integration pull together?",
     "options": [
       {
         "id": "a",
@@ -2511,7 +2511,7 @@
     "id": "cdcp-readiness-check-fire-security-network-027",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Fiber optic connectors SC vs LC differ mainly in:",
+    "prompt": "A network team plans to replace SC patch panels with LC panels. What is the main difference between the two connector types?",
     "options": [
       {
         "id": "a",
@@ -2544,7 +2544,7 @@
     "id": "cdcp-readiness-check-fire-security-network-028",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Cabinet-level network segmentation can",
+    "prompt": "What can network segmentation at the cabinet level achieve for a colocation operator?",
     "options": [
       {
         "id": "a",
@@ -2577,7 +2577,7 @@
     "id": "cdcp-readiness-check-fire-security-network-029",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Portable fire extinguishers in data halls should match",
+    "prompt": "Which portable fire extinguishers should be provided inside a data hall?",
     "options": [
       {
         "id": "a",
@@ -2610,7 +2610,7 @@
     "id": "cdcp-readiness-check-fire-security-network-030",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Door prop alarms deter",
+    "prompt": "A door prop alarm is fitted to an access-controlled data hall door. Which risk does it address?",
     "options": [
       {
         "id": "a",
@@ -2643,7 +2643,7 @@
     "id": "cdcp-readiness-check-fire-security-network-031",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Cross-connect documentation in carrier-neutral facilities tracks",
+    "prompt": "In a carrier-neutral facility, what does cross-connect documentation track?",
     "options": [
       {
         "id": "a",
@@ -2676,7 +2676,7 @@
     "id": "cdcp-readiness-check-fire-security-network-032",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Halon replacement agents were driven by:",
+    "prompt": "Why were Halon systems phased out and replaced with alternative extinguishing agents?",
     "options": [
       {
         "id": "a",
@@ -2709,7 +2709,7 @@
     "id": "cdcp-readiness-check-fire-security-network-033",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Security lighting on perimeters should",
+    "prompt": "How should security lighting on a data centre perimeter be designed?",
     "options": [
       {
         "id": "a",
@@ -2742,7 +2742,7 @@
     "id": "cdcp-readiness-check-fire-security-network-034",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Cable pathway separation between power and data reduces",
+    "prompt": "What does running power cables and copper data cables in separate pathways reduce?",
     "options": [
       {
         "id": "a",
@@ -2775,7 +2775,7 @@
     "id": "cdcp-readiness-check-fire-security-network-035",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Incident response for forced entry alarms should",
+    "prompt": "A forced-entry alarm triggers at a perimeter door at 02:00. How should security respond?",
     "options": [
       {
         "id": "a",
@@ -2808,7 +2808,7 @@
     "id": "cdcp-readiness-check-fire-security-network-036",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Fire drill frequency in occupied facilities follows",
+    "prompt": "What determines how often fire drills are held in an occupied data centre?",
     "options": [
       {
         "id": "a",
@@ -2841,7 +2841,7 @@
     "id": "cdcp-readiness-check-fire-security-network-037",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Rack-level PDU network ports security requires:",
+    "prompt": "A batch of rack PDUs with network management cards has just been installed. What does securing their network ports require?",
     "options": [
       {
         "id": "a",
@@ -2874,7 +2874,7 @@
     "id": "cdcp-readiness-check-fire-security-network-038",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Optical time-domain reflectometer (OTDR) testing is used to:",
+    "prompt": "A fiber link between two halls shows unexpectedly high loss. What is an OTDR used for when troubleshooting it?",
     "options": [
       {
         "id": "a",
@@ -2907,7 +2907,7 @@
     "id": "cdcp-readiness-check-fire-security-network-039",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Clean agent room integrity fan test verifies",
+    "prompt": "Before a clean agent system is accepted, a door fan (room integrity) test is performed. What does it verify?",
     "options": [
       {
         "id": "a",
@@ -2940,7 +2940,7 @@
     "id": "cdcp-readiness-check-fire-security-network-040",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Defense in depth for cybersecurity in facilities includes:",
+    "prompt": "What does defense in depth look like for the cybersecurity of facility systems such as the BMS?",
     "options": [
       {
         "id": "a",
@@ -2973,7 +2973,7 @@
     "id": "cdcp-readiness-check-fire-security-network-041",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Smoke detector spacing in data halls follows",
+    "prompt": "How is smoke detector spacing determined in a data hall?",
     "options": [
       {
         "id": "a",
@@ -3006,7 +3006,7 @@
     "id": "cdcp-readiness-check-fire-security-network-042",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Guard force contract SLAs should define",
+    "prompt": "A data centre is tendering its guard force contract. What should the contract SLAs define?",
     "options": [
       {
         "id": "a",
@@ -3039,31 +3039,31 @@
     "id": "cdcp-readiness-check-fire-security-network-043",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Fiber diversity between buildings on a campus uses",
+    "prompt": "A new 40G link over a pre-terminated MPO trunk shows normal light levels on a power meter at each end, yet the transceivers never establish link. Which cause should the technician check first?",
     "options": [
       {
         "id": "a",
-        "text": "Two fiber cables laid side by side in one shared trench"
+        "text": "Excessive bend loss in the trunk where it enters the cable tray"
       },
       {
         "id": "b",
-        "text": "Higher strand-count cables on the existing single route"
+        "text": "OM4 trunk fiber installed where the optics were specified for OM3"
       },
       {
         "id": "c",
-        "text": "Two carriers entering the campus through one shared vault"
+        "text": "Dirty MPO end faces causing high insertion loss at the panel"
       },
       {
         "id": "d",
-        "text": "Geographically separated routes and entrance facilities"
+        "text": "A polarity mismatch so transmit fibers do not land on receive fibers"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "To achieve fiber diversity between buildings on a campus, it is crucial to use geographically separated routes and distinct entrance facilities for fiber optic cables. This strategy protects against a single point of failure, such as construction damage or natural disaster, by ensuring that if one path is compromised, the other remains operational.",
+    "explanation": "Parallel optics need each transmit lane to arrive at the matching receive lane. TIA-568 defines MPO polarity methods (A, B, C); mixing trunks, cassettes or patch cords built to different methods sends light to the wrong fiber position. Light is present and loss is normal, yet the transceivers never see a signal on their receive lanes, so polarity is the first thing to check.",
     "distractorExplanations": {
-      "a": "A shared trench is a single point of failure; diversity needs geographically separate routes.",
-      "b": "More strands on one route add capacity, not diversity; one cut still severs every strand.",
-      "c": "A shared vault or entrance is a common failure point; diversity needs separate entrance facilities."
+      "a": "A tight bend raises attenuation, which the power meter would show; here the light levels are normal at both ends.",
+      "b": "OM4 is backward-compatible with OM3-rated optics and supports equal or longer reach, so it would not stop the link.",
+      "c": "Contaminated end faces add insertion loss that shows up on the power readings; normal levels point away from dirt."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -3072,7 +3072,7 @@
     "id": "cdcp-readiness-check-fire-security-network-044",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Suppression system impairment procedures require",
+    "prompt": "The pre-action system in a data hall is taken out of service for a valve repair. What do suppression impairment procedures require?",
     "options": [
       {
         "id": "a",
@@ -3105,7 +3105,7 @@
     "id": "cdcp-readiness-check-fire-security-network-045",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Network cable bend radius violation causes",
+    "prompt": "A technician pulls a fiber patch cord tightly around a cable tray corner, violating its minimum bend radius. What is the likely result?",
     "options": [
       {
         "id": "a",
@@ -3138,7 +3138,7 @@
     "id": "cdcp-readiness-check-fire-security-network-046",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Security badges should be",
+    "prompt": "How should security badges be handled across the credential lifecycle?",
     "options": [
       {
         "id": "a",
@@ -3171,7 +3171,7 @@
     "id": "cdcp-readiness-check-fire-security-network-047",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Fire stopping inspection during construction verifies",
+    "prompt": "During construction of a new data hall, a firestop inspection is carried out. What does it verify?",
     "options": [
       {
         "id": "a",
@@ -3204,7 +3204,7 @@
     "id": "cdcp-readiness-check-fire-security-network-048",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Carrier demarcation point is where",
+    "prompt": "In telecom handoffs, where is the carrier demarcation point?",
     "options": [
       {
         "id": "a",
@@ -3237,7 +3237,7 @@
     "id": "cdcp-readiness-check-fire-security-network-049",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Integrated security dashboards help operators",
+    "prompt": "How do integrated security dashboards help control room operators?",
     "options": [
       {
         "id": "a",
@@ -3270,7 +3270,7 @@
     "id": "cdcp-readiness-check-fire-security-network-050",
     "examSlug": "cdcp-readiness-check",
     "topicId": "fire-security-network",
-    "prompt": "Annual fire system inspection by qualified vendors ensures",
+    "prompt": "What does the annual inspection of fire systems by a qualified vendor ensure?",
     "options": [
       {
         "id": "a",
@@ -3303,7 +3303,7 @@
     "id": "cdcp-readiness-check-operations-management-001",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Change management in a data centre requires:",
+    "prompt": "An engineer plans to replace a CRAH fan in a live data hall. What must change management require before the work starts?",
     "options": [
       {
         "id": "a",
@@ -3336,7 +3336,7 @@
     "id": "cdcp-readiness-check-operations-management-002",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Incident management priority should consider",
+    "prompt": "Several incidents reach the service desk at the same time. What should determine their priority?",
     "options": [
       {
         "id": "a",
@@ -3369,7 +3369,7 @@
     "id": "cdcp-readiness-check-operations-management-003",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Capacity management tracks",
+    "prompt": "What does data centre capacity management track?",
     "options": [
       {
         "id": "a",
@@ -3402,7 +3402,7 @@
     "id": "cdcp-readiness-check-operations-management-004",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "A runbook for generator failover should include",
+    "prompt": "An operator is writing the runbook for generator failover. What should the runbook include?",
     "options": [
       {
         "id": "a",
@@ -3435,7 +3435,7 @@
     "id": "cdcp-readiness-check-operations-management-005",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Maintenance windows for Tier III facilities aim to:",
+    "prompt": "In a Tier III facility, what is the aim of a planned maintenance window?",
     "options": [
       {
         "id": "a",
@@ -3468,7 +3468,7 @@
     "id": "cdcp-readiness-check-operations-management-006",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "SLA reporting for colocation often includes:",
+    "prompt": "What does a monthly SLA report to colocation customers usually include?",
     "options": [
       {
         "id": "a",
@@ -3501,7 +3501,7 @@
     "id": "cdcp-readiness-check-operations-management-007",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Root cause analysis (RCA) after a major incident should",
+    "prompt": "After a major outage the operator runs a root cause analysis (RCA). What should the RCA produce?",
     "options": [
       {
         "id": "a",
@@ -3534,7 +3534,7 @@
     "id": "cdcp-readiness-check-operations-management-008",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Shift handover logs should capture",
+    "prompt": "What should a shift handover log capture for the incoming team?",
     "options": [
       {
         "id": "a",
@@ -3567,7 +3567,7 @@
     "id": "cdcp-readiness-check-operations-management-009",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Environmental alarm thresholds should be",
+    "prompt": "How should environmental alarm thresholds be configured for a data hall?",
     "options": [
       {
         "id": "a",
@@ -3600,7 +3600,7 @@
     "id": "cdcp-readiness-check-operations-management-010",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "ITIL-style service management in data centres emphasizes",
+    "prompt": "What does ITIL-style service management emphasise when it is applied to a data centre?",
     "options": [
       {
         "id": "a",
@@ -3633,7 +3633,7 @@
     "id": "cdcp-readiness-check-operations-management-011",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Concurrently maintainable UPS maintenance requires:",
+    "prompt": "A Tier III site plans maintenance on one UPS module. What does concurrently maintainable UPS work require?",
     "options": [
       {
         "id": "a",
@@ -3666,7 +3666,7 @@
     "id": "cdcp-readiness-check-operations-management-012",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Spare parts strategy for critical infrastructure includes:",
+    "prompt": "How should a site decide which spare parts to hold for its critical infrastructure?",
     "options": [
       {
         "id": "a",
@@ -3699,7 +3699,7 @@
     "id": "cdcp-readiness-check-operations-management-013",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Vendor escort policy in white space ensures",
+    "prompt": "A UPS vendor arrives to service equipment in the white space. What does the vendor escort policy ensure?",
     "options": [
       {
         "id": "a",
@@ -3732,7 +3732,7 @@
     "id": "cdcp-readiness-check-operations-management-014",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Energy efficiency initiatives beyond PUE include",
+    "prompt": "An operator already reports PUE and wants further energy savings. Which initiatives go beyond PUE reporting?",
     "options": [
       {
         "id": "a",
@@ -3765,7 +3765,7 @@
     "id": "cdcp-readiness-check-operations-management-015",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Decommissioning equipment requires:",
+    "prompt": "A customer's servers are being retired from its cage. What does proper decommissioning require?",
     "options": [
       {
         "id": "a",
@@ -3798,7 +3798,7 @@
     "id": "cdcp-readiness-check-operations-management-016",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "MOP (Method of Procedure) documents differ from SOP by:",
+    "prompt": "How does a MOP (Method of Procedure) differ from an SOP?",
     "options": [
       {
         "id": "a",
@@ -3831,7 +3831,7 @@
     "id": "cdcp-readiness-check-operations-management-017",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Emergency response team roles should include",
+    "prompt": "Which roles should a data centre emergency response team include?",
     "options": [
       {
         "id": "a",
@@ -3864,7 +3864,7 @@
     "id": "cdcp-readiness-check-operations-management-018",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Trending PDU per-phase load helps",
+    "prompt": "Why do operators trend the per-phase load on rack PDUs?",
     "options": [
       {
         "id": "a",
@@ -3897,7 +3897,7 @@
     "id": "cdcp-readiness-check-operations-management-019",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Customer notification for planned maintenance should",
+    "prompt": "A UPS bypass test next month may affect customer loads. How should customer notification for this planned maintenance be handled?",
     "options": [
       {
         "id": "a",
@@ -3930,7 +3930,7 @@
     "id": "cdcp-readiness-check-operations-management-020",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Configuration management database (CMDB) for facilities tracks",
+    "prompt": "What does a facilities configuration management database (CMDB) track?",
     "options": [
       {
         "id": "a",
@@ -3963,7 +3963,7 @@
     "id": "cdcp-readiness-check-operations-management-021",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Post-incident review within 48 hours should",
+    "prompt": "A post-incident review is held within 48 hours of a cooling outage. What should it document?",
     "options": [
       {
         "id": "a",
@@ -3996,7 +3996,7 @@
     "id": "cdcp-readiness-check-operations-management-022",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Training drills for EPO and suppression aborts ensure",
+    "prompt": "Why do data centres run training drills for EPO buttons and suppression abort switches?",
     "options": [
       {
         "id": "a",
@@ -4029,7 +4029,7 @@
     "id": "cdcp-readiness-check-operations-management-023",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Oversubscription of power in colocation means:",
+    "prompt": "In a colocation facility, what does oversubscription of power mean?",
     "options": [
       {
         "id": "a",
@@ -4062,7 +4062,7 @@
     "id": "cdcp-readiness-check-operations-management-024",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Quality assurance for new installs includes:",
+    "prompt": "A new UPS installation is being handed over to operations. What does quality assurance for the install include?",
     "options": [
       {
         "id": "a",
@@ -4095,7 +4095,7 @@
     "id": "cdcp-readiness-check-operations-management-025",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Remote hands services scope typically covers:",
+    "prompt": "What does a colocation remote hands service typically cover?",
     "options": [
       {
         "id": "a",
@@ -4128,7 +4128,7 @@
     "id": "cdcp-readiness-check-operations-management-026",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Key performance indicators for operations may include",
+    "prompt": "Which set of KPIs best measures data centre operations performance?",
     "options": [
       {
         "id": "a",
@@ -4161,7 +4161,7 @@
     "id": "cdcp-readiness-check-operations-management-027",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Battery replacement project planning needs",
+    "prompt": "A site plans to replace its aged UPS battery strings. What does the replacement project plan need?",
     "options": [
       {
         "id": "a",
@@ -4194,7 +4194,7 @@
     "id": "cdcp-readiness-check-operations-management-028",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Freeze/thaw of software-defined changes still requires:",
+    "prompt": "A software-defined change to cooling control logic is proposed during a change freeze. What does it still require?",
     "options": [
       {
         "id": "a",
@@ -4227,7 +4227,7 @@
     "id": "cdcp-readiness-check-operations-management-029",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Asset tagging at receipt should link",
+    "prompt": "When new equipment arrives at the loading dock, what should its asset tag link together?",
     "options": [
       {
         "id": "a",
@@ -4260,7 +4260,7 @@
     "id": "cdcp-readiness-check-operations-management-030",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Problem management differs from incident management by:",
+    "prompt": "How does problem management differ from incident management?",
     "options": [
       {
         "id": "a",
@@ -4293,7 +4293,7 @@
     "id": "cdcp-readiness-check-operations-management-031",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Daily walkthrough inspections look for:",
+    "prompt": "What do daily walkthrough inspections of the facility look for?",
     "options": [
       {
         "id": "a",
@@ -4326,7 +4326,7 @@
     "id": "cdcp-readiness-check-operations-management-032",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Compliance audits for ISO 27001 in a DC context examine",
+    "prompt": "An ISO 27001 auditor visits a data centre. What does the audit examine?",
     "options": [
       {
         "id": "a",
@@ -4359,7 +4359,7 @@
     "id": "cdcp-readiness-check-operations-management-033",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Load testing before accepting a new hall verifies",
+    "prompt": "Before a new data hall is accepted, an integrated load test is run. What does it verify?",
     "options": [
       {
         "id": "a",
@@ -4392,7 +4392,7 @@
     "id": "cdcp-readiness-check-operations-management-034",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Escalation matrix defines:",
+    "prompt": "What does an operations escalation matrix define?",
     "options": [
       {
         "id": "a",
@@ -4425,7 +4425,7 @@
     "id": "cdcp-readiness-check-operations-management-035",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Tool control entering white space prevents",
+    "prompt": "Why do some operators enforce tool control, logging every tool in and out of the white space?",
     "options": [
       {
         "id": "a",
@@ -4458,31 +4458,31 @@
     "id": "cdcp-readiness-check-operations-management-036",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Recertification for CDCP every three years implies",
+    "prompt": "An infrared thermography survey shows one breaker terminal in a PDU running about 25 °C hotter than identical terminals carrying similar load. What is the best next step?",
     "options": [
       {
         "id": "a",
-        "text": "Renewal by paying an annual fee with no further assessment required"
+        "text": "Record the reading and repeat the survey next quarter to confirm the trend"
       },
       {
         "id": "b",
-        "text": "Retaking the full CDCP classroom course every year to stay certified"
+        "text": "Re-torque the terminal straight away while it stays energised to avoid an outage"
       },
       {
         "id": "c",
-        "text": "Ongoing education or higher credentials to maintain professional standing"
+        "text": "Plan an isolated inspection and repair of the connection under an approved MOP"
       },
       {
         "id": "d",
-        "text": "Permanent certification once passed, with optional yearly refresher webinars"
+        "text": "Replace the whole PDU, since one hot terminal shows the unit is at end of life"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Recertification requirements, such as those for CDCP every three years, emphasize the importance of continuous professional development. This ensures that certified individuals stay current with evolving industry standards, technologies, and best practices, either through further education or re-examination.",
+    "explanation": "Infrared thermography is predictive maintenance: a large temperature rise on one connection compared with identical connections under similar load points to high resistance from a loose or corroded joint. Common guidance (e.g. NETA) treats a rise above about 15 °C between similar components as a major deficiency needing prompt repair, done with the load moved to the alternate path, isolation and a MOP.",
     "distractorExplanations": {
-      "a": "CDCP renewal is tied to professional development or higher credentials, not a fee-only annual renewal.",
-      "b": "Wrong interval: the cycle is three years, and renewal can be met through education or higher credentials.",
-      "d": "Contradicts the three-year validity; the credential lapses unless the holder maintains it through education."
+      "a": "A 25 °C rise is a major deficiency; waiting a quarter lets the joint keep heating towards failure or an arc fault.",
+      "b": "Working on energised terminals exposes the technician to shock and arc flash; repairs follow isolation under a MOP.",
+      "d": "One hot connection is a joint defect, not proof the PDU is worn out; inspecting and repairing the joint fixes the cause."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -4491,7 +4491,7 @@
     "id": "cdcp-readiness-check-operations-management-037",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Weather preparedness for hurricanes includes:",
+    "prompt": "A coastal site faces an approaching hurricane. What should its weather preparedness include?",
     "options": [
       {
         "id": "a",
@@ -4524,7 +4524,7 @@
     "id": "cdcp-readiness-check-operations-management-038",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Customer access audit logs support",
+    "prompt": "What are customer access audit logs used for in a colocation facility?",
     "options": [
       {
         "id": "a",
@@ -4557,7 +4557,7 @@
     "id": "cdcp-readiness-check-operations-management-039",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Balanced scorecard for facility ops might track",
+    "prompt": "What might a balanced scorecard for facility operations track?",
     "options": [
       {
         "id": "a",
@@ -4590,7 +4590,7 @@
     "id": "cdcp-readiness-check-operations-management-040",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "On-call rotation burnout mitigation includes:",
+    "prompt": "How can an operations manager reduce burnout in an on-call rotation?",
     "options": [
       {
         "id": "a",
@@ -4623,7 +4623,7 @@
     "id": "cdcp-readiness-check-operations-management-041",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Release management coordinating firmware on PDUs/UPS should",
+    "prompt": "A vendor releases new firmware for the site's UPS modules and rack PDUs. How should release management handle it?",
     "options": [
       {
         "id": "a",
@@ -4656,7 +4656,7 @@
     "id": "cdcp-readiness-check-operations-management-042",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Water leak incident first steps include",
+    "prompt": "A water leak is detected under the raised floor next to a row of racks. What are the first steps?",
     "options": [
       {
         "id": "a",
@@ -4689,7 +4689,7 @@
     "id": "cdcp-readiness-check-operations-management-043",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Documentation version control for MOPs ensures",
+    "prompt": "Why are MOP documents kept under version control?",
     "options": [
       {
         "id": "a",
@@ -4722,7 +4722,7 @@
     "id": "cdcp-readiness-check-operations-management-044",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Mean time to repair (MTTR) improvement focuses on",
+    "prompt": "What does improving mean time to repair (MTTR) focus on?",
     "options": [
       {
         "id": "a",
@@ -4755,7 +4755,7 @@
     "id": "cdcp-readiness-check-operations-management-045",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Sustainability reporting for data centres may include",
+    "prompt": "What might a data centre include in its sustainability reporting?",
     "options": [
       {
         "id": "a",
@@ -4788,7 +4788,7 @@
     "id": "cdcp-readiness-check-operations-management-046",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Alignment with ASHRAE TC 9.9 in operations means:",
+    "prompt": "What does aligning daily operations with ASHRAE TC 9.9 guidance mean in practice?",
     "options": [
       {
         "id": "a",
@@ -4821,7 +4821,7 @@
     "id": "cdcp-readiness-check-operations-management-047",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Handover from construction to operations (COO) includes:",
+    "prompt": "What does the handover from construction to operations include?",
     "options": [
       {
         "id": "a",
@@ -4854,7 +4854,7 @@
     "id": "cdcp-readiness-check-operations-management-048",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Critical alarm flood handling uses",
+    "prompt": "A chiller trip triggers hundreds of alarms within a minute. How should the monitoring system handle the alarm flood?",
     "options": [
       {
         "id": "a",
@@ -4887,7 +4887,7 @@
     "id": "cdcp-readiness-check-operations-management-049",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Business continuity planning for data centres addresses",
+    "prompt": "What does business continuity planning for a data centre address?",
     "options": [
       {
         "id": "a",
@@ -4920,7 +4920,7 @@
     "id": "cdcp-readiness-check-operations-management-050",
     "examSlug": "cdcp-readiness-check",
     "topicId": "operations-management",
-    "prompt": "Final readiness before production go-live confirms",
+    "prompt": "Before a new data centre goes live in production, what does final readiness confirm?",
     "options": [
       {
         "id": "a",
@@ -4953,7 +4953,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-001",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Power Usage Effectiveness (PUE) is calculated as:",
+    "prompt": "How is Power Usage Effectiveness (PUE) calculated for a reporting period?",
     "options": [
       {
         "id": "a",
@@ -4961,11 +4961,11 @@
       },
       {
         "id": "b",
-        "text": "Cooling energy only divided by UPS losses"
+        "text": "Cooling and electrical-loss energy divided by total facility energy"
       },
       {
         "id": "c",
-        "text": "Generator fuel gallons divided by rack count"
+        "text": "IT equipment energy divided by UPS output energy"
       },
       {
         "id": "d",
@@ -4973,11 +4973,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Power Usage Effectiveness (PUE) is a metric that evaluates the energy efficiency of a data center by comparing the total energy consumed by the facility to the energy used by the IT equipment. A lower PUE value, closer to 1.0, indicates higher energy efficiency, meaning less energy is wasted on non-IT loads like cooling and lighting.",
+    "explanation": "PUE = total facility energy ÷ IT equipment energy over the same period (ISO/IEC 30134-2 uses annual energy). A site using 15 GWh in total with 10 GWh reaching IT has PUE 1.5; values closer to 1.0 mean less energy goes to cooling, losses and other overhead.",
     "distractorExplanations": {
-      "a": "This describes the inverse of PUE, sometimes referred to as Data Center infrastructure Efficiency (DCiE). While related, PUE specifically focuses on the total facility energy relative to the IT load, not the other way around.",
-      "b": "PUE considers all energy consumed by the data center facility, including cooling, lighting, and other infrastructure, not just cooling energy or UPS losses in isolation. Focusing only on these components would provide an incomplete and inaccurate measure of overall efficiency.",
-      "c": "PUE is a ratio of energy consumption, not a measure involving fuel volume or rack count. While generators provide power to the facility, their fuel consumption is not a direct component of the PUE calculation, nor is the number of racks."
+      "a": "IT energy divided by total facility energy is DCiE, the inverse of PUE, expressed as a percentage.",
+      "b": "Overhead energy divided by total energy is a share of losses, not PUE, which compares total facility energy with IT energy.",
+      "c": "IT energy over UPS output is close to 1 and only reflects distribution after the UPS; it ignores cooling and other overhead."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -4986,7 +4986,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-002",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "A 2N UPS configuration at the module level means:",
+    "prompt": "A design brief calls for a 2N UPS architecture. Which arrangement meets it?",
     "options": [
       {
         "id": "a",
@@ -5009,7 +5009,7 @@
     "explanation": "A 2N UPS configuration signifies a fully redundant system where there are two independent UPS systems, each capable of supporting the entire critical load on its own. This design ensures that if one UPS system fails, the other can seamlessly take over, providing maximum uptime and fault tolerance.",
     "distractorExplanations": {
       "a": "Extra runtime on one system is still N; 2N needs two independent systems each able to carry the full load.",
-      "b": "This describes an N+1 configuration, where there is one extra module beyond what is strictly required to meet the load. In a 2N setup, each of the two systems is independently capable of handling the full load, offering a higher level of redundancy than two 50% modules without independence.",
+      "b": "Two modules that are each sized to 50% are both needed to carry the load, so this is N with no redundancy at all, not 2N.",
       "c": "Paralleled modules on a shared bus are N+1 parallel redundancy with a single path, not two independent 2N systems."
     },
     "difficulty": "medium",
@@ -5019,7 +5019,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-003",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "An automatic transfer switch (ATS) between utility and generator",
+    "prompt": "What does an automatic transfer switch (ATS) between the utility supply and a standby generator do?",
     "options": [
       {
         "id": "a",
@@ -5052,7 +5052,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-004",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Static transfer switch (STS) at rack or row level is used to:",
+    "prompt": "What is a static transfer switch (STS) at rack or row level used to do?",
     "options": [
       {
         "id": "a",
@@ -5085,7 +5085,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-005",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Harmonic distortion from non-linear IT loads can cause",
+    "prompt": "A hall full of switch-mode server power supplies has high current harmonic distortion. What problems can this cause?",
     "options": [
       {
         "id": "a",
@@ -5118,31 +5118,31 @@
     "id": "cdcp-readiness-check-power-emf-distribution-006",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "N+1 redundancy in a UPS plant means:",
+    "prompt": "A 600 kW critical load is served by 200 kW UPS modules. Which configuration is N+1?",
     "options": [
       {
         "id": "a",
-        "text": "Two complete UPS systems, each able to carry the full facility load alone"
+        "text": "Two complete UPS systems, each able to carry the 600 kW alone"
       },
       {
         "id": "b",
-        "text": "One spare module held in storage for swap-in after a failure"
+        "text": "Three modules online plus a fourth kept in storage for swap-in"
       },
       {
         "id": "c",
-        "text": "One additional module beyond what is required to support the load"
+        "text": "Four modules installed and online, one more than the three needed"
       },
       {
         "id": "d",
-        "text": "Enough modules to carry the load plus a 10% headroom margin"
+        "text": "Three modules, each with a 10% capacity margin built into its rating"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "N+1 redundancy in a UPS plant means that there is one additional module beyond the minimum number required to support the critical load. This configuration provides a level of fault tolerance, as the system can continue to operate at full capacity even if one module fails, ensuring continuous power delivery without interruption.",
+    "explanation": "N is the number of modules needed: 600 kW ÷ 200 kW = 3. N+1 adds one more installed, online module, so four modules share the load and any one can fail or be serviced while the other three still carry 600 kW. Two independent full-load systems would be 2N.",
     "distractorExplanations": {
-      "a": "Two complete full-load systems describe 2N, not N+1 (one module beyond the number required).",
+      "a": "Two complete systems each able to carry the full load describe 2N, not N+1.",
       "b": "A shelf spare is not N+1; the extra module must be installed and online to take over without an outage.",
-      "d": "A percentage headroom margin is not redundancy; N+1 means one whole extra module beyond the requirement."
+      "d": "A percentage margin inside each module is headroom, not redundancy; losing one of three modules would still drop capacity below 600 kW."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -5151,7 +5151,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-007",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Lead-acid VRLA batteries in UPS strings require",
+    "prompt": "Which maintenance regime suits VRLA batteries in UPS strings?",
     "options": [
       {
         "id": "a",
@@ -5184,7 +5184,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-008",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "A PDU (Power Distribution Unit) at the rack typically provides",
+    "prompt": "What does a rack-level power distribution unit (PDU) typically provide?",
     "options": [
       {
         "id": "a",
@@ -5217,7 +5217,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-009",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Intelligent rack PDUs with metering enable",
+    "prompt": "What do metered (intelligent) rack PDUs enable an operator to do?",
     "options": [
       {
         "id": "a",
@@ -5283,7 +5283,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-011",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Closed-transition paralleling of a standby generator with the utility requires:",
+    "prompt": "Before a standby generator is paralleled with the utility in a closed-transition transfer, what must happen?",
     "options": [
       {
         "id": "a",
@@ -5316,31 +5316,31 @@
     "id": "cdcp-readiness-check-power-emf-distribution-012",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Earth grounding and bonding in a data centre aim to:",
+    "prompt": "An electrician finds neutral-to-earth bonds in several downstream distribution boards of a TN-S data centre system. Why is this a problem?",
     "options": [
       {
         "id": "a",
-        "text": "Float all neutrals without reference"
+        "text": "It turns the system into an IT (isolated) earthing system, so a first earth fault goes undetected"
       },
       {
         "id": "b",
-        "text": "Maintain equipotential bonding and safe fault current paths"
+        "text": "Neutral current returns over earth conductors, causing stray current, EMI and nuisance trips"
       },
       {
         "id": "c",
-        "text": "Isolate all racks from any ground reference"
+        "text": "It raises the earth fault loop impedance, so breakers may no longer trip on a fault"
       },
       {
         "id": "d",
-        "text": "Replace surge protective devices"
+        "text": "It is required practice, since each TN-S board needs its own neutral-earth link"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Earth grounding and bonding in a data center are essential to maintain equipotential bonding, ensuring all conductive surfaces are at the same potential, and to provide safe, low-impedance paths for fault currents. This protects personnel and equipment from electrical hazards.",
+    "explanation": "In a TN-S system neutral and protective earth are bonded once, at the source (transformer or generator). Extra neutral-earth bonds downstream create parallel paths, so normal neutral current returns over earth conductors, rack frames and cable screens, causing stray currents, EMI on data cabling and nuisance earth-fault trips.",
     "distractorExplanations": {
-      "a": "This choice describes a dangerous and non-compliant practice. Electrical systems require a defined ground reference for safety and proper operation; floating all neutrals without reference would create an unstable and hazardous condition.",
-      "c": "This choice is incorrect and unsafe. Racks and IT equipment are typically bonded to the grounding system to ensure they are at the same potential as other conductive surfaces, providing a safe path for fault currents and preventing shock hazards.",
-      "d": "This choice misunderstands the role of grounding. Surge Protective Devices (SPDs) are designed to divert transient overvoltages, complementing the grounding system, but they do not replace the fundamental function of earth grounding and bonding for safety and fault current paths."
+      "a": "An IT system has no direct source earth; extra neutral-earth bonds do the opposite and tie neutral to earth in several places.",
+      "c": "Extra bonds lower rather than raise loop impedance; the problem is objectionable neutral current on the earth conductors.",
+      "d": "TN-S keeps neutral and protective earth separate after a single bond at the source; downstream bonds break that rule."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -5349,19 +5349,19 @@
     "id": "cdcp-readiness-check-power-emf-distribution-013",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "EMF (electromagnetic fields) management near sensitive areas may involve",
+    "prompt": "A copper data cabling run and a high-current feeder must share a pathway corridor. Which approach manages the electromagnetic interference risk?",
     "options": [
       {
         "id": "a",
-        "text": "Ignoring cable routing because EMF does not exist"
+        "text": "Bundling the power and data cables together so their fields cancel out"
       },
       {
         "id": "b",
-        "text": "Placing all power cables on top of unshielded fiber without separation"
+        "text": "Using unshielded copper for the data run, as it is less affected by magnetic fields"
       },
       {
         "id": "c",
-        "text": "Increasing harmonic distortion intentionally"
+        "text": "Fitting surge protective devices on the data cables to absorb induced noise"
       },
       {
         "id": "d",
@@ -5369,11 +5369,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "EMF management strategies like separation distances, shielding, and careful routing of high-current cables are crucial to mitigate electromagnetic interference, which can disrupt sensitive electronic equipment. These measures reduce induced noise on signal cabling and ensure data integrity.",
+    "explanation": "EMI from high-current feeders falls off with distance, so the main controls are separation distances (or metallic dividers), shielded or screened cabling, and routing high-current cables away from or at right angles to data runs. Where separation is impossible, fibre avoids the problem entirely.",
     "distractorExplanations": {
-      "a": "This choice reflects a fundamental misunderstanding that electromagnetic fields (EMF) are not real. EMFs are an inherent physical phenomenon around any current-carrying conductor and must be managed to prevent interference.",
-      "b": "Placing power cables on top of unshielded fiber without separation is poor practice because it can induce noise and data corruption in the fiber optic cables, even if they are not directly carrying electrical signals.",
-      "c": "Intentionally increasing harmonic distortion is counterproductive to EMF management. Harmonics exacerbate electromagnetic interference (EMI) environments, leading to increased noise and potential equipment malfunction."
+      "a": "Bundling maximises coupling between the feeder and the data pairs; fields cancel only within a balanced circuit, not between separate cables.",
+      "b": "Unshielded cable is more susceptible to induced noise, not less; shielding and separation reduce coupling.",
+      "c": "SPDs clamp transient overvoltages; they do not remove continuous induced noise from a nearby high-current feeder."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -5382,7 +5382,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-014",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "A busway (busbar) distribution system advantages include",
+    "prompt": "What are the main advantages of overhead busway for row power distribution?",
     "options": [
       {
         "id": "a",
@@ -5415,7 +5415,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-015",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Transformer step-down from medium voltage to low voltage is used to:",
+    "prompt": "What is the purpose of MV/LV step-down transformers in a data centre?",
     "options": [
       {
         "id": "a",
@@ -5481,31 +5481,31 @@
     "id": "cdcp-readiness-check-power-emf-distribution-017",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Dual-corded servers connected to A and B PDUs",
+    "prompt": "A server has two power supplies, one corded to the A PDU and one to the B PDU. What does this arrangement allow?",
     "options": [
       {
         "id": "a",
-        "text": "Should have both cords on one PDU so the load shares one breaker"
+        "text": "Each power supply to be sized at half of the server's total load"
       },
       {
         "id": "b",
-        "text": "Draw double the power, because each power supply carries the full load"
+        "text": "The server to draw double its normal power for peak workloads"
       },
       {
         "id": "c",
-        "text": "Allow maintenance on one power path while the other feeds the load"
+        "text": "Maintenance on one power path while the other feeds the load"
       },
       {
         "id": "d",
-        "text": "Need an STS upstream so that each cord can switch sources"
+        "text": "Removal of the upstream UPS, as the second cord provides ride-through"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Dual-corded servers connected to independent A and B PDUs are a fundamental design for redundancy in data centers. This configuration allows for concurrent maintenance on one power path without interrupting the server's operation, as the other path continues to feed the load, ensuring high availability and failover capability.",
+    "explanation": "With each power supply fed from an independent A or B path and able to carry the full load, either path can be isolated for maintenance, or fail, while the other keeps the server running. That only works if each path is loaded so it can absorb the other's share.",
     "distractorExplanations": {
-      "a": "Both cords on one PDU or breaker recreates a single point of failure and defeats dual-cording.",
-      "b": "Dual PSUs typically share load about 50/50; total draw does not double.",
-      "d": "STSs serve single-corded loads; dual-corded servers get redundancy from separate A and B feeds."
+      "a": "For redundancy each power supply must carry the whole server load alone if the other path is lost.",
+      "b": "Dual supplies typically share load about 50/50; redundancy does not let the server draw double power.",
+      "d": "Both cords still need conditioned, backed-up power; a second cord gives path redundancy, not outage ride-through."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -5514,7 +5514,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-018",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Battery monitoring systems (BMS) for UPS banks typically track",
+    "prompt": "Which parameters does a UPS battery monitoring system typically track?",
     "options": [
       {
         "id": "a",
@@ -5547,7 +5547,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-019",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "A static UPS (double-conversion) continuously",
+    "prompt": "What does a static double-conversion UPS do continuously in normal operation?",
     "options": [
       {
         "id": "a",
@@ -5580,7 +5580,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-020",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Line-interactive UPS topology differs from double-conversion by:",
+    "prompt": "How does a line-interactive UPS differ from a double-conversion UPS in normal operation?",
     "options": [
       {
         "id": "a",
@@ -5646,7 +5646,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-022",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Fuel storage for diesel generators must address",
+    "prompt": "Which requirements must diesel generator fuel storage address?",
     "options": [
       {
         "id": "a",
@@ -5679,7 +5679,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-023",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "K-rated transformers are specified in data centres to:",
+    "prompt": "What are K-rated transformers specified to do in a data centre?",
     "options": [
       {
         "id": "a",
@@ -5712,7 +5712,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-024",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Rotary UPS (DRUPS) combines",
+    "prompt": "What does a diesel rotary UPS (DRUPS) combine?",
     "options": [
       {
         "id": "a",
@@ -5720,7 +5720,7 @@
       },
       {
         "id": "b",
-        "text": "A gas turbine and absorption chiller for combined heat and power generation"
+        "text": "A fuel cell stack with supercapacitors that bridge its start-up"
       },
       {
         "id": "c",
@@ -5735,8 +5735,8 @@
     "explanation": "A Rotary UPS (DRUPS) combines a motor-generator set with kinetic energy storage, typically a flywheel, to provide short-term ride-through power during utility outages and isolate the critical load.",
     "distractorExplanations": {
       "a": "Batteries and a static inverter describe a static UPS, the opposite of a rotary DRUPS.",
-      "b": "Turbine plus absorption chiller describes a CHP/trigeneration plant, not a rotary UPS.",
-      "d": "Generators with an STS lack the kinetic store and motor-generator that give DRUPS ride-through."
+      "b": "Fuel cells with supercapacitors are an alternative backup technology; a DRUPS uses a diesel engine, motor-generator and flywheel.",
+      "d": "Generators with an STS lack the kinetic store and motor-generator that give DRUPS its ride-through."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -5745,7 +5745,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-025",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Power chain single-line diagrams document",
+    "prompt": "What does a power chain single-line diagram document?",
     "options": [
       {
         "id": "a",
@@ -5753,7 +5753,7 @@
       },
       {
         "id": "b",
-        "text": "From utility through transformers, UPS, distribution, to rack PDUs"
+        "text": "The power path from utility through UPS and distribution to rack PDUs"
       },
       {
         "id": "c",
@@ -5778,7 +5778,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-026",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Load bank testing of a generator verifies",
+    "prompt": "What does load bank testing of a standby generator verify?",
     "options": [
       {
         "id": "a",
@@ -5811,7 +5811,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-027",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Concurrent maintenance on 2N power requires:",
+    "prompt": "How is concurrent maintenance carried out on a 2N power system?",
     "options": [
       {
         "id": "a",
@@ -5844,7 +5844,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-028",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Neutral-to-ground voltage rise at high harmonic loads indicates",
+    "prompt": "Measurements show rising neutral-to-ground voltage at PDUs serving heavy harmonic loads. What does this indicate?",
     "options": [
       {
         "id": "a",
@@ -5877,7 +5877,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-029",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Overhead vs underfloor power distribution trade-offs include",
+    "prompt": "Which trade-offs matter when choosing overhead versus underfloor power distribution?",
     "options": [
       {
         "id": "a",
@@ -5889,7 +5889,7 @@
       },
       {
         "id": "c",
-        "text": "Underfloor whips improve airflow by acting as turning vanes for air"
+        "text": "Underfloor whips are safer, because they sit below any water leak risk"
       },
       {
         "id": "d",
@@ -5900,7 +5900,7 @@
     "explanation": "The choice between overhead and underfloor power distribution involves trade-offs concerning maintenance access, the required clearance for cabling, and the potential impact on airflow dynamics, particularly under a raised floor. Each method presents distinct advantages and disadvantages that influence data center design and operation.",
     "distractorExplanations": {
       "a": "Overhead distribution must be coordinated with lighting, sprinklers, containment and maintenance clearance.",
-      "c": "Underfloor cable obstructs plenum airflow; that is a drawback of underfloor power, not a benefit.",
+      "c": "Water collects under the floor after a leak, so underfloor whips are more exposed to it, not less; leak detection is placed there for that reason.",
       "d": "Overhead or underfloor routing does not dictate AC versus DC; codes cover either distribution type."
     },
     "difficulty": "medium",
@@ -5910,7 +5910,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-030",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Surge protective devices (SPDs) at service entrances help",
+    "prompt": "What do surge protective devices (SPDs) at the service entrance do?",
     "options": [
       {
         "id": "a",
@@ -5976,7 +5976,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-032",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Power quality monitoring captures metrics such as:",
+    "prompt": "Which metrics does a power quality monitor capture?",
     "options": [
       {
         "id": "a",
@@ -6009,7 +6009,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-033",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Maintenance bypass on a UPS allows",
+    "prompt": "What does a UPS maintenance bypass allow?",
     "options": [
       {
         "id": "a",
@@ -6042,11 +6042,11 @@
     "id": "cdcp-readiness-check-power-emf-distribution-034",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Cable sizing for feeders considers",
+    "prompt": "An engineer sizes a long low-voltage feeder to a new UPS. Which factors determine the conductor size?",
     "options": [
       {
         "id": "a",
-        "text": "Only shortest physical path regardless of drop"
+        "text": "The upstream breaker rating alone, since the breaker protects the cable"
       },
       {
         "id": "b",
@@ -6054,19 +6054,19 @@
       },
       {
         "id": "c",
-        "text": "Random wire gauge selection"
+        "text": "Route length alone, since voltage drop is the only limit on long runs"
       },
       {
         "id": "d",
-        "text": "Fiber strand count"
+        "text": "Load nameplate current, with no derating for grouping or temperature"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Proper cable sizing for electrical feeders is critical and involves considering the conductor's ampacity (current-carrying capacity without overheating), acceptable voltage drop over its length to ensure stable power delivery, and anticipating future load growth to avoid premature replacement. These factors ensure safety, efficiency, and reliability.",
+    "explanation": "Feeder sizing checks the conductor's derated ampacity (for grouping, ambient temperature and installation method), voltage drop over the route length, and spare capacity for planned growth. The largest size required by any of these checks wins, and the breaker is then coordinated to protect it.",
     "distractorExplanations": {
-      "a": "This option is incorrect because while a shorter physical path is often desirable, it cannot be the sole criterion. Ignoring voltage drop can lead to significant power losses and equipment malfunction, even with a short cable run. All factors must be balanced.",
-      "c": "This option is incorrect because cable gauge selection must be a carefully engineered decision based on electrical calculations, not a random choice. Random selection can lead to undersized cables, overheating, and fire hazards, or oversized cables, which are costly.",
-      "d": "This option is incorrect because fiber strand count pertains to optical fiber communication cables, which transmit data, not electrical power. Electrical feeder cable sizing is concerned with power transmission, not data network capacity."
+      "a": "The breaker must protect the cable, but a cable matched only to the breaker can still fail voltage-drop limits on a long run.",
+      "c": "Voltage drop matters on long runs, but the conductor must also carry the current without overheating after derating.",
+      "d": "Grouping and ambient temperature derating can cut ampacity sharply; ignoring them leaves the cable undersized."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6075,7 +6075,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-035",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "EMI from variable frequency drives (VFDs) on cooling plant can affect",
+    "prompt": "Variable frequency drives on the cooling plant generate electrical noise. What can this EMI affect?",
     "options": [
       {
         "id": "a",
@@ -6108,7 +6108,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-036",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Arc flash hazard analysis in electrical rooms determines",
+    "prompt": "What does an arc flash hazard analysis of electrical rooms determine?",
     "options": [
       {
         "id": "a",
@@ -6141,7 +6141,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-037",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Redundant utility feeds from separate substations provide",
+    "prompt": "What do redundant utility feeds from separate substations provide?",
     "options": [
       {
         "id": "a",
@@ -6174,7 +6174,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-038",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Ground fault detection on UPS output helps",
+    "prompt": "What is the purpose of ground fault detection on a UPS output?",
     "options": [
       {
         "id": "a",
@@ -6207,7 +6207,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-039",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Capacity planning for rack kW should include",
+    "prompt": "Which inputs belong in rack-level kW capacity planning?",
     "options": [
       {
         "id": "a",
@@ -6240,7 +6240,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-040",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Shielded power cable may be used to:",
+    "prompt": "Why might shielded power cable be specified in a data centre?",
     "options": [
       {
         "id": "a",
@@ -6273,7 +6273,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-041",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Black start capability refers to:",
+    "prompt": "What does black start capability mean for a data centre power system?",
     "options": [
       {
         "id": "a",
@@ -6306,7 +6306,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-042",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Coordination of overcurrent protective devices ensures",
+    "prompt": "What does selective coordination of overcurrent protective devices ensure?",
     "options": [
       {
         "id": "a",
@@ -6339,7 +6339,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-043",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Monitoring DC bus voltage in a UPS indicates",
+    "prompt": "What does monitoring a UPS's DC bus voltage indicate?",
     "options": [
       {
         "id": "a",
@@ -6372,7 +6372,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-044",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Power capping in virtualized clusters can",
+    "prompt": "What can power capping do in a virtualised server cluster?",
     "options": [
       {
         "id": "a",
@@ -6405,7 +6405,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-045",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Transient voltage from utility capacitor switching may be mitigated by:",
+    "prompt": "How can transient overvoltages from utility capacitor-bank switching be mitigated?",
     "options": [
       {
         "id": "a",
@@ -6438,7 +6438,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-046",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "A power distribution hierarchy typically flows",
+    "prompt": "Which sequence shows a typical data centre power distribution hierarchy?",
     "options": [
       {
         "id": "a",
@@ -6471,7 +6471,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-047",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "EMF exposure assessments in staff work areas compare measured fields to:",
+    "prompt": "When EMF exposure is assessed in staff work areas, what are the measured fields compared against?",
     "options": [
       {
         "id": "a",
@@ -6504,7 +6504,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-048",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Island mode operation during a grid outage means:",
+    "prompt": "What does island mode operation during a grid outage mean?",
     "options": [
       {
         "id": "a",
@@ -6537,7 +6537,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-049",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Retrofit adding high-density GPU racks to a legacy row most often requires:",
+    "prompt": "High-density GPU racks are being added to a legacy row. What does this retrofit most often require?",
     "options": [
       {
         "id": "a",
@@ -6570,7 +6570,7 @@
     "id": "cdcp-readiness-check-power-emf-distribution-050",
     "examSlug": "cdcp-readiness-check",
     "topicId": "power-emf-distribution",
-    "prompt": "Voltage sag ride-through for IT equipment is primarily provided by:",
+    "prompt": "What primarily provides voltage sag ride-through for IT equipment?",
     "options": [
       {
         "id": "a",
@@ -6603,31 +6603,31 @@
     "id": "cdcp-readiness-check-site-standards-building-001",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "According to TIA-942, a data centre rated Tier III requires:",
+    "prompt": "An Uptime Institute Tier III site takes one of its two power distribution paths out of service for planned breaker maintenance. Which statement BEST describes the facility's resilience during that work?",
     "options": [
       {
         "id": "a",
-        "text": "Concurrently maintainable infrastructure with planned maintenance paths that avoid service disruption"
+        "text": "The load stays up on the other path, but an unplanned fault on it could still cause an outage"
       },
       {
         "id": "b",
-        "text": "Only a single path for power and cooling with no redundancy"
+        "text": "The site stays fault tolerant, because Tier III demands 2N components on every distribution path"
       },
       {
         "id": "c",
-        "text": "99.999% uptime without any scheduled maintenance windows"
+        "text": "The IT load must move to maintenance bypass, because Tier III permits only one active path"
       },
       {
         "id": "d",
-        "text": "Exclusive use of direct-expansion cooling"
+        "text": "The site drops to Tier I for the work and must book an IT shutdown window in advance"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "According to TIA-942, a Tier III data center requires concurrently maintainable infrastructure, meaning that any component can be taken offline for planned maintenance or replacement without disrupting IT operations. This is achieved through redundant capacity components and multiple independent distribution paths.",
+    "explanation": "Tier III is concurrently maintainable: every capacity component and distribution path can be removed for planned work while the other path carries the IT load. It is not fault tolerant, so while one path is out the remaining path is a single point of failure; surviving an unplanned fault at that moment is the Tier IV objective.",
     "distractorExplanations": {
-      "b": "A single path for power and cooling with no redundancy describes a Tier I data center, which lacks the concurrent maintainability and redundancy required for a Tier III facility. This option represents a lower level of infrastructure resilience.",
-      "c": "Tier IV targets fault tolerance; Tier III does not require 99.999% without maintenance.",
-      "d": "While direct-expansion cooling is a valid cooling method, TIA-942 Tier ratings define infrastructure resilience and redundancy, not the specific type of cooling technology employed. Various cooling solutions can be used in a Tier III data center."
+      "b": "Fault tolerance with 2N, compartmentalised paths is the Tier IV objective; Tier III is concurrently maintainable but not fault tolerant.",
+      "c": "Tier III provides at least one alternate path precisely so planned work does not force the load onto bypass or interrupt it.",
+      "d": "Concurrent maintainability means planned work needs no IT shutdown; the rating does not 'drop' during a maintenance window."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6636,7 +6636,7 @@
     "id": "cdcp-readiness-check-site-standards-building-002",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Uptime Institute Tier I is BEST described as:",
+    "prompt": "Which description BEST fits an Uptime Institute Tier I facility?",
     "options": [
       {
         "id": "a",
@@ -6669,7 +6669,7 @@
     "id": "cdcp-readiness-check-site-standards-building-003",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "EN 50600 classifies availability using Availability Classes. Class 3 MOST closely aligns with:",
+    "prompt": "Under EN 50600, which infrastructure description MOST closely matches Availability Class 3?",
     "options": [
       {
         "id": "a",
@@ -6702,31 +6702,31 @@
     "id": "cdcp-readiness-check-site-standards-building-004",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "When selecting a greenfield data centre site, flood risk assessment should prioritize?",
+    "prompt": "A team is shortlisting greenfield sites for a data centre. Which flood-risk check should carry the MOST weight in the assessment?",
     "options": [
       {
         "id": "a",
-        "text": "Proximity to the lowest point in the watershed for cooling water access"
+        "text": "Proximity to a river or reservoir so cooling water can be drawn at low pumping cost"
       },
       {
         "id": "b",
-        "text": "Placement in coastal surge zones if utility power is cheaper"
+        "text": "Depth of the planned raised floor, since a deep floor void can absorb floodwater"
       },
       {
         "id": "c",
-        "text": "100-year floodplain mapping, drainage, and finished floor elevation above design flood level"
+        "text": "Floodplain mapping, site drainage, and finished floor level above the design flood level"
       },
       {
         "id": "d",
-        "text": "Ignoring hydrology because raised floors eliminate flood risk"
+        "text": "Flood records for the last ten years, used as the worst case for the design"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Site selection must account for flood frequency, drainage capacity, and elevating critical floors above design flood levels.",
+    "explanation": "Flood risk is assessed from floodplain (return-period) mapping, the capacity of site drainage, and setting the finished floor of critical spaces above the design flood level. Getting this wrong cannot be fixed later by interior measures, so it outweighs cost factors such as cooling water access.",
     "distractorExplanations": {
-      "a": "Lowest watershed points increase flood exposure. That choice confuses the tested facility rule with “Proximity to the lowest point in the watershed for cooling water acces”, which does not match the correct CDCP concept (“100-year floodplain mapping, drainage, and finished floor elevation ab”).",
-      "b": "Storm surge zones add unacceptable resilience risk. That choice confuses the tested facility rule with “Placement in coastal surge zones if utility power is cheaper”, which does not match the correct CDCP concept (“100-year floodplain mapping, drainage, and finished floor elevation ab”).",
-      "d": "Raised floors do not replace site-level flood mitigation. That choice confuses the tested facility rule with “Ignoring hydrology because raised floors eliminate flood risk”, which does not match the correct CDCP concept (“100-year floodplain mapping, drainage, and finished floor elevation ab”)."
+      "a": "Sites next to rivers or reservoirs usually carry higher flood exposure; cheap cooling water does not outweigh that hazard.",
+      "b": "A floor void fills with water that damages underfloor power and cabling; flood protection has to happen at site and building level.",
+      "d": "Ten years of records is far too short; designs use statistical return periods such as the 1-in-100-year flood plus a climate allowance."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6735,7 +6735,7 @@
     "id": "cdcp-readiness-check-site-standards-building-005",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Seismic design for a mission-critical facility typically requires:",
+    "prompt": "A data centre is being built in a seismic zone. Which measure is a core part of seismic design for the white space?",
     "options": [
       {
         "id": "a",
@@ -6751,15 +6751,15 @@
       },
       {
         "id": "d",
-        "text": "Increasing floor loading without reviewing slab capacity"
+        "text": "Spacing racks further apart so they cannot topple into each other during shaking"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Mission-critical facilities require robust seismic design to prevent equipment damage and service interruption during an earthquake. Anchoring racks, cabinets, and heavy equipment according to structural and vendor guidelines is crucial for ensuring stability and operational continuity.",
     "distractorExplanations": {
-      "a": "Raised-floor pedestals are themselves vulnerable in earthquakes; racks and floors need seismic bracing.",
-      "b": "Free-rolling heavy cabinets become hazards in earthquakes; heavy equipment must be anchored.",
-      "d": "Increasing floor loading without reviewing slab capacity is a critical structural oversight. Any significant increase in equipment weight requires a structural engineer to verify that the building's floor slab can safely support the additional load, preventing structural failure."
+      "a": "Raised-floor pedestals are themselves vulnerable in earthquakes; racks and floors need seismic bracing designed for the zone.",
+      "b": "Free-rolling heavy cabinets become battering rams in an earthquake; heavy equipment must be restrained and anchored.",
+      "d": "Extra spacing does not stop a rack sliding or overturning; anchorage and bracing designed for the seismic load do."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6768,7 +6768,7 @@
     "id": "cdcp-readiness-check-site-standards-building-006",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A raised access floor in a data hall primarily enables",
+    "prompt": "What is the primary function of a raised access floor in a traditional data hall?",
     "options": [
       {
         "id": "a",
@@ -6776,11 +6776,11 @@
       },
       {
         "id": "b",
-        "text": "Elimination of all overhead cable tray requirements in every design"
+        "text": "Higher rack load capacity than placing racks directly on the structural slab"
       },
       {
         "id": "c",
-        "text": "Structural support for the building roof without steel beams"
+        "text": "Grounding of racks through the pedestals, replacing separate bonding conductors"
       },
       {
         "id": "d",
@@ -6790,9 +6790,9 @@
     "correctOptionId": "a",
     "explanation": "A raised access floor in a data hall primarily serves to create a plenum for underfloor air distribution, allowing conditioned air to be delivered efficiently to IT equipment. It also provides a structured pathway for power and data cabling, with adjustable tile heights offering flexibility for different infrastructure needs.",
     "distractorExplanations": {
-      "b": "While raised floors can accommodate significant cabling, they do not eliminate the need for overhead cable trays in every design. Many data centers still utilize overhead pathways for fiber optic cables, power busways, or other infrastructure to maintain separation and accessibility.",
-      "c": "Raised floors are not designed to provide structural support for the building roof. Their primary function is to create a service void for utilities and air distribution, while the building's main structural framing (beams, columns) supports the roof and upper floors.",
-      "d": "Raised floors are not fire barriers; the underfloor void often needs its own detection and suppression."
+      "b": "A raised floor usually carries less concentrated load than the structural slab; heavy racks are often the reason designers choose slab-on-grade.",
+      "c": "Pedestals are bonded into the grounding system, but they do not replace the bonding conductors that racks and trays need.",
+      "d": "Raised floors are not fire barriers; the underfloor void often needs its own detection and sometimes suppression."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6801,7 +6801,7 @@
     "id": "cdcp-readiness-check-site-standards-building-007",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Perforated raised-floor tiles are typically placed",
+    "prompt": "Where are perforated raised-floor tiles normally placed in an air-cooled data hall with underfloor supply?",
     "options": [
       {
         "id": "a",
@@ -6809,7 +6809,7 @@
       },
       {
         "id": "b",
-        "text": "Only in office areas adjacent to the data hall"
+        "text": "Directly in front of the CRAH units, where underfloor airflow is strongest"
       },
       {
         "id": "c",
@@ -6823,9 +6823,9 @@
     "correctOptionId": "d",
     "explanation": "Perforated raised-floor tiles are strategically placed in cold aisles to deliver conditioned air from the underfloor plenum directly to the intake side of IT equipment. This targeted airflow ensures efficient cooling by supplying cold air where it is needed most.",
     "distractorExplanations": {
-      "a": "Tiles in hot aisles waste cold air as bypass and lower return temperature; they belong in cold aisles.",
-      "b": "Perforated tiles are a critical component of the data hall's cooling infrastructure, specifically designed for air delivery to IT equipment. They are not typically used in office areas, which have different HVAC requirements and no need for underfloor air delivery to racks.",
-      "c": "Most IT equipment draws air front-to-back, so tiles go in the cold aisle in front of the intakes."
+      "a": "Tiles in hot aisles waste cold air as bypass and lower the return temperature; they belong in cold aisles.",
+      "b": "Close to the CRAH discharge, high air velocity can create low or even negative tile pressure, so tiles there deliver little air.",
+      "c": "Most IT equipment draws air front-to-back, so tiles go in the cold aisle in front of the intakes, not under the cabinet."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6834,31 +6834,31 @@
     "id": "cdcp-readiness-check-site-standards-building-008",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Minimum recommended clear height above a standard 42U rack (including service clearance) is MOST often",
+    "prompt": "A designer checks the clear height of a planned computer room against ANSI/TIA-942. What minimum height does the standard set from finished floor to the lowest overhead obstruction (sprinklers, light fittings, cameras)?",
     "options": [
       {
         "id": "a",
-        "text": "Exactly equal to rack height with zero overhead clearance"
+        "text": "2.1 m (7 ft)"
       },
       {
         "id": "b",
-        "text": "Low enough that hot exhaust air stays near racks for faster return to CRAHs"
+        "text": "2.3 m (7.5 ft)"
       },
       {
         "id": "c",
-        "text": "Unlimited only when using non-raised-floor designs"
+        "text": "2.4 m (8 ft)"
       },
       {
         "id": "d",
-        "text": "Sufficient to allow top-of-rack cable management and safe ladder access"
+        "text": "2.6 m (8.5 ft)"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Clear height above racks must leave room for overhead cable tray, busway, lighting and safe ladder access. TIA-942 sets a minimum of 2.6 m (8.5 ft) from finished floor to the lowest obstruction such as sprinklers or lights, with more height preferred.",
+    "explanation": "TIA-942 sets a minimum computer room clear height of 2.6 m (8.5 ft) from finished floor to the lowest obstruction such as sprinklers, lighting or cameras. Greater height is recommended where overhead cable tray, busway or hot-air return plenums must fit above the racks.",
     "distractorExplanations": {
-      "a": "Having exactly zero overhead clearance above a rack would prevent essential activities such as installing cable trays, connecting power, or performing maintenance. This would make the data center impractical and unsafe for operations.",
-      "b": "Low ceilings trap hot exhaust near the racks and raise recirculation; adequate height aids return airflow.",
-      "c": "Clear height requirements are universal for data centers, regardless of whether a raised floor is used. Adequate overhead space is always necessary for cable management, power distribution, and safe access to equipment at the top of racks."
+      "a": "2.1 m is roughly the height of a standard 42U-45U rack itself, which would leave no room for cable tray or service access above it.",
+      "b": "2.3 m is below the TIA-942 minimum; it would leave too little room above the racks for overhead pathways and safe ladder work.",
+      "c": "2.4 m (8 ft) is a typical office ceiling height, not the TIA-942 computer room minimum, which is higher."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6867,7 +6867,7 @@
     "id": "cdcp-readiness-check-site-standards-building-009",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Static dissipative floor coverings in a data hall help",
+    "prompt": "What is the main purpose of a static-dissipative floor covering in a data hall or build room?",
     "options": [
       {
         "id": "a",
@@ -6883,15 +6883,15 @@
       },
       {
         "id": "d",
-        "text": "Eliminate the need for ESD wrist straps during all work"
+        "text": "Make ESD wrist straps unnecessary when handling exposed circuit boards"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Static dissipative floor coverings in a data hall are designed to safely dissipate electrostatic charges that can build up on personnel as they walk across the floor. This helps prevent electrostatic discharge (ESD) events, which can damage sensitive electronic components within IT equipment.",
     "distractorExplanations": {
-      "a": "Static dissipative flooring bleeds charge to ground; it does not change room humidity.",
+      "a": "Static-dissipative flooring bleeds charge to ground through the floor; it has no effect on room humidity.",
       "b": "Dissipative flooring complements but does not replace equipment grounding and bonding conductors.",
-      "d": "While static dissipative flooring reduces the risk of ESD, it does not eliminate the need for all other ESD controls, such as wrist straps. When handling sensitive components, additional measures like wrist straps are often still required to ensure maximum protection."
+      "d": "Flooring lowers charge on people walking, but anyone handling exposed boards still needs a wrist strap or other personal ESD control."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6900,7 +6900,7 @@
     "id": "cdcp-readiness-check-site-standards-building-010",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "ISO/IEC 22237 (data centre facilities) emphasizes",
+    "prompt": "Which scope BEST describes the ISO/IEC 22237 series for data centre facilities and infrastructures?",
     "options": [
       {
         "id": "a",
@@ -6933,7 +6933,7 @@
     "id": "cdcp-readiness-check-site-standards-building-011",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Live load capacity for a data hall raised floor must account for:",
+    "prompt": "When specifying the load rating of a data hall raised floor, which loads must the design account for?",
     "options": [
       {
         "id": "a",
@@ -6966,7 +6966,7 @@
     "id": "cdcp-readiness-check-site-standards-building-012",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Cable tray fill ratio is limited primarily to:",
+    "prompt": "Why do designers limit the fill ratio of cable trays in a data hall?",
     "options": [
       {
         "id": "a",
@@ -6974,7 +6974,7 @@
       },
       {
         "id": "b",
-        "text": "Eliminate separation between power and data cables in all cases"
+        "text": "Ensure the tray gives EMC shielding equal to a closed metal conduit"
       },
       {
         "id": "c",
@@ -6988,9 +6988,9 @@
     "correctOptionId": "d",
     "explanation": "Cable tray fill ratios are limited to prevent excessive heat buildup, which can degrade cable performance and lifespan, ensure proper bend radii are maintained for optimal signal integrity, and preserve space for future cable additions without requiring a complete re-cabling effort. These limits are crucial for system reliability and maintainability.",
     "distractorExplanations": {
-      "a": "Weight is one limit, but heat buildup in packed bundles is a key reason fill ratios are capped.",
-      "b": "While separation between power and data cables is often required for electromagnetic compatibility (EMC) and safety, the cable tray fill ratio itself is a distinct limitation related to thermal management and physical capacity, not a universal rule for eliminating all separation requirements. Specific segregation rules still apply.",
-      "c": "Power and data cabling are separated to limit interference; fill limits do not call for mixing them."
+      "a": "Weight is one limit, but heat buildup in tightly packed bundles is a key reason fill ratios are capped.",
+      "b": "An open tray never provides conduit-level shielding, and fill ratio has nothing to do with shielding; EMC is handled by separation and bonding.",
+      "c": "Power and data cabling are separated to limit interference; fill limits do not call for mixing them in one tray."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -6999,7 +6999,7 @@
     "id": "cdcp-readiness-check-site-standards-building-013",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Hot aisle / cold aisle layout aims to:",
+    "prompt": "What is the main aim of arranging racks in a hot aisle/cold aisle layout?",
     "options": [
       {
         "id": "a",
@@ -7032,7 +7032,7 @@
     "id": "cdcp-readiness-check-site-standards-building-014",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Blanking panels in unused rack U-spaces primarily",
+    "prompt": "Why are blanking panels fitted in unused rack U-spaces?",
     "options": [
       {
         "id": "a",
@@ -7065,31 +7065,31 @@
     "id": "cdcp-readiness-check-site-standards-building-015",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Data centre lighting design should provide",
+    "prompt": "Which approach to lighting the white space BEST balances safe working and energy use?",
     "options": [
       {
         "id": "a",
-        "text": "Adequate illuminance for safe work, often with occupancy-based controls"
+        "text": "Task-adequate illuminance for safe work, with occupancy sensors switching zones"
       },
       {
         "id": "b",
-        "text": "Continuous 100% output at all times without controls"
+        "text": "Full lighting left on around the clock so CCTV always records colour images"
       },
       {
         "id": "c",
-        "text": "UV-rich lamps that sterilize equipment surfaces and suppress dust"
+        "text": "Emergency lighting only, with technicians carrying portable task lights"
       },
       {
         "id": "d",
-        "text": "Lighting levels low enough to eliminate glare by making the hall nearly dark"
+        "text": "Lights switched from the security desk only, kept off unless an alarm is raised"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Data centre lighting design must provide sufficient illuminance to ensure a safe working environment for personnel performing maintenance, installations, and inspections. Incorporating occupancy-based controls, such as motion sensors, allows for energy savings by dimming or turning off lights when areas are unoccupied, balancing safety with efficiency. Occupancy-based lighting controls deliver energy savings in rarely occupied white space.",
+    "explanation": "Data hall lighting must provide enough illuminance for safe installation and maintenance work, but the white space is unoccupied most of the time. Zoned occupancy sensors give full light where technicians are working and cut lighting energy elsewhere, balancing safety with efficiency.",
     "distractorExplanations": {
-      "b": "Maintaining continuous 100% output without controls is an inefficient approach that wastes significant energy, as many areas of a data center are not constantly occupied. Modern data center design prioritizes energy efficiency through smart lighting controls.",
-      "c": "UV lamps degrade cable jackets and plastics; data hall lighting is for safe work illuminance.",
-      "d": "While glare reduction is important, designing lighting levels so low that the hall is nearly dark creates significant safety hazards for personnel, making it difficult to perform tasks and increasing the risk of accidents. Adequate, but not excessive, illumination is key."
+      "b": "Round-the-clock lighting wastes energy in rarely occupied halls; cameras can use low-light modes or occupancy-triggered lighting.",
+      "c": "Emergency lighting is a life-safety minimum, not working illuminance; technicians need adequate fixed lighting to work safely.",
+      "d": "Central-only switching leaves staff in the dark during routine work; zoned occupancy control gives light where people actually are."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7098,31 +7098,31 @@
     "id": "cdcp-readiness-check-site-standards-building-016",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "TIA-942 recommends separate entrance facilities for:",
+    "prompt": "Why does TIA-942 recommend a second, physically separate entrance room for higher-rated data centres?",
     "options": [
       {
         "id": "a",
-        "text": "A single shared entrance room so every carrier can be secured together"
+        "text": "To give each carrier its own secured room so no carrier can reach another's equipment"
       },
       {
         "id": "b",
-        "text": "Combining all carriers into one conduit with no diversity"
+        "text": "To keep carrier demarcation equipment out of the computer room for security reasons"
       },
       {
         "id": "c",
-        "text": "Separate power and telecom service entrances to avoid electromagnetic coupling between them"
+        "text": "To separate power and telecom service entrances and avoid electromagnetic coupling"
       },
       {
         "id": "d",
-        "text": "Diverse carrier paths to reduce single-point-of-failure on external connectivity"
+        "text": "To provide diverse carrier routes so a single cable cut cannot isolate the site"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "TIA-942 recommends separate entrance facilities for diverse carrier paths to enhance the resilience of external connectivity. By having multiple, physically distinct entry points for telecommunication services, a data center can mitigate the risk of a single point of failure, ensuring continued operation even if one path is compromised.",
+    "explanation": "TIA-942 recommends a second entrance room with physically diverse conduit routes for higher-rated facilities. If a backhoe cuts one route or an incident takes out one entrance room, carriers entering through the other keep the site connected, removing a single point of failure on external connectivity.",
     "distractorExplanations": {
-      "a": "One shared entrance room is a single point of failure; TIA-942 recommends diverse entrance facilities.",
-      "b": "Combining all carriers into one conduit with no diversity directly contradicts the principle of resilience and creates a single point of failure. If that single conduit is damaged, all external connectivity would be lost, which is a critical risk for a data center.",
-      "c": "Second entrance facilities serve carrier path diversity, not separating power from telecom services."
+      "a": "Carrier separation inside an entrance room is done with cages or racks; the second room exists for route diversity, not per-carrier privacy.",
+      "b": "Keeping demarcation out of the computer room is the reason for having an entrance room at all, not for adding a second one.",
+      "c": "Power and telecom entrances are separate anyway; the second entrance room serves carrier path diversity, not EMC separation."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7131,7 +7131,7 @@
     "id": "cdcp-readiness-check-site-standards-building-017",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A meet-me room (MMR) in a carrier-neutral facility allows",
+    "prompt": "What does a meet-me room (MMR) in a carrier-neutral colocation facility allow?",
     "options": [
       {
         "id": "a",
@@ -7164,31 +7164,31 @@
     "id": "cdcp-readiness-check-site-standards-building-018",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "When planning rack density, weight distribution across raised floor stringers should?",
+    "prompt": "A loaded rack weighing about 1,400 kg must be rolled across the raised floor to its final position. What should the team check before moving it?",
     "options": [
       {
         "id": "a",
-        "text": "Use manufacturer load maps and spread heavy loads to avoid localized panel failure"
+        "text": "The panels' rolling-load rating along the route, adding load-spreading plates where needed"
       },
       {
         "id": "b",
-        "text": "Rely on total room weight, since point loads spread out evenly across the slab"
+        "text": "The uniform load rating only, since the rack's weight spreads across the room once it is placed"
       },
       {
         "id": "c",
-        "text": "Group the heaviest racks together on one row of panels to simplify load planning"
+        "text": "The pedestal height, because shorter pedestals carry any rolling load the panels cannot"
       },
       {
         "id": "d",
-        "text": "Use any panel with a high uniform load rating, ignoring concentrated rack-foot loads"
+        "text": "The concentrated load rating at the final position, since the route is only used once"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "When planning rack density, it is crucial to consult manufacturer load maps for the raised floor system and distribute heavy loads across multiple stringers and panels. This prevents exceeding the point load capacity of individual tiles or stringers, which could lead to localized structural failure.",
+    "explanation": "Raised-floor panels carry separate ratings for uniform, concentrated and rolling loads. Moving a heavy rack puts repeated concentrated wheel loads on every panel along the route, so the rolling-load rating is checked first and temporary load-spreading plates are laid where panels are not rated for the move.",
     "distractorExplanations": {
-      "b": "Point loads concentrate on individual panels and pedestals; total room weight hides local overloads.",
-      "c": "Clustering heavy racks concentrates load on a few stringers; load maps call for spreading weight.",
-      "d": "Uniform ratings do not cover concentrated rack-foot loads; concentrated and rolling ratings must be checked."
+      "b": "A uniform rating describes load spread over an area; a rolling rack puts concentrated wheel loads on each panel it crosses.",
+      "c": "Pedestal height affects stability, but panel failure under a moving point load depends on the panel's rolling-load rating.",
+      "d": "A single move can crack or deform panels along the route; the rolling-load rating of every panel crossed must be checked."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7197,7 +7197,7 @@
     "id": "cdcp-readiness-check-site-standards-building-019",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Building orientation and exterior shading can influence data centre performance by:",
+    "prompt": "How can building orientation and exterior shading improve a data centre's performance?",
     "options": [
       {
         "id": "a",
@@ -7230,15 +7230,15 @@
     "id": "cdcp-readiness-check-site-standards-building-020",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Acoustic considerations for a data hall near office space may require",
+    "prompt": "A new data hall shares a wall with an open-plan office. Which measure addresses the noise impact on office staff?",
     "options": [
       {
         "id": "a",
-        "text": "Removing internal server fans and relying on room airflow to achieve quiet operation"
+        "text": "Reducing CRAH fan speed outside office hours, when the adjoining space is empty"
       },
       {
         "id": "b",
-        "text": "Open floor penetrations to vent noise outdoors unchecked"
+        "text": "Posting hearing-protection signs on the data hall door to meet occupational noise rules"
       },
       {
         "id": "c",
@@ -7246,15 +7246,15 @@
       },
       {
         "id": "d",
-        "text": "Ignoring CRAC/CRAH sound power because IT equipment is louder"
+        "text": "Assessing server fan noise only, since CRAH and plant noise stays in plant rooms"
       }
     ],
     "correctOptionId": "c",
     "explanation": "When a data hall is located near office spaces, acoustic considerations are vital to prevent noise pollution. This often requires implementing sound-attenuating construction materials and techniques, along with isolating noisy equipment, to ensure noise levels in adjacent areas meet acceptable criteria for human comfort and productivity.",
     "distractorExplanations": {
-      "a": "Server fans are needed for component cooling; noise is managed with construction and isolation.",
-      "b": "Open floor penetrations would compromise the controlled environment of the data hall, allowing uncontrolled air and noise transfer. This would defeat the purpose of acoustic isolation and negatively impact thermal management and air quality.",
-      "d": "While IT equipment can be noisy, CRAC/CRAH units also contribute significantly to the overall sound power level in a data center. Ignoring their acoustic output, especially when adjacent to occupied spaces, is a common mistake that can lead to unacceptable noise levels."
+      "a": "Night-time fan reduction does nothing for staff during working hours, which is when the office noise criteria matter.",
+      "b": "Signs protect people entering the hall; they do nothing about noise transmitted through the wall into the office.",
+      "d": "CRAC/CRAH units and plant often dominate sound power; ignoring them is a common cause of noise complaints next door."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7263,11 +7263,11 @@
     "id": "cdcp-readiness-check-site-standards-building-021",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A Tier IV facility differs from Tier III primarily by adding",
+    "prompt": "What does Uptime Institute Tier IV add on top of Tier III?",
     "options": [
       {
         "id": "a",
-        "text": "Removal of all redundant components to simplify maintenance"
+        "text": "N+1 capacity components on a single shared distribution path"
       },
       {
         "id": "b",
@@ -7275,7 +7275,7 @@
       },
       {
         "id": "c",
-        "text": "Mandatory use of 120 V rack PDUs to lower arc flash risk"
+        "text": "A guaranteed 99.995% availability figure written into the certificate"
       },
       {
         "id": "d",
@@ -7285,8 +7285,8 @@
     "correctOptionId": "b",
     "explanation": "A Tier IV facility distinguishes itself from a Tier III facility by incorporating fault tolerance. This means that not only can maintenance be performed concurrently (as in Tier III), but any single point of failure within the infrastructure will not cause an interruption to IT operations, ensuring continuous availability.",
     "distractorExplanations": {
-      "a": "Tier IV facilities are designed for the highest level of availability, which requires increased redundancy and fault tolerance, not the removal of redundant components. Removing redundancy would drastically reduce reliability and availability.",
-      "c": "Tier ratings are topology-based and do not dictate rack voltages such as 120 V PDUs.",
+      "a": "N+1 components on a single path describe Tier II, which is below Tier III rather than an addition to it.",
+      "c": "Uptime Tier certification is based on topology and does not award or guarantee an availability percentage.",
       "d": "Concurrent maintainability is the Tier III objective; Tier IV adds fault tolerance on top of it."
     },
     "difficulty": "medium",
@@ -7296,31 +7296,31 @@
     "id": "cdcp-readiness-check-site-standards-building-022",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Containment systems (hot or cold aisle) improve cooling efficiency by:",
+    "prompt": "An operator is choosing between hot aisle and cold aisle containment for a hall with staff working in the open room. Which statement about the two designs is correct?",
     "options": [
       {
         "id": "a",
-        "text": "Increasing recirculation of hot exhaust into intakes"
+        "text": "Cold aisle containment leaves the open room at supply temperature, which suits staff"
       },
       {
         "id": "b",
-        "text": "Blocking all underfloor airflow permanently"
+        "text": "Hot aisle containment needs a raised floor, whereas cold aisle containment does not"
       },
       {
         "id": "c",
-        "text": "Raising supply air temperature above ASHRAE allowable ranges without review"
+        "text": "Both designs leave the open room at the same temperature, so only cost differs"
       },
       {
         "id": "d",
-        "text": "Reducing mixing of supply and return air streams"
+        "text": "With hot aisle containment the open room holds supply air, so the room stays cool"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Containment systems, whether hot or cold aisle, are designed to physically separate the hot exhaust air from IT equipment from the cold supply air. This prevents air mixing, ensuring that only cold air reaches equipment intakes and hot air is efficiently returned to cooling units, thereby improving cooling efficiency and reducing hot spots.",
+    "explanation": "Hot aisle containment encloses the exhaust and ducts it back to the cooling units, so the rest of the room is flooded with supply air and stays cool for staff. Cold aisle containment encloses the supply, so the open room becomes the return space at exhaust temperature. Both reduce mixing, but working conditions differ.",
     "distractorExplanations": {
-      "a": "Containment systems are specifically implemented to prevent the recirculation of hot exhaust air back into equipment intakes, which is a major cause of cooling inefficiency and hot spots. This option describes the problem containment aims to solve, not its effect.",
-      "b": "Containment systems manage airflow within the data hall, but they do not block all underfloor airflow permanently. Underfloor plenums are often used to deliver cold supply air to the contained cold aisles, so blocking this would prevent cooling.",
-      "c": "While containment can allow for higher supply air temperatures due to improved efficiency, this must be done within the allowable ranges specified by ASHRAE for IT equipment. Raising temperatures without careful review could lead to equipment overheating or reduced lifespan."
+      "a": "Reversed: with cold aisle containment the open room becomes the hot return space, which can be uncomfortable for staff.",
+      "b": "Reversed in practice: cold aisle containment usually relies on raised-floor supply, while hot aisle containment works on slab with ceiling or in-row return.",
+      "c": "The two designs put the open room on opposite sides of the airflow: cool with hot aisle containment, hot with cold aisle containment."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7329,7 +7329,7 @@
     "id": "cdcp-readiness-check-site-standards-building-023",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Designing for future expansion in a data hall often includes:",
+    "prompt": "A data hall is built in phases. Which provision BEST supports later expansion without disruptive retrofits?",
     "options": [
       {
         "id": "a",
@@ -7337,7 +7337,7 @@
       },
       {
         "id": "b",
-        "text": "Sealing all spare floor penetrations permanently before operations"
+        "text": "Sizing main switchgear for day-one load, with replacement when load grows"
       },
       {
         "id": "c",
@@ -7345,15 +7345,15 @@
       },
       {
         "id": "d",
-        "text": "Omitting structural review for additional rack rows"
+        "text": "Leaving expansion areas empty, with no pathways or connection points fitted"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Designing for future expansion in a data hall requires provisioning spare capacity in power, cooling, and physical space, along with scalable cable pathways. This approach allows for phased growth and avoids costly, disruptive retrofits when additional IT equipment needs to be deployed.",
     "distractorExplanations": {
-      "a": "Building everything on day one strands capital; expansion design reserves space and pathways for growth.",
-      "b": "Sealing all spare floor penetrations permanently before operations is a mistake, as managed spare penetrations are essential for supporting future racks, power feeds, and network connections, enabling flexible and efficient expansion.",
-      "d": "Omitting structural review for additional rack rows is a critical error; structural and load reviews are absolutely required for any expansion to ensure the building can safely support increased weight and equipment density."
+      "a": "Building everything on day one strands capital and ages equipment unused; expansion design reserves space and pathways instead.",
+      "b": "Replacing main switchgear later means a major live-site shutdown; it is sized or provisioned for the end-state from the start.",
+      "d": "Empty space without pre-installed pathways and connection points forces disruptive work in a live hall when growth arrives."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7362,7 +7362,7 @@
     "id": "cdcp-readiness-check-site-standards-building-024",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Telecommunications grounding (e.g., TIA-607) in a data centre ensures",
+    "prompt": "What does a telecommunications bonding and grounding system designed to ANSI/TIA-607 provide in a data centre?",
     "options": [
       {
         "id": "a",
@@ -7395,7 +7395,7 @@
     "id": "cdcp-readiness-check-site-standards-building-025",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "When evaluating a retrofit of an office building into a data centre, the FIRST structural review should assess?",
+    "prompt": "An office building is being evaluated for conversion into a data centre. What should the first structural review assess?",
     "options": [
       {
         "id": "a",
@@ -7428,7 +7428,7 @@
     "id": "cdcp-readiness-check-site-standards-building-026",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "White space contamination control often includes:",
+    "prompt": "Which set of practices controls contamination in the white space?",
     "options": [
       {
         "id": "a",
@@ -7461,7 +7461,7 @@
     "id": "cdcp-readiness-check-site-standards-building-027",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Overhead cable pathway color coding or labeling is used to:",
+    "prompt": "Why are overhead cable pathways colour-coded or labelled in a data hall?",
     "options": [
       {
         "id": "a",
@@ -7494,7 +7494,7 @@
     "id": "cdcp-readiness-check-site-standards-building-028",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A data centre with 2N power at the utility entrance still requires careful design because",
+    "prompt": "A site has 2N utility feeds at its service entrance. Why can it still suffer outages from its electrical design?",
     "options": [
       {
         "id": "a",
@@ -7527,11 +7527,11 @@
     "id": "cdcp-readiness-check-site-standards-building-029",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Ladder rack versus basket tray selection often considers",
+    "prompt": "When choosing between ladder rack and wire basket tray for overhead cabling, which factors drive the decision?",
     "options": [
       {
         "id": "a",
-        "text": "Only aesthetic preference with no engineering impact"
+        "text": "Fire rating, since basket tray is listed as a firestop where it passes through walls"
       },
       {
         "id": "b",
@@ -7543,15 +7543,15 @@
       },
       {
         "id": "d",
-        "text": "Elimination of grounding requirements for metallic trays"
+        "text": "Basket tray needs no bonding, because its welded wires form their own earth path"
       }
     ],
     "correctOptionId": "c",
     "explanation": "The choice between ladder rack and basket tray significantly impacts cable bend radius, the maximum distance between supports, and the ease of managing large cable bundles. These factors are critical for maintaining cable integrity, ensuring proper support, and facilitating future maintenance or expansion.",
     "distractorExplanations": {
-      "a": "This option is incorrect because tray selection has substantial mechanical, electrical, and maintenance implications that directly affect data center operations, not just aesthetics. Ignoring these engineering impacts can lead to significant operational issues.",
+      "a": "No tray type acts as a firestop; wall penetrations need a separate listed firestop system whichever tray is used.",
       "b": "TIA-942 does not mandate tray types by media; selection depends on bend radius, span and access.",
-      "d": "This option is incorrect because all metallic cable management systems, including basket trays, require proper bonding and grounding according to electrical codes and standards to ensure safety and prevent electrical hazards."
+      "d": "Metallic basket tray must still be bonded to the grounding system; welded wire sections do not replace bonding jumpers."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7560,23 +7560,23 @@
     "id": "cdcp-readiness-check-site-standards-building-030",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Fire-rated penetrations through data hall walls must",
+    "prompt": "Cables pass through a fire-rated wall between the data hall and a corridor. How must the penetration be sealed?",
     "options": [
       {
         "id": "a",
-        "text": "Be sealed with standard expanding foam to block smoke and air leakage"
+        "text": "With standard expanding foam to block smoke and air leakage"
       },
       {
         "id": "b",
-        "text": "Be sealed with listed firestop systems matching the assembly rating"
+        "text": "With a listed firestop system matching the wall's fire rating"
       },
       {
         "id": "c",
-        "text": "Be sealed with a listed system rated one hour less than the wall"
+        "text": "With a listed system rated one hour below the wall's rating"
       },
       {
         "id": "d",
-        "text": "Be fitted with removable pillows left open until cabling is done"
+        "text": "With removable pillows left open until all cabling is complete"
       }
     ],
     "correctOptionId": "b",
@@ -7593,11 +7593,11 @@
     "id": "cdcp-readiness-check-site-standards-building-031",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "When specifying aisle width between rack rows, designers balance?",
+    "prompt": "When setting the width of aisles between rack rows, which factors must designers balance?",
     "options": [
       {
         "id": "a",
-        "text": "Minimizing width to zero clearance for maximum rack count"
+        "text": "Maximum rack count, with aisles cut to the swing width of the rack doors"
       },
       {
         "id": "b",
@@ -7605,19 +7605,19 @@
       },
       {
         "id": "c",
-        "text": "Only paint color contrast"
+        "text": "Floor tile grid alignment, with airflow and egress handled at a later stage"
       },
       {
         "id": "d",
-        "text": "Elimination of emergency egress paths"
+        "text": "Overhead tray width, since each aisle is sized to match the pathway above it"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When determining aisle width, designers must balance the need for adequate equipment service access, sufficient airflow volume for cooling, and compliance with safe egress requirements. These factors ensure operational efficiency, proper thermal management, and personnel safety.",
+    "explanation": "Aisle width is a trade-off: front aisles must be wide enough to install and remove equipment and carry enough cold air, rear aisles must allow service work, and all aisles must satisfy egress requirements. Narrowing aisles to gain racks compromises all three.",
     "distractorExplanations": {
-      "a": "Minimizing aisle width to zero clearance for maximum rack count is a dangerous and impractical approach. It prevents essential maintenance access, compromises airflow, and violates safety codes for emergency egress.",
-      "c": "While color contrast can aid in visual organization, it is not a primary factor in determining aisle width. The critical considerations are functional and safety-related, such as access, airflow, and egress.",
-      "d": "Eliminating emergency egress paths is a severe safety violation and completely unacceptable in any facility, especially a data center. Egress paths are mandatory for personnel safety during emergencies."
+      "a": "Door swing alone leaves no room to slide equipment in and out or to escape safely; aisle width must allow service access and egress.",
+      "c": "Tile alignment matters for perforated tile placement, but airflow and egress must be designed with the aisle width, not afterwards.",
+      "d": "Cable pathways are routed to suit the aisles and racks; tray width does not set the aisle width needed for access and airflow."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7626,7 +7626,7 @@
     "id": "cdcp-readiness-check-site-standards-building-032",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "TIA-942 Annex guidance for network cabling recommends",
+    "prompt": "Which cabling approach does ANSI/TIA-942 recommend for a data centre computer room?",
     "options": [
       {
         "id": "a",
@@ -7634,7 +7634,7 @@
       },
       {
         "id": "b",
-        "text": "Maximum cable lengths beyond standard limits without compensation"
+        "text": "One flat cabling zone running straight from the entrance room to every rack"
       },
       {
         "id": "c",
@@ -7642,15 +7642,15 @@
       },
       {
         "id": "d",
-        "text": "Mixing all voltages in the same outlet strip"
+        "text": "Horizontal copper links up to 150 m to avoid intermediate patching points"
       }
     ],
     "correctOptionId": "c",
     "explanation": "TIA-942 Annex guidance strongly recommends structured cabling systems with defined backbone and horizontal zones. This approach supports scalability, simplifies management, and allows for future growth and changes without major overhauls.",
     "distractorExplanations": {
       "a": "Point-to-point cabling is what TIA-942 structured zones (MDA, HDA, EDA) replace to support growth.",
-      "b": "Exceeding standard cable length limits without proper compensation or active equipment will result in signal degradation and network performance issues. Adhering to specified length limits is crucial for reliable data transmission.",
-      "d": "Mixing all voltages in the same outlet strip is a dangerous practice that violates electrical safety codes and can lead to equipment damage or electrical hazards. Proper segregation of power types is essential."
+      "b": "TIA-942 uses a hierarchy of entrance room, main, horizontal and equipment distribution areas rather than one flat zone.",
+      "d": "Balanced twisted-pair channels are limited to 100 m; 150 m links would fail performance requirements."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7659,7 +7659,7 @@
     "id": "cdcp-readiness-check-site-standards-building-033",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A facility labeled Tier II provides",
+    "prompt": "Which topology describes an Uptime Institute Tier II facility?",
     "options": [
       {
         "id": "a",
@@ -7692,7 +7692,7 @@
     "id": "cdcp-readiness-check-site-standards-building-034",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Humidity control in the data hall supports",
+    "prompt": "Why is relative humidity in the data hall kept within an ASHRAE-recommended band?",
     "options": [
       {
         "id": "a",
@@ -7704,7 +7704,7 @@
       },
       {
         "id": "c",
-        "text": "Holding RH near 90% so that dust settles out of the supply air"
+        "text": "Keeping RH high enough to replace static-dissipative flooring and ESD straps"
       },
       {
         "id": "d",
@@ -7715,7 +7715,7 @@
     "explanation": "Humidity control in the data hall is crucial for reducing the risk of static electricity, which can damage sensitive electronic equipment, and for limiting corrosion of components. Maintaining relative humidity within acceptable ASHRAE bands achieves this balance.",
     "distractorExplanations": {
       "b": "Very low RH raises electrostatic discharge risk; ASHRAE bands keep humidity above such extremes.",
-      "c": "High RH accelerates corrosion and condensation; it is not used for dust control.",
+      "c": "Humidity is one ESD factor, but grounding, dissipative flooring and wrist straps remain the primary ESD controls.",
       "d": "Battery thermal runaway is controlled by temperature and charging; humidity control targets ESD and corrosion."
     },
     "difficulty": "medium",
@@ -7725,7 +7725,7 @@
     "id": "cdcp-readiness-check-site-standards-building-035",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Edge data centres differ from hyperscale builds primarily in:",
+    "prompt": "How do edge data centres typically differ from hyperscale builds?",
     "options": [
       {
         "id": "a",
@@ -7758,7 +7758,7 @@
     "id": "cdcp-readiness-check-site-standards-building-036",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Commissioning of the architectural shell before IT load should verify",
+    "prompt": "Before IT load is installed, what should commissioning of the architectural shell verify?",
     "options": [
       {
         "id": "a",
@@ -7791,7 +7791,7 @@
     "id": "cdcp-readiness-check-site-standards-building-037",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A loading dock serving a data hall should include",
+    "prompt": "Which features should a loading dock serving a data hall include?",
     "options": [
       {
         "id": "a",
@@ -7824,31 +7824,31 @@
     "id": "cdcp-readiness-check-site-standards-building-038",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Raised-floor plenum leakage is problematic because it",
+    "prompt": "Why is air leakage from a raised-floor plenum through cable cut-outs and gaps a problem?",
     "options": [
       {
         "id": "a",
-        "text": "Reduces delivered airflow to racks and wastes fan energy"
+        "text": "It reduces delivered airflow to racks and wastes fan energy"
       },
       {
         "id": "b",
-        "text": "Improves cooling by increasing uncontrolled bypass"
+        "text": "It lifts floor tiles through overpressure, a safety issue more than a cooling one"
       },
       {
         "id": "c",
-        "text": "Raises underfloor static pressure, which pushes more air to the racks"
+        "text": "It raises underfloor static pressure, which pushes more air to the racks"
       },
       {
         "id": "d",
-        "text": "Lowers return air temperature, which improves CRAH coil efficiency"
+        "text": "It lowers return air temperature, which improves CRAH coil efficiency"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Raised-floor plenum leakage is problematic because it allows conditioned air to escape before reaching the intended cold aisles and IT equipment, thereby reducing the effective airflow delivered to racks. This inefficiency forces cooling units to work harder, wasting fan energy and increasing operational costs without providing effective cooling.",
     "distractorExplanations": {
-      "b": "Bypass leakage, where conditioned air bypasses the IT equipment, actually harms cooling efficiency by reducing the amount of cold air available to cool servers. This option reflects a misunderstanding of airflow dynamics in data centers.",
+      "b": "Leakage lowers plenum pressure rather than raising it; its real cost is air that never reaches the IT intakes.",
       "c": "Leakage lowers plenum pressure and diverts air away from perforated tiles in front of racks.",
-      "d": "Bypass leakage lowers return temperature, which reduces CRAH capacity and efficiency."
+      "d": "Bypass leakage does lower return temperature, but that reduces CRAH capacity and efficiency rather than improving it."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7857,7 +7857,7 @@
     "id": "cdcp-readiness-check-site-standards-building-039",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "When dual-feed racks are deployed, A and B power paths should?",
+    "prompt": "Dual-corded racks are fed from A and B power paths. How should those paths be arranged?",
     "options": [
       {
         "id": "a",
@@ -7890,31 +7890,31 @@
     "id": "cdcp-readiness-check-site-standards-building-040",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "ISO/IEC 22237 availability key performance indicators include",
+    "prompt": "An operator wants to report PUE in a way that is comparable with other sites under an international standard. Which standard series should it follow?",
     "options": [
       {
         "id": "a",
-        "text": "Power usage effectiveness measured at the UPS output on a monthly basis"
+        "text": "ISO/IEC 22237, which sets availability and protection classes for facilities"
       },
       {
         "id": "b",
-        "text": "Mean time between failures quoted on equipment manufacturer datasheets"
+        "text": "ISO 50001, which sets requirements for an energy management system"
       },
       {
         "id": "c",
-        "text": "Total installed generator capacity expressed as a share of the IT load"
+        "text": "ISO/IEC 27001, which sets information security management controls"
       },
       {
         "id": "d",
-        "text": "Planned and unplanned downtime metrics tied to business requirements"
+        "text": "ISO/IEC 30134, which defines PUE and other data centre resource KPIs"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "ISO/IEC 22237 availability Key Performance Indicators (KPIs) focus on quantifiable metrics such as planned and unplanned downtime, which are directly tied to business requirements for continuous operation. These KPIs help assess and ensure the data center's ability to deliver consistent service levels.",
+    "explanation": "ISO/IEC 30134 is the international series of data centre key performance indicators: part 2 defines PUE, and other parts cover renewable energy factor, IT equipment efficiency and more. Using it (or its European counterpart EN 50600-4) makes PUE figures comparable between sites.",
     "distractorExplanations": {
-      "a": "PUE is an energy efficiency metric, not an availability KPI measured as downtime against requirements.",
-      "b": "Datasheet MTBF is a vendor reliability claim, not a measured facility availability KPI.",
-      "c": "Generator capacity ratio is a design parameter, not a measured availability performance indicator."
+      "a": "ISO/IEC 22237 covers facility design, availability and protection classes; the KPI definitions sit in ISO/IEC 30134.",
+      "b": "ISO 50001 defines how to run an energy management system but does not define how PUE is measured or reported.",
+      "c": "ISO/IEC 27001 is an information security standard and has nothing to say about energy efficiency metrics."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -7923,11 +7923,11 @@
     "id": "cdcp-readiness-check-site-standards-building-041",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Perimeter security zoning before entering the data hall typically progresses through",
+    "prompt": "In layered physical security, how do zones typically progress from the street to the data hall?",
     "options": [
       {
         "id": "a",
-        "text": "Immediate unrestricted white space access from the street"
+        "text": "One high-security perimeter fence, with interior doors left on free access"
       },
       {
         "id": "b",
@@ -7943,9 +7943,9 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Defense-in-depth security employs multiple layers of protection, with each successive zone requiring increased authentication and monitoring, progressing from the site perimeter inward to the most critical data hall areas.",
+    "explanation": "Defence-in-depth places successive zones between the street and the IT equipment: site perimeter, building entry, operations areas and finally the white space. Each step adds authentication and monitoring, so a failure at one layer does not give direct access to the most critical area.",
     "distractorExplanations": {
-      "a": "Allowing immediate, unrestricted access to the white space from the street is a critical security failure, as it bypasses all necessary controls and leaves valuable assets vulnerable.",
+      "a": "A single hard perimeter is one layer of defence; once inside, nothing stops an intruder reaching the white space.",
       "b": "Skipping intermediate zones defeats layered security; access should step through progressively restricted zones.",
       "c": "Reverses the zoning: the white space is the innermost, most restricted zone."
     },
@@ -7956,7 +7956,7 @@
     "id": "cdcp-readiness-check-site-standards-building-042",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Ceiling height for overhead busway installation must accommodate",
+    "prompt": "When an overhead busway is planned, what must the available ceiling height accommodate?",
     "options": [
       {
         "id": "a",
@@ -7989,7 +7989,7 @@
     "id": "cdcp-readiness-check-site-standards-building-043",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A facility map showing rack grid coordinates supports",
+    "prompt": "What does a facility floor map with rack grid coordinates mainly support?",
     "options": [
       {
         "id": "a",
@@ -8022,15 +8022,15 @@
     "id": "cdcp-readiness-check-site-standards-building-044",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Windborne debris risk for rooftop equipment (cooling towers, generators) requires:",
+    "prompt": "Cooling towers and generators sit on a roof in a high-wind region. What is required to manage wind and windborne debris risk?",
     "options": [
       {
         "id": "a",
-        "text": "Loose access panels that open to relieve wind pressure in storms"
+        "text": "Lightweight acoustic screens, which double as wind barriers without separate design"
       },
       {
         "id": "b",
-        "text": "Removing all louvers before hurricane season permanently"
+        "text": "Relying on the roof parapet to shield equipment, with no separate anchorage check"
       },
       {
         "id": "c",
@@ -8042,10 +8042,10 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Rooftop equipment, such as cooling towers and generators, must be securely anchored and screened according to local building codes and equipment manufacturer ratings to withstand design wind loads and prevent windborne debris.",
+    "explanation": "Rooftop equipment such as cooling towers and generators must be anchored and screened to the local code's design wind loads and the equipment's ratings. That keeps units in place under uplift and prevents loose panels or screens becoming windborne debris that damages the site or neighbours.",
     "distractorExplanations": {
-      "a": "Loose panels become windborne debris themselves; panels must be secured and anchored.",
-      "b": "Removing all louvers permanently before hurricane season is an inappropriate mitigation strategy, as louvers are essential for equipment operation and proper airflow; engineered solutions are required.",
+      "a": "Screens not designed for wind load can tear loose and become debris; screening must be engineered for the design wind speed.",
+      "b": "Parapets reduce some exposure but do not resist uplift; rooftop equipment still needs anchorage designed for wind loads.",
       "c": "Gravity-only anchorage ignores wind uplift and debris impact, which local codes require."
     },
     "difficulty": "medium",
@@ -8055,11 +8055,11 @@
     "id": "cdcp-readiness-check-site-standards-building-045",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Network patch panels centralized in a distribution area enable",
+    "prompt": "What is the main benefit of centralising patch panels in a distribution area?",
     "options": [
       {
         "id": "a",
-        "text": "Mandatory direct-only cabling from every server to the carrier without patching"
+        "text": "Fewer connectors in each channel, which lowers insertion loss on every link"
       },
       {
         "id": "b",
@@ -8067,19 +8067,19 @@
       },
       {
         "id": "c",
-        "text": "Elimination of cable testing"
+        "text": "No need to label cables, since every port is found in one location"
       },
       {
         "id": "d",
-        "text": "Unlimited cable length beyond category limits"
+        "text": "Removal of all cabling from the server racks, which improves rack airflow"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Centralizing network patch panels in a distribution area allows for structured and efficient moves, adds, and changes (MACs) without needing to directly access and disturb active equipment in every individual rack.",
+    "explanation": "Centralised patching in a main or horizontal distribution area means moves, adds and changes are made with patch cords at one cross-connect, while the permanent links to equipment racks stay untouched. That cuts the risk of disturbing live equipment and keeps cabling orderly as the hall grows.",
     "distractorExplanations": {
-      "a": "Mandating direct-only cabling from every server to the carrier without patching creates a chaotic and unmanageable cabling environment, making MACs difficult and increasing the risk of errors.",
-      "c": "Centralized patching does not eliminate the need for cable testing; rather, it makes testing more systematic and manageable, ensuring the integrity and performance of all network links.",
-      "d": "Centralized patching does not allow for unlimited cable length; all network cabling must still adhere to industry standards and specifications for maximum channel lengths to ensure signal integrity."
+      "a": "Central patching usually adds connection points to each channel; its benefit is manageability, not lower insertion loss.",
+      "c": "Central patching relies on labelling and records even more; hundreds of ports in one place are unusable without them.",
+      "d": "Racks still need permanent links back to the distribution area; centralisation moves patching, it does not remove rack cabling."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). Restored from local CDCP shards after money-repair contamination."
@@ -8088,7 +8088,7 @@
     "id": "cdcp-readiness-check-site-standards-building-046",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Design life documentation for major facility systems should",
+    "prompt": "What should design-life documentation for major facility systems record?",
     "options": [
       {
         "id": "a",
@@ -8121,7 +8121,7 @@
     "id": "cdcp-readiness-check-site-standards-building-047",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "A data centre built to TIA-942 Rated-3 (facility rating) implies",
+    "prompt": "A facility is certified to ANSI/TIA-942 Rated-3. What does that rating imply for power and cooling?",
     "options": [
       {
         "id": "a",
@@ -8141,7 +8141,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "TIA-942 Rated-3 (formerly Tier 3) requires that every component needed to support the IT load has an active counterpart, allowing for concurrent maintenance without impacting operations. This means redundant power and cooling paths are always available.",
+    "explanation": "TIA-942 Rated-3 (formerly Tier 3) requires redundant capacity components and multiple distribution paths, one active and one alternate, so any component or path can be taken out for planned maintenance without shutting down IT. It is not fault tolerant; that is Rated-4.",
     "distractorExplanations": {
       "a": "Fault tolerance with no single point of failure is TIA-942 Rated-4, not Rated-3.",
       "c": "Redundant components on a single path describe Rated-2, one level below Rated-3.",
@@ -8154,7 +8154,7 @@
     "id": "cdcp-readiness-check-site-standards-building-048",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Thermal imaging during facility acceptance can help identify",
+    "prompt": "During facility acceptance testing, what can infrared thermography of electrical gear and the hall identify?",
     "options": [
       {
         "id": "a",
@@ -8187,7 +8187,7 @@
     "id": "cdcp-readiness-check-site-standards-building-049",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Sustainable site selection may prioritize",
+    "prompt": "Which criteria does a sustainability-led site selection prioritise?",
     "options": [
       {
         "id": "a",
@@ -8220,7 +8220,7 @@
     "id": "cdcp-readiness-check-site-standards-building-050",
     "examSlug": "cdcp-readiness-check",
     "topicId": "site-standards-building",
-    "prompt": "Final fit-out of a colocation data hall tenant suite should confirm",
+    "prompt": "Before a colocation tenant suite is handed over, what should final fit-out confirm?",
     "options": [
       {
         "id": "a",
@@ -8232,7 +8232,7 @@
       },
       {
         "id": "c",
-        "text": "Unlimited oversubscription beyond contracted capacity"
+        "text": "Nameplate power of the tenant's planned servers, used as billed capacity"
       },
       {
         "id": "d",
@@ -8243,7 +8243,7 @@
     "explanation": "The final fit-out of a colocation tenant suite must confirm that all contracted services and infrastructure elements are correctly provisioned and meet the agreed-upon specifications. This includes verifying power, cooling, network connectivity, and physical security boundaries.",
     "distractorExplanations": {
       "a": "Cosmetic finishes do not confirm the contracted power, cooling, connectivity and security scope.",
-      "c": "Oversubscription beyond contracted capacity would lead to service degradation or outages for the tenant and potentially other tenants. Colocation agreements strictly define allocated resources to prevent such issues.",
+      "c": "Nameplate ratings overstate real draw and are not the contract; handover confirms the agreed kW and cooling actually delivered.",
       "d": "Shared admin credentials break tenant isolation; each tenant needs individual, auditable access."
     },
     "difficulty": "easy",

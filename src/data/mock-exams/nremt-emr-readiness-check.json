@@ -3,11 +3,11 @@
     "id": "nremt-emr-readiness-check-airway-001",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "An unresponsive adult has gurgling respirations and vomitus in the mouth. Your first airway action is to:",
+    "prompt": "An unresponsive adult with no suspected trauma has gurgling respirations and vomitus in the mouth. What is your first airway action?",
     "options": [
       {
         "id": "a",
-        "text": "Log-roll, suction the oropharynx, then reassess breathing"
+        "text": "Roll onto the side, suction, then reassess breathing"
       },
       {
         "id": "b",
@@ -23,7 +23,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Airway obstruction from secretions requires positioning and suction before adjuncts or ventilation.",
+    "explanation": "Gurgling means fluid is sitting in the upper airway. Rolling the patient onto the side lets vomitus drain and suctioning the oropharynx clears the rest; adjuncts and ventilations come only after the airway is clear, followed by reassessment of breathing.",
     "distractorExplanations": {
       "b": "An OPA placed over vomitus can push material deeper; clear the airway with suction before inserting any adjunct.",
       "c": "Ventilating before clearing vomitus forces it into the lungs; suction first, then ventilate only if breathing is inadequate.",
@@ -36,31 +36,31 @@
     "id": "nremt-emr-readiness-check-airway-002",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Which patient is the best candidate for a nasopharyngeal (NPA) airway?",
+    "prompt": "Which patient is the best candidate for a nasopharyngeal airway (NPA)?",
     "options": [
       {
         "id": "a",
-        "text": "Apneic patient requiring bag-mask ventilation"
+        "text": "Unresponsive patient with severe facial fractures after an assault"
       },
       {
         "id": "b",
-        "text": "Semiconscious patient with intact gag reflex who needs basic airway support"
+        "text": "Drowsy patient with a clenched jaw and an intact gag reflex"
       },
       {
         "id": "c",
-        "text": "Patient with suspected basilar skull fracture"
+        "text": "Alert patient speaking in full sentences with a mild wheeze"
       },
       {
         "id": "d",
-        "text": "Fully conscious patient refusing all care"
+        "text": "Unresponsive patient with no gag reflex and a clear midface"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "NPA is tolerated in semiconscious patients with gag reflex; OPA may trigger gagging/vomiting.",
+    "explanation": "An NPA is tolerated by patients who still have a gag reflex or a clenched jaw, where an OPA would cause gagging or cannot be inserted. It keeps the tongue off the back of the pharynx in a semiconscious patient who needs help maintaining the airway.",
     "distractorExplanations": {
-      "a": "BVM may be used without NPA; NPA helps maintain patency in some semiconscious patients.",
-      "c": "NPA is contraindicated with basilar skull fracture risk.",
-      "d": "Refusal limits intervention."
+      "a": "Severe facial or suspected basilar skull fractures contraindicate an NPA because the tube may pass into the cranial vault or damaged tissue.",
+      "c": "A patient talking in full sentences is maintaining the airway; an adjunct adds discomfort without benefit.",
+      "d": "With no gag reflex and an intact face, an oropharyngeal airway is the usual first adjunct; the NPA's advantage is tolerance with a gag reflex."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -69,31 +69,31 @@
     "id": "nremt-emr-readiness-check-airway-003",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Proper head-tilt chin-lift is contraindicated when you suspect",
+    "prompt": "In which situation should you avoid the head-tilt chin-lift and open the airway with a jaw-thrust instead?",
     "options": [
       {
         "id": "a",
-        "text": "Asthma exacerbation"
+        "text": "An unresponsive asthma patient with severe wheezing"
       },
       {
         "id": "b",
-        "text": "Loose dentures in the mouth"
+        "text": "An unresponsive patient with loose dentures in the mouth"
       },
       {
         "id": "c",
-        "text": "Cervical spine injury"
+        "text": "An unresponsive patient found at the bottom of a ladder"
       },
       {
         "id": "d",
-        "text": "An unresponsive patient with a gag reflex"
+        "text": "An unresponsive patient who still has a gag reflex"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Suspected spinal injury requires jaw-thrust/manual inline stabilization instead of head-tilt.",
+    "explanation": "A fall from a ladder is a mechanism for cervical spine injury. Tilting the head extends the neck, so the jaw-thrust with manual inline stabilization is used instead; if the jaw-thrust fails to open the airway, airway takes priority per protocol.",
     "distractorExplanations": {
-      "a": "Airway opening may still be needed with spinal precautions.",
+      "a": "Asthma narrows the lower airways and does not change how the upper airway is opened; head-tilt chin-lift is fine without trauma.",
       "b": "Loose dentures are removed before ventilation, but they do not make the head-tilt chin-lift contraindicated.",
-      "d": "A present gag reflex contraindicates an oropharyngeal airway, not the manual head-tilt chin-lift maneuver."
+      "d": "A present gag reflex rules out an oropharyngeal airway, not the manual head-tilt chin-lift maneuver."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -102,7 +102,7 @@
     "id": "nremt-emr-readiness-check-airway-004",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "A conscious adult is choking, cannot speak, and has ineffective cough. You should",
+    "prompt": "A conscious adult is choking, cannot speak, and has an ineffective cough. What should you do?",
     "options": [
       {
         "id": "a",
@@ -135,7 +135,7 @@
     "id": "nremt-emr-readiness-check-airway-005",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "When ventilating an apneic adult with a bag-valve-mask (BVM), adequate ventilation is indicated by?",
+    "prompt": "You are ventilating an apneic adult who has a pulse with a bag-valve-mask (BVM). Which finding best shows that each breath is adequate?",
     "options": [
       {
         "id": "a",
@@ -155,7 +155,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Each breath should produce visible chest rise without excessive rate or force. Deliver about 10–12 breaths per minute for an apneic adult with a pulse.",
+    "explanation": "Each breath is delivered over about 1 second with just enough volume to make the chest visibly rise. For an adult with a pulse, current AHA guidance is about 1 breath every 6 seconds (10 per minute); extra volume or rate only inflates the stomach.",
     "distractorExplanations": {
       "b": "Abdominal rise means air is entering the stomach from excess volume or poor head position, not effective ventilation.",
       "c": "Thirty breaths per minute is hyperventilation; it causes gastric inflation and reduces venous return and cardiac output.",
@@ -168,7 +168,7 @@
     "id": "nremt-emr-readiness-check-airway-006",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "An oropharyngeal airway (OPA) is sized by measuring from:",
+    "prompt": "You are choosing an oropharyngeal airway (OPA) for an unresponsive adult with no gag reflex. How do you measure the correct size?",
     "options": [
       {
         "id": "a",
@@ -188,11 +188,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Standard OPA sizing uses mouth corner to mandibular angle.",
+    "explanation": "An OPA is sized from the corner of the mouth to the angle of the jaw (some texts use the earlobe). A device that is too long can fold the epiglottis over the glottis; one that is too short pushes the tongue back into the airway.",
     "distractorExplanations": {
       "a": "Nose-tip-to-earlobe is the sizing method for a nasopharyngeal airway (NPA), not an oropharyngeal airway.",
       "c": "Bridge of nose to chin cleft is how a BVM or pocket mask is sized, not the length of an OPA.",
-      "d": "Little-finger width is a rough guide to airway tube diameter, not the length measurement used for an OPA."
+      "d": "Little-finger width is a rough guide to nasopharyngeal airway diameter; an OPA's length is measured from mouth corner to jaw angle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -201,7 +201,7 @@
     "id": "nremt-emr-readiness-check-airway-007",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "You are ventilating a patient with a BVM and resistance is high with poor chest rise. You should first",
+    "prompt": "You are ventilating a patient with a BVM, but resistance is high and the chest barely rises. What should you do first?",
     "options": [
       {
         "id": "a",
@@ -221,7 +221,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Poor rise often reflects inadequate seal or airway positioning before increasing force/rate.",
+    "explanation": "Poor chest rise is most often caused by a leaking mask seal or an incompletely opened airway. Reposition the head and jaw, reseal the mask (two-person technique if possible), and retry before assuming a foreign-body obstruction.",
     "distractorExplanations": {
       "a": "More force increases gastric inflation without fixing the cause; poor chest rise usually means poor position or seal.",
       "b": "A nonrebreather does not ventilate; a patient who needs BVM support still needs positive-pressure breaths.",
@@ -234,31 +234,31 @@
     "id": "nremt-emr-readiness-check-airway-008",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Which finding suggests partial upper airway obstruction?",
+    "prompt": "A diner is coughing forcefully after a piece of food went down the wrong way. He can speak and is moving air well. What should you do?",
     "options": [
       {
         "id": "a",
-        "text": "Silent chest with no air movement"
+        "text": "Give abdominal thrusts until he stops coughing"
       },
       {
         "id": "b",
-        "text": "Expiratory wheezing heard in both lungs"
+        "text": "Give five back blows between the shoulder blades"
       },
       {
         "id": "c",
-        "text": "Crackles at both lung bases on inhalation"
+        "text": "Encourage him to keep coughing and stay with him"
       },
       {
         "id": "d",
-        "text": "Stridor with hoarse voice and anxiety"
+        "text": "Perform a finger sweep to look for the food"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Stridor and voice changes suggest partial obstruction of the upper airway.",
+    "correctOptionId": "c",
+    "explanation": "A patient who can speak and cough forcefully has a mild (partial) obstruction with good air exchange; his own cough is the most effective way to clear it. Stay with him, encourage coughing, and act with thrusts only if the cough becomes weak or silent or he cannot speak.",
     "distractorExplanations": {
-      "a": "Complete obstruction may be silent.",
-      "b": "Diffuse expiratory wheezing reflects lower airway bronchoconstriction, not partial upper airway obstruction.",
-      "c": "Crackles indicate fluid in the alveoli, such as pulmonary edema, which is a lower airway finding."
+      "a": "Abdominal thrusts are for severe obstruction (cannot speak, silent or weak cough); they are not used while a strong cough is moving air.",
+      "b": "Back blows are part of infant choking care and are not used on an adult who is still coughing forcefully and speaking.",
+      "d": "Finger sweeps risk pushing the food deeper and are done only to remove an object you can actually see in an unresponsive patient."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -267,7 +267,7 @@
     "id": "nremt-emr-readiness-check-airway-009",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "For a trauma patient requiring spinal precautions, opening the airway is best done with:",
+    "prompt": "A motorcyclist thrown from his bike is unresponsive with snoring respirations. Which technique should you use to open his airway?",
     "options": [
       {
         "id": "a",
@@ -287,7 +287,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Jaw-thrust minimizes cervical motion when spinal injury is suspected.",
+    "explanation": "When spinal injury is suspected, the jaw-thrust lifts the tongue off the airway by moving the mandible forward without tilting the head, while the head is held in line. If the jaw-thrust cannot open the airway, the airway takes priority per protocol.",
     "distractorExplanations": {
       "b": "Head-tilt chin-lift extends the neck even with a collar in place; jaw-thrust with manual stabilization is used instead.",
       "c": "Turning the head rotates the cervical spine; the head is held neutral and inline while the jaw is thrust forward.",
@@ -300,31 +300,31 @@
     "id": "nremt-emr-readiness-check-airway-010",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "A patient with COPD receiving emergency oxygen via nonrebreather at 15 L/min becomes sleepy with shallow respirations. The EMR should",
+    "prompt": "A COPD patient on a nonrebreather at 15 L/min becomes sleepy, with shallow respirations at 8 per minute. What should the EMR do?",
     "options": [
       {
         "id": "a",
-        "text": "Continue 15 L/min by nonrebreather and recheck in 15 minutes"
+        "text": "Keep the nonrebreather unchanged and recheck in 15 minutes"
       },
       {
         "id": "b",
-        "text": "Reassess ventilatory effort and follow local protocol"
+        "text": "Assist ventilations with a BVM connected to oxygen"
       },
       {
         "id": "c",
-        "text": "Turn off the oxygen to restore the hypoxic drive"
+        "text": "Turn off the oxygen so the hypoxic drive can recover"
       },
       {
         "id": "d",
-        "text": "Insert an OPA to keep the sleepy patient's airway open"
+        "text": "Switch to a nasal cannula at 2 L/min and observe"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "COPD patients may depend on hypoxic drive; titrate per protocol and monitor ventilatory status. Local COPD protocols typically call for titrated oxygen, with assisted ventilation if breathing becomes inadequate.",
+    "explanation": "Sleepiness with slow, shallow breathing means ventilation is now inadequate. The fix is positive-pressure ventilation with a BVM and oxygen, not withdrawing oxygen; once breathing is supported, oxygen is titrated to the protocol target for COPD.",
     "distractorExplanations": {
-      "a": "Leaving high-flow oxygen unchanged for 15 minutes ignores a falling ventilatory effort; reassess now and assist as needed.",
-      "c": "Hypoxia kills faster than CO2 retention; oxygen is titrated per protocol, not withdrawn from a hypoxic patient.",
-      "d": "An OPA is for unresponsive patients without a gag reflex; a sleepy patient who still gags will vomit or retch."
+      "a": "Leaving a nonrebreather in place ignores that breathing is now inadequate; a mask cannot move air for a patient who is hypoventilating.",
+      "c": "Hypoxia kills faster than carbon dioxide retention; oxygen is titrated per protocol, never withdrawn from a patient who needs it.",
+      "d": "Lowering the flow does nothing for shallow, slow breathing; inadequate ventilation needs positive-pressure breaths, not a lower FiO2."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -333,31 +333,31 @@
     "id": "nremt-emr-readiness-check-airway-011",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Suctioning the oropharynx should generally be limited to:",
+    "prompt": "You are suctioning vomitus from an unresponsive adult's oropharynx. How long should each suction attempt last?",
     "options": [
       {
         "id": "a",
-        "text": "5 seconds, with no reoxygenation between passes"
+        "text": "No more than 5 seconds, with no reoxygenation needed"
       },
       {
         "id": "b",
-        "text": "Continuous passes until the airway is fully clear"
+        "text": "No more than 15 seconds, reoxygenating between attempts"
       },
       {
         "id": "c",
-        "text": "10 seconds with reoxygenation between attempts"
+        "text": "Up to 30 seconds per pass for thick secretions"
       },
       {
         "id": "d",
-        "text": "30 seconds per pass to clear thick secretions"
+        "text": "Continuously until the airway is completely clear"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Brief suction passes reduce hypoxia risk; reoxygenate between attempts.",
+    "correctOptionId": "b",
+    "explanation": "Suction removes oxygen along with fluid, so each adult attempt is limited to about 15 seconds (children about 10, infants about 5). Ventilate or oxygenate between attempts; if vomitus keeps coming, roll the patient and alternate suction with ventilation.",
     "distractorExplanations": {
-      "a": "Five seconds is the infant guideline, and every pass removes oxygen, so reoxygenation between attempts is still needed.",
-      "b": "Continuous suction causes hypoxia and vagal bradycardia; suction in brief passes with reoxygenation in between.",
-      "d": "Thirty-second passes cause hypoxia; for thick secretions, use brief passes and alternate with ventilation."
+      "a": "Five seconds is the infant limit, and every pass removes oxygen, so reoxygenation between attempts is still needed.",
+      "c": "Thirty-second passes cause hypoxia; for thick secretions, use repeated brief passes alternating with ventilation.",
+      "d": "Continuous suction causes hypoxia and vagal bradycardia; suction in brief passes with reoxygenation in between."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -366,7 +366,7 @@
     "id": "nremt-emr-readiness-check-airway-012",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Which oxygen delivery device provides the highest FiO2 when fitted properly?",
+    "prompt": "A patient in severe respiratory distress who is breathing adequately needs the highest oxygen concentration you can give without ventilating. Which device delivers it when fitted properly?",
     "options": [
       {
         "id": "a",
@@ -386,7 +386,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A nonrebreather with reservoir and sufficient flow can deliver high FiO2.",
+    "explanation": "A nonrebreather with an inflated reservoir and a good seal, run at 10-15 L/min (enough to keep the bag from collapsing on inhalation), delivers roughly 90% oxygen, the highest of the non-ventilating devices an EMR uses.",
     "distractorExplanations": {
       "a": "A nasal cannula at 6 L/min delivers only about 44% oxygen, far below a nonrebreather with reservoir.",
       "b": "A simple mask tops out around 40–60%; without a reservoir bag it cannot match a nonrebreather's concentration.",
@@ -399,7 +399,7 @@
     "id": "nremt-emr-readiness-check-airway-013",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "An apneic adult patient after successful ROSC from CPR should receive",
+    "prompt": "After successful defibrillation, an adult has a palpable pulse (ROSC) but is still not breathing. What care does the patient need?",
     "options": [
       {
         "id": "a",
@@ -419,7 +419,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Post-ROSC patients often need oxygen and ventilatory support with close monitoring. Monitor with pulse oximetry and reassess often.",
+    "explanation": "ROSC restores circulation, not necessarily breathing. An apneic patient with a pulse needs positive-pressure ventilation with supplemental oxygen at about 1 breath every 6 seconds, titrated per protocol, plus frequent pulse checks and pulse oximetry.",
     "distractorExplanations": {
       "b": "An apneic patient cannot draw in nonrebreather oxygen; apnea after ROSC still requires positive-pressure ventilation.",
       "c": "ROSC means a pulse is present; compressions resume only if the pulse is lost again.",
@@ -432,7 +432,7 @@
     "id": "nremt-emr-readiness-check-airway-014",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "When using a pocket mask with a one-way valve, the EMR should?",
+    "prompt": "You are giving rescue breaths through a pocket mask with a one-way valve. How should each breath be delivered?",
     "options": [
       {
         "id": "a",
@@ -452,7 +452,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pocket mask ventilations follow BLS guidelines: slow breaths with visible rise.",
+    "explanation": "Pocket mask breaths follow the same AHA rule as other rescue breaths: about 1 second each, with just enough volume to make the chest rise. The mask seals over both mouth and nose, and the one-way valve protects the rescuer.",
     "distractorExplanations": {
       "a": "The one-way valve adds little resistance; forceful breaths inflate the stomach and raise the risk of vomiting.",
       "c": "The valve protects the rescuer from exhaled air and fluids; removing it adds infection risk without improving ventilation.",
@@ -465,7 +465,7 @@
     "id": "nremt-emr-readiness-check-airway-015",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "airway",
-    "prompt": "Signs of worsening upper airway swelling (e.g., anaphylaxis) include",
+    "prompt": "During an anaphylactic reaction, which findings indicate that upper airway swelling is getting worse?",
     "options": [
       {
         "id": "a",
@@ -485,7 +485,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Stridor, drooling, and dysphagia suggest impending complete airway obstruction.",
+    "explanation": "Swelling of the tongue, larynx, and throat narrows the upper airway: stridor that becomes louder or constant, drooling, and trouble swallowing mean obstruction may soon be complete. Give epinephrine per protocol, prepare to manage the airway, and transport immediately.",
     "distractorExplanations": {
       "a": "Wheezing reflects lower airway bronchospasm; upper airway swelling shows inspiratory stridor and voice change.",
       "b": "Spreading hives show skin involvement of the allergic reaction, not narrowing of the upper airway.",
@@ -495,10 +495,505 @@
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
   },
   {
+    "id": "nremt-emr-readiness-check-airway-016",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A 6-month-old has a pulse of 110 but is not breathing. At what rate do you give rescue breaths?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 8-10 breaths per minute"
+      },
+      {
+        "id": "b",
+        "text": "About 10-12 breaths per minute"
+      },
+      {
+        "id": "c",
+        "text": "About 20-30 breaths per minute"
+      },
+      {
+        "id": "d",
+        "text": "About 40-60 breaths per minute"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Current AHA guidance for an infant or child with a pulse but inadequate breathing is 1 breath every 2-3 seconds, about 20-30 breaths per minute, each over about 1 second with visible chest rise. Reassess the pulse about every 2 minutes.",
+    "distractorExplanations": {
+      "a": "Eight to ten per minute is below even the adult rate; infants need faster breaths to match their higher metabolic demand.",
+      "b": "Ten to twelve per minute approximates the adult rate (1 breath every 6 seconds), too slow for an infant with a pulse.",
+      "d": "Forty to sixty per minute is hyperventilation that causes gastric inflation and reduces venous return in an infant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-017",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "You are about to place a nonrebreather mask on a patient in respiratory distress. What must you do before putting the mask on the face?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fill the reservoir bag by covering the valve with a finger"
+      },
+      {
+        "id": "b",
+        "text": "Set the flow to 2 L/min so the patient can adjust to it"
+      },
+      {
+        "id": "c",
+        "text": "Remove the one-way valves so the patient can inhale easily"
+      },
+      {
+        "id": "d",
+        "text": "Connect the mask to a humidifier filled with tap water"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The reservoir must be pre-filled with oxygen (cover the valve until the bag inflates) and the flow set high enough, usually 10-15 L/min, to keep the bag from collapsing on inhalation. An empty reservoir leaves the patient breathing through a nearly sealed mask.",
+    "distractorExplanations": {
+      "b": "Two liters per minute cannot keep the reservoir inflated; the patient would rebreathe carbon dioxide and suffocate under the mask.",
+      "c": "The one-way valves keep exhaled air out of the reservoir and room air out of the mask; removing them lowers the oxygen delivered.",
+      "d": "Humidification is optional for long transports and uses sterile water; it is not the required step before applying the mask."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-018",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A calm adult at rest is breathing regularly with good chest rise. Which respiratory rate falls within the normal adult range?",
+    "options": [
+      {
+        "id": "a",
+        "text": "8 breaths per minute"
+      },
+      {
+        "id": "b",
+        "text": "16 breaths per minute"
+      },
+      {
+        "id": "c",
+        "text": "28 breaths per minute"
+      },
+      {
+        "id": "d",
+        "text": "36 breaths per minute"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The normal resting respiratory rate for an adult is about 12-20 breaths per minute, with regular rhythm and adequate depth. Rates outside that range, or a normal rate with shallow depth, should prompt assessment of breathing adequacy.",
+    "distractorExplanations": {
+      "a": "Eight per minute is bradypnea in an adult and may signal respiratory depression, such as from opioids or head injury.",
+      "c": "Twenty-eight per minute is tachypnea in an adult and suggests distress, fever, pain, or compensation for shock.",
+      "d": "Thirty-six per minute is markedly fast for an adult at rest and points to significant respiratory distress."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-019",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A 2-year-old with croup has been working hard to breathe for hours. Which finding indicates the child is tiring and may need ventilatory support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A loud, barking cough with each crying spell"
+      },
+      {
+        "id": "b",
+        "text": "Vigorous crying when separated from a parent"
+      },
+      {
+        "id": "c",
+        "text": "A respiratory rate of 34 while alert and fussy"
+      },
+      {
+        "id": "d",
+        "text": "A slowing respiratory rate with drowsiness"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Children compensate for respiratory distress until they tire. A falling respiratory rate combined with decreasing responsiveness signals impending respiratory failure, not improvement, and calls for assisted ventilation and rapid transport.",
+    "distractorExplanations": {
+      "a": "A barking cough is the hallmark of croup and shows the child is still moving air forcefully; it is not a sign of fatigue.",
+      "b": "Vigorous crying means good energy and air movement; a child in respiratory failure becomes quiet and listless.",
+      "c": "A rate in the 30s with alertness is within or near the toddler range and shows the child is still compensating."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-020",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A choking adult you were giving abdominal thrusts to becomes unresponsive. After lowering him to the floor and calling for help, what should you do next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Begin CPR, looking in the mouth before giving breaths"
+      },
+      {
+        "id": "b",
+        "text": "Continue abdominal thrusts with the patient lying supine"
+      },
+      {
+        "id": "c",
+        "text": "Perform blind finger sweeps until the object is found"
+      },
+      {
+        "id": "d",
+        "text": "Give rescue breaths only until the chest finally rises"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When a choking adult becomes unresponsive, begin CPR starting with chest compressions. Each time you open the airway to give breaths, look in the mouth and remove an object only if you can see it, then continue compressions.",
+    "distractorExplanations": {
+      "b": "Once the patient is unresponsive, chest compressions replace abdominal thrusts because they generate higher airway pressure and circulate blood.",
+      "c": "Blind finger sweeps can push the object deeper; remove only an object you can see when you open the mouth.",
+      "d": "Breaths alone neither expel the object nor circulate blood; an unresponsive choking patient needs full CPR starting with compressions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-021",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A conscious woman in late pregnancy is choking and cannot speak. Which technique should you use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abdominal thrusts just above the navel, as for other adults"
+      },
+      {
+        "id": "b",
+        "text": "Back blows alone until the object dislodges"
+      },
+      {
+        "id": "c",
+        "text": "Chest thrusts on the center of the breastbone"
+      },
+      {
+        "id": "d",
+        "text": "A blind finger sweep, then abdominal thrusts"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For choking patients in late pregnancy or who are too large to encircle at the abdomen, the rescuer gives chest thrusts on the lower half of the breastbone instead of abdominal thrusts, repeating until the object is expelled or the patient becomes unresponsive.",
+    "distractorExplanations": {
+      "a": "Abdominal thrusts in late pregnancy compress the uterus and are ineffective because the rescuer cannot reach around the abdomen properly.",
+      "b": "Back blows alone are the infant sequence component; a conscious choking adult needs thrusts that raise airway pressure.",
+      "d": "Blind finger sweeps can push the object deeper and are never the first step for a conscious choking patient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-022",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A patient who had a laryngectomy and breathes through a neck stoma is apneic with a pulse. How should you deliver ventilations?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seal a BVM mask over the mouth and nose as usual"
+      },
+      {
+        "id": "b",
+        "text": "Cover the stoma and ventilate through the mouth"
+      },
+      {
+        "id": "c",
+        "text": "Insert an OPA, then ventilate through the mouth"
+      },
+      {
+        "id": "d",
+        "text": "Seal a small BVM mask directly over the stoma"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A laryngectomy patient breathes through the stoma, so ventilations go through it: use an infant or child mask sealed over the stoma and watch for chest rise. If air escapes from the mouth or nose (partial laryngectomy), seal them.",
+    "distractorExplanations": {
+      "a": "After a total laryngectomy, the mouth and nose no longer connect to the lungs, so mouth-and-nose ventilation moves no air.",
+      "b": "Covering the stoma blocks the only airway; in a total laryngectomy patient the mouth does not lead to the trachea.",
+      "c": "An OPA keeps the tongue off the pharynx, but the pharynx no longer connects to the trachea in a laryngectomy patient."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-023",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "You are inserting a nasopharyngeal airway into a patient's right nostril. How should the device be prepared and positioned?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Water-soluble lubricant, with the bevel toward the septum"
+      },
+      {
+        "id": "b",
+        "text": "Petroleum jelly, with the bevel toward the outer nostril"
+      },
+      {
+        "id": "c",
+        "text": "No lubricant, inserted upside down and rotated 180 degrees"
+      },
+      {
+        "id": "d",
+        "text": "Water-soluble lubricant, aimed upward toward the eye"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lubricate the NPA with a water-soluble lubricant, insert it in the larger nostril (usually the right) with the bevel facing the septum, and advance it gently straight back along the floor of the nasal cavity until the flange rests on the nostril.",
+    "distractorExplanations": {
+      "b": "Petroleum-based lubricant can damage tissue and is not used; the bevel faces the septum, not the outer wall.",
+      "c": "Inserting upside down and rotating 180 degrees is the adult OPA technique, and an unlubricated NPA injures the nasal mucosa.",
+      "d": "The NPA is advanced straight back along the floor of the nose, not upward, which would strike the turbinates and cause bleeding."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-024",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "How should an oropharyngeal airway be inserted in an unresponsive 4-year-old with no gag reflex?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Upside down along the palate, then rotated 180 degrees"
+      },
+      {
+        "id": "b",
+        "text": "Sideways, then rotated 90 degrees as it is advanced"
+      },
+      {
+        "id": "c",
+        "text": "Right side up, using a tongue depressor on the tongue"
+      },
+      {
+        "id": "d",
+        "text": "Through the nose until the flange meets the nostril"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In children, the OPA is inserted right side up following the curve of the tongue while a tongue depressor presses the tongue down and forward. This avoids damaging the soft, easily injured palate that the adult rotation technique can tear.",
+    "distractorExplanations": {
+      "a": "Inserting upside down and rotating is the adult technique; in a child it can injure the soft palate and tear tissue.",
+      "b": "The sideways 90-degree rotation is an alternative adult technique; children receive a tongue depressor and direct insertion.",
+      "d": "Nasal insertion describes a nasopharyngeal airway, not an oropharyngeal airway."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-025",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "An adult with increasing difficulty breathing is being reassessed. Which finding is a late sign of hypoxia?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Restlessness and anxiety"
+      },
+      {
+        "id": "b",
+        "text": "An increased heart rate"
+      },
+      {
+        "id": "c",
+        "text": "An increased respiratory rate and effort"
+      },
+      {
+        "id": "d",
+        "text": "Cyanosis of the lips and nail beds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Early hypoxia causes restlessness, anxiety, tachycardia, and tachypnea as the body compensates. Cyanosis is a late sign that appears only when oxygen saturation is already very low, so treatment should not wait for it.",
+    "distractorExplanations": {
+      "a": "Restlessness and anxiety are early signs of hypoxia, appearing as the brain first senses falling oxygen levels.",
+      "b": "A rising heart rate is an early compensatory response to hypoxia, not a late finding.",
+      "c": "A faster respiratory rate is an early attempt to compensate for low oxygen, before cyanosis develops."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-026",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "A family found drowsy in a house with a generator running indoors all have SpO2 readings of 98-99%. How should you interpret these readings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The readings may be falsely normal; give high-flow oxygen"
+      },
+      {
+        "id": "b",
+        "text": "Oxygenation is adequate, so oxygen can be withheld"
+      },
+      {
+        "id": "c",
+        "text": "The probes are faulty; change fingers and reassess later"
+      },
+      {
+        "id": "d",
+        "text": "Give oxygen only if a repeat reading falls below 94%"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Carbon monoxide binds hemoglobin and standard pulse oximeters cannot tell it from oxygen, so SpO2 can look normal while tissues are hypoxic. Suspected CO exposure is treated with high-flow oxygen by nonrebreather, removal from the source, and transport.",
+    "distractorExplanations": {
+      "b": "Standard pulse oximeters read carboxyhemoglobin as oxygenated hemoglobin, so a normal number does not rule out CO poisoning.",
+      "c": "The device is working as designed; the problem is that it cannot distinguish carbon monoxide from oxygen on hemoglobin.",
+      "d": "Waiting for a drop below 94% may never happen in CO poisoning even as tissue hypoxia worsens; give high-flow oxygen now."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-027",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "Two EMRs are ventilating an apneic adult with a BVM. What is the most effective way to divide the tasks?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One squeezes the bag; the other applies continuous cricoid pressure"
+      },
+      {
+        "id": "b",
+        "text": "One seals and squeezes; the other counts breaths aloud"
+      },
+      {
+        "id": "c",
+        "text": "One seals the mask with both hands; the other squeezes the bag"
+      },
+      {
+        "id": "d",
+        "text": "Each rescuer takes over full BVM duties every 2 minutes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The two-rescuer BVM technique is preferred: one rescuer uses both hands to hold the mask seal and keep the airway open (jaw lift), while the other squeezes the bag over about 1 second per breath. A good seal is the main factor in adequate ventilation.",
+    "distractorExplanations": {
+      "a": "Routine cricoid pressure is no longer recommended; it can hinder ventilation and does not reliably prevent aspiration.",
+      "b": "A single rescuer sealing and squeezing often leaks; the second rescuer is better used holding a two-handed seal.",
+      "d": "Swapping every 2 minutes is the compression-rotation rule for CPR, not a technique for improving BVM ventilation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-028",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "During BVM ventilation of an apneic adult, the patient's upper abdomen becomes steadily more distended. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Press on the upper abdomen to release the trapped air"
+      },
+      {
+        "id": "b",
+        "text": "Squeeze the bag harder to overcome the distension"
+      },
+      {
+        "id": "c",
+        "text": "Stop ventilating until the abdomen softens again"
+      },
+      {
+        "id": "d",
+        "text": "Reposition the airway and give slower, smaller breaths"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Gastric distension comes from excessive volume, rate, or pressure, or a poorly opened airway. Reposition the head and jaw, give each breath over about 1 second with only enough volume for chest rise, have suction ready, and continue ventilating.",
+    "distractorExplanations": {
+      "a": "Pressing on a distended stomach can cause vomiting and aspiration in a patient who cannot protect the airway.",
+      "b": "Harder squeezes force more air into the esophagus and worsen gastric distension and the risk of vomiting.",
+      "c": "An apneic patient becomes hypoxic within minutes if ventilation stops; the technique is corrected, not abandoned."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-029",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "An unresponsive adult has no pulse and takes an occasional gasping breath about every 10 seconds. How should you treat the breathing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As absent breathing; begin CPR without delay"
+      },
+      {
+        "id": "b",
+        "text": "As adequate breathing; place in the recovery position"
+      },
+      {
+        "id": "c",
+        "text": "As slow breathing; give rescue breaths without compressions"
+      },
+      {
+        "id": "d",
+        "text": "As adequate breathing; apply a nonrebreather mask"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Occasional gasps (agonal breathing) are a reflex of a dying brainstem, not effective ventilation. An unresponsive patient with no pulse and only gasping is in cardiac arrest, so begin high-quality CPR and apply the AED immediately.",
+    "distractorExplanations": {
+      "b": "Gasping is not effective breathing, and a pulseless patient in the recovery position receives no circulation at all.",
+      "c": "Rescue breaths alone are for a patient who has a pulse; a pulseless patient needs chest compressions.",
+      "d": "A nonrebreather supplies oxygen only to a patient who breathes effectively and has circulation; this patient has neither."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-airway-030",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "airway",
+    "prompt": "You are opening the airway of an unresponsive 4-month-old. Which head position is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Neck hyperextended, as for an adult"
+      },
+      {
+        "id": "b",
+        "text": "Chin flexed down toward the chest"
+      },
+      {
+        "id": "c",
+        "text": "Neutral position with a towel under the shoulders"
+      },
+      {
+        "id": "d",
+        "text": "A folded pillow under the back of the head to lift it"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An infant's large occiput flexes the neck when lying flat. A thin towel under the shoulders brings the head to a neutral (sniffing) position, which aligns the airway without kinking the soft trachea through over-extension.",
+    "distractorExplanations": {
+      "a": "Hyperextending an infant's neck kinks the soft, flexible trachea and can obstruct the airway.",
+      "b": "Flexing the chin toward the chest closes the infant airway, the same problem the large occiput already causes.",
+      "d": "A pillow under the head flexes the neck further because infants already have a large occiput."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
     "id": "nremt-emr-readiness-check-trauma-001",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Direct pressure fails to control severe extremity bleeding. Your next step is",
+    "prompt": "Firm direct pressure has not controlled severe bleeding from a lower-leg wound. What is your next step?",
     "options": [
       {
         "id": "a",
@@ -518,7 +1013,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Life-threatening extremity hemorrhage uncontrolled by pressure warrants tourniquet application with time documented. Note the time the tourniquet was applied.",
+    "explanation": "Life-threatening extremity bleeding that direct pressure cannot control calls for a tourniquet placed 2-3 inches above the wound (not over a joint) and tightened until bleeding stops. Note and report the time it was applied.",
     "distractorExplanations": {
       "a": "Once direct pressure has failed on severe extremity bleeding, more pressure time delays definitive control by tourniquet.",
       "b": "Elevation and pressure points are no longer recommended for severe bleeding; they delay tourniquet application.",
@@ -531,27 +1026,27 @@
     "id": "nremt-emr-readiness-check-trauma-002",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "A helmeted motorcycle rider is awake with stable vitals after a crash. Helmet removal should occur when",
+    "prompt": "A helmeted motorcycle rider is awake with stable vital signs after a crash. In which situation should the helmet be removed in the field?",
     "options": [
       {
         "id": "a",
-        "text": "Airway or breathing cannot be managed with helmet in place"
+        "text": "The airway or breathing cannot be managed with it on"
       },
       {
         "id": "b",
-        "text": "Before applying a cervical collar on every helmeted rider"
+        "text": "A cervical collar needs to be applied to the rider"
       },
       {
         "id": "c",
-        "text": "When the patient reports neck pain or tingling in the hands"
+        "text": "The rider reports neck pain or tingling in the hands"
       },
       {
         "id": "d",
-        "text": "When the face shield must be lifted to assess the patient"
+        "text": "The face shield must be lifted to assess the patient"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Helmets remain if airway is manageable; remove when airway/breathing needs require it with spinal precautions. Vomiting that cannot be cleared with the helmet on is another indication.",
+    "explanation": "A well-fitting helmet that permits airway access is left on with manual stabilization. It is removed, by two rescuers with inline stabilization, when the airway or breathing cannot be managed, vomit cannot be cleared, or it prevents proper immobilization.",
     "distractorExplanations": {
       "b": "Routine removal is not required; a snug helmet that allows airway access stays on with manual stabilization.",
       "c": "Neck pain or tingling suggests spinal injury, a reason to minimize movement, not to remove a helmet that allows airway care.",
@@ -564,31 +1059,31 @@
     "id": "nremt-emr-readiness-check-trauma-003",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Which patient should be immobilized on a long backboard per typical EMR protocols?",
+    "prompt": "After a rollover crash, which occupant most clearly needs spinal motion restriction under typical protocols?",
     "options": [
       {
         "id": "a",
-        "text": "Stable alert patient who walked away without complaint"
+        "text": "Alert driver with no neck pain and a normal neurologic exam"
       },
       {
         "id": "b",
-        "text": "Mechanism suggesting spinal injury with midline tenderness or neurologic deficit"
+        "text": "Passenger with midline neck tenderness and tingling hands"
       },
       {
         "id": "c",
-        "text": "Any patient with a sprained finger"
+        "text": "Passenger with sore side-of-neck muscles and a normal exam"
       },
       {
         "id": "d",
-        "text": "Patient refusing all care but fully neurologically intact without tenderness"
+        "text": "Alert driver with a seatbelt abrasion and no spinal pain"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Spinal motion restriction is indicated with concerning mechanism plus exam findings.",
+    "explanation": "Common criteria for spinal motion restriction include midline spinal tenderness, a neurologic deficit such as numbness or tingling, altered mental status, intoxication, or a distracting injury. Protocols vary, and long backboards are increasingly reserved for extrication and movement.",
     "distractorExplanations": {
-      "a": "Low suspicion with normal exam may not require immobilization per local protocol.",
-      "c": "Finger sprain alone does not indicate spinal injury.",
-      "d": "Competent refusal may limit immobilization."
+      "a": "An alert, reliable patient with no pain, no tenderness, and normal motor and sensory function meets common criteria for no restriction.",
+      "c": "Lateral muscle soreness without midline tenderness or deficits does not by itself meet common spinal motion restriction criteria.",
+      "d": "A seatbelt abrasion warrants chest and abdominal assessment, but without spinal pain, tenderness, or deficits it does not mandate restriction."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -597,7 +1092,7 @@
     "id": "nremt-emr-readiness-check-trauma-004",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Signs of shock from hemorrhage include",
+    "prompt": "A patient with a deep thigh laceration has lost a large amount of blood. Which findings best fit hemorrhagic shock?",
     "options": [
       {
         "id": "a",
@@ -617,7 +1112,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Hypovolemic shock often presents with tachycardia, poor perfusion, and altered mental status.",
+    "explanation": "Blood loss triggers compensation: the heart speeds up and blood is shunted away from the skin, producing pale, cool, clammy skin and delayed capillary refill. Anxiety or altered mental status and, later, falling blood pressure follow as shock progresses.",
     "distractorExplanations": {
       "a": "Warm skin with bradycardia and hypotension describes neurogenic shock, not hemorrhagic (hypovolemic) shock.",
       "b": "That is Cushing's triad of rising intracranial pressure, not the picture of shock from hemorrhage.",
@@ -630,11 +1125,11 @@
     "id": "nremt-emr-readiness-check-trauma-005",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "An open fracture of the forearm with active bleeding should be managed by:",
+    "prompt": "A forearm fracture has bone protruding through the skin and is bleeding steadily. How should you manage it?",
     "options": [
       {
         "id": "a",
-        "text": "Realigning the exposed bone end into the wound, then splinting it"
+        "text": "Realigning the exposed bone end back into the wound, then splinting it"
       },
       {
         "id": "b",
@@ -650,7 +1145,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Do not replace exposed bone; cover, control hemorrhage, immobilize, and transport. Splint the limb in the position found.",
+    "explanation": "Never push exposed bone back in. Cover the wound with a sterile dressing, control bleeding with pressure around the bone end, splint the limb in the position found, and check circulation, motor, and sensation before and after splinting.",
     "distractorExplanations": {
       "a": "Pulling exposed bone back into the wound contaminates deep tissue; cover it and splint without reducing it.",
       "b": "Most open-fracture bleeding stops with direct pressure; a tourniquet is reserved for life-threatening bleeding pressure cannot control.",
@@ -663,31 +1158,31 @@
     "id": "nremt-emr-readiness-check-trauma-006",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "When splinting a painful swollen ankle, the EMR should:",
+    "prompt": "A hiker has a painful, swollen, deformed ankle after a fall. How should the EMR splint it?",
     "options": [
       {
         "id": "a",
-        "text": "Splint in the position of comfort after neurovascular check"
+        "text": "Check CMS, splint in the position found, recheck CMS"
       },
       {
         "id": "b",
-        "text": "Force the foot into anatomical neutral despite severe pain"
+        "text": "Straighten the foot to neutral first, then splint it"
       },
       {
         "id": "c",
-        "text": "Remove the shoe and leave the joint unsupported"
+        "text": "Wrap the ankle snugly with an elastic bandage only"
       },
       {
         "id": "d",
-        "text": "Apply heat before assessment"
+        "text": "Apply a heat pack to the joint, then splint it loosely"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Splinting in position found after CMS check reduces movement and pain.",
+    "explanation": "Joint injuries are splinted in the position found, immobilizing the bones above and below. Circulation, motor function, and sensation (CMS) are checked before and after splinting so any compromise caused by the injury or the splint is detected.",
     "distractorExplanations": {
-      "b": "Forcing alignment can worsen injury.",
-      "c": "Immobilization is indicated for suspected fracture/sprain.",
-      "d": "Heat is not initial care for acute trauma."
+      "b": "Forcing a deformed joint into alignment can damage nerves and vessels; joints are splinted in the position found.",
+      "c": "An elastic wrap compresses but does not immobilize the bones above and below the injury, and tight wraps can impair circulation.",
+      "d": "Heat increases swelling in an acute injury; cold packs, not heat, are used after splinting to limit swelling and pain."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -696,7 +1191,7 @@
     "id": "nremt-emr-readiness-check-trauma-007",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "A patient impaled by a metal rod through the abdomen should receive",
+    "prompt": "A worker has a metal rod impaled in the abdomen. How should the object be managed?",
     "options": [
       {
         "id": "a",
@@ -716,9 +1211,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Impaled objects remain in place unless they block airway management per medical direction.",
+    "explanation": "An impaled object may be plugging injured vessels, so it is left in place and stabilized with bulky dressings to prevent movement, with bleeding controlled around it. Removal is considered only if it blocks the airway or prevents CPR, per protocol.",
     "distractorExplanations": {
-      "a": "Removal can cause uncontrolled hemorrhage.",
+      "a": "Pulling the object out can release tamponaded vessels and cause uncontrolled internal and external bleeding.",
       "c": "Cutting transmits motion into the wound; an object is shortened only if needed, by rescuers, while it is stabilized.",
       "d": "Increased bleeding is controlled with pressure around the object; removal can release a tamponaded vessel and worsen hemorrhage."
     },
@@ -729,7 +1224,7 @@
     "id": "nremt-emr-readiness-check-trauma-008",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Which burn should receive priority cooling and transport consideration?",
+    "prompt": "Several patients were burned in a house fire. Which burn should receive priority cooling and transport consideration?",
     "options": [
       {
         "id": "a",
@@ -749,7 +1244,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Circumferential chest burns and inhalation signs suggest airway/ventilation risk.",
+    "explanation": "A circumferential chest burn can restrict chest expansion, and singed nasal hairs signal possible inhalation injury with airway swelling. Airway and breathing threats outrank larger or deeper burns elsewhere, so this patient needs priority care and rapid transport.",
     "distractorExplanations": {
       "a": "Superficial burns are not counted in critical burn size; airway involvement and circumferential burns take priority.",
       "b": "A small full-thickness burn away from critical areas is serious but lacks the airway threat of an inhalation injury.",
@@ -762,7 +1257,7 @@
     "id": "nremt-emr-readiness-check-trauma-009",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Tension pneumothorax signs may include",
+    "prompt": "After a fall onto a fence rail, a patient has rapidly worsening shortness of breath. Which findings suggest tension pneumothorax?",
     "options": [
       {
         "id": "a",
@@ -795,7 +1290,7 @@
     "id": "nremt-emr-readiness-check-trauma-010",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "During manual inline stabilization, the EMR holding the head should",
+    "prompt": "You are holding manual inline stabilization on a patient with a suspected neck injury. Which action is correct?",
     "options": [
       {
         "id": "a",
@@ -815,7 +1310,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Inline stabilization continues until an coordinated team applies collar/board. Release only when the collar and full spinal motion restriction are in place.",
+    "explanation": "Manual stabilization continues until the patient is fully secured with spinal motion restriction by a coordinated team. A collar alone is not enough, the head is held without traction, and movement to neutral stops if it causes pain or resistance.",
     "distractorExplanations": {
       "b": "A collar alone does not fully restrict motion; manual stabilization continues until the patient is secured to the device.",
       "c": "Movement to neutral stops if it causes pain, resistance, or new deficits; the head is then held in the position found.",
@@ -828,7 +1323,7 @@
     "id": "nremt-emr-readiness-check-trauma-011",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "A patient with an amputated finger should have the part",
+    "prompt": "A patient's finger was completely amputated by a saw. How should the amputated part be cared for?",
     "options": [
       {
         "id": "a",
@@ -836,22 +1331,22 @@
       },
       {
         "id": "b",
-        "text": "Wrapped moist in sterile gauze, placed in waterproof bag on ice"
+        "text": "Wrapped in dry sterile gauze, sealed in a bag, kept cool"
       },
       {
         "id": "c",
-        "text": "Submerged in a sealed container of sterile saline and kept cool"
+        "text": "Submerged in a sealed container of saline and kept cool"
       },
       {
         "id": "d",
-        "text": "Wrapped in dry gauze and kept at room temperature in a bag"
+        "text": "Wrapped in gauze and kept at room temperature in a bag"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Amputated parts are kept cool and moist without direct ice contact for possible reattachment. Do not let the part touch the ice directly.",
+    "explanation": "Wrap the part in a dry sterile dressing (some local protocols moisten it with sterile saline), seal it in a plastic bag, label it, and keep it cool on cold packs or ice without direct ice contact. Transport it with the patient.",
     "distractorExplanations": {
-      "a": "Direct ice contact freezes and damages tissue; the bagged part rests on ice or cold packs without touching ice.",
-      "c": "Immersion waterlogs the tissue and hampers reattachment; the part is wrapped in moistened gauze, not soaked.",
+      "a": "Direct ice contact freezes and destroys tissue; the bagged part rests on cold packs or ice without touching the ice.",
+      "c": "Immersion waterlogs the tissue and hampers reattachment; the part is wrapped and bagged, never soaked.",
       "d": "Warm tissue deteriorates faster; the bagged part must be kept cool to extend the window for reattachment."
     },
     "difficulty": "medium",
@@ -861,31 +1356,31 @@
     "id": "nremt-emr-readiness-check-trauma-012",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "The primary purpose of the primary trauma survey (ABCDE) is to:",
+    "prompt": "What is the main purpose of the primary assessment in a trauma patient?",
     "options": [
       {
         "id": "a",
-        "text": "Complete full patient history before any interventions"
+        "text": "Gather a complete SAMPLE history before any treatment"
       },
       {
         "id": "b",
-        "text": "Obtain insurance information first"
+        "text": "Find and treat immediate life threats in priority order"
       },
       {
         "id": "c",
-        "text": "Identify and treat immediate life threats in sequence"
+        "text": "Locate and splint every fracture before moving anyone"
       },
       {
         "id": "d",
-        "text": "Splint all injuries before airway assessment"
+        "text": "Record a full set of baseline vital signs to trend"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "ABCDE prioritizes life threats: airway, breathing, circulation, disability, exposure.",
+    "correctOptionId": "b",
+    "explanation": "The primary assessment finds and fixes life threats as they are found: severe bleeding, airway, breathing, circulation, disability, and exposure. Many current curricula put massive external bleeding first (XABCDE) because it kills fastest.",
     "distractorExplanations": {
-      "a": "History follows stabilization.",
-      "b": "Insurance is secondary.",
-      "d": "Airway comes before detailed splinting."
+      "a": "The SAMPLE history belongs to the secondary assessment and is gathered after life threats have been found and treated.",
+      "c": "Splinting is secondary care; fractures are addressed only after airway, breathing, circulation, and severe bleeding are managed.",
+      "d": "Baseline vitals are taken after the primary assessment; delaying treatment of a life threat to measure vitals is an error."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -894,7 +1389,7 @@
     "id": "nremt-emr-readiness-check-trauma-013",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "A flail chest segment may cause",
+    "prompt": "A driver struck the steering wheel and has several adjacent ribs broken in two places. Which finding do you expect?",
     "options": [
       {
         "id": "a",
@@ -914,7 +1409,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Multiple rib fractures create unstable segment with paradoxical motion and hypoventilation.",
+    "explanation": "When two or more adjacent ribs break in two or more places, the free segment moves inward on inhalation and outward on exhalation (paradoxical motion). Breathing becomes painful and ineffective, so watch for hypoventilation and assist ventilations if needed.",
     "distractorExplanations": {
       "a": "Tracheal shift with absent breath sounds is tension pneumothorax; flail chest shows a segment moving opposite the chest wall.",
       "b": "Muffled heart sounds, JVD, and hypotension point to cardiac tamponade, not a flail chest segment.",
@@ -927,11 +1422,11 @@
     "id": "nremt-emr-readiness-check-trauma-014",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "When assessing pulse, motor, and sensation (CMS) distal to an injury, absent distal pulse after splinting means?",
+    "prompt": "After you splint a fractured forearm, the radial pulse that was present before splinting is now absent. What should you do?",
     "options": [
       {
         "id": "a",
-        "text": "Loosen/adjust splint and reassess; prepare for rapid transport"
+        "text": "Loosen and adjust the splint, reassess, and expedite transport"
       },
       {
         "id": "b",
@@ -947,7 +1442,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Loss of distal pulse after immobilization requires adjustment and urgent transport.",
+    "explanation": "A pulse that disappears after splinting usually means the splint or padding is compressing vessels. Loosen and readjust it, recheck circulation, motor, and sensation, and if the pulse does not return, treat it as a limb-threatening emergency.",
     "distractorExplanations": {
       "b": "A tight splint can occlude circulation; loss of a distal pulse after splinting means loosening and adjusting it now.",
       "c": "A new pulse loss is not expected; it signals compromised circulation that needs adjustment and urgent reassessment.",
@@ -960,15 +1455,15 @@
     "id": "nremt-emr-readiness-check-trauma-015",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "trauma",
-    "prompt": "Scene size-up for trauma should include",
+    "prompt": "You are dispatched to a two-car collision. Which elements belong in your scene size-up?",
     "options": [
       {
         "id": "a",
-        "text": "BSI, the chief complaint, SAMPLE history, and baseline vitals"
+        "text": "Standard precautions, chief complaint, SAMPLE history, and vitals"
       },
       {
         "id": "b",
-        "text": "BSI, scene safety, mechanism, number of patients"
+        "text": "Standard precautions, scene safety, mechanism, number of patients"
       },
       {
         "id": "c",
@@ -976,11 +1471,11 @@
       },
       {
         "id": "d",
-        "text": "Scene safety, then rapid trauma exam of the worst patient"
+        "text": "Scene safety, then a rapid trauma exam of the worst patient"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Standard scene approach emphasizes safety, BSI, MOI, and resource requests. Size-up also identifies the need for additional resources.",
+    "explanation": "Scene size-up comes before patient contact: take standard precautions, confirm the scene is safe, identify the mechanism of injury, count the patients, and request additional resources early. Patient assessment begins only after this.",
     "distractorExplanations": {
       "a": "Chief complaint, SAMPLE history, and vitals belong to patient assessment, which begins after the scene size-up.",
       "c": "The primary survey follows scene size-up; it is not part of evaluating hazards, mechanism, and resource needs.",
@@ -988,6 +1483,501 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-016",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A stab wound in the groin is bleeding heavily, and a tourniquet cannot be applied there. How should you control the bleeding?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elevate the leg and place an ice pack over the wound"
+      },
+      {
+        "id": "b",
+        "text": "Squeeze a pressure point above the wound without packing"
+      },
+      {
+        "id": "c",
+        "text": "Cover loosely with a dressing to avoid causing pain"
+      },
+      {
+        "id": "d",
+        "text": "Pack the wound tightly with gauze and hold firm pressure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Junctional wounds (groin, armpit, neck) cannot take a tourniquet. Pack gauze (hemostatic if available) firmly into the wound cavity down to the bleeding source and hold direct pressure for several minutes, then apply a pressure bandage.",
+    "distractorExplanations": {
+      "a": "Elevation and cold do not control arterial bleeding from a junctional wound and delay effective pressure.",
+      "b": "Pressure points are no longer recommended; they are unreliable and delay direct pressure inside the wound.",
+      "c": "A loose dressing hides ongoing hemorrhage; severe bleeding needs packing and firm, sustained pressure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-017",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A tourniquet tightened 2-3 inches above a thigh wound has not stopped the bright red bleeding. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apply a second tourniquet just above the first"
+      },
+      {
+        "id": "b",
+        "text": "Loosen it and switch back to direct pressure"
+      },
+      {
+        "id": "c",
+        "text": "Remove it and reapply it directly over the wound"
+      },
+      {
+        "id": "d",
+        "text": "Elevate the leg and wait several minutes for clotting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "If a correctly placed tourniquet is tightened fully and bleeding continues, apply a second tourniquet just proximal to (above) the first. Thighs often need two because of their muscle mass. Record the application times.",
+    "distractorExplanations": {
+      "b": "Loosening a tourniquet on uncontrolled bleeding restores flow to the wound; tourniquets are tightened, not released, in the field.",
+      "c": "A tourniquet over the wound may not compress the artery and can damage tissue; it belongs proximal to the wound.",
+      "d": "Waiting for clotting while bright red blood flows allows fatal blood loss; add tourniquet pressure now."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-018",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A patient has an open chest wound that bubbles and sucks air with each breath. Which dressing is preferred?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bulky gauze packed deep into the wound"
+      },
+      {
+        "id": "b",
+        "text": "A moist sterile dressing taped on all sides loosely"
+      },
+      {
+        "id": "c",
+        "text": "A vented chest seal, monitoring for tension"
+      },
+      {
+        "id": "d",
+        "text": "A tight elastic wrap around the entire chest"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An open pneumothorax is sealed with a vented chest seal or an occlusive dressing. Watch closely for tension pneumothorax (worsening distress, falling BP); if it develops, briefly lift (burp) the seal per protocol to release trapped air.",
+    "distractorExplanations": {
+      "a": "Packing is for extremity and junctional bleeding; packing a chest wound does not seal it and may enter the pleural space.",
+      "b": "A loosely taped moist dressing lets air keep entering the chest; the seal must be occlusive.",
+      "d": "A tight chest wrap restricts chest expansion and worsens ventilation without sealing the wound."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-019",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "Loops of bowel are protruding from a laceration in a patient's abdomen. How should you manage them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gently push the organs back inside the abdomen"
+      },
+      {
+        "id": "b",
+        "text": "Cover with dry gauze and pack it down firmly"
+      },
+      {
+        "id": "c",
+        "text": "Leave them uncovered and apply cold packs around the wound edges"
+      },
+      {
+        "id": "d",
+        "text": "Cover with a moist sterile dressing and an occlusive layer"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An abdominal evisceration is covered with a sterile dressing moistened with sterile saline, then an occlusive layer to keep the organs moist and warm. Position the patient with knees flexed if tolerated, treat for shock, and transport.",
+    "distractorExplanations": {
+      "a": "Replacing organs introduces contamination and can injure them further; eviscerated organs are never pushed back.",
+      "b": "Dry gauze sticks to and dries out exposed bowel, and packing it down damages the organs.",
+      "c": "Uncovered organs dry out, lose heat, and become contaminated; cold packs worsen heat loss."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-020",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "An adult has partial-thickness burns over the entire front of the chest and abdomen and the entire right arm. Using the rule of nines, what is the estimated burned body surface area?",
+    "options": [
+      {
+        "id": "a",
+        "text": "18%"
+      },
+      {
+        "id": "b",
+        "text": "27%"
+      },
+      {
+        "id": "c",
+        "text": "36%"
+      },
+      {
+        "id": "d",
+        "text": "45%"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "In the adult rule of nines, the entire anterior trunk is 18% and each entire arm is 9%. Anterior trunk 18% + right arm 9% = 27% BSA. Superficial burns are not counted in this estimate.",
+    "distractorExplanations": {
+      "a": "Eighteen percent counts only the anterior trunk and leaves out the 9% for the entire right arm.",
+      "c": "Thirty-six percent counts the whole trunk front and back (or two arms); only the front of the trunk and one arm are burned.",
+      "d": "Forty-five percent adds regions that are not burned; the anterior trunk (18%) and one arm (9%) total 27%."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-021",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A cook spilled hot oil on his forearm 2 minutes ago. Which initial burn care is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cool with clean running water, then apply a dry sterile dressing"
+      },
+      {
+        "id": "b",
+        "text": "Apply ice directly to the burn for 20 minutes, then cover it"
+      },
+      {
+        "id": "c",
+        "text": "Apply butter or ointment to seal the skin, then cover it loosely"
+      },
+      {
+        "id": "d",
+        "text": "Open any blisters to release the fluid, then cover with dry gauze"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Stop the burning process and cool a small burn with clean, cool running water (first-aid guidance is about 20 minutes, avoiding hypothermia with large burns), remove jewelry, then cover with a dry sterile dressing. Never use ice, butter, or ointments.",
+    "distractorExplanations": {
+      "b": "Ice causes vasoconstriction and frostbite-like injury to already damaged skin, deepening the burn.",
+      "c": "Butter and ointments trap heat, increase infection risk, and must be removed at the hospital.",
+      "d": "Intact blisters protect against infection; breaking them opens the wound to contamination."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-022",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A worker's arms are covered in dry lime powder from a broken bag. How should you decontaminate the skin?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flush immediately without brushing off the powder"
+      },
+      {
+        "id": "b",
+        "text": "Brush off the powder, then flush with large amounts of water"
+      },
+      {
+        "id": "c",
+        "text": "Neutralize the powder with vinegar before flushing"
+      },
+      {
+        "id": "d",
+        "text": "Wipe with a damp towel, then cover the arms with a dry dressing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Dry chemicals such as lime are brushed off first (with PPE), then the skin is flushed with large volumes of water for an extended period. Remove contaminated clothing and jewelry, and continue flushing en route if needed.",
+    "distractorExplanations": {
+      "a": "Wetting a large amount of dry lime first creates a caustic solution on the skin before most of the powder is removed.",
+      "c": "Neutralizing agents produce heat and worsen the burn; plain water is the decontaminating agent.",
+      "d": "A damp towel activates the lime without removing it, and covering the skin traps the chemical against it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-023",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A lineman lies unresponsive next to a downed power line. What is your first action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move the wire away using a dry wooden branch or broom handle"
+      },
+      {
+        "id": "b",
+        "text": "Drag the patient away by his clothing"
+      },
+      {
+        "id": "c",
+        "text": "Keep away until the utility shuts off the power"
+      },
+      {
+        "id": "d",
+        "text": "Begin CPR, then call the power company"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Downed lines and anything touching them may be energized, and the ground around them can carry current. Stay well back, keep others away, and do not approach until the utility confirms the power is off; then assess for cardiac arrest and burns.",
+    "distractorExplanations": {
+      "a": "Wood and other improvised tools can conduct high voltage; rescuers do not handle wires themselves.",
+      "b": "Touching the patient while he may still be energized, or crossing energized ground, can electrocute the rescuer.",
+      "d": "Approaching to start CPR before the power is confirmed off puts the rescuer at risk of electrocution."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-024",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "After a fall, a patient has bruising behind both ears and clear fluid draining from the nose. Which injury do these findings suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A concussion without any fracture"
+      },
+      {
+        "id": "b",
+        "text": "A broken nose (nasal fracture)"
+      },
+      {
+        "id": "c",
+        "text": "A fracture of the cervical spine"
+      },
+      {
+        "id": "d",
+        "text": "A basilar skull fracture"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bruising behind the ears (Battle's sign), bruising around the eyes (raccoon eyes), and clear fluid (cerebrospinal fluid) from the nose or ears indicate a basilar skull fracture. Do not pack the nose or insert a nasal airway.",
+    "distractorExplanations": {
+      "a": "A concussion causes confusion or memory loss but does not produce bruising behind the ears or cerebrospinal fluid leakage.",
+      "b": "A nasal fracture causes bleeding and deformity of the nose, not clear fluid with bruising behind the ears.",
+      "c": "A cervical spine fracture causes neck pain or neurologic deficits, not mastoid bruising or fluid from the nose."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-025",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A head-injured patient does not respond to your voice but moans and pulls away when you pinch the trapezius. Which AVPU level is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A - alert"
+      },
+      {
+        "id": "b",
+        "text": "V - responds when spoken to aloud"
+      },
+      {
+        "id": "c",
+        "text": "P - responds to painful stimuli"
+      },
+      {
+        "id": "d",
+        "text": "U - unresponsive"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "AVPU grades responsiveness: Alert, responds to Verbal stimuli, responds to Painful stimuli, or Unresponsive. A patient who ignores voice but moans and withdraws from a trapezius pinch is at the P level, which is a significant decrease.",
+    "distractorExplanations": {
+      "a": "An alert patient has open eyes and interacts spontaneously without being prompted.",
+      "b": "A verbal-level patient responds when spoken to; this patient responds only to the painful stimulus.",
+      "d": "An unresponsive patient makes no response even to pain; this patient moans and withdraws."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-026",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A pedestrian struck by a car has pelvic pain and signs of shock. How should you handle the suspected pelvic fracture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Avoid rocking it; apply a binder at the greater trochanters"
+      },
+      {
+        "id": "b",
+        "text": "Compress and rock the pelvis firmly to confirm it is unstable"
+      },
+      {
+        "id": "c",
+        "text": "Apply a pelvic binder around the waist at the iliac crests"
+      },
+      {
+        "id": "d",
+        "text": "Raise the legs 12 inches to treat the shock first"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An unstable pelvic fracture can bleed massively into the pelvis. Avoid repeated movement or rocking, stabilize with a pelvic binder or sheet centered over the greater trochanters (per protocol), treat for shock, and transport rapidly.",
+    "distractorExplanations": {
+      "b": "Rocking an unstable pelvis can dislodge clots and worsen life-threatening internal bleeding; it is never repeated.",
+      "c": "A binder placed at the waist does not close the pelvic ring; it must be centered over the greater trochanters.",
+      "d": "Leg elevation moves the fractured pelvis and is no longer routine shock care for suspected pelvic injury."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-027",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A cyclist fell on an outstretched arm and has a deformed, painful collarbone. Which immobilization is most appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A rigid board splint along the forearm only"
+      },
+      {
+        "id": "b",
+        "text": "A sling and swathe holding the arm against the chest"
+      },
+      {
+        "id": "c",
+        "text": "Traction on the arm to realign the collarbone"
+      },
+      {
+        "id": "d",
+        "text": "An elastic wrap around the shoulder, leaving the arm free to move"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Clavicle and shoulder injuries are immobilized with a sling to support the arm's weight and a swathe to hold the arm against the chest. Check circulation, motor function, and sensation in the hand before and after.",
+    "distractorExplanations": {
+      "a": "A forearm board splint immobilizes the wrist and forearm but leaves the clavicle and shoulder free to move.",
+      "c": "EMRs do not apply traction to realign a clavicle; manipulation can injure the vessels and nerves beneath it.",
+      "d": "An elastic wrap without arm support lets the arm's weight pull on the fracture with every movement."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-028",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A metal shard is impaled in a worker's right eye. How should you manage it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove it gently and patch the injured eye"
+      },
+      {
+        "id": "b",
+        "text": "Cover only the injured eye with firm pressure"
+      },
+      {
+        "id": "c",
+        "text": "Stabilize it with a cup and cover both eyes"
+      },
+      {
+        "id": "d",
+        "text": "Flush the eye with water to wash it free"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Stabilize an impaled eye object with bulky dressing and a protective cup without pressing on the globe, and cover the uninjured eye as well. The eyes move together, so covering both reduces movement of the injured eye.",
+    "distractorExplanations": {
+      "a": "Removing an impaled object can cause loss of eye contents and permanent blindness; it is stabilized in place.",
+      "b": "Firm pressure on an injured globe can force out its contents, and the uninjured eye must also be covered.",
+      "d": "Irrigation is for chemical exposures; flushing an impaled object can move it and worsen the injury."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-029",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A worker splashed a cleaning chemical into his left eye. How should you irrigate it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Outward from the inner corner for about 2 minutes"
+      },
+      {
+        "id": "b",
+        "text": "From the outer corner toward the nose for at least 20 minutes"
+      },
+      {
+        "id": "c",
+        "text": "With a neutralizing solution, then patch the eye"
+      },
+      {
+        "id": "d",
+        "text": "Outward from the inner corner for at least 15-20 minutes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hold the eyelids open and flush with clean water or saline from the inner corner (near the nose) outward, so runoff does not reach the other eye. Continue for at least 15-20 minutes, longer for alkalis or per protocol, and remove contact lenses if possible.",
+    "distractorExplanations": {
+      "a": "Two minutes is far too short; chemicals keep injuring the eye unless flushing continues for an extended period.",
+      "b": "Flushing toward the nose can carry the chemical into the uninjured eye; flow goes from the inner corner outward.",
+      "c": "Neutralizing agents can cause heat and further injury; plain water or saline is used, and patching comes later."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-trauma-030",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "trauma",
+    "prompt": "A patient has a spontaneous nosebleed with no trauma. Which positioning and care do you provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sit leaning forward and pinch the soft part of the nose"
+      },
+      {
+        "id": "b",
+        "text": "Tilt the head back and pinch the bony bridge of the nose"
+      },
+      {
+        "id": "c",
+        "text": "Lie flat and pack the nostril tightly with gauze"
+      },
+      {
+        "id": "d",
+        "text": "Lean back and apply ice to the back of the neck"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Have the patient sit up and lean forward so blood drains out rather than into the throat, and pinch the soft, fleshy part of the nose firmly for about 10-15 minutes. Most anterior nosebleeds stop with sustained pressure.",
+    "distractorExplanations": {
+      "b": "Tilting the head back sends blood down the throat, causing nausea, vomiting, and aspiration risk, and the bridge is not where bleeding occurs.",
+      "c": "Lying flat lets blood run into the airway, and packing the nose is not an EMR intervention.",
+      "d": "Leaning back lets blood drain into the throat, and ice on the neck does not compress the bleeding vessels."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
   },
   {
     "id": "nremt-emr-readiness-check-medical-001",
@@ -1026,7 +2016,7 @@
     "id": "nremt-emr-readiness-check-medical-002",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "FAST stroke assessment includes checking for:",
+    "prompt": "A bystander asks what the FAST stroke screen checks. Which list is correct?",
     "options": [
       {
         "id": "a",
@@ -1046,7 +2036,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Face, Arms, Speech, Time helps identify stroke and urgency for transport.",
+    "explanation": "FAST stands for Face (droop), Arms (drift), Speech (slurred or absent), and Time: the time of onset or last known well. That time decides eligibility for clot-dissolving treatment, so it must be documented and passed to the receiving facility.",
     "distractorExplanations": {
       "a": "Glucose is checked to rule out hypoglycemia mimics, but the T in FAST is time of onset (last known well).",
       "b": "The A in FAST is arm drift, not abdominal pain, and temperature is not a FAST element.",
@@ -1059,7 +2049,7 @@
     "id": "nremt-emr-readiness-check-medical-003",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "A diabetic patient is confused, diaphoretic, and tremulous with a glucose of 52 mg/dL. You should",
+    "prompt": "A diabetic patient is confused, sweaty, and shaky, with a glucose reading of 52 mg/dL. What should you do?",
     "options": [
       {
         "id": "a",
@@ -1079,7 +2069,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Conscious hypoglycemia with intact swallow gets fast-acting oral glucose per protocol.",
+    "explanation": "A symptomatic low glucose is treated promptly. If the patient is awake enough to follow commands, can protect the airway, and swallows safely, give oral glucose per local protocol, then reassess mental status and recheck glucose about 15 minutes later.",
     "distractorExplanations": {
       "b": "Insulin lowers glucose further; it treats hyperglycemia and would worsen this patient's hypoglycemia.",
       "c": "A symptomatic glucose of 52 mg/dL is treated now; the 15-minute recheck comes after giving oral glucose.",
@@ -1092,7 +2082,7 @@
     "id": "nremt-emr-readiness-check-medical-004",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Anaphylaxis with wheeze and hypotension after bee sting requires:",
+    "prompt": "A patient stung by a bee develops wheezing, hives, and a blood pressure of 78/50. What treatment is required?",
     "options": [
       {
         "id": "a",
@@ -1112,7 +2102,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Anaphylaxis is treated with IM epinephrine and urgent ALS/transport.",
+    "explanation": "Wheezing plus hypotension means systemic anaphylaxis. Intramuscular epinephrine, by the patient's prescribed auto-injector or per protocol, reverses bronchospasm and vasodilation; give it without delay, transport rapidly, and be ready to repeat per protocol.",
     "distractorExplanations": {
       "a": "Antihistamines do not reverse hypotension or bronchospasm; anaphylaxis needs epinephrine first.",
       "c": "Oxygen supports but does not reverse anaphylaxis; delaying epinephrine and transport worsens outcomes.",
@@ -1125,31 +2115,31 @@
     "id": "nremt-emr-readiness-check-medical-005",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "A patient with crushing substernal chest pain and nitroglycerin prescribed should receive NTG only if",
+    "prompt": "Your local protocol lets EMRs help patients take their own prescribed nitroglycerin for chest pain. Which patient may you assist?",
     "options": [
       {
         "id": "a",
-        "text": "Systolic BP is adequate per protocol and patient has not taken PDE-5 inhibitor recently"
+        "text": "BP 138/84, no erectile-dysfunction drugs, own nitroglycerin"
       },
       {
         "id": "b",
-        "text": "Patient took sildenafil within 24–48 hours per drug interaction rules"
+        "text": "BP 142/90, took sildenafil 12 hours ago, own nitroglycerin"
       },
       {
         "id": "c",
-        "text": "Patient is hypotensive below 90 systolic"
+        "text": "BP 84/50, no erectile-dysfunction drugs, own nitroglycerin"
       },
       {
         "id": "d",
-        "text": "Pain is clearly from ankle sprain"
+        "text": "BP 136/80, no erectile-dysfunction drugs, wife's nitroglycerin"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Nitroglycerin is contraindicated in hypotension and recent PDE-5 inhibitor use.",
+    "correctOptionId": "a",
+    "explanation": "Nitroglycerin dilates vessels and lowers blood pressure. Before assisting, confirm it is the patient's own prescription, that systolic BP meets the protocol minimum, and that no PDE-5 inhibitor (sildenafil, tadalafil) has been taken recently. National EMR scope may not include this, so follow local protocol.",
     "distractorExplanations": {
-      "a": "Adequate BP and no recent PDE-5 use are required.",
-      "b": "PDE-5 interaction risks severe hypotension.",
-      "d": "Chest pain protocol applies to suspected cardiac pain."
+      "b": "Sildenafil taken within about 24 hours (48 for tadalafil) combines with nitroglycerin to cause severe hypotension, so it is withheld.",
+      "c": "A systolic pressure below the protocol minimum (commonly 90-100 mmHg) is a contraindication, because nitroglycerin lowers BP further.",
+      "d": "Only the patient's own prescribed nitroglycerin may be assisted; another person's medication is never given."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1158,7 +2148,7 @@
     "id": "nremt-emr-readiness-check-medical-006",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Syncope with rapid recovery in a hot environment suggests",
+    "prompt": "A roofer faints on a hot afternoon but is alert within a minute, with cool, moist skin. What is the most likely problem and first step?",
     "options": [
       {
         "id": "a",
@@ -1178,7 +2168,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Heat exhaustion/syncope needs cooling, rest, and assessment for worsening heat stroke. Assess hydration and perfusion after moving the patient.",
+    "explanation": "Brief fainting with quick recovery and cool, moist skin fits heat syncope or heat exhaustion. Move the patient to a cool place, loosen clothing, and assess hydration, perfusion, and mental status while watching for progression to heat stroke.",
     "distractorExplanations": {
       "a": "Heat stroke presents with persistent altered mental status and hot skin; rapid recovery points to heat syncope or exhaustion.",
       "b": "A brief faint with quick recovery in the heat fits heat syncope; a seizure is typically followed by a postictal period.",
@@ -1191,7 +2181,7 @@
     "id": "nremt-emr-readiness-check-medical-007",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Seizure activity has stopped and the patient is postictal but breathing adequately. You should",
+    "prompt": "Seizure activity has stopped, and the patient is postictal but breathing adequately. What should you do now?",
     "options": [
       {
         "id": "a",
@@ -1224,7 +2214,7 @@
     "id": "nremt-emr-readiness-check-medical-008",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Which vital sign pattern suggests decompensated shock in a medical patient?",
+    "prompt": "Which set of vital signs suggests decompensated shock in a patient with severe vomiting and diarrhea?",
     "options": [
       {
         "id": "a",
@@ -1244,7 +2234,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Tachycardia, hypotension, poor perfusion, and AMS suggest shock.",
+    "explanation": "Decompensated shock begins when compensation fails: blood pressure falls despite a fast heart rate, perfusion worsens, and the underperfused brain produces altered mental status. Hypotension is the dividing line from compensated shock.",
     "distractorExplanations": {
       "a": "Tachycardia and cool skin with a normal BP is compensated shock; decompensation adds falling BP and altered mentation.",
       "c": "Hypertension with a slow pulse and irregular breathing is Cushing's triad of rising ICP, not shock.",
@@ -1257,7 +2247,7 @@
     "id": "nremt-emr-readiness-check-medical-009",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "A patient with asthma has silent chest and exhaustion. This indicates",
+    "prompt": "An adult asthma patient who was wheezing loudly now has a silent chest and looks exhausted. What does this indicate?",
     "options": [
       {
         "id": "a",
@@ -1277,7 +2267,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Silent chest and fatigue are ominous signs of severe bronchospasm/respiratory failure. Request advanced care early.",
+    "explanation": "A silent chest means so little air is moving that wheezes can no longer be heard, and exhaustion means the breathing muscles are failing. This is impending respiratory arrest: assist ventilations as needed, request ALS early, and transport rapidly.",
     "distractorExplanations": {
       "a": "Less wheezing with exhaustion means too little air is moving to wheeze; a silent chest is ominous, not improvement.",
       "b": "Exhaustion with a silent chest is respiratory failure; attributing it to anxiety delays ventilation and transport.",
@@ -1290,7 +2280,7 @@
     "id": "nremt-emr-readiness-check-medical-010",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "For suspected opioid overdose with respiratory depression, EMR care includes:",
+    "prompt": "A patient with pinpoint pupils is breathing 4 times per minute after a suspected opioid overdose. What does EMR care include?",
     "options": [
       {
         "id": "a",
@@ -1310,7 +2300,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Opioid overdose management prioritizes ventilation and naloxone when authorized.",
+    "explanation": "Respiratory depression is what kills in opioid overdose. Open the airway and ventilate with a BVM and oxygen, give naloxone (intranasal or auto-injector) per protocol, and keep ventilating until breathing is adequate; naloxone can wear off before the opioid does.",
     "distractorExplanations": {
       "a": "Stimulation does not correct respiratory depression; inadequate breathing needs BVM ventilation and naloxone per protocol.",
       "b": "Naloxone takes minutes and may be insufficient; ventilate with a BVM while naloxone is given.",
@@ -1356,7 +2346,7 @@
     "id": "nremt-emr-readiness-check-medical-012",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "A febrile patient with altered mental status and hot dry skin may have",
+    "prompt": "A runner who collapsed in a summer race is confused, with hot skin and a very high body temperature. What is the likely condition?",
     "options": [
       {
         "id": "a",
@@ -1376,7 +2366,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Heat stroke presents with CNS dysfunction and hot skin; it is life-threatening.",
+    "explanation": "Heat stroke is defined by central nervous system dysfunction with a dangerously high core temperature; the skin may be hot and dry or still sweaty. It is life-threatening, so start rapid cooling (cold-water immersion where available) and transport.",
     "distractorExplanations": {
       "a": "Heat exhaustion keeps mental status near normal with moist skin; altered mentation with hot, dry skin is heat stroke.",
       "c": "Hypoglycemia causes cool, clammy skin; fever with hot, dry skin and altered mentation points to heat stroke.",
@@ -1389,7 +2379,7 @@
     "id": "nremt-emr-readiness-check-medical-013",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "When assisting a prescribed epinephrine auto-injector, the injection site is typically?",
+    "prompt": "You are helping a patient use her prescribed epinephrine auto-injector. Where should it be injected?",
     "options": [
       {
         "id": "a",
@@ -1409,7 +2399,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Auto-injectors are administered IM in the anterolateral thigh.",
+    "explanation": "Epinephrine auto-injectors are designed for intramuscular injection into the outer (anterolateral) thigh, the vastus lateralis, which absorbs quickly; they can be given through clothing and are held in place for the time in the device instructions.",
     "distractorExplanations": {
       "a": "Auto-injectors are designed for the anterolateral thigh; gluteal injection risks fat deposition or sciatic nerve injury.",
       "b": "Subcutaneous absorption is slower; epinephrine auto-injectors deliver an IM dose into the lateral thigh.",
@@ -1422,7 +2412,7 @@
     "id": "nremt-emr-readiness-check-medical-014",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Priority for a patient with severe abdominal pain and rigid abdomen includes:",
+    "prompt": "A patient has severe abdominal pain with a rigid, board-like abdomen. Which care is the priority?",
     "options": [
       {
         "id": "a",
@@ -1442,7 +2432,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Acute rigid abdomen may indicate surgical emergency; NPO and urgent transport are key.",
+    "explanation": "A rigid abdomen suggests peritonitis or internal bleeding that may need surgery. Give nothing by mouth, let the patient stay in a position of comfort (often knees drawn up), monitor for shock, and arrange rapid transport.",
     "distractorExplanations": {
       "a": "A rigid abdomen may need surgery; anything by mouth risks vomiting and aspiration, so the patient stays NPO.",
       "b": "Abdominal pain patients usually prefer knees flexed, and the painful quadrant is palpated last to avoid guarding.",
@@ -1455,7 +2445,7 @@
     "id": "nremt-emr-readiness-check-medical-015",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "medical",
-    "prompt": "Pulse oximetry reading 88% on room air in a symptomatic patient should prompt",
+    "prompt": "A short-of-breath patient has an SpO2 of 88% on room air. What should this reading prompt?",
     "options": [
       {
         "id": "a",
@@ -1475,7 +2465,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hypoxemia with symptoms warrants supplemental oxygen and further assessment/transport.",
+    "explanation": "An SpO2 below about 94% with symptoms means hypoxemia. Give supplemental oxygen per protocol, titrated to the target range, and reassess work of breathing, mental status, and readings; switch to BVM ventilation only if breathing becomes inadequate.",
     "distractorExplanations": {
       "b": "Checking probe placement is reasonable, but a symptomatic patient at 88% needs oxygen now, not delayed treatment.",
       "c": "Below about 94% in a symptomatic patient, oxygen is indicated; waiting for 85% delays needed treatment.",
@@ -1485,34 +2475,529 @@
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
   },
   {
-    "id": "nremt-emr-readiness-check-ops-001",
+    "id": "nremt-emr-readiness-check-medical-016",
     "examSlug": "nremt-emr-readiness-check",
-    "topicId": "ops",
-    "prompt": "Upon arrival at a motor vehicle collision, the EMR's first priority is",
+    "topicId": "medical",
+    "prompt": "During adult CPR, how deep should chest compressions be?",
     "options": [
       {
         "id": "a",
-        "text": "Patient care before any scene safety assessment"
+        "text": "1 to 1.5 inches (2.5-4 cm)"
       },
       {
         "id": "b",
-        "text": "Determine scene safety and use appropriate PPE"
+        "text": "1.5 to 2 inches (4-5 cm)"
       },
       {
         "id": "c",
-        "text": "Interview witnesses for legal statements"
+        "text": "2 to 2.4 inches (5-6 cm)"
       },
       {
         "id": "d",
-        "text": "Begin triage without notifying dispatch of hazards"
+        "text": "2.5 to 3 inches (6-7.5 cm)"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "AHA guidance for adults is a compression depth of at least 2 inches (5 cm) but not more than about 2.4 inches (6 cm), at 100-120 per minute, allowing full chest recoil and minimizing interruptions.",
+    "distractorExplanations": {
+      "a": "One to 1.5 inches is too shallow to generate adequate blood flow in an adult; it is closer to infant depth.",
+      "b": "One and a half to 2 inches approximates infant and child depth, short of the adult minimum of 2 inches.",
+      "d": "Compressing more than about 2.4 inches increases injury risk without improving blood flow in an adult."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-017",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "Two rescuers are performing CPR on an unresponsive 6-year-old with no pulse. Which compression-to-ventilation ratio do they use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "15:1"
+      },
+      {
+        "id": "b",
+        "text": "15:2"
+      },
+      {
+        "id": "c",
+        "text": "30:1"
+      },
+      {
+        "id": "d",
+        "text": "30:2"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Scene safety and BSI precede patient contact per standard EMS operations.",
+    "explanation": "AHA guidance: single rescuers use 30:2 for all ages, but two rescuers caring for an infant or child use 15:2 to provide more ventilation, since pediatric arrests are usually caused by respiratory failure.",
     "distractorExplanations": {
-      "a": "Unsafe scenes endanger responders and patients.",
-      "c": "Witnesses are secondary to safety and care.",
-      "d": "Communicate hazards and request resources."
+      "a": "Fifteen compressions to one breath is not an AHA ratio; two breaths follow each cycle of 15 compressions.",
+      "c": "Thirty to one is not an AHA ratio; each cycle ends with two breaths.",
+      "d": "Thirty to two is the single-rescuer ratio for children and the ratio for adults, not two-rescuer child CPR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-018",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "Two trained rescuers are giving CPR to an infant. Which compression technique is recommended?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two fingers placed on the breastbone just below the nipples"
+      },
+      {
+        "id": "b",
+        "text": "Two-thumb encircling hands on the lower half of the sternum"
+      },
+      {
+        "id": "c",
+        "text": "The heel of both hands on the center of the chest"
+      },
+      {
+        "id": "d",
+        "text": "One hand on the upper sternum near the sternal notch"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "For infants, two rescuers use the two-thumb encircling-hands technique on the lower half of the sternum, compressing about 1.5 inches (4 cm), one-third of chest depth. It produces better depth and blood flow than two fingers.",
+    "distractorExplanations": {
+      "a": "Two-finger compressions are often too shallow; 2025 AHA guidance dropped them in favor of two-thumb or one-hand technique.",
+      "c": "Two hands are the adult technique and are too forceful and too large for an infant's chest.",
+      "d": "Compressions on the upper sternum near the notch miss the heart and risk injury; the lower half of the sternum is used."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-019",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "You need an AED for a pulseless 4-year-old but have only adult pads. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Withhold the AED and continue CPR alone"
+      },
+      {
+        "id": "b",
+        "text": "Cut the adult pads in half to fit the chest"
+      },
+      {
+        "id": "c",
+        "text": "Use the adult pads, front and back if they would touch"
+      },
+      {
+        "id": "d",
+        "text": "Use a single adult pad placed on the center of the chest"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Use pediatric pads or attenuator for children under 8 if available; if not, use adult pads. If adult pads would touch on a small chest, place one in front (center chest) and one on the back between the shoulder blades.",
+    "distractorExplanations": {
+      "a": "Defibrillation saves lives in shockable pediatric arrests; adult pads are used when pediatric pads are unavailable.",
+      "b": "Cutting pads destroys the electrode and its wiring, so no shock can be delivered.",
+      "d": "A shock needs two pads to complete the circuit through the heart; one pad cannot defibrillate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-020",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A pulseless swimmer has just been pulled from a pool. What should you do before applying AED pads?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wait until the chest has air-dried completely"
+      },
+      {
+        "id": "b",
+        "text": "Place the pads on the back to avoid the wet chest"
+      },
+      {
+        "id": "c",
+        "text": "Skip the AED because water conducts the current"
+      },
+      {
+        "id": "d",
+        "text": "Move him out of standing water and dry the chest"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Water can divert current across the skin and reduce the shock reaching the heart. Move the patient out of standing water, quickly dry the chest, apply the pads, and ensure no one is touching the patient during analysis and shock.",
+    "distractorExplanations": {
+      "a": "Waiting for the chest to air-dry delays defibrillation; wipe it dry quickly with a towel instead.",
+      "b": "Moving pads to the back does not solve a wet chest and places them incorrectly for most patients.",
+      "c": "Water is not a reason to withhold the AED; moving the patient out of water and drying the chest makes it safe."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-021",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "An unresponsive adult is not breathing normally. How long should you spend checking for a pulse before starting CPR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No more than 5 seconds"
+      },
+      {
+        "id": "b",
+        "text": "No more than 10 seconds"
+      },
+      {
+        "id": "c",
+        "text": "Between 15 and 20 seconds"
+      },
+      {
+        "id": "d",
+        "text": "About 30 seconds"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "AHA guidance limits the pulse check to no more than 10 seconds, done while checking breathing. If a definite pulse is not felt in that time in an unresponsive patient who is not breathing normally, start compressions.",
+    "distractorExplanations": {
+      "a": "Five seconds is shorter than the AHA guideline and may miss a slow pulse, but the limit is 10 seconds.",
+      "c": "Spending 15-20 seconds on a pulse check delays compressions; begin CPR if no definite pulse is felt in 10 seconds.",
+      "d": "Thirty seconds without compressions sharply lowers survival; pulse checks are limited to 10 seconds."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-022",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A hiker found outdoors is shivering, confused, and has cold skin. How should you handle and warm him?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Handle gently, remove wet clothing, and warm passively"
+      },
+      {
+        "id": "b",
+        "text": "Rub the arms and legs vigorously to restore circulation"
+      },
+      {
+        "id": "c",
+        "text": "Give him coffee to warm him from the inside"
+      },
+      {
+        "id": "d",
+        "text": "Walk him around briskly to generate body heat"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hypothermia care: move the patient to a warm environment, handle gently (rough movement can trigger ventricular fibrillation), remove wet clothing, insulate with dry blankets, and warm passively. Give nothing by mouth to a confused patient.",
+    "distractorExplanations": {
+      "b": "Rubbing the extremities can injure cold tissue and push cold blood to the core; handle the patient gently.",
+      "c": "Caffeine and hot drinks are not given to a confused patient who may aspirate; warming is external and passive.",
+      "d": "Exertion in a hypothermic patient can trigger dysrhythmias as cold blood returns to the heart."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-023",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A 72-year-old diabetic woman reports sudden weakness, nausea, and shortness of breath but no chest pain. What should the EMR suspect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simple food poisoning that needs fluids"
+      },
+      {
+        "id": "b",
+        "text": "A possible heart attack with atypical signs"
+      },
+      {
+        "id": "c",
+        "text": "Anxiety, because there is no chest pain"
+      },
+      {
+        "id": "d",
+        "text": "Seasonal flu that can be managed with rest at home"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Women, older adults, and diabetics often have atypical heart attack symptoms such as weakness, nausea, shortness of breath, or fatigue without classic chest pain. Treat as possible acute coronary syndrome: rest, oxygen if hypoxic, and rapid transport.",
+    "distractorExplanations": {
+      "a": "Assuming food poisoning in an older diabetic with dyspnea and weakness can miss a heart attack.",
+      "c": "Absence of chest pain does not rule out a heart attack; attributing these symptoms to anxiety delays care.",
+      "d": "Sudden weakness with shortness of breath needs evaluation for a cardiac cause, not home care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-024",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A toddler swallowed drain cleaner about 10 minutes ago and is alert, drooling, and crying. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Induce vomiting to get the chemical out"
+      },
+      {
+        "id": "b",
+        "text": "Give vinegar or juice to neutralize it"
+      },
+      {
+        "id": "c",
+        "text": "Contact poison control or medical direction"
+      },
+      {
+        "id": "d",
+        "text": "Give activated charcoal by mouth right away"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For an ingested caustic, do not induce vomiting or give neutralizers. Assess the airway (drooling suggests oral burns), bring the container, contact poison control or medical direction per protocol, and transport while watching for airway swelling.",
+    "distractorExplanations": {
+      "a": "Vomiting a caustic burns the esophagus a second time and risks aspiration; vomiting is never induced.",
+      "b": "Neutralizing agents create heat and further tissue injury; nothing is given by mouth without direction.",
+      "d": "Activated charcoal does not bind caustics, obscures endoscopy, and is not an EMR treatment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-025",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A woman in labor with her third child says she must push, and the baby's head is visible at the vaginal opening during contractions. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Have her cross her legs and transport at once"
+      },
+      {
+        "id": "b",
+        "text": "Ask her to use the bathroom first"
+      },
+      {
+        "id": "c",
+        "text": "Drive with lights and siren to beat the birth"
+      },
+      {
+        "id": "d",
+        "text": "Prepare to deliver the baby at the scene"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Crowning plus the urge to push, especially in a woman who has given birth before, means delivery is imminent. Request additional help, put on PPE, position the mother, and prepare the OB kit to deliver on scene rather than transporting.",
+    "distractorExplanations": {
+      "a": "Crossing the legs or holding the baby back can injure mother and baby; crowning means birth is imminent.",
+      "b": "The urge to push feels like needing a bowel movement; going to the toilet can lead to an unattended birth.",
+      "c": "Crowning in a multiparous mother means birth within minutes; delivering in a moving vehicle is riskier."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-026",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A baby has just been delivered and is limp and not crying. What is your first action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dry, warm, and stimulate while positioning the airway"
+      },
+      {
+        "id": "b",
+        "text": "Begin chest compressions at about 120 per minute"
+      },
+      {
+        "id": "c",
+        "text": "Clamp and cut the cord before any other care"
+      },
+      {
+        "id": "d",
+        "text": "Suction deeply for 30 seconds to clear the mouth and throat"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Initial newborn care: dry the baby thoroughly, keep warm, position the airway (neutral), clear secretions only if needed, and stimulate by rubbing the back or flicking the soles. Most newborns respond; reassess breathing and heart rate next.",
+    "distractorExplanations": {
+      "b": "Compressions start only if the heart rate stays below 60 despite effective ventilation; drying and stimulation come first.",
+      "c": "The cord can wait; warming, drying, and opening the airway are the immediate priorities for a limp newborn.",
+      "d": "Routine deep suctioning can cause bradycardia; suction briefly only if secretions obstruct breathing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-027",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "After drying and stimulating, a newborn has a heart rate of 80 per minute and only weak, gasping breaths. What is the next step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start chest compressions at a 3:1 ratio"
+      },
+      {
+        "id": "b",
+        "text": "Begin positive-pressure ventilation with a BVM"
+      },
+      {
+        "id": "c",
+        "text": "Give blow-by oxygen near the face and observe the baby"
+      },
+      {
+        "id": "d",
+        "text": "Continue drying and recheck in 5 minutes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "In newborn resuscitation, apnea, gasping, or a heart rate below 100 per minute after initial steps calls for positive-pressure ventilation at about 40-60 breaths per minute. Compressions (3:1) begin only if the heart rate stays below 60 despite effective ventilation.",
+    "distractorExplanations": {
+      "a": "Compressions are started only if the heart rate remains below 60 per minute despite 30 seconds of effective ventilation.",
+      "c": "Blow-by oxygen helps a baby who is breathing adequately; gasping with a heart rate under 100 needs ventilation.",
+      "d": "Waiting 5 minutes while a newborn gasps with a heart rate under 100 allows hypoxia to worsen."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-028",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "During labor, a loop of umbilical cord is protruding from the vagina before the baby. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Push the cord back into the vagina gently"
+      },
+      {
+        "id": "b",
+        "text": "Pull gently on the cord to speed delivery"
+      },
+      {
+        "id": "c",
+        "text": "Elevate her hips and lift the baby off the cord"
+      },
+      {
+        "id": "d",
+        "text": "Have the mother push hard with each contraction to deliver quickly"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A prolapsed cord is compressed between the baby and the birth canal, cutting off oxygen. Position the mother with hips elevated (knee-chest or Trendelenburg), insert a gloved hand to lift the presenting part off the cord, keep the cord moist, and transport rapidly.",
+    "distractorExplanations": {
+      "a": "Pushing the cord back can damage it and does not relieve pressure from the presenting part.",
+      "b": "Pulling on the cord can tear it or worsen compression, cutting off the baby's blood supply.",
+      "d": "Pushing drives the baby's head harder against the cord, compressing it further."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-029",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "A woman who is 34 weeks pregnant becomes dizzy and pale while lying flat on her back. How should you position her?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Supine with her legs raised 12 inches"
+      },
+      {
+        "id": "b",
+        "text": "Flat on her back with the head lowered"
+      },
+      {
+        "id": "c",
+        "text": "Sitting upright and leaning forward"
+      },
+      {
+        "id": "d",
+        "text": "Tilted or lying on her left side"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In late pregnancy, lying supine lets the uterus compress the inferior vena cava, reducing return of blood to the heart (supine hypotensive syndrome). Positioning her on her left side, or tilting her left, relieves the pressure.",
+    "distractorExplanations": {
+      "a": "Raising the legs while supine leaves the uterus compressing the vena cava, which is causing the problem.",
+      "b": "Head-down supine positioning keeps the uterus on the vena cava and may worsen breathing.",
+      "c": "Leaning forward does not relieve caval compression and can be unstable for a dizzy patient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-medical-030",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "medical",
+    "prompt": "From the doorway, you use the Pediatric Assessment Triangle on a sick toddler. Which three components do you observe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Appearance, work of breathing, and skin circulation"
+      },
+      {
+        "id": "b",
+        "text": "Airway, breathing, and circulation checked by touch"
+      },
+      {
+        "id": "c",
+        "text": "Pulse rate, blood pressure, and capillary refill"
+      },
+      {
+        "id": "d",
+        "text": "Responsiveness, pupil size, and body temperature"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Pediatric Assessment Triangle is a hands-off first impression: Appearance (tone, interactiveness, look, speech/cry), Work of breathing (sounds, retractions, positioning), and Circulation to the skin (pallor, mottling, cyanosis).",
+    "distractorExplanations": {
+      "b": "The ABCs are assessed hands-on in the primary assessment; the triangle is a hands-off visual impression.",
+      "c": "Pulse, blood pressure, and capillary refill require touching the child and are part of the later hands-on assessment.",
+      "d": "Pupils and temperature need hands-on assessment and are not elements of the Pediatric Assessment Triangle."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-001",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "You arrive first at a two-car collision on a busy highway. What is your first priority?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reach the most seriously injured patient and begin care"
+      },
+      {
+        "id": "b",
+        "text": "Assess scene safety and put on appropriate PPE"
+      },
+      {
+        "id": "c",
+        "text": "Interview witnesses about how the crash happened"
+      },
+      {
+        "id": "d",
+        "text": "Begin triage of all occupants, then notify dispatch"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Scene safety and personal protective equipment come first at every call: traffic, fire, fuel, and unstable vehicles must be recognized and controlled before patient contact. An injured rescuer cannot help anyone and adds to the patient count.",
+    "distractorExplanations": {
+      "a": "Rushing to patients before checking traffic, fuel, and other hazards can turn the responder into another casualty.",
+      "c": "Witness accounts may help explain the mechanism later, but they never come before safety or patient care.",
+      "d": "Hazards and resource needs are reported to dispatch early, before committing to triage of individual patients."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -1521,7 +3006,7 @@
     "id": "nremt-emr-readiness-check-ops-002",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "A competent adult refuses transport after assessment. The EMR should",
+    "prompt": "A competent adult refuses transport after your assessment. What should the EMR do?",
     "options": [
       {
         "id": "a",
@@ -1529,7 +3014,7 @@
       },
       {
         "id": "b",
-        "text": "Accept a verbal refusal and leave without documenting"
+        "text": "Accept a verbal refusal and leave the scene without documenting"
       },
       {
         "id": "c",
@@ -1554,7 +3039,7 @@
     "id": "nremt-emr-readiness-check-ops-003",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Protected health information (PHI) on a PCR may be shared with:",
+    "prompt": "With whom may you share protected health information (PHI) from a patient care report?",
     "options": [
       {
         "id": "a",
@@ -1574,7 +3059,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HIPAA permits disclosure for treatment, payment, and healthcare operations on need-to-know basis.",
+    "explanation": "HIPAA permits sharing PHI without the patient's authorization for treatment, payment, and health care operations. Handing off to the receiving facility and the providers caring for the patient is treatment; anyone else needs authorization or a legal exception.",
     "distractorExplanations": {
       "a": "Without the patient's permission, family callers are not authorized recipients; HIPAA allows sharing for treatment.",
       "b": "Other details can still identify a patient; media disclosure requires authorization, not just an omitted name.",
@@ -1587,7 +3072,7 @@
     "id": "nremt-emr-readiness-check-ops-004",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Standard precautions require",
+    "prompt": "You may come into contact with a patient's blood or body fluids. What do standard precautions require at minimum?",
     "options": [
       {
         "id": "a",
@@ -1620,7 +3105,7 @@
     "id": "nremt-emr-readiness-check-ops-005",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "When requesting additional resources, the EMR should provide?",
+    "prompt": "You call dispatch for additional resources at a crash. What information should you provide?",
     "options": [
       {
         "id": "a",
@@ -1653,7 +3138,7 @@
     "id": "nremt-emr-readiness-check-ops-006",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Medical direction may be required for:",
+    "prompt": "Which situation most likely requires contacting online medical direction?",
     "options": [
       {
         "id": "a",
@@ -1686,7 +3171,7 @@
     "id": "nremt-emr-readiness-check-ops-007",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "At a hazardous materials incident, the EMR should",
+    "prompt": "You arrive at a truck crash with a leaking, placarded tanker. As an awareness-level EMR, what should you do?",
     "options": [
       {
         "id": "a",
@@ -1706,7 +3191,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hazmat scenes require recognition, isolation, and specialist response beyond EMR scope. Deny entry to the area.",
+    "explanation": "Awareness-level responders recognize the hazard, stay upwind and uphill at a safe distance, isolate the area and deny entry, and request a hazmat team. Entering contaminated zones or performing decontamination requires higher-level training and PPE.",
     "distractorExplanations": {
       "a": "Decontamination in the warm zone requires hazmat training and PPE; awareness-level EMRs stay in the cold zone.",
       "b": "Approach is from upwind and uphill, and placards are read from a safe distance with binoculars.",
@@ -1719,7 +3204,7 @@
     "id": "nremt-emr-readiness-check-ops-008",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Documentation on the PCR should be",
+    "prompt": "Which description fits proper documentation on a patient care report (PCR)?",
     "options": [
       {
         "id": "a",
@@ -1739,7 +3224,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Accurate objective documentation supports continuity of care and legal record. Also record interventions and the patient's responses.",
+    "explanation": "The PCR is a medical and legal record: complete it promptly with objective findings, interventions, times, and the patient's responses. Errors are corrected with a single line, initials, and date, never erased.",
     "distractorExplanations": {
       "b": "Delayed documentation loses accuracy and timeliness; the PCR is completed as soon as possible after the call.",
       "c": "Errors are corrected with a single line, initials, and date; erasing or obliterating looks like falsification.",
@@ -1752,7 +3237,7 @@
     "id": "nremt-emr-readiness-check-ops-009",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "During mass casualty triage, a patient with absent respirations after airway opening may be classified",
+    "prompt": "In adult START triage, a patient is not breathing and stays apneic after you reposition the airway. How is this patient tagged?",
     "options": [
       {
         "id": "a",
@@ -1760,7 +3245,7 @@
       },
       {
         "id": "b",
-        "text": "Expectant/black in many triage systems"
+        "text": "Expectant/black (deceased or unsalvageable)"
       },
       {
         "id": "c",
@@ -1772,7 +3257,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "START and similar systems tag non-breathing after airway maneuver as expectant when resources constrained. This applies when there are no spontaneous respirations after the airway is opened and resources are limited.",
+    "explanation": "In START, an adult who does not breathe after the airway is repositioned is tagged expectant (black), so scarce rescuers move on to patients who can be saved. Rescue breaths are not part of adult START; the five-breath step belongs to pediatric JumpSTART.",
     "distractorExplanations": {
       "a": "Red applies when breathing resumes after airway positioning; apnea that persists after repositioning is expectant/black.",
       "c": "Delayed is for patients who breathe but cannot walk and lack immediate threats; apneic patients are not held as yellow.",
@@ -1785,7 +3270,7 @@
     "id": "nremt-emr-readiness-check-ops-010",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Consent for treatment of an unconscious adult is generally",
+    "prompt": "An adult is found unconscious after a fall and cannot respond. Under what type of consent do you treat?",
     "options": [
       {
         "id": "a",
@@ -1805,7 +3290,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Implied consent allows emergency treatment when patient cannot consent and delay would harm.",
+    "explanation": "Implied consent assumes that an unresponsive adult who needs emergency care would agree to it. It applies only while the patient cannot decide and delay would cause harm; once the patient regains capacity, expressed consent is needed.",
     "distractorExplanations": {
       "a": "Bystanders have no legal authority to consent for an adult; unconscious adults are treated under implied consent.",
       "b": "Waiting for the patient to wake could cause harm; emergency care proceeds under implied consent.",
@@ -1818,7 +3303,7 @@
     "id": "nremt-emr-readiness-check-ops-011",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "An EMR discovers possible child abuse during a call. Appropriate action includes:",
+    "prompt": "During a call, an EMR notices injuries on a child that do not match the caregiver's story. What is the appropriate action?",
     "options": [
       {
         "id": "a",
@@ -1838,7 +3323,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Mandatory reporters must notify appropriate authorities and document objective findings.",
+    "explanation": "EMS providers are mandated reporters in most states: reasonable suspicion triggers a report to child protective services or law enforcement per local law. Keep the child safe, document objective findings and exact quotes, and do not accuse anyone on scene.",
     "distractorExplanations": {
       "a": "Mandatory reporting is triggered by reasonable suspicion; a disclosure or confession is not required.",
       "b": "Confrontation can escalate danger to the child and crew; document objectively and report to authorities instead.",
@@ -1851,7 +3336,7 @@
     "id": "nremt-emr-readiness-check-ops-012",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Vehicle staging at a violent scene should be",
+    "prompt": "You are dispatched to a reported stabbing, and police are not yet on scene. Where should you stage?",
     "options": [
       {
         "id": "a",
@@ -1863,7 +3348,7 @@
       },
       {
         "id": "c",
-        "text": "Close by with lights on so police can locate the unit"
+        "text": "Close by with emergency lights on so police can locate the unit"
       },
       {
         "id": "d",
@@ -1884,7 +3369,7 @@
     "id": "nremt-emr-readiness-check-ops-013",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "After patient transfer to ALS, the EMR should",
+    "prompt": "You are handing a patient over to an arriving ALS crew. What should you do?",
     "options": [
       {
         "id": "a",
@@ -1904,7 +3389,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Handoff communication and complete documentation ensure continuity of care. Include times and interventions in the PCR.",
+    "explanation": "A handoff is a brief, prioritized verbal report (age, chief complaint, key findings, interventions and responses) followed by a completed patient care report. Every provider documents the care they personally gave, so continuity is not lost.",
     "distractorExplanations": {
       "a": "The PCR is completed promptly so receiving providers have the record; a delayed report breaks continuity of care.",
       "c": "Handoff reports are concise and prioritized; long reports during treatment distract the receiving crew.",
@@ -1917,7 +3402,7 @@
     "id": "nremt-emr-readiness-check-ops-014",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "Which action violates ethical boundaries?",
+    "prompt": "Which action crosses an ethical boundary for an EMR?",
     "options": [
       {
         "id": "a",
@@ -1925,11 +3410,11 @@
       },
       {
         "id": "b",
-        "text": "Respecting cultural preferences when safe"
+        "text": "Honoring a patient's cultural preferences when safe"
       },
       {
         "id": "c",
-        "text": "Accepting a large cash gift from a patient"
+        "text": "Accepting a large cash gift from a patient's family"
       },
       {
         "id": "d",
@@ -1937,11 +3422,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Accepting gifts for preferential treatment creates conflict of interest and unethical conduct. A gift tied to preferential future response is a clear conflict of interest.",
+    "explanation": "A large cash gift creates a conflict of interest and the appearance that care can be bought, so it is declined per agency policy. Small tokens of thanks, respecting cultural preferences, and reporting an impaired colleague are all appropriate conduct.",
     "distractorExplanations": {
       "a": "Reporting impairment is an ethical duty that protects patients; it does not violate professional boundaries.",
-      "b": "Cultural respect within safety limits is appropriate.",
-      "d": "Accepting a small token of thanks with no expectation of favors is generally acceptable; the problem is a gift for preference."
+      "b": "Honoring cultural preferences that do not compromise safety is respectful, patient-centered care, not a boundary violation.",
+      "d": "A small token of thanks with no expectation of favors is generally acceptable; the concern is money that could buy preference."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1950,7 +3435,7 @@
     "id": "nremt-emr-readiness-check-ops-015",
     "examSlug": "nremt-emr-readiness-check",
     "topicId": "ops",
-    "prompt": "When terminating resuscitation in the field is considered (per protocol/medical direction), factors include?",
+    "prompt": "Field termination of resuscitation is being considered under protocol and medical direction. Which factor is relevant?",
     "options": [
       {
         "id": "a",
@@ -1970,7 +3455,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Termination follows protocol/medical direction considering downtime, DNR, scene safety, and futility criteria. A valid DNR and an unsafe scene are also considered.",
+    "explanation": "Termination of resuscitation follows written protocol and medical direction, weighing factors such as prolonged downtime and resuscitation without ROSC. A valid DNR or an unsafe scene are separate reasons to stop or withhold resuscitation.",
     "distractorExplanations": {
       "a": "Age and comorbidity alone are not termination criteria; protocols use downtime, ROSC, DNR, and medical direction.",
       "b": "A no-shock message does not mean futility; CPR continues per protocol until termination criteria are met.",
@@ -1978,5 +3463,500 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-016",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "At a bus crash, you ask everyone who can walk to move to a nearby tree. How are these patients initially tagged in START triage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Black (expectant)"
+      },
+      {
+        "id": "b",
+        "text": "Green (minor)"
+      },
+      {
+        "id": "c",
+        "text": "Red (immediate)"
+      },
+      {
+        "id": "d",
+        "text": "Yellow (delayed)"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "START first sorts the walking wounded: anyone who can walk to a designated area is tagged green (minor) for now. They are re-triaged later because walking patients can still deteriorate.",
+    "distractorExplanations": {
+      "a": "Black is for patients who do not breathe after the airway is repositioned, not for those who can walk.",
+      "c": "Red is for non-ambulatory patients with abnormal respirations, perfusion, or mental status.",
+      "d": "Yellow is for non-ambulatory patients who do not meet red criteria."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-017",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "In adult START triage, a non-ambulatory patient is breathing 36 times per minute. Which tag does this patient receive?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Green (minor)"
+      },
+      {
+        "id": "b",
+        "text": "Yellow (delayed)"
+      },
+      {
+        "id": "c",
+        "text": "Red (immediate)"
+      },
+      {
+        "id": "d",
+        "text": "Black (expectant)"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In START, a non-ambulatory adult breathing more than 30 times per minute is tagged red (immediate) without further checks. Other red triggers are absent radial pulse or capillary refill over 2 seconds, and inability to follow simple commands.",
+    "distractorExplanations": {
+      "a": "Green is reserved for patients who can walk; this patient cannot.",
+      "b": "Yellow applies when respirations are 30 or below, perfusion is adequate, and commands are followed.",
+      "d": "Black applies when the patient does not breathe even after the airway is repositioned."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-018",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "A non-ambulatory adult at a mass casualty incident is breathing 22 times per minute, has a strong radial pulse, and follows simple commands. Which START category applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Green (minor)"
+      },
+      {
+        "id": "b",
+        "text": "Red (immediate)"
+      },
+      {
+        "id": "c",
+        "text": "Black (expectant)"
+      },
+      {
+        "id": "d",
+        "text": "Yellow (delayed)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A patient who cannot walk but breathes 30 or fewer times per minute, has a radial pulse (or capillary refill of 2 seconds or less), and follows commands is tagged yellow (delayed) in START.",
+    "distractorExplanations": {
+      "a": "Green is only for patients who can walk; a non-ambulatory patient cannot be tagged minor.",
+      "b": "Red requires a red trigger: respirations over 30, poor perfusion, or failure to follow commands.",
+      "c": "Black is for patients who remain apneic after airway repositioning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-019",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "You are the first EMS unit at a multi-vehicle crash with many patients. Under NIMS, what is one of your first responsibilities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Establish command and give a size-up report"
+      },
+      {
+        "id": "b",
+        "text": "Begin treating the first patient you reach"
+      },
+      {
+        "id": "c",
+        "text": "Wait for a supervisor before reporting"
+      },
+      {
+        "id": "d",
+        "text": "Transport the most critical patient yourself"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Under the National Incident Management System, the first arriving unit establishes incident command, gives a size-up report with the number of patients and hazards, requests resources, and begins triage. Command transfers as senior personnel arrive.",
+    "distractorExplanations": {
+      "b": "Committing to one patient leaves the scene uncoordinated; the first unit organizes resources first.",
+      "c": "Command is established by the first arriving unit; waiting delays the request for more resources.",
+      "d": "Leaving with one patient abandons the incident before command, triage, and resources are in place."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-020",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "An overturned tanker shows a placard with a four-digit UN number. Which reference identifies the material and the initial isolation distance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The receiving hospital's safety data sheets"
+      },
+      {
+        "id": "b",
+        "text": "The Emergency Response Guidebook (ERG)"
+      },
+      {
+        "id": "c",
+        "text": "The vehicle's registration and insurance card"
+      },
+      {
+        "id": "d",
+        "text": "The local EMS patient treatment protocol"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The DOT Emergency Response Guidebook links the four-digit UN/NA number on a placard to a guide page with hazards, protective actions, and initial isolation and evacuation distances. Read placards from a distance with binoculars.",
+    "distractorExplanations": {
+      "a": "Safety data sheets describe chemicals at a workplace; they are not the roadside tool for placarded shipments.",
+      "c": "Registration papers identify the vehicle owner, not the hazardous cargo or isolation distance.",
+      "d": "Treatment protocols guide patient care; they do not identify hazardous materials by UN number."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-021",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "You and a partner are lifting a loaded stretcher. Which technique best protects your back?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bend at the waist with straight legs and lift quickly"
+      },
+      {
+        "id": "b",
+        "text": "Twist toward the vehicle as you lift the stretcher"
+      },
+      {
+        "id": "c",
+        "text": "Power lift with feet apart, back locked, and legs lifting"
+      },
+      {
+        "id": "d",
+        "text": "Hold the stretcher at arm's length, well away from your body"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The power lift uses feet shoulder-width apart, a locked (straight) back, and the legs to lift, with the load close to the body. Communicate with your partner and avoid twisting; pivot with the feet instead.",
+    "distractorExplanations": {
+      "a": "Bending at the waist with straight legs places the load on the lower back and causes injury.",
+      "b": "Twisting while lifting is a leading cause of back injury; turn with your feet after the lift.",
+      "d": "Holding the load away from the body multiplies the strain on the back; keep it close."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-022",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "A patient with possible spinal injury is trapped in a car that has caught fire. What is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apply a cervical collar and short spine board before moving"
+      },
+      {
+        "id": "b",
+        "text": "Wait for fire suppression before moving him"
+      },
+      {
+        "id": "c",
+        "text": "Lift him out by the arms and legs quickly"
+      },
+      {
+        "id": "d",
+        "text": "Use an emergency move such as a long-axis drag"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When there is immediate danger such as fire, an emergency move is made before full immobilization. A long-axis drag (by clothing, shoulders, or blanket) pulls along the length of the body to limit spinal movement.",
+    "distractorExplanations": {
+      "a": "Full immobilization takes minutes the patient does not have in a burning vehicle; immediate danger comes first.",
+      "b": "Waiting for suppression may expose the patient to fatal burns or smoke; move him if it is safe for you.",
+      "c": "Lifting by the limbs bends and twists the spine; a long-axis drag keeps it as aligned as possible."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-023",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "A patient sues an EMR for negligence. Which elements must generally be proven?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Duty, breach of duty, damages, and causation"
+      },
+      {
+        "id": "b",
+        "text": "Duty, consent, abandonment, and damages"
+      },
+      {
+        "id": "c",
+        "text": "Intent, breach of duty, and malice"
+      },
+      {
+        "id": "d",
+        "text": "A breach of duty and a poor patient outcome, nothing more"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Negligence requires four elements: a duty to act, a breach of that duty (failure to meet the standard of care), damages (actual harm), and proximate causation (the breach caused the harm).",
+    "distractorExplanations": {
+      "b": "Consent and abandonment are separate legal issues; they are not the four elements of negligence.",
+      "c": "Intent and malice relate to intentional torts such as assault, not negligence, which is unintentional.",
+      "d": "A poor outcome alone is not negligence; duty and causation must also be proven."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-024",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "An EMR leaves a stable patient with a bystander to answer another call before the ambulance arrives. Which legal issue does this create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assault, by threatening the patient with harm"
+      },
+      {
+        "id": "b",
+        "text": "Abandonment of a patient who still needs care"
+      },
+      {
+        "id": "c",
+        "text": "Battery, by touching the patient without consent"
+      },
+      {
+        "id": "d",
+        "text": "Libel, by making false written statements"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Abandonment is ending care of a patient who still needs it without handing over to a provider of equal or higher training. A bystander does not qualify, so care must continue until a qualified provider takes over.",
+    "distractorExplanations": {
+      "a": "Assault is placing a person in fear of bodily harm, not leaving the patient's care.",
+      "c": "Battery is touching a patient without consent, not ending care prematurely.",
+      "d": "Libel is a false written statement that damages a person's reputation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-025",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "A hospice patient in cardiac arrest has a valid, signed DNR order presented by the family. What should the EMR do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start CPR until a physician arrives"
+      },
+      {
+        "id": "b",
+        "text": "Start CPR because the family is upset"
+      },
+      {
+        "id": "c",
+        "text": "Withhold CPR and provide comfort and support"
+      },
+      {
+        "id": "d",
+        "text": "Give rescue breaths without compressions until ALS arrives"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A valid DNR order (form requirements vary by state) directs that CPR not be started. Verify it per protocol, withhold resuscitation, provide comfort and emotional support to the family, and contact medical direction if there is doubt.",
+    "distractorExplanations": {
+      "a": "A valid DNR is a physician order; waiting for a physician on scene is not required to honor it.",
+      "b": "Family distress does not override a valid DNR; support the family while honoring the order.",
+      "d": "Rescue breathing is resuscitation; a DNR order in cardiac arrest means no resuscitation attempts."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-026",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "An off-duty EMR stops at a crash and provides care in good faith within her training. What generally provides legal protection in most states?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The implied consent doctrine"
+      },
+      {
+        "id": "b",
+        "text": "Standing orders"
+      },
+      {
+        "id": "c",
+        "text": "The duty to act"
+      },
+      {
+        "id": "d",
+        "text": "Good Samaritan laws"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Good Samaritan laws in most states protect people who help in an emergency in good faith, without compensation, and within their training. They vary by state and do not protect against gross negligence.",
+    "distractorExplanations": {
+      "a": "Implied consent permits treatment of an unresponsive patient; it does not protect the rescuer from liability.",
+      "b": "Standing orders authorize care within an EMS system; they do not protect off-duty volunteers.",
+      "c": "The duty to act creates an obligation; it is a basis for liability, not protection from it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-027",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "Medical direction gives you a treatment order by radio. What should you do before acting on it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repeat the order back word for word and confirm it"
+      },
+      {
+        "id": "b",
+        "text": "Act immediately without repeating it to save time"
+      },
+      {
+        "id": "c",
+        "text": "Use ten-codes so the order stays private"
+      },
+      {
+        "id": "d",
+        "text": "Ask the patient whether to follow the order"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Repeat the order back exactly (echo technique) and wait for confirmation before acting. If an order seems unclear or inappropriate, ask for clarification. Document the order, the physician, and the time.",
+    "distractorExplanations": {
+      "b": "Skipping the repeat-back risks acting on a misheard order; confirmation takes seconds.",
+      "c": "Ten-codes vary between agencies and cause misunderstanding; plain language is preferred.",
+      "d": "The patient may consent or refuse, but confirming the order itself is done with medical direction."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-028",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "Police have restrained a violently agitated patient for transport. How should the patient be positioned?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Face down with the wrists tied to the ankles"
+      },
+      {
+        "id": "b",
+        "text": "Supine or on the side with breathing monitored"
+      },
+      {
+        "id": "c",
+        "text": "Face down with a responder's weight on the back"
+      },
+      {
+        "id": "d",
+        "text": "Sitting with a towel tied over the face"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Restrained patients are positioned supine or on their side, never prone or hog-tied, because those positions cause positional asphyxia. Monitor airway, breathing, and circulation continuously, and check distal circulation in restrained limbs.",
+    "distractorExplanations": {
+      "a": "Prone hog-tie restraint impairs breathing and is linked to positional asphyxia and death.",
+      "c": "Weight on the back of a prone patient restricts chest expansion and causes asphyxia.",
+      "d": "Covering the face blocks the airway; a spit hood or surgical mask is used per protocol instead."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-029",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "You are stuck by a used needle while cleaning up after a call. What should you do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Squeeze the wound to bleed it, then report it at shift end"
+      },
+      {
+        "id": "b",
+        "text": "Apply bleach to the wound and finish the call"
+      },
+      {
+        "id": "c",
+        "text": "Wash the site with soap and water and report it now"
+      },
+      {
+        "id": "d",
+        "text": "Report it only if the patient is known infected"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After a needlestick, immediately wash the site with soap and water, then report the exposure to your supervisor or designated infection control officer at once so post-exposure evaluation and prophylaxis can begin promptly.",
+    "distractorExplanations": {
+      "a": "Delaying the report delays post-exposure testing and treatment, which work best within hours.",
+      "b": "Bleach and caustic agents damage skin and are not recommended for wound care after exposure.",
+      "d": "Every exposure is reported because a patient's infection status is often unknown."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "nremt-emr-readiness-check-ops-030",
+    "examSlug": "nremt-emr-readiness-check",
+    "topicId": "ops",
+    "prompt": "A patient with fever, night sweats, and a persistent bloody cough may have tuberculosis. Which PPE is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A surgical mask for you and a fit-tested N95 respirator on the patient"
+      },
+      {
+        "id": "b",
+        "text": "Gloves alone, because TB spreads by touch"
+      },
+      {
+        "id": "c",
+        "text": "A gown and gloves, because TB spreads by contact"
+      },
+      {
+        "id": "d",
+        "text": "A fit-tested N95 for you and a surgical mask on the patient"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Tuberculosis requires airborne precautions: the responder wears a fit-tested N95 respirator, and the patient wears a surgical mask if tolerated (or oxygen by nonrebreather if needed). Improve ventilation in the vehicle.",
+    "distractorExplanations": {
+      "a": "A surgical mask does not protect the wearer from airborne droplet nuclei, and an N95 on the patient is uncomfortable and unnecessary.",
+      "b": "TB spreads by airborne droplet nuclei, so gloves alone do not protect the responder.",
+      "c": "Contact precautions do not stop airborne transmission; respiratory protection is required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
   }
 ]

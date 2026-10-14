@@ -1548,14 +1548,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Readiness check half-length (50 questions / 90 minutes) weighted to NFPA CFPS exam blueprint. Official exam: 100 multiple-choice questions, 3 hours, open book (original print NFPA Fire Protection Handbook, 21st Edition only). NFPA reports pass/fail only — no published passing score. Not NFPA exam material.",
+      "Readiness check: 80 questions in 80 minutes (10 per domain), drawn from a 400-question bank weighted to the NFPA CFPS exam blueprint. Official exam: 100 multiple-choice questions, 3 hours, open book (original print NFPA Fire Protection Handbook, 21st Edition only). NFPA reports pass/fail only — no published passing score. Not NFPA exam material.",
     disclaimer: cfpsDisclaimer,
     description:
-      "A 50-question CFPS readiness diagnostic across NFPA's eight fire protection domains including suppression, detection, built environment safety, and hazard management. Independent prep, not NFPA material.",
+      "An 80-question timed CFPS readiness diagnostic across NFPA's eight fire protection domains including suppression, detection, built environment safety, and hazard management. Independent prep, not NFPA material.",
     examBody: "NFPA (National Fire Protection Association)",
     lastUpdated: "2026-07-24",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the CFPS readiness check (400 cards across eight NFPA domains; 50-question timed session).",
+      "Original UniPrep2Go questions authored for the CFPS readiness check (400 cards across eight NFPA domains; 80-question timed session).",
   },
   {
     slug: "mrics-readiness-check",

@@ -50,7 +50,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NNCC CCHT knowledge themes. Not an NNCC exam.",
     description: "Free 60-question CCHT dialysis technician readiness check.",
     examBody: "NNCC",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
   nicheReadinessConfig({
     slug: "aha-bls-provider-readiness-check",
@@ -151,7 +151,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to NASM CPT knowledge domains. Not a NASM exam.",
     description: "Free 60-question NASM CPT readiness check for personal trainer candidates.",
     examBody: "NASM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
   nicheReadinessConfig({
     slug: "esthetician-state-readiness-check",
@@ -319,7 +319,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "FMCSA school bus endorsement themes. Not a state DMV exam.",
     description: "Free 60-question CDL School Bus (S) endorsement readiness check.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
   nicheReadinessConfig({
     slug: "nbrc-tmc-readiness-check",
@@ -359,7 +359,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "State structural applicator knowledge themes. Not a state exam.",
     description: "Free 60-question structural pest control applicator readiness check.",
     examBody: "State agriculture department",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
   nicheReadinessConfig({
     slug: "aama-cma-readiness-check",

@@ -469,17 +469,17 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     keywords: ["mlt practice test", "ascp mlt practice test", "medical lab technician practice test", "ascp mlt practice exam", "mlt ascp mock exam"],
   },
   "aapc-ccs-readiness-check": {
-    practiceTestName: "AAPC / AHIMA CCS-style Coding Practice Test",
+    practiceTestName: "AHIMA CCS-style Inpatient Coding Practice Test",
     whatIsExam: "Inpatient coding certifications (e.g., AHIMA CCS themes) test hospital coding knowledge including ICD-10-CM/PCS guidelines and compliance\u2014not a substitute for official board exams.",
     administeredBy: "AHIMA / inpatient coding themes",
     officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with AHIMA / inpatient coding themes.",
     examFaqs: [
       {
-        question: "What is the AAPC / AHIMA CCS-style Coding exam?",
+        question: "What is the AHIMA CCS-style Inpatient Coding exam?",
         answer: "Inpatient coding certifications (e.g., AHIMA CCS themes) test hospital coding knowledge including ICD-10-CM/PCS guidelines and compliance\u2014not a substitute for official board exams.",
       },
       {
-        question: "Is this an official AAPC / AHIMA CCS-style Coding exam?",
+        question: "Is this an official AHIMA CCS-style Inpatient Coding exam?",
         answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from AHIMA / inpatient coding themes.",
       },
     ],

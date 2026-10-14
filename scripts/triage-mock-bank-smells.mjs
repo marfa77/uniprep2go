@@ -35,7 +35,7 @@ const TEMPLATE_TAIL =
 const TEMPLATE_SHORT = /\s+for the (?:[A-Z][A-Za-z0-9 /&-]{2,60}) readiness(?: check)?\??\s*$/i;
 /** Polluted money-repair / template leftovers — not legitimate exam phrasing. */
 const JUNK_RE =
-  /None of the provided deck concepts|different concept from the deck|securities fraud under .{0,80}(always eliminates|has no application|is identical to FDIC)|\bFDIC insurance covers\b.{0,40}every customer|\bplaceholder\b|\bFIXME\b|(?<![A-Za-z])TODO(?![A-Za-z])/i;
+  /None of the provided deck concepts|different concept from the deck|securities fraud under .{0,80}(always eliminates|has no application|is identical to FDIC)|\bFDIC insurance covers\b.{0,40}every customer|\bplaceholder\b(?!\s*["“]?X\b)|\bFIXME\b|(?<![A-Za-z])TODO(?![A-Za-z])/i;
 
 const EXPL_THIN = 100;
 const EXPL_MIN_PAD = 100;

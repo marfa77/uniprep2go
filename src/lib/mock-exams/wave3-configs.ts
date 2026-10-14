@@ -410,7 +410,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to American Medical Technologists themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question AMT RMA readiness check with topic scoring.",
     examBody: "American Medical Technologists",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["RMA", "AMT RMA", "registered medical assistant"],
   }),
   nicheReadinessConfig({
@@ -437,8 +437,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
   }),
   nicheReadinessConfig({
     slug: "aapc-ccs-readiness-check",
-    title: "AAPC / AHIMA CCS-style Coding Readiness Check",
-    shortTitle: "AAPC / AHIMA CCS-style Coding",
+    title: "AHIMA CCS-style Inpatient Coding Readiness Check",
+    shortTitle: "AHIMA CCS-style Inpatient Coding",
     linkedDeckSlug: "aapc-ccs-anki-deck",
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
@@ -448,10 +448,10 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "guidelines", label: "Coding guidelines" },
       { id: "compliance", label: "Compliance & CDI" }
     ]),
-    officialSourceNote: "Mapped to AHIMA / inpatient coding themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question AAPC / AHIMA CCS-style Coding readiness check with topic scoring.",
+    officialSourceNote: "Mapped to AHIMA / inpatient coding themes. Independent UniPrep2Go readiness check — not an official exam.",
+    description: "Free 60-question AHIMA CCS-style Inpatient Coding readiness check with topic scoring.",
     examBody: "AHIMA / inpatient coding themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["CCS", "inpatient coding", "AHIMA CCS"],
   }),
   nicheReadinessConfig({
@@ -752,7 +752,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     officialSourceNote: "Mapped to SHRM themes. Independent UniPrep2Go readiness check — not an official exam.",
     description: "Free 60-question SHRM-CP readiness check with topic scoring.",
     examBody: "SHRM",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["SHRM-CP", "SHRM certified professional"],
   }),
   nicheReadinessConfig({

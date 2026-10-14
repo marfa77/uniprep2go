@@ -884,6 +884,10 @@ describe("llm visibility", () => {
         "cfp-certification-readiness-check",
         "series-99-readiness-check",
         "armed-security-officer-readiness-check",
+        "nremt-emr-readiness-check",
+        "pharmacy-technician-excpt-readiness-check",
+        "shrm-scp-readiness-check",
+        "medicare-counseling-readiness-check",
       ]);
       expect(getQuestionBank(config.slug)).toHaveLength(
         expandedWave4.has(config.slug) ? 120 : 60,

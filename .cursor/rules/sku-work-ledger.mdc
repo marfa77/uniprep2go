@@ -1,0 +1,27 @@
+---
+description: Every piece of SKU work is logged with a date and status, and the per-SKU board is regenerated
+alwaysApply: true
+---
+
+# SKU work ledger (user, 2026-10-14)
+
+Any work on a SKU — mock bank, linked Anki deck, Gumroad product, samples, mock/deck page copy, exam facts, official-format honesty — is logged **in the same pass**, not "later".
+
+## Two files
+
+| File | What | How |
+|---|---|---|
+| `docs/mock-bank-qa/bank-audit-ledger.md` | Event log: one dated row per piece of work | Hand-written row, newest first |
+| `docs/mock-bank-qa/sku-status.md` (+ `.json`) | Current status of every live mock + linked Anki, with last-work date | `npm run sku:status` — never edit by hand |
+
+## Rules
+
+1. **Started but not finished** (writers running, waiting on review, blocked on credits/user): add a row under `## In progress` with today's date, slug(s), what is being done and the blocker. Move it to `## Done` when finished.
+2. **Done**: row under `## Done` — `| Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |`. Name every slug touched in backticks (mock **and** deck) so the board picks up the date. Mass passes over many banks list every slug (or one row per family with the slugs in Notes) — no slug-less aggregate rows.
+3. **Deck-only / DB-only work** (Prep2Go language decks, authored CSV decks, Gumroad copy) also gets a row, with `—` for the mock slug.
+4. After the ledger row: `npm run sku:status` and commit both files with the work.
+5. When the user asks "how many SKUs are good / need work": read `sku-status.md` (re-run first), do not recount by hand.
+
+## Status meanings (board)
+
+`ok` · `thin-bank` (clean, reviewed, bank < 2× session) · `unreviewed` (clean, never content-reviewed) · `small-bank` (clean gates, bank too small for Mock Pass retakes) · `point-fix` (FAIL on ≤10% of items) · `rewrite` (FAIL on >10%, bank-level FAIL, or length padding) · `civic` (official citizenship pools, separate standard).

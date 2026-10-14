@@ -174,7 +174,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     description:
       "Free 60-question Texas real estate salesperson readiness check with topic scoring for TREC candidates.",
     examBody: "TREC",
-    questionSourceNote: "Original UniPrep2Go local bank for Texas RE topics.",
+    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
   readinessConfig({
     slug: "aapc-cpc-readiness-check",

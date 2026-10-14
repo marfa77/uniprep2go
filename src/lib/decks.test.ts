@@ -632,7 +632,7 @@ describe("deck catalog", () => {
       "pa-real-estate-anki-deck": "Pennsylvania Real Estate Anki Deck — 60 Flashcards",
       "rd-exam-anki-deck": "RD Exam Anki Deck — 120 Flashcards",
       "real-estate-appraiser-anki-deck": "Real Estate Appraiser Anki Deck — 60 Flashcards",
-      "tx-real-estate-anki-deck": "Texas Real Estate Anki Deck — 60 Flashcards",
+      "tx-real-estate-anki-deck": "Texas Real Estate Anki Deck — 120 Flashcards",
       "va-real-estate-anki-deck": "Virginia Real Estate Anki Deck — 60 Flashcards",
       "wa-real-estate-anki-deck": "Washington Real Estate Anki Deck — 60 Flashcards",
       "us-adaptation-english-prep2go-app": "US Adaptation (English) — Prep2Go Immigration App",

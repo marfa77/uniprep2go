@@ -66,9 +66,9 @@ describe("anki-deck-launch", () => {
     expect(ace?.sampleCards).toHaveLength(3);
     expect(ace?.sampleCards[0]?.imageUrl).toBe("/samples/ace-cpt-anki-deck-sample-1.webp");
     expect(ace?.sampleCards.map((card) => card.question)).toEqual([
-      "Sofia, 33, has a measured resting heart rate of 65 bpm and an estimated HRmax of 185 bpm. Her trainer sets steady-state cardio at 60–70% of heart-rate reserve. Which target zone should he program?",
-      "Client Malik is pressing 32-kg dumbbells on a flat bench, aiming for a 6-rep max set. Trainer Erin will spot him. Where should Erin position her hands during the set?",
       "Midway through a session, client Rachel reports right-knee pain of 6/10 during squats. She slipped on ice two days ago, and the knee looks swollen. What should trainer Ben do?",
+      "During a submaximal talk test, the trainer raises treadmill workload each minute while the client recites a short passage. At which point is the first ventilatory threshold (VT1) identified?",
+      "Right after a hard bike sprint interval, a client wants to stop pedaling and sit down at once. Why should the trainer have them keep pedaling easily for a few minutes?",
     ]);
     expect(ace?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/ace-cpt-anki-deck-sample-1.webp",

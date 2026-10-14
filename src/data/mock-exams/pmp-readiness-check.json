@@ -795,31 +795,31 @@
     "id": "pmp-readiness-check-people-028",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager observes that team productivity drops significantly whenever a particular senior stakeholder attends team meetings. Team members become less collaborative and more formal in their interactions. The stakeholder has a history of micromanaging and criticizing team decisions. What should the project manager do?",
+    "prompt": "A stakeholder engagement assessment matrix shows the head of customer operations as “resistant,” while the desired level is “supportive.” Their team will absorb most of the process changes the project introduces. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Ask team members to log every interaction with the stakeholder so the issue can be escalated to the sponsor with evidence"
+        "text": "Limit the stakeholder's access to project information until the new processes are fully in place"
       },
       {
         "id": "b",
-        "text": "Schedule separate meetings with the stakeholder to provide project updates and limit their attendance at team working sessions"
+        "text": "Meet the stakeholder to understand their concerns and plan targeted actions to close the gap"
       },
       {
         "id": "c",
-        "text": "Confront the stakeholder about their micromanaging behavior in front of the team at the next working session"
+        "text": "Escalate to the sponsor and ask them to direct the stakeholder to support the project"
       },
       {
         "id": "d",
-        "text": "Implement more structured meeting agendas to limit the stakeholder's ability to interrupt team processes"
+        "text": "Record the gap in the stakeholder register and review it again at the next phase gate"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Creating separate stakeholder meetings protects the team's psychological safety while still maintaining necessary communication. This approach demonstrates servant leadership by shielding the team from disruptive influences while ensuring stakeholder needs are met through appropriate channels.",
+    "explanation": "The engagement assessment matrix compares current (C) and desired (D) engagement levels: unaware, resistant, neutral, supportive and leading. A resistant-to-supportive gap calls for engagement actions in the stakeholder engagement plan, starting with understanding the stakeholder's concerns and showing how the project addresses them. A stakeholder whose team absorbs the change is critical to success.",
     "distractorExplanations": {
-      "a": "Building a case for escalation is adversarial and slow; the PM should first protect the team's working sessions and manage the stakeholder directly.",
-      "c": "Public confrontation damages the stakeholder relationship and puts the team in the middle; stakeholder concerns are handled privately.",
-      "d": "Structured agendas alone won't address the underlying issue of the stakeholder's disruptive behavior and its impact on team performance."
+      "a": "Withholding information from a resistant stakeholder deepens distrust and usually increases resistance to the change.",
+      "c": "Escalating before engaging the stakeholder directly skips the project manager's role and can harden the opposition.",
+      "d": "Recording the gap without acting leaves a critical stakeholder resistant while their team prepares for major changes."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -1158,7 +1158,7 @@
     "id": "pmp-readiness-check-people-041",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is leading a newly formed team where several members have never worked together before. During the first few weeks, team members are polite but hesitant to share ideas or challenge decisions. They tend to look to the project manager for direction on most tasks. According to Tuckman's model of team development, what stage is this team currently experiencing?",
+    "prompt": "Three months into a project, a team that argued openly about roles and tools has agreed on a working agreement. Members now ask each other for help and resolve most conflicts within the team, although output has not yet reached its full potential. Using Tuckman's ladder, which stage is the team in?",
     "options": [
       {
         "id": "a",
@@ -1166,11 +1166,11 @@
       },
       {
         "id": "b",
-        "text": "Forming"
+        "text": "Norming"
       },
       {
         "id": "c",
-        "text": "Norming"
+        "text": "Forming"
       },
       {
         "id": "d",
@@ -1178,11 +1178,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The team is in the forming stage, characterized by politeness, uncertainty, and dependence on the leader for guidance. Team members are getting to know each other and understanding their roles.",
+    "explanation": "Norming follows storming: after working through open conflict, the team adopts shared norms (the working agreement), trusts one another and starts resolving issues itself. Output has not yet reached full potential, which separates norming from performing, where the team is highly interdependent and productive with little leader intervention.",
     "distractorExplanations": {
-      "a": "Storming involves conflict and competition as team members begin to express different opinions, which hasn't occurred yet in this scenario.",
-      "c": "Norming occurs when the team establishes working relationships and agreed-upon processes, but this team hasn't reached that level of cohesion.",
-      "d": "Performing is the stage where teams work efficiently and effectively together, which requires time and development beyond what's described."
+      "a": "Storming is the stage of open conflict over roles and tools; the scenario says that conflict has already been worked through and agreements set.",
+      "c": "Forming is the polite, leader-dependent start-up stage; this team has already passed through conflict and now resolves issues internally.",
+      "d": "Performing teams already operate at full, interdependent capacity; the stem says output has not yet reached its potential."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1323,31 +1323,31 @@
     "id": "pmp-readiness-check-people-047",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is working with a team member who consistently produces excellent technical deliverables but rarely participates in team discussions or collaborative activities. Other team members have started to perceive this person as unengaged. What coaching approach should the project manager take?",
+    "prompt": "A database architect who designed the project's data model is leaving the company in three weeks. Much of what they know, such as why certain trade-offs were made, has never been written down. What should the project manager do to protect this knowledge?",
     "options": [
       {
         "id": "a",
-        "text": "Focus on the team member's strengths and don't address the participation issue since their work quality is high"
+        "text": "Ask the architect to write a full design document before their last day and file it with the official project records"
       },
       {
         "id": "b",
-        "text": "Assign the team member to lead the next team meeting to force participation"
+        "text": "Engage the architect as a paid contractor after departure so the team can call them when questions come up"
       },
       {
         "id": "c",
-        "text": "Have a private conversation to understand their perspective and explore ways to increase engagement"
+        "text": "Pair the architect with named successors on live work and have them walk through the reasoning behind key decisions"
       },
       {
         "id": "d",
-        "text": "Ask other team members to directly encourage this person to participate more"
+        "text": "Hold a single recorded handover presentation in the architect's last week for the whole team to watch later"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "A private coaching conversation allows the project manager to understand the team member's perspective, identify barriers to participation, and collaboratively develop strategies for increased engagement while maintaining psychological safety.",
+    "explanation": "The knowledge at risk is tacit: the reasoning behind trade-offs that lives in the architect's head. Tacit knowledge transfers best through interaction such as pairing, shadowing and guided walkthroughs on real tasks, where successors can ask questions. Pairing named successors for the remaining three weeks also lets the team capture key decisions as they are discussed.",
     "distractorExplanations": {
-      "a": "Ignoring the participation issue can lead to team dysfunction and missed opportunities for collaboration and knowledge sharing.",
-      "b": "Forcing participation through assignment may create anxiety and resistance rather than genuine engagement.",
-      "d": "Having peers address the issue directly could create interpersonal tension and isn't the project manager's responsibility to delegate."
+      "a": "A document captures explicit facts, but the undocumented reasoning behind trade-offs is tacit and rarely survives a write-up done under deadline pressure.",
+      "b": "A post-departure contract is uncertain and costly, and it keeps the knowledge with one person instead of transferring it to the team.",
+      "d": "A one-way presentation in the last week leaves no time for questions or practice, so successors gain little of the tacit reasoning."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -1675,9 +1675,9 @@
     "correctOptionId": "a",
     "explanation": "Establishing a transparent, collaborative evaluation process with clear communication about decisions addresses the core issue of team members feeling unheard. This approach rebuilds trust by showing that suggestions are taken seriously and that team input genuinely influences outcomes, even when suggestions aren't implemented. Decisions on each suggestion should then be communicated with clear rationale so the team sees its input matters.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Establish a transparent process where improvement suggestions are evaluated collaboratively and decisions are communicated with clear…”.",
-      "c": "Not the best answer here; the right answer is “Establish a transparent process where improvement suggestions are evaluated collaboratively and decisions are communicated with clear…”.",
-      "d": "Not the best answer here; the right answer is “Establish a transparent process where improvement suggestions are evaluated collaboratively and decisions are communicated with clear…”."
+      "b": "Anonymous submission collects ideas but keeps the same opaque handling that made the team feel ignored; nobody sees how ideas are decided.",
+      "c": "Rotating the facilitator changes who runs the meeting, not how suggestions are evaluated and acted on, which is the source of distrust.",
+      "d": "Private one-on-ones hide decisions from the group and keep evaluation in the PM's hands, the opposite of transparent collaboration."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -1972,9 +1972,9 @@
     "correctOptionId": "b",
     "explanation": "The project manager should acknowledge the valuable technical input to show respect for the team member's expertise, then redirect the discussion back to the current objective of defining user-centered stories. This approach maintains team cohesion while keeping the session focused and productive, and it sets clear expectations about when technical solutions will be addressed. The PM should note that implementation details will be addressed in a subsequent session.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Acknowledge the technical input and redirect focus to user needs, noting that implementation details will be addressed in a subsequent…”.",
-      "c": "Not the best answer here; the right answer is “Acknowledge the technical input and redirect focus to user needs, noting that implementation details will be addressed in a subsequent…”.",
-      "d": "Not the best answer here; the right answer is “Acknowledge the technical input and redirect focus to user needs, noting that implementation details will be addressed in a subsequent…”."
+      "a": "Parking the input in a separate document sidelines the member and does not refocus the current discussion on user needs.",
+      "c": "Letting solution design continue drifts the session away from its goal; accurate input still belongs in a later implementation discussion.",
+      "d": "Splitting the groups disconnects user stories from technical feasibility and fragments a session meant to build shared understanding."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -2049,31 +2049,31 @@
     "id": "pmp-readiness-check-people-071",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is working with a team member who consistently delivers high-quality work but becomes defensive when receiving feedback during retrospectives. The team member often responds with justifications rather than acknowledging areas for improvement, which is starting to affect team dynamics. What should the project manager do to help this team member become more receptive to feedback?",
+    "prompt": "During code reviews, a senior developer leaves comments such as “this is sloppy” and “you clearly didn't think this through.” Junior developers have started avoiding review requests. The senior developer says they are only being honest. How should the project manager coach the senior developer?",
     "options": [
       {
         "id": "a",
-        "text": "Schedule private one-on-one sessions to provide feedback away from the team setting"
+        "text": "Teach them to describe the specific situation, observed behavior, and its impact rather than judge the person"
       },
       {
         "id": "b",
-        "text": "Ask other team members to provide feedback in a more gentle manner"
+        "text": "Ask them to limit review comments to approvals and leave all corrections for the project manager to deliver"
       },
       {
         "id": "c",
-        "text": "Focus feedback sessions on positive accomplishments only to build confidence"
+        "text": "Tell them to balance every critical comment with a sincere compliment so the juniors feel less discouraged by reviews"
       },
       {
         "id": "d",
-        "text": "Implement anonymous feedback mechanisms in retrospectives to reduce personal confrontation"
+        "text": "Move reviews to an anonymous tool so the juniors cannot tell which reviewer left each critical comment"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Private one-on-one sessions allow the project manager to create a safe environment for feedback discussion, understand the root cause of the defensive behavior, and coach the team member on receiving feedback constructively without the pressure of team observation.",
+    "explanation": "The problem is how feedback is framed, not whether it is given. The situation-behavior-impact (SBI) approach keeps feedback specific, observable and tied to consequences (“In this pull request the null check is missing, which can crash checkout”), so it stays honest without attacking the person. Coaching the senior developer on this model fixes the root cause while keeping reviews rigorous.",
     "distractorExplanations": {
-      "b": "This approach doesn't address the team member's defensive behavior and puts the burden on other team members rather than helping the individual develop better feedback reception skills.",
-      "c": "Avoiding constructive feedback entirely prevents growth and improvement, and doesn't help the team member develop the crucial skill of accepting and acting on feedback.",
-      "d": "Anonymity sidesteps the member's defensiveness without helping them become more receptive; private coaching addresses it."
+      "b": "Routing corrections through the PM removes useful peer review and leaves the senior developer's feedback skills unchanged.",
+      "c": "The compliment sandwich feels formulaic and buries the message; it does not remove the personal judgments that discourage juniors.",
+      "d": "Anonymity hides who wrote harsh comments but keeps the judgmental wording, so juniors still receive feedback that attacks them."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -2115,31 +2115,31 @@
     "id": "pmp-readiness-check-people-073",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager notices that team members from different cultural backgrounds have varying communication styles during daily stand-ups. Some team members provide detailed updates while others give very brief responses, leading to misunderstandings about work progress and dependencies. What should the project manager do to improve communication effectiveness?",
+    "prompt": "Asked whether a deadline is achievable, a team member from a high-context culture replies, “That may be somewhat difficult.” Teammates from low-context cultures record it as a yes. Two weeks later the work is late. What should the project manager do going forward?",
     "options": [
       {
         "id": "a",
-        "text": "Establish a standard format for stand-up updates that all team members must follow"
+        "text": "Require every member to answer commitment questions with an explicit yes or no during team meetings"
       },
       {
         "id": "b",
-        "text": "Assign a different team member to lead stand-ups each day to vary the communication style"
+        "text": "Assume that any hesitant answer from this member means the deadline cannot be met at all"
       },
       {
         "id": "c",
-        "text": "Meet with team members individually to understand their communication preferences"
+        "text": "Recognize indirect refusals and confirm commitments privately with open, specific questions"
       },
       {
         "id": "d",
-        "text": "Implement written status reports to supplement verbal communication during stand-ups"
+        "text": "Move the member's status updates to written reports so the wording can be reviewed later"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Understanding individual communication preferences and cultural contexts allows the project manager to develop inclusive communication strategies that leverage diverse styles while ensuring all team members can contribute effectively. Those conversations should also explore cultural context before any team-wide change is made.",
+    "explanation": "In high-context cultures meaning is carried by context and phrasing; “that may be difficult” often signals “no” without public confrontation, while low-context listeners take words literally. The project manager should read these cues and confirm commitments in a setting where the member can speak frankly, using open questions such as “What would you need to finish by Friday?”",
     "distractorExplanations": {
-      "a": "A rigid standard format may suppress valuable cultural communication strengths and doesn't address the underlying need for mutual understanding among team members.",
-      "b": "Rotating leadership doesn't address the fundamental communication style differences and may create inconsistency rather than improved understanding.",
-      "d": "Adding written reports increases administrative burden without addressing the core issue of helping team members understand and adapt to different communication styles."
+      "a": "Forcing a public yes or no puts face-saving pressure on high-context communicators, who may still say yes to avoid confrontation.",
+      "b": "Treating every hesitation as a refusal is another stereotype; the PM still needs to confirm what the member actually means.",
+      "d": "Written reports do not resolve the indirect phrasing; the commitment still needs explicit, safe confirmation."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -2313,31 +2313,31 @@
     "id": "pmp-readiness-check-people-080",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager discovers that team members have been having informal discussions about project decisions during lunch breaks, and these conversations are influencing work direction without involving all relevant stakeholders. Some team members who don't participate in these informal gatherings feel excluded from decision-making. What should the project manager implement?",
+    "prompt": "A project team grows from 6 to 10 people, counting the project manager in both figures. Using the formula n(n − 1)/2, how many communication channels are added?",
     "options": [
       {
         "id": "a",
-        "text": "Establish formal communication protocols that ensure all team members have equal access"
+        "text": "30"
       },
       {
         "id": "b",
-        "text": "Prohibit work-related discussions during lunch breaks to keep decision-making inside formal meetings"
+        "text": "36"
       },
       {
         "id": "c",
-        "text": "Encourage the excluded team members to join the lunch group so they can take part in the discussions"
+        "text": "40"
       },
       {
         "id": "d",
-        "text": "Ask the lunch group to send a written summary of their discussions to the rest of the team each week"
+        "text": "45"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Formal communication protocols ensure transparency and equal participation in decision-making while allowing for natural team interactions. This addresses the exclusion issue without stifling all informal communication. Equal access to decision-making discussions keeps informal gatherings from steering the project.",
+    "explanation": "Channels = n(n − 1)/2. With 6 people: 6 × 5 / 2 = 15. With 10 people: 10 × 9 / 2 = 45. The increase is 45 − 15 = 30 channels. Adding four people tripled the number of channels, which is why the communications plan must be revisited when a team grows.",
     "distractorExplanations": {
-      "b": "Banning informal talk is unenforceable and harms rapport; the issue is that decisions are not shared, which protocols fix.",
-      "c": "Pushing people into an informal group still leaves decisions undocumented and excludes remote or absent members.",
-      "d": "Weekly summaries inform others only after decisions are taken, so the excluded members still have no input."
+      "b": "36 is 9 × 4, which does not apply the formula; the correct count compares 10 × 9 / 2 = 45 with 6 × 5 / 2 = 15.",
+      "c": "40 multiplies the 10 people by the 4 newcomers, which double counts pairs and is not the channel formula.",
+      "d": "45 is the total number of channels for 10 people, not the increase over the original team's 15 channels."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -2511,31 +2511,31 @@
     "id": "pmp-readiness-check-people-086",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is leading a team where two experienced developers have different approaches to solving a complex technical problem. One developer prefers a traditional waterfall approach with detailed upfront planning, while the other advocates for an iterative agile approach with frequent prototyping. The disagreement is causing delays as the team cannot move forward. What should the project manager do first?",
+    "prompt": "During a tense steering meeting, a stakeholder accuses the project team of hiding problems. The project manager feels a strong urge to snap back and defend the team on the spot. Which response best reflects emotional intelligence?",
     "options": [
       {
         "id": "a",
-        "text": "Make the final decision based on project constraints and communicate it to both developers"
+        "text": "Respond firmly right away so the stakeholder sees that unfair accusations will be challenged"
       },
       {
         "id": "b",
-        "text": "Assign the decision to the technical lead and remove themselves from the technical discussion"
+        "text": "Say nothing and let the accusation pass so the meeting can move on to the next agenda item"
       },
       {
         "id": "c",
-        "text": "Facilitate a collaborative session where both developers can present their approaches"
+        "text": "Recognize the reaction, pause, and ask the stakeholder which specific issues concern them"
       },
       {
         "id": "d",
-        "text": "Schedule separate meetings with each developer to understand their concerns before making a decision"
+        "text": "Ask the sponsor to step in and answer the accusation on behalf of the whole project team"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Facilitating collaboration between team members with different perspectives allows them to leverage their combined expertise and reach a solution that both can support. This approach builds team cohesion and often results in better technical solutions. The aim is for them to work together toward a hybrid solution that both can support.",
+    "explanation": "Emotional intelligence starts with self-awareness (noticing the urge to snap back) and self-regulation (pausing instead of reacting). Following with an open question about specific concerns shows empathy and turns an accusation into facts the project manager can address. This protects the relationship and usually uncovers the real issue behind the accusation.",
     "distractorExplanations": {
-      "a": "Making a unilateral decision without facilitating collaboration misses the opportunity to leverage both developers' expertise and may create resentment.",
-      "b": "Delegating the decision without facilitating discussion between the developers doesn't address the underlying conflict and may not resolve the disagreement.",
-      "d": "While understanding individual concerns is important, meeting separately doesn't facilitate the collaborative problem-solving needed to resolve the technical disagreement."
+      "a": "Reacting on impulse is a failure of self-regulation; it escalates the conflict and makes the team look defensive.",
+      "b": "Letting a serious concern pass unaddressed is avoidance; the stakeholder's worry remains and trust erodes further.",
+      "d": "Handing the issue to the sponsor abdicates the project manager's role in managing stakeholder concerns and relationships."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -2764,9 +2764,9 @@
     "correctOptionId": "b",
     "explanation": "Effective coaching involves specific behavioral feedback combined with skill development through practice and reflection. This approach addresses the root cause while providing ongoing support and accountability for improvement in collaborative behaviors. Skills are developed through practice and reflection, with the PM following up on progress.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Provide direct feedback about specific collaborative behaviors and work together to develop interpersonal skills through practice and…”.",
-      "c": "Not the best answer here; the right answer is “Provide direct feedback about specific collaborative behaviors and work together to develop interpersonal skills through practice and…”.",
-      "d": "Not the best answer here; the right answer is “Provide direct feedback about specific collaborative behaviors and work together to develop interpersonal skills through practice and…”."
+      "a": "Isolating the member hides the behavior instead of changing it and denies the team their collaboration, so the friction remains.",
+      "c": "A generic workshop gives no feedback on this person's specific interrupting and dismissing behaviors, so change is unlikely.",
+      "d": "Modeling by a patient peer is indirect; without direct feedback the member may not realize which behaviors are the problem."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -2808,31 +2808,31 @@
     "id": "pmp-readiness-check-people-097",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is working with a team member who has strong technical skills but frequently becomes defensive when receiving feedback during code reviews. This behavior is discouraging other team members from providing constructive input, which is affecting code quality and team learning. The team member seems unaware of how their reactions impact others. What is the most effective approach for the project manager?",
+    "prompt": "Two team leads disagree sharply about the integration test strategy. In a meeting, the project manager says, “You both want a reliable release and you agree on most of this, so let's not dwell on the differences,” and moves to the next agenda item. Which conflict resolution technique did the project manager use?",
     "options": [
       {
         "id": "a",
-        "text": "Have a private conversation to provide feedback on their response to feedback"
+        "text": "Smoothing/accommodating"
       },
       {
         "id": "b",
-        "text": "Assign the team member to work independently to avoid feedback situations"
+        "text": "Compromising/reconciling"
       },
       {
         "id": "c",
-        "text": "Ask other team members to be less direct in their code review comments"
+        "text": "Withdrawing/avoiding"
       },
       {
         "id": "d",
-        "text": "Implement anonymous code reviews so comments cannot be traced to individual reviewers"
+        "text": "Collaborating/problem solving"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A private coaching conversation addresses the root issue by helping the team member develop self-awareness and skills for receiving feedback constructively. This approach maintains dignity while directly addressing the behavior that's impacting team dynamics. The PM should also coach the member on receiving criticism constructively.",
+    "explanation": "Smoothing (accommodating) emphasizes areas of agreement and plays down differences to keep harmony. It gives temporary relief, but the underlying disagreement about test strategy is still unresolved and is likely to return. Collaborating would have surfaced both viewpoints and worked toward a solution both leads commit to.",
     "distractorExplanations": {
-      "b": "Isolating the team member doesn't solve the underlying issue and reduces opportunities for growth, learning, and team collaboration.",
-      "c": "Asking others to modify their feedback approach doesn't address the core problem and may reduce the quality and honesty of code reviews.",
-      "d": "Anonymity reduces transparency and collaborative learning, and the member still never learns how their reactions affect others."
+      "b": "Compromising requires each side to give something up for a partial solution; nobody made a concession here, the differences were simply played down.",
+      "c": "Withdrawing means retreating from or postponing the issue without engaging it; the PM actively stressed common ground, which defines smoothing.",
+      "d": "Collaborating explores both viewpoints openly to reach consensus and commitment; the PM explicitly avoided discussing the differences."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -2841,31 +2841,31 @@
     "id": "pmp-readiness-check-people-098",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "During a project health check, a project manager discovers that team productivity has declined significantly over the past two sprints. Team members report feeling overwhelmed and mention that they're spending excessive time in meetings, leaving little time for actual development work. The team has been following all prescribed agile ceremonies and stakeholder meetings. What should the project manager prioritize to address this issue?",
+    "prompt": "A developer joins an established agile team in the middle of a release. After two weeks they still lack system access, are unsure whom to ask, and have not completed a backlog item. Velocity has dipped as teammates answer ad hoc questions. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Extend the sprint length from two to four weeks so there is more uninterrupted development time"
+        "text": "Send the developer the complete project documentation set and ask them to study it before taking on any work"
       },
       {
         "id": "b",
-        "text": "Audit current meetings to eliminate redundant sessions and optimize necessary ones"
+        "text": "Set up an onboarding plan with system access, a named buddy, and a small, well-defined first backlog item"
       },
       {
         "id": "c",
-        "text": "Reduce the team size to decrease coordination overhead and meeting load"
+        "text": "Wait until the next release begins so the developer can start fresh together with the rest of the team"
       },
       {
         "id": "d",
-        "text": "Implement stricter time management policies for team members"
+        "text": "Ask the developer to shadow the sprint ceremonies only until they feel ready to pick up tasks themselves"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Auditing and optimizing meetings directly addresses the root cause identified by the team - excessive meeting time. This approach can quickly free up development time while maintaining necessary communication and collaboration.",
+    "explanation": "Onboarding is part of leading the team: removing access blockers, giving a single go-to buddy and assigning a small, well-defined first item lets the newcomer deliver value quickly and cuts the scattered interruptions that are pulling down velocity. The project manager acts as a servant leader by clearing impediments the new member cannot remove alone.",
     "distractorExplanations": {
-      "a": "Longer sprints keep the same meeting load per week and slow feedback; the waste is redundant meetings, not sprint length.",
-      "c": "Cutting people reduces capacity and does not remove redundant meetings; the root cause is meeting overload, not headcount.",
-      "d": "Stricter time management policies don't address the systemic issue of too many meetings and may create additional stress without solving the root problem."
+      "a": "Reading documentation alone is slow and passive; it does not fix the missing access or the lack of a clear person to ask.",
+      "c": "Delaying integration wastes weeks of capacity mid-release and leaves the access and support problems unresolved.",
+      "d": "Observation-only extends the ramp-up indefinitely; newcomers learn fastest by completing a small real task with support."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -2907,31 +2907,31 @@
     "id": "pmp-readiness-check-people-100",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager notices that a previously high-performing team member has been arriving late, missing deadlines, and showing signs of disengagement over the past few weeks. The team member's work quality remains acceptable, but their behavior is starting to affect team dynamics and other members are beginning to express concerns. What should be the project manager's first step?",
+    "prompt": "In a weak matrix organization, a team member keeps missing agreed deadlines. The project manager has already held two private coaching conversations and agreed clear expectations with the member, but there has been no improvement. What should the project manager do next?",
     "options": [
       {
         "id": "a",
-        "text": "Document the performance issues and initiate formal disciplinary procedures"
+        "text": "Issue a formal written warning to the team member under the project manager's own authority"
       },
       {
         "id": "b",
-        "text": "Reassign the team member's critical-path tasks to other team members until their engagement improves"
+        "text": "Remove the team member from the project and request a replacement from the resource pool"
       },
       {
         "id": "c",
-        "text": "Address the behavior publicly in the next team meeting as a warning to others"
+        "text": "Raise the performance problem at the next team meeting so that peers can hold the member to account for it"
       },
       {
         "id": "d",
-        "text": "Have a private, supportive conversation to understand what might be affecting their performance"
+        "text": "Share documented facts with the member's functional manager, who handles formal performance action"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A private, supportive conversation demonstrates care for the team member while gathering information about potential underlying issues. This approach maintains dignity and may reveal personal or professional challenges that can be addressed collaboratively.",
+    "explanation": "In a weak matrix the functional manager holds formal authority over staff, including performance management, while the project manager's authority is limited. Once private coaching has failed, the next step is to bring documented, factual performance information to the functional manager so the two can agree on corrective action together.",
     "distractorExplanations": {
-      "a": "Jumping directly to formal disciplinary action without understanding the cause is premature and may damage the relationship with a previously good performer.",
-      "b": "Taking work away before talking to the person is punitive and may worsen disengagement; the cause has not yet been explored.",
-      "c": "Public confrontation is inappropriate and unprofessional, likely to damage relationships and team morale while not solving the underlying issue."
+      "a": "Formal warnings are a line-management action; in a weak matrix the project manager does not hold that authority.",
+      "b": "Releasing or replacing a resource is the functional manager's decision, and skipping that conversation damages the relationship.",
+      "c": "Publicly calling out an individual's performance harms trust and psychological safety; performance issues are handled privately."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3105,31 +3105,31 @@
     "id": "pmp-readiness-check-people-107",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager observes that team members frequently interrupt each other during meetings and some voices are consistently louder than others. Several quieter team members have approached the project manager privately to share ideas they couldn't express during group discussions. What technique should the project manager implement to improve meeting dynamics?",
+    "prompt": "A team must decide today whether to adopt a proposed trunk-based branching strategy. The project manager wants a quick read on how strongly each member supports the proposal and to surface reservations before committing, rather than simply counting votes. Which technique fits best?",
     "options": [
       {
         "id": "a",
-        "text": "Send meeting agendas in advance and ask for written input"
+        "text": "A majority vote by a show of hands"
       },
       {
         "id": "b",
-        "text": "Use round-robin discussion where each person speaks in turn"
+        "text": "Fist of five, then discuss low scores"
       },
       {
         "id": "c",
-        "text": "Limit meeting attendance to only the most essential participants"
+        "text": "Dot voting across alternative strategies"
       },
       {
         "id": "d",
-        "text": "Schedule separate meetings with quieter team members"
+        "text": "The technical lead decides after input"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Round-robin discussion ensures every team member has an equal opportunity to speak without interruption, addressing both the interruption problem and ensuring all voices are heard. This technique promotes inclusive participation and prevents dominant personalities from overshadowing others.",
+    "explanation": "Fist of five asks each member to show zero to five fingers at the same time to indicate their level of support for a single proposal. Low scores (one or two) flag reservations that the team discusses before deciding, so the result reflects real agreement rather than a bare majority.",
     "distractorExplanations": {
-      "a": "While written input helps, it doesn't address the real-time meeting dynamics or help quieter members develop confidence in group settings.",
-      "c": "Reducing attendance may exclude valuable contributors and doesn't solve the underlying communication dynamics.",
-      "d": "Separate meetings create additional overhead and don't help integrate quieter members into the main team discussions."
+      "a": "A majority vote counts yes or no but hides the strength of support and can leave a large minority uncommitted to the decision.",
+      "c": "Dot voting prioritizes among several options; here there is one proposal and the goal is to gauge how strongly members support it.",
+      "d": "Autocratic decision-making is fast but gives no read on support or reservations and lowers the team's buy-in to the outcome."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3204,31 +3204,31 @@
     "id": "pmp-readiness-check-people-110",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "During a team retrospective, several members express frustration that decisions made in previous retrospectives haven't been implemented, and they feel their time is being wasted. Team morale is declining, and participation in retrospectives is becoming minimal. What should the project manager do to restore the value and engagement of retrospectives?",
+    "prompt": "A team's retrospective action items are tracked and usually completed, yet attendance and energy in retrospectives keep falling. Members say every session uses the same three questions and feels like a ritual. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Create an action item tracking system with visible progress updates and accountability"
+        "text": "Vary the retrospective format and rotate facilitation among team members"
       },
       {
         "id": "b",
-        "text": "Reduce the frequency of retrospectives to focus on more critical project activities"
+        "text": "Reduce retrospectives to one per release so each session feels more important"
       },
       {
         "id": "c",
-        "text": "Replace retrospectives with individual feedback sessions to avoid group complaints"
+        "text": "Replace retrospectives with a written survey members complete on their own"
       },
       {
         "id": "d",
-        "text": "Invite senior management to retrospectives to ensure action items are prioritized"
+        "text": "Ask the sponsor to attend to show leadership interest in the team's improvements"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Creating a visible action item tracking system with progress updates demonstrates commitment to following through on team suggestions and provides accountability. This approach directly addresses the root cause of frustration and rebuilds trust in the retrospective process by showing that team input leads to tangible changes.",
+    "explanation": "Follow-through is not the issue here; the format has gone stale. Changing retrospective formats (for example sailboat, 4Ls or start-stop-continue) and rotating facilitation brings fresh perspectives, surfaces different problems and gives members ownership, which restores engagement in continuous improvement.",
     "distractorExplanations": {
-      "b": "Reducing frequency doesn't address the core issue of not following through on decisions and may further signal that retrospectives aren't valued.",
-      "c": "Individual sessions lose the collaborative benefit of team retrospectives and don't address the need for collective problem-solving.",
-      "d": "Involving senior management may inhibit open discussion and doesn't address the project manager's responsibility to follow through on commitments."
+      "b": "Fewer retrospectives slow inspect-and-adapt cycles and do nothing about the repetitive format that is causing disengagement.",
+      "c": "A solo survey removes the shared discussion that turns individual observations into team-owned improvements.",
+      "d": "A senior attendee tends to reduce candor, and the problem is a stale format, not a lack of management attention."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3237,31 +3237,31 @@
     "id": "pmp-readiness-check-people-111",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is leading a cross-functional team where the marketing representative consistently dominates discussions and dismisses input from the technical team members. The technical members have started disengaging from meetings and are reluctant to share their expertise. This dynamic is affecting the quality of project decisions and team collaboration. What should the project manager do first?",
+    "prompt": "Early in a product project, team members keep arguing over which features matter most. It turns out each member describes the product's purpose and target users differently. What should the project manager do first?",
     "options": [
       {
         "id": "a",
-        "text": "Restructure meetings with a strict speaking-time limit for every participant to balance input"
+        "text": "Ask the product owner to rank every feature so that the arguments stop and the team can start building"
       },
       {
         "id": "b",
-        "text": "Meet privately with the marketing representative to discuss their communication style"
+        "text": "Facilitate a session with the sponsor and team to agree a shared product vision and success measures"
       },
       {
         "id": "c",
-        "text": "Ask the technical team members to be more assertive in defending their positions"
+        "text": "Write a detailed requirements specification and ask each member to sign it off before work starts"
       },
       {
         "id": "d",
-        "text": "Escalate the issue to the functional managers of both departments"
+        "text": "Let each member build a prototype of their own idea and keep whichever version users rate highest"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The project manager should first address the root cause by having a direct conversation with the marketing representative about their behavior and its impact on team dynamics. This approach allows for coaching and behavioral change while maintaining relationships and team cohesion. The conversation should cover its impact on the team, so the representative understands why change is needed.",
+    "explanation": "The feature arguments are a symptom of a missing common vision. Co-creating a product vision (purpose, target users, the problem solved and how success will be measured) with the sponsor and team gives everyone the same reference point for prioritizing. Once the vision is shared, backlog ordering decisions become far less contentious.",
     "distractorExplanations": {
-      "a": "Speaking limits treat the symptom for everyone and leave the dismissive behavior unaddressed with the person causing it.",
-      "c": "This places the burden on the affected team members rather than addressing the inappropriate behavior of the marketing representative, and could escalate conflict.",
-      "d": "Escalation should be a last resort after direct intervention has been attempted, as it may damage relationships and undermine the project manager's authority to manage team dynamics."
+      "a": "Ranking features without a shared purpose forces a decision on people who still disagree about what the product is for.",
+      "c": "A detailed specification adds paperwork but does not create shared understanding of why the product exists and whom it serves.",
+      "d": "Parallel prototypes waste effort and turn the disagreement into a competition instead of aligning everyone on one direction."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3270,31 +3270,31 @@
     "id": "pmp-readiness-check-people-112",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is working with a team member who consistently produces high-quality work but struggles with time estimation. The team member regularly underestimates task duration, leading to missed sprint commitments and affecting team predictability. The individual becomes defensive when the project manager tries to discuss this pattern. How should the project manager approach this performance issue?",
+    "prompt": "In planning poker, most of the team estimates a user story at 5 points, but one developer shows 2 and another shows 13. What should the team do next?",
     "options": [
       {
         "id": "a",
-        "text": "Assign a more experienced team member to review all of their estimates before sprint planning"
+        "text": "Record the average of all the estimates and move on to the next story"
       },
       {
         "id": "b",
-        "text": "Reduce their sprint workload by a fixed buffer to absorb the estimation errors"
+        "text": "Accept 5 points because it is the estimate most team members selected"
       },
       {
         "id": "c",
-        "text": "Use historical data to show the pattern and collaborate on developing better estimation techniques"
+        "text": "Have the 2 and 13 estimators explain their reasoning, then re-estimate"
       },
       {
         "id": "d",
-        "text": "Document the estimation pattern and address it formally in their next performance review cycle"
+        "text": "Ask the project manager to set the final estimate to settle the spread"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Using objective data removes emotion from the conversation and helps the team member see the pattern clearly. Collaborating on solutions builds their skills and maintains their ownership of the improvement process, which is more likely to create lasting change.",
+    "explanation": "A wide spread in planning poker signals different assumptions about scope, risk or approach. Standard practice is for the highest and lowest estimators to explain their thinking, which often reveals hidden work or a simpler solution, and then the team re-votes until estimates converge. The conversation, not the number, is the main value of the technique.",
     "distractorExplanations": {
-      "a": "This creates dependency and doesn't develop the individual's estimation skills, while potentially creating resentment about oversight and reducing their autonomy.",
-      "b": "A fixed buffer hides the estimation problem instead of improving it, and the team member never learns to estimate better.",
-      "d": "Saving it for a formal review is punitive and delayed; with a defensive member, objective data and collaboration work better now."
+      "a": "Averaging hides the disagreement and ignores the assumptions behind the outliers, which may reveal missed work or a simpler path.",
+      "b": "Majority rule discards information the outliers hold; one of them may know about complexity or a shortcut the others missed.",
+      "d": "Estimates belong to the people doing the work; a PM-imposed number removes ownership and skips the clarifying discussion."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3391,9 +3391,9 @@
     "correctOptionId": "b",
     "explanation": "Creating structured opportunities allows the team member to contribute their innovative ideas in a format that works for their communication style while ensuring the team benefits from their input. This approach addresses both the individual's need for recognition and the team's need for their creative contributions. Examples include dedicated innovation sessions or rotating presentation responsibilities.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Create structured opportunities for the team member to share their ideas, such as dedicated innovation sessions or rotating presentation…”.",
-      "c": "Not the best answer here; the right answer is “Create structured opportunities for the team member to share their ideas, such as dedicated innovation sessions or rotating presentation…”.",
-      "d": "Not the best answer here; the right answer is “Create structured opportunities for the team member to share their ideas, such as dedicated innovation sessions or rotating presentation…”."
+      "a": "More independent work deepens the isolation the member already feels and keeps the team from hearing their ideas in discussion.",
+      "c": "Calling out the team publicly can create defensiveness and still gives the isolated member no structured way to contribute ideas.",
+      "d": "Pairing with the 'most social' member labels the person as the problem and creates no channel for their innovative ideas."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3402,31 +3402,31 @@
     "id": "pmp-readiness-check-people-117",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is working with a virtual team spread across multiple time zones. Team members have started scheduling important discussions during their local business hours without considering availability of colleagues in other regions. This has led to key decisions being made without input from affected team members, causing frustration and rework. What approach should the project manager implement to improve collaboration equity?",
+    "prompt": "The sponsor of a customer portal project measures success by the launch date, while the head of compliance measures it by full audit-trail coverage. Both have told the team their criterion is the top priority, and the team is unsure which to optimize for. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Designate specific team members as regional representatives who can make decisions for their time zones"
+        "text": "Optimize for the sponsor's launch date, because the sponsor funds the project and has the final say"
       },
       {
         "id": "b",
-        "text": "Require important discussions to be conducted asynchronously through documented collaboration tools"
+        "text": "Ask the team to deliver both goals in full and absorb any extra work through sustained overtime"
       },
       {
         "id": "c",
-        "text": "Establish rotating meeting times so that the inconvenience of off-hours participation is shared"
+        "text": "Bring both stakeholders together to agree on prioritized, documented success criteria for the project"
       },
       {
         "id": "d",
-        "text": "Schedule all team meetings during the overlap hours when most team members are available, even if the window is limited"
+        "text": "Meet each stakeholder separately and assure each one that their criterion will be treated as the priority"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Rotating meeting times ensures that all team members have equal opportunity to participate in real-time discussions while sharing the burden of inconvenient meeting times fairly. This approach demonstrates respect for all team members regardless of their location and maintains collaborative decision-making. Rotation shares the off-hours burden equally among all team members.",
+    "explanation": "Conflicting success criteria are an expectation-alignment problem. The project manager should facilitate a joint conversation so the stakeholders agree, explicitly and in writing, how launch timing and audit-trail coverage are prioritized or balanced, for example a minimum compliant scope by the launch date. Documented, agreed criteria give the team a clear target and prevent later disputes.",
     "distractorExplanations": {
-      "a": "Designating regional representatives creates a hierarchy that may not reflect expertise or project roles, and could lead to decisions being made without proper technical or stakeholder input.",
-      "b": "Going fully asynchronous removes real-time discussion for complex decisions; rotation keeps live meetings fair instead.",
-      "d": "Limited overlap hours may not provide sufficient time for meaningful collaboration and could force rushed decisions or exclude team members whose schedules don't align with the narrow window."
+      "a": "Ignoring compliance risks an unacceptable product; even the sponsor needs the trade-off made explicit with compliance.",
+      "b": "Overtime hides an unresolved priority conflict and is unsustainable; the stakeholders must agree what success means.",
+      "d": "Promising priority to both creates contradictory commitments that will surface as conflict and lost trust later."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3435,31 +3435,31 @@
     "id": "pmp-readiness-check-process-004",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is facilitating a retrospective meeting where team members are reluctant to share honest feedback about process improvements. Several team members seem hesitant to speak up, especially about issues involving senior team members. How should the project manager handle this situation?",
+    "prompt": "Each retrospective produces ten to twelve improvement actions, but by the next retrospective almost none have been started and the team is losing faith in the meeting. What should the project manager suggest?",
     "options": [
       {
         "id": "a",
-        "text": "Postpone the retrospective until the team trusts each other more"
+        "text": "Assign every action to the project manager so one person is accountable for completing them"
       },
       {
         "id": "b",
-        "text": "Ask senior team members to leave the meeting temporarily"
+        "text": "Hold an extra mid-sprint meeting dedicated to reviewing progress on the improvement actions"
       },
       {
         "id": "c",
-        "text": "Create a safe environment by using anonymous feedback tools"
+        "text": "Commit to one or two highest-value improvements and add them to the next sprint backlog"
       },
       {
         "id": "d",
-        "text": "Schedule individual meetings with each team member instead"
+        "text": "Keep all of the actions but extend the sprint length to create time for working on them"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Creating psychological safety through anonymous feedback mechanisms and clear ground rules encourages honest participation while maintaining team cohesion and respect for all members. Establishing ground rules alongside anonymous tools lets members raise issues involving senior colleagues.",
+    "explanation": "Too many improvement actions compete with delivery work, so none get done. Limiting the retrospective outcome to one or two highest-value improvements and placing them in the next sprint backlog makes them visible, sized and owned like any other work, so they actually get finished and the team sees that retrospectives produce change.",
     "distractorExplanations": {
-      "a": "Postponing removes the improvement forum without building trust; safety must be created inside the retrospective itself.",
-      "b": "Asking senior members to leave could create division and doesn't address the underlying trust and communication issues.",
-      "d": "Individual meetings lose the collaborative benefit of team retrospectives and may not lead to shared understanding of improvements."
+      "a": "Centralizing every action on the PM creates a bottleneck and removes the team's ownership of its own improvements.",
+      "b": "Another meeting adds overhead without reducing the overload of actions that is preventing any of them from starting.",
+      "d": "Lengthening sprints slows feedback for all work and still leaves too many competing improvement actions."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3699,31 +3699,31 @@
     "id": "pmp-readiness-check-process-109",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is designing a knowledge management process for a research and development project where team members frequently discover new technical approaches and solutions. The current informal knowledge sharing through meetings is insufficient, and valuable insights are being lost when team members rotate off the project. External consultants also contribute specialized knowledge that needs to be retained. What knowledge management approach should be established?",
+    "prompt": "A project manager emails a revised test schedule to a vendor's team lead. The vendor team keeps working to the old dates, and the lead later says the email was ambiguous. Under the sender-receiver communication model, which step was missing?",
     "options": [
       {
         "id": "a",
-        "text": "Require all team members to document their work in detailed technical reports"
+        "text": "Encoding the message as a written email instead of a phone call"
       },
       {
         "id": "b",
-        "text": "Schedule regular knowledge sharing presentations by each team member"
+        "text": "Removing all noise from the transmission channel before sending the email"
       },
       {
         "id": "c",
-        "text": "Extend the external consultants' contracts so their specialized knowledge stays on the project"
+        "text": "Copying the vendor team lead's manager on the original email"
       },
       {
         "id": "d",
-        "text": "Implement a collaborative knowledge repository with structured capture and retrieval processes"
+        "text": "Feedback from the receiver confirming how the message was understood"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A collaborative knowledge repository with structured capture and retrieval processes provides systematic knowledge management that captures insights from all contributors, including rotating team members and consultants. This approach ensures knowledge is preserved and accessible beyond individual participation.",
+    "explanation": "In the sender-receiver model the sender encodes a message and transmits it through a medium, noise can distort it, and the receiver decodes it. Communication is complete only when the receiver acknowledges it and gives feedback confirming understanding. Asking the vendor lead to confirm the new dates in their own words would have exposed the ambiguity.",
     "distractorExplanations": {
-      "a": "Detailed technical reports create documentation burden without ensuring knowledge is accessible or usable by others, and may not capture tacit knowledge effectively.",
-      "b": "Presentations are transient; without structured capture and retrieval, insights are still lost when members rotate off.",
-      "c": "Longer contracts only delay the loss and add cost; the knowledge must be captured in a repository the organization keeps."
+      "a": "Encoding did happen (the email was written); choosing email over a call is a medium choice, not the missing model step.",
+      "b": "Noise can be reduced but never fully removed; the gap here was that nobody confirmed the message was understood.",
+      "c": "Copying another person widens distribution but does not confirm that the receiver decoded the message correctly."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -3732,31 +3732,31 @@
     "id": "pmp-readiness-check-process-113",
     "examSlug": "pmp-readiness-check",
     "topicId": "people",
-    "prompt": "A project manager is implementing a stakeholder engagement process for a regulatory compliance project where some stakeholders require formal documentation and approval processes, while others prefer informal collaboration and frequent feedback sessions. The project timeline is tight and stakeholder satisfaction is critical for success. What stakeholder engagement strategy should be established?",
+    "prompt": "A company-wide system rollout affects 2,000 employees. They need ongoing access to FAQs, training videos and go-live dates that they can consult whenever they choose. Which communication method best fits this need?",
     "options": [
       {
         "id": "a",
-        "text": "Use formal processes for all stakeholders to ensure consistent documentation and audit trails"
+        "text": "Interactive communication, such as live town-hall meetings with Q&A"
       },
       {
         "id": "b",
-        "text": "Focus on informal collaboration to maximize speed and flexibility in stakeholder interactions"
+        "text": "Push communication, such as weekly emails to every employee"
       },
       {
         "id": "c",
-        "text": "Rotate between formal and informal approaches on a monthly basis to accommodate every preference"
+        "text": "Push communication, such as printed memos to each department"
       },
       {
         "id": "d",
-        "text": "Segment stakeholders by engagement preferences and tailor communication approaches"
+        "text": "Pull communication, such as an intranet portal and knowledge base"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Segmenting stakeholders and tailoring engagement approaches based on their preferences and requirements is the most effective strategy. This allows formal processes for stakeholders who need them (often for regulatory or organizational reasons) while enabling informal collaboration with others, maximizing both compliance and stakeholder satisfaction. Tailoring is done while maintaining overall project coherence through a shared engagement plan.",
+    "explanation": "Pull communication suits large audiences or large volumes of information that recipients access at their own discretion, such as intranet sites, e-learning and knowledge repositories. Push methods send information to specific recipients but do not confirm it was read or understood, and interactive methods are multidirectional exchanges best suited to discussion.",
     "distractorExplanations": {
-      "a": "Using only formal processes may frustrate stakeholders who prefer informal collaboration and could slow down feedback cycles unnecessarily, impacting the tight timeline.",
-      "b": "Focusing only on informal approaches may not meet the documentation and approval needs of regulatory or formal stakeholders, creating compliance risks.",
-      "c": "Monthly rotation means each stakeholder group is served in the wrong mode half the time, which hurts satisfaction and compliance."
+      "a": "Town halls are useful for live discussion but cannot provide on-demand reference material for 2,000 people.",
+      "b": "Push emails arrive on the sender's schedule and quickly get buried; employees need material available whenever they look.",
+      "c": "Printed memos are push communication that goes out of date and cannot host training videos or be searched on demand."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3831,31 +3831,31 @@
     "id": "pmp-readiness-check-people-095",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "During a project retrospective, the team identifies that their velocity has been inconsistent across sprints, with significant variations in story points completed. Some team members attribute this to changing requirements, while others point to estimation inaccuracies. The team is divided on whether to focus on improving estimation techniques or pushing back on requirement changes. How should the project manager facilitate resolution of this issue?",
+    "prompt": "In a retrospective, the team reviews sprint data showing that both mid-sprint requirement changes and estimation misses contribute to inconsistent velocity. Half the team wants to overhaul estimation; the other half wants to push back on requirement changes. How should the project manager help the team move forward?",
     "options": [
       {
         "id": "a",
-        "text": "Implement both solutions simultaneously by improving estimation techniques and establishing stricter change control processes"
+        "text": "Implement both improvements at once, with a new estimation method and stricter change control from next sprint"
       },
       {
         "id": "b",
-        "text": "Vote on which approach the team prefers and implement the majority choice to maintain team buy-in"
+        "text": "Hold a vote and adopt only the majority's preferred improvement for the rest of the release"
       },
       {
         "id": "c",
-        "text": "Analyze sprint data to identify patterns and root causes"
+        "text": "Agree one improvement as a time-boxed experiment with a clear measure, then inspect it next retrospective"
       },
       {
         "id": "d",
-        "text": "Focus on estimation improvements first since these are within the team's direct control, then address requirement changes later"
+        "text": "Ask the product owner to freeze all requirements for three sprints so estimation accuracy can be judged alone"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Data-driven analysis helps identify the actual root causes of velocity variations rather than relying on assumptions. This evidence-based approach enables the team to develop targeted solutions and builds consensus around objective findings rather than opinions. The PM then guides the team to develop targeted improvement actions based on that evidence.",
+    "explanation": "Retrospectives should end in a small number of actionable improvements the team can test. Running one change as a time-boxed experiment with an agreed measure (for example, points added mid-sprint or estimate accuracy) shows whether it helps before the next is tried; the Scrum Guide lets the team add such improvements to the next sprint backlog.",
     "distractorExplanations": {
-      "a": "Implementing multiple solutions simultaneously makes it difficult to measure effectiveness and may overwhelm the team with too many changes at once.",
-      "b": "Voting without understanding root causes may lead to addressing symptoms rather than actual problems, and majority rule doesn't guarantee the best solution.",
-      "d": "Prioritizing solutions before understanding root causes may result in focusing effort on the wrong area and missing more impactful improvements."
+      "a": "Changing estimation and change control at the same time makes it impossible to tell which change moved velocity, and loads the team with two process shifts.",
+      "b": "A vote settles the argument but locks in one fix for the whole release without any measure, so the team never learns whether it worked.",
+      "d": "Freezing requirements is the product owner's call and blocks responding to change; it also stops the team learning to handle real requirement churn."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -4161,31 +4161,31 @@
     "id": "pmp-readiness-check-process-011",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project manager is working on a complex software integration project with multiple vendors. The project charter has been approved, and stakeholders have been identified. What should the project manager do next to establish the foundation for project execution?",
+    "prompt": "The charter for a multi-vendor software integration project has been approved, and the vendors now ask how change requests, status reporting, and deliverable acceptance will work across the whole project. The charter gives only high-level objectives and milestones. Where should the project manager define these approaches?",
     "options": [
       {
         "id": "a",
-        "text": "Start executing the work packages immediately"
+        "text": "In an amended project charter, so the sponsor signs off the working procedures"
       },
       {
         "id": "b",
-        "text": "Begin developing the project management plan"
+        "text": "In the project management plan, through its subsidiary plans and baselines"
       },
       {
         "id": "c",
-        "text": "Conduct a risk assessment workshop"
+        "text": "In the risk register, as responses to coordination risks between the vendors"
       },
       {
         "id": "d",
-        "text": "Create the work breakdown structure"
+        "text": "In each vendor's statement of work, written separately for that vendor's scope"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "After the project charter is approved and stakeholders are identified, the next logical step is to develop the project management plan. This comprehensive document integrates all subsidiary plans and establishes how the project will be executed, monitored, controlled, and closed.",
+    "explanation": "The charter authorizes the project and records high-level objectives; how the work will be executed, monitored, controlled, and closed is defined in the project management plan. Its subsidiary plans (change, communications, quality, procurement) and baselines give every vendor one integrated set of rules.",
     "distractorExplanations": {
-      "a": "Execution cannot begin without proper planning. Starting work packages immediately would lead to scope creep, budget overruns, and quality issues.",
-      "c": "While risk assessment is important, it is part of developing the project management plan, not the immediate next step after charter approval.",
-      "d": "The WBS is a component of scope planning, which occurs during the development of the project management plan, not as the immediate next step."
+      "a": "The charter authorizes the project and the project manager; loading operating procedures into it confuses authorization with planning and forces sponsor re-approval for every tweak.",
+      "c": "The risk register records individual risks and their responses; it does not define how change control, reporting, and acceptance work across the project.",
+      "d": "A statement of work describes one seller's deliverables; separate SOWs cannot set a single project-wide approach and invite conflicting rules."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -4326,31 +4326,31 @@
     "id": "pmp-readiness-check-process-016",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project manager is leading a software development project using a hybrid approach. The team has completed the design phase and is ready to begin iterative development. However, a new regulatory requirement has emerged that will significantly impact the product architecture. What should the project manager do first?",
+    "prompt": "On a hybrid software project, a new regulation will require changes to the product architecture. The project manager has already assessed the impact: the change is mandatory and adds about three weeks and 8% to the budget. What should the project manager do next?",
     "options": [
       {
         "id": "a",
-        "text": "Immediately update the project charter to reflect the new requirement"
+        "text": "Update the project charter to include the regulation, since mandatory changes alter the authorization"
       },
       {
         "id": "b",
-        "text": "Begin development as planned and address the requirement in a later iteration"
+        "text": "Start the architecture work now because the change is mandatory, and inform the change control board afterward"
       },
       {
         "id": "c",
-        "text": "Assess the impact of the change on scope, schedule, and budget"
+        "text": "Submit a change request with the impact analysis so the change control board can approve baseline updates"
       },
       {
         "id": "d",
-        "text": "Escalate the issue to the project sponsor for guidance"
+        "text": "Ask the team to absorb the work within the current iterations so the approved baselines do not have to change"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Before making any decisions about how to handle the new regulatory requirement, the project manager must first understand its full impact on the project's scope, schedule, and budget. This impact assessment provides the foundation for informed decision-making and proper change management.",
+    "explanation": "Mandatory changes still go through integrated change control. Being mandatory removes the question of whether to comply, but the change control board must still approve how it is implemented and the updated scope, schedule, and cost baselines, so the plan and stakeholders stay aligned.",
     "distractorExplanations": {
-      "a": "Updating the project charter would be premature without first understanding the full impact of the change and following proper change control procedures.",
-      "b": "Ignoring a regulatory requirement could lead to compliance issues and potentially invalidate the entire product, making this approach too risky.",
-      "d": "While escalation may eventually be necessary, the project manager should first gather information about the impact to provide meaningful context for stakeholder discussions."
+      "a": "The charter changes only if the project's authorization or high-level objectives change; a regulatory requirement is handled through change control and baseline updates.",
+      "b": "Mandatory does not mean unmanaged; starting work before approval bypasses change control and leaves the baselines and stakeholders out of date.",
+      "d": "Quietly absorbing three weeks of mandatory work hides a real baseline change and pushes the team past capacity; the baselines must be updated formally."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -4408,7 +4408,7 @@
       },
       {
         "id": "d",
-        "text": "Perform additional quality testing to confirm the extent of the problem"
+        "text": "Approve a deviation so the installed nonconforming materials can stay in place"
       }
     ],
     "correctOptionId": "b",
@@ -4416,7 +4416,7 @@
     "distractorExplanations": {
       "a": "Stopping all work immediately may be premature without understanding the full scope of the problem and could cause unnecessary delays and costs.",
       "c": "Continuing work with substandard materials could compound the quality problem and lead to more extensive rework later.",
-      "d": "While additional testing may be valuable, documenting the known issue and initiating corrective procedures should take priority to ensure proper process compliance."
+      "d": "The project manager cannot accept nonconforming work alone; any deviation from the specified standard needs documented evaluation and customer approval through change control."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -4511,7 +4511,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The Scrum Master should facilitate collaboration between the product owner and development team to find a solution that respects the team's capacity while maximizing value delivery. This maintains the principle of sustainable pace while ensuring the most valuable work is completed. Prioritization should be based on capacity and value, so the most critical campaign items fit the sprint.",
+    "explanation": "The Scrum Master facilitates; the product owner orders the backlog and the developers forecast what fits their capacity. Helping them agree which campaign-critical items to pull keeps a sustainable pace while the most valuable work lands in the sprint, and lower-priority items wait for the next one.",
     "distractorExplanations": {
       "b": "Directing overtime violates the principle of sustainable pace and can lead to burnout and decreased quality over time.",
       "c": "The Scrum Master should not make prioritization decisions unilaterally, as this is the product owner's responsibility.",
@@ -4669,7 +4669,7 @@
       },
       {
         "id": "c",
-        "text": "Sprint review followed by sprint retrospective to identify improvement opportunities"
+        "text": "Run the sprint review with only Done work, then take the debt to the retrospective"
       },
       {
         "id": "d",
@@ -4677,11 +4677,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The sprint review should proceed as scheduled to demonstrate completed work and gather stakeholder feedback. The sprint retrospective that follows provides the appropriate forum for the team to discuss technical debt issues and identify process improvements for future sprints.",
+    "explanation": "The sprint review should go ahead as scheduled: only work that meets the Definition of Done is presented, and unfinished items return to the product backlog. The retrospective that follows is the right forum to examine the technical debt that blocked completion and plan improvements.",
     "distractorExplanations": {
       "a": "Replanning at the end of a sprint skips inspection; the review shows the real increment and the retrospective addresses the debt.",
       "b": "A side meeting replaces the transparent sprint review where stakeholders inspect what is actually Done.",
-      "d": "Delaying the review breaks the Scrum cadence; incomplete work is shown transparently and the debt goes to the retrospective."
+      "d": "Delaying the review breaks the Scrum cadence; undone items are not demonstrated but returned to the backlog, and the debt goes to the retrospective."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -4789,11 +4789,11 @@
     "id": "pmp-readiness-check-process-032",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "During project execution, a team member reports that a key deliverable will require an additional 40 hours of specialized expertise that wasn't included in the original project plan. The project manager needs to bring in an external consultant. Which process group activity is the project manager primarily engaged in:",
+    "prompt": "During project execution, a team member reports that a key deliverable will require an additional 40 hours of specialized expertise that wasn't included in the original project plan. The project manager needs to bring in an external consultant. In which process group and process is the project manager primarily working?",
     "options": [
       {
         "id": "a",
-        "text": "Initiating process group - Define Project Charter"
+        "text": "Initiating process group - Develop Project Charter"
       },
       {
         "id": "b",
@@ -4811,7 +4811,7 @@
     "correctOptionId": "c",
     "explanation": "The project manager is executing the Acquire Resources process within the Executing process group. This process involves obtaining the human and material resources needed for project completion, including bringing in external consultants during project execution.",
     "distractorExplanations": {
-      "a": "The project charter has already been defined since the project is in execution phase.",
+      "a": "The project charter is developed during initiating and is already approved; this project is in execution and needs a resource now.",
       "b": "Plan Resource Management occurs during planning phase and focuses on creating the resource management plan, not acquiring actual resources.",
       "d": "Control Resources focuses on monitoring resource utilization and performance, not acquiring new resources needed for deliverables."
     },
@@ -4888,7 +4888,7 @@
     "id": "pmp-readiness-check-process-035",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project manager is closing a complex infrastructure project that involved multiple vendors and internal teams. The final deliverable has been accepted, but several lessons learned sessions still need to be conducted with different stakeholder groups. Which closing process activity should be completed first?",
+    "prompt": "A project manager is closing a complex infrastructure project that involved multiple vendors and internal teams. The customer has said verbally that the final deliverable is acceptable, but no formal sign-off has been recorded, and several lessons learned sessions with different stakeholder groups are still pending. Which closing activity should be completed first?",
     "options": [
       {
         "id": "a",
@@ -4921,31 +4921,31 @@
     "id": "pmp-readiness-check-process-037",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A Scrum team has identified that their current sprint goal cannot be achieved due to a critical system dependency that was not available as expected. The product owner agrees that the sprint should be terminated early. What process should occur immediately after the sprint termination?",
+    "prompt": "Midway through a sprint, a competitor launch makes the sprint goal obsolete, and the product owner cancels the sprint. Several product backlog items are partly built and not yet Done. What should happen to those items?",
     "options": [
       {
         "id": "a",
-        "text": "Begin the next sprint planning session with updated priorities"
+        "text": "Carry them automatically into the next sprint backlog so the partial work is finished first"
       },
       {
         "id": "b",
-        "text": "Conduct a sprint retrospective to analyze what went wrong"
+        "text": "Return them to the product backlog for the product owner to re-order against new priorities"
       },
       {
         "id": "c",
-        "text": "Hold a sprint review to demonstrate completed work to stakeholders"
+        "text": "Count their completed tasks toward velocity and close them as done at their partial value"
       },
       {
         "id": "d",
-        "text": "Update the product backlog based on lessons learned"
+        "text": "Keep the cancelled sprint open until the team finishes them, then start sprint planning"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When a sprint is terminated early, the team should immediately conduct a sprint retrospective to analyze what happened, identify lessons learned, and determine how to prevent similar issues in future sprints. This ensures continuous improvement and helps the team adapt their processes.",
+    "explanation": "Under the Scrum Guide, only the product owner can cancel a sprint, and only when the sprint goal becomes obsolete. Work that does not meet the Definition of Done is not counted as done; it goes back to the product backlog so the product owner can re-order it against the changed priorities before the next sprint planning.",
     "distractorExplanations": {
-      "a": "Sprint planning for the next sprint should occur after the retrospective has been completed and lessons learned have been incorporated.",
-      "c": "A sprint review may still occur to show completed work, but the retrospective is more critical for understanding and preventing future issues.",
-      "d": "Product backlog updates may result from the retrospective, but the retrospective itself should happen first to capture immediate insights."
+      "a": "Nothing moves into a sprint automatically; the product owner re-orders the backlog and the next sprint planning decides what is pulled for the new goal.",
+      "c": "Partly built items do not meet the Definition of Done, so they earn no velocity and cannot be closed; counting them overstates progress.",
+      "d": "A cancelled sprint ends; continuing it to finish work toward an obsolete goal wastes effort that the new priorities may not justify."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5053,31 +5053,31 @@
     "id": "pmp-readiness-check-process-043",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project team using Kanban methodology notices that work items are accumulating in the 'In Review' column, creating a bottleneck. The team's work-in-progress limits are being respected, but cycle time is increasing. What process improvement should the project manager facilitate?",
+    "prompt": "A Kanban team's cycle time has been rising for a month. The sponsor asks the project manager to show where work is queuing in the workflow and whether that queue is still growing. Which chart should the project manager use?",
     "options": [
       {
         "id": "a",
-        "text": "Increase the WIP limit for the 'In Review' column so more items can be held there"
+        "text": "Sprint burndown chart showing remaining work against the time left"
       },
       {
         "id": "b",
-        "text": "Reassign team members from other columns to focus on reviews"
+        "text": "Velocity chart comparing completed points across recent iterations"
       },
       {
         "id": "c",
-        "text": "Implement daily standups to discuss items stuck in review"
+        "text": "Release burnup chart showing completed scope against total scope"
       },
       {
         "id": "d",
-        "text": "Analyze the review process to identify and eliminate waste or inefficiencies"
+        "text": "Cumulative flow diagram of items per workflow state over time"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "When a bottleneck occurs despite proper WIP limits, the root cause is typically process inefficiency. The project manager should facilitate analysis of the review process to identify waste, unnecessary steps, or resource constraints that can be eliminated or optimized.",
+    "explanation": "A cumulative flow diagram plots how many items sit in each workflow state over time. A band that keeps widening shows where work is queuing and that the queue is growing, and the horizontal distance between bands approximates cycle time, so it pinpoints the bottleneck behind the rising cycle time.",
     "distractorExplanations": {
-      "a": "Raising WIP limits lets more work queue up and lengthens cycle time; it masks the bottleneck rather than removing it.",
-      "b": "Reassigning team members addresses symptoms but doesn't solve the underlying process inefficiency causing the bottleneck.",
-      "c": "While communication helps, daily standups alone won't resolve the process inefficiency causing items to accumulate in review."
+      "a": "A burndown tracks remaining work within a timeboxed sprint; it shows no workflow states, and a Kanban team may not use sprints at all.",
+      "b": "Velocity summarizes completed work per iteration; it cannot show which workflow stage is holding the queue or whether it is growing.",
+      "c": "A burnup shows completed work against total scope, revealing overall progress and scope growth but not where work waits in the flow."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5139,7 +5139,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "In hybrid approaches, compliance requirements should be integrated into agile practices rather than treated as separate activities. By including documentation in the Definition of Done and allocating time within sprints, the team maintains agile principles while meeting organizational requirements. Time for documentation activities is then allocated within each sprint, so compliance is met without a separate phase.",
+    "explanation": "In hybrid approaches, compliance documentation should be part of the work, not a separate activity. Adding the required documents to the Definition of Done means each increment is done only when its documentation is complete, so compliance evidence grows with the product and no end-of-project documentation phase is needed.",
     "distractorExplanations": {
       "a": "This approach treats documentation as an afterthought and could significantly impact team velocity and agile flow.",
       "c": "Having documentation created independently risks accuracy issues and doesn't leverage the development team's knowledge.",
@@ -5172,7 +5172,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Before making changes to established processes, the project manager should first understand the root cause of the process differences and assess their actual impact on project objectives. This analysis will inform the most appropriate corrective action. The analysis should also assess the impact on project objectives before any standardization.",
+    "explanation": "Before changing established processes, the project manager should understand why the teams, including vendors, use different processes and what that difference costs the project. Root cause analysis shows whether to standardize, align only the interfaces, or adjust contracts, and gives management facts if escalation is needed.",
     "distractorExplanations": {
       "a": "Immediately standardizing processes without understanding the reasons for differences could disrupt productive workflows and may not address the real issue.",
       "b": "This approach doesn't address the underlying process conflict and may only mask integration problems temporarily.",
@@ -5205,7 +5205,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The root cause is external approval delays, not the Kanban process itself. Establishing SLAs and escalation procedures addresses the dependency management issue while maintaining the Kanban flow principles and ensuring stakeholder accountability. Escalation procedures back up the SLAs when approvals stall.",
+    "explanation": "The root cause is slow external approvals, not the Kanban system. Agreeing service level agreements for approval turnaround, with an escalation path when they are missed, manages the dependency and makes stakeholders accountable while preserving the flow that the WIP limits protect.",
     "distractorExplanations": {
       "a": "Increasing WIP limits would worsen the bottleneck by allowing more work to accumulate at the approval stage.",
       "b": "The approvals may be required for governance; bypassing them creates compliance risk instead of managing the dependency.",
@@ -5238,11 +5238,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Using multiple collection methods ensures comprehensive lessons learned capture despite participant availability constraints. This approach maximizes knowledge transfer while respecting project closure timelines and resource constraints. Combining surveys with individual interviews and group sessions gathers comprehensive feedback.",
+    "explanation": "Using several collection methods (surveys or short interviews for people who have moved on, a facilitated session for those still available, and a review of project records) captures lessons from every phase and stakeholder group without holding up closure; the results then go into the lessons learned repository.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Use multiple collection methods including surveys for unavailable participants, individual interviews, and group sessions to gather…”.",
+      "b": "Limiting input to whoever is still around loses the early phases and the absent stakeholder groups, so the lessons captured are biased and incomplete.",
       "c": "Waiting delays closure indefinitely and memories fade; lessons should be captured now using methods that reach absent people.",
-      "d": "Not the best answer here; the right answer is “Use multiple collection methods including surveys for unavailable participants, individual interviews, and group sessions to gather…”."
+      "d": "Functional managers were not part of the project's work; delegating collection to them filters lessons secondhand and removes the project manager's ownership of closure."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -5271,7 +5271,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Integrated project management requires concurrent development of interrelated plans. Risk responses directly impact schedule and budget, so these plans must be developed iteratively to ensure alignment and avoid conflicts between different management areas. Concurrent planning ensures alignment across all areas because risk responses change schedule and cost.",
+    "explanation": "Risk responses add activities and cost, while schedule and budget decisions change risk exposure, so these plans are interdependent. Developing them iteratively and concurrently through progressive elaboration keeps them aligned; finishing one before the others forces rework once the dependencies surface.",
     "distractorExplanations": {
       "a": "Sequential planning ignores the interdependencies between risk responses and other project constraints, potentially creating unrealistic plans.",
       "c": "Developing schedule and budget without considering risks first could result in plans that don't account for necessary risk response activities.",
@@ -5428,7 +5428,7 @@
       },
       {
         "id": "c",
-        "text": "Refocus standups on the three key questions and implement a parking lot for detailed discussions"
+        "text": "Refocus the standup on the sprint goal and blockers, with a parking lot for details"
       },
       {
         "id": "d",
@@ -5436,7 +5436,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Effective standups focus on coordination and impediment identification using the three key questions (what did you do, what will you do, what's blocking you). A parking lot captures detailed discussions for follow-up, keeping the standup brief and focused.",
+    "explanation": "The daily standup is a 15-minute event for the developers to inspect progress toward the sprint goal and surface impediments. The 2020 Scrum Guide no longer mandates the three questions, so the fix is focus rather than a script: detailed problem-solving moves to a parking lot right after the standup with only the people involved.",
     "distractorExplanations": {
       "a": "Cutting frequency keeps the status-report format and weakens daily coordination; the problem is the meeting's content, not its cadence.",
       "b": "Asynchronous status reports remove the real-time coordination and impediment surfacing that the daily standup exists to provide.",
@@ -5688,11 +5688,11 @@
       },
       {
         "id": "b",
-        "text": "Move all quality inspections to the end of the project to avoid disrupting work flow"
+        "text": "Keep milestone inspections but add a longer final inspection checklist before handover"
       },
       {
         "id": "c",
-        "text": "Increase the frequency of inspections by implementing quality gates at multiple stages of construction"
+        "text": "Add quality gates with inspections at multiple stages of construction"
       },
       {
         "id": "d",
@@ -5703,7 +5703,7 @@
     "explanation": "Implementing quality gates at multiple stages allows for earlier detection of defects, reducing the cost and impact of rework. This follows the principle that the cost of quality increases significantly when defects are found later in the process.",
     "distractorExplanations": {
       "a": "Statistical sampling may miss critical defects and doesn't address the core issue of late detection in the construction process.",
-      "b": "Moving inspections to the end would make the problem worse by detecting defects even later, increasing rework costs significantly.",
+      "b": "A bigger final checklist still finds defects at the end, after costly work has been built on them; the problem is late detection, not inspection depth.",
       "d": "Having the construction crew inspect their own work creates a conflict of interest and may not provide the independent verification needed for quality assurance."
     },
     "difficulty": "easy",
@@ -5721,7 +5721,7 @@
       },
       {
         "id": "b",
-        "text": "Work with procurement and finance teams to establish streamlined approval thresholds for small purchases"
+        "text": "Agree streamlined approval thresholds for small purchases with procurement and finance"
       },
       {
         "id": "c",
@@ -5729,7 +5729,7 @@
       },
       {
         "id": "d",
-        "text": "Pre-approve a lump-sum budget for every anticipated small purchase at the project charter and initiation stage"
+        "text": "Pre-approve a lump-sum budget during initiation for all anticipated small purchases"
       }
     ],
     "correctOptionId": "b",
@@ -5779,31 +5779,31 @@
     "id": "pmp-readiness-check-process-072",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "During sprint planning, a development team consistently overcommits to work and fails to complete their sprint goals. The team velocity has been declining over the past three sprints, and team morale is affected. What process adjustment should the project manager facilitate?",
+    "prompt": "After velocity fell for three sprints, a functional manager proposes setting the team a velocity target 20% above its recent average and publishing it next to another team's velocity to motivate them. Team morale is already low. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Extend the sprint from two to three weeks so the team can finish the work it commits to"
+        "text": "Accept the target, and let the team re-estimate its stories so the higher velocity is reachable"
       },
       {
         "id": "b",
-        "text": "Split user stories into smaller pieces and keep the same commitment level each sprint"
+        "text": "Publish both teams' velocities side by side so the team can see the size of the performance gap"
       },
       {
         "id": "c",
-        "text": "Add two team members mid-project to raise capacity to the level of the current commitments"
+        "text": "Tie a team bonus to hitting the target so that the higher commitment feels shared by everyone"
       },
       {
         "id": "d",
-        "text": "Implement historical velocity data analysis and capacity-based planning techniques"
+        "text": "Explain that velocity is a team-specific planning measure and plan from actual capacity"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Using historical velocity data and capacity-based planning helps the team make realistic commitments based on actual performance patterns rather than optimistic estimates. This addresses the root cause of overcommitment and supports sustainable delivery.",
+    "explanation": "Velocity is a team's own planning measure on its relative story-point scale; it cannot be compared across teams and becomes meaningless once it is a target, because points simply inflate. The project manager should keep planning from demonstrated capacity and look for the real causes of the decline.",
     "distractorExplanations": {
-      "a": "Longer sprints just shift the overcommitment; the team still plans beyond its demonstrated capacity and velocity keeps falling.",
-      "b": "Smaller stories help flow, but holding the commitment level ignores declining velocity; planning must be based on actual capacity.",
-      "c": "Adding people mid-project raises onboarding overhead and temporarily lowers velocity; it sidesteps capacity-based planning."
+      "a": "Re-estimating to hit a target inflates story points: reported velocity rises while actual output stays the same, which destroys its planning value.",
+      "b": "Each team sizes points on its own relative scale, so cross-team velocity comparisons are meaningless and tend to damage morale further.",
+      "c": "A bonus tied to velocity rewards point inflation and overcommitment rather than value delivered, and ignores why velocity is falling."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5812,31 +5812,31 @@
     "id": "pmp-readiness-check-process-073",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project manager is establishing a definition of done for a cross-functional team that includes developers, testers, and UX designers. Different team members have varying interpretations of when work items are considered complete, leading to inconsistent deliverables. What process element should be prioritized in the definition of done?",
+    "prompt": "A tester confirms that a user story meets all of its acceptance criteria, but the code has not been peer reviewed, which the team's definition of done requires for every item. The product owner wants to show the story at tomorrow's sprint review. How should the project manager advise?",
     "options": [
       {
         "id": "a",
-        "text": "Collaborative quality criteria that all team members can verify and validate"
+        "text": "It is not done; it must meet both its acceptance criteria and the definition of done"
       },
       {
         "id": "b",
-        "text": "Detailed technical specifications that each discipline must follow independently"
+        "text": "It is done, because story acceptance criteria take precedence over the definition of done"
       },
       {
         "id": "c",
-        "text": "Role-specific checklists that define completion for each functional area separately"
+        "text": "It is done if the product owner accepts it, because the product owner owns the backlog"
       },
       {
         "id": "d",
-        "text": "Management approval requirements to ensure oversight of all deliverables"
+        "text": "Show it as done and add the peer review as a new backlog item for the next sprint"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Collaborative quality criteria ensure that all team members understand and can contribute to determining when work is truly complete. This creates shared accountability and reduces handoff issues between disciplines.",
+    "explanation": "Acceptance criteria are specific to one story, while the definition of done is the quality standard every item must meet. A story that skips a definition-of-done step is not done: it is not presented as part of the increment and returns to the product backlog until the gap is closed.",
     "distractorExplanations": {
-      "b": "Detailed technical specs may be too rigid and don't promote cross-functional collaboration.",
-      "c": "Separate checklists can create silos and don't address integration between disciplines.",
-      "d": "Management approval adds unnecessary overhead and doesn't improve team-level quality understanding."
+      "b": "Acceptance criteria add story-specific conditions on top of the definition of done; they never override the shared quality standard.",
+      "c": "The product owner orders the backlog but cannot waive the definition of done; doing so would make the increment's quality inconsistent.",
+      "d": "Showing unfinished work as done misleads stakeholders and creates hidden debt; the review step belongs inside the same item, not a new story."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5845,31 +5845,31 @@
     "id": "pmp-readiness-check-process-074",
     "examSlug": "pmp-readiness-check",
     "topicId": "process",
-    "prompt": "A project team has been experiencing frequent scope creep during development iterations. Stakeholders regularly request changes during sprint reviews, and the product owner struggles to maintain focus on the original sprint goals. What process improvement should the project manager implement?",
+    "prompt": "On a predictive office fit-out, the project manager finds that the site team has been making small changes requested informally by the client's facilities manager. Each change was minor, but together they have added three weeks of work that no one approved. What process improvement should the project manager implement?",
     "options": [
       {
         "id": "a",
-        "text": "Establish a formal change control board to evaluate all mid-sprint requests"
+        "text": "Let the site team accept informal requests as long as each one takes less than a day of work"
       },
       {
         "id": "b",
-        "text": "Implement a product backlog refinement process with clear acceptance criteria"
+        "text": "Route every change request through integrated change control against the scope baseline"
       },
       {
         "id": "c",
-        "text": "Lock sprint scope after planning and defer all changes to subsequent iterations"
+        "text": "Absorb the changes already made and re-baseline the schedule at the next milestone review"
       },
       {
         "id": "d",
-        "text": "Require written justification for any changes requested during sprint reviews"
+        "text": "Ask the facilities manager to send future requests by email directly to the site supervisor"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Product backlog refinement with clear acceptance criteria helps prevent scope creep by ensuring requirements are well-understood before sprint planning. This proactive approach reduces ambiguity that leads to mid-sprint changes.",
+    "explanation": "This is scope creep: unapproved changes that look small individually but erode schedule and cost. On a predictive project every change request is logged, assessed for impact, and approved or rejected through integrated change control, and work is checked against the scope baseline so unapproved work is caught early.",
     "distractorExplanations": {
-      "a": "A formal change control board may be too heavy for agile environments and slows responsiveness.",
-      "c": "Completely locking scope ignores the value of adaptation and learning during development.",
-      "d": "Written justification adds bureaucracy without addressing the root cause of unclear requirements."
+      "a": "A size threshold with no logging or impact review is exactly how small changes added up to three unapproved weeks; even minor changes must be recorded.",
+      "c": "Re-baselining to absorb unapproved work hides the variance and rewards bypassing change control instead of fixing the process.",
+      "d": "Putting requests in writing documents them but still lets the client direct the site team without impact analysis or approval."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -5927,13 +5927,13 @@
       },
       {
         "id": "d",
-        "text": "Implement a feature branch strategy with mandatory code reviews before integration"
+        "text": "Gate each merge on a passing automated build and test run, keeping changes small"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Implementing a feature branch strategy with mandatory code reviews addresses the root cause by preventing integration issues before they occur. This process improvement ensures code quality and compatibility before integration, reducing build failures and allowing the team to focus on development.",
+    "explanation": "Continuous integration works when developers merge small changes often and every merge must pass an automated build and test run first. Gating merges keeps broken code out of the main branch, and small batches make any failure quick to trace, so the team stops losing time to broken builds.",
     "distractorExplanations": {
-      "a": "Meetings discuss conflicts but do not stop broken code from reaching the main branch; a gate such as review before merge is needed.",
+      "a": "Meetings discuss conflicts but do not stop broken code from reaching the main branch; an automated pre-merge gate is what prevents that.",
       "b": "Less frequent integration makes merges larger and failures harder to diagnose, which is the opposite of continuous integration.",
       "c": "A single fixer becomes a bottleneck and removes developers' ownership of the breaks they introduce, so failures keep recurring."
     },
@@ -6294,7 +6294,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A tiered monitoring approach aligns monitoring intensity with application criticality and business requirements. This provides appropriate oversight for critical systems while optimizing resources for less critical applications, balancing operational needs with cost efficiency. Tiering gives critical applications real-time capabilities while non-critical ones stay on batch reporting.",
+    "explanation": "A tiered approach matches monitoring intensity to application criticality: real-time monitoring for critical applications and batch reporting for the rest, under one common framework. This gives operations consistent oversight while controlling monitoring cost and alert noise for low-criticality systems.",
     "distractorExplanations": {
       "b": "Real-time monitoring for every application drives unnecessary cost and alert noise for non-critical apps; criticality should set the monitoring level.",
       "c": "Batch reporting for critical applications delays incident detection beyond what their criticality can tolerate.",
@@ -7254,7 +7254,7 @@
     "explanation": "Evaluating delivery options to demonstrate value requires comparing total costs, time to benefit, risks, and fit. A clear recommendation lets the sponsor make an informed decision.",
     "distractorExplanations": {
       "a": "Control is one factor, but ignoring time to value and total cost may pick the weaker option.",
-      "b": "Speed alone ignores license cost and fit.",
+      "b": "Speed to market is only one factor; this choice ignores the higher annual license cost, total cost of ownership, and fit with requirements.",
       "c": "Finance input matters, but the project manager should frame the options and trade-offs."
     },
     "difficulty": "hard",
@@ -7288,7 +7288,7 @@
     "distractorExplanations": {
       "b": "Double shifts create burnout and quality risk and are not a sustainable plan.",
       "c": "Delaying a critical-path task delays the whole project.",
-      "d": "Having float does not make work unnecessary."
+      "d": "Float means the task can slip without delaying the finish, not that it is unnecessary; removing scope would also need change control."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question; 2026 ECO Process rebalance)."
@@ -7352,7 +7352,7 @@
     "correctOptionId": "c",
     "explanation": "A RACI chart shows who is Responsible, Accountable, Consulted, and Informed for each deliverable or decision, removing ambiguity about roles.",
     "distractorExplanations": {
-      "a": "A risk register tracks risks, not roles.",
+      "a": "A risk register names the owners of risks, not who approves or is informed about design decisions on the project.",
       "b": "A burndown chart shows remaining work, not responsibilities.",
       "d": "A statement of work describes procured work for a vendor."
     },
@@ -7441,7 +7441,7 @@
       },
       {
         "id": "c",
-        "text": "A standard purchase order for catalog components"
+        "text": "Fixed price with economic price adjustment tied to an inflation index"
       },
       {
         "id": "d",
@@ -7452,7 +7452,7 @@
     "explanation": "When scope is highly uncertain, sellers will not accept fixed-price risk without large contingency. A cost-reimbursable contract pays allowable costs plus a fee, which suits research work.",
     "distractorExplanations": {
       "a": "A fixed price on undefined scope invites inflated bids, disputes, or seller default.",
-      "c": "Purchase orders suit simple, standard purchases.",
+      "c": "Economic price adjustment protects long contracts against inflation; it does not handle undefined, unproven scope, so sellers would still price in huge risk.",
       "d": "Work should not start without an agreement that defines obligations and payment."
     },
     "difficulty": "medium",
@@ -7738,19 +7738,19 @@
       },
       {
         "id": "c",
-        "text": "Exactly 1.00"
+        "text": "About 1.25"
       },
       {
         "id": "d",
-        "text": "About 0.67"
+        "text": "About 2.00"
       }
     ],
     "correctOptionId": "b",
     "explanation": "TCPI = (BAC - EV) / (BAC - AC) = 300,000 / 250,000 = 1.20. The team must deliver $1.20 of work for every remaining dollar to finish on budget.",
     "distractorExplanations": {
       "a": "0.80 is the current CPI (200,000 / 250,000), not the required future efficiency.",
-      "c": "Performing exactly to plan from now on would not recover the overrun already incurred.",
-      "d": "This value does not follow from the TCPI formula."
+      "c": "1.25 is AC / EV, the inverse of the current CPI; it describes past overspending, not the efficiency needed on the remaining work.",
+      "d": "2.00 divides the whole BAC by the remaining funds (500,000 / 250,000) instead of dividing the remaining work, BAC - EV."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question; 2026 ECO Process rebalance)."
@@ -7977,7 +7977,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "The 2026 ECO includes managing cost of quality and sustainability. A client-mandated recycled-content standard is a quality requirement that must be verified before acceptance. Compliance with the recycled-content standard must be verified before the deliverables are accepted.",
+    "explanation": "The 2026 ECO includes managing cost of quality and sustainability. A client-mandated recycled-content standard is a quality requirement in its own right, so the supplier must correct the nonconformance and compliance must be verified before the deliverables are accepted.",
     "distractorExplanations": {
       "b": "The standard is a contractual client requirement; functional performance does not satisfy a conformance requirement.",
       "c": "Seeking a waiver before attempting supplier corrective action abandons a client requirement; correction with the supplier comes first.",
@@ -8013,7 +8013,7 @@
     "explanation": "The critical path is the longest path through the network and sets the shortest possible project duration: A-C-E at 18 days.",
     "distractorExplanations": {
       "a": "A-B-E is the shortest path and has the most float.",
-      "c": "A-D-E has 2 days of float relative to A-C-E.",
+      "c": "A-D-E takes 16 days, so it has 2 days of float relative to the 18-day path A-C-E and is not critical.",
       "d": "Only the longest path has zero float in this network."
     },
     "difficulty": "easy",
@@ -8046,7 +8046,7 @@
     "explanation": "Total float = late start - early start = 9 - 5 = 4 days. The activity can slip up to four days without affecting the project finish, other things being equal.",
     "distractorExplanations": {
       "a": "Critical-path activities normally have zero float.",
-      "b": "Float is scheduling flexibility, not delay.",
+      "b": "Total float is scheduling flexibility, not lateness; an activity with four days of float is not behind and needs no escalation.",
       "d": "Day 9 is the latest start that does not delay the project, not the required start."
     },
     "difficulty": "medium",
@@ -8241,7 +8241,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Evaluating project status includes making sure artifacts are created, updated, and accessible. A shared, version-controlled repository with clear owners solves both findability and currency. First agree which artifacts the project actually needs, then keep each in the shared repository with a named owner.",
+    "explanation": "Evaluating project status includes making sure artifacts are created, updated, and accessible. A shared, version-controlled repository with a named owner for each artifact solves both findability and currency, so new team members always work from the latest risk log, decision log, and requirements.",
     "distractorExplanations": {
       "b": "Relying on emailed copies keeps the version confusion and makes each author a single point of failure for current information.",
       "c": "Agile values working software over comprehensive documentation, not instead of any; a hybrid project still needs its risk and decision logs.",
@@ -8307,7 +8307,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Developing project metrics means choosing measures that show progress toward objectives. Outcome-based metrics agreed with the sponsor make the report useful for decisions. The outcome metrics should be agreed with the sponsor so the report answers the sponsor's real question.",
+    "explanation": "Developing project metrics means choosing measures that show progress toward objectives, not activity. Outcome metrics agreed with the sponsor, such as milestone status, release burnup, variances, and benefit indicators, answer whether the project will deliver and support decisions.",
     "distractorExplanations": {
       "a": "More activity and productivity counts still measure inputs and do not show whether the project will deliver its outcomes.",
       "b": "Frequency is not the problem; the report's content measures inputs rather than outcomes, so sending it more often changes nothing.",
@@ -8406,7 +8406,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A terminated project still needs formal closure. Documenting where things stand, closing contracts, releasing resources, and capturing lessons learned protects the organization and preserves knowledge. Project records should also be archived as part of closing a cancelled project.",
+    "explanation": "A terminated project still needs formal closure. Documenting where deliverables stand, closing procurements, releasing resources, archiving records, and capturing lessons learned protects the organization legally and financially and preserves knowledge for future work.",
     "distractorExplanations": {
       "a": "An abrupt stop skips documenting deliverable status, closing contracts, and capturing lessons; cancelled projects still need formal closure.",
       "c": "The sponsor has authority to cancel; continuing planned work wastes funds and disregards a decision already made.",
@@ -9310,31 +9310,31 @@
     "id": "pmp-readiness-check-business-environment-039",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A construction company is managing a commercial building project when new environmental sustainability standards are introduced that could affect the building's certification and marketability. The standards are voluntary but market research indicates that 70% of potential tenants now prioritize certified sustainable buildings. Implementing the standards would add 15% to project costs but could increase rental rates by 20%. The project is 40% complete. What should the project manager recommend?",
+    "prompt": "Users of a new procurement system have completed training and can operate it, but many keep using their old spreadsheets. In interviews they say they do not see why the change was needed. Using the ADKAR model, where is the change stalled?",
     "options": [
       {
         "id": "a",
-        "text": "Continue with the original design because the sustainability standards are voluntary"
+        "text": "Knowledge: users need more training on the system's features"
       },
       {
         "id": "b",
-        "text": "Adopt every sustainability standard now to maximize the building's marketability"
+        "text": "Ability: users need more hands-on practice with the system"
       },
       {
         "id": "c",
-        "text": "Conduct a detailed cost-benefit analysis including long-term market positioning"
+        "text": "Awareness: users do not understand the reason for the change"
       },
       {
         "id": "d",
-        "text": "Commission a tenant survey and hold design decisions until the results are back"
+        "text": "Reinforcement: users need rewards to sustain the new behavior"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The project manager should conduct a comprehensive analysis weighing the 15% cost increase against the 20% rental premium, tenant demand trends, competitive positioning, and long-term asset value before making a recommendation to stakeholders.",
+    "explanation": "ADKAR (Awareness, Desire, Knowledge, Ability, Reinforcement) is sequential. These users have knowledge and ability from training, but they never gained awareness of why the change is needed, so their desire to adopt it is weak. The project should communicate the business reasons for the change, ideally through the sponsor and direct managers, rather than add more training.",
     "distractorExplanations": {
-      "a": "Voluntary does not mean irrelevant; 70% of potential tenants prefer certified buildings, which affects marketability.",
-      "b": "Implementing without a cost-benefit analysis commits 15% extra cost before the return has been evaluated.",
-      "d": "Market research already shows the preference; another survey delays decisions at 40% complete while redesign costs rise."
+      "a": "Training already gave users knowledge and they can operate the system; more feature training does not explain why the change matters.",
+      "b": "Users can already operate the system, so ability is not the gap; the missing step is understanding the reason for change.",
+      "d": "Reinforcement sustains a change after adoption; these users never accepted the change because they do not see its purpose."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -9376,31 +9376,31 @@
     "id": "pmp-readiness-check-business-environment-043",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "An energy company is building renewable energy infrastructure when carbon credit markets experience significant price volatility, fluctuating between $15 and $85 per ton within six months. The project's financial model assumed stable carbon prices of $45 per ton, and this revenue stream represents 25% of projected returns. Regulatory uncertainty around future carbon pricing mechanisms is creating investor concerns. What should the project manager prioritize?",
+    "prompt": "A CRM project's business case promises a 15% drop in customer churn, but the reduction can only be measured about 12 months after the project closes and the team disbands. How should the project manager make sure the benefit is tracked?",
     "options": [
       {
         "id": "a",
-        "text": "Develop scenario planning models that account for various carbon price ranges and their impact on project viability"
+        "text": "Document in the benefits management plan who owns the benefit and how and when it will be measured"
       },
       {
         "id": "b",
-        "text": "Lock in current carbon credit prices through long-term forward contracts so the 25% revenue stream becomes predictable"
+        "text": "Keep the project open with a skeleton team until the churn reduction has actually been measured and reported"
       },
       {
         "id": "c",
-        "text": "Reduce project scope to cut the financial model's dependence on carbon credit revenue streams"
+        "text": "Ask former team members to report the churn figures voluntarily once they move to new projects"
       },
       {
         "id": "d",
-        "text": "Delay project execution until carbon markets stabilize and pricing becomes more predictable"
+        "text": "Record the churn target as a lessons learned item for the next project manager to review later"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "In volatile market conditions, scenario planning allows project managers to understand project viability across different potential outcomes and develop contingency strategies. This approach maintains project momentum while providing stakeholders with transparent risk assessment and decision-making frameworks for various market conditions.",
+    "explanation": "Benefits are often realized after closure. The benefits management plan defines the target benefits, their metrics, the timeframe for realization and the benefit owner in the business (often the sponsor or an operations leader), so measurement continues after handover. The project manager makes sure this ownership is agreed before the product transitions to operations.",
     "distractorExplanations": {
-      "b": "Hedging before modeling scenarios commits at an arbitrary point in a $15-$85 range and does not answer whether the project stays viable.",
-      "c": "Cutting scope before modeling price scenarios may sacrifice returns without knowing whether the price exposure actually threatens viability.",
-      "d": "Delaying projects due to market uncertainty can result in missed opportunities and doesn't guarantee that markets will stabilize within acceptable timeframes."
+      "b": "Keeping a project open to wait for benefits wastes resources; benefit tracking belongs to the business owner after transition.",
+      "c": "Disbanded team members have no mandate or data access to track churn, so the benefit would likely never be measured.",
+      "d": "Lessons learned capture knowledge, not accountability for a business benefit; nobody would own measuring the target."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -9813,11 +9813,11 @@
       },
       {
         "id": "b",
-        "text": "Conduct stakeholder analysis to determine the best path forward given policy constraints"
+        "text": "Assess the policy's impact on core features with stakeholders and compare compliance options"
       },
       {
         "id": "c",
-        "text": "Launch the application immediately before policy changes take effect"
+        "text": "Launch the application immediately before the policy changes take effect"
       },
       {
         "id": "d",
@@ -9825,9 +9825,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When facing significant external policy changes that affect core project assumptions, conducting stakeholder analysis helps determine the most viable path forward. This ensures all perspectives are considered before making major architectural or strategic decisions.",
+    "explanation": "A 90-day enforcement date on a policy that may prohibit the app's core behavioral analytics changes a core project assumption. The project manager should first assess, with product, legal and business stakeholders, which features are affected and compare options such as consent-based redesign, reduced analytics or other data sources before committing to an architecture change.",
     "distractorExplanations": {
-      "a": "While redesigning may be necessary, making this decision without stakeholder input could lead to solutions that don't align with business priorities or user needs.",
+      "a": "Redesigning before stakeholders have compared options locks in one solution without knowing which features are truly affected or most valuable.",
       "c": "Rushing to launch before policy changes could create compliance issues and technical debt that becomes costly to address later.",
       "d": "Platform switching involves significant risks and costs that should be evaluated against other options through proper stakeholder consultation."
     },
@@ -10040,11 +10040,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Partner with an AI technology provider to integrate existing solutions"
+        "text": "Compare build, buy, and partner options for AI and present them to stakeholders"
       },
       {
         "id": "b",
-        "text": "Complete the basic platform first, then add AI in a future phase"
+        "text": "Complete the basic platform first, then add AI features in a later project phase"
       },
       {
         "id": "c",
@@ -10052,15 +10052,15 @@
       },
       {
         "id": "d",
-        "text": "Launch the basic platform and monitor competitor AI implementations"
+        "text": "Launch the basic platform on time and monitor how competitors implement AI"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Partnering with an AI technology provider allows the project to quickly incorporate essential market-expected features without the time and risk of building internal AI expertise, while maintaining competitive positioning in the evolving market.",
+    "explanation": "The missing AI capability is a strategic gap with a skills constraint. The project manager should analyze the realistic routes, such as partnering with an AI provider, buying a component or hiring specialists, with their cost, time and risk, and present them so stakeholders can approve a scope change. Committing to any single route alone skips that decision.",
     "distractorExplanations": {
-      "b": "Launching without AI features could result in immediate competitive disadvantage and loss of market share that may be difficult to recover.",
-      "c": "Hiring and training AI specialists would significantly extend timelines and may not be fast enough to remain competitive in the rapidly evolving market.",
-      "d": "Monitoring competitors while launching an incomplete solution could result in permanent loss of market position and customer confidence."
+      "b": "Deferring AI while competitors already win 30% of potential customers risks immediate market-share loss that may be hard to recover.",
+      "c": "Committing to hiring before comparing options picks the slowest route with no analysis of partner or vendor solutions.",
+      "d": "Monitoring competitors while launching without expected features could result in permanent loss of market position."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -10283,14 +10283,14 @@
       },
       {
         "id": "d",
-        "text": "Modify the software algorithms to incorporate the new tariff structure and extend the timeline accordingly"
+        "text": "Raise a change request to update the algorithms for the new tariffs, with the schedule impact"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Since the tariffs fundamentally change the cost structure that the optimization software must account for, modifying the algorithms to reflect current reality is necessary to deliver value. The project is far enough along that suspension would waste significant investment.",
+    "explanation": "The tariffs change the cost structure the optimization software must model, so the algorithms need updating to deliver value. Because that work extends the timeline, the project manager raises a change request with the quantified schedule and cost impact so it is approved through integrated change control before testing begins next month.",
     "distractorExplanations": {
       "a": "Manual adjustments would negate the automation benefits and accuracy that justify the software investment.",
-      "b": "Suspending the project wastes the 70% completion investment and trade policies may remain uncertain for extended periods.",
+      "b": "Suspending the project wastes the 70% completion investment, and trade policies may remain uncertain for extended periods.",
       "c": "Implementing software with known outdated algorithms would deliver limited value and create user dissatisfaction from the start."
     },
     "difficulty": "hard",
@@ -10675,19 +10675,19 @@
       },
       {
         "id": "c",
-        "text": "Focus on niche specialization where larger integrated platforms may be less competitive"
+        "text": "Commit now to a niche specialization where large integrated platforms compete less"
       },
       {
         "id": "d",
-        "text": "Seek partnership or acquisition opportunities with established healthcare providers"
+        "text": "Present an analysis of partnership, niche, and expanded-scope options to stakeholders"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "When market consolidation changes competitive dynamics significantly, seeking strategic partnerships or acquisition opportunities can provide access to resources, market channels, and integrated capabilities that would be difficult to develop independently within competitive timeframes.",
+    "explanation": "Market consolidation has changed the basis of competition. Each possible response, whether partnering with a provider, specializing in a niche or broadening scope, is a strategic decision with different cost, time and risk. The project manager should analyze these options and present them so stakeholders choose the direction, rather than committing the project to one response alone.",
     "distractorExplanations": {
-      "a": "Accelerating launch without addressing competitive disadvantages may result in a product that cannot compete effectively against integrated platforms.",
-      "b": "Expanding scope significantly increases development complexity, resource requirements, and time-to-market, potentially making the startup less competitive.",
-      "c": "While niche focus can be viable, it may limit market size and growth potential in a rapidly consolidating industry."
+      "a": "Accelerating launch without addressing competitive disadvantages may produce a product that cannot compete against integrated platforms.",
+      "b": "Expanding scope significantly increases complexity, cost and time-to-market, and it is a strategic decision for stakeholders.",
+      "c": "A niche can be viable, but committing to it before comparing options may cap growth and is a strategic call for stakeholders."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -11059,31 +11059,31 @@
     "id": "pmp-readiness-check-process-068",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A project manager is implementing a lessons learned process for a multi-phase program spanning 18 months. Previous projects in the organization have struggled with knowledge transfer between phases and teams. The current approach captures lessons only at project closure. What process enhancement should the project manager establish?",
+    "prompt": "Phase 1 of an 18-month multi-phase program has finished. Before releasing funding for Phase 2, the sponsor wants a formal decision on whether to continue. What should the project manager prepare?",
     "options": [
       {
         "id": "a",
-        "text": "Create a centralized database where team members can voluntarily submit lessons learned throughout the project"
+        "text": "A lessons learned report so the Phase 2 team can avoid repeating the problems seen in Phase 1"
       },
       {
         "id": "b",
-        "text": "Assign a knowledge management specialist to observe team activities and document lessons learned"
+        "text": "A detailed Phase 2 schedule so the team can start as soon as the funding is released"
       },
       {
         "id": "c",
-        "text": "Conduct lessons learned sessions only when significant issues occur during project execution"
+        "text": "A team performance assessment showing how each member contributed during Phase 1"
       },
       {
         "id": "d",
-        "text": "Schedule formal lessons learned sessions at the end of each phase with documented outcomes shared across all teams"
+        "text": "A phase gate review comparing results and the updated business case with gate criteria"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Formal lessons learned sessions at the end of each phase ensure systematic knowledge capture and transfer between phases and teams. This proactive approach prevents knowledge loss and enables continuous improvement throughout the program lifecycle.",
+    "explanation": "A phase gate (stage gate or kill point) is a governance review at the end of a phase in which performance and the updated business case are checked against predefined criteria. The sponsor or governing body then decides to continue, continue with modifications, or stop, which keeps funding tied to evidence that the investment still makes sense.",
     "distractorExplanations": {
-      "a": "Voluntary submission may result in inconsistent or incomplete knowledge capture, and important lessons might not be documented if left to individual initiative.",
-      "b": "Relying solely on an observer may miss important insights from team members' direct experiences and doesn't promote team ownership of the learning process.",
-      "c": "Waiting for significant issues to occur is reactive and misses opportunities to capture positive practices and minor improvements that could benefit future phases."
+      "a": "Lessons learned feed future work, but they do not give the sponsor the go/no-go evidence on value and performance.",
+      "b": "Detailed Phase 2 planning presumes the continue decision that the sponsor has not yet made.",
+      "c": "Individual performance assessments support team development, not a governance decision on continuing the program."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -11092,31 +11092,31 @@
     "id": "pmp-readiness-check-process-078",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A project manager is leading an infrastructure upgrade project where change requests require extensive documentation and multiple approvals, causing delays in responding to technical issues. The current change control process was designed for larger organizational changes. What process optimization should the project manager pursue?",
+    "prompt": "The change control board has just approved a change request that adds a reporting module to an infrastructure upgrade project. What should the project manager do next?",
     "options": [
       {
         "id": "a",
-        "text": "Exempt technical issues from change control so the team can fix them immediately"
+        "text": "Start building the reporting module now and update the documents after delivery"
       },
       {
         "id": "b",
-        "text": "Establish different approval thresholds based on change impact and urgency"
+        "text": "Update the affected baselines and project documents, then communicate the change"
       },
       {
         "id": "c",
-        "text": "Delegate change approval authority for every change to the technical team lead"
+        "text": "Re-run the impact analysis to confirm that the change board made the right call"
       },
       {
         "id": "d",
-        "text": "Batch change requests and process them at a weekly change control board meeting"
+        "text": "Close the change request in the log, since approval completes the change process"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Establishing different approval thresholds based on change impact and urgency creates a tiered process that maintains appropriate governance while enabling faster response to technical issues. This optimization balances control with agility based on risk and impact levels.",
+    "explanation": "Once a change is approved, the project management plan, the affected baselines (scope, schedule, cost) and project documents are updated, the change log is updated and stakeholders are notified. The approved change is then implemented through directing and managing the work, and its implementation is verified before the request is closed.",
     "distractorExplanations": {
-      "a": "Exempting technical changes removes integrated impact review; tiered thresholds keep control proportional to impact.",
-      "c": "A single technical lead approving every change ignores cost, schedule, and stakeholder impacts beyond technical scope.",
-      "d": "Weekly batching adds delay to urgent technical issues, which is the exact problem the process needs to solve."
+      "a": "Building before updating the baselines means performance is measured against outdated plans and the team works from stale documents.",
+      "c": "The impact analysis was done before approval; repeating it second-guesses the board's authority and delays the work.",
+      "d": "Approval is not the end; baselines must be updated and the change implemented and verified before the request is closed."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -11125,31 +11125,31 @@
     "id": "pmp-readiness-check-process-080",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A project manager is establishing a risk management process for a project with both predictive and agile components. The predictive portions require formal risk registers while the agile portions need more adaptive risk handling. What integrated risk management approach should be implemented?",
+    "prompt": "An agile team identifies a technical risk that a third-party payment API may not handle peak load at launch. How should this risk response be managed in an adaptive project?",
     "options": [
       {
         "id": "a",
-        "text": "Use formal risk registers for all project components to maintain consistency"
+        "text": "Log it in a separate risk register that the project manager reviews at the end of the release"
       },
       {
         "id": "b",
-        "text": "Apply different risk management approaches based on the delivery method of each component"
+        "text": "Add a spike or mitigation story to the backlog and prioritize it alongside feature work"
       },
       {
         "id": "c",
-        "text": "Focus only on high-level program risks and let teams handle component-level risks independently"
+        "text": "Wait until a sprint review shows a load failure before planning any response to the risk"
       },
       {
         "id": "d",
-        "text": "Convert all components to use the same agile risk management approach"
+        "text": "Transfer the risk by asking the API vendor to sign a performance guarantee for launch day"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Applying different risk management approaches based on the delivery method of each component creates a tailored hybrid process that respects the needs of both predictive and agile work while maintaining overall project risk visibility. This approach optimizes risk management for each component's characteristics.",
+    "explanation": "In adaptive projects risk responses become backlog work, producing a risk-adjusted backlog. A spike (time-boxed investigation) or mitigation story such as a load test is prioritized by the product owner against features based on value and risk exposure, so high risks are tackled early, when they are cheapest to address.",
     "distractorExplanations": {
-      "a": "Using only formal registers may be too rigid for agile components and could slow down adaptive responses to emerging risks.",
-      "c": "Focusing only on high-level risks misses important component-level risks that could impact project success.",
-      "d": "Converting all components to agile approaches may not provide adequate documentation and control for predictive portions."
+      "a": "A separate register reviewed only at release end keeps the risk invisible to sprint planning and delays the response.",
+      "c": "Waiting for a failure turns a manageable threat into an issue; agile teams address high risks early in the backlog.",
+      "d": "A guarantee may compensate after a failure, but it does not reduce the chance of the API failing under peak load."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."
@@ -11191,31 +11191,31 @@
     "id": "pmp-readiness-check-process-085",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A project manager is establishing a change control process for a research and development project where requirements are expected to evolve as new discoveries are made. The stakeholders need flexibility to incorporate new findings while maintaining some level of control over scope and budget. The current process requires formal approval for any changes, which is slowing down research progress. What change management approach should be implemented?",
+    "prompt": "During testing, the project manager learns that a developer added an extra export feature because a customer representative asked for it directly. The feature works well, but it was never submitted for approval. What should the project manager do?",
     "options": [
       {
         "id": "a",
-        "text": "Eliminate formal change control to allow maximum flexibility for research activities"
+        "text": "Remove the feature right away, since it was added without going through any approval"
       },
       {
         "id": "b",
-        "text": "Maintain the current formal approval process to ensure proper governance and budget control"
+        "text": "Keep the feature, since the customer asked for it directly and it already works well in testing"
       },
       {
         "id": "c",
-        "text": "Allow the research team to make all technical changes independently while requiring approval only for budget increases"
+        "text": "Discipline the developer in front of the team to discourage similar changes in future"
       },
       {
         "id": "d",
-        "text": "Implement a tiered change control process with different approval levels based on the impact and nature of changes"
+        "text": "Assess the feature's impact and submit it for a decision through integrated change control"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A tiered change control process with different approval levels based on impact and nature of changes provides the right balance of flexibility for research activities while maintaining appropriate governance. This allows minor research-driven changes to proceed quickly while ensuring significant changes receive proper oversight.",
+    "explanation": "The unapproved addition is scope creep. The project manager should evaluate its impact on scope, schedule, cost, quality and risk and route it through integrated change control so the change board decides whether to keep it. The project manager should also remind the team and the customer that change requests must follow the agreed process.",
     "distractorExplanations": {
-      "a": "Eliminating formal change control entirely removes necessary governance and could lead to uncontrolled scope and budget growth.",
-      "b": "Maintaining the current rigid process continues to impede research progress and doesn't address the need for flexibility in R&D environments.",
-      "c": "Separating technical and budget approvals creates artificial boundaries since technical changes often have budget implications that should be considered together."
+      "a": "Removing it before analysis may waste working functionality the board could approve; the decision belongs to change control.",
+      "b": "Keeping it without approval accepts scope creep and leaves the baseline, tests and costs out of step with reality.",
+      "c": "Public discipline damages trust; the issue is a process gap to correct privately and through change control."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -11224,31 +11224,31 @@
     "id": "pmp-readiness-check-process-096",
     "examSlug": "pmp-readiness-check",
     "topicId": "business-environment",
-    "prompt": "A project manager is establishing a risk management process for a hybrid project where the infrastructure components follow predictive methods and the software development uses Scrum. The infrastructure risks require formal documentation and mitigation plans, while the development team prefers lightweight risk identification during sprint planning. What risk management approach should be implemented?",
+    "prompt": "While analyzing risks, a project manager identifies a threat that a planned corporate ERP replacement could break interfaces used by several projects in the program. The threat lies outside the project's scope and beyond the project manager's authority. Which risk response should the project manager use?",
     "options": [
       {
         "id": "a",
-        "text": "Use formal risk registers and documented mitigation plans for every component, including the Scrum team's sprint work"
+        "text": "Accept the threat passively and note it in the project's own risk register"
       },
       {
         "id": "b",
-        "text": "Apply lightweight agile risk practices across the project, including the infrastructure components"
+        "text": "Mitigate it by redesigning the project's interfaces on the PM's own initiative"
       },
       {
         "id": "c",
-        "text": "Implement separate risk processes tailored to each component's methodology while maintaining integrated risk reporting"
+        "text": "Escalate it to the program manager, who agrees to take ownership of the threat"
       },
       {
         "id": "d",
-        "text": "Delegate risk management to each team lead and drop the project-level risk reporting"
+        "text": "Transfer it to the ERP vendor through a new clause in the project's contract"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "In hybrid projects, different components may require different risk management approaches based on their methodology. The key is to tailor processes to each component's needs while maintaining integrated oversight and reporting to ensure project-level risk visibility and coordination.",
+    "explanation": "Escalation is the response for threats that are outside the project's scope or exceed the project manager's authority. The threat is passed to the appropriate owner, here the program manager, who must accept ownership; it is then recorded as escalated and is no longer monitored by the project team.",
     "distractorExplanations": {
-      "a": "Formal registers for sprint-level risks impose predictive overhead on the Scrum team; tailoring by component is the better fit.",
-      "b": "Infrastructure risks need formal documentation and mitigation plans; lightweight practices under-control them.",
-      "d": "Dropping integrated reporting leaves no project-wide view of risks that cross the infrastructure and software components."
+      "a": "Acceptance is for threats the project owns but chooses not to act on; this threat sits outside the project and needs an owner who can act.",
+      "b": "Redesigning on one's own initiative exceeds the PM's authority and treats a program-level threat as a project risk.",
+      "d": "The project has no contract with the ERP vendor, and transfer cannot shift a threat the project does not own."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go via OpenRouter (original readiness-check question)."

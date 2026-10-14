@@ -20,7 +20,7 @@ describe("applySoldSamplesToDeck", () => {
     });
     const nebosh = getDeckBySlug("nebosh-anki-deck");
     expect(nebosh?.sampleCards[0]).toMatchObject({
-      question: expect.stringMatching(/^A warehouse operative reports lower back pain/),
+      question: expect.stringMatching(/^A supervisor proposes lifting two workers/),
       imageUrl: "/samples/nebosh-anki-deck-sample-1.webp",
     });
   });

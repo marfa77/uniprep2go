@@ -3,27 +3,27 @@
     "id": "amt-rma-readiness-check-clinical-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "When scheduling a patient who needs a fasting lipid panel, the medical assistant should:",
+    "prompt": "A provider orders a fasting lipid panel for tomorrow morning. What should the medical assistant tell the patient when scheduling it?",
     "options": [
       {
         "id": "a",
-        "text": "Instruct overnight fasting per protocol"
+        "text": "Fast 9–12 hours overnight; plain water is allowed"
       },
       {
         "id": "b",
-        "text": "Tell the patient to stop all medications that day"
+        "text": "Skip all regular medications on the morning of the draw"
       },
       {
         "id": "c",
-        "text": "Allow coffee with cream before the morning draw"
+        "text": "Coffee with cream is fine before the morning draw"
       },
       {
         "id": "d",
-        "text": "Ask the patient to fast for 4 hours, with water"
+        "text": "Fast for 4 hours beforehand; plain water is allowed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Fasting labs require clear preparation instructions to avoid invalid results and repeat visits; confirm the patient understands the instructions.",
+    "explanation": "A fasting lipid panel generally needs 9–12 hours with nothing but water so triglycerides are not falsely raised by a recent meal. Clear instructions at scheduling prevent an invalid result and a repeat visit.",
     "distractorExplanations": {
       "b": "Patients usually keep taking prescribed medications unless the provider says otherwise; fasting means no food or caloric drinks.",
       "c": "Cream and sugar add fat and calories that break the fast; only water is allowed before a fasting lipid draw.",
@@ -56,10 +56,10 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Denials require review of documentation/medical necessity criteria and proper appeal or correction workflows.",
+    "explanation": "A medical-necessity denial means the payer did not see support for the service. Compare the documentation and codes with the payer's coverage policy, correct any real error, and file an appeal within the payer's deadline.",
     "distractorExplanations": {
       "b": "Resubmitting an unchanged claim usually triggers the same denial; the medical-necessity issue must be reviewed first.",
-      "c": "Changing codes without documentation support is fraud.",
+      "c": "Switching to a diagnosis that pays without documentation support is fraudulent coding, not a correction.",
       "d": "Billing the patient before reviewing the denial and appeal rights is premature and may be prohibited."
     },
     "difficulty": "medium",
@@ -69,31 +69,31 @@
     "id": "amt-rma-readiness-check-clinical-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which document authorizes release of protected health information to a third party?",
+    "prompt": "A patient's new life-insurance company asks the clinic for copies of her chart. What must the office have before releasing them?",
     "options": [
       {
         "id": "a",
-        "text": "Blank sticky note"
+        "text": "A signed general consent-to-treat form on file"
       },
       {
         "id": "b",
-        "text": "Insurance card photocopy alone without authorization when not otherwise permitted"
+        "text": "A copy of her insurance card and photo ID"
       },
       {
         "id": "c",
-        "text": "Verbal hallway rumor"
+        "text": "A verbal OK relayed by the patient's spouse"
       },
       {
         "id": "d",
-        "text": "Valid patient authorization meeting HIPAA requirements"
+        "text": "A HIPAA authorization signed by the patient"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HIPAA requires a valid authorization (or another permitted use/disclosure) before releasing PHI to many third parties.",
+    "explanation": "Disclosure to a life insurer is not treatment, payment, or health-care operations, so HIPAA requires a written authorization signed by the patient that names the recipient, the information, the purpose and an expiration date.",
     "distractorExplanations": {
-      "a": "Informal notes are insufficient.",
-      "b": "Having a card does not equal authorization for all disclosures.",
-      "c": "Rumors are not authorization."
+      "a": "A consent-to-treat form covers the clinic's own care; it does not authorize disclosures to outside insurers.",
+      "b": "An insurance card and ID confirm who the patient is but give no permission to release records to anyone.",
+      "c": "A spouse has no automatic right to authorize release, and HIPAA authorizations must be written, not verbal."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -102,31 +102,31 @@
     "id": "amt-rma-readiness-check-clinical-004",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "The advance beneficiary notice (ABN) is used in Medicare contexts to:",
+    "prompt": "When should a medical office give a Medicare patient an Advance Beneficiary Notice of Noncoverage (ABN)?",
     "options": [
       {
         "id": "a",
-        "text": "Guarantee that Medicare pays for the service"
+        "text": "Before every service Medicare normally covers"
       },
       {
         "id": "b",
-        "text": "Replace informed consent for a procedure"
+        "text": "In place of informed consent for a procedure"
       },
       {
         "id": "c",
-        "text": "Warn that Medicare may not pay for a service"
+        "text": "Before a service Medicare may not pay for"
       },
       {
         "id": "d",
-        "text": "Enroll the patient in a Medicare plan"
+        "text": "When the patient enrolls in a Medicare plan"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "ABNs inform Medicare beneficiaries about potential noncoverage and financial responsibility before certain services.",
+    "explanation": "An ABN is given before a service Original Medicare may deny, for example as not medically necessary or too frequent. It lets the patient decide whether to proceed and accept financial responsibility; without a valid ABN the provider usually cannot bill the patient.",
     "distractorExplanations": {
-      "a": "An ABN warns of possible denial; it guarantees nothing.",
-      "b": "Informed consent is separate and still required.",
-      "d": "Plan enrollment is handled through Medicare, not an ABN."
+      "a": "ABNs are only for services expected to be denied; giving them routinely for covered services is improper blanket use.",
+      "b": "Informed consent is a separate clinical process and is still required; an ABN only addresses payment.",
+      "d": "Plan enrollment happens through Medicare or the plan itself; an ABN is a notice about one service's coverage."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -135,31 +135,31 @@
     "id": "amt-rma-readiness-check-clinical-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which filing system organizes charts alphabetically by last name?",
+    "prompt": "Using standard alphabetic indexing rules (last name, first name, middle initial), which chart is filed first?",
     "options": [
       {
         "id": "a",
-        "text": "Numeric terminal digit"
+        "text": "Johnson, Robert A."
       },
       {
         "id": "b",
-        "text": "Alphabetic filing"
+        "text": "Johnson, Robert"
       },
       {
         "id": "c",
-        "text": "Color coding by birthday month alone"
+        "text": "Johnson, Roberta"
       },
       {
         "id": "d",
-        "text": "Random stack filing"
+        "text": "Johnston, Anne"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Alphabetic systems file by patient name; numeric systems use numbers.",
+    "explanation": "Alphabetic filing compares units in order: last name, then first name, then middle initial. The 'nothing before something' rule puts Johnson, Robert ahead of Johnson, Robert A., which precedes Johnson, Roberta; every Johnson precedes Johnston.",
     "distractorExplanations": {
-      "a": "Terminal digit is numeric.",
-      "c": "Color coding may assist but is not alphabetic filing itself.",
-      "d": "Random stacks are not a system."
+      "a": "The middle initial adds an indexing unit, and nothing comes before something, so Robert A. files after plain Robert.",
+      "c": "Roberta is compared letter by letter with Robert; the extra 'a' places it after both Robert entries.",
+      "d": "Johnston differs at the sixth letter, where 't' follows 'o', so every Johnson files before any Johnston."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -168,7 +168,7 @@
     "id": "amt-rma-readiness-check-clinical-006",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "When verifying insurance eligibility, the medical assistant should typically confirm:",
+    "prompt": "Before a scheduled visit, what should the medical assistant confirm when verifying a patient's insurance eligibility?",
     "options": [
       {
         "id": "a",
@@ -188,11 +188,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Eligibility checks focus on active coverage, benefits, and authorization/referral requirements.",
+    "explanation": "Eligibility verification confirms the policy is active on the date of service, which plan and benefits apply (copay, deductible), and whether referrals or prior authorization are needed, so the claim is not denied after the visit.",
     "distractorExplanations": {
-      "b": "Employer details may be on file but do not confirm coverage.",
+      "b": "Employer and job title may be on the registration form, but they do not show whether coverage is active today.",
       "c": "Pharmacy and scheduling preferences are registration details; they do not confirm active coverage or referral rules.",
-      "d": "Medical history is clinical intake, not insurance verification."
+      "d": "Past medical history is clinical intake information and says nothing about current coverage or benefits."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -201,7 +201,7 @@
     "id": "amt-rma-readiness-check-clinical-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "A superbill (encounter form) is primarily used to:",
+    "prompt": "What is a superbill (encounter form) primarily used for?",
     "options": [
       {
         "id": "a",
@@ -221,9 +221,9 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Superbills list common diagnoses/procedures to support charge capture for the encounter; they capture billing data from the visit.",
+    "explanation": "A superbill lists the diagnosis and procedure codes (ICD-10-CM and CPT/HCPCS) the provider marks for the visit, so staff can post charges and build the claim. It captures billing data from the encounter itself.",
     "distractorExplanations": {
-      "b": "It is not a controlled-substance prescription form.",
+      "b": "Controlled-substance prescriptions need a compliant prescription pad or e-prescribing system, not an encounter form.",
       "c": "Consent to treatment is a separate signed form; the superbill lists the codes and charges for the visit.",
       "d": "The remittance advice comes from the payer after adjudication; the superbill is created at the visit, before the claim."
     },
@@ -234,11 +234,11 @@
     "id": "amt-rma-readiness-check-clinical-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which telephone triage action is appropriate for a medical assistant?",
+    "prompt": "A patient calls with new symptoms. Which telephone-triage action is within the medical assistant's role?",
     "options": [
       {
         "id": "a",
-        "text": "Tell callers with chest pain it is likely anxiety"
+        "text": "Tell a caller with chest pain it is likely anxiety"
       },
       {
         "id": "b",
@@ -246,19 +246,19 @@
       },
       {
         "id": "c",
-        "text": "Follow protocols and escalate urgent symptoms"
+        "text": "Follow protocol and escalate urgent symptoms"
       },
       {
         "id": "d",
-        "text": "Send every caller to the ER regardless of symptoms"
+        "text": "Advise home care based on her own clinical experience"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "MAs use approved protocols and escalate; they do not independently diagnose or prescribe.",
+    "explanation": "Medical assistants gather information and follow provider-approved triage protocols, routing urgent symptoms such as chest pain or breathing trouble to the provider or 911. They do not diagnose, prescribe, or give independent medical advice.",
     "distractorExplanations": {
-      "a": "MAs do not diagnose; chest pain needs urgent escalation.",
-      "b": "MAs cannot prescribe or authorize prescriptions.",
-      "d": "Sending everyone to the ER ignores protocol-based triage."
+      "a": "Calling chest pain anxiety is a diagnosis; chest pain must be escalated urgently under the triage protocol.",
+      "b": "Medical assistants cannot prescribe or authorize prescriptions; only a licensed provider can order an antibiotic.",
+      "d": "Advice based on personal judgment instead of an approved protocol is independent practice outside MA scope."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -267,7 +267,7 @@
     "id": "amt-rma-readiness-check-clinical-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "An accounts receivable aging report helps the office:",
+    "prompt": "What does an accounts receivable (A/R) aging report help the office do?",
     "options": [
       {
         "id": "a",
@@ -287,11 +287,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "AR aging categorizes outstanding balances by time buckets to prioritize follow-up.",
+    "explanation": "An A/R aging report groups unpaid patient and insurance balances into buckets such as 0–30, 31–60, 61–90 and 90+ days, so staff can prioritize follow-up on the oldest accounts before they become uncollectable.",
     "distractorExplanations": {
-      "a": "Inventory expiration tracking is not accounts receivable.",
-      "b": "Scheduling is not an accounts receivable function.",
-      "d": "Comparing charges to the fee schedule is charge review, not aging."
+      "a": "Tracking supply expiration dates is inventory management and has nothing to do with unpaid balances.",
+      "b": "Booking patients by appointment length is a scheduling task, not an analysis of money owed to the practice.",
+      "d": "Comparing billed charges to the fee schedule is charge review before billing; aging tracks money owed after it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -300,31 +300,31 @@
     "id": "amt-rma-readiness-check-clinical-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which is the most appropriate way to correct a paper chart error?",
+    "prompt": "A medical assistant realizes she charted the wrong pulse rate in a paper record. How should she correct it?",
     "options": [
       {
         "id": "a",
-        "text": "Strike once; initial, date, and correct it"
+        "text": "Strike it once, then initial, date, and correct it"
       },
       {
         "id": "b",
-        "text": "Cover the error with correction fluid"
+        "text": "Cover the error with correction fluid and rewrite it"
       },
       {
         "id": "c",
-        "text": "Remove the page and rewrite the entire entry"
+        "text": "Remove the page and rewrite the entire entry neatly"
       },
       {
         "id": "d",
-        "text": "Write over the error until unreadable"
+        "text": "Write the right value in the margin without initials"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Legal medical records require transparent corrections: single line, initials/date, no obliteration.",
+    "explanation": "A legal record must keep the original entry readable. Draw a single line through the error, write the correct information, and add the date, time and initials (and the reason if policy requires), so any reviewer can see what changed.",
     "distractorExplanations": {
-      "b": "Correction fluid hides the original entry, which is not allowed.",
+      "b": "Correction fluid hides the original entry, which makes the record look altered and is not allowed.",
       "c": "Removing or replacing a page destroys part of the legal record and looks like tampering, even if rewritten neatly.",
-      "d": "Obliterating the original entry makes the record look altered."
+      "d": "An unsigned margin note leaves the wrong value unmarked and does not show who made the change or when."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -333,31 +333,31 @@
     "id": "amt-rma-readiness-check-clinical-011",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "Prior authorization is typically required when:",
+    "prompt": "Which order is most likely to need prior authorization from a patient's commercial health plan?",
     "options": [
       {
         "id": "a",
-        "text": "A patient pays cash for an office visit"
+        "text": "An established-patient office visit with the PCP"
       },
       {
         "id": "b",
-        "text": "A patient requests a copy of their records"
+        "text": "A routine screening lipid panel"
       },
       {
         "id": "c",
-        "text": "A patient schedules an annual Medicare wellness visit"
+        "text": "An outpatient MRI of the lumbar spine"
       },
       {
         "id": "d",
-        "text": "A payer requires approval before covering a service"
+        "text": "A seasonal flu vaccine at an in-network clinic"
       }
     ],
-    "correctOptionId": "d",
-    "explanation": "Prior auth is payer approval before selected services/drugs are covered.",
+    "correctOptionId": "c",
+    "explanation": "Payers commonly require prior authorization for high-cost imaging such as MRI and CT, specialty drugs, and elective procedures. Getting approval before the service prevents a denial; routine visits, screening labs and vaccines usually do not need it.",
     "distractorExplanations": {
-      "a": "Cash payment involves no payer, so no authorization is needed.",
-      "b": "Records requests fall under HIPAA access rules, not payer approval.",
-      "c": "Medicare's annual wellness visit is a covered preventive service that generally needs no prior authorization."
+      "a": "Routine in-network office visits with the primary care provider generally need no payer pre-approval.",
+      "b": "Routine screening labs are low-cost preventive services that plans rarely require approval for.",
+      "d": "Recommended preventive vaccines are covered without pre-approval under ACA rules for most commercial plans."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -386,7 +386,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Managed care plans often require referrals or authorizations for specialty services; HMO plans are the classic example.",
+    "explanation": "HMO plans typically require members to get a referral from their primary care provider before seeing a specialist, or the visit may not be covered. PPOs and Original Medicare generally allow specialist visits without one.",
     "distractorExplanations": {
       "a": "PPOs typically let members see in-network specialists without a referral; that confuses PPO rules with HMO rules.",
       "b": "A referral directs care but is not a payment guarantee or prior authorization; the claim can still be denied.",
@@ -432,19 +432,19 @@
     "id": "amt-rma-readiness-check-clinical-014",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "A standard steam autoclave cycle for wrapped instruments typically runs at about:",
+    "prompt": "Which settings describe a standard gravity steam autoclave cycle for wrapped instruments?",
     "options": [
       {
         "id": "a",
-        "text": "100°C (212°F) at normal pressure for 5 minutes"
-      },
-      {
-        "id": "b",
         "text": "70°C (158°F) with alcohol vapor for 10 minutes"
       },
       {
+        "id": "b",
+        "text": "100°C (212°F) at normal pressure for 5 minutes"
+      },
+      {
         "id": "c",
-        "text": "121°C (250°F) at about 15 psi for 15–30 minutes"
+        "text": "121°C (250°F) at 15 psi for 15–30 minutes"
       },
       {
         "id": "d",
@@ -454,8 +454,8 @@
     "correctOptionId": "c",
     "explanation": "Gravity steam sterilization typically uses 121°C (250°F) at about 15 psi for 15–30 minutes depending on the load and wrapping. Follow the manufacturer's cycle and verify it with indicators.",
     "distractorExplanations": {
-      "a": "Boiling at normal pressure does not reliably kill bacterial spores.",
-      "b": "Alcohol is a disinfectant, not a sterilizing method for instruments.",
+      "a": "Alcohol is a disinfectant, not a sterilant, and it cannot kill bacterial spores on instruments.",
+      "b": "Boiling at normal pressure does not reliably kill bacterial spores, so it is not sterilization.",
       "d": "Dry-heat sterilization at 160°C needs about 2 hours; 15 minutes confuses dry heat with steam cycle times."
     },
     "difficulty": "medium",
@@ -465,7 +465,7 @@
     "id": "amt-rma-readiness-check-clinical-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Intramuscular injections are given with the needle at an angle of:",
+    "prompt": "A medical assistant gives an adult an intramuscular injection in the deltoid. At what angle should the needle enter the skin?",
     "options": [
       {
         "id": "a",
@@ -473,11 +473,11 @@
       },
       {
         "id": "b",
-        "text": "45 degrees"
+        "text": "15–30 degrees"
       },
       {
         "id": "c",
-        "text": "25–30 degrees"
+        "text": "45 degrees"
       },
       {
         "id": "d",
@@ -488,8 +488,8 @@
     "explanation": "IM injections are given at 90° to reach muscle tissue. Subcutaneous injections are usually at 45° (or 90° with short needles), and intradermal injections at 10–15°.",
     "distractorExplanations": {
       "a": "10–15° is the intradermal angle, used for example for TB skin tests.",
-      "b": "45° is typical for subcutaneous injections.",
-      "c": "About 15–30° is used for venipuncture, not IM injections."
+      "b": "15–30° is the venipuncture angle; at that angle an IM needle would stay too shallow.",
+      "c": "45° is typical for subcutaneous injections into fatty tissue, not into muscle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -498,31 +498,31 @@
     "id": "amt-rma-readiness-check-admin-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which schedule classification indicates the highest abuse potential among controlled substances that still have accepted medical use in the U.S.?",
+    "prompt": "Which controlled-substance schedule has the highest abuse potential among drugs that still have an accepted medical use in the U.S.?",
     "options": [
       {
         "id": "a",
-        "text": "OTC vitamins"
+        "text": "Schedule I"
       },
       {
         "id": "b",
-        "text": "Schedule V"
-      },
-      {
-        "id": "c",
         "text": "Schedule II"
       },
       {
+        "id": "c",
+        "text": "Schedule III"
+      },
+      {
         "id": "d",
-        "text": "Schedule IV"
+        "text": "Schedule V"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "Schedule II drugs have high abuse potential with accepted medical use (e.g., many opioids, stimulants).",
+    "correctOptionId": "b",
+    "explanation": "Schedule II drugs (for example oxycodone, fentanyl and amphetamine salts) have accepted medical use but high abuse and dependence potential, so they need a written or electronic prescription with no refills. Schedule I drugs have no accepted medical use.",
     "distractorExplanations": {
-      "a": "Vitamins are not scheduled controlled substances.",
-      "b": "Schedule V has lower relative abuse potential.",
-      "d": "Schedule IV is lower than II."
+      "a": "Schedule I drugs have the highest abuse potential but no currently accepted medical use, so they fail the stem's condition.",
+      "c": "Schedule III drugs, such as testosterone or ketamine, have moderate abuse potential, lower than Schedule II.",
+      "d": "Schedule V has the lowest abuse potential, for example low-dose codeine cough preparations."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -531,7 +531,7 @@
     "id": "amt-rma-readiness-check-admin-002",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The anatomical term 'proximal' means:",
+    "prompt": "A provider documents that a laceration is proximal to the wrist. What does 'proximal' mean?",
     "options": [
       {
         "id": "a",
@@ -551,11 +551,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Proximal means nearer to the trunk/origin; distal means farther.",
+    "explanation": "Proximal means closer to the trunk or to the point where a limb attaches; distal means farther away. A cut proximal to the wrist is on the forearm side, toward the elbow.",
     "distractorExplanations": {
       "a": "Moving toward the midline of the body is the definition of medial, not proximal.",
       "c": "Toward the front of the body is anterior (ventral); proximal refers to nearness to the trunk or origin.",
-      "d": "That defines distal."
+      "d": "Farther from the trunk or point of origin is the definition of distal, the opposite of proximal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -564,7 +564,7 @@
     "id": "amt-rma-readiness-check-admin-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Albuterol is classified primarily as a",
+    "prompt": "A patient uses an albuterol inhaler during asthma attacks. Which drug class is albuterol?",
     "options": [
       {
         "id": "a",
@@ -584,11 +584,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Albuterol relaxes bronchial smooth muscle via beta-2 agonism for asthma/COPD rescue use.",
+    "explanation": "Albuterol is a short-acting beta-2 adrenergic agonist. It relaxes bronchial smooth muscle within minutes, which is why it is the standard rescue inhaler for asthma and COPD; side effects include tremor and a fast heart rate.",
     "distractorExplanations": {
-      "a": "Loop diuretics increase urine output (e.g., furosemide).",
-      "b": "Anticoagulants reduce clotting.",
-      "d": "PPIs reduce gastric acid."
+      "a": "Loop diuretics such as furosemide remove fluid through the kidneys and do not open the airways.",
+      "b": "Anticoagulants such as warfarin or apixaban reduce clotting and have no bronchodilator effect.",
+      "d": "Proton pump inhibitors such as omeprazole reduce stomach acid; they are not used for asthma attacks."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -597,7 +597,7 @@
     "id": "amt-rma-readiness-check-admin-004",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which electrolyte imbalance is classically associated with peaked T waves on ECG?",
+    "prompt": "A patient with chronic kidney failure has tall, peaked T waves on an ECG. Which electrolyte imbalance is most likely?",
     "options": [
       {
         "id": "a",
@@ -617,11 +617,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hyperkalemia can cause peaked T waves and dangerous arrhythmias.",
+    "explanation": "The kidneys excrete potassium, so kidney failure can cause hyperkalemia. High potassium produces tall, peaked T waves and can progress to a widened QRS and dangerous arrhythmias, so the tracing needs urgent provider attention.",
     "distractorExplanations": {
-      "a": "Hypokalemia more often causes U waves/flattened T waves.",
-      "b": "Hypocalcemia affects QT interval differently.",
-      "c": "Sodium disorders have different presentations."
+      "a": "Hypokalemia flattens T waves and may produce U waves, the opposite of peaked T waves.",
+      "b": "Hypocalcemia mainly lengthens the QT interval rather than peaking the T waves.",
+      "c": "Hyponatremia causes neurologic symptoms such as confusion, not a classic peaked-T-wave ECG pattern."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -630,7 +630,7 @@
     "id": "amt-rma-readiness-check-admin-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The gallbladder's primary function is to:",
+    "prompt": "What is the gallbladder's primary function?",
     "options": [
       {
         "id": "a",
@@ -650,9 +650,9 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The gallbladder stores and concentrates bile produced by the liver.",
+    "explanation": "The liver makes bile continuously; the gallbladder stores and concentrates it, then contracts after a fatty meal to release bile into the duodenum to emulsify fats. That is why gallbladder disease often causes pain after fatty meals.",
     "distractorExplanations": {
-      "a": "Filtering urea is a kidney function.",
+      "a": "Filtering urea from the blood is done by the kidneys' nephrons, not by any digestive organ.",
       "b": "The liver produces bile; the gallbladder stores and concentrates it.",
       "d": "Insulin and glucagon come from the pancreatic islets."
     },
@@ -663,11 +663,11 @@
     "id": "amt-rma-readiness-check-admin-006",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which route provides the slowest onset for most medications compared with IV?",
+    "prompt": "Which route of administration generally has the slowest onset of action?",
     "options": [
       {
         "id": "a",
-        "text": "Oral (enteral)"
+        "text": "Oral"
       },
       {
         "id": "b",
@@ -679,15 +679,15 @@
       },
       {
         "id": "d",
-        "text": "Inhalation of a rapid-acting bronchodilator"
+        "text": "Sublingual"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Oral absorption is generally slower than parenteral/IV routes due to GI absorption and first-pass effects.",
+    "explanation": "Swallowed drugs must dissolve, be absorbed through the GI tract and pass through the liver (first-pass effect) before reaching the circulation, so onset is slowest. IV is immediate; IM and sublingual drugs absorb directly into the blood.",
     "distractorExplanations": {
-      "b": "IM is faster than typical oral.",
-      "c": "IV has the fastest onset.",
-      "d": "Inhaled albuterol acts quickly locally/systemically for airway effect."
+      "b": "IM drugs absorb from well-perfused muscle into the bloodstream, usually faster than swallowed tablets.",
+      "c": "IV delivery puts the drug directly into the bloodstream, giving the fastest onset of all routes.",
+      "d": "Sublingual drugs absorb through the mucosa under the tongue and bypass first-pass metabolism, so onset is quick."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -696,7 +696,7 @@
     "id": "amt-rma-readiness-check-admin-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Epinephrine auto-injectors for anaphylaxis are typically given",
+    "prompt": "How is an epinephrine auto-injector given for anaphylaxis?",
     "options": [
       {
         "id": "a",
@@ -716,7 +716,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Epinephrine auto-injectors are designed for IM injection into the anterolateral thigh.",
+    "explanation": "Epinephrine auto-injectors deliver an intramuscular dose into the anterolateral (mid-outer) thigh, through clothing if needed. Muscle absorbs epinephrine faster than subcutaneous tissue, and the patient still needs emergency follow-up.",
     "distractorExplanations": {
       "b": "Auto-injectors are designed for IM delivery into the thigh; subcutaneous arm injection absorbs more slowly.",
       "c": "Patients do not self-administer IV epinephrine at home.",
@@ -729,31 +729,31 @@
     "id": "amt-rma-readiness-check-admin-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Which cranial nerve is tested when asking a patient to shrug the shoulders against resistance?",
+    "prompt": "A provider asks a patient to shrug both shoulders against resistance. Which cranial nerve is being tested?",
     "options": [
       {
         "id": "a",
-        "text": "CN II (optic)"
+        "text": "CN V (trigeminal)"
       },
       {
         "id": "b",
-        "text": "CN XI (accessory)"
+        "text": "CN VII (facial)"
       },
       {
         "id": "c",
-        "text": "CN I (olfactory)"
+        "text": "CN XI (accessory)"
       },
       {
         "id": "d",
-        "text": "CN VIII (vestibulocochlear)"
+        "text": "CN XII (hypoglossal)"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "CN XI innervates trapezius/sternocleidomastoid; shoulder shrug tests accessory nerve function.",
+    "correctOptionId": "c",
+    "explanation": "The spinal accessory nerve (CN XI) supplies the trapezius and sternocleidomastoid. Shrugging against resistance tests the trapezius, and turning the head against resistance tests the sternocleidomastoid.",
     "distractorExplanations": {
-      "a": "CN II is vision.",
-      "c": "CN I is smell.",
-      "d": "CN VIII is hearing/balance."
+      "a": "CN V (trigeminal) handles facial sensation and the chewing muscles, tested by clenching the jaw.",
+      "b": "CN VII (facial) controls facial expression, tested by asking the patient to smile or raise the eyebrows.",
+      "d": "CN XII (hypoglossal) moves the tongue, tested by having the patient stick out the tongue."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -762,11 +762,11 @@
     "id": "amt-rma-readiness-check-admin-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which is the best example of using two patient identifiers?",
+    "prompt": "Before drawing blood, which pair should the medical assistant use to identify the patient?",
     "options": [
       {
         "id": "a",
-        "text": "Room number and bed location"
+        "text": "Room number and the name on the door"
       },
       {
         "id": "b",
@@ -774,19 +774,19 @@
       },
       {
         "id": "c",
-        "text": "Physician's last name"
+        "text": "Name and the ordering provider's name"
       },
       {
         "id": "d",
-        "text": "Insurance company name alone"
+        "text": "Date of birth and the reason for the visit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Name plus DOB (or MRN) are standard identifiers; room number alone is unreliable.",
+    "explanation": "Joint Commission patient-safety goals require two person-specific identifiers, such as full name and date of birth or medical record number, confirmed by asking the patient to state them. A room or location is never an identifier.",
     "distractorExplanations": {
-      "a": "Location can change and is not a patient identifier.",
-      "c": "Provider name identifies the clinician, not the patient.",
-      "d": "Payer name does not uniquely identify the patient."
+      "a": "A room or location changes and can hold the wrong patient, so it is not a person-specific identifier.",
+      "c": "The provider's name identifies the clinician; many patients share the same ordering provider.",
+      "d": "The visit reason is not unique to one person and can be shared by many patients that day."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -795,7 +795,7 @@
     "id": "amt-rma-readiness-check-admin-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "ICD-10-CM codes primarily describe:",
+    "prompt": "Which information do ICD-10-CM codes primarily report on a claim?",
     "options": [
       {
         "id": "a",
@@ -815,10 +815,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ICD-10-CM is the diagnosis coding system used to report conditions and encounter reasons.",
+    "explanation": "ICD-10-CM codes report diagnoses, symptoms and reasons for the encounter, which establish medical necessity for the services billed. Procedures go on CPT/HCPCS codes, and the setting goes in the place-of-service field.",
     "distractorExplanations": {
-      "a": "Procedures and services are reported with CPT.",
-      "c": "Drugs, supplies, and equipment are HCPCS Level II.",
+      "a": "Procedures and services performed are reported with CPT (HCPCS Level I) codes, not ICD-10-CM.",
+      "c": "Drugs, supplies, and equipment are reported with HCPCS Level II codes, such as J- and E-codes.",
       "d": "Where the service took place is reported with place-of-service codes, not ICD-10-CM diagnosis codes."
     },
     "difficulty": "easy",
@@ -828,31 +828,31 @@
     "id": "amt-rma-readiness-check-admin-011",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "admin",
-    "prompt": "CPT codes are used primarily to report",
+    "prompt": "A physician's office dispenses a pair of crutches to a patient. Which code set reports the crutches themselves?",
     "options": [
       {
         "id": "a",
-        "text": "Diagnoses and reasons for the encounter"
+        "text": "CPT (Category I)"
       },
       {
         "id": "b",
-        "text": "Drugs, supplies, and durable equipment"
+        "text": "HCPCS Level II"
       },
       {
         "id": "c",
-        "text": "Procedures and services performed"
+        "text": "ICD-10-CM"
       },
       {
         "id": "d",
-        "text": "The place-of-service location"
+        "text": "ICD-10-PCS"
       }
     ],
-    "correctOptionId": "c",
-    "explanation": "CPT reports procedures/services for billing and documentation linkage.",
+    "correctOptionId": "b",
+    "explanation": "HCPCS Level II codes are alphanumeric codes for supplies, durable medical equipment, drugs and some services that CPT does not describe, such as E-codes for DME and J-codes for injectable drugs. Crutches are DME.",
     "distractorExplanations": {
-      "a": "Diagnoses and encounter reasons are reported with ICD-10-CM codes, not CPT codes.",
-      "b": "Drugs, supplies and durable medical equipment are reported with HCPCS Level II codes, not CPT.",
-      "d": "The setting of care is reported with two-digit place-of-service codes on the claim, not with CPT."
+      "a": "CPT Category I codes report procedures and services such as office visits, not the equipment dispensed.",
+      "c": "ICD-10-CM codes report the diagnosis, such as the ankle fracture, not the item that was dispensed.",
+      "d": "ICD-10-PCS codes report inpatient hospital procedures and are not used for office supplies or DME."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -894,7 +894,7 @@
     "id": "amt-rma-readiness-check-admin-013",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "The main purpose of a clean-catch midstream urine collection is to:",
+    "prompt": "What is the main purpose of a clean-catch midstream urine collection?",
     "options": [
       {
         "id": "a",
@@ -910,14 +910,14 @@
       },
       {
         "id": "d",
-        "text": "Minimize contamination from skin and genital flora"
+        "text": "Reduce contamination from skin and genital flora"
       }
     ],
     "correctOptionId": "d",
     "explanation": "Cleansing the urethral area and collecting midstream urine reduces contamination from skin and genital flora, which matters for urine cultures.",
     "distractorExplanations": {
-      "a": "Total volume requires a timed 24-hour collection.",
-      "b": "Cleansing is a required step of a clean catch.",
+      "a": "Total urine volume needs a timed 24-hour collection, not a single midstream sample.",
+      "b": "Cleansing the urethral area is a required step of a clean catch, not something it avoids.",
       "c": "First-morning specimens are about concentration, not contamination control."
     },
     "difficulty": "easy",
@@ -951,7 +951,7 @@
     "distractorExplanations": {
       "a": "The index fingertip is more sensitive and callused, the tip is near bone, and cutting along the prints lets blood run.",
       "b": "The thumb has a pulse and thicker tissue and is not recommended.",
-      "c": "Heel sticks are used for infants, not adults."
+      "c": "Heel sticks are used for infants under about one year, not for adult capillary punctures."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -993,7 +993,7 @@
     "id": "amt-rma-readiness-check-anatomy-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The term \"bradycardia\" means:",
+    "prompt": "A patient's chart notes 'bradycardia.' What does the term mean?",
     "options": [
       {
         "id": "a",
@@ -1015,8 +1015,8 @@
     "correctOptionId": "d",
     "explanation": "Brady- means slow and -cardia refers to the heart. In adults, bradycardia is a resting rate below 60 beats per minute.",
     "distractorExplanations": {
-      "a": "A rate over 100 is tachycardia.",
-      "b": "An enlarged heart is cardiomegaly.",
+      "a": "A resting rate over 100 beats per minute is tachycardia, the opposite of bradycardia.",
+      "b": "An enlarged heart on imaging is cardiomegaly, a structural finding rather than a rate.",
       "c": "An irregular rhythm without P waves suggests atrial fibrillation."
     },
     "difficulty": "easy",
@@ -1059,7 +1059,7 @@
     "id": "amt-rma-readiness-check-anatomy-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The suffix \"-ectomy\" means:",
+    "prompt": "A patient is scheduled for a cholecystectomy. What does the suffix '-ectomy' mean?",
     "options": [
       {
         "id": "a",
@@ -1079,11 +1079,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "-ectomy means excision or surgical removal, as in appendectomy.",
+    "explanation": "-ectomy means surgical removal (excision), so a cholecystectomy removes the gallbladder and an appendectomy removes the appendix.",
     "distractorExplanations": {
-      "a": "Visual examination is -scopy, as in endoscopy.",
-      "b": "Incision into is -otomy, as in tracheotomy.",
-      "c": "Creating an opening is -ostomy, as in colostomy."
+      "a": "Visual examination is -scopy, as in endoscopy or colonoscopy.",
+      "b": "Cutting into an organ is -otomy, as in tracheotomy, with nothing removed.",
+      "c": "Creating a surgical opening is -ostomy, as in colostomy."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1092,7 +1092,7 @@
     "id": "amt-rma-readiness-check-anatomy-004",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Insulin is produced by the:",
+    "prompt": "Which cells produce insulin?",
     "options": [
       {
         "id": "a",
@@ -1112,11 +1112,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Beta cells in the islets of Langerhans secrete insulin. Alpha cells in the same islets secrete glucagon.",
+    "explanation": "Beta cells in the pancreatic islets of Langerhans secrete insulin, which lowers blood glucose. Alpha cells in the same islets secrete glucagon, which raises it.",
     "distractorExplanations": {
       "a": "The adrenal cortex produces cortisol, aldosterone, and androgens.",
       "c": "The anterior pituitary produces hormones such as GH, TSH, and ACTH.",
-      "d": "Thyroid follicular cells make T3 and T4."
+      "d": "Thyroid follicular cells make the metabolic hormones T3 and T4, not insulin."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1125,7 +1125,7 @@
     "id": "amt-rma-readiness-check-anatomy-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The functional unit of the kidney that filters blood and forms urine is the:",
+    "prompt": "Which structure is the functional unit of the kidney that filters blood and forms urine?",
     "options": [
       {
         "id": "a",
@@ -1178,7 +1178,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The frontal (coronal) plane runs side to side and separates the front of the body from the back.",
+    "explanation": "The frontal (coronal) plane runs vertically from side to side, separating the anterior (front) of the body from the posterior (back). Sagittal planes divide left from right, and transverse planes divide upper from lower.",
     "distractorExplanations": {
       "a": "A sagittal plane divides the body into left and right parts.",
       "b": "The midsagittal plane divides the body into equal left and right halves.",
@@ -1191,7 +1191,7 @@
     "id": "amt-rma-readiness-check-anatomy-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The combining form \"hepat/o\" refers to the:",
+    "prompt": "Which organ does the combining form 'hepat/o' refer to, as in 'hepatitis'?",
     "options": [
       {
         "id": "a",
@@ -1211,11 +1211,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Hepat/o means liver, as in hepatitis (liver inflammation) and hepatomegaly (enlarged liver).",
+    "explanation": "Hepat/o means liver: hepatitis is liver inflammation, hepatomegaly is an enlarged liver, and hepatotoxic drugs damage the liver.",
     "distractorExplanations": {
-      "a": "Kidney is nephr/o or ren/o.",
-      "c": "Stomach is gastr/o.",
-      "d": "Spleen is splen/o."
+      "a": "Kidney is nephr/o or ren/o, as in nephritis and renal.",
+      "c": "Stomach is gastr/o, as in gastritis and gastroscopy.",
+      "d": "Spleen is splen/o, as in splenomegaly and splenectomy."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1224,7 +1224,7 @@
     "id": "amt-rma-readiness-check-anatomy-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The medical term for inflammation of a joint is:",
+    "prompt": "Which medical term means inflammation of a joint?",
     "options": [
       {
         "id": "a",
@@ -1244,11 +1244,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Arthr/o means joint and -itis means inflammation, so arthritis is joint inflammation.",
+    "explanation": "Arthr/o means joint and -itis means inflammation, so arthritis is joint inflammation. Arthralgia (-algia, pain) describes joint pain that may occur without inflammation.",
     "distractorExplanations": {
       "a": "Arthralgia means joint pain, not inflammation.",
-      "b": "Osteitis is inflammation of bone.",
-      "d": "Myositis is inflammation of muscle."
+      "b": "Oste/o means bone, so osteitis is inflammation of bone, not of a joint.",
+      "d": "My/o means muscle, so myositis is inflammation of muscle tissue."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1257,7 +1257,7 @@
     "id": "amt-rma-readiness-check-anatomy-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Most absorption of nutrients from digested food takes place in the:",
+    "prompt": "Where does most absorption of nutrients from digested food take place?",
     "options": [
       {
         "id": "a",
@@ -1290,7 +1290,7 @@
     "id": "amt-rma-readiness-check-anatomy-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The antecubital fossa, a common venipuncture site, is located:",
+    "prompt": "Where is the antecubital fossa, a common venipuncture site, located?",
     "options": [
       {
         "id": "a",
@@ -1356,7 +1356,7 @@
     "id": "amt-rma-readiness-check-anatomy-012",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "For an accurate adult blood pressure, the cuff's inflatable bladder should encircle about:",
+    "prompt": "For an accurate adult blood pressure, about how much of the upper-arm circumference should the cuff's inflatable bladder encircle?",
     "options": [
       {
         "id": "a",
@@ -1368,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "150% of the upper-arm circumference"
+        "text": "80% of the upper-arm circumference"
       },
       {
         "id": "d",
-        "text": "80% of the upper-arm circumference"
+        "text": "150% of the upper-arm circumference"
       }
     ],
-    "correctOptionId": "d",
+    "correctOptionId": "c",
     "explanation": "The bladder length should encircle about 80% of the arm, with width about 40% of arm circumference. A cuff that is too small reads falsely high; one that is too large reads falsely low.",
     "distractorExplanations": {
       "a": "A bladder this small is undersized and gives falsely high readings.",
-      "b": "Half the circumference is still too small for an accurate reading.",
-      "c": "A bladder longer than the arm cannot be applied correctly and tends to read low."
+      "b": "Half the circumference is still too small for an accurate reading and reads falsely high.",
+      "d": "A bladder longer than the arm cannot be applied correctly and tends to read low."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1389,31 +1389,31 @@
     "id": "amt-rma-readiness-check-anatomy-013",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "Which organ system is primarily responsible for gas exchange?",
+    "prompt": "Gas exchange between inhaled air and the blood takes place across the walls of which structures?",
     "options": [
       {
         "id": "a",
-        "text": "Digestive"
+        "text": "Bronchi"
       },
       {
         "id": "b",
-        "text": "Integumentary"
+        "text": "Bronchioles"
       },
       {
         "id": "c",
-        "text": "Reproductive"
+        "text": "Trachea"
       },
       {
         "id": "d",
-        "text": "Respiratory"
+        "text": "Alveoli"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The respiratory system exchanges oxygen and carbon dioxide in the lungs.",
+    "explanation": "Alveoli are tiny air sacs with walls one cell thick, wrapped in capillaries, so oxygen diffuses into the blood and carbon dioxide diffuses out. The trachea, bronchi and bronchioles only conduct air.",
     "distractorExplanations": {
-      "a": "Digestive absorbs nutrients.",
-      "b": "Skin protects and regulates temperature.",
-      "c": "Reproductive supports reproduction."
+      "a": "The bronchi are conducting airways with thick walls; they carry air but do not exchange gases.",
+      "b": "Bronchioles conduct air to the alveoli; their walls are too thick for meaningful gas exchange.",
+      "c": "The trachea is a cartilage-supported windpipe that carries air to the bronchi without gas exchange."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local QA repair (stems/distractors)"
@@ -1422,31 +1422,31 @@
     "id": "amt-rma-readiness-check-anatomy-014",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "anatomy",
-    "prompt": "The sinoatrial (SA) node is located in the",
+    "prompt": "Where is the sinoatrial (SA) node, the heart's natural pacemaker, located?",
     "options": [
       {
         "id": "a",
-        "text": "Left ventricle apex"
+        "text": "Interventricular septum"
       },
       {
         "id": "b",
-        "text": "Pulmonary artery"
+        "text": "Left atrial wall"
       },
       {
         "id": "c",
-        "text": "Aortic arch"
+        "text": "Apex of the left ventricle"
       },
       {
         "id": "d",
-        "text": "Right atrium"
+        "text": "Right atrial wall"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The SA node in the right atrium is the heart's primary pacemaker.",
+    "explanation": "The SA node sits in the wall of the right atrium near the opening of the superior vena cava. It fires about 60–100 times per minute, setting normal sinus rhythm, and its impulses then pass to the AV node.",
     "distractorExplanations": {
-      "a": "The apex is ventricular myocardium, not the SA node.",
-      "b": "The pulmonary artery carries blood to the lungs.",
-      "c": "The aortic arch is not the SA node location."
+      "a": "The interventricular septum carries the bundle of His and bundle branches, not the SA node.",
+      "b": "The left atrium receives blood from the pulmonary veins; the pacemaker tissue is on the right side.",
+      "c": "The ventricular apex is working muscle reached by Purkinje fibers late in the conduction pathway."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1455,11 +1455,11 @@
     "id": "amt-rma-readiness-check-anatomy-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which drug class is commonly used first-line for many patients with hypertension?",
+    "prompt": "A provider starts a first-line medication for uncomplicated high blood pressure. Which drug group is it most likely from?",
     "options": [
       {
         "id": "a",
-        "text": "ACE inhibitors, ARBs, thiazides, or CCBs"
+        "text": "Thiazides such as chlorthalidone"
       },
       {
         "id": "b",
@@ -1475,7 +1475,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Common first-line antihypertensives include ACEI/ARB, thiazides, and CCBs depending on patient factors.",
+    "explanation": "Current U.S. hypertension guidelines list thiazide diuretics, ACE inhibitors, ARBs and calcium channel blockers as first-line options. Thiazides such as chlorthalidone lower blood pressure partly by reducing fluid volume.",
     "distractorExplanations": {
       "b": "Beta-2 agonists are bronchodilators and can raise heart rate.",
       "c": "PPIs reduce stomach acid and do not lower blood pressure.",
@@ -1488,7 +1488,7 @@
     "id": "amt-rma-readiness-check-law-ethics-001",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Which is an example of battery in clinical care?",
+    "prompt": "Which situation is an example of battery in clinical care?",
     "options": [
       {
         "id": "a",
@@ -1508,10 +1508,10 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Battery is intentional unauthorized touching; consent is key.",
+    "explanation": "Battery is intentional, unauthorized physical contact. Giving an injection or doing a procedure without consent, or after a refusal, is battery even if the care helped; a threat of contact alone is assault.",
     "distractorExplanations": {
-      "a": "Accurate documentation is appropriate.",
-      "b": "Consented care is not battery.",
+      "a": "Accurate documentation of vital signs is a normal duty and involves no unauthorized touching.",
+      "b": "Care given after valid informed consent is authorized touching, so it is not battery.",
       "c": "A threat that creates fear of contact is assault; battery requires actual unauthorized touching."
     },
     "difficulty": "medium",
@@ -1521,7 +1521,7 @@
     "id": "amt-rma-readiness-check-law-ethics-002",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Standard Precautions assume that:",
+    "prompt": "What do Standard Precautions assume about patients?",
     "options": [
       {
         "id": "a",
@@ -1541,7 +1541,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Standard Precautions treat all patients' blood/body fluids as potentially infectious.",
+    "explanation": "Standard Precautions treat the blood, body fluids, nonintact skin and mucous membranes of every patient as potentially infectious, so hand hygiene and PPE are chosen by the expected exposure, not by a known diagnosis.",
     "distractorExplanations": {
       "a": "Standard Precautions apply to every patient, not only known infections.",
       "c": "Gloves can have defects and hands get contaminated during removal, so hand hygiene is still required afterward.",
@@ -1554,11 +1554,11 @@
     "id": "amt-rma-readiness-check-law-ethics-003",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A Good Samaritan statute typically protects:",
+    "prompt": "What does a Good Samaritan statute typically protect?",
     "options": [
       {
         "id": "a",
-        "text": "Reasonable emergency aid given in good faith"
+        "text": "Reasonable good-faith emergency aid"
       },
       {
         "id": "b",
@@ -1574,7 +1574,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Good Samaritan laws generally shield good-faith emergency helpers acting reasonably; they do not cover intentional misconduct or fraud.",
+    "explanation": "Good Samaritan laws generally shield people who give reasonable emergency aid in good faith and without pay. Details vary by state, but they do not cover gross negligence, willful misconduct, or care given as part of a paid job.",
     "distractorExplanations": {
       "b": "Care within a paid job carries a duty to treat and is outside Good Samaritan protection.",
       "c": "Gross negligence and willful misconduct are generally not protected.",
@@ -1620,7 +1620,7 @@
     "id": "amt-rma-readiness-check-law-ethics-005",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "An incident report should be:",
+    "prompt": "How should an incident report be written and handled?",
     "options": [
       {
         "id": "a",
@@ -1640,7 +1640,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Incident reports document facts for risk management; they are handled per policy and are not public notices.",
+    "explanation": "Incident reports document what happened objectively and promptly for risk management and quality improvement. They follow facility policy, stay out of the patient's chart, and cover near misses as well as events that caused harm.",
     "distractorExplanations": {
       "a": "Incident reports are written promptly and objectively; assigning fault is not part of the report or a precondition.",
       "b": "Incident reports are kept separate from the chart; the record notes only the facts of care.",
@@ -1673,7 +1673,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Autonomy respects informed patients' rights to accept or refuse care.",
+    "explanation": "Autonomy is respect for a capacitated patient's right to make informed decisions, including refusing recommended care. The team's role is to disclose information fully and honor the choice, even when they disagree with it.",
     "distractorExplanations": {
       "a": "Withholding risks to gain agreement is paternalism and defeats informed consent, the opposite of autonomy.",
       "c": "Acting on the provider's view of the patient's good describes beneficence (or paternalism), not autonomy.",
@@ -1686,7 +1686,7 @@
     "id": "amt-rma-readiness-check-law-ethics-007",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "HIPAA's Privacy Rule primarily protects:",
+    "prompt": "What does the HIPAA Privacy Rule primarily protect?",
     "options": [
       {
         "id": "a",
@@ -1706,11 +1706,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI.",
+    "explanation": "The Privacy Rule governs how covered entities use and disclose protected health information: individually identifiable health data in any form. De-identified data and employment records fall outside it.",
     "distractorExplanations": {
-      "b": "Workplace safety falls under OSHA.",
-      "c": "Financial and tax records are not PHI.",
-      "d": "De-identified data is not protected by the Privacy Rule."
+      "b": "Employee workplace safety records fall under OSHA rules, not the HIPAA Privacy Rule.",
+      "c": "Clinic financial and tax records are business records and are not protected health information.",
+      "d": "De-identified data has no identifiers, so the Privacy Rule no longer applies to it."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1719,30 +1719,30 @@
     "id": "amt-rma-readiness-check-law-ethics-008",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Informed consent requires that the patient:",
+    "prompt": "For informed consent to a procedure to be valid, what must happen?",
     "options": [
       {
         "id": "a",
-        "text": "Hear risks, benefits, and alternatives, then agree"
+        "text": "The patient hears risks, benefits and alternatives, then agrees"
       },
       {
         "id": "b",
-        "text": "Sign the form before any explanation is given"
+        "text": "The patient signs the form before any explanation is given"
       },
       {
         "id": "c",
-        "text": "Agree after the provider decides for them"
+        "text": "The patient agrees after the provider decides for them"
       },
       {
         "id": "d",
-        "text": "Be told the benefits and the provider's recommendation"
+        "text": "The patient hears the benefits and the provider's recommendation"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Informed consent is voluntary agreement after adequate disclosure and opportunity for questions.",
+    "explanation": "Valid informed consent requires the provider to explain the procedure, its risks, benefits and alternatives (including no treatment), answer questions, and obtain the capacitated patient's voluntary agreement. The signature only documents that process.",
     "distractorExplanations": {
-      "b": "Signing without explanation is not informed consent.",
-      "c": "Consent must be the patient's voluntary decision.",
+      "b": "A signature obtained before any explanation documents nothing; the disclosure must come first.",
+      "c": "Consent must be the patient's own voluntary decision, not agreement to a choice already made for them.",
       "d": "Benefits and a recommendation are not enough; risks and alternatives must also be disclosed before consent."
     },
     "difficulty": "easy",
@@ -1752,7 +1752,7 @@
     "id": "amt-rma-readiness-check-law-ethics-009",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Which situation is reportable as suspected child abuse in most U.S. jurisdictions for mandated reporters?",
+    "prompt": "For a mandated reporter, which finding most clearly requires a report of suspected child abuse?",
     "options": [
       {
         "id": "a",
@@ -1774,9 +1774,9 @@
     "correctOptionId": "b",
     "explanation": "Mandated reporters must report reasonable suspicion of abuse/neglect; patterned injuries with inconsistent history are classic red flags.",
     "distractorExplanations": {
-      "a": "Shin bruises in a new walker are typical accidental injuries.",
-      "c": "A single missed visit without other concerns is not a sign of abuse.",
-      "d": "Fear of needles is a normal response."
+      "a": "Shin bruises in a child learning to walk are typical accidental injuries over bony areas.",
+      "c": "A single missed visit without other concerns does not create reasonable suspicion of abuse or neglect.",
+      "d": "Crying and resisting a needle is a normal childhood fear response, not a sign of abuse."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank)."
@@ -1785,7 +1785,7 @@
     "id": "amt-rma-readiness-check-law-ethics-010",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "The OSHA Bloodborne Pathogens Standard requires employers to:",
+    "prompt": "What does the OSHA Bloodborne Pathogens Standard require employers to do?",
     "options": [
       {
         "id": "a",
@@ -1805,10 +1805,10 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "OSHA BBP standards mandate exposure control plans, training, PPE, and post-exposure processes.",
+    "explanation": "The standard requires a written exposure control plan, annual training, PPE at no cost, engineering controls such as safety sharps, free hepatitis B vaccination offered to at-risk staff, and post-exposure evaluation and follow-up.",
     "distractorExplanations": {
       "b": "The standard requires post-exposure evaluation and follow-up, not routine yearly HIV or hepatitis testing of staff.",
-      "c": "Employers must provide PPE at no cost to employees.",
+      "c": "Employers must provide PPE at no cost to employees; making staff buy it violates the standard.",
       "d": "There is no hepatitis C vaccine; employers must offer the hepatitis B vaccine."
     },
     "difficulty": "easy",
@@ -1818,31 +1818,31 @@
     "id": "amt-rma-readiness-check-law-ethics-011",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A medical assistant may not",
+    "prompt": "Which task is outside a medical assistant's scope of practice in every state?",
     "options": [
       {
         "id": "a",
-        "text": "Independently diagnose disease and prescribe medication"
+        "text": "Diagnosing disease and prescribing drugs on her own"
       },
       {
         "id": "b",
-        "text": "Give injections delegated by the supervising provider"
+        "text": "Giving injections delegated by the supervising provider"
       },
       {
         "id": "c",
-        "text": "Perform CLIA-waived tests if trained and authorized"
+        "text": "Performing CLIA-waived tests when trained and authorized"
       },
       {
         "id": "d",
-        "text": "Take vital signs under supervision/protocol"
+        "text": "Taking vital signs under supervision or protocol"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Diagnosis and prescribing are licensed-provider functions outside MA scope.",
+    "explanation": "Diagnosing and prescribing require a license (physician, NP, PA). Medical assistants perform delegated clinical and administrative tasks under supervision; exact delegated duties such as injections vary by state, but diagnosis and prescribing never do.",
     "distractorExplanations": {
       "b": "Giving injections under provider delegation is within trained MA scope in most states, so it is permitted.",
-      "c": "CLIA-waived testing is often within trained MA scope.",
-      "d": "Vitals are common MA duties."
+      "c": "CLIA-waived tests such as urine dipsticks and glucose checks are routine trained MA duties in physician offices.",
+      "d": "Measuring vital signs under supervision or protocol is a core, standard medical assistant duty."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1851,19 +1851,19 @@
     "id": "amt-rma-readiness-check-law-ethics-012",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Which best describes 'negligence' in a healthcare malpractice context?",
+    "prompt": "Which best describes negligence in a healthcare malpractice case?",
     "options": [
       {
         "id": "a",
-        "text": "A successful treatment outcome"
+        "text": "An unexpected poor outcome despite proper care"
       },
       {
         "id": "b",
-        "text": "Following evidence-based protocols perfectly"
+        "text": "Following an approved written protocol correctly"
       },
       {
         "id": "c",
-        "text": "Failure to meet the standard of care causing harm"
+        "text": "Failing the standard of care and causing harm"
       },
       {
         "id": "d",
@@ -1871,10 +1871,10 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Negligence is breach of duty (standard of care) that proximately causes damages.",
+    "explanation": "Negligence requires a duty, a breach of the standard of care, causation and damages. It is unintentional: the professional failed to act as a reasonably careful peer would, and that failure harmed the patient.",
     "distractorExplanations": {
-      "a": "Good outcomes are not negligence.",
-      "b": "Meeting standards helps prevent negligence claims.",
+      "a": "A bad outcome alone is not negligence; there must be a breach of the standard of care that caused it.",
+      "b": "Following an approved protocol correctly is meeting the standard of care, the opposite of a breach.",
       "d": "Intentional unauthorized touching is battery, an intentional tort; negligence is an unintentional breach of duty."
     },
     "difficulty": "medium",
@@ -1884,7 +1884,7 @@
     "id": "amt-rma-readiness-check-law-ethics-013",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "A living will typically:",
+    "prompt": "What does a living will typically do?",
     "options": [
       {
         "id": "a",
@@ -1904,11 +1904,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Living wills document preferences for end-of-life/life-sustaining care when the patient lacks capacity.",
+    "explanation": "A living will is an advance directive stating which life-sustaining treatments, such as ventilation or tube feeding, the patient wants or refuses if unable to communicate. It speaks for the patient but names no decision-maker.",
     "distractorExplanations": {
       "a": "Naming a decision-maker is done with a health care proxy or durable power of attorney for health care, not a living will.",
-      "b": "Control over finances is a financial power of attorney.",
-      "d": "Organ donation uses a separate registry or document."
+      "b": "Control over bank accounts is granted by a financial power of attorney, not by a health directive.",
+      "d": "Organ donation is recorded through a donor registry or a separate document, not mainly in a living will."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
@@ -1917,7 +1917,7 @@
     "id": "amt-rma-readiness-check-law-ethics-014",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "Which action violates patient confidentiality?",
+    "prompt": "Which action by clinic staff violates patient confidentiality?",
     "options": [
       {
         "id": "a",
@@ -1937,10 +1937,10 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Public disclosure of PHI on social media is a confidentiality/HIPAA breach.",
+    "explanation": "Posting identifiable patient information on social media, even without a name if the patient could be recognized, is an unauthorized disclosure of PHI and a HIPAA violation. Sharing with the care team for treatment is permitted.",
     "distractorExplanations": {
-      "b": "Treatment-related sharing with the care team is permitted.",
-      "c": "Identity verification protects against wrongful disclosure.",
+      "b": "Treatment-related sharing with the care team is permitted under HIPAA without an authorization.",
+      "c": "Verifying identity before releasing results protects against wrongful disclosure.",
       "d": "HIPAA permits sharing PHI with another provider for treatment, so sending records to a specialist is allowed."
     },
     "difficulty": "easy",
@@ -1950,7 +1950,7 @@
     "id": "amt-rma-readiness-check-law-ethics-015",
     "examSlug": "amt-rma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "CLIA categorizes lab tests. A CLIA-waived test is generally:",
+    "prompt": "Under CLIA, how is a waived test generally described?",
     "options": [
       {
         "id": "a",
@@ -1970,13 +1970,1993 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Waived tests are simple, low-risk methods cleared for waived status when manufacturer instructions are followed.",
+    "explanation": "CLIA-waived tests are simple methods with a low risk of erroneous results when the manufacturer's instructions are followed, such as urine dipsticks, glucose meters and rapid strep tests. A site needs only a Certificate of Waiver.",
     "distractorExplanations": {
       "a": "High-complexity tests need qualified lab personnel; waived tests are the simplest category.",
-      "c": "Waived tests are commonly done in physician offices.",
+      "c": "Waived tests are commonly done in physician office laboratories under a Certificate of Waiver.",
       "d": "Waived tests need only a Certificate of Waiver and are routinely run in physician office labs, not reference labs."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 3 quality — remapped from sibling bank). · Local short-stem expansion"
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-016",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient receives a Mantoux tuberculin skin test on Monday morning. When should the induration be read?",
+    "options": [
+      {
+        "id": "a",
+        "text": "12–24 hours after placement"
+      },
+      {
+        "id": "b",
+        "text": "24–36 hours after placement"
+      },
+      {
+        "id": "c",
+        "text": "48–72 hours after placement"
+      },
+      {
+        "id": "d",
+        "text": "96–120 hours after placement"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The TST is read 48–72 hours after the intradermal injection by measuring the induration (raised, firm area) in millimeters, not the redness. A test not read within 72 hours generally has to be repeated.",
+    "distractorExplanations": {
+      "a": "At 12–24 hours the delayed hypersensitivity reaction has not developed, so a reading would be falsely low.",
+      "b": "24–36 hours is still too early; the T-cell-mediated reaction peaks between 48 and 72 hours.",
+      "d": "After 72 hours the induration may fade, so a reading at 4–5 days is unreliable and the test is usually repeated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-017",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "During venipuncture, what is the maximum time a tourniquet should stay on the arm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 seconds"
+      },
+      {
+        "id": "b",
+        "text": "1 minute"
+      },
+      {
+        "id": "c",
+        "text": "3 minutes"
+      },
+      {
+        "id": "d",
+        "text": "5 minutes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CLSI guidance limits tourniquet time to 1 minute. Longer application causes hemoconcentration, which can falsely raise potassium, protein and cell counts; if the vein is hard to find, release it and reapply after 2 minutes.",
+    "distractorExplanations": {
+      "a": "30 seconds is often too short to locate and access a vein; the accepted upper limit is 1 minute.",
+      "c": "Three minutes of stasis causes hemoconcentration and alters results such as potassium and total protein.",
+      "d": "Five minutes far exceeds the 1-minute limit and can cause hemoconcentration, petechiae and discomfort."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-018",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A serum potassium comes back unexpectedly high, and the lab notes the specimen was hemolyzed. Which collection step most likely caused it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Using a 21-gauge needle in the median cubital vein"
+      },
+      {
+        "id": "b",
+        "text": "Letting the alcohol dry completely before the puncture"
+      },
+      {
+        "id": "c",
+        "text": "Inverting the tube gently five to eight times"
+      },
+      {
+        "id": "d",
+        "text": "Pushing syringe blood forcefully into the tube"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Pushing blood forcefully through a needle from a syringe ruptures red cells, releasing intracellular potassium and falsely raising the result. Use a safety transfer device and let the tube's vacuum draw the blood in.",
+    "distractorExplanations": {
+      "a": "A 21-gauge needle is a standard adult size; hemolysis is linked to very small needles such as 25-gauge.",
+      "b": "Letting alcohol dry prevents hemolysis; it is wet alcohol entering the sample that damages cells.",
+      "c": "Gentle inversion mixes additives correctly; vigorous shaking, not gentle inversion, causes hemolysis."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-019",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "During CPR on an infant, which artery should the rescuer palpate for a pulse check?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carotid artery"
+      },
+      {
+        "id": "b",
+        "text": "Radial artery"
+      },
+      {
+        "id": "c",
+        "text": "Popliteal artery"
+      },
+      {
+        "id": "d",
+        "text": "Brachial artery"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An infant's short, chubby neck makes the carotid hard to find, so AHA guidelines use the brachial pulse on the inside of the upper arm for infants. Adults and children are checked at the carotid (or femoral in children), for no more than 10 seconds.",
+    "distractorExplanations": {
+      "a": "The carotid is used for adults and children; an infant's short neck makes it hard to feel reliably.",
+      "b": "The radial pulse is too peripheral for CPR checks and may be absent even with some circulation.",
+      "c": "The popliteal pulse behind the knee is hard to find and is not used for emergency pulse checks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-020",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "What chest compression rate do current AHA guidelines recommend for adult CPR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "80–100 per minute"
+      },
+      {
+        "id": "b",
+        "text": "100–120 per minute"
+      },
+      {
+        "id": "c",
+        "text": "120–140 per minute"
+      },
+      {
+        "id": "d",
+        "text": "140–160 per minute"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "AHA guidelines call for compressions at 100–120 per minute, at least 2 inches (5 cm) deep in adults, with full chest recoil and minimal interruptions. Going faster than 120 tends to reduce depth and the heart's refilling.",
+    "distractorExplanations": {
+      "a": "80–100 per minute is too slow to generate adequate blood flow; the floor is 100 per minute.",
+      "c": "Above 120 per minute compression depth and cardiac refilling drop, so 120 is the upper limit.",
+      "d": "140–160 per minute is far too fast; the heart cannot refill between compressions at that rate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-021",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient's right eye reads the 20/40 line on a Snellen chart. What does this result mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At 40 feet, the eye reads what normal eyes read at 20 feet"
+      },
+      {
+        "id": "b",
+        "text": "The eye has 40 percent of normal visual acuity at 20 feet"
+      },
+      {
+        "id": "c",
+        "text": "The eye reads 20 of the 40 letters at the standard distance"
+      },
+      {
+        "id": "d",
+        "text": "At 20 feet, the eye reads what normal eyes read at 40 feet"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The top number is the testing distance (20 feet); the bottom is the distance at which a person with normal vision could read that line. 20/40 means the patient must stand at 20 feet to read what a normal eye reads from 40 feet.",
+    "distractorExplanations": {
+      "a": "This reverses the fraction; the test is always done at 20 feet, so the top number is the patient's distance.",
+      "b": "The Snellen fraction is not a percentage of vision; 20/40 compares distances, not percent acuity.",
+      "c": "The numbers are distances in feet, not counts of letters read correctly on the chart."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-022",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "When should a sharps container in an exam room be closed and replaced?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When it is about one-quarter full"
+      },
+      {
+        "id": "b",
+        "text": "When it is about half full"
+      },
+      {
+        "id": "c",
+        "text": "At the marked fill line (about 3/4 full)"
+      },
+      {
+        "id": "d",
+        "text": "When it is filled completely to the very top"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sharps containers are closed and replaced when they reach the manufacturer's fill line, usually about three-quarters full. Overfilling forces staff to push sharps in by hand and causes needlestick injuries.",
+    "distractorExplanations": {
+      "a": "Replacing at one-quarter wastes containers and is not required by OSHA or the manufacturer's instructions.",
+      "b": "Half full is below the fill line; the container can safely take more before it must be replaced.",
+      "d": "A completely full container leaves needles sticking out or forces staff to push them in, causing needlesticks."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-023",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "An ECG tracing shows a thick baseline of small, regular, evenly spaced spikes, and several devices are plugged in near the bed. Which artifact is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "60-cycle (AC) interference"
+      },
+      {
+        "id": "b",
+        "text": "Somatic tremor artifact"
+      },
+      {
+        "id": "c",
+        "text": "Wandering baseline"
+      },
+      {
+        "id": "d",
+        "text": "Interrupted baseline"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "AC (60-cycle) interference comes from nearby electrical equipment or poor grounding and shows as uniform, regular small spikes that thicken the baseline. Unplug nearby devices, check grounding and keep lead wires away from power cords.",
+    "distractorExplanations": {
+      "b": "Somatic tremor from muscle movement or shivering gives irregular, jagged spikes, not regular uniform ones.",
+      "c": "A wandering baseline drifts up and down, usually from breathing, lotion or loose electrodes.",
+      "d": "An interrupted baseline shows breaks or a flat line from a detached electrode or broken lead wire."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-024",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "The provider orders an IM injection of iron dextran, which can stain and irritate tissue. Which technique should the medical assistant use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intradermal injection at 10–15 degrees"
+      },
+      {
+        "id": "b",
+        "text": "Subcutaneous injection into the abdomen"
+      },
+      {
+        "id": "c",
+        "text": "IM deltoid injection, then massage the site"
+      },
+      {
+        "id": "d",
+        "text": "Z-track method into a large muscle"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Z-track method pulls the skin laterally before injecting into a large muscle such as the ventrogluteal and releases it after withdrawal, sealing the track so irritating or staining drugs like iron dextran cannot leak into subcutaneous tissue.",
+    "distractorExplanations": {
+      "a": "Intradermal injection places a tiny volume in the dermis for tests like a TST, not irritating IM drugs.",
+      "b": "Subcutaneous injection deposits the drug in fatty tissue, exactly where iron dextran would stain and irritate.",
+      "c": "Massaging the site pushes an irritating drug back up the needle track into subcutaneous tissue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-025",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "To instill ear drops in an adult, how should the medical assistant straighten the ear canal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pull the auricle up and back"
+      },
+      {
+        "id": "b",
+        "text": "Pull the auricle down and back"
+      },
+      {
+        "id": "c",
+        "text": "Pull the earlobe straight down"
+      },
+      {
+        "id": "d",
+        "text": "Push the tragus forward and in"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The adult ear canal curves upward, so pulling the auricle up and back straightens it for drops or irrigation. In young children (under about 3) the canal is shorter and angled differently, so the auricle is pulled down and back.",
+    "distractorExplanations": {
+      "b": "Down and back is the technique for infants and toddlers, whose ear canals angle differently.",
+      "c": "Pulling the earlobe straight down does not straighten the adult canal's upward curve.",
+      "d": "Pressing the tragus closes the canal opening and would block drops instead of straightening the canal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-026",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient arrives short of breath and needs an exam. Which position will make breathing easiest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trendelenburg"
+      },
+      {
+        "id": "b",
+        "text": "Prone"
+      },
+      {
+        "id": "c",
+        "text": "Lithotomy"
+      },
+      {
+        "id": "d",
+        "text": "High Fowler's"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In Fowler's or high Fowler's position the head of the table is raised 45–90 degrees, letting the diaphragm drop and the lungs expand more fully. It is the position of choice for patients with dyspnea or heart failure.",
+    "distractorExplanations": {
+      "a": "Trendelenburg tilts the head lower than the feet, pushing abdominal organs against the diaphragm and worsening dyspnea.",
+      "b": "Prone (face down) compresses the chest against the table and is hard to tolerate when breathless.",
+      "c": "Lithotomy (on the back, feet in stirrups) is for pelvic exams and does nothing to ease breathing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-027",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A child weighs 22 lb. The order is 10 mg/kg of a drug. What dose should be prepared?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 mg"
+      },
+      {
+        "id": "b",
+        "text": "100 mg"
+      },
+      {
+        "id": "c",
+        "text": "220 mg"
+      },
+      {
+        "id": "d",
+        "text": "484 mg"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Convert pounds to kilograms first: 22 lb ÷ 2.2 = 10 kg. Then multiply by the ordered dose: 10 kg × 10 mg/kg = 100 mg. Always convert to kilograms before calculating a weight-based dose.",
+    "distractorExplanations": {
+      "a": "10 mg is the per-kilogram amount only; it was never multiplied by the child's weight.",
+      "c": "220 mg multiplies 10 mg by 22 lb, skipping the pound-to-kilogram conversion.",
+      "d": "484 mg multiplies the weight by 2.2 instead of dividing, converting in the wrong direction."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-028",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "Which sterilization monitor confirms that an autoclave cycle actually killed highly resistant microorganisms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A biological indicator containing bacterial spores"
+      },
+      {
+        "id": "b",
+        "text": "Autoclave indicator tape on the outside of the pack"
+      },
+      {
+        "id": "c",
+        "text": "A chemical integrator strip inside the pack"
+      },
+      {
+        "id": "d",
+        "text": "The temperature and pressure gauges on the unit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biological indicators contain Geobacillus stearothermophilus spores; no growth after incubation shows the cycle killed the most resistant organisms. Tape, integrators and gauges show conditions were reached, not that spores died. CDC advises at least weekly spore testing.",
+    "distractorExplanations": {
+      "b": "Indicator tape only shows the pack was exposed to heat; it does not prove organisms were killed.",
+      "c": "Chemical integrators show time, temperature and steam were reached but do not test killing of live organisms.",
+      "d": "Gauges show machine conditions, not whether steam penetrated the pack and killed spores inside."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-029",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A routine urinalysis specimen cannot be tested within 2 hours of collection. What should the medical assistant do with it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave it at room temperature until the afternoon"
+      },
+      {
+        "id": "b",
+        "text": "Freeze it until the lab courier arrives"
+      },
+      {
+        "id": "c",
+        "text": "Keep it in a warm incubator at 37°C"
+      },
+      {
+        "id": "d",
+        "text": "Refrigerate it, then let it warm before testing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Urine left at room temperature beyond about 2 hours shows bacterial overgrowth, rising pH, breakdown of casts and cells, and falsely low glucose. Refrigerating at 2–8°C slows these changes; let the specimen return to room temperature before dipstick testing.",
+    "distractorExplanations": {
+      "a": "At room temperature bacteria multiply, pH rises and cells and casts break down, so results become unreliable.",
+      "b": "Freezing destroys cells and casts in the sediment, so it is not used for routine urinalysis.",
+      "c": "Warming to body temperature speeds bacterial growth and chemical breakdown, the opposite of preserving it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-clinical-030",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "How many electrodes are placed on the patient to record a standard 12-lead ECG?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 electrodes"
+      },
+      {
+        "id": "b",
+        "text": "5 electrodes"
+      },
+      {
+        "id": "c",
+        "text": "10 electrodes"
+      },
+      {
+        "id": "d",
+        "text": "12 electrodes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A 12-lead ECG uses 10 electrodes: 4 limb electrodes and 6 chest electrodes (V1–V6). The machine combines them into 12 views, or leads, of the heart's electrical activity.",
+    "distractorExplanations": {
+      "a": "Three electrodes are used for basic cardiac monitoring, which shows only a few views of the heart.",
+      "b": "Five electrodes are used for some telemetry monitors, not for a diagnostic 12-lead ECG.",
+      "d": "Twelve is the number of leads (views), not electrodes; the views are calculated from 10 electrodes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-016",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A clinic uses terminal-digit filing. Chart number 45-67-82 is filed first by which digits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "82, the last pair"
+      },
+      {
+        "id": "b",
+        "text": "45, the first pair"
+      },
+      {
+        "id": "c",
+        "text": "67, the middle pair"
+      },
+      {
+        "id": "d",
+        "text": "The full number read left to right"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In terminal-digit filing the last pair (82) is the primary unit that picks the section, then the middle pair (67), then the first pair (45). It spreads new charts evenly across the shelves instead of crowding the end.",
+    "distractorExplanations": {
+      "b": "The first pair is the tertiary unit in terminal-digit filing; it is used last, not first.",
+      "c": "The middle pair is the primary unit in middle-digit filing, a different numeric system.",
+      "d": "Reading the whole number left to right is straight (consecutive) numeric filing, not terminal-digit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-017",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient misses an appointment without calling to cancel. What should the medical assistant do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete the appointment from the schedule"
+      },
+      {
+        "id": "b",
+        "text": "Discharge the patient from the practice"
+      },
+      {
+        "id": "c",
+        "text": "Bill the patient's insurer for the missed visit"
+      },
+      {
+        "id": "d",
+        "text": "Document the no-show in the patient's record"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Missed appointments are documented in the medical record, and per policy the provider is told and the patient contacted to reschedule. The entry protects the practice if a missed follow-up later leads to harm.",
+    "distractorExplanations": {
+      "a": "Deleting the appointment erases evidence the patient was scheduled, which weakens the legal record.",
+      "b": "Discharging a patient after one missed visit is not standard and risks an abandonment claim without proper notice.",
+      "c": "Insurers do not pay for missed appointments; billing them for a visit that did not happen is fraud."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-018",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A child is covered under both parents' employer plans. The mother was born March 10, 1985 and the father January 22, 1988. Under the birthday rule, which plan is primary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The father's, as his birthday is first"
+      },
+      {
+        "id": "b",
+        "text": "The mother's plan, since she is older"
+      },
+      {
+        "id": "c",
+        "text": "Whichever plan has the lower deductible"
+      },
+      {
+        "id": "d",
+        "text": "Both plans equally, as co-primary payers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Under the birthday rule used by most commercial plans, the parent whose birthday (month and day) falls earlier in the calendar year holds the primary plan for dependent children; birth year does not matter. Custody orders after divorce can override it.",
+    "distractorExplanations": {
+      "b": "Age and birth year are ignored; only the month and day of the parents' birthdays are compared.",
+      "c": "Deductible size plays no role in the coordination-of-benefits order for dependent children.",
+      "d": "Coordination of benefits names one primary and one secondary payer; plans do not split costs equally."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-019",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "Which part of Original Medicare covers a beneficiary's outpatient physician office visits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Part A"
+      },
+      {
+        "id": "b",
+        "text": "Part B"
+      },
+      {
+        "id": "c",
+        "text": "Part C"
+      },
+      {
+        "id": "d",
+        "text": "Part D"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Medicare Part B (medical insurance) covers physician services, outpatient care, preventive services and durable medical equipment. Part A is hospital insurance, Part C is Medicare Advantage, and Part D covers prescription drugs.",
+    "distractorExplanations": {
+      "a": "Part A is hospital insurance covering inpatient stays, skilled nursing facility care and hospice.",
+      "c": "Part C is Medicare Advantage, a private-plan alternative to Original Medicare, not one of its parts.",
+      "d": "Part D covers outpatient prescription drugs through private drug plans, not office visits."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-020",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "Which claim form does a physician's office use to bill payers for professional services?",
+    "options": [
+      {
+        "id": "a",
+        "text": "UB-04 (CMS-1450)"
+      },
+      {
+        "id": "b",
+        "text": "ADA Dental Claim Form"
+      },
+      {
+        "id": "c",
+        "text": "Explanation of benefits"
+      },
+      {
+        "id": "d",
+        "text": "CMS-1500"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Physician practices bill professional services on the CMS-1500 paper form or its electronic equivalent, the 837P transaction. Hospitals and other facilities use the UB-04 (837I) for institutional charges.",
+    "distractorExplanations": {
+      "a": "The UB-04 is the institutional claim form used by hospitals and facilities, not physician offices.",
+      "b": "The ADA claim form is used by dental offices for dental procedures, not medical professional services.",
+      "c": "An explanation of benefits is sent by the payer after it processes a claim; it is not a claim form."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-021",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "An allowed charge is $200. The patient has $50 of the deductible left, then owes 20% coinsurance. How much does the patient owe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$40"
+      },
+      {
+        "id": "b",
+        "text": "$50"
+      },
+      {
+        "id": "c",
+        "text": "$80"
+      },
+      {
+        "id": "d",
+        "text": "$120"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The patient first pays the remaining $50 deductible, leaving $150. Coinsurance is 20% of $150 = $30. Total patient responsibility = $50 + $30 = $80; the plan pays the other $120.",
+    "distractorExplanations": {
+      "a": "$40 is 20% of the full $200, ignoring that the deductible is paid first.",
+      "b": "$50 covers only the remaining deductible and leaves out the 20% coinsurance on the rest.",
+      "d": "$120 is the plan's payment (80% of $150), not the patient's share."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-022",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A provider performs a significant, separately identifiable E/M service on the same day as a minor procedure. Which CPT modifier goes on the E/M code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "-25"
+      },
+      {
+        "id": "b",
+        "text": "-26"
+      },
+      {
+        "id": "c",
+        "text": "-50"
+      },
+      {
+        "id": "d",
+        "text": "-59"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 25 tells the payer the office visit went beyond the usual pre-procedure evaluation and is separately payable, as when a patient is seen for a new problem and also has a lesion removed. Documentation must support both services.",
+    "distractorExplanations": {
+      "b": "Modifier 26 bills only the professional component of a service, such as reading an X-ray.",
+      "c": "Modifier 50 identifies a bilateral procedure done on both sides of the body in one session.",
+      "d": "Modifier 59 marks a distinct procedural service, not a separate E/M visit on a procedure day."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-023",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "An in-network provider charges $180. The plan allows $120, pays $96, and assigns $24 coinsurance to the patient. What happens to the remaining $60?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a contractual write-off"
+      },
+      {
+        "id": "b",
+        "text": "It is billed to the patient as a balance due"
+      },
+      {
+        "id": "c",
+        "text": "It is resubmitted to the plan for payment"
+      },
+      {
+        "id": "d",
+        "text": "It is billed to the patient's secondary plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An in-network provider agrees to accept the allowed amount as payment in full. The $60 difference between the $180 charge and the $120 allowed amount is a contractual write-off; the patient owes only the $24 coinsurance.",
+    "distractorExplanations": {
+      "b": "Billing the patient for the difference is balance billing, which in-network contracts prohibit.",
+      "c": "The plan already paid its share of the allowed amount; resubmitting will not change the contracted rate.",
+      "d": "A secondary plan may cover the $24 coinsurance, but not the amount above the allowed charge."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-024",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "Before taking patient checks to the bank, the medical assistant stamps them 'For Deposit Only' with the practice's account number. What type of endorsement is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Blank endorsement"
+      },
+      {
+        "id": "b",
+        "text": "Special (full) endorsement"
+      },
+      {
+        "id": "c",
+        "text": "Qualified endorsement"
+      },
+      {
+        "id": "d",
+        "text": "Restrictive endorsement"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A restrictive endorsement such as 'For Deposit Only' limits what can be done with the check: it can only be deposited to the named account. Stamping checks as soon as they arrive protects the practice if they are lost or stolen.",
+    "distractorExplanations": {
+      "a": "A blank endorsement is just a signature, which makes the check payable to anyone who holds it.",
+      "b": "A special endorsement names a new payee ('Pay to the order of…'), transferring the check to that person.",
+      "c": "A qualified endorsement ('without recourse') limits the endorser's liability, not where the funds go."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-025",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "When restocking exam-room supplies that have expiration dates, how should the medical assistant rotate the stock?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Put new items behind older ones"
+      },
+      {
+        "id": "b",
+        "text": "Put new items in front so they are used first"
+      },
+      {
+        "id": "c",
+        "text": "Mix new and old items together in the same bin"
+      },
+      {
+        "id": "d",
+        "text": "Discard older items whenever new stock arrives"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "First in, first out (FIFO) rotation places new stock behind existing stock so items with the nearest expiration date are used first. This reduces waste and keeps expired supplies or medications from reaching patients.",
+    "distractorExplanations": {
+      "b": "Putting new stock in front leaves older items to expire at the back of the shelf, wasting supplies.",
+      "c": "Mixing stock makes expiration tracking impossible and lets expired items be used by mistake.",
+      "d": "Discarding unexpired supplies when new stock arrives wastes money; they should simply be used first."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-026",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "For an office visit, the provider documents 'cough and fever, rule out pneumonia.' What should be coded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pneumonia, as the suspected condition"
+      },
+      {
+        "id": "b",
+        "text": "Cough and fever, as documented"
+      },
+      {
+        "id": "c",
+        "text": "An unspecified respiratory infection"
+      },
+      {
+        "id": "d",
+        "text": "Pneumonia plus cough and fever together"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "ICD-10-CM outpatient guidelines say not to code diagnoses documented as 'rule out,' 'probable' or 'suspected.' Code to the highest certainty known at the visit, here the symptoms cough and fever. Inpatient coding rules differ.",
+    "distractorExplanations": {
+      "a": "Coding a suspected condition as confirmed in an outpatient setting misstates the record and can follow the patient.",
+      "c": "Choosing an unspecified infection invents a diagnosis the provider did not document.",
+      "d": "Adding pneumonia still codes an unconfirmed condition; symptoms are reported alone until it is confirmed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-027",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "Under the Fair Debt Collection Practices Act, during which hours may a collector generally call a debtor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 a.m. to 7 p.m."
+      },
+      {
+        "id": "b",
+        "text": "8 a.m. to 9 p.m."
+      },
+      {
+        "id": "c",
+        "text": "9 a.m. to 5 p.m."
+      },
+      {
+        "id": "d",
+        "text": "9 a.m. to 10 p.m."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The FDCPA bars collectors from calling before 8 a.m. or after 9 p.m. in the debtor's local time unless the debtor agrees. The law targets third-party collectors, but most medical offices follow the same hours for their own collection calls.",
+    "distractorExplanations": {
+      "a": "A 7 a.m. call falls before the 8 a.m. start the FDCPA allows without the debtor's consent.",
+      "c": "9 to 5 is ordinary business hours, but the law permits calls until 9 p.m., not just until 5 p.m.",
+      "d": "Calls up to 10 p.m. run past the 9 p.m. limit in the debtor's local time zone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-028",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "For CPT E/M coding, within what period must a patient have been seen by the same physician (or a same-specialty physician in the group) to count as established?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 year"
+      },
+      {
+        "id": "b",
+        "text": "2 years"
+      },
+      {
+        "id": "c",
+        "text": "3 years"
+      },
+      {
+        "id": "d",
+        "text": "5 years"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CPT defines an established patient as one who received professional services from the physician, or another physician of the exact same specialty in the same group, within the past 3 years. Beyond 3 years the visit is billed as new.",
+    "distractorExplanations": {
+      "a": "One year is too short; a patient last seen 18 months ago is still established under CPT.",
+      "b": "Two years understates the CPT window; established status lasts 3 years from the last professional service.",
+      "d": "Five years overstates it; after 3 years without a professional service the patient counts as new again."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-029",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient is eligible for both Medicare and Medicaid. Which payer should be billed first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicaid"
+      },
+      {
+        "id": "b",
+        "text": "Whichever plan paid the last claim"
+      },
+      {
+        "id": "c",
+        "text": "The patient, who then seeks reimbursement"
+      },
+      {
+        "id": "d",
+        "text": "Medicare"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Medicaid is the payer of last resort: it pays only after Medicare and any other coverage. For dual-eligible patients, bill Medicare first; Medicaid may then cover the remaining deductibles and coinsurance.",
+    "distractorExplanations": {
+      "a": "Medicaid is the payer of last resort and is billed only after Medicare processes the claim.",
+      "b": "Billing order is set by coordination-of-benefits rules, not by which plan paid the previous claim.",
+      "c": "Dual-eligible patients are protected from paying covered Medicare cost-sharing; the claim goes to Medicare."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-admin-030",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient hurt his back lifting boxes at work and is seen for the injury. Which payer should the office bill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The employer's workers' comp carrier"
+      },
+      {
+        "id": "b",
+        "text": "The patient's own health insurance plan"
+      },
+      {
+        "id": "c",
+        "text": "Medicare, if the patient is over 50"
+      },
+      {
+        "id": "d",
+        "text": "The patient directly, at the time of service"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Work-related injuries are billed to the employer's workers' compensation carrier using the claim number, and the records for the injury are kept with that claim. Health plans exclude injuries covered by workers' compensation.",
+    "distractorExplanations": {
+      "b": "Health plans exclude job-related injuries that workers' compensation covers, so the claim would be denied.",
+      "c": "Medicare eligibility starts at 65 (or with disability), and it is secondary to workers' compensation anyway.",
+      "d": "Workers' compensation covers the visit, and providers generally cannot bill the patient for an accepted work injury."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-016",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Which formed elements of the blood are primarily responsible for clotting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Erythrocytes"
+      },
+      {
+        "id": "b",
+        "text": "Thrombocytes"
+      },
+      {
+        "id": "c",
+        "text": "Leukocytes"
+      },
+      {
+        "id": "d",
+        "text": "Reticulocytes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Thrombocytes (platelets) are cell fragments that clump at a vessel injury to form a plug and start the clotting cascade. A low count, thrombocytopenia, causes easy bruising and bleeding.",
+    "distractorExplanations": {
+      "a": "Erythrocytes (red blood cells) carry oxygen on hemoglobin; they do not drive clot formation.",
+      "c": "Leukocytes (white blood cells) fight infection and are not the main cells of clotting.",
+      "d": "Reticulocytes are immature red blood cells, counted to judge marrow output, not clotting."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-017",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "A patient reports dysphagia after a stroke. What symptom is the patient describing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Difficulty speaking"
+      },
+      {
+        "id": "b",
+        "text": "Painful urination"
+      },
+      {
+        "id": "c",
+        "text": "Difficulty swallowing"
+      },
+      {
+        "id": "d",
+        "text": "Indigestion after meals"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Dys- means difficult or painful and -phagia means eating or swallowing, so dysphagia is difficulty swallowing, common after stroke and a choking risk. Dysphasia (with an s) is impaired speech or language.",
+    "distractorExplanations": {
+      "a": "Difficulty speaking is dysphasia (or aphasia), a near-identical spelling with a different meaning.",
+      "b": "Painful urination is dysuria, from ur/o meaning urine.",
+      "d": "Indigestion is dyspepsia, from -pepsia meaning digestion."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-018",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "A patient is diagnosed with nephrolithiasis. What condition does the patient have?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gallstones"
+      },
+      {
+        "id": "b",
+        "text": "Kidney inflammation"
+      },
+      {
+        "id": "c",
+        "text": "Bladder infection"
+      },
+      {
+        "id": "d",
+        "text": "Kidney stones"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Nephr/o means kidney and -lithiasis means the presence of stones (lith/o = stone), so nephrolithiasis is kidney stones. Stones in the gallbladder are cholelithiasis.",
+    "distractorExplanations": {
+      "a": "Gallstones are cholelithiasis; chol/e refers to bile, not the kidney.",
+      "b": "Kidney inflammation is nephritis (-itis), with no stones implied.",
+      "c": "A bladder infection is cystitis; cyst/o refers to the urinary bladder."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-019",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Which vessels carry oxygenated blood from the lungs back to the heart?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pulmonary veins"
+      },
+      {
+        "id": "b",
+        "text": "Pulmonary arteries"
+      },
+      {
+        "id": "c",
+        "text": "Superior vena cava"
+      },
+      {
+        "id": "d",
+        "text": "Coronary sinus"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The pulmonary veins are the only veins that carry oxygen-rich blood; they return it from the lungs to the left atrium. The pulmonary arteries are the only arteries carrying deoxygenated blood, from the right ventricle to the lungs.",
+    "distractorExplanations": {
+      "b": "The pulmonary arteries carry deoxygenated blood from the right ventricle to the lungs, not back.",
+      "c": "The superior vena cava returns deoxygenated blood from the upper body to the right atrium.",
+      "d": "The coronary sinus drains deoxygenated blood from the heart muscle itself into the right atrium."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-020",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Which gland secretes the hormone that raises blood calcium levels?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thyroid gland"
+      },
+      {
+        "id": "b",
+        "text": "Parathyroid glands"
+      },
+      {
+        "id": "c",
+        "text": "Adrenal medulla"
+      },
+      {
+        "id": "d",
+        "text": "Posterior pituitary"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Parathyroid hormone (PTH) raises blood calcium by releasing calcium from bone, increasing reabsorption in the kidneys and activating vitamin D. The thyroid's calcitonin has the opposite, smaller effect of lowering calcium.",
+    "distractorExplanations": {
+      "a": "The thyroid makes T3, T4 and calcitonin, which lowers calcium rather than raising it.",
+      "c": "The adrenal medulla releases epinephrine and norepinephrine for the fight-or-flight response.",
+      "d": "The posterior pituitary releases ADH and oxytocin, which regulate water balance and labor."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-021",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "The patella develops within the quadriceps tendon. Which bone classification does it belong to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long bone"
+      },
+      {
+        "id": "b",
+        "text": "Short bone"
+      },
+      {
+        "id": "c",
+        "text": "Sesamoid bone"
+      },
+      {
+        "id": "d",
+        "text": "Flat bone"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sesamoid bones form inside tendons; the patella, the largest sesamoid bone, sits in the quadriceps tendon and improves the leverage of the knee extensors. Long, short and flat bones are classified by shape instead.",
+    "distractorExplanations": {
+      "a": "Long bones such as the femur are longer than wide with a shaft; the patella is small and rounded.",
+      "b": "Short bones such as the carpals are cube-shaped bones of the wrist and ankle, not tendon bones.",
+      "d": "Flat bones such as the sternum and skull bones are thin plates that protect organs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-022",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "After a brain injury, a patient has trouble with balance and coordinated movement. Which brain region is most likely affected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medulla oblongata"
+      },
+      {
+        "id": "b",
+        "text": "Hypothalamus"
+      },
+      {
+        "id": "c",
+        "text": "Occipital lobe"
+      },
+      {
+        "id": "d",
+        "text": "Cerebellum"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The cerebellum coordinates voluntary movement, posture and balance. Damage causes ataxia: an unsteady, wide-based gait and clumsy, poorly coordinated movements, while strength may be normal.",
+    "distractorExplanations": {
+      "a": "The medulla oblongata controls vital functions such as breathing, heart rate and blood pressure.",
+      "b": "The hypothalamus regulates body temperature, hunger, thirst and pituitary hormone release.",
+      "c": "The occipital lobe processes vision; damage causes visual deficits rather than poor balance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-023",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "A patient is asked to lie flat on the back, face up, for an abdominal exam. What is this position called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Supine"
+      },
+      {
+        "id": "b",
+        "text": "Prone"
+      },
+      {
+        "id": "c",
+        "text": "Sims'"
+      },
+      {
+        "id": "d",
+        "text": "Lateral recumbent"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Supine means lying flat on the back, face up; with the knees bent and feet flat it becomes dorsal recumbent. It is used for abdominal, chest and extremity exams, and prone is its opposite, face down.",
+    "distractorExplanations": {
+      "b": "Prone means lying face down on the abdomen, the opposite of supine.",
+      "c": "Sims' position is on the left side with the right knee drawn up, used for rectal exams.",
+      "d": "Lateral recumbent means lying on one side, not flat on the back."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-024",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "A patient has tenderness over McBurney's point, suggesting appendicitis. In which abdominal quadrant is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Right upper quadrant"
+      },
+      {
+        "id": "b",
+        "text": "Right lower quadrant"
+      },
+      {
+        "id": "c",
+        "text": "Left upper quadrant"
+      },
+      {
+        "id": "d",
+        "text": "Left lower quadrant"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The appendix hangs from the cecum in the right lower quadrant; McBurney's point lies about one-third of the way from the right anterior superior iliac spine to the umbilicus. Appendicitis pain often starts near the navel and then moves there.",
+    "distractorExplanations": {
+      "a": "The right upper quadrant holds the liver and gallbladder, the usual site of gallbladder pain.",
+      "c": "The left upper quadrant contains the stomach and spleen, not the appendix.",
+      "d": "The left lower quadrant holds the sigmoid colon, the usual site of diverticulitis pain."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-025",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Which layer of the skin contains blood vessels, nerve endings, hair follicles, and sweat glands?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Epidermis"
+      },
+      {
+        "id": "b",
+        "text": "Subcutaneous layer"
+      },
+      {
+        "id": "c",
+        "text": "Dermis"
+      },
+      {
+        "id": "d",
+        "text": "Stratum corneum"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The dermis lies beneath the epidermis and holds blood vessels, nerves, hair follicles, and sweat and oil glands. The epidermis has no blood vessels, which is why a very superficial scrape does not bleed.",
+    "distractorExplanations": {
+      "a": "The epidermis is the outer, avascular layer of layered cells and contains no blood vessels.",
+      "b": "The subcutaneous layer (hypodermis) is mainly fat and loose connective tissue below the skin.",
+      "d": "The stratum corneum is the outermost sheet of dead, keratinized cells of the epidermis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-026",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Which description correctly fits cardiac muscle tissue?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Striated and voluntary"
+      },
+      {
+        "id": "b",
+        "text": "Nonstriated and involuntary"
+      },
+      {
+        "id": "c",
+        "text": "Nonstriated and voluntary"
+      },
+      {
+        "id": "d",
+        "text": "Striated and involuntary"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Cardiac muscle is striated like skeletal muscle but contracts involuntarily, and intercalated discs let impulses spread from cell to cell. Skeletal muscle is striated and voluntary; smooth muscle in organ walls is nonstriated and involuntary.",
+    "distractorExplanations": {
+      "a": "Striated and voluntary describes skeletal muscle, which is under conscious control.",
+      "b": "Nonstriated, involuntary muscle is smooth muscle found in the walls of organs and vessels.",
+      "c": "No muscle type is both smooth and voluntary; smooth muscle is not under conscious control."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-027",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "In which organ do T lymphocytes mature?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thymus"
+      },
+      {
+        "id": "b",
+        "text": "Red bone marrow"
+      },
+      {
+        "id": "c",
+        "text": "Spleen"
+      },
+      {
+        "id": "d",
+        "text": "Lymph nodes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "T cells are made in the red bone marrow but migrate to the thymus to mature (the 'T' stands for thymus); B cells mature in the marrow. The thymus is most active in childhood and shrinks after puberty.",
+    "distractorExplanations": {
+      "b": "Red bone marrow produces T-cell precursors and is where B cells mature, but T cells finish in the thymus.",
+      "c": "The spleen filters blood and removes old red cells; mature lymphocytes gather there after maturing.",
+      "d": "Lymph nodes filter lymph and host mature lymphocytes that respond to antigens; T cells do not mature there."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-028",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "A prescription reads '1 tab PO t.i.d.' How often should the patient take the tablet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Twice a day"
+      },
+      {
+        "id": "b",
+        "text": "Three times a day"
+      },
+      {
+        "id": "c",
+        "text": "Four times a day"
+      },
+      {
+        "id": "d",
+        "text": "Once every other day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "t.i.d. (ter in die) means three times a day; b.i.d. is twice a day and q.i.d. four times a day. PO means by mouth. Abbreviations such as q.d. and q.o.d. are on The Joint Commission's 'Do Not Use' list because they are misread.",
+    "distractorExplanations": {
+      "a": "Twice a day is b.i.d.; the 't' in t.i.d. stands for three (ter).",
+      "c": "Four times a day is q.i.d. (quater in die), which is easily confused with t.i.d.",
+      "d": "Every other day was written q.o.d., now on the 'Do Not Use' list because it is misread."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-029",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "What does the diaphragm do during quiet inhalation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Relaxes and moves upward"
+      },
+      {
+        "id": "b",
+        "text": "Contracts and moves upward"
+      },
+      {
+        "id": "c",
+        "text": "Contracts and moves downward"
+      },
+      {
+        "id": "d",
+        "text": "Relaxes and stays flat in place"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "During inhalation the diaphragm contracts and flattens (moves down), enlarging the chest cavity and lowering pressure so air flows in. During quiet exhalation it relaxes and domes upward, and air flows out passively.",
+    "distractorExplanations": {
+      "a": "Relaxing and rising is what happens in quiet exhalation, pushing air out of the lungs.",
+      "b": "Contraction flattens the dome downward; the diaphragm rises only when it relaxes.",
+      "d": "A relaxed diaphragm returns upward into its dome shape; it does not stay flat."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-anatomy-030",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "anatomy",
+    "prompt": "Urine flows from each kidney to the urinary bladder through which structure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Urethra"
+      },
+      {
+        "id": "b",
+        "text": "Renal artery"
+      },
+      {
+        "id": "c",
+        "text": "Collecting duct"
+      },
+      {
+        "id": "d",
+        "text": "Ureter"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Each kidney drains urine through its ureter, a muscular tube that pushes urine to the bladder by peristalsis. The single urethra then carries urine from the bladder out of the body.",
+    "distractorExplanations": {
+      "a": "The urethra carries urine from the bladder out of the body; it is the step after the bladder.",
+      "b": "The renal artery brings blood to the kidney for filtering; it carries no urine.",
+      "c": "Collecting ducts carry urine inside the kidney toward the renal pelvis, not to the bladder."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-016",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A patient asks for a copy of her medical records. Under the HIPAA Privacy Rule, how long does the practice generally have to act on the request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 days"
+      },
+      {
+        "id": "b",
+        "text": "30 days"
+      },
+      {
+        "id": "c",
+        "text": "60 days"
+      },
+      {
+        "id": "d",
+        "text": "90 days"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Covered entities must act on an access request within 30 calendar days, with one 30-day extension if they tell the patient the reason in writing. Only a reasonable, cost-based fee may be charged, and some state laws set shorter deadlines.",
+    "distractorExplanations": {
+      "a": "Ten days is shorter than the federal 30-day limit, although some state laws set faster deadlines.",
+      "c": "Sixty days is possible only by using the single 30-day extension with written notice, not as the default.",
+      "d": "Ninety days exceeds both the 30-day limit and the one extension the rule allows."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-017",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A laptop with unencrypted patient records is stolen. Under the HIPAA Breach Notification Rule, what is the outer deadline to notify affected individuals?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 calendar days after discovery"
+      },
+      {
+        "id": "b",
+        "text": "30 calendar days after discovery"
+      },
+      {
+        "id": "c",
+        "text": "60 calendar days after discovery"
+      },
+      {
+        "id": "d",
+        "text": "90 calendar days after discovery"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Covered entities must notify affected individuals without unreasonable delay and no later than 60 calendar days after discovering a breach of unsecured PHI. Breaches affecting 500 or more people also require notice to HHS and the media.",
+    "distractorExplanations": {
+      "a": "Ten days is not the federal limit; the rule sets an outer deadline of 60 days, though prompt notice is expected.",
+      "b": "Thirty days is the HIPAA records-access deadline, not the breach-notification deadline.",
+      "d": "Ninety days exceeds the 60-day outer limit for notifying affected individuals."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-018",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A billing clerk needs to fix a coding error on a claim. Under HIPAA's minimum necessary standard, what PHI should the clerk access?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Just the information needed to fix the claim"
+      },
+      {
+        "id": "b",
+        "text": "The patient's complete medical record"
+      },
+      {
+        "id": "c",
+        "text": "Any record the clerk's login can open"
+      },
+      {
+        "id": "d",
+        "text": "Nothing until the patient signs an authorization"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The minimum necessary standard limits uses and disclosures for payment and operations to the least PHI needed for the task. Role-based access lets billing staff see what supports the claim, not unrelated clinical notes; the standard does not apply to treatment disclosures.",
+    "distractorExplanations": {
+      "b": "Access to the full record goes beyond what billing needs and violates the minimum necessary standard.",
+      "c": "System access is not permission; HIPAA expects role-based limits, not whatever the login happens to allow.",
+      "d": "Payment activities are permitted without authorization; the clerk simply limits access to what is needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-019",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "The office receives a subpoena duces tecum in a lawsuit. What does this document require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testifying in person without any documents"
+      },
+      {
+        "id": "b",
+        "text": "Producing specified records or documents"
+      },
+      {
+        "id": "c",
+        "text": "Paying a court-ordered judgment"
+      },
+      {
+        "id": "d",
+        "text": "Ending care for the patient involved"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A subpoena duces tecum ('bring with you under penalty') orders the production of specified records or documents. The practice should verify it, involve the custodian of records or legal counsel, and release only what is described, following HIPAA and state rules.",
+    "distractorExplanations": {
+      "a": "A subpoena requiring testimony only is a subpoena ad testificandum, not a duces tecum.",
+      "c": "A judgment orders payment after a case is decided; a subpoena gathers evidence while it is pending.",
+      "d": "A subpoena has nothing to do with the treatment relationship and does not end care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-020",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A surgical sponge is found in a patient's abdomen after an operation. Which legal doctrine lets the patient argue negligence without expert testimony?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respondeat superior"
+      },
+      {
+        "id": "b",
+        "text": "Locum tenens"
+      },
+      {
+        "id": "c",
+        "text": "Res ipsa loquitur"
+      },
+      {
+        "id": "d",
+        "text": "Res judicata"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Res ipsa loquitur ('the thing speaks for itself') applies when an injury would not normally occur without negligence and the defendant controlled the cause, as with a retained sponge. The burden shifts to the defense to show it was not negligent.",
+    "distractorExplanations": {
+      "a": "Respondeat superior makes an employer liable for employees' acts within their job; it does not prove negligence.",
+      "b": "Locum tenens refers to a physician temporarily filling in for another, not a liability doctrine.",
+      "d": "Res judicata bars relitigating a case a court has already decided, not proving negligence."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-021",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A physician decides to stop treating a patient who repeatedly refuses care. How should the office end the relationship to avoid a claim of abandonment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cancel future appointments without notifying the patient"
+      },
+      {
+        "id": "b",
+        "text": "Tell the patient verbally at the front desk"
+      },
+      {
+        "id": "c",
+        "text": "Stop returning the patient's calls and refill requests"
+      },
+      {
+        "id": "d",
+        "text": "Send a written notice with time to find a new provider"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Withdrawal should be in writing, often by certified mail with return receipt, give a reasonable transition period (commonly about 30 days, per state rules) of urgent care, and offer to transfer records. Ending care without notice is abandonment.",
+    "distractorExplanations": {
+      "a": "Canceling without notice leaves the patient without care and is the classic example of abandonment.",
+      "b": "A verbal notice at the desk leaves no proof and no reasonable transition period.",
+      "c": "Ignoring calls and refills ends care without notice and can harm the patient, which is abandonment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-022",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A medical assistant gives a patient the wrong vaccine. The error is caught, and the patient suffers no harm. Which element of negligence is missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Damages"
+      },
+      {
+        "id": "b",
+        "text": "Duty"
+      },
+      {
+        "id": "c",
+        "text": "Dereliction (breach)"
+      },
+      {
+        "id": "d",
+        "text": "Direct cause"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Negligence requires all four Ds: duty, dereliction (breach of the standard of care), direct cause and damages. The MA had a duty and breached it, but with no injury there are no damages, so a malpractice claim fails. The error is still reported as an incident.",
+    "distractorExplanations": {
+      "b": "A duty existed because the MA was caring for the patient in the course of her job.",
+      "c": "Giving the wrong vaccine is a breach of the standard of care, so dereliction is present.",
+      "d": "Direct cause links a breach to an injury; the element absent here is the injury itself, which comes first."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-023",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "Which diagnosis must the practice report to the public health department in every U.S. state?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Common cold"
+      },
+      {
+        "id": "b",
+        "text": "Measles"
+      },
+      {
+        "id": "c",
+        "text": "Seasonal allergies"
+      },
+      {
+        "id": "d",
+        "text": "Uncomplicated ear infection"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Measles is a nationally notifiable disease that providers must report promptly, usually immediately by phone, to the local or state health department so contacts can be traced. Each state sets its own reportable list, but measles is on all of them.",
+    "distractorExplanations": {
+      "a": "The common cold is not a reportable disease; it is too common and mild to track case by case.",
+      "c": "Seasonal allergies are not infectious and are not reported to public health departments.",
+      "d": "Uncomplicated ear infections are common, not contagious between people, and not reportable conditions."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-024",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "Under the Patient Self-Determination Act, what must Medicare- and Medicaid-participating facilities such as hospitals do at admission?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require every adult patient to sign a living will"
+      },
+      {
+        "id": "b",
+        "text": "Assign a health care proxy to each patient"
+      },
+      {
+        "id": "c",
+        "text": "Tell adults of their right to advance directives"
+      },
+      {
+        "id": "d",
+        "text": "Obtain a DNR order for patients over 65"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The PSDA (1990) requires hospitals, nursing homes, home health agencies and hospices that take Medicare or Medicaid to give adult patients written information about their right to accept or refuse treatment and make advance directives. Having one stays voluntary.",
+    "distractorExplanations": {
+      "a": "The law requires informing patients, not making them sign a living will; having one is voluntary.",
+      "b": "Patients choose their own health care proxy; facilities cannot assign one to them.",
+      "d": "DNR orders are individual decisions made with the provider, not a requirement based on age."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-025",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "Which federal law bars health insurers and employers from using a person's genetic test results to deny coverage or make hiring decisions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Americans with Disabilities Act (ADA)"
+      },
+      {
+        "id": "b",
+        "text": "HITECH Act"
+      },
+      {
+        "id": "c",
+        "text": "Emergency Medical Treatment and Labor Act (EMTALA)"
+      },
+      {
+        "id": "d",
+        "text": "Genetic Information Nondiscrimination Act (GINA)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "GINA (2008) prohibits health insurers and employers with 15 or more employees from using genetic information, including family history, in coverage or employment decisions. It does not cover life, disability or long-term-care insurance.",
+    "distractorExplanations": {
+      "a": "The ADA protects people with disabilities; it does not specifically address genetic test results.",
+      "b": "HITECH strengthened HIPAA enforcement and promoted EHR adoption; it does not ban genetic discrimination.",
+      "c": "EMTALA requires emergency departments to screen and stabilize patients regardless of ability to pay."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-026",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A deaf patient who uses American Sign Language requests an interpreter for a visit to discuss surgery. What does the ADA require of the practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide a qualified interpreter at no cost to her"
+      },
+      {
+        "id": "b",
+        "text": "Have the patient bring a family member to interpret"
+      },
+      {
+        "id": "c",
+        "text": "Bill the patient for the interpreter's fee"
+      },
+      {
+        "id": "d",
+        "text": "Communicate by written notes in every case"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Under the ADA, medical offices must provide auxiliary aids such as qualified sign language interpreters when needed for effective communication, at no cost to the patient. Written notes may work for simple exchanges but not for a complex discussion like surgical consent.",
+    "distractorExplanations": {
+      "b": "Relying on family members risks errors and breaches privacy; the ADA limits it to emergencies or the patient's own request.",
+      "c": "The ADA prohibits charging the patient for auxiliary aids; the cost is the practice's to bear.",
+      "d": "Written notes can be enough for simple exchanges but not for complex information like surgical risks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-027",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A physician refers Medicare patients for lab tests to a lab he partly owns. Which federal law specifically restricts this kind of self-referral?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anti-Kickback Statute"
+      },
+      {
+        "id": "b",
+        "text": "Stark Law"
+      },
+      {
+        "id": "c",
+        "text": "HIPAA Privacy Rule"
+      },
+      {
+        "id": "d",
+        "text": "Clinical Laboratory Improvement Amendments"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The Stark Law (physician self-referral law) bars physicians from referring Medicare or Medicaid patients for designated health services, such as lab tests, to entities in which they or family members have a financial interest unless an exception applies. It is strict liability.",
+    "distractorExplanations": {
+      "a": "The Anti-Kickback Statute targets paying or receiving anything of value for referrals and requires intent.",
+      "c": "The Privacy Rule governs PHI use and disclosure, not the financial relationships behind referrals.",
+      "d": "CLIA sets quality standards for laboratory testing, not rules on who may refer patients to a lab."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-028",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A coder routinely bills higher-level office visits than the documentation supports on Medicare claims. Which federal law creates liability for these false claims?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fair Debt Collection Practices Act"
+      },
+      {
+        "id": "b",
+        "text": "Occupational Safety and Health Act"
+      },
+      {
+        "id": "c",
+        "text": "False Claims Act"
+      },
+      {
+        "id": "d",
+        "text": "Controlled Substances Act"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Upcoding bills for more than was documented or performed. The False Claims Act imposes per-claim penalties and treble damages for knowingly submitting false claims to federal programs, and lets whistleblowers (qui tam relators) sue.",
+    "distractorExplanations": {
+      "a": "The FDCPA regulates how consumer debts are collected, not billing accuracy toward government payers.",
+      "b": "The OSH Act covers workplace safety; it has nothing to do with the accuracy of claims.",
+      "d": "The Controlled Substances Act regulates scheduled drugs, not E/M coding levels."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-029",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A patient's adult son calls asking for his mother's biopsy results. She has not listed him as someone who may receive information. What should the medical assistant do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the results because he is next of kin"
+      },
+      {
+        "id": "b",
+        "text": "Share the results if he confirms her date of birth"
+      },
+      {
+        "id": "c",
+        "text": "Read the results but leave out the diagnosis"
+      },
+      {
+        "id": "d",
+        "text": "Decline and offer to have his mother call him"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Without the patient's agreement or a listed contact, and outside an emergency, PHI should not be disclosed to family. Politely decline, take a message, and let the patient decide what to share; knowing her date of birth proves nothing about his authority.",
+    "distractorExplanations": {
+      "a": "Being next of kin does not create a right to a competent adult's PHI without her agreement.",
+      "b": "Knowing a date of birth verifies identity details, not permission; anyone can learn a birth date.",
+      "c": "Partial results are still PHI; leaving out the diagnosis does not make the disclosure permitted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "amt-rma-readiness-check-law-ethics-030",
+    "examSlug": "amt-rma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A practice orders a Schedule II drug on paper from its supplier. Which DEA form is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "DEA Form 41"
+      },
+      {
+        "id": "b",
+        "text": "DEA Form 106"
+      },
+      {
+        "id": "c",
+        "text": "DEA Form 222"
+      },
+      {
+        "id": "d",
+        "text": "DEA Form 224"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Schedule I and II controlled substances are ordered with DEA Form 222 or its electronic equivalent, CSOS. Form 224 is the practitioner registration application, Form 106 reports theft or significant loss, and Form 41 documents destruction.",
+    "distractorExplanations": {
+      "a": "Form 41 records the destruction of controlled substances, not ordering them.",
+      "b": "Form 106 reports theft or significant loss of controlled substances to the DEA.",
+      "d": "Form 224 is the application to register a practitioner with the DEA, which comes before any ordering."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
   }
 ]

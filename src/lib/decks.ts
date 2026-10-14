@@ -3195,21 +3195,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "An agile team has 240 story points left in the release backlog. Its velocity over the last six two-week sprints averaged 30 points, ranging from 25 to 35. How should the project manager forecast the release date for stakeholders?",
+        question: "A high-performing team member has been consistently missing sprint commitments due to taking on additional work outside the project scope. When approached, they explain they want to help other teams succeed. How should the project manager respond?",
         answer:
-          "Correct: (c) Give a range of about 7 to 10 sprints (14 to 20 weeks) and update it as sprints complete Dividing the remaining points by the velocity range gives a forecast range: 240 / 35 is about 7 sprints and 240 / 25 is about 10. Communicating a range and updating it each sprint is honest and useful.",
+          "Correct: (c) Acknowledge their helpfulness while redirecting focus to sprint commitments and discuss workload management This approach recognizes the positive intent while addressing the performance issue. It opens dialogue about priorities and workload management, helping the team member understand the impact on sprint goals while maintaining their engagement.",
         imageUrl: "/samples/pmp-anki-deck-sample-1.webp",
       },
       {
-        question: "A project manager notices that during retrospectives, the same few team members always speak while others remain silent. When asked directly, the quiet members say everything is fine, but body language suggests otherwise. What facilitation technique should the project manager implement?",
+        question: "During a construction project, the project manager notices that quality inspections are happening too late in the process, resulting in costly rework when defects are discovered. The current process requires inspections only at major milestones. What quality management process improvement should be implemented?",
         answer:
-          "Correct: (b) Use anonymous feedback collection methods like sticky notes or digital tools Anonymous feedback collection removes the social pressure that may prevent quieter team members from sharing their thoughts, allowing for more honest and complete input from all participants.",
+          "Correct: (c) Add quality gates with inspections at multiple stages of construction Implementing quality gates at multiple stages allows for earlier detection of defects, reducing the cost and impact of rework. This follows the principle that the cost of quality increases significantly when defects are found later in the process.",
         imageUrl: "/samples/pmp-anki-deck-sample-2.webp",
       },
       {
-        question: "During project execution, a critical vendor informs the project manager that they cannot deliver a key component by the planned date due to supply chain issues. This will impact the project's critical path. Which process should the project manager execute first?",
+        question: "During a retrospective, a team member consistently dominates the discussion and interrupts others when they try to share feedback. The project manager wants to ensure all voices are heard. Which facilitation technique would be most effective?",
         answer:
-          "Correct: (c) Perform integrated change control to evaluate options and impacts When a change occurs that impacts the project's critical path, the project manager should first execute integrated change control to evaluate all options, assess impacts, and determine the best course of action before making decisions or updates.",
+          "Correct: (b) Use a round-robin approach where each person speaks in turn without interruption Round-robin facilitation ensures equal speaking opportunities and prevents interruptions by establishing clear turn-taking rules. This structured approach helps introverted team members participate while managing dominant personalities constructively.",
         imageUrl: "/samples/pmp-anki-deck-sample-3.webp",
       },
     ],
@@ -3559,21 +3559,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "When a fire wall separates two portions of a building, structural design often requires?",
+        question: "A fire in an upholstered chair smolders for an hour, producing visible gray smoke before any flame appears. Which detector technology is generally best suited to this fire?",
         answer:
-          "Correct: (b) Independent structural framing on each side so collapse on one side does not pull down the other Structural independence is a defining fire wall feature — butt joints, double walls, or protected structural members achieve this.",
+          "Correct: (a) Photoelectric smoke detection Photoelectric detectors sense light scattered or obscured by larger, visible smoke particles, which is what smoldering upholstery produces. Ionization detectors favour small particles from fast flaming fires, and heat or flame detectors wait for flaming combustion.",
         imageUrl: "/samples/cfps-anki-deck-sample-1.webp",
       },
       {
-        question: "Illumination levels for emergency lighting on the walking surface of egress paths are typically required to be at least",
+        question: "Under NFPA 72, a spot-type heat detector with a 30 ft listed spacing is installed on a smooth 17 ft ceiling. At about what spacing should it be installed?",
         answer:
-          "Correct: (a) 1 foot-candle (10.8 lux) measured at the floor NFPA 101 requires minimum 1 fc at the walking surface along egress routes during emergency mode.",
+          "Correct: (c) 0.7 times the 30 ft listed spacing, or about 21 ft between detectors NFPA 72 Table 17.6.3.5.1 reduces the listed spacing of spot-type heat detectors on ceilings above 10 ft and up to 30 ft, because the hot ceiling jet cools and dilutes with height. A ceiling above 16 ft and up to 18 ft uses a 0.71 multiplier, so a 30 ft listed detector is spaced at about 21 ft.",
         imageUrl: "/samples/cfps-anki-deck-sample-2.webp",
       },
       {
-        question: "CFAST (Consolidated Model of Fire and Smoke Transport) is primarily classified as:",
+        question: "Under NFPA 652, what must the owner of an existing facility that handles combustible dust complete to identify fire, flash fire, and explosion hazards and the safeguards needed?",
         answer:
-          "Correct: (a) A two-zone compartment fire model used for rapid scenario analysis CFAST couples zone model compartments with vent flow, plume correlations, and target heating for engineering-level predictions.",
+          "Correct: (d) A dust hazard analysis (DHA) of each process handling combustible dust NFPA 652 requires a dust hazard analysis (DHA): a systematic review of each process and building area to identify where fire, flash fire, and explosion hazards exist and which prevention and mitigation measures are needed. Test data and housekeeping limits feed into the DHA.",
         imageUrl: "/samples/cfps-anki-deck-sample-3.webp",
       },
     ],
@@ -3581,7 +3581,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CFPS practice test?",
         answer:
-          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/cfps-readiness-check.",
+          "Yes. Take the free 80-question readiness check at uniprep2go.study/mock-exams/cfps-readiness-check.",
       },
       {
         question: "Does this replace NFPA's official CFPS practice examination?",
@@ -3637,21 +3637,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A warehouse operative reports lower back pain after repeated lifting of 20 kg sacks from floor level. Which initial control is most aligned with the hierarchy of control?",
+        question: "A supervisor proposes lifting two workers to a high shelf in a pallet cage chained to the forks of a standard forklift. How should this proposal be viewed?",
         answer:
-          "Correct: (a) Provide a mechanical lift or raise the load source to waist height to reduce bending and manual exertion Engineering and task redesign that reduce bending and load handling at floor level address the musculoskeletal hazard at source.",
+          "Correct: (d) Generally prohibited or highly restricted because it is not designed for personnel lift Forklifts are primarily for materials; personnel elevation needs designed work platforms and risk assessment. A proper MEWP or integrated work platform should be used instead.",
         imageUrl: "/samples/nebosh-anki-deck-sample-1.webp",
       },
       {
-        question: "A principal contractor selects subcontractors for façade work at height. Which action best meets NEBOSH expectations for contractor management?",
+        question: "A press already has guards and interlocks. A light curtain would cost a modest amount and noticeably cut the remaining risk. Under the ALARP principle, what should happen?",
         answer:
-          "Correct: (a) Pre-qualify competence, define H&S requirements in contract, monitor site performance, and coordinate shared risks Contractor management includes selection, induction, contractual H&S clauses, monitoring, and coordination of overlapping activities and shared site risks.",
+          "Correct: (d) Fit the light curtain, because its cost is not grossly disproportionate to the benefit ALARP (as low as reasonably practicable) means a further control must be adopted unless its cost, time and effort are grossly disproportionate to the risk reduction it gives. A modest cost for a noticeable reduction is not disproportionate, so the light curtain should be fitted.",
         imageUrl: "/samples/nebosh-anki-deck-sample-2.webp",
       },
       {
-        question: "Static electricity ignition in a solvent filling area is controlled by:",
+        question: "A roofing subcontractor offers to sign a disclaimer accepting all risk so his team can start work on a fragile roof that has no edge protection. How should the principal contractor respond?",
         answer:
-          "Correct: (c) Bonding and earthing, conductive footwear/floors, humidity control, and exclusion of ignition sources Bonding/earthing prevents static buildup discharges in flammable atmospheres.",
+          "Correct: (a) Refuse, because legal duties cannot be signed away; work waits until fall controls are in place Health and safety duties are imposed by law and cannot be waived or transferred by contract or disclaimer; the principal contractor keeps its duty to plan and coordinate safe work. A fragile roof with no edge protection needs avoidance or collective controls (covers, staging, guardrails, nets) before anyone goes on it.",
         imageUrl: "/samples/nebosh-anki-deck-sample-3.webp",
       },
     ],
@@ -3702,21 +3702,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "Hot aisle containment primarily improves",
+        question: "A chiller plant needs three chillers to meet the design load and has four installed (N+1). While one chiller is out for planned maintenance, what is the plant's redundancy position?",
         answer:
-          "Correct: (a) Return air temperature to cooling units, raising delta-T and efficiency Hot aisle containment effectively isolates the hot exhaust air from IT equipment, preventing it from mixing with the cold supply air. This isolation ensures that the cooling units receive a higher, more consistent return air temperature, which increases the temperature differential (delta-T) across the cooling coil and improves the efficiency of the cooling system.",
+          "Correct: (d) It runs at N with no spare, so another failure would cut capacity With N = 3 and four installed, taking one chiller out for maintenance leaves exactly N. The plant still meets the design load but has no redundancy, so a second chiller failure during the work would drop capacity below demand. This is why maintenance windows on N+1 plants are kept short and risk-assessed.",
         imageUrl: "/samples/cdcp-anki-deck-sample-1.webp",
       },
       {
-        question: "EN 50600 classifies availability using Availability Classes. Class 3 MOST closely aligns with:",
+        question: "A new 40G link over a pre-terminated MPO trunk shows normal light levels on a power meter at each end, yet the transceivers never establish link. Which cause should the technician check first?",
         answer:
-          "Correct: (c) Concurrently maintainable infrastructure with redundant paths EN 50600 Availability Class 3 specifies a data center infrastructure that is concurrently maintainable, featuring redundant components and multiple independent distribution paths for power and cooling. This allows for planned maintenance activities without requiring a shutdown of IT operations.",
+          "Correct: (d) A polarity mismatch so transmit fibers do not land on receive fibers Parallel optics need each transmit lane to arrive at the matching receive lane. TIA-568 defines MPO polarity methods (A, B, C); mixing trunks, cassettes or patch cords built to different methods sends light to the wrong fiber position. Light is present and loss is normal, yet the transceivers never see a signal on their receive lanes, so polarity is the first thing to check.",
         imageUrl: "/samples/cdcp-anki-deck-sample-2.webp",
       },
       {
-        question: "Dual-corded servers connected to A and B PDUs",
+        question: "An infrared thermography survey shows one breaker terminal in a PDU running about 25 °C hotter than identical terminals carrying similar load. What is the best next step?",
         answer:
-          "Correct: (c) Allow maintenance on one power path while the other feeds the load Dual-corded servers connected to independent A and B PDUs are a fundamental design for redundancy in data centers. This configuration allows for concurrent maintenance on one power path without interrupting the server's operation, as the other path continues to feed the load, ensuring high availability and failover capability.",
+          "Correct: (c) Plan an isolated inspection and repair of the connection under an approved MOP Infrared thermography is predictive maintenance: a large temperature rise on one connection compared with identical connections under similar load points to high resistance from a loose or corroded joint. Common guidance (e.g. NETA) treats a rise above about 15 °C between similar components as a major deficiency needing prompt repair, done with the load moved to the alternate path, isolation and a MOP.",
         imageUrl: "/samples/cdcp-anki-deck-sample-3.webp",
       },
     ],
