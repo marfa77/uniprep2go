@@ -54,6 +54,11 @@ export function filePart(buffer: Buffer, mime: string): Part {
 
 const MAX_STEPS = 14;
 
+/** Gemini 3 Flash takes a thinking level (rejects "minimal"); Pro keeps its default, Lite does not think unless asked. */
+function thinking(model: string): Record<string, unknown> {
+  return /^gemini-3/.test(model) && !/lite|pro/.test(model) ? { thinkingConfig: { thinkingLevel: "medium" } } : {};
+}
+
 export async function agent(opts: {
   system: string;
   history: Content[];
@@ -74,7 +79,7 @@ export async function agent(opts: {
           includeServerSideToolInvocations: true,
           functionCallingConfig: { mode: last ? "NONE" : "AUTO" },
         },
-        generationConfig: { temperature: 0.3 },
+        generationConfig: { temperature: 0.3, ...thinking(opts.model || ADMIN_BOT_MODEL) },
       },
       opts.model || ADMIN_BOT_MODEL
     );
