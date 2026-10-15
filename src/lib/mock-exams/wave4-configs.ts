@@ -21,7 +21,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "al-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Alabama Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Alabama Real Estate readiness check with topic scoring.",
+    description: "60-question Alabama Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Alabama Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Alabama real estate", "AL RE", "Alabama real estate exam"],
@@ -40,7 +40,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ak-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Alaska Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Alaska Real Estate readiness check with topic scoring.",
+    description: "60-question Alaska Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Alaska Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Alaska real estate", "AK RE", "Alaska real estate exam"],
@@ -59,7 +59,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ar-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Arkansas Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Arkansas Real Estate readiness check with topic scoring.",
+    description: "60-question Arkansas Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Arkansas Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Arkansas real estate", "AR RE", "Arkansas real estate exam"],
@@ -78,7 +78,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ct-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Connecticut Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Connecticut Real Estate readiness check with topic scoring.",
+    description: "60-question Connecticut Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Connecticut Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Connecticut real estate", "CT RE", "Connecticut real estate exam"],
@@ -97,7 +97,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "de-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Delaware Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Delaware Real Estate readiness check with topic scoring.",
+    description: "60-question Delaware Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Delaware Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Delaware real estate", "DE RE", "Delaware real estate exam"],
@@ -116,7 +116,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "hi-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Hawaii Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Hawaii Real Estate readiness check with topic scoring.",
+    description: "60-question Hawaii Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Hawaii Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Hawaii real estate", "HI RE", "Hawaii real estate exam"],
@@ -135,7 +135,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "id-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Idaho Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Idaho Real Estate readiness check with topic scoring.",
+    description: "60-question Idaho Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Idaho Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Idaho real estate", "ID RE", "Idaho real estate exam"],
@@ -154,7 +154,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "in-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Indiana Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Indiana Real Estate readiness check with topic scoring.",
+    description: "60-question Indiana Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Indiana Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Indiana real estate", "IN RE", "Indiana real estate exam"],
@@ -173,7 +173,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ia-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Iowa Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Iowa Real Estate readiness check with topic scoring.",
+    description: "60-question Iowa Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Iowa Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Iowa real estate", "IA RE", "Iowa real estate exam"],
@@ -192,7 +192,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ks-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Kansas Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Kansas Real Estate readiness check with topic scoring.",
+    description: "60-question Kansas Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Kansas Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Kansas real estate", "KS RE", "Kansas real estate exam"],
@@ -211,7 +211,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ky-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Kentucky Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Kentucky Real Estate readiness check with topic scoring.",
+    description: "60-question Kentucky Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Kentucky Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Kentucky real estate", "KY RE", "Kentucky real estate exam"],
@@ -230,7 +230,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "la-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Louisiana Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Louisiana Real Estate readiness check with topic scoring.",
+    description: "60-question Louisiana Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Louisiana Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Louisiana real estate", "LA RE", "Louisiana real estate exam"],
@@ -249,7 +249,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "me-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Maine Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Maine Real Estate readiness check with topic scoring.",
+    description: "60-question Maine Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Maine Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Maine real estate", "ME RE", "Maine real estate exam"],
@@ -268,7 +268,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "md-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Maryland Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Maryland Real Estate readiness check with topic scoring.",
+    description: "60-question Maryland Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Maryland Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Maryland real estate", "MD RE", "Maryland real estate exam"],
@@ -287,7 +287,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mn-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Minnesota Commerce Department themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Minnesota Real Estate readiness check with topic scoring.",
+    description: "60-question Minnesota Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Minnesota Commerce Department",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Minnesota real estate", "MN RE", "Minnesota real estate exam"],
@@ -306,7 +306,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ms-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Mississippi Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Mississippi Real Estate readiness check with topic scoring.",
+    description: "60-question Mississippi Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Mississippi Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Mississippi real estate", "MS RE", "Mississippi real estate exam"],
@@ -325,7 +325,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mo-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Missouri Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Missouri Real Estate readiness check with topic scoring.",
+    description: "60-question Missouri Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Missouri Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Missouri real estate", "MO RE", "Missouri real estate exam"],
@@ -344,7 +344,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "mt-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Montana Board of Realty Regulation themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Montana Real Estate readiness check with topic scoring.",
+    description: "60-question Montana Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Montana Board of Realty Regulation",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Montana real estate", "MT RE", "Montana real estate exam"],
@@ -363,7 +363,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ne-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Nebraska Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Nebraska Real Estate readiness check with topic scoring.",
+    description: "60-question Nebraska Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Nebraska Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Nebraska real estate", "NE RE", "Nebraska real estate exam"],
@@ -382,7 +382,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nv-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Nevada Real Estate Division themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Nevada Real Estate readiness check with topic scoring.",
+    description: "60-question Nevada Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Nevada Real Estate Division",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Nevada real estate", "NV RE", "Nevada real estate exam"],
@@ -401,7 +401,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nh-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to New Hampshire Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question New Hampshire Real Estate readiness check with topic scoring.",
+    description: "60-question New Hampshire Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "New Hampshire Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["New Hampshire real estate", "NH RE", "New Hampshire real estate exam"],
@@ -420,7 +420,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nm-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to New Mexico Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question New Mexico Real Estate readiness check with topic scoring.",
+    description: "60-question New Mexico Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "New Mexico Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["New Mexico real estate", "NM RE", "New Mexico real estate exam"],
@@ -439,7 +439,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "nd-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to North Dakota Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question North Dakota Real Estate readiness check with topic scoring.",
+    description: "60-question North Dakota Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "North Dakota Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["North Dakota real estate", "ND RE", "North Dakota real estate exam"],
@@ -458,7 +458,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ok-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Oklahoma Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Oklahoma Real Estate readiness check with topic scoring.",
+    description: "60-question Oklahoma Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Oklahoma Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Oklahoma real estate", "OK RE", "Oklahoma real estate exam"],
@@ -477,7 +477,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "or-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Oregon Real Estate Agency themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Oregon Real Estate readiness check with topic scoring.",
+    description: "60-question Oregon Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Oregon Real Estate Agency",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Oregon real estate", "OR RE", "Oregon real estate exam"],
@@ -496,7 +496,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ri-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Rhode Island Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Rhode Island Real Estate readiness check with topic scoring.",
+    description: "60-question Rhode Island Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Rhode Island Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Rhode Island real estate", "RI RE", "Rhode Island real estate exam"],
@@ -515,7 +515,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "sc-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to South Carolina Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question South Carolina Real Estate readiness check with topic scoring.",
+    description: "60-question South Carolina Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "South Carolina Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["South Carolina real estate", "SC RE", "South Carolina real estate exam"],
@@ -534,7 +534,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "sd-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to South Dakota Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question South Dakota Real Estate readiness check with topic scoring.",
+    description: "60-question South Dakota Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "South Dakota Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["South Dakota real estate", "SD RE", "South Dakota real estate exam"],
@@ -553,7 +553,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "tn-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Tennessee Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Tennessee Real Estate readiness check with topic scoring.",
+    description: "60-question Tennessee Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Tennessee Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Tennessee real estate", "TN RE", "Tennessee real estate exam"],
@@ -572,7 +572,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ut-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Utah Division of Real Estate themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Utah Real Estate readiness check with topic scoring.",
+    description: "60-question Utah Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Utah Division of Real Estate",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Utah real estate", "UT RE", "Utah real estate exam"],
@@ -591,7 +591,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "vt-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Vermont Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Vermont Real Estate readiness check with topic scoring.",
+    description: "60-question Vermont Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Vermont Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Vermont real estate", "VT RE", "Vermont real estate exam"],
@@ -610,7 +610,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wv-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to West Virginia Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question West Virginia Real Estate readiness check with topic scoring.",
+    description: "60-question West Virginia Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "West Virginia Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["West Virginia real estate", "WV RE", "West Virginia real estate exam"],
@@ -629,7 +629,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wi-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Wisconsin Real Estate Examining Board themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Wisconsin Real Estate readiness check with topic scoring.",
+    description: "60-question Wisconsin Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Wisconsin Real Estate Examining Board",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Wisconsin real estate", "WI RE", "Wisconsin real estate exam"],
@@ -648,7 +648,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "wy-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Wyoming Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Wyoming Real Estate readiness check with topic scoring.",
+    description: "60-question Wyoming Real Estate readiness check (free 25-question version) with topic scoring.",
     examBody: "Wyoming Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Wyoming real estate", "WY RE", "Wyoming real estate exam"],
@@ -672,7 +672,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     ),
     officialSourceNote:
       "Mapped to FINRA Series 79 (Investment Banking Representative) themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
-    description: "Free 120-question Series 79 readiness check with topic scoring.",
+    description: "120-question Series 79 readiness check (free 25-question version) with topic scoring.",
     examBody: "FINRA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Series 79", "Investment Banking Representative"],
@@ -696,7 +696,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     ),
     officialSourceNote:
       "Mapped to CFP Board exam themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not CFP Board material.",
-    description: "Free 120-question CFP Certification readiness check with topic scoring.",
+    description: "120-question CFP Certification readiness check (free 25-question version) with topic scoring.",
     examBody: "CFP Board",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["CFP exam", "Certified Financial Planner"],
@@ -716,7 +716,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "underwriting", label: "Underwriting & claims" }
     ]),
     officialSourceNote: "Mapped to State insurance departments themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Life & Health Insurance readiness check with topic scoring.",
+    description: "60-question Life & Health Insurance readiness check (free 25-question version) with topic scoring.",
     examBody: "State insurance departments",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["life and health insurance exam", "life health producer"],
@@ -735,7 +735,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "science", label: "Science" }
     ]),
     officialSourceNote: "Mapped to ETS themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Praxis Elementary Education readiness check with topic scoring.",
+    description: "60-question Praxis Elementary Education readiness check (free 25-question version) with topic scoring.",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Praxis 5001", "elementary education praxis"],
@@ -756,7 +756,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Typical ETS Praxis Special Education: Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours; some states use other codes. Passing scores are set by states. This free check is a shorter 60-question / 75-minute diagnostic — not Praxis Core (5713/5723/5733) and not Elementary 5001. Independent UniPrep2Go practice — not ETS material.",
     description:
-      "Free 60-question Praxis Special Education readiness check (75 min) with topic scoring — shorter than typical 5355 120Q / 2h.",
+      "60-question Praxis Special Education readiness check (free 25-question version) (75 min) with topic scoring — shorter than typical 5355 120Q / 2h.",
     lastUpdated: "2026-10-04",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
@@ -776,7 +776,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "regs", label: "Regs & reporting" }
     ]),
     officialSourceNote: "Mapped to State drinking water operator boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Water Treatment Operator 1 readiness check with topic scoring.",
+    description: "60-question Water Treatment Operator 1 readiness check (free 25-question version) with topic scoring.",
     examBody: "State drinking water operator boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["water treatment operator exam", "drinking water operator"],
@@ -795,7 +795,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "safety", label: "Safety & motors" }
     ]),
     officialSourceNote: "Mapped to State electrical boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Electrical Journeyman readiness check with topic scoring.",
+    description: "60-question Electrical Journeyman readiness check (free 25-question version) with topic scoring.",
     examBody: "State electrical boards",
     lastUpdated: "2026-10-04",
     questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
@@ -815,7 +815,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "code", label: "Code & safety" }
     ]),
     officialSourceNote: "Mapped to State plumbing boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Plumbing Journeyman readiness check with topic scoring.",
+    description: "60-question Plumbing Journeyman readiness check (free 25-question version) with topic scoring.",
     examBody: "State plumbing boards",
     lastUpdated: "2026-10-04",
     questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
@@ -835,7 +835,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "ops", label: "EMS operations" }
     ]),
     officialSourceNote: "Mapped to NREMT themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question NREMT EMR readiness check with topic scoring.",
+    description: "60-question NREMT EMR readiness check (free 25-question version) with topic scoring.",
     examBody: "NREMT",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["EMR exam", "NREMT EMR", "emergency medical responder"],
@@ -854,7 +854,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "law", label: "Law & ethics" }
     ]),
     officialSourceNote: "Mapped to NHA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question ExCPT Pharmacy Technician readiness check with topic scoring.",
+    description: "60-question ExCPT Pharmacy Technician readiness check (free 25-question version) with topic scoring.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["ExCPT", "NHA pharmacy technician"],
@@ -875,7 +875,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Armed security licensing is state-specific (e.g. FL Class G, TX Level III, CA BSIS firearm permit). Most pathways need unarmed/guard-card credentials first, plus firearms training and a separate range qualification — this UniPrep check is a 60Q / 75 min written diagnostic only. Independent — not a state board exam.",
     description:
-      "A free 60-question / 75-minute armed security officer readiness check with topic scoring across use of force & law, weapons safety, patrol & emergencies, and ethics — for candidates upgrading to armed posts. Not a state license exam and not the range qualification.",
+      "A 60-question / 75-minute armed security officer readiness check (free 25-question version) with topic scoring across use of force & law, weapons safety, patrol & emergencies, and ethics — for candidates upgrading to armed posts. Not a state license exam and not the range qualification.",
     examBody: "State security licensing boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["armed security guard exam", "armed guard card"],
@@ -894,7 +894,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "compliance", label: "Compliance" }
     ]),
     officialSourceNote: "Mapped to NHA / billing cert themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question Medical Billing Specialist readiness check with topic scoring.",
+    description: "60-question Medical Billing Specialist readiness check (free 25-question version) with topic scoring.",
     examBody: "NHA / billing cert themes",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["medical billing specialist exam", "CBCS"],
@@ -913,7 +913,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "surgery-dentistry", label: "Surgery & dentistry" }
     ]),
     officialSourceNote: "Mapped to AAVSB themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question VTNE readiness check with topic scoring.",
+    description: "60-question VTNE readiness check (free 25-question version) with topic scoring.",
     examBody: "AAVSB",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["VTNE", "veterinary technician exam"],
@@ -932,7 +932,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "leadership", label: "Leadership & navigation" }
     ]),
     officialSourceNote: "Mapped to SHRM themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "Free 60-question SHRM-SCP readiness check with topic scoring.",
+    description: "60-question SHRM-SCP readiness check (free 25-question version) with topic scoring.",
     examBody: "SHRM",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["SHRM-SCP", "SHRM senior certified professional"],
@@ -956,7 +956,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     ),
     officialSourceNote:
       "Mapped to FINRA Series 99 (Operations Professional) themes. Official Series 99: 50 scored questions / 90 minutes / scaled passing score 68, SIE corequisite. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
-    description: "Free 120-question Series 99 readiness check with topic scoring.",
+    description: "120-question Series 99 readiness check (free 25-question version) with topic scoring.",
     examBody: "FINRA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Series 99", "Operations Professional"],
@@ -976,7 +976,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     ]),
     officialSourceNote:
       "There is no public national SHIP counselor exam with a published item count or pass score. State programs schedule certification (often via SHIP TA Center OCCT); module quizzes and sit-downs vary by state. This 60-question / 75-minute diagnostic is independent Medicare-counseling prep — not a state SHIP certificate.",
-    description: "Free 60-question SHIP Medicare Counseling readiness check with topic scoring.",
+    description: "60-question SHIP Medicare Counseling readiness check (free 25-question version) with topic scoring.",
     examBody: "State Health Insurance Assistance Programs",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
     searchAliases: ["SHIP counselor", "Medicare counseling exam", "SHIP certification"],

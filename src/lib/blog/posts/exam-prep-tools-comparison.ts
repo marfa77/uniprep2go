@@ -143,7 +143,7 @@ export const examPrepToolsComparisonPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "It is most useful when you have already studied some of the material, the exam is approaching, you don't want another full course, and you want diagnosis plus spaced repetition. OpenExamPrep emphasizes breadth. Career Employer emphasizes free prep + aggregate learner data. UniPrep2Go emphasizes **your performance → your weak topics → your next study action**. First mock free, no signup; we do not publish invented cohort stats until first exam-mode completes clear a real sample floor.",
+          text: "It is most useful when you have already studied some of the material, the exam is approaching, you don't want another full course, and you want diagnosis plus spaced repetition. OpenExamPrep emphasizes breadth. Career Employer emphasizes free prep + aggregate learner data. UniPrep2Go emphasizes **your performance → your weak topics → your next study action**. Free 25-question diagnostic, no signup; we do not publish invented cohort stats until first exam-mode completes clear a real sample floor.",
         },
       ],
     },

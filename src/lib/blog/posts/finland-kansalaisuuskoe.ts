@@ -22,7 +22,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     mockLabel: "Take the free Finland kansalaisuuskoe readiness check (Finnish)",
     deckLabel: "Mock-only prep (no Anki deck for this pathway)",
     summary:
-      "Practice Migri theme areas with the free 60-question Finnish kansalaisuuskoe readiness check. When Migri publishes the official learning package, switch drills to that bank — UniPrep2Go does not sell an Anki deck for this pathway.",
+      "Practice Migri theme areas with the 60-question Finnish kansalaisuuskoe readiness check (free 25-question version). When Migri publishes the official learning package, switch drills to that bank — UniPrep2Go does not sell an Anki deck for this pathway.",
     extraLinks: [
       {
         href: "https://migri.fi/en/citizenship",
@@ -85,7 +85,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
             "Bookmark migri.fi/citizenship and migri.fi/kansalaisuuskoe — refresh weekly as 2027 approaches.",
             "Build Finnish civic vocabulary: eduskunta, hallitus, presidentti, perusoikeudet, tasa-arvo.",
             "Study institutions, EU membership (1995), neighbours, and everyday services (Kela, 112, police passports).",
-            "Take the free UniPrep2Go 60-question Finnish mock for topic scoring.",
+            "Take the UniPrep2Go 60-question Finnish mock (free 25-question version) for topic scoring.",
             "When Migri publishes samples, abandon third-party guesswork and drill the official materials.",
           ],
         },
@@ -114,7 +114,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     {
       question: "Is there a free practice test?",
       answer:
-        "UniPrep2Go hosts a free 60-question Finnish diagnostic at /mock-exams/finland-kansalaisuuskoe-readiness-check, drawn from 120 unique questions so retakes show new items. It is independent prep, not Migri material.",
+        "UniPrep2Go hosts a 60-question Finnish diagnostic (free 25-question version) at /mock-exams/finland-kansalaisuuskoe-readiness-check, drawn from 120 unique questions so retakes show new items. It is independent prep, not Migri material.",
     },
     {
       question: "Will UniPrep2Go release an Anki deck?",

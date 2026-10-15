@@ -16,7 +16,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Citizenship applicants who need B1 Czech plus reálie; learners who confuse permanent-residence A2 language with the citizenship realities exam; and anyone who wants a harder timed diagnostic before paying for an official sitting. Not legal advice and not the official NPI exam.",
     howToPrepare:
-      "1) Confirm whether you need reálie (citizenship) or only language (often A2 for permanent residence). 2) Study the official NPI 300-question pool — one live item per topic. 3) Drill institutions (Parliament 200/81, President, Czech POINT, Úřad práce, emergency numbers, Schengen, koruna not euro). 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit an NPI-style 30-question timed set before booking. Drill weak reálie topics with the live Czech Citizenship Anki deck; use Czech CCE Anki for language.",
+      "1) Confirm whether you need reálie (citizenship) or only language (often A2 for permanent residence). 2) Study the official NPI 300-question pool — one live item per topic. 3) Drill institutions (Parliament 200/81, President, Czech POINT, Úřad práce, emergency numbers, Schengen, koruna not euro). 4) Take this 60-question readiness check (free 25-question version) for topic scoring, then repair weak areas. 5) Sit an NPI-style 30-question timed set before booking. Drill weak reálie topics with the live Czech Citizenship Anki deck; use Czech CCE Anki for language.",
     topicBlurbs: [
       {
         id: "state-rights",
@@ -101,7 +101,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Residency-route applicants who need PaF B1 now and want civic fluency if a test obywatelski appears; people comparing Poland’s language-first path with Czech reálie or other EU civics exams; and learners who confuse Karta Polaka interviews with naturalisation. Not a substitute for official legal advice or PaF registration.",
     howToPrepare:
-      "Scenario A (apply under current rules): prioritise PaF B1 — cases, aspect, formal writing, timed mocks, speaking. Scenario B (future-proof): raise language toward B2 argumentation, learn Constitution 1997 and key state institutions in simplified Polish, follow Sejm/presidential news, practice answering “Why Poland?” aloud, and use this free 60-question readiness check to find weak civics domains. Repair weak civics topics with the live Polish Citizenship Anki deck; use the Polish Certyfikat Anki deck for language.",
+      "Scenario A (apply under current rules): prioritise PaF B1 — cases, aspect, formal writing, timed mocks, speaking. Scenario B (future-proof): raise language toward B2 argumentation, learn Constitution 1997 and key state institutions in simplified Polish, follow Sejm/presidential news, practice answering “Why Poland?” aloud, and use this 60-question readiness check (free 25-question version) to find weak civics domains. Repair weak civics topics with the live Polish Citizenship Anki deck; use the Polish Certyfikat Anki deck for language.",
     topicBlurbs: [
       {
         id: "state-rights",
@@ -186,7 +186,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Naturalisation applicants who must sit Indfødsretsprøven; residents who confuse language proof with the citizenship knowledge test; and anyone who wants a harder timed diagnostic before paying the official fee. Not legal advice and not the official Danish exam.",
     howToPrepare:
-      "1) Confirm you need Indfødsretsprøven (not only Danish language evidence). 2) Study official sample sets and the dual values gate — passing overall is not enough if values fail. 3) Drill Folketing, monarchy vs government, welfare institutions, holidays, and geography/EU. 4) Take this free 60-question readiness check for topic scoring, then repair weak areas. 5) Sit a 45-question timed set matching official timing before booking. Repair weak topics with the live Denmark Indfødsretsprøven Anki deck.",
+      "1) Confirm you need Indfødsretsprøven (not only Danish language evidence). 2) Study official sample sets and the dual values gate — passing overall is not enough if values fail. 3) Drill Folketing, monarchy vs government, welfare institutions, holidays, and geography/EU. 4) Take this 60-question readiness check (free 25-question version) for topic scoring, then repair weak areas. 5) Sit a 45-question timed set matching official timing before booking. Repair weak topics with the live Denmark Indfødsretsprøven Anki deck.",
     topicBlurbs: [
       {
         id: "constitution-democracy",
@@ -354,7 +354,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants who must sit Statsborgerprøven; residents who confuse Norwegian language tests with the citizenship knowledge exam; and anyone wanting a longer timed diagnostic before booking. Not legal advice and not the official HK-dir exam.",
     howToPrepare:
-      "1) Confirm you need Statsborgerprøven for your UDI pathway. 2) Study official sample items and the 32-scored / 75% rule. 3) Drill Storting, government, rights, history, EEA/Schengen context, and public services. 4) Take this free 60-question readiness check, then repair weak domains. 5) Sit a 36-question / 60-minute timed set before exam day. Repair weak topics with the live Norway Statsborgerprøven Anki deck.",
+      "1) Confirm you need Statsborgerprøven for your UDI pathway. 2) Study official sample items and the 32-scored / 75% rule. 3) Drill Storting, government, rights, history, EEA/Schengen context, and public services. 4) Take this 60-question readiness check (free 25-question version), then repair weak domains. 5) Sit a 36-question / 60-minute timed set before exam day. Repair weak topics with the live Norway Statsborgerprøven Anki deck.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -438,7 +438,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Nationality applicants choosing between the Vivre ensemble exam and the course; residents who confuse language certificates with the living-together requirement; and anyone wanting a timed civics diagnostic. Not legal advice and not the official Luxembourg exam.",
     howToPrepare:
-      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, focus on institutions first — they are half the paper. 3) Take this free 40-question, 60-minute simulation for a score per module. 4) Drill weak domains with the Luxembourg Vivre ensemble Anki pair (239 FR + 239 EN cards, subdecks per official module, a key point on every card), then aim for 32/40+ on timed practice before booking. 5) Keep language evidence (Sproochentest) on the correct parallel track.",
+      "1) On Guichet.lu, decide exam vs course vs exemption for your file. 2) If sitting the exam, focus on institutions first — they are half the paper. 3) Take this 40-question, 60-minute simulation (free 25-question version) for a score per module. 4) Drill weak domains with the Luxembourg Vivre ensemble Anki pair (239 FR + 239 EN cards, subdecks per official module, a key point on every card), then aim for 32/40+ on timed practice before booking. 5) Keep language evidence (Sproochentest) on the correct parallel track.",
     topicBlurbs: [
       {
         id: "droits-fondamentaux",
@@ -516,7 +516,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants filing Finnish citizenship from March 2027 onward who cannot rely on a Finnish/Swedish matriculation or degree exemption; residents who want Finnish-language civic literacy while waiting for Migri’s official bank; and learners comparing Nordic citizenship tests. Not legal advice and not the official Migri exam.",
     howToPrepare:
-      "1) Check whether your application date falls under the 1 March 2027 rule and whether a degree/matriculation exemption applies. 2) Watch migri.fi for the University of Helsinki learning package — study that first when it publishes. 3) Build literacy on Eduskunta, government, rights, equality, history, EU membership (1995), and everyday services (Kela, police, municipal employment services). 4) Take this free 60-question Finnish readiness check and repair weak domains. 5) When official samples appear, switch drills to Migri’s format. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep on this pathway.",
+      "1) Check whether your application date falls under the 1 March 2027 rule and whether a degree/matriculation exemption applies. 2) Watch migri.fi for the University of Helsinki learning package — study that first when it publishes. 3) Build literacy on Eduskunta, government, rights, equality, history, EU membership (1995), and everyday services (Kela, police, municipal employment services). 4) Take this 60-question Finnish readiness check (free 25-question version) and repair weak domains. 5) When official samples appear, switch drills to Migri’s format. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep on this pathway.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -600,7 +600,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Newcomers in Flanders preparing maatschappelijke oriëntatie and Dutch; applicants who wrongly expect a federal MCQ like CCSE or Life in the UK; and learners future-proofing against a proposed national test. Not legal advice and not official inburgering material.",
     howToPrepare:
-      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Pair Dutch NT2 with the live Dutch A2 Inburgering Anki deck; drill MO civics with the 165-card Flanders MO Anki after this free check.",
+      "1) Register your inburgering / MO pathway with the correct Flemish agency. 2) Prioritise Dutch evidence and MO course requirements that actually appear on your contract. 3) Build civic literacy on Belgian/Flemish institutions, rights, history, EU, and daily life. 4) Use this 60-question check (free 25-question version) to find weak domains. 5) If a federal test is enacted, switch to that official bank. Pair Dutch NT2 with the live Dutch A2 Inburgering Anki deck; drill MO civics with the 165-card Flanders MO Anki after this free check.",
     topicBlurbs: [
       {
         id: "institutions-orientation",
@@ -689,7 +689,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Newcomers in Wallonia preparing integration / citoyenneté and French A2-style requirements; applicants who wrongly expect a regional MCQ; and learners future-proofing against a proposed federal test. Not legal advice and not official Walloon material.",
     howToPrepare:
-      "1) Confirm your parcours d’intégration contract and French language proofs with the correct Walloon body. 2) Prioritise course attendance and language evidence that actually appear on your checklist. 3) Build civic literacy on Belgian/Walloon institutions, rights, history, EU, and daily life. 4) Use this free 60-question check to find weak domains. 5) If a federal test is enacted, switch to that official bank. Repair weak topics with the live Belgium Wallonie Citoyenneté Anki deck.",
+      "1) Confirm your parcours d’intégration contract and French language proofs with the correct Walloon body. 2) Prioritise course attendance and language evidence that actually appear on your checklist. 3) Build civic literacy on Belgian/Walloon institutions, rights, history, EU, and daily life. 4) Use this 60-question check (free 25-question version) to find weak domains. 5) If a federal test is enacted, switch to that official bank. Repair weak topics with the live Belgium Wallonie Citoyenneté Anki deck.",
     topicBlurbs: [
       {
         id: "institutions-integration",
@@ -857,7 +857,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Residence-route nationality applicants who need CCSE plus DESE/DELE language evidence; learners who confuse CCSE with DELE A2; and anyone wanting a longer timed diagnostic before booking Cervantes. Not legal advice and not the official CCSE.",
     howToPrepare:
-      "1) Confirm you need both CCSE and DELE A2 (or exemptions). 2) Study the official Cervantes CCSE manual and sample papers — 25 questions / 60%. 3) Drill Constitución, institutions, CCAA, culture/geography, and trámites. 4) Take this free 60-question readiness check for topic scoring. 5) Sit several official-length 25-question timed sets before exam day. Use the DELE + CCSE Anki bundle for spaced repetition.",
+      "1) Confirm you need both CCSE and DELE A2 (or exemptions). 2) Study the official Cervantes CCSE manual and sample papers — 25 questions / 60%. 3) Drill Constitución, institutions, CCAA, culture/geography, and trámites. 4) Take this 60-question readiness check (free 25-question version) for topic scoring. 5) Sit several official-length 25-question timed sets before exam day. Use the DELE + CCSE Anki bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "constitution",
@@ -941,7 +941,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Permanent residents preparing the Canadian citizenship test; applicants who want longer timed practice than the official 20 questions; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not IRCC material.",
     howToPrepare:
-      "1) Study Discover Canada cover to cover — rights, government, history, symbols, regions. 2) Memorise Crown/Parliament roles, Charter basics, and provinces/territories. 3) Take this free 60-question readiness check for topic scoring. 4) Drill several 20-question / 30-minute / 75% sets. 5) Prepare language and interview readiness in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Study Discover Canada cover to cover — rights, government, history, symbols, regions. 2) Memorise Crown/Parliament roles, Charter basics, and provinces/territories. 3) Take this 60-question readiness check (free 25-question version) for topic scoring. 4) Drill several 20-question / 30-minute / 75% sets. 5) Prepare language and interview readiness in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "history",
@@ -1025,7 +1025,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Permanent residents preparing the Australian citizenship test; applicants who need practice beyond the official 20 questions; and learners who must not forget the official values subsection. Not legal advice and not Home Affairs material.",
     howToPrepare:
-      "1) Study the official Australian citizenship test resource booklet. 2) Drill values items until you can clear the mandatory values gate, not only overall percentage. 3) Cover history, democracy, and Australian life. 4) Take this free 60-question readiness check for topic scoring (single 75% gate). 5) Sit several 20-question / 45-minute sets that include values. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Study the official Australian citizenship test resource booklet. 2) Drill values items until you can clear the mandatory values gate, not only overall percentage. 3) Cover history, democracy, and Australian life. 4) Take this 60-question readiness check (free 25-question version) for topic scoring (single 75% gate). 5) Sit several 20-question / 45-minute sets that include values. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "values",
@@ -1109,7 +1109,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants for ILR or British citizenship who must pass Life in the UK; learners who want longer practice than 24 questions; and anyone pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not Home Office material.",
     howToPrepare:
-      "1) Study the official Life in the UK handbook (current edition). 2) Drill values, Parliament, history milestones, and everyday life facts to 75%+. 3) Take this free 60-question readiness check for topic scoring. 4) Sit several 24-question / 45-minute / 75% mocks. 5) Keep English language evidence on the parallel track. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Study the official Life in the UK handbook (current edition). 2) Drill values, Parliament, history milestones, and everyday life facts to 75%+. 3) Take this 60-question readiness check (free 25-question version) for topic scoring. 4) Sit several 24-question / 45-minute / 75% mocks. 5) Keep English language evidence on the parallel track. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "values",
@@ -1193,7 +1193,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Residents preparing the German Einbürgerungstest; applicants who need longer practice than 33 questions; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not BAMF material.",
     howToPrepare:
-      "1) Download the official BAMF question catalogue and your Land’s questions. 2) Drill constitution, history, society, and federal-state items to clear 17/33 comfortably. 3) Keep B1 German evidence on the parallel track. 4) Take this free 60-question / 60-minute readiness check for topic scoring. 5) Sit several official-length 33-question timed sets. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Download the official BAMF question catalogue and your Land’s questions. 2) Drill constitution, history, society, and federal-state items to clear 17/33 comfortably. 3) Keep B1 German evidence on the parallel track. 4) Take this 60-question / 60-minute readiness check (free 25-question version) for topic scoring. 5) Sit several official-length 33-question timed sets. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "politics-rights",
@@ -1277,7 +1277,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "German-speaking ordinary naturalisation applicants who need federal Staatskunde literacy; learners comparing DE/FR/IT twin checks; and anyone who wrongly expects one national Swiss MCQ like Life in the UK. Not legal advice and not your cantonal exam.",
     howToPrepare:
-      "1) Ask your commune exactly how they test (interview, written, both). 2) Master federal themes: Bundesrat, Parlament, Volksinitiative/Referendum, history, geography, social system, procedure. 3) Add canton/commune facts (capital, executive, local rights). 4) Take this free 60-question DE readiness check for federal topic scoring. 5) Practice answering aloud in the interview style your Gemeinde uses. Pair with the Swiss Citizenship Anki Bundle (DE / FR / IT).",
+      "1) Ask your commune exactly how they test (interview, written, both). 2) Master federal themes: Bundesrat, Parlament, Volksinitiative/Referendum, history, geography, social system, procedure. 3) Add canton/commune facts (capital, executive, local rights). 4) Take this 60-question DE readiness check (free 25-question version) for federal topic scoring. 5) Practice answering aloud in the interview style your Gemeinde uses. Pair with the Swiss Citizenship Anki Bundle (DE / FR / IT).",
     topicBlurbs: [
       {
         id: "politics-democracy",
@@ -1529,7 +1529,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Naturalisation applicants who must sit the 2026 examen civique; learners still reading outdated “interview only” guides; and anyone who needs timed MCQ practice alongside B2 French. Not legal advice and not official préfecture material.",
     howToPrepare:
-      "1) Confirm your préfecture path uses the written examen civique (Jan 2026+) and what language proof you need (usually B2). 2) Study institutions of the Republic, history milestones, Marianne/Tricolore/Devise, and rights/duties. 3) Take this free 60-question / 60-minute readiness check for topic scoring. 4) Sit several 40-question / 45-minute / 80% mocks. 5) Keep oral assimilation readiness if an entretien still appears in your file. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Confirm your préfecture path uses the written examen civique (Jan 2026+) and what language proof you need (usually B2). 2) Study institutions of the Republic, history milestones, Marianne/Tricolore/Devise, and rights/duties. 3) Take this 60-question / 60-minute readiness check (free 25-question version) for topic scoring. 4) Sit several 40-question / 45-minute / 80% mocks. 5) Keep oral assimilation readiness if an entretien still appears in your file. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
     topicBlurbs: [
       {
         id: "institutions",
@@ -1614,7 +1614,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Green-card holders preparing the N-400 civics interview; applicants who want timed MCQ diagnostics before oral drills; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not a USCIS interview.",
     howToPrepare:
-      "1) Confirm your test version on uscis.gov (2025 test with 128 questions if you filed N-400 on or after Oct 20, 2025; 2008 test with 100 otherwise). 2) Memorise every official Q&A on your list with spoken answers, not only recognition. 3) Take this free 30-question / 30-minute / 80% MCQ check for topic scoring. 4) Practice oral sets of 20 until you clear 12+ cold (sets of 10 / 6+ on the 2008 test). 5) Prep English read/write/speak in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition of the full bank.",
+      "1) Confirm your test version on uscis.gov (2025 test with 128 questions if you filed N-400 on or after Oct 20, 2025; 2008 test with 100 otherwise). 2) Memorise every official Q&A on your list with spoken answers, not only recognition. 3) Take this 30-question / 30-minute / 80% MCQ check (free 25-question version) for topic scoring. 4) Practice oral sets of 20 until you clear 12+ cold (sets of 10 / 6+ on the 2008 test). 5) Prep English read/write/speak in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition of the full bank.",
     topicBlurbs: [
       {
         id: "government",
@@ -1669,7 +1669,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "Is there a free U.S. citizenship practice test?",
         answer:
-          "Yes — take the free UniPrep2Go 30-question readiness check on this page, then drill the official list aloud until you can pass 12 of 20 cold (6 of 10 on the 2008 test).",
+          "Yes — take the UniPrep2Go 30-question readiness check (free 25-question version) on this page, then drill the official list aloud until you can pass 12 of 20 cold (6 of 10 on the 2008 test).",
       },
     ],
     keywords: [

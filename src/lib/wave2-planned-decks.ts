@@ -6,7 +6,7 @@ const plannedDeckOverrides: Record<string, (deck: PlannedDeck) => PlannedDeck> =
   "nbrc-tmc-readiness-check": (deck) => ({
     ...deck,
     directAnswer:
-      "The NBRC TMC Anki Deck is a planned UniPrep2Go product and is not yet for sale. The NBRC TMC (160 items, 140 scored, 3 hours) runs through December 31, 2026; from January 4, 2027 the single Respiratory Therapy (RT) Examination (185 items, 160 scored, 4 hours) replaces TMC and CSE. Take the free 60-question readiness check at /mock-exams/nbrc-tmc-readiness-check, drawn from a 120-question scenario bank on content both exams share, then join the waitlist on this page.",
+      "The NBRC TMC Anki Deck is a planned UniPrep2Go product and is not yet for sale. The NBRC TMC (160 items, 140 scored, 3 hours) runs through December 31, 2026; from January 4, 2027 the single Respiratory Therapy (RT) Examination (185 items, 160 scored, 4 hours) replaces TMC and CSE. Take the 60-question readiness check (free 25-question version) at /mock-exams/nbrc-tmc-readiness-check, drawn from a 120-question scenario bank on content both exams share, then join the waitlist on this page.",
     lastUpdated: "2026-10-09",
     faqs: [
       ...deck.faqs,

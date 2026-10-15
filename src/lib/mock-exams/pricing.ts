@@ -1,7 +1,8 @@
+import { FREE_DIAGNOSTIC_QUESTIONS } from "./free-diagnostic";
 import { MOCK_ACCESS_RULE, MOCK_PASS_ATTEMPTS, MOCK_PASS_PRICE_USD } from "./mock-pass";
 
-/** Public price label for timed mocks: first attempt free, then Mock Pass. */
-export const mockFreeAccessPriceLabel = `First mock free, then $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
+/** Public price label for timed mocks: short free diagnostic, then Mock Pass for full length. */
+export const mockFreeAccessPriceLabel = `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic, then $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} full attempts`;
 
 /**
  * Hub / generic funnel copy: one free mock per visitor, then the $5 Mock Pass;

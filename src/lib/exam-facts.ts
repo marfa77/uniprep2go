@@ -1369,7 +1369,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Does UniPrep2Go sell a Digital SAT Anki deck?",
-        a: "Yes. The Digital SAT Anki Deck is a live $11 Gumroad .apkg with 160 unique cards (88 Reading and Writing + 72 Math) from the same validated bank as the free 49-question / 70-minute readiness check. It is not a waitlist product. Bluebook remains the official adaptive full-length practice.",
+        a: "Yes. The Digital SAT Anki Deck is a live $11 Gumroad .apkg with 160 unique cards (88 Reading and Writing + 72 Math) from the same validated bank as the 49-question / 70-minute readiness check (free 25-question version). It is not a waitlist product. Bluebook remains the official adaptive full-length practice.",
       },
     ],
     trademark_note:
@@ -1504,7 +1504,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ParaPro check the official exam?",
-        a: "No. The free UniPrep2Go 60-question readiness check is independent practice — not ETS exam material. The Anki deck is planned, not a live purchase SKU yet.",
+        a: "No. The UniPrep2Go 60-question readiness check (free 25-question version) is independent practice — not ETS exam material. The Anki deck is planned, not a live purchase SKU yet.",
       },
     ],
     trademark_note:
@@ -2329,7 +2329,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is there a free NEBOSH practice test?",
-        a: "Yes — UniPrep2Go offers a free 50-question timed IGC readiness check with topic scoring. It drills syllabus knowledge only; official assessments remain GIC1 OBE + GIC2 practical through an accredited Learning Partner.",
+        a: "Yes — UniPrep2Go offers a 50-question timed IGC readiness check (free 25-question version) with topic scoring. It drills syllabus knowledge only; official assessments remain GIC1 OBE + GIC2 practical through an accredited Learning Partner.",
       },
       {
         q: "What other NEBOSH qualifications exist?",
@@ -2634,7 +2634,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ACE readiness check the real ACE exam?",
-        a: "No. The free 60-question readiness check and 300-card Anki deck are independent study aids mapped to ACE CPT competency themes — not official ACE exams or curriculum.",
+        a: "No. The 60-question readiness check (free 25-question version) and 300-card Anki deck are independent study aids mapped to ACE CPT competency themes — not official ACE exams or curriculum.",
       },
     ],
     trademark_note:
@@ -2703,7 +2703,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ACSM readiness check the real ACSM exam?",
-        a: "No. The free 60-question readiness check (drawn from a 120-item bank) and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
+        a: "No. The 60-question readiness check (free 25-question version) (drawn from a 120-item bank) and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
       },
     ],
     trademark_note:
@@ -2778,7 +2778,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s RD readiness check the official CDR exam?",
-        a: "No. The free 120-question check and 120-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
+        a: "No. The 120-question check (free 25-question version) and 120-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
       },
     ],
     trademark_note:
@@ -2846,7 +2846,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Luxembourg readiness check the official exam?",
-        a: "No. The free 40-question French exam simulation and the $16 Anki pair (239 French + 239 English cards) are independent study aids mapped to the three official modules — not Guichet.lu / SFA exams.",
+        a: "No. The 40-question French exam simulation (free 25-question version) and the $16 Anki pair (239 French + 239 English cards) are independent study aids mapped to the three official modules — not Guichet.lu / SFA exams.",
       },
       {
         q: "What is in the UniPrep2Go Luxembourg Vivre ensemble Anki pair?",
@@ -2905,7 +2905,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "MO is course-based under AgII rules: you typically cannot skip straight to a public free MCQ bank — the standaardtest follows course completion.",
       "MO test score counts for 60% of the MO component; teacher process evaluation counts for 40% (attendance, participation, core skills).",
       "Dutch A2 evidence (NT2) is a separate inburgering pillar — Netherlands Inburgering KNM decks do not substitute for Flanders MO civics.",
-      "Official standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen). UniPrep2Go’s free 60-question Dutch diagnostic (45 min / 70%) is independent theme practice — not AgII items and not the official form.",
+      "Official standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen). UniPrep2Go’s 60-question Dutch diagnostic (free 25-question version) (45 min / 70%) is independent theme practice — not AgII items and not the official form.",
     ],
     candidate_qa: [
       {
@@ -2966,7 +2966,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Migri organises the test; the University of Helsinki writes the learning material and questions, published around the turn of 2026–2027, with the first sittings expected around March 2027.",
       "Test language is Finnish or Swedish — not English. Digital multiple-choice, taken on site in seven planned locations (capital region, Tampere, Turku, Oulu, Vaasa, Kuopio, Rovaniemi).",
       "Exemptions: Finnish/Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons.",
-      "UniPrep2Go offers a free 60-question / 45-minute / 70% Finnish diagnostic drawn from a 120-question unique bank (30 per theme) — mock-only, no Anki deck on this pathway.",
+      "UniPrep2Go offers a 60-question / 45-minute / 70% Finnish diagnostic (free 25-question version) drawn from a 120-question unique bank (30 per theme) — mock-only, no Anki deck on this pathway.",
     ],
     candidate_qa: [
       {
@@ -3056,7 +3056,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CPCT readiness check the official NHA exam?",
-        a: "No. The free 120-question / 120-minute check is an independent diagnostic. The matching Anki deck is a $11 / 120-card .apkg on Gumroad. Not NHA material.",
+        a: "No. The 120-question / 120-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is a $11 / 120-card .apkg on Gumroad. Not NHA material.",
       },
     ],
     trademark_note:
@@ -3129,7 +3129,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CBCS readiness check the official NHA exam?",
-        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist) — not a live Gumroad SKU yet. Not NHA material.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist) — not a live Gumroad SKU yet. Not NHA material.",
       },
     ],
     trademark_note:
@@ -3204,7 +3204,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CMAA readiness check the official NHA exam?",
-        a: "No. The free 60-question / 50-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NHA material.",
+        a: "No. The 60-question / 50-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NHA material.",
       },
     ],
     trademark_note:
@@ -3270,7 +3270,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s cosmetology readiness check the official NIC exam?",
-        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NIC, PSI, or state-board material.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NIC, PSI, or state-board material.",
       },
     ],
     trademark_note:
@@ -3327,7 +3327,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CDL readiness check the official DMV exam?",
-        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not a state DMV or FMCSA exam.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not a state DMV or FMCSA exam.",
       },
       {
         q: "Does this include the skills test or HazMat?",
@@ -3386,7 +3386,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s armed security check the official exam?",
-        a: "No. The free 60-question / 75-minute check is an independent written diagnostic. The matching Anki deck is planned (waitlist). Not a state board exam.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent written diagnostic. The matching Anki deck is planned (waitlist). Not a state board exam.",
       },
       {
         q: "Does this include the firearms range test?",
@@ -3449,7 +3449,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s veterinary assistant check the official AVA exam?",
-        a: "No. The free 60-question / 75-minute check is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
       },
     ],
     trademark_note:
@@ -3514,7 +3514,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s medical scribe check the official exam?",
-        a: "No. The free 60-question / 75-minute / 70% check is an independent multiple-choice diagnostic with topic scoring, drawn from a 120 unique bank. The matching Anki deck is $11 / 120 cards on Gumroad. Not AHDPG, ACMSS, or employer material.",
+        a: "No. The 60-question / 75-minute / 70% check (free 25-question version) is an independent multiple-choice diagnostic with topic scoring, drawn from a 120 unique bank. The matching Anki deck is $11 / 120 cards on Gumroad. Not AHDPG, ACMSS, or employer material.",
       },
       {
         q: "Is a scribe exam the same as CCMA or CMA?",
@@ -3581,7 +3581,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s BLS check an official AHA course?",
-        a: "No. The free 60-question diagnostic is independent practice. The matching Anki deck is planned (waitlist). Passing this page does not issue a BLS Provider card.",
+        a: "No. The 60-question diagnostic (free 25-question version) is independent practice. The matching Anki deck is planned (waitlist). Passing this page does not issue a BLS Provider card.",
       },
       {
         q: "What changed for infant CPR in 2025?",
@@ -3749,7 +3749,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s SPI check the official ARDMS exam?",
-        a: "No. The free 60-question check is independent text/physics practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS/Inteleos material.",
+        a: "No. The 60-question check (free 25-question version) is independent text/physics practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS/Inteleos material.",
       },
       {
         q: "Does SPI include ABD or OB image items?",
@@ -3818,7 +3818,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s MLT check the official ASCP exam?",
-        a: "No. The free 60-question check is independent practice. The matching Anki deck is planned (waitlist). Not ASCP BOC material.",
+        a: "No. The 60-question check (free 25-question version) is independent practice. The matching Anki deck is planned (waitlist). Not ASCP BOC material.",
       },
       {
         q: "Is MLT the same as MLS?",
@@ -3886,7 +3886,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s MLS check the official ASCP exam?",
-        a: "No. The free 60-question check is independent practice. The matching Anki deck is planned (waitlist). Not ASCP BOC material.",
+        a: "No. The 60-question check (free 25-question version) is independent practice. The matching Anki deck is planned (waitlist). Not ASCP BOC material.",
       },
       {
         q: "Is MLS the same as MLT?",

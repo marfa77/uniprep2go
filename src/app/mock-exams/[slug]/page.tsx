@@ -40,10 +40,14 @@ import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import {
+  formatCheckoutPrice,
   formatDeckPriceLabel,
   getDeckCheckoutCtaLabel,
   getPricedDeckBySlug,
 } from "@/lib/checkout-pricing";
+import { officialPassLineFromFacts } from "@/lib/mock-exams/result-upsell";
+import { applyDiagnosticOffer } from "@/lib/mock-exams/diagnostic-offer";
+import { freeAccessClause } from "@/lib/mock-exams/free-diagnostic";
 import {
   buildMockAiCategory,
   buildMockAiDescription,
@@ -143,9 +147,9 @@ function mockEyebrow(config: NonNullable<ReturnType<typeof getMockExamConfig>>) 
     return `${vertical?.label ?? "Exam prep"} · practice test coming soon · notify me`;
   }
   if (config.slug === "servsafe-manager-mock" || config.slug === "ptcb-pharmacy-technician-mock") {
-    return `${vertical?.label ?? "Professional certification"} · timed practice test · first mock free`;
+    return `${vertical?.label ?? "Professional certification"} · timed practice test · ${freeAccessClause(config)}`;
   }
-  return `${vertical?.label ?? "Exam prep"} · timed practice test · first mock free · ${config.examBody}`;
+  return `${vertical?.label ?? "Exam prep"} · timed practice test · ${freeAccessClause(config)} · ${config.examBody}`;
 }
 
 export default async function MockExamPage({
@@ -185,6 +189,22 @@ export default async function MockExamPage({
           ),
         }
       : null;
+  const linkedDeckCardCount = Number(pricedLinkedDeck?.facts.cards.match(/^\d+/)?.[0]) || undefined;
+  const linkedDeckPriceLabel =
+    pricedLinkedDeck && !pricedLinkedDeck.pricePending && pricedLinkedDeck.price.amount > 0
+      ? formatCheckoutPrice(pricedLinkedDeck.price.amount)
+      : undefined;
+  const diagnosticOffer =
+    linkedDeckPriceLabel && pricedLinkedDeck
+      ? applyDiagnosticOffer(pricedLinkedDeck.checkoutUrl, pricedLinkedDeck.price.amount)
+      : null;
+  const linkedDeckOffer = diagnosticOffer
+    ? {
+        checkoutUrl: diagnosticOffer.checkoutUrl,
+        priceLabel: formatCheckoutPrice(diagnosticOffer.amount),
+        percentOff: diagnosticOffer.percentOff,
+      }
+    : undefined;
   const companionCheckouts = await buildMockCompanionCheckouts(config, async (deckSlug) => {
     const deck = await getPricedDeckBySlug(deckSlug);
     if (!deck) return undefined;
@@ -273,6 +293,10 @@ export default async function MockExamPage({
             paywallEnabled={isMockPaywallEnabled()}
             linkedCheckout={linkedCheckout}
             linkedDeckShortName={linkedDeck?.shortName}
+            officialPass={officialPassLineFromFacts(examFactsProfile?.exam_facts)}
+            linkedDeckCardCount={linkedDeckCardCount}
+            linkedDeckPriceLabel={linkedDeckPriceLabel}
+            linkedDeckOffer={linkedDeckOffer}
             companionCheckouts={companionCheckouts}
             questions={questions}
             runnable={runnable}

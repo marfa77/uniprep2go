@@ -19,7 +19,7 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
   mockSlug: "luxembourg-vivre-ensemble-readiness-check",
   deckSlug: "luxembourg-vivre-ensemble-anki-deck",
   cta: {
-    mockLabel: "Take the free 40-question Vivre ensemble exam simulation",
+    mockLabel: "Take the 40-question Vivre ensemble exam simulation (free 25-question version)",
     deckLabel: "Get the Luxembourg Vivre ensemble Anki decks (FR + EN)",
     summary:
       "Sit the free Vivre ensemble exam simulation — 40 questions, 60 minutes, the official 10/20/10 split, scored per module. Then drill the misses with the FR + EN Anki pair (subdecks per official module, a key point on every card) — and remember Sproochentest is the harder half.",
@@ -159,7 +159,7 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
             },
             {
               title: "Week 4: Practice and mock",
-              body: "Sit the free 40-question / 60-minute simulation (same 10/20/10 split), then drill every miss. Aim for 32/40+ so you clear the commonly cited 28/40 with a buffer.",
+              body: "Sit the 40-question / 60-minute simulation (free 25-question version) (same 10/20/10 split), then drill every miss. Aim for 32/40+ so you clear the commonly cited 28/40 with a buffer.",
             },
           ],
         },

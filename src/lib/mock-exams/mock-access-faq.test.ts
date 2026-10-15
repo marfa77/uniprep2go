@@ -12,7 +12,7 @@ describe("mock access FAQ disclosure", () => {
       { question: "Is there a free GRE practice test?", answer: "Yes. Your first UniPrep2Go mock is free." },
     ]);
     expect(free.answer).toBe(`Yes — take the 60-question check. ${mockAccessSuffixFor("PMP")}`);
-    expect(free.answer).toContain("including this PMP one, is free");
+    expect(free.answer).toContain("including this PMP one, is a free 25-question timed diagnostic");
     expect(other.answer).toBe("No.");
     expect(done.answer).toBe("Yes. Your first UniPrep2Go mock is free.");
   });
@@ -30,7 +30,8 @@ describe("mock access FAQ disclosure", () => {
   it("states the rule in mock page FAQs", () => {
     const faqs = buildMockExamFaqs(getMockExamConfig("series-63-readiness-check")!);
     const free = faqs.find((faq) => /^Is there a free/i.test(faq.question));
-    expect(free?.answer).toMatch(/first UniPrep2Go mock is free/);
+    expect(free?.answer).toMatch(/first UniPrep2Go attempt is free, and it can be this one: a 25-question \/ \d+-minute timed diagnostic/);
+    expect(free?.answer).toContain("The full 60-question");
     expect(faqs.some((faq) => /How many free attempts/i.test(faq.question))).toBe(true);
   });
 });

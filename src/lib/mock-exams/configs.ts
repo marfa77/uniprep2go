@@ -212,7 +212,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "60 questions spread across all ten 2026 CFA Level I topics within the official weight ranges (Ethics 10 questions; FSA, Equity and Fixed Income 7 each; Portfolio Management 6; Quant, Economics and Alternatives 5 each; Corporate Issuers and Derivatives 4 each). Official exam: 180 three-option multiple-choice questions in two 135-minute sessions (4.5 hours); CFA Institute sets the minimum passing score (MPS) after each administration and does not publish a fixed percentage. Our items use four options at the same 90-second pace. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 60-question CFA Level 1 readiness diagnostic with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "A 60-question CFA Level 1 readiness diagnostic (free 25-question version) with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "CFA Institute",
     lastUpdated: "2026-10-02",
   },
@@ -320,7 +320,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 100-item bank weighted 20 Foundations / 20 Quantitative Analysis / 30 Financial Markets and Products / 30 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Half were written for the mock; half are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 50-question FRM Part 1 readiness diagnostic drawn from a 100-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "A 50-question FRM Part 1 readiness diagnostic (free 25-question version) drawn from a 100-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
     lastUpdated: "2026-10-09",
   },
@@ -353,7 +353,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "60 original scenario and calculation questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions), with a teaching note on every wrong answer. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 60-question Series 7 readiness diagnostic: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
+      "A 60-question Series 7 readiness diagnostic (free 25-question version): options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
     lastUpdated: "2026-10-05",
   },
@@ -390,7 +390,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "60 original scenario questions with the same per-area counts as NASAA's scored Series 63 (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs) and a teaching note on every wrong answer. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 60-question Series 63 readiness diagnostic on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
+      "A 60-question Series 63 readiness diagnostic (free 25-question version) on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
     examBody: "NASAA",
     lastUpdated: "2026-10-02",
   },
@@ -1000,7 +1000,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Official GBCI LEED Green Associate exam (LEED v5 since 2026): 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; 85 scored items across LEED Process (15), Integrative Process (6), Location and Transportation (9), Sustainable Sites (8), Water Efficiency (10), Energy and Atmosphere (15), Materials and Resources (11), and Indoor Environmental Quality (11). This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank, weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A free 60-question LEED Green Associate (v5) readiness diagnostic (75 minutes) drawn from a 120-item bank, weighted to the GBCI blueprint: LEED process, integrative process, location, sites, water, energy, materials, and IEQ. Independent prep, not USGBC material.",
+      "A 60-question LEED Green Associate (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 120-item bank, weighted to the GBCI blueprint: LEED process, integrative process, location, sites, water, energy, materials, and IEQ. Independent prep, not USGBC material.",
     examBody: "USGBC / GBCI",
     lastUpdated: "2026-10-13",
     questionSourceNote:
@@ -1066,7 +1066,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Official GBCI LEED AP BD+C specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170; requires an active LEED Green Associate. v4 testing ended June 28, 2026; the LEED v5 beta runs until the final v5 exam (expected February 2027). v5 blueprint: 85 scored items — LEED Process 7, Integrative Process 8, Location and Transportation 8, Sustainable Sites 9, Water Efficiency 9, Energy and Atmosphere 18, Materials and Resources 13, Indoor Environmental Quality 13. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A free 60-question LEED AP BD+C (v5) readiness diagnostic (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — integrative process and location, sites and water, energy, materials, and IEQ. Independent prep, not USGBC material.",
+      "A 60-question LEED AP BD+C (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — integrative process and location, sites and water, energy, materials, and IEQ. Independent prep, not USGBC material.",
     examBody: "USGBC / GBCI",
     lastUpdated: "2026-10-13",
     questionSourceNote:
@@ -1132,7 +1132,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Official GBCI LEED AP O+M specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; requires an active LEED Green Associate. v4 testing ended June 28, 2026; the LEED v5 beta runs until the final v5 exam (expected early 2027). v5 blueprint: 85 scored items — LEED Process 10, Integrative Process 10, Location and Transportation 8, Sustainable Sites 5, Water Efficiency 7, Energy and Atmosphere 21, Materials and Resources 7, Indoor Environmental Quality 17. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A free 60-question LEED AP O+M (v5) readiness diagnostic (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — process and assessments, transportation and sites, water metering, energy and refrigerant performance, waste, and IEQ operations. Independent prep, not USGBC material.",
+      "A 60-question LEED AP O+M (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — process and assessments, transportation and sites, water metering, energy and refrigerant performance, waste, and IEQ operations. Independent prep, not USGBC material.",
     examBody: "GBCI / USGBC",
     lastUpdated: "2026-10-13",
     questionSourceNote:
@@ -1199,7 +1199,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Official GBCI/IWBI WELL AP (verify candidate handbook): 115 MCQ (100 scored + 15 unscored), 2.5 hours, scaled pass 170 (125–200), closed book with embedded scenario + reference PDFs. Some third-party sites still cite outdated “100 questions / 2 hours / scale out of 300” — use IWBI sources. This UniPrep2Go check is a 50-question diagnostic, not a GBCI exam.",
     disclaimer: wellDisclaimer,
     description:
-      "Free 50-question WELL AP readiness check across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
+      "50-question WELL AP readiness check (free 25-question version) across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
     examBody: "IWBI / GBCI (International WELL Building Institute)",
     lastUpdated: "2026-08-15",
     questionSourceNote:

@@ -72,7 +72,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Most state CDL General Knowledge sittings are ~50 questions / 80% (40 correct) from the FMCSA Commercial Driver’s Manual — verify your state DMV. This UniPrep check is a longer 60Q / 75 min diagnostic. Skills/road testing and endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.) are separate.",
     description:
-      "A free 60-question / 75-minute CDL General Knowledge readiness check with topic scoring across vehicle systems, safe driving, cargo, and rules — for CLP / Class A–B knowledge prep. Typical state GK forms are ~50Q / 80%; this is a longer diagnostic, not a DMV exam.",
+      "A 60-question / 75-minute CDL General Knowledge readiness check (free 25-question version) with topic scoring across vehicle systems, safe driving, cargo, and rules — for CLP / Class A–B knowledge prep. Typical state GK forms are ~50Q / 80%; this is a longer diagnostic, not a DMV exam.",
     examBody: "State DMV / FMCSA",
     questionSourceNote: "Original UniPrep2Go local bank aligned to FMCSA handbook topics.",
   }),
@@ -92,7 +92,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to NHA CCMA domain themes. Not an NHA certification exam.",
     description:
-      "Free 60-question NHA CCMA readiness check with domain scoring for clinical medical assistant candidates.",
+      "60-question NHA CCMA readiness check (free 25-question version) with domain scoring for clinical medical assistant candidates.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CCMA knowledge domains.",
   }),
@@ -112,7 +112,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check aligned to NREMT EMT cognitive domains. Not an NREMT certification exam.",
     description:
-      "Free 60-question NREMT EMT readiness check with topic scoring across airway, cardiology, trauma, and medical/ops.",
+      "60-question NREMT EMT readiness check (free 25-question version) with topic scoring across airway, cardiology, trauma, and medical/ops.",
     examBody: "NREMT",
     questionSourceNote: "Original UniPrep2Go local bank for EMT cognitive topics.",
   }),
@@ -132,7 +132,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to NHA CPT phlebotomy themes. Not an NHA certification exam.",
     description:
-      "Free 60-question NHA CPT phlebotomy readiness check with domain scoring for phlebotomy technician candidates.",
+      "60-question NHA CPT phlebotomy readiness check (free 25-question version) with domain scoring for phlebotomy technician candidates.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CPT phlebotomy topics.",
   }),
@@ -152,7 +152,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent diagnostic on Florida DBPR / FREC sales associate themes. Official Florida sales associate exam (Pearson VUE for DBPR): 100 multiple-choice questions, 3.5 hours (210 minutes), pass at 75/100. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target — shorter than the official sitting. Not DBPR/FREC exam material.",
     description:
-      "Free 60-question Florida real estate sales associate readiness check with topic scoring for FREC candidates.",
+      "60-question Florida real estate sales associate readiness check (free 25-question version) with topic scoring for FREC candidates.",
     examBody: "DBPR / Florida Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank for Florida RE topics.",
   }),
@@ -172,7 +172,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent diagnostic on TREC salesperson themes. Official Texas sales agent exam (Pearson VUE for TREC) is a dual national + Texas-law sitting; candidates must pass each portion (~70% on scored items — confirm current Pearson Content Outline). This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target — not full official length. Not TREC exam material.",
     description:
-      "Free 60-question Texas real estate salesperson readiness check with topic scoring for TREC candidates.",
+      "60-question Texas real estate salesperson readiness check (free 25-question version) with topic scoring for TREC candidates.",
     examBody: "TREC",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
@@ -192,7 +192,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to AAPC CPC knowledge domains (text scenarios; no code books required for this diagnostic). Not an AAPC certification exam.",
     description:
-      "Free 60-question AAPC CPC readiness check with domain scoring for medical coding candidates.",
+      "60-question AAPC CPC readiness check (free 25-question version) with domain scoring for medical coding candidates.",
     examBody: "AAPC",
     questionSourceNote: "Original UniPrep2Go local bank for CPC concept/guideline topics.",
   }),
@@ -212,7 +212,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check aligned to FSMTB MBLEx content outline themes. Not an FSMTB exam.",
     description:
-      "Free 60-question MBLEx readiness check with topic scoring for massage therapy licensure candidates.",
+      "60-question MBLEx readiness check (free 25-question version) with topic scoring for massage therapy licensure candidates.",
     examBody: "FSMTB",
     questionSourceNote: "Original UniPrep2Go local bank for MBLEx topics.",
   }),
@@ -236,7 +236,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Official NHA CPCT/A (2025 test plan): 100 scored + 20 pretest / 2 hours / scaled 390 (200–500). This UniPrep2Go check is a 120-question / 120-minute text diagnostic with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab. CPCT/A ≠ CCMA ≠ NHA CPT phlebotomy ≠ ASPT. Independent prep — not an NHA exam.",
     description:
-      "Free 120-question NHA CPCT/A readiness check with domain scoring for patient care technician candidates.",
+      "120-question NHA CPCT/A readiness check (free 25-question version) with domain scoring for patient care technician candidates.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CPCT topics.",
   }),
@@ -256,7 +256,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to NHA ExCPT themes (distinct from PTCB PTCE). Not an NHA certification exam.",
     description:
-      "Free 60-question NHA ExCPT pharmacy technician readiness check with domain scoring.",
+      "60-question NHA ExCPT pharmacy technician readiness check (free 25-question version) with domain scoring.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for ExCPT topics.",
   }),
@@ -276,7 +276,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check aligned to NREMT Paramedic cognitive themes. Not an NREMT certification exam.",
     description:
-      "Free 60-question NREMT Paramedic readiness check with topic scoring for advanced EMS candidates.",
+      "60-question NREMT Paramedic readiness check (free 25-question version) with topic scoring for advanced EMS candidates.",
     examBody: "NREMT",
     questionSourceNote: "Original UniPrep2Go local bank for Paramedic cognitive topics.",
   }),
@@ -296,7 +296,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to DANB ICE infection-control themes. Not a DANB exam.",
     description:
-      "Free 60-question DANB ICE infection control readiness check for dental assisting candidates.",
+      "60-question DANB ICE infection control readiness check (free 25-question version) for dental assisting candidates.",
     examBody: "DANB",
     questionSourceNote: "Original UniPrep2Go local bank for ICE topics.",
   }),
@@ -316,7 +316,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check aligned to HSPA CRCST knowledge themes. Not an HSPA/IAHCSMM exam.",
     description:
-      "Free 60-question CRCST sterile processing readiness check with domain scoring.",
+      "60-question CRCST sterile processing readiness check (free 25-question version) with domain scoring.",
     examBody: "HSPA (IAHCSMM)",
     questionSourceNote: "Original UniPrep2Go local bank for CRCST topics.",
   }),
@@ -336,7 +336,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest (135 total) / 2 hours 15 minutes / scaled pass 390 on 200–500. This check is a shorter 60-question / 50-minute diagnostic mapped to CMAA themes — not an NHA exam and not CCMA/CBCS.",
     description:
-      "Free 60-question NHA CMAA readiness check for medical administrative assistant candidates. Official form is 135 questions in 135 minutes (scaled 390) — this page is a shorter diagnostic.",
+      "60-question NHA CMAA readiness check (free 25-question version) for medical administrative assistant candidates. Official form is 135 questions in 135 minutes (scaled 390) — this page is a shorter diagnostic.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank for CMAA topics.",
     lastUpdated: "2026-10-04",
@@ -358,7 +358,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Text/physics readiness check aligned to ARDMS SPI themes (no image-interpretation items). Official SPI is about 110 multiple-choice questions / 2 hours / scaled pass 555 on 300–700 (Inteleos) — this check is a shorter 60Q / 75 min diagnostic from a 120 unique bank. Not an ARDMS exam.",
     description:
-      "Free 60-question ARDMS SPI readiness check focused on ultrasound physics and instrumentation concepts, drawn from a 120 unique bank.",
+      "60-question ARDMS SPI readiness check (free 25-question version) focused on ultrasound physics and instrumentation concepts, drawn from a 120 unique bank.",
     examBody: "ARDMS",
     questionSourceNote:
       "Original UniPrep2Go local bank for SPI physics topics. Expanded to 120 unique 2026-10-07 for Mock Pass retakes; Anki live $11/120.",
@@ -380,7 +380,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check mapped to NBSTSA CST knowledge themes. Not an NBSTSA exam.",
     description:
-      "Free 60-question CST surgical technologist readiness check with domain scoring.",
+      "60-question CST surgical technologist readiness check (free 25-question version) with domain scoring.",
     examBody: "NBSTSA",
     questionSourceNote: "Original UniPrep2Go local bank for CST topics.",
   }),
@@ -400,7 +400,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Readiness check aligned to AAVSB VTNE domain themes. Not an AAVSB exam.",
     description:
-      "Free 60-question VTNE readiness check with domain scoring for veterinary technician candidates.",
+      "60-question VTNE readiness check (free 25-question version) with domain scoring for veterinary technician candidates.",
     examBody: "AAVSB",
     questionSourceNote: "Original UniPrep2Go local bank for VTNE topics.",
   }),

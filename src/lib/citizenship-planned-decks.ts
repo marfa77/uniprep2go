@@ -45,7 +45,7 @@ function plannedCivicsDeck(spec: PlannedCivicsSpec): PlannedDeck {
       },
       {
         question: `Is there a free ${spec.shortName} practice test?`,
-        answer: `Yes. Take the free 60-question readiness check at /mock-exams/${spec.mockSlug}.`,
+        answer: `Yes. Take the 60-question readiness check (free 25-question version) at /mock-exams/${spec.mockSlug}.`,
       },
       {
         question: "Is this official government exam material?",
@@ -101,7 +101,7 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     shortName: "Finland Kansalaisuuskoe",
     subtitle: "No Anki deck for sale — use the free Finnish-language readiness check.",
     directAnswer:
-      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the free 60-question Finnish mock (drawn from 120 unique questions) at /mock-exams/finland-kansalaisuuskoe-readiness-check and study the University of Helsinki learning material when Migri publishes it around the turn of 2026–2027.",
+      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the 60-question Finnish mock (free 25-question version) (drawn from 120 unique questions) at /mock-exams/finland-kansalaisuuskoe-readiness-check and study the University of Helsinki learning material when Migri publishes it around the turn of 2026–2027.",
     lastUpdated: "2026-10-09",
     audience: "Applicants preparing Finland’s 2027 citizenship knowledge test.",
     format: ".apkg",

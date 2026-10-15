@@ -22,10 +22,16 @@ import {
   shuffleQuestions,
 } from "@/lib/mock-exams/scoring";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
-import { getMockRepairCheckoutCtaLabel } from "@/lib/checkout-pricing";
+import {
+  FREE_DIAGNOSTIC_QUESTIONS,
+  freeDiagnosticConfig,
+  hasShortFreeDiagnostic,
+} from "@/lib/mock-exams/free-diagnostic";
+import { buildResultUpsell, type OfficialPassLine } from "@/lib/mock-exams/result-upsell";
 import { MockPassPaywall } from "./mock-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
+import { MockResultUpsell } from "./mock-result-upsell";
 import type { LinkedDeckCheckout } from "./mock-report-handoff";
 import type { MockCompanionCheckout } from "./mock-companion-decks-panel";
 import { MockRunner } from "./mock-runner";
@@ -58,6 +64,12 @@ export type MockExamClientProps = {
   initialMode?: MockSessionMode;
   /** Server kill switch (MOCK_PAYWALL=off) — when false every attempt is free. */
   paywallEnabled?: boolean;
+  /** Concrete published pass line from exam facts, for the result screen. */
+  officialPass?: OfficialPassLine;
+  linkedDeckCardCount?: number;
+  linkedDeckPriceLabel?: string;
+  /** Result-screen-only deck discount (Gumroad offer code URL + discounted price). */
+  linkedDeckOffer?: { checkoutUrl: string; priceLabel: string; percentOff: number };
 };
 
 function formatDuration(minutes: number) {
@@ -106,6 +118,10 @@ export function MockExamClient({
   runnable,
   initialMode = "exam",
   paywallEnabled = false,
+  officialPass,
+  linkedDeckCardCount,
+  linkedDeckPriceLabel,
+  linkedDeckOffer,
 }: MockExamClientProps) {
   const searchParams = useSearchParams();
   const modeFromUrl = parseMockSessionMode(searchParams.get("mode"));
@@ -114,6 +130,7 @@ export function MockExamClient({
   const [selectedMode, setSelectedMode] = useState<MockSessionMode>(resolvedInitialMode);
   const [sessionMode, setSessionMode] = useState<MockSessionMode>(resolvedInitialMode);
   const [attemptSeed, setAttemptSeed] = useState<string>("");
+  const [sessionFree, setSessionFree] = useState(false);
   const [report, setReport] = useState<MockReport | null>(null);
   const [freeAttempt, setFreeAttempt] = useState<FreeAttemptRecord | null>(null);
   const [accessHydrated, setAccessHydrated] = useState(false);
@@ -168,8 +185,9 @@ export function MockExamClient({
   }, [screen]);
 
   const enterSession = useCallback(
-    (mode: MockSessionMode, source: string) => {
+    (mode: MockSessionMode, source: string, free = false) => {
       const seed = createAttemptSeed();
+      setSessionFree(free);
       setSessionMode(mode);
       setSelectedMode(mode);
       setAttemptSeed(seed);
@@ -186,14 +204,18 @@ export function MockExamClient({
     [config.linkedDeckSlug, config.slug],
   );
 
+  const freeIsShort = hasShortFreeDiagnostic(config);
+  const freeConfig = useMemo(() => freeDiagnosticConfig(config), [config]);
+  const sessionConfig = sessionFree ? freeConfig : config;
+
   const shuffledQuestions = useMemo(() => {
     if (!attemptSeed) {
       return questions;
     }
 
-    const sessionQuestions = selectSessionQuestions(questions, config, attemptSeed);
+    const sessionQuestions = selectSessionQuestions(questions, sessionConfig, attemptSeed);
     return shuffleQuestions(sessionQuestions, attemptSeed);
-  }, [attemptSeed, config, questions]);
+  }, [attemptSeed, sessionConfig, questions]);
 
   const startDecision = decideMockStart({
     paywallEnabled,
@@ -230,7 +252,7 @@ export function MockExamClient({
       const record: FreeAttemptRecord = { slug: config.slug, mode, at: new Date().toISOString() };
       markFreeAttemptUsed(storage, record);
       setFreeAttempt(record);
-      enterSession(mode, `mock:${config.slug}:start:${mode}:free`);
+      enterSession(mode, `mock:${config.slug}:start:${mode}:free`, true);
       return;
     }
 
@@ -297,7 +319,7 @@ export function MockExamClient({
   }) {
     const completedAt = new Date().toISOString();
     const nextReport = buildMockReport(
-      config,
+      sessionConfig,
       {
         examSlug: config.slug,
         attemptSeed,
@@ -318,7 +340,7 @@ export function MockExamClient({
       name: "mock_completed",
       deckSlug: config.linkedDeckSlug,
       mockSlug: config.slug,
-      source: `mock:${config.slug}:complete:${sessionMode}`,
+      source: `mock:${config.slug}:complete:${sessionMode}${sessionFree ? ":free" : ""}`,
     });
     if (sessionMode === "exam") {
       void fetch("/api/mock-exams/miss-cohort", {
@@ -365,7 +387,7 @@ export function MockExamClient({
     return (
       <MockFocusShell>
         <MockRunner
-          config={config}
+          config={sessionConfig}
           linkedCheckout={linkedCheckout}
           mode={sessionMode}
           questions={shuffledQuestions}
@@ -378,80 +400,41 @@ export function MockExamClient({
 
   if (screen === "results" && report) {
     const hideInterestCta = Boolean(linkedCheckout?.checkoutUrl);
-    const retakeSuffix =
-      startDecision === "paid"
-        ? ` · 1 of ${pass.remaining} attempts`
-        : startDecision === "paywall"
-          ? ` · $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`
-          : "";
+    const isFreeDiagnostic = sessionFree && freeIsShort;
+    const upsell = buildResultUpsell({
+      report,
+      isFreeDiagnostic,
+      fullQuestionCount: config.questionCount,
+      examBody: config.examBody,
+      officialPass,
+      deck: {
+        available: Boolean(linkedCheckout?.checkoutUrl),
+        cardCount: linkedDeckCardCount,
+        priceLabel: linkedDeckOffer?.priceLabel ?? linkedDeckPriceLabel,
+        fullPriceLabel: linkedDeckOffer ? linkedDeckPriceLabel : undefined,
+        percentOff: linkedDeckOffer?.percentOff,
+      },
+      passRemaining: startDecision === "paid" ? pass.remaining : 0,
+      paywallEnabled: paywallEnabled && startDecision !== "open",
+    });
 
     return (
       <MockFocusShell>
         <div className="space-y-6 px-4 py-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:space-y-8 sm:px-6 sm:py-6">
-          <MockReportPanel
-            companionCheckouts={companionCheckouts}
-            config={config}
-            linkedCheckout={linkedCheckout}
-            linkedDeckShortName={linkedDeckShortName}
-            onRetake={() => void startMock(sessionMode, "retake")}
-            report={report}
-            sessionMode={sessionMode}
+          <MockResultUpsell
+            deckPageUrl={report.linkedDeckUrl}
+            deckSlug={config.linkedDeckSlug}
+            isFreeDiagnostic={isFreeDiagnostic}
+            linkedCheckout={
+              linkedCheckout && linkedDeckOffer
+                ? { ...linkedCheckout, checkoutUrl: linkedDeckOffer.checkoutUrl }
+                : linkedCheckout
+            }
+            mockSlug={config.slug}
+            onMockCta={() => void startMock(sessionMode, "retake")}
+            startBusy={startBusy}
+            upsell={upsell}
           />
-          {cta?.interestCaptureEnabled && !hideInterestCta ? (
-            <MockInterestCta config={config} cta={cta} report={report} />
-          ) : null}
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            {linkedCheckout?.checkoutUrl ? (
-              <a
-                className="inline-flex min-h-12 items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
-                href={linkedCheckout.checkoutUrl}
-                onClick={() =>
-                  trackMockEvent({
-                    name: "mock_deck_cta_click",
-                    deckSlug: config.linkedDeckSlug,
-                    mockSlug: config.slug,
-                  })
-                }
-                rel="noopener noreferrer"
-                target="_blank"
-              >
-                {getMockRepairCheckoutCtaLabel({
-                  weakTopicLabels: report.repairPlan.map((item) => item.topicLabel),
-                  existingCtaLabel: linkedCheckout.ctaLabel,
-                })}
-              </a>
-            ) : null}
-            <button
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
-              disabled={startBusy}
-              onClick={() => void startMock(sessionMode, "retake")}
-              type="button"
-            >
-              {startBusy
-                ? "Starting…"
-                : `Retake ${sessionMode === "learn" ? "learn mode" : "exam"}${retakeSuffix}`}
-            </button>
-            <Link
-              className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/20 px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
-              href={`/decks/${config.linkedDeckSlug}`}
-              onClick={() =>
-                trackMockEvent({
-                  name: "mock_deck_cta_click",
-                  deckSlug: config.linkedDeckSlug,
-                  mockSlug: config.slug,
-                })
-              }
-            >
-              {linkedCheckout?.checkoutUrl ? "Deck details" : "Join exam prep waitlist"}
-            </Link>
-          </div>
-          {paywallEnabled && startDecision !== "open" ? (
-            <p className="text-sm leading-6 text-[#5f5749]">
-              {startDecision === "paid"
-                ? `Mock Pass: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, either mode.`
-                : `Your free mock is done. Retakes and other mocks: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`}
-            </p>
-          ) : null}
           {startError ? (
             <p className="text-sm text-[#7a2e2e]" role="alert">
               {startError}
@@ -467,25 +450,49 @@ export function MockExamClient({
               placement="retake"
             />
           ) : null}
+          <MockReportPanel
+            companionCheckouts={companionCheckouts}
+            config={sessionConfig}
+            linkedCheckout={linkedCheckout}
+            linkedDeckShortName={linkedDeckShortName}
+            onRetake={() => void startMock(sessionMode, "retake")}
+            report={report}
+            sessionMode={sessionMode}
+          />
+          {cta?.interestCaptureEnabled && !hideInterestCta ? (
+            <MockInterestCta config={config} cta={cta} report={report} />
+          ) : null}
+          {paywallEnabled && startDecision !== "open" ? (
+            <p className="text-sm leading-6 text-[#5f5749]">
+              {startDecision === "paid"
+                ? `Mock Pass: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, either mode.`
+                : freeIsShort
+                  ? `Your free diagnostic is done. Full ${config.questionCount}-question mocks and retakes: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
+                  : `Your free mock is done. Retakes and other mocks: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`}
+            </p>
+          ) : null}
         </div>
       </MockFocusShell>
     );
   }
 
   const brief = selectedMode === "learn" ? learnBrief : examBrief;
+  const showFreeDiagnostic = accessHydrated && startDecision === "free" && freeIsShort;
+  const landingConfig = showFreeDiagnostic ? freeConfig : config;
   const timingLabel =
-    selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(config.durationMinutes);
+    selectedMode === "learn" ? "Untimed · instant feedback" : formatDuration(landingConfig.durationMinutes);
   const lengthAlternate = mockLengthAlternates[config.slug];
   const sellDeckFirst =
     Boolean(linkedCheckout?.checkoutUrl) &&
     (config.slug === "sie-full-mock" || config.slug === "sie-quick-diagnostic");
-  const startBase =
-    selectedMode === "learn"
+  const startBase = showFreeDiagnostic
+    ? `Start free ${landingConfig.questionCount}-question diagnostic`
+    : selectedMode === "learn"
       ? "Start learn mode"
       : config.questionCount <= 30
         ? `Start diagnostic · ${config.questionCount} questions`
         : "Start timed exam";
-  const startSuffix = !accessHydrated
+  const startSuffix = !accessHydrated || showFreeDiagnostic
     ? ""
     : startDecision === "free"
       ? " · first mock free"
@@ -498,7 +505,11 @@ export function MockExamClient({
       ? null
       : startDecision === "paid"
         ? `Mock Pass active: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, Exam or Learn mode.`
-        : `First mock free — any exam, Exam or Learn mode, no signup. After that: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`;
+        : showFreeDiagnostic
+          ? `Free ${landingConfig.questionCount}-question diagnostic, no signup — same topic report. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
+          : freeIsShort
+            ? `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic on your first attempt. The full ${config.questionCount}-question mock and retakes: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
+            : `First mock free — any exam, Exam or Learn mode, no signup. After that: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`;
   const startButtonClass = (primary: boolean) =>
     primary
       ? "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto"
@@ -520,7 +531,9 @@ export function MockExamClient({
         <dl className="grid gap-4 sm:grid-cols-3">
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Questions</dt>
-            <dd className="mt-1 text-lg font-semibold">{config.questionCount}</dd>
+            <dd className="mt-1 text-lg font-semibold">
+              {showFreeDiagnostic ? `${landingConfig.questionCount} free · ${config.questionCount} full` : config.questionCount}
+            </dd>
           </div>
           <div>
             <dt className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">

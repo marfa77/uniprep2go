@@ -448,7 +448,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whoFor:
       "MLT students and working technicians sitting national MLT(ASCP) — not MLS candidates and not phlebotomy-only PBT.",
     howToPrepare:
-      "Run this free 60-question timed check for a topic report, then repair missed benches with the planned 60-card Anki waitlist and the official BOC content guideline. Add a full-length CAT-style bank before exam day.",
+      "Run this 60-question timed check (free 25-question version) for a topic report, then repair missed benches with the planned 60-card Anki waitlist and the official BOC content guideline. Add a full-length CAT-style bank before exam day.",
     examFaqs: [
       {
         question: "How many questions are on the ASCP MLT exam?",
@@ -550,7 +550,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "Physical therapy aide assessments cover assisting licensed PTs/PTAs with prep, transfers, and clinic safety\u2014scope is limited and state/employer-defined.",
     administeredBy: "Employer / state PT aide rules",
     officialFormat:
-      "No national published Q-count or clock. UniPrep2Go session is a free 60-question / 75-minute knowledge diagnostic for aide-scope safety — not NPTE and not PTA.",
+      "No national published Q-count or clock. UniPrep2Go session is a 60-question / 75-minute knowledge diagnostic (free 25-question version) for aide-scope safety — not NPTE and not PTA.",
     examFaqs: [
       {
         question: "Is there a national Physical Therapy Aide exam?",
@@ -602,7 +602,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians on ophthalmic optics, lenses, fitting/dispensing, instruments, and related regulations — separate from the NCLE contact-lens exam.",
     administeredBy: "ABO-NCLE",
     officialFormat:
-      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a free 60-question / 75-minute diagnostic.",
+      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a 60-question / 75-minute diagnostic (free 25-question version).",
     examFaqs: [
       {
         question: "What is the ABO Optician (NOCE) exam?",
@@ -634,7 +634,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The ACSM Certified Personal Trainer (ACSM-CPT) exam is an NCCA-accredited credential covering initial client consultation and assessment (~25%), exercise programming and implementation (~43%), exercise leadership and client education (~22%), and legal/professional responsibilities (~10%).",
     administeredBy: "American College of Sports Medicine (ACSM)",
     officialFormat:
-      "Official ACSM-CPT: 135 multiple-choice items (120 scored + 15 unidentified pretest), 150 minutes seat time, scaled passing score 550 on a 200–800 scale (verify Candidate Handbook / FAQs at acsm.org). This UniPrep2Go session is a free 60-question timed diagnostic — shorter than the live form.",
+      "Official ACSM-CPT: 135 multiple-choice items (120 scored + 15 unidentified pretest), 150 minutes seat time, scaled passing score 550 on a 200–800 scale (verify Candidate Handbook / FAQs at acsm.org). This UniPrep2Go session is a 60-question timed diagnostic (free 25-question version) — shorter than the live form.",
     examFaqs: [
       {
         question: "What is the ACSM CPT exam?",
@@ -659,7 +659,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "The NSCA-CPT certifies personal trainers through the National Strength and Conditioning Association with emphasis on safe program design.",
     administeredBy: "NSCA",
     officialFormat:
-      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. This UniPrep2Go session is a free 60-question / 75-minute text-only diagnostic — shorter than the official sitting and without video items.",
+      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. This UniPrep2Go session is a 60-question / 75-minute text-only diagnostic (free 25-question version) — shorter than the official sitting and without video items.",
     examFaqs: [
       {
         question: "How many questions are on the NSCA-CPT exam?",
@@ -684,7 +684,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "Precision Nutrition Level 1 is a nutrition coaching certification focused on behavior change and nutrition fundamentals for coaches (not an RDN credential).",
     administeredBy: "Precision Nutrition",
     officialFormat:
-      "PN L1 is a Precision Nutrition coaching certification exam (not RDN, not CPT). There is no ETS-style published national Q-count used on this page. This UniPrep2Go session is a free 60-question / 75-minute coaching diagnostic.",
+      "PN L1 is a Precision Nutrition coaching certification exam (not RDN, not CPT). There is no ETS-style published national Q-count used on this page. This UniPrep2Go session is a 60-question / 75-minute coaching diagnostic (free 25-question version).",
     examFaqs: [
       {
         question: "Is Precision Nutrition Level 1 the same as becoming an RDN?",
@@ -710,7 +710,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The NSCA Certified Strength and Conditioning Specialist (CSCS) credential is for professionals who design training programs for athletes. It is not a personal-trainer CPT (NASM, ACE, ACSM, or NSCA-CPT). Candidates typically need a bachelor’s degree and current CPR/AED, then must pass both CSCS exam sections.",
     administeredBy: "National Strength and Conditioning Association (NSCA)",
     officialFormat:
-      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is a free 60-question / 75-minute text-only diagnostic — shorter than either official paper and without video items.",
+      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is a 60-question / 75-minute text-only diagnostic (free 25-question version) — shorter than either official paper and without video items.",
     examFaqs: [
       {
         question: "What is the NSCA CSCS exam?",
@@ -740,7 +740,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "State nail technician / manicurist written exams cover infection control, nail anatomy, and service procedures required for licensure (practical often separate).",
     administeredBy: "State cosmetology boards",
     officialFormat:
-      "Official NIC National Nail Technology Theory is 110 items (100 scored) in 90 minutes. The practical/skills exam is separate. Passing scores are set by the state board (often scaled 75). This UniPrep2Go session is a free 60-question / 75-minute theory diagnostic — shorter than official theory and not Cosmetology or Barber Theory.",
+      "Official NIC National Nail Technology Theory is 110 items (100 scored) in 90 minutes. The practical/skills exam is separate. Passing scores are set by the state board (often scaled 75). This UniPrep2Go session is a 60-question / 75-minute theory diagnostic (free 25-question version) — shorter than official theory and not Cosmetology or Barber Theory.",
     examFaqs: [
       {
         question: "How many questions are on the nail technician written exam?",
@@ -770,7 +770,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whoFor:
       "Barber students sitting a NIC-style written exam — not cosmetology theory (typically 110 items) and not the practical.",
     howToPrepare:
-      "Run this free 60-question timed check, then repair infection-control, cutting/shaving, chemistry, and law misses. Add your state law packet and a practical kit drill before exam day.",
+      "Run this 60-question timed check (free 25-question version), then repair infection-control, cutting/shaving, chemistry, and law misses. Add your state law packet and a practical kit drill before exam day.",
     examFaqs: [
       {
         question: "How many questions are on the NIC Barber theory exam?",
@@ -867,7 +867,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "The HRCI Professional in Human Resources (PHR) exam certifies operational HR knowledge including talent, employee relations, and compliance.",
     administeredBy: "HRCI",
     officialFormat:
-      "Official HRCI PHR is 90 scored + 25 pretest questions in 2 hours (plus about 30 minutes administration) with a scaled pass of 500 (100–700). This UniPrep2Go session is a free 60-question / 75-minute operational-HR diagnostic — not SPHR and not SHRM-CP.",
+      "Official HRCI PHR is 90 scored + 25 pretest questions in 2 hours (plus about 30 minutes administration) with a scaled pass of 500 (100–700). This UniPrep2Go session is a 60-question / 75-minute operational-HR diagnostic (free 25-question version) — not SPHR and not SHRM-CP.",
     examFaqs: [
       {
         question: "How many questions are on the PHR exam?",
@@ -1054,7 +1054,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "State unarmed security officer exams license guards to work site security. Topics typically include law, observation, emergencies, and ethics; rules vary by state.",
     administeredBy: "State security licensing boards",
     officialFormat:
-      "Unarmed security exams are state-specific — no national published Q-count. This UniPrep2Go session is a free 60-question / 75-minute unarmed knowledge diagnostic. Firearm qualification and armed cards are separate.",
+      "Unarmed security exams are state-specific — no national published Q-count. This UniPrep2Go session is a 60-question / 75-minute unarmed knowledge diagnostic (free 25-question version). Firearm qualification and armed cards are separate.",
     examFaqs: [
       {
         question: "Is there a national unarmed security exam?",
@@ -1203,7 +1203,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The SAFE Mortgage Loan Originator National Test with Uniform State Test content licenses residential MLOs through NMLS (plus any separate state component your state still requires).",
     administeredBy: "NMLS / CSBS (SAFE MLO)",
     officialFormat:
-      "Official national test: 120 items (115 scored + 5 pretest) / 190 minutes / 75% pass (SAFE Act). Verify the NMLS MLO Testing Handbook. This UniPrep2Go session is a free 120-question / 120-minute / 70% readiness diagnostic — same item count, shorter clock, diagnostic cut.",
+      "Official national test: 120 items (115 scored + 5 pretest) / 190 minutes / 75% pass (SAFE Act). Verify the NMLS MLO Testing Handbook. This UniPrep2Go session is a 120-question / 120-minute / 70% readiness diagnostic (free 25-question version) — same item count, shorter clock, diagnostic cut.",
     examFaqs: [
       {
         question: "What is the SAFE MLO exam?",

@@ -155,7 +155,7 @@ describe("exam facts layer", () => {
     expect(profile!.exam_facts.verify_at_url).toContain("international-general-certificate");
     expect(profile!.domain_weights.length).toBeGreaterThanOrEqual(11);
     expect(profile!.candidate_qa.some((item) => /GIC2/i.test(item.a))).toBe(true);
-    expect(profile!.candidate_qa.some((item) => /free 50-question/i.test(item.a))).toBe(true);
+    expect(profile!.candidate_qa.some((item) => /50-question[^.]*\(free 25-question version\)/i.test(item.a))).toBe(true);
   });
 
   it("returns a CFPS profile with eight NFPA domains and pass/fail scoring note", () => {

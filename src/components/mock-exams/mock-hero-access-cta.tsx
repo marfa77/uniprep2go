@@ -2,6 +2,7 @@ import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import type { Deck } from "@/lib/decks";
+import { FREE_DIAGNOSTIC_QUESTIONS, hasShortFreeDiagnostic } from "@/lib/mock-exams/free-diagnostic";
 import { mockFreeAccessPriceLabel } from "@/lib/mock-exams/pricing";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -21,7 +22,9 @@ export function MockHeroAccessCta({ config, linkedCheckout, linkedDeck }: MockHe
       </p>
       <div className="mt-3 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         <a className={btnPrimary} href="#start-mock">
-          Start free {config.questionCount}-question mock
+          {hasShortFreeDiagnostic(config)
+            ? `Start free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic`
+            : `Start free ${config.questionCount}-question mock`}
         </a>
         {linkedCheckout ? (
           <TrackedCheckoutLink

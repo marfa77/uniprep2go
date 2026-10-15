@@ -29,7 +29,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Mapped to NHA CBCS themes (coding, claims, compliance, revenue cycle). Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390 — this check is a shorter diagnostic. Not an NHA certification exam.",
     description:
-      "Free 60-question NHA CBCS readiness check for medical billing and coding specialist candidates — then join the planned Anki waitlist for spaced repair.",
+      "60-question NHA CBCS readiness check (free 25-question version) for medical billing and coding specialist candidates — then join the planned Anki waitlist for spaced repair.",
     examBody: "NHA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
     lastUpdated: "2026-09-07",
@@ -48,7 +48,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "safety-docs", label: "Safety, docs & professional practice" },
     ]),
     officialSourceNote: "Mapped to NNCC CCHT knowledge themes. Not an NNCC exam.",
-    description: "Free 60-question CCHT dialysis technician readiness check.",
+    description: "60-question CCHT dialysis technician readiness check (free 25-question version).",
     examBody: "NNCC",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
@@ -72,7 +72,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Cognitive-only BLS concepts aligned to 2025 AHA themes. Official HeartCode BLS cognitive is about 25 questions, open-resource, 84% pass, plus in-person Adult CPR/AED and Infant CPR skills — this check is a longer 60Q / 45 min diagnostic, not a course card.",
     description:
-      "Free 60-question AHA BLS Provider cognitive readiness check (not a substitute for skills testing).",
+      "60-question AHA BLS Provider cognitive readiness check (free 25-question version) (not a substitute for skills testing).",
     examBody: "American Heart Association",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2). 2025 infant compressions and FBAO keys point-fixed 2026-10-04.",
     lastUpdated: "2026-10-04",
@@ -92,7 +92,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     ]),
     officialSourceNote:
       "National nurse aide knowledge themes (state packs vary). Not a state NNAAP exam.",
-    description: "Free 60-question CNA knowledge readiness check for nurse aide candidates.",
+    description: "60-question CNA knowledge readiness check (free 25-question version) for nurse aide candidates.",
     examBody: "Credentia / state NNAAP",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -112,7 +112,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "NIC Cosmetology Theory themes (scientific concepts, hair, skin/nails). Official NIC form is typically 110 items (100 scored) / 90 minutes — this check is a shorter diagnostic. State CIBs and pass scores vary. Not a PSI/NIC exam.",
     description:
-      "Free 60-question cosmetology theory readiness check (NIC-style) — then join the planned Anki waitlist for spaced repair.",
+      "60-question cosmetology theory readiness check (free 25-question version) (NIC-style) — then join the planned Anki waitlist for spaced repair.",
     examBody: "NIC / PSI / state board",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
     lastUpdated: "2026-09-07",
@@ -131,7 +131,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "physio", label: "Physiological integrity" },
     ]),
     officialSourceNote: "Client-needs style PN readiness diagnostic. Not an NCSBN NCLEX exam.",
-    description: "Free 60-question NCLEX-PN readiness check with client-needs scoring.",
+    description: "60-question NCLEX-PN readiness check (free 25-question version) with client-needs scoring.",
     examBody: "NCSBN",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -149,7 +149,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "nutrition-biz", label: "Nutrition, behavior & business" },
     ]),
     officialSourceNote: "Mapped to NASM CPT knowledge domains. Not a NASM exam.",
-    description: "Free 60-question NASM CPT readiness check for personal trainer candidates.",
+    description: "60-question NASM CPT readiness check (free 25-question version) for personal trainer candidates.",
     examBody: "NASM",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
@@ -167,7 +167,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "laws-business", label: "Laws & professional practice" },
     ]),
     officialSourceNote: "NIC-style esthetician theory themes. Not a state board exam.",
-    description: "Free 60-question esthetician theory readiness check.",
+    description: "60-question esthetician theory readiness check (free 25-question version).",
     examBody: "NIC / state board",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -185,7 +185,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "security-rules", label: "Security awareness & rules" },
     ]),
     officialSourceNote: "FMCSA HazMat endorsement knowledge themes. Not a TSA/DMV exam.",
-    description: "Free 60-question CDL HazMat endorsement readiness check.",
+    description: "60-question CDL HazMat endorsement readiness check (free 25-question version).",
     examBody: "TSA / state DMV",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -203,7 +203,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "practice", label: "Practice management & policy" },
     ]),
     officialSourceNote: "ASWB Masters content outline themes. Not an ASWB exam.",
-    description: "Free 60-question ASWB Masters readiness check for LMSW candidates.",
+    description: "60-question ASWB Masters readiness check (free 25-question version) for LMSW candidates.",
     examBody: "ASWB",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -221,7 +221,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "prohibited", label: "Prohibited practices & rules" },
     ]),
     officialSourceNote: "FMCSA passenger endorsement themes. Not a state DMV exam.",
-    description: "Free 60-question CDL Passenger (P) endorsement readiness check.",
+    description: "60-question CDL Passenger (P) endorsement readiness check (free 25-question version).",
     examBody: "State DMV / FMCSA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -239,7 +239,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "nutrition-biz", label: "Nutrition, behavior & business" },
     ]),
     officialSourceNote: "ISSA CPT knowledge themes. Not an ISSA exam.",
-    description: "Free 60-question ISSA CPT readiness check.",
+    description: "60-question ISSA CPT readiness check (free 25-question version).",
     examBody: "ISSA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -258,7 +258,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     ]),
     officialSourceNote:
       "Independent diagnostic on NY DOS salesperson themes. Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail only). This UniPrep2Go mock is 60 questions / 90 minutes / 70% readiness target. Not NYDOS exam material.",
-    description: "Free 60-question New York real estate salesperson readiness check.",
+    description: "60-question New York real estate salesperson readiness check (free 25-question version).",
     examBody: "NY DOS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -278,7 +278,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent diagnostic on CDA Competency Standards themes. Official CDA Exam (Council for Professional Recognition, Pearson VUE): 65 multiple-choice questions (60 standard + 5 photo scenarios), 1 hour 45 minutes, pass/fail with no published cut score. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not Council exam material.",
     description:
-      "Free 60-question Child Development Associate (CDA) practice test with scenario questions across safe and healthy environments, child development, positive guidance, and family partnerships — topic scores show what to review before the Pearson VUE exam.",
+      "60-question Child Development Associate (CDA) practice test (free 25-question version) with scenario questions across safe and healthy environments, child development, positive guidance, and family partnerships — topic scores show what to review before the Pearson VUE exam.",
     examBody: "Council for Professional Recognition",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -298,7 +298,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "ACE CPT competency themes (client screening, program design, instruction, professional conduct). Independent readiness check — not an American Council on Exercise exam. Session samples 60 from a larger sale bank.",
     description:
-      "Free 60-question ACE CPT practice test (75 min, 70% readiness) with topic scoring — pairs with the 300-card ACE CPT Anki deck.",
+      "60-question ACE CPT practice test (free 25-question version) (75 min, 70% readiness) with topic scoring — pairs with the 300-card ACE CPT Anki deck.",
     examBody: "American Council on Exercise (ACE)",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2 ACE CPT 300).",
     ankiDeckCardCount: 300,
@@ -317,7 +317,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "rules", label: "School bus rules & prohibited acts" },
     ]),
     officialSourceNote: "FMCSA school bus endorsement themes. Not a state DMV exam.",
-    description: "Free 60-question CDL School Bus (S) endorsement readiness check.",
+    description: "60-question CDL School Bus (S) endorsement readiness check (free 25-question version).",
     examBody: "State DMV / FMCSA",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
@@ -337,7 +337,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Official NBRC TMC: 160 multiple-choice items (140 scored + 20 pretest) in 3 hours; low cut score earns CRT, high cut score adds CSE eligibility. Content outline: Patient Data 50, Troubleshooting/QC/Infection Control 20, Initiation & Modification of Interventions 70 scored items. TMC ends December 31, 2026 (last application December 15, 2026); from January 4, 2027 the single NBRC Respiratory Therapy (RT) Examination replaces TMC + CSE: 185 items (160 scored) in 4 hours, low cut = CRT, high cut = RRT. This 60-question, 75-minute check is a shorter diagnostic across the clinical content both exams share. Not an NBRC exam.",
     description:
-      "Free 60-question NBRC TMC and 2027 RT Examination readiness check: ABGs, ventilator management, equipment troubleshooting, neonatal and emergency scenarios, drawn from a 120-question bank with a weak-topic report.",
+      "60-question NBRC TMC and 2027 RT Examination readiness check (free 25-question version): ABGs, ventilator management, equipment troubleshooting, neonatal and emergency scenarios, drawn from a 120-question bank with a weak-topic report.",
     examBody: "NBRC",
     questionSourceNote:
       "Original UniPrep2Go 120-question scenario bank (36 patient data / 24 equipment & infection control / 36 interventions / 24 emergency, neonatal & pediatric), rewritten 2026-10-09 to the TMC outline areas that carry into the 2027 RT Examination. Each attempt draws 60 (18/12/18/12). Not NBRC SAE or exam items.",
@@ -357,7 +357,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "laws", label: "Laws, storage & environment" },
     ]),
     officialSourceNote: "State structural applicator knowledge themes. Not a state exam.",
-    description: "Free 60-question structural pest control applicator readiness check.",
+    description: "60-question structural pest control applicator readiness check (free 25-question version).",
     examBody: "State agriculture department",
     questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
   }),
@@ -375,7 +375,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "law-ethics", label: "Law, ethics & safety" },
     ]),
     officialSourceNote: "AAMA CMA exam content themes. Not an AAMA certification exam.",
-    description: "Free 60-question AAMA CMA readiness check for medical assistant candidates.",
+    description: "60-question AAMA CMA readiness check (free 25-question version) for medical assistant candidates.",
     examBody: "AAMA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -393,7 +393,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "office", label: "Office operations & ethics" },
     ]),
     officialSourceNote: "DANB GC / CDA pathway themes. Not a DANB exam.",
-    description: "Free 60-question DANB General Chairside readiness check.",
+    description: "60-question DANB General Chairside readiness check (free 25-question version).",
     examBody: "DANB",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -411,7 +411,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "eval-ethics", label: "Evaluation, ethics & community" },
     ]),
     officialSourceNote: "NBDHE content themes (text). Not a JCNDE/ADA exam.",
-    description: "Free 60-question NBDHE dental hygiene readiness check.",
+    description: "60-question NBDHE dental hygiene readiness check (free 25-question version).",
     examBody: "JCNDE / ADA",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
   }),
@@ -431,7 +431,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Official ASCP BOC MLS(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This free check is a shorter 60-question / 90-minute linear diagnostic on four benches (blood bank, chemistry, hematology, microbiology/immunology) — not CAT and not MLT. Independent UniPrep2Go practice — not ASCP BOC material.",
     description:
-      "Free 60-question ASCP MLS readiness check (90 min) with topic scoring — shorter than the official 100-question CAT.",
+      "60-question ASCP MLS readiness check (free 25-question version) (90 min) with topic scoring — shorter than the official 100-question CAT.",
     examBody: "ASCP Board of Certification",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
     searchAliases: ["MLS", "ASCP MLS", "medical laboratory scientist", "CLS"],
@@ -477,7 +477,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "CDR Registration Examination for Dietitians (2022–2026 outline): computer-adaptive, 125–145 items (100–120 scored + 25 pretest), 3 hours, scaled pass 25/50. Domains — Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%. From January 1, 2027 the 2027–2031 outline regroups these into Fundamentals 23%, Community and Public Health 22%, Human Nutrition and MNT 40%, Food Science and Food Systems 15%; this check still uses the 2022–2026 domains. This UniPrep2Go check is a 120-question / 120-minute diagnostic, not a CDR exam.",
     description:
-      "Free 120-question Registered Dietitian (RDN) exam readiness check across CDR’s four domains — principles, nutrition care, management, and foodservice.",
+      "120-question Registered Dietitian (RDN) exam readiness check (free 25-question version) across CDR’s four domains — principles, nutrition care, management, and foodservice.",
     examBody: "CDR (Commission on Dietetic Registration)",
     lastUpdated: "2026-10-05",
     questionSourceNote:

@@ -18,7 +18,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
     mockLabel: "Take the free FINRA SIE mock",
     deckLabel: "Drill weak topics with the Anki deck",
     summary:
-      "Take the free 75-question FINRA SIE mock → get your pass/no-pass report → drill options, bonds, and accounts with the Anki deck.",
+      "Take the 75-question FINRA SIE mock (free 25-question version) → get your pass/no-pass report → drill options, bonds, and accounts with the Anki deck.",
   },
   sections: [
     {

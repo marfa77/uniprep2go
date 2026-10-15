@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { freeAccessClause } from "@/lib/mock-exams/free-diagnostic";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalogDeckBySlug } from "@/lib/decks";
@@ -131,7 +132,7 @@ export function MockExamSnapshot({ config }: { config: MockExamConfig }) {
     { label: "Exam body", value: config.examBody },
     {
       label: "Status",
-      value: waitlist ? "Coming soon" : config.status === "live" ? "Live · first mock free" : "Preview",
+      value: waitlist ? "Coming soon" : config.status === "live" ? `Live · ${freeAccessClause(config)}` : "Preview",
     },
   ];
 

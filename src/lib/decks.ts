@@ -380,9 +380,9 @@ const rawDecks: Deck[] = [
     title: "CFA Level 1 Anki Deck — 348 Smart Flashcards",
     shortName: "CFA Level 1",
     subtitle:
-      "Focused 342-card CFA Level 1 Anki deck + free 60-question timed mock — not a 1,600-card dump.",
+      "Focused 342-card CFA Level 1 Anki deck + 60-question timed mock (free 25-question version) — not a 1,600-card dump.",
     directAnswer:
-      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a free 60-question timed readiness-check mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
+      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a 60-question timed readiness-check (free 25-question version) mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
     lastUpdated: "2026-09-29",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
@@ -422,17 +422,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best CFA Level 1 Anki deck for 2026?",
         answer:
-          "Prefer a focused ~342-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + free 60-question readiness check + optional 2026 formula PDF.",
+          "Prefer a focused ~342-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
       },
       {
         question: "What is included in the CFA Level 1 Anki deck?",
         answer:
-          "348 Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked free 60-question timed mock and a matching printable formula reference PDF.",
+          "348 Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked 60-question timed mock (free 25-question version) and a matching printable formula reference PDF.",
       },
       {
         question: "Is there a free CFA Level 1 practice test with this deck?",
         answer:
-          "Yes. Take the free 60-question CFA Level 1 readiness check at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — topic scoring and full answer review, then drill weak areas in this Anki deck.",
+          "Yes. Take the 60-question CFA Level 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — topic scoring and full answer review, then drill weak areas in this Anki deck.",
       },
       {
         question: "What file format is delivered?",
@@ -515,7 +515,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
-      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 348-card Anki deck and free 60-question timed mock. Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
+      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 348-card Anki deck and 60-question timed mock (free 25-question version). Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
     lastUpdated: "2026-09-29",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
@@ -585,7 +585,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free practice test?",
         answer:
-          "Yes. Take the free 60-question CFA Level 1 readiness check at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — it scores topic gaps and links back to this deck.",
+          "Yes. Take the 60-question CFA Level 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — it scores topic gaps and links back to this deck.",
       },
       {
         question: "Is this official CFA Institute material?",
@@ -628,9 +628,9 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "FRM Part 1 Anki Deck — 444 Exam Flashcards",
     shortName: "FRM Part 1",
-    subtitle: "444 FRM Part 1 Anki cards + free 50-question timed practice test — VaR, ES, Greeks, credit risk.",
+    subtitle: "444 FRM Part 1 Anki cards + 50-question timed practice test (free 25-question version) — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a free 50-question timed readiness-check mock with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
+      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a 50-question timed readiness-check (free 25-question version) mock with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
     lastUpdated: "2026-10-02",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
@@ -675,17 +675,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best FRM Part 1 Anki deck?",
         answer:
-          "Look for a Part 1–scoped deck with VaR/ES, Greeks, credit risk, and markets cards plus a free timed practice test for topic gaps. UniPrep2Go’s FRM Part 1 Anki deck is 444 cards with a linked free 50-question readiness check.",
+          "Look for a Part 1–scoped deck with VaR/ES, Greeks, credit risk, and markets cards plus a free timed practice test for topic gaps. UniPrep2Go’s FRM Part 1 Anki deck is 444 cards with a linked 50-question readiness check (free 25-question version).",
       },
       {
         question: "What does the FRM Part 1 deck include?",
         answer:
-          "444 Anki cards across all four Part 1 books (89 foundations, 89 quant, 133 markets and products, 133 valuation and risk models). Each card asks a real exam question, explains the rule, works a numeric example where it applies, and names the common mistake; 176 cards carry MathJax formulas. Plus a free 50-question timed mock.",
+          "444 Anki cards across all four Part 1 books (89 foundations, 89 quant, 133 markets and products, 133 valuation and risk models). Each card asks a real exam question, explains the rule, works a numeric example where it applies, and names the common mistake; 176 cards carry MathJax formulas. Plus a 50-question timed mock (free 25-question version).",
       },
       {
         question: "Is there a free FRM Part 1 practice test?",
         answer:
-          "Yes. Take the free 50-question FRM Part 1 readiness check at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each attempt draws from a 100-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
+          "Yes. Take the 50-question FRM Part 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each attempt draws from a 100-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
       },
       {
         question: "Is this a question bank?",
@@ -788,9 +788,9 @@ const rawDecks: Deck[] = [
     title: "Series 7 Flashcards — 300 High-Yield Top-Off Cards + Free Timed Mock",
     shortName: "Series 7",
     subtitle:
-      "Series 7 flashcards: 300 FINRA Top-Off Anki cards + free 60-question timed practice test — suitability, products, order flow.",
+      "Series 7 flashcards: 300 FINRA Top-Off Anki cards + 60-question timed practice test (free 25-question version) — suitability, products, order flow.",
     directAnswer:
-      "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (first mock free, no signup) with job-function scoring. The official exam is 125 scored + 5 pretest in 3 hours 45 minutes; passing score 72 equated. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
+      "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (free 25-question diagnostic, no signup) with job-function scoring. The official exam is 125 scored + 5 pretest in 3 hours 45 minutes; passing score 72 equated. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
     lastUpdated: "2026-10-05",
     audience:
       "Series 7 candidates searching for flashcards after the SIE, sponsored registered-rep trainees, and anyone who needs Top-Off product/suitability recall plus a free timed mock — not Series 63 state-law flashcards.",
@@ -865,7 +865,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Series 7 practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a free 60-question / 90-minute Series 7 readiness check with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated) — our mock is a shorter diagnostic before you drill this 300-card deck.",
+          "Yes. UniPrep2Go hosts a 60-question / 90-minute Series 7 readiness check (free 25-question version) with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated) — our mock is a shorter diagnostic before you drill this 300-card deck.",
       },
       {
         question: "Does the deck replace Series 7 practice questions?",
@@ -880,9 +880,9 @@ const rawDecks: Deck[] = [
     title: "Series 63 Flashcards — 250 High-Yield NASAA Cards + Free Timed Mock",
     shortName: "Series 63",
     subtitle:
-      "Series 63 flashcards: 250 NASAA Anki cards + free 60-question timed practice test — registration, ethics, communications.",
+      "Series 63 flashcards: 250 NASAA Anki cards + 60-question timed practice test (free 25-question version) — registration, ethics, communications.",
     directAnswer:
-      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a 60-question timed Series 63 practice test (first mock free, no signup) in NASAA's exact scored area mix, with topic readiness scoring. The official exam is 65 questions (60 scored + 5 pretest) in 75 minutes; passing is 43 of 60 scored. Card counts follow NASAA's weights (ethics 63, communications 50, agents 33, broker-dealers 30, remedies 28), and every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
+      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a 60-question timed Series 63 practice test (free 25-question diagnostic, no signup) in NASAA's exact scored area mix, with topic readiness scoring. The official exam is 65 questions (60 scored + 5 pretest) in 75 minutes; passing is 43 of 60 scored. Card counts follow NASAA's weights (ethics 63, communications 50, agents 33, broker-dealers 30, remedies 28), and every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
     lastUpdated: "2026-10-02",
     audience:
       "Series 63 candidates searching for flashcards, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
@@ -968,9 +968,9 @@ const rawDecks: Deck[] = [
     title: "California Real Estate Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "California Real Estate",
     subtitle:
-      "250 California DRE salesperson Anki cards + free 60-question CA practice test — agency, disclosures, math.",
+      "250 California DRE salesperson Anki cards + 60-question CA practice test (free 25-question version) — agency, disclosures, math.",
     directAnswer:
-      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 250 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a free 60-question timed California practice test with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
+      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 250 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a 60-question timed California practice test (free 25-question version) with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
     lastUpdated: "2026-09-29",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
@@ -1020,17 +1020,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best California real estate exam Anki deck?",
         answer:
-          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 250 cards plus a free 60-question readiness check.",
+          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 250 cards plus a 60-question readiness check (free 25-question version).",
       },
       {
         question: "What does the California Real Estate deck include?",
         answer:
-          "250 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a free 60-question California practice test.",
+          "250 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a 60-question California practice test (free 25-question version).",
       },
       {
         question: "Is there a free California real estate practice test?",
         answer:
-          "Yes. Take the free 60-question California real estate readiness check at uniprep2go.study/mock-exams/california-real-estate-readiness-check, then drill weak topics in this Anki deck.",
+          "Yes. Take the 60-question California real estate readiness check (free 25-question version) at uniprep2go.study/mock-exams/california-real-estate-readiness-check, then drill weak topics in this Anki deck.",
       },
       {
         question: "Who is this deck for?",
@@ -1060,9 +1060,9 @@ const rawDecks: Deck[] = [
     title: "Life & Health Insurance Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "Life & Health Insurance",
     subtitle:
-      "250 Life & Health insurance flashcards + free 60-question timed practice test — provisions, annuities, Medicare.",
+      "250 Life & Health insurance flashcards + 60-question timed practice test (free 25-question version) — provisions, annuities, Medicare.",
     directAnswer:
-      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 250 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a 60-question timed Life & Health readiness check (first mock free, no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
+      "UniPrep2Go sells an independent Life & Health Insurance Exam Anki deck with 250 high-yield cards covering national core topics tested across Life & Health insurance producer exams: general insurance principles, life insurance policy types, policy provisions and riders, annuities, health insurance plans and cost-sharing, disability income and long-term care, Medicare basics, and tax treatment, replacement, ethics, and producer responsibilities — plus a 60-question timed Life & Health readiness check (free 25-question diagnostic, no signup). Delivered as an Anki .apkg file for {PRICE} through Gumroad. Supplementary active-recall study aid — not official state exam material.",
     lastUpdated: "2026-09-21",
     audience:
       "Life & Health insurance license candidates, new insurance producers, career changers entering insurance sales, pre-licensing students, and candidates who want active recall for policy provisions, riders, annuities, health plans, and insurance terminology.",
@@ -1232,7 +1232,7 @@ const rawDecks: Deck[] = [
     shortName: "CFA Level 2",
     subtitle: "A vignette-depth Anki deck for CFA Level 2 item sets — not a Level 1 leftover dump.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topics (2026 weights 5–15%), including FSA adjustments, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Official Level 2 is 88 item-set questions in 22 vignettes over two 132-minute sessions (4h24); this product pairs with a free 60-question / 120-minute diagnostic, not a CFA Institute mock. Delivered as an Anki .apkg for {PRICE} through Gumroad. Supplementary spaced-repetition aid — not official CFA Institute curriculum.",
+      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topics (2026 weights 5–15%), including FSA adjustments, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Official Level 2 is 88 item-set questions in 22 vignettes over two 132-minute sessions (4h24); this product pairs with a 60-question / 120-minute diagnostic (free 25-question version), not a CFA Institute mock. Delivered as an Anki .apkg for {PRICE} through Gumroad. Supplementary spaced-repetition aid — not official CFA Institute curriculum.",
     lastUpdated: "2026-10-04",
     audience: "CFA Level 2 candidates who want structured recall practice for vignette-depth formulas, concepts, and application-level definitions.",
     format: ".apkg",
@@ -1325,7 +1325,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) across all 10 Level 2 topics, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Same bank as the 495-card Anki deck and the free 60-question timed mock. US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
+      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) across all 10 Level 2 topics, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Same bank as the 495-card Anki deck and the 60-question timed mock (free 25-question version). US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
     lastUpdated: "2026-10-04",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
@@ -1395,7 +1395,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CFA Level 2 practice test?",
         answer:
-          "Yes. Take the free 60-question CFA Level 2 readiness check at uniprep2go.study/mock-exams/cfa-level-2-readiness-check — topic scoring and full answer review, then drill weak vignette areas with this PDF and the companion Anki deck.",
+          "Yes. Take the 60-question CFA Level 2 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-2-readiness-check — topic scoring and full answer review, then drill weak vignette areas with this PDF and the companion Anki deck.",
       },
       {
         question: "Is this official CFA Institute material?",
@@ -2852,7 +2852,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "Two .apkg files for both Spanish nationality tests: 2,120 DELE A2 vocabulary cards with audio + 343 CCSE civics cards.",
     directAnswer:
-      "UniPrep2Go sells a DELE A2 + CCSE Spanish nationality Anki bundle with 2,463 cards in two .apkg files: 2,120 DELE A2 vocabulary cards (picture, Spanish example sentence, native audio) and 343 CCSE question-and-answer civics cards on the Constitution, institutions, geography, history and daily life. Official Cervantes CCSE is 25 questions / 45 minutes / 60%; start with the free 60-question CCSE readiness check. Delivered for {PRICE} through Gumroad.",
+      "UniPrep2Go sells a DELE A2 + CCSE Spanish nationality Anki bundle with 2,463 cards in two .apkg files: 2,120 DELE A2 vocabulary cards (picture, Spanish example sentence, native audio) and 343 CCSE question-and-answer civics cards on the Constitution, institutions, geography, history and daily life. Official Cervantes CCSE is 25 questions / 45 minutes / 60%; start with the 60-question CCSE readiness check (free 25-question version). Delivered for {PRICE} through Gumroad.",
     lastUpdated: "2026-10-03",
     audience: "Spanish nationality-by-residence applicants who need DELE A2 (or higher) plus the CCSE.",
     format: ".apkg",
@@ -2878,7 +2878,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CCSE practice test?",
         answer:
-          "Yes. Take the free 60-question CCSE (España) readiness check at /mock-exams/ccse-espana-readiness-check, then repair weak topics with the 343 CCSE cards. Official Cervantes CCSE is 25 questions / 45 minutes / 60%.",
+          "Yes. Take the 60-question CCSE (España) readiness check (free 25-question version) at /mock-exams/ccse-espana-readiness-check, then repair weak topics with the 343 CCSE cards. Official Cervantes CCSE is 25 questions / 45 minutes / 60%.",
       },
       {
         question: "Is this official exam material?",
@@ -2947,7 +2947,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Swiss citizenship practice test?",
         answer:
-          "Yes. Free 60-question readiness checks are live in German (/mock-exams/swiss-citizenship-readiness-check), French (/mock-exams/naturalisation-suisse-readiness-check), and Italian (/mock-exams/naturalizzazione-svizzera-readiness-check).",
+          "Yes. 60-question readiness checks (free 25-question version) are live in German (/mock-exams/swiss-citizenship-readiness-check), French (/mock-exams/naturalisation-suisse-readiness-check), and Italian (/mock-exams/naturalizzazione-svizzera-readiness-check).",
       },
       {
         question: "Is this official SEM / cantonal exam material?",
@@ -3072,7 +3072,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free GMAT practice test?",
         answer:
-          "Yes. Take the free 45-question GMAT readiness check at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review. The paid Anki deck includes 200 unique cards from the same October 2026 bank.",
+          "Yes. Take the 45-question GMAT readiness check (free 25-question version) at uniprep2go.study/mock-exams/gmat-focus-readiness-check — timed section scoring and full answer review. The paid Anki deck includes 200 unique cards from the same October 2026 bank.",
       },
       {
         question: "How many cards are in the GMAT Focus Anki deck?",
@@ -3139,7 +3139,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Digital SAT practice test?",
         answer:
-          "Yes. Take the free 49-question Digital SAT readiness check at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 160 cards from the same validated bank for daily drilling.",
+          "Yes. Take the 49-question Digital SAT readiness check (free 25-question version) at uniprep2go.study/mock-exams/sat-readiness-check — scored on Reading and Writing and Math with full answer review. The paid Anki deck includes 160 cards from the same validated bank for daily drilling.",
       },
       {
         question: "How is this mock scored compared with the real SAT?",
@@ -3217,7 +3217,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free PMP practice test?",
         answer:
-          "Yes. Take the free 51-question PMP readiness check at uniprep2go.study/mock-exams/pmp-readiness-check — scored on People, Process, and Business Environment with full answer review. The paid Anki deck includes 346 cards from the same validated bank for daily drilling.",
+          "Yes. Take the 51-question PMP readiness check (free 25-question version) at uniprep2go.study/mock-exams/pmp-readiness-check — scored on People, Process, and Business Environment with full answer review. The paid Anki deck includes 346 cards from the same validated bank for daily drilling.",
       },
       {
         question: "How is this mock scored compared with the real PMP?",
@@ -3242,7 +3242,7 @@ const rawDecks: Deck[] = [
     shortName: "GRE",
     subtitle: "Anki deck for GRE Verbal Reasoning and Quantitative Reasoning.",
     directAnswer:
-      "The GRE General Anki Deck is a live UniPrep2Go product with 350 unique flashcards — 175 Verbal and 175 Quant — from the same bank as the free 30-question / 45-minute GRE readiness check (both axes required). Buy the .apkg on Gumroad. Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
+      "The GRE General Anki Deck is a live UniPrep2Go product with 350 unique flashcards — 175 Verbal and 175 Quant — from the same bank as the 30-question / 45-minute GRE readiness check (free 25-question version) (both axes required). Buy the .apkg on Gumroad. Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
     lastUpdated: "2026-10-04",
     audience:
       "Graduate school applicants preparing for the ETS GRE General Test using spaced repetition alongside PowerPrep.",
@@ -3290,7 +3290,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free GRE practice test?",
         answer:
-          "Yes. Take the free 30-question GRE General readiness check at uniprep2go.study/mock-exams/gre-readiness-check — scored on Verbal and Quant with full answer review. The paid Anki deck includes 350 cards from the same validated bank for daily drilling.",
+          "Yes. Take the 30-question GRE General readiness check (free 25-question version) at uniprep2go.study/mock-exams/gre-readiness-check — scored on Verbal and Quant with full answer review. The paid Anki deck includes 350 cards from the same validated bank for daily drilling.",
       },
       {
         question: "How is this mock scored compared with the real GRE?",
@@ -3445,7 +3445,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free MRICS practice test?",
         answer:
-          "Yes. Take the free 50-question APC readiness check at uniprep2go.study/mock-exams/mrics-readiness-check.",
+          "Yes. Take the 50-question APC readiness check (free 25-question version) at uniprep2go.study/mock-exams/mrics-readiness-check.",
       },
       {
         question: "Does this replace the RICS APC submission or interview?",
@@ -3516,7 +3516,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free MRICS Quantity Surveying practice test?",
         answer:
-          "Yes. Take the free 50-question QS pathway readiness check at uniprep2go.study/mock-exams/mrics-quantity-surveying-readiness-check — competency scoring, then drill weak rows in this Anki deck.",
+          "Yes. Take the 50-question QS pathway readiness check (free 25-question version) at uniprep2go.study/mock-exams/mrics-quantity-surveying-readiness-check — competency scoring, then drill weak rows in this Anki deck.",
       },
       {
         question: "How is this different from the general MRICS readiness check?",
@@ -3581,7 +3581,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CFPS practice test?",
         answer:
-          "Yes. Take the free 80-question readiness check at uniprep2go.study/mock-exams/cfps-readiness-check.",
+          "Yes. Take the 80-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfps-readiness-check.",
       },
       {
         question: "Does this replace NFPA's official CFPS practice examination?",
@@ -3659,7 +3659,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free NEBOSH practice test?",
         answer:
-          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/nebosh-readiness-check.",
+          "Yes. Take the 50-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/nebosh-readiness-check.",
       },
       {
         question: "Does this replace NEBOSH official assessments?",
@@ -3681,7 +3681,7 @@ const rawDecks: Deck[] = [
     shortName: "CDCP",
     subtitle: "250 Anki flashcards for EXIN EPI Certified Data Centre Professional (CDCP) exam prep.",
     directAnswer:
-      "The CDCP Anki Deck is a UniPrep2Go product with 250 MCQ flashcards covering EXIN EPI Certified Data Centre Professional domains — site/standards, power & EMF, cooling, fire/security, and operations — plus a free 40-question timed readiness check.",
+      "The CDCP Anki Deck is a UniPrep2Go product with 250 MCQ flashcards covering EXIN EPI Certified Data Centre Professional domains — site/standards, power & EMF, cooling, fire/security, and operations — plus a 40-question timed readiness check (free 25-question version).",
     lastUpdated: "2026-08-14",
     audience:
       "Data centre operators, facility engineers, and IT infrastructure professionals preparing for the EXIN EPI CDCP credential after accredited EPI training.",
@@ -3724,7 +3724,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CDCP practice test?",
         answer:
-          "Yes. Take the free 40-question readiness check at uniprep2go.study/mock-exams/cdcp-readiness-check.",
+          "Yes. Take the 40-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/cdcp-readiness-check.",
       },
       {
         question: "Does this replace EXIN or EPI official training?",
@@ -3789,7 +3789,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free ASHRAE certification practice test?",
         answer:
-          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/ashrae-certifications-readiness-check.",
+          "Yes. Take the 50-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/ashrae-certifications-readiness-check.",
       },
       {
         question: "Does this replace ASHRAE official practice exams?",
@@ -3853,7 +3853,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED Green Associate practice test?",
         answer:
-          "Yes. Take the free 60-question LEED GA readiness check at uniprep2go.study/mock-exams/leed-green-associate-readiness-check.",
+          "Yes. Take the 60-question LEED GA readiness check (free 25-question version) at uniprep2go.study/mock-exams/leed-green-associate-readiness-check.",
       },
       {
         question: "Is this official USGBC material?",
@@ -3912,7 +3912,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED AP BD+C practice test?",
         answer:
-          "Yes. Take the free 60-question readiness check at uniprep2go.study/mock-exams/leed-ap-bd-c-readiness-check.",
+          "Yes. Take the 60-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/leed-ap-bd-c-readiness-check.",
       },
       {
         question: "Do I need LEED Green Associate first?",
@@ -3972,7 +3972,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free LEED AP O+M practice test?",
         answer:
-          "Yes. Take the free 60-question / 75-minute LEED AP O+M readiness check at uniprep2go.study/mock-exams/leed-ap-om-readiness-check. The Anki deck holds the same 120 LEED v5 items as cards.",
+          "Yes. Take the 60-question / 75-minute LEED AP O+M readiness check (free 25-question version) at uniprep2go.study/mock-exams/leed-ap-om-readiness-check. The Anki deck holds the same 120 LEED v5 items as cards.",
       },
       {
         question: "Do I need LEED Green Associate before LEED AP O+M?",
@@ -4039,7 +4039,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free WELL AP practice test?",
         answer:
-          "Yes. Take the free 50-question readiness check at uniprep2go.study/mock-exams/well-ap-readiness-check.",
+          "Yes. Take the 50-question readiness check (free 25-question version) at uniprep2go.study/mock-exams/well-ap-readiness-check.",
       },
       {
         question: "Is WELL AP the same as LEED AP?",
@@ -4059,9 +4059,9 @@ const rawDecks: Deck[] = [
     coverImage: "/covers/cem-anki-deck.webp",
     title: "Certified Energy Manager (CEM) Anki Deck",
     shortName: "CEM",
-    subtitle: "Anki deck for the AEE CEM Body of Knowledge — 250 cards plus a free 50-question timed mock.",
+    subtitle: "Anki deck for the AEE CEM Body of Knowledge — 250 cards plus a 50-question timed mock (free 25-question version).",
     directAnswer:
-      "UniPrep2Go sells a live UniPrep2Go CEM Anki deck: 250 independent flashcards across five grouped AEE Body of Knowledge domains (policy/audits/economics, electrical/lighting, HVAC/envelope/BAS, industrial/boiler/renewables, commissioning/ESPC/M&V) plus a free 50-question / 50-minute timed readiness check. Official CEM is 130 questions in 4 hours, open book, scaled pass 700 — this deck is not AEE material and is not the paid 65-question AEE self-eval.",
+      "UniPrep2Go sells a live UniPrep2Go CEM Anki deck: 250 independent flashcards across five grouped AEE Body of Knowledge domains (policy/audits/economics, electrical/lighting, HVAC/envelope/BAS, industrial/boiler/renewables, commissioning/ESPC/M&V) plus a 50-question / 50-minute timed readiness check (free 25-question version). Official CEM is 130 questions in 4 hours, open book, scaled pass 700 — this deck is not AEE material and is not the paid 65-question AEE self-eval.",
     lastUpdated: "2026-10-06",
     audience: "Energy managers, facility engineers, and sustainability professionals pursuing AEE CEM certification.",
     format: ".apkg",
@@ -4103,7 +4103,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CEM practice test?",
         answer:
-          "Yes. Take the free 50-question / 50-minute CEM readiness check at uniprep2go.study/mock-exams/cem-readiness-check. Official AEE CEM is 130 questions / 4 hours; AEE also sells a separate 65-question / 2-hour self-eval with no answer key.",
+          "Yes. Take the 50-question / 50-minute CEM readiness check (free 25-question version) at uniprep2go.study/mock-exams/cem-readiness-check. Official AEE CEM is 130 questions / 4 hours; AEE also sells a separate 65-question / 2-hour self-eval with no answer key.",
       },
       {
         question: "Is this official AEE material?",
@@ -4162,7 +4162,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free BMS practice test?",
         answer:
-          "Yes. Take the free 60-question BMS readiness check at uniprep2go.study/mock-exams/bms-bas-readiness-check — timed topic scoring and full answer review.",
+          "Yes. Take the 60-question BMS readiness check (free 25-question version) at uniprep2go.study/mock-exams/bms-bas-readiness-check — timed topic scoring and full answer review.",
       },
       {
         question: "Does this replace Tridium Niagara 4 TCP?",
@@ -4227,7 +4227,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free EPA 608 practice test?",
         answer:
-          "Yes. Take the free 40-question EPA 608 readiness check at uniprep2go.study/mock-exams/epa-608-readiness-check — timed section scoring and full answer review.",
+          "Yes. Take the 40-question EPA 608 readiness check (free 25-question version) at uniprep2go.study/mock-exams/epa-608-readiness-check — timed section scoring and full answer review.",
       },
       {
         question: "When will the HVAC EPA 608 Anki deck be available?",
@@ -4249,7 +4249,7 @@ const rawDecks: Deck[] = [
     shortName: "ServSafe Manager",
     subtitle: "A focused Anki deck for ServSafe Manager food safety review.",
     directAnswer:
-      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the free 90-question / 120-minute ServSafe Manager mock (official form: 80 scored + 10 pilot / 2 hours; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
+      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the 90-question / 120-minute ServSafe Manager mock (free 25-question version) (official form: 80 scored + 10 pilot / 2 hours; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
     lastUpdated: "2026-09-29",
     audience:
       "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
@@ -4316,7 +4316,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free ServSafe Manager practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a free 90-question / 120-minute ServSafe Manager mock with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; current ServSafe FAQ pass is 70% (56/80 scored). The mock uses 75% as a readiness target; the older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com.",
+          "Yes. UniPrep2Go hosts a 90-question / 120-minute ServSafe Manager mock (free 25-question version) with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; current ServSafe FAQ pass is 70% (56/80 scored). The mock uses 75% as a readiness target; the older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com.",
       },
       {
         question: "Does this replace the official course or exam practice?",
@@ -4498,7 +4498,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "January 2026 PTCE outline/blueprint PDF — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock + Anki.",
     directAnswer:
-      "The independent PTCB / PTCE outline study guide for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Cluster with UniPrep2Go’s free 90-question timed online mock for readiness scoring and a separate 300-card Anki deck for weak-topic repair (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
+      "The independent PTCB / PTCE outline study guide for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Cluster with UniPrep2Go’s 90-question timed online mock (free 25-question version) for readiness scoring and a separate 300-card Anki deck for weak-topic repair (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
     lastUpdated: "2026-09-24",
     audience:
       "PTCE candidates who need the January 2026 outline in one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, then pair with the free timed mock and optional Anki drills.",
@@ -4553,7 +4553,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the PTCB Outline 2026 Study Guide include?",
         answer:
-          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan. The free 90-question online PTCB mock and companion Anki deck are separate UniPrep2Go products linked from the page — not files inside the PDF download.",
+          "A 30-page printable PDF with four domain-weighted review chapters (January 2026 PTCE blueprint), an 80-question full-length practice exam with domain-scored answer key and explanations, three print-ready cheat sheets (drugs, sig codes, math), and a 4-week study plan. The 90-question online PTCB mock (free 25-question version) and companion Anki deck are separate UniPrep2Go products linked from the page — not files inside the PDF download.",
       },
       {
         question: "Is this updated for the January 2026 PTCE?",
@@ -4563,7 +4563,7 @@ const rawDecks: Deck[] = [
       {
         question: "How does the free PTCB mock fit with this outline guide?",
         answer:
-          "Take the free 90-question PTCB mock at uniprep2go.study/mock-exams/ptcb-pharmacy-technician-mock for a timed domain readiness report first. Use this PDF for structured outline reading and the 80-question practice exam, then buy the separate 300-card Anki deck only for weak-topic daily repair.",
+          "Take the 90-question PTCB mock (free 25-question version) at uniprep2go.study/mock-exams/ptcb-pharmacy-technician-mock for a timed domain readiness report first. Use this PDF for structured outline reading and the 80-question practice exam, then buy the separate 300-card Anki deck only for weak-topic daily repair.",
       },
       {
         question: "Does this pair with the PTCB Anki deck?",
@@ -5028,12 +5028,12 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes — UniPrep2Go publishes timed practice tests with topic scoring and full answer review (first mock free with no signup, then $5 for 5 attempts) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
+      "Yes — UniPrep2Go publishes timed practice tests with topic scoring and full answer review (free 25-question diagnostic with no signup, then $5 for 5 attempts) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
   },
   {
     question: "Do you cover PTCB PTCE and NHA ExCPT pharmacy technician exams?",
     answer:
-      "Yes. For PTCB’s PTCE use the free 90-question timed mock, the January 2026 printable study guide PDF, and the 300-card Anki deck. For NHA’s ExCPT pathway use the free ExCPT readiness check (distinct certifier — do not mix blueprints). Start with the mock that matches your registration.",
+      "Yes. For PTCB’s PTCE use the 90-question timed mock (free 25-question version), the January 2026 printable study guide PDF, and the 300-card Anki deck. For NHA’s ExCPT pathway use the free ExCPT readiness check (distinct certifier — do not mix blueprints). Start with the mock that matches your registration.",
   },
   {
     question: "What is an Anki deck?",

@@ -30,7 +30,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on BAMF Einbürgerungstest / Leben in Deutschland themes. Official exam: 33 questions / 60 minutes / 17 correct for citizenship (15 for some PR/integration paths). This diagnostic is 60 questions / 60 minutes / 55%. Not official BAMF material.",
     description:
-      "Free 60-question Leben in Deutschland / Einbürgerungstest diagnostic (60 min, 55% pass) — longer than the official 33/60/17 BAMF paper. Pairs with the $9 country Anki deck. Independent prep.",
+      "60-question Leben in Deutschland / Einbürgerungstest diagnostic (free 25-question version) (60 min, 55% pass) — longer than the official 33/60/17 BAMF paper. Pairs with the $9 country Anki deck. Independent prep.",
     examBody:
       "BAMF — Einbürgerungstest / Leben in Deutschland (33Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -54,7 +54,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check for the French Examen civique (live from 1 Jan 2026: 40 MCQs / 45 min / 32/40). This diagnostic is 60 questions / 60 minutes / 70%. B2 language is separate. Not préfecture or official civic-exam material.",
     description:
-      "Free 60-question French naturalisation civics diagnostic for the 2026 Examen civique themes — institutions, history, values, rights. Official civic exam is 40Q/45min/80%; B2 language is separate. Pairs with the $9 country Anki deck.",
+      "60-question French naturalisation civics diagnostic (free 25-question version) for the 2026 Examen civique themes — institutions, history, values, rights. Official civic exam is 40Q/45min/80%; B2 language is separate. Pairs with the $9 country Anki deck.",
     examBody:
       "France — Examen civique (naturalisation; B2 language separate)",
     questionSourceNote: NOTE,
@@ -86,7 +86,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Life in the UK handbook themes. Official Home Office test: 24 questions / 45 minutes / 18/24 (75%), £50. This diagnostic is 60 questions / 45 minutes / 75%. Not official Home Office material.",
     description:
-      "Free 60-question Life in the UK diagnostic (45 min, 75%) — longer than the official 24-question Home Office test. Pairs with the $9 country Anki deck. Independent prep.",
+      "60-question Life in the UK diagnostic (free 25-question version) (45 min, 75%) — longer than the official 24-question Home Office test. Pairs with the $9 country Anki deck. Independent prep.",
     examBody:
       "UK Home Office — Life in the UK Test (24Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -113,7 +113,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Discover Canada themes. Official IRCC test: 20 questions / 45 minutes / 15/20 (75%). This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
     description:
-      "Free 60-question Canadian citizenship diagnostic — longer than the official 20-question IRCC test. Pairs with the $9 country Anki deck. Independent prep.",
+      "60-question Canadian citizenship diagnostic (free 25-question version) — longer than the official 20-question IRCC test. Pairs with the $9 country Anki deck. Independent prep.",
     examBody:
       "IRCC — Discover Canada citizenship test (20Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -140,7 +140,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Our Common Bond themes. Official test: 20 MCQs / 45 minutes / 75% plus all 5 values questions correct. This diagnostic is 60 questions / 45 minutes / 75% and does not enforce the values dual-gate. Not Home Affairs material.",
     description:
-      "Free 60-question Australian citizenship diagnostic. Official exam is 20Q/45min with a values dual-gate — this page is longer theme practice without that gate. Pairs with the $9 country Anki deck.",
+      "60-question Australian citizenship diagnostic (free 25-question version). Official exam is 20Q/45min with a values dual-gate — this page is longer theme practice without that gate. Pairs with the $9 country Anki deck.",
     examBody:
       "Australia Home Affairs — citizenship test (20Q + values gate; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -167,7 +167,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on CCSE themes. Official Instituto Cervantes CCSE: 25 items / 45 minutes / 15/25 (60%) from a published ~300-item bank. This diagnostic is 60 questions / 45 minutes / 60%. DELE A2 language is a separate exam. Not Cervantes material.",
     description:
-      "Free 60-question CCSE diagnostic for Spanish nationality civics — longer than the official 25-question Cervantes exam. DELE A2 is separate. Pairs with the $9 CCSE España Anki deck.",
+      "60-question CCSE diagnostic (free 25-question version) for Spanish nationality civics — longer than the official 25-question Cervantes exam. DELE A2 is separate. Pairs with the $9 CCSE España Anki deck.",
     examBody:
       "Instituto Cervantes — CCSE (25Q official; DELE A2 separate)",
     questionSourceNote:
@@ -201,7 +201,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Switzerland has no single federal citizenship MCQ — canton/commune tests vary. This is an independent German-language diagnostic of federal Staatskunde themes only (60Q / 45 min / 70%). Not SEM or cantonal exam material.",
     description:
-      "Free 60-question German federal Staatskunde diagnostic for Swiss ordinary naturalisation. Canton/commune knowledge tests differ — this page covers federal themes only. Pairs with the $9 Swiss language Anki deck.",
+      "60-question German federal Staatskunde diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune knowledge tests differ — this page covers federal themes only. Pairs with the $9 Swiss language Anki deck.",
     examBody:
       "Switzerland — federal Staatskunde DE (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -234,7 +234,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "No single federal French citizenship MCQ — canton/commune tests vary. Independent French diagnostic of federal civics themes only (60Q / 45 min / 70%). Not SEM material.",
     description:
-      "Free 60-question French federal civics diagnostic for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
+      "60-question French federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
     examBody:
       "Switzerland — federal Staatskunde FR (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -266,7 +266,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "No single federal Italian citizenship MCQ — canton/commune tests vary. Independent Italian diagnostic of federal civics themes only (60Q / 45 min / 70%). Not SEM material.",
     description:
-      "Free 60-question Italian federal civics diagnostic for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
+      "60-question Italian federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
     examBody:
       "Switzerland — federal Staatskunde IT (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -298,7 +298,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Czech citizenship / reálie themes — not official MV ČR or NPI material. Official zkouška z reálií is 30 questions / 30 minutes / 60% from the NPI pool; this diagnostic is 60 questions / 45 minutes / 70%. Permanent residence usually needs language (often A2), not reálie.",
     description:
-      "Free 60-question Czech reálie readiness diagnostic (45 min, 70% pass) for citizenship civics themes — longer than the official 30/30/60% exam. Pairs with the live Czech Citizenship Anki deck. Independent prep — not Interior Ministry / NPI material.",
+      "60-question Czech reálie readiness diagnostic (free 25-question version) (45 min, 70% pass) for citizenship civics themes — longer than the official 30/30/60% exam. Pairs with the live Czech Citizenship Anki deck. Independent prep — not Interior Ministry / NPI material.",
     examBody: "Czech Republic — zkouška z českých reálií (citizenship); not the permanent-residence language exam",
     questionSourceNote:
       "Questions rewritten from Prep2Go Czech Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent diagnostic — not the official NPI 300-item booklet.",
@@ -331,7 +331,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Poland has no official citizenship civics exam in force today — this is an independent readiness check on proposed / future “wiedza o Polsce” themes. Not MSWiA, UDSC, or NAWA material. Live naturalisation exam hurdle is usually PaF B1 language.",
     description:
-      "Free 60-question Polish-language civics diagnostic for a proposed knowledge-of-Poland / test obywatelski path — not an official exam (none is required for citizenship today). Pairs with the live Polish Citizenship Anki deck. Independent prep.",
+      "60-question Polish-language civics diagnostic (free 25-question version) for a proposed knowledge-of-Poland / test obywatelski path — not an official exam (none is required for citizenship today). Pairs with the live Polish Citizenship Anki deck. Independent prep.",
     examBody: "Poland — proposed citizenship civics (no official test yet); language via PaF B1",
     questionSourceNote:
       "Questions rewritten from Prep2Go Polish Citizenship civics themes as full-stem MCQs with parallel-form near-miss distractors. Independent future-proofing diagnostic — not an official Polish government citizenship test.",
@@ -364,7 +364,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Indfødsretsprøven themes. Official exam: 45 MCQs / 45 minutes / 36/45 plus ≥4/5 values questions (~946 DKK). This diagnostic is 60 questions / 45 minutes / 70% without the values dual-gate. Not official Danish government material.",
     description:
-      "Free 60-question Danish Indfødsretsprøven diagnostic. Official test is 45Q/45min with an 80% + values dual-gate — this page is longer theme practice. Waitlist Anki. Independent prep.",
+      "60-question Danish Indfødsretsprøven diagnostic (free 25-question version). Official test is 45Q/45min with an 80% + values dual-gate — this page is longer theme practice. Waitlist Anki. Independent prep.",
     examBody:
       "Denmark — Indfødsretsprøven (45Q official + values gate; this page is a longer diagnostic)",
     questionSourceNote:
@@ -392,7 +392,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Portugal’s 2026 nationality law mandates a civic knowledge test, but official Q/time/pass were not yet published when this bank shipped — treat format as pending regulation. This is an independent 60Q / 45 min / 70% theme diagnostic on the five legal themes. Not official IRN material.",
     description:
-      "Free 60-question Portuguese nationality civic diagnostic on history, culture, institutions, rights, and society. Official exam format still pending implementing rules — independent prep, not IRN.",
+      "60-question Portuguese nationality civic diagnostic (free 25-question version) on history, culture, institutions, rights, and society. Official exam format still pending implementing rules — independent prep, not IRN.",
     examBody:
       "Portugal — nationality civic knowledge (format pending regulation; independent diagnostic)",
     questionSourceNote:
@@ -420,7 +420,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Statsborgerprøven / samfunnskunnskap themes. Official HK-dir exam: 36 questions (32 scored) / 60 minutes / 24/32 (75%), Norwegian only. This diagnostic is 60 questions / 45 minutes / 70%. Not UDI/HK-dir material.",
     description:
-      "Free 60-question Norwegian Statsborgerprøven diagnostic — longer/shorter-time than the official 36Q/60min/75% HK-dir exam. Waitlist Anki. Independent prep.",
+      "60-question Norwegian Statsborgerprøven diagnostic (free 25-question version) — longer/shorter-time than the official 36Q/60min/75% HK-dir exam. Waitlist Anki. Independent prep.",
     examBody:
       "Norway — Statsborgerprøven (HK-dir; 36Q official; this page is a longer diagnostic)",
     questionSourceNote:
@@ -448,7 +448,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Sweden’s Medborgarskapsprov society-knowledge test is new/rolling out (from Aug 2026); exact Q/time/pass/cost were unpublished at bank ship time. This is an independent 60Q / 45 min / 70% Samhällskunskap theme diagnostic — not official UHR/Migrationsverket material.",
     description:
-      "Free 60-question Swedish citizenship society-knowledge diagnostic for the new Medborgarskapsprov path. Official format may still be settling — independent theme practice + waitlist Anki.",
+      "60-question Swedish citizenship society-knowledge diagnostic (free 25-question version) for the new Medborgarskapsprov path. Official format may still be settling — independent theme practice + waitlist Anki.",
     examBody:
       "Sweden — Medborgarskapsprov (new society test; official format confirm on UHR)",
     questionSourceNote:
@@ -476,7 +476,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path: Dutch (NT2) plus Maatschappelijke Oriëntatie. Official standaardtest MO is 41 digital MCQ / 120 minutes (11 sokkelvragen) after a ~60-hour course; test 60% + process 40%. This 60Q / 45 min check is independent MO-theme practice — not AgII material. A federal civic test has been proposed, not assumed live.",
     description:
-      "Free 60-question Flanders MO / social-orientation diagnostic. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 165-card Anki on Gumroad. Independent prep.",
+      "60-question Flanders MO / social-orientation diagnostic (free 25-question version). Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 165-card Anki on Gumroad. Independent prep.",
     examBody:
       "Belgium Flanders — Maatschappelijke oriëntatie (no single federal MCQ; proposed national test separate)",
     questionSourceNote:
@@ -505,7 +505,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Wallonia has no standardised citizenship civics QCM today — live hurdles are usually French A2 + social integration proof. A federal civic test is proposed, not assumed live. This 60Q check is independent theme practice — not official Walloon/CRI material.",
     description:
-      "Free 60-question Wallonie citoyenneté theme diagnostic. Official Wallonia path is language + integration, not a published civics MCQ bank. Waitlist Anki. Independent prep.",
+      "60-question Wallonie citoyenneté theme diagnostic (free 25-question version). Official Wallonia path is language + integration, not a published civics MCQ bank. Waitlist Anki. Independent prep.",
     examBody:
       "Belgium Wallonia — citoyenneté / parcours (no official QCM bank; proposed federal test separate)",
     questionSourceNote:
@@ -557,7 +557,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Finland’s kansalaisuuskoe applies to citizenship applications submitted from 1 March 2027 by applicants aged 18–64 (Citizenship Act amendment SäädK 552/2026, effective 1 Jan 2027). Migri organizes the digital on-site multiple-choice test in Finnish or Swedish; Helsingin yliopisto writes the learning material and questions, due around the turn of 2026–2027. The Act requires most (valtaosa) answers correct; proposals cited ~20–40 MCQs and ~70% — confirm binding format when Migri publishes. This is an independent 60Q / 45 min / 70% Finnish diagnostic from a 120-question bank — not official Maahanmuuttovirasto material. No Anki deck is sold for this pathway.",
     description:
-      "Free 60-question Finnish-language kansalaisuuskoe diagnostic for the 2027 citizenship test path, drawn from 120 unique questions across state and democracy, history and EU, rights, and everyday services. Official item bank not published yet. Mock-only prep (no Anki deck).",
+      "60-question Finnish-language kansalaisuuskoe diagnostic (free 25-question version) for the 2027 citizenship test path, drawn from 120 unique questions across state and democracy, history and EU, rights, and everyday services. Official item bank not published yet. Mock-only prep (no Anki deck).",
     examBody:
       "Finland — kansalaisuuskoe (Migri; applications from 1 Mar 2027; format confirm on migri.fi)",
     questionSourceNote:

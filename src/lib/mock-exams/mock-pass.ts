@@ -1,5 +1,5 @@
 /**
- * UniPrep2Go Mock Pass — first mock free (any exam, Exam or Learn mode), then
+ * UniPrep2Go Mock Pass — free 25-question diagnostic (any exam, Exam or Learn mode), then
  * a $5 Gumroad license key unlocks 5 more attempts on any live mock.
  *
  * The free attempt is tracked in the browser (localStorage); paid attempts are
@@ -8,6 +8,8 @@
  * Kill switch (server env): MOCK_PAYWALL=off → every mock is free again.
  * Cookie HMAC secret: MOCK_PASS_SECRET (fallback LEARN_ACCESS_SECRET).
  */
+
+import { FREE_DIAGNOSTIC_QUESTIONS } from "./free-diagnostic";
 
 export const MOCK_PASS_NAME = "UniPrep2Go Mock Pass";
 export const MOCK_PASS_PRICE_USD = 5;
@@ -21,12 +23,12 @@ export const MOCK_PASS_PRODUCT_URL = "https://pixidstudio.gumroad.com/l/uniprep-
 export const MOCK_PASS_CHECKOUT_URL = `${MOCK_PASS_PRODUCT_URL}?wanted=true`;
 
 /** One-line access rule for badges, buttons and meta snippets. */
-export const MOCK_ACCESS_SHORT = `First mock free · then $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
+export const MOCK_ACCESS_SHORT = `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic · full mocks $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
 
 /** Canonical access rule for landings, FAQs and LLM-visible docs. */
 export const MOCK_ACCESS_RULE =
-  `Your first UniPrep2Go mock is free — any exam, Exam or Learn mode, no signup. ` +
-  `After that, a $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (Gumroad license key) unlocks ${MOCK_PASS_ATTEMPTS} more attempts on any mock.`;
+  `Your first UniPrep2Go attempt is free: a ${FREE_DIAGNOSTIC_QUESTIONS}-question timed diagnostic on any exam (Exam or Learn mode, no signup) with the full topic report. ` +
+  `Full-length mocks and retakes run on a $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (Gumroad license key): ${MOCK_PASS_ATTEMPTS} attempts on any mock.`;
 
 export function isMockPaywallEnabled(): boolean {
   const value = process.env.MOCK_PAYWALL?.trim().toLowerCase();

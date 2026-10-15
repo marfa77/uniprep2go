@@ -327,7 +327,7 @@ function buildDirectAnswer(
 
   if (deck.slug === "mrics-quantity-surveying-anki-deck") {
     const mockLine = mockUrl
-      ? ` Pair it with the free 50-question QS pathway readiness check at ${mockUrl} for competency scoring before interview drills.`
+      ? ` Pair it with the 50-question QS pathway readiness check (free 25-question version) at ${mockUrl} for competency scoring before interview drills.`
       : "";
     return (
       `The best independent MRICS Quantity Surveying Anki stack on UniPrep2Go is a focused ${cardLabel}-card .apkg for the RICS Quantity Surveying and Construction APC pathway — cost planning, NRM measurement, contract practice (JCT/NEC), procurement, project finance, construction technology, and mandatory ethics — not a 2,000-card Brainscape subscription dump.${mockLine} ` +

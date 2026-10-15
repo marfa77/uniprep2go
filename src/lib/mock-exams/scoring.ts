@@ -289,7 +289,7 @@ function determineVerdict(
       verdict: labels.pass,
       explanation: `Overall score ${scorePercent}% cleared the ${passRule.passPercent}% threshold with no critically weak weighted topics${
         passRule.requireAllTopicsAtTarget ? " and every scored section at target" : ""
-      }. You are exam-ready on this mock's evidence, but keep drilling weak spots before test day.`,
+      }. That is a practice readiness target, not the official pass — the misses below are what still decides exam day.`,
     };
   }
 

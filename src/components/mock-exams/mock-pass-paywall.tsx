@@ -7,6 +7,7 @@ import {
   MOCK_PASS_PRICE_USD,
 } from "@/lib/mock-exams/mock-pass";
 import type { FreeAttemptRecord } from "@/lib/mock-exams/free-attempt";
+import { FREE_DIAGNOSTIC_QUESTIONS } from "@/lib/mock-exams/free-diagnostic";
 import { mockSessionModeLabel } from "@/lib/mock-exams/session-mode";
 import { trackMockEvent } from "./mock-analytics";
 
@@ -111,14 +112,14 @@ export function MockPassPaywall({
         <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#18140f]" id="mock-pass-title">
           {passExhausted
             ? `All attempts on your Mock Pass are used`
-            : "Your free mock on this browser is used"}
+            : "Your free diagnostic on this browser is used"}
         </h3>
         <p className="mt-2 text-sm leading-6 text-[#4f493e]">
           {passExhausted
             ? `Get ${MOCK_PASS_ATTEMPTS} more attempts for $${MOCK_PASS_PRICE_USD} to keep practicing.`
-            : `The first mock is free — one attempt on any exam, in either mode${
+            : `The first attempt is a free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic — one on any exam, in either mode${
                 freeAttemptLabel ? ` (yours: ${freeAttemptLabel})` : ""
-              }. Keep practicing with ${MOCK_PASS_ATTEMPTS} more attempts for $${MOCK_PASS_PRICE_USD}.`}
+              }. Run full-length mocks and retakes with ${MOCK_PASS_ATTEMPTS} attempts for $${MOCK_PASS_PRICE_USD}.`}
         </p>
       </div>
 

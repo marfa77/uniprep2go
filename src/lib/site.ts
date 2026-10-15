@@ -11,7 +11,7 @@ export const siteConfig = {
     "US insurance and California real estate licensing exam prep",
     "CFA Level 1 / FRM Part 1 Anki + timed mocks (first free) + formula sheets",
     "Other US licensing and specialty exam practice tests (also on this site)",
-    "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps timed mocks indexed (first mock free)",
+    "Language decks and EU citizenship prep live on Prep2Go; UniPrep keeps timed mocks indexed (free 25-question diagnostic)",
   ],
   contactEmail: "support@uniprep2go.study",
   customDeckInquiry: {

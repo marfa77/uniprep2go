@@ -439,7 +439,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "RD / RDN Exam Prep — 120 CDR Domain Flashcards",
     studyLabel: "RD exam Anki flashcards",
     description:
-      "RDN Anki deck: 120 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a free 120-question RD readiness check. Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
+      "RDN Anki deck: 120 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a 120-question RD readiness check (free 25-question version). Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
     keywords: [
       "rd exam anki",
       "rdn flashcards",
@@ -456,7 +456,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "IRS Enrolled Agent (SEE) Prep — 120 Flashcards",
     studyLabel: "Enrolled Agent Anki flashcards",
     description:
-      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a free 120-question EA readiness check with topic scoring. Ownable .apkg before your PSI sitting. Independent — not IRS material.",
+      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a 120-question EA readiness check (free 25-question version) with topic scoring. Ownable .apkg before your PSI sitting. Independent — not IRS material.",
     keywords: [
       "enrolled agent anki",
       "ea exam flashcards",
@@ -473,7 +473,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Luxembourg Vivre ensemble — 239 French + 239 English Flashcards",
     studyLabel: "Luxembourg Vivre ensemble Anki",
     description:
-      "Pass the Luxembourg Vivre ensemble exam: 239 French + 239 English Anki cards in subdecks for the 3 official modules (rights, institutions, history & EU), a key-point explanation on every card, facts checked against the 2023 Constitution. $16 one-time, plus a free 40-question, 60-minute exam simulation. Independent — not Guichet.lu material.",
+      "Pass the Luxembourg Vivre ensemble exam: 239 French + 239 English Anki cards in subdecks for the 3 official modules (rights, institutions, history & EU), a key-point explanation on every card, facts checked against the 2023 Constitution. $16 one-time, plus a 40-question, 60-minute exam simulation (free 25-question version). Independent — not Guichet.lu material.",
     keywords: [
       "luxembourg vivre ensemble anki",
       "luxembourg citizenship flashcards",
@@ -482,7 +482,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "luxembourg vivre ensemble english",
     ],
     intro:
-      "Half of the 40 exam questions are on state and municipal institutions — so 104 of the 239 cards per language sit in that module. Take the free 40-question exam simulation, then study the subdeck for your weakest module in the language you will sit (FR or EN). Sproochentest stays on a separate language track.",
+      "Half of the 40 exam questions are on state and municipal institutions — so 104 of the 239 cards per language sit in that module. Take the 40-question exam simulation (free 25-question version), then study the subdeck for your weakest module in the language you will sit (FR or EN). Sproochentest stays on a separate language track.",
   },
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {
@@ -576,7 +576,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "DELE A2 + CCSE Anki Bundle — 2463 Cards for Spanish Nationality",
     studyLabel: "DELE CCSE Spanish nationality exam prep",
     description:
-      "$29 DELE A2 + CCSE Anki bundle: 2,463 cards in two .apkg files — 2,120 DELE A2 vocabulary cards with audio and 343 CCSE civics cards. Free 60-question CCSE timed diagnostic first; official Cervantes CCSE is 25Q / 45 min / 60%. Not Instituto Cervantes material.",
+      "$29 DELE A2 + CCSE Anki bundle: 2,463 cards in two .apkg files — 2,120 DELE A2 vocabulary cards with audio and 343 CCSE civics cards. 60-question CCSE timed diagnostic (free 25-question version) first; official Cervantes CCSE is 25Q / 45 min / 60%. Not Instituto Cervantes material.",
     keywords: [
       "dele a2 anki",
       "ccse anki deck",
@@ -585,7 +585,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dele ccse bundle",
     ],
     intro:
-      "Spanish nationality by residence needs DELE A2 (or higher) and the CCSE. This bundle ships both as Anki decks: 2,120 DELE A2 vocabulary cards (picture, Spanish example sentence, native audio) and 343 CCSE question → answer civics cards. Official CCSE is 25 questions / 45 minutes / 60%; take the free 60-question CCSE readiness check first to see which civics themes need work.",
+      "Spanish nationality by residence needs DELE A2 (or higher) and the CCSE. This bundle ships both as Anki decks: 2,120 DELE A2 vocabulary cards (picture, Spanish example sentence, native audio) and 343 CCSE question → answer civics cards. Official CCSE is 25 questions / 45 minutes / 60%; take the 60-question CCSE readiness check (free 25-question version) first to see which civics themes need work.",
   },
   "swiss-citizenship-anki-deck": {
     title: "Swiss Citizenship Anki Bundle | DE FR IT · 621 Cards",
@@ -617,7 +617,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "czech naturalisation deck",
     ],
     intro:
-      "Live reálie Anki deck ($9). Drill the free 60-question diagnostic + official NPI model test, then repair weak topics with spaced repetition.",
+      "Live reálie Anki deck ($9). Drill the 60-question diagnostic (free 25-question version) + official NPI model test, then repair weak topics with spaced repetition.",
   },
   "polish-citizenship-anki-deck": {
     title: "Polish Citizenship Anki Deck | Proposed Wiedza o Polsce",
@@ -665,7 +665,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 Anki deck for 2026: 348 cards across all 10 topics, $29 one-time. Plus a free 60-question timed mock. Not CFA Institute material.",
+      "CFA Level 1 Anki deck for 2026: 348 cards across all 10 topics, $29 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -682,7 +682,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 2 Exam Prep — 495 Vignette Cards + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 Anki: 495 vignette-depth cards across all 10 topics (2026 weights 5–15%). Official L2 is 88 item-set questions in 22 vignettes / 4h24 — this page pairs the deck with a free 60-question / 120-minute diagnostic, not a CFA Institute mock. Formula PDF sold separately. Independent — not CFA Institute material.",
+      "CFA Level 2 Anki: 495 vignette-depth cards across all 10 topics (2026 weights 5–15%). Official L2 is 88 item-set questions in 22 vignettes / 4h24 — this page pairs the deck with a 60-question / 120-minute diagnostic (free 25-question version), not a CFA Institute mock. Formula PDF sold separately. Independent — not CFA Institute material.",
     keywords: [
       "cfa level 2 anki deck",
       "cfa level 2 flashcards",
@@ -691,7 +691,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 mock exam",
     ],
     intro:
-      "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the free 60-question / 120-minute mock to pick weak topics before 22 official vignettes.",
+      "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the 60-question / 120-minute mock (free 25-question version) to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
     title: "CFA Level 2 Formula Sheet 2026 — 219 Formulas PDF, $19",
@@ -708,7 +708,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 practice test",
     ],
     intro:
-      "One-page L2 cheat sheets skip item-set timing. Print the 60-page tables, run the 80-question recall drill, then take the free 60-question CFA Level 2 mock and repair misses in the 495-card Anki deck. Official exam: 88 questions in 22 vignettes over 4 hours 24 minutes.",
+      "One-page L2 cheat sheets skip item-set timing. Print the 60-page tables, run the 80-question recall drill, then take the 60-question CFA Level 2 mock (free 25-question version) and repair misses in the 495-card Anki deck. Official exam: 88 questions in 22 vignettes over 4 hours 24 minutes.",
   },
   "cfa-level-1-formula-reference-2026": {
     title: "Best CFA L1 Formula Sheet 2026 | 250 Formulas + Drill",
@@ -724,14 +724,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 1 recall drill",
     ],
     intro:
-      "Free one-page cheat sheets skip the recall drill. This 54-page reference forces sub-three-second formula retrieval across all 10 topics — then the free 60-question mock and companion Anki close the gaps.",
+      "Free one-page cheat sheets skip the recall drill. This 54-page reference forces sub-three-second formula retrieval across all 10 topics — then the 60-question mock (free 25-question version) and companion Anki close the gaps.",
   },
   "frm-part-1-anki-deck": {
     title: "Best FRM Part 1 Anki Deck | 444 Cards + Free Mock",
     headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit) plus free 50-question timed mock — cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition + one diagnostic. Not GARP material.",
+      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit) plus 50-question timed mock (free 25-question version) — cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition + one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",
@@ -748,7 +748,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "SIE Exam Prep — 300 Flashcards + Free 75Q Mock",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "SIE exam prep: 300 Anki flashcards + free 75-question timed mock (or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
+      "SIE exam prep: 300 Anki flashcards + 75-question timed mock (free 25-question version) (or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
     keywords: [
       "sie exam prep",
       "sie exam study guide free",
@@ -764,7 +764,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Series 7 Flashcards — 300 Top-Off Cards + Free 60Q Mock",
     studyLabel: "Series 7 flashcards",
     description:
-      "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a free 60-question timed practice test with job-function scoring. Official exam 125 scored + 5 pretest / 3h45 / pass 72 equated. Independent — not FINRA material.",
+      "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a 60-question timed practice test (free 25-question version) with job-function scoring. Official exam 125 scored + 5 pretest / 3h45 / pass 72 equated. Independent — not FINRA material.",
     keywords: [
       "series 7 flashcards",
       "series 7 anki",
@@ -774,14 +774,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "series 7 top off study",
     ],
     intro:
-      "Looking for Series 7 flashcards after the SIE? Start with the free 60-question timed readiness check, then drill only weak job functions in this 300-card deck before the 125-question sit — not a Series 63 state-law pack.",
+      "Looking for Series 7 flashcards after the SIE? Start with the 60-question timed readiness check (free 25-question version), then drill only weak job functions in this 300-card deck before the 125-question sit — not a Series 63 state-law pack.",
   },
   "series-63-anki-deck": {
     title: "Series 63 Flashcards 2026 | 250 Cards + Free Mock",
     headline: "Series 63 Flashcards — 250 NASAA Cards + Free 60Q Mock",
     studyLabel: "Series 63 flashcards",
     description:
-      "Series 63 flashcards for NASAA state law: 250 Anki cards (registration, ethics, communications) plus a free 60-question timed practice test with topic readiness scoring. Independent prep, not NASAA material.",
+      "Series 63 flashcards for NASAA state law: 250 Anki cards (registration, ethics, communications) plus a 60-question timed practice test (free 25-question version) with topic readiness scoring. Independent prep, not NASAA material.",
     keywords: [
       "series 63 flashcards",
       "series 63 anki",
@@ -791,7 +791,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "uniform securities act flashcards",
     ],
     intro:
-      "Looking for Series 63 flashcards after SIE/Series 7? Start with the free 60-question timed readiness check, then drill only the weak state-law topics in this 250-card deck before the state sit.",
+      "Looking for Series 63 flashcards after SIE/Series 7? Start with the 60-question timed readiness check (free 25-question version), then drill only the weak state-law topics in this 250-card deck before the state sit.",
   },
   "series-65-anki-deck": {
     title: "Series 65 Exam Prep 2026 | 120 Cards + Free 120Q Mock",
@@ -807,7 +807,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
-      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a free 90-question ServSafe practice test online. Official: 90Q (80 scored + 10 pilot) / 2h; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock. For US restaurant managers and kitchen supervisors.",
+      "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a 90-question ServSafe practice test (free 25-question version) online. Official: 90Q (80 scored + 10 pilot) / 2h; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock. For US restaurant managers and kitchen supervisors.",
     keywords: [
       "servsafe manager exam prep",
       "servsafe manager practice test",
@@ -816,14 +816,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "food safety manager study guide",
     ],
     intro:
-      "Food-service managers need TCS temperature and HACCP recall under the clock — use the free 90-question timed mock, then drill weak domains in the $19 / 300-card Anki (PDF guide sold separately).",
+      "Food-service managers need TCS temperature and HACCP recall under the clock — use the 90-question timed mock (free 25-question version), then drill weak domains in the $19 / 300-card Anki (PDF guide sold separately).",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $11",
     headline: "PTCB Anki Deck — 300 PTCE Flashcards + Free Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB Anki deck for the 2026 PTCE: 300 flashcards on drugs, law, DSCSA, safety, sigs and days-supply math. $11 one-time + free 90-question mock.",
+      "PTCB Anki deck for the 2026 PTCE: 300 flashcards on drugs, law, DSCSA, safety, sigs and days-supply math. $11 one-time + 90-question mock (free 25-question version).",
     keywords: [
       "ptcb exam prep",
       "ptcb anki deck",
@@ -832,14 +832,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "ptcb brand generic flashcards",
     ],
     intro:
-      "US pharmacy technician candidates take the free 90-question PTCB mock first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
+      "US pharmacy technician candidates take the 90-question PTCB mock (free 25-question version) first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
     title: "PTCB Study Guide PDF 2026 — PTCE Outline, $19",
     headline: "PTCB Outline & Blueprint 2026 — Printable Study Guide + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB outline 2026 study guide PDF: January PTCE blueprint weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%), 80Q practice exam, cheat sheets — plus free 90-question timed mock. Not official PTCB material.",
+      "PTCB outline 2026 study guide PDF: January PTCE blueprint weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%), 80Q practice exam, cheat sheets — plus 90-question timed mock (free 25-question version). Not official PTCB material.",
     keywords: [
       "ptcb outline 2026",
       "ptcb blueprint 2026",
@@ -850,14 +850,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "ptcb cheat sheet",
     ],
     intro:
-      "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s free 90-question timed mock plus the separate 300-card Anki deck for weak-topic repair.",
+      "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s 90-question timed mock (free 25-question version) plus the separate 300-card Anki deck for weak-topic repair.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "CA Real Estate Salesperson Anki | 250 DRE Cards + Free Mock",
     headline: "California Real Estate Salesperson Anki — 250 DRE Cards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
-      "Best California DRE salesperson Anki: 250 CA-only cards (agency, disclosures, contracts, math) + free 60-question CA practice test. Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
+      "Best California DRE salesperson Anki: 250 CA-only cards (agency, disclosures, contracts, math) + 60-question CA practice test (free 25-question version). Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
     keywords: [
       "best california real estate anki deck",
       "california real estate anki deck",
@@ -867,14 +867,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dre exam study guide",
     ],
     intro:
-      "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a free 60-question CA mock beat a Quizlet national dump before you buy a full Aceable-style course.",
+      "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a 60-question CA mock (free 25-question version) beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     title: "Life & Health Insurance Prep 2026 | 250 Cards + Mock",
     headline: "Life & Health Insurance Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
-      "Life & Health insurance license prep: 250 Anki flashcards (provisions, annuities, Medicare) + 60-question timed practice test online — first mock free, no signup. Independent study aid — not official state exam material.",
+      "Life & Health insurance license prep: 250 Anki flashcards (provisions, annuities, Medicare) + 60-question timed practice test online — free 25-question diagnostic, no signup. Independent study aid — not official state exam material.",
     keywords: [
       "life and health insurance practice test",
       "insurance license exam prep",
@@ -890,7 +890,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Property & Casualty Insurance Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Property & Casualty insurance exam prep",
     description:
-      "Property and Casualty insurance license exam prep with 250 flashcards for homeowners, auto, commercial lines, and workers comp — plus a free 60-question P&C insurance practice test.",
+      "Property and Casualty insurance license exam prep with 250 flashcards for homeowners, auto, commercial lines, and workers comp — plus a 60-question P&C insurance practice test (free 25-question version).",
     keywords: [
       "property casualty insurance practice test",
       "p&c insurance exam prep",
@@ -906,7 +906,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "ServSafe Manager Exam Prep — Printable Study Guide + 70 Questions",
     studyLabel: "ServSafe Manager exam prep",
     description:
-      "ServSafe Manager printable PDF study guide: 40 pages, 70 practice questions with rationales, 2-page cram sheet, and 7-day study plan. Pairs with the 300-card Anki deck and free 90-question mock.",
+      "ServSafe Manager printable PDF study guide: 40 pages, 70 practice questions with rationales, 2-page cram sheet, and 7-day study plan. Pairs with the 300-card Anki deck and 90-question mock (free 25-question version).",
     keywords: [
       "servsafe manager study guide pdf",
       "servsafe manager practice questions",
@@ -941,7 +941,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "GMAT Exam Prep — 200 Unique Flashcards (rewritten Oct 2026)",
     studyLabel: "GMAT exam prep",
     description:
-      "Current GMAT Anki: 200 unique cards for Quant, Verbal, and Data Insights — rewritten October 2026 (no Sentence Correction, no Quant geometry, Data Sufficiency only in DI). Plus a free 45-question timed mock. Independent MBA prep — not GMAC material.",
+      "Current GMAT Anki: 200 unique cards for Quant, Verbal, and Data Insights — rewritten October 2026 (no Sentence Correction, no Quant geometry, Data Sufficiency only in DI). Plus a 45-question timed mock (free 25-question version). Independent MBA prep — not GMAC material.",
     keywords: [
       "gmat anki deck",
       "gmat focus anki deck",
@@ -960,7 +960,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Digital SAT Exam Prep — 160 Flashcards + Free Mock",
     studyLabel: "Digital SAT exam prep",
     description:
-      "Digital SAT exam prep with 160 Anki flashcards for Reading and Writing and Math — plus a free 49-question timed readiness check scored on both official section axes. Independent college admissions prep — not College Board material.",
+      "Digital SAT exam prep with 160 Anki flashcards for Reading and Writing and Math — plus a 49-question timed readiness check (free 25-question version) scored on both official section axes. Independent college admissions prep — not College Board material.",
     keywords: [
       "digital sat anki deck",
       "sat flashcards",
@@ -983,7 +983,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "leed-green-associate-anki-deck": {
     title: "LEED GA Prep | 120 Cards + Free Mock",
     description:
-      "LEED Green Associate exam prep: 120 flashcards written to the LEED v5 exam specifications. Free 60-question practice test included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
+      "LEED Green Associate exam prep: 120 flashcards written to the LEED v5 exam specifications. 60-question practice test (free 25-question version) included. Instant download for USGBC credential candidates. Independent prep — not USGBC exam material.",
     keywords: [
       "leed green associate exam prep",
       "leed ga exam prep free",
@@ -1002,7 +1002,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "CEM Exam Prep | 250 Cards + Free 50Q Mock",
     headline: "Certified Energy Manager Anki — 250 Cards + Free Mock",
     description:
-      "Independent AEE CEM Anki: $11 / 250 cards across five Body of Knowledge groups plus a free 50-question / 50-minute timed diagnostic. Official CEM is 130Q / 4h / open book / scaled 700. Not AEE’s paid 65Q self-eval and not AEE exam material.",
+      "Independent AEE CEM Anki: $11 / 250 cards across five Body of Knowledge groups plus a 50-question / 50-minute timed diagnostic (free 25-question version). Official CEM is 130Q / 4h / open book / scaled 700. Not AEE’s paid 65Q self-eval and not AEE exam material.",
     keywords: [
       "cem anki",
       "certified energy manager flashcards",
@@ -1028,7 +1028,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "MRICS / APC Prep — 250 Anki Cards + Free Mock",
     studyLabel: "MRICS APC interview and competency prep",
     description:
-      "Best independent MRICS APC Anki: $11 / 250 cards for mandatory competencies, ethics, Level 2/3 advice, and interview structure — plus a free 50-question timed diagnostic. Ownable .apkg vs Brainscape packs. Official APC is written evidence + 60-min interview, not MCQ. QS NRM/JCT depth is a separate SKU.",
+      "Best independent MRICS APC Anki: $11 / 250 cards for mandatory competencies, ethics, Level 2/3 advice, and interview structure — plus a 50-question timed diagnostic (free 25-question version). Ownable .apkg vs Brainscape packs. Official APC is written evidence + 60-min interview, not MCQ. QS NRM/JCT depth is a separate SKU.",
     keywords: [
       "best mrics anki deck",
       "rics apc anki",
@@ -1045,7 +1045,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "MRICS Quantity Surveying APC Prep — Anki Cards + Free Mock",
     studyLabel: "MRICS Quantity Surveying APC prep",
     description:
-      "Best independent MRICS Quantity Surveying Anki deck for RICS APC: focused cards on NRM measurement, JCT/NEC contracts, cost planning, procurement, and ethics — plus a free 50-question QS readiness check. Ownable .apkg, not a Brainscape subscription dump.",
+      "Best independent MRICS Quantity Surveying Anki deck for RICS APC: focused cards on NRM measurement, JCT/NEC contracts, cost planning, procurement, and ethics — plus a 50-question QS readiness check (free 25-question version). Ownable .apkg, not a Brainscape subscription dump.",
     keywords: [
       "best mrics qs anki deck",
       "mrics quantity surveying anki",
@@ -1062,7 +1062,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "GRE General Prep — 350 Cards + Free 30Q Mock",
     studyLabel: "GRE exam prep",
     description:
-      "GRE General Anki: 350 Verbal + Quant flashcards plus a free 30-question timed readiness check (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
+      "GRE General Anki: 350 Verbal + Quant flashcards plus a 30-question timed readiness check (free 25-question version) (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre anki deck",
       "gre flashcards",
@@ -1079,7 +1079,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "NHA CBCS Prep — Planned Cards + Free 60Q Practice Test",
     studyLabel: "NHA CBCS exam prep",
     description:
-      "Planned NHA CBCS Anki for billing and coding specialist prep — coding guidelines, claims, HIPAA, revenue cycle — plus a free 60-question timed practice test. Official CBCS is 100+25 / 3h / scaled 390. Not AAPC CPC. Independent — not NHA material.",
+      "Planned NHA CBCS Anki for billing and coding specialist prep — coding guidelines, claims, HIPAA, revenue cycle — plus a 60-question timed practice test (free 25-question version). Official CBCS is 100+25 / 3h / scaled 390. Not AAPC CPC. Independent — not NHA material.",
     keywords: [
       "nha cbcs anki",
       "billing and coding flashcards",
@@ -1096,7 +1096,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Cosmetology Theory Prep — Planned Cards + Free 60Q Test",
     studyLabel: "cosmetology state board exam prep",
     description:
-      "Planned cosmetology theory Anki for NIC-style state board prep — infection control, hair services, skin & nails — plus a free 60-question timed practice test. NIC Theory is typically 110Q / 90 min; practical is separate. Independent — not NIC/PSI material.",
+      "Planned cosmetology theory Anki for NIC-style state board prep — infection control, hair services, skin & nails — plus a 60-question timed practice test (free 25-question version). NIC Theory is typically 110Q / 90 min; practical is separate. Independent — not NIC/PSI material.",
     keywords: [
       "cosmetology anki",
       "cosmetology flashcards",
@@ -1113,7 +1113,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CDL General Knowledge Prep — Planned Cards + Free 60Q Test",
     studyLabel: "CDL General Knowledge exam prep",
     description:
-      "Planned CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a free 60-question timed practice test. Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
+      "Planned CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a 60-question timed practice test (free 25-question version). Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
     keywords: [
       "cdl anki",
       "cdl general knowledge flashcards",
@@ -1130,7 +1130,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Armed Security Officer Prep — Planned Cards + Free 60Q Test",
     studyLabel: "armed security officer exam prep",
     description:
-      "Planned armed security Anki for use-of-force, weapons safety, patrol, and ethics — plus a free 60-question timed written practice test. State-specific licensing; ≠ unarmed card; range qualification separate. Independent — not a state board exam.",
+      "Planned armed security Anki for use-of-force, weapons safety, patrol, and ethics — plus a 60-question timed written practice test (free 25-question version). State-specific licensing; ≠ unarmed card; range qualification separate. Independent — not a state board exam.",
     keywords: [
       "armed security anki",
       "armed guard flashcards",
@@ -1146,7 +1146,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Veterinary Assistant / AVA Prep — Planned Cards + Free 60Q Test",
     studyLabel: "NAVTA AVA veterinary assistant exam prep",
     description:
-      "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety — plus a free 60-question timed practice test. Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
+      "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety — plus a 60-question timed practice test (free 25-question version). Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
     keywords: [
       "veterinary assistant anki",
       "navta ava flashcards",
@@ -1162,7 +1162,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Medical Scribe Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "medical scribe documentation and HIPAA exam prep",
     description:
-      "Medical scribe Anki: 120 cards on SOAP/HPI documentation, terminology, EHR workflow, and HIPAA — plus a free 60-question timed practice test from a 120 unique bank. AHDPG MSCE is ~100Q / 75 min / 80%. Not CCMA or CMA. Independent — not AHDPG or ACMSS material.",
+      "Medical scribe Anki: 120 cards on SOAP/HPI documentation, terminology, EHR workflow, and HIPAA — plus a 60-question timed practice test (free 25-question version) from a 120 unique bank. AHDPG MSCE is ~100Q / 75 min / 80%. Not CCMA or CMA. Independent — not AHDPG or ACMSS material.",
     keywords: [
       "medical scribe anki",
       "medical scribe flashcards",
@@ -1178,7 +1178,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "ARDMS SPI Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "ARDMS SPI ultrasound physics exam prep",
     description:
-      "ARDMS SPI Anki: 120 cards on ultrasound physics, transducers/beam, Doppler, and artifacts/safety — plus a free 60-question timed practice test from a 120 unique bank. Official SPI is ~110Q / 2h / scaled 555. Text/physics only — not ABD/OB. Independent — not ARDMS material.",
+      "ARDMS SPI Anki: 120 cards on ultrasound physics, transducers/beam, Doppler, and artifacts/safety — plus a 60-question timed practice test (free 25-question version) from a 120 unique bank. Official SPI is ~110Q / 2h / scaled 555. Text/physics only — not ABD/OB. Independent — not ARDMS material.",
     keywords: [
       "ardms spi anki",
       "spi flashcards",
@@ -1283,7 +1283,7 @@ export function buildDeckSearchFaqs(deck: SeoDeck) {
     faqs.push({
       question: "Where does the free PTCB mock fit with this outline guide?",
       answer:
-        "Take the free 90-question PTCB mock at /mock-exams/ptcb-pharmacy-technician-mock for timed domain readiness scoring first. The PDF’s 80-question exam and the separate 300-card Anki deck are for outline reading and weak-topic remediation — Anki is sold separately.",
+        "Take the 90-question PTCB mock (free 25-question version) at /mock-exams/ptcb-pharmacy-technician-mock for timed domain readiness scoring first. The PDF’s 80-question exam and the separate 300-card Anki deck are for outline reading and weak-topic remediation — Anki is sold separately.",
     });
     faqs.push({
       question: "What is the January 2026 PTCB / PTCE outline?",

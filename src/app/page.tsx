@@ -115,7 +115,7 @@ const heroSecondaryLinks = [
 
 const howItWorksSteps = [
   {
-    title: "Take your first mock free",
+    title: "Take your free 25-question diagnostic",
     detail:
       "Pick any practice test or readiness check — the first attempt is free in Exam or Learn mode, no signup; after that, $5 unlocks 5 more attempts. Timing and topic weights follow published official outlines; questions are original practice items.",
   },

@@ -60,7 +60,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title: leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
       description:
-        "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — first mock free, then $5 for 5 attempts. Topic scoring, answer review, no signup.",
+        "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — free 25-question diagnostic, then $5 for 5 full-length attempts. Topic scoring, answer review, no signup.",
       keywords: [
         "free practice test",
         "free sie practice test",
@@ -76,7 +76,7 @@ export async function generateMetadata(): Promise<Metadata> {
       openGraph: {
         title: "Timed Mock Exams — First One Free | UniPrep2Go",
         description:
-          "Online timed practice tests for US licensing and finance with topic scoring and answer review. First mock free; then $5 for 5 attempts.",
+          "Online timed practice tests for US licensing and finance with topic scoring and answer review. Free 25-question diagnostic; then $5 for 5 attempts.",
         url: "/mock-exams",
         type: "website",
         images: [
@@ -117,7 +117,7 @@ export default function MockExamsIndexPage() {
         "@id": `${pageUrl}#webpage`,
         name: "Timed Mock Exams for US Licensing & Finance — First One Free",
         description:
-          "Timed practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate. First mock free (any exam, either mode); then $5 for 5 attempts.",
+          "Timed practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate. Free 25-question diagnostic (any exam, either mode); then $5 for 5 attempts.",
         url: pageUrl,
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },

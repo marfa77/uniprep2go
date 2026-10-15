@@ -44,7 +44,7 @@ describe("mock pass rules", () => {
     expect(mockPassAttemptsForQuantity(2)).toBe(10);
     expect(mockPassAttemptsForQuantity(undefined)).toBe(5);
     expect(MOCK_PASS_CHECKOUT_URL).toContain("wanted=true");
-    expect(MOCK_ACCESS_RULE).toMatch(/first UniPrep2Go mock is free/);
+    expect(MOCK_ACCESS_RULE).toMatch(/first UniPrep2Go attempt is free: a 25-question timed diagnostic/);
     expect(MOCK_ACCESS_RULE).toMatch(/\$5/);
   });
 });

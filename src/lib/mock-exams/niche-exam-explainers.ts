@@ -39,11 +39,11 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     administeredBy:
       "CFA Institute (computer-based testing at Prometric). Confirm current topic weights and session windows on cfainstitute.org — this UniPrep2Go page is independent practice, not CFA Institute material.",
     officialFormat:
-      "Official Level 2 uses item-set / vignette-style questions across two sessions. This UniPrep2Go readiness check is a free 60-question / 120-minute / 70% mini-vignette diagnostic with topic scoring — a baseline before full item-set blocks, not a substitute for CFA Institute mocks.",
+      "Official Level 2 uses item-set / vignette-style questions across two sessions. This UniPrep2Go readiness check is a 60-question / 120-minute / 70% mini-vignette diagnostic (free 25-question version) with topic scoring — a baseline before full item-set blocks, not a substitute for CFA Institute mocks.",
     whoFor:
       "Candidates who passed Level 1 and need a timed Level 2 topic baseline; career switchers reviewing FSA/equity/fixed income under pressure; and learners pairing mocks with the CFA Level 2 Anki deck for spaced repetition of formulas and judgment frames.",
     howToPrepare:
-      "1) Re-read Ethics and FSA early — they still swing band scores. 2) Drill equity and fixed-income valuation until you can apply a vignette without hunting formulas. 3) Take this free 60-question / 120-minute check for topic diagnosis. 4) Repair weak domains with the linked CFA Level 2 Anki deck daily. 5) Move to full item-set mocks only after your readiness check clears weak pillars.",
+      "1) Re-read Ethics and FSA early — they still swing band scores. 2) Drill equity and fixed-income valuation until you can apply a vignette without hunting formulas. 3) Take this 60-question / 120-minute check (free 25-question version) for topic diagnosis. 4) Repair weak domains with the linked CFA Level 2 Anki deck daily. 5) Move to full item-set mocks only after your readiness check clears weak pillars.",
     topicBlurbs: [
       {
         id: "ethics",
@@ -134,7 +134,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "RIA / IAR candidates preparing Series 65; career switchers from Series 7 who need adviser-law depth; and learners pairing the free mock with Anki for daily domain repair.",
     howToPrepare:
-      "1) Map NASAA topic weights and drill ethics/laws early. 2) Practice suitability and fiduciary framing — not just product definitions. 3) Take this free 120-question timed check. 4) Repair weak domains with Anki daily. 5) Move to full-length Q-banks only after your readiness report stabilizes.",
+      "1) Map NASAA topic weights and drill ethics/laws early. 2) Practice suitability and fiduciary framing — not just product definitions. 3) Take this 120-question timed check (free 25-question version). 4) Repair weak domains with Anki daily. 5) Move to full-length Q-banks only after your readiness report stabilizes.",
     topicBlurbs: [
       {
         id: "economics",
@@ -372,14 +372,14 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cpct-readiness-check": explainer({
     practiceTestName: "NHA CPCT Practice Test",
     whatIsExam:
-      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside technicians who assist with ADLs, vitals, safety, infection control, phlebotomy, and EKG under nursing direction. Official 2025 test plan: 100 scored + 20 pretest items in 2 hours; NHA handbook scaled pass is 390 on a 200–500 scale. This UniPrep2Go page is a free 120-question / 120-minute text diagnostic — all items scored here, not a skills lab, and not NHA material. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT. Pair it with the $11 / 120-card Anki .apkg.",
+      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside technicians who assist with ADLs, vitals, safety, infection control, phlebotomy, and EKG under nursing direction. Official 2025 test plan: 100 scored + 20 pretest items in 2 hours; NHA handbook scaled pass is 390 on a 200–500 scale. This UniPrep2Go page is a 120-question / 120-minute text diagnostic (free 25-question version) — all items scored here, not a skills lab, and not NHA material. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT. Pair it with the $11 / 120-card Anki .apkg.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
       "Official CPCT/A (2025 test plan): 100 scored + 20 pretest / 2 hours / five domains (Patient Care 43, Compliance/Safety/Professional 19, Infection Control 16, Phlebotomy 12, EKG 10). NHA handbook scaled pass 390 (200–500). This UniPrep2Go check: 120 timed questions, 120 minutes, four topic buckets, text only. NHA lists a separate plan for sittings after January 2027 — verify at nhanow.com.",
     whoFor:
       "PCT students and working aides who need a free timed baseline before NHA/PSI or remote proctoring — not candidates looking for CCMA, NHA CPT phlebotomy, CNA-only, or ASPT exams. Always verify eligibility and the current test plan before you register.",
     howToPrepare:
-      "Download the current NHA CPCT/A test plan, drill Patient Care first (43% of scored items), then sit this free 120-question / 120-minute check. Use the topic report to queue weak ADLs, infection, or phlebotomy/EKG rows. Keep NHA’s paid official practice test and any skills-lab practice separate. Repair misses with the 120-card Anki .apkg.",
+      "Download the current NHA CPCT/A test plan, drill Patient Care first (43% of scored items), then sit this 120-question / 120-minute check (free 25-question version). Use the topic report to queue weak ADLs, infection, or phlebotomy/EKG rows. Keep NHA’s paid official practice test and any skills-lab practice separate. Repair misses with the 120-card Anki .apkg.",
     examFaqs: [
       {
         question: "What is the NHA CPCT certification?",
@@ -441,7 +441,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Where can I take a free NHA ExCPT practice test online?",
         answer:
-          "UniPrep2Go’s free NHA ExCPT readiness check is a timed 60-question diagnostic with domain scoring and full answer review — first mock free in full, no signup and no 20-question tease. It is independent prep, not an NHA exam or retired NHA items.",
+          "UniPrep2Go’s free NHA ExCPT readiness check is a timed 60-question diagnostic with domain scoring and full answer review — free 25-question diagnostic, no signup and no 20-question tease. It is independent prep, not an NHA exam or retired NHA items.",
       },
       {
         question: "How should I use this readiness check before ExCPT day?",
@@ -461,14 +461,14 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cmaa-readiness-check": explainer({
     practiceTestName: "NHA CMAA Practice Test",
     whatIsExam:
-      "The NHA Certified Medical Administrative Assistant (CMAA) exam focuses on front-office medical admin: scheduling, EHR basics, insurance intake, medical terminology, and patient communication — not clinical procedures. Official public 2021 test plan: 110 scored + 25 pretest items (135 total) in 2 hours 15 minutes; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a free 60-question / 50-minute timed diagnostic with domain scoring — not NHA material, not CCMA, and not CBCS.",
+      "The NHA Certified Medical Administrative Assistant (CMAA) exam focuses on front-office medical admin: scheduling, EHR basics, insurance intake, medical terminology, and patient communication — not clinical procedures. Official public 2021 test plan: 110 scored + 25 pretest items (135 total) in 2 hours 15 minutes; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a 60-question / 50-minute timed diagnostic (free 25-question version) with domain scoring — not NHA material, not CCMA, and not CBCS.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
       "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest / 2 hours 15 minutes / scaled pass 390 (200–500). Seven domains (foundational knowledge, communication, law/ethics, scheduling, patient encounter, billing, practice logistics). UniPrep2Go free readiness check: 60 timed questions, 50 minutes, four topic buckets — shorter than the live form.",
     whoFor:
       "Medical office students and front-desk staff sitting CMAA — not CCMA clinical assisting, not CBCS billing/coding, and not AAPC CPC. Confirm employer preference and NHA eligibility before you register.",
     howToPrepare:
-      "Download the current NHA CMAA test plan, drill scheduling and patient-encounter tasks first, then sit this free 60-question / 50-minute check. Use the domain report to queue weak HIPAA, billing-basics, or communication rows. Keep NHA’s official practice test separate.",
+      "Download the current NHA CMAA test plan, drill scheduling and patient-encounter tasks first, then sit this 60-question / 50-minute check (free 25-question version). Use the domain report to queue weak HIPAA, billing-basics, or communication rows. Keep NHA’s official practice test separate.",
     examFaqs: [
       {
         question: "What is the NHA CMAA certification?",
@@ -486,14 +486,14 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cbcs-readiness-check": explainer({
     practiceTestName: "NHA CBCS Practice Test",
     whatIsExam:
-      "The NHA Certified Billing and Coding Specialist (CBCS) exam certifies outpatient billing and coding staff who verify eligibility, apply coding guidelines, submit claims, and chase reimbursement. Official public NHA test plan: 100 scored + 25 pretest items (125 total) in 3 hours; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a free 60-question / 75-minute timed diagnostic with domain scoring — not NHA material, not AAPC CPC, and not NHA CCMA/CMAA.",
+      "The NHA Certified Billing and Coding Specialist (CBCS) exam certifies outpatient billing and coding staff who verify eligibility, apply coding guidelines, submit claims, and chase reimbursement. Official public NHA test plan: 100 scored + 25 pretest items (125 total) in 3 hours; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a 60-question / 75-minute timed diagnostic (free 25-question version) with domain scoring — not NHA material, not AAPC CPC, and not NHA CCMA/CMAA.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
       "Official NHA CBCS (public test plan): 100 scored + 25 pretest / 3 hours / scaled pass 390 (200–500). Domains emphasize coding guidelines, insurance, claims, and reimbursement workflows. UniPrep2Go free readiness check: 60 timed questions, 75 minutes, topic scoring, full answer review — shorter than the live form so you can baseline before NHA’s paid practice test.",
     whoFor:
       "Medical billing students, revenue-cycle juniors, and front-office staff moving into coding/claims who need a free timed CBCS baseline — not candidates sitting AAPC CPC, AHIMA CCS, NHA CCMA, or CMAA. Confirm employer preference and NHA eligibility before you register.",
     howToPrepare:
-      "Download the current NHA CBCS test plan, drill coding guidelines and claims denial patterns first, then sit this free 60-question / 75-minute check. Use the domain report to queue weak eligibility, coding, or reimbursement rows. Keep NHA’s official practice test separate. Repair misses with spaced Anki if you use a linked deck.",
+      "Download the current NHA CBCS test plan, drill coding guidelines and claims denial patterns first, then sit this 60-question / 75-minute check (free 25-question version). Use the domain report to queue weak eligibility, coding, or reimbursement rows. Keep NHA’s official practice test separate. Repair misses with spaced Anki if you use a linked deck.",
     examFaqs: [
       {
         question: "What is the NHA CBCS exam?",
@@ -1140,7 +1140,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Aspiring personal trainers finishing ACE CPT coursework, career changers targeting gym or independent-training roles, and NASM/ISSA candidates who want an ACE-flavored diagnostic on screening, FITT-VP programming, cueing, and ethics before they sit the official exam.",
     howToPrepare:
-      "Study ACE’s current CPT manual domains: client interviews and assessments, program design and progression, instruction and spotting, and professional conduct. Drill PAR-Q+/risk screening, SMART goals, FITT-VP, regressions, and scope-of-practice scenarios. Take this free 60-question UniPrep2Go timed check once under quiet conditions, then repair weak topics with the 300-card ACE CPT Anki deck. Verify eligibility, exam length, and fees on ACE’s official site — this page is independent prep, not an ACE product.",
+      "Study ACE’s current CPT manual domains: client interviews and assessments, program design and progression, instruction and spotting, and professional conduct. Drill PAR-Q+/risk screening, SMART goals, FITT-VP, regressions, and scope-of-practice scenarios. Take this 60-question UniPrep2Go timed check (free 25-question version) once under quiet conditions, then repair weak topics with the 300-card ACE CPT Anki deck. Verify eligibility, exam length, and fees on ACE’s official site — this page is independent prep, not an ACE product.",
     topicBlurbs: [
       {
         id: "client-interview",
@@ -1226,11 +1226,11 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Child Development Associate (CDA) Credential™ from the Council for Professional Recognition is the most widely recognized entry credential in early childhood education. Candidates complete 120 hours of training, a Professional Portfolio, the computer-based CDA Exam at Pearson VUE, and — unless a qualifying exam result waives it — a Verification Visit with a CDA Professional Development Specialist. Settings include Preschool, Infant-Toddler, Family Child Care, Home Visitor, and center-based Birth to Five. This is the childcare CDA, not the dental assistant (DANB) CDA.",
     administeredBy: "Council for Professional Recognition (CDA Exam delivered by Pearson VUE)",
     officialFormat:
-      "Official CDA Exam: 65 multiple-choice questions (60 standard + 5 scenario questions with a short narrative and photo), up to 1 hour 45 minutes inside a 2-hour appointment, English or Spanish. Unanswered questions count as wrong. Results are pass/fail; the Council does not publish a numeric cut score. This UniPrep2Go check is a free 60-question / 75-minute diagnostic with a 70% readiness target and topic scoring — not a Council exam form.",
+      "Official CDA Exam: 65 multiple-choice questions (60 standard + 5 scenario questions with a short narrative and photo), up to 1 hour 45 minutes inside a 2-hour appointment, English or Spanish. Unanswered questions count as wrong. Results are pass/fail; the Council does not publish a numeric cut score. This UniPrep2Go check is a 60-question / 75-minute diagnostic (free 25-question version) with a 70% readiness target and topic scoring — not a Council exam form.",
     whoFor:
       "Early childhood teachers, assistant teachers, family child care providers, and home visitors working toward a first CDA or a new setting — especially candidates who received a Ready to Schedule notice and want a timed check of the CDA Functional Areas before booking Pearson VUE.",
     howToPrepare:
-      "1) Re-read the CDA Competency Standards book for your setting — the exam tests the 13 Functional Areas through practical classroom choices. 2) Work through the Council's free sample exam questions for your setting. 3) Take this free 60-question timed check and note your weakest of the four topic groups. 4) Review those areas with real examples from your own classroom and portfolio. 5) Answer every question on exam day — blanks are scored as wrong.",
+      "1) Re-read the CDA Competency Standards book for your setting — the exam tests the 13 Functional Areas through practical classroom choices. 2) Work through the Council's free sample exam questions for your setting. 3) Take this 60-question timed check (free 25-question version) and note your weakest of the four topic groups. 4) Review those areas with real examples from your own classroom and portfolio. 5) Answer every question on exam day — blanks are scored as wrong.",
     topicBlurbs: [
       {
         id: "safe-healthy",
@@ -1307,7 +1307,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
     howToPrepare:
-      "Take this free 60-question timed check for a topic report, then use the BOC MLS content guideline and a full-length CAT-style bank for stamina. The matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
+      "Take this 60-question timed check (free 25-question version) for a topic report, then use the BOC MLS content guideline and a full-length CAT-style bank for stamina. The matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
     examFaqs: [
       {
         question: "How many questions are on the ASCP MLS exam?",
@@ -1332,7 +1332,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Dietetic interns and candidates who have finished (or are finishing) ACEND-accredited education and supervised practice and need a timed domain diagnostic before scheduling the official CDR exam.",
     howToPrepare:
-      "Drill all four CDR domains — do not skip foodservice or management. Take this free 120-question UniPrep2Go readiness check for a topic report, then repair weak areas with the linked RD Anki deck while you keep official handbook timing practice separate.",
+      "Drill all four CDR domains — do not skip foodservice or management. Take this 120-question UniPrep2Go readiness check (free 25-question version) for a topic report, then repair weak areas with the linked RD Anki deck while you keep official handbook timing practice separate.",
     topicBlurbs: [
       { id: "principles", label: "Principles of dietetics", blurb: "Food/nutrition sciences, education/communication, and research applications (~21%)." },
       { id: "nutrition-care", label: "Nutrition care", blurb: "Screening, PES diagnosis, intervention, and monitoring/evaluation for individuals and groups (~45%)." },

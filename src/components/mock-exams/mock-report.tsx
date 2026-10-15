@@ -127,28 +127,6 @@ export function MockReportPanel({
           {report.passThresholdPercent}%
         </p>
         <p className="mt-4 max-w-3xl text-sm leading-7">{report.verdictExplanation}</p>
-        {shouldRecommendDeck ? (
-          <div className="mt-6 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5 text-[#18140f]">
-            <p className="font-semibold">
-              Recommended next step: fix your weak topics before retaking.
-            </p>
-            <p className="mt-2 text-sm leading-7 text-[#4f493e]">
-              Your score is not yet safely above target. Close the gaps below with focused daily
-              review, then retake this mock after 3–7 days.
-            </p>
-            <MockReportHandoff
-              deckPageUrl={report.linkedDeckUrl}
-              deckShortName={deckShortName}
-              deckSlug={config.linkedDeckSlug}
-              linkedCheckout={linkedCheckout}
-              mockSlug={config.slug}
-              recommendDeck={false}
-              onRetake={onRetake}
-              retakeHref={`/mock-exams/${config.slug}`}
-              weakTopicLabels={weakTopicLabels}
-            />
-          </div>
-        ) : null}
       </section>
 
       <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
@@ -260,7 +238,7 @@ export function MockReportPanel({
         <p className="mt-4 max-w-3xl text-sm leading-7 text-[#4f493e]">
           {shouldRecommendDeck
             ? "Your mock score shows gaps this report cannot fix alone. Targeted daily review on the same topic map — then retake this mock in 3–7 days."
-            : "Strong mock result — keep daily active recall on the same topics you just tested so the pass holds on exam day."}
+            : "A practice pass fades in days without review. Keep daily spaced recall on the topics you missed so the score holds on exam day."}
         </p>
         <MockReportHandoff
           deckPageUrl={report.linkedDeckUrl}

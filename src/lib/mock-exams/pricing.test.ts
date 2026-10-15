@@ -7,9 +7,9 @@ import {
 
 describe("mock pricing policy", () => {
   it("states one free mock, then the $5 / 5-attempt Mock Pass", () => {
-    expect(mockFreeAccessPriceLabel).toBe("First mock free, then $5 for 5 attempts");
-    expect(mockFreeAccessNotice).toMatch(/first UniPrep2Go mock is free — any exam, Exam or Learn mode/);
-    expect(mockFreeAccessNotice).toMatch(/\$5 UniPrep2Go Mock Pass .* unlocks 5 more attempts/);
+    expect(mockFreeAccessPriceLabel).toBe("Free 25-question diagnostic, then $5 for 5 full attempts");
+    expect(mockFreeAccessNotice).toMatch(/first UniPrep2Go attempt is free: a 25-question timed diagnostic on any exam/);
+    expect(mockFreeAccessNotice).toMatch(/Full-length mocks and retakes run on a \$5 UniPrep2Go Mock Pass .*: 5 attempts on any mock/);
     expect(mockFreeAccessNotice.toLowerCase()).not.toContain("free timed mocks");
     expect(mockFreeAccessNotice).toMatch(/Anki deck/i);
     expect(mockFreeAccessNotice.toLowerCase()).not.toContain("first 20");
