@@ -128,7 +128,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "sie anki deck",
       "sie readiness check",
     ],
-    headline: "Free SIE Practice Test — 75 Questions, Timed",
+    headline: "SIE Practice Test — 75 Questions, Timed (Free 25-Question Version)",
     intro:
       "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — your first mock is free, start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $19 / 300-card Anki deck.",
     audience:
@@ -223,7 +223,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "finra series 7 readiness check",
       "series 7 anki",
     ],
-    headline: "Free Series 7 Practice Test — 60 Questions",
+    headline: "Series 7 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck) ($29 / 300 cards). Official FINRA Series 7 is 125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated); this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
@@ -329,7 +329,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "free insurance exam questions",
       "life and health insurance exam prep",
     ],
-    headline: "Free Life & Health Insurance Practice Test — 60 Questions",
+    headline: "Life & Health Insurance Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A Life & Health insurance licensing practice test — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic drawn from a 120-item original bank so retakes differ, with topic scoring — free 25-question diagnostic, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
@@ -383,7 +383,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "uniform securities act practice test",
       "free series 63 exam prep",
     ],
-    headline: "Free Series 63 Practice Test — 60 Questions",
+    headline: "Series 63 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic with a readiness report — free 25-question diagnostic, no signup — then repair only your weak law rows.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
@@ -456,7 +456,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "pmp exam prep",
       "project management professional practice test",
     ],
-    headline: "Free PMP Domain Readiness Check (51 Questions)",
+    headline: "PMP Domain Readiness Check (51 Questions; Free 25-Question Version)",
     intro:
       "A timed 51-question PMP diagnostic scored on the three 2026 PMI Exam Content Outline domains — People 33% (17Q), Process 41% (21Q), Business Environment 26% (13Q). All three must clear 70% for a readiness pass. Official PMP is 180 questions (170 scored + 10 pretest) in 240 minutes with ~40% predictive and ~60% agile/hybrid items and no published percentage cut. After the report, drill the weak domain in the $11 / 346-card Anki deck before a full-length simulator.",
     audience:
@@ -553,7 +553,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "aha bls 2025",
       "bls anki",
     ],
-    headline: "Free AHA BLS Provider Cognitive Practice Test — 60 Questions",
+    headline: "AHA BLS Provider Cognitive Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 60-card Anki waitlist. Not Heartsaver and not an AHA course card.",
     audience:
@@ -572,7 +572,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "sonography principles instrumentation",
       "ardms spi anki",
     ],
-    headline: "Free ARDMS SPI Practice Test — 60 Ultrasound Physics Questions",
+    headline: "ARDMS SPI Practice Test — 60 Ultrasound Physics Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute text diagnostic for ARDMS SPI — ultrasound physics, transducers and beam formation, Doppler/hemodynamics, and artifacts/safety — drawn from a 120 unique bank. Official SPI is about 110 multiple-choice questions in 2 hours with a scaled pass of 555 (300–700). This check is shorter, has no image items, and is not ABD/OB specialty. Matching $11 / 120-card Anki is live. Independent prep — not ARDMS/Inteleos material.",
     audience:
@@ -591,7 +591,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "ascp mls mock",
       "mls anki",
     ],
-    headline: "Free ASCP MLS Practice Test — 60 Lab Questions",
+    headline: "ASCP MLS Practice Test — 60 Lab Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 90-minute diagnostic for ASCP BOC MLS — blood bank, chemistry, hematology, and microbiology/immunology. Official MLS(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLT technician.",
     audience:
@@ -610,7 +610,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "ascp mlt mock",
       "mlt anki",
     ],
-    headline: "Free ASCP MLT Practice Test — 60 Lab Questions",
+    headline: "ASCP MLT Practice Test — 60 Lab Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for ASCP BOC MLT — blood bank, chemistry, hematology, and microbiology. Official MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLS and not the California-only 80Q / 2h form.",
     audience:
@@ -628,7 +628,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "aswb bachelors mock",
       "aswb bachelors anki",
     ],
-    headline: "Free ASWB Bachelors Practice Test — 60 Generalist Questions",
+    headline: "ASWB Bachelors Practice Test — 60 Generalist Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for ASWB Bachelors (LSW/LBSW-style) — human development, assessment, intervention, and ethics. Official sitting from 3 August 2026 is 122 questions (110 scored) in 4 hours. This check is shorter. Planned 60-card Anki waitlist. Not Clinical/LCSW and not Masters.",
     audience:
@@ -646,7 +646,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "lcsw practice exam",
       "aswb clinical anki",
     ],
-    headline: "Free ASWB Clinical Practice Test — 60 LCSW Questions",
+    headline: "ASWB Clinical Practice Test — 60 LCSW Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for ASWB Clinical (LCSW) — clinical assessment, diagnosis concepts, psychotherapy, and ethics. Official sitting from 3 August 2026 is 122 questions (110 scored) in 4 hours. This check is shorter. Planned 60-card Anki waitlist. Not Bachelors/LSW.",
     audience:
@@ -664,7 +664,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "barber license mock",
       "barber anki",
     ],
-    headline: "Free Barber Practice Test — 60 Theory Questions",
+    headline: "Barber Practice Test — 60 Theory Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute theory diagnostic for NIC-style barber licensing — infection control, cutting/shaving, chemical services, and board-law themes. Official NIC National Barber Theory is 60 items (50 scored) in 90 minutes. This check is 15 minutes shorter and is not the practical. Planned 60-card Anki waitlist. Not NIC Cosmetology Theory.",
     audience:
@@ -682,7 +682,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "medication aide mock",
       "medication aide anki",
     ],
-    headline: "Free Medication Aide Practice Test — 60 Questions",
+    headline: "Medication Aide Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for state medication-aide / MACE themes — six rights, routes, safety, and documentation. Typical NCSBN MACE is 60 questions in 2 hours where a state uses it. This check uses the same item count on a shorter clock. Planned 60-card Anki waitlist. Not RN/LPN and not NNAAP CNA.",
     audience:
@@ -701,7 +701,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "hha exam 42 cfr 484.80",
       "home health aide anki",
     ],
-    headline: "Free Home Health Aide (HHA) Practice Test — 60 Questions",
+    headline: "Home Health Aide (HHA) Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute HHA diagnostic — 15 questions each on personal care, home safety and infection control, observation and reporting, and ethics, drawn from a 120-item bank so retakes differ. Questions follow the subjects a registered nurse must evaluate under 42 CFR 484.80 (75-hour training, at least 16 hours supervised practical). There is no national question count or pass score; your agency or training program sets them, and the hands-on skills are checked in person. Planned Home Health Aide Anki deck on the waitlist.",
     audience:
@@ -719,7 +719,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nail tech mock",
       "nail technician anki",
     ],
-    headline: "Free Nail Technician Practice Test — 60 Questions",
+    headline: "Nail Technician Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute theory diagnostic for NIC-style nail technician / manicurist licensing — infection control, anatomy, services, and chemistry. Official NIC Nail Technology Theory is 110 items (100 scored) in 90 minutes. This check is shorter. Practical is separate. Planned 60-card Anki waitlist. Not Cosmetology Theory and not Barber Theory.",
     audience:
@@ -736,7 +736,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nsca cpt mock",
       "nsca-cpt anki",
     ],
-    headline: "Free NSCA-CPT Practice Test — 60 Questions",
+    headline: "NSCA-CPT Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute text diagnostic for NSCA-CPT — assessment, program design, technique, and safety. Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check has no video. Planned 60-card Anki waitlist. Not CSCS and not NASM/ACE/ACSM CPT.",
     audience:
@@ -753,7 +753,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "phr mock exam",
       "phr anki",
     ],
-    headline: "Free PHR Practice Test — 60 Questions",
+    headline: "PHR Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for HRCI PHR — talent, employee relations, compensation/benefits, and compliance. Official PHR is 90 scored + 25 pretest in 2 hours with a scaled pass of 500. This check is shorter. Planned 60-card Anki waitlist. Not SPHR and not SHRM-CP.",
     audience:
@@ -770,7 +770,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "pt tech practice exam",
       "physical therapy aide anki",
     ],
-    headline: "Free Physical Therapy Aide Practice Test — 60 Questions",
+    headline: "Physical Therapy Aide Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute knowledge diagnostic for physical therapy aide / PT tech scope — modalities assist, transfers, anatomy, and ethics. There is no single national PT aide exam. Aides work under a PT or PTA. Planned 60-card Anki waitlist. Not the NPTE and not a PTA exam.",
     audience:
@@ -787,7 +787,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "praxis core mock",
       "praxis core anki",
     ],
-    headline: "Free Praxis Core Practice Test — 60 Questions",
+    headline: "Praxis Core Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute selected-response diagnostic across Praxis Core reading, writing, math, and strategy. Official Core is three separate ETS tests (Reading 5713 56Q/85 min, Writing 5723 40 SR + 2 essays/100 min, Math 5733 56Q/90 min). This check is combined SR only — no essays. Planned 60-card Anki waitlist. Not Special Education 5355.",
     audience:
@@ -804,7 +804,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "praxis 5355 mock",
       "praxis special education anki",
     ],
-    headline: "Free Praxis Special Education Practice Test — 60 Questions",
+    headline: "Praxis Special Education Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for Praxis Special Education themes — development, IEP planning, assessment, and IDEA/504 foundations. Typical Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours. Confirm your state code. Planned 60-card Anki waitlist. Not Praxis Core.",
     audience:
@@ -821,7 +821,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "precision nutrition l1 mock",
       "precision nutrition anki",
     ],
-    headline: "Free Precision Nutrition L1 Practice Test — 60 Questions",
+    headline: "Precision Nutrition L1 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute diagnostic for Precision Nutrition Level 1 coaching — client-centered change, nutrition science, habits, and scope. PN L1 is not an RDN license and not a CPT exam. Planned 60-card Anki waitlist.",
     audience:
@@ -838,7 +838,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "unarmed security mock",
       "unarmed security anki",
     ],
-    headline: "Free Unarmed Security Officer Practice Test — 60 Questions",
+    headline: "Unarmed Security Officer Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute unarmed knowledge diagnostic — law/liability, patrol, emergencies, and report writing. Licensing is state-specific. Planned 60-card Anki waitlist. Not an armed/firearms qualification.",
     audience:
@@ -857,7 +857,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nha billing coding mock",
       "nha cbcs anki",
     ],
-    headline: "Free NHA CBCS Practice Test — 60 Questions",
+    headline: "NHA CBCS Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 60-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This check is a shorter 60Q / 75 min diagnostic (free 25-question version) — not a full-length NHA form and not AAPC CPC.",
     audience:
@@ -876,7 +876,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "cosmetology theory practice test",
       "cosmetology anki",
     ],
-    headline: "Free Cosmetology Theory Practice Test — 60 Questions",
+    headline: "Cosmetology Theory Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed NIC-style cosmetology theory diagnostic across scientific concepts & safety, hair care & services, skin & nails, and salon/infection-control themes — then join the planned 60-card Anki waitlist. Official NIC Cosmetology Theory CIB: 110 items (100 scored + 10 pretest) / 90 minutes (some states 120 minutes); pass cuts are state-specific (~70–75% common). This free check is a shorter diagnostic — not a full 110Q form and not the practical exam.",
     audience:
@@ -895,7 +895,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "commercial drivers license practice test",
       "cdl anki",
     ],
-    headline: "Free CDL General Knowledge Practice Test — 60 Questions",
+    headline: "CDL General Knowledge Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — then join the planned 60-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this check is a longer 60Q / 75 min diagnostic (free 25-question version) — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.).",
     audience:
@@ -913,7 +913,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "armed security officer practice exam",
       "armed security anki",
     ],
-    headline: "Free Armed Security Officer Practice Test — 60 Questions",
+    headline: "Armed Security Officer Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed written diagnostic across use of force & law, weapons safety, patrol & emergencies, and ethics — then join the planned 60-card Anki waitlist. Armed licensing is state-specific (e.g. FL Class G, TX Level III); most pathways need unarmed credentials first plus separate firearms training and range qualification. This free check is a shorter written diagnostic only — not a live-fire test and not OpenExamPrep’s multi-state volume banks.",
     audience:
@@ -931,7 +931,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "veterinary assistant anki",
       "ava exam practice questions",
     ],
-    headline: "Free Veterinary Assistant Practice Test — 60 Questions",
+    headline: "Veterinary Assistant Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis — then join the planned 60-card Anki waitlist. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% / $100 for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
     audience:
@@ -949,7 +949,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "medical scribe exam questions",
       "medical scribe anki",
     ],
-    headline: "Free Medical Scribe Practice Test — 60 Questions",
+    headline: "Medical Scribe Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed scribe diagnostic across clinical documentation (SOAP, HPI, ROS, scribe scope), medical terminology and chart abbreviations, EHR workflow (problem list, allergies, medication reconciliation, templates), and HIPAA privacy — then drill weak topics in the linked $11 / 120-card Anki. AHDPG’s Medical Scribe Certification Exam (MSCE) is 100 questions / 1 hour 15 minutes / 80% / $185 and mixes fill-in-the-blank items. This free check is a shorter multiple-choice diagnostic from a 120 unique bank — not an MSCE form, and not the NHA CCMA or CMA (AAMA) clinical-assistant exam.",
     audience:
@@ -1124,7 +1124,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "acsm cpt anki",
       "acsm certification practice test",
     ],
-    headline: "Free ACSM CPT Practice Test — 60 Questions",
+    headline: "ACSM CPT Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A 60-question / 75-minute ACSM CPT readiness check (free 25-question version) with topic scoring — each attempt draws 15 items per topic from a 120-item bank, so retakes see new questions. Then drill weak domains in the linked $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored + 15 pretest) / 150 minutes / scaled pass 550.",
     audience:
@@ -1527,7 +1527,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     description:
       "Luxembourg Vivre ensemble exam simulation: free 25-question diagnostic, full mock 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
-    headline: "Free Luxembourg Vivre ensemble Exam Simulation (40 Questions, 60 Minutes)",
+    headline: "Luxembourg Vivre ensemble Exam Simulation (40 Questions, 60 Minutes; Free 25-Question Version)",
     intro:
       "Same format as the official exam: 40 French multiple-choice questions in 60 minutes — 10 on fundamental rights, 20 on state and communal institutions, 10 on history and European integration — drawn from a 168-question bank checked against the 2023 Constitution. You get a score per module and an explanation for every wrong option. Target 28/40 (the figure prep sites cite; the regulation publishes none). Sproochentest is separate.",
     audience:

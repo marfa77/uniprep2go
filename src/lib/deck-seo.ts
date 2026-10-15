@@ -805,7 +805,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",
-    headline: "ServSafe Manager Practice Test Free — 300 Cards + 90 Questions",
+    headline: "ServSafe Manager Practice Test — 300 Cards + 90 Questions (Free 25-Question Version)",
     studyLabel: "ServSafe Manager exam prep",
     description:
       "ServSafe Manager / CFPM exam prep with 300 food safety flashcards — time and temperature, HACCP, hygiene, contamination — plus a 90-question ServSafe practice test (free 25-question version) online. Official: 90Q (80 scored + 10 pilot) / 2h; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock. For US restaurant managers and kitchen supervisors.",
