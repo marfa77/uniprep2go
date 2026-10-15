@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 51 | 31 |
+| ok | 52 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 22 | 2 |
+| small-bank | 21 | 2 |
 | point-fix | 0 | 0 |
 | rewrite | 104 | 31 |
 | civic | 19 | 18 |
@@ -134,7 +134,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `capm-readiness-check` | planned | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `cda-childcare-readiness-check` | planned | 60 / 60 | 2026-10-03 | bank 60 for 60Q session |
 | small-bank | `electrical-journeyman-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
-| small-bank | `medication-aide-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `nail-technician-state-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `nate-core-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `nha-ccma-readiness-check` | planned | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
@@ -188,6 +187,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cdl-school-bus-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `home-health-aide-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `medicare-counseling-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `medication-aide-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `nasm-cpt-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nbrc-tmc-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nha-cbcs-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |

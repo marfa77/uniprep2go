@@ -993,31 +993,31 @@
     "id": "medication-aide-readiness-check-safety-031",
     "examSlug": "medication-aide-readiness-check",
     "topicId": "safety",
-    "prompt": "Before morning carvedilol, Mrs. Hale in 214-A has sitting blood pressure 86/54. The MAR holds the dose if systolic pressure is below 90 and says to notify the nurse. What should the medication aide do?",
+    "prompt": "Mrs. Hale takes glipizide and ate almost none of her lunch. At 1500 she is sweaty, shaky and suddenly confused. What should the medication aide do?",
     "options": [
       {
         "id": "a",
-        "text": "Hold the carvedilol and report the blood pressure to the nurse now"
+        "text": "Stay with her and call the nurse now: possible low sugar"
       },
       {
         "id": "b",
-        "text": "Give the tablet because a low reading means the beta blocker is working"
+        "text": "Let her nap, since afternoon confusion is common in dementia"
       },
       {
         "id": "c",
-        "text": "Crush half the tablet so a smaller amount can be given without a new order"
+        "text": "Give the next scheduled glipizide early to settle her"
       },
       {
         "id": "d",
-        "text": "Skip the morning check and give the dose after lunch if she feels better"
+        "text": "Chart the symptoms and report them at the end of the shift"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hold parameters are part of the order. A systolic of 86 is below the written 90 cutoff, so the aide does not give carvedilol and reports the reading to the nurse. The aide does not split, delay, or reinterpret a low pressure as “therapeutic” without a new order.",
+    "explanation": "Sulfonylureas such as glipizide keep stimulating insulin release even when the resident does not eat. Sweating, tremor and new confusion after a missed meal are classic hypoglycemia signs. The aide stays, follows the facility protocol and gets the nurse immediately.",
     "distractorExplanations": {
-      "b": "Confuses the treatment goal with the hold parameter; hypotension below the cutoff is a reason to hold, not proof it is safe to give.",
-      "c": "Crushing or cutting the dose is a prescriber change; it is not how an aide “adjusts” a hold.",
-      "d": "Delaying until after lunch skips the parameter and leaves untreated hypotension unreported."
+      "b": "Sudden sweating, shakiness and confusion after a missed meal on a sulfonylurea point to hypoglycemia, not sundowning.",
+      "c": "More glipizide lowers glucose further and can make hypoglycemia life-threatening.",
+      "d": "Hypoglycemia can progress to seizures or unconsciousness; it needs the nurse now, not at shift end."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1191,31 +1191,31 @@
     "id": "medication-aide-readiness-check-safety-037",
     "examSlug": "medication-aide-readiness-check",
     "topicId": "safety",
-    "prompt": "Family asks the aide to crush metoprolol succinate XL and mix it in pudding because Mr. Lee pockets whole tablets. The tablet is labeled extended-release. What should the aide do?",
+    "prompt": "Mr. Lee wears a fentanyl patch for chronic back pain. He asks the aide to put a heating pad over the patch area because his back is stiff. What should the aide do?",
     "options": [
       {
         "id": "a",
-        "text": "Crush it this once because pudding is supposed to protect the coating"
+        "text": "Allow it, because heat only warms the skin, not the drug"
       },
       {
         "id": "b",
-        "text": "Do not crush the XL tablet; tell the nurse about the swallow problem"
+        "text": "Do not put heat over the patch; tell the nurse"
       },
       {
         "id": "c",
-        "text": "Split the XL tablet and give both halves hidden in applesauce"
+        "text": "Allow it if the heating pad is set to the lowest setting"
       },
       {
         "id": "d",
-        "text": "Hide the whole tablet in ice cream and chart it as crushed for the family"
+        "text": "Remove the patch for an hour so the heating pad can be used"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Extended-release (XL/XR/ER) tablets must not be crushed or split unless the label or pharmacist says the form may be opened. Crushing dumps a full-day dose at once and can cause hypotension. The aide reports the swallowing problem so the nurse can request a swallow-safe form.",
+    "explanation": "Heat from heating pads, electric blankets, hot tubs or fever raises skin blood flow and speeds fentanyl absorption from a transdermal patch, which can cause dangerous sedation and slowed breathing. Heat over the patch is avoided, and the request is reported to the nurse.",
     "distractorExplanations": {
-      "a": "Pudding does not preserve an XL matrix; crushing still releases the dose all at once.",
-      "c": "Splitting XL tablets also destroys the release system unless the product is scored and labeled as splittable.",
-      "d": "Hiding a whole tablet and charting “crushed” falsifies the MAR and does not fix a swallow problem."
+      "a": "Heat increases fentanyl absorption from the patch and can cause an overdose.",
+      "c": "Even low heat speeds fentanyl release; external heat over the patch is avoided.",
+      "d": "Removing a patch without an order interrupts pain control and mishandles a controlled drug."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1290,31 +1290,31 @@
     "id": "medication-aide-readiness-check-safety-040",
     "examSlug": "medication-aide-readiness-check",
     "topicId": "safety",
-    "prompt": "Twenty minutes after a new penicillin tablet, Ms. Ward has an itchy truncal rash. She is otherwise stable. The next dose is on the MAR in six hours. What should the aide do?",
+    "prompt": "Two days after starting oxybutynin, Mr. Hayes has not passed urine for 10 hours and his lower abdomen feels full and tender. What should the medication aide do?",
     "options": [
       {
         "id": "a",
-        "text": "Give diphenhydramine from a roommate’s PRN and continue the penicillin"
+        "text": "Give extra fluids and recheck after the evening meal"
       },
       {
         "id": "b",
-        "text": "Record “mild side effect” and give remaining doses unless she wheezes"
+        "text": "Give the next oxybutynin dose to relax the bladder further"
       },
       {
         "id": "c",
-        "text": "Hold further penicillin and report a possible allergy to the nurse now"
+        "text": "Report possible urinary retention to the nurse now"
       },
       {
         "id": "d",
-        "text": "Wait until the end of the shift to mention the rash if it is still visible"
+        "text": "Chart it as expected, since bladder drugs reduce urine"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "A new rash after a new penicillin is treated as a possible allergy, which can progress to anaphylaxis if the drug is repeated. The aide holds further doses and reports immediately, even if the resident is still stable. Waiting for wheeze, borrowing another resident’s PRN, or delaying to shift end is unsafe.",
+    "explanation": "Anticholinergic drugs such as oxybutynin can cause urinary retention, constipation, dry mouth and confusion, especially in older adults. No urine for many hours with a full, tender lower abdomen needs prompt nurse assessment and possibly a catheter.",
     "distractorExplanations": {
-      "a": "A roommate’s antihistamine is the wrong person and can mask an evolving reaction while the allergen continues.",
-      "b": "Confuses a possible allergy with a mild expected side effect; stability now does not make the next dose safe.",
-      "d": "Possible allergic reactions are reported when seen, before another dose, not at shift end."
+      "a": "Pushing fluids adds to a bladder that cannot empty; retention needs nurse assessment now.",
+      "b": "Oxybutynin is anticholinergic and likely caused the retention; more of it worsens the problem.",
+      "d": "Oxybutynin reduces urgency, not urine production; 10 hours with a full, tender bladder is not expected."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1323,31 +1323,31 @@
     "id": "medication-aide-readiness-check-safety-041",
     "examSlug": "medication-aide-readiness-check",
     "topicId": "safety",
-    "prompt": "At shift change the oxycodone blister count is two tablets short of the controlled-count book. The offgoing aide says to fix the numbers after supper. What should the oncoming medication aide do?",
+    "prompt": "Mrs. Diaz has taken lisinopril for two years. This morning her lips and tongue are swollen and her voice sounds muffled. What should the medication aide do?",
     "options": [
       {
         "id": "a",
-        "text": "Borrow two tablets from the other hall cart so the numbers match"
+        "text": "Give the lisinopril, since she has taken it for two years without trouble"
       },
       {
         "id": "b",
-        "text": "Change the count sheet to the number on hand and add a brief note"
+        "text": "Offer ice chips and recheck the swelling at the next pass"
       },
       {
         "id": "c",
-        "text": "Stop, leave the count as found, and report the discrepancy immediately"
+        "text": "Hold the dose, stay with her, and call for help now"
       },
       {
         "id": "d",
-        "text": "Finish the evening pass first and recount at the next shift if it is still off"
+        "text": "Chart it as a cold sore and continue the morning pass as usual"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "A controlled-count discrepancy is reported as found. The aide does not borrow tablets, alter the book, or wait a shift. Immediate report starts an investigation and protects both staff and residents from diversion going untracked.",
+    "explanation": "ACE inhibitors such as lisinopril can cause angioedema at any point, even after years of use. Swelling of the lips and tongue with a muffled voice threatens the airway. The aide holds the drug, stays with the resident, calls for help and gets the nurse immediately.",
     "distractorExplanations": {
-      "a": "Moving controlled tablets between carts hides the shortage and creates a second count error.",
-      "b": "Changing the sheet to match the drawer is falsifying a legal count record.",
-      "d": "Waiting until the next shift delays the investigation and lets the shortage stay unexplained."
+      "a": "ACE-inhibitor angioedema can appear after years of safe use; past tolerance does not rule it out.",
+      "b": "Tongue swelling with a muffled voice can block the airway; waiting for the next pass is unsafe.",
+      "d": "A cold sore does not cause tongue swelling or voice change; mislabeling it delays emergency care."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1455,31 +1455,31 @@
     "id": "medication-aide-readiness-check-safety-045",
     "examSlug": "medication-aide-readiness-check",
     "topicId": "safety",
-    "prompt": "The MAR lists aspirin enteric-coated for Mr. Bell, who wants it crushed in applesauce because of a sore throat. What should the medication aide do?",
+    "prompt": "Mr. Bell takes apixaban and no iron supplement. Today he has black, tarry stools and new bruises on both arms. What should the medication aide do?",
     "options": [
       {
         "id": "a",
-        "text": "Crush it; enteric coating is only there to hide a bitter taste"
+        "text": "Give the next dose and recheck his stools again tomorrow"
       },
       {
         "id": "b",
-        "text": "Dissolve the tablet in hot water so the coating is no longer an issue"
+        "text": "Chart it as normal, since anticoagulants always darken stool"
       },
       {
         "id": "c",
-        "text": "Split it and give both halves with pudding if he promises to swallow"
+        "text": "Stop the apixaban for a week on the aide's own decision"
       },
       {
         "id": "d",
-        "text": "Leave it whole and tell the nurse so a crush-safe form can be ordered"
+        "text": "Report possible bleeding to the nurse before the next dose"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Enteric-coated aspirin is made to pass the stomach intact. Crushing or dissolving it exposes the stomach to the drug, can destroy the coating’s purpose, and may change absorption. The aide does not crush it; the swallow problem is reported so the nurse or pharmacy can supply a different form if ordered.",
+    "explanation": "Black, tarry stools (melena) and new bruising are warning signs of bleeding in a resident on an anticoagulant. The aide does not give, skip or adjust the drug on their own; the nurse is told before the next dose so the resident is assessed and the prescriber contacted.",
     "distractorExplanations": {
-      "a": "Enteric coating protects the stomach and controls where the drug dissolves; it is not a flavor coat.",
-      "b": "Hot water still destroys the enteric coat and can irritate the stomach the coat was meant to spare.",
-      "c": "Splitting an enteric tablet also breaks the coat unless the product is labeled as scored and splittable."
+      "a": "Black tarry stool with new bruising on an anticoagulant suggests bleeding that needs assessment today.",
+      "b": "Anticoagulants do not darken stool; black tarry stool means digested blood from upper GI bleeding.",
+      "c": "Holding an anticoagulant is a prescriber decision; the aide reports rather than self-adjusting."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-016",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Facility policy allows routine medications within 60 minutes before or after the scheduled time. A 0900 dose is given at 0945. How is it classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A wrong-time error, because it was given after 0900"
+      },
+      {
+        "id": "b",
+        "text": "On time only if a nurse co-signs the late entry"
+      },
+      {
+        "id": "c",
+        "text": "A wrong-dose error that needs an incident report"
+      },
+      {
+        "id": "d",
+        "text": "On time, within the facility's allowed window"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Facilities set an administration window, commonly 60 minutes before or after the scheduled time for routine doses. A 0900 dose given at 0945 is inside that window and is charted at the actual time as given on time.",
+    "distractorExplanations": {
+      "a": "Policy windows exist so doses within an hour of the scheduled time count as on time.",
+      "b": "A dose inside the window is on time and needs no co-signature or late-entry note.",
+      "c": "The amount was unchanged; a dose inside the window is neither a dose nor a time error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-017",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Mr. Price has dementia and answers 'yes' to any name. His wristband was removed for a bath. How should the aide confirm his identity before the pass?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask his roommate to confirm who he is before the pass"
+      },
+      {
+        "id": "b",
+        "text": "Rely on the room number and bed letter on the door"
+      },
+      {
+        "id": "c",
+        "text": "Use the MAR photo plus a second approved identifier"
+      },
+      {
+        "id": "d",
+        "text": "Ask 'Are you Mr. Price?' and give the pills if he says yes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Right person needs two facility-approved identifiers, such as the MAR photo and a date of birth confirmed by staff. For a resident with dementia who agrees to any name, a yes/no question cannot be used; if the band is off, use the photo and another approved identifier or ask the nurse.",
+    "distractorExplanations": {
+      "a": "A roommate is not an approved identifier and may be confused or mistaken.",
+      "b": "Room and bed are locations, not identifiers; residents wander and sit in other rooms.",
+      "d": "Residents with dementia may agree to any name; a yes/no question is not an identifier."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-018",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "The order is levothyroxine 50 mcg by mouth. The blister card contains 25 mcg tablets, and the MAR confirms the strength. How many tablets make the dose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.5 tablet"
+      },
+      {
+        "id": "b",
+        "text": "1 tablet"
+      },
+      {
+        "id": "c",
+        "text": "2 tablets"
+      },
+      {
+        "id": "d",
+        "text": "4 tablets"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Dose ordered ÷ dose on hand = number of tablets: 50 mcg ÷ 25 mcg = 2 tablets. If the label, MAR and calculation do not agree, the aide clarifies with the nurse before giving.",
+    "distractorExplanations": {
+      "a": "That divides the wrong way (25 ÷ 50); the dose on hand is smaller than the order.",
+      "b": "One 25 mcg tablet is only half of the ordered 50 mcg.",
+      "d": "Four tablets would be 100 mcg, double the order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-019",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "The order is potassium chloride oral liquid 20 mEq. The bottle contains 40 mEq per 15 mL. What volume should be measured?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3.75 mL"
+      },
+      {
+        "id": "b",
+        "text": "7.5 mL"
+      },
+      {
+        "id": "c",
+        "text": "15 mL"
+      },
+      {
+        "id": "d",
+        "text": "30 mL"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Volume = (dose ordered ÷ dose on hand) × volume on hand = (20 ÷ 40) × 15 mL = 7.5 mL. Measure it in an oral syringe or marked cup, and dilute potassium liquid in juice or water as labeled.",
+    "distractorExplanations": {
+      "a": "That is a quarter of 15 mL, which would deliver only 10 mEq.",
+      "c": "15 mL contains 40 mEq, double the ordered 20 mEq.",
+      "d": "30 mL contains 80 mEq, four times the ordered dose."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-020",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Mrs. Ross is NPO this morning for a scheduled procedure. Her MAR lists three PO tablets at 0800. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give them crushed in applesauce, which is not a meal"
+      },
+      {
+        "id": "b",
+        "text": "Skip the doses and chart them as given to keep the MAR clean"
+      },
+      {
+        "id": "c",
+        "text": "Give the tablets with only a small sip of water"
+      },
+      {
+        "id": "d",
+        "text": "Hold and check with the nurse about the NPO order"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NPO (nothing by mouth) before a procedure conflicts with PO medication orders. The aide does not decide which drugs may be given with a sip; the nurse clarifies, and any held doses are charted with the reason.",
+    "distractorExplanations": {
+      "a": "Food of any kind breaks NPO, and crushing changes the form without an order.",
+      "b": "Charting doses that were not given falsifies the MAR.",
+      "c": "Whether meds may be given with a sip during NPO is a nurse or prescriber decision, not the aide's."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-021",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "A simvastatin blister card is still in the drawer, but the current MAR shows the order was discontinued yesterday. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it until the card runs out to avoid waste"
+      },
+      {
+        "id": "b",
+        "text": "Do not give it; tell the nurse so the card is removed"
+      },
+      {
+        "id": "c",
+        "text": "Give it tonight, since the card is still in the drawer"
+      },
+      {
+        "id": "d",
+        "text": "Give half the usual dose while the order is checked"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The current MAR is the order source. A discontinued drug is not given even if supply remains; the aide alerts the nurse so the card is pulled from the cart and returned or destroyed per policy.",
+    "distractorExplanations": {
+      "a": "Using up a discontinued drug gives an unordered medication every night.",
+      "c": "Stock in the drawer is not an order; the MAR shows the drug was stopped.",
+      "d": "Half of a discontinued drug is still an unordered dose and a dose change."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-022",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "An order reads 'glipizide 5 mg AC breakfast.' When should the medication aide give it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 30 minutes before breakfast"
+      },
+      {
+        "id": "b",
+        "text": "With the evening meal instead of breakfast"
+      },
+      {
+        "id": "c",
+        "text": "At bedtime (HS) the night before breakfast"
+      },
+      {
+        "id": "d",
+        "text": "Two hours after breakfast is finished"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "AC means before meals (ante cibum), PC after meals and HS at bedtime. Glipizide AC breakfast is usually given about 30 minutes before breakfast so it works with the meal; giving it when the resident will not eat risks hypoglycemia.",
+    "distractorExplanations": {
+      "b": "AC breakfast names the morning meal, not supper.",
+      "c": "HS means bedtime; AC means before meals.",
+      "d": "After meals is PC; AC means before the meal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-023",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "A handwritten MAR line reads 'MS 15 mg PO q4h PRN.' The cart holds both morphine and magnesium products. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give magnesium, since it is the safer of the two choices"
+      },
+      {
+        "id": "b",
+        "text": "Give whichever card in the drawer has 'MS' printed on it"
+      },
+      {
+        "id": "c",
+        "text": "Ask the nurse to clarify the do-not-use 'MS'"
+      },
+      {
+        "id": "d",
+        "text": "Give morphine, since 15 mg is a typical opioid dose"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "'MS', 'MSO4' and 'MgSO4' are on The Joint Commission do-not-use list because they are confused for morphine and magnesium sulfate. An ambiguous order is never guessed; the nurse clarifies with the prescriber and the MAR is corrected.",
+    "distractorExplanations": {
+      "a": "Picking the 'safer' drug is still guessing; the order must be clarified.",
+      "b": "A label match cannot resolve an ambiguous order; the drug itself is unknown.",
+      "d": "Guessing the drug from the dose is how MS mix-ups happen; both drugs come in mg."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-024",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "When should the medication aide compare the drug label with the MAR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On removal, during prep, and at the bedside"
+      },
+      {
+        "id": "b",
+        "text": "Only after the dose has been swallowed by the resident"
+      },
+      {
+        "id": "c",
+        "text": "Only when the tablet looks different from the last pass"
+      },
+      {
+        "id": "d",
+        "text": "Only once, when the card is first taken from the drawer"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The three checks compare the label with the MAR when the medication is removed from storage, when it is prepared or poured, and at the bedside before administration. Each check can catch a wrong drug, dose or resident.",
+    "distractorExplanations": {
+      "b": "Checking after the swallow cannot prevent the error.",
+      "c": "Look-alike errors happen with familiar tablets too; checks are routine every time.",
+      "d": "One check misses errors made while preparing; the standard is three checks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-025",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "The MAR lists acetaminophen 650 mg PRN for pain. A resident has a temperature of 100.8°F but denies any pain. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it and chart pain as the reason on the MAR"
+      },
+      {
+        "id": "b",
+        "text": "Report the fever; the PRN order covers pain only"
+      },
+      {
+        "id": "c",
+        "text": "Give ibuprofen from house stock instead of acetaminophen"
+      },
+      {
+        "id": "d",
+        "text": "Give it, since acetaminophen also lowers fever"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PRN orders specify the indication. If the resident's need does not match (fever instead of pain), the aide reports to the nurse, who can assess and obtain an order. A new fever is also a change in condition that must be reported.",
+    "distractorExplanations": {
+      "a": "Charting a reason the resident denied falsifies the MAR.",
+      "c": "Ibuprofen is a different drug with no order for this resident.",
+      "d": "Acetaminophen can treat fever, but this order lists pain; the indication must match."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-026",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "The order is metoprolol 12.5 mg, but the pharmacy sent unscored 25 mg tablets. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the whole 25 mg tablet and chart 12.5 mg"
+      },
+      {
+        "id": "b",
+        "text": "Break it by hand, since the halves need not be exact"
+      },
+      {
+        "id": "c",
+        "text": "Crush it and give about half of the powder"
+      },
+      {
+        "id": "d",
+        "text": "Ask the nurse or pharmacy before splitting it"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Splitting is acceptable only when the tablet is scored and the label or pharmacy allows it, using a tablet splitter. An unscored tablet sent for a half dose is clarified with the nurse or pharmacy, who can supply the correct strength.",
+    "distractorExplanations": {
+      "a": "Giving double the ordered dose and charting otherwise is a dose error and falsification.",
+      "b": "Unscored tablets split unevenly, so each half is a different dose.",
+      "c": "Eyeballing half of the powder is not a measured dose."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-027",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Which of these 0800 doses is most time-critical and should be given strictly on schedule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Docusate stool softener given once each morning"
+      },
+      {
+        "id": "b",
+        "text": "Vitamin D3 1,000 units taken with breakfast"
+      },
+      {
+        "id": "c",
+        "text": "Carbidopa-levodopa for Parkinson's disease"
+      },
+      {
+        "id": "d",
+        "text": "A daily multivitamin with minerals for general health"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Carbidopa-levodopa is a time-critical medication: late doses can cause rigidity, freezing, swallowing problems and falls in Parkinson's disease. Routine vitamins and stool softeners tolerate the usual administration window.",
+    "distractorExplanations": {
+      "a": "Stool softeners are routine; a delay within the window does no harm.",
+      "b": "Vitamin D is a routine daily supplement, not a time-critical drug.",
+      "d": "Vitamins are not time-critical; a normal window is fine."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-028",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Before swallowing, Mrs. Ford asks what the new white pill is for. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tell her the drug name and its listed purpose"
+      },
+      {
+        "id": "b",
+        "text": "Tell her to trust the doctor and swallow it quickly"
+      },
+      {
+        "id": "c",
+        "text": "Give it first and explain after she swallows it"
+      },
+      {
+        "id": "d",
+        "text": "Say aides are not allowed to name any medications"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Residents have the right to be informed about their medications. The aide can state the drug name and its purpose as listed on the MAR; detailed questions about diagnosis or changes go to the nurse. A resident's question is also a safety check.",
+    "distractorExplanations": {
+      "b": "Residents have a right to know what they take; pressuring them undermines the check.",
+      "c": "Answering after the swallow removes her chance to catch an error or refuse.",
+      "d": "Aides can state the drug name and MAR purpose; deeper teaching goes to the nurse."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-029",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Mrs. Lane says, 'Leave the pills on my tray; I'll take them after breakfast.' She has no self-administration order. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave them if she is alert and promises to take them"
+      },
+      {
+        "id": "b",
+        "text": "Leave the cup on the tray and chart the dose as given"
+      },
+      {
+        "id": "c",
+        "text": "Ask the roommate to remind her to take the pills"
+      },
+      {
+        "id": "d",
+        "text": "Keep them secured, return, chart the real time"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The aide must watch the resident take the medication before charting it. If the resident wants to wait, the aide keeps the dose secured, returns within the allowed window and charts the actual time, or reports a refusal or late dose per policy.",
+    "distractorExplanations": {
+      "a": "Without a self-administration care plan, alertness and promises do not allow bedside meds.",
+      "b": "Unattended medication may be dropped, shared or not taken, and charting it as given is false.",
+      "c": "A roommate cannot be responsible for medication administration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-rights-030",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "rights",
+    "prompt": "Mr. Kim is at dialysis during the 0900 pass and returns at 1300. What should the medication aide do about his 0900 doses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip the 0900 doses and leave the MAR boxes blank"
+      },
+      {
+        "id": "b",
+        "text": "Chart the 0900 doses as given while he was out"
+      },
+      {
+        "id": "c",
+        "text": "Ask the nurse how to handle the missed time"
+      },
+      {
+        "id": "d",
+        "text": "Give the 0900 doses together with his 1300 doses"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When a resident is away at a scheduled time, the aide documents the reason and asks the nurse; some drugs, such as blood-pressure medicines after dialysis, may be held or given late by order. The aide never doubles or pre-charts on their own.",
+    "distractorExplanations": {
+      "a": "Blank boxes look like omissions; the absence and plan must be documented.",
+      "b": "Charting doses that were not given falsifies the MAR.",
+      "d": "Combining doses without direction can double effects, especially blood-pressure drugs after dialysis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-031",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Ondansetron ODT (orally disintegrating tablet) is due. How should the medication aide give it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place it on the tongue to dissolve, no water needed"
+      },
+      {
+        "id": "b",
+        "text": "Have her chew it and swallow with a full glass of water"
+      },
+      {
+        "id": "c",
+        "text": "Crush it and mix it into juice before giving"
+      },
+      {
+        "id": "d",
+        "text": "Put it between the cheek and gum like a buccal tablet"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Orally disintegrating tablets are placed on top of the tongue, dissolve in seconds and are swallowed with saliva. Hands should be dry, and the tablet is peeled from the blister rather than pushed through the foil.",
+    "distractorExplanations": {
+      "b": "ODT tablets dissolve on the tongue; chewing and water are not needed.",
+      "c": "Crushing an ODT is unnecessary and changes how it is given.",
+      "d": "Buccal is a different site; an ODT is placed on top of the tongue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-032",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "A resident's metered-dose inhaler is ordered with a spacer. What does the spacer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It holds the puff so more reaches the lungs"
+      },
+      {
+        "id": "b",
+        "text": "It lets the resident skip the slow, deep breath"
+      },
+      {
+        "id": "c",
+        "text": "It turns the inhaler into a nebulizer treatment"
+      },
+      {
+        "id": "d",
+        "text": "It allows two residents to share one inhaler safely"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A spacer is a chamber between the inhaler and mouth that holds the puff, so the resident does not need perfect timing and less medicine lands in the mouth and throat. It belongs to one resident and is cleaned per instructions.",
+    "distractorExplanations": {
+      "b": "A slow deep breath is still needed; the spacer only eases timing.",
+      "c": "A spacer is a chamber, not a nebulizer; it does not make a mist from liquid.",
+      "d": "Spacers and inhalers are single-resident devices."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-033",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "How does using a dry powder inhaler (such as a Diskus) differ from using a metered-dose inhaler?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shake it hard before every dose, like an MDI"
+      },
+      {
+        "id": "b",
+        "text": "A quick, deep breath in; never exhale into it"
+      },
+      {
+        "id": "c",
+        "text": "Use it with a spacer to slow the powder"
+      },
+      {
+        "id": "d",
+        "text": "Breathe in slowly over 5 seconds, like an MDI"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Dry powder inhalers are breath-activated: the resident breathes out away from the device, seals the lips and takes a quick, deep breath. Exhaling into it moistens and clumps the powder. They are not shaken and are not used with spacers.",
+    "distractorExplanations": {
+      "a": "Dry powder devices are not shaken; shaking applies to many MDIs.",
+      "c": "Spacers are used with MDIs, not dry powder inhalers.",
+      "d": "DPIs need a fast, forceful breath to pull the powder into the lungs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-034",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Timolol eye drops and an erythromycin eye ointment are both due in the same eye. In what order are they given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drops first, then ointment after a short wait"
+      },
+      {
+        "id": "b",
+        "text": "Ointment first so the drops spread more evenly"
+      },
+      {
+        "id": "c",
+        "text": "Mix them together in the lower lid at the same time"
+      },
+      {
+        "id": "d",
+        "text": "Give only the ointment, since it covers both drugs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When drops and ointment are due in the same eye, drops go first and ointment last, with several minutes between them, because ointment leaves a film that keeps drops from being absorbed.",
+    "distractorExplanations": {
+      "b": "Ointment forms a film that blocks drops from reaching the eye.",
+      "c": "Mixing products is not allowed and changes both doses.",
+      "d": "Each ordered drug must be given; one does not replace another."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-035",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Where should the medication aide place an ordered eye ointment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A thin ribbon along the inside of the lower lid"
+      },
+      {
+        "id": "b",
+        "text": "In the inner corner, touching the tip to the eye"
+      },
+      {
+        "id": "c",
+        "text": "A thick dab pressed directly onto the cornea"
+      },
+      {
+        "id": "d",
+        "text": "Along the upper eyelashes from outside the eye"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Eye ointment is applied as a thin ribbon into the lower conjunctival sac from the inner to the outer corner, without touching the tip to the eye. The resident then closes the eye gently to spread it; vision may blur briefly.",
+    "distractorExplanations": {
+      "b": "Touching the tip to the eye contaminates the tube and can scratch the eye.",
+      "c": "The cornea is sensitive; ointment goes into the lower conjunctival sac.",
+      "d": "Lash-line application does not deliver the drug into the eye."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-036",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Chewable aspirin 81 mg is ordered. How should it be given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Swallow it whole with water without chewing"
+      },
+      {
+        "id": "b",
+        "text": "Place it under the tongue until it dissolves fully"
+      },
+      {
+        "id": "c",
+        "text": "Have the resident chew it before swallowing"
+      },
+      {
+        "id": "d",
+        "text": "Dissolve it in water and give it through a straw"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chewable tablets are made to be chewed and then swallowed. The aide checks that the resident has teeth or dentures able to chew; if not, the nurse is asked about another form.",
+    "distractorExplanations": {
+      "a": "Chewable means it is designed to be chewed; swallowing whole is not the labeled method.",
+      "b": "Chewable tablets are chewed; sublingual products go under the tongue.",
+      "d": "Dissolving changes the form without an order and may leave part of the dose in the cup."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-037",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "The aide is pouring 15 mL of liquid into a medicine cup. How should the volume be read?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At eye level, reading the bottom of the meniscus"
+      },
+      {
+        "id": "b",
+        "text": "From above, reading the top edge of the liquid"
+      },
+      {
+        "id": "c",
+        "text": "From below while holding the cup up above the head"
+      },
+      {
+        "id": "d",
+        "text": "By filling just over the line to allow for spills"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Place the cup on a flat surface, bend to eye level and pour until the bottom of the curved surface (the meniscus) is on the 15 mL line. Reading from above or below gives a false volume.",
+    "distractorExplanations": {
+      "b": "Looking down distorts the line and gives the wrong volume.",
+      "c": "Reading from below distorts the line; the cup sits on a flat surface at eye level.",
+      "d": "Overfilling gives more than the ordered dose."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-038",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Amoxicillin oral suspension is due. What must the aide do before pouring?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Warm it in the microwave to thin the liquid"
+      },
+      {
+        "id": "b",
+        "text": "Dilute it with water so it pours more easily"
+      },
+      {
+        "id": "c",
+        "text": "Let it settle so the clear top liquid can be poured"
+      },
+      {
+        "id": "d",
+        "text": "Shake the bottle well to mix the drug evenly"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Suspensions contain particles that settle between doses. Shaking well before each dose spreads the drug evenly so every measured dose has the ordered amount. Many antibiotic suspensions are also refrigerated and dated once mixed.",
+    "distractorExplanations": {
+      "a": "Heating can damage the drug and burn the resident.",
+      "b": "Diluting changes the concentration unless the label says to.",
+      "c": "The drug settles to the bottom; pouring the clear top underdoses."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-039",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "A nitroglycerin patch is ordered 'on at 0800, off at 2000.' At 2000 the resident asks to keep it on overnight. What is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cut the patch in half at bedtime"
+      },
+      {
+        "id": "b",
+        "text": "Add a second patch at night for coverage"
+      },
+      {
+        "id": "c",
+        "text": "Remove it at 2000 as ordered"
+      },
+      {
+        "id": "d",
+        "text": "Leave it on overnight so the chest stays covered"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Nitroglycerin patches are often ordered on in the morning and off at night, giving a 10–12 hour patch-free period that prevents tolerance. The aide removes it at the ordered time, folds it sticky sides together and disposes of it per policy.",
+    "distractorExplanations": {
+      "a": "Patches are not cut unless labeled; cutting changes the dose.",
+      "b": "Two patches double the dose and cancel the patch-free period.",
+      "d": "The nightly patch-free period prevents tolerance; leaving it on defeats the order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-040",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Nystatin oral suspension is ordered 'swish and swallow' for oral thrush. How should it be given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Swish it, then spit all of it into the sink"
+      },
+      {
+        "id": "b",
+        "text": "Follow it at once with water to rinse the mouth"
+      },
+      {
+        "id": "c",
+        "text": "Swallow it right away like a regular liquid"
+      },
+      {
+        "id": "d",
+        "text": "Swish it around the mouth, then swallow it"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Nystatin for oral thrush is held and swished in the mouth for as long as directed, then swallowed, so the drug coats the mouth and throat. Food and drink are usually avoided for a short time afterward.",
+    "distractorExplanations": {
+      "a": "'Swish and swallow' means swallowed after swishing; spitting loses the dose for the throat.",
+      "b": "Rinsing right after removes the drug before it can act; food and drink are delayed.",
+      "c": "The drug must contact the mouth first to treat oral thrush."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-041",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Ear drops for an adult resident are kept in the refrigerator. What should the aide do before instilling them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heat the bottle in hot tap water for 5 minutes"
+      },
+      {
+        "id": "b",
+        "text": "Warm the bottle in the hands first"
+      },
+      {
+        "id": "c",
+        "text": "Give them straight from the refrigerator"
+      },
+      {
+        "id": "d",
+        "text": "Microwave the bottle for a few seconds"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cold ear drops can stimulate the inner ear and cause vertigo and nausea. Warming the bottle in the hands for a few minutes brings it near body temperature without risk of burns or damaging the drug.",
+    "distractorExplanations": {
+      "a": "Hot water can overheat the drops and burn the ear canal.",
+      "c": "Cold drops in the ear canal can cause dizziness and nausea.",
+      "d": "Microwaving heats unevenly and can burn the canal or damage the drug."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-042",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "The order and pharmacy allow crushing three of a resident's tablets. How should the aide prepare them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crush and mix them into her full glass of milk"
+      },
+      {
+        "id": "b",
+        "text": "Crush each one separately into a spoonful of food"
+      },
+      {
+        "id": "c",
+        "text": "Crush all tablets together into a full bowl of oatmeal"
+      },
+      {
+        "id": "d",
+        "text": "Crush them a day ahead to save time on the pass"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When the order and the drug allow crushing, each tablet is crushed separately and mixed with a small amount of soft food, such as a spoonful of applesauce, so the whole dose is taken. Mixing all drugs together or using a large serving risks interactions and missed doses.",
+    "distractorExplanations": {
+      "a": "Large volumes may not be finished, so part of the dose is lost.",
+      "c": "Mixing drugs can cause interactions, and a full bowl may not be finished.",
+      "d": "Pre-crushed drugs lose identity and potency, and the label check is lost."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-043",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "How should a resident be positioned to take oral medications?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reclined at about 15 degrees with a pillow under the knees"
+      },
+      {
+        "id": "b",
+        "text": "Lying flat on the back so the pills slide down easily"
+      },
+      {
+        "id": "c",
+        "text": "Sitting upright, and staying up for a while after"
+      },
+      {
+        "id": "d",
+        "text": "Turned on the left side with the head slightly lowered"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Oral medications are given with the resident sitting upright (as close to 90 degrees as possible) with a full sip of water. Staying upright afterward, often 15–30 minutes, lowers aspiration risk and keeps tablets from irritating the esophagus.",
+    "distractorExplanations": {
+      "a": "A low recline is not upright enough for safe swallowing.",
+      "b": "Lying flat increases choking, aspiration and pills sticking in the esophagus.",
+      "d": "A head-down position raises aspiration risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-044",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Weekly alendronate is due on Monday morning. How should it be given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "With breakfast and orange juice to protect the stomach"
+      },
+      {
+        "id": "b",
+        "text": "Empty stomach, plain water, upright 30 minutes"
+      },
+      {
+        "id": "c",
+        "text": "With coffee and other morning pills, then lie down"
+      },
+      {
+        "id": "d",
+        "text": "At bedtime with warm milk so it absorbs overnight"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Alendronate is taken first thing in the morning on an empty stomach with a full glass of plain water, at least 30 minutes before food, drinks or other medicines, and the resident stays upright for at least 30 minutes to prevent esophageal injury.",
+    "distractorExplanations": {
+      "a": "Food and juice block absorption; alendronate is taken before any food or drink.",
+      "c": "Coffee and other drugs reduce absorption, and lying down risks esophageal ulcers.",
+      "d": "Milk and lying down both cause problems: poor absorption and esophageal injury."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-routes-045",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "routes",
+    "prompt": "Nitroglycerin ointment is ordered to the chest, and the aide is trained to apply it. What protects the aide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wear gloves so the aide does not absorb the drug"
+      },
+      {
+        "id": "b",
+        "text": "Apply it over yesterday's dose without wiping it off"
+      },
+      {
+        "id": "c",
+        "text": "Rub it in with a bare fingertip until it disappears"
+      },
+      {
+        "id": "d",
+        "text": "Massage it firmly into the skin over the heart"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Topical nitroglycerin is absorbed through skin, so anyone applying it without gloves can get a dose (headache, low blood pressure). The ointment is measured on the dose paper, spread lightly without rubbing, the old dose removed and the site rotated.",
+    "distractorExplanations": {
+      "b": "The old dose is removed first; layering increases the total dose.",
+      "c": "Bare skin absorbs nitroglycerin, causing headache and low blood pressure in the aide.",
+      "d": "Nitro ointment is spread lightly on the dose paper, not massaged; the site is rotated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-046",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Minutes after a first dose of a new antibiotic, a resident says her throat feels tight. She is wheezing and her face is swelling. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Offer a glass of water to soothe her throat"
+      },
+      {
+        "id": "b",
+        "text": "Give the next antibiotic dose to finish treating the infection"
+      },
+      {
+        "id": "c",
+        "text": "Call for emergency help and the nurse at once"
+      },
+      {
+        "id": "d",
+        "text": "Have her lie down to rest and recheck in 30 minutes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Throat tightness, wheezing and facial swelling after a new drug suggest anaphylaxis, a life-threatening emergency. The aide calls for emergency help and the nurse immediately, stays with the resident and follows the facility emergency protocol, including epinephrine by an authorized person.",
+    "distractorExplanations": {
+      "a": "Swallowing with a swelling throat risks aspiration and does not treat the reaction.",
+      "b": "More of the trigger worsens the reaction.",
+      "d": "Anaphylaxis can close the airway within minutes; rechecking later wastes time."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-047",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mrs. Webb takes furosemide 40 mg daily. She complains of leg cramps and feels unusually weak. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give an extra furosemide dose to remove more fluid"
+      },
+      {
+        "id": "b",
+        "text": "Encourage more walking to stretch out the cramps"
+      },
+      {
+        "id": "c",
+        "text": "Ignore it, since cramps are normal at night"
+      },
+      {
+        "id": "d",
+        "text": "Report it; it may be low potassium"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Loop diuretics such as furosemide wash out potassium. Leg cramps, weakness and an irregular pulse can signal hypokalemia, which can cause dangerous heart rhythms. The aide reports these signs to the nurse.",
+    "distractorExplanations": {
+      "a": "More diuretic would lower potassium further.",
+      "b": "Cramps and weakness on a loop diuretic can signal low potassium, which affects the heart.",
+      "c": "New cramps with weakness are not ignored in a resident on a diuretic."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-048",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mrs. Owens takes digoxin daily. Today she has nausea, no appetite and says she sees yellow-green halos around lights. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give an antacid from the cart along with the digoxin"
+      },
+      {
+        "id": "b",
+        "text": "Give it with crackers to settle her stomach first"
+      },
+      {
+        "id": "c",
+        "text": "Report possible digoxin toxicity before the dose"
+      },
+      {
+        "id": "d",
+        "text": "Chart the halos as normal aging changes in vision"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Nausea, poor appetite, confusion, a slow pulse and yellow-green visual halos are classic signs of digoxin toxicity, which older adults develop easily. The aide reports them to the nurse before giving another dose.",
+    "distractorExplanations": {
+      "a": "An unordered antacid is a new drug and can change digoxin absorption; it does not address toxicity.",
+      "b": "Food does not fix toxicity; nausea and visual halos are warning signs to report before another dose.",
+      "d": "Yellow-green halos are a classic digoxin toxicity sign, not a normal aging change."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-049",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mr. Grant takes warfarin. His son brings ibuprofen from home and asks the aide to give it for knee pain. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it, since ibuprofen is sold without a prescription"
+      },
+      {
+        "id": "b",
+        "text": "Let the son give it so the aide is not responsible"
+      },
+      {
+        "id": "c",
+        "text": "Give it with food so it will not upset his stomach"
+      },
+      {
+        "id": "d",
+        "text": "Do not give it; tell the nurse about the request"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NSAIDs such as ibuprofen and naproxen increase bleeding risk with warfarin and can cause stomach bleeding. Over-the-counter drugs still need an order in a facility; the aide declines and reports the request to the nurse.",
+    "distractorExplanations": {
+      "a": "OTC status does not make it safe; NSAIDs plus warfarin raise bleeding risk.",
+      "b": "Family-supplied drugs still need an order; the interaction risk is the same.",
+      "c": "Food does not remove the bleeding interaction with warfarin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-050",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mrs. Ruiz takes simvastatin and asks for grapefruit juice to swallow her evening pills. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow it if she waits 10 minutes after the pill"
+      },
+      {
+        "id": "b",
+        "text": "Offer another drink and tell the nurse"
+      },
+      {
+        "id": "c",
+        "text": "Allow it, because grapefruit only affects antibiotics"
+      },
+      {
+        "id": "d",
+        "text": "Allow it, since juice helps tablets go down"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Grapefruit inhibits the enzyme that breaks down simvastatin and several other drugs, raising blood levels and the risk of muscle injury. The aide offers a different drink and reports the request so the nurse can check the care plan.",
+    "distractorExplanations": {
+      "a": "Grapefruit affects drug breakdown for many hours; a short gap does not help.",
+      "c": "Grapefruit interacts with many drug classes, including several statins.",
+      "d": "Grapefruit raises simvastatin levels and the risk of muscle damage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-051",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "During the medication pass, when should the aide perform hand hygiene?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only wash when the hands look visibly dirty"
+      },
+      {
+        "id": "b",
+        "text": "Wash hands once at the start and end of the whole pass"
+      },
+      {
+        "id": "c",
+        "text": "Wear the same gloves for the whole hallway"
+      },
+      {
+        "id": "d",
+        "text": "Clean hands before and after each resident contact"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hand hygiene is done before and after each resident contact and after removing gloves. Alcohol-based rub is acceptable unless hands are visibly soiled or after caring for a resident with C. difficile, when soap and water are required.",
+    "distractorExplanations": {
+      "a": "Germs are present without visible dirt; alcohol rub is used between residents.",
+      "b": "Hands pick up germs at each resident; cleaning once per pass spreads them.",
+      "c": "Gloves are changed between residents and hands cleaned after removal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-052",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "After giving medications to a resident on contact precautions for C. difficile, how should the aide clean their hands?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wash with soap and running water"
+      },
+      {
+        "id": "b",
+        "text": "Rub on antibacterial hand lotion from the cart"
+      },
+      {
+        "id": "c",
+        "text": "Remove the gloves; no hand cleaning is needed"
+      },
+      {
+        "id": "d",
+        "text": "Use alcohol rub, which kills C. diff spores"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Clostridioides difficile forms spores that alcohol hand rub does not kill. After contact with a resident on contact (enteric) precautions, gloves are removed and hands are washed with soap and running water to rinse spores away.",
+    "distractorExplanations": {
+      "b": "Lotion is not hand hygiene and does not remove spores.",
+      "c": "Gloves can leak or contaminate hands during removal; hand hygiene is still required.",
+      "d": "Alcohol does not kill C. diff spores; soap and water physically remove them."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-053",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Where should unopened insulin vials be stored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the freezer so they stay fresh for longer"
+      },
+      {
+        "id": "b",
+        "text": "In the staff food refrigerator next to lunches"
+      },
+      {
+        "id": "c",
+        "text": "In the medication refrigerator, not frozen"
+      },
+      {
+        "id": "d",
+        "text": "On the windowsill so they stay at room temperature"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Unopened insulin is refrigerated at about 36–46°F (2–8°C) in the medication refrigerator and never frozen. Once opened, many vials and pens may be kept at room temperature for a set number of days, with the open date written on the label.",
+    "distractorExplanations": {
+      "a": "Freezing destroys insulin; frozen insulin must be discarded.",
+      "b": "Medicines go in a dedicated medication refrigerator, not with food.",
+      "d": "Heat and direct sunlight break down insulin and reduce its potency."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-054",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Which new order most raises an older resident's risk of falls?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A daily vitamin D3 supplement with breakfast"
+      },
+      {
+        "id": "b",
+        "text": "A saline nasal spray for a dry nose"
+      },
+      {
+        "id": "c",
+        "text": "A sleeping pill such as zolpidem"
+      },
+      {
+        "id": "d",
+        "text": "A calcium carbonate chewable antacid"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sedative-hypnotics such as zolpidem, benzodiazepines and other sedating drugs cause drowsiness, confusion and poor balance in older adults and are strongly linked to falls and fractures. A new order is a cue for fall precautions and close observation.",
+    "distractorExplanations": {
+      "a": "Vitamin D does not cause sedation and may support bone health.",
+      "b": "Saline spray has no sedative or blood-pressure effect.",
+      "d": "Antacids do not cause drowsiness or poor balance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-055",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "A coworker often volunteers to give PRN opioids on another hall, and those residents keep reporting uncontrolled pain. What should the medication aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the pattern to the nurse or supervisor"
+      },
+      {
+        "id": "b",
+        "text": "Confront the coworker privately in the med room"
+      },
+      {
+        "id": "c",
+        "text": "Warn the residents' families before telling anyone"
+      },
+      {
+        "id": "d",
+        "text": "Ignore it because the coworker is being so helpful"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Volunteering for opioid passes while residents still report pain is a recognized warning sign of drug diversion. The aide reports the pattern to the nurse or supervisor, who follows the facility diversion policy; confronting the coworker or telling others can compromise the investigation.",
+    "distractorExplanations": {
+      "b": "Confrontation can tip off a diverter and compromise the investigation.",
+      "c": "Sharing suspicions outside the chain of command breaches privacy and policy.",
+      "d": "Volunteering for opioid passes while pain stays uncontrolled is a classic diversion warning sign."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-056",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "After a fingerstick the aide is trained and authorized to do, where does the used lancet go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Into the regular trash wrapped in a tissue"
+      },
+      {
+        "id": "b",
+        "text": "Into the resident's bedside drawer for now"
+      },
+      {
+        "id": "c",
+        "text": "Back into its cap to dispose of it later"
+      },
+      {
+        "id": "d",
+        "text": "Straight into a sharps container"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Used lancets and needles go immediately into a puncture-resistant sharps container at the point of use. Recapping, wrapping in tissue or leaving sharps out causes needlestick injuries and bloodborne exposure.",
+    "distractorExplanations": {
+      "a": "Tissue does not stop a lancet from injuring housekeeping staff.",
+      "b": "Leaving a used sharp in the room exposes the resident and staff to injury.",
+      "c": "Recapping is a common cause of needlestick injuries."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-057",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Which side effect should the aide watch for in nearly every resident taking daily opioids?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fast heart rate and high blood pressure"
+      },
+      {
+        "id": "b",
+        "text": "Frequent loose, watery stools"
+      },
+      {
+        "id": "c",
+        "text": "Increased energy and restlessness"
+      },
+      {
+        "id": "d",
+        "text": "Constipation and hard stools"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Opioids slow bowel movement, so constipation occurs in most residents taking them daily and does not fade with time. The aide records bowel movements and reports when there is no BM for the facility's set number of days so the bowel regimen can be adjusted.",
+    "distractorExplanations": {
+      "a": "Opioids tend to lower, not raise, heart rate and blood pressure.",
+      "b": "Opioids slow the bowel; diarrhea is not their typical effect.",
+      "c": "Opioids usually cause drowsiness, not increased energy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-058",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mrs. Diaz has taken haloperidol for months. The aide notices new lip smacking and tongue movements she cannot stop. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore them, since they are a habit of older adults"
+      },
+      {
+        "id": "b",
+        "text": "Give an extra haloperidol dose to calm the movements"
+      },
+      {
+        "id": "c",
+        "text": "Hold her hands down so she stops touching her mouth"
+      },
+      {
+        "id": "d",
+        "text": "Report the new movements to the nurse"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Repetitive lip smacking, chewing or tongue movements in a resident on an antipsychotic such as haloperidol can be tardive dyskinesia, a potentially permanent adverse effect. The aide reports it so the nurse and prescriber can reassess the drug.",
+    "distractorExplanations": {
+      "a": "New involuntary mouth movements on an antipsychotic suggest tardive dyskinesia.",
+      "b": "More antipsychotic is an unordered dose and can worsen the disorder.",
+      "c": "Holding her hands is a restraint and does not address the movements."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-059",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "While making the bed, the aide finds two tablets in Mr. Ford's sheets. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give them to Mr. Ford, since they are probably his"
+      },
+      {
+        "id": "b",
+        "text": "Put them back into his blister card"
+      },
+      {
+        "id": "c",
+        "text": "Secure them and report to the nurse"
+      },
+      {
+        "id": "d",
+        "text": "Throw them in the trash so no one takes them"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Tablets found in bedding may mean the resident is pocketing or dropping doses, so doses charted as given were not taken. The aide secures them, reports to the nurse and follows the waste policy; the nurse decides on follow-up and care-plan changes.",
+    "distractorExplanations": {
+      "a": "Found tablets cannot be identified safely or given.",
+      "b": "Returning loose tablets mixes unknown pills into his supply.",
+      "d": "Found pills are reported and wasted per policy; they may show missed doses."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-safety-060",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "safety",
+    "prompt": "Mr. Price has dysphagia and an order for nectar-thick liquids. What should he use to swallow his tablets?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thin water, since a sip for pills is too small to matter"
+      },
+      {
+        "id": "b",
+        "text": "No liquid at all, so the pills go down dry"
+      },
+      {
+        "id": "c",
+        "text": "Thin water through a straw so it goes down faster"
+      },
+      {
+        "id": "d",
+        "text": "Nectar-thick liquid, as ordered"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A resident on a thickened-liquid diet must take pills with liquid of the ordered consistency. Thin water, dry swallowing or an unordered straw raise aspiration risk. Swallowing problems with pills are reported to the nurse.",
+    "distractorExplanations": {
+      "a": "Even a small sip of thin liquid can be aspirated with dysphagia.",
+      "b": "Dry tablets can stick in the throat and cause choking.",
+      "c": "Straws increase flow and can raise aspiration risk unless ordered."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-061",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "Mrs. Cole swallows three of her four 0800 tablets, spits out the fourth and will not retake it. How should this be documented?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave all four boxes blank with no note added"
+      },
+      {
+        "id": "b",
+        "text": "Give a new tablet hidden in pudding next time"
+      },
+      {
+        "id": "c",
+        "text": "Chart all four as given, since most went down"
+      },
+      {
+        "id": "d",
+        "text": "Chart the refused tablet and notify the nurse"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Each drug is charted separately. The three swallowed tablets are initialed as given, and the refused one is charted as refused with the reason. The nurse is notified so the prescriber can be told if the refused drug is important.",
+    "distractorExplanations": {
+      "a": "Three doses were given; blank boxes misstate what happened.",
+      "b": "Hiding a refused drug is covert administration, not documentation.",
+      "c": "Charting a refused tablet as given falsifies the MAR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-062",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "Acetaminophen PRN for pain is given at 1000. When should the aide document how well it worked?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After a set time, often 30–60 minutes"
+      },
+      {
+        "id": "b",
+        "text": "At the end of the shift, only if someone asks"
+      },
+      {
+        "id": "c",
+        "text": "Right at 1000, before it could take effect"
+      },
+      {
+        "id": "d",
+        "text": "Never, since PRN results are not charted"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "PRN documentation includes the reason given and the result. Facilities set a follow-up time, often 30–60 minutes for oral pain medication, when the aide asks about pain again and records the response.",
+    "distractorExplanations": {
+      "b": "Late or optional follow-up misses whether the pain was relieved.",
+      "c": "Charting the effect before it can work is a guess, not an observation.",
+      "d": "PRN documentation must include the reason and the result."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-063",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "Why does a facility ask staff to complete a medication-error report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To track and prevent errors, not to blame"
+      },
+      {
+        "id": "b",
+        "text": "Only to protect the facility in lawsuits"
+      },
+      {
+        "id": "c",
+        "text": "To decide which staff member should be punished"
+      },
+      {
+        "id": "d",
+        "text": "To copy it into the resident's chart as a note"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Medication-error reports let the facility find system causes and prevent repeats. The medical record documents the facts of what was given and the resident's condition, while the report itself is filed separately per policy and is not referenced in the chart.",
+    "distractorExplanations": {
+      "b": "Reports exist mainly for safety improvement and resident follow-up.",
+      "c": "Error reporting is designed to find system causes, not to assign punishment.",
+      "d": "Reports are kept separate; the chart records facts, not the report itself."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-064",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "The aide opens a new bottle of latanoprost eye drops for the first time. What should be written on the bottle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, since the pharmacy label already has a date"
+      },
+      {
+        "id": "b",
+        "text": "The open date, and discard date if required"
+      },
+      {
+        "id": "c",
+        "text": "Remove the pharmacy label so it fits in the drawer"
+      },
+      {
+        "id": "d",
+        "text": "Write the resident's diagnosis on the bottle label"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Many products, such as insulin pens and eye drops, expire a set number of days after opening regardless of the printed expiration date. Writing the open date (and discard date when policy requires) lets every shift know when to stop using it.",
+    "distractorExplanations": {
+      "a": "The fill date is not the open date; many products expire days after opening.",
+      "c": "The pharmacy label identifies the resident and drug and must stay on.",
+      "d": "The diagnosis does not belong on the bottle and does not track expiry."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-065",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "How should entries on a paper MAR be made?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Abbreviated with personal shorthand to save time"
+      },
+      {
+        "id": "b",
+        "text": "In permanent ink, legible, with no erasures"
+      },
+      {
+        "id": "c",
+        "text": "In pencil so mistakes can be erased cleanly"
+      },
+      {
+        "id": "d",
+        "text": "In any color, with whiteout allowed for neatness"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The MAR is a legal record. Entries are made in permanent ink, legibly, with approved abbreviations only. Errors are corrected with a single line, initials and date, never erased or covered.",
+    "distractorExplanations": {
+      "a": "Only approved abbreviations are used so others can read the record.",
+      "c": "Pencil can be altered; the MAR is a legal record.",
+      "d": "Whiteout hides the original entry; errors get a single line through them."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-066",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "A new medication aide initials a paper MAR for the first time today. What else is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, because initials alone are enough to identify the aide"
+      },
+      {
+        "id": "b",
+        "text": "Full signature and initials in the signature section"
+      },
+      {
+        "id": "c",
+        "text": "A photo ID of the aide clipped to the front of the MAR"
+      },
+      {
+        "id": "d",
+        "text": "The nurse's initials beside every box the aide signs"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Every person who initials a MAR also signs the signature legend with full name, title and initials, so each initial can be traced to one staff member.",
+    "distractorExplanations": {
+      "a": "Many staff share initials; the signature legend links initials to a name.",
+      "c": "Photos are not part of MAR documentation.",
+      "d": "Each person signs for their own doses; a co-sign does not replace the legend."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-067",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "A new paper order for a blood-pressure medicine is on the chart. Who adds it to the MAR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The family member who brought the order from the doctor"
+      },
+      {
+        "id": "b",
+        "text": "The pharmacy delivery driver at the time of drop-off"
+      },
+      {
+        "id": "c",
+        "text": "A licensed nurse, per facility policy"
+      },
+      {
+        "id": "d",
+        "text": "The medication aide who will give the first dose"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Transcribing and verifying new orders onto the MAR is generally a licensed-nurse function. The medication aide gives medications from the MAR as written and reports anything unclear.",
+    "distractorExplanations": {
+      "a": "Families cannot transcribe orders into the record.",
+      "b": "Drivers deliver drugs; they do not enter orders.",
+      "d": "Transcribing and verifying new orders is a licensed-nurse task in most states."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-068",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "Mr. Hale refuses his 0800 metoprolol and says, 'I feel dizzy.' Which note is best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resident seems depressed and is probably faking the dizziness"
+      },
+      {
+        "id": "b",
+        "text": "Refused 0800 metoprolol; said 'I feel dizzy'; RN told 0810"
+      },
+      {
+        "id": "c",
+        "text": "Resident was difficult and uncooperative with pills today"
+      },
+      {
+        "id": "d",
+        "text": "Meds given as usual; resident fine, nothing to report"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Good documentation is objective, specific and timed: what was refused, the resident's own words in quotation marks, and who was notified and when. Opinions such as 'difficult' or 'faking' do not belong in the record.",
+    "distractorExplanations": {
+      "a": "Guessing at mood or motives is not observation; quote what the resident said.",
+      "c": "Labels like 'difficult' are opinions; notes record what was seen, said and done.",
+      "d": "This contradicts the refusal and omits the dizziness and nurse notification."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-069",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "Where must each controlled tablet removed from the cart be recorded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only in the shift report to the oncoming aide"
+      },
+      {
+        "id": "b",
+        "text": "Only on the MAR, since that shows it was given"
+      },
+      {
+        "id": "c",
+        "text": "On the controlled-drug count sheet and the MAR"
+      },
+      {
+        "id": "d",
+        "text": "On a sticky note for the count at shift end"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Controlled substances are tracked twice: the declining count (proof-of-use) sheet shows each tablet removed with date, time, resident and signature, and the MAR shows administration. Both must match at every count.",
+    "distractorExplanations": {
+      "a": "Verbal report does not replace the written count sheet.",
+      "b": "The MAR alone does not track the controlled-drug inventory.",
+      "d": "Informal notes are not legal controlled-drug records."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-070",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "A daughter brings her mother's home bottle of vitamins and asks the aide to add them to the morning pass. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it to the nurse; no order, no use"
+      },
+      {
+        "id": "b",
+        "text": "Pour the pills into the resident's existing card"
+      },
+      {
+        "id": "c",
+        "text": "Add it to the cart and give it every day"
+      },
+      {
+        "id": "d",
+        "text": "Leave it in the nightstand for the resident"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Medications brought from home cannot be given without a prescriber order and nurse or pharmacy verification. The aide hands them to the nurse, who follows policy for identification, storage or return to the family.",
+    "distractorExplanations": {
+      "b": "Mixing home pills into pharmacy packaging hides their identity.",
+      "c": "Home medications need an order and verification before use.",
+      "d": "Unsecured bedside medication is a storage and safety hazard."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-071",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "At the end of the shift, the aide has a printed pass list with residents' names and drugs. What should happen to it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the back as scrap paper at the nurses' station"
+      },
+      {
+        "id": "b",
+        "text": "Shred it or use the locked confidential bin"
+      },
+      {
+        "id": "c",
+        "text": "Take it home to review the residents' meds later"
+      },
+      {
+        "id": "d",
+        "text": "Throw it into the hallway trash can after the pass"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Printed lists with resident names and medications are protected health information. They stay in the facility and are destroyed in a shredder or locked confidential bin when no longer needed.",
+    "distractorExplanations": {
+      "a": "Reusing the sheet leaves PHI where others can read it.",
+      "c": "Removing PHI from the facility breaches privacy rules.",
+      "d": "Regular trash exposes protected health information."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-072",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "What should the offgoing medication aide include in shift report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Held, refused or late doses and changes noticed"
+      },
+      {
+        "id": "b",
+        "text": "Only the number of residents on the hall that shift"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, since the oncoming shift can read the MAR"
+      },
+      {
+        "id": "d",
+        "text": "Personal opinions about which families are difficult"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shift report covers what the next person needs to keep residents safe: held, refused and late doses, PRN doses with times, count issues and observed changes in condition.",
+    "distractorExplanations": {
+      "b": "A head count does not tell the next aide what needs follow-up.",
+      "c": "The MAR is the record, but handoff highlights what needs follow-up.",
+      "d": "Opinions are not clinical information and can bias care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-073",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "A resident refuses a tablet after the aide has already removed it from the blister. What should happen to the tablet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Save it in a labeled cup for the next shift to try"
+      },
+      {
+        "id": "b",
+        "text": "Put it back into the blister card for later use"
+      },
+      {
+        "id": "c",
+        "text": "Give it to another resident with the same order"
+      },
+      {
+        "id": "d",
+        "text": "Waste it per policy and chart the refusal"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Once a tablet is removed from its package and refused, it cannot be returned to stock or given to someone else. Non-controlled drugs are wasted per facility policy, controlled drugs with a witness, and the refusal is charted and reported.",
+    "distractorExplanations": {
+      "a": "Pre-poured doses lose their label check and cannot be given by another aide.",
+      "b": "Once removed, a tablet cannot be returned to the resident's supply.",
+      "c": "That is the wrong person's supply and a medication error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-074",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "During the pass, a resident says she is allergic to sulfa drugs. No allergy is listed on her MAR. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write the allergy on the MAR without telling anyone"
+      },
+      {
+        "id": "b",
+        "text": "Report it to the nurse so the record can be updated"
+      },
+      {
+        "id": "c",
+        "text": "Ignore it, since the admission list showed none"
+      },
+      {
+        "id": "d",
+        "text": "Wait to see if she reacts to her next sulfa dose"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Allergy information can surface at any time. The aide reports a newly stated allergy to the nurse at once, who verifies it, updates the record and contacts the prescriber if a current drug, such as sulfamethoxazole, is affected.",
+    "distractorExplanations": {
+      "a": "Recording a new allergy alone skips nurse verification and prescriber review.",
+      "c": "Residents may recall allergies later; new information must be reported.",
+      "d": "Waiting exposes her to a drug she says she reacts to."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "medication-aide-readiness-check-docs-075",
+    "examSlug": "medication-aide-readiness-check",
+    "topicId": "docs",
+    "prompt": "The blister card for a 0900 dose is empty and the pharmacy has not delivered the refill. What should the aide do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chart it as given now and give it when it arrives later"
+      },
+      {
+        "id": "b",
+        "text": "Notify the nurse and chart the dose as not available"
+      },
+      {
+        "id": "c",
+        "text": "Borrow one tablet from another resident's card for now"
+      },
+      {
+        "id": "d",
+        "text": "Leave the MAR box blank and continue the pass quietly"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When a medication is unavailable, the aide does not borrow from another resident or pre-chart. The nurse is notified so pharmacy can deliver or the prescriber can be contacted, and the MAR shows the dose was not given with the reason code.",
+    "distractorExplanations": {
+      "a": "Pre-charting a dose that was not given falsifies the MAR.",
+      "c": "Borrowing takes another resident's medication and is a medication error.",
+      "d": "A blank box hides the missed dose; the reason must be charted and reported."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
   }
 ]

@@ -347,9 +347,9 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       "Typical NCSBN MACE (where a state uses it) is 60 multiple-choice questions in 2 hours; some states use a 50-item form. This check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) on six rights, routes, safety, and documentation — not RN/LPN and not NNAAP CNA. Independent UniPrep2Go practice — not NCSBN, Credentia, or a state board exam.",
     description:
       "60-question / 75-minute Medication Aide readiness check (free 25-question version) with topic scoring — shorter clock than typical 2-hour MACE.",
-    lastUpdated: "2026-10-04",
+    lastUpdated: "2026-10-15",
     examBody: "State nurse aide / medication aide boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique LTC med-pass scenarios (30 per area), 60 drawn per attempt (expanded 2026-10-15).",
     searchAliases: ["medication aide", "CMA med aide"],
   }),
   nicheReadinessConfig({
