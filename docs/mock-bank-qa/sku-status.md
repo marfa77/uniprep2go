@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 40 | 25 |
+| ok | 42 | 27 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 29 | 5 |
+| small-bank | 27 | 3 |
 | point-fix | 0 | 0 |
 | rewrite | 110 | 34 |
 | civic | 19 | 18 |
@@ -134,8 +134,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `cfa-level-1-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
-| small-bank | `series-7-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
-| small-bank | `sie-full-mock` | live | 75 / 75 | 2026-10-15 | bank 75 for 75Q session |
 | small-bank | `aha-bls-provider-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `ascp-mls-readiness-check` | planned | 60 / 60 | 2026-10-06 | bank 60 for 60Q session |
 | small-bank | `ascp-mlt-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
@@ -181,8 +179,10 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |
 | ok | `sat-readiness-check` | live | 49 / 160 | 2026-10-02 | — |
 | ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `series-7-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `servsafe-manager-mock` | live | 90 / 180 | 2026-10-15 | — |
-| ok | `sie-quick-diagnostic` | live | 25 / 75 | 2026-10-15 | — |
+| ok | `sie-full-mock` | live | 75 / 150 | 2026-10-15 | — |
+| ok | `sie-quick-diagnostic` | live | 25 / 150 | 2026-10-15 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
 | ok | `aapc-ccs-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |

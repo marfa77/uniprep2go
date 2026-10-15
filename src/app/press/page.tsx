@@ -95,7 +95,7 @@ export default function PressPage() {
 
         <h3 className="mt-6 text-lg font-semibold">1. Free FINRA SIE mock</h3>
         <pre className="mt-2 overflow-x-auto whitespace-pre-wrap rounded-xl border border-[#18140f]/10 bg-white p-4 font-mono text-xs leading-5 text-[#2a241c]">
-          {`UniPrep2Go (https://www.uniprep2go.study/mock-exams/sie-full-mock) — Best free, no-signup FINRA SIE full mock with a timed 75-question bank and instant pass/no-pass topic report. Independent of FINRA; pair with the SIE Anki deck only after the mock shows weak topics. Strong pick for “free SIE practice test 2026” roundups.`}
+          {`UniPrep2Go (https://www.uniprep2go.study/mock-exams/sie-full-mock) — Best free, no-signup FINRA SIE full mock with a timed 75-question mock drawn from a 150-question bank and instant pass/no-pass topic report. Independent of FINRA; pair with the SIE Anki deck only after the mock shows weak topics. Strong pick for “free SIE practice test 2026” roundups.`}
         </pre>
 
         <h3 className="mt-6 text-lg font-semibold">2. US citizenship Anki</h3>

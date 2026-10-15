@@ -111,12 +111,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Official SIE: 80 items (75 scored + 5 unscored pretest), 105 minutes, passing score 70 on FINRA's equated scale. This 75-question diagnostic mirrors the scored portion with a UniPrep2Go readiness target of 70%.",
+      "Official SIE: 80 items (75 scored + 5 unscored pretest), 105 minutes, passing score 70 on FINRA's equated scale. This 75-question diagnostic mirrors the scored portion with a UniPrep2Go readiness target of 70%. Each attempt draws 75 questions in FINRA's section mix (12 / 33 / 23 / 7) from a 150-question original bank, so Mock Pass retakes see new questions.",
     disclaimer: financeDisclaimer,
     description:
-      "A timed 75-question SIE diagnostic with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
+      "A timed 75-question SIE diagnostic drawn from a 150-question bank, with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
     examBody: "FINRA",
-    lastUpdated: "2026-09-30",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "sie-quick-diagnostic",
@@ -168,12 +168,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Topic-weighted 25-question diagnostic sampled from the same FINRA SIE outline bank as the full 75-question mock. Not a full-length exam simulation.",
+      "Topic-weighted 25-question diagnostic sampled from the same 150-question FINRA SIE outline bank as the full 75-question mock. Not a full-length exam simulation.",
     disclaimer: financeDisclaimer,
     description:
       "A free 25-question SIE diagnostic (about 35 minutes) with topic-weighted scoring and a pass/no-pass readiness verdict — same outline bank as the full mock, built for candidates who want a fast gap check first.",
     examBody: "FINRA",
-    lastUpdated: "2026-07-28",
+    lastUpdated: "2026-10-15",
     questionSourceNote:
       "Stratified sample from the UniPrep2Go SIE full-mock bank (same FINRA outline domains).",
   },
@@ -344,18 +344,18 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     },
     topics: [
-      { id: "s7-f1", label: "Seeks Business for the Broker-Dealer", weightPercent: 7, targetPercent: 72 },
-      { id: "s7-f2", label: "Opens Accounts After Evaluating Customer Profiles", weightPercent: 9, targetPercent: 72 },
-      { id: "s7-f3", label: "Provides Investment Information and Recommendations", weightPercent: 73, targetPercent: 72 },
-      { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", weightPercent: 11, targetPercent: 72 },
+      { id: "s7-f1", label: "Seeks Business for the Broker-Dealer", questionCount: 4, weightPercent: 7, targetPercent: 72 },
+      { id: "s7-f2", label: "Opens Accounts After Evaluating Customer Profiles", questionCount: 6, weightPercent: 9, targetPercent: 72 },
+      { id: "s7-f3", label: "Provides Investment Information and Recommendations", questionCount: 42, weightPercent: 73, targetPercent: 72 },
+      { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", questionCount: 8, weightPercent: 11, targetPercent: 72 },
     ],
     officialSourceNote:
-      "60 original scenario and calculation questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions), with a teaching note on every wrong answer. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
+      "Each attempt draws 60 questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions) from a 120-question bank of original scenario and calculation items, so Mock Pass retakes see new questions. Every wrong answer has a teaching note. Official Series 7 Top-Off: 130 items (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question Series 7 readiness diagnostic (free 25-question version): options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
+      "A 60-question Series 7 readiness diagnostic (free 25-question version) drawn from a 120-question bank: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "series-63-readiness-check",

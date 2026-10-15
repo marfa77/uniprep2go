@@ -2477,5 +2477,2480 @@
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (sie_300_authored.csv, SIE-4). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "sie-full-mock-capital-markets-013",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "A software company sells 5 million new shares to the public in its IPO. A month later, an early buyer sells 1,000 of those shares to another investor on Nasdaq. Who receives the money in each trade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The underwriter in the IPO; Nasdaq in the later trade"
+      },
+      {
+        "id": "b",
+        "text": "The company in the IPO; the selling investor in the later trade"
+      },
+      {
+        "id": "c",
+        "text": "The company in both trades, since the shares are its own stock"
+      },
+      {
+        "id": "d",
+        "text": "The selling investor in the IPO; the company in the later Nasdaq trade"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An IPO is a primary-market sale, so the proceeds (less the underwriting spread) go to the issuer. Later trades on an exchange are secondary-market trades between investors, and the issuer receives nothing from them.",
+    "distractorExplanations": {
+      "a": "The underwriter earns a spread, but IPO proceeds go to the issuer; an exchange is a marketplace, not the seller.",
+      "c": "After the IPO the shares trade between investors in the secondary market; the issuer receives nothing from those trades.",
+      "d": "Reverses the markets: the issuer is paid in the primary offering, and the investor who sells is paid in the secondary market."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-014",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "An underwriter agrees to buy an issuer's entire new stock offering at a set price and resell it to the public. If some shares do not sell, who bears the loss?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The SEC, which guarantees registered offerings once effective"
+      },
+      {
+        "id": "b",
+        "text": "The investors who bought shares, through a lower resale price"
+      },
+      {
+        "id": "c",
+        "text": "The issuer, because this is a best efforts underwriting"
+      },
+      {
+        "id": "d",
+        "text": "The underwriter, because this is a firm commitment"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In a firm commitment underwriting the underwriter buys the whole issue as principal and resells it, so it keeps any unsold shares and any loss on them. In a best efforts deal it only acts as agent, and the issuer keeps the risk.",
+    "distractorExplanations": {
+      "a": "The SEC does not approve or guarantee any offering; an effective registration only means disclosure requirements were met.",
+      "b": "Buyers paid the public offering price; unsold shares are not their risk, they are the underwriter's under a firm commitment.",
+      "c": "In a best efforts deal the underwriter acts as agent and unsold shares stay with the issuer; buying the whole issue is a firm commitment."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-015",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "Which federal law created the SEC and regulates trading in the secondary market, including broker-dealer registration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trust Indenture Act of 1939, which covers bond indentures"
+      },
+      {
+        "id": "b",
+        "text": "Investment Company Act of 1940, which regulates funds"
+      },
+      {
+        "id": "c",
+        "text": "Securities Act of 1933, which governs new issues"
+      },
+      {
+        "id": "d",
+        "text": "Securities Exchange Act of 1934"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Securities Exchange Act of 1934 created the SEC and regulates the secondary market: exchanges, broker-dealer registration, trading practices, insider trading and periodic reporting by public companies.",
+    "distractorExplanations": {
+      "a": "That Act requires a trustee and indenture for certain corporate bond issues; it does not regulate secondary trading.",
+      "b": "The 1940 Act regulates mutual funds and other investment companies, not secondary trading or broker-dealer registration.",
+      "c": "The 1933 Act covers registration and disclosure for new issues in the primary market; it did not create the SEC."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-016",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "A growing company wants to raise $60 million from the public within 12 months without a full SEC registration, and to sell to non-accredited investors. Which exemption fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regulation A Tier 2"
+      },
+      {
+        "id": "b",
+        "text": "Rule 147 intrastate offering"
+      },
+      {
+        "id": "c",
+        "text": "Regulation D Rule 506(b)"
+      },
+      {
+        "id": "d",
+        "text": "Rule 144 resale of restricted stock"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Regulation A Tier 2 lets an issuer raise up to $75 million in a 12-month period through a qualified offering circular instead of full registration, and sell to the general public, with investment limits for non-accredited buyers.",
+    "distractorExplanations": {
+      "b": "Rule 147 requires the issuer and all buyers to be in one state; it does not suit a nationwide public raise.",
+      "c": "Rule 506(b) is a private placement with no general solicitation and at most 35 non-accredited buyers, not a public offering.",
+      "d": "Rule 144 governs resales by holders of restricted or control stock; it is not a way for an issuer to raise new money."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-017",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "An employee received restricted stock in a private placement from an issuer that files reports with the SEC. Under Rule 144, what is the minimum holding period before she can sell it publicly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6 months"
+      },
+      {
+        "id": "b",
+        "text": "12 months"
+      },
+      {
+        "id": "c",
+        "text": "24 months"
+      },
+      {
+        "id": "d",
+        "text": "90 days"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rule 144 requires restricted securities of an SEC reporting issuer to be held for at least 6 months before public resale (1 year for a non-reporting issuer). Affiliates must also meet volume and filing conditions.",
+    "distractorExplanations": {
+      "b": "One year applies when the issuer is not an SEC reporting company; this issuer files reports, so 6 months applies.",
+      "c": "Two years was the old full-holding period before the 2008 amendments; the current minimum for a reporting issuer is 6 months.",
+      "d": "Ninety days is not the Rule 144 holding period; restricted stock of a reporting issuer must be held for at least 6 months."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-018",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "An economist wants an indicator that tends to change before the economy as a whole turns. Which one is a leading indicator?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Personal income less transfer payments"
+      },
+      {
+        "id": "b",
+        "text": "Average prime rate charged by banks to borrowers"
+      },
+      {
+        "id": "c",
+        "text": "Building permits for new private housing"
+      },
+      {
+        "id": "d",
+        "text": "Gross domestic product for the quarter"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Leading indicators change before the economy does. Building permits signal future construction activity, so they are a classic leading indicator, along with stock prices and new orders for durable goods.",
+    "distractorExplanations": {
+      "a": "Personal income moves with the economy and is classed as a coincident indicator, not a leading one.",
+      "b": "The prime rate is a lagging indicator; banks adjust it after economic conditions have already changed.",
+      "d": "GDP measures output as it happens and is reported after the fact; it is a coincident measure, not a leading one."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-019",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "To slow an overheating economy, which action is an example of fiscal policy rather than monetary policy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Congress raises income taxes and cuts federal spending"
+      },
+      {
+        "id": "b",
+        "text": "The Fed raises the reserve requirement for member banks"
+      },
+      {
+        "id": "c",
+        "text": "The Fed raises the discount rate charged to member banks"
+      },
+      {
+        "id": "d",
+        "text": "The FOMC sells Treasury securities in the open market"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fiscal policy is government taxing and spending, set by Congress and the President. Monetary policy is the Federal Reserve's control of money supply and credit through open market operations, the discount rate and reserve requirements.",
+    "distractorExplanations": {
+      "b": "Reserve requirements are a Federal Reserve monetary tool; fiscal policy is taxing and spending by Congress and the President.",
+      "c": "The discount rate is set by the Federal Reserve as monetary policy; it is not a decision of Congress about taxes or spending.",
+      "d": "Open market operations are the Fed's main monetary tool; they change bank reserves, not federal taxes or spending."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-020",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "What is the federal funds rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The rate large banks charge their most creditworthy corporate customers"
+      },
+      {
+        "id": "b",
+        "text": "The yield on the most recently auctioned 10-year Treasury note"
+      },
+      {
+        "id": "c",
+        "text": "The rate banks charge each other for overnight loans of reserves"
+      },
+      {
+        "id": "d",
+        "text": "The rate the Fed charges banks that borrow at its discount window"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The federal funds rate is the rate banks charge one another for overnight loans of excess reserves. The FOMC sets a target range and steers the rate there, which makes it the most watched short-term rate.",
+    "distractorExplanations": {
+      "a": "That describes the prime rate, a bank lending rate to corporations, not overnight interbank lending.",
+      "b": "The 10-year Treasury yield is a market rate on government debt; it is not the overnight interbank rate.",
+      "d": "That is the discount rate, which the Fed sets directly; fed funds loans are between banks, with the FOMC setting a target."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-021",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "Two-year Treasury notes yield 4.6% while 10-year notes yield 3.9%. How is this yield curve described, and what does it often signal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flat, signaling no change expected in interest rates"
+      },
+      {
+        "id": "b",
+        "text": "Normal, signaling expected steady economic growth"
+      },
+      {
+        "id": "c",
+        "text": "Inverted, often read as a sign of a coming slowdown"
+      },
+      {
+        "id": "d",
+        "text": "Positive, signaling that inflation is expected to rise"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When short-term yields are above long-term yields the curve is inverted. Investors expect rates and growth to fall, and an inversion has preceded many U.S. recessions.",
+    "distractorExplanations": {
+      "a": "A flat curve has similar yields across maturities; a 0.7-point gap with short rates higher is an inverted curve.",
+      "b": "A normal curve slopes upward, with long yields above short yields; here short yields are higher, so it is inverted.",
+      "d": "Rising inflation expectations usually push long yields up, steepening the curve, not inverting it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-022",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "The U.S. dollar strengthens sharply against most foreign currencies. Which group is most likely to be hurt?",
+    "options": [
+      {
+        "id": "a",
+        "text": "U.S. consumers who buy imported goods"
+      },
+      {
+        "id": "b",
+        "text": "U.S. companies that export goods abroad"
+      },
+      {
+        "id": "c",
+        "text": "U.S. tourists travelling in Europe and Asia"
+      },
+      {
+        "id": "d",
+        "text": "Foreign companies selling products into the U.S."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A stronger dollar makes U.S. goods more expensive for foreign buyers, so exporters lose sales or margin. Importers, U.S. consumers of foreign goods and U.S. travelers abroad tend to benefit.",
+    "distractorExplanations": {
+      "a": "A strong dollar makes imports cheaper for U.S. buyers, so consumers of imported goods generally benefit.",
+      "c": "A stronger dollar buys more foreign currency, so U.S. travelers abroad get more for their money.",
+      "d": "Their goods become cheaper in dollars for U.S. buyers, which tends to help their sales, not hurt them."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-023",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "A small broker-dealer takes customer orders but does not hold customer cash or securities. It sends orders and customer accounts to another firm that executes, settles and keeps custody. What are the two firms called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Introducing firm and clearing firm"
+      },
+      {
+        "id": "b",
+        "text": "Investment adviser and custodian bank"
+      },
+      {
+        "id": "c",
+        "text": "Underwriter and selling group member"
+      },
+      {
+        "id": "d",
+        "text": "Market maker and transfer agent"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An introducing firm deals with customers and passes their accounts to a clearing (carrying) firm, which executes and settles trades and holds customer assets. The introducing firm avoids the higher net capital needed to hold customer property.",
+    "distractorExplanations": {
+      "b": "Both firms here are broker-dealers; one introduces accounts and the other clears and carries them.",
+      "c": "Those are roles in distributing a new issue, not in clearing and holding customer accounts.",
+      "d": "A market maker quotes prices in a stock and a transfer agent keeps issuer shareholder records; neither describes this arrangement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-024",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "capital-markets",
+    "prompt": "A firm continuously posts a bid and an ask for a Nasdaq stock and stands ready to buy and sell at those prices for its own account. What is it doing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acting as an agent for its customers"
+      },
+      {
+        "id": "b",
+        "text": "Acting as a market maker"
+      },
+      {
+        "id": "c",
+        "text": "Acting as the stock's transfer agent"
+      },
+      {
+        "id": "d",
+        "text": "Acting as underwriter for a new issue"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A market maker quotes a two-sided market (bid and ask) and trades from its own inventory as principal. It earns the spread and provides liquidity so investors can trade when they want.",
+    "distractorExplanations": {
+      "a": "An agent matches buyers and sellers for a commission; quoting both sides for its own account is principal market making.",
+      "c": "A transfer agent records ownership changes for the issuer; it does not quote prices or trade the stock.",
+      "d": "An underwriter distributes a new issue in the primary market; continuous two-sided quotes are secondary market making."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-008",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "A registered representative is charged with a felony after a car accident. What must happen to her Form U4?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is updated at the firm's annual registration renewal next December"
+      },
+      {
+        "id": "b",
+        "text": "Her firm files a Form U5, which ends her registration while the case runs"
+      },
+      {
+        "id": "c",
+        "text": "It must be amended promptly, within 30 days of learning of the charge"
+      },
+      {
+        "id": "d",
+        "text": "Nothing until there is a conviction, since charges are not reportable"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Form U4 must be kept current. Reportable events such as a felony charge must be disclosed by amending the U4 promptly, generally within 30 days of learning the facts, so regulators and the public see an accurate record.",
+    "distractorExplanations": {
+      "a": "U4 amendments are not batched annually; FINRA requires the form to be kept current, normally within 30 days.",
+      "b": "A U5 is filed when a registration is terminated; a pending charge requires a U4 amendment, not ending her registration.",
+      "d": "Felony charges are reportable on Form U4; waiting for a conviction would leave the record inaccurate and breach FINRA rules."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-009",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "A Series 7 representative leaves the industry to raise her children. How long does her qualification stay valid without retaking the exam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Four years, the same validity period that applies to a passed SIE result"
+      },
+      {
+        "id": "b",
+        "text": "One year, after which she must retake both the SIE and Series 7"
+      },
+      {
+        "id": "c",
+        "text": "Indefinitely, because a passed exam never expires once registered"
+      },
+      {
+        "id": "d",
+        "text": "Two years, or up to five under the Maintaining Qualifications Program"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A representative qualification lapses two years after the registration ends. Under FINRA's Maintaining Qualifications Program she can extend that to five years by electing in time and completing annual continuing education.",
+    "distractorExplanations": {
+      "a": "Four years is the SIE validity rule; a lapsed Series 7 registration follows the two-year rule, extendable through the program.",
+      "b": "The window is two years, and the program can extend it to five; the SIE result itself is valid for four years.",
+      "c": "Representative qualifications lapse after a period outside the industry; they do not last forever."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-010",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "A registered rep plans to work weekends as a paid real estate agent. No securities are involved. What does FINRA require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Written approval from FINRA before she accepts any listing"
+      },
+      {
+        "id": "b",
+        "text": "A Form U5, since she cannot hold two jobs while registered"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, because the activity does not involve securities"
+      },
+      {
+        "id": "d",
+        "text": "Prior written notice to her firm before she begins"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "FINRA's outside business activities rule requires a registered person to give the firm prior written notice before taking paid work outside the firm. The firm then decides whether to restrict or prohibit the activity.",
+    "distractorExplanations": {
+      "a": "Notice goes to her member firm, which assesses the activity; FINRA does not approve individual outside jobs.",
+      "b": "Registered persons may hold outside jobs after giving notice; nothing requires terminating her registration.",
+      "c": "FINRA's outside business activity rule covers paid work outside the firm even when no securities are involved."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-011",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "Under SEC Regulation S-P, what must a broker-dealer give a new individual customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Written confirmation that the account is covered by FDIC insurance"
+      },
+      {
+        "id": "b",
+        "text": "A guarantee that the firm will never share any of the customer's information"
+      },
+      {
+        "id": "c",
+        "text": "A copy of the firm's net capital computation for the last quarter"
+      },
+      {
+        "id": "d",
+        "text": "A privacy notice, including a right to opt out of some data sharing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Regulation S-P requires firms to protect customers' nonpublic personal information, give a privacy notice when the relationship begins, and let customers opt out of sharing with nonaffiliated third parties, with limited exceptions.",
+    "distractorExplanations": {
+      "a": "Brokerage accounts are covered by SIPC, not FDIC, and Regulation S-P does not concern insurance at all.",
+      "b": "Firms may share some data, such as with service providers; the rule requires disclosure and an opt-out for certain sharing.",
+      "c": "Net capital figures are reported to regulators; Regulation S-P is about protecting customers' nonpublic personal information."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-012",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "A trader avoided a $40,000 loss by selling stock on material nonpublic information. What is the maximum civil penalty the SEC can seek under the insider trading laws?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$40,000, equal to the loss avoided"
+      },
+      {
+        "id": "b",
+        "text": "$80,000, twice the loss avoided"
+      },
+      {
+        "id": "c",
+        "text": "$120,000, three times the loss avoided"
+      },
+      {
+        "id": "d",
+        "text": "$200,000, five times the amount of loss avoided"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under the Insider Trading and Securities Fraud Enforcement Act, the SEC can seek a civil penalty of up to three times the profit gained or loss avoided, here 3 × $40,000 = $120,000, on top of disgorgement and possible criminal charges.",
+    "distractorExplanations": {
+      "a": "Disgorgement returns the $40,000, but the civil penalty can be up to three times the loss avoided.",
+      "b": "Two times is not the statutory limit; the civil penalty can reach three times the profit gained or loss avoided.",
+      "d": "Five times exceeds the statutory maximum; civil penalties are capped at three times the profit gained or loss avoided."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-013",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "A customer who signed a predispute arbitration agreement wants to pursue a claim against her broker-dealer. What generally happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The SEC hears the case and its decision can be appealed freely"
+      },
+      {
+        "id": "b",
+        "text": "FINRA staff investigate and order the firm to repay her losses"
+      },
+      {
+        "id": "c",
+        "text": "The claim goes to FINRA arbitration, and the award is binding"
+      },
+      {
+        "id": "d",
+        "text": "She sues in federal court, and the agreement only sets the venue"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When a customer signs a predispute arbitration agreement, disputes go to FINRA's arbitration forum. Arbitrators' awards are final and binding, with very limited grounds for a court to overturn them.",
+    "distractorExplanations": {
+      "a": "The SEC does not decide customer-firm disputes, and arbitration awards can be challenged only on narrow grounds.",
+      "b": "FINRA's dispute resolution forum appoints arbitrators to decide; FINRA staff do not order restitution in a customer claim.",
+      "d": "A predispute arbitration agreement sends the claim to arbitration rather than court, and the award is generally final."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-014",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "regulatory-framework",
+    "prompt": "When must a broker-dealer give a new retail investor its Form CRS relationship summary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only if the customer asks for it in writing"
+      },
+      {
+        "id": "b",
+        "text": "At or before the first recommendation, order, or account opening"
+      },
+      {
+        "id": "c",
+        "text": "Once a year, mailed together with the customer's annual account statement"
+      },
+      {
+        "id": "d",
+        "text": "Within 30 days after the first trade in the new account has settled"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Form CRS is a short plain-English summary of services, fees, conflicts and disciplinary history. A broker-dealer must deliver it to a retail investor before or at the earliest of a recommendation, placing an order, or opening an account.",
+    "distractorExplanations": {
+      "a": "Delivery is mandatory for retail investors; the firm cannot wait for a request.",
+      "c": "Annual statement delivery does not satisfy the initial requirement; it must come before or at the first key event.",
+      "d": "Form CRS must be delivered up front so the investor can decide; delivery after the first trade is too late."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-034",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A corporate bond with a 5% coupon trades at 95. Which statement about its yields is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Its yield to maturity is below 5%"
+      },
+      {
+        "id": "b",
+        "text": "Its coupon rate has risen above 5% to match the market"
+      },
+      {
+        "id": "c",
+        "text": "Its yield to maturity is above 5%"
+      },
+      {
+        "id": "d",
+        "text": "Its current yield is exactly 5%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A bond trading below par is at a discount. The buyer receives the 5% coupon plus a gain as the price rises to par at maturity, so current yield (about 5.26%) and yield to maturity are both above the 5% coupon.",
+    "distractorExplanations": {
+      "a": "A bond bought below par gains as it rises to par at maturity, so its yield to maturity is above the coupon, not below.",
+      "b": "The coupon is fixed when the bond is issued; market changes move the price and yield, never the coupon rate.",
+      "d": "Current yield is the $50 coupon divided by the $950 price, about 5.26%, not 5%; only a bond at par has a current yield equal to its coupon."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-035",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer wants a U.S. government security that matures in six months and pays no periodic interest. Which security fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Series I savings bond, which is redeemable after six months"
+      },
+      {
+        "id": "b",
+        "text": "A Treasury note paying semiannual interest"
+      },
+      {
+        "id": "c",
+        "text": "A Treasury bond with a 20-year or 30-year maturity"
+      },
+      {
+        "id": "d",
+        "text": "A Treasury bill bought at a discount to par"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Treasury bills mature in one year or less and pay no coupon. They are sold at a discount and redeemed at par, and the difference is the investor's interest.",
+    "distractorExplanations": {
+      "a": "I bonds cannot be redeemed for the first 12 months and accrue inflation-linked interest; they are not marketable bills.",
+      "b": "Treasury notes mature in 2 to 10 years and pay interest every six months, so they do not fit a six-month, no-coupon need.",
+      "c": "Treasury bonds are long-term and pay semiannual interest; they are not six-month discount securities."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-036",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A county issues bonds to build a new courthouse. They are backed by the county's full faith and credit and its power to levy property taxes. What type of bonds are they?",
+    "options": [
+      {
+        "id": "a",
+        "text": "General obligation bonds"
+      },
+      {
+        "id": "b",
+        "text": "Revenue bonds repaid from user fees"
+      },
+      {
+        "id": "c",
+        "text": "Industrial development revenue bonds"
+      },
+      {
+        "id": "d",
+        "text": "Special assessment bonds paid by nearby owners"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "General obligation (GO) bonds are backed by the issuer's full faith and credit and its taxing power. They usually finance projects that do not produce revenue, such as courthouses, schools and parks.",
+    "distractorExplanations": {
+      "b": "Revenue bonds are repaid only from the project's income, such as tolls or fees; a courthouse generates no such income.",
+      "c": "IDRs are issued by a municipality for a private company and backed by that company's lease payments, not county taxes.",
+      "d": "Special assessment bonds are repaid by charges on properties that benefit from a specific project, not general property taxes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-037",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A New Jersey resident buys a municipal bond issued by a city in Ohio. How is the interest generally taxed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Taxable for federal purposes but exempt from New Jersey income tax"
+      },
+      {
+        "id": "b",
+        "text": "Exempt from both federal and New Jersey income tax in all cases"
+      },
+      {
+        "id": "c",
+        "text": "Taxed at long-term capital gains rates at federal and state level"
+      },
+      {
+        "id": "d",
+        "text": "Exempt from federal income tax but usually taxable by New Jersey"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Interest on most municipal bonds is exempt from federal income tax. States usually exempt interest only on bonds issued within the state, so an out-of-state bond is generally taxable by the investor's home state.",
+    "distractorExplanations": {
+      "a": "Reverses the rule: municipal interest is generally exempt federally, and out-of-state bonds are usually taxed by the home state.",
+      "b": "State exemption usually applies only to bonds issued in the investor's own state; an Ohio bond is normally taxable in New Jersey.",
+      "c": "Municipal bond interest is interest income, not a capital gain; it is generally exempt from federal tax."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-038",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A corporation issues bonds backed only by its general credit, with no specific assets pledged. What are these bonds called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Debentures"
+      },
+      {
+        "id": "b",
+        "text": "Mortgage bonds"
+      },
+      {
+        "id": "c",
+        "text": "Equipment trust certificates"
+      },
+      {
+        "id": "d",
+        "text": "Collateral trust bonds"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A debenture is an unsecured corporate bond backed only by the issuer's promise to pay. In a liquidation, debenture holders rank behind secured creditors but ahead of preferred and common stockholders.",
+    "distractorExplanations": {
+      "b": "Mortgage bonds are secured by a lien on real property; debentures have no specific collateral.",
+      "c": "Equipment trust certificates are secured by equipment such as aircraft or railcars, so they are not unsecured.",
+      "d": "Collateral trust bonds are secured by securities the issuer deposits with a trustee, not by general credit alone."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-039",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A $1,000 par convertible bond can be converted at $40 per share. The common stock now trades at $44. What is the bond's conversion value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,000"
+      },
+      {
+        "id": "b",
+        "text": "$1,040"
+      },
+      {
+        "id": "c",
+        "text": "$1,100"
+      },
+      {
+        "id": "d",
+        "text": "$1,760"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Conversion ratio = $1,000 par ÷ $40 conversion price = 25 shares. Conversion value = 25 × $44 = $1,100. The bond should trade at or above this value, because it can be exchanged for that much stock.",
+    "distractorExplanations": {
+      "a": "That is the par value; conversion value is shares received times the current stock price.",
+      "b": "Adds the $40 conversion price to par instead of multiplying 25 shares by the $44 stock price.",
+      "d": "Multiplies 40 shares by $44; $1,000 ÷ $40 gives 25 shares, not 40."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-040",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Which rating is the lowest that still counts as investment grade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "BBB from S&P or Baa from Moody's"
+      },
+      {
+        "id": "b",
+        "text": "BB from S&P or Ba from Moody's ratings"
+      },
+      {
+        "id": "c",
+        "text": "AAA from S&P or Aaa from Moody's"
+      },
+      {
+        "id": "d",
+        "text": "A from S&P or A from Moody's"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Investment grade runs from AAA/Aaa down to BBB/Baa. Bonds rated BB/Ba or lower are non-investment-grade (high-yield or junk) and carry more default risk.",
+    "distractorExplanations": {
+      "b": "BB/Ba is the highest non-investment-grade (high-yield) rating, one notch below investment grade.",
+      "c": "AAA/Aaa is the highest rating, not the lowest; it signals the strongest credit quality.",
+      "d": "Single-A is investment grade but not the lowest tier; BBB/Baa is the bottom investment-grade rating."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-041",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer wants a mortgage-backed security whose timely payment is backed by the full faith and credit of the U.S. government. Which issuer fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ginnie Mae (GNMA)"
+      },
+      {
+        "id": "b",
+        "text": "Fannie Mae (FNMA)"
+      },
+      {
+        "id": "c",
+        "text": "Federal Home Loan Banks"
+      },
+      {
+        "id": "d",
+        "text": "Freddie Mac (FHLMC)"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ginnie Mae is a government agency within HUD, so its mortgage-backed securities carry the full faith and credit of the U.S. government. Fannie Mae and Freddie Mac securities are guaranteed only by those enterprises.",
+    "distractorExplanations": {
+      "b": "Fannie Mae is a government-sponsored enterprise; its securities carry its own guarantee, not the U.S. government's full faith and credit.",
+      "c": "The Federal Home Loan Banks issue debt to fund member banks; it is not full faith and credit and not mortgage pass-throughs.",
+      "d": "Freddie Mac is also a government-sponsored enterprise, so its securities are not direct obligations of the U.S. government."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-042",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Mortgage rates fall sharply and many homeowners refinance. What risk does this create for holders of mortgage-backed securities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Liquidity risk, as mortgage-backed securities stop trading when rates fall"
+      },
+      {
+        "id": "b",
+        "text": "Extension risk, as homeowners hold their mortgages longer than expected"
+      },
+      {
+        "id": "c",
+        "text": "Prepayment risk, with principal returned early to reinvest at lower rates"
+      },
+      {
+        "id": "d",
+        "text": "Credit risk, as refinancing borrowers stop paying their mortgages"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When rates fall, homeowners refinance and pay off their mortgages early. MBS holders get principal back sooner than expected and must reinvest it at lower rates. This is prepayment risk.",
+    "distractorExplanations": {
+      "a": "MBS keep trading when rates fall; the problem is that principal comes back early.",
+      "b": "Extension risk occurs when rates rise and refinancing slows; falling rates speed up prepayments instead.",
+      "d": "Refinancing pays loans off in full; it does not mean borrowers are defaulting."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-043",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer owns 100 shares bought at $50 and writes one 55 call for a $2 premium. What is her maximum gain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$200"
+      },
+      {
+        "id": "b",
+        "text": "$500"
+      },
+      {
+        "id": "c",
+        "text": "Unlimited"
+      },
+      {
+        "id": "d",
+        "text": "$700"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In a covered call the maximum gain is (strike − cost) + premium = ($55 − $50) + $2 = $7 per share, or $700. The premium adds income, but the short call caps her gain if the stock rises above $55.",
+    "distractorExplanations": {
+      "a": "Counts only the premium; she also gains $5 per share if the stock rises to the $55 strike and is called away.",
+      "b": "Counts only the rise from $50 to the $55 strike and leaves out the $2 premium she received.",
+      "c": "Writing the call caps her upside at the strike; above $55 the shares are called away."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-044",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "An investor owns 500 shares of a stock with a large unrealized gain. He wants to keep the shares but protect against a sharp decline over the next three months. Which strategy fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buy put options on the stock"
+      },
+      {
+        "id": "b",
+        "text": "Buy call options on the same stock"
+      },
+      {
+        "id": "c",
+        "text": "Sell the shares short against his long position"
+      },
+      {
+        "id": "d",
+        "text": "Write uncovered put options on the stock"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A long put gives the right to sell at the strike price, so it sets a floor under the shares' value while keeping upside potential. The cost is the premium, like an insurance payment.",
+    "distractorExplanations": {
+      "b": "Long calls profit if the price rises; they do nothing to offset losses on shares he already owns.",
+      "c": "Shorting against the box hedges the position but removes all upside and has tax consequences; a put keeps the upside.",
+      "d": "Writing puts obligates him to buy more shares if the price falls, which adds to downside risk rather than reducing it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-045",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "An investor holds an American-style equity call option. When may she exercise it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only after first notifying the OCC thirty days in advance"
+      },
+      {
+        "id": "b",
+        "text": "At any time up to and including the expiration date"
+      },
+      {
+        "id": "c",
+        "text": "Only on the expiration date itself"
+      },
+      {
+        "id": "d",
+        "text": "Only after the stock trades above the strike for five days"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "American-style options can be exercised at any time up to expiration. European-style options can be exercised only at expiration. Listed U.S. equity options are American-style.",
+    "distractorExplanations": {
+      "a": "Exercise instructions go through the broker and the OCC without any 30-day notice period.",
+      "c": "That describes a European-style option; American-style options can be exercised any time before expiration.",
+      "d": "No price-history condition applies; she may exercise whenever she chooses before expiration."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-046",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Which organization issues listed options in the U.S. and guarantees that the parties to an exercised contract will perform?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Options Clearing Corporation"
+      },
+      {
+        "id": "b",
+        "text": "The Chicago Board Options Exchange"
+      },
+      {
+        "id": "c",
+        "text": "The Securities Investor Protection Corporation"
+      },
+      {
+        "id": "d",
+        "text": "The Securities and Exchange Commission"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Options Clearing Corporation (OCC) issues all listed options and acts as the buyer to every seller and the seller to every buyer, guaranteeing performance on exercise.",
+    "distractorExplanations": {
+      "b": "Cboe is an exchange where options trade; the OCC issues and guarantees the contracts.",
+      "c": "SIPC protects customer assets when a broker-dealer fails; it does not guarantee option contracts.",
+      "d": "The SEC regulates the options market but does not issue or guarantee options contracts."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-047",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Which options position has the greatest potential loss?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Writing an uncovered call"
+      },
+      {
+        "id": "b",
+        "text": "Buying a put option"
+      },
+      {
+        "id": "c",
+        "text": "Writing an uncovered put option"
+      },
+      {
+        "id": "d",
+        "text": "Buying a call option"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An uncovered call writer must deliver shares at the strike price however high the stock goes. Because a stock price has no upper limit, the potential loss is unlimited, the greatest of any basic option position.",
+    "distractorExplanations": {
+      "b": "A put buyer's maximum loss is the premium paid, so the loss is limited.",
+      "c": "A naked put writer's loss is large but limited, because the stock cannot fall below zero.",
+      "d": "A call buyer's maximum loss is the premium paid, so the loss is limited."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-048",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Parents open a 529 college savings plan for their daughter. Which statement about its federal tax treatment is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contributions and earnings are both taxed each year as the account grows"
+      },
+      {
+        "id": "b",
+        "text": "Contributions are deductible, and all withdrawals are taxed as income"
+      },
+      {
+        "id": "c",
+        "text": "Contributions are not deductible, but qualified withdrawals are tax-free"
+      },
+      {
+        "id": "d",
+        "text": "Contributions are deductible, and qualified withdrawals are also tax-free"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "529 plan contributions are made with after-tax money and are not federally deductible. Earnings grow tax-deferred and are tax-free when withdrawn for qualified education expenses; non-qualified withdrawals of earnings are taxed and penalized.",
+    "distractorExplanations": {
+      "a": "Earnings grow tax-deferred in a 529 and are tax-free when used for qualified education expenses.",
+      "b": "Reverses the treatment: 529 contributions are made with after-tax dollars, and qualified withdrawals are tax-free.",
+      "d": "There is no federal deduction for 529 contributions, although some states give a state deduction."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-049",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A grandmother wants to contribute to a Coverdell Education Savings Account for her grandson. What is the annual contribution limit per beneficiary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,000"
+      },
+      {
+        "id": "b",
+        "text": "$2,000"
+      },
+      {
+        "id": "c",
+        "text": "$7,000"
+      },
+      {
+        "id": "d",
+        "text": "$19,000"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Total Coverdell ESA contributions for one beneficiary are limited to $2,000 per year from all contributors combined. Contributors must also be under an income limit, unlike 529 plans.",
+    "distractorExplanations": {
+      "a": "The Coverdell limit is $2,000 per beneficiary per year, not $1,000.",
+      "c": "That figure is closer to an IRA contribution limit; Coverdell contributions are capped at $2,000 per beneficiary per year.",
+      "d": "That is near the annual gift tax exclusion, not the Coverdell limit, which is $2,000 per beneficiary."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-050",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "How does a Roth IRA differ from a traditional IRA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Roth contributions are deductible, and all withdrawals are taxed as income"
+      },
+      {
+        "id": "b",
+        "text": "Roth contributions are after-tax, and qualified withdrawals are tax-free"
+      },
+      {
+        "id": "c",
+        "text": "Roth IRAs can hold only bank CDs and money market funds, not stocks or bonds"
+      },
+      {
+        "id": "d",
+        "text": "Roth accounts require minimum distributions starting at age 73 for the owner"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Roth IRA contributions are made with after-tax money. Qualified withdrawals, after five years and age 59½ or another qualifying event, are tax-free, and the original owner has no required minimum distributions.",
+    "distractorExplanations": {
+      "a": "That describes a deductible traditional IRA; Roth contributions are never deductible.",
+      "c": "A Roth IRA can hold the same broad range of securities as a traditional IRA.",
+      "d": "Original Roth IRA owners have no required minimum distributions during their lifetime; traditional IRAs do."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-051",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A variable annuity is in its payout phase with an assumed interest rate (AIR) of 4%. This month the separate account earned the equivalent of 6% a year. What happens to the next payment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It increases by exactly 6%, the separate account's annual return"
+      },
+      {
+        "id": "b",
+        "text": "It decreases, because the account return was above the AIR"
+      },
+      {
+        "id": "c",
+        "text": "It stays the same, because the AIR fixes the payment amount"
+      },
+      {
+        "id": "d",
+        "text": "It increases, because the account beat the AIR"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In a variable annuity's payout phase, payments rise when the separate account earns more than the AIR, stay level when it equals the AIR, and fall when it earns less.",
+    "distractorExplanations": {
+      "a": "The payment rises with the excess over the AIR, not by the full 6% return.",
+      "b": "Reverses the rule: returns above the AIR raise annuity unit value and the payment.",
+      "c": "The AIR is a benchmark, not a guarantee; variable payments rise or fall with performance relative to it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-052",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "In a fixed annuity, who bears the investment risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The SEC, because annuities are registered securities"
+      },
+      {
+        "id": "b",
+        "text": "The contract owner, through the separate account"
+      },
+      {
+        "id": "c",
+        "text": "The broker-dealer that sold the annuity to the owner"
+      },
+      {
+        "id": "d",
+        "text": "The insurance company that issued the contract"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A fixed annuity guarantees a stated rate and payments from the insurer's general account, so the insurer bears the investment risk. For that reason fixed annuities are insurance products, not securities.",
+    "distractorExplanations": {
+      "a": "Fixed annuities are insurance products, not registered securities, and the SEC never guarantees returns.",
+      "b": "The separate account belongs to a variable annuity; in a fixed annuity the insurer's general account bears the risk.",
+      "c": "The selling firm does not guarantee annuity returns; the issuing insurer does."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-053",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "Which statement about hedge funds is generally accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They guarantee a positive return whatever happens in the markets"
+      },
+      {
+        "id": "b",
+        "text": "They are registered mutual funds that any retail investor can buy daily at NAV"
+      },
+      {
+        "id": "c",
+        "text": "They may invest only in long positions in U.S. large-company stocks"
+      },
+      {
+        "id": "d",
+        "text": "Private funds, usually limited to accredited investors, often with lockups"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hedge funds are private pools that rely on exemptions from registration, so they usually accept only accredited or other qualified investors. They may use leverage, shorting and derivatives, and often restrict withdrawals with lockup periods.",
+    "distractorExplanations": {
+      "a": "No fund can guarantee returns; hedge funds can lose money, sometimes heavily.",
+      "b": "Hedge funds are generally private, unregistered funds; they are not open-end mutual funds redeemable daily.",
+      "c": "Hedge funds often use short selling, leverage and derivatives across many markets."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-054",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "An investor buys units of a real estate limited partnership. Which statement describes her position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Her units trade daily on an exchange and can be sold at any time"
+      },
+      {
+        "id": "b",
+        "text": "She manages the properties and is personally liable for partnership debts"
+      },
+      {
+        "id": "c",
+        "text": "Income and losses flow through to her, and her liability is limited"
+      },
+      {
+        "id": "d",
+        "text": "The partnership pays corporate tax, then distributes after-tax dividends"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A direct participation program passes income, gains, losses and deductions straight to its partners. Limited partners have no management role, and their liability is limited to the amount they invested.",
+    "distractorExplanations": {
+      "a": "Most direct participation programs are illiquid, with no active secondary market for the units.",
+      "b": "That describes the general partner; limited partners have no management role and limited liability.",
+      "d": "A limited partnership is a pass-through entity; it does not pay corporate income tax."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-055",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A retired customer is offered a non-traded REIT with a high stated distribution. Which risk deserves the most attention?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Liquidity risk, since there may be no market to sell the shares"
+      },
+      {
+        "id": "b",
+        "text": "Inflation risk, since REIT values cannot change once purchased"
+      },
+      {
+        "id": "c",
+        "text": "Currency risk, since REIT distributions are paid in foreign currency"
+      },
+      {
+        "id": "d",
+        "text": "Call risk, since the REIT may redeem shares when rates fall"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Non-traded REITs are not listed, so investors may be unable to sell for years except through limited redemption programs, often at a discount. That liquidity risk matters most for a retiree who may need the money.",
+    "distractorExplanations": {
+      "b": "REIT values can change; the bigger issue is that the shares do not trade on an exchange.",
+      "c": "U.S. non-traded REITs pay distributions in dollars; currency risk is not the key issue.",
+      "d": "Call risk applies to callable bonds; it is not the main concern with non-traded REIT shares."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-056",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer owns 100 shares of a stock trading at $80. The company does a 2-for-1 stock split. What does she hold afterward, ignoring market movement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "100 shares worth about $160 each"
+      },
+      {
+        "id": "b",
+        "text": "50 shares worth about $160 each"
+      },
+      {
+        "id": "c",
+        "text": "200 shares worth about $80 each"
+      },
+      {
+        "id": "d",
+        "text": "200 shares worth about $40 each"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A 2-for-1 split doubles the number of shares and halves the price, so 100 shares at $80 become 200 shares at about $40. The total value, $8,000, and her percentage ownership are unchanged.",
+    "distractorExplanations": {
+      "a": "Describes a reverse split; a 2-for-1 split doubles the shares and halves the price.",
+      "b": "Halving the shares is a 1-for-2 reverse split, not a 2-for-1 forward split.",
+      "c": "A split does not create value; the total stays $8,000, so the price falls to about $40."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-057",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer receives qualified dividends on shares she has held for several years. How are they generally taxed federally?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only when the shares are eventually sold, as a capital gain"
+      },
+      {
+        "id": "b",
+        "text": "At ordinary income rates, like interest"
+      },
+      {
+        "id": "c",
+        "text": "Not at all, since corporate profits were already taxed"
+      },
+      {
+        "id": "d",
+        "text": "At the lower long-term capital gains rates"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Qualified dividends, from U.S. or qualifying foreign companies on shares held long enough, are taxed at the lower long-term capital gains rates. Non-qualified dividends are taxed as ordinary income.",
+    "distractorExplanations": {
+      "a": "Dividends are taxed in the year received, not deferred until the shares are sold.",
+      "b": "Qualified dividends get the lower long-term capital gains rates; ordinary dividends and interest are taxed at ordinary rates.",
+      "c": "Dividends are taxable to shareholders despite corporate tax; qualified status only lowers the rate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-058",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A mutual fund charges a 0.25% annual 12b-1 fee. What does this fee pay for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The front-end sales charge deducted when the shares are first bought"
+      },
+      {
+        "id": "b",
+        "text": "Distribution costs such as marketing and sales compensation"
+      },
+      {
+        "id": "c",
+        "text": "The portfolio manager's investment advisory fee"
+      },
+      {
+        "id": "d",
+        "text": "Taxes the fund owes on its realized capital gains"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A 12b-1 fee is an annual charge deducted from fund assets to pay for distribution, such as advertising and compensation to selling firms. It is included in the fund's expense ratio.",
+    "distractorExplanations": {
+      "a": "A front-end load is taken at purchase; the 12b-1 fee is an ongoing charge on fund assets.",
+      "c": "The advisory fee is a separate management fee; 12b-1 fees cover distribution and marketing.",
+      "d": "Funds generally pass gains through to shareholders and pay no such tax; 12b-1 fees cover distribution."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-059",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer reinvests all capital gains distributions from her mutual fund and never takes cash. Are the distributions taxable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, capital gains inside a mutual fund are never taxed to shareholders"
+      },
+      {
+        "id": "b",
+        "text": "Yes, they are taxable in the year distributed even if reinvested"
+      },
+      {
+        "id": "c",
+        "text": "No, reinvested distributions are tax-free until she sells shares"
+      },
+      {
+        "id": "d",
+        "text": "Yes, but only if she has owned the fund shares for less than one year"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Mutual fund distributions are taxable to shareholders in the year paid, whether taken in cash or reinvested. Reinvested amounts increase her cost basis, so she is not taxed twice when she sells.",
+    "distractorExplanations": {
+      "a": "Funds pass realized gains to shareholders, who pay tax on those distributions.",
+      "c": "Reinvesting does not defer tax; distributions are taxable in the year paid, and the reinvested amount adds to her cost basis.",
+      "d": "The fund's own holding period sets the character of the gain; distributions are taxable either way."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-060",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer moves from holding 3 stocks to a diversified portfolio of 60 stocks across many industries. Which risk has she reduced most?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interest-rate risk from changes in market interest rates"
+      },
+      {
+        "id": "b",
+        "text": "Systematic (market) risk that affects nearly all stocks at the same time"
+      },
+      {
+        "id": "c",
+        "text": "Unsystematic (business) risk tied to individual companies"
+      },
+      {
+        "id": "d",
+        "text": "Inflation risk from loss of purchasing power over time"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Diversification reduces unsystematic risk, the risk of a single company or industry doing badly. It cannot remove systematic risk, such as market declines, interest-rate changes or inflation, which affect almost all securities.",
+    "distractorExplanations": {
+      "a": "Interest-rate risk affects whole markets, especially bonds; adding stocks does not remove it.",
+      "b": "Diversification cannot remove market risk, since a broad decline hits all stocks at once.",
+      "d": "Inflation affects the whole economy; holding more stocks does not remove purchasing-power risk."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-061",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer buys a high-yield corporate bond fund because its yield is much higher than an investment-grade fund's. Which risk mainly explains the higher yield?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credit (default) risk of lower-rated issuers"
+      },
+      {
+        "id": "b",
+        "text": "Currency risk, since high-yield bonds are paid in foreign currency"
+      },
+      {
+        "id": "c",
+        "text": "Regulatory risk, since high-yield funds are not SEC registered"
+      },
+      {
+        "id": "d",
+        "text": "Call risk, since high-yield bonds can never be called"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High-yield bonds are rated below investment grade, so their issuers are more likely to default. Investors demand higher yields as compensation for that credit risk.",
+    "distractorExplanations": {
+      "b": "U.S. high-yield bonds are dollar bonds; their higher yield compensates for default risk.",
+      "c": "High-yield mutual funds are registered like other funds; the extra yield reflects credit risk.",
+      "d": "Many high-yield bonds are callable; call risk does not explain why the yield is higher."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-062",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer buys an exchange-traded note (ETN) that tracks a commodity index. Which risk does an ETN carry that a typical ETF does not?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tracking error, which ETFs avoid by holding futures"
+      },
+      {
+        "id": "b",
+        "text": "Credit risk of the bank that issued the note"
+      },
+      {
+        "id": "c",
+        "text": "Daily NAV pricing, so it cannot trade during the day"
+      },
+      {
+        "id": "d",
+        "text": "Unlimited liability for losses beyond the amount invested"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An ETN is an unsecured debt obligation of the issuing bank that promises a return linked to an index. It holds no underlying assets for investors, so if the issuer defaults, holders can lose money even if the index rises.",
+    "distractorExplanations": {
+      "a": "Both products can have tracking error; the distinct ETN risk is that it is an unsecured promise by the issuer.",
+      "c": "ETNs trade on exchanges throughout the day, like ETFs.",
+      "d": "An ETN buyer can lose at most the amount invested; losses are not unlimited."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-063",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer expects to hold a mutual fund for only about two years and wants to avoid a front-end sales charge. Which share class usually fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Class B shares held until they convert to Class A"
+      },
+      {
+        "id": "b",
+        "text": "Class A shares bought just under a breakpoint"
+      },
+      {
+        "id": "c",
+        "text": "Class C shares with a level load"
+      },
+      {
+        "id": "d",
+        "text": "Class A shares with a front-end load"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Class C shares usually have no front-end load, a small contingent deferred sales charge for about a year, and higher ongoing 12b-1 fees. Over a short holding period, they often cost less than Class A shares.",
+    "distractorExplanations": {
+      "a": "Class B shares carry long declining back-end charges and are rarely sold now; they suit long holding periods.",
+      "b": "Buying just below a breakpoint pays a higher load, the opposite of the customer's goal.",
+      "d": "Class A shares charge the sales load at purchase, which suits large, long-term investments rather than short holding periods."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-064",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "An importer uses a short-term time draft that a bank has guaranteed to pay for goods shipped from overseas. What is this money market instrument called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Treasury bill"
+      },
+      {
+        "id": "b",
+        "text": "A banker's acceptance"
+      },
+      {
+        "id": "c",
+        "text": "A negotiable certificate of deposit"
+      },
+      {
+        "id": "d",
+        "text": "Commercial paper"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A banker's acceptance is a time draft that a bank has accepted, guaranteeing payment at maturity. It is used to finance international trade and trades at a discount in the money market.",
+    "distractorExplanations": {
+      "a": "Treasury bills are government debt; they are not used to pay for an importer's goods.",
+      "c": "A negotiable CD is a large bank deposit with a set maturity; it does not finance a specific trade shipment.",
+      "d": "Commercial paper is unsecured short-term corporate borrowing, not a bank-guaranteed draft tied to trade."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-065",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A school district expects property tax receipts in four months and issues short-term debt to cover expenses until then. What is this debt called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A tax anticipation note (TAN)"
+      },
+      {
+        "id": "b",
+        "text": "A general obligation bond"
+      },
+      {
+        "id": "c",
+        "text": "A bond anticipation note (BAN)"
+      },
+      {
+        "id": "d",
+        "text": "A revenue bond"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Municipal notes are short-term debt repaid from a specific expected source. A tax anticipation note is repaid from taxes the issuer expects to collect, such as upcoming property tax receipts.",
+    "distractorExplanations": {
+      "b": "GO bonds are long-term debt backed by taxing power; short-term borrowing against expected tax receipts is a TAN.",
+      "c": "A BAN is repaid from a planned long-term bond issue, not from expected property tax receipts.",
+      "d": "Revenue bonds are long-term debt repaid from project income such as tolls, not upcoming tax collections."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-products-risks-066",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "products-risks",
+    "prompt": "A customer holds straight (non-convertible) preferred stock paying a fixed dividend. Market interest rates rise. What generally happens to the share price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It stays at par, because preferred prices are fixed"
+      },
+      {
+        "id": "b",
+        "text": "It falls, much like a fixed-rate bond"
+      },
+      {
+        "id": "c",
+        "text": "It rises, because the dividend becomes more valuable"
+      },
+      {
+        "id": "d",
+        "text": "It rises, in line with the company's common stock"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Straight preferred stock pays a fixed dividend with no conversion feature, so it behaves like a long-term fixed-rate bond. When market rates rise, its price falls until its yield matches new alternatives.",
+    "distractorExplanations": {
+      "a": "Preferred stock trades in the market, and its price moves inversely with interest rates.",
+      "c": "A fixed dividend becomes less attractive when new investments pay more, so the price falls.",
+      "d": "Straight preferred behaves like a fixed-income security, driven mainly by interest rates."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-024",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A married couple holds a brokerage account as joint tenants with right of survivorship. The husband dies. What happens to his share?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It passes automatically to his wife as surviving owner"
+      },
+      {
+        "id": "b",
+        "text": "It is frozen until a court appoints a custodian for the account"
+      },
+      {
+        "id": "c",
+        "text": "It goes to his estate and is distributed under his will"
+      },
+      {
+        "id": "d",
+        "text": "It is split equally between his wife and his estate"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In a JTWROS account each owner has an undivided interest, and when one dies the survivor automatically owns the whole account. The firm needs a death certificate to re-register it, but the asset does not pass through the estate.",
+    "distractorExplanations": {
+      "b": "A survivorship account passes to the survivor once a death certificate is provided; no court custodian is needed.",
+      "c": "That describes tenants in common; with right of survivorship the surviving owner takes the whole account.",
+      "d": "JTWROS does not split the account on death; the survivor becomes sole owner of the whole account."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-025",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "Under FINRA rules, what is the minimum maintenance margin for a long stock position in a margin account?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10% of the current market value"
+      },
+      {
+        "id": "b",
+        "text": "25% of the current market value"
+      },
+      {
+        "id": "c",
+        "text": "30% of the original purchase price"
+      },
+      {
+        "id": "d",
+        "text": "50% of the current market value"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FINRA requires customer equity in a long margin account to stay at or above 25% of current market value. Many firms set higher house requirements. If equity falls below, the customer gets a maintenance call.",
+    "distractorExplanations": {
+      "a": "Ten percent is below the FINRA minimum; long positions must keep equity of at least 25% of market value.",
+      "c": "Maintenance is measured on current market value, not cost, and the FINRA minimum is 25%.",
+      "d": "Fifty percent is the Regulation T initial requirement for purchases, not the FINRA maintenance minimum."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-026",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "When a customer opens a margin account, which document is optional for the customer to sign?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The loan consent agreement"
+      },
+      {
+        "id": "b",
+        "text": "The new account form with customer information"
+      },
+      {
+        "id": "c",
+        "text": "The hypothecation agreement pledging securities"
+      },
+      {
+        "id": "d",
+        "text": "The credit agreement disclosing interest terms"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A margin agreement has three parts. The credit agreement and the hypothecation agreement are required. The loan consent, which lets the firm lend the customer's margin securities to others such as short sellers, is optional.",
+    "distractorExplanations": {
+      "b": "Every account needs the basic new account information; it is not optional.",
+      "c": "Hypothecation pledges the securities as collateral for the loan, so a margin account cannot exist without it.",
+      "d": "The credit agreement sets out how margin interest is charged and must be signed to open the margin account."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-027",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "Under Regulation T, how long does a customer have to pay for a purchase in a cash account?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By the trade date, before the order is entered"
+      },
+      {
+        "id": "b",
+        "text": "Five business days after the trade date"
+      },
+      {
+        "id": "c",
+        "text": "Thirty calendar days after the original trade date"
+      },
+      {
+        "id": "d",
+        "text": "Two business days after regular-way settlement"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Regulation T gives a cash-account customer until two business days after regular-way settlement (S+2) to pay. With T+1 settlement, that is three business days after the trade, after which the firm must cancel or liquidate.",
+    "distractorExplanations": {
+      "a": "Full payment in advance applies only after a freeze; normally the customer pays within the Reg T period.",
+      "b": "Regulation T was amended for shorter settlement; the payment period is settlement plus two business days.",
+      "c": "Thirty days is far beyond the Reg T payment period of settlement plus two business days."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-028",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer enters a sell stop-limit order: stop $45, limit $44.50. The stock trades at $45 and then drops straight to $44. What is the status of the order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is triggered but unfilled, since trades are below the limit"
+      },
+      {
+        "id": "b",
+        "text": "It is filled at $45, the price that triggered the stop"
+      },
+      {
+        "id": "c",
+        "text": "It is canceled automatically, because the stock fell below the limit"
+      },
+      {
+        "id": "d",
+        "text": "It is filled at $44, because the stop turns it into a market order"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A stop-limit order becomes a limit order when the stop price is reached. Here it becomes a sell limit at $44.50, so it cannot execute at $44; it stays open unless the price returns to $44.50 or higher.",
+    "distractorExplanations": {
+      "b": "The trigger price is not a guaranteed fill; once triggered, the order fills only at $44.50 or better.",
+      "c": "A triggered limit order stays open; it is not canceled because the market moved through the limit.",
+      "d": "A stop-limit becomes a limit order once triggered, so it cannot fill below $44.50."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-029",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer enters an order to buy 300 shares at $25 and marks it good 'til canceled. How long does the order stay open?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Until it is partly filled, then the rest is canceled at once"
+      },
+      {
+        "id": "b",
+        "text": "For exactly 30 calendar days, as set by a FINRA rule on GTC orders"
+      },
+      {
+        "id": "c",
+        "text": "Until it is filled or canceled, subject to the firm's time limits"
+      },
+      {
+        "id": "d",
+        "text": "Until the end of the trading day, then it expires"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A good-'til-canceled order stays open until it is executed or the customer cancels it. Many firms cancel GTC orders after a set period, such as 60 or 90 days, so customers should check the firm's policy.",
+    "distractorExplanations": {
+      "a": "Canceling any unfilled part immediately describes an immediate-or-cancel order, not GTC.",
+      "b": "No FINRA rule sets a 30-day life; firms may set their own limits, such as 60 or 90 days.",
+      "d": "That describes a day order; a GTC order stays open beyond the current session."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-030",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer wants to buy 5,000 shares only if the entire order can be filled at once; otherwise the order should be canceled immediately. Which instruction fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Good 'til canceled"
+      },
+      {
+        "id": "b",
+        "text": "Immediate or cancel"
+      },
+      {
+        "id": "c",
+        "text": "Not held"
+      },
+      {
+        "id": "d",
+        "text": "Fill or kill"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A fill-or-kill order must be executed immediately and in full, or canceled. An immediate-or-cancel order allows a partial fill. An all-or-none order requires a full fill but need not be immediate.",
+    "distractorExplanations": {
+      "a": "A GTC order stays open over many days and can fill in parts; it is not an immediate all-or-nothing order.",
+      "b": "An IOC order allows a partial fill, with the rest canceled; this customer wants all or nothing at once.",
+      "c": "A not-held order gives the floor broker time and price discretion; it says nothing about filling the whole order at once."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-031",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "At a dinner party, a registered rep hears a company's CFO say the company will announce a takeover offer next week. The rep buys the stock the next morning. What has she done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Traded on material nonpublic information, which is insider trading"
+      },
+      {
+        "id": "b",
+        "text": "Front running, because she traded ahead of a customer order"
+      },
+      {
+        "id": "c",
+        "text": "Nothing wrong, because she heard the information in a social setting"
+      },
+      {
+        "id": "d",
+        "text": "Nothing wrong, because she was not an employee of the company"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Information about a takeover is material and was not yet public. Trading on it, or passing it on, is insider trading, whether the trader is an employee or someone who received a tip, and it carries civil and criminal penalties.",
+    "distractorExplanations": {
+      "b": "Front running means trading ahead of a customer's block order; here she traded on inside information.",
+      "c": "Where the information was heard does not matter; it was material and not yet public when she traded.",
+      "d": "Insider trading rules apply to anyone who trades on material nonpublic information obtained through a breach of duty, not only employees."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-032",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "Two traders repeatedly buy and sell the same thin stock to each other at rising prices, with no real change in ownership, to make it look actively traded. What is this practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Arbitrage, since they profit from price differences between markets"
+      },
+      {
+        "id": "b",
+        "text": "Front running, since they traded ahead of a customer order"
+      },
+      {
+        "id": "c",
+        "text": "Market manipulation by matched trades (painting the tape)"
+      },
+      {
+        "id": "d",
+        "text": "Legitimate market making that adds liquidity to the stock"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Painting the tape uses matched or wash trades to create a false impression of activity and price movement, drawing in other investors. It is a manipulative practice prohibited by the Exchange Act and FINRA rules.",
+    "distractorExplanations": {
+      "a": "Arbitrage exploits real price gaps between markets; prearranged fake trades are manipulation.",
+      "b": "No customer order is involved; they create fake activity to move the price.",
+      "d": "Market makers trade with real customers at quoted prices; prearranged trades to fake volume are manipulation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-033",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A registered rep wants to borrow $20,000 from a customer who is her sister. Under FINRA rules, when is this permitted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never, since reps may not borrow from any customer under any condition"
+      },
+      {
+        "id": "b",
+        "text": "Only if the firm's written procedures allow loans of this type"
+      },
+      {
+        "id": "c",
+        "text": "Always, since family loans fall outside FINRA rules entirely"
+      },
+      {
+        "id": "d",
+        "text": "Only if the loan carries interest at or above the prime rate"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FINRA prohibits reps from borrowing from or lending to customers unless the firm has written procedures allowing it and the arrangement fits a permitted category, such as an immediate family member or a lending institution. Some categories also need notice to or approval from the firm.",
+    "distractorExplanations": {
+      "a": "FINRA allows some loans, for example from immediate family, if the firm's written procedures permit them.",
+      "c": "Even family loans are covered: they are permitted only when the firm's written procedures allow them.",
+      "d": "The interest rate is not the test; the firm's written procedures and the type of lender are."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-034",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A rep wants to share in the profits and losses of a customer's account. The customer is not a family member. What is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A signed guarantee that the rep will cover any losses in full"
+      },
+      {
+        "id": "b",
+        "text": "Written approval from firm and customer, shared in proportion"
+      },
+      {
+        "id": "c",
+        "text": "Approval from FINRA, with any agreed profit split then allowed"
+      },
+      {
+        "id": "d",
+        "text": "Nothing, if the customer agrees to the arrangement verbally"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A rep may share in a customer account only with prior written approval from the firm and the customer, and only in proportion to the rep's own contribution to the account. Accounts with immediate family members are excepted from the proportion rule.",
+    "distractorExplanations": {
+      "a": "Guaranteeing customers against loss is prohibited, so it cannot be a condition for sharing.",
+      "c": "Approval comes from the firm and the customer, not FINRA, and the sharing must be proportionate to the rep's contribution.",
+      "d": "Verbal agreement is not enough; both the firm and the customer must approve the arrangement in writing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-035",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "How often must a broker-dealer send account statements to a customer whose account has activity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only when the customer asks for one in writing"
+      },
+      {
+        "id": "b",
+        "text": "Only once a year, at the end of the tax year"
+      },
+      {
+        "id": "c",
+        "text": "After every trade, in place of a confirmation"
+      },
+      {
+        "id": "d",
+        "text": "At least once each calendar quarter"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "FINRA requires member firms to send customer account statements at least quarterly, showing positions, balances and activity. Many firms send them monthly when there is activity.",
+    "distractorExplanations": {
+      "a": "Statements are mandatory; the firm cannot wait for a request.",
+      "b": "Annual statements do not meet FINRA's requirement; statements must be sent at least quarterly.",
+      "c": "Confirmations are sent for each trade, but they do not replace periodic account statements."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-036",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer gives her son a limited power of attorney over her brokerage account. What can the son do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Change the account's beneficiaries and its owner"
+      },
+      {
+        "id": "b",
+        "text": "Enter trades, but not withdraw cash or securities"
+      },
+      {
+        "id": "c",
+        "text": "Close the account and open a new one in his own name"
+      },
+      {
+        "id": "d",
+        "text": "Withdraw cash and securities to his own account"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A limited power of attorney (limited trading authorization) lets the agent buy and sell in the account but not withdraw assets. A full power of attorney also allows withdrawals and other changes.",
+    "distractorExplanations": {
+      "a": "Changing ownership or beneficiaries is beyond a limited trading authorization.",
+      "c": "A limited power of attorney does not allow changing ownership or closing the account.",
+      "d": "That needs a full power of attorney; limited authority covers trading only."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-037",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A rep learns that a customer with an individual account has died. What should the firm do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sell all positions to cash so the value cannot fall further"
+      },
+      {
+        "id": "b",
+        "text": "Keep the open orders working until the executor gives instructions"
+      },
+      {
+        "id": "c",
+        "text": "Transfer the assets to the customer's spouse at once"
+      },
+      {
+        "id": "d",
+        "text": "Cancel open orders and freeze the account until documents arrive"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "On notice of the death of a sole account owner, the firm cancels open orders, freezes the account and waits for documents such as a death certificate and letters testamentary appointing the executor, who then gives instructions.",
+    "distractorExplanations": {
+      "a": "No one has authority to trade until the executor is appointed; selling without instructions is not allowed.",
+      "b": "Open orders must be canceled on notice of death, since the dead owner can no longer give instructions.",
+      "c": "Assets in an individual account pass through the estate, so the firm needs the executor's documents first."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-038",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "FINRA's suitability rule includes three obligations. Which one is breached when a rep's trades are each suitable alone but excessive in number for the customer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Best execution"
+      },
+      {
+        "id": "b",
+        "text": "Reasonable-basis suitability"
+      },
+      {
+        "id": "c",
+        "text": "Customer-specific suitability"
+      },
+      {
+        "id": "d",
+        "text": "Quantitative suitability"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Suitability has three parts: reasonable-basis (the product is suitable for some investors), customer-specific (it fits this customer), and quantitative (the series of trades is not excessive). Excessive trading, as in churning, breaches quantitative suitability.",
+    "distractorExplanations": {
+      "a": "Best execution is about getting the most favorable terms for an order, not how often the rep trades.",
+      "b": "Reasonable-basis is about understanding a product well enough to recommend it to anyone; the issue here is trading frequency.",
+      "c": "Customer-specific is about whether one recommendation fits the customer's profile; the problem is the number of trades."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-039",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer's shares are held in street name at her broker-dealer. The company holds a shareholder vote. How does she receive the proxy materials?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She receives nothing, since the firm votes the shares"
+      },
+      {
+        "id": "b",
+        "text": "The company mails them only to the transfer agent"
+      },
+      {
+        "id": "c",
+        "text": "She must first move the shares into her own registered name"
+      },
+      {
+        "id": "d",
+        "text": "The firm forwards them to her as the beneficial owner"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In street name, the firm is the registered owner but the customer is the beneficial owner. The firm must pass proxy materials and annual reports to her so she can vote her shares.",
+    "distractorExplanations": {
+      "a": "The customer is the beneficial owner and is entitled to the proxy materials and to vote.",
+      "b": "The transfer agent keeps records; proxy materials must reach the beneficial owner through the firm.",
+      "c": "Holding in street name does not remove her right to vote; the firm passes the materials to her."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-040",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A stock is quoted at $20.10 bid and $20.15 ask. A customer places a market order to buy. At about what price will the order fill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$20.05, the last trade price"
+      },
+      {
+        "id": "b",
+        "text": "$20.10, the bid"
+      },
+      {
+        "id": "c",
+        "text": "$20.125, the midpoint of the spread"
+      },
+      {
+        "id": "d",
+        "text": "$20.15, the ask"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The bid is the highest price buyers will pay and the ask (offer) is the lowest price sellers will accept. A customer buying at market pays the ask; a customer selling at market receives the bid.",
+    "distractorExplanations": {
+      "a": "The last sale is history; a new market buy order fills at the current ask.",
+      "b": "The bid is what buyers pay a seller; a customer buying at market pays the ask.",
+      "c": "A market order does not usually fill at the midpoint; buyers pay the offer price."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-041",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer sold short 200 shares of a stock that then pays a $0.50 cash dividend. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She receives $100, the dividend on the 200 shares"
+      },
+      {
+        "id": "b",
+        "text": "She must pay $100 to the lender of the shares"
+      },
+      {
+        "id": "c",
+        "text": "Nothing happens, because she does not own the shares"
+      },
+      {
+        "id": "d",
+        "text": "The firm pays the dividend to the company on her behalf"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A short seller borrowed the shares, so the lender is still entitled to dividends. The short seller's account is charged the dividend, here 200 × $0.50 = $100.",
+    "distractorExplanations": {
+      "a": "The short seller does not own the shares; the lender is entitled to the dividend.",
+      "c": "She must make the lender whole, so she pays the dividend amount.",
+      "d": "Dividends go from the company to shareholders; the short seller pays the lender, not the company."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-042",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A margin account holds stock with a market value of $20,000 and a debit balance of $12,000. What is the customer's equity?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$8,000"
+      },
+      {
+        "id": "b",
+        "text": "$12,000"
+      },
+      {
+        "id": "c",
+        "text": "$20,000"
+      },
+      {
+        "id": "d",
+        "text": "$32,000"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Equity in a long margin account = market value − debit balance = $20,000 − $12,000 = $8,000. This is 40% of market value, above the 25% FINRA maintenance minimum.",
+    "distractorExplanations": {
+      "b": "That is the debit balance, the amount borrowed, not the customer's equity.",
+      "c": "That is the market value; equity is what remains after subtracting the debit balance.",
+      "d": "Adds the debit to market value instead of subtracting it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-043",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer deposits $12,000 in cash at once to buy securities. What must the broker-dealer file?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Suspicious Activity Report, since all cash is suspicious"
+      },
+      {
+        "id": "b",
+        "text": "Nothing, since cash deposits are not reported"
+      },
+      {
+        "id": "c",
+        "text": "A Currency Transaction Report with FinCEN"
+      },
+      {
+        "id": "d",
+        "text": "A Form U5 with FINRA"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Firms must file a Currency Transaction Report with FinCEN for cash transactions over $10,000 in one business day. Breaking deposits into smaller amounts to avoid this is structuring, which can lead to a SAR.",
+    "distractorExplanations": {
+      "a": "A SAR is filed when activity is suspicious, not for every cash deposit; the CTR is required for cash over $10,000.",
+      "b": "Cash over $10,000 in one business day triggers a Currency Transaction Report.",
+      "d": "Form U5 is filed when a registered person leaves a firm; it has nothing to do with cash deposits."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-044",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A rep urges customers to buy a stock right before its ex-dividend date, saying they will 'get the dividend for free.' What is wrong with this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is churning, since the rep is trading the account too often"
+      },
+      {
+        "id": "b",
+        "text": "It is front running, since the rep traded ahead of customers"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, since the customers do receive the dividend"
+      },
+      {
+        "id": "d",
+        "text": "It is selling dividends, a prohibited practice"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Selling dividends means pushing customers to buy just before the ex-date to capture a dividend. The price drops by about the dividend amount on the ex-date, and the dividend is taxable, so the customer gains nothing and may pay more tax.",
+    "distractorExplanations": {
+      "a": "Churning is excessive trading for commissions; this misrepresents the value of a dividend.",
+      "b": "Front running involves trading ahead of a customer order; here the rep is misleading customers about dividends.",
+      "c": "The share price falls by about the dividend on the ex-date, and the dividend is taxable, so there is no free gain."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-045",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer plans to invest $48,000 in a fund that offers a reduced sales charge at $50,000. The rep does not mention the breakpoint. What is the concern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, since disclosing breakpoints is optional"
+      },
+      {
+        "id": "b",
+        "text": "Front running, since the rep acted ahead of the fund"
+      },
+      {
+        "id": "c",
+        "text": "Breakpoint selling, a prohibited practice"
+      },
+      {
+        "id": "d",
+        "text": "Market manipulation, since the fund price was moved"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Breakpoint selling means selling just below a breakpoint, or failing to tell a customer that a little more money would lower the sales charge. It is prohibited because the customer pays a higher load and the rep earns more.",
+    "distractorExplanations": {
+      "a": "Firms must tell customers about breakpoints; failing to do so to earn a higher sales charge is prohibited.",
+      "b": "Front running involves trading ahead of a customer's order, not failing to mention a breakpoint.",
+      "d": "Nothing moved the fund's price; the issue is that the customer paid a higher sales charge than needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-046",
+    "examSlug": "sie-quick-diagnostic",
+    "topicId": "trading-accounts",
+    "prompt": "A customer tells a rep, 'Buy a tech stock you like this afternoon; spend up to $10,000.' The account has no discretionary authority. What may the rep do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the trade, because the customer chose the amount to spend"
+      },
+      {
+        "id": "b",
+        "text": "Place the trade, because it will be completed the same day"
+      },
+      {
+        "id": "c",
+        "text": "Decline, since choosing the security needs written authority"
+      },
+      {
+        "id": "d",
+        "text": "Place the trade, then send the customer a written confirmation afterward"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Discretion means the rep chooses the asset, the amount or the action (buy or sell). It requires the customer's prior written authorization and principal approval. Same-day time and price discretion is the only exception.",
+    "distractorExplanations": {
+      "a": "Choosing which security to buy is discretion; it needs written authorization, even if the customer set the amount.",
+      "b": "The same-day exception covers only time and price, not choosing the security.",
+      "d": "A confirmation does not cure an unauthorized discretionary trade."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   }
 ]

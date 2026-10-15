@@ -418,7 +418,7 @@ describe("question bank from deck content", () => {
   it("loads a complete SIE bank sourced from deck CSV export", () => {
     const { questions, errors } = getQuestionBankForExam("sie-full-mock");
     expect(errors).toEqual([]);
-    expect(questions).toHaveLength(75);
+    expect(questions).toHaveLength(150);
     expect(questions[0]?.sourceNote).toContain("sie_300_authored.csv");
   });
 
