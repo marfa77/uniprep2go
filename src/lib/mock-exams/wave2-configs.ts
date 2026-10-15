@@ -31,8 +31,8 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     description:
       "60-question NHA CBCS readiness check (free 25-question version) for medical billing and coding specialist candidates — then join the planned Anki waitlist for spaced repair.",
     examBody: "NHA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
-    lastUpdated: "2026-09-07",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique scenario items, 60 drawn per attempt across coding, claims, compliance and revenue cycle (expanded and reviewed 2026-10-15).",
+    lastUpdated: "2026-10-15",
   }),
   nicheReadinessConfig({
     slug: "ccht-dialysis-readiness-check",

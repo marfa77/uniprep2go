@@ -69,31 +69,31 @@
     "id": "nha-cbcs-readiness-check-coding-guidelines-003",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "coding-guidelines",
-    "prompt": "Which CPT concept best describes a procedure that is always included in another procedure and generally not separately reportable?",
+    "prompt": "A surgeon performs a laparoscopic cholecystectomy and documents lysis of a few minor adhesions needed to reach the gallbladder. How is the adhesiolysis generally handled?",
     "options": [
       {
         "id": "a",
-        "text": "Add-on code that must stand alone"
+        "text": "It is reported separately with modifier 59 as a distinct service"
       },
       {
         "id": "b",
-        "text": "Unlisted procedure requiring no documentation"
+        "text": "It is reported as an add-on code with the cholecystectomy"
       },
       {
         "id": "c",
-        "text": "Bundled / integral component of a more comprehensive service"
+        "text": "It is integral to the main procedure and not reported separately"
       },
       {
         "id": "d",
-        "text": "Place-of-service modifier"
+        "text": "It is reported with an unlisted laparoscopy code"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "NCCI and CPT bundling concepts prevent separate payment for integral components already included in a primary service.",
+    "explanation": "NCCI and CPT treat minor work needed to complete the main procedure, such as limited adhesiolysis to gain access, as integral. It is reported separately only when extensive, distinct and documented, per payer rules.",
     "distractorExplanations": {
-      "a": "Add-on codes are reported with a primary code, not as standalone bundled services.",
-      "b": "Unlisted codes still require documentation and often special reporting.",
-      "d": "POS is not the bundling concept."
+      "a": "Modifier 59 is for truly distinct services; minor adhesiolysis in the same operative field is bundled under NCCI.",
+      "b": "Add-on codes are specific CPT codes marked +; routine access adhesiolysis has no add-on status.",
+      "d": "Unlisted codes are for procedures with no CPT code, not for work already included in a listed code."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -135,7 +135,7 @@
     "id": "nha-cbcs-readiness-check-coding-guidelines-005",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "coding-guidelines",
-    "prompt": "A CPT modifier used to indicate a significant, separately identifiable E/M service on the same day as a procedure is",
+    "prompt": "At a diabetes follow-up, the physician manages worsening glucose control and also removes a skin tag. The E/M work is significant and documented separately. Which modifier goes on the E/M code?",
     "options": [
       {
         "id": "a",
@@ -157,9 +157,9 @@
     "correctOptionId": "a",
     "explanation": "Modifier 25 is used when an E/M is significant and separately identifiable from the procedure on the same day.",
     "distractorExplanations": {
-      "b": "59 is for distinct procedural services, not E/M with procedure.",
-      "c": "26 indicates professional component.",
-      "d": "51 indicates multiple procedures."
+      "b": "Modifier 59 marks a distinct procedural service, not an E/M visit performed with a procedure.",
+      "c": "Modifier 26 reports the professional component of a service such as a radiology read.",
+      "d": "Modifier 51 flags multiple procedures in one session, not a separate E/M visit."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -188,7 +188,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "HCPCS Level II covers many non-CPT items (DME, drugs, some services) for billing. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference.",
+    "explanation": "HCPCS Level II codes (letter plus four digits) report items and services not in CPT, such as DME (E codes), drugs (J codes), ambulance (A codes) and some Medicare services (G codes).",
     "distractorExplanations": {
       "a": "HCPCS Level II codes describe items and services; diagnoses on DME claims are still reported with ICD-10-CM.",
       "c": "Inpatient hospital procedures are coded in ICD-10-PCS for DRG grouping, not with HCPCS Level II.",
@@ -320,7 +320,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Category II codes support quality/performance reporting and are supplemental. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. They are supplemental and not typically paid for the service itself.",
+    "explanation": "Category II codes support quality/performance reporting and are supplemental. They are supplemental and not typically paid for the service itself.",
     "distractorExplanations": {
       "a": "Temporary codes for emerging technology and procedures are CPT Category III, not Category II.",
       "c": "Add-on procedures are Category I codes marked with the + symbol and are reported with a primary procedure.",
@@ -452,7 +452,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Compliant coding requires resolving conflicts via query/clarification rather than guessing for revenue. Code selection must follow the documented record and official code-set guidance rather than reimbursement preference. A query is needed when the conflict affects code selection.",
+    "explanation": "Compliant coding requires resolving conflicts via query/clarification rather than guessing for revenue. A query is needed when the conflict affects code selection.",
     "distractorExplanations": {
       "a": "Recency of a note does not resolve a documentation conflict; the coder queries the provider when the conflict affects code selection.",
       "c": "Only the documenting provider can clarify or amend their own entry; asking a nurse to alter it is improper.",
@@ -498,31 +498,31 @@
     "id": "nha-cbcs-readiness-check-claims-reimbursement-001",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "claims-reimbursement",
-    "prompt": "On a professional CMS-1500 claim, the rendering provider’s NPI is typically reported to identify",
+    "prompt": "In a group practice, Dr. Lee sees the patient and the claim is billed under the group. On the CMS-1500, what does the rendering provider NPI in item 24J identify?",
     "options": [
       {
         "id": "a",
-        "text": "Who performed the service"
+        "text": "The clinician who personally performed the service"
       },
       {
         "id": "b",
-        "text": "The patient’s employer tax ID"
+        "text": "The group practice that receives the payment"
       },
       {
         "id": "c",
-        "text": "The ICD-10 guidelines version"
+        "text": "The physician who referred the patient for the visit"
       },
       {
         "id": "d",
-        "text": "The pharmacy NDC"
+        "text": "The facility where the service was performed"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Rendering NPI identifies the clinician who provided the service; billing NPI may differ in group settings. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Item 24J carries the rendering provider's individual NPI, the clinician who performed the service. Item 33 holds the billing provider, item 17 the referring provider and item 32 the service facility.",
     "distractorExplanations": {
-      "b": "Employer tax ID is not the rendering NPI purpose.",
-      "c": "Guideline version is not an NPI field.",
-      "d": "NDCs identify drugs, not rendering clinicians."
+      "b": "The billing provider in item 33 identifies the group that is paid; 24J identifies the clinician.",
+      "c": "The referring provider is reported in item 17, separate from the rendering provider.",
+      "d": "The service facility is reported in item 32; 24J holds the individual clinician's NPI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -551,7 +551,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Clean claims reduce delays; they include required data elements and pass initial edits. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "A clean claim has every required data element correct (patient, payer, provider, codes, pointers) and passes payer edits, so it can be paid without requests for more information.",
     "distractorExplanations": {
       "a": "'Clean' describes processing readiness, not the payment outcome; a clean claim can still leave a patient balance.",
       "c": "Electronic and timely submission does not make a claim clean if required data elements are missing or invalid.",
@@ -584,7 +584,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "COB establishes which plan pays first so secondary billing is correct. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. COB determines the primary/secondary payer order.",
+    "explanation": "COB establishes which plan pays first so secondary billing is correct. COB determines the primary/secondary payer order.",
     "distractorExplanations": {
       "a": "Authorization denials are a front-end authorization problem, not a question of which payer is primary.",
       "b": "Cost-sharing within one plan is not COB; COB requires two or more active payers.",
@@ -617,7 +617,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "EOBs/ERAs communicate payer decisions and amounts; billers use them for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. It includes payment, adjustments, and patient responsibility.",
+    "explanation": "EOBs/ERAs communicate payer decisions and amounts; billers use them for posting and appeals. It includes payment, adjustments, and patient responsibility.",
     "distractorExplanations": {
       "a": "An EOB/ERA shows allowed amounts for the claim it covers, not the provider's full annual fee schedule.",
       "b": "Clearinghouse rejections come back on rejection/acknowledgment reports before the payer adjudicates; the ERA follows adjudication.",
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Front-end edits catch format/validity errors before payer adjudication. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Clearinghouse and payer front-end edits reject claims with missing or invalid data, such as a bad NPI or date of birth, before adjudication. Rejected claims are corrected and resent, not appealed.",
     "distractorExplanations": {
       "b": "Medical necessity is judged by the payer during adjudication and results in a denial, not a clearinghouse rejection.",
       "c": "Timely filing is enforced by the payer as a denial; clearinghouse edits check data format and validity.",
@@ -683,7 +683,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Missing timely filing often causes non-appealable denials; billers track payer-specific deadlines. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Timely filing is the payer's deadline, counted from the date of service, to receive the claim. Late claims are usually denied without appeal rights, so billers track each payer's limit.",
     "distractorExplanations": {
       "a": "That is the practice's patient payment terms, not the payer deadline for submitting the claim.",
       "c": "Prompt-pay laws limit how long the payer may take to pay, not when the provider must submit.",
@@ -696,31 +696,31 @@
     "id": "nha-cbcs-readiness-check-claims-reimbursement-007",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "claims-reimbursement",
-    "prompt": "A deductible is",
+    "prompt": "In January, a patient with a $1,000 deductible and 20% coinsurance has a lab service with a $400 allowed amount. No other claims have processed this year. How much does the patient owe for the lab?",
     "options": [
       {
         "id": "a",
-        "text": "The fixed dollar amount a patient pays at each office visit"
+        "text": "$0"
       },
       {
         "id": "b",
-        "text": "The percentage of the allowed amount the patient pays after plan benefits begin"
+        "text": "$80"
       },
       {
         "id": "c",
-        "text": "The amount a patient must pay out of pocket before certain plan benefits pay"
+        "text": "$400"
       },
       {
         "id": "d",
-        "text": "The most a patient pays in a plan year before the plan pays 100%"
+        "text": "$1,000"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Deductibles are patient cost-sharing features that affect balances after adjudication. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "With an unmet deductible, the patient pays the allowed amount until the deductible is met. The full $400 applies to the deductible, leaving $600 to meet before 20% coinsurance begins.",
     "distractorExplanations": {
-      "a": "A fixed amount per visit is a copayment, not a deductible.",
-      "b": "A percentage of the allowed amount paid after the deductible is coinsurance.",
-      "d": "The annual cap on patient cost-sharing is the out-of-pocket maximum, not the deductible."
+      "a": "Nothing exempts the lab from cost-sharing; an unmet deductible applies to the allowed amount.",
+      "b": "Twenty percent coinsurance starts only after the deductible is met, and none of it has been met yet.",
+      "d": "The patient owes the allowed charge applied to the deductible, not the whole deductible at once."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -733,27 +733,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Change the diagnosis to whatever pays without documentation"
+        "text": "Resubmit the same claim unchanged to see if a different reviewer pays it"
       },
       {
         "id": "b",
-        "text": "Bill the patient for fraud penalties"
+        "text": "Add a more serious diagnosis from the problem list that supports the service"
       },
       {
         "id": "c",
-        "text": "Delete the encounter from the EHR"
+        "text": "Bill the patient right away because the payer refused the service"
       },
       {
         "id": "d",
-        "text": "Review documentation, coding, and payer policy; correct if needed or appeal with clinical support"
+        "text": "Review documentation, coding and payer policy, then correct or appeal"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Appeals and corrections must be documentation-supported; fabricating codes is improper. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Start by checking whether the denial is right: complete documentation, correct diagnosis linked to the service, payer policy met. Correct and rebill a coding error, or appeal with records when the service was necessary.",
     "distractorExplanations": {
-      "a": "Upscoding/diagnosis shopping is abusive.",
-      "b": "Patients are not billed “fraud penalties” as a routine AR step.",
-      "c": "Deleting encounters improperly is prohibited."
+      "a": "An unchanged resubmission produces a duplicate denial and does not address the necessity issue.",
+      "b": "Adding a diagnosis not addressed at the visit to justify payment is misrepresentation, not a correction.",
+      "c": "Without a valid ABN or plan rule shifting liability, a necessity denial often cannot be billed to the patient."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -782,7 +782,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "POS affects pricing and coverage; it must match the actual setting. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing. Telehealth has its own POS codes where applicable.",
+    "explanation": "POS affects pricing and coverage; it must match the actual setting. Telehealth has its own POS codes where applicable.",
     "distractorExplanations": {
       "b": "Provider specialty is reported through the taxonomy code, not the place of service code.",
       "c": "The patient's address is demographic data; POS describes the setting where the service was furnished.",
@@ -815,7 +815,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Many payers require NDC detail for injectable/drug claims alongside HCPCS. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Many payers, including Medicaid, require the 11-digit NDC, unit qualifier and quantity alongside the HCPCS drug code (for example a J code) so they can price and verify the exact drug given.",
     "distractorExplanations": {
       "a": "DME is billed with HCPCS E/K codes and a certificate of medical necessity when required, not an NDC.",
       "c": "CLIA-waived tests need the CLIA number and the QW modifier, not an NDC.",
@@ -848,11 +848,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Secondaries need primary adjudication details to process remaining liability correctly. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "The secondary payer pays based on what the primary allowed, paid and assigned to the patient. Sending the primary EOB/ERA data (or a COB crossover) lets it calculate the remaining liability.",
     "distractorExplanations": {
-      "a": "“Submit the secondary claim before the primary payer adjudicates” is incorrect because secondaries need primary adjudication details to process remaining liability correctly.",
-      "b": "“Omit the primary payer adjustments from the secondary claim” is incorrect because secondaries need primary adjudication details to process remaining liability correctly.",
-      "d": "“Bill the full charge to both payers without coordination of benefits” is incorrect because secondaries need primary adjudication details to process remaining liability correctly."
+      "a": "The secondary payer needs the primary's adjudication to calculate its share, so a claim sent first is denied or pended.",
+      "b": "Without the primary's paid and adjusted amounts, the secondary cannot tell what balance remains and rejects the claim.",
+      "d": "Billing full charges to both payers without COB risks duplicate payment that must be refunded."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -914,7 +914,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Capitation is prospective PMPM-style payment; claims/encounter data may still be required for tracking. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Capitation is prospective PMPM-style payment; claims/encounter data may still be required for tracking.",
     "distractorExplanations": {
       "b": "A fixed amount per admission by DRG is a case-rate/prospective inpatient payment, not per-member capitation.",
       "c": "Paying a percentage of billed charges is a fee-for-service variant, not a per-member periodic payment.",
@@ -947,7 +947,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Payers set unit/frequency edits (e.g., preventive visits, certain therapies). A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "Payers limit how often some services are covered, such as one preventive exam per year or a set number of therapy visits. Claims beyond that limit deny as frequency or benefit-maximum denials.",
     "distractorExplanations": {
       "a": "Missing prior authorization produces an authorization denial, not a frequency limit denial.",
       "c": "A repeat of an already processed claim produces a duplicate claim denial, not a frequency denial.",
@@ -980,11 +980,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Claim adjustment reason codes communicate adjudication logic for posting and appeals. A billing specialist should verify required claim data and the payer’s rules before correcting, rebilling, or appealing.",
+    "explanation": "CARCs (with group codes such as CO, PR and OA) and RARCs on the 835 explain why payment differs from the charge. Billers use them to post adjustments, bill patients and decide on appeals.",
     "distractorExplanations": {
-      "a": "“They identify the provider taxonomy used for enrollment” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals.",
+      "a": "Taxonomy codes describe provider specialty at enrollment; CARCs explain adjustments on the remittance.",
       "b": "CARCs are codes on the 835 remittance used for posting and appeals; the patient EOB or MSN is still issued separately.",
-      "d": "“They establish the diagnosis code reported on every claim” is incorrect because claim adjustment reason codes communicate adjudication logic for posting and appeals."
+      "d": "Diagnoses come from ICD-10-CM coding of the record; CARCs explain how a payer adjusted payment."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1013,7 +1013,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PHI covers identifiable health info in electronic, paper, or oral forms when held by covered entities/BAs. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. This includes business associates.",
+    "explanation": "PHI covers identifiable health info in electronic, paper, or oral forms when held by covered entities/BAs. This includes business associates.",
     "distractorExplanations": {
       "b": "PHI covers electronic, paper, and oral forms; only ePHI under the Security Rule is limited to electronic data.",
       "c": "Employment records held by a covered entity in its role as employer are excluded from the PHI definition.",
@@ -1079,7 +1079,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unauthorized access is a privacy incident; reporting protects patients and the organization. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Viewing a record without a work need is unauthorized access even if nothing is shared. Report it to the privacy officer, who investigates, assesses breach risk and applies sanctions.",
     "distractorExplanations": {
       "a": "Snooping is a reportable privacy incident; informal handling bypasses the privacy officer's investigation and breach assessment.",
       "b": "Patient notification is the covered entity's decision after a breach risk assessment, not an individual employee's.",
@@ -1092,31 +1092,31 @@
     "id": "nha-cbcs-readiness-check-compliance-privacy-004",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "compliance-privacy",
-    "prompt": "Upcoding is best defined as:",
+    "prompt": "Documentation supports a level 3 established office visit (99213), but the claim reports 99215. What is this practice called?",
     "options": [
       {
         "id": "a",
-        "text": "Billing separately for components included in a comprehensive code"
+        "text": "Unbundling"
       },
       {
         "id": "b",
-        "text": "Billing the payer for services that were not actually provided to the patient"
+        "text": "Downcoding"
       },
       {
         "id": "c",
-        "text": "Assigning a lower-level code than documentation supports"
+        "text": "Phantom billing"
       },
       {
         "id": "d",
-        "text": "Reporting a higher-level or more complex service than documentation supports"
+        "text": "Upcoding"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Upcoding is a common fraud/abuse risk when levels or procedures are inflated. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Upcoding reports a higher-level or more complex service than the documentation supports, here 99215 for a 99213 visit. Done knowingly, it creates False Claims Act exposure.",
     "distractorExplanations": {
-      "a": "Billing components separately when a comprehensive code applies is unbundling, not upcoding.",
-      "b": "Billing for services not rendered is phantom billing, a different fraud scheme from upcoding.",
-      "c": "Assigning a lower level than documented is downcoding (undercoding), the opposite of upcoding."
+      "a": "Unbundling bills component codes separately when a comprehensive code applies, not an inflated visit level.",
+      "b": "Downcoding reports a lower level than documented; here the reported level is higher.",
+      "c": "Phantom billing charges for services never provided; this visit happened but was coded too high."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1125,31 +1125,31 @@
     "id": "nha-cbcs-readiness-check-compliance-privacy-005",
     "examSlug": "nha-cbcs-readiness-check",
     "topicId": "compliance-privacy",
-    "prompt": "Unbundling refers to:",
+    "prompt": "A coder bills the hemoglobin, hematocrit, platelet count and WBC from one automated CBC as four separate lab codes, although a single code describes the complete CBC. What is this called?",
     "options": [
       {
         "id": "a",
-        "text": "Billing component codes separately when a comprehensive code includes them"
+        "text": "Unbundling"
       },
       {
         "id": "b",
-        "text": "Reporting a higher-level service than the documentation supports"
+        "text": "Upcoding"
       },
       {
         "id": "c",
-        "text": "Billing an E/M service on the same day as a minor procedure with modifier 25"
+        "text": "Claim splitting"
       },
       {
         "id": "d",
-        "text": "Splitting one date of service across two claims to meet filing limits"
+        "text": "Downcoding"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Unbundling to increase payment violates NCCI/coding rules when components are not separately reportable. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Unbundling is contrary to NCCI and coding rules.",
+    "explanation": "Unbundling bills component codes separately when one comprehensive code (here the automated CBC) describes the whole service. NCCI edits catch many cases; done knowingly, it is a fraud risk.",
     "distractorExplanations": {
-      "b": "Reporting a higher level than documented is upcoding, not unbundling.",
-      "c": "A significant, separately identifiable E/M with modifier 25 is legitimate reporting, not unbundling.",
-      "d": "Claim splitting is a separate billing issue; unbundling concerns component codes of a comprehensive service."
+      "b": "Upcoding reports a higher level than documented; here one test is split into its parts.",
+      "c": "Claim splitting divides one date of service across claims; here one code's components are billed separately.",
+      "d": "Downcoding reports a lower level than documented, which would reduce payment rather than raise it."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1178,7 +1178,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Knowingly false claims (including reckless disregard) create FCA exposure; good-faith appeals differ. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Knowingly false claims (including reckless disregard) create FCA exposure; good-faith appeals differ.",
     "distractorExplanations": {
       "a": "FCA liability requires knowing conduct (actual knowledge, deliberate ignorance, or reckless disregard); honest corrected errors do not qualify.",
       "c": "A documented, case-by-case financial hardship waiver is a permitted practice, not a false claim.",
@@ -1211,7 +1211,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "HIPAA authorization core elements ensure the patient understands and limits the disclosure. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "A valid HIPAA authorization names the information, who may disclose and receive it, the purpose, an expiration date or event, and the patient's signature and date, plus required statements.",
     "distractorExplanations": {
       "a": "Purpose and recipient are required core elements of a valid HIPAA authorization, not optional.",
       "b": "HIPAA does not require notarization or a witness for an authorization to be valid.",
@@ -1244,11 +1244,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Lost/stolen unencrypted devices with ePHI commonly trigger breach risk assessment and possible notification. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Lost/stolen unencrypted devices with ePHI commonly trigger breach risk assessment and possible notification.",
     "distractorExplanations": {
-      "a": "“A workforce member views only the minimum PHI needed for an assigned claim” is incorrect because lost/stolen unencrypted devices with ePHI commonly trigger breach risk assessment and possible notification.",
-      "b": "“An authorized recipient receives encrypted PHI through the approved portal” is incorrect because lost/stolen unencrypted devices with ePHI commonly trigger breach risk assessment and possible notification.",
-      "c": "“A patient obtains a copy of their own designated record set” is incorrect because lost/stolen unencrypted devices with ePHI commonly trigger breach risk assessment and possible notification."
+      "a": "Job-related access limited to the minimum necessary is a permitted use, not a breach.",
+      "b": "Delivery to an authorized recipient through an approved encrypted channel is a permitted disclosure.",
+      "c": "Patients have a HIPAA right of access to their own records; giving them a copy is required, not a breach."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1343,7 +1343,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Billing companies, clearinghouses, and many vendors are BAs and require agreements and safeguards. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "Business associates create, receive, keep or send PHI for a covered entity, such as billing companies, coding vendors and IT hosts. They need a BAA. Clearinghouses are covered entities that often also act as BAs.",
     "distractorExplanations": {
       "a": "Health plans, clearinghouses, and providers who transmit electronically are covered entities, not business associates.",
       "b": "Workforce members are part of the covered entity and do not need a business associate agreement.",
@@ -1409,7 +1409,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Security Rule expectations and policies require reasonable safeguards for ePHI in transit. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising.",
+    "explanation": "The Security Rule requires reasonable safeguards for ePHI in transit. Use the organization's encrypted email or portal, verify the recipient and send only the minimum necessary.",
     "distractorExplanations": {
       "b": "Account numbers and dates of service are identifiers, so the message still contains ePHI needing safeguards.",
       "c": "Sending the password with the file defeats the protection if the message is intercepted or misdirected.",
@@ -1475,7 +1475,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Patients have rights to access, amendments (with process), and accounting of certain disclosures. Billing staff should follow the organization’s privacy and compliance procedures and escalate uncertainty instead of improvising. Allowed exceptions (such as TPO disclosures) apply.",
+    "explanation": "Patients have rights to access, amendments (with process), and accounting of certain disclosures. Allowed exceptions (such as TPO disclosures) apply.",
     "distractorExplanations": {
       "a": "Disclosures for treatment, payment, and operations are excepted from the accounting requirement.",
       "b": "The accounting covers up to six years before the request, not ten.",
@@ -1508,7 +1508,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clean data at registration prevents many denials downstream. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "The front end of the revenue cycle covers scheduling, registration, insurance verification and authorizations. Accurate demographics and coverage here prevent many later denials.",
     "distractorExplanations": {
       "b": "Charge entry, scrubbing, and submission are mid-cycle/back-end claim steps, not front-end activities.",
       "c": "Payment posting, denial follow-up, and statements are back-end revenue cycle activities.",
@@ -1541,7 +1541,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Eligibility reduces surprises but does not eliminate all denial risks (medical necessity, coding, etc.). Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Eligibility reduces surprises but does not eliminate all denial risks (medical necessity, coding, etc.).",
     "distractorExplanations": {
       "a": "The final patient balance is set only when the payer adjudicates the claim; eligibility gives an estimate at best.",
       "c": "Eligibility checks reveal whether authorization is needed but do not obtain or satisfy the authorization.",
@@ -1574,7 +1574,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Missing referrals/authorizations are common preventable denials in HMO-style plans. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Referrals can also cover certain services.",
+    "explanation": "Missing referrals/authorizations are common preventable denials in HMO-style plans. Referrals can also cover certain services.",
     "distractorExplanations": {
       "a": "Payer approval of a high-cost service for medical necessity is prior authorization/precertification, not a referral.",
       "b": "A lab order or requisition authorizes testing; a managed-care referral permits a specialist visit.",
@@ -1607,7 +1607,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Missed charges lose revenue; phantom charges create compliance risk—accuracy matters both ways. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Charge capture records every billable service and supply actually provided so it can be coded and billed. Missed charges lose revenue; charges for services not performed create false-claim risk.",
     "distractorExplanations": {
       "a": "Collecting copays and balances at the visit is point-of-service collection, not charge capture.",
       "b": "Posting payments and adjustments from the ERA is payment posting, a back-end step after adjudication.",
@@ -1640,7 +1640,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "A/R days is a core RCM KPI; high days may signal denial, follow-up, or posting problems. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Days in A/R = total A/R ÷ average daily charges. It shows how long money stays unpaid; rising days point to denial, follow-up or posting problems.",
     "distractorExplanations": {
       "b": "The share of claims paid on first submission is the first-pass (clean claim) rate, not A/R days.",
       "c": "Monthly write-offs measure bad debt, not how long balances stay unpaid.",
@@ -1706,7 +1706,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Effective denial management fixes causes and meets appeal deadlines. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Good denial management tracks denial reasons, finds the root cause, corrects and rebills or appeals within deadlines, and feeds fixes back to registration, coding and authorization steps.",
     "distractorExplanations": {
       "a": "Resubmitting an uncorrected claim triggers duplicate denials; the cause must be found and fixed first.",
       "b": "Writing off denials without analysis lets recurring root causes keep generating losses.",
@@ -1739,7 +1739,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Credit balance compliance (including Medicare) requires timely resolution; retaining overpayments is risky. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Credit balance compliance (including Medicare) requires timely resolution; retaining overpayments is risky.",
     "distractorExplanations": {
       "a": "Holding credits for future charges without patient agreement or policy can violate refund and unclaimed-property rules.",
       "b": "Bad debt is for uncollectible patient balances, not overpayments the practice owes back.",
@@ -1772,7 +1772,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Clear communication and accurate benefit knowledge improve POS collections without misrepresentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. Collect before or at the visit.",
+    "explanation": "Clear communication and accurate benefit knowledge improve POS collections without misrepresentation. Collect before or at the visit.",
     "distractorExplanations": {
       "b": "Waiting for adjudication delays collection of copays that are already known at the visit.",
       "c": "Collecting before verifying eligibility risks charging the wrong amount and later refunds.",
@@ -1805,7 +1805,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "CDM maintenance is critical so charges map to correct codes and prices. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "The charge description master maps each service to its CPT/HCPCS code, revenue code and price. An outdated or wrong CDM line sends the wrong code on every claim that uses it.",
     "distractorExplanations": {
       "a": "Demographics come from registration, not the CDM, which maps charges to procedure codes and prices.",
       "c": "Authorization numbers come from front-end authorization work, not the charge description master.",
@@ -1838,7 +1838,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Many high-cost services need auth; staff should verify before scheduling/performing when required. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances. This happens when the plan required auth and it was not obtained.",
+    "explanation": "Many high-cost services need auth; staff should verify before scheduling/performing when required. This happens when the plan required auth and it was not obtained.",
     "distractorExplanations": {
       "a": "Clearinghouse edits check format and data validity; a missing authorization is denied by the payer.",
       "b": "Payers do not recode the E/M level for missing authorization; the service requiring auth is denied.",
@@ -1871,7 +1871,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Outdated superbills drive wrong coding; they are tools, not substitutes for documentation. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Superbills speed charge entry only if they list the practice's common services and specific diagnoses and are updated for annual CPT (January) and ICD-10-CM (October) changes.",
     "distractorExplanations": {
       "a": "A form listing every code invites selection errors; superbills should reflect the practice's commonly used, accurate codes.",
       "b": "CPT updates every January and ICD-10-CM every October, so superbills need review at least annually.",
@@ -1904,7 +1904,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Understanding denial type guides whether to rebill, appeal, or write off. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Soft denials, such as missing information or a coding error, can be fixed and resubmitted. Hard denials, such as non-covered services or timely filing, need a formal appeal or are written off.",
     "distractorExplanations": {
       "b": "That describes hard denials, which require a formal appeal; soft denials can be fixed and resubmitted.",
       "c": "Issues caught before the payer receives the claim are clearinghouse rejections, not denials.",
@@ -1937,7 +1937,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Clear statements aid collections and reduce call volume; privacy must be maintained. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Patient statements should show the service in plain language, what insurance paid or adjusted, what the patient owes, the due date and how to pay, while protecting PHI on the envelope.",
     "distractorExplanations": {
       "a": "Balances pending insurance should not be presented as due from the patient until the payer adjudicates.",
       "c": "Statements should be understandable; bare codes without plain-language descriptions confuse patients.",
@@ -1970,7 +1970,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Data-driven denial prevention is a hallmark of mature RCM programs. Accurate front-end information and timely follow-up prevent avoidable denials, delays, and incorrect patient balances.",
+    "explanation": "Tracking top denial reasons by payer, provider and step shows where money is lost, so the practice can target training, fix front-end processes and raise payer contract issues.",
     "distractorExplanations": {
       "a": "Fee schedules reflect costs and contracts; denial data guides process fixes and payer negotiations, not price setting.",
       "b": "Denial analytics usually show prevention at the front end beats rework, so eligibility checks are strengthened, not replaced.",
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-016",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "The provider documents type 2 diabetes and chronic kidney disease stage 3a but does not state that one causes the other. How should the coder report this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "E11.9 and the N18 code separately, since no link is stated"
+      },
+      {
+        "id": "b",
+        "text": "Only the N18 code, because CKD is the more specific condition"
+      },
+      {
+        "id": "c",
+        "text": "Query the provider before assuming any connection between them"
+      },
+      {
+        "id": "d",
+        "text": "E11.22 plus an N18 stage code; the link is presumed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under the 'with' convention, conditions listed under 'with' in the Index (such as diabetes with CKD) are presumed linked unless documentation says otherwise. Report E11.22 plus the N18 code for the stage.",
+    "distractorExplanations": {
+      "a": "The ICD-10-CM 'with' convention presumes diabetes causes CKD unless the provider says they are unrelated.",
+      "b": "Both are reported; the combination code captures the diabetic kidney complication and N18 adds the stage.",
+      "c": "No query is needed because the guidelines presume the link for conditions listed under 'with'."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-017",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient treated in the ED for a wrist fracture returns two weeks later for a cast check, and healing is routine. Which 7th character applies to the fracture code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "G, because the fracture has not fully healed yet at two weeks"
+      },
+      {
+        "id": "b",
+        "text": "S, because this visit happens after the initial injury"
+      },
+      {
+        "id": "c",
+        "text": "A, because the fracture is still being treated in a cast"
+      },
+      {
+        "id": "d",
+        "text": "D, subsequent encounter with routine healing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fracture 7th characters: A for active treatment, D for routine healing follow-up, G for delayed healing, K nonunion, P malunion and S for sequela. A cast check with routine healing is D.",
+    "distractorExplanations": {
+      "a": "'G' is for delayed healing; this visit documents routine healing.",
+      "b": "'S' is for sequelae, conditions that result after the injury has healed, such as a scar.",
+      "c": "'A' applies while the patient receives active treatment; a routine follow-up during healing takes 'D'."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-018",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "An ED physician diagnoses acute appendicitis in a patient who arrived with right lower quadrant pain and nausea. Which codes are reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acute appendicitis only; the pain and nausea are integral"
+      },
+      {
+        "id": "b",
+        "text": "R10.31 first, then appendicitis, to show the presenting problem"
+      },
+      {
+        "id": "c",
+        "text": "Appendicitis plus R10.31 for the right lower quadrant pain"
+      },
+      {
+        "id": "d",
+        "text": "Only the symptoms, since surgery has not yet confirmed the diagnosis"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ICD-10-CM guidelines say signs and symptoms that are routinely part of a confirmed disease process are not reported separately. Pain and nausea are integral to acute appendicitis.",
+    "distractorExplanations": {
+      "b": "Once a definitive diagnosis is documented, it is coded instead of the presenting symptom.",
+      "c": "Signs and symptoms routinely associated with a confirmed diagnosis are not coded separately.",
+      "d": "The physician's documented definitive diagnosis is coded; surgical confirmation is not required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-019",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Dr. Ruiz, a family physician, saw a patient two years ago. Today Dr. Chen, another family physician in the same group, sees the patient for the first time. How is the visit classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Established patient"
+      },
+      {
+        "id": "b",
+        "text": "Consultation, because a different physician sees the patient"
+      },
+      {
+        "id": "c",
+        "text": "New patient, because Dr. Chen has never seen this patient"
+      },
+      {
+        "id": "d",
+        "text": "New patient, because more than a year has passed since the last visit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CPT defines a new patient as one who has not received professional services from the physician or another of the same specialty in the same group within the past 3 years. Two years means established.",
+    "distractorExplanations": {
+      "b": "A consultation needs a request for an opinion from another provider; a routine visit in the same group is not one.",
+      "c": "The 3-year rule looks at any physician of the same specialty in the same group, not the individual.",
+      "d": "The CPT window is 3 years, not 1, for professional services from the same group and specialty."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-020",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A physician performs an ECG in the morning and repeats it in the afternoon when the patient's chest pain returns. Which modifier goes on the repeat ECG?",
+    "options": [
+      {
+        "id": "a",
+        "text": "59"
+      },
+      {
+        "id": "b",
+        "text": "76"
+      },
+      {
+        "id": "c",
+        "text": "77"
+      },
+      {
+        "id": "d",
+        "text": "91"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 76 reports a repeat procedure by the same physician on the same day. Modifier 77 is a repeat by another physician, and 91 a repeated clinical lab test.",
+    "distractorExplanations": {
+      "a": "Modifier 59 marks a distinct procedural service, not the same procedure repeated by the same physician.",
+      "c": "Modifier 77 is a repeat procedure by a different physician; here the same physician repeats it.",
+      "d": "Modifier 91 is for repeat clinical laboratory tests, not an ECG."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-021",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A surgeon performs the same procedure on both knees in one session. The CPT descriptor is unilateral. Which modifier commonly reports this for Medicare?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 51"
+      },
+      {
+        "id": "b",
+        "text": "Modifier 50"
+      },
+      {
+        "id": "c",
+        "text": "Modifier 52"
+      },
+      {
+        "id": "d",
+        "text": "Modifier 22"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 50 reports a bilateral procedure when the CPT code describes a unilateral service. Medicare typically wants one line with modifier 50; some payers want RT and LT instead.",
+    "distractorExplanations": {
+      "a": "Modifier 51 flags multiple different procedures, not the same procedure on both sides.",
+      "c": "Modifier 52 reports reduced services, the opposite of doing the procedure on two sides.",
+      "d": "Modifier 22 reports substantially increased procedural work, not a bilateral procedure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-022",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient had breast cancer excised three years ago and has had no treatment since. She is seen today for an unrelated problem. How is the cancer reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Z85.3, personal history of breast cancer"
+      },
+      {
+        "id": "b",
+        "text": "Z12.31, encounter for screening mammogram"
+      },
+      {
+        "id": "c",
+        "text": "C50.911, malignant neoplasm of the right breast"
+      },
+      {
+        "id": "d",
+        "text": "Z80.3, family history of breast cancer in a relative"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When a primary cancer has been excised and there is no further treatment or evidence of disease, report a Z85 personal history code instead of the active neoplasm code.",
+    "distractorExplanations": {
+      "b": "Screening codes describe the reason for a test, not the patient's cancer status.",
+      "c": "Active cancer codes apply only while the cancer is present or still being treated.",
+      "d": "Z80 codes are family history; this is the patient's own past cancer."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-023",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient who is 28 weeks pregnant is treated for a urinary tract infection. The provider does not say the pregnancy is incidental. How should the coder sequence the codes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Z3A.28 first, then the UTI code as a secondary diagnosis"
+      },
+      {
+        "id": "b",
+        "text": "N39.0 for the UTI only, since the pregnancy is incidental to it"
+      },
+      {
+        "id": "c",
+        "text": "An O23 code for UTI in pregnancy first, plus Z3A.28"
+      },
+      {
+        "id": "d",
+        "text": "N39.0 first, then Z33.1 for pregnant state, incidental"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chapter 15 obstetric codes take sequencing priority for a pregnant patient unless the provider documents the pregnancy as incidental. Add a Z3A code for the weeks of gestation.",
+    "distractorExplanations": {
+      "a": "Z3A weeks-of-gestation codes are always secondary and are never first-listed.",
+      "b": "Pregnancy is presumed to affect care unless the provider documents it as incidental.",
+      "d": "Z33.1 is used only when the provider states the pregnancy is incidental to the visit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-024",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient develops a rash from an antibiotic that was prescribed correctly and taken as directed. How is this coded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the rash code, leaving out the drug that caused it"
+      },
+      {
+        "id": "b",
+        "text": "Only the T code, because it already names the drug involved"
+      },
+      {
+        "id": "c",
+        "text": "The T code for poisoning first, then the rash code"
+      },
+      {
+        "id": "d",
+        "text": "The rash first, then the T code for adverse effect"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For an adverse effect of a correctly prescribed and taken drug, code the nature of the effect first (the rash), followed by the T36–T50 code with the adverse-effect character.",
+    "distractorExplanations": {
+      "a": "The T code identifying the drug's adverse effect is needed to complete the picture.",
+      "b": "An adverse effect needs the manifestation code first to show what the reaction was.",
+      "c": "Poisoning applies to a wrong drug, wrong dose or misuse; a correct drug taken as directed is an adverse effect."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-025",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A physician excises a benign skin lesion measuring 1.0 cm with a 0.2 cm margin on each side. Which excised diameter determines the CPT code?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.0 cm"
+      },
+      {
+        "id": "b",
+        "text": "1.2 cm"
+      },
+      {
+        "id": "c",
+        "text": "1.4 cm"
+      },
+      {
+        "id": "d",
+        "text": "2.0 cm"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Excision codes are chosen by the excised diameter: the greatest clinical diameter of the lesion plus the narrowest margins on both sides. Here 1.0 + 0.2 + 0.2 = 1.4 cm.",
+    "distractorExplanations": {
+      "a": "Using only the lesion size leaves out the margins, which CPT includes in the excised diameter.",
+      "b": "Adding one 0.2 cm margin counts only one side; margins on both sides are added.",
+      "d": "Doubling the lesion size is not how excised diameter is measured."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-026",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient has simple repairs of a 2.5 cm scalp laceration and a 3.0 cm forearm laceration in the same session. How are the repairs reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An intermediate repair code because there are two separate wounds"
+      },
+      {
+        "id": "b",
+        "text": "Only the 3.0 cm forearm repair, as it is the larger wound"
+      },
+      {
+        "id": "c",
+        "text": "Two separate simple repair codes, one for each wound length"
+      },
+      {
+        "id": "d",
+        "text": "One simple repair code for the 5.5 cm total"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Lengths of repairs with the same complexity in the same anatomic grouping are added together. Scalp and extremities share the 12001–12007 simple repair group, so 2.5 + 3.0 = 5.5 cm is one code.",
+    "distractorExplanations": {
+      "a": "Repair complexity depends on layered closure or heavy contamination, not on the number of wounds.",
+      "b": "Every repaired wound counts; dropping one undercodes the service.",
+      "c": "CPT adds repairs of the same complexity in the same anatomic group into one code."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-027",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "An ICD-10-CM code requires a 7th character, but the code itself has only five characters. What does the coder do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the five-character code without the 7th character"
+      },
+      {
+        "id": "b",
+        "text": "Add a zero in the empty sixth position before the 7th character"
+      },
+      {
+        "id": "c",
+        "text": "Choose a different six-character code that needs no filler X"
+      },
+      {
+        "id": "d",
+        "text": "Fill the empty sixth position with the letter X"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When a code needing a 7th character is shorter than six characters, the letter X fills each empty position so the 7th character sits in the seventh position.",
+    "distractorExplanations": {
+      "a": "A code missing a required 7th character is invalid and will be rejected.",
+      "b": "ICD-10-CM fills empty positions with the letter X, never with a zero.",
+      "c": "Picking another code to avoid the filler X misreports the condition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-028",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A Medicare patient signs a valid ABN for a service the provider expects Medicare to deny as not reasonable and necessary. Which HCPCS modifier goes on the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "GX"
+      },
+      {
+        "id": "b",
+        "text": "GY"
+      },
+      {
+        "id": "c",
+        "text": "GZ"
+      },
+      {
+        "id": "d",
+        "text": "GA"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Modifier GA tells Medicare a required ABN is on file for a service expected to be denied as not reasonable and necessary, so the patient can be billed if it is denied.",
+    "distractorExplanations": {
+      "a": "GX reports a voluntary ABN for a statutorily excluded service, not an expected necessity denial.",
+      "b": "GY marks a service that is statutorily excluded or not a Medicare benefit.",
+      "c": "GZ means a necessity denial is expected but no ABN is on file, which is the opposite case."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-029",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "The preoperative diagnosis is 'breast mass.' The pathology report, available before coding, confirms a fibroadenoma. What should the coder report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fibroadenoma from the confirmed pathology"
+      },
+      {
+        "id": "b",
+        "text": "The breast mass from the preoperative diagnosis line"
+      },
+      {
+        "id": "c",
+        "text": "A malignant neoplasm code until a physician reviews the slides"
+      },
+      {
+        "id": "d",
+        "text": "Both the breast mass and the fibroadenoma together"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "For outpatient surgery, code from the postoperative diagnosis, using the pathology report when it is available at coding. The definitive finding replaces the preoperative sign.",
+    "distractorExplanations": {
+      "b": "When the pathology or postoperative diagnosis is available, it is more definitive and is coded.",
+      "c": "Coding cancer without confirmation is overcoding and can harm the patient's record.",
+      "d": "The mass is integral to the confirmed fibroadenoma, so only the definitive diagnosis is coded."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-coding-guidelines-030",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "For an established patient office visit, the physician documents 42 minutes of total time on the date of the encounter. Which E/M code does time support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "99212"
+      },
+      {
+        "id": "b",
+        "text": "99213"
+      },
+      {
+        "id": "c",
+        "text": "99214"
+      },
+      {
+        "id": "d",
+        "text": "99215"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Office E/M by total time uses thresholds that must be met or exceeded: 99212 10 minutes, 99213 20, 99214 30 and 99215 40 for established patients. Forty-two minutes supports 99215.",
+    "distractorExplanations": {
+      "a": "99212 needs only 10 minutes of total time; 42 minutes supports a much higher level.",
+      "b": "99213 needs 20 minutes; 42 minutes meets a higher threshold.",
+      "c": "99214 needs 30 minutes; 42 minutes also meets the 40-minute 99215 threshold."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-016",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A provider charges $200 for a service. The allowed amount is $120, the deductible is met, and coinsurance is 20%. How much does the patient owe?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$24"
+      },
+      {
+        "id": "b",
+        "text": "$40"
+      },
+      {
+        "id": "c",
+        "text": "$80"
+      },
+      {
+        "id": "d",
+        "text": "$96"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Coinsurance applies to the allowed amount: 20% × $120 = $24 for the patient. The plan pays $96, and the $80 above the allowed amount is a contractual adjustment.",
+    "distractorExplanations": {
+      "b": "Twenty percent of the $200 charge is $40; coinsurance is based on the allowed amount, not the charge.",
+      "c": "$80 is the contractual write-off ($200 − $120), which the in-network provider absorbs.",
+      "d": "$96 is the plan's 80% share of the allowed amount, not the patient's portion."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-017",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A provider bills $150. The payer allows $100, pays $80 and assigns $20 to patient coinsurance. What is the contractual adjustment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$20"
+      },
+      {
+        "id": "b",
+        "text": "$50"
+      },
+      {
+        "id": "c",
+        "text": "$70"
+      },
+      {
+        "id": "d",
+        "text": "$80"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The contractual adjustment is the charge minus the allowed amount: $150 − $100 = $50. The allowed $100 is split between the payer ($80) and the patient ($20).",
+    "distractorExplanations": {
+      "a": "$20 is the patient's coinsurance, which is billed to the patient, not written off.",
+      "c": "$70 subtracts the plan payment from the charge but still includes the patient's $20 share.",
+      "d": "$80 is the amount the payer paid, not the adjustment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-018",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A 67-year-old patient is still working and covered by an employer group health plan from a company with 200 employees, and also has Medicare. Which plan is primary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicare, because the patient is over age 65"
+      },
+      {
+        "id": "b",
+        "text": "Whichever plan the patient enrolled in first"
+      },
+      {
+        "id": "c",
+        "text": "Both plans, splitting the allowed amount equally"
+      },
+      {
+        "id": "d",
+        "text": "The employer group health plan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under Medicare Secondary Payer rules, an employer group health plan is primary for a working beneficiary aged 65+ when the employer has 20 or more employees. Medicare pays second.",
+    "distractorExplanations": {
+      "a": "Medicare is secondary to an employer plan when the patient is working at a company with 20 or more employees.",
+      "b": "Enrollment order does not set primacy under Medicare Secondary Payer rules.",
+      "c": "Coordination of benefits sets an order of payment; plans do not split charges equally."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-019",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A child is covered under both parents' employer plans. The mother's birthday is March 10 and the father's is July 2. Under the birthday rule, which plan is primary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The plan of the older parent"
+      },
+      {
+        "id": "b",
+        "text": "The father's plan"
+      },
+      {
+        "id": "c",
+        "text": "The mother's plan"
+      },
+      {
+        "id": "d",
+        "text": "The plan with the lower deductible"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under the birthday rule, the plan of the parent whose birthday (month and day) comes first in the calendar year is primary for dependent children. March comes before July.",
+    "distractorExplanations": {
+      "a": "The rule ignores the parents' ages and uses only the month and day of birth.",
+      "b": "The birthday rule looks at month and day; the father's July birthday comes later in the year.",
+      "d": "Plan costs do not decide primacy; the earlier birthday in the year does."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-020",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A hospital outpatient department bills its facility charges for an outpatient procedure. Which claim format does it use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CMS-1500 (837P professional)"
+      },
+      {
+        "id": "b",
+        "text": "UB-04 (837I institutional)"
+      },
+      {
+        "id": "c",
+        "text": "NCPDP pharmacy claim format"
+      },
+      {
+        "id": "d",
+        "text": "ADA dental claim form"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Institutional providers such as hospitals bill facility charges on the UB-04 (CMS-1450) or its electronic 837I. Physicians bill professional services on the CMS-1500 or 837P.",
+    "distractorExplanations": {
+      "a": "The CMS-1500 is for professional services by physicians and other practitioners, not facility charges.",
+      "c": "NCPDP is for retail pharmacy drug claims, not outpatient facility charges.",
+      "d": "The ADA form is used for dental services, not hospital facility charges."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-021",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "On a CMS-1500 claim, what belongs in item 24E for each service line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The CPT or HCPCS modifier that applies to that service"
+      },
+      {
+        "id": "b",
+        "text": "The letters of the item 21 diagnoses for that line"
+      },
+      {
+        "id": "c",
+        "text": "The number of units billed for that service"
+      },
+      {
+        "id": "d",
+        "text": "The full ICD-10-CM code repeated for each line"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Item 24E is the diagnosis pointer: one to four letters (A–L) that link each service line to the supporting diagnoses listed in item 21, showing medical necessity.",
+    "distractorExplanations": {
+      "a": "Modifiers go in item 24D next to the CPT or HCPCS code.",
+      "c": "Units or days are reported in item 24G, not in the pointer field.",
+      "d": "Lines point to item 21 letters; the codes themselves are listed only in item 21."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-022",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "What is the general Medicare timely filing limit for a professional claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 months from the date of service"
+      },
+      {
+        "id": "b",
+        "text": "6 months from the date of service"
+      },
+      {
+        "id": "c",
+        "text": "12 months from the date of service"
+      },
+      {
+        "id": "d",
+        "text": "24 months from the date of service"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Medicare requires claims to be filed within 12 months (one calendar year) of the date of service. Commercial and Medicaid limits vary by contract and state.",
+    "distractorExplanations": {
+      "a": "Three months (90 days) is common for some commercial payers, but Medicare allows one calendar year.",
+      "b": "Six months is shorter than Medicare's one-year limit.",
+      "d": "Medicare's limit is 12 months; claims after that are denied for timely filing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-023",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A patient has coverage through an employer plan and also through Medicaid. In what order are the claims billed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicaid only, because the patient qualifies for it"
+      },
+      {
+        "id": "b",
+        "text": "Both at once, splitting the allowed amount equally"
+      },
+      {
+        "id": "c",
+        "text": "Medicaid first, because it is a government program"
+      },
+      {
+        "id": "d",
+        "text": "The employer plan first, Medicaid last"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Medicaid is the payer of last resort: other health coverage, including employer plans and Medicare, pays first, and Medicaid considers the remaining balance.",
+    "distractorExplanations": {
+      "a": "Other coverage must be billed first; Medicaid pays only what remains.",
+      "b": "Coordination of benefits sets an order of payment, not an equal split.",
+      "c": "Medicaid is the payer of last resort, so other coverage pays before it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-024",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A warehouse worker is treated for a back injury that happened lifting boxes at work. Which payer should be billed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medicare, if the patient is over age 65"
+      },
+      {
+        "id": "b",
+        "text": "The patient's health plan first, then workers' compensation"
+      },
+      {
+        "id": "c",
+        "text": "The patient directly, who then seeks reimbursement"
+      },
+      {
+        "id": "d",
+        "text": "The workers' compensation carrier"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Workers' compensation covers treatment of work-related injuries and is billed using the claim number and employer details. The patient's health plan is not billed for the work injury.",
+    "distractorExplanations": {
+      "a": "Workers' compensation is primary to Medicare for work-related injuries.",
+      "b": "Work injuries are billed to workers' compensation, and health plans usually deny work-related claims.",
+      "c": "Workers' compensation pays the provider; the patient is generally not billed for covered work injuries."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-025",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "An electronic remittance advice shows an adjustment with group code CO and reason 45. What does this mean for the balance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient owes it as part of their usual plan cost-sharing"
+      },
+      {
+        "id": "b",
+        "text": "The secondary payer must pay the adjusted amount"
+      },
+      {
+        "id": "c",
+        "text": "The provider writes it off and cannot bill the patient"
+      },
+      {
+        "id": "d",
+        "text": "The claim must be appealed immediately as a denial"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Group code CO is a contractual obligation the provider cannot bill to the patient. CARC 45 means the charge exceeds the fee schedule or maximum allowable amount.",
+    "distractorExplanations": {
+      "a": "PR (patient responsibility) marks cost-sharing; CO means the provider's contractual obligation.",
+      "b": "Contractual write-offs are not passed to a secondary payer as a balance.",
+      "d": "CO-45 means the charge exceeds the fee schedule; it is an expected adjustment, not an error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-026",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "After a claim has paid, the biller finds that the wrong CPT code was submitted. How should the claim be corrected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send frequency code 8 to void it and take no further action"
+      },
+      {
+        "id": "b",
+        "text": "Send a new original claim with frequency code 1"
+      },
+      {
+        "id": "c",
+        "text": "Call the patient and collect the payment difference"
+      },
+      {
+        "id": "d",
+        "text": "Send a corrected claim with frequency code 7"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Frequency code 7 (replacement of prior claim) with the original claim number replaces the paid claim. Frequency 8 voids it, and frequency 1 is a new original claim.",
+    "distractorExplanations": {
+      "a": "Code 8 voids the claim entirely; it does not submit the correct service.",
+      "b": "A new original will deny as a duplicate of the claim already paid.",
+      "c": "The error is on the payer claim; billing the patient does not correct it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-027",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A non-participating provider does not accept Medicare assignment. The participating fee schedule amount is $100. What is the limiting charge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$95.00"
+      },
+      {
+        "id": "b",
+        "text": "$100.00"
+      },
+      {
+        "id": "c",
+        "text": "$109.25"
+      },
+      {
+        "id": "d",
+        "text": "$115.00"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Non-participating providers get 95% of the par fee ($95). If they do not accept assignment, they may charge up to 115% of that amount: $95 × 1.15 = $109.25.",
+    "distractorExplanations": {
+      "a": "$95 is the non-participating fee schedule (95% of par), not the limiting charge.",
+      "b": "$100 is the participating amount; non-par providers have a lower fee schedule and a higher limiting charge.",
+      "d": "This applies 115% to the par amount; the limit is 115% of the non-par amount."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-028",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "How is Medicare inpatient hospital payment mainly determined?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The APC assigned to each separate service line"
+      },
+      {
+        "id": "b",
+        "text": "Total charges multiplied by a fixed percentage"
+      },
+      {
+        "id": "c",
+        "text": "Each CPT code billed for the patient during the stay"
+      },
+      {
+        "id": "d",
+        "text": "The MS-DRG from the ICD-10-CM and PCS codes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Medicare pays inpatient stays under IPPS using the MS-DRG, which is assigned from ICD-10-CM diagnoses and ICD-10-PCS procedures. The DRG sets a fixed payment for the stay.",
+    "distractorExplanations": {
+      "a": "APCs belong to the outpatient prospective payment system (OPPS).",
+      "b": "Medicare inpatient payment is prospective by DRG, not a percentage of charges.",
+      "c": "CPT codes drive physician and outpatient payment, not Medicare inpatient hospital payment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-029",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A Medicare patient has a Medigap supplement. After Medicare processes the claim, what usually happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The provider must mail a paper claim to Medigap first"
+      },
+      {
+        "id": "b",
+        "text": "The patient must pay the remaining balance in full"
+      },
+      {
+        "id": "c",
+        "text": "Medigap pays before Medicare reviews the claim"
+      },
+      {
+        "id": "d",
+        "text": "Medicare often crosses the claim to Medigap"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Medigap plans are secondary to Medicare. Through Medicare's Coordination of Benefits Agreement (crossover), the claim is often forwarded to the Medigap insurer after Medicare pays.",
+    "distractorExplanations": {
+      "a": "Most Medigap claims cross over automatically through Medicare's coordination agreements.",
+      "b": "The Medigap plan pays its share of the remaining coinsurance and deductibles.",
+      "c": "Medigap is secondary; it pays only after Medicare has adjudicated the claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-claims-reimbursement-030",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "claims-reimbursement",
+    "prompt": "A claim is denied with reason code 18, duplicate claim or service. What should the biller check first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whether the original claim is paid or still pending"
+      },
+      {
+        "id": "b",
+        "text": "Whether a modifier 25 was added to the E/M code"
+      },
+      {
+        "id": "c",
+        "text": "Whether the diagnosis code supports medical necessity"
+      },
+      {
+        "id": "d",
+        "text": "Whether the patient's deductible was already met"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CARC 18 means the payer already has this claim or service. Check the payer portal for the original claim's status before resubmitting; if it was a true repeat service, use the correct modifier.",
+    "distractorExplanations": {
+      "b": "Modifier 25 relates to E/M with procedures, not to a duplicate claim.",
+      "c": "Necessity issues cause necessity denials; reason 18 points to a duplicate submission.",
+      "d": "Deductibles affect patient balance, not duplicate-claim denials."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-016",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A breach of unsecured PHI affects 700 patients who live in one state. Whom must the covered entity notify, and by when?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The state attorney general only, within 90 days of the breach"
+      },
+      {
+        "id": "b",
+        "text": "HHS only, in the annual log at the end of the calendar year"
+      },
+      {
+        "id": "c",
+        "text": "Patients, HHS and prominent media within 60 days"
+      },
+      {
+        "id": "d",
+        "text": "Patients only, within 30 days of discovery of the breach"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For a breach of unsecured PHI affecting 500 or more residents of a state, HIPAA requires notice to the individuals, HHS and prominent media outlets without unreasonable delay and within 60 days of discovery.",
+    "distractorExplanations": {
+      "a": "HIPAA requires notice to patients, HHS and media for this breach; state rules may add more.",
+      "b": "The annual log is for breaches under 500; this one needs notice within 60 days.",
+      "d": "Breaches of 500+ residents of a state also require HHS and media notice, and the limit is 60 days."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-017",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A patient asks for a copy of their medical and billing records. Under HIPAA, how long does the covered entity generally have to respond?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 business days with no possible extension"
+      },
+      {
+        "id": "b",
+        "text": "30 days, with one 30-day extension"
+      },
+      {
+        "id": "c",
+        "text": "60 days, as long as a reason is given to the patient"
+      },
+      {
+        "id": "d",
+        "text": "90 days for paper records and 30 days for electronic ones"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The right of access requires action within 30 calendar days of the request, with one 30-day extension if the patient is told in writing why and when the records will be provided.",
+    "distractorExplanations": {
+      "a": "HIPAA allows 30 days, not 10 business days, though some state laws are shorter.",
+      "c": "The base deadline is 30 days; one 30-day extension is allowed with written notice.",
+      "d": "The HIPAA timeline is the same for paper and electronic records."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-018",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A payer asks a behavioral health practice for the therapist's psychotherapy notes to process a claim. What is the correct response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Release them because payers can see the entire medical record"
+      },
+      {
+        "id": "b",
+        "text": "Release them under the payment exception that needs no authorization"
+      },
+      {
+        "id": "c",
+        "text": "Release them once the payer signs a business associate agreement"
+      },
+      {
+        "id": "d",
+        "text": "Release them only with the patient's specific authorization"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Psychotherapy notes kept separately from the medical record need a specific patient authorization for most uses and disclosures, including to payers. Billing usually needs only the clinical summary.",
+    "distractorExplanations": {
+      "a": "Payers receive only the minimum necessary; psychotherapy notes need a specific authorization.",
+      "b": "Psychotherapy notes have special protection and are not covered by the payment exception.",
+      "c": "A payer is not a business associate of the practice, and a BAA does not override note protections."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-019",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A laptop holding ePHI is stolen. It was encrypted to HHS standards, and the key was not stored with it. What does HIPAA require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report it to HHS immediately as a major breach"
+      },
+      {
+        "id": "b",
+        "text": "Document it; encrypted PHI is not a reportable breach"
+      },
+      {
+        "id": "c",
+        "text": "Notify local media if more than 500 patients were on it"
+      },
+      {
+        "id": "d",
+        "text": "Notify every affected patient within 60 days"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HIPAA's breach notification rule applies to unsecured PHI. Encryption meeting HHS guidance, with the key not compromised, is a safe harbor. Log the incident and follow the security policy.",
+    "distractorExplanations": {
+      "a": "HHS notice applies to breaches of unsecured PHI, not encrypted devices with the key kept separate.",
+      "c": "Media notice applies only to breaches of unsecured PHI affecting 500+ residents of a state.",
+      "d": "Properly encrypted PHI is 'secured' under HIPAA, so breach notification is not triggered."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-020",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A practice is building its compliance program from OIG guidance. Which element belongs in that program?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Requiring coding certification for all front-desk staff"
+      },
+      {
+        "id": "b",
+        "text": "Reporting every billing error directly to the OIG hotline"
+      },
+      {
+        "id": "c",
+        "text": "Auditing every single claim before it is submitted to the payer"
+      },
+      {
+        "id": "d",
+        "text": "Designating a compliance officer or contact"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "OIG's seven elements include written policies, a compliance officer, training, open communication, auditing and monitoring, enforcement and discipline, and prompt response to problems.",
+    "distractorExplanations": {
+      "a": "Training is an element, but certification of every staff member is not required.",
+      "b": "Errors are corrected and overpayments returned to the payer; the hotline is not routine.",
+      "c": "OIG guidance calls for periodic risk-based audits, not a review of every claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-021",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "Before hiring a new biller, why does the practice check the OIG List of Excluded Individuals/Entities (LEIE)?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To verify the applicant's NPI before they can enter charges"
+      },
+      {
+        "id": "b",
+        "text": "Federal programs will not pay for work by excluded people"
+      },
+      {
+        "id": "c",
+        "text": "To confirm the applicant holds a current coding credential"
+      },
+      {
+        "id": "d",
+        "text": "To find out whether the applicant has filed for bankruptcy"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Federal health programs will not pay for items or services furnished, ordered or directed by an excluded person, and employing one can bring civil monetary penalties. Screen at hire and monthly.",
+    "distractorExplanations": {
+      "a": "Billers do not need an NPI; the LEIE shows exclusion from federal programs.",
+      "c": "The LEIE is an exclusion list, not a database of coding credentials.",
+      "d": "Bankruptcy is not an exclusion reason and is not shown on the LEIE."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-022",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "At check-in, the photo on a patient's ID does not match the person, and the insurance card name differs slightly. What should front-desk staff do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse care and call the police while the patient waits"
+      },
+      {
+        "id": "b",
+        "text": "Register the patient anyway, as the visit is already scheduled"
+      },
+      {
+        "id": "c",
+        "text": "Follow the identity-theft red flags policy"
+      },
+      {
+        "id": "d",
+        "text": "Change the insurance name to match the ID and continue"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under the FTC Red Flags Rule and practice policy, staff verify identity, escalate discrepancies and protect the record. Medical identity theft can put false data into a real patient's chart.",
+    "distractorExplanations": {
+      "a": "Policy usually involves verification and escalation, not immediate refusal of care or police action.",
+      "b": "Ignoring the mismatch risks medical identity theft and corrupts the real patient's record.",
+      "d": "Editing records to hide a mismatch can spread errors into claims and the medical record."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-023",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A patient pays in full out of pocket for a visit and asks that the information not be sent to their health plan. What must the practice do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decline, because providers may always bill the plan for any service"
+      },
+      {
+        "id": "b",
+        "text": "Submit the claim anyway and refund the patient's payment"
+      },
+      {
+        "id": "c",
+        "text": "Agree only if the physician thinks the request is reasonable"
+      },
+      {
+        "id": "d",
+        "text": "Honor the request not to disclose it to the plan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under HIPAA, a covered entity must agree to a patient's request not to disclose PHI to a health plan for payment or operations when the patient has paid in full out of pocket.",
+    "distractorExplanations": {
+      "a": "HIPAA gives patients this right when they pay in full and the disclosure is not required by law.",
+      "b": "Billing the plan against the patient's request violates the restriction right.",
+      "c": "This restriction must be honored; it is not left to the provider's judgment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-024",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A clinic's sign-in sheet asks patients to write their name and arrival time, but not the reason for the visit. Is this allowed under HIPAA?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, and it may also list each patient's diagnosis and insurer"
+      },
+      {
+        "id": "b",
+        "text": "Only if every patient signs an authorization before signing in"
+      },
+      {
+        "id": "c",
+        "text": "Yes, if it shows minimal information with safeguards"
+      },
+      {
+        "id": "d",
+        "text": "No, because a patient's name on any shared list is a violation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "HHS allows sign-in sheets and calling names in the waiting room as incidental disclosures, provided only limited information is shown and reasonable safeguards are used.",
+    "distractorExplanations": {
+      "a": "Listing diagnoses goes beyond the minimum necessary and is not permitted.",
+      "b": "Sign-in sheets do not need authorizations when they show limited information.",
+      "d": "HIPAA permits incidental disclosures when reasonable safeguards and minimum necessary are applied."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-025",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A biller faxes a statement with PHI to a wrong number. What should the biller do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report it so the privacy officer assesses breach risk"
+      },
+      {
+        "id": "b",
+        "text": "Resend the fax to the correct number and take no further steps"
+      },
+      {
+        "id": "c",
+        "text": "Ignore it, because faxes fall outside HIPAA privacy rules"
+      },
+      {
+        "id": "d",
+        "text": "Call the patient personally to apologize and explain"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A misdirected fax is an impermissible disclosure that may be a breach. The privacy officer does the four-factor risk assessment and decides whether notification is required.",
+    "distractorExplanations": {
+      "b": "Sending it correctly does not resolve the PHI already disclosed to the wrong recipient.",
+      "c": "Faxed PHI is covered by HIPAA, and a misdirected fax is a possible breach.",
+      "d": "Patient notice, if needed, follows the privacy officer's risk assessment, not an individual call."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-026",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "How long must HIPAA policies, procedures and required documentation be kept?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 years"
+      },
+      {
+        "id": "b",
+        "text": "6 years"
+      },
+      {
+        "id": "c",
+        "text": "7 years"
+      },
+      {
+        "id": "d",
+        "text": "10 years"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "HIPAA requires required documentation, such as policies and authorizations, to be kept for 6 years from creation or the date it was last in effect. Medical record retention follows state law.",
+    "distractorExplanations": {
+      "a": "Three years is shorter than the HIPAA documentation requirement.",
+      "c": "Seven years is common for tax records; HIPAA documentation requires six.",
+      "d": "Ten years may be set by some state or payer rules, but HIPAA requires six."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-027",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A patient asked to be contacted only on her cell phone. A staff member calls her home number to discuss a balance. What right was not honored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The right to an accounting of disclosures"
+      },
+      {
+        "id": "b",
+        "text": "The right of access to the designated record set"
+      },
+      {
+        "id": "c",
+        "text": "The right to request confidential communications"
+      },
+      {
+        "id": "d",
+        "text": "The right to amend information in the medical record"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Patients may ask to receive communications by alternative means or locations, such as only on a cell phone. Providers must accommodate reasonable requests.",
+    "distractorExplanations": {
+      "a": "An accounting lists certain disclosures and is unrelated to how the patient is contacted.",
+      "b": "Access concerns obtaining copies of records, not where the practice calls.",
+      "d": "Amendment concerns correcting record content, not contact methods."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-028",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A coder finds that the physician never signed a progress note for a visit that is ready to bill. What should the coder do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill the visit, because the note content is already complete"
+      },
+      {
+        "id": "b",
+        "text": "Hold the claim and ask the provider to authenticate it"
+      },
+      {
+        "id": "c",
+        "text": "Sign the note on the physician's behalf to keep billing on time"
+      },
+      {
+        "id": "d",
+        "text": "Delete the visit from the schedule so no claim goes out"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Services must be supported by authenticated documentation. Hold the claim and request the provider's signature or a signature attestation per payer rules before billing.",
+    "distractorExplanations": {
+      "a": "Unauthenticated documentation may not support the claim in an audit.",
+      "c": "Signing for a provider is falsification of the medical record.",
+      "d": "Deleting the encounter loses the record of a real service."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-029",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "A physician's notes for different patients are nearly identical, copied forward each visit. What is the main billing compliance risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Copied notes are faster, so payers reimburse them at a higher rate"
+      },
+      {
+        "id": "b",
+        "text": "The only risk is a larger file size in the patient's record"
+      },
+      {
+        "id": "c",
+        "text": "Cloned notes may not support each visit's necessity"
+      },
+      {
+        "id": "d",
+        "text": "Cloned documentation is required by most EHR vendors' licenses"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cloned or copy-forward documentation may not reflect the actual service for each patient. Auditors can deny or recoup claims when notes do not show individual medical necessity.",
+    "distractorExplanations": {
+      "a": "Payers do not pay more for cloned notes and may deny or recoup payment.",
+      "b": "The real risk is that documentation fails to support the billed service.",
+      "d": "No EHR license requires cloning; payers warn against it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-compliance-privacy-030",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "compliance-privacy",
+    "prompt": "To attract new Medicare patients, a clinic offers a $50 gift card to anyone who books an appointment. Why is this a compliance problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is only a problem if the clinic also waives copays"
+      },
+      {
+        "id": "b",
+        "text": "It is allowed as long as the card is not cash"
+      },
+      {
+        "id": "c",
+        "text": "It is a HIPAA violation because it uses the patient's address"
+      },
+      {
+        "id": "d",
+        "text": "It can violate the beneficiary inducement rules"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Civil Monetary Penalties Law bars offering remuneration likely to influence a beneficiary's choice of provider. OIG allows only nominal-value items, and cash or cash equivalents are not permitted.",
+    "distractorExplanations": {
+      "a": "The gift card alone can be an improper inducement to Medicare beneficiaries.",
+      "b": "Gift cards count as cash equivalents and are not permitted inducements.",
+      "c": "The issue is the inducement to choose a provider, not a privacy rule."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-016",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A returning patient says at check-in that 'nothing has changed' with their insurance. What should the front desk do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Still scan the card and verify eligibility"
+      },
+      {
+        "id": "b",
+        "text": "Ask the patient to sign a form that coverage is unchanged"
+      },
+      {
+        "id": "c",
+        "text": "Skip verification, since the patient confirmed no changes"
+      },
+      {
+        "id": "d",
+        "text": "Verify eligibility only once a year at the first visit"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Coverage changes are a leading cause of eligibility denials. Scan the card and run an eligibility check (270/271) before each visit, even when the patient reports no changes.",
+    "distractorExplanations": {
+      "b": "A signed statement does not confirm active coverage with the payer.",
+      "c": "Patients often do not know about plan changes; eligibility should be verified each visit.",
+      "d": "Coverage can end or change at any time, so annual checks miss terminations."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-017",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A real-time eligibility check shows the patient's plan ended last month. The patient is in the waiting room. What is the best next step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cancel the visit without explaining the reason to the patient"
+      },
+      {
+        "id": "b",
+        "text": "Bill the visit to the patient's previous employer instead"
+      },
+      {
+        "id": "c",
+        "text": "See the patient and bill the old plan, which may still pay"
+      },
+      {
+        "id": "d",
+        "text": "Tell the patient and ask for current coverage"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Discuss the inactive coverage privately, ask for new insurance information or explain self-pay terms, and document the outcome before the visit.",
+    "distractorExplanations": {
+      "a": "The patient should be told and offered options such as new coverage or self-pay.",
+      "b": "Employers are not payers; the patient's current coverage or self-pay applies.",
+      "c": "Billing a terminated plan leads to denial and a delayed patient balance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-018",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "An uninsured patient schedules a procedure two weeks ahead. Under the No Surprises Act, when must the provider give a good faith estimate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Within 3 business days of scheduling"
+      },
+      {
+        "id": "b",
+        "text": "Within 30 days after the service is performed"
+      },
+      {
+        "id": "c",
+        "text": "Within 1 business day of scheduling"
+      },
+      {
+        "id": "d",
+        "text": "Within 10 business days of scheduling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "For uninsured or self-pay patients, a good faith estimate is due within 1 business day if scheduled 3–9 business days ahead, and within 3 business days if scheduled 10 or more business days ahead.",
+    "distractorExplanations": {
+      "b": "The estimate is due before the service so the patient can plan.",
+      "c": "One business day applies when the service is scheduled 3 to 9 business days ahead.",
+      "d": "Ten business days is the scheduling lead time that triggers the 3-day rule, not the deadline."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-019",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A self-pay patient's final bill is higher than their good faith estimate. How much higher must it be for the patient to use the federal dispute process?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$100 or more"
+      },
+      {
+        "id": "b",
+        "text": "$250 or more"
+      },
+      {
+        "id": "c",
+        "text": "$400 or more"
+      },
+      {
+        "id": "d",
+        "text": "$1,000 or more"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under the No Surprises Act, an uninsured or self-pay patient may start patient-provider dispute resolution when the bill is at least $400 more than the good faith estimate for a provider.",
+    "distractorExplanations": {
+      "a": "The federal threshold is $400 above the estimate, not $100.",
+      "b": "The threshold is $400; smaller differences do not qualify.",
+      "d": "The patient can dispute from $400, well below $1,000."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-020",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A practice collected $90,000 in payments. Gross charges were $150,000 and contractual adjustments $50,000. What is the net collection rate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "60%"
+      },
+      {
+        "id": "b",
+        "text": "75%"
+      },
+      {
+        "id": "c",
+        "text": "90%"
+      },
+      {
+        "id": "d",
+        "text": "100%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Net collection rate = payments ÷ (charges − contractual adjustments) = $90,000 ÷ ($150,000 − $50,000) = 90%. It shows how much collectible revenue was actually collected.",
+    "distractorExplanations": {
+      "a": "60% divides payments by gross charges; net rate first removes contractual adjustments.",
+      "b": "75% does not match either the gross or net calculation for these figures.",
+      "d": "100% would mean every collectible dollar was collected."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-021",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A practice has $300,000 in accounts receivable and average daily charges of $10,000. What are its days in A/R?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10"
+      },
+      {
+        "id": "b",
+        "text": "30"
+      },
+      {
+        "id": "c",
+        "text": "45"
+      },
+      {
+        "id": "d",
+        "text": "300"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Days in A/R = total A/R ÷ average daily charges = $300,000 ÷ $10,000 = 30 days. Many practices aim for under about 40 days.",
+    "distractorExplanations": {
+      "a": "Ten does not follow from these figures; the formula divides A/R by daily charges.",
+      "c": "Forty-five days would require $450,000 in A/R at these daily charges.",
+      "d": "Three hundred mixes up the units; divide total A/R by average daily charges."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-022",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "When posting payments, the biller finds the ERA total does not match the bank deposit for that payer. What should happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconcile ERA and deposit before closing the batch"
+      },
+      {
+        "id": "b",
+        "text": "Post the bank deposit amount and ignore the ERA line items"
+      },
+      {
+        "id": "c",
+        "text": "Post the ERA amounts and leave the bank difference for later"
+      },
+      {
+        "id": "d",
+        "text": "Write off the difference as a small-balance adjustment"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Payment posting includes reconciling ERA totals to deposits. Differences may mean a missing EFT, a recoupment or a posting error, and must be resolved before the batch is closed.",
+    "distractorExplanations": {
+      "b": "Line-item ERA detail is needed for accurate adjustments and patient balances.",
+      "c": "Unreconciled differences hide missing payments or posting errors.",
+      "d": "Writing off an unexplained difference can mask lost revenue or fraud."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-023",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A patient says they cannot pay a $900 balance at once. What should the billing office do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write off the whole balance as a courtesy"
+      },
+      {
+        "id": "b",
+        "text": "Offer a payment plan in writing per policy"
+      },
+      {
+        "id": "c",
+        "text": "Refuse future appointments until it is paid"
+      },
+      {
+        "id": "d",
+        "text": "Send the account to collections right away"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A written payment plan with clear amounts and dates helps recover the balance and documents the agreement. Follow the practice's financial policy for terms and hardship options.",
+    "distractorExplanations": {
+      "a": "Routine write-offs without a hardship policy can raise compliance issues.",
+      "c": "Refusing care can harm the patient and should follow policy, not be the first step.",
+      "d": "Collections should follow statements and offered options per the practice's policy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-024",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "Before sending a patient account to a collection agency, what should the practice have done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sent statements and a final notice per policy"
+      },
+      {
+        "id": "b",
+        "text": "Posted the balance on the practice's social media"
+      },
+      {
+        "id": "c",
+        "text": "Reported the debt to the patient's health plan"
+      },
+      {
+        "id": "d",
+        "text": "Called the patient's employer to garnish wages"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A written financial policy sets the steps: regular statements, a final notice, payment options and documentation. Consistent steps support compliant collection practices.",
+    "distractorExplanations": {
+      "b": "Publicizing a patient's debt violates privacy and debt collection rules.",
+      "c": "Health plans do not handle patient balances owed to the provider.",
+      "d": "Wage garnishment requires a court order; the practice cannot arrange it alone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-025",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A payer authorized 6 physical therapy visits from January 1 to 31. The patient's next visit is February 5. What should staff do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Get a new or extended authorization first"
+      },
+      {
+        "id": "b",
+        "text": "Wait for the claim to deny and then appeal it"
+      },
+      {
+        "id": "c",
+        "text": "Bill the visit under the January authorization number"
+      },
+      {
+        "id": "d",
+        "text": "Have the patient sign an ABN for the commercial plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Authorizations cover specific dates, units and services. Track them and request an extension or new authorization before visits beyond the approved dates or units.",
+    "distractorExplanations": {
+      "b": "An expected authorization denial is preventable by getting the authorization first.",
+      "c": "Services outside the authorized date range are denied even with an auth number.",
+      "d": "ABNs apply to Original Medicare, not to a commercial plan's authorization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-026",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "At the end of each day, the billing office compares the day's schedule with the charges entered. What is the main purpose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To verify every patient paid their copay that day"
+      },
+      {
+        "id": "b",
+        "text": "To check that each provider signed their time sheet"
+      },
+      {
+        "id": "c",
+        "text": "To catch missed charges before claims go out"
+      },
+      {
+        "id": "d",
+        "text": "To confirm the diagnosis codes match the payer's fee schedule"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Reconciling the schedule against charges finds completed visits with no charges (missed charge capture) and charges for no-shows, before claims are submitted.",
+    "distractorExplanations": {
+      "a": "Copay reconciliation is a separate cash control from charge reconciliation.",
+      "b": "Payroll checks are not part of revenue cycle charge reconciliation.",
+      "d": "Fee schedules price procedures; this check looks for visits without charges."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-027",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A claim is denied because the patient had new insurance on the date of service. What should the biller do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill the patient the full charge right away"
+      },
+      {
+        "id": "b",
+        "text": "Update coverage and bill the right payer in time"
+      },
+      {
+        "id": "c",
+        "text": "Write off the claim as an uncollectible eligibility loss"
+      },
+      {
+        "id": "d",
+        "text": "Appeal to the old payer that it should have paid the claim"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An eligibility denial for changed coverage is fixed by updating registration and submitting to the correct payer within its timely filing limit. Then improve front-end verification.",
+    "distractorExplanations": {
+      "a": "The correct payer should be billed first if coverage exists.",
+      "c": "Writing off loses revenue the current payer should pay.",
+      "d": "The old plan was not active, so an appeal will not succeed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-028",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A clinic uses a bank lockbox service. What does it do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Receives and deposits mailed payments for the clinic"
+      },
+      {
+        "id": "b",
+        "text": "Holds disputed patient payments until an appeal is decided"
+      },
+      {
+        "id": "c",
+        "text": "Stores scanned insurance cards for front-desk verification"
+      },
+      {
+        "id": "d",
+        "text": "Encrypts patient payment card data inside the EHR"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A lockbox is a bank service that receives payer and patient checks at a dedicated address, deposits them and sends images and data for posting, speeding cash flow.",
+    "distractorExplanations": {
+      "b": "Disputed amounts are handled in A/R, not held by a lockbox.",
+      "c": "Card scanning is a registration function, not a bank lockbox service.",
+      "d": "Card encryption is a security control, not a lockbox service."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-029",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "Which electronic report confirms that the payer has accepted a claim into its adjudication system?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 835 electronic remittance advice"
+      },
+      {
+        "id": "b",
+        "text": "The 277CA claim acknowledgment"
+      },
+      {
+        "id": "c",
+        "text": "The 834 benefit enrollment file"
+      },
+      {
+        "id": "d",
+        "text": "The 270 eligibility inquiry"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The 999 confirms the file passed syntax checks; the 277CA shows whether each claim was accepted or rejected at the payer's front end. The 835 later reports the payment.",
+    "distractorExplanations": {
+      "a": "The 835 reports payment and adjustments after adjudication, not initial acceptance.",
+      "c": "The 834 carries enrollment data between employers and plans, not claim status.",
+      "d": "The 270 asks about eligibility before the visit; it is not a claim report."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "nha-cbcs-readiness-check-revenue-cycle-030",
+    "examSlug": "nha-cbcs-readiness-check",
+    "topicId": "revenue-cycle",
+    "prompt": "A physician joins the practice and starts seeing patients before a commercial payer has finished credentialing and enrolling her. What usually happens to her claims for that payer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They deny because she is not yet enrolled"
+      },
+      {
+        "id": "b",
+        "text": "They pay at a reduced out-of-network rate automatically"
+      },
+      {
+        "id": "c",
+        "text": "They pay at the group rate once the group NPI is listed"
+      },
+      {
+        "id": "d",
+        "text": "They pay normally, because credentialing is only a formality"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Most payers pay only for services by enrolled, credentialed providers, and many do not backdate enrollment. Start credentialing well before the start date and track its status.",
+    "distractorExplanations": {
+      "b": "Many payers deny rather than reprocess at out-of-network rates, and terms depend on the contract.",
+      "c": "Payers need the rendering provider enrolled; the group NPI alone does not cover an unenrolled clinician.",
+      "d": "Credentialing and enrollment are conditions of payment for most payers, not a formality."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
   }
 ]
