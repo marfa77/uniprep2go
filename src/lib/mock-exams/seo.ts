@@ -318,7 +318,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Series 65 practice test",
   },
   "life-and-health-insurance-readiness-check": {
-    title: "Life & Health Insurance Practice Test 2026 | 60Q, 25Q Free",
+    title: "Life & Health Insurance Practice Test | 60Q, 25Q Free",
     description:
       "Life & Health insurance practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 250-card Anki deck. Independent prep — not official state exam material.",
     keywords: [

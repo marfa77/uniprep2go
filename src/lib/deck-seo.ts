@@ -795,10 +795,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Looking for Series 63 flashcards after SIE/Series 7? Start with the 60-question timed readiness check (free 25-question version), then drill only the weak state-law topics in this 250-card deck before the state sit.",
   },
   "series-65-anki-deck": {
-    title: "Series 65 Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
+    title: "Series 65 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "series-66-anki-deck": {
-    title: "Series 66 Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
+    title: "Series 66 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "cfp-certification-anki-deck": {
     title: "CFP Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
@@ -1159,7 +1159,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 60-card .apkg. Not the VTNE technician pathway.",
   },
   "medical-scribe-anki-deck": {
-    title: "Medical Scribe Anki 2026 | 120 Cards + 60Q Mock (25Q Free)",
+    title: "Medical Scribe Anki | 120 Cards + 60Q Mock (25Q Free)",
     headline: "Medical Scribe Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "medical scribe documentation and HIPAA exam prep",
     description:
