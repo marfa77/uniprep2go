@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
 import {
   getCompanionDeck,
+  getCompanionNote,
   getDeckPracticeMock,
   isMockFirstDeckPage,
+  isSameBankCompanion,
 } from "./deck-funnel";
 
 describe("deck funnel", () => {
@@ -20,6 +22,14 @@ describe("deck funnel", () => {
     expect(getCompanionDeck("cfa-level-1-formula-reference-2026")?.slug).toBe(
       "cfa-level-1-anki-deck",
     );
+  });
+
+  it("does not call the CFA L1 PDF and scenario deck one bank", () => {
+    expect(isSameBankCompanion("cfa-level-1-anki-deck")).toBe(false);
+    expect(isSameBankCompanion("cfa-level-1-formula-reference-2026")).toBe(false);
+    expect(getCompanionNote("cfa-level-1-anki-deck")).toMatch(/scenario/);
+    expect(isSameBankCompanion("cfa-level-2-anki-deck")).toBe(true);
+    expect(getCompanionNote("cfa-level-2-anki-deck")).toBeUndefined();
   });
 
   it("links LEED GA to LEED AP BD+C through building companion map", () => {

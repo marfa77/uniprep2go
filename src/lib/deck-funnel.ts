@@ -35,8 +35,18 @@ export function getDeckPracticeMock(deckSlug: string): MockExamConfig | undefine
   return getMockExamConfig(companionSlug);
 }
 
+/** Pairs whose Anki deck is authored separately from the PDF (different content, not one bank). */
+const SEPARATE_CONTENT_COMPANION: Record<string, string> = {
+  "cfa-level-1-anki-deck": "Formula lookup tables to go with these scenario cards",
+  "cfa-level-1-formula-reference-2026": "Separate scenario deck weighted to the 2026 topic ranges",
+};
+
 export function isSameBankCompanion(deckSlug: string): boolean {
-  return deckSlug in COMPANION_DECK_BY_SLUG;
+  return deckSlug in COMPANION_DECK_BY_SLUG && !(deckSlug in SEPARATE_CONTENT_COMPANION);
+}
+
+export function getCompanionNote(deckSlug: string): string | undefined {
+  return SEPARATE_CONTENT_COMPANION[deckSlug];
 }
 
 export function getCompanionDeck(deckSlug: string): CatalogAvailableDeck | undefined {

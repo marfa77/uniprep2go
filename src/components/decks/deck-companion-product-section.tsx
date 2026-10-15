@@ -9,12 +9,14 @@ type DeckCompanionProductSectionProps = {
   companion: PricedDeck;
   /** True when companion shares the same validated bank (PDF ↔ Anki pair), not a building-cluster cross-sell. */
   sameBank?: boolean;
+  note?: string;
 };
 
 export function DeckCompanionProductSection({
   deck,
   companion,
   sameBank = false,
+  note,
 }: DeckCompanionProductSectionProps) {
   const priceLabel = formatDeckPriceLabel(companion);
 
@@ -35,9 +37,10 @@ export function DeckCompanionProductSection({
             : `View ${companion.format === "PDF" ? "PDF" : "deck"} — ${priceLabel}`}
         </Link>
         <span className="text-xs text-[#7a6e5a]">
-          {sameBank
-            ? `Same validated bank as this ${deck.format === "PDF" ? "PDF" : "deck"}`
-            : "Related certification deck"}
+          {note ??
+            (sameBank
+              ? `Same validated bank as this ${deck.format === "PDF" ? "PDF" : "deck"}`
+              : "Related certification deck")}
         </span>
       </div>
     </section>

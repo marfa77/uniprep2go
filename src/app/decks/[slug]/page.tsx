@@ -39,6 +39,7 @@ import {
   getCompanionDeck,
   getDeckPracticeMock,
   isMockFirstDeckPage,
+  getCompanionNote,
   isSameBankCompanion,
 } from "@/lib/deck-funnel";
 import {
@@ -580,6 +581,7 @@ export default async function DeckPage({
             companion={pricedCompanionDeck}
             deck={availableDeck}
             sameBank={isSameBankCompanion(deck.slug)}
+            note={getCompanionNote(deck.slug)}
           />
         ) : null}
 
