@@ -76,6 +76,12 @@ async function productIdByPermalink(permalink) {
   return null;
 }
 
+/** Old /l/ short codes 301 to the product's current custom permalink. */
+async function redirectedPermalink(permalink) {
+  const response = await fetch(`https://pixidstudio.gumroad.com/l/${permalink}`, { redirect: "manual" });
+  return (response.headers.get("location") || "").match(/\/l\/([^/?#]+)/)?.[1] ?? permalink;
+}
+
 function parseArgs(argv) {
   const args = { dryRun: false, slug: null, slugsFile: null };
   for (let i = 2; i < argv.length; i += 1) {
@@ -181,7 +187,10 @@ async function main() {
       continue;
     }
     try {
-      const productId = financeCatalog.products?.[slug]?.gumroadProductId ?? (await productIdByPermalink(permalink));
+      const productId =
+        financeCatalog.products?.[slug]?.gumroadProductId ??
+        (await productIdByPermalink(permalink)) ??
+        (await productIdByPermalink(await redirectedPermalink(permalink)));
       if (!productId) throw new Error(`product ${permalink} not found`);
       const cmd =
         `gumroad products update --replace-files --file "${apkg}" ` +

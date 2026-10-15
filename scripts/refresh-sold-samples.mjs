@@ -300,6 +300,7 @@ const authoredDeckCsv = [
   ["frm-part-1-anki-deck", "frm_part1_v2_authored.csv"],
   ["cfa-level-2-anki-deck", ["cfa_level2_complete.csv", "cfa_level2_p1_authored.csv"], 420],
   ["life-and-health-insurance-exam-anki-deck", "../Insurance/life_health_250_authored.csv", 360],
+  ["servsafe-manager-anki-deck", "../ServSafe/servsafe_manager_300_authored.csv", 360],
 ];
 for (const [slug, files, maxBack] of authoredDeckCsv) {
   if (wanted(slug)) keep(slug, pickFromAuthoredDeckCsv(slug, files, maxBack));

@@ -4275,21 +4275,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "What if cooked TCS food reaches 70°F in 2 hours but not 41°F within 6 total hours?",
+        question: "What must be controlled when using chlorine sanitizer?",
         answer:
-          "It must be discarded because it missed the total cooling limit.",
+          "Control concentration, temperature, pH, and contact time according to label and regulation. Chlorine is commonly used at 50 to 99 ppm.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-1.webp",
       },
       {
-        question: "How long should shellstock tags be kept?",
+        question: "How long should parasite destruction records be retained for raw fish?",
         answer:
-          "Shellstock tags are commonly kept for 90 days after the last shellfish from the container is sold or served.",
+          "Operations should retain supplier parasite destruction documentation according to regulatory requirements, commonly 90 days.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-2.webp",
       },
       {
-        question: "When must food-contact surfaces be cleaned and sanitized?",
+        question: "How fast must TCS food made from room-temperature ingredients be cooled?",
         answer:
-          "Clean and sanitize after use, before working with different food types, after interruptions, after contamination, and at least every 4 hours during continuous use with TCS foods.",
+          "TCS food prepared from ambient ingredients must be cooled to 41°F or lower within 4 hours. The food starts near 70°F, so there is no 2-hour first stage as with cooked food.",
         imageUrl: "/samples/servsafe-manager-anki-deck-sample-3.webp",
       },
     ],

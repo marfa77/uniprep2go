@@ -382,7 +382,10 @@ function publishCommand(slug) {
       ? ["node", "scripts/publish-gumroad-classic.mjs", "--slug", slug]
       : null;
   }
-  return /gumroad\.com\/l\//.test(checkout) ? ["node", "scripts/publish-authored-gumroad-samples.mjs", "--slug", slug] : null;
+  if (!/gumroad\.com\/l\//.test(checkout)) return null;
+  const copy = readJson(join(root, "src/data/gumroad/landing-copy.json"));
+  if ((copy.products ?? copy)[slug]) return ["node", "scripts/publish-gumroad-classic.mjs", "--slug", slug];
+  return ["node", "scripts/publish-authored-gumroad-samples.mjs", "--slug", slug];
 }
 
 main().catch((error) => {
