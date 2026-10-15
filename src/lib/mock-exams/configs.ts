@@ -611,12 +611,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the January 2026 PTCE outline: 90 questions (80 scored + 10 unscored pretest), 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled 1,400 — this mock scores all 90 items at a 70% diagnostic threshold. Pearson VUE in-person (online PTCE suspended Dec 2025). Compounding/alligation are not standalone 2026 knowledge areas.",
+      "Modeled on the January 2026 PTCE outline: 90 questions (80 scored + 10 unscored pretest), 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled 1,400 — this mock scores all 90 items at a 70% diagnostic threshold. Each attempt draws 90 questions in the outline's domain mix from a bank of 180, so retakes see new questions. Pearson VUE in-person (online PTCE suspended Dec 2025). Compounding/alligation are not standalone 2026 knowledge areas.",
     disclaimer: ptcbDisclaimer,
     description:
       "A timed 90-question PTCB / PTCE mock with 2026 domain-weighted scoring, full question review, and a pass/no-pass readiness verdict before you drill the linked Anki deck.",
     examBody: "PTCB / PTCE",
-    lastUpdated: "2026-10-04",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "gmat-focus-readiness-check",

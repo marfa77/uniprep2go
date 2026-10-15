@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 35 | 20 |
+| ok | 36 | 21 |
 | thin-bank | 1 | 1 |
 | unreviewed | 1 | 1 |
-| small-bank | 31 | 7 |
+| small-bank | 30 | 6 |
 | point-fix | 0 | 0 |
 | rewrite | 111 | 35 |
 | civic | 19 | 18 |
@@ -134,7 +134,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `wy-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | small-bank | `cfa-level-1-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
-| small-bank | `ptcb-pharmacy-technician-mock` | live | 90 / 90 | 2026-10-15 | bank 90 for 90Q session |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
 | small-bank | `series-7-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `servsafe-manager-mock` | live | 90 / 90 | 2026-10-15 | bank 90 for 90Q session |
@@ -180,6 +179,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-14 | — |
+| ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |
 | ok | `sat-readiness-check` | live | 49 / 160 | 2026-10-02 | — |
 | ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `sie-quick-diagnostic` | live | 25 / 75 | 2026-10-15 | — |

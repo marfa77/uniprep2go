@@ -543,7 +543,7 @@ describe("question bank from deck content", () => {
   it("loads a complete PTCB bank sourced from deck CSV export", () => {
     const { questions, errors } = getQuestionBankForExam("ptcb-pharmacy-technician-mock");
     expect(errors).toEqual([]);
-    expect(questions).toHaveLength(90);
+    expect(questions).toHaveLength(180);
     expect(questions[0]?.sourceNote).toContain("ptcb_pharmacy_tech_300_authored.csv");
   });
 });
