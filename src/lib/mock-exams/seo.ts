@@ -116,7 +116,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
 const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sie-full-mock": {
     // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
-    title: "SIE Practice Test Free 2026 | 75Q Timed, No Signup",
+    title: "SIE Practice Test Free 2026 | 25Q Free, 75Q Timed",
     description:
       "SIE practice test online — free 25-question diagnostic, no signup; full mock: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $11 / 300-card SIE Anki deck. Independent — not official FINRA material.",
     keywords: [
@@ -195,7 +195,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NHA ExCPT practice test",
   },
   "cfa-level-1-readiness-check": {
-    title: "CFA Level 1 Practice Test 2026: Free 60-Question Check",
+    title: "CFA Level 1 Practice Test 2026: 60Q Check, 25Q Free",
     description:
       "CFA Level 1 practice test for 2026: free 25-question diagnostic, full mock 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
     keywords: [
@@ -212,7 +212,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CFA Level 1 practice test",
   },
   "series-7-readiness-check": {
-    title: "Series 7 Practice Test 2026 | Free 60Q Timed Online",
+    title: "Series 7 Practice Test 2026 | 60Q Timed, 25Q Free",
     description:
       "Series 7 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with Series 7 flashcards ($29 / 300-card Anki). Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated); this check is shorter. Independent — not FINRA material.",
     keywords: [
@@ -318,7 +318,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Series 65 practice test",
   },
   "life-and-health-insurance-readiness-check": {
-    title: "Life & Health Insurance Practice Test 2026 | Free 60Q",
+    title: "Life & Health Insurance Practice Test 2026 | 60Q, 25Q Free",
     description:
       "Life & Health insurance practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 90 minutes, 70% target, topic scoring, and full answer review. Pairs with 250-card Anki deck. Independent prep — not official state exam material.",
     keywords: [
@@ -336,7 +336,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Life & Health insurance practice test",
   },
   "frm-part-1-readiness-check": {
-    title: "FRM Part 1 Practice Questions — Free 50Q Mock Test 2026",
+    title: "FRM Part 1 Practice Questions — 50Q Mock, 25Q Free 2026",
     description:
       "Free FRM Part 1 mock test: 50 timed practice questions across all 4 GARP topics, 120 minutes, topic scoring. Free 25-question diagnostic, then $5 for 5.",
     keywords: [
@@ -371,7 +371,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NBRC TMC practice test",
   },
   "series-63-readiness-check": {
-    title: "Series 63 Practice Test 2026 | Free 60Q NASAA",
+    title: "Series 63 Practice Test 2026 | 60Q NASAA, 25Q Free",
     description:
       "Series 63 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic readiness scoring — then fix weak law rows before the state sit. Independent — not official NASAA material.",
     keywords: [
@@ -1523,7 +1523,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Wallonie citoyenneté practice test",
   },
   "luxembourg-vivre-ensemble-readiness-check": {
-    title: "Luxembourg Vivre ensemble Practice Test: Free 40Q, 60 min",
+    title: "Luxembourg Vivre ensemble Practice Test: 40Q, 25Q Free",
     description:
       "Luxembourg Vivre ensemble exam simulation: free 25-question diagnostic, full mock 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],

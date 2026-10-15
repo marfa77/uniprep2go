@@ -679,7 +679,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US and global CFA Level 1 candidates use a focused spaced-repetition deck (not a mega-dump) to retain formulas across all 10 topics — pair with the free timed mock and the matching formula sheet PDF for printable tables and an 80-question recall drill.",
   },
   "cfa-level-2-anki-deck": {
-    title: "CFA Level 2 Anki 2026 | 495 Cards + Free 60Q Mock",
+    title: "CFA Level 2 Anki 2026 | 495 Cards + 60Q Mock (25Q Free)",
     headline: "CFA Level 2 Exam Prep — 495 Vignette Cards + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
@@ -745,8 +745,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Monthly FRM Q-bank subscriptions help for volume practice. If you want an ownable Anki .apkg plus a free timed diagnostic before you pay for more mocks, start here — then drill only the weak Part 1 pillars.",
   },
   "sie-exam-anki-deck": {
-    title: "SIE Anki Deck 2026 | 300 Cards + Free 75Q Mock",
-    headline: "SIE Exam Prep — 300 Flashcards + Free 75Q Mock",
+    title: "SIE Anki Deck 2026 | 300 Cards + 75Q Mock (25Q Free)",
+    headline: "SIE Exam Prep — 300 Flashcards + 75Q Mock (25Q Free)",
     studyLabel: "FINRA SIE exam prep",
     description:
       "SIE exam prep: 300 Anki flashcards + 75-question timed mock (free 25-question version) (or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
@@ -762,7 +762,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "series-7-anki-deck": {
     title: "Series 7 Flashcards 2026 | 300 Cards + Free Mock",
-    headline: "Series 7 Flashcards — 300 Top-Off Cards + Free 60Q Mock",
+    headline: "Series 7 Flashcards — 300 Top-Off Cards + 60Q Mock (25Q Free)",
     studyLabel: "Series 7 flashcards",
     description:
       "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a 60-question timed practice test (free 25-question version) with job-function scoring. Official exam 125 scored + 5 pretest / 3h45 / pass 72 equated. Independent — not FINRA material.",
@@ -779,7 +779,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "series-63-anki-deck": {
     title: "Series 63 Flashcards 2026 | 250 Cards + Free Mock",
-    headline: "Series 63 Flashcards — 250 NASAA Cards + Free 60Q Mock",
+    headline: "Series 63 Flashcards — 250 NASAA Cards + 60Q Mock (25Q Free)",
     studyLabel: "Series 63 flashcards",
     description:
       "Series 63 flashcards for NASAA state law: 250 Anki cards (registration, ethics, communications) plus a 60-question timed practice test (free 25-question version) with topic readiness scoring. Independent prep, not NASAA material.",
@@ -795,13 +795,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Looking for Series 63 flashcards after SIE/Series 7? Start with the 60-question timed readiness check (free 25-question version), then drill only the weak state-law topics in this 250-card deck before the state sit.",
   },
   "series-65-anki-deck": {
-    title: "Series 65 Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+    title: "Series 65 Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "series-66-anki-deck": {
-    title: "Series 66 Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+    title: "Series 66 Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "cfp-certification-anki-deck": {
-    title: "CFP Exam Prep 2026 | 120 Cards + Free 120Q Mock",
+    title: "CFP Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",
@@ -1000,7 +1000,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "WELL AP Exam Prep | 250+ Cards + Free Mock",
   },
   "cem-anki-deck": {
-    title: "CEM Exam Prep | 250 Cards + Free 50Q Mock",
+    title: "CEM Exam Prep | 250 Cards + 50Q Mock (25Q Free)",
     headline: "Certified Energy Manager Anki — 250 Cards + Free Mock",
     description:
       "Independent AEE CEM Anki: $11 / 250 cards across five Body of Knowledge groups plus a 50-question / 50-minute timed diagnostic (free 25-question version). Official CEM is 130Q / 4h / open book / scaled 700. Not AEE’s paid 65Q self-eval and not AEE exam material.",
@@ -1060,7 +1060,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "gre-anki-deck": {
     title: "GRE Exam Prep | 350 Verbal & Quant Cards + Mock",
-    headline: "GRE General Prep — 350 Cards + Free 30Q Mock",
+    headline: "GRE General Prep — 350 Cards + 30Q Mock (25Q Free)",
     studyLabel: "GRE exam prep",
     description:
       "GRE General Anki: 350 Verbal + Quant flashcards plus a 30-question timed readiness check (free 25-question version) (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
@@ -1077,7 +1077,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "nha-cbcs-anki-deck": {
     title: "NHA CBCS Anki | Planned 60 Cards + Free Mock",
-    headline: "NHA CBCS Prep — Planned Cards + Free 60Q Practice Test",
+    headline: "NHA CBCS Prep — Planned Cards + 60Q Practice Test (25Q Free)",
     studyLabel: "NHA CBCS exam prep",
     description:
       "Planned NHA CBCS Anki for billing and coding specialist prep — coding guidelines, claims, HIPAA, revenue cycle — plus a 60-question timed practice test (free 25-question version). Official CBCS is 100+25 / 3h / scaled 390. Not AAPC CPC. Independent — not NHA material.",
@@ -1094,7 +1094,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "cosmetology-state-anki-deck": {
     title: "Cosmetology Anki | Planned 60 Cards + Free Mock",
-    headline: "Cosmetology Theory Prep — Planned Cards + Free 60Q Test",
+    headline: "Cosmetology Theory Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "cosmetology state board exam prep",
     description:
       "Planned cosmetology theory Anki for NIC-style state board prep — infection control, hair services, skin & nails — plus a 60-question timed practice test (free 25-question version). NIC Theory is typically 110Q / 90 min; practical is separate. Independent — not NIC/PSI material.",
@@ -1111,7 +1111,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "cdl-general-knowledge-anki-deck": {
     title: "CDL General Knowledge Anki | Planned 60 Cards + Free Mock",
-    headline: "CDL General Knowledge Prep — Planned Cards + Free 60Q Test",
+    headline: "CDL General Knowledge Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "CDL General Knowledge exam prep",
     description:
       "Planned CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a 60-question timed practice test (free 25-question version). Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
@@ -1128,7 +1128,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "armed-security-officer-anki-deck": {
     title: "Armed Security Anki | Planned 120 Cards + Free Mock",
-    headline: "Armed Security Officer Prep — Planned Cards + Free 60Q Test",
+    headline: "Armed Security Officer Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "armed security officer exam prep",
     description:
       "Planned armed security Anki for use-of-force, weapons safety, patrol, and ethics — plus a 60-question timed written practice test (free 25-question version). State-specific licensing; ≠ unarmed card; range qualification separate. Independent — not a state board exam.",
@@ -1144,7 +1144,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "veterinary-assistant-anki-deck": {
     title: "Veterinary Assistant Anki | Planned 60 Cards + Free Mock",
-    headline: "Veterinary Assistant / AVA Prep — Planned Cards + Free 60Q Test",
+    headline: "Veterinary Assistant / AVA Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "NAVTA AVA veterinary assistant exam prep",
     description:
       "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety — plus a 60-question timed practice test (free 25-question version). Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
@@ -1159,7 +1159,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 60-card .apkg. Not the VTNE technician pathway.",
   },
   "medical-scribe-anki-deck": {
-    title: "Medical Scribe Anki 2026 | 120 Cards + Free 60Q Mock",
+    title: "Medical Scribe Anki 2026 | 120 Cards + 60Q Mock (25Q Free)",
     headline: "Medical Scribe Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "medical scribe documentation and HIPAA exam prep",
     description:
@@ -1175,7 +1175,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Scribes and scribe candidates who want a free timed documentation-and-HIPAA diagnostic before an employer check or AHDPG MSCE — then a 120-card .apkg for weak topics. Not a CCMA/CMA clinical-skills pathway.",
   },
   "ardms-spi-anki-deck": {
-    title: "ARDMS SPI Anki 2026 | 120 Cards + Free 60Q Mock",
+    title: "ARDMS SPI Anki 2026 | 120 Cards + 60Q Mock (25Q Free)",
     headline: "ARDMS SPI Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "ARDMS SPI ultrasound physics exam prep",
     description:

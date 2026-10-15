@@ -302,7 +302,7 @@ describe("mock exam configs", () => {
     const config = getMockExamConfig("luxembourg-vivre-ensemble-readiness-check");
     expect(config?.questionCount).toBe(40);
     expect(config?.durationMinutes).toBe(60);
-    expect(buildMockSeoTitle(config!)).toBe("Luxembourg Vivre ensemble Practice Test: Free 40Q, 60 min");
+    expect(buildMockSeoTitle(config!)).toBe("Luxembourg Vivre ensemble Practice Test: 40Q, 25Q Free");
     expect(config?.topics.map((topic) => [topic.id, topic.questionCount])).toEqual([
       ["droits-fondamentaux", 10],
       ["institutions", 20],

@@ -79,7 +79,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "series-63-anki-deck":
     "$11 Series 63 flashcards (250 NASAA cards) + 60Q timed mock (free 25-question version) — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
-    "$29 / 2,463 cards in two .apkg files: 2,120 DELE A2 vocab cards with audio + 343 CCSE civics cards. Free 60Q CCSE diagnostic — official CCSE is 25Q / 45 min / 60%.",
+    "$29 / 2,463 cards in two .apkg files: 2,120 DELE A2 vocab cards with audio + 343 CCSE civics cards. 60Q CCSE diagnostic (free 25-question version) — official CCSE is 25Q / 45 min / 60%.",
   "citizenship-naturalization-anki-bundle":
     "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
   "medicare-counseling-anki-deck":
@@ -89,55 +89,55 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
-    "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). Free 60Q / 75 min diagnostic live now — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
+    "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). 60Q / 75 min diagnostic live now (free 25-question version) — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
   "aha-bls-provider-anki-deck":
-    "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). Free 60Q / 45 min / 84% cognitive diagnostic live now — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
+    "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). 60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version) — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
     "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + free 60Q / 75 min diagnostic from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "ascp-mls-anki-deck":
-    "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). Free 60Q / 90 min diagnostic live now — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
+    "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
-    "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). Free 60Q / 75 min diagnostic live now — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
+    "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). 60Q / 75 min diagnostic live now (free 25-question version) — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
   "aswb-bachelors-anki-deck":
-    "Planned 60-card ASWB Bachelors Anki (HBSE, assessment, intervention, ethics). Free 60Q / 75 min diagnostic live now — official from 3 Aug 2026 is 122Q / 4h. ≠ Clinical/LCSW.",
+    "Planned 60-card ASWB Bachelors Anki (HBSE, assessment, intervention, ethics). 60Q / 75 min diagnostic live now (free 25-question version) — official from 3 Aug 2026 is 122Q / 4h. ≠ Clinical/LCSW.",
   "aswb-clinical-anki-deck":
-    "Planned 60-card ASWB Clinical Anki (clinical assessment, diagnosis concepts, psychotherapy, ethics). Free 60Q / 75 min diagnostic live now — official from 3 Aug 2026 is 122Q / 4h. ≠ Bachelors/LSW.",
+    "Planned 60-card ASWB Clinical Anki (clinical assessment, diagnosis concepts, psychotherapy, ethics). 60Q / 75 min diagnostic live now (free 25-question version) — official from 3 Aug 2026 is 122Q / 4h. ≠ Bachelors/LSW.",
   "barber-state-anki-deck":
-    "Planned 60-card NIC-style barber theory Anki. Free 60Q / 75 min diagnostic live now — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
+    "Planned 60-card NIC-style barber theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
   "medication-aide-anki-deck":
-    "Planned 60-card medication-aide Anki (rights, routes, safety, documentation). Free 60Q / 75 min diagnostic live now — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
+    "Planned 60-card medication-aide Anki (rights, routes, safety, documentation). 60Q / 75 min diagnostic live now (free 25-question version) — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
   "nail-technician-state-anki-deck":
-    "Planned 60-card NIC-style nail theory Anki. Free 60Q / 75 min diagnostic live now — official NIC Nail Technology Theory is 110 (100 scored) / 90 min; practical separate. ≠ Cosmetology / Barber Theory.",
+    "Planned 60-card NIC-style nail theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Nail Technology Theory is 110 (100 scored) / 90 min; practical separate. ≠ Cosmetology / Barber Theory.",
   "nsca-cpt-anki-deck":
-    "Planned 60-card NSCA-CPT Anki (assessment, program design, technique, safety). Free 60Q / 75 min text diagnostic live now — official NSCA-CPT is 155Q (140+15) / 3h / scaled 70 with video items. ≠ CSCS.",
+    "Planned 60-card NSCA-CPT Anki (assessment, program design, technique, safety). 60Q / 75 min text diagnostic live now (free 25-question version) — official NSCA-CPT is 155Q (140+15) / 3h / scaled 70 with video items. ≠ CSCS.",
   "phr-hrci-anki-deck":
-    "Planned 60-card HRCI PHR Anki (talent, employee relations, total rewards, compliance). Free 60Q / 75 min diagnostic live now — official PHR is 90 scored + 25 pretest / 2h / scaled 500. ≠ SPHR / SHRM-CP.",
+    "Planned 60-card HRCI PHR Anki (talent, employee relations, total rewards, compliance). 60Q / 75 min diagnostic live now (free 25-question version) — official PHR is 90 scored + 25 pretest / 2h / scaled 500. ≠ SPHR / SHRM-CP.",
   "physical-therapy-aide-anki-deck":
-    "Planned 60-card PT aide Anki (modalities assist, transfers, anatomy, ethics). Free 60Q / 75 min diagnostic live now — no national PT aide exam. ≠ NPTE / PTA.",
+    "Planned 60-card PT aide Anki (modalities assist, transfers, anatomy, ethics). 60Q / 75 min diagnostic live now (free 25-question version) — no national PT aide exam. ≠ NPTE / PTA.",
   "praxis-core-anki-deck":
-    "Planned 60-card Praxis Core Anki. Free 60Q / 75 min combined SR diagnostic live now — official Core is three ETS tests (5713/5723/5733). ≠ SpEd 5355.",
+    "Planned 60-card Praxis Core Anki. 60Q / 75 min combined SR diagnostic live now (free 25-question version) — official Core is three ETS tests (5713/5723/5733). ≠ SpEd 5355.",
   "praxis-special-education-anki-deck":
-    "Planned 60-card Praxis Special Education Anki. Free 60Q / 75 min diagnostic live now — typical 5355 is 120Q / 2h. ≠ Praxis Core.",
+    "Planned 60-card Praxis Special Education Anki. 60Q / 75 min diagnostic live now (free 25-question version) — typical 5355 is 120Q / 2h. ≠ Praxis Core.",
   "precision-nutrition-l1-anki-deck":
-    "Planned 60-card PN L1 Anki (coaching, nutrition science, habits, scope). Free 60Q / 75 min diagnostic live now — coaching cert, not RDN, not CPT.",
+    "Planned 60-card PN L1 Anki (coaching, nutrition science, habits, scope). 60Q / 75 min diagnostic live now (free 25-question version) — coaching cert, not RDN, not CPT.",
   "unarmed-security-officer-anki-deck":
-    "Planned 60-card unarmed security Anki. Free 60Q / 75 min diagnostic live now — state-specific; ≠ armed card.",
+    "Planned 60-card unarmed security Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific; ≠ armed card.",
   "wastewater-operator-1-anki-deck":
-    "Planned 60-card wastewater operator Anki. Free 60Q / 75 min diagnostic live now — state-specific; ≠ drinking-water treatment.",
+    "Planned 60-card wastewater operator Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific; ≠ drinking-water treatment.",
   "electrical-journeyman-anki-deck":
-    "Planned 60-card journeyman electrician Anki. Free 60Q / 75 min diagnostic live now — state-specific NEC; ≠ master electrician.",
+    "Planned 60-card journeyman electrician Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific NEC; ≠ master electrician.",
   "nate-core-anki-deck":
-    "Planned 60-card NATE Core Anki. Free 60Q / 75 min diagnostic live now — HVAC/R knowledge; ≠ specialty NATE and ≠ EPA 608.",
+    "Planned 60-card NATE Core Anki. 60Q / 75 min diagnostic live now (free 25-question version) — HVAC/R knowledge; ≠ specialty NATE and ≠ EPA 608.",
   "plumbing-journeyman-anki-deck":
-    "Planned 60-card journeyman plumber Anki. Free 60Q / 75 min diagnostic live now — state-specific IPC/UPC; ≠ master plumber.",
+    "Planned 60-card journeyman plumber Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific IPC/UPC; ≠ master plumber.",
   "cosmetology-state-anki-deck":
-    "Planned 60-card NIC-style cosmetology theory Anki. Free 60Q / 75 min diagnostic live now — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
+    "Planned 60-card NIC-style cosmetology theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "cdl-general-knowledge-anki-deck":
-    "Planned 60-card CDL General Knowledge Anki. Free 60Q / 75 min diagnostic live now — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
+    "Planned 60-card CDL General Knowledge Anki. 60Q / 75 min diagnostic live now (free 25-question version) — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
   "armed-security-officer-anki-deck":
-    "Planned 120-card armed security Anki. Free 60Q / 75 min written diagnostic live now — state-specific; ≠ unarmed card; range qualification separate.",
+    "Planned 120-card armed security Anki. 60Q / 75 min written diagnostic live now (free 25-question version) — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
-    "Planned 60-card veterinary assistant / AVA Anki. Free 60Q / 75 min diagnostic live now — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
+    "Planned 60-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
     "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + free 60Q / 75 min diagnostic from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
@@ -198,7 +198,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "medicare-counseling-anki-deck":
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The 60-question diagnostic (free 25-question version) is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":
-    "Live Anki deck for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. Free 60Q diagnostic live now; official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
+    "Live Anki deck for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. 60Q diagnostic live now (free 25-question version); official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish vocabulary cards with audio for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) plus residence and citizenship language themes. Ownable $26 .apkg — prefer over the free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage; not a timed listening/writing substitute for official sample papers on danskogproever.dk.",
   "nha-cbcs-anki-deck":
@@ -426,7 +426,7 @@ export const positioningOverrides: Partial<
   "parapro-anki-deck": {
     ourEdge: [
       "Planned 120-card ParaPro Anki for reading, writing, math, classroom application",
-      "Free 60Q / 75 min diagnostic live now — official ETS form is 90Q / 150 min",
+      "60Q / 75 min diagnostic live now (free 25-question version) — official ETS form is 90Q / 150 min",
       "Honest cut-score note: many districts use 460 — verify locally",
       "Independent prep — not ETS exam material",
     ],
@@ -456,7 +456,7 @@ export const positioningOverrides: Partial<
   "czech-citizenship-anki-deck": {
     ourEdge: [
       "Live reálie Anki deck for Czech citizenship civics themes",
-      "Free 60Q / 45 min timed diagnostic live now",
+      "60Q / 45 min timed diagnostic live now (free 25-question version)",
       "Honest: official exam is 30Q / 30 min / 60% from the NPI ~300-item pool",
       "B1 language is separate; permanent residence usually needs A2 language, not reálie",
     ],
@@ -466,7 +466,7 @@ export const positioningOverrides: Partial<
   "aha-bls-provider-anki-deck": {
     ourEdge: [
       "Planned 60-card BLS Anki for 2025 adult, infant, FBAO, and team themes",
-      "Free 60Q / 45 min / 84% cognitive diagnostic live now",
+      "60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version)",
       "Honest: official HeartCode BLS cognitive is ~25Q / 84% plus in-person skills",
       "≠ Heartsaver / ACLS — independent prep, not an AHA course card",
     ],
@@ -476,7 +476,7 @@ export const positioningOverrides: Partial<
   "ardms-spi-anki-deck": {
     ourEdge: [
       "$11 / 120 unique SPI Anki cards for physics, transducers, Doppler, artifacts/safety",
-      "Free 60Q / 75 min timed diagnostic from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
+      "60Q / 75 min timed diagnostic (free 25-question version) from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
       "Honest: official SPI is ~110Q / 2h / scaled 555 — our mock is shorter",
       "Text/physics only — ≠ ABD/OB image interpretation",
     ],
@@ -486,7 +486,7 @@ export const positioningOverrides: Partial<
   "abo-optician-anki-deck": {
     ourEdge: [
       "$11 / 120 unique ABO NOCE Anki cards for optics, lenses, fitting, instruments/regs",
-      "Free 60Q / 75 min timed diagnostic from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
+      "60Q / 75 min timed diagnostic (free 25-question version) from the same 120 bank (Mock Pass retakes are not a 60-stem shuffle)",
       "Honest: official NOCE is typically 125Q / 2h, criterion-referenced pass — our mock is shorter",
       "Spectacle NOCE only — ≠ NCLE contacts, ≠ optometry",
     ],
@@ -496,7 +496,7 @@ export const positioningOverrides: Partial<
   "ascp-mls-anki-deck": {
     ourEdge: [
       "Planned 60-card MLS Anki for blood bank, chemistry, hematology, microbiology/immunology",
-      "Free 60Q / 90 min timed diagnostic live now — free 25-question diagnostic, no signup",
+      "60Q / 90 min timed diagnostic live now — free 25-question diagnostic, no signup",
       "Honest: official BOC MLS is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
       "≠ ASCP MLT technician credential",
     ],
@@ -506,7 +506,7 @@ export const positioningOverrides: Partial<
   "ascp-mlt-anki-deck": {
     ourEdge: [
       "Planned 60-card MLT Anki for blood bank, chemistry, hematology, microbiology",
-      "Free 60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
+      "60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
       "Honest: official BOC MLT is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
       "≠ ASCP MLS; California-only MLT sitting is 80Q / 2h",
     ],
@@ -516,7 +516,7 @@ export const positioningOverrides: Partial<
   "aswb-bachelors-anki-deck": {
     ourEdge: [
       "Planned 60-card ASWB Bachelors Anki for HBSE, assessment, intervention, ethics",
-      "Free 60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
+      "60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
       "Honest: official from 3 Aug 2026 is 122Q / 4h — our mock is shorter",
       "≠ Clinical/LCSW and ≠ Masters",
     ],
@@ -526,7 +526,7 @@ export const positioningOverrides: Partial<
   "aswb-clinical-anki-deck": {
     ourEdge: [
       "Planned 60-card ASWB Clinical Anki for assessment, diagnosis concepts, psychotherapy, ethics",
-      "Free 60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
+      "60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
       "Honest: official from 3 Aug 2026 is 122Q / 4h — our mock is shorter",
       "≠ Bachelors/LSW",
     ],
@@ -536,7 +536,7 @@ export const positioningOverrides: Partial<
   "barber-state-anki-deck": {
     ourEdge: [
       "Planned 60-card NIC-style barber theory Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official NIC Barber theory is 60 items (50 scored) / 90 min",
       "Theory only — practical/skills exam is separate; ≠ Cosmetology Theory",
     ],
@@ -546,7 +546,7 @@ export const positioningOverrides: Partial<
   "medication-aide-anki-deck": {
     ourEdge: [
       "Planned 60-card medication-aide Anki for rights, routes, safety, documentation",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: typical MACE is 60Q / 2h — our clock is shorter",
       "≠ NNAAP CNA and ≠ LPN/RN",
     ],
@@ -556,7 +556,7 @@ export const positioningOverrides: Partial<
   "nail-technician-state-anki-deck": {
     ourEdge: [
       "Planned 60-card NIC-style nail theory Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official NIC Nail Theory is 110 (100 scored) / 90 min; our mock is shorter",
       "Theory only — practical separate; ≠ Cosmetology / Barber Theory",
     ],
@@ -566,7 +566,7 @@ export const positioningOverrides: Partial<
   "nsca-cpt-anki-deck": {
     ourEdge: [
       "Planned 60-card NSCA-CPT Anki for assessment, program design, technique, safety",
-      "Free 60Q / 75 min timed text diagnostic live now",
+      "60Q / 75 min timed text diagnostic live now (free 25-question version)",
       "Honest: official NSCA-CPT is 155Q / 3h / scaled 70 with video items",
       "≠ CSCS and ≠ NASM/ACE/ACSM CPT",
     ],
@@ -576,7 +576,7 @@ export const positioningOverrides: Partial<
   "phr-hrci-anki-deck": {
     ourEdge: [
       "Planned 60-card HRCI PHR Anki for talent, ER, rewards, compliance",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official PHR is 90 scored + 25 pretest / 2h / scaled 500",
       "≠ SPHR and ≠ SHRM-CP",
     ],
@@ -586,7 +586,7 @@ export const positioningOverrides: Partial<
   "physical-therapy-aide-anki-deck": {
     ourEdge: [
       "Planned 60-card PT aide Anki for modalities assist, transfers, anatomy, ethics",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: no national PT aide exam — employer/state competency",
       "≠ NPTE and ≠ PTA",
     ],
@@ -596,7 +596,7 @@ export const positioningOverrides: Partial<
   "praxis-core-anki-deck": {
     ourEdge: [
       "Planned 60-card Praxis Core Anki for reading, writing SR, math, strategy",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official Core is three ETS tests — our mock is combined SR only",
       "≠ Praxis Special Education 5355",
     ],
@@ -606,7 +606,7 @@ export const positioningOverrides: Partial<
   "praxis-special-education-anki-deck": {
     ourEdge: [
       "Planned 60-card Praxis Special Education Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: typical 5355 is 120Q / 2h — our mock is shorter",
       "≠ Praxis Core",
     ],
@@ -616,7 +616,7 @@ export const positioningOverrides: Partial<
   "precision-nutrition-l1-anki-deck": {
     ourEdge: [
       "Planned 60-card PN L1 Anki for coaching, science, habits, scope",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: coaching cert — no ETS-style national Q-count on this page",
       "≠ RDN and ≠ CPT",
     ],
@@ -626,7 +626,7 @@ export const positioningOverrides: Partial<
   "unarmed-security-officer-anki-deck": {
     ourEdge: [
       "Planned 60-card unarmed security Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: state-specific — no national Q-count",
       "≠ armed card / range",
     ],
@@ -636,7 +636,7 @@ export const positioningOverrides: Partial<
   "wastewater-operator-1-anki-deck": {
     ourEdge: [
       "Planned 60-card wastewater operator Anki for process, safety, labs, regs",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: state-specific ABC-style exams — no national Q-count",
       "≠ drinking-water treatment operator",
     ],
@@ -646,7 +646,7 @@ export const positioningOverrides: Partial<
   "electrical-journeyman-anki-deck": {
     ourEdge: [
       "Planned 60-card journeyman electrician Anki for NEC, wiring, services, motors",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: state/local NEC exam — no national Q-count",
       "≠ master electrician / contractor",
     ],
@@ -656,7 +656,7 @@ export const positioningOverrides: Partial<
   "nate-core-anki-deck": {
     ourEdge: [
       "Planned 60-card NATE Core Anki for safety, tools, electrical, ethics",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: this is Core knowledge — not a NATE specialty sitting",
       "≠ EPA 608 refrigerant handling",
     ],
@@ -666,7 +666,7 @@ export const positioningOverrides: Partial<
   "plumbing-journeyman-anki-deck": {
     ourEdge: [
       "Planned 60-card journeyman plumber Anki for DWV, water, fixtures, code",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: state/local IPC or UPC exam — no national Q-count",
       "≠ master plumber",
     ],
@@ -676,7 +676,7 @@ export const positioningOverrides: Partial<
   "nha-cbcs-anki-deck": {
     ourEdge: [
       "Planned 60-card CBCS Anki for coding, claims, HIPAA, revenue cycle",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official CBCS is 100 scored + 25 pretest / 3h / scaled 390",
       "≠ AAPC CPC / NHA CCMA — independent prep, not NHA material",
     ],
@@ -686,7 +686,7 @@ export const positioningOverrides: Partial<
   "cosmetology-state-anki-deck": {
     ourEdge: [
       "Planned 60-card NIC-style cosmetology theory Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: NIC Theory typically 110 items (100 scored) / 90 min; state CIBs vary",
       "Theory only — practical/skills exam is separate",
     ],
@@ -696,7 +696,7 @@ export const positioningOverrides: Partial<
   "cdl-general-knowledge-anki-deck": {
     ourEdge: [
       "Planned 60-card CDL General Knowledge Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: typical state GK is ~50Q / 80% — our mock is a longer diagnostic",
       "Knowledge only — ≠ skills/road test; endorsements separate",
     ],
@@ -706,7 +706,7 @@ export const positioningOverrides: Partial<
   "armed-security-officer-anki-deck": {
     ourEdge: [
       "Planned 120-card armed security written Anki",
-      "Free 60Q / 75 min timed written diagnostic live now",
+      "60Q / 75 min timed written diagnostic live now (free 25-question version)",
       "Honest: licensing is state-specific — no single national form",
       "≠ Unarmed guard card; range/live-fire qualification separate",
     ],
@@ -716,7 +716,7 @@ export const positioningOverrides: Partial<
   "veterinary-assistant-anki-deck": {
     ourEdge: [
       "Planned 60-card veterinary assistant / AVA Anki",
-      "Free 60Q / 75 min timed diagnostic live now",
+      "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official NAVTA AVA typically 100Q / 150 min / 75%",
       "≠ VTNE (veterinary technician)",
     ],
@@ -761,7 +761,7 @@ export const positioningOverrides: Partial<
       "Ownable $19 .apkg + optional PDF guide — not a Brainscape subscription",
     ],
     summaryProse:
-      "Free 25Q teaser banks and Brainscape packs own volume. UniPrep wins when you want a free full-length 90Q timed mock plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",
+      "Free 25Q teaser banks and Brainscape packs own volume. UniPrep wins when you want a full-length 90Q timed mock (free 25-question version) plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",
   },
   "gre-anki-deck": {
     ourEdge: [

@@ -48,8 +48,8 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `property-casualty-insurance-readiness-check` | live | 60 / 60 | 2026-10-15 | FAIL (69 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
 | rewrite | `real-estate-appraiser-readiness-check` | live | 60 / 60 | 2026-10-05 | FAIL (51 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `series-6-readiness-check` | live | 120 / 120 | — | FAIL (18 items): thin/template explanations; bank 120 for 120Q session; no content review in ledger |
-| rewrite | `series-65-readiness-check` | live | 120 / 120 | — | FAIL (28 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
-| rewrite | `series-66-readiness-check` | live | 120 / 120 | — | FAIL (25 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
+| rewrite | `series-65-readiness-check` | live | 120 / 120 | 2026-10-15 | FAIL (28 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session |
+| rewrite | `series-66-readiness-check` | live | 120 / 120 | 2026-10-15 | FAIL (25 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session |
 | rewrite | `series-79-readiness-check` | live | 120 / 120 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `series-99-readiness-check` | live | 120 / 120 | — | FAIL (17 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `us-citizenship-readiness-check` | live | 30 / 128 | — | FAIL (120 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
@@ -167,11 +167,11 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `acsm-cpt-readiness-check` | live | 60 / 120 | 2026-10-12 | — |
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
-| ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-06 | — |
+| ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
 | ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
-| ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-14 | — |
+| ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-15 | — |
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
@@ -209,7 +209,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `denmark-indfoedsretsproeven-readiness-check` | live | 60 / 60 | — | FAIL (15 items + bank-level): template/thin distractor notes, thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `leben-in-deutschland-readiness-check` | live | 60 / 296 | — | FAIL (279 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | civic | `life-in-the-uk-readiness-check` | live | 60 / 201 | — | FAIL (174 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
-| civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-02 | — |
+| civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-15 | — |
 | civic | `naturalisation-francaise-readiness-check` | live | 60 / 200 | — | FAIL (145 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | civic | `naturalisation-suisse-readiness-check` | live | 60 / 60 | — | FAIL (41 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `naturalizzazione-svizzera-readiness-check` | live | 60 / 60 | — | FAIL (33 items + bank-level): distractor, correct; bank 60 for 60Q session; no content review in ledger |
@@ -288,7 +288,6 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `ciple-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/ciple-a2-grammar-anki-deck | — |
 | unreviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | — |
 | unreviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | — |
-| unreviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | — |
 | unreviewed | `dele-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/dele-a2-grammar-anki-deck | — |
 | unreviewed | `dele-a2-spanish-anki-deck` | https://www.prep2go.study/shop/dele-a2-anki-deck | — |
 | unreviewed | `delf-a2-printable-french-flashcards` | https://www.prep2go.study/shop/deck/delf-a2-printable-flashcards | — |
@@ -303,6 +302,7 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `ielts-toefl-english-for-portuguese-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-portuguese-speakers-anki-deck | — |
 | unreviewed | `norwegian-a2-norskprove-anki-deck` | https://www.prep2go.study/shop/deck/norwegian-norskprove-anki-deck | — |
 | unreviewed | `swedish-a2-sfi-anki-deck` | https://www.prep2go.study/shop/deck/swedish-sfi-anki-deck | — |
+| reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |
 | reviewed | `ielts-toefl-english-for-french-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-french-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-russian-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-spanish-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-spanish-speakers-anki-deck | 2026-10-13 |
