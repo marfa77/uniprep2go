@@ -433,9 +433,9 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     description:
       "60-question ASCP MLS readiness check (free 25-question version) (90 min) with topic scoring — shorter than the official 100-question CAT.",
     examBody: "ASCP Board of Certification",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique items, 60 drawn per attempt across the four benches (expanded 2026-10-15).",
     searchAliases: ["MLS", "ASCP MLS", "medical laboratory scientist", "CLS"],
-    lastUpdated: "2026-10-06",
+    lastUpdated: "2026-10-15",
   }),
   nicheReadinessConfig({
     slug: "rd-exam-readiness-check",

@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-016",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "An RhD-negative mother delivers a D-positive infant. The rosette test is positive and a Kleihauer-Betke stain shows 1.2% fetal cells. Assuming a 5,000 mL maternal blood volume, how many 300 µg vials of RhIG are indicated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 vial"
+      },
+      {
+        "id": "b",
+        "text": "2 vials"
+      },
+      {
+        "id": "c",
+        "text": "3 vials"
+      },
+      {
+        "id": "d",
+        "text": "4 vials"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fetal bleed (mL whole blood) = 1.2 × 50 = 60 mL; one 300 µg vial covers 30 mL of fetal whole blood, so 60 ÷ 30 = 2.0. Under 0.5 rounds down, then one vial is added: 3 vials.",
+    "distractorExplanations": {
+      "a": "One vial is the routine postpartum dose when the screen is negative; a positive rosette with 60 mL of fetal blood needs more.",
+      "b": "2.0 vials is the raw result (60 mL ÷ 30 mL per vial); the standard protocol always adds one extra vial.",
+      "d": "Rounding 2.0 up to 3 before adding the extra vial double-counts; the decimal is under 0.5, so 2 + 1 = 3."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-017",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Two hours into a plasma transfusion, a patient develops acute hypoxemia, fever and hypotension. Chest film shows new bilateral infiltrates, BNP is normal and there are no signs of fluid overload. Which reaction is most likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acute hemolytic transfusion reaction from ABO mismatch"
+      },
+      {
+        "id": "b",
+        "text": "Febrile nonhemolytic reaction from donor cytokines"
+      },
+      {
+        "id": "c",
+        "text": "Transfusion-associated circulatory overload"
+      },
+      {
+        "id": "d",
+        "text": "Transfusion-related acute lung injury"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "TRALI is noncardiogenic pulmonary edema within 6 hours of transfusion, typically from donor anti-HLA or anti-HNA antibodies (often in plasma from multiparous donors). Normal BNP and hypotension separate it from TACO.",
+    "distractorExplanations": {
+      "a": "ABO hemolysis presents with hemoglobinuria, back pain and a positive DAT, not isolated bilateral infiltrates.",
+      "b": "Febrile nonhemolytic reactions cause fever and chills without hypoxemia or new pulmonary infiltrates.",
+      "c": "TACO brings hypertension, raised BNP and response to diuretics; this patient is hypotensive with a normal BNP."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-018",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A technologist finds a pool of platelets stored overnight in the 1–6 °C blood bank refrigerator. What is the problem with this unit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Platelets must be frozen at −18 °C or colder until they are issued"
+      },
+      {
+        "id": "b",
+        "text": "Platelets can be refrigerated but expire 24 hours after pooling"
+      },
+      {
+        "id": "c",
+        "text": "Refrigeration is acceptable if the unit is warmed to 37 °C before issue"
+      },
+      {
+        "id": "d",
+        "text": "Platelets must be kept at 20–24 °C with continuous agitation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Standard platelets are stored at 20–24 °C with gentle continuous agitation for up to 5 days (longer only with approved bacterial testing or pathogen reduction). Refrigeration shortens survival after transfusion, so the unit must be quarantined per policy.",
+    "distractorExplanations": {
+      "a": "Freezing at −18 °C is the storage condition for plasma, not platelets.",
+      "b": "The 4-hour/24-hour pooling expiry applies to room-temperature units; it does not make refrigeration acceptable.",
+      "c": "Cold storage activates and clears platelets; warming before issue does not reverse it in a standard room-temperature unit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-019",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A postpartum patient is bleeding with a fibrinogen of 80 mg/dL; PT and platelet count are only mildly abnormal. Which component most efficiently replaces fibrinogen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Platelet concentrate from an apheresis donor"
+      },
+      {
+        "id": "b",
+        "text": "Red blood cells washed in normal saline"
+      },
+      {
+        "id": "c",
+        "text": "Albumin 5% solution for volume replacement"
+      },
+      {
+        "id": "d",
+        "text": "Cryoprecipitated antihemophilic factor"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Cryoprecipitate concentrates fibrinogen, factor VIII, von Willebrand factor, factor XIII and fibronectin in a small volume, so it is the targeted product when fibrinogen is low (commonly below 100–150 mg/dL) in a bleeding patient.",
+    "distractorExplanations": {
+      "a": "Platelets add little fibrinogen and the platelet count is only mildly low.",
+      "b": "Washed red cells restore oxygen-carrying capacity; they contain essentially no fibrinogen.",
+      "c": "Albumin expands volume but contains no coagulation factors."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-020",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Red cells are requested for a directed donation from the patient's brother. Which processing step does the blood bank add to prevent transfusion-associated graft-versus-host disease?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prestorage leukoreduction alone"
+      },
+      {
+        "id": "b",
+        "text": "Irradiation of the cellular component"
+      },
+      {
+        "id": "c",
+        "text": "Freezing the red cells in glycerol"
+      },
+      {
+        "id": "d",
+        "text": "Washing the red cells to remove plasma"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Blood relatives share HLA haplotypes, so donor T cells may engraft unopposed. Gamma or X-ray irradiation stops lymphocyte proliferation; it is required for directed donations from relatives, HLA-matched platelets, intrauterine transfusion and many immunosuppressed recipients.",
+    "distractorExplanations": {
+      "a": "Leukoreduction lowers febrile reactions and CMV risk but leaves enough viable T cells to cause TA-GVHD.",
+      "c": "Freezing is for rare-unit storage; viable lymphocytes can persist, so it is not the TA-GVHD control.",
+      "d": "Washing removes plasma proteins for IgA-deficient or allergic patients; it does not inactivate donor lymphocytes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-021",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "ABO typing shows agglutination with A1 cells, B cells and group O screening cells at room temperature, and the autocontrol is also positive. Reactions disappear at 37 °C. What is the most likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An ABO subgroup with weak A antigen expression"
+      },
+      {
+        "id": "b",
+        "text": "A cold-reacting autoantibody such as anti-I"
+      },
+      {
+        "id": "c",
+        "text": "Hypogammaglobulinemia causing missing isoagglutinins"
+      },
+      {
+        "id": "d",
+        "text": "A warm IgG alloantibody against a Rh antigen"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reactivity with O cells plus a positive autocontrol at room temperature that is gone at 37 °C points to a cold autoantibody. Resolve with prewarmed testing and warm-saline washing of the patient cells before repeating ABO typing.",
+    "distractorExplanations": {
+      "a": "A weak subgroup affects forward typing; it would not make group O cells and the autocontrol react.",
+      "c": "Low antibody levels give weak or missing reverse reactions, not extra reactivity with O cells.",
+      "d": "Warm IgG alloantibodies react at 37 °C/AHG and do not give a positive autocontrol at room temperature."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-022",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A pregnant patient's antibody identification shows anti-Le^a reacting at immediate spin. What is the expected risk of hemolytic disease of the fetus and newborn from this antibody?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moderate, so the fetus needs serial MCA Doppler monitoring"
+      },
+      {
+        "id": "b",
+        "text": "Unknown until the father's Lewis phenotype is determined"
+      },
+      {
+        "id": "c",
+        "text": "High, because anti-Le^a is a common cause of severe HDFN"
+      },
+      {
+        "id": "d",
+        "text": "Negligible, because Lewis antibodies are IgM"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Lewis antibodies are usually IgM and do not cross the placenta, and fetal red cells express Lewis antigens weakly because they are adsorbed from plasma later in life. Lewis antibodies are also common transiently in pregnancy.",
+    "distractorExplanations": {
+      "a": "MCA Doppler surveillance is for clinically significant IgG antibodies, not IgM anti-Le^a.",
+      "b": "Paternal phenotyping helps with IgG antibodies like anti-K; it does not change the low risk of anti-Le^a.",
+      "c": "Lewis antibodies are not a recognized cause of significant HDFN; that reputation belongs to anti-D, anti-c and anti-K."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-023",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A patient's record shows anti-Jk^a identified two years ago. Today's antibody screen is negative. How should red cells be selected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give antigen-unselected units because the screen is now negative"
+      },
+      {
+        "id": "b",
+        "text": "Give Jk(a−) units and honor the historical antibody"
+      },
+      {
+        "id": "c",
+        "text": "Give Jk(a−) units only if the patient was transfused this year"
+      },
+      {
+        "id": "d",
+        "text": "Repeat the panel with enzyme cells before choosing any unit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Kidd antibodies are notorious for evanescence and dosage, and they cause severe delayed hemolytic reactions through an anamnestic response. Once identified, antigen-negative AHG-crossmatch-compatible units are given for life.",
+    "distractorExplanations": {
+      "a": "Kidd antibodies fall below detection but return fast on re-exposure; a negative screen does not clear the history.",
+      "c": "The requirement is lifelong; it does not depend on when the last transfusion happened.",
+      "d": "Enzymes can enhance Kidd reactivity, but antigen-negative units are required whether or not the antibody is detected today."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-024",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A group O mother delivers a group A newborn with mild jaundice on day one. The infant's DAT is weakly positive and the smear shows spherocytes. What is the most likely diagnosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ABO hemolytic disease of the fetus and newborn"
+      },
+      {
+        "id": "b",
+        "text": "Rh hemolytic disease from maternal anti-D"
+      },
+      {
+        "id": "c",
+        "text": "Physiologic jaundice of the newborn"
+      },
+      {
+        "id": "d",
+        "text": "Hereditary spherocytosis unrelated to the mother"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Group O mothers have IgG anti-A,B that can cross the placenta, even in a first pregnancy. Disease is usually mild, the DAT may be only weakly positive because fetal A antigens are poorly developed, and spherocytes are common.",
+    "distractorExplanations": {
+      "b": "Rh HDFN needs maternal anti-D and a D-positive infant; nothing here shows Rh sensitization.",
+      "c": "Physiologic jaundice appears after 24 hours and does not cause a positive DAT or spherocytes.",
+      "d": "Hereditary spherocytosis gives a negative DAT; the positive DAT with an O-to-A pairing points to maternal antibody."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-025",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "During a massive transfusion, the patient reports perioral tingling and develops muscle twitching. Ionized calcium is low. What is the most likely cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dilutional thrombocytopenia from crystalloid and red cells"
+      },
+      {
+        "id": "b",
+        "text": "Hyperkalemia from potassium leaking out of stored red cells"
+      },
+      {
+        "id": "c",
+        "text": "Delayed hemolytic reaction from an anamnestic alloantibody"
+      },
+      {
+        "id": "d",
+        "text": "Citrate in the transfused components binding calcium"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Citrate anticoagulant chelates ionized calcium, and in rapid large-volume transfusion (or with poor liver metabolism of citrate) ionized calcium falls, causing paresthesias, tetany and arrhythmias. Management is slowing the rate and giving calcium.",
+    "distractorExplanations": {
+      "a": "Dilutional thrombocytopenia causes oozing; it does not lower ionized calcium.",
+      "b": "Stored-cell potassium causes arrhythmia risk, not perioral tingling with low ionized calcium.",
+      "c": "Delayed hemolysis takes days and causes falling hemoglobin and jaundice, not acute tetany."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-026",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A patient with warm autoimmune hemolytic anemia, last transfused six weeks ago, has a panreactive antibody in plasma and eluate. What is the main purpose of an adsorption study before transfusion?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To make every crossmatch compatible so any unit can be issued"
+      },
+      {
+        "id": "b",
+        "text": "To confirm that the autoantibody is IgM rather than IgG"
+      },
+      {
+        "id": "c",
+        "text": "To measure the autoantibody titer for treatment decisions"
+      },
+      {
+        "id": "d",
+        "text": "To uncover alloantibodies hidden by the autoantibody"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The autoantibody reacts with all cells and can mask clinically significant alloantibodies. Because the patient was transfused within three months, allogeneic (not autologous) adsorption is used, and the adsorbed plasma is tested for alloantibodies.",
+    "distractorExplanations": {
+      "a": "Adsorption leaves the autoantibody in the patient; it is a workup step, not a way to make units compatible.",
+      "b": "Isotype is shown by the DAT reagents; adsorption is done to remove the autoantibody, not to type it.",
+      "c": "Titration measures antibody strength; adsorption removes autoantibody so underlying alloantibodies can be seen."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-027",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Twenty minutes into a platelet transfusion, a patient develops high fever, rigors and hypotension. What should the laboratory do after the transfusion is stopped?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gram stain and culture the bag, and blood-culture the patient"
+      },
+      {
+        "id": "b",
+        "text": "Order a chest film to look for circulatory overload"
+      },
+      {
+        "id": "c",
+        "text": "Repeat ABO typing on the unit and patient only, as for an ABO mismatch"
+      },
+      {
+        "id": "d",
+        "text": "Resume at a slower rate after an antipyretic"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Platelets are stored at room temperature, so they carry the highest risk of bacterial contamination. Septic reactions need the unit and patient cultured, co-components quarantined and the supplier notified.",
+    "distractorExplanations": {
+      "b": "Overload causes dyspnea and hypertension, not fever, rigors and hypotension.",
+      "c": "Rigors and shock with platelets suggest sepsis from the unit; ABO checks are done but do not address the likely cause.",
+      "d": "Restarting a possibly contaminated unit is dangerous; suspected sepsis means the unit is not restarted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-028",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "An antibody panel shows 2+ reactivity at AHG with untreated cells, but no reactivity with ficin-treated panel cells. Which antibody specificity fits this pattern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Anti-Fy^a"
+      },
+      {
+        "id": "b",
+        "text": "Anti-Le^b"
+      },
+      {
+        "id": "c",
+        "text": "Anti-E"
+      },
+      {
+        "id": "d",
+        "text": "Anti-Jk^a"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ficin and papain destroy Duffy (Fy^a, Fy^b), M and N (and variably S) antigens, while enhancing Rh, Kidd, Lewis, P1 and I. Loss of reactivity with treated cells therefore narrows the specificity to an enzyme-sensitive antigen.",
+    "distractorExplanations": {
+      "b": "Lewis antigens are enhanced by enzymes; loss of reactivity points away from Lewis.",
+      "c": "Rh antigens are enhanced, not destroyed, by ficin, so anti-E would react more strongly with treated cells.",
+      "d": "Kidd antigens are enhanced by enzymes, so anti-Jk^a reactivity would increase after ficin treatment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-029",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "Which condition must be met before a blood bank may use an electronic (computer) crossmatch instead of a serologic crossmatch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No current or past clinically significant antibodies"
+      },
+      {
+        "id": "b",
+        "text": "A crossmatch performed by AHG in the previous 72 hours"
+      },
+      {
+        "id": "c",
+        "text": "A negative antibody screen at immediate spin only"
+      },
+      {
+        "id": "d",
+        "text": "At least one prior transfusion without a reaction"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Electronic crossmatch is allowed when the patient has no clinically significant antibodies (now or historically), two concordant ABO determinations (one on the current specimen) are on file, and the computer system is validated to prevent ABO-incompatible issue.",
+    "distractorExplanations": {
+      "b": "An AHG crossmatch is a serologic method; electronic crossmatch replaces serology when its criteria are met.",
+      "c": "Electronic crossmatch needs a full negative screen and no antibody history; an immediate-spin screen alone is not enough.",
+      "d": "Transfusion history is not a criterion; the requirements cover antibody status, ABO checks and a validated system."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-blood-bank-030",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "blood-bank",
+    "prompt": "A donor's red cells are nonreactive with anti-D at immediate spin, but the weak D test at AHG is positive. How is the donor unit labeled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "RhD negative, because the immediate-spin test was negative"
+      },
+      {
+        "id": "b",
+        "text": "RhD unknown until molecular RHD genotyping is done"
+      },
+      {
+        "id": "c",
+        "text": "RhD negative, with a note that weak D was detected"
+      },
+      {
+        "id": "d",
+        "text": "RhD positive"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Donor centers test D-negative units for weak D because those cells can sensitize D-negative recipients. A positive weak D result means the unit is labeled and distributed as RhD positive.",
+    "distractorExplanations": {
+      "a": "Donor units must be tested for weak D; a positive weak D test means the unit carries D antigen.",
+      "b": "Genotyping can clarify patients, but standard donor labeling follows the serologic weak D result.",
+      "c": "A weak D donor unit can immunize a D-negative recipient, so it cannot carry a D-negative label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-016",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient's results are Na 138, K 4.0, Cl 98 and HCO3− 12 mmol/L. Using the formula without potassium, what is the anion gap?",
+    "options": [
+      {
+        "id": "a",
+        "text": "28 mmol/L"
+      },
+      {
+        "id": "b",
+        "text": "32 mmol/L"
+      },
+      {
+        "id": "c",
+        "text": "40 mmol/L"
+      },
+      {
+        "id": "d",
+        "text": "52 mmol/L"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Anion gap = Na − (Cl + HCO3−) = 138 − (98 + 12) = 28 mmol/L, well above the usual reference interval. A raised gap points to unmeasured anions such as lactate, ketones or toxic alcohol metabolites.",
+    "distractorExplanations": {
+      "b": "32 adds potassium (138 + 4 − 98 − 12); the formula stated here leaves potassium out.",
+      "c": "40 is sodium minus chloride only; bicarbonate must also be subtracted.",
+      "d": "52 adds bicarbonate instead of subtracting it (138 − 98 + 12)."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-017",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A fasting lipid panel shows total cholesterol 220 mg/dL, HDL 50 mg/dL and triglycerides 150 mg/dL. What is the Friedewald-calculated LDL cholesterol?",
+    "options": [
+      {
+        "id": "a",
+        "text": "20 mg/dL"
+      },
+      {
+        "id": "b",
+        "text": "102 mg/dL"
+      },
+      {
+        "id": "c",
+        "text": "140 mg/dL"
+      },
+      {
+        "id": "d",
+        "text": "170 mg/dL"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Friedewald: LDL = TC − HDL − TG/5 = 220 − 50 − 30 = 140 mg/dL. The estimate is invalid when triglycerides exceed about 400 mg/dL; then LDL should be measured directly or calculated with a newer equation.",
+    "distractorExplanations": {
+      "a": "20 subtracts the full triglyceride value; Friedewald uses triglycerides ÷ 5 to estimate VLDL cholesterol.",
+      "b": "Dividing by 2.2 is the mmol/L version of the formula; in mg/dL the divisor is 5.",
+      "d": "170 is total minus HDL (non-HDL cholesterol); the VLDL term was left out."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-018",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient with a molar pregnancy has a serum hCG far lower than expected on a one-step sandwich immunoassay. What should the laboratory do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the result, since the assay is within its linear range"
+      },
+      {
+        "id": "b",
+        "text": "Switch to a urine qualitative hCG test to confirm"
+      },
+      {
+        "id": "c",
+        "text": "Dilute the specimen and repeat the assay"
+      },
+      {
+        "id": "d",
+        "text": "Recalibrate the analyzer before running the specimen again"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In the high-dose hook effect, very high antigen saturates both the capture and the detection antibodies, so fewer sandwiches form and the signal falls. Serial dilution restores the true high result.",
+    "distractorExplanations": {
+      "a": "The concern is that the signal is falsely low from excess antigen, which a linearity claim does not rule out.",
+      "b": "Urine qualitative tests share the same sandwich design and can also give a falsely low reading.",
+      "d": "Calibration does not fix antigen excess in one specimen; dilution brings the analyte back into range."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-019",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient taking high-dose biotin supplements has a low TSH and a high free T4 on streptavidin-biotin immunoassays, but no symptoms of hyperthyroidism. What is the best explanation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Biotin interference in both assays"
+      },
+      {
+        "id": "b",
+        "text": "Primary hyperthyroidism needing urgent treatment"
+      },
+      {
+        "id": "c",
+        "text": "Secondary hypothyroidism from pituitary failure"
+      },
+      {
+        "id": "d",
+        "text": "Thyroid hormone resistance syndrome"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excess biotin blocks streptavidin binding: sandwich assays such as TSH read falsely low and competitive assays such as free T4 read falsely high, mimicking hyperthyroidism. Repeat after stopping biotin (often 48 hours or more) or use a biotin-free method.",
+    "distractorExplanations": {
+      "b": "A matched low TSH and high free T4 can be produced by biotin alone; clinical findings do not support true hyperthyroidism.",
+      "c": "Pituitary failure gives low TSH with low free T4, not high free T4.",
+      "d": "Hormone resistance gives high free T4 with normal or high TSH, not suppressed TSH."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-020",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient with triglycerides of 3,200 mg/dL has a sodium of 126 mmol/L on the main chemistry analyzer (indirect ISE) and 139 mmol/L on the blood gas analyzer (direct ISE). Which statement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient has true hypotonic hyponatremia"
+      },
+      {
+        "id": "b",
+        "text": "Both results are invalid and sodium cannot be reported"
+      },
+      {
+        "id": "c",
+        "text": "The low result is pseudohyponatremia"
+      },
+      {
+        "id": "d",
+        "text": "The direct ISE result is falsely high from lipemia"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Indirect ISE dilutes the sample before measurement, so excess lipid or protein displaces plasma water and lowers the calculated concentration. Direct ISE, measured undiluted, is unaffected.",
+    "distractorExplanations": {
+      "a": "Measured osmolality would be low in true hypotonic hyponatremia; the direct ISE shows normal sodium.",
+      "b": "Direct ISE gives a valid result in lipemic or hyperproteinemic samples.",
+      "d": "Direct ISE measures sodium activity in plasma water and is not affected by lipid volume displacement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-021",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A malnourished patient has a total calcium of 7.6 mg/dL and albumin of 2.0 g/dL. Using the standard correction, what is the albumin-corrected calcium?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.0 mg/dL"
+      },
+      {
+        "id": "b",
+        "text": "8.4 mg/dL"
+      },
+      {
+        "id": "c",
+        "text": "9.2 mg/dL"
+      },
+      {
+        "id": "d",
+        "text": "11.6 mg/dL"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Corrected Ca = measured Ca + 0.8 × (4.0 − albumin) = 7.6 + 0.8 × 2.0 = 9.2 mg/dL. The correction is an estimate; ionized calcium is the better test when results will change treatment.",
+    "distractorExplanations": {
+      "a": "6.0 subtracts the correction; low albumin means the measured total underestimates calcium, so the correction is added.",
+      "b": "8.4 uses 0.4 per g/dL; the usual factor is 0.8 mg/dL of calcium per 1 g/dL of albumin.",
+      "d": "11.6 uses a factor of 2.0; the usual factor is 0.8."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-022",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "On a spectrophotometer, a 100 mg/dL standard has an absorbance of 0.40 and a patient sample has an absorbance of 0.30. What is the patient concentration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 mg/dL"
+      },
+      {
+        "id": "b",
+        "text": "40 mg/dL"
+      },
+      {
+        "id": "c",
+        "text": "75 mg/dL"
+      },
+      {
+        "id": "d",
+        "text": "133 mg/dL"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Beer's law makes absorbance proportional to concentration, so C(unknown) = A(unknown) ÷ A(standard) × C(standard) = 0.30 ÷ 0.40 × 100 = 75 mg/dL, provided both are in the linear range.",
+    "distractorExplanations": {
+      "a": "30 reports the sample absorbance × 100 instead of comparing it with the standard.",
+      "b": "40 reports the standard's absorbance × 100; the standard sets the scale, it is not the answer.",
+      "d": "133 inverts the ratio (0.40 ÷ 0.30); the unknown's absorbance goes on top."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-023",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Two consecutive results for the same control level exceed the +2 SD limit. Which Westgard rule is violated, and what does it suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1₂s, a warning rule that allows the run to be accepted"
+      },
+      {
+        "id": "b",
+        "text": "R₄s, which suggests random error"
+      },
+      {
+        "id": "c",
+        "text": "1₃s, which suggests random error"
+      },
+      {
+        "id": "d",
+        "text": "2₂s, which suggests systematic error"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "2₂s is violated when two consecutive control results (or two levels in one run) fall beyond the same 2 SD limit. It is a rejection rule pointing to systematic error such as calibration drift or a reagent problem.",
+    "distractorExplanations": {
+      "a": "1₂s is a single result beyond 2 SD; two consecutive results beyond the same limit is a rejection rule.",
+      "b": "R₄s needs one control above +2 SD and another below −2 SD in the same run.",
+      "c": "1₃s needs a single result beyond 3 SD, which usually signals random error."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-024",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "On a Levey-Jennings chart, glucose control values move abruptly and then stay above the mean for seven consecutive runs, starting the day a new reagent lot was loaded. What does this pattern show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A shift from the reagent lot change"
+      },
+      {
+        "id": "b",
+        "text": "Random error from pipetting imprecision"
+      },
+      {
+        "id": "c",
+        "text": "A trend from gradual lamp deterioration"
+      },
+      {
+        "id": "d",
+        "text": "Normal variation that needs no action"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A shift is an abrupt move to a new level that persists, typical of a reagent or calibrator lot change or a recalibration. A trend is a gradual drift in one direction, such as a deteriorating reagent or aging lamp.",
+    "distractorExplanations": {
+      "b": "Random error scatters on both sides of the mean; seven in a row on one side is systematic.",
+      "c": "A trend climbs gradually over runs; this change was abrupt and tied to a single event.",
+      "d": "Seven consecutive values on one side of the mean breaks common multirule limits and needs investigation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-025",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A nonhemolyzed serum sample has potassium 9.8 mmol/L, calcium 2.1 mg/dL and very low ALP, while the patient is clinically stable. What is the most likely explanation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acute kidney injury with severe hyperkalemia"
+      },
+      {
+        "id": "b",
+        "text": "Hypoparathyroidism with secondary hyperkalemia"
+      },
+      {
+        "id": "c",
+        "text": "Delayed separation causing glycolysis"
+      },
+      {
+        "id": "d",
+        "text": "K₂EDTA contamination of the serum sample"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "K₂EDTA carryover (wrong order of draw or decanting) adds potassium and chelates divalent cations, giving very high potassium with very low calcium, magnesium and ALP. The fix is recollection in the correct order of draw.",
+    "distractorExplanations": {
+      "a": "Kidney injury raises potassium but does not drop calcium and ALP this sharply in a stable patient.",
+      "b": "Hypoparathyroidism lowers calcium but does not raise potassium to 9.8 or suppress ALP.",
+      "c": "Delayed separation lowers glucose and can raise potassium modestly; it does not chelate calcium."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-026",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient with epigastric pain radiating to the back has both amylase and lipase ordered. Why is lipase generally preferred for diagnosing acute pancreatitis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It rises earlier and returns to normal within 24 hours"
+      },
+      {
+        "id": "b",
+        "text": "It is not affected by kidney function at all"
+      },
+      {
+        "id": "c",
+        "text": "It is only produced by salivary glands, not pancreas"
+      },
+      {
+        "id": "d",
+        "text": "It is more specific and stays elevated longer"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Lipase is mainly pancreatic, rises within hours and stays elevated for several days, so it is more specific than amylase (which also comes from salivary glands). A level of 3 or more times the upper reference limit supports acute pancreatitis.",
+    "distractorExplanations": {
+      "a": "Lipase stays elevated longer than amylase; a 24-hour normalization is not what makes it useful.",
+      "b": "Lipase can rise in renal impairment, so kidney function still matters when interpreting it.",
+      "c": "That reverses the biology; salivary glands are a major amylase source, which reduces amylase specificity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-027",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A plasma ammonia is ordered for a patient with suspected hepatic encephalopathy. Which handling step is most important for an accurate result?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the tube on ice and analyze it within 30 minutes"
+      },
+      {
+        "id": "b",
+        "text": "Refrigerate the tube overnight and batch it with the morning samples"
+      },
+      {
+        "id": "c",
+        "text": "Let the tube clot at room temperature for 30 minutes"
+      },
+      {
+        "id": "d",
+        "text": "Collect it in a serum separator tube without additive"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ammonia increases in drawn blood from red cell metabolism and deamination. Collect in EDTA or heparin, place on ice, avoid hemolysis and separate and analyze promptly (typically within 30 minutes).",
+    "distractorExplanations": {
+      "b": "Delayed analysis allows in vitro ammonia generation even when chilled.",
+      "c": "Ammonia rises in vitro as cells metabolize amino acids; standing at room temperature falsely raises it.",
+      "d": "Ammonia is measured on plasma (EDTA or heparin) handled on ice."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-028",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient has calcium 11.8 mg/dL, low phosphate and an increased intact PTH. Kidney function is normal. Which diagnosis fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary hyperparathyroidism"
+      },
+      {
+        "id": "b",
+        "text": "Secondary hyperparathyroidism from chronic kidney disease"
+      },
+      {
+        "id": "c",
+        "text": "Vitamin D deficiency"
+      },
+      {
+        "id": "d",
+        "text": "Humoral hypercalcemia of malignancy"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In primary hyperparathyroidism, autonomous PTH secretion raises calcium and lowers phosphate through renal phosphate wasting, so PTH is high or inappropriately normal despite hypercalcemia.",
+    "distractorExplanations": {
+      "b": "CKD gives low or normal calcium with high phosphate; this patient has hypercalcemia and normal kidney function.",
+      "c": "Vitamin D deficiency gives low or normal calcium with raised PTH, not hypercalcemia.",
+      "d": "Malignancy-related hypercalcemia suppresses PTH; this patient's PTH is increased."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-029",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A patient being treated for diabetic ketoacidosis improves clinically, yet the urine ketone dipstick becomes more strongly positive. What explains this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient has developed a new lactic acidosis"
+      },
+      {
+        "id": "b",
+        "text": "Insulin therapy causes false-positive dipstick reactions"
+      },
+      {
+        "id": "c",
+        "text": "Beta-hydroxybutyrate is converting to acetoacetate"
+      },
+      {
+        "id": "d",
+        "text": "The dipstick detects beta-hydroxybutyrate, which is still rising"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In DKA, beta-hydroxybutyrate is the main ketone body. Nitroprusside detects only acetoacetate and acetone, so as treatment converts beta-hydroxybutyrate to acetoacetate the dipstick can look worse. Serum beta-hydroxybutyrate is the better monitoring test.",
+    "distractorExplanations": {
+      "a": "Lactate is not detected by the nitroprusside ketone pad.",
+      "b": "Insulin does not react with nitroprusside; the color change reflects a real shift in ketone forms.",
+      "d": "Nitroprusside does not detect beta-hydroxybutyrate; it reacts with acetoacetate and acetone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-chemistry-030",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A laboratory sets a reference interval as the central 95% of results from at least 120 healthy volunteers. What does this mean for healthy people tested later?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It defines the cutoff for diagnosing disease"
+      },
+      {
+        "id": "b",
+        "text": "About 5% of healthy people will fall outside it"
+      },
+      {
+        "id": "c",
+        "text": "Results outside it always indicate disease"
+      },
+      {
+        "id": "d",
+        "text": "No healthy person should ever have a result outside it"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Reference intervals are usually the central 95% of a healthy reference population (CLSI recommends at least 120 individuals per partition). Statistically 1 in 20 healthy people falls outside a single interval.",
+    "distractorExplanations": {
+      "a": "Reference intervals describe healthy people; clinical decision limits are set from outcome evidence.",
+      "c": "Results just outside the interval are often found in healthy people; interpretation needs clinical context.",
+      "d": "By definition the central 95% leaves 2.5% of healthy results in each tail."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-016",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A child with anemia and splenomegaly has many spherocytes, an MCHC of 37.5 g/dL and a negative DAT. Which test best supports the likely diagnosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eosin-5′-maleimide (EMA) binding by flow cytometry"
+      },
+      {
+        "id": "b",
+        "text": "Kleihauer-Betke acid elution stain for fetal hemoglobin cells"
+      },
+      {
+        "id": "c",
+        "text": "Hemoglobin electrophoresis at alkaline pH to look for variants"
+      },
+      {
+        "id": "d",
+        "text": "Ristocetin-induced platelet aggregation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hereditary spherocytosis gives spherocytes, a high MCHC and a negative DAT (unlike warm autoimmune hemolysis). Reduced EMA binding (or increased osmotic fragility) confirms the membrane protein defect.",
+    "distractorExplanations": {
+      "b": "Acid elution measures fetal hemoglobin cells, mainly for fetomaternal hemorrhage.",
+      "c": "Electrophoresis identifies hemoglobin variants; spherocytes with a negative DAT point to a membrane defect.",
+      "d": "That is a platelet and von Willebrand test, unrelated to red cell membrane disease."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-017",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "An analyzer reports a WBC count of 15.0 × 10⁹/L. The smear shows 25 nucleated red cells per 100 WBCs. What is the corrected WBC count?",
+    "options": [
+      {
+        "id": "a",
+        "text": "11.3 × 10⁹/L"
+      },
+      {
+        "id": "b",
+        "text": "12.0 × 10⁹/L"
+      },
+      {
+        "id": "c",
+        "text": "15.0 × 10⁹/L"
+      },
+      {
+        "id": "d",
+        "text": "18.8 × 10⁹/L"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Corrected WBC = uncorrected WBC × 100 ÷ (100 + nRBCs per 100 WBCs) = 15.0 × 100 ÷ 125 = 12.0 × 10⁹/L. Nucleated red cells are counted as leukocytes unless the analyzer excludes them.",
+    "distractorExplanations": {
+      "a": "11.3 subtracts 25% of the count; the correction divides by 125, not by subtracting a quarter.",
+      "c": "No correction is wrong here; nucleated red cells are counted as WBCs by many analyzers.",
+      "d": "18.8 multiplies by 125/100; the correction should lower the count, not raise it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-018",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient's prolonged aPTT corrects immediately in a 1:1 mix with normal plasma, but becomes prolonged again after the mix is incubated for 2 hours at 37 °C. What does this pattern suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vitamin K deficiency"
+      },
+      {
+        "id": "b",
+        "text": "A time-dependent factor VIII inhibitor"
+      },
+      {
+        "id": "c",
+        "text": "A lupus anticoagulant"
+      },
+      {
+        "id": "d",
+        "text": "A simple congenital factor VIII deficiency"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Factor VIII autoantibodies (acquired hemophilia) often need time and 37 °C to inactivate factor VIII, so the immediate mix corrects and the incubated mix does not. A Bethesda assay quantifies the inhibitor.",
+    "distractorExplanations": {
+      "a": "Vitamin K deficiency prolongs the PT first and corrects in mixing studies.",
+      "c": "Lupus anticoagulants usually fail to correct right away; they are not typically time-dependent.",
+      "d": "A deficiency stays corrected after incubation; recurring prolongation points to an inhibitor."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-019",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient with renal impairment is on enoxaparin and is bleeding. Which laboratory test best measures the drug's anticoagulant effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thrombin time using bovine thrombin"
+      },
+      {
+        "id": "b",
+        "text": "Anti-Xa assay calibrated for LMWH"
+      },
+      {
+        "id": "c",
+        "text": "Activated partial thromboplastin time (aPTT)"
+      },
+      {
+        "id": "d",
+        "text": "Prothrombin time reported as an INR"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "LMWH works mainly by enhancing antithrombin inhibition of factor Xa, so an anti-Xa assay calibrated to LMWH (peak about 4 hours after a dose) is used when monitoring is needed, as in renal impairment, obesity or pregnancy.",
+    "distractorExplanations": {
+      "a": "Thrombin time detects antithrombin-type activity; LMWH acts mainly through anti-Xa.",
+      "c": "The aPTT is insensitive to LMWH and is mainly used to monitor unfractionated heparin.",
+      "d": "The INR monitors warfarin; it is not sensitive to LMWH."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-020",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "On day 7 of unfractionated heparin, a patient's platelets fall from 250 to 90 × 10⁹/L and a deep vein thrombosis develops. Which action and test sequence fits best?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Switch to enoxaparin and repeat the platelet count tomorrow"
+      },
+      {
+        "id": "b",
+        "text": "Continue heparin and give platelet transfusions until the count recovers"
+      },
+      {
+        "id": "c",
+        "text": "Order a bone marrow biopsy to check megakaryocytes"
+      },
+      {
+        "id": "d",
+        "text": "Stop all heparin; test PF4-heparin antibodies, then a functional assay"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Heparin-induced thrombocytopenia usually shows a platelet fall of more than 50% 5–10 days after starting heparin, often with thrombosis. Stop all heparin (including flushes), start a non-heparin anticoagulant, screen with a PF4-heparin immunoassay and confirm with a functional test such as the serotonin release assay.",
+    "distractorExplanations": {
+      "a": "LMWH cross-reacts with HIT antibodies, so it is avoided as a replacement.",
+      "b": "Continuing heparin worsens HIT, and prophylactic platelets can fuel thrombosis.",
+      "c": "The timing and thrombosis point to an immune drug reaction, not a marrow failure workup."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-021",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A light-blue citrate tube for PT and aPTT is filled to only 60% of its draw volume. How does this affect the results?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No effect, because the citrate is still in excess"
+      },
+      {
+        "id": "b",
+        "text": "Only the platelet count will be affected"
+      },
+      {
+        "id": "c",
+        "text": "Both may be falsely prolonged by excess citrate"
+      },
+      {
+        "id": "d",
+        "text": "Both will be falsely shortened by tissue factor"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Coagulation tubes need a 9:1 blood-to-citrate ratio (at least 90% full). Underfilling leaves extra citrate to bind the calcium added during testing, prolonging clotting times. A hematocrit above 55% needs a citrate adjustment for the same reason.",
+    "distractorExplanations": {
+      "a": "Excess citrate is exactly the problem: it binds the calcium added in the test.",
+      "b": "Citrate tubes are not used for platelet counts; the problem here is clotting times.",
+      "d": "Short draws do not add tissue factor; the issue is the citrate-to-plasma ratio."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-022",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient with bleeding and DIC has abnormal promyelocytes with bundles of Auer rods on the smear. Which genetic finding is most likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "t(8;14) MYC::IGH"
+      },
+      {
+        "id": "b",
+        "text": "t(9;22) BCR::ABL1"
+      },
+      {
+        "id": "c",
+        "text": "t(15;17) PML::RARA"
+      },
+      {
+        "id": "d",
+        "text": "JAK2 V617F mutation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Acute promyelocytic leukemia shows abnormal promyelocytes with Auer rods (faggot cells) and early DIC. The PML::RARA fusion from t(15;17) makes it responsive to all-trans retinoic acid, so it is treated as an emergency.",
+    "distractorExplanations": {
+      "a": "MYC::IGH is Burkitt lymphoma, a B-cell neoplasm without Auer rods.",
+      "b": "BCR::ABL1 defines chronic myeloid leukemia, which does not present with Auer-rod bundles and DIC.",
+      "d": "JAK2 V617F is found in myeloproliferative neoplasms such as polycythemia vera."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-023",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient has WBC 180 × 10⁹/L with myeloid cells at every stage of maturation, basophilia and splenomegaly. Which finding confirms the most likely diagnosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "More than 20% blasts with Auer rods"
+      },
+      {
+        "id": "b",
+        "text": "CD5-positive, CD23-positive small B cells"
+      },
+      {
+        "id": "c",
+        "text": "BCR::ABL1 fusion from t(9;22)"
+      },
+      {
+        "id": "d",
+        "text": "A high leukocyte alkaline phosphatase score"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chronic myeloid leukemia shows marked leukocytosis with the full myeloid spectrum, basophilia and splenomegaly. The Philadelphia chromosome t(9;22) producing BCR::ABL1 confirms it and guides tyrosine kinase inhibitor therapy.",
+    "distractorExplanations": {
+      "a": "That pattern suggests acute myeloid leukemia, not a chronic phase with full maturation.",
+      "b": "That phenotype defines chronic lymphocytic leukemia, a lymphoid neoplasm.",
+      "d": "A high LAP score fits a leukemoid reaction; chronic myeloid leukemia classically has a low score."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-024",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "An older adult has lymphocytosis of small mature lymphocytes with many smudge cells. Which flow cytometry phenotype supports the most likely diagnosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CD34+, CD117+ blasts with myeloperoxidase"
+      },
+      {
+        "id": "b",
+        "text": "CD19+, CD5+, CD23+ B cells with dim surface light chain"
+      },
+      {
+        "id": "c",
+        "text": "CD3+, CD4+ T cells with bright CD7 and no B-cell markers"
+      },
+      {
+        "id": "d",
+        "text": "CD19+, CD5−, CD10+ B cells with bright light chain"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Chronic lymphocytic leukemia has small mature lymphocytes, smudge cells and a clonal B-cell population that coexpresses CD5 and CD23 with dim surface immunoglobulin.",
+    "distractorExplanations": {
+      "a": "CD34 and CD117 mark immature myeloid blasts, as in acute leukemia.",
+      "c": "A T-cell phenotype does not fit; the classic picture is a clonal B-cell population.",
+      "d": "CD10-positive, CD5-negative B cells suggest follicular lymphoma or other neoplasms."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-025",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "An adult has Hb 11.2 g/dL, MCV 63 fL and RBC count 6.1 × 10¹²/L with normal ferritin. What does the Mentzer index suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Thalassemia trait, because the index is about 39"
+      },
+      {
+        "id": "b",
+        "text": "Anemia of chronic disease, because the index is about 6"
+      },
+      {
+        "id": "c",
+        "text": "Iron deficiency, because the index is about 10"
+      },
+      {
+        "id": "d",
+        "text": "Thalassemia trait, because the index is about 10"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Mentzer index = MCV ÷ RBC count = 63 ÷ 6.1 ≈ 10.3. Values below 13 favor thalassemia trait (high red cell count with small cells); above 13 favors iron deficiency. Hemoglobin electrophoresis or genetic testing confirms it.",
+    "distractorExplanations": {
+      "a": "39 comes from dividing hemoglobin into MCV × RBC incorrectly; the index is MCV ÷ RBC.",
+      "b": "The index is not designed for anemia of chronic disease, and 63 ÷ 6.1 is about 10.",
+      "c": "An index below 13 favors thalassemia trait; iron deficiency typically gives an index above 13."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-026",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A man develops acute hemolysis with bite cells two days after starting primaquine. A G6PD assay done that day is normal. What is the best interpretation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It may be falsely normal; repeat after recovery"
+      },
+      {
+        "id": "b",
+        "text": "G6PD deficiency is excluded and needs no follow-up"
+      },
+      {
+        "id": "c",
+        "text": "The assay is invalid because primaquine inhibits it"
+      },
+      {
+        "id": "d",
+        "text": "The hemolysis must be autoimmune and needs a DAT only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "During acute hemolysis the most G6PD-deficient older cells are destroyed and reticulocytes, which have higher enzyme activity, dominate. A normal result can mislead; repeat the assay about 2–3 months later or use a method that adjusts for reticulocytes.",
+    "distractorExplanations": {
+      "b": "Right after hemolysis the oldest deficient cells are gone and reticulocytes have more G6PD, so a normal result does not exclude it.",
+      "c": "Primaquine does not inhibit the assay; the issue is the young cell population after hemolysis.",
+      "d": "Bite cells after an oxidant drug strongly suggest G6PD deficiency."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-027",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient's smear six months after splenectomy shows small round dark-purple inclusions in many red cells. What are these inclusions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Heinz bodies, which need a supravital stain"
+      },
+      {
+        "id": "b",
+        "text": "Howell-Jolly bodies, which are DNA remnants"
+      },
+      {
+        "id": "c",
+        "text": "Basophilic stippling from lead poisoning"
+      },
+      {
+        "id": "d",
+        "text": "Pappenheimer bodies, which are iron granules"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Howell-Jolly bodies are nuclear DNA remnants normally removed by the spleen. They appear after splenectomy or with functional asplenia, such as in sickle cell disease.",
+    "distractorExplanations": {
+      "a": "Heinz bodies are denatured hemoglobin, invisible on Wright stain.",
+      "c": "Stippling is many fine RNA granules scattered across the cell, not one round inclusion.",
+      "d": "Pappenheimer bodies are small iron-containing granules that stain with Prussian blue, usually clustered at the periphery."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-028",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A young woman with heavy menstrual bleeding and easy bruising has a normal platelet count and PT, a slightly prolonged aPTT and low von Willebrand factor activity. Which disorder is most likely?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Von Willebrand disease"
+      },
+      {
+        "id": "b",
+        "text": "Hemophilia A in a female carrier"
+      },
+      {
+        "id": "c",
+        "text": "Vitamin K deficiency"
+      },
+      {
+        "id": "d",
+        "text": "Immune thrombocytopenia"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Von Willebrand disease is the most common inherited bleeding disorder, causing mucosal bleeding. Low von Willebrand factor reduces platelet adhesion and shortens factor VIII survival, so the aPTT may be mildly prolonged while the platelet count stays normal.",
+    "distractorExplanations": {
+      "b": "Carriers can have low factor VIII, but low von Willebrand factor activity points to von Willebrand disease.",
+      "c": "Vitamin K deficiency prolongs the PT first and does not lower von Willebrand factor.",
+      "d": "ITP lowers the platelet count, which is normal here."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-029",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A CBC shows RBC 1.9 × 10¹²/L, MCV 118 fL and MCHC 41 g/dL, and red cell clumps are seen on the smear. What should the technologist do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dilute the sample 1:2 with saline and rerun"
+      },
+      {
+        "id": "b",
+        "text": "Recollect the sample in a sodium citrate tube"
+      },
+      {
+        "id": "c",
+        "text": "Warm the specimen to 37 °C and rerun the CBC"
+      },
+      {
+        "id": "d",
+        "text": "Report the results with a comment about macrocytosis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cold agglutinins clump red cells at room temperature, so the analyzer counts doublets as single large cells: low RBC count, falsely high MCV and an impossible MCHC. Warming the tube to 37 °C for 15–30 minutes disperses the agglutinates.",
+    "distractorExplanations": {
+      "a": "Dilution does not break up cold agglutinates; warming does.",
+      "b": "Citrate fixes EDTA-related platelet clumping, not cold agglutination of red cells.",
+      "d": "MCHC above 37 g/dL is physiologically impossible and signals an artifact, so these indices cannot be reported."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-hematology-030",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "hematology",
+    "prompt": "A patient has a hemoglobin of 19.5 g/dL, increased red cell mass, splenomegaly and a low serum erythropoietin. Which finding would best confirm the most likely diagnosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A high serum erythropoietin level"
+      },
+      {
+        "id": "b",
+        "text": "JAK2 V617F mutation"
+      },
+      {
+        "id": "c",
+        "text": "Hemoglobin H inclusions on a supravital stain"
+      },
+      {
+        "id": "d",
+        "text": "A positive DAT with IgG coating"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Polycythemia vera is a myeloproliferative neoplasm with erythrocytosis and low erythropoietin. JAK2 V617F (or a JAK2 exon 12 mutation) is found in about 95% of cases.",
+    "distractorExplanations": {
+      "a": "High erythropoietin points to secondary polycythemia, such as from hypoxia or an EPO-secreting tumor.",
+      "c": "Hemoglobin H inclusions point to alpha-thalassemia, which causes microcytosis, not polycythemia.",
+      "d": "A positive DAT indicates immune hemolysis, not a myeloproliferative neoplasm."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-016",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Urethral discharge grows small gray colonies on modified Thayer-Martin agar. They are oxidase-positive gram-negative diplococci that utilize glucose only. What is the most likely identification?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Haemophilus influenzae"
+      },
+      {
+        "id": "b",
+        "text": "Neisseria meningitidis"
+      },
+      {
+        "id": "c",
+        "text": "Neisseria gonorrhoeae"
+      },
+      {
+        "id": "d",
+        "text": "Moraxella catarrhalis"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "N. gonorrhoeae is an oxidase-positive gram-negative diplococcus that grows on selective media such as Thayer-Martin and acidifies glucose only. Nucleic acid amplification tests are now the usual diagnostic method, with culture kept for susceptibility testing.",
+    "distractorExplanations": {
+      "a": "H. influenzae is a gram-negative coccobacillus that needs X and V factors, not a diplococcus.",
+      "b": "N. meningitidis utilizes both glucose and maltose.",
+      "d": "M. catarrhalis is asaccharolytic and DNase-positive, and it is usually a respiratory isolate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-017",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A throat culture grows beta-hemolytic, catalase-negative gram-positive cocci that are PYR-positive and bacitracin-susceptible. What is the most likely organism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Staphylococcus aureus"
+      },
+      {
+        "id": "b",
+        "text": "Enterococcus faecalis"
+      },
+      {
+        "id": "c",
+        "text": "Streptococcus agalactiae"
+      },
+      {
+        "id": "d",
+        "text": "Streptococcus pyogenes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Group A Streptococcus (S. pyogenes) is beta-hemolytic, catalase-negative, PYR-positive and bacitracin-susceptible. Rapid antigen tests or NAAT are used for pharyngitis in routine practice.",
+    "distractorExplanations": {
+      "a": "S. aureus is catalase-positive, so it is excluded by the catalase result.",
+      "b": "Enterococci are PYR-positive but usually non-hemolytic and grow in 6.5% NaCl.",
+      "c": "Group B strep is CAMP-positive, hippurate-positive and bacitracin-resistant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-018",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A sputum culture grows alpha-hemolytic gram-positive diplococci that are optochin-susceptible and bile-soluble. What is the most likely organism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enterococcus faecium"
+      },
+      {
+        "id": "b",
+        "text": "Streptococcus pneumoniae"
+      },
+      {
+        "id": "c",
+        "text": "Viridans group streptococci"
+      },
+      {
+        "id": "d",
+        "text": "Streptococcus agalactiae"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "S. pneumoniae is an alpha-hemolytic, lancet-shaped diplococcus that is optochin-susceptible and bile-soluble because of its autolysin. These two tests separate it from viridans streptococci.",
+    "distractorExplanations": {
+      "a": "Enterococci are bile esculin-positive and optochin-resistant.",
+      "c": "Viridans strep are optochin-resistant and bile-insoluble.",
+      "d": "Group B strep is usually beta-hemolytic and CAMP-positive."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-019",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A wound culture grows a lactose non-fermenter on MacConkey agar that is oxidase-positive, smells grape-like and produces a blue-green pigment. What is the most likely organism?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Proteus mirabilis"
+      },
+      {
+        "id": "b",
+        "text": "Pseudomonas aeruginosa"
+      },
+      {
+        "id": "c",
+        "text": "Escherichia coli"
+      },
+      {
+        "id": "d",
+        "text": "Stenotrophomonas maltophilia"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "P. aeruginosa is an oxidase-positive non-fermenter that grows on MacConkey as a lactose non-fermenter, with a grape-like odor and pyocyanin (blue-green) pigment. Its intrinsic resistance makes susceptibility testing important.",
+    "distractorExplanations": {
+      "a": "Proteus is oxidase-negative, swarms and produces H₂S.",
+      "c": "E. coli is oxidase-negative and ferments lactose.",
+      "d": "S. maltophilia is usually oxidase-negative and lacks the blue-green pyocyanin pigment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-020",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "An E. coli isolate is resistant to ceftazidime. The ceftazidime-clavulanate disk zone is 8 mm larger than the ceftazidime disk alone. What does this indicate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "AmpC overproduction, which clavulanate inhibits"
+      },
+      {
+        "id": "b",
+        "text": "Extended-spectrum beta-lactamase production"
+      },
+      {
+        "id": "c",
+        "text": "Methicillin resistance mediated by mecA"
+      },
+      {
+        "id": "d",
+        "text": "Carbapenemase production confirmed by disk synergy"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An increase of 5 mm or more with clavulanate confirms an ESBL, because clavulanate inhibits these enzymes. ESBL producers hydrolyze extended-spectrum cephalosporins, and the result guides infection control and therapy.",
+    "distractorExplanations": {
+      "a": "AmpC beta-lactamases are not inhibited by clavulanate, so they would not give this enhancement.",
+      "c": "mecA is a staphylococcal mechanism; it does not apply to E. coli.",
+      "d": "Clavulanate enhancement shows a clavulanate-inhibited ESBL; carbapenemases need tests such as mCIM."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-021",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A Klebsiella isolate is resistant to meropenem. In the modified carbapenem inactivation method (mCIM), the meropenem disk incubated with the isolate gives a 6 mm zone against the indicator E. coli. What does this mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The isolate produces a carbapenemase"
+      },
+      {
+        "id": "b",
+        "text": "Resistance is due to porin loss only"
+      },
+      {
+        "id": "c",
+        "text": "The test is invalid because a zone formed"
+      },
+      {
+        "id": "d",
+        "text": "The isolate is carbapenem-susceptible"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In mCIM, a carbapenemase inactivates the meropenem disk during incubation, so the indicator E. coli grows right up to it (6–15 mm or pinpoint colonies). A zone of 19 mm or more means no carbapenemase was detected.",
+    "distractorExplanations": {
+      "b": "Porin-loss resistance leaves the meropenem disk active, giving a large zone.",
+      "c": "In mCIM a 6 mm (no-inhibition) zone is the positive result, not an invalid run.",
+      "d": "A susceptible isolate would leave the meropenem intact and produce a large zone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-022",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Which disk test is recommended to detect mecA-mediated methicillin resistance in Staphylococcus aureus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Penicillin zone-edge test"
+      },
+      {
+        "id": "b",
+        "text": "Cefoxitin disk diffusion"
+      },
+      {
+        "id": "c",
+        "text": "Oxacillin disk diffusion"
+      },
+      {
+        "id": "d",
+        "text": "Vancomycin disk diffusion"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cefoxitin is a strong inducer of mecA expression and a better surrogate than oxacillin for disk diffusion. Resistance predicts resistance to most beta-lactams; PBP2a or mecA testing is an alternative.",
+    "distractorExplanations": {
+      "a": "The zone-edge test detects beta-lactamase (penicillinase), not mecA.",
+      "c": "Oxacillin disk diffusion is unreliable for S. aureus; cefoxitin is the preferred surrogate.",
+      "d": "Vancomycin disk diffusion does not reliably detect reduced susceptibility, and it tests a different drug."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-023",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A catalase-negative gram-positive coccus from a urine culture is bile esculin-positive, grows in 6.5% NaCl and is PYR-positive. What is the most likely genus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Streptococcus gallolyticus (group D)"
+      },
+      {
+        "id": "b",
+        "text": "Streptococcus pneumoniae"
+      },
+      {
+        "id": "c",
+        "text": "Enterococcus"
+      },
+      {
+        "id": "d",
+        "text": "Staphylococcus"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Enterococci hydrolyze esculin in bile, tolerate 6.5% NaCl and are PYR-positive. Growth in salt separates them from group D streptococci such as S. gallolyticus.",
+    "distractorExplanations": {
+      "a": "Group D non-enterococcal streptococci are bile esculin-positive but do not grow in 6.5% NaCl.",
+      "b": "S. pneumoniae is optochin-susceptible and does not grow in 6.5% NaCl.",
+      "d": "Staphylococci are catalase-positive, so the negative catalase result excludes them."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-024",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A healthcare worker's hepatitis B serology shows HBsAg negative, anti-HBs positive and total anti-HBc negative. What does this profile mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acute infection in the window period"
+      },
+      {
+        "id": "b",
+        "text": "Chronic infection with low viral replication"
+      },
+      {
+        "id": "c",
+        "text": "Immunity from a past, resolved infection"
+      },
+      {
+        "id": "d",
+        "text": "Immunity from hepatitis B vaccination"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Vaccination produces anti-HBs only, because the vaccine contains HBsAg but no core protein. Anti-HBs with anti-HBc indicates resolved infection, and HBsAg with IgM anti-HBc indicates acute infection.",
+    "distractorExplanations": {
+      "a": "The window period shows IgM anti-HBc with no HBsAg or anti-HBs.",
+      "b": "Chronic infection requires HBsAg for more than 6 months.",
+      "c": "Past infection gives anti-HBc as well as anti-HBs; anti-HBc is negative here."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-025",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A fourth-generation HIV-1/2 antigen/antibody immunoassay is reactive. The HIV-1/HIV-2 antibody differentiation immunoassay is negative. What is the next step in the recommended algorithm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "HIV-1 nucleic acid amplification test"
+      },
+      {
+        "id": "b",
+        "text": "Repeat the fourth-generation screen in 6 months"
+      },
+      {
+        "id": "c",
+        "text": "Report the patient as HIV-negative"
+      },
+      {
+        "id": "d",
+        "text": "HIV-1 Western blot confirmation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In the CDC laboratory algorithm, a reactive antigen/antibody screen followed by a negative or indeterminate differentiation assay is resolved with an HIV-1 NAAT, which detects acute infection while antibodies are still absent.",
+    "distractorExplanations": {
+      "b": "Waiting delays the diagnosis of acute infection, which the NAAT can detect now.",
+      "c": "A reactive screen with a negative differentiation test can mean acute infection before antibodies form.",
+      "d": "The Western blot has been removed from the recommended algorithm."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-026",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A CSF specimen for bacterial culture arrives during the night shift and cannot be processed for an hour. How should it be held?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Frozen at −20 °C until processing"
+      },
+      {
+        "id": "b",
+        "text": "At 2–8 °C to slow bacterial overgrowth"
+      },
+      {
+        "id": "c",
+        "text": "In formalin to preserve cell morphology for cytology"
+      },
+      {
+        "id": "d",
+        "text": "At room temperature, never refrigerated"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CSF for bacterial culture is processed immediately or kept at room temperature (or 35 °C) because N. meningitidis and H. influenzae are cold-sensitive. Refrigeration is appropriate for CSF sent for viral testing.",
+    "distractorExplanations": {
+      "a": "Freezing destroys organisms needed for culture and is not used for bacterial CSF cultures.",
+      "b": "Refrigeration can kill fastidious meningitis pathogens such as N. meningitidis and H. influenzae.",
+      "c": "Formalin kills organisms, so culture is impossible."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-027",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A urine culture is streaked with a calibrated 0.001 mL loop and grows 150 colonies of a single organism. What colony count should be reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "150 CFU/mL"
+      },
+      {
+        "id": "b",
+        "text": "15,000 CFU/mL"
+      },
+      {
+        "id": "c",
+        "text": "150,000 CFU/mL"
+      },
+      {
+        "id": "d",
+        "text": "1,500,000 CFU/mL"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "CFU/mL = colonies ÷ volume plated = 150 ÷ 0.001 mL = 150,000 CFU/mL. With a 0.01 mL loop the multiplier would be 100.",
+    "distractorExplanations": {
+      "a": "150 is the raw colony count; it must be multiplied by 1,000 for a 0.001 mL loop.",
+      "b": "15,000 uses a multiplier of 100, which belongs to a 0.01 mL loop.",
+      "d": "1,500,000 multiplies by 10,000, which overstates the count tenfold."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-028",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A pregnant patient's RPR is reactive at 1:2, but a treponemal test (TP-PA) is nonreactive. What is the most likely interpretation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A prozone reaction from very high antibody"
+      },
+      {
+        "id": "b",
+        "text": "A biological false-positive nontreponemal result"
+      },
+      {
+        "id": "c",
+        "text": "Latent syphilis that needs penicillin treatment"
+      },
+      {
+        "id": "d",
+        "text": "Early primary syphilis before treponemal antibodies form"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Nontreponemal tests detect antibodies to cardiolipin, which can be raised in pregnancy, autoimmune disease, infections and older age. A low-titer RPR with a nonreactive treponemal test is usually a biological false positive.",
+    "distractorExplanations": {
+      "a": "Prozone causes a falsely nonreactive RPR at high titer, not a weakly reactive RPR.",
+      "c": "Latent syphilis would give a reactive treponemal test.",
+      "d": "Treponemal tests usually turn positive as early as or earlier than nontreponemal tests."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-029",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "Which biosafety level is required for propagating and manipulating cultures of Mycobacterium tuberculosis?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Biosafety level 2 on an open bench"
+      },
+      {
+        "id": "b",
+        "text": "Biosafety level 1"
+      },
+      {
+        "id": "c",
+        "text": "Biosafety level 4"
+      },
+      {
+        "id": "d",
+        "text": "Biosafety level 3"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Culture propagation and manipulation of M. tuberculosis need BSL-3 containment and practices, including directional airflow and respiratory protection. Primary specimen processing may be done in a BSL-2 biosafety cabinet using BSL-3 practices.",
+    "distractorExplanations": {
+      "a": "M. tuberculosis is transmitted by aerosol; open-bench work does not contain cultures.",
+      "b": "BSL-1 is for agents that do not cause disease in healthy adults.",
+      "c": "BSL-4 is reserved for agents such as Ebola with no available treatment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ascp-mls-readiness-check-micro-immuno-030",
+    "examSlug": "ascp-mls-readiness-check",
+    "topicId": "micro-immuno",
+    "prompt": "A yeast isolate from a blood culture produces germ tubes after 2 hours in serum at 37 °C. Which identification does this support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Candida albicans (presumptive)"
+      },
+      {
+        "id": "b",
+        "text": "Cryptococcus neoformans complex"
+      },
+      {
+        "id": "c",
+        "text": "Candida auris"
+      },
+      {
+        "id": "d",
+        "text": "Candida glabrata complex"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A positive germ tube test is a rapid presumptive identification of C. albicans (C. dubliniensis can also be positive). Germ tube-negative yeasts need further identification, especially to detect C. auris and resistant species.",
+    "distractorExplanations": {
+      "b": "Cryptococcus does not form germ tubes; it has a capsule and is urease-positive.",
+      "c": "C. auris is germ tube-negative and needs MALDI-TOF or molecular identification.",
+      "d": "C. glabrata is germ tube-negative and forms small cells without pseudohyphae."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
   }
 ]

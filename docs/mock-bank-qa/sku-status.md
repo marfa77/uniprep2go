@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 46 | 31 |
+| ok | 47 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 26 | 2 |
+| small-bank | 25 | 2 |
 | point-fix | 0 | 0 |
 | rewrite | 105 | 31 |
 | civic | 19 | 18 |
@@ -129,7 +129,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
 | small-bank | `aha-bls-provider-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
-| small-bank | `ascp-mls-readiness-check` | planned | 60 / 60 | 2026-10-06 | bank 60 for 60Q session |
 | small-bank | `ascp-mlt-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `aswb-bachelors-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `aswb-clinical-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
@@ -186,6 +185,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `aapc-ccs-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `amt-rma-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `ascp-mls-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `cdl-school-bus-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `home-health-aide-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
