@@ -374,10 +374,12 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "admin", label: "Administrative procedures" },
       { id: "law-ethics", label: "Law, ethics & safety" },
     ]),
-    officialSourceNote: "AAMA CMA exam content themes. Not an AAMA certification exam.",
-    description: "60-question AAMA CMA readiness check (free 25-question version) for medical assistant candidates.",
+    officialSourceNote:
+      "Official AAMA CMA (AAMA) exam: 200 multiple-choice questions (180 scored) in four 40-minute segments, scaled pass 430 (200–800). This check is a shorter 60-question / 90-minute diagnostic on four areas (clinical, anatomy and pharmacology, administrative, law/ethics/safety). Independent UniPrep2Go practice — not AAMA material.",
+    description: "60-question AAMA CMA readiness check (free 25-question version) for medical assistant candidates — shorter than the official 200-question exam.",
     examBody: "AAMA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique scenario items, 60 drawn per attempt across the four areas (reviewed and expanded 2026-10-15).",
+    lastUpdated: "2026-10-15",
   }),
   nicheReadinessConfig({
     slug: "danb-gc-readiness-check",

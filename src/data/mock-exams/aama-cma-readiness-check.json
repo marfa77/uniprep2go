@@ -3,31 +3,31 @@
     "id": "aama-cma-readiness-check-clinical-001",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which site is generally preferred for an adult intramuscular vaccine injection when volume is appropriate?",
+    "prompt": "A medical assistant is giving a 0.5 mL influenza vaccine intramuscularly to a healthy adult of average build. Which site and needle are typical?",
     "options": [
       {
         "id": "a",
-        "text": "Dorsogluteal site without landmarks"
+        "text": "Dorsogluteal site with a 5/8-inch, 25 gauge needle"
       },
       {
         "id": "b",
-        "text": "Subcutaneous abdomen"
+        "text": "Abdomen with a 5/8-inch needle at a 45-degree angle"
       },
       {
         "id": "c",
-        "text": "Deltoid muscle with proper landmarking"
+        "text": "Deltoid with a 1-inch, 22–25 gauge needle"
       },
       {
         "id": "d",
-        "text": "Antecubital vein"
+        "text": "Deltoid with a 3/8-inch, 30 gauge insulin needle"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The deltoid is preferred for many adult IM vaccines when volume fits; landmarking avoids nerves and vessels.",
+    "explanation": "CDC guidance uses the deltoid for most adult IM vaccines with a 22–25 gauge needle, usually 1 inch for average-weight adults (5/8 inch only for small adults, 1–1.5 inch for heavier ones).",
     "distractorExplanations": {
-      "a": "Dorsogluteal injections without landmarks risk sciatic injury and are often avoided.",
-      "b": "Abdomen is a common SQ site, not the default IM vaccine site.",
-      "d": "IV is a different route requiring specific authorization."
+      "a": "The dorsogluteal site is avoided for vaccines (sciatic nerve, fat depth), and 5/8 inch rarely reaches adult gluteal muscle.",
+      "b": "That describes a subcutaneous injection; an IM vaccine has to reach muscle.",
+      "d": "A 3/8-inch insulin-type needle will not reach the deltoid muscle in an average adult."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -201,31 +201,31 @@
     "id": "aama-cma-readiness-check-clinical-007",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "During a 12-lead ECG, the V4 electrode is placed at the",
+    "prompt": "During a 12-lead ECG, where is the V4 electrode placed?",
     "options": [
       {
         "id": "a",
-        "text": "2nd intercostal space, left sternal border"
+        "text": "4th intercostal space, right sternal border"
       },
       {
         "id": "b",
-        "text": "Midaxillary line at the umbilicus"
+        "text": "5th intercostal space, left anterior axillary line"
       },
       {
         "id": "c",
-        "text": "5th intercostal space, midclavicular line"
+        "text": "5th intercostal space, left midclavicular line"
       },
       {
         "id": "d",
-        "text": "4th intercostal space, right sternal border"
+        "text": "4th intercostal space, left sternal border"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "V4 is at the 5th ICS midclavicular line; correct placement is essential for interpretable tracings.",
+    "explanation": "V1 and V2 sit in the 4th ICS beside the sternum, V4 at the 5th ICS midclavicular line, V3 between V2 and V4, and V5 and V6 level with V4 at the anterior and mid-axillary lines.",
     "distractorExplanations": {
-      "a": "That is not a standard V4 landmark.",
-      "b": "V6 is midaxillary at the V4–V5 level, not at the umbilicus.",
-      "d": "That describes V1."
+      "a": "That is V1; V4 sits lower and farther left, at the 5th ICS midclavicular line.",
+      "b": "That is V5, placed level with V4 but in the anterior axillary line.",
+      "d": "That is V2; V4 is at the 5th ICS in the midclavicular line."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -267,15 +267,15 @@
     "id": "aama-cma-readiness-check-clinical-009",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which statement about sterile field maintenance is correct?",
+    "prompt": "While setting up a sterile tray for a minor office procedure, which rule should the medical assistant follow?",
     "options": [
       {
         "id": "a",
-        "text": "Wet sterile packages remain sterile indefinitely"
+        "text": "A 1-inch border around the sterile field is still sterile"
       },
       {
         "id": "b",
-        "text": "Talking over a sterile field does not increase contamination risk"
+        "text": "A non-sterile person may pass items over the open field"
       },
       {
         "id": "c",
@@ -283,15 +283,15 @@
       },
       {
         "id": "d",
-        "text": "Turning your back to a sterile field is acceptable if you return quickly"
+        "text": "A sterile pack that got wet and then dried is still usable"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Sterile technique treats items below the waist (and out of sight/wet packages) as contaminated.",
+    "explanation": "Sterile fields stay above waist level and in view. Anything below the waist, the 1-inch border, areas reached over by non-sterile arms and packs that got wet are considered contaminated.",
     "distractorExplanations": {
-      "a": "Moisture can wick contamination through packaging.",
-      "b": "Talking/coughing can contaminate the field.",
-      "d": "Turning away breaks observation of the field."
+      "a": "The outer 1-inch border of a sterile field is treated as contaminated, not sterile.",
+      "b": "Reaching over the field with non-sterile arms contaminates it; items are dropped in from the side.",
+      "d": "Moisture wicks microbes through the wrap, so a pack that was wet is contaminated even after drying."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -333,31 +333,31 @@
     "id": "aama-cma-readiness-check-clinical-011",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Pulse oximetry readings may be falsely low when the patient has",
+    "prompt": "A patient's pulse oximeter reads 86%, but she is talking comfortably and her color is good. Her hands are cold and she wears dark nail polish. What should the medical assistant do first?",
     "options": [
       {
         "id": "a",
-        "text": "Nail polish or poor peripheral perfusion"
+        "text": "Recheck on a warm site without nail polish"
       },
       {
         "id": "b",
-        "text": "Warm well-perfused fingers"
+        "text": "Start oxygen right away based on the 86% reading"
       },
       {
         "id": "c",
-        "text": "Normal hemoglobin and room air"
+        "text": "Record 86% as accurate and finish the visit as planned"
       },
       {
         "id": "d",
-        "text": "A correctly sized sensor on a warm ear lobe"
+        "text": "Move the probe to a finger under a tight adhesive bandage"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Poor perfusion, cold extremities, motion, and dark nail polish can impair SpO2 accuracy.",
+    "explanation": "Cold extremities, poor perfusion, motion and dark nail polish can falsely lower SpO2. Recheck on a warm finger without polish or on the earlobe, and report a confirmed low value to the provider.",
     "distractorExplanations": {
-      "b": "Good perfusion improves accuracy.",
-      "c": "Those conditions support more reliable readings.",
-      "d": "Proper sensor placement improves accuracy."
+      "b": "Oxygen needs a provider order, and a false-low reading should be ruled out before acting on it.",
+      "c": "A low reading in a comfortable patient suggests artifact; it must be rechecked and reported.",
+      "d": "A constricted finger has reduced blood flow, which makes the reading even less reliable."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -465,31 +465,31 @@
     "id": "aama-cma-readiness-check-clinical-015",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "clinical",
-    "prompt": "Which intramuscular injection angle is generally used for a typical adult IM injection?",
+    "prompt": "A medical assistant gives an intramuscular injection into the deltoid of an adult. At what angle should the needle enter the skin?",
     "options": [
       {
         "id": "a",
-        "text": "45 degrees only"
-      },
-      {
-        "id": "b",
-        "text": "90 degrees"
-      },
-      {
-        "id": "c",
         "text": "10–15 degrees"
       },
       {
+        "id": "b",
+        "text": "30 degrees"
+      },
+      {
+        "id": "c",
+        "text": "45 degrees"
+      },
+      {
         "id": "d",
-        "text": "180 degrees parallel to skin"
+        "text": "90 degrees"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "IM injections are typically given at 90 degrees into muscle; SQ is often ~45–90 depending on technique/needle length.",
+    "correctOptionId": "d",
+    "explanation": "IM injections are given at 90 degrees so the needle reaches muscle. Subcutaneous injections use 45–90 degrees depending on needle length, and intradermal injections 10–15 degrees.",
     "distractorExplanations": {
-      "a": "45 degrees is more typical of some SQ techniques.",
-      "c": "10–15 degrees is intradermal.",
-      "d": "Parallel injection is not a standard IM angle."
+      "a": "10–15 degrees is the intradermal angle used for a tuberculin skin test.",
+      "b": "A 30-degree angle leaves the needle tip in subcutaneous tissue rather than muscle.",
+      "c": "Forty-five degrees is a common subcutaneous angle, not an IM angle."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -498,31 +498,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-001",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which organ system is primarily responsible for gas exchange?",
+    "prompt": "Where in the respiratory system does oxygen pass from inhaled air into the blood?",
     "options": [
       {
         "id": "a",
-        "text": "Digestive"
+        "text": "Bronchi"
       },
       {
         "id": "b",
-        "text": "Integumentary"
+        "text": "Trachea"
       },
       {
         "id": "c",
-        "text": "Respiratory"
+        "text": "Alveoli"
       },
       {
         "id": "d",
-        "text": "Reproductive"
+        "text": "Pleura"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "The respiratory system exchanges oxygen and carbon dioxide in the lungs.",
+    "explanation": "Gas exchange happens across the thin walls of the alveoli and their surrounding capillaries: oxygen diffuses into the blood and carbon dioxide diffuses out to be exhaled.",
     "distractorExplanations": {
-      "a": "Digestive absorbs nutrients.",
-      "b": "Skin protects and regulates temperature.",
-      "d": "Reproductive supports reproduction."
+      "a": "Bronchi conduct air into the lungs; their thick walls do not allow gas exchange.",
+      "b": "The trachea is a cartilage-ringed airway, not an exchange surface.",
+      "d": "The pleura are membranes around the lungs that reduce friction; they do not exchange gas."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -531,11 +531,11 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-002",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The sinoatrial (SA) node is located in the",
+    "prompt": "Where is the sinoatrial (SA) node, the heart's natural pacemaker, located?",
     "options": [
       {
         "id": "a",
-        "text": "Pulmonary artery"
+        "text": "Left atrium"
       },
       {
         "id": "b",
@@ -543,19 +543,19 @@
       },
       {
         "id": "c",
-        "text": "Aortic arch"
+        "text": "Interventricular septum"
       },
       {
         "id": "d",
-        "text": "Left ventricle apex"
+        "text": "Atrioventricular junction"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The SA node in the right atrium is the heart's primary pacemaker.",
+    "explanation": "The SA node lies in the right atrial wall near the superior vena cava. It normally fires 60–100 times a minute, and the impulse passes to the AV node, bundle of His and Purkinje fibers.",
     "distractorExplanations": {
-      "a": "The pulmonary artery carries blood to the lungs.",
-      "c": "The aortic arch is not the SA node location.",
-      "d": "The apex is ventricular myocardium, not the SA node."
+      "a": "The left atrium receives blood from the pulmonary veins; the SA node sits in the right atrial wall.",
+      "c": "The bundle of His and bundle branches run in the septum; the SA node is in the right atrium.",
+      "d": "That is the AV node, which delays the impulse; the SA node starts it in the right atrium."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -564,31 +564,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-003",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which drug class is commonly used first-line for many patients with hypertension?",
+    "prompt": "A provider starts a patient on lisinopril for high blood pressure. Which drug class is this?",
     "options": [
       {
         "id": "a",
-        "text": "ACE inhibitors, ARBs, thiazide diuretics, or calcium channel blockers (per guidelines/provider)"
+        "text": "ACE inhibitor"
       },
       {
         "id": "b",
-        "text": "Antifungals"
+        "text": "Angiotensin II receptor blocker"
       },
       {
         "id": "c",
-        "text": "Antihistamines"
+        "text": "Beta blocker"
       },
       {
         "id": "d",
-        "text": "Topical anesthetics"
+        "text": "Calcium channel blocker"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Common first-line antihypertensives include ACEI/ARB, thiazides, and CCBs depending on patient factors.",
+    "explanation": "Lisinopril is an ACE inhibitor (-pril). ACE inhibitors, ARBs, thiazide diuretics and calcium channel blockers are common first-line antihypertensives; a dry cough is a typical ACE inhibitor side effect.",
     "distractorExplanations": {
-      "b": "Antifungals treat fungal infections.",
-      "c": "Antihistamines treat allergy symptoms.",
-      "d": "Topical anesthetics numb skin locally."
+      "b": "ARBs such as losartan end in -sartan; lisinopril's -pril ending marks an ACE inhibitor.",
+      "c": "Beta blockers end in -olol, such as metoprolol, and slow the heart rate.",
+      "d": "Calcium channel blockers include amlodipine and diltiazem, not lisinopril."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -650,11 +650,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Pulmonary veins return oxygenated blood to the left atrium.",
+    "explanation": "The four pulmonary veins are the only veins that carry oxygenated blood. They return it from the lungs to the left atrium, which passes it to the left ventricle for the body.",
     "distractorExplanations": {
-      "a": "SVC returns systemic venous blood to the right atrium.",
-      "b": "Pulmonary arteries carry deoxygenated blood to the lungs.",
-      "c": "Coronary sinus drains cardiac venous blood."
+      "a": "The superior vena cava returns deoxygenated blood from the upper body to the right atrium.",
+      "b": "The pulmonary artery carries deoxygenated blood from the right ventricle to the lungs.",
+      "c": "The coronary sinus drains the heart muscle's own venous blood into the right atrium."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -663,31 +663,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-006",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "A patient taking warfarin should be educated that which substance can increase bleeding risk when interacting with therapy?",
+    "prompt": "A patient on warfarin calls asking about an over-the-counter pain reliever for knee pain. Which product most increases her bleeding risk?",
     "options": [
       {
         "id": "a",
-        "text": "All vitamins are contraindicated"
+        "text": "Acetaminophen at usual doses"
       },
       {
         "id": "b",
-        "text": "Acetaminophen never interacts with any drug"
+        "text": "Topical capsaicin cream"
       },
       {
         "id": "c",
-        "text": "Certain antibiotics and NSAIDs can increase bleeding risk; report changes to the provider"
+        "text": "Ibuprofen"
       },
       {
         "id": "d",
-        "text": "Consistent leafy greens alone always raise INR immediately"
+        "text": "A heat pack on the knee"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Warfarin has many interactions; antibiotics and NSAIDs can raise bleeding risk. Diet vitamin K consistency also matters.",
+    "explanation": "NSAIDs such as ibuprofen and aspirin add antiplatelet effects and GI bleeding risk to warfarin. The MA routes the question to the provider; acetaminophen is often the preferred choice.",
     "distractorExplanations": {
-      "a": "Not all vitamins are forbidden; management is individualized.",
-      "b": "High-dose acetaminophen can affect INR in some cases; 'never' is unsafe.",
-      "d": "Vitamin K intake should be consistent; sudden large changes matter more than 'always raise INR immediately.'"
+      "a": "Acetaminophen at usual doses is often the preferred OTC analgesic with warfarin, though high regular doses can raise the INR.",
+      "b": "Capsaicin cream acts locally and does not meaningfully affect clotting.",
+      "d": "Heat therapy has no drug interaction with warfarin."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -696,7 +696,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-007",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Insulin is primarily produced by the",
+    "prompt": "Which cells produce insulin?",
     "options": [
       {
         "id": "a",
@@ -716,11 +716,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Beta cells of the islets of Langerhans produce insulin.",
+    "explanation": "Insulin is made by the beta cells of the pancreatic islets of Langerhans and lowers blood glucose. Alpha cells make glucagon, which raises it.",
     "distractorExplanations": {
       "b": "Alpha cells of the islets of Langerhans secrete glucagon, which raises blood glucose; insulin comes from beta cells.",
-      "c": "Adrenal medulla produces catecholamines.",
-      "d": "Posterior pituitary releases ADH and oxytocin."
+      "c": "The adrenal medulla releases epinephrine and norepinephrine, not insulin.",
+      "d": "The posterior pituitary releases ADH and oxytocin, not insulin."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -729,31 +729,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-008",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which schedule classification indicates the highest abuse potential among controlled substances that still have accepted medical use in the U.S.?",
+    "prompt": "A patient's prescription is for oxycodone. Which DEA schedule applies, and what does that mean for refills?",
     "options": [
       {
         "id": "a",
-        "text": "Schedule V"
+        "text": "Schedule I; it cannot be prescribed"
       },
       {
         "id": "b",
-        "text": "Schedule IV"
+        "text": "Schedule III; up to 5 refills in 6 months"
       },
       {
         "id": "c",
-        "text": "Schedule II"
+        "text": "Schedule II; no refills are allowed"
       },
       {
         "id": "d",
-        "text": "OTC vitamins"
+        "text": "Schedule IV; refills at the pharmacist's discretion"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Schedule II drugs have high abuse potential with accepted medical use (e.g., many opioids, stimulants).",
+    "explanation": "Schedule II drugs such as oxycodone, hydrocodone products and amphetamines have high abuse potential and accepted medical use. Each fill needs a new prescription; refills are not allowed.",
     "distractorExplanations": {
-      "a": "Schedule V has lower relative abuse potential.",
-      "b": "Schedule IV is lower than II.",
-      "d": "Vitamins are not scheduled controlled substances."
+      "a": "Schedule I drugs have no accepted medical use; oxycodone does, so it is Schedule II.",
+      "b": "That refill rule applies to Schedules III–IV, such as codeine combinations; oxycodone is Schedule II.",
+      "d": "Schedule IV includes drugs such as alprazolam, and refills still need prescriber authorization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -762,31 +762,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-009",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The anatomical term 'proximal' means:",
+    "prompt": "A provider documents a laceration 'proximal to the wrist.' Where is the wound?",
     "options": [
       {
         "id": "a",
-        "text": "Closer to the trunk or point of origin"
+        "text": "On the forearm, above the wrist"
       },
       {
         "id": "b",
-        "text": "Farther from the trunk or point of origin"
+        "text": "On the hand, below the wrist"
       },
       {
         "id": "c",
-        "text": "Closer to the front surface of the body"
+        "text": "On the palm side of the wrist"
       },
       {
         "id": "d",
-        "text": "Closer to the midline of the body"
+        "text": "On the thumb side of the wrist"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Proximal means nearer to the trunk/origin; distal means farther.",
+    "explanation": "Proximal means closer to the trunk or point of attachment; distal means farther away. A wound proximal to the wrist lies on the forearm side of the wrist.",
     "distractorExplanations": {
-      "b": "That defines distal.",
-      "c": "Closer to the front of the body is anterior (ventral); proximal refers to nearness to the trunk or origin.",
-      "d": "Closer to the midline is medial; proximal describes position along a limb relative to its attachment."
+      "b": "Below the wrist on the hand is distal to the wrist, the opposite direction.",
+      "c": "The palm side of the wrist is anterior (volar), not proximal.",
+      "d": "The thumb side is lateral (radial) in anatomic position, not proximal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -828,7 +828,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-011",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which electrolyte imbalance is classically associated with peaked T waves on ECG?",
+    "prompt": "A patient with kidney failure has an ECG showing tall, peaked T waves. Which electrolyte problem does this suggest?",
     "options": [
       {
         "id": "a",
@@ -848,11 +848,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hyperkalemia can cause peaked T waves and dangerous arrhythmias.",
+    "explanation": "High potassium, common in kidney failure, causes tall peaked T waves and can progress to dangerous arrhythmias. The MA hands the tracing to the provider right away.",
     "distractorExplanations": {
-      "a": "Sodium disorders have different presentations.",
-      "b": "Hypokalemia more often causes U waves/flattened T waves.",
-      "c": "Hypocalcemia affects QT interval differently."
+      "a": "Low sodium causes confusion and seizures rather than a classic T-wave change.",
+      "b": "Low potassium flattens T waves and adds U waves, the opposite of peaking.",
+      "c": "Low calcium prolongs the QT interval rather than peaking the T waves."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -861,7 +861,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-012",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "The gallbladder's primary function is to:",
+    "prompt": "A patient scheduled for gallbladder removal asks what the organ does. Which description is correct?",
     "options": [
       {
         "id": "a",
@@ -877,15 +877,15 @@
       },
       {
         "id": "d",
-        "text": "Filter blood urea"
+        "text": "Absorb nutrients from digested food"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "The gallbladder stores and concentrates bile produced by the liver.",
+    "explanation": "The liver makes bile; the gallbladder stores and concentrates it, then releases it into the duodenum after fatty meals. After removal, bile flows directly from the liver.",
     "distractorExplanations": {
       "a": "The liver produces bile; the gallbladder only stores and concentrates it and releases it after fatty meals.",
       "c": "Digestive enzymes such as lipase, amylase and trypsin come from the pancreas, not the gallbladder.",
-      "d": "Kidneys filter urea."
+      "d": "Nutrient absorption happens mainly in the small intestine, not in the gallbladder."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -894,31 +894,31 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-013",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which route provides the slowest onset for most medications compared with IV?",
+    "prompt": "A provider wants a medication to take effect as fast as possible. Which route gives the fastest onset?",
     "options": [
       {
         "id": "a",
-        "text": "Intramuscular"
+        "text": "Oral"
       },
       {
         "id": "b",
-        "text": "Intravenous"
+        "text": "Intramuscular"
       },
       {
         "id": "c",
-        "text": "Oral (enteral)"
+        "text": "Intravenous"
       },
       {
         "id": "d",
-        "text": "Inhalation of a rapid-acting bronchodilator"
+        "text": "Transdermal"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Oral absorption is generally slower than parenteral/IV routes due to GI absorption and first-pass effects.",
+    "explanation": "IV drugs enter the bloodstream directly with no absorption step, so onset is fastest. Typical order from fastest: IV, inhalation or sublingual, IM, subcutaneous, oral, then transdermal.",
     "distractorExplanations": {
-      "a": "IM is faster than typical oral.",
-      "b": "IV has the fastest onset.",
-      "d": "Inhaled albuterol acts quickly locally/systemically for airway effect."
+      "a": "Oral drugs must be absorbed through the GI tract and pass through the liver first, so onset is slowest.",
+      "b": "IM absorption depends on muscle blood flow and is slower than IV.",
+      "d": "Transdermal patches release drug slowly over hours or days."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -960,7 +960,7 @@
     "id": "aama-cma-readiness-check-anatomy-pharm-015",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "anatomy-pharm",
-    "prompt": "Which cranial nerve is tested when asking a patient to shrug the shoulders against resistance?",
+    "prompt": "Which cranial nerve is tested when a patient shrugs the shoulders against resistance?",
     "options": [
       {
         "id": "a",
@@ -968,23 +968,23 @@
       },
       {
         "id": "b",
-        "text": "CN I (olfactory)"
+        "text": "CN VII (facial)"
       },
       {
         "id": "c",
-        "text": "CN VIII (vestibulocochlear)"
+        "text": "CN XII (hypoglossal)"
       },
       {
         "id": "d",
-        "text": "CN II (optic)"
+        "text": "CN V (trigeminal)"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CN XI innervates trapezius/sternocleidomastoid; shoulder shrug tests accessory nerve function.",
+    "explanation": "CN XI supplies the trapezius and sternocleidomastoid muscles, so a shoulder shrug and head turn against resistance test the accessory nerve.",
     "distractorExplanations": {
-      "b": "CN I is smell.",
-      "c": "CN VIII is hearing/balance.",
-      "d": "CN II is vision."
+      "b": "CN VII moves the face; it is tested by smiling and raising the eyebrows.",
+      "c": "CN XII moves the tongue; it is tested by sticking the tongue out.",
+      "d": "CN V handles facial sensation and chewing, not shoulder movement."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -993,31 +993,31 @@
     "id": "aama-cma-readiness-check-admin-001",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which is the best example of using two patient identifiers?",
+    "prompt": "Two patients named Maria Lopez are in the waiting room. Before drawing blood, how should the medical assistant identify the right one?",
     "options": [
       {
         "id": "a",
-        "text": "Full name and date of birth"
+        "text": "Ask her to state her full name and date of birth"
       },
       {
         "id": "b",
-        "text": "Physician's last name"
+        "text": "Call 'Maria Lopez' and draw the first patient who answers"
       },
       {
         "id": "c",
-        "text": "Insurance company name alone"
+        "text": "Check the exam room number against the lab order"
       },
       {
         "id": "d",
-        "text": "Room number and bed location"
+        "text": "Ask 'Are you Maria Lopez, born in 1980?' and wait for a yes"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Name plus DOB (or MRN) are standard identifiers; room number alone is unreliable.",
+    "explanation": "Use two identifiers, such as full name and date of birth, stated by the patient and matched to the order. Never use a room number, and avoid leading yes/no questions.",
     "distractorExplanations": {
-      "b": "Provider name identifies the clinician, not the patient.",
-      "c": "Payer name does not uniquely identify the patient.",
-      "d": "Location can change and is not a patient identifier."
+      "b": "Answering to a name confirms one identifier only and fails when two patients share it.",
+      "c": "A room number is a location, not a patient identifier.",
+      "d": "Yes/no questions let a confused or hard-of-hearing patient agree wrongly; the patient should state the details."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1224,31 +1224,31 @@
     "id": "aama-cma-readiness-check-admin-008",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "admin",
-    "prompt": "Which filing system organizes charts alphabetically by last name?",
+    "prompt": "A practice files paper charts by the last two digits of the medical record number. What is this system called?",
     "options": [
       {
         "id": "a",
-        "text": "Alphabetic filing"
+        "text": "Terminal digit filing"
       },
       {
         "id": "b",
-        "text": "Numeric terminal digit"
+        "text": "Alphabetic filing"
       },
       {
         "id": "c",
-        "text": "Color coding by birthday month alone"
+        "text": "Straight numeric filing"
       },
       {
         "id": "d",
-        "text": "Random stack filing"
+        "text": "Subject filing"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Alphabetic systems file by patient name; numeric systems use numbers.",
+    "explanation": "Terminal digit filing groups charts by the last digits of the record number, spreading new charts evenly across shelves and reducing misfiles. Alphabetic filing uses names.",
     "distractorExplanations": {
-      "b": "Terminal digit is numeric.",
-      "c": "Color coding may assist but is not alphabetic filing itself.",
-      "d": "Random stacks are not a system."
+      "b": "Alphabetic filing uses the patient's last name, not record numbers.",
+      "c": "Straight numeric filing places charts in strict number order from the first digit.",
+      "d": "Subject filing groups documents by topic, such as insurance or correspondence."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1488,7 +1488,7 @@
     "id": "aama-cma-readiness-check-law-ethics-001",
     "examSlug": "aama-cma-readiness-check",
     "topicId": "law-ethics",
-    "prompt": "HIPAA's Privacy Rule primarily protects",
+    "prompt": "Which record is protected health information under the HIPAA Privacy Rule?",
     "options": [
       {
         "id": "a",
@@ -1504,11 +1504,11 @@
       },
       {
         "id": "d",
-        "text": "Protected health information (PHI)"
+        "text": "A clinic's billing record listing a patient's diagnosis"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "HIPAA Privacy Rule governs use and disclosure of PHI.",
+    "explanation": "PHI is individually identifiable health information held or sent by a covered entity or business associate in any form. De-identified data, employer-held employment records and FERPA education records are excluded.",
     "distractorExplanations": {
       "a": "Data de-identified under the Safe Harbor method (18 identifiers removed) is no longer PHI under the Privacy Rule.",
       "b": "Employment records a covered entity holds in its role as employer are excluded from the HIPAA definition of PHI.",
@@ -1808,7 +1808,7 @@
     "explanation": "Battery is intentional unauthorized touching; consent is key.",
     "distractorExplanations": {
       "a": "A threat causing fear of imminent contact is assault; battery requires actual unconsented touching.",
-      "b": "Consented care is not battery.",
+      "b": "Treatment given after valid informed consent is authorized touching, not battery.",
       "d": "Sharing a diagnosis with an uninvolved coworker is a privacy breach (invasion of privacy), not battery."
     },
     "difficulty": "medium",
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-016",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A provider orders a coagulation panel (light blue), a chemistry panel (gold SST) and a CBC (lavender) from one venipuncture. In what order should the tubes be filled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Light blue, gold, lavender"
+      },
+      {
+        "id": "b",
+        "text": "Gold, lavender, light blue"
+      },
+      {
+        "id": "c",
+        "text": "Light blue, lavender, gold"
+      },
+      {
+        "id": "d",
+        "text": "Lavender, gold, light blue"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CLSI order of draw: blood cultures, light blue citrate, red or gold serum, green heparin, lavender EDTA, then gray oxalate/fluoride. This prevents additive carryover between tubes.",
+    "distractorExplanations": {
+      "b": "The citrate tube comes before serum tubes, and EDTA carryover would ruin the coagulation results.",
+      "c": "Lavender EDTA comes after serum tubes; EDTA carryover into the gold tube falsely raises potassium.",
+      "d": "Drawing EDTA first carries it into the citrate and gold tubes, falsely raising potassium and prolonging clotting times."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-017",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "During venipuncture, what is the maximum time the tourniquet should stay on the arm?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 minute"
+      },
+      {
+        "id": "b",
+        "text": "3 minutes"
+      },
+      {
+        "id": "c",
+        "text": "5 minutes"
+      },
+      {
+        "id": "d",
+        "text": "10 minutes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Leave the tourniquet on no longer than 1 minute. If vein selection takes longer, release it for about 2 minutes and reapply, to avoid hemoconcentration and patient discomfort.",
+    "distractorExplanations": {
+      "b": "Three minutes causes hemoconcentration, which falsely raises proteins, cells and some analytes.",
+      "c": "Five minutes is far too long and distorts several lab values through hemoconcentration.",
+      "d": "Ten minutes risks nerve and tissue injury as well as badly skewed results."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-018",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient with a large upper arm has her blood pressure taken with a standard adult cuff that is too small. How does this affect the reading?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It gives no reading because sounds are blocked"
+      },
+      {
+        "id": "b",
+        "text": "It is accurate if the cuff is inflated slowly"
+      },
+      {
+        "id": "c",
+        "text": "It reads falsely low"
+      },
+      {
+        "id": "d",
+        "text": "It reads falsely high"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The cuff bladder should cover about 40% of the arm circumference in width and 80% in length. A cuff that is too small needs extra pressure to compress the artery, so the reading is falsely high.",
+    "distractorExplanations": {
+      "a": "A small cuff still produces sounds; the problem is that the pressure reads too high.",
+      "b": "Inflation speed does not correct a cuff that is too narrow for the arm.",
+      "c": "A cuff that is too large, not too small, tends to give falsely low readings."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-019",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "While measuring blood pressure by auscultation, the MA hears the first clear tapping sound at 136 mmHg and the sounds disappear at 84 mmHg. How is this recorded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "84/136 mmHg"
+      },
+      {
+        "id": "b",
+        "text": "120/80 mmHg"
+      },
+      {
+        "id": "c",
+        "text": "136/0 mmHg"
+      },
+      {
+        "id": "d",
+        "text": "136/84 mmHg"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The first Korotkoff sound (phase I) marks the systolic pressure and the disappearance of sounds (phase V) marks diastolic in adults, so the reading is 136/84 mmHg.",
+    "distractorExplanations": {
+      "a": "Blood pressure is recorded systolic over diastolic, so the higher first-sound value goes on top.",
+      "b": "The MA records the measured values, not a typical normal value.",
+      "c": "Diastolic is where the sounds disappear, not zero; 84 mmHg is the diastolic value."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-020",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "How should the medical assistant measure the pulse of a 6-month-old infant?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pulse oximeter reading alone without counting"
+      },
+      {
+        "id": "b",
+        "text": "Apical pulse for a full 60 seconds"
+      },
+      {
+        "id": "c",
+        "text": "Radial pulse for 15 seconds, multiplied by 4"
+      },
+      {
+        "id": "d",
+        "text": "Carotid pulse for 30 seconds, multiplied by 2"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "In infants and young children, the apical pulse is counted with a stethoscope over the heart for a full minute, since rates are fast and rhythm may vary with breathing.",
+    "distractorExplanations": {
+      "a": "An oximeter gives a number but does not let the MA assess rhythm and quality.",
+      "c": "Infant radial pulses are hard to feel, and short counts miss the irregular rhythms common in infants.",
+      "d": "The carotid is not used for routine infant pulse checks and a 30-second count is less accurate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-021",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient needs to give a clean-catch midstream urine sample for culture. Which instruction is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cleanse, void a little first, then collect midstream"
+      },
+      {
+        "id": "b",
+        "text": "Collect the very first portion of urine in the cup"
+      },
+      {
+        "id": "c",
+        "text": "Fill the cup to the top and touch the inside to seal it"
+      },
+      {
+        "id": "d",
+        "text": "Cleanse the area only if the patient has symptoms"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "For a clean catch, the patient cleanses the urethral area, voids the first part into the toilet, collects the midstream portion without touching the inside of the cup, then finishes in the toilet.",
+    "distractorExplanations": {
+      "b": "The first portion washes out urethral bacteria and contaminates a culture sample.",
+      "c": "Touching the inside of the cup or lid contaminates the specimen.",
+      "d": "Cleansing is part of every clean-catch collection to reduce skin and urethral contamination."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-022",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "The MA is coaching a patient during a spirometry test of forced vital capacity. Which instruction is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Breathe in fully, then blast out hard and fast for 6+ seconds"
+      },
+      {
+        "id": "b",
+        "text": "Breathe in fully, then blow out slowly and evenly until it feels comfortable"
+      },
+      {
+        "id": "c",
+        "text": "Take several quick breaths through the mouthpiece and then stop the test"
+      },
+      {
+        "id": "d",
+        "text": "Breathe in normally, then blow out gently for only 2 to 3 seconds"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "For FVC, the patient takes the deepest possible breath, seals the lips on the mouthpiece and exhales as hard and fast as possible for at least 6 seconds, with a nose clip on.",
+    "distractorExplanations": {
+      "b": "Slow exhalation measures slow vital capacity, not the forced expiration the test requires.",
+      "c": "Quick breaths do not produce an FVC maneuver; one maximal forced exhalation is required.",
+      "d": "A gentle, short breath underestimates forced vital capacity and fails acceptability criteria."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-023",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient reads the 20/40 line on a Snellen chart with the right eye. What does this mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient read 20 letters correctly out of 40 on the chart"
+      },
+      {
+        "id": "b",
+        "text": "At 20 feet, the patient sees what normal vision sees at 40 feet"
+      },
+      {
+        "id": "c",
+        "text": "At 40 feet, the patient sees what normal vision sees at 20 feet"
+      },
+      {
+        "id": "d",
+        "text": "The patient's vision is 50% of normal in both eyes together"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "In a Snellen fraction, the top number is the test distance (20 feet) and the bottom is the distance at which a person with normal vision reads that line. 20/40 is worse than 20/20.",
+    "distractorExplanations": {
+      "a": "The numbers are distances in feet, not counts of letters read.",
+      "c": "This reverses the fraction; the top number is the test distance, so this would be better than normal.",
+      "d": "Snellen fractions are not percentages, and each eye is recorded separately."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-024",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "Which autoclave setting is a standard cycle for wrapped instruments in a medical office?",
+    "options": [
+      {
+        "id": "a",
+        "text": "70 °C (158 °F) at about 15 psi for about 30 minutes"
+      },
+      {
+        "id": "b",
+        "text": "100 °C (212 °F) at no added pressure for 5 minutes"
+      },
+      {
+        "id": "c",
+        "text": "121 °C (250 °F) at 15 psi for about 30 minutes"
+      },
+      {
+        "id": "d",
+        "text": "160 °C (320 °F) dry heat for about 10 minutes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Steam autoclaves commonly sterilize wrapped loads at 121 °C (250 °F) and about 15 psi for 20–30 minutes; check the manufacturer's settings and use indicators in every load.",
+    "distractorExplanations": {
+      "a": "Seventy degrees Celsius is far below the steam temperature needed for sterilization.",
+      "b": "Boiling temperature without pressure does not reliably kill spores, so it is not sterilization.",
+      "d": "Dry heat sterilization needs much longer exposure, and this is not an autoclave steam cycle."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-025",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A patient had sutures placed in a facial laceration. When are facial sutures typically removed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3–5 days"
+      },
+      {
+        "id": "b",
+        "text": "7–10 days"
+      },
+      {
+        "id": "c",
+        "text": "10–14 days"
+      },
+      {
+        "id": "d",
+        "text": "14–21 days"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Facial sutures are usually removed in 3–5 days because the face heals quickly and early removal reduces track marks. Scalp and trunk take about 7–10 days, extremities 10–14.",
+    "distractorExplanations": {
+      "b": "Seven to ten days is typical for the scalp or trunk; facial sutures come out sooner to limit scarring.",
+      "c": "Ten to fourteen days is typical for the arms and legs, not the face.",
+      "d": "Two to three weeks is used for high-tension areas such as over joints, not the face."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-026",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A vial of medication is labeled 'EXP 10/2026.' Through what date can it be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only until the first day of October 2026"
+      },
+      {
+        "id": "b",
+        "text": "Through the last day of October 2026"
+      },
+      {
+        "id": "c",
+        "text": "For 30 days after the vial is first opened, regardless of date"
+      },
+      {
+        "id": "d",
+        "text": "Until October of the following year, 2027"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An expiration date with month and year means the product may be used through the last day of that month, if stored properly and unopened unless a shorter beyond-use date applies.",
+    "distractorExplanations": {
+      "a": "When only month and year are given, the drug is good through the end of that month.",
+      "c": "Beyond-use dates after opening never extend past the printed expiration date.",
+      "d": "The label date is the limit; there is no extra year after it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-027",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A multi-dose vaccine vial with a preservative was opened today. Unless the manufacturer states otherwise, how long may it be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Until the printed expiration date only"
+      },
+      {
+        "id": "b",
+        "text": "Until the end of the day it was opened"
+      },
+      {
+        "id": "c",
+        "text": "28 days after opening"
+      },
+      {
+        "id": "d",
+        "text": "90 days after opening if kept refrigerated"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "USP and CDC guidance: an opened multi-dose vial is discarded 28 days after first puncture unless the manufacturer specifies a different time, or at the expiration date if sooner.",
+    "distractorExplanations": {
+      "a": "Once opened, a multi-dose vial gets a shorter beyond-use date, usually 28 days.",
+      "b": "Same-day discard applies to single-dose vials or vials without preservative, not multi-dose vials.",
+      "d": "Refrigeration does not extend use to 90 days; the usual limit is 28 days."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-028",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "The provider orders 250 mg of a drug intramuscularly. The vial contains 500 mg per 2 mL. How many mL should be drawn up?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.5 mL"
+      },
+      {
+        "id": "b",
+        "text": "1 mL"
+      },
+      {
+        "id": "c",
+        "text": "2 mL"
+      },
+      {
+        "id": "d",
+        "text": "4 mL"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Desired ÷ have × volume = 250 mg ÷ 500 mg × 2 mL = 1 mL. Always double-check calculations and the label before drawing up a dose.",
+    "distractorExplanations": {
+      "a": "0.5 mL contains only 125 mg; the concentration is 250 mg per mL.",
+      "c": "2 mL contains the full 500 mg, twice the ordered dose.",
+      "d": "4 mL would contain 1,000 mg, four times the ordered dose."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-029",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "A tuberculin skin test (Mantoux) is placed on Monday morning. When should it be read?",
+    "options": [
+      {
+        "id": "a",
+        "text": "24 hours after placement"
+      },
+      {
+        "id": "b",
+        "text": "48–72 hours later"
+      },
+      {
+        "id": "c",
+        "text": "5–7 days later"
+      },
+      {
+        "id": "d",
+        "text": "2 weeks later"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The Mantoux test is 0.1 mL of PPD given intradermally. It is read 48–72 hours later by measuring the induration (not redness) in millimeters.",
+    "distractorExplanations": {
+      "a": "At 24 hours the induration may not have fully developed, which can give a false negative.",
+      "c": "After 72 hours the reaction may fade, so a new test is usually needed.",
+      "d": "Two weeks is far too late; the result cannot be read reliably."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-clinical-030",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "clinical",
+    "prompt": "After giving a vaccine to a teenager, how long does CDC recommend observing the patient for fainting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 minutes only"
+      },
+      {
+        "id": "b",
+        "text": "15 minutes"
+      },
+      {
+        "id": "c",
+        "text": "1 hour"
+      },
+      {
+        "id": "d",
+        "text": "24 hours"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "CDC recommends observing patients, especially adolescents, seated or lying down for 15 minutes after vaccination because syncope can cause falls and injuries.",
+    "distractorExplanations": {
+      "a": "Two minutes is too short; syncope after vaccination often occurs within 15 minutes.",
+      "c": "Routine observation is 15 minutes; longer observation is for patients with past severe reactions.",
+      "d": "Patients are not held for 24 hours after routine vaccination."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-016",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient with type 2 diabetes is prescribed metformin. Which drug class is it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Biguanide"
+      },
+      {
+        "id": "b",
+        "text": "DPP-4 inhibitor"
+      },
+      {
+        "id": "c",
+        "text": "Rapid-acting insulin"
+      },
+      {
+        "id": "d",
+        "text": "Sulfonylurea"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Metformin is a biguanide that lowers liver glucose production and improves insulin sensitivity. GI upset is common; it rarely causes hypoglycemia when used alone.",
+    "distractorExplanations": {
+      "b": "DPP-4 inhibitors such as sitagliptin end in -gliptin; metformin is a biguanide.",
+      "c": "Metformin is an oral tablet, not an injected insulin.",
+      "d": "Sulfonylureas such as glipizide stimulate insulin release; metformin is a biguanide."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-017",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient taking atorvastatin calls to report new, unexplained muscle pain and weakness. What should the medical assistant do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report it to the provider promptly"
+      },
+      {
+        "id": "b",
+        "text": "Reassure the patient that statins never cause muscle effects"
+      },
+      {
+        "id": "c",
+        "text": "Tell the patient to double the dose to clear the symptoms"
+      },
+      {
+        "id": "d",
+        "text": "Advise the patient to stop all medications at once"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Statins can cause muscle pain and, rarely, rhabdomyolysis. The MA documents the symptoms and notifies the provider, who decides on tests or changes.",
+    "distractorExplanations": {
+      "b": "Statins can cause myopathy and, rarely, rhabdomyolysis, so symptoms must be reported.",
+      "c": "Changing the dose is a provider decision, and more statin could worsen muscle injury.",
+      "d": "Stopping all medicines without provider direction can be dangerous."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-018",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "How should a patient usually take levothyroxine?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only on days when the patient feels tired"
+      },
+      {
+        "id": "b",
+        "text": "Empty stomach, 30–60 minutes before breakfast"
+      },
+      {
+        "id": "c",
+        "text": "At bedtime together with a calcium supplement"
+      },
+      {
+        "id": "d",
+        "text": "With a large breakfast to prevent stomach upset"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Levothyroxine is absorbed best on an empty stomach with water, 30–60 minutes before breakfast. Calcium, iron and antacids should be separated by about 4 hours.",
+    "distractorExplanations": {
+      "a": "Levothyroxine is taken daily for steady hormone levels, not as needed.",
+      "c": "Calcium and iron bind levothyroxine; they should be taken hours apart.",
+      "d": "Food, especially high-fiber or calcium-rich meals, reduces levothyroxine absorption."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-019",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient's chart lists a penicillin allergy. Which drug on a new prescription should the MA flag to the provider before it is given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Azithromycin"
+      },
+      {
+        "id": "b",
+        "text": "Amoxicillin"
+      },
+      {
+        "id": "c",
+        "text": "Doxycycline"
+      },
+      {
+        "id": "d",
+        "text": "Ciprofloxacin"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Amoxicillin is a penicillin-class antibiotic, so it can trigger a reaction in a penicillin-allergic patient. The MA flags the conflict to the provider before administration.",
+    "distractorExplanations": {
+      "a": "Azithromycin is a macrolide, a different class often used in penicillin-allergic patients.",
+      "c": "Doxycycline is a tetracycline and is not related to penicillin.",
+      "d": "Ciprofloxacin is a fluoroquinolone and is not a penicillin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-020",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient starts furosemide for fluid retention. Which electrolyte problem should the patient be monitored for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High calcium"
+      },
+      {
+        "id": "b",
+        "text": "High sodium"
+      },
+      {
+        "id": "c",
+        "text": "Low potassium"
+      },
+      {
+        "id": "d",
+        "text": "High potassium"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Loop diuretics such as furosemide increase urinary loss of sodium, potassium and fluid. Hypokalemia can cause weakness, cramps and arrhythmias, so levels are monitored.",
+    "distractorExplanations": {
+      "a": "Loop diuretics increase calcium excretion; high calcium is linked to thiazides.",
+      "b": "Loop diuretics cause sodium loss in the urine, not sodium retention.",
+      "d": "Furosemide increases potassium loss; high potassium is more typical of ACE inhibitors or kidney failure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-021",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "Which part of the nephron filters blood to begin urine formation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Glomerulus"
+      },
+      {
+        "id": "b",
+        "text": "Collecting duct"
+      },
+      {
+        "id": "c",
+        "text": "Proximal tubule"
+      },
+      {
+        "id": "d",
+        "text": "Loop of Henle"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Blood is filtered in the glomerulus, a capillary tuft inside Bowman's capsule. The filtrate then passes through the proximal tubule, loop of Henle, distal tubule and collecting duct.",
+    "distractorExplanations": {
+      "b": "Collecting ducts adjust water reabsorption under ADH and carry urine to the renal pelvis.",
+      "c": "The proximal tubule reabsorbs most filtered water, glucose and sodium after filtration.",
+      "d": "The loop of Henle concentrates urine by reabsorbing water and salt after filtration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-022",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient reports weight loss despite a good appetite, heat intolerance, a racing heart and nervousness. Which condition do these symptoms suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adrenal insufficiency"
+      },
+      {
+        "id": "b",
+        "text": "Type 1 diabetes"
+      },
+      {
+        "id": "c",
+        "text": "Hypothyroidism"
+      },
+      {
+        "id": "d",
+        "text": "Hyperthyroidism"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Excess thyroid hormone speeds metabolism, causing weight loss, heat intolerance, tachycardia, tremor and anxiety. Graves disease is the most common cause.",
+    "distractorExplanations": {
+      "a": "Adrenal insufficiency causes fatigue, low blood pressure and darkened skin rather than a racing heart.",
+      "b": "Diabetes causes weight loss with thirst and frequent urination, not heat intolerance and nervousness.",
+      "c": "Hypothyroidism causes weight gain, cold intolerance, fatigue and a slow heart rate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-023",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A provider's note says the patient has a colostomy. What does this term mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A surgical opening from the colon to the abdomen"
+      },
+      {
+        "id": "b",
+        "text": "A surgical repair of a narrowed segment of the colon"
+      },
+      {
+        "id": "c",
+        "text": "A surgical incision into the colon that is then closed"
+      },
+      {
+        "id": "d",
+        "text": "Surgical removal of the entire colon and rectum"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The suffix -ostomy means a surgically created opening; a colostomy brings the colon to an opening (stoma) on the abdomen. Compare -ectomy (removal), -otomy (incision) and -plasty (repair).",
+    "distractorExplanations": {
+      "b": "Surgical repair is -plasty; -ostomy is an opening to the outside.",
+      "c": "An incision is -otomy (colotomy); -ostomy creates a lasting opening.",
+      "d": "Removal is -ectomy (colectomy); -ostomy means a surgical opening."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-024",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A non-athletic adult has a resting pulse of 48 beats per minute. How is this documented?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tachycardia"
+      },
+      {
+        "id": "b",
+        "text": "Bradypnea"
+      },
+      {
+        "id": "c",
+        "text": "Arrhythmia"
+      },
+      {
+        "id": "d",
+        "text": "Bradycardia"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bradycardia is a heart rate below 60 beats per minute in an adult. It can be normal in trained athletes but should be reported in others, especially with dizziness.",
+    "distractorExplanations": {
+      "a": "Tachycardia is a heart rate over 100 beats per minute, the opposite of this finding.",
+      "b": "Bradypnea means slow breathing, not a slow heart rate.",
+      "c": "Arrhythmia describes an irregular rhythm; the finding here is a slow rate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-025",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "Which type of muscle tissue is striated but involuntary?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skeletal muscle"
+      },
+      {
+        "id": "b",
+        "text": "Smooth muscle"
+      },
+      {
+        "id": "c",
+        "text": "Cardiac muscle"
+      },
+      {
+        "id": "d",
+        "text": "Sphincter muscle"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cardiac muscle is striated like skeletal muscle but contracts involuntarily. Skeletal muscle is striated and voluntary; smooth muscle is non-striated and involuntary.",
+    "distractorExplanations": {
+      "a": "Skeletal muscle is striated but under voluntary control.",
+      "b": "Smooth muscle is involuntary but not striated; it lines organs and vessels.",
+      "d": "Sphincters can be smooth or skeletal; 'sphincter' describes function, not a tissue type."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-026",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient has trouble with balance and coordinated movement after a stroke. Which part of the brain is most likely affected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Occipital lobe"
+      },
+      {
+        "id": "b",
+        "text": "Medulla oblongata"
+      },
+      {
+        "id": "c",
+        "text": "Frontal lobe"
+      },
+      {
+        "id": "d",
+        "text": "Cerebellum"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The cerebellum coordinates balance, posture and smooth voluntary movement. Damage causes ataxia, unsteady gait and poor coordination.",
+    "distractorExplanations": {
+      "a": "The occipital lobe processes vision, not balance or coordination.",
+      "b": "The medulla controls breathing, heart rate and blood pressure rather than coordination.",
+      "c": "The frontal lobe handles planning, personality and voluntary movement, not balance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-027",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A prescription reads: 'Amoxicillin 500 mg, 1 cap PO tid.' What does this mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One capsule under the tongue three times a day"
+      },
+      {
+        "id": "b",
+        "text": "One capsule by mouth three times a day"
+      },
+      {
+        "id": "c",
+        "text": "One capsule by mouth four times a day"
+      },
+      {
+        "id": "d",
+        "text": "One capsule by mouth twice a day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "PO means by mouth; bid is twice daily, tid three times daily and qid four times daily. Abbreviations must be read carefully and clarified when unclear.",
+    "distractorExplanations": {
+      "a": "PO means by mouth (swallowed); sublingual is SL.",
+      "c": "Four times a day is qid; tid means three times a day.",
+      "d": "Twice a day is bid; tid means three times a day."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-028",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "Why is 'U' on The Joint Commission's 'Do Not Use' list as an abbreviation for units?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is the abbreviation for 'urine' only"
+      },
+      {
+        "id": "b",
+        "text": "It is a trademark of an insulin brand"
+      },
+      {
+        "id": "c",
+        "text": "It means 'under the tongue' in prescriptions"
+      },
+      {
+        "id": "d",
+        "text": "It can be misread as a 0 or a 4"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A handwritten 'U' can look like a 0 or 4, turning 10U into 100. The Joint Commission requires writing 'unit' or 'units' in full.",
+    "distractorExplanations": {
+      "a": "The issue is not a second meaning but a tenfold dose error from misreading.",
+      "b": "'U' is not a trademark; the problem is misreading it as a number.",
+      "c": "'U' does not mean sublingual; the danger is that it looks like a 0 or 4."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-029",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A patient on warfarin has a very high INR and minor bleeding. Which drug is the usual antidote the provider may order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naloxone"
+      },
+      {
+        "id": "b",
+        "text": "Vitamin K"
+      },
+      {
+        "id": "c",
+        "text": "Flumazenil"
+      },
+      {
+        "id": "d",
+        "text": "Protamine sulfate injection"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Warfarin blocks vitamin K-dependent clotting factors, so vitamin K (phytonadione) reverses its effect. Protamine reverses heparin, and naloxone reverses opioids.",
+    "distractorExplanations": {
+      "a": "Naloxone reverses opioids and has no effect on warfarin.",
+      "c": "Flumazenil reverses benzodiazepines, not anticoagulants.",
+      "d": "Protamine reverses heparin, not warfarin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-anatomy-pharm-030",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "anatomy-pharm",
+    "prompt": "A pregnant patient asks which vaccines she should avoid during pregnancy. Which vaccine is contraindicated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tdap (tetanus, diphtheria, pertussis)"
+      },
+      {
+        "id": "b",
+        "text": "Inactivated influenza vaccine"
+      },
+      {
+        "id": "c",
+        "text": "MMR (measles, mumps, rubella)"
+      },
+      {
+        "id": "d",
+        "text": "Hepatitis B vaccine"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Live vaccines such as MMR and varicella are contraindicated in pregnancy because of theoretical risk to the fetus. Tdap and inactivated influenza are recommended.",
+    "distractorExplanations": {
+      "a": "Tdap is recommended in each pregnancy, ideally at 27–36 weeks.",
+      "b": "Inactivated flu vaccine is recommended during pregnancy.",
+      "d": "Hepatitis B vaccine may be given in pregnancy when indicated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-016",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A clinic books three patients at 9:00, three at 10:00 and so on, seeing them in order of arrival within each hour. Which scheduling method is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stream scheduling"
+      },
+      {
+        "id": "b",
+        "text": "Wave scheduling"
+      },
+      {
+        "id": "c",
+        "text": "Open hours"
+      },
+      {
+        "id": "d",
+        "text": "Double booking"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Wave scheduling books several patients at the start of each hour and sees them as they arrive, absorbing late arrivals and no-shows while keeping the hour on track.",
+    "distractorExplanations": {
+      "a": "Stream scheduling gives each patient a separate, fixed time slot through the day.",
+      "c": "Open hours means patients walk in without appointments and are seen in arrival order.",
+      "d": "Double booking puts two patients in one slot on purpose, not several at the top of each hour."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-017",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient misses an appointment without calling. What should the medical assistant do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Charge the insurer for the missed visit"
+      },
+      {
+        "id": "b",
+        "text": "Delete the appointment so it does not affect statistics"
+      },
+      {
+        "id": "c",
+        "text": "Document the no-show in the record per policy"
+      },
+      {
+        "id": "d",
+        "text": "Leave the appointment as completed in the schedule"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "No-shows are recorded in the medical record and schedule. Repeated no-shows may need provider follow-up, especially for patients with serious conditions.",
+    "distractorExplanations": {
+      "a": "A missed visit is not a billable service to the payer.",
+      "b": "Deleting removes evidence of the missed visit, which matters for continuity of care and liability.",
+      "d": "Marking it completed misrepresents care that never happened."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-018",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "The office keeps a $100 petty cash fund. Receipts in the box total $37.50. How much cash should be in the box?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$37.50"
+      },
+      {
+        "id": "b",
+        "text": "$62.50"
+      },
+      {
+        "id": "c",
+        "text": "$100.00"
+      },
+      {
+        "id": "d",
+        "text": "$137.50"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A petty cash fund balances when cash plus receipts equals the fund amount: $100 − $37.50 = $62.50. The fund is replenished by the receipt total.",
+    "distractorExplanations": {
+      "a": "This is the receipt total; cash plus receipts must equal the $100 fund.",
+      "c": "If $37.50 was spent, the full $100 cannot still be in cash.",
+      "d": "Adding receipts to the fund double-counts the money already spent."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-019",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "When preparing checks for a bank deposit, what endorsement should the medical assistant stamp on the back?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient's account number in place of any endorsement"
+      },
+      {
+        "id": "b",
+        "text": "A blank endorsement with only the practice name"
+      },
+      {
+        "id": "c",
+        "text": "The provider's personal signature and home address"
+      },
+      {
+        "id": "d",
+        "text": "Restrictive: 'For Deposit Only' plus the account"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A restrictive endorsement ('For Deposit Only' plus the practice account) limits the check to deposit into that account, protecting it if it is lost or stolen.",
+    "distractorExplanations": {
+      "a": "An account number is not an endorsement and does not restrict the check.",
+      "b": "A blank endorsement makes the check payable to anyone who holds it if lost or stolen.",
+      "c": "Personal details do not restrict the check to the practice's account."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-020",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient's check is returned by the bank for non-sufficient funds (NSF). What should the medical assistant do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write off the balance as uncollectible right away"
+      },
+      {
+        "id": "b",
+        "text": "Tell the patient's employer about the bounced check"
+      },
+      {
+        "id": "c",
+        "text": "Redeposit the check repeatedly until it clears"
+      },
+      {
+        "id": "d",
+        "text": "Reverse the posting and contact the patient"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An NSF check means the payment did not go through. Reverse the posting, contact the patient to collect the amount and any returned-check fee per policy, and document the steps.",
+    "distractorExplanations": {
+      "a": "The balance is still owed; the practice should first try to collect it.",
+      "b": "Sharing payment problems with an employer violates patient privacy.",
+      "c": "Repeated deposits usually fail again and add more bank fees."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-021",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "The MA is on a call when a second line rings. What is the professional way to handle the first caller?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask if they can hold and wait for an answer"
+      },
+      {
+        "id": "b",
+        "text": "Put the first caller on hold without saying anything"
+      },
+      {
+        "id": "c",
+        "text": "Let the second line ring until the first call ends"
+      },
+      {
+        "id": "d",
+        "text": "Hang up on the first caller and call them back later"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ask the first caller whether they can hold and wait for an answer, so an emergency is not put on hold. Answer the second line, triage briefly and return promptly.",
+    "distractorExplanations": {
+      "b": "Placing a caller on hold without asking is unprofessional and could abandon an urgent call.",
+      "c": "Unanswered lines may miss an emergency; answer and triage briefly.",
+      "d": "Hanging up is unprofessional and may disconnect someone with an urgent need."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-022",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A specialist treating the practice's patient requests copies of recent lab results. Under HIPAA, what is required to send them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A court order before any records leave the office"
+      },
+      {
+        "id": "b",
+        "text": "A signed patient authorization for every record request"
+      },
+      {
+        "id": "c",
+        "text": "No authorization; treatment disclosures are permitted"
+      },
+      {
+        "id": "d",
+        "text": "Written approval from the practice's attorney first"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "HIPAA allows covered entities to share PHI with other providers for treatment without authorization. Verify the requester's identity and send the records securely.",
+    "distractorExplanations": {
+      "a": "Court orders are for legal proceedings, not routine treatment requests.",
+      "b": "HIPAA permits disclosures for treatment without the patient's authorization.",
+      "d": "Attorney approval is not required for treatment disclosures."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-023",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient's allowed amount for a procedure is $150. The deductible is met, and the plan pays 80%. How much is the patient's coinsurance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$20"
+      },
+      {
+        "id": "b",
+        "text": "$30"
+      },
+      {
+        "id": "c",
+        "text": "$120"
+      },
+      {
+        "id": "d",
+        "text": "$150"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "After the deductible is met, the plan pays 80% ($120) and the patient pays 20% coinsurance: 0.20 × $150 = $30.",
+    "distractorExplanations": {
+      "a": "$20 is not 20% of $150; coinsurance is 20% of the allowed amount, or $30.",
+      "c": "$120 is the plan's 80% share, not the patient's portion.",
+      "d": "The patient owes the full allowed amount only before the deductible is met."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-024",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "Which part of Original Medicare covers physician office visits and outpatient services?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Part D"
+      },
+      {
+        "id": "b",
+        "text": "Part B"
+      },
+      {
+        "id": "c",
+        "text": "Part C"
+      },
+      {
+        "id": "d",
+        "text": "Part A"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Medicare Part B is medical insurance for physician services, outpatient care, preventive services and durable medical equipment. Part A covers inpatient care and Part D covers prescription drugs.",
+    "distractorExplanations": {
+      "a": "Part D covers outpatient prescription drugs.",
+      "c": "Part C is Medicare Advantage, private plans that replace Original Medicare Parts A and B.",
+      "d": "Part A covers inpatient hospital, skilled nursing facility, hospice and some home health care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-025",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A patient presents an ID card for health coverage as the spouse of an active-duty service member. Which program provides this coverage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "TRICARE"
+      },
+      {
+        "id": "b",
+        "text": "Medicaid"
+      },
+      {
+        "id": "c",
+        "text": "CHAMPVA"
+      },
+      {
+        "id": "d",
+        "text": "Medicare"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "TRICARE is the health program for active-duty and retired service members and their families. CHAMPVA covers dependents of veterans with permanent service-connected disabilities.",
+    "distractorExplanations": {
+      "b": "Medicaid is a state-federal program based on income and eligibility, not military status.",
+      "c": "CHAMPVA covers families of certain disabled or deceased veterans, not active-duty families.",
+      "d": "Medicare covers people 65 and older or with certain disabilities, not military families."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-026",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "In a SOAP note, where does 'BP 150/95, pulse 88, temperature 98.6 °F' belong?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assessment"
+      },
+      {
+        "id": "b",
+        "text": "Plan"
+      },
+      {
+        "id": "c",
+        "text": "Subjective"
+      },
+      {
+        "id": "d",
+        "text": "Objective"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Measured findings such as vital signs, exam results and test values go in Objective. Subjective is the patient's report, Assessment the provider's conclusion and Plan the next steps.",
+    "distractorExplanations": {
+      "a": "Assessment is the provider's diagnosis or impression.",
+      "b": "Plan lists treatments, tests and follow-up.",
+      "c": "Subjective is what the patient reports, such as symptoms and history."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-027",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "When assigning an ICD-10-CM code, what should be done after finding a term in the Alphabetic Index?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify the code in the Tabular List"
+      },
+      {
+        "id": "b",
+        "text": "Look up the code in the CPT manual to confirm it"
+      },
+      {
+        "id": "c",
+        "text": "Pick the shortest code to keep the claim simple"
+      },
+      {
+        "id": "d",
+        "text": "Report the Index code directly on the claim"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Alphabetic Index points to a code, but the Tabular List confirms it, shows required 6th or 7th characters and lists notes such as Excludes1, Excludes2 and 'code first.'",
+    "distractorExplanations": {
+      "b": "CPT reports procedures and services, so it cannot confirm a diagnosis code.",
+      "c": "Codes must be reported to the highest specificity documented.",
+      "d": "Index entries may be incomplete; the Tabular List shows full codes and instructional notes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-028",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "After explaining how to use a home glucose meter, how can the medical assistant best confirm the patient understood?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask 'Do you understand?' and accept a yes"
+      },
+      {
+        "id": "b",
+        "text": "Have the patient teach the steps back"
+      },
+      {
+        "id": "c",
+        "text": "Give a printed handout and end the visit"
+      },
+      {
+        "id": "d",
+        "text": "Repeat the instructions louder and faster"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The teach-back method asks patients to explain or demonstrate the instructions in their own words, which reveals gaps that can be corrected before they leave.",
+    "distractorExplanations": {
+      "a": "A yes often hides confusion; patients may agree to avoid embarrassment.",
+      "c": "Handouts help, but they do not confirm understanding.",
+      "d": "Repeating louder or faster does not check understanding and may confuse more."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-029",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "When scheduling a new patient appointment, which information should the medical assistant collect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the patient's name and a phone number"
+      },
+      {
+        "id": "b",
+        "text": "Full medical history over the phone before booking"
+      },
+      {
+        "id": "c",
+        "text": "Name, birth date, contact, insurance and visit reason"
+      },
+      {
+        "id": "d",
+        "text": "The patient's Social Security number before anything else"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Collect identifying, contact and insurance details plus the reason for the visit so eligibility can be checked and the right appointment type and length booked.",
+    "distractorExplanations": {
+      "a": "Missing insurance and visit reason lead to eligibility problems and wrong appointment lengths.",
+      "b": "Detailed history is taken at intake by clinical staff, not during scheduling.",
+      "d": "SSNs are not always required and should be collected only when necessary."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-admin-030",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "admin",
+    "prompt": "A claim is ready to send. Which document should the medical assistant compare with it to confirm that all services from the visit are billed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The encounter form and visit note"
+      },
+      {
+        "id": "b",
+        "text": "Last year's claim for the same patient"
+      },
+      {
+        "id": "c",
+        "text": "The practice's fee schedule only"
+      },
+      {
+        "id": "d",
+        "text": "The patient's insurance card only"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Comparing the claim with the encounter form and documentation catches missed or extra charges and confirms codes match what the provider recorded.",
+    "distractorExplanations": {
+      "b": "Past claims do not show what happened at this visit.",
+      "c": "The fee schedule lists prices, not the services provided at this visit.",
+      "d": "The card confirms coverage details but not which services were performed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-016",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "An MA is stuck by a used needle while disposing of it. What should be done first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wash with soap and water and report it now"
+      },
+      {
+        "id": "b",
+        "text": "Finish the shift and report it the next morning"
+      },
+      {
+        "id": "c",
+        "text": "Do nothing unless the patient is known to have HIV"
+      },
+      {
+        "id": "d",
+        "text": "Squeeze the wound hard and apply bleach to the site"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Wash needlestick wounds with soap and water, report immediately and get a medical evaluation. OSHA requires the employer to provide post-exposure evaluation and follow-up at no cost.",
+    "distractorExplanations": {
+      "b": "Post-exposure evaluation is time-sensitive; prophylaxis works best within hours.",
+      "c": "Any exposure needs reporting and evaluation, since status is often unknown.",
+      "d": "Squeezing and bleach are not recommended and can damage tissue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-017",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A medical assistant spills a cleaning chemical and wants to know the first aid and cleanup steps. Where should she look?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The manufacturer's sales brochure"
+      },
+      {
+        "id": "b",
+        "text": "The OSHA 300 injury log"
+      },
+      {
+        "id": "c",
+        "text": "The practice's exposure control plan"
+      },
+      {
+        "id": "d",
+        "text": "The product's Safety Data Sheet"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under OSHA's Hazard Communication Standard, each chemical has a Safety Data Sheet with hazards, first aid, spill cleanup and PPE, and SDSs must be accessible to staff.",
+    "distractorExplanations": {
+      "a": "Sales materials do not contain the required hazard and first-aid sections.",
+      "b": "The OSHA 300 log records workplace injuries; it does not give chemical handling steps.",
+      "c": "The exposure control plan covers bloodborne pathogens, not chemical hazards."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-018",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A chemical splashes into an MA's eyes. How long should the eyes be flushed at the eyewash station?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 30 seconds only"
+      },
+      {
+        "id": "b",
+        "text": "About 2 minutes"
+      },
+      {
+        "id": "c",
+        "text": "About 5 minutes"
+      },
+      {
+        "id": "d",
+        "text": "15 minutes or more"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Eyes exposed to chemicals should be flushed for at least 15 minutes with eyelids held open, then evaluated medically. Check the SDS for product-specific guidance.",
+    "distractorExplanations": {
+      "a": "Thirty seconds will not remove the chemical; flushing must continue much longer.",
+      "b": "Two minutes is too short to clear most chemical splashes.",
+      "c": "Five minutes is still shorter than the standard minimum of 15 minutes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-019",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A small fire starts in an exam room with a patient inside. Using the RACE acronym, what is the first step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rescue anyone in immediate danger"
+      },
+      {
+        "id": "b",
+        "text": "Contain the fire by closing doors and windows"
+      },
+      {
+        "id": "c",
+        "text": "Activate the alarm before helping anyone leave"
+      },
+      {
+        "id": "d",
+        "text": "Extinguish the fire with the nearest extinguisher"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RACE: Rescue people in immediate danger, Alarm (pull the alarm, call 911), Contain (close doors) and Extinguish or Evacuate. Use PASS to operate an extinguisher.",
+    "distractorExplanations": {
+      "b": "Containing comes after rescue and alarm.",
+      "c": "Alarm is the second step; people in immediate danger are moved first.",
+      "d": "Extinguishing is the last step and only for small fires."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-020",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A medical assistant makes an error while performing a delegated task within her job duties, and a patient is harmed. Under respondeat superior, who may be held liable?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The employer, as well as the MA"
+      },
+      {
+        "id": "b",
+        "text": "Only the MA, because she made the mistake"
+      },
+      {
+        "id": "c",
+        "text": "No one, because the task was delegated"
+      },
+      {
+        "id": "d",
+        "text": "Only the patient, who accepted the risk"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Respondeat superior ('let the master answer') holds employers liable for employees' negligent acts within the scope of employment. The employee may also be liable.",
+    "distractorExplanations": {
+      "b": "Respondeat superior makes employers liable for employees' acts within the scope of employment.",
+      "c": "Delegation does not remove liability; employer and employee may both be responsible.",
+      "d": "Patients do not assume liability for staff errors."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-021",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A physician wants to stop treating a patient who repeatedly misses appointments. How should this be done to avoid abandonment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send written notice and give time to find a new provider"
+      },
+      {
+        "id": "b",
+        "text": "Simply stop scheduling the patient without telling them"
+      },
+      {
+        "id": "c",
+        "text": "Refuse to send records to the next provider"
+      },
+      {
+        "id": "d",
+        "text": "Tell the patient at the front desk that they are dismissed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "To withdraw from a case, send a letter (often certified) stating the reason and an end date, give reasonable time (often 30 days) to find another provider, and offer records transfer.",
+    "distractorExplanations": {
+      "b": "Ending care without notice can be patient abandonment.",
+      "c": "Withholding records harms continuity of care and may violate law.",
+      "d": "A verbal dismissal without written notice and transition time is risky."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-022",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "The office receives a subpoena duces tecum for a patient's chart. What does it require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Appearing in court to testify, without any records"
+      },
+      {
+        "id": "b",
+        "text": "Destroying the records to protect patient privacy"
+      },
+      {
+        "id": "c",
+        "text": "Producing the specified records by the stated date"
+      },
+      {
+        "id": "d",
+        "text": "Sending the records directly to the patient"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A subpoena duces tecum orders the production of documents, such as medical records. Route it to the privacy or records officer, who verifies it and releases only what is required.",
+    "distractorExplanations": {
+      "a": "A subpoena to testify is a subpoena ad testificandum; duces tecum requires documents.",
+      "b": "Destroying subpoenaed records is illegal and can be obstruction.",
+      "d": "The records go to the requesting court or party per the subpoena and policy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-023",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A physician asks the MA to give an IV push medication. State law and the MA's training do not permit this. What should the MA do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it, since the physician has authorized it"
+      },
+      {
+        "id": "b",
+        "text": "Decline and explain it is outside MA scope"
+      },
+      {
+        "id": "c",
+        "text": "Give half the dose to reduce the risk"
+      },
+      {
+        "id": "d",
+        "text": "Give it if a nurse watches from the doorway"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "MA scope is set by state law, employer policy and training. IV push medications are generally outside MA scope; the MA should decline respectfully and suggest a licensed clinician.",
+    "distractorExplanations": {
+      "a": "A physician's request cannot expand an MA's scope beyond state law.",
+      "c": "Altering a dose is unsafe and still outside scope.",
+      "d": "Observation does not make an out-of-scope task legal for an MA."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-024",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A deaf patient who uses American Sign Language asks for an interpreter for her appointment. Under the ADA, what must the practice do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provide one only if she pays the interpreter's fee"
+      },
+      {
+        "id": "b",
+        "text": "Use written notes for all communication instead"
+      },
+      {
+        "id": "c",
+        "text": "Ask her to bring a family member to interpret"
+      },
+      {
+        "id": "d",
+        "text": "Provide a qualified interpreter at no charge"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under the ADA, providers must give effective communication, including qualified sign language interpreters when needed, at no cost to the patient.",
+    "distractorExplanations": {
+      "a": "The ADA bars charging the patient for auxiliary aids.",
+      "b": "Notes may work for simple exchanges but not when complex communication is needed.",
+      "c": "Family members are not qualified interpreters and may compromise accuracy and privacy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-025",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A patient with limited English proficiency arrives with her 10-year-old son, who offers to interpret. What is the best practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reschedule until the patient learns more English"
+      },
+      {
+        "id": "b",
+        "text": "Use a qualified medical interpreter"
+      },
+      {
+        "id": "c",
+        "text": "Speak slowly in English and use hand gestures"
+      },
+      {
+        "id": "d",
+        "text": "Let the son interpret, since he speaks both languages"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Federal civil rights rules (Title VI, Section 1557) require meaningful language access. Use a qualified medical interpreter in person, by phone or video, not minors or untrained family.",
+    "distractorExplanations": {
+      "a": "Delaying care because of language may violate civil rights rules.",
+      "c": "Gestures and slow English do not ensure the patient understands medical information.",
+      "d": "Children are not qualified interpreters and should not hear sensitive health information."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-026",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "After surgery, an X-ray shows a sponge left in the patient's abdomen. Which legal doctrine lets the patient argue negligence without expert testimony?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Respondeat superior"
+      },
+      {
+        "id": "b",
+        "text": "Locum tenens"
+      },
+      {
+        "id": "c",
+        "text": "Subpoena duces tecum"
+      },
+      {
+        "id": "d",
+        "text": "Res ipsa loquitur"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Res ipsa loquitur ('the thing speaks for itself') applies when an injury would not normally occur without negligence, such as a retained sponge, so expert testimony is not needed.",
+    "distractorExplanations": {
+      "a": "Respondeat superior concerns employer liability for employees, not proving negligence.",
+      "b": "Locum tenens describes a temporary substitute physician, not a legal doctrine of negligence.",
+      "c": "A subpoena duces tecum orders documents; it is not a negligence doctrine."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-027",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A patient rolls up her sleeve and holds out her arm when the MA says it is time for her flu shot. What type of consent is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Consent by a legal proxy"
+      },
+      {
+        "id": "b",
+        "text": "Expressed written consent"
+      },
+      {
+        "id": "c",
+        "text": "Informed consent for surgery"
+      },
+      {
+        "id": "d",
+        "text": "Implied consent"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Implied consent is shown by the patient's actions, such as rolling up a sleeve for an injection. Invasive or higher-risk procedures need express informed consent, usually in writing.",
+    "distractorExplanations": {
+      "a": "A proxy consents for a patient who cannot; this patient acted for herself.",
+      "b": "Written consent is a signed document; no form was signed here.",
+      "c": "Informed consent for procedures involves disclosure of risks by the provider and is usually written."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-028",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A lab result confirms measles in a clinic patient. Who must be notified under public health law?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient's insurance company"
+      },
+      {
+        "id": "b",
+        "text": "The state or local health department"
+      },
+      {
+        "id": "c",
+        "text": "Only the patient's employer"
+      },
+      {
+        "id": "d",
+        "text": "No one, because of HIPAA privacy rules"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Measles and other reportable diseases must be reported to the state or local health department within set time frames. HIPAA allows these disclosures without authorization.",
+    "distractorExplanations": {
+      "a": "Insurers do not handle communicable disease reporting.",
+      "c": "Employers are not the reporting authority and should not receive PHI without authorization.",
+      "d": "HIPAA permits disclosures required by law, including public health reporting."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-029",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A practice stocks controlled substances. How often does the DEA require a complete inventory of them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every month"
+      },
+      {
+        "id": "b",
+        "text": "Every 2 years"
+      },
+      {
+        "id": "c",
+        "text": "Only when the DEA registration is first issued"
+      },
+      {
+        "id": "d",
+        "text": "Every 5 years"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "DEA registrants must take an initial inventory and a complete biennial inventory every 2 years, and keep controlled substance records for at least 2 years.",
+    "distractorExplanations": {
+      "a": "Monthly counts are good practice in many offices but are not the DEA's complete inventory requirement.",
+      "c": "An initial inventory is required, but so is a new one every two years.",
+      "d": "Five years is too long; the DEA requires a biennial inventory."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aama-cma-readiness-check-law-ethics-030",
+    "examSlug": "aama-cma-readiness-check",
+    "topicId": "law-ethics",
+    "prompt": "A male provider is about to perform a breast exam on a female patient. What is the best practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a chaperone only if the patient is a minor"
+      },
+      {
+        "id": "b",
+        "text": "Offer a chaperone and document it"
+      },
+      {
+        "id": "c",
+        "text": "Skip the chaperone if the patient seems comfortable"
+      },
+      {
+        "id": "d",
+        "text": "Ask a family member to stay as the chaperone"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Offering a trained chaperone for sensitive exams protects the patient's comfort and dignity and the provider from misunderstandings. Document the offer and whether it was accepted.",
+    "distractorExplanations": {
+      "a": "Chaperones are recommended for sensitive exams in adults too.",
+      "c": "A chaperone should be offered regardless; comfort can change and protection matters for both.",
+      "d": "Family members are not neutral chaperones; trained staff are preferred."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
   }
 ]

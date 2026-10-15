@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 49 | 31 |
+| ok | 50 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 23 | 2 |
 | point-fix | 0 | 0 |
-| rewrite | 105 | 31 |
+| rewrite | 104 | 31 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -52,7 +52,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `us-citizenship-readiness-check` | live | 30 / 128 | — | FAIL (120 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | rewrite | `va-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wa-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `aama-cma-readiness-check` | planned | 60 / 60 | — | FAIL (7 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `aapc-cpc-readiness-check` | planned | 60 / 60 | — | FAIL (5 items + bank-level): duplicate prompts, near-duplicate / templated stems (>=0.8), template/thin distractor notes, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `alcohol-server-readiness-check` | planned | 60 / 60 | — | FAIL (55 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `aspt-phlebotomy-readiness-check` | planned | 60 / 60 | — | FAIL (60 items): distractor; bank 60 for 60Q session; no content review in ledger |
@@ -180,6 +179,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `sie-quick-diagnostic` | live | 25 / 150 | 2026-10-15 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
+| ok | `aama-cma-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `aapc-ccs-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `amt-rma-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
