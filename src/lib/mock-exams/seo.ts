@@ -149,7 +149,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free ServSafe Manager Practice Test",
     intro:
-      "A full-length ServSafe Manager / CFPM-style mock: 90 questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target with topic scoring — then drill weak domains in the linked $19 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
+      "A full-length ServSafe Manager / CFPM-style mock: 90 questions drawn from a 180-question original bank (retakes see new questions), 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target with topic scoring — then drill weak domains in the linked $19 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
     audience:
       "Restaurant managers, kitchen supervisors, hospitality students, and CFPM candidates who need a timed food safety baseline before exam day.",
     practiceTestLabel: "ServSafe Manager practice test",

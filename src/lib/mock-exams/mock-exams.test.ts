@@ -536,7 +536,7 @@ describe("question bank from deck content", () => {
   it("loads a complete ServSafe Manager bank sourced from deck CSV export", () => {
     const { questions, errors } = getQuestionBankForExam("servsafe-manager-mock");
     expect(errors).toEqual([]);
-    expect(questions).toHaveLength(90);
+    expect(questions).toHaveLength(180);
     expect(questions[0]?.sourceNote).toContain("servsafe_manager_300_authored.csv");
   });
 
