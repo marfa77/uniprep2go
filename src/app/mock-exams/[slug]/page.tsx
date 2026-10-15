@@ -67,6 +67,7 @@ import { getLiveQuestionBank } from "@/lib/mock-exams/question-bank-ops";
 import { isMockExamRunnableFromQuestions } from "@/lib/mock-exams/question-bank";
 import { isMockPaywallEnabled } from "@/lib/mock-exams/mock-pass";
 import {
+  buildMockAnswerBlock,
   buildMockSeoDescription,
   buildMockSeoKeywords,
   buildMockSeoPageCopy,
@@ -224,6 +225,7 @@ export default async function MockExamPage({
   const showHeroAccessCta =
     Boolean(accessState) && config.status !== "coming_soon" && runnable && isMockPaywallEnabled();
   const heroDeckHidden = citizenshipGuide?.deckCta === "hidden";
+  const answerBlock = runnable ? buildMockAnswerBlock(config) : null;
 
   return (
     <main className="min-h-screen bg-[#f7f3ea] text-[#18140f]">
@@ -262,6 +264,11 @@ export default async function MockExamPage({
             linkedCheckout={heroDeckHidden ? null : linkedCheckout}
             linkedDeck={heroDeckHidden ? undefined : linkedDeck}
           />
+        ) : null}
+        {answerBlock ? (
+          <p className="mt-4 max-w-3xl text-base leading-7 text-[#18140f]" data-llm="answer" id="mock-answer">
+            {answerBlock}
+          </p>
         ) : null}
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
 

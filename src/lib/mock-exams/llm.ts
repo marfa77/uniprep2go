@@ -2,6 +2,7 @@ import { getCatalogDeckBySlug, getDeckBySlug } from "../decks";
 import { getAllMockExams, getMockExamConfig } from "./configs";
 import {
   buildMockExamFaqs,
+  buildMockAnswerBlock,
   buildMockSeoDescription,
   buildMockSeoPageCopy,
   getMockSeoProfile,
@@ -159,10 +160,12 @@ export function buildMockExamMarkdown(config: MockExamConfig) {
         ? `- [Official resources](${official.verifyAtUrl})`
         : "- See the certifying body’s published candidate handbook for current fees and scheduling.";
 
+  const answerBlock = buildMockAnswerBlock(config);
+
   return `# ${seo.headline}
 
 > ${buildMockSeoDescription(config)}
-
+${answerBlock ? `\n${answerBlock}\n` : ""}
 ## ${pageCopy.whatIsHeading}
 
 ${pageCopy.whatIsExam}
@@ -290,14 +293,15 @@ export function buildFeaturedMockItemListJsonLd(slugs: string[]) {
 export function buildMockExamPageJsonLd(config: MockExamConfig) {
   const faqs = buildMockExamFaqs(config);
   const pageUrl = absoluteUrl(`/mock-exams/${config.slug}`);
+  const { freeQuestionCount, freeDurationMinutes } = freeSessionFacts(config);
   const mockOffers =
     config.status === "coming_soon"
       ? undefined
       : [
           {
             "@type": "Offer",
-            name: "First mock attempt",
-            description: "One free attempt on any UniPrep2Go mock, Exam or Learn mode, no signup.",
+            name: `Free ${freeQuestionCount}-question diagnostic`,
+            description: `${freeVersionLine(config).replace(/^free/, "Free")}. Full topic report and answer review included, Exam or Learn mode.`,
             price: 0,
             priceCurrency: "USD",
             availability: "https://schema.org/InStock",
@@ -339,6 +343,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         name: config.title,
         description: seoDescription,
         url: pageUrl,
+        dateModified: config.lastUpdated,
         primaryImageOfPage: {
           "@type": "ImageObject",
           url: clusterImage,
@@ -357,6 +362,7 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         url: pageUrl,
         educationalLevel: "Professional certification prep",
         numberOfQuestions: config.questionCount,
+        timeRequired: `PT${freeDurationMinutes}M`,
         about: certifierOrg,
         isAccessibleForFree: config.accessMode === "free_demand_test",
         offers: mockOffers,

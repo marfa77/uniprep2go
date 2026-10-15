@@ -84,11 +84,15 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
     };
   }
 
+  const fullMockClause = hasShortFreeDiagnostic(config)
+    ? `Full mock: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target ($${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts).`
+    : `${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target.`;
+
   return {
     title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
     description: niche
-      ? `${practiceName}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, and answer review — ${freeAccessClause(config)}, no signup. ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
-      : `Online ${examLabel} ${type}: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, topic scoring, answer review, and pass/no-pass report — ${freeAccessClause(config)}, no signup. Independent prep — not official exam material.`,
+      ? `${practiceName.replace(/^Free\s+/i, "")}: ${freeAccessClause(config)}, no signup, full topic report and answer review. ${fullMockClause} ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
+      : `${examLabel} ${type}: ${freeAccessClause(config)}, no signup, full topic report and answer review. ${fullMockClause} Independent prep — not official exam material.`,
     keywords: [
       ...(niche?.keywords ?? []),
       `free ${config.shortTitle.toLowerCase()} practice test`,
@@ -1576,8 +1580,56 @@ export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {
   };
 }
 
+/** FINRA mock titles stay frozen while `sie-full-mock` is unknown to Google (SEO dual-track rule). */
+const MOCK_TITLE_FROZEN = new Set([
+  "sie-full-mock",
+  "sie-quick-diagnostic",
+  "series-7-readiness-check",
+  "series-63-readiness-check",
+]);
+
+/** Drops a half-cut trailing " | " segment instead of leaving "| 60" or "(80" in the SERP title. */
+function fitMockTitle(title: string) {
+  const trimmed = title.trim();
+  if (trimmed.length <= SEO_TITLE_MAX) return trimmed;
+  const parts = trimmed.split(" | ");
+  while (parts.length > 1) {
+    parts.pop();
+    const candidate = parts.join(" | ");
+    if (candidate.length <= SEO_TITLE_MAX) return candidate;
+  }
+  return fitSeoTitle(trimmed, SEO_TITLE_MAX).replace(/[\s|,:;(—–-]+$/, "");
+}
+
+/** "{head} | 25Q Free, 60Q Timed" — the free diagnostic is the SERP promise, not the full-mock length. */
+function mockOfferTitle(head: string, config: MockExamConfig) {
+  const tails = hasShortFreeDiagnostic(config)
+    ? [
+        `${FREE_DIAGNOSTIC_QUESTIONS}Q Free, ${config.questionCount}Q Timed`,
+        `${FREE_DIAGNOSTIC_QUESTIONS}Q Free`,
+      ]
+    : [`${config.questionCount}Q Free, Timed`];
+  const withoutYear = head.replace(/\s+2026\b/, "");
+  const heads = [...new Set([head, withoutYear, withoutYear.replace(/^Free\s+/i, "")])];
+  for (const candidateHead of heads) {
+    for (const tail of tails) {
+      const candidate = `${candidateHead} | ${tail}`;
+      if (candidate.length <= SEO_TITLE_MAX) return candidate;
+    }
+  }
+  return fitMockTitle(head);
+}
+
 export function buildMockSeoTitle(config: MockExamConfig) {
-  return fitSeoTitle(getMockSeoProfile(config).title, SEO_TITLE_MAX);
+  const title = getMockSeoProfile(config).title;
+  if (
+    config.status === "coming_soon" ||
+    MOCK_TITLE_FROZEN.has(config.slug) ||
+    /\b\d+Q Free\b/i.test(title)
+  ) {
+    return fitMockTitle(title);
+  }
+  return mockOfferTitle(title.split(" | ")[0], config);
 }
 
 export function buildMockSeoDescription(config: MockExamConfig) {
@@ -1622,6 +1674,18 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
         ? `The planned UniPrep2Go readiness check will have ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target. ${config.officialSourceNote}`
         : `This UniPrep2Go ${config.status === "live" ? "practice test" : "readiness check"} has ${config.questionCount} multiple-choice questions timed against a ${config.durationMinutes}-minute target.${hasShortFreeDiagnostic(config) ? ` The free first attempt is a ${FREE_DIAGNOSTIC_QUESTIONS}-question / ${freeDiagnosticMinutes(config)}-minute diagnostic with the same topic weights; the full session runs on Mock Pass.` : ""} ${config.officialSourceNote}`,
     },
+    ...(waitlist || !hasShortFreeDiagnostic(config)
+      ? []
+      : [
+          {
+            question: `Why is the free ${profile.practiceTestLabel} ${FREE_DIAGNOSTIC_QUESTIONS} questions?`,
+            answer: `It is a diagnostic: ${FREE_DIAGNOSTIC_QUESTIONS} questions drawn by the same topic weights as the full ${config.questionCount}-question mock — enough to rank your weakest topics, short enough to finish in ${freeDiagnosticMinutes(config)} minutes in one sitting. With 1–6 questions per topic it is a quick read, not a verdict; for a full-length timed score, run the ${config.questionCount}-question / ${config.durationMinutes}-minute mock.`,
+          },
+          {
+            question: `What do I get for $${MOCK_PASS_PRICE_USD}?`,
+            answer: `The ${MOCK_PASS_NAME}: ${MOCK_PASS_ATTEMPTS} full timed attempts on any ${siteConfig.name} mock, including the ${config.questionCount}-question ${config.shortTitle} session, in Exam or Learn mode. It is a one-time Gumroad license key that works on any device — no subscription. Every attempt ends with the full topic report and answer review.`,
+          },
+        ]),
     {
       question: `What score do you need on this ${profile.practiceTestLabel}?`,
       answer: `The pass target on this practice test is ${config.passRule.passPercent}%. ${waitlist ? "When the bank launches, " : ""}Your report also breaks down performance by topic so you can see weak areas before the real exam.`,
@@ -1643,7 +1707,7 @@ export function buildMockExamFaqs(config: MockExamConfig) {
     ? config.questionSourceNote
     : "Questions are original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.";
 
-  return [
+  const faqs = [
     ...buildMockSearchFaqs(config),
     {
       question: `Where can I take a ${profile.practiceTestLabel} online?`,
@@ -1664,6 +1728,23 @@ export function buildMockExamFaqs(config: MockExamConfig) {
       answer: bankNote,
     },
   ];
+  const seen = new Set<string>();
+  return faqs.filter((faq) => {
+    const key = faq.question.trim().toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+}
+
+/** First extractable sentence on the landing: what the free run is, what the full mock costs. */
+export function buildMockAnswerBlock(config: MockExamConfig) {
+  if (config.status === "coming_soon") return null;
+  const label = getMockSeoProfile(config).practiceTestLabel;
+  if (!hasShortFreeDiagnostic(config)) {
+    return `${siteConfig.name}'s free ${label} is a ${config.questionCount}-question, ${config.durationMinutes}-minute timed mock with a free topic report and answer review — no email, no account.`;
+  }
+  return `${siteConfig.name}'s free ${label} is a ${FREE_DIAGNOSTIC_QUESTIONS}-question, ${freeDiagnosticMinutes(config)}-minute timed diagnostic with a free topic report and answer review — no email, no account. The full mock is ${config.questionCount} questions / ${config.durationMinutes} minutes on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (${MOCK_PASS_ATTEMPTS} attempts on any mock).`;
 }
 
 export function buildMockSeoPageCopy(config: MockExamConfig) {

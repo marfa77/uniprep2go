@@ -2,7 +2,31 @@
 
 Приоритизированный список задач по продукту, сайту и каталогу колод.
 
-Обновлено: 2026-07-15
+Обновлено: 2026-10-15
+
+---
+
+## Mock landings — остаток спеки `mock-landings-strongest-spec-2026-10-15.md` (2026-10-15)
+
+Сделано 2026-10-15: тайтлы `| 25Q Free, NQ Timed` без обрезков (SIE/7/63 заморожены), meta с free 25Q первым, FAQ «Why 25 questions?» + «What do I get for $5?» + дедуп вопросов, JSON-LD Offer «Free 25-question diagnostic» + `timeRequired` + `dateModified`, answer-абзац в hero и в `/markdown`.
+
+**Блокеры / решения пользователя**
+- [ ] **Счётчик «N people have started» — маркетинговый пол** (`src/lib/social-proof.ts`: S 260–480, A 110–230 при реальных единицах). Спека требует SSR + «no invented counts». Решить: убрать полы (показывать только реальное, скрывать < 50) или оставить. Пока не SSR. То же для `deckPurchases`.
+- [ ] Mock Pass кнопка в hero для страниц без live-деки: ключ вводится только на paywall после free attempt → купивший с лендинга сначала получит 25Q. Сначала добавить «Have a key?» на старте раннера, потом кнопку.
+
+**Контент (нужны проверенные факты)**
+- [ ] Таблица «Free {exam} practice options compared» (S5) для P1: CFA L1/L2, FRM, SIE, Series 7/63/65, PTCB, ServSafe, LEED GA, PMP, Life in the UK — только строки с источником + «checked {date}».
+- [ ] Urgency strip (даты окон) — только с официальной ссылкой (CFA L1 Nov 2026 — сверить на cfainstitute.org).
+- [ ] S3 «Example report layout» (скрин реального отчёта).
+- [ ] S7 bundle-блок (Mock Pass + дека) — после решения по hero-кнопке.
+
+**Банки без SSR samples (fragment-стемы «DMAIC stands for:» — rewrite банка, не шаблон)**
+- [ ] `six-sigma-green-belt-readiness-check` (traffic-priority), `nabcep-associate-readiness-check`, `forklift-operator-readiness-check`, `alcohol-server-readiness-check`.
+
+**Хвосты top-10 traffic pass**
+- [ ] FL real estate: FAIL fix + 60→120 + live wave-deck cascade.
+- [ ] ascp-mlt 60→120; rd-exam (банк 240 или сессия 60 — решение).
+- [ ] Planned deck `cardCount` 60→120 в `wave-deck-specs.json` для 7 SKU 2026-10-15.
 
 ---
 
