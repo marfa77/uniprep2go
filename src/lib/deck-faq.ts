@@ -55,7 +55,7 @@ function buildExamFaqs(deck: Deck): DeckFaq[] {
     faqs.push({
       question: "Does this pair with the CFA Level 1 Anki deck?",
       answer:
-        "Yes. The PDF and 348-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the 80-question recall drill; use Anki for daily spaced-repetition on your phone.",
+        "Yes, as two different tools. The PDF is a lookup sheet: 250 formulas and 98 definitions in tables, plus an 80-question recall drill. The 348-card Anki deck is separate practice weighted to the 2026 topic ranges, with a short case or calculation on every front and a worked example and common mistake on every back. Use the PDF to look things up and Anki for daily recall on your phone.",
     });
   } else {
     faqs.push({

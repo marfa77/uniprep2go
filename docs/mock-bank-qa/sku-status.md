@@ -237,13 +237,13 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 
 | Status | Product | Sale | Category | Format | Last work |
 |---|---|---|---|---|---|
+| reviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | 2026-10-15 |
 | unreviewed | `australia-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `bench-energy-coal-trader-anki-deck` | available | professional | .apkg | — |
 | unreviewed | `bench-energy-metal-trader-anki-deck` | available | professional | .apkg | — |
 | unreviewed | `bench-energy-oil-trader-anki-deck` | available | professional | .apkg | — |
 | unreviewed | `canada-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `cat4-level-d-anki-deck-printable-pdf` | available | academic | .apkg | — |
-| unreviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | — |
 | unreviewed | `cfa-level-2-formula-reference-2026` | available | finance | PDF | — |
 | unreviewed | `commodity-trader-pack-bundle` | available | professional | .apkg | — |
 | unreviewed | `delf-prim-printable-french-flashcards` | available | language | PDF | — |

@@ -5,7 +5,7 @@ import { getDeckPracticeMock } from "./deck-funnel";
 
 export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
-    "348 flashcards mapped to all 10 CFA Level 1 topic weights — pairs with the printable 2026 formula reference PDF.",
+    "348 scenario and calculation cards weighted to the 2026 CFA Level 1 topic ranges — Ethics is the largest section — each with a worked example and the common mistake.",
   "cfa-level-1-formula-reference-2026":
     "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
   "cfa-level-2-anki-deck":
@@ -154,9 +154,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
-    "Ethics, quant, FRA, and fixed-income cards include the formula families CFA Level 1 repeats every cycle: TVM and statistics, ratio analysis, forward pricing, duration, and derivatives payoff logic. Pair with the formula reference PDF for printable tables and an 80-question recall drill; use the 60-question readiness check (free 25-question version) for topic scoring.",
+    "Cards are short cases, not definitions: apply Standard III(C) to an unsolicited trade, convert LIFO to FIFO, price a callable bond with effective duration, or decide whether a 15% depreciation improves the trade balance. Ethics has 58 cards because it is 15-20% of the exam. Use the 60-question readiness check (free 25-question version) for topic scoring, then filter the deck to your weakest topics.",
   "cfa-level-1-formula-reference-2026":
-    "348 entries — 250 formulas and 98 definitions across Quant (65), Fixed Income (51), Derivatives (49), and the remaining Level 1 topics. The 80-question drill tests see-the-formula/name-the-concept recall. Same validated bank as the Anki deck.",
+    "348 entries — 250 formulas and 98 definitions across Quant (65), Fixed Income (51), Derivatives (49), and the remaining Level 1 topics. The 80-question drill tests see-the-formula/name-the-concept recall. The 348-card Anki deck is a separate scenario deck weighted to the 2026 topic ranges, for daily recall after you look things up here.",
   "frm-part-1-anki-deck":
     "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
   "sie-exam-anki-deck":
@@ -266,13 +266,13 @@ export const positioningOverrides: Partial<
 > = {
   "cfa-level-1-anki-deck": {
     ourEdge: [
-      "348 cards across all 10 CFA Institute Level 1 topic weights in the table below",
-      "2026 cycle formulas and definitions — ethics through portfolio management",
-      "Pairs with printable formula reference (250 formulas + 98 definitions + 80 recall drill)",
+      "348 cards weighted to the 2026 CFA Institute ranges: Ethics 58, Equity 45, FSA 42, Fixed Income 42, then the other six topics",
+      "Every front is a case or calculation; every back has a worked example and the common mistake",
+      "Pairs with the printable formula reference PDF for lookup tables and an 80-question recall drill",
       "60-question CFA Level 1 readiness check (free 25-question version) with topic scoring",
     ],
     summaryProse:
-      "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1: ethics, FRA, and quant alone account for a third of the exam. This deck matches the 10 topic weights in the table — run the free mock to see where your daily 25-card session should focus.",
+      "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1, as long as each card makes you apply the rule. Ethics, FSA, Equity and Fixed Income carry about half the exam, so they carry about half the deck. Run the free mock to see where your daily 25-card session should focus.",
   },
   "cfa-level-2-anki-deck": {
     ourEdge: [
@@ -289,7 +289,7 @@ export const positioningOverrides: Partial<
       "250 formulas + 98 definitions — not a free one-page cheat sheet",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
-      "Same validated item bank as the 348-card CFA Level 1 Anki deck + 60Q mock (free 25-question version)",
+      "Pairs with the separate 348-card scenario Anki deck + 60Q mock (free 25-question version)",
     ],
     summaryProse:
       "Free one-pagers look helpful until the exam clock starts. This $19 reference forces typed formula recall across all 10 topics, then hands you an 80-question drill and the 60-question mock (free 25-question version) for gap scoring.",
@@ -1050,7 +1050,9 @@ Candidates confuse CRAH vs CRAC, mix UPS topology tiers with marketing “N+1”
 Accredited EPI CDCP training is mandatory on the official exam path. This deck is independent spaced-repetition drill — not EXIN or EPI exam material.`,
   "cfa-level-1-anki-deck": `### What is inside
 
-The deck spans all 10 CFA Level 1 topic areas in the coverage table. Quantitative Methods cards drill TVM, probability, hypothesis testing, and regression output interpretation. Financial Statement Analysis covers ratio families (liquidity, activity, solvency, profitability), inventory methods, and cash-flow linkages. Fixed Income and Derivatives cards include duration, convexity, forward/futures pricing, and option payoff diagrams. Ethics cards use the Code and Standards framing the exam repeats every sitting.
+348 cards weighted to the 2026 CFA Institute topic ranges: Ethics 58, Equity 45, Financial Statement Analysis 42, Fixed Income 42, Portfolio Management 33, Alternatives 30, Quantitative Methods 26, Economics 26, Corporate Issuers 24 and Derivatives 22. Every front is a short case or calculation, never a bare "What is X?". Every back explains the rule, works a number and names the mistake that costs points; 150 cards add a typeset formula.
+
+Ethics cards apply each Standard from I(A) to VII(B), the decision framework and GIPS to short cases. FSA cards convert LIFO to FIFO, capitalise versus expense and read cash-flow statements. Fixed Income works yields, duration, convexity and credit spreads; Equity runs DDM, multiples, margin and order types; Derivatives covers forward pricing, put-call parity and swaps at Level I depth.
 
 ### 60-day study plan with the formula reference and free mock
 

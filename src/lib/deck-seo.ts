@@ -666,7 +666,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 Anki deck for 2026: 348 cards across all 10 topics, $29 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
+      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $29 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -676,7 +676,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 1 mock exam",
     ],
     intro:
-      "US and global CFA Level 1 candidates use a focused spaced-repetition deck (not a mega-dump) to retain formulas across all 10 topics — pair with the free timed mock and the matching formula sheet PDF for printable tables and an 80-question recall drill.",
+      "US and global CFA Level 1 candidates use a focused spaced-repetition deck (not a mega-dump) to apply the Standards, formulas and accounting rules across all 10 topics. Every card is a short case with a worked example and the common mistake. Start with the free timed mock, and add the formula sheet PDF if you want printable tables.",
   },
   "cfa-level-2-anki-deck": {
     title: "CFA Level 2 Anki 2026 | 495 Cards + 60Q Mock (25Q Free)",

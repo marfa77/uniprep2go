@@ -380,11 +380,12 @@ const rawDecks: Deck[] = [
     title: "CFA Level 1 Anki Deck — 348 Smart Flashcards",
     shortName: "CFA Level 1",
     subtitle:
-      "Focused 348-card CFA Level 1 Anki deck + 60-question timed mock (free 25-question version) — not a 1,600-card dump.",
+      "Focused 348-card CFA Level 1 Anki deck weighted to the 2026 topic ranges — scenario and calculation cards with a worked example and common mistake on each, plus a 60-question timed mock (free 25-question version).",
     directAnswer:
-      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a 60-question timed readiness-check mock (free 25-question version; topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
-    lastUpdated: "2026-09-29",
-    audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
+      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg weighted to the 2026 CFA Institute topic ranges (Ethics 58 cards, Equity 45, FSA 42, Fixed Income 42 and the other six topics), where every front is a scenario or calculation and every back carries a worked example and the common mistake. It pairs with a 60-question timed readiness-check mock (free 25-question version; topic scoring) and a printable 2026 formula reference PDF. Delivered for {PRICE} through Gumroad — not a bloated mega-deck and not official CFA Institute material.",
+    lastUpdated: "2026-10-15",
+    audience:
+      "CFA Level 1 candidates who want to apply the Standards, formulas and accounting rules to short cases — not just recite definitions — in 15 to 25 minutes a day.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-1-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ivjmuu?wanted=true",
@@ -392,8 +393,8 @@ const rawDecks: Deck[] = [
     checkoutSeller: "PixID Studio",
     facts: {
       cards: "348",
-      topics: "10 CFA Level 1 topic areas",
-      formulas: "Core formulas and definitions",
+      topics: "10 CFA Level 1 topic areas, weighted to the 2026 ranges",
+      formulas: "150 typeset formulas; worked example and common mistake on every card",
       examYear: "2026 preparation cycle",
       delivery: "Digital download through Gumroad",
     },
@@ -422,12 +423,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best CFA Level 1 Anki deck for 2026?",
         answer:
-          "Prefer a focused 348-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
+          "Prefer a focused 348-card deck weighted to the 2026 CFA Level 1 topic ranges, with scenario cards rather than bare definitions, plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
       },
       {
         question: "What is included in the CFA Level 1 Anki deck?",
         answer:
-          "348 Anki flashcards covering CFA Level 1 concepts, formulas, and definitions across all 10 topic areas, with a linked 60-question timed mock (free 25-question version) and a matching printable formula reference PDF.",
+          "348 Anki cards weighted to the 2026 topic ranges: Ethics 58, Equity 45, FSA 42, Fixed Income 42, Portfolio Management 33, Alternatives 30, Quant 26, Economics 26, Corporate Issuers 24, Derivatives 22. Every front is a short case or calculation (for example, applying Standard III(C) to an unsolicited trade), every back gives a worked example and the common mistake, and 150 cards add a typeset formula. A linked 60-question timed mock (free 25-question version) scores your weak topics first.",
+      },
+      {
+        question: "Does the deck cover the Standards of Practice or only formulas?",
+        answer:
+          "Both. Ethics is the largest section, with 58 cards that apply every Standard from I(A) to VII(B), the ethical decision framework and GIPS to short cases. Formula topics are taught through worked numbers, such as effective duration and negative convexity for a callable bond or the Marshall-Lerner condition for a currency depreciation.",
       },
       {
         question: "Is there a free CFA Level 1 practice test with this deck?",
@@ -515,7 +521,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
     directAnswer:
-      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC — same validated bank as the 348-card Anki deck and 60-question timed mock (free 25-question version). Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
+      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC. It pairs with the separate 348-card scenario Anki deck and the 60-question timed mock (free 25-question version). Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
     lastUpdated: "2026-09-29",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
@@ -580,7 +586,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this pair with the CFA Level 1 Anki deck?",
         answer:
-          "Yes. The PDF and 348-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
+          "Yes, as two different tools. The PDF is a lookup sheet with formula tables and a recall drill; the 348-card Anki deck is separate scenario practice weighted to the 2026 topic ranges, with a worked example and common mistake on every card. Use the PDF to look things up and Anki for daily recall on your phone.",
       },
       {
         question: "Is there a free practice test?",
