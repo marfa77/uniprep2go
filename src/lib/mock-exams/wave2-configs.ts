@@ -74,8 +74,8 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     description:
       "60-question AHA BLS Provider cognitive readiness check (free 25-question version) (not a substitute for skills testing).",
     examBody: "American Heart Association",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2). 2025 infant compressions and FBAO keys point-fixed 2026-10-04.",
-    lastUpdated: "2026-10-04",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique scenario items (30 per area), 60 drawn per attempt, aligned to the 2025 AHA Guidelines (expanded 2026-10-15).",
+    lastUpdated: "2026-10-15",
   }),
   nicheReadinessConfig({
     slug: "nnaap-cna-readiness-check",

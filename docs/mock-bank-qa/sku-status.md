@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 50 | 31 |
+| ok | 51 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 23 | 2 |
+| small-bank | 22 | 2 |
 | point-fix | 0 | 0 |
 | rewrite | 104 | 31 |
 | civic | 19 | 18 |
@@ -127,7 +127,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `wy-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
-| small-bank | `aha-bls-provider-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `ascp-mlt-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `aswb-bachelors-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `aswb-clinical-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
@@ -181,6 +180,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
 | ok | `aama-cma-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `aapc-ccs-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `aha-bls-provider-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `amt-rma-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `ascp-mls-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |

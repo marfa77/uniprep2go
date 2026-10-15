@@ -36,31 +36,31 @@
     "id": "aha-bls-provider-readiness-check-adult-cpr-002",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "adult-cpr",
-    "prompt": "The recommended adult compression rate is",
+    "prompt": "A CPR feedback device shows a rescuer compressing an adult at 90 per minute. What rate should the rescuer aim for?",
     "options": [
       {
         "id": "a",
-        "text": "40 to 50 per minute"
+        "text": "80 to 100 per minute"
       },
       {
         "id": "b",
-        "text": "100 to 120 compressions per minute"
+        "text": "90 to 110 per minute"
       },
       {
         "id": "c",
-        "text": "160 to 180 per minute"
+        "text": "100 to 120 per minute"
       },
       {
         "id": "d",
-        "text": "As slow as possible to avoid fatigue"
+        "text": "120 to 140 per minute"
       }
     ],
-    "correctOptionId": "b",
-    "explanation": "AHA targets 100–120/min with adequate depth and full recoil.",
+    "correctOptionId": "c",
+    "explanation": "AHA high-quality CPR uses 100–120 compressions per minute for adults, children and infants, with full recoil and minimal pauses.",
     "distractorExplanations": {
-      "a": "Too slow reduces cardiac output support.",
-      "c": "Too fast worsens depth/recoil.",
-      "d": "Fatigue is managed by switching compressors ~every 2 minutes."
+      "a": "80–100 per minute is below the AHA target and lowers blood flow during CPR.",
+      "b": "Rates under 100 reduce perfusion; the lower limit of the target range is 100 per minute.",
+      "d": "Rates above 120 shorten refill time and usually reduce compression depth."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -135,7 +135,7 @@
     "id": "aha-bls-provider-readiness-check-adult-cpr-005",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "adult-cpr",
-    "prompt": "The compression-to-ventilation ratio for single-rescuer adult CPR (without advanced airway) is",
+    "prompt": "A single trained rescuer is doing CPR on an adult with no advanced airway. What compression-to-ventilation ratio should be used?",
     "options": [
       {
         "id": "a",
@@ -147,19 +147,19 @@
       },
       {
         "id": "c",
-        "text": "5:1"
+        "text": "30:1"
       },
       {
         "id": "d",
-        "text": "100:0 always without exception"
+        "text": "Continuous compressions only"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Without an advanced airway, adult CPR is 30 compressions to 2 breaths for one or two rescuers. After an advanced airway is in place, compressions are continuous and breaths are 1 every 6 seconds (10/min). 15:2 is the two-rescuer pediatric ratio, not adult.",
+    "explanation": "Without an advanced airway, adult CPR is 30 compressions to 2 breaths for one or two rescuers. After an advanced airway, compressions are continuous with 1 breath every 6 seconds.",
     "distractorExplanations": {
-      "b": "15:2 is the two-rescuer infant/child ratio without an advanced airway, not the adult ratio.",
-      "c": "A 5:1 ratio is an old pediatric teaching point; current adult CPR without an advanced airway is 30:2.",
-      "d": "Compression-only CPR is for untrained or unwilling rescuers; trained BLS providers give 30:2 when they can deliver breaths."
+      "b": "15:2 is the two-rescuer ratio for infants and children, not for adults.",
+      "c": "Each cycle includes 2 breaths, not 1; one breath every 6 seconds is for an advanced airway.",
+      "d": "Compression-only CPR is for untrained or unwilling bystanders; trained rescuers give 30:2."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -399,31 +399,31 @@
     "id": "aha-bls-provider-readiness-check-adult-cpr-013",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "adult-cpr",
-    "prompt": "High-quality CPR includes limiting pauses ideally to:",
+    "prompt": "During adult CPR, how long should pauses in chest compressions for rhythm analysis or a compressor switch ideally last?",
     "options": [
       {
         "id": "a",
-        "text": "Less than 10 seconds when possible for critical interventions"
+        "text": "Less than 10 seconds"
       },
       {
         "id": "b",
-        "text": "30–60 seconds routinely for convenience"
+        "text": "About 15 to 20 seconds"
       },
       {
         "id": "c",
-        "text": "No compressions until ALS arrives if ALS is 20 minutes away"
+        "text": "About 30 seconds"
       },
       {
         "id": "d",
-        "text": "Pauses after every single compression"
+        "text": "As long as the team needs to finish the task"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Keep interruptions in compressions as short as possible — ideally under 10 seconds — so coronary perfusion pressure does not collapse. Rhythm checks and compressor switches happen about every 2 minutes, not as long pauses.",
+    "explanation": "Keep interruptions under 10 seconds so coronary and cerebral perfusion pressure does not collapse. Plan rhythm checks and compressor switches together, about every 2 minutes.",
     "distractorExplanations": {
-      "b": "Pauses of 20–30 seconds wipe out coronary perfusion; compressions should resume within about 10 seconds.",
-      "c": "BLS continues until ROSC, a valid DNR, or a trained team takes over — not a 10-second cap on the whole resuscitation.",
-      "d": "The goal is continuous high-quality compressions with only brief pauses for shocks, analysis, or a compressor switch."
+      "b": "Pauses of 15–20 seconds let coronary perfusion pressure fall and take time to rebuild.",
+      "c": "A 30-second pause severely cuts blood flow to the heart and brain.",
+      "d": "Tasks are planned around compressions; open-ended pauses lower survival."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -696,31 +696,31 @@
     "id": "aha-bls-provider-readiness-check-child-infant-007",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "child-infant",
-    "prompt": "When using an AED on a child, if pediatric pads/attenuator are unavailable?",
+    "prompt": "An AED arrives for a 4-year-old in cardiac arrest, but there are no pediatric pads or dose attenuator. What should the rescuer do?",
     "options": [
       {
         "id": "a",
-        "text": "Never defibrillate a child under any circumstance"
+        "text": "Skip the AED and continue CPR until EMS arrives"
       },
       {
         "id": "b",
-        "text": "Cut adult pads in half"
+        "text": "Cut the adult pads in half to fit the small chest"
       },
       {
         "id": "c",
-        "text": "Use adult pads; do not let pads touch each other"
+        "text": "Use the adult pads without letting them touch"
       },
       {
         "id": "d",
-        "text": "Place both adult pads stacked on the umbilicus"
+        "text": "Place one adult pad over the other on the sternum"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Adult AEDs may be used if pediatric system unavailable; pad placement must not overlap.",
+    "explanation": "Pediatric pads or an attenuator are preferred for children under 8. If they are not available, use adult pads, placing them front and back if needed so they do not touch.",
     "distractorExplanations": {
-      "a": "Shockable pediatric rhythms need defibrillation.",
-      "b": "Do not modify pads by cutting.",
-      "d": "Follow anteroposterior or standard positions as trained."
+      "a": "A shockable rhythm needs defibrillation; adult pads are better than no shock.",
+      "b": "Cutting pads damages them and changes the energy delivered.",
+      "d": "Overlapping pads can arc current and fail to defibrillate."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -762,7 +762,7 @@
     "id": "aha-bls-provider-readiness-check-child-infant-009",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "child-infant",
-    "prompt": "Pulse check location commonly taught for infants is",
+    "prompt": "Where should a BLS provider check the pulse of an unresponsive infant?",
     "options": [
       {
         "id": "a",
@@ -770,23 +770,23 @@
       },
       {
         "id": "b",
-        "text": "Radial artery only as first choice"
+        "text": "Radial artery"
       },
       {
         "id": "c",
-        "text": "Popliteal"
+        "text": "Carotid artery"
       },
       {
         "id": "d",
-        "text": "Carotid only as the sole infant site taught"
+        "text": "Popliteal artery"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Brachial pulse is standard for infants; carotid/femoral used in older children.",
+    "explanation": "In infants, check the brachial pulse on the inside of the upper arm for no more than 10 seconds. In children use the carotid or femoral pulse, and in adults the carotid.",
     "distractorExplanations": {
-      "b": "Radial is difficult in infants.",
-      "c": "Popliteal not the standard infant check.",
-      "d": "Carotid is more for children/adults."
+      "b": "The radial pulse is hard to find in infants, especially in shock.",
+      "c": "The infant neck is short and fat, so the carotid is hard to feel; it is used in children and adults.",
+      "d": "The popliteal pulse behind the knee is not used for BLS pulse checks."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1092,31 +1092,31 @@
     "id": "aha-bls-provider-readiness-check-choking-opioid-004",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "choking-opioid",
-    "prompt": "Mild airway obstruction with a strong cough should be managed by:",
+    "prompt": "An adult is choking on food but can cough forcefully and speak. What should the rescuer do?",
     "options": [
       {
         "id": "a",
-        "text": "Immediate abdominal thrusts while they are effectively coughing"
+        "text": "Give 5 back blows and 5 abdominal thrusts right away"
       },
       {
         "id": "b",
-        "text": "Starting CPR compressions while they stand and talk"
+        "text": "Lower the person to the floor and start CPR"
       },
       {
         "id": "c",
-        "text": "Giving rescue breaths forcefully against resistance"
+        "text": "Give rescue breaths to push the food down"
       },
       {
         "id": "d",
-        "text": "Encouraging continued coughing and monitoring closely"
+        "text": "Encourage coughing and watch closely"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Do not interfere with effective cough; be ready if it becomes severe.",
+    "explanation": "A forceful cough and the ability to speak mean mild obstruction. Do not interfere; encourage coughing and be ready to act if the cough becomes weak or silent.",
     "distractorExplanations": {
-      "a": "Thrusts are for severe obstruction.",
-      "b": "CPR is for unresponsive/pulseless.",
-      "c": "Forced breaths can worsen obstruction."
+      "a": "Thrusts are for severe obstruction; a forceful cough clears more air than thrusts here.",
+      "b": "CPR is for an unresponsive victim; this person is awake and moving air.",
+      "c": "Rescue breaths are for unresponsive victims and can push the object deeper."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
@@ -1719,31 +1719,31 @@
     "id": "aha-bls-provider-readiness-check-team-special-008",
     "examSlug": "aha-bls-provider-readiness-check",
     "topicId": "team-special",
-    "prompt": "When to stop BLS efforts is generally determined by:",
+    "prompt": "A BLS team has been doing CPR on an adult outside the hospital. Which situation allows them to stop?",
     "options": [
       {
         "id": "a",
-        "text": "Personal inconvenience after 1 minute"
+        "text": "The first rescuer feels tired after 10 minutes"
       },
       {
         "id": "b",
-        "text": "Family requesting social media posts first"
+        "text": "No shock is advised on the first AED analysis"
       },
       {
         "id": "c",
-        "text": "Guessing without assessment that “it’s fine”"
+        "text": "A bystander says the patient was very old"
       },
       {
         "id": "d",
-        "text": "Obvious signs of life/ROSC, transfer to ALS, valid DNR orders meeting local rules, or scene becoming unsafe"
+        "text": "ALS providers take over care"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Know local protocols and legal/ethical frameworks for termination/withholding.",
+    "explanation": "BLS continues until signs of life or ROSC, care is handed over to ALS or another trained team, a valid DNR is presented, the scene becomes unsafe or rescuers are exhausted.",
     "distractorExplanations": {
-      "a": "1 minute is far too early.",
-      "b": "Social media is irrelevant.",
-      "c": "Assessment drives decisions."
+      "a": "Fatigue is managed by switching compressors, not by stopping CPR.",
+      "b": "A no-shock advice means continuing CPR, not stopping it.",
+      "c": "Age alone is not a reason to stop; a valid DNR or obvious death signs would be."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-016",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "A BLS provider finds an unresponsive adult. How should breathing and pulse be assessed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the pulse for a full 30 seconds to be sure"
+      },
+      {
+        "id": "b",
+        "text": "Check breathing for 10 seconds, then the pulse for 10 seconds"
+      },
+      {
+        "id": "c",
+        "text": "Skip the checks and give 2 breaths before deciding"
+      },
+      {
+        "id": "d",
+        "text": "Check both at the same time for no more than 10 seconds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Scan the chest for breathing and feel the carotid pulse at the same time for 5–10 seconds. If there is no pulse or you are unsure, start CPR.",
+    "distractorExplanations": {
+      "a": "A 30-second check delays CPR; pulses are hard to judge, so limit it to 10 seconds.",
+      "b": "Checking one after the other doubles the delay before compressions.",
+      "c": "Breaths first delay compressions and do not answer whether a pulse is present."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-017",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "An unresponsive adult has a definite pulse but is not breathing. How should the BLS provider give rescue breaths?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 breath every 6 seconds, pulse check every 2 minutes"
+      },
+      {
+        "id": "b",
+        "text": "2 breaths every 30 seconds with pulse checks only at the end"
+      },
+      {
+        "id": "c",
+        "text": "Continuous fast breaths until the patient starts breathing"
+      },
+      {
+        "id": "d",
+        "text": "1 breath every 2 to 3 seconds, as for a child or infant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Adult rescue breathing is 1 breath every 6 seconds (10 per minute), each over 1 second with visible chest rise. Recheck the pulse about every 2 minutes and start CPR if it is lost.",
+    "distractorExplanations": {
+      "b": "That gives too few breaths and delays pulse rechecks.",
+      "c": "Rapid breaths overinflate the lungs, cause gastric inflation and lower blood return to the heart.",
+      "d": "Every 2–3 seconds is the pediatric rescue breathing rate, not the adult rate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-018",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "An adult in cardiac arrest has a visible implanted pacemaker under the skin of the upper right chest. How should the AED pads be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do not use the AED in a patient with a pacemaker"
+      },
+      {
+        "id": "b",
+        "text": "Place the pad directly over the pacemaker for better contact"
+      },
+      {
+        "id": "c",
+        "text": "Put both pads on the patient's back instead"
+      },
+      {
+        "id": "d",
+        "text": "Place the pad away from the device, not directly over it"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Avoid placing a pad directly over an implanted device. Move it slightly away or use anterior–posterior placement, then follow the AED prompts as usual.",
+    "distractorExplanations": {
+      "a": "A pacemaker is not a reason to withhold defibrillation.",
+      "b": "A pad over the device can block current and damage the pacemaker.",
+      "c": "Both pads on the back do not send current through the heart correctly."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-019",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "An unresponsive adult who fell from a ladder needs rescue breaths, and a spinal injury is suspected. How should the BLS provider open the airway?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a jaw thrust; if that fails, use head tilt–chin lift"
+      },
+      {
+        "id": "b",
+        "text": "Turn the head sharply to one side to drain the mouth"
+      },
+      {
+        "id": "c",
+        "text": "Use head tilt–chin lift only, since the jaw thrust is not taught"
+      },
+      {
+        "id": "d",
+        "text": "Do not open the airway until EMS stabilizes the neck"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "With a suspected spinal injury, use the jaw thrust without head extension. If it does not open the airway, use head tilt–chin lift, because an open airway takes priority.",
+    "distractorExplanations": {
+      "b": "Turning the head risks spinal injury and does not open the airway.",
+      "c": "The jaw thrust is the preferred maneuver when a spinal injury is suspected.",
+      "d": "An open airway is essential; waiting leaves the patient without oxygen."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-020",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "How should a pocket mask be positioned on an adult's face for rescue breaths?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Over the nose only, with the mouth held closed"
+      },
+      {
+        "id": "b",
+        "text": "Wide end over the nose and narrow end below the lower lip"
+      },
+      {
+        "id": "c",
+        "text": "Narrow end on the nose bridge, wide end on the chin"
+      },
+      {
+        "id": "d",
+        "text": "Over the mouth only, while pinching the nose shut"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Place the narrow apex of the pocket mask over the bridge of the nose and the base between the lower lip and chin. Seal it with both hands while lifting the jaw.",
+    "distractorExplanations": {
+      "a": "The mask is designed to cover both the nose and mouth.",
+      "b": "Upside-down placement breaks the seal and leaks air.",
+      "d": "A pocket mask covers both the nose and mouth to give a seal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-021",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "What chest compression fraction should a BLS team aim for during CPR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least 30%, ideally about 50%"
+      },
+      {
+        "id": "b",
+        "text": "At least 40%, ideally about 60%"
+      },
+      {
+        "id": "c",
+        "text": "At least 60%, ideally about 80%"
+      },
+      {
+        "id": "d",
+        "text": "100%, with no pauses for anything"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Chest compression fraction is the share of resuscitation time with compressions. AHA recommends at least 60%, and well-run teams often reach 80% or more.",
+    "distractorExplanations": {
+      "a": "A fraction this low means compressions are paused most of the time.",
+      "b": "AHA asks for a higher minimum; 60% is the floor, not the ideal.",
+      "d": "Brief pauses for analysis and shocks are needed; the goal is to keep them short."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-022",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "A bystander who has never been trained in rescue breaths sees an adult collapse. What should the bystander do after calling 911?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compression-only CPR, hard and fast, until help comes"
+      },
+      {
+        "id": "b",
+        "text": "Give only rescue breaths, no compressions, until EMS arrives"
+      },
+      {
+        "id": "c",
+        "text": "Wait for EMS to arrive without touching the patient at all"
+      },
+      {
+        "id": "d",
+        "text": "Check the pulse every 30 seconds while waiting"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Untrained or unwilling bystanders should give compression-only (Hands-Only) CPR at 100–120 per minute for an adult who suddenly collapses, until an AED or EMS arrives.",
+    "distractorExplanations": {
+      "b": "Breaths without compressions do not circulate blood in cardiac arrest.",
+      "c": "Waiting without CPR lets survival drop quickly.",
+      "d": "Untrained bystanders are not expected to check pulses; compressions are the priority."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-023",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "Where are AED pads placed on an adult in the standard anterolateral position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both on the left chest, one above the other"
+      },
+      {
+        "id": "b",
+        "text": "Upper right chest below the collarbone, and left side below the armpit"
+      },
+      {
+        "id": "c",
+        "text": "Center of the chest and center of the back at heart level"
+      },
+      {
+        "id": "d",
+        "text": "Upper left chest below the collarbone, and right side below the armpit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Anterolateral placement: one pad below the right collarbone beside the sternum and the other on the left side of the chest below the armpit. Follow the pictures on the pads.",
+    "distractorExplanations": {
+      "a": "Both pads on one side do not direct current across the heart.",
+      "c": "That is anterior–posterior placement, an alternative rather than the standard anterolateral one.",
+      "d": "This mirrors the correct placement and sends current on a poorer path."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-024",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "The AED delivers a shock to an adult in cardiac arrest. What should the rescuers do next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the pulse for 10 seconds before restarting CPR"
+      },
+      {
+        "id": "b",
+        "text": "Give 2 rescue breaths, then check for breathing"
+      },
+      {
+        "id": "c",
+        "text": "Resume compressions immediately for about 2 minutes"
+      },
+      {
+        "id": "d",
+        "text": "Wait for the AED to analyze the rhythm again"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After a shock, resume CPR at once starting with compressions. The heart rarely pumps effectively right after defibrillation, and the AED will prompt the next analysis in about 2 minutes.",
+    "distractorExplanations": {
+      "a": "Pulse checks after a shock delay compressions; the AED reanalyzes in about 2 minutes.",
+      "b": "CPR restarts with compressions, not breaths, right after the shock.",
+      "d": "The AED will not reanalyze for about 2 minutes, so compressions must resume now."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-025",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "The AED advises a shock. What must the rescuer do before pressing the shock button?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confirm no one is touching the patient, say 'Clear'"
+      },
+      {
+        "id": "b",
+        "text": "Remove the pads and reposition them first"
+      },
+      {
+        "id": "c",
+        "text": "Check the pulse once more before shocking"
+      },
+      {
+        "id": "d",
+        "text": "Keep compressing the chest while the shock is delivered"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Before shocking, look to confirm no one is touching the patient, loudly state 'Clear,' then press the shock button. Resume compressions immediately after the shock.",
+    "distractorExplanations": {
+      "b": "Pads stay in place; moving them delays the shock.",
+      "c": "A pulse check before the shock delays defibrillation; the AED has already analyzed.",
+      "d": "Anyone touching the patient during the shock may be injured, and the shock may be less effective."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-026",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "An unresponsive adult is breathing normally and has a pulse, with no suspected injury. While waiting for EMS, what is the best position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Face down with the arms at the sides"
+      },
+      {
+        "id": "b",
+        "text": "Sitting upright against a wall"
+      },
+      {
+        "id": "c",
+        "text": "Recovery position, rechecking often"
+      },
+      {
+        "id": "d",
+        "text": "Flat on the back with the legs raised"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The recovery position keeps the airway open and lets fluids drain from the mouth. Monitor breathing and pulse, and start CPR if breathing becomes abnormal.",
+    "distractorExplanations": {
+      "a": "A prone position makes breathing and monitoring difficult.",
+      "b": "An unresponsive person cannot protect the airway when propped up and may slump.",
+      "d": "Supine positioning risks airway blockage from the tongue or vomit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-027",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "A rescuer is doing CPR on an adult when a second rescuer arrives with an AED. What should happen next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both rescuers stop CPR to apply the pads together"
+      },
+      {
+        "id": "b",
+        "text": "The second rescuer takes over compressions before the pads go on"
+      },
+      {
+        "id": "c",
+        "text": "The first rescuer gives 2 breaths while the second turns on the AED"
+      },
+      {
+        "id": "d",
+        "text": "First rescuer compresses while the second applies pads"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Compressions continue while the second rescuer turns on the AED and places the pads. Compressions pause only when the AED analyzes or shocks.",
+    "distractorExplanations": {
+      "a": "Stopping compressions to apply pads lowers the compression fraction.",
+      "b": "Pads should go on immediately; switching first delays defibrillation.",
+      "c": "Breaths do not need a pause here; compressions continue during pad placement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-028",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "Where should a BLS provider check the pulse of an unresponsive adult?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Radial artery"
+      },
+      {
+        "id": "b",
+        "text": "Dorsalis pedis artery"
+      },
+      {
+        "id": "c",
+        "text": "Carotid artery"
+      },
+      {
+        "id": "d",
+        "text": "Brachial artery"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In adults, check the carotid pulse in the groove beside the trachea for no more than 10 seconds, while scanning the chest for breathing.",
+    "distractorExplanations": {
+      "a": "The radial pulse may be absent in low blood pressure even when the heart is beating.",
+      "b": "Foot pulses are too distal and unreliable in an emergency.",
+      "d": "The brachial site is used for infants, not adults."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-029",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "For a victim of witnessed ventricular fibrillation arrest without CPR, roughly how much does the chance of survival fall each minute defibrillation is delayed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 1–2%"
+      },
+      {
+        "id": "b",
+        "text": "About 3–5%"
+      },
+      {
+        "id": "c",
+        "text": "About 7–10%"
+      },
+      {
+        "id": "d",
+        "text": "About 25–30%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Without CPR, survival from VF falls about 7–10% for every minute until defibrillation. Bystander CPR slows the decline, which is why early CPR and AED use are emphasized.",
+    "distractorExplanations": {
+      "a": "The drop is much steeper; each minute without CPR or a shock matters greatly.",
+      "b": "Three to five percent understates the loss when no CPR is given.",
+      "d": "The loss is severe but closer to 7–10% per minute without CPR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-adult-cpr-030",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "adult-cpr",
+    "prompt": "A rescuer gives a breath to an adult, but the chest does not rise. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the breath faster and with more force"
+      },
+      {
+        "id": "b",
+        "text": "Skip breaths and continue compressions only"
+      },
+      {
+        "id": "c",
+        "text": "Reopen the airway and try the breath again"
+      },
+      {
+        "id": "d",
+        "text": "Start abdominal thrusts right away"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "No chest rise usually means the airway is not open. Reposition with head tilt–chin lift and try again. If an obstruction is suspected, look in the mouth during CPR before breaths.",
+    "distractorExplanations": {
+      "a": "More force causes gastric inflation and does not fix a blocked airway.",
+      "b": "Trained rescuers should reposition and try again rather than stopping breaths.",
+      "d": "Thrusts are for choking in a responsive victim; first reposition the head."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-016",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A 13-year-old girl with obvious breast development collapses in cardiac arrest. Which CPR guidelines apply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Child guidelines, because she is under 18"
+      },
+      {
+        "id": "b",
+        "text": "Infant guidelines, because she is small"
+      },
+      {
+        "id": "c",
+        "text": "Adult guidelines"
+      },
+      {
+        "id": "d",
+        "text": "Child guidelines until she reaches 14"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "AHA uses child guidelines from 1 year of age to puberty. Signs of puberty, such as breast development in girls or underarm hair in boys, mean adult guidelines apply.",
+    "distractorExplanations": {
+      "a": "AHA child guidelines apply from age 1 to puberty, not to age 18.",
+      "b": "Infant guidelines are for children under 1 year.",
+      "d": "There is no age-14 cutoff; signs of puberty move the patient to adult guidelines."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-017",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A lone rescuer sees a 7-year-old suddenly collapse at a soccer game. The child is unresponsive with no pulse. What should the rescuer do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do 2 minutes of CPR before leaving to call for help"
+      },
+      {
+        "id": "b",
+        "text": "Give rescue breaths only until EMS arrives"
+      },
+      {
+        "id": "c",
+        "text": "Give 5 back blows to clear the airway"
+      },
+      {
+        "id": "d",
+        "text": "Activate EMS and get the AED, then start CPR"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A witnessed sudden collapse in a child is likely cardiac and may be shockable, so the lone rescuer activates EMS and gets the AED first, then starts CPR.",
+    "distractorExplanations": {
+      "a": "Two minutes first is for unwitnessed pediatric arrest, which is usually respiratory.",
+      "b": "A pulseless child needs compressions and early defibrillation.",
+      "c": "Back blows are for a choking infant, not a witnessed collapse."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-018",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A child has a pulse above 60 but is not breathing. How often should rescue breaths be given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1 breath every second"
+      },
+      {
+        "id": "b",
+        "text": "1 breath every 2 to 3 seconds"
+      },
+      {
+        "id": "c",
+        "text": "1 breath every 6 seconds"
+      },
+      {
+        "id": "d",
+        "text": "2 breaths every 30 seconds, then a pulse check"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pediatric rescue breathing is 1 breath every 2–3 seconds (20–30 per minute), each with visible chest rise. Recheck the pulse about every 2 minutes.",
+    "distractorExplanations": {
+      "a": "Breathing this fast overinflates the lungs and causes gastric inflation.",
+      "c": "Every 6 seconds is the adult rescue breathing rate.",
+      "d": "That rate gives far too little ventilation for a child."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-019",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "Where may a BLS provider check the pulse of an unresponsive 5-year-old?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Temporal artery at the side of the head"
+      },
+      {
+        "id": "b",
+        "text": "Radial artery only"
+      },
+      {
+        "id": "c",
+        "text": "Brachial artery only"
+      },
+      {
+        "id": "d",
+        "text": "Carotid or femoral artery"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In children, check the carotid or femoral pulse for no more than 10 seconds. Infants use the brachial pulse and adults the carotid.",
+    "distractorExplanations": {
+      "a": "The temporal pulse is not used for BLS pulse checks.",
+      "b": "The radial pulse may be weak or absent in shock and is not the BLS site.",
+      "c": "The brachial pulse is the infant site; in children use the carotid or femoral."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-020",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "An infant in cardiac arrest needs defibrillation. What is the order of preference for equipment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No defibrillation at all, because infants should never be shocked"
+      },
+      {
+        "id": "b",
+        "text": "Adult AED first, since it is the fastest to use"
+      },
+      {
+        "id": "c",
+        "text": "Manual defibrillator, then AED with attenuator, then adult AED"
+      },
+      {
+        "id": "d",
+        "text": "AED with attenuator only; a manual defibrillator is not used"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For infants, a manual defibrillator is preferred. If none is available, use an AED with a pediatric dose attenuator, and if neither is available, an AED without one.",
+    "distractorExplanations": {
+      "a": "Infants with shockable rhythms do need defibrillation.",
+      "b": "An adult AED without attenuation is the last choice, used only when nothing else is available.",
+      "d": "A manual defibrillator is preferred for infants when trained providers have one."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-021",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "For which children should pediatric AED pads or a dose attenuator be used when available?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Children under 1 year only"
+      },
+      {
+        "id": "b",
+        "text": "Children under 12 years"
+      },
+      {
+        "id": "c",
+        "text": "Anyone under 18 years"
+      },
+      {
+        "id": "d",
+        "text": "Children under 8 years"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Use pediatric pads or an attenuator for infants and children under 8 years (about 25 kg). Children 8 and older use adult pads and settings.",
+    "distractorExplanations": {
+      "a": "Infants qualify, but so do children up to about 8 years.",
+      "b": "From age 8, adult pads and energy are used.",
+      "c": "Adolescents and older children use adult pads."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-022",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "How should a rescuer give breaths to an infant without a barrier device?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give quick puffs from a few inches away"
+      },
+      {
+        "id": "b",
+        "text": "Breathe into the nose only, holding the mouth closed"
+      },
+      {
+        "id": "c",
+        "text": "Pinch the nose and cover only the mouth"
+      },
+      {
+        "id": "d",
+        "text": "Mouth over the infant's mouth and nose"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For infants, the rescuer's mouth covers both the mouth and nose. Give each breath over 1 second with just enough volume to make the chest rise.",
+    "distractorExplanations": {
+      "a": "Puffs without a seal do not ventilate the lungs.",
+      "b": "Mouth-to-nose is an option, but covering both is preferred for infants.",
+      "c": "Pinch-and-mouth is the adult method; an infant's face is small enough to cover both."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-023",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "How should an infant's head be positioned to open the airway for rescue breaths?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Neutral 'sniffing' position"
+      },
+      {
+        "id": "b",
+        "text": "Tilted far back as for an adult"
+      },
+      {
+        "id": "c",
+        "text": "Turned fully to one side"
+      },
+      {
+        "id": "d",
+        "text": "Chin tucked down toward the chest"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An infant's airway is soft and easily blocked by too much extension. Use a neutral sniffing position, sometimes with a thin towel under the shoulders.",
+    "distractorExplanations": {
+      "b": "Overextending an infant's neck can kink the soft airway.",
+      "c": "A rotated head does not open the airway for breaths.",
+      "d": "Flexing the neck toward the chest kinks and blocks the infant airway."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-024",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A rescuer is giving CPR to a 6-year-old. How should compressions be delivered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Always with one hand to avoid chest injury"
+      },
+      {
+        "id": "b",
+        "text": "With two fingers on the sternum"
+      },
+      {
+        "id": "c",
+        "text": "With two thumbs encircling the chest"
+      },
+      {
+        "id": "d",
+        "text": "One or two hands, by the child's size"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For children, use the heel of one hand or both hands as for an adult, whichever achieves a depth of about one-third of the chest (about 2 inches).",
+    "distractorExplanations": {
+      "a": "One hand is fine for small children, but larger children may need two hands for depth.",
+      "b": "Two-finger compressions were removed even for infants and are far too weak for a child.",
+      "c": "The thumb technique is for infants, not school-age children."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-025",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "How should a BLS provider check whether an infant is responsive?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold a mirror under the nose"
+      },
+      {
+        "id": "b",
+        "text": "Tap the foot and shout"
+      },
+      {
+        "id": "c",
+        "text": "Shake the infant by the shoulders"
+      },
+      {
+        "id": "d",
+        "text": "Pinch the earlobe hard"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Tap the bottom of the infant's foot and shout to check responsiveness. Never shake an infant. If there is no response, call for help and check breathing and pulse.",
+    "distractorExplanations": {
+      "a": "A mirror test does not assess responsiveness and wastes time.",
+      "c": "Shaking an infant can cause serious brain injury.",
+      "d": "Painful stimuli are not the BLS method for infant responsiveness."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-026",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A child has a pulse of 50 per minute despite good rescue breathing. Which sign of poor perfusion means compressions should start?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A loud cry and active movement of all limbs"
+      },
+      {
+        "id": "b",
+        "text": "A respiratory rate of 20 per minute"
+      },
+      {
+        "id": "c",
+        "text": "Pink, warm skin and a strong central pulse"
+      },
+      {
+        "id": "d",
+        "text": "Cool, mottled skin, slow capillary refill"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "If a child's heart rate is below 60 with signs of poor perfusion, such as pallor, mottling, cool skin or delayed capillary refill, despite oxygenation and ventilation, start CPR.",
+    "distractorExplanations": {
+      "a": "A crying, moving child is perfusing and breathing.",
+      "b": "Normal breathing does not by itself indicate poor perfusion.",
+      "c": "Warm pink skin shows adequate perfusion, so compressions are not indicated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-027",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "In AHA BLS, which age group does 'infant' refer to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Under 6 months only"
+      },
+      {
+        "id": "b",
+        "text": "Under 2 years of age"
+      },
+      {
+        "id": "c",
+        "text": "Newborns in the delivery room only"
+      },
+      {
+        "id": "d",
+        "text": "Under 1 year, excluding newborns"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "AHA BLS infant guidelines apply to babies under 1 year, excluding newly born infants at delivery, who follow neonatal resuscitation guidelines.",
+    "distractorExplanations": {
+      "a": "Infants include all babies under 1 year.",
+      "b": "Infant guidelines stop at age 1; children use child guidelines.",
+      "c": "Newly born babies at delivery follow neonatal resuscitation guidelines."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-028",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A lone rescuer with a cell phone finds an unresponsive infant who is not breathing, with no witnessed collapse. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carry the infant to the car and drive to a hospital"
+      },
+      {
+        "id": "b",
+        "text": "Hang up after calling and leave to find an AED first"
+      },
+      {
+        "id": "c",
+        "text": "Call EMS on speaker and start CPR right away"
+      },
+      {
+        "id": "d",
+        "text": "Do 2 minutes of CPR before using the phone"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "With a mobile phone, the lone rescuer calls EMS on speakerphone and starts CPR at once. If no AED has arrived after about 2 minutes, go get one if still alone.",
+    "distractorExplanations": {
+      "a": "Driving the infant yourself delays CPR and the arrival of EMS care.",
+      "b": "Leaving the infant delays CPR; with a phone, call on speaker and begin CPR.",
+      "d": "With a phone at hand, there is no need to delay the call."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-029",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A lone rescuer is giving CPR to a 5-year-old without an advanced airway. What compression-to-ventilation ratio is used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30:2"
+      },
+      {
+        "id": "b",
+        "text": "15:2"
+      },
+      {
+        "id": "c",
+        "text": "5:1"
+      },
+      {
+        "id": "d",
+        "text": "15:1"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A single rescuer uses 30:2 for adults, children and infants. Two rescuers switch to 15:2 for children and infants.",
+    "distractorExplanations": {
+      "b": "15:2 is used when two rescuers perform child CPR.",
+      "c": "5:1 is an outdated ratio no longer taught.",
+      "d": "No AHA BLS ratio uses 15:1; children get 30:2 alone or 15:2 with two rescuers."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-child-infant-030",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "child-infant",
+    "prompt": "A child is receiving rescue breaths with a pulse present. How often should the rescuer recheck the pulse?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Every 10 seconds"
+      },
+      {
+        "id": "b",
+        "text": "Every 30 seconds or so"
+      },
+      {
+        "id": "c",
+        "text": "About every 2 minutes"
+      },
+      {
+        "id": "d",
+        "text": "Every 10 minutes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "During rescue breathing, recheck the pulse about every 2 minutes, for no more than 10 seconds. Start compressions if the pulse is absent or below 60 with poor perfusion.",
+    "distractorExplanations": {
+      "a": "Checks this frequent interrupt ventilation and give no useful information.",
+      "b": "Checking twice a minute is more often than needed and interrupts breaths.",
+      "d": "Ten minutes is too long; a slowing heart rate must be caught early."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-016",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A 4-year-old is choking, cannot cough or speak, and is still responsive. Under 2025 AHA guidelines, what should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do a blind finger sweep to pull out the object"
+      },
+      {
+        "id": "b",
+        "text": "Give abdominal thrusts only until the object comes out"
+      },
+      {
+        "id": "c",
+        "text": "Give 5 back blows and 5 chest thrusts, as for an infant"
+      },
+      {
+        "id": "d",
+        "text": "Alternate 5 back blows and 5 abdominal thrusts"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For a responsive child with severe airway obstruction, 2025 AHA guidelines use repeated cycles of 5 back blows followed by 5 abdominal thrusts until the object comes out or the child becomes unresponsive.",
+    "distractorExplanations": {
+      "a": "Blind sweeps can push the object deeper.",
+      "b": "The 2025 guidelines add back blows before abdominal thrusts for children.",
+      "c": "Chest thrusts are the infant method; children get abdominal thrusts."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-017",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "Where should the rescuer place the fist for abdominal thrusts on a choking adult?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Low on the abdomen just above the pubic bone"
+      },
+      {
+        "id": "b",
+        "text": "Thumb side in, just above the navel"
+      },
+      {
+        "id": "c",
+        "text": "Over the lower tip of the breastbone (xiphoid)"
+      },
+      {
+        "id": "d",
+        "text": "Over the center of the chest between the nipples"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Make a fist and place the thumb side against the abdomen just above the navel and well below the breastbone, grasp it with the other hand and give quick inward-and-upward thrusts.",
+    "distractorExplanations": {
+      "a": "Too low a position does not push air up through the airway.",
+      "c": "Thrusts on the xiphoid can injure the liver and other organs.",
+      "d": "That is the chest-thrust position for pregnant or obese victims."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-018",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "An adult starts choking while alone at home and cannot cough or speak. What can she do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lie down and wait for the object to pass on its own"
+      },
+      {
+        "id": "b",
+        "text": "Self abdominal thrusts or a chair-back thrust"
+      },
+      {
+        "id": "c",
+        "text": "Put a finger deep in her throat to sweep it out"
+      },
+      {
+        "id": "d",
+        "text": "Drink water to wash the object down"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A choking person who is alone can give self abdominal thrusts with a fist or press the upper abdomen forcefully against a firm object such as a chair back or counter edge.",
+    "distractorExplanations": {
+      "a": "Lying down does not relieve severe obstruction and loss of consciousness may follow.",
+      "c": "A blind sweep can push the object deeper.",
+      "d": "Drinking can worsen the blockage and cause aspiration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-019",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "How should a rescuer hold a responsive choking infant to give back blows?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Held upside down by the ankles"
+      },
+      {
+        "id": "b",
+        "text": "Upright against the rescuer's shoulder"
+      },
+      {
+        "id": "c",
+        "text": "Face up on the forearm with the head higher than the chest"
+      },
+      {
+        "id": "d",
+        "text": "Face down on the forearm, head below the chest"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Lay the infant face down along your forearm, resting on your thigh, with the head lower than the chest and the jaw supported. Give 5 firm back blows between the shoulder blades.",
+    "distractorExplanations": {
+      "a": "Dangling an infant risks injury and gives no head or neck support.",
+      "b": "Upright positioning does not let gravity help remove the object.",
+      "c": "Face up is the position for chest thrusts, and the head should be lower."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-020",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "How does a rescuer give back blows to a choking adult?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lean them forward, strike between the shoulder blades"
+      },
+      {
+        "id": "b",
+        "text": "Strike the upper chest with an open palm"
+      },
+      {
+        "id": "c",
+        "text": "Tap gently on the neck below the head"
+      },
+      {
+        "id": "d",
+        "text": "Have the person lean back and strike the lower back hard"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Support the chest with one hand, lean the person forward and give up to 5 sharp blows between the shoulder blades with the heel of the other hand, then give abdominal thrusts.",
+    "distractorExplanations": {
+      "b": "Chest strikes are not back blows and do not help dislodge the object.",
+      "c": "Gentle neck taps do not generate enough force and risk injury.",
+      "d": "Leaning back lets the object fall deeper, and the lower back is the wrong spot."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-021",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "Which combination of signs most suggests opioid overdose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unresponsive, slow or no breathing, pinpoint pupils"
+      },
+      {
+        "id": "b",
+        "text": "Agitated, rapid breathing and widely dilated pupils"
+      },
+      {
+        "id": "c",
+        "text": "Facial droop, arm weakness and slurred speech"
+      },
+      {
+        "id": "d",
+        "text": "Sweating, shaking and confusion with normal breathing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Opioid overdose typically causes unresponsiveness, slow or stopped breathing, pinpoint pupils and sometimes blue lips. Call EMS, support breathing and give naloxone.",
+    "distractorExplanations": {
+      "b": "These are more typical of stimulant toxicity or withdrawal.",
+      "c": "Facial droop, arm weakness and slurred speech are classic stroke signs, not overdose.",
+      "d": "These fit low blood sugar more than opioid overdose."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-022",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A rescuer gave intranasal naloxone to a person with suspected opioid overdose, but there is no response after 2–3 minutes. What should happen next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop and wait 30 minutes before trying again"
+      },
+      {
+        "id": "b",
+        "text": "Give a second dose from the same used spray device"
+      },
+      {
+        "id": "c",
+        "text": "Repeat with a new device in the other nostril"
+      },
+      {
+        "id": "d",
+        "text": "Assume it is not an opioid and stop all care"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "If there is no response, give a repeat dose every 2–3 minutes with a new device, alternating nostrils, while supporting breathing and continuing CPR if needed.",
+    "distractorExplanations": {
+      "a": "Waiting leaves the person hypoxic; repeat doses are given every 2–3 minutes.",
+      "b": "Nasal devices are single-dose; a new device is needed.",
+      "d": "Potent opioids may need several doses, and breathing support must continue."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-023",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "After naloxone, a person with an opioid overdose is now breathing normally but is still drowsy. What should the rescuer do while waiting for EMS?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give them strong coffee to keep them alert"
+      },
+      {
+        "id": "b",
+        "text": "Recovery position, and stay with them"
+      },
+      {
+        "id": "c",
+        "text": "Let them walk around the room to stay awake"
+      },
+      {
+        "id": "d",
+        "text": "Leave once their breathing is back to normal"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Place a breathing but drowsy person in the recovery position to protect the airway, keep monitoring breathing and stay until EMS arrives, since re-sedation is possible.",
+    "distractorExplanations": {
+      "a": "Oral intake risks aspiration in a drowsy person.",
+      "c": "Walking risks falls, and they may lose consciousness again.",
+      "d": "Naloxone can wear off before the opioid, so they need continued monitoring."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-024",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A rescuer is not sure whether an unresponsive person with slow breathing took opioids. Should naloxone be given?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only after a blood test confirms opioids"
+      },
+      {
+        "id": "b",
+        "text": "Only if the person is under 18"
+      },
+      {
+        "id": "c",
+        "text": "Yes; it is unlikely to cause harm if no opioid is present"
+      },
+      {
+        "id": "d",
+        "text": "No; naloxone is dangerous unless opioid use is fully confirmed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Naloxone is safe to give when opioid overdose is suspected; it has little effect if no opioid is present. Give it while supporting breathing and calling EMS.",
+    "distractorExplanations": {
+      "a": "Waiting for confirmation delays a life-saving treatment.",
+      "b": "Age does not determine whether naloxone is appropriate.",
+      "d": "Naloxone has few effects in people without opioids in their system."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-025",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A restaurant patron's choking is relieved with abdominal thrusts, and he says he feels fine. What should the rescuer advise?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He should be checked by a medical provider"
+      },
+      {
+        "id": "b",
+        "text": "No follow-up is needed once he can talk"
+      },
+      {
+        "id": "c",
+        "text": "He should finish his meal to settle his stomach"
+      },
+      {
+        "id": "d",
+        "text": "He should lie down for an hour at the restaurant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Anyone who received abdominal thrusts should be evaluated by a healthcare provider, since thrusts can injure internal organs.",
+    "distractorExplanations": {
+      "b": "Abdominal thrusts can cause internal injuries that are not obvious right away.",
+      "c": "Eating right away is unwise until he has been checked.",
+      "d": "Rest alone does not rule out injury from the thrusts."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-026",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "An adult clutches her throat and cannot speak. What should the rescuer do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wait to see if she starts coughing on her own"
+      },
+      {
+        "id": "b",
+        "text": "Give her water to help her swallow"
+      },
+      {
+        "id": "c",
+        "text": "Start CPR right away while she is still standing"
+      },
+      {
+        "id": "d",
+        "text": "Ask if she is choking, then start back blows"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The universal choking sign with no speech means severe obstruction. Confirm by asking, then give cycles of 5 back blows and 5 abdominal thrusts.",
+    "distractorExplanations": {
+      "a": "Severe obstruction will not clear without help.",
+      "b": "Drinking can worsen the obstruction and cause aspiration.",
+      "c": "CPR is for an unresponsive person; she is still conscious."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-027",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "After naloxone, a person wakes up, becomes agitated and starts vomiting. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold them flat on their back so that they stay still"
+      },
+      {
+        "id": "b",
+        "text": "Turn them onto their side to keep the airway clear"
+      },
+      {
+        "id": "c",
+        "text": "Leave them alone until they calm down"
+      },
+      {
+        "id": "d",
+        "text": "Give a second naloxone dose to stop the vomiting"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Withdrawal symptoms such as agitation and vomiting can follow naloxone. Turn the person on their side to protect the airway, stay calm and continue to monitor until EMS arrives.",
+    "distractorExplanations": {
+      "a": "Lying flat while vomiting risks aspiration.",
+      "c": "They need monitoring for airway problems and re-sedation.",
+      "d": "More naloxone will not stop vomiting and may worsen withdrawal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-028",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A rescuer is much taller than a choking 3-year-old who is standing. How should the rescuer give abdominal thrusts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the thrusts while standing upright"
+      },
+      {
+        "id": "b",
+        "text": "Kneel behind the child to reach the correct position"
+      },
+      {
+        "id": "c",
+        "text": "Lift the child off the ground and thrust in the air"
+      },
+      {
+        "id": "d",
+        "text": "Use chest thrusts instead because the child is small"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Kneel or crouch behind a small child so your arms reach around at the right height. Give back blows and abdominal thrusts as for an adult, with less force.",
+    "distractorExplanations": {
+      "a": "Standing puts the hands in the wrong position on a small child.",
+      "c": "Lifting makes thrusts harder to control and risks dropping the child.",
+      "d": "Children get back blows and abdominal thrusts; chest thrusts are for infants."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-029",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "An unresponsive infant who was choking now has a small object clearly visible in the mouth. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn the infant upside down and shake"
+      },
+      {
+        "id": "b",
+        "text": "Remove the visible object, then continue CPR"
+      },
+      {
+        "id": "c",
+        "text": "Leave it in place and give breaths over it"
+      },
+      {
+        "id": "d",
+        "text": "Do a blind finger sweep deeper in the throat"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "During CPR for an unresponsive choking victim, look in the mouth before breaths. Remove an object only if you can see it, then continue CPR.",
+    "distractorExplanations": {
+      "a": "Shaking an infant can cause brain injury.",
+      "c": "Breaths can push the object back down the airway.",
+      "d": "Blind sweeps can lodge objects deeper; remove only what you can see."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-choking-opioid-030",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "choking-opioid",
+    "prompt": "A choking adult had a strong cough a moment ago, but now the cough is weak and silent and her lips are turning blue. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Begin chest compressions while she stands"
+      },
+      {
+        "id": "b",
+        "text": "Keep encouraging her to cough"
+      },
+      {
+        "id": "c",
+        "text": "Start back blows and abdominal thrusts"
+      },
+      {
+        "id": "d",
+        "text": "Give her small sips of water"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When mild obstruction becomes severe (weak or silent cough, inability to speak, cyanosis), start cycles of 5 back blows and 5 abdominal thrusts.",
+    "distractorExplanations": {
+      "a": "Compressions are for an unresponsive victim.",
+      "b": "A weak, silent cough means severe obstruction that coughing will not clear.",
+      "d": "Drinking can worsen the obstruction and cause aspiration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-016",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "An adult collapses after touching a downed power line and is still in contact with it. What should the rescuer do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pull the victim away with bare hands right away"
+      },
+      {
+        "id": "b",
+        "text": "Make sure the power is off before touching"
+      },
+      {
+        "id": "c",
+        "text": "Start CPR while the victim is still touching the line"
+      },
+      {
+        "id": "d",
+        "text": "Throw water on the victim to cool any burns"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Scene safety comes first. Do not touch a victim in contact with electricity until the power source is turned off. Then assess and start CPR if needed.",
+    "distractorExplanations": {
+      "a": "The current can pass to the rescuer and injure or kill them.",
+      "c": "Touching the victim while energized endangers the rescuer.",
+      "d": "Water conducts electricity and increases the danger."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-017",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "A child is pulled from a pool, unresponsive and not breathing. What should BLS rescuers emphasize?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Compression-only CPR to avoid giving breaths"
+      },
+      {
+        "id": "b",
+        "text": "Turn the child upside down to drain the lungs first"
+      },
+      {
+        "id": "c",
+        "text": "Wait for EMS because drowning victims cannot be resuscitated"
+      },
+      {
+        "id": "d",
+        "text": "High-quality CPR with early, effective rescue breaths"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Drowning causes cardiac arrest from lack of oxygen, so ventilation is a priority. Start CPR with effective rescue breaths as soon as the victim is safely out of the water.",
+    "distractorExplanations": {
+      "a": "Drowning causes hypoxic arrest, so breaths are especially important.",
+      "b": "Trying to drain water delays CPR and is not recommended.",
+      "c": "Many drowning victims can be revived with prompt CPR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-018",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "Partway through a resuscitation, the team leader says, 'We have done 6 minutes of CPR, given 2 shocks, and the airway is secure. What else should we consider?' Which team element is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Knowing one's limitations"
+      },
+      {
+        "id": "b",
+        "text": "Constructive intervention"
+      },
+      {
+        "id": "c",
+        "text": "Summarize and reevaluate"
+      },
+      {
+        "id": "d",
+        "text": "Closed-loop communication"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Periodic summarizing and reevaluating keeps the team aligned on what has been done and what to try next, and invites input from members.",
+    "distractorExplanations": {
+      "a": "That refers to asking for help when a task is beyond one's skills.",
+      "b": "Constructive intervention is speaking up about an error.",
+      "d": "Closed loop is confirming each order; this is a review of the whole situation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-019",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "During a resuscitation, a team member snaps at another for being slow. Which team element is being ignored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Closed-loop communication"
+      },
+      {
+        "id": "b",
+        "text": "Knowledge sharing"
+      },
+      {
+        "id": "c",
+        "text": "Clear roles"
+      },
+      {
+        "id": "d",
+        "text": "Mutual respect"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Mutual respect means calm, friendly, professional communication. Hostility increases stress and errors during a resuscitation.",
+    "distractorExplanations": {
+      "a": "Closed loop concerns confirming orders, not tone.",
+      "b": "Knowledge sharing is about pooling information to solve problems.",
+      "c": "Roles may be clear; the problem is the hostile tone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-020",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "A team leader assigns a member to manage the bag-mask, but she has never used one. What should she do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Say so and ask for help or another task"
+      },
+      {
+        "id": "b",
+        "text": "Refuse to help with the resuscitation at all"
+      },
+      {
+        "id": "c",
+        "text": "Try it quietly and hope it works"
+      },
+      {
+        "id": "d",
+        "text": "Ask a family member to do it instead"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Knowing one's limitations means telling the leader when a task is beyond your skills, so the leader can reassign it or provide help early.",
+    "distractorExplanations": {
+      "b": "She can still help with a task within her skills.",
+      "c": "Hiding a lack of skill risks poor ventilation for the patient.",
+      "d": "Family members are not trained team members."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-021",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "After a resuscitation ends, the team meets to review what happened. What is the main purpose of this debriefing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Decide which team member should be disciplined"
+      },
+      {
+        "id": "b",
+        "text": "Complete billing documentation"
+      },
+      {
+        "id": "c",
+        "text": "Tell the family the details"
+      },
+      {
+        "id": "d",
+        "text": "Learn what went well and what to fix"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Debriefing after a resuscitation helps teams learn: what went well, what did not, and how to improve CPR quality and teamwork next time.",
+    "distractorExplanations": {
+      "a": "Debriefings are learning-focused, not punitive.",
+      "b": "Billing is separate from clinical debriefing.",
+      "c": "Family communication is a separate step led by the appropriate provider."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-022",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "Which resuscitation team role tracks the time of interventions and announces when rhythm checks are due?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Airway manager"
+      },
+      {
+        "id": "b",
+        "text": "AED operator"
+      },
+      {
+        "id": "c",
+        "text": "Compressor"
+      },
+      {
+        "id": "d",
+        "text": "Timer/recorder"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The timer/recorder documents times of interventions and medications and announces when the next rhythm check or compressor switch is due.",
+    "distractorExplanations": {
+      "a": "The airway manager opens the airway and gives ventilations, not timekeeping.",
+      "b": "The AED operator attaches the pads and runs the device.",
+      "c": "The compressor focuses on high-quality compressions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-023",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "Family members show the BLS team a valid out-of-hospital DNR order for an elderly patient in cardiac arrest. What should the team do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore the form because only hospitals can use DNRs"
+      },
+      {
+        "id": "b",
+        "text": "Verify the form and withhold CPR per local protocol"
+      },
+      {
+        "id": "c",
+        "text": "Do CPR without using the AED"
+      },
+      {
+        "id": "d",
+        "text": "Start CPR anyway until a physician arrives"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Follow local protocols: confirm the out-of-hospital DNR or POLST is valid, then withhold resuscitation. Continue supportive care and contact medical direction as required.",
+    "distractorExplanations": {
+      "a": "Out-of-hospital DNR or POLST forms are valid in many states.",
+      "c": "A DNR applies to resuscitation as a whole, not just the AED.",
+      "d": "A valid DNR means CPR should not be started if local rules are met."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-024",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "Which finding means BLS rescuers should not start CPR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fixed and dilated pupils in both eyes"
+      },
+      {
+        "id": "b",
+        "text": "No pulse for 2 minutes"
+      },
+      {
+        "id": "c",
+        "text": "Rigor mortis with dependent lividity"
+      },
+      {
+        "id": "d",
+        "text": "A body temperature that feels cool"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Obvious signs of irreversible death, such as rigor mortis, dependent lividity, decapitation or decomposition, mean CPR is not started. Otherwise begin CPR.",
+    "distractorExplanations": {
+      "a": "Pupils can be dilated during arrest and are not a reason to withhold CPR.",
+      "b": "Pulselessness is the reason to start CPR.",
+      "d": "Cool skin alone is not a sign of irreversible death."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-025",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "A rescuer uses the E-C clamp technique with a bag-mask device. What do the 'C' and 'E' refer to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "C is compressions and E is exhalation"
+      },
+      {
+        "id": "b",
+        "text": "C is the cheek seal and E is the eye protection"
+      },
+      {
+        "id": "c",
+        "text": "C is the chin lift and E is the extension of the neck"
+      },
+      {
+        "id": "d",
+        "text": "Thumb and index finger make a C; other fingers an E"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In the E-C clamp, the thumb and index finger form a C pressing the mask to the face, while the remaining three fingers form an E lifting the jaw into the mask.",
+    "distractorExplanations": {
+      "a": "E-C refers to hand position, not CPR phases.",
+      "b": "The mask does not cover the eyes; the letters describe hand shape.",
+      "c": "The letters describe hand shapes on the mask and jaw."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-026",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "A man collapses in the middle of a busy street. What should the rescuer do before starting CPR?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Make the scene safe; move him only if needed"
+      },
+      {
+        "id": "b",
+        "text": "Start CPR right where he is, ignoring traffic"
+      },
+      {
+        "id": "c",
+        "text": "Wait for police before going near the victim"
+      },
+      {
+        "id": "d",
+        "text": "Drag him far away from the road before checking him"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Scene safety comes first. Move the victim only if needed to protect rescuer and victim, then assess and begin CPR.",
+    "distractorExplanations": {
+      "b": "Ignoring traffic endangers both the rescuer and the victim.",
+      "c": "Waiting delays CPR; make the scene safe yourself if possible.",
+      "d": "Move him only as far as needed for safety, then start CPR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-027",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "During a resuscitation, which communication style best supports the team?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Several people giving orders at the same time"
+      },
+      {
+        "id": "b",
+        "text": "Clear, concise messages in a calm voice"
+      },
+      {
+        "id": "c",
+        "text": "Long explanations so everyone understands the reasoning"
+      },
+      {
+        "id": "d",
+        "text": "Talking quietly to avoid alarming bystanders"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Clear messages are concise and spoken in a calm, direct tone, which helps team members hear and act correctly.",
+    "distractorExplanations": {
+      "a": "Multiple leaders cause confusion; one leader gives orders.",
+      "c": "Long explanations distract the team from tasks.",
+      "d": "Quiet speech may not be heard over the noise."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-028",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "The hospital code team arrives to take over from BLS rescuers. What should the rescuers provide?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop CPR and wait for the team to ask questions"
+      },
+      {
+        "id": "b",
+        "text": "A brief handoff: events, CPR time, shocks"
+      },
+      {
+        "id": "c",
+        "text": "A full medical history before the team starts work"
+      },
+      {
+        "id": "d",
+        "text": "Nothing; the code team will figure it out"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Give a concise handoff, including what happened, when CPR started, shocks delivered and medications given, while compressions continue.",
+    "distractorExplanations": {
+      "a": "Compressions continue during the handoff.",
+      "c": "Handoffs are brief so care continues without delay.",
+      "d": "Important details like shock count and timing guide next steps."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-029",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "The AED prompts 'Check pads' during use. What should the rescuer do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove the pads and continue CPR without the AED"
+      },
+      {
+        "id": "b",
+        "text": "Press pads firmly or replace them"
+      },
+      {
+        "id": "c",
+        "text": "Turn off the AED and restart it"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the prompt and keep compressing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A 'check pads' prompt means poor contact. Press the pads firmly, dry the skin or remove hair if needed, or replace the pads.",
+    "distractorExplanations": {
+      "a": "The AED is needed; fix the pad contact instead.",
+      "c": "Restarting wastes time and does not fix poor contact.",
+      "d": "Poor pad contact prevents analysis and shock."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
+  },
+  {
+    "id": "aha-bls-provider-readiness-check-team-special-030",
+    "examSlug": "aha-bls-provider-readiness-check",
+    "topicId": "team-special",
+    "prompt": "A CPR coach watching a feedback monitor sees that compressions on an adult are only about 1.5 inches deep. What should the coach tell the compressor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Good; 1.5 inches is the adult target"
+      },
+      {
+        "id": "b",
+        "text": "Stop so someone can check the pulse"
+      },
+      {
+        "id": "c",
+        "text": "Push harder, to at least 2 inches"
+      },
+      {
+        "id": "d",
+        "text": "Push faster, to about 140 per minute"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Adult compressions should be at least 2 inches (5 cm) but no more than 2.4 inches (6 cm) deep. A CPR coach gives specific, real-time feedback on depth, rate and recoil.",
+    "distractorExplanations": {
+      "a": "About 1.5 inches is the infant target; adults need at least 2 inches (5 cm).",
+      "b": "Pausing for a pulse check cuts compressions without fixing the depth.",
+      "d": "Rates above 120 reduce depth further; the problem here is depth, not rate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Top-10 bank expansion 2026-10-15)."
   }
 ]
