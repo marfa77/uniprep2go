@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 43 | 28 |
+| ok | 44 | 29 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 27 | 3 |
+| small-bank | 26 | 2 |
 | point-fix | 0 | 0 |
 | rewrite | 107 | 33 |
 | civic | 19 | 18 |
@@ -128,7 +128,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `wi-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (17 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wv-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wy-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| small-bank | `cfa-level-1-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
 | small-bank | `aha-bls-provider-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
@@ -161,6 +160,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
+| ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
