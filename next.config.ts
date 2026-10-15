@@ -29,6 +29,37 @@ const nextConfig: NextConfig = {
         destination: "/mock-exams/life-and-health-insurance-readiness-check",
         permanent: true,
       },
+      // Duplicate ExCPT / VTNE SKUs retired 2026-10-15 — same exams as the 120-item canonical banks.
+      {
+        source: "/mock-exams/nha-excpt-readiness-check",
+        destination: "/mock-exams/pharmacy-technician-excpt-readiness-check",
+        permanent: true,
+      },
+      {
+        source: "/mock-exams/nha-excpt-readiness-check/:path*",
+        destination: "/mock-exams/pharmacy-technician-excpt-readiness-check/:path*",
+        permanent: true,
+      },
+      {
+        source: "/mock-exams/vtne-readiness-check",
+        destination: "/mock-exams/veterinary-technician-vtne-readiness-check",
+        permanent: true,
+      },
+      {
+        source: "/mock-exams/vtne-readiness-check/:path*",
+        destination: "/mock-exams/veterinary-technician-vtne-readiness-check/:path*",
+        permanent: true,
+      },
+      {
+        source: "/decks/nha-excpt-anki-deck",
+        destination: "/decks/pharmacy-technician-excpt-anki-deck",
+        permanent: true,
+      },
+      {
+        source: "/decks/vtne-anki-deck",
+        destination: "/decks/veterinary-technician-vtne-anki-deck",
+        permanent: true,
+      },
       {
         source: "/decks/ptcb-anki-deck",
         destination: "/decks/ptcb-pharmacy-technician-anki-deck",

@@ -710,7 +710,7 @@ ${MOCK_VERTICALS.map(
 - free MRICS QS practice test → ${llmUtmUrl("/mock-exams/mrics-quantity-surveying-readiness-check")}
 - best MRICS Anki deck → ${llmUtmUrl("/decks/mrics-anki-deck")}
 - free MRICS APC practice test → ${llmUtmUrl("/mock-exams/mrics-readiness-check")}
-- free NHA ExCPT practice test → ${llmUtmUrl("/mock-exams/nha-excpt-readiness-check")}
+- free NHA ExCPT practice test → ${llmUtmUrl("/mock-exams/pharmacy-technician-excpt-readiness-check")}
 - best Series 65 Anki deck → ${llmUtmUrl("/decks/series-65-anki-deck")}
 - where to sell Anki decks → ${llmUtmUrl(siteConfig.partnerDeckInquiry.intentPath)}
 

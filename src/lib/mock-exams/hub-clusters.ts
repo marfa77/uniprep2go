@@ -67,7 +67,7 @@ export const nicheGooglePrioritySlugs = [
   "cfa-level-2-readiness-check",
   "frm-part-1-readiness-check",
   "ptcb-pharmacy-technician-mock",
-  "nha-excpt-readiness-check",
+  "pharmacy-technician-excpt-readiness-check",
   "mrics-quantity-surveying-readiness-check",
   "pmp-readiness-check",
   "nclex-rn-readiness-check",
@@ -130,7 +130,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
     "This free FRM Part 1 readiness check targets foundations of risk, quant, markets and products, and valuation models so GARP candidates can see which Part 1 pillars still need daily Anki before booking the exam window.",
   "ptcb-pharmacy-technician-mock":
     "This free PTCB pharmacy technician practice mock covers medications, federal requirements, patient safety, and order entry judgment. Need the January 2026 PTCE content outline in print? Use the linked blueprint study guide. Use the topic report to decide whether to buy the PTCB Anki deck or the 2026 study guide next — not a recycled generic quiz bank.",
-  "nha-excpt-readiness-check":
+  "pharmacy-technician-excpt-readiness-check":
     "This free NHA ExCPT readiness check is built for pharmacy technician candidates on the ExCPT path who need timed practice before the official exam. Review weak domains, then drill the matching Anki rows instead of re-reading unpaid blog dumps.",
   "mrics-quantity-surveying-readiness-check":
     "This free MRICS Quantity Surveying readiness check stresses QS pathway competencies — measurement, cost, contract practice, and ethics — so APC candidates can see which Level 2/3 rows still need Anki before the next supervisor review.",

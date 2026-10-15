@@ -420,44 +420,6 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "nha patient care technician practice test",
     ],
   }),
-  "nha-excpt-readiness-check": explainer({
-    practiceTestName: "NHA ExCPT Practice Test",
-    whatIsExam:
-      "The NHA ExCPT (Exam for the Certification of Pharmacy Technicians) is an alternative national pharmacy technician certification pathway to PTCB’s PTCE. It tests medications/pharmacology, federal requirements and law, order entry, and dispensing/practice knowledge. Official ExCPT is typically ~120 items (including pretest) in about 2 hours 10 minutes with a scaled passing score — verify current NHA candidate handbook before you book.",
-    administeredBy: "National Healthcareer Association (NHA)",
-    officialFormat:
-      "Official ExCPT: ~120 multiple-choice items (scored + pretest), ~2 hours 10 minutes, scaled pass score (commonly cited ~390) — confirm on NHA. UniPrep2Go readiness check: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, domain scoring, full answer review.",
-    examFaqs: [
-      {
-        question: "What is the NHA ExCPT exam?",
-        answer:
-          "ExCPT is NHA’s pharmacy technician certification exam — a competitor pathway to PTCB’s PTCE. Many employers accept either credential; confirm your state board and employer preference before you register.",
-      },
-      {
-        question: "Is ExCPT the same as the PTCB PTCE?",
-        answer:
-          "No. ExCPT is administered by NHA; PTCE is administered by PTCB. Domains overlap (medications, law, safety, order entry) but they are different certifiers with different blueprints — do not mix study guides blindly.",
-      },
-      {
-        question: "Where can I take a free NHA ExCPT practice test online?",
-        answer:
-          "UniPrep2Go’s free NHA ExCPT readiness check is a timed 60-question diagnostic with domain scoring and full answer review — free 25-question diagnostic, no signup and no 20-question tease. It is independent prep, not an NHA exam or retired NHA items.",
-      },
-      {
-        question: "How should I use this readiness check before ExCPT day?",
-        answer:
-          "Sit the timed mock first, note weak domains (pharmacology, federal law, order entry, dispensing), then drill those topics daily. If your pathway is PTCB instead, switch to the free PTCB PTCE mock and 2026 study guide.",
-      },
-    ],
-    keywords: [
-      "free nha excpt practice test",
-      "nha excpt practice test",
-      "excpt practice exam",
-      "excpt vs ptcb",
-      "pharmacy technician practice test",
-      "nha pharmacy tech practice test",
-    ],
-  }),
   "nha-cmaa-readiness-check": explainer({
     practiceTestName: "NHA CMAA Practice Test",
     whatIsExam:
@@ -1044,20 +1006,6 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       },
     ],
     keywords: ["ardms spi practice test", "ultrasound physics practice test", "spi exam practice", "free spi practice test"],
-  }),
-  "vtne-readiness-check": explainer({
-    practiceTestName: "VTNE Practice Test",
-    whatIsExam:
-      "The Veterinary Technician National Examination (VTNE) is the national exam for veterinary technician / nurse licensure or credentialing in most U.S. jurisdictions and Canadian provinces.",
-    administeredBy: "AAVSB (VTNE)",
-    examFaqs: [
-      {
-        question: "What is the VTNE?",
-        answer:
-          "VTNE is the national board-style exam veterinary technician graduates take for state/provincial credentialing.",
-      },
-    ],
-    keywords: ["vtne practice test", "veterinary technician practice exam"],
   }),
   "cosmetology-state-readiness-check": explainer({
     practiceTestName: "Cosmetology Practice Test",

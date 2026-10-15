@@ -241,26 +241,6 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     questionSourceNote: "Original UniPrep2Go local bank for CPCT topics.",
   }),
   readinessConfig({
-    slug: "nha-excpt-readiness-check",
-    title: "NHA ExCPT Pharmacy Technician Readiness Check",
-    shortTitle: "NHA ExCPT",
-    linkedDeckSlug: "nha-excpt-anki-deck",
-    durationMinutes: 75,
-    questionCount: WAVE1_SESSION_QUESTIONS,
-    topics: fourTopics([
-      { id: "pharmacology", label: "Pharmacology & medications" },
-      { id: "federal-law", label: "Federal requirements & law" },
-      { id: "order-entry", label: "Order entry & prescriptions" },
-      { id: "dispensing-practice", label: "Dispensing & sterile/nonsterile practice" },
-    ]),
-    officialSourceNote:
-      "Readiness check mapped to NHA ExCPT themes (distinct from PTCB PTCE). Not an NHA certification exam.",
-    description:
-      "60-question NHA ExCPT pharmacy technician readiness check (free 25-question version) with domain scoring.",
-    examBody: "NHA",
-    questionSourceNote: "Original UniPrep2Go local bank for ExCPT topics.",
-  }),
-  readinessConfig({
     slug: "nremt-paramedic-readiness-check",
     title: "NREMT Paramedic Readiness Check",
     shortTitle: "NREMT Paramedic",
@@ -383,26 +363,6 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       "60-question CST surgical technologist readiness check (free 25-question version) with domain scoring.",
     examBody: "NBSTSA",
     questionSourceNote: "Original UniPrep2Go local bank for CST topics.",
-  }),
-  readinessConfig({
-    slug: "vtne-readiness-check",
-    title: "VTNE Veterinary Technician Readiness Check",
-    shortTitle: "VTNE",
-    linkedDeckSlug: "vtne-anki-deck",
-    durationMinutes: 75,
-    questionCount: WAVE1_SESSION_QUESTIONS,
-    topics: fourTopics([
-      { id: "pharmacy-pharm", label: "Pharmacy & pharmacology" },
-      { id: "surgical-nursing", label: "Surgical nursing & anesthesia" },
-      { id: "diagnostics", label: "Diagnostics & lab" },
-      { id: "animal-care", label: "Animal care, dentistry & imaging" },
-    ]),
-    officialSourceNote:
-      "Readiness check aligned to AAVSB VTNE domain themes. Not an AAVSB exam.",
-    description:
-      "60-question VTNE readiness check (free 25-question version) with domain scoring for veterinary technician candidates.",
-    examBody: "AAVSB",
-    questionSourceNote: "Original UniPrep2Go local bank for VTNE topics.",
   }),
 ];
 

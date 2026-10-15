@@ -11,9 +11,9 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 | unreviewed | 0 | 0 |
 | small-bank | 27 | 3 |
 | point-fix | 0 | 0 |
-| rewrite | 109 | 33 |
+| rewrite | 107 | 33 |
 | civic | 19 | 18 |
-| **total live mocks** | **198** | **82** |
+| **total live mocks** | **196** | **82** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -103,7 +103,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `nh-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nha-cmaa-readiness-check` | planned | 60 / 60 | — | FAIL (20 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nha-cpt-phlebotomy-readiness-check` | planned | 60 / 60 | — | FAIL (10 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `nha-excpt-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nm-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nnaap-cna-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `notary-public-readiness-check` | planned | 60 / 60 | — | FAIL (50 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -123,9 +122,8 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `six-sigma-green-belt-readiness-check` | planned | 60 / 60 | — | FAIL (60 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `tn-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ut-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `veterinary-technician-vtne-readiness-check` | planned | 60 / 60 | — | FAIL (13 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
+| rewrite | `veterinary-technician-vtne-readiness-check` | planned | 60 / 60 | 2026-10-15 | FAIL (13 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `vt-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `vtne-readiness-check` | planned | 60 / 60 | — | FAIL (21 items + bank-level): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `water-treatment-operator-1-readiness-check` | planned | 60 / 60 | — | FAIL (59 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wi-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (17 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wv-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -197,7 +195,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nremt-emr-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `parapro-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pest-control-applicator-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
-| ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | — | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
@@ -224,11 +222,11 @@ Products without a mock and catalog totals: bottom of this file.
 
 | Line | Count |
 |---|---|
-| Live mocks | 198 |
+| Live mocks | 196 |
 | … with a live Anki / PDF pair | 82 |
-| … with a planned Anki pair | 116 |
+| … with a planned Anki pair | 114 |
 | Products without a mock (Anki, PDF, app, bundle) | 37 (available 23, planned 14) |
-| Catalog decks total (`decks.ts`) | 234 (available 104) |
+| Catalog decks total (`decks.ts`) | 232 (available 104) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 27 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.

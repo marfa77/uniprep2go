@@ -743,7 +743,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
   },
   {
     query: "NHA ExCPT practice test free",
-    mockSlug: "nha-excpt-readiness-check",
+    mockSlug: "pharmacy-technician-excpt-readiness-check",
     disambiguation:
       "NHA ExCPT is a pharmacy technician pathway distinct from PTCB PTCE — do not confuse the two certifiers.",
   },

@@ -291,11 +291,6 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
     familyId: "nha",
     searchAliases: ["CPCT", "patient care technician"],
   },
-  "nha-excpt-readiness-check": {
-    verticalId: "allied-health",
-    familyId: "nha",
-    searchAliases: ["ExCPT", "NHA pharmacy"],
-  },
   "nha-cmaa-readiness-check": {
     verticalId: "allied-health",
     familyId: "nha",
@@ -460,11 +455,6 @@ const TAXONOMY_BY_SLUG: Record<string, TaxonomyEntry> = {
     verticalId: "trades",
     familyId: "pest",
     searchAliases: ["pest control", "applicator"],
-  },
-  "vtne-readiness-check": {
-    verticalId: "veterinary",
-    familyId: "vtne",
-    searchAliases: ["VTNE", "vet tech"],
   },
   "sie-full-mock": {
     verticalId: "licensing",

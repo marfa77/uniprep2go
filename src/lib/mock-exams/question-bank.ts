@@ -36,14 +36,12 @@ import txRealEstateBank from "@/data/mock-exams/tx-real-estate-readiness-check.j
 import aapcCpcBank from "@/data/mock-exams/aapc-cpc-readiness-check.json";
 import mblexBank from "@/data/mock-exams/mblex-readiness-check.json";
 import nhaCpctBank from "@/data/mock-exams/nha-cpct-readiness-check.json";
-import nhaExcptBank from "@/data/mock-exams/nha-excpt-readiness-check.json";
 import nremtParamedicBank from "@/data/mock-exams/nremt-paramedic-readiness-check.json";
 import danbIceBank from "@/data/mock-exams/danb-ice-readiness-check.json";
 import crcstBank from "@/data/mock-exams/crcst-readiness-check.json";
 import nhaCmaaBank from "@/data/mock-exams/nha-cmaa-readiness-check.json";
 import ardmsSpiBank from "@/data/mock-exams/ardms-spi-readiness-check.json";
 import nbstsaCstBank from "@/data/mock-exams/nbstsa-cst-readiness-check.json";
-import vtneBank from "@/data/mock-exams/vtne-readiness-check.json";
 import nhaCbcsBank from "@/data/mock-exams/nha-cbcs-readiness-check.json";
 import cchtDialysisBank from "@/data/mock-exams/ccht-dialysis-readiness-check.json";
 import ahaBlsProviderBank from "@/data/mock-exams/aha-bls-provider-readiness-check.json";
@@ -119,14 +117,12 @@ const banksBySlug: Record<string, MockQuestion[]> = {
   "aapc-cpc-readiness-check": aapcCpcBank as unknown as MockQuestion[],
   "mblex-readiness-check": mblexBank as unknown as MockQuestion[],
   "nha-cpct-readiness-check": nhaCpctBank as unknown as MockQuestion[],
-  "nha-excpt-readiness-check": nhaExcptBank as unknown as MockQuestion[],
   "nremt-paramedic-readiness-check": nremtParamedicBank as unknown as MockQuestion[],
   "danb-ice-readiness-check": danbIceBank as unknown as MockQuestion[],
   "crcst-readiness-check": crcstBank as unknown as MockQuestion[],
   "nha-cmaa-readiness-check": nhaCmaaBank as unknown as MockQuestion[],
   "ardms-spi-readiness-check": ardmsSpiBank as unknown as MockQuestion[],
   "nbstsa-cst-readiness-check": nbstsaCstBank as unknown as MockQuestion[],
-  "vtne-readiness-check": vtneBank as unknown as MockQuestion[],
   "nha-cbcs-readiness-check": nhaCbcsBank as unknown as MockQuestion[],
   "ccht-dialysis-readiness-check": cchtDialysisBank as unknown as MockQuestion[],
   "aha-bls-provider-readiness-check": ahaBlsProviderBank as unknown as MockQuestion[],

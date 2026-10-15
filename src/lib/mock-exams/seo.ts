@@ -175,10 +175,10 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "Pharmacy technician candidates, pharmacy tech students, and career changers preparing for the PTCE who want a timed readiness baseline before buying prep courses or drilling flashcards.",
     practiceTestLabel: "PTCB / PTCE practice test",
   },
-  "nha-excpt-readiness-check": {
-    title: "Free NHA ExCPT Practice Test | 60 Questions Online",
+  "pharmacy-technician-excpt-readiness-check": {
+    title: "NHA ExCPT Practice Test | 60Q Mock, 25Q Free",
     description:
-      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review — free 25-question diagnostic (no signup, no 20-question tease), then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, no signup; full mock 60 timed questions, 75 minutes, topic scoring for orders & dispensing, inventory & storage, safety & quality, and law & ethics — full answer review, then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
     keywords: [
       "free nha excpt practice test",
       "nha excpt practice test",
@@ -187,11 +187,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nha pharmacy tech practice test",
       "pharmacy technician practice test free",
     ],
-    headline: "Free NHA ExCPT Pharmacy Technician Practice Test",
+    headline: "NHA ExCPT Pharmacy Technician Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed ExCPT-pathway diagnostic with domain scoring — pharmacology, federal requirements, order entry, and dispensing practice — built for candidates who chose NHA rather than PTCB. Free 25-question diagnostic, no signup; full answer review after you finish. Independent prep — not retired NHA items.",
+      "A timed ExCPT-pathway diagnostic with topic scoring — orders and dispensing, inventory and storage, safety and quality, and pharmacy law and ethics — built for candidates who chose NHA rather than PTCB. Each full attempt draws 60 of 120 original items; the free first run is a 25-question diagnostic, no signup, with full answer review. Independent prep — not retired NHA items.",
     audience:
-      "Pharmacy technician candidates targeting NHA ExCPT (not PTCB PTCE) who want a free timed baseline with topic scoring before paying for a question bank.",
+      "Pharmacy technician candidates targeting NHA ExCPT (not PTCB PTCE) who want a timed baseline with topic scoring before paying for a question bank.",
     practiceTestLabel: "NHA ExCPT practice test",
   },
   "cfa-level-1-readiness-check": {

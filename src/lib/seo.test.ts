@@ -109,7 +109,7 @@ describe("seo utilities (Barakhlo patterns)", () => {
       "cfa-level-2-readiness-check",
       "frm-part-1-readiness-check",
       "ptcb-pharmacy-technician-mock",
-      "nha-excpt-readiness-check",
+      "pharmacy-technician-excpt-readiness-check",
       "mrics-quantity-surveying-readiness-check",
       "pmp-readiness-check",
       "nclex-rn-readiness-check",
@@ -128,7 +128,7 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(isNicheGooglePrioritySlug("cfa-level-2-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("ptcb-pharmacy-technician-mock")).toBe(true);
     expect(isNicheGooglePrioritySlug("frm-part-1-readiness-check")).toBe(true);
-    expect(isNicheGooglePrioritySlug("nha-excpt-readiness-check")).toBe(true);
+    expect(isNicheGooglePrioritySlug("pharmacy-technician-excpt-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("mrics-quantity-surveying-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("series-65-readiness-check")).toBe(true);
     expect(isNicheGooglePrioritySlug("series-66-readiness-check")).toBe(true);
