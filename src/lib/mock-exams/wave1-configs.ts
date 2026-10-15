@@ -110,11 +110,12 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "medical-ops", label: "Medical & EMS operations" },
     ]),
     officialSourceNote:
-      "Readiness check aligned to NREMT EMT cognitive domains. Not an NREMT certification exam.",
+      "Official NREMT EMT cognitive exam (2025 blueprint): computer-adaptive, 70–120 items (10 unscored pilot items), 2-hour limit, including technology-enhanced items. This check is a fixed 60-question / 60-minute multiple-choice diagnostic across airway, cardiology, trauma and medical/operations — not adaptive and not an NREMT certification exam.",
     description:
       "60-question NREMT EMT readiness check (free 25-question version) with topic scoring across airway, cardiology, trauma, and medical/ops.",
     examBody: "NREMT",
-    questionSourceNote: "Original UniPrep2Go local bank for EMT cognitive topics.",
+    lastUpdated: "2026-10-15",
+    questionSourceNote: "Original UniPrep2Go bank: 120 unique EMT scenario items (30 per area), 60 drawn per attempt (expanded 2026-10-15).",
   }),
   readinessConfig({
     slug: "nha-cpt-phlebotomy-readiness-check",
