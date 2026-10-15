@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 42 | 27 |
+| ok | 43 | 28 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 27 | 3 |
 | point-fix | 0 | 0 |
-| rewrite | 110 | 34 |
+| rewrite | 109 | 33 |
 | civic | 19 | 18 |
 | **total live mocks** | **198** | **82** |
 
@@ -33,7 +33,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `enrolled-agent-readiness-check` | live | 120 / 120 | — | FAIL (13 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `fl-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (10 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ga-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `gmat-focus-readiness-check` | live | 45 / 200 | 2026-10-15 | padding ×14 |
 | rewrite | `il-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ma-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | padding ×96 |
@@ -168,6 +167,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `frm-part-1-readiness-check` | live | 50 / 120 | 2026-10-15 | — |
+| ok | `gmat-focus-readiness-check` | live | 45 / 200 | 2026-10-15 | — |
 | ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-15 | — |
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |

@@ -3050,21 +3050,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A studio moved to a four-day on-site week. Over the next half year, client-reported defects in its apps fell. Leadership credits extra rest. Which finding, if true, most weakens that explanation?",
+        question: "A software sprint budget is $48,000. Spent so far: design $12,000, build $18,000, test $6,000. Remaining work is estimated at 40% of the original budget. Which pair is correct?",
         answer:
-          "Correct: (c) In the same week as the calendar change, the studio shipped a long-delayed automated test suite. A new test suite can catch defects before clients see them, so the drop need not come from rest.",
+          "Correct: (d) Spent $36,000; remaining-work estimate $19,200 Spent = 12,000 + 18,000 + 6,000 = $36,000. The remaining-work estimate is 40% of the original $48,000 = $19,200, not the full budget and not the 60% complement ($28,800). Together the two figures reach $55,200, so the sprint is heading over budget.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-1.webp",
       },
       {
-        question: "A print shop’s unit cost and price: Poster $4 / $9; Zine $6 / $10. Fixed weekly costs are $300. If the shop sells 40 posters and 20 zines, which pair is correct?",
+        question: "A consulting firm reports that analysts who keep a handwritten daily planner finish more client memos than analysts who rely only on digital calendars. The firm therefore plans to require paper planners for every analyst. Which finding, if true, most weakens the plan's reasoning?",
         answer:
-          "Correct: (d) Contribution $280 and weekly profit −$20 after the $300 fixed cost Poster margin $5 × 40 = $200. Zine margin $4 × 20 = $80. Contribution $280. Profit 280−300=−$20. Skipping fixed cost reports $280 profit. Adding prices 40×9+20×10=560 is not contribution.",
+          "Correct: (c) Productive analysts tend to prefer paper; planner use marks their drive rather than causing it. If planner use merely tags already-productive people, forcing planners on others will not raise memo output. That selection confound undercuts the causal recommendation.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-2.webp",
       },
       {
-        question: "A village replaced all-night street lamps with motion-triggered LEDs, and the lighting electricity bill fell 40 percent. Officials credit the sensors. Which finding, if true, most weakens that credit?",
+        question: "A co-op sells honey at 40% margin on cost and beeswax tins at 25% margin on cost. Cost is $12 per honey jar and $8 per tin. Which pair of selling prices follows those cost margins?",
         answer:
-          "Correct: (a) The village also cut the nightly hours of two floodlit sports fields in the same billing period. Losing sports-field flood hours can crash the lighting bill without the street sensors doing the work.",
+          "Correct: (c) Honey $16.80 and tins $10.00 Price = cost × (1 + margin on cost). Honey 12 × 1.40 = $16.80; tins 8 × 1.25 = $10.00. Reporting the markup alone, adding cents instead of percent, or treating the margin as a share of price are the usual percent errors.",
         imageUrl: "/samples/gmat-focus-anki-deck-sample-3.webp",
       },
     ],
