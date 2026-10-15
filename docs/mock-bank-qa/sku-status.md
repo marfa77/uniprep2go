@@ -6,10 +6,10 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 47 | 31 |
+| ok | 48 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 25 | 2 |
+| small-bank | 24 | 2 |
 | point-fix | 0 | 0 |
 | rewrite | 105 | 31 |
 | civic | 19 | 18 |
@@ -149,7 +149,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `precision-nutrition-l1-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `servsafe-food-handler-readiness-check` | planned | 60 / 60 | 2026-10-02 | bank 60 for 60Q session |
 | small-bank | `unarmed-security-officer-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
-| small-bank | `veterinary-assistant-readiness-check` | planned | 60 / 60 | 2026-10-02 | bank 60 for 60Q session |
 | small-bank | `wastewater-operator-1-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | ok | `abo-optician-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `ace-cpt-readiness-check` | live | 60 / 300 | 2026-10-14 | — |
@@ -198,6 +197,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | — | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | civic | `belgium-flanders-mo-readiness-check` | live | 60 / 120 | 2026-10-06 | — |
 | civic | `belgium-wallonie-citoyennete-readiness-check` | live | 60 / 60 | — | FAIL (0 items + bank-level): correct; bank 60 for 60Q session; no content review in ledger |
