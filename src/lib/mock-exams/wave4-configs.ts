@@ -702,26 +702,6 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     searchAliases: ["CFP exam", "Certified Financial Planner"],
   }),
   nicheReadinessConfig({
-    slug: "life-health-insurance-readiness-check",
-    title: "Life & Health Insurance Readiness Check",
-    shortTitle: "Life & Health Insurance",
-    // Funnel to the buyable L&H exam deck (avoid orphan planned life-health-insurance-anki-deck).
-    linkedDeckSlug: "life-and-health-insurance-exam-anki-deck",
-    durationMinutes: 75,
-    questionCount: NICHE_SESSION_QUESTIONS,
-    topics: fourNicheTopics([
-      { id: "life", label: "Life insurance products" },
-      { id: "health", label: "Health & accident" },
-      { id: "law", label: "Insurance law & ethics" },
-      { id: "underwriting", label: "Underwriting & claims" }
-    ]),
-    officialSourceNote: "Mapped to State insurance departments themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Life & Health Insurance readiness check (free 25-question version) with topic scoring.",
-    examBody: "State insurance departments",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
-    searchAliases: ["life and health insurance exam", "life health producer"],
-  }),
-  nicheReadinessConfig({
     slug: "praxis-elementary-education-readiness-check",
     title: "Praxis Elementary Education Readiness Check",
     shortTitle: "Praxis Elementary Education",

@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "From UniPrep2Go deck content (series63_250_authored.csv, S63-IAR). · Local QA repair (stems/distractors) · Local IAR distractor rewrite"
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-016",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An agent with no written discretionary authority sees a stock drop 12% before the open and buys 200 shares for a customer who has owned it for years, planning to call her at lunch. The customer had never discussed adding to the position. How is the trade classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A permitted time-and-price discretion order, because the customer already owns the stock and the agent picked only the price"
+      },
+      {
+        "id": "b",
+        "text": "An unauthorized transaction, because the customer never approved this specific trade"
+      },
+      {
+        "id": "c",
+        "text": "Acceptable if the agent confirms it with the customer the same day"
+      },
+      {
+        "id": "d",
+        "text": "Acceptable because the purchase is suitable for an existing holder"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Without written discretionary authority, an agent may act only on the customer's instruction for the specific security, buy or sell, and quantity. Entering a trade the customer never discussed is an unauthorized transaction, an unethical practice under NASAA rules regardless of how sensible the trade looks.",
+    "distractorExplanations": {
+      "a": "Time-and-price discretion still needs the customer to choose the security, the action and the amount; here she chose nothing.",
+      "c": "Calling after the fact does not cure the violation; approval had to come before the order was entered.",
+      "d": "Suitability and authority are separate tests: a suitable trade placed without authority is still unauthorized."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-017",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "Two agents at different firms coordinate so that one enters buy orders and the other enters matching sell orders in the same thinly traded stock at the same price, with no change in beneficial ownership between their related accounts. What is this practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Legitimate crossing of customer orders, because both sides trade at the prevailing market price and no customer is harmed"
+      },
+      {
+        "id": "b",
+        "text": "Churning, because the trades create commissions without benefit to customers"
+      },
+      {
+        "id": "c",
+        "text": "Front-running, because the agents knew of each other's orders in advance"
+      },
+      {
+        "id": "d",
+        "text": "Matched orders, a form of market manipulation that creates false trading activity"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Prearranged buy and sell orders entered at the same time and price to create the appearance of active trading are matched orders; when no beneficial ownership changes they are also wash trades. Both are manipulative practices prohibited under the Uniform Securities Act and NASAA's dishonest and unethical practices rules.",
+    "distractorExplanations": {
+      "a": "Crossing is legitimate only for genuine, independent customer orders; prearranged trades between related accounts only paint the tape.",
+      "b": "Churning is excessive trading in a customer account; this scheme fakes volume to mislead the market.",
+      "c": "Front-running means trading ahead of a customer's block order for one's own benefit, not prearranging matching trades."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-018",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An agent receives a customer's order to buy 80,000 shares of a mid-cap stock, an order large enough to move the price. Before entering it, the agent buys 2,000 shares for his own account. What has the agent done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Interpositioning, because a second party stood between the customer and the market"
+      },
+      {
+        "id": "b",
+        "text": "Nothing improper, as long as the customer's order is filled the same day"
+      },
+      {
+        "id": "c",
+        "text": "Front-running, trading ahead of a customer's block order on that knowledge"
+      },
+      {
+        "id": "d",
+        "text": "Insider trading, because the agent used material nonpublic information about the issuer to buy the shares"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Front-running is trading for one's own (or the firm's) account with advance knowledge of a customer's block order that is likely to move the price. It puts the agent's interest ahead of the customer's and is a prohibited unethical practice.",
+    "distractorExplanations": {
+      "a": "Interpositioning inserts another dealer into the trade to add cost; here the agent traded ahead for himself.",
+      "b": "Same-day execution does not cure the abuse; the agent profited from advance knowledge of the customer's order.",
+      "d": "The information concerns a pending customer order, not the issuer's business; the correct name is front-running."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-019",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "A customer hands her agent a $25,000 check to fund a new brokerage account. To save a trip, the agent deposits it into his personal checking account and wires the money to the firm three days later. Which violation has occurred?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Commingling the customer's funds with the agent's own money"
+      },
+      {
+        "id": "b",
+        "text": "Selling away, because the deposit was handled outside the firm's systems and books for three days"
+      },
+      {
+        "id": "c",
+        "text": "No violation, because the funds reached the customer's account within a week"
+      },
+      {
+        "id": "d",
+        "text": "Misappropriation only if the agent earned interest on the money"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Customer funds and securities must be kept separate from those of the agent or firm. Depositing a customer's check into a personal account is commingling, a dishonest and unethical practice even when the money is passed on intact.",
+    "distractorExplanations": {
+      "b": "Selling away is effecting securities transactions outside the firm; this is a handling-of-funds violation.",
+      "c": "The prohibition is on mixing the money at all; prompt delivery afterward does not undo the commingling.",
+      "d": "Earning interest would add misappropriation, but commingling occurs as soon as customer funds go into the agent's account."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-020",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An investment adviser whose affiliated broker-dealer will act as broker for both the advisory client and the other party wants to effect an agency cross transaction. Which condition must be met?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The client consents orally before each trade, and the adviser charges no commission to either side of the cross"
+      },
+      {
+        "id": "b",
+        "text": "The adviser discloses the cross on the client's next quarterly statement"
+      },
+      {
+        "id": "c",
+        "text": "The adviser recommended the trade to both clients so that both are treated fairly"
+      },
+      {
+        "id": "d",
+        "text": "Prior written client consent after full disclosure, and no recommendation of the trade to both sides"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An adviser may effect agency cross transactions only with the client's prior written consent after full written disclosure, a written confirmation of each trade, at least annual summaries, the right to revoke consent at any time, and only when the adviser did not recommend the transaction to both buyer and seller.",
+    "distractorExplanations": {
+      "a": "Consent must be written, and the conditions concern disclosure and recommendations, not a fee waiver.",
+      "b": "After-the-fact disclosure is not enough; written consent must be obtained in advance.",
+      "c": "That is exactly what is forbidden: an agency cross is not allowed when the adviser recommended the trade to both sides."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-021",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An investment adviser wants to sell a bond from its own inventory to an advisory client. What must the adviser do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disclose its principal capacity on the confirmation sent after settlement"
+      },
+      {
+        "id": "b",
+        "text": "Nothing extra, if the bond's price is in line with the current market"
+      },
+      {
+        "id": "c",
+        "text": "Obtain one blanket written consent to all future principal trades when the advisory contract is signed"
+      },
+      {
+        "id": "d",
+        "text": "Disclose its principal capacity in writing and get the client's consent before the trade is completed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When an adviser trades with a client as principal, it must disclose its capacity in writing and obtain the client's consent before completion of each transaction. A blanket advance consent or after-the-fact notice does not satisfy the rule.",
+    "distractorExplanations": {
+      "a": "Disclosure after settlement is too late; consent must come before completion of each principal trade.",
+      "b": "A fair price does not remove the conflict; principal trades still need written disclosure and consent.",
+      "c": "Principal trades need disclosure and consent transaction by transaction, not a single blanket consent at account opening."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-022",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "A state-registered adviser's contract says the adviser \"shall not be liable for any loss arising from its advice, and the client waives all claims against the adviser.\" How do NASAA rules treat this clause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a prohibited hedge clause that misleads clients into thinking they gave up legal rights"
+      },
+      {
+        "id": "b",
+        "text": "As acceptable only for clients who are accredited investors"
+      },
+      {
+        "id": "c",
+        "text": "As valid if the adviser also discloses its conflicts of interest and the client initials the clause separately"
+      },
+      {
+        "id": "d",
+        "text": "As valid, because the client signed the contract voluntarily"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Any contract provision that purports to waive a client's rights under securities law, or that suggests the client cannot sue, is a prohibited hedge clause. Advisers may describe reasonable limits on their duties, but they cannot imply the client gave up legal remedies.",
+    "distractorExplanations": {
+      "b": "Investor sophistication does not make a waiver of statutory rights enforceable or permitted.",
+      "c": "Disclosure of conflicts does not cure a clause suggesting the client waived nonwaivable rights.",
+      "d": "A signature cannot waive the protections of securities law, so the clause stays prohibited."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-023",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "During a dinner, an agent overhears a director of ABC Corp say that ABC will announce a takeover offer next week. The next morning the agent recommends ABC to several customers. What is the problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None, because the director spoke in a public restaurant"
+      },
+      {
+        "id": "b",
+        "text": "The agent is trading on material nonpublic information, which is prohibited"
+      },
+      {
+        "id": "c",
+        "text": "Only a suitability issue, because some customers may not want takeover stocks"
+      },
+      {
+        "id": "d",
+        "text": "None, because the agent did not buy ABC for his own account"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Material information about an issuer that has not been disseminated to the public may not be used to trade or to recommend trades. Passing it on to customers through recommendations is the same violation as trading on it personally.",
+    "distractorExplanations": {
+      "a": "Information does not become public because it was said aloud; it is public only once disseminated to the market.",
+      "c": "Suitability is beside the point; using inside information to recommend the stock is itself the violation.",
+      "d": "Insider trading rules cover tipping and recommending to others, not only trades for one's own account."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-024",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An agent offers a CPA who is not registered in any securities capacity a 20% share of commissions on brokerage accounts the CPA refers. Under NASAA rules, is this permitted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, because a CPA is a licensed professional"
+      },
+      {
+        "id": "b",
+        "text": "No; commissions may be shared only with registered persons of the firm or an affiliate under common control"
+      },
+      {
+        "id": "c",
+        "text": "Yes, if the firm's principal approves the arrangement in writing and the CPA signs a confidentiality agreement"
+      },
+      {
+        "id": "d",
+        "text": "Yes, if the CPA discloses the referral fee to each client"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sharing commissions with anyone who is not registered with the firm (or an affiliate under common control) is a prohibited practice. Paying an unregistered CPA a share of commissions effectively makes the CPA an unregistered agent.",
+    "distractorExplanations": {
+      "a": "A CPA license is not securities registration, so commission sharing with the CPA is still prohibited.",
+      "c": "Principal approval cannot authorize paying commissions to an unregistered person.",
+      "d": "Disclosure does not fix the core problem: an unregistered person is being paid transaction-based compensation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-025",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "To justify a series of speculative option trades, an agent changes a customer's new-account form from \"moderate\" to \"aggressive\" risk tolerance without speaking to the customer. Which statement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a problem only if the customer later complains about losses"
+      },
+      {
+        "id": "b",
+        "text": "Altering the account record is falsification and unethical, whether or not the trades were profitable"
+      },
+      {
+        "id": "c",
+        "text": "It is acceptable once a principal reviews and initials the change on the new-account form within 30 days"
+      },
+      {
+        "id": "d",
+        "text": "It is acceptable if the agent believes the customer can tolerate more risk"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Customer account records must be accurate. Changing a customer's stated objectives or risk tolerance without the customer's input to support recommended trades falsifies firm records and is a dishonest and unethical practice.",
+    "distractorExplanations": {
+      "a": "The record falsification is complete when it is made; a complaint or loss is not needed.",
+      "c": "A principal's initials cannot validate a profile the customer never gave.",
+      "d": "The agent's belief does not authorize changing a record that must reflect the customer's own stated profile."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-026",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An agent consistently recommends one fund family whose sponsor pays the agent's firm revenue-sharing payments and 12b-1 fees, without telling customers. What is the ethical problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Breakpoint selling, because customers in this one fund family pay more in sales charges than they need to"
+      },
+      {
+        "id": "b",
+        "text": "Churning, because the agent repeatedly sells the same funds"
+      },
+      {
+        "id": "c",
+        "text": "Failure to disclose a material conflict of interest tied to the recommendation"
+      },
+      {
+        "id": "d",
+        "text": "None, because 12b-1 fees are described in the fund's prospectus"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Payments that give the firm or agent an incentive to recommend particular products are material conflicts. Recommending them while concealing the arrangement is an unethical practice; the conflict must be disclosed so the customer can weigh the advice.",
+    "distractorExplanations": {
+      "a": "Breakpoint selling means splitting purchases to avoid discounts; the issue here is the undisclosed incentive.",
+      "b": "Churning is excessive trading; recommending one family repeatedly is not excessive trading by itself.",
+      "d": "The prospectus shows fund expenses, not the firm's revenue-sharing incentive to favour this family."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-027",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "At 10:00 a.m. a customer tells her agent to sell all 1,000 of her XYZ shares at the market. The agent thinks XYZ will bounce and waits until 2:00 p.m.; the stock falls another 4%. How is the agent's action treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As acceptable time-and-price discretion on an order the customer placed"
+      },
+      {
+        "id": "b",
+        "text": "As unethical only if the agent also traded XYZ for himself"
+      },
+      {
+        "id": "c",
+        "text": "As acceptable, because the market order was still executed on the same trading day it was received"
+      },
+      {
+        "id": "d",
+        "text": "As unethical, because the agent failed to follow the customer's order promptly"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A customer's instruction to buy or sell at the market must be executed promptly. Delaying or overriding it on the agent's own judgment is a failure to follow customer instructions and an unethical practice, with any loss attributable to the delay.",
+    "distractorExplanations": {
+      "a": "The customer set the time by asking to sell at the market; the agent had no discretion to wait.",
+      "b": "Trading for himself would add a further violation, but ignoring the instruction is improper on its own.",
+      "c": "A market order calls for prompt execution; holding it for hours on the agent's own view is not same-day compliance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-028",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "Pitching a small company's stock, an agent tells a prospect, \"This one will be listed on the Nasdaq Global Market next quarter, and the price will jump.\" The agent has no information that a listing application exists. Under NASAA rules, what is wrong?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the price prediction is a problem; the statement about a future Nasdaq listing is a permissible opinion"
+      },
+      {
+        "id": "b",
+        "text": "Stating that a security will be listed or quoted without reasonable basis is prohibited"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, because opinions about future prices are always allowed"
+      },
+      {
+        "id": "d",
+        "text": "It is acceptable if the prospect is an accredited investor"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "NASAA's rules list as unethical any representation that a security will be listed on an exchange or quoted on a trading system without reasonable basis. Such claims mislead investors about future liquidity and value.",
+    "distractorExplanations": {
+      "a": "Both are problems, but the listing claim without any basis is the specifically prohibited practice.",
+      "c": "Here the agent asserted a listing as fact; doing that without a basis is specifically prohibited.",
+      "d": "Investor status does not permit unfounded statements about a security's listing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-029",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "A state-registered adviser receives a subpoena from a court for a client's account records, and separately a neighbour asks which stocks the client owns. What may the adviser disclose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both, because the client's holdings are not secret once traded"
+      },
+      {
+        "id": "b",
+        "text": "Neither, because client information can never be released without consent"
+      },
+      {
+        "id": "c",
+        "text": "Both, if the adviser first notifies the client by email and keeps a copy of the notice in the client file"
+      },
+      {
+        "id": "d",
+        "text": "The records required by the subpoena, but nothing to the neighbour without the client's consent"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Advisers must keep client identities, investments and affairs confidential unless the client consents or disclosure is required by law. A subpoena falls within the legal-requirement exception; a curious third party does not.",
+    "distractorExplanations": {
+      "a": "Clients' identities, holdings and transactions are confidential; the neighbour has no right to them.",
+      "b": "Disclosure required by law, such as under a court subpoena, is a recognized exception to confidentiality.",
+      "c": "Notice is not consent; the neighbour's request still requires the client's agreement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ethics-030",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ethics",
+    "prompt": "An investment adviser representative's brochure says he holds the CFP certification. His certification lapsed two years ago, and he has not renewed it. How is this treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As misrepresenting qualifications, an unethical practice"
+      },
+      {
+        "id": "b",
+        "text": "As a problem only if a client relied on the credential"
+      },
+      {
+        "id": "c",
+        "text": "As acceptable if the brochure is filed with the Administrator"
+      },
+      {
+        "id": "d",
+        "text": "As acceptable, because he passed the CFP exam at one time"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Advisers and their representatives may not misrepresent their qualifications, credentials or experience. Claiming a lapsed designation misleads clients about the expertise behind the advice.",
+    "distractorExplanations": {
+      "b": "The misstatement is itself the violation; proof of reliance is not required.",
+      "c": "Filing a document does not make a false statement in it permissible.",
+      "d": "Passing the exam once does not allow claiming a credential that is not currently held."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-013",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A broker-dealer emails a research piece only to banks, insurance companies and registered investment companies. Under FINRA Rule 2210, how is this communication treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As correspondence, because it is distributed by email"
+      },
+      {
+        "id": "b",
+        "text": "As exempt from FINRA's content standards because recipients are sophisticated"
+      },
+      {
+        "id": "c",
+        "text": "As an institutional communication, reviewed under written procedures without principal pre-approval"
+      },
+      {
+        "id": "d",
+        "text": "As a retail communication that a registered principal must approve before it is sent out"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "FINRA classifies communications as correspondence, retail communications or institutional communications. Material distributed only to institutional investors is institutional: it needs supervisory review under the firm's written procedures but not principal approval before use, and it must still meet content standards.",
+    "distractorExplanations": {
+      "a": "Correspondence goes to 25 or fewer retail investors; delivery by email does not decide the category.",
+      "b": "Institutional communications still must be fair, balanced and not misleading.",
+      "d": "Retail rules apply when retail investors receive it; a piece sent only to institutions is institutional."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-014",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A customer mails his agent a letter accusing the agent of making trades he did not authorize. What must the broker-dealer do with this complaint?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Forward it to the state Administrator within 24 hours"
+      },
+      {
+        "id": "b",
+        "text": "Keep it for 1 year in the agent's branch, because it concerns an individual agent"
+      },
+      {
+        "id": "c",
+        "text": "Keep a record of it, with the action taken, for at least 4 years"
+      },
+      {
+        "id": "d",
+        "text": "Keep it only until the dispute is resolved and then destroy it"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "FINRA Rule 4513 requires firms to keep a record of written customer complaints, including the action taken, for at least 4 years at each office of supervisory jurisdiction. Complaints also feed supervision and Form U4 disclosure reviews.",
+    "distractorExplanations": {
+      "a": "Firms keep and report complaints through their own procedures; there is no 24-hour forwarding duty to the Administrator.",
+      "b": "One year is far shorter than the required record period for written complaints.",
+      "d": "Written complaints must be kept for a fixed period even after they are resolved."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-015",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "An agent cold-calls prospects in another time zone. Under federal telemarketing rules, when may the agent call a prospect who is not on any do-not-call list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Between 9:00 a.m. and 5:00 p.m. on business days only"
+      },
+      {
+        "id": "b",
+        "text": "At any time, because prospects not on the do-not-call list consented"
+      },
+      {
+        "id": "c",
+        "text": "Between 8:00 a.m. and 9:00 p.m. in the prospect's local time"
+      },
+      {
+        "id": "d",
+        "text": "Between 8:00 a.m. and 9:00 p.m. in the agent's local time"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Telemarketing rules limit unsolicited calls to between 8:00 a.m. and 9:00 p.m. in the called party's local time. Callers must also check the national and firm do-not-call lists and identify themselves and the firm.",
+    "distractorExplanations": {
+      "a": "Business hours are not the limit; calls are allowed from 8 a.m. to 9 p.m., including weekends.",
+      "b": "Not being on a do-not-call list is not consent to calls at any hour; the time window still applies.",
+      "d": "The calling window is set by where the called person is, not where the caller sits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-016",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A customer has a brokerage account with no trading activity for several months but still holds securities and cash. How often must the firm send her an account statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At least quarterly"
+      },
+      {
+        "id": "b",
+        "text": "Monthly, regardless of whether there is activity"
+      },
+      {
+        "id": "c",
+        "text": "Annually, because the account is inactive"
+      },
+      {
+        "id": "d",
+        "text": "Only when there is account activity, such as a trade"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FINRA Rule 2231 requires an account statement at least once each calendar quarter for accounts with a position, money balance or activity. Statements show holdings, balances and activity so customers can spot errors or unauthorized trades.",
+    "distractorExplanations": {
+      "b": "Monthly statements are required when there is activity; the baseline for a quiet account is quarterly.",
+      "c": "Annual delivery is too infrequent; the minimum for accounts with positions is quarterly.",
+      "d": "Statements are due even without activity when the account holds securities or funds."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-017",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A broker-dealer fills a customer's purchase by selling bonds from its own inventory. Which disclosure must the trade confirmation include?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The agent's personal commission split on the trade"
+      },
+      {
+        "id": "b",
+        "text": "The firm's net capital figure as of the trade date"
+      },
+      {
+        "id": "c",
+        "text": "That the firm acted as principal for its own account"
+      },
+      {
+        "id": "d",
+        "text": "The names of other customers who bought the same bonds"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Confirmations must be sent at or before completion of the transaction and must state whether the firm acted as agent or as principal. That capacity tells the customer whether the price includes a markup and who is on the other side of the trade.",
+    "distractorExplanations": {
+      "a": "Confirmations show capacity and charges, not the agent's internal compensation arrangement.",
+      "b": "Net capital is a regulatory financial measure that is not shown on customer confirmations.",
+      "d": "Other customers' identities are confidential and never appear on a confirmation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-018",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "An investment adviser's advertisement highlights five past stock picks that each doubled, without mentioning its other recommendations from the same year, several of which lost money. How is the advertisement treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As acceptable for advisers registered only with the state"
+      },
+      {
+        "id": "b",
+        "text": "As misleading, because selective past recommendations give a false picture of performance"
+      },
+      {
+        "id": "c",
+        "text": "As acceptable, because each of the five results is accurate"
+      },
+      {
+        "id": "d",
+        "text": "As acceptable if the ad states that past performance is no guarantee of future results"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Advertising that cherry-picks profitable past recommendations while omitting unprofitable ones misrepresents an adviser's performance. Showing past specific recommendations is permitted only with fair and balanced context, such as the full list for the period.",
+    "distractorExplanations": {
+      "a": "State-registered advisers are held to the same rule against misleading advertising.",
+      "c": "Accurate individual facts can still mislead when the unfavourable picks are left out.",
+      "d": "A standard disclaimer does not fix a cherry-picked presentation of results."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-019",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A customer deposits $9,500 in cash on Monday and $9,600 in cash on Tuesday, saying he wants to avoid \"government paperwork.\" What is the firm's obligation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat it as structuring and file a Suspicious Activity Report"
+      },
+      {
+        "id": "b",
+        "text": "File a Currency Transaction Report only, since the combined total exceeds $10,000"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, because each deposit is under $10,000"
+      },
+      {
+        "id": "d",
+        "text": "Return the cash to the customer and close the account"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Breaking cash deposits into amounts under $10,000 to avoid a Currency Transaction Report is structuring, a crime under the Bank Secrecy Act. Firms must report it on a Suspicious Activity Report and must not tip off the customer that a report is being filed.",
+    "distractorExplanations": {
+      "b": "A CTR alone does not cover the evident intent to evade reporting; a SAR addresses the structuring.",
+      "c": "Splitting cash to stay under the reporting threshold is itself a red flag that requires a SAR.",
+      "d": "Closing the account may follow, but the firm must still report the suspicious activity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-020",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A broker-dealer's compliance team identifies a $7,000 transaction it believes has no lawful purpose. Under the Bank Secrecy Act, when must the firm file a Suspicious Activity Report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Within 15 days after the trade settles"
+      },
+      {
+        "id": "b",
+        "text": "Within 30 calendar days after initially detecting the suspicious activity"
+      },
+      {
+        "id": "c",
+        "text": "Before the trade is executed, or the trade must be canceled"
+      },
+      {
+        "id": "d",
+        "text": "Only if the suspicious amount reaches $10,000 in a single business day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Broker-dealers must file a SAR for transactions of $5,000 or more that they know or suspect involve illegal funds, evasion of BSA rules or no apparent lawful purpose. The filing is due within 30 calendar days of initial detection, and the SAR is confidential.",
+    "distractorExplanations": {
+      "a": "The clock runs from detection of suspicious facts, and the period is 30 days, not 15.",
+      "c": "SAR filing follows detection; there is no rule that suspicious trades must be filed before execution.",
+      "d": "$10,000 is the cash CTR threshold; SARs for broker-dealers apply at $5,000 and up."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-021",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A broker-dealer finds that a new account holder's name matches an entry on OFAC's Specially Designated Nationals (SDN) list. What must the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Close the account and return the assets to the customer"
+      },
+      {
+        "id": "b",
+        "text": "Block the assets and report to OFAC promptly (within 10 business days)"
+      },
+      {
+        "id": "c",
+        "text": "Ask the customer for a signed written statement explaining the name match before acting"
+      },
+      {
+        "id": "d",
+        "text": "Continue trading but file a Suspicious Activity Report"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "U.S. persons may not do business with individuals or entities on OFAC's SDN list. Firms must block the property, report it to OFAC within 10 business days, and keep it frozen until OFAC authorizes otherwise.",
+    "distractorExplanations": {
+      "a": "Returning assets to a designated person is exactly what blocking rules prohibit.",
+      "c": "Asking the customer does not replace the duty to block and report to OFAC.",
+      "d": "SDN matches require blocking and OFAC reporting, not continued business with a SAR."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-022",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "Under the customer identification program rules, which item is a broker-dealer required to collect before opening an account for an individual?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A reference letter from the customer's bank"
+      },
+      {
+        "id": "b",
+        "text": "The customer's investment objectives and stated risk tolerance"
+      },
+      {
+        "id": "c",
+        "text": "The customer's annual income from tax returns"
+      },
+      {
+        "id": "d",
+        "text": "A residential or business street address, not just a P.O. box"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Customer identification programs require at least name, date of birth, a residential or business street address (a P.O. box alone is not enough for an individual) and an identification number before opening an account, and the firm must verify identity within a reasonable time.",
+    "distractorExplanations": {
+      "a": "Bank references are not among the CIP minimums for individuals.",
+      "b": "Objectives and risk tolerance are suitability data, not identity-verification data.",
+      "c": "Income is suitability information; CIP requires name, date of birth, address and ID number."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-023",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A broker-dealer has written its business continuity plan. What must it tell customers about the plan?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disclose the plan to customers only after a significant business disruption occurs"
+      },
+      {
+        "id": "b",
+        "text": "Send every customer the full plan each year"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, because the plan is an internal compliance document"
+      },
+      {
+        "id": "d",
+        "text": "Provide a written summary at account opening and post it on its website"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "FINRA Rule 4370 requires a business continuity plan and a disclosure statement summarizing it. The summary is given to customers at account opening, posted on the firm's website and mailed on request.",
+    "distractorExplanations": {
+      "a": "The summary is given in advance so customers know what to expect if disruption happens.",
+      "b": "A summary is required, not the full internal plan.",
+      "c": "Customers must be told how the firm will operate and how they can reach their assets in an emergency."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-comm-024",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-comm",
+    "prompt": "A state-registered investment adviser asks how long it must keep its books and records under the NASAA model rule. What is the requirement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only until the advisory relationship with the client ends"
+      },
+      {
+        "id": "b",
+        "text": "5 years from the end of the fiscal year of the last entry, the first 2 in an appropriate office"
+      },
+      {
+        "id": "c",
+        "text": "6 years from each entry, after which they may be destroyed with the Administrator's consent"
+      },
+      {
+        "id": "d",
+        "text": "3 years from the date of each record, all of them on site"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "State-registered advisers must keep required books and records for at least 5 years from the end of the fiscal year in which the last entry was made, with the first 2 years in an appropriate office of the adviser. Records may be kept electronically if they remain accessible.",
+    "distractorExplanations": {
+      "a": "Records must be kept for the full period even after a client leaves.",
+      "c": "Six years applies to broker-dealer blotters, not to state-registered adviser records.",
+      "d": "Three years applies to some broker-dealer records; the adviser rule is 5 years."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-009",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "The state Administrator revokes Summit Securities' broker-dealer registration. What happens to the state registrations of Summit's agents?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They remain effective, because agents are registered individually"
+      },
+      {
+        "id": "b",
+        "text": "They are no longer effective until each agent is associated with another registered broker-dealer"
+      },
+      {
+        "id": "c",
+        "text": "They are automatically revoked, and each agent is barred for one year"
+      },
+      {
+        "id": "d",
+        "text": "They remain effective until each agent's own registration expires on December 31 of this year"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An agent's registration is effective only while the agent is associated with a registered broker-dealer (or an issuer). When the firm's registration ends, its agents cannot act until a new registered firm files for them.",
+    "distractorExplanations": {
+      "a": "Agents register individually but only as representatives of a registered broker-dealer or issuer.",
+      "c": "The firm's revocation suspends the agents' ability to act; it is not a bar against the agents personally.",
+      "d": "An agent's registration depends on association with a registered firm; it does not run on independently."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-010",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "Unless renewed, when do agent and broker-dealer registrations under the Uniform Securities Act expire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Never, as long as the firm pays its annual fees on time"
+      },
+      {
+        "id": "b",
+        "text": "On December 31 of each year"
+      },
+      {
+        "id": "c",
+        "text": "Two years after the agent passed the qualification exam"
+      },
+      {
+        "id": "d",
+        "text": "One year after the date each registration became effective"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Under the Uniform Securities Act, registrations of broker-dealers, agents, investment advisers and IARs expire on December 31 each year unless renewed. Renewal is usually handled through the CRD/IARD annual renewal program.",
+    "distractorExplanations": {
+      "a": "Registrations lapse at year-end unless renewed through the renewal process.",
+      "c": "Exam validity is separate from the annual registration period.",
+      "d": "Registrations follow the calendar year, not an anniversary of the effective date."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-011",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "An individual passed the Series 63 three years ago, never registered, and now joins a broker-dealer. What does NASAA require before the state registers her as an agent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Completion of 12 hours of continuing education within 90 days instead of a retest"
+      },
+      {
+        "id": "b",
+        "text": "Nothing, because a passed Series 63 never expires"
+      },
+      {
+        "id": "c",
+        "text": "She must pass the exam again, because results are valid for 2 years without registration"
+      },
+      {
+        "id": "d",
+        "text": "A one-year supervised probation instead of a retest"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A qualification exam generally satisfies the requirement for 2 years. Someone who passed but has not been registered within 2 years must requalify by examination (unless a program such as EVEP applies after a prior registration).",
+    "distractorExplanations": {
+      "a": "Continuing education does not revive an exam passed more than 2 years ago with no registration.",
+      "b": "Exam results lapse if the person is not registered within the validity period.",
+      "d": "There is no probation alternative; the exam must be retaken."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-012",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "An agent is terminated by her broker-dealer for violating firm policy. Under FINRA rules, what must the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "File Form U4 amendments only when the agent joins a new firm"
+      },
+      {
+        "id": "b",
+        "text": "Notify the Administrator by phone, with no written filing needed"
+      },
+      {
+        "id": "c",
+        "text": "File Form U5 within 30 days and give the agent a copy"
+      },
+      {
+        "id": "d",
+        "text": "File Form U5 within 1 year, while the Administrator can still act"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When an associated person leaves, the firm must file Form U5 within 30 days of termination and provide a copy to the individual. The U5 states the reason for termination and any disclosure events, which the Administrator and future employers can see.",
+    "distractorExplanations": {
+      "a": "The departing firm, not the new one, files the termination notice on Form U5.",
+      "b": "Termination is reported on Form U5 through CRD, not informally by phone.",
+      "d": "One year is the Administrator's window after withdrawal; the U5 itself is due within 30 days."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-013",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "An agent registered in State A has a client who permanently moves from State A to State B and wants to keep trading. The agent's broker-dealer is registered in both states. What must happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, because the client is an existing customer of the agent"
+      },
+      {
+        "id": "b",
+        "text": "The agent may trade for 30 days and then must register"
+      },
+      {
+        "id": "c",
+        "text": "Only the broker-dealer must be registered in State B, since the agent's State A registration follows the client"
+      },
+      {
+        "id": "d",
+        "text": "The agent must register in State B before effecting trades for the client there"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An agent must be registered in the state where the customer is a resident when effecting transactions. The existing-customer exclusion applies to clients temporarily away from home, not to clients who have permanently relocated.",
+    "distractorExplanations": {
+      "a": "The existing-customer exclusion covers a client temporarily in another state, not one who has moved there.",
+      "b": "There is no 30-day grace period for soliciting or trading with a resident of a new state.",
+      "c": "Both firm and agent registration are tested; the agent needs State B registration too."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-014",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "An agent of a broker-dealer also wants to charge clients a separate fee for written financial plans through the firm's affiliated investment adviser. What registration does she need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Registration as an investment adviser representative as well as an agent"
+      },
+      {
+        "id": "b",
+        "text": "Registration as a broker-dealer in her own name"
+      },
+      {
+        "id": "c",
+        "text": "Only passing Series 65 exam results kept on file, without any separate IAR registration"
+      },
+      {
+        "id": "d",
+        "text": "None, because her agent registration covers all advice"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Advice given for separate compensation is investment advice, not solely incidental to brokerage. An individual providing it on behalf of an adviser must be registered as an IAR (with the required exam), even if she is already registered as an agent.",
+    "distractorExplanations": {
+      "b": "She works for an affiliated adviser; she needs IAR status, not her own firm registration.",
+      "c": "Passing an exam qualifies her, but she must actually register as an IAR.",
+      "d": "Agent registration covers incidental advice for commissions, not separately compensated advice."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-015",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "Four agent applicants disclose past events. Which one gives the Administrator grounds to deny registration under the Uniform Securities Act?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A misdemeanor conviction for securities fraud 8 years ago"
+      },
+      {
+        "id": "b",
+        "text": "A misdemeanor conviction for driving under the influence 2 years ago"
+      },
+      {
+        "id": "c",
+        "text": "An arrest for fraud that never led to charges"
+      },
+      {
+        "id": "d",
+        "text": "A felony conviction for theft 12 years ago"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Administrator may deny, suspend or revoke a registration when the person was convicted within the past 10 years of any felony or of a misdemeanor involving securities or the securities business. Old convictions, unrelated misdemeanors and arrests without conviction do not count.",
+    "distractorExplanations": {
+      "b": "Only felonies and securities-related misdemeanors within 10 years are grounds; DUI misdemeanors are not.",
+      "c": "An arrest without conviction is not a statutory ground for denial.",
+      "d": "Conviction-based grounds are limited to the past 10 years, so a 12-year-old felony does not qualify."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-agent-016",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-agent",
+    "prompt": "Which person must register as an agent under the Uniform Securities Act?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bank teller who refers depositors to the bank's brokerage affiliate for no fee"
+      },
+      {
+        "id": "b",
+        "text": "An officer of a savings bank selling the bank's own stock with no commission"
+      },
+      {
+        "id": "c",
+        "text": "A broker-dealer's operations clerk who processes and corrects trade tickets but never talks to customers"
+      },
+      {
+        "id": "d",
+        "text": "An individual who solicits retail customers for a registered broker-dealer and is paid by commission"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An agent is an individual who represents a broker-dealer or an issuer in effecting or attempting to effect securities transactions. Soliciting retail customers for commission is the core activity; purely clerical work and certain issuer activities are excluded.",
+    "distractorExplanations": {
+      "a": "Unpaid referrals without solicitation of specific securities do not make a teller an agent.",
+      "b": "Bank securities are exempt, and representing an issuer in exempt securities is excluded from the agent definition.",
+      "c": "Clerical and ministerial staff who do not effect or solicit transactions are not agents."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-008",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "Which of the following is excluded from the definition of a broker-dealer under the Uniform Securities Act?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A bank effecting securities transactions"
+      },
+      {
+        "id": "b",
+        "text": "A firm that executes trades for customers' accounts for commissions"
+      },
+      {
+        "id": "c",
+        "text": "A firm that buys and sells securities for its own account with the public"
+      },
+      {
+        "id": "d",
+        "text": "A firm with a branch in the state that sells mutual funds to retirees"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Uniform Securities Act excludes agents, issuers, banks and savings institutions, and persons with no place of business in the state who deal only with issuers, other broker-dealers or institutional investors. A bank is excluded from the definition even though it effects securities transactions.",
+    "distractorExplanations": {
+      "b": "Executing trades for others is the broker side of the definition.",
+      "c": "Trading for one's own account with the public is the dealer side of the definition.",
+      "d": "An in-state office selling to retail investors is a classic broker-dealer."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-009",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "A state Administrator proposes requiring broker-dealers to keep trade blotters for 8 years, longer than the SEC requires. Under NSMIA, how is this treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It applies only to firms with their main office in the state"
+      },
+      {
+        "id": "b",
+        "text": "It applies to all broker-dealers registered in the state"
+      },
+      {
+        "id": "c",
+        "text": "It is preempted; states cannot add record rules beyond the SEC's"
+      },
+      {
+        "id": "d",
+        "text": "It applies if the Administrator gives 30 days' notice"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NSMIA prohibits states from imposing net capital, custody, margin, financial responsibility, bonding or books-and-records requirements on broker-dealers that differ from or add to SEC requirements. States keep antifraud and registration authority.",
+    "distractorExplanations": {
+      "a": "The preemption applies to every broker-dealer, wherever its main office is.",
+      "b": "NSMIA preempts state recordkeeping rules that go beyond federal requirements.",
+      "d": "Notice does not cure preemption; the state simply lacks the authority."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-010",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "Delta Securities opens a branch office in State X but deals there only with banks and insurance companies. Must Delta register in State X?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, because all of its State X customers are institutions"
+      },
+      {
+        "id": "b",
+        "text": "No, if it is already registered with the SEC"
+      },
+      {
+        "id": "c",
+        "text": "Yes, because it has a place of business in the state"
+      },
+      {
+        "id": "d",
+        "text": "Only if it effects more than five transactions a year there"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A broker-dealer with no place of business in a state may deal there with institutional investors and other broker-dealers without registering. Once it has a place of business in the state, it must register regardless of who its customers are.",
+    "distractorExplanations": {
+      "a": "The institutional-customer exclusion applies only to firms with no place of business in the state.",
+      "b": "SEC registration does not replace state registration for broker-dealers.",
+      "d": "There is no five-transaction de minimis for broker-dealers with an in-state office."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-011",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "A registered broker-dealer changes its principal office address and appoints a new chief compliance officer. What must it do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the change at the next annual renewal"
+      },
+      {
+        "id": "b",
+        "text": "Notify customers only, because the Administrator is not affected"
+      },
+      {
+        "id": "c",
+        "text": "Promptly amend Form BD so the information on file is accurate"
+      },
+      {
+        "id": "d",
+        "text": "File a new registration application with the Administrator"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "If information in a broker-dealer's application becomes inaccurate or incomplete in a material way, the firm must promptly file an amendment. Keeping Form BD current lets the Administrator and investors rely on the public record.",
+    "distractorExplanations": {
+      "a": "Material changes must be amended promptly, not saved for year-end renewal.",
+      "b": "The Administrator relies on Form BD, so the filing itself must be amended.",
+      "d": "An existing registration is updated by amendment, not replaced with a new application."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-012",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "A broker-dealer files to withdraw its registration in State X and no proceeding is pending. When does the withdrawal become effective?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only after the Administrator holds a hearing and issues an order accepting the request"
+      },
+      {
+        "id": "b",
+        "text": "At the end of the calendar year, when registrations expire"
+      },
+      {
+        "id": "c",
+        "text": "On the 30th day after filing, unless the Administrator sets an earlier date"
+      },
+      {
+        "id": "d",
+        "text": "Immediately when the Administrator receives the filing"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Withdrawal becomes effective 30 days after filing (or sooner if the Administrator allows) unless a revocation or suspension proceeding is pending. The Administrator may still start a proceeding within 1 year after the withdrawal takes effect.",
+    "distractorExplanations": {
+      "a": "No hearing is needed for a withdrawal when no proceeding is pending.",
+      "b": "Withdrawal can take effect mid-year; it is not tied to the December 31 expiration.",
+      "d": "Withdrawal does not take effect on receipt; a 30-day period applies."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-013",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "A broker-dealer registered with the SEC plans to open an office in State X and sell to retail customers there. How does registration work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It must also register in State X, because there is no federal covered status for broker-dealers"
+      },
+      {
+        "id": "b",
+        "text": "It needs nothing more, because SEC registration preempts the state"
+      },
+      {
+        "id": "c",
+        "text": "It registers in State X only if it has more than $100 million in assets"
+      },
+      {
+        "id": "d",
+        "text": "It only makes a notice filing and pays a fee in State X, the same way a federal covered adviser does"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unlike investment advisers, broker-dealers cannot be federal covered. A firm registered with the SEC must also register in each state where it does business, unless an exclusion such as no place of business plus institutional-only customers applies.",
+    "distractorExplanations": {
+      "b": "NSMIA preempts certain state rules for broker-dealers, but not state registration itself.",
+      "c": "The $100 million threshold concerns investment advisers, not broker-dealers.",
+      "d": "Notice filing applies to federal covered advisers; broker-dealers have no equivalent category."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-bd-014",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-bd",
+    "prompt": "As part of its state registration, a broker-dealer must file a consent to service of process. What does that consent allow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Customers to bring arbitration claims without a written agreement"
+      },
+      {
+        "id": "b",
+        "text": "The Administrator to accept legal process for the firm so it can be served in the state"
+      },
+      {
+        "id": "c",
+        "text": "The Administrator to inspect the firm's books and records at any time without giving notice"
+      },
+      {
+        "id": "d",
+        "text": "The firm to sell securities before its registration is effective"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Every applicant for registration files a consent to service of process, appointing the Administrator to receive process in noncriminal suits arising from its securities activities in the state. This ensures an out-of-state firm can be served and held accountable locally.",
+    "distractorExplanations": {
+      "a": "Arbitration depends on agreements and rules; the consent concerns legal process.",
+      "c": "Inspection authority comes from the Act itself, not from the consent to service.",
+      "d": "Consent to service does not accelerate or replace registration."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-008",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "Under the Uniform Securities Act, what is the deadline for a buyer to sue a seller for selling unregistered, nonexempt securities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 years after discovery or 3 years after the sale, whichever comes first"
+      },
+      {
+        "id": "b",
+        "text": "At any time, because there is no deadline for securities claims"
+      },
+      {
+        "id": "c",
+        "text": "Within 1 year after the sale, regardless of when the buyer finds out about the violation"
+      },
+      {
+        "id": "d",
+        "text": "Within 5 years after the sale, regardless of discovery"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A buyer's civil action under the Uniform Securities Act must be brought within 2 years after discovery of the facts or 3 years after the sale, whichever occurs first. After that, the claim is barred even if the violation was real.",
+    "distractorExplanations": {
+      "b": "Civil claims under the Act are subject to a statute of limitations.",
+      "c": "That is too short; the period runs 2 years from discovery, capped at 3 years from the sale.",
+      "d": "Five years exceeds the outer limit; the cap is 3 years from the sale."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-009",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "A State X Administrator finds evidence that an SEC-registered (federal covered) investment adviser defrauded State X clients. What may the Administrator do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Require the adviser to re-register with the state as a penalty"
+      },
+      {
+        "id": "b",
+        "text": "Revoke the adviser's SEC registration"
+      },
+      {
+        "id": "c",
+        "text": "Nothing, because only the SEC regulates federal covered advisers"
+      },
+      {
+        "id": "d",
+        "text": "Investigate and act against the adviser under state antifraud law"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "States may require federal covered advisers to make notice filings and pay fees, and they retain full authority to investigate and act against fraud and deceit. They cannot impose state registration or substantive requirements on them.",
+    "distractorExplanations": {
+      "a": "A federal covered adviser cannot be required to register with the state; notice filing is the limit.",
+      "b": "Only the SEC can revoke an SEC registration; the state acts under its own antifraud law.",
+      "c": "NSMIA preserves the states' authority to investigate and act against fraud."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-010",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "A client paid an adviser $3,000 in fees for advice that the adviser knowingly misrepresented. Under the Uniform Securities Act, what can the client recover?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, because advice is not a sale of a security"
+      },
+      {
+        "id": "b",
+        "text": "Triple the fees paid, as a penalty for the misrepresentation"
+      },
+      {
+        "id": "c",
+        "text": "The $3,000 paid for the advice, plus interest and reasonable attorney's fees"
+      },
+      {
+        "id": "d",
+        "text": "The fees paid plus interest, but only after the Administrator first revokes the registration"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A person who receives investment advice in violation of the Act may recover the consideration paid for the advice, interest, costs and reasonable attorney's fees, less any income received from the advice. The remedy mirrors rescission for securities sales.",
+    "distractorExplanations": {
+      "a": "The Act gives a civil remedy for advisory violations as well as for sales.",
+      "b": "Civil recovery under the Act is compensatory; it does not triple the fees.",
+      "d": "The client's civil right does not depend on the Administrator's action."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-011",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "A person is convicted of violating an Administrator's rule. He proves that he had no knowledge of the rule. Under the Uniform Securities Act, what is the effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He can be imprisoned but not fined"
+      },
+      {
+        "id": "b",
+        "text": "It has no effect, because ignorance of the law is never a defense"
+      },
+      {
+        "id": "c",
+        "text": "He cannot be penalized at all, because lack of knowledge is a complete defense"
+      },
+      {
+        "id": "d",
+        "text": "He cannot be imprisoned for violating the rule, though he may still be fined"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under the Uniform Securities Act, no one may be imprisoned for violating a rule or order if the person proves no knowledge of it. Fines may still apply, and the defense does not cover violations of the statute itself.",
+    "distractorExplanations": {
+      "a": "It works the other way round: the defense protects against prison, not fines.",
+      "b": "The Act specifically protects people who prove no knowledge of a rule or order from imprisonment.",
+      "c": "Lack of knowledge of a rule protects only against imprisonment, not against fines."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-012",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "An agent's registration is still on file, but the Administrator learns the agent has died. Which action fits this situation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Summary suspension pending a final determination"
+      },
+      {
+        "id": "b",
+        "text": "A cease-and-desist order against the agent's former firm"
+      },
+      {
+        "id": "c",
+        "text": "Cancellation of the registration, a non-disciplinary step"
+      },
+      {
+        "id": "d",
+        "text": "Revocation, after a hearing on the agent's conduct"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The Administrator may cancel a registration if the registrant no longer exists, has ceased doing business, cannot be located after reasonable search, or has been adjudicated mentally incompetent. Cancellation is administrative, not a disciplinary sanction.",
+    "distractorExplanations": {
+      "a": "Summary suspension is for situations that threaten investors, not administrative housekeeping.",
+      "b": "A cease-and-desist order addresses ongoing violations, not a deceased registrant.",
+      "d": "Revocation is disciplinary and requires grounds and a hearing; death calls for cancellation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-013",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "A broker-dealer disagrees with the Administrator's final order revoking its registration. How may it challenge the order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By appealing to the SEC, which reviews state orders"
+      },
+      {
+        "id": "b",
+        "text": "By filing with FINRA arbitration within 30 days"
+      },
+      {
+        "id": "c",
+        "text": "By appealing to the appropriate court within 60 days of the order"
+      },
+      {
+        "id": "d",
+        "text": "By requesting a new hearing before the Administrator at any time within 2 years"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A person aggrieved by a final order of the Administrator may obtain judicial review by filing a petition in the appropriate court within 60 days after the order is entered. Filing does not automatically stay the order unless the court so orders.",
+    "distractorExplanations": {
+      "a": "The SEC does not review state Administrator orders; judicial review is in state court.",
+      "b": "FINRA arbitration resolves customer and industry disputes, not appeals of state orders.",
+      "d": "The appeal window is 60 days, not 2 years."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-remedies-014",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-remedies",
+    "prompt": "A broker-dealer is liable to a buyer for a fraudulent sale. Which person can be held jointly and severally liable with the firm under the Uniform Securities Act?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An officer who materially aided the sale, absent proof he could not reasonably have known"
+      },
+      {
+        "id": "b",
+        "text": "The firm's outside auditor, because it reviewed and signed off on the firm's annual financial statements"
+      },
+      {
+        "id": "c",
+        "text": "Every shareholder of the firm, regardless of involvement"
+      },
+      {
+        "id": "d",
+        "text": "Any agent of the firm, even one who had no part in the sale"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Partners, officers, directors, employees and agents who materially aid a seller's violation are jointly and severally liable with the seller, unless they prove they did not know, and in the exercise of reasonable care could not have known, the facts creating liability.",
+    "distractorExplanations": {
+      "b": "An auditor who did not materially aid the sale is not jointly liable for it.",
+      "c": "Passive shareholders are not liable for the firm's sales violations.",
+      "d": "Liability extends to agents who materially aided the violation, not to all agents."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-securities-006-dup2",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-securities",
+    "prompt": "An issuer registers a public offering with the SEC and also files in State X. Under registration by coordination, when does the State X registration become effective?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When the federal registration becomes effective, if no stop order is in place"
+      },
+      {
+        "id": "b",
+        "text": "When the Administrator issues an order approving the merits of the offering"
+      },
+      {
+        "id": "c",
+        "text": "10 business days after the issuer files with the state"
+      },
+      {
+        "id": "d",
+        "text": "30 days after the federal registration becomes effective"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Registration by coordination is used when an issuer is also registering with the SEC under the Securities Act of 1933. The state registration becomes effective at the same time as the federal registration, provided no stop order is in effect and the required filings are on record.",
+    "distractorExplanations": {
+      "b": "An Administrator's order is the qualification method; coordination does not require one.",
+      "c": "Coordination is tied to the federal effective date, not a fixed state waiting period.",
+      "d": "There is no 30-day lag; state effectiveness coincides with federal effectiveness."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-securities-007",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-securities",
+    "prompt": "Which of these securities is NOT exempt from state registration under the Uniform Securities Act?",
+    "options": [
+      {
+        "id": "a",
+        "text": "U.S. Treasury notes"
+      },
+      {
+        "id": "b",
+        "text": "Unlisted common stock of a bank holding company"
+      },
+      {
+        "id": "c",
+        "text": "Common stock issued by a national bank"
+      },
+      {
+        "id": "d",
+        "text": "General obligation bonds of a city in another state"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Bank securities are exempt, but a bank holding company is not a bank. Unless its stock qualifies another way (for example as a federal covered listed security), holding-company stock must be registered or sold in an exempt transaction.",
+    "distractorExplanations": {
+      "a": "Securities of the U.S. government are exempt securities.",
+      "c": "Securities issued by banks and savings institutions are exempt.",
+      "d": "Municipal securities of any U.S. state or political subdivision are exempt."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-securities-008",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-securities",
+    "prompt": "An investment company registered with the SEC under the Investment Company Act of 1940 wants to sell fund shares in State X. What may the Administrator require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing at all, because the shares are federal covered"
+      },
+      {
+        "id": "b",
+        "text": "A notice filing, a fee and consent to service of process"
+      },
+      {
+        "id": "c",
+        "text": "Full registration by qualification with a merit review"
+      },
+      {
+        "id": "d",
+        "text": "Registration by coordination, effective with the SEC registration"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Securities of registered investment companies are federal covered under NSMIA. States cannot require registration or merit review but may require notice filings, fees and consent to service of process, and they keep antifraud authority.",
+    "distractorExplanations": {
+      "a": "States may still require notice filings and fees for registered investment companies.",
+      "c": "Investment company shares are federal covered securities, so merit review is preempted.",
+      "d": "Coordination is registration; federal covered securities need only notice filing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-securities-009",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-securities",
+    "prompt": "A customer calls an agent and, without any solicitation, asks to buy shares of a small unregistered, nonexempt company. Under the Uniform Securities Act, how can the trade proceed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As an exempt unsolicited trade; the Administrator may require the customer's written acknowledgment"
+      },
+      {
+        "id": "b",
+        "text": "Only if the agent first sends the customer a prospectus and records the delivery date on the ticket"
+      },
+      {
+        "id": "c",
+        "text": "It cannot proceed, because unregistered securities may never be sold"
+      },
+      {
+        "id": "d",
+        "text": "Only after the company registers its shares in the state"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A nonissuer transaction effected through a registered broker-dealer on an unsolicited order is an exempt transaction. Because unsolicited status is easy to claim, the Administrator may require the customer to acknowledge in writing that the order was unsolicited.",
+    "distractorExplanations": {
+      "b": "No prospectus requirement applies to an exempt unsolicited transaction.",
+      "c": "Unregistered securities may be sold in exempt transactions, including unsolicited orders.",
+      "d": "An unsolicited nonissuer order is an exempt transaction, so registration is not needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-securities-010",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-securities",
+    "prompt": "A retiree sells 500 shares of a private company to her neighbour in a one-time, privately negotiated trade. How does the Uniform Securities Act treat the sale?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As an issuer transaction requiring qualification"
+      },
+      {
+        "id": "b",
+        "text": "As exempt because the shares are federal covered securities"
+      },
+      {
+        "id": "c",
+        "text": "As a nonexempt sale that requires registering the shares"
+      },
+      {
+        "id": "d",
+        "text": "As an exempt isolated nonissuer transaction"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Isolated nonissuer transactions, whether or not effected through a broker-dealer, are exempt from registration under the Uniform Securities Act. Antifraud provisions still apply to the sale.",
+    "distractorExplanations": {
+      "a": "The retiree is not the issuer, so this is a nonissuer transaction.",
+      "b": "Private company shares are not federal covered; the exemption comes from the transaction.",
+      "c": "One-off nonissuer sales between individuals are exempt transactions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ia-004",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ia",
+    "prompt": "An adviser wants to call itself \"investment counsel.\" Under the Uniform Securities Act, when may it use that title?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whenever it is registered as an investment adviser in the state"
+      },
+      {
+        "id": "b",
+        "text": "Only after it has more than $110 million under management"
+      },
+      {
+        "id": "c",
+        "text": "Only if its principals hold the CFA charter or a similar professional credential approved by the state"
+      },
+      {
+        "id": "d",
+        "text": "When advice is its principal business and it gives continuous advice tailored to each client"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The term \"investment counsel\" may be used only by an adviser whose principal business is acting as an investment adviser and whose business largely consists of continuous advice based on the individual needs of each client.",
+    "distractorExplanations": {
+      "a": "Registration alone does not earn the title; the principal-business and continuous-advice tests apply.",
+      "b": "Asset size governs SEC registration, not use of the investment counsel title.",
+      "c": "Credentials are not the test; the nature of the business is."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ia-005",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ia",
+    "prompt": "An adviser with its only office in State A has three retail clients in State B over the past 12 months and no place of business there. Must it register in State B?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, but only if it is registered with the SEC"
+      },
+      {
+        "id": "b",
+        "text": "Yes, unless all three State B clients qualify as accredited investors under Regulation D"
+      },
+      {
+        "id": "c",
+        "text": "Yes, because it has any clients at all in State B"
+      },
+      {
+        "id": "d",
+        "text": "No; the de minimis rule allows up to 5 retail clients there without registering"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An adviser with no place of business in a state need not register there if, during the preceding 12 months, it has had fewer than 6 clients who are residents of the state (institutional clients are not limited).",
+    "distractorExplanations": {
+      "a": "The de minimis rule is for state-registered advisers without an in-state office.",
+      "b": "The de minimis test counts retail clients; accreditation is not the trigger.",
+      "c": "The de minimis rule exempts advisers with no office and fewer than 6 retail clients."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-ia-006",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-ia",
+    "prompt": "A state-registered adviser requires clients to prepay $800 in fees for advice to be given over the next 12 months. Under NASAA rules, what does this trigger?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, because prepaid fees are a normal billing method"
+      },
+      {
+        "id": "b",
+        "text": "Stricter financial requirements, including an audited balance sheet"
+      },
+      {
+        "id": "c",
+        "text": "The adviser must refund the prepaid fees and bill clients only in arrears each quarter"
+      },
+      {
+        "id": "d",
+        "text": "The adviser must register with the SEC instead of the state"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Under NASAA rules, an adviser that requires prepayment of more than $500 per client six or more months in advance is subject to stricter financial requirements, including an audited balance sheet, because clients bear the risk the adviser fails before delivering the advice.",
+    "distractorExplanations": {
+      "a": "Large fees prepaid well in advance put client money at risk and trigger extra requirements.",
+      "c": "Prepayment is allowed; it just brings balance-sheet and net-worth conditions.",
+      "d": "Fee prepayment does not change whether the adviser registers with the SEC or the state."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-iar-003",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-iar",
+    "prompt": "Which exam combination satisfies the qualification requirement to register as an investment adviser representative in most states?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Series 7 plus the Series 66"
+      },
+      {
+        "id": "b",
+        "text": "Series 63 alone"
+      },
+      {
+        "id": "c",
+        "text": "Series 6 plus Series 63"
+      },
+      {
+        "id": "d",
+        "text": "Series 7 plus Series 63"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "States generally qualify IARs who pass the Series 65 alone, or the Series 66 together with the Series 7. Certain professional designations such as the CFP, CFA, ChFC or PFS can waive the exam.",
+    "distractorExplanations": {
+      "b": "Series 63 qualifies agents; it does not cover adviser representatives.",
+      "c": "That combination qualifies investment company agents, not IARs.",
+      "d": "That is the usual agent combination; an IAR needs the Series 65 or Series 66 with the Series 7."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-iar-004",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-iar",
+    "prompt": "Under the NASAA IAR continuing education model rule, adopted in a growing number of states, how much CE must an IAR complete each year?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None, because the Series 65 never needs refreshing"
+      },
+      {
+        "id": "b",
+        "text": "24 credits every two years, in any securities-related topic the IAR chooses"
+      },
+      {
+        "id": "c",
+        "text": "6 credits in Ethics only"
+      },
+      {
+        "id": "d",
+        "text": "12 credits: 6 Products and Practice, 6 Ethics and Professional Responsibility"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The NASAA IAR continuing education model rule requires 12 credits each reporting period (calendar year): 6 in Products and Practice and 6 in Ethics and Professional Responsibility. An IAR who fails to complete CE cannot renew registration until the shortfall is made up.",
+    "distractorExplanations": {
+      "a": "States adopting the model rule require annual CE to keep IAR registration.",
+      "b": "The model rule is annual, with required splits between two content areas.",
+      "c": "Ethics is half the requirement; Products and Practice credits are also needed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "series-63-readiness-check-s63-iar-005",
+    "examSlug": "series-63-readiness-check",
+    "topicId": "s63-iar",
+    "prompt": "An individual is paid by a state-registered adviser to refer prospective clients to it and to describe its services. Under the Uniform Securities Act, what is this individual?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An investment adviser representative who must register"
+      },
+      {
+        "id": "b",
+        "text": "An agent of the adviser who registers on Form U4 only"
+      },
+      {
+        "id": "c",
+        "text": "An investment adviser in her own right"
+      },
+      {
+        "id": "d",
+        "text": "No registered person, because she gives no investment advice"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The IAR definition includes individuals who make recommendations, manage accounts, determine advice, or solicit, offer or negotiate the sale of advisory services for an adviser. Paid solicitors for a state-registered adviser must register as IARs.",
+    "distractorExplanations": {
+      "b": "Agents represent broker-dealers or issuers; soliciting advisory clients makes the person an IAR.",
+      "c": "She acts on behalf of the adviser, so she is a representative, not an adviser.",
+      "d": "Soliciting or offering advisory services for compensation is within the IAR definition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   }
 ]

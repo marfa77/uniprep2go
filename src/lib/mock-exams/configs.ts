@@ -248,12 +248,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 10, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check with six mini-vignette questions in each of the ten 2026 CFA Level II topics (2 minutes per question). Official exam: 88 item-set questions in 22 vignettes across two 132-minute sessions (4h24 total); topic weights run 5-15%; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
+      "Readiness check with six mini-vignette questions in each of the ten 2026 CFA Level II topics (2 minutes per question), drawn from a 120-question bank (12 per topic) so retakes see new cases. Official exam: 88 item-set questions in 22 vignettes across two 132-minute sessions (4h24 total); topic weights run 5-15%; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question, 120-minute CFA Level 2 readiness diagnostic: short case vignettes with calculations and judgment calls, scored per topic across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-10-03",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "us-citizenship-readiness-check",
@@ -377,22 +377,22 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     },
     topics: [
-      { id: "s63-agent", label: "Agent Registration and Qualification", weightPercent: 13, targetPercent: 72 },
-      { id: "s63-bd", label: "Broker-Dealer State Registration", weightPercent: 12, targetPercent: 72 },
-      { id: "s63-ethics", label: "Ethical Practices and Fiduciary Duties", weightPercent: 25, targetPercent: 72 },
-      { id: "s63-comm", label: "Communications, Records, and Sales Practices", weightPercent: 20, targetPercent: 72 },
-      { id: "s63-remedies", label: "Enforcement, Remedies, and Penalties", weightPercent: 11, targetPercent: 72 },
-      { id: "s63-securities", label: "Securities and Exemptions", weightPercent: 9, targetPercent: 72 },
-      { id: "s63-ia", label: "Investment Advisers", weightPercent: 5, targetPercent: 72 },
-      { id: "s63-iar", label: "Investment Adviser Representatives", weightPercent: 5, targetPercent: 72 },
+      { id: "s63-agent", label: "Agent Registration and Qualification", weightPercent: 13, targetPercent: 72, questionCount: 8 },
+      { id: "s63-bd", label: "Broker-Dealer State Registration", weightPercent: 12, targetPercent: 72, questionCount: 7 },
+      { id: "s63-ethics", label: "Ethical Practices and Fiduciary Duties", weightPercent: 25, targetPercent: 72, questionCount: 15 },
+      { id: "s63-comm", label: "Communications, Records, and Sales Practices", weightPercent: 20, targetPercent: 72, questionCount: 12 },
+      { id: "s63-remedies", label: "Enforcement, Remedies, and Penalties", weightPercent: 11, targetPercent: 72, questionCount: 7 },
+      { id: "s63-securities", label: "Securities and Exemptions", weightPercent: 9, targetPercent: 72, questionCount: 5 },
+      { id: "s63-ia", label: "Investment Advisers", weightPercent: 5, targetPercent: 72, questionCount: 3 },
+      { id: "s63-iar", label: "Investment Adviser Representatives", weightPercent: 5, targetPercent: 72, questionCount: 3 },
     ],
     officialSourceNote:
-      "60 original scenario questions with the same per-area counts as NASAA's scored Series 63 (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs) and a teaching note on every wrong answer. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
+      "Each 60-question session is drawn from a bank of 120 original scenario questions with the same per-area counts as NASAA's scored Series 63 (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs), so retakes see new questions; every wrong answer has a teaching note. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question Series 63 readiness diagnostic (free 25-question version) on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
     examBody: "NASAA",
-    lastUpdated: "2026-10-02",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "california-real-estate-readiness-check",

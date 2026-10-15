@@ -873,7 +873,7 @@ describe("llm visibility", () => {
   });
 
   it("keeps Wave 4 mocks live, runnable, and free-access", () => {
-    expect(wave4MockExamConfigs.length).toBe(50);
+    expect(wave4MockExamConfigs.length).toBe(49);
 
     for (const config of wave4MockExamConfigs) {
       expect(config.status).toBe("live");

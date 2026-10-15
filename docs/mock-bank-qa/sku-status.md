@@ -6,14 +6,14 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 33 | 18 |
+| ok | 35 | 20 |
 | thin-bank | 1 | 1 |
 | unreviewed | 1 | 1 |
-| small-bank | 33 | 9 |
+| small-bank | 31 | 7 |
 | point-fix | 0 | 0 |
-| rewrite | 112 | 36 |
+| rewrite | 111 | 35 |
 | civic | 19 | 18 |
-| **total live mocks** | **199** | **83** |
+| **total live mocks** | **198** | **82** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -36,7 +36,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `gmat-focus-readiness-check` | live | 45 / 200 | 2026-10-15 | padding ×14 |
 | rewrite | `il-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `life-and-health-insurance-readiness-check` | live | 60 / 60 | 2026-10-15 | FAIL (40 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
-| rewrite | `life-health-insurance-readiness-check` | live | 60 / 60 | 2026-10-15 | FAIL (31 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `ma-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | padding ×96 |
 | rewrite | `mi-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -134,11 +133,9 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `wv-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `wy-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | small-bank | `cfa-level-1-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
-| small-bank | `cfa-level-2-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `ny-real-estate-readiness-check` | live | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
 | small-bank | `ptcb-pharmacy-technician-mock` | live | 90 / 90 | 2026-10-15 | bank 90 for 90Q session |
 | small-bank | `rd-exam-readiness-check` | live | 120 / 120 | 2026-10-05 | bank 120 for 120Q session |
-| small-bank | `series-63-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `series-7-readiness-check` | live | 60 / 60 | 2026-10-15 | bank 60 for 60Q session |
 | small-bank | `servsafe-manager-mock` | live | 90 / 90 | 2026-10-15 | bank 90 for 90Q session |
 | small-bank | `sie-full-mock` | live | 75 / 75 | 2026-10-15 | bank 75 for 75Q session |
@@ -174,6 +171,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-06 | — |
+| ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-14 | — |
@@ -183,6 +181,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-14 | — |
 | ok | `sat-readiness-check` | live | 49 / 160 | 2026-10-02 | — |
+| ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `sie-quick-diagnostic` | live | 25 / 75 | 2026-10-15 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
@@ -225,8 +224,8 @@ Products without a mock and catalog totals: bottom of this file.
 
 | Line | Count |
 |---|---|
-| Live mocks | 199 |
-| … with a live Anki / PDF pair | 83 |
+| Live mocks | 198 |
+| … with a live Anki / PDF pair | 82 |
 | … with a planned Anki pair | 116 |
 | Products without a mock (Anki, PDF, app, bundle) | 37 (available 23, planned 14) |
 | Catalog decks total (`decks.ts`) | 234 (available 104) |

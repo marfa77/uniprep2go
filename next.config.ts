@@ -23,6 +23,12 @@ const nextConfig: NextConfig = {
         destination: "/decks",
         permanent: true,
       },
+      // Duplicate L&H mock retired 2026-10-15 — same exam as the canonical readiness check.
+      {
+        source: "/mock-exams/life-health-insurance-readiness-check",
+        destination: "/mock-exams/life-and-health-insurance-readiness-check",
+        permanent: true,
+      },
       {
         source: "/decks/ptcb-anki-deck",
         destination: "/decks/ptcb-pharmacy-technician-anki-deck",

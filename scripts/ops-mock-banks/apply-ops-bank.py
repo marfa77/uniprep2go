@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+from datetime import date
 import json
 import os
 import urllib.request
@@ -63,6 +64,7 @@ def main() -> None:
     parser.add_argument("--slug", required=True)
     parser.add_argument("--input", required=True)
     parser.add_argument("--status", default="fixing")
+    parser.add_argument("--note", default="")
     args = parser.parse_args()
     load_env()
     questions = uniquify(args.slug, json.loads(Path(args.input).read_text()))
@@ -76,13 +78,13 @@ def main() -> None:
             "family_id": meta.get("family_id") or "",
             "linked_deck_slug": meta.get("linked_deck_slug") or "",
             "session_question_count": str(meta.get("session_question_count") or ""),
-            "last_updated": "2026-09-21",
+            "last_updated": date.today().isoformat(),
             "review_status": args.status,
             "smell_tier": tier,
             "key_bias": key_bias,
             "thin_distractor_count": thin,
             "source_path": f"/tmp/{args.slug}-fixed.json",
-            "audit_note": f"2026-09-21 Grok batch fix upsert ({args.status})",
+            "audit_note": f"{date.today().isoformat()} {args.note or 'bank upsert'} ({args.status})",
         },
         "questions": questions,
     }

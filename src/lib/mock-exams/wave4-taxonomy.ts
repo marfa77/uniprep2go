@@ -37,7 +37,6 @@ export const wave4TaxonomyEntries: Record<string, MockExamTaxonomy> = {
   "wy-real-estate-readiness-check": { verticalId: "real-estate", familyId: "state-re", searchAliases: ["Wyoming real estate", "WY RE", "Wyoming real estate exam"] },
   "series-79-readiness-check": { verticalId: "licensing", familyId: "finra", searchAliases: ["Series 79", "Investment Banking Representative"] },
   "cfp-certification-readiness-check": { verticalId: "finance", familyId: "cfp", searchAliases: ["CFP exam", "Certified Financial Planner"] },
-  "life-health-insurance-readiness-check": { verticalId: "licensing", familyId: "insurance", searchAliases: ["life and health insurance exam", "life health producer"] },
   "praxis-elementary-education-readiness-check": { verticalId: "education", familyId: "praxis", searchAliases: ["Praxis 5001", "elementary education praxis"] },
   "praxis-special-education-readiness-check": { verticalId: "education", familyId: "praxis", searchAliases: ["Praxis Special Education", "sped praxis"] },
   "water-treatment-operator-1-readiness-check": { verticalId: "trades", familyId: "water", searchAliases: ["water treatment operator exam", "drinking water operator"] },

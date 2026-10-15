@@ -109,9 +109,11 @@ describe("anki-deck-launch", () => {
     expect(estimateAnkiDeckCardCount("series-65-anki-deck")).toBe(120);
   });
 
-  it("routes duplicate L&H mock to the buyable exam deck", () => {
-    const config = getMockExamConfig("life-health-insurance-readiness-check");
-    expect(config?.linkedDeckSlug).toBe("life-and-health-insurance-exam-anki-deck");
+  it("retires the duplicate L&H mock in favour of the canonical readiness check", () => {
+    expect(getMockExamConfig("life-health-insurance-readiness-check")).toBeUndefined();
+    expect(getMockExamConfig("life-and-health-insurance-readiness-check")?.linkedDeckSlug).toBe(
+      "life-and-health-insurance-exam-anki-deck",
+    );
   });
 
   it("builds deck repair URLs with weak topic ids", () => {

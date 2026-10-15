@@ -2,7 +2,6 @@
 import type { MockQuestion } from "./types";
 import series_79Bank from "@/data/mock-exams/series-79-readiness-check.json";
 import cfp_certificationBank from "@/data/mock-exams/cfp-certification-readiness-check.json";
-import life_health_insuranceBank from "@/data/mock-exams/life-health-insurance-readiness-check.json";
 import praxis_elementary_educationBank from "@/data/mock-exams/praxis-elementary-education-readiness-check.json";
 import praxis_special_educationBank from "@/data/mock-exams/praxis-special-education-readiness-check.json";
 import water_treatment_operator_1Bank from "@/data/mock-exams/water-treatment-operator-1-readiness-check.json";
@@ -54,7 +53,6 @@ import wy_real_estateBank from "@/data/mock-exams/wy-real-estate-readiness-check
 export const wave4BanksBySlug: Record<string, MockQuestion[]> = {
   "series-79-readiness-check": series_79Bank as unknown as MockQuestion[],
   "cfp-certification-readiness-check": cfp_certificationBank as unknown as MockQuestion[],
-  "life-health-insurance-readiness-check": life_health_insuranceBank as unknown as MockQuestion[],
   "praxis-elementary-education-readiness-check": praxis_elementary_educationBank as unknown as MockQuestion[],
   "praxis-special-education-readiness-check": praxis_special_educationBank as unknown as MockQuestion[],
   "water-treatment-operator-1-readiness-check": water_treatment_operator_1Bank as unknown as MockQuestion[],
