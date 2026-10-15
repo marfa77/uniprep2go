@@ -27,7 +27,6 @@ WD = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 
 # Landing / funnel / SEO items that beat bank work (backlog 2026-10-15), in order. They replace the side task that day.
 EXTRAS = [
-    "Счётчик «N people started»: решение по маркетинговым полам в `social-proof.ts` (реальные числа, скрыть < 50) → SSR",
     "`cardCount` 60→120 в `wave-deck-specs.json` + vault для 7 planned SKU от 2026-10-15 (+ «60-card» копирайт в `seo.ts`)",
     "Дубли SKU: решить merge/redirect — " + ", ".join(f"`{s}`→`{t}`" for s, t in DUPLICATES.items()),
     "Раннер: поле «Have a key?» на старте до free attempt → потом кнопка Mock Pass $5 в hero для страниц без live-деки",

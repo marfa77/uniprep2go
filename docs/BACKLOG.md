@@ -11,7 +11,7 @@
 Сделано 2026-10-15: тайтлы `| 25Q Free, NQ Timed` без обрезков (SIE/7/63 заморожены), meta с free 25Q первым, FAQ «Why 25 questions?» + «What do I get for $5?» + дедуп вопросов, JSON-LD Offer «Free 25-question diagnostic» + `timeRequired` + `dateModified`, answer-абзац в hero и в `/markdown`.
 
 **Блокеры / решения пользователя**
-- [ ] **Счётчик «N people have started» — маркетинговый пол** (`src/lib/social-proof.ts`: S 260–480, A 110–230 при реальных единицах). Спека требует SSR + «no invented counts». Решить: убрать полы (показывать только реальное, скрывать < 50) или оставить. Пока не SSR. То же для `deckPurchases`.
+- [x] **Счётчик «N people have started»** (`src/lib/social-proof.ts`, маркетинговые полы): решение пользователя 2026-10-15 — оставить как есть, клиентский рендер, без SSR.
 - [ ] Mock Pass кнопка в hero для страниц без live-деки: ключ вводится только на paywall после free attempt → купивший с лендинга сначала получит 25Q. Сначала добавить «Have a key?» на старте раннера, потом кнопку.
 
 **Контент (нужны проверенные факты)**
