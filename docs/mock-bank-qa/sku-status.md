@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 44 | 29 |
+| ok | 46 | 31 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 26 | 2 |
 | point-fix | 0 | 0 |
-| rewrite | 107 | 33 |
+| rewrite | 105 | 31 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -35,9 +35,7 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `ga-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `il-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ma-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | padding ×96 |
 | rewrite | `mi-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `mortgage-loan-originator-readiness-check` | live | 120 / 240 | 2026-10-14 | padding ×330 |
 | rewrite | `mrics-readiness-check` | live | 50 / 250 | 2026-10-14 | FAIL (46 items): near-duplicate / templated stems (>=0.8), thin/template explanations; padding ×61 |
 | rewrite | `nc-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nha-cpct-readiness-check` | live | 120 / 120 | — | FAIL (21 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
@@ -171,6 +169,8 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `life-and-health-insurance-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `mortgage-loan-originator-readiness-check` | live | 120 / 240 | 2026-10-15 | — |
 | ok | `mrics-quantity-surveying-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-15 | — |

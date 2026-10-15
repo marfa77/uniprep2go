@@ -778,7 +778,7 @@
       },
       {
         "id": "d",
-        "text": "Nurse-konfirmed drug administration"
+        "text": "No known allergies of any kind, including food"
       }
     ],
     "correctOptionId": "a",
@@ -786,7 +786,7 @@
     "distractorExplanations": {
       "b": "NKDA is an affirmative statement that the patient was asked and reported no drug allergies. An unasked or unknown allergy history must be documented as such.",
       "c": "A new adverse reaction is documented by naming the drug and the reaction in the allergy list, not with the NKDA abbreviation.",
-      "d": "No such abbreviation exists. Medication administration is documented in the medication administration record with drug, dose, route, and time."
+      "d": "That is NKA (no known allergies); NKDA is limited to drug allergies and says nothing about food or environmental allergens."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap)."
@@ -1203,7 +1203,7 @@
       },
       {
         "id": "c",
-        "text": "Note the pending tests in the plan along with the agreed follow-up for communicating results"
+        "text": "List the pending tests in the Plan with the follow-up for results"
       },
       {
         "id": "d",
@@ -1211,7 +1211,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Pending studies belong in the plan so the chart shows what was ordered and how results will be handled. The scribe does not interpret or release results; those route to the provider for review and patient communication.",
+    "explanation": "Labs ordered today are documented in the Plan as pending, along with how and when results will be communicated. Leaving them out loses the order, template normals fabricate results, and the problem list holds diagnoses rather than pending tests.",
     "distractorExplanations": {
       "a": "Omitting ordered tests breaks the chain between the encounter and the order, and nothing in the note explains why the patient is expecting a call.",
       "b": "Recording results that do not exist is fabrication, and predicted values can be flatly wrong.",
@@ -1983,31 +1983,31 @@
     "id": "medical-scribe-readiness-check-documentation-016",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "A patient states, “I started amoxicillin three days ago for a sinus infection.” Where does that detail belong in the HPI?",
+    "prompt": "During a sinus-pain visit, the patient says, “I started amoxicillin three days ago from urgent care.” Where should the scribe document this?",
     "options": [
       {
         "id": "a",
-        "text": "In Assessment as the provider’s diagnosis of sinusitis for this encounter"
+        "text": "In the Assessment, as the provider's diagnosis of bacterial sinusitis"
       },
       {
         "id": "b",
-        "text": "In Plan as a new prescription the scribe invents as documented today"
+        "text": "In the Plan, as an antibiotic the provider is prescribing at today's visit"
       },
       {
         "id": "c",
-        "text": "In Objective as a measured vital sign per usual clinic habit"
+        "text": "In the Objective section, alongside the provider's exam findings"
       },
       {
         "id": "d",
-        "text": "In the HPI as part of the history of present illness / current treatments"
+        "text": "In the HPI and medication list, as treatment the patient has already tried"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Current medications and recent treatments the patient reports belong in Subjective/HPI context, not as the provider’s impression or a new order.",
+    "explanation": "Medications the patient reports having started before the visit are subjective history: they go in the HPI (as treatment already tried) and the medication list. Assessment is the provider's impression, Plan is today's new orders, and Objective is limited to measured findings and the exam.",
     "distractorExplanations": {
-      "a": "Assessment is the provider’s interpretation, not a raw medication history quote.",
-      "b": "Plan is future orders; the patient already started amoxicillin.",
-      "c": "Vital signs and exam findings are Objective; a verbal medication history is Subjective."
+      "a": "Assessment holds the provider's own impression; a patient's report of prior treatment is subjective history.",
+      "b": "Plan lists today's new orders; the patient started this drug at urgent care before the visit.",
+      "c": "Objective holds measured findings and the exam; what the patient says about a medication is subjective."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2020,27 +2020,27 @@
     "options": [
       {
         "id": "a",
-        "text": "A prior diagnosis of type 2 diabetes diagnosed five years ago"
+        "text": "A type 2 diabetes diagnosis made five years ago by another clinic"
       },
       {
         "id": "b",
-        "text": "The onset and quality of today’s abdominal pain as documented today"
+        "text": "The onset and character of today's abdominal pain"
       },
       {
         "id": "c",
-        "text": "Today’s blood pressure reading per usual clinic habit"
+        "text": "The blood pressure the medical assistant measured at rooming"
       },
       {
         "id": "d",
-        "text": "The antibiotic the provider starts at this visit without provider review"
+        "text": "The antibiotic the provider decides to start at this visit"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PMH captures established diagnoses and chronic conditions; today’s symptom story is HPI; vitals are Objective; new Rx is Plan.",
+    "explanation": "Past medical history lists established diagnoses such as diabetes diagnosed years ago. The onset and character of today's symptom are HPI, a blood pressure measured today is an Objective vital sign, and a medication started at this visit belongs in the Plan.",
     "distractorExplanations": {
-      "b": "Onset/quality of today’s pain is classic HPI.",
-      "c": "BP is an Objective vital — that choice confuses a related but different charting rule.",
-      "d": "A new antibiotic ordered today is Plan — that choice confuses a related but different charting rule."
+      "b": "Onset and quality of the presenting symptom are core HPI elements, not past history.",
+      "c": "A blood pressure taken today is an Objective vital sign, not past medical history.",
+      "d": "A medication started today belongs in the Plan, not in the past medical history."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2086,11 +2086,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Those systems were not reviewed, so the scribe assumed negatives for this encounter"
+        "text": "The provider did not ask about those symptoms, so the template defaulted to negative"
       },
       {
         "id": "b",
-        "text": "The provider diagnosed those conditions as absent without asking as documented today"
+        "text": "The provider examined the heart and lungs and found no abnormal findings today"
       },
       {
         "id": "c",
@@ -2098,15 +2098,15 @@
       },
       {
         "id": "d",
-        "text": "The scribe should copy last visit’s ROS without asking again without provider review"
+        "text": "The patient has no history of heart disease, lung disease, or prior fainting episodes"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Documented negatives require that the questions were asked (or clearly reviewed). Inventing or copying unchecked ROS is a documentation-integrity failure.",
+    "explanation": "A documented ROS negative means the question was asked and the patient denied the symptom. Template defaults for unasked systems are false documentation, exam findings belong in the physical exam, and absence of past conditions is past medical history, not ROS.",
     "distractorExplanations": {
-      "a": "Unreviewed systems must not be recorded as denied.",
-      "b": "Assessment is not a substitute for asking ROS items.",
-      "d": "Prior ROS cannot be blindly copied forward."
+      "a": "Systems that were not reviewed must not be charted as denied; a template default is not a patient answer.",
+      "b": "Exam findings belong in the physical exam (Objective); ROS records the patient's answers to symptom questions.",
+      "d": "Absence of past conditions is PMH; ROS negatives describe current symptoms the patient denies."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2119,15 +2119,15 @@
     "options": [
       {
         "id": "a",
-        "text": "The scribe may invent the most likely ICD-10 code without provider direction for this encounter"
+        "text": "It records the ICD-10 codes the scribe selects as the most likely diagnoses"
       },
       {
         "id": "b",
-        "text": "It is identical to the chief complaint quoted from the patient as documented today"
+        "text": "It restates the chief complaint in the patient's own words from the start of the encounter"
       },
       {
         "id": "c",
-        "text": "It should list only vital signs measured today per usual clinic habit"
+        "text": "It summarizes the vital signs and exam findings the provider measured during the visit"
       },
       {
         "id": "d",
@@ -2135,11 +2135,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Assessment is the provider’s clinical impression. Scribes capture what the provider says; they do not independently code or replace Assessment with vitals or CC alone.",
+    "explanation": "The Assessment records the provider's working diagnoses or impressions as the provider states them. The chief complaint in the patient's words is Subjective, vitals and exam findings are Objective, and the scribe never selects diagnoses or ICD-10 codes independently.",
     "distractorExplanations": {
-      "a": "Coding/assessment requires provider direction; scribes do not invent diagnoses.",
-      "b": "Chief complaint is Subjective, not Assessment.",
-      "c": "Vitals belong in Objective — that choice confuses a related but different charting rule."
+      "a": "Diagnoses and codes come from the provider; a scribe does not choose them independently.",
+      "b": "The chief complaint in the patient's words belongs in Subjective; Assessment is the provider's interpretation.",
+      "c": "Measured vitals and exam findings are Objective data; the Assessment interprets them."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2156,23 +2156,23 @@
       },
       {
         "id": "b",
-        "text": "Omit who provided history because it rarely matters as documented today"
+        "text": "Leave the historian unstated, since the child is the patient of record for the visit"
       },
       {
         "id": "c",
-        "text": "Typically attribute quotes to the child even if a parent spoke per usual clinic habit"
+        "text": "Attribute the history to the child, because the note belongs to the child's chart"
       },
       {
         "id": "d",
-        "text": "Put parental history only in Plan without provider review"
+        "text": "Record the parent's report in the Plan section as caregiver instructions for home care"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pediatric (and similar) notes should identify the historian so readers know whose report is captured.",
+    "explanation": "When a parent or caregiver gives the history, the note names that person as the historian so readers can judge the source and reliability of the information. The parent's report is still Subjective history, not Plan, and must not be quoted as the child's own words.",
     "distractorExplanations": {
-      "b": "Historian identity affects reliability and is standard practice.",
-      "c": "Misattributing quotes is inaccurate documentation.",
-      "d": "History is Subjective, not Plan — that choice confuses a related but different charting rule."
+      "b": "The historian must be named so readers know the history came from the parent, not the child.",
+      "c": "Quoting the parent's report as the child's own words misattributes the source of the history.",
+      "d": "History the parent reports is Subjective; Plan holds orders and instructions given at the end of the visit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2193,7 +2193,7 @@
       },
       {
         "id": "c",
-        "text": "Objective — because differentials are routinely exam findings"
+        "text": "Objective — because the differential follows the exam findings"
       },
       {
         "id": "d",
@@ -2204,7 +2204,7 @@
     "explanation": "Differentials and clinical reasoning live in Assessment. Plan may include tests that distinguish them, but the differential itself is Assessment.",
     "distractorExplanations": {
       "a": "Symptom descriptions are Subjective; naming differentials is judgment.",
-      "c": "Exam findings are Objective; differentials are interpretation.",
+      "c": "Exam findings are Objective; the differential is the provider's interpretation of them, which belongs in Assessment.",
       "d": "Leaving Assessment empty while ordering tests loses the clinical frame."
     },
     "difficulty": "hard",
@@ -2218,11 +2218,11 @@
     "options": [
       {
         "id": "a",
-        "text": "List random phrases in the order they appear in the EHR template only for this encounter"
+        "text": "Enter the patient's statements in the order the EHR template fields appear on screen"
       },
       {
         "id": "b",
-        "text": "Put the entire physical exam inside the HPI paragraph as documented today"
+        "text": "Include the full physical exam within the HPI so the provider can see all findings in one place"
       },
       {
         "id": "c",
@@ -2230,15 +2230,15 @@
       },
       {
         "id": "d",
-        "text": "Replace HPI with a single ICD-10 code without provider review"
+        "text": "Summarize the HPI as the provider's working diagnosis and the ICD-10 code selected for it"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "A structured HPI narrative (OLDCARTS-style elements) is easier for the provider and future readers than template dump or exam leakage.",
+    "explanation": "A clean HPI reads as a chronological narrative built from elements such as onset, location, duration, character, aggravating and relieving factors, timing, severity, and associated symptoms. Template field order, embedded exam findings, or a diagnosis code cannot replace that story.",
     "distractorExplanations": {
-      "a": "Template order alone can scramble the story.",
-      "b": "Exam belongs in Objective — that choice confuses a related but different charting rule.",
-      "d": "Codes do not replace history narrative — that choice confuses a related but different charting rule."
+      "a": "Template field order can scramble the symptom timeline; the HPI should read as a chronological story.",
+      "b": "Exam findings belong in the Objective section; mixing them into the HPI blurs history and examination.",
+      "d": "A diagnosis or code is Assessment; it cannot replace the history narrative of the presenting problem."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2251,27 +2251,27 @@
     "options": [
       {
         "id": "a",
-        "text": "In Assessment as a psychiatric diagnosis for this encounter"
+        "text": "In the Assessment, as a substance use disorder diagnosis"
       },
       {
         "id": "b",
-        "text": "In Plan as a medication order as documented today"
+        "text": "In the Plan, as the tobacco cessation counseling provided"
       },
       {
         "id": "c",
-        "text": "As an Objective vital sign next to blood pressure per usual clinic habit"
+        "text": "In the past medical history, with prior diagnoses"
       },
       {
         "id": "d",
-        "text": "Social history (often under Subjective / history sections)"
+        "text": "In the social history, within the Subjective section"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tobacco and alcohol use are social history. Assessment may later address counseling; Plan may include cessation resources — but the report itself is history.",
+    "explanation": "Tobacco and alcohol use reported by the patient are social history, part of the Subjective section. The provider may later document a substance use diagnosis in the Assessment or cessation counseling in the Plan, but the patient's report itself is history.",
     "distractorExplanations": {
-      "a": "Reporting use is not itself a psychiatric diagnosis entry.",
-      "b": "Counseling orders are Plan; the use statement is history.",
-      "c": "Vitals are measured findings, not habits."
+      "a": "Reported use is history; only the provider can make a substance use disorder diagnosis in the Assessment.",
+      "b": "Counseling the provider gives may go in Plan, but the patient's report of use itself is social history.",
+      "c": "Past medical history lists diagnoses and conditions; habits such as smoking and drinking are social history."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2280,7 +2280,7 @@
     "id": "medical-scribe-readiness-check-documentation-025",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "documentation",
-    "prompt": "The note must show who performed documentation. Which is appropriate?",
+    "prompt": "A scribe documents a visit for Dr. Lee. Which entry correctly shows the scribe's role in the note?",
     "options": [
       {
         "id": "a",
@@ -2288,23 +2288,23 @@
       },
       {
         "id": "b",
-        "text": "Signing the note as if the scribe were the attending physician of record as documented today"
+        "text": "The scribe's own electronic signature as the authenticating author of record for the visit note"
       },
       {
         "id": "c",
-        "text": "Leaving no indication in the chart that a scribe participated at all per usual clinic habit"
+        "text": "No scribe entry, since the provider's signature already covers everyone's work"
       },
       {
         "id": "d",
-        "text": "Deleting the provider’s signature block so only the scribe name appears without provider review"
+        "text": "A provider attestation stating that the provider personally typed every entry in the note"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Scribe attestation + provider authentication is the integrity pattern. Scribes do not replace the provider signature.",
+    "explanation": "A scribe attestation names the scribe and states that the documentation was entered in the provider's presence or under the provider's direction; the provider then reviews and authenticates the note. Scribes never sign as the author of record, and the record must not hide scribe involvement.",
     "distractorExplanations": {
-      "b": "Scribes do not authenticate as the attending.",
-      "c": "Transparency about scribe involvement is expected.",
-      "d": "Provider signature remains required — that choice confuses a related but different charting rule."
+      "b": "The provider authenticates the note; a scribe's signature cannot replace the provider's.",
+      "c": "Scribe involvement must be transparent; the attestation shows who entered the documentation.",
+      "d": "A statement that the provider typed everything would be false when a scribe entered the documentation."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2317,7 +2317,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Edit the original signed note’s timestamps to look contemporaneous for this encounter"
+        "text": "Edit the signed note so the detail appears under the original visit timestamp"
       },
       {
         "id": "b",
@@ -2325,19 +2325,19 @@
       },
       {
         "id": "c",
-        "text": "Delete yesterday’s note and recreate it with today’s date as the visit date"
+        "text": "Add the detail to the next visit's note as if the patient reported it then"
       },
       {
         "id": "d",
-        "text": "Ask another scribe to silently rewrite the signed note without provider review"
+        "text": "Ask the provider to unsign the note, insert the detail, and re-sign it unmarked"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Late entries must be transparent. Backdating or silent rewrites undermine the record.",
+    "explanation": "Late entries are made as dated, timed, and attributed addenda clearly labeled as late. Editing text under the original timestamp, moving the detail into a later visit, or unsigning and re-signing without a visible amendment all hide when the information was recorded.",
     "distractorExplanations": {
-      "a": "Falsifying timestamps is a documentation-integrity violation.",
-      "c": "Deleting and recreating hides chronology.",
-      "d": "Another scribe rewriting a signed note is not appropriate."
+      "a": "Inserting new text under the original time misrepresents when it was written; late entries must be marked.",
+      "c": "Charting an earlier statement in a later visit misdates the information and loses its context.",
+      "d": "Unsigning and re-signing without marking the change hides the amendment; an addendum keeps the trail visible."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2383,27 +2383,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Replace it with a guessed acute diagnosis like STEMI for this encounter"
+        "text": "Hypertensive urgency, since a hypertension visit implies elevated readings"
       },
       {
         "id": "b",
-        "text": "Leave chief complaint blank because follow-ups rarely need one as documented today"
+        "text": "Leave it blank, since a scheduled follow-up does not need a chief complaint"
       },
       {
         "id": "c",
-        "text": "Copy last year’s unrelated chief complaint automatically per usual clinic habit"
+        "text": "The chief complaint copied forward from the patient's previous office visit"
       },
       {
         "id": "d",
-        "text": "Capture the reason for visit as stated (follow-up hypertension), not a new symptom the patient did not raise"
+        "text": "Follow-up of hypertension, the reason for visit the provider stated"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Chief complaint reflects today’s reason for visit. Inventing acuity or copying unrelated history is wrong.",
+    "explanation": "The chief complaint records today's reason for visit as stated, here follow-up of hypertension. A scribe does not add an acute diagnosis nobody stated, leave the field blank, or copy forward a prior visit's complaint.",
     "distractorExplanations": {
-      "a": "Scribes do not invent diagnoses — that choice confuses a related but different charting rule.",
-      "b": "Follow-ups still need a clear reason for visit.",
-      "c": "Prior unrelated CC must not auto-populate."
+      "a": "That adds an acute diagnosis nobody stated; the chief complaint records the stated reason for the visit.",
+      "b": "Follow-up visits still need a documented reason for visit; it anchors the note and medical necessity.",
+      "c": "Copying a prior chief complaint forward can document a problem that is not today's reason for visit."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2416,27 +2416,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Do not paste unreviewed outside records into today’s authenticated note without provider direction"
+        "text": "Route the letter to the provider and add it only as directed, labeled as an outside record"
       },
       {
         "id": "b",
-        "text": "Copy the entire letter into Assessment as if the provider wrote it live as documented today"
+        "text": "Paste the consultant's impressions into today's Assessment as the provider's own findings"
       },
       {
         "id": "c",
-        "text": "File it as the patient’s Subjective history verbatim without labeling the source per usual clinic habit"
+        "text": "Copy the letter verbatim into today's HPI without noting the source or the date received"
       },
       {
         "id": "d",
-        "text": "Change today’s vitals to match the letter’s older vitals without provider review"
+        "text": "Update today's vital signs to match the more recent values listed in the consultant's letter"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "External documents are handled per workflow; they are not silently merged as if contemporaneous provider documentation.",
+    "explanation": "Outside records such as a consultant's letter go to the provider, who decides what to incorporate; anything added is labeled with its source and date. Pasting outside text as the provider's own Assessment, unlabeled copying, or changing today's vitals to match the letter all corrupt today's note.",
     "distractorExplanations": {
-      "b": "Misattributing consultant text as live Assessment is integrity failure.",
-      "c": "Source and context matter; unlabeled paste confuses the record.",
-      "d": "Vitals must reflect this encounter’s measurements."
+      "b": "Presenting outside text as the provider's live assessment misattributes authorship of the clinical judgment.",
+      "c": "Unlabeled pasted text hides where and when the information came from; outside records must be identified.",
+      "d": "Today's vitals must reflect this encounter's measurements, not values recorded at another office."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2449,7 +2449,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Recording the provider’s stated assessment word-for-word for this encounter"
+        "text": "Recording the provider's stated assessment word for word as the provider dictates it"
       },
       {
         "id": "b",
@@ -2457,19 +2457,19 @@
       },
       {
         "id": "c",
-        "text": "Documenting vitals the medical assistant already measured and the provider uses"
+        "text": "Documenting vital signs the medical assistant measured and the provider reviewed"
       },
       {
         "id": "d",
-        "text": "Noting the follow-up interval the provider announced to the patient without provider review"
+        "text": "Noting the follow-up interval the provider announced to the patient at checkout"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Scribes document under direction; they do not independently diagnose. Capturing stated assessment, measured vitals in use, and announced follow-up is in scope.",
+    "explanation": "Scribes document what the provider says and does; they do not make clinical decisions. Recording the stated assessment, measured vitals the provider reviewed, and announced follow-up intervals are in scope. Deciding a diagnosis the provider never stated is outside scope.",
     "distractorExplanations": {
-      "a": "Recording stated assessment is core scribe work.",
-      "c": "Documenting known vitals used in the visit is routine.",
-      "d": "Follow-up instructions the provider gives belong in Plan."
+      "a": "Capturing the provider's stated assessment verbatim is core scribe work, so it is within scope.",
+      "c": "Recording vitals already measured and used in the visit is routine documentation within scope.",
+      "d": "Charting follow-up instructions the provider gave is standard Plan documentation within scope."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2486,11 +2486,11 @@
       },
       {
         "id": "b",
-        "text": "Absence of a palpable pulse only"
+        "text": "Irregular heart rhythm"
       },
       {
         "id": "c",
-        "text": "High blood pressure only"
+        "text": "Abnormally high blood pressure"
       },
       {
         "id": "d",
@@ -2498,11 +2498,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Tachy- means fast; tachycardia is rapid heart rate. Bradycardia is slow; hypertension is high BP.",
+    "explanation": "Tachy- means fast and -cardia refers to the heart, so tachycardia is an abnormally fast heart rate (generally over 100 beats per minute in adults). Bradycardia is a slow rate, an irregular rhythm is an arrhythmia, and high blood pressure is hypertension.",
     "distractorExplanations": {
-      "a": "Brady- indicates slow rate — that choice confuses a related but different charting rule.",
-      "b": "Pulse absence is a different finding (e.g., asystole/arrest context).",
-      "c": "Hypertension is elevated blood pressure, not rate."
+      "a": "Brady- means slow; an abnormally slow heart rate is bradycardia, the opposite of tachycardia.",
+      "b": "An irregular rhythm is an arrhythmia such as atrial fibrillation; tachycardia describes rate, not regularity.",
+      "c": "Hypertension is elevated blood pressure; tachycardia describes the heart rate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2519,22 +2519,22 @@
       },
       {
         "id": "b",
-        "text": "Above normal or excess as documented today"
+        "text": "Above normal or excessive"
       },
       {
         "id": "c",
-        "text": "Around or surrounding per usual clinic habit"
+        "text": "Around or surrounding"
       },
       {
         "id": "d",
-        "text": "Through or across without provider review"
+        "text": "Across or through"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Hypo- = under/low (hypoglycemia, hypotension). Hyper- = high; peri- = around; trans- = across.",
+    "explanation": "Hypo- means below normal or deficient, as in hypoglycemia (low blood sugar) and hypotension (low blood pressure). Its opposite hyper- means above normal; peri- means around, and trans- means across or through.",
     "distractorExplanations": {
       "b": "Hyper- means above or excess (hyperglycemia, hypertension), the opposite of hypo-.",
-      "c": "Peri- means around or surrounding (pericardium), not below-normal.",
+      "c": "Peri- means around or surrounding (pericardium), not below normal.",
       "d": "Trans- means across or through (transdermal), not deficient."
     },
     "difficulty": "easy",
@@ -2564,11 +2564,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Hematuria = blood in urine. Melena/hematochezia relate to stool; hematemesis to vomiting blood; hemoptysis to coughing blood.",
+    "explanation": "Hemat- (blood) plus -uria (urine) gives hematuria, blood in the urine. Hematemesis is vomiting blood, hemoptysis is coughing up blood, and blood in the stool is melena or hematochezia.",
     "distractorExplanations": {
       "a": "Blood in stool uses different terms (melena/hematochezia).",
-      "c": "Hematemesis is vomiting blood — that choice confuses a related but different charting rule.",
-      "d": "Hemoptysis is coughing blood — that choice confuses a related but different charting rule."
+      "c": "Hematemesis means vomiting blood; hemat- plus -uria (urine) gives blood in the urine.",
+      "d": "Hemoptysis means coughing up blood from the airways; -uria refers to urine."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2614,27 +2614,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Chronic hepatitis failure for this encounter"
+        "text": "Chronic atrial fibrillation"
       },
       {
         "id": "b",
-        "text": "Coronary hand fracture as documented today"
+        "text": "Congenital heart defect"
       },
       {
         "id": "c",
-        "text": "Cystic hygroma of the foot per usual clinic habit"
+        "text": "Coronary artery disease"
       },
       {
         "id": "d",
-        "text": "Congestive heart failure (heart failure)"
+        "text": "Congestive heart failure"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "CHF commonly abbreviates congestive heart failure / heart failure in problem lists.",
+    "explanation": "On a problem list, CHF stands for congestive heart failure. Similar-looking abbreviations mean different diagnoses: CHD is a congenital heart defect, CAD is coronary artery disease, and AF or AFib is atrial fibrillation.",
     "distractorExplanations": {
-      "a": "Hepatitis abbreviations differ (e.g., CHC for chronic hepatitis C in some contexts — not CHF).",
-      "b": "Not an orthopedic fracture code — that choice confuses a related but different charting rule.",
-      "c": "Cystic hygroma is unrelated — that choice confuses a related but different charting rule."
+      "a": "Atrial fibrillation is abbreviated AF or AFib; CHF on a problem list means congestive heart failure.",
+      "b": "A congenital heart defect is abbreviated CHD, not CHF.",
+      "c": "Coronary artery disease is CAD; it can lead to heart failure but is a different diagnosis."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2651,23 +2651,23 @@
       },
       {
         "id": "b",
-        "text": "Surgical removal of the colon, as in colectomy terminology"
+        "text": "Surgical removal of all or part of an organ"
       },
       {
         "id": "c",
-        "text": "Surgical creation of an opening, as in colostomy terminology"
+        "text": "Surgical creation of an opening"
       },
       {
         "id": "d",
-        "text": "Inflammation of the colon, as in colitis terminology"
+        "text": "Inflammation of a structure"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "-scopy = looking/examining. -ectomy = removal; -ostomy = opening; -itis = inflammation.",
+    "explanation": "The suffix -scopy means visual examination with an instrument, so a colonoscopy is an examination of the colon with a scope. Related suffixes differ: -ectomy is surgical removal, -ostomy is surgical creation of an opening, and -itis is inflammation.",
     "distractorExplanations": {
-      "b": "Colectomy would be removal (-ectomy) — that choice confuses a related but different charting rule.",
-      "c": "Colostomy creates an opening (-ostomy) — that choice confuses a related but different charting rule.",
-      "d": "Colitis is inflammation (-itis) — that choice confuses a related but different charting rule."
+      "b": "-ectomy means surgical removal, as in colectomy; -scopy means visual examination.",
+      "c": "-ostomy means creating an opening, as in colostomy; -scopy means looking inside with a scope.",
+      "d": "-itis means inflammation, as in colitis; -scopy refers to an instrument examination."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2680,7 +2680,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Right lower quadrant of the lung only"
+        "text": "Right lower lobe of the lung"
       },
       {
         "id": "b",
@@ -2688,19 +2688,19 @@
       },
       {
         "id": "c",
-        "text": "Radial left quality pulse"
+        "text": "Right upper quadrant of the abdomen"
       },
       {
         "id": "d",
-        "text": "Retroperitoneal left query"
+        "text": "Left lower quadrant of the abdomen"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "RLQ is a standard abdominal quadrant abbreviation used in abdominal pain documentation.",
+    "explanation": "RLQ is the right lower quadrant of the abdomen, the area where appendicitis pain classically localizes. RUQ is the right upper quadrant (liver and gallbladder), LLQ is the left lower quadrant, and lung lobes use RLL-style abbreviations.",
     "distractorExplanations": {
-      "a": "Lung findings use different landmarks; RLQ in this context is abdominal.",
-      "c": "Not a pulse quality abbreviation — that choice confuses a related but different charting rule.",
-      "d": "Not a retroperitoneal shorthand in triage slang."
+      "a": "The right lower lobe is abbreviated RLL; RLQ refers to an abdominal quadrant.",
+      "c": "Right upper quadrant is RUQ (liver and gallbladder area); RLQ is the lower right, near the appendix.",
+      "d": "LLQ is the lower left quadrant; RLQ is on the patient's right side."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2713,11 +2713,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Difficulty swallowing for this encounter"
+        "text": "Difficulty swallowing food or liquids"
       },
       {
         "id": "b",
-        "text": "Shortness of breath as documented today"
+        "text": "Impaired ability to articulate speech from muscle weakness"
       },
       {
         "id": "c",
@@ -2725,15 +2725,15 @@
       },
       {
         "id": "d",
-        "text": "Painful urination without provider review"
+        "text": "Loss of the ability to perform learned purposeful movements"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Aphasia is language impairment. Dysphagia = swallowing; dyspnea = SOB; dysuria = painful urination.",
+    "explanation": "Aphasia is impaired ability to understand or produce language, often after a stroke. It differs from dysarthria (poorly articulated speech from weak or uncoordinated muscles), apraxia (inability to perform learned movements), and dysphagia (difficulty swallowing).",
     "distractorExplanations": {
-      "a": "Dysphagia is swallowing difficulty — that choice confuses a related but different charting rule.",
-      "b": "Dyspnea is shortness of breath — that choice confuses a related but different charting rule.",
-      "d": "Dysuria is painful urination — that choice confuses a related but different charting rule."
+      "a": "Difficulty swallowing is dysphagia; aphasia is a language impairment.",
+      "b": "Weak or poorly coordinated speech muscles cause dysarthria; aphasia is a language processing deficit.",
+      "d": "That is apraxia; aphasia affects understanding or producing language."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2783,23 +2783,23 @@
       },
       {
         "id": "b",
-        "text": "Each hour while awake"
+        "text": "Every other day"
       },
       {
         "id": "c",
-        "text": "Before every meal only"
+        "text": "Before every meal"
       },
       {
         "id": "d",
-        "text": "In on Sundays"
+        "text": "Every hour while awake"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "qHS / HS commonly means at bedtime. Prefer plain language when policy requires it.",
+    "explanation": "qHS (quaque hora somni) means every night at bedtime. AC means before meals, q1h means every hour, and QOD (every other day) is a do-not-use abbreviation. Many organizations require scribes to type the plain-language form, such as “at bedtime.”",
     "distractorExplanations": {
-      "b": "Hourly while-awake dosing uses other abbreviations; qHS is bedtime dosing.",
-      "c": "AC/PC relate to meals (before/after); qHS means at bedtime, not with meals.",
-      "d": "qHS is not a once-weekly Sunday code; it means bedtime each night."
+      "b": "Every-other-day dosing was written QOD, an error-prone abbreviation now on do-not-use lists; qHS means at bedtime.",
+      "c": "Before meals is abbreviated AC (ante cibum); qHS (quaque hora somni) means every night at bedtime.",
+      "d": "Hourly dosing is written q1h; HS stands for hora somni, the hour of sleep, so qHS is a bedtime dose."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2812,7 +2812,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Low white blood cell count for this encounter"
+        "text": "Low white blood cell count"
       },
       {
         "id": "b",
@@ -2820,19 +2820,19 @@
       },
       {
         "id": "c",
-        "text": "High platelet count only per usual clinic habit"
+        "text": "Elevated platelet count"
       },
       {
         "id": "d",
-        "text": "Low hemoglobin only without provider review"
+        "text": "Elevated red blood cell mass and hematocrit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Leukocytosis = increased leukocytes (WBCs). Leukopenia is low WBCs; thrombocytopenia/anemia are other lines.",
+    "explanation": "Leukocytosis is an elevated white blood cell count, often seen with infection or inflammation. Leukopenia is a low white count, thrombocytosis is a high platelet count, and an increased red cell mass is erythrocytosis or polycythemia.",
     "distractorExplanations": {
       "a": "Leukopenia is a low white-cell count; leukocytosis is the elevated WBC finding.",
       "c": "Thrombocytosis is high platelets; leukocytosis specifically means elevated WBCs.",
-      "d": "Anemia relates to hemoglobin/hematocrit, not the white-cell line called leukocytosis."
+      "d": "An increased red cell mass is erythrocytosis or polycythemia; leukocytosis refers to white cells."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2845,11 +2845,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Will need labs"
+        "text": "Within normal laboratory values only"
       },
       {
         "id": "b",
-        "text": "Without noted laterality"
+        "text": "Without noted lesions"
       },
       {
         "id": "c",
@@ -2857,15 +2857,15 @@
       },
       {
         "id": "d",
-        "text": "Weekly nursing log"
+        "text": "Will need labs"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "WNL = within normal limits. Templates using WNL still require the exam to have been performed.",
+    "explanation": "WNL stands for within normal limits. Because it is vague and sometimes joked about as “we never looked,” it should be used only for exam elements the provider actually performed and found normal; many organizations prefer specific findings in words.",
     "distractorExplanations": {
-      "a": "WNL does not mean “will need labs”; it means within normal limits on exam.",
-      "b": "Laterality uses left/right wording; WNL means within normal limits, not laterality.",
-      "d": "WNL is not a weekly nursing log code; it means within normal limits."
+      "a": "WNL in an exam template describes exam findings, not only lab values; lab results have their own reference ranges.",
+      "b": "No lesions is a specific skin finding written in words; WNL stands for within normal limits for the element examined.",
+      "d": "WNL is not an order or plan; it describes a finding as within normal limits."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2878,15 +2878,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Normal portion only"
+        "text": "Clear liquids only"
       },
       {
         "id": "b",
-        "text": "Nighttime protein only"
+        "text": "Soft or pureed foods only"
       },
       {
         "id": "c",
-        "text": "New patient orientation"
+        "text": "Regular diet as tolerated"
       },
       {
         "id": "d",
@@ -2894,11 +2894,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "NPO = nil per os / nothing by mouth — common pre-procedure instruction.",
+    "explanation": "NPO (nil per os) means nothing by mouth, a common order before procedures, surgery, or when swallowing is unsafe. It differs from diet orders such as clear liquids or soft foods, which still allow oral intake; any exceptions, such as sips with medications, must be stated by the provider.",
     "distractorExplanations": {
-      "a": "NPO is not a portion-size instruction; it means nothing by mouth.",
-      "b": "NPO is not a nighttime protein schedule; it means nothing by mouth.",
-      "c": "NPO is not new-patient orientation; it means nothing by mouth before procedures."
+      "a": "A clear liquid diet allows broth, water, and clear juices; NPO allows nothing by mouth.",
+      "b": "A soft or pureed diet is a texture modification; NPO means no oral intake at all.",
+      "c": "Diet as tolerated permits normal eating; NPO, from nil per os, means nothing by mouth."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2915,23 +2915,23 @@
       },
       {
         "id": "b",
-        "text": "Central venous access only as documented today"
+        "text": "Central venous access device"
       },
       {
         "id": "c",
-        "text": "Chronic viral arthritis per usual clinic habit"
+        "text": "Costovertebral angle (kidney area) tenderness"
       },
       {
         "id": "d",
-        "text": "Cardiac valve abscess without provider review"
+        "text": "Transient ischemic attack"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "In PMH, CVA typically means stroke / cerebrovascular accident. Context matters; do not invent unrelated expansions.",
+    "explanation": "In a history list, “Hx of CVA” means a prior cerebrovascular accident (stroke). CVA tenderness is a different use, an exam finding at the costovertebral angle over the kidney; a TIA is a transient ischemic attack, and central lines are CVC or CVAD.",
     "distractorExplanations": {
-      "b": "CVC/central line uses different wording.",
-      "c": "Not a standard expansion for CVA in neuro history.",
-      "d": "Not the usual sense of CVA in problem lists."
+      "b": "Central lines are abbreviated CVC or CVAD; in a history list CVA means stroke.",
+      "c": "CVA tenderness is an exam finding at the costovertebral angle; “Hx of CVA” in a history list means a prior stroke.",
+      "d": "A TIA is a brief ischemic episode without infarction; it is abbreviated TIA, not CVA."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2944,7 +2944,7 @@
     "options": [
       {
         "id": "a",
-        "text": "They take longer to type than QD and U for this encounter"
+        "text": "QD and U are Latin terms that pharmacies can no longer process in e-prescriptions"
       },
       {
         "id": "b",
@@ -2952,19 +2952,19 @@
       },
       {
         "id": "c",
-        "text": "Providers rarely understand plain language per usual clinic habit"
+        "text": "HIPAA prohibits abbreviations in any part of the legal medical record"
       },
       {
         "id": "d",
-        "text": "HIPAA requires Latin abbreviations only without provider review"
+        "text": "Plain-language terms are required for billing claims to be paid by Medicare"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Joint Commission / ISMP-style do-not-use lists flag QD and U because they are easily misread. Plain language is safer.",
+    "explanation": "QD and U appear on the Joint Commission do-not-use list and ISMP error-prone abbreviation guidance because they are easily misread: QD can be taken for QID, and U can look like 0 or 4, causing tenfold dosing errors. Writing “daily” and “units” prevents those mistakes.",
     "distractorExplanations": {
-      "a": "Safety — not typing speed — drives the rule.",
-      "c": "Providers do understand plain language — that choice confuses a related but different charting rule.",
-      "d": "HIPAA does not mandate Latin abbreviations."
+      "a": "The issue is misreading in free text, not pharmacy processing; QD can be read as QID and U as 0 or 4.",
+      "c": "HIPAA governs privacy, not abbreviations; the do-not-use list comes from Joint Commission and ISMP safety guidance.",
+      "d": "Claims are paid on codes, not free-text wording; the rule exists to prevent medication dosing errors."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -2977,15 +2977,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Deleting allergies the patient mentioned last year without asking for this encounter"
+        "text": "Removing an allergy from the list because it was not mentioned at the last two visits"
       },
       {
         "id": "b",
-        "text": "Signing yesterday’s note as the provider as documented today"
+        "text": "Pre-charting today's exam as normal so the provider only edits abnormal findings"
       },
       {
         "id": "c",
-        "text": "Changing the billed level of service in the claim editor per usual clinic habit"
+        "text": "Selecting the visit's level of service in advance based on the number of problems"
       },
       {
         "id": "d",
@@ -2993,11 +2993,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Chart prep that organizes prior data for the provider is in scope. Editing allergies silently, signing, or coding claims is not.",
+    "explanation": "Chart prep means organizing existing information for the provider, such as active problems, pending results, and due screenings. Removing allergies without verification, pre-charting an exam that has not happened, or choosing the visit level in advance are outside scribe scope.",
     "distractorExplanations": {
-      "a": "Allergy changes need verification with the patient/provider workflow.",
-      "b": "Only the provider authenticates — that choice confuses a related but different charting rule.",
-      "c": "Billing level is not a scribe decision — that choice confuses a related but different charting rule."
+      "a": "Allergy changes need verification with the patient and provider; absence of mention is not resolution.",
+      "b": "Documenting an exam before it is performed creates false findings; only completed exams can be charted.",
+      "c": "Level of service is a provider and coding decision based on the visit as performed, not a scribe prep task."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3014,23 +3014,23 @@
       },
       {
         "id": "b",
-        "text": "Pharmacies rarely matter for e-prescribing"
+        "text": "It determines which pharmacy benefit manager pays the claim"
       },
       {
         "id": "c",
-        "text": "The scribe must mail paper scripts to all three by default"
+        "text": "It lets the scribe send paper prescriptions to all three pharmacies"
       },
       {
         "id": "d",
-        "text": "HIPAA forbids documenting any pharmacy name"
+        "text": "HIPAA requires one pharmacy on file before any prescription is written"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Accurate pharmacy details prevent misrouted e-Rx. Documenting pharmacy is routine and allowed for treatment.",
+    "explanation": "The preferred pharmacy in the chart determines where e-prescriptions and refill authorizations are sent, so an unclear entry can misroute a prescription or delay therapy. It does not choose the benefit manager, and HIPAA permits pharmacy information for treatment.",
     "distractorExplanations": {
-      "b": "Pharmacy routing is central to e-Rx — that choice confuses a related but different charting rule.",
-      "c": "Mass mailing to all pharmacies is not the default workflow.",
-      "d": "HIPAA permits pharmacy info for treatment."
+      "b": "The PBM is set by the patient's insurance plan, not by which pharmacy is marked preferred.",
+      "c": "Sending prescriptions to several pharmacies risks duplicate fills; one preferred pharmacy receives the e-Rx.",
+      "d": "HIPAA does not require a pharmacy on file; accuracy matters for routing, not privacy compliance."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3043,7 +3043,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Leave lisinopril active so the list stays “complete” for this encounter"
+        "text": "Lisinopril kept active, since only the prescriber can change the medication list"
       },
       {
         "id": "b",
@@ -3051,19 +3051,19 @@
       },
       {
         "id": "c",
-        "text": "Increase the dose because stopping is noncompliance per usual clinic habit"
+        "text": "Lisinopril deleted from the chart so it no longer appears in the history"
       },
       {
         "id": "d",
-        "text": "Delete the entire medication list to start blank without provider review"
+        "text": "A new lisinopril prescription pended so the patient can restart it today"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Reconciled lists must reflect current use. Keeping stopped meds active creates ordering and safety risk.",
+    "explanation": "Medication reconciliation records what the patient actually takes. A drug the patient stopped is marked discontinued, with the reason and the provider's confirmation, rather than left active, deleted from the history, or restarted by the scribe.",
     "distractorExplanations": {
-      "a": "Active status for stopped meds is dangerous.",
-      "c": "Scribes do not independently change doses.",
-      "d": "Wiping the list loses history needed for recon."
+      "a": "Reconciliation records what the patient actually takes; leaving a stopped drug active misleads ordering and safety checks.",
+      "c": "Deleting erases the history; marking it discontinued with a reason preserves the record.",
+      "d": "Restarting a medication is the provider's decision; the scribe documents what the patient reports."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3076,27 +3076,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Paste last year’s CBC numbers as today’s results for this encounter"
+        "text": "The patient's most recent CBC values, carried forward as today's results"
       },
       {
         "id": "b",
-        "text": "Document normal CBC values from a template without results as documented today"
+        "text": "A normal CBC from the template, to be corrected later if results are abnormal"
       },
       {
         "id": "c",
-        "text": "That the CBC was ordered; do not invent results that are not available yet"
+        "text": "The CBC order in the Plan, with results to be added when they post"
       },
       {
         "id": "d",
-        "text": "Omit the order because results are pending without provider review"
+        "text": "Nothing about the CBC until the results post, to avoid an incomplete note"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Pending orders belong in Plan. Fabricating results or copying old labs as today’s is integrity failure.",
+    "explanation": "Today's note documents the CBC order in the Plan; results are added when they post and the provider reviews them. Carrying forward old values or inserting template normals fabricates data, and omitting the order leaves the Plan incomplete.",
     "distractorExplanations": {
-      "a": "Prior labs are not today’s results — that choice confuses a related but different charting rule.",
-      "b": "Template normals without data are false documentation.",
-      "d": "The order itself should still be recorded."
+      "a": "Prior labs are not today's results; carried-forward values would misrepresent this encounter.",
+      "b": "Template normals entered before results exist are fabricated data, even if meant to be corrected later.",
+      "d": "The order itself is part of today's Plan and must be documented even while results are pending."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3109,15 +3109,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the patient’s favorite specialist’s first name with no specialty listed"
+        "text": "The specialist's name and phone number, with the reason left for the visit"
       },
       {
         "id": "b",
-        "text": "No clinical reason at all, so the receiving specialist can guess the need"
+        "text": "The diagnosis code only, since the specialist will take a full history anyway"
       },
       {
         "id": "c",
-        "text": "A blank referral labeled “as needed someday” without urgency or specialty"
+        "text": "The patient's full chart attached, with no summary of the clinical question"
       },
       {
         "id": "d",
@@ -3125,11 +3125,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Receiving clinicians need clinical reason, specialty, and timing. Vague referrals delay care.",
+    "explanation": "A usable referral states the reason for referral, the specialty, the urgency, and the relevant clinical context so the receiving office can triage and prepare. A name, a code alone, or an unsummarized full chart leaves the clinical question unclear.",
     "distractorExplanations": {
-      "a": "Identity alone without reason is incomplete.",
-      "b": "Reasoning is required for triage — that choice confuses a related but different charting rule.",
-      "c": "Open-ended blanks are not actionable — that choice confuses a related but different charting rule."
+      "a": "Without a documented reason, the specialist cannot triage urgency or prepare for the visit.",
+      "b": "A code alone lacks the clinical context and urgency the receiving office needs to schedule appropriately.",
+      "c": "Sending everything without a stated question buries the reason; minimum necessary also applies."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3146,23 +3146,23 @@
       },
       {
         "id": "b",
-        "text": "Leave right selected because templates are routinely trusted as documented today"
+        "text": "Leave the right-side default, since the provider will correct it at signing"
       },
       {
         "id": "c",
-        "text": "Document both sides as normal to be safe per usual clinic habit"
+        "text": "Document both ankles as examined so that either side is covered in the note"
       },
       {
         "id": "d",
-        "text": "Delete all laterality words from the note without provider review"
+        "text": "Remove left and right throughout and describe the injury only as “ankle”"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wrong-side documentation is a major safety issue. Fix defaults to match the exam performed.",
+    "explanation": "Laterality must match the exam performed, so a left-ankle visit is corrected to left everywhere and wrong-side defaults are removed. Leaving the default for the provider to catch, charting both sides, or deleting laterality all create unsafe documentation.",
     "distractorExplanations": {
-      "b": "Defaults are not a substitute for the exam.",
-      "c": "Documenting the unexamined side as normal is false.",
-      "d": "Laterality is required for extremity exams."
+      "b": "Relying on the provider to catch a wrong-side default risks a signed note with the wrong extremity.",
+      "c": "Charting an exam of the unexamined ankle creates documentation of findings that were never obtained.",
+      "d": "Laterality is required for extremity findings and orders; deleting it makes the note ambiguous."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3175,7 +3175,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Whenever convenient, to speed charting, even if ROS was skipped"
+        "text": "Whenever the provider is running behind, to keep up with the schedule"
       },
       {
         "id": "b",
@@ -3183,19 +3183,19 @@
       },
       {
         "id": "c",
-        "text": "In for Medicare patients per usual clinic habit"
+        "text": "For established patients whose last ROS was normal and nothing has changed"
       },
       {
         "id": "d",
-        "text": "Skip — ROS is illegal to document without provider review"
+        "text": "Not at all, since templated ROS text is barred from the legal medical record"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Macros are fine when true. Clicking “normal ROS” without review creates false documentation.",
+    "explanation": "A normal ROS macro may be used only when each of those systems was actually reviewed at this visit. Schedule pressure or a prior normal ROS does not justify it; the macro itself is acceptable when the content is true.",
     "distractorExplanations": {
-      "a": "Speed does not justify false negatives — that choice confuses a related but different charting rule.",
-      "c": "Payer type does not change truthfulness.",
-      "d": "ROS is standard when performed — that choice confuses a related but different charting rule."
+      "a": "Time pressure does not make unasked systems negative; the macro must match what was reviewed.",
+      "c": "A prior normal ROS does not show today's answers; each visit's ROS must reflect what was asked today.",
+      "d": "Macros are acceptable when accurate; the problem is only charting systems that were not reviewed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3208,27 +3208,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Perform the suture removal personally if the provider is busy for this encounter"
+        "text": "Remove the sutures if the provider is busy, then document the procedure"
       },
       {
         "id": "b",
-        "text": "Bill the procedure CPT without provider input as documented today"
+        "text": "Select the procedure's CPT code so it posts to the claim when the note closes"
       },
       {
         "id": "c",
-        "text": "Document the procedure details the provider performs and dictates/states"
+        "text": "Document the procedure details as the provider performs and states them"
       },
       {
         "id": "d",
-        "text": "Skip documentation because procedures rarely need notes without provider review"
+        "text": "Skip a procedure note, since suture removal is included in the visit note"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Scribes document; they do not perform procedures or independently code claims.",
+    "explanation": "For a procedure such as suture removal, the scribe documents what the provider performs and states, such as the number of sutures removed and the wound's condition. Scribes do not perform procedures or assign CPT codes, and the procedure still needs documentation.",
     "distractorExplanations": {
-      "a": "Procedure performance is clinical/provider or trained clinical staff — not scribe scope.",
-      "b": "Coding/billing is not independent scribe work.",
-      "d": "Procedures require documentation — that choice confuses a related but different charting rule."
+      "a": "Performing procedures is clinical work outside scribe scope, regardless of workload.",
+      "b": "Procedure coding is a provider or coder decision; scribes document but do not assign billing codes.",
+      "d": "Suture removal still needs documentation of what was done and the condition of the wound."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3241,15 +3241,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Open the first search hit and start typing immediately for this encounter"
+        "text": "Select the first matching search result and confirm the name aloud in the room"
       },
       {
         "id": "b",
-        "text": "Document in whichever chart was left open from the last room as documented today"
+        "text": "Keep documenting in the chart already open, since it came from the room schedule"
       },
       {
         "id": "c",
-        "text": "Use nickname only because it is friendlier per usual clinic habit"
+        "text": "Check that the room number on the schedule matches the patient's chart"
       },
       {
         "id": "d",
@@ -3257,11 +3257,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Dual identifiers prevent wrong-patient documentation — a critical EHR safety practice.",
+    "explanation": "Wrong-patient documentation is prevented by verifying at least two identifiers, such as full name plus date of birth or MRN, before charting. Name alone, an already-open chart, or a room number cannot reliably separate patients with similar names.",
     "distractorExplanations": {
-      "a": "First-hit selection is a known wrong-chart failure mode.",
-      "b": "Leftover open charts cause mix-ups — that choice confuses a related but different charting rule.",
-      "c": "Nicknames alone are insufficient identifiers."
+      "a": "Name alone cannot separate two similar patients; a second identifier such as DOB or MRN is required.",
+      "b": "An open chart from a previous room is a known source of wrong-patient entries; verify identity first.",
+      "c": "Room numbers are not patient identifiers; patients move rooms and schedules change."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3278,23 +3278,23 @@
       },
       {
         "id": "b",
-        "text": "The scribe radiographically interprets the film as documented today"
+        "text": "Interpret the chest X-ray and enter a preliminary read for the provider"
       },
       {
         "id": "c",
-        "text": "The scribe administers IV contrast per usual clinic habit"
+        "text": "Schedule the X-ray and tell the patient the results once they post"
       },
       {
         "id": "d",
-        "text": "The order is permanently signed by the scribe as attending without provider review"
+        "text": "Sign the order under the scribe's login so imaging can start without delay"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pending/entering orders for provider signature is a common allowed workflow where policy permits. Scribes do not interpret imaging or act as attending.",
+    "explanation": "To pend an order is to prepare it in the EHR so the provider can review and sign it, where local policy allows. The scribe does not sign or release the order, interpret the imaging, or communicate results to the patient.",
     "distractorExplanations": {
-      "b": "Interpretation is provider/radiologist work.",
-      "c": "Contrast admin is clinical staff scope — that choice confuses a related but different charting rule.",
-      "d": "Final authentication remains the provider’s."
+      "b": "Imaging interpretation is provider or radiologist work, not part of pending an order.",
+      "c": "Pending means preparing the order for signature; result communication is the provider's responsibility.",
+      "d": "Orders require provider authentication; a scribe's signature cannot release an order."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3307,7 +3307,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The scribe alone, diagnosing and prescribing by portal for this encounter"
+        "text": "The scribe, who drafts and sends advice based on the patient's prior notes"
       },
       {
         "id": "b",
@@ -3315,19 +3315,19 @@
       },
       {
         "id": "c",
-        "text": "Any visitor in the waiting room per usual clinic habit"
+        "text": "The front desk, which books the next open appointment and closes the message"
       },
       {
         "id": "d",
-        "text": "Automatically the billing department without provider review"
+        "text": "The billing office, which first confirms the message is a billable e-visit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Portal clinical advice is provider/clinical responsibility. Scribes may draft under direction where policy allows, but do not independently diagnose.",
+    "explanation": "New symptoms reported by portal message need clinical review by the licensed provider or clinical staff designated by protocol. A scribe may draft only under direction, and scheduling or billing checks cannot replace triage of the symptoms.",
     "distractorExplanations": {
-      "a": "Independent diagnosing/prescribing is out of scope.",
-      "c": "Visitors are not care team — that choice confuses a related but different charting rule.",
-      "d": "Billing is not clinical triage — that choice confuses a related but different charting rule."
+      "a": "Giving clinical advice is outside scribe scope even when it draws on prior notes.",
+      "c": "Scheduling without clinical review can miss urgent symptoms; new symptoms need clinical triage.",
+      "d": "Billing status is secondary; clinical review of new symptoms comes first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3340,11 +3340,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Stop all care documentation permanently until IT restores the network for this encounter"
+        "text": "Pause documentation and reconstruct today's notes from memory after systems return"
       },
       {
         "id": "b",
-        "text": "Text protected health information to the scribe’s personal Instagram drafts as documented today"
+        "text": "Type notes in a personal phone app and paste them into the EHR when it returns"
       },
       {
         "id": "c",
@@ -3352,15 +3352,15 @@
       },
       {
         "id": "d",
-        "text": "Invent vitals later from memory without recording that downtime occurred without provider review"
+        "text": "Hold all patients in the waiting room until the network connection is restored"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Downtime procedures preserve care continuity and later EHR capture. Personal social apps are not the record.",
+    "explanation": "During EHR downtime, care continues using the organization's paper or offline downtime forms, and the information is entered into the EHR when systems return. Reconstructing from memory loses detail, and personal apps are not approved for PHI.",
     "distractorExplanations": {
-      "a": "Care still needs documentation — that choice confuses a related but different charting rule.",
-      "b": "Social apps are not compliant EHR substitutes.",
-      "d": "Transparent downtime + accurate capture beats fabricated vitals."
+      "a": "Memory reconstruction loses detail; downtime forms capture the documentation at the time of care.",
+      "b": "Personal apps are not secured for PHI; the approved paper or offline downtime process must be used.",
+      "d": "Care continues during downtime; the organization's downtime procedure exists so visits can proceed."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3373,15 +3373,15 @@
     "options": [
       {
         "id": "a",
-        "text": "HIPAA forbids timestamps on results for this encounter"
+        "text": "It confirms the lab met its turnaround target for billing purposes"
       },
       {
         "id": "b",
-        "text": "Timestamps are only for payroll as documented today"
+        "text": "It is required so the scribe's hours can be reconciled with the schedule"
       },
       {
         "id": "c",
-        "text": "Scribes should rarely record communication events per usual clinic habit"
+        "text": "It starts the 30-day clock for the patient to request a copy of the result"
       },
       {
         "id": "d",
@@ -3389,11 +3389,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Result notification times support safety and accountability. They are appropriate clinical documentation.",
+    "explanation": "Documenting when a critical result was communicated, and to whom, creates an auditable timeline showing that the result reached the provider and supports safe handoffs. It is clinical documentation, not a billing, payroll, or records-request measure.",
     "distractorExplanations": {
-      "a": "HIPAA does not ban clinical timestamps — that choice confuses a related but different charting rule.",
-      "b": "Clinical times are not payroll clocks — that choice confuses a related but different charting rule.",
-      "c": "Communication events are often essential."
+      "a": "The time documents when the provider learned of the result; lab turnaround metrics are tracked elsewhere.",
+      "b": "Communication times are clinical documentation, not payroll records.",
+      "c": "Patient access deadlines run from the patient's request, not from provider notification; the timestamp serves safety."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3406,27 +3406,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Only the systems actually reviewed — remove unchecked “negatives”"
+        "text": "Only the three systems actually reviewed, with unreviewed negatives removed"
       },
       {
         "id": "b",
-        "text": "All 14 systems marked negative to maximize billing as documented today"
+        "text": "All 14 systems negative, since a complete ROS supports a higher visit level"
       },
       {
         "id": "c",
-        "text": "Blank the entire note per usual clinic habit"
+        "text": "The three reviewed systems plus “all other systems negative” for completeness"
       },
       {
         "id": "d",
-        "text": "Copy another patient’s ROS without provider review"
+        "text": "The 14-point ROS from the patient's prior visit, updated for the three systems"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Document what was done. Inflating ROS for billing is fraudulent documentation.",
+    "explanation": "The ROS documents only the systems actually reviewed. Marking unreviewed systems negative, adding “all other systems negative” after a partial review, or copying a prior visit's ROS creates false documentation that can also inflate the billed level of service.",
     "distractorExplanations": {
-      "b": "Billing-driven false ROS is not allowed.",
-      "c": "The note can still be completed accurately.",
-      "d": "Another patient’s data is a privacy/integrity breach."
+      "b": "Inflating ROS to support a visit level is false documentation and a billing compliance risk.",
+      "c": "“All other systems negative” states the systems were reviewed when they were not; it is valid only after a full review.",
+      "d": "Copied-forward answers from a prior visit are not today's review and misrepresent this encounter."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3439,27 +3439,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Skip identity checks because video is informal for this encounter"
+        "text": "Skip identity checks for established patients who join from their usual device"
       },
       {
         "id": "b",
-        "text": "Confirm patient identity, visit modality, and that required consents/tech checks per workflow are noted"
+        "text": "Confirm patient identity, the visit modality, and the required telehealth consent"
       },
       {
         "id": "c",
-        "text": "Record a neighbor visible on camera as the patient per usual clinic habit"
+        "text": "Record the visit as in person so standard templates and billing apply"
       },
       {
         "id": "d",
-        "text": "Disable audit logs for telehealth encounters without provider review"
+        "text": "Document the patient's location only if the visit is billed to Medicare"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Telehealth still requires identity and workflow compliance. Audit controls stay on.",
+    "explanation": "Telehealth prep confirms the patient's identity, documents the visit modality (video or audio), and notes the required telehealth consent per workflow. Identity checks still apply to established patients, the modality must be recorded accurately, and patient location matters regardless of payer.",
     "distractorExplanations": {
-      "a": "Identity verification remains required — that choice confuses a related but different charting rule.",
-      "c": "Wrong-person documentation is unsafe — that choice confuses a related but different charting rule.",
-      "d": "Audit logs apply to telehealth too — that choice confuses a related but different charting rule."
+      "a": "Identity verification still applies; a familiar device does not confirm who is on camera.",
+      "c": "Visit modality must be documented accurately; misstating it is a billing and documentation error.",
+      "d": "Patient location matters for licensure and safety in telehealth regardless of payer."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3472,7 +3472,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A public weather report with no patient data for this encounter"
+        "text": "A clinic's aggregate count of asthma visits last month, with no patient details"
       },
       {
         "id": "b",
@@ -3480,7 +3480,7 @@
       },
       {
         "id": "c",
-        "text": "A hospital cafeteria menu per usual clinic habit"
+        "text": "A scribe's own employment record held by the hospital's HR department"
       },
       {
         "id": "d",
@@ -3488,11 +3488,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "PHI is individually identifiable health information. Name + diagnosis in a covered-entity record is classic PHI.",
+    "explanation": "PHI is individually identifiable health information held by a covered entity or business associate, such as a patient's name together with a diagnosis in a clinic record. Aggregate counts with no identifiers, properly de-identified data, and employment records held as employer are not PHI.",
     "distractorExplanations": {
-      "a": "Weather alone is not PHI — that choice confuses a related but different charting rule.",
+      "a": "Aggregate counts with no identifiers do not identify individuals and are not PHI.",
       "b": "Properly de-identified data is outside PHI by definition.",
-      "c": "Menus without patient links are not PHI."
+      "c": "Employment records a covered entity holds in its role as employer are excluded from PHI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3509,23 +3509,23 @@
       },
       {
         "id": "b",
-        "text": "Open every chart in the clinic each morning for practice as documented today"
+        "text": "Open the full chart of every scheduled patient each morning to prepare the day"
       },
       {
         "id": "c",
-        "text": "Download all patients’ full histories to a home USB “just in case” per usual clinic habit"
+        "text": "Review a relative's chart if the relative gives verbal permission to look"
       },
       {
         "id": "d",
-        "text": "Share full charts in group chats for entertainment without provider review"
+        "text": "Share full charts with any workforce member, since all staff are covered by HIPAA"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Minimum necessary limits use/disclosure to what the role requires. Curiosity and bulk downloads violate that spirit and often policy.",
+    "explanation": "The minimum necessary standard limits workforce access and use to the PHI needed for the assigned job. Opening every chart in full, looking at a relative's chart, or sharing complete charts with coworkers who have no need exceeds that limit.",
     "distractorExplanations": {
-      "b": "Mass chart opening is not required for one assignment.",
-      "c": "Home USB caches create breach risk — that choice confuses a related but different charting rule.",
-      "d": "Entertainment sharing is impermissible — that choice confuses a related but different charting rule."
+      "b": "Prep should pull only what the assigned visits need; opening every chart in full exceeds the role's need.",
+      "c": "Access must be job-related; a relative's verbal permission does not authorize workforce access.",
+      "d": "Being part of the workforce does not create a need to know; disclosures to coworkers are limited to what their job requires."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3538,7 +3538,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Confirm the visit but omit the diagnosis for this encounter"
+        "text": "Confirm the visit but not the reason, since attendance alone is not PHI"
       },
       {
         "id": "b",
@@ -3546,19 +3546,19 @@
       },
       {
         "id": "c",
-        "text": "Share the chart if the friend promises secrecy per usual clinic habit"
+        "text": "Share the information if the friend is also a patient of the same clinic"
       },
       {
         "id": "d",
-        "text": "Post a coded hint on social media without provider review"
+        "text": "Suggest the friend call the front desk, which can confirm appointment times"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Even confirming that someone was a patient can be an impermissible disclosure. Secret promises and coded posts still leak PHI.",
+    "explanation": "Confirming that a person was seen at the clinic discloses PHI, even without a diagnosis. The correct response neither confirms nor denies and explains that patient information cannot be shared; no other staff member may confirm it for a friend either.",
     "distractorExplanations": {
-      "a": "Visit confirmation is still PHI disclosure.",
-      "c": "Secrecy promises do not authorize disclosure.",
-      "d": "Social media hints can identify patients."
+      "a": "Confirming that someone was seen is itself a disclosure of PHI, even without the diagnosis.",
+      "c": "Being a patient of the clinic gives no right to another patient's information.",
+      "d": "Front desk staff may not disclose another person's appointments to a friend either."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3571,11 +3571,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Sharing one login among three scribes on a shift for this encounter"
+        "text": "One shared login for scribes on the same shift, changed every 90 days"
       },
       {
         "id": "b",
-        "text": "Writing the password on the monitor bezel as documented today"
+        "text": "A password written on a note kept in a locked desk drawer at the workstation"
       },
       {
         "id": "c",
@@ -3583,15 +3583,15 @@
       },
       {
         "id": "d",
-        "text": "Emailing the password to a personal Gmail for backup without provider review"
+        "text": "Staying logged in between patients so the provider can review notes quickly"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Unique logins preserve audit accountability. Shared or exposed passwords break access control.",
+    "explanation": "Each user needs unique credentials that are never shared, and the workstation is locked whenever the user steps away. Shared logins break audit attribution, written passwords can be found, and open sessions let others act under your name.",
     "distractorExplanations": {
-      "a": "Shared logins destroy attribution — that choice confuses a related but different charting rule.",
-      "b": "Visible passwords invite misuse — that choice confuses a related but different charting rule.",
-      "d": "Personal email is not a secure vault for credentials."
+      "a": "Shared logins break audit attribution even when rotated; each user needs unique credentials.",
+      "b": "Written passwords near the workstation can be found and used by others; credentials should be memorized or vaulted.",
+      "d": "Unattended open sessions let others act under your login; lock the screen when stepping away."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3604,27 +3604,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Click quickly so documentation is not interrupted for this encounter"
+        "text": "Click the link but close the page before entering any credentials"
       },
       {
         "id": "b",
-        "text": "Forward the link to patients so they can “verify” too"
+        "text": "Forward the email to coworkers so they know to watch for it"
       },
       {
         "id": "c",
-        "text": "Enter credentials on the linked page to be safe per usual clinic habit"
+        "text": "Reply to the sender asking them to confirm the request is real"
       },
       {
         "id": "d",
-        "text": "Do not click; report to IT/security per phishing protocol"
+        "text": "Do not click the link, and report the email to IT/security per protocol"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Phishing is a top breach vector for EHR credentials. Do not click the link or enter a password; report the message to IT/security using the organization’s phishing protocol so the threat can be blocked.",
+    "explanation": "Phishing emails are a leading cause of healthcare breaches. Do not click the link, enter credentials, reply, or forward the message; report it to IT/security through the organization's phishing process so the threat can be blocked for everyone.",
     "distractorExplanations": {
-      "a": "Urgency is a social-engineering tactic — that choice confuses a related but different charting rule.",
-      "b": "Patients should not receive phishing links.",
-      "c": "Credential entry on fake pages enables takeover."
+      "a": "Clicking alone can install malware; suspicious links should not be opened at all.",
+      "b": "Forwarding spreads the malicious link; reporting to IT lets security block it and warn staff centrally.",
+      "c": "Replying confirms the address is active and engages the attacker; verification goes through IT."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3641,23 +3641,23 @@
       },
       {
         "id": "b",
-        "text": "Whenever convenient, loudly using full name and diagnosis for teaching drama as documented today"
+        "text": "Any time, because HIPAA permits incidental disclosures without limits"
       },
       {
         "id": "c",
-        "text": "On a speakerphone in a crowded elevator per usual clinic habit"
+        "text": "Only after confirming that no patients are nearby, even though visitors and staff are present"
       },
       {
         "id": "d",
-        "text": "With Uber drivers who ask about interesting patients without provider review"
+        "text": "Freely if the patient's last name is used but not the first name"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Incidental disclosures should be minimized. Loud identifiable hallway talk is a classic privacy failure.",
+    "explanation": "Case discussions should happen only when needed for care, with reasonable safeguards such as lowered voices, private spaces, and limited identifiers. HIPAA tolerates incidental disclosures only when those safeguards are in place, and partial names do not make a conversation safe.",
     "distractorExplanations": {
-      "b": "Drama is not a treatment need — that choice confuses a related but different charting rule.",
-      "c": "Elevators are high-risk for overheard PHI.",
-      "d": "Rideshare chatter is not a care team need."
+      "b": "Incidental disclosures are permitted only when reasonable safeguards and minimum necessary are applied.",
+      "c": "Visitors and staff without a need to know can overhear too; safeguards apply to everyone nearby.",
+      "d": "A last name with case details is still identifiable; partial names do not make the conversation safe."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3670,7 +3670,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Laptop facing a café crowd with charts open for this encounter"
+        "text": "A shared family computer with a separate user profile for clinic work"
       },
       {
         "id": "b",
@@ -3678,19 +3678,19 @@
       },
       {
         "id": "c",
-        "text": "Family watching over the shoulder “to learn medicine” per usual clinic habit"
+        "text": "A coffee shop table with a privacy screen filter over the laptop display"
       },
       {
         "id": "d",
-        "text": "Public Wi-Fi without required safeguards while screen-sharing PHI without provider review"
+        "text": "Home Wi-Fi without the VPN, since the home network is password protected"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Remote work still requires physical and technical safeguards for PHI.",
+    "explanation": "Remote scribes need a private workspace where others cannot see the screen, an organization-approved device, and the required VPN or secure connection. Shared family computers, public spaces, and home Wi-Fi without the VPN all fall short of those safeguards.",
     "distractorExplanations": {
-      "a": "Public visibility of charts is a disclosure risk.",
-      "c": "Household shoulder-surfing is unauthorized access.",
-      "d": "Unsecured public Wi-Fi can expose sessions."
+      "a": "Shared devices risk access by others and may lack required controls; use the organization-approved device.",
+      "c": "A privacy filter helps, but public spaces still risk overheard audio and unsecured networks.",
+      "d": "A home Wi-Fi password does not replace the required secure connection to the organization's systems."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3703,11 +3703,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Toss intact labeled sheets into the public recycling bin in the lobby"
+        "text": "Place them in the regular recycling bin after folding them in half"
       },
       {
         "id": "b",
-        "text": "Take the labeled face sheets home as scrap paper for children’s crafts"
+        "text": "Cross out the patient names with a marker and discard them in the trash"
       },
       {
         "id": "c",
@@ -3715,15 +3715,15 @@
       },
       {
         "id": "d",
-        "text": "Photograph the labeled sheets for a personal clinical portfolio album"
+        "text": "Keep them in a desk drawer until the patient's next visit, then reuse them"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Paper PHI needs secure destruction. Lobby recycling, home reuse, and personal photos are improper.",
+    "explanation": "Paper containing PHI, such as labeled face sheets, must be shredded or placed in a locked confidential destruction bin. Folding, crossing out names, or holding sheets for reuse leaves identifiers such as MRN, date of birth, and barcodes readable.",
     "distractorExplanations": {
-      "a": "Public bins are readable by others — that choice confuses a related but different charting rule.",
-      "b": "Home reuse redistributes PHI — that choice confuses a related but different charting rule.",
-      "d": "Personal portfolios are not authorized uses."
+      "a": "Folded sheets remain readable; labeled paper PHI needs shredding or a locked destruction bin.",
+      "b": "Labels carry other identifiers (MRN, DOB, barcodes); marking out names leaves PHI readable.",
+      "d": "Retaining unneeded PHI in unsecured drawers increases exposure; it should be destroyed securely."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3736,15 +3736,15 @@
     "options": [
       {
         "id": "a",
-        "text": "Ignore it because family routinely has a right to all PHI for this encounter"
+        "text": "Decline it, because family involved in the patient's care are entitled to updates"
       },
       {
         "id": "b",
-        "text": "Promise verbally and rarely record it as documented today"
+        "text": "Agree verbally and rely on staff to remember it at future visits"
       },
       {
         "id": "c",
-        "text": "Post the restriction on the clinic’s public Facebook page per usual clinic habit"
+        "text": "Accept it only if the patient pays for the visit out of pocket in full"
       },
       {
         "id": "d",
@@ -3752,11 +3752,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Restriction requests are handled through formal process and documentation — not ignored or publicly posted.",
+    "explanation": "Patients may request restrictions on disclosures, including to family members. The request is documented and routed through the organization's HIPAA process so all staff honor any agreed restriction. Self-pay restrictions apply to health plans, not family.",
     "distractorExplanations": {
-      "a": "Family members do not automatically receive all PHI.",
-      "b": "Undocumented promises fail handoffs — that choice confuses a related but different charting rule.",
-      "c": "Public posting would itself disclose information."
+      "a": "Patients can ask to limit disclosures to family; involvement in care does not override the request.",
+      "b": "An undocumented restriction will not survive handoffs; it must be recorded and routed per policy.",
+      "c": "Self-pay triggers a mandatory restriction on disclosures to health plans, not on disclosures to family."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3769,27 +3769,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Many treatment, payment, and health-care operations disclosures do not require a separate patient authorization"
+        "text": "Treatment, payment, and operations disclosures generally need no separate authorization"
       },
       {
         "id": "b",
-        "text": "Each internal handoff between covering providers needs a notarized authorization as documented today"
+        "text": "Each handoff between covering providers requires a signed patient authorization"
       },
       {
         "id": "c",
-        "text": "Scribes may sell PHI if the patient once signed any form per usual clinic habit"
+        "text": "A signed authorization is needed before sending claims to the patient's insurer"
       },
       {
         "id": "d",
-        "text": "Authorization is identical to informed consent for surgery without provider review"
+        "text": "Authorization and surgical informed consent are the same document under HIPAA"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "HIPAA permits TPO disclosures without extra authorization in many cases. Sale of PHI and conflating with surgical consent are wrong.",
+    "explanation": "HIPAA permits disclosures for treatment, payment, and health care operations (TPO) without a separate patient authorization, so handoffs between providers and claims to insurers need none. A HIPAA authorization is also distinct from surgical informed consent.",
     "distractorExplanations": {
-      "b": "Internal treatment communications are generally permitted.",
-      "c": "Selling PHI is not allowed by a generic form.",
-      "d": "Surgical informed consent is a different legal concept."
+      "b": "Disclosures for treatment between providers are permitted without a separate authorization.",
+      "c": "Disclosures for payment, including claims, are permitted without a separate authorization.",
+      "d": "Informed consent for a procedure is a clinical and legal process distinct from a HIPAA authorization."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3802,7 +3802,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Required nightly training for all staff for this encounter"
+        "text": "No issue, since workforce members may view any chart within their own facility"
       },
       {
         "id": "b",
@@ -3810,19 +3810,19 @@
       },
       {
         "id": "c",
-        "text": "Proof that HIPAA bans all EHR use per usual clinic habit"
+        "text": "No issue if the coworker later says they did not mind the access"
       },
       {
         "id": "d",
-        "text": "Automatic permission because they share a break room without provider review"
+        "text": "A technical audit error, since the scribe was logged in to the clinic schedule"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Workforce members may access only charts needed for assigned work. Curiosity access is sanctionable.",
+    "explanation": "Workforce members may open only the charts needed for their assigned work. Opening a coworker's chart out of curiosity is unauthorized access and a privacy violation subject to discipline; later consent or being logged in to the schedule does not excuse it.",
     "distractorExplanations": {
-      "a": "Random chart opening is not training — that choice confuses a related but different charting rule.",
-      "c": "EHR use for assigned work is allowed — that choice confuses a related but different charting rule.",
-      "d": "Break-room proximity is not authorization."
+      "a": "Access is limited to charts needed for assigned work; working at the facility is not authorization.",
+      "c": "After-the-fact consent does not make job-unrelated access permissible; the access itself was the violation.",
+      "d": "Audit logs record actual chart opens; being logged in does not explain opening an unassigned chart."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3835,27 +3835,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Pose for the video with charts open for this encounter"
+        "text": "Allow it, since visitors may record anywhere in public areas of the hospital"
       },
       {
         "id": "b",
-        "text": "Dictate full patient names louder for the microphone as documented today"
+        "text": "Take the visitor's phone and delete the video before they leave the unit"
       },
       {
         "id": "c",
-        "text": "Protect visible PHI (blank screens/position monitors) and follow facility policy to stop unauthorized recording"
+        "text": "Shield visible PHI and follow facility policy to stop the unauthorized recording"
       },
       {
         "id": "d",
-        "text": "Ignore it because lobbies have no privacy rules without provider review"
+        "text": "Ignore it unless the video is later posted online with patient names"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Visible screens and overheard identifiers are disclosure risks. Facilities typically prohibit unauthorized recording in care areas.",
+    "explanation": "When someone records in a care area, staff shield visible PHI, for example by turning or blanking screens, and follow facility policy, often involving security, to stop the recording. Allowing it, waiting until it is posted, or seizing the phone are not appropriate responses.",
     "distractorExplanations": {
-      "a": "Posing with open charts worsens the breach.",
-      "b": "Amplifying names increases disclosure — that choice confuses a related but different charting rule.",
-      "d": "Care areas have privacy expectations — that choice confuses a related but different charting rule."
+      "a": "Care areas carry privacy expectations; facilities typically prohibit recording that captures other patients.",
+      "b": "Seizing personal property is not staff's role; follow policy and involve security.",
+      "d": "Waiting until it is posted lets the disclosure happen; visible PHI should be protected immediately."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3868,27 +3868,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Screenshot full notes into personal camera roll daily for this encounter"
+        "text": "Screenshots of notes kept in a passcode-protected personal photo album"
       },
       {
         "id": "b",
-        "text": "Sync charts to a personal Dropbox with no controls as documented today"
+        "text": "Charts synced to a personal cloud account that uses two-factor login"
       },
       {
         "id": "c",
-        "text": "Text MRNs to friends to “practice coding” per usual clinic habit"
+        "text": "Texts with MRNs only, since numbers without names are not identifiable"
       },
       {
         "id": "d",
-        "text": "Do not store PHI on personal phones unless the organization explicitly authorizes a secure method"
+        "text": "Store no PHI on a personal phone unless the organization approves a secure method"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Personal unmanaged devices are a common breach path. Organizational secure methods only.",
+    "explanation": "PHI should not be stored on a personal phone unless the organization has approved a specific secure method. Passcodes or two-factor login do not make a personal photo album or cloud account an approved store, and MRNs are identifiers.",
     "distractorExplanations": {
-      "a": "Camera-roll screenshots are uncontrolled PHI stores.",
-      "b": "Personal cloud sync often lacks required controls.",
-      "c": "Texting MRNs for practice is impermissible."
+      "a": "A passcode does not make personal photo storage an approved, managed PHI repository.",
+      "b": "Two-factor login secures the account, but personal cloud storage is not an organization-approved PHI store.",
+      "c": "Medical record numbers are identifiers listed under HIPAA; texting them still discloses PHI."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3905,23 +3905,23 @@
       },
       {
         "id": "b",
-        "text": "Wait a month to see if anyone complains as documented today"
+        "text": "Notify the affected patients directly before telling the privacy officer"
       },
       {
         "id": "c",
-        "text": "Delete email evidence of the loss per usual clinic habit"
+        "text": "Wait a few days in case the device turns up before reporting it"
       },
       {
         "id": "d",
-        "text": "Negotiate privately with the patient for cash without provider review"
+        "text": "Change the EHR password first and report only if misuse is detected"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Prompt internal reporting enables containment and legally required assessments. Delay and cover-ups worsen harm.",
+    "explanation": "A lost unencrypted device with PHI is a potential breach that must be reported immediately through the organization's incident process. The privacy officer assesses risk and handles any required notifications; delaying or waiting for evidence of misuse is not acceptable.",
     "distractorExplanations": {
-      "b": "Waiting defeats containment — that choice confuses a related but different charting rule.",
-      "c": "Destroying evidence is misconduct — that choice confuses a related but different charting rule.",
-      "d": "Private cash deals are not the breach process."
+      "b": "Patient notification is handled by the organization after assessment; the scribe's duty is to report internally.",
+      "c": "Delay slows containment and risk assessment; loss of an unencrypted device must be reported right away.",
+      "d": "Changing a password helps, but the loss itself must be reported; waiting for misuse is too late."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
@@ -3930,31 +3930,31 @@
     "id": "medical-scribe-readiness-check-compliance-030",
     "examSlug": "medical-scribe-readiness-check",
     "topicId": "compliance",
-    "prompt": "Why must scribes avoid posting “de-identified” case stories on TikTok from today’s clinic?",
+    "prompt": "A scribe wants to post an unnamed “interesting case” story from today's clinic on social media. Why is this a problem?",
     "options": [
       {
         "id": "a",
-        "text": "TikTok is routinely an approved HIPAA covered entity portal for this encounter"
+        "text": "It is acceptable if the post omits names, dates, and the clinic's location"
       },
       {
         "id": "b",
-        "text": "Unusual details can still re-identify patients; employer policies usually ban it"
+        "text": "Unusual details can still re-identify patients, and employer policies usually ban it"
       },
       {
         "id": "c",
-        "text": "Social media posts automatically become part of the legal medical record"
+        "text": "Only verified healthcare professionals may post patient stories under HIPAA"
       },
       {
         "id": "d",
-        "text": "HIPAA requires daily public case summaries for transparency without provider review"
+        "text": "It is a problem only if the patient sees the post and files a complaint"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Re-identification risk + policy bans make case posting unsafe even without names.",
+    "explanation": "Even without names, unusual clinical details, dates, or locations can let others identify a patient, so case stories from clinic are not safely de-identified. Employer social media policies usually ban them, and a violation occurs at disclosure whether or not anyone complains.",
     "distractorExplanations": {
-      "a": "TikTok is not the designated record set portal.",
-      "c": "Social posts are not the medical record — and still can violate privacy.",
-      "d": "HIPAA does not require public case dumps."
+      "a": "Removing names and dates may not de-identify a rare case; distinctive details can still identify the patient.",
+      "c": "HIPAA has no professional-verification exception; licensed clinicians face the same disclosure rules.",
+      "d": "A violation occurs at disclosure, whether or not the patient notices or complains."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep Wave 3 medical-scribe bank (rewritten from CMA remap; expanded 2026-10-06)."
