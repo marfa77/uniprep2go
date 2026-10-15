@@ -2613,7 +2613,7 @@ One ${deck.shortName} chapter per week, then citizenship or integration quiz loo
     .join("; ");
   const mock = getDeckPracticeMock(deck.slug);
   const mockLine = mock
-    ? ` Week four: free ${deck.shortName} mock (${mock.questionCount} questions) — review only missed table rows.`
+    ? ` Week four: the full ${deck.shortName} mock (${mock.questionCount} questions) — review only missed table rows.`
     : ` Week four: review-only passes through your lowest-count table rows.`;
 
   return `### Coverage focus for ${deck.shortName}

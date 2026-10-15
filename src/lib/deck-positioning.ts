@@ -1,3 +1,4 @@
+import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 import type { Deck } from "./decks";
 import { positioningOverrides } from "./deck-money-page-content";
 import { getDeckLinkedMock } from "./deck-seo";
@@ -50,7 +51,7 @@ function contentUnit(deck: Deck): string {
 function buildDefaultSummary(deck: Deck, cardLabel: string): string {
   const mock = getDeckLinkedMock(deck.slug);
   const mockNote = mock
-    ? ` Start with the free ${mock.questionCount}-question ${deck.shortName} practice test, then drill weak rows from the table.`
+    ? ` Start with the ${mockQuestionPhrase(mock.questionCount, `${deck.shortName} practice test`)}, then drill weak rows from the table.`
     : "";
 
   return `${cardLabel} for ${deck.shortName} matches the ${examCycleLabel(deck)} ${deck.facts.topics.toLowerCase()} in the coverage table — sized for daily review, not maximum download size.${mockNote}`;

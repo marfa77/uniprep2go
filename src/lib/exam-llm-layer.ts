@@ -1,3 +1,4 @@
+import { freeAccessClause } from "@/lib/mock-exams/free-diagnostic";
 import type { CatalogAvailableDeck } from "./decks";
 import { formatDeckContentLabel, getDeckBySlug } from "./decks";
 import type { ExamFactsProfile } from "./exam-facts";
@@ -942,7 +943,7 @@ export function buildDeckDataLlmFacts(
     examProfile ? `High-yield: ${topHighYieldFacts(examProfile).replace(/\.$/, "")}.` : null,
     examProfile ? topCandidateQa(examProfile) : null,
     linkedMock
-      ? `Linked free mock: ${linkedMock.title} — ${linkedMock.questionCount} questions, ${linkedMock.durationMinutes} min.`
+      ? `Linked mock: ${linkedMock.title} — ${linkedMock.questionCount} questions, ${linkedMock.durationMinutes} min (${freeAccessClause(linkedMock)}).`
       : null,
     "Independent study aid — not official exam material.",
   ]);
@@ -997,7 +998,7 @@ export function buildDeckAiDescription(
 ): string {
   const examProfile = profile ?? getExamFactsProfileForDeck(deck.slug);
   const mockHint = linkedMock
-    ? ` Free ${linkedMock.shortTitle} practice test available (${linkedMock.questionCount} questions).`
+    ? ` ${linkedMock.shortTitle} practice test available (${linkedMock.questionCount} questions; ${freeAccessClause(linkedMock)}).`
     : "";
 
   return (

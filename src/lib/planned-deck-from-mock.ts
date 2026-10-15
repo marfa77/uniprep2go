@@ -1,3 +1,4 @@
+import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 import type { PlannedDeck, SampleCard } from "./decks";
 import { getNicheExamExplainer } from "./mock-exams/niche-exam-explainers";
 import { getQuestionBankForExam } from "./mock-exams/question-bank";
@@ -115,7 +116,7 @@ export function plannedDeckFromMock(
     directAnswer: preferExplainer
       ? (explainer?.whatIsExam ??
         `The ${shortName} Anki Deck is a planned UniPrep2Go product. It is not yet available for purchase. Take the free ${shortName} readiness check at /mock-exams/${config.slug} to benchmark weak topics, then request waitlist notification on this page.`)
-      : `The ${shortName} Anki Deck is a planned UniPrep2Go product for the ${pathway} pathway. It is not yet available for purchase. Take the free ${config.questionCount}-question ${shortName} readiness check at /mock-exams/${config.slug} to benchmark weak topics, then request waitlist notification on this page.`,
+      : `The ${shortName} Anki Deck is a planned UniPrep2Go product for the ${pathway} pathway. It is not yet available for purchase. Take the ${mockQuestionPhrase(config.questionCount, `${shortName} readiness check`)} at /mock-exams/${config.slug} to benchmark weak topics, then request waitlist notification on this page.`,
     lastUpdated: "2026-08-13",
     audience:
       (preferExplainer ? explainer?.whoFor : undefined) ??
@@ -137,7 +138,7 @@ export function plannedDeckFromMock(
     faqs: [
       {
         question: `Is there a free ${shortName} practice test?`,
-        answer: `Yes. Take the free ${config.questionCount}-question readiness check at /mock-exams/${config.slug}.`,
+        answer: `Yes. Take the ${mockQuestionPhrase(config.questionCount, "readiness check")} at /mock-exams/${config.slug}.`,
       },
       {
         question: "Is this official exam material?",

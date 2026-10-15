@@ -4,6 +4,7 @@ import { isApkgPendingDeck } from "@/lib/anki-deck-launch";
 import type { AvailableDeck } from "@/lib/decks";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
+import { freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
 
 type DeckHeroBuyBlockProps = {
   deck: AvailableDeck;
@@ -59,7 +60,7 @@ export function DeckHeroBuyBlock({
             className="font-medium text-[#1f3a5f] underline underline-offset-4"
             href={`/mock-exams/${liveMock.slug}`}
           >
-            Take the free {liveMock.questionCount}-question practice test →
+            Take the {freeMockStartLabel(liveMock.questionCount)} →
           </Link>
         </p>
       ) : null}

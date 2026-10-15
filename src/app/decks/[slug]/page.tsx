@@ -73,6 +73,7 @@ import {
 } from "@/lib/page-layout";
 import { deckRobots, finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
+import { FREE_DIAGNOSTIC_QUESTIONS, freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
 
 export const revalidate = 3600;
 
@@ -328,11 +329,11 @@ export default async function DeckPage({
                     <>
                       {practiceMock ? (
                         <Link
-                          aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                          aria-label={`Try the ${freeMockStartLabel(practiceMock.questionCount, `${deck.shortName} practice test`)}`}
                           className={btnPrimary}
                           href={`/mock-exams/${practiceMock.slug}`}
                         >
-                          Try free {practiceMock.questionCount}-question practice test
+                          Try the {freeMockStartLabel(practiceMock.questionCount)}
                         </Link>
                       ) : null}
                       <DeckWaitlistCta
@@ -345,11 +346,11 @@ export default async function DeckPage({
                   ) : mockFirst && practiceMock ? (
                     <>
                       <Link
-                        aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                        aria-label={`Try the ${freeMockStartLabel(practiceMock.questionCount, `${deck.shortName} practice test`)}`}
                         className={btnPrimary}
                         href={`/mock-exams/${practiceMock.slug}`}
                       >
-                        Try free {practiceMock.questionCount}-question practice test
+                        Try the {freeMockStartLabel(practiceMock.questionCount)}
                       </Link>
                       <TrackedCheckoutLink
                         aria-label={`${checkoutCtaLabel} on ${availableDeck!.checkoutProvider}`}
@@ -374,11 +375,11 @@ export default async function DeckPage({
                       </TrackedCheckoutLink>
                       {practiceMock ? (
                         <Link
-                          aria-label={`Try free ${practiceMock.questionCount}-question ${deck.shortName} practice test`}
+                          aria-label={`Try the ${freeMockStartLabel(practiceMock.questionCount, `${deck.shortName} practice test`)}`}
                           className={btnSecondary}
                           href={`/mock-exams/${practiceMock.slug}`}
                         >
-                          Try free {practiceMock.questionCount}-question practice test
+                          Try the {freeMockStartLabel(practiceMock.questionCount)}
                         </Link>
                       ) : availableDeck?.checkoutProvider === "App Store" ? (
                         <Link
@@ -757,7 +758,9 @@ export default async function DeckPage({
         }
         practiceMockLabel={
           practiceMock
-            ? `Free ${practiceMock.questionCount}-q test`
+            ? practiceMock.questionCount > FREE_DIAGNOSTIC_QUESTIONS
+              ? `Free ${FREE_DIAGNOSTIC_QUESTIONS}-q diagnostic`
+              : `Free ${practiceMock.questionCount}-q test`
             : undefined
         }
         priceLabel={isPlanned ? "Planned · waitlist" : priceLabel}

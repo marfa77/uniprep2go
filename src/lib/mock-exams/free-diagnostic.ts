@@ -22,6 +22,20 @@ export function freeAccessClause(config: Pick<MockExamConfig, "questionCount" | 
     : "first mock free";
 }
 
+/** "free 60-question practice test" is no longer true past 25 Q: "60-question practice test (free 25-question version)". */
+export function mockQuestionPhrase(questionCount: number, noun: string) {
+  return questionCount > FREE_DIAGNOSTIC_QUESTIONS
+    ? `${questionCount}-question ${noun} (free ${FREE_DIAGNOSTIC_QUESTIONS}-question version)`
+    : `free ${questionCount}-question ${noun}`;
+}
+
+/** Button copy for the free entry point of a mock. */
+export function freeMockStartLabel(questionCount: number, noun = "practice test") {
+  return questionCount > FREE_DIAGNOSTIC_QUESTIONS
+    ? `free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic`
+    : `free ${questionCount}-question ${noun}`;
+}
+
 /** Largest-remainder split of `total` across weights; every weight > 0 gets at least 1 when possible. */
 export function allocateByWeight(weights: number[], total: number): number[] {
   const sum = weights.reduce((acc, weight) => acc + weight, 0);

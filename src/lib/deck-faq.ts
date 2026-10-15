@@ -1,3 +1,4 @@
+import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 import type { Deck, DeckFaq } from "./decks";
 import { getDeckSeoProfile } from "./deck-seo";
 import { getDeckPracticeMock } from "./deck-funnel";
@@ -31,7 +32,7 @@ function buildExamFaqs(deck: Deck): DeckFaq[] {
     {
       question: `What should I study first for ${deck.shortName}?`,
       answer: mock
-        ? `Take the free ${mock.questionCount}-question ${deck.shortName} practice test on UniPrep2Go, note weak topic scores, then drill those sections with this deck's ${deck.facts.cards} items. ${profile.intro}`
+        ? `Take the ${mockQuestionPhrase(mock.questionCount, `${deck.shortName} practice test`)} on UniPrep2Go, note weak topic scores, then drill those sections with this deck's ${deck.facts.cards} items. ${profile.intro}`
         : hasCoverageTable
           ? `Use the topic coverage table on this page to match ${deck.facts.topics.toLowerCase()}, then review ${deck.facts.cards} items daily. ${profile.intro}`
           : `Focus daily reviews on ${deck.facts.topics.toLowerCase()}, then rotate ${deck.facts.cards} items with spaced repetition. ${profile.intro}`,

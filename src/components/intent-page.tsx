@@ -6,6 +6,7 @@ import { formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getDeckPracticeMock } from "@/lib/deck-funnel";
 import { getIntentPageDecks, getIntentPagePrimaryDeck, type IntentPage } from "@/lib/intent-pages";
+import { freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
@@ -128,7 +129,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
               </Link>
               {practiceMock ? (
                 <Link className={btnSecondary} href={`/mock-exams/${practiceMock.slug}`}>
-                  Free {practiceMock.questionCount}-question practice test
+                  {capitalize(freeMockStartLabel(practiceMock.questionCount))}
                 </Link>
               ) : null}
             </>
@@ -245,4 +246,8 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
       <SiteFooter />
     </main>
   );
+}
+
+function capitalize(text: string) {
+  return text.charAt(0).toUpperCase() + text.slice(1);
 }

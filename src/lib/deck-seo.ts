@@ -1,3 +1,4 @@
+import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 import {
   formatDeckContentLabel,
   type CatalogAvailableDeck,
@@ -90,7 +91,7 @@ function defaultDescription(deck: SeoDeck, mock?: MockExamConfig): string {
   const content = contentLabel(deck);
   const topics = deck.facts.topics;
   const mockLine = mock
-    ? ` Includes a linked free ${mock.questionCount}-question ${mock.status === "live" ? "practice test" : "readiness check"} with topic scoring.`
+    ? ` Includes a linked ${mockQuestionPhrase(mock.questionCount, mock.status === "live" ? "practice test" : "readiness check")} with topic scoring.`
     : "";
 
   if (deck.category === "finance" || deck.category === "professional") {

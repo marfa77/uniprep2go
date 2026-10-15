@@ -4,6 +4,7 @@ import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { getDeckLongDescription, formatExamFocusedContent } from "@/lib/deck-page-copy";
 import { getDeckLinkedMock, getDeckLinkedMocks } from "@/lib/deck-seo";
 import { getDeckSeoProfile } from "@/lib/deck-seo";
+import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 
 type DeckSeoSectionsProps = {
   deck: Deck;
@@ -40,7 +41,7 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
           {linkedMocks.length > 1
             ? `${linkedMocks.length} linked free country readiness checks`
             : linkedMock
-              ? `Linked free ${linkedMock.questionCount}-question practice test`
+              ? `Linked ${mockQuestionPhrase(linkedMock.questionCount, "practice test")}`
               : "Independent supplement to courses and question banks"}
         </li>
       </ul>
