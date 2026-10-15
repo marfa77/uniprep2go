@@ -3489,21 +3489,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A commercial director on a main contractor framework asks you to review three tender returns for a £12m school extension. Returns range £11.4m–£13.1m. What is your best next step?",
+        question: "An employer procures a £40m office on unamended JCT Design and Build 2016, and the concept architect is novated to the contractor. Who carries the design risk?",
         answer:
-          "Correct: (b) Analyse scope compliance, qualifications, preliminaries, risk, programme, and resource assumptions before recommendation Commercial management includes rigorous tender return analysis beyond headline price.",
+          "Correct: (a) The contractor, for design it completes, but not design within the ERs Under JCT DB 2016 the contractor completes the design and is liable for it with reasonable skill and care. Clause 2.11 says the contractor is not responsible for the contents of the Employer's Requirements or for checking design in them, which is why employers often amend the form to pass that risk on.",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-1.webp",
       },
       {
-        question: "An item description reads 'Excavate foundation trenches, max depth 1.2m'. The site requires 2.1m deep trenches in rock. How should quantification treat this?",
+        question: "The client switches a tender from NEC4 Option B to Option A, so the priced document becomes an activity schedule instead of a bill of quantities. What quantification focus changes?",
         answer:
-          "Correct: (b) Amend description and measure additional depth/rock as separate items or provisional sum per tender strategy BOQ preparation must align descriptions and quantities with site and design information.",
+          "Correct: (a) Price against defined activities/milestones with scope references Option A is priced on an activity schedule: defined activities or milestones linked to the Scope, paid as each activity is completed. Option B remeasures a bill of quantities, so the quantification focus moves from measured items to activity pricing.",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-2.webp",
       },
       {
-        question: "Under NEC4 ECC Option C, target cost mechanics mean",
+        question: "A university client wants lifecycle cost advice for cladding options: aluminium rainscreen vs brick slip. Which analysis best reflects Level 3 design economics?",
         answer:
-          "Correct: (b) Defined cost plus fee with pain/gain share against agreed target at completion NEC Option C combines target cost with defined cost and pain/gain share.",
+          "Correct: (d) Compare capital cost, maintenance, replacement cycles, energy performance, and whole-life cost Level 3 design economics integrates capital and operational costs for informed option selection. The comparison should run over an agreed study period (NRM3 / BS ISO 15686-5).",
         imageUrl: "/samples/mrics-quantity-surveying-anki-deck-sample-3.webp",
       },
     ],

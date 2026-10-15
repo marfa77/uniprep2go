@@ -3298,5 +3298,665 @@
     },
     "difficulty": "medium",
     "sourceNote": "Converted from UniPrep2Go FRM Part 1 Anki deck card (frm_part1_v2_authored.csv, VRM-16 Delta-Gamma P&L Approximation) into a scored MCQ, 2026-10-09."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-021",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A portfolio returned 12% last year with a beta of 1.5. The risk-free rate was 3%. What is the portfolio's Treynor ratio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "6.0%"
+      },
+      {
+        "id": "b",
+        "text": "8.0%"
+      },
+      {
+        "id": "c",
+        "text": "9.0%"
+      },
+      {
+        "id": "d",
+        "text": "13.5%"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Treynor ratio = (portfolio return − risk-free rate) ÷ beta = (12% − 3%) ÷ 1.5 = 6.0%. It measures excess return per unit of systematic risk, so it suits a portfolio that is one part of a diversified whole.",
+    "distractorExplanations": {
+      "b": "Divides the total 12% return by beta and forgets to subtract the 3% risk-free rate first.",
+      "c": "That is the 9% excess return before dividing by beta; Treynor scales excess return per unit of beta.",
+      "d": "Multiplies the 9% excess return by beta instead of dividing by it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-022",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A fund returned 10% against a minimum acceptable return of 4%. Its total standard deviation is 12% and its downside deviation below 4% is 8%. What is its Sortino ratio?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.50"
+      },
+      {
+        "id": "b",
+        "text": "0.75"
+      },
+      {
+        "id": "c",
+        "text": "0.83"
+      },
+      {
+        "id": "d",
+        "text": "1.25"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sortino ratio = (return − minimum acceptable return) ÷ downside deviation = (10% − 4%) ÷ 8% = 0.75. Unlike Sharpe, it penalizes only volatility below the threshold, so upside swings do not count as risk.",
+    "distractorExplanations": {
+      "a": "Divides the 6% excess return by total standard deviation, which is the Sharpe-style denominator, not downside deviation.",
+      "c": "Divides the raw 10% return by 12% total volatility, ignoring both the 4% threshold and downside deviation.",
+      "d": "Divides the raw 10% return by downside deviation and forgets to subtract the 4% minimum acceptable return."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-023",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "A GARP member is asked to score vendors for a new risk system. One bidder employs her brother as head of sales. Under the GARP Code of Conduct, what should she do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disclose the relationship to her employer before taking part"
+      },
+      {
+        "id": "b",
+        "text": "Suspend her GARP membership until the vendor decision is made"
+      },
+      {
+        "id": "c",
+        "text": "Take part if she believes her judgment is unaffected by it"
+      },
+      {
+        "id": "d",
+        "text": "Tell the vendor she will treat all bidders the same and continue"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The GARP Code of Conduct requires members to make full and fair disclosure of all matters that could reasonably be expected to impair independence and objectivity. She should disclose the family link to her employer, which can then decide whether she recuses herself.",
+    "distractorExplanations": {
+      "b": "The Code does not require suspending membership; it requires full disclosure and appropriate handling of the conflict.",
+      "c": "The Code requires disclosure of conflicts that could reasonably impair objectivity, whatever the member believes about her own judgment.",
+      "d": "Disclosure is owed to the employer and other affected parties; reassuring the bidder does not address the conflict."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-foundations-024",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "foundations",
+    "prompt": "During a market shock, a global bank needs three days to compute its total exposure to one counterparty because each business line keeps its data in separate systems. Which standard most directly targets this weakness?",
+    "options": [
+      {
+        "id": "a",
+        "text": "BCBS 239 principles on risk data aggregation"
+      },
+      {
+        "id": "b",
+        "text": "Basel II Pillar 3 public disclosure rules"
+      },
+      {
+        "id": "c",
+        "text": "Basel III liquidity coverage ratio requirements"
+      },
+      {
+        "id": "d",
+        "text": "Dodd-Frank Volcker rule trading restrictions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BCBS 239 sets principles for risk data aggregation and risk reporting: accurate, complete and timely firmwide data, including under stress. It was written after 2008, when many banks could not quickly total their exposures to failing counterparties such as Lehman.",
+    "distractorExplanations": {
+      "b": "Pillar 3 covers what banks disclose to the market, not how fast they aggregate risk data internally.",
+      "c": "The LCR sets a buffer of high-quality liquid assets against 30-day stressed outflows; it does not govern internal data aggregation.",
+      "d": "The Volcker rule limits proprietary trading and fund investments; it says nothing about firmwide exposure reporting."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-021",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "Asset X has return volatility of 6% and asset Y 8%. The covariance of their returns is 0.0024. What is the correlation between X and Y?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0.04"
+      },
+      {
+        "id": "b",
+        "text": "0.375"
+      },
+      {
+        "id": "c",
+        "text": "0.50"
+      },
+      {
+        "id": "d",
+        "text": "0.667"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Correlation = covariance ÷ (σX × σY) = 0.0024 ÷ (0.06 × 0.08) = 0.0024 ÷ 0.0048 = 0.50. Dividing by one variance instead gives a regression slope, which is scaled by the volatility ratio.",
+    "distractorExplanations": {
+      "a": "Divides the covariance by only one volatility (0.06) instead of the product of both volatilities.",
+      "b": "Divides by Y's variance (0.0064), which gives the slope of X regressed on Y, not the correlation.",
+      "d": "Divides by X's variance (0.0036), which gives the beta of Y on X rather than the correlation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-022",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A desk's daily returns show excess kurtosis of 6 and roughly zero skewness. It computes 99% VaR assuming normally distributed returns. What is the most likely consequence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Normal VaR likely understates the size of tail losses"
+      },
+      {
+        "id": "b",
+        "text": "Normal VaR likely overstates tail losses, since tails are thin"
+      },
+      {
+        "id": "c",
+        "text": "Normal VaR stays accurate as long as skewness is zero"
+      },
+      {
+        "id": "d",
+        "text": "VaR is unchanged, because it depends only on the volatility"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excess kurtosis above zero means fat tails: extreme moves happen more often than a normal distribution with the same volatility predicts. A normal VaR at 99% therefore tends to understate tail losses, and backtests show more exceptions than expected.",
+    "distractorExplanations": {
+      "b": "Positive excess kurtosis means fatter tails than the normal, not thinner ones, so extreme losses are more likely.",
+      "c": "Zero skewness only means the distribution is symmetric; kurtosis still puts extra mass in both tails.",
+      "d": "That holds only if returns really are normal; with fat tails the 99% quantile lies further out than 2.33 standard deviations."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-023",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "An analyst regresses a stock's log price on its own lagged log price and gets a slope of 0.998, statistically indistinguishable from 1. What is the appropriate next step for modelling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Model the first differences (returns), which are stationary"
+      },
+      {
+        "id": "b",
+        "text": "Remove a linear time trend and model the residuals"
+      },
+      {
+        "id": "c",
+        "text": "Keep the price level, since OLS stays consistent with a time trend"
+      },
+      {
+        "id": "d",
+        "text": "Add more lags of the price level to remove the unit root"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A slope of 1 on the lagged level indicates a unit root: the log price behaves like a random walk and is not covariance stationary. Taking first differences turns log prices into log returns, which are stationary and can be modelled with standard time-series tools.",
+    "distractorExplanations": {
+      "b": "Detrending suits a trend-stationary series; a random walk needs differencing, not detrending.",
+      "c": "A unit root makes levels non-stationary, and regressions on such levels risk spurious results with misleading t-statistics.",
+      "d": "Extra lags do not remove a unit root; the series stays non-stationary until it is differenced."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-quant-analysis-024",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "quant-analysis",
+    "prompt": "A regression of monthly sales includes an intercept plus four dummy variables, one for each calendar quarter. What problem does this create, and how is it fixed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Serial correlation; switch to Newey-West standard errors instead"
+      },
+      {
+        "id": "b",
+        "text": "Heteroskedasticity; use White robust standard errors"
+      },
+      {
+        "id": "c",
+        "text": "Omitted variable bias; add a fifth seasonal dummy"
+      },
+      {
+        "id": "d",
+        "text": "Perfect multicollinearity; drop one dummy or the intercept"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The four quarterly dummies always sum to 1, which equals the intercept column, so the regressors are perfectly collinear and OLS cannot estimate the coefficients. Using three dummies with an intercept (or four without) fixes the dummy variable trap.",
+    "distractorExplanations": {
+      "a": "Newey-West addresses autocorrelated errors; it cannot fix an exact linear dependence among regressors.",
+      "b": "Robust standard errors fix unequal error variance; the problem here is that the regressors are exact linear combinations.",
+      "c": "Adding another dummy makes the collinearity worse; the four dummies already sum to the intercept column."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-031",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A Treasury bond is quoted at 98-16 per 100 face, and accrued interest is 1.25 per 100 face. What is the cash price for $1,000,000 face value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$972,500"
+      },
+      {
+        "id": "b",
+        "text": "$985,000"
+      },
+      {
+        "id": "c",
+        "text": "$997,500"
+      },
+      {
+        "id": "d",
+        "text": "$1,010,000"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Treasury prices are quoted clean in 32nds: 98-16 = 98 + 16/32 = 98.5 per 100. The cash (dirty) price = clean + accrued = 98.5 + 1.25 = 99.75 per 100, or $997,500 on $1,000,000 face.",
+    "distractorExplanations": {
+      "a": "Subtracts accrued interest from the quoted price; the buyer pays accrued interest on top of the clean price.",
+      "b": "That is the clean price only (98.5% of face); the cash or dirty price adds accrued interest.",
+      "d": "Adds the accrued interest twice (98.5 + 2 × 1.25); the quote is clean, so accrued is added only once."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-032",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "An investor owns a stock bought at $40 and sells a $45 call on it for $2 per share. What is the maximum profit per share at expiry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$2"
+      },
+      {
+        "id": "b",
+        "text": "$5"
+      },
+      {
+        "id": "c",
+        "text": "$7"
+      },
+      {
+        "id": "d",
+        "text": "$38"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A covered call caps the upside at the strike. Maximum profit = (strike − purchase price) + premium = ($45 − $40) + $2 = $7, reached when the stock ends at or above $45. The premium also lowers the break-even to $38.",
+    "distractorExplanations": {
+      "a": "Counts only the premium; the stock can also gain up to $5 before the short call caps it at $45.",
+      "b": "Counts only the stock gain up to the strike and forgets the $2 premium received.",
+      "d": "That is the break-even stock price ($40 − $2), not the maximum profit."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-033",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "How does a plain fixed-for-fixed currency swap differ from a plain vanilla interest rate swap?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both legs are paid in one currency at two different rates"
+      },
+      {
+        "id": "b",
+        "text": "Only net interest is paid, and no principal is ever exchanged"
+      },
+      {
+        "id": "c",
+        "text": "It carries no credit exposure, as the two principals offset"
+      },
+      {
+        "id": "d",
+        "text": "Principal is exchanged at the start and the end"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "In a currency swap the parties exchange principal in two currencies at inception, pay interest in the currency they received, and re-exchange the same principal at maturity. Because the final exchange is at the original rate, currency swaps carry far more credit exposure than interest rate swaps of the same notional.",
+    "distractorExplanations": {
+      "a": "That is an interest rate swap; a currency swap pays each leg in a different currency.",
+      "b": "That describes an interest rate swap, where notional is never exchanged because both legs are in one currency.",
+      "c": "The final principal exchange in two currencies creates large exposure when exchange rates move."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-034",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "The crude oil futures curve is in steep contango. A long-only investor holds the front-month contract and rolls it each month. What does the roll do to returns?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negative roll yield, since each roll buys a pricier contract"
+      },
+      {
+        "id": "b",
+        "text": "No roll effect, since futures always converge to spot anyway"
+      },
+      {
+        "id": "c",
+        "text": "Positive roll yield, since futures prices rise toward the spot"
+      },
+      {
+        "id": "d",
+        "text": "A roll gain, because storage costs are refunded on expiry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In contango, deferred futures trade above the expiring contract. Rolling a long position means selling the cheaper expiring contract and buying the dearer next one, so the investor earns a negative roll yield even if the spot price stays flat.",
+    "distractorExplanations": {
+      "b": "Convergence is exactly what creates the roll cost: the investor sells low expiring contracts and buys higher deferred ones.",
+      "c": "In contango futures prices sit above spot and drift down toward it as expiry nears, which hurts a long holder.",
+      "d": "Storage costs explain why contango exists; they are not refunded to futures holders."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-035",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "Why does an ETF usually trade close to its net asset value, while a closed-end fund can trade at a lasting discount to NAV?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ETF shares trade only once a day at the closing NAV"
+      },
+      {
+        "id": "b",
+        "text": "Closed-end funds must pay out all income as dividends"
+      },
+      {
+        "id": "c",
+        "text": "The SEC requires ETF prices to be reset to NAV daily"
+      },
+      {
+        "id": "d",
+        "text": "Authorized participants create and redeem ETF shares"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Authorized participants can swap baskets of the underlying securities for new ETF shares, or redeem shares for the basket, whenever the price drifts from NAV. That arbitrage keeps the gap small. Closed-end funds have a fixed share count, so supply and demand can hold the price below NAV.",
+    "distractorExplanations": {
+      "a": "That describes open-end mutual funds; ETFs trade intraday on an exchange at market prices.",
+      "b": "Payout rules do not explain the discount; closed-end shares simply cannot be created or redeemed at NAV.",
+      "c": "No regulator sets ETF prices; arbitrage by authorized participants keeps them near NAV."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-financial-markets-036",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "financial-markets",
+    "prompt": "A company buys a caplet on $10 million notional with a strike of 4%. The three-month reference rate sets at 5% for a 0.25-year period. What is the caplet payoff, paid in arrears?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$0"
+      },
+      {
+        "id": "b",
+        "text": "$25,000"
+      },
+      {
+        "id": "c",
+        "text": "$100,000"
+      },
+      {
+        "id": "d",
+        "text": "$125,000"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Caplet payoff = notional × max(rate − strike, 0) × accrual fraction = $10,000,000 × (5% − 4%) × 0.25 = $25,000. A cap is a strip of such caplets, protecting a floating-rate borrower against rising rates.",
+    "distractorExplanations": {
+      "a": "A caplet pays when the rate is above the strike; a floorlet would pay when it is below.",
+      "c": "Uses the 1% rate gap on the full notional without the 0.25-year accrual fraction.",
+      "d": "Applies the whole 5% rate instead of the 1% excess over the 4% strike."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-031",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A one-year rating transition matrix has: investment grade (IG) stays IG 95%, moves to high yield (HY) 4%, defaults 1%; HY moves to IG 5%, stays HY 85%, defaults 10%. What is the two-year default probability for a bond rated IG today?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.95%"
+      },
+      {
+        "id": "b",
+        "text": "1.99%"
+      },
+      {
+        "id": "c",
+        "text": "2.35%"
+      },
+      {
+        "id": "d",
+        "text": "5.00%"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Two-year PD = year-1 default + P(IG) × PD(IG) + P(HY) × PD(HY) = 1% + 0.95 × 1% + 0.04 × 10% = 1% + 0.95% + 0.40% = 2.35%. Migration matters: the small chance of a downgrade adds 0.40 points because HY bonds default ten times as often.",
+    "distractorExplanations": {
+      "a": "Adds the year-one default to the stay-IG path (0.95 × 1%) but forgets the downgrade path through HY (0.04 × 10%).",
+      "b": "Assumes a constant 1% annual PD (1 − 0.99²), ignoring that a downgraded bond defaults far more often.",
+      "d": "Treats the 4% downgrade as a default and adds it to the 1% one-year PD."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-032",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "An options book has a vega of +$12,000 per 1 percentage point of implied volatility. Implied volatility falls from 22% to 19%. What is the approximate P&L from vega?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−$36,000"
+      },
+      {
+        "id": "b",
+        "text": "−$12,000"
+      },
+      {
+        "id": "c",
+        "text": "−$3,600"
+      },
+      {
+        "id": "d",
+        "text": "+$36,000"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Vega P&L ≈ vega × change in implied volatility = $12,000 × (19 − 22) = −$36,000. Positive vega means the book is long volatility, typically from owning options, so a fall in implied volatility costs money.",
+    "distractorExplanations": {
+      "b": "Uses a one-point move; implied volatility fell by three points, so the loss is three times vega.",
+      "c": "Treats the move as 0.3 points instead of 3 percentage points.",
+      "d": "Gets the sign wrong: a long-vega book gains when volatility rises and loses when it falls."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-033",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A bond has a Macaulay duration of 6.0 years and a yield to maturity of 8% with annual compounding. What is its modified duration?",
+    "options": [
+      {
+        "id": "a",
+        "text": "5.52"
+      },
+      {
+        "id": "b",
+        "text": "5.56"
+      },
+      {
+        "id": "c",
+        "text": "6.00"
+      },
+      {
+        "id": "d",
+        "text": "6.48"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modified duration = Macaulay duration ÷ (1 + yield per period) = 6.0 ÷ 1.08 = 5.56. It gives the approximate percentage price change for a 1-point change in yield, so a 1% rise cuts the price by about 5.56%.",
+    "distractorExplanations": {
+      "a": "Subtracts 8% of the duration (6 × 0.92) instead of dividing by 1 plus the yield.",
+      "c": "Treats Macaulay and modified duration as equal; they are equal only at a zero yield.",
+      "d": "Multiplies by 1.08 instead of dividing by it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-034",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "Why are sovereign default rates on local-currency debt historically lower than on foreign-currency debt?",
+    "options": [
+      {
+        "id": "a",
+        "text": "IMF loans can be used only to repay local-currency bonds"
+      },
+      {
+        "id": "b",
+        "text": "Local-currency bonds rank senior in a sovereign bankruptcy"
+      },
+      {
+        "id": "c",
+        "text": "Rating agencies do not rate sovereign local-currency debt"
+      },
+      {
+        "id": "d",
+        "text": "The government can create its own currency to repay"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A government can tax or create its own currency to meet local-currency debt, at the cost of inflation, but must earn or borrow foreign currency to pay external debt. This is why agencies often rate a sovereign's local-currency debt above its foreign-currency debt.",
+    "distractorExplanations": {
+      "a": "IMF support is usually aimed at external, foreign-currency obligations, not local-currency debt.",
+      "b": "There is no bankruptcy court for sovereigns, so seniority in a liquidation does not decide repayment.",
+      "c": "Agencies do rate local-currency debt, and usually rate it higher than foreign-currency debt."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-035",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "In the Black-Scholes-Merton model, a European call on a non-dividend-paying stock has N(d1) = 0.62. What is the delta of a European put with the same strike and expiry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "−0.62"
+      },
+      {
+        "id": "b",
+        "text": "−0.38"
+      },
+      {
+        "id": "c",
+        "text": "0.38"
+      },
+      {
+        "id": "d",
+        "text": "0.62"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "For a non-dividend-paying stock, put delta = N(d1) − 1 = 0.62 − 1 = −0.38. This follows from put-call parity: call delta minus put delta equals 1, the delta of the stock itself.",
+    "distractorExplanations": {
+      "a": "Simply negates the call delta; put delta is N(d1) − 1, not −N(d1).",
+      "c": "Gets the magnitude right but the sign wrong: a long put loses value when the stock rises.",
+      "d": "That is the call delta, N(d1), not the put delta."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "frm-part-1-readiness-check-valuation-models-036",
+    "examSlug": "frm-part-1-readiness-check",
+    "topicId": "valuation-models",
+    "prompt": "A bank holds $10 million of a corporate bond with a spread duration of 5. The issuer is downgraded and its credit spread widens by 80 basis points without a default. What is the approximate mark-to-market loss?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$40,000"
+      },
+      {
+        "id": "b",
+        "text": "$80,000"
+      },
+      {
+        "id": "c",
+        "text": "$400,000"
+      },
+      {
+        "id": "d",
+        "text": "$4,000,000"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Price change ≈ −spread duration × change in spread × position = −5 × 0.008 × $10,000,000 = −$400,000. This is credit migration risk: a downgrade causes a loss through spread widening even though the issuer keeps paying.",
+    "distractorExplanations": {
+      "a": "Uses 8 basis points instead of 80; 80 bp is 0.008 in decimal.",
+      "b": "Multiplies notional by the spread change but forgets the spread duration of 5.",
+      "d": "Treats 80 basis points as 8% rather than 0.8%."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   }
 ]

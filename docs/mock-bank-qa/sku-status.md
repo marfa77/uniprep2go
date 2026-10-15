@@ -6,9 +6,9 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 38 | 23 |
-| thin-bank | 1 | 1 |
-| unreviewed | 1 | 1 |
+| ok | 40 | 25 |
+| thin-bank | 0 | 0 |
+| unreviewed | 0 | 0 |
 | small-bank | 29 | 5 |
 | point-fix | 0 | 0 |
 | rewrite | 110 | 34 |
@@ -160,8 +160,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `unarmed-security-officer-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `veterinary-assistant-readiness-check` | planned | 60 / 60 | 2026-10-02 | bank 60 for 60Q session |
 | small-bank | `wastewater-operator-1-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
-| unreviewed | `mrics-quantity-surveying-readiness-check` | live | 50 / 250 | — | no content review in ledger |
-| thin-bank | `frm-part-1-readiness-check` | live | 50 / 100 | 2026-10-15 | bank 100 < 120 |
 | ok | `abo-optician-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `ace-cpt-readiness-check` | live | 60 / 300 | 2026-10-14 | — |
 | ok | `acsm-cpt-readiness-check` | live | 60 / 120 | 2026-10-12 | — |
@@ -171,11 +169,13 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
+| ok | `frm-part-1-readiness-check` | live | 50 / 120 | 2026-10-15 | — |
 | ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-15 | — |
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `life-and-health-insurance-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `mrics-quantity-surveying-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-14 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |

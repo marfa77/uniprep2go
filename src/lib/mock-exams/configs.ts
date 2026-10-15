@@ -317,12 +317,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     officialSourceNote:
       "Readiness check aligned to 2026 FRM Part 1 topic weights. Official exam: 100 multiple-choice questions, 4 hours; GARP does not publish a fixed passing score and sets the cutoff each cycle. UniPrep2Go readiness target: 70%. Not official GARP exam material.",
     questionSourceNote:
-      "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 100-item bank weighted 20 Foundations / 20 Quantitative Analysis / 30 Financial Markets and Products / 30 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Half were written for the mock; half are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50.",
+      "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 120-item bank weighted 24 Foundations / 24 Quantitative Analysis / 36 Financial Markets and Products / 36 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Most were written for the mock; the rest are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50 in the topic mix, so retakes see new questions.",
     disclaimer: financeDisclaimer,
     description:
-      "A 50-question FRM Part 1 readiness diagnostic (free 25-question version) drawn from a 100-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "A 50-question FRM Part 1 readiness diagnostic (free 25-question version) drawn from a 120-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-10-09",
+    lastUpdated: "2026-10-15",
   },
   {
     slug: "series-7-readiness-check",
@@ -1685,7 +1685,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 50-question MRICS Quantity Surveying readiness diagnostic across QS core competencies — cost planning, measurement, contracts, procurement, project finance, and ethics. Independent prep, not RICS material.",
     examBody: "RICS — Quantity Surveying and Construction pathway",
-    lastUpdated: "2026-07-24",
+    lastUpdated: "2026-10-15",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the MRICS Quantity Surveying readiness check (250 cards across five QS competency groups; 50-question timed session).",
   },
