@@ -1720,9 +1720,9 @@
      "group": "Free cash flow valuation",
      "name": "FCFF and FCFE from CFO",
      "latex": "\\begin{gathered} FCFF = CFO + Int(1-t) - FCInv \\\\ FCFE = CFO - FCInv + \\text{Net borrowing} \\end{gathered}",
-     "vars": "CFO already nets working-capital investment and (US GAAP) interest paid; under IFRS, interest classified in CFF is not added back",
+     "vars": "CFO already nets working-capital investment and (US GAAP) interest paid; if an IFRS filer put interest paid in CFF, skip the Int(1 − t) add-back and subtract Int × t instead, because the interest tax shield is still inside CFO",
      "use": "Quickest route from the cash flow statement, because CFO already includes noncash charges and working-capital changes.",
-     "trap": "Subtracting WCInv again from CFO, or adding back interest that an IFRS filer already classified in financing cash flow."
+     "trap": "Subtracting WCInv again from CFO, or adding after-tax interest back to an IFRS CFO that already excludes interest paid."
     },
     {
      "id": "ev-fcfe-fcff-ni",
