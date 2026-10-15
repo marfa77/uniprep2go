@@ -1,3 +1,5 @@
+import { freeMockStatLine } from "./free-diagnostic";
+
 type MockStatInput = {
   questionCount: number;
   durationMinutes: number;
@@ -9,6 +11,7 @@ export function mockReadinessTargetLabel(passPercent: number): string {
   return `UniPrep2Go readiness target: ${passPercent}%`;
 }
 
-export function formatMockStatLine({ questionCount, durationMinutes, passPercent }: MockStatInput): string {
-  return `${questionCount}-question diagnostic · ${durationMinutes} min · ${passPercent}% readiness target`;
+/** Card line for a live mock: what the free first attempt is, and the full Mock Pass length. */
+export function formatMockStatLine({ questionCount, durationMinutes }: MockStatInput): string {
+  return freeMockStatLine({ questionCount, durationMinutes });
 }

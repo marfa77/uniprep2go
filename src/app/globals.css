@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source not "../../tmp";
 
 :root {
   --background: #f7f3ea;
@@ -21,6 +22,12 @@ body {
 ::selection {
   background: #1f3a5f;
   color: #fffaf0;
+}
+
+/* The mock session/result shell covers the landing page; hide the landing so its list-price CTAs
+   and pre-start stats are not live underneath. */
+html[data-mock-session] [data-mock-landing] {
+  display: none;
 }
 
 @media (prefers-reduced-motion: reduce) {

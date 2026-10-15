@@ -22,8 +22,42 @@ export function officialPassLineFromFacts(facts: ExamFactsFields | undefined | n
   };
 }
 
+/** Free 25-question run: per-topic samples are tiny, so labels stay descriptive, never "Critical". */
+export type DiagnosticTopicLabel = "too_few" | "needs_work" | "borderline" | "on_track";
+
+export const DIAGNOSTIC_MIN_TOPIC_QUESTIONS = 3;
+
+export function diagnosticTopicLabel(topic: { total: number; scorePercent: number }): DiagnosticTopicLabel {
+  if (topic.total < DIAGNOSTIC_MIN_TOPIC_QUESTIONS) return "too_few";
+  if (topic.scorePercent < 50) return "needs_work";
+  if (topic.scorePercent < 70) return "borderline";
+  return "on_track";
+}
+
+export const DIAGNOSTIC_TOPIC_LABEL_TEXT: Record<DiagnosticTopicLabel, string> = {
+  too_few: "Too few questions to judge",
+  needs_work: "Needs work",
+  borderline: "Borderline",
+  on_track: "On track",
+};
+
+export function diagnosticSampleNote(
+  topics: Array<{ total: number }>,
+  totalCount: number,
+  fullQuestionCount: number,
+): string {
+  const sizes = topics.map((topic) => topic.total).filter((total) => total > 0);
+  const min = sizes.length > 0 ? Math.min(...sizes) : 0;
+  const max = sizes.length > 0 ? Math.max(...sizes) : 0;
+  const perTopic = min === max ? `${min} per topic` : `${min}–${max} per topic`;
+  return `Based on ${totalCount} questions (${perTopic}) — a quick read, not a verdict. Run the full ${fullQuestionCount}-question mock for a reliable topic score.`;
+}
+
 export type ResultUpsellInput = {
-  report: Pick<MockReport, "verdict" | "scorePercent" | "passThresholdPercent" | "topicResults" | "totalCount">;
+  report: Pick<
+    MockReport,
+    "verdict" | "scorePercent" | "passThresholdPercent" | "topicResults" | "totalCount" | "repairPlan"
+  >;
   isFreeDiagnostic: boolean;
   /** Full Mock Pass session length for this exam. */
   fullQuestionCount: number;
@@ -39,6 +73,8 @@ export type ResultUpsellInput = {
 export type ResultUpsell = {
   tone: "pass" | "risk" | "fail";
   headline: string;
+  /** Free diagnostic only: how much weight 25 questions can carry. */
+  sampleNote: string | null;
   reality: string;
   misses: string;
   close: string;
@@ -53,20 +89,17 @@ function isPassVerdict(verdict: MockReport["verdict"]) {
   return verdict === "PASS" || verdict === "READINESS PASS";
 }
 
-function missLine(topics: ResultUpsellInput["report"]["topicResults"], fullQuestionCount: number) {
-  const missed = topics
-    .map((topic) => ({ label: topic.label, misses: topic.missedQuestionIds.length, gap: topic.targetPercent - topic.scorePercent }))
-    .filter((topic) => topic.misses > 0)
-    .sort((a, b) => b.misses - a.misses || b.gap - a.gap)
-    .slice(0, 2);
-  if (missed.length === 0) {
-    return `You missed nothing on this sample — confirm it holds on the full ${fullQuestionCount}-question mock.`;
+/** Same ranked list as the Repair plan, the Fix CTA and the deck `?topics=` link. */
+export function biggestGapLabels(repairPlan: ResultUpsellInput["report"]["repairPlan"]): string[] {
+  return repairPlan.filter((item) => item.scorePercent < item.targetPercent).map((item) => item.topicLabel);
+}
+
+function gapLine(repairPlan: ResultUpsellInput["report"]["repairPlan"], fullQuestionCount: number) {
+  const gaps = biggestGapLabels(repairPlan);
+  if (gaps.length === 0) {
+    return `No topic fell below target on this sample — confirm it holds on the full ${fullQuestionCount}-question mock.`;
   }
-  const part = (topic: (typeof missed)[number], first: boolean) =>
-    `${topic.misses}${first ? ` question${topic.misses === 1 ? "" : "s"}` : ""} in ${topic.label}`;
-  return missed.length === 1
-    ? `You missed ${part(missed[0]!, true)}.`
-    : `You missed ${part(missed[0]!, true)} and ${part(missed[1]!, false)}.`;
+  return `Your biggest gap${gaps.length === 1 ? "" : "s"}: ${gaps.join(", ")}.`;
 }
 
 /** Result-screen copy: never reassuring, always points at the weak topics and the next paid step. */
@@ -76,7 +109,9 @@ export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
   const sample = isFreeDiagnostic ? `the ${report.totalCount}-question diagnostic` : "this mock";
 
   const headline = pass
-    ? `You scored ${report.scorePercent}% — PASS on ${sample}.`
+    ? isFreeDiagnostic
+      ? `You scored ${report.scorePercent}% — at or above the ${report.passThresholdPercent}% target on ${sample}.`
+      : `You scored ${report.scorePercent}% — PASS on ${sample}.`
     : report.verdict === "BORDERLINE RISK"
       ? `You scored ${report.scorePercent}% — borderline on ${sample}, not yet safe.`
       : `You scored ${report.scorePercent}% — below the ${report.passThresholdPercent}% readiness target.`;
@@ -98,23 +133,29 @@ export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
     ? ` for ${deck.priceLabel}${discounted ? ` (${deck.percentOff}% off after your diagnostic)` : ""}`
     : "";
   const close = deck?.available
-    ? `Don't leave exam day to chance — drill these exact topics with ${cards}${price}.`
-    : `Don't leave exam day to chance — rerun the full ${fullQuestionCount}-question mock after a focused review of these topics.`;
+    ? pass
+      ? `Next step: keep these topics fresh with ${cards}${price} so the score holds on exam day.`
+      : `Next step: drill these exact topics with ${cards}${price}.`
+    : `Next step: rerun the full ${fullQuestionCount}-question mock after a focused review of these topics.`;
 
   const deckCtaLabel = deck?.available
-    ? `Drill weak topics: ${deck.cardCount ? `${deck.cardCount} cards` : "Anki deck"}${deck.priceLabel ? ` — ${deck.priceLabel}` : ""}`
+    ? `${pass ? "Lock it in" : "Drill weak topics"}: ${deck.cardCount ? `${deck.cardCount} cards` : "Anki deck"}${deck.priceLabel ? ` — ${deck.priceLabel}` : ""}`
     : null;
+  const fullMockVerb = pass && isFreeDiagnostic ? "Confirm on" : "Take";
   const mockCtaLabel = !input.paywallEnabled
     ? `Retake the ${fullQuestionCount}-question mock`
     : input.passRemaining > 0
-      ? `Take the full ${fullQuestionCount}-question mock · ${input.passRemaining} attempt${input.passRemaining === 1 ? "" : "s"} left`
-      : `Take the full ${fullQuestionCount}-question mock · $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
+      ? `${fullMockVerb} the full ${fullQuestionCount}-question mock · ${input.passRemaining} attempt${input.passRemaining === 1 ? "" : "s"} left`
+      : `${fullMockVerb} the full ${fullQuestionCount}-question mock · $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
 
   return {
-    tone: pass ? "pass" : report.verdict === "BORDERLINE RISK" ? "risk" : "fail",
+    tone: pass ? "pass" : isFreeDiagnostic || report.verdict === "BORDERLINE RISK" ? "risk" : "fail",
     headline,
+    sampleNote: isFreeDiagnostic
+      ? diagnosticSampleNote(report.topicResults, report.totalCount, fullQuestionCount)
+      : null,
     reality,
-    misses: missLine(report.topicResults, fullQuestionCount),
+    misses: gapLine(report.repairPlan, fullQuestionCount),
     close,
     deckCtaLabel,
     deckCtaFullPrice: deckCtaLabel && discounted ? deck!.fullPriceLabel! : null,

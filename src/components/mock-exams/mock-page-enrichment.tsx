@@ -1,5 +1,10 @@
 import Image from "next/image";
-import { freeAccessClause } from "@/lib/mock-exams/free-diagnostic";
+import {
+  FREE_DIAGNOSTIC_QUESTIONS,
+  freeAccessClause,
+  freeDiagnosticMinutes,
+  hasShortFreeDiagnostic,
+} from "@/lib/mock-exams/free-diagnostic";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalogDeckBySlug } from "@/lib/decks";
@@ -121,12 +126,20 @@ export function MockExamBreadcrumb({ config }: { config: MockExamConfig }) {
 /** Compact fact strip — unique numbers per exam, not a shared marketing blurb. */
 export function MockExamSnapshot({ config }: { config: MockExamConfig }) {
   const waitlist = config.status === "coming_soon";
+  const shortFree = !waitlist && hasShortFreeDiagnostic(config);
   const items = [
     {
       label: waitlist ? "Planned questions" : "Questions",
-      value: String(config.questionCount),
+      value: shortFree
+        ? `${FREE_DIAGNOSTIC_QUESTIONS} free · ${config.questionCount} full`
+        : String(config.questionCount),
     },
-    { label: "Time", value: `${config.durationMinutes} min` },
+    {
+      label: "Time",
+      value: shortFree
+        ? `${freeDiagnosticMinutes(config)} min free · ${config.durationMinutes} min full`
+        : `${config.durationMinutes} min`,
+    },
     { label: "UniPrep2Go readiness target", value: `${config.passRule.passPercent}%` },
     { label: "Domains", value: String(config.topics.length) },
     { label: "Exam body", value: config.examBody },

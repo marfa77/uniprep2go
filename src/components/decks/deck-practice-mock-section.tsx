@@ -3,7 +3,7 @@ import type { Deck } from "@/lib/decks";
 import { buildMockSeoTitle } from "@/lib/mock-exams/seo";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 import { btnPrimary, cx } from "@/lib/ui-button-classes";
-import { freeMockStartLabel, mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
+import { freeMockStartLabel, mockLengthPhrase, mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 
 type DeckPracticeMockSectionProps = {
   deck: Deck;
@@ -26,7 +26,7 @@ export function DeckPracticeMockSection({
       <p className="mt-2 text-sm leading-7 text-[#4f493e]">
         {companionMock
           ? `${deck.shortName} knowledge diagnostic — ${mockQuestionPhrase(mock.questionCount, "timed check")} with topic scoring and a readiness report before you buy the ${deck.format === "PDF" ? "PDF" : "deck"}. It checks what you know; it is not a copy of the official exam format.`
-          : `Run the linked ${mock.questionCount}-question timed practice test for topic scoring, answer review, and a pass/no-pass remediation plan before deciding what to drill next.`}
+          : `Run the linked ${mockLengthPhrase(mock)} for topic scoring, answer review, and a remediation plan before deciding what to drill next.`}
       </p>
       <Link
         className={cx("mt-4", btnPrimary)}

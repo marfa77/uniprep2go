@@ -681,7 +681,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Permanent residence (trvalý pobyt) usually needs language (often A2), not reálie.",
       "All live reálie items are drawn from the published ~300-item NPI databank — study that pool for exam-day fidelity.",
       "Typical reálie fee is about CZK 2,000 per attempt — confirm with your exam centre.",
-      "UniPrep2Go’s free check is a longer 60Q / 45 min / 70% diagnostic — not the official 30/30/60% form.",
+      "UniPrep2Go’s check is a longer 60Q / 45 min / 70% diagnostic (free 25-question version) — not the official 30/30/60% form.",
     ],
     candidate_qa: [
       {
@@ -2703,7 +2703,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go's ACSM readiness check the real ACSM exam?",
-        a: "No. The 60-question readiness check (free 25-question version) (drawn from a 120-item bank) and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
+        a: "No. The 60-question readiness check (free 25-question version; drawn from a 120-item bank) and 120-card Anki deck are independent study aids mapped to ACSM-CPT themes — not official ACSM exams or curriculum.",
       },
     ],
     trademark_note:
@@ -2905,7 +2905,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "MO is course-based under AgII rules: you typically cannot skip straight to a public free MCQ bank — the standaardtest follows course completion.",
       "MO test score counts for 60% of the MO component; teacher process evaluation counts for 40% (attendance, participation, core skills).",
       "Dutch A2 evidence (NT2) is a separate inburgering pillar — Netherlands Inburgering KNM decks do not substitute for Flanders MO civics.",
-      "Official standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen). UniPrep2Go’s 60-question Dutch diagnostic (free 25-question version) (45 min / 70%) is independent theme practice — not AgII items and not the official form.",
+      "Official standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen). UniPrep2Go’s 60-question Dutch diagnostic (free 25-question version; 45 min / 70%) is independent theme practice — not AgII items and not the official form.",
     ],
     candidate_qa: [
       {
@@ -3039,7 +3039,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
       "Patient Care is the heaviest domain (43/100 scored). Do not over-drill EKG (10) at the expense of ADLs and vitals.",
       "CPCT/A is not CCMA (medical assisting), not NHA CPT (phlebotomy-only), and not ASPT.",
-      "UniPrep2Go’s free check is a 120-question / 120-minute text diagnostic with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab.",
+      "UniPrep2Go’s check is a 120-question / 120-minute text diagnostic (free 25-question version) with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab.",
     ],
     candidate_qa: [
       {
@@ -3112,7 +3112,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
       "Billing and Reimbursement (33) and Coding and Coding Guidelines (32) are the heaviest domains.",
       "CBCS is NHA billing/coding — not AAPC CPC, not CCS, and not NHA CCMA (clinical medical assistant).",
-      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic with four topic buckets — not a full-length 125-item NHA form.",
+      "UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) with four topic buckets — not a full-length 125-item NHA form.",
     ],
     candidate_qa: [
       {
@@ -3180,14 +3180,14 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     whats_changed: [
       "Public 2021 CMAA test plan lists 110 scored + 25 pretest items in 2 hours 15 minutes — older NHA PDFs that say 20 pretest / 2h 10m are stale.",
-      "UniPrep2Go’s check (free 25-question version) is 60 questions / 50 minutes with four topic buckets — shorter than the official 135-item form and not a domain-for-domain clone of NHA’s seven domains.",
+      "UniPrep2Go’s check is 60 questions / 50 minutes (free 25-question version) with four topic buckets — shorter than the official 135-item form and not a domain-for-domain clone of NHA’s seven domains.",
     ],
     high_yield_facts: [
       "Official form is 135 items in 135 minutes; only the 110 scored items count toward the scaled score.",
       "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
       "Communication/professionalism and patient encounter are the heaviest domains (21 scored each); billing is only 11 — do not treat CMAA as a coding exam.",
       "CMAA is front-office admin — not NHA CCMA, not CBCS, and not AAPC CPC.",
-      "UniPrep2Go’s free check is a 60-question / 50-minute diagnostic; the matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
+      "UniPrep2Go’s check is a 60-question / 50-minute diagnostic (free 25-question version); the matching Anki deck is planned (waitlist), not a live Gumroad SKU.",
     ],
     candidate_qa: [
       {
@@ -3252,7 +3252,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "NIC Cosmetology Theory is 110 items: 100 scored + 10 pretest; only scored items count.",
       "Hair Care and Services is the heaviest domain (45%); Skin and Nails are 10% each.",
       "Infection control and safety practices sit under Scientific Concepts — not a fifth top-level NIC domain.",
-      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic — not a full 110-item NIC form.",
+      "UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) — not a full 110-item NIC form.",
       "This is not the esthetician-only or manicurist-only theory exam.",
     ],
     candidate_qa: [
@@ -3315,7 +3315,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     high_yield_facts: [
       "Typical General Knowledge form: ~50 questions / 80% (40 correct) — verify your state.",
-      "UniPrep2Go’s free check is a longer 60-question / 75-minute diagnostic with four topic buckets — not a DMV form.",
+      "UniPrep2Go’s check is a longer 60-question / 75-minute diagnostic (free 25-question version) with four topic buckets — not a DMV form.",
       "General Knowledge is not the skills/road test (vehicle inspection, basic controls, road).",
       "Class A applicants usually also need Combination Vehicles knowledge; air-brake vehicles need the Air Brakes knowledge test.",
       "Study your state’s official CDL manual first — free third-party banks (CristCDL, US Permit Prep, state DMV practice) win on volume; UniPrep wins on a no-signup timed diagnostic + planned Anki waitlist.",
@@ -3375,7 +3375,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     high_yield_facts: [
       "No single national armed-security MCQ — confirm your state’s hours, written cut score, and range rules.",
-      "UniPrep2Go’s free check is a 60-question / 75-minute written diagnostic — not a board exam and not range qualification.",
+      "UniPrep2Go’s check is a 60-question / 75-minute written diagnostic (free 25-question version) — not a board exam and not range qualification.",
       "≠ Unarmed security officer / guard-card-only pathway (separate UniPrep mock exists).",
       "Firearms training hours and FOID/CCW-style prerequisites are state-specific.",
     ],
@@ -3435,7 +3435,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     high_yield_facts: [
       "Official AVA: typically 100 questions / 150 minutes / 75% / $100 — verify at VetMedTeam enrollment.",
       "Eligibility: graduate of a NAVTA-approved VA program + program code + exam mentor.",
-      "UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic — not a full-length AVA form.",
+      "UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) — not a full-length AVA form.",
       "≠ VTNE / veterinary technician credential.",
     ],
     candidate_qa: [
@@ -3499,7 +3499,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     high_yield_facts: [
       "AHDPG MSCE: 100 questions / 75 minutes / 80% to pass / $185 → AMSP; CMSP adds 200+ documented scribe hours.",
-      "UniPrep2Go’s free check is a shorter 60-question / 75-minute / 70% multiple-choice diagnostic — not a full MSCE form.",
+      "UniPrep2Go’s check is a shorter 60-question / 75-minute / 70% multiple-choice diagnostic (free 25-question version) — not a full MSCE form.",
       "Scribes document under provider direction — they do not diagnose, treat, or authenticate notes alone.",
       "SOAP: Subjective is what the patient reports, Objective is what is measured or observed, Assessment is the provider’s impression, Plan is orders and follow-up.",
       "Errors in a signed note are corrected by a dated, timed, attributed addendum — never by deleting text or backdating a late entry.",
@@ -3577,7 +3577,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions is the AHA BLS cognitive exam?",
-        a: "HeartCode BLS cognitive is typically about 25 questions, open-resource, with an 84% passing score, plus Adult CPR/AED and Infant CPR skills. UniPrep’s check (free 25-question version) is 60 questions / 45 minutes / 84% readiness target — cognitive only.",
+        a: "HeartCode BLS cognitive is typically about 25 questions, open-resource, with an 84% passing score, plus Adult CPR/AED and Infant CPR skills. UniPrep’s check is 60 questions / 45 minutes / 84% readiness target (free 25-question version) — cognitive only.",
       },
       {
         q: "Is UniPrep’s BLS check an official AHA course?",
@@ -3595,7 +3595,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "safe-mlo",
     pageHeading: "SAFE MLO Exam — Facts, NMLS Outline & Prep",
     intro:
-      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content is the NMLS national exam for residential MLOs. Official sittings are 120 items (115 scored + 5 pretest) in 190 minutes with a 75% passing score under the SAFE Act. UniPrep2Go’s free check is a 120-question / 120-minute / 70% readiness diagnostic from a 240 unique bank, paired with a live $11 / 240-card Anki. Independent prep — not NMLS exam material.",
+      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content is the NMLS national exam for residential MLOs. Official sittings are 120 items (115 scored + 5 pretest) in 190 minutes with a 75% passing score under the SAFE Act. UniPrep2Go’s check is a 120-question / 120-minute / 70% readiness diagnostic (free 25-question version) from a 240 unique bank, paired with a live $11 / 240-card Anki. Independent prep — not NMLS exam material.",
     exam_facts: {
       exam_name: "SAFE Mortgage Loan Originator National Test with Uniform State Test Content",
       administered_by: "NMLS / CSBS (Prometric delivery)",
@@ -3638,7 +3638,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the SAFE MLO national test?",
-        a: "120 items (115 scored + 5 pretest) in 190 minutes, with a 75% passing score. UniPrep’s check (free 25-question version) is 120 questions in 120 minutes with a 70% readiness target.",
+        a: "120 items (115 scored + 5 pretest) in 190 minutes, with a 75% passing score. UniPrep’s check is 120 questions in 120 minutes (free 25-question version) with a 70% readiness target.",
       },
       {
         q: "Is UniPrep’s SAFE MLO check the official NMLS exam?",
@@ -3652,7 +3652,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "abo-ncle-noce",
     pageHeading: "ABO Optician (NOCE) Exam — Facts & Prep",
     intro:
-      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s free check is a 60-question / 75-minute / 70% diagnostic from a 120 unique bank, paired with a live $11 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 120 unique bank, paired with a live $11 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
     exam_facts: {
       exam_name: "National Opticianry Competency Examination (NOCE / ABO Basic)",
       administered_by: "ABO-NCLE (Prometric delivery)",
@@ -3678,17 +3678,17 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "Confirm current NOCE item count and seating rules in the live Basic Examination Handbook.",
       "NCLE contact-lens exam is a separate credential — do not mix CLRE content into NOCE prep.",
-      "Linked Anki is live at $11 / 120 unique cards from the same bank as the free timed 60Q diagnostic.",
+      "Linked Anki is live at $11 / 120 unique cards from the same bank as the timed 60Q diagnostic (free 25-question version).",
     ],
     high_yield_facts: [
-      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep free check is 60Q / 75m / 70% from a 120 unique bank + $11 / 120 Anki.",
+      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep check is 60Q / 75m / 70% (free 25-question version) from a 120 unique bank + $11 / 120 Anki.",
       "Index of refraction governs how much light slows/bends; Abbe number tracks dispersion.",
       "Vertex distance changes effective power for higher prescriptions.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the ABO NOCE?",
-        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
+        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
       },
       {
         q: "Is this the NCLE contact-lens exam?",
@@ -3733,7 +3733,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "Confirm current SPI item count, time, and scaled pass in the live ARDMS/Inteleos bulletin — third-party blogs still quote older forms.",
       "SPI remains physics/instrumentation; image-heavy ABD/OB specialty exams are separate ARDMS sittings.",
-      "UniPrep Anki is live at $11 / 120 unique cards paired with a free 60Q timed diagnostic from the same 120 bank.",
+      "UniPrep Anki is live at $11 / 120 unique cards paired with a 60Q timed diagnostic (free 25-question version) from the same 120 bank.",
     ],
     high_yield_facts: [
       "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s free check is 60 Q / 75 min / 70% from a 120 unique bank.",
@@ -3745,7 +3745,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ARDMS SPI exam?",
-        a: "About 110 multiple-choice questions in 2 hours. The scaled passing score is 555 on a 300–700 scale. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic drawn from a 120 unique bank.",
+        a: "About 110 multiple-choice questions in 2 hours. The scaled passing score is 555 on a 300–700 scale. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 120 unique bank.",
       },
       {
         q: "Is UniPrep’s SPI check the official ARDMS exam?",
@@ -3763,7 +3763,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "ascp-mlt",
     pageHeading: "ASCP MLT Exam — Facts, Content Areas & Prep",
     intro:
-      "The ASCP Board of Certification Medical Laboratory Technician exam, MLT(ASCP), certifies bench technicians across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 75-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLT is not MLS; California-only MLT licensure is a separate 80-question / 2-hour form.",
+      "The ASCP Board of Certification Medical Laboratory Technician exam, MLT(ASCP), certifies bench technicians across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s check is a shorter 60-question / 75-minute linear diagnostic (free 25-question version; not CAT). Independent prep — not ASCP BOC exam material. MLT is not MLS; California-only MLT licensure is a separate 80-question / 2-hour form.",
     exam_facts: {
       exam_name: "Medical Laboratory Technician — MLT(ASCP) / MLT(ASCPi)",
       administered_by: "ASCP Board of Certification (BOC)",
@@ -3802,10 +3802,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "National MLT(ASCP) remains 100 CAT items / 2 hours 30 minutes / scaled 400 — third-party mocks that use 180 minutes or a percent pass are not the BOC scale.",
       "California state-licensure MLT is 80 questions / 2 hours — not the national form.",
-      "UniPrep’s check (free 25-question version) is 60 questions / 75 minutes / 70% diagnostic with four benches — not CAT and not 1:1 BOC percentages.",
+      "UniPrep’s check is 60 questions / 75 minutes / 70% diagnostic (free 25-question version) with four benches — not CAT and not 1:1 BOC percentages.",
     ],
     high_yield_facts: [
-      "Official MLT(ASCP): 100 CAT MCQ / 2h30 / scaled 400 (100–999). UniPrep free check: 60Q / 75 min / 70% linear diagnostic.",
+      "Official MLT(ASCP): 100 CAT MCQ / 2h30 / scaled 400 (100–999). UniPrep check: 60Q / 75 min / 70% linear diagnostic (free 25-question version).",
       "Heaviest official areas: chemistry and hematology (20–25% each); blood bank and microbiology 15–20%.",
       "MLT is technician-level — ASCP MLS is a separate, higher credential with its own guideline.",
       "Packed RBCs 1–6°C; platelets 20–24°C with agitation; do not report hemolyzed potassium as the patient’s K.",
@@ -3814,7 +3814,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ASCP MLT exam?",
-        a: "The national MLT(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s free check is a shorter 60-question / 75-minute linear diagnostic.",
+        a: "The national MLT(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s check is a shorter 60-question / 75-minute linear diagnostic (free 25-question version).",
       },
       {
         q: "Is UniPrep’s MLT check the official ASCP exam?",
@@ -3832,7 +3832,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "ascp-mls",
     pageHeading: "ASCP MLS Exam — Facts, Content Areas & Prep",
     intro:
-      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 90-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
+      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s check is a shorter 60-question / 90-minute linear diagnostic (free 25-question version; not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
     exam_facts: {
       exam_name: "Medical Laboratory Scientist — MLS(ASCP) / MLS(ASCPi)",
       administered_by: "ASCP Board of Certification (BOC)",
@@ -3870,11 +3870,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     whats_changed: [
       "National MLS(ASCP) remains 100 CAT items / 2 hours 30 minutes / scaled 400 — third-party mocks that use a percent pass are not the BOC scale.",
-      "UniPrep’s check (free 25-question version) is 60 questions / 90 minutes / 70% diagnostic with four benches — not CAT and not 1:1 BOC percentages.",
+      "UniPrep’s check is 60 questions / 90 minutes / 70% diagnostic (free 25-question version) with four benches — not CAT and not 1:1 BOC percentages.",
       "MLT(ASCP) is a separate technician credential with the same sitting shape but a different guideline and eligibility path.",
     ],
     high_yield_facts: [
-      "Official MLS(ASCP): 100 CAT MCQ / 2h30 / scaled 400 (100–999). UniPrep free check: 60Q / 90 min / 70% linear diagnostic.",
+      "Official MLS(ASCP): 100 CAT MCQ / 2h30 / scaled 400 (100–999). UniPrep check: 60Q / 90 min / 70% linear diagnostic (free 25-question version).",
       "Heaviest official areas: blood bank, chemistry, hematology, and microbiology (17–22% each); UA, immunology, and lab ops 5–10% each.",
       "MLS is scientist-level — ASCP MLT is a separate technician credential.",
       "Packed RBCs 1–6°C; platelets 20–24°C with agitation; do not report hemolyzed potassium as the patient’s K.",
@@ -3882,7 +3882,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ASCP MLS exam?",
-        a: "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s free check is a shorter 60-question / 90-minute linear diagnostic.",
+        a: "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s check is a shorter 60-question / 90-minute linear diagnostic (free 25-question version).",
       },
       {
         q: "Is UniPrep’s MLS check the official ASCP exam?",
@@ -3900,7 +3900,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "aswb-bachelors",
     pageHeading: "ASWB Bachelors Exam — Facts, Blueprint & Prep",
     intro:
-      "The ASWB Bachelors exam is the social-work licensing test used in many jurisdictions for BSW-level titles such as LSW or LBSW. As of 3 August 2026 the sitting is 122 questions (110 scored + 12 pretest) in 4 hours on a three-area blueprint. UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic on four generalist buckets. Independent prep — not ASWB exam material. Not the Masters, Advanced Generalist, or Clinical (LCSW) exam.",
+      "The ASWB Bachelors exam is the social-work licensing test used in many jurisdictions for BSW-level titles such as LSW or LBSW. As of 3 August 2026 the sitting is 122 questions (110 scored + 12 pretest) in 4 hours on a three-area blueprint. UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) on four generalist buckets. Independent prep — not ASWB exam material. Not the Masters, Advanced Generalist, or Clinical (LCSW) exam.",
     exam_facts: {
       exam_name: "ASWB Bachelors (LSW / LBSW-style) Social Work Licensing Exam",
       administered_by: "Association of Social Work Boards (ASWB)",
@@ -3927,7 +3927,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "From 3 August 2026: 122 questions (110+12) vs 170 (150+20) on the 2018 blueprint; three content areas vs four; more three-option items.",
       "Pass remains form-equated (about 66–78 of 110 scored on 2026 forms). Fee is typically $230 for Bachelors (confirm on aswb.org).",
-      "UniPrep’s check (free 25-question version) is 60 questions / 75 minutes / 70% diagnostic — not a 4-hour 122-item sitting.",
+      "UniPrep’s check is 60 questions / 75 minutes / 70% diagnostic (free 25-question version) — not a 4-hour 122-item sitting.",
     ],
     high_yield_facts: [
       "Official Bachelors from 3 Aug 2026: 122Q / 4h / 110 scored. UniPrep: 60Q / 75 min / 70%.",
@@ -3937,7 +3937,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ASWB Bachelors exam?",
-        a: "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. Before that date the 2018 form was 170 (150+20). UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. Before that date the 2018 form was 170 (150+20). UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is UniPrep’s Bachelors check the official ASWB exam?",
@@ -3955,7 +3955,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "aswb-clinical",
     pageHeading: "ASWB Clinical (LCSW) Exam — Facts, Blueprint & Prep",
     intro:
-      "The ASWB Clinical exam is the clinical social-work licensing test used for LCSW (or equivalent) in most U.S. jurisdictions. As of 3 August 2026 it is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic on clinical assessment, diagnosis concepts, psychotherapy, and ethics. Independent prep — not ASWB material. Not Bachelors/LSW and not Masters-only LMSW.",
+      "The ASWB Clinical exam is the clinical social-work licensing test used for LCSW (or equivalent) in most U.S. jurisdictions. As of 3 August 2026 it is 122 questions (110 scored + 12 pretest) in 4 hours on three content areas. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) on clinical assessment, diagnosis concepts, psychotherapy, and ethics. Independent prep — not ASWB material. Not Bachelors/LSW and not Masters-only LMSW.",
     exam_facts: {
       exam_name: "ASWB Clinical (LCSW) Social Work Licensing Exam",
       administered_by: "Association of Social Work Boards (ASWB)",
@@ -3990,7 +3990,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the ASWB Clinical exam?",
-        a: "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. Pass is form-equated (generally about 66–78 of 110 scored). UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. Pass is form-equated (generally about 66–78 of 110 scored). UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is UniPrep’s Clinical check the official ASWB exam?",
@@ -4008,7 +4008,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "nic-barber-theory",
     pageHeading: "NIC Barber Theory Exam — Facts & Prep",
     intro:
-      "Many U.S. states use the NIC National Barber Theory examination for the written barber license. The current NIC Barber theory form is 60 items (50 scored + 10 pretest) in 90 minutes; the practical/skills exam is separate. Passing scaled scores are set by the state board (often 75). UniPrep’s free check is a 60-question / 75-minute theory diagnostic. Independent prep — not NIC or a state board exam. Not NIC Cosmetology Theory (typically 110 items).",
+      "Many U.S. states use the NIC National Barber Theory examination for the written barber license. The current NIC Barber theory form is 60 items (50 scored + 10 pretest) in 90 minutes; the practical/skills exam is separate. Passing scaled scores are set by the state board (often 75). UniPrep’s check is a 60-question / 75-minute theory diagnostic (free 25-question version). Independent prep — not NIC or a state board exam. Not NIC Cosmetology Theory (typically 110 items).",
     exam_facts: {
       exam_name: "NIC National Barber Theory Examination",
       administered_by: "National-Interstate Council of State Boards of Cosmetology (NIC) via state boards",
@@ -4044,7 +4044,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the NIC Barber theory exam?",
-        a: "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. Your state may use a different form — read the CIB. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. Your state may use a different form — read the CIB. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is UniPrep’s Barber check the official NIC exam?",
@@ -4058,7 +4058,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "medication-aide",
     pageHeading: "Medication Aide / MACE Exam — Facts & Prep",
     intro:
-      "Medication aide (CMA-med-aide / MACE) exams certify nurse aides to administer certain medications in long-term care under nurse supervision. There is no single national license: many states use NCSBN’s Medication Aide Certification Examination (MACE), typically 60 multiple-choice questions in 2 hours (some Credentia/NCSBN outlines list 50 scored + 10 pretest). Other states (e.g. Alabama written 50Q) use their own form. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not NCSBN, Credentia, or a state board exam. Not RN/LPN and not NNAAP CNA.",
+      "Medication aide (CMA-med-aide / MACE) exams certify nurse aides to administer certain medications in long-term care under nurse supervision. There is no single national license: many states use NCSBN’s Medication Aide Certification Examination (MACE), typically 60 multiple-choice questions in 2 hours (some Credentia/NCSBN outlines list 50 scored + 10 pretest). Other states (e.g. Alabama written 50Q) use their own form. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not NCSBN, Credentia, or a state board exam. Not RN/LPN and not NNAAP CNA.",
     exam_facts: {
       exam_name: "Medication Aide / Medication Assistant (often MACE®)",
       administered_by: "State boards of nursing / nurse-aide registries (NCSBN MACE in participating states)",
@@ -4094,7 +4094,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the medication aide exam?",
-        a: "Where the state uses MACE, the written exam is typically 60 multiple-choice questions in 2 hours (some outlines: 50 scored + 10 pretest). Other states differ (example: Alabama 50 items). UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "Where the state uses MACE, the written exam is typically 60 multiple-choice questions in 2 hours (some outlines: 50 scored + 10 pretest). Other states differ (example: Alabama 50 items). UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is UniPrep’s Medication Aide check the official MACE?",
@@ -4108,7 +4108,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "nic-nail-theory",
     pageHeading: "Nail Technician / NIC Nail Technology Theory — Facts & Prep",
     intro:
-      "Many U.S. states use NIC National Nail Technology Theory for the written manicurist / nail-technician license. Official theory is 110 items (100 scored) in 90 minutes; the practical is separate and passing scores are set by the state board. UniPrep’s free check is a 60-question / 75-minute theory diagnostic. Independent prep — not NIC or a state board exam. Not Cosmetology Theory and not Barber Theory.",
+      "Many U.S. states use NIC National Nail Technology Theory for the written manicurist / nail-technician license. Official theory is 110 items (100 scored) in 90 minutes; the practical is separate and passing scores are set by the state board. UniPrep’s check is a 60-question / 75-minute theory diagnostic (free 25-question version). Independent prep — not NIC or a state board exam. Not Cosmetology Theory and not Barber Theory.",
     exam_facts: {
       exam_name: "NIC National Nail Technology Theory (state-adopted)",
       administered_by: "State cosmetology / barber boards using NIC written forms",
@@ -4139,7 +4139,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the nail technician written exam?",
-        a: "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state CIB.",
+        a: "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s check is 60 questions / 75 minutes (free 25-question version). Confirm your state CIB.",
       },
       {
         q: "Is UniPrep’s Nail Technician check the official NIC exam?",
@@ -4153,7 +4153,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "nsca-cpt",
     pageHeading: "NSCA-CPT Exam — Facts & Prep",
     intro:
-      "The NSCA Certified Personal Trainer (NSCA-CPT) exam is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: client consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. UniPrep’s free check is a 60-question / 75-minute text diagnostic. Independent prep — not NSCA exam material. Not CSCS (two papers) and not NASM/ACE/ACSM CPT.",
+      "The NSCA Certified Personal Trainer (NSCA-CPT) exam is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: client consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. UniPrep’s check is a 60-question / 75-minute text diagnostic (free 25-question version). Independent prep — not NSCA exam material. Not CSCS (two papers) and not NASM/ACE/ACSM CPT.",
     exam_facts: {
       exam_name: "NSCA Certified Personal Trainer (NSCA-CPT®)",
       administered_by: "National Strength and Conditioning Association (NSCA)",
@@ -4185,7 +4185,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the NSCA-CPT exam?",
-        a: "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes with no video items.",
+        a: "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) with no video items.",
       },
       {
         q: "Is NSCA-CPT the same as CSCS?",
@@ -4199,7 +4199,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "phr-hrci",
     pageHeading: "HRCI PHR Exam — Facts & Prep",
     intro:
-      "The HRCI Professional in Human Resources (PHR) exam is 90 scored + 25 pretest questions in 2 hours (plus about 30 minutes administration) with a scaled pass of 500 (100–700). It is an operational HR credential. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not HRCI material. Not SPHR and not SHRM-CP.",
+      "The HRCI Professional in Human Resources (PHR) exam is 90 scored + 25 pretest questions in 2 hours (plus about 30 minutes administration) with a scaled pass of 500 (100–700). It is an operational HR credential. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not HRCI material. Not SPHR and not SHRM-CP.",
     exam_facts: {
       exam_name: "HRCI Professional in Human Resources (PHR®)",
       administered_by: "HR Certification Institute (HRCI)",
@@ -4229,7 +4229,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the PHR exam?",
-        a: "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is PHR the same as SHRM-CP?",
@@ -4243,7 +4243,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "physical-therapy-aide",
     pageHeading: "Physical Therapy Aide — Facts & Prep",
     intro:
-      "There is no single national physical therapy aide exam. Hiring and competency checks are employer- and state-specific. Aides are unlicensed assistive personnel who work under a PT or PTA and do not independently evaluate patients, progress a plan of care, or deliver skilled modalities. UniPrep’s free check is a 60-question / 75-minute knowledge diagnostic. Independent prep. Not the NPTE and not a PTA exam.",
+      "There is no single national physical therapy aide exam. Hiring and competency checks are employer- and state-specific. Aides are unlicensed assistive personnel who work under a PT or PTA and do not independently evaluate patients, progress a plan of care, or deliver skilled modalities. UniPrep’s check is a 60-question / 75-minute knowledge diagnostic (free 25-question version). Independent prep. Not the NPTE and not a PTA exam.",
     exam_facts: {
       exam_name: "Physical therapy aide / PT tech competency (employer / state)",
       administered_by: "Employers and, where applicable, state practice acts — no national certifier",
@@ -4272,7 +4272,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "Is there a national physical therapy aide exam?",
-        a: "No. Competency is employer- and state-specific. UniPrep’s free check is a 60-question / 75-minute knowledge diagnostic, not a license exam.",
+        a: "No. Competency is employer- and state-specific. UniPrep’s check is a 60-question / 75-minute knowledge diagnostic (free 25-question version), not a license exam.",
       },
       {
         q: "Is this the NPTE or PTA exam?",
@@ -4286,7 +4286,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "praxis-core",
     pageHeading: "Praxis Core Academic Skills — Facts & Prep",
     intro:
-      "ETS Praxis Core Academic Skills for Educators is three separate tests often required for teacher-prep entry: Reading (5713), Writing (5723), and Mathematics (5733). UniPrep’s free check is a combined 60-question / 75-minute selected-response diagnostic — not three sittings and not the Writing essays. Independent prep — not ETS material. Not Praxis Special Education (5355) and not Elementary 5001.",
+      "ETS Praxis Core Academic Skills for Educators is three separate tests often required for teacher-prep entry: Reading (5713), Writing (5723), and Mathematics (5733). UniPrep’s check is a combined 60-question / 75-minute selected-response diagnostic (free 25-question version) — not three sittings and not the Writing essays. Independent prep — not ETS material. Not Praxis Special Education (5355) and not Elementary 5001.",
     exam_facts: {
       exam_name: "Praxis Core Academic Skills for Educators (5713 / 5723 / 5733)",
       administered_by: "ETS",
@@ -4332,7 +4332,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "praxis-special-education",
     pageHeading: "Praxis Special Education — Facts & Prep",
     intro:
-      "Many states use ETS Praxis Special Education: Core Knowledge and Applications (5355) — typically 120 selected-response questions in 2 hours. Other codes exist; confirm yours. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not ETS material. Not Praxis Core (5713/5723/5733).",
+      "Many states use ETS Praxis Special Education: Core Knowledge and Applications (5355) — typically 120 selected-response questions in 2 hours. Other codes exist; confirm yours. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not ETS material. Not Praxis Core (5713/5723/5733).",
     exam_facts: {
       exam_name: "Praxis Special Education: Core Knowledge and Applications (often 5355)",
       administered_by: "ETS",
@@ -4361,7 +4361,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on Praxis Special Education?",
-        a: "For Core Knowledge and Applications (5355), ETS typically uses 120 selected-response questions in 2 hours. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state code.",
+        a: "For Core Knowledge and Applications (5355), ETS typically uses 120 selected-response questions in 2 hours. UniPrep’s check is 60 questions / 75 minutes (free 25-question version). Confirm your state code.",
       },
       {
         q: "Is this Praxis Core?",
@@ -4375,7 +4375,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "precision-nutrition-l1",
     pageHeading: "Precision Nutrition Level 1 — Facts & Prep",
     intro:
-      "Precision Nutrition Level 1 certifies nutrition coaches in client-centered behavior change and nutrition fundamentals. It is not an RDN / dietetics license and not a personal-trainer CPT exam. UniPrep’s free check is a 60-question / 75-minute coaching diagnostic. Independent prep — not Precision Nutrition material.",
+      "Precision Nutrition Level 1 certifies nutrition coaches in client-centered behavior change and nutrition fundamentals. It is not an RDN / dietetics license and not a personal-trainer CPT exam. UniPrep’s check is a 60-question / 75-minute coaching diagnostic (free 25-question version). Independent prep — not Precision Nutrition material.",
     exam_facts: {
       exam_name: "Precision Nutrition Level 1 (PN L1)",
       administered_by: "Precision Nutrition",
@@ -4402,7 +4402,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "Is Precision Nutrition Level 1 the same as becoming an RDN?",
-        a: "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is UniPrep’s PN L1 check the official Precision Nutrition exam?",
@@ -4416,7 +4416,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "unarmed-security-officer",
     pageHeading: "Unarmed Security Officer — Facts & Prep",
     intro:
-      "Unarmed security officer / guard-card exams are state-specific (hours, written tests, and cards differ). There is no single national Q-count. UniPrep’s free check is a 60-question / 75-minute unarmed knowledge diagnostic. Independent prep. Not an armed/firearms qualification.",
+      "Unarmed security officer / guard-card exams are state-specific (hours, written tests, and cards differ). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute unarmed knowledge diagnostic (free 25-question version). Independent prep. Not an armed/firearms qualification.",
     exam_facts: {
       exam_name: "Unarmed security officer / guard card (state)",
       administered_by: "State security licensing boards / training schools",
@@ -4443,7 +4443,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "Is there a national unarmed security exam?",
-        a: "No. States set the hours and written test. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes of unarmed knowledge.",
+        a: "No. States set the hours and written test. UniPrep’s check is 60 questions / 75 minutes of unarmed knowledge (free 25-question version).",
       },
       {
         q: "Is this the armed guard exam?",
@@ -4457,7 +4457,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "wastewater-operator-1",
     pageHeading: "Wastewater Operator Level 1 — Facts & Prep",
     intro:
-      "Entry-level wastewater operator exams are state-specific (ABC Need-to-Know themes are common). There is no single national Q-count. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not a state license exam. Not drinking-water treatment (that's a separate credential).",
+      "Entry-level wastewater operator exams are state-specific (ABC Need-to-Know themes are common). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not a state license exam. Not drinking-water treatment (that's a separate credential).",
     exam_facts: {
       exam_name: "Wastewater operator certification (Level 1 / Class I, state)",
       administered_by: "State wastewater operator certification boards (often ABC-style)",
@@ -4484,7 +4484,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "Is there a national wastewater operator exam?",
-        a: "No. States set the form. Many use ABC Need-to-Know themes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+        a: "No. States set the form. Many use ABC Need-to-Know themes. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         q: "Is this the drinking-water treatment exam?",
@@ -4498,7 +4498,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "electrical-journeyman",
     pageHeading: "Electrical Journeyman — Facts & Prep",
     intro:
-      "Journeyman electrician licensing exams are state- or locality-specific (NEC cycle year, open-book rules, and vendor differ). There is no single national Q-count. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not a license. Not a master electrician exam.",
+      "Journeyman electrician licensing exams are state- or locality-specific (NEC cycle year, open-book rules, and vendor differ). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not a license. Not a master electrician exam.",
     exam_facts: {
       exam_name: "Journeyman electrician written exam (state / local)",
       administered_by: "State or local electrical boards (often PSI / Prometric)",
@@ -4525,7 +4525,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the journeyman electrician exam?",
-        a: "It depends on the state. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes — not your board’s form.",
+        a: "It depends on the state. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) — not your board’s form.",
       },
       {
         q: "Is this the master electrician exam?",
@@ -4539,7 +4539,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "nate-core",
     pageHeading: "NATE Core — Facts & Prep",
     intro:
-      "NATE Core is the foundational HVAC/R knowledge exam often taken with a NATE specialty. UniPrep’s free check is a 60-question / 75-minute diagnostic — not a NATE specialty (air conditioning, heat pump, gas furnace, etc.). Independent prep — not NATE material.",
+      "NATE Core is the foundational HVAC/R knowledge exam often taken with a NATE specialty. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version) — not a NATE specialty (air conditioning, heat pump, gas furnace, etc.). Independent prep — not NATE material.",
     exam_facts: {
       exam_name: "NATE Core (HVAC/R knowledge)",
       administered_by: "NATE",
@@ -4580,7 +4580,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "plumbing-journeyman",
     pageHeading: "Plumbing Journeyman — Facts & Prep",
     intro:
-      "Journeyman plumber exams are state- or municipality-specific (IPC/UPC cycle year and vendor differ). There is no single national Q-count. UniPrep’s free check is a 60-question / 75-minute diagnostic. Independent prep — not a license. Not a master plumber exam.",
+      "Journeyman plumber exams are state- or municipality-specific (IPC/UPC cycle year and vendor differ). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not a license. Not a master plumber exam.",
     exam_facts: {
       exam_name: "Journeyman plumber written exam (state / local)",
       administered_by: "State or local plumbing boards",
@@ -4607,7 +4607,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the journeyman plumber exam?",
-        a: "It depends on the state. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes — not your board’s form.",
+        a: "It depends on the state. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) — not your board’s form.",
       },
       {
         q: "Is this the master plumber exam?",

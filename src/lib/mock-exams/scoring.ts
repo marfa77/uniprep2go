@@ -230,9 +230,11 @@ function buildTopicResults(
     .filter((topic) => topic.total > 0);
 }
 
+/** Weak-topic ranking used everywhere on the result screen (headline, Fix CTA, ?topics=, priorities). */
 function buildRepairPlan(topicResults: MockTopicResult[]): MockRepairPlanItem[] {
-  return [...topicResults]
-    .filter((topic) => topic.total > 0)
+  const scored = topicResults.filter((topic) => topic.total > 0);
+  const belowTarget = scored.filter((topic) => topic.scorePercent < topic.targetPercent);
+  return [...(belowTarget.length > 0 ? belowTarget : scored)]
     .sort((left, right) => {
       const leftGap = left.targetPercent - left.scorePercent;
       const rightGap = right.targetPercent - right.scorePercent;
@@ -329,7 +331,7 @@ function determineVerdict(
     verdict: labels.noPass,
     explanation: `Overall score ${scorePercent}% is below the ${passRule.passPercent}% threshold. Primary drivers: ${
       driverTopics.length > 0 ? driverTopics.join("; ") : "broad accuracy gaps across multiple topics"
-    }. Fix these before attempting another full mock.`,
+    }. Start with these, then take the full mock.`,
   };
 }
 

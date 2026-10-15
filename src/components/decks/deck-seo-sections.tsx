@@ -4,7 +4,7 @@ import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { getDeckLongDescription, formatExamFocusedContent } from "@/lib/deck-page-copy";
 import { getDeckLinkedMock, getDeckLinkedMocks } from "@/lib/deck-seo";
 import { getDeckSeoProfile } from "@/lib/deck-seo";
-import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
+import { mockLengthShort, mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
 
 type DeckSeoSectionsProps = {
   deck: Deck;
@@ -53,7 +53,7 @@ export function DeckSeoSections({ deck }: DeckSeoSectionsProps) {
                 className="underline-offset-4 hover:underline"
                 href={`/mock-exams/${mock.slug}`}
               >
-                Free {mock.shortTitle} practice test ({mock.questionCount} Q)
+                {mock.shortTitle} practice test ({mockLengthShort(mock)})
               </Link>
             </li>
           ))}

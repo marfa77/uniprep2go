@@ -243,6 +243,7 @@ export default async function MockExamPage({
       />
 
       <article
+        data-mock-landing=""
         id="main-content"
         tabIndex={-1}
         className="mx-auto w-full max-w-4xl px-6 py-10 sm:px-10 lg:px-12"

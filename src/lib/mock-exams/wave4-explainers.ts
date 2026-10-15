@@ -480,7 +480,7 @@ export const wave4ExamExplainers: Record<string, NicheExamExplainer> = {
       "Armed security officer licensing is state-specific: many boards require an unarmed/guard-card credential first, then firearms training hours, a written knowledge test, and a separate range qualification before you may carry on duty. Topics usually include use of force, weapons safety, patrol/emergencies, and ethics. Confirm hours, fees, and vendor with your state board (e.g. FL Class G, TX Level III, CA BSIS firearm permit).",
     administeredBy: "State security licensing boards (varies by state)",
     officialFormat:
-      "State-specific written multiple-choice knowledge test plus firearms training and range qualification in most armed pathways. Question counts and pass scores vary widely by state — there is no single national armed-guard exam. UniPrep’s free check is a 60Q / 75 min written diagnostic only.",
+      "State-specific written multiple-choice knowledge test plus firearms training and range qualification in most armed pathways. Question counts and pass scores vary widely by state — there is no single national armed-guard exam. UniPrep’s check is a 60Q / 75 min written diagnostic (free 25-question version) only.",
     whoFor:
       "Security professionals upgrading from unarmed to armed posts, and new hires in states that require a separate armed officer license or firearm endorsement.",
     howToPrepare:

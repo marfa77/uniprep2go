@@ -716,7 +716,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and free 60Q mock. Not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
     keywords: [
       "best cfa level 1 formula sheet",
       "cfa level 1 formula sheet pdf",
@@ -749,7 +749,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "SIE Exam Prep — 300 Flashcards + 75Q Mock (25Q Free)",
     studyLabel: "FINRA SIE exam prep",
     description:
-      "SIE exam prep: 300 Anki flashcards + 75-question timed mock (free 25-question version) (or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
+      "SIE exam prep: 300 Anki flashcards + 75-question timed mock (free 25-question version; or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
     keywords: [
       "sie exam prep",
       "sie exam study guide free",
@@ -1063,7 +1063,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "GRE General Prep — 350 Cards + 30Q Mock (25Q Free)",
     studyLabel: "GRE exam prep",
     description:
-      "GRE General Anki: 350 Verbal + Quant flashcards plus a 30-question timed readiness check (free 25-question version) (15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
+      "GRE General Anki: 350 Verbal + Quant flashcards plus a 30-question timed readiness check (free 25-question version; 15V+15Q, both axes required). Official shorter GRE is ~1h58 / 27V+27Q + Writing — this mock is a diagnostic, not PowerPrep. Independent — not ETS material.",
     keywords: [
       "gre anki deck",
       "gre flashcards",

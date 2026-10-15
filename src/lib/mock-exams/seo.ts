@@ -118,7 +118,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
     title: "SIE Practice Test Free 2026 | 25Q Free, 75Q Timed",
     description:
-      "SIE practice test online — free 25-question diagnostic, no signup; full mock: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $11 / 300-card SIE Anki deck. Independent — not official FINRA material.",
+      "SIE practice test online — free 25-question diagnostic, no signup; full mock: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $19 / 300-card SIE Anki deck. Independent — not official FINRA material.",
     keywords: [
       "free sie practice test",
       "sie practice test",
@@ -130,7 +130,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free SIE Practice Test — 75 Questions, Timed",
     intro:
-      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — your first mock is free, start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $11 / 300-card Anki deck.",
+      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — your first mock is free, start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $19 / 300-card Anki deck.",
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -207,7 +207,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CFA Level 1 Readiness Check",
     intro:
-      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 342-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total), and CFA Institute sets the minimum passing score (MPS) after each administration — there is no fixed pass percentage. This check is a shorter diagnostic with a UniPrep2Go readiness target of 70%.",
+      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 348-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total), and CFA Institute sets the minimum passing score (MPS) after each administration — there is no fixed pass percentage. This check is a shorter diagnostic with a UniPrep2Go readiness target of 70%.",
     audience: "CFA Level 1 candidates who want a weighted topic baseline before committing to a full mock provider.",
     practiceTestLabel: "CFA Level 1 practice test",
   },
@@ -478,7 +478,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free GRE General Readiness Check",
     intro:
-      "A timed GRE General diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Official shorter GRE (~1 hour 58 minutes) is 27 Verbal + 27 Quant plus Analytical Writing; this free check is a 30-question baseline (Writing not included), not an adaptive PowerPrep form. Live 350-card Anki (175V/175Q) for daily repair after the report.",
+      "A timed GRE General diagnostic scored on the two official ETS MCQ axes — Verbal Reasoning and Quantitative Reasoning (130–170 each). Both sections must clear the readiness bar for a pass. Official shorter GRE (~1 hour 58 minutes) is 27 Verbal + 27 Quant plus Analytical Writing; this check is a 30-question baseline (free 25-question version; Writing not included), not an adaptive PowerPrep form. Live 350-card Anki (175V/175Q) for daily repair after the report.",
     audience:
       "Graduate and business school applicants who want a baseline timed diagnostic before official ETS PowerPrep or tutoring.",
     practiceTestLabel: "GRE practice test",
@@ -859,7 +859,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NHA CBCS Practice Test — 60 Questions",
     intro:
-      "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 60-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This free check is a shorter 60Q / 75 min diagnostic — not a full-length NHA form and not AAPC CPC.",
+      "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 60-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This check is a shorter 60Q / 75 min diagnostic (free 25-question version) — not a full-length NHA form and not AAPC CPC.",
     audience:
       "Medical billing and coding students and revenue-cycle staff preparing for NHA CBCS who want a timed baseline before NHA’s paid practice tests or official study guide.",
     practiceTestLabel: "NHA CBCS practice test",
@@ -897,7 +897,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CDL General Knowledge Practice Test — 60 Questions",
     intro:
-      "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — then join the planned 60-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this free check is a longer 60Q / 75 min diagnostic — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.).",
+      "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — then join the planned 60-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this check is a longer 60Q / 75 min diagnostic (free 25-question version) — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.).",
     audience:
       "CLP / Class A–B applicants who want a free timed General Knowledge baseline before studying their state CDL manual and booking the DMV knowledge test.",
     practiceTestLabel: "CDL General Knowledge practice test",

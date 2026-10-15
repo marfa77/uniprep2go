@@ -21,6 +21,7 @@ type MockReportHandoffProps = {
   retakeHref: string;
   onRetake?: () => void;
   weakTopicLabels?: string[];
+  checkoutPrice?: { priceLabel: string; fullPriceLabel?: string };
 };
 
 export function MockReportHandoff({
@@ -33,6 +34,7 @@ export function MockReportHandoff({
   retakeHref,
   onRetake,
   weakTopicLabels = [],
+  checkoutPrice,
 }: MockReportHandoffProps) {
   function trackDeckClick(source: string) {
     trackMockEvent({
@@ -49,10 +51,17 @@ export function MockReportHandoff({
       ? weakTopicLabels.slice(0, 3).join(", ")
       : null;
 
-  const primaryCheckoutLabel = getMockRepairCheckoutCtaLabel({
-    weakTopicLabels,
-    existingCtaLabel: linkedCheckout?.ctaLabel,
-  });
+  const primaryCheckoutLabel = checkoutPrice
+    ? getMockRepairCheckoutCtaLabel({
+        weakTopicLabels,
+        priceLabel: checkoutPrice.priceLabel,
+        maxTopics: 3,
+      })
+    : getMockRepairCheckoutCtaLabel({
+        weakTopicLabels,
+        existingCtaLabel: linkedCheckout?.ctaLabel,
+        maxTopics: 3,
+      });
 
   const primaryDeckLabel = weakLabel
     ? "Fix your weak topics before retake"
@@ -68,6 +77,9 @@ export function MockReportHandoff({
           source={`mock_report:${mockSlug}:checkout`}
         >
           {primaryCheckoutLabel}
+          {checkoutPrice?.fullPriceLabel ? (
+            <s className="ml-2 font-normal text-[#fffaf0]/70">{checkoutPrice.fullPriceLabel}</s>
+          ) : null}
         </TrackedCheckoutLink>
       ) : (
         <Link

@@ -208,7 +208,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions are on the CDL General Knowledge test?",
         answer:
-          "Most states use about 50 questions with an 80% pass (40 correct). Some states differ — always verify in your state’s official CDL manual / DMV page. UniPrep’s free check is a longer 60-question / 75-minute diagnostic, not a DMV form.",
+          "Most states use about 50 questions with an 80% pass (40 correct). Some states differ — always verify in your state’s official CDL manual / DMV page. UniPrep’s check is a longer 60-question / 75-minute diagnostic (free 25-question version), not a DMV form.",
       },
       {
         question: "Is CDL General Knowledge the same as the skills test?",
@@ -478,7 +478,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions are on the official NHA CMAA exam?",
         answer:
-          "The 2021 NHA test plan lists 110 scored items plus 25 pretest items (135 total) in 2 hours 15 minutes. UniPrep’s free check is a shorter 60-question / 50-minute diagnostic.",
+          "The 2021 NHA test plan lists 110 scored items plus 25 pretest items (135 total) in 2 hours 15 minutes. UniPrep’s check is a shorter 60-question / 50-minute diagnostic (free 25-question version).",
       },
     ],
     keywords: ["nha cmaa practice test", "medical administrative assistant practice test"],
@@ -503,7 +503,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions are on the official NHA CBCS exam?",
         answer:
-          "The public NHA CBCS test plan lists 100 scored items plus 25 pretest items (125 total) in 3 hours, with a scaled passing score of 390 (200–500 scale). UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic.",
+          "The public NHA CBCS test plan lists 100 scored items plus 25 pretest items (125 total) in 3 hours, with a scaled passing score of 390 (200–500 scale). UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
       },
       {
         question: "Is CBCS the same as AAPC CPC?",
@@ -1073,7 +1073,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions are on the NIC Cosmetology Theory exam?",
         answer:
-          "The NIC Cosmetology Theory CIB lists 110 items (100 scored + 10 pretest) in 90 minutes. Some state CIBs allot 120 minutes — verify your board. UniPrep2Go’s free check is a shorter 60-question / 75-minute diagnostic.",
+          "The NIC Cosmetology Theory CIB lists 110 items (100 scored + 10 pretest) in 90 minutes. Some state CIBs allot 120 minutes — verify your board. UniPrep2Go’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
       },
       {
         question: "Is this the esthetician or nail exam?",
@@ -1300,10 +1300,10 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "ascp-mls-readiness-check": explainer({
     practiceTestName: "ASCP MLS Practice Test",
     whatIsExam:
-      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 90-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
+      "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s check is a shorter 60-question / 90-minute linear diagnostic (free 25-question version; not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
     administeredBy: "ASCP Board of Certification",
     officialFormat:
-      "100 one-best-answer multiple-choice questions, computer adaptive, 2 hours 30 minutes, Pearson VUE; scaled pass 400 (100–999). UniPrep’s check (free 25-question version) is 60 questions / 90 minutes / 70% diagnostic on four benches — not CAT and not 1:1 BOC percentages.",
+      "100 one-best-answer multiple-choice questions, computer adaptive, 2 hours 30 minutes, Pearson VUE; scaled pass 400 (100–999). UniPrep’s check is 60 questions / 90 minutes / 70% diagnostic (free 25-question version) on four benches — not CAT and not 1:1 BOC percentages.",
     whoFor:
       "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
     howToPrepare:
@@ -1312,7 +1312,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "How many questions are on the ASCP MLS exam?",
         answer:
-          "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s free check is a shorter 60-question / 90-minute linear diagnostic.",
+          "The national MLS(ASCP) exam is 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes. The scaled passing score is 400 on a 100–999 scale. UniPrep’s check is a shorter 60-question / 90-minute linear diagnostic (free 25-question version).",
       },
       {
         question: "Is MLS the same as MLT?",

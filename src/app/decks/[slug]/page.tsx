@@ -73,7 +73,11 @@ import {
 } from "@/lib/page-layout";
 import { deckRobots, finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
-import { FREE_DIAGNOSTIC_QUESTIONS, freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
+import {
+  FREE_DIAGNOSTIC_QUESTIONS,
+  freeMockLinkNote,
+  freeMockStartLabel,
+} from "@/lib/mock-exams/free-diagnostic";
 
 export const revalidate = 3600;
 
@@ -239,8 +243,8 @@ export default async function DeckPage({
             ? [
                 {
                   href: `/mock-exams/${practiceMock.slug}`,
-                  label: `Free ${deck.shortName} practice test`,
-                  note: `${practiceMock.questionCount} questions with topic scoring`,
+                  label: `${deck.shortName} practice test`,
+                  note: `${freeMockLinkNote(practiceMock)} with topic scoring`,
                 },
               ]
             : []),

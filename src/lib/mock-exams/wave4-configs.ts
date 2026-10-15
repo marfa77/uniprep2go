@@ -734,9 +734,9 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "foundations", label: "Foundations & professional practice" }
     ]),
     officialSourceNote:
-      "Typical ETS Praxis Special Education: Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours; some states use other codes. Passing scores are set by states. This free check is a shorter 60-question / 75-minute diagnostic — not Praxis Core (5713/5723/5733) and not Elementary 5001. Independent UniPrep2Go practice — not ETS material.",
+      "Typical ETS Praxis Special Education: Core Knowledge and Applications (5355) is 120 selected-response questions in 2 hours; some states use other codes. Passing scores are set by states. This check is a shorter 60-question / 75-minute diagnostic (free 25-question version) — not Praxis Core (5713/5723/5733) and not Elementary 5001. Independent UniPrep2Go practice — not ETS material.",
     description:
-      "60-question Praxis Special Education readiness check (free 25-question version) (75 min) with topic scoring — shorter than typical 5355 120Q / 2h.",
+      "60-question / 75-minute Praxis Special Education readiness check (free 25-question version) with topic scoring — shorter than typical 5355 120Q / 2h.",
     lastUpdated: "2026-10-04",
     examBody: "ETS",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",

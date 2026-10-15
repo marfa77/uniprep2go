@@ -56,14 +56,20 @@ export function CookieConsentBanner() {
   return (
     <div
       ref={bannerRef}
-      className="fixed inset-x-0 bottom-0 z-50 border-t border-[#18140f]/15 bg-[#fffaf0]/95 p-4 backdrop-blur-sm sm:p-5"
+      className="fixed inset-x-0 bottom-0 z-50 border-t border-[#18140f]/15 bg-[#fffaf0]/95 p-4 backdrop-blur-sm sm:p-5 [html[data-mock-session]_&]:px-4 [html[data-mock-session]_&]:py-2"
       role="dialog"
       aria-label="Cookie consent"
     >
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+      <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 sm:flex-row sm:items-end sm:justify-between [html[data-mock-session]_&]:flex-row [html[data-mock-session]_&]:items-center [html[data-mock-session]_&]:gap-3">
         <div className="max-w-3xl space-y-2 text-sm leading-6 text-[#4f493e]">
-          <p className="font-semibold text-[#18140f]">Cookies and analytics</p>
-          <p>
+          <p className="font-semibold text-[#18140f] [html[data-mock-session]_&]:hidden">Cookies and analytics</p>
+          <p className="hidden text-xs leading-5 [html[data-mock-session]_&]:block">
+            Optional analytics cookies.{" "}
+            <Link className="underline decoration-[#18140f]/30 underline-offset-4" href="/cookies">
+              Details
+            </Link>
+          </p>
+          <p className="[html[data-mock-session]_&]:hidden">
             We use strictly necessary local storage for your cookie choice. Optional Google
             Analytics and Ahrefs Analytics load only when you accept. Basic first-party page metrics
             run without cookies. See our{" "}
@@ -78,7 +84,7 @@ export function CookieConsentBanner() {
           </p>
         </div>
 
-        <div className="flex flex-col gap-2 sm:flex-row">
+        <div className="flex flex-col gap-2 sm:flex-row [html[data-mock-session]_&]:shrink-0 [html[data-mock-session]_&]:flex-row">
           <button
             className={btnSecondarySm}
             type="button"

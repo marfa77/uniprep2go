@@ -11,7 +11,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-2-anki-deck":
     "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a 60-question / 120-minute mock (free 25-question version) and the matching formula PDF. Not a Level 1 leftover dump.",
   "cfa-level-2-formula-reference-2026":
-    "60-page 2026 L2 formula reference: 219 formulas + 276 definitions plus an 80-question recall drill — pairs with the free 60Q item-set diagnostic.",
+    "60-page 2026 L2 formula reference: 219 formulas + 276 definitions plus an 80-question recall drill — pairs with the 60Q item-set diagnostic (free 25-question version).",
   "cat4-level-d-anki-deck-printable-pdf":
     "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
@@ -27,9 +27,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "german-a2-anki-deck":
     "2,115 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
-    "Series 7 flashcards: 300 Top-Off cards for suitability, products, and order flow — plus a 60-question Series 7 mock (free 25-question version) (official exam is 125 scored + 5 pretest / 3h45 / passing score 72 equated).",
+    "Series 7 flashcards: 300 Top-Off cards for suitability, products, and order flow — plus a 60-question Series 7 mock (free 25-question version; official exam is 125 scored + 5 pretest / 3h45 / passing score 72 equated).",
   "servsafe-manager-anki-deck":
-    "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a 90-question ServSafe mock (free 25-question version) (official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
+    "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a 90-question ServSafe mock (free 25-question version; official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
     "350 Verbal + Quant cards for the shorter GRE — 30-question / 45-minute readiness check (free 25-question version) is live now (both axes required). Not a Magoosh/Manhattan vocab mega.",
   "gmat-focus-anki-deck":
@@ -53,7 +53,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nha-cpct-anki-deck":
     "120 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a 120-question / 120-minute readiness check (free 25-question version). Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
-    "January 2026 PTCE outline/blueprint PDF — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 90Q online mock.",
+    "January 2026 PTCE outline/blueprint PDF — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + 90Q online mock (free 25-question version).",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a 50-question QS competency mock (free 25-question version).",
   "mrics-anki-deck":
@@ -63,17 +63,17 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "pmp-anki-deck":
     "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
   "parapro-anki-deck":
-    "Planned 120-card ParaPro Anki (reading, writing, math, classroom application). Take the free 60Q / 75 min diagnostic now — official ETS ParaPro is 90Q / 150 min.",
+    "Planned 120-card ParaPro Anki (reading, writing, math, classroom application). Take the 60Q / 75 min diagnostic (free 25-question version) now — official ETS ParaPro is 90Q / 150 min.",
   "acsm-cpt-anki-deck":
-    "$11 / 120 ACSM-CPT cards + free 60Q / 75-min timed check from the same 120-item bank — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
+    "$11 / 120 ACSM-CPT cards + 60Q / 75-min timed check (free 25-question version) from the same 120-item bank — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
   "ashrae-certifications-anki-deck":
-    "$11 / 250 ASHRAE multi-cred cards + free 50Q diagnostic — ownable .apkg vs mega free Q-banks; keep ASHRAE’s official 30Q practice separate.",
+    "$11 / 250 ASHRAE multi-cred cards + 50Q diagnostic (free 25-question version) — ownable .apkg vs mega free Q-banks; keep ASHRAE’s official 30Q practice separate.",
   "nebosh-anki-deck":
-    "$11 / 250 NEBOSH IGC cards + free 50Q knowledge diagnostic — honest: official GIC1/GIC2 are not MCQ.",
+    "$11 / 250 NEBOSH IGC cards + 50Q knowledge diagnostic (free 25-question version) — honest: official GIC1/GIC2 are not MCQ.",
   "well-ap-anki-deck":
     "$11 / 250 WELL AP cards + 50Q timed mock (free 25-question version) — official 115 items / 2.5h / scaled 170. Not IWBI material.",
   "cem-anki-deck":
-    "$11 / 250 CEM cards + free 50Q / 50 min timed mock — official AEE CEM is 130Q / 4h / open book / scaled 700. Not the paid 65Q AEE self-eval.",
+    "$11 / 250 CEM cards + 50Q / 50 min timed mock (free 25-question version) — official AEE CEM is 130Q / 4h / open book / scaled 700. Not the paid 65Q AEE self-eval.",
   "california-real-estate-exam-anki-deck":
     "250 California DRE-only cards + 60Q timed mock (free 25-question version) — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
@@ -83,9 +83,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "citizenship-naturalization-anki-bundle":
     "Multi-country citizenship Anki bundle + free timed civics diagnostics (UK / CA / AU / more) — not a single-country handbook dump.",
   "medicare-counseling-anki-deck":
-    "Planned SHIP Medicare counseling Anki. Take the free 60Q diagnostic now — no national published Q-count; verify your state SHIP/OCCT path.",
+    "Planned SHIP Medicare counseling Anki. Take the 60Q diagnostic (free 25-question version) now — no national published Q-count; verify your state SHIP/OCCT path.",
   "czech-citizenship-anki-deck":
-    "$9 / 169 Czech reálie cards + free 60Q / 45 min diagnostic — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
+    "$9 / 169 Czech reálie cards + 60Q / 45 min diagnostic (free 25-question version) — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
@@ -93,7 +93,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "aha-bls-provider-anki-deck":
     "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). 60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version) — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
-    "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + free 60Q / 75 min diagnostic from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
+    "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "ascp-mls-anki-deck":
     "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
@@ -139,7 +139,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "veterinary-assistant-anki-deck":
     "Planned 60-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
-    "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + free 60Q / 75 min diagnostic from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
+    "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
     "$26 / 2504 IELTS–TOEFL English cards with Russian glosses + cognate traps — prefer over free AnkiWeb EN–RU / EVU dumps.",
   "ielts-toefl-english-for-turkish-speakers-anki-deck":
@@ -162,11 +162,11 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the free 60Q diagnostic. Ownable $29 .apkg vs mega free 125Q banks; not Series 63 state-law flashcards.",
+    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $29 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the 90-question mock (free 25-question version) first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
-    "Live 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. 30-question timed diagnostic (free 25-question version) (15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
+    "Live 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. 30-question timed diagnostic (free 25-question version; 15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "gmat-focus-anki-deck":
     "Live 200 unique cards for the current GMAT Exam (2026 SuperScore era): Quant algebra/arithmetic, Critical Reasoning + RC, and Data Insights including Data Sufficiency. Rewritten October 2026 — not 10th Edition leftovers and not a padded 400-card clone dump. Pair with the 45-question timed check (free 25-question version).",
   "sat-anki-deck":
@@ -176,7 +176,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the 60-question readiness check (free 25-question version) first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
   "luxembourg-vivre-ensemble-anki-deck":
-    "Subdecks follow the official exam split — module 1 fundamental rights (42 cards, 10 exam questions), module 2 state and municipal institutions (104 cards, 20 questions), module 3 history and European integration (49 cards, 10 questions) — plus exam/nationality steps and daily-life context. Every card carries a key-point line; 22 cards flag the classic traps (Council of State does not vote laws, 1839 vs 1867, foreigners and legislative elections). Sit the 40-question, 60-minute exam simulation (free 25-question version) (same 10/20/10 split), then study your weakest module in the language you will sit.",
+    "Subdecks follow the official exam split — module 1 fundamental rights (42 cards, 10 exam questions), module 2 state and municipal institutions (104 cards, 20 questions), module 3 history and European integration (49 cards, 10 questions) — plus exam/nationality steps and daily-life context. Every card carries a key-point line; 22 cards flag the classic traps (Council of State does not vote laws, 1839 vs 1867, foreigners and legislative elections). Sit the 40-question, 60-minute exam simulation (free 25-question version; same 10/20/10 split), then study your weakest module in the language you will sit.",
   "rd-exam-anki-deck":
     "CDR domain-weighted prompts: Principles of Dietetics, Nutrition Care (PES/ADIME), Management of Food and Nutrition Programs, and Foodservice Systems. Explanations name why distractors fail. Take the 120-question RD readiness check (free 25-question version) first, then filter Anki to weak domains — not a random 2,000-card clinical dump.",
   "enrolled-agent-anki-deck":
@@ -289,7 +289,7 @@ export const positioningOverrides: Partial<
       "250 formulas + 98 definitions — not a free one-page cheat sheet",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
-      "Same validated item bank as the 348-card CFA Level 1 Anki deck + free 60Q mock",
+      "Same validated item bank as the 348-card CFA Level 1 Anki deck + 60Q mock (free 25-question version)",
     ],
     summaryProse:
       "Free one-pagers look helpful until the exam clock starts. This $19 reference forces typed formula recall across all 10 topics, then hands you an 80-question drill and the 60-question mock (free 25-question version) for gap scoring.",
@@ -320,7 +320,7 @@ export const positioningOverrides: Partial<
       "Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
-      "Full-length free 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a free timed 60Q job-function diagnostic plus an ownable $29 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
+      "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $29 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
@@ -381,7 +381,7 @@ export const positioningOverrides: Partial<
       "Honest: no single U.S. federal BMS license; Niagara 4 TCP is vendor training",
     ],
     summaryProse:
-      "There is no one federal BMS exam. UniPrep wins when you want a free timed 60-question BACnet/HVAC/ops diagnostic plus an ownable $11 .apkg — not CertifBus’s 10 free questions/day and not a Niagara 4 TCP substitute.",
+      "There is no one federal BMS exam. UniPrep wins when you want a timed 60-question BACnet/HVAC/ops diagnostic (free 25-question version) plus an ownable $11 .apkg — not CertifBus’s 10 free questions/day and not a Niagara 4 TCP substitute.",
   },
   "mrics-quantity-surveying-anki-deck": {
     ourEdge: [
@@ -405,13 +405,13 @@ export const positioningOverrides: Partial<
   },
   "leed-green-associate-anki-deck": {
     ourEdge: [
-      "120 LEED v5 GA domain cards from the same bank as the free 60Q mock",
+      "120 LEED v5 GA domain cards from the same bank as the 60Q mock (free 25-question version)",
       "Official honesty: GBCI form is 100Q / 2h / scaled 170 — our mock is a shorter diagnostic",
       "Ownable $11 .apkg — not a free 100–700Q lead-gen bank",
       "Independent prep — not USGBC/GBCI exam material",
     ],
     summaryProse:
-      "Free LEED GA Q-banks (Archiroots, CareerEmployer, Projectific) chase volume. UniPrep wins when you want a free timed 60-question diagnostic plus an ownable $11 Anki .apkg mapped to the same domains — then sit the real 100Q / 2h / 170 exam.",
+      "Free LEED GA Q-banks (Archiroots, CareerEmployer, Projectific) chase volume. UniPrep wins when you want a timed 60-question diagnostic (free 25-question version) plus an ownable $11 Anki .apkg mapped to the same domains — then sit the real 100Q / 2h / 170 exam.",
   },
   "pmp-anki-deck": {
     ourEdge: [
@@ -451,7 +451,7 @@ export const positioningOverrides: Partial<
       "Independent prep — not a state SHIP certificate",
     ],
     summaryProse:
-      "State SHIP offices own certification. UniPrep’s 60-question diagnostic (free 25-question version) (and planned Anki) is independent practice for Medicare counseling themes — not OCCT and not a national exam form.",
+      "State SHIP offices own certification. UniPrep’s 60-question diagnostic (free 25-question version; and planned Anki) is independent practice for Medicare counseling themes — not OCCT and not a national exam form.",
   },
   "czech-citizenship-anki-deck": {
     ourEdge: [
@@ -471,7 +471,7 @@ export const positioningOverrides: Partial<
       "≠ Heartsaver / ACLS — independent prep, not an AHA course card",
     ],
     summaryProse:
-      "OpenExamPrep 100Q banks and HeartStartCPR quizzes own volume. UniPrep wins when you want a free timed 60Q / 84% cognitive diagnostic that already uses 2025 infant and FBAO science, plus a planned ownable Anki waitlist — not a 25-question HeartCode substitute and not skills testing.",
+      "OpenExamPrep 100Q banks and HeartStartCPR quizzes own volume. UniPrep wins when you want a timed 60Q / 84% cognitive diagnostic (free 25-question version) that already uses 2025 infant and FBAO science, plus a planned ownable Anki waitlist — not a 25-question HeartCode substitute and not skills testing.",
   },
   "ardms-spi-anki-deck": {
     ourEdge: [
@@ -481,7 +481,7 @@ export const positioningOverrides: Partial<
       "Text/physics only — ≠ ABD/OB image interpretation",
     ],
     summaryProse:
-      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a free timed 60Q physics diagnostic with topic scoring plus an ownable $11 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
+      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a timed 60Q physics diagnostic (free 25-question version) with topic scoring plus an ownable $11 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
   },
   "abo-optician-anki-deck": {
     ourEdge: [
@@ -491,7 +491,7 @@ export const positioningOverrides: Partial<
       "Spectacle NOCE only — ≠ NCLE contacts, ≠ optometry",
     ],
     summaryProse:
-      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic with topic scoring plus an ownable $11 / 120-card Anki — not a full 125-item NOCE substitute and not NCLE.",
+      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus an ownable $11 / 120-card Anki — not a full 125-item NOCE substitute and not NCLE.",
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
@@ -501,7 +501,7 @@ export const positioningOverrides: Partial<
       "≠ ASCP MLT technician credential",
     ],
     summaryProse:
-      "OpenExamPrep and CareerEmployer 200+ banks plus ASCP’s paid BOC interactive exam own volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLT dump.",
+      "OpenExamPrep and CareerEmployer 200+ banks plus ASCP’s paid BOC interactive exam own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLT dump.",
   },
   "ascp-mlt-anki-deck": {
     ourEdge: [
@@ -511,7 +511,7 @@ export const positioningOverrides: Partial<
       "≠ ASCP MLS; California-only MLT sitting is 80Q / 2h",
     ],
     summaryProse:
-      "OpenExamPrep, Mometrix, and MLSIA 100Q CAT banks own official length. UniPrep wins when you want a free no-signup timed 60Q diagnostic with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLS dump.",
+      "OpenExamPrep, Mometrix, and MLSIA 100Q CAT banks own official length. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with bench-topic scoring plus a planned ownable Anki waitlist — not a 100-item CAT substitute and not an MLS dump.",
   },
   "aswb-bachelors-anki-deck": {
     ourEdge: [
@@ -521,7 +521,7 @@ export const positioningOverrides: Partial<
       "≠ Clinical/LCSW and ≠ Masters",
     ],
     summaryProse:
-      "OpenExamPrep 193+ and Mometrix own volume. UniPrep wins when you want a free no-signup timed 60Q generalist diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
+      "OpenExamPrep 193+ and Mometrix own volume. UniPrep wins when you want a no-signup timed 60Q generalist diagnostic (free 25-question version) with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
   },
   "aswb-clinical-anki-deck": {
     ourEdge: [
@@ -531,7 +531,7 @@ export const positioningOverrides: Partial<
       "≠ Bachelors/LSW",
     ],
     summaryProse:
-      "OpenExamPrep 110Q no-signup banks own Clinical volume. UniPrep wins when you want a free timed 60Q LCSW-level diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
+      "OpenExamPrep 110Q no-signup banks own Clinical volume. UniPrep wins when you want a timed 60Q LCSW-level diagnostic (free 25-question version) with topic scoring plus a planned ownable Anki waitlist — not a 4-hour 122-item substitute.",
   },
   "barber-state-anki-deck": {
     ourEdge: [
@@ -541,7 +541,7 @@ export const positioningOverrides: Partial<
       "Theory only — practical/skills exam is separate; ≠ Cosmetology Theory",
     ],
     summaryProse:
-      "CosmetologyGuru and NICPrep own volume. UniPrep wins when you want a free timed 60Q theory diagnostic plus a planned ownable Anki waitlist — not the practical exam and not a 110-item Cosmetology dump.",
+      "CosmetologyGuru and NICPrep own volume. UniPrep wins when you want a timed 60Q theory diagnostic (free 25-question version) plus a planned ownable Anki waitlist — not the practical exam and not a 110-item Cosmetology dump.",
   },
   "medication-aide-anki-deck": {
     ourEdge: [
@@ -551,7 +551,7 @@ export const positioningOverrides: Partial<
       "≠ NNAAP CNA and ≠ LPN/RN",
     ],
     summaryProse:
-      "PracticeQuiz / TheExamsLab dumps own volume. UniPrep wins when you want a free timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a 2-hour official MACE substitute.",
+      "PracticeQuiz / TheExamsLab dumps own volume. UniPrep wins when you want a timed 60Q diagnostic (free 25-question version) with topic scoring plus a planned ownable Anki waitlist — not a 2-hour official MACE substitute.",
   },
   "nail-technician-state-anki-deck": {
     ourEdge: [
@@ -561,7 +561,7 @@ export const positioningOverrides: Partial<
       "Theory only — practical separate; ≠ Cosmetology / Barber Theory",
     ],
     summaryProse:
-      "SalonExam / CosmetologyGuru own volume. UniPrep wins when you want a free timed 60Q nail-theory diagnostic plus a planned Anki waitlist — not a 110-item NIC substitute and not the practical.",
+      "SalonExam / CosmetologyGuru own volume. UniPrep wins when you want a timed 60Q nail-theory diagnostic (free 25-question version) plus a planned Anki waitlist — not a 110-item NIC substitute and not the practical.",
   },
   "nsca-cpt-anki-deck": {
     ourEdge: [
@@ -571,7 +571,7 @@ export const positioningOverrides: Partial<
       "≠ CSCS and ≠ NASM/ACE/ACSM CPT",
     ],
     summaryProse:
-      "Mometrix / OpenExamPrep own volume. UniPrep wins when you want a free timed 60Q NSCA-CPT diagnostic plus a planned Anki waitlist — not a 3-hour video form and not CSCS.",
+      "Mometrix / OpenExamPrep own volume. UniPrep wins when you want a timed 60Q NSCA-CPT diagnostic (free 25-question version) plus a planned Anki waitlist — not a 3-hour video form and not CSCS.",
   },
   "phr-hrci-anki-deck": {
     ourEdge: [
@@ -581,7 +581,7 @@ export const positioningOverrides: Partial<
       "≠ SPHR and ≠ SHRM-CP",
     ],
     summaryProse:
-      "Pocket Prep / Mometrix own volume. UniPrep wins when you want a free timed 60Q PHR diagnostic plus a planned Anki waitlist — not a 115-item HRCI substitute.",
+      "Pocket Prep / Mometrix own volume. UniPrep wins when you want a timed 60Q PHR diagnostic (free 25-question version) plus a planned Anki waitlist — not a 115-item HRCI substitute.",
   },
   "physical-therapy-aide-anki-deck": {
     ourEdge: [
@@ -591,7 +591,7 @@ export const positioningOverrides: Partial<
       "≠ NPTE and ≠ PTA",
     ],
     summaryProse:
-      "Job-quiz sites own volume. UniPrep wins when you want a free timed 60Q aide-scope diagnostic plus a planned Anki waitlist — not NPTE or PTA licensure prep.",
+      "Job-quiz sites own volume. UniPrep wins when you want a timed 60Q aide-scope diagnostic (free 25-question version) plus a planned Anki waitlist — not NPTE or PTA licensure prep.",
   },
   "praxis-core-anki-deck": {
     ourEdge: [
@@ -601,7 +601,7 @@ export const positioningOverrides: Partial<
       "≠ Praxis Special Education 5355",
     ],
     summaryProse:
-      "240Tutoring / 240 and ETS own official length. UniPrep wins when you want a free timed 60Q combined diagnostic plus a planned Anki waitlist — not three Core sittings and not essays.",
+      "240Tutoring / 240 and ETS own official length. UniPrep wins when you want a timed 60Q combined diagnostic (free 25-question version) plus a planned Anki waitlist — not three Core sittings and not essays.",
   },
   "praxis-special-education-anki-deck": {
     ourEdge: [
@@ -611,7 +611,7 @@ export const positioningOverrides: Partial<
       "≠ Praxis Core",
     ],
     summaryProse:
-      "Quizlet dumps own volume. UniPrep wins when you want a free timed 60Q SpEd diagnostic plus a planned Anki waitlist — not a 120-item 5355 substitute.",
+      "Quizlet dumps own volume. UniPrep wins when you want a timed 60Q SpEd diagnostic (free 25-question version) plus a planned Anki waitlist — not a 120-item 5355 substitute.",
   },
   "precision-nutrition-l1-anki-deck": {
     ourEdge: [
@@ -621,7 +621,7 @@ export const positioningOverrides: Partial<
       "≠ RDN and ≠ CPT",
     ],
     summaryProse:
-      "PN’s own course owns the official path. UniPrep wins when you want a free timed 60Q coaching diagnostic plus a planned Anki waitlist — not an RDN or CPT dump.",
+      "PN’s own course owns the official path. UniPrep wins when you want a timed 60Q coaching diagnostic (free 25-question version) plus a planned Anki waitlist — not an RDN or CPT dump.",
   },
   "unarmed-security-officer-anki-deck": {
     ourEdge: [
@@ -631,7 +631,7 @@ export const positioningOverrides: Partial<
       "≠ armed card / range",
     ],
     summaryProse:
-      "OpenExamPrep multi-state banks own volume. UniPrep wins when you want a free timed 60Q unarmed diagnostic plus a planned Anki waitlist — not an armed qualification.",
+      "OpenExamPrep multi-state banks own volume. UniPrep wins when you want a timed 60Q unarmed diagnostic (free 25-question version) plus a planned Anki waitlist — not an armed qualification.",
   },
   "wastewater-operator-1-anki-deck": {
     ourEdge: [
@@ -641,7 +641,7 @@ export const positioningOverrides: Partial<
       "≠ drinking-water treatment operator",
     ],
     summaryProse:
-      "State operator handbooks own the license. UniPrep wins when you want a free timed 60Q wastewater diagnostic plus a planned Anki waitlist — not a drinking-water dump.",
+      "State operator handbooks own the license. UniPrep wins when you want a timed 60Q wastewater diagnostic (free 25-question version) plus a planned Anki waitlist — not a drinking-water dump.",
   },
   "electrical-journeyman-anki-deck": {
     ourEdge: [
@@ -651,7 +651,7 @@ export const positioningOverrides: Partial<
       "≠ master electrician / contractor",
     ],
     summaryProse:
-      "PSI/Prometric board banks own official length. UniPrep wins when you want a free timed 60Q NEC diagnostic plus a planned Anki waitlist — not a master electrician form.",
+      "PSI/Prometric board banks own official length. UniPrep wins when you want a timed 60Q NEC diagnostic (free 25-question version) plus a planned Anki waitlist — not a master electrician form.",
   },
   "nate-core-anki-deck": {
     ourEdge: [
@@ -661,7 +661,7 @@ export const positioningOverrides: Partial<
       "≠ EPA 608 refrigerant handling",
     ],
     summaryProse:
-      "NATE’s own prep owns the credential. UniPrep wins when you want a free timed 60Q Core diagnostic plus a planned Anki waitlist — not a specialty or EPA 608 dump.",
+      "NATE’s own prep owns the credential. UniPrep wins when you want a timed 60Q Core diagnostic (free 25-question version) plus a planned Anki waitlist — not a specialty or EPA 608 dump.",
   },
   "plumbing-journeyman-anki-deck": {
     ourEdge: [
@@ -671,7 +671,7 @@ export const positioningOverrides: Partial<
       "≠ master plumber",
     ],
     summaryProse:
-      "Board code books own the license. UniPrep wins when you want a free timed 60Q plumbing diagnostic plus a planned Anki waitlist — not a master plumber form.",
+      "Board code books own the license. UniPrep wins when you want a timed 60Q plumbing diagnostic (free 25-question version) plus a planned Anki waitlist — not a master plumber form.",
   },
   "nha-cbcs-anki-deck": {
     ourEdge: [
@@ -681,7 +681,7 @@ export const positioningOverrides: Partial<
       "≠ AAPC CPC / NHA CCMA — independent prep, not NHA material",
     ],
     summaryProse:
-      "NHA’s paid practice tests and MedPreps/OpenExamPrep free banks win on volume. UniPrep wins when you want a free timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a full-length 125-item NHA substitute.",
+      "NHA’s paid practice tests and MedPreps/OpenExamPrep free banks win on volume. UniPrep wins when you want a timed 60Q diagnostic (free 25-question version) with topic scoring plus a planned ownable Anki waitlist — not a full-length 125-item NHA substitute.",
   },
   "cosmetology-state-anki-deck": {
     ourEdge: [
@@ -691,7 +691,7 @@ export const positioningOverrides: Partial<
       "Theory only — practical/skills exam is separate",
     ],
     summaryProse:
-      "SalonExam and AnkiWeb 300+ dumps win on volume. UniPrep wins when you want a free timed 60Q NIC-style diagnostic plus a planned ownable Anki waitlist — not a full 110-item substitute and not the practical exam.",
+      "SalonExam and AnkiWeb 300+ dumps win on volume. UniPrep wins when you want a timed 60Q NIC-style diagnostic (free 25-question version) plus a planned ownable Anki waitlist — not a full 110-item substitute and not the practical exam.",
   },
   "cdl-general-knowledge-anki-deck": {
     ourEdge: [
@@ -701,7 +701,7 @@ export const positioningOverrides: Partial<
       "Knowledge only — ≠ skills/road test; endorsements separate",
     ],
     summaryProse:
-      "CristCDL, US Permit Prep, and state DMV practice banks win on free Q volume and 50Q format match. UniPrep wins when you want a free no-signup timed 60Q diagnostic with topic scoring plus a planned ownable Anki waitlist — not a DMV substitute.",
+      "CristCDL, US Permit Prep, and state DMV practice banks win on no-cost Q volume and 50Q format match. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus a planned ownable Anki waitlist — not a DMV substitute.",
   },
   "armed-security-officer-anki-deck": {
     ourEdge: [
@@ -711,7 +711,7 @@ export const positioningOverrides: Partial<
       "≠ Unarmed guard card; range/live-fire qualification separate",
     ],
     summaryProse:
-      "OpenExamPrep multi-state banks win on free Q volume. UniPrep wins when you want a free no-signup timed 60Q written diagnostic plus a planned ownable Anki waitlist — not a board substitute and not the range qualification.",
+      "OpenExamPrep multi-state banks win on free Q volume. UniPrep wins when you want a no-signup timed 60Q written diagnostic (free 25-question version) plus a planned ownable Anki waitlist — not a board substitute and not the range qualification.",
   },
   "veterinary-assistant-anki-deck": {
     ourEdge: [
@@ -721,7 +721,7 @@ export const positioningOverrides: Partial<
       "≠ VTNE (veterinary technician)",
     ],
     summaryProse:
-      "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus a planned ownable Anki waitlist — not a full 100-item AVA substitute and not VTNE.",
+      "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) plus a planned ownable Anki waitlist — not a full 100-item AVA substitute and not VTNE.",
   },
   "medical-scribe-anki-deck": {
     ourEdge: [
@@ -731,7 +731,7 @@ export const positioningOverrides: Partial<
       "≠ NHA CCMA / CMA (AAMA) clinical assistant",
     ],
     summaryProse:
-      "OpenExamPrep and PracticeTestGeeks win on free MSCE-length volume. UniPrep wins when you want a free no-signup timed 60Q diagnostic plus an ownable 120-card Anki — not a full MSCE form and not a CCMA/CMA clinical-skills bank.",
+      "OpenExamPrep and PracticeTestGeeks win on free MSCE-length volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) plus an ownable 120-card Anki — not a full MSCE form and not a CCMA/CMA clinical-skills bank.",
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
     ourEdge: [
@@ -761,7 +761,7 @@ export const positioningOverrides: Partial<
       "Ownable $19 .apkg + optional PDF guide — not a Brainscape subscription",
     ],
     summaryProse:
-      "Free 25Q teaser banks and Brainscape packs own volume. UniPrep wins when you want a full-length 90Q timed mock (free 25-question version) plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",
+      "No-cost 25-item teaser banks and Brainscape packs own volume. UniPrep wins when you want a full-length 90Q timed mock (free 25-question version) plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",
   },
   "gre-anki-deck": {
     ourEdge: [
@@ -1244,7 +1244,7 @@ Typical state General Knowledge sittings are **~50 questions / 80% (40 correct)*
 
 ### Pitfalls this deck targets (when live)
 
-Candidates treat a free 60Q check as the official 50Q form, skip the state handbook, or confuse General Knowledge with the skills/road test or endorsement sittings.
+Candidates treat a 60Q check (free 25-question version) as the official 50Q form, skip the state handbook, or confuse General Knowledge with the skills/road test or endorsement sittings.
 
 ### What this does not replace
 
@@ -1262,7 +1262,7 @@ Armed licensing is **state-specific** (e.g. FL Class G, TX Level III, CA BSIS fi
 
 ### Pitfalls this deck targets (when live)
 
-Candidates treat a free 60Q check as their state board form, skip live-fire training, or confuse this page with the [unarmed security](/mock-exams/unarmed-security-officer-readiness-check) pathway.
+Candidates treat a 60Q check (free 25-question version) as their state board form, skip live-fire training, or confuse this page with the [unarmed security](/mock-exams/unarmed-security-officer-readiness-check) pathway.
 
 ### What this does not replace
 
@@ -1296,7 +1296,7 @@ Medical scribe exams test **documentation under provider direction**, terminolog
 
 ### Official form honesty (AHDPG MSCE)
 
-A common path, AHDPG’s Medical Scribe Certification Exam (MSCE), is typically listed as **~100 questions / 75 minutes / 80%** (~$185) leading to AMSP; CMSP adds **200+** documented scribe hours — verify with the certifying body. UniPrep’s free check is a shorter **60Q / 75 min / 70%** diagnostic — not a full MSCE form. Employer and ACMSS-style paths also vary.
+A common path, AHDPG’s Medical Scribe Certification Exam (MSCE), is typically listed as **~100 questions / 75 minutes / 80%** (~$185) leading to AMSP; CMSP adds **200+** documented scribe hours — verify with the certifying body. UniPrep’s check is a shorter **60Q / 75 min / 70%** diagnostic (free 25-question version) — not a full MSCE form. Employer and ACMSS-style paths also vary.
 
 ### Plan with the free mock
 
@@ -1793,7 +1793,7 @@ Series 7 flashcards for Top-Off: seeking business and opening accounts, investme
 
 The three sample cards on this page are real notes from the shipped .apkg: tax-equivalent yield on a 4% muni versus a 5.5% corporate in the 32% bracket, maximum loss on a long XYZ 50 put bought at 3, and which of risk tolerance versus capacity limits a recommendation.
 
-Official FINRA Series 7 Top-Off is **125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated)**. Our free mock is a **60-question / 90-minute** job-function diagnostic — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
+Official FINRA Series 7 Top-Off is **125 scored + 5 pretest / 3 hours 45 minutes / passing score 72 (equated)**. Our mock is a **60-question / 90-minute** job-function diagnostic (free 25-question version) — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
 
 ### Study plan with the free mock
 
@@ -1807,7 +1807,7 @@ Representatives mix suitability standards for elderly clients, options exercise 
 
 Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
 
-Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The current ServSafe FAQ sets the pass mark at **70% (56 of 80 scored)**; the older 2020 Examinee Handbook PDF still prints **75%**. Our free mock matches the 90Q / 120 min form and uses **75%** as a UniPrep2Go readiness target (margin above the official standard).
+Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The current ServSafe FAQ sets the pass mark at **70% (56 of 80 scored)**; the older 2020 Examinee Handbook PDF still prints **75%**. Our full mock matches the 90Q / 120 min form (the free first run is a 25-question diagnostic) and uses **75%** as a UniPrep2Go readiness target (margin above the official standard).
 
 ### Plan with the 90-question mock (free 25-question version)
 
@@ -2059,7 +2059,7 @@ SPI is **physics and instrumentation**. It is **not** the ARDMS Abdominal or OB/
 
 ### Official form honesty
 
-Official SPI is about **110 multiple-choice questions / 2 hours / scaled pass 555 (300–700)**. UniPrep’s free check is a shorter **60Q / 75 min / 70%** diagnostic from the same 120 bank — not a full SPI form.
+Official SPI is about **110 multiple-choice questions / 2 hours / scaled pass 555 (300–700)**. UniPrep’s check is a shorter **60Q / 75 min / 70%** diagnostic (free 25-question version) from the same 120 bank — not a full SPI form.
 
 ### Plan with the free mock
 
@@ -2433,7 +2433,7 @@ Candidates swap parametric vs historical VaR, mis-state delta-gamma approximatio
 
 Complete pre-license coursework first, then 20 cards/day. Run the free California practice test at 30 days out; concentrate on agency and disclosure cards if those domains score lowest. California-specific disclosure timing is repeated more than national decks cover.
 
-Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state exam — no separate national portion). Our free mock is a **60-question** diagnostic — not a 1,500-question course Q-bank.
+Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state exam — no separate national portion). Our mock is a **60-question** diagnostic (free 25-question version) — not a 1,500-question course Q-bank.
 
 ### Pitfalls this deck targets
 

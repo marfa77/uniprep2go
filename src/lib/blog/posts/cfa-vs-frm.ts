@@ -5,7 +5,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
   title: "CFA Level 1 vs FRM Part 1: If You Can Only Study for One",
   titleTag: "CFA Level 1 vs FRM Part 1: If You Can Only Study for One",
   metaDescription:
-    "CFA Level 1 costs $1,140 and takes 300 hours. FRM Part 1 costs $1,000 and takes 200 hours. Here is which one moves your resume, and which one is a half-finished credential.",
+    "CFA Level 1 registration is $1,140 (early) or $1,490 (standard) in 2026 — no enrollment fee — and takes ~300 hours. FRM Part 1 costs $1,000 and takes 200 hours. Here is which one moves your resume, and which one is a half-finished credential.",
   publishedAt: "2026-07-28",
   eyebrow: "Finance credentials · CFA vs FRM",
   clusterId: "cfa-frm",

@@ -5,7 +5,7 @@ export const finraOptionsQuestionsPost: BlogPostDraft = {
   title: "How to Read a FINRA Options Question Without Getting Tricked",
   titleTag: "SIE Options Question Traps 2026 | 4-Step Reading Method",
   metaDescription:
-    "SIE and Series 7 options items are reading traps: long vs short, call vs put, 100× multiplier. Use this 4-step protocol, formula table, and six traps — then take the free 75Q SIE mock.",
+    "SIE and Series 7 options items are reading traps: long vs short, call vs put, 100× multiplier. Use this 4-step protocol, formula table, and six traps — then take the 75Q SIE mock (free 25-question version).",
   publishedAt: "2026-07-28",
   eyebrow: "FINRA SIE · Options",
   clusterId: "finra-sie",

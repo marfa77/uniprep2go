@@ -10,9 +10,12 @@ import { getMockExamConfig } from "./mock-exams/configs";
 import { formatMockStatLine, mockReadinessTargetLabel } from "./mock-exams/mock-labels";
 
 describe("mock labels", () => {
-  it("never renders a bare pass percentage", () => {
+  it("leads with the free 25-question diagnostic and names the full Mock Pass length", () => {
     expect(formatMockStatLine({ questionCount: 75, durationMinutes: 105, passPercent: 70 })).toBe(
-      "75-question diagnostic · 105 min · 70% readiness target",
+      "Free 25-question diagnostic · 35 min · full 75Q on Mock Pass",
+    );
+    expect(formatMockStatLine({ questionCount: 25, durationMinutes: 35, passPercent: 70 })).toBe(
+      "Free 25-question diagnostic · 35 min",
     );
     expect(mockReadinessTargetLabel(70)).toBe("UniPrep2Go readiness target: 70%");
   });

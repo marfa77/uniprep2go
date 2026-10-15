@@ -315,7 +315,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the medication aide exam?",
         answer:
-          "Where a state uses MACE, the written exam is typically 60 questions in 2 hours. Some states differ. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "Where a state uses MACE, the written exam is typically 60 questions in 2 hours. Some states differ. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is this an official Medication Aide / MACE exam?",
@@ -453,7 +453,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASCP MLT exam?",
         answer:
-          "National MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes. Pass is a scaled 400 (not a published percent). UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "National MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes. Pass is a scaled 400 (not a published percent). UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is this an official ASCP MLT exam?",
@@ -491,7 +491,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "Medical scribe competency checks cover clinical documentation (SOAP, HPI, ROS, scribe scope), medical terminology and chart abbreviations, EHR workflow (problem list, allergies, medication reconciliation, templates), and HIPAA privacy. There is no single national scribe licence — employers, training programs, and certifying bodies such as AHDPG (MSCE \u2192 AMSP/CMSP) and ACMSS each run their own path. This is a documentation and privacy exam, not a clinical-skills exam: scribes do not diagnose, treat, or perform procedures.",
     administeredBy: "Employer / training-program scribe competencies (AHDPG MSCE, ACMSS-style paths)",
     officialFormat:
-      "Credentials vary. A common path, AHDPG\u2019s Medical Scribe Certification Exam (MSCE), is listed as ~100 questions / 75 minutes / 80% to pass / ~$185, leading to AMSP; CMSP additionally requires 200+ documented scribe hours \u2014 verify current rules with the certifying body. UniPrep\u2019s free check is a shorter 60-question / 75-minute / 70% diagnostic \u2014 not an official MSCE form and not an NHA CCMA or CMA (AAMA) clinical-assistant exam.",
+      "Credentials vary. A common path, AHDPG\u2019s Medical Scribe Certification Exam (MSCE), is listed as ~100 questions / 75 minutes / 80% to pass / ~$185, leading to AMSP; CMSP additionally requires 200+ documented scribe hours \u2014 verify current rules with the certifying body. UniPrep\u2019s check is a shorter 60-question / 75-minute / 70% diagnostic (free 25-question version) \u2014 not an official MSCE form and not an NHA CCMA or CMA (AAMA) clinical-assistant exam.",
     examFaqs: [
       {
         question: "What is on a medical scribe certification exam?",
@@ -555,7 +555,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is there a national Physical Therapy Aide exam?",
         answer:
-          "No. Hiring and competency are employer- and state-specific. UniPrep’s free check is a 60-question / 75-minute knowledge diagnostic. Aides work under a PT or PTA and do not independently evaluate or progress a plan of care.",
+          "No. Hiring and competency are employer- and state-specific. UniPrep’s check is a 60-question / 75-minute knowledge diagnostic (free 25-question version). Aides work under a PT or PTA and do not independently evaluate or progress a plan of care.",
       },
       {
         question: "Is this the NPTE or PTA exam?",
@@ -612,7 +612,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official ABO NOCE?",
         answer:
-          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s free check is a shorter 60-question / 75-minute diagnostic.",
+          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
       },
       {
         question: "Is this an official ABO Optician exam?",
@@ -664,7 +664,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the NSCA-CPT exam?",
         answer:
-          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes with no video items.",
+          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) with no video items.",
       },
       {
         question: "Is NSCA-CPT the same as CSCS?",
@@ -689,7 +689,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is Precision Nutrition Level 1 the same as becoming an RDN?",
         answer:
-          "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is this a personal-trainer CPT exam?",
@@ -745,7 +745,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the nail technician written exam?",
         answer:
-          "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state CIB. Practical is separate.",
+          "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s check is 60 questions / 75 minutes (free 25-question version). Confirm your state CIB. Practical is separate.",
       },
       {
         question: "Is nail technician theory the same as Cosmetology Theory?",
@@ -775,7 +775,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the NIC Barber theory exam?",
         answer:
-          "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state CIB.",
+          "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. UniPrep’s check is 60 questions / 75 minutes (free 25-question version). Confirm your state CIB.",
       },
       {
         question: "Is this an official Barber exam?",
@@ -800,7 +800,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASWB Bachelors exam?",
         answer:
-          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is this an official ASWB Bachelors exam?",
@@ -830,7 +830,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASWB Clinical exam?",
         answer:
-          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is this an official ASWB Clinical exam?",
@@ -872,7 +872,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the PHR exam?",
         answer:
-          "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
+          "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
       },
       {
         question: "Is PHR the same as SHRM-CP or SPHR?",
@@ -1002,7 +1002,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "Praxis Core Academic Skills for Educators tests reading, writing, and math skills often required for entry into teacher preparation programs.",
     administeredBy: "ETS",
     officialFormat:
-      "Official Praxis Core is three separate ETS tests: Reading 5713 (56 selected-response / 85 minutes), Writing 5723 (40 selected-response + 2 essays / 100 minutes), Math 5733 (56 selected-response / 90 minutes). This UniPrep2Go session is a free combined 60-question / 75-minute selected-response diagnostic — not three sittings and not constructed-response essays.",
+      "Official Praxis Core is three separate ETS tests: Reading 5713 (56 selected-response / 85 minutes), Writing 5723 (40 selected-response + 2 essays / 100 minutes), Math 5733 (56 selected-response / 90 minutes). This UniPrep2Go session is a combined 60-question / 75-minute selected-response diagnostic (free 25-question version) — not three sittings and not constructed-response essays.",
     examFaqs: [
       {
         question: "How many questions are on Praxis Core?",
@@ -1059,7 +1059,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is there a national unarmed security exam?",
         answer:
-          "No. States set hours and written tests. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes of unarmed knowledge.",
+          "No. States set hours and written tests. UniPrep’s check is 60 questions / 75 minutes of unarmed knowledge (free 25-question version).",
       },
       {
         question: "Is this the armed guard exam?",
@@ -1213,7 +1213,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official SAFE MLO national test?",
         answer:
-          "120 items (115 scored + 5 unscored pretest) in 190 minutes, with a 75% passing score. UniPrep’s check (free 25-question version) is 120 questions in 120 minutes with a 70% readiness target.",
+          "120 items (115 scored + 5 unscored pretest) in 190 minutes, with a 75% passing score. UniPrep’s check is 120 questions in 120 minutes (free 25-question version) with a 70% readiness target.",
       },
       {
         question: "Is this an official SAFE MLO exam?",
@@ -1303,7 +1303,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The NAVTA Approved Veterinary Assistant (AVA) designation is for graduates of a NAVTA-approved veterinary assistant program who pass the proprietary AVA exam administered through VetMedTeam. It covers restraint, nursing support, hospital procedures, pharmacy/office themes, and safety — under veterinary supervision. It is not the VTNE (veterinary technician national exam).",
     administeredBy: "NAVTA (exam platform: VetMedTeam)",
     officialFormat:
-      "Official AVA exam (VetMedTeam): typically 100 multiple-choice questions / 150 minutes / 75% pass / $100 per attempt; requires a NAVTA-approved program code and an exam mentor/proctor. UniPrep’s free check is a shorter 60Q / 75 min diagnostic — not a full-length AVA form.",
+      "Official AVA exam (VetMedTeam): typically 100 multiple-choice questions / 150 minutes / 75% pass / $100 per attempt; requires a NAVTA-approved program code and an exam mentor/proctor. UniPrep’s check is a shorter 60Q / 75 min diagnostic (free 25-question version) — not a full-length AVA form.",
     examFaqs: [
       {
         question: "What is the Veterinary Assistant / AVA exam?",

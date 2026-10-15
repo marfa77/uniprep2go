@@ -380,9 +380,9 @@ const rawDecks: Deck[] = [
     title: "CFA Level 1 Anki Deck — 348 Smart Flashcards",
     shortName: "CFA Level 1",
     subtitle:
-      "Focused 342-card CFA Level 1 Anki deck + 60-question timed mock (free 25-question version) — not a 1,600-card dump.",
+      "Focused 348-card CFA Level 1 Anki deck + 60-question timed mock (free 25-question version) — not a 1,600-card dump.",
     directAnswer:
-      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a 60-question timed readiness-check (free 25-question version) mock (topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
+      "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg across all 10 topic weights, paired with a 60-question timed readiness-check mock (free 25-question version; topic scoring) and a printable 2026 formula reference PDF (250 formulas + 98 definitions + 80 recall drill). Delivered for {PRICE} through Gumroad. Built for daily spaced-repetition remediation after a mock — not a bloated mega-deck and not official CFA Institute material.",
     lastUpdated: "2026-09-29",
     audience: "CFA Level 1 candidates who want structured recall practice for formulas, concepts, and topic definitions.",
     format: ".apkg",
@@ -422,7 +422,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best CFA Level 1 Anki deck for 2026?",
         answer:
-          "Prefer a focused ~342-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
+          "Prefer a focused 348-card deck mapped to all 10 CFA Level 1 topic weights plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
       },
       {
         question: "What is included in the CFA Level 1 Anki deck?",
@@ -630,7 +630,7 @@ const rawDecks: Deck[] = [
     shortName: "FRM Part 1",
     subtitle: "444 FRM Part 1 Anki cards + 50-question timed practice test (free 25-question version) — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a 50-question timed readiness-check (free 25-question version) mock with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
+      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a 50-question timed readiness-check mock (free 25-question version) with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
     lastUpdated: "2026-10-02",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
@@ -1288,7 +1288,7 @@ const rawDecks: Deck[] = [
       {
         question: "How does this compare with the official CFA Level 2 exam?",
         answer:
-          "Official Level 2 is 88 vignette-based questions in 22 item sets (11 per session) over 4 hours 24 minutes; CFA Institute sets the MPS after each sitting. This deck is daily recall. The paired mock (free 25-question version) is 60 questions in 120 minutes with topic scores — a diagnostic, not a CFA Institute mock.",
+          "Official Level 2 is 88 vignette-based questions in 22 item sets (11 per session) over 4 hours 24 minutes; CFA Institute sets the MPS after each sitting. This deck is daily recall. The paired mock is 60 questions in 120 minutes (free 25-question version) with topic scores — a diagnostic, not a CFA Institute mock.",
       },
       {
         question: "Does the deck pair with a formula reference?",
@@ -3242,7 +3242,7 @@ const rawDecks: Deck[] = [
     shortName: "GRE",
     subtitle: "Anki deck for GRE Verbal Reasoning and Quantitative Reasoning.",
     directAnswer:
-      "The GRE General Anki Deck is a live UniPrep2Go product with 350 unique flashcards — 175 Verbal and 175 Quant — from the same bank as the 30-question / 45-minute GRE readiness check (free 25-question version) (both axes required). Buy the .apkg on Gumroad. Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
+      "The GRE General Anki Deck is a live UniPrep2Go product with 350 unique flashcards — 175 Verbal and 175 Quant — from the same bank as the 30-question / 45-minute GRE readiness check (free 25-question version; both axes required). Buy the .apkg on Gumroad. Official shorter GRE is about 1 hour 58 minutes with 27 Verbal + 27 Quant plus Analytical Writing — our mock is a diagnostic baseline, not PowerPrep.",
     lastUpdated: "2026-10-04",
     audience:
       "Graduate school applicants preparing for the ETS GRE General Test using spaced repetition alongside PowerPrep.",
@@ -4249,7 +4249,7 @@ const rawDecks: Deck[] = [
     shortName: "ServSafe Manager",
     subtitle: "A focused Anki deck for ServSafe Manager food safety review.",
     directAnswer:
-      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the 90-question / 120-minute ServSafe Manager mock (free 25-question version) (official form: 80 scored + 10 pilot / 2 hours; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
+      "UniPrep2Go sells an independent ServSafe Manager Anki deck with 300 high-yield food safety flashcards covering foodborne illness, time and temperature control, cross-contamination, personal hygiene, cleaning and sanitizing, receiving and storage, HACCP basics, and manager responsibilities. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. Pair it with the 90-question / 120-minute ServSafe Manager mock (free 25-question version; official form: 80 scored + 10 pilot / 2 hours; official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target on the mock). The deck is a supplementary active-recall study aid and is not official ServSafe or National Restaurant Association material.",
     lastUpdated: "2026-09-29",
     audience:
       "Restaurant managers, food handlers moving into supervisor roles, hospitality students, and ServSafe Manager candidates who want spaced-repetition review instead of rereading notes.",
@@ -4496,7 +4496,7 @@ const rawDecks: Deck[] = [
       "PTCB Outline 2026 Study Guide — PTCE Blueprint PDF + 80-Question Exam + Cheat Sheets",
     shortName: "PTCB Study Guide 2026",
     subtitle:
-      "January 2026 PTCE outline/blueprint PDF — domain chapters, 80-question exam, cheat sheets; pairs with free 90Q online mock + Anki.",
+      "January 2026 PTCE outline/blueprint PDF — domain chapters, 80-question exam, cheat sheets; pairs with 90Q online mock (free 25-question version) + Anki.",
     directAnswer:
       "The independent PTCB / PTCE outline study guide for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Cluster with UniPrep2Go’s 90-question timed online mock (free 25-question version) for readiness scoring and a separate 300-card Anki deck for weak-topic repair (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
     lastUpdated: "2026-09-24",

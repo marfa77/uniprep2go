@@ -5,6 +5,7 @@ import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "
 import { getMockCta } from "@/lib/mock-exams/mock-cta";
 import {
   MOCK_PASS_ATTEMPTS,
+  MOCK_PASS_CHECKOUT_URL,
   MOCK_PASS_PRICE_USD,
   decideMockStart,
 } from "@/lib/mock-exams/mock-pass";
@@ -37,6 +38,7 @@ import type { MockCompanionCheckout } from "./mock-companion-decks-panel";
 import { MockRunner } from "./mock-runner";
 import { trackMockEvent } from "./mock-analytics";
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
+import { createPortal } from "react-dom";
 import { useSearchParams } from "next/navigation";
 import { parseMockSessionMode } from "@/lib/mock-exams/session-mode";
 import { getOrCreateVisitorId } from "@/lib/visitor-id";
@@ -44,10 +46,23 @@ import { getOrCreateVisitorId } from "@/lib/visitor-id";
 type Screen = "landing" | "exam" | "results";
 
 function MockFocusShell({ children }: { children: ReactNode }) {
-  return (
-    <div className="fixed inset-0 z-40 overflow-y-auto overscroll-contain bg-[#f7f3ea]">
+  // The cookie banner compacts while a session is open and the shell stops above it,
+  // so Next / Review & submit stay clickable before a consent choice.
+  useEffect(() => {
+    const root = document.documentElement;
+    root.dataset.mockSession = "active";
+    return () => {
+      delete root.dataset.mockSession;
+    };
+  }, []);
+
+  // Portaled out of #main-content so the landing page (and its list-price deck CTAs) can be
+  // display:none while the session or result is open.
+  return createPortal(
+    <div className="fixed inset-x-0 top-0 bottom-[var(--cookie-banner-offset,0px)] z-40 overflow-y-auto overscroll-contain bg-[#f7f3ea]">
       <div className="mx-auto min-h-full w-full max-w-4xl">{children}</div>
-    </div>
+    </div>,
+    document.body,
   );
 }
 
@@ -418,6 +433,12 @@ export function MockExamClient({
       paywallEnabled: paywallEnabled && startDecision !== "open",
     });
 
+    // One deck, one price on the result screen: every link to the linked deck carries the offer code.
+    const resultCheckout =
+      linkedCheckout && linkedDeckOffer
+        ? { ...linkedCheckout, checkoutUrl: linkedDeckOffer.checkoutUrl }
+        : linkedCheckout;
+
     return (
       <MockFocusShell>
         <div className="space-y-6 px-4 py-4 pb-[max(1.5rem,env(safe-area-inset-bottom))] sm:space-y-8 sm:px-6 sm:py-6">
@@ -425,10 +446,9 @@ export function MockExamClient({
             deckPageUrl={report.linkedDeckUrl}
             deckSlug={config.linkedDeckSlug}
             isFreeDiagnostic={isFreeDiagnostic}
-            linkedCheckout={
-              linkedCheckout && linkedDeckOffer
-                ? { ...linkedCheckout, checkoutUrl: linkedDeckOffer.checkoutUrl }
-                : linkedCheckout
+            linkedCheckout={resultCheckout}
+            mockPassCheckoutUrl={
+              paywallEnabled && startDecision === "paywall" ? MOCK_PASS_CHECKOUT_URL : null
             }
             mockSlug={config.slug}
             onMockCta={() => void startMock(sessionMode, "retake")}
@@ -453,7 +473,17 @@ export function MockExamClient({
           <MockReportPanel
             companionCheckouts={companionCheckouts}
             config={sessionConfig}
-            linkedCheckout={linkedCheckout}
+            isFreeDiagnostic={isFreeDiagnostic}
+            fullQuestionCount={config.questionCount}
+            linkedCheckout={resultCheckout}
+            checkoutPrice={
+              linkedDeckPriceLabel
+                ? {
+                    priceLabel: linkedDeckOffer?.priceLabel ?? linkedDeckPriceLabel,
+                    fullPriceLabel: linkedDeckOffer ? linkedDeckPriceLabel : undefined,
+                  }
+                : undefined
+            }
             linkedDeckShortName={linkedDeckShortName}
             onRetake={() => void startMock(sessionMode, "retake")}
             report={report}

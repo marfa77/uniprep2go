@@ -251,6 +251,7 @@ export function getMockRepairCheckoutCtaLabel(options: {
   weakTopicLabels?: string[];
   existingCtaLabel?: string | null;
   priceLabel?: string;
+  maxTopics?: number;
 }): string {
   const fromExisting = options.existingCtaLabel
     ? extractCheckoutPriceSuffix(options.existingCtaLabel)
@@ -261,7 +262,7 @@ export function getMockRepairCheckoutCtaLabel(options: {
 
   const topics = (options.weakTopicLabels ?? []).map((t) => t.trim()).filter(Boolean);
   if (topics.length > 0) {
-    const short = topics.slice(0, 2).join(" + ");
+    const short = topics.slice(0, options.maxTopics ?? 2).join(" + ");
     return `Fix ${short}${priceSuffix}`;
   }
 

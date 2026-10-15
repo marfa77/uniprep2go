@@ -1,6 +1,11 @@
 import type { ExamFactsProfile } from "@/lib/exam-facts";
 import type { Deck } from "@/lib/decks";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import {
+  FREE_DIAGNOSTIC_QUESTIONS,
+  freeDiagnosticMinutes,
+  hasShortFreeDiagnostic,
+} from "@/lib/mock-exams/free-diagnostic";
 
 const DOES_NOT_REPLACE_BY_EXAM: Record<string, string> = {
   "cfa-level-1":
@@ -132,7 +137,11 @@ export function buildMockExamVersionModel(
     sourceLabel: source.label,
     sourceUrl: source.url,
     lastReviewed: formatLastReviewed(config.lastUpdated),
-    covers: `${config.questionCount}-question timed diagnostic (${config.durationMinutes} min) across ${config.topics.length} topic areas, with topic scoring and answer review. Official form: ${facts.question_count ?? "verify current bulletin"}.`,
+    covers: `${config.questionCount}-question timed diagnostic (${config.durationMinutes} min${
+      hasShortFreeDiagnostic(config)
+        ? `; free ${FREE_DIAGNOSTIC_QUESTIONS}-question / ${freeDiagnosticMinutes(config)}-min version`
+        : ""
+    }) across ${config.topics.length} topic areas, with topic scoring and answer review. Official form: ${facts.question_count ?? "verify current bulletin"}.`,
     passRule: `${officialPass ? `Official exam: ${officialPass}. ` : ""}UniPrep2Go mock: ${config.passRule.passPercent}% readiness target (not an official pass score).`,
     doesNotReplace: buildDoesNotReplace(profile),
   };

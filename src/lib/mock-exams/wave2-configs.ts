@@ -429,7 +429,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "micro-immuno", label: "Microbiology & immunology" },
     ]),
     officialSourceNote:
-      "Official ASCP BOC MLS(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This free check is a shorter 60-question / 90-minute linear diagnostic on four benches (blood bank, chemistry, hematology, microbiology/immunology) — not CAT and not MLT. Independent UniPrep2Go practice — not ASCP BOC material.",
+      "Official ASCP BOC MLS(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This check is a shorter 60-question / 90-minute linear diagnostic (free 25-question version) on four benches (blood bank, chemistry, hematology, microbiology/immunology) — not CAT and not MLT. Independent UniPrep2Go practice — not ASCP BOC material.",
     description:
       "60-question ASCP MLS readiness check (free 25-question version) (90 min) with topic scoring — shorter than the official 100-question CAT.",
     examBody: "ASCP Board of Certification",

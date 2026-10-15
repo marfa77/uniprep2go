@@ -5,6 +5,12 @@ import { MathContent } from "./math-content";
 import { QuestionContent } from "./question-content";
 import { MockReportHandoff, type LinkedDeckCheckout } from "./mock-report-handoff";
 import { MockCompanionDecksPanel, type MockCompanionCheckout } from "./mock-companion-decks-panel";
+import {
+  DIAGNOSTIC_TOPIC_LABEL_TEXT,
+  diagnosticSampleNote,
+  diagnosticTopicLabel,
+  type DiagnosticTopicLabel,
+} from "@/lib/mock-exams/result-upsell";
 
 function verdictStyles(verdict: MockReport["verdict"]) {
   switch (verdict) {
@@ -43,8 +49,21 @@ function topicBarTone(status: MockReport["topicResults"][number]["status"]) {
   }
 }
 
+const diagnosticLabelTone: Record<DiagnosticTopicLabel, { text: string; bar: string }> = {
+  too_few: { text: "text-[#7a6e5a]", bar: "bg-[#18140f]/30" },
+  needs_work: { text: "text-[#8a6a1f]", bar: "bg-[#8a6a1f]" },
+  borderline: { text: "text-[#6b5418]", bar: "bg-[#b08a2e]" },
+  on_track: { text: "text-[#1f3a5f]", bar: "bg-[#1f3a5f]" },
+};
+
 type MockReportPanelProps = {
   config: MockExamConfig;
+  /** Free 25-question run: soft verdict and per-topic labels that respect tiny samples. */
+  isFreeDiagnostic?: boolean;
+  /** Full Mock Pass session length (config is the 25-question session on a free run). */
+  fullQuestionCount?: number;
+  /** Price shown on the "Fix …" checkout; fullPriceLabel is struck through when an offer applies. */
+  checkoutPrice?: { priceLabel: string; fullPriceLabel?: string };
   linkedCheckout: LinkedDeckCheckout | null;
   linkedDeckShortName?: string;
   companionCheckouts?: MockCompanionCheckout[];
@@ -55,6 +74,9 @@ type MockReportPanelProps = {
 
 export function MockReportPanel({
   config,
+  isFreeDiagnostic = false,
+  fullQuestionCount = config.questionCount,
+  checkoutPrice,
   linkedCheckout,
   linkedDeckShortName,
   companionCheckouts = [],
@@ -115,17 +137,36 @@ export function MockReportPanel({
     </section>
   );
 
+  const isPass = report.verdict === "PASS" || report.verdict === "READINESS PASS";
+  const verdictLabel = isFreeDiagnostic
+    ? isPass
+      ? `At or above ${report.passThresholdPercent}% target`
+      : `Below ${report.passThresholdPercent}% target`
+    : report.verdict;
+  const verdictClass = isFreeDiagnostic
+    ? isPass
+      ? verdictStyles("PASS")
+      : verdictStyles("BORDERLINE RISK")
+    : verdictStyles(report.verdict);
+
   return (
     <div className="space-y-8">
-      <section className={`rounded-2xl border p-4 sm:rounded-3xl sm:p-8 ${verdictStyles(report.verdict)}`}>
+      <section className={`rounded-2xl border p-4 sm:rounded-3xl sm:p-8 ${verdictClass}`}>
         <p className="font-mono text-xs uppercase tracking-[0.28em]">
-          {sessionMode === "learn" ? "Learn report" : "Exam report"} · readiness verdict
+          {isFreeDiagnostic
+            ? "Free diagnostic · quick read"
+            : `${sessionMode === "learn" ? "Learn report" : "Exam report"} · readiness verdict`}
         </p>
-        <h2 className="mt-3 text-4xl font-semibold tracking-tight">{report.verdict}</h2>
+        <h2 className="mt-3 text-4xl font-semibold tracking-tight">{verdictLabel}</h2>
         <p className="mt-4 text-lg font-semibold">
           {report.correctCount}/{report.totalCount} correct · {report.scorePercent}% · threshold{" "}
           {report.passThresholdPercent}%
         </p>
+        {isFreeDiagnostic ? (
+          <p className="mt-2 max-w-3xl text-sm leading-6">
+            {diagnosticSampleNote(report.topicResults, report.totalCount, fullQuestionCount)}
+          </p>
+        ) : null}
         <p className="mt-4 max-w-3xl text-sm leading-7">{report.verdictExplanation}</p>
       </section>
 
@@ -135,13 +176,23 @@ export function MockReportPanel({
           {report.topicResults.map((topic) => {
             const scoreWidth = Math.min(100, Math.max(0, topic.scorePercent));
             const targetWidth = Math.min(100, Math.max(0, topic.targetPercent));
+            const diagnosticLabel = isFreeDiagnostic ? diagnosticTopicLabel(topic) : null;
+            const statusText = diagnosticLabel
+              ? DIAGNOSTIC_TOPIC_LABEL_TEXT[diagnosticLabel]
+              : topicStatusLabel(topic.status);
+            const barTone = diagnosticLabel
+              ? diagnosticLabelTone[diagnosticLabel].bar
+              : topicBarTone(topic.status);
 
             return (
               <li key={topic.topicId} className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
                   <p className="font-semibold text-[#18140f]">{topic.label}</p>
                   <p className="text-sm font-medium text-[#4f493e]">
-                    {topic.correct}/{topic.total} ({topic.scorePercent}%) · {topicStatusLabel(topic.status)}
+                    {topic.correct}/{topic.total} ({topic.scorePercent}%) ·{" "}
+                    <span className={diagnosticLabel ? diagnosticLabelTone[diagnosticLabel].text : undefined}>
+                      {statusText}
+                    </span>
                   </p>
                 </div>
                 <div className="relative mt-3 h-2.5 overflow-hidden rounded-full bg-[#18140f]/10">
@@ -152,7 +203,7 @@ export function MockReportPanel({
                     title={`${topic.targetPercent}% target`}
                   />
                   <div
-                    className={`h-full motion-safe:transition-[width] motion-safe:duration-200 ${topicBarTone(topic.status)}`}
+                    className={`h-full motion-safe:transition-[width] motion-safe:duration-200 ${barTone}`}
                     style={{ width: `${scoreWidth}%` }}
                   />
                 </div>
@@ -246,6 +297,7 @@ export function MockReportPanel({
           deckSlug={config.linkedDeckSlug}
           linkedCheckout={linkedCheckout}
           mockSlug={config.slug}
+          checkoutPrice={checkoutPrice}
           recommendDeck={shouldRecommendDeck}
           onRetake={onRetake}
               retakeHref={`/mock-exams/${config.slug}`}

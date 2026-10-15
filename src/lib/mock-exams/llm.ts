@@ -7,6 +7,7 @@ import {
   getMockSeoProfile,
 } from "./seo";
 import type { MockAccessMode, MockExamConfig } from "./types";
+import { freeSessionFacts, freeVersionLine } from "./free-diagnostic";
 import { getMockOfficialResources } from "./official-resources";
 import { isMockExamRunnable } from "./question-bank";
 import { getVerticalDefinition } from "./taxonomy";
@@ -77,6 +78,8 @@ export function buildMockExamFacts(config: MockExamConfig) {
     price: mockFreeAccessPriceLabel,
     pricing_note: pricingNote,
     free_attempts_per_visitor: 1,
+    free_question_count: freeSessionFacts(config).freeQuestionCount,
+    free_duration_minutes: freeSessionFacts(config).freeDurationMinutes,
     mock_pass: {
       name: MOCK_PASS_NAME,
       price_usd: MOCK_PASS_PRICE_USD,
@@ -185,6 +188,9 @@ ${officialLinks}
 - Access mode: ${facts.access_mode}
 - Questions: ${config.questionCount}
 - Duration: ${config.durationMinutes} minutes
+- Free version: ${freeVersionLine(config)}
+- Free question count: ${facts.free_question_count}
+- Free duration: ${facts.free_duration_minutes} minutes
 - Pass threshold: ${config.passRule.passPercent}%
 - Price: ${mockFreeAccessPriceLabel}
 - Pricing note: ${facts.pricing_note}

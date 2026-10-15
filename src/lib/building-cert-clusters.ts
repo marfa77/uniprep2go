@@ -1,6 +1,7 @@
 import registry from "@/data/certifications/registry.json";
 import { getCatalogDeckBySlug, type CatalogAvailableDeck } from "./decks";
 import { getMockExamConfig } from "./mock-exams/configs";
+import { freeMockLinkNote } from "./mock-exams/free-diagnostic";
 
 export type BuildingClusterId =
   | "green-building"
@@ -179,8 +180,8 @@ export function getBuildingClusterStudyPaths(deckSlug: string): ClusterStudyPath
   if (mock) {
     paths.unshift({
       href: `/mock-exams/${mock.slug}`,
-      label: `Free ${mock.shortTitle}`,
-      note: `${mock.questionCount} questions · topic scoring report`,
+      label: mock.shortTitle,
+      note: `${freeMockLinkNote(mock)} · topic scoring report`,
     });
   }
 

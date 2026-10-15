@@ -221,7 +221,7 @@ export const leedGaFreeResourcesPost: BlogPostDraft = {
     {
       question: "Are free LEED practice questions enough to pass?",
       answer:
-        "Usually no. Most free banks contain 30–140 questions. Prep providers report that successful candidates often complete 20+ full-length timed practice exams (2,000+ questions). Free resources give a fraction of that volume.",
+        "Usually no. Most no-cost banks contain 30–140 questions. Prep providers report that successful candidates often complete 20+ full-length timed practice exams (2,000+ questions). Free resources give a fraction of that volume.",
     },
     {
       question: "Is the LEED Candidate Handbook enough to pass?",

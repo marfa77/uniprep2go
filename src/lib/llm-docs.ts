@@ -12,6 +12,7 @@ import { formatDeckPriceLabel } from "./checkout-pricing";
 import { getAllBlogPosts } from "./blog";
 import { getIntentPageDecks, intentPages, type IntentPage } from "./intent-pages";
 import { getAllMockExams } from "./mock-exams/configs";
+import { freeVersionLine } from "./mock-exams/free-diagnostic";
 import { mockFreeAccessNotice } from "./mock-exams/pricing";
 import {
   MOCK_PASS_ATTEMPTS,
@@ -474,6 +475,7 @@ ${getAllMockExams()
 - Status: ${mock.status}
 - Questions: ${mock.questionCount}
 - Duration: ${mock.durationMinutes} minutes
+- Free version: ${freeVersionLine(mock)}
 - Pass threshold: ${mock.passRule.passPercent}%
 - Landing page: ${absoluteUrl(`/mock-exams/${mock.slug}`)}
 - Facts JSON: ${absoluteUrl(`/api/mock-exams/${mock.slug}`)}

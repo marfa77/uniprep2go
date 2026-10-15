@@ -15,6 +15,51 @@ export function freeDiagnosticMinutes(config: Pick<MockExamConfig, "questionCoun
   );
 }
 
+/** Single source for the free first attempt; every template, API and llms line reads these. */
+export function freeSessionFacts(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
+  return {
+    freeQuestionCount: Math.min(FREE_DIAGNOSTIC_QUESTIONS, config.questionCount),
+    freeDurationMinutes: freeDiagnosticMinutes(config),
+  };
+}
+
+/** Catalog/markdown line: "free 25-question / 35-minute diagnostic (1 attempt, no signup); full 75-question mock on Mock Pass". */
+export function freeVersionLine(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
+  const { freeQuestionCount, freeDurationMinutes } = freeSessionFacts(config);
+  return hasShortFreeDiagnostic(config)
+    ? `free ${freeQuestionCount}-question / ${freeDurationMinutes}-minute diagnostic (1 attempt, no signup); full ${config.questionCount}-question mock on Mock Pass`
+    : `free ${freeQuestionCount}-question / ${freeDurationMinutes}-minute mock (1 attempt, no signup)`;
+}
+
+/** Card/stat line: "Free 25-question diagnostic · 35 min · full 75Q on Mock Pass". */
+export function freeMockStatLine(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
+  const { freeQuestionCount, freeDurationMinutes } = freeSessionFacts(config);
+  return hasShortFreeDiagnostic(config)
+    ? `Free ${freeQuestionCount}-question diagnostic · ${freeDurationMinutes} min · full ${config.questionCount}Q on Mock Pass`
+    : `Free ${freeQuestionCount}-question diagnostic · ${freeDurationMinutes} min`;
+}
+
+/** "Free 25-question diagnostic · full 60Q timed mock" — short note for cross-link cards. */
+export function freeMockLinkNote(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
+  return hasShortFreeDiagnostic(config)
+    ? `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic · full ${config.questionCount}Q timed mock`
+    : `Free ${config.questionCount}-question timed mock`;
+}
+
+/** LLM/doc template: "75-question / 105 min timed mock (free 25-question / 35-min version)". */
+export function mockLengthPhrase(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
+  return hasShortFreeDiagnostic(config)
+    ? `${config.questionCount}-question / ${config.durationMinutes} min timed mock (free ${FREE_DIAGNOSTIC_QUESTIONS}-question / ${freeDiagnosticMinutes(config)}-min version)`
+    : `free ${config.questionCount}-question / ${config.durationMinutes} min timed mock`;
+}
+
+/** Short form: "60Q mock (free 25-question version)". */
+export function mockLengthShort(config: Pick<MockExamConfig, "questionCount">) {
+  return config.questionCount > FREE_DIAGNOSTIC_QUESTIONS
+    ? `${config.questionCount}Q mock (free ${FREE_DIAGNOSTIC_QUESTIONS}-question version)`
+    : `free ${config.questionCount}-question mock`;
+}
+
 /** Short clause for meta/FAQ copy: what the free first attempt is on this mock. */
 export function freeAccessClause(config: Pick<MockExamConfig, "questionCount" | "durationMinutes">) {
   return hasShortFreeDiagnostic(config)

@@ -21,6 +21,8 @@ type MockResultUpsellProps = {
   isFreeDiagnostic: boolean;
   startBusy: boolean;
   onMockCta: () => void;
+  /** Set when this browser has no Mock Pass attempts: the full-mock CTA opens checkout as a real link. */
+  mockPassCheckoutUrl?: string | null;
 };
 
 /** Top of the result screen: the score never ends the session — weak topics → deck, or the full mock. */
@@ -33,8 +35,12 @@ export function MockResultUpsell({
   isFreeDiagnostic,
   startBusy,
   onMockCta,
+  mockPassCheckoutUrl = null,
 }: MockResultUpsellProps) {
   const deckPrimary = Boolean(linkedCheckout && upsell.deckCtaLabel);
+  const mockCtaClass = deckPrimary
+    ? "inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/25 bg-[#fffaf0] px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
+    : "inline-flex min-h-14 items-center justify-center rounded-full bg-[#b5451b] px-6 text-base font-semibold text-white transition hover:bg-[#8f3514] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b5451b] disabled:opacity-50";
 
   return (
     <section
@@ -45,6 +51,9 @@ export function MockResultUpsell({
         {isFreeDiagnostic ? "Free diagnostic result" : "Mock result"}
       </p>
       <h2 className="mt-3 text-2xl font-semibold tracking-tight text-balance sm:text-3xl">{upsell.headline}</h2>
+      {upsell.sampleNote ? (
+        <p className="mt-2 max-w-3xl text-sm leading-6 text-[#5f5749]">{upsell.sampleNote}</p>
+      ) : null}
       <p className="mt-4 max-w-3xl text-base leading-7">{upsell.reality}</p>
       <p className="mt-3 max-w-3xl text-base font-semibold leading-7">{upsell.misses}</p>
       <p className="mt-3 max-w-3xl text-base leading-7">{upsell.close}</p>
@@ -67,18 +76,30 @@ export function MockResultUpsell({
           <p className="-mt-1 text-sm text-[#4f493e]">{upsell.deckOfferNote}</p>
         ) : null}
         <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-          <button
-            className={
-              deckPrimary
-                ? "inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/25 bg-[#fffaf0] px-6 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
-                : "inline-flex min-h-14 items-center justify-center rounded-full bg-[#b5451b] px-6 text-base font-semibold text-white transition hover:bg-[#8f3514] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#b5451b] disabled:opacity-50"
-            }
-            disabled={startBusy}
-            onClick={onMockCta}
-            type="button"
-          >
-            {startBusy ? "Starting…" : upsell.mockCtaLabel}
-          </button>
+          {mockPassCheckoutUrl ? (
+            <a
+              className={mockCtaClass}
+              href={mockPassCheckoutUrl}
+              onClick={() => {
+                trackMockEvent({
+                  name: "mock_pass_checkout_click",
+                  deckSlug,
+                  mockSlug,
+                  source: `mock_result:${mockSlug}:upsell:mock_pass`,
+                  destinationUrl: mockPassCheckoutUrl,
+                });
+                onMockCta();
+              }}
+              rel="noopener"
+              target="_blank"
+            >
+              {upsell.mockCtaLabel}
+            </a>
+          ) : (
+            <button className={mockCtaClass} disabled={startBusy} onClick={onMockCta} type="button">
+              {startBusy ? "Starting…" : upsell.mockCtaLabel}
+            </button>
+          )}
           <Link
             className="inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/15 px-6 text-sm font-medium text-[#4f493e] transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
             href={deckPageUrl}
