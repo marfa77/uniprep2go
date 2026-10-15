@@ -331,7 +331,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Life & Health Insurance Practice Test — 60 Questions",
     intro:
-      "A Life & Health insurance licensing practice test built from UniPrep2Go deck content — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic with topic scoring — free 25-question diagnostic, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
+      "A Life & Health insurance licensing practice test — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic drawn from a 120-item original bank so retakes differ, with topic scoring — free 25-question diagnostic, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },

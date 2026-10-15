@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 36 | 21 |
+| ok | 37 | 22 |
 | thin-bank | 1 | 1 |
 | unreviewed | 1 | 1 |
 | small-bank | 30 | 6 |
 | point-fix | 0 | 0 |
-| rewrite | 111 | 35 |
+| rewrite | 110 | 34 |
 | civic | 19 | 18 |
 | **total live mocks** | **198** | **82** |
 
@@ -35,7 +35,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `ga-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `gmat-focus-readiness-check` | live | 45 / 200 | 2026-10-15 | padding ×14 |
 | rewrite | `il-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `life-and-health-insurance-readiness-check` | live | 60 / 60 | 2026-10-15 | FAIL (40 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
 | rewrite | `ma-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | padding ×96 |
 | rewrite | `mi-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -177,6 +176,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `life-and-health-insurance-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-14 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |
