@@ -529,7 +529,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent simulation in the official Vivre ensemble format: 40 MCQs in 60 minutes, 10 fundamental rights / 20 state & communal institutions / 10 history & European integration (règlement grand-ducal of 7 April 2017), drawn from a 168-question French bank checked against the 2023 Constitution. The regulation does not publish a pass mark; the 70% (28/40) target mirrors the figure prep sites cite. Sproochentest is separate. Not official SFA material.",
     description:
-      "Free Luxembourg Vivre ensemble exam simulation in the official format: 40 questions, 60 minutes, 10/20/10 module split, score per module. Fix weak modules with the $16 FR + EN Anki pair (239 cards per language). Independent prep.",
+      "Luxembourg Vivre ensemble exam simulation in the official format: free 25-question diagnostic, full mock 40 questions, 60 minutes, 10/20/10 module split, score per module. Fix weak modules with the $16 FR + EN Anki pair (239 cards per language). Independent prep.",
     examBody:
       "Luxembourg — Vivre ensemble (40Q official or course; Sproochentest separate)",
     questionSourceNote:

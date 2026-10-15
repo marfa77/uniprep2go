@@ -5,7 +5,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
   title: "FINRA SIE Exam Prep: Why Most People Fail and How to Avoid It",
   titleTag: "SIE Exam Fail Rate 2026 | Why People Fail + How to Pass",
   metaDescription:
-    "SIE exam pass rate is ~70% with retakes — first-timers fail for the same three reasons. What the exam tests, a 4-week study plan, plus free 75Q timed mock.",
+    "SIE exam pass rate is ~70% with retakes — first-timers fail for the same three reasons. What the exam tests, a 4-week study plan, plus 75Q timed mock (free 25-question version).",
   publishedAt: "2026-07-27",
   eyebrow: "FINRA SIE · Securities licensing",
   clusterId: "finra-sie",

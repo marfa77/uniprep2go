@@ -57,9 +57,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a 50-question QS competency mock (free 25-question version).",
   "mrics-anki-deck":
-    "$11 / 250+ cross-pathway MRICS APC cards + free 50Q timed mock — ownable .apkg vs Brainscape packs. Official APC is interview + written evidence, not MCQ.",
+    "$11 / 250+ cross-pathway MRICS APC cards + 50Q timed mock (free 25-question version) — ownable .apkg vs Brainscape packs. Official APC is interview + written evidence, not MCQ.",
   "leed-green-associate-anki-deck":
-    "$11 / 120 LEED GA cards (LEED v5) + free 60Q timed mock — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
+    "$11 / 120 LEED GA cards (LEED v5) + 60Q timed mock (free 25-question version) — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
   "pmp-anki-deck":
     "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
   "parapro-anki-deck":
@@ -71,13 +71,13 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nebosh-anki-deck":
     "$11 / 250 NEBOSH IGC cards + free 50Q knowledge diagnostic — honest: official GIC1/GIC2 are not MCQ.",
   "well-ap-anki-deck":
-    "$11 / 250 WELL AP cards + free 50Q timed mock — official 115 items / 2.5h / scaled 170. Not IWBI material.",
+    "$11 / 250 WELL AP cards + 50Q timed mock (free 25-question version) — official 115 items / 2.5h / scaled 170. Not IWBI material.",
   "cem-anki-deck":
     "$11 / 250 CEM cards + free 50Q / 50 min timed mock — official AEE CEM is 130Q / 4h / open book / scaled 700. Not the paid 65Q AEE self-eval.",
   "california-real-estate-exam-anki-deck":
-    "250 California DRE-only cards + free 60Q timed mock — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
+    "250 California DRE-only cards + 60Q timed mock (free 25-question version) — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
-    "$11 Series 63 flashcards (250 NASAA cards) + free 60Q timed mock — state-law repair after SIE/7; not official NASAA material.",
+    "$11 Series 63 flashcards (250 NASAA cards) + 60Q timed mock (free 25-question version) — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
     "$29 / 2,463 cards in two .apkg files: 2,120 DELE A2 vocab cards with audio + 343 CCSE civics cards. Free 60Q CCSE diagnostic — official CCSE is 25Q / 45 min / 60%.",
   "citizenship-naturalization-anki-bundle":
@@ -358,7 +358,7 @@ export const positioningOverrides: Partial<
       "Subdecks mirror the official 10 / 20 / 10 exam split; institutions get 104 cards per language",
       "Key-point explanation on every card, 22 common-trap cards, facts checked against the 2023 Constitution and 2026 STATEC figures",
       "$16 one-time for both languages as ownable Anki files — web-only prep platforms charge about €69 for access",
-      "Free exam simulation in the official format — 40 questions, 60 minutes, 10/20/10 — with a score per module before you buy",
+      "Exam simulation in the official format — 40 questions (free 25-question version), 60 minutes, 10/20/10 — with a score per module before you buy",
     ],
     summaryProse:
       "Vivre ensemble rewards precise recall of Luxembourg’s institutions, rights and history — and punishes classic confusions like 1839 vs 1867 or Council of State vs Chamber. This pair gives you the same 239 cards in French and English, sorted by official module, with the why on every card, for a one-time $16 you keep offline.",

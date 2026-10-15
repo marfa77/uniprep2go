@@ -22,7 +22,7 @@ export const luxembourgVivreEnsemblePost: BlogPostDraft = {
     mockLabel: "Take the 40-question Vivre ensemble exam simulation (free 25-question version)",
     deckLabel: "Get the Luxembourg Vivre ensemble Anki decks (FR + EN)",
     summary:
-      "Sit the free Vivre ensemble exam simulation — 40 questions, 60 minutes, the official 10/20/10 split, scored per module. Then drill the misses with the FR + EN Anki pair (subdecks per official module, a key point on every card) — and remember Sproochentest is the harder half.",
+      "Sit the Vivre ensemble exam simulation — 40 questions (free 25-question version), 60 minutes, the official 10/20/10 split, scored per module. Then drill the misses with the FR + EN Anki pair (subdecks per official module, a key point on every card) — and remember Sproochentest is the harder half.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

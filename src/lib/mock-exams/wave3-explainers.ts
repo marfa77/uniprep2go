@@ -315,7 +315,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the medication aide exam?",
         answer:
-          "Where a state uses MACE, the written exam is typically 60 questions in 2 hours. Some states differ. UniPrep’s free check is 60 questions / 75 minutes.",
+          "Where a state uses MACE, the written exam is typically 60 questions in 2 hours. Some states differ. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official Medication Aide / MACE exam?",
@@ -453,7 +453,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASCP MLT exam?",
         answer:
-          "National MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes. Pass is a scaled 400 (not a published percent). UniPrep’s free check is 60 questions / 75 minutes.",
+          "National MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes. Pass is a scaled 400 (not a published percent). UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASCP MLT exam?",
@@ -664,7 +664,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the NSCA-CPT exam?",
         answer:
-          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s free check is 60 questions / 75 minutes with no video items.",
+          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes with no video items.",
       },
       {
         question: "Is NSCA-CPT the same as CSCS?",
@@ -689,7 +689,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is Precision Nutrition Level 1 the same as becoming an RDN?",
         answer:
-          "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s free check is 60 questions / 75 minutes.",
+          "No. RDN is a dietetics credential. PN L1 is coaching. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is this a personal-trainer CPT exam?",
@@ -745,7 +745,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the nail technician written exam?",
         answer:
-          "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s free check is 60 questions / 75 minutes. Confirm your state CIB. Practical is separate.",
+          "Where a state uses NIC Nail Technology Theory, the written exam is 110 items (100 scored) in 90 minutes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state CIB. Practical is separate.",
       },
       {
         question: "Is nail technician theory the same as Cosmetology Theory?",
@@ -775,7 +775,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the NIC Barber theory exam?",
         answer:
-          "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. UniPrep’s free check is 60 questions / 75 minutes. Confirm your state CIB.",
+          "Current NIC National Barber Theory: 60 items of which 50 are scored, 90 minutes. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes. Confirm your state CIB.",
       },
       {
         question: "Is this an official Barber exam?",
@@ -800,7 +800,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASWB Bachelors exam?",
         answer:
-          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s free check is 60 questions / 75 minutes.",
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASWB Bachelors exam?",
@@ -830,7 +830,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the ASWB Clinical exam?",
         answer:
-          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s free check is 60 questions / 75 minutes.",
+          "From 3 August 2026: 122 questions (110 scored + 12 pretest) in 4 hours. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is this an official ASWB Clinical exam?",
@@ -872,7 +872,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the PHR exam?",
         answer:
-          "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s free check is 60 questions / 75 minutes.",
+          "90 scored + 25 pretest in 2 hours, scaled pass 500. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes.",
       },
       {
         question: "Is PHR the same as SHRM-CP or SPHR?",
@@ -1028,7 +1028,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The ETS ParaPro Assessment (1755) is a 90-question / 150-minute selected-response exam covering reading, writing, and math for instructional paraprofessionals. About two-thirds of items test basic skills and about one-third apply them in classroom contexts. Many districts use a 460 scaled cut — verify locally.",
     administeredBy: "ETS",
     officialFormat:
-      "Official: 90 selected-response / 150 minutes. UniPrep2Go free check: 60 questions / 75 minutes with topic scoring — shorter diagnostic, not a full ETS form.",
+      "Official: 90 selected-response / 150 minutes. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes with topic scoring — shorter diagnostic, not a full ETS form.",
     examFaqs: [
       {
         question: "What is the ParaPro exam?",
@@ -1059,7 +1059,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is there a national unarmed security exam?",
         answer:
-          "No. States set hours and written tests. UniPrep’s free check is 60 questions / 75 minutes of unarmed knowledge.",
+          "No. States set hours and written tests. UniPrep’s check (free 25-question version) is 60 questions / 75 minutes of unarmed knowledge.",
       },
       {
         question: "Is this the armed guard exam?",
@@ -1213,7 +1213,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official SAFE MLO national test?",
         answer:
-          "120 items (115 scored + 5 unscored pretest) in 190 minutes, with a 75% passing score. UniPrep’s free check is 120 questions in 120 minutes with a 70% readiness target.",
+          "120 items (115 scored + 5 unscored pretest) in 190 minutes, with a 75% passing score. UniPrep’s check (free 25-question version) is 120 questions in 120 minutes with a 70% readiness target.",
       },
       {
         question: "Is this an official SAFE MLO exam?",

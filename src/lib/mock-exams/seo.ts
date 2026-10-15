@@ -157,7 +157,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ptcb-pharmacy-technician-mock": {
     title: "Free PTCB Practice Test 2026 | 90-Question PTCE Mock (80 Scored)",
     description:
-      "Free PTCB / PTCE mock: 90 timed questions, 110 minutes, January 2026 domain weights (Medications 35%, Federal 18.75%, Safety 23.75%, Order Entry 22.5%). Official PTCE is 80 scored + 10 pretest / scaled 1,400 — this page uses a 70% diagnostic. Full explanations, then $11 / 300-card Anki. Independent — not PTCB material.",
+      "PTCB / PTCE mock: free 25-question diagnostic, full mock 90 timed questions, 110 minutes, January 2026 domain weights (Medications 35%, Federal 18.75%, Safety 23.75%, Order Entry 22.5%). Official PTCE is 80 scored + 10 pretest / scaled 1,400 — this page uses a 70% diagnostic. Full explanations, then $11 / 300-card Anki. Independent — not PTCB material.",
     keywords: [
       "ptcb practice test",
       "ptcb mock exam",
@@ -178,7 +178,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-excpt-readiness-check": {
     title: "Free NHA ExCPT Practice Test | 60 Questions Online",
     description:
-      "Free NHA ExCPT pharmacy technician practice test: 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review — free 25-question diagnostic (no signup, no 20-question tease), then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, domain scoring for pharmacology, federal law, order entry, and dispensing — full answer review — free 25-question diagnostic (no signup, no 20-question tease), then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
     keywords: [
       "free nha excpt practice test",
       "nha excpt practice test",
@@ -197,7 +197,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfa-level-1-readiness-check": {
     title: "CFA Level 1 Practice Test 2026: Free 60-Question Check",
     description:
-      "Free CFA Level 1 practice test for 2026: 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
+      "CFA Level 1 practice test for 2026: free 25-question diagnostic, full mock 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
     keywords: [
       "cfa level 1 practice test",
       "cfa level 1 mock exam",
@@ -232,7 +232,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "california-real-estate-readiness-check": {
     title: "Free California Real Estate Salesperson Practice Test | 60Q Mock",
     description:
-      "Free California real estate practice: 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 250-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
+      "California real estate practice: free 25-question diagnostic, full mock 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 250-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
     keywords: [
       "california real estate practice test",
       "ca real estate exam questions",
@@ -249,7 +249,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "fl-real-estate-readiness-check": {
     title: "Free Florida Real Estate Practice Test | 60Q Diagnostic",
     description:
-      "Free Florida real estate practice test: 60 timed questions, 75 minutes, 70% readiness target, FREC topic scoring. Official DBPR exam is 100Q / 3.5h / 75% — this mock is shorter. Independent — not DBPR/FREC material.",
+      "Florida real estate practice test: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, 70% readiness target, FREC topic scoring. Official DBPR exam is 100Q / 3.5h / 75% — this mock is shorter. Independent — not DBPR/FREC material.",
     keywords: [
       "florida real estate practice test",
       "florida real estate exam questions",
@@ -267,7 +267,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "tx-real-estate-readiness-check": {
     title: "Free Texas Real Estate Practice Test | 60Q Diagnostic",
     description:
-      "Free Texas real estate practice test: 60 timed questions, 75 minutes, 70% readiness target, TREC topic scoring. Official TREC exam is dual national+state (~70% each) — this mock is shorter. Independent — not TREC material.",
+      "Texas real estate practice test: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, 70% readiness target, TREC topic scoring. Official TREC exam is dual national+state (~70% each) — this mock is shorter. Independent — not TREC material.",
     keywords: [
       "texas real estate practice test",
       "texas real estate exam questions",
@@ -285,7 +285,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ny-real-estate-readiness-check": {
     title: "Free NY Real Estate Practice Test | 60Q Diagnostic",
     description:
-      "Free New York real estate practice test: 60 timed questions, 90 minutes, 70% readiness target, DOS topic scoring. Official NYDOS exam is 75Q / 90 min / 70% — this mock is shorter. Independent — not DOS material.",
+      "New York real estate practice test: free 25-question diagnostic, full mock 60 timed questions, 90 minutes, 70% readiness target, DOS topic scoring. Official NYDOS exam is 75Q / 90 min / 70% — this mock is shorter. Independent — not DOS material.",
     keywords: [
       "new york real estate practice test",
       "ny real estate exam questions",
@@ -302,7 +302,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-65-readiness-check": {
     title: "Free Series 65 Practice Test | 120-Question Diagnostic",
     description:
-      "Free Series 65 practice test: 120 timed questions, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
+      "Series 65 practice test: free 25-question diagnostic, full mock 120 timed questions, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
     keywords: [
       "series 65 practice test",
       "series 65 practice exam",
@@ -392,7 +392,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "property-casualty-insurance-readiness-check": {
     title: "Free Property & Casualty Insurance Practice Test | 60 Questions",
     description:
-      "Free Property and Casualty insurance licensing practice online: 60 timed questions, 90 minutes, 70% target, topic scoring, and answer review. Independent P&C prep — not official state exam material.",
+      "Property and Casualty insurance licensing practice online: free 25-question diagnostic, full mock 60 timed questions, 90 minutes, 70% target, topic scoring, and answer review. Independent P&C prep — not official state exam material.",
     keywords: [
       "property casualty insurance practice test",
       "p&c insurance license exam",
@@ -409,7 +409,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "gmat-focus-readiness-check": {
     title: "Free GMAT Practice Test 2026 | 45-Question Mock",
     description:
-      "Free current-GMAT practice: 45 timed questions across Quant, Verbal, and Data Insights. Official exam is 64Q / 2h15 / 205–805. SuperScore live since Aug 2026. UniPrep bank rewritten October 2026 (no SC, no Quant geometry). Independent — not GMAC material.",
+      "Current-GMAT practice: free 25-question diagnostic, full mock 45 timed questions across Quant, Verbal, and Data Insights. Official exam is 64Q / 2h15 / 205–805. SuperScore live since Aug 2026. UniPrep bank rewritten October 2026 (no SC, no Quant geometry). Independent — not GMAC material.",
     keywords: [
       "gmat practice test",
       "gmat focus practice test",
@@ -427,7 +427,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sat-readiness-check": {
     title: "Free Digital SAT Practice Test | 49-Question Mock",
     description:
-      "Free Digital SAT practice: 49 timed questions across Reading and Writing and Math, 70 minutes, both section axes required. Live $11 / 160 unique Anki .apkg on Gumroad — not waitlist. Independent SAT prep — not College Board material.",
+      "Digital SAT practice: free 25-question diagnostic, full mock 49 timed questions across Reading and Writing and Math, 70 minutes, both section axes required. Live $11 / 160 unique Anki .apkg on Gumroad — not waitlist. Independent SAT prep — not College Board material.",
     keywords: [
       "digital sat practice test",
       "sat mock exam",
@@ -446,7 +446,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "pmp-readiness-check": {
     title: "Free PMP Practice Test 2026 | 51Q People / Process / BE",
     description:
-      "Free PMP domain diagnostic: 51 questions, 70 minutes, 17 People / 21 Process / 13 Business Environment (2026 ECO 33/41/26). All three domains must clear 70%. Official PMI exam is 180Q (170 scored) / 240 min with no published % cut. Then $11 / 346 Anki. Independent — not PMI material.",
+      "PMP domain diagnostic: free 25-question diagnostic, full mock 51 questions, 70 minutes, 17 People / 21 Process / 13 Business Environment (2026 ECO 33/41/26). All three domains must clear 70%. Official PMI exam is 180Q (170 scored) / 240 min with no published % cut. Then $11 / 346 Anki. Independent — not PMI material.",
     keywords: [
       "pmp practice test",
       "pmp mock exam",
@@ -486,7 +486,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "epa-608-readiness-check": {
     title: "Free EPA 608 Practice Test | 40-Question Mock",
     description:
-      "Free EPA Section 608 practice questions online: 40 timed questions across Core, Type I, Type II, and Type III, 75 minutes, 70% readiness target, section diagnosis, and full answer review. Independent HVAC prep — not U.S. EPA exam material.",
+      "EPA Section 608 practice questions online: free 25-question diagnostic, full mock 40 timed questions across Core, Type I, Type II, and Type III, 75 minutes, 70% readiness target, section diagnosis, and full answer review. Independent HVAC prep — not U.S. EPA exam material.",
     keywords: [
       "epa 608 practice test",
       "hvac certification practice test",
@@ -505,7 +505,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "bms-bas-readiness-check": {
     title: "Free BMS Practice Test | 60-Question BAS Mock",
     description:
-      "Free BMS / BAS practice: 60 timed questions across BACnet, HVAC sequences, alarms/trends, and commissioning — then repair with the $11 / 200+ BMS Anki deck. No single federal BMS license. Independent — not Tridium material.",
+      "BMS / BAS practice: free 25-question diagnostic, full mock 60 timed questions across BACnet, HVAC sequences, alarms/trends, and commissioning — then repair with the $11 / 200+ BMS Anki deck. No single federal BMS license. Independent — not Tridium material.",
     keywords: [
       "bms practice test",
       "building automation practice exam",
@@ -525,7 +525,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-cpct-readiness-check": {
     title: "Free NHA CPCT/A Practice Test | 120-Question PCT Mock",
     description:
-      "Free NHA CPCT/A practice: 120 timed questions / 120 minutes with topic scoring — then repair with the $11 / 120-card Anki deck. Official exam is 100+20 / 2h / scaled 390. Not CCMA / NHA CPT / ASPT. Independent — not NHA material.",
+      "NHA CPCT/A practice: free 25-question diagnostic, full mock 120 timed questions / 120 minutes with topic scoring — then repair with the $11 / 120-card Anki deck. Official exam is 100+20 / 2h / scaled 390. Not CCMA / NHA CPT / ASPT. Independent — not NHA material.",
     keywords: [
       "free nha cpct practice test",
       "nha cpct practice test",
@@ -692,7 +692,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "home-health-aide-readiness-check": {
     title: "Free Home Health Aide Practice Test 2026 | 60Q Timed HHA Mock",
     description:
-      "Free HHA practice test — no signup: 60 timed questions (75 min) from a 120-item bank, scored by topic, with a teaching note on every wrong answer. Written to the 42 CFR 484.80 competency subjects. Independent — not a state or agency exam.",
+      "HHA practice test: free 25-question diagnostic, full mock 60 timed questions (75 min) from a 120-item bank, scored by topic, with a teaching note on every wrong answer. Written to the 42 CFR 484.80 competency subjects. Independent — not a state or agency exam.",
     keywords: [
       "home health aide practice test",
       "hha practice test free",
@@ -1014,7 +1014,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "well-ap-readiness-check": {
     title: "Free WELL AP Practice Test 2026 | 50 Timed Questions + Topic Report",
     description:
-      "Free WELL AP practice: 50 timed questions / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card WELL AP Anki deck. Official GBCI/IWBI exam is 115 items / 2.5h / scaled 170. Independent — not IWBI material.",
+      "WELL AP practice: free 25-question diagnostic, full mock 50 timed questions / 100 minutes / 70% diagnostic — then repair with the $11 / 250-card WELL AP Anki deck. Official GBCI/IWBI exam is 115 items / 2.5h / scaled 170. Independent — not IWBI material.",
     keywords: [
       "well ap practice test",
       "well ap free mock exam",
@@ -1056,7 +1056,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ashrae-certifications-readiness-check": {
     title: "Free ASHRAE Certification Practice Test | 50-Question Readiness Check",
     description:
-      "Free ASHRAE certification practice: 50 timed questions across BEMP/BEAP/BCxP/CHD–HBDP–HFDP/OPMP — then repair with the $11 / 250-card Anki deck. Official forms mostly 115Q / 2.5h. Independent — not ASHRAE material.",
+      "ASHRAE certification practice: free 25-question diagnostic, full mock 50 timed questions across BEMP/BEAP/BCxP/CHD–HBDP–HFDP/OPMP — then repair with the $11 / 250-card Anki deck. Official forms mostly 115Q / 2.5h. Independent — not ASHRAE material.",
     keywords: [
       "ashrae certification practice test",
       "bemp exam prep",
@@ -1077,7 +1077,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cdcp-readiness-check": {
     title: "Free CDCP Practice Test | 40-Question Certified Data Centre Professional Readiness Check",
     description:
-      "Free CDCP practice questions online: 40 timed questions across data centre facilities and operations domains, 60 minutes, 68% readiness target (matches official pass mark), topic diagnosis, and full answer review. Independent prep — not EXIN or EPI exam material.",
+      "CDCP practice questions online: free 25-question diagnostic, full mock 40 timed questions across data centre facilities and operations domains, 60 minutes, 68% readiness target (matches official pass mark), topic diagnosis, and full answer review. Independent prep — not EXIN or EPI exam material.",
     keywords: [
       "cdcp practice test",
       "certified data centre professional exam",
@@ -1116,7 +1116,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "acsm-cpt-readiness-check": {
     title: "Free ACSM CPT Practice Test 2026 | 60Q Timed Mock",
     description:
-      "Free ACSM CPT practice test: 60 timed questions / 75 min from a 120-item bank, topic scores, answer review — then the $11 / 120-card Anki deck. Official ACSM-CPT: 135 items / 150 min / scaled 550. Not ACSM material.",
+      "ACSM CPT practice test: free 25-question diagnostic, full mock 60 timed questions / 75 min from a 120-item bank, topic scores, answer review — then the $11 / 120-card Anki deck. Official ACSM-CPT: 135 items / 150 min / scaled 550. Not ACSM material.",
     keywords: [
       "acsm cpt practice test",
       "acsm personal trainer practice exam",
@@ -1173,7 +1173,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfps-readiness-check": {
     title: "Free CFPS Practice Test | 50-Question Certified Fire Protection Specialist Readiness Check",
     description:
-      "Free CFPS practice questions online: 50 timed questions across NFPA's eight fire protection domains, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not NFPA exam material.",
+      "CFPS practice questions online: free 25-question diagnostic, full mock 50 timed questions across NFPA's eight fire protection domains, 90 minutes, 70% readiness target, topic diagnosis, and full answer review. Independent prep — not NFPA exam material.",
     keywords: [
       "cfps practice test",
       "certified fire protection specialist exam",
@@ -1193,7 +1193,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "mrics-readiness-check": {
     title: "Free MRICS Practice Questions | 50-Question APC Readiness Check",
     description:
-      "Free MRICS/APC practice: 50 timed questions / 100 minutes / 70% diagnostic across mandatory competencies, ethics, and interview themes — then repair with the $11 / 250+ MRICS Anki .apkg. Official APC is written submission + 60-min interview (not MCQ). Prefer ownable Anki over Brainscape subscription packs. Independent — not RICS material.",
+      "MRICS/APC practice: free 25-question diagnostic, full mock 50 timed questions / 100 minutes / 70% diagnostic across mandatory competencies, ethics, and interview themes — then repair with the $11 / 250+ MRICS Anki .apkg. Official APC is written submission + 60-min interview (not MCQ). Prefer ownable Anki over Brainscape subscription packs. Independent — not RICS material.",
     keywords: [
       "mrics practice questions",
       "rics apc exam prep",
@@ -1214,7 +1214,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "mrics-quantity-surveying-readiness-check": {
     title: "Free MRICS QS Practice Test | 50 APC Questions Online",
     description:
-      "Free MRICS Quantity Surveying APC practice test: 50 timed questions on cost planning, NRM measurement, JCT/NEC contracts, procurement, and project finance — 100 minutes, 70% target, competency scoring, full answer review, linked Anki deck. Better than untimed Brainscape cards alone. Independent — not RICS material.",
+      "MRICS Quantity Surveying APC practice test: free 25-question diagnostic, full mock 50 timed questions on cost planning, NRM measurement, JCT/NEC contracts, procurement, and project finance — 100 minutes, 70% target, competency scoring, full answer review, linked Anki deck. Better than untimed Brainscape cards alone. Independent — not RICS material.",
     keywords: [
       "free mrics qs practice test",
       "mrics quantity surveying practice questions",
@@ -1271,7 +1271,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "leben-in-deutschland-readiness-check": {
     title: "Free Leben in Deutschland Practice Test | 60 Questions",
     description:
-      "Free Einbürgerungstest / Leben in Deutschland practice: 60 timed questions (60 min, 55%). Official BAMF exam is 33Q/60min/17 correct — this page is a longer diagnostic. Citizenship Anki Bundle. Independent — not BAMF material.",
+      "Einbürgerungstest / Leben in Deutschland practice: free 25-question diagnostic, full mock 60 timed questions (60 min, 55%). Official BAMF exam is 33Q/60min/17 correct — this page is a longer diagnostic. Citizenship Anki Bundle. Independent — not BAMF material.",
     keywords: ["Leben in Deutschland test", "Einbürgerungstest üben", "German citizenship practice test"],
     headline: "Free Leben in Deutschland Readiness Check",
     intro:
@@ -1300,7 +1300,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "life-in-the-uk-readiness-check": {
     title: "Free Life in the UK Practice Test | 60 Questions",
     description:
-      "Free Life in the UK practice: 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Pair with the Citizenship Anki Bundle for spaced civics recall. Independent prep.",
+      "Life in the UK practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Pair with the Citizenship Anki Bundle for spaced civics recall. Independent prep.",
     keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice", "life in the uk anki"],
     headline: "Free Life in the UK Readiness Check",
     intro:
@@ -1324,7 +1324,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "australian-citizenship-readiness-check": {
     title: "Free Australian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Australian citizenship practice: 60 timed questions (45 min, 75%). Official test is 20Q/45min with a values dual-gate — this diagnostic does not enforce that gate. Citizenship Anki Bundle.",
+      "Australian citizenship practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official test is 20Q/45min with a values dual-gate — this diagnostic does not enforce that gate. Citizenship Anki Bundle.",
     keywords: ["Australian citizenship practice test", "Aussie citizenship quiz", "citizenship test Australia"],
     headline: "Free Australian Citizenship Readiness Check",
     intro:
@@ -1336,7 +1336,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ccse-espana-readiness-check": {
     title: "Free CCSE Practice Test (España) | 60 Questions",
     description:
-      "Free CCSE España practice: 60 timed questions (45 min, 60%). Official Cervantes CCSE is 25 items / 45 min / 15/25 — this page is longer. Then repair with the 343-card CCSE Anki deck (or the DELE A2 + CCSE bundle).",
+      "CCSE España practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 60%). Official Cervantes CCSE is 25 items / 45 min / 15/25 — this page is longer. Then repair with the 343-card CCSE Anki deck (or the DELE A2 + CCSE bundle).",
     keywords: [
       "CCSE practice test",
       "prueba CCSE gratis",
@@ -1406,7 +1406,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "czech-citizenship-readiness-check": {
     title: "Free Czech Reálie Practice Test | 60-Question Diagnostic",
     description:
-      "Free Czech citizenship / zkouška z reálií practice: 60 timed questions (45 min, 70% diagnostic), then drill weak topics with the live Czech Citizenship Anki deck. Official exam is 30Q/30min/60% from the NPI ~300-item pool — drill that model test for format. Independent — not MV ČR material.",
+      "Czech citizenship / zkouška z reálií practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 70% diagnostic), then drill weak topics with the live Czech Citizenship Anki deck. Official exam is 30Q/30min/60% from the NPI ~300-item pool — drill that model test for format. Independent — not MV ČR material.",
     keywords: [
       "Czech citizenship practice test",
       "občanství ČR test",
@@ -1444,7 +1444,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "denmark-indfoedsretsproeven-readiness-check": {
     title: "Free Denmark Indfødsretsprøven Practice Test | 60 Questions",
     description:
-      "Free Indfødsretsprøven practice: 60 timed questions. Official exam is 45Q/45min with 36/45 plus values dual-gate — this diagnostic is longer theme practice. Live Anki deck. Independent prep.",
+      "Indfødsretsprøven practice: free 25-question diagnostic, full mock 60 timed questions. Official exam is 45Q/45min with 36/45 plus values dual-gate — this diagnostic is longer theme practice. Live Anki deck. Independent prep.",
     keywords: ["Indfødsretsprøven", "Danish citizenship test", "Denmark citizenship practice"],
     headline: "Free Denmark Indfødsretsprøven Readiness Check",
     intro:
@@ -1456,7 +1456,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "portugal-nacionalidade-readiness-check": {
     title: "Free Portugal Nacionalidade Practice Test | 60 Questions",
     description:
-      "Free Portugal nationality civic practice: 60 timed questions on the five legal themes. Official Q/time/pass still pending regulation — independent diagnostic, not IRN. Live Anki deck.",
+      "Portugal nationality civic practice: free 25-question diagnostic, full mock 60 timed questions on the five legal themes. Official Q/time/pass still pending regulation — independent diagnostic, not IRN. Live Anki deck.",
     keywords: ["nacionalidade portuguesa", "conhecimento cívico", "Portugal citizenship test"],
     headline: "Free Portugal Nacionalidade Readiness Check",
     intro:
@@ -1468,7 +1468,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "norway-statsborgerproven-readiness-check": {
     title: "Free Norway Statsborgerprøven Practice Test | 60 Questions",
     description:
-      "Free Statsborgerprøven practice: 60 timed questions. Official HK-dir exam is 36Q (32 scored) / 60 min / 75% — this page is a different-length diagnostic. Live Anki deck. Independent prep.",
+      "Statsborgerprøven practice: free 25-question diagnostic, full mock 60 timed questions. Official HK-dir exam is 36Q (32 scored) / 60 min / 75% — this page is a different-length diagnostic. Live Anki deck. Independent prep.",
     keywords: ["Statsborgerprøven", "Norwegian citizenship test", "statsborgerskap"],
     headline: "Free Norway Statsborgerprøven Readiness Check",
     intro:
@@ -1480,7 +1480,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sweden-medborgarskapsprov-readiness-check": {
     title: "Free Sweden Medborgarskapsprov Practice Test | 60 Questions",
     description:
-      "Free Medborgarskapsprov society-knowledge practice: 60 timed questions. Official format may still be settling (new 2026 test) — independent Samhällskunskap diagnostic + live Anki deck.",
+      "Medborgarskapsprov society-knowledge practice: free 25-question diagnostic, full mock 60 timed questions. Official format may still be settling (new 2026 test) — independent Samhällskunskap diagnostic + live Anki deck.",
     keywords: ["Medborgarskapsprov", "Swedish citizenship test", "medborgarskap"],
     headline: "Free Sweden Medborgarskapsprov Readiness Check",
     intro:
@@ -1513,7 +1513,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-wallonie-citoyennete-readiness-check": {
     title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
     description:
-      "Free Wallonie citoyenneté theme practice: 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Live Anki deck. Independent prep.",
+      "Wallonie citoyenneté theme practice: free 25-question diagnostic, full mock 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Live Anki deck. Independent prep.",
     keywords: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium Wallonia citizenship"],
     headline: "Free Belgium Wallonie Citoyenneté Readiness Check",
     intro:
@@ -1525,7 +1525,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "luxembourg-vivre-ensemble-readiness-check": {
     title: "Luxembourg Vivre ensemble Practice Test: Free 40Q, 60 min",
     description:
-      "Free Luxembourg Vivre ensemble exam simulation: 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
+      "Luxembourg Vivre ensemble exam simulation: free 25-question diagnostic, full mock 40 questions in 60 minutes, official 10 rights / 20 institutions / 10 history & EU split, score per module and an explanation for every answer. Then fix weak modules with the $16 FR + EN Anki pair (239 cards each). Independent prep.",
     keywords: ["Vivre ensemble Luxembourg", "Luxembourg citizenship test", "nationalité luxembourgeoise"],
     headline: "Free Luxembourg Vivre ensemble Exam Simulation (40 Questions, 60 Minutes)",
     intro:
@@ -1537,7 +1537,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "finland-kansalaisuuskoe-readiness-check": {
     title: "Free Finland Kansalaisuuskoe Practice Test | 60 Questions (Finnish)",
     description:
-      "Free Finnish kansalaisuuskoe practice: 60 timed questions from a 120-question bank, scored by theme. For citizenship applications from 1 Mar 2027 (ages 18–64); official bank not published yet. Independent mock-only prep.",
+      "Finnish kansalaisuuskoe practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank, scored by theme. For citizenship applications from 1 Mar 2027 (ages 18–64); official bank not published yet. Independent mock-only prep.",
     keywords: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti", "Suomen kansalaisuuskoe"],
     headline: "Free Finland Kansalaisuuskoe Readiness Check",
     intro:

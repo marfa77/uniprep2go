@@ -96,7 +96,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is this UniPrep2Go check an official CFA Institute mock?",
         answer:
-          "No. It is an independent free readiness diagnostic (60 questions, 90 minutes, 70% target) with topic scoring. Use CFA Institute materials and mocks for official format practice.",
+          "No. It is an independent readiness diagnostic (60 questions, 90 minutes, 70% target; free 25-question version) with topic scoring. Use CFA Institute materials and mocks for official format practice.",
       },
       {
         question: "What score should I aim for on this readiness check?",
@@ -130,7 +130,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     administeredBy:
       "North American Securities Administrators Association (NASAA); computer-based delivery via FINRA/Prometric. Confirm current outlines on nasaa.org — UniPrep2Go is independent practice.",
     officialFormat:
-      "Official Series 65: 130 scored questions + 10 pretest / 180 minutes / 92 correct to pass (verify live NASAA bulletin). UniPrep2Go free mock: 120 questions, 120 minutes, topic scoring — diagnostic only.",
+      "Official Series 65: 130 scored questions + 10 pretest / 180 minutes / 92 correct to pass (verify live NASAA bulletin). UniPrep2Go mock: free 25-question diagnostic, full mock 120 questions, 120 minutes, topic scoring — diagnostic only.",
     whoFor:
       "RIA / IAR candidates preparing Series 65; career switchers from Series 7 who need adviser-law depth; and learners pairing the free mock with Anki for daily domain repair.",
     howToPrepare:
@@ -426,7 +426,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The NHA ExCPT (Exam for the Certification of Pharmacy Technicians) is an alternative national pharmacy technician certification pathway to PTCB’s PTCE. It tests medications/pharmacology, federal requirements and law, order entry, and dispensing/practice knowledge. Official ExCPT is typically ~120 items (including pretest) in about 2 hours 10 minutes with a scaled passing score — verify current NHA candidate handbook before you book.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
-      "Official ExCPT: ~120 multiple-choice items (scored + pretest), ~2 hours 10 minutes, scaled pass score (commonly cited ~390) — confirm on NHA. UniPrep2Go free readiness check: 60 timed questions, 75 minutes, domain scoring, full answer review.",
+      "Official ExCPT: ~120 multiple-choice items (scored + pretest), ~2 hours 10 minutes, scaled pass score (commonly cited ~390) — confirm on NHA. UniPrep2Go readiness check: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, domain scoring, full answer review.",
     examFaqs: [
       {
         question: "What is the NHA ExCPT exam?",
@@ -464,7 +464,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The NHA Certified Medical Administrative Assistant (CMAA) exam focuses on front-office medical admin: scheduling, EHR basics, insurance intake, medical terminology, and patient communication — not clinical procedures. Official public 2021 test plan: 110 scored + 25 pretest items (135 total) in 2 hours 15 minutes; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a 60-question / 50-minute timed diagnostic (free 25-question version) with domain scoring — not NHA material, not CCMA, and not CBCS.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
-      "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest / 2 hours 15 minutes / scaled pass 390 (200–500). Seven domains (foundational knowledge, communication, law/ethics, scheduling, patient encounter, billing, practice logistics). UniPrep2Go free readiness check: 60 timed questions, 50 minutes, four topic buckets — shorter than the live form.",
+      "Official NHA CMAA (2021 test plan): 110 scored + 25 pretest / 2 hours 15 minutes / scaled pass 390 (200–500). Seven domains (foundational knowledge, communication, law/ethics, scheduling, patient encounter, billing, practice logistics). UniPrep2Go readiness check: free 25-question diagnostic, full mock 60 timed questions, 50 minutes, four topic buckets — shorter than the live form.",
     whoFor:
       "Medical office students and front-desk staff sitting CMAA — not CCMA clinical assisting, not CBCS billing/coding, and not AAPC CPC. Confirm employer preference and NHA eligibility before you register.",
     howToPrepare:
@@ -489,7 +489,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The NHA Certified Billing and Coding Specialist (CBCS) exam certifies outpatient billing and coding staff who verify eligibility, apply coding guidelines, submit claims, and chase reimbursement. Official public NHA test plan: 100 scored + 25 pretest items (125 total) in 3 hours; scaled pass 390 on a 200–500 scale. This UniPrep2Go page is a 60-question / 75-minute timed diagnostic (free 25-question version) with domain scoring — not NHA material, not AAPC CPC, and not NHA CCMA/CMAA.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
-      "Official NHA CBCS (public test plan): 100 scored + 25 pretest / 3 hours / scaled pass 390 (200–500). Domains emphasize coding guidelines, insurance, claims, and reimbursement workflows. UniPrep2Go free readiness check: 60 timed questions, 75 minutes, topic scoring, full answer review — shorter than the live form so you can baseline before NHA’s paid practice test.",
+      "Official NHA CBCS (public test plan): 100 scored + 25 pretest / 3 hours / scaled pass 390 (200–500). Domains emphasize coding guidelines, insurance, claims, and reimbursement workflows. UniPrep2Go readiness check: free 25-question diagnostic, full mock 60 timed questions, 75 minutes, topic scoring, full answer review — shorter than the live form so you can baseline before NHA’s paid practice test.",
     whoFor:
       "Medical billing students, revenue-cycle juniors, and front-office staff moving into coding/claims who need a free timed CBCS baseline — not candidates sitting AAPC CPC, AHIMA CCS, NHA CCMA, or CMAA. Confirm employer preference and NHA eligibility before you register.",
     howToPrepare:
@@ -518,7 +518,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is there a free NHA CBCS practice test online?",
         answer:
-          "Yes — take the free UniPrep2Go CBCS readiness check on this page (60 questions / 75 minutes). NHA also sells an official practice test on nhanow.com; use both as complementary, not identical, prep.",
+          "Yes — take the UniPrep2Go CBCS readiness check on this page (60 questions / 75 minutes; free 25-question version). NHA also sells an official practice test on nhanow.com; use both as complementary, not identical, prep.",
       },
       {
         question: "What score do you need to pass NHA CBCS?",
@@ -637,7 +637,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "American Heart Association Basic Life Support (BLS) Provider training certifies healthcare providers in high-quality CPR, AED use, choking relief, and team resuscitation for adults, children, and infants. A current BLS Provider card is a common job requirement in hospitals, EMS, and clinics. The 2025 AHA/AAP update dropped two-finger infant compressions (heel of 1 hand or 2 thumb–encircling hands) and uses cycles of 5 back blows then 5 abdominal thrusts for severe adult/child choking. This UniPrep2Go page is independent cognitive practice — it does not issue an AHA course card.",
     administeredBy: "American Heart Association (AHA) Training Centers",
     officialFormat:
-      "Official HeartCode BLS cognitive: about 25 questions, open-resource, 84% pass, plus in-person Adult CPR/AED and Infant CPR skills. UniPrep2Go free check: 60 questions, 45 minutes, 84% readiness target — cognitive diagnostic only, not skills testing and not a BLS card.",
+      "Official HeartCode BLS cognitive: about 25 questions, open-resource, 84% pass, plus in-person Adult CPR/AED and Infant CPR skills. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions, 45 minutes, 84% readiness target — cognitive diagnostic only, not skills testing and not a BLS card.",
     whoFor:
       "Nurses, medics, students, and allied health staff booking an AHA BLS Provider course who want a 2025-aligned cognitive baseline before skills testing — not Heartsaver/lay-rescuer CPR and not ACLS.",
     howToPrepare:
@@ -700,7 +700,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Florida real estate sales associate exam is the state licensing knowledge test required after approved pre-license education to become a licensed sales associate in Florida. It covers real estate principles and practices, Florida license law under FREC/DBPR rules, contracts and conveyances, finance and appraisal math, and brokerage practice. Candidates typically complete the 63-hour pre-license course (confirm current hours), pass the state exam through the designated vendor, then activate a license with a broker. Always verify outlines, fees, and scheduling on official Florida DBPR / FREC materials.",
     administeredBy: "Florida DBPR / Florida Real Estate Commission (FREC) via the state’s exam vendor",
     officialFormat:
-      "Official Florida sales associate exam (Pearson VUE for DBPR/FREC): 100 multiple-choice questions, 3.5 hours (210 minutes), pass at 75/100. UniPrep2Go free mock on this page: 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
+      "Official Florida sales associate exam (Pearson VUE for DBPR/FREC): 100 multiple-choice questions, 3.5 hours (210 minutes), pass at 75/100. UniPrep2Go mock on this page: free 25-question diagnostic, full mock 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "Florida sales associate candidates who finished (or are finishing) FREC-approved pre-license coursework, plus out-of-state licensees preparing for Florida mutual recognition or state-portion requirements when applicable.",
     howToPrepare:
@@ -773,7 +773,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Texas real estate salesperson (sales agent) exam is the licensing knowledge test administered under the Texas Real Estate Commission (TREC) after you complete required qualifying education. The sitting typically includes a national real estate principles portion and a Texas-specific law portion covering TRELA, TREC rules, agency, contracts, finance/closing math, and property practice. Passing both portions (confirm current cut scores with TREC/Pearson VUE) is required before TREC can issue a sales agent license. Always verify education hours, exam fees, and outlines on official TREC materials.",
     administeredBy: "Texas Real Estate Commission (TREC) via Pearson VUE",
     officialFormat:
-      "Official Texas sales agent exam (Pearson VUE for TREC): dual national + Texas-law portions in one sitting; ~70% required on each scored portion — confirm current Pearson Content Outline counts. UniPrep2Go free mock: 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
+      "Official Texas sales agent exam (Pearson VUE for TREC): dual national + Texas-law portions in one sitting; ~70% required on each scored portion — confirm current Pearson Content Outline counts. UniPrep2Go mock: free 25-question diagnostic, full mock 60 questions, 75 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "Texas sales agent candidates who completed TREC-approved qualifying education, plus experienced agents refreshing before a retake. Also useful for out-of-state licensees facing Texas education or exam requirements when reciprocity does not fully waive testing.",
     howToPrepare:
@@ -846,7 +846,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The New York real estate salesperson exam is the state licensing knowledge test taken after completing New York’s required qualifying education hours. It covers agency, contracts, finance, property ownership, fair housing, and New York Department of State license law. Passing is required before you can be licensed as a New York real estate salesperson and affiliate with a broker. Confirm current hour requirements, exam vendor, and outlines with NYDOS.",
     administeredBy: "New York Department of State via the designated exam vendor",
     officialFormat:
-      "Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail). UniPrep2Go free mock: 60 questions, 90 minutes, 70% readiness target — diagnostic only.",
+      "Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail). UniPrep2Go mock: free 25-question diagnostic, full mock 60 questions, 90 minutes, 70% readiness target — diagnostic only.",
     whoFor:
       "New York salesperson candidates finishing approved qualifying education and licensees preparing for a retake who need a timed diagnostic before the official sitting.",
     howToPrepare:
@@ -1016,7 +1016,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The Sonography Principles & Instrumentation (SPI) exam from ARDMS (Inteleos) tests ultrasound physics and instrumentation — acoustic variables, transducers and beam formation, Doppler/hemodynamics, artifacts, quality assurance, and bioeffects. Most ARDMS specialty credentials (ABD, OB/GYN, and others) require passing SPI plus a specialty exam. This UniPrep2Go page is a text/physics diagnostic with no image-interpretation items and is not an ARDMS exam.",
     administeredBy: "ARDMS (American Registry for Diagnostic Medical Sonography / Inteleos)",
     officialFormat:
-      "Official ARDMS SPI: about 110 multiple-choice questions, 2 hours, scaled pass 555 on a 300–700 scale (verify current Inteleos/ARDMS bulletin). UniPrep2Go free check: 60 questions, 75 minutes, 70% readiness target — shorter diagnostic, text/physics only.",
+      "Official ARDMS SPI: about 110 multiple-choice questions, 2 hours, scaled pass 555 on a 300–700 scale (verify current Inteleos/ARDMS bulletin). UniPrep2Go check: free 25-question diagnostic, full mock 60 questions, 75 minutes, 70% readiness target — shorter diagnostic, text/physics only.",
     whoFor:
       "Sonography students and working sonographers sitting SPI as the physics gate before or alongside an ARDMS specialty exam — not ABD/OB image interpretation and not ARRT sonography.",
     howToPrepare:
@@ -1303,7 +1303,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The ASCP Board of Certification Medical Laboratory Scientist exam, MLS(ASCP), certifies clinical laboratory scientists across blood bank, chemistry, hematology, microbiology, urinalysis, immunology, and laboratory operations. Official sittings are 100 computer-adaptive multiple-choice questions in 2 hours 30 minutes with a scaled passing score of 400 on a 100–999 scale. UniPrep2Go’s free check is a shorter 60-question / 90-minute linear diagnostic (not CAT). Independent prep — not ASCP BOC exam material. MLS is not MLT.",
     administeredBy: "ASCP Board of Certification",
     officialFormat:
-      "100 one-best-answer multiple-choice questions, computer adaptive, 2 hours 30 minutes, Pearson VUE; scaled pass 400 (100–999). UniPrep’s free check is 60 questions / 90 minutes / 70% diagnostic on four benches — not CAT and not 1:1 BOC percentages.",
+      "100 one-best-answer multiple-choice questions, computer adaptive, 2 hours 30 minutes, Pearson VUE; scaled pass 400 (100–999). UniPrep’s check (free 25-question version) is 60 questions / 90 minutes / 70% diagnostic on four benches — not CAT and not 1:1 BOC percentages.",
     whoFor:
       "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
     howToPrepare:
@@ -1426,7 +1426,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The LEED Green Associate (GA) exam from GBCI is the foundational LEED credential demonstrating green-building literacy across integrative process, location and transportation, sustainable sites, water efficiency, energy and atmosphere, materials and resources, indoor environmental quality, and project synergies. It is often the first step before specialty LEED AP exams such as BD+C. Confirm current candidate handbook details with GBCI/USGBC before registering.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). The exam is based on LEED v5 since 2026. UniPrep2Go free check: 60 questions / 75 minutes from a 120-item v5 bank / 70% diagnostic — then drill weak domains in the linked $11 / 120-card Anki deck. Confirm current handbook at usgbc.org.",
+      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). The exam is based on LEED v5 since 2026. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank / 70% diagnostic — then drill weak domains in the linked $11 / 120-card Anki deck. Confirm current handbook at usgbc.org.",
     whoFor:
       "Architects, engineers, sustainability staff, students, and project team members who need a baseline LEED credential before project roles or LEED AP specialty exams.",
     howToPrepare:
@@ -1503,7 +1503,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "LEED AP Building Design and Construction (BD+C) is the specialty LEED credential for professionals applying LEED to design and construction projects. It goes beyond Green Associate literacy into credit application, documentation, and rating-system judgment for BD+C project types. Candidates generally must hold LEED GA first. Confirm prerequisites and handbook details with GBCI.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. LEED v4 testing ended June 28, 2026; the v5 beta continues until the final v5 exam (expected February 2027). UniPrep2Go free check: 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $11 / 120-card Anki deck.",
+      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. LEED v4 testing ended June 28, 2026; the v5 beta continues until the final v5 exam (expected February 2027). UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $11 / 120-card Anki deck.",
     whoFor:
       "LEED GA holders on design and construction teams — architects, engineers, consultants, and sustainability managers preparing for AP-level BD+C project responsibilities.",
     howToPrepare:

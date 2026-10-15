@@ -1288,7 +1288,7 @@ const rawDecks: Deck[] = [
       {
         question: "How does this compare with the official CFA Level 2 exam?",
         answer:
-          "Official Level 2 is 88 vignette-based questions in 22 item sets (11 per session) over 4 hours 24 minutes; CFA Institute sets the MPS after each sitting. This deck is daily recall. The paired free mock is 60 questions in 120 minutes with topic scores — a diagnostic, not a CFA Institute mock.",
+          "Official Level 2 is 88 vignette-based questions in 22 item sets (11 per session) over 4 hours 24 minutes; CFA Institute sets the MPS after each sitting. This deck is daily recall. The paired mock (free 25-question version) is 60 questions in 120 minutes with topic scores — a diagnostic, not a CFA Institute mock.",
       },
       {
         question: "Does the deck pair with a formula reference?",
@@ -1323,7 +1323,7 @@ const rawDecks: Deck[] = [
       "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
     shortName: "CFA Level 2 Formula Reference",
     subtitle:
-      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus free 60Q timed mock.",
+      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus 60Q timed mock (free 25-question version).",
     directAnswer:
       "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) across all 10 Level 2 topics, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Same bank as the 495-card Anki deck and the 60-question timed mock (free 25-question version). US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
     lastUpdated: "2026-10-04",

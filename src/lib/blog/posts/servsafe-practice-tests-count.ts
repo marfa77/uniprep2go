@@ -22,7 +22,7 @@ export const servsafePracticeTestsCountPost: BlogPostDraft = {
     mockLabel: "Take the free ServSafe Manager mock",
     deckLabel: "Drill weak domains with Anki",
     summary:
-      "Ready for a diagnostic? Take the free ServSafe Manager mock — 90 questions, timed, scored across domains. Then drill weak spots with the ServSafe Manager Anki deck before you pay for the real exam.",
+      "Ready for a diagnostic? Take the ServSafe Manager mock — 90 questions (free 25-question version), timed, scored across domains. Then drill weak spots with the ServSafe Manager Anki deck before you pay for the real exam.",
   },
   sections: [
     {
