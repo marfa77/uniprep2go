@@ -55,7 +55,7 @@ function buildExamFaqs(deck: Deck): DeckFaq[] {
     faqs.push({
       question: "Does this pair with the CFA Level 1 Anki deck?",
       answer:
-        "Yes, as two different tools. The PDF is a lookup sheet: 250 formulas and 98 definitions in tables, plus an 80-question recall drill. The 348-card Anki deck is separate practice weighted to the 2026 topic ranges, with a short case or calculation on every front and a worked example and common mistake on every back. Use the PDF to look things up and Anki for daily recall on your phone.",
+        "Yes, as two different tools. The PDF is a lookup sheet: 221 formulas in tables with when to use each and the exam trap, all 22 Standards, plus an 80-question recall drill. The 348-card Anki deck is separate practice weighted to the 2026 topic ranges, with a short case or calculation on every front and a worked example and common mistake on every back. Use the PDF to look things up and Anki for daily recall on your phone.",
     });
   } else {
     faqs.push({

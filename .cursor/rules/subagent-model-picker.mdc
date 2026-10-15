@@ -1,26 +1,16 @@
 ---
-description: Subagent model picker — Composer 2.5 Fast default, Grok 4.7 High Fast for hard engineering tasks
+description: Subagent model picker — inherit only, no third-party models
 alwaysApply: true
 ---
 
-# Subagent model picker (set 2026-09-29)
+# Subagent model picker (set 2026-10-15)
 
-Delegate work to Task subagents with an explicit model:
+User, 2026-10-15: «не использовать сторонние модели».
 
-| Case | Model slug |
-|---|---|
-| **Default** — routine tasks (deck rebuilds, site sync, scripts, PDF builds, Gumroad ops, tests) | `composer-2.5-fast` |
-| **Complex** — multi-file refactors, hard debugging, layout/rendering pipelines, anything Composer failed on | `grok-4.7-high-fast` |
-
-User asked for "Composer 2.5 Standard" / "Grok Standard"; those are not in the subagent list — the slugs above are the closest available. If they appear later, switch to them.
-
-## Grok limits (unchanged)
-
-Grok is **never** used for:
-- Threads review, bank copy, or content judgment (`threads-smart-agent-gpt-sol.mdc`)
-- Mock / Anki bank content review (`mock-bank-review-model.mdc` — Sol default, Opus escalate)
-
-If Sol/Opus are not available as a subagent model, use `inherit` subagents (same model as the main chat) for content writing and review — never fall back to Grok or Composer for content.
+Every Task subagent runs on **`inherit`** (same model as the main chat). Do **not** pass any other model
+slug — no Sol / GPT, Opus / Claude variants, Grok, Composer, Gemini — for any task: content writing,
+bank / deck review, Threads, scripts, PDF builds, Gumroad ops, tests. If the user names a specific model
+in a later message, that message overrides this rule for that request only.
 
 ## Parallel content work (set 2026-10-02, user: «быстрее за счёт оптимизации, не жертвуя качеством»)
 
@@ -28,7 +18,7 @@ Bank / deck audits are split across **parallel `inherit` subagents** instead of 
 
 - Main chat: gates → chunk inputs (`tmp/<slug>/…json`) + a chunk **validator** script → launch writers in one message (`run_in_background: true`) → while they run, do mechanical prep (pipeline, scripts) → merge → full gates → spot-read + fix → cascade.
 - Split by topic / id range (bank, ~15–25 items per writer) and by row batch (deck, ~50–60 cards per writer). Give each writer: the standard, its coverage plan (no overlap between writers), key-letter quota, output path, and the validator command it must pass before returning.
-- Mechanical steps with no content judgment (ops pipeline, apkg build, Gumroad replace/publish, sample render, tests) may go to `composer-2.5-fast`.
+- Review is a separate set of parallel `inherit` fix-first reviewers (not the writers re-reading their own chunk).
 - Point-rewrite: only items/cards that fail the standard are rewritten; passing ones stay. Full rewrite only when most of the artifact fails.
 
 ## Always

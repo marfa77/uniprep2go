@@ -64,14 +64,14 @@ describe("deck catalog", () => {
       format: "PDF",
       coverImage: "/covers/cfa-level-1-formula-reference-2026.webp",
     });
-    expect(formulaRef?.facts.cards).toBe("54 pages + 80 recall questions");
+    expect(formulaRef?.facts.cards).toBe("48 pages + 80 recall questions");
     expect(formulaRef?.sampleCards).toHaveLength(3);
     expect(formulaRef?.sampleCards.map((card) => card.imageUrl)).toEqual([
       "/samples/cfa-level-1-formula-reference-2026-sample-1.webp",
       "/samples/cfa-level-1-formula-reference-2026-sample-2.webp",
       "/samples/cfa-level-1-formula-reference-2026-sample-3.webp",
     ]);
-    expect(formulaRef?.directAnswer).toContain("250 typeset formulas");
+    expect(formulaRef?.directAnswer).toContain("221 typeset formulas");
     expect(formulaRef?.directAnswer).not.toMatch(/study guide/i);
     expect(formulaRef?.title).not.toMatch(/study guide/i);
   });
@@ -554,10 +554,10 @@ describe("deck catalog", () => {
     const expectedTitles: Record<string, string> = {
       "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 348 Smart Flashcards",
       "cfa-level-1-formula-reference-2026":
-        "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
+        "CFA Level 1 Formula Reference 2026 — 221 Formulas + 22 Standards + 80-Question Drill (PDF)",
       "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
       "cfa-level-2-formula-reference-2026":
-        "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
+        "CFA Level 2 Formula Reference 2026 — 281 Formulas + 22 Standards + 80-Question Drill (PDF)",
       "cfps-anki-deck": "CFPS Anki Deck — 400 Flashcards",
       "frm-part-1-anki-deck": "FRM Part 1 Anki Deck — 444 Exam Flashcards",
       "sie-exam-anki-deck": "SIE Exam Anki Deck — 300 High-Yield Flashcards",

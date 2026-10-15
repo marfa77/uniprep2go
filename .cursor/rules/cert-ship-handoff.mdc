@@ -8,7 +8,7 @@ alwaysApply: true
 User workflow (do not invent a slower one):
 
 1. **Writer (this chat)** — one pass: bank expand once → apkg once → Gumroad create/assets → SEO/GEO wire → focused tests → gate script → **STOP**
-2. **Bank content review (mandatory)** — fix-first subagent. Default **`gpt-5.6-sol-medium`** (cheaper). Escalate **`claude-opus-5-thinking-high`** on P0 remap/contamination, first live start on never-ledgered SKU, or user asks Opus. Never Grok. See `mock-bank-review-model.mdc`. No second full bank rewrite unless content P0.
+2. **Bank content review (mandatory)** — parallel fix-first **`inherit`** subagents only (no third-party models). See `mock-bank-review-model.mdc`. No second full bank rewrite unless content P0.
 3. **Sample screenshots (agent renders, not the user)** — `npm run refresh:sold-samples -- --slug {deckSlug}` → `npm run render:sample-shots -- --slug {deckSlug}` (review PNGs) → `--write --publish` puts `public/samples/{deckSlug}-sample-{1,2,3}.webp` + matching `decks.ts` sampleCards, then runs the Gumroad publisher for the deck type (wave `--polish-only`, building landings, finance polish, authored landing) + `check:gumroad-sample-cdn`, so Gumroad gets gallery **and** custom landing **Sample cards body** (not cover-only / site-only). Publisher table: `mock-bank-audit-standard.mdc` §5
 4. **Publish** — commit/push only after user OK; `llms:export` already done in step 1
 

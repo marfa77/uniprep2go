@@ -695,11 +695,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the 60-question / 120-minute mock (free 25-question version) to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA Level 2 Formula Sheet 2026 — 219 Formulas PDF, $19",
-    headline: "CFA Level 2 Formula Sheet PDF 2026 — 219 Formulas + Free Mock",
+    title: "CFA Level 2 Formula Sheet 2026 — 281 Formulas PDF, $19",
+    headline: "CFA Level 2 Formula Sheet PDF 2026 — 281 Formulas + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 formula sheet PDF for 2026: 219 formulas, 276 definitions, 80-question recall drill, 60 printable pages. $19. Not CFA Institute material.",
+      "CFA Level 2 formula sheet PDF for 2026: 281 formulas with exam traps, all 22 Standards, 80-question recall drill, 51 printable pages. $19. Not CFA Institute material.",
     keywords: [
       "cfa level 2 formula sheet",
       "cfa level 2 formula reference",
@@ -709,14 +709,14 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 practice test",
     ],
     intro:
-      "One-page L2 cheat sheets skip item-set timing. Print the 60-page tables, run the 80-question recall drill, then take the 60-question CFA Level 2 mock (free 25-question version) and repair misses in the 495-card Anki deck. Official exam: 88 questions in 22 vignettes over 4 hours 24 minutes.",
+      "One-page L2 cheat sheets skip item-set timing. Print the 51-page tables (every formula with when to use it and the exam trap), run the 80-question recall drill, then take the 60-question CFA Level 2 mock (free 25-question version) and repair misses in the 495-card Anki deck. Official exam: 88 questions in 22 vignettes over 4 hours 24 minutes.",
   },
   "cfa-level-1-formula-reference-2026": {
-    title: "Best CFA L1 Formula Sheet 2026 | 250 Formulas + Drill",
-    headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 250 Formulas + 80Q Drill",
+    title: "Best CFA L1 Formula Sheet 2026 | 221 Formulas + Drill",
+    headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 221 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best CFA Level 1 formula sheet PDF for 2026: 250 typeset formulas, 98 definitions, 80-question recall drill, 54 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 221 typeset formulas with exam traps, all 22 Standards, 80-question recall drill, 48 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
     keywords: [
       "best cfa level 1 formula sheet",
       "cfa level 1 formula sheet pdf",
@@ -725,7 +725,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 1 recall drill",
     ],
     intro:
-      "Free one-page cheat sheets skip the recall drill. This 54-page reference forces sub-three-second formula retrieval across all 10 topics — then the 60-question mock (free 25-question version) and companion Anki close the gaps.",
+      "Free one-page cheat sheets list formulas without telling you when each applies or where candidates slip. This 48-page reference puts the exam trap next to every formula, then drills recall — the 60-question mock (free 25-question version) and companion Anki close the gaps.",
   },
   "frm-part-1-anki-deck": {
     title: "Best FRM Part 1 Anki Deck | 444 Cards + Free Mock",

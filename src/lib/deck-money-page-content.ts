@@ -7,11 +7,11 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
     "348 scenario and calculation cards weighted to the 2026 CFA Level 1 topic ranges — Ethics is the largest section — each with a worked example and the common mistake.",
   "cfa-level-1-formula-reference-2026":
-    "54-page 2026 formula reference: 250 formulas + 98 definitions by topic plus an 80-question recall drill with answer key.",
+    "48-page 2026 formula reference: 221 typeset formulas with when to use each and the exam trap, 146 definitions, all 22 Standards, and an 80-question recall drill with answer key.",
   "cfa-level-2-anki-deck":
     "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a 60-question / 120-minute mock (free 25-question version) and the matching formula PDF. Not a Level 1 leftover dump.",
   "cfa-level-2-formula-reference-2026":
-    "60-page 2026 L2 formula reference: 219 formulas + 276 definitions plus an 80-question recall drill — pairs with the 60Q item-set diagnostic (free 25-question version).",
+    "51-page 2026 L2 formula reference: 281 typeset formulas with when to use each and the exam trap, all 22 Standards, plus an 80-question recall drill — pairs with the 60Q item-set diagnostic (free 25-question version).",
   "cat4-level-d-anki-deck-printable-pdf":
     "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
@@ -156,7 +156,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
     "Cards are short cases, not definitions: apply Standard III(C) to an unsolicited trade, convert LIFO to FIFO, price a callable bond with effective duration, or decide whether a 15% depreciation improves the trade balance. Ethics has 58 cards because it is 15-20% of the exam. Use the 60-question readiness check (free 25-question version) for topic scoring, then filter the deck to your weakest topics.",
   "cfa-level-1-formula-reference-2026":
-    "348 entries — 250 formulas and 98 definitions across Quant (65), Fixed Income (51), Derivatives (49), and the remaining Level 1 topics. The 80-question drill tests see-the-formula/name-the-concept recall. The 348-card Anki deck is a separate scenario deck weighted to the 2026 topic ranges, for daily recall after you look things up here.",
+    "221 formulas grouped by the 2026 learning modules — FSA and Fixed Income (36 each), Quant (31), Equity (26), Portfolio Management (22), Economics and Derivatives (20 each), Alternatives (16), Corporate Issuers (14) — plus all 22 Standards. Every row says when to use the formula and names the exam trap. The 80-question drill tests see-the-formula/name-the-concept recall. The 348-card Anki deck is a separate scenario deck weighted to the 2026 topic ranges, for daily recall after you look things up here.",
   "frm-part-1-anki-deck":
     "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
   "sie-exam-anki-deck":
@@ -286,7 +286,8 @@ export const positioningOverrides: Partial<
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
-      "250 formulas + 98 definitions — not a free one-page cheat sheet",
+      "221 formulas, each with when to use it and the exam trap — not a free one-page cheat sheet",
+      "All 22 Standards with what each requires, plus GIPS essentials",
       "80-question formula recall drill with explained answer key",
       "Print-ready US Letter PDF — companion, not curriculum replacement",
       "Pairs with the separate 348-card scenario Anki deck + 60Q mock (free 25-question version)",
@@ -1078,7 +1079,7 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
   "cfa-level-2-formula-reference-2026": `### What is inside
 
-60 printable pages with **219 typeset formulas** and **276 examiner-style definitions** across all ten CFA Level 2 topic areas — Quant, Economics, FSA, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics. Each row shows concept, typeset math, and a one-line plain-English meaning. The bundled **80-question Formula Recall Drill** tests whether you can name the concept behind a displayed formula under item-set timing.
+51 printable pages with **281 typeset formulas** grouped by the 2026 Level II learning modules — Equity Valuation (42), Fixed Income (38), Portfolio Management (37), Quant (36), FSA and Derivatives (32 each), Corporate Issuers and Alternatives (22 each), Economics (20) — plus **133 definitions** and **all 22 Standards**. Each formula row shows the concept and when to use it, the typeset formula with its variables, and the exam trap (for example, adding DLOC and DLOM instead of compounding them). Level I basics that Level II takes as given are left out. The **80-question Formula Recall Drill** masks one formula and offers four same-topic names, with every answer explained.
 
 ### Study plan with the free mock and Anki deck
 
@@ -1767,7 +1768,7 @@ Official DELE/SIELE registration, CCSE booking, residency paperwork, or Institut
 
   "cfa-level-1-formula-reference-2026": `### What is inside
 
-348 entries — 250 typeset formulas and 98 examiner-style definitions across Quantitative Methods (65), Fixed Income (51), Derivatives (49), FSA (44), Economics (36), Ethics & GIPS (28), Portfolio Management (27), Equity (23), Corporate Issuers (14), and Alternatives (11). Each table row shows concept, typeset formula, and a one-line plain-English meaning. The 80-question Formula Recall Drill shows a formula and asks you to name the concept — same-topic distractors mirror exam phrasing.
+48 printable pages: **221 typeset formulas** grouped by the 2026 learning modules — FSA and Fixed Income (36 each), Quantitative Methods (31), Equity (26), Portfolio Management (22), Economics and Derivatives (20 each), Alternatives (16), Corporate Issuers (14) — plus **146 definitions** and **all 22 Standards of Professional Conduct**. Each formula row has three columns: the concept and when to use it, the typeset formula with its variables, and the exam trap (for example, dividing by 1 + annual yield on a semiannual bond). The Ethics section lists what each Standard requires and the trap examiners set. The **80-question Formula Recall Drill** masks one formula and offers four same-topic names; every answer is explained in the key.
 
 ### Four-week recall plan with the Anki deck and free mock
 

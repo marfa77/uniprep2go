@@ -1,5 +1,5 @@
 ---
-description: Mock/Anki bank content review — Sol default, Opus escalate
+description: Mock/Anki bank content review — inherit subagents only
 alwaysApply: true
 ---
 
@@ -7,16 +7,11 @@ alwaysApply: true
 
 Mechanical gates (`triage:mock-banks`, `validate:wave-deck`, `validate:certification`) do **not** catch wrong-credential remaps (e.g. CMA bank under medical-scribe). After writer READY — or on live `mock:…:start` when bank smell/remap risk is non-zero — run a **content-judgment** fix-first subagent.
 
-## Model picker (cost + quality)
+## Model (user, 2026-10-15: «не использовать сторонние модели»)
 
-| Case | Model | Why |
-|------|-------|-----|
-| **Default** — new/rewritten bank after writer READY; routine wave ship; planned Anki pair | `gpt-5.6-sol-medium` | Cheaper; same house standard as Threads content review |
-| **Escalate** — P0 contamination / sibling remap / finance-template distractors / first live start on never-ledgered SKU / user says Opus | `claude-opus-5-thinking-high` | Deeper fix-first when Sol would burn another full rewrite anyway |
+Review runs on parallel **`inherit`** fix-first subagents (same model as the main chat), split by topic/rows with a chunk validator — see `subagent-model-picker.mdc` § Parallel content work. No other model slug (Sol, Opus, Grok, Composer, …). P0 contamination / sibling remap / first live start on a never-ledgered SKU = more reviewers on smaller chunks plus a main-chat spot-read of every changed item, not a different model. The main chat merges, re-runs all gates and spot-reads before "done".
 
-**Never:** Grok for bank content. **Never:** OpenRouter `validate:mock-banks` as a substitute (forbidden — see `no-openrouter.mdc`).
-
-**Sol/Opus not in the subagent list:** use parallel `inherit` subagents (same model as the main chat) for writing and review, split by topic/rows with a chunk validator — see `subagent-model-picker.mdc` § Parallel content work. The main chat merges, re-runs all gates and spot-reads before "done".
+**Never:** OpenRouter `validate:mock-banks` as a substitute (forbidden — see `no-openrouter.mdc`).
 
 ## What the reviewer must check
 
@@ -31,4 +26,4 @@ Full standard (item checklist, distractor rules, metric gates, Anki rebuild casc
 
 ## Handoff
 
-Writer STOP (gate READY) → launch Sol (or Opus if escalate) → apply fixes → focused tests → user ship OK.
+Writer STOP (gate READY) → launch `inherit` reviewers → apply fixes → focused tests → user ship OK.

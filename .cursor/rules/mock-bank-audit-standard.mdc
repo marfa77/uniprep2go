@@ -5,13 +5,13 @@ alwaysApply: true
 
 # Mock bank audit standard (market-best)
 
-Goal: every live bank is the **best practice bank on the market** for its exam, not just "mechanically clean". Applies to every bank audit, rewrite, or point-fix (mock + linked Anki pair). Reviewer model: `mock-bank-review-model.mdc` (Sol default, Opus escalate, never Grok, never OpenRouter).
+Goal: every live bank is the **best practice bank on the market** for its exam, not just "mechanically clean". Applies to every bank audit, rewrite, or point-fix (mock + linked Anki pair). Reviewer model: `mock-bank-review-model.mdc` (`inherit` subagents only, never OpenRouter).
 
 ## 1. Process (every audit)
 
 1. Export ops → git first if ops is newer (`export-ready-to-git.py --write <slug>`); audit the JSON users actually get.
 2. Mechanical gates: `npm run triage:mock-banks -- --slug <slug>` (then `git checkout` the smell-board) + `npm run audit:bank-quality -- --slug <slug>`.
-3. **Line-by-line content review of every item** (main chat or Sol/Opus subagent). Mechanical pass ≠ content OK.
+3. **Line-by-line content review of every item** (main chat or `inherit` subagents). Mechanical pass ≠ content OK.
 4. Fix via `scripts/ops-mock-banks/manual-patches-*.json` → `enrich-banks.py` → `apply-enriched-banks.py --write` → `export-ready-to-git.py --write` → `check-live-runnable.ts` → `npx vitest run src/lib/mock-exams/`.
 5. Re-run step 2 until **0 FAIL**; WARNs need a written reason or a fix.
 6. Run the cascade (section 4) and samples (section 5). Log the result in `docs/mock-bank-qa/bank-audit-ledger.md`.

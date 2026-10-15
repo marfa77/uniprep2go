@@ -516,13 +516,13 @@ const rawDecks: Deck[] = [
     category: "finance",
     status: "available",
     title:
-      "CFA Level 1 Formula Reference 2026 — 250 Formulas + 98 Definitions + 80-Question Drill (PDF)",
+      "CFA Level 1 Formula Reference 2026 — 221 Formulas + 22 Standards + 80-Question Drill (PDF)",
     shortName: "CFA Level 1 Formula Reference",
     subtitle:
-      "54-page printable formula quick reference for the 2026 cycle — 250 typeset formulas, 98 key definitions, and an 80-question recall drill.",
+      "48-page printable formula reference for the 2026 cycle — 221 typeset formulas with when to use each and the exam trap, 146 definitions, all 22 Standards, and an 80-question recall drill.",
     directAnswer:
-      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula & Definitions Quick Reference is a 54-page printable PDF: 250 typeset formulas + 98 examiner-style definitions across all 10 topics, an 80-question recall drill with explained answers, and a clickable TOC. It pairs with the separate 348-card scenario Anki deck and the 60-question timed mock (free 25-question version). Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
-    lastUpdated: "2026-09-29",
+      "For CFA Level 1 formula retrieval in 2026, UniPrep2Go’s Formula Reference is a 48-page printable PDF: 221 typeset formulas grouped by the 2026 learning modules, each row with when to use it and the exam trap, 146 definitions, all 22 Standards of Professional Conduct with what each requires, and an 80-question recall drill with an explained answer key. It pairs with the separate 348-card scenario Anki deck and the 60-question timed mock (free 25-question version). Delivered for {PRICE} through Gumroad. Printable recall companion — not a free one-page cheat sheet dump and not CFA Institute curriculum.",
+    lastUpdated: "2026-10-15",
     audience:
       "CFA Level 1 candidates who need fast formula retrieval under exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -531,44 +531,44 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "54 pages + 80 recall questions",
+      cards: "48 pages + 80 recall questions",
       topics:
-        "250 CFA Level 1 formulas and 98 key definitions across Quant, Economics, FSA, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics & GIPS",
+        "221 CFA Level 1 formulas, 146 definitions and the 22 Standards across Quant, Economics, Corporate Issuers, FSA, Equity, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics & GIPS",
       formulas:
-        "Typeset formula tables by topic, one-line plain-English meanings, and 80-question formula-recall drill with explanations",
+        "Typeset formula tables by topic with when to use each formula and the exam trap, plus an 80-question formula-recall drill with an explained key",
       examYear: "2026 CFA Level 1 preparation cycle",
       delivery: "Printable PDF digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Quantitative Methods", examWeight: "65 entries", cards: "TVM, statistics, regression — typeset with one-line meanings" },
-      { name: "Economics", examWeight: "36 entries", cards: "Micro, macro, and currency parity relationships" },
-      { name: "Financial Statement Analysis", examWeight: "44 entries", cards: "Ratios, cash flow linkages, inventory methods" },
-      { name: "Corporate Issuers", examWeight: "14 entries", cards: "Capital structure and governance metrics" },
-      { name: "Equity Investments", examWeight: "23 entries", cards: "Multiples, DDM, and index construction" },
-      { name: "Fixed Income", examWeight: "51 entries", cards: "Duration, convexity, yields, and pricing" },
-      { name: "Derivatives", examWeight: "49 entries", cards: "Forwards, futures, options, and swaps" },
-      { name: "Alternative Investments", examWeight: "11 entries", cards: "Core alternatives metrics" },
-      { name: "Portfolio Management", examWeight: "27 entries", cards: "CAPM, Sharpe, and portfolio risk/return" },
-      { name: "Ethics & GIPS", examWeight: "28 entries", cards: "Key ethics and GIPS definitions" },
+      { name: "Quantitative Methods", examWeight: "31 formulas", cards: "Rates and returns, TVM, statistics, probability, hypothesis tests, simple regression" },
+      { name: "Economics", examWeight: "20 formulas", cards: "Elasticities, market structure, policy multipliers, exchange-rate and parity math" },
+      { name: "Corporate Issuers", examWeight: "14 formulas", cards: "Cumulative voting, working capital costs, NPV/IRR, WACC, MM propositions" },
+      { name: "Financial Statement Analysis", examWeight: "36 formulas", cards: "EPS, cash flows, LIFO/FIFO, depreciation, taxes, liquidity and solvency ratios" },
+      { name: "Equity Investments", examWeight: "26 formulas", cards: "Margin, index returns, DDM and FCFE, justified multiples, enterprise value" },
+      { name: "Fixed Income", examWeight: "36 formulas", cards: "Pricing and yields, money market rates, spreads, duration, convexity, credit, MBS" },
+      { name: "Derivatives", examWeight: "20 formulas", cards: "Forward pricing and value, FRAs, swaps, option payoffs, parity, one-period binomial" },
+      { name: "Alternative Investments", examWeight: "16 formulas", cards: "Fee waterfalls, leveraged return, Sortino/Calmar, real estate, roll return" },
+      { name: "Portfolio Management", examWeight: "22 formulas", cards: "Portfolio variance, utility, CAL, CAPM/SML, Sharpe, Treynor, M², Jensen’s alpha" },
+      { name: "Ethics & GIPS", examWeight: "22 Standards", cards: "Code of Ethics, what each Standard requires and its exam trap, GIPS essentials" },
       { name: "Formula Recall Drill", examWeight: "80 questions", cards: "See the formula, name the concept — explained answer key" },
     ],
     sampleCards: [
       {
-        question: "Quantitative Methods formula table — typeset math at a glance",
+        question: "Fixed Income — yield duration and convexity table (page 24)",
         answer:
-          "Each row shows concept, typeset formula, and a one-line plain-English meaning — the fastest pre-exam scan for TVM and statistics families Level 1 repeats.",
+          "Macaulay, modified and approximate modified duration, approximate convexity, the duration-plus-convexity price change, money duration and PVBP, then effective duration and convexity, portfolio and key rate durations — each row with when to use it and the exam trap, such as dividing by (1 + annual yield) on a semiannual bond.",
         imageUrl: "/samples/cfa-level-1-formula-reference-2026-sample-1.webp",
       },
       {
-        question: "Formula Recall Drill — see the formula, name the concept",
+        question: "Ethics — Code of Ethics and Standards I(A)–III(B) (page 36)",
         answer:
-          "80 questions with same-topic distractors test whether you can retrieve the concept behind a displayed formula under exam timing.",
+          "The six Code obligations, then each Standard with what it requires and the exam trap: dissociating under I(A), issuer-paid travel under I(B), mosaic theory under II(A), soft dollars belonging to the client under III(A), fair versus equal treatment under III(B).",
         imageUrl: "/samples/cfa-level-1-formula-reference-2026-sample-2.webp",
       },
       {
-        question: "Drill question with full explanation in the answer key",
+        question: "Formula Recall Drill — Economics, Corporate Issuers and FSA items 13–27 (page 40)",
         answer:
-          "Every recall question includes why the correct concept matches the formula and why tempting distractors fail — mapped to the validated item bank.",
+          "Each item masks one formula and offers four same-topic names: the money multiplier, covered interest rate parity, IRR as 0 = Σ CF_t / (1 + ?)^t, the cost of trade credit, LIFO-to-FIFO adjustments and FCFF versus FCFE. Every answer is explained in the key.",
         imageUrl: "/samples/cfa-level-1-formula-reference-2026-sample-3.webp",
       },
     ],
@@ -576,7 +576,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the CFA Level 1 Formula Reference include?",
         answer:
-          "A 54-page printable PDF with 250 formulas and 98 key definitions across 10 Level 1 topic areas, an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents.",
+          "A 48-page printable PDF: 221 typeset formulas and 146 definitions across the 10 Level 1 topics, each formula with when to use it and the exam trap; all 22 Standards with what each requires; an 80-question Formula Recall Drill with an explained answer key; and a clickable table of contents.",
       },
       {
         question: "Is this a CFA study course or curriculum replacement?",
@@ -1299,7 +1299,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does the deck pair with a formula reference?",
         answer:
-          "Yes. The 60-page CFA Level 2 Formula Reference PDF shares the same validated item bank — use it for printable tables and the 80-question recall drill; use this deck for daily spaced repetition.",
+          "Yes. The 51-page CFA Level 2 Formula Reference PDF follows the same 2026 Level II modules — use it for printable formula tables with exam traps and the 80-question recall drill; use this deck for daily spaced repetition.",
       },
       {
         question: "Does the deck work on AnkiDroid and AnkiMobile?",
@@ -1326,13 +1326,13 @@ const rawDecks: Deck[] = [
     category: "finance",
     status: "available",
     title:
-      "CFA Level 2 Formula Reference 2026 — 219 Formulas + 276 Definitions + 80-Question Drill (PDF)",
+      "CFA Level 2 Formula Reference 2026 — 281 Formulas + 22 Standards + 80-Question Drill (PDF)",
     shortName: "CFA Level 2 Formula Reference",
     subtitle:
-      "60-page printable formula quick reference for the 2026 cycle — 219 typeset formulas, 276 definitions, 80-question recall drill, plus 60Q timed mock (free 25-question version).",
+      "51-page printable formula reference for the 2026 cycle — 281 typeset formulas with when to use each and the exam trap, all 22 Standards, 80-question recall drill, plus 60Q timed mock (free 25-question version).",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Formula & Definitions Quick Reference PDF with 60 printable pages: 495 entries (219 typeset formulas and 276 examiner-style definitions) across all 10 Level 2 topics, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Same bank as the 495-card Anki deck and the 60-question timed mock (free 25-question version). US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
-    lastUpdated: "2026-10-04",
+      "UniPrep2Go sells an independent CFA Level 2 Formula Reference PDF with 51 printable pages: 281 typeset formulas grouped by the 2026 Level II learning modules, each row with when to use it and the exam trap, 133 definitions, all 22 Standards with what each requires, an 80-question Formula Recall Drill with explained answers, and a clickable table of contents. Official Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is retrieval practice, not the exam and not a one-page cheat sheet. Pairs with the 495-card Anki deck and the 60-question timed mock (free 25-question version). US Letter PDF for {PRICE} on Gumroad. Not CFA Institute curriculum.",
+    lastUpdated: "2026-10-15",
     audience:
       "CFA Level 2 candidates who need fast formula retrieval under item-set exam timing — print the reference, run the recall drill, and pair with spaced-repetition review on the companion Anki deck.",
     format: "PDF",
@@ -1341,44 +1341,44 @@ const rawDecks: Deck[] = [
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "60 pages + 80 recall questions",
+      cards: "51 pages + 80 recall questions",
       topics:
-        "219 CFA Level 2 formulas and 276 definitions across Quant, Economics, Financial Reporting, Corporate Issuers, Equity Valuation, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics",
+        "281 CFA Level 2 formulas, 133 definitions and the 22 Standards across Quant, Economics, Financial Reporting, Corporate Issuers, Equity Valuation, Fixed Income, Derivatives, Alternatives, Portfolio Management, and Ethics",
       formulas:
-        "Typeset formula tables by topic, one-line plain-English meanings, and 80-question formula-recall drill with explanations",
+        "Typeset formula tables by topic with when to use each formula and the exam trap, plus an 80-question formula-recall drill with an explained key",
       examYear: "2026 CFA Level 2 preparation cycle",
       delivery: "Printable PDF digital download through Gumroad",
     },
     topicCoverage: [
-      { name: "Quantitative Methods", examWeight: "67 entries", cards: "Regression, ML, time-series — typeset with one-line meanings" },
-      { name: "Economics", examWeight: "22 entries", cards: "Currency equilibrium and growth models" },
-      { name: "Financial Reporting", examWeight: "66 entries", cards: "Pensions, FX translation, intercorporate accounting" },
-      { name: "Corporate Issuers", examWeight: "40 entries", cards: "M&A, capital structure, ESG, bank analysis" },
-      { name: "Equity Valuation", examWeight: "66 entries", cards: "Residual income, FCFF/FCFE, multiples, private company" },
-      { name: "Fixed Income", examWeight: "62 entries", cards: "Arbitrage-free pricing, credit models, term structure" },
-      { name: "Derivatives", examWeight: "38 entries", cards: "BSM, binomial trees, swaps" },
-      { name: "Alternative Investments", examWeight: "36 entries", cards: "Commodities, REITs, hedge funds" },
-      { name: "Portfolio Management", examWeight: "62 entries", cards: "Multifactor models, APT, active PM" },
-      { name: "Ethics & Standards", examWeight: "40 entries", cards: "Application-level ethics recall" },
+      { name: "Quantitative Methods", examWeight: "36 formulas", cards: "Multiple regression, misspecification tests, time series, machine learning, big data" },
+      { name: "Economics", examWeight: "20 formulas", cards: "FX parity conditions, carry, real exchange rates, growth accounting, Solow" },
+      { name: "Financial Reporting", examWeight: "32 formulas", cards: "Intercorporate investments, pensions, FX translation, bank capital, Beneish M-score" },
+      { name: "Corporate Issuers", examWeight: "22 formulas", cards: "Buybacks and payout, cost of capital advanced topics, restructuring and merger gains" },
+      { name: "Equity Valuation", examWeight: "42 formulas", cards: "DDM and H-model, FCFF/FCFE, justified multiples, residual income, private company discounts" },
+      { name: "Fixed Income", examWeight: "38 formulas", cards: "Forward rates, binomial trees, OAS, embedded options, credit models, CDS" },
+      { name: "Derivatives", examWeight: "32 formulas", cards: "Forward and swap pricing, binomial models, BSM and Black, Greeks and delta hedging" },
+      { name: "Alternative Investments", examWeight: "22 formulas", cards: "Commodity returns and carry, property valuation, REIT NAV and FFO/AFFO, hedge fund strategies" },
+      { name: "Portfolio Management", examWeight: "37 formulas", cards: "Fundamental law, multifactor models, VaR, ETF costs, backtesting" },
+      { name: "Ethics & Standards", examWeight: "22 Standards", cards: "What each Standard requires and its Level II case-style trap" },
       { name: "Formula Recall Drill", examWeight: "80 questions", cards: "See the formula, name the concept — explained answer key" },
     ],
     sampleCards: [
       {
-        question: "Equity Valuation table — FCFF and FCFE models (page 19)",
+        question: "Equity Valuation — residual income and private company valuation table (page 20)",
         answer:
-          "FCFF and FCFE from net income and from CFO, discounting FCFE at r_e, EV-to-equity bridge, terminal value TV_N = FCFF_(N+1) / (WACC − g) and the two-stage FCFF model — each row with a plain-English meaning.",
+          "Clean surplus, single-stage and finite-horizon residual income with persistence ω, the multistage model with a terminal premium over book, EVA and MVA, then the capitalized cash flow and excess earnings methods, expanded CAPM, DLOC and the compounded DLOC + DLOM discount — each row with when to use it and the exam trap.",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-1.webp",
       },
       {
-        question: "Formula Recall Drill — Equity Valuation items 36–41 (page 46)",
+        question: "Ethics — Code of Ethics and Standards I(A)–III(B) (page 39)",
         answer:
-          "See the formula, name the concept: RI intrinsic value V0 = BV0 + Σ RI_t / (1 + r_e)^t, clean surplus BV_t = BV_(t−1) + NI_t − D_t, RI persistence ω · RI_(t−1) and FCFF from CFO, with same-topic distractors.",
+          "The six Code obligations, then each Standard with what it requires and a Level II case-style trap, from dissociating under I(A) to selective disclosure under II(A) and fair dealing under III(B).",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-2.webp",
       },
       {
-        question: "Answer key with common traps (page 56)",
+        question: "Formula Recall Drill — Corporate Issuers and Equity Valuation items 28–42 (page 44)",
         answer:
-          "Every drill answer explains the concept and names the trap — e.g. WACC uses market-value weights and after-tax debt cost; FCFF discounted at WACC gives firm value, FCFE at the cost of equity gives equity value directly.",
+          "Each item masks one formula and offers four same-topic names: unlevering and relevering beta, the country risk premium, FCFF from net income, the H-model, single-stage versus finite-horizon residual income, and DLOC from a control premium. Every answer is explained in the key.",
         imageUrl: "/samples/cfa-level-2-formula-reference-2026-sample-3.webp",
       },
     ],
@@ -1386,17 +1386,17 @@ const rawDecks: Deck[] = [
       {
         question: "What does the CFA Level 2 Formula Reference include?",
         answer:
-          "A 60-page printable PDF with 219 formulas and 276 definitions across 10 Level 2 topic areas, an 80-question Formula Recall Drill with explained answer key, and a clickable table of contents.",
+          "A 51-page printable PDF: 281 typeset formulas and 133 definitions across the 10 Level 2 topics, each formula with when to use it and the exam trap; all 22 Standards with what each requires; an 80-question Formula Recall Drill with an explained answer key; and a clickable table of contents.",
       },
       {
         question: "Is this a CFA study course or curriculum replacement?",
         answer:
-          "No. This is a recall companion — it helps you retrieve formulas you already studied. It includes foundational quantitative and ethics review carried over from Level 1 so it works standalone, but it will not teach you the L2 curriculum.",
+          "No. This is a recall companion — it helps you retrieve formulas you already studied. It follows the 2026 Level II modules and leaves out Level I basics that Level II takes as given; it will not teach you the L2 curriculum.",
       },
       {
         question: "Does this pair with the CFA Level 2 Anki deck?",
         answer:
-          "Yes. The PDF and 495-card Anki deck share the same validated item bank. Use the reference for printable formula tables and the recall drill; use Anki for daily spaced-repetition on your phone.",
+          "Yes. The PDF and the 495-card Anki deck follow the same 2026 Level II modules. Use the reference for printable formula tables with exam traps and the recall drill; use Anki for daily spaced repetition on your phone.",
       },
       {
         question: "Is there a free CFA Level 2 practice test?",

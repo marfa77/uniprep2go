@@ -1,5 +1,5 @@
 ---
-description: Threads banks — Sol adapts written banks from farm history, never full rewrite
+description: Threads banks — inherit subagent adapts written banks from farm history, never full rewrite
 alwaysApply: true
 ---
 
@@ -8,10 +8,9 @@ alwaysApply: true
 Threads banks (UniPrep US, Prep2Go/CIPLE, Barakhlo, Emigro):
 
 - **Do not rewrite a written bank** (`*days.json`, `*guides.json`, wizard, investment). No new 28/100-day replacement file while the live bank exists.
-- **Adapt** only: point-edit weak rows. Input is farm HQ history + post ledger + `/engine` pipeline + pattern/adapt queue (views × weekday × hour × language × structure × tags × timers). Sol applies the patch; this agent does not write `p1`/`p2`.
+- **Adapt** only: point-edit weak rows. Input is farm HQ history + post ledger + `/engine` pipeline + pattern/adapt queue (views × weekday × hour × language × structure × tags × timers). A fix-first `inherit` subagent applies the patch; this agent does not write `p1`/`p2`.
 - Farm engine (`threads_farm_engine.py`) is the mechanical knowledge core — best pipeline per account. Do not auto-rewrite banks from it.
-- New SKU / new account with no bank yet: **`gpt-5.6-sol-medium`** writes the first bank.
-- Review / best-model / fix-first: Task model **`gpt-5.6-sol-medium`** only.
-- Never use Grok for Threads review, bank copy, or content judgment.
+- New SKU / new account with no bank yet: an **`inherit`** subagent writes the first bank.
+- Review / fix-first: Task model **`inherit`** only. No third-party models (user, 2026-10-15) — see `subagent-model-picker.mdc`.
 - Live farm on the VPS is write-locked (`/opt/farm-lock`). Do not rsync or unlock farm files from this UniPrep repo. Unlock only from the farm HQ chat that created the lock.
 - **Warn, don’t decide:** anything that might hurt reach, trust, measurement honesty, brand, or funnel (mismatched image/text, skipped answers, sparse dest while bio link dies, volume spikes on weak accounts, observe-only experiment arms, language mismatch, overlapping tests on one handle) — flag to the user first and wait for OK. Do not ship “good enough” shortcuts that confound a live experiment.

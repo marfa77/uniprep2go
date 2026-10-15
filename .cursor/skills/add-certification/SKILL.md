@@ -19,7 +19,7 @@ User cadence (keep ACE-style ships under one writer pass + one review):
 | Phase | Who | Exit |
 |-------|-----|------|
 | **A. Write** | Parent agent | Bank expand **once** → apkg **once** → Gumroad → SEO/GEO → focused tests → gate READY → **STOP** |
-| **B. Bank review** | Fix-first: default **`gpt-5.6-sol-medium`**; escalate **`claude-opus-5-thinking-high`** on P0 remap / first live never-ledgered / user asks Opus. Never Grok. Rule: `mock-bank-review-model.mdc` | P0/P1 fixed; **no** second full bank rewrite unless content P0 |
+| **B. Bank review** | Fix-first parallel **`inherit`** subagents only (no third-party models). Rule: `mock-bank-review-model.mdc` | P0/P1 fixed; **no** second full bank rewrite unless content P0 |
 | **C. Screenshots** | User | Drop 3 Anki captures → agent converts to `public/samples/{deckSlug}-sample-{1,2,3}.webp` |
 | **D. Publish** | Parent after user OK | commit + push `main` (Vercel) |
 
@@ -188,7 +188,7 @@ npm run triage:mock-banks -- --slug {mockSlug}
 # then the path gate: validate:wave-deck or validate:certification
 ```
 
-**Content review (always after READY):** launch fix-first Task — default **`gpt-5.6-sol-medium`**; escalate **`claude-opus-5-thinking-high`** on P0 remap / first live never-ledgered / user asks Opus. Never Grok. Never OpenRouter `validate:mock-banks` (forbidden — `no-openrouter.mdc`). Details: `.cursor/rules/mock-bank-review-model.mdc`.
+**Content review (always after READY):** launch parallel fix-first Task subagents on **`inherit`** only (no third-party models). Never OpenRouter `validate:mock-banks` (forbidden — `no-openrouter.mdc`). Details: `.cursor/rules/mock-bank-review-model.mdc`.
 
 Then sync all **card count** strings/specs if the reviewer dropped/rewrote items. Re-run session/topic quota tests.
 
@@ -294,7 +294,7 @@ Warnings: gumroad-live, mock-validation, llm-high-intent, homepage-links, mock-i
 | `expand-*-bank-local.py` | **Local** bank gen (required) |
 | `generate:mock-banks` | ❌ Do not use for banks |
 | `triage:mock-banks` | Mechanical smells (always) |
-| Bank content review | Task `gpt-5.6-sol-medium` default / Opus escalate — see `mock-bank-review-model.mdc` |
+| Bank content review | Task `inherit` subagents only — see `mock-bank-review-model.mdc` |
 | `validate:mock-banks` | ❌ Do not use (OpenRouter) |
 | `generate:deck-covers` | Cover + `--gumroad-thumbnails` |
 | `setup:gumroad-building-decks` | Building Gumroad |
