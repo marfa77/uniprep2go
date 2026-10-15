@@ -5,7 +5,7 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
   title: "Life in the UK Test: Why 1 in 3 People Fail",
   titleTag: "Life in the UK Test 2026: Why 1 in 3 Fail | Free Mock",
   metaDescription:
-    "24Q / 45 min / £50 per attempt — ~25% fail. Official handbook trap, Chapter 3 dates, and free 60Q Life in the UK mock + Citizenship Anki bundle before you book.",
+    "24Q / 45 min / £50 per attempt — ~25% fail. Official handbook trap, Chapter 3 dates, and a 60Q Life in the UK mock (free 25-question version) + Citizenship Anki bundle before you book.",
   publishedAt: "2026-07-28",
   eyebrow: "UK · Life in the UK Test",
   clusterId: "life-in-the-uk",

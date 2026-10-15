@@ -270,7 +270,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants watching Sweden’s proposed citizenship knowledge test; permanent residents who want civic literacy while language/residence remain the live bottlenecks; and learners comparing Nordic civics exams. Not legal advice and not an official exam sitting.",
     howToPrepare:
-      "1) Verify whether Medborgarskapsprov is actually required for your application date — proposed rules can change. 2) Keep language and residence documentation current under today’s pathway. 3) Build literacy on Riksdag, government, rights, history, EU/Nordic context, and public services in Swedish. 4) Use this free speculative 60-question check to find weak domains. 5) When an official sample bank appears, switch drills to that format. Repair weak topics with the live Sweden Medborgarskapsprov Anki deck.",
+      "1) Verify whether Medborgarskapsprov is actually required for your application date — proposed rules can change. 2) Keep language and residence documentation current under today’s pathway. 3) Build literacy on Riksdag, government, rights, history, EU/Nordic context, and public services in Swedish. 4) Use this speculative 60-question check (free 25-question version) to find weak domains. 5) When an official sample bank appears, switch drills to that format. Repair weak topics with the live Sweden Medborgarskapsprov Anki deck.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -773,7 +773,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Nationality applicants watching Portugal’s new civic knowledge requirement; CIPLE A2 candidates who want parallel civics literacy; and learners comparing Portugal with Spain’s CCSE. Not legal advice and not an official exam sitting.",
     howToPrepare:
-      "1) Verify whether the civic test is required for your application date and which exemptions apply. 2) Keep CIPLE A2 (or qualifying Portuguese schooling) on track — language is still a live bottleneck for many. 3) Study the five civic themes: state/rights, nationality/participation, history/geography/EU, society/services. 4) Use this free speculative 60-question check to find weak domains. 5) Switch to the official bank the day Justiça publishes it. Repair weak topics with the live Portugal Nacionalidade Anki deck.",
+      "1) Verify whether the civic test is required for your application date and which exemptions apply. 2) Keep CIPLE A2 (or qualifying Portuguese schooling) on track — language is still a live bottleneck for many. 3) Study the five civic themes: state/rights, nationality/participation, history/geography/EU, society/services. 4) Use this speculative 60-question check (free 25-question version) to find weak domains. 5) Switch to the official bank the day Justiça publishes it. Repair weak topics with the live Portugal Nacionalidade Anki deck.",
     topicBlurbs: [
       {
         id: "state-rights",

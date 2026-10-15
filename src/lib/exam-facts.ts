@@ -3630,7 +3630,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Linked Anki is live at $11 / 240 unique cards from the same bank (Mock Pass retakes are not a 120-stem shuffle).",
     ],
     high_yield_facts: [
-      "Official national: 120 items / 190 min / 75%; UniPrep free check: 120Q / 120m / 70% from a 240 unique bank.",
+      "Official national: 120 items / 190 min / 75%; UniPrep check: 120Q / 120m / 70% from a 240 unique bank (free 25-question version).",
       "TRID: Loan Estimate within 3 business days of application; Closing Disclosure generally 3 business days before consummation.",
       "RESPA §8 prohibits kickbacks and unearned fees for settlement-service referrals.",
       "ATR/QM rules require documenting ability to repay — QM is a compliance path, not an ATR exemption.",
@@ -3736,7 +3736,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "UniPrep Anki is live at $11 / 120 unique cards paired with a 60Q timed diagnostic (free 25-question version) from the same 120 bank.",
     ],
     high_yield_facts: [
-      "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s free check is 60 Q / 75 min / 70% from a 120 unique bank.",
+      "Official SPI ≈ 110 Q / 2 h / scaled 555; UniPrep’s check is 60 Q / 75 min / 70% from a 120 unique bank (free 25-question version).",
       "Propagation speed c = fλ; acoustic impedance Z = density × speed.",
       "Spatial pulse length = n × λ; axial resolution ≈ SPL/2.",
       "Doppler shift fd = 2 v f0 cosθ / c; shift ≈ 0 at 90°.",
