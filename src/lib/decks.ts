@@ -1091,21 +1091,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "Dana bought a $250,000 life policy without disclosing that she smoked. She dies in a car crash 26 months after issue. Can the insurer deny the claim because of the misstatement?",
+        question: "A client puts $10,000 into a variable annuity subaccount when the unit value is $20. What are accumulation units, and what changes over time?",
         answer:
-          "No, in most states. Once the policy has been in force for the contestable period, typically 2 years during the insured's lifetime, the incontestability clause bars the insurer from voiding it for misstatements on the application. The full $250,000 is payable, and the cause of death does not matter.",
+          "During the accumulation period, each purchase payment buys accumulation units of the separate account: $10,000 / $20 = 500 units. The number of units stays the same unless more money is added or withdrawn, but each unit's value rises and falls with the subaccount's investment performance. At annuitization, accumulation units are converted to annuity units.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "Raj's nonqualified deferred annuity holds $60,000 of after-tax premiums and is worth $90,000. At age 52 he withdraws $40,000. How much is taxable, and is there a penalty?",
+        question: "A policyowner of a $500,000 universal life policy has $80,000 of cash value. What death benefit is paid under Option A versus Option B?",
         answer:
-          "$30,000 is taxable as ordinary income and $10,000 is a tax-free return of basis. Withdrawals from a nonqualified deferred annuity are taxed LIFO: earnings come out first. Because Raj is under 59½, the taxable $30,000 also faces the 10% federal penalty, which is $3,000.",
+          "Option A (level) pays the $500,000 face; as cash value grows, the insurer's net amount at risk shrinks, so cost-of-insurance charges are lower. Option B (increasing) pays face plus cash value, $580,000 here, so the net amount at risk stays at $500,000 and the cost-of-insurance charges are higher.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "Mia, 8, is covered under both her married parents' employer health plans. Mom was born March 10, 1990; Dad was born July 2, 1985. Which plan pays first on Mia's $2,000 claim?",
+        question: "A beneficiary takes a $300,000 death benefit as $33,000 a year for 10 years. How much of each payment is taxable?",
         answer:
-          "Mom's plan is primary under the birthday rule: for a dependent child of parents who are married or living together, the plan of the parent whose birthday comes earlier in the calendar year pays first. Dad's plan pays second, up to its own benefit, so combined payments never exceed the $2,000 allowable expense.",
+          "$3,000 a year. When death proceeds are paid in installments or held at interest, the principal portion ($300,000 spread over 10 years, or $30,000 a year) stays tax-free, but the interest the insurer adds is taxable as ordinary income.",
         imageUrl: "/samples/life-and-health-insurance-exam-anki-deck-sample-3.webp",
       },
     ],

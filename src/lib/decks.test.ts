@@ -346,9 +346,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(lifeHealthDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "Dana bought a $250,000 life policy without disclosing that she smoked. She dies in a car crash 26 months after issue. Can the insurer deny the claim because of the misstatement?",
-      "Raj's nonqualified deferred annuity holds $60,000 of after-tax premiums and is worth $90,000. At age 52 he withdraws $40,000. How much is taxable, and is there a penalty?",
-      "Mia, 8, is covered under both her married parents' employer health plans. Mom was born March 10, 1990; Dad was born July 2, 1985. Which plan pays first on Mia's $2,000 claim?",
+      "A client puts $10,000 into a variable annuity subaccount when the unit value is $20. What are accumulation units, and what changes over time?",
+      "A policyowner of a $500,000 universal life policy has $80,000 of cash value. What death benefit is paid under Option A versus Option B?",
+      "A beneficiary takes a $300,000 death benefit as $33,000 a year for 10 years. How much of each payment is taxable?",
     ]);
   });
 
