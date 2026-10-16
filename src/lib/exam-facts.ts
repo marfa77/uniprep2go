@@ -2778,7 +2778,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s RD readiness check the official CDR exam?",
-        a: "No. The 120-question check (free 25-question version) and 120-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
+        a: "No. The 120-question check (free 25-question version, drawn from 240 items) and 240-card Anki deck are independent study aids mapped to CDR domain themes — not official CDR exams or Pearson VUE items.",
       },
     ],
     trademark_note:

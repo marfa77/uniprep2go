@@ -26,7 +26,7 @@
 **Хвосты top-10 traffic pass**
 - [ ] FL real estate: FAIL fix + 60→120 + live wave-deck cascade.
 - [ ] ascp-mlt 60→120; rd-exam (банк 240 или сессия 60 — решение).
-- [ ] Planned deck `cardCount` 60→120 в `wave-deck-specs.json` для 7 SKU 2026-10-15.
+- [x] Planned deck `cardCount` 60→120 в `wave-deck-specs.json` для 7 SKU 2026-10-15.
 
 ---
 

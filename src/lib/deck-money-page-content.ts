@@ -45,7 +45,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cscs-nsca-anki-deck":
     "Planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the 60-question diagnostic (free 25-question version) now — official CSCS is two papers / scaled 70 each. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
-    "120 CDR-domain cards (Principles, Nutrition Care, Management, Foodservice) with explanations — pairs with the 120-question RD readiness check (free 25-question version) before Pearson VUE.",
+    "240 CDR-domain cards (Principles 50, Nutrition Care 108, Management 50, Foodservice 32) with explanations — pairs with the 120-question RD readiness check (free 25-question version), drawn from the same bank, before Pearson VUE.",
   "enrolled-agent-anki-deck":
     "120 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a 120-question Enrolled Agent readiness check (free 25-question version) for topic scoring.",
   "ace-cpt-anki-deck":
@@ -89,13 +89,13 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
-    "Planned 60-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). 60Q / 75 min diagnostic live now (free 25-question version) — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
+    "Planned 120-card NHA CBCS Anki (coding, claims, HIPAA, revenue cycle). 60Q / 75 min diagnostic live now (free 25-question version) — official CBCS is 100+25 / 3h / scaled 390. ≠ AAPC CPC.",
   "aha-bls-provider-anki-deck":
-    "Planned 60-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). 60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version) — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
+    "Planned 120-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). 60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version) — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
     "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "ascp-mls-anki-deck":
-    "Planned 60-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
+    "Planned 120-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
     "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). 60Q / 75 min diagnostic live now (free 25-question version) — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
   "aswb-bachelors-anki-deck":
@@ -105,7 +105,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "barber-state-anki-deck":
     "Planned 60-card NIC-style barber theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
   "medication-aide-anki-deck":
-    "Planned 60-card medication-aide Anki (rights, routes, safety, documentation). 60Q / 75 min diagnostic live now (free 25-question version) — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
+    "Planned 120-card medication-aide Anki (rights, routes, safety, documentation). 60Q / 75 min diagnostic live now (free 25-question version) — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
   "nail-technician-state-anki-deck":
     "Planned 60-card NIC-style nail theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Nail Technology Theory is 110 (100 scored) / 90 min; practical separate. ≠ Cosmetology / Barber Theory.",
   "nsca-cpt-anki-deck":
@@ -137,7 +137,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "armed-security-officer-anki-deck":
     "Planned 120-card armed security Anki. 60Q / 75 min written diagnostic live now (free 25-question version) — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
-    "Planned 60-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
+    "Planned 120-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
     "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
@@ -466,7 +466,7 @@ export const positioningOverrides: Partial<
   },
   "aha-bls-provider-anki-deck": {
     ourEdge: [
-      "Planned 60-card BLS Anki for 2025 adult, infant, FBAO, and team themes",
+      "Planned 120-card BLS Anki for 2025 adult, infant, FBAO, and team themes",
       "60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version)",
       "Honest: official HeartCode BLS cognitive is ~25Q / 84% plus in-person skills",
       "≠ Heartsaver / ACLS — independent prep, not an AHA course card",
@@ -496,7 +496,7 @@ export const positioningOverrides: Partial<
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
-      "Planned 60-card MLS Anki for blood bank, chemistry, hematology, microbiology/immunology",
+      "Planned 120-card MLS Anki for blood bank, chemistry, hematology, microbiology/immunology",
       "60Q / 90 min timed diagnostic live now — free 25-question diagnostic, no signup",
       "Honest: official BOC MLS is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
       "≠ ASCP MLT technician credential",
@@ -546,7 +546,7 @@ export const positioningOverrides: Partial<
   },
   "medication-aide-anki-deck": {
     ourEdge: [
-      "Planned 60-card medication-aide Anki for rights, routes, safety, documentation",
+      "Planned 120-card medication-aide Anki for rights, routes, safety, documentation",
       "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: typical MACE is 60Q / 2h — our clock is shorter",
       "≠ NNAAP CNA and ≠ LPN/RN",
@@ -676,7 +676,7 @@ export const positioningOverrides: Partial<
   },
   "nha-cbcs-anki-deck": {
     ourEdge: [
-      "Planned 60-card CBCS Anki for coding, claims, HIPAA, revenue cycle",
+      "Planned 120-card CBCS Anki for coding, claims, HIPAA, revenue cycle",
       "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official CBCS is 100 scored + 25 pretest / 3h / scaled 390",
       "≠ AAPC CPC / NHA CCMA — independent prep, not NHA material",
@@ -716,7 +716,7 @@ export const positioningOverrides: Partial<
   },
   "veterinary-assistant-anki-deck": {
     ourEdge: [
-      "Planned 60-card veterinary assistant / AVA Anki",
+      "Planned 120-card veterinary assistant / AVA Anki",
       "60Q / 75 min timed diagnostic live now (free 25-question version)",
       "Honest: official NAVTA AVA typically 100Q / 150 min / 75%",
       "≠ VTNE (veterinary technician)",
@@ -865,7 +865,7 @@ Candidates confuse IPMVP Options A–D, treat AEE’s paid 65-question / 2-hour 
 An AEE-approved preparatory seminar, eligibility documentation, or the official CEM exam. Independent prep — not AEE material.`,
   "rd-exam-anki-deck": `### What is inside
 
-120 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (21%), Nutrition Care for Individuals and Groups (45%), Management of Food and Nutrition Programs and Services (21%), and Foodservice Systems (13%). Every card includes a correct explanation and notes on why the other options fail — the same bank themes as the free timed readiness check.
+240 MCQ cards aligned to the CDR Registration Examination for Dietitians domains: Principles of Dietetics (50 cards, 21%), Nutrition Care for Individuals and Groups (108 cards, 45%), Management of Food and Nutrition Programs and Services (50 cards, 21%), and Foodservice Systems (32 cards, 13%). Every card includes a correct explanation and notes on why the other options fail. The free timed check draws 120 of these 240 items on each attempt.
 
 ### 2–3 week study plan with the free mock
 

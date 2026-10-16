@@ -3,11 +3,12 @@
   npm run sku:status && python3 scripts/sku-daily-plan.py     # writes docs/mock-bank-qa/daily-plan.md
 
 Bank queue and priority order come from scripts/sku-quality-plan.py (traffic → Tier A → finance → live → families).
-Mon–Sat: one bank chunk (~equal effort) + one small side task. Sun: weekly ops (ledger, push, live check, GSC).
+Mon–Sat: whole finished SKUs only (never a "day 1/2" slice) + one small finished side task.
+A bank bigger than a day still occupies one day: the result is the shipped SKU, not a chunk.
+Sun: weekly ops (ledger, push, live check, GSC).
 Re-run after each Sunday so finished SKUs drop out and the rest shifts.
 """
 import datetime as dt
-import math
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -19,7 +20,7 @@ exec(weekly_src.split(marker)[0], ns)
 todo, civic, standalone, prep2go, dups = ns["todo"], ns["civic"], ns["standalone"], ns["prep2go"], ns["dups"]
 DUPLICATES, DECK_NO_CHECKOUT, board = ns["DUPLICATES"], ns["DECK_NO_CHECKOUT"], ns["board"]
 
-START = dt.date.today() + dt.timedelta(days=1)
+START = dt.date.today()  # morning regen includes today; a Sunday run still starts on that Sunday's ops row
 END = START + dt.timedelta(days=91)
 DAYS = [START + dt.timedelta(days=i) for i in range((END - START).days + 1)]
 WORK = [d for d in DAYS if d.weekday() != 6]
@@ -70,23 +71,13 @@ def label(r):
     return f"`{s}` {verb} {size}{deck}"
 
 
-# Pack the queue into work days of roughly equal effort; a big bank spans several days.
+# One row = finished SKUs. A bank is never split across days.
 main: list[list[str]] = [[] for _ in WORK]
 day, load = 0, 0.0
 for r in todo:
     if day >= len(WORK):
         break
-    span = max(1, math.ceil(r["effort"] / cap - 0.3))
-    if span > 1:
-        if load > 0:
-            day += 1
-        for k in range(span):
-            if day + k < len(WORK):
-                main[day + k].append(f"{label(r)} (день {k + 1}/{span})")
-        day += span
-        load = 0.0
-        continue
-    if load > 0 and load + r["effort"] > cap * 1.3:
+    if load > 0 and load + r["effort"] > cap * 1.15:
         day, load = day + 1, 0.0
         if day >= len(WORK):
             break
@@ -104,8 +95,8 @@ L = [
     f"({board['generated'][:10]}). Порядок: трафик → Tier A → финансы → live → семейства. "
     "Каждое воскресенье пересчитывать: готовые SKU выпадают, остальное сдвигается.",
     "",
-    f"- Банков к `ok`: **{len(todo)}** (~{cap:.0f} единиц в рабочий день; 1 единица = 1 новый вопрос или 2 проверенных).",
-    "- Каждый банк: гейты → построчный content review → ops → ledger → для 🟢 live-деки каскад в тот же день.",
+    f"- Банков к `ok`: **{len(todo)}**. День закрыт, когда каждый SKU в строке сдан целиком: гейты, построчный review, ops, ledger, и для live-деки каскад (apkg, Gumroad, samples).",
+    f"- Ориентир нагрузки ~{cap:.0f} единиц (1 = новый вопрос, 0.5 = проверенный). Банк больше дня всё равно один день и один результат, без «день 1/2».",
     "- «Плюс немного»: сначала лендинги/воронка из бэклога, потом civic, продукты, Prep2Go деки.",
     "",
 ]

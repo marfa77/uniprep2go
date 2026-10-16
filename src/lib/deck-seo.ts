@@ -436,11 +436,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "rd-exam-anki-deck": {
-    title: "RD Exam Anki Deck 2026 | 120 CDR Flashcards + Free Mock",
-    headline: "RD / RDN Exam Prep — 120 CDR Domain Flashcards",
+    title: "RD Exam Anki Deck 2026 | 240 CDR Flashcards + Free Mock",
+    headline: "RD / RDN Exam Prep — 240 CDR Domain Flashcards",
     studyLabel: "RD exam Anki flashcards",
     description:
-      "RDN Anki deck: 120 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a 120-question RD readiness check (free 25-question version). Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
+      "RDN Anki deck: 240 cards across CDR Principles, Nutrition Care, Management, and Foodservice — with explanations and a 120-question RD readiness check (free 25-question version) drawn from the same bank. Ownable .apkg for dietetic candidates after ACEND practice. Independent — not CDR material.",
     keywords: [
       "rd exam anki",
       "rdn flashcards",
@@ -1076,7 +1076,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Graduate applicants who want a free timed Verbal+Quant baseline before PowerPrep — then an ownable 350-card .apkg for section repair. Free AnkiWeb vocab megas still win on word count; UniPrep is the diagnostic + V+Q deck path.",
   },
   "nha-cbcs-anki-deck": {
-    title: "NHA CBCS Anki | Planned 60 Cards + Free Mock",
+    title: "NHA CBCS Anki | Planned 120 Cards + Free Mock",
     headline: "NHA CBCS Prep — Planned Cards + 60Q Practice Test (25Q Free)",
     studyLabel: "NHA CBCS exam prep",
     description:
@@ -1090,7 +1090,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free nha cbcs practice test",
     ],
     intro:
-      "Billing and coding candidates who want a free timed CBCS diagnostic before NHA’s paid practice tests — then a planned 60-card .apkg for spaced repair. Not AAPC CPC and not a 125-item NHA substitute.",
+      "Billing and coding candidates who want a free timed CBCS diagnostic before NHA’s paid practice tests — then a planned 120-card .apkg for spaced repair. Not AAPC CPC and not a 125-item NHA substitute.",
   },
   "cosmetology-state-anki-deck": {
     title: "Cosmetology Anki | Planned 60 Cards + Free Mock",
@@ -1143,7 +1143,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Guards upgrading to armed posts who want a free timed written diagnostic before state firearms training — then a planned 60-card .apkg. Written only; live-fire qualification is separate.",
   },
   "veterinary-assistant-anki-deck": {
-    title: "Veterinary Assistant Anki | Planned 60 Cards + Free Mock",
+    title: "Veterinary Assistant Anki | Planned 120 Cards + Free Mock",
     headline: "Veterinary Assistant / AVA Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "NAVTA AVA veterinary assistant exam prep",
     description:
@@ -1156,7 +1156,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free veterinary assistant practice test",
     ],
     intro:
-      "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 60-card .apkg. Not the VTNE technician pathway.",
+      "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 120-card .apkg. Not the VTNE technician pathway.",
   },
   "medical-scribe-anki-deck": {
     title: "Medical Scribe Anki | 120 Cards + 60Q Mock (25Q Free)",

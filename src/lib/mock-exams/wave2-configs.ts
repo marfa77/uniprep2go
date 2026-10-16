@@ -450,28 +450,28 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       {
         id: "principles",
         label: "Principles of dietetics",
-        questionCount: 30,
+        questionCount: 25,
         weightPercent: 21,
         targetPercent: 70,
       },
       {
         id: "nutrition-care",
         label: "Nutrition care for individuals and groups",
-        questionCount: 30,
+        questionCount: 54,
         weightPercent: 45,
         targetPercent: 70,
       },
       {
         id: "management",
         label: "Management of food and nutrition programs",
-        questionCount: 30,
+        questionCount: 25,
         weightPercent: 21,
         targetPercent: 70,
       },
       {
         id: "foodservice",
         label: "Foodservice systems",
-        questionCount: 30,
+        questionCount: 16,
         weightPercent: 13,
         targetPercent: 70,
       },
@@ -481,9 +481,9 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     description:
       "120-question Registered Dietitian (RDN) exam readiness check (free 25-question version) across CDR’s four domains — principles, nutrition care, management, and foodservice.",
     examBody: "CDR (Commission on Dietetic Registration)",
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-16",
     questionSourceNote:
-      "Original UniPrep2Go local bank (Wave 2). Point-fixed 2026-10-05: leftover-reheat 165°F/15 s vs poultry cook CCP, thin notes/explanations.",
+      "Original UniPrep2Go bank: 240 unique items. Each attempt draws 120 (Principles 25, Nutrition Care 54, Management 25, Foodservice 16), weighted to the 2022–2026 CDR outline. Expanded 2026-10-16.",
   }),
 ];
 

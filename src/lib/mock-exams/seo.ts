@@ -559,7 +559,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "AHA BLS Provider Cognitive Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 60-card Anki waitlist. Not Heartsaver and not an AHA course card.",
+      "A timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 120-card Anki waitlist. Not Heartsaver and not an AHA course card.",
     audience:
       "Healthcare students and clinicians booking BLS Provider who want a 2025-aligned cognitive baseline before skills — not lay Heartsaver CPR and not ACLS.",
     practiceTestLabel: "AHA BLS practice test",
@@ -597,7 +597,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "ASCP MLS Practice Test — 60 Lab Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 90-minute diagnostic for ASCP BOC MLS — blood bank, chemistry, hematology, and microbiology/immunology. Official MLS(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLT technician.",
+      "A timed 60-question / 90-minute diagnostic for ASCP BOC MLS — blood bank, chemistry, hematology, and microbiology/immunology. Official MLS(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 120-card Anki waitlist. Not MLT technician.",
     audience:
       "MLS students and working scientists booking national MLS(ASCP) — not MLT technician candidates and not phlebotomy-only PBT.",
     practiceTestLabel: "ASCP MLS practice test",
@@ -688,7 +688,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Medication Aide Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 75-minute diagnostic for state medication-aide / MACE themes — six rights, routes, safety, and documentation. Typical NCSBN MACE is 60 questions in 2 hours where a state uses it. This check uses the same item count on a shorter clock. Planned 60-card Anki waitlist. Not RN/LPN and not NNAAP CNA.",
+      "A timed 60-question / 75-minute diagnostic for state medication-aide / MACE themes — six rights, routes, safety, and documentation. Typical NCSBN MACE is 60 questions in 2 hours where a state uses it. This check uses the same item count on a shorter clock. Planned 120-card Anki waitlist. Not RN/LPN and not NNAAP CNA.",
     audience:
       "CNAs completing medication-aide training for long-term care — not LPNs/RNs and not CNA-only candidates.",
     practiceTestLabel: "Medication Aide practice test",
@@ -852,7 +852,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-cbcs-readiness-check": {
     title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",
     description:
-      "NHA CBCS practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Independent — not NHA material. Not AAPC CPC.",
+      "NHA CBCS practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 120-card Anki. Official CBCS is 100 scored + 25 pretest / 3 hours / scaled 390. Independent — not NHA material. Not AAPC CPC.",
     keywords: [
       "nha cbcs practice test",
       "free nha cbcs practice test",
@@ -863,7 +863,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "NHA CBCS Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 60-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This check is a shorter 60Q / 75 min diagnostic (free 25-question version) — not a full-length NHA form and not AAPC CPC.",
+      "A timed NHA Certified Billing and Coding Specialist diagnostic across coding guidelines, claims/reimbursement, compliance/HIPAA, and revenue-cycle themes — then join the planned 120-card Anki waitlist for spaced repair. Official CBCS test plan: 100 scored + 25 pretest (125 total) / 3 hours / scaled pass 390. This check is a shorter 60Q / 75 min diagnostic (free 25-question version) — not a full-length NHA form and not AAPC CPC.",
     audience:
       "Medical billing and coding students and revenue-cycle staff preparing for NHA CBCS who want a timed baseline before NHA’s paid practice tests or official study guide.",
     practiceTestLabel: "NHA CBCS practice test",
@@ -927,7 +927,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "veterinary-assistant-readiness-check": {
     title: "Free Veterinary Assistant Practice Test 2026 | 60Q AVA Mock",
     description:
-      "Veterinary assistant / AVA-style practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
+      "Veterinary assistant / AVA-style practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 120-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
     keywords: [
       "veterinary assistant practice test",
       "navta ava practice test",
@@ -937,7 +937,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Veterinary Assistant Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis — then join the planned 60-card Anki waitlist. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% / $100 for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
+      "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis — then join the planned 120-card Anki waitlist. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% / $100 for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
     audience:
       "Veterinary assistant students and graduates preparing for NAVTA AVA-style themes who want a free timed baseline before VetMedTeam’s official exam.",
     practiceTestLabel: "Veterinary assistant practice test",
@@ -1101,7 +1101,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "rd-exam-readiness-check": {
     title: "Free RD Exam Practice Test 2026 | 120 Questions Online",
     description:
-      "Free RD / RDN practice test — free 25-question diagnostic, no signup; full mock: 120 timed questions, 120 minutes, 70% readiness target, four CDR domain scores. Official exam is CAT 125–145 items / 3 hours / scaled 25. Then repair with the $11 / 120-card Anki deck. Independent — not CDR material.",
+      "Free RD / RDN practice test — free 25-question diagnostic, no signup; full mock: 120 timed questions, 120 minutes, 70% readiness target, four CDR domain scores. Official exam is CAT 125–145 items / 3 hours / scaled 25. Then repair with the $11 / 240-card Anki deck. Independent — not CDR material.",
     keywords: [
       "rd exam practice test",
       "rdn practice exam",
@@ -1112,7 +1112,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free RD Exam Practice Test",
     intro:
-      "A timed 120-question / 120-minute linear diagnostic across CDR’s 2022–2026 domains (Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%) — then drill weak rows in the linked $11 / 120-card Anki deck. Official Registration Examination for Dietitians is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50. This check is not CAT and is not Pearson VUE. From January 1, 2027 CDR regroups domains; this bank still uses 2022–2026 labels.",
+      "A timed 120-question / 120-minute linear diagnostic across CDR’s 2022–2026 domains (Principles 21%, Nutrition Care 45%, Management 21%, Foodservice 13%) — then drill weak rows in the linked $11 / 240-card Anki deck. Official Registration Examination for Dietitians is computer-adaptive 125–145 items in 3 hours with scaled pass 25/50. This check is not CAT and is not Pearson VUE. From January 1, 2027 CDR regroups domains; this bank still uses 2022–2026 labels.",
     audience:
       "Dietetic interns and RDN candidates after ACEND-accredited education and supervised practice who want a timed domain report before Pearson VUE — not DTR/NDTR and not a nursing or CPT bank.",
     practiceTestLabel: "RD Exam practice test",
