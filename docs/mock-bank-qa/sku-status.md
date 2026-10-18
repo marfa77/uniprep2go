@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 54 | 32 |
+| ok | 55 | 33 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 20 | 1 |
 | point-fix | 0 | 0 |
-| rewrite | 103 | 31 |
+| rewrite | 102 | 30 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -36,7 +36,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `il-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ma-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `mi-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `mrics-readiness-check` | live | 50 / 250 | 2026-10-14 | FAIL (46 items): near-duplicate / templated stems (>=0.8), thin/template explanations; padding ×61 |
 | rewrite | `nc-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nha-cpct-readiness-check` | live | 120 / 120 | — | FAIL (21 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `nj-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (17 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -156,7 +155,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `frm-part-1-readiness-check` | live | 50 / 120 | 2026-10-18 | — |
 | ok | `gmat-focus-readiness-check` | live | 45 / 200 | 2026-10-15 | — |
-| ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-15 | — |
+| ok | `gre-readiness-check` | live | 30 / 350 | 2026-10-18 | — |
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
@@ -164,6 +163,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `mortgage-loan-originator-readiness-check` | live | 120 / 240 | 2026-10-15 | — |
 | ok | `mrics-quantity-surveying-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
+| ok | `mrics-readiness-check` | live | 50 / 250 | 2026-10-18 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-15 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |
@@ -284,8 +284,6 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `celi-b1-italian-anki-deck` | https://www.prep2go.study/shop/celi-a2-anki-deck | — |
 | unreviewed | `ciple-a2-european-portuguese-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | — |
 | unreviewed | `ciple-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/ciple-a2-grammar-anki-deck | — |
-| unreviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | — |
-| unreviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | — |
 | unreviewed | `dele-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/dele-a2-grammar-anki-deck | — |
 | unreviewed | `dele-a2-spanish-anki-deck` | https://www.prep2go.study/shop/dele-a2-anki-deck | — |
 | unreviewed | `delf-a2-printable-french-flashcards` | https://www.prep2go.study/shop/deck/delf-a2-printable-flashcards | — |
@@ -295,16 +293,18 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `german-a2-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
 | unreviewed | `german-a2-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
 | unreviewed | `german-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
-| unreviewed | `greek-a2-ellinomatheia-anki-deck` | https://www.prep2go.study/shop/deck/greek-ellinomatheia-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-arabic-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-arabic-speakers-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-portuguese-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-portuguese-speakers-anki-deck | — |
-| unreviewed | `norwegian-a2-norskprove-anki-deck` | https://www.prep2go.study/shop/deck/norwegian-norskprove-anki-deck | — |
-| unreviewed | `swedish-a2-sfi-anki-deck` | https://www.prep2go.study/shop/deck/swedish-sfi-anki-deck | — |
+| reviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | 2026-10-18 |
+| reviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | 2026-10-18 |
 | reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |
+| reviewed | `greek-a2-ellinomatheia-anki-deck` | https://www.prep2go.study/shop/deck/greek-ellinomatheia-anki-deck | 2026-10-18 |
 | reviewed | `ielts-toefl-english-for-french-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-french-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-russian-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-spanish-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-spanish-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-turkish-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-turkish-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-ukrainian-speakers-anki-deck | 2026-10-13 |
-| reviewed | `polish-a2-certyfikat-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-certyfikat-anki-deck | 2026-10-13 |
-| reviewed | `polish-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck | 2026-10-13 |
+| reviewed | `norwegian-a2-norskprove-anki-deck` | https://www.prep2go.study/shop/deck/norwegian-norskprove-anki-deck | 2026-10-18 |
+| reviewed | `polish-a2-certyfikat-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-certyfikat-anki-deck | 2026-10-18 |
+| reviewed | `polish-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck | 2026-10-18 |
+| reviewed | `swedish-a2-sfi-anki-deck` | https://www.prep2go.study/shop/deck/swedish-sfi-anki-deck | 2026-10-18 |
