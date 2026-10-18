@@ -48,6 +48,7 @@ async function fetchOpsQuestions(examSlug: string, rpc: string): Promise<MockQue
     },
     body: JSON.stringify({ p_slug: examSlug }),
     // Allow ISR of mock landings — no-store here forced every /mock-exams/* to Cache-Control: no-store.
+    // A new deployment drops this cache so an ops upsert is what the next request serves.
     next: { revalidate: 3600 },
   });
   const text = await response.text();
