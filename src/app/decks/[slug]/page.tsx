@@ -25,6 +25,7 @@ import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
 import { DeckUniqueContentSection } from "@/components/decks/deck-unique-content-section";
 import { DeckStickyCheckoutBar } from "@/components/decks/deck-sticky-checkout-bar";
 import { DeckPurchaseCountNote } from "@/components/decks/deck-purchase-count";
+import { ReportLayoutPreview } from "@/components/mock-exams/report-layout-preview";
 import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
 import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
@@ -411,7 +412,9 @@ export default async function DeckPage({
                 ) : null}
               </>
             )}
-            {!isPlanned ? <DeckPurchaseCountNote slug={deck.slug} /> : null}
+            {!isPlanned && deck.slug !== "cfa-level-1-anki-deck" ? (
+              <DeckPurchaseCountNote slug={deck.slug} />
+            ) : null}
           </div>
           {heroImage ? (
             <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
@@ -428,6 +431,8 @@ export default async function DeckPage({
             </div>
           ) : null}
         </div>
+
+        {deck.slug === "cfa-level-1-anki-deck" ? <ReportLayoutPreview /> : null}
 
         <LlmFactsStrip
           deck={deck}

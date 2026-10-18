@@ -26,6 +26,7 @@ import {
 } from "@/components/mock-exams/mock-seo-sections";
 import { MockSampleQuestionsSection } from "@/components/mock-exams/mock-sample-questions";
 import { MockMissCohortPanel } from "@/components/mock-exams/mock-miss-cohort";
+import { ReportLayoutPreview } from "@/components/mock-exams/report-layout-preview";
 import { MockStartCountNote } from "@/components/mock-exams/mock-start-count";
 import { MockHeroAccessCta } from "@/components/mock-exams/mock-hero-access-cta";
 import { getPublicMissCohort } from "@/lib/mock-exams/miss-cohort-store";
@@ -348,7 +349,11 @@ export default async function MockExamPage({
         <MockExamWhatIsSection config={config} />
         <MockExamWhoForSection config={config} />
         <MockExamHowToPrepareSection config={config} />
-        <MockExamTopicOutlineSection config={config} />
+        {config.slug === "cfa-level-1-readiness-check" ? (
+          <ReportLayoutPreview />
+        ) : (
+          <MockExamTopicOutlineSection config={config} />
+        )}
         <MockExamAboutVisibleSection config={config} />
 
         {examFactsProfile ? (
@@ -361,7 +366,18 @@ export default async function MockExamPage({
               day.
             </p>
             <div className="mt-5">
-              <DeckExamFactsSection profile={examFactsProfile} compact />
+              <DeckExamFactsSection
+                profile={examFactsProfile}
+                compact
+                sessionQuestions={
+                  config.slug === "cfa-level-1-readiness-check"
+                    ? config.topics.map((topic) => ({
+                        domain: topic.label,
+                        questions: topic.questionCount,
+                      }))
+                    : undefined
+                }
+              />
             </div>
           </section>
         ) : null}

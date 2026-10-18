@@ -129,16 +129,16 @@ export type PlannedDeck = BaseDeck & {
 export type Deck = CatalogAvailableDeck | PlannedDeck;
 
 export const cfaLevelOneTopics: TopicCoverage[] = [
-  { name: "Ethical and Professional Standards", examWeight: "15-20%", cards: "50+" },
-  { name: "Quantitative Methods", examWeight: "6-9%", cards: "35+" },
-  { name: "Economics", examWeight: "6-9%", cards: "30+" },
-  { name: "Financial Statement Analysis", examWeight: "11-14%", cards: "55+" },
-  { name: "Corporate Issuers", examWeight: "6-9%", cards: "25+" },
-  { name: "Equity Investments", examWeight: "11-14%", cards: "40+" },
-  { name: "Fixed Income", examWeight: "11-14%", cards: "40+" },
-  { name: "Derivatives", examWeight: "5-8%", cards: "20+" },
-  { name: "Alternative Investments", examWeight: "7-10%", cards: "22+" },
-  { name: "Portfolio Management", examWeight: "8-12%", cards: "25+" },
+  { name: "Ethical and Professional Standards", examWeight: "15-20%", cards: "58" },
+  { name: "Equity Investments", examWeight: "11-14%", cards: "45" },
+  { name: "Financial Statement Analysis", examWeight: "11-14%", cards: "42" },
+  { name: "Fixed Income", examWeight: "11-14%", cards: "42" },
+  { name: "Portfolio Management", examWeight: "8-12%", cards: "33" },
+  { name: "Alternative Investments", examWeight: "7-10%", cards: "30" },
+  { name: "Quantitative Methods", examWeight: "6-9%", cards: "26" },
+  { name: "Economics", examWeight: "6-9%", cards: "26" },
+  { name: "Corporate Issuers", examWeight: "6-9%", cards: "24" },
+  { name: "Derivatives", examWeight: "5-8%", cards: "22" },
 ];
 
 export const cfaLevelTwoTopics: TopicCoverage[] = [
@@ -383,7 +383,7 @@ const rawDecks: Deck[] = [
       "Focused 348-card CFA Level 1 Anki deck weighted to the 2026 topic ranges — scenario and calculation cards with a worked example and common mistake on each, plus a 60-question timed mock (free 25-question version).",
     directAnswer:
       "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg weighted to the 2026 CFA Institute topic ranges (Ethics 58 cards, Equity 45, FSA 42, Fixed Income 42 and the other six topics), where every front is a scenario or calculation and every back carries a worked example and the common mistake. It pairs with a 60-question timed readiness-check mock (free 25-question version; topic scoring) and a printable 2026 formula reference PDF. Delivered for {PRICE} through Gumroad — not a bloated mega-deck and not official CFA Institute material.",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-10-16",
     audience:
       "CFA Level 1 candidates who want to apply the Standards, formulas and accounting rules to short cases — not just recite definitions — in 15 to 25 minutes a day.",
     format: ".apkg",
@@ -634,10 +634,10 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "FRM Part 1 Anki Deck — 444 Exam Flashcards",
     shortName: "FRM Part 1",
-    subtitle: "444 FRM Part 1 Anki cards + 50-question timed practice test (free 25-question version) — VaR, ES, Greeks, credit risk.",
+    subtitle: "444 FRM Part 1 Anki cards. The free start is 25 questions. The full timed practice test is 50 questions — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake, plus a 50-question timed readiness-check mock (free 25-question version) with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-10-02",
+      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake. The free diagnostic is 25 questions. The full timed readiness check is 50 questions, with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
+    lastUpdated: "2026-10-16",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
@@ -681,17 +681,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best FRM Part 1 Anki deck?",
         answer:
-          "Look for a Part 1–scoped deck with VaR/ES, Greeks, credit risk, and markets cards plus a free timed practice test for topic gaps. UniPrep2Go’s FRM Part 1 Anki deck is 444 cards with a linked 50-question readiness check (free 25-question version).",
+          "Look for a Part 1–scoped deck with VaR/ES, Greeks, credit risk, and markets cards plus a timed practice test for topic gaps. UniPrep2Go’s FRM Part 1 Anki deck is 444 cards. The free start is 25 questions. The full readiness check is 50 questions.",
       },
       {
         question: "What does the FRM Part 1 deck include?",
         answer:
-          "444 Anki cards across all four Part 1 books (89 foundations, 89 quant, 133 markets and products, 133 valuation and risk models). Each card asks a real exam question, explains the rule, works a numeric example where it applies, and names the common mistake; 176 cards carry MathJax formulas. Plus a 50-question timed mock (free 25-question version).",
+          "444 Anki cards across all four Part 1 books (89 foundations, 89 quant, 133 markets and products, 133 valuation and risk models). Each card asks a real exam question, explains the rule, works a numeric example where it applies, and names the common mistake; 176 cards carry MathJax formulas. The free start is 25 questions. The full timed mock is 50 questions.",
       },
       {
         question: "Is there a free FRM Part 1 practice test?",
         answer:
-          "Yes. Take the 50-question FRM Part 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each attempt draws from a 100-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
+          "The free start is 25 questions, no signup. The full FRM Part 1 readiness check is 50 questions at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each full attempt draws from a 100-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
       },
       {
         question: "Is this a question bank?",

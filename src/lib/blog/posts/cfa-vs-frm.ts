@@ -21,7 +21,17 @@ export const cfaVsFrmPost: BlogPostDraft = {
     mockLabel: "Take the free CFA Level 1 readiness check",
     deckLabel: "Drill CFA Level 1 with Anki",
     summary:
-      "Not sure where your quantitative gaps are? Take the free CFA Level 1 readiness check (also try FRM Part 1 readiness if risk is your path). Then drill weak topics with the matching Anki deck before you commit $1,000+ to registration.",
+      "Not sure where your quantitative gaps are? The free start on either exam is 25 questions. Then drill weak topics in the matching Anki deck before you commit $1,000+ to registration.",
+    extraLinks: [
+      {
+        href: "/mock-exams/frm-part-1-readiness-check",
+        label: "Free FRM Part 1 mock — 25 questions, no signup",
+      },
+      {
+        href: "/decks/frm-part-1-anki-deck",
+        label: "FRM Part 1 Anki deck — 444 cards, $29",
+      },
+    ],
   },
   sections: [
     {
@@ -137,6 +147,10 @@ export const cfaVsFrmPost: BlogPostDraft = {
             "Strong quantitative background (math, engineering, physics, statistics)",
             "You work at a bank, insurer, consulting firm, or corporate treasury",
           ],
+        },
+        {
+          type: "p",
+          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($29, 444 cards).",
         },
         {
           type: "p",

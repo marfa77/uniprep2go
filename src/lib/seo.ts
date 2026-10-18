@@ -226,10 +226,10 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  // Dual-track + Tier A (2026-09-24): outcome diagnostic, not Anki-as-VP.
-  const title = "Free PTCB & Series 63 Mocks | Weak Topics";
+  // 2026-10-16: Bing + ChatGPT traffic is CFA / FRM / Series 7. Free slice is 25Q.
+  const title = "CFA, FRM & Series 7 | 25Q Free + Anki Decks";
   const description =
-    "Timed PTCB, Series 63, Life & Health, and CFA mocks — free 25-question diagnostic, no signup. Pass/no-pass topic readiness reports, then fix only your weak areas. Independent US exam prep.";
+    "CFA Level 1, FRM Part 1, and Series 7: the free start is 25 questions, no signup. Full timed mocks and matching Anki decks come after the topic readiness report. Independent exam prep.";
 
   return finalize({
     title: {
@@ -254,7 +254,7 @@ export function homeMetadata(): Metadata {
       card: "summary_large_image",
       title,
       description:
-        "Timed mocks with topic readiness reports — then fix only your weak areas. Start free.",
+        "CFA, FRM, and Series 7: 25 questions free, then Anki decks for the weak topics.",
       images: ["/home/hero.webp"],
     },
   });

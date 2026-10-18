@@ -1,8 +1,10 @@
 import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { isApkgPendingDeck } from "@/lib/anki-deck-launch";
+import { publicDeckPurchaseCount } from "@/lib/deck-purchase-count";
 import type { AvailableDeck } from "@/lib/decks";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import { formatCompactDeckPurchases } from "@/lib/social-proof";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 import { freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
 
@@ -34,10 +36,12 @@ export function DeckHeroBuyBlock({
   secondaryLink,
 }: DeckHeroBuyBlockProps) {
   const liveMock = practiceMock?.status === "live" ? practiceMock : undefined;
+  const purchases =
+    deck.slug === "cfa-level-1-anki-deck" ? publicDeckPurchaseCount(deck.slug) : null;
 
   return (
     <section aria-label={`Buy ${deck.shortName}`} className="mt-6" id="deck-hero-cta">
-      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap">
+      <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
         <TrackedCheckoutLink
           className={btnPrimary}
           deckSlug={deck.slug}
@@ -50,6 +54,11 @@ export function DeckHeroBuyBlock({
           <Link className={btnSecondary} href={secondaryLink.href}>
             {secondaryLink.label}
           </Link>
+        ) : null}
+        {purchases != null ? (
+          <p className="text-sm font-medium tabular-nums text-[#5f5749]" id="deck-purchase-count">
+            {formatCompactDeckPurchases(purchases)}
+          </p>
         ) : null}
       </div>
       <p className="mt-3 text-sm leading-6 text-[#5f5749]">{formatDeliveryLine(deck)}</p>

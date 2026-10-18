@@ -320,7 +320,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 120-item bank weighted 24 Foundations / 24 Quantitative Analysis / 36 Financial Markets and Products / 36 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Most were written for the mock; the rest are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50 in the topic mix, so retakes see new questions.",
     disclaimer: financeDisclaimer,
     description:
-      "A 50-question FRM Part 1 readiness diagnostic (free 25-question version) drawn from a 120-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "FRM Part 1 readiness diagnostic. The free start is 25 questions. The full check is 50 questions drawn from a 120-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
     lastUpdated: "2026-10-15",
   },

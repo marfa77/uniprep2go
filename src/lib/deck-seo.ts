@@ -732,7 +732,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit) plus 50-question timed mock (free 25-question version) — cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition + one diagnostic. Not GARP material.",
+      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $29. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition plus one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",

@@ -109,7 +109,8 @@ const popularDeckBoostLinks = [
 ] as const;
 
 const heroSecondaryLinks = [
-  { href: "/mock-exams/series-63-readiness-check", label: "Series 63 free mock" },
+  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM 25Q free" },
+  { href: "/decks/series-7-anki-deck", label: "Series 7 Anki deck" },
   { href: "/mock-exams", label: "Browse all exams" },
 ] as const;
 
@@ -136,14 +137,14 @@ const howItWorksSteps = [
  * Citizenship / SAT / GRE / language stay in catalog hubs, not this strip.
  */
 const featuredMockSlugs = [
-  "ptcb-pharmacy-technician-mock",
-  "sie-full-mock",
-  "series-63-readiness-check",
-  "series-65-readiness-check",
-  "life-and-health-insurance-readiness-check",
-  "epa-608-readiness-check",
-  "servsafe-manager-mock",
+  "cfa-level-1-readiness-check",
+  "frm-part-1-readiness-check",
+  "series-7-readiness-check",
   "cfa-level-2-readiness-check",
+  "series-63-readiness-check",
+  "ptcb-pharmacy-technician-mock",
+  "life-and-health-insurance-readiness-check",
+  "servsafe-manager-mock",
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -264,39 +265,39 @@ export default async function HomePage() {
       />
       <SiteHeader />
       <FunnelTracker
-        deckSlug="ptcb-pharmacy-technician-anki-deck"
+        deckSlug="cfa-level-1-anki-deck"
         sectionEvents={sectionEvents}
-        source="mock:ptcb-pharmacy-technician-mock:home"
+        source="mock:cfa-level-1-readiness-check:home"
       />
       <main id="main-content" tabIndex={-1}>
-        {/* 1. Hero — live Layer B money (dual-track); SIE secondary until indexed */}
+        {/* 1. Hero — CFA / FRM / Series 7 (Bing + ChatGPT, 2026-10-16). Free slice is 25Q. */}
         <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                PTCB · Series 63 · Life &amp; Health · CFA
+                CFA · FRM · Series 7
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                Find your weak topics before exam day
+                25Q Free + Anki Decks
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                Your first timed mock is free — PTCB, Series 63 or any other exam, no signup — then a
-                pass/no-pass topic readiness report so you fix only the gaps that matter.
+                CFA Level 1, FRM Part 1, and Series 7. The free start is 25 questions, no signup.
+                The full timed mock scores weak topics, then the matching Anki deck drills only those.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
-                  href="/mock-exams/ptcb-pharmacy-technician-mock"
+                  href="/mock-exams/cfa-level-1-readiness-check"
                   className={btnPrimary}
-                  aria-label="Start free PTCB practice test"
+                  aria-label="Start the free 25-question CFA Level 1 diagnostic"
                 >
-                  Start Free PTCB Mock
+                  Start CFA 25Q Free
                 </Link>
                 <Link
-                  href="/decks/series-63-anki-deck"
+                  href="/decks/frm-part-1-anki-deck"
                   className={btnSecondary}
-                  aria-label="Open Series 63 exam prep deck"
+                  aria-label="Open the FRM Part 1 Anki deck, $29"
                 >
-                  Series 63 exam prep
+                  FRM Anki · $29
                 </Link>
               </div>
               <p className="mt-5 text-sm text-[#5f5749]">
@@ -377,8 +378,8 @@ export default async function HomePage() {
               Timed mocks for the exams we push hardest
             </h2>
             <p className="mt-3 max-w-3xl text-[#4f493e]">
-              PTCB, FINRA, Life &amp; Health, EPA 608, ServSafe, and CFA Level 2 — start a mock (the first
-              one is free), get a topic readiness report, then fix only the gaps.
+              CFA Level 1, FRM Part 1, and Series 7 lead. The free start is 25 questions. The full
+              mock is longer. Then fix only the weak topics in the matching Anki deck.
             </p>
             <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {featuredMocks.map((mock) => {

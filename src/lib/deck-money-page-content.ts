@@ -15,7 +15,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cat4-level-d-anki-deck-printable-pdf":
     "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
-    "444 cards across FRM Part 1 foundations, quant, markets, and valuation — with a 50-question readiness check (free 25-question version).",
+    "444 cards across FRM Part 1 foundations, quant, markets, and valuation. The free start is 25 questions. The full timed readiness check is 50 questions.",
   "bench-energy-metal-trader-anki-deck":
     "202 metals-desk cards: LME, cash/3M carry, contango/backwardation, base and precious metals vocabulary.",
   "sie-exam-anki-deck":
@@ -299,7 +299,7 @@ export const positioningOverrides: Partial<
     ourEdge: [
       "Ownable 444-card .apkg — not a monthly AnalystPrep / Bionic Turtle subscription",
       "Weighted 20/20/30/30 like the exam; every card has a worked example and the common mistake",
-      "50-question FRM Part 1 timed practice test (free 25-question version) with topic scoring",
+      "Free start is 25 questions. The full FRM Part 1 timed practice test is 50 questions, with topic scoring",
       "Current-cycle Part 1 only — drill weak pillars after the mock, not random volume",
     ],
     summaryProse:
@@ -2422,7 +2422,7 @@ NHA registration, Candidate Handbook policies (including coding-manual rules for
 
 ### Plan with the free FRM mock
 
-**Phase 1 (6 weeks out):** 25 cards/day from quant and markets. **Phase 2:** 50-question mock (free 25-question version) — remap daily reviews to valuation models and credit if those topics score low. **Final month:** No new cards; ES and VaR calculation prompts daily.
+**Phase 1 (6 weeks out):** 25 cards/day from quant and markets. **Phase 2:** sit the free 25-question start, then the full 50-question mock — remap daily reviews to valuation models and credit if those topics score low. **Final month:** No new cards; ES and VaR calculation prompts daily.
 
 ### Pitfalls this deck targets
 

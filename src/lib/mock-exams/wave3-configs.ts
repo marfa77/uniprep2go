@@ -433,7 +433,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     examBody: "ASCP Board of Certification",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["MLT", "ASCP MLT", "medical lab technician"],
-    lastUpdated: "2026-10-04",
+    lastUpdated: "2026-10-18",
   }),
   nicheReadinessConfig({
     slug: "aapc-ccs-readiness-check",
@@ -581,7 +581,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     examBody: "ACSM",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality, content-reviewed 2026-10-12).",
     searchAliases: ["ACSM CPT", "ACSM personal trainer"],
-    lastUpdated: "2026-10-12",
+    lastUpdated: "2026-10-18",
   }),
   nicheReadinessConfig({
     slug: "nsca-cpt-readiness-check",

@@ -6,12 +6,18 @@ type DeckExamFactsSectionProps = {
   profile?: ExamFactsProfile | null;
   /** Inside a collapsible block — skip outer section chrome. */
   compact?: boolean;
+  /**
+   * When set, the domain table is the only topic list and includes how many
+   * questions this check draws. Used when a separate topic-outline list would repeat it.
+   */
+  sessionQuestions?: Array<{ domain: string; questions: number }>;
 };
 
 export function DeckExamFactsSection({
   deck,
   profile: profileProp,
   compact = false,
+  sessionQuestions,
 }: DeckExamFactsSectionProps) {
   const profile =
     profileProp ?? (deck ? getExamFactsProfileForDeck(deck.slug) : null);
@@ -53,24 +59,35 @@ export function DeckExamFactsSection({
           ))}
       </dl>
 
-      {profile.domain_weights.length > 0 ? (
+      {profile.domain_weights.length > 0 && deck?.slug !== "cfa-level-1-anki-deck" ? (
         <div className="mt-8">
-          <h3 className="text-lg font-semibold tracking-tight">Knowledge domains and weights</h3>
+          <h3 className="text-lg font-semibold tracking-tight">
+            {sessionQuestions ? "Topics, official weights, and this check" : "Knowledge domains and weights"}
+          </h3>
           <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
             <table className="w-full min-w-[480px] border-collapse text-left">
               <thead>
                 <tr className="border-b border-[#18140f]/15 font-mono text-xs uppercase tracking-[0.18em] text-[#7a6e5a]">
                   <th className="px-5 py-4 font-medium">Domain</th>
-                  <th className="px-5 py-4 font-medium">Weight</th>
+                  <th className="px-5 py-4 font-medium">Official weight</th>
+                  {sessionQuestions ? (
+                    <th className="px-5 py-4 font-medium">Questions on this check</th>
+                  ) : null}
                 </tr>
               </thead>
               <tbody className="divide-y divide-[#18140f]/10">
-                {profile.domain_weights.map((row) => (
-                  <tr key={row.domain}>
-                    <td className="px-5 py-4 text-sm font-medium">{row.domain}</td>
-                    <td className="px-5 py-4 text-sm text-[#4f493e]">{row.weight}</td>
-                  </tr>
-                ))}
+                {profile.domain_weights.map((row) => {
+                  const questions = sessionQuestions?.find((item) => item.domain === row.domain)?.questions;
+                  return (
+                    <tr key={row.domain}>
+                      <td className="px-5 py-4 text-sm font-medium">{row.domain}</td>
+                      <td className="px-5 py-4 text-sm text-[#4f493e]">{row.weight}</td>
+                      {sessionQuestions ? (
+                        <td className="px-5 py-4 text-sm text-[#4f493e]">{questions ?? "—"}</td>
+                      ) : null}
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>

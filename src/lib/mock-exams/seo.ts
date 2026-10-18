@@ -199,7 +199,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NHA ExCPT practice test",
   },
   "cfa-level-1-readiness-check": {
-    title: "CFA Level 1 Practice Test 2026: 60Q Check, 25Q Free",
+    title: "CFA Level 1 Practice Test | 25Q Free, 60Q Timed",
     description:
       "CFA Level 1 practice test for 2026: free 25-question diagnostic, full mock 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
     keywords: [
@@ -209,7 +209,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "cfa level 1 anki",
       "cfa readiness check",
     ],
-    headline: "Free CFA Level 1 Readiness Check",
+    headline: "CFA Level 1 Practice Test — 25Q Free",
     intro:
       "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $29 / 348-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total), and CFA Institute sets the minimum passing score (MPS) after each administration — there is no fixed pass percentage. This check is a shorter diagnostic with a UniPrep2Go readiness target of 70%.",
     audience: "CFA Level 1 candidates who want a weighted topic baseline before committing to a full mock provider.",
@@ -340,9 +340,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Life & Health insurance practice test",
   },
   "frm-part-1-readiness-check": {
-    title: "FRM Part 1 Practice Questions — 50Q Mock, 25Q Free 2026",
+    title: "FRM Part 1 Practice Questions — 25Q Free, 50Q Mock 2026",
     description:
-      "Free FRM Part 1 mock test: 50 timed practice questions across all 4 GARP topics, 120 minutes, topic scoring. Free 25-question diagnostic, then $5 for 5.",
+      "FRM Part 1 practice questions: the free start is 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $5 for 5 full attempts.",
     keywords: [
       "frm part 1 practice test",
       "frm mock exam",
@@ -351,7 +351,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "garp frm readiness check",
       "frm part 1 exam prep",
     ],
-    headline: "Free FRM Part 1 Practice Questions & Mock Test",
+    headline: "FRM Part 1 Practice Questions — 25 Free, 50Q Full Mock",
     intro:
       "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $29 / 444-card Anki deck.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
@@ -578,7 +578,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "ARDMS SPI Practice Test — 60 Ultrasound Physics Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 75-minute text diagnostic for ARDMS SPI — ultrasound physics, transducers and beam formation, Doppler/hemodynamics, and artifacts/safety — drawn from a 120 unique bank. Official SPI is about 110 multiple-choice questions in 2 hours with a scaled pass of 555 (300–700). This check is shorter, has no image items, and is not ABD/OB specialty. Matching $11 / 120-card Anki is live. Independent prep — not ARDMS/Inteleos material.",
+      "SPI is the physics gate most ARDMS specialties require before ABD or OB/GYN. This 60-question / 75-minute text check (free 25-question start) scores acoustic variables, transducers and beam formation, Doppler and hemodynamics, and artifacts and bioeffects — including c = fλ, acoustic impedance Z = ρc, and axial resolution about SPL/2. Official SPI is about 110 questions in 2 hours, scaled pass 555. There are no image-interpretation items here. The matching deck is a live $11 / 120-card Anki file. Not an ABD/OB specialty exam and not ARDMS material.",
     audience:
       "Sonography students and working sonographers sitting SPI as the physics gate — not ABD/OB image interpretation and not ARRT sonography.",
     practiceTestLabel: "ARDMS SPI practice test",
@@ -616,7 +616,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "ASCP MLT Practice Test — 60 Lab Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 75-minute diagnostic for ASCP BOC MLT — blood bank, chemistry, hematology, and microbiology. Official MLT(ASCP) is 100 computer-adaptive questions in 2 hours 30 minutes with a scaled pass of 400. This check is shorter and linear (not CAT). Urinalysis, immunology, and lab operations appear inside those four benches. Planned 60-card Anki waitlist. Not MLS and not the California-only 80Q / 2h form.",
+      "Medical laboratory technicians run the bench: ABO/Rh and antibody screen, a chemistry panel, a CBC differential, and culture setup, under a technologist or pathologist. This 60-question / 75-minute linear check (free 25-question start) scores those four benches from a 120-item bank. Official MLT(ASCP) is 100 adaptive questions in 2 hours 30 minutes, scaled pass 400. California’s separate 80-question / 2-hour form is a different sitting. This page is the technician exam — not MLS method validation, not phlebotomy-only PBT.",
     audience:
       "MLT students and working technicians booking national MLT(ASCP) — not MLS scientist candidates and not phlebotomy-only PBT.",
     practiceTestLabel: "ASCP MLT practice test",
@@ -1130,7 +1130,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "ACSM CPT Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A 60-question / 75-minute ACSM CPT readiness check (free 25-question version) with topic scoring — each attempt draws 15 items per topic from a 120-item bank, so retakes see new questions. Then drill weak domains in the linked $11 / 120-card Anki deck. Official ACSM-CPT is 135 items (120 scored + 15 pretest) / 150 minutes / scaled pass 550.",
+      "ACSM-CPT is the health-fitness trainer exam: preparticipation screening and risk, then the exercise prescription, then how you lead the session, then behavior change and emergency scope. Each full attempt draws 15 questions from each of those four domains (60 timed questions, 75 minutes). The free start is 25 questions. Official ACSM-CPT is 135 items in 150 minutes, scaled pass 550. This is not NSCA-CPT (155 questions, including video items) and not a NASM OPT-model bank. The linked deck is $11 / 120 cards.",
     audience:
       "Personal trainer candidates preparing for the ACSM Certified Personal Trainer exam who want a timed baseline before paid Q-banks.",
     practiceTestLabel: "ACSM CPT practice test",

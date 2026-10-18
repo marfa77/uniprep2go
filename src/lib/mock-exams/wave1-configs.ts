@@ -343,7 +343,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     examBody: "ARDMS",
     questionSourceNote:
       "Original UniPrep2Go local bank for SPI physics topics. Expanded to 120 unique 2026-10-07 for Mock Pass retakes; Anki live $11/120.",
-    lastUpdated: "2026-10-07",
+    lastUpdated: "2026-10-18",
   }),
   readinessConfig({
     slug: "nbstsa-cst-readiness-check",
