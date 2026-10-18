@@ -373,7 +373,7 @@ export default async function MockExamPage({
                   config.slug === "cfa-level-1-readiness-check"
                     ? config.topics.map((topic) => ({
                         domain: topic.label,
-                        questions: topic.questionCount,
+                        questions: topic.questionCount ?? 0,
                       }))
                     : undefined
                 }
