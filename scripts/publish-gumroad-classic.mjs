@@ -135,9 +135,10 @@ async function main() {
   }
 
   const buildingSpecs = JSON.parse(readFileSync(join(root, "src/data/building-deck-specs.json"), "utf8"));
+  const waveSpecs = JSON.parse(readFileSync(join(root, "src/data/wave-deck-specs.json"), "utf8"));
   const description = buildCopyDescription({
     copy,
-    spec: buildingSpecs[args.slug] ?? null,
+    spec: buildingSpecs[args.slug] ?? waveSpecs[args.slug] ?? null,
     mockUrl: copy.mockSlug ? `${SITE}/mock-exams/${copy.mockSlug}` : null,
     deckUrl:
       copy.sitePage !== false && hasSiteDeckPage(copy.siteSlug ?? args.slug) ? `${SITE}/decks/${copy.siteSlug ?? args.slug}` : null,
