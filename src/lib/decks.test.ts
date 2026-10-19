@@ -606,7 +606,7 @@ describe("deck catalog", () => {
       "cdcp-anki-deck": "CDCP Anki Deck — 250 Flashcards",
       "cem-anki-deck": "CEM Anki Deck — 250 Flashcards",
       "enrolled-agent-anki-deck": "IRS Enrolled Agent Anki Deck — 120 Flashcards",
-      "fl-real-estate-anki-deck": "Florida Real Estate Anki Deck — 60 Flashcards",
+      "fl-real-estate-anki-deck": "Florida Real Estate Anki Deck — 120 Flashcards",
       "mortgage-loan-originator-anki-deck": "SAFE MLO Anki Deck — 240 Flashcards",
       "series-6-anki-deck": "Series 6 Anki Deck — 120 Flashcards",
       "series-65-anki-deck": "Series 65 Anki Deck — 120 Flashcards",

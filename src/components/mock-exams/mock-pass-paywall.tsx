@@ -39,26 +39,20 @@ function formatFreeAttempt(record: FreeAttemptRecord | null) {
   return `${mockSessionModeLabel(record.mode)} mode${when ? ` · ${when}` : ""}`;
 }
 
-export function MockPassPaywall({
+export function MockPassKeyForm({
+  placement,
   mockSlug,
   deckSlug,
-  placement,
-  freeAttempt,
-  passExhausted,
   onRedeemed,
-}: MockPassPaywallProps) {
+}: {
+  placement: "landing" | "retake" | "start";
+  mockSlug: string;
+  deckSlug: string;
+  onRedeemed: (remaining: number) => void;
+}) {
   const [licenseKey, setLicenseKey] = useState("");
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
-
-  useEffect(() => {
-    trackMockEvent({
-      name: "mock_paywall_view",
-      deckSlug,
-      mockSlug,
-      source: `mock:${mockSlug}:paywall:${placement}:${passExhausted ? "exhausted" : "free_used"}`,
-    });
-  }, [deckSlug, mockSlug, passExhausted, placement]);
 
   async function redeem() {
     setBusy(true);
@@ -98,6 +92,59 @@ export function MockPassPaywall({
       setBusy(false);
     }
   }
+
+  return (
+    <div className="space-y-2">
+      <label className="block text-sm font-medium text-[#18140f]" htmlFor={`mock-pass-key-${placement}`}>
+        Have a key? Paste your Gumroad license key
+      </label>
+      <div className="flex flex-col gap-2 sm:flex-row">
+        <input
+          autoComplete="off"
+          className="min-h-12 w-full rounded-xl border border-[#18140f]/15 bg-[#fffaf0] px-4 font-mono text-sm text-[#18140f] outline-none focus-visible:border-[#1f3a5f] focus-visible:ring-2 focus-visible:ring-[#1f3a5f]/25"
+          id={`mock-pass-key-${placement}`}
+          onChange={(event) => setLicenseKey(event.target.value)}
+          onKeyDown={(event) => {
+            if (event.key === "Enter" && licenseKey.trim() && !busy) void redeem();
+          }}
+          placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
+          spellCheck={false}
+          value={licenseKey}
+        />
+        <button
+          className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full border border-[#18140f]/20 bg-[#fffaf0] px-5 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
+          disabled={busy || !licenseKey.trim()}
+          onClick={() => void redeem()}
+          type="button"
+        >
+          {busy ? "Checking…" : "Unlock attempts"}
+        </button>
+      </div>
+      {error ? (
+        <p className="text-sm text-[#7a2e2e]" role="alert">
+          {error}
+        </p>
+      ) : null}
+    </div>
+  );
+}
+
+export function MockPassPaywall({
+  mockSlug,
+  deckSlug,
+  placement,
+  freeAttempt,
+  passExhausted,
+  onRedeemed,
+}: MockPassPaywallProps) {
+  useEffect(() => {
+    trackMockEvent({
+      name: "mock_paywall_view",
+      deckSlug,
+      mockSlug,
+      source: `mock:${mockSlug}:paywall:${placement}:${passExhausted ? "exhausted" : "free_used"}`,
+    });
+  }, [deckSlug, mockSlug, passExhausted, placement]);
 
   const freeAttemptLabel = formatFreeAttempt(freeAttempt);
 
@@ -160,37 +207,8 @@ export function MockPassPaywall({
         </p>
       </div>
 
-      <div className="space-y-2 border-t border-[#18140f]/10 pt-4">
-        <label className="block text-sm font-medium text-[#18140f]" htmlFor={`mock-pass-key-${placement}`}>
-          Have a key? Paste your Gumroad license key
-        </label>
-        <div className="flex flex-col gap-2 sm:flex-row">
-          <input
-            autoComplete="off"
-            className="min-h-12 w-full rounded-xl border border-[#18140f]/15 bg-[#fffaf0] px-4 font-mono text-sm text-[#18140f] outline-none focus-visible:border-[#1f3a5f] focus-visible:ring-2 focus-visible:ring-[#1f3a5f]/25"
-            id={`mock-pass-key-${placement}`}
-            onChange={(event) => setLicenseKey(event.target.value)}
-            onKeyDown={(event) => {
-              if (event.key === "Enter" && licenseKey.trim() && !busy) void redeem();
-            }}
-            placeholder="XXXXXXXX-XXXXXXXX-XXXXXXXX-XXXXXXXX"
-            spellCheck={false}
-            value={licenseKey}
-          />
-          <button
-            className="inline-flex min-h-12 shrink-0 items-center justify-center rounded-full border border-[#18140f]/20 bg-[#fffaf0] px-5 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50"
-            disabled={busy || !licenseKey.trim()}
-            onClick={() => void redeem()}
-            type="button"
-          >
-            {busy ? "Checking…" : "Unlock attempts"}
-          </button>
-        </div>
-        {error ? (
-          <p className="text-sm text-[#7a2e2e]" role="alert">
-            {error}
-          </p>
-        ) : null}
+      <div className="border-t border-[#18140f]/10 pt-4">
+        <MockPassKeyForm deckSlug={deckSlug} mockSlug={mockSlug} onRedeemed={onRedeemed} placement={placement} />
       </div>
     </section>
   );

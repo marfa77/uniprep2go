@@ -155,7 +155,8 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     description:
       "60-question Florida real estate sales associate readiness check (free 25-question version) with topic scoring for FREC candidates.",
     examBody: "DBPR / Florida Real Estate Commission",
-    questionSourceNote: "Original UniPrep2Go local bank for Florida RE topics.",
+    questionSourceNote:
+      "Each attempt draws 60 questions from a 120-item original Florida bank (30 per topic), so Mock Pass retakes are not the same 60 stems.",
   }),
   readinessConfig({
     slug: "tx-real-estate-readiness-check",

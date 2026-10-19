@@ -57,6 +57,8 @@ export function decideMockStart(input: {
   remaining: number;
 }): MockStartDecision {
   if (!input.paywallEnabled) return "open";
+  // A key already on this browser runs the full mock, even if the free diagnostic is unused.
+  if (input.remaining > 0) return "paid";
   if (!input.freeAttemptUsed) return "free";
-  return input.remaining > 0 ? "paid" : "paywall";
+  return "paywall";
 }

@@ -142,14 +142,8 @@ describe("result upsell", () => {
 });
 
 describe("diagnostic offer", () => {
-  it("rewrites listed Gumroad checkouts to the offer-code URL", () => {
-    const offer = applyDiagnosticOffer("https://pixidstudio.gumroad.com/l/yvifxh?wanted=true", 11);
-    expect(offer).toEqual({
-      checkoutUrl: "https://pixidstudio.gumroad.com/l/yvifxh/DIAG20?wanted=true",
-      code: "DIAG20",
-      percentOff: 20,
-      amount: 8.8,
-    });
+  it("does not add the offer code while the $9.99 price test is on", () => {
+    expect(applyDiagnosticOffer("https://pixidstudio.gumroad.com/l/yvifxh?wanted=true", 11)).toBeNull();
   });
 
   it("ignores products without the code and non-Gumroad checkouts", () => {

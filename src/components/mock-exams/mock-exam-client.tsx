@@ -29,7 +29,7 @@ import {
   hasShortFreeDiagnostic,
 } from "@/lib/mock-exams/free-diagnostic";
 import { buildResultUpsell, type OfficialPassLine } from "@/lib/mock-exams/result-upsell";
-import { MockPassPaywall } from "./mock-pass-paywall";
+import { MockPassKeyForm, MockPassPaywall } from "./mock-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
 import { MockResultUpsell } from "./mock-result-upsell";
@@ -650,6 +650,13 @@ export function MockExamClient({
                   onRedeemed={handleRedeemed}
                   passExhausted={pass.hasPass}
                   placement="landing"
+                />
+              ) : paywallEnabled && accessHydrated && startDecision === "free" ? (
+                <MockPassKeyForm
+                  deckSlug={config.linkedDeckSlug}
+                  mockSlug={config.slug}
+                  onRedeemed={handleRedeemed}
+                  placement="start"
                 />
               ) : null}
 

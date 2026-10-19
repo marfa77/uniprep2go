@@ -9,7 +9,7 @@ export type DiagnosticOffer = {
 
 /** Result-screen deck discount: the Gumroad offer code exists per product, so only listed permalinks qualify. */
 export function applyDiagnosticOffer(checkoutUrl: string, amount: number): DiagnosticOffer | null {
-  if (!(amount > 0)) return null;
+  if (!(amount > 0) || !(offer.percentOff > 0)) return null;
   let url: URL;
   try {
     url = new URL(checkoutUrl);

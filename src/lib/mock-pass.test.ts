@@ -34,6 +34,7 @@ describe("mock pass rules", () => {
 
   it("gives one free mock, then needs paid attempts", () => {
     expect(decideMockStart({ paywallEnabled: true, freeAttemptUsed: false, remaining: 0 })).toBe("free");
+    expect(decideMockStart({ paywallEnabled: true, freeAttemptUsed: false, remaining: 5 })).toBe("paid");
     expect(decideMockStart({ paywallEnabled: true, freeAttemptUsed: true, remaining: 3 })).toBe("paid");
     expect(decideMockStart({ paywallEnabled: true, freeAttemptUsed: true, remaining: 0 })).toBe("paywall");
     expect(decideMockStart({ paywallEnabled: false, freeAttemptUsed: true, remaining: 0 })).toBe("open");

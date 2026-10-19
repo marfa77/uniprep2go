@@ -109,8 +109,8 @@ describe("checkout pricing", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const resolved = await resolveDeckPrice(deck!);
-    expect(resolved.price.amount).toBe(19);
-    expect(resolved.directAnswer).toContain("$19 USD");
+    expect(resolved.price.amount).toBe(9.99);
+    expect(resolved.directAnswer).toContain("$9.99 USD");
     expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();
@@ -169,8 +169,8 @@ describe("checkout pricing", () => {
     const priced = await resolveDeckPrice(deck!);
 
     expect(fetchMock).not.toHaveBeenCalled();
-    expect(priced.price.amount).toBe(11);
-    expect(priced.directAnswer).toContain("$11 USD");
+    expect(priced.price.amount).toBe(9.99);
+    expect(priced.directAnswer).toContain("$9.99 USD");
 
     vi.unstubAllGlobals();
   });
@@ -204,8 +204,8 @@ describe("checkout pricing", () => {
     });
 
     const resolved = await resolveDeckPrice(deck!);
-    expect(resolved.price.amount).toBe(19);
-    expect(resolved.directAnswer).toContain("$19 USD");
+    expect(resolved.price.amount).toBe(9.99);
+    expect(resolved.directAnswer).toContain("$9.99 USD");
   });
 
   it("ignores stale Lemon memory cache after a deck moves to Gumroad", async () => {
@@ -224,8 +224,8 @@ describe("checkout pricing", () => {
     vi.stubGlobal("fetch", fetchMock);
 
     const resolved = await resolveDeckPrice(deck!);
-    expect(resolved.price.amount).toBe(29);
-    expect(resolved.directAnswer).toContain("$29 USD");
+    expect(resolved.price.amount).toBe(9.99);
+    expect(resolved.directAnswer).toContain("$9.99 USD");
     expect(fetchMock).not.toHaveBeenCalled();
 
     vi.unstubAllGlobals();

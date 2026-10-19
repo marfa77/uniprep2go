@@ -2444,7 +2444,7 @@ Applicants confuse agency relationships (seller's agent vs dual agent), disclosu
 
   "fl-real-estate-anki-deck": `### What is inside
 
-60 Florida-specific MCQ cards across FREC sales associate themes: license law & FREC rules, contracts/titles/conveyances, finance/appraisal math, and property/brokerage practice. Same bank themes as the free timed Florida readiness check. **$2 intro** for this 60-card bank — we will add cards and raise the price once the outline is fuller.
+120 Florida-specific MCQ cards across FREC sales associate themes: license law & FREC rules, contracts/titles/conveyances, finance/appraisal math, and property/brokerage practice. The free timed check draws 60 questions from this same 120-item bank (free 25-question version), so a later attempt is not the same 60 stems. **$9.99.**
 
 ### Plan with the free FL mock
 
