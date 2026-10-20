@@ -93,7 +93,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "aha-bls-provider-anki-deck":
     "Planned 120-card AHA BLS Provider Anki (adult CPR/AED, infant technique, FBAO, team dynamics). 60Q / 45 min / 84% cognitive diagnostic live now (free 25-question version) — official HeartCode BLS is ~25Q / 84% plus skills. 2025 science. ≠ Heartsaver / ACLS.",
   "ardms-spi-anki-deck":
-    "$11 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
+    "$9.99 / 120-card ARDMS SPI Anki (physics, transducers, Doppler, artifacts/safety) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — official SPI is ~110Q / 2h / scaled 555. Text/physics only; ≠ ABD/OB.",
   "ascp-mls-anki-deck":
     "Planned 120-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
@@ -321,7 +321,7 @@ export const positioningOverrides: Partial<
       "Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
-      "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $29 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
+      "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $9.99 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
@@ -482,7 +482,7 @@ export const positioningOverrides: Partial<
       "Text/physics only — ≠ ABD/OB image interpretation",
     ],
     summaryProse:
-      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a timed 60Q physics diagnostic (free 25-question version) with topic scoring plus an ownable $11 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
+      "OpenExamPrep 124+ no-signup banks and Mometrix volume own length. UniPrep wins when you want a timed 60Q physics diagnostic (free 25-question version) with topic scoring plus an ownable $9.99 / 120-card Anki — not a full 110-item SPI form and not an image-heavy specialty bank.",
   },
   "abo-optician-anki-deck": {
     ourEdge: [
@@ -492,7 +492,7 @@ export const positioningOverrides: Partial<
       "Spectacle NOCE only — ≠ NCLE contacts, ≠ optometry",
     ],
     summaryProse:
-      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus an ownable $11 / 120-card Anki — not a full 125-item NOCE substitute and not NCLE.",
+      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus an ownable $9.99 / 120-card Anki — not a full 125-item NOCE substitute and not NCLE.",
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
@@ -742,7 +742,7 @@ export const positioningOverrides: Partial<
       "Ownable Gumroad .apkg — prefer over free AnkiWeb EVU mirrors for exam pathway copy",
     ],
     summaryProse:
-      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $26 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
+      "Free AnkiWeb EVU / EN–RU dumps win on raw card count. UniPrep wins when Russian speakers want an ownable $9.99 / 2504-card IELTS–TOEFL-framed bank with audio and cognate-trap honesty — not a tourist phrase pack and not the PT-BR or LatAm sibling gloss editions.",
   },
   "danish-a2-prove-i-dansk-anki-deck": {
     ourEdge: [
@@ -752,7 +752,7 @@ export const positioningOverrides: Partial<
       "Prefer over free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage",
     ],
     summaryProse:
-      "Free AnkiWeb LITE 100 and OpenExamPrep PD2 task drills own volume or format practice. UniPrep wins when you want an ownable $26 / 1000-card .apkg with audio for PD2/PD3 + residence language — not a timed listening/writing substitute for danskogproever.dk samples.",
+      "Free AnkiWeb LITE 100 and OpenExamPrep PD2 task drills own volume or format practice. UniPrep wins when you want an ownable $9.99 / 1000-card .apkg with audio for PD2/PD3 + residence language — not a timed listening/writing substitute for danskogproever.dk samples.",
   },
   "servsafe-manager-anki-deck": {
     ourEdge: [
@@ -988,7 +988,7 @@ Candidates treat free MCQ banks as the real exam format, under-drill hierarchy o
 Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. This deck builds knowledge recall only — it does not replace GIC1 scenario writing, the closing interview, or the GIC2 workplace risk assessment; practise those formats with your Learning Partner. Independent prep — not NEBOSH material.`,
   "bms-building-automation-anki-deck": `### What is inside
 
-200 MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the 60-question timed readiness check (free 25-question version). Live Gumroad .apkg — **$11**.
+200 MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the 60-question timed readiness check (free 25-question version). Live Gumroad .apkg — **$9.99**.
 
 ### Plan with the free BMS mock
 
@@ -1507,7 +1507,7 @@ This product is **English vocabulary Anki with Russian support**. It is not a to
 - **Back:** Russian gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the Russian gloss
 
-Free AnkiWeb dumps labelled “English–Russian” or EVU book mirrors are often tourist phrases, undated frequency lists, or multi-thousand CEFR dumps without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “English–Russian” or EVU book mirrors are often tourist phrases, undated frequency lists, or multi-thousand CEFR dumps without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$9.99**.
 
 ### Why Russian speakers lose IELTS/TOEFL Reading points on false friends
 
@@ -1583,7 +1583,7 @@ This product is **English vocabulary Anki with PT-BR support**. It is not a CIPL
 - **Back:** Brazilian Portuguese (PT-BR) gloss, bilingual example sentence, native English audio
 - **Drill rule:** hear English → guess meaning in English → only then open the PT-BR gloss
 
-Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$26**.
+Free AnkiWeb dumps labelled “Inglês–Português” are usually tourist phrases, phrasal-verb dumps, or undated frequency lists without IELTS/TOEFL framing. This listing ships **2,504** exam-frequency cards from the Prep2Go bank as one Gumroad \`.apkg\` at **$9.99**.
 
 ### Why Brazilians lose IELTS/TOEFL Reading points on cognates
 
@@ -1651,7 +1651,7 @@ Each URL has its own samples, FAQs, and Gumroad permalink. Google treating them 
 
 ### What makes this Gumroad edition different
 
-Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$26** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
+Prep2Go app bank (**2,504** cards, **Brazilian Portuguese** glosses) with UniPrep2Go IELTS/TOEFL framing on Gumroad at **$9.99** — instant \`.apkg\`, cognate-trap study notes, not a Lemon-only listing, not AnkiWeb tourist packs, not CIPLE / Celpe-Bras / ENEM, and not a demonym-swapped Spanish or Italian sibling page.`,
 
   "ielts-toefl-english-for-turkish-speakers-anki-deck": `### Who this deck is for
 
@@ -1692,7 +1692,7 @@ Kids memorize English glosses without listening, adults buy adult DELF Anki by m
 
 ### What makes this Gumroad edition different
 
-Kids-first DELF Prim framing at **$12** with two instant PDF downloads — separate from the adult DELF DALF TCF TEF Anki deck.`,
+Kids-first DELF Prim framing at **$9.99** with two instant PDF downloads — separate from the adult DELF DALF TCF TEF Anki deck.`,
 
   "swiss-citizenship-anki-deck": `### Who this bundle is for
 
@@ -1704,7 +1704,7 @@ Cantonal exams run in an official language, not English. Blog quizzes mix federa
 
 ### What's inside
 
-Three separate \`.apkg\` files in one **$12** download: Einbürgerung Schweiz (**207**), Naturalisation Suisse (**207**), Naturalizzazione Svizzera (**207**) — **621** cards total.
+Three separate \`.apkg\` files in one **$9.99** download: Einbürgerung Schweiz (**207**), Naturalisation Suisse (**207**), Naturalizzazione Svizzera (**207**) — **621** cards total.
 
 ### Study plan
 
@@ -1712,7 +1712,7 @@ Import the language file for your canton, then **20–30 cards/day** while you s
 
 ### What makes this Gumroad edition different
 
-One **$12** three-language Swiss civics bundle with instant download — spaced repetition for the federal block, waitlist-free after your mock diagnostic.`,
+One **$9.99** three-language Swiss civics bundle with instant download — spaced repetition for the federal block, waitlist-free after your mock diagnostic.`,
 
   "citizenship-naturalization-anki-bundle": `### Who this bundle is for
 
@@ -1724,7 +1724,7 @@ Civics facts scatter across six countries. Free quizzes mix pathways. Interview 
 
 ### What's inside
 
-Six separate \`.apkg\` files in one **$20** download: Leben in Deutschland (**296**), Naturalisation française (**200**), Life in the UK (**201**), Canadian Citizenship (**200**), Australian Citizenship (**200**), and U.S. Citizenship (**128**) — **1,225** cards total. Study one country; keep the others for family members on other pathways.
+Six separate \`.apkg\` files in one **$9.99** download: Leben in Deutschland (**296**), Naturalisation française (**200**), Life in the UK (**201**), Canadian Citizenship (**200**), Australian Citizenship (**200**), and U.S. Citizenship (**128**) — **1,225** cards total. Study one country; keep the others for family members on other pathways.
 
 ### Study plan
 
@@ -1736,7 +1736,7 @@ Mixing Germany with UK facts in one notes app, buying six separate listings, or 
 
 ### What makes this Gumroad edition different
 
-One **$20** multi-country civics bundle with instant download of all six decks — spaced repetition instead of another bookmark pile.`,
+One **$9.99** multi-country civics bundle with instant download of all six decks — spaced repetition instead of another bookmark pile.`,
 
   "dele-a2-spanish-anki-deck": `### Which Spanish pathways this deck targets
 
@@ -1838,7 +1838,7 @@ Official GMAC practice exams, tutoring, or registration. Independent prep — no
 
   "sat-anki-deck": `### What is inside
 
-**160 unique** flashcards — **88 Reading and Writing** (information and ideas, craft and structure, expression of ideas, Standard English conventions) and **72 Math** (algebra, advanced math, problem-solving and data analysis, geometry and trigonometry) — from the same validated bank as the free Digital SAT readiness check. Instant **$11** Gumroad .apkg. This is live, not a planned waitlist SKU.
+**160 unique** flashcards — **88 Reading and Writing** (information and ideas, craft and structure, expression of ideas, Standard English conventions) and **72 Math** (algebra, advanced math, problem-solving and data analysis, geometry and trigonometry) — from the same validated bank as the free Digital SAT readiness check. Instant **$9.99** Gumroad .apkg. This is live, not a planned waitlist SKU.
 
 ### Plan with the free SAT mock
 
@@ -1860,7 +1860,7 @@ Bluebook full-length tests, Khan Academy Official SAT Practice, or College Board
 
 ### Plan with the free GRE mock
 
-**Start:** Take the [30-question GRE readiness check (free 25-question version)](/mock-exams/gre-readiness-check) (15 Verbal + 15 Quant / 45 minutes; both axes must clear the readiness bar). **Then:** Drill the **$11 / 350-card** Anki (175 Verbal + 175 Quant) at 15–20 cards/day on the weaker section. **Closer to test day:** ETS PowerPrep for adaptive timing and Analytical Writing.
+**Start:** Take the [30-question GRE readiness check (free 25-question version)](/mock-exams/gre-readiness-check) (15 Verbal + 15 Quant / 45 minutes; both axes must clear the readiness bar). **Then:** Drill the **$9.99 / 350-card** Anki (175 Verbal + 175 Quant) at 15–20 cards/day on the weaker section. **Closer to test day:** ETS PowerPrep for adaptive timing and Analytical Writing.
 
 Official shorter GRE is about **1 hour 58 minutes** with **27 Verbal + 27 Quant** plus Writing (0–6). Our mock is a shorter diagnostic — Writing is not included.
 
@@ -2441,6 +2441,22 @@ Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state ex
 ### Pitfalls this deck targets
 
 Applicants confuse agency relationships (seller's agent vs dual agent), disclosure delivery deadlines, and trust fund handling. Cards use California statutory framing.`,
+
+  "al-real-estate-anki-deck": `### What is inside
+
+120 Alabama-focused MCQ cards across agency & contracts, property ownership & land use, finance & closing, and AREC-style license law (30 cards per topic). The free timed check draws 60 questions from this same 120-item bank (free 25-question version), so Mock Pass retakes are not the same 60 stems shuffled. **$9.99.**
+
+### Plan with the free AL mock
+
+Finish the 60-hour prelicense course (70% to pass) first, then stay inside the six-month exam window. Drill 15–20 cards/day and sit the [60-question Alabama readiness check (free 25-question version)](/mock-exams/al-real-estate-readiness-check) (75 min, 70% diagnostic). Official Pearson VUE sitting is **120 scored (80 general + 40 Alabama) / 3.5h / scaled 70** — keep that pacing separate from this shorter diagnostic.
+
+### Pitfalls this deck targets
+
+Candidates over-drill national principles and under-drill Alabama advertising, trust/escrow, dual agency, and unlicensed-activity rules. Cards keep AREC-framed license law in daily rotation alongside closing math.
+
+### What this does not replace
+
+AREC registration, the 60-hour course, or the official Pearson VUE exam. Independent prep — not AREC material.`,
 
   "fl-real-estate-anki-deck": `### What is inside
 

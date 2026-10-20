@@ -28,8 +28,7 @@ WD = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 
 # Landing / funnel / SEO items that beat bank work (backlog 2026-10-15), in order. They replace the side task that day.
 EXTRAS = [
-    # Done 2026-10-16: planned cardCount 60→120. Done 2026-10-15: the three duplicate SKUs 301.
-    "Раннер: поле «Have a key?» на старте до free attempt → потом кнопка Mock Pass $5 в hero для страниц без live-деки",
+    # Done 2026-10-19: Have a key? + Mock Pass hero. Done 2026-10-16: planned cardCount 60→120. Done 2026-10-15: three duplicate SKUs 301.
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "
     + ", ".join(f"`{s}`" for s, _ in DECK_NO_CHECKOUT[:3]),
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "

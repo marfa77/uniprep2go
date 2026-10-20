@@ -470,6 +470,53 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
   },
+  "alabama-real-estate": {
+    examKey: "alabama-real-estate",
+    pageHeading: "Alabama Real Estate Salesperson Exam — Facts & Prep",
+    intro:
+      "The Alabama Real Estate Commission (AREC) salesperson exam is delivered by Pearson VUE after the prelicense course. This page summarizes structure and topic areas plus independent UniPrep2Go study products (not official AREC material).",
+    exam_facts: {
+      exam_name: "Alabama Real Estate Salesperson Examination",
+      administered_by: "Alabama Real Estate Commission (AREC); exam delivered by Pearson VUE",
+      question_count:
+        "120 scored: 80 general + 40 Alabama state (plus unscored pretest items)",
+      scored_count: "120",
+      time_limit: "3.5 hours (2.5 general, 1 state)",
+      passing_score:
+        "Scaled 70 on one overall score; a fail means retaking the whole exam",
+      delivery: "Computer-based at Pearson VUE centers",
+      verify_at_url: "https://arec.alabama.gov",
+    },
+    official_sources: [
+      { label: "Alabama Real Estate Commission", url: "https://arec.alabama.gov" },
+      {
+        label: "Pearson VUE Alabama real estate handbook",
+        url: "https://www.pearsonvue.com/content/dam/VUE/vue/en/documents/publications/093300.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Agency & contracts", weight: "national portion" },
+      { domain: "Property ownership & land use", weight: "national portion" },
+      { domain: "Finance & closing", weight: "national portion" },
+      { domain: "Alabama license law (AREC)", weight: "40 state items" },
+    ],
+    high_yield_facts: [
+      "Salesperson prelicense is a 60-hour course passed with 70; then pass the exam within 6 months.",
+      "One overall scaled score of 70 passes; there is no separate pass for national vs state portions.",
+      "Alabama license-law themes include dual agency, trust/escrow handling, advertising, and unlicensed activity.",
+      "After passing, submit the license application to AREC within the handbook window (commonly 90 days).",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the Alabama real estate salesperson exam?",
+        a: "Pearson VUE lists 80 general questions (2.5 hours) and 40 Alabama questions (1 hour), 3.5 hours total, plus unscored pretest items. You receive one overall scaled score.",
+      },
+      {
+        q: "What score is needed to pass the Alabama real estate exam?",
+        a: "A scaled score of 70 on the combined exam. A fail means retaking the entire exam within your six-month authorization.",
+      },
+    ],
+  },
   "us-citizenship": {
     examKey: "us-citizenship",
     pageHeading: "U.S. Citizenship Civics Test — Facts & Prep",
@@ -3056,7 +3103,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CPCT readiness check the official NHA exam?",
-        a: "No. The 120-question / 120-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is a $11 / 120-card .apkg on Gumroad. Not NHA material.",
+        a: "No. The 120-question / 120-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is a $9.99 / 120-card .apkg on Gumroad. Not NHA material.",
       },
     ],
     trademark_note:
@@ -3494,7 +3541,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "The MSCE mixes fill-in-the-blank with multiple-choice items — pure MCQ banks, including UniPrep’s, do not match that format exactly.",
       "AMSP vs CMSP: CMSP requires 200+ documented front-line scribe hours in addition to passing the MSCE — verify with AHDPG.",
       "AHDPG cites The Joint Commission’s updated position that documentation assistants may enter orders at a provider’s direction; those not authorized to submit leave orders pending for licensed staff to verify.",
-      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic plus a $11 / 120-card Anki.",
+      "OpenExamPrep and PracticeTestGeeks publish large free MSCE-style banks — UniPrep is a shorter no-signup timed diagnostic plus a $9.99 / 120-card Anki.",
       "Do not confuse scribe credentials with NHA CCMA or CMA (AAMA) clinical medical assistant exams.",
     ],
     high_yield_facts: [
@@ -3514,7 +3561,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s medical scribe check the official exam?",
-        a: "No. The 60-question / 75-minute / 70% check (free 25-question version) is an independent multiple-choice diagnostic with topic scoring, drawn from a 120 unique bank. The matching Anki deck is $11 / 120 cards on Gumroad. Not AHDPG, ACMSS, or employer material.",
+        a: "No. The 60-question / 75-minute / 70% check (free 25-question version) is an independent multiple-choice diagnostic with topic scoring, drawn from a 120 unique bank. The matching Anki deck is $9.99 / 120 cards on Gumroad. Not AHDPG, ACMSS, or employer material.",
       },
       {
         q: "Is a scribe exam the same as CCMA or CMA?",
@@ -3595,7 +3642,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "safe-mlo",
     pageHeading: "SAFE MLO Exam — Facts, NMLS Outline & Prep",
     intro:
-      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content is the NMLS national exam for residential MLOs. Official sittings are 120 items (115 scored + 5 pretest) in 190 minutes with a 75% passing score under the SAFE Act. UniPrep2Go’s check is a 120-question / 120-minute / 70% readiness diagnostic (free 25-question version) from a 240 unique bank, paired with a live $11 / 240-card Anki. Independent prep — not NMLS exam material.",
+      "The SAFE Mortgage Loan Originator National Test with Uniform State Test content is the NMLS national exam for residential MLOs. Official sittings are 120 items (115 scored + 5 pretest) in 190 minutes with a 75% passing score under the SAFE Act. UniPrep2Go’s check is a 120-question / 120-minute / 70% readiness diagnostic (free 25-question version) from a 240 unique bank, paired with a live $9.99 / 240-card Anki. Independent prep — not NMLS exam material.",
     exam_facts: {
       exam_name: "SAFE Mortgage Loan Originator National Test with Uniform State Test Content",
       administered_by: "NMLS / CSBS (Prometric delivery)",
@@ -3642,7 +3689,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s SAFE MLO check the official NMLS exam?",
-        a: "No. It is an independent diagnostic. The matching Anki deck is a live $11 / 240-card .apkg on Gumroad. Not NMLS material.",
+        a: "No. It is an independent diagnostic. The matching Anki deck is a live $9.99 / 240-card .apkg on Gumroad. Not NMLS material.",
       },
     ],
     trademark_note:
@@ -3652,7 +3699,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "abo-ncle-noce",
     pageHeading: "ABO Optician (NOCE) Exam — Facts & Prep",
     intro:
-      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 120 unique bank, paired with a live $11 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 120 unique bank, paired with a live $9.99 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
     exam_facts: {
       exam_name: "National Opticianry Competency Examination (NOCE / ABO Basic)",
       administered_by: "ABO-NCLE (Prometric delivery)",
@@ -3749,7 +3796,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep’s SPI check the official ARDMS exam?",
-        a: "No. The 60-question check (free 25-question version) is independent text/physics practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS/Inteleos material.",
+        a: "No. The 60-question check (free 25-question version) is independent text/physics practice. The matching Anki deck is a live $9.99 / 120-card .apkg on Gumroad. Not ARDMS/Inteleos material.",
       },
       {
         q: "Does SPI include ABD or OB image items?",
@@ -4629,6 +4676,7 @@ const deckExamKeyMap: Record<string, string> = {
   "life-and-health-insurance-exam-anki-deck": "life-health-insurance",
   "property-casualty-insurance-exam-anki-deck": "property-casualty-insurance",
   "california-real-estate-exam-anki-deck": "california-real-estate",
+  "al-real-estate-anki-deck": "alabama-real-estate",
   "servsafe-manager-anki-deck": "servsafe",
   "servsafe-manager-complete-study-guide": "servsafe",
   "cfa-level-1-anki-deck": "cfa-level-1",

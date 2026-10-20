@@ -716,7 +716,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     examBody: "College Board",
     lastUpdated: "2026-10-04",
     questionSourceNote:
-      "Original UniPrep2Go questions authored for the Digital SAT readiness check (88 Reading and Writing + 72 Math unique cards in the live Anki bank; 49-question timed session). The matching Digital SAT Anki deck is a live $11 Gumroad .apkg, not a waitlist product.",
+      "Original UniPrep2Go questions authored for the Digital SAT readiness check (88 Reading and Writing + 72 Math unique cards in the live Anki bank; 49-question timed session). The matching Digital SAT Anki deck is a live $9.99 Gumroad .apkg, not a waitlist product.",
     ankiDeckCardCount: 160,
   },
   {

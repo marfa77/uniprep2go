@@ -21,7 +21,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "al-license-law", label: "State license law" }
     ]),
     officialSourceNote: "Mapped to Alabama Real Estate Commission themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Alabama Real Estate readiness check (free 25-question version) with topic scoring.",
+    description: "60-question Alabama Real Estate readiness check drawn from a 120-item bank (free 25-question version) with topic scoring.",
     examBody: "Alabama Real Estate Commission",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
     searchAliases: ["Alabama real estate", "AL RE", "Alabama real estate exam"],

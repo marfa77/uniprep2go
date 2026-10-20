@@ -1,17 +1,17 @@
 # SKU status board
 
-Generated 2026-10-19 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-10-20 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 56 | 34 |
+| ok | 57 | 35 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 20 | 1 |
 | point-fix | 0 | 0 |
-| rewrite | 101 | 29 |
+| rewrite | 100 | 28 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -22,7 +22,6 @@ Products without a mock and catalog totals: bottom of this file.
 | Status | Mock | Anki | Session / bank | Last work | Issues |
 |---|---|---|---|---|---|
 | rewrite | `ak-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `al-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ar-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ashrae-certifications-readiness-check` | live | 50 / 250 | — | FAIL (31 items): template/thin distractor notes, thin/template explanations; no content review in ledger |
 | rewrite | `az-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -145,6 +144,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `abo-optician-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `ace-cpt-readiness-check` | live | 60 / 300 | 2026-10-14 | — |
 | ok | `acsm-cpt-readiness-check` | live | 60 / 120 | 2026-10-18 | — |
+| ok | `al-real-estate-readiness-check` | live | 60 / 120 | 2026-10-20 | — |
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-18 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |

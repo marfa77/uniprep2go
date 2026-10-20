@@ -45,7 +45,7 @@ async function fetchOpsQuestions(examSlug: string, rpc: string): Promise<MockQue
       apikey: key,
       Authorization: `Bearer ${key}`,
       "Content-Type": "application/json",
-      "X-Bank-Revision": "20261019",
+      "X-Bank-Revision": "20261020",
     },
     body: JSON.stringify({ p_slug: examSlug }),
     // Allow ISR of mock landings — no-store here forced every /mock-exams/* to Cache-Control: no-store.

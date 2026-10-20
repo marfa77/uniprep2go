@@ -44,7 +44,7 @@
       },
       {
         "id": "b",
-        "text": "Before or as soon as practicable when the dual/designated relationship arises"
+        "text": "As soon as practicable when the dual or designated relationship arises."
       },
       {
         "id": "c",
@@ -81,7 +81,7 @@
       },
       {
         "id": "c",
-        "text": "The listing broker is owed a commission if the property sells during the term, regardless of who finds the buyer"
+        "text": "The listing broker is paid if the property sells during the listing term."
       },
       {
         "id": "d",
@@ -254,7 +254,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "The clause elevates punctual performance; missing deadlines can be material.",
+    "explanation": "A time-is-of-the-essence clause makes stated dates and times material. Missing a deadline can be a breach that allows the non-defaulting party to terminate or pursue remedies, rather than allowing loose \"reasonable time\" performance.",
     "distractorExplanations": {
       "a": "That is the reasonable-time standard that applies when the clause is absent; the clause makes dates strict.",
       "b": "The clause applies to all contract dates, including contingency deadlines, not just the closing date.",
@@ -353,7 +353,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Puffing is opinion/hype; misrepresenting material facts is not puffing.",
+    "explanation": "Puffing is sales talk framed as opinion or hype (\"best views in town\"). Once a statement asserts a measurable material fact that is false, it is misrepresentation, not puffing.",
     "distractorExplanations": {
       "a": "A false measurable fact is negligent misrepresentation even without intent; puffing is only opinion or hype.",
       "b": "Silence about a known latent defect is concealment or nondisclosure, not exaggerated opinion.",
@@ -403,7 +403,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Not create the dual agency relationship; consider designated agency, referral, or withdrawal"
+        "text": "Do not create dual agency; use designated agency, referral, or withdraw."
       },
       {
         "id": "b",
@@ -436,30 +436,30 @@
     "options": [
       {
         "id": "a",
-        "text": "The listing broker"
+        "text": "The listing broker who co-broke the sale"
       },
       {
         "id": "b",
-        "text": "The buyer"
+        "text": "The buyer who signed the representation agreement"
       },
       {
         "id": "c",
-        "text": "The title company"
+        "text": "The title company handling the closing file"
       },
       {
         "id": "d",
-        "text": "The lender"
+        "text": "The lender funding the buyer's purchase loan"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Buyer agency agreements create fiduciary duties to the buyer client.",
+    "explanation": "A buyer brokerage agreement creates an agency relationship with the buyer as client, so fiduciary duties such as loyalty and confidentiality run to that buyer, not to cooperating parties.",
     "distractorExplanations": {
-      "a": "Listing broker is a cooperating party, not the buyer client.",
-      "c": "Title company is a service provider.",
-      "d": "Lender is separate."
+      "a": "The listing broker may cooperate on the sale but is not the buyer-broker's client under a buyer representation agreement.",
+      "c": "The title company is a closing service provider; signing a buyer agency form does not make it the broker's client.",
+      "d": "The lender is a separate financing party; buyer-broker fiduciary duties are owed to the buyer client, not the lender."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-agency-law-015",
@@ -485,7 +485,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Commingling is improper mixing of trust and personal/operating money.",
+    "explanation": "Commingling is depositing or holding client trust money in the same account as the broker's personal or operating funds. Trust money must stay in a proper escrow or trust account, separate from firm operating cash.",
     "distractorExplanations": {
       "a": "Spending trust money on the broker's own expenses is conversion, a separate and more serious violation.",
       "b": "Pooling multiple clients' funds in one properly kept trust account is permitted; mixing in broker money is not.",
@@ -493,6 +493,501 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-016",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "Under an exclusive-agency listing, the seller generally owes a commission to the listing broker when the property sells through",
+    "options": [
+      {
+        "id": "a",
+        "text": "The listing broker's efforts or a cooperating broker's work"
+      },
+      {
+        "id": "b",
+        "text": "Any buyer the seller finds completely independently"
+      },
+      {
+        "id": "c",
+        "text": "Any sale during the term, including one the seller procures alone"
+      },
+      {
+        "id": "d",
+        "text": "A buyer the seller reaches only through personal social-media posts"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Exclusive agency pays the listing broker when the firm or cooperating brokers procure the buyer, but typically lets the seller avoid a fee if the seller alone finds the buyer.",
+    "distractorExplanations": {
+      "b": "A seller-procured buyer usually avoids the listing commission under exclusive agency; that outcome is the main contrast with exclusive right-to-sell.",
+      "c": "That describes exclusive right-to-sell protection. Exclusive agency carves out a seller-only sale so the listing broker is not paid in that case.",
+      "d": "A buyer found solely through the seller's own marketing is a seller-procured sale, which exclusive agency typically excludes from the commission."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-017",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A buyer tells a listing agent confidentially that she will pay well above list if needed. As the seller's agent, the licensee should",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the price ceiling secret to protect the buyer customer"
+      },
+      {
+        "id": "b",
+        "text": "Disclose the buyer's willingness to pay more to the seller client"
+      },
+      {
+        "id": "c",
+        "text": "Tell only cooperating brokers, not the seller personally"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the remark because offer price is always confidential"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A listing agent owes loyalty and disclosure of material negotiating information to the seller client, including a buyer's stated ability or willingness to pay more.",
+    "distractorExplanations": {
+      "a": "Confidentiality runs primarily to the seller client, not to a buyer customer who volunteers a higher price ceiling.",
+      "c": "The duty is to inform the seller client; filtering the information only to other brokers does not satisfy that loyalty obligation.",
+      "d": "Customer remarks about price flexibility are material to the seller's bargaining position and must not be ignored."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-018",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A buyer submits a written offer. Before the seller accepts, the buyer emails a clear withdrawal. The listing broker should treat the offer as",
+    "options": [
+      {
+        "id": "a",
+        "text": "Still binding until the seller signs acceptance"
+      },
+      {
+        "id": "b",
+        "text": "Automatically converted into a counteroffer"
+      },
+      {
+        "id": "c",
+        "text": "Terminated so the seller can no longer accept it"
+      },
+      {
+        "id": "d",
+        "text": "Open for 24 hours regardless of the withdrawal"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An offer may be withdrawn any time before acceptance is communicated; once effectively revoked, the seller cannot create a contract by later signing that offer.",
+    "distractorExplanations": {
+      "a": "Without acceptance, there is no contract; a timely withdrawal ends the offeror's power of acceptance.",
+      "b": "Withdrawal cancels the offer; it does not morph into a counteroffer by the buyer or seller.",
+      "d": "No automatic holding period preserves a revoked offer; communication of withdrawal before acceptance controls."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-019",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "Seller Amy counters Buyer's $280,000 offer at $295,000. Before Amy hears back, Buyer accepts Amy's counter in writing. The contract forms when",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amy first mailed the counter, regardless of Buyer's reply"
+      },
+      {
+        "id": "b",
+        "text": "The original $280,000 offer is revived automatically"
+      },
+      {
+        "id": "c",
+        "text": "The title company schedules the closing appointment"
+      },
+      {
+        "id": "d",
+        "text": "Acceptance of the counter is communicated to Amy"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A counteroffer rejects the prior offer and becomes a new offer; a binding contract arises when acceptance of that counter is properly communicated to the offeror.",
+    "distractorExplanations": {
+      "a": "Sending a counter only creates a new offer; mutual assent still requires the other party's acceptance.",
+      "b": "A counter typically kills the original offer; the $280,000 terms are not automatically revived.",
+      "c": "Closing logistics do not create mutual assent; contract formation turns on communicated acceptance."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-020",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "In Alabama practice, a licensee working with a consumer should generally present the required agency/RECAD disclosure",
+    "options": [
+      {
+        "id": "a",
+        "text": "Before confidential information is shared, as soon as practical"
+      },
+      {
+        "id": "b",
+        "text": "After the purchase contract is fully executed by both parties"
+      },
+      {
+        "id": "c",
+        "text": "When the consumer specifically asks for a written brochure"
+      },
+      {
+        "id": "d",
+        "text": "At closing, when the settlement agent reviews agency paperwork"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Alabama's RECAD framework expects timely written agency disclosure so consumers know whom the licensee represents before they reveal confidential bargaining information.",
+    "distractorExplanations": {
+      "b": "Waiting until after contract execution is too late; disclosure must precede substantive confidential discussions.",
+      "c": "Disclosure is a licensee obligation, not an optional brochure available only on consumer request.",
+      "d": "Closing is far too late for RECAD agency disclosure; consumers need the relationship explained before bargaining secrets are shared."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-021",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "Under Alabama RECAD, a licensee acting as a transaction broker rather than a single agent generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "Owes both parties full fiduciary loyalty and obedience on price strategy"
+      },
+      {
+        "id": "b",
+        "text": "Assists with honesty and material-fact disclosure, not full advocacy"
+      },
+      {
+        "id": "c",
+        "text": "May withhold known latent defects if no single-agency agreement was signed"
+      },
+      {
+        "id": "d",
+        "text": "Must refuse to show property until each side hires a separate firm"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Alabama RECAD distinguishes single-agent fiduciary advocacy from transaction brokerage. A transaction broker helps facilitate the deal with honesty, accounting, and material-fact disclosure, but does not give either side full loyal advocacy on negotiating strategy.",
+    "distractorExplanations": {
+      "a": "Full loyalty and obedience on offer strategy are single-agent fiduciary duties, not the limited role of a transaction broker.",
+      "c": "Known material latent defects still must be disclosed; transaction brokerage does not authorize concealment.",
+      "d": "RECAD does not require separate firms before a showing; transaction brokerage exists so one licensee can assist without becoming a single agent for both."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-022",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "An open listing on a Birmingham home usually means the listing broker earns a commission only if",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any broker in the MLS brings a ready buyer"
+      },
+      {
+        "id": "b",
+        "text": "The seller finds any buyer without broker help"
+      },
+      {
+        "id": "c",
+        "text": "That broker is the procuring cause of the sale"
+      },
+      {
+        "id": "d",
+        "text": "The property sits on market for sixty days"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Open listings are nonexclusive; each broker is paid only if that broker's efforts are the procuring cause, and the seller may also sell without owing any listing broker.",
+    "distractorExplanations": {
+      "a": "Cooperating or MLS activity does not automatically pay every open-listing broker; only the procuring broker is compensated.",
+      "b": "A seller-only sale typically owes no commission under an open listing.",
+      "d": "Market time alone does not create a commission entitlement under an open listing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-023",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A purchase agreement includes a financing contingency. If the buyer timely documents loan denial as the contract requires, the buyer may typically",
+    "options": [
+      {
+        "id": "a",
+        "text": "Be forced to close anyway with cash the buyer lacks"
+      },
+      {
+        "id": "b",
+        "text": "Lose earnest money automatically for failing to close"
+      },
+      {
+        "id": "c",
+        "text": "Sue the lender personally for specific performance"
+      },
+      {
+        "id": "d",
+        "text": "Terminate under the contingency and reclaim the deposit."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A financing contingency lets a buyer who makes a good-faith loan effort and timely gives required denial notice exit without default, usually with return of earnest money as the contract provides.",
+    "distractorExplanations": {
+      "a": "The contingency exists so the buyer is not compelled to close without the loan the parties contemplated.",
+      "b": "Proper contingency termination is not a buyer default that automatically forfeits earnest money.",
+      "c": "Loan denial rights run between buyer and seller under the contract; they do not create a specific-performance claim against the lender."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-024",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "When a broker designates different licensees in the same firm for the seller and the buyer, the arrangement is best described as",
+    "options": [
+      {
+        "id": "a",
+        "text": "Designated agency: each designee advocates for one client"
+      },
+      {
+        "id": "b",
+        "text": "Single agency for both consumers to the same salesperson"
+      },
+      {
+        "id": "c",
+        "text": "An open listing that eliminates all fiduciary duties"
+      },
+      {
+        "id": "d",
+        "text": "Illegal dual agency created merely because one firm has both sides"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Designated agency assigns separate firm licensees to each party so each client receives advocacy, while the firm manages conflicts that would otherwise create dual agency for one agent.",
+    "distractorExplanations": {
+      "b": "One salesperson cannot be a single agent for both opposing parties in the same transaction.",
+      "c": "Designated agency is an agency form, not an open listing, and fiduciary duties to each designated client remain.",
+      "d": "Same-firm representation is not automatically illegal dual agency; designated (or properly consented dual) agency is how Alabama brokerages handle in-house deals."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-025",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A seller dies after signing an exclusive right-to-sell listing but before any contract of sale. In many agency analyses, the listing generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "Automatically transfers to the listing salesperson personally"
+      },
+      {
+        "id": "b",
+        "text": "Terminates because death of the principal ends the agency"
+      },
+      {
+        "id": "c",
+        "text": "Becomes irrevocable for the full original listing term"
+      },
+      {
+        "id": "d",
+        "text": "Converts into a buyer-brokerage agreement for the heirs"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A listing is a personal service agency contract; death of the seller principal typically terminates the agency unless a contract of sale has already bound the estate under different rules.",
+    "distractorExplanations": {
+      "a": "Listings belong to the broker firm, not the salesperson, and death does not assign them personally to the agent.",
+      "c": "Death usually ends the listing; it does not make the agency irrevocable for the stated term.",
+      "d": "A listing does not flip into buyer representation for heirs; any new relationship needs a new agreement."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-026",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "Compared with a client, a customer of a listing broker is typically owed",
+    "options": [
+      {
+        "id": "a",
+        "text": "Full loyalty and obedience on offer strategy"
+      },
+      {
+        "id": "b",
+        "text": "Confidential price advice against the seller"
+      },
+      {
+        "id": "c",
+        "text": "Honesty, fair dealing, and material-fact disclosure."
+      },
+      {
+        "id": "d",
+        "text": "Advocacy equal to what the seller client receives"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Customers are not owed fiduciary loyalty; they are owed honesty, fair dealing, and disclosure of known material property facts, while advocacy remains with the client.",
+    "distractorExplanations": {
+      "a": "Loyalty and obedience are fiduciary duties owed to the client, not to a customer.",
+      "b": "Giving confidential strategy against the seller would breach duties to the listing client.",
+      "d": "Equal advocacy would describe dual or neutral roles; a listing broker advocates for the seller client."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-027",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A bilateral purchase contract is best characterized as one in which",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only the seller makes a binding promise"
+      },
+      {
+        "id": "b",
+        "text": "Only the buyer may enforce any remedy"
+      },
+      {
+        "id": "c",
+        "text": "The optionee alone can compel a conveyance"
+      },
+      {
+        "id": "d",
+        "text": "Both parties exchange promises to perform."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A typical sales contract is bilateral: the buyer promises to buy and the seller promises to convey, so each side has enforceable duties if the other performs.",
+    "distractorExplanations": {
+      "a": "A seller-only promise describes a unilateral pattern more like an option, not a standard bilateral sale contract.",
+      "b": "Either party may generally seek remedies for the other's breach of a bilateral contract.",
+      "c": "An option gives the optionee a unilateral right; that is not the bilateral mutual-promise structure of a purchase agreement."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-028",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A latent defect the seller and listing agent know about, but a careful walk-through would not reveal, must generally be",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disclosed to prospective buyers as a material fact"
+      },
+      {
+        "id": "b",
+        "text": "Hidden until after closing to protect marketability"
+      },
+      {
+        "id": "c",
+        "text": "Mentioned only if the buyer orders an appraisal"
+      },
+      {
+        "id": "d",
+        "text": "Treated as puffing that needs no factual disclosure"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Known latent material defects that a reasonable inspection would not uncover must be disclosed; concealment breaches duties of honesty and, for the seller's agent, disclosure obligations.",
+    "distractorExplanations": {
+      "b": "Withholding a known latent defect until after closing is fraudulent nondisclosure, not a marketability strategy.",
+      "c": "Appraisal is for value; disclosure duties do not wait on whether a buyer orders an appraisal.",
+      "d": "Puffing is opinionated sales talk; a concealed structural or systems defect is a fact, not puffing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-029",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "Earnest money in a residential contract is most accurately described as",
+    "options": [
+      {
+        "id": "a",
+        "text": "A government fee paid to record the deed"
+      },
+      {
+        "id": "b",
+        "text": "A good-faith deposit handled as the contract provides."
+      },
+      {
+        "id": "c",
+        "text": "The broker's nonrefundable marketing retainer always kept"
+      },
+      {
+        "id": "d",
+        "text": "The lender's underwriting fee paid at application"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Earnest money is a contractual good-faith deposit held as trust funds; at closing it is usually credited to the buyer, and on default it may be forfeited or returned as the agreement and law provide.",
+    "distractorExplanations": {
+      "a": "Recording fees are separate closing costs, not the contractual earnest deposit.",
+      "c": "Earnest money is not an automatic broker marketing fee; misuse of the deposit is a trust-fund violation.",
+      "d": "Lender fees are loan costs; they are distinct from earnest money deposited under the sales contract."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-agency-law-030",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "agency-law",
+    "prompt": "A seller wants out after a valid, enforceable purchase contract with no contingency remaining. The buyer's strongest typical remedy is",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recording a mechanic's lien against neighboring lots"
+      },
+      {
+        "id": "b",
+        "text": "Forcing the listing broker to buy the property instead"
+      },
+      {
+        "id": "c",
+        "text": "Seeking specific performance to compel the seller to convey"
+      },
+      {
+        "id": "d",
+        "text": "Canceling unilaterally because seller remorse is allowed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Real estate is unique, so when a seller repudiates a binding contract, buyers often seek specific performance to force conveyance, along with or instead of money damages.",
+    "distractorExplanations": {
+      "a": "Mechanic's liens relate to unpaid improvement work, not a buyer's contract remedy against a reneging seller.",
+      "b": "The listing broker is not obligated to purchase merely because the seller breaches the sales contract.",
+      "d": "Seller remorse alone does not void an enforceable contract once contingencies are satisfied."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-001",
@@ -531,7 +1026,7 @@
     "id": "al-real-estate-readiness-check-property-ownership-002",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "Which deed offers the greatest protection to a grantee from the grantor's covenants?",
+    "prompt": "Which deed form usually gives a grantee the broadest title covenants from the grantor?",
     "options": [
       {
         "id": "a",
@@ -551,14 +1046,14 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "General warranty deeds typically include the broadest covenants of title.",
+    "explanation": "A general warranty deed usually includes the broadest covenants of seisin, right to convey, against encumbrances, quiet enjoyment, and warranty, covering defects through the full chain of title—not only the grantor's own acts.",
     "distractorExplanations": {
-      "b": "Quitclaim transfers whatever interest the grantor has, often without warranties.",
-      "c": "Limited or no covenants.",
-      "d": "No warranties implied by that description."
+      "b": "A quitclaim deed transfers whatever interest the grantor may have and typically gives the grantee no covenants of title to enforce.",
+      "c": "A bargain-and-sale deed without covenants conveys interest but does not give the broad warranty protections of a general warranty deed.",
+      "d": "A deed in lieu described as having no warranties offers little or no covenant protection compared with a general warranty deed."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-003",
@@ -568,7 +1063,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Is always personal to one individual and never runs with land"
+        "text": "Is personal to one holder and does not benefit a dominant parcel"
       },
       {
         "id": "b",
@@ -576,22 +1071,22 @@
       },
       {
         "id": "c",
-        "text": "Transfers only livestock grazing rights federally"
+        "text": "Is a possessory leasehold estate for a fixed calendar term"
       },
       {
         "id": "d",
-        "text": "Is identical to a fee simple defeasible"
+        "text": "Is identical to a fee simple defeasible ownership estate"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Appurtenant easements run with the dominant estate and burden the servient land.",
+    "explanation": "An easement appurtenant ties two parcels: it benefits the dominant tenement and burdens the servient tenement, and it ordinarily runs with the land when the dominant estate is transferred.",
     "distractorExplanations": {
-      "a": "That describes many easements in gross more closely.",
-      "c": "Too narrow.",
-      "d": "Different concept."
+      "a": "A right personal to one holder without a dominant parcel describes an easement in gross more closely than an easement appurtenant.",
+      "c": "An easement is a nonpossessory use right; a fixed-term leasehold is a possessory estate, not an easement appurtenant.",
+      "d": "Fee simple defeasible is an ownership estate that may end on a condition; it is not the same as a limited easement right."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-004",
@@ -617,53 +1112,53 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Specific liens attach to a particular property (e.g., mortgage, property tax lien)",
+    "explanation": "A specific lien attaches only to a particular parcel (examples include a mortgage, mechanic's lien, or real property tax lien on that land). It does not automatically reach the debtor's other unrelated assets.",
     "distractorExplanations": {
-      "a": "General liens can reach multiple assets.",
-      "b": "Homestead is a protection concept.",
-      "d": "Archaic estate form."
+      "a": "A general lien can reach multiple assets of the debtor, such as a judgment lien, rather than only one named property.",
+      "b": "Homestead is a statutory protection of a primary residence from certain creditors, not the name of a lien type.",
+      "d": "Fee tail is an archaic form of estate succession, not a lien that secures a debt against one parcel."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-005",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "Joint tenancy traditionally includes the right of:",
+    "prompt": "Joint tenancy traditionally includes the right of",
     "options": [
       {
         "id": "a",
-        "text": "Inheritance"
+        "text": "Inheritance by the deceased owner's heirs"
       },
       {
         "id": "b",
-        "text": "Homestead"
+        "text": "Homestead protection from all creditors"
       },
       {
         "id": "c",
-        "text": "Reversion"
+        "text": "Reversion to the grantor on any sale"
       },
       {
         "id": "d",
-        "text": "Survivorship"
+        "text": "Survivorship among the joint tenants"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Classic joint tenancy features right of survivorship among joint tenants.",
+    "explanation": "The defining feature of classic joint tenancy is the right of survivorship: when one joint tenant dies, that undivided interest passes automatically to the surviving joint tenants, not through the decedent's will or intestacy.",
     "distractorExplanations": {
-      "a": "Confuses joint tenancy with tenancy in common; a joint tenant's interest passes to co-owners, not heirs.",
-      "b": "Homestead is a separate protection of a residence from certain creditors, not a feature of joint tenancy.",
-      "c": "Reversion is the grantor's future interest after a life estate, unrelated to co-ownership rights."
+      "a": "Inheritance by heirs is the tenancy-in-common pattern; a joint tenant's share does not go to heirs while other joint tenants survive.",
+      "b": "Homestead is a separate statutory shield for a primary residence from certain creditors, not a co-ownership unity of joint tenancy.",
+      "c": "Reversion is a grantor's future interest after a lesser estate ends; selling a joint-tenancy share does not send title back to the original grantor."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-006",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A metes-and-bounds description starts at a",
+    "prompt": "A metes-and-bounds legal description typically starts at a",
     "options": [
       {
         "id": "a",
@@ -671,7 +1166,7 @@
       },
       {
         "id": "b",
-        "text": "Township number"
+        "text": "Township and range designation"
       },
       {
         "id": "c",
@@ -679,18 +1174,18 @@
       },
       {
         "id": "d",
-        "text": "Assessor parcel map without courses"
+        "text": "Assessor parcel number without courses"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Metes and bounds walks courses and distances from a point of beginning.",
+    "explanation": "A metes-and-bounds description traces the boundary by courses and distances beginning at a fixed point of beginning (POB) and returning to that point to close the parcel.",
     "distractorExplanations": {
-      "b": "Granular rectangular survey uses townships/sections.",
-      "c": "Lot/block is a different description system.",
-      "d": "APNs identify parcels but aren't metes-and-bounds courses."
+      "b": "Township, range, and section labels belong to the government rectangular survey system, not a metes-and-bounds walk of the perimeter.",
+      "c": "Condo or lot-and-block descriptions identify a unit or platted lot by recorded plat reference, which is a different description method.",
+      "d": "An assessor parcel number (APN) is a tax-map identifier; it does not itself recite the bearing-and-distance courses of a metes-and-bounds description."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-007",
@@ -716,14 +1211,14 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Zoning and building codes are classic police-power land-use tools.",
+    "explanation": "Police power is the government's authority to regulate for health, safety, and welfare. Zoning ordinances and building codes are classic police-power land-use controls, distinct from private covenants or creditor remedies.",
     "distractorExplanations": {
-      "a": "CC&Rs are private.",
-      "c": "Foreclosure is a creditor remedy.",
-      "d": "Tax liens are different."
+      "a": "Private deed restrictions and CC&Rs are private land-use controls, not exercises of governmental police power.",
+      "c": "Mortgage foreclosure is a creditor's remedy to enforce a security interest, not a land-use regulation under police power.",
+      "d": "Federal income tax liens secure tax debt; they are not zoning or building-code land-use regulations."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-008",
@@ -782,14 +1277,14 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Life estates are measured by a life; remainder/reversion follows. The estate's terms may define the measuring life differently.",
+    "explanation": "A life estate lasts only for the designated measuring life. When that person dies, the life estate ends and possession passes to the remainderman or reverts to the grantor, as the creating instrument provides.",
     "distractorExplanations": {
-      "a": "The remainderman's death does not end the estate; the remainder passes to the remainderman's heirs.",
-      "b": "A life tenant may convey the interest, creating a life estate pur autre vie that still ends at the original tenant's death.",
-      "c": "Occupancy is not required; the life tenant may lease the property and the estate continues for the measuring life."
+      "a": "The remainderman's death does not end the life estate; the remainder interest passes to the remainderman's heirs or devisees while the measuring life continues.",
+      "b": "A life tenant may convey only what they have; the grantee takes a life estate pur autre vie that still ends when the original measuring life dies.",
+      "c": "Occupancy is not required; the life tenant may lease or leave the property vacant and the estate continues for the measuring life."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-010",
@@ -799,30 +1294,30 @@
     "options": [
       {
         "id": "a",
-        "text": "A survey"
+        "text": "A professional land survey of the boundaries"
       },
       {
         "id": "b",
-        "text": "A credit report"
+        "text": "A title commitment without any field inspection"
       },
       {
         "id": "c",
-        "text": "An appraisal form alone without fieldwork"
+        "text": "An appraisal form completed without measuring lines"
       },
       {
         "id": "d",
-        "text": "A listing photo filter"
+        "text": "A comparative market analysis used for pricing only"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Surveys reveal boundary improvements that encroach.",
+    "explanation": "Encroachments—improvements that cross a boundary—are typically revealed by a survey that locates improvements relative to the legal lines. Credit reports and marketing materials do not establish physical boundaries.",
     "distractorExplanations": {
-      "b": "Credit reports don't show physical encroachments.",
-      "c": "Appraisals may note issues but surveys define boundaries.",
-      "d": "Photos don't establish boundaries."
+      "b": "A title commitment reviews recorded matters; it does not by itself map fences, sheds, or driveways that cross the line on the ground.",
+      "c": "An appraisal may note observed issues, but without surveying the lines it does not definitively prove an encroachment.",
+      "d": "A CMA estimates market value for pricing; it is not a boundary survey and will not reliably detect encroachments."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-011",
@@ -848,14 +1343,14 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Clouds cast doubt on title and may need quiet-title or curative action.",
+    "explanation": "A cloud on title is any outstanding claim, lien, or irregularity that raises doubt about ownership and can make the title unmarketable until cured—often by release, quiet-title suit, or other curative steps.",
     "distractorExplanations": {
       "a": "Confuses land-use regulation with title; a variance is a zoning permission, not a claim against ownership.",
-      "c": "That describes a quiet title action, which removes a cloud rather than being the cloud itself.",
-      "d": "Recording gives constructive notice that protects title; it is not a defect impairing marketability."
+      "c": "That describes a quiet-title action, which removes a cloud rather than being the cloud itself.",
+      "d": "Recording gives constructive notice that protects priority; it is not itself a defect impairing marketability."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-012",
@@ -881,20 +1376,20 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "TIC allows unequal interests and no automatic survivorship.",
+    "explanation": "Tenancy in common allows unequal ownership shares and has no automatic right of survivorship; a deceased tenant's interest passes to heirs or devisees. Joint tenancy, by contrast, requires the classic unities and includes survivorship.",
     "distractorExplanations": {
-      "a": "Unity of time and title are joint tenancy requirements; tenants in common may acquire at different times.",
-      "b": "Survivorship is the hallmark of joint tenancy; a tenant in common's share passes to heirs or devisees.",
-      "d": "A tenant in common may sell an undivided share without the other co-owners' consent."
+      "a": "Unity of time and title are joint-tenancy requirements; tenants in common may acquire interests at different times and by different instruments.",
+      "b": "Right of survivorship is the hallmark of joint tenancy; a tenant in common's share does not pass automatically to the other co-owners.",
+      "d": "A tenant in common may generally convey an undivided share without needing the other co-owners' consent to the sale."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-013",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "A variance in zoning is typically a",
+    "prompt": "A variance in zoning is typically",
     "options": [
       {
         "id": "a",
@@ -914,14 +1409,14 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Variances grant relief from strict zoning application in hardship cases. The variance is granted by the zoning authority.",
+    "explanation": "A variance is administrative relief that lets a particular owner deviate from a dimensional or similar zoning rule when strict application would cause unnecessary hardship, without rewriting the zoning map for the district.",
     "distractorExplanations": {
-      "a": "Amending the zoning map is rezoning, a legislative act; a variance grants relief for one parcel.",
-      "b": "That describes a conditional or special use permit, not relief from a requirement due to hardship.",
+      "a": "Amending the zoning map is rezoning, a legislative act; a variance grants parcel-level relief, not a district map change.",
+      "b": "That describes a conditional or special-use permit for a use the ordinance already contemplates after review, not hardship relief from a requirement.",
       "c": "That describes a legal nonconforming (grandfathered) use, not a variance granted by the zoning board."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-014",
@@ -947,20 +1442,20 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Recording provides constructive notice to the world.",
+    "explanation": "Recording a deed in the public land records gives constructive notice to subsequent purchasers and creditors. Delivery transfers title between the parties; acknowledgment and title insurance serve other functions and do not replace recording for notice.",
     "distractorExplanations": {
-      "b": "Acknowledgment makes a deed eligible for recording but by itself gives no notice to the public.",
-      "c": "Delivery and acceptance transfer title between the parties; recording is what gives notice to the world.",
-      "d": "Title insurance protects the insured against covered defects; it does not give public notice of the deed."
+      "b": "Notarization (acknowledgment) makes a deed eligible for recording in many states but by itself does not give constructive notice to the world.",
+      "c": "Delivery and acceptance transfer title between grantor and grantee; recording is what puts the world on constructive notice.",
+      "d": "Owner's title insurance indemnifies the insured against covered defects; buying a policy does not give public notice of the deed."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-property-ownership-015",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "property-ownership",
-    "prompt": "Riparian rights generally relate to:",
+    "prompt": "Riparian rights generally relate to",
     "options": [
       {
         "id": "a",
@@ -980,20 +1475,515 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Riparian doctrines address rights of owners along flowing waters (vs littoral for lakes/oceans)",
+    "explanation": "Riparian rights belong to owners of land adjoining flowing watercourses such as rivers and streams. Rights along lakes, seas, and oceans are generally classified as littoral rights instead.",
     "distractorExplanations": {
       "a": "Rights along lakes, seas, and oceans are littoral rights; riparian rights concern flowing rivers and streams.",
-      "c": "Subsurface mineral rights are a separate bundle of rights and are unrelated to water boundaries.",
-      "d": "Air rights cover space above the land and can be severed, but they are not water rights."
+      "c": "Subsurface mineral rights are a separate stick in the bundle of rights and are unrelated to water-boundary doctrines.",
+      "d": "Air rights cover space above the land and can be severed, but they are not water-boundary rights."
     },
     "difficulty": "hard",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-016",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A buyer wants the fullest ownership interest recognized in real property, with no automatic end date and the power to will, sell, or encumber the estate. Which estate best matches that request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fee simple absolute"
+      },
+      {
+        "id": "b",
+        "text": "Life estate measured by the grantee's life"
+      },
+      {
+        "id": "c",
+        "text": "Estate for years under a fixed-term lease"
+      },
+      {
+        "id": "d",
+        "text": "Fee simple determinable that ends on a stated event"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fee simple absolute is the most complete freehold estate: it lasts indefinitely, is freely transferable and inheritable, and is not cut short by a special limitation. Lesser estates end on death, a term, or a condition.",
+    "distractorExplanations": {
+      "b": "A life estate ends at the measuring life and is not freely inheritable in the same way as fee simple.",
+      "c": "An estate for years is a leasehold for a fixed term, not ownership of the fee.",
+      "d": "Fee simple determinable automatically ends when the stated event occurs, so it is less than absolute ownership."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-017",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A grantor conveys commercial land using a deed that warrants title only against defects arising during the grantor's period of ownership, not against earlier owners. What deed form is that?",
+    "options": [
+      {
+        "id": "a",
+        "text": "General warranty deed covering all prior owners"
+      },
+      {
+        "id": "b",
+        "text": "Special (limited) warranty deed"
+      },
+      {
+        "id": "c",
+        "text": "Quitclaim deed with no title warranties"
+      },
+      {
+        "id": "d",
+        "text": "Deed of trust securing a promissory note"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A special or limited warranty deed covenants only that the grantor has not encumbered the title during the grantor's ownership. It does not warrant against defects created by prior owners, unlike a general warranty deed.",
+    "distractorExplanations": {
+      "a": "A general warranty deed reaches back through the chain of title, not only the current grantor's tenure.",
+      "c": "A quitclaim deed transfers whatever interest the grantor has and typically makes no warranties of title.",
+      "d": "A deed of trust is a security instrument for a loan, not a conveyance deed form for selling land."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-018",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A utility company holds a recorded right to maintain power lines across several parcels, and that right is personal to the company rather than tied to a neighboring dominant lot. What interest is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Easement appurtenant benefiting an adjacent dominant tenement"
+      },
+      {
+        "id": "b",
+        "text": "Fee simple subject to a condition subsequent"
+      },
+      {
+        "id": "c",
+        "text": "Easement in gross held by the utility company"
+      },
+      {
+        "id": "d",
+        "text": "License that automatically runs with each sale of the land"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An easement in gross benefits a person or entity (here, the utility) rather than a dominant parcel. Utility easements are classic easements in gross and can be recorded to bind successive owners of the burdened land.",
+    "distractorExplanations": {
+      "a": "An easement appurtenant requires both a dominant and a servient tenement; a utility line right usually has no dominant lot.",
+      "b": "A fee simple on condition subsequent is an ownership estate that may be cut short, not a limited use right.",
+      "d": "A license is typically revocable permission and does not create a recorded interest that runs with the land like an easement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-019",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "Grantor creates a life estate for Aunt Mae and names Niece as the person who will own the fee when Mae dies. Niece's future interest during Mae's lifetime is best described as a",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reversion retained by the original grantor"
+      },
+      {
+        "id": "b",
+        "text": "Leasehold estate for years held by Niece"
+      },
+      {
+        "id": "c",
+        "text": "Homestead exemption belonging to Aunt Mae"
+      },
+      {
+        "id": "d",
+        "text": "Remainder that becomes possessory at Mae's death"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When a life estate is followed by a named third party who takes the fee at the end of the measuring life, that third party holds a remainder during the life estate. The remainder becomes possessory when Mae dies; a reversion would return to the grantor only if no remainder were created.",
+    "distractorExplanations": {
+      "a": "A reversion stays with the grantor when no remainder is named; here Niece, not the grantor, is the future fee owner.",
+      "b": "Niece's interest is a freehold future interest in the fee, not a fixed-term leasehold.",
+      "c": "Homestead is a protection against certain creditors, not the name of Niece's future ownership interest."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-020",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "Omar buys a vacant lot and takes title in his name alone, with no co-owners on the deed. How is his ownership form classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ownership in severalty"
+      },
+      {
+        "id": "b",
+        "text": "Tenancy by the entirety with a spouse"
+      },
+      {
+        "id": "c",
+        "text": "Joint tenancy with right of survivorship"
+      },
+      {
+        "id": "d",
+        "text": "Tenancy in common with equal undivided shares"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ownership in severalty means one person (or one legal entity) holds title alone. Co-ownership forms such as joint tenancy, tenancy in common, and tenancy by the entirety require more than one owner.",
+    "distractorExplanations": {
+      "b": "Tenancy by the entirety is a marital co-ownership form; Omar holds title alone.",
+      "c": "Joint tenancy requires at least two owners who share the four unities and survivorship.",
+      "d": "Tenancy in common is co-ownership of undivided interests; a sole deed owner is not a tenant in common."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-021",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A restaurant tenant installs a commercial oven bolted to the floor for the business. At lease end, if the lease is silent and local custom allows removal, the oven is most likely treated as",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fixture that must stay with the landlord forever"
+      },
+      {
+        "id": "b",
+        "text": "A trade fixture the tenant may remove if done properly"
+      },
+      {
+        "id": "c",
+        "text": "Real property that the tenant must deed to the landlord"
+      },
+      {
+        "id": "d",
+        "text": "An easement appurtenant running with the leased premises"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Trade fixtures are articles a commercial tenant annexes for business use and may ordinarily remove before or at lease end if removal does not seriously damage the premises and the lease does not forbid it. Ordinary residential fixtures follow different rules.",
+    "distractorExplanations": {
+      "a": "Residential fixtures usually stay, but commercial trade fixtures are generally removable by the tenant under trade-fixture rules.",
+      "c": "The tenant does not convey real estate by deed to remove a trade fixture; the item remains personal property of the tenant if properly removed.",
+      "d": "An easement is a nonpossessory use right in land, not a label for removable business equipment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-022",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A lawful grocery store was built before the area was rezoned residential. The store continues operating without a new variance. That continuing use is best described as a",
+    "options": [
+      {
+        "id": "a",
+        "text": "Spot zone created solely for this one store"
+      },
+      {
+        "id": "b",
+        "text": "Buffer zone required between all commercial uses"
+      },
+      {
+        "id": "c",
+        "text": "Legal nonconforming use (grandfathered use)"
+      },
+      {
+        "id": "d",
+        "text": "Conditional use permit issued after the rezoning"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A legal nonconforming use may continue after a zoning change if it was lawful when established, subject to local limits on expansion, abandonment, or destruction. It is not the same as a new variance or a conditional-use approval obtained after rezoning.",
+    "distractorExplanations": {
+      "a": "Spot zoning is a rezoning of a small parcel for a use inconsistent with surroundings; here the store predates the residential zone.",
+      "b": "A buffer zone separates incompatible districts; it does not describe an existing store allowed to continue.",
+      "d": "A conditional use permit is a discretionary approval for a use listed as conditional; grandfathering does not require a new CUP after rezoning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-023",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "To establish title by adverse possession, a claimant's possession must generally be actual, open and notorious, exclusive, continuous for the statutory period, and",
+    "options": [
+      {
+        "id": "a",
+        "text": "Secret occupancy plus a recorded quitclaim from the true owner"
+      },
+      {
+        "id": "b",
+        "text": "Permission from the owner plus payment of the owner's mortgage"
+      },
+      {
+        "id": "c",
+        "text": "A short-term lease that renews monthly with the landlord's consent"
+      },
+      {
+        "id": "d",
+        "text": "Hostile (without the owner's permission)"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Adverse possession generally requires actual, open and notorious, exclusive, continuous, and hostile possession—meaning without the true owner's permission—for the full statutory period. Permission or a lease defeats hostility; secret use fails openness.",
+    "distractorExplanations": {
+      "a": "Secret occupancy is not open and notorious, and a deed from the true owner is a conveyance, not adverse possession.",
+      "b": "Permission makes possession permissive, not hostile, so the adverse clock typically does not run.",
+      "c": "A consensual leasehold is possession with permission, which is the opposite of adverse possession."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-024",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A recorded subdivision restriction prohibits front-yard fences over four feet. A later buyer who never signed the original developer covenants is still bound if the restriction",
+    "options": [
+      {
+        "id": "a",
+        "text": "Runs with the land and appears in the chain of title"
+      },
+      {
+        "id": "b",
+        "text": "Was only mentioned orally at the first closing party"
+      },
+      {
+        "id": "c",
+        "text": "Appears solely in an expired listing agreement for one lot"
+      },
+      {
+        "id": "d",
+        "text": "Was imposed by a neighbor's private email after purchase"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Deed restrictions and CC&Rs that run with the land bind successors when properly created and recorded so later purchasers have constructive notice. Oral statements, listing paperwork, or post-purchase emails do not create that recorded land burden.",
+    "distractorExplanations": {
+      "b": "Oral restrictions generally fail the Statute of Frauds and do not give constructive notice through the records.",
+      "c": "A listing agreement is a brokerage employment contract and does not create a covenant binding later lot owners.",
+      "d": "A neighbor's later email cannot unilaterally impose a recorded restrictive covenant on another owner's title."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-025",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "In a condominium, which statement best describes ownership of the unit and the shared amenities?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The owner holds a leasehold only and never owns the airspace unit"
+      },
+      {
+        "id": "b",
+        "text": "The owner holds the unit in fee plus an undivided interest in common elements"
+      },
+      {
+        "id": "c",
+        "text": "All owners hold the entire building as joint tenants with survivorship only"
+      },
+      {
+        "id": "d",
+        "text": "Common elements are owned solely by the first unit purchaser forever"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Condominium ownership typically combines fee ownership of the individual unit (often described as airspace) with a concurrent undivided interest in the common elements such as halls, roof, and grounds, subject to the association documents.",
+    "distractorExplanations": {
+      "a": "Condo unit owners generally hold a freehold interest in the unit, not merely a lease (cooperative stock/lease models differ).",
+      "c": "Condo ownership is not simply joint tenancy of the whole building; each owner has a separate unit estate plus common-element shares.",
+      "d": "Common elements are owned in common by the unit owners as a group, not by the first purchaser alone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-026",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "At foreclosure of a residential lot, which lien is most often treated as having superior priority over an earlier recorded first mortgage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An unrecorded vendor's oral claim for unpaid furniture"
+      },
+      {
+        "id": "b",
+        "text": "A junior judgment lien filed after the mortgage"
+      },
+      {
+        "id": "c",
+        "text": "A real property tax lien for unpaid ad valorem taxes"
+      },
+      {
+        "id": "d",
+        "text": "A late homeowner association fine never reduced to lien"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Ad valorem property tax liens typically take priority over most prior private liens, including an earlier first mortgage. Priority among private liens usually follows recording order, but tax liens are a classic exception.",
+    "distractorExplanations": {
+      "a": "An unrecorded oral claim for personal property does not outrank a recorded mortgage on the real estate.",
+      "b": "A later judgment lien is usually junior to an earlier properly recorded first mortgage.",
+      "d": "An HOA fine that never becomes a recorded lien does not automatically prime a first mortgage."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-027",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "Grantor conveys Blackacre \"to Son for life, then to Grantor.\" After the conveyance, what interest does Grantor hold during Son's lifetime?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A remainder in fee simple absolute held by Son"
+      },
+      {
+        "id": "b",
+        "text": "An easement in gross across Blackacre for utilities"
+      },
+      {
+        "id": "c",
+        "text": "A leasehold estate for years beginning immediately"
+      },
+      {
+        "id": "d",
+        "text": "A reversion that becomes possessory when Son's life estate ends"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When a life estate is created and no third-party remainder is named, the future interest left in the grantor is a reversion. Grantor holds that reversion during Son's life; it becomes possessory automatically when the life estate ends.",
+    "distractorExplanations": {
+      "a": "Son holds the present life estate; a remainder would be a future interest in someone other than the grantor.",
+      "b": "Nothing in the conveyance creates a utility easement; the question concerns the leftover ownership interest.",
+      "c": "Grantor's interest is a freehold future interest (reversion), not a lease for a fixed term."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-028",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "Gradual, natural deposit of soil along a riverbank that enlarges a riparian owner's land is called",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accretion, which can add land to the riparian parcel"
+      },
+      {
+        "id": "b",
+        "text": "Avulsion, the sudden tearing away of a large bank"
+      },
+      {
+        "id": "c",
+        "text": "Erosion that always expands the owner's boundary"
+      },
+      {
+        "id": "d",
+        "text": "Reliction that permanently floods the upland"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Accretion is the slow buildup of alluvion that may increase riparian land. Avulsion is a sudden loss or change; erosion wears land away; reliction is land uncovered by permanent recession of water.",
+    "distractorExplanations": {
+      "b": "Avulsion is a sudden tearing away or shift of land, not the gradual deposit that adds soil.",
+      "c": "Erosion removes soil and typically shrinks the parcel; it does not expand the boundary.",
+      "d": "Reliction exposes land when water permanently recedes; it is not flooding that covers upland."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-029",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A landowner tells a hunter, \"You may walk my woods this season,\" with no writing and no recorded instrument. The hunter's right is best classified as a",
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanent easement appurtenant that binds later buyers"
+      },
+      {
+        "id": "b",
+        "text": "License, generally revocable personal permission to use"
+      },
+      {
+        "id": "c",
+        "text": "Fee simple defeasible conveyed by oral grant alone"
+      },
+      {
+        "id": "d",
+        "text": "Profit a prendre recorded in the county land records"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A license is personal, usually oral permission to use land and is typically revocable. It does not create an interest that runs with the land like a recorded easement or a deeded fee estate.",
+    "distractorExplanations": {
+      "a": "An easement appurtenant is an interest in land, usually created in writing and often recorded; casual oral permission is not that.",
+      "c": "Fee simple cannot be conveyed by a casual oral permission; real property transfers require a deed satisfying the Statute of Frauds.",
+      "d": "A profit is a right to take something from the land and, to bind successors, is typically created by a proper instrument—not an informal seasonal permission."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-property-ownership-030",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "property-ownership",
+    "prompt": "A city amends its zoning map so a parcel that was residential may now be used for neighborhood retail. That map amendment is best described as",
+    "options": [
+      {
+        "id": "a",
+        "text": "A use variance granted only to the current owner personally"
+      },
+      {
+        "id": "b",
+        "text": "An easement by necessity for retail customers"
+      },
+      {
+        "id": "c",
+        "text": "A rezoning (amendment of the zoning classification)"
+      },
+      {
+        "id": "d",
+        "text": "A building-code citation for an existing structure"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Changing a parcel's district on the zoning map is a rezoning or zoning amendment. A variance is relief from a restriction for hardship without changing the map; easements and building citations are different tools.",
+    "distractorExplanations": {
+      "a": "A variance allows a nonconforming deviation for a particular property/owner; it does not rewrite the zoning map district.",
+      "b": "An easement by necessity arises from landlocked access needs, not from a legislative change of permitted use.",
+      "d": "Building-code enforcement addresses construction or safety compliance, not the zoning district shown on the map."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-finance-closing-001",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "LTV (loan-to-value) is calculated as:",
+    "prompt": "A lender sizes a purchase loan against a home that appraises below the contract price. How is loan-to-value (LTV) typically calculated?",
     "options": [
       {
         "id": "a",
@@ -1009,15 +1999,15 @@
       },
       {
         "id": "d",
-        "text": "Appraised value ÷ loan amount (or purchase price) × 100%"
+        "text": "Appraised value ÷ loan amount × 100% (value over debt)"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "LTV ratios loan size to property value. Lenders typically use the lower of appraised value or purchase price.",
+    "explanation": "LTV compares loan size to property value: loan ÷ value × 100%. Lenders usually use the lower of appraised value or purchase price, so a low appraisal can raise LTV and change down-payment or PMI needs.",
     "distractorExplanations": {
-      "a": "That computes the down payment percentage (equity), which is the complement of LTV, not LTV itself.",
-      "b": "That is the front-end (housing) debt-to-income ratio, which measures borrower capacity, not loan-to-value.",
-      "d": "Inverts the ratio; LTV puts the loan amount on top and the property value underneath."
+      "a": "That computes the down-payment (equity) percentage, which is roughly the complement of LTV, not LTV itself.",
+      "b": "That is the front-end housing debt-to-income ratio used for capacity, not the loan-to-value collateral ratio.",
+      "d": "Inverts the ratio; LTV puts the loan amount in the numerator and property value in the denominator."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1026,7 +2016,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-002",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "One discount point typically costs",
+    "prompt": "At closing, a borrower pays one discount point to buy down the rate. What does that one point typically cost?",
     "options": [
       {
         "id": "a",
@@ -1046,11 +2036,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "A point is generally 1% of the loan amount, paid to buy down rate or as lender fees.",
+    "explanation": "A discount point is generally 1% of the loan amount paid at closing to buy down the note rate or as lender pricing—not 1% of the price, down payment, or the rate itself.",
     "distractorExplanations": {
       "a": "Points are based on the loan amount, not the price; with a down payment the loan is smaller than the price.",
-      "b": "The down payment is the buyer's equity, not the base for points; points are 1% of the amount borrowed.",
-      "c": "A point is a fee on the loan amount; it may buy down the rate but is not computed from the rate."
+      "b": "The down payment is the buyer's equity stake, not the base for points; points equal 1% of the amount borrowed.",
+      "c": "A point is a fee measured on the loan balance; it may buy down the rate but is not computed as 1% of the rate."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1059,7 +2049,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-003",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "PITI commonly refers to:",
+    "prompt": "A lender underwriting a borrower's housing payment quotes the monthly PITI. PITI commonly refers to which payment package?",
     "options": [
       {
         "id": "a",
@@ -1067,32 +2057,32 @@
       },
       {
         "id": "b",
-        "text": "Points, incentives, title, and inventory"
+        "text": "Principal, interest, title fees, and HOA dues"
       },
       {
         "id": "c",
-        "text": "Prepayment, inflation, trusts, and income"
+        "text": "Points, insurance, taxes, and inspection fees"
       },
       {
         "id": "d",
-        "text": "Property, improvements, tenants, and improvements again"
+        "text": "Prepayment, interest, taxes, and impound reserves"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "PITI is the classic housing payment package lenders underwrite.",
+    "explanation": "PITI is the classic housing payment lenders use in underwriting: principal and interest on the note plus escrowed (or estimated) property taxes and hazard insurance. Other closing costs are not part of the PITI acronym.",
     "distractorExplanations": {
-      "b": "Incorrect expansion.",
-      "c": "Incorrect.",
-      "d": "Incorrect."
+      "b": "Title fees are closing costs, and HOA dues may be underwritten separately; neither replaces taxes and insurance in the PITI acronym.",
+      "c": "Points and inspection fees are typically paid at closing; PITI is the recurring monthly principal, interest, taxes, and insurance package.",
+      "d": "Prepayment is not a monthly PITI component; the \"P\" stands for principal reduction on the amortizing loan payment."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-finance-closing-004",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "An amortizing fixed-rate mortgage payment primarily covers:",
+    "prompt": "A borrower chooses a fully amortizing fixed-rate mortgage rather than an interest-only note. What does each scheduled payment primarily do?",
     "options": [
       {
         "id": "a",
@@ -1112,11 +2102,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Amortizing payments reduce principal over time while paying interest.",
+    "explanation": "A fully amortizing payment covers interest due that period and applies the rest to principal, so the unpaid balance falls to zero by the scheduled end of the term when payments stay on time.",
     "distractorExplanations": {
-      "a": "That describes an interest-only or straight term loan with a balloon, not a fully amortizing loan.",
-      "c": "Adding unpaid interest to the balance is negative amortization, the opposite of an amortizing payment.",
-      "d": "Rising payments describe a graduated payment mortgage; a fixed-rate amortizing payment stays level."
+      "a": "That describes an interest-only or straight-term loan with a balloon, not a fully amortizing fixed-rate mortgage.",
+      "c": "Adding unpaid interest to the balance is negative amortization—the opposite of an amortizing payment.",
+      "d": "Rising payments describe a graduated-payment mortgage; a fixed-rate amortizing payment stays level for the term."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1158,73 +2148,73 @@
     "id": "al-real-estate-readiness-check-finance-closing-006",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "A conventional loan that is not insured/guaranteed by FHA/VA/USDA is typically called:",
+    "prompt": "A purchase loan that is not insured or guaranteed by FHA, VA, or USDA is typically classified as which type of financing?",
     "options": [
       {
         "id": "a",
-        "text": "A government loan"
+        "text": "A government-backed or government-insured loan"
       },
       {
         "id": "b",
-        "text": "A reverse bridge grant"
+        "text": "A construction-only draw loan with no permanent note"
       },
       {
         "id": "c",
-        "text": "A hard-money gift letter"
+        "text": "A gift-funded grant that never creates a repayment duty"
       },
       {
         "id": "d",
-        "text": "A conventional loan"
+        "text": "A conventional loan from a private institutional lender"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Conventional loans lack FHA/VA/USDA insurance/guarantee.",
+    "explanation": "Conventional loans are those without FHA insurance, VA guaranty, or USDA guarantee. They may still be conforming or nonconforming and may require PMI at high LTV, but they are not government-insured or government-guaranteed purchase programs.",
     "distractorExplanations": {
-      "a": "Opposite category.",
-      "b": "Not a standard term here.",
-      "c": "Gift letters document gifts; hard money is private lending."
+      "a": "Government-backed describes FHA/VA/USDA programs; the stem says the loan lacks those insurance or guarantee features.",
+      "b": "A construction loan is a temporary product type; lacking FHA/VA/USDA backing is what defines conventional permanent financing.",
+      "c": "A gift or grant is not a mortgage loan at all; conventional financing still creates a note the borrower must repay."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-finance-closing-007",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "If annual property taxes are $3,600 and the seller owned the property for 3 months of the tax year at closing (buyer pays full year later), a typical proration if seller owes buyer for prepaid/advance assumptions depends on custom—but the monthly tax amount is",
+    "prompt": "Annual property taxes are $3,600. Using a simple 12-month proration, what is the monthly tax amount used as the building block for closing adjustments?",
     "options": [
       {
         "id": "a",
-        "text": "$300"
+        "text": "$300 per month of the annual tax"
       },
       {
         "id": "b",
-        "text": "$3,600"
+        "text": "$3,600 per month of the annual tax"
       },
       {
         "id": "c",
-        "text": "$100"
+        "text": "$100 per month of the annual tax"
       },
       {
         "id": "d",
-        "text": "$1,200"
+        "text": "$1,200 per month of the annual tax"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "$3,600 ÷ 12 = $300 per month—the unit used in many proration setups.",
+    "explanation": "Divide the annual tax by twelve months: $3,600 ÷ 12 = $300. That monthly figure is the unit many closing statements use before multiplying by the number of months (or days) each party owned the property under the chosen proration method.",
     "distractorExplanations": {
-      "b": "That is the annual amount.",
-      "c": "Too low.",
-      "d": "That would be 4 months."
+      "b": "That restates the full annual tax bill; monthly proration uses one-twelfth of the annual amount, not the whole year each month.",
+      "c": "That would be $3,600 ÷ 36 or another incorrect divisor; twelve months into $3,600 yields $300, not $100.",
+      "d": "That equals four months of tax at $300 each, or one-third of the year—not the single-month building block."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-finance-closing-008",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "A prepayment penalty clause",
+    "prompt": "A borrower pays off a loan two years early and owes an extra contractual fee for that early payoff. What does a prepayment penalty clause do?",
     "options": [
       {
         "id": "a",
@@ -1244,10 +2234,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Prepayment penalties charge for early payoff when permitted by the loan terms and law. The penalty applies only when the note and law allow it.",
+    "explanation": "A prepayment-penalty clause charges for paying the loan off (or paying principal down) earlier than the schedule allows, when the note and applicable law permit that fee.",
     "distractorExplanations": {
-      "a": "That is a due-on-sale (alienation) clause, which is triggered by a transfer rather than an early payoff.",
-      "c": "That is an acceleration clause, which is triggered by default rather than by voluntary early payoff.",
+      "a": "That is a due-on-sale (alienation) clause, triggered by a transfer of the property rather than by early payoff.",
+      "c": "That is an acceleration clause, triggered by default rather than by voluntary early payoff.",
       "d": "That is a late-payment charge; a prepayment penalty applies when the borrower pays early, not late."
     },
     "difficulty": "medium",
@@ -1257,7 +2247,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-009",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "Private mortgage insurance (PMI) is most often required when",
+    "prompt": "A conventional purchase loan is structured with only 10% down. When is private mortgage insurance (PMI) most often required?",
     "options": [
       {
         "id": "a",
@@ -1277,11 +2267,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "PMI protects conventional lenders when down payment/equity is thin.",
+    "explanation": "On conventional loans, PMI typically starts when LTV is above about 80% (thin equity) so the insurer covers part of the lender's loss if the borrower defaults. FHA uses MIP and VA uses a guaranty/funding fee instead of PMI.",
     "distractorExplanations": {
       "a": "FHA loans carry the government's mortgage insurance premium (MIP), not private mortgage insurance.",
-      "b": "VA loans are guaranteed by the VA and do not require PMI even with no down payment; a funding fee applies instead.",
-      "d": "78% of original value is when borrower-paid PMI terminates under the Homeowners Protection Act, not when it starts."
+      "b": "VA loans are guaranteed by the VA and do not require PMI even with no down payment; a funding fee often applies instead.",
+      "d": "78% of original value is when borrower-paid PMI must terminate under the Homeowners Protection Act, not when PMI starts."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
@@ -1290,7 +2280,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-010",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "An adjustable-rate mortgage (ARM) interest rate",
+    "prompt": "After the initial fixed period on an adjustable-rate mortgage (ARM), how does the note interest rate typically change?",
     "options": [
       {
         "id": "a",
@@ -1310,11 +2300,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "ARMs adjust with index + margin within contractual caps.",
+    "explanation": "An ARM resets the note rate from a published index plus the lender's fixed margin, usually limited by periodic and lifetime caps in the note. The margin does not float on its own, and tax-escrow changes alone do not make a fixed-rate loan an ARM.",
     "distractorExplanations": {
-      "a": "Reversed: the margin is the fixed part of an ARM; the index is the market rate that moves.",
-      "b": "Payment changes from escrowed taxes affect fixed-rate loans too; that does not make a rate adjustable.",
-      "c": "ARM changes are tied to a published index plus margin, and periodic and lifetime caps limit them."
+      "a": "Reversed: the margin is the fixed lender spread; the index is the market component that moves when the ARM adjusts.",
+      "b": "Escrowed tax changes can alter total PITI on fixed-rate loans too; that does not make the contract interest rate adjustable.",
+      "c": "ARM adjustments follow the stated index-plus-margin formula and contractual caps, not unlimited lender discretion."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1323,7 +2313,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-011",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "Title insurance primarily protects against",
+    "prompt": "A buyer purchases an owner's title insurance policy at closing. What risk does that policy primarily cover?",
     "options": [
       {
         "id": "a",
@@ -1343,7 +2333,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Owner's/lender's title policies insure against covered title risks, not casualty. Coverage depends on the terms of the owner's or lender's policy.",
+    "explanation": "Owner's (and lender's) title policies insure against covered title defects and ownership claims that exist as of the policy date—not fire/casualty loss and not borrower default. Later-arising title problems are generally excluded.",
     "distractorExplanations": {
       "b": "Default risk is covered by mortgage insurance (PMI or FHA MIP), not by title insurance.",
       "c": "Fire and similar casualty losses are covered by hazard (homeowner's) insurance, not title insurance.",
@@ -1389,7 +2379,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-013",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "The secondary mortgage market's main function is to:",
+    "prompt": "After a local bank originates a home loan, Fannie Mae buys the loan. What is the secondary mortgage market's main function in that sequence?",
     "options": [
       {
         "id": "a",
@@ -1409,11 +2399,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Entities like Fannie/Freddie (and others) provide liquidity by purchasing loans.",
+    "explanation": "The secondary market buys and sells existing mortgages (and mortgage-backed securities), recycling capital so originators can make new loans. Entities such as Fannie Mae and Freddie Mac are major liquidity channels; they are not the primary originators or the Fed.",
     "distractorExplanations": {
       "a": "Origination happens in the primary mortgage market; the secondary market buys loans after they are made.",
-      "b": "Default insurance on high-LTV conventional loans is private mortgage insurance, not the secondary market.",
-      "d": "Monetary policy tools belong to the Federal Reserve, not to secondary market investors such as Fannie Mae."
+      "b": "Default insurance on high-LTV conventional loans is private mortgage insurance, not the secondary market itself.",
+      "d": "Monetary policy tools belong to the Federal Reserve, not to secondary-market investors such as Fannie Mae."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1422,7 +2412,7 @@
     "id": "al-real-estate-readiness-check-finance-closing-014",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "Usury laws generally regulate",
+    "prompt": "A state statute caps the interest a certain consumer mortgage may charge. Which body of law typically sets that kind of ceiling?",
     "options": [
       {
         "id": "a",
@@ -1442,11 +2432,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Usury caps address excessive interest.",
+    "explanation": "Usury laws set maximum interest rates that may be charged on certain loans. They regulate the rate itself, unlike TILA (cost disclosure), ECOA (credit discrimination), or RESPA (settlement kickbacks and related disclosures).",
     "distractorExplanations": {
-      "a": "Credit cost disclosure is the Truth in Lending Act; usury laws cap the rate itself.",
-      "b": "Credit discrimination is governed by the Equal Credit Opportunity Act, not usury laws.",
-      "c": "Referral fees and kickbacks for settlement services are restricted by RESPA, not usury laws."
+      "a": "Credit cost disclosure of APR and finance charges is the Truth in Lending Act; usury laws cap the interest rate that may be charged.",
+      "b": "Credit discrimination based on protected classes is governed by the Equal Credit Opportunity Act, not by usury ceilings.",
+      "c": "Referral fees and kickbacks for settlement services are restricted by RESPA; usury addresses excessive interest rates on loans."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1455,11 +2445,11 @@
     "id": "al-real-estate-readiness-check-finance-closing-015",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "finance-closing",
-    "prompt": "A bridge loan is typically used to:",
+    "prompt": "A homeowner is buying a new house before the current one closes. Which financing product is typically used for that short transition?",
     "options": [
       {
         "id": "a",
-        "text": "Finance a short-term gap, often between purchase of a new home and sale of an existing one"
+        "text": "Cover the gap between buying the new home and selling the old one"
       },
       {
         "id": "b",
@@ -1475,14 +2465,509 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bridge (swing) financing covers short gaps in housing transitions.",
+    "explanation": "A bridge (swing) loan is short-term financing that covers the gap when a buyer purchases a new home before equity from the sale of the current home is available. It is not construction financing, a piggyback PMI workaround, or an assumption.",
     "distractorExplanations": {
-      "b": "That describes a construction (construction-to-permanent) loan, which funds building rather than a sale gap.",
+      "b": "That describes a construction or construction-to-permanent loan, which funds building rather than a sale-to-sale timing gap.",
       "c": "That describes a piggyback loan structure used to avoid PMI, not short-term gap financing between homes.",
       "d": "That describes a loan assumption, where the buyer takes over the seller's mortgage, not a bridge loan."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-016",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "At a Huntsville closing, the buyer signs a promissory note and a mortgage. What is the primary difference between those two instruments?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The note is the promise to repay; the mortgage pledges the property as security"
+      },
+      {
+        "id": "b",
+        "text": "The mortgage creates the debt; the note only records the property's legal description"
+      },
+      {
+        "id": "c",
+        "text": "The note transfers title to the lender; the mortgage is only a payment schedule"
+      },
+      {
+        "id": "d",
+        "text": "The mortgage is optional when a note exists; either document alone fully secures the loan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The promissory note is the borrower's personal obligation to repay. The mortgage (or deed of trust) is the security instrument that hypothecates the real property so the lender can foreclose if the note is not paid.",
+    "distractorExplanations": {
+      "b": "Reversed: the note creates the debt; the mortgage does not invent the obligation—it secures the note already owed.",
+      "c": "In a typical mortgage the borrower retains ownership rights while pledging the property; the note is not a deed, and the mortgage is not merely a payment schedule.",
+      "d": "Both are typically required: without a note there is no personal debt, and without a mortgage the lender lacks a real-property lien."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-017",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A Birmingham home sells for $320,000 with a 5% brokerage commission. The listing and cooperating brokerages split that commission 60/40. How much does the cooperating brokerage receive?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$9,600 paid to the cooperating brokerage"
+      },
+      {
+        "id": "b",
+        "text": "$6,400 paid to the cooperating brokerage"
+      },
+      {
+        "id": "c",
+        "text": "$16,000 paid to the cooperating brokerage"
+      },
+      {
+        "id": "d",
+        "text": "$12,800 paid to the cooperating brokerage"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Total commission is $320,000 × 0.05 = $16,000. The cooperating side takes 40% of that fee: $16,000 × 0.40 = $6,400. The listing side would keep the remaining $9,600.",
+    "distractorExplanations": {
+      "a": "That is 60% of the commission—the listing brokerage's share, not the cooperating 40%.",
+      "c": "That is the full 5% commission before any split between listing and cooperating offices.",
+      "d": "That is 80% of the commission or 4% of price; the stated cooperating share is 40% of the 5% fee."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-018",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "Annual property taxes are $4,800. Closing is April 1 using a straight 12-month proration, and the seller has not paid this year's taxes. How much should the seller be charged for January through March?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$400 charged to the seller for three months"
+      },
+      {
+        "id": "b",
+        "text": "$2,400 charged to the seller for three months"
+      },
+      {
+        "id": "c",
+        "text": "$1,200 charged to the seller for three months"
+      },
+      {
+        "id": "d",
+        "text": "$1,600 charged to the seller for three months"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Monthly tax is $4,800 ÷ 12 = $400. The seller owned the property for three months (January–March), so the seller's share is $400 × 3 = $1,200, typically shown as a seller debit / buyer credit when taxes are unpaid.",
+    "distractorExplanations": {
+      "a": "That is only one month's tax ($4,800 ÷ 12); the seller owed three months, not one.",
+      "b": "That is half the annual tax (six months) or the mid-year figure, not three months of ownership.",
+      "d": "That would be four months at $400; the problem states January through March—three months only."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-019",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A county assesses a Montgomery residence at $200,000 and levies a tax rate of 18 mills. What is the annual ad valorem tax on that assessment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$1,800 annual tax on the assessment"
+      },
+      {
+        "id": "b",
+        "text": "$18,000 annual tax on the assessment"
+      },
+      {
+        "id": "c",
+        "text": "$360 annual tax on the assessment"
+      },
+      {
+        "id": "d",
+        "text": "$3,600 annual tax on the assessment"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "One mill equals $1 of tax per $1,000 of assessed value, or 0.001. Eighteen mills means 0.018 × $200,000 = $3,600. Equivalently, ($200,000 ÷ $1,000) × 18 = $3,600.",
+    "distractorExplanations": {
+      "a": "That multiplies assessed value by 0.009 (9 mills) or treats mills as 0.9%; 18 mills is 1.8%, yielding $3,600.",
+      "b": "That treats 18 mills as 9% or misplaces the decimal (0.09 × $200,000); mills are thousandths, not tenths.",
+      "c": "That is roughly 1.8 mills or $200,000 × 0.0018; the stated rate is 18 mills, ten times larger."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-020",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A Tuscaloosa buyer deposited $8,000 earnest money with the listing broker. At closing, how is that deposit typically handled on the settlement statement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credited to the buyer toward the amount due at closing"
+      },
+      {
+        "id": "b",
+        "text": "Debited to the buyer as an extra cash charge at closing"
+      },
+      {
+        "id": "c",
+        "text": "Credited to the seller as additional sale proceeds beyond the price"
+      },
+      {
+        "id": "d",
+        "text": "Returned only to the broker as a nonrefundable office fee"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Earnest money already held in trust is applied to the buyer's cash needed at closing, so it appears as a buyer credit. It reduces what the buyer must bring; it is not an extra charge and is not extra seller proceeds beyond the contract price.",
+    "distractorExplanations": {
+      "b": "A debit would increase cash due; earnest money already paid reduces the buyer's remaining balance, so it is a credit.",
+      "c": "The deposit is part of the purchase price already owed by the buyer, not an add-on credit that increases the seller's price.",
+      "d": "Earnest money belongs to the parties under the contract; it is not converted into the broker's fee at closing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-021",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "Compared with conventional financing, an FHA-insured purchase loan is best described as a loan that",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is made by a private lender and insured by FHA against lender loss"
+      },
+      {
+        "id": "b",
+        "text": "Is funded directly from the U.S. Treasury to the homebuyer at closing"
+      },
+      {
+        "id": "c",
+        "text": "Requires private mortgage insurance instead of any government premium"
+      },
+      {
+        "id": "d",
+        "text": "Eliminates underwriting standards because FHA guarantees every borrower"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "FHA does not lend the purchase money; approved lenders originate the loan and FHA insures them against covered loss. Borrowers typically pay mortgage insurance premiums (MIP), which is not the same product as conventional PMI.",
+    "distractorExplanations": {
+      "b": "FHA is an insurer/guarantor program, not a direct Treasury cash advance to the buyer at the closing table.",
+      "c": "FHA loans use FHA mortgage insurance premiums; PMI is the conventional high-LTV product, not the FHA premium.",
+      "d": "FHA loans still require qualifying underwriting; insurance protects the lender, it does not waive borrower standards."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-022",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "Under TRID rules for most covered closed-end mortgages, which pair of disclosures must the lender provide so the borrower can compare costs before and at consummation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Good Faith Estimate early and HUD-1 only on the day of recording"
+      },
+      {
+        "id": "b",
+        "text": "Truth-in-Lending booklet only, with no dollar estimates of closing costs"
+      },
+      {
+        "id": "c",
+        "text": "Loan Estimate after application and Closing Disclosure before consummation"
+      },
+      {
+        "id": "d",
+        "text": "Appraisal report alone, without any itemized settlement cost figures"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "TRID replaced the old GFE/HUD-1 pairing for most covered mortgages with the Loan Estimate (soon after application) and the Closing Disclosure (delivered before consummation so the borrower can review final costs).",
+    "distractorExplanations": {
+      "a": "GFE and HUD-1 were the pre-TRID RESPA forms; covered loans now use the Loan Estimate and Closing Disclosure.",
+      "b": "TILA cost disclosures are integrated into TRID forms; borrowers receive dollar estimates, not a booklet alone.",
+      "d": "An appraisal supports value; it does not replace the Closing Disclosure's itemized settlement figures."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-023",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "On a residential closing statement, a credit to the seller most nearly means that the amount",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increases what the seller must bring in cash to the closing table"
+      },
+      {
+        "id": "b",
+        "text": "Reduces the purchase price the buyer agreed to pay in the contract"
+      },
+      {
+        "id": "c",
+        "text": "Is an expense the settlement agent always pays from broker trust funds"
+      },
+      {
+        "id": "d",
+        "text": "Increases what the seller is due or reduces what the seller owes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A seller credit adds to the seller's proceeds or offsets a seller charge (for example, the contract price is a seller credit). A seller debit does the opposite—reducing net proceeds or increasing cash the seller must provide.",
+    "distractorExplanations": {
+      "a": "That describes a seller debit (or a buyer debit for the buyer); credits improve the seller's net position.",
+      "b": "A credit on the settlement statement does not rewrite the contract price; price is already the primary seller credit.",
+      "c": "Settlement credits and debits allocate money between buyer and seller; they are not automatic draws on the broker's trust account."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-024",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A Mobile buyer takes title \"subject to\" an existing mortgage rather than formally assuming it. What is the buyer's usual personal liability on that loan?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The buyer generally has no personal liability on the existing note"
+      },
+      {
+        "id": "b",
+        "text": "The buyer automatically becomes primarily liable and releases the seller"
+      },
+      {
+        "id": "c",
+        "text": "The buyer and seller become jointly liable for double the unpaid balance"
+      },
+      {
+        "id": "d",
+        "text": "The buyer must refinance within 30 days or the loan accelerates by law"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Taking title subject to an existing mortgage means the buyer takes the property with the lien in place but typically does not sign the note, so the buyer has no personal liability on that debt. The original borrower usually remains liable unless released by the lender.",
+    "distractorExplanations": {
+      "b": "That describes a formal assumption (and often a release of liability), not a pure subject-to transfer.",
+      "c": "Subject-to does not invent joint double liability; the note obligation stays with the parties who signed it.",
+      "d": "No statute automatically forces a 30-day refinance; due-on-sale clauses may let the lender call the loan, but that is contractual, not automatic personal liability."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-025",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A lender requires monthly deposits into an escrow (impound) account with the mortgage payment. Those deposits are primarily used to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Buy discount points that permanently reduce the note rate each year"
+      },
+      {
+        "id": "b",
+        "text": "Accumulate funds to pay property taxes and hazard insurance when due"
+      },
+      {
+        "id": "c",
+        "text": "Pay the buyer's real estate commission share at every anniversary"
+      },
+      {
+        "id": "d",
+        "text": "Fund cosmetic upgrades the borrower may request after closing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Escrow or impound accounts collect a portion of estimated annual property taxes and hazard (and sometimes flood or mortgage) insurance with each PITI payment so the lender can pay those bills when they come due and protect its collateral.",
+    "distractorExplanations": {
+      "a": "Discount points are usually a closing cost paid up front to buy down rate; they are not funded by monthly tax/insurance escrow.",
+      "c": "Brokerage commissions are negotiated in the listing/buyer agreements and paid at closing, not through the loan escrow.",
+      "d": "Escrow for taxes and insurance is for protecting the lien, not for financing optional remodeling after closing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-026",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A VA-guaranteed home loan is best characterized, at a conceptual level, as financing that",
+    "options": [
+      {
+        "id": "a",
+        "text": "Requires private mortgage insurance whenever LTV exceeds eighty percent"
+      },
+      {
+        "id": "b",
+        "text": "Is a cash grant from the Department of Veterans Affairs equal to the price"
+      },
+      {
+        "id": "c",
+        "text": "Is made by a lender and partially guaranteed by VA against lender loss"
+      },
+      {
+        "id": "d",
+        "text": "May be used only for investment duplexes owned by non-veterans"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "VA typically does not lend the purchase funds; a private lender originates the loan and VA partially guarantees it. Eligible veterans may face little or no down payment, and a funding fee often applies instead of conventional PMI—exact fee and entitlement rules come from current VA guidance.",
+    "distractorExplanations": {
+      "a": "PMI is a conventional-loan product; VA uses a guaranty (and often a funding fee), not private mortgage insurance.",
+      "b": "VA does not hand the veteran a cash grant covering the full purchase price; it guarantees a lender's loan.",
+      "d": "VA purchase programs target eligible veterans' primary residences under VA rules, not non-veteran investment duplexes only."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-027",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A borrower takes a $250,000 first mortgage and pays two discount points at closing. How much does the borrower pay for those points?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$2,500 paid for the two discount points"
+      },
+      {
+        "id": "b",
+        "text": "$500 paid for the two discount points"
+      },
+      {
+        "id": "c",
+        "text": "$7,500 paid for the two discount points"
+      },
+      {
+        "id": "d",
+        "text": "$5,000 paid for the two discount points"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Each discount point costs 1% of the loan amount. Two points on a $250,000 loan equal 2% × $250,000 = $5,000, paid at closing to buy down the rate or as lender pricing, not 1% of the purchase price.",
+    "distractorExplanations": {
+      "a": "That is only one point (1% of $250,000); the problem states two points, which is twice that amount.",
+      "b": "That confuses points with a flat fee or 0.2% of the loan; two points are two full percent of $250,000.",
+      "c": "That is three points (3% of $250,000); two points are $5,000, not $7,500."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-028",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "Using a 360-day banker's year, how much interest accrues in 15 days on a $180,000 loan balance at 6% annual interest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$900 interest for the fifteen-day period"
+      },
+      {
+        "id": "b",
+        "text": "$450 interest for the fifteen-day period"
+      },
+      {
+        "id": "c",
+        "text": "$180 interest for the fifteen-day period"
+      },
+      {
+        "id": "d",
+        "text": "$300 interest for the fifteen-day period"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Annual interest is $180,000 × 0.06 = $10,800. Daily interest on a 360-day year is $10,800 ÷ 360 = $30. Fifteen days × $30 = $450. That is the interest amount for the stated period under the banker's-year method.",
+    "distractorExplanations": {
+      "a": "That is thirty days of interest at $30/day, or mistakenly using a 180-day divisor; the problem asks for fifteen days.",
+      "c": "That is only six days at $30/day, or 1% of the balance for a short period—not fifteen days of accrued interest.",
+      "d": "That is ten days at $30/day; fifteen days at the same daily rate equals $450."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-029",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "Hypothecation in a typical home mortgage means the borrower",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gives the lender absolute fee title and leases the home back monthly"
+      },
+      {
+        "id": "b",
+        "text": "Pledges the property as security while retaining possession and use"
+      },
+      {
+        "id": "c",
+        "text": "Surrenders the keys and vacates so the lender can rent the property"
+      },
+      {
+        "id": "d",
+        "text": "Converts the loan to an unsecured personal line with no real-estate lien"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Hypothecation is pledging real property as collateral without giving up possession. The borrower keeps the home and equitable use while the lender holds a security interest enforceable through foreclosure if the borrower defaults.",
+    "distractorExplanations": {
+      "a": "Absolute deed and leaseback describes a different structure; a standard mortgage hypothecates without transferring fee ownership to the lender at origination in lien-theory states.",
+      "c": "Borrowers remain in possession; vacating for the lender to rent would be more like a deed in lieu or post-foreclosure situation.",
+      "d": "Hypothecation creates a secured loan; removing the lien would make the debt unsecured, the opposite concept."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-finance-closing-030",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "finance-closing",
+    "prompt": "A due-on-sale (alienation) clause in a mortgage most directly allows the lender to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Charge a fee only when the borrower pays the monthly installment late"
+      },
+      {
+        "id": "b",
+        "text": "Forbid the borrower from buying hazard insurance on the dwelling"
+      },
+      {
+        "id": "c",
+        "text": "Demand full payoff if the borrower transfers the property without consent"
+      },
+      {
+        "id": "d",
+        "text": "Raise the interest rate each year solely because property taxes increased"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A due-on-sale or alienation clause lets the lender call the entire balance due if the borrower sells or otherwise transfers the secured property without the lender's consent. It is distinct from late charges, prepayment penalties, or tax-driven escrow changes.",
+    "distractorExplanations": {
+      "a": "That is a late-payment charge; due-on-sale is triggered by transfer of the property, not by a tardy installment.",
+      "b": "Lenders typically require hazard insurance; they do not use due-on-sale to ban the borrower from insuring the collateral.",
+      "d": "Escrowed taxes can change the PITI payment on fixed-rate loans; that is not a due-on-sale rate hike tied to transfer."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-al-license-law-001",
@@ -1492,30 +2977,30 @@
     "options": [
       {
         "id": "a",
-        "text": "Best practice for branding"
+        "text": "Best practice for building a personal brand separate from the firm"
       },
       {
         "id": "b",
-        "text": "Noncompliant with brokerage identification rules"
+        "text": "Noncompliant with brokerage identification rules for real estate ads"
       },
       {
         "id": "c",
-        "text": "Required for teams"
+        "text": "Required for teams that market under a team name only"
       },
       {
         "id": "d",
-        "text": "Only allowed on billboards"
+        "text": "Allowed only on billboards and highway outdoor advertising"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Ads usually must name the responsible broker/firm.",
+    "explanation": "Alabama advertising rules require associated licensees to identify the supervising broker or brokerage in real estate ads. Omitting the firm for personal branding violates those identification requirements even if the associate's name is prominent.",
     "distractorExplanations": {
-      "a": "Not best practice.",
-      "c": "Teams still need firm ID.",
-      "d": "Medium doesn't create an exception."
+      "a": "Personal branding does not override the duty to name the responsible broker or company in advertising.",
+      "c": "Team marketing still must identify the licensed brokerage; a team name alone is not a substitute.",
+      "d": "The advertising medium does not create an exception; billboards and other formats still need brokerage identification."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-al-license-law-002",
@@ -1533,7 +3018,7 @@
       },
       {
         "id": "c",
-        "text": "According to statutory rules (e.g., client benefit or housing-trust programs)"
+        "text": "Per the parties' agreement and trust rules, not as the broker's personal income"
       },
       {
         "id": "d",
@@ -1541,10 +3026,10 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Interest disposition is regulated; personal skimming is forbidden.",
+    "explanation": "When an Alabama broker uses an interest-bearing trust/escrow account, interest belongs to the parties entitled to the funds (or as they agree in writing) under trust-account rules. The broker may not treat trust interest as personal or firm operating income.",
     "distractorExplanations": {
-      "a": "Trust-account interest is not paid into the general fund at renewal; it follows the agreement or a designated housing-trust program.",
-      "b": "Interest earned on client money is not broker compensation; splitting it between brokers converts trust funds.",
+      "a": "Alabama does not route trust-account interest into the state general fund at renewal; disposition follows the parties entitled to the money and applicable trust rules.",
+      "b": "Interest earned on client money is not cobroker compensation; splitting it between brokers converts trust funds into a fee.",
       "d": "Moving trust interest into the operating account commingles client money with business funds, which trust rules prohibit."
     },
     "difficulty": "hard",
@@ -1554,7 +3039,7 @@
     "id": "al-real-estate-readiness-check-al-license-law-003",
     "examSlug": "al-real-estate-readiness-check",
     "topicId": "al-license-law",
-    "prompt": "A temporary/practice permit or provisional status in Alabama, where offered, generally means:",
+    "prompt": "Compared with an original Alabama salesperson license, a temporary salesperson license generally confers",
     "options": [
       {
         "id": "a",
@@ -1574,14 +3059,14 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Provisional statuses are narrower and conditioned.",
+    "explanation": "Alabama's temporary salesperson license authorizes practice only while conditions for the original license—such as required post-license education and affiliation under a qualifying broker—are completed. It is narrower than an original license and does not remove supervision.",
     "distractorExplanations": {
-      "a": "Provisional status narrows authority and keeps supervision in place; it does not grant unsupervised full practice for a period.",
-      "b": "Provisional limits are tied to supervision and conditions such as post-licensing, not a split between listing and showing tasks.",
-      "c": "A provisional status is issued by one state and authorizes nothing in other states; each state licenses separately."
+      "a": "Temporary status keeps the salesperson under a qualifying broker; it does not grant unsupervised full practice for a set period.",
+      "b": "Temporary-license limits turn on supervision and post-licensing conditions, not a split between listing and showing tasks.",
+      "c": "An Alabama temporary license authorizes practice only in Alabama; each state licenses separately."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-al-license-law-004",
@@ -1673,7 +3158,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Rebate legality varies; compliance and disclosure are essential.",
+    "explanation": "Any Alabama commission rebate or credit to a principal must comply with license and brokerage rules, run through the broker's compensation channels, and be fully disclosed on the settlement documents—not hidden from the lender or paid under the table.",
     "distractorExplanations": {
       "a": "Off-statement cash payments hide the rebate from the lender and closing record; lawful rebates must be disclosed.",
       "b": "Compensation runs through the broker; an agent cannot promise a rebate from the broker's commission without broker approval.",
@@ -1706,14 +3191,14 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Guaranteed market-beating claims are high-risk advertising.",
+    "explanation": "Specific, absolute performance claims such as always selling 20% above market are treated as factual advertising that must be true and substantiated. Without proof and careful qualification, the claim is deceptive under Alabama advertising standards.",
     "distractorExplanations": {
       "a": "A specific 20% figure is a measurable factual claim, not vague opinion, so it falls outside puffing and must be substantiated.",
       "b": "Showing the brokerage name meets the identification rule but does nothing to cure a misleading performance claim.",
       "c": "Advertising rules apply to social media the same as print; the channel does not make an unsubstantiated claim acceptable."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-al-license-law-008",
@@ -1838,9 +3323,9 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Labels don't legalize unlicensed brokerage. AREC is the Alabama Real Estate Commission.",
+    "explanation": "Alabama prohibits performing real estate brokerage for others for compensation without an active Alabama license. The Alabama Real Estate Commission (AREC) can investigate, issue cease-and-desist style relief, and impose civil penalties for unlicensed practice.",
     "distractorExplanations": {
-      "a": "An out-of-state license does not authorize brokerage in Alabama; the person needs an Alabama license or recognition.",
+      "a": "An out-of-state license does not authorize brokerage in Alabama; the person needs an Alabama license or other lawful recognition.",
       "b": "Applying is not licensure; brokerage for compensation before the license issues is still unlicensed practice.",
       "c": "Unlicensed brokerage is a statutory violation the Alabama Real Estate Commission can stop and penalize, not merely a civil dispute."
     },
@@ -1863,22 +3348,22 @@
       },
       {
         "id": "c",
-        "text": "Licensed only as a mortgage lender"
+        "text": "Licensed only as a mortgage lender with no real estate license"
       },
       {
         "id": "d",
-        "text": "Unlicensed but recommended by a friend"
+        "text": "Unlicensed but personally recommended by a satisfied former client"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Alabama rules typically require affiliation/supervision under a broker for associate-level licensees.",
+    "explanation": "An Alabama sales associate may practice real estate only with an active license and affiliation under a qualifying broker who provides the required supervision. Solo practice without broker affiliation is not available at the salesperson level.",
     "distractorExplanations": {
-      "b": "Independent brokerage usually requires a broker license.",
-      "c": "Lender licenses are separate.",
-      "d": "Unlicensed practice is prohibited."
+      "b": "Independent brokerage authority generally requires a broker license; sales associates must remain affiliated.",
+      "c": "A mortgage lender license does not authorize real estate brokerage; the credentials are separate.",
+      "d": "Recommendations never substitute for an active real estate license; unlicensed practice for others for pay is prohibited."
     },
     "difficulty": "easy",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   },
   {
     "id": "al-real-estate-readiness-check-al-license-law-013",
@@ -1937,7 +3422,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Timely deposit to a trust account is a core compliance duty.",
+    "explanation": "Earnest money and other trust funds received by an Alabama brokerage must go into a designated trust or escrow account under the broker's control within the timelines set by license law and the contract—not into operating or personal accounts.",
     "distractorExplanations": {
       "a": "A ledger does not cure commingling; trust money must go into a designated trust/escrow account, not the operating account.",
       "b": "Deposit timelines run from receipt or acceptance, not from contingency removal; holding funds in the file breaches them.",
@@ -1970,13 +3455,508 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Activities requiring a license—showing/negotiating—cannot be delegated to unlicensed persons.",
+    "explanation": "Unlicensed assistants may perform clerical support under brokerage policy, but they may not engage in activities that require a license—such as independently showing property or negotiating offers—as if they were licensed associates.",
     "distractorExplanations": {
-      "a": "Administrative scheduling is often allowed.",
-      "b": "Clerical placement may be allowed.",
+      "a": "Scheduling appointments under broker direction is typically clerical support, not the prohibited licensed activity.",
+      "b": "Placing already-approved yard signs per brokerage policy is generally clerical and does not require a license.",
       "c": "Preparing marketing drafts for broker review is clerical support unlicensed assistants may do, so it is not the prohibited activity."
     },
     "difficulty": "medium",
-    "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-016",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "Before an Alabama licensee begins substantive real estate services for a consumer, RECAD generally requires the licensee to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the required disclosure of available brokerage relationships."
+      },
+      {
+        "id": "b",
+        "text": "Obtain a signed buyer-agency agreement before answering any property questions"
+      },
+      {
+        "id": "c",
+        "text": "File a dual-agency consent form with the Commission within three business days"
+      },
+      {
+        "id": "d",
+        "text": "Deliver an estimated closing statement for every property the consumer tours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "RECAD requires timely consumer disclosure of available brokerage relationships so the consumer understands whether the licensee will act as a transaction broker, single agent, or in another permitted role before substantive services begin.",
+    "distractorExplanations": {
+      "b": "A written buyer-agency agreement creates agency when chosen, but RECAD disclosure itself does not require signing buyer agency before ordinary questions.",
+      "c": "Dual-agency consent is a private written agreement between the parties when that relationship is used; it is not a Commission filing triggered by first contact.",
+      "d": "Estimated closing statements are a separate brokerage duty in certain transactions; they are not the RECAD relationship-disclosure requirement at first substantive contact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-017",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "A newly licensed Alabama salesperson holds a temporary license after passing the exam. Until the original license issues, the salesperson generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "May open an independent brokerage and hire other associates immediately"
+      },
+      {
+        "id": "b",
+        "text": "Must complete required post-license education and remain under a qualifying broker"
+      },
+      {
+        "id": "c",
+        "text": "May practice without broker affiliation for six months while coursework finishes"
+      },
+      {
+        "id": "d",
+        "text": "Automatically converts to a broker license once the temporary period ends"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Alabama's temporary salesperson license is a limited status that keeps the new licensee under a qualifying broker while required post-license education and other conditions for the original license are completed.",
+    "distractorExplanations": {
+      "a": "Opening and supervising a brokerage requires broker-level authority; a temporary salesperson cannot start an independent firm.",
+      "c": "Sales associates practice only while affiliated with a qualifying broker; temporary status does not create a solo-practice window.",
+      "d": "Completing temporary-license conditions yields an original salesperson license, not an automatic upgrade to broker."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-018",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "At an Alabama real estate company, the qualifying broker's core responsibility is to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Act solely as an office manager with no liability for affiliated licensees' acts"
+      },
+      {
+        "id": "b",
+        "text": "Review listings only after closings so production is not slowed"
+      },
+      {
+        "id": "c",
+        "text": "Directly supervise the company's licensed activity and be responsible for compliance"
+      },
+      {
+        "id": "d",
+        "text": "Share supervision equally with every salesperson so no single broker is accountable"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The qualifying broker is the licensee accountable for the company's real estate activity—supervision of affiliated licensees, trust practices, advertising identity, and other compliance duties that attach to the firm.",
+    "distractorExplanations": {
+      "a": "Qualifying-broker status is not a liability shield; the broker remains responsible for supervising licensed activity.",
+      "b": "After-the-fact review of closed deals is too late to meet ongoing supervision duties over active listings and pending deals.",
+      "d": "Accountability is concentrated in the qualifying broker (and branch supervisors where required); it is not diluted among all salespersons."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-019",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "An Alabama brokerage wants to open a branch office in another city. Before associates work from that location as a branch, the firm generally must",
+    "options": [
+      {
+        "id": "a",
+        "text": "Simply post a yard sign with the main office phone number at the new site"
+      },
+      {
+        "id": "b",
+        "text": "Let any licensed salesperson serve as branch manager without broker status"
+      },
+      {
+        "id": "c",
+        "text": "Operate the branch under the associate's home address to avoid a second license"
+      },
+      {
+        "id": "d",
+        "text": "Obtain company or branch licensing and proper broker supervision."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Alabama treats branch locations as part of the company licensing structure: the branch must be properly licensed/registered and placed under qualifying or designated broker supervision before associates practice from that office.",
+    "distractorExplanations": {
+      "a": "A yard sign is advertising, not company or branch licensing; it does not authorize a second place of business.",
+      "b": "Branch supervision requires a broker-level designee where the rules call for one; an ordinary salesperson cannot fill that role by default.",
+      "c": "Using a salesperson's residence as a workaround does not replace the duty to license and supervise a true branch office."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-020",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "A Huntsville team runs Instagram ads that show only the team name and a salesperson's cell number. Under Alabama advertising rules, the ads should also",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify the licensed brokerage responsible for the advertising."
+      },
+      {
+        "id": "b",
+        "text": "Omit firm names so consumers contact the team directly for faster service"
+      },
+      {
+        "id": "c",
+        "text": "List every teammate's personal website instead of the brokerage identity"
+      },
+      {
+        "id": "d",
+        "text": "Use only stock photos so brokerage identification is unnecessary online"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Alabama advertising rules require that real estate ads identify the responsible broker or firm so the public knows who supervises the solicitation; team branding alone does not replace brokerage identification.",
+    "distractorExplanations": {
+      "b": "Direct-to-team contact is exactly the problem the brokerage-ID rule prevents; firm identity cannot be omitted for speed.",
+      "c": "Personal websites do not substitute for naming the licensed brokerage that is accountable for the advertising.",
+      "d": "The medium and image choice do not waive the duty to identify the supervising broker or company in the ad."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-021",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "An Alabama associate receives a buyer's earnest-money check on Friday afternoon. Proper handling of those trust funds generally requires the associate to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold the check in a desk drawer until the seller accepts, then cash it personally"
+      },
+      {
+        "id": "b",
+        "text": "Promptly turn the funds over to the broker for deposit into the proper trust account"
+      },
+      {
+        "id": "c",
+        "text": "Deposit the check into the associate's personal account and repay the firm later"
+      },
+      {
+        "id": "d",
+        "text": "Endorse the check to the listing salesperson as a cobrokerage fee advance"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Earnest money and other trust funds belong to the parties, not the associate. Alabama practice requires prompt delivery to the broker so the money can be deposited and accounted for in the brokerage trust account under the contract and license rules.",
+    "distractorExplanations": {
+      "a": "Holding and personally cashing earnest money mixes client funds with private control and skips required trust deposit procedures.",
+      "c": "Depositing client money into a personal account is classic conversion/commingling and is prohibited.",
+      "d": "Earnest money is not a cobroker fee; redirecting it to another salesperson misapplies trust funds."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-022",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "Alabama's real estate recovery fund is best described as a program that",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pays brokers automatically for any unpaid commission dispute with a seller"
+      },
+      {
+        "id": "b",
+        "text": "Replaces the need for errors-and-omissions insurance at every brokerage"
+      },
+      {
+        "id": "c",
+        "text": "May pay claims for certain licensee misconduct under fund rules."
+      },
+      {
+        "id": "d",
+        "text": "Funds marketing campaigns for brokers who advertise statewide listings"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Alabama's recovery fund is a consumer-protection pool that can reimburse eligible claimants for losses from covered licensee wrongdoing, typically after judgment and collection efforts against the licensee—not a marketing subsidy, E&O substitute, or automatic commission-collection tool for brokers.",
+    "distractorExplanations": {
+      "a": "The fund protects consumers harmed by covered licensee misconduct; it is not an automatic unpaid-commission collection program for brokers.",
+      "b": "Recovery-fund coverage does not eliminate a firm's need for E&O or other risk management; the concepts serve different purposes.",
+      "d": "Recovery-fund money is reserved for qualifying consumer claims, not brokerage advertising budgets."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-023",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "An Alabama salesperson wants to leave Broker A and affiliate with Broker B. Until the transfer is properly processed, the salesperson generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "May keep listing both firms' names on ads and take new clients for either broker"
+      },
+      {
+        "id": "b",
+        "text": "Automatically becomes inactive the moment a resignation email is sent"
+      },
+      {
+        "id": "c",
+        "text": "May close deals for Broker A while simultaneously writing offers under Broker B"
+      },
+      {
+        "id": "d",
+        "text": "May not practice for the new firm until the affiliation transfer is complete."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A salesperson's authority to practice runs through affiliation with a qualifying broker. Changing firms requires a proper license transfer/affiliation change; practicing for the new broker before that change is complete is unauthorized.",
+    "distractorExplanations": {
+      "a": "Dual-firm advertising and client intake during a transfer creates supervision and identification violations for both brokers.",
+      "b": "Inactive status is a formal license status change, not something created solely by an informal resignation email.",
+      "c": "A salesperson cannot be actively practicing under two brokers at once; affiliation is exclusive until a lawful transfer completes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-024",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "When an Alabama listing broker cobrokers a sale with a cooperating broker, compensation between the firms typically",
+    "options": [
+      {
+        "id": "a",
+        "text": "Is paid broker-to-broker under the listing cooperation terms"
+      },
+      {
+        "id": "b",
+        "text": "Must be paid in cash by the listing salesperson directly to the buyer's salesperson"
+      },
+      {
+        "id": "c",
+        "text": "Is illegal unless both brokers also hold mortgage-broker licenses"
+      },
+      {
+        "id": "d",
+        "text": "Requires the buyer to write separate checks to every salesperson at closing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cobrokering compensation flows through the brokers under the listing and any offer of cooperation/compensation. Affiliated salespersons receive their share from their own broker, not as side cash between agents.",
+    "distractorExplanations": {
+      "b": "Direct cash from one salesperson to another bypasses broker accounting and compensation rules.",
+      "c": "Ordinary cobrokerage of a real estate sale does not require the brokers to hold mortgage-broker licenses.",
+      "d": "Closing typically funds brokerage commissions through the settlement process to the brokers, not individual personal checks to each salesperson."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-025",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "In a transaction where Alabama rules require an estimated closing statement, the listing broker's duty is generally to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prepare one only if the buyer specifically demands a line-item spreadsheet"
+      },
+      {
+        "id": "b",
+        "text": "Give a good-faith estimate of seller closing costs and net when required."
+      },
+      {
+        "id": "c",
+        "text": "Substitute a blank form and tell the seller the title company will invent the figures"
+      },
+      {
+        "id": "d",
+        "text": "Wait until after recording to show the seller any estimate of costs"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Where Alabama license law requires an estimated closing statement, the broker must give the seller a timely, good-faith estimate of closing costs and likely net proceeds so the seller can make an informed decision—not postpone or omit the figures.",
+    "distractorExplanations": {
+      "a": "The duty is triggered by the transaction rules, not solely by a buyer's request for a spreadsheet.",
+      "c": "Handing over a blank form and deferring all numbers fails the good-faith estimate requirement.",
+      "d": "An estimate delivered after recording arrives too late to inform the seller's decision to accept or close."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-026",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "The Alabama Real Estate Commission investigates a complaint alleging trust-account shortages. In the disciplinary process, the Commission may ultimately",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only issue a private warning that never appears in any public record"
+      },
+      {
+        "id": "b",
+        "text": "Transfer the license file to a federal court and end state jurisdiction"
+      },
+      {
+        "id": "c",
+        "text": "Impose fines, education, suspension, or revocation after due process."
+      },
+      {
+        "id": "d",
+        "text": "Force the complainant to buy E&O insurance for the accused broker"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "AREC's disciplinary authority includes investigating complaints and, after notice and an opportunity to be heard, imposing administrative sanctions ranging from fines and required education to suspension or revocation of a license.",
+    "distractorExplanations": {
+      "a": "Serious trust shortages can lead to formal public discipline, not merely an invisible private warning.",
+      "b": "State licensing discipline remains with the Commission; referring a file does not erase AREC jurisdiction over the license.",
+      "d": "Discipline targets the licensee's conduct; the Commission does not require the complainant to insure the broker."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-027",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "An Alabama salesperson places her license on inactive status while caring for a family member. While inactive, she generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "May continue to show listings and write offers if her old broker verbally approves"
+      },
+      {
+        "id": "b",
+        "text": "May collect referral fees paid directly by out-of-state buyers without a broker"
+      },
+      {
+        "id": "c",
+        "text": "Keeps full advertising rights so her website can still solicit new seller clients"
+      },
+      {
+        "id": "d",
+        "text": "May not perform activities that require an active real estate license"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Inactive status means the license is not active for practice. The salesperson must not show property, negotiate, advertise as an active agent, or otherwise perform licensed brokerage until the license is properly reactivated under a qualifying broker.",
+    "distractorExplanations": {
+      "a": "Verbal broker approval cannot authorize practice on an inactive license; activity requires active affiliation.",
+      "b": "Referral/compensation for licensed activity still requires proper active licensing and broker channels where the activity is brokerage.",
+      "c": "Soliciting clients as a real estate agent is licensed activity; inactive status removes that advertising authority."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-028",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "A Birmingham homeowner pays an unlicensed neighbor a fee to find tenants, show the duplex, and negotiate leases. Under Alabama license law, that arrangement is",
+    "options": [
+      {
+        "id": "a",
+        "text": "Unlicensed brokerage for others for compensation, which is prohibited"
+      },
+      {
+        "id": "b",
+        "text": "Allowed because leasing residential property never requires a license"
+      },
+      {
+        "id": "c",
+        "text": "Legal if the neighbor discloses that no license is held before each showing"
+      },
+      {
+        "id": "d",
+        "text": "Permitted whenever the fee is labeled a \"finder's tip\" instead of a commission"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Alabama requires a license for brokerage activities performed for others for compensation, including finding tenants, showing rental property, and negotiating leases. Labeling the pay or adding a disclaimer does not legalize unlicensed practice.",
+    "distractorExplanations": {
+      "b": "Residential leasing brokerage for others for pay is licensed activity; it is not a blanket exception.",
+      "c": "Disclosure of being unlicensed does not authorize performing licensed acts for compensation.",
+      "d": "Renaming a commission a tip is a form-over-substance dodge; the compensated brokerage acts still require a license."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-029",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "An Alabama company license is held in the name of the brokerage entity. If the qualifying broker dies or is otherwise unable to serve, the firm generally must",
+    "options": [
+      {
+        "id": "a",
+        "text": "Continue indefinitely with no broker while salespersons finish pending deals"
+      },
+      {
+        "id": "b",
+        "text": "Name a replacement qualifying broker within the time allowed."
+      },
+      {
+        "id": "c",
+        "text": "Automatically convert every salesperson into a temporary qualifying broker"
+      },
+      {
+        "id": "d",
+        "text": "Transfer all listings to inactive status until the next license renewal cycle"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A company cannot lawfully operate without a qualifying broker. When that broker dies or becomes unavailable, Alabama rules require timely designation of a replacement so supervision and the company license remain valid.",
+    "distractorExplanations": {
+      "a": "Indefinite operation with no qualifying broker leaves the company without required supervision and is not permitted.",
+      "c": "Salespersons do not automatically become qualifying brokers; broker qualifications and designation procedures still apply.",
+      "d": "Listings need proper broker supervision continuity; waiting until renewal without naming a replacement does not solve the vacancy."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
+  },
+  {
+    "id": "al-real-estate-readiness-check-al-license-law-030",
+    "examSlug": "al-real-estate-readiness-check",
+    "topicId": "al-license-law",
+    "prompt": "Under RECAD, when an Alabama licensee and a consumer agree to a single-agent relationship, that agency status typically becomes effective when",
+    "options": [
+      {
+        "id": "a",
+        "text": "The licensee first answers a general question about neighborhood schools"
+      },
+      {
+        "id": "b",
+        "text": "The consumer tours a second property with the same licensee"
+      },
+      {
+        "id": "c",
+        "text": "They enter a written agency agreement establishing the single-agent role"
+      },
+      {
+        "id": "d",
+        "text": "The purchase contract is recorded after closing at the courthouse"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "RECAD defaults to transaction brokerage unless the parties create agency in writing. A single-agent relationship for a buyer or seller is established by a written agreement, not by casual questions, extra showings, or post-closing recording.",
+    "distractorExplanations": {
+      "a": "Answering general information questions does not create single agency under RECAD's written-agreement rule.",
+      "b": "The number of showings does not convert a transaction-broker relationship into single agency.",
+      "d": "Recording after closing is far too late; agency status must be established before the licensee represents the client in the deal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go Alabama salesperson bank. Not AREC/Pearson VUE material."
   }
 ]

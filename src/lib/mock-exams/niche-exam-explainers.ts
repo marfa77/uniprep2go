@@ -372,7 +372,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "nha-cpct-readiness-check": explainer({
     practiceTestName: "NHA CPCT Practice Test",
     whatIsExam:
-      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside technicians who assist with ADLs, vitals, safety, infection control, phlebotomy, and EKG under nursing direction. Official 2025 test plan: 100 scored + 20 pretest items in 2 hours; NHA handbook scaled pass is 390 on a 200–500 scale. This UniPrep2Go page is a 120-question / 120-minute text diagnostic (free 25-question version) — all items scored here, not a skills lab, and not NHA material. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT. Pair it with the $11 / 120-card Anki .apkg.",
+      "The NHA Certified Patient Care Technician/Assistant (CPCT/A) exam certifies multi-skilled bedside technicians who assist with ADLs, vitals, safety, infection control, phlebotomy, and EKG under nursing direction. Official 2025 test plan: 100 scored + 20 pretest items in 2 hours; NHA handbook scaled pass is 390 on a 200–500 scale. This UniPrep2Go page is a 120-question / 120-minute text diagnostic (free 25-question version) — all items scored here, not a skills lab, and not NHA material. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT. Pair it with the $9.99 / 120-card Anki .apkg.",
     administeredBy: "National Healthcareer Association (NHA)",
     officialFormat:
       "Official CPCT/A (2025 test plan): 100 scored + 20 pretest / 2 hours / five domains (Patient Care 43, Compliance/Safety/Professional 19, Infection Control 16, Phlebotomy 12, EKG 10). NHA handbook scaled pass 390 (200–500). This UniPrep2Go check: 120 timed questions, 120 minutes, four topic buckets, text only. NHA lists a separate plan for sittings after January 2027 — verify at nhanow.com.",
@@ -982,7 +982,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Sonography students and working sonographers sitting SPI as the physics gate before or alongside an ARDMS specialty exam — not ABD/OB image interpretation and not ARRT sonography.",
     howToPrepare:
-      "Work official SPI content outlines (physics, transducers, Doppler, artifacts/safety), then take this free timed UniPrep2Go check once. Use the topic report to drill weak formulas (c = fλ, Z = ρc, SPL, axial resolution ≈ SPL/2, Doppler equation) in the live $11 / 120-card Anki. Confirm Q-count and scaled pass at ardms.org before you book.",
+      "Work official SPI content outlines (physics, transducers, Doppler, artifacts/safety), then take this free timed UniPrep2Go check once. Use the topic report to drill weak formulas (c = fλ, Z = ρc, SPL, axial resolution ≈ SPL/2, Doppler equation) in the live $9.99 / 120-card Anki. Confirm Q-count and scaled pass at ardms.org before you book.",
     examFaqs: [
       {
         question: "What is the ARDMS SPI exam?",
@@ -1002,7 +1002,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is UniPrep’s SPI check the official ARDMS exam?",
         answer:
-          "No. It is independent practice. The matching Anki deck is a live $11 / 120-card .apkg on Gumroad. Not ARDMS material.",
+          "No. It is independent practice. The matching Anki deck is a live $9.99 / 120-card .apkg on Gumroad. Not ARDMS material.",
       },
     ],
     keywords: ["ardms spi practice test", "ultrasound physics practice test", "spi exam practice", "free spi practice test"],
@@ -1374,7 +1374,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The LEED Green Associate (GA) exam from GBCI is the foundational LEED credential demonstrating green-building literacy across integrative process, location and transportation, sustainable sites, water efficiency, energy and atmosphere, materials and resources, indoor environmental quality, and project synergies. It is often the first step before specialty LEED AP exams such as BD+C. Confirm current candidate handbook details with GBCI/USGBC before registering.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). The exam is based on LEED v5 since 2026. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank / 70% diagnostic — then drill weak domains in the linked $11 / 120-card Anki deck. Confirm current handbook at usgbc.org.",
+      "Official GBCI LEED Green Associate: commonly 100 multiple-choice / 2 hours / scaled pass 170 (125–200). The exam is based on LEED v5 since 2026. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank / 70% diagnostic — then drill weak domains in the linked $9.99 / 120-card Anki deck. Confirm current handbook at usgbc.org.",
     whoFor:
       "Architects, engineers, sustainability staff, students, and project team members who need a baseline LEED credential before project roles or LEED AP specialty exams.",
     howToPrepare:
@@ -1451,7 +1451,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "LEED AP Building Design and Construction (BD+C) is the specialty LEED credential for professionals applying LEED to design and construction projects. It goes beyond Green Associate literacy into credit application, documentation, and rating-system judgment for BD+C project types. Candidates generally must hold LEED GA first. Confirm prerequisites and handbook details with GBCI.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. LEED v4 testing ended June 28, 2026; the v5 beta continues until the final v5 exam (expected February 2027). UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $11 / 120-card Anki deck.",
+      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. LEED v4 testing ended June 28, 2026; the v5 beta continues until the final v5 exam (expected February 2027). UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $9.99 / 120-card Anki deck.",
     whoFor:
       "LEED GA holders on design and construction teams — architects, engineers, consultants, and sustainability managers preparing for AP-level BD+C project responsibilities.",
     howToPrepare:
@@ -1689,7 +1689,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "Surveyors and quantity-surveying candidates on RICS APC pathways who need timed practice on ethics, mandatory competencies, and technical application before final assessment.",
     howToPrepare:
-      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked $11 / 250 Anki deck while you refine written APC evidence. QS specialists should also use the separate MRICS QS mock/deck for NRM and contracts.",
+      "Map your pathway competencies, draft Level 2/3 examples, take this free UniPrep2Go timed MRICS readiness check for judgment gaps, then repair weak competency themes with the linked $9.99 / 250 Anki deck while you refine written APC evidence. QS specialists should also use the separate MRICS QS mock/deck for NRM and contracts.",
     topicBlurbs: [
       {
         id: "mandatory-competencies",

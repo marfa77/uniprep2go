@@ -28,7 +28,7 @@ const MOCK_COMPANION_DECKS: Partial<Record<string, MockCompanionDeckLink[]>> = {
       title: "Belgium Flanders MO Anki — 120 civics cards",
       body:
         "Same validated MO theme bank as this mock (institutions, history/EU, rights, daily life) in an ownable .apkg for daily drill after your topic report.",
-      ctaLabel: "Open MO Anki deck — $11",
+      ctaLabel: "Open MO Anki deck — $9.99",
     },
   ],
 };

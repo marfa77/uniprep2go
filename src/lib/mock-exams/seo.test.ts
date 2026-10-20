@@ -23,7 +23,7 @@ describe("mock exam SEO", () => {
     expect(buildMockSeoTitle(rd!)).toContain("RD Exam Practice Test");
     expect(buildMockSeoDescription(rd!)).toContain("120 timed questions");
     expect(buildMockSeoDescription(rd!)).not.toContain("60 timed questions");
-    expect(buildMockSeoDescription(rd!)).toContain("$11");
+    expect(buildMockSeoDescription(rd!)).toContain("$9.99");
   });
 
   it("exposes search-intent FAQs on the HTML page and in JSON-LD", () => {

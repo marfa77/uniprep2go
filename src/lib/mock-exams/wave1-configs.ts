@@ -343,7 +343,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       "60-question ARDMS SPI readiness check (free 25-question version) focused on ultrasound physics and instrumentation concepts, drawn from a 120 unique bank.",
     examBody: "ARDMS",
     questionSourceNote:
-      "Original UniPrep2Go local bank for SPI physics topics. Expanded to 120 unique 2026-10-07 for Mock Pass retakes; Anki live $11/120.",
+      "Original UniPrep2Go local bank for SPI physics topics. Expanded to 120 unique 2026-10-07 for Mock Pass retakes; Anki live $9.99/120.",
     lastUpdated: "2026-10-18",
   }),
   readinessConfig({

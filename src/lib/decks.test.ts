@@ -614,7 +614,7 @@ describe("deck catalog", () => {
       "series-79-anki-deck": "Series 79 Anki Deck — 120 Flashcards",
       "series-99-anki-deck": "Series 99 Anki Deck — 120 Flashcards",
       "ak-real-estate-anki-deck": "Alaska Real Estate Anki Deck — 60 Flashcards",
-      "al-real-estate-anki-deck": "Alabama Real Estate Anki Deck — 60 Flashcards",
+      "al-real-estate-anki-deck": "Alabama Real Estate Anki Deck — 120 Flashcards",
       "ar-real-estate-anki-deck": "Arkansas Real Estate Anki Deck — 60 Flashcards",
       "az-real-estate-anki-deck": "Arizona Real Estate Anki Deck — 60 Flashcards",
       "co-real-estate-anki-deck": "Colorado Real Estate Anki Deck — 60 Flashcards",
