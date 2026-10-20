@@ -662,11 +662,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
-    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $29 | UniPrep2Go",
+    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $9.99 | UniPrep2Go",
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $29 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
+      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $9.99 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -716,7 +716,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 221 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best CFA Level 1 formula sheet PDF for 2026: 221 typeset formulas with exam traps, all 22 Standards, 80-question recall drill, 48 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($29) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 221 typeset formulas with exam traps, all 22 Standards, 80-question recall drill, 48 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($9.99) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
     keywords: [
       "best cfa level 1 formula sheet",
       "cfa level 1 formula sheet pdf",
@@ -732,7 +732,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $29. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition plus one diagnostic. Not GARP material.",
+      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $9.99. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition plus one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",

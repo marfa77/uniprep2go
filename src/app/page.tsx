@@ -295,9 +295,9 @@ export default async function HomePage() {
                 <Link
                   href="/decks/frm-part-1-anki-deck"
                   className={btnSecondary}
-                  aria-label="Open the FRM Part 1 Anki deck, $29"
+                  aria-label="Open the FRM Part 1 Anki deck, $9.99"
                 >
-                  FRM Anki · $29
+                  FRM Anki · $9.99
                 </Link>
               </div>
               <p className="mt-5 text-sm text-[#5f5749]">

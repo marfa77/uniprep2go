@@ -29,7 +29,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
       },
       {
         href: "/decks/frm-part-1-anki-deck",
-        label: "FRM Part 1 Anki deck — 444 cards, $29",
+        label: "FRM Part 1 Anki deck — 444 cards, $9.99",
       },
     ],
   },
@@ -150,7 +150,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($29, 444 cards).",
+          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($9.99, 444 cards).",
         },
         {
           type: "p",

@@ -162,7 +162,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $29 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
+    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 125 scored + 5 pretest / 3h45 / passing score 72 (equated) — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $9.99 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the 90-question mock (free 25-question version) first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
@@ -303,7 +303,7 @@ export const positioningOverrides: Partial<
       "Current-cycle Part 1 only — drill weak pillars after the mock, not random volume",
     ],
     summaryProse:
-      "Q-bank subscriptions win on question volume. UniPrep wins when you want an ownable Anki file plus one free timed diagnostic — $29 once, then daily spaced repetition on VaR/ES/Greeks gaps the mock surfaces.",
+      "Q-bank subscriptions win on question volume. UniPrep wins when you want an ownable Anki file plus one free timed diagnostic — $9.99 once, then daily spaced repetition on VaR/ES/Greeks gaps the mock surfaces.",
   },
   "sie-exam-anki-deck": {
     ourEdge: [
