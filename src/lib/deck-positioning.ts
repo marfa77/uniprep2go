@@ -1,4 +1,5 @@
 import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
+import { withCatalogProductPrices } from "./catalog-price";
 import type { Deck } from "./decks";
 import { positioningOverrides } from "./deck-money-page-content";
 import { getDeckLinkedMock } from "./deck-seo";
@@ -83,5 +84,11 @@ export function buildDeckPositioning(
 }
 
 export function getDeckPositioning(deck: Deck): DeckPositioning {
-  return buildDeckPositioning(deck, positioningOverrides[deck.slug]);
+  const positioning = buildDeckPositioning(deck, positioningOverrides[deck.slug]);
+  const fill = (text: string) => withCatalogProductPrices(text, deck.slug);
+  return {
+    ...positioning,
+    ourEdge: positioning.ourEdge.map(fill),
+    summaryProse: fill(positioning.summaryProse),
+  };
 }
