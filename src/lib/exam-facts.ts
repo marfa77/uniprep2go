@@ -2,6 +2,7 @@
  * Citable exam-fact layer for machine-readable outputs (.md, /api/facts, HTML).
  * Facts must be verifiable; omit fields rather than guess. Language decks have no profile.
  */
+import { withCatalogProductPrices } from "./catalog-price";
 
 export type ExamFactsFields = {
   exam_name: string;
@@ -4761,10 +4762,38 @@ const deckExamKeyMap: Record<string, string> = {
   "naturalizzazione-svizzera-anki-deck": "swiss-citizenship",
 };
 
+function fillExamFactsPrices(profile: ExamFactsProfile, slug: string): ExamFactsProfile {
+  const fill = (text: string) => withCatalogProductPrices(text, slug);
+  return {
+    ...profile,
+    pageHeading: fill(profile.pageHeading),
+    intro: fill(profile.intro),
+    exam_facts: Object.fromEntries(
+      Object.entries(profile.exam_facts).map(([key, value]) => [
+        key,
+        typeof value === "string" ? fill(value) : value,
+      ]),
+    ) as ExamFactsProfile["exam_facts"],
+    domain_weights: profile.domain_weights.map((row) => ({
+      domain: fill(row.domain),
+      weight: fill(row.weight),
+    })),
+    whats_changed: profile.whats_changed?.map(fill),
+    high_yield_facts: profile.high_yield_facts.map(fill),
+    candidate_qa: profile.candidate_qa.map((qa) => ({
+      q: fill(qa.q),
+      a: fill(qa.a),
+    })),
+    trademark_note: profile.trademark_note ? fill(profile.trademark_note) : profile.trademark_note,
+  };
+}
+
 export function getExamFactsProfileForDeck(slug: string): ExamFactsProfile | null {
   const examKey = deckExamKeyMap[slug];
   if (!examKey) return null;
-  return examProfiles[examKey] ?? null;
+  const profile = examProfiles[examKey];
+  if (!profile) return null;
+  return fillExamFactsPrices(profile, slug);
 }
 
 export function hasCitableExamLayer(slug: string): boolean {
