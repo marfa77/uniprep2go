@@ -20,9 +20,9 @@ export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
   deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Leben in Deutschland Anki deck ($9)",
+    deckLabel: "Get the Leben in Deutschland Anki deck ($9.99)",
     summary:
-      "Drill BAMF themes with the free Leben in Deutschland readiness check (Prep2Go-sourced). Then lock the catalog with the $9 Leben in Deutschland Anki deck before your VHS sitting — and browse Prep2Go for related immigration decks.",
+      "Drill BAMF themes with the free Leben in Deutschland readiness check (Prep2Go-sourced). Then lock the catalog with the $9.99 Leben in Deutschland Anki deck before your VHS sitting — and browse Prep2Go for related immigration decks.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

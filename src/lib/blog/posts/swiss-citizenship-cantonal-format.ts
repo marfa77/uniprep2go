@@ -18,7 +18,7 @@ export const swissCitizenshipCantonalFormatPost: BlogPostDraft = {
     mockLabel: "Take the free Swiss citizenship readiness check",
     deckLabel: "Drill weak topics with the Anki deck",
     summary:
-      "Take the free Einbürgerung Schweiz readiness check — federal civics, cantonal structure, and daily-life scenarios — then drill weak topics with the $9 Einbürgerung Schweiz Anki deck before your cantonal exam date.",
+      "Take the free Einbürgerung Schweiz readiness check — federal civics, cantonal structure, and daily-life scenarios — then drill weak topics with the $9.99 Einbürgerung Schweiz Anki deck before your cantonal exam date.",
   },
   sections: [
     {

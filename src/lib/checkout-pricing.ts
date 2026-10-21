@@ -13,10 +13,23 @@ import {
 import gumroadCatalog from "@/data/gumroad/building-anki-decks.json";
 import catalogListPrices from "@/data/catalog-list-prices.json";
 import { getGumroadProductRecord, isBuildingAnkiDeckSlug } from "./anki-deck-launch";
+import {
+  fillProductPriceMentions,
+  formatCatalogListPrice,
+  formatCheckoutPrice,
+} from "./catalog-price";
 import { PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
 import { getRedisClient } from "./redis";
 
-export const PRICE_PLACEHOLDER = "{PRICE}";
+export {
+  PRICE_PLACEHOLDER,
+  fillProductPriceMentions,
+  formatCatalogListPrice,
+  formatCheckoutPrice,
+  getCatalogGumroadDefaultUsd,
+  getCatalogListPriceUsd,
+  withCatalogProductPrices,
+} from "./catalog-price";
 
 export type SyncedPriceRecord = {
   amount: number;
@@ -187,8 +200,18 @@ function preferCatalogOverrideOverSynced(
   return synced;
 }
 
-export function formatCheckoutPrice(amount: number) {
-  return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
+export function resolveDeckPriceLabel(
+  deck: Pick<CatalogAvailableDeck, "slug" | "format"> &
+    Partial<Pick<PricedDeck, "price" | "pricePending" | "checkoutProvider">>,
+): string {
+  if (deck.checkoutProvider === "App Store") {
+    return `From $${PREP2GO_APP_STORE_MONTHLY_PRICE}/mo`;
+  }
+  if (deck.price && !deck.pricePending && deck.price.amount > 0) {
+    return formatCheckoutPrice(deck.price.amount);
+  }
+  const formatKey = deck.format === "PDF" ? "PDF" : "apkg";
+  return formatCatalogListPrice(deck.slug, formatKey);
 }
 
 export function formatDeckPriceLabel(
@@ -363,23 +386,43 @@ export function parseGumroadPriceCentsFromHtml(html: string) {
   return null;
 }
 
+function fillDeckCopyPrices<T extends CatalogAvailableDeck>(
+  deck: T,
+  priceLabel: string,
+  directAnswerLabel = priceLabel,
+): T {
+  const faqs = deck.faqs?.map((faq) => ({
+    ...faq,
+    question: fillProductPriceMentions(faq.question, priceLabel),
+    answer: fillProductPriceMentions(faq.answer, priceLabel),
+  }));
+
+  return {
+    ...deck,
+    subtitle: fillProductPriceMentions(deck.subtitle, priceLabel),
+    directAnswer: fillProductPriceMentions(deck.directAnswer, directAnswerLabel),
+    audience: fillProductPriceMentions(deck.audience, priceLabel),
+    ...(faqs ? { faqs } : {}),
+  };
+}
+
 export function applyPriceRecordToDeck(
   deck: CatalogAvailableDeck,
   record: SyncedPriceRecord,
 ): PricedDeck {
   const price: DeckPrice = { amount: record.amount, currency: record.currency };
   const formatted = formatCheckoutPrice(record.amount);
-  const directAnswer = deck.directAnswer.replaceAll(PRICE_PLACEHOLDER, `${formatted} USD`);
+  const filled = fillDeckCopyPrices(deck, formatted, `${formatted} USD`);
 
-  return { ...deck, price, priceSource: record.source, directAnswer };
+  return { ...filled, price, priceSource: record.source };
 }
 
 export function applyPendingPriceToDeck(deck: CatalogAvailableDeck): PricedDeck {
+  const filled = fillDeckCopyPrices(deck, PENDING_PRICE_LABEL, "the checkout price");
   return {
-    ...deck,
+    ...filled,
     price: { amount: 0, currency: "USD" },
     pricePending: true,
-    directAnswer: deck.directAnswer.replaceAll(PRICE_PLACEHOLDER, "the checkout price"),
   };
 }
 

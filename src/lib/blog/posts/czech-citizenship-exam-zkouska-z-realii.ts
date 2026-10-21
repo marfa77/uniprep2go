@@ -22,7 +22,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
     mockLabel: "Take the free Czech Citizenship readiness check",
     deckLabel: "Get the Czech CCE deck on Prep2Go",
     summary:
-      "Drill civic themes with the 60-question Czech Citizenship readiness check (free 25-question version). For B1/A2 language evidence, use the Czech CCE deck on Prep2Go. Drill reálie with the $9 Czech Citizenship Anki deck.",
+      "Drill civic themes with the 60-question Czech Citizenship readiness check (free 25-question version). For B1/A2 language evidence, use the Czech CCE deck on Prep2Go. Drill reálie with the $9.99 Czech Citizenship Anki deck.",
     extraLinks: [
       {
         href: "/decks/czech-citizenship-anki-deck",

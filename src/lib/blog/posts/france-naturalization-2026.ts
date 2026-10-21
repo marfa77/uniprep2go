@@ -22,11 +22,11 @@ export const franceNaturalization2026Post: BlogPostDraft = {
     mockLabel: "Take the free Naturalisation française readiness check",
     deckLabel: "Get the French DELF deck on Prep2Go",
     summary:
-      "Drill republican civics with the free Naturalisation française readiness check, then the $9 Naturalisation française Anki deck. Bridge B1→B2 with the French language deck on Prep2Go.",
+      "Drill republican civics with the free Naturalisation française readiness check, then the $9.99 Naturalisation française Anki deck. Bridge B1→B2 with the French language deck on Prep2Go.",
     extraLinks: [
       {
         href: "/decks/naturalisation-francaise-anki-deck",
-        label: "Naturalisation française Anki deck ($9)",
+        label: "Naturalisation française Anki deck ($9.99)",
       },
       {
         href: "https://www.prep2go.study",

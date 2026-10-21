@@ -20,9 +20,9 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
   deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Leben in Deutschland Anki deck ($9)",
+    deckLabel: "Get the Leben in Deutschland Anki deck ($9.99)",
     summary:
-      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the $9 Leben in Deutschland Anki deck before your VHS test date.",
+      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the $9.99 Leben in Deutschland Anki deck before your VHS test date.",
   },
   sections: [
     {

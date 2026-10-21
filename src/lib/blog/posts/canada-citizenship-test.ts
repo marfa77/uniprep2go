@@ -20,9 +20,9 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   deckSlug: "canadian-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free Canadian Citizenship readiness check",
-    deckLabel: "Get the Canadian Citizenship Anki deck ($9)",
+    deckLabel: "Get the Canadian Citizenship Anki deck ($9.99)",
     summary:
-      "Drill Discover Canada themes with the free Canadian Citizenship readiness check (Prep2Go-sourced). Then lock provinces, history, and rights with the $9 Canadian Citizenship Anki deck before you file with IRCC — and browse Prep2Go for related immigration decks.",
+      "Drill Discover Canada themes with the free Canadian Citizenship readiness check (Prep2Go-sourced). Then lock provinces, history, and rights with the $9.99 Canadian Citizenship Anki deck before you file with IRCC — and browse Prep2Go for related immigration decks.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

@@ -1,4 +1,5 @@
 import { mockQuestionPhrase } from "@/lib/mock-exams/free-diagnostic";
+import { withCatalogProductPrices } from "./catalog-price";
 import {
   formatDeckContentLabel,
   type CatalogAvailableDeck,
@@ -1234,7 +1235,17 @@ function mergeProfile(
 }
 
 export function getDeckSeoProfile(deck: SeoDeck, mock = getLinkedMock(deck.slug)) {
-  return mergeProfile(deck, mock);
+  const profile = mergeProfile(deck, mock);
+  const fill = (text: string) => withCatalogProductPrices(text, deck.slug);
+  return {
+    ...profile,
+    title: fill(profile.title),
+    description: fill(profile.description),
+    headline: fill(profile.headline),
+    intro: fill(profile.intro),
+    audience: fill(profile.audience),
+    studyLabel: fill(profile.studyLabel),
+  };
 }
 
 export function buildDeckSeoTitle(deck: SeoDeck) {

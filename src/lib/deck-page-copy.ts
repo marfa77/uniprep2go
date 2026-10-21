@@ -1,10 +1,15 @@
+import {
+  fillProductPriceMentions,
+  resolveDeckPriceLabel,
+} from "./checkout-pricing";
 import type { Deck } from "./decks";
 import { getDeckSeoProfile } from "./deck-seo";
 import { pitchOverrides, longDescriptionOverrides } from "./deck-money-page-content";
 
 /** Hero one-liner — distinct from audience and longDescription. */
 export function getDeckShortPitch(deck: Deck): string {
-  return pitchOverrides[deck.slug] ?? deck.subtitle;
+  const raw = pitchOverrides[deck.slug] ?? deck.subtitle;
+  return fillProductPriceMentions(raw, resolveDeckPriceLabel(deck));
 }
 
 /** Deck-page checkout name when the URL intent is narrower than the catalog shortName. */
@@ -18,10 +23,8 @@ export function getDeckPageCheckoutName(deck: Pick<Deck, "slug" | "shortName">):
 
 /** Overview block — 2–3 sentences; not repeated elsewhere on the page. */
 export function getDeckLongDescription(deck: Deck): string {
-  if (longDescriptionOverrides[deck.slug]) {
-    return longDescriptionOverrides[deck.slug]!;
-  }
-  return getDeckSeoProfile(deck).intro;
+  const raw = longDescriptionOverrides[deck.slug] ?? getDeckSeoProfile(deck).intro;
+  return fillProductPriceMentions(raw, resolveDeckPriceLabel(deck));
 }
 
 /** Short noun for CTAs and compare tables — PDF guides are not Anki decks. */

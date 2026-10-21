@@ -57,7 +57,7 @@ function plannedCivicsDeck(spec: PlannedCivicsSpec): PlannedDeck {
 
 /**
  * Waitlist templates that the wave launcher flips to available.
- * Live $9 civic SKUs live in civic-sold-decks.ts — do not duplicate them here.
+ * Live $9.99 civic SKUs live in civic-sold-decks.ts — do not duplicate them here.
  */
 export const citizenshipPlannedDecks: PlannedDeck[] = [
   plannedCivicsDeck({

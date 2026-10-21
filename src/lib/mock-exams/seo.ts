@@ -15,6 +15,7 @@ import {
   MOCK_PASS_PRICE_USD,
 } from "./mock-pass";
 import { withMockAccessDisclosure } from "./mock-access-faq";
+import { withCatalogProductPrices } from "../catalog-price";
 import { getDeckBySlug } from "../decks";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
@@ -1566,16 +1567,26 @@ export function getMockSeoProfile(config: MockExamConfig): MockSeoProfile {
   const override = mockSeoProfiles[config.slug];
   const niche = getNicheExamExplainer(config.slug);
   const merged = { ...defaults, ...override };
+  const priceSlug = config.linkedDeckSlug;
+  const fill = (text: string) => withCatalogProductPrices(text, priceSlug);
+  const examFaqs = (override?.examFaqs ?? niche?.examFaqs ?? defaults.examFaqs)?.map((faq) => ({
+    question: fill(faq.question),
+    answer: fill(faq.answer),
+  }));
 
   return {
     ...merged,
-    whatIsExam:
-      override?.whatIsExam ??
-      niche?.whatIsExam ??
-      defaults.whatIsExam,
+    title: fill(merged.title),
+    description: fill(merged.description),
+    headline: fill(merged.headline),
+    intro: fill(merged.intro),
+    audience: fill(merged.audience),
+    whatIsExam: fill(
+      override?.whatIsExam ?? niche?.whatIsExam ?? defaults.whatIsExam,
+    ),
     administeredBy: override?.administeredBy ?? niche?.administeredBy ?? defaults.administeredBy,
     officialFormat: override?.officialFormat ?? niche?.officialFormat ?? defaults.officialFormat,
-    examFaqs: override?.examFaqs ?? niche?.examFaqs ?? defaults.examFaqs,
+    examFaqs,
     keywords: [...new Set([...(niche?.keywords ?? []), ...merged.keywords])].slice(0, 12),
   };
 }

@@ -4,11 +4,14 @@ import {
   nicheReadinessConfig,
 } from "./niche-readiness";
 import type { MockExamConfig } from "./types";
+import { formatCatalogListPrice } from "../catalog-price";
+
+const CIVIC_PRICE = formatCatalogListPrice();
 
 const NOTE =
-  "Questions sourced from the Prep2Go Naturalization banks (same civics Q&A as the matching $9 country Anki deck). Independent readiness check — not official government exam material.";
+  `Questions sourced from the Prep2Go Naturalization banks (same civics Q&A as the matching ${CIVIC_PRICE} country Anki deck). Independent readiness check — not official government exam material.`;
 
-/** Citizenship civics mocks. Each links to its $9 country Anki deck. */
+/** Citizenship civics mocks. Each links to its ${CIVIC_PRICE} country Anki deck. */
 export const citizenshipMockExamConfigs: MockExamConfig[] = [
   nicheReadinessConfig({
     slug: "leben-in-deutschland-readiness-check",
@@ -30,7 +33,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on BAMF Einbürgerungstest / Leben in Deutschland themes. Official exam: 33 questions / 60 minutes / 17 correct for citizenship (15 for some PR/integration paths). This diagnostic is 60 questions / 60 minutes / 55%. Not official BAMF material.",
     description:
-      "60-question Leben in Deutschland / Einbürgerungstest diagnostic (free 25-question version) (60 min, 55% pass) — longer than the official 33/60/17 BAMF paper. Pairs with the $9 country Anki deck. Independent prep.",
+      `60-question Leben in Deutschland / Einbürgerungstest diagnostic (free 25-question version) (60 min, 55% pass) — longer than the official 33/60/17 BAMF paper. Pairs with the ${CIVIC_PRICE} country Anki deck. Independent prep.`,
     examBody:
       "BAMF — Einbürgerungstest / Leben in Deutschland (33Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -54,7 +57,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check for the French Examen civique (live from 1 Jan 2026: 40 MCQs / 45 min / 32/40). This diagnostic is 60 questions / 60 minutes / 70%. B2 language is separate. Not préfecture or official civic-exam material.",
     description:
-      "60-question French naturalisation civics diagnostic (free 25-question version) for the 2026 Examen civique themes — institutions, history, values, rights. Official civic exam is 40Q/45min/80%; B2 language is separate. Pairs with the $9 country Anki deck.",
+      `60-question French naturalisation civics diagnostic (free 25-question version) for the 2026 Examen civique themes — institutions, history, values, rights. Official civic exam is 40Q/45min/80%; B2 language is separate. Pairs with the ${CIVIC_PRICE} country Anki deck.`,
     examBody:
       "France — Examen civique (naturalisation; B2 language separate)",
     questionSourceNote: NOTE,
@@ -86,7 +89,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Life in the UK handbook themes. Official Home Office test: 24 questions / 45 minutes / 18/24 (75%), £50. This diagnostic is 60 questions / 45 minutes / 75%. Not official Home Office material.",
     description:
-      "60-question Life in the UK diagnostic (free 25-question version) (45 min, 75%) — longer than the official 24-question Home Office test. Pairs with the $9 country Anki deck. Independent prep.",
+      `60-question Life in the UK diagnostic (free 25-question version) (45 min, 75%) — longer than the official 24-question Home Office test. Pairs with the ${CIVIC_PRICE} country Anki deck. Independent prep.`,
     examBody:
       "UK Home Office — Life in the UK Test (24Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -113,7 +116,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Discover Canada themes. Official IRCC test: 20 questions / 45 minutes / 15/20 (75%). This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
     description:
-      "60-question Canadian citizenship diagnostic (free 25-question version) — longer than the official 20-question IRCC test. Pairs with the $9 country Anki deck. Independent prep.",
+      `60-question Canadian citizenship diagnostic (free 25-question version) — longer than the official 20-question IRCC test. Pairs with the ${CIVIC_PRICE} country Anki deck. Independent prep.`,
     examBody:
       "IRCC — Discover Canada citizenship test (20Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -140,7 +143,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on Our Common Bond themes. Official test: 20 MCQs / 45 minutes / 75% plus all 5 values questions correct. This diagnostic is 60 questions / 45 minutes / 75% and does not enforce the values dual-gate. Not Home Affairs material.",
     description:
-      "60-question Australian citizenship diagnostic (free 25-question version). Official exam is 20Q/45min with a values dual-gate — this page is longer theme practice without that gate. Pairs with the $9 country Anki deck.",
+      `60-question Australian citizenship diagnostic (free 25-question version). Official exam is 20Q/45min with a values dual-gate — this page is longer theme practice without that gate. Pairs with the ${CIVIC_PRICE} country Anki deck.`,
     examBody:
       "Australia Home Affairs — citizenship test (20Q + values gate; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
@@ -167,7 +170,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent readiness check on CCSE themes. Official Instituto Cervantes CCSE: 25 items / 45 minutes / 15/25 (60%) from a published ~300-item bank. This diagnostic is 60 questions / 45 minutes / 60%. DELE A2 language is a separate exam. Not Cervantes material.",
     description:
-      "60-question CCSE diagnostic (free 25-question version) for Spanish nationality civics — longer than the official 25-question Cervantes exam. DELE A2 is separate. Pairs with the $9 CCSE España Anki deck.",
+      `60-question CCSE diagnostic (free 25-question version) for Spanish nationality civics — longer than the official 25-question Cervantes exam. DELE A2 is separate. Pairs with the ${CIVIC_PRICE} CCSE España Anki deck.`,
     examBody:
       "Instituto Cervantes — CCSE (25Q official; DELE A2 separate)",
     questionSourceNote:
@@ -201,7 +204,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Switzerland has no single federal citizenship MCQ — canton/commune tests vary. This is an independent German-language diagnostic of federal Staatskunde themes only (60Q / 45 min / 70%). Not SEM or cantonal exam material.",
     description:
-      "60-question German federal Staatskunde diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune knowledge tests differ — this page covers federal themes only. Pairs with the $9 Swiss language Anki deck.",
+      `60-question German federal Staatskunde diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune knowledge tests differ — this page covers federal themes only. Pairs with the ${CIVIC_PRICE} Swiss language Anki deck.`,
     examBody:
       "Switzerland — federal Staatskunde DE (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -234,7 +237,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "No single federal French citizenship MCQ — canton/commune tests vary. Independent French diagnostic of federal civics themes only (60Q / 45 min / 70%). Not SEM material.",
     description:
-      "60-question French federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
+      `60-question French federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the ${CIVIC_PRICE} Swiss language Anki deck.`,
     examBody:
       "Switzerland — federal Staatskunde FR (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -266,7 +269,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "No single federal Italian citizenship MCQ — canton/commune tests vary. Independent Italian diagnostic of federal civics themes only (60Q / 45 min / 70%). Not SEM material.",
     description:
-      "60-question Italian federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the $9 Swiss language Anki deck.",
+      `60-question Italian federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the ${CIVIC_PRICE} Swiss language Anki deck.`,
     examBody:
       "Switzerland — federal Staatskunde IT (no federal MCQ; canton/commune varies)",
     questionSourceNote:
@@ -529,7 +532,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     officialSourceNote:
       "Independent simulation in the official Vivre ensemble format: 40 MCQs in 60 minutes, 10 fundamental rights / 20 state & communal institutions / 10 history & European integration (règlement grand-ducal of 7 April 2017), drawn from a 168-question French bank checked against the 2023 Constitution. The regulation does not publish a pass mark; the 70% (28/40) target mirrors the figure prep sites cite. Sproochentest is separate. Not official SFA material.",
     description:
-      "Luxembourg Vivre ensemble exam simulation in the official format: free 25-question diagnostic, full mock 40 questions, 60 minutes, 10/20/10 module split, score per module. Fix weak modules with the $16 FR + EN Anki pair (239 cards per language). Independent prep.",
+      `Luxembourg Vivre ensemble exam simulation in the official format: free 25-question diagnostic, full mock 40 questions, 60 minutes, 10/20/10 module split, score per module. Fix weak modules with the ${CIVIC_PRICE} FR + EN Anki pair (239 cards per language). Independent prep.`,
     examBody:
       "Luxembourg — Vivre ensemble (40Q official or course; Sproochentest separate)",
     questionSourceNote:

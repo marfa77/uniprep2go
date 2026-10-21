@@ -172,7 +172,7 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("/decks/acsm-cpt-anki-deck");
     expect(commercial).toContain("best NHA CPCT Anki / patient care technician flashcards");
     expect(commercial).toContain("/decks/nha-cpct-anki-deck");
-    expect(commercial).toContain("$29");
+    expect(commercial).toContain("$9.99");
     expect(when).toContain("Florida / Texas / New York");
     expect(when).toContain("Series 65");
     expect(when).toContain("NEBOSH IGC");

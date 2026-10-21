@@ -1551,7 +1551,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this deck cover Swiss fide or Swiss citizenship?",
         answer:
-          "It is a French language vocabulary bank that overlaps the high-frequency French useful for fide / Swiss residency language prep. It is not official fide material and not Swiss civics (Staatskunde). For federal Swiss citizenship civics, buy the $9 Naturalisation suisse Anki deck (or the German / Italian siblings).",
+          "It is a French language vocabulary bank that overlaps the high-frequency French useful for fide / Swiss residency language prep. It is not official fide material and not Swiss civics (Staatskunde). For federal Swiss citizenship civics, buy the $9.99 Naturalisation suisse Anki deck (or the German / Italian siblings).",
       },
       {
         question: "What does each card include?",
@@ -1687,7 +1687,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a Leben in Deutschland or Swiss citizenship civics deck?",
         answer:
-          "No. This is a German language vocabulary bank. For German citizenship civics (Leben in Deutschland), buy the $9 Leben in Deutschland Anki deck. For Swiss federal Staatskunde, buy the $9 Einbürgerung Schweiz Anki deck.",
+          "No. This is a German language vocabulary bank. For German citizenship civics (Leben in Deutschland), buy the $9.99 Leben in Deutschland Anki deck. For Swiss federal Staatskunde, buy the $9.99 Einbürgerung Schweiz Anki deck.",
       },
       {
         question: "What file format is delivered?",
@@ -2193,7 +2193,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a Leben in Deutschland civics deck?",
         answer:
-          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, buy the $9 Leben in Deutschland Anki deck.",
+          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, buy the $9.99 Leben in Deutschland Anki deck.",
       },
       {
         question: "What does the deck include?",
@@ -2249,7 +2249,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is this a Leben in Deutschland civics deck?",
         answer:
-          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, buy the $9 Leben in Deutschland Anki deck.",
+          "No. This is German language vocabulary for certificates and integration language. For Leben in Deutschland civics, buy the $9.99 Leben in Deutschland Anki deck.",
       },
       {
         question: "What does the deck include?",
@@ -2438,9 +2438,9 @@ const rawDecks: Deck[] = [
     title: "Citizenship & Naturalization Anki Bundle — retired hub",
     shortName: "Citizenship Naturalization Bundle",
     subtitle:
-      "This six-country bundle is no longer for sale. Buy the $9 country deck you need: U.S., Germany, France, UK, Canada, or Australia.",
+      "This six-country bundle is no longer for sale. Buy the $9.99 country deck you need: U.S., Germany, France, UK, Canada, or Australia.",
     directAnswer:
-      "The six-country Citizenship & Naturalization Anki bundle is retired and not for sale. Buy the matching $9 deck instead: U.S. Citizenship (128), Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), or Australian Citizenship (200). Each is a separate Gumroad .apkg. Start with the free readiness check for your country. Independent study aid — not government material.",
+      "The six-country Citizenship & Naturalization Anki bundle is retired and not for sale. Buy the matching $9.99 deck instead: U.S. Citizenship (128), Leben in Deutschland (296), Naturalisation française (200), Life in the UK (201), Canadian Citizenship (200), or Australian Citizenship (200). Each is a separate Gumroad .apkg. Start with the free readiness check for your country. Independent study aid — not government material.",
     lastUpdated: "2026-09-21",
     audience:
       "U.S. green-card holders preparing the naturalization civics interview, plus applicants for Germany, France, UK, Canada, or Australia citizenship tests.",
@@ -2452,7 +2452,7 @@ const rawDecks: Deck[] = [
         "Leben in Deutschland, Naturalisation française, Life in the UK, Canadian / Australian / U.S. Citizenship",
       formulas: "Six separate Anki .apkg files — one deck per country",
       examYear: "Current citizenship / naturalization cycles",
-      delivery: "Not for sale — buy the $9 country deck",
+      delivery: "Not for sale — buy the $9.99 country deck",
     },
     topicCoverage: [],
     sampleCards: [
@@ -2900,9 +2900,9 @@ const rawDecks: Deck[] = [
     title: "Swiss Citizenship Anki Bundle — retired hub",
     shortName: "Swiss Citizenship",
     subtitle:
-      "This DE/FR/IT bundle is no longer for sale. Buy the $9 German, French, or Italian Staatskunde deck (207 cards each).",
+      "This DE/FR/IT bundle is no longer for sale. Buy the $9.99 German, French, or Italian Staatskunde deck (207 cards each).",
     directAnswer:
-      "The Swiss Citizenship Anki bundle (621 cards, three languages) is retired and not for sale. Buy the $9 deck for your language: Einbürgerung Schweiz (German, 207), Naturalisation suisse (French, 207), or Naturalizzazione svizzera (Italian, 207). Free DE / FR / IT readiness checks stay live. Independent study aid — not SEM or cantonal exam material.",
+      "The Swiss Citizenship Anki bundle (621 cards, three languages) is retired and not for sale. Buy the $9.99 deck for your language: Einbürgerung Schweiz (German, 207), Naturalisation suisse (French, 207), or Naturalizzazione svizzera (Italian, 207). Free DE / FR / IT readiness checks stay live. Independent study aid — not SEM or cantonal exam material.",
     lastUpdated: "2026-09-21",
     audience:
       "Residents preparing Swiss ordinary naturalisation federal civics checks in German, French, or Italian (canton/commune tests vary).",
@@ -2914,7 +2914,7 @@ const rawDecks: Deck[] = [
         "Politics & direct democracy; history & culture; geography & social system; naturalisation process — DE / FR / IT",
       formulas: "Three separate Anki .apkg files — one per official language",
       examYear: "Current SEM / cantonal naturalisation cycles",
-      delivery: "Not for sale — buy the $9 language deck",
+      delivery: "Not for sale — buy the $9.99 language deck",
     },
     topicCoverage: [
       { name: "Politics, institutions & direct democracy", examWeight: "25%", cards: "207×3 languages" },

@@ -155,7 +155,7 @@ describe("deck catalog", () => {
     expect(citizenshipBundle?.status).toBe("planned");
     expect(citizenshipBundle?.checkoutUrl).toBeUndefined();
     expect(citizenshipBundle?.title).toContain("retired hub");
-    expect(citizenshipBundle?.directAnswer).toContain("$9");
+    expect(citizenshipBundle?.directAnswer).toContain("$9.99");
     expect(getDeckBySlug("us-citizenship-anki-deck")?.status).toBe("available");
     expect(getDeckBySlug("leben-in-deutschland-anki-deck")?.facts.cards).toBe("296");
 

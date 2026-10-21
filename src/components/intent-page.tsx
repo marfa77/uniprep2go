@@ -2,6 +2,7 @@ import Link from "next/link";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { withCatalogProductPrices } from "@/lib/catalog-price";
 import { formatDeckContentLabel } from "@/lib/decks";
 import { formatDeckPriceLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import { getDeckPracticeMock } from "@/lib/deck-funnel";
@@ -10,11 +11,19 @@ import { freeMockStartLabel } from "@/lib/mock-exams/free-diagnostic";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
+/** Cursor Ship Kit keeps its own $19/$39 tiers — do not rewrite to catalog Anki price. */
+const INTENT_SKIP_CATALOG_PRICE_FILL = new Set(["cursor-rules-for-indie-hackers"]);
+
 function resolveOfferHref(url: string) {
   if (url.startsWith("http://") || url.startsWith("https://") || url.startsWith("mailto:")) {
     return url;
   }
   return url.startsWith("/") ? url : `/${url}`;
+}
+
+function fillIntentCopy(text: string, pageSlug: string) {
+  if (INTENT_SKIP_CATALOG_PRICE_FILL.has(pageSlug)) return text;
+  return withCatalogProductPrices(text);
 }
 
 export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
@@ -40,7 +49,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
         "@type": "WebPage",
         "@id": `${siteConfig.url}/${page.slug}#webpage`,
         name: page.title,
-        description: page.description,
+        description: fillIntentCopy(page.description, page.slug),
         url: absoluteUrl(`/${page.slug}`),
         about: [
           ...decks.map((deck) => ({
@@ -110,7 +119,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           {page.title}
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {page.directAnswer}
+          {fillIntentCopy(page.directAnswer, page.slug)}
         </p>
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
@@ -200,8 +209,10 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
                 className="rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70 p-5"
                 key={section.title}
               >
-                <h3 className="font-semibold">{section.title}</h3>
-                <p className="mt-2 text-sm leading-6 text-[#5f5749]">{section.body}</p>
+                <h3 className="font-semibold">{fillIntentCopy(section.title, page.slug)}</h3>
+                <p className="mt-2 text-sm leading-6 text-[#5f5749]">
+                  {fillIntentCopy(section.body, page.slug)}
+                </p>
               </article>
             ))}
           </div>
@@ -212,7 +223,7 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           <ul className="mt-4 grid gap-3 sm:grid-cols-2">
             {page.proofPoints.map((point) => (
               <li className="rounded-2xl bg-[#18140f]/5 px-4 py-3 text-sm" key={point}>
-                {point}
+                {fillIntentCopy(point, page.slug)}
               </li>
             ))}
           </ul>
@@ -223,8 +234,10 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           <div className="mt-4 divide-y divide-[#18140f]/10 rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
             {page.faqs.map((faq) => (
               <article className="p-5" key={faq.question}>
-                <h3 className="font-semibold">{faq.question}</h3>
-                <p className="mt-2 leading-7 text-[#5f5749]">{faq.answer}</p>
+                <h3 className="font-semibold">{fillIntentCopy(faq.question, page.slug)}</h3>
+                <p className="mt-2 leading-7 text-[#5f5749]">
+                  {fillIntentCopy(faq.answer, page.slug)}
+                </p>
               </article>
             ))}
           </div>

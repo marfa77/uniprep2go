@@ -20,9 +20,9 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
   deckSlug: "life-in-the-uk-anki-deck",
   cta: {
     mockLabel: "Take the free Life in the UK readiness check",
-    deckLabel: "Get the Life in the UK Anki deck ($9)",
+    deckLabel: "Get the Life in the UK Anki deck ($9.99)",
     summary:
-      "Run the 60-question Life in the UK readiness check (free 25-question diagnostic, no signup; $5 for 5 more attempts) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9 Life in the UK Anki deck before you pay £50 on gov.uk.",
+      "Run the 60-question Life in the UK readiness check (free 25-question diagnostic, no signup; $5 for 5 more attempts) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9.99 Life in the UK Anki deck before you pay £50 on gov.uk.",
   },
   sections: [
     {
@@ -193,7 +193,7 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
     {
       question: "What Anki deck helps with Life in the UK prep?",
       answer:
-        "The $9 Life in the UK Anki deck is 201 civics cards for dates, monarchs, and government facts from the official handbook.",
+        "The $9.99 Life in the UK Anki deck is 201 civics cards for dates, monarchs, and government facts from the official handbook.",
     },
   ],
   bottomLine:

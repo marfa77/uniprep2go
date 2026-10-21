@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
+import { withCatalogProductPrices } from "./catalog-price";
 import { getCatalogDeckBySlug, type CatalogAvailableDeck } from "./decks";
 import { withAiMetadata } from "./llm-meta";
+
+const INTENT_SKIP_CATALOG_PRICE_FILL = new Set(["cursor-rules-for-indie-hackers"]);
+
+function fillIntentMetaCopy(text: string, pageSlug: string) {
+  if (INTENT_SKIP_CATALOG_PRICE_FILL.has(pageSlug)) return text;
+  return withCatalogProductPrices(text);
+}
 
 export type ExternalOffer = {
   name: string;
@@ -355,11 +363,11 @@ export function buildIntentPageMetadata(page: IntentPage): Metadata {
   return withAiMetadata(
     {
       title: page.title,
-      description: page.description,
+      description: fillIntentMetaCopy(page.description, page.slug),
       alternates: { canonical: `/${page.slug}` },
     },
     {
-      aiDescription: page.directAnswer,
+      aiDescription: fillIntentMetaCopy(page.directAnswer, page.slug),
       aiCategory: `exam-prep;intent;${page.slug}`,
       path: `/${page.slug}`,
     },

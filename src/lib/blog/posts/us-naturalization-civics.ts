@@ -20,9 +20,9 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
   deckSlug: "us-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free US Citizenship readiness check",
-    deckLabel: "Get the U.S. Citizenship Anki deck ($9)",
+    deckLabel: "Get the U.S. Citizenship Anki deck ($9.99)",
     summary:
-      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 128-question 2025 list with the $9 U.S. Citizenship Anki deck (128 cards) before your N-400 interview. Related language decks also live on Prep2Go.",
+      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 128-question 2025 list with the $9.99 U.S. Citizenship Anki deck (128 cards) before your N-400 interview. Related language decks also live on Prep2Go.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

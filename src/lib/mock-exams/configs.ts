@@ -283,11 +283,11 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Independent MCQ diagnostic on USCIS civics themes. Official naturalization civics is an oral interview: the 2025 test (N-400 filed on or after Oct 20, 2025) asks up to 20 of 128 questions, pass at 12; earlier filers take the 2008 test (up to 10 of 100, pass at 6). This page is 30 timed MCQs / 30 minutes / 80% — not the oral USCIS interview format.",
     disclaimer: citizenshipDisclaimer,
     description:
-      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the $9 U.S. Citizenship Anki deck. Independent prep — not USCIS material.",
+      "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the $9.99 U.S. Citizenship Anki deck. Independent prep — not USCIS material.",
     examBody: "USCIS",
     lastUpdated: "2026-07-26",
     questionSourceNote:
-      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the $9 U.S. Citizenship Anki deck.",
+      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the $9.99 U.S. Citizenship Anki deck.",
   },
   {
     slug: "frm-part-1-readiness-check",

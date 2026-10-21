@@ -1,5 +1,6 @@
 import deckSampleShots from "@/data/deck-sample-shots.json";
 import civicCatalog from "@/data/gumroad/civic-anki-decks.json";
+import { PRICE_PLACEHOLDER } from "./catalog-price";
 import type { CatalogAvailableDeck } from "./decks";
 
 const sampleShots = deckSampleShots as Record<string, { question: string; answer: string }[]>;
@@ -36,10 +37,10 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
     status: "available",
     title: product.name,
     shortName,
-    subtitle: `${product.cards} ${product.exam} civics cards — $9 Anki .apkg.`,
-    directAnswer: `UniPrep2Go sells a ${product.cards}-card ${product.exam} Anki deck for $9 through Gumroad by PixID Studio. This ${product.exam} file is question-to-answer civics recall for that country only — not a language certificate and not a multi-country bundle. Start with the free readiness check at /mock-exams/${product.mockSlug}, then import the .apkg. Independent study aid — not official ${product.exam} material.${polishNote}`,
+    subtitle: `${product.cards} ${product.exam} civics cards — ${PRICE_PLACEHOLDER} Anki .apkg.`,
+    directAnswer: `UniPrep2Go sells a ${product.cards}-card ${product.exam} Anki deck for ${PRICE_PLACEHOLDER} through Gumroad by PixID Studio. This ${product.exam} file is question-to-answer civics recall for that country only — not a language certificate and not a multi-country bundle. Start with the free readiness check at /mock-exams/${product.mockSlug}, then import the .apkg. Independent study aid — not official ${product.exam} material.${polishNote}`,
     lastUpdated: "2026-09-21",
-    audience: `Applicants preparing ${product.exam} who want a $9 Anki deck of ${product.cards} civics cards.`,
+    audience: `Applicants preparing ${product.exam} who want a ${PRICE_PLACEHOLDER} Anki deck of ${product.cards} civics cards.`,
     format: ".apkg",
     coverImage,
     checkoutUrl: `https://pixidstudio.gumroad.com/l/${product.permalink}?wanted=true`,
@@ -72,7 +73,7 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
     faqs: [
       {
         question: "How many cards are in this deck?",
-        answer: `${product.cards} ${product.exam} question-to-answer civics cards in one Anki .apkg for $9.`,
+        answer: `${product.cards} ${product.exam} question-to-answer civics cards in one Anki .apkg for ${PRICE_PLACEHOLDER}.`,
       },
       {
         question: "Is there a free practice test?",

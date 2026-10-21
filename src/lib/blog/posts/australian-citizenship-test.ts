@@ -20,9 +20,9 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
   deckSlug: "australian-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free Australian Citizenship readiness check",
-    deckLabel: "Get the Australian Citizenship Anki deck ($9)",
+    deckLabel: "Get the Australian Citizenship Anki deck ($9.99)",
     summary:
-      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the $9 Australian Citizenship Anki deck before ceremony day.",
+      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the $9.99 Australian Citizenship Anki deck before ceremony day.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",

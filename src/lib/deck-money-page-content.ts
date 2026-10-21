@@ -1,3 +1,7 @@
+import {
+  fillProductPriceMentions,
+  resolveDeckPriceLabel,
+} from "./checkout-pricing";
 import type { Deck } from "./decks";
 import type { DeckPositioning } from "./deck-positioning";
 import { getDeckLinkedMock } from "./deck-seo";
@@ -97,13 +101,13 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ascp-mls-anki-deck":
     "Planned 120-card ASCP MLS Anki (blood bank, chemistry, hematology, microbiology/immunology). 60Q / 90 min diagnostic live now (free 25-question version) — official BOC MLS is 100Q / 2h30 CAT / scaled 400. ≠ MLT.",
   "ascp-mlt-anki-deck":
-    "Planned 60-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). 60Q / 75 min diagnostic live now (free 25-question version) — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
+    "Planned 120-card ASCP MLT Anki (blood bank, chemistry, hematology, microbiology). 60Q / 75 min diagnostic live now from a 120-item bank (free 25-question version) — official BOC MLT is 100Q / 2h30 CAT / scaled 400. ≠ MLS; CA-only MLT form is 80Q / 2h.",
   "aswb-bachelors-anki-deck":
     "Planned 60-card ASWB Bachelors Anki (HBSE, assessment, intervention, ethics). 60Q / 75 min diagnostic live now (free 25-question version) — official from 3 Aug 2026 is 122Q / 4h. ≠ Clinical/LCSW.",
   "aswb-clinical-anki-deck":
     "Planned 60-card ASWB Clinical Anki (clinical assessment, diagnosis concepts, psychotherapy, ethics). 60Q / 75 min diagnostic live now (free 25-question version) — official from 3 Aug 2026 is 122Q / 4h. ≠ Bachelors/LSW.",
   "barber-state-anki-deck":
-    "Planned 60-card NIC-style barber theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
+    "Planned 120-card NIC-style barber theory Anki. 60Q / 75 min diagnostic live now from a 120-item bank (free 25-question version) — official NIC Barber theory is 60 items (50 scored) / 90 min; practical separate. ≠ Cosmetology Theory.",
   "medication-aide-anki-deck":
     "Planned 120-card medication-aide Anki (rights, routes, safety, documentation). 60Q / 75 min diagnostic live now (free 25-question version) — typical MACE is 60Q / 2h. ≠ NNAAP CNA.",
   "nail-technician-state-anki-deck":
@@ -212,13 +216,13 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ascp-mls-anki-deck":
     "Planned ASCP MLS Anki for blood bank, chemistry, hematology, and microbiology/immunology. 60-question / 90-minute readiness check (free 25-question version) is live; official BOC MLS is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLT.",
   "ascp-mlt-anki-deck":
-    "Planned ASCP MLT Anki for blood bank, chemistry, hematology, and microbiology. 60-question / 75-minute readiness check (free 25-question version) is live; official BOC MLT is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLS and not the California-only 80Q / 2h form.",
+    "Planned 120-card ASCP MLT Anki for blood bank, chemistry, hematology, and microbiology. 60-question / 75-minute readiness check (free 25-question version) drawn from a 120-item bank is live; official BOC MLT is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLS and not the California-only 80Q / 2h form.",
   "aswb-bachelors-anki-deck":
     "Planned ASWB Bachelors Anki for HBSE, assessment, intervention, and ethics. 60-question / 75-minute readiness check (free 25-question version) is live; official from 3 August 2026 is 122 questions / 4 hours. Not Clinical/LCSW.",
   "aswb-clinical-anki-deck":
     "Planned ASWB Clinical Anki for clinical assessment, diagnosis concepts, psychotherapy, and ethics. 60-question / 75-minute readiness check (free 25-question version) is live; official from 3 August 2026 is 122 questions / 4 hours. Not Bachelors/LSW.",
   "barber-state-anki-deck":
-    "Planned NIC-style barber theory Anki for infection control, cutting/shaving, chemical services, and board-law themes. 60-question / 75-minute readiness check (free 25-question version) is live; official NIC Barber theory is 60 items (50 scored) / 90 minutes. Practical exam is separate. Not NIC Cosmetology Theory.",
+    "Planned 120-card NIC-style barber theory Anki for infection control, cutting/shaving, chemical services, and board-law themes. 60-question / 75-minute readiness check (free 25-question version) drawn from a 120-item bank is live; official NIC Barber theory is 60 items (50 scored) / 90 minutes. Practical exam is separate. Not NIC Cosmetology Theory.",
   "medication-aide-anki-deck":
     "Planned medication-aide Anki for six rights, routes, safety, and documentation. 60-question / 75-minute readiness check (free 25-question version) is live; typical MACE is 60 questions / 2 hours where a state uses it. Not NNAAP CNA and not LPN/RN.",
   "nail-technician-state-anki-deck":
@@ -506,8 +510,8 @@ export const positioningOverrides: Partial<
   },
   "ascp-mlt-anki-deck": {
     ourEdge: [
-      "Planned 60-card MLT Anki for blood bank, chemistry, hematology, microbiology",
-      "60Q / 75 min timed diagnostic live now — free 25-question diagnostic, no signup",
+      "Planned 120-card MLT Anki for blood bank, chemistry, hematology, microbiology",
+      "60Q / 75 min timed diagnostic from a 120-item bank — free 25-question diagnostic, no signup",
       "Honest: official BOC MLT is 100Q CAT / 2h30 / scaled 400 — our mock is shorter",
       "≠ ASCP MLS; California-only MLT sitting is 80Q / 2h",
     ],
@@ -536,8 +540,8 @@ export const positioningOverrides: Partial<
   },
   "barber-state-anki-deck": {
     ourEdge: [
-      "Planned 60-card NIC-style barber theory Anki",
-      "60Q / 75 min timed diagnostic live now (free 25-question version)",
+      "Planned 120-card NIC-style barber theory Anki",
+      "60Q / 75 min timed diagnostic from a 120-item bank (free 25-question version)",
       "Honest: official NIC Barber theory is 60 items (50 scored) / 90 min",
       "Theory only — practical/skills exam is separate; ≠ Cosmetology Theory",
     ],
@@ -2096,7 +2100,7 @@ ASCP BOC registration, Pearson VUE scheduling, or a full-length CAT bank. Anki i
 
   "ascp-mlt-anki-deck": `### What is inside
 
-Planned **60** flashcards across blood bank, chemistry, hematology, and microbiology — the same four buckets as the free readiness check. Built for ASCP BOC **MLT** bench judgment (ABO/Rh, hemolysis flags, CBC smear holds, cultures), not MLS-only molecular dumps and not phlebotomy-only PBT.
+Planned **120** flashcards across blood bank, chemistry, hematology, and microbiology — the same four buckets as the free readiness check (60Q session drawn from this 120-item bank). Built for ASCP BOC **MLT** bench judgment (ABO/Rh, hemolysis flags, CBC smear holds, cultures), not MLS-only molecular dumps and not phlebotomy-only PBT.
 
 ### Plan with the free MLT mock (live now)
 
@@ -2150,7 +2154,7 @@ ASWB registration or a 4-hour form. Anki is **planned**. Independent prep — no
 
   "barber-state-anki-deck": `### What is inside
 
-Planned **60** flashcards across infection control, cutting/shaving, chemical services, and board-law themes — the same four buckets as the free readiness check. Built for **NIC-style Barber theory**, not Cosmetology Theory and not the practical.
+Planned **120** flashcards across infection control, cutting/shaving, chemical services, and board-law themes — the same four buckets as the free readiness check (60Q session drawn from this 120-item bank). Built for **NIC-style Barber theory**, not Cosmetology Theory and not the practical.
 
 ### Plan with the free Barber mock (live now)
 
@@ -2647,5 +2651,6 @@ Weeks 1–3: 20 new ${deck.shortName} cards per day.${mockLine}
 }
 
 export function getDeckUniqueContent(deck: Deck): string | undefined {
-  return uniqueContentBySlug[deck.slug] ?? buildGenericUniqueContent(deck);
+  const raw = uniqueContentBySlug[deck.slug] ?? buildGenericUniqueContent(deck);
+  return raw ? fillProductPriceMentions(raw, resolveDeckPriceLabel(deck)) : undefined;
 }
