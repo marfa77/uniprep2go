@@ -766,7 +766,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Series 7 Flashcards — 300 Top-Off Cards + 60Q Mock (25Q Free)",
     studyLabel: "Series 7 flashcards",
     description:
-      "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a 60-question timed practice test (free 25-question version) with job-function scoring. Official exam 125 scored + 5 pretest / 3h45 / pass 72 equated. Independent — not FINRA material.",
+      "Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus a 60-question timed practice test (free 25-question version) with job-function scoring. Official exam 135 questions (125 scored + 10 pretest) / 3h45 / pass 72 / FINRA fee $395. Independent — not FINRA material.",
     keywords: [
       "series 7 flashcards",
       "series 7 anki",

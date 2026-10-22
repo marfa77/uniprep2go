@@ -210,7 +210,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
     {
       question: "Is the SIE exam harder than the Series 7?",
       answer:
-        "No. The Series 7 is longer (125 questions), deeper on suitability and options strategies, and requires sponsorship. The SIE is broader and more foundational. Most people find the Series 7 harder because of the volume, not the complexity.",
+        "No. The Series 7 is longer (135 questions: 125 scored + 10 pretest), deeper on suitability and options strategies, and requires sponsorship. The SIE is broader and more foundational. Most people find the Series 7 harder because of the volume, not the complexity.",
     },
     {
       question: "Do I need a calculator for the SIE exam?",

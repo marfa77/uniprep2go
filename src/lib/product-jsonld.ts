@@ -79,6 +79,8 @@ export function buildProductJsonLd(deck: AvailableDeck) {
     return null;
   }
 
+  const today = new Date().toISOString().slice(0, 10);
+
   return {
     "@type": "Product" as const,
     "@id": `${siteConfig.url}/decks/${deck.slug}#product`,
@@ -90,6 +92,7 @@ export function buildProductJsonLd(deck: AvailableDeck) {
       "@type": "Brand" as const,
       name: deck.checkoutSeller,
     },
+    dateModified: today,
     offers: offer,
   };
 }
@@ -108,6 +111,7 @@ export function buildDeckPageJsonLd(deck: AvailableDeck) {
         name: deck.title,
         description: deck.directAnswer,
         url: deckUrl,
+        dateModified: product?.dateModified,
         isPartOf: {
           "@id": `${siteConfig.url}/#website`,
         },

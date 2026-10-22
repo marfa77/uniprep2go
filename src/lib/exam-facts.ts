@@ -12,6 +12,7 @@ export type ExamFactsFields = {
   time_limit?: string;
   scoring_scale?: string;
   passing_score?: string;
+  registration_fee?: string;
   delivery?: string;
   outline_effective_date?: string;
   verify_at_url: string;
@@ -201,10 +202,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       exam_name: "Series 7 Top-Off (General Securities Representative)",
       administered_by: "FINRA",
       question_count:
-        "125 scored multiple-choice + 5 unscored pretest items = 130 total (since Oct 27, 2025)",
+        "135 questions (125 scored + 10 unscored pretest)",
       scored_count: "125",
       time_limit: "3 hours 45 minutes",
       passing_score: "72 on FINRA's equated scale (not a raw percentage); SIE is a corequisite",
+      registration_fee: "FINRA exam fee $395 (verify current fee on finra.org)",
       delivery: "Computer-based at Prometric test centers",
       verify_at_url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7",
     },
@@ -247,7 +249,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the Series 7 Top-Off?",
-        a: "125 scored multiple-choice questions plus 5 unscored pretest items (130 total since Oct 27, 2025) in 3 hours 45 minutes.",
+        a: "135 questions: 125 scored multiple-choice plus 10 unscored pretest items, in 3 hours 45 minutes. FINRA exam fee is $395 (confirm on finra.org).",
       },
       {
         q: "What is the largest Series 7 job-function area?",
