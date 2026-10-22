@@ -2,9 +2,25 @@
 
 Сгенерировано 2026-10-20 `python3 scripts/sku-daily-plan.py` из `sku-status.json` (2026-10-20). Порядок: трафик → Tier A → финансы → live → семейства. Каждое воскресенье пересчитывать: готовые SKU выпадают, остальное сдвигается.
 
+**Сегодня (22.10 Чт):** см. строку ниже — главное `nha-cpct`. Среда (MLT/barber ops + AnkiWeb) готова, ship только по OK.
+
 - Банков к `ok`: **121**. День закрыт, когда каждый SKU в строке сдан целиком: гейты, построчный review, ops, ledger, и для live-деки каскад (apkg, Gumroad, samples).
 - Ориентир нагрузки ~170 единиц (1 = новый вопрос, 0.5 = проверенный). Банк больше дня всё равно один день и один результат, без «день 1/2».
 - «Плюс немного»: сначала лендинги/воронка из бэклога, потом civic, продукты, Prep2Go деки.
+- **AnkiWeb LITE** (отдельный гейт от `sku-status`): mock может быть `ok`, а sold FULL `.apkg` не годится для random AnkiWeb preview (`thin_back` / `thin_explanation`). Перед шаром: довести FULL до sample-grade → `build_exam_lite_ankiweb --allow-short` → GUID-move → share **без слова LITE в title**. Квота 20/7d. Ledger: `docs/ankiweb-lite-ledger.md`.
+
+### AnkiWeb LITE — FULL→share (очередь 2026-10-21)
+
+| SKU | Блокер LITE-гейта (eligible) | День в плане |
+|---|---|---|
+| SIE | 32/40 · thin_back 142/300 | 23.10 (плюс к compared) |
+| Digital SAT | 0/40 · thin_explanation 297/350 | 24.10 |
+| ServSafe Manager | 1/40 · thin_back 234/300 | 29.10 (плюс к compared) |
+| LEED AP BD+C (+ GA/O+M если тот же шаблон) | templated distractor notes · LITE 10 | 04.11 (плюс к LEED compared) |
+| CA RE | rewrite + LITE 21 | 02.11 (в каскаде после rewrite) |
+| CFP | rewrite + LITE 28 | 05.11 (в каскаде после rewrite) |
+| Series 65 | rewrite + LITE 17 | 06.11 (в каскаде после rewrite) |
+| Series 66 | rewrite + LITE 7 | 12.11 (в каскаде после rewrite) |
 
 
 ## Неделя с 20.10
@@ -12,11 +28,11 @@
 | Дата | | Главное | Плюс немного |
 |---|---|---|---|
 | 20.10 | Вт | `al-real-estate` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) | Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — `rd-exam-anki-deck`, `six-sigma-green-belt-anki-deck`, `ashrae-certifications-anki-deck` |
-| 21.10 | Ср | `ascp-mlt` расширить 60→120; `barber-state` расширить 60→120 | Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — `bms-bas-anki-deck`, `california-real-estate-anki-deck`, `electrical-journeyman-anki-deck` |
+| 21.10 | Ср | ✅ `ascp-mlt` + `barber-state` 60→120 (ops ready, не shipped). ✅ AnkiWeb: Wave-2 remainder + 8 money LITEs (15/20 квоты; title без LITE) | Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — `bms-bas-anki-deck`, `california-real-estate-anki-deck`, `electrical-journeyman-anki-deck` · ship MLT/barber когда скажешь |
 | 22.10 | Чт | `nha-cpct` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | Таблица «Free practice options compared» (только проверенные строки + checked date): CFA L1 |
-| 23.10 | Пт | `cda-childcare` расширить 60→120; `medical-billing-specialist` rewrite + расширить 60→120 | Таблица compared: SIE (FINRA 75Q untimed vs наш timed + отчёт) |
-| 24.10 | Сб | `rbt-behavior-technician` rewrite + расширить 60→120; `mblex` rewrite + расширить 60→120 | Таблица compared: FRM P1 (GARP 2×100Q для зарегистрированных) |
-| 25.10 | Вс | Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py` | — |
+| 23.10 | Пт | `cda-childcare` расширить 60→120; `medical-billing-specialist` rewrite + расширить 60→120 | Таблица compared: SIE · **AnkiWeb:** thicken SIE FULL (thin backs) → LITE 40 → share (без LITE в title) |
+| 24.10 | Сб | `rbt-behavior-technician` rewrite + расширить 60→120; `mblex` rewrite + расширить 60→120 | Таблица compared: FRM P1 · **AnkiWeb:** thicken Digital SAT FULL (thin explanations) → LITE 40 → share |
+| 25.10 | Вс | Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py` · AnkiWeb day-14 download check на шары 13.10 | — |
 
 ## Неделя с 26.10
 
@@ -25,7 +41,7 @@
 | 26.10 | Пн | `nha-cmaa` rewrite + расширить 60→120; `nremt-aemt` rewrite + расширить 60→120 | Таблица compared: PTCB (PTCB Practice Bank за аккаунтом) |
 | 27.10 | Вт | `capm` расширить 60→120; `wastewater-operator-1` расширить 60→120 | Urgency strip с verify-ссылкой: CFA L1 окно (сверить на cfainstitute.org) |
 | 28.10 | Ср | `cscs-nsca` rewrite + расширить 60→120 | Таблица compared: Series 7 |
-| 29.10 | Чт | `ashrae-certifications` rewrite 250 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: ServSafe Manager |
+| 29.10 | Чт | `ashrae-certifications` rewrite 250 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: ServSafe Manager · **AnkiWeb:** thicken ServSafe Manager FULL (thin backs) → LITE 40 → share |
 | 30.10 | Пт | `bms-bas` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: Life in the UK (official 24Q / 45 min / 75%) |
 | 31.10 | Сб | `six-sigma-green-belt` rewrite + расширить 60→120 | S3 «Example report layout»: скрин реального отчёта на лендинге (без фейковых данных) |
 | 01.11 | Вс | Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py` | — |
@@ -34,11 +50,11 @@
 
 | Дата | | Главное | Плюс немного |
 |---|---|---|---|
-| 02.11 | Пн | `california-real-estate` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: CFA L2 (Practice Pack registered-only) |
-| 03.11 | Вт | `property-casualty-insurance` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: Series 63 + Series 65 |
-| 04.11 | Ср | `nclex-rn` rewrite + расширить 60→120 | Таблица compared: PMP + LEED GA |
-| 05.11 | Чт | `cfp-certification` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `australian-citizenship-readiness-check` — сверка фактов, копирайт, samples, checkout |
-| 06.11 | Пт | `series-65` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `belgium-flanders-mo-readiness-check` — сверка фактов, копирайт, samples, checkout |
+| 02.11 | Пн | `california-real-estate` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) · **AnkiWeb LITE 40** после FULL sample-grade | Таблица compared: CFA L2 (Practice Pack registered-only) |
+| 03.11 | Вт | `property-casualty-insurance` rewrite + расширить 60→120 + каскад live-деки (apkg, Gumroad, samples) | Таблица compared: Series 63 + Series 65 · (P&C AnkiWeb уже live 21.10 — day-14 check) |
+| 04.11 | Ср | `nclex-rn` rewrite + расширить 60→120 | Таблица compared: PMP + LEED GA · **AnkiWeb:** fix LEED FULL templated notes (BD+C; GA/O+M если тот же генератор) → LITE 40 → share |
+| 05.11 | Чт | `cfp-certification` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) · **AnkiWeb LITE 40** после FULL sample-grade | civic: `australian-citizenship-readiness-check` — сверка фактов, копирайт, samples, checkout |
+| 06.11 | Пт | `series-65` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) · **AnkiWeb LITE 40** после FULL sample-grade | civic: `belgium-flanders-mo-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 07.11 | Сб | `cdl-general-knowledge` rewrite + расширить 60→120; `electrical-journeyman` расширить 60→120 | civic: `belgium-wallonie-citoyennete-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 08.11 | Вс | Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py` | — |
 
@@ -49,7 +65,7 @@
 | 09.11 | Пн | `series-79` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `canadian-citizenship-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 10.11 | Вт | `nsca-cpt` расширить 60→120 | civic: `ccse-espana-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 11.11 | Ср | `series-6` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `czech-citizenship-readiness-check` — сверка фактов, копирайт, samples, checkout |
-| 12.11 | Чт | `series-66` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `denmark-indfoedsretsproeven-readiness-check` — сверка фактов, копирайт, samples, checkout |
+| 12.11 | Чт | `series-66` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) · **AnkiWeb LITE 40** после FULL sample-grade | civic: `denmark-indfoedsretsproeven-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 13.11 | Пт | `series-99` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `leben-in-deutschland-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 14.11 | Сб | `enrolled-agent` rewrite + расширить 120→240 + каскад live-деки (apkg, Gumroad, samples) | civic: `life-in-the-uk-readiness-check` — сверка фактов, копирайт, samples, checkout |
 | 15.11 | Вс | Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py` | — |

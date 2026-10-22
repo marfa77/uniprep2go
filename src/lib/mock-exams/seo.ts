@@ -530,7 +530,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nha-cpct-readiness-check": {
     title: "Free NHA CPCT/A Practice Test | 120-Question PCT Mock",
     description:
-      "NHA CPCT/A practice: free 25-question diagnostic, full mock 120 timed questions / 120 minutes with topic scoring — then repair with the $9.99 / 120-card Anki deck. Official exam is 100+20 / 2h / scaled 390. Not CCMA / NHA CPT / ASPT. Independent — not NHA material.",
+      "NHA CPCT/A practice: free 25-question diagnostic, full mock 120 timed questions / 120 minutes with topic scoring from a 240-item bank — then repair with the $9.99 / 240-card Anki deck. Official exam is 100+20 / 2h / scaled 390. Not CCMA / NHA CPT / ASPT. Independent — not NHA material.",
     keywords: [
       "free nha cpct practice test",
       "nha cpct practice test",
@@ -541,7 +541,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NHA CPCT/A Patient Care Technician Readiness Check",
     intro:
-      "A timed 120-question / 120-minute text diagnostic for NHA CPCT/A — then drill weak domains in the linked $9.99 / 120-card Anki deck. Official 2025 test plan is 100 scored + 20 pretest items in 2 hours (scaled pass 390). Four topic buckets here — all items scored; official forms include 20 pretest items and a skills lab. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT.",
+      "A timed 120-question / 120-minute text diagnostic for NHA CPCT/A drawn from a 240-item bank — then drill weak domains in the linked $9.99 / 240-card Anki deck. Official 2025 test plan is 100 scored + 20 pretest items in 2 hours (scaled pass 390). Four topic buckets here — all items scored; official forms include 20 pretest items and a skills lab. CPCT/A is not CCMA, not NHA CPT phlebotomy, and not ASPT.",
     audience:
       "Patient care technician students and working aides preparing for NHA CPCT/A at a school site, PSI, or live remote proctoring — not CCMA or phlebotomy-only candidates.",
     practiceTestLabel: "NHA CPCT practice test",

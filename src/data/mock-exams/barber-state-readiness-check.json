@@ -201,31 +201,31 @@
     "id": "barber-state-readiness-check-infection-007",
     "examSlug": "barber-state-readiness-check",
     "topicId": "infection",
-    "prompt": "Between a chemical relaxer and the next client's haircut, when must the barber wash with soap and water?",
+    "prompt": "The barber just mixed EPA hospital disinfectant concentrate with bare hands. Before seating the next client, what hand-hygiene rule applies?",
     "options": [
       {
         "id": "a",
-        "text": "Only if that last service produced visible blood on the gloves"
+        "text": "Wash only if concentrate left a visible stain on the palms"
       },
       {
         "id": "b",
-        "text": "Once at clock-in and once at clock-out; sanitizer covers the rest"
+        "text": "Skip washing; clock-in soap and station gel cover the shift"
       },
       {
         "id": "c",
-        "text": "Before each service and after any blood or chemical contact"
+        "text": "Wash with soap and water after chemicals and before service"
       },
       {
         "id": "d",
-        "text": "Before the next cut, using alcohol gel instead of washing after chemicals"
+        "text": "Rub alcohol gel over wet concentrate instead of washing with soap"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Handwashing is a separate control from tool disinfection. Typical shop and OSHA-aligned practice is soap and water before each client and after blood, body-fluid, or chemical exposure. Alcohol gel does not remove relaxer residue the way a wash does.",
+    "explanation": "Handwashing is separate from tool disinfection. After chemical contact (including EPA concentrate on the skin) and before each client, soap and water remove residue that alcohol gel alone will not. Shift-only washing or gel over wet chemical skips that control.",
     "distractorExplanations": {
-      "a": "Hands are washed before every service, not only after visible blood.",
-      "b": "Shift-only washing leaves every mid-day client without a required hand-hygiene step.",
-      "d": "Hand sanitizer does not replace soap-and-water after chemical contact on the skin."
+      "a": "Visible stain is not the trigger; chemical contact itself requires a soap-and-water wash.",
+      "b": "Clock-in washing and gel do not cover mid-shift chemical exposure before the next client.",
+      "d": "Hand sanitizer does not replace soap-and-water after chemical product is on the skin."
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
@@ -1298,7 +1298,7 @@
       },
       {
         "id": "b",
-        "text": "For labeled high-lift or off-scalp work, not routine scalp deposit"
+        "text": "For labeled high-lift or off-scalp work."
       },
       {
         "id": "c",
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-016",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "After a nick day, the shop wants a heat-safe metal razor free of all microbial life—not only a hospital-level reduction. Which sequence matches that goal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clean the metal first, then sterilize the heat-safe implement"
+      },
+      {
+        "id": "b",
+        "text": "Wipe the blade with a dry towel until the steel looks clean"
+      },
+      {
+        "id": "c",
+        "text": "Spray disinfectant over soap and blood still on the blade"
+      },
+      {
+        "id": "d",
+        "text": "Park the soiled razor overnight in a covered station drawer"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sterilization (e.g., autoclave steam) destroys all microbial life on heat-safe metal after cleaning removes soil. Disinfection reduces pathogens on a clean nonporous surface; a dry wipe, spray over debris, or overnight storage is not sterilization.",
+    "distractorExplanations": {
+      "b": "A dry wipe is at best cleaning; it does not destroy all microbial life on the blade.",
+      "c": "Disinfectant over soil is not sterilization, and debris blocks the chemical kill step.",
+      "d": "Covered storage keeps tools off the station; it does not sterilize a soiled razor."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-017",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "Metal shears slip from the barber's hand and land on the shop floor during a cut. What must happen before those shears touch another client?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe them on the cape and resume the same haircut"
+      },
+      {
+        "id": "b",
+        "text": "Clean them, then complete EPA disinfection contact time"
+      },
+      {
+        "id": "c",
+        "text": "Blow hair off with the dryer and call that enough"
+      },
+      {
+        "id": "d",
+        "text": "Dip the tips only in alcohol for two or three seconds"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Implements that contact the floor are contaminated. NIC-level practice is to remove debris, then use an EPA-registered hospital disinfectant for the full wet contact time before the shears return to service—not a cape wipe, dryer blast, or momentary alcohol dip.",
+    "distractorExplanations": {
+      "a": "Wiping on the cape spreads floor soil onto linen and does not disinfect the blades.",
+      "c": "Air alone does not remove soil or meet an EPA hospital-disinfectant contact time.",
+      "d": "A two-second tip dip skips cleaning and the label minutes required for kill."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-018",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "The shop label on the immersion jar says hospital disinfectant. For barber multi-use tools, why does that level matter more than a household cleaner?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is meant for floors and counters, not for clipper blades or combs"
+      },
+      {
+        "id": "b",
+        "text": "It replaces cleaning, so hair-coated tools can soak as-is"
+      },
+      {
+        "id": "c",
+        "text": "It is EPA-registered to kill pathogens including HBV and HIV"
+      },
+      {
+        "id": "d",
+        "text": "It is a leave-on antiseptic meant for the client's open skin"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Hospital-level EPA-registered disinfectants used in barber shops are chosen because they are proven against tough pathogens, including bloodborne viruses such as HBV and HIV, when used on cleaned nonporous tools for the labeled contact time. Household cleaners and skin antiseptics are different product classes.",
+    "distractorExplanations": {
+      "a": "Hospital disinfectant is the wet kill step for cleaned nonporous implements, not a floor-only product.",
+      "b": "Soil blocks the chemical; cleaning still comes before any EPA soak.",
+      "d": "Hospital disinfectant is for hard tools; antiseptic is the product class used on skin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-019",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "After shaping a beard, the barber used a nylon brush that collected product and hair. How should that porous brush be handled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Soak it overnight in hospital disinfectant and reuse tomorrow"
+      },
+      {
+        "id": "b",
+        "text": "Share it if the next client wants the same beard product"
+      },
+      {
+        "id": "c",
+        "text": "Rinse it under the faucet only and return it to the drawer"
+      },
+      {
+        "id": "d",
+        "text": "Discard single-use types; clean multi-use ones per board rules"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Porous brushes are not disinfected like metal combs in an immersion jar. Single-use porous tools are discarded after one client. Where boards allow a multi-use brush, it is cleaned (and laundered or processed) per those rules—not treated as a nonporous soak item.",
+    "distractorExplanations": {
+      "a": "Hospital immersion is validated for nonporous implements; overnight soak does not make nylon metal-safe.",
+      "b": "Sharing a used porous brush transfers product debris and microbes between clients.",
+      "c": "A quick rinse skips discard or the full board cleaning path required for porous client tools."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-020",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "The barber is remixing EPA hospital disinfectant concentrate for the immersion jar. What sets the correct strength?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dilution ratio printed on the product label"
+      },
+      {
+        "id": "b",
+        "text": "A darker color so the solution looks stronger"
+      },
+      {
+        "id": "c",
+        "text": "Half the label amount to save money on concentrate"
+      },
+      {
+        "id": "d",
+        "text": "Whatever strength the previous barber left in the jar"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "EPA registration and board practice both require mixing hospital disinfectant exactly to the label dilution. Guessing from color, cutting the dose, or topping up leftover mix produces an unknown concentration that may not deliver the labeled kill on cleaned tools.",
+    "distractorExplanations": {
+      "b": "Color is not a potency meter; only the labeled ratio yields a known strength.",
+      "c": "Using half the labeled concentrate leaves a weak mix that may fail hospital-level kill.",
+      "d": "Leftover jar mix may be expired or contaminated; remix to label, do not inherit strength."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-021",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "Between clients, product residue and hair sit on the station counter where the next cape will rest. What is the correct station step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cover the mess with a fresh towel and start the next cut"
+      },
+      {
+        "id": "b",
+        "text": "Remove debris, then wipe with EPA disinfectant per label"
+      },
+      {
+        "id": "c",
+        "text": "Blow the hair onto the floor and leave the residue film"
+      },
+      {
+        "id": "d",
+        "text": "Wipe once with a dry towel until the counter looks clean"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Work surfaces that hold tools and linens are cleaned of hair and product, then wiped with an EPA-registered disinfectant for the labeled wet contact time. Covering soil, moving it to the floor, or masking odor does not disinfect the station between clients.",
+    "distractorExplanations": {
+      "a": "A towel over debris still leaves contamination under the next client's cape area.",
+      "c": "Moving hair to the floor and leaving residue skips both cleaning and disinfection.",
+      "d": "A dry wipe that looks clean is not an EPA-registered wet contact-time disinfection step."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-022",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "The barber finishes a neck shave with a disposable straight-razor blade that contacted skin. What happens to that blade?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe it, oil it, and reload it for the afternoon book"
+      },
+      {
+        "id": "b",
+        "text": "Soak it in the hospital jar and share it with the next chair"
+      },
+      {
+        "id": "c",
+        "text": "Discard it in a sharps container; do not reprocess for reuse"
+      },
+      {
+        "id": "d",
+        "text": "Rinse it at the sink and leave it on the station to dry"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Disposable razor blades are single-use sharps. After skin contact they go into an approved sharps container—not back into immersion disinfectant for another client, not rinsed and parked on the station. Multi-use razors follow clean-then-disinfect rules; disposables do not.",
+    "distractorExplanations": {
+      "a": "Oiling a used disposable blade does not make it a multi-use implement.",
+      "b": "Hospital soak is for multi-use nonporous tools, not a license to reuse a disposable blade.",
+      "d": "Sink rinsing leaves a contaminated sharp exposed and skips required disposal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-023",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "A towel used during a nick has visible blood on it. How should that linen be handled before laundry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fold it into the clean-towel stack so color does not show"
+      },
+      {
+        "id": "b",
+        "text": "Hand it to the next client as a neck wrap for the fade"
+      },
+      {
+        "id": "c",
+        "text": "Rinse it in the shampoo bowl and hang it to reuse damp"
+      },
+      {
+        "id": "d",
+        "text": "Contain it as contaminated linen and launder per shop protocol"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Blood-soiled towels are contaminated multi-use linen: contained (often bagged or in a covered hamper marked for contaminated laundry), then washed per shop/OSHA-aligned laundry rules before reuse. They are never returned to the clean stack or used on the next client while still bloody.",
+    "distractorExplanations": {
+      "a": "Hiding blood in the clean stack cross-contaminates every later towel pull.",
+      "b": "A blood towel must not contact the next client's skin or cape area.",
+      "c": "A sink rinse and damp reuse skips containment and proper laundry disinfection."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-024",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "The wet sanitizer jar at the chair holds EPA hospital disinfectant for metal combs. What jar practice keeps that step valid?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep it covered, labeled, and filled to immerse cleaned tools"
+      },
+      {
+        "id": "b",
+        "text": "Leave it open so evaporation concentrates the chemical faster"
+      },
+      {
+        "id": "c",
+        "text": "Drop hair-coated tools in so cleaning and soaking happen together"
+      },
+      {
+        "id": "d",
+        "text": "Store clean towels inside the jar between shampoo services"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Immersion disinfectant must stay covered to limit contamination and evaporation, labeled with product identity/mix info as required, and deep enough that cleaned nonporous tools stay fully wet for the contact time. Open jars, soiled loads, and linen storage break that control.",
+    "distractorExplanations": {
+      "b": "Open jars invite debris and change concentration; covering is the sanitation control.",
+      "c": "Hair and soil must be cleaned off before immersion; the jar is not a wash basin.",
+      "d": "Towels are laundered; they are not stored in wet hospital disinfectant."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-025",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "The barber's hands are visibly soiled with hair product and skin debris after a service. Hand sanitizer gel is on the station. What should the barber do before the next client?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rub gel over the soil until the hands feel sticky-dry"
+      },
+      {
+        "id": "b",
+        "text": "Wash with soap and water; gel does not remove that soil"
+      },
+      {
+        "id": "c",
+        "text": "Wipe the palms on the next client's clean cape"
+      },
+      {
+        "id": "d",
+        "text": "Skip hand hygiene if gloves will be worn for the fade"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Alcohol hand rubs are for clean hands when soap and water are not required. Visible soil, product residue, and many chemical exposures need a soap-and-water wash first. Gel over dirt, cape wiping, or relying only on gloves leaves contamination on the barber's hands.",
+    "distractorExplanations": {
+      "a": "Sanitizer does not lift packed product and debris the way soap and water do.",
+      "c": "Wiping on a cape contaminates linen meant for the next client.",
+      "d": "Gloves are added protection; they do not replace washing soiled hands between clients."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-026",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "During a beard finish, the barber dips a finger into the open pomade jar, applies product, then dips the same finger back into the jar. Why is that a problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pomade alcohol content disinfects the jar after each dip"
+      },
+      {
+        "id": "b",
+        "text": "It only matters if the client has a known bloodborne illness"
+      },
+      {
+        "id": "c",
+        "text": "It contaminates the multi-use jar for every later client"
+      },
+      {
+        "id": "d",
+        "text": "It is allowed if the jar is wiped with alcohol afterward"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Double-dipping transfers microbes and debris from skin back into a shared product. Dispense with a clean spatula or single-use portion instead. Standard precautions apply to every client; wiping the jar exterior does not sterilize contaminated cream inside.",
+    "distractorExplanations": {
+      "a": "Leave-on pomade is not an EPA jar disinfectant; double-dipping still seeds the product.",
+      "b": "You do not wait for a diagnosis; every client's contact can contaminate the jar.",
+      "d": "Alcohol on the outside of the jar does not clean product already seeded with skin flora."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-027",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "After gloving for a blood nick and finishing the exposure steps, the barber still has the same gloves on. What is the correct glove end-point?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove gloves, wash hands, then continue with clean technique"
+      },
+      {
+        "id": "b",
+        "text": "Keep those gloves on for the rest of the shift to save stock"
+      },
+      {
+        "id": "c",
+        "text": "Rinse the gloved hands and use them as a second skin all day"
+      },
+      {
+        "id": "d",
+        "text": "Bag them carefully and save them in the drawer for the next nick"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Gloves used for a blood exposure are single-task PPE. After the nick protocol, remove them carefully, discard, and wash hands with soap and water before returning to tools or the next client. Reusing or rinsing contaminated gloves defeats the barrier.",
+    "distractorExplanations": {
+      "b": "Blood-task gloves are not all-day PPE; they are removed after the exposure steps.",
+      "c": "Rinsing gloves leaves contamination and is not a substitute for removal and handwashing.",
+      "d": "Saving used blood gloves reuses contaminated PPE; they are discarded after the nick protocol."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-028",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "A walk-in for a fade has active head lice visible at the nape. What should the barber do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cut quickly with gloves so the shop still collects the fee"
+      },
+      {
+        "id": "b",
+        "text": "Decline the service and refer the client for medical care"
+      },
+      {
+        "id": "c",
+        "text": "Spray hospital disinfectant on the scalp and proceed"
+      },
+      {
+        "id": "d",
+        "text": "Comb the lice into a towel and finish the booked fade"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pediculosis is a contagious parasite infestation. Barber theory expects the service to stop and the client to be referred—not clipped through infestation. EPA tool disinfectant and gloves do not turn an active lice case into a safe haircut.",
+    "distractorExplanations": {
+      "a": "Speed and gloves do not authorize cutting through a contagious infestation.",
+      "c": "Hospital disinfectant is for nonporous tools, not a scalp treatment that clears lice for service.",
+      "d": "Combing lice into linen spreads infestation and still completes an improper service."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-029",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "Disinfected metal combs are ready for the next client, but used soiled combs are still on the same open tray. What storage practice is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mix them; the tray itself counts as disinfection"
+      },
+      {
+        "id": "b",
+        "text": "Stack clean under soiled so gravity keeps them safer"
+      },
+      {
+        "id": "c",
+        "text": "Keep clean tools separate from soiled tools until used"
+      },
+      {
+        "id": "d",
+        "text": "Store both sets in the client's cape pocket between cuts"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Clean/disinfected implements must be stored apart from soiled ones so recontamination does not undo the EPA step. A shared open tray, stacking clean under dirty, or parking tools in a cape pocket mixes clean and dirty inventory.",
+    "distractorExplanations": {
+      "a": "Contact with soiled tools recontaminates the clean set; trays do not disinfect.",
+      "b": "Soiled tools above clean ones drip and transfer debris onto the ready set.",
+      "d": "Cape pockets are not clean closed storage and contaminate both linen and tools."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-infection-030",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "infection",
+    "prompt": "After stopping a nick, the barber needs one product for the client's skin and another for the metal tools. Which pairing is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hospital disinfectant on the wound; antiseptic soak for the shears"
+      },
+      {
+        "id": "b",
+        "text": "Blade oil on the nick; hand lotion as the tool disinfectant"
+      },
+      {
+        "id": "c",
+        "text": "Shampoo on the nick; UV light alone for the bloodied shears"
+      },
+      {
+        "id": "d",
+        "text": "Antiseptic on the client's skin; EPA disinfectant on cleaned tools"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Antiseptics are formulated for living skin; EPA-registered hospital disinfectants are for cleaned nonporous implements after the exposure. Swapping those roles—or substituting oil, lotion, shampoo, or UV alone—misses both client care and tool disinfection.",
+    "distractorExplanations": {
+      "a": "Hospital disinfectant is not painted into a wound; antiseptic is the skin product.",
+      "b": "Blade oil and lotion are not EPA disinfectants and do not treat a nick.",
+      "c": "Shampoo is not wound care, and UV storage does not replace wet EPA disinfection of soiled shears."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-031",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Before starting a fade, the barber drapes the client. The cape is clipped snug at the neck with no neck strip. What is the main risk during the cut?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loose hair and clipper oil can fall onto the client's skin and collar"
+      },
+      {
+        "id": "b",
+        "text": "The cape sterilizes the neck, so a strip is reserved for chemical services"
+      },
+      {
+        "id": "c",
+        "text": "A snug cape without a strip locks the fade guideline in place better"
+      },
+      {
+        "id": "d",
+        "text": "Clipper blades stay sharper because hair stays off the cape fabric"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A disposable neck strip (or equivalent barrier) sits between the cape and the client's neck so cut hair, product, and debris do not contact skin or the collar. Clipping the cape tight alone does not create that barrier. The strip is client protection for cutting and shaving, not a chemical-only step.",
+    "distractorExplanations": {
+      "b": "A neck strip is standard client protection for haircuts and shaves; it is not limited to chemical services and does not sterilize anything.",
+      "c": "Draping does not set the fade guideline; a missing strip is a sanitation and comfort failure, not a blending aid.",
+      "d": "Hair still hits the blades either way; the strip protects the client, not clipper sharpness."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-032",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "A client asks for a high skin fade. Where should the first bald guideline typically sit relative to a low taper?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the natural nape, leaving the temples at full bulk"
+      },
+      {
+        "id": "b",
+        "text": "Higher on the sides and back so skin shows closer to the parietal"
+      },
+      {
+        "id": "c",
+        "text": "Across the crown so the entire top is shaved to the same skin level"
+      },
+      {
+        "id": "d",
+        "text": "Below the occipital bone so the fade stays low past the ear"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fade height is a placement choice. A high skin fade pushes the zero/skin line up the sides and back toward the parietal ridge; a low taper keeps that transition near the natural hairline. The top length is a separate decision — a high fade does not mean the crown is balded.",
+    "distractorExplanations": {
+      "a": "Keeping temples full while only nape-skinning is not a high skin fade on the sides.",
+      "c": "Shaving the crown to skin is a bald or buzz finish, not the meaning of a high fade guideline.",
+      "d": "Staying below the occipital describes a low taper zone, the opposite of a high fade."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-033",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Blending longer top hair into a mid fade, the barber stands the comb on edge and cuts across the teeth with shears. What is this shear-over-comb pass controlling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A foil-shaver skin finish that replaces the last clipper guard"
+      },
+      {
+        "id": "b",
+        "text": "A hard blocked neckline carved an inch above the natural nape"
+      },
+      {
+        "id": "c",
+        "text": "A soft graduated plane where clipper length meets finger length"
+      },
+      {
+        "id": "d",
+        "text": "Complete removal of the parietal ridge so no weight remains"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Shear-over-comb uses the comb as a movable cutting guide for lengths too long for a short guard. It creates a graduated plane that melts clipper-faded sides into longer top hair without a shelf. It is not a shaver, a neckline block, or a tool for scalping the ridge.",
+    "distractorExplanations": {
+      "a": "A foil shaver finishes skin at the bottom of a bald fade; shear-over-comb works in longer hair.",
+      "b": "A blocked neckline is an outline with trimmers; shear-over-comb is an interior blend technique.",
+      "d": "The goal is controlled graduation, not erasing the parietal ridge entirely."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-034",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Detailing a bald fade, the barber removes the guard and freehands the zero line with the bare blade. What must stay true for a clean edge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rock the heels hard into the scalp so the blades dig under the skin"
+      },
+      {
+        "id": "b",
+        "text": "Make one continuous climb from nape to crown without stopping to check"
+      },
+      {
+        "id": "c",
+        "text": "Keep the lever fully closed and skip any lever movement while freehanding skin"
+      },
+      {
+        "id": "d",
+        "text": "Keep light contact, stretch the skin, and work in short overlapping strokes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Freehand zero work needs control: light blade contact, stretched skin, and short overlapping strokes so the skin line stays even. Digging the heels, racing a single long climb, or locking the lever as a rigid rule all raise nick and shelf risk. Lever flicking is often part of refining the blend just above skin.",
+    "distractorExplanations": {
+      "a": "Digging heels under the skin causes nicks and irritation; freehand still uses a light lie on the surface.",
+      "b": "Stopping to check symmetry and fade height is professional; a blind continuous climb creates waves.",
+      "c": "The lever is a blending tool above the zero; locking it closed for the whole freehand pass is not required for a clean edge."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-035",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "A client with a square jaw wants a fuller chin beard and cleaner cheeks. Which facial-hair design best supports that request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise the cheek line and leave more density through the chin and jaw"
+      },
+      {
+        "id": "b",
+        "text": "Shave the chin to skin and keep the fullest growth high on the cheeks"
+      },
+      {
+        "id": "c",
+        "text": "Round the cheek line down into the sideburns so the jaw reads wider"
+      },
+      {
+        "id": "d",
+        "text": "Strip the mustache completely so all visual weight sits on the neck"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Beard design follows bone and the client's goal. Raising the cheek line cleans the mid-face while leaving chin and jaw density emphasizes a stronger lower third — a common square-jaw request. Filling the cheeks, emptying the chin, or removing the mustache for neck weight works against that silhouette.",
+    "distractorExplanations": {
+      "b": "A bare chin with heavy cheeks softens the jaw and fights a fuller-chin request.",
+      "c": "Dropping a round cheek into the sideburns adds width; it does not clean the cheeks or focus the chin.",
+      "d": "Removing the mustache and loading the neck ignores the chin-fullness goal and unbalances the face."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-036",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Outlining a mustache at the upper lip, the client wants a soft natural edge, not a hard graphic line. What is the safer detailing choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carve a deep inverted-V into the philtrum with a foil shaver"
+      },
+      {
+        "id": "b",
+        "text": "Follow the natural lip growth and tidy stray hairs with light trimmer passes"
+      },
+      {
+        "id": "c",
+        "text": "Shave a full finger-width of clear skin above the entire vermilion border"
+      },
+      {
+        "id": "d",
+        "text": "Cut the mustache against the grain with open shears resting on the lip"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A soft mustache edge follows the client's natural lip growth and removes only stray hairs with controlled trimmer work. Deep graphic shapes, wide clear-skin borders, and open shears on the lip create hard lines or injury risk the client did not ask for.",
+    "distractorExplanations": {
+      "a": "A foil-shaved inverted-V is a graphic outline; it will not read as a soft natural edge.",
+      "c": "Clearing a full finger of skin above the lip is a hard, high line — the opposite of soft and natural.",
+      "d": "Open shears on the lip are unsafe and do not produce a clean soft outline the way a trimmer does."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-037",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "The ticket calls for a disconnected undercut with a long textured top. Where should the barber leave the visible weight line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nowhere — a disconnected undercut should still be blended fully to zero"
+      },
+      {
+        "id": "b",
+        "text": "At the nape alone, while the sides are shear-blended into the top"
+      },
+      {
+        "id": "c",
+        "text": "At the agreed parietal shelf where short sides meet the longer top"
+      },
+      {
+        "id": "d",
+        "text": "Across the forehead hairline so the fringe hangs below the brows"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A disconnected undercut intentionally keeps a shelf where short sides meet longer top hair. That weight line sits at the height the client approved — usually along the parietal — not erased by a full fade and not relocated to the fringe or only the nape unless consultation says so.",
+    "distractorExplanations": {
+      "a": "Disconnect means the shelf stays; forcing a full fade removes the undercut's defining line.",
+      "b": "Shear-blending the sides into the top reconnects the cut; that is the opposite of a disconnect.",
+      "d": "Fringe length is a separate top decision; it is not where the undercut weight line belongs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-038",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Cutting a classic flat-top, the barber builds the top square. What establishes the flat cutting plane?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A random freehand #1 over the crown until the head looks rounder"
+      },
+      {
+        "id": "b",
+        "text": "Thinning shears walked from the hairline back to soften the corners"
+      },
+      {
+        "id": "c",
+        "text": "A foil shaver across the parietal ridge to drop all top weight"
+      },
+      {
+        "id": "d",
+        "text": "Fingers or a flat comb held level while clipper or shears cut across"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A flat-top's square plane comes from a level guide — fingers or a flat comb — that the clipper or shears cut against. Freehand rounding, thinning the corners, or shaving the ridge destroy the flat silhouette the style requires.",
+    "distractorExplanations": {
+      "a": "Freehand short work rounds the crown; it does not build a flat square plane.",
+      "b": "Thinning softens density; it does not establish the geometric flat top line.",
+      "c": "A foil shaver on the ridge removes the length needed for a flat-top's height."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-039",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Sideburns must match a mid skin fade and the client's ear shape. What is the correct length and blend decision?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match both sides to the fade height and keep the sideburn outline even"
+      },
+      {
+        "id": "b",
+        "text": "Leave one sideburn longer as a signature so the fade looks custom"
+      },
+      {
+        "id": "c",
+        "text": "End both sideburns at the nostril line regardless of fade or ear"
+      },
+      {
+        "id": "d",
+        "text": "Shave sideburns to skin on the dominant-hand side of the chair"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sideburns are part of the fade and the face frame. Both sides should sit at a matching height that fits the fade and the ear, with a clean, even outline. Asymmetry for “style,” fixed nostril rules, or one-sided skinning are not professional balance.",
+    "distractorExplanations": {
+      "b": "Uneven sideburns read as a mistake, not a custom flourish, especially beside a skin fade.",
+      "c": "A nostril-line rule ignores this client's fade height and ear anatomy.",
+      "d": "Shaving only one side is an obvious imbalance; both sides follow the same plan."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-040",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Using a clipper with a detachable blade, the barber opens the taper lever. What does that adjustment do to the cut length?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Locks the blade so it cuts wet hair in the shampoo bowl"
+      },
+      {
+        "id": "b",
+        "text": "Leaves hair slightly longer than the same blade with the"
+      },
+      {
+        "id": "c",
+        "text": "Converts any blade into a foil shaver for true skin balding"
+      },
+      {
+        "id": "d",
+        "text": "Doubles the guard number so a #1 behaves exactly like a #2"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "On a lever clipper, closing the lever tightens the cutting gap (shorter); opening it widens the gap so the same blade leaves hair a bit longer. That fine range is how barbers erase bands between guards. It does not create a foil shaver or literally double a numbered guard.",
+    "distractorExplanations": {
+      "a": "The lever is a length blender for cutting on the head, not a wet-bowl lockout.",
+      "c": "A foil shaver is a different tool; opening the lever only nudges detachable-blade length.",
+      "d": "Lever range is a fraction of a guard step, not a full jump from #1 to #2."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-041",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Arching the client's eyebrows with a trimmer during a haircut finish. What keeps the service within safe barber detailing practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shave both brows completely so the forehead reads taller for the fade"
+      },
+      {
+        "id": "b",
+        "text": "Carve a thin high arch copied from a magazine without checking the bone"
+      },
+      {
+        "id": "c",
+        "text": "Remove only stray hairs along the natural brow shape the client approved"
+      },
+      {
+        "id": "d",
+        "text": "Use the foil shaver on the lid skin to permanently stop brow regrowth"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Barber brow work is light detailing: tidy strays that follow the natural arch the client agreed to. Full shaving, trendy high carves without consultation, or foil work on lid skin are unsafe or redesign the face beyond a haircut finish.",
+    "distractorExplanations": {
+      "a": "Shaving brows bald is not a standard haircut finish and drastically changes the face.",
+      "b": "Copying a magazine arch ignores this client's bone and approval; over-arching is a common regret.",
+      "d": "A foil shaver on lid skin risks injury and does not permanently stop growth."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-042",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "The client wears glasses and wants a tight temple fade. Before the clipper approaches the temple, what client-protection step comes first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cut through the frames so the fade guideline stays perfectly straight"
+      },
+      {
+        "id": "b",
+        "text": "Ask the client to keep glasses on so frames mark the exact zero line"
+      },
+      {
+        "id": "c",
+        "text": "Tape the glasses to the forehead so they cannot shift during freehand work"
+      },
+      {
+        "id": "d",
+        "text": "Remove the glasses, protect the ear, and work the temple with clear access"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Glasses block the temple and risk scratches or an uneven line. Remove them, keep the ear protected as needed, then cut with a clear view of the skin and hairline. Cutting through frames or using the glasses as a guide is unsafe and imprecise.",
+    "distractorExplanations": {
+      "a": "Cutting against frames can scratch lenses and leave an uneven fade beside the hardware.",
+      "b": "Frames hide growth and push the guideline off; they are not a zero-line template.",
+      "c": "Taping glasses to the forehead still obstructs the temple and is not a protection method."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-043",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Building a layered scissor top over a taper, the barber lifts a parietal section to 90 degrees from the head. What does that elevation primarily produce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Layers with less weight at the ends than a low, heavy elevation cut"
+      },
+      {
+        "id": "b",
+        "text": "A solid one-length outline that stacks maximum weight at the perimeter"
+      },
+      {
+        "id": "c",
+        "text": "A skin-tight bald fade because elevation replaces the need for guards"
+      },
+      {
+        "id": "d",
+        "text": "No length change at all, because elevation is just a shampoo concept"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Elevation controls weight. Lifting toward 90 degrees shortens the ends relative to the base and creates layered movement; lower elevation leaves more perimeter weight. Elevation does not create a bald fade or a one-length stack by itself.",
+    "distractorExplanations": {
+      "b": "A heavy one-length perimeter comes from low or zero elevation, not a 90-degree lift.",
+      "c": "Bald fades are clipper/shaver length choices; elevation is a shear geometry, not a guard substitute.",
+      "d": "Elevation changes where the cut falls when hair is released; it is not a shampoo concept."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-044",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Texturizing a thick fringe with a barber cutting razor, the barber wants movement without dropping the overall length. Where should the razor work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flat against the scalp at the hairline to carve a new hard part"
+      },
+      {
+        "id": "b",
+        "text": "Mid-shaft to ends with light, controlled strokes away from the root"
+      },
+      {
+        "id": "c",
+        "text": "In one heavy root-to-tip scrape that removes a full inch of length"
+      },
+      {
+        "id": "d",
+        "text": "On wet, uncombed clumps so the razor catches the maximum bulk"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A cutting razor textures when it takes thin slices mid-shaft to ends with light control, leaving the outline length. Scalp-flat carving, heavy root-to-tip scrapes, and hacking uncombed clumps remove length or create holes instead of soft movement.",
+    "distractorExplanations": {
+      "a": "A razor flat on the scalp is outlining or hard-part work, not fringe texturizing for movement.",
+      "c": "A heavy root-to-tip scrape shortens the fringe; that is length removal, not texturizing in place.",
+      "d": "Uncombed clumps let the razor grab unevenly and dig holes; hair should be controlled and sectioned."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-cutting-045",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "cutting",
+    "prompt": "Palm-to-palm shear work on the top: the barber's palms face each other with the still blade controlled by the finger. Why is this hold taught for precision cutting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It forces maximum tension so dry cowlicks can be stretched flat"
+      },
+      {
+        "id": "b",
+        "text": "It replaces the need to sanitize shears between clients on a busy day"
+      },
+      {
+        "id": "c",
+        "text": "It keeps the shear steady and the moving blade under fine finger control"
+      },
+      {
+        "id": "d",
+        "text": "It lets the barber cut faster by pointing the tips straight into the scalp"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Palm-to-palm (and related palm control) keeps the still blade stable while the finger operates the moving blade for accurate, small cuts. It is an ergonomics and precision hold — not a tension trick, a sanitation shortcut, or permission to stab tips into the scalp.",
+    "distractorExplanations": {
+      "a": "Hold does not require over-tensioning cowlicks; stretch control is a separate cutting decision.",
+      "b": "Shear sanitation between clients is still required regardless of grip style.",
+      "d": "Tips aimed into the scalp are a nick hazard; palm control is for accuracy, not reckless speed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-016",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Before a straight-razor shave, the barber builds a rich lather on the beard. What is the main chemical-service purpose of that cream or soap?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Softens the hair and lubricates the skin so the blade glides"
+      },
+      {
+        "id": "b",
+        "text": "Raises the cuticle with high alkalinity like a hydroxide cream"
+      },
+      {
+        "id": "c",
+        "text": "Oxidizes gray beard hair the same way 20-volume developer does"
+      },
+      {
+        "id": "d",
+        "text": "Sterilizes the face so an EPA disinfectant rinse is unnecessary"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shaving cream or soap softens the keratin, holds moisture, and lubricates so the edge cuts with less drag and nick risk. It is not a relaxer, oxidizer, or disinfectant substitute. After the shave, rinse and finish with an astringent or aftershave as the service requires—not EPA tool chemistry on the face.",
+    "distractorExplanations": {
+      "b": "Hydroxide alkalinity opens the cuticle for relaxing; shaving lather is not that chemistry.",
+      "c": "Developer oxidizes tint; lather is a softener and lubricant, not an oxidative colorant.",
+      "d": "Lather is not sterilization; implements still need proper disinfection, and skin is not EPA-disinfected."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-017",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "After a close shave, the barber pats on an alcohol-based astringent. What is that finish mainly doing for the skin?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depositing oxidative pigment to darken residual stubble"
+      },
+      {
+        "id": "b",
+        "text": "Tightening the tissue slightly and helping close open pores"
+      },
+      {
+        "id": "c",
+        "text": "Breaking disulfide bonds so the next shave lasts longer"
+      },
+      {
+        "id": "d",
+        "text": "Raising skin pH to 12 so the acid mantle stays open"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Astringents (often alcohol, witch hazel, or labeled aftershave) contract surface tissue, can reduce oil sheen, and help close pores after a close shave. They do not color hair, reduce disulfide bonds, or push skin to hydroxide-relaxer pH. Over-drying alcohol can irritate; follow with a soothing lotion if the skin is sensitive.",
+    "distractorExplanations": {
+      "a": "Oxidative color needs dye + developer; astringent is a skin finish, not a pigment deposit.",
+      "c": "Disulfide reduction is thio/relaxer territory, not aftershave chemistry.",
+      "d": "Healthy skin sits near acid mantle pH; astringents do not drive the face to pH 12."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-018",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A small nick bleeds during a shave. After cleaning the area under blood-spill steps, which styptic product is the usual chair-side chemistry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "40-volume developer dabbed into the cut to cauterize it"
+      },
+      {
+        "id": "b",
+        "text": "Sodium-hydroxide relaxer cream pressed on as a sealant"
+      },
+      {
+        "id": "c",
+        "text": "Alum or styptic powder applied to contract and stop seepage"
+      },
+      {
+        "id": "d",
+        "text": "Undiluted EPA quat poured from the immersion jar onto skin"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Styptic powder or an alum block is the classic astringent used to contract tissue and help stop minor bleeding after a nick once the wound is cleaned per blood-exposure protocol. Color developer, relaxer cream, and EPA tool disinfectant are wrong chemistries for open skin and can burn or contaminate.",
+    "distractorExplanations": {
+      "a": "High-volume peroxide is a color oxidizer and irritant—not a styptic for open cuts.",
+      "b": "Hydroxide cream is caustic; pressing it into a nick deepens chemical injury.",
+      "d": "EPA quats are for implements after cleaning, not for pouring onto client skin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-019",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A hot towel is steamed and wrapped on the face before the razor pass. How does that heat-and-moisture step help the shave chemically?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It oxidizes the beard with free peroxide released from steam"
+      },
+      {
+        "id": "b",
+        "text": "It lanthionizes disulfide bonds the same way a lye relaxer does"
+      },
+      {
+        "id": "c",
+        "text": "It sterilizes follicles so antiseptic aftershave can be skipped"
+      },
+      {
+        "id": "d",
+        "text": "It hydrates and softens the hair shaft so the blade cuts more easily"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Steam and warm moisture swell and soften the beard so the edge meets a more pliable fiber, reducing tug. Hot towels do not oxidize color, do not lanthionize like hydroxide, and do not replace sanitation or aftershave judgment. Overheating can burn skin, so towels are tested and timed, not left scalding.",
+    "distractorExplanations": {
+      "a": "Steam is water vapor; it does not supply hydrogen peroxide for oxidation.",
+      "b": "Lanthionization requires hydroxide chemistry, not a towel wrap.",
+      "c": "Heat softens hair; it is not sterilization and does not cancel aftercare choices."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-020",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "The ticket calls for a hydroxide relaxer. Why does the barber apply a petroleum or labeled base cream to the scalp hairline before the cream?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To protect skin from caustic cream while new growth is processed"
+      },
+      {
+        "id": "b",
+        "text": "To raise scalp pH so the relaxer can skip the water rinse"
+      },
+      {
+        "id": "c",
+        "text": "To deposit temporary color that hides any uneven straighten"
+      },
+      {
+        "id": "d",
+        "text": "To replace the neutralizing shampoo after the timer ends"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Base cream (often petrolatum or a manufacturer scalp protectant) is a barrier so highly alkaline hydroxide stays off vulnerable skin at the hairline and ears while virgin new growth is processed. It does not change rinse or neutralization steps, add color, or let you skip manufacturer aftercare.",
+    "distractorExplanations": {
+      "b": "Base protects skin; it does not raise pH to eliminate rinsing of caustic product.",
+      "c": "Base is a protectant, not a camouflage colorant for uneven texture.",
+      "d": "Neutralizing shampoo (when directed) still follows rinse; base is not a substitute."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-021",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Mixing oxidative tint for a beard gray blend, the barber free-pours developer ‘by eye’ instead of measuring. What is the main risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The dye will refuse to open the cuticle even with longer processing"
+      },
+      {
+        "id": "b",
+        "text": "Wrong peroxide strength can under- or over-oxidize and irritate"
+      },
+      {
+        "id": "c",
+        "text": "Shampoo needs measured ratios; color formulas can be free-poured"
+      },
+      {
+        "id": "d",
+        "text": "Free-pouring automatically converts 10-volume into 40-volume"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Manufacturer ratios set the oxidizer strength and dye balance. Guessing the pour can leave gray coverage weak, push too much lift/irritation, or create an unpredictable result. Volume is a concentration label—you do not ‘upgrade’ 10-volume by pouring sloppy; you mix the labeled developer to the stated ratio.",
+    "distractorExplanations": {
+      "a": "Wrong mix can still process; the problem is uncontrolled result and irritation, not a permanent refusal to open.",
+      "c": "Color formulas depend on measured developer ratios; shampoo ratios are a different product.",
+      "d": "Pouring more liquid does not change peroxide concentration the way switching bottles does."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-022",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A client’s scalp and hair sit near pH 4.5–5.5. Why does a clarifying alkaline shampoo leave the cuticle feeling rough until an acid rinse or conditioner follows?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alkaline cleansers deposit metallic salts that must be bleached out"
+      },
+      {
+        "id": "b",
+        "text": "Alkaline washes lower pH below 3 and glue the cuticle shut too hard"
+      },
+      {
+        "id": "c",
+        "text": "Alkalinity lifts the cuticle; acid-balanced finish helps reseat it"
+      },
+      {
+        "id": "d",
+        "text": "Shampoo pH has no effect; clipper oil is what changes cuticle feel"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Products above the acid mantle raise and roughen the cuticle for cleansing; acid-balanced rinses or conditioners bring pH back toward 4.5–5.5 so the cuticle lies flatter and hair feels smoother. Alkaline shampoo is not metal deposition or a drop below pH 3, and mechanical oiling of tools is unrelated to fiber pH.",
+    "distractorExplanations": {
+      "a": "Metallic salts come from progressive dyes/compound henna, not ordinary clarifying shampoo.",
+      "b": "Alkaline cleansers raise pH; they do not drive the hair into strong acid territory.",
+      "d": "Cuticle swell and feel track product pH; clipper oil is implement lubrication only."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-023",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "After rinsing hydroxide relaxer thoroughly, why does the barber follow with the manufacturer’s neutralizing (acid) shampoo when directed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To add more alkali so any missed curl keeps processing overnight"
+      },
+      {
+        "id": "b",
+        "text": "To replace the water rinse so the first rinse step can be skipped"
+      },
+      {
+        "id": "c",
+        "text": "To oxidize thio bonds, because hydroxide and thio share one neutralizer"
+      },
+      {
+        "id": "d",
+        "text": "To help return hair toward acid-mantle pH and stop alkaline action"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hydroxide services leave high alkalinity on the hair. An acid-balanced neutralizing shampoo (when the maker requires it) helps bring pH down toward the acid mantle and halt residual alkaline swelling after a thorough water rinse. It is not a second dose of alkali, not a rinse substitute, and not the oxidizer used for thio bond rebuilding.",
+    "distractorExplanations": {
+      "a": "Extra alkali would continue damage; neutralization aims to stop alkaline processing.",
+      "b": "Water rinse removes bulk cream first; shampoo does not replace that safety step.",
+      "c": "Thio needs an oxidizing neutralizer; hydroxide aftercare is acid balance, not shared thio chemistry."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-024",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A walk-in wants temporary beard color that washes out in a few shampoos, not oxidative gray coverage. Which product class matches that request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Color rinse or mascara-style temporary pigment that coats the hair"
+      },
+      {
+        "id": "b",
+        "text": "Aniline permanent tint mixed with 20-volume for scalp application"
+      },
+      {
+        "id": "c",
+        "text": "High-lift powder bleach with 40-volume left on until pale yellow"
+      },
+      {
+        "id": "d",
+        "text": "Sodium-hydroxide cream timed until the beard feels silky-straight"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Temporary color sits on or lightly stains the surface and rinses with shampooing; it is the match for short-term beard camouflage without oxidative development. Permanent aniline tint, high-lift bleach, and hydroxide relaxer are different chemical families with lasting bond or pigment changes—not ‘washes out in a few shampoos.’",
+    "distractorExplanations": {
+      "b": "Oxidative permanent tint is designed to last through many shampoos, not rinse out quickly.",
+      "c": "Bleach lightens melanin; it is not temporary coat-on color.",
+      "d": "Hydroxide changes texture permanently; it is not a temporary colorant."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-025",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Pre-shave oil is massaged into a coarse beard before lather. What is its practical role in the shave chemistry sequence?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It permanently straightens coarse whiskers like a thio cream"
+      },
+      {
+        "id": "b",
+        "text": "It adds slip and holds moisture so lather and blade meet less drag"
+      },
+      {
+        "id": "c",
+        "text": "It substitutes for styptic powder if a nick occurs mid-pass"
+      },
+      {
+        "id": "d",
+        "text": "It raises beard pH to 13 so the razor can skip with-the-grain passes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pre-shave oil is a lubricant and moisture holder that helps lather adhere and reduces friction for the edge. It does not relax disulfide bonds, stop bleeding, or push the beard to hydroxide pH. The shave still follows grain/against-grain teaching and proper blood-spill products when needed.",
+    "distractorExplanations": {
+      "a": "Thio/hydroxide change bonds; pre-shave oil is cosmetic slip, not a relaxer.",
+      "c": "Styptic or alum handles minor bleeding; oil is not a hemostatic.",
+      "d": "Oil does not alkalize hair to relaxer pH or cancel correct pass direction."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-026",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "The barber needs 20-volume developer but only has 40-volume on the shelf. What is the safe mixing decision for ordinary gray coverage?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the 40-volume full strength and cut the processing time in half"
+      },
+      {
+        "id": "b",
+        "text": "Stir 40-volume with shampoo until the mix ‘feels’ like 20-volume strength"
+      },
+      {
+        "id": "c",
+        "text": "Obtain labeled 20-volume or follow a maker dilution chart; do not guess"
+      },
+      {
+        "id": "d",
+        "text": "Brush undiluted 40-volume on the scalp because gray needs more lift"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Oxidizer strength must match the formula. Halving time, mixing with shampoo by feel, or putting 40-volume on the scalp for routine gray work creates irritation and uncontrolled lift. Use the correct labeled volume or a manufacturer-published dilution method—never improvise peroxide strength at the chair.",
+    "distractorExplanations": {
+      "a": "Time cuts do not convert 12% peroxide into a safe 6% scalp formula.",
+      "b": "Shampoo dilution is not a calibrated way to hit labeled volume strength.",
+      "d": "Routine gray coverage uses ~20-volume; 40-volume is high-lift territory and harsh on scalp."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-027",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Ammonia (or another alkalizing agent) appears in many oxidative color formulas. What job does that alkalinity do during processing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It lowers hair pH so the cuticle stays tightly locked during deposit"
+      },
+      {
+        "id": "b",
+        "text": "It replaces hydrogen peroxide so developer can be left out of the mix"
+      },
+      {
+        "id": "c",
+        "text": "It permanently lanthionizes the fiber the same way sodium hydroxide does"
+      },
+      {
+        "id": "d",
+        "text": "It swells the cuticle so dye and peroxide can enter the cortex"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Alkalizers in oxidative color raise pH enough to lift the cuticle so small dye intermediates and peroxide can reach the cortex, then oxidation forms larger color molecules. Ammonia does not replace peroxide, does not acid-lock the cuticle during that step, and is not hydroxide lanthionization used in relaxing.",
+    "distractorExplanations": {
+      "a": "Alkalizers raise pH to open the cuticle; acid finishes come after, not during, that swell.",
+      "b": "Peroxide is still required to develop oxidative dye; ammonia is not the oxidizer.",
+      "c": "Lanthionization is hydroxide relaxing chemistry, not standard tint alkalizing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-028",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "A cold towel or cool rinse finishes a hot-towel shave before aftershave. What is the main benefit of that temperature change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It helps close pores slightly and calms heat-flushed skin"
+      },
+      {
+        "id": "b",
+        "text": "It activates leftover lather into an oxidative gray toner"
+      },
+      {
+        "id": "c",
+        "text": "It raises skin pH to match a hydroxide relaxer’s working range"
+      },
+      {
+        "id": "d",
+        "text": "It sterilizes the face so tools need no disinfection that day"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cool water after heat constricts surface vessels and follicles somewhat and feels soothing after steam and razor work. It does not turn soap into color chemistry, push skin to relaxer alkalinity, or replace implement disinfection. Aftershave or lotion still follows shop preference and skin condition.",
+    "distractorExplanations": {
+      "b": "Lather is not an oxidative toner; cool water does not develop gray coverage.",
+      "c": "Cool rinses do not alkalize skin to hydroxide service pH.",
+      "d": "Client comfort steps never cancel EPA disinfection of tools between clients."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-029",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Two manufacturers’ peroxide and tint tubes are open at the station. The barber wants to mix Brand A color with Brand B developer to finish a bottle. What is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Any peroxide brand is interchangeable at the same volume number"
+      },
+      {
+        "id": "b",
+        "text": "Stay within one labeled system unless the maker states compatibility"
+      },
+      {
+        "id": "c",
+        "text": "Cross-mixing is preferred because it cancels allergy risk"
+      },
+      {
+        "id": "d",
+        "text": "Mix them 1:1 with tap water to neutralize brand differences"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Color systems are tested as kits. Volume numbers look similar, but buffers, stabilizers, and dye bases differ; cross-brand mixes can underperform or irritate. Manufacturer directions—or an explicit compatibility statement—control mixing. Water dilution or ‘same volume = same product’ guesses are not safe substitutes.",
+    "distractorExplanations": {
+      "a": "Matching volume labels does not prove formula compatibility across brands.",
+      "c": "Cross-mixing does not reduce allergy risk and can create an untested formula.",
+      "d": "Tap water dilution changes strength unpredictably and does not ‘neutralize’ brand chemistry."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-chemistry-030",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "chemistry",
+    "prompt": "Hard water leaves mineral film on a fade, so color looks dull after shampoo. How should the barber plan the chemistry before an oxidative service?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip shampoo entirely so minerals can ‘seal’ the new tint"
+      },
+      {
+        "id": "b",
+        "text": "Use 40-volume alone as a clarifying wash before the gray blend"
+      },
+      {
+        "id": "c",
+        "text": "Clarify or chelate per product directions, then mix color as labeled"
+      },
+      {
+        "id": "d",
+        "text": "Add table salt to the developer to dissolve calcium in the bowl"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Mineral buildup blocks even uptake. A clarifying or chelating shampoo used as directed removes film so the oxidative formula behaves predictably; then mix and time per the color label. Skipping cleanse, using high-volume peroxide as a wash, or salting the developer are unsafe or ineffective workarounds.",
+    "distractorExplanations": {
+      "a": "Dirty, mineral-coated hair blocks even color; cleansing/chelating is the prep, not sealing dirt in.",
+      "b": "40-volume is a high-lift oxidizer, not a clarifying shampoo substitute on the scalp.",
+      "d": "Salt in the developer is not a chelating method and ruins the tested mix ratio."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-laws-016",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "An apprentice asks to take walk-in fades alone while the supervising barber is out buying supplies. What is the lawful answer under typical board rules?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apprentices practice only under the required licensed supervision"
+      },
+      {
+        "id": "b",
+        "text": "Apprentices may solo once they have cut hair for thirty days"
+      },
+      {
+        "id": "c",
+        "text": "Apprentices may solo if the shop license hangs by the door"
+      },
+      {
+        "id": "d",
+        "text": "Apprentices may solo for cash tips but not for card payments"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An apprentice credential is not a full operator license. Boards generally allow apprentice work only while a qualified licensed barber provides the supervision ratio and presence the state requires. Solo walk-ins while the supervisor is gone, shop-license display alone, or tip-vs-card distinctions do not create that authority.",
+    "distractorExplanations": {
+      "b": "A private thirty-day shop habit is not a board release into unsupervised practice.",
+      "c": "The establishment license covers the premises, not unsupervised apprentice services.",
+      "d": "Payment method never converts an apprentice into an unsupervised operator."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-laws-017",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "You move to a new apartment across town and keep the same chair at the shop. What board notice do states typically still require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Update your mailing address with the board within the"
+      },
+      {
+        "id": "b",
+        "text": "Nothing; shop owners alone report personal address changes"
+      },
+      {
+        "id": "c",
+        "text": "Tell the landlord only, because boards do not mail licensees"
+      },
+      {
+        "id": "d",
+        "text": "Wait until the next renewal in several years to mention it"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Boards mail renewal notices, discipline letters, and license updates to the address on file. Most states require licensees to report a change of mailing or legal address within a short window, even if the work station did not change. Waiting years or telling only a landlord leaves the board record stale.",
+    "distractorExplanations": {
+      "b": "Individual operators, not just shop owners, must keep their own board contact current.",
+      "c": "Boards do mail licensees; landlord notice does not update the licensing record.",
+      "d": "Deferring until a distant renewal risks missed notices and late-renewal problems."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (truncated key)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-018",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "A client wants you to lance a scalp cyst and call it 'advanced barber surgery' on the ticket. How should a licensed barber respond?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse; diagnosing or treating lesions surgically is outside scope"
+      },
+      {
+        "id": "b",
+        "text": "Proceed if the client signs a one-line shop waiver first"
+      },
+      {
+        "id": "c",
+        "text": "Proceed if you once watched a medical YouTube demonstration"
+      },
+      {
+        "id": "d",
+        "text": "Proceed if you bill the service under a cleanse menu name"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Barber scope covers cutting, shaving, and related cosmetic hair services—not diagnosing or surgically treating cysts, warts, or other medical lesions. Waivers, online videos, and renaming the line item do not expand the license into medicine. Refer the client to a physician or appropriate medical provider.",
+    "distractorExplanations": {
+      "b": "A shop waiver cannot authorize unlicensed medical or surgical acts.",
+      "c": "Watching a video is not medical training or a license to lance lesions.",
+      "d": "Mislabeling the ticket as a cleanse still leaves an out-of-scope invasive act."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (truncated key)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-019",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "The board asks for disinfection and blood-spill logs from the past month. What should a compliant shop be able to produce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The written sanitation records the board requires for that period"
+      },
+      {
+        "id": "b",
+        "text": "Verbal answers from whoever happens to be working that day"
+      },
+      {
+        "id": "c",
+        "text": "Social-media posts showing a clean floor from last weekend"
+      },
+      {
+        "id": "d",
+        "text": "A single undated sticky note that says cleaned sometimes"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Many boards treat sanitation and exposure logs as inspectable records, not optional scrap paper. Shops should keep the written (or approved electronic) disinfection and blood-spill documentation the rules require and produce it on request. Verbal memory, Instagram photos, and undated notes do not meet a record-keeping duty.",
+    "distractorExplanations": {
+      "b": "Verbal recall is not a substitute for the written logs inspectors expect.",
+      "c": "Marketing photos prove nothing about disinfectant contact times or spill steps.",
+      "d": "An undated sticky note fails date, content, and retention standards for board records."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaway)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-020",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "You are employed at Shop A but start cutting hair for cash in your apartment on Sundays. Boards typically treat that as:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allowed if your personal operator card is current"
+      },
+      {
+        "id": "b",
+        "text": "Unlicensed premises practice unless home service rules are met"
+      },
+      {
+        "id": "c",
+        "text": "Allowed if you text the shop owner a photo of each client"
+      },
+      {
+        "id": "d",
+        "text": "Allowed on Sundays because boards do not regulate weekends"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A personal operator license authorizes you to practice; it does not automatically license every kitchen or bedroom as a shop. Home or mobile work usually needs the state's establishment, suite, or mobile-barber authorization and sanitation rules. Side cash cuts in an unapproved apartment are unlicensed premises practice.",
+    "distractorExplanations": {
+      "a": "A current operator card does not convert a private apartment into a licensed shop.",
+      "c": "Texting the employer does not create a board-approved home or mobile location.",
+      "d": "Licensing and sanitation rules apply every day the services are offered for pay."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-laws-021",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "A booth-rental agreement says the shop owner 'handles all board paperwork' for you. As the renter, what remains your personal duty?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing; the lease transfers licensing duties to the owner"
+      },
+      {
+        "id": "b",
+        "text": "Keep your own operator license current and follow sanitation rules"
+      },
+      {
+        "id": "c",
+        "text": "Pay rent on time; boards treat booth renters as non-licensees"
+      },
+      {
+        "id": "d",
+        "text": "Use the owner's name on your tickets so your card can expire"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Booth rental is a business contract, not a license transfer. You remain personally responsible for holding a current operator credential, posting it as required, and meeting infection-control rules at your station. An owner cannot lawfully 'handle' away your individual licensing duty.",
+    "distractorExplanations": {
+      "a": "Private lease language cannot erase your personal operator and sanitation duties.",
+      "c": "Boards regulate booth renters as licensees at inspectable stations.",
+      "d": "Using another person's name on tickets is fraud and still unlicensed if your card lapses."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaways)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-022",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "Your Instagram bio lists only a cosmetology license number, but you advertise and perform men's fades and straight-razor shaves. What is the compliance problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None; a cosmetology card covers fades and shaves by default"
+      },
+      {
+        "id": "b",
+        "text": "Hold and advertise the credential that authorizes those"
+      },
+      {
+        "id": "c",
+        "text": "None if the fades are billed as a style consultation fee"
+      },
+      {
+        "id": "d",
+        "text": "None if the shop also employs one licensed barber somewhere"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Barber and cosmetology credentials are separate in most states. Performing barber-scoped services such as traditional shaves and men's clipper work requires the license (or dual license) that authorizes them, and advertising should not imply a credential you do not hold. Renaming the ticket or pointing to a coworker does not cover you.",
+    "distractorExplanations": {
+      "a": "Cosmetology does not automatically grant every barber privilege in every state.",
+      "c": "Billing a fade as a consultation still delivers a licensed barbering service.",
+      "d": "A coworker's barber license does not authorize your unlicensed or misadvertised work."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (truncated key)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-023",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "A walk-in offers double the price if you shave him in the parking lot with your travel kit. What is the board risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None, because higher pay proves the client accepted the risk"
+      },
+      {
+        "id": "b",
+        "text": "Practicing outside a properly authorized, inspectable location"
+      },
+      {
+        "id": "c",
+        "text": "None if you use disposable blades and a paper towel"
+      },
+      {
+        "id": "d",
+        "text": "None if the parking lot is behind a licensed shop building"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Licensed services must usually occur in a licensed establishment or under a specific mobile/home-service authorization. A parking-lot shave for cash is practice in an unauthorized location, even with disposables or proximity to a shop. Client willingness and price do not create premises authority.",
+    "distractorExplanations": {
+      "a": "Client consent to a higher fee does not license an unauthorized work site.",
+      "c": "Disposable tools help sanitation but do not approve a parking-lot location.",
+      "d": "Being near a licensed building is not the same as working inside authorized premises."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-laws-024",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "The shop owner asks you to let a friend 'borrow' your posted license number on their business cards while they wait for exam results. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agree if they promise to stop once the exam score arrives"
+      },
+      {
+        "id": "b",
+        "text": "Agree if they use the number for online ads rather than print"
+      },
+      {
+        "id": "c",
+        "text": "Refuse; lending a license number aids unlicensed practice"
+      },
+      {
+        "id": "d",
+        "text": "Agree if the friend pays you a weekly fee for the number"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Your license number identifies you as the authorized practitioner. Letting another person advertise or work under it is aiding unlicensed practice and often fraud. Temporary exam waits, online-only use, or a rental fee for the number do not make sharing lawful.",
+    "distractorExplanations": {
+      "a": "A promise to stop later still means they practice under your number now.",
+      "b": "Digital ads under your number are still false advertising and aiding practice.",
+      "d": "Charging rent for a license number is selling credentials, not compliance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaway)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-025",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "A window sticker promises '$5 fades all day' but every client is told the real price is $45 once seated. Boards typically call that:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ordinary upselling that licensing boards leave to civil courts"
+      },
+      {
+        "id": "b",
+        "text": "Allowed if the higher price is spoken softly after draping"
+      },
+      {
+        "id": "c",
+        "text": "Misleading advertising that can trigger board discipline"
+      },
+      {
+        "id": "d",
+        "text": "A sales-tax issue with no advertising or board angle"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Bait pricing that draws clients with an unavailable low price, then switches to a much higher fee, is classic misleading advertising. Boards can discipline licensees and shops for false or deceptive ads even when the service itself is legal. Soft speech after draping or calling it tax-only does not cure the claim.",
+    "distractorExplanations": {
+      "a": "Boards do regulate false and misleading professional advertising.",
+      "b": "Revealing the real price after the client is seated still leaves a bait claim on the window.",
+      "d": "Sales tax issues are separate; deceptive pricing is still an advertising violation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaway)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-026",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "You pass the barber exam in State A and plan to work next month in State B. What must you obtain before taking paid clients there?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing; NIC theory passage is a nationwide practice passport"
+      },
+      {
+        "id": "b",
+        "text": "A city sales-tax account filed in State B's capital"
+      },
+      {
+        "id": "c",
+        "text": "State B's license, endorsement, or reciprocity approval"
+      },
+      {
+        "id": "d",
+        "text": "A notarized photocopy of State A's card taped in State B"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Barber licensure is state-by-state. Passing an exam or holding a card in State A does not authorize practice in State B until that board issues a license, endorsement, or reciprocity approval under its rules. Tax accounts and photocopies are not substitutes for State B's credential.",
+    "distractorExplanations": {
+      "a": "NIC-style exams support state licensing; they are not a 50-state practice passport.",
+      "b": "A sales-tax account does not authorize barbering under State B's board.",
+      "d": "A photocopy of another state's card is not State B licensure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (thin key)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-027",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "As shop owner you hire three barbers. Before opening day, what licensing check is typically yours?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assume applicants are licensed if they bring their own clippers"
+      },
+      {
+        "id": "b",
+        "text": "Verify the front-desk manager's city business registration alone"
+      },
+      {
+        "id": "c",
+        "text": "Confirm each barber's current license and keep the shop credential"
+      },
+      {
+        "id": "d",
+        "text": "Skip checks if wages are paid in cash under the table"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Owners are commonly responsible for a current establishment license and for not employing unlicensed practitioners. Verifying each barber's active credential before they serve clients is a standard duty. Clippers, a front-desk city registration, or cash pay do not replace that check.",
+    "distractorExplanations": {
+      "a": "Owning tools proves nothing about an active operator license.",
+      "b": "Front-desk city paperwork does not license the barbers cutting hair.",
+      "d": "Cash wages increase legal risk; they never excuse hiring unlicensed cutters."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaways)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-028",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "A student still enrolled in barber school offers $15 fades in a friend's garage 'for practice hours.' What is the typical board view?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allowed because school enrollment is the same as a license"
+      },
+      {
+        "id": "b",
+        "text": "Allowed if the student wears a school-branded apron"
+      },
+      {
+        "id": "c",
+        "text": "Allowed for practice hours counted by the friend, not the school"
+      },
+      {
+        "id": "d",
+        "text": "Unlicensed practice; school work must stay under approved supervision"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Students practice under the school's licensed instructors and approved clinic settings—not in private garages for pay. Enrollment is not an operator license. Garage cash fades for 'practice hours' are unlicensed practice and do not count toward board-approved training.",
+    "distractorExplanations": {
+      "a": "Enrollment authorizes supervised school clinic work, not independent paid practice.",
+      "b": "A branded apron does not create a licensed location or instructor supervision.",
+      "c": "A friend's informal hour count is not board-approved apprentice or school credit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material."
+  },
+  {
+    "id": "barber-state-readiness-check-laws-029",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "You legally change your name after marriage but keep advertising and posting under the old name on your license. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the old name forever so clients still recognize the brand"
+      },
+      {
+        "id": "b",
+        "text": "Scratch the old name off the card with a marker and write the new one"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the board and update your Instagram display name instead"
+      },
+      {
+        "id": "d",
+        "text": "File the board's name-change process and post the updated credential"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The posted license must match the board's current record of who you are. States require a formal name-change filing and an updated credential—not a DIY marker edit or a social-media-only change. Advertising and posting should follow the corrected board record.",
+    "distractorExplanations": {
+      "a": "Brand recognition does not override the duty to keep the board name record accurate.",
+      "b": "Altering a license card yourself is often treated as tampering, not a valid update.",
+      "c": "Social media names are not the inspectable board credential."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaway)"
+  },
+  {
+    "id": "barber-state-readiness-check-laws-030",
+    "examSlug": "barber-state-readiness-check",
+    "topicId": "laws",
+    "prompt": "Renewal instructions list required continuing education before your barber card renews. You skip the hours and keep working. What is the risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None; CE is optional marketing and is not tied to renewal"
+      },
+      {
+        "id": "b",
+        "text": "None if you promise to finish the hours after the next holiday"
+      },
+      {
+        "id": "c",
+        "text": "None if the shop owner signs a note saying you are skilled enough"
+      },
+      {
+        "id": "d",
+        "text": "Practicing on a nonrenewed or invalid license after the CE deadline"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Where a board ties renewal to continuing education, missing those hours means the license does not renew as current. Working afterward is practicing without a valid credential. Owner notes and holiday promises do not replace board-required CE completion.",
+    "distractorExplanations": {
+      "a": "When CE is listed as a renewal condition, it is mandatory, not optional marketing.",
+      "b": "Promising future hours does not keep the credential current past the deadline.",
+      "c": "An owner's skill note cannot waive board CE or renew your personal license."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go NIC-style barber theory bank. Not NIC/PSI material. · Content review fix (abs giveaway)"
   }
 ]

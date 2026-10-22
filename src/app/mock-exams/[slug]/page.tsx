@@ -79,6 +79,8 @@ import { getLinkedDeckCoverUrl } from "@/lib/mock-exams/linked-deck-cover";
 import { getMockClusterImage } from "@/lib/mock-exams/cluster-images";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import { getCitizenshipGuideContent } from "@/lib/mock-exams/citizenship-guide-content";
+import { getPracticeOptionsCompared } from "@/lib/mock-exams/practice-options-compared";
+import { PracticeOptionsComparedSection } from "@/components/mock-exams/practice-options-compared";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { finalize, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
@@ -222,6 +224,7 @@ export default async function MockExamPage({
       ? `${seoCopy.whatIsExam.slice(0, 280).replace(/\s+\S*$/, "")}…`
       : seoCopy.whatIsExam);
   const citizenshipGuide = getCitizenshipGuideContent(config.slug);
+  const practiceOptionsCompared = getPracticeOptionsCompared(config.slug);
   const missCohort = await getPublicMissCohort(config.slug);
   const showHeroAccessCta =
     Boolean(accessState) && config.status !== "coming_soon" && runnable && isMockPaywallEnabled();
@@ -354,6 +357,9 @@ export default async function MockExamPage({
         ) : (
           <MockExamTopicOutlineSection config={config} />
         )}
+        {practiceOptionsCompared ? (
+          <PracticeOptionsComparedSection table={practiceOptionsCompared} />
+        ) : null}
         <MockExamAboutVisibleSection config={config} />
 
         {examFactsProfile ? (

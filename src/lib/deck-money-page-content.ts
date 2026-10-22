@@ -55,7 +55,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ace-cpt-anki-deck":
     "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a 60-question readiness check (free 25-question version).",
   "nha-cpct-anki-deck":
-    "120 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a 120-question / 120-minute readiness check (free 25-question version). Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
+    "240 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a 120-question / 120-minute readiness check (free 25-question version) drawn from the same 240-item bank. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
     "January 2026 PTCE outline/blueprint PDF — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + 90Q online mock (free 25-question version).",
   "mrics-quantity-surveying-anki-deck":
@@ -349,13 +349,13 @@ export const positioningOverrides: Partial<
   },
   "nha-cpct-anki-deck": {
     ourEdge: [
-      "120 cards across ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice",
-      "120-question / 120-minute CPCT/A readiness check (free 25-question version) with topic scoring",
+      "240 cards across ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice",
+      "120-question / 120-minute CPCT/A readiness check (free 25-question version) drawn from the 240-item bank",
       "Honest official facts: 100 scored + 20 pretest / 2 hours / scaled 390",
       "Ownable Gumroad .apkg — CPCT/A ≠ CCMA ≠ NHA CPT ≠ ASPT",
     ],
     summaryProse:
-      "CPCT/A rewards bedside ADLs, infection control, and selected phlebotomy/EKG judgment — not a CCMA or phlebotomy-only dump. One hundred twenty focused prompts plus a 120-question timed check (free 25-question version) beat a 260-question blog bank that mixes official counts.",
+      "CPCT/A rewards bedside ADLs, infection control, and selected phlebotomy/EKG judgment — not a CCMA or phlebotomy-only dump. Two hundred forty focused prompts plus a 120-question timed check (free 25-question version) from the same bank beat a 260-question blog bank that mixes official counts.",
   },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
@@ -933,7 +933,7 @@ NSCA registration, the Essentials textbook, video-item practice, or a personal-t
 
   "nha-cpct-anki-deck": `### What is inside
 
-120 MCQ prompts mapped to CPCT/A bedside work: patient care and ADLs, safety and infection control, phlebotomy plus EKG text basics, and professional practice. Same validated bank as the 120-question / 120-minute timed check (free 25-question version). Official NHA form is 100 scored + 20 pretest / 2 hours / scaled 390 — this deck is independent prep, not a skills lab.
+240 MCQ prompts mapped to CPCT/A bedside work: patient care and ADLs, safety and infection control, phlebotomy plus EKG text basics, and professional practice. Same validated 240-item bank as the 120-question / 120-minute timed check (free 25-question version). Official NHA form is 100 scored + 20 pretest / 2 hours / scaled 390 — this deck is independent prep, not a skills lab.
 
 ### Plan with the free CPCT mock
 

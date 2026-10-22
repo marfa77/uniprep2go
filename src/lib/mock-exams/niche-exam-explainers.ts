@@ -379,7 +379,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     whoFor:
       "PCT students and working aides who need a free timed baseline before NHA/PSI or remote proctoring — not candidates looking for CCMA, NHA CPT phlebotomy, CNA-only, or ASPT exams. Always verify eligibility and the current test plan before you register.",
     howToPrepare:
-      "Download the current NHA CPCT/A test plan, drill Patient Care first (43% of scored items), then sit this 120-question / 120-minute check (free 25-question version). Use the topic report to queue weak ADLs, infection, or phlebotomy/EKG rows. Keep NHA’s paid official practice test and any skills-lab practice separate. Repair misses with the 120-card Anki .apkg.",
+      "Download the current NHA CPCT/A test plan, drill Patient Care first (43% of scored items), then sit this 120-question / 120-minute check (free 25-question version) from the 240-item bank. Use the topic report to queue weak ADLs, infection, or phlebotomy/EKG rows. Keep NHA’s paid official practice test and any skills-lab practice separate. Repair misses with the 240-card Anki .apkg.",
     examFaqs: [
       {
         question: "What is the NHA CPCT certification?",

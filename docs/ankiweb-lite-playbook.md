@@ -106,15 +106,15 @@ AnkiWeb’s shared-deck page draws **random notes from the whole `.apkg`**, not 
 
 ## Listing copy (conversion)
 
-**Title pattern** (search token first):
+**Title pattern** (search token first). Do **not** put the word `LITE` in the public title — it hurts conversion (set 2026-10-21). Keep “sample / free sample” in the description only.
 
-`{TOKEN} {Exam} — Application Deck (LITE · {n} cards)`
+`{TOKEN} {Exam} — Application Deck ({n} cards)`
 
 Examples:
 
-- `PTCB PTCE — Application Deck (LITE · 40 cards)`
-- `NASAA Series 63 — State Law Application (LITE · 40 cards)`
-- `CFA Level 1 — Application Deck (LITE · 40 cards)`
+- `PTCB PTCE — Application Deck (40 cards)`
+- `NASAA Series 63 — State Law Application (40 cards)`
+- `CFA Level 1 — Application Deck (20 cards)`
 
 **Description must contain, in order:**
 

@@ -3089,7 +3089,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "NHA exams in the candidate handbook use a 200–500 scale with a passing scaled score of 390.",
       "Patient Care is the heaviest domain (43/100 scored). Do not over-drill EKG (10) at the expense of ADLs and vitals.",
       "CPCT/A is not CCMA (medical assisting), not NHA CPT (phlebotomy-only), and not ASPT.",
-      "UniPrep2Go’s check is a 120-question / 120-minute text diagnostic (free 25-question version) with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab.",
+      "UniPrep2Go’s check is a 120-question / 120-minute text diagnostic (free 25-question version) drawn from a 240-item bank with four topic buckets — all items scored here; official forms include 20 unscored pretest items and a skills lab.",
     ],
     candidate_qa: [
       {
@@ -3106,7 +3106,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CPCT readiness check the official NHA exam?",
-        a: "No. The 120-question / 120-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is a $9.99 / 120-card .apkg on Gumroad. Not NHA material.",
+        a: "No. The 120-question / 120-minute check (free 25-question version) is an independent diagnostic drawn from a 240-item bank. The matching Anki deck is a $9.99 / 240-card .apkg on Gumroad. Not NHA material.",
       },
     ],
     trademark_note:

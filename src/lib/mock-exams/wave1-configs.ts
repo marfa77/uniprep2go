@@ -240,7 +240,9 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     description:
       "120-question NHA CPCT/A readiness check (free 25-question version) with domain scoring for patient care technician candidates.",
     examBody: "NHA",
-    questionSourceNote: "Original UniPrep2Go local bank for CPCT topics.",
+    lastUpdated: "2026-10-22",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 unique CPCT/A items (60 per topic); each timed attempt draws 120 so Mock Pass retakes differ (expanded 2026-10-22).",
   }),
   readinessConfig({
     slug: "nremt-paramedic-readiness-check",

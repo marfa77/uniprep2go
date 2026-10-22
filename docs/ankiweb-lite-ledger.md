@@ -39,6 +39,37 @@ AnkiWeb limit: **20 shares per rolling 7 days** (re-shares count).
 | 2026-10-13 | prep2go \| English A2 for Spanish Speakers (IELTS / TOEFL) | 322042136 | 75 | `/shop/deck/english-for-spanish-speakers-anki-deck` | New |
 | 2026-10-13 | prep2go \| English A2 for Ukrainian Speakers (IELTS / TOEFL) | 1000025570 | 75 | `/shop/deck/english-for-ukrainian-speakers-anki-deck` | New |
 
-**Queued (built, imported, synced; share when the 7-day window frees ~2026-10-20):** Czech A2 75, Greek A2 75, Polish A2 75, Polish for Ukrainian speakers 75, WELL AP 40, GMAT Focus 35 (SHORT — 5 verbal cards failed review), CFA L1 20 (SHORT — 20 of 40 failed review). Specs: `/tmp/ankiweb_specs/{deck_id}.json` are throwaway — rebuild from each `listing.txt` / `ankiweb_meta.md`.
+## 2026-10-21 — Queued Wave 2 remainder shared
 
-**Not LITE-able (FULL below standard):** LEED GA and LEED AP BD+C (templated distractor notes on 240+/250 cards — paid-deck P0; LEED O+M likely same generator), SIE / CA RE / ServSafe Manager (thin backs), L&H / P&C (General area).
+7-day share window free after 2026-10-13 batch. GUID placement checked (0 FULL overlap; LITE note/card counts match). Synced then shared from AnkiWeb Decks → Actions → Share.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-10-21 | prep2go \| Czech A2 (CCE) \| LITE — 75 words | 1201394527 | 75 | `/shop/deck/czech-cce-anki-deck` | New |
+| 2026-10-21 | prep2go \| Greek A2 (Ellinomatheia) \| LITE — 75 words | 269318923 | 75 | `/shop/deck/greek-ellinomatheia-anki-deck` | New |
+| 2026-10-21 | prep2go \| Polish A2 (Certyfikat) \| LITE — 75 words | 893808409 | 75 | `/shop/deck/polish-a2-certyfikat-anki-deck` | New |
+| 2026-10-21 | prep2go \| Polish A2 for Ukrainian Speakers \| LITE — 75 words | 980092127 | 75 | `/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck` | New |
+| 2026-10-21 | WELL AP — WELL Accredited Professional Exam Questions (LITE · 40 cards) | 300274307 | 40 | `/decks/well-ap-anki-deck` | New |
+| 2026-10-21 | GMAT Focus Edition — Quant, Verbal and Data Insights Questions (LITE · 35 cards) | 1060612604 | 35 | `/decks/gmat-focus-anki-deck` | New (SHORT — 5 verbal failed review) |
+| 2026-10-21 | CFA Level 1 — Application Deck (LITE · 20 cards) | 1396158380 | 20 | `/decks/cfa-level-1-anki-deck` | New (SHORT — 20 of 40 failed review) |
+
+**Queued:** none from Wave 2.
+
+## 2026-10-21 — Fill share window (best money, no “LITE” in title)
+
+Used remaining quota after morning Wave-2 remainder (7 earlier today → ~13 left; shipped 8). Titles omit the word LITE (conversion). GUID-move for L&H/P&C before share. Built new apkgs in Anki Generator `out/ankiweb_lite/exam/{lh,pc,acsm,nebosh,cdcp,ashrae,cem,cfps}/`.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-10-21 | Life and Health Insurance License Exam — Application Deck (40 cards) | 136812419 | 40 | `/decks/life-and-health-insurance-exam-anki-deck` | New — Tier A; FULL pool now eligible 239/250 |
+| 2026-10-21 | Property and Casualty Insurance License Exam — Application Deck (35 cards) | 2017846740 | 35 | `/decks/property-casualty-insurance-exam-anki-deck` | New SHORT |
+| 2026-10-21 | ACSM CPT — Certified Personal Trainer Exam Questions (40 cards) | 1585691937 | 40 | `/decks/acsm-cpt-anki-deck` | New |
+| 2026-10-21 | NEBOSH International General Certificate — Exam Questions (40 cards) | 799301285 | 40 | `/decks/nebosh-anki-deck` | New |
+| 2026-10-21 | CDCP — Certified Data Centre Professional Exam Questions (40 cards) | 1246465993 | 40 | `/decks/cdcp-anki-deck` | New |
+| 2026-10-21 | ASHRAE Certifications — BEAP BEMP BCxP CHD OPMP Exam Questions (33 cards) | 634115319 | 33 | `/decks/ashrae-certifications-anki-deck` | New SHORT |
+| 2026-10-21 | CEM — Certified Energy Manager Exam Questions (40 cards) | 711893526 | 40 | `/decks/cem-anki-deck` | New |
+| 2026-10-21 | CFPS — Certified Fire Protection Specialist Exam Questions (40 cards) | 1123618605 | 40 | `/decks/cfps-anki-deck` | New |
+
+**Today’s share count:** 7 (morning) + 8 (this batch) = **15 / 20** rolling window. ~5 left.
+
+**Skipped for now (FULL below AnkiWeb sample-grade gate — scheduled in `docs/mock-bank-qa/daily-plan.md` § AnkiWeb LITE queue):** SIE → 23.10 · Digital SAT → 24.10 · ServSafe Manager → 29.10 · CA RE → 02.11 · LEED → 04.11 · CFP → 05.11 · Series 65 → 06.11 · Series 66 → 12.11. Do not share SHORT stubs; thicken FULL first, then LITE 40, title without the word LITE.

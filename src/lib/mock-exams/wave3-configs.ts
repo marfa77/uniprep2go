@@ -427,9 +427,9 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "micro", label: "Microbiology" }
     ]),
     officialSourceNote:
-      "Official ASCP BOC MLT(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This check is a shorter 60-question / 75-minute linear diagnostic (free 25-question version) on four benches (blood bank, chemistry, hematology, microbiology) — not CAT, not MLS, and not the California-only 80Q / 2h form. Independent UniPrep2Go practice — not ASCP BOC material.",
+      "Official ASCP BOC MLT(ASCP) is 100 CAT questions / 2 hours 30 minutes / scaled pass 400 (100–999). This check is a shorter 60-question / 75-minute linear diagnostic drawn from a 120-item bank (free 25-question version) on four benches (blood bank, chemistry, hematology, microbiology) — not CAT, not MLS, and not the California-only 80Q / 2h form. Independent UniPrep2Go practice — not ASCP BOC material.",
     description:
-      "60-question / 75-minute ASCP MLT readiness check (free 25-question version) with topic scoring — shorter than the official 100-question CAT.",
+      "60-question / 75-minute ASCP MLT readiness check drawn from a 120-item bank (free 25-question version) with topic scoring — shorter than the official 100-question CAT.",
     examBody: "ASCP Board of Certification",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["MLT", "ASCP MLT", "medical lab technician"],
@@ -684,10 +684,10 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "laws", label: "State laws & safety" }
     ]),
     officialSourceNote:
-      "Official NIC National Barber Theory is 60 items (50 scored) / 90 minutes; the practical exam is separate and passing scores are set by the state (often scaled 75). This check is a 60-question / 75-minute theory diagnostic (free 25-question version) — not NIC Cosmetology Theory (typically 110 items) and not a skills sitting. Independent UniPrep2Go practice — not NIC or state-board material.",
+      "Official NIC National Barber Theory is 60 items (50 scored) / 90 minutes; the practical exam is separate and passing scores are set by the state (often scaled 75). This check is a 60-question / 75-minute theory diagnostic drawn from a 120-item bank (free 25-question version) — not NIC Cosmetology Theory (typically 110 items) and not a skills sitting. Independent UniPrep2Go practice — not NIC or state-board material.",
     description:
-      "60-question / 75-minute Barber theory readiness check (free 25-question version) with topic scoring — not the NIC practical.",
-    lastUpdated: "2026-10-04",
+      "60-question / 75-minute Barber theory readiness check drawn from a 120-item bank (free 25-question version) with topic scoring — not the NIC practical.",
+    lastUpdated: "2026-10-21",
     examBody: "State barber boards",
     questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
     searchAliases: ["barber exam", "barber license"],

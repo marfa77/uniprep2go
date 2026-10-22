@@ -590,7 +590,7 @@ describe("deck catalog", () => {
         "PTCB Outline 2026 Study Guide — PTCE Blueprint PDF + 80-Question Exam + Cheat Sheets",
       "ace-cpt-anki-deck": "ACE CPT Anki Deck — 300 Flashcards",
       "acsm-cpt-anki-deck": "ACSM CPT Anki Deck — 120 Flashcards",
-      "nha-cpct-anki-deck": "NHA CPCT/A Anki Deck — 120 Flashcards",
+      "nha-cpct-anki-deck": "NHA CPCT/A Anki Deck — 240 Flashcards",
       "luxembourg-vivre-ensemble-anki-deck":
         "Luxembourg Vivre ensemble Anki Deck — 478 Flashcards",
       "bench-energy-metal-trader-anki-deck":
