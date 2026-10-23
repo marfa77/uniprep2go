@@ -16,6 +16,7 @@
 
 **Контент (нужны проверенные факты)**
 - [ ] Таблица «Free {exam} practice options compared» (S5) для P1: CFA L1/L2, FRM, SIE, Series 7/63/65, PTCB, ServSafe, LEED GA, PMP, Life in the UK — только строки с источником + «checked {date}».
+- [ ] Brave Search pulse (канал, не второй weekly title track): см. `docs/brave-search-channel.md` — EPA 608 + trade siblings; submit-url после ship; Discussions только organic Reddit.
 - [ ] Urgency strip (даты окон) — только с официальной ссылкой (CFA L1 Nov 2026 — сверить на cfainstitute.org).
 - [ ] S3 «Example report layout» (скрин реального отчёта).
 - [ ] S7 bundle-блок (Mock Pass + дека) — после решения по hero-кнопке.

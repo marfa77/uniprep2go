@@ -4187,12 +4187,12 @@ const rawDecks: Deck[] = [
     category: "professional",
     status: "planned",
     coverImage: "/covers/hvac-epa-608-anki-deck.webp",
-    title: "HVAC EPA 608 Anki Deck",
-    shortName: "EPA 608 HVAC",
+    title: "EPA 608 Anki Deck — 200 Flashcards",
+    shortName: "EPA 608",
     subtitle: "A planned spaced-repetition deck for EPA Section 608 Core and Types I–III.",
     directAnswer:
-      "The HVAC EPA 608 Anki Deck is a planned UniPrep2Go product for technicians preparing for U.S. EPA Section 608 refrigerant certification. It is not yet available for purchase. Take the free EPA 608 readiness check to benchmark weak sections first.",
-    lastUpdated: "2026-06-02",
+      "The EPA 608 Anki Deck is a UniPrep2Go spaced-repetition product for technicians preparing for U.S. EPA Section 608 refrigerant certification (Core + Types I–III). Take the free EPA 608 readiness check to benchmark weak sections first, then drill those gaps in Anki.",
+    lastUpdated: "2026-10-23",
     audience:
       "HVAC technicians, apprentices, and trade-school students who want active recall for Core, Type I, Type II, and Type III exam topics.",
     format: ".apkg",
@@ -4231,14 +4231,19 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
-        question: "Is there a free EPA 608 practice test?",
+        question: "What is the EPA 608 Anki deck?",
         answer:
-          "Yes. Take the 40-question EPA 608 readiness check (free 25-question version) at uniprep2go.study/mock-exams/epa-608-readiness-check — timed section scoring and full answer review.",
+          "A 200-card Anki .apkg for EPA Section 608 Core and Types I–III (Universal-style prep): recovery, leak repair, refrigerants, cylinders, and safety — with explanations and common-mistake notes. Independent study aid, not EPA exam material.",
       },
       {
-        question: "When will the HVAC EPA 608 Anki deck be available?",
+        question: "Is there a free EPA 608 practice test?",
         answer:
-          "The deck is planned but not yet on sale. Use the readiness check now and request access on the mock page to be notified when the deck launches.",
+          "Yes. Take the 40-question EPA 608 readiness check (free 25-question version) at uniprep2go.study/mock-exams/epa-608-readiness-check — timed section scoring and full answer review. Then drill weak sections with the EPA 608 Anki deck.",
+      },
+      {
+        question: "Does the EPA 608 Anki deck cover Core and Types I–III?",
+        answer:
+          "Yes. The 200 cards are weighted across Core, Type I (small appliances), Type II (high-pressure), and Type III (low-pressure) — the same section map as the linked free readiness check.",
       },
       {
         question: "Is this official EPA exam material?",

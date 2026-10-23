@@ -82,6 +82,60 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "sie-full-mock": {
+    mockSlug: "sie-full-mock",
+    examLabel: "FINRA SIE",
+    heading: "Free SIE practice options compared",
+    checkedDate: "2026-10-23",
+    lead:
+      "FINRA’s free practice test matches official length but is untimed. UniPrep2Go is an independent timed diagnostic with topic scores — not FINRA exam material.",
+    rows: [
+      {
+        name: "UniPrep2Go SIE full mock",
+        href: "/mock-exams/sie-full-mock",
+        format: "25Q free diagnostic; full timed mock 75Q / 105 min with topic scores",
+        access: "Free start (no signup for the 25Q); Mock Pass for retakes",
+        notes:
+          "Independent diagnostic. Official SIE is 75 scored (+10 pretest) / 1h45 / pass 70 equated.",
+      },
+      {
+        name: "UniPrep2Go SIE quick diagnostic",
+        href: "/mock-exams/sie-quick-diagnostic",
+        format: "25 timed questions / 35 minutes with topic scores",
+        access: "Free timed start",
+        notes: "Faster baseline before the 75Q mock; same product family, not FINRA material.",
+      },
+      {
+        name: "FINRA — official SIE practice test",
+        href: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie-practice-test",
+        format: "75 multiple-choice sample questions, untimed, feedback at the end",
+        access: "Free on FINRA.org",
+        notes:
+          "Official format familiarization. FINRA says performance is not an absolute prediction of exam day.",
+      },
+      {
+        name: "FINRA — SIE Content Outline (PDF)",
+        href: "https://www.finra.org/sites/default/files/SIE_Content_Outline.pdf",
+        format: "Official domain weights (12 / 33 / 23 / 7 scored items) — study map, not a quiz",
+        access: "Free PDF",
+        notes: "Blueprint for what to study; pair with a timed mock for pacing practice.",
+      },
+    ],
+    sources: [
+      {
+        label: "FINRA — SIE practice test",
+        url: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam-sie-practice-test",
+      },
+      {
+        label: "FINRA — SIE exam overview",
+        url: "https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam",
+      },
+      {
+        label: "FINRA — SIE Content Outline (PDF)",
+        url: "https://www.finra.org/sites/default/files/SIE_Content_Outline.pdf",
+      },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(

@@ -89,11 +89,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "POS 11 is office setting on professional claims.",
+    "explanation": "Place of service code 11 means the professional service was rendered in an office setting on the claim form.",
     "distractorExplanations": {
-      "a": "Hospital inpatient different codes.",
-      "b": "Ambulance has specific POS.",
-      "d": "Not POS 11 definition."
+      "a": "Inpatient hospital stays use inpatient POS codes (e.g. 21), not office POS 11.",
+      "b": "Ambulance transports use ambulance-specific POS values, not the office code 11.",
+      "d": "That option does not match the CMS POS definition of 11 as office."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -353,11 +353,11 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Many plans require referring provider for specialist claims.",
+    "explanation": "When a scrubber flags a missing referring-provider NPI on a specialist claim, enter the referring clinician NPI required by the payer before resubmitting.",
     "distractorExplanations": {
-      "a": "Patient demographics required.",
-      "b": "Code must match service.",
-      "d": "Diagnosis required."
+      "a": "Patient demographics alone do not satisfy a referring-provider NPI edit on specialist claims.",
+      "b": "Matching the CPT to the service is necessary but does not fix a missing referring NPI edit.",
+      "d": "A diagnosis is required for medical necessity, but this specific edit asks for the referring NPI."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4)."
@@ -683,7 +683,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "HCPCS includes J-codes for drugs, A-codes ambulance, etc.",
+    "explanation": "HCPCS Level II codes cover products, supplies, and services outside CPT physician procedures — for example J-codes for drugs and A-codes for ambulance.",
     "distractorExplanations": {
       "b": "Physician procedures and E/M services are CPT codes, which are HCPCS Level I, not Level II.",
       "c": "Inpatient procedures are coded in ICD-10-PCS, a separate system from HCPCS Level II.",
@@ -1081,9 +1081,9 @@
     "correctOptionId": "a",
     "explanation": "MA plans are paid capitation; providers bill the plan per contract.",
     "distractorExplanations": {
-      "b": "Employer may not be involved.",
-      "c": "Electronic to plan.",
-      "d": "Primary depends on coverage."
+      "b": "Employer groups do not receive MA professional claims; bill the Medicare Advantage plan contracted.",
+      "c": "Electronic submission still goes to the MA plan payer, not to traditional Medicare FFS by default.",
+      "d": "Coordination of benefits may apply, but MA professional claims are billed to the MA organization."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1343,7 +1343,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Part D plans cover outpatient drugs via PDP/MA-PD.",
+    "explanation": "Medicare Part D covers outpatient prescription drugs through standalone PDPs or MA-PD plans, not hospital Part A or physician Part B benefits.",
     "distractorExplanations": {
       "b": "Inpatient hospital and hospice coverage is Medicare Part A, not Part D.",
       "c": "Private plans bundling Parts A and B are Medicare Advantage (Part C), not Part D.",
@@ -1838,7 +1838,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Hotlines support reporting without retaliation per policy.",
+    "explanation": "A compliance hotline lets staff report suspected fraud, waste, or policy breaches confidentially, with non-retaliation protections under the compliance program.",
     "distractorExplanations": {
       "a": "A compliance hotline is an internal reporting channel; it does not file reports with OCR for staff.",
       "b": "Patient billing questions go to customer service, not the compliance hotline.",
@@ -1939,9 +1939,9 @@
     "correctOptionId": "c",
     "explanation": "Attorney access needs valid HIPAA authorization or legal process.",
     "distractorExplanations": {
-      "a": "Insufficient.",
-      "b": "Prohibited disclosure.",
-      "d": "Policy/form required."
+      "a": "A verbal ask is not enough; attorney PHI release needs a valid authorization or legal process.",
+      "b": "Disclosure to an attorney for billing/legal work is allowed only with proper authorization or order.",
+      "d": "Facility policy and the signed authorization form (or subpoena) are what authorize the release."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local short-stem expansion"
@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 4). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-016",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A hospital outpatient radiology department bills facility charges for a CT scan performed in the hospital. Which claim form should the facility use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "UB-04 (CMS-1450) institutional claim for the facility portion"
+      },
+      {
+        "id": "b",
+        "text": "CMS-1500 professional claim form because the CT was done as an outpatient service"
+      },
+      {
+        "id": "c",
+        "text": "ADA dental claim form listing HCPCS radiology codes for the imaging session"
+      },
+      {
+        "id": "d",
+        "text": "NCPDP pharmacy claim form because intravenous contrast was dispensed during the scan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hospital facility charges, including outpatient departments, are billed on the UB-04 (CMS-1450) institutional form. The radiologist’s professional interpretation, if billed separately, would use the CMS-1500; the facility portion itself stays on the UB-04.",
+    "distractorExplanations": {
+      "b": "Outpatient setting alone does not switch the facility to CMS-1500; hospitals bill facility charges on the UB-04 regardless of inpatient or outpatient status.",
+      "c": "The ADA dental claim is for dental services with CDT codes, not hospital radiology facility charges.",
+      "d": "NCPDP is the retail pharmacy claim standard; contrast used during imaging does not turn the facility bill into a pharmacy claim."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-017",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A physician sees an established patient in the hospital outpatient clinic and bills the professional E/M on a CMS-1500. Which place of service code is usually correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "POS 11 (office) because the visit was scheduled like a regular clinic appointment"
+      },
+      {
+        "id": "b",
+        "text": "POS 22 (on campus-outpatient hospital) for hospital outpatient clinic"
+      },
+      {
+        "id": "c",
+        "text": "POS 21 (inpatient hospital) because the building is a hospital"
+      },
+      {
+        "id": "d",
+        "text": "POS 23 (emergency room) for any hospital-based outpatient visit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Professional claims must report the setting where the service occurred. A hospital outpatient clinic visit is typically POS 22 (on campus-outpatient hospital), not office POS 11. Correct POS affects payment differentials and facility vs non-facility rates.",
+    "distractorExplanations": {
+      "a": "POS 11 is for a true physician office; a hospital-owned outpatient clinic is not coded as office even if it feels like a clinic schedule.",
+      "c": "POS 21 is for inpatient hospital status; being on a hospital campus does not make every visit inpatient.",
+      "d": "POS 23 is reserved for emergency department services, not routine outpatient clinic visits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-018",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "On a CMS-1500, the group practice is the billing provider and Dr. Lee personally performed the office visit. Where should Dr. Lee’s individual NPI appear?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In the referring provider field, with the rendering NPI left blank"
+      },
+      {
+        "id": "b",
+        "text": "As the subscriber ID so the payer can match member eligibility"
+      },
+      {
+        "id": "c",
+        "text": "In the rendering provider NPI field for the service line"
+      },
+      {
+        "id": "d",
+        "text": "On the paper remittance after payment, not on the submitted claim"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When a group bills, the billing/pay-to NPI identifies the group, while the rendering (performing) provider’s individual NPI goes in the rendering field (often Box 24J on paper CMS-1500). Payers use that NPI for credentialing, specialty edits, and payment attribution.",
+    "distractorExplanations": {
+      "a": "Referring NPI is for the ordering or referring clinician when required; it does not replace the rendering provider who performed the visit.",
+      "b": "The subscriber ID is the patient’s insurance member number, not a provider NPI.",
+      "d": "Rendering NPI belongs on the submitted claim; remittances report adjudication results afterward and do not substitute for claim data."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-019",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A claim scrubber stops a CMS-1500 because each procedure line lacks a diagnosis pointer linking to a diagnosis already listed on the claim. What is the correct fix before resubmission?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete all diagnosis codes so the payer can assign diagnoses during adjudication"
+      },
+      {
+        "id": "b",
+        "text": "Change the claim frequency code to 7 without editing pointers"
+      },
+      {
+        "id": "c",
+        "text": "Move the claim to patient responsibility without correcting data"
+      },
+      {
+        "id": "d",
+        "text": "Enter valid diagnosis pointer(s) for each service line to a listed Dx"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Diagnosis pointers connect each CPT/HCPCS line to the ICD-10 codes that support medical necessity. A scrubber edit for missing pointers is fixed by mapping each line to one or more diagnoses already entered on the claim, then resubmitting as a clean claim.",
+    "distractorExplanations": {
+      "a": "Removing diagnoses creates a worse defect; payers require diagnosis codes linked to services for medical necessity review.",
+      "b": "Frequency code 7 is for replacing an already-adjudicated claim; a scrubber hold never reached the payer and needs data correction first.",
+      "c": "A missing pointer is a provider data error; shifting the balance to the patient without fixing the claim is inappropriate."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-020",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "Primary insurance paid a claim and the patient has active secondary coverage. What should the biller attach or transmit when submitting the secondary claim under coordination of benefits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary remittance/EOB data showing paid and patient-responsibility amounts"
+      },
+      {
+        "id": "b",
+        "text": "The original CMS-1500 alone, with no primary payment or remittance details attached"
+      },
+      {
+        "id": "c",
+        "text": "A nearly blank secondary claim so the payer can request whatever supporting data it needs"
+      },
+      {
+        "id": "d",
+        "text": "The patient’s credit-card authorization on file instead of primary remittance data"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Secondary payers need the primary’s adjudication details—allowed amount, payment, contractual adjustment, and remaining patient responsibility—to apply COB correctly. That information comes from the primary ERA/EOB (or electronic COB loop) and must accompany or be mapped onto the secondary claim.",
+    "distractorExplanations": {
+      "b": "Submitting the secondary claim without primary payment data usually causes a COB denial or delay because the secondary cannot calculate its share.",
+      "c": "Secondary claims still require complete demographics, codes, and primary payment details; blank submissions are not a valid COB workflow.",
+      "d": "Payment method authorizations are for collecting patient balances after insurance, not a substitute for primary remittance data on a secondary claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-021",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A commercial payer’s timely filing limit is 90 days from the date of service. The visit was on March 1 and the claim was first accepted by the payer on June 15. How should the biller interpret a timely filing denial?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignore it because clearinghouse acceptance routinely resets the clock"
+      },
+      {
+        "id": "b",
+        "text": "The claim was filed after the 90-day window from the service date"
+      },
+      {
+        "id": "c",
+        "text": "Timely filing is measured from the date the patient paid the deductible"
+      },
+      {
+        "id": "d",
+        "text": "Any claim filed in the same calendar year automatically meets the limit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Most commercial contracts measure timely filing from the date of service (or discharge) to the payer’s receipt/acceptance date. March 1 to June 15 exceeds 90 days, so a timely filing denial is expected unless a contract exception or documented electronic rejection trail supports an appeal.",
+    "distractorExplanations": {
+      "a": "Clearinghouse acceptance does not automatically extend the payer’s contractual filing deadline; the payer’s accepted date and contract rules control.",
+      "c": "Patient deductible activity is unrelated to the filing clock; timely filing tracks when the claim reached the payer.",
+      "d": "Calendar-year rules apply only if the contract says so; a 90-day DOS-based limit is not satisfied merely by filing in the same year."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-022",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "An ERA shows a line denied with a Claim Adjustment Reason Code (CARC) for missing/invalid information and a Remark Code pointing to the referring provider field. What is the best first workup step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write off the balance immediately as a contractual adjustment without reviewing the remittance"
+      },
+      {
+        "id": "b",
+        "text": "Bill the patient the full charged amount before researching what the remittance codes mean"
+      },
+      {
+        "id": "c",
+        "text": "Compare the remittance codes to the claim and correct the referring NPI"
+      },
+      {
+        "id": "d",
+        "text": "File a formal medical-necessity appeal packet with clinical notes before checking claim data"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Denial workup starts by reading CARC/RARC (or equivalent) against the original claim. A remark pointing to referring provider data means verify and correct that NPI (or omit it if not required), then resubmit or correct per payer rules—before appealing or shifting liability.",
+    "distractorExplanations": {
+      "a": "A missing-information denial is usually correctable revenue, not a contractual write-off; writing it off skips the fix.",
+      "b": "Patient billing before correcting a provider data error risks collecting amounts insurance should have paid and confuses the account.",
+      "d": "Medical-necessity appeals address clinical coverage decisions; this remittance points to a referring-provider data defect, not medical necessity."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-023",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A payer rejects an electronic professional claim because the billing provider NPI does not match the taxonomy and specialty on file for that NPI. What should the biller do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the billing NPI with a random in-network peer’s NPI"
+      },
+      {
+        "id": "b",
+        "text": "Remove the NPI entirely and submit using the tax ID as the sole provider ID"
+      },
+      {
+        "id": "c",
+        "text": "Change the CPT codes to ones the payer routinely pays without edits"
+      },
+      {
+        "id": "d",
+        "text": "Verify enrollment data and align taxonomy/specialty with the payer record"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NPI, taxonomy, and specialty must match what the payer has on the provider’s enrollment file. The fix is to confirm the correct billing NPI and taxonomy, update enrollment or claim defaults with the payer/clearinghouse, and resubmit—not to invent another provider or drop the NPI.",
+    "distractorExplanations": {
+      "a": "Using another clinician’s NPI is false billing and can constitute fraud; it does not legitimately clear a taxonomy mismatch.",
+      "b": "HIPAA-standard professional claims require a valid billing NPI; tax ID alone does not replace the NPI requirement.",
+      "c": "Changing procedure codes to dodge an enrollment edit falsifies the service and leaves the underlying provider-data problem unfixed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-024",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "On a UB-04, the type of bill (TOB) field tells the payer the facility type and claim frequency. Which statement best describes its role for a clean institutional claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It identifies the kind of facility bill and whether the claim is original, interim, or final"
+      },
+      {
+        "id": "b",
+        "text": "It replaces the need for revenue codes and HCPCS detail on hospital outpatient service lines"
+      },
+      {
+        "id": "c",
+        "text": "It belongs on the CMS-1500 professional form and should stay blank on institutional UB-04 claims"
+      },
+      {
+        "id": "d",
+        "text": "It stores the patient’s subscriber or member ID instead of listing that identifier elsewhere"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Type of bill on the UB-04 is a three- or four-digit code that conveys facility category (hospital, SNF, etc.) and claim frequency (admit through discharge, interim, corrected, and similar). Payers use TOB with other fields to route and adjudicate institutional claims correctly.",
+    "distractorExplanations": {
+      "b": "Revenue codes and HCPCS/CPT (when required) remain mandatory line detail; TOB does not substitute for them.",
+      "c": "TOB is an institutional UB-04 concept; the professional CMS-1500 uses different frequency/claim indicators, not UB TOB.",
+      "d": "Subscriber or patient control identifiers have their own UB-04 fields; TOB does not carry the member ID."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-025",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A hospitalist bills a subsequent hospital care visit for a patient who was admitted overnight and remains an inpatient. Which place of service belongs on the professional claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "POS 22 because the hospital also has outpatient clinics"
+      },
+      {
+        "id": "b",
+        "text": "POS 21 (inpatient hospital) for the admitted inpatient stay"
+      },
+      {
+        "id": "c",
+        "text": "POS 11 because hospitalists often work from a group office"
+      },
+      {
+        "id": "d",
+        "text": "POS 12 (home) if the discharge planner already opened the chart"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Place of service reflects the patient’s status and location of the encounter. Care for an admitted inpatient is reported with POS 21 (inpatient hospital). Using outpatient or office POS on an inpatient stay misstates the setting and can trigger payment or audit issues.",
+    "distractorExplanations": {
+      "a": "POS 22 is for outpatient hospital settings; an overnight admitted inpatient is not outpatient merely because the campus has clinics.",
+      "c": "The hospitalist’s employment office does not change the encounter location; the service occurred in the inpatient hospital.",
+      "d": "POS 12 is home; opening a chart for discharge planning does not relocate an inpatient visit to the patient’s home."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-026",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A payer paid a claim using the wrong date of service after the biller’s data-entry error. The claim already adjudicated. What is the appropriate claims action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Submit a second original claim with frequency code 1 and hope both versions pay"
+      },
+      {
+        "id": "b",
+        "text": "Ask the patient to call the payer about the date error and ignore the remittance"
+      },
+      {
+        "id": "c",
+        "text": "Submit a corrected/replacement claim using the payer’s void or replace process"
+      },
+      {
+        "id": "d",
+        "text": "Post the insurance payment as a patient credit on the ledger and close the account"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Once a claim has been adjudicated, fixing provider-caused errors requires the payer’s corrected-claim workflow—typically a replacement (frequency 7) or void (frequency 8) then a new claim, depending on payer rules. That updates the DOS and payment without creating an unmanaged duplicate.",
+    "distractorExplanations": {
+      "a": "A second original (frequency 1) on an already-paid claim usually creates a duplicate denial or overpayment risk.",
+      "b": "The provider owns the billing error; patient phone calls do not replace a formal corrected claim.",
+      "d": "Posting an insurance payment as a patient credit misstates the ledger and leaves the incorrect DOS claim on the payer’s books."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-027",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "While posting an ERA, the biller finds a payment that does not match any open claim by patient, DOS, or claim ID. What is the best next step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apply the payment at random to the oldest unpaid patient balance sitting in the same batch"
+      },
+      {
+        "id": "b",
+        "text": "Refund the unidentified payment to the patient without researching the payer source first"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the unmatched remittance line until the next monthly patient statement cycle runs"
+      },
+      {
+        "id": "d",
+        "text": "Research the unmatched payment, hold it in unapplied, then resolve with the payer"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Unmatched remittance lines must not be forced onto the wrong account. Best practice is to park the amount in an unapplied/unallocated payment bucket, investigate using claim control numbers and payer contacts, then post, transfer, or return funds correctly once identified.",
+    "distractorExplanations": {
+      "a": "Random posting creates account misstatements, patient balance errors, and audit findings when the true claim later surfaces.",
+      "b": "The payment came from the payer for a claim; refunding the patient without research may send money to the wrong party.",
+      "c": "Leaving unmatched ERA lines unresolved delays cash application and can cause duplicate follow-up or takebacks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-028",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A scrubber flags a professional claim because the rendering provider NPI is blank even though the group’s billing NPI is present. For a group that bills under a clinic NPI, what makes the claim clean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enter the individual rendering clinician’s NPI on each applicable service line"
+      },
+      {
+        "id": "b",
+        "text": "Duplicate the group billing NPI into every diagnosis pointer field"
+      },
+      {
+        "id": "c",
+        "text": "Leave rendering blank whenever the group billing NPI already appears on the claim"
+      },
+      {
+        "id": "d",
+        "text": "Replace NPIs with Social Security numbers for faster payer matching"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Group billing NPI identifies who gets paid; most payers still require the individual rendering provider’s NPI on the service lines so they can validate credentials and specialty. Completing that field clears the scrubber edit and produces a cleaner claim for adjudication.",
+    "distractorExplanations": {
+      "b": "Diagnosis pointers map each CPT/HCPCS line to listed ICD-10 codes; they are not a field for storing NPIs.",
+      "c": "A billing NPI alone often fails payer or clearinghouse edits when rendering is required for the specialty or plan.",
+      "d": "SSNs are not substitute provider identifiers on standard claims and create serious privacy and compliance exposure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-029",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A dependent child is covered under both parents’ employer plans. Neither plan is court-ordered primary. Which COB rule usually decides which plan pays first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Whichever parent completed check-in first at the front desk that day"
+      },
+      {
+        "id": "b",
+        "text": "The birthday rule: plan of the parent whose birthday falls earlier in the year"
+      },
+      {
+        "id": "c",
+        "text": "The mother’s plan first in every case, regardless of either parent’s birth date"
+      },
+      {
+        "id": "d",
+        "text": "The plan that charges the higher premium becomes primary automatically"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Under the common birthday rule for dependents with two parent plans, the plan of the parent whose birthday (month and day) occurs earlier in the calendar year is primary; year of birth does not matter. Court orders or specific plan language can override, but absent those, birthday-rule COB guides claim order.",
+    "distractorExplanations": {
+      "a": "Front-desk arrival order has no role in coordination of benefits; COB follows plan contracts and standard rules.",
+      "c": "Gender-based “mother first” is not the standard commercial COB rule when both parents cover the child.",
+      "d": "Premium amount does not determine primary versus secondary under standard birthday-rule COB."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-claims-030",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "claims",
+    "prompt": "A claim denies for lack of prior authorization, and the biller confirms no auth was obtained before the elective MRI. What is the most appropriate next action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Resubmit the identical unauthorized claim every week until the denial somehow reverses itself"
+      },
+      {
+        "id": "b",
+        "text": "Change the CPT to an urgent-sounding code so prior authorization looks unnecessary to the payer"
+      },
+      {
+        "id": "c",
+        "text": "Review payer rules for retro-auth or appeal; otherwise assign patient liability per policy"
+      },
+      {
+        "id": "d",
+        "text": "Delete the encounter from the medical record so the unauthorized MRI no longer appears in the chart"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After confirming the denial reason is accurate, follow the payer’s process: some allow retroactive authorization or a documented appeal; if not, financial responsibility follows the practice’s financial policy and any patient notice. Blind resubmission or falsifying urgency codes does not create a clean claim path.",
+    "distractorExplanations": {
+      "a": "Repeating the same unauthorized claim without new information wastes filing limits and will keep denying.",
+      "b": "Altering codes to falsely imply urgency or emergency to bypass auth is fraudulent billing.",
+      "d": "Deleting clinical documentation to hide a billed service is a serious compliance and medical-record integrity violation."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-016",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "On a professional claim, diagnosis pointers on a CPT line primarily tell the payer which",
+    "options": [
+      {
+        "id": "a",
+        "text": "ICD-10-CM codes on the claim support medical necessity for that service line"
+      },
+      {
+        "id": "b",
+        "text": "HCPCS Level II supply codes were dispensed during that same encounter visit"
+      },
+      {
+        "id": "c",
+        "text": "Place-of-service field should override the billed CPT description on the line"
+      },
+      {
+        "id": "d",
+        "text": "Modifier was chosen to break an NCCI edit pairing for that same procedure line"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Each CPT/HCPCS service line links to one or more ICD-10-CM diagnosis codes via pointers so the payer can judge medical necessity for that specific service. Wrong or missing pointers commonly trigger medical-necessity denials even when diagnoses appear elsewhere on the claim.",
+    "distractorExplanations": {
+      "b": "Supply codes are separate service lines with their own coding; diagnosis pointers do not identify which HCPCS supplies were dispensed.",
+      "c": "Place of service is its own claim field; it does not replace or override the CPT description through diagnosis pointers.",
+      "d": "Modifiers document procedural circumstances; diagnosis pointers link diagnoses to services, not NCCI modifier choice."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-017",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "For outpatient professional billing, the first-listed ICD-10-CM diagnosis should be the condition",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chiefly responsible for the outpatient services provided at that encounter"
+      },
+      {
+        "id": "b",
+        "text": "With the highest relative weight under the inpatient DRG grouper calculation"
+      },
+      {
+        "id": "c",
+        "text": "Listed first alphabetically among the patient's chronic problem list entries"
+      },
+      {
+        "id": "d",
+        "text": "That appears most often in the practice's preferred denial appeal letter templates"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Outpatient coding guidelines require the first-listed diagnosis to be the condition mainly responsible for the services rendered that day. Chronic comorbidities may be reported as additional diagnoses when they affect care, but they do not automatically lead the claim.",
+    "distractorExplanations": {
+      "b": "DRG relative weight applies to inpatient facility payment grouping, not to selecting the outpatient first-listed diagnosis.",
+      "c": "Alphabetical order on a problem list has no coding authority; sequence follows the reason for the encounter's services.",
+      "d": "Appeal convenience never drives code sequencing; sequencing must follow documentation and official guidelines."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-018",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "When documentation supports a more specific ICD-10-CM code, a biller should generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the highest level of specificity supported by the provider's note"
+      },
+      {
+        "id": "b",
+        "text": "Routinely choose the unspecified code to reduce audit risk and payer exposure"
+      },
+      {
+        "id": "c",
+        "text": "Bill just symptom codes even when a confirmed diagnosis is clearly documented"
+      },
+      {
+        "id": "d",
+        "text": "Omit laterality digits so the claim clears automated payer edits more quickly"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "ICD-10-CM coding rules expect the most specific code supported by documentation, including laterality and episode detail when available. Using an unspecified code when the note supports specificity undercodes clinical reality and can weaken medical-necessity support.",
+    "distractorExplanations": {
+      "b": "Unspecified codes are for when specificity is truly undocumented; choosing them to dodge audits when detail exists is incorrect.",
+      "c": "When a definitive diagnosis is documented for the encounter, that diagnosis—not only symptoms—should be coded.",
+      "d": "Dropping laterality when documented reduces accuracy and may conflict with payer edits that expect specific codes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-019",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "A CPT add-on code (often marked with +) is typically reported when the biller",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pairs it with its primary parent code from the same session per CPT instructions"
+      },
+      {
+        "id": "b",
+        "text": "Bills it alone as a stand-alone procedure without any primary code on the claim"
+      },
+      {
+        "id": "c",
+        "text": "Replaces the primary surgical code with the add-on solely to increase payment"
+      },
+      {
+        "id": "d",
+        "text": "Reports it on facility UB-04 claims while skipping professional claim service lines"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Add-on CPT codes describe additional work performed with a primary procedure and are not reported alone. Billers must follow the CPT parent-code relationships so the claim reflects both the primary service and the incremental add-on work.",
+    "distractorExplanations": {
+      "b": "Add-on codes are invalid as stand-alone lines; payers expect the designated primary code on the same claim.",
+      "c": "An add-on supplements, not replaces, the primary code; swapping them misrepresents the service performed.",
+      "d": "Add-on CPT codes appear on professional claims when appropriate; they are not limited to facility UB-04 billing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-020",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Modifier 26 on a diagnostic test claim usually indicates that the provider is billing the",
+    "options": [
+      {
+        "id": "a",
+        "text": "Technical component, including equipment use and technician time"
+      },
+      {
+        "id": "b",
+        "text": "Professional component, such as interpretation and written report"
+      },
+      {
+        "id": "c",
+        "text": "Global service covering both professional and technical components"
+      },
+      {
+        "id": "d",
+        "text": "Bilateral performance of the same diagnostic procedure that day"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Modifier 26 reports the professional component—physician interpretation and report—when another entity bills the technical component. Billing 26 incorrectly when the practice owns the equipment and performs the technical work can underbill or mismatch the service actually provided.",
+    "distractorExplanations": {
+      "a": "The technical component is reported with modifier TC (or a technical-only code), not modifier 26.",
+      "c": "A global diagnostic service (no 26/TC split) bills both components together without modifier 26.",
+      "d": "Bilateral procedures use modifier 50 (or laterality rules), not modifier 26."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-021",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Within a surgical global period, routine postoperative visits related to the surgery are generally",
+    "options": [
+      {
+        "id": "a",
+        "text": "Billed separately with a higher-level office E/M each time the patient returns"
+      },
+      {
+        "id": "b",
+        "text": "Included in the surgical package and not billed as separate routine E/M visits"
+      },
+      {
+        "id": "c",
+        "text": "Reported with modifier 25 attached to every related follow-up office visit line"
+      },
+      {
+        "id": "d",
+        "text": "Converted to inpatient consultation codes regardless of the place of service used"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The CPT surgical package typically includes routine postoperative care during the global period, so those visits are not separately billed. Billers should reserve separate E/M coding (with an appropriate modifier when criteria are met) for unrelated or significant separately identifiable services.",
+    "distractorExplanations": {
+      "a": "Routine related postop visits are packaged; billing them separately as higher E/M levels is improper unbundling.",
+      "c": "Modifier 25 is for significant separate E/M with a procedure, not a blanket for every global-period follow-up.",
+      "d": "Place of service and service type still control coding; global postop visits are not automatically consultations."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-022",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "A local coverage determination (LCD) denial that cites a missing covered diagnosis usually means the",
+    "options": [
+      {
+        "id": "a",
+        "text": "CPT code chosen was an unlisted procedure needing a special report attachment"
+      },
+      {
+        "id": "b",
+        "text": "Linked ICD-10-CM code did not meet the payer's medical-necessity list for that CPT"
+      },
+      {
+        "id": "c",
+        "text": "Claim used the wrong NPI taxonomy even though the diagnoses were coded correctly"
+      },
+      {
+        "id": "d",
+        "text": "Patient's secondary insurer must be billed before staff begin any diagnosis code review"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "LCDs and similar policies list diagnoses that support coverage for specific services. When the diagnosis linked to the CPT line is absent from that covered list—or is too nonspecific—payers deny for medical necessity even if the procedure itself was performed.",
+    "distractorExplanations": {
+      "a": "Unlisted-code documentation issues are different from LCD diagnosis coverage failures on a listed CPT.",
+      "c": "Taxonomy/NPI problems create different edits; an LCD covered-diagnosis denial points to Dx–CPT linkage.",
+      "d": "Coordination of benefits order does not redefine LCD medical-necessity diagnosis requirements."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-023",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Billing each component of a lab panel separately when a single panel code exists is an example of",
+    "options": [
+      {
+        "id": "a",
+        "text": "Downcoding to reduce the chance of a medical-necessity review"
+      },
+      {
+        "id": "b",
+        "text": "Unbundling, a pattern NCCI and payer edits commonly reject"
+      },
+      {
+        "id": "c",
+        "text": "Correct use of modifier 59 on every component of the panel"
+      },
+      {
+        "id": "d",
+        "text": "Required reporting when any one panel analyte is abnormal"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When CPT defines a panel code, reporting the individual analytes instead solely to increase payment is unbundling. NCCI and commercial edits are designed to catch that pattern unless a true separate, distinct scenario with proper modifier criteria exists.",
+    "distractorExplanations": {
+      "a": "Downcoding means selecting a lower-level code than supported; splitting a panel is unbundling, not downcoding.",
+      "c": "Modifier 59 does not legitimize routine panel splitting; it requires a distinct procedural scenario meeting criteria.",
+      "d": "An abnormal result does not authorize replacing a panel code with separately billed component codes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-024",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Compared with CPT Category I codes, CPT Category II codes are primarily used to",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace ICD-10-CM diagnosis codes entirely on professional claim forms"
+      },
+      {
+        "id": "b",
+        "text": "Report inpatient operating-room procedures instead of using ICD-10-PCS"
+      },
+      {
+        "id": "c",
+        "text": "Capture performance-measure tracking data rather than drive payment"
+      },
+      {
+        "id": "d",
+        "text": "Bill DME and ambulance services outside Category I procedure coding rules"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Category II codes are supplemental tracking codes for quality and performance measurement. They generally do not replace Category I procedure codes for payment and should not be confused with diagnosis coding or HCPCS Level II supply coding.",
+    "distractorExplanations": {
+      "a": "Diagnoses remain ICD-10-CM; Category II codes do not substitute for diagnosis reporting on claims.",
+      "b": "Inpatient facility procedures use ICD-10-PCS; Category II codes are not a PCS replacement.",
+      "d": "DME and ambulance services are typically HCPCS Level II, not CPT Category II quality-tracking codes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-025",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Z codes in ICD-10-CM most often document factors such as",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acute injury mechanisms like falls from ladders or motor vehicle crash events"
+      },
+      {
+        "id": "b",
+        "text": "Physician work RVUs assigned to surgical CPT codes appearing on the claim"
+      },
+      {
+        "id": "c",
+        "text": "Encounters for screening, aftercare, status, or other health-service reasons"
+      },
+      {
+        "id": "d",
+        "text": "Drug HCPCS J-codes used when pharmacy units exceed published MUE edit limits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Z codes capture reasons for encounter and health-status factors—screening, aftercare, personal history, or status—when they are relevant to the visit. Billers should not confuse them with external-cause injury coding or with procedure/supply coding systems.",
+    "distractorExplanations": {
+      "a": "Injury mechanisms are external cause codes (V/W/X/Y ranges), not Z codes.",
+      "b": "RVUs are payment valuation data, not ICD-10-CM Z-code diagnoses.",
+      "d": "HCPCS J-codes and MUEs relate to drug billing units, not Z-code diagnosis assignment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-026",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Medically Unlikely Edits (MUEs) on a claim line primarily limit how many",
+    "options": [
+      {
+        "id": "a",
+        "text": "Different ICD-10-CM chapters may appear together on one CMS-1500 professional form"
+      },
+      {
+        "id": "b",
+        "text": "Secondary payers can be listed inside the coordination-of-benefits claim loop"
+      },
+      {
+        "id": "c",
+        "text": "Units of a CPT/HCPCS code are ordinarily payable for a single date of service"
+      },
+      {
+        "id": "d",
+        "text": "Modifiers may be appended before a claim is considered clean for payer submission"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "MUEs set an upper unit threshold for a CPT/HCPCS code on a date of service based on clinical likelihood. Exceeding the MUE without a valid unusual-circumstance pathway commonly triggers automated unit denials that billers must investigate.",
+    "distractorExplanations": {
+      "a": "Diagnosis chapter counts are not what MUEs police; MUEs target service units for a code.",
+      "b": "COB payer sequencing is unrelated to MUE unit limits on a procedure line.",
+      "d": "Modifier count is not the MUE concept; MUEs constrain units of the code itself."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-027",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "For many injury diagnoses, the ICD-10-CM seventh character typically communicates the",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place-of-service digit used on the CMS-1500 professional claim form"
+      },
+      {
+        "id": "b",
+        "text": "CPT global period length assigned to the related surgical procedure"
+      },
+      {
+        "id": "c",
+        "text": "Encounter episode, such as initial, subsequent, or sequela care"
+      },
+      {
+        "id": "d",
+        "text": "Payer's timely-filing clock measured in calendar days from discharge"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Injury and certain other ICD-10-CM codes require a seventh character to show whether care is for the initial encounter, subsequent encounter, or sequela. Choosing the wrong episode character can make an otherwise correct diagnosis code invalid or mismatched to the visit.",
+    "distractorExplanations": {
+      "a": "Place of service is a separate claim field, not the ICD-10-CM seventh character.",
+      "b": "Global periods are payment rules tied to procedures, not diagnosis seventh characters.",
+      "d": "Timely filing is an administrative deadline, not encoded in the ICD-10-CM seventh character."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-028",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "ICD-10-PCS procedure codes are primarily used on which type of claim setting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physician office professional claims reporting E/M visits and minor procedures"
+      },
+      {
+        "id": "b",
+        "text": "Ambulance transport claims reporting loaded mileage and HCPCS A-code services"
+      },
+      {
+        "id": "c",
+        "text": "Retail pharmacy claims that bill National Drug Codes for filled prescriptions"
+      },
+      {
+        "id": "d",
+        "text": "Inpatient hospital facility claims for procedures performed during the stay"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "ICD-10-PCS is the inpatient hospital procedure coding system used on facility claims. Outpatient and professional procedure reporting generally uses CPT/HCPCS, so billers must not paste PCS codes onto CMS-1500 professional lines.",
+    "distractorExplanations": {
+      "a": "Office professional claims use CPT/HCPCS for procedures and E/M, not ICD-10-PCS.",
+      "b": "Ambulance services use HCPCS Level II codes; they are not ICD-10-PCS procedure claims.",
+      "c": "Pharmacy billing uses NDCs (and related drug billing rules), not ICD-10-PCS procedure codes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-029",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "When a patient is new to the practice under CPT E/M definitions, the biller should select a",
+    "options": [
+      {
+        "id": "a",
+        "text": "Established-patient office code if any specialist elsewhere in the same city saw them earlier"
+      },
+      {
+        "id": "b",
+        "text": "Consultation code automatically whenever a signed referral letter is present in the chart"
+      },
+      {
+        "id": "c",
+        "text": "Preventive visit code, on the theory that new patients cannot receive problem-oriented E/M"
+      },
+      {
+        "id": "d",
+        "text": "New-patient office E/M when same specialty/group had no face-to-face service in three years"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "CPT treats a patient as new when the same physician or another physician of the same specialty and group has not provided a face-to-face professional service within the prior three years. Using an established code for a true new patient undercodes the visit and mismatches payer expectations.",
+    "distractorExplanations": {
+      "a": "City-wide specialist visits outside the group/specialty rules do not by themselves make the patient established for this practice.",
+      "b": "A referral letter alone does not force consultation coding; payer and CPT rules for consultations must be met.",
+      "c": "New patients may receive problem-oriented E/M; preventive coding is a separate service choice, not a mandate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-coding-awareness-030",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "coding-awareness",
+    "prompt": "Appending HCPCS modifier GA on a Medicare claim typically signals that the",
+    "options": [
+      {
+        "id": "a",
+        "text": "Service was performed bilaterally and should pay at one-hundred-fifty percent"
+      },
+      {
+        "id": "b",
+        "text": "Provider waived patient cost-sharing for a covered Medicare benefit"
+      },
+      {
+        "id": "c",
+        "text": "Claim is a corrected claim replacing a previously paid remittance"
+      },
+      {
+        "id": "d",
+        "text": "Practice expects a denial as not reasonable/necessary and holds a signed ABN"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Modifier GA indicates an Advance Beneficiary Notice of Noncoverage (ABN) is on file because the provider believes Medicare may deny the service as not reasonable and necessary. It helps shift liability correctly; it does not create coverage or replace medical-necessity documentation.",
+    "distractorExplanations": {
+      "a": "Bilateral payment uses modifier 50 (or laterality coding), not GA.",
+      "b": "Waiving cost-sharing is a financial arrangement issue, not what GA communicates to Medicare.",
+      "c": "Corrected claims use claim frequency/resubmission processes, not modifier GA."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-016",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A dual-eligible patient has Original Medicare and full Medicaid. After Medicare adjudicates an office claim, the billing specialist should typically:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill Medicaid as secondary for remaining covered patient liability per state crossover rules"
+      },
+      {
+        "id": "b",
+        "text": "Write off the remaining balance because dual eligibility voids patient Medicare cost sharing"
+      },
+      {
+        "id": "c",
+        "text": "Bill Medicaid as primary and hold the Medicare claim until Medicaid finishes adjudication"
+      },
+      {
+        "id": "d",
+        "text": "Balance-bill the patient for the full Medicare deductible and coinsurance before contacting Medicaid"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Medicaid is usually the payer of last resort. For dual eligibles, Medicare pays first; remaining deductible/coinsurance may cross over to Medicaid under state QMB or crossover rules rather than being billed as a primary Medicaid claim.",
+    "distractorExplanations": {
+      "b": "Dual eligibility does not erase all liability; Medicaid may cover Medicare cost sharing, but the claim still needs proper secondary billing.",
+      "c": "Medicaid is not primary when Medicare covers the service; billing Medicaid first reverses coordination-of-benefits order.",
+      "d": "Many duals (especially QMB) are protected from Medicare cost-share balance billing; Medicaid secondary processing comes first."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-017",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A patient with a Medigap (Medicare Supplement) policy asks why the office billed Medicare first. The correct explanation is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Medigap is primary for physician services; Medicare pays leftover residual amounts afterward"
+      },
+      {
+        "id": "b",
+        "text": "Medigap pays after Medicare; it fills gaps such as Part B deductible or coinsurance"
+      },
+      {
+        "id": "c",
+        "text": "Medigap replaces Original Medicare, so claims go to the supplement insurer alone"
+      },
+      {
+        "id": "d",
+        "text": "Medigap and Medicare split each claim fifty-fifty and bill both as co-primary payers"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Medigap is a private supplement that pays after Original Medicare adjudicates. It is not a Medicare Advantage plan and does not become primary for covered Part A/B services under normal MSP rules.",
+    "distractorExplanations": {
+      "a": "Medigap is secondary to Medicare; treating it as primary for physician services reverses how supplements work.",
+      "c": "Medigap does not replace Parts A and B; Medicare Advantage (Part C) is the product that substitutes for Original Medicare.",
+      "d": "There is no 50/50 co-primary split; Medicare pays first and Medigap may cover remaining allowed patient share."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-018",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Before scheduling elective outpatient surgery for a commercial HMO member, the scheduler confirms a referral but no prior authorization. The safest next step is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schedule the elective surgery immediately; a referral alone satisfies commercial plan surgery rules"
+      },
+      {
+        "id": "b",
+        "text": "Bill the claim as out-of-network so the plan's prior authorization rules will not apply"
+      },
+      {
+        "id": "c",
+        "text": "Verify whether the plan also requires prior authorization for the CPT/facility before booking"
+      },
+      {
+        "id": "d",
+        "text": "Have the patient sign an ABN so the practice can bill the patient if the HMO later denies"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Referrals and prior authorizations are separate commercial controls. An HMO referral allows specialty access; many elective procedures still need plan prior authorization for the specific service and site of care before the date of service.",
+    "distractorExplanations": {
+      "a": "A referral does not automatically replace prior authorization; many plans require both for elective surgery.",
+      "b": "Out-of-network billing does not waive authorization rules and often worsens payment and patient liability.",
+      "d": "An ABN is a Medicare fee-for-service notice and does not authorize or protect commercial HMO denials."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-019",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Primary commercial insurance paid an office claim. To bill the patient's secondary commercial plan correctly, the biller usually must:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Submit the secondary claim with the CPT codes and omit primary payment and allowed amounts"
+      },
+      {
+        "id": "b",
+        "text": "Wait ninety days so the secondary plan can request medical records from the primary payer"
+      },
+      {
+        "id": "c",
+        "text": "Refund the primary payment first, then rebill both commercial plans together as co-primary"
+      },
+      {
+        "id": "d",
+        "text": "Include primary adjudication (paid/allowed/patient responsibility) from the EOB or ERA"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Secondary payers need coordination-of-benefits detail from the primary remittance—amounts billed, allowed, paid, and remaining patient responsibility—so they can apply their own benefits without overpaying.",
+    "distractorExplanations": {
+      "a": "Omitting primary payment data causes COB rejects; secondaries require primary adjudication amounts.",
+      "b": "There is no standard ninety-day wait for secondary filing; timely filing still applies after primary payment.",
+      "c": "Refunding and refiling as co-primary is incorrect; primary/secondary order is based on COB rules, not simultaneous billing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-020",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A working-aged patient has Medicare Part B and a large-employer group health plan through active employment. Under MSP, the office should bill:",
+    "options": [
+      {
+        "id": "a",
+        "text": "The group health plan first, then Medicare as secondary when MSP rules apply"
+      },
+      {
+        "id": "b",
+        "text": "Medicare as primary first because the patient is over age sixty-five, regardless of the group plan"
+      },
+      {
+        "id": "c",
+        "text": "Medicare and the group plan as co-primary with identical billed amounts on both claims"
+      },
+      {
+        "id": "d",
+        "text": "Medicaid first if the patient also carries a Medigap policy alongside the group plan"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Medicare Secondary Payer rules often make a large-employer group health plan primary for working-aged beneficiaries with coverage based on current employment. Medicare may pay residual amounts only after the GHP adjudicates.",
+    "distractorExplanations": {
+      "b": "Age alone does not make Medicare primary when an active large-employer GHP is primary under MSP.",
+      "c": "Plans are not co-primary; MSP sets a clear primary/secondary sequence for the same service.",
+      "d": "Medigap is a Medicare supplement, not a reason to bill Medicaid first for a working-aged MSP case."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-021",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A Medicaid patient is enrolled in a Medicaid managed care organization (MCO). Professional claims for covered services are generally submitted to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "CMS Central Office with a paper CMS-1500 for Medicaid managed-care organization members"
+      },
+      {
+        "id": "b",
+        "text": "The Medicaid MCO (or its designated claims vendor) per the plan contract"
+      },
+      {
+        "id": "c",
+        "text": "Original Medicare Part B even when the patient has no Medicare entitlement on file"
+      },
+      {
+        "id": "d",
+        "text": "The state fee-for-service Medicaid office, ignoring the MCO ID printed on the card"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Many states deliver Medicaid through managed care. When a member is assigned to an MCO, the provider bills that plan under its network and claims rules rather than defaulting to open fee-for-service Medicaid or Medicare.",
+    "distractorExplanations": {
+      "a": "CMS does not adjudicate state Medicaid MCO professional claims centrally on paper CMS-1500s.",
+      "c": "Medicare is irrelevant unless the patient is also Medicare-entitled; a Medicaid-only MCO member is not billed to Part B.",
+      "d": "Ignoring the MCO and billing FFS Medicaid typically causes rejection when the member is locked to managed care."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-022",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Compared with a typical HMO, a PPO commercial plan usually allows specialist visits:",
+    "options": [
+      {
+        "id": "a",
+        "text": "After the PCP issues a written referral for each in-network specialist visit"
+      },
+      {
+        "id": "b",
+        "text": "At out-of-network facilities rather than at contracted in-network specialist offices"
+      },
+      {
+        "id": "c",
+        "text": "Without a PCP referral in many plans, often with higher cost share out of network"
+      },
+      {
+        "id": "d",
+        "text": "When Medicare Part A has already denied payment for the same specialist claim first"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "PPOs generally permit self-referral to specialists, especially in network, while charging higher member cost sharing for out-of-network care. HMOs more often require PCP referrals for specialty access.",
+    "distractorExplanations": {
+      "a": "Mandatory PCP referrals for each specialist visit describe classic HMO gatekeeping, not typical PPO design.",
+      "b": "PPOs cover in-network specialists; limiting care to out-of-network sites is not how PPOs work.",
+      "d": "Commercial PPO specialist access is not conditioned on a prior Medicare Part A denial."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-023",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A Medicare Advantage (Part C) member needs a drug that is on the plan formulary with prior authorization. Which statement best guides the billing office?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill the drug claim to Original Medicare Part B without contacting the MA plan"
+      },
+      {
+        "id": "b",
+        "text": "Ignore formulary rules because Part C covers outpatient prescriptions without restriction"
+      },
+      {
+        "id": "c",
+        "text": "Submit the pharmacy claim to Medicaid first for Medicare Advantage members automatically"
+      },
+      {
+        "id": "d",
+        "text": "Follow the MA plan's formulary and prior-authorization process for the covered drug"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Most Medicare Advantage plans include drug coverage (MA-PD) with plan-specific formularies, tiers, and prior authorization. The pharmacy or clinic must work that plan's utilization rules rather than defaulting to Original Medicare Part B or Medicaid.",
+    "distractorExplanations": {
+      "a": "MA members' covered outpatient drugs are not routinely billed to Original Medicare Part B as if they had stand-alone FFS coverage.",
+      "b": "Part C plans use formularies and utilization management; they do not cover outpatient drugs without restriction.",
+      "c": "Medicaid is not automatically primary for MA drug claims; COB depends on dual status and state rules."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-024",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Liability insurance is involved after a motor vehicle accident, and the patient also has Medicare. For related injury claims, MSP guidance generally means:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill the liability/no-fault insurer as primary for accident-related care when it is responsible"
+      },
+      {
+        "id": "b",
+        "text": "Bill Medicare first for the injury visits, then notify liability if Medicare later denies"
+      },
+      {
+        "id": "c",
+        "text": "Bill the patient's Medigap supplement as primary because liability insurers rarely pay medical bills"
+      },
+      {
+        "id": "d",
+        "text": "Write off the accident-related care because Medicare forbids billing any liable third party"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Under Medicare Secondary Payer, liability, no-fault, and workers' compensation are typically primary for related injury care. Medicare may pay conditionally in some situations but seeks recovery; the office should identify and bill the responsible primary payer.",
+    "distractorExplanations": {
+      "b": "Billing Medicare first for accident-related care when liability is known primary can violate MSP order and create recovery issues.",
+      "c": "Medigap supplements Medicare; it does not replace liability as the primary accident payer.",
+      "d": "Medicare does not forbid third-party billing; MSP requires pursuing the correct primary payer for accident care."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-025",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A commercial plan denies a specialist claim as \"no referral on file\" even though the visit was medically necessary. The biller's first corrective action should be:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Change the diagnosis codes on the claim until the payer pays without fixing the referral"
+      },
+      {
+        "id": "b",
+        "text": "Confirm whether a valid PCP referral existed for the DOS and resubmit or appeal with proof"
+      },
+      {
+        "id": "c",
+        "text": "Transfer the unpaid balance to collections right away as non-covered cosmetic specialty care"
+      },
+      {
+        "id": "d",
+        "text": "Rebill the same specialist claim to Medicare Part A regardless of the patient's active coverage"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A \"no referral\" denial is an administrative/network control issue. The specialist office should verify referral presence and dates, obtain missing documentation from the PCP when possible, and correct or appeal with evidence rather than altering clinical coding to force payment.",
+    "distractorExplanations": {
+      "a": "Changing diagnoses to bypass a referral denial is improper and can create compliance risk without fixing the real edit.",
+      "c": "Medical necessity does not convert the visit to cosmetic; collections before referral research is premature.",
+      "d": "Medicare Part A is inpatient hospital insurance and is not a dump payer for commercial referral denials."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-026",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Which statement best distinguishes Medicare Part A from Part B for a hospital outpatient clinic visit billed on a professional claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Part A routinely pays the physician's professional fee for hospital outpatient clinic visits"
+      },
+      {
+        "id": "b",
+        "text": "Part B covers outpatient clinic professional services in few cases under any circumstance"
+      },
+      {
+        "id": "c",
+        "text": "Part B typically covers physician outpatient professional services; Part A is hospital insurance"
+      },
+      {
+        "id": "d",
+        "text": "Part A and Part B are interchangeable labels covering the same outpatient physician clinic benefit"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Part A is hospital insurance (inpatient, limited SNF, hospice, some home health). Part B is medical insurance covering physician and many outpatient services. A professional clinic claim for an enrolled beneficiary is generally a Part B benefit, not Part A.",
+    "distractorExplanations": {
+      "a": "Physician professional fees for outpatient clinic care are Part B benefits, not Part A hospital insurance.",
+      "b": "Part B is the primary coverage for many outpatient physician services, so treating clinic care as barely covered is false.",
+      "d": "Parts A and B are distinct benefit categories with different deductibles, premiums, and covered services."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-027",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "A stand-alone Medicare Part D plan (PDP) primarily pays for:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inpatient hospital DRG payments submitted on the UB-04 to the fiscal intermediary"
+      },
+      {
+        "id": "b",
+        "text": "Physician office E/M visits billed on the CMS-1500 to the A/B MAC contractor"
+      },
+      {
+        "id": "c",
+        "text": "Skilled nursing facility room-and-board charges under the Part A benefit period rules"
+      },
+      {
+        "id": "d",
+        "text": "Covered outpatient prescription drugs through the Part D plan's pharmacy network"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A PDP is private Part D coverage for outpatient drugs and is separate from hospital Part A and medical Part B. Pharmacy claims go to the Part D plan (or PBM), not to the A/B MAC as physician services.",
+    "distractorExplanations": {
+      "a": "Inpatient DRG hospital payments are Part A institutional claims, not stand-alone Part D pharmacy benefits.",
+      "b": "Office E/M claims go to Part B / the A/B MAC (or an MA plan), not to a stand-alone Part D PDP.",
+      "c": "SNF room-and-board under a benefit period is a Part A issue, not a Part D drug-plan payment."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-028",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "When Medicaid is the only coverage and a service is a non-covered Medicaid benefit in that state, the billing office should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inform the patient of non-coverage and follow state rules before billing the patient"
+      },
+      {
+        "id": "b",
+        "text": "Bill Medicare Advantage (Part C) automatically so the non-covered service becomes a covered benefit"
+      },
+      {
+        "id": "c",
+        "text": "Upcode the encounter to a covered CPT so the claim will pay without giving patient notice"
+      },
+      {
+        "id": "d",
+        "text": "Submit the service as workers' compensation even when no work injury is documented"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "State Medicaid programs define covered benefits. If a service is non-covered, staff should verify eligibility and benefit status, notify the patient per policy/state requirements, and only pursue patient billing when rules allow—never by fabricating another payer or code.",
+    "distractorExplanations": {
+      "b": "Medicare Advantage cannot be invented for a Medicaid-only patient; there is no automatic Part C coverage.",
+      "c": "Upcoding to force payment is fraudulent and does not create a covered benefit.",
+      "d": "Workers' compensation applies only to documented work-related injuries, not as a workaround for Medicaid non-coverage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-029",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "An MA (Part C) member receives care from an out-of-network specialist without plan approval for a non-emergency service. The claim is most likely to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pay at Original Medicare Part B rates because MA specialty care crosses over to FFS"
+      },
+      {
+        "id": "b",
+        "text": "Deny or pay at reduced OON benefits per the MA plan's network and authorization rules"
+      },
+      {
+        "id": "c",
+        "text": "Auto-approve payment because Part C plans cover out-of-network specialists without network limits"
+      },
+      {
+        "id": "d",
+        "text": "Route the claim to Medicaid as primary regardless of the patient's active MA enrollment"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Medicare Advantage plans typically use networks and may require authorization for non-emergency out-of-network specialty care. Unlike Original Medicare (with limited exceptions), unpaid or reduced OON MA claims are a common result when rules are not followed.",
+    "distractorExplanations": {
+      "a": "MA claims do not routinely \"cross over\" to Original Medicare Part B for payment of the same MA-covered service.",
+      "c": "Part C plans generally may use networks and gatekeeping; they are not required to cover specialists without restriction.",
+      "d": "Medicaid is not automatically primary for MA members; only duals follow Medicare-then-Medicaid order when applicable."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-payers-030",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "payers",
+    "prompt": "Primary payer paid less than expected. Before writing off the difference as contractual, the biller should first confirm:",
+    "options": [
+      {
+        "id": "a",
+        "text": "That the patient has no secondary insurance available that might cover remaining patient responsibility"
+      },
+      {
+        "id": "b",
+        "text": "That unpaid amounts can be balance-billed to the patient even when a secondary plan exists"
+      },
+      {
+        "id": "c",
+        "text": "Whether secondary coverage exists and whether remaining amounts are patient share vs contractual"
+      },
+      {
+        "id": "d",
+        "text": "That Medicare Part D will automatically pay any unpaid professional E/M balance left after the primary"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After primary adjudication, remaining dollars may be contractual adjustment, patient cost share, or secondary-plan liability. The biller must read the remittance, check for secondary coverage, and only then post write-offs or patient balances correctly.",
+    "distractorExplanations": {
+      "a": "Checking for secondary is necessary, but the fuller step is distinguishing contractual write-off from billable patient or secondary amounts.",
+      "b": "Balance-billing the full unpaid amount when a secondary exists (or when the amount is contractual) is often incorrect.",
+      "d": "Part D covers outpatient drugs, not unpaid professional E/M balances from medical claims."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-016",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A billing specialist needs the diagnosis and procedure codes for a denied claim appeal. A coworker offers to email the patient's entire EHR chart. Under HIPAA minimum necessary, the specialist should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Request only the visit note, orders, and codes needed to support the appeal"
+      },
+      {
+        "id": "b",
+        "text": "Accept the full chart because payment uses are exempt from minimum necessary limits"
+      },
+      {
+        "id": "c",
+        "text": "Require a signed patient authorization before any internal billing staff can view PHI"
+      },
+      {
+        "id": "d",
+        "text": "Forward the full chart to the payer so they can decide what is relevant"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HIPAA's minimum necessary standard limits use and disclosure of PHI for payment and operations to the least information reasonably needed for the task. For a denial appeal, that usually means the supporting visit documentation and codes—not the entire longitudinal chart—unless a broader set is clearly required.",
+    "distractorExplanations": {
+      "b": "Payment uses are permitted without authorization, but minimum necessary still limits how much PHI staff access and share for each job.",
+      "c": "Workforce members performing treatment, payment, or operations generally do not need a patient authorization for those uses.",
+      "d": "Sending an entire chart to a payer when only appeal support is needed exceeds minimum necessary and creates unnecessary disclosure risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-017",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "An employer HR clerk calls the billing office asking for a patient's full visit notes and itemized charges for a workers' leave review. No authorization is on file. The compliant next step is:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fax the complete chart because employers routinely qualify as covered entities"
+      },
+      {
+        "id": "b",
+        "text": "Decline until a valid patient authorization or other lawful basis specifies what may be released"
+      },
+      {
+        "id": "c",
+        "text": "Confirm the patient's employer on the claim and release whatever HR requests verbally"
+      },
+      {
+        "id": "d",
+        "text": "Release diagnosis codes alone, claiming codes are rarely treated as protected health information by payers"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Release of information to an employer for non-payment purposes generally requires a HIPAA-compliant authorization (or other legal process) that names the recipient and limits the PHI disclosed. Billing staff should not release visit notes or charges based on a phone request alone when no valid authorization or lawful exception applies.",
+    "distractorExplanations": {
+      "a": "Employers are usually not covered entities for this purpose, and a full-chart fax without authorization is an improper disclosure.",
+      "c": "Having an employer listed for billing does not authorize unrestricted ROI of clinical notes to HR for leave review.",
+      "d": "Diagnosis and procedure codes linked to an identifiable patient are PHI and cannot be freely given without a proper basis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-018",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "During a monthly reconciliation, a billing lead finds that duplicate Medicare claims were paid for the same date of service. Leadership already knows about the overpayment. The False Claims Act–aware response is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the duplicate payments in place until a RAC auditor formally requests a written refund"
+      },
+      {
+        "id": "b",
+        "text": "Offset future claims quietly without documenting the identified overpayment"
+      },
+      {
+        "id": "c",
+        "text": "Report and return the identified overpayment within the required repayment timeframe"
+      },
+      {
+        "id": "d",
+        "text": "Rebill the same services again under a different rendering NPI to net the balances"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Once an overpayment is identified, providers must report and return it within the statutory timeframe (commonly described as within 60 days of identification for Medicare). Keeping known improper payments, hiding them, or rebilling deceptively can create False Claims Act exposure even if the original error was accidental.",
+    "distractorExplanations": {
+      "a": "Waiting for a RAC does not excuse retaining a known overpayment and increases FCA and repayment risk.",
+      "b": "Informal offsets without proper reporting fail the repayment duty and leave an audit trail of concealment.",
+      "d": "Rebilling under another NPI to mask duplicates is a knowing false claim and is itself fraudulent conduct."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-019",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A coder notices that several visit notes appear cloned: identical exam findings and medical decision-making language across different patients on the same day. For documentation integrity before claim submission, the billing team should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Submit the claims quickly because EHR templates are assumed to prove medical necessity on their own"
+      },
+      {
+        "id": "b",
+        "text": "Swap a few diagnosis codes so the cloned narrative looks more varied to payers"
+      },
+      {
+        "id": "c",
+        "text": "Ignore the pattern if those CPT levels are common for that specialty and payer mix"
+      },
+      {
+        "id": "d",
+        "text": "Hold questionable claims and escalate for clinical clarification before billing high-level codes"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Documentation must support the services billed for each specific patient encounter. Cloned or copy-forward notes that lack individualized clinical content are a documentation-integrity red flag and can support upcoding or false claim allegations. Billing should pause suspect claims and route them for provider clarification rather than submitting unsupported levels.",
+    "distractorExplanations": {
+      "a": "Templates do not prove medical necessity; payers and auditors expect patient-specific documentation for the billed service.",
+      "b": "Altering diagnoses to disguise cloned notes worsens integrity problems and can create additional false claims risk.",
+      "c": "Specialty norms do not excuse unsupported high-level coding when the note content looks copied across patients."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-020",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A specialist reports to a supervisor that claims are being submitted with a modifier the team knows does not apply. The supervisor says to keep billing it and threatens the reporter's hours. The best use of the compliance hotline is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report the suspected improper billing and retaliation concern through the hotline per policy"
+      },
+      {
+        "id": "b",
+        "text": "Stop using the hotline because supervisors should clear compliance reports first"
+      },
+      {
+        "id": "c",
+        "text": "Call the payer's provider relations line and accuse the supervisor of fraud by name on the spot"
+      },
+      {
+        "id": "d",
+        "text": "Delete the claim batch so there is no evidence left for a compliance review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Compliance hotlines exist so workforce members can report suspected fraud, waste, abuse, or policy violations—including retaliation—in good faith, often anonymously. Effective programs prohibit retaliation and allow reporting outside the chain of command when a supervisor is part of the problem.",
+    "distractorExplanations": {
+      "b": "Requiring supervisor approval defeats the hotline's purpose when the supervisor is implicated in the misconduct.",
+      "c": "External accusations without internal investigation can be premature; the hotline starts the organization's response process.",
+      "d": "Destroying claim evidence obstructs investigation and can itself become a serious compliance and legal violation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-021",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Preparing a commercial appeal packet, staff debate attaching every prior specialty consult from the last five years. Applying minimum necessary for payment-related disclosure, they should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Attach the entire multi-year specialty chart to avoid another payer documentation request later"
+      },
+      {
+        "id": "b",
+        "text": "Include only records that reasonably support medical necessity for the denied service"
+      },
+      {
+        "id": "c",
+        "text": "Omit clinical notes and send a blank CMS-1500 reprint with no supporting records"
+      },
+      {
+        "id": "d",
+        "text": "Upload psychotherapy session notes without reviewing whether the appeal needs them"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Even when disclosing PHI to a health plan for payment, covered entities should limit the records to what is reasonably necessary to support the appeal. Over-disclosing unrelated longitudinal history—especially sensitive notes—violates minimum necessary and increases privacy risk without improving the appeal.",
+    "distractorExplanations": {
+      "a": "Convenience for a possible future request does not justify sending years of unrelated PHI with a single denial appeal.",
+      "c": "Appeals for medical necessity usually need supporting clinical documentation; a blank claim reprint alone is inadequate.",
+      "d": "Psychotherapy notes have heightened protections; they should not be dumped into an appeal without clear need and proper handling."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-022",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A patient's adult spouse arrives at the front desk asking for an itemized statement and full clinical summary to \"handle the bills at home.\" The patient is competent and no ROI authorization is on file. Staff should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Release everything because marriage creates HIPAA personal-representative status for a competent spouse"
+      },
+      {
+        "id": "b",
+        "text": "Give the clinical summary but withhold the itemized statement as if it were non-PHI"
+      },
+      {
+        "id": "c",
+        "text": "Decline clinical disclosure until the patient authorizes the spouse or another lawful basis exists"
+      },
+      {
+        "id": "d",
+        "text": "Mail both documents to the spouse's workplace without verifying the recipient's identity"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A competent adult patient's spouse is not automatically entitled to clinical records under HIPAA. Release for billing convenience still needs patient authorization (or another legal pathway) specifying the recipient and scope. Staff may discuss limited payment information consistent with policy, but full clinical summaries require proper authorization.",
+    "distractorExplanations": {
+      "a": "Marriage alone does not make a spouse the patient's personal representative for unrestricted PHI access.",
+      "b": "Itemized statements tied to a patient are PHI; splitting clinical vs billing does not remove the need for a proper disclosure basis.",
+      "d": "Mailing PHI to an unverified workplace address without authorization is an improper disclosure and identity-verification failure."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-023",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A practice manager instructs billers to routinely change established-patient office visits from level 3 to level 4 whenever the EHR shows a long note, regardless of medical decision-making. This pattern most closely creates:",
+    "options": [
+      {
+        "id": "a",
+        "text": "No risk if the payer's auto-adjudication system pays the higher level"
+      },
+      {
+        "id": "b",
+        "text": "Simply a coding education matter without False Claims Act implications"
+      },
+      {
+        "id": "c",
+        "text": "Acceptable revenue optimization because longer notes routinely equal higher E/M levels"
+      },
+      {
+        "id": "d",
+        "text": "False Claims Act risk from knowingly submitting unsupported upcoded E/M services"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Systematically upcoding visits without documentation that supports the higher level—especially under management direction—reflects knowing or reckless submission of false claims. Payment by the payer does not validate the coding, and note length alone does not establish the correct E/M level under current guidelines.",
+    "distractorExplanations": {
+      "a": "Auto-payment does not cure improper coding; identified overpayments and FCA exposure can still follow.",
+      "b": "Directed, knowing upcoding goes beyond education and can trigger FCA liability and repayment obligations.",
+      "c": "E/M leveling depends on medical decision-making (and related rules), not raw note length or word count."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-024",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A provider verbally tells billing that a joint injection was performed, but the signed procedure note documents only an evaluation visit with no injection. Documentation integrity requires the claim to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bill only services supported by the authenticated record, and query before adding the injection"
+      },
+      {
+        "id": "b",
+        "text": "Add the injection CPT based on the verbal statement so revenue is not lost"
+      },
+      {
+        "id": "c",
+        "text": "Submit the injection now and ask the provider to backdate a supporting procedure note after payment posts"
+      },
+      {
+        "id": "d",
+        "text": "Copy another patient's injection note and change the patient name on it"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Claims must reflect documented, performed services. Verbal instructions that conflict with the signed record are not a substitute for authenticated documentation. The compliant path is to bill what the record supports and use a query or addendum process so any late injection documentation is accurate and timely—not fabricated after payment.",
+    "distractorExplanations": {
+      "b": "Billing from an unsupported verbal claim creates a false claim if the record never documents the injection.",
+      "c": "Billing first and backdating later undermines integrity and can be viewed as falsifying records to support payment.",
+      "d": "Copying another patient's note is fraudulent documentation and a serious privacy and false-claims violation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-025",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A durable medical equipment sales representative offers gift cards to billing staff for each Medicare referral steered to that vendor. The staff member's best first compliance action is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept the cards if they are under $100 and record them as team morale bonuses"
+      },
+      {
+        "id": "b",
+        "text": "Refuse the offer and report the inducement through the compliance hotline or officer"
+      },
+      {
+        "id": "c",
+        "text": "Negotiate a higher gift-card amount so the arrangement is documented as a contract"
+      },
+      {
+        "id": "d",
+        "text": "Steer dual-eligible patients to the vendor, assuming Medicaid avoids Anti-Kickback rules"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Remuneration intended to induce referrals for items or services payable by federal programs raises Anti-Kickback Statute concerns. Billing staff should refuse the gift cards and report the solicitation through the compliance hotline or compliance officer so the organization can investigate and respond without the employee participating in the arrangement.",
+    "distractorExplanations": {
+      "a": "Dollar thresholds for \"morale\" do not legalize referral-based gift cards tied to Medicare business.",
+      "c": "Writing a kickback as a \"contract\" does not create a safe harbor; it may document illegal intent.",
+      "d": "Steering dual-eligible or any federal-program patients for remuneration still implicates federal kickback rules."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-026",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "At end of day, a biller finds printed EOBs with patient names, member IDs, and diagnoses left in a shared printer tray in a public hallway. The immediate compliance-minded action is to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the pages for the night cleaner because PHI on paper is outside HIPAA"
+      },
+      {
+        "id": "b",
+        "text": "Post a photo of the print stack in the team chat so coworkers can claim their unfinished pages"
+      },
+      {
+        "id": "c",
+        "text": "Secure the prints, limit further exposure, and report the incident per privacy policy"
+      },
+      {
+        "id": "d",
+        "text": "Shred the cover sheet and leave the remaining EOB pages in the open tray"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Paper EOBs with identifiers and clinical details are PHI. Leaving them in a public area is an improper disclosure risk. Staff should retrieve and secure the documents, prevent further viewing, and follow the organization's incident or privacy reporting process so leadership can assess breach notification and strengthen safeguards.",
+    "distractorExplanations": {
+      "a": "HIPAA covers PHI in any form, including paper; public hallway exposure is a privacy incident risk.",
+      "b": "Photographing and posting PHI in chat creates additional unauthorized disclosures to more people.",
+      "d": "Partial shredding that leaves identifiable EOBs in a public tray continues the improper exposure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-027",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A patient brings a handwritten note saying \"OK to give my records to anyone who asks about my bill.\" For a valid HIPAA authorization for ROI, billing staff should recognize that the note is insufficient mainly because it fails to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use Latin legal phrases that state medical boards supposedly require on authorizations"
+      },
+      {
+        "id": "b",
+        "text": "Be notarized by a bank officer before any disclosure of PHI can proceed"
+      },
+      {
+        "id": "c",
+        "text": "Include the patient's Social Security number printed in the margin of the note"
+      },
+      {
+        "id": "d",
+        "text": "List a specific recipient, purpose, and description of PHI to be disclosed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A valid HIPAA authorization must identify who may receive the PHI, describe what information may be disclosed, state the purpose, and include required statements and an expiration. An open-ended \"anyone who asks\" note lacks the specificity HIPAA requires and should not be treated as a complete authorization for release of information.",
+    "distractorExplanations": {
+      "a": "HIPAA does not require Latin legal phrasing; specificity and core authorization elements matter, not archaic wording.",
+      "b": "Notarization is not a universal HIPAA requirement for a patient authorization form.",
+      "c": "SSN is not a required authorization element and collecting it unnecessarily can increase privacy risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-028",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "After a medical-necessity denial, a biller is asked to edit the original visit note in the EHR so the history suddenly includes symptoms that were never documented that day. Documentation integrity principles require the biller to:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse to alter the original note and route any late clarification through proper addendum policy"
+      },
+      {
+        "id": "b",
+        "text": "Overwrite the note silently because payers rarely scrutinize amended documentation"
+      },
+      {
+        "id": "c",
+        "text": "Delete the denial letter from the account so no one questions the altered chart entry"
+      },
+      {
+        "id": "d",
+        "text": "Copy symptoms from a different visit date into the denied encounter without labeling a dated addendum"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Altering an authenticated original note to manufacture medical necessity after a denial is falsification and creates False Claims Act and credibility risk. Late clinical information, if accurate, must be added through transparent addendum or amendment procedures that preserve the original record and timeline—not silent overwrites by billing staff.",
+    "distractorExplanations": {
+      "b": "Payers and auditors frequently review amendments; silent overwrites look like concealment of unsupported billing.",
+      "c": "Destroying denial evidence obstructs compliance review and does not make an improper chart edit lawful.",
+      "d": "Importing content from another date without a labeled addendum misrepresents what occurred at the billed encounter."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-029",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "A new hire asks whether using the internal compliance hotline means they can never contact the OIG if fraud continues. Which statement best reflects False Claims Act whistleblower awareness for billing staff?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Internal hotlines waive the right to report externally in most situations"
+      },
+      {
+        "id": "b",
+        "text": "Good-faith internal reporting is encouraged, and federal law protects certain external whistleblowing"
+      },
+      {
+        "id": "c",
+        "text": "Physicians alone may report suspected false claims; billers lack a protected reporting path"
+      },
+      {
+        "id": "d",
+        "text": "Hotline use is reserved for password resets, badge access problems, and other routine IT help-desk tickets"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Organizations encourage employees to use internal hotlines first so issues can be fixed, but the False Claims Act and related protections recognize good-faith reporting of suspected government healthcare fraud, including external paths when appropriate. Billing staff are often well placed to spot improper claims and should not be told that internal reporting forever bars lawful external disclosure.",
+    "distractorExplanations": {
+      "a": "Internal reporting policies cannot lawfully erase all external whistleblower rights in every situation.",
+      "c": "Workforce members in billing roles can and should report suspected false claims; protection is not limited to physicians.",
+      "d": "Hotlines address suspected compliance violations, not routine IT password or help-desk functions."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
+  },
+  {
+    "id": "medical-billing-specialist-readiness-check-compliance-030",
+    "examSlug": "medical-billing-specialist-readiness-check",
+    "topicId": "compliance",
+    "prompt": "Front-desk staff want the billing team's full denial spreadsheet—including diagnoses, account balances, and Social Security numbers—posted on a shared wall monitor visible to waiting patients. Under minimum necessary and safeguarding rules, leadership should:",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve the wall display because visitor transparency supposedly builds patient trust"
+      },
+      {
+        "id": "b",
+        "text": "Allow SSNs on the monitor if the font is small enough that waiting patients supposedly struggle to make them out"
+      },
+      {
+        "id": "c",
+        "text": "Prohibit public display of identifiable PHI and limit denial worklists to secure, role-based views"
+      },
+      {
+        "id": "d",
+        "text": "Post diagnosis codes with names, treating codes as unprotected information"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Denial worklists containing names, identifiers, diagnoses, and financial data are PHI. Displaying them where patients or visitors can see them is an unnecessary disclosure that violates minimum necessary and basic safeguarding expectations. Staff who need denial details should access them through secure systems limited by job role—not a public wall monitor.",
+    "distractorExplanations": {
+      "a": "Visitor \"transparency\" does not authorize broadcasting other patients' PHI in a waiting area.",
+      "b": "Font size does not make an exposed SSN display compliant; the information remains improperly available.",
+      "d": "Diagnosis codes tied to named patients are PHI; posting names with codes still discloses protected information."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material."
   }
 ]

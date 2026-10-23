@@ -977,8 +977,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "High school students and parents using spaced repetition alongside College Board Bluebook practice.",
   },
   "hvac-epa-608-anki-deck": {
-    title: "EPA 608 HVAC Prep | 200+ Cards + Free Mock",
+    title: "EPA 608 Anki Deck | 200 Cards + Free Mock",
+    headline: "EPA 608 Anki Deck — 200 Flashcards (Core, Type I–III) + Free Mock",
+    studyLabel: "EPA 608 Anki deck",
+    description:
+      "EPA 608 Anki deck: 200 flashcards for Core, Type I, Type II, and Type III (Section 608 Universal prep) plus a free timed readiness check (25Q free / 40Q full). Instant .apkg download. Independent — not EPA exam material.",
+    keywords: [
+      "epa 608 anki",
+      "epa 608 anki deck",
+      "epa 608 flashcards",
+      "epa 608 practice test",
+      "section 608 anki",
+      "hvac epa 608 study",
+    ],
+    intro:
+      "Looking for an EPA 608 Anki deck? Drill Core and Types I–III with 200 spaced-repetition cards, then validate with the free timed readiness check before you book an approved proctor — not a Quizlet dump and not EPA exam material.",
   },
+
   "bms-building-automation-anki-deck": {
     title: "BMS / BAS Exam Prep | 200+ Cards + Free Mock",
   },

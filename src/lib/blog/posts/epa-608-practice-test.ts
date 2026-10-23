@@ -19,10 +19,11 @@ export const epa608PracticeTestPost: BlogPostDraft = {
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
     mockLabel: "Take the free EPA 608 mock",
-    deckLabel: "Drill weak topics with the Anki deck",
+    deckLabel: "EPA 608 Anki deck — 200 flashcards",
     summary:
-      "Take the free 25-question EPA 608 mock → get your pass/no-pass report → drill weak topics with the Anki deck.",
+      "Take the free 25-question EPA 608 mock → get your pass/no-pass report → drill weak topics with the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
   },
+
   sections: [
     {
       heading: "What the EPA 608 Exam Actually Tests",
@@ -164,7 +165,7 @@ export const epa608PracticeTestPost: BlogPostDraft = {
             },
             {
               title: "Step 4: Hit the weak spots with flashcards",
-              body: "EPA 608 has too many numbers to hold in working memory. Put the thresholds, dates, and PSI levels into spaced-repetition cards. Review them daily for a week before the exam.",
+              body: "EPA 608 has too many numbers to hold in working memory. Put the thresholds, dates, and PSI levels into spaced-repetition cards — the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) is built for Core and Types I–III. Review them daily for a week before the exam.",
             },
           ],
         },
@@ -172,6 +173,7 @@ export const epa608PracticeTestPost: BlogPostDraft = {
     },
     {
       heading: "Common Mistakes on Exam Day",
+
       blocks: [
         {
           type: "ul",
@@ -216,5 +218,5 @@ export const epa608PracticeTestPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Passing the EPA 608 on the first try is about knowing the regulations cold, not being the best technician in the shop. Take a practice test early, find your gaps, and drill the numbers until they are automatic. The exam does not test your hands. It tests whether you read the rulebook.",
+    "Passing the EPA 608 on the first try is about knowing the regulations cold, not being the best technician in the shop. Take a practice test early, find your gaps, then drill the numbers in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) until they are automatic. The exam does not test your hands. It tests whether you read the rulebook.",
 };

@@ -8,12 +8,14 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Started | Slugs | Work | Status / blocker |
 |---|---|---|---|
-| — | — | — | — |
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-10-23 | `cda-childcare-readiness-check` | `cda-childcare-anki-deck` (planned) | audit 0 FAIL · 120 · keys 31/31/31/27 · validate:wave-deck READY | 4 writers 016–030 + inherit review (~28 patches; choking stem P0) | `Cda_Childcare_FULL_120.apkg` rebuilt; specs 120; no Gumroad | Session 60 from 120; official honesty + 120-bank copy |
+| 2026-10-23 | `medical-billing-specialist-readiness-check` | `medical-billing-specialist-anki-deck` (planned) | audit 0 FAIL · 120 · keys 31/31/31/27 · validate READY | Thin-notes@60 then expand; inherit review claims/coding/payers/compliance | `Medical_Billing_Specialist_FULL_120.apkg`; specs 120; NHA/CBCS honesty fixed in configs | Not NHA CBCS / AAPC / AHIMA |
+| 2026-10-23 | `sie-full-mock` | `sie-exam-anki-deck` | S5 table tests green · SIE FULL thicken → eligible 151/300 | — (authored CSV thicken + SIE-1/4 front rewrites) | `SIE_Exam_FULL_300.apkg` + `SIE_LITE_40.apkg` (quotas filled, short={}). Listing title without LITE. AnkiConnect down — share pending GUID-move + AnkiWeb Share | S5 compared on mock page |
 | 2026-10-22 | `nha-cpct-readiness-check` | `nha-cpct-anki-deck` | audit 0 FAIL · triage clean · 240 items · keys 65/58/61/56 · ops ready · validate:wave-deck READY | Thin-fix 24 legacy + 4 expand writers (031–060) + inherit review 51 patches (hematoma key 043 fixed). Length-balance pads naturalized | `Nha_Cpct_FULL_240.apkg` → Gumroad. Samples: floated sterile dressing, PPE doff order, 188/112 escalate. Wave polish-only. Money/GEO/seo/landing 120→240. AEO fresh until 2026-10-29 | Session stays 120 from 240 bank. List $9.99 |
 | 2026-10-22 | `cfa-level-1-readiness-check` | `cfa-level-1-anki-deck` | Copy only — S5 table | Verified free options (CFA Institute samples + LES + Asset Classes quizzes + UniPrep) with checked 2026-10-22 | `PracticeOptionsComparedSection` on mock page + unit test | No bank/apkg change |
 | 2026-10-21 | `ascp-mlt-readiness-check` · `barber-state-readiness-check` | `ascp-mlt-anki-deck` · `barber-state-anki-deck` (planned) | audit 0 FAIL · 120 each · keys 31/31/31/27 · ops ready | 8 topic writers + inherit review (MLT 42 fixes, Barber 37). ID collision fix: cutting/MLT-chemistry new → 031–045 | Planned Anki — no apkg/Gumroad. Money-page + specs cardCount 120. `X-Bank-Revision` 20261021. Competitor AEO fresh until 2026-12-03 | Session stays 60 from 120 bank. Official honesty unchanged (MLT CAT 100/2h30/400; NIC Barber 60/90 theory) |

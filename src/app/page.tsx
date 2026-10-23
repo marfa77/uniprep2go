@@ -102,7 +102,7 @@ const popularDeckBoostLinks = [
   { href: "/decks/sie-exam-anki-deck", label: "SIE" },
   { href: "/decks/series-65-anki-deck", label: "Series 65" },
   { href: "/decks/life-and-health-insurance-exam-anki-deck", label: "Life & Health" },
-  { href: "/decks/hvac-epa-608-anki-deck", label: "EPA 608" },
+  { href: "/decks/hvac-epa-608-anki-deck", label: "EPA 608 Anki deck" },
   { href: "/decks/servsafe-manager-anki-deck", label: "ServSafe" },
   { href: "/decks/cfa-level-2-formula-reference-2026", label: "CFA L2 formulas" },
   { href: "/mock-exams", label: "All mocks" },

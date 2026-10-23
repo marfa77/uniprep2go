@@ -19,10 +19,11 @@ export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
     mockLabel: "Take the free EPA 608 readiness check",
-    deckLabel: "Lock in refrigerant families with Anki",
+    deckLabel: "EPA 608 Anki deck — refrigerant families",
     summary:
-      "Ready to test refrigerant knowledge under pressure? Take the free EPA 608 readiness check on classification, pressure groups, and recovery — then lock in the families with the EPA 608 Anki deck.",
+      "Ready to test refrigerant knowledge under pressure? Take the free EPA 608 readiness check on classification, pressure groups, and recovery — then lock in the families with the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
   },
+
   sections: [
     {
       heading: "The ASHRAE Numbering System (The Code Behind the R-Number)",
@@ -171,8 +172,9 @@ export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
             },
             {
               title: "Step 2: Build family-tree flashcards",
-              body: "One card per family — front: “CFC — no hydrogen, high ODP, banned”; back: the member list. Do not make one card per refrigerant.",
+              body: "One card per family — front: “CFC — no hydrogen, high ODP, banned”; back: the member list. Do not make one card per refrigerant. Or drill the same families in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
             },
+
             {
               title: "Step 3: Attach the pressure layer",
               body: "Add fields like “High-pressure HFCs: R-410A, R-404A, R-407C…” and “Medium-pressure: R-134a, R-401A.”",
@@ -251,9 +253,9 @@ export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
     {
       question: "What is the best way to memorize refrigerant numbers?",
       answer:
-        "Group by family, attach pressure class, and use cylinder color codes as visual anchors. Make family cards and drill classification speed — not one flashcard per refrigerant.",
+        "Group by family, attach pressure class, and use cylinder color codes as visual anchors. Make family cards and drill classification speed — not one flashcard per refrigerant. The EPA 608 Anki deck at uniprep2go.study/decks/hvac-epa-608-anki-deck is built for that drill.",
     },
   ],
   bottomLine:
-    "Refrigerant numbers are not phone numbers. The ASHRAE system encodes chemistry into digits, and the EPA exam encodes regulatory logic into families. Stop memorizing R-22, R-410A, and R-134a as isolated facts. Learn the family rules, attach pressure classes, and drill until you can classify any refrigerant in under 2 seconds — that speed is the difference between finishing with review time and guessing on the last five questions.",
+    "Refrigerant numbers are not phone numbers. The ASHRAE system encodes chemistry into digits, and the EPA exam encodes regulatory logic into families. Stop memorizing R-22, R-410A, and R-134a as isolated facts. Learn the family rules, attach pressure classes, and drill them in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) until you can classify any refrigerant in under 2 seconds — that speed is the difference between finishing with review time and guessing on the last five questions.",
 };

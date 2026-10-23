@@ -72,4 +72,12 @@ Used remaining quota after morning Wave-2 remainder (7 earlier today → ~13 lef
 
 **Today’s share count:** 7 (morning) + 8 (this batch) = **15 / 20** rolling window. ~5 left.
 
-**Skipped for now (FULL below AnkiWeb sample-grade gate — scheduled in `docs/mock-bank-qa/daily-plan.md` § AnkiWeb LITE queue):** SIE → 23.10 · Digital SAT → 24.10 · ServSafe Manager → 29.10 · CA RE → 02.11 · LEED → 04.11 · CFP → 05.11 · Series 65 → 06.11 · Series 66 → 12.11. Do not share SHORT stubs; thicken FULL first, then LITE 40, title without the word LITE.
+**Skipped for now (FULL below AnkiWeb sample-grade gate — scheduled in `docs/mock-bank-qa/daily-plan.md` § AnkiWeb LITE queue):** Digital SAT → 24.10 · ServSafe Manager → 29.10 · CA RE → 02.11 · LEED → 04.11 · CFP → 05.11 · Series 65 → 06.11 · Series 66 → 12.11. Do not share SHORT stubs; thicken FULL first, then LITE 40, title without the word LITE.
+
+## 2026-10-23 — SIE LITE 40 ready (share pending)
+
+FULL thickened (`sie_300_authored.csv` + backup `sie_300_authored.csv.bak-2026-10-23-thicken`): length patches + SIE-1/4 definition front rewrites. Eligible **151/300** (was 37). Built `out/ankiweb_lite/exam/sie/SIE_LITE_40.apkg` (6/18/12/4 quotas, not SHORT).
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-10-23 | SIE Exam — FINRA Application Deck (40 cards) | — | 40 built; listing copy ready | `/decks/sie-exam-anki-deck` | **Ready to share** — import apkg → GUID-move out of FULL → sync → AnkiWeb Share. AnkiConnect was down this pass. ~5 share slots left in 7d window from 21.10. |

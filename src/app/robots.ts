@@ -27,6 +27,9 @@ export default function robots(): MetadataRoute.Robots {
       },
       // Cut UTM catalog duplicates that flooded GSC after llms.txt was listed as Sitemap.
       // AI bots keep full Allow via their own rules below; /llms.txt stays crawlable.
+      // Brave Search crawler does not advertise a distinct UA — it follows Googlebot
+      // robots rules (search.brave.com/help/brave-search-crawler). Do not Disallow
+      // Googlebot paths we still want Brave to fetch.
       {
         userAgent: "Googlebot",
         allow: "/",

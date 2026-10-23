@@ -873,11 +873,13 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "payers", label: "Payer rules" },
       { id: "compliance", label: "Compliance" }
     ]),
-    officialSourceNote: "Mapped to NHA / billing cert themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Medical Billing Specialist readiness check (free 25-question version) with topic scoring.",
-    examBody: "NHA / billing cert themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
-    searchAliases: ["medical billing specialist exam", "CBCS"],
+    officialSourceNote:
+      "Independent revenue-cycle diagnostic on claims, coding awareness, payers, and compliance themes. Not NHA CBCS, AAPC CPC, or AHIMA CCS exam material. Session samples 60 from a 120-question bank (free 25-question version).",
+    description:
+      "60-question Medical Billing Specialist readiness check (free 25-question version) with topic scoring across claims, coding awareness, payers, and compliance — drawn from a 120-question bank.",
+    examBody: "Independent billing / RCM themes",
+    questionSourceNote: "Original UniPrep2Go medical-billing-style bank. Not NHA CBCS / AAPC / AHIMA exam material.",
+    searchAliases: ["medical billing specialist exam", "medical billing practice test", "RCM practice test"],
   }),
   nicheReadinessConfig({
     slug: "veterinary-technician-vtne-readiness-check",

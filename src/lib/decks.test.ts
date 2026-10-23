@@ -577,7 +577,8 @@ describe("deck catalog", () => {
       "gre-anki-deck": "GRE Anki Deck — 350 Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 120 Flashcards",
       "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 165 Flashcards",
-      "hvac-epa-608-anki-deck": "EPA 608 HVAC Anki Deck — 200 Flashcards",
+      "hvac-epa-608-anki-deck": "EPA 608 Anki Deck — 200 Flashcards",
+
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",
       "cat4-level-d-anki-deck-printable-pdf":
         "CAT4 Level D Anki Deck + Printable PDF — Grade 7 Verbal & Quantitative",

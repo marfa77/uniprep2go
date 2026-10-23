@@ -1139,7 +1139,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cda-childcare-readiness-check": {
     title: "Free CDA Practice Test 2026 | Child Development Associate",
     description:
-      "Free CDA practice test: 60 timed childcare scenario questions with topic scores and answer review — free 25-question diagnostic, no signup. Official CDA Exam: 65 questions, 1 hr 45 min, pass/fail. Not Council material.",
+      "Free CDA practice test: 60 timed childcare scenarios from a 120-question bank with topic scores — free 25-question diagnostic, no signup. Official CDA Exam: 65 questions, 1 hr 45 min, pass/fail. Not Council material.",
     keywords: [
       "cda practice test",
       "cda exam practice test",
@@ -1149,7 +1149,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Child Development Associate (CDA) Practice Test",
     intro:
-      "A 60-question / 75-minute CDA practice test (free 25-question version) built from classroom scenarios — safe sleep, positive guidance, family conferences, observation records — with a score for each of four CDA competency groups. The official Council for Professional Recognition CDA Exam is 65 questions (60 + 5 photo scenarios) in 1 hour 45 minutes at Pearson VUE, scored pass/fail.",
+      "A 60-question / 75-minute CDA practice test (free 25-question version) drawn from a 120-question bank of classroom scenarios — safe sleep, positive guidance, family conferences, observation records — with a score for each of four CDA competency groups. The official Council for Professional Recognition CDA Exam is 65 questions (60 + 5 photo scenarios) in 1 hour 45 minutes at Pearson VUE, scored pass/fail; this mock is text-only.",
     audience:
       "Early childhood teachers, family child care providers, and home visitors preparing for the CDA Exam who want a timed check of the CDA Functional Areas before booking Pearson VUE.",
     practiceTestLabel: "CDA practice test",

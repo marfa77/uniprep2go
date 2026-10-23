@@ -16,10 +16,11 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
     mockLabel: "Take the free EPA 608 readiness check",
-    deckLabel: "Drill Universal numbers with Anki",
+    deckLabel: "EPA 608 Anki deck — Core + Types I–III",
     summary:
-      "Not sure if you are ready for Universal? Take the free EPA 608 readiness check covering Core, Type I, and Type II material, then drill weak areas with the EPA 608 Anki deck before you sit.",
+      "Not sure if you are ready for Universal? Take the free EPA 608 readiness check covering Core, Type I, and Type II material, then drill weak areas with the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) before you sit.",
   },
+
   sections: [
     {
       heading: "What Each Type Actually Covers",
@@ -199,6 +200,10 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
             },
           ],
         },
+        {
+          type: "p",
+          text: "After you pick Universal, drill Core and Types I–III with the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) so recovery targets and leak thresholds stick before exam day.",
+        },
       ],
     },
   ],
@@ -245,5 +250,5 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Type I is a beginner credential for appliance techs. Type II is the standard for HVAC service. Universal is the standard for employability. The only reason to take Type I first is if you are 100% certain you will never touch an air conditioner. Otherwise, pay the extra $20, sit for the full proctored Universal exam, and never think about retaking it again.",
+    "Type I is a beginner credential for appliance techs. Type II is the standard for HVAC service. Universal is the standard for employability. The only reason to take Type I first is if you are 100% certain you will never touch an air conditioner. Otherwise, pay the extra $20, sit for the full proctored Universal exam, and drill Core + Types I–III in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) so you do not retake it again.",
 };

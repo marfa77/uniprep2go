@@ -276,11 +276,11 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "families-professional", label: "Families & professional practice" },
     ]),
     officialSourceNote:
-      "Independent diagnostic on CDA Competency Standards themes. Official CDA Exam (Council for Professional Recognition, Pearson VUE): 65 multiple-choice questions (60 standard + 5 photo scenarios), 1 hour 45 minutes, pass/fail with no published cut score. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not Council exam material.",
+      "Independent diagnostic on CDA Competency Standards themes. Official CDA Exam (Council for Professional Recognition, Pearson VUE): 65 multiple-choice questions (60 standard + 5 photo scenarios), 1 hour 45 minutes, pass/fail with no published cut score. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target drawn from a 120-question bank (text-only — no photo items). Not Council exam material.",
     description:
-      "60-question Child Development Associate (CDA) practice test (free 25-question version) with scenario questions across safe and healthy environments, child development, positive guidance, and family partnerships — topic scores show what to review before the Pearson VUE exam.",
+      "60-question Child Development Associate (CDA) practice test (free 25-question version) drawn from a 120-question bank — scenario questions across safe and healthy environments, child development, positive guidance, and family partnerships with topic scores before Pearson VUE.",
     examBody: "Council for Professional Recognition",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go CDA-style bank. Not Council for Professional Recognition exam material.",
   }),
   nicheReadinessConfig({
     slug: "ace-cpt-readiness-check",

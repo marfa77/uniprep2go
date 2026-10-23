@@ -120,13 +120,18 @@ export default async function DecksHubPage() {
                       className="block rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-4 hover:border-[#1f3a5f]/30"
                       href={`/decks/${deck.slug}`}
                     >
-                      <span className="font-semibold">{deck.shortName}</span>
+                      <span className="font-semibold">
+                        {deck.slug === "hvac-epa-608-anki-deck"
+                          ? "EPA 608 Anki deck"
+                          : deck.shortName}
+                      </span>
                       <span className="mt-1 block text-sm text-[#5f5749]">
                         {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)}
                       </span>
                     </Link>
                   </li>
                 ))}
+
               </ul>
               {group.category === "language" ? (
                 <p className="mt-4 text-sm leading-6 text-[#5f5749]">

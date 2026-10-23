@@ -1687,6 +1687,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     candidate_qa: [
       {
+        q: "What is the EPA 608 Anki deck?",
+        a: "UniPrep2Go’s EPA 608 Anki deck is a 200-card .apkg covering Core, Type I, Type II, and Type III with explanations and common-mistake notes. Pair it with the free timed readiness check (25Q free / 40Q full). Independent study aid — not EPA exam material.",
+      },
+      {
         q: "How many questions are on the EPA 608 Universal exam?",
         a: "100 multiple-choice questions total: 25 in Core, 25 in Type I, 25 in Type II, and 25 in Type III. Each section is scored separately.",
       },
