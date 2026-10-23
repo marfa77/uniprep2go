@@ -202,7 +202,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       exam_name: "Series 7 Top-Off (General Securities Representative)",
       administered_by: "FINRA",
       question_count:
-        "135 questions (125 scored + 10 unscored pretest)",
+        "130 questions (125 scored + 5 unscored pretest)",
       scored_count: "125",
       time_limit: "3 hours 45 minutes",
       passing_score: "72 on FINRA's equated scale (not a raw percentage); SIE is a corequisite",
@@ -249,7 +249,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     candidate_qa: [
       {
         q: "How many questions are on the Series 7 Top-Off?",
-        a: "135 questions: 125 scored multiple-choice plus 10 unscored pretest items, in 3 hours 45 minutes. FINRA exam fee is $395 (confirm on finra.org).",
+        a: "130 questions: 125 scored multiple-choice plus 5 unscored pretest items, in 3 hours 45 minutes. FINRA exam fee is $395 (confirm on finra.org).",
       },
       {
         q: "What is the largest Series 7 job-function area?",

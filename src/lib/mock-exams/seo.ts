@@ -219,7 +219,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | 60Q Timed, 25Q Free",
     description:
-      "Series 7 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with Series 7 flashcards ($9.99 / 300-card Anki). Official Top-Off is 135 questions (125 scored + 10 pretest) / 3h45 / passing score 72 / FINRA fee $395; this check is shorter. Independent — not FINRA material.",
+      "Series 7 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with Series 7 flashcards ($9.99 / 300-card Anki). Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395; this check is shorter. Independent — not FINRA material.",
     keywords: [
       "series 7 practice test",
       "free series 7 practice test",
@@ -230,7 +230,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Series 7 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck) ($9.99 / 300 cards). Official FINRA Series 7 is 135 questions (125 scored + 10 pretest) / 3 hours 45 minutes / passing score 72 / FINRA fee $395; this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
+      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck) ($9.99 / 300 cards). Official FINRA Series 7 is 130 questions (125 scored + 5 pretest) / 3 hours 45 minutes / passing score 72 / FINRA fee $395; this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },

@@ -796,7 +796,7 @@ const rawDecks: Deck[] = [
     subtitle:
       "Series 7 flashcards: 300 FINRA Top-Off Anki cards + 60-question timed practice test (free 25-question version) — suitability, products, order flow.",
     directAnswer:
-      "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (free 25-question diagnostic, no signup) with job-function scoring. The official exam is 135 questions (125 scored + 10 pretest) in 3 hours 45 minutes; passing score 72 equated; FINRA fee $395. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
+      "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (free 25-question diagnostic, no signup) with job-function scoring. The official exam is 130 questions (125 scored + 5 pretest) in 3 hours 45 minutes; passing score 72 equated; FINRA fee $395. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
     lastUpdated: "2026-10-05",
     audience:
       "Series 7 candidates searching for flashcards after the SIE, sponsored registered-rep trainees, and anyone who needs Top-Off product/suitability recall plus a free timed mock — not Series 63 state-law flashcards.",
@@ -809,7 +809,7 @@ const rawDecks: Deck[] = [
       cards: "300",
       topics: "FINRA Series 7 job functions: communications, account opening, products, recommendations, suitability, records, order handling, settlement, and trade processing",
       formulas: "Worked example and common-mistake note on every card; 50 formula cards (bond yields, options strategies, margin, financial ratios) rendered with MathJax",
-      examYear: "FINRA Series 7 Top-Off (125 scored + 10 pretest = 135)",
+      examYear: "FINRA Series 7 Top-Off (125 scored + 5 pretest = 130)",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [
@@ -871,7 +871,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Series 7 practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a 60-question / 90-minute Series 7 readiness check (free 25-question version) with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 135 questions (125 scored + 10 pretest) / 3 hours 45 minutes / passing score 72 (equated) / FINRA fee $395 — our mock is a shorter diagnostic before you drill this 300-card deck.",
+          "Yes. UniPrep2Go hosts a 60-question / 90-minute Series 7 readiness check (free 25-question version) with job-function scoring at /mock-exams/series-7-readiness-check. Official FINRA Series 7 is 130 questions (125 scored + 5 pretest) / 3 hours 45 minutes / passing score 72 (equated) / FINRA fee $395 — our mock is a shorter diagnostic before you drill this 300-card deck.",
       },
       {
         question: "Does the deck replace Series 7 practice questions?",
