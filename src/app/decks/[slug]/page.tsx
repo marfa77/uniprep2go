@@ -500,14 +500,18 @@ export default async function DeckPage({
                       className={
                         deck.format === "PDF"
                           ? "flex max-h-[700px] items-start justify-center overflow-hidden bg-[#f6efe8] p-3 sm:p-5"
-                          : "bg-[#f6efe8]"
+                          : "flex items-center justify-center bg-[#f6efe8] px-3 pt-3 sm:px-4 sm:pt-4"
                       }
                     >
                       <Image
                         alt={deck.format === "PDF" ? `PDF preview: ${card.question}` : `Sample Anki card: ${card.question}`}
-                        className={deck.format === "PDF" ? "h-auto w-full rounded-2xl" : "h-auto w-full"}
+                        className={
+                          deck.format === "PDF"
+                            ? "h-auto w-full rounded-2xl"
+                            : "h-auto max-h-44 w-auto max-w-full rounded-xl object-contain sm:max-h-52"
+                        }
                         height={deck.format === "PDF" ? 1780 : 550}
-                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 896px" : "(max-width: 640px) 100vw, 33vw"}
+                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 896px" : "(max-width: 640px) 70vw, 220px"}
                         src={card.imageUrl}
                         width={deck.format === "PDF" ? 2200 : 976}
                       />
