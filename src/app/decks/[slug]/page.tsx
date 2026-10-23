@@ -508,7 +508,7 @@ export default async function DeckPage({
                         className={
                           deck.format === "PDF"
                             ? "h-auto w-full rounded-2xl"
-                            : "h-auto max-h-44 w-auto max-w-full rounded-xl object-contain sm:max-h-52"
+                            : "h-auto max-h-36 w-auto max-w-full rounded-xl object-contain sm:max-h-40"
                         }
                         height={deck.format === "PDF" ? 1780 : 550}
                         sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 896px" : "(max-width: 640px) 70vw, 220px"}
