@@ -31,7 +31,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "german-a2-anki-deck":
     "2,115 German A2–B1 cards for Goethe, telc, ÖSD, and DTZ — the shared lexicon residence and Einbürgerung pathways reuse.",
   "series-7-anki-deck":
-    "Series 7 flashcards: 300 Top-Off cards for suitability, products, and order flow — plus a 60-question Series 7 mock (free 25-question version; official exam is 135 questions — 125 scored + 10 pretest / 3h45 / passing score 72 / FINRA fee $395).",
+    "Series 7 flashcards: 300 Top-Off cards for suitability, products, and order flow — plus a 60-question Series 7 mock (free 25-question version; official exam is 130 questions — 125 scored + 5 pretest / 3h45 / passing score 72 / FINRA fee $395).",
   "servsafe-manager-anki-deck":
     "300 food-safety cards for TCS temps, HACCP, hygiene, and manager duties — plus a 90-question ServSafe mock (free 25-question version; official 80 scored + 10 pilot / 2h; official pass 70% (56/80) · 75% readiness target).",
   "gre-anki-deck":
@@ -166,7 +166,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":
-    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 135 questions (125 scored + 10 pretest) / 3h45 / passing score 72 / FINRA fee $395 — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $9.99 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
+    "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395 — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $9.99 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
   "servsafe-manager-anki-deck":
     "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the 90-question mock (free 25-question version) first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
@@ -322,7 +322,7 @@ export const positioningOverrides: Partial<
       "Series 7 flashcards: 300 cards mapped to FINRA Top-Off job functions",
       "Suitability, options, bonds, margin, and settlement recall",
       "60-question Series 7 practice test (free 25-question version) with topic breakdown",
-      "Official Top-Off is 135 questions (125 scored + 10 pretest) / 3h45 / passing score 72 / FINRA fee $395 — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
+      "Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395 — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
       "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $9.99 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
@@ -1813,7 +1813,7 @@ Series 7 flashcards for Top-Off: seeking business and opening accounts, investme
 
 The three sample cards on this page are real notes from the shipped .apkg: tax-equivalent yield on a 4% muni versus a 5.5% corporate in the 32% bracket, maximum loss on a long XYZ 50 put bought at 3, and which of risk tolerance versus capacity limits a recommendation.
 
-Official FINRA Series 7 Top-Off is **135 questions (125 scored + 10 pretest) / 3 hours 45 minutes / passing score 72 / FINRA fee $395**. Our mock is a **60-question / 90-minute** job-function diagnostic (free 25-question version) — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
+Official FINRA Series 7 Top-Off is **130 questions (125 scored + 5 pretest) / 3 hours 45 minutes / passing score 72 / FINRA fee $395**. Our mock is a **60-question / 90-minute** job-function diagnostic (free 25-question version) — not a full-length 125Q bank like Mastery/TakeZero/FreeFellow.
 
 ### Study plan with the free mock
 

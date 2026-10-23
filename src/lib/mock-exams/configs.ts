@@ -350,7 +350,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", questionCount: 8, weightPercent: 11, targetPercent: 72 },
     ],
     officialSourceNote:
-      "Each attempt draws 60 questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions) from a 120-question bank of original scenario and calculation items, so Mock Pass retakes see new questions. Every wrong answer has a teaching note. Official Series 7 Top-Off: 135 questions (125 scored + 10 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale, FINRA fee $395. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
+      "Each attempt draws 60 questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions) from a 120-question bank of original scenario and calculation items, so Mock Pass retakes see new questions. Every wrong answer has a teaching note. Official Series 7 Top-Off: 130 questions (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale, FINRA fee $395. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question Series 7 readiness diagnostic (free 25-question version) drawn from a 120-question bank: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
