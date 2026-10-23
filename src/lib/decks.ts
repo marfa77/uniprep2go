@@ -1415,6 +1415,78 @@ const rawDecks: Deck[] = [
       },
     ],
   },
+  // ── Portuguese Survival (live on UniPrep / Gumroad — not the retired CIPLE exam deck) ────────────
+  {
+    slug: "portuguese-survival-anki-deck",
+    category: "language",
+    status: "available",
+    title: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
+    shortName: "Portuguese Survival",
+    subtitle:
+      "1,000 European Portuguese survival cards for daily life in Portugal — greetings, modals, shopping, health, housing, transport.",
+    directAnswer:
+      "UniPrep2Go sells a Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards ordered for living in Portugal: greetings and politeness, pronouns and question words, function words, core and modal verbs, numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport. Cards include pronunciation audio and example sentences. Selected from the CIPLE A2 vocabulary bank and reordered for survival pedagogy — not a full CIPLE / CAPLE exam pack. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-10-23",
+    audience:
+      "Newcomers, relocators, and travelers who need European Portuguese for everyday life in Portugal before (or instead of) full CIPLE exam prep.",
+    format: ".apkg",
+    coverImage: "/covers/portuguese-survival-anki-deck.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/portuguese-survival-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "1000",
+      topics:
+        "PT-PT survival: greetings, function words, modals, numbers/time, shopping, health, housing, transport",
+      formulas: "Audio pronunciation + contextual examples (PT-PT)",
+      examYear: "Everyday European Portuguese (Portugal)",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "bom dia",
+        answer: "good morning — Bom dia! Dormiste bem? (Good morning! Did you sleep well?)",
+        imageUrl: "/samples/portuguese-survival-anki-deck-sample-1.webp",
+      },
+      {
+        question: "por favor",
+        answer: "please — Pode ajudar-me, por favor? (Can you help me, please?)",
+        imageUrl: "/samples/portuguese-survival-anki-deck-sample-2.webp",
+      },
+      {
+        question: "Como está?",
+        answer: "How are you? (polite) — Bom dia. Como está? (Good morning. How are you?)",
+        imageUrl: "/samples/portuguese-survival-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is this European Portuguese or Brazilian?",
+        answer:
+          "European Portuguese (PT-PT) for life in Portugal — including words like autocarro, telemóvel, and casa de banho. It is not a Brazilian Portuguese phrasebook.",
+      },
+      {
+        question: "Is this the same as the CIPLE / CAPLE citizenship deck?",
+        answer:
+          "No. This is a 1,000-card survival subset ordered for daily life. The full CIPLE / CAPLE Anki deck is a larger exam-oriented bank sold separately (on Prep2Go).",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "1,000 Anki cards with European Portuguese vocabulary and short phrases, English glosses, contextual examples, and pronunciation audio.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad.",
+      },
+      {
+        question: "Is this official CAPLE material?",
+        answer:
+          "No. This is an independent study aid and is not affiliated with or endorsed by CAPLE or the University of Lisbon.",
+      },
+    ],
+  },
   // ── Language certifications — RETIRED (sold on Prep2Go; filtered out of `decks`, see retired-language-decks.ts) ────────────
   {
     slug: "ciple-a2-european-portuguese-anki-deck",

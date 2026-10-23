@@ -134,6 +134,22 @@ function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
 }
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
+  "portuguese-survival-anki-deck": {
+    title: "Portuguese Survival Anki Deck PT-PT | 1000 Cards",
+    headline: "Portuguese Survival Anki Deck — 1000 PT-PT Flashcards",
+    studyLabel: "European Portuguese survival vocabulary for life in Portugal",
+    description:
+      "Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards for daily life in Portugal — greetings, modals, shopping, health, housing, transport. Audio and examples. Not the full CIPLE exam pack.",
+    keywords: [
+      "portuguese survival anki",
+      "european portuguese flashcards",
+      "pt-pt survival vocabulary",
+      "living in portugal portuguese",
+      "portuguese for beginners portugal",
+    ],
+    intro:
+      "Newcomers and relocators use a survival-first PT-PT bank — function words and modals before theme dumps — then expand into exam-oriented CIPLE study if needed.",
+  },
   "ciple-a2-european-portuguese-anki-deck": {
     title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2067 Cards",
     headline: "CIPLE CAPLE Portuguese Citizenship Exam Prep — 2067 Flashcards",

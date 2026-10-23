@@ -55,6 +55,24 @@ const SPECS = {
     apkgRelPaths: ["prep2go_Portuguese_A2_CIPLE/prep2go_Portuguese_A2_CIPLE_FULL.apkg"],
     fileNames: ["CIPLE_CAPLE_Portuguese_Citizenship_Anki_Deck.apkg"],
   },
+  "portuguese-survival-anki-deck": {
+    name: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
+    summary:
+      "1,000 European Portuguese survival cards for daily life in Portugal — greetings, modals, function words, shopping, health, housing, transport.",
+    priceUsd: 15,
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — <strong>Portuguese Survival</strong> Anki deck for living in Portugal (European Portuguese / PT-PT).</p>",
+      "<p><strong>1,000</strong> cards ordered for real-life communication: greetings and politeness, pronouns and question words, function words, core + modal verbs, numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport — with audio and example sentences.</p>",
+      "<p>Selected from the Prep2Go CIPLE A2 vocabulary bank and reordered for survival pedagogy (not a CIPLE exam pack). Distinct from the full CIPLE / CAPLE citizenship deck.</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
+      "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/portuguese-survival-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_Portuguese_A2_CIPLE_Survival/prep2go_Portuguese_A2_CIPLE_Survival_1000_FULL.apkg",
+    ],
+    fileNames: ["Portuguese_Survival_PT_PT_Anki_Deck_1000.apkg"],
+  },
   "delf-b2-french-anki-deck": {
     name: "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",
     summary:

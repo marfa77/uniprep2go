@@ -1109,6 +1109,19 @@ Official CAT4 Level D (GL Assessment) is about **2 hours 15 minutes** in three t
 
 Not a scored school CAT4, not 11+ English/math papers, and not GL Assessment material.`,
 
+  "portuguese-survival-anki-deck": `### What this survival deck is for
+
+This is a **1,000-card European Portuguese (PT-PT)** Anki deck for **living in Portugal** — not a CIPLE exam dump and not Brazilian Portuguese. Cards are ordered so you can start understanding and speaking quickly: greetings and politeness, pronouns and question words, function words, core and modal verbs, numbers and time, then shopping, health, documents, housing, and transport.
+
+### How it differs from the full CIPLE deck
+
+The full CIPLE / CAPLE bank is larger and exam-oriented. This survival cut keeps the same PT-PT audio and example style but prioritises **service words and constructions** (poder, precisar de, onde, quanto) over theme lists like colours-first. Use this when you need daily life Portuguese; move to the full CIPLE deck when you are preparing the CAPLE A2 diploma.
+
+### 4–6 week study plan
+
+**Week 1:** First ~150 cards (greetings → core verbs) with audio every day. **Weeks 2–3:** Continue through numbers, directions, and shopping/health blocks at 20–25 new cards/day. **Weeks 4–6:** Housing and transport fill + heavy review; say every example sentence aloud. Preview the three sample cards on this page before purchase.
+`,
+
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 
 **CIPLE A2 (CAPLE)** is the University of Lisbon A2 diploma many candidates use as language evidence for Portuguese residency and citizenship. The same European Portuguese (PT-PT) high-frequency lexicon supports **autorização de residência** and **nacionalidade portuguesa** paperwork even when the exact certificate name on your case differs. Formats and bureaucracy change — everyday PT-PT vocabulary does not.
