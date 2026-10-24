@@ -1501,10 +1501,10 @@ const rawDecks: Deck[] = [
     title: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
     shortName: "Portuguese Survival",
     subtitle:
-      "1,000 European Portuguese survival cards for daily life in Portugal — greetings, modals, shopping, health, housing, transport.",
+      "1,000 PT-PT cards ordered for living in Portugal — function words and modals before theme nouns, so you can ask and answer in shops, clinics, and offices.",
     directAnswer:
-      "UniPrep2Go sells a Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards ordered for living in Portugal: greetings and politeness, pronouns and question words, function words, core and modal verbs, numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport. Cards include pronunciation audio and example sentences. Selected from the CIPLE A2 vocabulary bank and reordered for survival pedagogy — not a full CIPLE / CAPLE exam pack. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio.",
-    lastUpdated: "2026-10-23",
+      "UniPrep2Go sells a Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards built for daily life in Portugal — not a random beginner list. Cards follow survival pedagogy: greetings and politeness, pronouns and question words, function words, core and modal verbs (poder, precisar de, querer), numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport. That order is why 1,000 cards are enough to stop freezing in everyday situations; it is not a full CIPLE / CAPLE exam pack. Each card has pronunciation audio and an example sentence. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio.",
+    lastUpdated: "2026-10-24",
     audience:
       "Newcomers, relocators, and travelers who need European Portuguese for everyday life in Portugal before (or instead of) full CIPLE exam prep.",
     format: ".apkg",
@@ -1515,7 +1515,7 @@ const rawDecks: Deck[] = [
     facts: {
       cards: "1000",
       topics:
-        "PT-PT survival: greetings, function words, modals, numbers/time, shopping, health, housing, transport",
+        "Survival order: greetings → function words → modals → numbers/time → shopping/health/housing/transport",
       formulas: "Audio pronunciation + contextual examples (PT-PT)",
       examYear: "Everyday European Portuguese (Portugal)",
       delivery: "Digital download through Gumroad",
@@ -1545,6 +1545,16 @@ const rawDecks: Deck[] = [
           "European Portuguese (PT-PT) for life in Portugal — including words like autocarro, telemóvel, and casa de banho. It is not a Brazilian Portuguese phrasebook.",
       },
       {
+        question: "Why is the deck ordered this way?",
+        answer:
+          "Survival pedagogy: greetings, pronouns, question words, function words, and modals come before theme nouns. You learn how to ask and answer (onde, quanto, preciso de…) before memorising colour or animal lists — the usual beginner trap.",
+      },
+      {
+        question: "Is 1,000 cards enough to “survive” in Portugal?",
+        answer:
+          "Enough for the closed loop of daily situations — greet people, ask price/where/when, say you need something, shop, describe a basic symptom, handle housing/transport vocabulary — with audio and example sentences. Not enough alone for CIPLE A2 / citizenship diploma prep; use the full CIPLE deck for that.",
+      },
+      {
         question: "Is this the same as the CIPLE / CAPLE citizenship deck?",
         answer:
           "No. This is a 1,000-card survival subset ordered for daily life. The full CIPLE / CAPLE Anki deck is a larger exam-oriented bank sold separately (on Prep2Go).",
@@ -1552,7 +1562,7 @@ const rawDecks: Deck[] = [
       {
         question: "What does the deck include?",
         answer:
-          "1,000 Anki cards with European Portuguese vocabulary and short phrases, English glosses, contextual examples, and pronunciation audio.",
+          "1,000 Anki cards with European Portuguese vocabulary and short phrases, English glosses, contextual examples, and pronunciation audio — selected from the CIPLE A2 bank and reordered for survival.",
       },
       {
         question: "What file format is delivered?",

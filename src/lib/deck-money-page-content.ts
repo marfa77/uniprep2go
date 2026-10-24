@@ -1111,15 +1111,35 @@ Not a scored school CAT4, not 11+ English/math papers, and not GL Assessment mat
 
   "portuguese-survival-anki-deck": `### What this survival deck is for
 
-This is a **1,000-card European Portuguese (PT-PT)** Anki deck for **living in Portugal** — not a CIPLE exam dump and not Brazilian Portuguese. Cards are ordered so you can start understanding and speaking quickly: greetings and politeness, pronouns and question words, function words, core and modal verbs, numbers and time, then shopping, health, documents, housing, and transport.
+This is a **1,000-card European Portuguese (PT-PT)** Anki deck for **getting through daily life in Portugal** — renting, shopping, clinics, transport, paperwork — not a CIPLE exam dump and not Brazilian Portuguese. Outcome: after a few weeks of Anki you can ask for what you need, understand the answer shape, and survive the first months without a phrasebook.
+
+### Why the order is the product (not a random 1000 words)
+
+Most “beginner Portuguese” decks dump themes first (colours, animals, food lists). That feels busy and still leaves you unable to build a sentence. This deck uses **survival pedagogy**: glue words and speech acts before nouns.
+
+1. **Greetings / politeness** — bom dia, por favor, desculpe, com licença  
+2. **Pronouns + question words** — eu/você, onde, quando, quanto, como  
+3. **Function words** — não, também, já, ainda, este/esse, muito/pouco  
+4. **Core + modal verbs** — poder, precisar de, querer, ter de, ir, haver  
+5. **Numbers / time / calendar** — prices, hours, appointments  
+6. **Prepositions / space** — directions and locations  
+7. **Survival nouns** — people, home, city, money, food, health, documents, housing, utilities, transport  
+8. **Everyday action verbs + core adjectives** — then colours late  
+9. **Fill to 1,000** — remaining high-utility CIPLE cards (abstract/politics deprioritised)
+
+You learn *how to ask and answer* before you memorise another fruit name.
+
+### Why 1,000 cards is enough for survival
+
+Survival is not “know every Portuguese word.” It is a closed set of situations: greet people, ask price/where/when, say you need something, buy food, describe a symptom, read a utility bill, catch a bus. Those situations reuse the same **function words + modals + question frames**. One thousand PT-PT cards, ordered that way, covers that loop with audio and example sentences — enough to stop freezing in shops and offices. It is **not** enough alone for CIPLE A2 / citizenship diploma prep (listening/writing tasks, full exam breadth) — that is the separate full CIPLE deck.
 
 ### How it differs from the full CIPLE deck
 
-The full CIPLE / CAPLE bank is larger and exam-oriented. This survival cut keeps the same PT-PT audio and example style but prioritises **service words and constructions** (poder, precisar de, onde, quanto) over theme lists like colours-first. Use this when you need daily life Portuguese; move to the full CIPLE deck when you are preparing the CAPLE A2 diploma.
+Same PT-PT audio and example style as the Prep2Go CIPLE bank, but a **reordered survival cut**. Full CIPLE is larger and exam-oriented. Start here for daily life; move to the full CIPLE / CAPLE deck when you need the diploma.
 
 ### 4–6 week study plan
 
-**Week 1:** First ~150 cards (greetings → core verbs) with audio every day. **Weeks 2–3:** Continue through numbers, directions, and shopping/health blocks at 20–25 new cards/day. **Weeks 4–6:** Housing and transport fill + heavy review; say every example sentence aloud. Preview the three sample cards on this page before purchase.
+**Week 1:** First ~150 cards (greetings → core verbs) with audio every day — say every example aloud. **Weeks 2–3:** Numbers, directions, shopping/health at 20–25 new cards/day. **Weeks 4–6:** Housing and transport + heavy review. Preview the three sample cards on this page before purchase.
 `,
 
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets

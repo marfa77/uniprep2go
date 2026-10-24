@@ -58,12 +58,13 @@ const SPECS = {
   "portuguese-survival-anki-deck": {
     name: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
     summary:
-      "1,000 European Portuguese survival cards for daily life in Portugal — greetings, modals, function words, shopping, health, housing, transport.",
+      "1,000 PT-PT cards for living in Portugal — function words and modals before theme nouns, so you can ask and answer in daily life.",
     priceUsd: 15,
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — <strong>Portuguese Survival</strong> Anki deck for living in Portugal (European Portuguese / PT-PT).</p>",
-      "<p><strong>1,000</strong> cards ordered for real-life communication: greetings and politeness, pronouns and question words, function words, core + modal verbs, numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport — with audio and example sentences.</p>",
-      "<p>Selected from the Prep2Go CIPLE A2 vocabulary bank and reordered for survival pedagogy (not a CIPLE exam pack). Distinct from the full CIPLE / CAPLE citizenship deck.</p>",
+      "<p><strong>Why the order matters:</strong> most beginner decks dump themes first (colours, food lists). This one uses <strong>survival pedagogy</strong> — greetings → pronouns/questions → function words → core/modal verbs (poder, precisar de, querer) → numbers/time → then shopping, health, housing, transport nouns. You learn how to ask and answer before memorising another fruit name.</p>",
+      "<p><strong>Why 1,000 is enough for survival:</strong> daily life is a closed loop (greet, ask price/where/when, say you need something, shop, clinic, bus, bills). Those situations reuse the same frames. This cut covers that loop with audio and example sentences. It is <strong>not</strong> a full CIPLE / CAPLE exam pack — use the larger CIPLE deck for the diploma.</p>",
+      "<p>Selected from the Prep2Go CIPLE A2 vocabulary bank and reordered for survival — same PT-PT audio style, different sequence.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
     ].join(""),

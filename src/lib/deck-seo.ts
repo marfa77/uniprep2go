@@ -139,7 +139,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Portuguese Survival Anki Deck — 1000 PT-PT Flashcards",
     studyLabel: "European Portuguese survival vocabulary for life in Portugal",
     description:
-      "Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards for daily life in Portugal — greetings, modals, shopping, health, housing, transport. Audio and examples. Not the full CIPLE exam pack.",
+      "1,000 PT-PT Anki cards ordered for living in Portugal: function words and modals before theme nouns — enough to ask, answer, shop, and handle clinics and housing. Audio + examples. Not the full CIPLE exam pack.",
     keywords: [
       "portuguese survival anki",
       "european portuguese flashcards",
@@ -148,7 +148,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "portuguese for beginners portugal",
     ],
     intro:
-      "Newcomers and relocators use a survival-first PT-PT bank — function words and modals before theme dumps — then expand into exam-oriented CIPLE study if needed.",
+      "Survive daily life in Portugal with a PT-PT bank ordered the useful way — greetings, question words, function words, and modals before shopping and housing nouns — then move to full CIPLE only if you need the diploma.",
   },
   "ciple-a2-european-portuguese-anki-deck": {
     title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2067 Cards",
