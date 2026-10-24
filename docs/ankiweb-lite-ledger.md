@@ -82,3 +82,11 @@ FULL thickened (`sie_300_authored.csv` + backup `sie_300_authored.csv.bak-2026-1
 | Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
 |---|---|---|---:|---|---|
 | 2026-10-23 | SIE Exam — FINRA Application Deck (40 cards) | [1857756031](https://ankiweb.net/shared/info/1857756031) | 40 | `/decks/sie-exam-anki-deck` | New |
+
+## 2026-10-24 — Portuguese Survival sample 40 (user override)
+
+Language LITE normally skipped (0–3 dl measured); user asked to share Survival v2 Day-1 speaking moves. Built 40 from FULL GUIDs (`out/ankiweb_lite/language/portuguese_survival/`), GUID-moved out of FULL stamp deck, synced, shared. Title has no word LITE. Public listing delayed 24h by AnkiWeb copyright hold.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-10-24 | Portuguese Survival — Day-1 Speaking (40 cards) | [2033473710](https://ankiweb.net/shared/info/2033473710) | 40 | `/decks/portuguese-survival-anki-deck` | New — Sample (from 40 notes); 0.81MB · 40 audio |

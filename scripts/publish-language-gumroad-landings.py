@@ -66,6 +66,48 @@ SPECS: dict[str, dict[str, Any]] = {
             ("Delivery", "Instant .apkg"),
         ],
     },
+    "portuguese-survival-anki-deck": {
+        "label": "Portuguese Survival",
+        "headline": "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
+        "exam": "Day-1 European Portuguese for life in Portugal",
+        "hook": (
+            "344 Say / Hear / Repair speaking moves with Google pt-PT audio — shops, clinic, "
+            "housing, transport, and paperwork on day one. Not a CIPLE lemma dump."
+        ),
+        "audience": (
+            "For newcomers and relocators who need European Portuguese they can speak on day one "
+            "in Portugal — before (or instead of) full CIPLE exam prep."
+        ),
+        "disclaimer": "CAPLE / University of Lisbon",
+        "about_heading": "What is Portuguese Survival?",
+        "about": (
+            "A Day-1 speaking bank for living in Portugal: each card is a real turn — Say "
+            "(your line), Hear (decode theirs), or Repair (unstick the conversation). Nine "
+            "scenes cover foundations through documents and social life."
+        ),
+        "pathways": "Everyday PT-PT · living in Portugal · pre-CIPLE survival",
+        "deck_covers": (
+            "344 unique speaking-move cards with English scene cues, PT-PT replies, teaching "
+            "hints, and Google Cloud pt-PT pronunciation audio."
+        ),
+        "not_included": (
+            "CIPLE / CAPLE exam breadth, official past papers, or citizenship civics — use the "
+            "full CIPLE deck when you need the diploma."
+        ),
+        "why_anki": (
+            "Day-one situations repeat. Spaced Anki keeps the same shop / clinic / housing "
+            "frames ready when you open your mouth."
+        ),
+        "cards": "344",
+        "format_note": "Anki .apkg with pt-PT audio (speaking moves)",
+        "sample_captions": ["shop counter", "farmácia dosing", "wrong balcão repair"],
+        "facts": [
+            ("Focus", "Say · Hear · Repair"),
+            ("Cards", "344 speaking moves"),
+            ("Media", "Google pt-PT audio"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
     "delf-b2-french-anki-deck": {
         "label": "DELF DALF TCF TEF French",
         "headline": "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",

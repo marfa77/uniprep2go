@@ -56,23 +56,22 @@ const SPECS = {
     fileNames: ["CIPLE_CAPLE_Portuguese_Citizenship_Anki_Deck.apkg"],
   },
   "portuguese-survival-anki-deck": {
-    name: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
+    name: "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
     summary:
-      "1,000 PT-PT cards for living in Portugal — function words and modals before theme nouns, so you can ask and answer in daily life.",
+      "344 Day-1 PT-PT speaking moves (Say / Hear / Repair) for shops, clinic, housing, transport, and paperwork — with Google pt-PT audio.",
     priceUsd: 15,
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — <strong>Portuguese Survival</strong> Anki deck for living in Portugal (European Portuguese / PT-PT).</p>",
-      "<p><strong>Why the order matters:</strong> most beginner decks dump themes first (colours, food lists). This one uses <strong>survival pedagogy</strong> — greetings → pronouns/questions → function words → core/modal verbs (poder, precisar de, querer) → numbers/time → then shopping, health, housing, transport nouns. You learn how to ask and answer before memorising another fruit name.</p>",
-      "<p><strong>Why 1,000 is enough for survival:</strong> daily life is a closed loop (greet, ask price/where/when, say you need something, shop, clinic, bus, bills). Those situations reuse the same frames. This cut covers that loop with audio and example sentences. It is <strong>not</strong> a full CIPLE / CAPLE exam pack — use the larger CIPLE deck for the diploma.</p>",
-      "<p>Selected from the Prep2Go CIPLE A2 vocabulary bank and reordered for survival — same PT-PT audio style, different sequence.</p>",
+      "<p><strong>Speaking moves, not a word list:</strong> each card is a real turn — <strong>Say</strong> (your line), <strong>Hear</strong> (decode theirs), or <strong>Repair</strong> (unstick the conversation). Nine scenes: foundations, money/time, directions, shop, health, housing, transport, documents, social.</p>",
+      "<p><strong>344 unique moves</strong> with Google Cloud pt-PT audio. Day-one loop covered without CIPLE lemma padding. It is <strong>not</strong> a full CIPLE / CAPLE exam pack — use the larger CIPLE deck for the diploma.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
     ].join(""),
     coverPath: "public/covers/portuguese-survival-anki-deck.webp",
     apkgRelPaths: [
-      "prep2go_Portuguese_A2_CIPLE_Survival/prep2go_Portuguese_A2_CIPLE_Survival_1000_FULL.apkg",
+      "prep2go_Portuguese_Survival_v2/Portuguese_Survival_PT_PT_Anki_Deck.apkg",
     ],
-    fileNames: ["Portuguese_Survival_PT_PT_Anki_Deck_1000.apkg"],
+    fileNames: ["Portuguese_Survival_PT_PT_Anki_Deck.apkg"],
   },
   "delf-b2-french-anki-deck": {
     name: "DELF DALF TCF TEF French Anki Deck — 2100 Flashcards",

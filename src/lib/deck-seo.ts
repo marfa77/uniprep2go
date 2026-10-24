@@ -135,20 +135,20 @@ function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
 
 const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   "portuguese-survival-anki-deck": {
-    title: "Portuguese Survival Anki Deck PT-PT | 1000 Cards",
-    headline: "Portuguese Survival Anki Deck — 1000 PT-PT Flashcards",
-    studyLabel: "European Portuguese survival vocabulary for life in Portugal",
+    title: "Portuguese Survival Anki Deck PT-PT | 344 Speaking Moves",
+    headline: "Portuguese Survival Anki Deck — 344 PT-PT Speaking Moves",
+    studyLabel: "European Portuguese Day-1 speaking moves for life in Portugal",
     description:
-      "1,000 PT-PT Anki cards ordered for living in Portugal: function words and modals before theme nouns — enough to ask, answer, shop, and handle clinics and housing. Audio + examples. Not the full CIPLE exam pack.",
+      "344 PT-PT Anki speaking moves (Say / Hear / Repair) for day-one life in Portugal — shops, clinic, housing, transport, paperwork. Google pt-PT audio. Not a CIPLE lemma dump.",
     keywords: [
       "portuguese survival anki",
       "european portuguese flashcards",
-      "pt-pt survival vocabulary",
+      "pt-pt speaking moves",
       "living in portugal portuguese",
       "portuguese for beginners portugal",
     ],
     intro:
-      "Survive daily life in Portugal with a PT-PT bank ordered the useful way — greetings, question words, function words, and modals before shopping and housing nouns — then move to full CIPLE only if you need the diploma.",
+      "Open your mouth on day one in Portugal: 344 Say / Hear / Repair moves with pt-PT audio for shops, clinics, housing, transport, and docs — then move to full CIPLE only if you need the diploma.",
   },
   "ciple-a2-european-portuguese-anki-deck": {
     title: "CIPLE CAPLE Portuguese Citizenship Exam Prep | 2067 Cards",

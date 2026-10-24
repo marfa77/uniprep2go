@@ -40,6 +40,8 @@ const AUTHORED_APKG = {
   "life-and-health-insurance-exam-anki-deck": "out/insurance/Life_Health_Insurance_FULL_250.apkg",
   "property-casualty-insurance-exam-anki-deck": "out/insurance/Property_Casualty_Insurance_FULL_250.apkg",
   "california-real-estate-exam-anki-deck": "out/real_estate/California_Real_Estate_Salesperson_FULL_250.apkg",
+  "portuguese-survival-anki-deck":
+    "out/prep2go_Portuguese_Survival_v2/Portuguese_Survival_PT_PT_Anki_Deck.apkg",
 };
 
 function parseArgs(argv) {

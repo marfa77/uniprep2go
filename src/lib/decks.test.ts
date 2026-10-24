@@ -687,7 +687,7 @@ describe("deck catalog", () => {
       "life-in-the-uk-anki-deck": "Life in the UK Anki Deck — 201 Cards",
       "belgium-wallonie-citoyennete-anki-deck": "Belgium Wallonie Citoyenneté Anki Deck — 165 Cards",
       "portugal-nacionalidade-anki-deck": "Portugal Nacionalidade Anki Deck — 173 Cards",
-      "portuguese-survival-anki-deck": "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
+      "portuguese-survival-anki-deck": "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
       "australian-citizenship-anki-deck": "Australian Citizenship Anki Deck — 200 Cards",
       "naturalisation-suisse-anki-deck": "Naturalisation suisse Anki Deck — 207 Cards",
       "naturalizzazione-svizzera-anki-deck": "Naturalizzazione svizzera Anki Deck — 207 Cards",

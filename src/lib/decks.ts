@@ -1493,48 +1493,51 @@ const rawDecks: Deck[] = [
       },
     ],
   },
-  // ── Portuguese Survival (live on UniPrep / Gumroad — not the retired CIPLE exam deck) ────────────
+  // ── Portuguese Survival v2 (Day-1 speaking moves — not a CIPLE lemma cut) ────────────
   {
     slug: "portuguese-survival-anki-deck",
     category: "language",
     status: "available",
-    title: "Portuguese Survival Anki Deck — 1000 Flashcards (PT-PT)",
+    title: "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
     shortName: "Portuguese Survival",
     subtitle:
-      "1,000 PT-PT cards ordered for living in Portugal — function words and modals before theme nouns, so you can ask and answer in shops, clinics, and offices.",
+      "344 Day-1 speaking moves for living in Portugal — Say / Hear / Repair scenes with pt-PT audio for shops, clinics, housing, transport, and paperwork.",
     directAnswer:
-      "UniPrep2Go sells a Portuguese Survival Anki deck with 1,000 European Portuguese (PT-PT) flashcards built for daily life in Portugal — not a random beginner list. Cards follow survival pedagogy: greetings and politeness, pronouns and question words, function words, core and modal verbs (poder, precisar de, querer), numbers and time, then high-utility nouns for shopping, health, documents, housing, and transport. That order is why 1,000 cards are enough to stop freezing in everyday situations; it is not a full CIPLE / CAPLE exam pack. Each card has pronunciation audio and an example sentence. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio.",
+      "UniPrep2Go sells a Portuguese Survival Anki deck with 344 European Portuguese (PT-PT) speaking-move flashcards built for day-one life in Portugal — not a CIPLE lemma list and not Brazilian Portuguese. Each card is a real moment: Say (what you open your mouth with), Hear (what they just said), or Repair (how you unstick the conversation). Scenes cover foundations, numbers/money/time, directions, shop, health, housing, transport, documents, and social. Every card has Google pt-PT pronunciation audio. Delivered as an Anki .apkg for {PRICE} through Gumroad by PixID Studio. For the CIPLE / CAPLE diploma, use the separate full CIPLE deck.",
     lastUpdated: "2026-10-24",
     audience:
-      "Newcomers, relocators, and travelers who need European Portuguese for everyday life in Portugal before (or instead of) full CIPLE exam prep.",
+      "Newcomers, relocators, and travelers who need European Portuguese they can speak on day one in Portugal — before (or instead of) full CIPLE exam prep.",
     format: ".apkg",
     coverImage: "/covers/portuguese-survival-anki-deck.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/portuguese-survival-anki-deck?wanted=true",
     checkoutProvider: "Gumroad",
     checkoutSeller: "PixID Studio",
     facts: {
-      cards: "1000",
+      cards: "344",
       topics:
-        "Survival order: greetings → function words → modals → numbers/time → shopping/health/housing/transport",
-      formulas: "Audio pronunciation + contextual examples (PT-PT)",
+        "Say / Hear / Repair · foundations · money/time · directions · shop · health · housing · transport · docs · social",
+      formulas: "Scene cue (EN) → reply (PT-PT) + hint + Google Cloud pt-PT audio",
       examYear: "Everyday European Portuguese (Portugal)",
       delivery: "Digital download through Gumroad",
     },
     topicCoverage: [],
     sampleCards: [
       {
-        question: "bom dia",
-        answer: "good morning — Bom dia! Dormiste bem? (Good morning! Did you sleep well?)",
+        question: "Your number is called. Order one kilo of chicken breast.",
+        answer:
+          "Queria um quilo de peito de frango, se faz favor.",
         imageUrl: "/samples/portuguese-survival-anki-deck-sample-1.webp",
       },
       {
-        question: "por favor",
-        answer: "please — Pode ajudar-me, por favor? (Can you help me, please?)",
+        question: "You are buying medicine and want clear dosing in simple Portuguese.",
+        answer:
+          "Como é que se toma? / Quantos por dia?",
         imageUrl: "/samples/portuguese-survival-anki-deck-sample-2.webp",
       },
       {
-        question: "Como está?",
-        answer: "How are you? (polite) — Bom dia. Como está? (Good morning. How are you?)",
+        question: "You waited 40 minutes and reached the wrong balcão. Fix it without restarting from zero if possible.",
+        answer:
+          "Desculpe, enganei-me de balcão. É nas Finanças ou na AIMA? Onde devo tirar a senha certa?",
         imageUrl: "/samples/portuguese-survival-anki-deck-sample-3.webp",
       },
     ],
@@ -1542,27 +1545,27 @@ const rawDecks: Deck[] = [
       {
         question: "Is this European Portuguese or Brazilian?",
         answer:
-          "European Portuguese (PT-PT) for life in Portugal — including words like autocarro, telemóvel, and casa de banho. It is not a Brazilian Portuguese phrasebook.",
+          "European Portuguese (PT-PT) for life in Portugal — autocarro, telemóvel, casa de banho, você with strangers. Not a Brazilian Portuguese phrasebook.",
       },
       {
-        question: "Why is the deck ordered this way?",
+        question: "What is a “speaking move”?",
         answer:
-          "Survival pedagogy: greetings, pronouns, question words, function words, and modals come before theme nouns. You learn how to ask and answer (onde, quanto, preciso de…) before memorising colour or animal lists — the usual beginner trap.",
+          "A card that trains one real turn: Say (your line), Hear (decode theirs), or Repair (unstick when you misheard or picked the wrong desk). Front is an English scene; back is the PT-PT line plus a hint.",
       },
       {
-        question: "Is 1,000 cards enough to “survive” in Portugal?",
+        question: "Why 344 cards instead of 1,000 lemmas?",
         answer:
-          "Enough for the closed loop of daily situations — greet people, ask price/where/when, say you need something, shop, describe a basic symptom, handle housing/transport vocabulary — with audio and example sentences. Not enough alone for CIPLE A2 / citizenship diploma prep; use the full CIPLE deck for that.",
+          "Survival is a closed set of day-one situations, not a frequency list. 344 unique Say/Hear/Repair moves cover shops, clinic, housing, transport, and paperwork with audio — enough to open your mouth. For CIPLE A2 / citizenship diploma breadth, use the full CIPLE deck.",
       },
       {
         question: "Is this the same as the CIPLE / CAPLE citizenship deck?",
         answer:
-          "No. This is a 1,000-card survival subset ordered for daily life. The full CIPLE / CAPLE Anki deck is a larger exam-oriented bank sold separately (on Prep2Go).",
+          "No. This is an original Day-1 speaking bank, not a cut of the CIPLE vocabulary list. The full CIPLE / CAPLE Anki deck is a larger exam-oriented bank sold separately.",
       },
       {
         question: "What does the deck include?",
         answer:
-          "1,000 Anki cards with European Portuguese vocabulary and short phrases, English glosses, contextual examples, and pronunciation audio — selected from the CIPLE A2 bank and reordered for survival.",
+          "344 Anki cards (Say / Hear / Repair) across nine scenes, each with a PT-PT reply, a teaching hint, and Google Cloud pt-PT audio.",
       },
       {
         question: "What file format is delivered?",
