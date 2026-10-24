@@ -5,6 +5,7 @@ import { getMockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { buildMockExamFaqs, buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { mockFunnelNoticeForLinkedDeck } from "@/lib/mock-exams/pricing";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
+import { SimpleMarkdownBlock } from "@/lib/simple-markdown";
 
 type MockSeoSectionsProps = {
   config: MockExamConfig;
@@ -139,7 +140,7 @@ export function MockExamAboutSection({ config }: { config: MockExamConfig }) {
 
   return (
     <div className="space-y-4 text-sm leading-7 text-[#4f493e]">
-      <p>{copy.intro}</p>
+      <SimpleMarkdownBlock className="text-sm leading-7 text-[#4f493e]" text={copy.intro} />
       <p>
         <span className="font-medium text-[#18140f]">Built for:</span> {copy.audience}
       </p>

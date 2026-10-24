@@ -1586,7 +1586,7 @@ const rawDecks: Deck[] = [
       "2,067 European Portuguese flashcards for CIPLE / CAPLE A2, Portuguese residency, and citizenship (nacionalidade).",
     directAnswer:
       "UniPrep2Go sells a CIPLE / CAPLE Portuguese Anki deck with 2,067 European Portuguese flashcards for the CAPLE CIPLE A2 certificate used in Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) applications. Cards focus on PT-PT vocabulary, short phrases, contextual examples, and pronunciation audio. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio — one vocabulary bank for CAPLE A2 diploma and Portugal immigration pathways.",
-    lastUpdated: "2026-09-21",
+    lastUpdated: "2026-10-24",
     audience: "CIPLE / CAPLE A2 candidates, Portuguese residency and citizenship applicants, and European Portuguese self-learners.",
     format: ".apkg",
     coverImage: "/covers/ciple-a2-european-portuguese-anki-deck.webp",

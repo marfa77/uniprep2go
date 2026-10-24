@@ -74,8 +74,65 @@ function stripListMarker(line: string) {
   return line.replace(/^\d+\.\s+/, "").replace(/^[-*]\s+/, "");
 }
 
+function isTableRow(line: string) {
+  const t = line.trim();
+  return t.startsWith("|") && t.endsWith("|");
+}
+
+function isTableSeparator(line: string) {
+  return /^\|[\s:|-]+\|$/.test(line.trim());
+}
+
+function splitTableCells(line: string) {
+  return line
+    .trim()
+    .replace(/^\|/, "")
+    .replace(/\|$/, "")
+    .split("|")
+    .map((c) => c.trim());
+}
+
+function MarkdownTable({
+  rows,
+  className,
+}: {
+  rows: string[];
+  className: string;
+}) {
+  const dataRows = rows.filter((r) => !isTableSeparator(r));
+  if (dataRows.length === 0) return null;
+  const header = splitTableCells(dataRows[0]!);
+  const body = dataRows.slice(1).map(splitTableCells);
+  return (
+    <div className="overflow-x-auto">
+      <table className={`w-full border-collapse text-left ${className}`}>
+        <thead>
+          <tr className="border-b border-[#18140f]/15">
+            {header.map((cell, j) => (
+              <th className="px-3 py-2 font-semibold text-[#18140f]" key={`th-${j}`} scope="col">
+                {renderInlineMarkdown(cell)}
+              </th>
+            ))}
+          </tr>
+        </thead>
+        <tbody>
+          {body.map((cells, i) => (
+            <tr className="border-b border-[#18140f]/8" key={`tr-${i}`}>
+              {cells.map((cell, j) => (
+                <td className="px-3 py-2 align-top" key={`td-${i}-${j}`}>
+                  {renderInlineMarkdown(cell)}
+                </td>
+              ))}
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}
+
 /**
- * Render a markdown body block (no ### headings) as paragraphs / lists with inline marks.
+ * Render a markdown body block (no ### headings) as paragraphs / lists / tables with inline marks.
  */
 export function SimpleMarkdownBlock({
   text,
@@ -98,7 +155,14 @@ export function SimpleMarkdownBlock({
           nonEmpty.length > 0 && nonEmpty.every((l) => isOrderedItem(l.trim()));
         const allBullets =
           nonEmpty.length > 0 && nonEmpty.every((l) => isBulletItem(l.trim()));
+        const allTable =
+          nonEmpty.length >= 2 &&
+          nonEmpty.every((l) => isTableRow(l.trim())) &&
+          nonEmpty.some((l) => isTableSeparator(l.trim()));
 
+        if (allTable) {
+          return <MarkdownTable className={className} key={`tbl-${i}`} rows={nonEmpty} />;
+        }
         if (allOrdered) {
           return (
             <ol

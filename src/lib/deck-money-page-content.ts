@@ -42,6 +42,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "$11 / 160 unique Digital SAT cards (88 Reading and Writing + 72 Math) + 49-question / 70-minute timed check (free 25-question version) scored on both official axes. Live Gumroad .apkg — not waitlist.",
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
+  "belgium-flanders-mo-anki-deck":
+    "165 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $9 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version). Not NT2 language vocab.",
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a 40-question, 60-minute exam simulation (free 25-question version). Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
@@ -179,6 +181,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Front-load high-yield drugs and interactions, high-alert safety, DEA schedules, DSCSA, and days-supply math — aligned to the January 2026 PTCE blueprint. Pair with the printable study guide for domain chapters and an 80-question practice exam; drill 10–15 cards per shift on your phone.",
   "ace-cpt-anki-deck":
     "Cards track ACE CPT competency themes: preparticipation screening and consent, FITT-VP program design, cueing and spotting under load, and scope/ethics/business boundaries. Run the 60-question readiness check (free 25-question version) first, then filter Anki to weak topics — not a NASM/ISSA mega-dump.",
+  "belgium-flanders-mo-anki-deck":
+    "Dutch civics recall for Flanders maatschappelijke oriëntatie: Belgian/Flemish institutions, rights and values, work/housing/school/health themes, and how AgII’s MO course + standaardtest fit inburgering. Every card has a short answer plus a teaching line (trap or why it matters). Official AgII standaardtest is 41 digital MCQ / 120 minutes after ~60h course (test 60% + process 40%) — this deck is independent spaced repetition, not AgII items. Run the 60-question Dutch diagnostic (free 25-question version) first, then drill weak topics here. NT2 Dutch lexicon stays on the separate Prep2Go language deck.",
   "luxembourg-vivre-ensemble-anki-deck":
     "Subdecks follow the official exam split — module 1 fundamental rights (42 cards, 10 exam questions), module 2 state and municipal institutions (104 cards, 20 questions), module 3 history and European integration (49 cards, 10 questions) — plus exam/nationality steps and daily-life context. Every card carries a key-point line; 22 cards flag the classic traps (Council of State does not vote laws, 1839 vs 1867, foreigners and legislative elections). Sit the 40-question, 60-minute exam simulation (free 25-question version; same 10/20/10 split), then study your weakest module in the language you will sit.",
   "rd-exam-anki-deck":
@@ -356,6 +360,16 @@ export const positioningOverrides: Partial<
     ],
     summaryProse:
       "CPCT/A rewards bedside ADLs, infection control, and selected phlebotomy/EKG judgment — not a CCMA or phlebotomy-only dump. Two hundred forty focused prompts plus a 120-question timed check (free 25-question version) from the same bank beat a 260-question blog bank that mixes official counts.",
+  },
+  "belgium-flanders-mo-anki-deck": {
+    ourEdge: [
+      "165 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
+      "Covers institutions, rights/values, daily services, and AgII pathway honesty vs the official 41Q / 120 min standaardtest",
+      "Pairs with a free 60-question Dutch diagnostic (free 25-question version) scored by topic",
+      "$9 one-time ownable .apkg — separate from NT2 language vocabulary",
+    ],
+    summaryProse:
+      "Flanders MO is course + standaardtest under AgII, not a public free 41-question bank. This deck drills Dutch civics themes with a why on every card, then you diagnose gaps on the timed mock — independent prep, not AgII material.",
   },
   "luxembourg-vivre-ensemble-anki-deck": {
     ourEdge: [
@@ -946,6 +960,28 @@ Candidates mix CPCT/A with CCMA, NHA CPT phlebotomy, or ASPT; over-drill EKG (10
 ### What this does not replace
 
 NHA registration, the official practice test, or a skills lab. Ownable .apkg only — not NHA exam material.`,
+
+  "belgium-flanders-mo-anki-deck": `### What is inside
+
+One ownable Dutch .apkg with 165 maatschappelijke oriëntatie civics cards: Belgian and Flemish institutions, rights and values, nationality themes, work/housing/school/health, culture, and daily participation. Every card shows a short answer plus a teaching line — the trap, the AgII distinction, or why the fact matters on the MO path.
+
+### Why this beats the alternatives
+
+Coverage: 165 unique Dutch prompts with explanations, not a one-word capital/language trivia list. Honesty: the official AgII standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen) after a ~60-hour course; the combined MO result is test 60% + process 40%. This deck is spaced-repetition theme drill — not that form and not AgII items.
+
+Price and ownership: $9 once, offline in Anki. NT2 Dutch lexicon for the language pillar is a separate Prep2Go deck — do not confuse language vocab with MO civics.
+
+### Plan with the free Flanders MO mock
+
+Start with the free Belgium Flanders MO readiness check (/mock-exams/belgium-flanders-mo-readiness-check): free 25-question diagnostic or full 60 questions in 45 minutes, scored by topic. Then add 15–20 new cards a day from your weakest theme. In the final week, reviews only.
+
+### Pitfalls this deck targets
+
+Mixing Flanders MO with Wallonia citoyenneté, treating the UniPrep 60Q mock as the official 41Q standaardtest, and using Netherlands Inburgering / KNM decks as a Flanders MO substitute.
+
+### What this does not replace
+
+AgII course registration, the official standaardtest, NT2 language evidence, or commune-specific rules. Confirm current reglement on integratie-inburgering.be. Ownable .apkg only — not government material.`,
 
   "luxembourg-vivre-ensemble-anki-deck": `### What is inside
 

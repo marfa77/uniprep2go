@@ -215,17 +215,17 @@ const LUXEMBOURG_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
 const BELGIUM_FLANDERS_LAUNCH_SAMPLE_CARDS: SampleCard[] = [
   {
     question: "Hoeveel gewesten heeft België?",
-    answer: "Drie: Vlaanderen, Wallonië en het Brussels Hoofdstedelijk Gewest",
+    answer: "Drie: Vlaams Gewest, Waals Gewest en Brussels Hoofdstedelijk Gewest",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-1.webp",
   },
   {
-    question: "Wat is de officiële taal in Vlaanderen?",
-    answer: "Nederlands",
+    question: "Moet u de MO-test afleggen in het Nederlands?",
+    answer: "Nee — cursus en standaardtest MO gebeuren in een taal die u begrijpt",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-2.webp",
   },
   {
-    question: "Wie is het hoofd van de Vlaamse regering?",
-    answer: "De minister-president van Vlaanderen",
+    question: "Waar vraagt u nationaliteit aan?",
+    answer: "Verklaring bij de gemeente; naturalisatie via de Kamer",
     imageUrl: "/samples/belgium-flanders-mo-anki-deck-sample-3.webp",
   },
 ];
@@ -463,7 +463,7 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
         : deck.slug === "luxembourg-vivre-ensemble-anki-deck"
           ? "2026-09-27"
           : deck.slug === "belgium-flanders-mo-anki-deck"
-            ? "2026-09-21"
+            ? "2026-10-24"
             : deck.slug === "ace-cpt-anki-deck"
               ? "2026-08-13"
               : deck.slug === "gre-anki-deck" ||

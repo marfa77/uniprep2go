@@ -19,46 +19,12 @@ import {
 import { MOCK_ACCESS_SHORT } from "@/lib/mock-exams/mock-pass";
 import { getRetiredLanguageDeckRedirect } from "@/lib/retired-language-decks";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { renderInlineMarkdown } from "@/lib/simple-markdown";
 import { btnPrimary, btnSecondary, btnQuiet } from "@/lib/ui-button-classes";
 
-/** Render inline **bold** and [label](href) from author content. */
+/** Inline **bold**, *italic*, and [label](href) from author content. */
 function RichText({ text }: Readonly<{ text: string }>) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\)|\*\*[^*]+\*\*)/g);
-  return (
-    <>
-      {parts.map((part, index) => {
-        if (part.startsWith("**") && part.endsWith("**")) {
-          return <strong key={index}>{part.slice(2, -2)}</strong>;
-        }
-        const link = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
-        if (link) {
-          const [, label, href] = link;
-          if (href.startsWith("/") && !href.startsWith("//")) {
-            return (
-              <Link
-                className="font-medium text-[#1f3a5f] underline underline-offset-4"
-                href={href}
-                key={index}
-              >
-                {label}
-              </Link>
-            );
-          }
-          return (
-            <a
-              className="font-medium text-[#1f3a5f] underline underline-offset-4"
-              href={href}
-              key={index}
-              rel="noopener noreferrer"
-            >
-              {label}
-            </a>
-          );
-        }
-        return <span key={index}>{part}</span>;
-      })}
-    </>
-  );
+  return <>{renderInlineMarkdown(text)}</>;
 }
 
 function StockFigure({
@@ -206,7 +172,9 @@ function CtaBand({
 
   return (
     <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#1f3a5f]/5 px-5 py-6 sm:px-6">
-      <p className="text-base leading-7 text-[#4f493e]">{post.cta.summary}</p>
+      <p className="text-base leading-7 text-[#4f493e]">
+        <RichText text={post.cta.summary} />
+      </p>
       <div className="mt-5 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
         {post.mockSlug && post.cta.mockLabel ? (
           <Link className={btnPrimary} href={`/mock-exams/${post.mockSlug}`}>

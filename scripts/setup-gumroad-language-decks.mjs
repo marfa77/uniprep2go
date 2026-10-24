@@ -42,12 +42,12 @@ const PRICE_USD = 26;
  * }>} */
 const SPECS = {
   "ciple-a2-european-portuguese-anki-deck": {
-    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",
+    name: "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2067 Flashcards",
     summary:
-      "2,058 European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
+      "2,067 European Portuguese cards for CIPLE / CAPLE A2, residency, and citizenship (nacionalidade).",
     descriptionHtml: [
       "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
-      "<p><strong>2,058</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
+      "<p><strong>2,067</strong> PT-PT cards with audio, phrases, and examples — one vocabulary bank for the CAPLE diploma and Portugal immigration pathways.</p>",
       "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
       "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
     ].join(""),

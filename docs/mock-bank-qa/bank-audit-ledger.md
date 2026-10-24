@@ -8,11 +8,13 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Started | Slugs | Work | Status / blocker |
 |---|---|---|---|
+| 2026-10-24 | `swiss-citizenship-readiness-check` · `naturalisation-suisse-readiness-check` · `naturalizzazione-svizzera-readiness-check` | Swiss DE/FR/IT mock banks still 60/60 — expand to ≥120 | Anki 207×3 teaching lines shipped to Gumroad (`261024-0821`); bank expand next |
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-10-24 | `belgium-flanders-mo-readiness-check` · `luxembourg-vivre-ensemble-readiness-check` · `swiss-citizenship-readiness-check` · `naturalisation-suisse-readiness-check` · `naturalizzazione-svizzera-readiness-check` | `belgium-flanders-mo-anki-deck` · `luxembourg-vivre-ensemble-anki-deck` · `einburgerung-schweiz-anki-deck` · `naturalisation-suisse-anki-deck` · `naturalizzazione-svizzera-anki-deck` · `ciple-a2-european-portuguese-anki-deck` · `portuguese-survival-anki-deck` | Flanders 0 FAIL; Lux clean; Swiss banks still 60/60 | Flanders 165 + Swiss 207×3 teaching lines | Flanders+Swiss apkgs on Gumroad; Lux $16 cite; Swiss free-25 SEO; CIPLE 2067 + Survival 1000 new Prep2Go audio | Civic quality + CIPLE audio rebuild |
 | 2026-10-24 | (all paywalled mocks) | — | Telegram + modal | — | `mock_paywall_view` → DM on Start→wall; Mock Pass modal (not inline) | Funnel: start intent after free used |
 | 2026-10-24 | — | `series-63-anki-deck` · `ptcb-study-guide-2026` | Layer B copy | — | Title/meta/intro/FAQ + money blurbs; S63 $19 honesty; PTCB outline 2026 + Pass Pack CTA | Wedges: `series 63 flashcards`, `ptcb outline 2026` |
 | 2026-10-23 | — | `ielts-toefl-english-for-russian-speakers-anki-deck` | apkg media 0 miss; Whisper hit/offer/face = EN | AnkiWeb feedback 2026-10-16: missing img/audio UX + wrong-lang claim | FULL `…_FULL_261023-1231.apkg` → Gumroad assets-only; LITE same 75 picks + `{{Audio}}` on front; AnkiWeb desc updated; listing Sample still 150 (share-limit) | Root cause: front template omitted Audio (sound only on back). Wrong-lang clips not in current media |

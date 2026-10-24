@@ -486,6 +486,23 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "EA candidates drill SEE domain cards after a free timed readiness check so Representation and Practices get equal weight to Individuals.",
   },
 
+  "belgium-flanders-mo-anki-deck": {
+    title: "Flanders MO Anki | 165 Dutch Cards + Free 60Q Mock",
+    headline: "Belgium Flanders MO — 165 Dutch Civics Flashcards",
+    studyLabel: "Flanders MO Anki",
+    description:
+      "Flanders maatschappelijke oriëntatie Anki: 165 Dutch cards with a teaching line on every card, AgII pathway honesty (official standaardtest 41Q / 120 min), plus a 60-question Dutch diagnostic (free 25-question version). $9 one-time .apkg — not NT2 language vocab, not AgII material.",
+    keywords: [
+      "flanders mo anki",
+      "maatschappelijke orientatie flashcards",
+      "inburgering vlaanderen anki",
+      "belgium flanders civics anki",
+      "mo test oefenen",
+    ],
+    intro:
+      "Drill Dutch MO themes after the free timed diagnostic: institutions, rights, and daily services with a why on every card. Official AgII standaardtest stays 41 MCQ / 120 minutes after the course — this deck is independent spaced repetition.",
+  },
+
   "luxembourg-vivre-ensemble-anki-deck": {
     title: "Luxembourg Vivre ensemble Anki | FR + EN · 478 Cards + Free Mock",
     headline: "Luxembourg Vivre ensemble — 239 French + 239 English Flashcards",

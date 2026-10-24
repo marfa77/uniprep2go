@@ -199,7 +199,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | — | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
-| civic | `belgium-flanders-mo-readiness-check` | live | 60 / 120 | 2026-10-06 | — |
+| civic | `belgium-flanders-mo-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
 | civic | `belgium-wallonie-citoyennete-readiness-check` | live | 60 / 60 | — | FAIL (0 items + bank-level): correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `canadian-citizenship-readiness-check` | live | 60 / 200 | — | FAIL (177 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | civic | `ccse-espana-readiness-check` | live | 60 / 60 | — | FAIL (45 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session; no content review in ledger |
@@ -207,15 +207,15 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `denmark-indfoedsretsproeven-readiness-check` | live | 60 / 60 | — | FAIL (15 items + bank-level): template/thin distractor notes, thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `leben-in-deutschland-readiness-check` | live | 60 / 296 | — | FAIL (279 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
 | civic | `life-in-the-uk-readiness-check` | live | 60 / 201 | — | FAIL (174 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
-| civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-15 | — |
+| civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-24 | — |
 | civic | `naturalisation-francaise-readiness-check` | live | 60 / 200 | — | FAIL (145 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct; no content review in ledger |
-| civic | `naturalisation-suisse-readiness-check` | live | 60 / 60 | — | FAIL (41 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session; no content review in ledger |
-| civic | `naturalizzazione-svizzera-readiness-check` | live | 60 / 60 | — | FAIL (33 items + bank-level): distractor, correct; bank 60 for 60Q session; no content review in ledger |
+| civic | `naturalisation-suisse-readiness-check` | live | 60 / 60 | 2026-10-24 | FAIL (41 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |
+| civic | `naturalizzazione-svizzera-readiness-check` | live | 60 / 60 | 2026-10-24 | FAIL (33 items + bank-level): distractor, correct; bank 60 for 60Q session |
 | civic | `norway-statsborgerproven-readiness-check` | live | 60 / 60 | — | FAIL (38 items + bank-level): template/thin distractor notes, thin/template explanations, correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `polish-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `portugal-nacionalidade-readiness-check` | live | 60 / 60 | — | FAIL (1 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `sweden-medborgarskapsprov-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
-| civic | `swiss-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (39 items + bank-level): thin/template explanations, distractor, correct, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
+| civic | `swiss-citizenship-readiness-check` | live | 60 / 60 | 2026-10-24 | FAIL (39 items + bank-level): thin/template explanations, distractor, correct, each key letter 15-35% (n>=40); bank 60 for 60Q session |
 | civic | `finland-kansalaisuuskoe-readiness-check` | planned | 60 / 120 | 2026-10-09 | — |
 
 ## Catalog totals
@@ -240,6 +240,7 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 | reviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
 | reviewed | `cfa-level-1-pass-pack` | available | finance | .apkg + PDF | 2026-10-24 |
 | reviewed | `cfa-level-2-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
+| reviewed | `portuguese-survival-anki-deck` | available | language | .apkg | 2026-10-24 |
 | reviewed | `ptcb-2026-pass-pack` | available | professional | .apkg + PDF | 2026-10-24 |
 | reviewed | `ptcb-study-guide-2026` | available | professional | PDF | 2026-10-24 |
 | unreviewed | `australia-survival-guide-prep2go-app` | available | immigration | App | — |
@@ -255,7 +256,6 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 | unreviewed | `japan-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `netherlands-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `portugal-survival-guide-prep2go-app` | available | immigration | App | — |
-| unreviewed | `portuguese-survival-anki-deck` | available | language | .apkg | — |
 | unreviewed | `saudi-arabia-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `servsafe-manager-complete-study-guide` | available | professional | PDF | — |
 | unreviewed | `singapore-survival-guide-prep2go-app` | available | immigration | App | — |
@@ -285,7 +285,6 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | Status | Deck | Shop page | Last work |
 |---|---|---|---|
 | unreviewed | `celi-b1-italian-anki-deck` | https://www.prep2go.study/shop/celi-a2-anki-deck | — |
-| unreviewed | `ciple-a2-european-portuguese-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | — |
 | unreviewed | `ciple-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/ciple-a2-grammar-anki-deck | — |
 | unreviewed | `dele-a2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/dele-a2-grammar-anki-deck | — |
 | unreviewed | `dele-a2-spanish-anki-deck` | https://www.prep2go.study/shop/dele-a2-anki-deck | — |
@@ -298,6 +297,7 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `german-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-arabic-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-arabic-speakers-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-portuguese-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-portuguese-speakers-anki-deck | — |
+| reviewed | `ciple-a2-european-portuguese-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | 2026-10-24 |
 | reviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | 2026-10-18 |
 | reviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | 2026-10-18 |
 | reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |

@@ -50,4 +50,19 @@ Outro.`}
     expect(html).toContain("Outro");
   });
 
+  it("renders pipe tables", () => {
+    const html = renderToStaticMarkup(
+      <SimpleMarkdownBlock
+        text={`| Lookalike | Wrong | Right |
+| --- | --- | --- |
+| *актуальный* | “actual” | **current** |`}
+      />,
+    );
+    expect(html).toContain("<table");
+    expect(html).toContain("<th");
+    expect(html).toContain("<em");
+    expect(html).toContain("current");
+    expect(html).not.toContain("| ---");
+  });
 });
+

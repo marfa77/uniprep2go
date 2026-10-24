@@ -1358,52 +1358,52 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CCSE practice test",
   },
   "swiss-citizenship-readiness-check": {
-    title: "Free Einbürgerung Schweiz Practice Test | 60 Questions",
+    title: "Einbürgerung Schweiz Practice Test: 60Q, 25Q Free",
     description:
-      "Free German Swiss Staatskunde practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune tests vary. Swiss Citizenship Anki Bundle. Independent — not SEM material.",
+      "German Swiss Staatskunde diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune tests vary. Live $9.99 Einbürgerung Schweiz Anki (207). Independent — not SEM material.",
     keywords: [
       "Einbürgerung Schweiz üben",
       "Staatskunde Schweiz Test",
       "Swiss citizenship practice German",
       "Einbürgerungstest Schweiz",
     ],
-    headline: "Free Einbürgerung Schweiz Readiness Check",
+    headline: "Einbürgerung Schweiz Readiness Check (60 Questions; Free 25-Question Version)",
     intro:
-      "Timed German federal Staatskunde diagnostic for ordinary naturalisation. Switzerland has no nationwide knowledge MCQ; your canton/commune sets the real paper — this page covers federal themes only.",
+      "Timed German federal Staatskunde diagnostic for ordinary naturalisation. Switzerland has no nationwide knowledge MCQ; your canton/commune sets the real paper — this page covers federal themes only. Drill misses with the $9.99 German Anki deck (207 cards).",
     audience:
       "German-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Einbürgerung Schweiz practice test",
   },
   "naturalisation-suisse-readiness-check": {
-    title: "Free Naturalisation Suisse Practice Test | 60 Questions",
+    title: "Naturalisation Suisse Practice Test: 60Q, 25Q Free",
     description:
-      "Free French Swiss naturalisation practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Swiss Citizenship Anki Bundle. Independent prep.",
+      "French Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Live $9.99 Naturalisation suisse Anki (207). Independent prep.",
     keywords: [
       "naturalisation suisse test",
       "examen naturalisation suisse",
       "connaissances fédérales Suisse",
       "citoyenneté suisse pratique",
     ],
-    headline: "Free Naturalisation Suisse Readiness Check",
+    headline: "Naturalisation Suisse Readiness Check (60 Questions; Free 25-Question Version)",
     intro:
-      "Timed French federal civics diagnostic. No nationwide French MCQ — confirm your canton’s format; this page covers federal themes only.",
+      "Timed French federal civics diagnostic. No nationwide French MCQ — confirm your canton’s format; this page covers federal themes only. Drill misses with the $9.99 French Anki deck (207 cards).",
     audience:
       "French-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Naturalisation Suisse practice test",
   },
   "naturalizzazione-svizzera-readiness-check": {
-    title: "Free Naturalizzazione Svizzera Practice Test | 60 Questions",
+    title: "Naturalizzazione Svizzera Practice Test: 60Q, 25Q Free",
     description:
-      "Free Italian Swiss naturalisation practice: 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Swiss Citizenship Anki Bundle. Independent prep.",
+      "Italian Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Live $9.99 Naturalizzazione svizzera Anki (207). Independent prep.",
     keywords: [
       "naturalizzazione svizzera test",
       "esame cittadinanza svizzera",
       "conoscenze federali Svizzera",
       "cittadinanza svizzera pratica",
     ],
-    headline: "Free Naturalizzazione Svizzera Readiness Check",
+    headline: "Naturalizzazione Svizzera Readiness Check (60 Questions; Free 25-Question Version)",
     intro:
-      "Timed Italian federal civics diagnostic. No nationwide Italian MCQ — confirm your canton’s format; this page covers federal themes only.",
+      "Timed Italian federal civics diagnostic. No nationwide Italian MCQ — confirm your canton’s format; this page covers federal themes only. Drill misses with the $9.99 Italian Anki deck (207 cards).",
     audience:
       "Italian-speaking applicants preparing Swiss ordinary naturalisation federal civics.",
     practiceTestLabel: "Naturalizzazione Svizzera practice test",
@@ -1495,23 +1495,23 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Medborgarskapsprov practice test",
   },
   "belgium-flanders-mo-readiness-check": {
-    title: "Free Belgium Flanders MO Practice Test | 60 Questions",
+    title: "Flanders MO Practice Test: 60Q, 25Q Free",
     description:
-      "Free Flanders MO practice: 60 timed Dutch questions. Official AgII standaardtest is 41 MCQ / 120 min after the MO course — this page is independent. Live 165-card Anki on Gumroad.",
+      "Flanders MO Dutch diagnostic: free 25-question start, full mock 60 timed questions from a 120-question bank, topic scores. Official AgII standaardtest is 41 MCQ / 120 min after the MO course — this page is independent. Live 165-card Anki ($9) on Gumroad.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
-    headline: "Free Belgium Flanders MO Readiness Check",
+    headline: "Belgium Flanders MO Readiness Check (60 Questions; Free 25-Question Version)",
     intro:
-      "Timed Dutch-language Flanders maatschappelijke oriëntatie diagnostic. Honesty note: there is no nationwide citizenship MCQ in force like BAMF/LITUK — use this for MO themes; confirm AGII/commune requirements for your file.",
+      "Timed Dutch-language Flanders maatschappelijke oriëntatie diagnostic drawn from 120 unique items across institutions, history/EU, rights, and daily life. Honesty: no nationwide Belgian citizenship MCQ like BAMF/LITUK — official AgII standaardtest is 41 digital MCQ / 120 minutes after the ~60-hour course (test 60% + process 40%). Use this page for MO themes; confirm AgII/commune rules for your file.",
     audience:
       "Applicants preparing Flanders social orientation / integration civics themes.",
     practiceTestLabel: "Flanders MO practice test",
     localeMeta: {
       "nl-BE": {
-        title: "Gratis MO oefentest Vlaanderen | 60 vragen maatschappelijke oriëntatie",
+        title: "MO-oefentest Vlaanderen: 60 vragen, 25 gratis",
         description:
-          "Gratis MO-oefentest Vlaanderen: 60 getimede vragen. Officiële AgII-standaardtest = 41 MCQ / 120 min na de cursus — deze pagina is onafhankelijke oefening. Live 165-card Anki-deck op Gumroad.",
+          "MO-oefentest Vlaanderen: gratis 25 vragen, volledige mock 60 getimede vragen uit 120. Officiële AgII-standaardtest = 41 MCQ / 120 min na de cursus — deze pagina is onafhankelijk. Live 165-card Anki ($9) op Gumroad.",
         intro:
-          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen. Officieel traject = ~60u MO-cursus + standaardtest van 41 vragen / 120 minuten (60% test / 40% proces) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
+          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen (120 unieke vragen). Officieel traject = ~60u MO-cursus + standaardtest van 41 vragen / 120 minuten (60% test / 40% proces) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
       },
     },
   },
