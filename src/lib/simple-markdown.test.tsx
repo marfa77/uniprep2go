@@ -12,6 +12,16 @@ describe("simple-markdown", () => {
     expect(html).not.toContain("**");
   });
 
+  it("renders italic without leaking asterisks", () => {
+    const html = renderToStaticMarkup(
+      <>{renderInlineMarkdown("You learn *how to ask and answer* before fruit names.")}</>,
+    );
+    expect(html).toContain("<em");
+    expect(html).toContain("how to ask and answer");
+    expect(html).not.toContain("*how");
+    expect(html).not.toMatch(/\*[^*]+\*/);
+  });
+
   it("renders internal and external links", () => {
     const html = renderToStaticMarkup(
       <>{renderInlineMarkdown("See the [mock](/mock-exams/x) and [site](https://example.com).")}</>,

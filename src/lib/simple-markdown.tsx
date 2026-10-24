@@ -3,18 +3,18 @@ import Link from "next/link";
 
 /**
  * Lightweight markdown for deck/mock money copy.
- * Supports: **bold**, [label](url), numbered lists, bullet lists, paragraphs.
+ * Supports: **bold**, *italic*, [label](url), numbered lists, bullet lists, paragraphs.
  * Headings (###) are handled by the caller (section splitter).
  */
 
-const BOLD_OR_LINK =
-  /\*\*([^*]+)\*\*|\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)/g;
+const INLINE_MARK =
+  /\*\*([^*]+)\*\*|\[([^\]]+)\]\((https?:\/\/[^)\s]+|\/[^)\s]*)\)|(?<!\*)\*([^*\n]+)\*(?!\*)/g;
 
 export function renderInlineMarkdown(text: string): ReactNode[] {
   const nodes: ReactNode[] = [];
   let last = 0;
   let key = 0;
-  for (const match of text.matchAll(BOLD_OR_LINK)) {
+  for (const match of text.matchAll(INLINE_MARK)) {
     const index = match.index ?? 0;
     if (index > last) nodes.push(text.slice(last, index));
     if (match[1] != null) {
@@ -49,6 +49,12 @@ export function renderInlineMarkdown(text: string): ReactNode[] {
           </a>,
         );
       }
+    } else if (match[4] != null) {
+      nodes.push(
+        <em className="italic" key={`i-${key++}`}>
+          {match[4]}
+        </em>,
+      );
     }
     last = index + match[0].length;
   }
