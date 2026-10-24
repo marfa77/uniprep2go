@@ -6,7 +6,11 @@ import { recordFunnelEvent } from "@/lib/funnel-store";
 import { isSpoofedBrowserFingerprint } from "@/lib/traffic-bot";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { isAgentUserAgent } from "@/lib/mock-exams/miss-cohort";
-import { recordUniqueMockStart } from "@/lib/mock-exams/mock-start-count-store";
+import {
+  recordMockStartObservation,
+  recordUniqueMockStart,
+  type MockStartObservation,
+} from "@/lib/mock-exams/mock-start-count-store";
 import { parseMockSlugFromSource } from "@/lib/mock-exams/session-mode";
 import {
   notifyCheckoutClick,
@@ -74,24 +78,6 @@ export async function POST(request: Request) {
       }
     }
 
-    if (event.name === "mock_started") {
-      const mockSlug = event.source?.match(/^mock:([^:]+)/)?.[1];
-      const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;
-
-      try {
-        const sent = await notifyMockStarted(event, mock);
-
-        if (!sent) {
-          console.warn("[telegram_notify] mock started alert not sent", {
-            deckSlug: event.deckSlug,
-            source: event.source,
-          });
-        }
-      } catch (error) {
-        console.error("[telegram_notify] mock started alert failed", error);
-      }
-    }
-
     if (
       event.name === "mock_paywall_view" ||
       event.name === "mock_pass_checkout_click" ||
@@ -118,22 +104,46 @@ export async function POST(request: Request) {
       }
     }
 
+    let mockStartObservation: MockStartObservation | null = null;
+
     if (shouldRecordFunnelEvent(event, request)) {
       console.info("[funnel_event]", JSON.stringify(event));
       await recordFunnelEvent(event);
-      if (
-        event.name === "mock_started" &&
-        !isAgentUserAgent(event.userAgent) &&
-        event.visitorId
-      ) {
+      if (event.name === "mock_started" && !isAgentUserAgent(event.userAgent)) {
         const startSlug = parseMockSlugFromSource(event.source);
         if (startSlug) {
           try {
-            await recordUniqueMockStart({ slug: startSlug, visitorId: event.visitorId });
+            mockStartObservation = await recordMockStartObservation(startSlug);
           } catch (error) {
-            console.error("[mock_start_count] record failed", error);
+            console.error("[mock_start_obs] record failed", error);
+          }
+          if (event.visitorId) {
+            try {
+              await recordUniqueMockStart({ slug: startSlug, visitorId: event.visitorId });
+            } catch (error) {
+              console.error("[mock_start_count] record failed", error);
+            }
           }
         }
+      }
+    }
+
+    // After funnel + observation count so Telegram can show “Nth start since …”
+    if (event.name === "mock_started") {
+      const mockSlug = parseMockSlugFromSource(event.source);
+      const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;
+
+      try {
+        const sent = await notifyMockStarted(event, mock, mockStartObservation);
+
+        if (!sent) {
+          console.warn("[telegram_notify] mock started alert not sent", {
+            deckSlug: event.deckSlug,
+            source: event.source,
+          });
+        }
+      } catch (error) {
+        console.error("[telegram_notify] mock started alert failed", error);
       }
     }
 

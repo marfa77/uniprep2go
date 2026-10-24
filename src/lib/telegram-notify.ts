@@ -1,7 +1,9 @@
 import type { FunnelEvent } from "./analytics";
 import type { AvailableDeck, CatalogAvailableDeck } from "./decks";
 import { formatDeckPriceLabel } from "./checkout-pricing";
+import type { MockStartObservation } from "./mock-exams/mock-start-count-store";
 import {
+  formatMockStartOrdinal,
   mockSessionModeLabel,
   parseMockSessionModeFromSource,
 } from "./mock-exams/session-mode";
@@ -93,14 +95,18 @@ export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck 
   ].join("\n");
 }
 
-export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) {
+export function toMockStartedMessage(
+  event: FunnelEvent,
+  mock?: MockExamConfig,
+  observation?: MockStartObservation | null,
+) {
   const mockTitle = mock?.title ?? event.source?.replace(/^mock:/, "") ?? "unknown mock";
   const mockSlug = mock?.slug ?? event.source?.match(/^mock:([^:]+)/)?.[1] ?? "unknown";
   const linkedDeck = mock?.linkedDeckSlug ?? event.deckSlug;
   const mode = parseMockSessionModeFromSource(event.source);
   const modeLabel = mode ? mockSessionModeLabel(mode) : "unknown";
 
-  return [
+  const lines = [
     `UniPrep2Go mock started · ${modeLabel}`,
     "",
     `Mock: ${mockTitle}`,
@@ -108,6 +114,16 @@ export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) 
     `Mode: ${modeLabel}`,
     `Access: ${mockStartAccessLabel(event.source)}`,
     `Linked deck: ${linkedDeck}`,
+  ];
+
+  if (observation && observation.n >= 1) {
+    const sinceDay = observation.since.slice(0, 10);
+    lines.push(
+      `Start #: ${formatMockStartOrdinal(observation.n)} for this mock (since ${sinceDay})`,
+    );
+  }
+
+  lines.push(
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
     `Country: ${event.country ?? "n/a"}`,
@@ -119,7 +135,9 @@ export function toMockStartedMessage(event: FunnelEvent, mock?: MockExamConfig) 
     `IP: ${event.clientIp ?? "n/a"}`,
     `User agent: ${event.userAgent ?? "n/a"}`,
     `Time: ${event.occurredAt}`,
-  ].join("\n");
+  );
+
+  return lines.join("\n");
 }
 
 export async function notifyCheckoutClick(
@@ -136,7 +154,11 @@ export async function notifyCheckoutClick(
   return sendTelegramMessage(chatId, toCheckoutClickMessage(event, deck));
 }
 
-export async function notifyMockStarted(event: FunnelEvent, mock?: MockExamConfig) {
+export async function notifyMockStarted(
+  event: FunnelEvent,
+  mock?: MockExamConfig,
+  observation?: MockStartObservation | null,
+) {
   const chatId = await getTelegramNotifyChatId();
 
   if (!chatId) {
@@ -144,7 +166,7 @@ export async function notifyMockStarted(event: FunnelEvent, mock?: MockExamConfi
     return false;
   }
 
-  return sendTelegramMessage(chatId, toMockStartedMessage(event, mock));
+  return sendTelegramMessage(chatId, toMockStartedMessage(event, mock, observation));
 }
 
 export function toDeckWaitlistMessage(

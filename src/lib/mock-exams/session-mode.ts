@@ -70,6 +70,33 @@ export function countMockStartsByMode(bySource: Record<string, number>) {
   return { exam, learn, total: exam + learn };
 }
 
+/** All `:start` events for one mock slug (exam + learn + free/paid suffixes). */
+export function countMockStartsForSlug(
+  bySource: Record<string, number>,
+  slug: string,
+): number {
+  if (!slug) return 0;
+  const prefix = `mock:${slug}:start`;
+  let total = 0;
+  for (const [source, count] of Object.entries(bySource)) {
+    if (source === prefix || source.startsWith(`${prefix}:`)) {
+      total += count;
+    }
+  }
+  return total;
+}
+
+export function formatMockStartOrdinal(n: number): string {
+  const abs = Math.abs(n);
+  const mod100 = abs % 100;
+  const mod10 = abs % 10;
+  if (mod100 >= 11 && mod100 <= 13) return `${n}th`;
+  if (mod10 === 1) return `${n}st`;
+  if (mod10 === 2) return `${n}nd`;
+  if (mod10 === 3) return `${n}rd`;
+  return `${n}th`;
+}
+
 /**
  * After reveal in Learn mode, classify an option for green/red styling.
  * Locked answers cannot change — caller must not call select again when revealed.

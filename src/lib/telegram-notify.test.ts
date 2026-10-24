@@ -94,6 +94,23 @@ describe("telegram mock alerts", () => {
     expect(message).toContain("Linked deck: series-7-anki-deck");
     expect(message).toContain("Referrer: https://google.com/search?q=series+7+mock");
     expect(message).toContain("IP: 203.0.113.42");
+    expect(message).not.toContain("Start #:");
+  });
+
+  it("includes observation start ordinal when provided", () => {
+    const mock = getMockExamConfig("series-7-readiness-check");
+    const message = toMockStartedMessage(
+      createFunnelEvent({
+        name: "mock_started",
+        deckSlug: "series-7-anki-deck",
+        source: "mock:series-7-readiness-check:start:exam:free",
+      }),
+      mock,
+      { n: 3, since: "2026-09-01T12:00:00.000Z" },
+    );
+
+    expect(message).toContain("Start #: 3rd for this mock (since 2026-09-01)");
+    expect(message).toContain("Access: free first mock");
   });
 
   it("labels Learn mode starts distinctly", () => {
