@@ -795,11 +795,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Looking for Series 7 flashcards after the SIE? Start with the 60-question timed readiness check (free 25-question version), then drill only weak job functions in this 300-card deck before the 125-question sit — not a Series 63 state-law pack.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Flashcards 2026 | 250 Cards + Free Mock",
-    headline: "Series 63 Flashcards — 250 NASAA Cards + 60Q Mock (25Q Free)",
+    title: "Series 63 Flashcards 2026 — 250 NASAA Cards + Free Mock",
+    headline: "Series 63 Flashcards — 250 NASAA Cards + Free Timed Mock",
     studyLabel: "Series 63 flashcards",
     description:
-      "Series 63 flashcards for NASAA state law: 250 Anki cards (registration, ethics, communications) plus a 60-question timed practice test (free 25-question version) with topic readiness scoring. Independent prep, not NASAA material.",
+      "Series 63 flashcards for NASAA Uniform Securities Act: 250 Anki cards weighted to ethics, communications, agents, and BDs — plus a free 25-question diagnostic and full 60Q timed mock with topic readiness scoring. $19 .apkg. Not NASAA material.",
     keywords: [
       "series 63 flashcards",
       "series 63 anki",
@@ -809,7 +809,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "uniform securities act flashcards",
     ],
     intro:
-      "Looking for Series 63 flashcards after SIE/Series 7? Start with the 60-question timed readiness check (free 25-question version), then drill only the weak state-law topics in this 250-card deck before the state sit.",
+      "Searching Series 63 flashcards after SIE or Series 7? Take the free 25-question diagnostic first, then drill only the weak NASAA topics in this 250-card Anki before the 60-scored-question state sit — not a Series 7 Top-Off dump.",
   },
   "series-65-anki-deck": {
     title: "Series 65 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
@@ -837,11 +837,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Food-service managers need TCS temperature and HACCP recall under the clock — use the 90-question timed mock (free 25-question version), then drill weak domains in the $9.99 / 300-card Anki (PDF guide sold separately).",
   },
   "ptcb-pharmacy-technician-anki-deck": {
-    title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $11",
+    title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $19",
     headline: "PTCB Anki Deck — 300 PTCE Flashcards + Free Practice Test",
     studyLabel: "PTCB / PTCE exam prep",
     description:
-      "PTCB Anki deck for the 2026 PTCE: 300 flashcards on drugs, law, DSCSA, safety, sigs and days-supply math. $11 one-time + 90-question mock (free 25-question version).",
+      "PTCB Anki deck for the 2026 PTCE: 300 flashcards on drugs, law, DSCSA, safety, sigs and days-supply math. $19 one-time + 90-question mock (free 25-question version).",
     keywords: [
       "ptcb exam prep",
       "ptcb anki deck",
@@ -853,11 +853,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US pharmacy technician candidates take the 90-question PTCB mock (free 25-question version) first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "PTCB Study Guide PDF 2026 — PTCE Outline, $14",
-    headline: "PTCB Outline & Blueprint 2026 — Printable Study Guide + Free Mock",
-    studyLabel: "PTCB / PTCE exam prep",
+    title: "PTCB Outline 2026 Study Guide PDF — Blueprint + 80Q Exam, $14",
+    headline: "PTCB Outline 2026 — Printable Blueprint Guide + Free Timed Mock",
+    studyLabel: "PTCB outline 2026",
     description:
-      "PTCB outline 2026 study guide PDF: January PTCE blueprint weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%), 80Q practice exam, cheat sheets — plus 90-question timed mock (free 25-question version). Not official PTCB material.",
+      "PTCB outline 2026 study guide: January PTCE blueprint weights (Medications 35%, Federal 18.75% with DSCSA, Patient Safety 23.75%, Order Entry 22.5%), 80-question practice exam, cheat sheets — plus UniPrep’s 90Q timed mock (free 25Q). $14 PDF. Not official PTCB material.",
     keywords: [
       "ptcb outline 2026",
       "ptcb blueprint 2026",
@@ -868,7 +868,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "ptcb cheat sheet",
     ],
     intro:
-      "Need the January 2026 PTCE outline in one printable pack? This blueprint guide maps domain weights (including DSCSA in Federal Requirements), drops removed compounding topics, and pairs with UniPrep2Go’s 90-question timed mock (free 25-question version) plus the separate 300-card Anki deck for weak-topic repair.",
+      "Looking up the PTCB outline 2026? This printable blueprint maps January domain weights (DSCSA in Federal Requirements; compounding/alligation gone), adds an 80-question exam and cheat sheets, then points you to the free 25-question online diagnostic before you buy Anki or the $24 Pass Pack.",
   },
   "california-real-estate-exam-anki-deck": {
     title: "CA Real Estate Salesperson Anki | 250 DRE Cards + Free Mock",
@@ -1326,10 +1326,10 @@ export function buildDeckSearchFaqs(deck: SeoDeck) {
     faqs.push({
       question: "Where does the free PTCB mock fit with this outline guide?",
       answer:
-        "Take the 90-question PTCB mock (free 25-question version) at /mock-exams/ptcb-pharmacy-technician-mock for timed domain readiness scoring first. The PDF’s 80-question exam and the separate 300-card Anki deck are for outline reading and weak-topic remediation — Anki is sold separately.",
+        "Take the free 25-question PTCB diagnostic (or full 90Q on Mock Pass) at /mock-exams/ptcb-pharmacy-technician-mock for timed domain readiness first. This PDF’s 80-question exam is for outline reading; the separate 300-card Anki (or $24 Pass Pack with both) is for weak-topic remediation.",
     });
     faqs.push({
-      question: "What is the January 2026 PTCB / PTCE outline?",
+      question: "What is the PTCB outline 2026 / January PTCE blueprint?",
       answer:
         "Medications 35%, Federal Requirements 18.75% (DSCSA included), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — compounding and alligation removed. This printable guide maps those blueprint weights chapter by chapter.",
     });

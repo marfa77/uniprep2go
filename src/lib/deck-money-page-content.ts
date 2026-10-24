@@ -57,7 +57,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nha-cpct-anki-deck":
     "240 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a 120-question / 120-minute readiness check (free 25-question version) drawn from the same 240-item bank. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
-    "January 2026 PTCE outline/blueprint PDF — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + 90Q online mock (free 25-question version).",
+    "PTCB outline 2026 printable blueprint — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 25Q / full 90Q online mock; Anki alone or $24 Pass Pack.",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a 50-question QS competency mock (free 25-question version).",
   "mrics-anki-deck":
@@ -81,7 +81,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "california-real-estate-exam-anki-deck":
     "250 California DRE-only cards + 60Q timed mock (free 25-question version) — not a national Quizlet pack; official DRE salesperson exam is 150Q / 3 hours / 70%.",
   "series-63-anki-deck":
-    "$11 Series 63 flashcards (250 NASAA cards) + 60Q timed mock (free 25-question version) — state-law repair after SIE/7; not official NASAA material.",
+    "$19 Series 63 flashcards (250 NASAA cards) + free 25Q diagnostic / full 60Q timed mock — state-law repair after SIE/7; not official NASAA material.",
   "dele-a2-ccse-spanish-citizenship-bundle":
     "$29 / 2,463 cards in two .apkg files: 2,120 DELE A2 vocab cards with audio + 343 CCSE civics cards. 60Q CCSE diagnostic (free 25-question version) — official CCSE is 25Q / 45 min / 60%.",
   "citizenship-naturalization-anki-bundle":

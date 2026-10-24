@@ -13,6 +13,8 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-10-24 | (all paywalled mocks) | — | Telegram + modal | — | `mock_paywall_view` → DM on Start→wall; Mock Pass modal (not inline) | Funnel: start intent after free used |
+| 2026-10-24 | — | `series-63-anki-deck` · `ptcb-study-guide-2026` | Layer B copy | — | Title/meta/intro/FAQ + money blurbs; S63 $19 honesty; PTCB outline 2026 + Pass Pack CTA | Wedges: `series 63 flashcards`, `ptcb outline 2026` |
 | 2026-10-23 | — | `ielts-toefl-english-for-russian-speakers-anki-deck` | apkg media 0 miss; Whisper hit/offer/face = EN | AnkiWeb feedback 2026-10-16: missing img/audio UX + wrong-lang claim | FULL `…_FULL_261023-1231.apkg` → Gumroad assets-only; LITE same 75 picks + `{{Audio}}` on front; AnkiWeb desc updated; listing Sample still 150 (share-limit) | Root cause: front template omitted Audio (sound only on back). Wrong-lang clips not in current media |
 | 2026-10-23 | `cda-childcare-readiness-check` | `cda-childcare-anki-deck` (planned) | audit 0 FAIL · 120 · keys 31/31/31/27 · validate:wave-deck READY | 4 writers 016–030 + inherit review (~28 patches; choking stem P0) | `Cda_Childcare_FULL_120.apkg` rebuilt; specs 120; no Gumroad | Session 60 from 120; official honesty + 120-bank copy |
 | 2026-10-23 | `medical-billing-specialist-readiness-check` | `medical-billing-specialist-anki-deck` (planned) | audit 0 FAIL · 120 · keys 31/31/31/27 · validate READY | Thin-notes@60 then expand; inherit review claims/coding/payers/compliance | `Medical_Billing_Specialist_FULL_120.apkg`; specs 120; NHA/CBCS honesty fixed in configs | Not NHA CBCS / AAPC / AHIMA |

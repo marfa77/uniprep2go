@@ -11,6 +11,7 @@ import { parseMockSlugFromSource } from "@/lib/mock-exams/session-mode";
 import {
   notifyCheckoutClick,
   notifyMockPassCheckoutClick,
+  notifyMockPassPaywallView,
   notifyMockPassRedeem,
   notifyMockStarted,
 } from "@/lib/telegram-notify";
@@ -91,15 +92,21 @@ export async function POST(request: Request) {
       }
     }
 
-    if (event.name === "mock_pass_checkout_click" || event.name === "mock_pass_redeem_success") {
-      const mockSlug = event.source?.match(/^mock:([^:]+)/)?.[1];
+    if (
+      event.name === "mock_paywall_view" ||
+      event.name === "mock_pass_checkout_click" ||
+      event.name === "mock_pass_redeem_success"
+    ) {
+      const mockSlug = event.source?.match(/^mock(?:_result)?:([^:]+)/)?.[1];
       const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;
 
       try {
         const sent =
-          event.name === "mock_pass_checkout_click"
-            ? await notifyMockPassCheckoutClick(event, mock)
-            : await notifyMockPassRedeem(event, mock);
+          event.name === "mock_paywall_view"
+            ? await notifyMockPassPaywallView(event, mock)
+            : event.name === "mock_pass_checkout_click"
+              ? await notifyMockPassCheckoutClick(event, mock)
+              : await notifyMockPassRedeem(event, mock);
         if (!sent) {
           console.warn("[telegram_notify] mock pass alert not sent", {
             name: event.name,

@@ -218,7 +218,8 @@ export async function notifyMockInterest(event: FunnelEvent, mock?: MockExamConf
 }
 
 function mockSlugFromSource(source?: string) {
-  return source?.match(/^mock:([^:]+)/)?.[1];
+  // Landing/modal: mock:{slug}:… · result upsell: mock_result:{slug}:…
+  return source?.match(/^mock(?:_result)?:([^:]+)/)?.[1];
 }
 
 export function mockStartAccessLabel(source?: string) {
@@ -228,6 +229,36 @@ export function mockStartAccessLabel(source?: string) {
   return "open (paywall off)";
 }
 
+function paywallPlacementLabel(placement: string | undefined) {
+  if (placement === "retake") return "results → retake";
+  if (placement === "landing") return "mock landing → Start";
+  return placement ?? "n/a";
+}
+
+/** Start clicked with free diagnostic / Mock Pass exhausted — modal open, not yet Gumroad. */
+export function toMockPassPaywallViewMessage(event: FunnelEvent, mock?: MockExamConfig) {
+  const placement = event.source?.match(/:paywall:([a-z]+)/)?.[1];
+  const reason = event.source?.includes(":exhausted")
+    ? "Mock Pass attempts spent"
+    : "free diagnostic used";
+  return [
+    "🧱 UniPrep2Go Mock Pass — Start hit paywall",
+    "",
+    `Mock: ${mock?.title ?? "n/a"}`,
+    `Mock slug: ${mock?.slug ?? mockSlugFromSource(event.source) ?? "n/a"}`,
+    `Where: ${paywallPlacementLabel(placement)}`,
+    `Why: ${reason}`,
+    `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
+    `Country: ${event.country ?? "n/a"}`,
+    `Region: ${event.region ?? "n/a"}`,
+    `City: ${event.city ?? "n/a"}`,
+    `Browser language: ${event.browserLanguage ?? event.acceptLanguage ?? "n/a"}`,
+    `Referrer: ${event.referrer ?? "direct"}`,
+    `Visitor: ${event.visitorId ?? "n/a"}`,
+    `Time: ${event.occurredAt}`,
+  ].join("\n");
+}
+
 export function toMockPassCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {
   const placement = event.source?.match(/:pass:checkout:([a-z]+)/)?.[1] ?? "n/a";
   return [
@@ -235,7 +266,7 @@ export function toMockPassCheckoutClickMessage(event: FunnelEvent, mock?: MockEx
     "",
     `Mock: ${mock?.title ?? "n/a"}`,
     `Mock slug: ${mock?.slug ?? mockSlugFromSource(event.source) ?? "n/a"}`,
-    `Paywall: ${placement === "retake" ? "results → retake" : placement === "landing" ? "mock landing" : placement}`,
+    `Paywall: ${paywallPlacementLabel(placement === "n/a" ? undefined : placement)}`,
     `Linked deck: ${mock?.linkedDeckSlug ?? event.deckSlug}`,
     `Destination: ${event.destinationUrl ?? "n/a"}`,
     `Country: ${event.country ?? "n/a"}`,
@@ -271,6 +302,10 @@ async function notify(text: string) {
     return false;
   }
   return sendTelegramMessage(chatId, text);
+}
+
+export async function notifyMockPassPaywallView(event: FunnelEvent, mock?: MockExamConfig) {
+  return notify(toMockPassPaywallViewMessage(event, mock));
 }
 
 export async function notifyMockPassCheckoutClick(event: FunnelEvent, mock?: MockExamConfig) {

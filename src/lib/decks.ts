@@ -966,8 +966,8 @@ const rawDecks: Deck[] = [
     subtitle:
       "Series 63 flashcards: 250 NASAA Anki cards + 60-question timed practice test (free 25-question version) — registration, ethics, communications.",
     directAnswer:
-      "UniPrep2Go sells Series 63 flashcards as a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a 60-question timed Series 63 practice test (free 25-question diagnostic, no signup) in NASAA's exact scored area mix, with topic readiness scoring. The official exam is 65 questions (60 scored + 5 pretest) in 75 minutes; passing is 43 of 60 scored. Card counts follow NASAA's weights (ethics 63, communications 50, agents 33, broker-dealers 30, remedies 28), and every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
-    lastUpdated: "2026-10-02",
+      "Series 63 flashcards from UniPrep2Go: a 250-card Anki deck for NASAA state securities law — broker-dealer regulation, agent registration, ethics, customer communications, securities exemptions, investment adviser basics, and remedies — plus a free 25-question diagnostic and full 60-question timed Series 63 practice test in NASAA's exact scored area mix, with topic readiness scoring. The official exam is 65 questions (60 scored + 5 pretest) in 75 minutes; passing is 43 of 60 scored. Card counts follow NASAA's weights (ethics 63, communications 50, agents 33, broker-dealers 30, remedies 28), and every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official NASAA or FINRA material.",
+    lastUpdated: "2026-10-24",
     audience:
       "Series 63 candidates searching for flashcards, new broker-dealer agents, and SIE/Series 7 passers who need state registration via spaced repetition plus a free timed mock.",
     format: ".apkg",
@@ -1022,7 +1022,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Series 63 practice test with these flashcards?",
         answer:
-          "Yes. Take the 60-question timed Series 63 readiness check on UniPrep2Go — your first mock is free, no signup — for a topic readiness report, then drill only the weak flashcard topics in this deck between sittings.",
+          "Yes. Start with the free 25-question Series 63 diagnostic (no signup), then unlock the full 60-question timed readiness check via Mock Pass for a topic report — drill only the weak flashcard topics in this deck between sittings.",
       },
       {
         question: "Who is this deck for?",
@@ -4669,10 +4669,10 @@ const rawDecks: Deck[] = [
     subtitle:
       "January 2026 PTCE outline/blueprint PDF — domain chapters, 80-question exam, cheat sheets; pairs with 90Q online mock (free 25-question version) + Anki.",
     directAnswer:
-      "The independent PTCB / PTCE outline study guide for 2026 on UniPrep2Go is a 30-page printable pack aligned to the January 2026 PTCE blueprint: Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Cluster with UniPrep2Go’s 90-question timed online mock (free 25-question version) for readiness scoring and a separate 300-card Anki deck for weak-topic repair (sold separately). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
-    lastUpdated: "2026-09-24",
+      "PTCB outline 2026 study guide on UniPrep2Go: a 30-page printable pack mapped to the January 2026 PTCE blueprint — Medications 35%, Federal Requirements 18.75% (with DSCSA), Patient Safety & QA 23.75%, Order Entry & Processing 22.5% — plus an 80-question practice exam with domain-scored answer key, three cheat sheets (60 drugs, 45 sig codes, math), and a 4-week plan. Pair with the free 25-question online diagnostic / full 90Q timed mock for readiness scoring, or get Anki + this PDF together in the PTCB 2026 Pass Pack ($24). Not a free blog outline that still teaches removed compounding topics. Delivered for {PRICE} through Gumroad. Independent — not official PTCB, NHA, FDA, or DEA material.",
+    lastUpdated: "2026-10-24",
     audience:
-      "PTCE candidates who need the January 2026 outline in one structured printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, then pair with the free timed mock and optional Anki drills.",
+      "PTCE candidates searching for the PTCB outline 2026 / blueprint in one printable document — read domain chapters, take the 80-question practice exam, print cheat sheets, then pair with the free timed mock and optional Anki or Pass Pack.",
     format: "PDF",
     coverImage: "/covers/ptcb-study-guide-2026.webp",
     checkoutUrl: "https://pixidstudio.gumroad.com/l/ptcb-study-guide-2026?wanted=true",

@@ -6,6 +6,7 @@ import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
 const notifyCheckoutClick = vi.fn(async () => true);
 const notifyMockStarted = vi.fn(async () => true);
 const notifyMockPassCheckoutClick = vi.fn(async () => true);
+const notifyMockPassPaywallView = vi.fn(async () => true);
 const notifyMockPassRedeem = vi.fn(async () => true);
 const recordFunnelEvent = vi.fn(async () => undefined);
 const pricedDeck = {
@@ -20,6 +21,7 @@ vi.mock("@/lib/telegram-notify", () => ({
   notifyCheckoutClick,
   notifyMockStarted,
   notifyMockPassCheckoutClick,
+  notifyMockPassPaywallView,
   notifyMockPassRedeem,
 }));
 vi.mock("@/lib/funnel-store", () => ({ recordFunnelEvent }));
@@ -39,6 +41,7 @@ describe("POST /api/events", () => {
     notifyCheckoutClick.mockClear();
     notifyMockStarted.mockClear();
     notifyMockPassCheckoutClick.mockClear();
+    notifyMockPassPaywallView.mockClear();
     notifyMockPassRedeem.mockClear();
     recordFunnelEvent.mockClear();
   });
@@ -77,6 +80,25 @@ describe("POST /api/events", () => {
     expect(human.status).toBe(204);
     expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
     expect(notifyMockStarted).toHaveBeenCalledTimes(1);
+  });
+
+  it("sends a Telegram DM when Start opens the Mock Pass modal", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const response = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", "x-vercel-ip-country": "US" },
+        body: JSON.stringify({
+          name: "mock_paywall_view",
+          deckSlug: "series-63-anki-deck",
+          source: "mock:series-63-readiness-check:paywall:landing:free_used",
+        }),
+      }),
+    );
+
+    expect(response.status).toBe(204);
+    expect(notifyMockPassPaywallView).toHaveBeenCalledTimes(1);
+    expect(notifyMockPassCheckoutClick).not.toHaveBeenCalled();
   });
 
   it("sends a Telegram DM when a visitor clicks Mock Pass checkout", async () => {

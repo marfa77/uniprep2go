@@ -8,6 +8,7 @@ import {
   toDeckWaitlistMessage,
   toMockInterestMessage,
   toMockPassCheckoutClickMessage,
+  toMockPassPaywallViewMessage,
   toMockPassRedeemMessage,
   toMockStartedMessage,
 } from "./telegram-notify";
@@ -153,6 +154,23 @@ describe("telegram waitlist and mock interest alerts", () => {
 });
 
 describe("telegram mock pass alerts", () => {
+  it("formats Start → paywall modal opens (free used)", () => {
+    const mock = getMockExamConfig("ptcb-pharmacy-technician-mock");
+    const text = toMockPassPaywallViewMessage(
+      createFunnelEvent({
+        name: "mock_paywall_view",
+        deckSlug: "ptcb-pharmacy-technician-anki-deck",
+        source: "mock:ptcb-pharmacy-technician-mock:paywall:landing:free_used",
+        country: "US",
+      }),
+      mock,
+    );
+    expect(text).toContain("Start hit paywall");
+    expect(text).toContain("Mock slug: ptcb-pharmacy-technician-mock");
+    expect(text).toContain("Where: mock landing → Start");
+    expect(text).toContain("Why: free diagnostic used");
+  });
+
   it("formats the Mock Pass pay click with mock, placement and geo", () => {
     const mock = getMockExamConfig("series-63-readiness-check");
     const text = toMockPassCheckoutClickMessage(
@@ -169,6 +187,20 @@ describe("telegram mock pass alerts", () => {
     expect(text).toContain("Mock slug: series-63-readiness-check");
     expect(text).toContain("Paywall: results → retake");
     expect(text).toContain("Country: US");
+  });
+
+  it("resolves mock slug from mock_result checkout sources", () => {
+    const mock = getMockExamConfig("series-63-readiness-check");
+    const text = toMockPassCheckoutClickMessage(
+      createFunnelEvent({
+        name: "mock_pass_checkout_click",
+        deckSlug: "series-63-anki-deck",
+        source: "mock_result:series-63-readiness-check:upsell:mock_pass",
+        country: "DE",
+      }),
+      mock,
+    );
+    expect(text).toContain("Mock slug: series-63-readiness-check");
   });
 
   it("formats unlocks and tags free vs paid starts", () => {
