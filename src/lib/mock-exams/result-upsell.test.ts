@@ -75,9 +75,14 @@ describe("result upsell", () => {
     );
     expect(upsell.reality).toBe("But 25 questions are a sample, not your exam. Official PTCE pass mark: 1,400 scaled score on 90 questions.");
     expect(upsell.misses).toBe("Your biggest gaps: Medications, Federal requirements.");
-    expect(upsell.close).toBe("Next step: keep these topics fresh with 300 spaced-repetition flashcards for $11 so the score holds on exam day.");
+    expect(upsell.close).toBe(
+      "Next step: keep these topics fresh with 300 spaced-repetition flashcards for $11 so the score holds on exam day — and confirm on the full 90-question mock.",
+    );
     expect(upsell.deckCtaLabel).toBe("Lock it in: 300 cards — $11");
+    expect(upsell.packCtaLabel).toBeNull();
     expect(upsell.mockCtaLabel).toBe("Confirm on the full 90-question mock · $5 for 5 attempts");
+    expect(upsell.mockPathEyebrow).toBe("Confirm the score");
+    expect(upsell.studyPathEyebrow).toBe("Fix weak topics");
   });
 
   it("keeps a below-target free diagnostic amber and points at the full mock", () => {
@@ -93,8 +98,41 @@ describe("result upsell", () => {
     });
     expect(upsell.tone).toBe("risk");
     expect(upsell.misses).toBe("Your biggest gaps: Federal requirements, Medications.");
-    expect(upsell.close).toBe("Next step: drill these exact topics with 300 spaced-repetition flashcards for $11.");
+    expect(upsell.close).toBe(
+      "Next step: drill these exact topics with 300 spaced-repetition flashcards for $11, then confirm on the full 90-question mock.",
+    );
     expect(upsell.mockCtaLabel).toBe("Take the full 90-question mock · $5 for 5 attempts");
+  });
+
+  it("prefers the Pass Pack as the study path when both Anki and pack are on sale", () => {
+    const topicResults = [topic("Medications", 4)];
+    const upsell = buildResultUpsell({
+      report: {
+        verdict: "NO PASS",
+        scorePercent: 40,
+        passThresholdPercent: 70,
+        totalCount: 25,
+        topicResults,
+        repairPlan: plan(topicResults),
+      },
+      isFreeDiagnostic: true,
+      fullQuestionCount: 90,
+      examBody: "PTCB",
+      deck: { available: true, cardCount: 300, priceLabel: "$19" },
+      pack: {
+        available: true,
+        shortName: "PTCB 2026 Pass Pack",
+        priceLabel: "$24",
+        savingsNote: "save vs $33 separate",
+      },
+      passRemaining: 0,
+      paywallEnabled: true,
+    });
+    expect(upsell.packCtaLabel).toBe("Fix gaps: PTCB 2026 Pass Pack — $24");
+    expect(upsell.deckCtaLabel).toBe("Drill weak topics: 300 cards — $19");
+    expect(upsell.studyPathEyebrow).toBe("Anki + PDF pack");
+    expect(upsell.close).toContain("PTCB 2026 Pass Pack for $24 (save vs $33 separate)");
+    expect(upsell.close).toContain("full 90-question mock");
   });
 
   it("falls back to the exam body and Mock Pass when no deck is on sale", () => {
@@ -133,7 +171,7 @@ describe("result upsell", () => {
       paywallEnabled: true,
     });
     expect(upsell.close).toBe(
-      "Next step: drill these exact topics with 300 spaced-repetition flashcards for $8.80 (20% off after your diagnostic).",
+      "Next step: drill these exact topics with 300 spaced-repetition flashcards for $8.80 (20% off after your diagnostic), then confirm on the full 90-question mock.",
     );
     expect(upsell.deckCtaLabel).toBe("Drill weak topics: 300 cards — $8.80");
     expect(upsell.deckCtaFullPrice).toBe("$11");

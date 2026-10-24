@@ -527,11 +527,23 @@ describe("deck catalog", () => {
     );
   });
 
-  it("shows only explicit PTCB peers on the study guide page", () => {
+  it("shows PTCB peers including the 2026 pass pack on the study guide page", () => {
     const guide = getCatalogDeckBySlug("ptcb-study-guide-2026");
     expect(guide).toBeDefined();
     const related = getRelatedDecks(guide!);
-    expect(related.map((deck) => deck.slug)).toEqual(["ptcb-pharmacy-technician-anki-deck"]);
+    expect(related.map((deck) => deck.slug)).toEqual([
+      "ptcb-pharmacy-technician-anki-deck",
+      "ptcb-2026-pass-pack",
+    ]);
+  });
+
+  it("exposes CFA L1 and PTCB pass packs at bundle list prices", () => {
+    const cfaPack = getCatalogDeckBySlug("cfa-level-1-pass-pack");
+    const ptcbPack = getCatalogDeckBySlug("ptcb-2026-pass-pack");
+    expect(cfaPack?.status).toBe("available");
+    expect(ptcbPack?.status).toBe("available");
+    expect(cfaPack?.checkoutUrl).toContain("cfa-level-1-pass-pack");
+    expect(ptcbPack?.checkoutUrl).toContain("ptcb-2026-pass-pack");
   });
 
   it("uses three real sample previews for the IB Biology SL deck", () => {
@@ -556,6 +568,7 @@ describe("deck catalog", () => {
       "cfa-level-1-anki-deck": "CFA Level 1 Anki Deck — 348 Smart Flashcards",
       "cfa-level-1-formula-reference-2026":
         "CFA Level 1 Formula Reference 2026 — 221 Formulas + 22 Standards + 80-Question Drill (PDF)",
+      "cfa-level-1-pass-pack": "CFA Level 1 Pass Pack 2026 — 348 Anki + Formula PDF",
       "cfa-level-2-anki-deck": "CFA Level 2 Anki Deck — 495 Flashcards",
       "cfa-level-2-formula-reference-2026":
         "CFA Level 2 Formula Reference 2026 — 281 Formulas + 22 Standards + 80-Question Drill (PDF)",
@@ -586,6 +599,7 @@ describe("deck catalog", () => {
       "servsafe-manager-anki-deck": "ServSafe Manager Anki Deck — 300 Food Safety Flashcards",
       "servsafe-manager-complete-study-guide":
         "ServSafe Manager Complete Study Guide — PDF + 70 Practice Questions",
+      "ptcb-2026-pass-pack": "PTCB 2026 Pass Pack — 300 Anki + Outline Study Guide PDF",
       "ptcb-pharmacy-technician-anki-deck":
         "PTCB Pharmacy Technician Anki Deck — 300 High-Yield Flashcards",
       "ptcb-study-guide-2026":

@@ -679,11 +679,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
-    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $9.99 | UniPrep2Go",
+    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $19 | UniPrep2Go",
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $9.99 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
+      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $19 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
@@ -733,7 +733,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best CFA Level 1 Formula Sheet PDF 2026 — 221 Formulas + 80Q Drill",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "Best CFA Level 1 formula sheet PDF for 2026: 221 typeset formulas with exam traps, all 22 Standards, 80-question recall drill, 48 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($9.99) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
+      "Best CFA Level 1 formula sheet PDF for 2026: 221 typeset formulas with exam traps, all 22 Standards, 80-question recall drill, 48 print pages — not a free one-page cheat sheet. Pairs with 348-card Anki ($19) and 60Q mock (free 25-question version). Not CFA Institute curriculum.",
     keywords: [
       "best cfa level 1 formula sheet",
       "cfa level 1 formula sheet pdf",
@@ -834,7 +834,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "food safety manager study guide",
     ],
     intro:
-      "Food-service managers need TCS temperature and HACCP recall under the clock — use the 90-question timed mock (free 25-question version), then drill weak domains in the $19 / 300-card Anki (PDF guide sold separately).",
+      "Food-service managers need TCS temperature and HACCP recall under the clock — use the 90-question timed mock (free 25-question version), then drill weak domains in the $9.99 / 300-card Anki (PDF guide sold separately).",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $11",
@@ -853,7 +853,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "US pharmacy technician candidates take the 90-question PTCB mock (free 25-question version) first for a topic readiness report, then fix only weak domains with daily flashcards. Pair with the 2026 printable study guide for domain chapters and an additional 80-question PDF practice exam.",
   },
   "ptcb-study-guide-2026": {
-    title: "PTCB Study Guide PDF 2026 — PTCE Outline, $19",
+    title: "PTCB Study Guide PDF 2026 — PTCE Outline, $14",
     headline: "PTCB Outline & Blueprint 2026 — Printable Study Guide + Free Mock",
     studyLabel: "PTCB / PTCE exam prep",
     description:

@@ -32,7 +32,7 @@ import { buildResultUpsell, type OfficialPassLine } from "@/lib/mock-exams/resul
 import { MockPassKeyForm, MockPassPaywall } from "./mock-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
-import { MockResultUpsell } from "./mock-result-upsell";
+import { MockResultUpsell, type PassPackCheckout } from "./mock-result-upsell";
 import type { LinkedDeckCheckout } from "./mock-report-handoff";
 import type { MockCompanionCheckout } from "./mock-companion-decks-panel";
 import { MockRunner } from "./mock-runner";
@@ -85,6 +85,11 @@ export type MockExamClientProps = {
   linkedDeckPriceLabel?: string;
   /** Result-screen-only deck discount (Gumroad offer code URL + discounted price). */
   linkedDeckOffer?: { checkoutUrl: string; priceLabel: string; percentOff: number };
+  /** Anki + PDF Pass Pack checkout when sold for this exam. */
+  packCheckout?: PassPackCheckout | null;
+  packShortName?: string;
+  packPriceLabel?: string;
+  packSavingsNote?: string;
 };
 
 function formatDuration(minutes: number) {
@@ -137,6 +142,10 @@ export function MockExamClient({
   linkedDeckCardCount,
   linkedDeckPriceLabel,
   linkedDeckOffer,
+  packCheckout = null,
+  packShortName,
+  packPriceLabel,
+  packSavingsNote,
 }: MockExamClientProps) {
   const searchParams = useSearchParams();
   const modeFromUrl = parseMockSessionMode(searchParams.get("mode"));
@@ -429,6 +438,15 @@ export function MockExamClient({
         fullPriceLabel: linkedDeckOffer ? linkedDeckPriceLabel : undefined,
         percentOff: linkedDeckOffer?.percentOff,
       },
+      pack:
+        packCheckout && packShortName
+          ? {
+              available: true,
+              shortName: packShortName,
+              priceLabel: packPriceLabel,
+              savingsNote: packSavingsNote,
+            }
+          : undefined,
       passRemaining: startDecision === "paid" ? pass.remaining : 0,
       paywallEnabled: paywallEnabled && startDecision !== "open",
     });
@@ -447,6 +465,7 @@ export function MockExamClient({
             deckSlug={config.linkedDeckSlug}
             isFreeDiagnostic={isFreeDiagnostic}
             linkedCheckout={resultCheckout}
+            packCheckout={packCheckout}
             mockPassCheckoutUrl={
               paywallEnabled && startDecision === "paywall" ? MOCK_PASS_CHECKOUT_URL : null
             }

@@ -65,6 +65,14 @@ export type ResultUpsellInput = {
   officialPass?: OfficialPassLine;
   /** priceLabel is what the buyer pays; fullPriceLabel + percentOff only when a result-screen offer code applies. */
   deck?: { cardCount?: number; priceLabel?: string; fullPriceLabel?: string; percentOff?: number; available: boolean };
+  /** Anki + PDF Pass Pack when sold for this exam — preferred study CTA over Anki alone. */
+  pack?: {
+    available: boolean;
+    shortName: string;
+    priceLabel?: string;
+    /** e.g. "vs $38 separate" */
+    savingsNote?: string;
+  };
   /** Paid attempts left on this browser's Mock Pass (0 when none). */
   passRemaining: number;
   paywallEnabled: boolean;
@@ -82,7 +90,13 @@ export type ResultUpsell = {
   /** Struck-through list price next to the discounted deck CTA. */
   deckCtaFullPrice: string | null;
   deckOfferNote: string | null;
+  /** Pass Pack primary study CTA when a bundle exists for this exam. */
+  packCtaLabel: string | null;
+  packNote: string | null;
   mockCtaLabel: string;
+  /** Free diagnostic: short labels for the dual-path cards. */
+  mockPathEyebrow: string;
+  studyPathEyebrow: string;
 };
 
 function isPassVerdict(verdict: MockReport["verdict"]) {
@@ -104,9 +118,10 @@ function gapLine(repairPlan: ResultUpsellInput["report"]["repairPlan"], fullQues
 
 /** Result-screen copy: never reassuring, always points at the weak topics and the next paid step. */
 export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
-  const { report, isFreeDiagnostic, fullQuestionCount, officialPass, deck } = input;
+  const { report, isFreeDiagnostic, fullQuestionCount, officialPass, deck, pack } = input;
   const pass = isPassVerdict(report.verdict);
   const sample = isFreeDiagnostic ? `the ${report.totalCount}-question diagnostic` : "this mock";
+  const packLive = Boolean(pack?.available);
 
   const headline = pass
     ? isFreeDiagnostic
@@ -132,15 +147,32 @@ export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
   const price = deck?.priceLabel
     ? ` for ${deck.priceLabel}${discounted ? ` (${deck.percentOff}% off after your diagnostic)` : ""}`
     : "";
-  const close = deck?.available
-    ? pass
-      ? `Next step: keep these topics fresh with ${cards}${price} so the score holds on exam day.`
-      : `Next step: drill these exact topics with ${cards}${price}.`
-    : `Next step: rerun the full ${fullQuestionCount}-question mock after a focused review of these topics.`;
+  const packPrice = pack?.priceLabel ? ` for ${pack.priceLabel}` : "";
+  const packSavings = pack?.savingsNote ? ` (${pack.savingsNote})` : "";
+
+  let close: string;
+  if (packLive) {
+    close = pass
+      ? `Two clean next steps: confirm on the full ${fullQuestionCount}-question mock, and lock the topics with the ${pack!.shortName}${packPrice}${packSavings}.`
+      : `Two clean next steps: drill the gaps with the ${pack!.shortName}${packPrice}${packSavings}, then confirm on the full ${fullQuestionCount}-question mock.`;
+  } else if (deck?.available) {
+    close = pass
+      ? `Next step: keep these topics fresh with ${cards}${price} so the score holds on exam day — and confirm on the full ${fullQuestionCount}-question mock.`
+      : `Next step: drill these exact topics with ${cards}${price}, then confirm on the full ${fullQuestionCount}-question mock.`;
+  } else {
+    close = `Next step: rerun the full ${fullQuestionCount}-question mock after a focused review of these topics.`;
+  }
 
   const deckCtaLabel = deck?.available
     ? `${pass ? "Lock it in" : "Drill weak topics"}: ${deck.cardCount ? `${deck.cardCount} cards` : "Anki deck"}${deck.priceLabel ? ` — ${deck.priceLabel}` : ""}`
     : null;
+  const packCtaLabel = packLive
+    ? `${pass ? "Lock it in" : "Fix gaps"}: ${pack!.shortName}${pack?.priceLabel ? ` — ${pack.priceLabel}` : ""}`
+    : null;
+  const packNote = packLive
+    ? `Anki + companion PDF in one checkout${pack?.savingsNote ? ` · ${pack.savingsNote}` : ""}. Anki alone stays available below.`
+    : null;
+
   const fullMockVerb = pass && isFreeDiagnostic ? "Confirm on" : "Take";
   const mockCtaLabel = !input.paywallEnabled
     ? `Retake the ${fullQuestionCount}-question mock`
@@ -158,11 +190,15 @@ export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
     misses: gapLine(report.repairPlan, fullQuestionCount),
     close,
     deckCtaLabel,
-    deckCtaFullPrice: deckCtaLabel && discounted ? deck!.fullPriceLabel! : null,
+    deckCtaFullPrice: deckCtaLabel && discounted && !packLive ? deck!.fullPriceLabel! : null,
     deckOfferNote:
-      deckCtaLabel && discounted
+      deckCtaLabel && discounted && !packLive
         ? `${deck!.percentOff}% off is applied automatically at Gumroad checkout — one-time payment, no subscription.`
         : null,
+    packCtaLabel,
+    packNote,
     mockCtaLabel,
+    mockPathEyebrow: pass && isFreeDiagnostic ? "Confirm the score" : "Full timed mock",
+    studyPathEyebrow: packLive ? "Anki + PDF pack" : deck?.available ? "Fix weak topics" : "Study next",
   };
 }

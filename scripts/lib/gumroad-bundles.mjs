@@ -3,4 +3,8 @@
  * They also have a wave spec (for the mock/landing), but their wave .apkg must never be
  * uploaded or swapped in: --replace-files would drop the paid DELE/CCSE files.
  */
-export const BUNDLE_FILE_SLUGS = new Set(["dele-a2-ccse-spanish-citizenship-bundle"]);
+export const BUNDLE_FILE_SLUGS = new Set([
+  "dele-a2-ccse-spanish-citizenship-bundle",
+  "cfa-level-1-pass-pack",
+  "ptcb-2026-pass-pack",
+]);

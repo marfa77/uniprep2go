@@ -29,9 +29,25 @@ describe("catalog-price", () => {
     );
   });
 
-  it("does not rewrite already-correct $9.99", () => {
+  it("does not rewrite already-correct $9.99 on default Gumroad SKUs", () => {
     expect(withCatalogProductPrices("Live $9.99 / 120-card Anki")).toBe(
       "Live $9.99 / 120-card Anki",
     );
+  });
+
+  it("rewrites $9.99 when the slug override is higher (money raise)", () => {
+    expect(withCatalogProductPrices("Then the $9.99 / 300-card SIE Anki", "sie-exam-anki-deck")).toBe(
+      "Then the $19 / 300-card SIE Anki",
+    );
+    expect(getCatalogListPriceUsd("ptcb-study-guide-2026")).toBe(14);
+    expect(formatCatalogListPrice("ptcb-study-guide-2026")).toBe("$14");
+  });
+
+  it("does not rewrite live money/pack prices in multi-SKU LLM blobs", () => {
+    const blob =
+      "CFA Anki $19 · Pass Pack $29 vs $38 · PTCB pack $24 vs $33 · guide $14";
+    expect(withCatalogProductPrices(blob)).toBe(blob);
+    expect(getCatalogListPriceUsd("cfa-level-1-pass-pack")).toBe(29);
+    expect(getCatalogListPriceUsd("ptcb-2026-pass-pack")).toBe(24);
   });
 });

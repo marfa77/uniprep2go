@@ -168,7 +168,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "series-7-anki-deck":
     "Series 7 flashcards on the job-function outline: suitability, options strategies, margin, municipal rules, and trade processing. Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395 — pair 15–20 cards/day with the 60Q diagnostic (free 25-question version). Ownable $9.99 .apkg vs mega no-cost 125Q banks; not Series 63 state-law flashcards.",
   "servsafe-manager-anki-deck":
-    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the 90-question mock (free 25-question version) first (75% readiness target) — it maps to the domains in the coverage table — then ownable $19 .apkg instead of a Brainscape subscription.",
+    "Temperature danger zones, HACCP steps, Big 6 pathogens, and manager responsibilities as short recall prompts. Official exam is 90Q (80 scored + 10 pilot) / 2 hours; current FAQ pass is 70% (56/80 scored). Run the 90-question mock (free 25-question version) first (75% readiness target) — it maps to the domains in the coverage table — then ownable $9.99 .apkg instead of a Brainscape subscription.",
   "gre-anki-deck":
     "Live 350-card V+Q Anki (175/175) for shorter GRE section skills — not a 1,000-word free AnkiWeb vocab dump. 30-question timed diagnostic (free 25-question version; 15 Verbal + 15 Quant, both axes required) is live; Analytical Writing stays on PowerPrep. Prefer ETS PowerPrep for adaptive format, UniPrep for a no-signup baseline.",
   "gmat-focus-anki-deck":
@@ -763,7 +763,7 @@ export const positioningOverrides: Partial<
       "300 cards: time/temperature, HACCP, hygiene, allergens, manager duties",
       "90-question / 120-minute ServSafe practice test (free 25-question version) online",
       "Honest: official 80 scored + 10 pilot; pass 70% (56/80); mock 75% readiness target",
-      "Ownable $19 .apkg + optional PDF guide — not a Brainscape subscription",
+      "Ownable $9.99 .apkg + optional PDF guide — not a Brainscape subscription",
     ],
     summaryProse:
       "No-cost 25-item teaser banks and Brainscape packs own volume. UniPrep wins when you want a full-length 90Q timed mock (free 25-question version) plus an ownable 300-card .apkg for TCS temps and HACCP repair — verify pass rules at servsafe.com.",

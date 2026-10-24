@@ -48,6 +48,8 @@ import {
 } from "@/lib/checkout-pricing";
 import { officialPassLineFromFacts } from "@/lib/mock-exams/result-upsell";
 import { applyDiagnosticOffer } from "@/lib/mock-exams/diagnostic-offer";
+import { passPackOfferForDeck } from "@/lib/mock-exams/pass-pack-for-deck";
+import type { PassPackCheckout } from "@/components/mock-exams/mock-result-upsell";
 import { freeAccessClause } from "@/lib/mock-exams/free-diagnostic";
 import {
   buildMockAiCategory,
@@ -209,6 +211,23 @@ export default async function MockExamPage({
         percentOff: diagnosticOffer.percentOff,
       }
     : undefined;
+  const packMeta = passPackOfferForDeck(config.linkedDeckSlug);
+  const pricedPassPack = packMeta ? await getPricedDeckBySlug(packMeta.packSlug) : null;
+  const packCheckout: PassPackCheckout | null =
+    pricedPassPack?.checkoutUrl
+      ? {
+          deckSlug: pricedPassPack.slug,
+          checkoutUrl: pricedPassPack.checkoutUrl,
+          ctaLabel: getDeckCheckoutCtaLabel(
+            pricedPassPack,
+            formatDeckPriceLabel(pricedPassPack),
+          ),
+        }
+      : null;
+  const packPriceLabel =
+    pricedPassPack && !pricedPassPack.pricePending && pricedPassPack.price.amount > 0
+      ? formatCheckoutPrice(pricedPassPack.price.amount)
+      : undefined;
   const companionCheckouts = await buildMockCompanionCheckouts(config, async (deckSlug) => {
     const deck = await getPricedDeckBySlug(deckSlug);
     if (!deck) return undefined;
@@ -309,6 +328,10 @@ export default async function MockExamPage({
             linkedDeckCardCount={linkedDeckCardCount}
             linkedDeckPriceLabel={linkedDeckPriceLabel}
             linkedDeckOffer={linkedDeckOffer}
+            packCheckout={packCheckout}
+            packShortName={pricedPassPack?.shortName}
+            packPriceLabel={packPriceLabel}
+            packSavingsNote={packMeta?.savingsNote}
             companionCheckouts={companionCheckouts}
             questions={questions}
             runnable={runnable}

@@ -1,7 +1,7 @@
 ---
-description: AnkiWeb LITE lead magnets — SKU gate, 40-card lock, card picking, listing tokens
-globs: docs/ankiweb-lite-playbook.md, docs/ankiweb-lite-ledger.md
-alwaysApply: false
+description: AnkiWeb LITE lead magnets — SKU gate, 40-card lock, card picking, listing tokens, Share via AnkiWeb browser
+globs: docs/ankiweb-lite-playbook.md, docs/ankiweb-lite-ledger.md, **/ankiweb_lite/**
+alwaysApply: true
 ---
 
 # AnkiWeb LITE
@@ -13,3 +13,14 @@ Read `docs/ankiweb-lite-playbook.md` before building or proposing a shared deck.
 Default size **40** unique FULL GUIDs, blueprint-weighted, human-read. **AnkiWeb samples random notes from the whole deck — every LITE card must be sample-grade.** Title starts with a **searchable token** (`PTCB`, `PTCE`, `CFA`, `NASAA`). AnkiWeb search is one token; `63` does not match. **Do not put `LITE` in the public AnkiWeb title** (hurts conversion; set 2026-10-21) — say “sample” only in the description.
 
 Do not pick “first N of the CSV.” Do not LITE a FULL that failed the card standard.
+
+## Share (agent — do not ask the user)
+
+AnkiConnect has **no** share API. After import + `sync`, the agent shares via Cursor browser:
+
+1. `deckNamesAndIds` → id of the titled LITE deck (no `LITE` in name)
+2. Open `https://ankiweb.net/decks/share/{deckId}` (logged-in AnkiWeb session)
+3. Fill Title / Tags / Support / Description from `listing.txt`; check ownership box; click Share
+4. Capture Shared ID from `/shared/info/{id}`; write `docs/ankiweb-lite-ledger.md`
+
+Full steps: playbook § **Share procedure**. Never stop at “right-click Share in Anki” while Connect + browser login are available.

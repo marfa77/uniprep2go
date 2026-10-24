@@ -36,6 +36,7 @@ AnkiWeb limit: **20 shares per rolling 7 days** (re-shares count).
 | 2026-10-13 | prep2go \| Norwegian A2 (Norskprøven) \| LITE — 75 words | 1047237601 | 75 | `/shop/deck/norwegian-norskprove-anki-deck` | New |
 | 2026-10-13 | prep2go \| Danish A2 (Prøve i Dansk 2 / 3) \| LITE — 75 words | 1156868768 | 75 | `/shop/deck/danish-prove-i-dansk-anki-deck` | New |
 | 2026-10-13 | prep2go \| English A2 for Russian Speakers (IELTS / TOEFL) | 408269889 | 75 | `/shop/deck/english-for-russian-speakers-anki-deck` | New |
+| 2026-10-23 | prep2go \| English A2 for Russian Speakers (IELTS / TOEFL) | 408269889 | 75 local / **listing still shows 150** | `/shop/deck/english-for-russian-speakers-anki-deck` | Feedback fix: Audio on front + Gumroad FULL reupload. Re-share hit AnkiWeb 20/7d limit mid-pass after a bad 150-note import; local deck cleaned to 75. **Re-share when window frees** (or Remove+Share) so Sample shows 75 |
 | 2026-10-13 | prep2go \| English A2 for Spanish Speakers (IELTS / TOEFL) | 322042136 | 75 | `/shop/deck/english-for-spanish-speakers-anki-deck` | New |
 | 2026-10-13 | prep2go \| English A2 for Ukrainian Speakers (IELTS / TOEFL) | 1000025570 | 75 | `/shop/deck/english-for-ukrainian-speakers-anki-deck` | New |
 
@@ -70,14 +71,14 @@ Used remaining quota after morning Wave-2 remainder (7 earlier today → ~13 lef
 | 2026-10-21 | CEM — Certified Energy Manager Exam Questions (40 cards) | 711893526 | 40 | `/decks/cem-anki-deck` | New |
 | 2026-10-21 | CFPS — Certified Fire Protection Specialist Exam Questions (40 cards) | 1123618605 | 40 | `/decks/cfps-anki-deck` | New |
 
-**Today’s share count:** 7 (morning) + 8 (this batch) = **15 / 20** rolling window. ~5 left.
+**Rolling share count (as of SIE 23.10):** 15 (21.10) + SIE = **16 / 20**. ~4 left until oldest fall out of the 7d window.
 
 **Skipped for now (FULL below AnkiWeb sample-grade gate — scheduled in `docs/mock-bank-qa/daily-plan.md` § AnkiWeb LITE queue):** Digital SAT → 24.10 · ServSafe Manager → 29.10 · CA RE → 02.11 · LEED → 04.11 · CFP → 05.11 · Series 65 → 06.11 · Series 66 → 12.11. Do not share SHORT stubs; thicken FULL first, then LITE 40, title without the word LITE.
 
-## 2026-10-23 — SIE LITE 40 ready (share pending)
+## 2026-10-23 — SIE LITE 40 shared
 
-FULL thickened (`sie_300_authored.csv` + backup `sie_300_authored.csv.bak-2026-10-23-thicken`): length patches + SIE-1/4 definition front rewrites. Eligible **151/300** (was 37). Built `out/ankiweb_lite/exam/sie/SIE_LITE_40.apkg` (6/18/12/4 quotas, not SHORT).
+FULL thickened (`sie_300_authored.csv` + backup `sie_300_authored.csv.bak-2026-10-23-thicken`): length patches + SIE-1/4 definition front rewrites. Eligible **151/300** (was 37). Built `out/ankiweb_lite/exam/sie/SIE_LITE_40.apkg` (6/18/12/4 quotas, not SHORT). Imported → sync → AnkiWeb Share.
 
 | Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
 |---|---|---|---:|---|---|
-| 2026-10-23 | SIE Exam — FINRA Application Deck (40 cards) | — | 40 built; listing copy ready | `/decks/sie-exam-anki-deck` | **Ready to share** — import apkg → GUID-move out of FULL → sync → AnkiWeb Share. AnkiConnect was down this pass. ~5 share slots left in 7d window from 21.10. |
+| 2026-10-23 | SIE Exam — FINRA Application Deck (40 cards) | [1857756031](https://ankiweb.net/shared/info/1857756031) | 40 | `/decks/sie-exam-anki-deck` | New |
