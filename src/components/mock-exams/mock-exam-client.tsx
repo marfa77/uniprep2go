@@ -218,7 +218,8 @@ export function MockExamClient({
       setSelectedMode(mode);
       setAttemptSeed(seed);
       setReport(null);
-      setRetakePaywallOpen(false);
+      setPaywallOpen(false);
+      setPendingStartMode(null);
       setScreen("exam");
       trackMockEvent({
         name: "mock_started",
