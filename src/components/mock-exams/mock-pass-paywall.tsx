@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import {
   MOCK_PASS_ATTEMPTS,
   MOCK_PASS_CHECKOUT_URL,
@@ -20,6 +20,8 @@ type MockPassPaywallProps = {
   /** True when this browser already redeemed a key whose attempts are spent. */
   passExhausted: boolean;
   onRedeemed: (remaining: number) => void;
+  /** Optional close control when rendered as a modal. */
+  onClose?: () => void;
 };
 
 const benefits = [
@@ -136,7 +138,9 @@ export function MockPassPaywall({
   freeAttempt,
   passExhausted,
   onRedeemed,
+  onClose,
 }: MockPassPaywallProps) {
+  const titleId = useId();
   useEffect(() => {
     trackMockEvent({
       name: "mock_paywall_view",
@@ -150,24 +154,36 @@ export function MockPassPaywall({
 
   return (
     <section
-      aria-labelledby="mock-pass-title"
+      aria-labelledby={titleId}
       className="space-y-5 rounded-2xl border border-[#1f3a5f]/20 bg-[#f7f3ea] p-4 sm:p-6"
       id="mock-pass"
     >
-      <div>
-        <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Mock Pass</p>
-        <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#18140f]" id="mock-pass-title">
-          {passExhausted
-            ? `All attempts on your Mock Pass are used`
-            : "Your free diagnostic on this browser is used"}
-        </h3>
-        <p className="mt-2 text-sm leading-6 text-[#4f493e]">
-          {passExhausted
-            ? `Get ${MOCK_PASS_ATTEMPTS} more attempts for $${MOCK_PASS_PRICE_USD} to keep practicing.`
-            : `The first attempt is a free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic — one on any exam, in either mode${
-                freeAttemptLabel ? ` (yours: ${freeAttemptLabel})` : ""
-              }. Run full-length mocks and retakes with ${MOCK_PASS_ATTEMPTS} attempts for $${MOCK_PASS_PRICE_USD}.`}
-        </p>
+      <div className="flex items-start justify-between gap-3">
+        <div>
+          <p className="font-mono text-xs uppercase tracking-[0.2em] text-[#1f3a5f]">Mock Pass</p>
+          <h3 className="mt-2 text-xl font-semibold tracking-tight text-[#18140f]" id={titleId}>
+            {passExhausted
+              ? `All attempts on your Mock Pass are used`
+              : "Your free diagnostic on this browser is used"}
+          </h3>
+          <p className="mt-2 text-sm leading-6 text-[#4f493e]">
+            {passExhausted
+              ? `Get ${MOCK_PASS_ATTEMPTS} more attempts for $${MOCK_PASS_PRICE_USD} to keep practicing.`
+              : `The first attempt is a free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic — one on any exam, in either mode${
+                  freeAttemptLabel ? ` (yours: ${freeAttemptLabel})` : ""
+                }. Run full-length mocks and retakes with ${MOCK_PASS_ATTEMPTS} attempts for $${MOCK_PASS_PRICE_USD}.`}
+          </p>
+        </div>
+        {onClose ? (
+          <button
+            aria-label="Close"
+            className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[#18140f]/15 text-lg leading-none text-[#4f493e] transition hover:border-[#18140f] hover:text-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f]"
+            onClick={onClose}
+            type="button"
+          >
+            ×
+          </button>
+        ) : null}
       </div>
 
       <ul className="space-y-2 text-sm leading-6 text-[#18140f]">
@@ -211,5 +227,51 @@ export function MockPassPaywall({
         <MockPassKeyForm deckSlug={deckSlug} mockSlug={mockSlug} onRedeemed={onRedeemed} placement={placement} />
       </div>
     </section>
+  );
+}
+
+/** Full-screen dialog: opens when Start is clicked and the free diagnostic (or pass) is spent. */
+export function MockPassPaywallModal({
+  onClose,
+  ...props
+}: MockPassPaywallProps & { onClose: () => void }) {
+  const panelRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const previous = document.activeElement as HTMLElement | null;
+    const closeButton = panelRef.current?.querySelector<HTMLElement>('button[aria-label="Close"]');
+    closeButton?.focus();
+
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.key === "Escape") onClose();
+    }
+    document.addEventListener("keydown", onKeyDown);
+    const { overflow } = document.body.style;
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.removeEventListener("keydown", onKeyDown);
+      document.body.style.overflow = overflow;
+      previous?.focus?.();
+    };
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-[60] flex items-end justify-center bg-[#18140f]/45 p-0 sm:items-center sm:p-6">
+      <button
+        aria-label="Dismiss Mock Pass"
+        className="absolute inset-0 cursor-default"
+        onClick={onClose}
+        type="button"
+      />
+      <div
+        aria-modal="true"
+        className="relative z-10 max-h-[min(92vh,40rem)] w-full max-w-lg overflow-y-auto rounded-t-3xl shadow-2xl sm:rounded-3xl"
+        ref={panelRef}
+        role="dialog"
+      >
+        <MockPassPaywall {...props} onClose={onClose} />
+      </div>
+    </div>
   );
 }

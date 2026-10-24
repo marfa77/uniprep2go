@@ -29,7 +29,7 @@ import {
   hasShortFreeDiagnostic,
 } from "@/lib/mock-exams/free-diagnostic";
 import { buildResultUpsell, type OfficialPassLine } from "@/lib/mock-exams/result-upsell";
-import { MockPassKeyForm, MockPassPaywall } from "./mock-pass-paywall";
+import { MockPassKeyForm, MockPassPaywallModal } from "./mock-pass-paywall";
 import { MockInterestCta } from "./mock-interest-cta";
 import { MockReportPanel } from "./mock-report";
 import { MockResultUpsell, type PassPackCheckout } from "./mock-result-upsell";
@@ -161,7 +161,9 @@ export function MockExamClient({
   const [pass, setPass] = useState<PassStatus>({ loaded: !paywallEnabled, hasPass: false, remaining: 0 });
   const [startBusy, setStartBusy] = useState(false);
   const [startError, setStartError] = useState<string | null>(null);
-  const [retakePaywallOpen, setRetakePaywallOpen] = useState(false);
+  const [paywallOpen, setPaywallOpen] = useState(false);
+  const [paywallPlacement, setPaywallPlacement] = useState<"landing" | "retake">("landing");
+  const [pendingStartMode, setPendingStartMode] = useState<MockSessionMode | null>(null);
   const cta = getMockCta(accessState);
 
   const refreshPassStatus = useCallback(async () => {
@@ -248,23 +250,24 @@ export function MockExamClient({
   });
   const needsPaywall = accessHydrated && pass.loaded && startDecision === "paywall";
 
-  function openPaywall(placement: "landing" | "retake") {
-    if (placement === "retake") {
-      setRetakePaywallOpen(true);
-      window.requestAnimationFrame(() =>
-        document.getElementById("mock-pass")?.scrollIntoView({ behavior: "smooth", block: "start" }),
-      );
-    }
+  function openPaywall(placement: "landing" | "retake", mode?: MockSessionMode) {
+    setPaywallPlacement(placement);
+    setPendingStartMode(mode ?? selectedMode);
+    setPaywallOpen(true);
   }
 
-  async function startMock(mode: MockSessionMode, placement: "landing" | "retake") {
+  async function startMock(
+    mode: MockSessionMode,
+    placement: "landing" | "retake",
+    remainingOverride?: number,
+  ) {
     setStartError(null);
     const storage = browserStorage();
     const recorded = readFreeAttempt(storage);
     const decision = decideMockStart({
       paywallEnabled,
       freeAttemptUsed: Boolean(recorded),
-      remaining: pass.remaining,
+      remaining: remainingOverride ?? pass.remaining,
     });
 
     if (decision === "open") {
@@ -282,7 +285,7 @@ export function MockExamClient({
 
     setFreeAttempt(recorded);
     if (decision === "paywall" && pass.loaded) {
-      openPaywall(placement);
+      openPaywall(placement, mode);
       return;
     }
 
@@ -313,7 +316,7 @@ export function MockExamClient({
       }
       if (res.status === 402) {
         setPass((current) => ({ loaded: true, hasPass: current.hasPass || data.code === "no_attempts", remaining: 0 }));
-        openPaywall(placement);
+        openPaywall(placement, mode);
         return;
       }
       setStartError(data.message || "Could not start the mock. Try again.");
@@ -327,7 +330,13 @@ export function MockExamClient({
   function handleRedeemed(remaining: number) {
     setPass({ loaded: true, hasPass: true, remaining });
     setStartError(null);
-    setRetakePaywallOpen(false);
+    setPaywallOpen(false);
+    const mode = pendingStartMode ?? selectedMode;
+    setPendingStartMode(null);
+    if (remaining > 0) {
+      // Pass remaining explicitly — React state from setPass is not updated yet.
+      void startMock(mode, paywallPlacement, remaining);
+    }
   }
 
   function exitExam() {
@@ -479,16 +488,6 @@ export function MockExamClient({
               {startError}
             </p>
           ) : null}
-          {retakePaywallOpen && needsPaywall ? (
-            <MockPassPaywall
-              deckSlug={config.linkedDeckSlug}
-              freeAttempt={freeAttempt}
-              mockSlug={config.slug}
-              onRedeemed={handleRedeemed}
-              passExhausted={pass.hasPass}
-              placement="retake"
-            />
-          ) : null}
           <MockReportPanel
             companionCheckouts={companionCheckouts}
             config={sessionConfig}
@@ -520,6 +519,20 @@ export function MockExamClient({
                   : `Your free mock is done. Retakes and other mocks: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`}
             </p>
           ) : null}
+          {paywallOpen ? (
+            <MockPassPaywallModal
+              deckSlug={config.linkedDeckSlug}
+              freeAttempt={freeAttempt}
+              mockSlug={config.slug}
+              onClose={() => {
+                setPaywallOpen(false);
+                setPendingStartMode(null);
+              }}
+              onRedeemed={handleRedeemed}
+              passExhausted={pass.hasPass}
+              placement={paywallPlacement}
+            />
+          ) : null}
         </div>
       </MockFocusShell>
     );
@@ -547,13 +560,17 @@ export function MockExamClient({
       ? " · first mock free"
       : startDecision === "paid"
         ? ` · 1 of ${pass.remaining} attempts`
-        : "";
+        : needsPaywall
+          ? ` · Mock Pass $${MOCK_PASS_PRICE_USD}`
+          : "";
   const startCtaLabel = `${startBase}${startSuffix}`;
   const accessNote =
     !paywallEnabled
       ? null
       : startDecision === "paid"
         ? `Mock Pass active: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, Exam or Learn mode.`
+        : needsPaywall
+          ? `Free diagnostic on this browser is used. Press Start to unlock full mocks — $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
         : showFreeDiagnostic
           ? `Free ${landingConfig.questionCount}-question diagnostic, no signup — same topic report. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
           : freeIsShort
@@ -661,16 +678,7 @@ export function MockExamClient({
                 </p>
               ) : null}
 
-              {needsPaywall ? (
-                <MockPassPaywall
-                  deckSlug={config.linkedDeckSlug}
-                  freeAttempt={freeAttempt}
-                  mockSlug={config.slug}
-                  onRedeemed={handleRedeemed}
-                  passExhausted={pass.hasPass}
-                  placement="landing"
-                />
-              ) : paywallEnabled && accessHydrated && startDecision === "free" ? (
+              {paywallEnabled && accessHydrated && startDecision === "free" ? (
                 <MockPassKeyForm
                   deckSlug={config.linkedDeckSlug}
                   mockSlug={config.slug}
@@ -707,16 +715,14 @@ export function MockExamClient({
                     {linkedCheckout.ctaLabel}
                   </TrackedCheckoutLink>
                 ) : null}
-                {!needsPaywall ? (
-                  <button
-                    className={startButtonClass(!sellDeckFirst)}
-                    disabled={startBusy}
-                    onClick={() => void startMock(selectedMode, "landing")}
-                    type="button"
-                  >
-                    {startBusy ? "Starting…" : startCtaLabel}
-                  </button>
-                ) : null}
+                <button
+                  className={startButtonClass(!sellDeckFirst)}
+                  disabled={startBusy}
+                  onClick={() => void startMock(selectedMode, "landing")}
+                  type="button"
+                >
+                  {startBusy ? "Starting…" : startCtaLabel}
+                </button>
                 {linkedCheckout?.checkoutUrl && !sellDeckFirst ? (
                   <TrackedCheckoutLink
                     className={deckButtonClass(false)}
@@ -775,6 +781,21 @@ export function MockExamClient({
       </section>
 
       <p className="text-xs leading-6 text-[#7a6e5a]">{config.disclaimer}</p>
+
+      {paywallOpen ? (
+        <MockPassPaywallModal
+          deckSlug={config.linkedDeckSlug}
+          freeAttempt={freeAttempt}
+          mockSlug={config.slug}
+          onClose={() => {
+            setPaywallOpen(false);
+            setPendingStartMode(null);
+          }}
+          onRedeemed={handleRedeemed}
+          passExhausted={pass.hasPass}
+          placement={paywallPlacement}
+        />
+      ) : null}
     </div>
   );
 }
