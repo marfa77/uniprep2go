@@ -1,5 +1,6 @@
 import type { Deck } from "@/lib/decks";
 import { getDeckUniqueContent } from "@/lib/deck-money-page-content";
+import { SimpleMarkdownBlock } from "@/lib/simple-markdown";
 
 type DeckUniqueContentSectionProps = {
   deck: Deck;
@@ -13,11 +14,7 @@ function parseSections(markdown: string) {
       ? lines[0].replace(/^### /, "")
       : null;
     const body = heading ? lines.slice(1).join("\n").trim() : block.trim();
-    const paragraphs = body
-      .split(/\n\n+/)
-      .map((p) => p.trim())
-      .filter((p) => p && !p.startsWith("<!--"));
-    return { heading, paragraphs };
+    return { heading, body };
   });
 }
 
@@ -37,11 +34,7 @@ export function DeckUniqueContentSection({ deck }: DeckUniqueContentSectionProps
               <h3 className="text-lg font-semibold tracking-tight text-[#18140f]">{section.heading}</h3>
             ) : null}
             <div className={section.heading ? "mt-3 space-y-3" : "space-y-3"}>
-              {section.paragraphs.map((paragraph) => (
-                <p className="text-sm leading-7 text-[#4f493e]" key={paragraph.slice(0, 48)}>
-                  {paragraph}
-                </p>
-              ))}
+              <SimpleMarkdownBlock text={section.body} />
             </div>
           </div>
         ))}
