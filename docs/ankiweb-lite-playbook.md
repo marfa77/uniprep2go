@@ -135,8 +135,40 @@ Do not put eight language LITEs on the same account row above money LITEs — th
 2. Select 40 GUIDs to the mix above; write `internal_deck_generator/.../{slug}_lite_40.csv` (GUID column preserved).
 3. Build a **separate deck name / deck ID** from FULL (do not reuse FULL genanki IDs — see L2 coverage note).
 4. Spot-read 40/40 before upload (AnkiWeb may show any of them).
-5. Upload; paste owner **Downloads** into `docs/ankiweb-lite-ledger.md` the same day (0 is a valid first row).
+5. **Share via AnkiWeb in the browser** (section below) — do **not** ask the user to right-click Share in Anki Desktop. Paste owner **Downloads** into `docs/ankiweb-lite-ledger.md` the same day (0 is a valid first row).
 6. Re-check at **day 14**. Kill or rewrite if downloads &lt; 5 **and** a competitor in the same search is moving. Do not stack more LITEs on a dead account.
+
+## Share procedure (agent does this — locked 2026-10-23)
+
+AnkiConnect has **no** `shareDeck` API. Desktop Share menu is optional; the **canonical path is AnkiWeb web UI** (same account already logged in the Cursor browser). Proven on Czech/Greek/Polish/WELL/GMAT/CFA L1 (2026-10-21) and SIE (2026-10-23).
+
+### Preconditions
+
+1. Anki Desktop open; AnkiConnect `version` = 6 answering on `localhost:8765`.
+2. LITE `.apkg` imported into a **deck whose public title has no `LITE`** (e.g. `SIE Exam — FINRA Application Deck (40 cards)`).
+3. If FULL already holds the same Note GUIDs: `updateNoteFields` from the LITE apkg, then `changeDeck` those cards into the share deck (GUID-move). If GUID search hits 0 (old collection GUIDs), importing the apkg creates 40 new notes — still fine for share; move them into the titled deck.
+4. `sync` via AnkiConnect until OK (deck must exist on AnkiWeb before `/decks/share/{id}` works).
+
+### Share (browser — do not stop at “user clicks Share”)
+
+1. `deckNamesAndIds` → take the **numeric id** of the share deck (not the FULL parent).
+2. Cursor browser → `https://ankiweb.net/decks/share/{deckId}` (must be logged in; Log Out link visible).
+3. Fill form from that SKU’s `listing.txt` / `ankiweb_meta.md`:
+   - **Title** = public title (no `LITE`)
+   - **Tags** = underscore tokens from listing
+   - **Support Page** = `https://uniprep2go.study/decks/{slug}`
+   - **Description** = body of listing (not the title line / not the `Tags:` line)
+   - Check the ownership declaration checkbox
+4. Prefer CDP `Runtime.evaluate` + `returnByValue` to set input/textarea values (React-controlled fields); then click **Share**.
+5. Wait for `/decks/share/pending` → “Completed successfully” → follow the listing link (or read `a[href*="/shared/info/"]`).
+6. Confirm live page: correct H1 + “Sample (from N notes)” with N = LITE size.
+7. Ledger row: Shared ID + link in `docs/ankiweb-lite-ledger.md` and a one-liner in `docs/mock-bank-qa/bank-audit-ledger.md`. Bump the rolling **20/7d** share count.
+
+### If blocked
+
+- AnkiConnect down → open Anki / grant permission; do not treat Share as a user chore while Connect is up.
+- Browser not logged into AnkiWeb → say so once; after login, continue the same URL flow.
+- Computer Use / Accessibility is **not** required for Share when the web path works.
 
 ## What this playbook is not
 

@@ -1,6 +1,6 @@
 # SKU status board
 
-Generated 2026-10-23 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-10-24 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
@@ -38,7 +38,7 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `nj-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (17 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `oh-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (14 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `pa-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `property-casualty-insurance-readiness-check` | live | 60 / 60 | 2026-10-15 | FAIL (69 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
+| rewrite | `property-casualty-insurance-readiness-check` | live | 60 / 60 | 2026-10-24 | FAIL (69 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
 | rewrite | `real-estate-appraiser-readiness-check` | live | 60 / 60 | 2026-10-05 | FAIL (51 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `series-6-readiness-check` | live | 120 / 120 | — | FAIL (18 items): thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `series-65-readiness-check` | live | 120 / 120 | 2026-10-15 | FAIL (28 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session |
@@ -144,8 +144,8 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-18 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
-| ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-10-22 | — |
-| ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
+| ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `fl-real-estate-readiness-check` | live | 60 / 120 | 2026-10-19 | — |
@@ -155,7 +155,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `leed-ap-bd-c-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `leed-ap-om-readiness-check` | live | 60 / 120 | 2026-10-13 | — |
 | ok | `leed-green-associate-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
-| ok | `life-and-health-insurance-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
+| ok | `life-and-health-insurance-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
 | ok | `medical-scribe-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
 | ok | `mortgage-loan-originator-readiness-check` | live | 120 / 240 | 2026-10-15 | — |
 | ok | `mrics-quantity-surveying-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
@@ -163,14 +163,14 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `nha-cpct-readiness-check` | live | 120 / 240 | 2026-10-22 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-15 | — |
-| ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-15 | — |
+| ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-24 | — |
 | ok | `rd-exam-readiness-check` | live | 120 / 240 | 2026-10-16 | — |
 | ok | `sat-readiness-check` | live | 49 / 160 | 2026-10-02 | — |
-| ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-15 | — |
-| ok | `series-7-readiness-check` | live | 60 / 120 | 2026-10-16 | — |
+| ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
+| ok | `series-7-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
 | ok | `servsafe-manager-mock` | live | 90 / 180 | 2026-10-15 | — |
-| ok | `sie-full-mock` | live | 75 / 150 | 2026-10-23 | — |
-| ok | `sie-quick-diagnostic` | live | 25 / 150 | 2026-10-23 | — |
+| ok | `sie-full-mock` | live | 75 / 150 | 2026-10-24 | — |
+| ok | `sie-quick-diagnostic` | live | 25 / 150 | 2026-10-24 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
 | ok | `aama-cma-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
@@ -225,8 +225,8 @@ Products without a mock and catalog totals: bottom of this file.
 | Live mocks | 196 |
 | … with a live Anki / PDF pair | 82 |
 | … with a planned Anki pair | 114 |
-| Products without a mock (Anki, PDF, app, bundle) | 37 (available 23, planned 14) |
-| Catalog decks total (`decks.ts`) | 232 (available 104) |
+| Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
+| Catalog decks total (`decks.ts`) | 235 (available 107) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 27 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.
@@ -237,8 +237,11 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 
 | Status | Product | Sale | Category | Format | Last work |
 |---|---|---|---|---|---|
-| reviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | 2026-10-15 |
-| reviewed | `cfa-level-2-formula-reference-2026` | available | finance | PDF | 2026-10-15 |
+| reviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
+| reviewed | `cfa-level-1-pass-pack` | available | finance | .apkg + PDF | 2026-10-24 |
+| reviewed | `cfa-level-2-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
+| reviewed | `ptcb-2026-pass-pack` | available | professional | .apkg + PDF | 2026-10-24 |
+| reviewed | `ptcb-study-guide-2026` | available | professional | PDF | 2026-10-24 |
 | unreviewed | `australia-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `bench-energy-coal-trader-anki-deck` | available | professional | .apkg | — |
 | unreviewed | `bench-energy-metal-trader-anki-deck` | available | professional | .apkg | — |
@@ -252,7 +255,7 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 | unreviewed | `japan-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `netherlands-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `portugal-survival-guide-prep2go-app` | available | immigration | App | — |
-| unreviewed | `ptcb-study-guide-2026` | available | professional | PDF | — |
+| unreviewed | `portuguese-survival-anki-deck` | available | language | .apkg | — |
 | unreviewed | `saudi-arabia-survival-guide-prep2go-app` | available | immigration | App | — |
 | unreviewed | `servsafe-manager-complete-study-guide` | available | professional | PDF | — |
 | unreviewed | `singapore-survival-guide-prep2go-app` | available | immigration | App | — |
@@ -300,7 +303,7 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |
 | reviewed | `greek-a2-ellinomatheia-anki-deck` | https://www.prep2go.study/shop/deck/greek-ellinomatheia-anki-deck | 2026-10-18 |
 | reviewed | `ielts-toefl-english-for-french-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-french-speakers-anki-deck | 2026-10-13 |
-| reviewed | `ielts-toefl-english-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-russian-speakers-anki-deck | 2026-10-13 |
+| reviewed | `ielts-toefl-english-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-russian-speakers-anki-deck | 2026-10-23 |
 | reviewed | `ielts-toefl-english-for-spanish-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-spanish-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-turkish-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-turkish-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-ukrainian-speakers-anki-deck | 2026-10-13 |

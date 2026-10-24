@@ -87,7 +87,7 @@ type BaseDeck = {
   positioning?: DeckPositioningData;
   lastUpdated: string;
   audience: string;
-  format: ".apkg" | ".csv" | "PDF" | "App";
+  format: ".apkg" | ".csv" | "PDF" | "App" | ".apkg + PDF";
   coverImage?: string;
   /** .apkg checkout live but file not uploaded yet (building decks). */
   apkgStatus?: "pending" | "ready";
@@ -426,6 +426,11 @@ const rawDecks: Deck[] = [
           "Prefer a focused 348-card deck weighted to the 2026 CFA Level 1 topic ranges, with scenario cards rather than bare definitions, plus a free timed mock and printable formula sheet — not a 1,000+ card dump. UniPrep2Go’s CFA Level 1 Anki deck ships that stack: .apkg + 60-question readiness check (free 25-question version) + optional 2026 formula PDF.",
       },
       {
+        question: "Can I buy the Anki deck with the formula PDF?",
+        answer:
+          "Yes. The CFA Level 1 Pass Pack ($29) includes this 348-card Anki plus the Formula Reference PDF — save versus $38 buying both separately.",
+      },
+      {
         question: "What is included in the CFA Level 1 Anki deck?",
         answer:
           "348 Anki cards weighted to the 2026 topic ranges: Ethics 58, Equity 45, FSA 42, Fixed Income 42, Portfolio Management 33, Alternatives 30, Quant 26, Economics 26, Corporate Issuers 24, Derivatives 22. Every front is a short case or calculation (for example, applying Standard III(C) to an unsolicited trade), every back gives a worked example and the common mistake, and 150 cards add a typeset formula. A linked 60-question timed mock (free 25-question version) scores your weak topics first.",
@@ -602,6 +607,79 @@ const rawDecks: Deck[] = [
         question: "How should I use it before exam day?",
         answer:
           "Print or bookmark weak topic tables, run the 80-question recall drill under timed conditions, review every explanation, then drill matching cards in the companion Anki deck on missed topics.",
+      },
+      {
+        question: "Is there a bundle with the Anki deck?",
+        answer:
+          "Yes. The CFA Level 1 Pass Pack ($29) includes this Formula Reference PDF plus the 348-card Anki deck — save versus buying both separately at $38.",
+      },
+    ],
+  },
+  {
+    slug: "cfa-level-1-pass-pack",
+    category: "finance",
+    status: "available",
+    title: "CFA Level 1 Pass Pack 2026 — 348 Anki + Formula PDF",
+    shortName: "CFA L1 Pass Pack",
+    subtitle:
+      "348-card scenario Anki + 2026 Formula Reference PDF (221 formulas, 22 Standards, 80-question drill) — $29 vs $38 separate.",
+    directAnswer:
+      "UniPrep2Go’s CFA Level 1 Pass Pack is a two-file Gumroad download: the 348-card scenario Anki deck (worked example + common mistake on every card, weighted to 2026 topic ranges) plus the printable 2026 Formula Reference PDF (221 formulas with exam traps, all 22 Standards, 80-question recall drill). Delivered for {PRICE} — save versus buying the Anki ($19) and formula PDF ($19) separately. Pair with the free 60-question timed readiness check (free 25-question version). Independent study aid — not CFA Institute material.",
+    lastUpdated: "2026-10-24",
+    audience:
+      "CFA Level 1 candidates who want daily Anki recall and a printable formula/Ethics cram pack in one checkout before Feb/May/Aug/Nov sittings.",
+    format: ".apkg + PDF",
+    coverImage: "/covers/cfa-level-1-pass-pack.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/cfa-level-1-pass-pack?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "348 Anki + 48-page formula PDF",
+      topics: "All 10 CFA Level 1 2026 topic ranges + formula tables and 22 Standards",
+      formulas: "221 typeset formulas with exam traps; 80-question recall drill in the PDF",
+      examYear: "2026 CFA Level 1",
+      delivery: "Digital download through Gumroad (Anki .apkg + PDF)",
+    },
+    topicCoverage: [
+      { name: "Anki deck", examWeight: "348 cards", cards: "Scenario fronts across Ethics, Quant, Econ, FSA, CI, Equity, FI, Derivatives, Alts, PM" },
+      { name: "Formula PDF", examWeight: "221 formulas", cards: "Lookup tables + 22 Standards + 80-question recall drill" },
+    ],
+    sampleCards: [
+      {
+        question:
+          "An option-free bond has annual modified duration 7.2 and annual convexity 64. If its yield rises by 100 bps, what is the estimated percentage price change?",
+        answer:
+          "About −6.88%. The duration term gives −7.2 × 0.01 = −7.20%, and the convexity term adds ½ × 64 × 0.01² = +0.32%. For an option-free bond the convexity term is always positive, so the price falls less (and rises more) than duration alone predicts.",
+        imageUrl: "/samples/cfa-level-1-anki-deck-sample-1.webp",
+      },
+      {
+        question: "Fixed Income — yield duration and convexity table (page 24)",
+        answer:
+          "Macaulay, modified and approximate modified duration, approximate convexity, the duration-plus-convexity price change, money duration and PVBP — each row with when to use it and the exam trap.",
+        imageUrl: "/samples/cfa-level-1-formula-reference-2026-sample-1.webp",
+      },
+      {
+        question: "Ethics — Code of Ethics and Standards I(A)–III(B) (page 36)",
+        answer:
+          "The six Code obligations, then each Standard with what it requires and the exam trap: dissociating under I(A), issuer-paid travel under I(B), mosaic theory under II(A).",
+        imageUrl: "/samples/cfa-level-1-formula-reference-2026-sample-2.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is in the CFA Level 1 Pass Pack?",
+        answer:
+          "Two files: the 348-card CFA Level 1 Anki .apkg and the 2026 Formula Reference PDF (221 formulas, 22 Standards, 80-question drill). One $29 checkout versus $38 if bought separately.",
+      },
+      {
+        question: "Can I still buy Anki or the PDF alone?",
+        answer:
+          "Yes. Singles stay live at $19 each. Buy the pack only when you want both.",
+      },
+      {
+        question: "Is this official CFA Institute material?",
+        answer:
+          "No. Independent study aid — not affiliated with or endorsed by CFA Institute.",
       },
     ],
   },
@@ -4651,7 +4729,7 @@ const rawDecks: Deck[] = [
       {
         question: "Does this pair with the PTCB Anki deck?",
         answer:
-          "Yes — as a separate purchase. Use the PDF for outline reading and the timed 80-question practice exam; buy the 300-card Anki deck if you want daily brand/generic and sig-code recall on your phone. Neither product is bundled inside the other.",
+          "Yes. Buy separately, or get both in the PTCB 2026 Pass Pack ($24 vs $33 separate) — PDF for outline reading and the 80-question practice exam; Anki for daily brand/generic and sig-code recall.",
       },
       {
         question: "Is this official PTCB material?",
@@ -4667,6 +4745,73 @@ const rawDecks: Deck[] = [
         question: "Is this the same as the NHA ExCPT exam?",
         answer:
           "No. This guide targets PTCB’s PTCE. NHA ExCPT is a separate pharmacy technician certification pathway — use UniPrep2Go’s free NHA ExCPT readiness check if that is your certifier.",
+      },
+    ],
+  },
+  {
+    slug: "ptcb-2026-pass-pack",
+    category: "professional",
+    status: "available",
+    title: "PTCB 2026 Pass Pack — 300 Anki + Outline Study Guide PDF",
+    shortName: "PTCB 2026 Pass Pack",
+    subtitle:
+      "300-card PTCE Anki + January 2026 outline study guide PDF (80Q practice + cheat sheets) — $24 vs $33 separate.",
+    directAnswer:
+      "UniPrep2Go’s PTCB 2026 Pass Pack is a two-file Gumroad download: the 300-card pharmacy technician Anki deck (January 2026 PTCE weights — drugs, law, safety, sigs, math) plus the PTCB Outline 2026 Study Guide PDF (blueprint chapters including DSCSA, 80-question practice exam, cheat sheets). Delivered for {PRICE} — save versus buying the Anki ($19) and study guide ($14) separately. Pair with the free 90-question timed mock (free 25-question version). Independent — not PTCB material.",
+    lastUpdated: "2026-10-24",
+    audience:
+      "PTCE candidates who want blueprint reading and daily Anki repair in one checkout before Pearson VUE.",
+    format: ".apkg + PDF",
+    coverImage: "/covers/ptcb-2026-pass-pack.webp",
+    checkoutUrl: "https://pixidstudio.gumroad.com/l/ptcb-2026-pass-pack?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "300 Anki + 30-page outline PDF",
+      topics: "January 2026 PTCE domains: Medications, Federal Requirements (DSCSA), Patient Safety, Order Entry",
+      formulas: "Days supply, dosing math, DEA check digit — Anki + PDF cheat sheets",
+      examYear: "January 2026 PTCE",
+      delivery: "Digital download through Gumroad (Anki .apkg + PDF)",
+    },
+    topicCoverage: [
+      { name: "Anki deck", examWeight: "300 cards", cards: "2026 domain-weighted PTCE flashcards" },
+      { name: "Study guide PDF", examWeight: "30 pages + 80Q", cards: "Blueprint chapters, practice exam, cheat sheets" },
+    ],
+    sampleCards: [
+      {
+        question: "Lopressor vs Toprol XL — generic name, class, use, and the substitution trap?",
+        answer:
+          "Metoprolol, a cardioselective beta-blocker (-olol), for hypertension, angina, heart failure, and rate control. Lopressor = metoprolol tartrate (immediate release, usually twice daily); Toprol XL = metoprolol succinate (extended release, once daily). Do not stop abruptly.",
+        imageUrl: "/samples/ptcb-pharmacy-technician-anki-deck-sample-1.webp",
+      },
+      {
+        question: "2026 PTCE domain weights at a glance",
+        answer:
+          "The at-a-glance table maps the January 2026 blueprint: Medications 35%, Federal Requirements 18.75% (DSCSA added), Patient Safety 23.75%, Order Entry 22.5% — compounding and alligation removed.",
+        imageUrl: "/samples/ptcb-study-guide-2026-sample-1.webp",
+      },
+      {
+        question: "60 high-yield drugs A–Z cheat sheet",
+        answer:
+          "Print-ready drug list with brand, generic, class, and primary use — the fastest pre-exam scan for look-alike/sound-alike pairs the PTCE repeats.",
+        imageUrl: "/samples/ptcb-study-guide-2026-sample-2.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "What is in the PTCB 2026 Pass Pack?",
+        answer:
+          "Two files: the 300-card PTCB Anki .apkg and the PTCB Outline 2026 Study Guide PDF. One $24 checkout versus $33 if bought separately.",
+      },
+      {
+        question: "Can I still buy Anki or the guide alone?",
+        answer:
+          "Yes. Singles stay live ($19 Anki, $14 guide). Buy the pack when you want both.",
+      },
+      {
+        question: "Is this official PTCB material?",
+        answer:
+          "No. Independent study aid — not affiliated with PTCB, NHA, FDA, or DEA.",
       },
     ],
   },
@@ -5077,8 +5222,8 @@ export const RELATED_DECK_PEER_GROUPS: string[][] = [
   ["nasm-cpt-anki-deck", "issa-cpt-anki-deck", "ace-cpt-anki-deck"],
   ["luxembourg-vivre-ensemble-anki-deck", "einburgerung-schweiz-anki-deck", "leben-in-deutschland-anki-deck"],
   ["sie-exam-anki-deck", "series-7-anki-deck", "series-63-anki-deck"],
-  ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026"],
-  ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-2-anki-deck"],
+  ["ptcb-pharmacy-technician-anki-deck", "ptcb-study-guide-2026", "ptcb-2026-pass-pack"],
+  ["cfa-level-1-anki-deck", "cfa-level-1-formula-reference-2026", "cfa-level-1-pass-pack", "cfa-level-2-anki-deck"],
 ];
 
 export function getRelatedDecks(deck: Pick<Deck, "slug" | "category">, limit = 4): Deck[] {
