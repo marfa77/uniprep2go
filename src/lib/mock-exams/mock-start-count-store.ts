@@ -1,6 +1,11 @@
 import { getRedisClient } from "@/lib/redis";
+import { countMockStartsForSlug } from "./session-mode";
 import { getMockExamConfig } from "./configs";
 import { publicMockStartCount } from "./mock-start-count";
+
+const LIFETIME_BY_SOURCE = "funnel:lifetime:bySource";
+const LIFETIME_STARTED_AT = "funnel:lifetime:startedAt";
+const PERIOD_STARTED_AT = "funnel:startedAt";
 
 function countKey(slug: string) {
   return `mock:start-count:v1:${slug}`;
@@ -70,8 +75,27 @@ export type MockStartObservation = {
   since: string;
 };
 
+async function seedObservationFromLifetime(
+  client: NonNullable<ReturnType<typeof getRedisClient>>,
+  slug: string,
+): Promise<number> {
+  try {
+    const bySource = await client.hgetall<Record<string, string>>(LIFETIME_BY_SOURCE);
+    if (!bySource) return 0;
+    const numeric: Record<string, number> = {};
+    for (const [k, v] of Object.entries(bySource)) {
+      const n = typeof v === "number" ? v : Number(v);
+      if (Number.isFinite(n) && n > 0) numeric[k] = n;
+    }
+    return countMockStartsForSlug(numeric, slug);
+  } catch {
+    return 0;
+  }
+}
+
 /**
  * Increment the observation counter for a mock start (every recorded start, not unique).
+ * First touch for a slug seeds from lifetime funnel so history is not reset to 1.
  * Used in Telegram: “Start #: 3rd for this mock (since 2026-10-01)”.
  */
 export async function recordMockStartObservation(slug: string): Promise<MockStartObservation | null> {
@@ -89,9 +113,27 @@ export async function recordMockStartObservation(slug: string): Promise<MockStar
 
   try {
     const now = new Date().toISOString();
-    await client.set(OBSERVATION_SINCE_KEY, now, { nx: true });
-    const n = await client.incr(observationCountKey(trimmed));
-    const since = (await client.get<string>(OBSERVATION_SINCE_KEY)) ?? now;
+    const funnelSince =
+      (await client.get<string>(LIFETIME_STARTED_AT)) ??
+      (await client.get<string>(PERIOD_STARTED_AT)) ??
+      now;
+    await client.set(OBSERVATION_SINCE_KEY, funnelSince, { nx: true });
+
+    const key = observationCountKey(trimmed);
+    const existing = await client.get<number | string>(key);
+    const existingN = typeof existing === "number" ? existing : Number(existing);
+
+    let n: number;
+    if (!Number.isFinite(existingN) || existingN < 1) {
+      // Funnel already includes this start (recordFunnelEvent runs first).
+      const seeded = await seedObservationFromLifetime(client, trimmed);
+      n = Math.max(1, seeded);
+      await client.set(key, n);
+    } else {
+      n = await client.incr(key);
+    }
+
+    const since = (await client.get<string>(OBSERVATION_SINCE_KEY)) ?? funnelSince;
     return { n, since };
   } catch (error) {
     console.error("[mock_start_obs] record failed", error);
