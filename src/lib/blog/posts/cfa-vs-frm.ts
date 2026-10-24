@@ -18,7 +18,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
   mockSlug: "cfa-level-1-readiness-check",
   deckSlug: "cfa-level-1-anki-deck",
   cta: {
-    mockLabel: "Take the free CFA Level 1 readiness check",
+    mockLabel: "CFA Level 1 practice test",
     deckLabel: "Drill CFA Level 1 with Anki",
     summary:
       "Not sure where your quantitative gaps are? The free start on either exam is 25 questions. Then drill weak topics in the matching Anki deck before you commit $1,000+ to registration.",

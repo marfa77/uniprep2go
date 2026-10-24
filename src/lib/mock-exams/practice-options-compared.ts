@@ -26,17 +26,38 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
     mockSlug: "cfa-level-1-readiness-check",
     examLabel: "CFA Level I",
     heading: "Free CFA Level I practice options compared",
-    checkedDate: "2026-10-22",
+    checkedDate: "2026-10-24",
     lead:
-      "Official CFA Institute samples teach format; registered-candidate mocks live in the Learning Ecosystem. UniPrep2Go is an independent timed diagnostic with topic scores — not CFA Institute material.",
+      "Pages that rank for “CFA Level 1 practice test” mostly offer a full 180-question mock. UniPrep2Go is the shorter free diagnostic: 25 questions with no signup, then 60 timed questions and topic scores. Not CFA Institute material.",
     rows: [
       {
-        name: "UniPrep2Go CFA L1 readiness check",
+        name: "UniPrep2Go CFA Level 1 practice test",
         href: "/mock-exams/cfa-level-1-readiness-check",
-        format: "25Q free diagnostic; full timed mock 60Q / 90 min with topic scores",
-        access: "Free start (no signup for the 25Q); Mock Pass for retakes",
+        format: "25 free, no signup; full timed mock 60 questions / 90 minutes with topic scores",
+        access: "Free start; Mock Pass for retakes",
         notes:
-          "Independent diagnostic across all 10 L1 topics. Official L1 is 180 MCQ in two 135-minute sessions (~4.5h content time).",
+          "Independent diagnostic across all 10 Level I topics. Official Level I is 180 questions in two 135-minute sessions, three choices.",
+      },
+      {
+        name: "Certus — free Level I mock",
+        href: "https://certus.website/free-cfa-mock-exam",
+        format: "180 questions, two sessions of 90, three choices; also a 15-question short start",
+        access: "Free, no signup (page copy, checked 2026-10-24)",
+        notes: "Full-length claim. We did not re-count the item bank.",
+      },
+      {
+        name: "Studividend — free Level I mock",
+        href: "https://studividend.com/free-cfa-level-1-mock-exam",
+        format: "180 original questions, two sessions of 90 questions and 135 minutes",
+        access: "Free, no account (page copy, checked 2026-10-24)",
+        notes: "Full-length claim with on-page explanations and a topic score report.",
+      },
+      {
+        name: "FinQuiz — free Level I mock",
+        href: "https://www.finquiz.com/cfa/level-1/mock-exam/",
+        format: "180 questions in two 90-question sessions",
+        access: "Free account required (page copy, checked 2026-10-24)",
+        notes: "One full-length mock before paid packs.",
       },
       {
         name: "CFA Institute — Level I sample questions (web)",
@@ -79,6 +100,75 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       {
         label: "CFA Institute — Asset Classes Quiz",
         url: "https://interactive.cfainstitute.org/Asset-Classes-Quiz",
+      },
+      {
+        label: "Certus — free CFA Level 1 mock",
+        url: "https://certus.website/free-cfa-mock-exam",
+      },
+      {
+        label: "Studividend — free CFA Level 1 mock",
+        url: "https://studividend.com/free-cfa-level-1-mock-exam",
+      },
+      {
+        label: "FinQuiz — CFA Level 1 mock exam",
+        url: "https://www.finquiz.com/cfa/level-1/mock-exam/",
+      },
+    ],
+  },
+  "cfa-level-2-readiness-check": {
+    mockSlug: "cfa-level-2-readiness-check",
+    examLabel: "CFA Level II",
+    heading: "Free CFA Level II practice options compared",
+    checkedDate: "2026-10-24",
+    lead:
+      "The official Level II exam is 88 item-set questions in 22 vignettes. UniPrep2Go’s CFA Level 2 practice exam is 60 vignette questions (25 free, no signup). Not CFA Institute material.",
+    rows: [
+      {
+        name: "UniPrep2Go CFA Level 2 practice exam",
+        href: "/mock-exams/cfa-level-2-readiness-check",
+        format: "25 free, no signup; full timed exam 60 vignette questions / 120 minutes with topic scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic across all 10 Level II topics. Official Level II is 88 items / 22 vignettes / 4 hours 24 minutes.",
+      },
+      {
+        name: "CFA Institute — mock exam and practice questions",
+        href: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/mock-exam-and-practice-questions",
+        format: "Curriculum practice questions and official-style mocks in the Learning Ecosystem",
+        access: "Registered CFA Program candidates only",
+        notes: "Closest official practice. Level II Practice Pack adds paid mocks for registered candidates.",
+      },
+      {
+        name: "300 Hours — free Level II mock",
+        href: "https://300hours.com/free-cfa-level-2-mock-exam",
+        format: "44 vignette questions, 2 hours 12 minutes, topic report after submit",
+        access: "Free; the page asks for details before the result email (checked 2026-10-24)",
+        notes: "Half an official sitting. Partner item sets, not CFA Institute material.",
+      },
+      {
+        name: "UWorld — Level II mock exams",
+        href: "https://finance.uworld.com/cfa/level-2/mock-exams/",
+        format: "Paid mocks of 88 item-set questions each; the page lists 3 unique exams",
+        access: "Paid (page copy, checked 2026-10-24)",
+        notes: "Exam-length item sets. Not a free start.",
+      },
+    ],
+    sources: [
+      {
+        label: "CFA Institute — Level II exam",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-ii-exam",
+      },
+      {
+        label: "CFA Institute — mock exam and practice questions",
+        url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/mock-exam-and-practice-questions",
+      },
+      {
+        label: "300 Hours — free CFA Level 2 mock",
+        url: "https://300hours.com/free-cfa-level-2-mock-exam",
+      },
+      {
+        label: "UWorld — CFA Level 2 mock exams",
+        url: "https://finance.uworld.com/cfa/level-2/mock-exams/",
       },
     ],
   },

@@ -9,6 +9,8 @@ import {
 import type { MockExamConfig, MockVerticalId } from "./types";
 
 export const featuredMockHubSlugs = [
+  "cfa-level-1-readiness-check",
+  "cfa-level-2-readiness-check",
   "sie-full-mock",
   "series-65-readiness-check",
   "series-6-readiness-check",
@@ -29,7 +31,6 @@ export const featuredMockHubSlugs = [
   "california-real-estate-readiness-check",
   "life-and-health-insurance-readiness-check",
   "property-casualty-insurance-readiness-check",
-  "cfa-level-1-readiness-check",
   "cdcp-readiness-check",
   "life-in-the-uk-readiness-check",
   "leben-in-deutschland-readiness-check",
@@ -123,9 +124,9 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "california-real-estate-readiness-check":
     "This free California real estate salesperson readiness check focuses on DRE license law, contracts, property ownership, agency, and exam math for the endless CA cohort. Use it as a timed diagnostic before PSI — then repair weak topics with the linked Anki deck between study blocks.",
   "cfa-level-1-readiness-check":
-    "This free CFA Level 1 readiness check stresses Ethics, quant, economics, FRA, and the product domains Level 1 candidates forget under time. Score by topic, then repair weak formulas and definitions with the linked Anki deck and formula PDF before your next full mock block.",
+    "This CFA Level 1 practice test starts free: 25 questions, no signup, then 60 questions in 90 minutes across all 10 topics, with topic scores and full answer review. The official Level I exam is 180 questions in two 135-minute sessions, three choices, and CFA Institute sets the minimum passing score after each sitting rather than publishing a fixed percentage. This page is that shorter diagnostic. Close weak topics with the linked Anki deck ($19, 348 cards) and the formula PDF. Not CFA Institute material.",
   "cfa-level-2-readiness-check":
-    "This free CFA Level 2 readiness check is built for candidates who already cleared Level 1 and now need vignette-style application under time — Ethics, FSA, equity and fixed-income valuation, derivatives, and portfolio management. It is not a recycled Level 1 quiz: score by Level 2 topic weights, then repair weak item-set domains with the linked CFA Level 2 Anki deck before your next practice block.",
+    "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). CFA Institute sets the minimum passing score after each sitting and does not publish a fixed percentage. This page is the shorter diagnostic. Repair weak item sets with the linked Anki deck ($19, 495 cards). Not CFA Institute material.",
   "frm-part-1-readiness-check":
     "This free FRM Part 1 readiness check targets foundations of risk, quant, markets and products, and valuation models so GARP candidates can see which Part 1 pillars still need daily Anki before booking the exam window.",
   "ptcb-pharmacy-technician-mock":

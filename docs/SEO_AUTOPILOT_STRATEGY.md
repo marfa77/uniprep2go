@@ -1,9 +1,75 @@
 # UniPrep2Go SEO / LLM autopilot strategy
 
 **North star:** US organic + LLM → free timed mock → topic readiness report → fix weak topics (Anki/PDF = mechanism, not the brand promise).  
+**Active push (locked 2026-10-24, next 8 weeks):** one pair — CFA Level 1 mock + CFA Level 2 mock. See § CFA pair below. PTCB / Series 63 / Life & Health stay live and get no weekly SEO.  
 **Primary operating model (90d from 2026-08-27):** dual-track — (1) near-page-one push on URLs already at pos 8–25, (2) FINRA index-first (`sie-full-mock` unknown until Google knows it).  
 **Not:** weekly FINRA title allowlist. That track was premature (2026-08-06…08-13) while `sie-full-mock` stayed unknown and "sie" queries = 0.  
-**Not:** catalog scale / new SKUs / `/exams/{slug}/` URL migration / mass topical blogs until GSC shows a real wedge.
+**Not:** catalog scale / new SKUs / `/exams/{slug}/` URL migration / mass topical blogs until this pair prints a click.
+
+## CFA pair — rank the two pages Google already shows (locked 2026-10-24)
+
+**Baseline:** `tmp/gsc-export-2026-10-18/` (windows end 2026-10-17). Site 28d = 593 impr / 5 clicks. These two mocks are 211 of those impressions and 0 clicks. Both are indexed. The job is position, then the click.
+
+| URL | Query to move | 28d query | 28d page |
+|-----|----------------|-----------|----------|
+| `/mock-exams/cfa-level-1-readiness-check` | `cfa level 1 practice test` | 20 impr @ **11.4**, 0 clicks | 152 impr @ 14.1 |
+| `/mock-exams/cfa-level-2-readiness-check` | `cfa level 2 practice exam` | 21 impr @ **23.8**, 0 clicks | 59 impr @ 23.3 |
+
+Same L1 URL also holds `cfa practice test` (23 @ 13.8), `cfa practice exam level 1` (19 @ 12.4), `cfa level 1 practice questions` (12 @ 13.8), `cfa level 1 practice exam` (9 @ 9.0). One page, one query family. Do not split a second L1 URL.
+
+**SERP (checked 2026-10-24).** L1 results lead with CFA Institute plus free **180-question** mocks (Certus, Studividend, FinQuiz). Our page is a 60-question diagnostic (free 25) from a 120-item bank, four options, official exam is three. L2 results are CFA Institute, 300 Hours (44 vignette questions, form), and paid UWorld (88). Our 60 vignette-style questions sit closer to that SERP. Promise stays honest: shorter than the official sitting, topic scores, no signup on the free slice.
+
+**8-week target.** L1 query position ≤ 8 and a click. L2 query position ≤ 10. First place on `cfa level 1 practice test` belongs to the 180-question pages until we have a real full-length bank. Do not stretch the 60-question session to 180 on a 120-item bank.
+
+**November window.** Almost all 90-day CFA impressions landed in the last 28 days (L1 152 of 165). That is the November sitting. Score **position and clicks**. An impression drop after the sitting is the season.
+
+### Week 1 — query match + anchors (one ship)
+
+Touch only the pair, the homepage hero, and the six supporting links. One lever.
+
+1. **L1.** Title already says `CFA Level 1 Practice Test`. H1 stays that query; move “25Q free” to the subhead. First 80 words answer the query: free, no signup, 25 questions, then 60 questions / 90 minutes, 10 topics, topic scores. Next sentence states the official exam (180 questions, two 135-minute sessions, 3 choices, MPS set after the sitting and not a published percent) and that this page is the shorter diagnostic. Replace the stale `$9.99` Anki price in this intro with the catalog **$19**.
+2. **L2.** Title and H1 become `CFA Level 2 Practice Exam`. Today the title says “Mock Exam” and the H1 says “Readiness Check”, while Google’s query is “practice exam”. Same honesty: 60 vignette questions / 120 minutes; official L2 is 88 items / 22 vignettes / 4h24; MPS is not a published percent. Anki price **$19**.
+3. **Anchors** that say the query, on pages that already exist:
+   - `/` — hero H1 is the Level 1 practice test; second link is the Level 2 practice exam. FRM stays a text link. The 8-exam strip stays below the fold.
+   - `/decks/cfa-level-1-anki-deck`
+   - `/decks/cfa-level-1-formula-reference-2026`
+   - `/decks/cfa-level-2-anki-deck`
+   - `/decks/cfa-level-2-formula-reference-2026`
+   - `/blog/cfa-level-1-vs-frm-part-1-which-to-choose`
+   - finance block on `/mock-exams`
+   - each mock links to the other with the query phrase
+
+   Anchor text is `CFA Level 1 practice test` or `CFA Level 2 practice exam`. Leave “readiness check” and “25Q free” out of those anchors. No sitewide footer links from the other 150 mocks.
+
+Do not Request indexing. Both URLs already have impressions.
+
+### Week 2–3 — proof on the same two URLs
+
+- L1 comparison table (checked 2026-10-22, CFA Institute only) gains the 180-question pages that actually rank, with counts verified that day. Our row stays “25 free / 60 timed / topic scores / no signup”.
+- L2 has no comparison table. Add one: CFA Institute Learning Ecosystem (registered candidates), 300 Hours 44-question vignette (form), UWorld paid 88, us 60 vignette questions with a free 25.
+- Two or three real worked questions in the initial HTML on each landing. Samples already exist; the SERP winners show questions on the page.
+- One FAQ each, answer in the first sentence: “Is this the full CFA Level 1 exam?” and “Is this a full CFA Level 2 item-set mock?”
+
+No third URL. FRM (`frm level 1 mock test`, 20 impr @ 9.8) waits until this pair has a click.
+
+### Week 4 — measure, then stop or go external
+
+`npm run gsc:export`. Read only the two queries above.
+
+| Result | Next action |
+|--------|-------------|
+| L1 query still 11–14 | Stop title edits. Ceiling is authority against CFA Institute and the 180-question sites. Next lever is one external mention (r/CFA or a prep thread), not another meta pass. |
+| L1 inside top 10, 0 clicks | Snippet only: description leads with “Free, no signup, 25 questions, topic scores.” |
+| L1 moved, L2 still ~24 | One more L2 pass, same lever. Still no third URL. |
+| Either page gained a click | Keep the pair. Start judging the mock → weak-topic → Anki path on these two only. |
+
+### Week 5–8
+
+Hold. Second title rewrite is allowed only for the URL that missed its week-4 line. PTCB, Series 63, Life & Health, ServSafe, and the blogs stay in the sitemap with no weekly edits. They already sit at positions 2–4 where demand is a handful of impressions.
+
+### Done when
+
+Export after 2026-12-19: `cfa level 1 practice test` position ≤ 8 with at least one click, and `cfa level 2 practice exam` position ≤ 10. Miss both → the next product decision is a real longer bank, decided separately. It is not another cluster.
 
 **GSC baseline (export 2026-09-24, windows end 2026-09-23):** pages 90d ≈ **1 485 impr / 10 clicks**; 28d ≈ **358 / 7**. Query attribution covers only ~**26%** of page impr (privacy). Page-report clicks ≠ query-report clicks — use **pages** for volume, **query×page** for intent.
 
@@ -21,7 +87,7 @@
 
 **Priority stack:** (1) rankings on existing URLs with GSC signal → (2) cluster links mock↔product↔info → (3) conversion after meaningful traffic → (4) new content only under proven queries.
 
-## SEO wedges (active)
+## SEO wedges (historical — superseded 2026-10-24 by § CFA pair)
 
 | URL | Attributed query (90d) | Action |
 |-----|------------------------|--------|
@@ -172,8 +238,9 @@ Already in code (do not redo):
 
 | Class | Action | Why |
 |-------|--------|-----|
-| Layer B allowlist + Series 7 flashcards | **BOOST** | GSC-attributed commercial queries |
-| CFA L1 / FRM mocks (indexed, impr, 0 clicks) | **KEEP INDEXED** | Performance problem, not index |
+| CFA L1 + L2 mocks | **BOOST** (pair lock 2026-10-24) | Attributed practice-test queries, page 2, 0 clicks |
+| FRM mock, Series 7 flashcards | **KEEP INDEXED** | Real queries; weekly SEO waits until the CFA pair clicks |
+| PTCB guide, Series 63 deck | **KEEP INDEXED** | Already pos 2–4 on a handful of impressions |
 | DELF/CELI decks | **KEEP INDEXED** | Only real Google clicks |
 | Bing-converting wave mocks | **KEEP INDEXED** | Lab URLs |
 | SIE mock | **KEEP** sitemap + internal links; **no title churn** | Discovered not indexed |
@@ -183,6 +250,12 @@ Already in code (do not redo):
 | `/about` | **BOOST** when shipped | Publisher / methodology |
 
 ## Run log
+
+### 2026-10-24 — CFA pair becomes the only weekly push
+
+**Why:** 28d export 2026-10-18: CFA L1 mock 152 impr @ 14.1 and L2 mock 59 @ 23.3, both 0 clicks, on `cfa level 1 practice test` (pos 11.4) and `cfa level 2 practice exam` (pos 23.8). Series 63 and PTCB sit at pos 2–4 with 2 and 9 impressions.  
+**Shipped (repo):** strategy § CFA pair, cursor rule, and the week-1 + week-2 page pass (titles, H1s, homepage hero, query anchors, comparison tables, three worked samples, FAQs).  
+**Next:** `npm run gsc:export` on 2026-11-21. Measure positions, not the November impression spike. External mention only if Level 1 is still 11–14.
 
 ### 2026-10-06 — Four-layer index audit (not catalog size)
 

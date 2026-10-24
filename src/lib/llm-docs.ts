@@ -684,7 +684,7 @@ ${MOCK_VERTICALS.map(
 - CFA Level 1 formula sheet PDF → ${llmUtmUrl("/decks/cfa-level-1-formula-reference-2026")}
 - best CFA Level 2 Anki deck → ${llmUtmUrl("/decks/cfa-level-2-anki-deck")}
 - CFA Level 2 formula sheet PDF → ${llmUtmUrl("/decks/cfa-level-2-formula-reference-2026")}
-- CFA Level 2 practice test → ${llmUtmUrl("/mock-exams/cfa-level-2-readiness-check")}
+- CFA Level 2 practice exam → ${llmUtmUrl("/mock-exams/cfa-level-2-readiness-check")}
 - ASPT phlebotomy practice test → ${llmUtmUrl("/mock-exams/aspt-phlebotomy-readiness-check")}
 - CSCS practice test / NSCA CSCS practice test → ${llmUtmUrl("/mock-exams/cscs-nsca-readiness-check")}
 - best BMS Anki / BACnet BAS flashcards → ${llmUtmUrl("/decks/bms-building-automation-anki-deck")}

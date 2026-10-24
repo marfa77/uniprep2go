@@ -110,8 +110,7 @@ const popularDeckBoostLinks = [
 ] as const;
 
 const heroSecondaryLinks = [
-  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM 25Q free" },
-  { href: "/decks/series-7-anki-deck", label: "Series 7 Anki deck" },
+  { href: "/mock-exams/frm-part-1-readiness-check", label: "FRM Part 1" },
   { href: "/mock-exams", label: "Browse all exams" },
 ] as const;
 
@@ -270,34 +269,34 @@ export default async function HomePage() {
         source="mock:cfa-level-1-readiness-check:home"
       />
       <main id="main-content" tabIndex={-1}>
-        {/* 1. Hero — CFA / FRM / Series 7 (Bing + ChatGPT, 2026-10-16). Free slice is 25Q. */}
+        {/* 1. Hero — CFA Level 1 practice test (pair lock 2026-10-24). */}
         <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
           <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
             <div>
               <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                CFA · FRM · Series 7
+                Free · no signup
               </p>
               <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                25Q Free + Anki Decks
+                CFA Level 1 Practice Test
               </h1>
               <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                CFA Level 1, FRM Part 1, and Series 7. The free start is 25 questions, no signup.
-                The full timed mock scores weak topics, then the matching Anki deck drills only those.
+                25 questions free, no signup. The full timed mock is 60 questions in 90 minutes
+                and scores every topic. The matching Anki deck drills only the weak ones.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <Link
                   href="/mock-exams/cfa-level-1-readiness-check"
                   className={btnPrimary}
-                  aria-label="Start the free 25-question CFA Level 1 diagnostic"
+                  aria-label="Start the CFA Level 1 practice test"
                 >
-                  Start CFA 25Q Free
+                  Start the CFA Level 1 practice test
                 </Link>
                 <Link
-                  href="/decks/frm-part-1-anki-deck"
+                  href="/mock-exams/cfa-level-2-readiness-check"
                   className={btnSecondary}
-                  aria-label="Open the FRM Part 1 Anki deck, $9.99"
+                  aria-label="Open the CFA Level 2 practice exam"
                 >
-                  FRM Anki · $9.99
+                  CFA Level 2 practice exam
                 </Link>
               </div>
               <p className="mt-5 text-sm text-[#5f5749]">

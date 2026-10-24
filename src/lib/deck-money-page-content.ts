@@ -1097,7 +1097,7 @@ Ethics cards apply each Standard from I(A) to VII(B), the decision framework and
 
 ### 60-day study plan with the formula reference and free mock
 
-**Days 60–45:** 20 new cards per day across ethics and quant while skimming curriculum readings. **Days 44–30:** Print weak-topic tables from the [matching CFA Level 1 formula sheet](/decks/cfa-level-1-formula-reference-2026); run the [60-question readiness check (free 25-question version)](/mock-exams/cfa-level-1-readiness-check). **Days 29–7:** Review only — take the reference's 80-question recall drill; retake the mock weekly. **Final week:** Ethics-only Anki passes plus flagged formulas from both drill answer keys.
+**Days 60–45:** 20 new cards per day across ethics and quant while skimming curriculum readings. **Days 44–30:** Print weak-topic tables from the [matching CFA Level 1 formula sheet](/decks/cfa-level-1-formula-reference-2026); run the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) (25 free, then 60 questions / 90 minutes). **Days 29–7:** Review only — take the reference's 80-question recall drill; retake the mock weekly. **Final week:** Ethics-only Anki passes plus flagged formulas from both drill answer keys.
 
 ### Pitfalls this deck targets
 
@@ -1109,7 +1109,7 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
 ### Study plan with the free mock and formula reference
 
-**Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [60-question CFA Level 2 mock (free 25-question version)](/mock-exams/cfa-level-2-readiness-check). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
+**Weeks 1–2:** 20 new cards/day across ethics and FSA. **Week 3:** Run the [CFA Level 2 practice exam](/mock-exams/cfa-level-2-readiness-check) (25 free, then 60 vignette questions / 120 minutes). **Week 4+:** Drill only weak topics from the report; pair with the [Level 2 formula reference PDF](/decks/cfa-level-2-formula-reference-2026) for printable recall tables.
 
 Official CFA Level 2 is 88 item-set questions in 22 vignettes (4 hours 24 minutes; 20 scored sets + 2 trial) — this 60-question, 120-minute mock is a shorter diagnostic, not a CFA Institute mock.
 
@@ -1123,7 +1123,7 @@ Level 2 failures often come from mis-applying inventory and lease adjustments in
 
 ### Study plan with the free mock and Anki deck
 
-**Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [60-question CFA Level 2 mock](/mock-exams/cfa-level-2-readiness-check) — free 25-question diagnostic, no signup — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
+**Week 1:** Print weak-topic tables (Fixed Income, Equity, FSA first). **Week 2:** Run the 80-question recall drill timed; review every explanation. **Week 3:** Take the [CFA Level 2 practice exam](/mock-exams/cfa-level-2-readiness-check) — 25 questions free, no signup, then 60 vignette questions — and map topic gaps back to the PDF tables. **Week 4+:** Drill missed formulas in the [495-card Level 2 Anki deck](/decks/cfa-level-2-anki-deck) between mock retakes.
 
 Official CFA Level 2 is 88 item-set questions in 22 vignettes over 4 hours 24 minutes — this PDF is a recall companion, not CFA Institute curriculum.
 
@@ -1841,7 +1841,7 @@ Official DELE/SIELE registration, CCSE booking, residency paperwork, or Institut
 
 ### Four-week recall plan with the Anki deck and free mock
 
-**Week 1:** Quant and FRA tables + 20 [CFA Anki](/decks/cfa-level-1-anki-deck) cards/day. **Week 2:** Fixed income and derivatives tables. **Week 3:** Take the 80-question recall drill timed; run the [60-question mock (free 25-question version)](/mock-exams/cfa-level-1-readiness-check). **Week 4:** Re-print tables for lowest mock topics only; Anki review on missed drill questions.
+**Week 1:** Quant and FRA tables + 20 [CFA Anki](/decks/cfa-level-1-anki-deck) cards/day. **Week 2:** Fixed income and derivatives tables. **Week 3:** Take the 80-question recall drill timed; run the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) (25 free, then 60 questions / 90 minutes). **Week 4:** Re-print tables for lowest mock topics only; Anki review on missed drill questions.
 
 ### Pitfalls this reference targets
 

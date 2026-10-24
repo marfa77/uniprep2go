@@ -33,7 +33,7 @@ function explainer(input: NicheExamExplainer): NicheExamExplainer {
 
 export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = {
   "cfa-level-2-readiness-check": explainer({
-    practiceTestName: "CFA Level 2 Practice Test",
+    practiceTestName: "CFA Level 2 Practice Exam",
     whatIsExam:
       "CFA Level 2 is the second exam in the CFA Program. After Level 1’s broad foundations, Level 2 emphasizes application and analysis through item-set (vignette) questions across ten topic areas — Ethics, Quantitative Methods, Economics, Financial Statement Analysis, Corporate Issuers, Equity, Fixed Income, Derivatives, Alternatives, and Portfolio Management. Candidates who treat it like another Level 1 recognition quiz usually underperform; Level 2 rewards reading a case, selecting the right valuation or accounting judgment, and managing time across sets.",
     administeredBy:
@@ -84,6 +84,11 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
     ],
     examFaqs: [
       {
+        question: "Is this a full CFA Level 2 item-set mock?",
+        answer:
+          "No. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). This CFA Level 2 practice exam is 60 vignette questions in 120 minutes; the free start is 25 questions, no signup, with topic scores.",
+      },
+      {
         question: "What is the CFA Level 2 exam?",
         answer:
           "It is the second CFA Program exam. It focuses on applying Level 1 tools to analysis and valuation through vignette-style item sets across ten topic areas.",
@@ -96,7 +101,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is this UniPrep2Go check an official CFA Institute mock?",
         answer:
-          "No. It is an independent readiness diagnostic (60 questions, 90 minutes, 70% target; free 25-question version) with topic scoring. Use CFA Institute materials and mocks for official format practice.",
+          "No. It is an independent CFA Level 2 practice exam: 60 vignette questions, 120 minutes, 70% readiness target, free 25-question start. Use CFA Institute materials for the official 88-item item-set format.",
       },
       {
         question: "What score should I aim for on this readiness check?",

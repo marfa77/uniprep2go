@@ -33,21 +33,23 @@ No-perf-row in GSC pages CSV ≠ not indexed (Inspection: MLT mock indexed, 0 im
 
 **Do not** noindex Bing-converting wave mocks to “shrink inventory.” That kills the lab. Thin state-RE outside CA/FL/TX/NY is already noindex.
 
-**This week’s wedges (max 1–2 URLs):**
+**Active pair (locked 2026-10-24, through the 2026-12-19 GSC check):**
 
-1. `/decks/series-63-anki-deck` ← attributed `series 63 flashcards`
-2. `/decks/ptcb-study-guide-2026` ← attributed `ptcb outline 2026` (page pos~4 ≠ proven study-guide SERP)
+1. `/mock-exams/cfa-level-1-readiness-check` ← `cfa level 1 practice test` (28d: 20 impr @ 11.4, page 152 impr @ 14.1, 0 clicks)
+2. `/mock-exams/cfa-level-2-readiness-check` ← `cfa level 2 practice exam` (28d: 21 impr @ 23.8, page 59 impr @ 23.3, 0 clicks)
 
-**Keep · no scale:** DELF/CELI (real clicks), language catalog, AU Common Bond / CDL hazmat blogs.  
+Full 8-week plan: `docs/SEO_AUTOPILOT_STRATEGY.md` § CFA pair. Week 1 = query match on these two + homepage hero + six query-anchors. Week 4 = `npm run gsc:export`, then stop or one external mention. Target: L1 query ≤ 8 with a click; L2 query ≤ 10. Do not promise #1 against free 180-question L1 mocks. Do not stretch the 60Q session to 180 on a 120-item bank.
+
+**Keep · no weekly SEO:** PTCB, Series 63, Life & Health, FRM (pos ~10, waits for a CFA click), DELF/CELI, language catalog, AU Common Bond / CDL hazmat blogs.  
 **Ignore pos:** LEED AP O+M `site:` junk queries.
 
-## Exam tiers (Wave 1 — 2026-09-24)
+## Exam tiers (pair lock 2026-10-24)
 
 | Tier | Scope | Action |
 |------|--------|--------|
-| **A** | PTCB, Series 63, CFA L2, Life & Health | Homepage + Layer B push + mock-result conversion |
+| **A** | CFA L1 mock + CFA L2 mock | The only weekly SEO. Homepage hero. Query anchors from the four CFA decks/PDFs, the CFA-vs-FRM blog, and `/mock-exams` |
 | **A pilots** | EPA 608, ServSafe (live pairs) | Outcome CTAs only; **no new URLs** |
-| **B** | Other live money (CFA L1, FRM, building, …) | Maintain; no weekly churn |
+| **B** | PTCB, Series 63, Life & Health, FRM, CFA decks, building, … | Keep live; no weekly SEO churn |
 | **C** | Thin state RE, language churn, comics, new SKUs | Freeze |
 
 Deepen-in-place on `/mock-exams/*` + `/decks/*` + `/blog/*`. Do **not** build `/exams/{slug}/` until Tier A proves demand.
@@ -60,20 +62,16 @@ Dual-track — **not** weekly SIE/7/63 mock title churn:
 2. **Layer B — Push:** point-edit URLs already at **pos 8–25** into top 10. Max 1–2 URLs/week. One lever (title/meta/H1/directAnswer/FAQ + mock→deck CTA). Prefer GSC-attributed queries over hunches.
 3. **Layer C — FINRA long game:** reopen SIE → 7 → 63 mock SEO **only when** `sie-full-mock` ≠ unknown **and** ≥10 impr/28d **and** Series 63 deck pos ≤8.
 
-## Layer B allowlist (weekly)
+## Layer B allowlist (weekly, pair lock)
 
-- `/`
-- `/decks/ptcb-study-guide-2026` ← **active wedge** (outline/blueprint)
-- `/decks/series-63-anki-deck` ← **active wedge** (flashcards)
-- `/decks/cfa-level-2-formula-reference-2026`
-- `/blog/life-in-the-uk-test-why-one-in-three-fail`
-- `/mock-exams/life-and-health-insurance-readiness-check`
-
-Reserve: CA RE blog (pos 26–35), then `/mock-exams` hub.
+- `/mock-exams/cfa-level-1-readiness-check` ← **active**
+- `/mock-exams/cfa-level-2-readiness-check` ← **active**
+- `/` ← hero only, so the anchor says “CFA Level 1 practice test”
+- Query-anchor supports (edit the link, not a new SEO pass): `/decks/cfa-level-1-anki-deck`, `/decks/cfa-level-1-formula-reference-2026`, `/decks/cfa-level-2-anki-deck`, `/decks/cfa-level-2-formula-reference-2026`, `/blog/cfa-level-1-vs-frm-part-1-which-to-choose`, `/mock-exams`
 
 ## Homepage rule
 
-Hero must feature **live Layer B money** (PTCB, CFA L2, Series 63, Life & Health) with **outcome-first** copy (weak topics / readiness), not Anki-as-H1. Do **not** billboard SIE as primary CTA while `sie-full-mock` is unknown to Google. SIE may stay a secondary link. Do not dump the full catalog into the first viewport.
+First viewport is the **CFA Level 1 practice test**, second link the **CFA Level 2 practice exam**. Outcome = topic scores and the gaps to fix. FRM may stay a text link. The 8-exam strip stays below the fold. Do **not** billboard SIE as primary CTA while `sie-full-mock` is unknown to Google. Do not dump the full catalog into the first viewport.
 
 ## Freeze (keep live, no weekly SEO)
 

@@ -35,7 +35,12 @@ function buildFeaturedCards() {
       {
         slug: mock.slug,
         title: buildMockSeoTitle(mock),
-        shortTitle: mock.shortTitle,
+        shortTitle:
+          mock.slug === "cfa-level-1-readiness-check"
+            ? "CFA Level 1 practice test"
+            : mock.slug === "cfa-level-2-readiness-check"
+              ? "CFA Level 2 practice exam"
+              : mock.shortTitle,
         status: mock.status,
         questionCount: mock.questionCount,
         durationMinutes: mock.durationMinutes,
@@ -155,7 +160,15 @@ export default function MockExamsIndexPage() {
           Timed mock exams for US licensing &amp; finance — first one free
         </h1>
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {indexedCount} live indexed mocks across {verticals.length} exam paths
+          Start with the{" "}
+          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
+            CFA Level 1 practice test
+          </Link>{" "}
+          or the{" "}
+          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-2-readiness-check">
+            CFA Level 2 practice exam
+          </Link>
+          . {indexedCount} live indexed mocks across {verticals.length} exam paths
           {mocks.length - indexedCount > 0
             ? `, plus ${mocks.length - indexedCount} preview readiness checks`
             : ""}

@@ -226,10 +226,10 @@ export function finalize(meta: Metadata): Metadata {
 
 export function homeMetadata(): Metadata {
   // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  // 2026-10-16: Bing + ChatGPT traffic is CFA / FRM / Series 7. Free slice is 25Q.
-  const title = "CFA, FRM & Series 7 | 25Q Free + Anki Decks";
+  // 2026-10-24: homepage query anchor is the CFA Level 1 practice test.
+  const title = "CFA Level 1 Practice Test | 25Q Free";
   const description =
-    "CFA Level 1, FRM Part 1, and Series 7: the free start is 25 questions, no signup. Full timed mocks and matching Anki decks come after the topic readiness report. Independent exam prep.";
+    "Free CFA Level 1 practice test: 25 questions, no signup, then 60 in 90 minutes with topic scores. Next: the CFA Level 2 practice exam.";
 
   return finalize({
     title: {
@@ -254,7 +254,7 @@ export function homeMetadata(): Metadata {
       card: "summary_large_image",
       title,
       description:
-        "CFA, FRM, and Series 7: 25 questions free, then Anki decks for the weak topics.",
+        "Free CFA Level 1 practice test, 25 questions, no signup. Topic scores, then the CFA Level 2 practice exam.",
       images: ["/home/hero.webp"],
     },
   });

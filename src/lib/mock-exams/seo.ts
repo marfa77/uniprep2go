@@ -202,19 +202,26 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cfa-level-1-readiness-check": {
     title: "CFA Level 1 Practice Test | 25Q Free, 60Q Timed",
     description:
-      "CFA Level 1 practice test for 2026: free 25-question diagnostic, full mock 60 questions, 90 minutes, topic scores, 70% readiness target. Independent study aid, not CFA Institute material.",
+      "Free CFA Level 1 practice test: 25 questions, no signup, then 60 in 90 minutes with topic scores. Official exam: 180 questions, two 135-minute sessions.",
     keywords: [
       "cfa level 1 practice test",
-      "cfa level 1 mock exam",
+      "cfa practice test",
+      "cfa level 1 practice exam",
+      "cfa level 1 practice questions",
       "free cfa practice questions",
-      "cfa level 1 anki",
-      "cfa readiness check",
     ],
-    headline: "CFA Level 1 Practice Test — 25Q Free",
+    headline: "CFA Level 1 Practice Test",
     intro:
-      "A timed CFA Level 1 readiness diagnostic sampled across ethics, quant, economics, FRA, corporate issuers, equity, fixed income, derivatives, alternatives, and portfolio management — then drill weak topics in the linked $9.99 / 348-card Anki deck and printable formula reference. Official Level 1 is 180 multiple-choice questions across two sessions (~4 hours 30 minutes total), and CFA Institute sets the minimum passing score (MPS) after each administration — there is no fixed pass percentage. This check is a shorter diagnostic with a UniPrep2Go readiness target of 70%.",
-    audience: "CFA Level 1 candidates who want a weighted topic baseline before committing to a full mock provider.",
+      "This CFA Level 1 practice test starts free: 25 questions, no signup, then 60 questions in 90 minutes across all 10 topics, with topic scores and full answer review. The official Level I exam is 180 questions in two 135-minute sessions, three choices, and CFA Institute sets the minimum passing score after each sitting rather than publishing a fixed percentage. This page is that shorter diagnostic. Close weak topics with the linked Anki deck ($19, 348 cards) and the formula PDF. Not CFA Institute material.",
+    audience: "CFA Level 1 candidates who want a free topic-scored practice test before a full-length mock.",
     practiceTestLabel: "CFA Level 1 practice test",
+    examFaqs: [
+      {
+        question: "Is this the full CFA Level 1 exam?",
+        answer:
+          "No. The official Level I exam is 180 multiple-choice questions in two 135-minute sessions, with three answer choices, and CFA Institute sets the minimum passing score after each sitting. This CFA Level 1 practice test is 60 questions in 90 minutes; the free start is 25 questions, no signup, with topic scores.",
+      },
+    ],
   },
   "series-7-readiness-check": {
     title: "Series 7 Practice Test 2026 | 60Q Timed, 25Q Free",
@@ -1238,22 +1245,21 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "MRICS Quantity Surveying practice test",
   },
   "cfa-level-2-readiness-check": {
-    title: "Free CFA Level 2 Mock Exam 2026 | 60-Question Diagnostic",
+    title: "CFA Level 2 Practice Exam | 25Q Free, 60Q Timed",
     description:
-      "Free CFA Level 2 practice: 60 timed mini-vignette questions / 120 minutes across all 10 topics, then repair with the $9.99 / 495-card Level 2 Anki + formula PDF. Official L2 is 88 vignette-linked items / ~4h24 — this page is a shorter diagnostic. Independent — not CFA Institute material.",
+      "Free CFA Level 2 practice exam: 25 questions, no signup, then 60 vignettes in 120 minutes with topic scores. Official exam: 88 items, 22 vignettes, 4h24.",
     keywords: [
+      "cfa level 2 practice exam",
       "cfa level 2 practice test",
       "cfa level 2 mock exam",
       "free cfa level 2 questions",
-      "cfa level 2 readiness check",
-      "cfa level 2 anki",
       "cfa level 2 item set prep",
     ],
-    headline: "Free CFA Level 2 Readiness Check",
+    headline: "CFA Level 2 Practice Exam",
     intro:
-      "A timed 60-question / 120-minute CFA Level 2 readiness diagnostic with vignette-style application prompts across ethics, FSA, equity, fixed income, derivatives, and portfolio management — then drill weak topics in the linked 495-card Anki deck and Level 2 formula PDF. Official Level 2 is 88 vignette-linked multiple-choice items across two sessions (~4 hours 24 minutes total); this check is not a full-length item-set mock.",
-    audience: "CFA Level 2 candidates who passed Level 1 and want a baseline before item-set practice blocks.",
-    practiceTestLabel: "CFA Level 2 practice test",
+      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). CFA Institute sets the minimum passing score after each sitting and does not publish a fixed percentage. This page is the shorter diagnostic. Repair weak item sets with the linked Anki deck ($19, 495 cards). Not CFA Institute material.",
+    audience: "CFA Level 2 candidates who passed Level 1 and want a free vignette practice exam before a full item-set mock.",
+    practiceTestLabel: "CFA Level 2 practice exam",
   },
   "us-citizenship-readiness-check": {
     title: "Free U.S. Citizenship Practice Test 2026 | 30 Civics Questions",
@@ -1783,7 +1789,7 @@ export function buildMockSeoPageCopy(config: MockExamConfig) {
     officialSources: official.sources,
     isWaitlist: waitlist,
     whatIsHeading: niche
-      ? `What is the ${niche.practiceTestName.replace(/ Practice Test$/i, "")} exam?`
+      ? `What is the ${niche.practiceTestName.replace(/ Practice (Test|Exam)$/i, "")} exam?`
       : `What is the ${config.shortTitle} exam?`,
   };
 }

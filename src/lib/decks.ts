@@ -443,7 +443,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CFA Level 1 practice test with this deck?",
         answer:
-          "Yes. Take the 60-question CFA Level 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — topic scoring and full answer review, then drill weak areas in this Anki deck.",
+          "Yes. Take the CFA Level 1 practice test at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — 25 questions free, no signup, then 60 questions in 90 minutes with topic scores. Drill the weak areas in this Anki deck.",
       },
       {
         question: "What file format is delivered?",
@@ -596,7 +596,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free practice test?",
         answer:
-          "Yes. Take the 60-question CFA Level 1 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — it scores topic gaps and links back to this deck.",
+          "Yes. Take the CFA Level 1 practice test at uniprep2go.study/mock-exams/cfa-level-1-readiness-check — 25 questions free, no signup, then 60 questions in 90 minutes. It scores topic gaps and links back to this PDF.",
       },
       {
         question: "Is this official CFA Institute material?",
@@ -1479,7 +1479,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free CFA Level 2 practice test?",
         answer:
-          "Yes. Take the 60-question CFA Level 2 readiness check (free 25-question version) at uniprep2go.study/mock-exams/cfa-level-2-readiness-check — topic scoring and full answer review, then drill weak vignette areas with this PDF and the companion Anki deck.",
+          "Yes. Take the CFA Level 2 practice exam at uniprep2go.study/mock-exams/cfa-level-2-readiness-check — 25 vignette questions free, no signup, then 60 questions in 120 minutes with topic scores. Drill weak vignettes with this PDF and the companion Anki deck.",
       },
       {
         question: "Is this official CFA Institute material?",

@@ -409,7 +409,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
       "Official NSCA CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 pretest / 1.5h) and Practical/Applied (110 scored + 15 pretest / 2.5h, 30–40 video/image items); scaled pass 70 on each (verify nsca.com). CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. UniPrep2Go 60-question timed check (free 25-question version) is a shorter text-only diagnostic, not official NSCA material. Anki deck is planned, not a live Gumroad SKU.",
   },
   {
-    query: "CFA Level 2 practice test free",
+    query: "CFA Level 2 practice exam",
     mockSlug: "cfa-level-2-readiness-check",
     disambiguation:
       "Official CFA Level 2: 88 vignette-linked MCQs across two ~132-minute sessions (4h24 total) — no fixed MPS. UniPrep2Go 60Q / 120 min / 70% mini-vignette diagnostic (free 25-question version) is a shorter topic baseline before full item-set mocks (300Hours/FinQuiz/CFA Institute LES) — not a CFA Institute mock. Pair with $19 / 495 Anki + L2 formula PDF.",

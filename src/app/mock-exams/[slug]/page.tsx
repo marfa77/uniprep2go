@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { FunnelTracker } from "@/components/funnel-tracker";
@@ -294,6 +295,30 @@ export default async function MockExamPage({
           </p>
         ) : null}
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
+        {config.slug === "cfa-level-1-readiness-check" ? (
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Already through Level I? Sit the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams/cfa-level-2-readiness-check"
+            >
+              CFA Level 2 practice exam
+            </Link>
+            .
+          </p>
+        ) : null}
+        {config.slug === "cfa-level-2-readiness-check" ? (
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Still on Level I? Start with the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams/cfa-level-1-readiness-check"
+            >
+              CFA Level 1 practice test
+            </Link>
+            .
+          </p>
+        ) : null}
 
         <OfficialSourceTrustStrip
           className="mt-4 max-w-3xl"
@@ -356,12 +381,28 @@ export default async function MockExamPage({
         {showSampleQuestions ? (
           <MockSampleQuestionsSection
             config={config}
+            heading={
+              config.slug === "cfa-level-1-readiness-check"
+                ? "CFA Level 1 practice test questions"
+                : config.slug === "cfa-level-2-readiness-check"
+                  ? "CFA Level 2 practice exam questions"
+                  : undefined
+            }
             lead={
               config.slug === "sie-quick-diagnostic"
                 ? "These sample items mirror FINRA SIE domains. Correct answers and explanations unlock inside the 25-question diagnostic session."
-                : `These sample items mirror the domains in the timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`
+                : config.slug === "cfa-level-1-readiness-check" ||
+                    config.slug === "cfa-level-2-readiness-check"
+                  ? "Three worked items from this bank. The rest of the answer key unlocks inside the timed session."
+                  : `These sample items mirror the domains in the timed ${config.shortTitle} mock. Correct answers and explanations unlock inside the practice session.`
             }
             questions={questions}
+            workedCount={
+              config.slug === "cfa-level-1-readiness-check" ||
+              config.slug === "cfa-level-2-readiness-check"
+                ? 3
+                : 0
+            }
           />
         ) : null}
 

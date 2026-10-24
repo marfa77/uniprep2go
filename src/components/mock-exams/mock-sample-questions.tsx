@@ -8,6 +8,10 @@ type MockSampleQuestionsSectionProps = {
   questions: MockQuestion[];
   /** Optional niche-specific lead shown above the samples. */
   lead?: string;
+  /** Optional heading. Defaults to the mock short title. */
+  heading?: string;
+  /** Reveal the correct option and explanation for the first N samples. */
+  workedCount?: number;
 };
 
 const TEMPLATE_RE =
@@ -69,6 +73,8 @@ export function MockSampleQuestionsSection({
   config,
   questions,
   lead,
+  heading,
+  workedCount = 0,
 }: MockSampleQuestionsSectionProps) {
   const samples = pickMockSampleQuestions(questions, SAMPLE_COUNT, config.slug);
   if (samples.length === 0) {
@@ -78,7 +84,7 @@ export function MockSampleQuestionsSection({
   return (
     <section className="mt-10" id="sample-questions" aria-labelledby="sample-questions-heading">
       <h2 id="sample-questions-heading" className="text-2xl font-semibold tracking-tight">
-        Sample {config.shortTitle} practice questions
+        {heading ?? `Sample ${config.shortTitle} practice questions`}
       </h2>
       <p className="mt-4 max-w-3xl text-base leading-8 text-[#4f493e]">
         {lead ??
@@ -105,6 +111,19 @@ export function MockSampleQuestionsSection({
                 </li>
               ))}
             </ul>
+            {index < workedCount ? (
+              <p className="mt-3 text-sm leading-6 text-[#18140f]">
+                <span className="font-medium">
+                  Answer:{" "}
+                  {(
+                    question.options.find((option) => option.id === question.correctOptionId)?.id ??
+                    question.correctOptionId
+                  ).toUpperCase()}
+                  .
+                </span>{" "}
+                {question.explanation}
+              </p>
+            ) : null}
           </li>
         ))}
       </ol>
