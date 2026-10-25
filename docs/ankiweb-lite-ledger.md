@@ -90,3 +90,21 @@ Language LITE normally skipped (0–3 dl measured); user asked to share Survival
 | Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
 |---|---|---|---:|---|---|
 | 2026-10-24 | Portuguese Survival — Day-1 Speaking (40 cards) | [2033473710](https://ankiweb.net/shared/info/2033473710) | 40 | `/decks/portuguese-survival-anki-deck` | New — Sample (from 40 notes); 0.81MB · 40 audio |
+
+## 2026-10-25 — Day-14 check (Wave 2 shares dated 2026-10-13 / modified 2026-10-14)
+
+Owner table downloads (AnkiWeb My Shared, read 2026-10-25):
+
+| Title | Downloads | Decision |
+|---|---:|---|
+| CFA Level 2 — Application Deck (LITE · 50 cards) | **42** | Keep (was 36) |
+| IB Biology SL | **160** | Keep |
+| PMP Exam — Situational Questions | **7** | Keep |
+| prep2go EN Ukrainian / Spanish | 8 / 7 | Keep language rows that moved |
+| PTCB PTCE — Application Deck | **5** | Keep (edge of kill line) |
+| FRM Part 1 | 3 | Watch — &lt;5 |
+| NASAA Series 63 | 2 | Watch |
+| Danish A2 LITE | 2 | Watch |
+| ACE CPT · EPA 608 · Series 7 · GRE · NMLS MLO · Norwegian · Swedish | **0** | Do **not** stack more language / zero-dl exam LITEs; no unshare without ask |
+
+Day-14 rule: kill/rewrite only if &lt;5 **and** a competitor in the same search is moving — flag zeros, do not mass-unshare today.

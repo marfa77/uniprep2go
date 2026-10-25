@@ -14,6 +14,7 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-10-25 | `cfa-level-1-readiness-check` · `cfa-level-2-readiness-check` | — | Sunday ritual | — | Live-verify Week 1; `gsc:export` 2026-10-25; AnkiWeb day-14 on 13.10 shares; `sku:status` + daily-plan regen | L1 query 10@11.1 · L2 15@24.5 · 0 clicks. Next = Week 2–3 proof |
 | 2026-10-24 | `cfa-level-1-readiness-check` · `cfa-level-2-readiness-check` | `cfa-level-1-anki-deck` · `cfa-level-1-formula-reference-2026` · `cfa-level-2-anki-deck` · `cfa-level-2-formula-reference-2026` | SEO copy only — banks untouched | — | Homepage hero, hub + blog anchors, comparison tables, 3 worked samples, llms cite | Pair lock: `cfa level 1 practice test` + `cfa level 2 practice exam`. $19 in the intros |
 | 2026-10-24 | — | `portuguese-survival-anki-deck` | AnkiWeb sample 40 | scene-weighted pick from FULL GUIDs | Shared [2033473710](https://ankiweb.net/shared/info/2033473710) — title without LITE; public in ~24h | User override language LITE |
 | 2026-10-24 | — | `portuguese-survival-anki-deck` | 344 moves validate; apkg 5.6MB | 9 scene writers (Say/Hear/Repair) | Google pt-PT TTS → `Portuguese_Survival_PT_PT_Anki_Deck.apkg` on Gumroad; samples CDN; site/SEO/money/llms 344 speaking-moves copy | Survival v2 — not CIPLE cut |

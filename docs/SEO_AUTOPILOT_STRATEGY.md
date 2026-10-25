@@ -25,6 +25,8 @@ Same L1 URL also holds `cfa practice test` (23 @ 13.8), `cfa practice exam level
 
 ### Week 1 — query match + anchors (one ship)
 
+**Done / live-verified 2026-10-25.** Titles, H1s, intros ($19), homepage hero, and query-phrase anchors on the six supports are on production. GSC 28d (export 2026-10-25): L1 query `cfa level 1 practice test` 10 impr @ **11.1** (0 clicks); L2 `cfa level 2 practice exam` 15 impr @ **24.5** (0 clicks). Next lever = Week 2–3 proof on the same two URLs — not another title pass.
+
 Touch only the pair, the homepage hero, and the six supporting links. One lever.
 
 1. **L1.** Title already says `CFA Level 1 Practice Test`. H1 stays that query; move “25Q free” to the subhead. First 80 words answer the query: free, no signup, 25 questions, then 60 questions / 90 minutes, 10 topics, topic scores. Next sentence states the official exam (180 questions, two 135-minute sessions, 3 choices, MPS set after the sitting and not a published percent) and that this page is the shorter diagnostic. Replace the stale `$9.99` Anki price in this intro with the catalog **$19**.
