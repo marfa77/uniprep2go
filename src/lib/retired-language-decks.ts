@@ -9,6 +9,7 @@ export const PREP2GO_SHOP_URL = "https://www.prep2go.study/shop";
 
 export const RETIRED_LANGUAGE_DECK_REDIRECTS = {
   "ciple-a2-european-portuguese-anki-deck": "https://www.prep2go.study/shop/ciple-a2-anki-deck",
+  "ciple-a2-for-russian-speakers-anki-deck": "https://www.prep2go.study/shop/ciple-a2-anki-deck",
   "dele-a2-spanish-anki-deck": "https://www.prep2go.study/shop/dele-a2-anki-deck",
   "dele-a2-ccse-spanish-citizenship-bundle": "https://www.prep2go.study/shop/dele-a2-anki-deck",
   "delf-b2-french-anki-deck": "https://www.prep2go.study/shop/delf-a2-anki-deck",

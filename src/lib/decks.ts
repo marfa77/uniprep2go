@@ -1656,6 +1656,86 @@ const rawDecks: Deck[] = [
     ],
   },
   {
+    slug: "ciple-a2-for-russian-speakers-anki-deck",
+    category: "language",
+    status: "available",
+    title: "CIPLE A2 for Russian Speakers Anki Deck — 2043 Flashcards",
+    shortName: "CIPLE A2 for Russian Speakers",
+    subtitle:
+      "2,043 European Portuguese flashcards for CIPLE / CAPLE A2 — with Russian translations on every card.",
+    directAnswer:
+      "UniPrep2Go sells a CIPLE A2 for Russian Speakers Anki deck with 2,043 European Portuguese (PT-PT) vocabulary cards, Russian translations of each word and example sentence, native Portuguese audio, and illustrations. Built from the Prep2Go app bank for Russian-speaking candidates preparing CAPLE CIPLE A2 for Portuguese residency (autorização de residência) and citizenship (nacionalidade portuguesa) language evidence. It is delivered as an Anki .apkg file for {PRICE} through Gumroad by PixID Studio. Distinct from the English-gloss CIPLE deck — not Portugal nacionalidade civics.",
+    lastUpdated: "2026-10-26",
+    audience:
+      "Russian-speaking CIPLE / CAPLE A2 candidates and Portugal residency or citizenship applicants who want PT-PT vocabulary with Russian support.",
+    format: ".apkg",
+    coverImage: "/covers/ciple-a2-for-russian-speakers-anki-deck.webp",
+    checkoutUrl:
+      "https://pixidstudio.gumroad.com/l/ciple-a2-for-russian-speakers-anki-deck?wanted=true",
+    checkoutProvider: "Gumroad",
+    checkoutSeller: "PixID Studio",
+    facts: {
+      cards: "2043",
+      topics:
+        "CIPLE / CAPLE A2, Portuguese residency and citizenship vocabulary with Russian bilingual support",
+      formulas: "Audio + Russian glosses + bilingual example sentences",
+      examYear: "Current CAPLE / Portuguese nationality cycle",
+      delivery: "Digital download through Gumroad",
+    },
+    topicCoverage: [],
+    sampleCards: [
+      {
+        question: "o código postal",
+        answer:
+          "почтовый индекс",
+        imageUrl: "/samples/ciple-a2-for-russian-speakers-anki-deck-sample-1.webp",
+      },
+      {
+        question: "a farmácia de serviço",
+        answer:
+          "дежурная аптека",
+        imageUrl: "/samples/ciple-a2-for-russian-speakers-anki-deck-sample-2.webp",
+      },
+      {
+        question: "a loja do cidadão",
+        answer:
+          "Loja do Cidadão",
+        imageUrl: "/samples/ciple-a2-for-russian-speakers-anki-deck-sample-3.webp",
+      },
+    ],
+    faqs: [
+      {
+        question: "Which Portuguese pathways does this deck cover?",
+        answer:
+          "CIPLE A2 (CAPLE / University of Lisbon) — the main A2 diploma for Portuguese residency and citizenship language requirements — with Russian glosses on every card. Pair Anki with CAPLE sample papers for timed exam practice.",
+      },
+      {
+        question: "How is this different from the CIPLE CAPLE Portuguese Citizenship deck?",
+        answer:
+          "This listing is the Russian-support edition: Portuguese on the front, the Russian translation and a Portuguese example sentence with its Russian translation on the back. The general CIPLE CAPLE deck uses English glosses. Pick the language support that matches how you study.",
+      },
+      {
+        question: "Is this European Portuguese or Brazilian?",
+        answer:
+          "European Portuguese (PT-PT) for CAPLE CIPLE. Brazilian Portuguese word lists are a poor fit for CIPLE and Portuguese nationality language checks.",
+      },
+      {
+        question: "Is this the same as Portugal nacionalidade civics?",
+        answer:
+          "No. This is CIPLE / CAPLE A2 language vocabulary. Portugal nacionalidade civic knowledge is a separate track — take the free Portugal Nacionalidade readiness check and use the separate Portugal Nacionalidade Anki deck for that.",
+      },
+      {
+        question: "What does the deck include?",
+        answer:
+          "2,043 European Portuguese vocabulary cards from the Prep2Go app: Russian translations of each word and example sentence, native Portuguese audio, and illustrations.",
+      },
+      {
+        question: "What file format is delivered?",
+        answer: "An Anki-compatible .apkg file delivered through Gumroad after checkout.",
+      },
+    ],
+  },
+  {
     slug: "delf-b2-french-anki-deck",
     category: "language",
     status: "available",

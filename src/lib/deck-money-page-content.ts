@@ -1174,6 +1174,22 @@ Survival is a closed loop of situations, not a 1,000-word frequency list. Unique
 **Week 1:** Foundations + numbers/money/time — say every Say card aloud with audio. **Week 2:** Shop + health + directions. **Weeks 3–4:** Housing, transport, docs, social + heavy Hear/Repair review. Preview the three sample cards on this page before purchase.
 `,
 
+  "ciple-a2-for-russian-speakers-anki-deck": `### Which Portuguese pathways this deck targets
+
+**CIPLE A2** (CAPLE / University of Lisbon) for **autorização de residência** and **nacionalidade portuguesa** language evidence. This deck packages that PT-PT bank for **Russian speakers**: Portuguese headword, Russian translation, a Portuguese example sentence with its Russian translation, native Portuguese audio, and an image on each card. It is vocabulary recall — not a timed CIPLE mock and not Portugal nacionalidade civics.
+
+### Study plan
+
+Aim for six to eight weeks of daily Anki before your CIPLE date: 20–25 new cards on weekdays. Say each Portuguese example out loud before flipping; check the Russian translation only after you have tried to recall the meaning. In the last ten days, stop adding cards and clear overdue reviews while you take CAPLE sample papers.
+
+### Pitfalls this deck targets
+
+Russian-speaking learners translate every sentence into Russian under time pressure, skip listening to PT-PT audio, and study Brazilian word lists instead of European Portuguese. Bilingual examples + Portuguese audio reduce translation dependence.
+
+### What makes this Gumroad edition different
+
+Russian-support CIPLE A2 framing on Gumroad — distinct from the English-gloss CIPLE CAPLE Citizenship deck.`,
+
   "ciple-a2-european-portuguese-anki-deck": `### Which Portuguese pathways this deck targets
 
 **CIPLE A2 (CAPLE)** is the University of Lisbon A2 diploma many candidates use as language evidence for Portuguese residency and citizenship. The same European Portuguese (PT-PT) high-frequency lexicon supports **autorização de residência** and **nacionalidade portuguesa** paperwork even when the exact certificate name on your case differs. Formats and bureaucracy change — everyday PT-PT vocabulary does not.

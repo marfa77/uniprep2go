@@ -167,6 +167,22 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     intro:
       "Applicants using CIPLE A2 for Portuguese residency or citizenship drill European Portuguese vocabulary daily, then practice speaking and official-style exam tasks separately.",
   },
+  "ciple-a2-for-russian-speakers-anki-deck": {
+    title: "CIPLE A2 for Russian Speakers Anki | 2043 Cards",
+    headline: "CIPLE A2 for Russian Speakers — 2043 Flashcards",
+    studyLabel: "CIPLE A2 for Russian speakers exam prep",
+    description:
+      "CIPLE / CAPLE A2 European Portuguese Anki deck with 2,043 flashcards for Russian speakers — Russian translations of words and example sentences, and native PT-PT audio. Independent study aid — not official CAPLE material.",
+    keywords: [
+      "ciple for russian speakers anki",
+      "португальский для русских anki",
+      "ciple a2 russian flashcards",
+      "caple a2 bilingual russian",
+      "portuguese citizenship russian anki",
+    ],
+    intro:
+      "Russian-speaking CIPLE / CAPLE A2 candidates use bilingual European Portuguese vocabulary recall with Russian support before timed CAPLE practice. Not Portugal nacionalidade civics.",
+  },
   "dutch-a2-inburgering-anki-deck": {
     title: "Dutch Inburgering NT2 A2 Anki Deck | 1897 Cards",
     headline: "Dutch Inburgering NT2 A2 Prep — 1897 Flashcards",

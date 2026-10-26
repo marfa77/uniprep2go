@@ -24,6 +24,49 @@ OUT_DIR = ROOT / "landing-pages/language"
 
 # Multi-pathway cold-traffic copy — Gumroad buyers often have zero site context.
 SPECS: dict[str, dict[str, Any]] = {
+    "ciple-a2-for-russian-speakers-anki-deck": {
+        "label": "CIPLE A2 for Russian Speakers",
+        "headline": "CIPLE A2 for Russian Speakers Anki Deck — 2043 Flashcards",
+        "exam": "CIPLE / CAPLE A2 · residency & citizenship — for Russian speakers",
+        "hook": (
+            "European Portuguese vocabulary for Russian speakers preparing CIPLE / CAPLE A2 — "
+            "Russian glosses and bilingual examples on every card."
+        ),
+        "audience": (
+            "For Russian-speaking CIPLE / CAPLE A2 and Portugal residency or citizenship "
+            "applicants who want PT-PT with Russian support — not Portugal nacionalidade civics."
+        ),
+        "disclaimer": "CAPLE / University of Lisbon",
+        "about_heading": "Who is this CIPLE deck for?",
+        "about": (
+            "Russian speakers preparing CIPLE A2 for residency and nationality language "
+            "evidence share the same high-frequency European Portuguese lexicon. This deck "
+            "packages that bank with Russian glosses and bilingual examples. It is distinct "
+            "from the English-gloss CIPLE CAPLE deck and not a nacionalidade civics pack."
+        ),
+        "pathways": "CIPLE A2 · CAPLE A2 · autorização de residência · nacionalidade · Russian support",
+        "deck_covers": (
+            "2,043 PT-PT vocabulary cards with Russian glosses, bilingual examples, "
+            "native Portuguese audio, and illustrations."
+        ),
+        "not_included": (
+            "Official CAPLE past papers, speaking-partner practice, or citizenship civics content "
+            "(see Portugal Nacionalidade Anki). Not Brazilian Portuguese glosses."
+        ),
+        "why_anki": (
+            "CIPLE and residency deadlines reward consistent PT-PT recall. Russian support "
+            "speeds early comprehension while audio forces European Portuguese under pressure."
+        ),
+        "cards": "2043",
+        "format_note": "Anki .apkg with audio, images, and Russian glosses",
+        "sample_captions": ["o código postal", "a farmácia de serviço", "a loja do cidadão"],
+        "facts": [
+            ("Pathways", "CIPLE / CAPLE · residency · citizenship"),
+            ("Cards", "2043 vocabulary"),
+            ("Support", "Russian glosses"),
+            ("Delivery", "Instant .apkg"),
+        ],
+    },
     "ciple-a2-european-portuguese-anki-deck": {
         "label": "CIPLE CAPLE Portuguese Citizenship",
         "headline": "CIPLE CAPLE Portuguese Citizenship Anki Deck — 2058 Flashcards",

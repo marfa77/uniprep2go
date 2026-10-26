@@ -1,6 +1,6 @@
 # SKU status board
 
-Generated 2026-10-25 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-10-26 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
@@ -227,7 +227,7 @@ Products without a mock and catalog totals: bottom of this file.
 | … with a planned Anki pair | 114 |
 | Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
 | Catalog decks total (`decks.ts`) | 235 (available 107) |
-| Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 27 |
+| Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 28 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.
 
@@ -298,6 +298,7 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `ielts-toefl-english-for-arabic-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-arabic-speakers-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-portuguese-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-portuguese-speakers-anki-deck | — |
 | reviewed | `ciple-a2-european-portuguese-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | 2026-10-24 |
+| reviewed | `ciple-a2-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | 2026-10-26 |
 | reviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | 2026-10-18 |
 | reviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | 2026-10-18 |
 | reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |

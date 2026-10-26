@@ -55,6 +55,23 @@ const SPECS = {
     apkgRelPaths: ["prep2go_Portuguese_A2_CIPLE/prep2go_Portuguese_A2_CIPLE_FULL.apkg"],
     fileNames: ["CIPLE_CAPLE_Portuguese_Citizenship_Anki_Deck.apkg"],
   },
+  "ciple-a2-for-russian-speakers-anki-deck": {
+    name: "CIPLE A2 for Russian Speakers Anki Deck — 2043 Flashcards",
+    summary:
+      "2,043 European Portuguese CIPLE / CAPLE A2 cards with Russian translations on every card.",
+    descriptionHtml: [
+      "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>Russian speakers</strong> preparing <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
+      "<p><strong>2,043</strong> PT-PT cards with Russian translations of each word and example sentence, native Portuguese audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
+      "<p>Distinct from the English-gloss CIPLE CAPLE deck. Not Portugal nacionalidade civics (see the separate Portugal Nacionalidade Anki deck).</p>",
+      "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
+      "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
+    ].join(""),
+    coverPath: "public/covers/ciple-a2-for-russian-speakers-anki-deck.webp",
+    apkgRelPaths: [
+      "prep2go_Portuguese_A2_CIPLE_Russian_Speakers/prep2go_Portuguese_A2_CIPLE_Russian_Speakers_FULL.apkg",
+    ],
+    fileNames: ["CIPLE_A2_for_Russian_Speakers_Anki_Deck.apkg"],
+  },
   "portuguese-survival-anki-deck": {
     name: "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
     summary:
