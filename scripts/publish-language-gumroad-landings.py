@@ -22,6 +22,410 @@ CDN_CACHE_PATH = ROOT / "src/data/gumroad/language-sample-cdn.json"
 SAMPLES_DIR = ROOT / "public/samples"
 OUT_DIR = ROOT / "landing-pages/language"
 
+# UI chrome for for-X-speakers landings (support-language). Default = English.
+UI_BY_LANG: dict[str, dict[str, str]] = {
+    "en": {
+        "prep_for": "Prep for {exam} · PixID Studio",
+        "buy": "Buy —",
+        "get_access": "Get instant access —",
+        "view_prep2go": "View on Prep2Go",
+        "view_uniprep": "View on UniPrep2Go",
+        "sold_by": "Sold by PixID Studio on Gumroad — the same Anki bank used on Prep2Go and UniPrep2Go. Independent {exam} study aid. Delivered as {format} for",
+        "not_official": "Not official {disclaimer} material.",
+        "exams_label": "Exams & pathways",
+        "pathways": "Pathways:",
+        "covers": "What this deck covers:",
+        "not_included": "Not included:",
+        "why_anki": "Why Anki:",
+        "official_note": "Independent study aid — not affiliated with or endorsed by {disclaimer}. Always verify current exam rules with the official body.",
+        "samples_h": "Sample cards",
+        "samples_p": "Real preview cards from the deck — vocabulary with image cues (audio in the .apkg).",
+        "glance_h": "Deck at a glance",
+        "cards_label": "Cards",
+        "flashcards": "flashcards",
+        "file_label": "File",
+        "pathways_label": "Pathways",
+        "delivery_label": "Delivery",
+        "delivery_value": "Instant Gumroad download",
+        "faq_h": "FAQ",
+        "faq_exams": "Which exams / pathways is this for?",
+        "faq_who": "Who should buy this deck?",
+        "faq_cover": "What does the deck cover — and what is missing?",
+        "faq_covers": "Covers:",
+        "faq_missing": "Not included:",
+        "faq_download": "What is included in the download?",
+        "faq_download_a": "{cards} Anki flashcards — {format}. Instant Gumroad library download.",
+        "faq_import": "How do I import into Anki?",
+        "faq_import_a": "Download the .apkg from Gumroad → Anki desktop → File → Import → select the file. Sync to AnkiMobile or AnkiDroid via AnkiWeb.",
+        "faq_official": "Is this official exam material?",
+        "faq_official_a": "No. Independent study aid — not affiliated with, endorsed by, or sponsored by {disclaimer}. Always verify current exam rules on the official site.",
+        "faq_pass": "Will this guarantee I pass?",
+        "faq_pass_a": "No. The deck improves vocabulary retention and exam readiness; results depend on consistent study plus official practice.",
+        "faq_refund": "Refunds?",
+        "faq_refund_a": "Digital download — all sales final.",
+        "ready_h": "Ready to study?",
+        "ready_p": "One-time purchase. Instant .apkg download. Multi-pathway vocabulary for cold Gumroad traffic.",
+        "want_this": "I want this — instant download",
+        "footer_legal": "Independent study aid · Not official {disclaimer} material · Digital download — all sales final.",
+        "benefit_built": "Built for {exam}",
+        "benefit_cards": "{cards} cards — {format}",
+        "benefit_fields": "Headword + meaning + example + audio (where included)",
+        "benefit_pathways": "Multi-pathway framing for the related exams / immigration routes",
+        "benefit_delivery": "Instant Gumroad download · sync to mobile via AnkiWeb",
+        "meta": "{cards} Anki flashcards for {exam}. Vocabulary with audio — independent prep, not official {disclaimer} material.",
+    },
+    "ru": {
+        "prep_for": "Подготовка к {exam} · PixID Studio",
+        "buy": "Купить —",
+        "get_access": "Скачать сразу —",
+        "view_prep2go": "На Prep2Go",
+        "view_uniprep": "На UniPrep2Go",
+        "sold_by": "Продаёт PixID Studio на Gumroad — та же Anki-колода, что на Prep2Go и UniPrep2Go. Независимая подготовка к {exam}. Формат: {format}, цена",
+        "not_official": "Не официальные материалы {disclaimer}.",
+        "exams_label": "Экзамены и пути",
+        "pathways": "Пути:",
+        "covers": "Что в колоде:",
+        "not_included": "Чего нет:",
+        "why_anki": "Зачем Anki:",
+        "official_note": "Независимый учебный материал — без аффилиации с {disclaimer}. Актуальные правила всегда сверяйте на официальном сайте.",
+        "samples_h": "Примеры карточек",
+        "samples_p": "Реальные карточки из колоды — слово, картинка (аудио внутри .apkg).",
+        "glance_h": "Колода кратко",
+        "cards_label": "Карточки",
+        "flashcards": "карточек",
+        "file_label": "Файл",
+        "pathways_label": "Пути",
+        "delivery_label": "Доставка",
+        "delivery_value": "Мгновенная загрузка с Gumroad",
+        "faq_h": "Вопросы",
+        "faq_exams": "Для каких экзаменов и путей эта колода?",
+        "faq_who": "Кому подойдёт?",
+        "faq_cover": "Что покрывает колода — и чего в ней нет?",
+        "faq_covers": "Есть:",
+        "faq_missing": "Нет:",
+        "faq_download": "Что я получу после оплаты?",
+        "faq_download_a": "{cards} карточек Anki — {format}. Сразу в библиотеке Gumroad.",
+        "faq_import": "Как импортировать в Anki?",
+        "faq_import_a": "Скачайте .apkg с Gumroad → Anki на компьютере → Файл → Импорт → выберите файл. Синхронизация на телефон через AnkiWeb.",
+        "faq_official": "Это официальные материалы экзамена?",
+        "faq_official_a": "Нет. Независимый учебный продукт PixID Studio, без связи с {disclaimer}. Правила экзамена сверяйте на официальном сайте.",
+        "faq_pass": "Гарантирует ли колода сдачу?",
+        "faq_pass_a": "Нет. Она ускоряет запоминание словаря; результат зависит от регулярных занятий и официальных пробников.",
+        "faq_refund": "Возврат?",
+        "faq_refund_a": "Цифровая загрузка — продажи окончательные.",
+        "ready_h": "Готовы заниматься?",
+        "ready_p": "Разовая оплата. Мгновенная загрузка .apkg. Словарь под экзамен и иммиграционные пути.",
+        "want_this": "Хочу — скачать сразу",
+        "footer_legal": "Независимый учебный материал · Не официальные материалы {disclaimer} · Цифровая загрузка — без возврата.",
+        "benefit_built": "Под {exam}",
+        "benefit_cards": "{cards} карточек — {format}",
+        "benefit_fields": "Слово + перевод + пример + аудио (где есть)",
+        "benefit_pathways": "Формулировки под связанные экзамены и иммиграционные пути",
+        "benefit_delivery": "Мгновенная загрузка с Gumroad · синхронизация на телефон через AnkiWeb",
+        "meta": "{cards} карточек Anki для {exam}. Словарь с аудио — независимая подготовка, не официальные материалы {disclaimer}.",
+    },
+    "uk": {
+        "prep_for": "Підготовка до {exam} · PixID Studio",
+        "buy": "Купити —",
+        "get_access": "Завантажити одразу —",
+        "view_prep2go": "На Prep2Go",
+        "view_uniprep": "На UniPrep2Go",
+        "sold_by": "Продає PixID Studio на Gumroad — та сама Anki-колода, що на Prep2Go і UniPrep2Go. Незалежна підготовка до {exam}. Формат: {format}, ціна",
+        "not_official": "Не офіційні матеріали {disclaimer}.",
+        "exams_label": "Іспити та шляхи",
+        "pathways": "Шляхи:",
+        "covers": "Що в колоді:",
+        "not_included": "Чого немає:",
+        "why_anki": "Навіщо Anki:",
+        "official_note": "Незалежний навчальний матеріал — без афіліації з {disclaimer}. Актуальні правила завжди звіряйте на офіційному сайті.",
+        "samples_h": "Приклади карток",
+        "samples_p": "Справжні картки з колоди — слово, зображення (аудіо всередині .apkg).",
+        "glance_h": "Колода стисло",
+        "cards_label": "Картки",
+        "flashcards": "карток",
+        "file_label": "Файл",
+        "pathways_label": "Шляхи",
+        "delivery_label": "Доставка",
+        "delivery_value": "Миттєве завантаження з Gumroad",
+        "faq_h": "Питання",
+        "faq_exams": "Для яких іспитів і шляхів ця колода?",
+        "faq_who": "Кому підійде?",
+        "faq_cover": "Що покриває колода — і чого в ній немає?",
+        "faq_covers": "Є:",
+        "faq_missing": "Немає:",
+        "faq_download": "Що я отримаю після оплати?",
+        "faq_download_a": "{cards} карток Anki — {format}. Одразу в бібліотеці Gumroad.",
+        "faq_import": "Як імпортувати в Anki?",
+        "faq_import_a": "Завантажте .apkg з Gumroad → Anki на комп’ютері → Файл → Імпорт → оберіть файл. Синхронізація на телефон через AnkiWeb.",
+        "faq_official": "Це офіційні матеріали іспиту?",
+        "faq_official_a": "Ні. Незалежний навчальний продукт PixID Studio, без зв’язку з {disclaimer}. Правила іспиту звіряйте на офіційному сайті.",
+        "faq_pass": "Чи гарантує колода складання?",
+        "faq_pass_a": "Ні. Вона прискорює запам’ятовування словника; результат залежить від регулярних занять і офіційних пробників.",
+        "faq_refund": "Повернення?",
+        "faq_refund_a": "Цифрове завантаження — продаж остаточний.",
+        "ready_h": "Готові займатися?",
+        "ready_p": "Одноразова оплата. Миттєве завантаження .apkg. Словник під іспит та імміграційні шляхи.",
+        "want_this": "Хочу — завантажити одразу",
+        "footer_legal": "Незалежний навчальний матеріал · Не офіційні матеріали {disclaimer} · Цифрове завантаження — без повернення.",
+        "benefit_built": "Під {exam}",
+        "benefit_cards": "{cards} карток — {format}",
+        "benefit_fields": "Слово + переклад + приклад + аудіо (де є)",
+        "benefit_pathways": "Формулювання під пов’язані іспити та імміграційні шляхи",
+        "benefit_delivery": "Миттєве завантаження з Gumroad · синхронізація на телефон через AnkiWeb",
+        "meta": "{cards} карток Anki для {exam}. Словник з аудіо — незалежна підготовка, не офіційні матеріали {disclaimer}.",
+    },
+    "fr": {
+        "prep_for": "Préparation {exam} · PixID Studio",
+        "buy": "Acheter —",
+        "get_access": "Télécharger tout de suite —",
+        "view_prep2go": "Sur Prep2Go",
+        "view_uniprep": "Sur UniPrep2Go",
+        "sold_by": "Vendu par PixID Studio sur Gumroad — le même paquet Anki que sur Prep2Go et UniPrep2Go. Aide indépendante pour {exam}. Format : {format}, prix",
+        "not_official": "Pas un matériel officiel {disclaimer}.",
+        "exams_label": "Examens et parcours",
+        "pathways": "Parcours :",
+        "covers": "Contenu du paquet :",
+        "not_included": "Non inclus :",
+        "why_anki": "Pourquoi Anki :",
+        "official_note": "Aide à l’étude indépendante — sans lien avec {disclaimer}. Vérifiez toujours les règles officielles.",
+        "samples_h": "Exemples de cartes",
+        "samples_p": "Vraies cartes du paquet — mot et image (audio dans le .apkg).",
+        "glance_h": "Le paquet en bref",
+        "cards_label": "Cartes",
+        "flashcards": "cartes",
+        "file_label": "Fichier",
+        "pathways_label": "Parcours",
+        "delivery_label": "Livraison",
+        "delivery_value": "Téléchargement immédiat sur Gumroad",
+        "faq_h": "FAQ",
+        "faq_exams": "Pour quels examens / parcours ?",
+        "faq_who": "Pour qui ?",
+        "faq_cover": "Que couvre le paquet — et que manque-t-il ?",
+        "faq_covers": "Inclus :",
+        "faq_missing": "Non inclus :",
+        "faq_download": "Que vais-je recevoir ?",
+        "faq_download_a": "{cards} cartes Anki — {format}. Immédiatement dans votre bibliothèque Gumroad.",
+        "faq_import": "Comment importer dans Anki ?",
+        "faq_import_a": "Téléchargez le .apkg depuis Gumroad → Anki bureau → Fichier → Importer. Synchronisez le mobile via AnkiWeb.",
+        "faq_official": "Est-ce un matériel officiel ?",
+        "faq_official_a": "Non. Produit indépendant PixID Studio, sans lien avec {disclaimer}. Vérifiez les règles sur le site officiel.",
+        "faq_pass": "Cela garantit-il la réussite ?",
+        "faq_pass_a": "Non. Le paquet accélère la mémorisation du vocabulaire ; le résultat dépend de l’entraînement et des examens blancs officiels.",
+        "faq_refund": "Remboursement ?",
+        "faq_refund_a": "Téléchargement numérique — ventes définitives.",
+        "ready_h": "Prêt à réviser ?",
+        "ready_p": "Achat unique. Téléchargement .apkg immédiat. Vocabulaire multi-examens.",
+        "want_this": "Je le veux — téléchargement immédiat",
+        "footer_legal": "Aide indépendante · Pas un matériel officiel {disclaimer} · Téléchargement numérique — sans remboursement.",
+        "benefit_built": "Pour {exam}",
+        "benefit_cards": "{cards} cartes — {format}",
+        "benefit_fields": "Mot + sens + exemple + audio (si inclus)",
+        "benefit_pathways": "Formulation pour les examens et parcours d’immigration liés",
+        "benefit_delivery": "Téléchargement Gumroad immédiat · sync mobile via AnkiWeb",
+        "meta": "{cards} cartes Anki pour {exam}. Vocabulaire avec audio — préparation indépendante, pas un matériel officiel {disclaimer}.",
+    },
+    "es": {
+        "prep_for": "Preparación {exam} · PixID Studio",
+        "buy": "Comprar —",
+        "get_access": "Descargar ahora —",
+        "view_prep2go": "En Prep2Go",
+        "view_uniprep": "En UniPrep2Go",
+        "sold_by": "Vendido por PixID Studio en Gumroad — el mismo mazo Anki que en Prep2Go y UniPrep2Go. Ayuda independiente para {exam}. Formato: {format}, precio",
+        "not_official": "No es material oficial de {disclaimer}.",
+        "exams_label": "Exámenes y vías",
+        "pathways": "Vías:",
+        "covers": "Qué incluye:",
+        "not_included": "Qué no incluye:",
+        "why_anki": "Por qué Anki:",
+        "official_note": "Material de estudio independiente — sin afiliación con {disclaimer}. Verifique siempre las reglas oficiales.",
+        "samples_h": "Ejemplos de tarjetas",
+        "samples_p": "Tarjetas reales del mazo — palabra e imagen (audio en el .apkg).",
+        "glance_h": "El mazo en resumen",
+        "cards_label": "Tarjetas",
+        "flashcards": "tarjetas",
+        "file_label": "Archivo",
+        "pathways_label": "Vías",
+        "delivery_label": "Entrega",
+        "delivery_value": "Descarga inmediata en Gumroad",
+        "faq_h": "Preguntas",
+        "faq_exams": "¿Para qué exámenes / vías?",
+        "faq_who": "¿Para quién es?",
+        "faq_cover": "¿Qué cubre el mazo — y qué falta?",
+        "faq_covers": "Incluye:",
+        "faq_missing": "No incluye:",
+        "faq_download": "¿Qué recibo al pagar?",
+        "faq_download_a": "{cards} tarjetas Anki — {format}. Enseguida en tu biblioteca Gumroad.",
+        "faq_import": "¿Cómo importar en Anki?",
+        "faq_import_a": "Descarga el .apkg desde Gumroad → Anki de escritorio → Archivo → Importar. Sincroniza el móvil con AnkiWeb.",
+        "faq_official": "¿Es material oficial del examen?",
+        "faq_official_a": "No. Producto independiente de PixID Studio, sin vínculo con {disclaimer}. Consulte las reglas en el sitio oficial.",
+        "faq_pass": "¿Garantiza aprobar?",
+        "faq_pass_a": "No. Acelera el vocabulario; el resultado depende del estudio constante y de exámenes de práctica oficiales.",
+        "faq_refund": "¿Reembolsos?",
+        "faq_refund_a": "Descarga digital — ventas finales.",
+        "ready_h": "¿Listo para estudiar?",
+        "ready_p": "Pago único. Descarga .apkg inmediata. Vocabulario multipaso.",
+        "want_this": "Lo quiero — descarga inmediata",
+        "footer_legal": "Ayuda independiente · No es material oficial de {disclaimer} · Descarga digital — sin reembolso.",
+        "benefit_built": "Para {exam}",
+        "benefit_cards": "{cards} tarjetas — {format}",
+        "benefit_fields": "Palabra + sentido + ejemplo + audio (si hay)",
+        "benefit_pathways": "Enfoque para exámenes y vías de inmigración relacionados",
+        "benefit_delivery": "Descarga Gumroad inmediata · sync móvil vía AnkiWeb",
+        "meta": "{cards} tarjetas Anki para {exam}. Vocabulario con audio — preparación independiente, no material oficial de {disclaimer}.",
+    },
+    "pt": {
+        "prep_for": "Preparação {exam} · PixID Studio",
+        "buy": "Comprar —",
+        "get_access": "Baixar agora —",
+        "view_prep2go": "No Prep2Go",
+        "view_uniprep": "No UniPrep2Go",
+        "sold_by": "Vendido pela PixID Studio no Gumroad — o mesmo baralho Anki do Prep2Go e UniPrep2Go. Ajuda independente para {exam}. Formato: {format}, preço",
+        "not_official": "Não é material oficial de {disclaimer}.",
+        "exams_label": "Exames e caminhos",
+        "pathways": "Caminhos:",
+        "covers": "O que inclui:",
+        "not_included": "O que não inclui:",
+        "why_anki": "Por que Anki:",
+        "official_note": "Material de estudo independente — sem vínculo com {disclaimer}. Confirme sempre as regras oficiais.",
+        "samples_h": "Exemplos de cartões",
+        "samples_p": "Cartões reais do baralho — palavra e imagem (áudio no .apkg).",
+        "glance_h": "O baralho em resumo",
+        "cards_label": "Cartões",
+        "flashcards": "cartões",
+        "file_label": "Arquivo",
+        "pathways_label": "Caminhos",
+        "delivery_label": "Entrega",
+        "delivery_value": "Download imediato no Gumroad",
+        "faq_h": "Perguntas",
+        "faq_exams": "Para quais exames / caminhos?",
+        "faq_who": "Para quem é?",
+        "faq_cover": "O que o baralho cobre — e o que falta?",
+        "faq_covers": "Inclui:",
+        "faq_missing": "Não inclui:",
+        "faq_download": "O que recebo após o pagamento?",
+        "faq_download_a": "{cards} cartões Anki — {format}. Na hora na biblioteca Gumroad.",
+        "faq_import": "Como importar no Anki?",
+        "faq_import_a": "Baixe o .apkg no Gumroad → Anki no computador → Arquivo → Importar. Sincronize o celular via AnkiWeb.",
+        "faq_official": "É material oficial do exame?",
+        "faq_official_a": "Não. Produto independente da PixID Studio, sem vínculo com {disclaimer}. Confira as regras no site oficial.",
+        "faq_pass": "Garante a aprovação?",
+        "faq_pass_a": "Não. Acelera o vocabulário; o resultado depende do estudo constante e de simulados oficiais.",
+        "faq_refund": "Reembolso?",
+        "faq_refund_a": "Download digital — vendas finais.",
+        "ready_h": "Pronto para estudar?",
+        "ready_p": "Pagamento único. Download .apkg imediato. Vocabulário multipercurso.",
+        "want_this": "Quero — download imediato",
+        "footer_legal": "Ajuda independente · Não é material oficial de {disclaimer} · Download digital — sem reembolso.",
+        "benefit_built": "Para {exam}",
+        "benefit_cards": "{cards} cartões — {format}",
+        "benefit_fields": "Palavra + sentido + exemplo + áudio (quando houver)",
+        "benefit_pathways": "Foco nos exames e caminhos de imigração relacionados",
+        "benefit_delivery": "Download Gumroad imediato · sync no celular via AnkiWeb",
+        "meta": "{cards} cartões Anki para {exam}. Vocabulário com áudio — preparação independente, não material oficial de {disclaimer}.",
+    },
+    "ar": {
+        "prep_for": "التحضير لـ {exam} · PixID Studio",
+        "buy": "اشترِ —",
+        "get_access": "حمّل فورًا —",
+        "view_prep2go": "على Prep2Go",
+        "view_uniprep": "على UniPrep2Go",
+        "sold_by": "تبيعه PixID Studio على Gumroad — نفس مجموعة Anki في Prep2Go وUniPrep2Go. مساعدة مستقلة لـ {exam}. الصيغة: {format}، السعر",
+        "not_official": "ليست مواد رسمية لـ {disclaimer}.",
+        "exams_label": "الامتحانات والمسارات",
+        "pathways": "المسارات:",
+        "covers": "ما يشمله المجموعة:",
+        "not_included": "ما لا يشمله:",
+        "why_anki": "لماذا Anki:",
+        "official_note": "مادة دراسية مستقلة — بلا ارتباط بـ {disclaimer}. راجع القواعد الرسمية دائمًا.",
+        "samples_h": "نماذج البطاقات",
+        "samples_p": "بطاقات حقيقية من المجموعة — كلمة وصورة (الصوت داخل ملف .apkg).",
+        "glance_h": "المجموعة باختصار",
+        "cards_label": "البطاقات",
+        "flashcards": "بطاقة",
+        "file_label": "الملف",
+        "pathways_label": "المسارات",
+        "delivery_label": "التسليم",
+        "delivery_value": "تنزيل فوري من Gumroad",
+        "faq_h": "أسئلة",
+        "faq_exams": "لأي امتحانات / مسارات؟",
+        "faq_who": "لمن هذه المجموعة؟",
+        "faq_cover": "ماذا تغطي المجموعة — وماذا ينقص؟",
+        "faq_covers": "يشمل:",
+        "faq_missing": "لا يشمل:",
+        "faq_download": "ماذا أحصل بعد الدفع؟",
+        "faq_download_a": "{cards} بطاقة Anki — {format}. فورًا في مكتبة Gumroad.",
+        "faq_import": "كيف أستورد إلى Anki؟",
+        "faq_import_a": "حمّل .apkg من Gumroad → Anki على الكمبيوتر → ملف → استيراد. زامن الهاتف عبر AnkiWeb.",
+        "faq_official": "هل هذه مواد رسمية؟",
+        "faq_official_a": "لا. منتج مستقل من PixID Studio بلا ارتباط بـ {disclaimer}. راجع القواعد على الموقع الرسمي.",
+        "faq_pass": "هل يضمن النجاح؟",
+        "faq_pass_a": "لا. يسرّع حفظ المفردات؛ النتيجة تعتمد على الدراسة المنتظمة والاختبارات الرسمية التجريبية.",
+        "faq_refund": "استرداد؟",
+        "faq_refund_a": "تنزيل رقمي — المبيعات نهائية.",
+        "ready_h": "جاهز للدراسة؟",
+        "ready_p": "شراء لمرة واحدة. تنزيل .apkg فوري. مفردات لمسارات متعددة.",
+        "want_this": "أريدها — تنزيل فوري",
+        "footer_legal": "مساعدة مستقلة · ليست مواد رسمية لـ {disclaimer} · تنزيل رقمي — بلا استرداد.",
+        "benefit_built": "لـ {exam}",
+        "benefit_cards": "{cards} بطاقة — {format}",
+        "benefit_fields": "كلمة + معنى + مثال + صوت (إن وُجد)",
+        "benefit_pathways": "صياغة لمسارات الامتحان والهجرة ذات الصلة",
+        "benefit_delivery": "تنزيل Gumroad فوري · مزامنة الهاتف عبر AnkiWeb",
+        "meta": "{cards} بطاقة Anki لـ {exam}. مفردات مع صوت — تحضير مستقل، ليست مواد رسمية لـ {disclaimer}.",
+    },
+    "tr": {
+        "prep_for": "{exam} hazırlığı · PixID Studio",
+        "buy": "Satın al —",
+        "get_access": "Hemen indir —",
+        "view_prep2go": "Prep2Go’da",
+        "view_uniprep": "UniPrep2Go’da",
+        "sold_by": "PixID Studio tarafından Gumroad’da satılır — Prep2Go ve UniPrep2Go’daki aynı Anki destesi. {exam} için bağımsız çalışma yardımı. Biçim: {format}, fiyat",
+        "not_official": "{disclaimer} resmi materyali değildir.",
+        "exams_label": "Sınavlar ve yollar",
+        "pathways": "Yollar:",
+        "covers": "Destede neler var:",
+        "not_included": "Neler yok:",
+        "why_anki": "Neden Anki:",
+        "official_note": "Bağımsız çalışma materyali — {disclaimer} ile bağlantısı yoktur. Kuralları her zaman resmi siteden doğrulayın.",
+        "samples_h": "Örnek kartlar",
+        "samples_p": "Desteden gerçek kartlar — kelime ve görsel (.apkg içinde ses).",
+        "glance_h": "Desteye bakış",
+        "cards_label": "Kartlar",
+        "flashcards": "kart",
+        "file_label": "Dosya",
+        "pathways_label": "Yollar",
+        "delivery_label": "Teslimat",
+        "delivery_value": "Gumroad’dan anında indirme",
+        "faq_h": "SSS",
+        "faq_exams": "Hangi sınavlar / yollar için?",
+        "faq_who": "Kimler için?",
+        "faq_cover": "Deste neyi kapsıyor — ve neler yok?",
+        "faq_covers": "Var:",
+        "faq_missing": "Yok:",
+        "faq_download": "Ödeme sonrası ne alırım?",
+        "faq_download_a": "{cards} Anki kartı — {format}. Hemen Gumroad kitaplığınızda.",
+        "faq_import": "Anki’ye nasıl aktarırım?",
+        "faq_import_a": "Gumroad’dan .apkg indirin → masaüstü Anki → Dosya → İçe Aktar. AnkiWeb ile telefona senkronize edin.",
+        "faq_official": "Resmi sınav materyali mi?",
+        "faq_official_a": "Hayır. PixID Studio’nun bağımsız ürünü; {disclaimer} ile bağlantısı yoktur. Kuralları resmi siteden kontrol edin.",
+        "faq_pass": "Geçmeyi garanti eder mi?",
+        "faq_pass_a": "Hayır. Kelime ezberini hızlandırır; sonuç düzenli çalışmaya ve resmi denemelere bağlıdır.",
+        "faq_refund": "İade?",
+        "faq_refund_a": "Dijital indirme — satışlar nihaidir.",
+        "ready_h": "Çalışmaya hazır mısınız?",
+        "ready_p": "Tek seferlik ödeme. Anında .apkg indirme. Çok yollu kelime bankası.",
+        "want_this": "İstiyorum — hemen indir",
+        "footer_legal": "Bağımsız yardım · {disclaimer} resmi materyali değil · Dijital indirme — iade yok.",
+        "benefit_built": "{exam} için",
+        "benefit_cards": "{cards} kart — {format}",
+        "benefit_fields": "Kelime + anlam + örnek + ses (varsa)",
+        "benefit_pathways": "İlgili sınav ve göç yolları için çerçeve",
+        "benefit_delivery": "Anında Gumroad indirme · AnkiWeb ile telefona senkron",
+        "meta": "{exam} için {cards} Anki kartı. Sesli kelime bankası — bağımsız hazırlık, {disclaimer} resmi materyali değil.",
+    },
+}
+
 # Multi-pathway cold-traffic copy — Gumroad buyers often have zero site context.
 SPECS: dict[str, dict[str, Any]] = {
     "ciple-a2-for-russian-speakers-anki-deck": {
@@ -1088,6 +1492,39 @@ SPECS: dict[str, dict[str, Any]] = {
 
 }
 
+# Overlay for-X-speakers SPECS with support-language copy (source of truth).
+_FOR_X_I18N = ROOT / "src/data/gumroad/for-x-speakers-i18n.json"
+_FOR_X_CONTENT_KEYS = (
+    "lang",
+    "label",
+    "headline",
+    "exam",
+    "hook",
+    "audience",
+    "disclaimer",
+    "about_heading",
+    "about",
+    "pathways",
+    "deck_covers",
+    "not_included",
+    "why_anki",
+    "cards",
+    "format_note",
+    "sample_captions",
+    "facts",
+)
+if _FOR_X_I18N.exists():
+    for _slug, _patch in json.loads(_FOR_X_I18N.read_text(encoding="utf-8")).items():
+        if _slug not in SPECS:
+            continue
+        for _key in _FOR_X_CONTENT_KEYS:
+            if _key not in _patch:
+                continue
+            _val = _patch[_key]
+            if _key == "facts":
+                _val = [tuple(x) if not isinstance(x, tuple) else x for x in _val]
+            SPECS[_slug][_key] = _val
+
 
 def e(value: Any) -> str:
     return html.escape(str(value or ""), quote=True)
@@ -1244,12 +1681,18 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
     headline = spec["headline"]
     exam = spec["exam"]
     disclaimer = spec["disclaimer"]
+    lang = str(spec.get("lang") or "en")
+    ui = {**UI_BY_LANG["en"], **UI_BY_LANG.get(lang, {})}
+    dir_attr = ' dir="rtl"' if lang == "ar" else ""
     deck_url = f"https://uniprep2go.study/decks/{slug}"
     prep2go_paths = {
         "ciple-a2-european-portuguese-anki-deck": "/shop/ciple-a2-anki-deck",
+        "ciple-a2-for-russian-speakers-anki-deck": "/shop/ciple-a2-anki-deck",
         "delf-b2-french-anki-deck": "/shop/delf-a2-anki-deck",
         "dutch-a2-inburgering-anki-deck": "/shop/deck/inburgering-a2-anki-deck",
         "german-a2-anki-deck": "/shop/deck/goethe-telc-osd-anki-deck",
+        "german-a2-for-russian-speakers-anki-deck": "/shop/deck/goethe-telc-osd-anki-deck",
+        "german-a2-for-ukrainian-speakers-anki-deck": "/shop/deck/goethe-telc-osd-anki-deck",
         "celi-b1-italian-anki-deck": "/shop/celi-a2-anki-deck",
         "danish-a2-prove-i-dansk-anki-deck": "/shop/deck/danish-prove-i-dansk-anki-deck",
         "norwegian-a2-norskprove-anki-deck": "/shop/deck/norwegian-norskprove-anki-deck",
@@ -1258,18 +1701,20 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
         "czech-a2-cce-anki-deck": "/shop/deck/czech-cce-anki-deck",
         "dele-a2-spanish-anki-deck": "/shop/dele-a2-anki-deck",
         "dele-a2-ccse-spanish-citizenship-bundle": "/shop/dele-a2-anki-deck",
+        "polish-a2-for-ukrainian-speakers-anki-deck": "/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck",
         "ielts-toefl-english-for-french-speakers-anki-deck": "/shop/deck/english-for-french-speakers-anki-deck",
         "ielts-toefl-english-for-arabic-speakers-anki-deck": "/shop/deck/english-for-arabic-speakers-anki-deck",
         "ielts-toefl-english-for-ukrainian-speakers-anki-deck": "/shop/deck/english-for-ukrainian-speakers-anki-deck",
         "ielts-toefl-english-for-russian-speakers-anki-deck": "/shop/deck/english-for-russian-speakers-anki-deck",
         "ielts-toefl-english-for-spanish-speakers-anki-deck": "/shop/deck/english-for-spanish-speakers-anki-deck",
         "ielts-toefl-english-for-portuguese-speakers-anki-deck": "/shop/deck/english-for-portuguese-speakers-anki-deck",
+        "ielts-toefl-english-for-turkish-speakers-anki-deck": "/shop/deck/english-for-turkish-speakers-anki-deck",
     }
     prep2go_url = (
         f"https://www.prep2go.study{prep2go_paths[slug]}" if slug in prep2go_paths else None
     )
     prep2go_cta = (
-        f'<a href="{e(prep2go_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">View on Prep2Go</a>'
+        f'<a href="{e(prep2go_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">{e(ui["view_prep2go"])}</a>'
         if prep2go_url
         else ""
     )
@@ -1279,17 +1724,14 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
         else ""
     )
     seo_title = f"{headline} | PixID Studio"
-    meta = (
-        f"{spec['cards']} Anki flashcards for {exam}. "
-        f"Vocabulary with audio — independent prep, not official {disclaimer} material."
-    )
+    meta = ui["meta"].format(cards=spec["cards"], exam=exam, disclaimer=disclaimer)
 
     benefits = [
-        f"Built for {exam}",
-        f"{spec['cards']} cards — {spec['format_note']}",
-        "Headword + meaning + example + audio (where included)",
-        "Multi-pathway framing for the related exams / immigration routes",
-        "Instant Gumroad download · sync to mobile via AnkiWeb",
+        ui["benefit_built"].format(exam=exam),
+        ui["benefit_cards"].format(cards=spec["cards"], format=spec["format_note"]),
+        ui["benefit_fields"],
+        ui["benefit_pathways"],
+        ui["benefit_delivery"],
     ]
     benefits_html = "".join(
         f'<li class="flex gap-3"><span class="text-accent font-bold">✓</span><span>{e(b)}</span></li>'
@@ -1303,21 +1745,20 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
     )
 
     official_note = (
-        f'<p class="mt-4 text-sm text-muted">Independent study aid — not affiliated with or '
-        f"endorsed by {e(disclaimer)}. Always verify current exam rules with the official body.</p>"
+        f'<p class="mt-4 text-sm text-muted">{e(ui["official_note"].format(disclaimer=disclaimer))}</p>'
     )
 
     exam_section = f"""
     <section id="exam" class="mt-12" aria-labelledby="exam-heading">
-      <p class="label-mono">Exams &amp; pathways</p>
+      <p class="label-mono">{e(ui["exams_label"])}</p>
       <h2 id="exam-heading" class="mt-2 text-2xl font-semibold tracking-tight">{e(spec["about_heading"])}</h2>
       <p class="mt-4 text-base leading-7 text-muted">{e(spec["about"])}</p>
       <dl class="mt-6 grid gap-3 sm:grid-cols-2">{facts_html}</dl>
       <div class="mt-6 theme-card rounded-3xl p-6 sm:p-8 space-y-4 text-sm sm:text-base leading-7 text-muted">
-        <p><strong class="text-[var(--fg)]">Pathways:</strong> {e(spec["pathways"])}</p>
-        <p><strong class="text-[var(--fg)]">What this deck covers:</strong> {e(spec["deck_covers"])}</p>
-        <p><strong class="text-[var(--fg)]">Not included:</strong> {e(spec["not_included"])}</p>
-        <p><strong class="text-[var(--fg)]">Why Anki:</strong> {e(spec["why_anki"])}</p>
+        <p><strong class="text-[var(--fg)]">{e(ui["pathways"])}</strong> {e(spec["pathways"])}</p>
+        <p><strong class="text-[var(--fg)]">{e(ui["covers"])}</strong> {e(spec["deck_covers"])}</p>
+        <p><strong class="text-[var(--fg)]">{e(ui["not_included"])}</strong> {e(spec["not_included"])}</p>
+        <p><strong class="text-[var(--fg)]">{e(ui["why_anki"])}</strong> {e(spec["why_anki"])}</p>
       </div>
       {official_note}
     </section>
@@ -1327,17 +1768,17 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
     if cover_url:
         cover_block = (
             f'<figure class="overflow-hidden rounded-3xl theme-card shadow-lg">'
-            f'<img src="{e(cover_url)}" alt="{e(label)} Anki deck cover" '
+            f'<img src="{e(cover_url)}" alt="{e(label)}" '
             f'class="w-full h-auto object-cover" loading="eager"></figure>'
         )
 
     captions = list(spec.get("sample_captions") or [])
     sample_figures = []
     for i, url in enumerate(sample_urls, 1):
-        caption = captions[i - 1] if i - 1 < len(captions) else f"Sample {i}"
+        caption = captions[i - 1] if i - 1 < len(captions) else str(i)
         sample_figures.append(
             f"""        <figure class="theme-card overflow-hidden rounded-3xl shadow-sm">
-          <img src="{e(url)}" alt="{e(label)} sample card {i}" class="w-full h-auto object-contain" loading="lazy">
+          <img src="{e(url)}" alt="{e(label)} {i}" class="w-full h-auto object-contain" loading="lazy">
           <figcaption class="px-4 py-3 text-xs text-muted">{e(caption)}</figcaption>
         </figure>"""
         )
@@ -1345,8 +1786,8 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
     if sample_figures:
         samples_section = f"""
     <section id="samples" class="mt-12" aria-labelledby="samples-heading">
-      <h2 id="samples-heading" class="text-2xl font-semibold tracking-tight">Sample cards</h2>
-      <p class="mt-2 text-sm text-muted">Real preview cards from the deck — vocabulary with image cues (audio in the .apkg).</p>
+      <h2 id="samples-heading" class="text-2xl font-semibold tracking-tight">{e(ui["samples_h"])}</h2>
+      <p class="mt-2 text-sm text-muted">{e(ui["samples_p"])}</p>
       <div class="mt-4 grid gap-4 sm:grid-cols-3">
 {chr(10).join(sample_figures)}
       </div>
@@ -1355,31 +1796,25 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
 
     faq_items = [
         (
-            "Which exams / pathways is this for?",
-            f"{e(spec['about'])}<br><br><strong>Pathways:</strong> {e(spec['pathways'])}",
+            ui["faq_exams"],
+            f'{e(spec["about"])}<br><br><strong>{e(ui["pathways"])}</strong> {e(spec["pathways"])}',
         ),
-        ("Who should buy this deck?", e(spec["audience"])),
+        (ui["faq_who"], e(spec["audience"])),
         (
-            "What does the deck cover — and what is missing?",
-            f"<strong>Covers:</strong> {e(spec['deck_covers'])}<br><strong>Not included:</strong> {e(spec['not_included'])}",
-        ),
-        (
-            "What is included in the download?",
-            f"{e(spec['cards'])} Anki flashcards — {e(spec['format_note'])}. Instant Gumroad library download.",
+            ui["faq_cover"],
+            f'<strong>{e(ui["faq_covers"])}</strong> {e(spec["deck_covers"])}<br><strong>{e(ui["faq_missing"])}</strong> {e(spec["not_included"])}',
         ),
         (
-            "How do I import into Anki?",
-            "Download the .apkg from Gumroad → Anki desktop → File → Import → select the file. Sync to AnkiMobile or AnkiDroid via AnkiWeb.",
+            ui["faq_download"],
+            e(ui["faq_download_a"].format(cards=spec["cards"], format=spec["format_note"])),
         ),
+        (ui["faq_import"], e(ui["faq_import_a"])),
         (
-            "Is this official exam material?",
-            f"No. Independent study aid — not affiliated with, endorsed by, or sponsored by {e(disclaimer)}. Always verify current exam rules on the official site.",
+            ui["faq_official"],
+            e(ui["faq_official_a"].format(disclaimer=disclaimer)),
         ),
-        (
-            "Will this guarantee I pass?",
-            "No. The deck improves vocabulary retention and exam readiness; results depend on consistent study plus official practice.",
-        ),
-        ("Refunds?", "Digital download — all sales final."),
+        (ui["faq_pass"], e(ui["faq_pass_a"])),
+        (ui["faq_refund"], e(ui["faq_refund_a"])),
     ]
     faq_html = "".join(
         f'<details class="theme-card rounded-2xl p-5 group"><summary class="font-semibold cursor-pointer list-none flex justify-between gap-4 items-start">{e(q)}'
@@ -1388,8 +1823,13 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
         for q, a in faq_items
     )
 
+    sold_line = (
+        f'{e(ui["sold_by"].format(exam=exam, format=spec["format_note"]))} '
+        f'<span data-gumroad-field="price">{e(price)}</span>. {e(ui["not_official"].format(disclaimer=disclaimer))}'
+    )
+
     return f"""<!DOCTYPE html>
-<html lang="en">
+<html lang="{e(lang)}"{dir_attr}>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1424,12 +1864,12 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
   <header class="sticky top-0 z-50 border-b backdrop-blur-md" style="background:color-mix(in srgb,var(--bg) 88%,transparent);border-color:var(--border)">
     <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
       <p class="font-semibold text-sm truncate" data-gumroad-field="name">{e(product.get("name") or headline)}</p>
-      <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy rounded-full px-5 py-2.5 text-sm font-semibold" rel="noopener noreferrer">Buy — <span data-gumroad-field="price">{e(price)}</span></a>
+      <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy rounded-full px-5 py-2.5 text-sm font-semibold" rel="noopener noreferrer">{e(ui["buy"])} <span data-gumroad-field="price">{e(price)}</span></a>
     </div>
   </header>
 
   <main class="max-w-4xl mx-auto px-6 py-10">
-    <p class="label-mono">Prep for {e(exam)} · PixID Studio</p>
+    <p class="label-mono">{e(ui["prep_for"].format(exam=exam))}</p>
     <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight" data-gumroad-field="name">{e(headline)}</h1>
 
     <div class="mt-8 grid lg:grid-cols-2 gap-8 items-start">
@@ -1440,27 +1880,27 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
           {benefits_html}
         </ul>
         <div class="flex flex-col gap-3 sm:flex-row sm:flex-wrap pt-2">
-          <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener noreferrer">Get instant access — <span data-gumroad-field="price">{e(price)}</span></a>
+          <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener noreferrer">{e(ui["get_access"])} <span data-gumroad-field="price">{e(price)}</span></a>
           {prep2go_cta}
-          <a href="{e(deck_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">View on UniPrep2Go</a>
+          <a href="{e(deck_url)}" class="btn-secondary inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold" rel="noopener">{e(ui["view_uniprep"])}</a>
         </div>
-        <p class="text-sm leading-7 text-muted">Sold by PixID Studio on Gumroad — the same Anki bank used on Prep2Go and UniPrep2Go. Independent {e(exam)} study aid. Delivered as {e(spec["format_note"])} for <span data-gumroad-field="price">{e(price)}</span>. Not official {e(disclaimer)} material.</p>
+        <p class="text-sm leading-7 text-muted">{sold_line}</p>
       </div>
       {cover_block}
     </div>
 {exam_section}
     <section class="mt-12" aria-labelledby="facts-heading">
-      <h2 id="facts-heading" class="text-2xl font-semibold tracking-tight">Deck at a glance</h2>
+      <h2 id="facts-heading" class="text-2xl font-semibold tracking-tight">{e(ui["glance_h"])}</h2>
       <dl class="mt-4 grid gap-3 sm:grid-cols-2">
-        <div class="theme-card px-5 py-4"><dt class="label-mono">Cards</dt><dd class="mt-2 font-medium">{e(spec["cards"])} flashcards</dd></div>
-        <div class="theme-card px-5 py-4"><dt class="label-mono">File</dt><dd class="mt-2 font-medium">{e(spec["format_note"])}</dd></div>
-        <div class="theme-card px-5 py-4"><dt class="label-mono">Pathways</dt><dd class="mt-2 font-medium">{e(spec["pathways"])}</dd></div>
-        <div class="theme-card px-5 py-4"><dt class="label-mono">Delivery</dt><dd class="mt-2 font-medium">Instant Gumroad download</dd></div>
+        <div class="theme-card px-5 py-4"><dt class="label-mono">{e(ui["cards_label"])}</dt><dd class="mt-2 font-medium">{e(spec["cards"])} {e(ui["flashcards"])}</dd></div>
+        <div class="theme-card px-5 py-4"><dt class="label-mono">{e(ui["file_label"])}</dt><dd class="mt-2 font-medium">{e(spec["format_note"])}</dd></div>
+        <div class="theme-card px-5 py-4"><dt class="label-mono">{e(ui["pathways_label"])}</dt><dd class="mt-2 font-medium">{e(spec["pathways"])}</dd></div>
+        <div class="theme-card px-5 py-4"><dt class="label-mono">{e(ui["delivery_label"])}</dt><dd class="mt-2 font-medium">{e(ui["delivery_value"])}</dd></div>
       </dl>
     </section>
 {samples_section}
     <section id="faq" class="mt-12" aria-labelledby="faq-heading">
-      <h2 id="faq-heading" class="text-2xl font-semibold tracking-tight">FAQ</h2>
+      <h2 id="faq-heading" class="text-2xl font-semibold tracking-tight">{e(ui["faq_h"])}</h2>
       <div class="mt-4 space-y-3">
         {faq_html}
       </div>
@@ -1468,12 +1908,12 @@ def render_landing(slug: str, spec: dict, product: dict, cover_url: str, sample_
 
     <section class="mt-12 mb-6" aria-labelledby="pricing-heading">
       <div class="theme-card rounded-3xl p-8 sm:p-10 text-center">
-        <h2 id="pricing-heading" class="text-2xl font-semibold">Ready to study?</h2>
-        <p class="mt-3 text-muted max-w-lg mx-auto text-sm leading-relaxed">One-time purchase. Instant .apkg download. Multi-pathway vocabulary for cold Gumroad traffic.</p>
+        <h2 id="pricing-heading" class="text-2xl font-semibold">{e(ui["ready_h"])}</h2>
+        <p class="mt-3 text-muted max-w-lg mx-auto text-sm leading-relaxed">{e(ui["ready_p"])}</p>
         <p class="mt-2 text-4xl font-semibold"><span data-gumroad-field="price">{e(price)}</span></p>
         <p class="hidden" data-gumroad-field="description" aria-hidden="true">{e(meta)}</p>
-        <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy mt-6 inline-flex rounded-full px-8 py-3.5 text-sm font-semibold" rel="noopener noreferrer">I want this — instant download</a>
-        <p class="mt-4 text-xs text-muted">Independent study aid · Not official {e(disclaimer)} material · Digital download — all sales final.</p>
+        <a href="{e(checkout)}" data-gumroad-action="buy" class="btn-buy mt-6 inline-flex rounded-full px-8 py-3.5 text-sm font-semibold" rel="noopener noreferrer">{e(ui["want_this"])}</a>
+        <p class="mt-4 text-xs text-muted">{e(ui["footer_legal"].format(disclaimer=disclaimer))}</p>
       </div>
     </section>
   </main>

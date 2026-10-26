@@ -56,16 +56,10 @@ const SPECS = {
     fileNames: ["CIPLE_CAPLE_Portuguese_Citizenship_Anki_Deck.apkg"],
   },
   "ciple-a2-for-russian-speakers-anki-deck": {
-    name: "CIPLE A2 for Russian Speakers Anki Deck — 2043 Flashcards",
+    name: "CIPLE A2 Anki для русскоязычных — 2043 карточки (CAPLE)",
     summary:
-      "2,043 European Portuguese CIPLE / CAPLE A2 cards with Russian translations on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — Portuguese Anki deck for <strong>Russian speakers</strong> preparing <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong>, and <strong>nacionalidade portuguesa</strong>.</p>",
-      "<p><strong>2,043</strong> PT-PT cards with Russian translations of each word and example sentence, native Portuguese audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p>Distinct from the English-gloss CIPLE CAPLE deck. Not Portugal nacionalidade civics (see the separate Portugal Nacionalidade Anki deck).</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki desktop, then sync to mobile via AnkiWeb.</p>",
-      "<p><em>Independent study aid — not official CAPLE / University of Lisbon material.</em></p>",
-    ].join(""),
+      "2043 карточки европейского португальского для CIPLE / CAPLE A2 с русскими переводами, аудио и картинками — разовая покупка за $26.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — Anki-колода европейского португальского для <strong>русскоязычных</strong>, готовящихся к <strong>CIPLE / CAPLE A2</strong>, <strong>autorização de residência</strong> и <strong>nacionalidade portuguesa</strong>.</p><p><strong>2043</strong> карточки PT-PT: на каждой — картинка, русский перевод слова, пример с озвучкой европейского португальского и перевод примера. Тот же банк Prep2Go, упакованный в один .apkg.</p><p>Отличается от CIPLE CAPLE с английскими глоссами. Не колода по гражданским знаниям Portugal nacionalidade.</p><p><strong>Доставка:</strong> скачайте .apkg из библиотеки Gumroad, импортируйте в Anki на компьютере и синхронизируйте с телефоном через AnkiWeb.</p><p><em>Независимый учебный материал — не официальный продукт CAPLE / University of Lisbon.</em></p>"],
     coverPath: "public/covers/ciple-a2-for-russian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_Portuguese_A2_CIPLE_Russian_Speakers/prep2go_Portuguese_A2_CIPLE_Russian_Speakers_FULL.apkg",
@@ -233,16 +227,10 @@ const SPECS = {
     fileNames: ["Polish_A2_Certyfikat_Residence_Citizenship_Anki_Deck.apkg"],
   },
   "polish-a2-for-ukrainian-speakers-anki-deck": {
-    name: "Polish A2 for Ukrainian Speakers Anki Deck — 1489 Flashcards",
+    name: "Польська A2 Anki для українськомовних — 1489 карток (Certyfikat)",
     summary:
-      "1,489 Polish A2 cards for Certyfikat and residence language — with Ukrainian support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — Polish Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Certyfikat języka polskiego A2</strong> and residence or citizenship language.</p>",
-      "<p><strong>1,489</strong> high-frequency Polish cards with Ukrainian glosses, bilingual examples, native Polish audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p>Not Polish citizenship civics (wiedza o Polsce). Distinct from the English-gloss Polish Certyfikat deck.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official Certyfikat / state exam material.</em></p>",
-    ].join(""),
+      "1489 карток польської A2 з українськими перекладами, малюнками й озвученими реченнями — для Certyfikat A2 і життя в Польщі. $26 один раз.",
+    descriptionHtml: ["<p>Польська здається знайомою, поки не треба читати латиницею й ставити наголос. 1489 карток за частотністю: на кожній малюнок, український переклад і повне польське речення з озвучкою.</p><p>Лицьова сторона — лише польське слово: тренуєте sz, cz, rz, ł, ą, ę до читання на іспиті. На звороті — українська, без англійської посередині.</p><p>Це не wiedza o Polsce і не граматичний курс. У UniPrep2Go немає польського мовного моку — беріть безкоштовні зразки на certyfikatpolski.pl.</p><p>Одноразова купівля, офлайн .apkg. Не афілійовано з державною комісією Certyfikat języka polskiego.</p>"],
     coverPath: "public/covers/polish-a2-for-ukrainian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_Polish_A2_Ukrainian_Speakers/prep2go_Polish_A2_Ukrainian_Speakers_FULL.apkg",
@@ -250,16 +238,10 @@ const SPECS = {
     fileNames: ["Polish_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "german-a2-for-ukrainian-speakers-anki-deck": {
-    name: "German A2 for Ukrainian Speakers Anki Deck — 2026 Flashcards",
+    name: "Німецька A2 Anki для українськомовних — 2026 карток (Goethe, telc, ÖSD, DTZ)",
     summary:
-      "2,026 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Ukrainian translations on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>2,026</strong> high-frequency German cards with Ukrainian translations of each word and example sentence, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
-    ].join(""),
+      "2026 карток німецької A2 з українськими перекладами, малюнками й озвученими реченнями — для Goethe, telc, ÖSD і DTZ. $26 один раз.",
+    descriptionHtml: ["<p>Пройдіть інтеграційний курс і DTZ зі словником, який реально потрібен у Німеччині: 2026 карток — на кожній малюнок, український переклад і німецьке речення з озвучкою та перекладом українською.</p><p>Спочатку частотне ядро, потім тематичний блок: записи на прийом, оренда, Jobcenter, потяги, лікарі. Іменники на лицьовій стороні без der/die/das — артикль чути в прикладі.</p><p>Це не Leben in Deutschland і не граматичний курс. UniPrep2Go не має німецького мовного моку — поєднуйте колоду з безкоштовними модельними тестами BAMF і Goethe.</p><p>Одноразова купівля, офлайн .apkg для Anki. Не афілійовано з BAMF, Goethe-Institut, telc чи ÖSD.</p>"],
     coverPath: "public/covers/german-a2-for-ukrainian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_German_A2_Ukrainian_Speakers/prep2go_German_A2_Ukrainian_Speakers_FULL.apkg",
@@ -267,16 +249,10 @@ const SPECS = {
     fileNames: ["German_A2_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "german-a2-for-russian-speakers-anki-deck": {
-    name: "German A2 for Russian Speakers Anki Deck — 2026 Flashcards",
+    name: "Немецкий A2 Anki для русскоязычных — 2026 карточек (Goethe, telc, DTZ)",
     summary:
-      "2,026 German A2 cards for Goethe, telc, ÖSD, and DTZ — with Russian translations on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — German Anki deck for <strong>Russian speakers</strong> preparing <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong>, and <strong>DTZ</strong>.</p>",
-      "<p><strong>2,026</strong> high-frequency German cards with Russian translations of each word and example sentence, native German audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p>Not a Leben in Deutschland civics deck (see Citizenship &amp; Naturalization Anki Bundle). Distinct from the English-gloss German multi-pathway deck and the Ukrainian-support edition.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official Goethe, telc, ÖSD, or BAMF / DTZ material.</em></p>",
-    ].join(""),
+      "2026 карточек немецкого A2 с русскими переводами, аудио и картинками для Goethe, telc и DTZ — разовая покупка за $26.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — Anki-колода немецкого для <strong>русскоязычных</strong>, готовящихся к <strong>Goethe-Institut A2</strong>, <strong>telc Deutsch A2</strong>, <strong>ÖSD A2</strong> и <strong>DTZ</strong>.</p><p><strong>2026</strong> карточек: на каждой — картинка, русский перевод слова, немецкий пример с озвучкой и перевод примера. Частотное ядро, затем темы Anmeldung, аренда, Krankenkasse, работа и транспорт.</p><p>Не колода Leben in Deutschland (гражданские вопросы — отдельно).</p><p><strong>Доставка:</strong> скачайте .apkg из библиотеки Gumroad, импортируйте в Anki на компьютере и синхронизируйте с телефоном через AnkiWeb.</p><p><em>Независимый учебный материал — не официальный продукт Goethe-Institut, telc, ÖSD или BAMF.</em></p>"],
     coverPath: "public/covers/german-a2-for-russian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_German_A2_Russian_Speakers/prep2go_German_A2_Russian_Speakers_FULL.apkg",
@@ -284,15 +260,10 @@ const SPECS = {
     fileNames: ["German_A2_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-french-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for French Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL English pour francophones — Anki 2522 cartes",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with French support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>French speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with French glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+      "2 522 flashcards d’anglais avec traductions françaises, images et audio de phrases — base lexicale IELTS / TOEFL. 26 $ une fois.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — paquet Anki d’anglais pour <strong>francophones</strong> qui préparent <strong>IELTS</strong>, <strong>TOEFL</strong>, <strong>Cambridge</strong> et <strong>PTE</strong>.</p><p><strong>2 522</strong> cartes : mot anglais + image au recto ; glose française, phrase d’exemple en anglais avec audio, et sa traduction française au verso — la banque Prep2Go, en un seul .apkg.</p><p>Corrige les faux amis (actually ≠ actuellement, eventually ≠ éventuellement, library ≠ librairie) et entraîne les sons que les francophones brouillent souvent : th, h, accent tonique.</p><p><strong>Livraison :</strong> importez le .apkg dans Anki bureau, puis synchronisez vers le mobile via AnkiWeb.</p><p><em>Aide à l’étude indépendante — non affiliée au British Council, IDP, Cambridge University Press &amp; Assessment ou ETS.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-french-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_French_Speakers/prep2go_English_A2_French_Speakers_FULL.apkg",
@@ -300,15 +271,10 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_French_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-arabic-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Arabic Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL English للمتحدثين بالعربية — Anki 2504 بطاقة",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Arabic support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Arabic speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with Arabic glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+      "2504 بطاقة مفردات إنجليزية مع ترجمات عربية وصور وصوت للجمل — قاعدة لغوية لـ IELTS وTOEFL. 26 دولارًا مرة واحدة.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — حزمة Anki للإنجليزية لـ<strong>المتحدثين بالعربية</strong> المستعدين لـ<strong>IELTS</strong> و<strong>TOEFL</strong> و<strong>Cambridge</strong> و<strong>PTE</strong>.</p><p><strong>2504</strong> بطاقة: كلمة إنجليزية + صورة في الوجه؛ ترجمة عربية وجملة مثال إنجليزية مع صوت وترجمتها في الظهر — بنك Prep2Go في ملف .apkg واحد.</p><p>تركّز على التهجئة (خطأ إملائي في Listening/Reading = صفر) وعلى أصوات غالبًا ما تُدمج: p وb والحركات القصيرة.</p><p><strong>التسليم:</strong> استورد ملف .apkg في Anki على الكمبيوتر ثم زامِن للجوال عبر AnkiWeb.</p><p><em>مادة دراسية مستقلة — غير تابعة لـ British Council أو IDP أو Cambridge University Press &amp; Assessment أو ETS.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-arabic-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Arabic_Speakers/prep2go_English_A2_Arabic_Speakers_FULL.apkg",
@@ -316,15 +282,10 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Arabic_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-ukrainian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Ukrainian Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL англійська Anki для українськомовних — 2504 картки",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Ukrainian support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Ukrainian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with Ukrainian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+      "2504 картки англійської лексики з українськими перекладами, малюнками й озвученими реченнями — для IELTS General/Academic і TOEFL. $26 один раз.",
+    descriptionHtml: ["<p>Чи то канадський ПМЖ, робота в UK, чи англомовний університет — тест стоїть на тому самому ядрі слів. 2504 англійські картки за частотністю: малюнок, український переклад і англійське речення з озвучкою.</p><p>False friends на картці: magazine ≠ магазин, accurate ≠ акуратний, decade ≠ декада — з реченням, яке чуєте й читаєте. Українські глоси, не російські.</p><p>Це не банк питань IELTS/TOEFL і не курс письма. UniPrep2Go не проводить мок IELTS чи TOEFL — беріть офіційні зразки на ielts.org і ets.org.</p><p>Одноразова купівля, офлайн .apkg. Не афілійовано з British Council, IDP, Cambridge чи ETS.</p>"],
     coverPath: "public/covers/ielts-toefl-english-for-ukrainian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Ukrainian_Speakers/prep2go_English_A2_Ukrainian_Speakers_FULL.apkg",
@@ -332,15 +293,10 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Ukrainian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-russian-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Russian Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL English Anki для русскоязычных — 2504 карточки",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Russian support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Russian speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with Russian glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+      "2504 карточки английского с русскими переводами, аудио и картинками для IELTS и TOEFL — разовая покупка за $26.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — Anki-колода английского для <strong>русскоязычных</strong>, готовящихся к <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge и PTE.</p><p><strong>2504</strong> карточки по частотности: на каждой — картинка, русский перевод слова, английский пример с озвучкой и перевод примера. Закрывает ложные друзья вроде actual ≠ актуальный и привычки произношения (bag / back, h, th).</p><p><strong>Доставка:</strong> скачайте .apkg из библиотеки Gumroad, импортируйте в Anki на компьютере и синхронизируйте с телефоном через AnkiWeb.</p><p><em>Независимый учебный материал — не продукт British Council, IDP, Cambridge University Press &amp; Assessment или ETS.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-russian-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Russian_Speakers/prep2go_English_A2_Russian_Speakers_FULL.apkg",
@@ -348,15 +304,10 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Russian_Speakers_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-spanish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Spanish Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL English para hispanohablantes (LatAm) — Anki 2504 cartas",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Latin American Spanish support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Spanish speakers (LatAm)</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with Latin American Spanish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+      "2 504 flashcards de inglés con traducciones en español latinoamericano, imágenes y audio de oraciones — base léxica TOEFL / IELTS. $26 una vez.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — mazo Anki de inglés para <strong>hispanohablantes de América Latina</strong> que preparan <strong>TOEFL iBT</strong>, <strong>IELTS</strong>, <strong>Cambridge</strong> y <strong>PTE</strong>.</p><p><strong>2 504</strong> cartas: palabra inglesa + imagen al frente; glosa en español, oración de ejemplo en inglés con audio y su traducción al verso — el banco Prep2Go en un solo .apkg.</p><p>Corrige falsos amigos (pretend ≠ pretender, realize ≠ realizar, library ≠ librería) y entrena hábitos LatAm: la e delante de s+consonante, b/v y vocales cortas.</p><p><strong>Entrega:</strong> importa el .apkg en Anki de escritorio y sincroniza al móvil con AnkiWeb.</p><p><em>Material de estudio independiente — no afiliado a ETS, British Council, IDP ni Cambridge University Press &amp; Assessment.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-spanish-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Spanish_Speakers/prep2go_English_A2_Spanish_Speakers_FULL.apkg",
@@ -364,15 +315,10 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Spanish_Speakers_LatAm_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-portuguese-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Portuguese Speakers Anki Deck — 2482 Flashcards",
+    name: "IELTS / TOEFL English para falantes de português (BR) — Anki 2504 cartas",
     summary:
-      "2,482 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Brazilian Portuguese support on every card.",
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Brazilian Portuguese speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>2,482</strong> high-frequency English cards with Brazilian Portuguese (PT-BR) glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material. Not a CIPLE European Portuguese deck.</em></p>",
-    ].join(""),
+      "2 504 flashcards de inglês com traduções em português, imagens e áudio de frases — base lexical para IELTS / TOEFL. US$ 26 uma vez.",
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — baralho Anki de inglês para <strong>falantes de português brasileiro</strong> que preparam <strong>IELTS</strong>, <strong>TOEFL</strong>, <strong>Cambridge</strong> e <strong>PTE</strong>.</p><p><strong>2 504</strong> cartas: palavra em inglês + imagem na frente; glossa em português, frase de exemplo em inglês com áudio e sua tradução no verso — o banco Prep2Go em um único .apkg.</p><p>Corrige falsos amigos (pretend ≠ pretender, push ≠ puxar, actually ≠ atualmente) e treina hábitos BR: vogal extra no final de consoante, e antes de s+consoante, th e h inglês.</p><p><strong>Entrega:</strong> importe o .apkg no Anki desktop e sincronize no celular via AnkiWeb.</p><p><em>Material de estudo independente — não afiliado ao British Council, IDP, Cambridge University Press &amp; Assessment ou ETS.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-portuguese-speakers-anki-deck-v2.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Portuguese_Speakers/prep2go_English_A2_Portuguese_Speakers_FULL.apkg",
@@ -380,16 +326,11 @@ const SPECS = {
     fileNames: ["IELTS_TOEFL_English_for_Portuguese_Speakers_BR_Anki_Deck.apkg"],
   },
   "ielts-toefl-english-for-turkish-speakers-anki-deck": {
-    name: "IELTS / TOEFL English for Turkish Speakers Anki Deck — 924 Flashcards",
+    name: "IELTS / TOEFL English Türkçe konuşanlar için — Anki 952 kart",
     summary:
-      "924 English vocabulary cards for IELTS, TOEFL, Cambridge, and PTE — with Turkish support on every card.",
+      "952 temel İngilizce kelime kartı; Türkçe çeviriler, görseller ve cümle sesi — TOEFL / IELTS başlangıcı. Tek seferlik 5 $.",
     priceUsd: 5,
-    descriptionHtml: [
-      "<p><strong>PixID Studio</strong> — English Anki deck for <strong>Turkish speakers</strong> preparing <strong>IELTS</strong>, <strong>TOEFL</strong>, Cambridge, and PTE vocabulary.</p>",
-      "<p><strong>924</strong> high-frequency English cards with Turkish glosses, bilingual examples, native English audio, and illustrations — the same Prep2Go app bank, packaged as one .apkg.</p>",
-      "<p><strong>Delivery:</strong> Import the .apkg into Anki, then sync to mobile.</p>",
-      "<p><em>Independent study aid — not official IELTS, TOEFL, Cambridge, or PTE material.</em></p>",
-    ].join(""),
+    descriptionHtml: ["<p><strong>PixID Studio</strong> — <strong>Türkçe konuşanlar</strong> için <strong>TOEFL iBT</strong>, <strong>IELTS</strong>, <strong>Cambridge</strong> ve <strong>PTE</strong> hazırlığına Anki İngilizce destesi.</p><p><strong>952</strong> kart: önde İngilizce kelime + görsel; arkada Türkçe karşılık, sesli İngilizce örnek cümle ve Türkçe çevirisi — Prep2Go çekirdek bankası tek .apkg’de.</p><p>Türkçedeki o zamiri he/she/it ayrımını görünür kılar; TOEFL Build a Sentence’ın istediği özne–fiil–nesne sırasını örnek cümlelerle peşine takar.</p><p><strong>Teslimat:</strong> .apkg’yi masaüstü Anki’ye içe aktarın, AnkiWeb ile telefona senkronize edin.</p><p><em>Bağımsız çalışma materyali — ETS, British Council, IDP veya Cambridge University Press &amp; Assessment ile bağlantılı değildir.</em></p>"],
     coverPath: "public/covers/ielts-toefl-english-for-turkish-speakers-anki-deck.webp",
     apkgRelPaths: [
       "prep2go_English_A2_Turkish_Speakers/prep2go_English_A2_Turkish_Speakers_FULL.apkg",
