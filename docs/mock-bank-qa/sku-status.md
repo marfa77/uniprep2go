@@ -1,17 +1,17 @@
 # SKU status board
 
-Generated 2026-10-26 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-10-27 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 61 | 36 |
+| ok | 65 | 36 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 17 | 1 |
 | point-fix | 0 | 0 |
-| rewrite | 99 | 27 |
+| rewrite | 95 | 27 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -50,7 +50,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `wa-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `aapc-cpc-readiness-check` | planned | 60 / 60 | — | FAIL (5 items + bank-level): duplicate prompts, near-duplicate / templated stems (>=0.8), template/thin distractor notes, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `alcohol-server-readiness-check` | planned | 60 / 60 | — | FAIL (55 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
-| rewrite | `ascp-mlt-readiness-check` | planned | 60 / 120 | 2026-10-21 | FAIL (0 items + bank-level): correct |
 | rewrite | `aspt-phlebotomy-readiness-check` | planned | 60 / 60 | — | FAIL (60 items): distractor; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `aswb-masters-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cdl-air-brakes-readiness-check` | planned | 60 / 60 | — | FAIL (45 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
@@ -79,7 +78,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `ks-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ky-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `la-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `mblex-readiness-check` | planned | 60 / 60 | — | FAIL (22 items + bank-level): duplicate prompts, near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `md-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (17 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `me-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `mn-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -94,7 +92,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `nd-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ne-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nh-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `nha-cmaa-readiness-check` | planned | 60 / 60 | — | FAIL (20 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nha-cpt-phlebotomy-readiness-check` | planned | 60 / 60 | — | FAIL (10 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nm-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `nnaap-cna-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -107,7 +104,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `osha-10-general-readiness-check` | planned | 60 / 60 | — | FAIL (49 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `praxis-core-readiness-check` | planned | 60 / 60 | 2026-10-04 | FAIL (0 items + bank-level): correct; bank 60 for 60Q session |
 | rewrite | `praxis-elementary-education-readiness-check` | planned | 60 / 60 | — | FAIL (44 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `rbt-behavior-technician-readiness-check` | planned | 60 / 60 | — | FAIL (48 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ri-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `sc-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `sd-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (21 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -179,22 +175,26 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `amt-rma-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `ascp-mls-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
+| ok | `ascp-mlt-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `barber-state-readiness-check` | planned | 60 / 120 | 2026-10-21 | — |
 | ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `cda-childcare-readiness-check` | planned | 60 / 120 | 2026-10-23 | — |
 | ok | `cdl-school-bus-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `home-health-aide-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `mblex-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `medical-billing-specialist-readiness-check` | planned | 60 / 120 | 2026-10-23 | — |
 | ok | `medicare-counseling-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `medication-aide-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `nasm-cpt-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nbrc-tmc-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nha-cbcs-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
+| ok | `nha-cmaa-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `nremt-emr-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nremt-emt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `parapro-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pest-control-applicator-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
+| ok | `rbt-behavior-technician-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
@@ -293,8 +293,6 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | unreviewed | `delf-b2-grammar-anki-deck` | https://www.prep2go.study/shop/deck/delf-b2-grammar-anki-deck | — |
 | unreviewed | `dutch-a2-inburgering-anki-deck` | https://www.prep2go.study/shop/deck/inburgering-a2-anki-deck | — |
 | unreviewed | `german-a2-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
-| unreviewed | `german-a2-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
-| unreviewed | `german-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-arabic-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-arabic-speakers-anki-deck | — |
 | unreviewed | `ielts-toefl-english-for-portuguese-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-portuguese-speakers-anki-deck | — |
 | reviewed | `ciple-a2-european-portuguese-anki-deck` | https://www.prep2go.study/shop/ciple-a2-anki-deck | 2026-10-24 |
@@ -302,6 +300,8 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | reviewed | `czech-a2-cce-anki-deck` | https://www.prep2go.study/shop/deck/czech-cce-anki-deck | 2026-10-18 |
 | reviewed | `danish-a2-prove-i-dansk-anki-deck` | https://www.prep2go.study/shop/deck/danish-prove-i-dansk-anki-deck | 2026-10-18 |
 | reviewed | `dele-a2-ccse-spanish-citizenship-bundle` | https://www.prep2go.study/shop/dele-a2-anki-deck | 2026-10-15 |
+| reviewed | `german-a2-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | 2026-10-26 |
+| reviewed | `german-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/goethe-telc-osd-anki-deck | 2026-10-26 |
 | reviewed | `greek-a2-ellinomatheia-anki-deck` | https://www.prep2go.study/shop/deck/greek-ellinomatheia-anki-deck | 2026-10-18 |
 | reviewed | `ielts-toefl-english-for-french-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-french-speakers-anki-deck | 2026-10-13 |
 | reviewed | `ielts-toefl-english-for-russian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-russian-speakers-anki-deck | 2026-10-23 |
@@ -310,5 +310,5 @@ Source of truth: Prep2Go app DB (audit there, then rebuild apkg + Gumroad). Old 
 | reviewed | `ielts-toefl-english-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/english-for-ukrainian-speakers-anki-deck | 2026-10-13 |
 | reviewed | `norwegian-a2-norskprove-anki-deck` | https://www.prep2go.study/shop/deck/norwegian-norskprove-anki-deck | 2026-10-18 |
 | reviewed | `polish-a2-certyfikat-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-certyfikat-anki-deck | 2026-10-18 |
-| reviewed | `polish-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck | 2026-10-18 |
+| reviewed | `polish-a2-for-ukrainian-speakers-anki-deck` | https://www.prep2go.study/shop/deck/polish-a2-for-ukrainian-speakers-anki-deck | 2026-10-26 |
 | reviewed | `swedish-a2-sfi-anki-deck` | https://www.prep2go.study/shop/deck/swedish-sfi-anki-deck | 2026-10-18 |

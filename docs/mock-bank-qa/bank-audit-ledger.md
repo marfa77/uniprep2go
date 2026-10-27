@@ -8,12 +8,14 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Started | Slugs | Work | Status / blocker |
 |---|---|---|---|
-| 2026-10-24 | `swiss-citizenship-readiness-check` · `naturalisation-suisse-readiness-check` · `naturalizzazione-svizzera-readiness-check` | Swiss DE/FR/IT mock banks still 60/60 — expand to ≥120 | Anki 207×3 teaching lines shipped to Gumroad (`261024-0821`); bank expand next |
+| 2026-10-24 | `swiss-citizenship-readiness-check` · `naturalisation-suisse-readiness-check` · `naturalizzazione-svizzera-readiness-check` | Swiss DE/FR/IT mock banks still 60/60 — expand to ≥120 | Anki 207×3 teaching lines shipped to Gumroad (`261024-0821`); bank expand next. Stays on the November civic days |
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-10-27 | `rbt-behavior-technician-readiness-check` · `mblex-readiness-check` · `nha-cmaa-readiness-check` | `rbt-behavior-technician-anki-deck` · `mblex-anki-deck` · `nha-cmaa-anki-deck` (planned) | audit 0 FAIL · 120 each · keys RBT 30/30/30/30 · MBLEx and CMAA 30/32/30/28 | 4 writers + fix-first review per topic. Applied: RBT measurement 1, assessment 9, skill-acq 2, ethics 5; MBLEx anatomy 2, kinesiology 7, assessment 6, ethics 10; CMAA scheduling 4, records 2, billing 5, communication 4 | Specs cardCount 120. No apkg, no Gumroad. Official notes: RBT 85Q/90 min, MBLEx 100Q/2 h PASS-FAIL, CMAA 135Q/2h15 scaled 390 | Mon 26.10 + Tue 27.10 banks. Session stays 60. Deck-pitch side task still open |
+| 2026-10-27 | `ascp-mlt-readiness-check` | `ascp-mlt-anki-deck` (planned) | audit 0 FAIL after one length tie broken | 2026-10-21 review stands; no new items | No apkg. Distractor on blood-bank-011 lengthened so correct-is-longest is 36/120 (30%) | Monday plan “rewrite 120” was already shipped 2026-10-21. Residual gate only |
 | 2026-10-26 | — | `ciple-a2-for-russian-speakers-anki-deck` · `german-a2-for-russian-speakers-anki-deck` · `german-a2-for-ukrainian-speakers-anki-deck` · `polish-a2-for-ukrainian-speakers-anki-deck` · `ielts-toefl-english-for-{russian,ukrainian,french,spanish,portuguese,arabic,turkish}-speakers-anki-deck` | Gumroad landings | — | Support-language landings (RU/UK/FR/ES/PT-BR/AR/TR): `for-x-speakers-i18n.json` + UI chrome; copy-only + custom page republish | for-X speakers landings match back-language |
 | 2026-10-26 | — (Prep2Go app DB `ciple_ru`) | `ciple-a2-for-russian-speakers-anki-deck` | app audit FIX=0 · apkg 2043 / 4086 media | PT→RU two-pass + L1 OK in app | Export → `…_FULL_261026-0956.apkg` → Gumroad $26 create+publish + landing CDN samples (código postal / farmácia de serviço / Loja do Cidadão); UniPrep wire + retired→Prep2Go CIPLE shop | Russian-support CIPLE; master PT/media untouched |
 | 2026-10-25 | `cfa-level-1-readiness-check` · `cfa-level-2-readiness-check` | — | Sunday ritual | — | Live-verify Week 1; `gsc:export` 2026-10-25; AnkiWeb day-14 on 13.10 shares; `sku:status` + daily-plan regen | L1 query 10@11.1 · L2 15@24.5 · 0 clicks. Next = Week 2–3 proof |

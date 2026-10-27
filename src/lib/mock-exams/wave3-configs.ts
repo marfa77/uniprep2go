@@ -385,13 +385,16 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     topics: fourNicheTopics([
       { id: "measurement", label: "Measurement" },
       { id: "assessment", label: "Assessment support" },
-      { id: "skill-acq", label: "Skill acquisition" },
-      { id: "ethics", label: "Ethics & professionalism" }
+      { id: "skill-acq", label: "Skill acquisition & behavior reduction" },
+      { id: "ethics", label: "Documentation & ethics" }
     ]),
-    officialSourceNote: "Mapped to BACB themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question RBT readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "BACB RBT Test Content Outline (3rd ed., examinations from 2026): 85 questions (75 scored + 10 unscored), 90 minutes, four choices. Six domains are scored here as four topics; behavior reduction sits with skill acquisition, and documentation sits with ethics. Independent UniPrep2Go check — not a BACB exam.",
+    description:
+      "60-question / 75-minute RBT readiness check (free first 25) from a 120-item bank. Official exam: 85 questions in 90 minutes. Topic scores include behavior reduction and documentation.",
     examBody: "BACB",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go 120-item bank, expanded 2026-10-27. Each timed attempt draws 60.",
+    lastUpdated: "2026-10-27",
     searchAliases: ["RBT", "registered behavior technician"],
   }),
   nicheReadinessConfig({
