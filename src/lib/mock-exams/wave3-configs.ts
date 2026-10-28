@@ -488,15 +488,19 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
     topics: fourNicheTopics([
-      { id: "airway", label: "Advanced airway" },
-      { id: "pharm", label: "Pharmacology" },
-      { id: "medical", label: "Medical emergencies" },
-      { id: "trauma", label: "Trauma & ops" }
+      { id: "airway", label: "Airway, respiration & ventilation" },
+      { id: "pharm", label: "AEMT pharmacology" },
+      { id: "medical", label: "Medical, cardiology & OB" },
+      { id: "trauma", label: "Trauma & EMS operations" }
     ]),
-    officialSourceNote: "Mapped to NREMT themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question NREMT AEMT readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "NREMT AEMT cognitive exam (public test plan, administered starting 2024-07-01): 135 items, 3 hours, 35 unscored pilots, linear, criterion-referenced pass with no published percent. Domains include airway, cardiology, trauma, medical/OB, EMS operations, and clinical judgment. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target from a 120-item bank. Four topics collapse that outline; pharmacology is not its own NREMT domain. Not an official exam.",
+    description:
+      "60-question / 75-minute NREMT AEMT readiness check (free first 25) from a 120-item bank. Official exam: 135 questions in 3 hours, 35 unscored.",
     examBody: "NREMT",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go AEMT bank, rewritten and expanded to 120 unique items on 2026-10-28. National scope only: supraglottic airway and AEMT medications, not paramedic intubation or arrest drips.",
+    lastUpdated: "2026-10-28",
     searchAliases: ["AEMT", "NREMT AEMT", "advanced EMT"],
   }),
   nicheReadinessConfig({
@@ -788,15 +792,19 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
     topics: fourNicheTopics([
-      { id: "framework", label: "Project framework" },
-      { id: "process", label: "Process groups" },
+      { id: "framework", label: "Project fundamentals" },
+      { id: "process", label: "Business analysis" },
       { id: "predictive", label: "Predictive methods" },
-      { id: "agile", label: "Agile & business analysis" }
+      { id: "agile", label: "Agile frameworks" }
     ]),
-    officialSourceNote: "Mapped to PMI themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question CAPM readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "PMI CAPM Exam Content Outline (2023, still linked from pmi.org): 150 questions (135 scored + 15 pretest), 3 hours, one 10-minute break after question 75, no published pass percent. Domains: fundamentals 36%, predictive 17%, agile 20%, business analysis 27%. This UniPrep2Go check is 60 four-option questions / 75 minutes / 70% readiness target from a 120-item bank, in four equal topics, not those weights. The official exam also uses drag-and-drop, hotspot, and comic or animation items. Not PMI material.",
+    description:
+      "60-question / 75-minute CAPM readiness check (free first 25) from a 120-item bank. Official exam: 150 questions in 3 hours (135 scored + 15 pretest).",
     examBody: "PMI",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go CAPM bank, rewritten to the 2023 exam content outline and expanded to 120 unique items on 2026-10-28.",
+    lastUpdated: "2026-10-28",
     searchAliases: ["CAPM", "PMI CAPM"],
   }),
   nicheReadinessConfig({

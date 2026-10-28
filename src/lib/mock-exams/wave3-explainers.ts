@@ -530,17 +530,19 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "nremt-aemt-readiness-check": {
     practiceTestName: "NREMT AEMT Practice Test",
-    whatIsExam: "The NREMT Advanced EMT cognitive exam certifies AEMTs with a scope between EMT and paramedic, including limited advanced airway and pharmacology.",
+    whatIsExam: "The NREMT Advanced EMT cognitive exam certifies providers between EMT and paramedic. The public test plan, for exams administered starting July 1, 2024, is 135 items in 3 hours, including 35 unscored pilots. Pass is criterion-referenced, and NREMT does not publish a percent.",
     administeredBy: "NREMT",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NREMT.",
+    officialFormat:
+      "Official exam: 135 items, 3 hours, 35 unscored, linear, no published percent (NREMT AEMT test plan, effective 2024-07-01). UniPrep2Go session: 60 questions, 75 minutes, from a 120-item bank. National scope only — supraglottic airway, not paramedic intubation.",
     examFaqs: [
       {
-        question: "What is the NREMT AEMT exam?",
-        answer: "The NREMT Advanced EMT cognitive exam certifies AEMTs with a scope between EMT and paramedic, including limited advanced airway and pharmacology.",
+        question: "How many questions are on the NREMT AEMT exam?",
+        answer:
+          "The public AEMT test plan, for exams administered starting July 1, 2024, is 135 items in 3 hours. Thirty-five are unscored pilots. Pass is criterion-referenced, and NREMT does not publish a percent. This readiness check is 60 questions in 75 minutes from a 120-item bank.",
       },
       {
         question: "Is this an official NREMT AEMT exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NREMT.",
+        answer: "No. This UniPrep2Go readiness check is independent practice — not official exam material from NREMT.",
       },
     ],
     keywords: ["aemt practice test", "nremt aemt practice test", "advanced emt practice test", "nremt aemt practice exam"],
@@ -889,17 +891,19 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "capm-readiness-check": {
     practiceTestName: "CAPM Practice Test",
-    whatIsExam: "The PMI Certified Associate in Project Management (CAPM) exam is an entry project management certification based on PMI frameworks.",
+    whatIsExam: "The PMI Certified Associate in Project Management (CAPM) exam is the entry project-management certification. The 2023 exam content outline, still linked from pmi.org, is 150 questions in 3 hours: 135 scored and 15 pretest. PMI does not publish a pass percent.",
     administeredBy: "PMI",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with PMI.",
+    officialFormat:
+      "Official exam: 150 questions (135 scored + 15 pretest), 3 hours, one 10-minute break after question 75, no published percent. Domains are fundamentals 36%, predictive 17%, agile 20%, and business analysis 27%. UniPrep2Go session: 60 four-option questions, 75 minutes, from a 120-item bank in four equal topics.",
     examFaqs: [
       {
-        question: "What is the CAPM exam?",
-        answer: "The PMI Certified Associate in Project Management (CAPM) exam is an entry project management certification based on PMI frameworks.",
+        question: "How many questions are on the CAPM exam?",
+        answer:
+          "PMI's CAPM exam is 150 questions in 3 hours: 135 scored and 15 unscored pretest items, with a 10-minute break after question 75. There is no published pass percent. This readiness check is 60 questions in 75 minutes from a 120-item bank, and it is multiple choice only.",
       },
       {
         question: "Is this an official CAPM exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from PMI.",
+        answer: "No. This UniPrep2Go readiness check is independent practice — not official exam material from PMI.",
       },
     ],
     keywords: ["capm practice test", "pmi capm practice test", "capm practice exam"],
