@@ -926,6 +926,11 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "How long must I wait to retake the Series 7 after a fail?",
+        answer:
+          "Under FINRA’s published retake schedule, from 19 January 2027 the waiting period before a Series 7 retake shortens to 15 days (confirm on finra.org before you schedule). Until that effective date, follow the waiting periods shown on FINRA’s current qualification exams page.",
+      },
+      {
         question: "Where can I get Series 7 flashcards?",
         answer:
           "UniPrep2Go’s Series 7 Anki deck is 300 high-yield flashcards covering FINRA Top-Off job functions — suitability, products, options, accounts, and order flow — delivered as an .apkg for spaced repetition on phone or desktop.",
@@ -954,11 +959,6 @@ const rawDecks: Deck[] = [
       {
         question: "Does the deck replace Series 7 practice questions?",
         answer: "No. It is a supplementary recall tool for products, suitability rules, definitions, formulas, and exam traps. Use it alongside a full Series 7 course and practice questions.",
-      },
-      {
-        question: "How long must I wait to retake the Series 7 after a fail?",
-        answer:
-          "Under FINRA’s published retake schedule, from 19 January 2027 the waiting period before a Series 7 retake shortens to 15 days (confirm on finra.org before you schedule). Until that effective date, follow the waiting periods shown on FINRA’s current qualification exams page.",
       },
     ],
   },

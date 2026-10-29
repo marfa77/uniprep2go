@@ -93,6 +93,8 @@ export function buildMergedDeckFaqs(deck: Deck): DeckFaq[] {
     if (/who is this|does the deck replace|how do I prepare/i.test(faq.question)) return false;
     // Keep competitive GEO FAQs ("best …", free practice test) visible on the page.
     if (/what is the best|is there a free .+ practice test/i.test(faq.question)) return true;
+    // Keep FINRA/NASAA retake-wait facts (AEO; digest 2026-10-29).
+    if (/retake|waiting period/i.test(faq.question)) return true;
     // Keep pathway / exam-identity honesty FAQs (e.g. language deck vs civics exam).
     if (/which .+ pathways|indfødsrets|civics test|is this the /i.test(faq.question)) return true;
     return isProductFaq(faq);
