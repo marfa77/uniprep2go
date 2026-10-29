@@ -6,12 +6,12 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 73 | 37 |
+| ok | 75 | 38 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 15 | 1 |
 | point-fix | 0 | 0 |
-| rewrite | 89 | 26 |
+| rewrite | 87 | 25 |
 | civic | 19 | 18 |
 | **total live mocks** | **196** | **82** |
 
@@ -39,7 +39,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `oh-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (14 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `pa-real-estate-readiness-check` | live | 60 / 60 | — | FAIL (18 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `property-casualty-insurance-readiness-check` | live | 60 / 60 | 2026-10-24 | FAIL (69 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations, distractor; bank 60 for 60Q session |
-| rewrite | `real-estate-appraiser-readiness-check` | live | 60 / 60 | 2026-10-29 | FAIL (51 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `series-6-readiness-check` | live | 120 / 120 | — | FAIL (18 items): thin/template explanations; bank 120 for 120Q session; no content review in ledger |
 | rewrite | `series-65-readiness-check` | live | 120 / 120 | 2026-10-15 | FAIL (28 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session |
 | rewrite | `series-79-readiness-check` | live | 120 / 120 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 120 for 120Q session; no content review in ledger |
@@ -69,7 +68,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `ia-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (14 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `id-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `in-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `issa-cpt-readiness-check` | planned | 60 / 60 | 2026-10-29 | FAIL (30 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session |
 | rewrite | `ks-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (19 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ky-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `la-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (20 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -153,6 +151,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-15 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-24 | — |
 | ok | `rd-exam-readiness-check` | live | 120 / 240 | 2026-10-16 | — |
+| ok | `real-estate-appraiser-readiness-check` | live | 60 / 120 | 2026-10-29 | — |
 | ok | `sat-readiness-check` | live | 49 / 160 | 2026-10-02 | — |
 | ok | `series-63-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
 | ok | `series-66-readiness-check` | live | 60 / 120 | 2026-10-29 | — |
@@ -179,6 +178,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `forklift-operator-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `funeral-service-arts-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `home-health-aide-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
+| ok | `issa-cpt-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `mblex-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `medical-billing-specialist-readiness-check` | planned | 60 / 120 | 2026-10-23 | — |
 | ok | `medicare-counseling-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |

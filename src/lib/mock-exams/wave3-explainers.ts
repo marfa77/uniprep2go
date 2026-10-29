@@ -1259,17 +1259,17 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "real-estate-appraiser-readiness-check": {
     practiceTestName: "Real Estate Appraiser Practice Test",
-    whatIsExam: "Trainee/licensed appraiser exams (AQB national themes) cover USPAP concepts, valuation approaches, and appraisal reporting for state credentialing.",
+    whatIsExam: "Trainee and licensed appraiser exams on AQB themes cover USPAP concepts, the three valuation approaches, appraisal math, and reporting. Confirm the current length and scaled pass with the AQB or the state board. A figure near 125 questions and a scaled pass near 75 is only a commonly cited estimate.",
     administeredBy: "AQB / state appraiser boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with AQB / state appraiser boards.",
+    officialFormat: "No length is stated here as official. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank. The live Anki deck is still 60 cards.",
     examFaqs: [
       {
-        question: "What is the Real Estate Appraiser exam?",
-        answer: "Trainee/licensed appraiser exams (AQB national themes) cover USPAP concepts, valuation approaches, and appraisal reporting for state credentialing.",
+        question: "What is the real estate appraiser exam?",
+        answer: "State boards use an AQB-style exam on USPAP, valuation approaches, math, and reporting. Confirm the current form with the board. This page does not treat ~125 questions or a scaled 75 as a verified national form.",
       },
       {
-        question: "Is this an official Real Estate Appraiser exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from AQB / state appraiser boards.",
+        question: "Is this an official appraiser exam?",
+        answer: "No. This is a 60-question / 75-minute UniPrep2Go check from a 120-item bank. The Anki deck on sale is still the 60-card file.",
       },
     ],
     keywords: ["appraiser exam practice test", "aqb national practice test", "real estate appraiser practice exam"],

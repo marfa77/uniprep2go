@@ -1079,13 +1079,20 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "issa-cpt-readiness-check": explainer({
     practiceTestName: "ISSA CPT Practice Test",
     whatIsExam:
-      "The ISSA Certified Personal Trainer exam certifies trainers through the International Sports Sciences Association. It covers anatomy, program design, nutrition basics, and client coaching.",
+      "ISSA Certified Personal Trainer practice here covers anatomy, training, special populations, and nutrition or business themes. This page does not state an official ISSA question count. Clinical diets belong with a registered dietitian, and a PAR-Q is a screen, not a medical clearance.",
     administeredBy: "International Sports Sciences Association (ISSA)",
+    officialFormat:
+      "No official question count is stated here. This UniPrep2Go check is 60 questions / 75 minutes drawn from a 120-item bank.",
     examFaqs: [
       {
         question: "What is the ISSA CPT certification?",
         answer:
-          "ISSA CPT is a personal trainer certification focused on exercise science and client program design for fitness professionals.",
+          "ISSA CPT is a personal trainer certification. This readiness check practices anatomy, programming, special populations, and nutrition or business. It is not an ISSA exam.",
+      },
+      {
+        question: "Is this an official ISSA exam?",
+        answer:
+          "No. This is a 60-question / 75-minute UniPrep2Go check from a 120-item bank. The Anki deck is planned and is not a live download.",
       },
     ],
     keywords: ["issa cpt practice test", "issa practice exam"],

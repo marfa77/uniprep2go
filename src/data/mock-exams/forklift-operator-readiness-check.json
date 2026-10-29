@@ -58,7 +58,7 @@
     "correctOptionId": "a",
     "explanation": "Raising the freight lifts the combined center of gravity and increases tip risk. The high carriage in this aisle does not add capacity or rear-wheel traction.",
     "distractorExplanations": {
-      "b": "This confuses a higher carriage with more capacity. Raising freight derates the lift; it does not increase the printed rating.",
+      "b": "This confuses a higher carriage with more capacity. The printed rating does not go up as the freight rises; the center of gravity rises and a tip grows more likely.",
       "c": "A high load lightens the rear wheels. It does not improve rear-wheel traction or overall stability in this aisle.",
       "d": "Load center is the horizontal distance from the fork face. Lift height changes center-of-gravity height, not that distance."
     },
@@ -69,31 +69,31 @@
     "id": "forklift-operator-readiness-check-stability-003",
     "examSlug": "forklift-operator-readiness-check",
     "topicId": "stability",
-    "prompt": "With a pallet already seated on the forks, she angles the mast backward before rolling away from the pick face. What does that backward tilt accomplish for stability?",
+    "prompt": "She reaches the end of the aisle with the pallet still near the top of the mast and starts to cut the wheel. What should happen to that pallet before the truck turns?",
     "options": [
       {
         "id": "a",
-        "text": "It shifts the combined center of gravity forward over the forks"
+        "text": "Turn now while the pallet stays at the top of the mast"
       },
       {
         "id": "b",
-        "text": "It helps keep the center of gravity inside the triangle"
+        "text": "Lower the load, then turn"
       },
       {
         "id": "c",
-        "text": "It makes travel acceptable while the freight stays fully raised"
+        "text": "Raise the pallet farther so the turn has more room"
       },
       {
         "id": "d",
-        "text": "It increases the rated capacity shown on the data plate"
+        "text": "Tilt the mast forward and turn while the load stays high"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Tilting the mast back with the pallet seated moves the combined center of gravity rearward and helps keep it inside the stability triangle before she leaves the pick face.",
+    "explanation": "She lowers the pallet and only then turns. Cutting the wheel while the load is still at the top of the mast is the miss, because a raised load tips more easily in a turn.",
     "distractorExplanations": {
-      "a": "Back tilt moves the combined center of gravity rearward, toward the drive axle, not forward over the forks.",
-      "c": "Back tilt does not authorize travel with the freight fully raised. The pallet still needs to come down before she rolls.",
-      "d": "Mast tilt does not change the capacity on the data plate. The rating stays what the manufacturer marked."
+      "a": "Turning while the pallet stays up is the miss. The load comes down before the wheel is cut.",
+      "c": "More height does not make the turn safer. The pallet is lowered before she steers.",
+      "d": "Forward tilt with the load still high moves the mass forward during the turn. Lower the load, then turn."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (2026-10-29)."
@@ -555,7 +555,7 @@
     "distractorExplanations": {
       "b": "Continued hoisting raises the center of gravity. It does not drop that center or make a tip less likely.",
       "c": "Height is not neutral. As the freight goes higher, the combined center of gravity moves up with it.",
-      "d": "Extending the mast does not increase rated capacity. Capacity falls as lift height and tip risk increase."
+      "d": "Extending the mast does not increase rated capacity. Height does not add capacity on the plate; it moves the center of gravity up and makes a tip more likely."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (2026-10-29)."
@@ -949,9 +949,9 @@
     "correctOptionId": "d",
     "explanation": "In this turn the rear of the machine swings wide, and the pivot is not the center of the cab. The walker at the tail corner is inside that swing.",
     "distractorExplanations": {
-      "a": "The pivot is the rear steer axle, not the cab center, so the tail does not stay put in this left turn.",
+      "a": "The turn does not pivot at the cab center. The truck rotates about the front axle, so the rear swings wide and the tail does not stay put.",
       "b": "The tail does not track inside while the forks swing out. On this truck the rear swings wide in the turn.",
-      "c": "The steer axle is what pivots. The tail does not follow the fork path, which is why the walker is in danger."
+      "c": "The steer axle is not the point the truck rotates around, and the tail does not follow the fork path. The rear swings wide, which puts the walker in danger."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (2026-10-29)."

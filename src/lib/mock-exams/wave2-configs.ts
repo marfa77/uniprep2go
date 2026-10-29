@@ -241,10 +241,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "special-pops", label: "Special populations & assessment" },
       { id: "nutrition-biz", label: "Nutrition, behavior & business" },
     ]),
-    officialSourceNote: "ISSA CPT knowledge themes. Not an ISSA exam.",
-    description: "60-question ISSA CPT readiness check (free 25-question version).",
+    officialSourceNote:
+      "ISSA CPT knowledge themes. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank. No official question count is stated here. The Anki deck is planned, not a live download. Not an ISSA exam.",
+    description:
+      "60-question / 75-minute ISSA CPT check (free first 25) from a 120-item bank. Knowledge practice, not an ISSA exam.",
+    lastUpdated: "2026-10-29",
     examBody: "ISSA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote: "Original UniPrep2Go local bank. Expanded 2026-10-29.",
   }),
   nicheReadinessConfig({
     slug: "ny-real-estate-readiness-check",

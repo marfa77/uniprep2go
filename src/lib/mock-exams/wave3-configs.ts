@@ -1190,10 +1190,12 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "ethics", label: "Ethics & reporting" }
     ]),
     officialSourceNote:
-      "Independent diagnostic on AQB National Uniform Licensing Examination themes (USPAP ethics, valuation approaches, math, reporting). Official AQB national exam is commonly cited as ~125 questions with a scaled pass near 75 — confirm current AQB / state board outline. This UniPrep2Go mock is 60 questions / 75 minutes / 70% readiness target. Not AQB exam material.",
-    description: "60-question Real Estate Appraiser readiness check (free 25-question version) with topic scoring.",
+      "Independent diagnostic on AQB National Uniform Licensing Examination themes (USPAP ethics, valuation approaches, math, reporting). Official AQB national exam is commonly cited as ~125 questions with a scaled pass near 75 — confirm current AQB / state board outline. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank, with a 70% readiness target that is ours. The live Anki deck is still 60 cards. Not AQB exam material.",
+    description:
+      "60-question / 75-minute appraiser check (free first 25) from a 120-item bank. Confirm the AQB length with the state board.",
+    lastUpdated: "2026-10-29",
     examBody: "AQB / state appraiser boards",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go local bank. Expanded 2026-10-29.",
     searchAliases: ["appraiser exam", "AQB national"],
   }),
   nicheReadinessConfig({

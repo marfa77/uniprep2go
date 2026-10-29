@@ -3270,31 +3270,31 @@
     "id": "cdl-hazmat-readiness-check-security-rules-010",
     "examSlug": "cdl-hazmat-readiness-check",
     "topicId": "security-rules",
-    "prompt": "Your trailer holds a material that triggers attendance rules, a lot worker offers to watch it from inside the restaurant, and you need to know what those attendance rules actually require of the stop?",
+    "prompt": "You have just parked a high-risk hazmat trailer in a dark lot behind a closed mall, and a lot worker says the fence is enough for the night. What does the security plan for that load require at this stop?",
     "options": [
       {
         "id": "a",
-        "text": "The driver must remain inside the cab for the entire trip, including while driving"
+        "text": "Leave it in the dark lot, because a closed mall means nobody will come near the trailer"
       },
       {
         "id": "b",
-        "text": "A qualified person may need to attend the vehicle"
+        "text": "Keep it lit, and attended or secured the way the plan says"
       },
       {
         "id": "c",
-        "text": "Locking the doors meets attendance for every material that has an attendance rule"
+        "text": "A padlock with the key left in it is enough security for the night"
       },
       {
         "id": "d",
-        "text": "Sleeping in the berth counts, because someone is still physically on board"
+        "text": "Post the route on the lot whiteboard so the next driver can find the trailer"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "When the material requires attendance, a qualified person may need to attend the vehicle. A lot worker watching from inside a restaurant is not that attendance. Staying in the cab for the whole trip, a lock alone, or sleep in the berth does not meet the rule.",
+    "explanation": "A high-risk load is parked lit, and attended or secured the way that load's plan says. A dark lot behind a closed mall is the miss, and a fence by itself is not the plan. A lock with the key left in it is not secured, and posting the route on a public board is the opposite of en-route security.",
     "distractorExplanations": {
-      "a": "Confuses attendance at a stop with living in the cab; the rule is that a qualified person may need to attend the vehicle, not that you never leave the seat while driving.",
-      "c": "Confuses a lock with attendance; for materials that require attendance, a locked vehicle is not a substitute for a qualified person attending it.",
-      "d": "Confuses being aboard with attending; a person asleep in the berth is not an attendant for a load that requires attendance."
+      "a": "Treats a closed mall as security. The cover fact is a lit, attended or plan-secured stop, and a dark lot is the miss.",
+      "c": "A padlock with the key still in it is not a security plan. Attendance or the plan's securing step is what the stop requires.",
+      "d": "Posting the route where anyone can read it drops en-route security. The stop still has to be lit and attended or secured."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (2026-10-29)."
