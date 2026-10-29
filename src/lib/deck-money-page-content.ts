@@ -49,7 +49,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "aspt-phlebotomy-anki-deck":
     "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the 60-question diagnostic (free 25-question version) now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
   "cscs-nsca-anki-deck":
-    "Planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the 60-question diagnostic (free 25-question version) now — official CSCS is two papers / scaled 70 each. CSCS is not a personal-trainer CPT exam.",
+    "Planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the 60-question diagnostic (free 25-question version) from a 120-item bank — official CSCS is two papers / scaled 70 each. The deck is not a live download. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
     "240 CDR-domain cards (Principles 50, Nutrition Care 108, Management 50, Foodservice 32) with explanations — pairs with the 120-question RD readiness check (free 25-question version), drawn from the same bank, before Pearson VUE.",
   "enrolled-agent-anki-deck":
@@ -129,7 +129,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "unarmed-security-officer-anki-deck":
     "Planned 60-card unarmed security Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific; ≠ armed card.",
   "wastewater-operator-1-anki-deck":
-    "Planned 60-card wastewater operator Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific; ≠ drinking-water treatment.",
+    "Planned 120-card wastewater operator Anki. 60Q / 75 min diagnostic from a 120-item bank (free 25-question version) — state-specific; not a live download; ≠ drinking-water treatment.",
   "electrical-journeyman-anki-deck":
     "Planned 60-card journeyman electrician Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific NEC; ≠ master electrician.",
   "nate-core-anki-deck":
@@ -654,9 +654,9 @@ export const positioningOverrides: Partial<
   },
   "wastewater-operator-1-anki-deck": {
     ourEdge: [
-      "Planned 60-card wastewater operator Anki for process, safety, labs, regs",
-      "60Q / 75 min timed diagnostic live now (free 25-question version)",
-      "Honest: state-specific ABC-style exams — no national Q-count",
+      "Planned 120-card wastewater operator Anki for process, safety, labs, regs",
+      "60Q / 75 min timed diagnostic from a 120-item bank (free 25-question version)",
+      "Honest: WPI Class I is often 100 scored questions in 3 hours — confirm with the state",
       "≠ drinking-water treatment operator",
     ],
     summaryProse:
@@ -931,7 +931,7 @@ ASPT registration, clinical training, or NHA/ASCP exams. Independent diagnostic 
 
   "cscs-nsca-anki-deck": `### What this page is
 
-A planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, organization & admin) paired with a **live 60-question** timed readiness check (free 25-question version). The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
+A planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, organization & admin) paired with a **live 60-question** timed readiness check drawn from a 120-item bank (free 25-question version). The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
 
 ### CSCS vs personal-trainer CPT
 
@@ -939,7 +939,7 @@ A planned 60-card NSCA CSCS Anki (exercise science, nutrition, program design, o
 
 ### Plan with the free mock
 
-Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-check). Use the topic report to see science vs programming gaps. This 60-question diagnostic is shorter than either official paper and has no video items. Join the waitlist when the Anki ships.
+Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-check). Use the topic report to see science vs programming gaps. This 60-question diagnostic is drawn from a 120-item bank, is shorter than either official paper, and has no video items. Join the waitlist when the Anki ships.
 
 ### What this does not replace
 
@@ -2413,13 +2413,13 @@ State registration or firearms qualification. Anki is **planned**. Independent p
 
   "wastewater-operator-1-anki-deck": `### What is inside
 
-Planned **60** flashcards across treatment process, safety/confined space, labs/sampling, and regs — the same four buckets as the free readiness check. Built for **wastewater** operators, not drinking-water treatment.
+Planned **120** flashcards across treatment process, safety/confined space, labs/sampling, and regs — the same four buckets as the free readiness check. The file is not for sale yet. Built for **wastewater** operators, not drinking-water treatment.
 
 ### Plan with the free Wastewater Operator 1 mock (live now)
 
-**Start:** Take the [60-question Wastewater Operator Level 1 readiness check (free 25-question version)](/mock-exams/wastewater-operator-1-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your state / ABC Need-to-Know handbook. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+**Start:** Take the [60-question Wastewater Operator Level 1 readiness check (free 25-question version)](/mock-exams/wastewater-operator-1-readiness-check) (75 minutes, drawn from a 120-item bank). **Then:** Use your state handbook. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
 
-Licensing is **state-specific**. Our mock is a 60-question diagnostic — not a national form.
+Licensing is **state-specific**. States that use WPI (formerly ABC) Class I typically give 100 scored questions in 3 hours. Our mock is a 60-question diagnostic, not that form.
 
 ### Pitfalls this deck targets (when live)
 
@@ -2427,7 +2427,7 @@ Candidates sit drinking-water banks for a wastewater sitting, skip H2S/confined-
 
 ### What this does not replace
 
-State operator certification. Anki is **planned**. Independent prep — not ABC material.`,
+State operator certification. Anki is **planned**. Independent prep — not a state exam.`,
 
   "electrical-journeyman-anki-deck": `### What is inside
 

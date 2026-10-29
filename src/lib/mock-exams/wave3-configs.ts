@@ -648,11 +648,12 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "organization", label: "Organization & admin" }
     ]),
     officialSourceNote:
-      "Independent UniPrep2Go diagnostic on NSCA CSCS themes. Official CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 pretest / 1.5h) and Practical/Applied (110 scored + 15 pretest / 2.5h, including 30–40 video/image items); scaled pass 70 on each (verify nsca.com). This 60-question / 75-minute check is shorter and has no video items. CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. Not official NSCA exam material. Anki deck is planned, not a live Gumroad SKU.",
+      "Independent UniPrep2Go diagnostic on NSCA CSCS themes. Official CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 pretest / 1.5h) and Practical/Applied (110 scored + 15 pretest / 2.5h, including 30–40 video/image items); scaled pass 70 on each (verify nsca.com). This 60-question / 75-minute check is drawn from a 120-item bank, is shorter than either paper, and has no video items. CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. Not official NSCA exam material. Anki deck is planned, not a live Gumroad SKU.",
     description:
-      "60-question NSCA CSCS readiness check (free 25-question version) with topic scoring. Official exam is two papers (Scientific Foundations + Practical/Applied) — this page is a shorter independent diagnostic, not a personal-trainer CPT mock.",
+      "60-question / 75-minute NSCA CSCS check (free first 25) from a 120-item bank. Official exam is two papers; this one is shorter and has no video.",
+    lastUpdated: "2026-10-29",
     examBody: "NSCA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten and expanded 2026-10-29.",
     searchAliases: ["CSCS", "NSCA CSCS", "strength coach"],
   }),
   nicheReadinessConfig({
@@ -879,8 +880,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     title: "Series 66 Readiness Check",
     shortTitle: "Series 66",
     linkedDeckSlug: "series-66-anki-deck",
-    durationMinutes: 120,
-    questionCount: 120,
+    durationMinutes: 75,
+    questionCount: 60,
     topics: fourNicheTopics(
       [
         { id: "products", label: "Investment products" },
@@ -892,10 +893,12 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to NASAA / FINRA Series 66 (65+63 combo) themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
-    description: "120-question Series 66 readiness check (free 25-question version) with topic scoring.",
+      "NASAA Series 66, delivered by FINRA: 100 scored questions plus 10 unscored, 150 minutes, pass at 73 of the 100 scored. It is not a 70% cut. A valid SIE and Series 7 are co-requisites at registration. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank, with a 70% readiness target that is ours. Not NASAA or FINRA material. The Anki deck is a separate live product.",
+    description:
+      "60-question / 75-minute Series 66 check (free first 25) from a 120-item bank. Official exam: 110 questions, 150 minutes, pass 73 of 100.",
+    lastUpdated: "2026-10-29",
     examBody: "NASAA / FINRA delivery",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go local bank. Thin items rewritten 2026-10-29. Session is 60 from 120.",
     searchAliases: ["Series 66", "65+63 combo"],
   }),
   nicheReadinessConfig({
@@ -1037,10 +1040,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "operation", label: "Safe operation" },
       { id: "pedestrians", label: "Pedestrians & loads" }
     ]),
-    officialSourceNote: "Mapped to OSHA powered industrial trucks themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Forklift Operator readiness check (free 25-question version) with topic scoring.",
-    examBody: "OSHA powered industrial trucks themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    officialSourceNote:
+      "OSHA 29 CFR 1910.178 covers powered industrial trucks. There is no national scored exam and no official pass percent. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank. Employer certification is separate. Not OSHA material. The Anki deck is planned, not a live download.",
+    description:
+      "60-question / 75-minute forklift check (free first 25) from a 120-item bank. OSHA 1910.178 has no national scored exam.",
+    lastUpdated: "2026-10-29",
+    examBody: "OSHA 29 CFR 1910.178",
+    questionSourceNote: "Original UniPrep2Go local bank. Expanded 2026-10-29.",
     searchAliases: ["forklift certification", "PIT operator"],
   }),
   nicheReadinessConfig({
@@ -1161,11 +1167,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "labs", label: "Labs & sampling" },
       { id: "regs", label: "Regs & reporting" }
     ]),
-    officialSourceNote: "Mapped to State wastewater operator boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Wastewater Operator Level 1 readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "States that use a WPI (formerly ABC) Class I wastewater exam typically give 100 scored multiple-choice questions in 3 hours, with a 70% cut where the state adopts it, and up to 10 unscored pretest items. Confirm the form with the state board. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank. Not a state exam.",
+    description:
+      "60-question / 75-minute wastewater Level 1 check (free first 25) from a 120-item bank. WPI Class I is often 100 scored items in 3 hours.",
     examBody: "State wastewater operator boards",
-    lastUpdated: "2026-10-04",
-    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
+    lastUpdated: "2026-10-29",
+    questionSourceNote: "Original UniPrep2Go local bank expanded 2026-10-29.",
     searchAliases: ["wastewater operator", "WW operator exam"],
   }),
   nicheReadinessConfig({
@@ -1196,15 +1204,18 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
     topics: fourNicheTopics([
-      { id: "mortuary", label: "Mortuary sciences arts" },
-      { id: "law", label: "Funeral service law" },
-      { id: "psychology", label: "Grief & psychology" },
-      { id: "business", label: "Funeral home business" }
+      { id: "mortuary", label: "Cemetery, cremation & disposition" },
+      { id: "law", label: "Legal & regulatory" },
+      { id: "psychology", label: "Funeral service counseling" },
+      { id: "business", label: "Arranging & merchandising" }
     ]),
-    officialSourceNote: "Mapped to The Conference (NBE) themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Funeral Service Arts readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "NBE Arts (The Conference 2026 Candidate Handbook): 170 multiple-choice questions in 170 minutes, 150 scored and 20 pretest. Pass is a scaled score of 75, not a percent. Arts domains are arranging, marketing, counseling, legal, and cemetery/cremation. Embalming and restorative art are the Sciences section. This check is 60 questions / 75 minutes from a 120-item bank in four equal topics, not those weights. Not Conference material.",
+    description:
+      "60-question / 75-minute NBE Arts check (free first 25) from a 120-item bank. Official Arts: 170 questions, 170 minutes, 150 scored.",
+    lastUpdated: "2026-10-29",
     examBody: "The Conference (NBE)",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote: "Original UniPrep2Go local bank rewritten and expanded 2026-10-29. Arts only, not Sciences.",
     searchAliases: ["NBE Arts", "funeral director exam"],
   }),
   nicheReadinessConfig({

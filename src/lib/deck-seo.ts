@@ -848,7 +848,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     title: "Series 65 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
   },
   "series-66-anki-deck": {
-    title: "Series 66 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
+    title: "Series 66 Prep 2026 | 120 Cards + 60Q Mock (25Q Free)",
   },
   "cfp-certification-anki-deck": {
     title: "CFP Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",

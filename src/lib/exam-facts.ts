@@ -4511,38 +4511,38 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "wastewater-operator-1",
     pageHeading: "Wastewater Operator Level 1 — Facts & Prep",
     intro:
-      "Entry-level wastewater operator exams are state-specific (ABC Need-to-Know themes are common). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not a state license exam. Not drinking-water treatment (that's a separate credential).",
+      "Entry-level wastewater operator exams are state-specific. There is no single national form. States that use WPI (formerly ABC) Class I typically give 100 scored questions in 3 hours. UniPrep’s check is 60 questions in 75 minutes from a 120-item bank (free first 25). Independent prep — not a state license exam. Not drinking-water treatment.",
     exam_facts: {
       exam_name: "Wastewater operator certification (Level 1 / Class I, state)",
-      administered_by: "State wastewater operator certification boards (often ABC-style)",
-      question_count: "No national published Q-count — UniPrep diagnostic is 60 multiple-choice",
-      time_limit: "Set by the state; UniPrep diagnostic is 75 minutes",
-      passing_score: "Set by the state; UniPrep diagnostic target 70%",
+      administered_by: "State wastewater operator certification boards (often WPI / ABC)",
+      question_count: "No national form — WPI Class I is often 100 scored; UniPrep diagnostic is 60 from a 120-item bank",
+      time_limit: "WPI Class I is often 3 hours; UniPrep diagnostic is 75 minutes",
+      passing_score: "Often 70% where the state adopts the WPI cut; UniPrep diagnostic target is 70%",
       delivery: "State written exam — not a national CAT",
-      outline_effective_date: "Current state / ABC Need-to-Know — verify your board",
+      outline_effective_date: "Current state / WPI need-to-know — verify your board",
       verify_at_url: "https://www.abccert.org/",
     },
     official_sources: [
       { label: "ABC Certification", url: "https://www.abccert.org/" },
     ],
     domain_weights: [
-      { domain: "UniPrep buckets", weight: "Process, safety, labs, regs — 15 each" },
+      { domain: "UniPrep buckets", weight: "Process, safety, labs, regs — equal slices" },
     ],
     whats_changed: [
       "Drinking-water treatment operator exams are a separate credential.",
     ],
     high_yield_facts: [
-      "State-specific. UniPrep: 60Q / 75 min / 70% wastewater diagnostic.",
+      "No national form. WPI Class I is often 100 scored questions in 3 hours. UniPrep: 60Q / 75 min from a 120-item bank.",
       "≠ water treatment operator (drinking water).",
     ],
     candidate_qa: [
       {
         q: "Is there a national wastewater operator exam?",
-        a: "No. States set the form. Many use ABC Need-to-Know themes. UniPrep’s check is 60 questions / 75 minutes (free 25-question version).",
+        a: "No. States set the form. Where a state uses WPI (formerly ABC) Class I, the exam is typically 100 scored questions in 3 hours. UniPrep’s check is 60 questions in 75 minutes from a 120-item bank.",
       },
       {
         q: "Is this the drinking-water treatment exam?",
-        a: "No. This check is wastewater. Water treatment operator 1 is a separate UniPrep mock. Matching Anki is planned.",
+        a: "No. This check is wastewater. Water treatment operator 1 is a separate UniPrep mock. Matching Anki is planned and is not a live download.",
       },
     ],
     trademark_note:

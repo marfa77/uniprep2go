@@ -238,13 +238,20 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "cdl-hazmat-readiness-check": explainer({
     practiceTestName: "CDL HazMat Endorsement Practice Test",
     whatIsExam:
-      "The CDL Hazardous Materials (H) endorsement knowledge test covers placarding, shipping papers, loading/unloading, and emergency response rules for hazmat loads. Passing it (plus TSA security threat assessment where required) lets a CDL holder add the H endorsement.",
-    administeredBy: "State DMV + TSA security threat assessment for the H endorsement",
+      "The CDL Hazardous Materials (H) endorsement is a knowledge test plus a TSA threat assessment. It covers classes and placards, shipping papers, loading, and emergencies. A CDL alone is not the endorsement. States set the knowledge-test length, so this page does not quote a national question count.",
+    administeredBy: "State DMV knowledge test plus a TSA security threat assessment",
+    officialFormat:
+      "No single national question count. This UniPrep2Go check is 60 questions / 75 minutes drawn from a 120-item bank.",
     examFaqs: [
       {
         question: "What is the CDL HazMat endorsement exam?",
         answer:
-          "It is a knowledge test on hazardous materials rules for drivers who transport placarded hazmat. It is separate from CDL General Knowledge.",
+          "It is a knowledge test on hazardous materials rules, plus a TSA threat assessment, for drivers who haul placarded loads. It is separate from CDL General Knowledge.",
+      },
+      {
+        question: "Is this an official HazMat endorsement exam?",
+        answer:
+          "No. This is a 60-question / 75-minute UniPrep2Go check from a 120-item bank. The Anki deck is planned and is not a live download.",
       },
     ],
     keywords: ["cdl hazmat practice test", "hazmat endorsement practice test", "cdl h endorsement"],

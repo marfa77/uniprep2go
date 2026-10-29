@@ -712,7 +712,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The NSCA Certified Strength and Conditioning Specialist (CSCS) credential is for professionals who design training programs for athletes. It is not a personal-trainer CPT (NASM, ACE, ACSM, or NSCA-CPT). Candidates typically need a bachelor’s degree and current CPR/AED, then must pass both CSCS exam sections.",
     administeredBy: "National Strength and Conditioning Association (NSCA)",
     officialFormat:
-      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is a 60-question / 75-minute text-only diagnostic (free 25-question version) — shorter than either official paper and without video items.",
+      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is 60 questions in 75 minutes from a 120-item bank — shorter than either official paper and without video items.",
     examFaqs: [
       {
         question: "What is the NSCA CSCS exam?",
@@ -732,7 +732,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is this an official NSCA CSCS exam?",
         answer:
-          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. It is shorter than either official section and has no video items. The matching Anki deck is planned, not a live product.",
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. It is 60 questions in 75 minutes from a 120-item bank, shorter than either official section, and it has no video items. The matching Anki deck is planned, not a live product.",
       },
     ],
     keywords: ["cscs practice test", "nsca cscs practice test", "strength coach practice test", "nsca cscs practice exam"],
@@ -969,17 +969,21 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "series-66-readiness-check": {
     practiceTestName: "Series 66 Practice Test",
-    whatIsExam: "The Series 66 combines state investment adviser and agent law topics; often taken with Series 7 for dual registration pathways.",
+    whatIsExam:
+      "The Series 66 is NASAA’s Uniform Combined State Law Exam, delivered by FINRA. With a valid SIE and Series 7 it qualifies a person as both an agent and an investment adviser representative. It is shorter than the Series 65 because SIE and Series 7 topics are left off.",
     administeredBy: "NASAA / FINRA delivery",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with NASAA / FINRA delivery.",
+    officialFormat:
+      "The official exam is 100 scored questions plus 10 unscored pretest items, in 150 minutes. Pass is 73 of the 100 scored questions, not a 70% cut. This UniPrep2Go session is 60 questions in 75 minutes from a 120-item bank. The 70% readiness target is ours.",
     examFaqs: [
       {
-        question: "What is the Series 66 exam?",
-        answer: "The Series 66 combines state investment adviser and agent law topics; often taken with Series 7 for dual registration pathways.",
+        question: "How many questions are on the Series 66?",
+        answer:
+          "FINRA lists 100 scored questions and 10 unscored questions, with 150 minutes to finish. You need 73 of the 100 scored questions. This check is 60 questions in 75 minutes from a 120-item bank.",
       },
       {
         question: "Is this an official Series 66 exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from NASAA / FINRA delivery.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice, not a NASAA or FINRA exam. The matching Anki deck is sold separately.",
       },
     ],
     keywords: ["series 66 practice test", "65+63 combo practice test", "series 66 practice exam"],
@@ -1114,17 +1118,17 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "forklift-operator-readiness-check": {
     practiceTestName: "Forklift Operator Practice Test",
-    whatIsExam: "Forklift / powered industrial truck operator evaluations cover OSHA-aligned stability, inspection, and safe operation concepts used in employer certification programs.",
-    administeredBy: "OSHA powered industrial trucks themes",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with OSHA powered industrial trucks themes.",
+    whatIsExam: "Powered industrial truck knowledge under OSHA 29 CFR 1910.178 covers stability, pre-use inspection, travel, and pedestrians. Employer certification is a separate step. There is no national scored exam.",
+    administeredBy: "OSHA 29 CFR 1910.178",
+    officialFormat: "No national question count or pass score. This UniPrep2Go check is 60 questions / 75 minutes drawn from a 120-item bank.",
     examFaqs: [
       {
-        question: "What is the Forklift Operator exam?",
-        answer: "Forklift / powered industrial truck operator evaluations cover OSHA-aligned stability, inspection, and safe operation concepts used in employer certification programs.",
+        question: "What is the forklift operator exam?",
+        answer: "OSHA 29 CFR 1910.178 sets powered industrial truck rules. Employers certify operators. There is no national scored exam and no official pass percent.",
       },
       {
-        question: "Is this an official Forklift Operator exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from OSHA powered industrial trucks themes.",
+        question: "Is this an official forklift exam?",
+        answer: "No. This is a 60-question / 75-minute UniPrep2Go check from a 120-item bank. The Anki deck is planned and is not a live download.",
       },
     ],
     keywords: ["forklift certification practice test", "pit operator practice test", "forklift operator practice exam"],
@@ -1235,17 +1239,20 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "wastewater-operator-1-readiness-check": {
     practiceTestName: "Wastewater Operator Level 1 Practice Test",
-    whatIsExam: "State wastewater operator certification exams (Level 1/entry) test treatment process knowledge, safety, sampling, and regulatory basics for plant operators.",
+    whatIsExam: "State wastewater operator certification exams at the entry or Class I level test treatment process, safety, sampling, and regulatory reporting. There is no single national exam. States that use WPI (formerly ABC) Class I typically use that body's form.",
     administeredBy: "State wastewater operator boards",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with State wastewater operator boards.",
+    officialFormat:
+      "Where a state adopts the WPI (formerly ABC) Class I wastewater exam, the form is typically 100 scored multiple-choice questions in 3 hours, a 70% cut, and up to 10 unscored pretest items. Confirm the current form with the state board. This UniPrep2Go session is 60 questions in 75 minutes from a 120-item bank.",
     examFaqs: [
       {
-        question: "What is the Wastewater Operator Level 1 exam?",
-        answer: "State wastewater operator certification exams (Level 1/entry) test treatment process knowledge, safety, sampling, and regulatory basics for plant operators.",
+        question: "How many questions are on a Class I wastewater exam?",
+        answer:
+          "States that use WPI (formerly ABC) Class I typically give 100 scored questions in 3 hours, often with a 70% cut and up to 10 unscored items. Confirm that with the state board. This readiness check is 60 questions in 75 minutes from a 120-item bank.",
       },
       {
         question: "Is this an official Wastewater Operator Level 1 exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from State wastewater operator boards.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice. It is not a state licensing exam and it is not the drinking-water treatment exam. The matching Anki deck is planned, not a live download.",
       },
     ],
     keywords: ["wastewater operator practice test", "ww operator exam practice test", "wastewater operator level 1 practice exam"],
@@ -1269,17 +1276,21 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "funeral-service-arts-readiness-check": {
     practiceTestName: "Funeral Service Arts Practice Test",
-    whatIsExam: "The National Board Exam Arts section (The Conference) is part of funeral director/embalmer credentialing pathways in many states.",
+    whatIsExam:
+      "The NBE Arts section, from The Conference, is the funeral-arranging half of the national board used by many state licensing boards. It covers arranging, merchandising, counseling, legal compliance, and cemetery or cremation disposition. Embalming and restorative art are the separate Sciences section.",
     administeredBy: "The Conference (NBE)",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with The Conference (NBE).",
+    officialFormat:
+      "The 2026 NBE Candidate Handbook lists 170 multiple-choice questions in 170 minutes for Arts. 150 count and 20 are unscored pretest. Pass is a scaled score of 75, not 75% of the items. This UniPrep2Go session is 60 questions in 75 minutes from a 120-item bank, in four equal topics rather than the handbook weights.",
     examFaqs: [
       {
-        question: "What is the Funeral Service Arts exam?",
-        answer: "The National Board Exam Arts section (The Conference) is part of funeral director/embalmer credentialing pathways in many states.",
+        question: "How many questions are on the NBE Arts exam?",
+        answer:
+          "The 2026 handbook lists 170 questions in 170 minutes. 150 are scored and 20 are pretest. A scaled score of 75 passes, and that is not a percent of items correct. This check is 60 questions in 75 minutes from a 120-item bank.",
       },
       {
         question: "Is this an official Funeral Service Arts exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from The Conference (NBE).",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice, not a Conference exam. It does not include the Sciences section. The matching Anki deck is planned, not a live download.",
       },
     ],
     keywords: ["nbe arts practice test", "funeral director exam practice test", "funeral service arts practice exam"],

@@ -176,7 +176,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     title: "CDL HazMat Endorsement Readiness Check",
     shortTitle: "CDL HazMat",
     linkedDeckSlug: "cdl-hazmat-anki-deck",
-    durationMinutes: 60,
+    durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
     topics: fourNicheTopics([
       { id: "classes-placards", label: "Classes, placards & shipping papers" },
@@ -184,10 +184,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "driving-emergencies", label: "Driving & emergencies" },
       { id: "security-rules", label: "Security awareness & rules" },
     ]),
-    officialSourceNote: "FMCSA HazMat endorsement knowledge themes. Not a TSA/DMV exam.",
-    description: "60-question CDL HazMat endorsement readiness check (free 25-question version).",
-    examBody: "TSA / state DMV",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    officialSourceNote:
+      "The H endorsement is a knowledge test plus a TSA threat assessment. It is not a CDL by itself. Table 1 materials are placarded at any amount; Table 2 at 1,001 lb. A required railroad stop is 15 to 50 feet before the nearest rail. This UniPrep2Go check is 60 questions / 75 minutes from a 120-item bank. Not FMCSA or TSA material. The Anki deck is planned, not a live download.",
+    description:
+      "60-question / 75-minute CDL HazMat check (free first 25) from a 120-item bank. The H endorsement is a knowledge test plus TSA screening.",
+    lastUpdated: "2026-10-29",
+    examBody: "State knowledge test + TSA",
+    questionSourceNote: "Original UniPrep2Go local bank. Expanded 2026-10-29.",
   }),
   nicheReadinessConfig({
     slug: "aswb-masters-readiness-check",
