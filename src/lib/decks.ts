@@ -715,7 +715,7 @@ const rawDecks: Deck[] = [
     subtitle: "444 FRM Part 1 Anki cards. The free start is 25 questions. The full timed practice test is 50 questions — VaR, ES, Greeks, credit risk.",
     directAnswer:
       "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake. The free diagnostic is 25 questions. The full timed readiness check is 50 questions, with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-10-16",
+    lastUpdated: "2026-10-29",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",
@@ -875,7 +875,7 @@ const rawDecks: Deck[] = [
       "Series 7 flashcards: 300 FINRA Top-Off Anki cards + 60-question timed practice test (free 25-question version) — suitability, products, order flow.",
     directAnswer:
       "UniPrep2Go sells Series 7 flashcards as a 300-card Anki deck for FINRA Series 7 Top-Off — seeking business, opening accounts, investment products, recommendations, suitability, records, order handling, confirmations, settlement, and trade processing — plus a 60-question timed Series 7 practice test (free 25-question diagnostic, no signup) with job-function scoring. The official exam is 130 questions (125 scored + 5 pretest) in 3 hours 45 minutes; passing score 72 equated; FINRA fee $395. Card counts follow FINRA’s 7/9/73/11% job-function weights. Every card has a worked example and a common-mistake note. Delivered as an Anki .apkg for {PRICE} through Gumroad. Independent study aid — not official FINRA material.",
-    lastUpdated: "2026-10-05",
+    lastUpdated: "2026-10-29",
     audience:
       "Series 7 candidates searching for flashcards after the SIE, sponsored registered-rep trainees, and anyone who needs Top-Off product/suitability recall plus a free timed mock — not Series 63 state-law flashcards.",
     format: ".apkg",
@@ -954,6 +954,11 @@ const rawDecks: Deck[] = [
       {
         question: "Does the deck replace Series 7 practice questions?",
         answer: "No. It is a supplementary recall tool for products, suitability rules, definitions, formulas, and exam traps. Use it alongside a full Series 7 course and practice questions.",
+      },
+      {
+        question: "How long must I wait to retake the Series 7 after a fail?",
+        answer:
+          "Under FINRA’s published retake schedule, from 19 January 2027 the waiting period before a Series 7 retake shortens to 15 days (confirm on finra.org before you schedule). Until that effective date, follow the waiting periods shown on FINRA’s current qualification exams page.",
       },
     ],
   },
