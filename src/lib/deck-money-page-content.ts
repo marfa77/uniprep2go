@@ -155,7 +155,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "czech-a2-cce-anki-deck":
     "$26 / 945 Czech cards for CCE A2 — residence/citizenship language, not the NPI reálie civics exam.",
   "bms-building-automation-anki-deck":
-    "200+ BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a 60-question timed BMS diagnostic (free 25-question version). No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
+    "120 BACnet / HVAC-sequence / alarms-trends-schedules / commissioning cards plus a 60-question timed BMS diagnostic drawn from that same bank (free 25-question version). No single federal BMS license — Niagara 4 TCP is a vendor course, not this mock.",
 }
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
@@ -394,13 +394,13 @@ export const positioningOverrides: Partial<
   },
   "bms-building-automation-anki-deck": {
     ourEdge: [
-      "200 cards: BACnet networking, HVAC sequences, platform ops, commissioning",
-      "60-question / 75-minute timed BMS diagnostic (free 25-question version) with topic scoring",
-      "Ownable $11 .apkg — not a 10-questions-per-day tease or Brainscape tag dump",
+      "120 cards, 30 per domain: BACnet networking, HVAC sequences, platform ops, commissioning",
+      "60-question / 75-minute timed BMS diagnostic drawn from that 120-item bank (free 25-question version) with topic scoring",
+      "Ownable $9.99 .apkg — not a 10-questions-per-day tease or Brainscape tag dump",
       "Honest: no single U.S. federal BMS license; Niagara 4 TCP is vendor training",
     ],
     summaryProse:
-      "There is no one federal BMS exam. UniPrep wins when you want a timed 60-question BACnet/HVAC/ops diagnostic (free 25-question version) plus an ownable $11 .apkg — not CertifBus’s 10 free questions/day and not a Niagara 4 TCP substitute.",
+      "There is no one federal BMS exam. UniPrep wins when you want a timed 60-question BACnet/HVAC/ops diagnostic (free 25-question version) plus an ownable $9.99 .apkg — not CertifBus’s 10 free questions/day and not a Niagara 4 TCP substitute.",
   },
   "mrics-quantity-surveying-anki-deck": {
     ourEdge: [
@@ -1028,7 +1028,7 @@ Candidates treat free MCQ banks as the real exam format, under-drill hierarchy o
 Accredited Learning Partner tuition, NEBOSH registration, or official GIC1/GIC2 assessments. This deck builds knowledge recall only — it does not replace GIC1 scenario writing, the closing interview, or the GIC2 workplace risk assessment; practise those formats with your Learning Partner. Independent prep — not NEBOSH material.`,
   "bms-building-automation-anki-deck": `### What is inside
 
-200 MCQ cards across four BMS/BAS domains: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same bank themes as the 60-question timed readiness check (free 25-question version). Live Gumroad .apkg — **$9.99**.
+120 MCQ cards, 30 in each BMS/BAS domain: BACnet protocol and networking, HVAC control sequences, alarms/trends/schedules/operator workflows, and integration/commissioning. Same 120-item bank as the 60-question timed readiness check (free 25-question version). Live Gumroad .apkg — **$9.99**.
 
 ### Plan with the free BMS mock
 

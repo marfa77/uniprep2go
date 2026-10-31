@@ -616,7 +616,7 @@ describe("deck catalog", () => {
       "bench-energy-coal-trader-anki-deck":
         "Coal Trader Anki Deck — 221 Commodity Flashcards",
       "bms-building-automation-anki-deck":
-        "BMS / BAS Anki Deck — 200 Flashcards",
+        "BMS / BAS Anki Deck — 120 Flashcards",
       "cfp-certification-anki-deck": "CFP Certification Anki Deck — 120 Flashcards",
       "commodity-trader-pack-bundle": "Commodity Trader Pack — 634 Anki Flashcards",
       "cdcp-anki-deck": "CDCP Anki Deck — 250 Flashcards",

@@ -1044,7 +1044,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "bms-building-automation-anki-deck": {
-    title: "BMS / BAS Exam Prep | 200+ Cards + Free Mock",
+    title: "BMS / BAS Exam Prep | 120 Cards + Free Mock",
   },
   "leed-green-associate-anki-deck": {
     title: "LEED GA Prep | 120 Cards + Free Mock",

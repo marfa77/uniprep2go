@@ -2365,16 +2365,16 @@
   ],
   "bms-building-automation-anki-deck": [
     {
-      "q": "What is the primary purpose of BACnet (ASHRAE Standard 135) (scenario 2)?",
-      "a": "Interoperable communication between building automation devices from different manufacturers."
+      "q": "Chilled-water valves across the building are mostly closed and zone temperatures are satisfied, yet the plant is still making design-temperature water. Which plant move fits the load?",
+      "a": "Raise the chilled-water setpoint while the coils can still meet the zone load."
     },
     {
-      "q": "In a typical AHU discharge air temperature reset sequence, what happens as cooling load decreases?",
-      "a": "Supply air temperature setpoint may be reset upward within safe comfort and dehumidification limits."
+      "q": "An electrical meter speaks Modbus only, and the BMS front end is BACnet/IP. After integration the kWh total on the graphic does not match the meter display. The step that corrects the mismatch is:",
+      "a": "Bring the meter in through a gateway or driver and check scaled units on the meter face."
     },
     {
-      "q": "Why are alarm prioritization and acknowledgment workflows important in a BMS?",
-      "a": "They help operators focus on critical faults and maintain an audit trail of response actions."
+      "q": "A BACnet router port is being numbered for a new MS/TP trunk that other networks must be able to reach. The routed network number on that port should be:",
+      "a": "Network 0 means this network, 1 through 65534 are routed networks, and 65535 is broadcast."
     }
   ],
   "leed-green-associate-anki-deck": [

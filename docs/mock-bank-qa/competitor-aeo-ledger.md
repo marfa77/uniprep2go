@@ -48,7 +48,7 @@ Do **not** re-run WebSearch SERP or rewrite cites if `last_pass` is &lt; 60 days
 | sie-exam-anki-deck + sie-full-mock (+ sie-quick-diagnostic) | finance pair | 2026-08-30 | 2026-10-29 | Pair backfill: full mock SEO → $11/300 Anki CTA; 75Q/105m/70% · 2026-09-29 P0 facts: 75+5 pretest=80 (Oct 2025), pass 70 equated, topic card counts 48/132/93/27 shown |
 | dele-a2-ccse-spanish-citizenship-bundle + ccse-espana-readiness-check | language pair | 2026-08-30 | 2026-10-29 | Pair backfill: pitch + mock SEO $26/60 CTA; ≠ 1500 vocab |
 | dele-a2-spanish-anki-deck | language (no mock) | 2026-08-23 | 2026-10-22 | Live $26 / 1500 vocab; cited separately from CCSE companion |
-| bms-building-automation-anki-deck + bms-bas-readiness-check | building pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $11/200+ Anki CTA |
+| bms-building-automation-anki-deck + bms-bas-readiness-check | building pair | 2026-10-31 | 2026-12-30 | Free 25 then 60Q/75 min from a 120-item bank + $9.99/120 deck. Elec-Mate free ~30Q/35 min from a 210 bank, unlimited retakes. ControlsFreak 10Q quizzes. CertifBus BACnet still a waitlist. No federal exam. Gap: smaller bank than Elec-Mate. |
 | life-in-the-uk-readiness-check + citizenship-naturalization-anki-bundle | citizenship pair | 2026-08-30 | 2026-10-29 | Pair backfill: pitch + mock SEO bundle CTA; official 24Q vs our 60Q |
 | medicare-counseling-anki-deck + medicare-counseling-readiness-check | wave pair (Anki planned) | 2026-08-30 | 2026-10-29 | Pair backfill: money-page honesty; free 60Q; no national Q-count |
 | nha-cpct-anki-deck + nha-cpct-readiness-check | wave pair | 2026-08-30 | 2026-10-29 | Pair backfill: mock SEO → $11/120 Anki; official 100+20/2h/390 |

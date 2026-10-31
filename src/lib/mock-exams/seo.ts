@@ -517,7 +517,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "bms-bas-readiness-check": {
     title: "Free BMS Practice Test | 60-Question BAS Mock",
     description:
-      "BMS / BAS practice: free 25-question diagnostic, full mock 60 timed questions across BACnet, HVAC sequences, alarms/trends, and commissioning — then repair with the $9.99 / 200+ BMS Anki deck. No single federal BMS license. Independent — not Tridium material.",
+      "BMS / BAS practice: free 25-question diagnostic, full mock 60 timed questions across BACnet, HVAC sequences, alarms/trends, and commissioning — then repair with the $9.99 / 120-card BMS Anki deck. No single federal BMS license. Independent — not Tridium material.",
     keywords: [
       "bms practice test",
       "building automation practice exam",
@@ -529,7 +529,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free BMS / BAS Building Automation Readiness Check",
     intro:
-      "A timed 60-question building automation diagnostic drawn from a 120-item bank, covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — then drill weak domains in the linked $9.99 / 200 Anki deck. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
+      "A timed 60-question building automation diagnostic drawn from a 120-item bank, covering BACnet networking, HVAC control sequences, operator platform workflows, and commissioning — then drill weak domains in the linked $9.99 / 120-card Anki deck. There is no single U.S. federal BMS license — Niagara 4 TCP is a vendor course with a practical assessment, not this MCQ. Independent prep, not Tridium or BACnet International material.",
     audience:
       "BMS engineers, controls technicians, facility automation staff, and integrator apprentices preparing for BAS roles or vendor certification training.",
     practiceTestLabel: "BMS practice test",
@@ -841,21 +841,21 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Precision Nutrition L1 practice test",
   },
   "unarmed-security-officer-readiness-check": {
-    title: "Free Unarmed Security Guard Practice Test 2026 | 60Q Mock",
+    title: "Free Unarmed Security Officer Practice Test 2026 | 60Q Mock",
     description:
-      "Unarmed security guard practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. State-specific. Independent. Not an armed card.",
+      "Unarmed security practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. State-specific. Independent. Not an armed card.",
     keywords: [
-      "unarmed security guard practice test",
+      "unarmed security officer practice test",
       "guard card practice test",
       "unarmed security mock",
       "unarmed security anki",
     ],
-    headline: "Unarmed Security Guard Practice Test — 60 Questions (Free 25-Question Version)",
+    headline: "Unarmed Security Officer Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
       "A timed 60-question / 75-minute unarmed knowledge diagnostic — law/liability, patrol, emergencies, and report writing. Licensing is state-specific. Planned 60-card Anki waitlist. Not an armed/firearms qualification.",
     audience:
       "Unarmed guard-card candidates — not armed/range qualification candidates.",
-    practiceTestLabel: "Unarmed Security Guard practice test",
+    practiceTestLabel: "Unarmed Security Officer practice test",
   },
   "nha-cbcs-readiness-check": {
     title: "Free NHA CBCS Practice Test 2026 | 60-Question Billing & Coding Mock",
@@ -1309,11 +1309,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Naturalisation française practice test",
   },
   "life-in-the-uk-readiness-check": {
-    title: "Life in the UK Mock Test: 60 Timed Questions + Free 25Q Start",
+    title: "Free Life in the UK Practice Test | 60 Questions",
     description:
       "Life in the UK practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official Home Office test is 24Q/45min/75% (£50) — this page is longer diagnostic practice. Pair with the Citizenship Anki Bundle for spaced civics recall. Independent prep.",
     keywords: ["Life in the UK practice test", "LITUK free test", "British citizenship test practice", "life in the uk anki"],
-    headline: "Life in the UK Mock Test: 60 Timed Questions + Free 25Q Start",
+    headline: "Free Life in the UK Readiness Check",
     intro:
       "Timed Life in the UK diagnostic — then repair weak handbook topics with the Citizenship Anki Bundle. Format note: official test is 24 questions / 45 minutes / 18/24; this check is 60 / 45 / 75% to find weak handbook topics.",
     audience:

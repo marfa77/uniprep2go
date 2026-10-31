@@ -4394,21 +4394,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "During BACnet device configuration, a technician needs to set up trending for analog input objects. The facility manager wants to store 30 days of hourly samples for energy analysis. What BACnet service is most appropriate for retrieving this historical data from the trend log objects?",
+        question: "Chilled-water valves across the building are mostly closed and zone temperatures are satisfied, yet the plant is still making design-temperature water. Which plant move fits the load?",
         answer:
-          "Correct: (c) ReadRange ReadRange is specifically designed for retrieving time-series data from trend log objects, allowing efficient access to historical samples within specified time ranges or record counts.",
+          "Correct: (c) Raise the chilled-water setpoint while the coils can still meet the zone load. Chilled-water reset warms the supply setpoint at low load so the chiller lifts less and runs more efficiently, as long as the coils can still satisfy the zones. Colder water and an extra machine at low load fight that reset and keep the plant at a high-load condition.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-1.webp",
       },
       {
-        question: "In a multi-zone air handling unit with hot water reheat coils, the BAS implements a supply air temperature reset strategy. The system currently shows 6 zones calling for heating (reheat valves >50% open) and 2 zones satisfied. What should the reset logic do to optimize energy performance?",
+        question: "An electrical meter speaks Modbus only, and the BMS front end is BACnet/IP. After integration the kWh total on the graphic does not match the meter display. The step that corrects the mismatch is:",
         answer:
-          "Correct: (a) Increase supply air temperature to reduce reheat energy When multiple zones have reheat valves significantly open (>50%), it indicates the supply air is too cold for current conditions. Increasing the supply air temperature reduces the need for reheat energy while still maintaining zone comfort, which is the primary goal of supply air temperature reset control.",
+          "Correct: (a) Bring the meter in through a gateway or driver and check scaled units on the meter face. Modbus and BACnet are different protocols, so the meter enters the BMS through a gateway or a protocol driver. The mapped value still has to be scaled into engineering units and checked against the meter display. A guessed register address is not a substitute for the vendor map.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-2.webp",
       },
       {
-        question: "A BAS operator is investigating why critical equipment alarms are not escalating to management after 30 minutes as configured. The alarm acknowledgment logs show that alarms are being auto-acknowledged by the system every 25 minutes. What workflow component requires immediate attention?",
+        question: "A BACnet router port is being numbered for a new MS/TP trunk that other networks must be able to reach. The routed network number on that port should be:",
         answer:
-          "Correct: (b) Automatic acknowledgment timer configuration Auto-acknowledgment at 25 minutes prevents the 30-minute escalation from occurring because acknowledged alarms typically don't escalate. The auto-acknowledgment timer needs to be disabled or set longer than the escalation period.",
+          "Correct: (c) Network 0 means this network, 1 through 65534 are routed networks, and 65535 is broadcast. Routed BACnet network numbers run from 1 through 65534. Network 0 means this network, the one the sender is already on, and 65535 is the broadcast network number. A trunk that other networks must reach gets a unique number inside the routed range.",
         imageUrl: "/samples/bms-building-automation-anki-deck-sample-3.webp",
       },
     ],

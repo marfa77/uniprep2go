@@ -1046,7 +1046,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Guideline 36 supply-air reset moves the setpoint from zone cooling and heating requests, then still respects a humidity or dew-point limit so the coil does not give up dehumidification. It is not a fixed outdoor curve and it does not command colder air all day.",
+    "explanation": "Guideline 36 supply-air reset moves the setpoint from zone cooling requests, then still respects a humidity or dew-point limit so the coil does not give up dehumidification. It is not a fixed outdoor curve and it does not command colder air all day.",
     "distractorExplanations": {
       "a": "Occupied mode alone does not justify a colder setpoint; Guideline 36 warms the air when zones are not requesting cooling.",
       "b": "A fixed outdoor curve that ignores zones is an older reset; Guideline 36 trims the setpoint from zone requests instead.",
@@ -1772,9 +1772,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Warmup recovers zone temperature before people arrive while heating as little outdoor air as possible. With the outdoor damper closed, the unit recirculates return air across the heating coil and the zones climb without taking a 28°F outdoor stream. When the zones reach the occupied heating setpoint, warmup ends and ventilation returns to its minimum. Heating full outdoor air, heating with the fan off, or adding cooling during recovery slows that cycle or fights it.",
+    "explanation": "Warmup recovers zone temperature before people arrive while heating as little outdoor air as possible. With the outdoor damper closed, the unit recirculates return air across the heating coil and the zones climb without taking a 28°F outdoor stream. Minimum ventilation starts with occupied mode. Reaching the heating setpoint early leaves the outdoor damper closed until that mode begins. Heating full outdoor air, heating with the fan off, or adding cooling during recovery slows that cycle or fights it.",
     "distractorExplanations": {
-      "a": "A fully open outdoor damper makes the coil heat 28°F outdoor air instead of return air that is already warmer. Recovery takes longer and uses more heat. The outdoor damper stays closed until the occupied setpoint is reached.",
+      "a": "A fully open outdoor damper makes the coil heat 28°F outdoor air instead of return air that is already warmer. Recovery takes longer and uses more heat. The outdoor damper stays closed through warmup, and minimum ventilation waits for occupied mode.",
       "c": "Heating coils need airflow. Warmup runs the supply fan with the outdoor damper closed; it is not a terminal-only cycle with the fan left off.",
       "d": "Mechanical cooling during heating warmup fights the heating coil and slows recovery. Warmup is a heating cycle, and the cooling coil stays closed until a later mode calls for cooling."
     },
