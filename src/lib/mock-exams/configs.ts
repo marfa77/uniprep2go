@@ -931,14 +931,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "No single U.S. federal BMS license exam exists. This 60-question / 75-minute / 70% diagnostic samples BACnet, HVAC sequences, platform operations, and commissioning. Niagara 4 TCP is a multi-day vendor course with a practical assessment — not this MCQ. Independent prep — not Tridium, BACnet International, or BTL material.",
+      "No single U.S. federal BMS license exam exists. This 60-question / 75-minute / 70% diagnostic is drawn from a 120-item bank, 15 questions from each of four domains. Niagara 4 TCP is a multi-day vendor course with a practical assessment — not this MCQ. Independent prep — not Tridium, BACnet International, or BTL material.",
     disclaimer: bmsDisclaimer,
     description:
-      "A 60-question building automation readiness diagnostic for BMS technicians across BACnet, HVAC control logic, operator workflows, and commissioning. Independent prep — not vendor certification material.",
+      "A 60-question building automation readiness diagnostic, drawn from a 120-item bank, for BMS technicians across BACnet, HVAC control logic, operator workflows, and commissioning. Independent prep — not vendor certification material.",
     examBody: "Building automation industry (BACnet / BAS)",
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-10-31",
     questionSourceNote:
-      "Original UniPrep2Go local bank (Wave 3 quality): 60 questions, 15 per BMS/BAS domain — BACnet networking, HVAC sequences, platform operations, and commissioning.",
+      "Original UniPrep2Go bank: 120 questions, 30 per domain. Each session is still 60 questions / 75 minutes and draws 15 from each domain — BACnet networking, HVAC sequences, platform operations, and commissioning.",
   },
   {
     slug: "leed-green-associate-readiness-check",
