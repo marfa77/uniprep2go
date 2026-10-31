@@ -259,6 +259,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         q: "Do you need to pass the SIE before Series 7?",
         a: "Yes. FINRA requires passing the SIE before the Series 7 Top-Off for new registrants.",
       },
+      {
+        q: "How long must I wait to retake the Series 7 after a fail?",
+        a: "From 19 January 2027, FINRA’s published retake schedule shortens the Series 7 waiting period to 15 days (confirm on finra.org before you schedule). Until that effective date, follow the waiting periods on FINRA’s current qualification exams page.",
+      },
     ],
   },
   "series-63": {

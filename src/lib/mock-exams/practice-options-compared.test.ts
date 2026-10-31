@@ -30,6 +30,15 @@ describe("getPracticeOptionsCompared", () => {
     expect(table!.sources.some((s) => s.url.includes("finra.org"))).toBe(true);
   });
 
+  it("returns a PTCE table from the PTCB practice-tools page", () => {
+    const table = getPracticeOptionsCompared("ptcb-pharmacy-technician-mock");
+    expect(table).not.toBeNull();
+    expect(table!.checkedDate).toBe("2026-10-31");
+    expect(table!.rows.some((r) => /Practice Bank/.test(r.name) && /\$65/.test(r.access))).toBe(true);
+    expect(table!.rows.some((r) => /Pre-PTCE/.test(r.name) && /\$29/.test(r.access))).toBe(true);
+    expect(table!.sources.some((s) => s.url.includes("ptcb.org/official-ptcb-practice-tools"))).toBe(true);
+  });
+
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });

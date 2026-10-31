@@ -4021,21 +4021,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "An assessment finding open outdoor air dampers in winter suggests",
+        question: "When documenting model assumptions for a client report, BEMP best practice includes?",
         answer:
-          "Correct: (d) Economizer or damper actuator failure causing massive heating load Stuck dampers are common retrocommissioning fixes with fast payback.",
+          "Correct: (c) A clear table of key inputs, data sources, software version, and known limitations Documented assumptions enable third-party review and future updates.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-1.webp",
       },
       {
-        question: "Pump affinity laws indicate pump power scales approximately with:",
+        question: "Air-side economizer design per ASHRAE 90.1 requires:",
         answer:
-          "Correct: (c) The cube of speed (or flow) ratio for variable-speed applications VFDs on variable-load pumps yield significant energy savings.",
+          "Correct: (b) Evaluating climate zone thresholds, high-limit shutoffs, and integration with mechanical cooling Economizer requirements depend on climate zone and cooling system capacity.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-2.webp",
       },
       {
-        question: "When calibrating an existing-building energy model to utility data, a common acceptance criterion is?",
+        question: "A BEAP should document measurement boundaries when recommending M&V by:",
         answer:
-          "Correct: (c) Monthly or annual simulated energy within an agreed tolerance (often ±5–15%) of billed consumption after normalization ASHRAE and industry practice use tolerance bands on normalized utility data to judge model calibration quality.",
+          "Correct: (d) Stating which meters, systems, and adjustment variables define the savings claim Clear boundaries align with IPMVP and owner financing expectations.",
         imageUrl: "/samples/ashrae-certifications-anki-deck-sample-3.webp",
       },
     ],

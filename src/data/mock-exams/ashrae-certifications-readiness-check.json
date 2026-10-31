@@ -89,7 +89,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "CxA reviews BOD for alignment with OPR early in design.",
+    "explanation": "The Basis of Design records the design team's assumptions, standards, and system selections that show how the Owner's Project Requirements will be met. The commissioning authority reviews that translation early in design so the chosen systems still satisfy the OPR.",
     "distractorExplanations": {
       "b": "That is the OPR itself; the BOD responds to the OPR rather than restating the owner's goals.",
       "c": "Test procedures and sampling strategy belong to the Cx plan and FPT scripts, not the designer's BOD.",
@@ -188,7 +188,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "BCxP has the highest pass threshold among the common ASHRAE credentials. Verify the current pass point in ASHRAE's certification FAQs.",
+    "explanation": "The published BCxP pass point is 83 of the 120 scored items. Each ASHRAE credential has its own Angoff cut, so 83/120 is not a shared 70 percent rule and is not the highest cut (HFDP is published at 72 of 100). Verify the current pass point in ASHRAE's certification FAQs.",
     "distractorExplanations": {
       "b": "68 of 100 is the BEAP pass point on a 100-item scored form, not the BCxP 120-item threshold.",
       "c": "69 of 100 is the BEMP pass point, not the BCxP threshold of about 83 of 120 scored items.",
@@ -419,7 +419,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "PFC catches installation defects early, saving retest time.",
+    "explanation": "Pre-functional checklists confirm that installation is complete and the system is ready before formal functional testing begins. They catch missing devices, incomplete wiring, and unready safeties early, so functional-test time is not spent on installation defects.",
     "distractorExplanations": {
       "a": "Mode and failure performance is verified during functional performance testing, not pre-functional checklists.",
       "c": "Measured flows are the TAB report's content; PFCs check installation readiness, not balanced flow values.",
@@ -650,7 +650,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MBCx maintains savings after initial retrocommissioning.",
+    "explanation": "Monitoring-based commissioning extends retrocommissioning by keeping analytics on trend data so performance drift is detected and corrected after the initial study. That persistent review, rather than a one-time investigation, is what holds the savings.",
     "distractorExplanations": {
       "a": "Periodic re-studies are recommissioning; MBCx uses continuous monitoring rather than calendar events.",
       "c": "MBCx works with existing BAS data; controls replacement is a capital measure, not MBCx.",
@@ -716,7 +716,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Measurable criteria prevent disputes at project closeout.",
+    "explanation": "Acceptance criteria must be objective, measurable, and traceable to the performance metrics in the Owner's Project Requirements. Defined before testing, they give every party the same standard and reduce disputes when the project closes out.",
     "distractorExplanations": {
       "a": "Criteria set after testing are not acceptance criteria; they must be defined beforehand from the OPR.",
       "b": "Catalog ratings are inputs; acceptance criteria trace to the project's OPR and design documents.",
@@ -848,7 +848,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "ReCx restores performance after changes or degradation.",
+    "explanation": "Recommissioning applies when a building that was commissioned before needs its performance checked again after major renovations or a long period of drift. The work re-verifies systems against current requirements rather than treating the building as never commissioned.",
     "distractorExplanations": {
       "a": "Never-commissioned existing buildings undergo retrocommissioning (RCx), not recommissioning.",
       "c": "That is new-construction Cx in the construction and acceptance phase, not recommissioning.",
@@ -914,7 +914,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "DHW systems affect energy, safety, and code compliance.",
+    "explanation": "Domestic hot water commissioning tests should confirm that temperature control, recirculation, and the design's legionella prevention strategies perform as specified. Those checks cover energy use, occupant safety, and the strategies the design selected.",
     "distractorExplanations": {
       "b": "Pressure tests and backflow certification are plumbing code inspections, not DHW functional performance tests.",
       "c": "Fixture flow rates relate to water-use reduction, not DHW temperature control and legionella prevention.",
@@ -1112,11 +1112,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Owners need complete records for operations and future RCx.",
+    "explanation": "Commissioning closeout documentation includes the final commissioning report, a completed issues log, the test scripts, as-built sequences, and training records. The owner uses that package for daily operations and for any later retrocommissioning.",
     "distractorExplanations": {
-      "a": "Scripts are retained as part of the record.",
-      "b": "Closeout requires documented deliverables.",
-      "c": "Training documentation proves operator readiness."
+      "a": "Deleting every test script after one failure confuses a failed attempt with the closeout file; scripts stay so the failure and any retest remain part of the record.",
+      "b": "Relying on verbal handshakes without records confuses an informal agreement with closeout; the owner needs the written report, issues log, scripts, sequences, and training records.",
+      "c": "Leaving out training attendance records confuses a session that happened with proof operators were trained; closeout keeps those records alongside the report and test scripts."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -1211,7 +1211,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Contract support reduces delays during FPT scheduling.",
+    "explanation": "Commissioning specifications require the contractor to provide temporary controls, test ports, and safe access so the commissioning authority can run functional testing. That support keeps the test from stalling when instrumentation or access is missing.",
     "distractorExplanations": {
       "a": "The CxA typically writes or reviews FPT scripts; contractors execute them under CxA witnessing.",
       "c": "Procuring the CxA under a subcontractor compromises independence; the owner should hire the CxA.",
@@ -1244,7 +1244,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Economizer failures are among the most common RCx findings.",
+    "explanation": "A BCxP assessing economizer operation during functional performance testing should exercise damper modulation, the high-limit shutoff, and the interlocks with mechanical cooling. Those checks show whether free cooling is sequenced correctly, which is why economizer faults are a common retrocommissioning finding.",
     "distractorExplanations": {
       "b": "Minimum OA is a ventilation check; economizer FPT verifies modulation and high-limit lockout logic.",
       "c": "Freeze protection is a safety sequence; economizer tests focus on damper control and lockouts.",
@@ -1310,7 +1310,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Process management is a core BCxP competency.",
+    "explanation": "BCxP leadership in meetings means facilitating so action items, decisions, and accountability stay clear among the stakeholders. Process management is a core commissioning competency: the authority keeps the team aligned and leaves design decisions with the designer.",
     "distractorExplanations": {
       "a": "The CxA facilitates; design decisions remain with the designer, subject to owner approval.",
       "c": "Cx coordinates the owner, designers, and all trades, not just the mechanical contractor.",
@@ -1376,7 +1376,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Legacy controls are common RCx scope in older buildings.",
+    "explanation": "Older buildings with pneumatic controls often need calibration, receiver-controller checks, and a plan for converting to digital controls during retrocommissioning. That field assessment comes before any decision to replace the whole control system.",
     "distractorExplanations": {
       "a": "RCx assesses and calibrates first; wholesale DDC replacement is a capital decision, not an RCx step.",
       "b": "Front-end upgrades do not fix drifting pneumatic sensors and actuators in the field.",
@@ -1475,7 +1475,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Pre-FPT analytics reduce retest cycles.",
+    "explanation": "Reviewing trend logs before functional performance testing lets the commissioning authority find overrides, sensor drift, and short-cycling that would cause the tests to fail. Clearing those conditions first reduces the number of retest cycles.",
     "distractorExplanations": {
       "b": "Trends inform but do not replace witnessed FPT, which actively exercises modes and failures.",
       "c": "Terminal airflow readings come from the TAB report, not from BAS trend review.",
@@ -1508,7 +1508,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Seasonal modes often require warranty-phase retesting.",
+    "explanation": "Warranty-phase commissioning follow-up typically occurs within 10 to 12 months after occupancy so seasonal operation and real operating issues can be observed. Modes that were not available at acceptance are retested while the contractor can still correct them.",
     "distractorExplanations": {
       "a": "Thirty days is too early to observe seasonal operation; the warranty review falls near month 10.",
       "b": "Three months usually falls short of the opposite season; the warranty review is scheduled near month 10.",
@@ -1900,15 +1900,15 @@
       },
       {
         "id": "d",
-        "text": "Normalizing consumption for weather, occupancy, and rate changes before trend comparison"
+        "text": "Normalizing consumption for weather and occupancy, and treating rate changes as a cost adjustment, before trend comparison"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Degree-day normalization and regression separate weather effects from operational changes.",
+    "explanation": "Degree-day or regression methods adjust consumption for weather and occupancy. A rate change alters dollars per unit, not kWh or therms, so it is removed from the cost trend instead of being applied to consumption.",
     "distractorExplanations": {
-      "a": "Raw cost comparison mixes rate and weather effects; normalization must come first.",
+      "a": "Raw cost comparison mixes rate and weather effects; weather and occupancy adjustments to consumption must come first.",
       "b": "One month cannot represent seasonal swings; bill analysis uses 12 or more months of data.",
-      "c": "Area normalization alone ignores weather and rate effects that distort consumption trends."
+      "c": "Area normalization alone ignores weather and occupancy, which change consumption. Rate changes affect cost, not the consumption trend."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -1972,9 +1972,9 @@
     "correctOptionId": "c",
     "explanation": "Each ASHRAE credential has a distinct Angoff-derived pass point. Verify current ASHRAE FAQs before scheduling.",
     "distractorExplanations": {
-      "a": "69/100 is the BEMP pass point, not BEAP.",
-      "b": "83/120 applies to BCxP.",
-      "d": "BEAP uses a 100-scored-item form, not 60."
+      "a": "Confuses the BEMP pass of 69 of 100 with the BEAP pass of about 68 of 100 scored items.",
+      "b": "Confuses the BCxP pass of 83 of 120 with the BEAP pass of about 68 of 100 scored items.",
+      "d": "Confuses the BEAP pass of about 68 of 100 with this 45-of-60 figure, which is not the BEAP scored form."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -2300,7 +2300,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Document review precedes and supports field verification.",
+    "explanation": "ASHRAE audit procedures call for collecting architectural, mechanical, electrical, and control drawings plus O&M manuals when available, because that document review precedes and supports field verification.",
     "distractorExplanations": {
       "a": "Leases and permits give occupancy context but not the system data that audit procedures call for.",
       "b": "Bid documents give costs, not the system configuration and operating data needed for an audit.",
@@ -2630,7 +2630,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Optimal staging minimizes kW/ton across operating range.",
+    "explanation": "Chiller sequencing assessment should confirm the most efficient chiller leads near design load and lag machines stage off at part load, since optimal staging minimizes kW/ton across the operating range.",
     "distractorExplanations": {
       "a": "Running many chillers at low load often reduces plant efficiency and adds pump energy.",
       "b": "Leading with the least efficient chiller wastes energy; the most efficient unit should lead.",
@@ -2762,11 +2762,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Proper strainer-cycle control saves chiller energy in suitable climates.",
+    "explanation": "A water-side economizer assessment should verify that controls enable free cooling when outdoor wet-bulb allows it and prevent uncontrolled tower water migration, which saves chiller energy in suitable climates.",
     "distractorExplanations": {
       "b": "Uncontrolled mixing can cause health and efficiency problems.",
       "c": "Wet-bulb conditions determine hours of effectiveness.",
-      "d": "Not the best answer here; the right answer is “Controls enable free cooling when outdoor wet-bulb allows and prevent uncontrolled tower water migration”."
+      "d": "Confuses wet-bulb conditions that allow free cooling with conditions that prohibit it, so the strainer cycle would enable when it should stay off."
     },
     "difficulty": "hard",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3327,7 +3327,7 @@
     "distractorExplanations": {
       "a": "That describes BEAP field assessment of existing buildings, not BEMP energy modeling.",
       "b": "That is the BCxP commissioning scope, not BEMP whole-building energy modeling.",
-      "c": "Design documentation is the HBDP/HFDP scope; BEMP focuses on whole-building simulation."
+      "c": "HVAC load calculations and construction-document system design are the CHD scope; BEMP focuses on whole-building simulation."
     },
     "difficulty": "easy",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local QA repair (stems/distractors)"
@@ -3414,7 +3414,7 @@
       },
       {
         "id": "c",
-        "text": "A minimally compliant reference building with prescribed system types and efficiencies"
+        "text": "A stable baseline with prescribed systems, compared using a performance cost index target"
       },
       {
         "id": "d",
@@ -3424,7 +3424,7 @@
     "correctOptionId": "c",
     "explanation": "Appendix G defines baseline assumptions so proposed design performance can be compared for code or LEED paths.",
     "distractorExplanations": {
-      "a": "Appendix G baselines use minimum-efficiency equipment, not the best available products.",
+      "a": "The baseline uses prescribed stable-baseline efficiencies, not the best equipment on the market.",
       "b": "Baseline and proposed models differ by Appendix G rules; an identical copy would show zero savings.",
       "d": "Prescriptive compliance is a separate path; Appendix G is a simulation-based performance rating."
     },
@@ -3633,7 +3633,7 @@
     "id": "ashrae-certifications-readiness-check-bemp-modeling-011",
     "examSlug": "ashrae-certifications-readiness-check",
     "topicId": "bemp-modeling",
-    "prompt": "A common reason simulated cooling energy exceeds measured data after calibration is",
+    "prompt": "A common model-input reason simulated cooling energy exceeds measured data is",
     "options": [
       {
         "id": "a",
@@ -3641,7 +3641,7 @@
       },
       {
         "id": "b",
-        "text": "Overstated internal gains, schedules, or supply air temperature assumptions"
+        "text": "Overstated internal gains or schedules, or supply air colder than actual operation"
       },
       {
         "id": "c",
@@ -3655,7 +3655,7 @@
     "correctOptionId": "b",
     "explanation": "Operational drift, control overrides, and input assumptions are frequent calibration discrepancy sources. These assumptions often do not match actual operation.",
     "distractorExplanations": {
-      "a": "Electric meters capture cooling plant energy; metering is rarely the cause of the gap.",
+      "a": "A meter that omits the chiller is a comparison-boundary error, not an overstated model input; match that boundary before judging the cooling model.",
       "c": "TMY/EPW files contain full 8,760-hour years; weather file length is not the issue.",
       "d": "Understated U-factors would lower simulated cooling, not raise it above measured data."
     },
@@ -3789,7 +3789,7 @@
     "distractorExplanations": {
       "a": "Post-hoc tuning without evidence is poor practice; envelope inputs must be documented.",
       "b": "Center-of-glass values ignore frame effects; models use whole-product NFRC ratings.",
-      "c": "Code maximums are baseline values; proposed models use the actual product data."
+      "c": "Proposed models use the specified product data; current prescriptive maximum U-factors are not a substitute for those assemblies."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
@@ -3843,7 +3843,7 @@
       },
       {
         "id": "c",
-        "text": "Hours when zone temperatures could not be maintained within the thermostat deadband"
+        "text": "Hours when a zone is beyond the heating or cooling setpoint by more than half the throttling range"
       },
       {
         "id": "d",
@@ -4412,7 +4412,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Change control prevents silent drift between reported and actual design conditions. The updated model should then be re-run through the same calibration and QA checks.",
+    "explanation": "Change control prevents silent drift between reported and actual design conditions. The updated model should then be re-run through the same QA checks.",
     "distractorExplanations": {
       "a": "Appendix G baselines share geometry, schedules, and area with the proposed case, so both must reflect as-built changes.",
       "c": "Post-occupancy calibration is a later M&V step; design-stage submittals must reflect current as-built inputs now.",
@@ -4482,7 +4482,7 @@
     "distractorExplanations": {
       "a": "An ideal air system meets loads without a modeled fan or duct system, so it cannot report realistic fan energy.",
       "c": "Ventilation still has to be specified with ideal air loads; the simplification is the distribution system, not OA.",
-      "d": "Appendix G prescribes specific baseline system types (Systems 1-10); an ideal air system does not qualify."
+      "d": "Appendix G prescribes specific baseline system types (Systems 1-13); an ideal air system does not qualify."
     },
     "difficulty": "medium",
     "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
@@ -5435,7 +5435,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Early integration prevents costly late redesign of systems.",
+    "explanation": "Integrated design charrettes bring disciplines together at the start so load reduction, system selection, and performance targets are set as one package before systems are locked.",
     "distractorExplanations": {
       "b": "Charrettes happen in early design; finalizing schedules after CDs is too late to influence integration.",
       "c": "Submittal review is a construction-phase task; charrettes align disciplines before systems are chosen.",
@@ -5569,7 +5569,7 @@
     "correctOptionId": "d",
     "explanation": "HBDP/CHD candidates should understand healthcare differs from standard office design.",
     "distractorExplanations": {
-      "a": "Airborne infection isolation rooms are negative to the corridor; only protective environment rooms are positive.",
+      "a": "Airborne infection isolation rooms are negative to the corridor. Protective environment rooms are positive, and so are other rooms such as operating rooms; not every patient room is positive.",
       "b": "Healthcare spaces follow ASHRAE 170 rates and filtration, which exceed typical office 62.1 design.",
       "c": "Healthcare design requires specific pressure relationships for infection control, not uniform neutral pressure."
     },
@@ -5732,7 +5732,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Lower SAT improves dehumidification but increases duct and fan sizing.",
+    "explanation": "A lower supply air temperature reduces the airflow and duct size needed for a given sensible load and improves dehumidification. Terminal devices still have to perform at that temperature.",
     "distractorExplanations": {
       "b": "Supply air temperature sets the airflow needed for a given load, which directly drives duct size.",
       "c": "Reversed: a higher SAT raises airflow and duct size and weakens dehumidification.",
@@ -5798,7 +5798,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Pressure design is critical in healthcare, labs, and life safety stairs. The offset must hold that differential under door openings.",
+    "explanation": "Pressure design is critical in healthcare, labs, and life safety stairs. The airflow offset is calculated from leakage so the required differential is met with doors closed.",
     "distractorExplanations": {
       "a": "A fixed percentage ignores actual leakage and door gaps, which determine the offset needed for the pressure target.",
       "b": "Stairwells are pressurized positive in fire mode to keep smoke out of the exit path.",
@@ -6095,7 +6095,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "DCV saves conditioning energy in variable occupancy spaces.",
+    "explanation": "Demand control ventilation modulates outdoor airflow from occupancy or indoor CO₂ while still supplying the code minimum, so variable spaces are not over-ventilated.",
     "distractorExplanations": {
       "b": "Comparing outdoor and return enthalpy is economizer control, not demand control ventilation.",
       "c": "Building static pressure controls relief or return fans; DCV responds to occupancy or CO₂.",
@@ -6128,7 +6128,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Facade performance sets the baseline load for HVAC sizing.",
+    "explanation": "High-performance facade design cuts envelope loads by combining low U-factor assemblies, low SHGC glazing where solar gain should be limited, and a continuous air barrier.",
     "distractorExplanations": {
       "a": "High SHGC admits more solar heat; interior blinds stop little of it once it has entered the space.",
       "b": "Even good glazing performs worse than an insulated wall; high WWR raises loads beyond daylight benefits.",
@@ -6227,7 +6227,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "System ventilation efficiency may adjust zone-level requirements. The zone results then receive system-level treatment.",
+    "explanation": "Each zone outdoor airflow is the people rate plus the area rate. System ventilation efficiency adjusts the system outdoor-air intake, not those zone rates.",
     "distractorExplanations": {
       "a": "The VRP adds the people and area components (Rp·Pz + Ra·Az); it does not take the larger one.",
       "c": "62.1 Table 6-1 gives cfm per person and per ft²; ACH-based rates belong to ASHRAE 170 healthcare design.",
@@ -6592,7 +6592,7 @@
     "correctOptionId": "c",
     "explanation": "DHW energy is significant in hospitality, healthcare, and multifamily projects.",
     "distractorExplanations": {
-      "a": "120°F storage favors Legionella growth; storage is typically 140°F or higher with mixing valves at fixtures.",
+      "a": "120°F storage is above the main Legionella growth range but does not reliably kill the bacteria; storage is typically 140°F or higher with mixing valves at fixtures.",
       "b": "Recirculation and piping losses are often a large share of DHW energy, far above 5%.",
       "d": "Oversized tanks and nonstop recirculation increase standby and distribution losses."
     },
@@ -6722,7 +6722,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Documentation reduces operator error and equipment damage.",
+    "explanation": "O&M manuals and sequence documents support operators by stating the normal, emergency, and seasonal procedures that keep maintained performance, so each shift runs the systems the way they were turned over.",
     "distractorExplanations": {
       "a": "Manuals support training but do not replace hands-on instruction on actual systems.",
       "c": "Design calculations belong in the design record; O&M manuals give operating and maintenance procedures.",
@@ -6821,7 +6821,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "FDD supports monitoring-based commissioning and OPMP goals.",
+    "explanation": "Fault detection and diagnostics in operations means analytics on trend data that flag stuck dampers, sensor drift, and inefficient staging, which is how operators find faults a single alarm will not name.",
     "distractorExplanations": {
       "a": "Periodic manual inspections are not FDD, which applies analytics to trend data continuously.",
       "c": "Simple threshold alarms are not diagnostics; FDD compares expected versus actual behavior across points.",
@@ -6854,7 +6854,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Competent operators sustain high-performance operation.",
+    "explanation": "Operator training is effective when the people who were trained then execute the procedures correctly, generate fewer alarms, and hold the KPI targets, which is the operating result the training was meant to produce.",
     "distractorExplanations": {
       "a": "Attendance and hours measure exposure, not whether operators can execute procedures correctly.",
       "b": "Satisfaction surveys measure reaction to training, not changes in operating performance.",
@@ -6986,7 +6986,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Actionable dashboards drive timely operational responses.",
+    "explanation": "A facility manager's utility dashboard is actionable when it shows consumption already normalized, together with cost, demand, and the variance from the target or budget, so a real performance gap is visible in time to respond.",
     "distractorExplanations": {
       "b": "Unnormalized year-over-year comparisons mix weather and occupancy effects with real performance changes.",
       "c": "Annual-only data arrives too late to act on drift; dashboards need monthly or interval resolution.",
@@ -7052,7 +7052,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "OPMP integrates IAQ with energy performance management.",
+    "explanation": "IAQ verification in operations combines CO₂ monitoring, checks of ventilation airflow, filter maintenance, and occupant feedback, because each one covers a different failure that the others will miss.",
     "distractorExplanations": {
       "a": "Comfort checks do not confirm ventilation; IAQ verification needs airflow and filter checks.",
       "b": "Mold sampling detects moisture problems, not whether outdoor air rates meet requirements.",
@@ -7164,11 +7164,11 @@
     "id": "ashrae-certifications-readiness-check-opmp-operations-018",
     "examSlug": "ashrae-certifications-readiness-check",
     "topicId": "opmp-operations",
-    "prompt": "OPMP professionals should verify compliance with ASHRAE 90.1 operational requirements such as:",
+    "prompt": "OPMP professionals should verify that ASHRAE 90.1 control requirements still function in operation, such as:",
     "options": [
       {
         "id": "a",
-        "text": "Economizer operation, ventilation minimums, and equipment efficiency"
+        "text": "Economizer high-limit shutoff, automatic off-hour HVAC shutdown or setback, and lighting automatic shutoff"
       },
       {
         "id": "b",
@@ -7184,14 +7184,14 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Operations staff maintain code-intent performance after occupancy. These are checked where they are enforceable in the operations phase.",
+    "explanation": "Standard 90.1 requires economizer high-limit shutoff, off-hour HVAC shutdown or setback, and automatic lighting shutoff, and those controls have to keep working after occupancy. Minimum outdoor-air rates are set by Standard 62.1. The 90.1 equipment-efficiency tables are nameplate ratings checked when equipment is installed or replaced, not an operating kW-per-ton target.",
     "distractorExplanations": {
       "b": "Permit LPD values are a design-phase compliance record, not an operational item to verify in service.",
-      "c": "Envelope values are fixed at design and permit; operations verifies economizers and ventilation in service.",
+      "c": "Envelope U-factors and fenestration areas are fixed at permit. They are not operating controls, and ventilation rates come from Standard 62.1 rather than from a 90.1 control requirement.",
       "d": "Section 608 records are an EPA regulatory requirement, not an ASHRAE 90.1 operational item."
     },
     "difficulty": "hard",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question)."
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Fact review 2026-10-30"
   },
   {
     "id": "ashrae-certifications-readiness-check-opmp-operations-019",
@@ -7217,7 +7217,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Adequate staffing sustains KPIs in critical environments.",
+    "explanation": "A 24/7 staffing model affects operations by setting how quickly alarms are answered, which hours are available for preventive maintenance, and whether training covers every shift that runs the plant.",
     "distractorExplanations": {
       "a": "Staffing affects response and maintenance, not the rated efficiency of plant equipment.",
       "c": "Constant staffing does not replace preventive maintenance; it changes when PM windows and responses occur.",
@@ -7679,7 +7679,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "OPMP programs include periodic sensor verification.",
+    "explanation": "BAS trends must be validated because a stuck sensor or a miscalibrated input produces false diagnostics and lets the control sequence act on a reading that does not match the space or the plant.",
     "distractorExplanations": {
       "a": "Guideline 36 defines control sequences, not trend interval rules; data quality is about sensor accuracy.",
       "b": "Format conversion is an integration issue; validation targets wrong readings from field devices.",
@@ -7778,7 +7778,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Operations data feeds corporate sustainability disclosures.",
+    "explanation": "OPMP lines up with ESG reporting when energy, emissions, water, and IAQ metrics are documented and the numbers can be traced to meters and logs, so the disclosure matches how the building actually ran.",
     "distractorExplanations": {
       "b": "Design models are predictions; ESG disclosures require measured, auditable operating data.",
       "c": "Cost totals cannot support emissions or energy disclosures, which require consumption data.",
@@ -7943,14 +7943,14 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Pressure control affects IAQ, infiltration loads, and door operation. Positive pressure also limits elevator shaft and stack effects.",
+    "explanation": "Pressure control affects IAQ, infiltration loads, and door operation. Slight positive pressure limits unfiltered infiltration where the building is required to be positive. It does not cancel stack effect or elevator-shaft airflow; those paths are managed by compartmentalization, and too much positive pressure makes doors hard to operate.",
     "distractorExplanations": {
       "a": "Strong positive pressure makes doors hard to close and wastes conditioned air; only a slight margin is needed.",
       "c": "Negative pressure draws unfiltered, unconditioned infiltration and moisture through the envelope.",
       "d": "Neutral design leaves no margin against wind and stack effects, so infiltration still occurs."
     },
     "difficulty": "medium",
-    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion"
+    "sourceNote": "Authored by UniPrep2Go (original readiness-check question). · Local short-stem expansion · Fact review 2026-10-30"
   },
   {
     "id": "ashrae-certifications-readiness-check-opmp-operations-042",
@@ -8042,7 +8042,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Freeze events cause costly emergency repairs and downtime.",
+    "explanation": "Winter freeze protection for hydronic coils depends on keeping a minimum flow, checking glycol concentration, and leaving the low-temperature safeties in service, which is what stops a coil from freezing.",
     "distractorExplanations": {
       "a": "No-flow conditions let water in coils freeze; minimum flow must be kept in cold weather.",
       "b": "Bypassing freezestats removes protection exactly when coils are most at risk.",
@@ -8108,7 +8108,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Change logs are essential for multi-shift operations teams.",
+    "explanation": "A setpoint change record is useful when it names who changed the value, why they changed it, what impact they expected, and the date it should be reviewed, so the next shift can decide whether it should remain.",
     "distractorExplanations": {
       "b": "An audit trail shows what changed and when, but not why or the expected impact, which operators need.",
       "c": "Verbal handoffs are lost across shifts; setpoint changes need written records.",
@@ -8240,7 +8240,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Filter PM balances IAQ, coil protection, and fan energy.",
+    "explanation": "Air filter maintenance should follow measured pressure drop, or a change interval based on how the filter is actually loading, because face appearance does not show when resistance is hurting airflow or coil protection.",
     "distractorExplanations": {
       "b": "Calendar-only changes ignore actual loading, wasting filters or letting pressure drop climb.",
       "c": "Running past final resistance cuts airflow and raises fan energy; change at rated final resistance.",

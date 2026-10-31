@@ -226,6 +226,48 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "ptcb-pharmacy-technician-mock": {
+    mockSlug: "ptcb-pharmacy-technician-mock",
+    examLabel: "PTCE",
+    heading: "PTCE practice options compared",
+    checkedDate: "2026-10-31",
+    lead:
+      "PTCB sells two account tools. UniPrep2Go is the free timed diagnostic: 25 questions with no signup, then 90 questions in 110 minutes and domain scores. The official PTCE is 90 items (80 scored) in 1 hour 50 minutes, and the pass line is a scaled 1,400, not a percent. Not PTCB material.",
+    rows: [
+      {
+        name: "UniPrep2Go PTCE practice test",
+        href: "/mock-exams/ptcb-pharmacy-technician-mock",
+        format: "25 free, no signup; full timed mock 90 questions / 110 minutes with domain scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic on the January 2026 outline, drawn from a 180-item bank. Readiness target is 70%. Official pass is scaled 1,400.",
+      },
+      {
+        name: "PTCB — PTCE Practice Bank",
+        href: "https://ptcb.org/official-ptcb-practice-tools/",
+        format: "300+ retired PTCE questions and a 400-card study deck; the candidate sets the length, difficulty, and timer",
+        access: "PTCB Account, $65, 90 days of unlimited use (PTCB page, checked 2026-10-31)",
+        notes: "Not a single fixed-length mock. Access ends early if the candidate certifies during the 90 days.",
+      },
+      {
+        name: "PTCB — Pre-PTCE",
+        href: "https://ptcb.zendesk.com/hc/en-us/articles/9310795263757-At-a-Glance-PTCE-Practice-Bank",
+        format: "90 questions in the look of the PTCE; one attempt, finished within 48 hours of starting",
+        access: "PTCB Account, $29, 90-day authorization (PTCB help article, updated 2025-07-17, checked 2026-10-31)",
+        notes: "PTCB tells candidates to use the Practice Bank first and the Pre-PTCE as the last check.",
+      },
+    ],
+    sources: [
+      {
+        label: "PTCB — official practice tools",
+        url: "https://ptcb.org/official-ptcb-practice-tools/",
+      },
+      {
+        label: "PTCB — Practice Bank at a glance",
+        url: "https://ptcb.zendesk.com/hc/en-us/articles/9310795263757-At-a-Glance-PTCE-Practice-Bank",
+      },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(
