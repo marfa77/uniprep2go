@@ -1105,6 +1105,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         q: "Do you need to pass FRM Part 1 before Part 2?",
         a: "Yes. Candidates must pass Part 1 before Part 2 can be graded.",
       },
+      {
+        q: "When are the FRM exams in 2027?",
+        a: "Per GARP (garp.org/frm/exam-logistics, checked 2026-10-31): May 2027 Part I is May 8–13 and Part II is May 15–17. August 2027 Part I is the morning sessions and Part II the afternoon sessions on Aug 13–14. November 2027 Part I is Nov 13–18 and Part II is Nov 20–22. Early registration for the May window opens 1 Dec 2026.",
+      },
     ],
   },
   "cfa-level-2": {
