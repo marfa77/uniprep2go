@@ -200,7 +200,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
     {
       question: "How much does the SIE exam cost?",
       answer:
-        "$80 as of 2026. Rescheduling costs $35 if done within 10 days of the exam. No-shows forfeit the fee.",
+        "$100 as of 2026 (FINRA). Rescheduling costs $35 if done within 10 days of the exam. No-shows forfeit the fee. Confirm the live fee on finra.org.",
     },
     {
       question: "What happens if I fail the SIE exam?",
