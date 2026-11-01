@@ -33,7 +33,7 @@ export async function generateMetadata(): Promise<Metadata> {
     }),
     {
       aiDescription:
-        "UniPrep2Go deck catalog: Anki flashcards and PDFs for US licensing, finance credentials, building certifications, citizenship civics, and Prep2Go Immigration apps. Language-exam Anki decks are sold on Prep2Go.",
+        "UniPrep2Go deck catalog: Anki flashcards and PDFs for US licensing, finance credentials, building certifications, and citizenship civics. Language-exam Anki decks are sold on Prep2Go.study/shop.",
       aiCategory: "Exam prep catalog",
       path: "/decks",
       linkLlmsCatalog: true,

@@ -226,7 +226,7 @@ export const ankiDeckShelfLifePost: BlogPostDraft = {
           items: [
             "**LEED v4 deck + 6 weeks + ~$250 exam fee = fail.** Restudy with v5 and pay again → ~12 weeks and ~$500.",
             "**ServSafe old deck + 2 weeks + ~$100 exam fee = fail.** Restudy and retake → ~4 weeks and ~$200.",
-            "**FINRA SIE old deck + 4 weeks + ~$80 exam fee = probably pass.** You might miss a few new-rule items and still clear 70%.",
+            "**FINRA SIE old deck + 4 weeks + ~$100 exam fee = probably pass.** You might miss a few new-rule items and still clear 70%.",
           ],
         },
         {

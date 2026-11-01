@@ -2,10 +2,10 @@ import type { BlogPostDraft } from "../types";
 
 export const canadaCitizenshipTestPost: BlogPostDraft = {
   slug: "canada-citizenship-test-20-questions-630-dollars",
-  title: "Canada Citizenship Test: The 20-Question Exam That Costs $630",
-  titleTag: "Canada Citizenship Test 2026: 20 Questions, $630 & How to Pass",
+  title: "Canada Citizenship Test: The 20-Question Exam That Costs $653",
+  titleTag: "Canada Citizenship Test 2026: 20 Questions, $653 & How to Pass",
   metaDescription:
-    "20 questions. 15 correct to pass. 45 minutes. Canada’s citizenship test is short but expensive. Topic split, fee breakdown, and why geography kills scores.",
+    "20 questions. 15 correct to pass. 45 minutes. Canada’s citizenship test is short but expensive (CAD $653 from 31 Mar 2026). Topic split, fee breakdown, and why geography kills scores.",
   publishedAt: "2026-07-28",
   eyebrow: "Canada · Discover Canada / IRCC",
   clusterId: "canada-citizenship",
@@ -15,7 +15,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
     "life-in-the-uk-test-why-one-in-three-fail",
   ],
   intro:
-    "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 45 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, you are near CAD $630 to sit those 20 items. Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
+    "**Canada’s citizenship test is one of the shortest in the world — 20 questions in 45 minutes — and one of the most expensive per question.** Between application, right of citizenship, and related charges, adult fees are **CAD $653** from **31 March 2026** (was CAD $630). Fail and you pay again in time, stress, and possibly a citizenship-officer interview. This guide covers format, five topic areas, the geography trap, and how to use the free official *Discover Canada* guide instead of error-prone apps.",
   mockSlug: "canadian-citizenship-readiness-check",
   deckSlug: "canadian-citizenship-anki-deck",
   cta: {
@@ -44,14 +44,14 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
             ["Passing score", "15/20 (75%)"],
             ["Languages", "English or French"],
             ["Delivery", "Test centre computer; some applicants invited online"],
-            ["Cost", "About CAD $630 total (processing + right of citizenship)"],
+            ["Cost", "CAD $653 total from 31 Mar 2026 (processing + right of citizenship)"],
             ["Study material", "Free Discover Canada guide from IRCC"],
             ["Results", "Immediate at some centres; official notice by mail"],
           ],
         },
         {
           type: "p",
-          text: "**Fee structure:** ~$630 is the **application** package, not a separate test ticket. The test is included. Retests/interviews usually add no fee — but a refused application does not refund you. **Online vs in-person:** IRCC assigns the method; you do not choose.",
+          text: "**Fee structure:** CAD $653 (from 31 March 2026) is the adult **application** package, not a separate test ticket. The test is included. Retests/interviews usually add no fee — but a refused application does not refund you. Confirm live fees on canada.ca. **Online vs in-person:** IRCC assigns the method; you do not choose.",
         },
       ],
     },
@@ -148,7 +148,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
     {
       question: "How much does Canadian citizenship cost?",
       answer:
-        "About CAD $630 total ($530 processing + $100 right of citizenship), including the test. Fee waivers may apply for low-income applicants.",
+        "CAD $653 total for adults from 31 March 2026 (processing + right of citizenship), including the test. Confirm the live fee table on canada.ca. Fee waivers may apply for low-income applicants.",
     },
     {
       question: "Is the Canada citizenship test in English or French?",
@@ -187,5 +187,5 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Canada’s test is short, expensive, and detail-hungry. Twenty questions sound easy until a capital or date blanks you below 15/20. Read Discover Canada, flashcard provinces and capitals, and do not sit until mocks hit ~18/20. The $630 is not coming back.",
+    "Canada’s test is short, expensive, and detail-hungry. Twenty questions sound easy until a capital or date blanks you below 15/20. Read Discover Canada, flashcard provinces and capitals, and do not sit until mocks hit ~18/20. The CAD $653 application fee is not coming back.",
 };

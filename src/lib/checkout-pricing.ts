@@ -18,7 +18,7 @@ import {
   formatCatalogListPrice,
   formatCheckoutPrice,
 } from "./catalog-price";
-import { PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
+import { isPrep2GoAppDeckSlug, PREP2GO_APP_STORE_MONTHLY_PRICE } from "./prep2go-app-decks";
 import { getRedisClient } from "./redis";
 
 export {
@@ -585,7 +585,13 @@ export async function getPricedDeckBySlug(slug: string) {
 export const getAvailableDeckBySlugWithSyncedPrice = getPricedDeckBySlug;
 
 export async function getPricedDecks() {
-  return Promise.all(catalogAvailableDecks.map((deck) => resolveDeckPrice(deck)));
+  // Prep2Go Immigration App Store survival guides stay reachable by slug, but they
+  // are not UniPrep2Go catalog SKUs — keep them off /decks and /pricing.
+  return Promise.all(
+    catalogAvailableDecks
+      .filter((deck) => !isPrep2GoAppDeckSlug(deck.slug))
+      .map((deck) => resolveDeckPrice(deck)),
+  );
 }
 
 /** @deprecated Use getPricedDecks */
