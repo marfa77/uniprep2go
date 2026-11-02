@@ -698,6 +698,24 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
       },
     ],
   },
+  "six-sigma-green-belt-readiness-check": {
+    certifier: "ASQ (CSSGB) and IASSC (separate Green Belt exam)",
+    verifyAtUrl: "https://www.asq.org/cert/six-sigma-green-belt",
+    sources: [
+      {
+        label: "ASQ — Certified Six Sigma Green Belt",
+        url: "https://www.asq.org/cert/six-sigma-green-belt",
+      },
+      {
+        label: "ASQ — exam time and question counts",
+        url: "https://www.asq.org/cert/faq/faq-taking-exam",
+      },
+      {
+        label: "IASSC — Green Belt certification",
+        url: "https://iassc.org/six-sigma-certification/green-belt-certification/",
+      },
+    ],
+  },
   "aha-bls-provider-readiness-check": {
     certifier: "American Heart Association (AHA) — BLS Provider",
     verifyAtUrl:

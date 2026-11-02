@@ -263,10 +263,13 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "property-practice", label: "Property, land use & practice" },
     ]),
     officialSourceNote:
-      "Independent diagnostic on NY DOS salesperson themes. Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail only). This UniPrep2Go mock is 60 questions / 90 minutes / 70% readiness target. Not NYDOS exam material.",
-    description: "60-question New York real estate salesperson readiness check (free 25-question version).",
+      "New York Department of State salesperson exam (dos.ny.gov, checked 2026-11-02): multiple choice, based on the 77-hour qualifying course, 90 minutes after the instructions end. Results are pass or fail only. DOS does not publish a question count or a numeric cut score on that page. A passing result is valid for two years. This check is 60 questions / 90 minutes from a 120-item bank, with a 70% readiness target that is ours. Not a DOS exam.",
+    description:
+      "60-question / 90-minute New York salesperson readiness check (free first 25) from a 120-item bank. The DOS exam is multiple choice, 90 minutes, and pass/fail only.",
     examBody: "NY DOS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session is still 60 questions / 90 minutes and draws 15 from each topic.",
+    lastUpdated: "2026-11-02",
   }),
   nicheReadinessConfig({
     slug: "cda-childcare-readiness-check",

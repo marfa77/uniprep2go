@@ -47,7 +47,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a 40-question, 60-minute exam simulation (free 25-question version). Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
-    "Planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the 60-question diagnostic (free 25-question version) now — verify the current official form at aspt.org. ASPT is not NHA CPT and not ASCP PBT.",
+    "Planned 120-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the 60-question diagnostic (free 25-question version) now. ASPT does not publish an item count. ASPT is not NHA CPT and not ASCP PBT. The deck is not a live download.",
   "cscs-nsca-anki-deck":
     "Planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the 60-question diagnostic (free 25-question version) from a 120-item bank — official CSCS is two papers / scaled 70 each. The deck is not a live download. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
@@ -915,11 +915,11 @@ IRS SEE registration, official study materials, or the three-part SEE delivered 
 
   "aspt-phlebotomy-anki-deck": `### What this page is
 
-A planned 60-card ASPT phlebotomy Anki (venipuncture, order of draw & tubes, safety/infection, processing & QA) paired with a **live 60-question** timed readiness check (free 25-question version). The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
+A planned 120-card ASPT phlebotomy Anki (venipuncture, order of draw & tubes, safety/infection, processing & QA) paired with a **live 60-question / 75-minute** readiness check drawn from a 120-item bank (free 25-question version). The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
 
 ### ASPT vs NHA vs ASCP
 
-**ASPT** (American Society of Phlebotomy Technicians) is a separate certifier from **NHA CPT** and **ASCP PBT**. ASCP PBT is a computer-adaptive exam (~80 items / ~2 hours). Third-party practice sites disagree on ASPT item count and time — UniPrep does **not** invent 100Q or 150Q official numbers. Verify the current form at [aspt.org](https://www.aspt.org).
+**ASPT** (American Society of Phlebotomy Technicians) is a separate certifier from **NHA CPT** and **ASCP PBT**. ASPT does not publish a question count or a passing score. Posted sittings are 2 hours in person and 3 hours online. A lapse of more than 3 years means a retake. UniPrep does **not** use the 100Q or 150Q figures from other sites. Verify the current form at [aspt.org](https://www.aspt.org).
 
 ### Plan with the free mock
 
@@ -2581,7 +2581,7 @@ TREC education hours, Pearson VUE scheduling, or the official dual-portion exam.
 
 ### Plan with the free NY mock
 
-Finish qualifying education, then 15–20 cards/day. Sit the [60-question NY readiness check (free 25-question version)](/mock-exams/ny-real-estate-readiness-check) (90 min, 70% diagnostic). Official NYDOS exam is **75Q / 90 min / 70%** (pass/fail only) — practice that pacing separately.
+Finish qualifying education, then 15–20 cards/day. Sit the [60-question NY readiness check (free 25-question version)](/mock-exams/ny-real-estate-readiness-check) (90 min, 70% readiness target). The DOS exam is multiple choice and **90 minutes**, reported pass or fail only. DOS does not publish a question count or a numeric cut score.
 
 ### Pitfalls this deck targets
 

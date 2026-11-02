@@ -299,6 +299,17 @@ export default async function HomePage() {
                   CFA Level 2 practice exam
                 </Link>
               </div>
+              <p className="mt-4 max-w-xl text-sm leading-6 text-[#5f5749]">
+                CFA Level I is offered in the November 2026 window, 11–22 November.{" "}
+                <a
+                  className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                  href="https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/26-nov-passport-assistance-letter.pdf"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  CFA Institute
+                </a>
+              </p>
               <p className="mt-5 text-sm text-[#5f5749]">
                 Also:{" "}
                 {heroSecondaryLinks.map((link, index) => (

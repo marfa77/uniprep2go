@@ -297,7 +297,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "ny-real-estate-readiness-check": {
     title: "Free NY Real Estate Practice Test | 60Q Diagnostic",
     description:
-      "New York real estate practice test: free 25-question diagnostic, full mock 60 timed questions, 90 minutes, 70% readiness target, DOS topic scoring. Official NYDOS exam is 75Q / 90 min / 70% — this mock is shorter. Independent — not DOS material.",
+      "New York real estate practice test: free 25-question diagnostic, full mock 60 timed questions, 90 minutes, 70% readiness target, DOS topic scoring. The DOS exam is multiple choice and 90 minutes, reported pass or fail only. Independent — not DOS material.",
     keywords: [
       "new york real estate practice test",
       "ny real estate exam questions",

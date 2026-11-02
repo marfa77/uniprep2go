@@ -539,11 +539,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "processing", label: "Processing & QA" }
     ]),
     officialSourceNote:
-      "Independent UniPrep2Go diagnostic on ASPT phlebotomy themes (venipuncture, tubes, safety, processing). ASPT is not NHA CPT and not ASCP PBT (ASCP PBT is ~80-item CAT / ~2h). Third-party sites disagree on ASPT item count — verify the current official form at aspt.org. Not official ASPT exam material.",
+      "ASPT (aspt.org, checked 2026-11-02) does not publish a question count or a passing score. Posted sittings are 2-hour in-person blocks and 3-hour online blocks; that is the calendar window, not an item count. A certification lapsed more than 3 years has to be retaken. ASPT is not NHA CPT and not ASCP PBT. This check is 60 questions / 75 minutes from a 120-item bank. The matching Anki deck is planned and is not a live download.",
     description:
-      "60-question ASPT Phlebotomy readiness check (free 25-question version) with topic scoring. Verify official format at aspt.org — this page is an independent diagnostic, not NHA CPT or ASCP PBT.",
+      "60-question / 75-minute ASPT phlebotomy readiness check (free first 25) from a 120-item bank. ASPT does not publish an item count. Not NHA CPT and not ASCP PBT.",
     examBody: "ASPT",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
+    lastUpdated: "2026-11-02",
     searchAliases: ["ASPT", "phlebotomy technician"],
   }),
   nicheReadinessConfig({
@@ -821,11 +823,15 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "analyze", label: "Analyze" },
       { id: "improve-control", label: "Improve & control" }
     ]),
-    officialSourceNote: "Mapped to ASQ / IASSC-style bodies themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Six Sigma Green Belt readiness check (free 25-question version) with topic scoring.",
-    examBody: "ASQ / IASSC-style bodies",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
-    searchAliases: ["Six Sigma Green Belt", "CSSGB"],
+    officialSourceNote:
+      "ASQ CSSGB computer exam (asq.org/cert/six-sigma-green-belt, checked 2026-11-02): 110 questions (100 scored + 10 unscored), exam time 4 hours 18 minutes, open book, scaled pass 550 out of 750. The paper form is 100 questions in 4 hours. IASSC Certified Lean Six Sigma Green Belt (iassc.org/six-sigma-certification/green-belt-certification/, checked 2026-11-02): 100 questions, 3 hours, closed book, 70% to pass; some forms add up to 10 non-graded questions. ASQ asks for 3 years of experience. IASSC lists no prerequisite. This check is 60 four-option questions / 75 minutes / 70% readiness, drawn from a 120-item bank, 15 from each of four equal topics. It is not either official sitting. Not ASQ or IASSC material.",
+    description:
+      "60-question / 75-minute Six Sigma Green Belt readiness check (free first 25) from a 120-item bank. ASQ CSSGB computer exam is 110 questions (100 scored) in 4 hours 18 minutes, open book. IASSC Green Belt is 100 questions in 3 hours, closed book, 70%.",
+    examBody: "ASQ and IASSC (separate exams)",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session is still 60 questions / 75 minutes and draws 15 from each topic — DMAIC, Measure and MSA, Analyze, and Improve and control.",
+    lastUpdated: "2026-11-02",
+    searchAliases: ["Six Sigma Green Belt", "CSSGB", "IASSC Green Belt"],
   }),
   nicheReadinessConfig({
     slug: "enrolled-agent-readiness-check",
@@ -845,10 +851,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to IRS SEE themes (Individuals, Businesses, Representation, Practices). This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target — not an official three-part SEE sitting (official: 100 questions / 3.5 hours per part, scaled pass 500 on 200–800, delivered by PSI since March 2026). Independent prep — not IRS exam material.",
-    description: "120-question IRS Enrolled Agent readiness check (free 25-question version) with topic scoring.",
+      "IRS SEE (irs.gov and Pub 5279, checked 2026-11-02): three separate parts. Each part is 100 multiple-choice questions, 85 scored and 15 unscored, 3.5 hours, scaled pass 500 on 200–800. PSI has delivered it since March 1, 2026. Fee $317 per part. This cycle's domestic window is July 1, 2026 through February 28, 2027. This check is one 120-question / 120-minute diagnostic drawn from a 240-item bank, 30 from each topic. It is not one SEE part and it is not scaled to 500.",
+    description:
+      "120-question / 120-minute IRS Enrolled Agent readiness check (free first 25) drawn from a 240-item bank. Not one SEE part.",
     examBody: "IRS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
+    lastUpdated: "2026-11-02",
     searchAliases: ["enrolled agent", "EA exam", "SEE"],
   }),
   nicheReadinessConfig({

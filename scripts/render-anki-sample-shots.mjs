@@ -42,6 +42,8 @@ const AUTHORED_APKG = {
   "california-real-estate-exam-anki-deck": "out/real_estate/California_Real_Estate_Salesperson_FULL_250.apkg",
   "portuguese-survival-anki-deck":
     "out/prep2go_Portuguese_Survival_v2/Portuguese_Survival_PT_PT_Anki_Deck.apkg",
+  "bench-energy-coal-trader-anki-deck":
+    "out/prep2go - COAL Commodity Pack/Coal_Trading_FULL_221.apkg",
 };
 
 function parseArgs(argv) {

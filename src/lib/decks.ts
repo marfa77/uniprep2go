@@ -5055,7 +5055,7 @@ const rawDecks: Deck[] = [
     subtitle: "Anki flashcard deck for thermal coal and mining finance vocabulary.",
     directAnswer:
       "UniPrep2Go sells the Bench Energy Coal Trader's Lexicon, an Anki deck with 221 flashcards covering coal mining economics, thermal coal markets, freight, and trading terminology. It is delivered as an Anki .apkg file for {PRICE} through Gumroad. The deck targets commodity traders, mining finance analysts, and professionals entering coal markets.",
-    lastUpdated: "2026-05-31",
+    lastUpdated: "2026-11-02",
     audience: "Coal commodity traders, mining finance analysts, and professionals entering thermal coal markets.",
     format: ".apkg",
     coverImage: "/covers/bench-energy-coal-trader-anki-deck.webp",
@@ -5074,7 +5074,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is the difference between NAR and GAR?",
         answer:
-          "NAR (Net As Received): actual energy including moisture weight — the trading standard. GAR (Gross As Received): includes latent heat of water vapor — appears higher.",
+          "Both figures are as-received, so the moisture is still in the coal. GAR is the gross calorific value and includes the latent heat of the water vapor, so it prints higher. NAR is the net calorific value and leaves that latent heat out. API 2 and API 6 are quoted NAR. Indonesian ICI grades are quoted GAR. Convert before you compare a GAR price with a NAR price.",
         imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.webp",
       },
       {
@@ -5145,7 +5145,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is the difference between NAR and GAR?",
         answer:
-          "NAR (Net As Received): actual energy including moisture weight — the trading standard. GAR (Gross As Received): includes latent heat of water vapor — appears higher.",
+          "Both figures are as-received, so the moisture is still in the coal. GAR is the gross calorific value and includes the latent heat of the water vapor, so it prints higher. NAR is the net calorific value and leaves that latent heat out. API 2 and API 6 are quoted NAR. Indonesian ICI grades are quoted GAR. Convert before you compare a GAR price with a NAR price.",
         imageUrl: "/samples/bench-energy-coal-trader-anki-deck-sample-1.webp",
       },
     ],

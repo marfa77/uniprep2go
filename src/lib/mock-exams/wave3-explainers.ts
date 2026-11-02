@@ -578,7 +578,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "ASPT (American Society of Phlebotomy Technicians) certifies phlebotomy technicians on blood collection, tube handling, safety, and specimen processing. It is not NHA CPT and not ASCP PBT.",
     administeredBy: "ASPT",
     officialFormat:
-      "Verify the current official item count, time, and pass rule at aspt.org. Third-party sites disagree (some say 100Q, others 150Q) — UniPrep does not invent those numbers. This page is a 60-question / 75-minute independent diagnostic.",
+      "ASPT does not publish a question count or a passing score. Posted sittings are 2 hours in person and 3 hours online. A lapse of more than 3 years means a retake. This page is 60 questions / 75 minutes from a 120-item bank. The 100Q and 150Q figures on other sites are not used here.",
     examFaqs: [
       {
         question: "What is the ASPT Phlebotomy exam?",
@@ -910,17 +910,21 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "six-sigma-green-belt-readiness-check": {
     practiceTestName: "Six Sigma Green Belt Practice Test",
-    whatIsExam: "Six Sigma Green Belt exams (ASQ/IASSC-style) test DMAIC problem-solving, basic statistics, and process improvement tools.",
-    administeredBy: "ASQ / IASSC-style bodies",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with ASQ / IASSC-style bodies.",
+    whatIsExam:
+      "ASQ CSSGB and the IASSC Green Belt are two different exams. Both test DMAIC and improvement tools. ASQ's computer exam is open book. IASSC's exam is closed book.",
+    administeredBy: "ASQ (CSSGB) and IASSC (separate Green Belt exam)",
+    officialFormat:
+      "ASQ CSSGB computer exam: 110 questions (100 scored + 10 unscored), 4 hours 18 minutes, open book, scaled pass 550/750. IASSC Green Belt: 100 questions, 3 hours, closed book, 70%, with up to 10 extra non-graded questions on some forms.",
     examFaqs: [
       {
         question: "What is the Six Sigma Green Belt exam?",
-        answer: "Six Sigma Green Belt exams (ASQ/IASSC-style) test DMAIC problem-solving, basic statistics, and process improvement tools.",
+        answer:
+          "There are two common ones. ASQ's CSSGB computer exam is 110 questions (100 scored + 10 unscored) in 4 hours 18 minutes, open book, with a scaled pass of 550 out of 750. IASSC's Green Belt exam is 100 questions in 3 hours, closed book, and the pass line is 70%.",
       },
       {
         question: "Is this an official Six Sigma Green Belt exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from ASQ / IASSC-style bodies.",
+        answer:
+          "No. This is a 60-question / 75-minute readiness check drawn from a 120-item bank. It is not the ASQ CSSGB sitting and not the IASSC Green Belt sitting. The matching Anki deck is planned and is not a live download.",
       },
     ],
     keywords: ["six sigma green belt practice test", "cssgb practice test", "six sigma green belt practice exam"],
@@ -937,7 +941,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       },
       {
         question: "Is this an official IRS Enrolled Agent exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from IRS.",
+        answer: "No. This UniPrep2Go readiness check is independent practice — not official exam material from the IRS. A session is 120 questions in 120 minutes, drawn from a 240-item bank. It is not one SEE part.",
       },
       {
         question: "What is the passing score on the Enrolled Agent exam?",

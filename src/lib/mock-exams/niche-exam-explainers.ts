@@ -820,7 +820,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The New York real estate salesperson exam is the state licensing knowledge test taken after completing New York’s required qualifying education hours. It covers agency, contracts, finance, property ownership, fair housing, and New York Department of State license law. Passing is required before you can be licensed as a New York real estate salesperson and affiliate with a broker. Confirm current hour requirements, exam vendor, and outlines with NYDOS.",
     administeredBy: "New York Department of State via the designated exam vendor",
     officialFormat:
-      "Official New York salesperson exam (DOS / eAccessNY): 75 multiple-choice questions, 90 minutes, 70% to pass (results reported pass/fail). UniPrep2Go mock: free 25-question diagnostic, full mock 60 questions, 90 minutes, 70% readiness target — diagnostic only.",
+      "DOS salesperson exam: multiple choice, 90 minutes, pass or fail only. DOS does not publish a question count or a numeric cut score. Qualifying education is 77 hours. UniPrep2Go: free 25, then 60 questions / 90 minutes from a 120-item bank. The 70% line is our readiness target.",
     whoFor:
       "New York salesperson candidates finishing approved qualifying education and licensees preparing for a retake who need a timed diagnostic before the official sitting.",
     howToPrepare:

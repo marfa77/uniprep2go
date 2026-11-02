@@ -11,23 +11,23 @@
       },
       {
         "id": "b",
-        "text": "The Internal Revenue Service"
+        "text": "The Department of Financial Services, which registers mortgage bankers"
       },
       {
         "id": "c",
-        "text": "Local zoning boards"
+        "text": "The Division of Human Rights, which enforces the fair housing law"
       },
       {
         "id": "d",
-        "text": "The Federal Reserve Board"
+        "text": "The county clerk who records deeds and mortgages for the county"
       }
     ],
     "correctOptionId": "a",
     "explanation": "NY DOS Licensing Services regulates real estate salesperson and broker licenses under Article 12-A.",
     "distractorExplanations": {
-      "b": "IRS handles federal taxes, not NY real estate licenses.",
-      "c": "Zoning boards regulate land use, not salesperson licensing.",
-      "d": "The Federal Reserve does not license NY salespersons."
+      "b": "Confuses mortgage-banker registration with Article 12-A licensing. The Department of Financial Services does not issue salesperson licenses.",
+      "c": "Confuses fair-housing enforcement with licensure. The Division of Human Rights does not issue salesperson licenses.",
+      "d": "Confuses recording of deeds with licensing. The county clerk does not license New York salespersons."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -40,7 +40,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The buyer directly as an unlicensed side fee"
+        "text": "The buyer, paid at closing out of the buyer's own funds"
       },
       {
         "id": "b",
@@ -48,19 +48,19 @@
       },
       {
         "id": "c",
-        "text": "Any title company as a secret bonus"
+        "text": "The title company, paid as a bonus for sending the closing"
       },
       {
         "id": "d",
-        "text": "A FSBO seller without broker knowledge when prohibited"
+        "text": "The seller, paid directly and not through the sponsoring broker"
       }
     ],
     "correctOptionId": "b",
     "explanation": "Salespersons are paid through their sponsoring broker; bypassing the broker violates license law.",
     "distractorExplanations": {
-      "a": "Direct unlicensed fees are improper.",
-      "c": "Secret title bonuses can violate RESPA and ethics rules.",
-      "d": "Broker supervision and compensation rules still apply."
+      "a": "Pays the salesperson from the buyer. A salesperson may be paid only by the sponsoring broker, not by the client.",
+      "c": "Treats a title-company bonus as the salesperson's fee. Compensation has to come from the sponsoring broker.",
+      "d": "Pays the salesperson directly from the seller and around the broker. Compensation has to come from the sponsoring broker."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -157,7 +157,7 @@
     "correctOptionId": "a",
     "explanation": "DOS-issued pocket cards identify licensed status; licensees must be able to show them when practicing.",
     "distractorExplanations": {
-      "b": "NY pocket cards are issued by the Department of State, and the license itself is still kept at the broker's office; the card does not replace it.",
+      "b": "The Department of State issues the pocket card, and the card does not replace the broker license that must be displayed at the office.",
       "c": "Both brokers and salespersons are issued pocket cards in New York and must carry them when acting as licensees.",
       "d": "Ads must identify the brokerage, but no rule requires the pocket card itself to appear in advertisements."
     },
@@ -176,7 +176,7 @@
       },
       {
         "id": "b",
-        "text": "Cannot continue licensed activity under that broker until re-associated"
+        "text": "Cannot work under that broker while its license is suspended or revoked"
       },
       {
         "id": "c",
@@ -188,11 +188,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Salesperson authority depends on association with an active broker; suspension/revocation stops that pathway.",
+    "explanation": "Section 441-d suspends each associated salesperson's license when the sponsoring broker is suspended or revoked. The salesperson cannot keep working under that broker while that license is out. The salesperson's own license is not revoked, and a new exam is not required.",
     "distractorExplanations": {
       "a": "A salesperson's authority depends on an active sponsoring broker; it does not continue until the salesperson's renewal date.",
       "c": "An associate broker cannot step in as sponsor while the principal broker is suspended; salespersons must associate with an active broker.",
-      "d": "The salesperson's license is not revoked; it cannot be used until they associate with a new broker, and no re-exam is required."
+      "d": "Treats the salesperson's license as revoked and adds a new exam. Section 441-d suspends it until a new association or the end of the broker's suspension."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -469,11 +469,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Automatic immunity if the buyer liked the kitchen"
+        "text": "No license consequence once the buyer closes on the property"
       },
       {
         "id": "b",
-        "text": "A required bonus commission from DOS"
+        "text": "A Department of State fine only, with the buyer barred from suing"
       },
       {
         "id": "c",
@@ -481,24 +481,519 @@
       },
       {
         "id": "d",
-        "text": "Exemption from all consumer protection laws"
+        "text": "A civil claim only, with the Department of State unable to discipline the license"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Material misrepresentation can trigger discipline and civil claims; there is no immunity for misleading buyers/sellers.",
     "distractorExplanations": {
-      "a": "Buyer preference does not erase misrepresentation.",
-      "b": "Violations do not earn bonus commissions.",
-      "d": "Consumer protection still applies."
+      "a": "Treats the closing as a waiver. A material misstatement can still bring Department of State discipline after the buyer closes.",
+      "b": "Drops the civil claim and leaves only a fine. Material misrepresentation can support both a lawsuit and a license sanction.",
+      "d": "Drops Department of State discipline. The buyer can sue, and the Department can also sanction the license."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
   },
   {
+    "id": "ny-real-estate-readiness-check-license-law-016",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Maya is inside her first two-year New York salesperson license and is assembling continuing education before she renews. Which mix of hours satisfies that initial term?",
+    "options": [
+      {
+        "id": "a",
+        "text": "22.5 hours, with 2 hours of cultural competency, 2 hours of implicit bias, 2.5 hours of ethics, 1 hour of recent legal matters, 3 hours of fair housing, and 2 hours of agency"
+      },
+      {
+        "id": "b",
+        "text": "22.5 hours, with 2 hours of cultural competency, 2 hours of implicit bias, 2.5 hours of ethics, 1 hour of recent legal matters, 3 hours of fair housing, and 1 hour of agency, as on a later renewal"
+      },
+      {
+        "id": "c",
+        "text": "22.5 hours, with 2 hours of agency, 2 hours of cultural competency, and 2 hours of implicit bias, leaving ethics, fair housing, and recent legal matters for the next term"
+      },
+      {
+        "id": "d",
+        "text": "15 hours of ethics and fair housing, with cultural competency, implicit bias, recent legal matters, and agency deferred to a later renewal"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The initial salesperson term still requires 22.5 hours. Inside that total, cultural competency, implicit bias, ethics, recent legal matters, and fair housing stay mandatory, and the agency slice is 2 hours rather than the 1 hour used at a later renewal. Remaining hours may be electives, but none of those required slices can be dropped.",
+    "distractorExplanations": {
+      "b": "Confuses the first salesperson term with a later renewal, which uses 1 hour of agency rather than 2.",
+      "c": "Drops ethics, fair housing, and recent legal matters, which remain required during the initial term.",
+      "d": "Uses a 15-hour total and postpones required topics; the initial term is 22.5 hours with every required slice."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-017",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Luis finished the 75-hour broker qualifying course during this New York salesperson term and is already past 22.5 continuing-education hours. He asks the broker to apply the surplus to the next renewal. What happens to those extra hours?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They roll forward and reduce the next term's 22.5-hour continuing-education requirement"
+      },
+      {
+        "id": "b",
+        "text": "They stay in this term and do not apply to the next two-year term"
+      },
+      {
+        "id": "c",
+        "text": "The broker course replaces continuing education for the entire following term"
+      },
+      {
+        "id": "d",
+        "text": "Eleven of the extra hours may be banked, and the rest expire at this renewal"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Continuing-education hours count only inside the two-year term in which they are completed. Hours above 22.5, including time left over after the 75-hour broker qualifying course taken this term, do not carry forward and cannot shrink the next term.",
+    "distractorExplanations": {
+      "a": "Confuses a closed two-year term with a rollover balance; surplus hours do not reduce the next 22.5.",
+      "c": "Treats this term's broker course as a substitute for the next term, but hours do not carry across terms.",
+      "d": "Invents a bank of 11 hours; no surplus from this term applies to the following renewal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-018",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "At a brokerage meeting, a lawyer admitted to the New York bar and a broker with 15 years in the business both ask whether this term's 22.5 hours of continuing education apply to them. How should the firm answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both are exempt, the attorney by bar admission and the broker by 15 years of practice"
+      },
+      {
+        "id": "b",
+        "text": "Neither is exempt, because admission to the New York bar no longer removes the hour requirement"
+      },
+      {
+        "id": "c",
+        "text": "The New York attorney is exempt; 15 years of practice do not exempt the broker"
+      },
+      {
+        "id": "d",
+        "text": "The broker is exempt after 15 years, while the New York attorney must still complete 22.5 hours"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An attorney admitted to the New York bar is exempt from the 22.5-hour continuing-education requirement. A broker does not become exempt by length of time in the business. The old 15-year broker exemption is gone.",
+    "distractorExplanations": {
+      "a": "Keeps the attorney exemption and revives the repealed 15-year exemption for brokers.",
+      "b": "Reverses the attorney rule and treats New York bar admission as if that exemption had ended.",
+      "d": "Swaps the two people: longevity does not exempt the broker, and the New York attorney is exempt."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-019",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Priya's New York salesperson license expired yesterday. A buyer wants to see a co-op this afternoon, and Priya plans to mail her renewal next week. May she conduct that showing today?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, for 30 days after expiration, if the renewal papers are already prepared"
+      },
+      {
+        "id": "b",
+        "text": "Yes, through the end of this calendar month, because the license lapsed only yesterday"
+      },
+      {
+        "id": "c",
+        "text": "Yes, if her sponsoring broker is still licensed and attends the showing with her"
+      },
+      {
+        "id": "d",
+        "text": "No. The license has expired, and there is no grace period for showings"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A New York salesperson may not keep working after the license expires. There is no grace period for a showing while a renewal is planned, prepared, or still in the mail.",
+    "distractorExplanations": {
+      "a": "Invents a 30-day grace window; expiration stops licensed work at once, even if renewal papers are ready.",
+      "b": "Confuses a calendar-month courtesy with the rule; yesterday's expiration already ended her authority to show.",
+      "c": "Confuses the broker's active license with Priya's; she still cannot show once her own license has expired."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-020",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Andre's New York salesperson license expired 25 months ago. He offers to finish a continuing-education package if that will revive the old license without another exam. What is the path back to practice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Complete 22.5 hours and renew, because 25 months is still inside the renewal window"
+      },
+      {
+        "id": "b",
+        "text": "Complete 45 hours of continuing education and pay a late fee to reopen the old license"
+      },
+      {
+        "id": "c",
+        "text": "Ask the former sponsoring broker to reactivate the old license without a new exam"
+      },
+      {
+        "id": "d",
+        "text": "Pass the written exam again and file a new application for licensure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "After expiration, a salesperson has two years to renew. At 25 months that window is closed. Andre must pass the written exam again and file a new application. Continuing education is not the route back, and it is not required for that re-entry.",
+    "distractorExplanations": {
+      "a": "Miscounts the renewal window; two years have passed, so 22.5 hours will not renew this license.",
+      "b": "Invents a double-hour late cure; extra continuing education does not reopen a license expired for more than two years.",
+      "c": "Confuses broker sponsorship with re-entry; past two years the written exam and a new application are required."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-021",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Nora's New York salesperson license is still unexpired, and her continuing education is finished. She wants to renew, but no broker is sponsoring her. What is the status of that renewal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She may renew now and add a sponsoring broker after the renewed license is issued"
+      },
+      {
+        "id": "b",
+        "text": "The renewal is refused until the license expires and she passes the salesperson exam again"
+      },
+      {
+        "id": "c",
+        "text": "The renewal is refused until she repeats the full 77-hour salesperson qualifying course"
+      },
+      {
+        "id": "d",
+        "text": "Renewal stays blocked until a New York broker agrees to sponsor her"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Renewal of a New York salesperson license requires a sponsoring broker. Finished continuing education and a license that has not yet expired do not take the place of that sponsorship.",
+    "distractorExplanations": {
+      "a": "Separates renewal from sponsorship; the renewal is not available until a broker sponsors her.",
+      "b": "Confuses a missing sponsor with a license that has been expired for more than two years, which is when a new exam is required.",
+      "c": "Adds another 77-hour course; the missing piece is a sponsoring broker, not a new qualifying program."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-022",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Chris finishes the Department of State salesperson exam, and the screen shows pass. Chris asks the center for a percentage and a topic breakdown to send the sponsoring broker. What does DOS report, and how long does a pass last?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pass or fail only, with no numeric score, and a pass valid for two years"
+      },
+      {
+        "id": "b",
+        "text": "A percentage score, with 70 percent published as the passing line, valid for one year"
+      },
+      {
+        "id": "c",
+        "text": "Pass or fail plus section scores, and the pass expires 90 days after the exam"
+      },
+      {
+        "id": "d",
+        "text": "A numeric score that must reach 75, and that score stays valid for two years"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Department of State reports the salesperson exam as pass or fail only. It does not release a percentage or a topic breakdown. A passing result is valid for two years.",
+    "distractorExplanations": {
+      "b": "Invents a published 70 percent line and a one-year life; DOS reports pass or fail, and a pass lasts two years.",
+      "c": "Adds section scores and a 90-day expiration; the report is pass or fail only, and a pass is good for two years.",
+      "d": "Invents a 75-point cut score; DOS does not report a number, and the pass itself lasts two years."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-023",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "The proctor finishes the instructions and starts the Department of State salesperson exam. A candidate asks when the clock began and whether DOS publishes a percent score needed to pass. Which description is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One and a half hours from the moment the candidate sits down, with 70 percent as the published line"
+      },
+      {
+        "id": "b",
+        "text": "One and a half hours from the end of the instructions, with no published cut score"
+      },
+      {
+        "id": "c",
+        "text": "Two hours for a published set of 75 questions, with 70 percent as the Department of State cut score"
+      },
+      {
+        "id": "d",
+        "text": "Ninety minutes measured from check-in, plus a printed percent that shows the cut line"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The Department of State salesperson exam lasts 1.5 hours, and that clock starts when the instructions end. DOS does not publish a question count or a percent cut score for the exam.",
+    "distractorExplanations": {
+      "a": "Starts the clock at seating and invents a 70 percent cut score; timing starts when the instructions end.",
+      "c": "Invents a 75-question form and a 70 percent line; DOS does not publish either figure.",
+      "d": "Starts the clock at check-in and adds a printed percent; the 1.5 hours begin when the instructions end."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-024",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Sam completed the older 75-hour New York salesperson course years ago and has never been licensed. Sam asks whether the Department of State now requires a new 77-hour program before an application. What course does Sam need?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The full 77-hour salesperson course, because the 75-hour certificate no longer counts"
+      },
+      {
+        "id": "b",
+        "text": "Another 75-hour course followed by the current 77-hour salesperson program"
+      },
+      {
+        "id": "c",
+        "text": "A 2-hour fair housing and/or implicit bias course, not a new 77-hour program"
+      },
+      {
+        "id": "d",
+        "text": "No further qualifying course, because a finished 75-hour certificate needs no update"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Someone who already finished the older 75-hour salesperson course, and who has not been licensed, does not repeat a 77-hour program. The added education is a 2-hour fair housing and/or implicit bias course.",
+    "distractorExplanations": {
+      "a": "Replaces the 2-hour bridge course with a second full 77-hour program, which that 75-hour history does not require.",
+      "b": "Stacks a repeat of the 75-hour course on a 77-hour program; the missing piece is the 2-hour course.",
+      "d": "Treats the old certificate as finished forever and skips the required 2-hour fair housing and/or implicit bias course."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-025",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "A salesperson with an active New Jersey license asks a Manhattan broker to obtain a New York salesperson license by reciprocity so showings can start next month. What is the Department of State's position?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The New Jersey license can be converted without the New York exam or the 77-hour course"
+      },
+      {
+        "id": "b",
+        "text": "Reciprocity covers one year while the salesperson finishes New York qualifying education"
+      },
+      {
+        "id": "c",
+        "text": "Reciprocity is granted once the Manhattan broker signs the sponsorship form"
+      },
+      {
+        "id": "d",
+        "text": "New York has no reciprocity that converts the New Jersey license"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Department of State does not offer salesperson-license reciprocity with another state. A New Jersey salesperson must meet New York's own education, examination, and sponsorship requirements.",
+    "distractorExplanations": {
+      "a": "Assumes a conversion privilege New York does not offer; there is no reciprocity that skips the New York exam and course.",
+      "b": "Invents a one-year reciprocal permit; an out-of-state license does not create a temporary New York license.",
+      "c": "Confuses broker sponsorship with reciprocity; a New York sponsor does not import the New Jersey license."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-026",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Dana passes the school's proctored final at the end of the 77-hour salesperson course and asks whether that final counts as the Department of State licensing exam. What exam requirement is still ahead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "None. The school-proctored final is the state licensing exam"
+      },
+      {
+        "id": "b",
+        "text": "A second school final, which the Department of State then adopts as its own exam"
+      },
+      {
+        "id": "c",
+        "text": "An oral interview at the Department of State in place of a written exam"
+      },
+      {
+        "id": "d",
+        "text": "The Department of State exam; the school final does not replace it"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Qualifying education includes the 77-hour course and the school's proctored exam, and then a separate Department of State exam. Passing the school final does not substitute for the DOS exam.",
+    "distractorExplanations": {
+      "a": "Collapses the school final and the state exam into one event; the Department of State exam is still required.",
+      "b": "Invents a second school final that DOS adopts; the state exam is a separate Department of State exam.",
+      "c": "Substitutes an oral interview for the written Department of State exam, which is not how the license exam is given."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-027",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "Jordan is 18, finished the 77-hour salesperson course, holds a current New York non-driver photo ID, and has a sponsoring broker. A classmate says the application still needs a college degree. Which reading of that file is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jordan still needs a bachelor's degree in business or real estate before filing"
+      },
+      {
+        "id": "b",
+        "text": "The non-driver ID fails, because Jordan must hold a New York driver license"
+      },
+      {
+        "id": "c",
+        "text": "Jordan must turn 21 before the course, the photo ID, and the sponsor can support an application"
+      },
+      {
+        "id": "d",
+        "text": "No college degree is required; those are the licensing ingredients"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A New York salesperson applicant must be 18, hold a current New York photo driver license or non-driver ID, complete the qualifying course, and have a sponsoring broker. A college degree is not an added requirement, and the non-driver photo ID counts.",
+    "distractorExplanations": {
+      "a": "Adds a college degree the Department of State does not require on a salesperson application.",
+      "b": "Confuses the photo-ID rule; a current New York non-driver ID meets the identification requirement.",
+      "c": "Raises the minimum age from 18 to 21; an 18-year-old meets the age ingredient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-028",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "On Friday a broker gives an unlicensed assistant three weekend jobs: booking showing times, running Sunday's open house with no licensee on site, and calling the seller to negotiate a price cut. Which job may the assistant do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Schedule the showing appointments for the licensed salesperson"
+      },
+      {
+        "id": "b",
+        "text": "Host Sunday's open house alone and answer visitors' questions about price"
+      },
+      {
+        "id": "c",
+        "text": "Call the seller and negotiate the price cut while the licensee is away"
+      },
+      {
+        "id": "d",
+        "text": "Host the open house alone and negotiate the price cut with the seller"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An unlicensed assistant may schedule appointments. Hosting an open house with no licensee present, and negotiating a price with the seller, are licensed activities and stay with the licensee.",
+    "distractorExplanations": {
+      "b": "Confuses scheduling with licensed work; an assistant may not host an open house alone or discuss price.",
+      "c": "Assigns a price negotiation to an unlicensed assistant, who may book appointments but may not bargain on price.",
+      "d": "Combines an unsupervised open house with a price negotiation, both of which go beyond scheduling."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-029",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "A salesperson sponsored by Harbor Realty wants to pay a salesperson at a second firm, out of pocket, for introducing a Queens buyer. The seller is not paying that fee. How must the referral compensation move?",
+    "options": [
+      {
+        "id": "a",
+        "text": "From the Harbor salesperson's own account straight to the other salesperson"
+      },
+      {
+        "id": "b",
+        "text": "Through the brokers, not from one salesperson to the other"
+      },
+      {
+        "id": "c",
+        "text": "From the seller directly to the cooperating salesperson"
+      },
+      {
+        "id": "d",
+        "text": "Between the two salespersons if both brokers approve the amount in a text message"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A salesperson is compensated by the sponsoring broker, not by another salesperson and not by the client. A referral between two firms has to move through the brokers.",
+    "distractorExplanations": {
+      "a": "Pays one salesperson directly from another; that personal payment is not allowed for a referral fee.",
+      "c": "Takes the fee from the client; compensation comes through the sponsoring broker, not from the seller directly.",
+      "d": "Treats a text from the brokers as permission for a salesperson-to-salesperson payment, which still must go through the brokers."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-license-law-030",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "license-law",
+    "prompt": "A salesperson posts a Brooklyn condo on Instagram with the price, three photos, and the salesperson's own name and cell number. The broker's name never appears. What is wrong with the post?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, once the caption adds the salesperson's license number"
+      },
+      {
+        "id": "b",
+        "text": "Nothing, because an accurate price makes the social-media post lawful"
+      },
+      {
+        "id": "c",
+        "text": "It is a blind ad because the broker's identity is missing"
+      },
+      {
+        "id": "d",
+        "text": "The defect is the missing headshot, rather than the missing broker name"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A blind ad hides the broker. An Instagram listing that shows the salesperson's name and phone number, and leaves the broker's identity out, is a blind ad.",
+    "distractorExplanations": {
+      "a": "Treats a license number as a stand-in for the broker; the post is still a blind ad if the broker is not identified.",
+      "b": "Confuses an accurate price with a lawful ad; social media still has to identify the broker.",
+      "d": "Blames a missing headshot; the defect is the hidden broker, which makes the post a blind ad."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
     "id": "ny-real-estate-readiness-check-contracts-agency-001",
     "examSlug": "ny-real-estate-readiness-check",
     "topicId": "contracts-agency",
-    "prompt": "In a single agency relationship representing the seller, the licensee's fiduciary duties are owed primarily to:",
+    "prompt": "A licensee in Albany holds the owner's listing and has no agreement with any buyer. At the open house a visitor asks how far under the asking price to bid. Fiduciary duties in this relationship run primarily to:",
     "options": [
       {
         "id": "a",
@@ -514,7 +1009,7 @@
       },
       {
         "id": "d",
-        "text": "Any passerby at the open house"
+        "text": "The visitor who asked for bidding advice, because the question creates a client relationship"
       }
     ],
     "correctOptionId": "a",
@@ -522,7 +1017,7 @@
     "distractorExplanations": {
       "b": "Lenders are not the agency client in seller agency.",
       "c": "Title companies are closing parties, not the agency principal.",
-      "d": "Open-house visitors are not automatic clients."
+      "d": "Confuses a customer question with a client relationship. Asking for bid advice at an open house does not make the visitor the person owed fiduciary duties."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -568,11 +1063,11 @@
     "options": [
       {
         "id": "a",
-        "text": "A handshake with no terms ever"
+        "text": "Notarization of the signatures and recording with the county clerk, which by themselves form the sales contract"
       },
       {
         "id": "b",
-        "text": "Only a verbal price with no parties identified"
+        "text": "An oral price and closing date between the named parties, because a New York house sale does not have to be signed"
       },
       {
         "id": "c",
@@ -580,15 +1075,15 @@
       },
       {
         "id": "d",
-        "text": "A social media like on the listing photo"
+        "text": "The buyer's mortgage commitment standing in the place of consideration between the seller and the buyer"
       }
     ],
     "correctOptionId": "c",
     "explanation": "Contracts require the classic elements plus applicable writing requirements under the Statute of Frauds.",
     "distractorExplanations": {
-      "a": "Vague handshakes lack enforceable terms.",
-      "b": "Parties and essential terms must be identifiable.",
-      "d": "Likes are not acceptances of contract terms."
+      "a": "Confuses deed formalities with formation. Notarizing a sales contract or recording it does not create the parties' agreement.",
+      "b": "Confuses a spoken price with an enforceable sale. New York requires a signed writing for a contract to sell real property.",
+      "d": "Confuses the buyer's financing with consideration. The sales contract needs an exchange between the seller and the buyer, not a loan commitment."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
@@ -988,6 +1483,501 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-016",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "During a price negotiation in Saratoga Springs, a listing salesperson and a colleague in the same firm who is assisting the buyer realize the brokerage would be on both sides. Neither the seller nor the buyer has been told that, and neither has consented. The buyer says to keep going because nobody objected. What should the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop representing both until each party gives informed written consent to dual agency."
+      },
+      {
+        "id": "b",
+        "text": "Continue the negotiation, because silence from both parties is consent to dual agency."
+      },
+      {
+        "id": "c",
+        "text": "Tell the seller and not the buyer, because the listing agreement already authorizes the firm to act for both sides."
+      },
+      {
+        "id": "d",
+        "text": "Appoint one salesperson for each party and skip consent, because designation replaces dual agency."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "New York allows one brokerage to represent both the seller and the buyer only after each of them gives informed written consent to dual agency. That consent means they were told the firm cannot give either side undivided loyalty, and they agreed. A request to keep going because nobody objected is not consent, so the firm has to stop acting for both until the consent is actually given.",
+    "distractorExplanations": {
+      "b": "Confuses silence with informed consent. Dual agency does not begin because the parties failed to object.",
+      "c": "A listing agreement does not authorize representation of the buyer. Consent from the seller alone leaves the buyer uninformed.",
+      "d": "Designated sales agents still require dual agency. Naming one salesperson per side does not replace both parties' informed written consent."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-017",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A listing broker in Utica engages a different brokerage, through a cooperation agreement, to host an open house for a listed house. The seller is not a party to that agreement and did not hire the open-house firm. A visitor insists that firm is the seller's subagent and that the seller is its client. Which description of the firm's role is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The seller's subagent, so fiduciary duties run directly from this firm to the seller."
+      },
+      {
+        "id": "b",
+        "text": "A broker's agent of the listing broker, with no direct agency with the seller."
+      },
+      {
+        "id": "c",
+        "text": "The visitor's buyer agent, because opening the door for the public creates buyer agency."
+      },
+      {
+        "id": "d",
+        "text": "A dual agent of the seller and the visitor, because two brokerages are involved with the house."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A broker's agent is engaged by the listing broker to assist that broker with the seller's listing. The cooperating firm does not work for the seller and has no direct agency relationship with the seller. The seller is not this firm's client, and calling the firm a subagent does not match the agreement that was signed.",
+    "distractorExplanations": {
+      "a": "Confuses a broker's agent with a seller's subagent. This firm was engaged by the listing broker and has no direct agency with the seller.",
+      "c": "Hosting an open house under a listing-side cooperation agreement does not make the firm the visitor's buyer agent.",
+      "d": "Two brokerages on one house are not dual agency. Dual agency means one firm represents both parties, which is not this agreement."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-018",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "An owner in New Paltz signs an exclusive-agency listing and keeps the right to sell without brokerage help. A coworker who never called the firm, never attended a showing, and heard about the move only at work agrees to buy. No other broker took part. What fee does the listing broker earn on these facts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A full commission, because an exclusive agency pays the broker even when the owner finds the buyer."
+      },
+      {
+        "id": "b",
+        "text": "Every firm that printed the listing gets paid, because an exclusive agency is treated as an open listing."
+      },
+      {
+        "id": "c",
+        "text": "No commission, because the owner found the buyer with no broker help."
+      },
+      {
+        "id": "d",
+        "text": "The owner must cancel the sale, because an exclusive agency forbids the owner to find the buyer."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under an exclusive-agency listing the owner may sell and owe no commission when the owner finds the buyer with no broker help. The coworker never came through the brokerage, so no commission is due. An exclusive right to sell would still pay the listing broker, and this listing is not that form.",
+    "distractorExplanations": {
+      "a": "Confuses exclusive agency with an exclusive right to sell, which pays the broker even when the owner finds the buyer.",
+      "b": "Confuses exclusive agency with an open listing. Other firms are not paid because they printed a listing sheet.",
+      "d": "An exclusive agency does not bar the owner from selling. It sets the commission, and on these facts none is due."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-019",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A seller in Binghamton gives Harbor Realty and Ridge Realty separate open listings on the same house. Harbor showed it to a couple who never made an offer. Ridge brought a different buyer, whom the seller accepted at the listed price, and that buyer had never dealt with Harbor. Who earns the fee?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both firms, because each held an open listing on the same house."
+      },
+      {
+        "id": "b",
+        "text": "Harbor Realty, because it was the first brokerage to show the house to anyone."
+      },
+      {
+        "id": "c",
+        "text": "Neither firm, because an open listing does not obligate the seller to pay a commission."
+      },
+      {
+        "id": "d",
+        "text": "Ridge Realty earns the fee, because it procured the ready buyer the seller accepted."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An open listing pays the broker who procures a ready buyer on the seller's terms. Ridge brought the buyer the seller accepted. Harbor's earlier showing was to a different couple who never offered, so Harbor is not the procuring cause and does not share the fee.",
+    "distractorExplanations": {
+      "a": "Confuses an open listing with a shared entitlement. Holding an open listing does not earn a fee without procuring the buyer.",
+      "b": "Showing the house first is not procuring cause when those prospects never offered and another firm brought the accepted buyer.",
+      "c": "An open listing does create a commission. It is earned by the broker who procures the buyer, which Ridge did here."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-020",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A landlord and a tenant in Troy shake hands on a two-year residential lease, settle the rent and a June 1 start, and never sign a lease or any other paper. The tenant asks whether that oral agreement satisfies the statute of frauds. What follows from these facts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It does not satisfy the statute, because a lease longer than one year must be in writing."
+      },
+      {
+        "id": "b",
+        "text": "It does. A stated rent and a handshake satisfy the statute for a New York residential lease of this length."
+      },
+      {
+        "id": "c",
+        "text": "It does. The statute of frauds covers deeds and sale contracts, not residential leases of any length."
+      },
+      {
+        "id": "d",
+        "text": "It does. The writing rule begins at leases longer than three years, so this two-year term may be oral."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "New York's statute of frauds requires a lease longer than one year to be in writing and signed by the party to be charged. This handshake is a two-year term and nothing was signed, so the statute is not satisfied. A lease of one year or less can be oral, and that is not the term these parties agreed to.",
+    "distractorExplanations": {
+      "b": "A handshake and a stated rent do not satisfy the statute of frauds for a residential lease longer than one year.",
+      "c": "The statute is not limited to deeds and sale contracts. A residential lease longer than one year also has to be in writing.",
+      "d": "The writing line is one year, not three. A two-year residential lease is already past the point where an oral lease is enough."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-021",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A buyer moving from Hoboken is reading a New York contract for a house in Rockland County. The contract has no attorney-approval clause. The buyer says a three-business-day right to cancel for a lawyer still applies, because every state gives that right. What is true of the claimed cancel right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "New York statute gives every residential buyer three business days after signing to cancel for attorney review, even when the contract never mentions it."
+      },
+      {
+        "id": "b",
+        "text": "New York gives no automatic three-day cancel right unless this contract includes the clause."
+      },
+      {
+        "id": "c",
+        "text": "The New Jersey period travels with the buyer, so the three business days apply to this Rockland house even though the contract is silent."
+      },
+      {
+        "id": "d",
+        "text": "The three days began at the first showing, so the buyer may still walk away before the lawyers meet on this contract."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "New York has no statewide statute that gives a buyer three business days to cancel a contract for attorney review. The buyer is remembering New Jersey practice. In New York that cancel right exists only when the contract itself contains an attorney-approval clause, and this contract does not.",
+    "distractorExplanations": {
+      "a": "Imports a statutory three-day attorney-review period that New York does not have. A silent contract does not create that cancel right.",
+      "c": "The buyer's New Jersey experience does not attach to a New York contract. The attorney-approval clause has to be in this contract.",
+      "d": "No attorney-review period starts at the first showing. Without the clause, this contract does not grant that cancel right."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-022",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "The buyer and the salesperson meet for the first time at the first showing of a specific house in Colonie. Before any offer, the buyer asks who the salesperson works for. No agency disclosure form has been given. The salesperson suggests saving the form for the purchase-contract signing. When is that disclosure due?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the contract signing, which is when New York first requires the agency disclosure form."
+      },
+      {
+        "id": "b",
+        "text": "Not on these facts, because a question during a showing is too casual to trigger the form."
+      },
+      {
+        "id": "c",
+        "text": "Now. This showing is first substantive contact, so the form is due before any contract."
+      },
+      {
+        "id": "d",
+        "text": "After the deed is recorded, when the brokerage mails its closing file to each party."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "New York requires the agency disclosure form at the first substantive contact, not at the contract signing. The first showing of a specific house, with the buyer asking whom the salesperson represents, is that contact. Waiting for the purchase contract leaves the buyer without the agency role when it matters.",
+    "distractorExplanations": {
+      "a": "Confuses the deadline with the contract signing. The form is due at first substantive contact, and this showing is already that contact.",
+      "b": "A question about whom the salesperson represents, asked at a first showing of a specific house, is substantive contact, not a casual aside.",
+      "d": "Disclosure after the deed is recorded is too late. The form is given at first substantive contact, before the buyer relies on the agency role."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-023",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "The landlord of a 20-unit building in Yonkers tells the salesperson to reject an applicant who meets the posted income, credit, and rental-history standards. The only stated reason is that a housing voucher would pay part of the rent. The landlord says federal fair housing never listed vouchers. What should the salesperson do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow the instruction, because the federal Fair Housing Act does not list source of income."
+      },
+      {
+        "id": "b",
+        "text": "Hand the rejection to the sponsoring broker, because the salesperson's duty ends once the broker decides."
+      },
+      {
+        "id": "c",
+        "text": "Accept the applicant, but add a voucher surcharge that other tenants in the building are not charged."
+      },
+      {
+        "id": "d",
+        "text": "Refuse the rejection. New York protects lawful source of income, including this voucher."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "New York's Human Rights Law prohibits housing discrimination based on lawful source of income. A housing voucher is that kind of income, even though the federal Fair Housing Act does not list it. The applicant already meets the landlord's other standards, so the salesperson must not carry out a rejection based on the voucher.",
+    "distractorExplanations": {
+      "a": "Confuses the federal Fair Housing Act with New York law. Federal silence on vouchers does not make a source-of-income refusal lawful in New York.",
+      "b": "Passing the rejection to the sponsoring broker does not erase the duty. The salesperson still may not assist a refusal based on lawful source of income.",
+      "c": "A surcharge charged because of the voucher is different treatment based on lawful source of income, which New York also prohibits."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-024",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A family shopping in Syracuse mentions the house of worship they attend. They had asked to see houses in several neighborhoods. After that comment, the salesperson books showings in one neighborhood, cancels the others, and says the family will be more comfortable there. The family did not ask for a narrower search. What is this conduct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steering, because the showings were limited after the family mentioned their religion."
+      },
+      {
+        "id": "b",
+        "text": "Blockbusting, because owners were urged to sell before new neighbors arrived on the block."
+      },
+      {
+        "id": "c",
+        "text": "Redlining, because a lender refused to finance the neighborhoods the salesperson cancelled."
+      },
+      {
+        "id": "d",
+        "text": "Ordinary matching, because a mention of worship lets the salesperson choose the block."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Steering is directing buyers toward or away from neighborhoods because of a protected class. Religion is protected under fair housing law. The family asked to see several areas, and the salesperson cut that list after they mentioned a house of worship. A comfort comment does not justify limiting the search.",
+    "distractorExplanations": {
+      "b": "Confuses steering with blockbusting. Blockbusting pushes owners to sell. This salesperson limited a buyer family's showings.",
+      "c": "Confuses steering with redlining. No lender refused a loan. The limitation was the salesperson's showing list.",
+      "d": "A mention of a house of worship does not authorize dropping neighborhoods the family asked to see. That limitation is steering."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-025",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "Going door to door in a White Plains subdivision, a salesperson tells owners to list this month, before people of a particular national origin move onto the block and prices drop. Those owners had not been planning to sell. What is this pitch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steering, because buyers are being sent toward one school zone and away from another."
+      },
+      {
+        "id": "b",
+        "text": "Blockbusting, because it uses a group's arrival to push owners to list."
+      },
+      {
+        "id": "c",
+        "text": "A lawful market update, because owners are entitled to hear which nearby houses have sold."
+      },
+      {
+        "id": "d",
+        "text": "Redlining, because the salesperson is mapping streets where lenders will refuse loans."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Blockbusting, also called panic peddling, induces owners to sell by claiming that people of a protected class are moving in and values will fall. National origin is a protected class. These owners were not planning to sell, and the pitch is built to scare them into listing.",
+    "distractorExplanations": {
+      "a": "Confuses blockbusting with steering. Steering channels buyers among neighborhoods. This pitch is aimed at owners and urges them to list.",
+      "c": "A report of nearby sold prices is not this pitch. Telling owners to list because a national-origin group is arriving is blockbusting.",
+      "d": "Confuses blockbusting with redlining. Redlining is a lending practice. This is a salesperson inducing listings from owners."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-026",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "At an open house in Kingston, the listing salesperson represents the seller and nobody else. A visitor who has not hired the firm asks the salesperson to keep the visitor's top price secret from the seller and to coach how far under the list price to bid. What does the salesperson owe this visitor?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The same loyalty, obedience, and confidentiality owed to the seller, who is the client."
+      },
+      {
+        "id": "b",
+        "text": "Nothing beyond a polite tour, because fairness duties start after a buyer-agency agreement is signed."
+      },
+      {
+        "id": "c",
+        "text": "Honesty and fair dealing, including known material facts, not fiduciary loyalty."
+      },
+      {
+        "id": "d",
+        "text": "Confidential treatment of the visitor's top price, which becomes a client secret as soon as it is spoken at the open house."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "This visitor is a customer, not a client. The salesperson owes honesty, fair dealing, and disclosure of known material facts about the house. Fiduciary loyalty and confidentiality run to the seller. The salesperson does not owe this visitor the advocacy or price secrecy that a buyer's agent owes a client.",
+    "distractorExplanations": {
+      "a": "Confuses a customer with a client. Loyalty, obedience, and confidentiality are fiduciary duties owed to the seller, not to this visitor.",
+      "b": "A customer is still owed honesty and fair dealing. Those duties do not wait until someone signs a buyer-agency agreement.",
+      "d": "Treats the visitor as a client. A salesperson does not owe a customer confidentiality for a bargaining number told at the seller's open house."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-027",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "The seller lives in a one-family house in Glen Cove that is not new construction. A binding contract is planned for November 2026. The seller's side wants to skip the property condition disclosure statement and give the buyer a $500 credit at closing, calling that the standing New York choice. What is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip the statement and give the $500 credit at closing, which is still the lawful alternative on a one-family sale."
+      },
+      {
+        "id": "b",
+        "text": "Skip the statement if the contract says the house is sold as is, because that clause replaces the disclosure."
+      },
+      {
+        "id": "c",
+        "text": "Deliver the statement after the buyer's home inspector submits a written report, and not before."
+      },
+      {
+        "id": "d",
+        "text": "Deliver the property condition disclosure statement before the buyer signs. The $500 credit is not a substitute."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "On a covered one-to-four family sale, the seller delivers the property condition disclosure statement before the buyer signs a binding contract. As of March 20, 2024, a $500 credit no longer stands in place of that statement. Selling as is does not remove the delivery requirement on this house.",
+    "distractorExplanations": {
+      "a": "Uses the repealed $500 credit. For a contract after March 20, 2024, that credit is not a substitute for the disclosure statement.",
+      "b": "An as-is clause can allocate condition risk between the parties. It does not take the place of the property condition disclosure statement.",
+      "c": "The statement is due before the buyer signs the binding contract, not after an inspector delivers a report."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-028",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "Before any contract is signed, the seller of a house in Cattaraugus County tells the salesperson that an uncapped natural gas well sits on the parcel and asks whether the buyer has to be told. The seller knows the well is there. What does New York require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inform the buyer of the uncapped well before a contract of sale is signed."
+      },
+      {
+        "id": "b",
+        "text": "Nothing further about the well, because gas wells are an assessor record and not a seller disclosure."
+      },
+      {
+        "id": "c",
+        "text": "Inform the buyer if a water test is ordered and that test fails, and otherwise leave the well unmentioned."
+      },
+      {
+        "id": "d",
+        "text": "Wait until the deed is recorded, then describe the well on a town certificate the buyer can request."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Section 242 of the Real Property Law requires a seller who knows that an uncapped natural gas well is on the property to inform the buyer before they enter a contract. This seller already has that knowledge. The section does not set a Department of State form number, and telling the buyer after the deed is too late.",
+    "distractorExplanations": {
+      "b": "Treats the well as an assessor matter and skips the seller's duty. Section 242 requires the buyer to be informed before the contract.",
+      "c": "A failed water test is not the trigger. Knowledge of the uncapped well itself requires disclosure before the contract is signed.",
+      "d": "Moves the disclosure to after recording and adds a town certificate the statute does not require. Section 242 also sets no form number."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-029",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "A salesperson has two houses going to contract, one built in 1966 and one built in 1995. The owner of the 1995 house wants the federal lead-based paint packet placed in that file too, so the paperwork matches the older house. Which sale requires that federal disclosure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 1995 house, because every New York resale uses the federal lead packet no matter the year built."
+      },
+      {
+        "id": "b",
+        "text": "Both houses, because the federal cutoff is the year 2000 and the 1995 house falls on the covered side of it."
+      },
+      {
+        "id": "c",
+        "text": "Neither house, because the federal lead disclosure ended for all sales once residential lead paint was banned."
+      },
+      {
+        "id": "d",
+        "text": "The 1966 house, because federal lead disclosure covers housing built before 1978."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Federal lead-based paint disclosure applies to target housing built before 1978. The 1966 house is in that group, so the federal packet applies to that sale. A house built in 1995 is outside the cutoff, and matching the files does not pull the newer house into that federal duty.",
+    "distractorExplanations": {
+      "a": "Applies the federal lead packet to the 1995 house. That house was built after 1977, so it is not target housing under the federal rule.",
+      "b": "Uses the year 2000 as the line. Federal lead-based paint disclosure covers housing built before 1978, not every house built before 2000.",
+      "c": "The later ban on lead paint did not end the disclosure duty. Sales of housing built before 1978 still require the federal disclosure."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-contracts-agency-030",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "contracts-agency",
+    "prompt": "The seller of a colonial in Poughkeepsie tells the listing salesperson that the basement leaked during last April's rain, the sill stained, and the sump pump ran for two days. The seller then says to tell buyers the basement is dry and to pull those photos from the file. What must the salesperson do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow the seller, because obedience to the client controls how the basement may be described to buyers."
+      },
+      {
+        "id": "b",
+        "text": "Say nothing about the leak unless a home inspector writes it into a report the buyer paid for."
+      },
+      {
+        "id": "c",
+        "text": "Describe the basement as dry for now, and correct that description if the buyer later threatens a claim."
+      },
+      {
+        "id": "d",
+        "text": "Disclose the known leak to buyers, and do not call the basement dry or hide the photos."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The leak the seller described is a known material physical defect. Telling buyers the basement is dry, and pulling the photos, would conceal it. Obedience to a client does not include misrepresentation, so the salesperson has to disclose the leak and refuse to hide it.",
+    "distractorExplanations": {
+      "a": "Confuses fiduciary obedience with permission to conceal. A client's instruction does not allow a salesperson to hide a known leak.",
+      "b": "Leaves the known leak to the inspector. The salesperson already knows about the water and may not stay silent while the photos are removed.",
+      "c": "Calling the basement dry is the concealment the seller requested. A correction after a threatened claim does not make that description acceptable."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
   },
   {
     "id": "ny-real-estate-readiness-check-finance-valuation-001",
@@ -1485,6 +2475,501 @@
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
   },
   {
+    "id": "ny-real-estate-readiness-check-finance-valuation-016",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "At a Westchester closing, the buyer asks the salesperson to quote 'the' New York mortgage recording tax percent, expecting one rate for the whole state. What should the salesperson say?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is no single statewide percent; the rate depends on the locality."
+      },
+      {
+        "id": "b",
+        "text": "Use the same percent in Westchester that is charged in every other New York county."
+      },
+      {
+        "id": "c",
+        "text": "Tell the buyer New York does not collect a mortgage recording tax on this loan."
+      },
+      {
+        "id": "d",
+        "text": "Read the percent from the promissory note, because the lender sets the recording tax."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "New York does charge a mortgage recording tax when a mortgage is recorded, but the rate is local. A Westchester closing does not have one statewide percent the salesperson can quote as 'the' rate, and the note's interest rate is a different number.",
+    "distractorExplanations": {
+      "b": "Confuses a locality-based recording tax with a single rate charged in every New York county.",
+      "c": "Confuses a tax that still exists with a repeal; New York still taxes the recording of a mortgage.",
+      "d": "Mixes the lender's note rate with the mortgage recording tax, which follows the locality."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-017",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "A one-family house in New York is under contract for $1,150,000. The buyer asks whether the state's mansion tax can apply to this residential sale. What is the accurate answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It cannot apply, because a one-family house must sell for $2 million before that tax starts."
+      },
+      {
+        "id": "b",
+        "text": "It can apply, because this residential price is at least $1 million."
+      },
+      {
+        "id": "c",
+        "text": "It cannot apply, because the mansion tax is limited to multi-family buildings."
+      },
+      {
+        "id": "d",
+        "text": "It applies here only if the buyer finances the purchase with a new mortgage."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The mansion tax can apply to a residential conveyance when the price is $1 million or more. This one-family house is $1,150,000, and $1,150,000 is above $1,000,000, so the tax can apply. That comparison is the point; no rate bracket is quoted.",
+    "distractorExplanations": {
+      "a": "Confuses the $1 million residential threshold with a $2 million starting point for a house.",
+      "c": "Confuses a tax that can apply to a one-family house with a multi-family-only charge.",
+      "d": "Mixes the mansion tax on the sale price with a mortgage tax that would depend on new financing."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-018",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "A buyer asks what New York's STAR program does for the house and wants both a dollar savings figure and the income cap. What can the salesperson say without making up those numbers?",
+    "options": [
+      {
+        "id": "a",
+        "text": "STAR lowers the mortgage interest rate by a statewide discount the lender must give."
+      },
+      {
+        "id": "b",
+        "text": "STAR is a down-payment grant, so the buyer should budget a set cash award at closing."
+      },
+      {
+        "id": "c",
+        "text": "STAR relates to school taxes; no savings amount or income cap is quoted here."
+      },
+      {
+        "id": "d",
+        "text": "STAR removes the town tax and the county tax as well as the school bill."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "STAR is school-tax relief. It is not a cut in the mortgage rate, a down-payment grant, or a removal of town and county taxes. A salesperson can say that it relates to school taxes and should not invent a savings amount or an income cap.",
+    "distractorExplanations": {
+      "a": "Confuses STAR school-tax relief with a required discount on the mortgage interest rate.",
+      "b": "Confuses STAR with a down-payment grant and invents a cash award at closing.",
+      "d": "Confuses relief aimed at school taxes with wiping out the town and county tax bills too."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-019",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "A town assessment roll shows a house at $240,000, and the town's equalization rate is 60%. The buyer treats the $240,000 assessment as the market price. What does the rate indicate about full value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The market price is the $240,000 assessment, and 60% is only last year's ratio of sales."
+      },
+      {
+        "id": "b",
+        "text": "Estimated full value is $144,000, because $240,000 times 0.60 reduces the assessment."
+      },
+      {
+        "id": "c",
+        "text": "Estimated full value is $384,000, because 60% of the assessment is added to $240,000."
+      },
+      {
+        "id": "d",
+        "text": "Estimated full value is $400,000, which is $240,000 divided by 0.60."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The equalization rate is assessed value as a share of full value, so estimated full value is the assessment divided by the rate: $240,000 ÷ 0.60 = $400,000. The $240,000 figure is the assessment, not the market price.",
+    "distractorExplanations": {
+      "a": "Treats the assessed value as the market price and misreads the equalization rate as a sales statistic.",
+      "b": "Multiplies by the rate ($240,000 × 0.60 = $144,000) instead of dividing to move toward full value.",
+      "c": "Adds 60% ($240,000 × 0.60 = $144,000; $240,000 + $144,000 = $384,000) instead of dividing by 0.60."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-020",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "Annual property taxes are $7,200. Earlier installments are paid; the month of closing is unpaid and in arrears. Closing is on the 10th of that 30-day month. The contract uses a 360-day year and charges the seller through the day of closing. What prorated credit results?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The buyer is credited $200."
+      },
+      {
+        "id": "b",
+        "text": "The seller is credited $200 because the month's taxes were treated as already prepaid."
+      },
+      {
+        "id": "c",
+        "text": "The buyer is credited $7,000, which is the annual tax minus the ten-day share."
+      },
+      {
+        "id": "d",
+        "text": "The buyer is credited $20, the daily rate, with no multiplication for the ten days."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The daily rate is the annual tax divided by a 360-day year: $7,200 ÷ 360 = $20. The seller is charged for 10 days through closing, and 10 × $20 = $200. The month is unpaid and in arrears, so that $200 is a credit to the buyer.",
+    "distractorExplanations": {
+      "b": "Confuses taxes in arrears, which credit the buyer, with prepaid taxes that would credit the seller.",
+      "c": "Subtracts the ten-day share from the whole year ($7,200 − $200 = $7,000) instead of crediting only $200.",
+      "d": "Stops at the daily rate of $20 and never multiplies by the 10 days the seller is charged."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-021",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "On the buyer's new mortgage, the lender charges a loan origination fee and also discount points. The buyer asks whether those two amounts are the same prepaid-interest line. How do the charges differ?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They do not differ: the origination fee is another discount point and is prepaid interest too."
+      },
+      {
+        "id": "b",
+        "text": "The point is prepaid interest; the origination fee is a separate charge."
+      },
+      {
+        "id": "c",
+        "text": "The origination fee is the prepaid interest, and the discount point is a recording tax."
+      },
+      {
+        "id": "d",
+        "text": "Both lines are the mortgage recording tax, collected twice under two different names."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A discount point is prepaid interest paid to the lender in connection with the note rate. A loan origination fee is the lender's charge for making the loan. Both can appear at closing, and they are not the same line.",
+    "distractorExplanations": {
+      "a": "Treats the origination fee as another discount point, so both lines look like prepaid interest.",
+      "c": "Swaps the charges, calling the origination fee prepaid interest and the point a recording tax.",
+      "d": "Confuses both lender charges with the mortgage recording tax, which is a separate tax."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-022",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "A borrower with a new FHA loan expects the monthly mortgage insurance to fall off automatically at 78% of value, 'the same way PMI does.' What should the salesperson correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing, because FHA mortgage insurance cancels automatically at 78%, just like PMI."
+      },
+      {
+        "id": "b",
+        "text": "FHA loans do not charge monthly mortgage insurance, so the 78% idea does not come up."
+      },
+      {
+        "id": "c",
+        "text": "FHA mortgage insurance is not conventional PMI and does not cancel at 78% that way."
+      },
+      {
+        "id": "d",
+        "text": "The 78% cancellation belongs to FHA loans, while conventional PMI runs for the life of the loan."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Automatic termination around 78% of the original value is a conventional PMI rule for eligible borrower-paid mortgage insurance. FHA mortgage insurance is a different product and should not be described as falling off at 78% the way PMI can.",
+    "distractorExplanations": {
+      "a": "Treats FHA mortgage insurance as conventional PMI that cancels automatically at 78%.",
+      "b": "Confuses an FHA loan that has mortgage insurance with a loan that has none.",
+      "d": "Reverses the products, putting 78% cancellation on FHA and a life-of-loan premium on PMI."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-023",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "After finishing a comparative market analysis, the salesperson tells the buyer, 'This price is the appraisal, so the lender has to use it.' The buyer is ready to rely on that sentence. What is wrong with the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing is wrong, because a salesperson's CMA is a licensed appraisal the lender must accept."
+      },
+      {
+        "id": "b",
+        "text": "The claim fails only because the salesperson has not signed the CMA; the signature would make it the appraisal."
+      },
+      {
+        "id": "c",
+        "text": "The price is a valid appraisal, but the real job of a CMA is to set the property tax assessment."
+      },
+      {
+        "id": "d",
+        "text": "A CMA is not an appraisal, and the lender does not have to use it."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A comparative market analysis is a licensee's price opinion drawn from comparable sales. It is not an appraisal prepared by a licensed appraiser, and a lender does not have to lend on the salesperson's CMA.",
+    "distractorExplanations": {
+      "a": "Confuses a salesperson's CMA with a licensed appraisal the lender is required to accept.",
+      "b": "Confuses the salesperson's signature on a CMA with the credential that makes a report an appraisal.",
+      "c": "Misreads the error: the claim fails because a CMA is not an appraisal, not because it sets the assessment."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-024",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The seller has signed the deed, but the seller's attorney is still holding it and will not release it until the buyer's wire arrives. The buyer asks whether title has already passed by that signature. What is the status?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delivery has not happened, so title has not passed."
+      },
+      {
+        "id": "b",
+        "text": "Signing delivered the deed; the attorney is holding only a copy for the file."
+      },
+      {
+        "id": "c",
+        "text": "Title passed because the deed left the seller's hands and sits in the attorney's file."
+      },
+      {
+        "id": "d",
+        "text": "Title passed when the deed was signed in the attorney's office, which counts as recording."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A signed deed passes title when it is delivered with intent to transfer and is accepted. The seller's attorney is still holding this deed until the wire arrives, so the grantor has not given up control. Delivery has not happened.",
+    "distractorExplanations": {
+      "b": "Confuses signing, or holding a file copy, with delivery of the deed that passes title.",
+      "c": "Confuses the seller's own attorney holding the deed with delivery out of the seller's control.",
+      "d": "Confuses signing in an office, and recording, with delivery and acceptance of the deed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-025",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The lender is buying a loan policy of title insurance on the purchase mortgage. The buyer asks whether that policy also protects the buyer's equity if a title defect shows up later. What coverage is still missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing is missing; the loan policy already insures the buyer's equity up to the purchase price."
+      },
+      {
+        "id": "b",
+        "text": "The loan policy protects the lender; the buyer needs an owner's policy."
+      },
+      {
+        "id": "c",
+        "text": "An owner's policy protects the lender, so buying one would duplicate the loan policy."
+      },
+      {
+        "id": "d",
+        "text": "Neither policy covers a title defect; both insure only the accuracy of the survey."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A loan policy insures the lender's mortgage lien, generally up to the loan amount. It does not insure the buyer's equity. The buyer needs an owner's title policy for that protection. The two policies insure different people.",
+    "distractorExplanations": {
+      "a": "Confuses the lender's loan policy with coverage of the buyer's equity up to the purchase price.",
+      "c": "Swaps the insured parties, treating an owner's policy as protection for the lender.",
+      "d": "Confuses title insurance with survey coverage and drops both the loan policy and the owner's policy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-026",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The purchase is financed with a covered mortgage. The buyer is handed the Closing Disclosure for the first time on the morning of consummation and asks to close that afternoon. Is that timing enough?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes. A same-day first look is enough if the buyer signs the disclosure before the wire goes out."
+      },
+      {
+        "id": "b",
+        "text": "No. The three days start after consummation, so closing this afternoon still meets the rule."
+      },
+      {
+        "id": "c",
+        "text": "No. The buyer must have the Closing Disclosure three business days before consummation."
+      },
+      {
+        "id": "d",
+        "text": "Yes. New York's attorney-review period replaces that federal wait and allows a same-day closing."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "On a closed-end mortgage covered by the TILA-RESPA disclosure rule, the borrower must receive the Closing Disclosure at least three business days before consummation. A first look on the morning of closing is not that wait. New York does not replace it with a statewide attorney-review period.",
+    "distractorExplanations": {
+      "a": "Treats a same-day first look as enough and skips the three-business-day wait before consummation.",
+      "b": "Puts the three days after consummation instead of requiring the disclosure three business days before.",
+      "d": "Confuses the Closing Disclosure wait with a statewide New York attorney-review period that does not exist."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-027",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The buyer will take over the monthly payments on the seller's existing mortgage, and the lender is not releasing the seller from the note. The seller asks if this sale removes that liability. What is the arrangement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A subject-to sale; the seller stays on the note."
+      },
+      {
+        "id": "b",
+        "text": "An assumption with a release, so the seller is off the note once the buyer takes over payments."
+      },
+      {
+        "id": "c",
+        "text": "A satisfaction of the mortgage, because taking over the payments pays the note off at closing."
+      },
+      {
+        "id": "d",
+        "text": "A land contract, under which the seller stays liable and also keeps the deed until the end."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When the buyer takes title subject to the existing mortgage, the buyer pays the debt but the seller remains liable on the note unless the lender gives a release. An assumption paired with a release is the different arrangement, and this lender is not giving one.",
+    "distractorExplanations": {
+      "b": "Confuses a subject-to takeover with an assumption plus a release that would remove the seller from the note.",
+      "c": "Confuses remaining on the note with a satisfaction that would pay the mortgage off at closing.",
+      "d": "Confuses subject-to financing with a land contract, in which the seller also keeps title until the end."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-028",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The buyer has moved in and is making the monthly payments, but the contract says the seller keeps legal title until the last payment. The buyer asks for the deed today. What does the buyer actually hold?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Legal title already, because possession plus payments is the same thing as a delivered deed."
+      },
+      {
+        "id": "b",
+        "text": "Shares in a cooperative and a proprietary lease, because the delayed deed is how a co-op closes."
+      },
+      {
+        "id": "c",
+        "text": "Possession under a land contract; the buyer does not have a deed yet."
+      },
+      {
+        "id": "d",
+        "text": "The deed already, with the seller retaining only a mortgage lien until the last payment."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under a land contract the buyer is in possession and pays over time while the seller keeps legal title until the final payment. The buyer has a contract right to receive the deed later, not a deed today.",
+    "distractorExplanations": {
+      "a": "Confuses possession and monthly payments with delivery of a deed that would pass legal title now.",
+      "b": "Confuses a land contract with a cooperative purchase of shares and a proprietary lease.",
+      "d": "Confuses a land contract with seller financing in which the buyer already has the deed and the seller keeps a lien."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-029",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "The contract price is $400,000 and the appraisal is $380,000. The lender will lend 80% of the appraised value, not of the contract price. Before other closing costs, what loan and how much cash does the buyer need to cover the price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A $320,000 loan and $80,000 cash, from 80% of the $400,000 contract price."
+      },
+      {
+        "id": "b",
+        "text": "A $380,000 loan and $20,000 cash, because the lender funds the entire appraisal."
+      },
+      {
+        "id": "c",
+        "text": "A $304,000 loan and $76,000 cash, which is 20% of the $380,000 appraisal."
+      },
+      {
+        "id": "d",
+        "text": "A $304,000 loan and $96,000 cash toward the $400,000 price."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The lender uses the appraisal: 0.80 × $380,000 = $304,000. The contract price is still $400,000, so cash to cover that price, before other closing costs, is $400,000 − $304,000 = $96,000. The extra $20,000 above a 20% appraisal down payment is the gap between price and appraisal.",
+    "distractorExplanations": {
+      "a": "Uses 80% of the contract price (0.80 × $400,000 = $320,000) instead of 80% of the $380,000 appraisal.",
+      "b": "Lends the full $380,000 appraisal and leaves only the $20,000 gap, ignoring the 80% loan limit.",
+      "c": "Stops at 20% of the appraisal ($76,000) and leaves out the extra $20,000 between the $400,000 price and the $380,000 appraisal."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-finance-valuation-030",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "finance-valuation",
+    "prompt": "A special assessment for a new sidewalk shows up on the tax bill for a house under contract. The buyer asks whether that charge is the general property-tax levy that funds the schools and the town. What is the sidewalk line?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The school-tax levy, because a sidewalk charge on this bill is how the school district is funded."
+      },
+      {
+        "id": "b",
+        "text": "The town's ordinary property tax, with the sidewalk name used for the general operating levy."
+      },
+      {
+        "id": "c",
+        "text": "A STAR school-tax credit that the town bills as a sidewalk item on the same statement."
+      },
+      {
+        "id": "d",
+        "text": "A charge for the sidewalk improvement, not the general school and town levy."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A special assessment charges properties that benefit from a particular public improvement, here a new sidewalk. It is not the general property-tax levy that funds schools and town operations, and it is not a STAR school-tax credit.",
+    "distractorExplanations": {
+      "a": "Confuses a sidewalk special assessment with the general levy that funds the schools.",
+      "b": "Confuses a charge for one improvement with the town's ordinary property-tax levy.",
+      "c": "Confuses a special assessment on the tax bill with a STAR credit related to school taxes."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
     "id": "ny-real-estate-readiness-check-property-practice-001",
     "examSlug": "ny-real-estate-readiness-check",
     "topicId": "property-practice",
@@ -1640,11 +3125,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Variances grant relief from strict zoning application in specific hardship cases. It is granted for unnecessary hardship (standards vary).",
+    "explanation": "A variance lets one parcel depart from a zoning requirement. In a New York town that relief is not one test: a use variance requires unnecessary hardship, and an area variance is a balancing test.",
     "distractorExplanations": {
       "b": "Changing a parcel's zoning district is a rezoning (spot zoning if singled out), not relief from one requirement.",
-      "c": "That is a nonconforming use (grandfathered); a variance grants relief from a requirement due to hardship.",
-      "d": "That is a special use (conditional use) permit; a variance deviates from the code because of hardship."
+      "c": "That is a nonconforming use, a use that was lawful before the zoning changed. A variance permits a departure from a current zoning rule.",
+      "d": "That is a special-use permit for a use the code already allows with approval. A variance permits a departure the code does not allow as of right."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2). · Local short-stem expansion"
@@ -1978,5 +3463,500 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 2)."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-016",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A buyer in Queens submits a complete board package for a cooperative apartment. The board rejects the purchaser. The buyer had expected to receive a deed to the apartment at closing. What was the buyer purchasing, and may the board stop the sale?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shares and a proprietary lease, and the board may reject the package"
+      },
+      {
+        "id": "b",
+        "text": "A unit deed that the board must honor once the package is complete"
+      },
+      {
+        "id": "c",
+        "text": "Fee simple title that passes when the lender issues a loan commitment"
+      },
+      {
+        "id": "d",
+        "text": "A mortgage on the whole building, which the board cannot refuse after review"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A New York cooperative purchaser buys shares in the apartment corporation and receives a proprietary lease. No unit deed is delivered. The board may reject a complete package and stop the sale, and that decision is still subject to fair housing law.",
+    "distractorExplanations": {
+      "b": "Confuses a cooperative with a condominium, where the buyer takes a deed, and treats a finished package as something the board must accept.",
+      "c": "Confuses the cooperative purchase with fee simple ownership and treats a loan commitment as the transfer of title.",
+      "d": "Confuses the shares and proprietary lease with a mortgage lien on the building, which is not the interest this package was seeking."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-017",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "Two buyers on the same Brooklyn block are comparing carrying costs. One is buying a condominium unit. The other is buying a cooperative apartment. How does each form of ownership handle the real estate taxes on the home?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The co-op shareholder is billed separately, and condo taxes sit in the common charges"
+      },
+      {
+        "id": "b",
+        "text": "The condo owner is billed separately, and co-op taxes sit inside maintenance"
+      },
+      {
+        "id": "c",
+        "text": "Each buyer receives a separate tax bill for that buyer's own apartment"
+      },
+      {
+        "id": "d",
+        "text": "Neither buyer is billed, because each building's sponsor pays the taxes indefinitely"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A condominium unit owner holds a deed and is billed for that unit's real estate taxes. A cooperative shareholder does not receive a separate unit tax bill. The corporation's real estate taxes are paid through maintenance.",
+    "distractorExplanations": {
+      "a": "Swaps the two forms: cooperative building taxes are collected inside maintenance, while the condominium owner is billed for the unit.",
+      "c": "Treats the cooperative shareholder like a condominium owner who receives an individual real estate tax bill.",
+      "d": "Confuses ongoing ownership taxes with the sponsor's role in an offering. The sponsor does not keep either owner off the tax burden."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-018",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A utility company holds a recorded right to keep power lines across a vacant lot in Albany County. The owner of the house next door sells that house and tells the buyer the utility right transfers with the house. What is the utility's right, and does it follow the neighboring house?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An appurtenant easement that transfers with the neighboring house"
+      },
+      {
+        "id": "b",
+        "text": "A license that ends automatically when the vacant lot is sold to someone else"
+      },
+      {
+        "id": "c",
+        "text": "An easement in gross, with no dominant estate on the next-door house"
+      },
+      {
+        "id": "d",
+        "text": "A profit that lets the neighboring buyer remove timber from the vacant lot"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An easement in gross benefits a person or a company, such as a utility, rather than a neighboring parcel. There is no dominant estate, so the recorded right stays with the utility and does not transfer with the house next door.",
+    "distractorExplanations": {
+      "a": "Confuses an easement in gross with an easement appurtenant, which needs a dominant estate that the right can follow when that parcel is sold.",
+      "b": "Confuses a recorded utility easement with a license. A license is revocable permission and is not the interest the utility recorded against the lot.",
+      "d": "Confuses an easement with a profit. A profit is a right to remove something from the land, not a right to keep power lines in place."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-019",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "An owner in Rochester conveyed a life estate in the family house to a parent and kept the reversion. The parent lives there. The owner now wants to sell so a buyer can move in at once and end the parent's occupancy. What can the owner convey?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The parent's present occupancy, because keeping the reversion lets the owner cancel it"
+      },
+      {
+        "id": "b",
+        "text": "Nothing at all, because a life estate and a reversion cannot exist in one house"
+      },
+      {
+        "id": "c",
+        "text": "A joint tenancy with the parent, because the deed put both of them on title"
+      },
+      {
+        "id": "d",
+        "text": "The reversion alone, while the parent keeps the present life estate"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The parent holds the present right to live in the house for life. The owner retained a reversion, the future interest left in the grantor. A remainder would have been created in someone else. Selling the reversion does not let a buyer end the parent's life estate.",
+    "distractorExplanations": {
+      "a": "Confuses the reversion with power to cancel the life estate. Keeping the future interest does not let the owner sell the parent's present right.",
+      "b": "Confuses two successive interests with an impossible split. A life estate and a reversion can exist in the same house at the same time.",
+      "c": "Confuses a life estate followed by a reversion with a joint tenancy. These facts did not create survivorship co-ownership."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-020",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A married couple in Westchester took title to their house as tenants by the entirety. The divorce is final, the judgment does not award the house to either spouse, and neither spouse has died. How do the former spouses hold title?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As tenants in common, so the survivorship form has ended"
+      },
+      {
+        "id": "b",
+        "text": "As tenants by the entirety until one of the former spouses dies"
+      },
+      {
+        "id": "c",
+        "text": "As joint tenants, so the right of survivorship continues after the divorce"
+      },
+      {
+        "id": "d",
+        "text": "In the sole name of the spouse who remained living in the house"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tenancy by the entirety exists only while the owners are married, and it carries survivorship. Divorce ends that form. When the judgment does not give the house to one spouse, they hold as tenants in common and survivorship does not continue.",
+    "distractorExplanations": {
+      "b": "Confuses the marriage requirement with a right that lasts until death. Divorce ends a tenancy by the entirety even though both former spouses are alive.",
+      "c": "Confuses the post-divorce result with a joint tenancy. Survivorship does not carry forward once the tenancy by the entirety ends.",
+      "d": "Confuses divorce with an award of the house. This judgment does not put title in one spouse's sole name."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-021",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A pizza-shop tenant in Syracuse bolted a commercial oven to the floor for the business and will patch the bolt holes before the lease ends. The building owner had already installed a built-in chandelier in the dining room. Which item can the tenant remove as a trade fixture?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both the oven and the chandelier, because each one is attached to the building"
+      },
+      {
+        "id": "b",
+        "text": "The bolted oven, which the tenant installed for the business"
+      },
+      {
+        "id": "c",
+        "text": "Neither item, because anything bolted or built in must stay with the property"
+      },
+      {
+        "id": "d",
+        "text": "The chandelier, because the owner attached it more permanently than the oven"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A trade fixture is an item a tenant installs for business use. The tenant may remove it before the lease ends if the tenant repairs the damage, so the bolted oven can go. The owner's chandelier was installed as part of the real estate and stays.",
+    "distractorExplanations": {
+      "a": "Confuses the owner's chandelier with a trade fixture. Attachment alone does not make the owner's dining-room fixture removable by the tenant.",
+      "c": "Confuses a trade fixture with a permanent improvement and ignores the tenant's removal of the business oven if the bolt holes are repaired.",
+      "d": "Swaps the two items. The chandelier is the owner's fixture, while the oven is the tenant's trade fixture."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-022",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A homeowner in a New York town wants to open a retail store in a house on a lot zoned only for residences. A neighbor, by contrast, needs relief because a side yard is slightly smaller than the schedule allows. Which approval does the store require, and what standard applies?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An area variance, decided under the town's balancing test"
+      },
+      {
+        "id": "b",
+        "text": "A special-use permit that the zoning board issues as of right"
+      },
+      {
+        "id": "c",
+        "text": "A use variance, tested by the town under unnecessary hardship"
+      },
+      {
+        "id": "d",
+        "text": "No zoning-board approval, because the store would be a nonconforming use"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Putting a store on a lot limited to homes is a change of use, so the owner needs a use variance. In a New York town the use-variance standard is unnecessary hardship. The slightly small side yard is a different case: an area variance under a balancing test.",
+    "distractorExplanations": {
+      "a": "Confuses the store with the side-yard request. A small yard is an area variance decided by a balancing test, not a change from residential use to retail.",
+      "b": "Confuses a use variance with a special-use permit and treats the board's decision as an approval the owner can demand as of right.",
+      "d": "Confuses a new store the zoning does not allow with a nonconforming use, which is a use that was already legal before the district changed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-023",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A warehouse in a Hudson Valley town was lawfully built and used while the district allowed industry. The town later rezoned the district residential. The owner has not enlarged the building and wants to keep the same warehouse use. What is the status of that existing use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The owner must obtain a use variance before the warehouse may continue"
+      },
+      {
+        "id": "b",
+        "text": "The rezoning shut the warehouse, so the industrial use has to stop"
+      },
+      {
+        "id": "c",
+        "text": "The warehouse is now a conforming home use even though the building did not change"
+      },
+      {
+        "id": "d",
+        "text": "That existing use may continue as a legal nonconforming use"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A use that was legal when it began, and that a later zoning change prohibits, may continue as a nonconforming use. The owner does not have to request a variance merely to keep that same existing use.",
+    "distractorExplanations": {
+      "a": "Confuses a legal nonconforming use with a use variance. A variance is permission for a use that was not already lawfully established.",
+      "b": "Treats the rezoning as an automatic shutdown. A previously lawful use does not have to stop merely because the district label changed.",
+      "c": "Confuses continuation of the industrial use with the building becoming residential just because the new district is residential."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-024",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "An owner in Buffalo carved a separate apartment out of a basement. The original house has an old building permit, but the new apartment has no certificate of occupancy, and a renter is ready to move in. May the owner treat that new apartment as legal to occupy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The original building permit already makes the new basement apartment legal to occupy"
+      },
+      {
+        "id": "b",
+        "text": "The new apartment is not legal to occupy without a certificate of occupancy"
+      },
+      {
+        "id": "c",
+        "text": "A certificate of occupancy applies to a store or office, so this apartment may be occupied"
+      },
+      {
+        "id": "d",
+        "text": "The renter's signed lease authorizes occupancy in place of a certificate of occupancy"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A new dwelling unit is not legal to occupy until a certificate of occupancy allows that occupancy. The building permit issued for the original house does not authorize people to live in a basement apartment created later.",
+    "distractorExplanations": {
+      "a": "Confuses the original building permit with occupancy approval for a separate dwelling unit carved out of the basement later.",
+      "c": "Confuses a residential occupancy requirement with a commercial-only rule. A new apartment still needs a certificate of occupancy.",
+      "d": "Confuses a private lease with the public certificate that makes a new dwelling unit legal to occupy."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-025",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A buyer plans to build a house on a Suffolk County lot that lies inside a mapped state wetland. The town is ready to issue a building permit for the house. Does that town permit take the place of the state's wetlands approval?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The town building permit is the wetlands approval this mapped lot needs"
+      },
+      {
+        "id": "b",
+        "text": "State wetlands review waits until after the new house has been occupied"
+      },
+      {
+        "id": "c",
+        "text": "The town permit does not replace the required state wetlands approval"
+      },
+      {
+        "id": "d",
+        "text": "A Phase I environmental report waives the separate state wetlands approval"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A lot inside a mapped state wetland needs the state's wetlands approval before the regulated work proceeds. A town building permit is a local approval. It does not stand in for that state approval.",
+    "distractorExplanations": {
+      "a": "Confuses the town's building permit with the separate state approval required because the lot is in a mapped wetland.",
+      "b": "Confuses the timing of wetlands review by putting it off until occupancy, after the work the permit would allow.",
+      "d": "Confuses a Phase I environmental report with a waiver. The report does not replace state wetlands approval for a mapped wetland."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-026",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A house in a New York village has a market value of $250,000 and an assessed value of $150,000. The village property-tax rate is $24 per $1,000 of assessed value. What is the annual property tax on this house?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The annual tax is $3,600"
+      },
+      {
+        "id": "b",
+        "text": "The annual tax is $36,000"
+      },
+      {
+        "id": "c",
+        "text": "The annual tax is $360"
+      },
+      {
+        "id": "d",
+        "text": "The annual tax is $6,000"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The tax uses assessed value, not the $250,000 market value. Divide the assessment by 1,000 and multiply by the rate: 150,000 ÷ 1,000 = 150, and 150 × 24 = 3,600. The annual property tax is $3,600.",
+    "distractorExplanations": {
+      "b": "Drops the per-thousand step and treats $24 as 24 percent of the assessment: 150,000 × 0.24 = 36,000.",
+      "c": "Divides the assessment by 10,000 instead of 1,000, so 15 × 24 = 360, which is one-tenth of the tax.",
+      "d": "Uses the $250,000 market value in place of the assessment: 250,000 ÷ 1,000 = 250, and 250 × 24 = 6,000."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-027",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A town builds a new sidewalk and bills only the owners whose lots front that sidewalk. One owner asks whether this charge is the same town-wide property tax that every parcel in the town pays. What is the sidewalk charge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The ordinary town-wide property tax, spread across every parcel"
+      },
+      {
+        "id": "b",
+        "text": "A reassessment that changes the assessed value of every house in the town"
+      },
+      {
+        "id": "c",
+        "text": "A voluntary town fee the abutting owner may decline and still keep the sidewalk"
+      },
+      {
+        "id": "d",
+        "text": "A special assessment charged to the owners along the sidewalk"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A special assessment pays for a local improvement and is charged to the owners who abut it, such as the lots along a new sidewalk. It is not the general property tax spread across every parcel in the town.",
+    "distractorExplanations": {
+      "a": "Confuses a sidewalk special assessment with the general property tax, which is levied town-wide rather than limited to the abutting lots.",
+      "b": "Confuses a one-time improvement charge with a reassessment. This bill does not, by itself, reset assessed values throughout the town.",
+      "c": "Confuses a mandatory special assessment with a voluntary fee the abutting owner could decline and still keep the sidewalk."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-028",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "A neighbor in Dutchess County tells the owner next door, \"You can cross my yard whenever you want.\" Nothing is written, signed, or recorded, and the neighbor later takes the permission back. What did that oral statement create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An easement appurtenant that still runs with both lots"
+      },
+      {
+        "id": "b",
+        "text": "An easement in gross that the neighbor is not free to revoke"
+      },
+      {
+        "id": "c",
+        "text": "A license the neighbor may revoke, not an easement"
+      },
+      {
+        "id": "d",
+        "text": "A prescriptive easement arising from that single grant of permission"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Spoken permission to cross a yard, never put in writing or recorded, is a license. The neighbor may revoke it. A license does not create an easement, which would be an interest in the land.",
+    "distractorExplanations": {
+      "a": "Confuses spoken permission with an easement appurtenant. That easement is an interest in land and is not created by this unwritten, unrecorded statement.",
+      "b": "Confuses a license with an easement in gross and treats the neighbor's oral permission as a right the neighbor cannot take back.",
+      "d": "Confuses one permitted crossing with a prescriptive easement, which depends on long adverse use rather than permission from the owner."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-029",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "To widen a public road, a city acquires a strip of an owner's front yard and pays the owner for that strip. The owner keeps the rest of the lot and asks whether this is simply a zoning change that lowered value but left possession unchanged. Which power did the city use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A zoning change, treated as a taking because the strip lost value"
+      },
+      {
+        "id": "b",
+        "text": "Adverse possession, completed when the widened road opens to traffic"
+      },
+      {
+        "id": "c",
+        "text": "An area variance the owner must file in order to give up the strip"
+      },
+      {
+        "id": "d",
+        "text": "Eminent domain, taking the strip for just compensation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The city is taking a strip of private land for a public road and paying the owner. That is eminent domain, and the payment is just compensation. A zoning change that only lowers value, without this acquisition, is not the event on these facts.",
+    "distractorExplanations": {
+      "a": "Confuses the city's acquisition of the strip with a zoning change. A drop in value from zoning is not, by itself, this taking of the front yard.",
+      "b": "Confuses a paid government taking with adverse possession, which is a claim based on long hostile occupancy rather than a road widening.",
+      "c": "Confuses eminent domain with an area variance. A variance is relief an owner seeks from a zoning board, not the city's acquisition of the strip."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
+  },
+  {
+    "id": "ny-real-estate-readiness-check-property-practice-030",
+    "examSlug": "ny-real-estate-readiness-check",
+    "topicId": "property-practice",
+    "prompt": "At a closing in Nassau County, the seller delivers a deed that conveys the house \"together with all right, title, and interest.\" The deed contains no covenants, and the seller will not promise that the title is good. Which deed is the seller giving?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A full covenant and warranty deed that promises the title is good"
+      },
+      {
+        "id": "b",
+        "text": "A quitclaim deed for whatever interest the grantor has"
+      },
+      {
+        "id": "c",
+        "text": "A bargain and sale deed with a covenant against the grantor's own acts"
+      },
+      {
+        "id": "d",
+        "text": "A referee's deed given after a court-ordered sale of the house"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A quitclaim deed conveys whatever right, title, and interest the grantor has and includes none of the title warranties in a full covenant and warranty deed. Granting language limited to all right, title, and interest, with no promise that title is good, is quitclaim language.",
+    "distractorExplanations": {
+      "a": "Confuses a quitclaim with a full covenant and warranty deed, which carries covenants that the title is good against defects.",
+      "c": "Confuses a quitclaim with a bargain and sale deed that still includes a covenant against the grantor's own acts.",
+      "d": "Confuses the lack of a title promise with a referee's deed, which is used for a court-ordered sale rather than this seller's refusal to warrant title."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item. Checked against the NY DOS salesperson pages on 2026-11-02. Not a DOS item."
   }
 ]
