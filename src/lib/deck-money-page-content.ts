@@ -820,7 +820,7 @@ export const positioningOverrides: Partial<
       "State-specific traps DRE actually writes — not relabeled US trivia",
     ],
     summaryProse:
-      "California DRE fails candidates on agency relationships and disclosure timing — not generic real estate trivia. Four hundred CA-only cards plus a 60-question mock (free 25-question version) beat a national Quizlet pack with a California sticker before you buy a full Aceable-style course.",
+      "California DRE fails candidates on agency relationships and disclosure timing — not generic real estate trivia. Two hundred fifty California cards plus a 60-question mock from a 120-item bank (free 25-question version) beat a national Quizlet pack with a California sticker before you buy a full Aceable-style course.",
   },
   "bench-energy-metal-trader-anki-deck": {
     ourEdge: [
@@ -2515,13 +2515,13 @@ Candidates swap parametric vs historical VaR, mis-state delta-gamma approximatio
 
   "california-real-estate-exam-anki-deck": `### What is inside
 
-400 prompts across DRE salesperson topics: property ownership, land use, agency law, fiduciary duties, contracts, financing, transfers, disclosures (transfer disclosure statement, agency disclosure), and practice-of-real-estate regulations. Math cards cover prorations, commission splits, and loan-to-value setups.
+250 cards across DRE salesperson topics: property ownership, land use, agency law, fiduciary duties, contracts, financing, transfers, disclosures (transfer disclosure statement, agency disclosure), and practice-of-real-estate regulations. Each card states the rule, a California example, and the mistake candidates make.
 
 ### Plan with the free CA mock
 
 Complete pre-license coursework first, then 20 cards/day. Run the free California practice test at 30 days out; concentrate on agency and disclosure cards if those domains score lowest. California-specific disclosure timing is repeated more than national decks cover.
 
-Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state exam — no separate national portion). Our mock is a **60-question** diagnostic (free 25-question version) — not a 1,500-question course Q-bank.
+Official DRE salesperson exam is **150 questions / 3 hours / 70%** (one state exam — no separate national portion). Our mock is **60 questions / 90 minutes from a 120-item bank** (free 25-question version) — not a 1,500-question course Q-bank.
 
 ### Pitfalls this deck targets
 

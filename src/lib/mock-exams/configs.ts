@@ -414,21 +414,23 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     },
     topics: [
-      { id: "ca-practice", label: "Real Estate Practice and Disclosures", weightPercent: 25, targetPercent: 70 },
-      { id: "ca-agency", label: "Agency and Fiduciary Duties", weightPercent: 17, targetPercent: 70 },
-      { id: "ca-ownership", label: "Ownership, Land Use, and Property Rights", weightPercent: 15, targetPercent: 70 },
-      { id: "ca-valuation", label: "Valuation and Market Analysis", weightPercent: 14, targetPercent: 70 },
-      { id: "ca-contracts", label: "Contracts", weightPercent: 12, targetPercent: 70 },
-      { id: "ca-financing", label: "Financing", weightPercent: 9, targetPercent: 70 },
-      { id: "ca-transfer", label: "Transfer of Property", weightPercent: 8, targetPercent: 70 },
+      { id: "ca-practice", label: "Real Estate Practice and Disclosures", questionCount: 15, weightPercent: 25, targetPercent: 70 },
+      { id: "ca-agency", label: "Agency and Fiduciary Duties", questionCount: 10, weightPercent: 17, targetPercent: 70 },
+      { id: "ca-ownership", label: "Ownership, Land Use, and Property Rights", questionCount: 9, weightPercent: 15, targetPercent: 70 },
+      { id: "ca-valuation", label: "Valuation and Market Analysis", questionCount: 8, weightPercent: 14, targetPercent: 70 },
+      { id: "ca-contracts", label: "Contracts", questionCount: 7, weightPercent: 12, targetPercent: 70 },
+      { id: "ca-financing", label: "Financing", questionCount: 6, weightPercent: 9, targetPercent: 70 },
+      { id: "ca-transfer", label: "Transfer of Property", questionCount: 5, weightPercent: 8, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check sampled from the California Real Estate deck. Not official California DRE exam material.",
+      "California DRE salesperson exam (dre.ca.gov/Examinees/TakingExam.html and RE 425 Rev. 6/25, checked 2026-11-03): 150 multiple-choice questions, 3 hours, 70% to pass. RE 425 weights are about 15% ownership, 17% agency, 14% valuation, 9% financing, 8% transfer, 25% practice, and 12% contracts. This check is 60 questions / 90 minutes from a 120-item bank. The 70% line is our readiness target. Not a DRE exam.",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions. Each session is still 60 questions / 90 minutes and draws 15 practice, 10 agency, 9 ownership, 8 valuation, 7 contracts, 6 financing, and 5 transfer.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question California real estate licensing readiness diagnostic built from UniPrep2Go deck content.",
+      "A 60-question / 90-minute California salesperson readiness check (free first 25) from a 120-item bank. The DRE exam is 150 questions, 3 hours, and 70%.",
     examBody: "California DRE",
-    lastUpdated: "2026-09-29",
+    lastUpdated: "2026-11-03",
   },
   {
     slug: "life-and-health-insurance-readiness-check",

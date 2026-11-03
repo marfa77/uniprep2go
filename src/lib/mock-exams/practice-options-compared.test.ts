@@ -39,6 +39,18 @@ describe("getPracticeOptionsCompared", () => {
     expect(table!.sources.some((s) => s.url.includes("ptcb.org/official-ptcb-practice-tools"))).toBe(true);
   });
 
+  it("returns a Series 7 table from pages checked 2026-11-03", () => {
+    const table = getPracticeOptionsCompared("series-7-readiness-check");
+    expect(table).not.toBeNull();
+    expect(table!.checkedDate).toBe("2026-11-03");
+    expect(table!.rows.some((r) => r.name.includes("Series 7 practice test") && /60 questions/.test(r.format))).toBe(
+      true,
+    );
+    expect(table!.rows.some((r) => /Achievable/.test(r.name) && /125 questions/.test(r.format))).toBe(true);
+    expect(table!.rows.some((r) => /Kaplan/.test(r.name) && /\$139/.test(r.access))).toBe(true);
+    expect(table!.sources.some((s) => s.url.includes("Series_7_Content_Outline.pdf"))).toBe(true);
+  });
+
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });

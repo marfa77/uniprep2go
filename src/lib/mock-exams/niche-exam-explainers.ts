@@ -1781,7 +1781,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "The California real estate salesperson exam is the state licensing knowledge test administered under the California Department of Real Estate (DRE) after required education. It covers practice and disclosures, agency, ownership and land use, valuation, contracts, financing, and transfer of property. Passing is required before DRE can issue a salesperson license. Confirm current outlines, education, and scheduling on official DRE materials.",
     administeredBy: "California Department of Real Estate (DRE)",
     officialFormat:
-      "Timed multiple-choice licensing exam; confirm current question count and cut score with California DRE.",
+      "DRE salesperson exam: 150 multiple-choice questions, 3 hours, 70% to pass (dre.ca.gov, checked 2026-11-03). This page is 60 questions / 90 minutes from a 120-item bank. The 70% line here is a readiness target.",
     whoFor:
       "California salesperson candidates who completed required pre-license education and need a timed diagnostic before the official DRE exam.",
     howToPrepare:
@@ -1804,7 +1804,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is this the official California DRE exam?",
         answer:
-          "No. UniPrep2Go provides independent timed practice only.",
+          "No. This is a 60-question / 90-minute readiness check drawn from a 120-item bank. The DRE salesperson exam is 150 questions in 3 hours. Not DRE material.",
       },
       {
         question: "Do I need education before the California exam?",

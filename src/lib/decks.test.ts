@@ -322,9 +322,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(californiaRealEstateDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "A listing agent meets a Fresno homeowner to sign a listing; weeks later a buyer's agent writes an offer. When must each agent deliver the agency relationship disclosure form?",
-      "A Sacramento seller hands the buyer the Transfer Disclosure Statement two days after the buyer's offer was accepted. The house is sold 'as-is.' What right does the buyer have?",
-      "Lena buys a Los Angeles condo for $800,000 in 2025. Ignoring voter-approved bonds and assessments, what is her basic property tax, and the most her assessed value can be the next year?",
+      "A broker closes a sale in March 2026. How long must the transaction file and trust records be kept, and when does the clock start?",
+      "A buyer's agent reviews the preliminary title report and sees no mention of an old lien. Can the buyer rely on the prelim as a guarantee of clean title?",
+      "A licensee prints new business cards and launches a personal website. What identification must appear on these first point of contact materials?",
     ]);
   });
 

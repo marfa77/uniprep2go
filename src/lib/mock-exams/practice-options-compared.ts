@@ -268,6 +268,65 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "series-7-readiness-check": {
+    mockSlug: "series-7-readiness-check",
+    examLabel: "FINRA Series 7",
+    heading: "Free Series 7 practice options compared",
+    checkedDate: "2026-11-03",
+    lead:
+      "The official Series 7 is 130 questions (125 scored plus 5 unscored) in 3 hours 45 minutes, with an equated passing score of 72 and a $395 FINRA fee. UniPrep2Go is the shorter free diagnostic: 25 questions with no signup, then 60 timed questions and job-function scores. Not FINRA material.",
+    rows: [
+      {
+        name: "UniPrep2Go Series 7 practice test",
+        href: "/mock-exams/series-7-readiness-check",
+        format: "25 free, no signup; full timed mock 60 questions / 90 minutes with job-function scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic drawn from a 120-item bank. Shorter than the 130-question sitting. Readiness target is 72.",
+      },
+      {
+        name: "Achievable — free Series 7 practice exam",
+        href: "https://achievable.me/exams/finra-series-7/free-practice-exam/",
+        format: "125 questions, 3 hours 45 minutes, explanations after each answer",
+        access: "Free, no price on the exam page (checked 2026-11-03)",
+        notes:
+          "Matches the 125 scored items and the official clock. A candidate also sees 5 unscored pretest items, which this free exam does not add.",
+      },
+      {
+        name: "Kaplan — Series 7 packages",
+        href: "https://www.kaplanfinancial.com/securities/series-7",
+        format: "A Practice Exam that can be taken once, plus a SecuritiesPro QBank that builds exams of a length the candidate chooses",
+        access: "Paid packages $139–$309, 5 months of online access (Kaplan page, checked 2026-11-03)",
+        notes: "Kaplan does not publish how many questions are in that one-time Practice Exam.",
+      },
+      {
+        name: "FINRA — Series 7 content outline",
+        href: "https://www.finra.org/sites/default/files/2025-10/Series_7_Content_Outline.pdf",
+        format: "Official map: 125 scored items across four functions, plus 5 unscored pretest items (130 on screen), 3 hours 45 minutes",
+        access: "Free PDF",
+        notes:
+          "Study map, not a quiz. Passing score on the FINRA exam page is 72, equated, not a raw percent. Fee on that page is $395. SIE is a corequisite.",
+      },
+    ],
+    sources: [
+      {
+        label: "FINRA — Series 7 exam",
+        url: "https://www.finra.org/registration-exams-ce/qualification-exams/series7",
+      },
+      {
+        label: "FINRA — Series 7 content outline (October 2025)",
+        url: "https://www.finra.org/sites/default/files/2025-10/Series_7_Content_Outline.pdf",
+      },
+      {
+        label: "Achievable — free Series 7 practice exam",
+        url: "https://achievable.me/exams/finra-series-7/free-practice-exam/",
+      },
+      {
+        label: "Kaplan — Series 7 exam prep",
+        url: "https://www.kaplanfinancial.com/securities/series-7",
+      },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(

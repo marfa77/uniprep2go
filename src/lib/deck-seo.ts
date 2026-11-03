@@ -908,7 +908,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "California Real Estate Salesperson Anki — 250 DRE Cards + Free Mock",
     studyLabel: "California real estate exam prep",
     description:
-      "Best California DRE salesperson Anki: 250 CA-only cards (agency, disclosures, contracts, math) + 60-question CA practice test (free 25-question version). Beats national Quizlet/Aceable packs with a California sticker. Not official DRE material.",
+      "Best California DRE salesperson Anki: 250 CA-only cards (agency, disclosures, contracts, math) plus a 60-question practice test from a 120-item bank (free 25-question version). Official exam is 150 questions in 3 hours. Not official DRE material.",
     keywords: [
       "best california real estate anki deck",
       "california real estate anki deck",
@@ -918,7 +918,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "dre exam study guide",
     ],
     intro:
-      "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Four hundred state-specific cards plus a 60-question CA mock (free 25-question version) beat a Quizlet national dump before you buy a full Aceable-style course.",
+      "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Two hundred fifty state-specific cards plus a 60-question mock from a 120-item bank (free 25-question version) beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
     title: "Life & Health Insurance Prep 2026 | 250 Cards + Mock",

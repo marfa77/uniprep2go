@@ -1057,10 +1057,10 @@ const rawDecks: Deck[] = [
     title: "California Real Estate Exam Anki Deck — 250 High-Yield Flashcards",
     shortName: "California Real Estate",
     subtitle:
-      "250 California DRE salesperson Anki cards + 60-question CA practice test (free 25-question version) — agency, disclosures, math.",
+      "250 California DRE salesperson Anki cards + 60-question CA practice test from a 120-item bank (free 25-question version) — agency, disclosures, math.",
     directAnswer:
-      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 250 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a 60-question timed California practice test (free 25-question version) with topic scoring. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
-    lastUpdated: "2026-09-29",
+      "For California DRE salesperson exam prep, UniPrep2Go’s California Real Estate Anki deck is 250 high-yield cards on property ownership, agency and fiduciary duties, valuation, financing, transfer, mandated disclosures, contracts, and real estate math — plus a 60-question timed California practice test drawn from a 120-item bank (free 25-question version) with topic scoring. The official DRE exam is 150 questions in 3 hours. Delivered as an Anki .apkg for {PRICE} through Gumroad. State-specific California content, not a national deck relabeled, and not official DRE material.",
+    lastUpdated: "2026-11-03",
     audience:
       "California real estate salesperson exam candidates, career changers entering real estate, pre-licensing students, and candidates who want active recall for agency, disclosures, contracts, and real estate math.",
     format: ".apkg",
@@ -1087,21 +1087,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A listing agent meets a Fresno homeowner to sign a listing; weeks later a buyer's agent writes an offer. When must each agent deliver the agency relationship disclosure form?",
+        question: "A broker closes a sale in March 2026. How long must the transaction file and trust records be kept, and when does the clock start?",
         answer:
-          "The listing agent gives it to the seller before the listing agreement is signed. The buyer's agent gives it to the buyer as soon as practicable before the buyer signs the offer, and to the seller before the offer is presented. The agency relationships are then confirmed in the purchase contract or a separate writing.",
+          "Brokers must keep listings, purchase agreements, canceled checks, trust records and other transaction documents for 3 years from the closing date, or from the listing date if the deal never closed. The records must be available for DRE inspection and audit on request, which is how trust fund problems are found.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "A Sacramento seller hands the buyer the Transfer Disclosure Statement two days after the buyer's offer was accepted. The house is sold 'as-is.' What right does the buyer have?",
+        question: "A buyer's agent reviews the preliminary title report and sees no mention of an old lien. Can the buyer rely on the prelim as a guarantee of clean title?",
         answer:
-          "Because the TDS arrived after the offer was signed, the buyer may terminate by written notice within 3 days of in-person delivery (5 days if it is mailed). Sellers of 1-4 residential units must deliver the TDS as soon as practicable before title transfers, and an 'as-is' sale does not waive it.",
+          "No. A preliminary report is only an offer to issue a title policy on stated terms, listing the vesting, liens, easements and exceptions found so far. California law says it is not an abstract or a representation of title condition, so the buyer's protection comes from the policy issued at closing, not the prelim.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "Lena buys a Los Angeles condo for $800,000 in 2025. Ignoring voter-approved bonds and assessments, what is her basic property tax, and the most her assessed value can be the next year?",
+        question: "A licensee prints new business cards and launches a personal website. What identification must appear on these first point of contact materials?",
         answer:
-          "Her basic tax is $8,000: Proposition 13 caps the general levy at 1% of assessed value, and a change in ownership resets the base-year value to the $800,000 purchase price. After that, assessed value can rise at most 2% a year (less if inflation is lower), so next year's cap is $816,000 even if the market jumps.",
+          "California requires the licensee's name, DRE license number and the responsible broker's identity on first point of contact solicitation materials such as business cards, stationery, flyers and websites. The license number also goes on purchase agreements, so consumers can verify the license on the DRE site.",
         imageUrl: "/samples/california-real-estate-exam-anki-deck-sample-3.webp",
       },
     ],
@@ -1109,17 +1109,17 @@ const rawDecks: Deck[] = [
       {
         question: "What is the best California real estate exam Anki deck?",
         answer:
-          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 250 cards plus a 60-question readiness check (free 25-question version).",
+          "Choose a California DRE–specific deck (agency, disclosures, contracts, financing math) with a free timed CA practice test — not a generic national flashcard pack. UniPrep2Go’s California Real Estate Anki deck is 250 cards plus a 60-question readiness check drawn from a 120-item bank (free 25-question version).",
       },
       {
         question: "What does the California Real Estate deck include?",
         answer:
-          "250 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a 60-question California practice test (free 25-question version).",
+          "250 high-yield Anki cards covering California DRE salesperson exam topics including property ownership, agency, valuation, financing, transfer, disclosures, contracts, and real estate math, plus a 60-question California practice test drawn from a 120-item bank (free 25-question version).",
       },
       {
         question: "Is there a free California real estate practice test?",
         answer:
-          "Yes. Take the 60-question California real estate readiness check (free 25-question version) at uniprep2go.study/mock-exams/california-real-estate-readiness-check, then drill weak topics in this Anki deck.",
+          "Yes. The free start is 25 questions. The full check is 60 questions in 90 minutes, drawn from a 120-item bank, at uniprep2go.study/mock-exams/california-real-estate-readiness-check. The official DRE salesperson exam is 150 questions in 3 hours. Then drill weak topics in this Anki deck.",
       },
       {
         question: "Who is this deck for?",

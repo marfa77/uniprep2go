@@ -244,7 +244,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "california-real-estate-readiness-check": {
     title: "Free California Real Estate Salesperson Practice Test | 60Q Mock",
     description:
-      "California real estate practice: free 25-question diagnostic, full mock 60 timed questions / 90 minutes / 70% diagnostic, then repair with the 250-card CA DRE Anki deck. Official DRE salesperson exam is 150Q / 3 hours / 70%. Independent — not DRE material.",
+      "California real estate practice: free 25-question diagnostic, then 60 timed questions / 90 minutes from a 120-item bank, 70% readiness target, and the 250-card CA DRE Anki deck. Official DRE salesperson exam is 150 questions / 3 hours / 70%. Independent — not DRE material.",
     keywords: [
       "california real estate practice test",
       "ca real estate exam questions",
@@ -254,7 +254,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free California Real Estate Salesperson Readiness Check",
     intro:
-      "A California real estate licensing readiness check covering practice and disclosures, agency, ownership, valuation, contracts, financing, and transfer of property — then drill weak DRE domains in the linked 250-card Anki deck. Official DRE salesperson sitting is 150 questions / 3 hours / 70%; this mock is a shorter diagnostic.",
+      "A California salesperson readiness check: 25 questions free, then 60 timed questions in 90 minutes drawn from a 120-item bank, with topic scores. The official DRE exam is 150 questions in 3 hours, and 70% is the pass line. This page is the shorter diagnostic. The linked deck is 250 California cards.",
     audience: "California DRE salesperson exam candidates who want a timed baseline before licensing prep.",
     practiceTestLabel: "California real estate practice test",
   },

@@ -58,8 +58,13 @@ const audits = new Map<string, Audit>(
 const ledgerRows = readFileSync(LEDGER, "utf8")
   .split("\n")
   .filter((l) => /^\| 20\d\d-\d\d-\d\d /.test(l));
+function mentionsSlug(line: string, slug: string) {
+  const escaped = slug.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?<![A-Za-z0-9])${escaped}(?![A-Za-z0-9])`).test(line);
+}
+
 function lastLedger(slug: string, deck?: string | null) {
-  const hits = ledgerRows.filter((l) => l.includes(slug) || (deck && l.includes(deck)));
+  const hits = ledgerRows.filter((l) => mentionsSlug(l, slug) || (deck ? mentionsSlug(l, deck) : false));
   if (!hits.length) return null;
   const dates = hits.map((l) => l.slice(2, 12)).sort();
   return dates[dates.length - 1];
