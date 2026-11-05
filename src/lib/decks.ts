@@ -1268,21 +1268,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A building worth $500,000 is insured for $300,000 with an 80% coinsurance clause and a $1,000 deductible. A fire causes a $100,000 partial loss. How much does the insurer pay?",
+        question: "An insured owns a 30-foot sailboat and a canoe. A guest is hurt on each. How does the HO-3 Section II liability respond?",
         answer:
-          "$74,000. Required insurance is 80% × $500,000 = $400,000. The owner carried only $300,000, so the insurer pays $300,000 ÷ $400,000 = 75% of the loss: 75% × $100,000 = $75,000, minus the $1,000 deductible. The owner absorbs the other $26,000 as the coinsurance penalty.",
+          "The canoe injury is covered; the sailboat injury is not. Section II excludes larger owned watercraft, including sailing vessels 26 feet or longer and boats with more than 25 total horsepower of outboard motors. Small boats stay covered; the excluded boat needs a watercraft endorsement or boatowners policy.",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-1.webp",
       },
       {
-        question: "Under an HO-3, a homeowner knocks over a can of paint while redecorating. It ruins the wall-to-wall carpet and a leather sofa. Which damage is covered?",
+        question: "A business owner's restaurant closes for 5 days after a covered kitchen fire; how does the 72-hour waiting period affect the business income and extra expense claim?",
         answer:
-          "Only the carpet. Wall-to-wall carpet is part of the dwelling (Coverage A), which HO-3 insures on an open-perils basis: any direct physical loss is covered unless excluded, and an accidental spill is not excluded. The sofa is personal property (Coverage C), covered only for named broad-form perils, and a paint spill is not one of them.",
+          "Under the ISO business income form, the period of restoration for lost income begins 72 hours after the direct physical loss, so the first three days act as a time deductible. Extra expense starts immediately, so costs to keep operating in those first hours are still paid. A shorter wait can be bought by endorsement.",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-2.webp",
       },
       {
-        question: "Sam carries 25/50/25 auto liability. He causes a crash: driver A has $40,000 of injuries, driver B $15,000, and A's car needs $30,000 of repairs. What does Sam's insurer pay?",
+        question: "An insured has a $100,000 policy with Insurer A and a $50,000 policy with Insurer B on one building. A $30,000 covered loss occurs. Under pro rata other insurance, what does each pay?",
         answer:
-          "$65,000. Bodily injury: A is capped at the $25,000 per-person limit and B's $15,000 is paid in full, a $40,000 total within the $50,000 per-accident limit. Property damage: $25,000 of the $30,000. Sam is personally exposed for the remaining $20,000 ($15,000 + $5,000).",
+          "Insurer A pays $20,000 and Insurer B pays $10,000. Pro rata liability splits a loss by each policy's share of total insurance: A has $100,000 of $150,000 (two-thirds) and B one-third. The insured cannot collect more than the loss, which preserves indemnity.",
         imageUrl: "/samples/property-casualty-insurance-exam-anki-deck-sample-3.webp",
       },
     ],

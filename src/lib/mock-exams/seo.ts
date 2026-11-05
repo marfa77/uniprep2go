@@ -414,7 +414,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Property & Casualty Insurance Readiness Check",
     intro:
-      "A P&C insurance licensing readiness check covering homeowners, personal auto, commercial property, general liability, workers compensation, and key regulation concepts.",
+      "A timed 60-question P&C licensing diagnostic drawn from a 120-item bank: homeowners and dwelling, personal and commercial auto, commercial property, liability, and regulation. State exams set their own length and pass score.",
     audience: "Property & Casualty insurance producer candidates preparing for state licensing exams.",
     practiceTestLabel: "Property & Casualty insurance practice test",
   },

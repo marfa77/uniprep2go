@@ -186,7 +186,7 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
         format: "25Q free diagnostic; full timed mock 75Q / 105 min with topic scores",
         access: "Free start (no signup for the 25Q); Mock Pass for retakes",
         notes:
-          "Independent diagnostic. Official SIE is 75 scored (+10 pretest) / 1h45 / pass 70 equated.",
+          "Independent diagnostic. Official SIE is 75 scored (+5 pretest) / 1h45 / pass 70 equated.",
       },
       {
         name: "UniPrep2Go SIE quick diagnostic",
@@ -324,6 +324,64 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       {
         label: "Kaplan — Series 7 exam prep",
         url: "https://www.kaplanfinancial.com/securities/series-7",
+      },
+    ],
+  },
+  "servsafe-manager-mock": {
+    mockSlug: "servsafe-manager-mock",
+    examLabel: "ServSafe Manager",
+    heading: "ServSafe Manager practice options compared",
+    checkedDate: "2026-11-04",
+    lead:
+      "The official ServSafe Manager exam is 90 multiple-choice questions (80 scored plus 10 unscored pilot) in 2 hours. UniPrep2Go is the free timed diagnostic: 25 questions with no signup, then 90 timed questions and food-safety topic scores. Not National Restaurant Association or ServSafe material.",
+    rows: [
+      {
+        name: "UniPrep2Go ServSafe Manager practice test",
+        href: "/mock-exams/servsafe-manager-mock",
+        format: "25 free, no signup; full timed mock 90 questions / 120 minutes with topic scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic drawn from a 180-item bank. Official pass on the current ServSafe FAQ is 70% (56 of 80 scored); this mock uses a 75% UniPrep2Go readiness target. The older Examinee Handbook PDF still prints 75%.",
+      },
+      {
+        name: "Effortless Math — free ServSafe Manager practice",
+        href: "https://www.effortlessmath.com/servsafe-manager/",
+        format: "90 original questions with explanations; suggested 120 minutes",
+        access: "Free, no signup (page copy, checked 2026-11-04)",
+        notes: "Independent study form. We did not re-count every item on the page.",
+      },
+      {
+        name: "LineCheck Prep — free timed Manager run",
+        href: "https://linecheckprep.com/",
+        format: "One free full-length timed run: 90 questions, 80 scored, 120 minutes",
+        access: "Free account, no card (homepage, checked 2026-11-04)",
+        notes: "Claims FDA Food Code sourcing and a 70% (56/80) pass mark. Paid bank beyond the free run.",
+      },
+      {
+        name: "ServSafe — Examinee Handbook (official map)",
+        href: "https://www.servsafe.com/ServSafe/media/ServSafe/Documents/SSFS-Examinee-Handbook.pdf",
+        format: "Official exam rules: 90 multiple-choice, 2 hours; handbook text still prints a 75% pass line",
+        access: "Free PDF",
+        notes:
+          "Study map and examinee rules, not a practice quiz. Confirm the live pass mark on ServSafe Manager FAQs before you schedule — FAQ and handbook have disagreed.",
+      },
+    ],
+    sources: [
+      {
+        label: "ServSafe Examinee Handbook (PDF)",
+        url: "https://www.servsafe.com/ServSafe/media/ServSafe/Documents/SSFS-Examinee-Handbook.pdf",
+      },
+      {
+        label: "ServSafe Manager Get Certified",
+        url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
+      },
+      {
+        label: "Effortless Math — ServSafe Manager practice",
+        url: "https://www.effortlessmath.com/servsafe-manager/",
+      },
+      {
+        label: "LineCheck Prep",
+        url: "https://linecheckprep.com/",
       },
     ],
   },

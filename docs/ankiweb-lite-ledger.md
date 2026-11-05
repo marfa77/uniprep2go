@@ -108,3 +108,63 @@ Owner table downloads (AnkiWeb My Shared, read 2026-10-25):
 | ACE CPT · EPA 608 · Series 7 · GRE · NMLS MLO · Norwegian · Swedish | **0** | Do **not** stack more language / zero-dl exam LITEs; no unshare without ask |
 
 Day-14 rule: kill/rewrite only if &lt;5 **and** a competitor in the same search is moving — flag zeros, do not mass-unshare today.
+
+## 2026-11-03 — Year 7 chemistry
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | Year 7 Transition Metals — 38 Illustrated Cards | [89539666](https://ankiweb.net/shared/info/89539666) | 38 | email `request@uniprep2go.study` (no support page) | New. Sample from 38 notes, 1.50MB, 38 images. Public after the 24h copyright hold. Deck name in Anki must stay `Chemistry_CLIP_Year_7`. |
+
+## 2026-11-03 — US political system
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | US Political System — 30 Illustrated Cards | [272549637](https://ankiweb.net/shared/info/272549637) | 30 | email `request@uniprep2go.study` (no support page) | New. Sample from 30 notes, 5.26MB, 30 images. Public after the 24h copyright hold. Deck name in Anki must stay `US Political System`. |
+
+## 2026-11-03 — Civic samples US / UK / PT (user: no LITE in title)
+
+Rebuilt from Prep2Go App Store FULL the same day. Titles omit LITE/Sample. Description has Updated date + full-deck URL.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | US Citizenship Civics — USCIS Questions (40 cards) | [622384055](https://ankiweb.net/shared/info/622384055) | 40 | `/decks/us-citizenship-anki-deck` | New — public after 24h hold |
+| 2026-11-03 | Life in the UK Test — Civics (40 cards) | [1847729884](https://ankiweb.net/shared/info/1847729884) | 40 | `/decks/life-in-the-uk-anki-deck` | New — public after 24h hold |
+| 2026-11-03 | Portugal Nacionalidade — Civics (40 cards) | [1102414609](https://ankiweb.net/shared/info/1102414609) | 40 | `/decks/portugal-nacionalidade-anki-deck` | New — FULL is 220; public after 24h hold |
+
+## 2026-11-03 — Civic samples AU / CA
+
+Same rules as US/UK/PT: no LITE in title; Updated date + FULL URL in description. FULL rebuilt from Prep2Go App Store (200 each).
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | Australian Citizenship Test — Civics (40 cards) | [580326069](https://ankiweb.net/shared/info/580326069) | 40 | `/decks/australian-citizenship-anki-deck` | New — public after 24h hold |
+| 2026-11-03 | Canadian Citizenship Test — Civics (40 cards) | [1196239109](https://ankiweb.net/shared/info/1196239109) | 40 | `/decks/canadian-citizenship-anki-deck` | New — public after 24h hold |
+
+## 2026-11-03 — Civic sample DE (Leben in Deutschland)
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | Leben in Deutschland — Einbürgerungstest (40 cards) | [1008003800](https://ankiweb.net/shared/info/1008003800) | 40 | `/decks/leben-in-deutschland-anki-deck` | New — FULL 296 from App Store; public after 24h hold |
+
+## 2026-11-03 — Civic samples ES / FR
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | CCSE España — Instituto Cervantes Civics (40 cards) | [1877287609](https://ankiweb.net/shared/info/1877287609) | 40 | `/decks/ccse-espana-anki-deck` | New — FULL 343 from App Store; public after 24h hold |
+| 2026-11-03 | Naturalisation française — Civics (40 cards) | [799782318](https://ankiweb.net/shared/info/799782318) | 40 | `/decks/naturalisation-francaise-anki-deck` | New — FULL 200 from App Store; public after 24h hold |
+
+## 2026-11-03 — Civic samples CH (DE / FR / IT)
+
+Same rules: no LITE in title; Updated: 3 November 2026 + FULL URL. FULL 207×3 from Prep2Go App Store → Gumroad `*_261103-1107.apkg`.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | Einbürgerung Schweiz — Staatskunde (40 cards) | [1032163238](https://ankiweb.net/shared/info/1032163238) | 40 | `/decks/einburgerung-schweiz-anki-deck` | New — FULL 207; public after 24h hold |
+| 2026-11-03 | Naturalisation suisse — Civics (40 cards) | [1589972596](https://ankiweb.net/shared/info/1589972596) | 40 | `/decks/naturalisation-suisse-anki-deck` | New — FULL 207; public after 24h hold |
+| 2026-11-03 | Naturalizzazione svizzera — Civics (40 cards) | [1671704295](https://ankiweb.net/shared/info/1671704295) | 40 | `/decks/naturalizzazione-svizzera-anki-deck` | New — FULL 207; public after 24h hold |
+
+## 2026-11-03 — Civic sample NO (Statsborgerprøven)
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-03 | Statsborgerprøven — Norwegian Citizenship (40 cards) | [860126030](https://ankiweb.net/shared/info/860126030) | 40 | `/decks/norway-statsborgerproven-anki-deck` | New — FULL 170 from App Store; public after 24h hold |

@@ -230,6 +230,7 @@ function pickFromAuthoredDeckCsv(slug, files, maxBack = 220) {
       if (clean(cells[iFormula])) score += 3;
       if (/\d/.test(a)) score += 3;
       if (/\b(can affect|matters?|is important|various|generally)\b/i.test(a)) score -= 4;
+      if (/\b(which idea is that|what should a candidate call this|which rule is at work|licensing name for it)\b/i.test(q)) score -= 8;
       if (/\b(matter|important)\??$/i.test(q)) score -= 5;
       return { q, a, topic: clean(cells[iSection]), score };
     });
@@ -300,6 +301,7 @@ const authoredDeckCsv = [
   ["frm-part-1-anki-deck", "frm_part1_v2_authored.csv"],
   ["cfa-level-2-anki-deck", ["cfa_level2_complete.csv", "cfa_level2_p1_authored.csv"], 420],
   ["life-and-health-insurance-exam-anki-deck", "../Insurance/life_health_250_authored.csv", 360],
+  ["property-casualty-insurance-exam-anki-deck", "../Insurance/property_casualty_250_authored.csv", 420],
   ["servsafe-manager-anki-deck", "../ServSafe/servsafe_manager_300_authored.csv", 360],
 ];
 for (const [slug, files, maxBack] of authoredDeckCsv) {

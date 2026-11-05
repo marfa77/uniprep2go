@@ -51,6 +51,18 @@ describe("getPracticeOptionsCompared", () => {
     expect(table!.sources.some((s) => s.url.includes("Series_7_Content_Outline.pdf"))).toBe(true);
   });
 
+  it("returns a ServSafe Manager table from pages checked 2026-11-04", () => {
+    const table = getPracticeOptionsCompared("servsafe-manager-mock");
+    expect(table).not.toBeNull();
+    expect(table!.checkedDate).toBe("2026-11-04");
+    expect(table!.rows.some((r) => r.name.includes("ServSafe Manager practice test") && /90 questions/.test(r.format))).toBe(
+      true,
+    );
+    expect(table!.rows.some((r) => /Effortless Math/.test(r.name) && /90/.test(r.format))).toBe(true);
+    expect(table!.rows.some((r) => /LineCheck/.test(r.name) && /account/i.test(r.access))).toBe(true);
+    expect(table!.sources.some((s) => s.url.includes("SSFS-Examinee-Handbook.pdf"))).toBe(true);
+  });
+
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });

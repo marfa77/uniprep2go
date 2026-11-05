@@ -372,9 +372,9 @@ describe("deck catalog", () => {
     ]);
     // Screenshot captures: text must stay the captured card.
     expect(propertyCasualtyDeck?.sampleCards.map((card) => card.question)).toEqual([
-      "A building worth $500,000 is insured for $300,000 with an 80% coinsurance clause and a $1,000 deductible. A fire causes a $100,000 partial loss. How much does the insurer pay?",
-      "Under an HO-3, a homeowner knocks over a can of paint while redecorating. It ruins the wall-to-wall carpet and a leather sofa. Which damage is covered?",
-      "Sam carries 25/50/25 auto liability. He causes a crash: driver A has $40,000 of injuries, driver B $15,000, and A's car needs $30,000 of repairs. What does Sam's insurer pay?",
+      "An insured owns a 30-foot sailboat and a canoe. A guest is hurt on each. How does the HO-3 Section II liability respond?",
+      "A business owner's restaurant closes for 5 days after a covered kitchen fire; how does the 72-hour waiting period affect the business income and extra expense claim?",
+      "An insured has a $100,000 policy with Insurer A and a $50,000 policy with Insurer B on one building. A $30,000 covered loss occurs. Under pro rata other insurance, what does each pay?",
     ]);
   });
 
@@ -686,7 +686,7 @@ describe("deck catalog", () => {
       "czech-citizenship-anki-deck": "Czech Citizenship Anki Deck — 169 Cards",
       "life-in-the-uk-anki-deck": "Life in the UK Anki Deck — 201 Cards",
       "belgium-wallonie-citoyennete-anki-deck": "Belgium Wallonie Citoyenneté Anki Deck — 165 Cards",
-      "portugal-nacionalidade-anki-deck": "Portugal Nacionalidade Anki Deck — 173 Cards",
+      "portugal-nacionalidade-anki-deck": "Portugal Nacionalidade Anki Deck — 220 Cards",
       "portuguese-survival-anki-deck": "Portuguese Survival Anki Deck — 344 Speaking Moves (PT-PT)",
       "australian-citizenship-anki-deck": "Australian Citizenship Anki Deck — 200 Cards",
       "naturalisation-suisse-anki-deck": "Naturalisation suisse Anki Deck — 207 Cards",
