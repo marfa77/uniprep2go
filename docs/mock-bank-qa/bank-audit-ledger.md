@@ -18,6 +18,7 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
 |---|---|---|---|---|---|---|
+| 2026-11-05 | — | `cfa-level-1-anki-deck` · `cfa-level-1-pass-pack` | Copy only — banks untouched | — | Deck page Pass Pack upgrade block (`348 Anki + 48-page formula PDF`, $29 vs $38); pass-pack → Anki cross-link in Also useful | Week 1 Bing push (Pavel OK) |
 | 2026-11-05 | `property-casualty-insurance-readiness-check` | `property-casualty-insurance-exam-anki-deck` | audit 0 FAIL · 120 · keys 30/30/30/30 · ops ready | Basics, general, regulation, commercial, and casualty reviewed. Dwelling and auto spot-read in the main chat after the reviewers hit the weekly limit. | `Property_Casualty_Insurance_FULL_250.apkg` replaced. 153 thin backs folded in the existing example and mistake; Note GUIDs kept. Samples: HO-3 watercraft, 72-hour business income, pro rata. Classic Gumroad page, 250 cards | Session stays 60 / 90 min / 70% readiness from 120. State exams set length and pass score. ServSafe Manager compared table added the same day. |
 | 2026-11-03 | — | `norway-statsborgerproven-anki-deck` | App export + AnkiWeb 40 | — | Gumroad FULL 170 replaced (`261103-1123`); shared [860126030](https://ankiweb.net/shared/info/860126030) | From Prep2Go App Store |
 | 2026-11-03 | — | `denmark-indfoedsretsproeven-anki-deck` | App export FULL only | — | Gumroad FULL 191 replaced (`261103-1118`); **no AnkiWeb share** | From Prep2Go App Store; user: без шаринга |
