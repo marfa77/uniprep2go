@@ -12,7 +12,8 @@ import {
 } from "@/lib/exam-llm-layer";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { homeMetadata, shouldIndexMockExam } from "@/lib/seo";
-import { formatCatalogListPrice } from "@/lib/catalog-price";
+import { formatCheckoutPrice, premiumCatalogPriceLine, PREMIUM_CATALOG_USD } from "@/lib/catalog-price";
+import { MOCK_PASS_ATTEMPTS, MOCK_PASS_PRICE_USD } from "@/lib/mock-exams/mock-pass";
 import {
   formatDeckPriceLabel,
   getCheckoutActionLabel,
@@ -177,8 +178,7 @@ export default async function HomePage() {
   const availableDecks = await getPricedDecks();
   const catalogGroups = await getPricedDecksByCategory();
   const pricedBySlug = new Map(availableDecks.map((deck) => [deck.slug, deck]));
-  /** Gumroad one-time catalog list — exclude App Store / Lemon language outliers from the hero tile. */
-  const catalogListPriceLabel = formatCatalogListPrice();
+  const premiumPriceLabel = formatCheckoutPrice(PREMIUM_CATALOG_USD);
   const mockExams = getAllMockExams();
   const indexedMockCount = mockExams.filter((mock) => shouldIndexMockExam(mock.slug)).length;
   const featuredMocks = featuredMockSlugs
@@ -366,9 +366,13 @@ export default async function HomePage() {
                 ) : null}
               </div>
               <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
-                <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF price</dt>
+                <dt className="text-sm text-[#7a6e5a]">Premium Anki &amp; PDF</dt>
                 <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                  {catalogListPriceLabel}
+                  {premiumPriceLabel}
+                </dd>
+                <dd className="mt-1 text-sm text-[#7a6e5a]">{premiumCatalogPriceLine()}</dd>
+                <dd className="mt-1 text-sm text-[#7a6e5a]">
+                  Practice tests are separate: the first attempt is free, then ${MOCK_PASS_PRICE_USD} for {MOCK_PASS_ATTEMPTS} attempts.
                 </dd>
               </div>
             </dl>

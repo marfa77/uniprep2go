@@ -3,8 +3,12 @@ import {
   fillProductPriceMentions,
   formatCatalogListPrice,
   getCatalogListPriceUsd,
+  PREMIUM_CATALOG_SLUGS,
+  PREMIUM_CATALOG_USD,
+  premiumCatalogPriceLine,
   withCatalogProductPrices,
 } from "./catalog-price";
+import catalogListPrices from "@/data/catalog-list-prices.json";
 
 describe("catalog-price", () => {
   it("uses Gumroad default $9.99 from catalog-list-prices.json", () => {
@@ -33,6 +37,20 @@ describe("catalog-price", () => {
     expect(withCatalogProductPrices("Live $9.99 / 120-card Anki")).toBe(
       "Live $9.99 / 120-card Anki",
     );
+  });
+
+  it("prices the ten premium Anki and PDF products at $19, and nothing else at that price", () => {
+    expect(PREMIUM_CATALOG_SLUGS).toHaveLength(10);
+    for (const slug of PREMIUM_CATALOG_SLUGS) {
+      expect(getCatalogListPriceUsd(slug)).toBe(PREMIUM_CATALOG_USD);
+    }
+    const atPremium = Object.entries(catalogListPrices.overrides)
+      .filter(([, price]) => price === PREMIUM_CATALOG_USD)
+      .map(([slug]) => slug)
+      .sort();
+    expect(atPremium).toEqual([...PREMIUM_CATALOG_SLUGS].sort());
+    expect(premiumCatalogPriceLine()).toContain("10 premium products");
+    expect(premiumCatalogPriceLine()).toContain("Other decks $9.99");
   });
 
   it("rewrites $9.99 when the slug override is higher (money raise)", () => {
