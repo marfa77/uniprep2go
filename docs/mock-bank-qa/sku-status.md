@@ -125,7 +125,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `california-real-estate-readiness-check` | live | 60 / 120 | 2026-11-03 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-10-14 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
-| ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-10-25 | — |
+| ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-11-05 | — |
 | ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-25 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
 | ok | `enrolled-agent-readiness-check` | live | 120 / 240 | 2026-11-02 | — |
@@ -239,7 +239,7 @@ No bank gates apply; status comes from the ledger only (**reviewed** = has a dat
 |---|---|---|---|---|---|
 | reviewed | `bench-energy-coal-trader-anki-deck` | available | professional | .apkg | 2026-11-02 |
 | reviewed | `cfa-level-1-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
-| reviewed | `cfa-level-1-pass-pack` | available | finance | .apkg + PDF | 2026-10-24 |
+| reviewed | `cfa-level-1-pass-pack` | available | finance | .apkg + PDF | 2026-11-05 |
 | reviewed | `cfa-level-2-formula-reference-2026` | available | finance | PDF | 2026-10-24 |
 | reviewed | `portuguese-survival-anki-deck` | available | language | .apkg | 2026-10-24 |
 | reviewed | `ptcb-2026-pass-pack` | available | professional | .apkg + PDF | 2026-10-24 |

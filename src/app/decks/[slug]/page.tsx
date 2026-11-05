@@ -19,6 +19,7 @@ import { DeckExamVersionBlock } from "@/components/decks/deck-exam-version-block
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
 import { DeckHeroBuyBlock } from "@/components/decks/deck-hero-buy-block";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
+import { DeckPassPackUpgradeSection } from "@/components/decks/deck-pass-pack-upgrade-section";
 import { DeckPracticeMockSection } from "@/components/decks/deck-practice-mock-section";
 import { DeckRelatedDecks } from "@/components/decks/deck-related-decks";
 import { DeckSeoSections } from "@/components/decks/deck-seo-sections";
@@ -80,6 +81,10 @@ import {
   freeMockLinkNote,
   freeMockStartLabel,
 } from "@/lib/mock-exams/free-diagnostic";
+import {
+  feederDeckSlugForPassPack,
+  passPackOfferForDeck,
+} from "@/lib/mock-exams/pass-pack-for-deck";
 
 export const revalidate = 3600;
 
@@ -192,6 +197,12 @@ export default async function DeckPage({
   const companionDeck = getCompanionDeck(deck.slug);
   const pricedCompanionDeck =
     !isPlanned && companionDeck ? await getPricedDeckBySlug(companionDeck.slug) : null;
+  const passPackMeta = passPackOfferForDeck(deck.slug);
+  const pricedPassPack =
+    !isPlanned && passPackMeta ? await getPricedDeckBySlug(passPackMeta.packSlug) : null;
+  const feederDeckSlug = feederDeckSlugForPassPack(deck.slug);
+  const pricedFeederDeck =
+    !isPlanned && feederDeckSlug ? await getPricedDeckBySlug(feederDeckSlug) : null;
   const examFactsProfile = getExamFactsProfileForDeck(deck.slug);
   const secondaryCta = practiceMock
     ? {
@@ -266,6 +277,15 @@ export default async function DeckPage({
                         : companionDeck.format === "PDF"
                           ? "Printable study guide companion"
                           : `${companionDeck.shortName} companion`,
+                },
+              ]
+            : []),
+          ...(pricedFeederDeck
+            ? [
+                {
+                  href: `/decks/${pricedFeederDeck.slug}`,
+                  label: `${pricedFeederDeck.shortName} Anki deck`,
+                  note: `Buy Anki alone — ${formatDeckPriceLabel(pricedFeederDeck)}`,
                 },
               ]
             : []),
@@ -440,6 +460,10 @@ export default async function DeckPage({
           profile={examFactsProfile}
           variant="deck"
         />
+
+        {pricedPassPack && passPackMeta && availableDeck ? (
+          <DeckPassPackUpgradeSection passPack={pricedPassPack} savingsNote={passPackMeta.savingsNote} />
+        ) : null}
 
         {isPlanned ? (
           <DeckWaitlistCta

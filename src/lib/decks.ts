@@ -383,7 +383,7 @@ const rawDecks: Deck[] = [
       "Focused 348-card CFA Level 1 Anki deck weighted to the 2026 topic ranges — scenario and calculation cards with a worked example and common mistake on each, plus a 60-question timed mock (free 25-question version).",
     directAnswer:
       "The best independent CFA Level 1 Anki stack on UniPrep2Go is a focused 348-card .apkg weighted to the 2026 CFA Institute topic ranges (Ethics 58 cards, Equity 45, FSA 42, Fixed Income 42 and the other six topics), where every front is a scenario or calculation and every back carries a worked example and the common mistake. It pairs with a 60-question timed readiness-check mock (free 25-question version; topic scoring) and a printable 2026 formula reference PDF. Delivered for {PRICE} through Gumroad — not a bloated mega-deck and not official CFA Institute material.",
-    lastUpdated: "2026-10-16",
+    lastUpdated: "2026-11-05",
     audience:
       "CFA Level 1 candidates who want to apply the Standards, formulas and accounting rules to short cases — not just recite definitions — in 15 to 25 minutes a day.",
     format: ".apkg",

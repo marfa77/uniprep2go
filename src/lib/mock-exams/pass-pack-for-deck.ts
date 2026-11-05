@@ -26,3 +26,13 @@ export function passPackOfferForDeck(deckSlug: string): PassPackOfferMeta | unde
 export function passPackSlugForDeck(deckSlug: string): string | undefined {
   return DECK_TO_PASS_PACK[deckSlug]?.packSlug;
 }
+
+/** Pass Pack product page → primary Anki feeder deck (for cross-links). */
+export function feederDeckSlugForPassPack(packSlug: string): string | undefined {
+  for (const [deckSlug, meta] of Object.entries(DECK_TO_PASS_PACK)) {
+    if (meta.packSlug === packSlug) {
+      return deckSlug;
+    }
+  }
+  return undefined;
+}
