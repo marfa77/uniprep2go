@@ -11,7 +11,6 @@ import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-han
 import {
   MockExamBreadcrumb,
   MockExamSnapshot,
-  MockExamVisualHero,
   MockOfficialResourcesPanel,
   MockRelatedExamsSection,
 } from "@/components/mock-exams/mock-page-enrichment";
@@ -367,7 +366,6 @@ export default async function MockExamPage({
         <MockExamSnapshot config={config} />
         <MockMissCohortPanel config={config} cohort={missCohort} />
         {mockExamVersion ? <DeckExamVersionBlock model={mockExamVersion} /> : null}
-        <MockExamVisualHero config={config} />
 
         <MockOfficialResourcesPanel config={config} resources={official} />
 

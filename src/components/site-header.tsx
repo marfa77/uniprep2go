@@ -1,12 +1,13 @@
 import Link from "next/link";
 import { MobileSiteNav } from "@/components/mobile-site-nav";
-import { btnFocus, btnLinkNav, cx } from "@/lib/ui-button-classes";
+import { btnFocus, btnLinkNav, btnPrimarySm, cx } from "@/lib/ui-button-classes";
 import { siteConfig } from "@/lib/site";
 
 const headerLinks = [
   { href: "/mock-exams", label: "Practice tests" },
   { href: "/decks", label: "Decks" },
   { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "Questions" },
 ] as const;
 
 export function SiteHeader() {
@@ -27,6 +28,9 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
+          <Link className={btnPrimarySm} href="/decks/cfa-level-1-anki-deck">
+            Get Deck — $19
+          </Link>
         </div>
         <MobileSiteNav />
       </nav>

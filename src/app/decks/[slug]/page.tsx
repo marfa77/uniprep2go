@@ -65,7 +65,7 @@ import {
   buildDeckSeoTitle,
   getDeckLinkedMock,
 } from "@/lib/deck-seo";
-import { getDeckCoverUrl, isPreoptimizedPublicImage } from "@/lib/deck-media";
+import { getDeckCoverUrl } from "@/lib/deck-media";
 import { buildDeckPageJsonLd } from "@/lib/product-jsonld";
 import {
   VISIBLE_FAQ_COUNT,
@@ -146,15 +146,6 @@ export async function generateMetadata({
       path: `/decks/${deck.slug}`,
     },
   );
-}
-
-function parseRepairTopicIds(raw: string | string[] | undefined): string[] {
-  if (!raw) return [];
-  const value = Array.isArray(raw) ? raw.join(",") : raw;
-  return value
-    .split(",")
-    .map((part) => part.trim().toLowerCase())
-    .filter(Boolean);
 }
 
 function topicMatchesRepairFocus(topicName: string, focusIds: string[]): boolean {
@@ -247,7 +238,6 @@ export default async function DeckPage({
   const deckExamVersion = buildDeckExamVersionModel(deck, examFactsProfile);
 
   const jsonLd = availableDeck ? buildDeckPageJsonLd(availableDeck) : null;
-  const heroImage = getDeckCoverUrl(deck);
   const relatedStudyPaths = [
     ...(isBuildingCertDeckSlug(deck.slug)
       ? getBuildingClusterStudyPaths(deck.slug)
@@ -322,7 +312,7 @@ export default async function DeckPage({
             <li>
               <Link
                 className="hover:text-[#18140f] hover:underline"
-                href={`/#catalog-${deck.category}`}
+                href={`/decks#catalog-${deck.category}`}
               >
                 {categoryLabels[deck.category]}
               </Link>
@@ -335,8 +325,7 @@ export default async function DeckPage({
           {buildDeckSeoHeadline(deck)}
         </h1>
 
-        <div className="mt-6 grid gap-6 lg:grid-cols-[minmax(0,1fr)_minmax(220px,0.42fr)] lg:items-start">
-          <div className="max-w-3xl">
+        <div className="mt-6 max-w-3xl">
             <p className="text-xl leading-8 text-[#18140f]">{shortPitch}</p>
             {availableDeck && availableDeck.checkoutProvider !== "App Store" ? (
               <DeckHeroBuyBlock
@@ -435,21 +424,6 @@ export default async function DeckPage({
             {!isPlanned && deck.slug !== "cfa-level-1-anki-deck" ? (
               <DeckPurchaseCountNote slug={deck.slug} />
             ) : null}
-          </div>
-          {heroImage ? (
-            <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]">
-              <Image
-                alt={`${deck.shortName} product preview`}
-                className="h-auto w-full"
-                height={768}
-                priority={deck.format === "PDF"}
-                sizes="(max-width: 1024px) 100vw, 360px"
-                src={heroImage}
-                unoptimized={isPreoptimizedPublicImage(heroImage)}
-                width={1376}
-              />
-            </div>
-          ) : null}
         </div>
 
         {deck.slug === "cfa-level-1-anki-deck" ? <ReportLayoutPreview /> : null}
@@ -489,21 +463,18 @@ export default async function DeckPage({
 
         {deck.sampleCards.length > 0 ? (
           <section id="sample-cards" className="mt-12">
-            <h2 className="text-2xl font-semibold tracking-tight">
-              {deck.format === "PDF" ? "PDF previews" : "Sample cards"}
+            <h2 className="text-2xl tracking-tight">
+              {deck.format === "PDF" ? "PDF previews" : "Card inspection"}
             </h2>
+            {deck.format === "PDF" ? null : (
+              <p className="mt-2 text-sm text-muted">{deck.sampleCards.length} of the shipped cards.</p>
+            )}
             {deck.format === "PDF" ? (
               <p className="mt-2 max-w-2xl text-sm leading-7 text-[#5f5749]">
                 Real excerpts from the PDF so you can judge layout and depth before checkout.
               </p>
             ) : null}
-            <div
-              className={
-                deck.format === "PDF"
-                  ? "mt-5 space-y-6"
-                  : "mt-4 grid gap-4 sm:grid-cols-3 sm:items-start"
-              }
-            >
+            <div className="mt-5 space-y-6">
               {deck.sampleCards.map((card) => (
                 <article
                   className={
@@ -546,9 +517,11 @@ export default async function DeckPage({
                     </div>
                   )}
                   {deck.format !== "PDF" ? (
-                    <div className="p-5">
-                      <h3 className="font-semibold">{card.question}</h3>
-                      <p className="mt-3 text-sm leading-7 text-[#5f5749]">{card.answer}</p>
+                    <div className="space-y-4 p-5">
+                      <p className="text-xs uppercase tracking-[0.14em] text-muted">Front</p>
+                      <h3 className="text-lg">{card.question}</h3>
+                      <p className="text-xs uppercase tracking-[0.14em] text-muted">Back</p>
+                      <p className="text-sm leading-7 text-muted">{card.answer}</p>
                       {card.audioUrl ? (
                         <audio controls preload="metadata" src={card.audioUrl} className="mt-4 h-10 w-full">
                           Your browser does not support the audio element.

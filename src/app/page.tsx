@@ -1,9 +1,7 @@
 import Link from "next/link";
-import Image from "next/image";
 import type { Metadata } from "next";
-import { FunnelTracker, TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { FunnelTracker } from "@/components/funnel-tracker";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
-import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -12,90 +10,19 @@ import {
 } from "@/lib/exam-llm-layer";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { homeMetadata, shouldIndexMockExam } from "@/lib/seo";
-import { formatCheckoutPrice, premiumCatalogPriceLine, PREMIUM_CATALOG_USD } from "@/lib/catalog-price";
-import { MOCK_PASS_ATTEMPTS, MOCK_PASS_PRICE_USD } from "@/lib/mock-exams/mock-pass";
-import {
-  formatDeckPriceLabel,
-  getCheckoutActionLabel,
-  getPricedDecks,
-  getPricedDecksByCategory,
-  type PricedDeck,
-} from "@/lib/checkout-pricing";
-import { getDeckCoverUrl, isPreoptimizedPublicImage } from "@/lib/deck-media";
-import {
-  formatDeckContentLabel,
-  getDeckBySlug,
-  siteFaqs,
-} from "@/lib/decks";
-import {
-  BUILDING_CERTIFICATION_HUB_SLUG,
-} from "@/lib/building-cert-clusters";
+import { getPricedDecks, getPricedDecksByCategory } from "@/lib/checkout-pricing";
+import { siteFaqs } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
 import { getAllMockExams, getMockExamConfig } from "@/lib/mock-exams/configs";
 import { buildFeaturedMockItemListJsonLd } from "@/lib/mock-exams/llm";
 import { isPrep2GoAppDeckSlug } from "@/lib/prep2go-app-decks";
-import { publicDeckPurchaseCount } from "@/lib/deck-purchase-count";
-import { getPublicMockStartCount } from "@/lib/mock-exams/mock-start-count-store";
 import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
 import { siteConfig } from "@/lib/site";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
-import {
-  formatCompactDeckPurchases,
-  formatCompactMockStarts,
-} from "@/lib/social-proof";
-import {
-  btnPrimary,
-  btnPrimarySm,
-  btnSecondary,
-  btnSecondarySm,
-  ledgerCard,
-} from "@/lib/ui-button-classes";
+import { btnPrimary, btnPrimarySm, btnSecondary, ledgerCard, ledgerList } from "@/lib/ui-button-classes";
 
 /** Homepage HTML budget is <200 KB; the full catalog renders on /decks. */
 const HOME_CATALOG_DECKS_PER_GROUP = 6;
-
-const examCategories = [
-  {
-    title: "US Licensing",
-    description:
-      "PTCB, FINRA (SIE → 7 → 63/65), Life & Health, ServSafe, and major-state real estate — timed mocks with topic readiness reports; your first mock is free.",
-    href: "/mock-exams",
-    cta: "Browse US licensing mocks",
-  },
-  {
-    title: "Finance",
-    description:
-      "CFA Level 1–2, FRM, CFP, and Enrolled Agent — readiness checks paired with formula PDFs and focused decks.",
-    href: "/finance-anki-decks",
-    cta: "Open finance hub",
-  },
-  {
-    title: "Professional certifications",
-    description:
-      "EPA 608, LEED, WELL, BMS, NEBOSH, MRICS, and related building/safety pathways — mock → deck repair loops.",
-    href: `/${BUILDING_CERTIFICATION_HUB_SLUG}`,
-    cta: "Open certifications hub",
-  },
-  {
-    title: "Admissions & citizenship",
-    description:
-      "SAT, GRE, GMAT, and citizenship civics prep stay in the catalog — language-exam decks are sold on Prep2Go.",
-    href: "/language-certification-decks",
-    cta: "Browse citizenship & admissions",
-  },
-] as const;
-
-/** Homepage mock → deck pairs — Tier A acquisition only (2026-09-24). */
-const mockDeckRepairPairSlugs: Array<{ mockSlug: string; deckSlug: string }> = [
-  { mockSlug: "ptcb-pharmacy-technician-mock", deckSlug: "ptcb-pharmacy-technician-anki-deck" },
-  { mockSlug: "sie-full-mock", deckSlug: "sie-exam-anki-deck" },
-  { mockSlug: "series-63-readiness-check", deckSlug: "series-63-anki-deck" },
-  { mockSlug: "series-65-readiness-check", deckSlug: "series-65-anki-deck" },
-  { mockSlug: "life-and-health-insurance-readiness-check", deckSlug: "life-and-health-insurance-exam-anki-deck" },
-  { mockSlug: "epa-608-readiness-check", deckSlug: "hvac-epa-608-anki-deck" },
-  { mockSlug: "servsafe-manager-mock", deckSlug: "servsafe-manager-anki-deck" },
-  { mockSlug: "cfa-level-2-readiness-check", deckSlug: "cfa-level-2-anki-deck" },
-];
 
 /** Compact homepage index-boost — Tier A money only. */
 const popularDeckBoostLinks = [
@@ -118,21 +45,33 @@ const heroSecondaryLinks = [
 
 const howItWorksSteps = [
   {
-    title: "Take your free 25-question diagnostic",
-    detail:
-      "Pick any practice test or readiness check — the first attempt is free in Exam or Learn mode, no signup; after that, $5 unlocks 5 more attempts. Timing and topic weights follow published official outlines; questions are original practice items.",
+    title: "Take your free 25-question diagnostic.",
+    detail: "No registration barrier. Timed under candidate rules with real pacing feedback.",
   },
   {
-    title: "Read your readiness report",
-    detail:
-      "See pass/no-pass verdict, weak topics, pacing notes, and full answer review with explanations.",
+    title: "Read your readiness report.",
+    detail: "Topic scores and the questions you missed, without a vanity chart.",
   },
   {
-    title: "Fix only what you're weak at",
-    detail:
-      "Targeted flashcards or a printable guide map to the same topics — close the gaps, then retake the mock before exam day.",
+    title: "Fix only what you are weak at.",
+    detail: "Drill the weak topics in the matching Anki deck, then retake the mock.",
   },
 ];
+
+const ledgerFacts = [
+  {
+    title: "Live practice tests",
+    body: "Timed sessions follow the published topic weights. The first attempt is a free 25-question diagnostic.",
+  },
+  {
+    title: "Anki and PDF catalog",
+    body: "Decks and printable formula sheets for the topics the mock marks as weak.",
+  },
+  {
+    title: "Mock Pass $5 for 5 attempts",
+    body: "The first attempt is a free 25-question diagnostic. Five more scored attempts are $5.",
+  },
+] as const;
 
 /**
  * Homepage featured strip — 8 acquisition exams only.
@@ -165,28 +104,14 @@ function mockCtaLabel(mock: MockExamConfig) {
   return mock.status === "live" ? "Start free mock" : "Start readiness check";
 }
 
-function resolveRepairPairs(pricedBySlug: Map<string, PricedDeck>) {
-  return mockDeckRepairPairSlugs.flatMap(({ mockSlug, deckSlug }) => {
-    const mock = getMockExamConfig(mockSlug);
-    const deck = getDeckBySlug(deckSlug);
-    if (!mock || !deck) return [];
-
-    return [{ mock, deck, pricedDeck: pricedBySlug.get(deckSlug) ?? null }];
-  });
-}
-
 export default async function HomePage() {
   const availableDecks = await getPricedDecks();
   const catalogGroups = await getPricedDecksByCategory();
-  const pricedBySlug = new Map(availableDecks.map((deck) => [deck.slug, deck]));
-  const premiumPriceLabel = formatCheckoutPrice(PREMIUM_CATALOG_USD);
   const mockExams = getAllMockExams();
   const indexedMockCount = mockExams.filter((mock) => shouldIndexMockExam(mock.slug)).length;
   const featuredMocks = featuredMockSlugs
     .map((slug) => getMockExamConfig(slug))
     .filter((mock): mock is MockExamConfig => mock !== undefined);
-  const pdfProductCount = availableDecks.filter((deck) => deck.format === "PDF").length;
-  const repairPairs = resolveRepairPairs(pricedBySlug);
   const homeCatalogGroups = catalogGroups
     .map((group) => {
       const decks = group.decks.filter((deck) => !isPrep2GoAppDeckSlug(deck.slug));
@@ -200,31 +125,8 @@ export default async function HomePage() {
     .filter((group) => group.topDecks.length > 0);
   const homeCatalogDecks = homeCatalogGroups.flatMap((group) => group.topDecks);
 
-  const mockSlugsForProof = [
-    ...new Set([
-      ...featuredMocks.map((mock) => mock.slug),
-      ...repairPairs.map(({ mock }) => mock.slug),
-    ]),
-  ];
-  const deckSlugsForProof = [
-    ...new Set(
-      repairPairs
-        .filter(({ deck }) => deck.status === "available")
-        .map(({ deck }) => deck.slug),
-    ),
-  ];
-  const mockStartEntries = await Promise.all(
-    mockSlugsForProof.map(async (slug) => [slug, await getPublicMockStartCount(slug)] as const),
-  );
-  const mockStartBySlug = new Map(mockStartEntries);
-  const deckPurchaseBySlug = new Map(
-    deckSlugsForProof.map((slug) => [slug, publicDeckPurchaseCount(slug)] as const),
-  );
-
   const sectionEvents = [
-    { selector: "#repair-pairs", name: "mock_landing_view" as const },
-    { selector: "#catalog", name: "catalog_view" as const },
-    { selector: "#faq", name: "faq_view" as const },
+    { selector: "#how-it-works", name: "catalog_view" as const },
   ];
 
   const jsonLd = {
@@ -327,42 +229,16 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* At a glance — stats + trust below first viewport */}
-        <section className="border-b border-line bg-paper" aria-label="Catalog snapshot">
-          <div className="mx-auto max-w-6xl px-6 py-10 sm:px-10">
-            <OfficialSourceTrustStrip className="max-w-3xl" compact />
-            <dl className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className={`${ledgerCard} p-4`}>
-                <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
-                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                  {indexedMockCount} indexed mocks
-                  {mockExams.length - indexedMockCount > 0
-                    ? ` · ${mockExams.length - indexedMockCount} preview`
-                    : ""}
-                </dd>
-              </div>
-              <div className={`${ledgerCard} p-4`}>
-                <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF catalog</dt>
-                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                  {availableDecks.length} decks
-                </dd>
-                {pdfProductCount > 0 ? (
-                  <dd className="mt-1 text-sm text-[#7a6e5a]">
-                    plus {pdfProductCount} printable PDF{pdfProductCount === 1 ? "" : "s"}
-                  </dd>
-                ) : null}
-              </div>
-              <div className={`${ledgerCard} p-4`}>
-                <dt className="text-sm text-[#7a6e5a]">Premium Anki &amp; PDF</dt>
-                <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
-                  {premiumPriceLabel}
-                </dd>
-                <dd className="mt-1 text-sm text-[#7a6e5a]">{premiumCatalogPriceLine()}</dd>
-                <dd className="mt-1 text-sm text-[#7a6e5a]">
-                  Practice tests are separate: the first attempt is free, then ${MOCK_PASS_PRICE_USD} for {MOCK_PASS_ATTEMPTS} attempts.
-                </dd>
-              </div>
-            </dl>
+        <section className="border-b border-line bg-paper" aria-label="What the ledger is">
+          <div className="mx-auto grid max-w-6xl gap-4 px-6 py-12 sm:grid-cols-3 sm:px-10">
+            {ledgerFacts.map((fact) => (
+              <article className={`${ledgerCard} p-5`} key={fact.title}>
+                <h2 className="text-lg text-ink">{fact.title}</h2>
+                <p className="mt-3 text-sm leading-6 text-muted">{fact.body}</p>
+              </article>
+            ))}
+          </div>
+          <div className="mx-auto max-w-6xl px-6 pb-8 sm:px-10">
             <LlmFactsStrip
               deckCount={availableDecks.length}
               mockCount={indexedMockCount}
@@ -371,342 +247,84 @@ export default async function HomePage() {
           </div>
         </section>
 
-        {/* Featured free mocks — 8 acquisition exams */}
         <section className="border-b border-line bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Popular exams</p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Timed mocks for the exams we push hardest
-            </h2>
-            <p className="mt-3 max-w-3xl text-[#4f493e]">
-              CFA Level 1, FRM Part 1, and Series 7 lead. The free start is 25 questions. The full
-              mock is longer. Then fix only the weak topics in the matching Anki deck.
-            </p>
-            <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {featuredMocks.map((mock) => {
-                const starts = mockStartBySlug.get(mock.slug);
-                return (
-                  <article
-                    className={`flex flex-col ${ledgerCard} p-5`}
-                    key={mock.slug}
-                  >
-                    <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
-                    <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
+            <h2 className="text-2xl text-ink">Timed mocks for the exams we push hardest.</h2>
+            <div className={`mt-6 ${ledgerList}`}>
+              {featuredMocks.map((mock) => (
+                <div className="flex flex-wrap items-center justify-between gap-4 py-4" key={mock.slug}>
+                  <div>
+                    <h3 className="text-xl text-ink">{mock.shortTitle}</h3>
+                    <p className="mt-1 text-sm text-muted">
                       {formatMockStatLine({
                         questionCount: mock.questionCount,
                         durationMinutes: mock.durationMinutes,
                         passPercent: mock.passRule.passPercent,
                       })}
                     </p>
-                    {typeof starts === "number" ? (
-                      <p className="mt-3 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
-                        {formatCompactMockStarts(starts)}
-                      </p>
-                    ) : null}
-                    <Link
-                      aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
-                      className={`mt-4 ${btnPrimarySm}`}
-                      href={`/mock-exams/${mock.slug}`}
-                    >
-                      {mockCtaLabel(mock)}
-                    </Link>
-                  </article>
-                );
-              })}
+                  </div>
+                  <Link
+                    aria-label={`${mockCtaLabel(mock)} for ${mock.shortTitle}`}
+                    className={btnPrimarySm}
+                    href={`/mock-exams/${mock.slug}`}
+                  >
+                    Start free mock
+                  </Link>
+                </div>
+              ))}
             </div>
-            <p className="mt-6 text-sm text-[#5f5749]">
-              <Link
-                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                href="/mock-exams"
-              >
-                Browse all free practice tests
+            <p className="mt-6 text-sm text-muted">
+              <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams">
+                All practice tests
               </Link>
-              {" — "}
-              full catalog stays live; this homepage only features the eight acquisition exams above.
             </p>
           </div>
         </section>
 
-        {/* Popular decks — compact internal-link boost for index priority URLs */}
-        <section className="border-b border-line bg-paper" aria-label="Popular Anki decks">
-          <div className="mx-auto max-w-6xl px-6 py-8 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Popular decks
-            </p>
-            <p className="mt-2 text-sm leading-6 text-[#5f5749]">
-              {popularDeckBoostLinks.map((link, index) => (
-                <span key={link.href}>
-                  {index > 0 ? " · " : null}
-                  <Link
-                    className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                    href={link.href}
-                  >
-                    {link.label}
-                  </Link>
-                </span>
-              ))}
-            </p>
-          </div>
-        </section>
-
-        {/* Exam categories — 4 worlds, not 12 vertical dumps */}
-        <section className="border-b border-line bg-paper">
+        <section className="border-b border-line bg-paper" id="how-it-works">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Exam categories
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Four study worlds — pick the one that matches your exam
-            </h2>
-            <p className="mt-3 max-w-3xl text-[#4f493e]">
-              US licensing is the primary acquisition push. Finance and professional certifications
-              stay ready. Admissions and citizenship decks remain in the catalog without homepage promotion.
-            </p>
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {examCategories.map((category) => (
-                <article
-                  className={`flex flex-col ${ledgerCard} p-5`}
-                  key={category.title}
-                >
-                  <h3 className="text-lg font-semibold text-[#18140f]">{category.title}</h3>
-                  <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">{category.description}</p>
-                  <Link
-                    className={`mt-4 ${btnSecondarySm}`}
-                    href={category.href}
-                  >
-                    {category.cta}
-                  </Link>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* 3. How it works */}
-        <section id="how-it-works" className="border-b border-line bg-paper">
-          <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              How it works
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Mock first, drill second
-            </h2>
-            <p className="mt-3 max-w-3xl text-[#4f493e]">
-              UniPrep2Go is built around a simple repair loop: diagnose with a free timed mock, then
-              fix weak topics with spaced-repetition flashcards.
-            </p>
-            <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
-            <ol className="mt-8 grid gap-4 md:grid-cols-3">
+            <ol className={ledgerList}>
               {howItWorksSteps.map((step, index) => (
-                <li
-                  className={`${ledgerCard} p-5`}
-                  key={step.title}
-                >
-                  <span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-[#1f3a5f]">
-                    Step {index + 1}
-                  </span>
-                  <h3 className="mt-3 font-semibold text-[#18140f]">{step.title}</h3>
-                  <p className="mt-2 text-sm leading-6 text-[#5f5749]">{step.detail}</p>
+                <li className="grid gap-3 py-6 sm:grid-cols-[4rem_1fr]" key={step.title}>
+                  <span className="font-serif text-3xl text-navy">{index + 1}</span>
+                  <div>
+                    <h2 className="text-xl text-ink">{step.title}</h2>
+                    <p className="mt-2 max-w-2xl text-sm leading-6 text-muted">{step.detail}</p>
+                  </div>
                 </li>
               ))}
             </ol>
-            <Link
-              className="mt-6 inline-flex text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
-              href="/anki-starter-kit"
-            >
-              Open the 15-minute Anki Starter Kit
-            </Link>
           </div>
         </section>
 
-        {/* 4. Mock → deck repair pairs */}
-        <section id="repair-pairs" className="border-b border-line bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-            <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-              Mock → deck repair
-            </p>
-            <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
-              Free practice test paired with the flashcard deck to fix weak topics
-            </h2>
-            <p className="mt-3 max-w-3xl text-[#4f493e]">
-              The eight acquisition exams above — start the mock, read the report, then drill the
-              linked product. Full index:{" "}
-              <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">
-                all {mockExams.length} practice tests
-              </Link>
-              .
-            </p>
-            <div className="mt-8 space-y-4">
-              {repairPairs.map(({ mock, deck, pricedDeck }) => {
-                const thumbnail = getDeckCoverUrl(deck);
-                const deckIsPlanned = deck.status === "planned";
-                const starts = mockStartBySlug.get(mock.slug);
-                const purchases = deckPurchaseBySlug.get(deck.slug);
-
-                return (
-                  <article
-                    className={`grid gap-4 ${ledgerCard} p-5 lg:grid-cols-[1fr_auto_1fr] lg:items-stretch`}
-                    key={mock.slug}
-                  >
-                    <div className={`flex flex-col ${ledgerCard} p-5`}>
-                      <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
-                        {mock.status === "live" ? "Timed mock · first one free" : "Readiness check"}
-                      </p>
-                      <h3 className="mt-2 text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
-                      <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749]">
-                        {formatMockStatLine({
-                          questionCount: mock.questionCount,
-                          durationMinutes: mock.durationMinutes,
-                          passPercent: mock.passRule.passPercent,
-                        })}
-                      </p>
-                      {typeof starts === "number" ? (
-                        <p className="mt-3 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
-                          {formatCompactMockStarts(starts)}
-                        </p>
-                      ) : null}
-                      <Link
-                        className={`mt-4 ${btnPrimarySm}`}
-                        href={`/mock-exams/${mock.slug}`}
-                      >
-                        {mockCtaLabel(mock)}
-                      </Link>
-                    </div>
-
-                    <div
-                      aria-hidden="true"
-                      className="hidden items-center justify-center px-2 text-2xl text-[#7a6e5a] lg:flex"
-                    >
-                      →
-                    </div>
-
-                    <div className={`flex items-stretch gap-4 ${ledgerCard} p-5`}>
-                      {thumbnail ? (
-                        <Link
-                          className="relative block aspect-[16/10] w-40 shrink-0 overflow-hidden rounded-xl border border-line bg-[#f6efe8]"
-                          href={`/decks/${deck.slug}`}
-                        >
-                          <Image
-                            alt=""
-                            aria-hidden
-                            className="object-cover object-left"
-                            fill
-                            sizes="160px"
-                            src={thumbnail}
-                            unoptimized={isPreoptimizedPublicImage(thumbnail)}
-                          />
-                        </Link>
-                      ) : null}
-                      <div className="flex min-w-0 flex-1 flex-col">
-                        <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
-                          {deckIsPlanned ? "Planned deck" : "Linked deck"}
-                        </p>
-                        <h3 className="mt-2 text-lg font-semibold text-[#18140f]">
-                          <Link className="hover:underline" href={`/decks/${deck.slug}`}>
-                            {deck.shortName}
-                          </Link>
-                        </h3>
-                        <p className="mt-2 flex-1 text-sm leading-6 text-[#5f5749] line-clamp-2">
-                          {deck.subtitle}
-                        </p>
-                        <p className="mt-3 text-sm font-medium text-[#18140f]">
-                          {pricedDeck
-                            ? `${formatDeckPriceLabel(pricedDeck)} · ${formatDeckContentLabel(pricedDeck)}`
-                            : deckIsPlanned
-                              ? "Planned · not yet on sale"
-                              : "See deck page"}
-                        </p>
-                        {typeof purchases === "number" ? (
-                          <p className="mt-2 text-xs tabular-nums tracking-wide text-[#7a6e5a]">
-                            {formatCompactDeckPurchases(purchases)}
-                          </p>
-                        ) : null}
-                        {pricedDeck?.checkoutUrl && !deckIsPlanned ? (
-                          <TrackedCheckoutLink
-                            className={`mt-3 ${btnSecondarySm}`}
-                            deckSlug={deck.slug}
-                            href={pricedDeck.checkoutUrl}
-                            source="home_repair_pair_buy"
-                          >
-                            {getCheckoutActionLabel(pricedDeck.checkoutProvider)} —{" "}
-                            {formatDeckPriceLabel(pricedDeck)}
-                          </TrackedCheckoutLink>
-                        ) : null}
-                      </div>
-                    </div>
-                  </article>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Top picks per category; the full list lives on /decks so the homepage stays light */}
-        <section id="catalog" className="border-b border-line bg-paper">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
-              Flashcard deck catalog
-            </h2>
-            <p className="mt-2 text-[#4f493e]">
-              Paid Anki decks and printable PDFs for daily drilling after a mock report. Top picks
-              per category below — the{" "}
-              <Link
-                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                href="/decks"
-              >
-                full catalog of {availableDecks.length} products
-              </Link>{" "}
-              lists every deck.
-            </p>
-            <div className="mt-8 grid gap-4 md:grid-cols-2">
-              {homeCatalogGroups.map((group) => (
-                <div
-                  className={`${ledgerCard} p-5`}
-                  id={`catalog-${group.category}`}
-                  key={group.category}
-                >
-                  <h3 className="text-lg font-semibold text-[#18140f]">{group.label}</h3>
-                  <ul className="mt-3 space-y-2 text-sm">
-                    {group.topDecks.map((deck) => (
-                      <li className="flex items-baseline justify-between gap-4" key={deck.slug}>
-                        <Link
-                          className="font-medium text-[#18140f] hover:underline"
-                          href={`/decks/${deck.slug}`}
-                        >
-                          {deck.shortName}
-                        </Link>
-                        <span className="shrink-0 text-[#5f5749]">
-                          {formatDeckPriceLabel(deck)}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                  <Link
-                    className="mt-4 inline-block text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                    href={`/decks#catalog-${group.category}`}
-                  >
-                    All {group.total} {group.label.toLowerCase()} products →
+        <section className="border-b border-line bg-paper" aria-label="Decks">
+          <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
+            <h2 className="text-2xl text-ink">Decks</h2>
+            <p className="mt-2 text-sm text-muted">Anki decks and formula PDFs. Prices are the live list prices.</p>
+            <div className={`mt-6 ${ledgerList}`}>
+              {popularDeckBoostLinks.map((link) => (
+                <div className="flex items-center justify-between gap-4 py-4" key={link.href}>
+                  <Link className="text-lg text-ink hover:underline" href={link.href}>
+                    {link.label}
+                  </Link>
+                  <Link className="text-sm font-semibold text-navy" href={link.href}>
+                    Open
                   </Link>
                 </div>
               ))}
             </div>
+            <p className="mt-6 text-sm text-muted">
+              <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/decks">
+                Full catalog of {availableDecks.length} products
+              </Link>
+              {" · "}
+              <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/faq">
+                Questions
+              </Link>
+            </p>
           </div>
         </section>
 
-        {/* 6. FAQ */}
-        <section id="faq" className="border-b border-line bg-white">
-          <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
-            <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">FAQ</h2>
-            <dl className="mt-8 space-y-6">
-              {siteFaqs.map((faq) => (
-                <div key={faq.question}>
-                  <dt className="font-medium text-[#18140f]">{faq.question}</dt>
-                  <dd className="mt-2 text-sm leading-7 text-[#5f5749]">{faq.answer}</dd>
-                </div>
-              ))}
-            </dl>
-          </div>
-        </section>
       </main>
       <SiteFooter />
     </>

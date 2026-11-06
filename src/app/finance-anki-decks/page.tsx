@@ -14,7 +14,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
-import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
+import { btnPrimary, btnSecondary, ledgerList } from "@/lib/ui-button-classes";
 
 const financeMockSlugs = [
   "sie-full-mock",
@@ -120,19 +120,15 @@ export default async function FinanceAnkiDecksPage() {
           pathwayCount={financeDecks.length + financeMocks.length}
           variant="hub"
         />
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Finance &amp; securities</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Finance Anki decks with free practice tests
-        </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          FINRA SIE → Series 7 → Series 63, plus Series 65 / 6 / 66, CFP, SAFE MLO, Enrolled Agent,
-          CFA Level 1 &amp; 2, FRM Part 1, and MBA admissions decks — each paired with a free timed
-          practice test. Take the mock first for topic scoring, then drill weak domains with Anki.
-          Independent prep — not CFA Institute, GARP, FINRA, CFP Board, NMLS, IRS, or ETS material.
+        <h1 className="text-5xl tracking-tight text-ink">Finance</h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
+          CFA, FRM, and the formula sheets. Each exam has a timed mock and a deck. The first mock
+          attempt is 25 questions free. CFA Level 1 leads. Independent prep — not CFA Institute, GARP,
+          FINRA, CFP Board, NMLS, IRS, or ETS material.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
-          <Link className={btnPrimary} href="/mock-exams/sie-full-mock">
-            Start free SIE practice test
+          <Link className={btnPrimary} href="/mock-exams/cfa-level-1-readiness-check">
+            Start the CFA Level 1 practice test
           </Link>
           <Link className={btnSecondary} href="/mock-exams">
             Browse all mocks
@@ -151,39 +147,41 @@ export default async function FinanceAnkiDecksPage() {
 
         <section className="mt-10">
           <h2 className="text-2xl font-semibold">Free finance mocks</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <div className={`mt-4 ${ledgerList}`}>
             {financeMocks.map((mock) => (
-              <Link
-                className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5 transition hover:border-[#1f3a5f]/30"
-                href={`/mock-exams/${mock.slug}`}
-                key={mock.slug}
-              >
-                <h3 className="font-semibold">{mock.shortTitle}</h3>
-                <p className="mt-2 text-sm text-[#5f5749]">
-                  {mock.questionCount} questions · {shouldIndexMockExam(mock.slug) ? "Indexed" : "Preview"}
-                </p>
-              </Link>
+              <div className="grid gap-2 py-4 sm:grid-cols-[1fr_auto] sm:items-center" key={mock.slug}>
+                <div>
+                  <h3 className="text-lg text-ink">{mock.shortTitle}</h3>
+                  <p className="mt-1 text-sm text-muted">
+                    {mock.questionCount} questions · {mock.durationMinutes} minutes
+                    {shouldIndexMockExam(mock.slug) ? "" : " · preview"}
+                  </p>
+                </div>
+                <Link className="text-sm font-semibold text-navy" href={`/mock-exams/${mock.slug}`}>
+                  Open the practice test
+                </Link>
+              </div>
             ))}
           </div>
         </section>
 
         <section className="mt-12">
           <h2 className="text-2xl font-semibold">Finance Anki decks</h2>
-          <ul className="mt-5 space-y-3">
+          <div className={`mt-4 ${ledgerList}`}>
             {financeDecks.map((deck) => (
-              <li key={deck.slug}>
-                <Link
-                  className="block rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-4 hover:border-[#1f3a5f]/30"
-                  href={`/decks/${deck.slug}`}
-                >
-                  <span className="font-semibold">{deck.title}</span>
-                  <span className="mt-1 block text-sm text-[#5f5749]">
-                    {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)}
-                  </span>
+              <div className="grid gap-2 py-4 sm:grid-cols-[1fr_auto_auto] sm:items-center" key={deck.slug}>
+                <Link className="text-lg text-ink hover:underline" href={`/decks/${deck.slug}`}>
+                  {deck.shortName}
                 </Link>
-              </li>
+                <span className="text-sm text-muted">
+                  {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)}
+                </span>
+                <Link className="text-sm font-semibold text-navy" href={`/decks/${deck.slug}`}>
+                  Open
+                </Link>
+              </div>
             ))}
-          </ul>
+          </div>
         </section>
 
         <section className="mt-12 max-w-3xl" id="faq">

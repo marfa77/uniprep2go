@@ -12,7 +12,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
-import { btnChip } from "@/lib/ui-button-classes";
+import { btnChip, ledgerList } from "@/lib/ui-button-classes";
 import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "@/lib/retired-language-decks";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -77,16 +77,13 @@ export default async function DecksHubPage() {
           pathwayCount={allDecks.length}
           variant="hub"
         />
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Catalog</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Anki decks &amp; exam prep
-        </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          All available UniPrep2Go study products — flashcard decks and PDFs for US licensing,
-          finance, building certifications, citizenship tests, and more. Prefer a free timed mock
+        <p className="text-xs font-semibold uppercase tracking-[0.14em] text-muted">Catalog · all decks and references</p>
+        <h1 className="mt-3 text-5xl tracking-tight text-ink">Decks</h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
+          Anki decks and formula PDFs. Prices below are the live list prices. Prefer a free timed mock
           first? Start at{" "}
-          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams">
-            free practice tests
+          <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams">
+            practice tests
           </Link>
           .
         </p>
@@ -113,26 +110,26 @@ export default async function DecksHubPage() {
               <h2 className="text-2xl font-semibold tracking-tight">
                 {categoryLabels[group.category] ?? group.category}
               </h2>
-              <ul className="mt-5 space-y-3">
+              <div className={`mt-4 ${ledgerList}`}>
+                <div className="hidden grid-cols-[1.4fr_1fr_auto_auto] gap-4 py-2 text-xs uppercase tracking-[0.14em] text-muted sm:grid">
+                  <span>Title</span>
+                  <span>Format</span>
+                  <span>Price</span>
+                  <span>Action</span>
+                </div>
                 {group.decks.map((deck) => (
-                  <li key={deck.slug}>
-                    <Link
-                      className="block rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-4 hover:border-[#1f3a5f]/30"
-                      href={`/decks/${deck.slug}`}
-                    >
-                      <span className="font-semibold">
-                        {deck.slug === "hvac-epa-608-anki-deck"
-                          ? "EPA 608 Anki deck"
-                          : deck.shortName}
-                      </span>
-                      <span className="mt-1 block text-sm text-[#5f5749]">
-                        {formatDeckContentLabel(deck)} · {formatDeckPriceLabel(deck)}
-                      </span>
+                  <div className="grid gap-1 py-4 sm:grid-cols-[1.4fr_1fr_auto_auto] sm:items-center sm:gap-4" key={deck.slug}>
+                    <Link className="text-lg text-ink hover:underline" href={`/decks/${deck.slug}`}>
+                      {deck.slug === "hvac-epa-608-anki-deck" ? "EPA 608 Anki deck" : deck.shortName}
                     </Link>
-                  </li>
+                    <span className="text-sm text-muted">{formatDeckContentLabel(deck)}</span>
+                    <span className="text-sm text-ink">{formatDeckPriceLabel(deck)}</span>
+                    <Link className="text-sm font-semibold text-navy" href={`/decks/${deck.slug}`}>
+                      Open
+                    </Link>
+                  </div>
                 ))}
-
-              </ul>
+              </div>
               {group.category === "language" ? (
                 <p className="mt-4 text-sm leading-6 text-[#5f5749]">
                   {RETIRED_LANGUAGE_DECKS_NOTE}:{" "}

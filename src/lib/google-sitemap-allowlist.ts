@@ -24,6 +24,7 @@ export const GOOGLE_SITEMAP_HUB_PATHS = [
   "/building-certification-anki-decks",
   "/language-certification-decks",
   "/blog",
+  "/faq",
 ] as const;
 
 export const GOOGLE_SITEMAP_SUPPORT_PATHS = [

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { SiteFooter } from "@/components/site-footer";
+import { ledgerList } from "@/lib/ui-button-classes";
 import { SiteHeader } from "@/components/site-header";
 import { getAllBlogPosts } from "@/lib/blog";
 import { withAiMetadata } from "@/lib/llm-meta";
@@ -98,45 +98,26 @@ export default function BlogIndexPage() {
       <SiteHeader />
 
       <div className="mx-auto w-full max-w-3xl px-6 py-10 sm:px-10 lg:px-12" id="main-content">
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Blog</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          Exam prep guides
-        </h1>
-        <p className="mt-6 max-w-2xl text-lg leading-8 text-[#4f493e]">
-          What the exam actually tests, the numbers that trip people up, and how to use a free mock
-          without fooling yourself — then repair gaps with Anki.
+        <h1 className="text-5xl tracking-tight text-ink">Guides</h1>
+        <p className="mt-4 max-w-2xl text-lg leading-8 text-muted">
+          Exam format, pass rules, and which product to use. One guide per question.
         </p>
 
-        <ul className="mt-12 divide-y divide-[#18140f]/10 border-y border-[#18140f]/10">
+        <ul className={`mt-10 ${ledgerList}`}>
           {posts.map((post) => (
-            <li className="py-8" key={post.slug}>
-              <Link
-                className="block overflow-hidden rounded-2xl border border-[#18140f]/10"
-                href={`/blog/${post.slug}`}
-              >
-                <Image
-                  alt={post.hero.alt}
-                  className="h-48 w-full object-cover sm:h-56"
-                  height={630}
-                  src={post.hero.src}
-                  width={1200}
-                />
-              </Link>
-              <p className="mt-5 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
-                {post.eyebrow} · {post.publishedAt}
-              </p>
-              <h2 className="mt-3 text-2xl font-semibold tracking-tight">
+            <li className="py-6" key={post.slug}>
+              <h2 className="text-2xl text-ink">
                 <Link className="hover:underline" href={`/blog/${post.slug}`}>
                   {post.title}
                 </Link>
               </h2>
-              <p className="mt-3 text-base leading-7 text-[#4f493e]">{post.metaDescription}</p>
-              <p className="mt-4">
+              <p className="mt-2 text-base leading-7 text-muted">{post.metaDescription}</p>
+              <p className="mt-3">
                 <Link
-                  className="text-sm font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                  className="text-sm font-semibold text-navy underline-offset-4 hover:underline"
                   href={`/blog/${post.slug}`}
                 >
-                  Read guide →
+                  Read guide
                 </Link>
               </p>
             </li>

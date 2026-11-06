@@ -337,15 +337,15 @@ export function MockRunner({
                   isLearn
                     ? learnOptionClass(tone, selected)
                     : selected
-                      ? "border-[#1f3a5f] bg-[#1f3a5f]/5 text-[#18140f]"
-                      : "border-[#18140f]/10 bg-[#f7f3ea] hover:border-[#18140f]/25"
+                      ? "border-navy bg-white text-ink"
+                      : "border-line bg-white hover:border-navy"
                 } ${isLearn && currentRevealed ? "cursor-default" : ""}`}
                 disabled={isLearn && currentRevealed}
                 onClick={() => selectAnswer(option.id)}
                 role="radio"
                 type="button"
               >
-                <span className="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-current/20 text-xs font-bold uppercase">
+                <span className="mr-3 inline-flex h-7 w-7 shrink-0 items-center justify-center border border-current/30 text-xs font-semibold uppercase">
                   {option.id}
                 </span>
                 <span>

@@ -9,7 +9,6 @@ import {
   DIAGNOSTIC_TOPIC_LABEL_TEXT,
   diagnosticSampleNote,
   diagnosticTopicLabel,
-  type DiagnosticTopicLabel,
 } from "@/lib/mock-exams/result-upsell";
 
 function verdictStyles(verdict: MockReport["verdict"]) {
@@ -36,25 +35,6 @@ function topicStatusLabel(status: MockReport["topicResults"][number]["status"]) 
       return "Critical";
   }
 }
-
-function topicBarTone(status: MockReport["topicResults"][number]["status"]) {
-  switch (status) {
-    case "strong":
-    case "on_track":
-      return "bg-[#1f3a5f]";
-    case "weak":
-      return "bg-[#8a6a1f]";
-    case "critical":
-      return "bg-[#7a2e2e]";
-  }
-}
-
-const diagnosticLabelTone: Record<DiagnosticTopicLabel, { text: string; bar: string }> = {
-  too_few: { text: "text-[#7a6e5a]", bar: "bg-[#18140f]/30" },
-  needs_work: { text: "text-[#8a6a1f]", bar: "bg-[#8a6a1f]" },
-  borderline: { text: "text-[#6b5418]", bar: "bg-[#b08a2e]" },
-  on_track: { text: "text-[#1f3a5f]", bar: "bg-[#1f3a5f]" },
-};
 
 type MockReportPanelProps = {
   config: MockExamConfig;
@@ -170,50 +150,38 @@ export function MockReportPanel({
         <p className="mt-4 max-w-3xl text-sm leading-7">{report.verdictExplanation}</p>
       </section>
 
-      <section className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-6 sm:p-8">
-        <h3 className="text-2xl font-semibold tracking-tight">Topic diagnosis</h3>
-        <ul className="mt-6 space-y-5">
-          {report.topicResults.map((topic) => {
-            const scoreWidth = Math.min(100, Math.max(0, topic.scorePercent));
-            const targetWidth = Math.min(100, Math.max(0, topic.targetPercent));
-            const diagnosticLabel = isFreeDiagnostic ? diagnosticTopicLabel(topic) : null;
-            const statusText = diagnosticLabel
-              ? DIAGNOSTIC_TOPIC_LABEL_TEXT[diagnosticLabel]
-              : topicStatusLabel(topic.status);
-            const barTone = diagnosticLabel
-              ? diagnosticLabelTone[diagnosticLabel].bar
-              : topicBarTone(topic.status);
-
-            return (
-              <li key={topic.topicId} className="rounded-2xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <p className="font-semibold text-[#18140f]">{topic.label}</p>
-                  <p className="text-sm font-medium text-[#4f493e]">
-                    {topic.correct}/{topic.total} ({topic.scorePercent}%) ·{" "}
-                    <span className={diagnosticLabel ? diagnosticLabelTone[diagnosticLabel].text : undefined}>
-                      {statusText}
-                    </span>
-                  </p>
-                </div>
-                <div className="relative mt-3 h-2.5 overflow-hidden rounded-full bg-[#18140f]/10">
-                  <div
-                    aria-hidden
-                    className="absolute inset-y-0 w-px bg-[#18140f]/35"
-                    style={{ left: `${targetWidth}%` }}
-                    title={`${topic.targetPercent}% target`}
-                  />
-                  <div
-                    className={`h-full motion-safe:transition-[width] motion-safe:duration-200 ${barTone}`}
-                    style={{ width: `${scoreWidth}%` }}
-                  />
-                </div>
-                <p className="mt-2 text-xs text-[#5f5749]">
-                  Target {topic.targetPercent}% · weight {topic.weightPercent}%
-                </p>
-              </li>
-            );
-          })}
-        </ul>
+      <section className="border border-line bg-white">
+        <h3 className="border-b border-line px-5 py-4 text-xl">Topic scores</h3>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[36rem] text-left text-sm">
+            <thead>
+              <tr className="border-b border-line text-xs uppercase tracking-[0.14em] text-muted">
+                <th className="px-5 py-3 font-medium">Topic</th>
+                <th className="px-5 py-3 font-medium">Questions</th>
+                <th className="px-5 py-3 font-medium">Accuracy</th>
+                <th className="px-5 py-3 font-medium">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {report.topicResults.map((topic) => {
+                const diagnosticLabel = isFreeDiagnostic ? diagnosticTopicLabel(topic) : null;
+                const statusText = diagnosticLabel
+                  ? DIAGNOSTIC_TOPIC_LABEL_TEXT[diagnosticLabel]
+                  : topicStatusLabel(topic.status);
+                return (
+                  <tr className="border-b border-line last:border-b-0" key={topic.topicId}>
+                    <td className="px-5 py-3 text-ink">{topic.label}</td>
+                    <td className="px-5 py-3 text-muted">
+                      {topic.correct} / {topic.total}
+                    </td>
+                    <td className="px-5 py-3 text-ink">{topic.scorePercent}%</td>
+                    <td className="px-5 py-3 text-muted">{statusText}</td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
+        </div>
       </section>
 
       {shouldRecommendDeck ? repairPlanSection : pacingSection}

@@ -368,26 +368,26 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
         id="main-content"
         tabIndex={-1}
       >
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-          {post.eyebrow}
+        <p className="text-sm text-muted">
+          <Link className="hover:text-ink" href="/">
+            Home
+          </Link>
+          <span aria-hidden> / </span>
+          <Link className="hover:text-ink" href="/blog">
+            Guides
+          </Link>
         </p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
-          {post.title}
-        </h1>
-        <p className="mt-3 font-mono text-xs uppercase tracking-[0.16em] text-[#7a6e5a]">
-          {post.publishedAt} · Updated {post.publishedAt} · UniPrep2Go editorial
-        </p>
+        <p className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-navy">Guide</p>
+        <h1 className="mt-3 text-4xl tracking-tight text-balance sm:text-5xl">{post.title}</h1>
         <p className="mt-6 text-lg leading-8 text-[#4f493e]">
           <RichText text={post.intro} />
         </p>
 
         {deck && introBuyLeadIn ? (
           <IntroBuyBlock deck={deck} leadIn={introBuyLeadIn} post={post} />
-        ) : null}
-
-        <StockFigure image={post.hero} priority />
-
-        {introBuyLeadIn ? null : <CtaBand deck={deck} post={post} />}
+        ) : (
+          <CtaBand deck={deck} post={post} />
+        )}
 
         {post.sections.map((section, sectionIndex) => (
           <section className="mt-12" key={section.heading}>

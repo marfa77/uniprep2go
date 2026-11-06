@@ -1,4 +1,3 @@
-import Image from "next/image";
 import {
   FREE_DIAGNOSTIC_QUESTIONS,
   freeAccessClause,
@@ -8,12 +7,8 @@ import {
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalogDeckBySlug } from "@/lib/decks";
-import { getLinkedDeckCoverUrl } from "@/lib/mock-exams/linked-deck-cover";
-import { getMockClusterImage } from "@/lib/mock-exams/cluster-images";
 import { getMocksByVertical } from "@/lib/mock-exams/hub-clusters";
 import { getMockOfficialResources, type MockOfficialResources } from "@/lib/mock-exams/official-resources";
-import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
-import { buildMockSeoPageCopy } from "@/lib/mock-exams/seo";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 
@@ -35,62 +30,6 @@ function ExternalLink({
     >
       {children}
     </a>
-  );
-}
-
-/** Vertical cluster hero + linked deck cover — breaks text-only template sameness. */
-export function MockExamVisualHero({ config }: { config: MockExamConfig }) {
-  const vertical = getVerticalDefinition(config.verticalId);
-  const clusterSrc = getMockClusterImage(vertical?.imageType ?? config.verticalId);
-  const coverSrc = getLinkedDeckCoverUrl(config.linkedDeckSlug);
-  const copy = buildMockSeoPageCopy(config);
-
-  return (
-    <div className="mt-6 overflow-hidden rounded-[1.75rem] border border-[#18140f]/10 bg-[#18140f]">
-      <div className="relative h-44 w-full sm:h-56">
-        <Image
-          alt={`${config.shortTitle} practice test study cluster`}
-          className="object-cover"
-          fill
-          priority
-          sizes="(max-width: 896px) 100vw, 896px"
-          src={clusterSrc}
-          unoptimized
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#18140f] via-[#18140f]/55 to-[#18140f]/15" />
-        <div className="absolute inset-x-0 bottom-0 flex items-end gap-4 p-5 sm:p-6">
-          {coverSrc ? (
-            <div className="relative h-20 w-14 shrink-0 overflow-hidden rounded-lg border border-[#fffaf0]/25 shadow-lg sm:h-24 sm:w-[4.25rem]">
-              <Image
-                alt={`${copy.practiceTestLabel} Anki cover`}
-                className="object-cover"
-                fill
-                sizes="68px"
-                src={coverSrc}
-                unoptimized
-              />
-            </div>
-          ) : null}
-          <div className="min-w-0 flex-1 pb-0.5">
-            <p className="font-mono text-[10px] uppercase tracking-[0.22em] text-[#fffaf0]/75">
-              {vertical?.label ?? config.verticalId}
-              {" · "}
-              {config.examBody}
-            </p>
-            <p className="mt-1 text-lg font-semibold leading-snug tracking-tight text-[#fffaf0] sm:text-xl">
-              {copy.practiceTestLabel}
-            </p>
-            <p className="mt-1 text-sm text-[#fffaf0]/75">
-              {formatMockStatLine({
-                questionCount: config.questionCount,
-                durationMinutes: config.durationMinutes,
-                passPercent: config.passRule.passPercent,
-              })}
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
   );
 }
 
@@ -150,16 +89,17 @@ export function MockExamSnapshot({ config }: { config: MockExamConfig }) {
   ];
 
   return (
-    <dl className="mt-6 grid gap-px overflow-hidden rounded-2xl border border-[#18140f]/12 bg-[#18140f]/10 sm:grid-cols-3">
-      {items.map((item) => (
-        <div className="bg-[#fffaf0] px-4 py-3" key={item.label}>
-          <dt className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#7a6e5a]">
-            {item.label}
-          </dt>
-          <dd className="mt-1 text-sm font-semibold leading-snug text-[#18140f]">{item.value}</dd>
-        </div>
-      ))}
-    </dl>
+    <section className="mt-8" aria-label="What this session is">
+      <h2 className="text-xl text-ink">What this session is</h2>
+      <dl className="mt-4 grid gap-px border border-line bg-line sm:grid-cols-3">
+        {items.map((item) => (
+          <div className="bg-white px-4 py-4" key={item.label}>
+            <dt className="text-xs uppercase tracking-[0.14em] text-muted">{item.label}</dt>
+            <dd className="mt-2 text-base text-ink">{item.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
   );
 }
 

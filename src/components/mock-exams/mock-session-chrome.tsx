@@ -126,12 +126,12 @@ export function MockStickyToolbar({
   onPrimary,
 }: MockStickyToolbarProps) {
   const navButtonClass =
-    "inline-flex min-h-12 items-center justify-center rounded-full border border-[#18140f]/20 px-3 text-sm font-semibold transition hover:border-[#18140f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-40 sm:px-5";
+    "inline-flex min-h-12 items-center justify-center rounded-md border border-line bg-white px-3 text-sm font-semibold text-ink transition hover:border-navy focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:opacity-40 sm:px-5";
   const primaryButtonClass =
-    "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-4 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-40 sm:w-auto sm:px-6";
+    "inline-flex min-h-12 w-full items-center justify-center rounded-md bg-navy px-4 text-sm font-semibold text-white transition hover:bg-navy-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy disabled:opacity-40 sm:w-auto sm:px-6";
 
   return (
-    <div className="sticky bottom-0 z-20 border-t border-[#18140f]/10 bg-[#f7f3ea]/95 px-4 py-3 backdrop-blur-sm pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6 sm:py-4">
+    <div className="sticky bottom-0 z-20 border-t border-line bg-paper px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6 sm:py-4">
       <div className="flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between sm:gap-3">
         <button
           className="min-h-10 self-start rounded-full px-1 text-sm font-medium text-[#5f5749] underline-offset-4 transition hover:text-[#18140f] hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:min-h-12 sm:px-4"

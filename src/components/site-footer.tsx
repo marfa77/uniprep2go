@@ -5,7 +5,30 @@ import { legalLinks, siteConfig } from "@/lib/site";
 export function SiteFooter() {
   return (
     <footer className="mx-auto w-full max-w-6xl px-6 pb-10 pt-4 sm:px-10 lg:px-12">
-      <div className="border-t border-[#18140f]/10 pt-6">
+      <nav aria-label="Product" className="flex flex-wrap gap-x-5 gap-y-2 border-t border-line py-5 text-sm text-muted">
+        <Link className="hover:text-ink" href="/mock-exams/cfa-level-1-readiness-check">
+          CFA Level 1 practice test
+        </Link>
+        <Link className="hover:text-ink" href="/mock-exams">
+          Practice tests
+        </Link>
+        <Link className="hover:text-ink" href="/decks/cfa-level-1-anki-deck">
+          CFA Level 1 deck · $19
+        </Link>
+        <Link className="hover:text-ink" href="/decks">
+          Decks
+        </Link>
+        <Link className="hover:text-ink" href="/faq">
+          Questions
+        </Link>
+        <Link className="hover:text-ink" href="/privacy">
+          Privacy
+        </Link>
+        <Link className="hover:text-ink" href="/terms">
+          Terms
+        </Link>
+      </nav>
+      <div className="border-t border-line pt-6">
         <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
           <div className="max-w-2xl space-y-3 text-xs leading-6 text-[#6d6252]">
             <p>{siteConfig.footerDisclaimer.independence}</p>

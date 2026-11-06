@@ -43,3 +43,5 @@ export const btnLinkNav = cx(
 );
 
 export const ledgerCard = "rounded-md border border-line bg-white";
+
+export const ledgerList = "divide-y divide-line border-y border-line";

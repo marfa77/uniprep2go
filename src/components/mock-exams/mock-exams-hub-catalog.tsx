@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useDeferredValue, useEffect, useMemo, useState } from "react";
@@ -9,6 +8,7 @@ import {
   type MockSearchIndexItem,
 } from "@/lib/mock-exams/search-index";
 import { formatMockStatLine } from "@/lib/mock-exams/mock-labels";
+import { ledgerList } from "@/lib/ui-button-classes";
 
 export type MockHubFeaturedCard = {
   slug: string;
@@ -46,14 +46,15 @@ export function MockExamsHubCatalog({
 }: MockExamsHubCatalogProps) {
   const router = useRouter();
   const searchParams = useSearchParams();
-  const initialQ = searchParams.get("q") ?? "";
-  const [query, setQuery] = useState(initialQ);
+  const urlQuery = searchParams.get("q") ?? "";
+  const [query, setQuery] = useState(urlQuery);
+  const [seenUrlQuery, setSeenUrlQuery] = useState(urlQuery);
+  if (urlQuery !== seenUrlQuery) {
+    setSeenUrlQuery(urlQuery);
+    setQuery(urlQuery);
+  }
   const deferredQuery = useDeferredValue(query);
   const hasQuery = deferredQuery.trim().length > 0;
-
-  useEffect(() => {
-    setQuery(searchParams.get("q") ?? "");
-  }, [searchParams]);
 
   useEffect(() => {
     const handle = window.setTimeout(() => {
@@ -172,38 +173,20 @@ export function MockExamsHubCatalog({
 
       {!hasQuery && filteredFeatured.length > 0 ? (
         <section className="mt-10">
-          <h2 className="text-2xl font-semibold tracking-tight">Featured mocks · first one free</h2>
-          <div className="mt-5 grid gap-4 sm:grid-cols-2">
+          <h2 className="text-sm uppercase tracking-[0.14em] text-muted">Catalog ledger · {filteredFeatured.length} exams</h2>
+          <div className={`mt-4 ${ledgerList}`}>
             {filteredFeatured.map((mock) => (
-              <article
-                className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
-                key={mock.slug}
-              >
-                <div className="flex flex-wrap items-center justify-between gap-2">
-                  <h3 className="text-lg font-semibold">{mock.title}</h3>
-                  <span className="rounded-full bg-[#1f3a5f]/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.16em] text-[#1f3a5f]">
-                    {mock.status === "live" ? "Live" : "Preview"}
-                  </span>
-                </div>
-                <p className="mt-2 flex-1 text-sm text-[#5f5749]">
-                  {formatMockStatLine(mock)}
-                </p>
-                {mock.deckHref && mock.deckLabel ? (
-                  <Link
-                    className="mt-2 text-sm font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                    href={mock.deckHref}
-                  >
-                    {mock.deckLabel}
-                  </Link>
-                ) : null}
+              <div className="grid gap-3 py-4 sm:grid-cols-[1fr_1.4fr_auto] sm:items-center" key={mock.slug}>
+                <h3 className="text-lg text-ink">{mock.shortTitle}</h3>
+                <p className="text-sm text-muted">{formatMockStatLine(mock)}</p>
                 <Link
                   aria-label={`${mock.ctaLabel} for ${mock.shortTitle}`}
-                  className="mt-4 inline-flex min-h-12 items-center justify-center rounded-lg bg-[#1f3a5f] px-4 py-2.5 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#152238] focus:outline-none focus-visible:ring-2 focus-visible:ring-[#1f3a5f] focus-visible:ring-offset-2"
+                  className="text-sm font-semibold text-navy underline-offset-4 hover:underline"
                   href={`/mock-exams/${mock.slug}`}
                 >
-                  {mock.ctaLabel}
+                  Start free mock
                 </Link>
-              </article>
+              </div>
             ))}
           </div>
         </section>
@@ -219,10 +202,10 @@ export function MockExamsHubCatalog({
               ? "Open a path to see only the exams that matched your search."
               : "Pick a vertical — lists live on dedicated pages so this hub stays scannable as the catalog grows."}
           </p>
-          <div className="mt-6 grid gap-4 sm:grid-cols-2">
+          <div className={`mt-6 ${ledgerList}`}>
             {filteredVerticals.map((vertical) => (
               <Link
-                className="group overflow-hidden rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] transition hover:border-[#1f3a5f]/40"
+                className="flex flex-wrap items-baseline justify-between gap-3 py-4"
                 href={
                   hasQuery
                     ? `${vertical.href}?q=${encodeURIComponent(deferredQuery.trim())}`
@@ -230,26 +213,11 @@ export function MockExamsHubCatalog({
                 }
                 key={vertical.id}
               >
-                <div className="relative h-28 w-full">
-                  <Image
-                    alt=""
-                    className="object-cover transition duration-300 group-hover:scale-[1.02]"
-                    fill
-                    sizes="(max-width: 640px) 100vw, 448px"
-                    src={vertical.imageSrc}
-                    unoptimized
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#18140f]/80 via-[#18140f]/30 to-transparent" />
-                  <div className="absolute bottom-3 left-3 right-3 flex items-end justify-between gap-2">
-                    <h3 className="text-lg font-semibold tracking-tight text-[#fffaf0]">
-                      {vertical.label}
-                    </h3>
-                    <span className="rounded-full bg-[#fffaf0]/15 px-2.5 py-1 text-xs font-semibold text-[#fffaf0]">
-                      {vertical.count}
-                    </span>
-                  </div>
-                </div>
-                <p className="px-4 py-3 text-sm leading-6 text-[#5f5749]">{vertical.description}</p>
+                <span>
+                  <span className="text-lg text-ink">{vertical.label}</span>
+                  <span className="mt-1 block text-sm text-muted">{vertical.description}</span>
+                </span>
+                <span className="text-sm text-muted">{vertical.count}</span>
               </Link>
             ))}
           </div>

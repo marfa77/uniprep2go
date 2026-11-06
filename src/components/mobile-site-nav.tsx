@@ -9,6 +9,7 @@ const navLinks = [
   { href: "/mock-exams", label: "Practice tests" },
   { href: "/decks", label: "Decks" },
   { href: "/blog", label: "Blog" },
+  { href: "/faq", label: "Questions" },
   { href: "/finance-anki-decks", label: "Finance" },
   { href: "/mock-exams/v/licensing", label: "Securities" },
   { href: "/mock-exams/v/real-estate", label: "State licenses" },

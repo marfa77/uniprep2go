@@ -155,24 +155,22 @@ export default function MockExamsIndexPage() {
         id="main-content"
         tabIndex={-1}
       >
-        <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Free practice tests</p>
-        <h1 className="mt-4 text-4xl font-semibold tracking-tight sm:text-5xl">
-          Timed mock exams for US licensing &amp; finance — first one free
-        </h1>
-        <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
+        <h1 className="text-5xl tracking-tight text-ink">Practice tests</h1>
+        <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
+          The first attempt is a free 25-question diagnostic. Full mocks and retakes are the $5 Mock Pass, 5 attempts.
           Start with the{" "}
-          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
+          <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
             CFA Level 1 practice test
           </Link>{" "}
           or the{" "}
-          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-2-readiness-check">
+          <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams/cfa-level-2-readiness-check">
             CFA Level 2 practice exam
           </Link>
-          . {indexedCount} live indexed mocks across {verticals.length} exam paths
+          . {indexedCount} indexed mocks
           {mocks.length - indexedCount > 0
-            ? `, plus ${mocks.length - indexedCount} preview readiness checks`
+            ? `, plus ${mocks.length - indexedCount} preview checks`
             : ""}
-          . Timed scoring, topic breakdown, and linked Anki deck repair. {mockFreeAccessNotice}
+          . {mockFreeAccessNotice}
         </p>
         <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />
