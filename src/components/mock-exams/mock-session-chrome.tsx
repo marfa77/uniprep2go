@@ -61,11 +61,11 @@ export function MockSessionChrome({
   const urgent = !isLearn && durationSeconds > 0 && remaining / durationSeconds <= 0.1;
 
   return (
-    <div className="sticky top-0 z-20 border-b border-[#18140f]/10 bg-[#f7f3ea]/95 px-4 py-3 backdrop-blur-sm pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6 sm:py-4">
+    <div className="sticky top-0 z-20 border-b border-line bg-paper px-4 py-3 pt-[max(0.75rem,env(safe-area-inset-top))] sm:px-6 sm:py-4">
       <div className="flex items-start justify-between gap-3">
         <div className="min-w-0 flex-1">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="inline-flex items-center rounded-full bg-[#1f3a5f]/10 px-2.5 py-1 text-[11px] font-semibold text-[#1f3a5f] sm:px-3 sm:text-xs">
+            <span className="inline-flex items-center border border-line bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-[0.08em] text-navy sm:px-3 sm:text-xs">
               {isLearn ? "Learn" : "Exam"}
             </span>
             <span className="truncate font-mono text-[11px] uppercase tracking-[0.18em] text-[#5f5749] sm:text-xs sm:tracking-[0.2em]">

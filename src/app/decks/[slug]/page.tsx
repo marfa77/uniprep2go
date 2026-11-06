@@ -437,7 +437,7 @@ export default async function DeckPage({
             ) : null}
           </div>
           {heroImage ? (
-            <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_50px_-34px_rgba(24,20,15,0.45)]">
+            <div className="overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]">
               <Image
                 alt={`${deck.shortName} product preview`}
                 className="h-auto w-full"
@@ -508,7 +508,7 @@ export default async function DeckPage({
                 <article
                   className={
                     deck.format === "PDF"
-                      ? "overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0] shadow-[0_18px_48px_-36px_rgba(24,20,15,0.5)]"
+                      ? "overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
                       : "overflow-hidden rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]"
                   }
                   key={`${card.question}-${card.imageUrl}-${card.audioUrl ?? ""}`}

@@ -1,53 +1,35 @@
 import Link from "next/link";
-import Image from "next/image";
-import { HeaderMockSearch } from "@/components/header-mock-search";
 import { MobileSiteNav } from "@/components/mobile-site-nav";
 import { btnFocus, btnLinkNav, cx } from "@/lib/ui-button-classes";
 import { siteConfig } from "@/lib/site";
 
+const headerLinks = [
+  { href: "/mock-exams", label: "Practice tests" },
+  { href: "/decks", label: "Decks" },
+  { href: "/blog", label: "Blog" },
+] as const;
+
 export function SiteHeader() {
   return (
-    <nav className="mx-auto flex w-full max-w-6xl items-center justify-between border-b border-[#18140f]/15 px-6 pb-5 pt-10 text-sm sm:px-10 lg:px-12">
-      <Link
-        className={cx("inline-flex items-center gap-2.5 font-semibold tracking-tight", btnFocus)}
-        href="/"
-        aria-label={`${siteConfig.name} home`}
-      >
-        <Image
-          alt=""
-          aria-hidden
-          className="h-7 w-auto"
-          height={28}
-          priority
-          src="/brand/uniprep2go-mark.svg"
-          width={168}
-        />
-      </Link>
-      <div className="hidden items-center gap-4 sm:flex">
-        <Link className={btnLinkNav} href="/mock-exams/v/licensing">
-          Securities
+    <header className="border-b border-line bg-paper">
+      <div className="h-1 bg-navy" />
+      <nav className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-5 text-sm">
+        <Link
+          className={cx("font-serif text-2xl font-normal tracking-tight text-ink", btnFocus)}
+          href="/"
+          aria-label={`${siteConfig.name} home`}
+        >
+          {siteConfig.name}
         </Link>
-        <Link className={btnLinkNav} href="/mock-exams/v/real-estate">
-          State licenses
-        </Link>
-        <HeaderMockSearch />
-        <Link className={btnLinkNav} href="/mock-exams">
-          More exams
-        </Link>
-        <Link className={btnLinkNav} href="/decks">
-          Anki decks
-        </Link>
-        <Link className={btnLinkNav} href="/sell-anki-deck">
-          Sell a deck
-        </Link>
-        <Link className={btnLinkNav} href="/blog">
-          Blog
-        </Link>
-        <Link className={btnLinkNav} href="/contact">
-          Contact
-        </Link>
-      </div>
-      <MobileSiteNav />
-    </nav>
+        <div className="hidden items-center gap-6 sm:flex">
+          {headerLinks.map((link) => (
+            <Link className={btnLinkNav} href={link.href} key={link.href}>
+              {link.label}
+            </Link>
+          ))}
+        </div>
+        <MobileSiteNav />
+      </nav>
+    </header>
   );
 }

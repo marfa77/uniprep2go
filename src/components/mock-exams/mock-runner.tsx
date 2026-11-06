@@ -223,7 +223,7 @@ export function MockRunner({
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <button
-              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] sm:flex-none"
+              className="inline-flex min-h-12 flex-1 items-center justify-center rounded-md bg-navy px-6 text-sm font-semibold text-white transition hover:bg-navy-deep focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy sm:flex-none"
               onClick={() => setConfirmSubmit(true)}
               type="button"
             >

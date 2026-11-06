@@ -184,7 +184,7 @@ export default function AnkiStarterKitPage() {
               </p>
             </div>
 
-            <div className="rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] p-5 shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
+            <div className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
               <div className="rounded-3xl bg-[#18140f] p-4 text-[#fffaf0]">
                 <div className="flex gap-2">
                   <span className="h-3 w-3 rounded-full bg-[#f0c36a]" />

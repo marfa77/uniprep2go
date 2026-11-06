@@ -48,6 +48,7 @@ import {
   btnPrimarySm,
   btnSecondary,
   btnSecondarySm,
+  ledgerCard,
 } from "@/lib/ui-button-classes";
 
 /** Homepage HTML budget is <200 KB; the full catalog renders on /decks. */
@@ -270,82 +271,68 @@ export default async function HomePage() {
       />
       <main id="main-content" tabIndex={-1}>
         {/* 1. Hero — CFA Level 1 practice test (pair lock 2026-10-24). */}
-        <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
-          <div className="mx-auto grid max-w-6xl gap-10 px-6 py-14 sm:px-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)] lg:items-center lg:py-20">
-            <div>
-              <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
-                Free · no signup
-              </p>
-              <h1 className="mt-4 max-w-2xl text-4xl font-semibold tracking-tight text-balance text-[#18140f] sm:text-5xl">
-                CFA Level 1 Practice Test
-              </h1>
-              <p className="mt-5 max-w-xl text-lg leading-8 text-[#4f493e]">
-                25 questions free, no signup. The full timed mock is 60 questions in 90 minutes
-                and scores every topic. The matching Anki deck drills only the weak ones.
-              </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Link
-                  href="/mock-exams/cfa-level-1-readiness-check"
-                  className={btnPrimary}
-                  aria-label="Start the CFA Level 1 practice test"
-                >
-                  Start the CFA Level 1 practice test
-                </Link>
-                <Link
-                  href="/mock-exams/cfa-level-2-readiness-check"
-                  className={btnSecondary}
-                  aria-label="Open the CFA Level 2 practice exam"
-                >
-                  CFA Level 2 practice exam
-                </Link>
-              </div>
-              <p className="mt-4 max-w-xl text-sm leading-6 text-[#5f5749]">
-                CFA Level I is offered in the November 2026 window, 11–22 November.{" "}
-                <a
-                  className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                  href="https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/26-nov-passport-assistance-letter.pdf"
-                  rel="noreferrer"
-                  target="_blank"
-                >
-                  CFA Institute
-                </a>
-              </p>
-              <p className="mt-5 text-sm text-[#5f5749]">
-                Also:{" "}
-                {heroSecondaryLinks.map((link, index) => (
-                  <span key={link.href}>
-                    {index > 0 ? " · " : null}
-                    <Link
-                      className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                      href={link.href}
-                    >
-                      {link.label}
-                    </Link>
-                  </span>
-                ))}
-              </p>
+        <section className="border-b border-line bg-paper">
+          <div className="mx-auto max-w-6xl px-6 py-16 sm:py-20">
+            <p className="text-xs font-semibold uppercase tracking-[0.14em] text-[#5f5749]">
+              Free · no signup
+            </p>
+            <h1 className="mt-3 max-w-3xl text-5xl text-balance text-[#18140f] sm:text-6xl">
+              CFA Level 1 Practice Test
+            </h1>
+            <p className="mt-5 max-w-2xl text-xl leading-8 text-[#5f5749]">
+              25 questions free, no signup. The full timed mock is 60 questions in 90 minutes
+              and scores every topic. The matching Anki deck drills only the weak ones.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Link
+                href="/mock-exams/cfa-level-1-readiness-check"
+                className={btnPrimary}
+                aria-label="Start the CFA Level 1 practice test"
+              >
+                Start the CFA Level 1 practice test
+              </Link>
+              <Link
+                href="/mock-exams/cfa-level-2-readiness-check"
+                className={btnSecondary}
+                aria-label="Open the CFA Level 2 practice exam"
+              >
+                CFA Level 2 practice exam
+              </Link>
             </div>
-            <div className="relative overflow-hidden rounded-[2rem] border border-[#18140f]/10 bg-[#fffaf0] shadow-[0_24px_60px_-32px_rgba(24,20,15,0.35)]">
-              <Image
-                alt="UniPrep2Go free timed practice tests and Anki decks for US licensing exams"
-                className="h-auto w-full object-cover"
-                height={630}
-                priority
-                sizes="(max-width: 1024px) 100vw, 560px"
-                src="/home/hero.webp"
-                unoptimized
-                width={1200}
-              />
-            </div>
+            <p className="mt-4 max-w-xl text-sm leading-6 text-[#5f5749]">
+              CFA Level I is offered in the November 2026 window, 11–22 November.{" "}
+              <a
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/26-nov-passport-assistance-letter.pdf"
+                rel="noreferrer"
+                target="_blank"
+              >
+                CFA Institute
+              </a>
+            </p>
+            <p className="mt-5 text-sm text-[#5f5749]">
+              Also:{" "}
+              {heroSecondaryLinks.map((link, index) => (
+                <span key={link.href}>
+                  {index > 0 ? " · " : null}
+                  <Link
+                    className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                    href={link.href}
+                  >
+                    {link.label}
+                  </Link>
+                </span>
+              ))}
+            </p>
           </div>
         </section>
 
         {/* At a glance — stats + trust below first viewport */}
-        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]" aria-label="Catalog snapshot">
+        <section className="border-b border-line bg-paper" aria-label="Catalog snapshot">
           <div className="mx-auto max-w-6xl px-6 py-10 sm:px-10">
             <OfficialSourceTrustStrip className="max-w-3xl" compact />
             <dl className="mt-8 grid gap-4 sm:grid-cols-3">
-              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+              <div className={`${ledgerCard} p-4`}>
                 <dt className="text-sm text-[#7a6e5a]">Live practice tests</dt>
                 <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
                   {indexedMockCount} indexed mocks
@@ -354,7 +341,7 @@ export default async function HomePage() {
                     : ""}
                 </dd>
               </div>
-              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+              <div className={`${ledgerCard} p-4`}>
                 <dt className="text-sm text-[#7a6e5a]">Anki &amp; PDF catalog</dt>
                 <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
                   {availableDecks.length} decks
@@ -365,7 +352,7 @@ export default async function HomePage() {
                   </dd>
                 ) : null}
               </div>
-              <div className="rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-4">
+              <div className={`${ledgerCard} p-4`}>
                 <dt className="text-sm text-[#7a6e5a]">Premium Anki &amp; PDF</dt>
                 <dd className="mt-1 text-2xl font-semibold text-[#18140f]">
                   {premiumPriceLabel}
@@ -385,7 +372,7 @@ export default async function HomePage() {
         </section>
 
         {/* Featured free mocks — 8 acquisition exams */}
-        <section className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+        <section className="border-b border-line bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">Popular exams</p>
             <h2 className="mt-3 text-2xl font-semibold tracking-tight text-[#18140f]">
@@ -400,7 +387,7 @@ export default async function HomePage() {
                 const starts = mockStartBySlug.get(mock.slug);
                 return (
                   <article
-                    className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                    className={`flex flex-col ${ledgerCard} p-5`}
                     key={mock.slug}
                   >
                     <h3 className="text-lg font-semibold text-[#18140f]">{mock.shortTitle}</h3>
@@ -441,7 +428,7 @@ export default async function HomePage() {
         </section>
 
         {/* Popular decks — compact internal-link boost for index priority URLs */}
-        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]" aria-label="Popular Anki decks">
+        <section className="border-b border-line bg-paper" aria-label="Popular Anki decks">
           <div className="mx-auto max-w-6xl px-6 py-8 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
               Popular decks
@@ -463,7 +450,7 @@ export default async function HomePage() {
         </section>
 
         {/* Exam categories — 4 worlds, not 12 vertical dumps */}
-        <section className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+        <section className="border-b border-line bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
               Exam categories
@@ -478,7 +465,7 @@ export default async function HomePage() {
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {examCategories.map((category) => (
                 <article
-                  className="flex flex-col rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5"
+                  className={`flex flex-col ${ledgerCard} p-5`}
                   key={category.title}
                 >
                   <h3 className="text-lg font-semibold text-[#18140f]">{category.title}</h3>
@@ -496,7 +483,7 @@ export default async function HomePage() {
         </section>
 
         {/* 3. How it works */}
-        <section id="how-it-works" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+        <section id="how-it-works" className="border-b border-line bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-12 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
               How it works
@@ -512,7 +499,7 @@ export default async function HomePage() {
             <ol className="mt-8 grid gap-4 md:grid-cols-3">
               {howItWorksSteps.map((step, index) => (
                 <li
-                  className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
+                  className={`${ledgerCard} p-5`}
                   key={step.title}
                 >
                   <span className="font-mono text-xs font-semibold uppercase tracking-[0.18em] text-[#1f3a5f]">
@@ -533,7 +520,7 @@ export default async function HomePage() {
         </section>
 
         {/* 4. Mock → deck repair pairs */}
-        <section id="repair-pairs" className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+        <section id="repair-pairs" className="border-b border-line bg-white">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <p className="font-mono text-xs uppercase tracking-[0.28em] text-[#1f3a5f]">
               Mock → deck repair
@@ -558,10 +545,10 @@ export default async function HomePage() {
 
                 return (
                   <article
-                    className="grid gap-4 rounded-3xl border border-[#18140f]/10 bg-[#f7f3ea] p-5 lg:grid-cols-[1fr_auto_1fr] lg:items-stretch"
+                    className={`grid gap-4 ${ledgerCard} p-5 lg:grid-cols-[1fr_auto_1fr] lg:items-stretch`}
                     key={mock.slug}
                   >
-                    <div className="flex flex-col rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
+                    <div className={`flex flex-col ${ledgerCard} p-5`}>
                       <p className="font-mono text-[10px] uppercase tracking-[0.16em] text-[#1f3a5f]">
                         {mock.status === "live" ? "Timed mock · first one free" : "Readiness check"}
                       </p>
@@ -593,10 +580,10 @@ export default async function HomePage() {
                       →
                     </div>
 
-                    <div className="flex items-stretch gap-4 rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-5">
+                    <div className={`flex items-stretch gap-4 ${ledgerCard} p-5`}>
                       {thumbnail ? (
                         <Link
-                          className="relative block aspect-[16/10] w-40 shrink-0 overflow-hidden rounded-xl border border-[#18140f]/10 bg-[#f6efe8]"
+                          className="relative block aspect-[16/10] w-40 shrink-0 overflow-hidden rounded-xl border border-line bg-[#f6efe8]"
                           href={`/decks/${deck.slug}`}
                         >
                           <Image
@@ -655,7 +642,7 @@ export default async function HomePage() {
         </section>
 
         {/* Top picks per category; the full list lives on /decks so the homepage stays light */}
-        <section id="catalog" className="border-b border-[#18140f]/10 bg-[#f7f3ea]">
+        <section id="catalog" className="border-b border-line bg-paper">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">
               Flashcard deck catalog
@@ -674,7 +661,7 @@ export default async function HomePage() {
             <div className="mt-8 grid gap-4 md:grid-cols-2">
               {homeCatalogGroups.map((group) => (
                 <div
-                  className="rounded-3xl border border-[#18140f]/10 bg-[#fffaf0] p-5"
+                  className={`${ledgerCard} p-5`}
                   id={`catalog-${group.category}`}
                   key={group.category}
                 >
@@ -707,7 +694,7 @@ export default async function HomePage() {
         </section>
 
         {/* 6. FAQ */}
-        <section id="faq" className="border-b border-[#18140f]/10 bg-[#fffaf0]">
+        <section id="faq" className="border-b border-line bg-white">
           <div className="mx-auto max-w-6xl px-6 py-14 sm:px-10">
             <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">FAQ</h2>
             <dl className="mt-8 space-y-6">

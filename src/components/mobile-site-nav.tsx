@@ -6,12 +6,13 @@ import { HeaderMockSearch } from "@/components/header-mock-search";
 import { btnFocus, cx } from "@/lib/ui-button-classes";
 
 const navLinks = [
+  { href: "/mock-exams", label: "Practice tests" },
+  { href: "/decks", label: "Decks" },
+  { href: "/blog", label: "Blog" },
+  { href: "/finance-anki-decks", label: "Finance" },
   { href: "/mock-exams/v/licensing", label: "Securities" },
   { href: "/mock-exams/v/real-estate", label: "State licenses" },
-  { href: "/mock-exams", label: "More exams" },
-  { href: "/decks", label: "Anki decks" },
   { href: "/sell-anki-deck", label: "Sell a deck" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
 ] as const;
 
@@ -96,7 +97,7 @@ export function MobileSiteNav() {
           <nav
             ref={panelRef}
             aria-label="Mobile"
-            className="absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[16rem] rounded-2xl border border-[#18140f]/10 bg-[#fffaf0] p-2 shadow-lg"
+            className="absolute right-0 top-[calc(100%+0.5rem)] z-50 min-w-[16rem] rounded-md border border-line bg-white p-2"
             id={menuId}
           >
             <div className="px-2 pb-2 pt-1">
