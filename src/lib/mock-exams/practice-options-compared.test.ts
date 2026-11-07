@@ -67,6 +67,13 @@ describe("getPracticeOptionsCompared", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });
 
+  it("includes CDCP competitors checked 2026-11-07", () => {
+    const table = getPracticeOptionsCompared("cdcp-readiness-check");
+    expect(table?.checkedDate).toBe("2026-11-07");
+    expect(table?.rows.some((r) => r.href.includes("open-exam-prep"))).toBe(true);
+    expect(table?.rows[0]?.href).toContain("cdcp-readiness-check");
+  });
+
   it("includes Finland kansalaisuuskoe competitors checked 2026-11-07", () => {
     const table = getPracticeOptionsCompared("finland-kansalaisuuskoe-readiness-check");
     expect(table?.checkedDate).toBe("2026-11-07");

@@ -1349,6 +1349,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     accessMode: "free_demand_test",
     durationMinutes: 60,
     questionCount: 40,
+    ankiDeckCardCount: 250,
     passRule: {
       type: "readiness_check",
       passPercent: 68,
@@ -1400,9 +1401,9 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       "Readiness check sized to the official EXIN EPI CDCP exam: 40 multiple-choice questions, 60 minutes, closed book, 68% pass mark (27/40). Facilities ~85%, Operations ~15%. Not EXIN or EPI exam material.",
     disclaimer: cdcpDisclaimer,
     description:
-      "A 40-question CDCP readiness diagnostic across data centre facilities (power, cooling, fire, security) and operations. Independent prep, not EXIN or EPI material.",
+      "A 40-question CDCP readiness diagnostic across data centre facilities (power, cooling, fire, security) and operations, drawn from a 250-question bank shared with the CDCP Anki deck. Independent prep, not EXIN or EPI material.",
     examBody: "EXIN / EPI (Enterprise Products Integration)",
-    lastUpdated: "2026-07-24",
+    lastUpdated: "2026-11-07",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the CDCP readiness check (250 cards across five data-centre domain groups; 40-question timed session).",
   },

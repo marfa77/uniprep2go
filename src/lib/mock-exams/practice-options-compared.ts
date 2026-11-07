@@ -385,6 +385,58 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "cdcp-readiness-check": {
+    mockSlug: "cdcp-readiness-check",
+    examLabel: "EXIN EPI CDCP",
+    heading: "Free CDCP practice options compared",
+    checkedDate: "2026-11-07",
+    lead:
+      "The official EXIN EPI CDCP exam is a fixed 40-question / 60-minute / 68% closed-book paper at the end of accredited EPI training — not a public infinite bank. Free third-party pages mostly offer untimed MCQ lists or large flashcard dumps. UniPrep2Go matches official length in the timed mock (25 free, then 40 in 60 minutes with topic scores) and pairs it with a 250-card ownable Anki deck from the same bank — independent prep, not EXIN or EPI material.",
+    rows: [
+      {
+        name: "UniPrep2Go CDCP readiness check + Anki",
+        href: "/mock-exams/cdcp-readiness-check",
+        format: "25 free, no signup; full timed mock 40 questions / 60 minutes · 68% target · 5 topic scores",
+        access: "Free start; Mock Pass for retakes; $9.99 / 250-card deck on Gumroad",
+        notes:
+          "250 unique MCQs in the bank (same as the Anki deck). Official form is 40Q/60m/68% — not a 100+ open bank.",
+      },
+      {
+        name: "EXIN / EPI — CDCP preparation guide (official)",
+        href: "https://www.epi-certification.com/uploads/file/exam%20prep/english_preparation_guide_cdcp_201706__.pdf",
+        format: "Exam rules: 40 MCQ, 60 min, 68% pass, closed book; domain outline in PDF",
+        access: "Free PDF",
+        notes: "Exam sitting requires accredited EPI CDCP course — verify current edition on exin.com.",
+      },
+      {
+        name: "EPI — 7-question facility quiz",
+        href: "https://www.epi-ap.com/content/28/365/CDCP,_The_Leading_Globally_Recognised_Training_and_Certification_for_Data_Centre_Professionals",
+        format: "Short ungraded quiz (7 items) on facility themes — no registration on EPI page copy",
+        access: "Free on EPI site (checked 2026-11-07)",
+        notes: "Awareness teaser, not a timed 40Q exam simulator.",
+      },
+      {
+        name: "OpenExamPrep — EXIN CDCP practice",
+        href: "https://open-exam-prep.com/practice/exin-cdcp",
+        format: "Page claims 100+ question bank + interactive quiz; cites 40Q/60m/68% official spec",
+        access: "Free start (page copy, checked 2026-11-07)",
+        notes: "Independent — not EXIN-endorsed; confirm whether timed mode matches 40Q.",
+      },
+      {
+        name: "ProctorReady — CDCP practice questions",
+        href: "https://proctorready.com/cdcp/",
+        format: "Untimed MCQ list with explanations (page shows 20+ stems, checked 2026-11-07)",
+        access: "Free in browser",
+        notes: "No timed 40-question session or topic report on the free page.",
+      },
+    ],
+    sources: [
+      { label: "EXIN EPI CDCP preparation guide (PDF)", url: "https://www.epi-certification.com/uploads/file/exam%20prep/english_preparation_guide_cdcp_201706__.pdf" },
+      { label: "EPI CDCP overview", url: "https://www.epi-ap.com/content/28/365/CDCP,_The_Leading_Globally_Recognised_Training_and_Certification_for_Data_Centre_Professionals" },
+      { label: "OpenExamPrep CDCP", url: "https://open-exam-prep.com/practice/exin-cdcp" },
+      { label: "ProctorReady CDCP", url: "https://proctorready.com/cdcp/" },
+    ],
+  },
   "finland-kansalaisuuskoe-readiness-check": {
     mockSlug: "finland-kansalaisuuskoe-readiness-check",
     examLabel: "Kansalaisuuskoe (Finland 2027)",
