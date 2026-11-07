@@ -516,7 +516,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
     whoFor:
       "Applicants filing Finnish citizenship from March 2027 onward who cannot rely on a Finnish/Swedish matriculation or degree exemption; residents who want Finnish-language civic literacy while waiting for Migri’s official bank; and learners comparing Nordic citizenship tests. Not legal advice and not the official Migri exam.",
     howToPrepare:
-      "1) Check whether your application date falls under the 1 March 2027 rule and whether a degree/matriculation exemption applies. 2) Watch migri.fi for the University of Helsinki learning package — study that first when it publishes. 3) Build literacy on Eduskunta, government, rights, equality, history, EU membership (1995), and everyday services (Kela, police, municipal employment services). 4) Take this 60-question Finnish readiness check (free 25-question version) and repair weak domains. 5) When official samples appear, switch drills to Migri’s format. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep on this pathway.",
+      "1) Check whether your application date falls under the 1 March 2027 rule and whether a degree/matriculation exemption applies. 2) Watch migri.fi for the University of Helsinki learning package — study that first when it publishes. 3) Build literacy on Eduskunta, government, rights, equality, history, EU membership (1995), and everyday services (Kela, police, municipal employment services). 4) Take this 60-question Finnish readiness check (free 25-question version) and repair weak domains. 5) Drill misses in the linked 120-card Finnish Anki deck (same bank). 6) When official samples appear, prioritise Migri’s published items.",
     topicBlurbs: [
       {
         id: "state-democracy",
@@ -577,7 +577,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "Myykö UniPrep2Go Suomen kansalaisuuskoe-Anki-pakkaa?",
         answer:
-          "Ei. Tälle polulle tarjotaan vain ilmainen mock. Käytä Migri-materiaalia ja tätä testiä.",
+          "Kyllä — 120 kortin suomenkielinen Anki-pakka samaan pankkiin kuin tämä mock. Ota ensin ilmainen valmiustesti, sitten Anki heikoille teemoille. Itsenäinen harjoitusmateriaali — ei Migri-materiaalia.",
       },
     ],
     keywords: [

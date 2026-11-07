@@ -6,7 +6,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
   titleTag: "Finland Citizenship Test 2027: Kansalaisuuskoe Format & Free Practice",
   metaDescription:
     "From 1 March 2027, many Finnish citizenship applications need a society knowledge test. Migri runs it; Helsinki University writes the study pack. No official question bank yet — here is what is confirmed.",
-  publishedAt: "2026-08-27",
+  publishedAt: "2026-11-07",
   eyebrow: "Finland · Kansalaisuuskoe",
   clusterId: "finland-citizenship",
   relatedSlugs: [
@@ -20,9 +20,9 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
   deckSlug: "finland-kansalaisuuskoe-anki-deck",
   cta: {
     mockLabel: "Take the free Finland kansalaisuuskoe readiness check (Finnish)",
-    deckLabel: "Mock-only prep (no Anki deck for this pathway)",
+    deckLabel: "Finland kansalaisuuskoe Anki deck — 120 cards",
     summary:
-      "Practice Migri theme areas with the 60-question Finnish kansalaisuuskoe readiness check (free 25-question version). When Migri publishes the official learning package, switch drills to that bank — UniPrep2Go does not sell an Anki deck for this pathway.",
+      "Practice Migri theme areas with the 60-question Finnish kansalaisuuskoe readiness check (free 25-question version), then spaced-recall weak themes in the 120-card Anki deck from the same bank. When Migri publishes the official learning package, layer that on top — independent prep, not Migri material.",
     extraLinks: [
       {
         href: "https://migri.fi/en/citizenship",
@@ -86,7 +86,8 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
             "Build Finnish civic vocabulary: eduskunta, hallitus, presidentti, perusoikeudet, tasa-arvo.",
             "Study institutions, EU membership (1995), neighbours, and everyday services (Kela, 112, police passports).",
             "Take the UniPrep2Go 60-question Finnish mock (free 25-question version) for topic scoring.",
-            "When Migri publishes samples, abandon third-party guesswork and drill the official materials.",
+            "Import the 120-card Finnish Anki deck for daily recall on weak themes.",
+            "When Migri publishes samples, prioritise the official materials over third-party drills.",
           ],
         },
       ],
@@ -117,8 +118,9 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
         "UniPrep2Go hosts a 60-question Finnish diagnostic (free 25-question version) at /mock-exams/finland-kansalaisuuskoe-readiness-check, drawn from 120 unique questions so retakes show new items. It is independent prep, not Migri material.",
     },
     {
-      question: "Will UniPrep2Go release an Anki deck?",
-      answer: "Not for this pathway — mock-only prep to capture weak domains until the official bank publishes.",
+      question: "Is there a Finland kansalaisuuskoe Anki deck?",
+      answer:
+        "Yes — a 120-card Finnish Anki deck built from the same items as the free readiness check. Take the mock for theme scores, then drill weak themes in Anki. Gumroad checkout may still be rolling out; the deck page lists current status.",
     },
     {
       question: "Who is exempt from kansalaisuuskoe?",

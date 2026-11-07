@@ -1548,11 +1548,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "finland-kansalaisuuskoe-readiness-check": {
     title: "Free Finland Kansalaisuuskoe Practice Test | 60 Questions (Finnish)",
     description:
-      "Finnish kansalaisuuskoe practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank, scored by theme. For citizenship applications from 1 Mar 2027 (ages 18–64); official bank not published yet. Independent mock-only prep.",
+      "Finnish kansalaisuuskoe practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank, scored by theme. Pairs with a 120-card Anki deck. For applications from 1 Mar 2027 (ages 18–64); official bank not published yet.",
     keywords: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti", "Suomen kansalaisuuskoe"],
     headline: "Free Finland Kansalaisuuskoe Readiness Check",
     intro:
-      "Timed Finnish-language diagnostic for Finland’s new kansalaisuuskoe (applications from 1 March 2027, applicants aged 18–64). Each attempt draws 60 of 120 unique questions across state and democracy, history and the EU, rights, and everyday services, then shows your weak themes — longer than most free Finnish drills (often 15–20 questions) so retakes score full themes. Compare free options in the table below. Confirm the final Migri format when the University of Helsinki learning material publishes — independent practice, not official Maahanmuuttovirasto material.",
+      "Timed Finnish-language diagnostic for Finland’s new kansalaisuuskoe (applications from 1 March 2027, applicants aged 18–64). Each attempt draws 60 of 120 unique questions across state and democracy, history and the EU, rights, and everyday services, then shows your weak themes — longer than most free Finnish drills (often 15–20 questions) so retakes score full themes. Pairs with a 120-card Anki deck built from the same bank on the linked deck page. Compare free options in the table below. Confirm the final Migri format when the University of Helsinki learning material publishes — independent practice, not official Maahanmuuttovirasto material.",
     audience:
       "Applicants preparing Finland’s 2027 citizenship knowledge test in Finnish or comparing Nordic civics pathways.",
     practiceTestLabel: "Kansalaisuuskoe harjoitustesti",

@@ -443,7 +443,7 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
     heading: "Free kansalaisuuskoe practice options compared",
     checkedDate: "2026-11-07",
     lead:
-      "Finland’s official University of Helsinki learning package is still rolling out on migri.fi — third-party Finnish drills already compete on length and per-theme feedback. UniPrep2Go is the longer timed diagnostic: 25 questions free with no signup, then 60 questions in 45 minutes from a 120-question bank with theme scores — honest vs the Act’s valtaosa pass rule and provisional ~20–40 official MCQs. Mock-only; no Anki deck.",
+      "Finland’s official University of Helsinki learning package is still rolling out on migri.fi — third-party Finnish drills already compete on length and per-theme feedback. UniPrep2Go pairs a longer timed diagnostic (25 questions free with no signup, then 60 questions in 45 minutes from a 120-question bank with theme scores) with a matching 120-card Finnish Anki deck ($9 civic SKU when Gumroad checkout is live) — honest vs the Act’s valtaosa pass rule and provisional ~20–40 official MCQs.",
     rows: [
       {
         name: "UniPrep2Go kansalaisuuskoe readiness check",
@@ -451,7 +451,7 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
         format: "25 free, no signup; full timed mock 60 questions / 45 minutes with four theme scores",
         access: "Free start; Mock Pass for retakes",
         notes:
-          "Finnish stems; 120 unique questions (30 per theme). Independent — not Migri material.",
+          "Finnish stems; 120 unique questions (30 per theme); same bank as the 120-card Anki deck. Independent — not Migri material.",
       },
       {
         name: "Maahanmuuttovirasto — citizenship test overview",
