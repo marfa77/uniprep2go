@@ -210,7 +210,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-24 | — |
 | civic | `naturalisation-francaise-readiness-check` | live | 60 / 200 | 2026-11-03 | FAIL (145 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
 | civic | `naturalisation-suisse-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (41 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |
-| civic | `naturalizzazione-svizzera-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (33 items + bank-level): distractor, correct; bank 60 for 60Q session |
+| civic | `naturalizzazione-svizzera-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | civic | `norway-statsborgerproven-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (38 items + bank-level): template/thin distractor notes, thin/template explanations, correct, correct >40% longer than every distractor; bank 60 for 60Q session |
 | civic | `polish-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `portugal-nacionalidade-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (1 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session |

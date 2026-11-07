@@ -12,6 +12,7 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-07 | `naturalizzazione-svizzera-readiness-check` | `naturalizzazione-svizzera-anki-deck` | 0 FAIL · audit 120/120 · triage P2 | Expand 016–030×4 IT + gate-fix; config 120-bank honesty | — | Branch `cursor/swiss-fr-it-expand-7c47`; FR expand stacked separately |
 | 2026-11-07 | `swiss-citizenship-readiness-check` | `einburgerung-schweiz-anki-deck` | 0 FAIL · audit 120/120 · triage P1 thin-heuristic | Expand 016–030×4 DE; mechanical gate pass | — | FR/IT still 60; cascades when sibling banks expand |
 | 2026-11-07 | `ny-real-estate-readiness-check` | `ny-real-estate-anki-deck` | 0 FAIL · 120 bank · spec 120 | Reviewed 2026-11-02 | `build_wave_mock_apkg` → 120 apkg; sample webp refresh; GEO 120-card copy; Gumroad file replace pending token | Live deck on Gumroad — run `--assets-only` locally |
 | 2026-11-07 | `enrolled-agent-readiness-check` | `enrolled-agent-anki-deck` | 0 FAIL · 240 bank · spec 240 | Reviewed 2026-11-02 | apkg 240 + sample webp; deck-seo/money-page 240; Gumroad replace pending | Session 120 / 120 min unchanged |

@@ -267,14 +267,14 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       70,
     ),
     officialSourceNote:
-      "No single federal Italian citizenship MCQ — canton/commune tests vary. Independent Italian diagnostic of federal civics themes only (60Q / 45 min / 70%). Not SEM material.",
+      "No single federal Italian citizenship MCQ — canton/commune tests vary. Independent Italian diagnostic of federal civics themes only (60Q session / 45 min / 70% from a 120-item bank). Not SEM material.",
     description:
-      `60-question Italian federal civics diagnostic (free 25-question version) for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the ${CIVIC_PRICE} Swiss language Anki deck.`,
+      `60-question Italian federal civics diagnostic (free 25-question version) from a 120-item bank for Swiss ordinary naturalisation. Canton/commune tests differ. Pairs with the ${CIVIC_PRICE} Swiss language Anki deck.`,
     examBody:
       "Switzerland — federal Staatskunde IT (no federal MCQ; canton/commune varies)",
     questionSourceNote:
-      "Questions sourced from the Prep2Go Immigration app Naturalizzazione Svizzera deck (Q&A converted to MCQ with related/near-miss distractors). Independent readiness check — not official Swiss government material.",
-    lastUpdated: "2026-07-26",
+      "Original UniPrep2Go bank: 120 Italian Staatskunde MCQs (30 per topic), expanded 2026-11-07; session draws 60. Prep2Go app deck lineage for early items. Independent — not official Swiss government material.",
+    lastUpdated: "2026-11-07",
     searchAliases: [
       "naturalizzazione svizzera test",
       "esame cittadinanza svizzera",
