@@ -1548,7 +1548,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "finland-kansalaisuuskoe-readiness-check": {
     title: "Free Finland Kansalaisuuskoe Practice Test | 60 Questions (Finnish)",
     description:
-      "Finnish kansalaisuuskoe practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank, scored by theme. For citizenship applications from 1 Mar 2027 (ages 18–64); official bank not published yet. Independent mock-only prep.",
+      "Finnish kansalaisuuskoe practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank, scored by theme. Pairs with a 120-card Anki deck. For applications from 1 Mar 2027 (ages 18–64); official bank not published yet.",
     keywords: ["kansalaisuuskoe", "Finnish citizenship test", "kansalaisuustesti", "Suomen kansalaisuuskoe"],
     headline: "Free Finland Kansalaisuuskoe Readiness Check",
     intro:

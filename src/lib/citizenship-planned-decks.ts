@@ -97,34 +97,52 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     slug: "finland-kansalaisuuskoe-anki-deck",
     category: "language",
     status: "planned",
-    title: "Finland Kansalaisuuskoe — Mock-only prep",
+    title: "Finland Kansalaisuuskoe Anki Deck — 120 Flashcards",
     shortName: "Finland Kansalaisuuskoe",
-    subtitle: "No Anki deck for sale — use the free Finnish-language readiness check.",
+    subtitle:
+      "120 Finnish civics flashcards for the 2027 kansalaisuuskoe — same bank as the free timed mock.",
     directAnswer:
-      "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the 60-question Finnish mock (free 25-question version) (drawn from 120 unique questions) at /mock-exams/finland-kansalaisuuskoe-readiness-check and study the University of Helsinki learning material when Migri publishes it around the turn of 2026–2027.",
+      "UniPrep2Go is releasing a 120-card Finland kansalaisuuskoe Anki deck ({PRICE} through Gumroad) built from the same validated Finnish MCQ bank as the free readiness check at /mock-exams/finland-kansalaisuuskoe-readiness-check. Checkout opens when Gumroad publish completes; take the mock first for theme scores, then import the .apkg for spaced recall. Independent study aid — not Maahanmuuttovirasto material.",
     lastUpdated: "2026-11-07",
-    audience: "Applicants preparing Finland’s 2027 citizenship knowledge test.",
+    audience:
+      "Applicants preparing Finland’s 2027 citizenship knowledge test in Finnish who want spaced repetition after the free mock.",
     format: ".apkg",
     coverImage: "/covers/finland-kansalaisuuskoe-anki-deck.webp",
     facts: {
-      cards: "Not offered",
-      topics: "Valtio ja demokratia; historia ja EU; oikeudet; palvelut",
-      formulas: "Use the free mock + official Migri materials",
+      cards: "120",
+      topics: "Valtio ja demokratia; historia ja EU; oikeudet ja yhteiskunta; palvelut ja arki",
+      formulas: "Finnish question → correct answer + teaching note",
       examYear: "Applications from 1 March 2027",
-      delivery: "No Anki deck — mock-only pathway",
+      delivery: "Digital .apkg through Gumroad (instant download after publish)",
     },
     topicCoverage: [
-      { name: "Valtio ja demokratia", examWeight: "25%", cards: "Mock" },
-      { name: "Historia, maantiede ja EU", examWeight: "25%", cards: "Mock" },
-      { name: "Oikeudet ja yhteiskunta", examWeight: "25%", cards: "Mock" },
-      { name: "Palvelut ja arki", examWeight: "25%", cards: "Mock" },
+      { name: "Valtio ja demokratia", examWeight: "25%", cards: "30" },
+      { name: "Historia, maantiede ja EU", examWeight: "25%", cards: "30" },
+      { name: "Oikeudet ja yhteiskunta", examWeight: "25%", cards: "30" },
+      { name: "Palvelut ja arki", examWeight: "25%", cards: "30" },
     ],
-    sampleCards: [],
+    sampleCards: [
+      {
+        question:
+          "Eduskuntavaaleissa valitaan koko maasta kansanedustajat seuraavaksi vaalikaudeksi. Kuinka monta edustajaa eduskuntaan valitaan ja kuinka pitkäksi kaudeksi?",
+        answer: "200 edustajaa neljäksi vuodeksi",
+      },
+      {
+        question:
+          "Suomi oli satoja vuosia osa toista valtakuntaa ennen vuotta 1809. Minkä valtakunnan osa Suomi silloin oli?",
+        answer: "Ruotsin valtakunnan",
+      },
+      {
+        question:
+          "Vuokranantaja kertoo asuntonäytössä, ettei hän vuokraa asuntoa hakijalle tämän ulkomaalaisen nimen vuoksi. Miten tilannetta arvioidaan Suomen lain mukaan?",
+        answer: "Kyse on kielletystä syrjinnästä alkuperän perusteella",
+      },
+    ],
     faqs: [
       {
-        question: "Is there a Finland kansalaisuuskoe Anki deck?",
+        question: "Is this deck available for purchase?",
         answer:
-          "No. UniPrep2Go offers a free Finnish-language readiness check only. Study Migri’s official learning materials when published.",
+          "The .apkg is built and Gumroad publish is in progress. Take the free mock now; this page’s checkout link activates when Gumroad goes live.",
       },
       {
         question: "Where is the free practice test?",

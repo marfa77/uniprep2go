@@ -88,5 +88,9 @@ function civicSoldDeck(slug: string, product: CivicProduct): CatalogAvailableDec
 }
 
 export const civicSoldDecks: CatalogAvailableDeck[] = Object.entries(products)
-  .filter(([slug]) => !WAVE_LAUNCHED.has(slug))
+  .filter(
+    ([slug, product]) =>
+      !WAVE_LAUNCHED.has(slug) &&
+      Boolean((product as CivicProduct & { gumroadProductId?: string }).gumroadProductId),
+  )
   .map(([slug, product]) => civicSoldDeck(slug, product));

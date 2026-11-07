@@ -534,7 +534,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "kansalaisuuskoe harjoitustesti ilmainen",
     mockSlug: "finland-kansalaisuuskoe-readiness-check",
     disambiguation:
-      "Finnish kansalaisuuskoe diagnostic for applications from 1 Mar 2027 (ages 18–64): 60 timed questions per attempt from a 120-question bank. The Act requires most answers correct; proposals cited ~20–40 MCQs / ~70% — confirm on migri.fi when materials publish. Mock-only (no Anki deck).",
+      "Finnish kansalaisuuskoe diagnostic for applications from 1 Mar 2027 (ages 18–64): 60 timed questions per attempt from a 120-question bank, with a matching 120-card Anki deck on the linked deck page. The Act requires most answers correct; proposals cited ~20–40 MCQs / ~70% — confirm on migri.fi when materials publish.",
   },
   {
     query: "Finnish citizenship test practice free",

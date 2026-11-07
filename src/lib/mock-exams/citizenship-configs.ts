@@ -558,9 +558,10 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       70,
     ),
     officialSourceNote:
-      "Finland’s kansalaisuuskoe applies to citizenship applications submitted from 1 March 2027 by applicants aged 18–64 (Citizenship Act amendment SäädK 552/2026, effective 1 Jan 2027). Migri organizes the digital on-site multiple-choice test in Finnish or Swedish; Helsingin yliopisto writes the learning material and questions, due around the turn of 2026–2027. The Act requires most (valtaosa) answers correct; proposals cited ~20–40 MCQs and ~70% — confirm binding format when Migri publishes. This is an independent 60Q / 45 min / 70% Finnish diagnostic from a 120-question bank — not official Maahanmuuttovirasto material. No Anki deck is sold for this pathway.",
+      "Finland’s kansalaisuuskoe applies to citizenship applications submitted from 1 March 2027 by applicants aged 18–64 (Citizenship Act amendment SäädK 552/2026, effective 1 Jan 2027). Migri organizes the digital on-site multiple-choice test in Finnish or Swedish; Helsingin yliopisto writes the learning material and questions, due around the turn of 2026–2027. The Act requires most (valtaosa) answers correct; proposals cited ~20–40 MCQs and ~70% — confirm binding format when Migri publishes. This is an independent 60Q / 45 min / 70% Finnish diagnostic from a 120-question bank — not official Maahanmuuttovirasto material. Pairs with the 120-card Finland kansalaisuuskoe Anki deck ({PRICE}).",
     description:
-      "60-question Finnish-language kansalaisuuskoe diagnostic (free 25-question version) for the 2027 citizenship test path, drawn from 120 unique questions across state and democracy, history and EU, rights, and everyday services. Official item bank not published yet. Mock-only prep (no Anki deck).",
+      "60-question Finnish-language kansalaisuuskoe diagnostic (free 25-question version) for the 2027 citizenship test path, drawn from 120 unique questions across state and democracy, history and EU, rights, and everyday services. Official item bank not published yet. Pairs with the {PRICE} 120-card Anki deck on the linked deck page.",
+    ankiDeckCardCount: 120,
     examBody:
       "Finland — kansalaisuuskoe (Migri; applications from 1 Mar 2027; format confirm on migri.fi)",
     questionSourceNote:

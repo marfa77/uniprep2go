@@ -2994,7 +2994,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "finland-kansalaisuuskoe",
     pageHeading: "Finland Kansalaisuuskoe — Facts & Prep",
     intro:
-      "Finland introduces a citizenship knowledge test (kansalaisuuskoe) for applications submitted from 1 March 2027. Maahanmuuttovirasto (Migri) organises the computer-based exam in Finnish or Swedish; the University of Helsinki prepares learning materials published on migri.fi. This page summarises published pathway facts plus UniPrep2Go’s free Finnish mock (no Anki deck sold — not official Migri material).",
+      "Finland introduces a citizenship knowledge test (kansalaisuuskoe) for applications submitted from 1 March 2027. Maahanmuuttovirasto (Migri) organises the computer-based exam in Finnish or Swedish; the University of Helsinki prepares learning materials published on migri.fi. This page summarises published pathway facts plus UniPrep2Go’s free Finnish mock and 120-card Anki deck from the same bank — not official Migri material.",
     exam_facts: {
       exam_name: "Kansalaisuuskoe (Finnish citizenship knowledge test)",
       administered_by: "Maahanmuuttovirasto (Migri); learning materials by University of Helsinki",
@@ -3028,7 +3028,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       "Migri organises the test; the University of Helsinki writes the learning material and questions, published around the turn of 2026–2027, with the first sittings expected around March 2027.",
       "Test language is Finnish or Swedish — not English. Digital multiple-choice, taken on site in seven planned locations (capital region, Tampere, Turku, Oulu, Vaasa, Kuopio, Rovaniemi).",
       "Exemptions: Finnish/Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons.",
-      "UniPrep2Go offers a 60-question / 45-minute / 70% Finnish diagnostic (free 25-question version) drawn from a 120-question unique bank (30 per theme) — mock-only, no Anki deck on this pathway.",
+      "UniPrep2Go offers a 60-question / 45-minute / 70% Finnish diagnostic (free 25-question version) drawn from a 120-question unique bank (30 per theme), plus a 120-card Anki .apkg for spaced recall on the linked deck page.",
     ],
     candidate_qa: [
       {
@@ -3045,7 +3045,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Does UniPrep2Go sell a Finland kansalaisuuskoe Anki deck?",
-        a: "No. UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck — mock-only prep at /mock-exams/finland-kansalaisuuskoe-readiness-check.",
+        a: "Yes — a 120-card Finnish Anki deck built from the same items as /mock-exams/finland-kansalaisuuskoe-readiness-check. Take the free mock for theme scores, then drill weak themes in Anki. Independent study aid — not Migri material.",
       },
     ],
     trademark_note:
