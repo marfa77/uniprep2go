@@ -149,11 +149,14 @@ export function ensureGumroadAccessToken({ persist = true } = {}) {
     return resolved;
   }
 
-  if (
-    persist &&
-    (resolved.source === "cli-config" || resolved.source === "cli-command")
-  ) {
-    persistGumroadTokenToEnvLocal(resolved.token);
+  if (persist && resolved.token && resolved.source !== "env.local") {
+    if (
+      resolved.source === "cli-config" ||
+      resolved.source === "cli-command" ||
+      resolved.source === "env"
+    ) {
+      persistGumroadTokenToEnvLocal(resolved.token);
+    }
   }
 
   return resolved;
