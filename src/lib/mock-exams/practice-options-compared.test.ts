@@ -66,4 +66,12 @@ describe("getPracticeOptionsCompared", () => {
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });
+
+  it("includes Finland kansalaisuuskoe competitors checked 2026-11-07", () => {
+    const table = getPracticeOptionsCompared("finland-kansalaisuuskoe-readiness-check");
+    expect(table?.checkedDate).toBe("2026-11-07");
+    expect(table?.rows.some((r) => r.href.includes("migri.fi"))).toBe(true);
+    expect(table?.rows.some((r) => r.href.includes("kansalaisuuskoulu"))).toBe(true);
+    expect(table?.rows[0]?.href).toContain("finland-kansalaisuuskoe");
+  });
 });

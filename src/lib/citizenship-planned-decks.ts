@@ -102,7 +102,7 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     subtitle: "No Anki deck for sale — use the free Finnish-language readiness check.",
     directAnswer:
       "UniPrep2Go does not sell a Finland kansalaisuuskoe Anki deck. Take the 60-question Finnish mock (free 25-question version) (drawn from 120 unique questions) at /mock-exams/finland-kansalaisuuskoe-readiness-check and study the University of Helsinki learning material when Migri publishes it around the turn of 2026–2027.",
-    lastUpdated: "2026-10-09",
+    lastUpdated: "2026-11-07",
     audience: "Applicants preparing Finland’s 2027 citizenship knowledge test.",
     format: ".apkg",
     coverImage: "/covers/finland-kansalaisuuskoe-anki-deck.webp",

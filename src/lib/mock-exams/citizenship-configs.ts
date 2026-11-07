@@ -565,7 +565,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       "Finland — kansalaisuuskoe (Migri; applications from 1 Mar 2027; format confirm on migri.fi)",
     questionSourceNote:
       "Authored by UniPrep2Go for Finland kansalaisuuskoe (2027) theme practice — 120 independent Finnish MCQs (30 per theme) on the topic areas named in the amended Citizenship Act and Migri guidance, each wrong option with its own explanation. Not official Maahanmuuttovirasto or University of Helsinki material.",
-    lastUpdated: "2026-10-09",
+    lastUpdated: "2026-11-07",
     searchAliases: [
       "kansalaisuuskoe",
       "Finnish citizenship test",

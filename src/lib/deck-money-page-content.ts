@@ -92,6 +92,8 @@ export const pitchOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling Anki. Take the 60Q diagnostic (free 25-question version) now — no national published Q-count; verify your state SHIP/OCCT path.",
   "czech-citizenship-anki-deck":
     "$9 / 169 Czech reálie cards + 60Q / 45 min diagnostic (free 25-question version) — official zkouška z reálií is 30Q / 30 min / 60% from the NPI ~300-item pool.",
+  "finland-kansalaisuuskoe-anki-deck":
+    "No Anki deck — free 60Q / 45 min Finnish kansalaisuuskoe diagnostic (25Q free) from a 120-question bank with theme scores; official Migri/UH material when published. Mock-only.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish PD2/PD3 cards with audio (≈ B1/B1+, not PD1/A2) — residence/citizenship language framing vs free AnkiWeb LITE 100.",
   "nha-cbcs-anki-deck":
@@ -207,6 +209,8 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
     "Planned SHIP Medicare counseling cards for Parts A/B/C/D themes, rights/appeals, fraud awareness, and counseling standards. The 60-question diagnostic (free 25-question version) is live; there is no public national Q-count — verify your state SHIP/OCCT path. Not a state SHIP certificate.",
   "czech-citizenship-anki-deck":
     "Live Anki deck for Czech citizenship reálie (zkouška z českých reálií) themes: state & rights, history/geography/EU, society, and public services. 60Q diagnostic live now (free 25-question version); official exam is 30Q/30min/60% from the NPI pool. Language B1 is a separate sitting; permanent residence usually needs A2 language, not this civics deck.",
+  "finland-kansalaisuuskoe-anki-deck":
+    "Mock-only Finland kansalaisuuskoe pathway: no .apkg for sale. Use the Finnish-language [60-question readiness check](/mock-exams/finland-kansalaisuuskoe-readiness-check) (free 25-question version, 120-question bank, four theme scores) while Migri and the University of Helsinki publish official learning materials for applications from 1 March 2027.",
   "danish-a2-prove-i-dansk-anki-deck":
     "1,000 Danish vocabulary cards with audio for Prøve i Dansk PD2 / PD3 (≈ CEFR B1 / B1+, not A2/PD1) plus residence and citizenship language themes. Ownable $26 .apkg — prefer over the free Prep2Go AnkiWeb LITE 100 when you need full pathway coverage; not a timed listening/writing substitute for official sample papers on danskogproever.dk.",
   "nha-cbcs-anki-deck":
@@ -2102,6 +2106,22 @@ Candidates invent a national fixed Q-count/pass score, skip Part D comparison pr
 ### What this does not replace
 
 State SHIP training, OCCT scheduling, or your program’s certificate. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not SHIP TA Center material.`,
+
+  "finland-kansalaisuuskoe-anki-deck": `### Mock-only pathway
+
+UniPrep2Go does **not** sell a Finland kansalaisuuskoe Anki deck. Finnish stems belong on the timed mock so you practise the same language as the official computer test (Finnish or Swedish on site at Migri).
+
+### Start here
+
+**Phase 1:** Confirm your application date (on or after **1 March 2027**), age band (**18–64**), and whether a matriculation or Finnish/Swedish university degree exempts you. **Phase 2:** Read [migri.fi/kansalaisuuskoe](https://migri.fi/kansalaisuuskoe) and the University of Helsinki learning package when Migri publishes it (turn of 2026–2027). **Phase 3:** Run the [60-question Finnish readiness check (free 25-question version)](/mock-exams/finland-kansalaisuuskoe-readiness-check) — 120 unique questions, four theme scores, compare free drills in the comparison table on that page. **Phase 4:** Re-drill weak themes; switch to official samples when Migri ships them.
+
+### What we beat vs other free drills
+
+Most Finnish third-party drills today are **15–20 questions** per session (topic slices or small shuffles). This mock is a **60-question / 45-minute** diagnostic for theme scoring — longer than the proposed official ~20–40 MCQ form, by design, so Mock Pass retakes surface new stems from the 120-bank.
+
+### What this is not
+
+Official Maahanmuuttovirasto or University of Helsinki material, not a substitute for Migri’s published learning package, and not an Anki product listing.`,
 
   "czech-citizenship-anki-deck": `### What is inside
 
