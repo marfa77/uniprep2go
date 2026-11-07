@@ -472,6 +472,8 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
                 ? "2026-10-04"
                 : deck.slug === "cem-anki-deck"
                   ? "2026-10-06"
+                : deck.slug === "cdcp-anki-deck"
+                  ? "2026-11-07"
                 : "2026-08-06",
     facts: {
       ...deck.facts,

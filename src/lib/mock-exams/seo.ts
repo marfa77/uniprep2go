@@ -1089,7 +1089,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cdcp-readiness-check": {
     title: "Free CDCP Practice Test | 40-Question Certified Data Centre Professional Readiness Check",
     description:
-      "CDCP practice questions online: free 25-question diagnostic, full mock 40 timed questions across data centre facilities and operations domains, 60 minutes, 68% readiness target (matches official pass mark), topic diagnosis, and full answer review. Independent prep — not EXIN or EPI exam material.",
+      "CDCP practice questions online: free 25-question diagnostic, full mock 40 timed questions across data centre facilities and operations domains, 60 minutes, 68% readiness target (matches official pass mark), topic diagnosis, and full answer review. Pairs with a $9.99 / 250-card Anki deck from the same bank. Independent prep — not EXIN or EPI exam material.",
     keywords: [
       "cdcp practice test",
       "certified data centre professional exam",
@@ -1101,7 +1101,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Certified Data Centre Professional (CDCP) Readiness Check",
     intro:
-      "A timed CDCP readiness diagnostic matching the official EXIN EPI exam length — 40 closed-book multiple-choice questions in 60 minutes with a 68% pass target (27/40).",
+      "A timed CDCP readiness diagnostic matching the official EXIN EPI exam length — 40 closed-book multiple-choice questions in 60 minutes with a 68% pass target (27/40), drawn from a 250-question bank shared with the live CDCP Anki deck. Compare free options in the table below.",
     audience:
       "Data centre operators, facility engineers, IT infrastructure staff, and technicians preparing for the EXIN EPI Certified Data Centre Professional credential after accredited EPI training.",
     practiceTestLabel: "CDCP practice test",

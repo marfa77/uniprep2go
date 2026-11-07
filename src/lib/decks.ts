@@ -3935,8 +3935,8 @@ const rawDecks: Deck[] = [
     shortName: "CDCP",
     subtitle: "250 Anki flashcards for EXIN EPI Certified Data Centre Professional (CDCP) exam prep.",
     directAnswer:
-      "The CDCP Anki Deck is a UniPrep2Go product with 250 MCQ flashcards covering EXIN EPI Certified Data Centre Professional domains — site/standards, power & EMF, cooling, fire/security, and operations — plus a 40-question timed readiness check (free 25-question version).",
-    lastUpdated: "2026-08-14",
+      "UniPrep2Go sells a live UniPrep2Go CDCP Anki deck: 250 MCQ flashcards covering EXIN EPI CDCP domains — site/standards, power & EMF, cooling, fire/security, and operations — plus a 40-question timed readiness check (free 25-question version) from the same bank. Independent study aid after accredited EPI training — not EXIN or EPI exam material.",
+    lastUpdated: "2026-11-07",
     audience:
       "Data centre operators, facility engineers, and IT infrastructure professionals preparing for the EXIN EPI CDCP credential after accredited EPI training.",
     format: ".apkg",
