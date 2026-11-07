@@ -385,6 +385,70 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "finland-kansalaisuuskoe-readiness-check": {
+    mockSlug: "finland-kansalaisuuskoe-readiness-check",
+    examLabel: "Kansalaisuuskoe (Finland 2027)",
+    heading: "Free kansalaisuuskoe practice options compared",
+    checkedDate: "2026-11-07",
+    lead:
+      "Finland’s official University of Helsinki learning package is still rolling out on migri.fi — third-party Finnish drills already compete on length and per-theme feedback. UniPrep2Go is the longer timed diagnostic: 25 questions free with no signup, then 60 questions in 45 minutes from a 120-question bank with theme scores — honest vs the Act’s valtaosa pass rule and provisional ~20–40 official MCQs. Mock-only; no Anki deck.",
+    rows: [
+      {
+        name: "UniPrep2Go kansalaisuuskoe readiness check",
+        href: "/mock-exams/finland-kansalaisuuskoe-readiness-check",
+        format: "25 free, no signup; full timed mock 60 questions / 45 minutes with four theme scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Finnish stems; 120 unique questions (30 per theme). Independent — not Migri material.",
+      },
+      {
+        name: "Maahanmuuttovirasto — citizenship test overview",
+        href: "https://migri.fi/kansalaisuuskoe",
+        format: "Official pathway facts; full public question bank not published at check date",
+        access: "Free information",
+        notes: "Binding Q count, fee, and pass threshold may follow by decree — verify here.",
+      },
+      {
+        name: "ENB Consulting — topic drills",
+        href: "https://www.enb.fi/fi/tyokalut/kansalaisuuskoe-harjoitus/",
+        format: "15 questions per theme (six themes on page copy), explanation after each answer",
+        access: "Free, no account (page copy, checked 2026-11-07)",
+        notes: "Independent study material — not official Migri items.",
+      },
+      {
+        name: "Kansalaisuuskoulu",
+        href: "https://kansalaisuuskoulu.fi/",
+        format: "Free Finnish practice quiz with per-answer explanations and sources",
+        access: "Free, no account (page copy, checked 2026-11-07)",
+        notes: "Progressive study path; claims alignment with Migri topic list.",
+      },
+      {
+        name: "Selkoraha — 20-question draw",
+        href: "https://selkoraha.fi/fi/laskurit/kansalaisuuskoe-harjoitus",
+        format: "20 MCQs drawn from a 40-question pool; practice pass line 75% on page",
+        access: "Free in browser (checked 2026-11-07)",
+        notes: "Shorter shuffle — official pass rule not published at check date.",
+      },
+      {
+        name: "Kansalaisuuskurssi",
+        href: "https://kansalaisuuskurssi.fi/",
+        format: "Course waitlist + free practice (page copy); seven test cities listed",
+        access: "Free practice without account (checked 2026-11-07)",
+        notes: "Tracks Migri publishing timeline for 2026/2027.",
+      },
+    ],
+    sources: [
+      { label: "Migri — kansalaisuuskoe", url: "https://migri.fi/kansalaisuuskoe" },
+      {
+        label: "Migri — Citizenship Act change 2027",
+        url: "https://migri.fi/-/kansalaisuuslaki-muuttuu-1.1.2027-suomessa-otetaan-kayttoon-kansalaisuuskoe",
+      },
+      { label: "ENB — kansalaisuuskoe harjoitus", url: "https://www.enb.fi/fi/tyokalut/kansalaisuuskoe-harjoitus/" },
+      { label: "Kansalaisuuskoulu", url: "https://kansalaisuuskoulu.fi/" },
+      { label: "Selkoraha — harjoitus", url: "https://selkoraha.fi/fi/laskurit/kansalaisuuskoe-harjoitus" },
+      { label: "Kansalaisuuskurssi", url: "https://kansalaisuuskurssi.fi/" },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(
