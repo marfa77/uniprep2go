@@ -215,7 +215,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `polish-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `portugal-nacionalidade-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (1 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session |
 | civic | `sweden-medborgarskapsprov-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
-| civic | `swiss-citizenship-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (39 items + bank-level): thin/template explanations, distractor, correct, each key letter 15-35% (n>=40); bank 60 for 60Q session |
+| civic | `swiss-citizenship-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | civic | `finland-kansalaisuuskoe-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 
 ## Catalog totals
