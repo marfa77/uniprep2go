@@ -269,7 +269,7 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
     examBody: "NY DOS",
     questionSourceNote:
       "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session is still 60 questions / 90 minutes and draws 15 from each topic.",
-    lastUpdated: "2026-11-02",
+    lastUpdated: "2026-11-07",
   }),
   nicheReadinessConfig({
     slug: "cda-childcare-readiness-check",

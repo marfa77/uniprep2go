@@ -486,11 +486,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "enrolled-agent-anki-deck": {
-    title: "IRS Enrolled Agent Anki Deck | 120 SEE Flashcards + Free Mock",
-    headline: "IRS Enrolled Agent (SEE) Prep — 120 Flashcards",
+    title: "IRS Enrolled Agent Anki Deck | 240 SEE Flashcards + Free Mock",
+    headline: "IRS Enrolled Agent (SEE) Prep — 240 Flashcards",
     studyLabel: "Enrolled Agent Anki flashcards",
     description:
-      "Enrolled Agent Anki: 120 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a 120-question EA readiness check (free 25-question version) with topic scoring. Ownable .apkg before your PSI sitting. Independent — not IRS material.",
+      "Enrolled Agent Anki: 240 cards for IRS SEE themes — Individuals, Businesses, Representation, Practices — plus a 120-question EA readiness check (free 25-question version) with topic scoring from the same bank. Ownable .apkg before your PSI sitting. Independent — not IRS material.",
     keywords: [
       "enrolled agent anki",
       "ea exam flashcards",

@@ -128,7 +128,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cfa-level-1-readiness-check` | live | 60 / 120 | 2026-11-05 | — |
 | ok | `cfa-level-2-readiness-check` | live | 60 / 120 | 2026-10-25 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
-| ok | `enrolled-agent-readiness-check` | live | 120 / 240 | 2026-11-02 | — |
+| ok | `enrolled-agent-readiness-check` | live | 120 / 240 | 2026-11-07 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `fl-real-estate-readiness-check` | live | 60 / 120 | 2026-10-19 | — |
 | ok | `frm-part-1-readiness-check` | live | 50 / 120 | 2026-10-18 | — |
@@ -144,7 +144,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `mrics-readiness-check` | live | 50 / 250 | 2026-10-18 | — |
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `nha-cpct-readiness-check` | live | 120 / 240 | 2026-10-22 | — |
-| ok | `ny-real-estate-readiness-check` | live | 60 / 120 | 2026-11-02 | — |
+| ok | `ny-real-estate-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-10-15 | — |
 | ok | `property-casualty-insurance-readiness-check` | live | 60 / 120 | 2026-11-05 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 180 | 2026-10-24 | — |
@@ -166,7 +166,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `ascp-mls-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `ascp-mlt-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
-| ok | `aspt-phlebotomy-readiness-check` | planned | 60 / 120 | 2026-11-02 | — |
+| ok | `aspt-phlebotomy-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 | ok | `barber-state-readiness-check` | planned | 60 / 120 | 2026-10-21 | — |
 | ok | `capm-readiness-check` | planned | 60 / 120 | 2026-10-28 | — |
 | ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
@@ -195,7 +195,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `rbt-behavior-technician-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
-| ok | `six-sigma-green-belt-readiness-check` | planned | 60 / 120 | 2026-11-02 | — |
+| ok | `six-sigma-green-belt-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 | ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `wastewater-operator-1-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | 2026-11-03 | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
@@ -215,7 +215,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `polish-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `portugal-nacionalidade-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (1 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session |
 | civic | `sweden-medborgarskapsprov-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
-| civic | `swiss-citizenship-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (39 items + bank-level): thin/template explanations, distractor, correct, each key letter 15-35% (n>=40); bank 60 for 60Q session |
+| civic | `swiss-citizenship-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | civic | `finland-kansalaisuuskoe-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 
 ## Catalog totals
