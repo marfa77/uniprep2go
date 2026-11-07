@@ -340,7 +340,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "CDCP data centre practice test",
     mockSlug: "cdcp-readiness-check",
     disambiguation:
-      "EXIN EPI CDCP covers facilities, power, cooling, fire, security, and operations — verify current blueprint at exin.com; independent prep only.",
+      "EXIN EPI CDCP: official 40Q / 60m / 68% closed-book exam after accredited EPI training. UniPrep2Go offers a matching 40Q timed mock (free 25Q start) from a 250-question bank plus a $9.99 / 250-card Anki deck — not EXIN or EPI material.",
   },
   {
     query: "GMAT Focus practice test free",
