@@ -16,9 +16,9 @@ describe("citizenship guide pilots", () => {
     }
   });
 
-  it("hides deck CTA on Finland mock-only pathway", () => {
+  it("shows deck CTA on Finland mock + Anki pathway", () => {
     const finland = getCitizenshipGuideContent("finland-kansalaisuuskoe-readiness-check");
-    expect(finland?.deckCta).toBe("hidden");
+    expect(finland?.deckCta).toBe("live");
   });
 
   it("shows live deck CTA on Life in the UK and LiD pilots", () => {

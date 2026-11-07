@@ -141,6 +141,7 @@ const GUIDE_CONTENT: Record<CitizenshipGuidePilotSlug, CitizenshipGuideContent> 
       { label: "Time", official: "Not stably published yet", diagnostic: "45 minutes" },
       { label: "Pass score", official: "Most answers correct by law; ~70% proposed — confirm Migri", diagnostic: "70% on this diagnostic" },
       { label: "Language", official: "Finnish or Swedish, digital on site", diagnostic: "Finnish (this page)" },
+      { label: "Spaced recall", official: "Learning package on migri.fi (when published)", diagnostic: "120-card Finnish Anki deck ($9) — same bank as this mock" },
       { label: "Source", official: "Migri + University of Helsinki material and questions", diagnostic: "Independent theme practice — not Migri items" },
     ],
     languageVsCivics: {
@@ -175,7 +176,7 @@ const GUIDE_CONTENT: Record<CitizenshipGuidePilotSlug, CitizenshipGuideContent> 
     ],
     blogAngleSlug: "finland-kansalaisuuskoe-2027-new-test",
     blogAngleLabel: "Finland 2027 timeline & exemptions (news angle)",
-    deckCta: "hidden",
+    deckCta: "live",
   },
 };
 
