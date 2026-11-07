@@ -15,6 +15,7 @@ import {
   readFreeAttempt,
   type FreeAttemptRecord,
 } from "@/lib/mock-exams/free-attempt";
+import { interpretFreeStartHttp } from "@/lib/mock-exams/free-attempt-ip";
 import type { MockSessionMode } from "@/lib/mock-exams/session-mode";
 import {
   buildMockReport,
@@ -277,6 +278,26 @@ export function MockExamClient({
     }
 
     if (decision === "free") {
+      setStartBusy(true);
+      try {
+        const res = await fetch("/api/mock-exams/free-start", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ mockSlug: config.slug, mode }),
+        });
+        const data = (await res.json().catch(() => ({}))) as { code?: string };
+        if (interpretFreeStartHttp(res.status, data.code) === "paywall") {
+          const record: FreeAttemptRecord = { slug: config.slug, mode, at: new Date().toISOString() };
+          markFreeAttemptUsed(storage, record);
+          setFreeAttempt(record);
+          openPaywall(placement, mode);
+          return;
+        }
+      } catch {
+        // Store unreachable — keep the browser token. A second network still needs the server.
+      } finally {
+        setStartBusy(false);
+      }
       const record: FreeAttemptRecord = { slug: config.slug, mode, at: new Date().toISOString() };
       markFreeAttemptUsed(storage, record);
       setFreeAttempt(record);

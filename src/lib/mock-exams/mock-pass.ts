@@ -2,8 +2,9 @@
  * UniPrep2Go Mock Pass — free 25-question diagnostic (any exam, Exam or Learn mode), then
  * a $5 Gumroad license key unlocks 5 more attempts on any live mock.
  *
- * The free attempt is tracked in the browser (localStorage); paid attempts are
- * server-side credits keyed by a hash of the Gumroad license key.
+ * The free attempt is tracked in the browser (localStorage) and, for 24 hours,
+ * by a hash of the public IP in Redis so a private window does not reset it.
+ * Paid attempts are server-side credits keyed by a hash of the Gumroad license key.
  *
  * Kill switch (server env): MOCK_PAYWALL=off → every mock is free again.
  * Cookie HMAC secret: MOCK_PASS_SECRET (fallback LEARN_ACCESS_SECRET).
