@@ -53,7 +53,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "rd-exam-anki-deck":
     "240 CDR-domain cards (Principles 50, Nutrition Care 108, Management 50, Foodservice 32) with explanations — pairs with the 120-question RD readiness check (free 25-question version), drawn from the same bank, before Pearson VUE.",
   "enrolled-agent-anki-deck":
-    "120 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a 120-question Enrolled Agent readiness check (free 25-question version) for topic scoring.",
+    "240 IRS SEE cards across Individuals, Businesses, Representation, and Practices — plus a 120-question Enrolled Agent readiness check (free 25-question version) for topic scoring.",
   "ace-cpt-anki-deck":
     "300 ACE CPT cards for client screening, program design, spotting cues, and professional conduct — plus a 60-question readiness check (free 25-question version).",
   "nha-cpct-anki-deck":
@@ -903,7 +903,7 @@ ACEND education, supervised practice, and the official CDR / Pearson VUE exam. T
 
   "enrolled-agent-anki-deck": `### What is inside
 
-120 MCQ cards mapped to IRS Special Enrollment Examination (SEE) themes: Individuals, Businesses, Representation, and Practices & procedures. Cards force tax-year judgment and Circular 230-style representation boundaries — not a generic “tax trivia” dump. Pair with the 120-question timed Enrolled Agent readiness check (free 25-question version) for topic scoring.
+240 MCQ cards mapped to IRS Special Enrollment Examination (SEE) themes: Individuals, Businesses, Representation, and Practices & procedures. Cards force tax-year judgment and Circular 230-style representation boundaries — not a generic “tax trivia” dump. Pair with the 120-question timed Enrolled Agent readiness check (free 25-question version) for topic scoring from the same bank.
 
 ### Plan with the free EA mock
 
@@ -2597,7 +2597,7 @@ TREC education hours, Pearson VUE scheduling, or the official dual-portion exam.
 
   "ny-real-estate-anki-deck": `### What is inside
 
-60 New York-focused MCQ cards across DOS license law, contracts/agency/fair housing, finance/valuation/closing, and property practice. Same themes as the free timed NY readiness check.
+120 New York-focused MCQ cards across DOS license law, contracts/agency/fair housing, finance/valuation/closing, and property practice. Same 120-item bank as the free timed NY readiness check.
 
 ### Plan with the free NY mock
 

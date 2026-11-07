@@ -23,7 +23,13 @@ import { pickSellingSamples } from "../src/lib/sample-pick.ts";
 
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
 const ANKI = join(root, "..", "Anki Generator");
-const CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome";
+const CHROME =
+  process.env.CHROME_BIN?.trim() ||
+  (existsSync("/usr/local/bin/google-chrome")
+    ? "/usr/local/bin/google-chrome"
+    : existsSync("/usr/bin/google-chrome")
+      ? "/usr/bin/google-chrome"
+      : "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome");
 const WIDTH = 500;
 const HEIGHTS = [721, 900, 1080, 1260, 1440];
 const MIN_SCALE = 0.85;
