@@ -501,6 +501,35 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       { label: "Kansalaisuuskurssi", url: "https://kansalaisuuskurssi.fi/" },
     ],
   },
+  "life-in-the-uk-readiness-check": {
+    mockSlug: "life-in-the-uk-readiness-check",
+    examLabel: "Life in the UK Test",
+    heading: "Free Life in the UK practice options compared",
+    checkedDate: "2026-07-26",
+    lead:
+      "The Home Office Life in the UK Test is 24 multiple-choice questions, 45 minutes, pass at 18 of 24 (75%). UniPrep2Go is a longer independent diagnostic. Not a Home Office test.",
+    rows: [
+      {
+        name: "UniPrep2Go Life in the UK readiness check",
+        href: "/mock-exams/life-in-the-uk-readiness-check",
+        format: "25 free, no signup; full check 60 questions / 45 minutes with topic scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent handbook-theme diagnostic. Longer than the official 24-question test. 75% readiness target is ours.",
+      },
+      {
+        name: "Home Office — Life in the UK Test",
+        href: "https://www.gov.uk/life-in-the-uk-test",
+        format: "24 multiple-choice questions, 45 minutes, pass 18 of 24",
+        access: "£50 per attempt at an approved test centre",
+        notes:
+          "The live test. Book and confirm the current handbook edition on GOV.UK. This row uses the format already published on the UniPrep exam-facts page.",
+      },
+    ],
+    sources: [
+      { label: "GOV.UK — Life in the UK Test", url: "https://www.gov.uk/life-in-the-uk-test" },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(

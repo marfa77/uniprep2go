@@ -47,21 +47,6 @@
       "affected": 18
     },
     {
-      "slug": "cfp-certification-readiness-check",
-      "deck": "cfp-certification-anki-deck",
-      "anki": "live",
-      "session": 120,
-      "bank": 120,
-      "status": "rewrite",
-      "issues": [
-        "FAIL (33 items): near-duplicate / templated stems (>=0.8), template/thin distractor notes, thin/template explanations",
-        "bank 120 for 120Q session",
-        "no content review in ledger"
-      ],
-      "lastWork": null,
-      "affected": 33
-    },
-    {
       "slug": "co-real-estate-readiness-check",
       "deck": "co-real-estate-anki-deck",
       "anki": "live",
@@ -210,20 +195,6 @@
       ],
       "lastWork": null,
       "affected": 18
-    },
-    {
-      "slug": "series-65-readiness-check",
-      "deck": "series-65-anki-deck",
-      "anki": "live",
-      "session": 120,
-      "bank": 120,
-      "status": "rewrite",
-      "issues": [
-        "FAIL (28 items): template/thin distractor notes, thin/template explanations",
-        "bank 120 for 120Q session"
-      ],
-      "lastWork": "2026-10-15",
-      "affected": 28
     },
     {
       "slug": "series-79-readiness-check",
@@ -807,21 +778,6 @@
       ],
       "lastWork": null,
       "affected": 14
-    },
-    {
-      "slug": "nclex-rn-readiness-check",
-      "deck": "nclex-rn-anki-deck",
-      "anki": "planned",
-      "session": 60,
-      "bank": 60,
-      "status": "rewrite",
-      "issues": [
-        "FAIL (12 items): template/thin distractor notes, thin/template explanations",
-        "bank 60 for 60Q session",
-        "no content review in ledger"
-      ],
-      "lastWork": null,
-      "affected": 12
     },
     {
       "slug": "nd-real-estate-readiness-check",
@@ -1523,6 +1479,17 @@
       "affected": 0
     },
     {
+      "slug": "cfp-certification-readiness-check",
+      "deck": "cfp-certification-anki-deck",
+      "anki": "live",
+      "session": 120,
+      "bank": 240,
+      "status": "ok",
+      "issues": [],
+      "lastWork": "2026-11-07",
+      "affected": 0
+    },
+    {
       "slug": "cfps-readiness-check",
       "deck": "cfps-anki-deck",
       "anki": "live",
@@ -1795,6 +1762,17 @@
       "status": "ok",
       "issues": [],
       "lastWork": "2026-10-24",
+      "affected": 0
+    },
+    {
+      "slug": "series-65-readiness-check",
+      "deck": "series-65-anki-deck",
+      "anki": "live",
+      "session": 120,
+      "bank": 240,
+      "status": "ok",
+      "issues": [],
+      "lastWork": "2026-11-07",
       "affected": 0
     },
     {
@@ -2150,6 +2128,17 @@
       "affected": 0
     },
     {
+      "slug": "nclex-rn-readiness-check",
+      "deck": "nclex-rn-anki-deck",
+      "anki": "planned",
+      "session": 60,
+      "bank": 120,
+      "status": "ok",
+      "issues": [],
+      "lastWork": "2026-11-07",
+      "affected": 0
+    },
+    {
       "slug": "nha-cbcs-readiness-check",
       "deck": "nha-cbcs-anki-deck",
       "anki": "planned",
@@ -2421,7 +2410,7 @@
       "issues": [
         "FAIL (174 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct"
       ],
-      "lastWork": "2026-11-03",
+      "lastWork": "2026-11-07",
       "affected": 174
     },
     {
@@ -2453,28 +2442,22 @@
       "deck": "naturalisation-suisse-anki-deck",
       "anki": "live",
       "session": 60,
-      "bank": 60,
+      "bank": 120,
       "status": "civic",
-      "issues": [
-        "FAIL (41 items + bank-level): thin/template explanations, distractor, correct",
-        "bank 60 for 60Q session"
-      ],
-      "lastWork": "2026-11-03",
-      "affected": 41
+      "issues": [],
+      "lastWork": "2026-11-07",
+      "affected": 0
     },
     {
       "slug": "naturalizzazione-svizzera-readiness-check",
       "deck": "naturalizzazione-svizzera-anki-deck",
       "anki": "live",
       "session": 60,
-      "bank": 60,
+      "bank": 120,
       "status": "civic",
-      "issues": [
-        "FAIL (33 items + bank-level): distractor, correct",
-        "bank 60 for 60Q session"
-      ],
-      "lastWork": "2026-11-03",
-      "affected": 33
+      "issues": [],
+      "lastWork": "2026-11-07",
+      "affected": 0
     },
     {
       "slug": "norway-statsborgerproven-readiness-check",

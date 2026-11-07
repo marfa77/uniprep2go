@@ -617,7 +617,7 @@ describe("deck catalog", () => {
         "Coal Trader Anki Deck — 221 Commodity Flashcards",
       "bms-building-automation-anki-deck":
         "BMS / BAS Anki Deck — 120 Flashcards",
-      "cfp-certification-anki-deck": "CFP Certification Anki Deck — 120 Flashcards",
+      "cfp-certification-anki-deck": "CFP Certification Anki Deck — 240 Flashcards",
       "commodity-trader-pack-bundle": "Commodity Trader Pack — 634 Anki Flashcards",
       "cdcp-anki-deck": "CDCP Anki Deck — 250 Flashcards",
       "cem-anki-deck": "CEM Anki Deck — 250 Flashcards",
@@ -625,7 +625,7 @@ describe("deck catalog", () => {
       "fl-real-estate-anki-deck": "Florida Real Estate Anki Deck — 120 Flashcards",
       "mortgage-loan-originator-anki-deck": "SAFE MLO Anki Deck — 240 Flashcards",
       "series-6-anki-deck": "Series 6 Anki Deck — 120 Flashcards",
-      "series-65-anki-deck": "Series 65 Anki Deck — 120 Flashcards",
+      "series-65-anki-deck": "Series 65 Anki Deck — 240 Flashcards",
       "series-66-anki-deck": "Series 66 Anki Deck — 120 Flashcards",
       "series-79-anki-deck": "Series 79 Anki Deck — 120 Flashcards",
       "series-99-anki-deck": "Series 99 Anki Deck — 120 Flashcards",

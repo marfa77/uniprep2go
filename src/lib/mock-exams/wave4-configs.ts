@@ -695,10 +695,13 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to CFP Board exam themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not CFP Board material.",
-    description: "120-question CFP Certification readiness check (free 25-question version) with topic scoring.",
+      "Mapped to CFP Board exam themes. This check is 120 questions / 120 minutes / 70% readiness target, drawn from a 240-item bank. Independent prep — not CFP Board material.",
+    description:
+      "120-question / 120-minute CFP Certification readiness check (free first 25) drawn from a 240-item bank.",
     examBody: "CFP Board",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
+    lastUpdated: "2026-11-07",
     searchAliases: ["CFP exam", "Certified Financial Planner"],
   }),
   nicheReadinessConfig({

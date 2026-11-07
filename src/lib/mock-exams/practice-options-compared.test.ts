@@ -19,7 +19,17 @@ describe("getPracticeOptionsCompared", () => {
     expect(table!.checkedDate).toBe("2026-10-24");
     expect(table!.rows.some((r) => r.name.includes("CFA Level 2 practice exam"))).toBe(true);
     expect(table!.rows.some((r) => /300 Hours/i.test(r.name))).toBe(true);
+    expect(table!.rows.some((r) => /Practice Pack/.test(r.notes) && /Registered/.test(r.access))).toBe(true);
     expect(table!.sources.some((s) => s.url.includes("300hours.com"))).toBe(true);
+  });
+
+  it("returns a Life in the UK table from the published Home Office format", () => {
+    const table = getPracticeOptionsCompared("life-in-the-uk-readiness-check");
+    expect(table).not.toBeNull();
+    expect(table!.checkedDate).toBe("2026-07-26");
+    expect(table!.rows.some((r) => /24 multiple-choice/.test(r.format) && /£50/.test(r.access))).toBe(true);
+    expect(table!.rows.some((r) => /60 questions/.test(r.format))).toBe(true);
+    expect(table!.sources.some((s) => s.url.includes("gov.uk/life-in-the-uk-test"))).toBe(true);
   });
 
   it("returns SIE table with FINRA practice-test source", () => {

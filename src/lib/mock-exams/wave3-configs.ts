@@ -324,10 +324,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "psychosocial", label: "Psychosocial integrity" },
       { id: "physio", label: "Physiological integrity" }
     ]),
-    officialSourceNote: "Mapped to NCSBN themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question NCLEX-RN readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote:
+      "Mapped to NCSBN themes. Independent diagnostic: 60 questions / 75 minutes drawn from a 120-item bank. Not the official NCLEX-RN CAT.",
+    description:
+      "60-question NCLEX-RN readiness check (free 25-question version) drawn from a 120-item bank, with topic scoring. Not the official CAT.",
     examBody: "NCSBN",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session draws 60. Not NCSBN material.",
+    lastUpdated: "2026-11-07",
     searchAliases: ["NCLEX-RN", "RN license exam"],
   }),
   nicheReadinessConfig({
@@ -878,10 +882,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Independent diagnostic on NASAA Uniform Investment Adviser Law (Series 65) themes. Official Series 65 (FINRA delivery): 130 scored + 10 pretest questions, 180 minutes, pass at 92/130 scored — not a 70% percentage cut. This UniPrep2Go mock is 120 questions / 120 minutes / 70% readiness target. Not NASAA/FINRA exam material.",
-    description: "120-question Series 65 readiness check (free 25-question version) with topic scoring.",
+      "Independent diagnostic on NASAA Uniform Investment Adviser Law (Series 65) themes. Official Series 65 (FINRA delivery): 130 scored + 10 pretest questions, 180 minutes, pass at 92/130 scored — not a 70% percentage cut. This check is 120 questions / 120 minutes / 70% readiness target, drawn from a 240-item bank. Not NASAA/FINRA exam material.",
+    description:
+      "120-question / 120-minute Series 65 readiness check (free first 25) drawn from a 240-item bank.",
     examBody: "NASAA / FINRA delivery",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
+    lastUpdated: "2026-11-07",
     searchAliases: ["Series 65", "investment adviser exam"],
   }),
   nicheReadinessConfig({

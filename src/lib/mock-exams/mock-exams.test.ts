@@ -116,7 +116,7 @@ describe("mock exam configs", () => {
       expect(isMockExamRunnable(slug)).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors).toEqual([]);
-      expect(questions).toHaveLength(slug === "swiss-citizenship-readiness-check" ? 120 : 60);
+      expect(questions).toHaveLength(120);
       expect(questions[0]?.sourceNote).toContain(note);
       expect(getDeckLinkedMocks(deckSlug).map((m) => m.slug)).toContain(slug);
     }
@@ -877,9 +877,9 @@ describe("llm visibility", () => {
       expect(config.status).toBe("live");
       expect(config.accessMode).toBe("free_demand_test");
       expect(isMockExamRunnable(config.slug)).toBe(true);
+      const bank240 = new Set(["cfp-certification-readiness-check"]);
       const expandedWave4 = new Set([
         "series-79-readiness-check",
-        "cfp-certification-readiness-check",
         "series-99-readiness-check",
         "armed-security-officer-readiness-check",
         "nremt-emr-readiness-check",
@@ -889,7 +889,7 @@ describe("llm visibility", () => {
         "al-real-estate-readiness-check",
       ]);
       expect(getQuestionBank(config.slug)).toHaveLength(
-        expandedWave4.has(config.slug) ? 120 : 60,
+        bank240.has(config.slug) ? 240 : expandedWave4.has(config.slug) ? 120 : 60,
       );
     }
 

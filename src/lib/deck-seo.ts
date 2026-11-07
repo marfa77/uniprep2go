@@ -845,13 +845,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Searching Series 63 flashcards after SIE or Series 7? Take the free 25-question diagnostic first, then drill only the weak NASAA topics in this 250-card Anki before the 60-scored-question state sit — not a Series 7 Top-Off dump.",
   },
   "series-65-anki-deck": {
-    title: "Series 65 Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
+    title: "Series 65 Prep 2026 | 240 Cards + 120Q Mock (25Q Free)",
   },
   "series-66-anki-deck": {
     title: "Series 66 Prep 2026 | 120 Cards + 60Q Mock (25Q Free)",
   },
   "cfp-certification-anki-deck": {
-    title: "CFP Exam Prep 2026 | 120 Cards + 120Q Mock (25Q Free)",
+    title: "CFP Exam Prep 2026 | 240 Cards + 120Q Mock (25Q Free)",
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",

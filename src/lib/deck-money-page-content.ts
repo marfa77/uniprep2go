@@ -2613,7 +2613,7 @@ NYDOS registration, qualifying hours, or the official eAccessNY exam. Independen
 
   "series-65-anki-deck": `### What is inside
 
-120 focused Series 65 MCQ cards across economics & analysis, investment products, client recommendations, and laws & ethics — the same theme map as the free timed Series 65 readiness check.
+240 focused Series 65 MCQ cards across economics & analysis, investment products, client recommendations, and laws & ethics. The free timed Series 65 readiness check draws 120 from this bank.
 
 ### Plan with the free Series 65 mock
 

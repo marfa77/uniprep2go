@@ -3201,7 +3201,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free Swiss citizenship practice test?",
         answer:
-          "Yes. 60-question readiness checks (free 25-question version) are live in German (/mock-exams/swiss-citizenship-readiness-check), French (/mock-exams/naturalisation-suisse-readiness-check), and Italian (/mock-exams/naturalizzazione-svizzera-readiness-check).",
+          "Yes. Each language has a 60-question readiness check (free 25-question version) drawn from a 120-item bank: German (/mock-exams/swiss-citizenship-readiness-check), French (/mock-exams/naturalisation-suisse-readiness-check), and Italian (/mock-exams/naturalizzazione-svizzera-readiness-check).",
       },
       {
         question: "Is this official SEM / cantonal exam material?",

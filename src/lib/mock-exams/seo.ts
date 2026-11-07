@@ -314,7 +314,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "series-65-readiness-check": {
     title: "Free Series 65 Practice Test | 120-Question Diagnostic",
     description:
-      "Series 65 practice test: free 25-question diagnostic, full mock 120 timed questions, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
+      "Series 65 practice test: free 25-question diagnostic, full mock 120 timed questions drawn from a 240-item bank, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
     keywords: [
       "series 65 practice test",
       "series 65 practice exam",
@@ -324,7 +324,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 65 Practice Test",
     intro:
-      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; use this 120-question timed mock (free 25-question version) to prioritize Anki repair before Prometric.",
+      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; this 120-question timed mock (free 25-question version) draws from a 240-item bank so a retake is not the same paper.",
     audience:
       "Investment adviser representative candidates preparing for the NASAA Series 65 who want a free timed baseline before a full-length Q-bank.",
     practiceTestLabel: "Series 65 practice test",
@@ -1366,7 +1366,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "swiss-citizenship-readiness-check": {
     title: "Einbürgerung Schweiz Practice Test: 60Q, 25Q Free",
     description:
-      "German Swiss Staatskunde diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune tests vary. Live $9.99 Einbürgerung Schweiz Anki (207). Independent — not SEM material.",
+      "German Swiss Staatskunde diagnostic: free 25-question start, full mock 60 timed questions drawn from a 120-item bank. No single federal MCQ — canton/commune tests vary. Live $9.99 Einbürgerung Schweiz Anki (207). Independent — not SEM material.",
     keywords: [
       "Einbürgerung Schweiz üben",
       "Staatskunde Schweiz Test",
@@ -1383,7 +1383,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "naturalisation-suisse-readiness-check": {
     title: "Naturalisation Suisse Practice Test: 60Q, 25Q Free",
     description:
-      "French Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Live $9.99 Naturalisation suisse Anki (207). Independent prep.",
+      "French Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed questions drawn from a 120-item bank. No single federal MCQ — canton/commune vary. Live $9.99 Naturalisation suisse Anki (207). Independent prep.",
     keywords: [
       "naturalisation suisse test",
       "examen naturalisation suisse",
@@ -1400,7 +1400,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "naturalizzazione-svizzera-readiness-check": {
     title: "Naturalizzazione Svizzera Practice Test: 60Q, 25Q Free",
     description:
-      "Italian Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed federal-theme questions. No single federal MCQ — canton/commune vary. Live $9.99 Naturalizzazione svizzera Anki (207). Independent prep.",
+      "Italian Swiss naturalisation diagnostic: free 25-question start, full mock 60 timed questions drawn from a 120-item bank. No single federal MCQ — canton/commune vary. Live $9.99 Naturalizzazione svizzera Anki (207). Independent prep.",
     keywords: [
       "naturalizzazione svizzera test",
       "esame cittadinanza svizzera",
