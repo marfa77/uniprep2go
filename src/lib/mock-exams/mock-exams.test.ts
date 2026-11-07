@@ -116,7 +116,7 @@ describe("mock exam configs", () => {
       expect(isMockExamRunnable(slug)).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors).toEqual([]);
-      expect(questions).toHaveLength(60);
+      expect(questions).toHaveLength(slug === "swiss-citizenship-readiness-check" ? 120 : 60);
       expect(questions[0]?.sourceNote).toContain(note);
       expect(getDeckLinkedMocks(deckSlug).map((m) => m.slug)).toContain(slug);
     }
@@ -253,9 +253,7 @@ describe("mock exam configs", () => {
     ] as const) {
       expect(getMockExamConfig(slug)?.status, slug).toBe("live");
       expect(getMockExamConfig(slug)?.linkedDeckSlug, slug).toBe(deckSlug);
-      const expectedDeckStatus =
-        deckSlug === "finland-kansalaisuuskoe-anki-deck" ? "planned" : "available";
-      expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe(expectedDeckStatus);
+      expect(getDeckBySlug(deckSlug)?.status, deckSlug).toBe("available");
       expect(isMockExamRunnable(slug), slug).toBe(true);
       const { questions, errors } = getQuestionBankForExam(slug);
       expect(errors, slug).toEqual([]);

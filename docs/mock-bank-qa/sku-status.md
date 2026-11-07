@@ -6,14 +6,14 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 83 | 44 |
+| ok | 83 | 46 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 14 | 0 |
 | point-fix | 0 | 0 |
 | rewrite | 80 | 20 |
-| civic | 19 | 18 |
-| **total live mocks** | **196** | **82** |
+| civic | 19 | 19 |
+| **total live mocks** | **196** | **85** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -121,6 +121,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `al-real-estate-readiness-check` | live | 60 / 120 | 2026-10-20 | — |
 | ok | `ardms-spi-readiness-check` | live | 60 / 120 | 2026-10-18 | — |
 | ok | `ashrae-certifications-readiness-check` | live | 50 / 250 | 2026-10-30 | — |
+| ok | `aspt-phlebotomy-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | ok | `bms-bas-readiness-check` | live | 60 / 120 | 2026-10-31 | — |
 | ok | `california-real-estate-readiness-check` | live | 60 / 120 | 2026-11-03 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-11-07 | — |
@@ -157,6 +158,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `servsafe-manager-mock` | live | 90 / 180 | 2026-10-15 | — |
 | ok | `sie-full-mock` | live | 75 / 150 | 2026-10-24 | — |
 | ok | `sie-quick-diagnostic` | live | 25 / 150 | 2026-10-24 | — |
+| ok | `six-sigma-green-belt-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
 | ok | `aama-cma-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
@@ -166,7 +168,6 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `armed-security-officer-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `ascp-mls-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `ascp-mlt-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
-| ok | `aspt-phlebotomy-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 | ok | `barber-state-readiness-check` | planned | 60 / 120 | 2026-10-21 | — |
 | ok | `capm-readiness-check` | planned | 60 / 120 | 2026-10-28 | — |
 | ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
@@ -195,7 +196,6 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `rbt-behavior-technician-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
-| ok | `six-sigma-green-belt-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 | ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `wastewater-operator-1-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | 2026-11-03 | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
@@ -205,6 +205,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `ccse-espana-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (45 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |
 | civic | `czech-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (14 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `denmark-indfoedsretsproeven-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (15 items + bank-level): template/thin distractor notes, thin/template explanations, correct; bank 60 for 60Q session |
+| civic | `finland-kansalaisuuskoe-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | civic | `leben-in-deutschland-readiness-check` | live | 60 / 296 | 2026-11-03 | FAIL (279 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
 | civic | `life-in-the-uk-readiness-check` | live | 60 / 201 | 2026-11-03 | FAIL (174 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
 | civic | `luxembourg-vivre-ensemble-readiness-check` | live | 40 / 168 | 2026-10-24 | — |
@@ -216,17 +217,16 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `portugal-nacionalidade-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (1 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session |
 | civic | `sweden-medborgarskapsprov-readiness-check` | live | 60 / 60 | — | FAIL (13 items + bank-level): thin/template explanations, correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `swiss-citizenship-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
-| civic | `finland-kansalaisuuskoe-readiness-check` | planned | 60 / 120 | 2026-11-07 | — |
 
 ## Catalog totals
 
 | Line | Count |
 |---|---|
 | Live mocks | 196 |
-| … with a live Anki / PDF pair | 82 |
-| … with a planned Anki pair | 114 |
+| … with a live Anki / PDF pair | 85 |
+| … with a planned Anki pair | 111 |
 | Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
-| Catalog decks total (`decks.ts`) | 235 (available 107) |
+| Catalog decks total (`decks.ts`) | 235 (available 110) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 28 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.

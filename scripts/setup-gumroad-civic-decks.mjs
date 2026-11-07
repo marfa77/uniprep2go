@@ -82,8 +82,13 @@ function escapeHtml(value) {
     .replace(/>/g, "&gt;");
 }
 
+function formatPriceUsd(cents) {
+  const usd = (cents || 900) / 100;
+  return Number.isInteger(usd) ? String(usd) : usd.toFixed(2);
+}
+
 function buildDescription(product) {
-  const priceUsd = ((product.priceCents || 900) / 100).toFixed(0);
+  const priceUsd = formatPriceUsd(product.priceCents);
   const samples = (product.samples || [])
     .map(
       (card) =>
@@ -166,7 +171,7 @@ async function createProduct(token, product) {
     price: String(product.priceCents || 900),
     description: buildDescription(product),
     custom_permalink: product.permalink,
-    custom_summary: `${product.cards} ${product.exam} Anki cards — $${((product.priceCents || 900) / 100).toFixed(0)} .apkg. Independent study aid.`,
+    custom_summary: `${product.cards} ${product.exam} Anki cards — $${formatPriceUsd(product.priceCents)} .apkg. Independent study aid.`,
     require_shipping: "false",
     is_tiered_membership: "false",
   });
