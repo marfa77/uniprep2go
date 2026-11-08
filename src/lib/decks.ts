@@ -1321,8 +1321,8 @@ const rawDecks: Deck[] = [
     shortName: "CFA Level 2",
     subtitle: "A vignette-depth Anki deck for CFA Level 2 item sets — not a Level 1 leftover dump.",
     directAnswer:
-      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topics (2026 weights 5–15%), including FSA adjustments, equity and fixed income valuation, portfolio management, derivatives, and ethics application. Official Level 2 is 88 item-set questions in 22 vignettes over two 132-minute sessions (4h24); this product pairs with a 60-question / 120-minute diagnostic (free 25-question version), not a CFA Institute mock. Delivered as an Anki .apkg for {PRICE} through Gumroad. Supplementary spaced-repetition aid — not official CFA Institute curriculum.",
-    lastUpdated: "2026-10-04",
+      "UniPrep2Go sells an independent CFA Level 2 Anki deck with 495 flashcards covering all 10 CFA Level 2 topics (2026 weights 5–15%), including FSA adjustments, equity and fixed income valuation, portfolio management, derivatives, and ethics application. The cards include typeset formulas for vignette recall, including FCFF/FCFE, OAS, and residual income. Kaplan Schweser CFA Level II flashcards list at $159 for printed and online cards. Official Level 2 is 88 item-set questions in 22 vignettes over two 132-minute sessions (4h24); this product pairs with a 60-question / 120-minute diagnostic (free 25-question version), not a CFA Institute mock. Delivered as an Anki .apkg for {PRICE} through Gumroad. Supplementary spaced-repetition aid — not official CFA Institute curriculum.",
+    lastUpdated: "2026-11-08",
     audience: "CFA Level 2 candidates who want structured recall practice for vignette-depth formulas, concepts, and application-level definitions.",
     format: ".apkg",
     coverImage: "/covers/cfa-level-2-anki-deck.webp",
@@ -1365,6 +1365,11 @@ const rawDecks: Deck[] = [
       {
         question: "How is this different from the Level 1 deck?",
         answer: "Level 2 is vignette-depth: FSA intercorporate issues, pension accounting, arbitrage-free fixed income, FCF and residual income valuation, active PM, and ethics application. It is not a copy of the L1 deck.",
+      },
+      {
+        question: "How does this compare with Kaplan Schweser flashcards?",
+        answer:
+          "Kaplan Schweser CFA Level II flashcards list at $159 for printed and online cards. This deck is 495 vignette cards with typeset formulas, delivered as an ownable Anki file for {PRICE}, for Anki desktop, AnkiMobile, and AnkiDroid. It is a recall deck, not a SchweserNotes package and not CFA Institute curriculum.",
       },
       {
         question: "Is this official CFA Institute material?",

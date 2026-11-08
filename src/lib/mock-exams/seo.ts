@@ -1257,7 +1257,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "CFA Level 2 Practice Exam",
     intro:
-      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). CFA Institute sets the minimum passing score after each sitting and does not publish a fixed percentage. This page is the shorter diagnostic. Repair weak item sets with the linked Anki deck ($19, 495 cards). Not CFA Institute material.",
+      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). CFA Institute sets the minimum passing score after each sitting and does not publish a fixed percentage. This page is the shorter diagnostic. Repair weak item sets with the linked Anki deck ($29, 495 cards). Not CFA Institute material.",
     audience: "CFA Level 2 candidates who passed Level 1 and want a free vignette practice exam before a full item-set mock.",
     practiceTestLabel: "CFA Level 2 practice exam",
   },

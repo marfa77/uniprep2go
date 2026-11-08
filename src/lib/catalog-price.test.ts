@@ -39,8 +39,8 @@ describe("catalog-price", () => {
     );
   });
 
-  it("prices the ten premium Anki and PDF products at $19, and nothing else at that price", () => {
-    expect(PREMIUM_CATALOG_SLUGS).toHaveLength(10);
+  it("prices the nine premium Anki and PDF products at $19, and nothing else at that price", () => {
+    expect(PREMIUM_CATALOG_SLUGS).toHaveLength(9);
     for (const slug of PREMIUM_CATALOG_SLUGS) {
       expect(getCatalogListPriceUsd(slug)).toBe(PREMIUM_CATALOG_USD);
     }
@@ -49,8 +49,14 @@ describe("catalog-price", () => {
       .map(([slug]) => slug)
       .sort();
     expect(atPremium).toEqual([...PREMIUM_CATALOG_SLUGS].sort());
-    expect(premiumCatalogPriceLine()).toContain("10 premium products");
+    expect(premiumCatalogPriceLine()).toContain("9 premium products");
+    expect(premiumCatalogPriceLine()).toContain("CFA Level 2 Anki is $29");
     expect(premiumCatalogPriceLine()).toContain("Other decks $9.99");
+    expect(getCatalogListPriceUsd("cfa-level-2-anki-deck")).toBe(29);
+    expect(getCatalogListPriceUsd("cfa-level-1-anki-deck")).toBe(19);
+    expect(
+      withCatalogProductPrices("Kaplan Schweser flashcards are $159", "cfa-level-2-anki-deck"),
+    ).toBe("Kaplan Schweser flashcards are $159");
   });
 
   it("rewrites $9.99 when the slug override is higher (money raise)", () => {

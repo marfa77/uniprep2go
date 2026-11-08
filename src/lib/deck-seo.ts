@@ -733,7 +733,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 2 Exam Prep — 495 Vignette Cards + Free Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
-      "CFA Level 2 Anki: 495 vignette-depth cards across all 10 topics (2026 weights 5–15%). Official L2 is 88 item-set questions in 22 vignettes / 4h24 — this page pairs the deck with a 60-question / 120-minute diagnostic (free 25-question version), not a CFA Institute mock. Formula PDF sold separately. Independent — not CFA Institute material.",
+      "495 CFA Level 2 vignette cards with typeset formulas, {PRICE} once. Kaplan Schweser Level II flashcards are $159. Includes a free 25-question diagnostic.",
     keywords: [
       "cfa level 2 anki deck",
       "cfa level 2 flashcards",
@@ -742,7 +742,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "cfa level 2 mock exam",
     ],
     intro:
-      "Level 2 is item-set, not Level 1 one-liners. Use 495 spaced-repetition cards for FCFF vs FCFE, FSA adjustments, and ethics under a short case — then sit the 60-question / 120-minute mock (free 25-question version) to pick weak topics before 22 official vignettes.",
+      "Level 2 is item sets. These 495 cards carry typeset formulas — FCFF vs FCFE, OAS, residual income — for daily Anki review at {PRICE}. Kaplan Schweser CFA Level II flashcards are $159 printed and online. Sit the 60-question / 120-minute mock (free 25-question version) to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
     title: "CFA Level 2 Formula Sheet 2026 — 281 Formulas PDF, $19",

@@ -52,17 +52,16 @@ export function formatCatalogListPrice(slug?: string, format: "apkg" | "PDF" = "
   return formatCheckoutPrice(getCatalogListPriceUsd(slug, format));
 }
 
-/** One-time list price for the money Anki/PDF set. Other Gumroad decks stay on the default. */
+/** One-time list price for the $19 money Anki/PDF set. Other Gumroad decks stay on the default. */
 export const PREMIUM_CATALOG_USD = 19;
 
 /**
- * The ten products at $19. Formula PDFs sit with their decks.
+ * Products at $19. CFA Level 2 Anki is $29 (catalog override).
  * Packs ($24 / $29) and the PTCB study guide ($14) are separate.
  */
 export const PREMIUM_CATALOG_SLUGS = [
   "cfa-level-1-anki-deck",
   "cfa-level-1-formula-reference-2026",
-  "cfa-level-2-anki-deck",
   "cfa-level-2-formula-reference-2026",
   "series-7-anki-deck",
   "series-63-anki-deck",
@@ -73,7 +72,7 @@ export const PREMIUM_CATALOG_SLUGS = [
 ] as const;
 
 export function premiumCatalogPriceLine(): string {
-  return `${PREMIUM_CATALOG_SLUGS.length} premium products — CFA Level 1 and 2 decks and formula PDFs, Series 7, Series 63, SIE, PTCB, Life & Health, and Property & Casualty. Other decks ${formatCatalogListPrice()}.`;
+  return `${PREMIUM_CATALOG_SLUGS.length} premium products at $19 — CFA Level 1 deck and formula PDF, CFA Level 2 formula PDF, Series 7, Series 63, SIE, PTCB, Life & Health, and Property & Casualty. CFA Level 2 Anki is $29. Other decks ${formatCatalogListPrice()}.`;
 }
 
 /**

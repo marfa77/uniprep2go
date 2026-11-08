@@ -13,7 +13,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-formula-reference-2026":
     "48-page 2026 formula reference: 221 typeset formulas with when to use each and the exam trap, 146 definitions, all 22 Standards, and an 80-question recall drill with answer key.",
   "cfa-level-2-anki-deck":
-    "495 vignette-depth cards across all 10 CFA Level 2 topics — plus a 60-question / 120-minute mock (free 25-question version) and the matching formula PDF. Not a Level 1 leftover dump.",
+    "495 vignette cards with typeset formulas. {PRICE} once. Kaplan Schweser CFA Level II flashcards are $159.",
   "cfa-level-2-formula-reference-2026":
     "51-page 2026 L2 formula reference: 281 typeset formulas with when to use each and the exam trap, all 22 Standards, plus an 80-question recall drill — pairs with the 60Q item-set diagnostic (free 25-question version).",
   "cat4-level-d-anki-deck-printable-pdf":
@@ -288,13 +288,13 @@ export const positioningOverrides: Partial<
   },
   "cfa-level-2-anki-deck": {
     ourEdge: [
-      "495 scenario cards across all 10 CFA Level 2 topics, each with a worked example and common mistake",
-      "Vignette-depth FSA, equity/FI valuation, derivatives, PM, and ethics application",
-      "Pairs with the Level 2 formula reference PDF and a 60-question mock (free 25-question version)",
-      "Ownable .apkg — not a 3,000-card Level 1 leftover or monthly Q-bank",
+      "495 vignette cards with typeset formulas — FCFF/FCFE, OAS, residual income — each with a worked example and the common mistake",
+      "Vignette-depth FSA, equity and fixed income valuation, derivatives, portfolio management, and ethics",
+      "{PRICE} once. Kaplan Schweser CFA Level II flashcards are $159 printed and online",
+      "Pairs with the Level 2 formula PDF ($19) and a 60-question mock (free 25-question version)",
     ],
     summaryProse:
-      "Level 2 punishes item-set misfires, not missing a random L1 definition. Four hundred ninety-five focused cards plus one 60-question / 120-minute diagnostic (free 25-question version) beat a mega-dump when you need FCFF vs FCFE and FSA adjustments before 22 official vignettes.",
+      "Level 2 tests formulas inside item sets. These 495 cards put FCFF versus FCFE, OAS, and residual income into daily Anki review, then the 60-question / 120-minute diagnostic (free 25-question version) shows which topic to drill. Kaplan Schweser CFA Level II flashcards are $159 printed and online. This deck is {PRICE}.",
   },
   "cfa-level-1-formula-reference-2026": {
     ourEdge: [
@@ -1109,7 +1109,7 @@ Candidates lose points confusing forward vs futures margin flows, mis-stating in
 
   "cfa-level-2-anki-deck": `### What is inside
 
-495 cards across all ten CFA Level 2 topics (2026 weights 5–15%) — vignette-depth FSA, equity and fixed income valuation models, derivatives strategies, portfolio management, and ethics application. Prompts emphasize item-set logic: given a short case, which adjustment or valuation method applies?
+495 cards across all ten CFA Level 2 topics (2026 weights 5–15%) — vignette-depth FSA, equity and fixed income valuation models, derivatives strategies, portfolio management, and ethics application. Prompts emphasize item-set logic: given a short case, which adjustment or valuation method applies? Quantitative cards carry a typeset formula. The deck is {PRICE}. Kaplan Schweser CFA Level II flashcards are $159 for printed and online cards.
 
 ### Study plan with the free mock and formula reference
 

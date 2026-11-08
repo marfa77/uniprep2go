@@ -24,6 +24,19 @@ describe("deck money pages", () => {
     expect(getDeckUniqueContent(guide)).toContain("90 questions");
   });
 
+  it("anchors the CFA Level 2 deck at $29 against Schweser flashcards", () => {
+    const deck = getDeckBySlug("cfa-level-2-anki-deck")!;
+    const pitch = getDeckShortPitch(deck);
+    expect(pitch).toContain("495");
+    expect(pitch).toContain("$29");
+    expect(pitch).toContain("$159");
+    expect(pitch).toContain("Schweser");
+    expect(getDeckLongDescription(deck)).toContain("Schweser");
+    expect(getDeckLongDescription(deck)).toContain("$29");
+    expect(deck.directAnswer).toContain("{PRICE}");
+    expect(buildMergedDeckFaqs(deck).some((faq) => /Schweser/i.test(faq.question))).toBe(true);
+  });
+
   it("uses distinct shortPitch, audience, and longDescription on FRM", () => {
     const deck = getDeckBySlug("frm-part-1-anki-deck")!;
     const pitch = getDeckShortPitch(deck);
