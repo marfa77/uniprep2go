@@ -1,6 +1,6 @@
 # SKU status board
 
-Generated 2026-11-07 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-08 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 

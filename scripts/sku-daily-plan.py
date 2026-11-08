@@ -29,20 +29,14 @@ WD = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"]
 # Landing / funnel / SEO items that beat bank work (backlog 2026-10-15), in order. They replace the side task that day.
 EXTRAS = [
     # Done 2026-10-19: Have a key? + Mock Pass hero. Done 2026-10-16: planned cardCount 60→120. Done 2026-10-15: three duplicate SKUs 301.
+    # Done tables: CFA L1, SIE, PTCB, Series 7, ServSafe Manager, Life in the UK, CFA L2.
+    # Done 2026-11-07: S3 report layout is the empty-bar component already on mock pages. No fake scores.
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "
     + ", ".join(f"`{s}`" for s, _ in DECK_NO_CHECKOUT[:3]),
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "
     + ", ".join(f"`{s}`" for s, _ in DECK_NO_CHECKOUT[3:]),
-    "Таблица «Free practice options compared» (только проверенные строки + checked date): CFA L1",
-    "Таблица compared: SIE (FINRA 75Q untimed vs наш timed + отчёт)",
     "Таблица compared: FRM P1 (GARP 2×100Q для зарегистрированных)",
-    "Таблица compared: PTCB (PTCB Practice Bank за аккаунтом)",
     "Urgency strip с verify-ссылкой: CFA L1 окно (сверить на cfainstitute.org)",
-    "Таблица compared: Series 7",
-    "Таблица compared: ServSafe Manager",
-    "Таблица compared: Life in the UK (official 24Q / 45 min / 75%)",
-    "S3 «Example report layout»: скрин реального отчёта на лендинге (без фейковых данных)",
-    "Таблица compared: CFA L2 (Practice Pack registered-only)",
     "Таблица compared: Series 63 + Series 65",
     "Таблица compared: PMP + LEED GA",
 ]
