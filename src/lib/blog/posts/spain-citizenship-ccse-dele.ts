@@ -33,8 +33,8 @@ export const spainCitizenshipCcseDelePost: BlogPostDraft = {
         label: "Prep2Go.study — language & immigration decks",
       },
       {
-        href: "https://www.emigro.online/ru/spain",
-        label: "Emigro — Spain residency corridor for Russian-speaking movers",
+        href: "https://www.emigro.online/es/guides/nacionalidad-espanola-latam-2026?utm_source=uniprep2go&utm_medium=blog&utm_campaign=emigro_crosslink&utm_content=spain-citizenship-ccse-dele-a2-two-exams",
+        label: "Emigro — Spanish nationality for Latin Americans: the 2-year route (guide in Spanish)",
       },
     ],
   },

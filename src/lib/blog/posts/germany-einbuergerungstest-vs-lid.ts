@@ -32,6 +32,10 @@ export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
         href: "/blog/leben-in-deutschland-test-english-preparation-guide",
         label: "English prep guide for Leben in Deutschland",
       },
+      {
+        href: "https://www.emigro.online/ru/guides/grazhdanstvo-germaniya-polsha-2026?utm_source=uniprep2go&utm_medium=blog&utm_campaign=emigro_crosslink&utm_content=germany-einbuergerungstest-vs-leben-in-deutschland-difference",
+        label: "Emigro — German citizenship requirements for Russian speakers (guide in Russian)",
+      },
     ],
   },
   sections: [

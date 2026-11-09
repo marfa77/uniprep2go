@@ -37,8 +37,8 @@ export const portugalNationalityTestPost: BlogPostDraft = {
         label: "Prep2Go.study — language & immigration decks",
       },
       {
-        href: "https://www.emigro.online/ru/portugal",
-        label: "Emigro — Portugal residency corridor for Russian-speaking movers",
+        href: "https://www.emigro.online/ru/guides/grazhdanstvo-portugaliya-ispaniya-2026?utm_source=uniprep2go&utm_medium=blog&utm_campaign=emigro_crosslink&utm_content=portugal-nationality-test-2026-new-civic-exam",
+        label: "Emigro — Portugal & Spain citizenship: residence years and documents (guide in Russian)",
       },
     ],
   },
