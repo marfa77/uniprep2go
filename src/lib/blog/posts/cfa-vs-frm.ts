@@ -24,6 +24,10 @@ export const cfaVsFrmPost: BlogPostDraft = {
       "Not sure where your quantitative gaps are? The free start on either exam is 25 questions. Then drill weak topics in the matching Anki deck before you commit $1,000+ to registration.",
     extraLinks: [
       {
+        href: "/decks/cfa-level-1-pass-pack",
+        label: "CFA L1 Pass Pack — Anki + formula PDF ($29)",
+      },
+      {
         href: "/mock-exams/frm-part-1-readiness-check",
         label: "Free FRM Part 1 mock — 25 questions, no signup",
       },

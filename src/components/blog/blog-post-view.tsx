@@ -169,6 +169,11 @@ function CtaBand({
   const checkoutLabel =
     deck && priceLabel ? getDeckCheckoutCtaLabel(deck, priceLabel) : post.cta.deckLabel;
   const prep2goDeckUrl = getRetiredLanguageDeckRedirect(post.deckSlug);
+  const passPackLink = post.cta.extraLinks?.find((link) =>
+    link.href.includes("-pass-pack"),
+  );
+  const otherExtraLinks =
+    post.cta.extraLinks?.filter((link) => link.href !== passPackLink?.href) ?? [];
 
   return (
     <section className="mt-10 rounded-3xl border border-[#1f3a5f]/20 bg-[#1f3a5f]/5 px-5 py-6 sm:px-6">
@@ -206,6 +211,11 @@ function CtaBand({
             {post.cta.deckLabel}
           </Link>
         )}
+        {passPackLink ? (
+          <Link className={btnSecondary} href={passPackLink.href}>
+            {passPackLink.label}
+          </Link>
+        ) : null}
       </div>
       {post.mockSlug && post.cta.mockLabel ? (
         <p className="mt-3 text-xs leading-5 text-[#5f5749]">{MOCK_ACCESS_SHORT}</p>
@@ -217,9 +227,9 @@ function CtaBand({
           </Link>
         </p>
       ) : null}
-      {post.cta.extraLinks && post.cta.extraLinks.length > 0 ? (
+      {otherExtraLinks.length > 0 ? (
         <ul className="mt-4 space-y-2 text-sm leading-6 text-[#4f493e]">
-          {post.cta.extraLinks.map((link) => (
+          {otherExtraLinks.map((link) => (
             <li key={link.href}>
               {link.href.startsWith("http") ? (
                 <a
