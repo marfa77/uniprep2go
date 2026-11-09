@@ -3,7 +3,7 @@
     "id": "cdl-general-knowledge-readiness-check-vehicle-systems-001",
     "examSlug": "cdl-general-knowledge-readiness-check",
     "topicId": "vehicle-systems",
-    "prompt": "During a pre-trip inspection, excessive steering-wheel play most directly indicates:",
+    "prompt": "During a pre-trip, the steering wheel moves more than about 10 degrees before the front tires respond. What does that movement most directly indicate?",
     "options": [
       {
         "id": "a",
@@ -23,7 +23,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Excessive steering play can signal worn or loose steering components and reduce directional control; it should be reported and corrected before operation.",
+    "explanation": "Steering play beyond about 10 degrees means worn or loose steering parts and can cost directional control. That reading is a defect, so it is corrected before the truck is driven.",
     "distractorExplanations": {
       "b": "Manuals treat play beyond about 10 degrees (2 inches on a 20-inch wheel) as a defect, even on a truck with power steering.",
       "c": "Low steer-tire pressure causes hard steering or pulling to one side, not excessive free play at the steering wheel.",
@@ -91,7 +91,7 @@
     "correctOptionId": "c",
     "explanation": "Near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected.",
     "distractorExplanations": {
-      "a": "“Increase engine speed to raise the reading” is incorrect because near-zero oil pressure can destroy an engine quickly. The driver should make a safe stop, shut down, and have the lubrication problem corrected.",
+      "a": "Raising engine speed does not restore oil pressure; it loads the bearings while they are starving for oil and can destroy the engine faster.",
       "b": "Near-zero oil pressure can destroy the engine within minutes; driving on to the next stop risks seizure, so stop and shut down now.",
       "d": "Normal coolant temperature says nothing about lubrication; a near-zero oil-pressure reading requires an immediate safe stop."
     },
@@ -126,7 +126,7 @@
     "distractorExplanations": {
       "a": "Mirrors are checked pre-trip because they must work before driving; the post-trip DVIR is not the reason for the inspection.",
       "b": "Mirrors can be knocked out of adjustment or damaged at any time and are checked on every pre-trip, not just after a trailer swap.",
-      "c": "“Mirrors eliminate the need for shoulder checks” is incorrect because properly mounted and adjusted mirrors are essential for monitoring traffic and blind areas; cracked, loose, or obstructed mirrors compromise safe operation."
+      "c": "Mirrors still leave blind spots beside the cab and along the trailer; a shoulder check is still required before a lane change."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -135,7 +135,7 @@
     "id": "cdl-general-knowledge-readiness-check-vehicle-systems-005",
     "examSlug": "cdl-general-knowledge-readiness-check",
     "topicId": "vehicle-systems",
-    "prompt": "Which of the following best describes an Anti-lock Braking System (ABS) primarily help a driver as tested on this exam?",
+    "prompt": "In a hard stop, what is an anti-lock braking system meant to help the driver do?",
     "options": [
       {
         "id": "a",
@@ -155,11 +155,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "ABS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface.",
+    "explanation": "ABS keeps the wheels from locking so the driver can still steer during a hard stop. It does not, by itself, shorten stopping distance, and on loose gravel the stop can be longer.",
     "distractorExplanations": {
       "b": "On loose gravel or fresh snow ABS can lengthen stops because locked wheels would build a wedge of material; its real benefit is steering control.",
-      "c": "“Prevent every skid even when the driver enters a curve too fast” is incorrect because aBS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface.",
-      "d": "“Replace the need to maintain safe following distance” is incorrect because aBS prevents wheel lockup so the driver can steer while braking hard; it does not guarantee shorter stops on every surface."
+      "c": "ABS cannot save a truck that enters a curve too fast; it only helps when hard braking would otherwise lock the wheels.",
+      "d": "ABS does not shorten stopping distance by itself, so the driver still needs enough following room to make the stop."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -254,10 +254,10 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Overheating requires a safe stop and diagnosis (coolant, belts, debris). Stopping in traffic lanes or forcing the engine harder worsens risk. Investigate before continuing.",
+    "explanation": "An overheating engine calls for a safe stop, then idling to cool if that is safe, and a check of coolant, belts, and debris. Do not open a hot radiator, shut down in a live lane, or try to cool the engine by driving faster.",
     "distractorExplanations": {
       "a": "Shutting down in a live travel lane creates a collision hazard; get clear of traffic first, then idle or shut down as conditions allow.",
-      "b": "Higher speed increases load and may worsen overheating.",
+      "b": "Speeding up adds engine load and heat; it does not cool an overheating engine and can push the gauge higher.",
       "c": "Opening a hot, pressurized radiator can spray scalding coolant; let the system cool before checking the level."
     },
     "difficulty": "easy",
@@ -287,11 +287,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Worn shocks allow prolonged bouncing and poor tire contact, reducing control and increasing wear. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
+    "explanation": "A working shock lets the vehicle bounce once and settle. Continued bouncing means the shock is not damping, so the tire loses road contact and steering and braking suffer. Replace that shock before the trip.",
     "distractorExplanations": {
-      "b": "“A single bounce followed by immediate stabilization” is incorrect because worn shocks allow prolonged bouncing and poor tire contact, reducing control and increasing wear.",
-      "c": "“Even tire wear with firm, controlled suspension movement” is incorrect because worn shocks allow prolonged bouncing and poor tire contact, reducing control and increasing wear.",
-      "d": "“Normal ride height with no fluid leaking from the shock” is incorrect because worn shocks allow prolonged bouncing and poor tire contact, reducing control and increasing wear."
+      "b": "One bounce that settles right away is what a good shock does; a worn shock lets the bouncing continue after the bump.",
+      "c": "Even tire wear and a controlled ride mean the shock is working; a bad shock lets the tire hop and wear in patches.",
+      "d": "Normal ride height and a dry shock are signs it is sound; the defect is bouncing that will not settle or oil at the seal."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -345,7 +345,7 @@
       },
       {
         "id": "c",
-        "text": "A stuck coolant thermostat that will clear as the engine warms"
+        "text": "A stuck coolant thermostat that will clear itself as the engine warms"
       },
       {
         "id": "d",
@@ -353,7 +353,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Oil pressure must build promptly; near-zero pressure risks catastrophic engine damage. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
+    "explanation": "Oil pressure has to rise within seconds of starting. A reading that stays near zero means the engine is not getting oil: shut it down and do not drive, or the bearings can be ruined in minutes.",
     "distractorExplanations": {
       "a": "Oil pressure should rise within seconds of start-up even when cold; staying near zero is a lubrication failure, not warm-up.",
       "c": "The thermostat controls coolant flow and temperature; it does not affect oil pressure, which comes from the oil pump.",
@@ -386,7 +386,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Suspension defects compromise stability, tire contact, and cargo/vehicle control. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control.",
+    "explanation": "Springs, air bags, and U-bolts keep the axle in place. A broken spring, a leaking air bag, or a loose U-bolt can shift the axle and change ride height, so the truck can pull or wander. Repair that before the trip.",
     "distractorExplanations": {
       "a": "GVWR is a manufacturer rating that wear cannot change; damaged suspension is checked because it threatens vehicle control.",
       "c": "Broken springs, leaking air bags or cracked U-bolts can occur on any trip; suspension is checked on every pre-trip.",
@@ -452,10 +452,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Impaired visibility is a major crash risk; wipers/washers are essential inspection items. A driver must identify safety defects during inspection and keep the vehicle out of service when a defect threatens control. Rain, snow, and road spray all demand working wipers.",
+    "explanation": "Wipers and washers have to clear the windshield before the truck moves. Rain, snow, or spray from other traffic can show up on any route, and a CMV whose wipers or washers do not work should not be driven.",
     "distractorExplanations": {
       "a": "Weather and road spray change without warning; wipers and washers are checked on every pre-trip, not just when rain is forecast.",
-      "c": "“They replace the need to inspect mirrors and lights” is incorrect because impaired visibility is a major crash risk; wipers/washers are essential inspection items.",
+      "c": "Wipers clear the glass only; mirrors and lights are separate pre-trip items, and a working wiper does not excuse a bad mirror or lamp.",
       "d": "Wipers and washers are daily pre-trip items because a failure in rain or spray immediately limits vision."
     },
     "difficulty": "easy",
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Small power-steering leaks are normal on heavy trucks"
+        "text": "Small power-steering leaks are normal seepage on heavy trucks"
       },
       {
         "id": "b",
@@ -485,7 +485,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A power-steering leak can lead to loss of assistance and make the vehicle difficult to control, so it must be repaired before safe operation.",
+    "explanation": "A steering-fluid leak is an out-of-service defect. Lost fluid can take away power-steering assist and make the truck hard to control, so the leak is repaired before the truck is driven.",
     "distractorExplanations": {
       "a": "Any steering-fluid leak is a defect; continued loss reduces assist and can make the truck hard to steer in an emergency.",
       "c": "Power-steering fluid is a separate system from engine oil; the danger is losing steering assist, not engine lubrication.",
@@ -493,6 +493,501 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-016",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "A pre-trip tread check shows 3/32 inch on a steer tire and 3/32 inch on a drive tire. Which tire has to be replaced before the trip?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The drive tire; 4/32 inch is the tread minimum on a drive axle"
+      },
+      {
+        "id": "b",
+        "text": "Neither tire; 2/32 inch is the tread minimum on a steer axle"
+      },
+      {
+        "id": "c",
+        "text": "Both tires; 3/32 inch is below the minimum on steer and drive axles"
+      },
+      {
+        "id": "d",
+        "text": "The steer tire; front tires have to show 4/32 inch of tread"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Front tires need at least 4/32 inch of tread, and tires on the other axles need at least 2/32 inch. A steer tire at 3/32 inch is below the front minimum and has to be replaced. A drive tire at 3/32 inch still meets the rule for the other tires.",
+    "distractorExplanations": {
+      "a": "Confuses the 4/32-inch front minimum with the drive-axle rule; a drive tire may run down to 2/32 inch.",
+      "b": "Confuses the 2/32-inch minimum for other tires with the steer axle; front tread has to be at least 4/32 inch.",
+      "c": "Treats 3/32 inch as too little tread on both axles; the drive tire still meets the 2/32-inch rule, and the steer tire does not."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-017",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "With the engine running, the driver turns a 20-inch steering wheel and the front tires do not move until the wheel has traveled about 2 inches. What should the driver do with that reading?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Log the play as normal free travel and release the truck"
+      },
+      {
+        "id": "b",
+        "text": "Accept the play unless it grows past a quarter turn of the wheel"
+      },
+      {
+        "id": "c",
+        "text": "Treat about 2 inches of play on that wheel as a defect"
+      },
+      {
+        "id": "d",
+        "text": "Set the reading aside unless the truck is at highway speed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Steering play beyond about 10 degrees, about 2 inches of movement on a 20-inch wheel, means parts in the steering system are worn or loose. The truck should stay parked until that free play is corrected.",
+    "distractorExplanations": {
+      "a": "Confuses a defect-level reading with ordinary power-steering free play; about 2 inches on a 20-inch wheel is already too much.",
+      "b": "Confuses the roughly 10-degree limit with a quarter turn of the wheel; about 2 inches of play is the defect point on this wheel.",
+      "d": "Confuses a parked steering-play check with a highway road test; free play is judged before the trip, with the engine running."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-018",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "At startup the yellow ABS lamp comes on with the other bulbs, then stays lit after they go out. The service brakes still stop the truck in the yard. What does the lamp mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ABS has a fault, and the ordinary service brakes can still stop the truck"
+      },
+      {
+        "id": "b",
+        "text": "The service brakes have failed, so the truck must not be moved at all"
+      },
+      {
+        "id": "c",
+        "text": "ABS is working, because that lamp is supposed to stay on for the whole trip"
+      },
+      {
+        "id": "d",
+        "text": "The trailer has no ABS, so the tractor lamp stays on by design"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "If the ABS lamp stays on after the bulb check, anti-lock has a fault. The ordinary service brakes still work, so the driver can move the truck, but ABS may not help in a hard stop.",
+    "distractorExplanations": {
+      "b": "Confuses an ABS fault with a service-brake failure. The truck still stopped in the yard, so the foundation brakes are working.",
+      "c": "Confuses the bulb check with normal operation. The lamp should come on, then go out. A lamp that stays on is a fault.",
+      "d": "Confuses a tractor ABS lamp with a missing trailer system. This lamp is reporting the system on the vehicle that is showing it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-019",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "During a pre-trip, the two tires in one dual pair are touching along the sidewalls. If the truck leaves that way, what risk is the driver accepting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Matched pressure will keep the sidewalls from overheating"
+      },
+      {
+        "id": "b",
+        "text": "Touching duals are normal, because that is how they share the load"
+      },
+      {
+        "id": "c",
+        "text": "The inner tire is spared, because the outer tire takes the contact"
+      },
+      {
+        "id": "d",
+        "text": "Heat where the sidewalls rub, enough to fail a tire in the pair"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Dual tires are not supposed to touch. Sidewall contact builds heat and can lead to a blowout. The pair needs clearance, and anything caught between the tires has to come out before the trip.",
+    "distractorExplanations": {
+      "a": "Confuses equal air pressure with sidewall clearance; two tires can show the same pressure and still rub and overheat.",
+      "b": "Confuses a required gap between duals with load sharing; duals carry the load side by side and should not touch.",
+      "c": "Confuses the inner tire with a tire that is safe while the outer rubs; contact can destroy either tire in the pair."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-020",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "A shock absorber on the drive axle is wet with oil around the seal, and the spring beside it looks intact. How should the driver treat that shock?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As normal seepage; wipe the oil off and start the trip"
+      },
+      {
+        "id": "b",
+        "text": "As a failed spring; change the spring and leave the shock"
+      },
+      {
+        "id": "c",
+        "text": "As a worn shock; get the leak repaired before driving"
+      },
+      {
+        "id": "d",
+        "text": "As axle gear lube; leave the shock and inspect the hub later"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Oil at the shock seal means the shock is leaking and worn. A worn shock lets the wheel bounce and lose contact with the road, so the leak should be repaired before the truck is driven.",
+    "distractorExplanations": {
+      "a": "Confuses a leaking shock with harmless dampness; oil around the seal is a worn-shock defect, not a film to wipe off.",
+      "b": "Confuses shock fluid with a broken spring; the spring looks intact, and the wet seal shows the shock itself has failed.",
+      "d": "Confuses shock fluid with axle gear lube; oil gathered at the shock seal is coming from the shock, not from the axle."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-021",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "Rust streaks run outward from several nuts on one disc wheel, and those nuts look dull beside the clean nuts on the other wheels. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check those nuts before moving; they may have come loose"
+      },
+      {
+        "id": "b",
+        "text": "Leave the streaks; overnight rain left flash rust on the nuts"
+      },
+      {
+        "id": "c",
+        "text": "Wash the wheel; road salt made the streaks and the nuts are tight"
+      },
+      {
+        "id": "d",
+        "text": "Look again at the next fuel stop; this trip can start as it is"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rust streaks that start at the lug nuts usually mean the nuts have been moving. Loose wheel nuts can let a wheel shift or come off, so they have to be checked and secured before the trip.",
+    "distractorExplanations": {
+      "b": "Confuses movement rust with rain flash rust; streaks that begin at the nuts point to nuts that have shifted, not to weather.",
+      "c": "Confuses loose-nut streaks with road-salt film; streaks that start at the nuts mean the nuts have moved.",
+      "d": "Confuses a loose wheel with a defect that can wait for fuel; the nuts have to be checked before the truck rolls."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-022",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "Under a loaded trailer, one leaf in a spring pack is broken through and has shifted out of line with the other leaves. The trailer is due out this morning. What is the right call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send it out; the remaining leaves can carry today's load"
+      },
+      {
+        "id": "b",
+        "text": "Send it out and have the spring repaired at the next shop visit"
+      },
+      {
+        "id": "c",
+        "text": "Send it out; a broken leaf is a comfort issue and control stays sound"
+      },
+      {
+        "id": "d",
+        "text": "Hold the trailer; a broken, shifted leaf can let the axle move"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A leaf that is broken and shifted out of the pack can no longer keep the axle in place. A moving axle upsets tracking and control, so the trailer should stay parked until the spring is repaired.",
+    "distractorExplanations": {
+      "a": "Confuses the rest of the pack with a stand-in for a broken leaf; a leaf that has broken and shifted is a suspension defect.",
+      "b": "Confuses a shifted spring leaf with a defect that can wait for a later shop date; the trailer should not leave on it.",
+      "c": "Confuses a broken spring with a comfort complaint; a shifted leaf can move the axle and affect tracking and braking."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-023",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "On the under-vehicle walk, diesel is wetting a fuel-line fitting and drops are falling to the ground. What has to happen before this truck is driven?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe the fitting dry and go; a damp diesel joint is normal seepage"
+      },
+      {
+        "id": "b",
+        "text": "Snug the fitting by hand and go; a drip will not change engine power"
+      },
+      {
+        "id": "c",
+        "text": "Idle for a minute to see whether the drip burns off on its own"
+      },
+      {
+        "id": "d",
+        "text": "Repair the leak before driving so the fuel cannot feed a fire"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fuel leaving a fitting is a leak, and leaked diesel can ignite on a hot surface or pool under the truck. The leak has to be repaired before the vehicle is driven.",
+    "distractorExplanations": {
+      "a": "Confuses a dripping fuel fitting with harmless seepage; drops falling from the joint are a leak, not a film to wipe away.",
+      "b": "Confuses a fire hazard with a drip that leaves engine power unchanged; the danger is fuel that can ignite.",
+      "c": "Confuses a running engine with a repair; idling can spray or heat the fuel and makes the leak more dangerous."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-024",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "A helper holds the brake pedal for the light check, and one rear brake lamp stays dark while the lamp beside it comes on. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repair the dark lamp before leaving so the brake signal is complete"
+      },
+      {
+        "id": "b",
+        "text": "Leave today; the lit lamp on that side is enough of a warning"
+      },
+      {
+        "id": "c",
+        "text": "Move the working bulb into a turn-signal socket and call the check done"
+      },
+      {
+        "id": "d",
+        "text": "Put the repair off until evening, when the brake lamps get used"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Each required brake lamp has to work before the truck moves. A dark lamp hides the brake signal from traffic behind that side, and the lamp that still lights does not stand in for it.",
+    "distractorExplanations": {
+      "b": "Confuses the second brake lamp with a spare; both lamps are required, so a lit lamp does not excuse a dark one.",
+      "c": "Confuses a brake lamp with a turn signal; moving the bulb leaves the brake lamp dark and can put the turn lamp out as well.",
+      "d": "Confuses brake lamps with equipment that matters after dark; traffic behind the truck needs the brake signal in daylight."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-025",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "With the service brakes held on, a steady hiss comes from a flexible brake hose at the rear axle. What does that sound mean for the trip?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A normal air-dryer purge while the brake pedal is held down"
+      },
+      {
+        "id": "b",
+        "text": "Normal ABS valve action, so the hose can stay in service"
+      },
+      {
+        "id": "c",
+        "text": "A service-air leak that has to be repaired before departure"
+      },
+      {
+        "id": "d",
+        "text": "An overfilled compressor that will bleed down and settle by itself"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A steady hiss at a brake hose during a brake application is service air escaping. Lost air can weaken the brakes, so the hose has to be repaired before the truck is driven. Dryer purge is a short blast at the dryer, not a continuous hiss at a hose.",
+    "distractorExplanations": {
+      "a": "Confuses a hose leak with air-dryer purge; purge is a brief discharge at the dryer, not a steady hiss from a brake hose.",
+      "b": "Confuses escaping air with ABS valve noise; a continuous hiss at the hose is a leak, not the anti-lock system cycling.",
+      "d": "Confuses a hose leak with a compressor that will balance itself; air leaving the hose has to be stopped or braking pressure will fall."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-026",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "A crack runs from a hand-hole in a disc wheel toward the stud holes. That wheel is on a loaded tractor due out this morning. What is the right decision?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Watch the crack on the road; that part of the wheel carries no load"
+      },
+      {
+        "id": "b",
+        "text": "Weld the crack at the next terminal and keep this morning's dispatch"
+      },
+      {
+        "id": "c",
+        "text": "Move the cracked wheel to a trailer axle and keep the dispatch"
+      },
+      {
+        "id": "d",
+        "text": "Keep the tractor parked until that cracked wheel has been replaced"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A crack in a wheel can grow under load until the wheel fails. Welding it later or moving it to another axle does not make it safe. The wheel has to be replaced before the tractor is driven.",
+    "distractorExplanations": {
+      "a": "Confuses a wheel crack with a mark in an unloaded spot; a crack from a hand-hole toward the studs can spread and is a defect.",
+      "b": "Confuses replacement with a weld; a cracked wheel is replaced, and the tractor should not travel to the next terminal on it.",
+      "c": "Confuses a bad wheel with a part that becomes safe on a trailer; a cracked wheel is unsafe on any axle."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-027",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "One steer tire has a bulge in the sidewall, and no cord is showing. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Run that tire today; a bulge is cosmetic until the cord is visible"
+      },
+      {
+        "id": "b",
+        "text": "Replace the tire; a sidewall bulge means the body is separating"
+      },
+      {
+        "id": "c",
+        "text": "Remount the tire on a drive axle, where a bulge is acceptable"
+      },
+      {
+        "id": "d",
+        "text": "Bleed air until the bulge flattens, then set the pressure and go"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A bulge means the sidewall has separated from the tire body, and that tire can fail without warning. It has to come off before the trip. Lower pressure or a different axle does not make a separated tire safe.",
+    "distractorExplanations": {
+      "a": "Confuses a sidewall bulge with a cosmetic bump; separation can destroy the tire before any cord is visible.",
+      "c": "Confuses the steer position with the defect; a separated tire is unsafe on a drive axle as well.",
+      "d": "Confuses separation with too much air; bleeding pressure hides the bulge and leaves the damaged tire in service."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-028",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "In the yard, a bus has a retreaded tire on a front wheel, and a tractor has the same kind of retread on a drive axle. Which mounting has to be corrected before its vehicle is moved?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The bus front wheel; a retread is not allowed in that position"
+      },
+      {
+        "id": "b",
+        "text": "The tractor drive axle; a retread is not allowed in that position"
+      },
+      {
+        "id": "c",
+        "text": "Both positions; a retread is barred on a bus front and a drive axle"
+      },
+      {
+        "id": "d",
+        "text": "Neither position; a retread is legal on a bus front and a drive axle"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A bus may not use a recapped or retreaded tire on a front wheel. The same kind of retread on a tractor drive axle is allowed. The bus front tire has to be changed before that bus is moved.",
+    "distractorExplanations": {
+      "b": "Confuses the bus front-wheel ban with drive axles; a retread on a tractor drive axle is allowed.",
+      "c": "Confuses the bus steer-axle rule with a ban on drive axles; a tractor drive axle may use a retread.",
+      "d": "Confuses a general permission with the bus rule; a retread does not belong on the front wheel of a bus."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-029",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "On the highway the low-air warning comes on and stays on, while the needles are still above the bottom of the gauges. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep rolling until a needle sits at the bottom of its gauge"
+      },
+      {
+        "id": "b",
+        "text": "Pump the foot brake to build the pressure back, then continue"
+      },
+      {
+        "id": "c",
+        "text": "Leave the road and stop; do not keep driving on that warning"
+      },
+      {
+        "id": "d",
+        "text": "Set the trailer hand valve and finish the trip on trailer brakes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A low-air warning that stays on means the reservoirs are not holding a safe supply. The driver should get off the road and stop. Using up the air that remains can apply the spring brakes or leave the service brakes too weak.",
+    "distractorExplanations": {
+      "a": "Confuses the warning with air that is still usable; once that warning stays on, the safe move is to stop rather than spend what is left.",
+      "b": "Confuses the foot brake with a way to make air; pumping the pedal releases more air and deepens the loss.",
+      "d": "Confuses the trailer hand valve with a spare service brake; it is not a way to finish a trip after the low-air warning."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-vehicle-systems-030",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "vehicle-systems",
+    "prompt": "Two bolts that hold the steering gear to the frame are missing, and the remaining bolts are loose enough that the box shifts by hand. What is the truck's status?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ready to roll; the missing bolts are extras and the rest can hold"
+      },
+      {
+        "id": "b",
+        "text": "Ready to roll; the shift is frame flex built in for rough pavement"
+      },
+      {
+        "id": "c",
+        "text": "Ready to roll once a wrench snugs the loose box at the next fuel stop"
+      },
+      {
+        "id": "d",
+        "text": "Out of service until the steering gear is bolted tight to the frame"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The steering gear has to sit tight on the frame. Missing bolts and a box that moves by hand mean the driver's input may not reach the wheels. The truck stays parked until the gear is mounted securely.",
+    "distractorExplanations": {
+      "a": "Confuses mounting bolts with spare hardware; the bolts that locate the steering gear have to be in place and tight.",
+      "b": "Confuses a loose steering box with ordinary frame flex; the box itself must not shift on its mounts.",
+      "c": "Confuses a loose steering gear with a job that can wait for the next fuel stop; the truck should not be driven that way."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
   },
   {
     "id": "cdl-general-knowledge-readiness-check-safe-driving-001",
@@ -539,7 +1034,7 @@
       },
       {
         "id": "b",
-        "text": "Swing wide as needed while keeping the rear clear of hazards"
+        "text": "Turn wide as you finish and keep the trailer near the curb"
       },
       {
         "id": "c",
@@ -551,10 +1046,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Trailers off-track inside the tractor path; drivers must plan the turn, use mirrors, and swing appropriately without hitting curb or other traffic.",
+    "explanation": "The trailer off-tracks inside the tractor's path. If the rig cannot stay in one lane, turn wide as you complete the turn and keep the rear close to the curb so a driver cannot pass on your right. Do not swing left before the turn starts.",
     "distractorExplanations": {
-      "a": "Swinging wide to the left before a right turn invites cars to pass on your right; swing wide as you complete the turn instead.",
-      "c": "Cutting tight often curbs the trailer wheels.",
+      "a": "Swinging left before a right turn invites a car to pass on your right. Turn wide as you complete the turn instead.",
+      "c": "Cutting the corner lets the trailer off-track over the curb. Turn wide as you finish the turn, and keep the rear close to the curb.",
       "d": "Trailers off-track inside the tractor's path; turning early drags the trailer over the curb rather than making it follow."
     },
     "difficulty": "easy",
@@ -584,9 +1079,9 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Hydroplaning occurs when tires ride on water; speed, tread depth, and inflation strongly affect risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "Hydroplaning means water has built up under the tires until they lose contact with the pavement. It can start at speeds as low as 30 mph when water is standing, and it is more likely if the tread is worn or the pressure is low.",
     "distractorExplanations": {
-      "a": "That describes ice or black ice; hydroplaning is tires riding on a film of water, often at speeds above about 30 mph.",
+      "a": "That describes ice or black ice. Hydroplaning is tires riding on water, and it can start at speeds as low as 30 mph.",
       "b": "Lockup is a braking skid; hydroplaning occurs when water lifts the tires off the road, even without any braking.",
       "d": "Oil residue makes early rain slippery, but hydroplaning is water building under the tires so they lose road contact."
     },
@@ -650,11 +1145,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition. Do not speed up just to please the tailgater.",
+    "explanation": "If a vehicle is tailgating you, open more space ahead so you can slow gradually instead of braking hard. Do not speed up. A larger gap also gives the tailgater room to get around you.",
     "distractorExplanations": {
-      "b": "“Brake sharply to force the tailgater to back away” is incorrect because create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk.",
-      "c": "“Reduce the space ahead so the tailgater can pass sooner” is incorrect because create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk.",
-      "d": "“Speed well above the limit until the other vehicle falls behind” is incorrect because create more cushion ahead so you can brake gradually; aggressive braking or blocking escalates risk."
+      "b": "A sharp brake check can make the tailgater hit your trailer. Open space ahead so you can slow gradually instead.",
+      "c": "Closing the gap ahead takes away the room you need to slow smoothly, so the tailgater has less chance to pass safely.",
+      "d": "Speeding up makes a rear-end crash worse. It is safer to be tailgated at a lower speed than to try to pull away."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -671,7 +1166,7 @@
       },
       {
         "id": "b",
-        "text": "Look toward the right edge of your lane until they pass"
+        "text": "Look to the right edge of the lane until they pass"
       },
       {
         "id": "c",
@@ -708,7 +1203,7 @@
       },
       {
         "id": "c",
-        "text": "When you are moving unusually slowly or stopped as a hazard to traffic"
+        "text": "When you are driving very slowly or stopped as a hazard"
       },
       {
         "id": "d",
@@ -718,9 +1213,9 @@
     "correctOptionId": "c",
     "explanation": "Flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy. Follow company and state rules on flasher use.",
     "distractorExplanations": {
-      "a": "Flashers while moving at normal speed confuse drivers about whether you are stopped; use low-beam headlights instead.",
-      "b": "“Instead of using turn signals during lane changes” is incorrect because flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy.",
-      "d": "“Continuously in clear weather during ordinary highway travel” is incorrect because flashers warn others of a hazard (breakdown, very slow travel). Misuse can confuse other drivers; follow local/company policy."
+      "a": "Hazard lights at normal highway speed in rain or fog make you look stopped. Slow down first, and use low beams in fog.",
+      "b": "Four-way flashers do not show which way you are turning. A lane change needs the turn signal, not the hazard lights.",
+      "d": "Leaving the hazard flashers on in ordinary clear-weather travel tells others you are stopped or in trouble when you are not."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -745,11 +1240,11 @@
       },
       {
         "id": "d",
-        "text": "The open space you maintain around your vehicle to escape hazards"
+        "text": "The room kept all around so you can avoid a hazard"
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Managing space ahead, behind, and to the sides gives time to react to sudden stops, merges, and road hazards. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "A space cushion is the open room you keep ahead, behind, and to the sides of the vehicle. That space is what lets you slow down or move over when a hazard appears. The gap to the vehicle in front is only one part of it.",
     "distractorExplanations": {
       "a": "Following distance is one part; a space cushion also includes space behind, to the sides and overhead.",
       "b": "Swinging wide is a turning technique; the space cushion is the open area kept around the vehicle at all times.",
@@ -815,7 +1310,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Large vehicles create large blind spots; lingering beside another vehicle increases sideswipe risk. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "Do not linger beside another vehicle. You may be sitting in that driver's blind spot, and the driver can change lanes into the truck without seeing it. Drop back or pull ahead until you are sure that driver can see you.",
     "distractorExplanations": {
       "a": "Riding alongside another vehicle gives no meaningful drag or fuel benefit; the real risk is that its driver cannot see you and merges into you.",
       "c": "The concern is the other driver's view, not yours; lingering where they cannot see you invites a lane change into your rig.",
@@ -848,9 +1343,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Greater mass and longer stopping distance require more space ahead than light vehicles. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "A loaded commercial vehicle takes longer to stop than a car, so it needs more space ahead. Antilock brakes help you steer in a hard stop, but they do not by themselves shorten that distance enough to follow like a car. Air brakes also need about half a second before they take full hold.",
     "distractorExplanations": {
-      "a": "“The same following distance as a passenger car” is incorrect because greater mass and longer stopping distance require more space ahead than light vehicles.",
+      "a": "A heavy truck's stopping distance is longer than a car's, so the same gap leaves too little room to stop.",
       "c": "ABS and disc brakes improve control but do not bring a loaded CMV's stopping distance down to a car's; more space is still needed.",
       "d": "Air brakes add about half a second of brake lag before full braking; they do not apply faster than hydraulic brakes."
     },
@@ -869,7 +1364,7 @@
       },
       {
         "id": "b",
-        "text": "Blind spots are large; use a helper and get out to look"
+        "text": "Use a helper and get out to look before you back"
       },
       {
         "id": "c",
@@ -881,7 +1376,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "CMVs have large blind areas; walk-arounds and spotters reduce backing crashes. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "You cannot see the whole area behind a commercial vehicle, even in the mirrors. Use a helper when you can, and get out and look before you back. When you must back, aim toward the driver's side so you can see down that side of the trailer.",
     "distractorExplanations": {
       "a": "Mirrors leave a large blind area directly behind the trailer; even a straight back needs a get-out-and-look check or helper.",
       "c": "Manuals prefer backing toward the driver's side, where you can see; blind-side backing is the riskier choice.",
@@ -902,7 +1397,7 @@
       },
       {
         "id": "b",
-        "text": "Wet brakes and reduce braking effectiveness until they dry"
+        "text": "Wet the linings and weaken braking until the brakes dry"
       },
       {
         "id": "c",
@@ -914,7 +1409,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Water can soak brake linings; test brakes gently after water crossings and dry them if needed. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "Water deep enough to reach the hubs soaks the brake linings and weakens braking until those linings dry. After you come out, check the brakes with a light application and dry them gently. Do not expect a full stop until they are dry.",
     "distractorExplanations": {
       "a": "Water on the linings reduces friction, so braking is weaker until they dry; it is not a cooling benefit.",
       "c": "Air tanks are a sealed system; deep water affects the brake linings, not reservoir pressure or the spring brakes.",
@@ -947,7 +1442,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Never change lanes into an occupied blind spot; wait until you can see or verify clearance. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "If another vehicle is in your blind spot, do not change lanes into it. A turn signal, a burst of speed, or a mirror that looks empty does not prove the lane is clear. Wait until you can see that the space is open.",
     "distractorExplanations": {
       "a": "Signaling does not make the lane clear; wait until you can see the vehicle has left your blind spot.",
       "c": "Speeding up to clear them still leaves the vehicle unseen and adds speed; wait until you confirm the lane is clear.",
@@ -964,30 +1459,525 @@
     "options": [
       {
         "id": "a",
-        "text": "Increase speed to get through ice patches faster"
+        "text": "Speed up so you cross each ice patch before the tires lose grip"
       },
       {
         "id": "b",
-        "text": "Reduce speed, increase following distance, and avoid sudden steering or braking"
+        "text": "Slow down, add space ahead, and avoid sudden steering or braking"
       },
       {
         "id": "c",
-        "text": "Use only the trailer hand valve for all stops"
+        "text": "Make every stop with the trailer hand valve by itself"
       },
       {
         "id": "d",
-        "text": "Disable ABS so wheels can lock"
+        "text": "Leave the engine brake on so the drive wheels slow you on the ice"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Smooth inputs and lower speed help maintain traction when friction is reduced. The general-knowledge test favors smooth control, adequate space, lower speed, and early hazard recognition.",
+    "explanation": "On a slippery road, slow down, leave more space ahead, and avoid sudden steering or braking. Wet pavement can about double the distance you need to stop. Leave any retarder off so it cannot lock the drive wheels, and leave the antilock system on.",
     "distractorExplanations": {
-      "a": "“Increase speed to get through ice patches faster” is incorrect because smooth inputs and lower speed help maintain traction when friction is reduced.",
-      "c": "“Use only the trailer hand valve for all stops” is incorrect because smooth inputs and lower speed help maintain traction when friction is reduced.",
-      "d": "“Disable ABS so wheels can lock” is incorrect because smooth inputs and lower speed help maintain traction when friction is reduced."
+      "a": "Speeding up on ice spends the little traction you have. When the surface is icy, slow to a crawl instead of trying to get across it faster.",
+      "c": "The trailer hand valve brakes the trailer by itself and can swing the combination on a slick road. Use a light service-brake application instead.",
+      "d": "An engine brake on ice acts on the drive wheels alone and can lock them. Turn the retarder off when the pavement is wet, icy, or snow-covered."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-016",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "You are driving a loaded combination on a multi-lane highway in daylight, where a lane closure can appear with little warning. Where should you be looking so you can move over smoothly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the rear bumper of the vehicle directly in front of the tractor"
+      },
+      {
+        "id": "b",
+        "text": "In your mirrors, on the traffic that is following the trailer"
+      },
+      {
+        "id": "c",
+        "text": "About 12 to 15 seconds ahead, along the path you will drive"
+      },
+      {
+        "id": "d",
+        "text": "At the right fog line, scanning the shoulder for ruts and debris"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Look about 12 to 15 seconds ahead so a lane closure or a stopped vehicle shows up while you can still move over smoothly. Mirrors matter before the lane change, but the closure itself is down the road, not in the mirror or on the fog line.",
+    "distractorExplanations": {
+      "a": "Watching the bumper hides a closure until you are too close to move over without a hard stop.",
+      "b": "Mirrors show traffic beside and behind you. They do not show a closure forming in the lane ahead.",
+      "d": "The shoulder deserves a glance, but a fog-line stare misses the hazard sitting 12 to 15 seconds ahead."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-017",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "Rainwater is standing in the wheel tracks, and the steering goes light as if the drive tires are riding on the water. How should you get the tires back on the pavement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brake hard so the tires cut down through the water and keep the lane"
+      },
+      {
+        "id": "b",
+        "text": "Hold a steady speed and let the tread slice back down to the pavement"
+      },
+      {
+        "id": "c",
+        "text": "Add throttle so the drive tires push through the standing water"
+      },
+      {
+        "id": "d",
+        "text": "Ease off the throttle and slow down; do not brake or add power"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When the steering goes light, the tires are riding on water. Release the accelerator so the truck slows and the wheels can turn freely and settle back onto the pavement. Do not brake and do not add power, or the wheels can lock or spin with almost no grip.",
+    "distractorExplanations": {
+      "a": "Hard braking on a film of water can lock the wheels and start a skid. Slow by easing off the throttle instead.",
+      "b": "Holding speed keeps the tires planing on the water. You need to slow down before the tread can reach the pavement.",
+      "c": "More throttle keeps the tires up on the water and can spin the drive wheels when grip is already gone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-018",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "Rain has left the downgrade slick, and the tractor has an engine brake. The drive wheels already feel short of traction. What should you do with the retarder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn it off so it cannot lock the drive wheels by itself"
+      },
+      {
+        "id": "b",
+        "text": "Set the strongest stage so the service brakes can stay cool"
+      },
+      {
+        "id": "c",
+        "text": "Leave it on and add the trailer hand valve to help you slow"
+      },
+      {
+        "id": "d",
+        "text": "Switch it on after the drive wheels have started to slide"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A retarder or engine brake used alone on a slippery road can lock the drive wheels and start a skid. Turn it off when the pavement is wet, icy, or snow-covered, and hold the truck with the low gear you selected before the hill.",
+    "distractorExplanations": {
+      "b": "The strongest stage puts the most force on the drive wheels, which is what locks them when the pavement is already slick.",
+      "c": "The trailer hand valve brakes the trailer by itself and can swing the combination. It does not make a retarder safe on wet pavement.",
+      "d": "Waiting until the drive wheels slide means the retarder is already locking them. Turn it off before the grip is gone."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-019",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "A car ahead of your truck brakes hard at highway speed, and you are too close to stop behind it. What should already have been true around your vehicle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Your horn sounding, so you can warn traffic while you stay in this lane"
+      },
+      {
+        "id": "b",
+        "text": "Your engine brake on, so you can slow hard without leaving this lane"
+      },
+      {
+        "id": "c",
+        "text": "Trucks close on both sides, so those drivers can see you and make room"
+      },
+      {
+        "id": "d",
+        "text": "An open side and a way around that car, not a tight gap on its bumper"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When a car brakes hard and you cannot stop short, the space that helps is an open side and a path around it. A horn, an engine brake, or trucks tight beside you does not replace the way out you failed to keep.",
+    "distractorExplanations": {
+      "a": "A horn warns other drivers, but it does not move your truck around the car that is already stopping in your lane.",
+      "b": "An engine brake can slow the truck, but it does not open a path around a car that has already stopped in your lane.",
+      "c": "Trucks tight on both sides close the escape. You needed that open side before the car braked, not a hope that they will move."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-020",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "You are already in the proper lane for a left turn in a tractor-trailer, and vehicles are waiting on the cross street. When should you start the turn?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After you swing wide to the right, so the trailer has a longer arc"
+      },
+      {
+        "id": "b",
+        "text": "As soon as the tractor nose reaches the near side of the intersection"
+      },
+      {
+        "id": "c",
+        "text": "Once the tractor reaches the center, so the trailer tracks through"
+      },
+      {
+        "id": "d",
+        "text": "After the whole trailer is already straight on the street you are entering"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Start the left turn only after the tractor has reached the center of the intersection, from the lane you are already in, so the trailer tracks through. Turning sooner lets the trailer off-track into vehicles waiting on the cross street. Do not swing the opposite way first.",
+    "distractorExplanations": {
+      "a": "Swinging wide to the right before a left turn opens a gap another driver may try to use. It does not help the trailer track through from your lane.",
+      "b": "Turning as soon as the nose enters cuts the corner. The trailer then off-tracks into the vehicles waiting on the cross street.",
+      "d": "If the trailer is already straight on the new street, you have passed the turn path. The turn starts at the center of the intersection."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-021",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "Cars are close on your left as you approach a left turn in a combination from the proper turn lane. When should those drivers first see your turn signal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Early, before you slow or turn, so they have time to make room"
+      },
+      {
+        "id": "b",
+        "text": "As the tractor enters the intersection, so the lamp matches the turn"
+      },
+      {
+        "id": "c",
+        "text": "After you have stopped, so a car does not try to pass on your left"
+      },
+      {
+        "id": "d",
+        "text": "After the turn is finished, to show you have left the through lane"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Signal early, well before you slow down or start the turn, so drivers beside a long combination have time to make room. Turn from the proper lane so the trailer tracks through. Do not swing the opposite way first. A late signal gives them no time to yield.",
+    "distractorExplanations": {
+      "b": "Waiting until the tractor enters the intersection leaves the car on your left no time to clear the space your trailer will sweep.",
+      "c": "A signal that starts after you stop is late. The driver beside you may already be committed to passing the tractor.",
+      "d": "A signal after the turn tells nobody about the move you are making. The warning has to come before you turn."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-022",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "The curve ahead is sharper than it looked, and you are still on the straight stretch that leads into it. How should you set your speed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brake firmly once the tractor is already leaned into the curve"
+      },
+      {
+        "id": "b",
+        "text": "Downshift after you are in the curve and the speed still feels high"
+      },
+      {
+        "id": "c",
+        "text": "Hold highway speed and steer wide so the trailer tracks to the inside"
+      },
+      {
+        "id": "d",
+        "text": "Slow to a safe speed on the straight, before you enter the curve"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Braking or downshifting after you are in a curve asks the tires to turn and slow at the same time, which makes a skid more likely. Take the extra speed off while you are still straight, then hold a gear that carries the truck through.",
+    "distractorExplanations": {
+      "a": "Braking after the tractor is leaned into the curve is when the tires have the least grip left for steering.",
+      "b": "A downshift once you are already in the curve, still going fast, risks a missed shift and a drive-wheel skid.",
+      "c": "Holding highway speed through a sharp curve pushes the combination outward. A wider steer does not replace a slower entry."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-023",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "The air is cold, the open highway looks wet rather than icy, and a shaded bridge is just ahead. How should you handle that bridge?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep your speed up, because pavement that looks wet has not turned to ice"
+      },
+      {
+        "id": "b",
+        "text": "Accelerate across the deck so the tires spend less time on the shade"
+      },
+      {
+        "id": "c",
+        "text": "Slow before the deck; a shaded bridge can ice while the road looks wet"
+      },
+      {
+        "id": "d",
+        "text": "Switch the engine brake on so the tires stay slowed across the shade"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Bridge decks and shaded pavement cool faster than the open road, so ice can form there while the highway on either side only looks wet. Slow down before the deck instead of waiting until the tires begin to slip.",
+    "distractorExplanations": {
+      "a": "A wet look on a cold day is not a clear deck. Bridges ice over before the roadway on either side of them.",
+      "b": "Accelerating on a shaded deck asks the drive tires for grip they may not have and can break them loose.",
+      "d": "An engine brake on a deck that may be iced can lock the drive wheels. Slow down before you reach it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-024",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "Fog has cut your view to a short stretch of highway in front of the tractor. How should you set your lights and your speed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High beams at highway speed, so the light reaches farther up the road"
+      },
+      {
+        "id": "b",
+        "text": "High beams and four-way flashers, while you hold the posted highway speed"
+      },
+      {
+        "id": "c",
+        "text": "Parking lights by themselves, so oncoming drivers are spared the glare"
+      },
+      {
+        "id": "d",
+        "text": "Low beams, and a speed that lets you stop inside the road you can see"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "High beams reflect off fog and come back as glare, so you see less of the road, not more. Use low beams, slow down, and leave a gap that lets you stop within the piece of highway you can actually see.",
+    "distractorExplanations": {
+      "a": "High beams bounce off the fog into your eyes, and highway speed is too fast for a view that ends a short way ahead.",
+      "b": "Four-way flashers do not clear fog, and high beams at the posted speed make the glare worse while you are still moving too fast.",
+      "c": "Parking lights do not show you the lane or the traffic ahead. Low-beam headlights are the lights to use in fog."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-025",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "A steer tire blows at highway speed in a straight lane, and the truck pulls hard toward that side. What should you do first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Grip the wheel, hold the lane, and stay off the brake while you slow"
+      },
+      {
+        "id": "b",
+        "text": "Brake hard at once so the truck stops before it can leave the lane"
+      },
+      {
+        "id": "c",
+        "text": "Steer hard for the shoulder and brake hard as you cross the fog line"
+      },
+      {
+        "id": "d",
+        "text": "Shift to neutral and use the trailer hand valve to drag the speed down"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A front-tire blowout can twist the wheel out of your hands, so grip it and hold the lane. Stay off the brake until the truck has slowed and is under control. Then brake gently, pull off, and stop. Do not brake hard the moment the tire fails.",
+    "distractorExplanations": {
+      "b": "Hard braking right after a blowout can lock the tires that still have air and turn a pull into a skid.",
+      "c": "A sharp steer plus a hard brake is how a blowout becomes a rollover or a trip into the ditch. Slow down first.",
+      "d": "Neutral and the trailer hand valve do not steady a failed steer tire, and the hand valve can brake the trailer out of line."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-026",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "Your right wheels drop onto a lower gravel shoulder while you are still at road speed and the truck is tracking straight. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerk the wheel left at once so the tires climb straight back up the edge"
+      },
+      {
+        "id": "b",
+        "text": "Brake hard while you steer left, so the return to the pavement is short"
+      },
+      {
+        "id": "c",
+        "text": "Slow down first, then steer back when it is safe to return"
+      },
+      {
+        "id": "d",
+        "text": "Add power and crank the wheel left so the tires bounce up the edge"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Do not jerk the wheel back onto the pavement while you are still at road speed. Ease off the throttle and slow down, then steer back when it is safe. If the tires catch the pavement edge at speed, they can sling the truck across the lane.",
+    "distractorExplanations": {
+      "a": "Jerking the wheel left at speed lets the tires grab the pavement edge and shoot the truck across the lane.",
+      "b": "Hard braking while you steer off a drop-off can skid the drive wheels and still trip the steer tires on the edge.",
+      "d": "Adding power with a hard left steer makes the catch worse. The tires are more likely to snap the truck sideways."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-027",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "The tracks are clear, and you are taking a loaded combination onto a rough railroad crossing. What should you do until the trailer has cleared the rails?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Downshift on the rails if the engine starts to lug under the load"
+      },
+      {
+        "id": "b",
+        "text": "Stop on the rails and set the parking brakes if the surface feels rough"
+      },
+      {
+        "id": "c",
+        "text": "Move toward the oncoming lane so the trailer takes a smoother line"
+      },
+      {
+        "id": "d",
+        "text": "Stay in the gear you chose before the tracks and keep the rig moving"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Do not shift gears while you are on the tracks. A missed shift can stall the truck in front of a train. Do not stop with the trailer sitting on the rails. Pick the gear before the crossing and keep moving until you have cleared.",
+    "distractorExplanations": {
+      "a": "A downshift on the rails can miss the gear and stall the truck with the trailer still on the crossing.",
+      "b": "Stopping on the rails, even to reset the brakes, leaves the combination in the path of a train.",
+      "c": "Drifting toward the oncoming lane puts you in front of other traffic and does not replace staying in gear until you clear."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-028",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "A car is passing your combination on a two-lane road and is still beside the trailer. An oncoming vehicle is visible well ahead. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay in your lane and ease off so the car can finish the pass"
+      },
+      {
+        "id": "b",
+        "text": "Speed up so the car is forced to drop back behind the trailer"
+      },
+      {
+        "id": "c",
+        "text": "Move toward the center line to give the oncoming vehicle more room"
+      },
+      {
+        "id": "d",
+        "text": "Brake hard so the passing car is pushed out ahead of the tractor"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When another vehicle is passing you, hold your lane and do not speed up. Easing off a little shortens the time that car spends beside the trailer and lets it finish the pass and return to your lane.",
+    "distractorExplanations": {
+      "b": "Speeding up stretches the pass and keeps the car beside the trailer longer, which is the opposite of helping it clear you.",
+      "c": "Moving toward the center line closes the space the passing car is using and can squeeze it toward the oncoming vehicle.",
+      "d": "A hard brake with a car beside the trailer can make that car strike you. It is not a clean way to end the pass."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-029",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "An overpass shows a posted clearance, but the road under it was just repaved and you are not sure your tall trailer will fit. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Continue if the posted figure is above the trailer height you remember"
+      },
+      {
+        "id": "b",
+        "text": "Creep ahead in your lane and hope the posted figure is still true"
+      },
+      {
+        "id": "c",
+        "text": "Speed up so the trailer spends less time under the lowest point"
+      },
+      {
+        "id": "d",
+        "text": "Take another road that you already know will clear this trailer"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A posted clearance can be wrong after the road is repaved, or when snow or ice is packed on the pavement. If you are not sure a tall trailer will fit, take another road. More speed does not add clearance.",
+    "distractorExplanations": {
+      "a": "Matching a remembered height to a posted figure misses repaving, packed snow, and a trailer that sits taller than you think.",
+      "b": "Creeping ahead while you hope the sign is still true is how a tall trailer strikes the bridge. If you are not sure, do not enter.",
+      "c": "More speed does not raise the bridge. It makes a strike harder and leaves you less time to stop."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-safe-driving-030",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "safe-driving",
+    "prompt": "The tractor and the trailer both have antilock brakes. On dry pavement a car stops short ahead, and you must brake hard in a straight line. How should you use the pedal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pump it in quick strokes so the wheels stay short of a lockup"
+      },
+      {
+        "id": "b",
+        "text": "Come off the pedal as soon as you feel the pulse under your foot"
+      },
+      {
+        "id": "c",
+        "text": "Press it firmly and hold a steady pressure so the system can pulse"
+      },
+      {
+        "id": "d",
+        "text": "Apply the trailer hand valve first, then add a light push on the pedal"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "With antilock brakes on the tractor and the trailer, press the pedal firmly and hold it so the system can pulse the brakes. That pulse means it is working, and it helps you steer during the hard stop. ABS does not by itself shorten stopping distance, and it does not mean you can drive faster or brake later.",
+    "distractorExplanations": {
+      "a": "Pumping the pedal is the habit from trucks without antilock brakes. On this rig it fights the system that is already controlling lockup.",
+      "b": "The pulse under your foot is the antilock system working. Lifting off when you feel it cancels the controlled stop.",
+      "d": "The trailer hand valve brakes the trailer by itself and can pull the combination out of line. Use the foot brake so antilock works on the whole vehicle."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
   },
   {
     "id": "cdl-general-knowledge-readiness-check-cargo-001",
@@ -1038,7 +2028,7 @@
       },
       {
         "id": "c",
-        "text": "The actual weight of the loaded combination when weighed on a scale"
+        "text": "The actual weight of the loaded power unit, trailer, and cargo on a scale"
       },
       {
         "id": "d",
@@ -1050,7 +2040,7 @@
     "distractorExplanations": {
       "a": "That is GVWR; GCWR is the rating for the power unit plus its trailer(s) and cargo combined.",
       "c": "Actual weight is gross combination weight (GCW); GCWR is the manufacturer's maximum rating, not the scale reading.",
-      "d": "Axle limits (20,000 lb on a single axle) are legal weight limits; GCWR is a manufacturer rating for the entire combination."
+      "d": "A single-axle legal limit is a weight law for one axle. GCWR is the manufacturer's maximum rating for the whole combination."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1112,7 +2102,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "High CG makes rollovers more likely at the same speed in curves; load low and centered when possible. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction. The risk is greatest in turns.",
+    "explanation": "Weight stacked high raises the center of gravity and makes the vehicle easier to roll in a curve. The same corner is safer when that weight sits low on the deck.",
     "distractorExplanations": {
       "a": "Height does not add traction; a high center of gravity mainly raises rollover risk in curves and sudden turns.",
       "b": "A tall load raises the center of gravity; steer-axle overload comes from load placed too far forward, not from height.",
@@ -1145,11 +2135,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns. A loose tarp can also unload cargo onto the road.",
+    "explanation": "A tarp is weather protection. Fasten every edge so wind cannot get underneath, balloon the cover, and tear it loose. The tarp is not a tiedown; chains, straps, or other securement still have to hold the cargo.",
     "distractorExplanations": {
-      "b": "“Use the tarp as a substitute for required tiedowns” is incorrect because wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns.",
-      "c": "“Leave the front edge loose so air can escape underneath” is incorrect because wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns.",
-      "d": "“Attach the cover only to movable cargo rather than the vehicle” is incorrect because wind can balloon poorly secured tarps; covers must be fastened so they protect cargo without replacing required tiedowns."
+      "b": "A tarp only shields the load from weather. It does not hold cargo down, so chains, straps, or other tiedowns are still required.",
+      "c": "A loose front edge lets wind get under the tarp, balloon the cover, and tear it off the load.",
+      "d": "The cover has to be fastened to the vehicle. Tying it only to loose cargo lets the tarp and the freight shift together."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1178,7 +2168,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "WLL is used to ensure aggregate tiedown capacity meets cargo weight requirements under FMCSA securement rules. WLL applies under normal use.",
+    "explanation": "Working load limit is the maximum load a tiedown is rated to hold in normal service. It is lower than breaking strength, the force that snaps the device in a test, and securement rules use the lower figure.",
     "distractorExplanations": {
       "a": "That is breaking strength; WLL is a lower rated figure for normal service, set well below the break point.",
       "c": "Trailer capacity is set by GVWR and axle ratings; WLL rates an individual tiedown or securement device.",
@@ -1191,31 +2181,31 @@
     "id": "cdl-general-knowledge-readiness-check-cargo-007",
     "examSlug": "cdl-general-knowledge-readiness-check",
     "topicId": "cargo",
-    "prompt": "For the CDL General Knowledge, if cargo shifts while you are driving, what should you do?",
+    "prompt": "If cargo shifts while you are driving, what should you do?",
     "options": [
       {
         "id": "a",
-        "text": "Increase speed to stabilize the load"
+        "text": "Speed up so the shifting freight settles and stays in place"
       },
       {
         "id": "b",
-        "text": "Ignore it if the trailer doors are closed"
+        "text": "Keep driving if the trailer doors are closed and still latched"
       },
       {
         "id": "c",
-        "text": "Stop safely as soon as possible and resecure/rearrange before continuing"
+        "text": "Stop safely and resecure the cargo before you continue"
       },
       {
         "id": "d",
-        "text": "Brake hard from highway speed immediately in your lane"
+        "text": "Brake hard from highway speed immediately and stay in your lane"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Shifted cargo changes handling and can spill; stop clear of traffic and fix securement. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "Shifted cargo can spill or change how the truck handles. Stop clear of traffic as soon as you safely can, then resecure or rearrange the load before you drive on.",
     "distractorExplanations": {
-      "a": "Higher speed can worsen instability.",
-      "b": "Closed doors do not mean the load is safe.",
-      "d": "Panic braking risks jackknife/loss of control; get to a safe stop."
+      "a": "Raising speed does not settle a shifting load. It gives loose freight more room to move and makes the truck harder to control.",
+      "b": "Closed trailer doors do not keep a shifted load safe. Freight can still break the doors, spill, or change how the truck handles.",
+      "d": "A hard brake from highway speed can jackknife the combination or cause a loss of control. Ease off to a safe stop instead."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1312,9 +2302,9 @@
     "correctOptionId": "b",
     "explanation": "Exceeding tire load ratings causes heat buildup and blowouts; permits do not override tire/manufacturer limits for safety.",
     "distractorExplanations": {
-      "a": "“Better traction because the tire footprint becomes larger” is incorrect because exceeding tire load ratings causes heat buildup and blowouts; permits do not override tire/manufacturer limits for safety.",
-      "c": "“Lower tire temperature during sustained highway travel” is incorrect because exceeding tire load ratings causes heat buildup and blowouts; permits do not override tire/manufacturer limits for safety.",
-      "d": "“More load capacity than the sidewall rating allows” is incorrect because exceeding tire load ratings causes heat buildup and blowouts; permits do not override tire/manufacturer limits for safety."
+      "a": "A larger tire footprint does not make an overload safe. Weight past the sidewall rating builds heat and can cause a blowout or a fire.",
+      "c": "Weight past the tire rating heats the tire on a highway run. It does not lower the tire's temperature.",
+      "d": "The sidewall rating is the most that tire may carry. Putting more freight on it does not create extra capacity."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1343,11 +2333,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Federal securement rules require early and periodic inspections because loads can shift. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction. Rechecks follow every 3 hours or 150 miles, whichever comes first.",
+    "explanation": "Inspect cargo securement within the first 50 miles. After that, inspect again at every change of duty status or every 3 hours or 150 miles, whichever comes first. Later checks use that same interval.",
     "distractorExplanations": {
-      "a": "Federal rules require rechecks every 3 hours or 150 miles after the first check, not just once more at delivery.",
-      "c": "The first check is due within 50 miles, then every 3 hours or 150 miles, whichever comes first—not 100 and 300.",
-      "d": "150 miles is the recheck interval, not the first-check point; the first inspection comes within 50 miles."
+      "a": "The first check is within 50 miles, not 25, and you do not wait until the destination. After that, a duty-status change, 3 hours, or 150 miles triggers the next check, whichever comes first.",
+      "c": "The first check is within 50 miles, not 100, and the later mark is 3 hours or 150 miles, not 300. A change of duty status can require the check sooner.",
+      "d": "The first inspection is within 50 miles, not 150. A duty-status change is a real later trigger, together with 3 hours or 150 miles, whichever comes first."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1376,7 +2366,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "A lower center of gravity reduces rollover risk and improves handling. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "Heavy cargo placed low and near the center lowers the center of gravity, so the vehicle is more stable and less likely to roll in a curve.",
     "distractorExplanations": {
       "a": "Drive-axle loading depends on fore-aft position, not height; keeping cargo low and centered mainly lowers the center of gravity.",
       "c": "Tiedown count is set by cargo length and weight rules; low, centered placement improves stability, not securement count.",
@@ -1397,7 +2387,7 @@
       },
       {
         "id": "b",
-        "text": "Aggregate WLL of tiedowns must meet required securement strength"
+        "text": "Aggregate WLL must equal at least half the cargo weight"
       },
       {
         "id": "c",
@@ -1409,10 +2399,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Securement strength is based on rated WLL; inadequate capacity is a violation and a hazard. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "The aggregate working load limit of the tiedowns must be at least half the weight of the cargo. Breaking strength is a higher test number, and the strongest single strap does not set the limit for the whole load.",
     "distractorExplanations": {
       "a": "Breaking strength is much higher than WLL; securement calculations use the lower WLL figure.",
-      "c": "The federal rule is aggregate WLL of at least one-half the cargo weight, not twice the cargo weight.",
+      "c": "Twice the cargo weight is the wrong multiple. The rule calls for an aggregate working load limit of at least half the cargo weight.",
       "d": "Aggregate WLL sums the tiedowns; one strong strap does not set the capacity for the entire load."
     },
     "difficulty": "hard",
@@ -1430,7 +2420,7 @@
       },
       {
         "id": "b",
-        "text": "Legal GVW makes each axle legal under federal weight rules"
+        "text": "Legal gross weight makes each axle legal under federal weight rules"
       },
       {
         "id": "c",
@@ -1442,7 +2432,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Bridge formula and axle limits protect infrastructure; illegal axle loads can cite a legal GVW load. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "Each axle and axle group has its own weight limit, separate from gross vehicle weight. An overload on one axle can damage roads and bridges and is a violation even when the total weight is legal.",
     "distractorExplanations": {
       "b": "Each axle and axle group has its own limit; a legal gross weight can still put one axle over its limit.",
       "c": "Overloaded axles are citable violations and can damage roads and bridges; the issue goes well beyond tire wear.",
@@ -1475,14 +2465,509 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Loose material must be contained so it does not endanger other road users. Cargo must remain within legal ratings and be distributed, contained, and secured against movement in every direction.",
+    "explanation": "Loose material must be covered or contained so it does not blow or spill onto other road users. An open tailgate, higher speed, or a load below the rails does not keep that debris on the truck.",
     "distractorExplanations": {
-      "a": "“An open tailgate so loose material can leave gradually” is incorrect because loose material must be contained so it does not endanger other road users.",
-      "c": "“Faster travel so wind carries debris behind the vehicle” is incorrect because loose material must be contained so it does not endanger other road users.",
-      "d": "“No restraint when the load remains below the side rails” is incorrect because loose material must be contained so it does not endanger other road users."
+      "a": "An open tailgate lets gravel and other loose material spill onto the road. It does not release the load in a safe way.",
+      "c": "Higher speed throws debris farther behind the truck. It does not keep cargo in the vehicle; the load needs a cover or containment.",
+      "d": "Freight below the side rails can still blow or sift out. Sitting under the rail does not replace a cover or other containment."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-016",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "You are ready to leave the dock with bundles of rebar. The rear chain is tight, but the front chain still lies slack across the bundles. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the slack and let road vibration draw the front chain tight"
+      },
+      {
+        "id": "b",
+        "text": "Build speed on the ramp so the rebar settles into the slack chain"
+      },
+      {
+        "id": "c",
+        "text": "Take the slack out of the front chain before the truck moves"
+      },
+      {
+        "id": "d",
+        "text": "Unhook the slack front chain and haul on the rear chain instead"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A tiedown holds rebar when it is snug enough to stop movement. Slack gives the bundles room to shift into the loose chain under braking or in a turn, so take that slack out before the truck moves.",
+    "distractorExplanations": {
+      "a": "Road vibration does not tension a slack chain; it gives the bundles room to shift into the loose tiedown.",
+      "b": "Speeding up to seat a slack chain lets the rebar move while you are already rolling, which is the shift the chain is there to prevent.",
+      "d": "Dropping the slack chain leaves the bundles without that restraint; the chain has to be tightened, not removed, before you move."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-017",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "Boxes on the passenger side are stacked across the side window, so you cannot see the right mirror or the lane beside the cab. What has to happen before you drive?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drive slowly and rely on the left mirror for lane changes"
+      },
+      {
+        "id": "b",
+        "text": "Lean out the passenger window when you need the right side"
+      },
+      {
+        "id": "c",
+        "text": "Aim the right mirror past the stack and leave the boxes in the window"
+      },
+      {
+        "id": "d",
+        "text": "Move the boxes until the mirror and the right lane are visible"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Cargo must not block your view ahead or to the sides. Boxes across the side window hide the right mirror and the lane beside the cab, so move them before you drive and confirm you can see that side.",
+    "distractorExplanations": {
+      "a": "The left mirror does not restore the right side the boxes are covering; you still cannot see the lane beside the cab.",
+      "b": "Leaning out the window leaves the boxes in your line of sight and puts you out of a normal driving position.",
+      "c": "Aiming the mirror does not clear freight stacked across the window; the boxes still block your view of the right lane."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-018",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "Sacks of freight have slid against the driver's door. You can reach the pedals, but the door will not open. What should you do before you leave?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move those sacks clear so the driver's door can open all the way"
+      },
+      {
+        "id": "b",
+        "text": "Leave the sacks piled there so they hold the door shut on the road"
+      },
+      {
+        "id": "c",
+        "text": "Drive to the next truck stop and clear the door when you unload there"
+      },
+      {
+        "id": "d",
+        "text": "Treat the blocked door as a passenger issue and leave with it blocked"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "You have to be able to get out of the cab. Sacks that hold the driver's door shut can trap you in a fire or a crash, even when your feet still reach the pedals. Clear that door before you move the truck.",
+    "distractorExplanations": {
+      "b": "Sacks against the door are not a latch; they trap you in the cab when you need to get out.",
+      "c": "Waiting for the next stop means you drive with no usable exit, which is the condition you have to correct first.",
+      "d": "The driver's own door has to open; a blocked cab door is a cargo problem you fix before you leave."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-019",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "You set heavy machine crates on top of empty pallet racks so the floor stayed open. The truck is inside its gross rating, and the stack towers over the racks. What is the safer loading choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the stack, since a legal gross weight means the height is acceptable"
+      },
+      {
+        "id": "b",
+        "text": "Pull a tarp over the crates so a crosswind cannot push the tall stack"
+      },
+      {
+        "id": "c",
+        "text": "Shove the whole stack against one wall so that side stays planted in curves"
+      },
+      {
+        "id": "d",
+        "text": "Set the heavy crates on the deck and put the empty racks above them"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Weight placed high raises the center of gravity even when the gross weight is legal. In a curve that tall weight makes the truck easier to roll. Put the heavy crates on the deck and the empty racks above them.",
+    "distractorExplanations": {
+      "a": "A legal gross weight does not fix height; heavy crates on top of empty racks still leave the truck top-heavy.",
+      "b": "A tarp does not bring the weight down; it covers crates that are already stacked too high.",
+      "c": "Pushing the stack against one wall makes one side heavy and does not put the crates down on the deck."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-020",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "A pallet slides toward the trailer doors as you creep across the yard. Your helper jogs alongside and wants to shove the pallet back while the truck keeps rolling. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay in a low gear and let him slide the pallet while you creep"
+      },
+      {
+        "id": "b",
+        "text": "Speed up so the pallet walks forward on its own toward the nose"
+      },
+      {
+        "id": "c",
+        "text": "Stop the truck before anyone shifts the pallet, then tie it down"
+      },
+      {
+        "id": "d",
+        "text": "Open the rear doors and let the pallet walk off while you are still rolling"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Do not shift cargo while the vehicle is moving. A helper shoving a pallet beside a rolling trailer can be knocked down, and the freight can keep moving. Stop the truck, then reposition the pallet and tie it down before you roll again.",
+    "distractorExplanations": {
+      "a": "Sliding the pallet during a creep is shifting cargo on a moving vehicle, which can injure the helper and let the load run.",
+      "b": "Using speed to walk a pallet forward shifts cargo in motion and can send it into the nose or out the back.",
+      "d": "Letting the pallet walk out an open door while you roll dumps the freight and still moves cargo on a moving truck."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-021",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "A flatbed of lumber is tarped from the front rail to the rear, and the tarp clamps are tight. No chain or strap runs over the boards. The shipper says the cover will hold them. What is still required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing further, because tight tarp clamps keep the boards from sliding"
+      },
+      {
+        "id": "b",
+        "text": "A second tarp, since one cover may not be enough to hold the lumber"
+      },
+      {
+        "id": "c",
+        "text": "Fasten the tarp to the top boards so the cover and the lumber move together"
+      },
+      {
+        "id": "d",
+        "text": "Tiedowns over the lumber, because the tarp does not hold the boards"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A cover keeps weather and loose pieces from blowing, but it is not a tiedown. Covered lumber still needs the same securement it would need uncovered, so the boards cannot slide under the tarp when you brake or turn.",
+    "distractorExplanations": {
+      "a": "Tight tarp clamps hold the cover, not the boards; lumber under a tarp can still slide if no tiedown anchors it.",
+      "b": "Another tarp is still a cover, not a tiedown; lumber under extra tarps still needs tiedowns to the vehicle.",
+      "c": "Fastening the cover to the boards lets the load and the tarp move together; tiedowns have to anchor the lumber to the deck."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-022",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "On a tractor-trailer, every pallet sits against the rear doors. The gross weight is legal, but on a wet upgrade the drive wheels spin and the truck will not climb. What is wrong with the load placement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The steering axle is overloaded by freight placed too far forward"
+      },
+      {
+        "id": "b",
+        "text": "The freight sits too far back to put weight on the drive axles"
+      },
+      {
+        "id": "c",
+        "text": "The trailer tandems are too light to keep traction on a wet grade"
+      },
+      {
+        "id": "d",
+        "text": "Rear-door freight lowers the manufacturer's rating for the combination"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Freight packed against the rear doors loads the trailer tandems and unloads the drive axles. Light drive axles lose traction on a wet grade even when the gross weight is legal. Bring the freight forward enough to put weight on the drives without overloading another axle.",
+    "distractorExplanations": {
+      "a": "Freight against the rear doors is too far back, not too far forward. It unloads the drive axles rather than overloading the steering axle.",
+      "c": "With the pallets at the rear doors the trailer tandems are the heavy axles, and they are not the axles that pull the grade.",
+      "d": "Where you place the freight does not change the manufacturer's combination rating; it changes which axles carry the weight."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-023",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "A straight truck carries heavy crates in one layer on the deck, all of them over the drive axle, with bare floor behind the cab. In a crosswind the steering feels vague and the truck wanders. What is the placement problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Too much of the cargo weight is sitting on the steering axle"
+      },
+      {
+        "id": "b",
+        "text": "Too little of the cargo weight is sitting on the drive axle"
+      },
+      {
+        "id": "c",
+        "text": "Too little of the cargo weight is sitting on the steering axle"
+      },
+      {
+        "id": "d",
+        "text": "Overloaded rear tires are what make the front end wander in the wind"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Crates over the drive axle, with bare floor behind the cab, leave the steering axle light. A light front end wanders in a crosswind and steers poorly. Move some freight forward so the steering axle carries weight, without stacking so much there that the axle is overloaded.",
+    "distractorExplanations": {
+      "a": "Weight over the drive axle unloads the steering axle; hard steering from too much front weight is the opposite problem.",
+      "b": "The crates are already over the drive axle, so that axle is not the light one; the wandering front is a light steering axle.",
+      "d": "Heavy rear tires can follow this placement, but the wander comes from too little weight on the steering axle."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-024",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "All of the machines on your flatbed trailer sit along the left rail, and the right side of the deck is empty. In a curve the trailer leans hard toward the loaded side. What is the main hazard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The machines sit far enough forward to overload the steering axle"
+      },
+      {
+        "id": "b",
+        "text": "The heavier left rail plants the truck and makes the curve more stable"
+      },
+      {
+        "id": "c",
+        "text": "The empty right side means the trailer axles are under their share of the weight"
+      },
+      {
+        "id": "d",
+        "text": "The heavy left side raises rollover risk and overloads the tires on that side"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Machines lined along one rail put that side's tires and springs over their share and lift the empty side. In a curve the lean toward the heavy side can roll the truck. Spread the machines across the deck so the weight is balanced left to right.",
+    "distractorExplanations": {
+      "a": "The machines are placed along one rail, not toward the steering axle; the lean comes from side-to-side weight.",
+      "b": "Extra weight on one rail does not make a curve safer; it unloads the light side and makes a rollover more likely.",
+      "c": "Empty deck on the right is a lateral balance problem, not a sign that the trailer axle group is light."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-025",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "Pipe is loaded lengthwise on a flatbed. A strap runs over the middle, and nothing chocks or wedges the pipe. In a turn the pipe starts to roll toward the edge. What was missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chocks or a cradle so the pipe cannot roll out from under the strap"
+      },
+      {
+        "id": "b",
+        "text": "More speed through the turn so the pipe stays seated on the deck"
+      },
+      {
+        "id": "c",
+        "text": "A tight tarp, which will stop a round load from rolling off the side"
+      },
+      {
+        "id": "d",
+        "text": "Extra freight piled on the right rail so the pipe would have to roll uphill"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Pipe can rotate out from under a strap in a turn. Chocks, wedges, or a cradle keep the pipe from rolling off the deck. A cover or more speed will not stop it. Add blocking that stops the roll, and keep the strap tight, before you continue.",
+    "distractorExplanations": {
+      "b": "More speed does not keep round pipe from rolling; it gives loose pipe a better chance to leave the deck in the turn.",
+      "c": "A tarp is a cover, not a chock; pipe can still rotate under a cover when nothing blocks the roll.",
+      "d": "Piling freight on one rail to make pipe roll uphill creates a side-heavy load and does not restrain the pipe."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-026",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "On your pre-trip, the chain over a crate has a cracked link, and the strap over that same crate is cut partway through the webbing. What should you do before you leave?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Roll anyway, because a heavy crate will not move if one link is cracked"
+      },
+      {
+        "id": "b",
+        "text": "Knot the cut strap so the tear cannot run through the rest of the webbing"
+      },
+      {
+        "id": "c",
+        "text": "Replace the cracked chain and the cut strap before you rely on them"
+      },
+      {
+        "id": "d",
+        "text": "Keep the cracked chain if you loop it twice on the same anchor point"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A chain or strap has to be fit to hold the crate. A cracked link or cut webbing can fail when you brake, and knotting the strap or doubling the chain does not make that gear sound. Replace both damaged pieces before you move.",
+    "distractorExplanations": {
+      "a": "A cracked link can open under a hard brake; crate weight does not make a damaged chain safe to use.",
+      "b": "A knot in cut webbing does not repair the strap; it weakens the webbing further and leaves a tiedown you should not use.",
+      "d": "Looping the chain on the anchor still leaves the cracked link in the assembly, so the chain can open under load."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-027",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "The spare tire stands loose in its rack, and several dunnage boards lie free on the deck. The freight itself is chained down. What else has to be secured before you roll?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing else, because the paying freight is the load that has to be tied"
+      },
+      {
+        "id": "b",
+        "text": "The boards, because a spare tire belongs to the truck and can ride loose in the rack"
+      },
+      {
+        "id": "c",
+        "text": "The spare tire, because loose boards are too light to become a road hazard"
+      },
+      {
+        "id": "d",
+        "text": "The spare tire and the dunnage boards, so neither can fall off the deck"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A loose spare or loose dunnage can fall into traffic the same way freight can. Chains on the shipment do not hold equipment that is still free. Secure the spare tire and the boards before you move.",
+    "distractorExplanations": {
+      "a": "Chained freight does not make a loose spare or loose boards safe; anything that can fall off has to be secured.",
+      "b": "A spare tire is heavy equipment; if the rack does not hold it, it can drop onto the road and has to be secured.",
+      "c": "Loose boards are light enough to blow off the deck and strike another vehicle, so they need securement too."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-028",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "The load was tight at the last inspection, and you are still under three hours and under 150 miles. You went off duty, and you are about to start driving again. A coworker says you can skip a cargo check. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inspect the securement again now, because your duty status has changed"
+      },
+      {
+        "id": "b",
+        "text": "Skip the check until you have covered 150 miles since the last inspection"
+      },
+      {
+        "id": "c",
+        "text": "Skip the check until three hours have passed since that last inspection"
+      },
+      {
+        "id": "d",
+        "text": "Skip the check, because coming off a rest break does not call for another look"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After the early check, cargo is inspected again at each change of duty status, or at three hours, or at 150 miles, whichever comes first. You are still inside the time and distance limits, but starting to drive after off-duty time is a duty-status change, so you inspect before you roll.",
+    "distractorExplanations": {
+      "b": "The 150-mile interval has not arrived, but your duty status changed; waiting on miles leaves you driving with an unchecked load.",
+      "c": "The three-hour mark has not arrived, but your duty status changed; waiting on the clock leaves you driving with an unchecked load.",
+      "d": "Starting to drive after off-duty time is a change of duty status, so the rest break does not cancel the cargo inspection."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-029",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "The front bulkhead on your straight truck was removed for a repair. Boxes sit against the back of the cab, with open floor behind them and no bracing. What should you do before a highway trip?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the boxes, because the cab wall will catch them if you brake hard"
+      },
+      {
+        "id": "b",
+        "text": "Stack the boxes higher so their weight pins them against the cab wall"
+      },
+      {
+        "id": "c",
+        "text": "Add bracing ahead of the boxes so they cannot slide into the cab"
+      },
+      {
+        "id": "d",
+        "text": "Make a hard stop in the yard so the boxes seat themselves against the cab"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "With no bracing, boxes can slide forward in a stop and strike the back of the cab or come into the driver's space. The cab wall is not a substitute for blocking. Brace the freight so it cannot move forward before you take it on the highway.",
+    "distractorExplanations": {
+      "a": "A cab wall is not cargo blocking; freight that slides into it can break through and reach the driver.",
+      "b": "Stacking the boxes higher adds top weight and still leaves them free to slide forward into the cab.",
+      "d": "A hard stop to seat unbraced boxes drives that freight into the cab; it does not brace the load."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-cargo-030",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "cargo",
+    "prompt": "You are already at the truck's gross vehicle weight rating. The shipper wants to add more pallets that will still fit on the floor. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take the pallets, because freight that fits on the floor is inside the rating"
+      },
+      {
+        "id": "b",
+        "text": "Take the pallets if you stay off the interstate, where that rating is enforced"
+      },
+      {
+        "id": "c",
+        "text": "Take the pallets and set the tires above the sidewall pressure to carry the extra"
+      },
+      {
+        "id": "d",
+        "text": "Leave the extra pallets on the dock so you stay within the gross rating"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The gross vehicle weight rating is the most the manufacturer says the truck can weigh with its load. Floor space left over does not raise that rating. Adding pallets past it overloads the truck, so the extra freight stays on the dock.",
+    "distractorExplanations": {
+      "a": "Open floor space is not unused weight capacity; if you are already at the gross rating, more pallets put you over it.",
+      "b": "The gross rating is a limit on the vehicle on every road; staying off the interstate does not make an overload safe.",
+      "c": "Setting tire pressure above the sidewall figure does not add safe capacity, and it can cause a blowout."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
   },
   {
     "id": "cdl-general-knowledge-readiness-check-emergencies-rules-001",
@@ -1492,7 +2977,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Get everyone away, call emergency services, and use proper extinguishing methods"
+        "text": "Get everyone clear, call for help, and fight the fire only if safe"
       },
       {
         "id": "b",
@@ -1508,7 +2993,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Tire fires can rekindle and spread to cargo; evacuate, request help, and use appropriate firefighting guidance. Do not drive on a burning tire.",
+    "explanation": "Tire fires can rekindle and spread to the cargo. Get everyone clear, call for help, and fight the fire only if you can do it safely. Do not drive on a burning tire.",
     "distractorExplanations": {
       "b": "Tire fires can rekindle after the flames disappear; driving on risks the fire spreading to the trailer and cargo.",
       "c": "Opening the doors feeds oxygen to a cargo fire; the manual says keep them closed and call for help.",
@@ -1541,10 +3026,10 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Advance warning devices give other drivers time to slow or change lanes around a disabled CMV. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "Reflective triangles warn approaching drivers so they can slow down or change lanes before they reach a stopped CMV. They are not a mark for where a tow truck should park, a night-only rule, or a place for passengers to wait.",
     "distractorExplanations": {
       "a": "Triangles give approaching drivers advance warning; they are not placed for tow trucks or repair crews.",
-      "c": "Warning devices are required whenever a CMV is stopped on the road or shoulder, day or night, on any highway type.",
+      "c": "Divided highways at night are not the only case; a stopped CMV also needs warning devices in daylight and on a two-lane road.",
       "d": "Passengers wait well off the road; triangles exist to warn approaching traffic, not to mark a waiting area."
     },
     "difficulty": "easy",
@@ -1558,11 +3043,11 @@
     "options": [
       {
         "id": "a",
-        "text": "To increase maximum vehicle weight"
+        "text": "To let a short break restart the 11-hour driving clock"
       },
       {
         "id": "b",
-        "text": "To replace pre-trip inspections"
+        "text": "To take the place of the required vehicle inspection"
       },
       {
         "id": "c",
@@ -1570,15 +3055,15 @@
       },
       {
         "id": "d",
-        "text": "To eliminate the need for seat belts"
+        "text": "To allow extra driving when a delivery is running late"
       }
     ],
     "correctOptionId": "c",
-    "explanation": "HOS rules limit driving and require rest so drivers are alert; fatigue is a major crash factor. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "Driving limits and required rest breaks exist to reduce fatigue-related crashes. A short break does not restart the 11-hour clock, rest does not replace the vehicle inspection, and a late delivery does not add driving time.",
     "distractorExplanations": {
-      "a": "HOS does not raise weight limits.",
-      "b": "Inspections remain mandatory.",
-      "d": "Seat belts remain required."
+      "a": "A short break does not restart the 11-hour driving clock; the limits exist to cut fatigue crashes, not to reset driving time.",
+      "b": "Confuses a required rest break with the vehicle inspection; the inspection is still required and is not replaced by rest.",
+      "d": "A late delivery does not add legal driving time; the limits exist to reduce fatigue crashes, not to cover a dock delay."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1632,7 +3117,7 @@
       },
       {
         "id": "c",
-        "text": "Wait in the cab until police arrive before setting out any triangles"
+        "text": "Wait in the cab until police arrive before you set out the warning triangles"
       },
       {
         "id": "d",
@@ -1675,9 +3160,9 @@
     "correctOptionId": "b",
     "explanation": "Preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped. Stop safely for complex tasks.",
     "distractorExplanations": {
-      "a": "“Read dispatch messages while moving if traffic is light” is incorrect because preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped.",
+      "a": "Reading dispatch while the truck is moving takes your eyes off the road; set the messages before you roll, even when traffic is light.",
       "c": "FMCSA bans hand-held phone use while driving a CMV for calls of any length; only hands-free, single-touch use is allowed.",
-      "d": "“Look away from the road whenever an alert sounds” is incorrect because preparing devices and cab items before departure keeps attention on driving; tasks that require interaction should wait until the vehicle is safely stopped."
+      "d": "Looking away for an alert takes your eyes off the road; a chime is not a reason to stop watching traffic."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1706,9 +3191,9 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Federal rules require specific emergency equipment so drivers can warn traffic and fight small fires. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "A CMV must carry a fire extinguisher, spare fuses unless it has circuit breakers, and warning devices that meet the rule, such as three reflective triangles. A first-aid kit, two triangles, or flashers used instead of warning devices do not satisfy that rule.",
     "distractorExplanations": {
-      "a": "Federal rules require three reflective triangles; flares may supplement them, and a first-aid kit is not a required item.",
+      "a": "A first-aid kit is not required emergency equipment. Proper flares can stand in for triangles, but they do not replace the fire extinguisher.",
       "b": "Four-way flashers do not replace warning devices; three triangles are required along with the fire extinguisher.",
       "d": "The rule calls for three warning devices plus a rated fire extinguisher; two triangles and a first-aid kit do not meet it."
     },
@@ -1739,11 +3224,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Visibility and advance warning protect you and other road users; never stand in traffic lanes. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Stay visible and off the travel lanes.",
+    "explanation": "When a CMV stops on the shoulder, turn on the four-way flashers and set three warning triangles at the distances for that road, as soon as possible and within 10 minutes. One triangle, a wait past that deadline, or no devices because the repair looks short leaves traffic unwarned.",
     "distractorExplanations": {
-      "a": "One triangle is not enough; the rule calls for three, at 10 and 100 feet behind and 100 feet ahead on a two-way road.",
+      "a": "One triangle 10 feet behind is only the closest device; three triangles are still required at the distances for that road.",
       "b": "Warning devices go out as soon as possible and within 10 minutes of stopping, not just for stops longer than that.",
-      "c": "Duration does not remove warning requirements."
+      "c": "A repair you expect to finish within an hour does not waive the warning rule; flashers and triangles are still required."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1760,23 +3245,23 @@
       },
       {
         "id": "b",
-        "text": "Always stop on the tracks if traffic ahead is heavy"
+        "text": "Stop on the tracks and wait in place when the traffic ahead of you is backed up"
       },
       {
         "id": "c",
-        "text": "High gear is required on all crossings"
+        "text": "Use a high gear so you spend less time on the crossing"
       },
       {
         "id": "d",
-        "text": "Trains can always stop quicker than trucks"
+        "text": "A train can stop in less distance than a truck can"
       }
     ],
     "correctOptionId": "a",
     "explanation": "Trains cannot swerve/stop quickly; never stop on tracks, and avoid gear changes that could stall on the crossing.",
     "distractorExplanations": {
-      "b": "Stopping on tracks is a critical error.",
-      "c": "Proper gear is one that lets you cross without shifting, not necessarily highest.",
-      "d": "Trains need long distances to stop."
+      "b": "Stopping on the tracks is the error; backed-up traffic is a reason to wait before the crossing, not to stop on it.",
+      "c": "Choosing a high gear to cross faster can force a shift on the tracks; pick a gear you can hold all the way across.",
+      "d": "Reverses the stopping distance; a train needs a long stretch to stop and cannot stop quicker than a truck."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1805,7 +3290,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "OOS orders prohibit operation until defects or driver violations are fixed per inspection criteria. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "An out-of-service order means that vehicle or driver may not operate until the defect or violation is corrected. Finishing the trip, treating it as a citation, or driving to a repair shop does not lift the order.",
     "distractorExplanations": {
       "a": "An out-of-service order bars operation immediately; the trip cannot be completed until the violation is corrected.",
       "c": "OOS is not just a citation; neither vehicle nor driver may operate until the condition is fixed.",
@@ -1838,11 +3323,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Fatigue is a major CMV crash factor; only sleep/rest restores alertness reliably. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "The safe response to drowsiness in a CMV is to stop in a safe place and sleep. Cold air, caffeine after the truck has drifted in its lane, or a higher speed does not restore alertness.",
     "distractorExplanations": {
-      "a": "“Open the window and rely on cold air to stay alert” is incorrect because fatigue is a major CMV crash factor; only sleep/rest restores alertness reliably.",
-      "c": "“Drink caffeine and continue after repeated lane drift” is incorrect because fatigue is a major CMV crash factor; only sleep/rest restores alertness reliably.",
-      "d": "“Drive faster so the trip ends before fatigue worsens” is incorrect because fatigue is a major CMV crash factor; only sleep/rest restores alertness reliably."
+      "a": "Cold air from an open window does not cure fatigue; a drowsy driver has to stop and sleep before continuing.",
+      "c": "Caffeine does not undo repeated lane drift; that drift is the sign to stop and rest, not to keep rolling.",
+      "d": "Driving faster while drowsy shortens the time left to react; ending the trip sooner does not replace sleep."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1871,11 +3356,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Sudden hard braking can worsen loss of control; grip, stabilize, then stop safely. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Then steer to a safe stop.",
+    "explanation": "If a steer tire blows, hold the wheel firmly, ease off the accelerator, and stay off the brake until the truck slows. Then brake gently and pull off the road. Hard braking, a sharp swerve, or a shift to neutral can pull the truck off line.",
     "distractorExplanations": {
       "a": "Braking hard after a blowout can make the vehicle pull or skid; stay off the brake until the vehicle slows.",
       "c": "Abrupt steering after a steer-tire blowout can cause loss of control; hold firmly and steer gently once slowed.",
-      "d": "Neutral removes the drive force that helps stabilize the truck; hold the wheel, ease off and stay in gear."
+      "d": "Shifting to neutral and coasting is not the blowout response; hold the wheel firmly and stay off the brake until the truck slows."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1892,7 +3377,7 @@
       },
       {
         "id": "b",
-        "text": "Serious traffic offenses and certain alcohol/drug violations in a CMV"
+        "text": "Serious traffic offenses and certain alcohol or drug violations"
       },
       {
         "id": "c",
@@ -1904,11 +3389,11 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Major and serious offenses (and other listed violations) can disqualify a CDL. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option. Certain railroad-crossing violations also disqualify.",
+    "explanation": "A CDL can be disqualified for serious traffic offenses and for alcohol or drug violations, including a blood alcohol concentration of 0.04 or more in a CMV. One crash, a single 10 mph speeding ticket, or a log violation does not by itself do that.",
     "distractorExplanations": {
       "a": "Crashes alone do not trigger disqualification; disqualifying offenses are listed convictions such as DUI or serious violations.",
       "c": "Excessive speeding is a serious offense at 15 mph or more over the limit, and it takes two serious offenses in 3 years to disqualify.",
-      "d": "HOS violations bring OOS orders and fines, but they are not listed CDL disqualifying offenses under 49 CFR 383.51."
+      "d": "An hours-of-service log error can take a driver out of service, but it is not a listed disqualifying offense under 49 CFR 383.51."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1939,9 +3424,9 @@
     "correctOptionId": "b",
     "explanation": "A driver must not enter unless the entire vehicle can clear the tracks; trains cannot stop quickly and a stalled or queued CMV can be trapped.",
     "distractorExplanations": {
-      "a": "“Assume trains will yield to highway traffic” is incorrect because a driver must not enter unless the entire vehicle can clear the tracks; trains cannot stop quickly and a stalled or queued CMV can be trapped.",
-      "c": "“Shift gears while on the tracks to maintain speed” is incorrect because a driver must not enter unless the entire vehicle can clear the tracks; trains cannot stop quickly and a stalled or queued CMV can be trapped.",
-      "d": "“Follow the vehicle ahead onto the tracks even when traffic is stopped” is incorrect because a driver must not enter unless the entire vehicle can clear the tracks; trains cannot stop quickly and a stalled or queued CMV can be trapped."
+      "a": "Trains do not yield to trucks; the driver has to be sure the crossing is clear and that the whole vehicle can get across.",
+      "c": "Shifting gears on the tracks can stall the truck in the crossing; choose a gear that will carry the vehicle all the way across.",
+      "d": "Following a vehicle onto the tracks can leave the truck stuck if traffic stops; wait until the whole CMV can clear."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
@@ -1970,13 +3455,508 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Countersteer appropriately and restore traction gradually; abrupt inputs worsen skids. The driver should protect the scene, preserve vehicle control, warn others, and use the safest available stopping or recovery option.",
+    "explanation": "In the common drive-wheel skid, steer in the direction the rear is sliding and be ready to straighten the wheel so you do not overcorrect. Hard braking, a sharp burst of speed, or the parking brake can lock the wheels and make the skid worse.",
     "distractorExplanations": {
-      "b": "“Brake hard and hold the steering wheel rigidly straight” is incorrect because countersteer appropriately and restore traction gradually; abrupt inputs worsen skids.",
-      "c": "“Accelerate sharply while turning away from the skid” is incorrect because countersteer appropriately and restore traction gradually; abrupt inputs worsen skids.",
-      "d": "“Apply the parking brake fully before attempting to steer” is incorrect because countersteer appropriately and restore traction gradually; abrupt inputs worsen skids."
+      "b": "Hard braking can lock the wheels, and holding the wheel straight does not steer in the direction the rear is sliding.",
+      "c": "A sharp speed-up while turning away from the skid can swing the rear farther out instead of letting the tires regain grip.",
+      "d": "Applying the parking brake can lock the drive wheels and deepen the skid; ease off the brakes and steer with the slide."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep wave bank (Sol gatekeeper repair)."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-016",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A property-carrying driver took 10 consecutive hours off, then drove 11 hours on an ordinary run with no weather delay. Time is still left in the 14-hour window, and the last stop is about 40 minutes away. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finish the delivery while the 14-hour window still has time"
+      },
+      {
+        "id": "b",
+        "text": "Take a 30-minute break, then drive the last delivery"
+      },
+      {
+        "id": "c",
+        "text": "Stop driving because the 11-hour limit is already used"
+      },
+      {
+        "id": "d",
+        "text": "Log the rest of the trip as off duty and keep rolling"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After 10 consecutive hours off, a property-carrying driver may drive at most 11 hours. Time left in the 14-hour window does not add driving hours, and a 30-minute break does not reset the 11-hour limit. With 11 hours already driven, the driver has to stop driving.",
+    "distractorExplanations": {
+      "a": "Treats time left in the 14-hour window as permission to drive past the 11-hour driving limit.",
+      "b": "A 30-minute break does not give back driving hours already used under the 11-hour limit.",
+      "d": "Logging the truck off duty while it keeps rolling hides driving time and does not make the extra trip legal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-017",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A property-carrying driver came on duty at 6:00 a.m. after 10 consecutive hours off. At 8:10 p.m., after an ordinary day of loading delays, 8 hours have been driven. The shipper wants one more short hop. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drive the hop; driving time is still under 11 hours"
+      },
+      {
+        "id": "b",
+        "text": "Take 30 minutes off so the 14-hour clock will pause"
+      },
+      {
+        "id": "c",
+        "text": "Go off duty for 2 hours, then use the driving time left"
+      },
+      {
+        "id": "d",
+        "text": "Do not drive; the 14-hour window has already closed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The 14-hour window starts when the driver comes on duty after 10 consecutive hours off. Loading, meals, and other breaks sit inside that window and do not pause it or move the end later. At 8:10 p.m. this driver is past 14 hours on duty and may not drive, even with time left under the 11-hour driving limit.",
+    "distractorExplanations": {
+      "a": "Treats driving time still under 11 hours as permission to drive after the 14-hour window has closed.",
+      "b": "A 30-minute break does not pause or extend the 14-hour window; that clock runs from the start of the duty day.",
+      "c": "Two hours off in the middle of the day do not restart or stretch the 14-hour window once it has closed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-018",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A property-carrying driver has driven 8 hours since the last non-driving break. The later stops were slow traffic, and a truck stop is about 40 minutes ahead. What should the driver do before driving farther?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take 30 straight minutes not driving before rolling on"
+      },
+      {
+        "id": "b",
+        "text": "Keep going; that break comes due after 11 hours of driving"
+      },
+      {
+        "id": "c",
+        "text": "Count the brief stops in traffic as the required 30 minutes"
+      },
+      {
+        "id": "d",
+        "text": "Drive the last 40 minutes, then break while fueling"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After 8 cumulative hours of driving without a break, a property-carrying driver needs 30 consecutive minutes of not driving before driving again. Time spent inching in traffic still counts as driving. The break is not postponed until the 11-hour limit or the next fuel stop.",
+    "distractorExplanations": {
+      "b": "Waits for the 11-hour driving limit; the 30-minute break is due after 8 hours of driving, not at 11.",
+      "c": "Brief stops in moving traffic still count as driving, not as 30 consecutive minutes off the driving seat.",
+      "d": "Adds more driving after the 8-hour point; the break has to come before the truck rolls any farther."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-019",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A carrier uses the 70-hour limit over 8 consecutive days. Its driver has 70 on-duty hours across those days, with time still left on today's 11-hour and 14-hour limits. Dispatch offers another load. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take the load; today's 11-hour limit still has room"
+      },
+      {
+        "id": "b",
+        "text": "Take a 30-minute break to clear the 8-day on-duty total"
+      },
+      {
+        "id": "c",
+        "text": "Start a new 8-day count at midnight and accept the load"
+      },
+      {
+        "id": "d",
+        "text": "Do not drive; 70 on-duty hours in 8 days are used up"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Carriers use either 60 on-duty hours in 7 consecutive days or 70 on-duty hours in 8 consecutive days. This carrier uses the 70-hour limit, and that total is already used, so the driver may not drive even though the 11-hour and 14-hour limits still have time. A 30-minute break does not erase the total, and the 8-day count does not start over at midnight.",
+    "distractorExplanations": {
+      "a": "Uses the daily 11-hour limit to excuse a full 70-hour total; the 8-day on-duty cap is a separate bar on driving.",
+      "b": "A 30-minute break interrupts driving; it does not wipe on-duty hours already counted in the 8-day total.",
+      "c": "The 8-day total is consecutive days rolling forward, not a count that starts over at midnight."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-020",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "After the last trip, a property-carrying driver slept 6 hours, went on duty for fuel and a meal, then slept 4 more hours. The driver wants to start driving now. What is the legal move?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start driving; rest that adds up to 10 hours will do"
+      },
+      {
+        "id": "b",
+        "text": "Start driving; the 6-hour sleeper period resets the clocks"
+      },
+      {
+        "id": "c",
+        "text": "Stay off; these sleeps are not 10 consecutive hours"
+      },
+      {
+        "id": "d",
+        "text": "Drive for 4 hours now and finish the rest period later"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A new period of up to 11 hours of driving follows 10 consecutive hours off. Six hours of sleep, then on-duty time, then four more hours of sleep is a broken rest, not 10 consecutive hours. The driver needs an uninterrupted off-duty stretch of 10 hours before driving again.",
+    "distractorExplanations": {
+      "a": "Adds separate sleep periods into one total; the 10 hours off have to be consecutive, and these two sleeps are not.",
+      "b": "Six hours in the sleeper is short of 10 consecutive hours off, so it does not open a new driving period.",
+      "d": "Puts more driving in the middle of an unfinished rest; driving waits until 10 consecutive hours off are done."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-021",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "Halfway down a long grade the brakes feel soft and smell hot, but the truck is still under control and a wide shoulder is open. What should the driver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold light pedal pressure for the rest of the downgrade"
+      },
+      {
+        "id": "b",
+        "text": "Shift to neutral and let the service brakes finish the hill"
+      },
+      {
+        "id": "c",
+        "text": "Build speed to the bottom, then stop and cool the drums"
+      },
+      {
+        "id": "d",
+        "text": "Pull onto the open shoulder and let the hot brakes cool"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Soft, hot brakes on a downgrade are fading from heat and can fail if the driver keeps using them. While the truck is still under control, get off the road and let the brakes cool. Riding them, coasting in neutral, or hurrying to the bottom keeps building heat.",
+    "distractorExplanations": {
+      "a": "Light pressure for the rest of the grade is still riding hot brakes, which is how fade turns into a full failure.",
+      "b": "Neutral drops engine braking, so the fading service brakes do all the slowing and heat up further.",
+      "c": "More speed on a downgrade with hot brakes spends the control the driver still has; cooling happens off the road."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-022",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A CMV is disabled on the shoulder of a two-lane road. The four-way flashers are already on, and the driver is ready to set three warning triangles. Where should those triangles go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place one triangle 10 feet behind the truck and stop"
+      },
+      {
+        "id": "b",
+        "text": "Place all three 10, 100, and 200 feet behind the truck"
+      },
+      {
+        "id": "c",
+        "text": "Place them 10 and 100 feet behind and 100 feet ahead"
+      },
+      {
+        "id": "d",
+        "text": "Place them 100, 200, and 300 feet ahead of the truck"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "On a two-lane road, the three triangles go about 10 feet behind the vehicle, 100 feet behind it, and 100 feet ahead of it, so traffic from either direction gets a warning. The 10-, 100-, and 200-foot line behind the truck is the pattern for a divided or one-way road. One device, or a row placed ahead of the truck, leaves a direction unwarned.",
+    "distractorExplanations": {
+      "a": "One triangle cannot warn both directions; this road needs three devices, not a single marker behind the bumper.",
+      "b": "The 10-, 100-, and 200-foot line behind the truck is the divided or one-way pattern, not the two-lane pattern.",
+      "d": "A row placed ahead of the truck leaves drivers coming from behind with no warning as they approach."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-023",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A CMV is disabled on the right shoulder of a divided highway, and traffic moves in the driver's direction. Where should the driver set the three warning triangles?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set all three devices 10, 100, and 200 feet behind"
+      },
+      {
+        "id": "b",
+        "text": "Set devices 10 and 100 feet behind and 100 feet ahead"
+      },
+      {
+        "id": "c",
+        "text": "Set the three devices 10, 100, and 200 feet ahead"
+      },
+      {
+        "id": "d",
+        "text": "Set one by the cab, one by the trailer, one in the lane"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "On a divided or one-way road, traffic approaches from behind, so all three triangles go behind the vehicle at about 10 feet, 100 feet, and 200 feet. Putting one triangle ahead copies the two-lane pattern. Devices clustered on the cab and trailer give approaching drivers no early warning.",
+    "distractorExplanations": {
+      "b": "Two behind and one ahead is the two-lane pattern; on this divided road all three devices go behind the truck.",
+      "c": "Traffic here approaches from behind, so triangles ahead of the truck warn the empty direction.",
+      "d": "Devices left on the cab and trailer give no advance warning; approaching drivers need distance to react."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-024",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "At a roadside inspection, a CMV driver tests at a blood alcohol concentration of 0.04. The driver feels steady and was not in a crash. What is the driver's status?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send the driver on, treating 0.04 as still under the limit"
+      },
+      {
+        "id": "b",
+        "text": "Park the driver for 24 hours, then let the trip continue"
+      },
+      {
+        "id": "c",
+        "text": "Require a crash before this 0.04 reading changes status"
+      },
+      {
+        "id": "d",
+        "text": "Disqualify the driver from CMV driving on this reading"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A blood alcohol concentration of 0.04 or more disqualifies a driver from operating a CMV. Feeling steady, and the fact that no crash happened, does not change the reading. A 24-hour out-of-service order is the result at 0.02 or more while on duty, which is a lower level than this test.",
+    "distractorExplanations": {
+      "a": "Treats 0.04 as a legal reading the driver may drive on; at 0.04 or more the driver is disqualified.",
+      "b": "Uses the 24-hour out-of-service result, which fits 0.02 or more, on a reading that has reached disqualification.",
+      "c": "A crash is not required; 0.04 or more disqualifies the driver whether or not a crash occurred."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-025",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A driver who is on duty in a CMV tests at a blood alcohol concentration of 0.02. There was no crash, and the reading is under 0.04. What follows from that test?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the driver rolling, because 0.02 is under the cutoff"
+      },
+      {
+        "id": "b",
+        "text": "Disqualify the driver, the same outcome as a 0.04 reading"
+      },
+      {
+        "id": "c",
+        "text": "Place the driver out of service for the next 24 hours"
+      },
+      {
+        "id": "d",
+        "text": "Let the driver finish this load, then start the 24 hours"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "While a driver is on duty, a blood alcohol concentration of 0.02 or more means out of service for 24 hours. Disqualification starts at 0.04 or more, so this reading is not that penalty. The driver also may not finish the current load before the 24 hours begin.",
+    "distractorExplanations": {
+      "a": "Treats 0.02 as a reading the driver may ignore; on duty, 0.02 or more brings a 24-hour out-of-service order.",
+      "b": "Jumps to disqualification, which applies at 0.04 or more; 0.02 is the 24-hour out-of-service level.",
+      "d": "Finishing the load is still driving while out of service; the 24 hours start now, not after the next stop."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-026",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A driver who must stop at a railroad crossing is rolling up to the tracks. Where should that required stop be made?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop on the tracks after the warning lights go dark"
+      },
+      {
+        "id": "b",
+        "text": "Pull up to about 10 feet from the nearest rail"
+      },
+      {
+        "id": "c",
+        "text": "Stop between 15 and 50 feet from the nearest rail"
+      },
+      {
+        "id": "d",
+        "text": "Wait more than 100 feet back from the nearest rail"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When a stop is required at a railroad crossing, stop 15 to 50 feet from the nearest rail. Stopping on the tracks leaves the truck in the train's path. About 10 feet is closer than that range, and a stop more than 100 feet back is farther than the rule allows.",
+    "distractorExplanations": {
+      "a": "Stopping on the tracks puts the truck in the train's path; the required stop is short of the rails, not on them.",
+      "b": "About 10 feet is closer than the required stop; the near edge of the range is 15 feet from the nearest rail.",
+      "d": "More than 100 feet is beyond the required stop; the driver stops 15 to 50 feet from the nearest rail."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-027",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "A CMV is stopped on a two-lane road just past a crest. Drivers coming up the hill cannot see the truck until they are close, and the triangles are still in the cab. How should the driver warn them?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the far rear triangle before the crest hides the truck"
+      },
+      {
+        "id": "b",
+        "text": "Group all three triangles within 10 feet of the bumper"
+      },
+      {
+        "id": "c",
+        "text": "Place all three triangles well ahead of the truck, away from the hill"
+      },
+      {
+        "id": "d",
+        "text": "Leave the triangles in the cab and depend on the flashers"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Triangles have to reach drivers before those drivers can see the stopped truck. When a hill blocks the view, the farthest rear triangle goes back far enough that approaching traffic is warned before the crest. A cluster at the bumper, a line placed ahead of the truck, or flashers with the triangles still stowed do not give that warning.",
+    "distractorExplanations": {
+      "b": "A cluster within 10 feet of the bumper comes into view with the truck; the hill needs the warning farther back.",
+      "c": "A line of triangles ahead of the truck sits away from drivers coming up the hill, so they get no warning before the crest.",
+      "d": "Flashers on the truck do not reach drivers who cannot see the truck; the triangles have to go out before the crest."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-028",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "The engine stalls on a railroad crossing and will not restart. No train is in sight yet. What should the people in the truck do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay in the cab and keep cranking until the engine starts"
+      },
+      {
+        "id": "b",
+        "text": "Get everyone out and move clear of the tracks right away"
+      },
+      {
+        "id": "c",
+        "text": "Push the truck off the rails before anyone steps out"
+      },
+      {
+        "id": "d",
+        "text": "Set triangles on the crossing and wait inside the cab"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "If the engine stalls on the tracks, get everyone out and away from the tracks at once, off to the side of the train's path. After people are clear, warn traffic or the railroad if you can do that safely. Staying in the cab to crank, push, or set triangles leaves people where a train would hit.",
+    "distractorExplanations": {
+      "a": "Staying in the cab to crank keeps the driver on the tracks in a vehicle that is not moving clear.",
+      "c": "Trying to push a stalled CMV clear keeps people on the crossing; the first move is to get them off the tracks.",
+      "d": "Waiting in the cab to set triangles leaves people on the tracks; get everyone clear first, and warn traffic only if that warning is safe."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-029",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "Smoke is pushing out around the closed doors of a box trailer. The driver has pulled onto the shoulder and turned the flashers on. What should the driver do about that fire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open the rear doors to see how far the fire has spread"
+      },
+      {
+        "id": "b",
+        "text": "Drive on to the next exit so responders have more room"
+      },
+      {
+        "id": "c",
+        "text": "Spray water along the door seals, then swing the doors open"
+      },
+      {
+        "id": "d",
+        "text": "Keep the trailer doors shut and call the fire department"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A fire inside a closed box trailer grows when the doors open and feed it air. Leave the doors shut, keep people back, and call the fire department. Driving farther with the fire, or opening the doors after a quick spray, spreads it instead of holding it in.",
+    "distractorExplanations": {
+      "a": "Opening the doors feeds oxygen to a cargo fire and lets it flare; the doors stay shut for the fire crew.",
+      "b": "Driving farther with a fire in the trailer carries that fire down the road instead of holding it for responders.",
+      "c": "Water on the seals does not make it safe to open up; opening the doors still feeds the fire air."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
+  },
+  {
+    "id": "cdl-general-knowledge-readiness-check-emergencies-rules-030",
+    "examSlug": "cdl-general-knowledge-readiness-check",
+    "topicId": "emergencies-rules",
+    "prompt": "Smoke pours from under the hood on the highway. The driver has reached a shoulder, set the parking brake, and shut the engine off. How should the driver fight this fire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open the hood wide so the base of the fire is visible"
+      },
+      {
+        "id": "b",
+        "text": "Continue to a shop before the engine damage spreads"
+      },
+      {
+        "id": "c",
+        "text": "Soak the front tires so the fire cannot drop downward"
+      },
+      {
+        "id": "d",
+        "text": "Aim the extinguisher through a small gap in the hood"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An engine fire grows when the hood is thrown open and air rushes in. With the truck stopped and the engine off, aim the extinguisher through a small gap, a louver, or from underneath, at the base of the fire. Driving on spreads the fire, and soaking the tires does not put out the source under the hood.",
+    "distractorExplanations": {
+      "a": "A hood thrown wide open gives the engine fire a rush of air and makes the fire larger.",
+      "b": "Driving on with an engine fire carries the fire down the road; the truck stays parked and the engine stays off.",
+      "c": "Wetting the tires does not reach the fire under the hood; the extinguisher has to go at the base of that fire."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-09."
   }
 ]

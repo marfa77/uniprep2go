@@ -898,7 +898,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "cdl-general-knowledge-readiness-check": {
     title: "Free CDL General Knowledge Practice Test 2026 | 60Q Mock",
     description:
-      "CDL General Knowledge practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target, topic scoring — then waitlist for the planned 60-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
+      "CDL General Knowledge practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, drawn from a 120-item bank, 70% readiness target, topic scoring — then waitlist for the planned 120-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
     keywords: [
       "cdl general knowledge practice test",
       "free cdl practice test",
@@ -909,7 +909,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "CDL General Knowledge Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — then join the planned 60-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this check is a longer 60Q / 75 min diagnostic (free 25-question version) — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.).",
+      "A timed FMCSA-handbook-topic diagnostic across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — 60 questions in 75 minutes drawn from a 120-item bank, then the planned 120-card Anki waitlist. Typical state General Knowledge sittings are ~50 questions / 80% (40 correct); this check is a longer diagnostic (free 25-question version) — not a DMV form, not the skills/road test, and not endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.). The Anki deck is planned, not a live download.",
     audience:
       "CLP / Class A–B applicants who want a free timed General Knowledge baseline before studying their state CDL manual and booking the DMV knowledge test.",
     practiceTestLabel: "CDL General Knowledge practice test",

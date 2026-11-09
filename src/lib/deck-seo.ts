@@ -1175,11 +1175,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Cosmetology students who want a free timed NIC-style theory diagnostic before a full-length Q-bank — then a planned 60-card .apkg for spaced repair. Theory only; verify your state CIB for time and pass score.",
   },
   "cdl-general-knowledge-anki-deck": {
-    title: "CDL General Knowledge Anki | Planned 60 Cards + Free Mock",
+    title: "CDL General Knowledge Anki | Planned 120 Cards + Free Mock",
     headline: "CDL General Knowledge Prep — Planned Cards + 60Q Test (25Q Free)",
     studyLabel: "CDL General Knowledge exam prep",
     description:
-      "Planned CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a 60-question timed practice test (free 25-question version). Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
+      "Planned 120-card CDL General Knowledge Anki for CLP / Class A–B written prep — vehicle systems, safe driving, cargo, hours/rules — plus a 60-question timed practice test drawn from that 120-item bank (free 25-question version). Not a live download. Typical state GK is ~50Q / 80%; this mock is longer. Independent — not a DMV exam.",
     keywords: [
       "cdl anki",
       "cdl general knowledge flashcards",
@@ -1189,7 +1189,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free cdl practice test",
     ],
     intro:
-      "CLP applicants who want a free timed General Knowledge diagnostic before their state CDL manual — then a planned 60-card .apkg for spaced repair. Knowledge only; skills/road and endorsements are separate.",
+      "CLP applicants who want a free timed General Knowledge diagnostic before their state CDL manual — then a planned 120-card .apkg for spaced repair. The deck is not a live download. Knowledge only; skills/road and endorsements are separate.",
   },
   "armed-security-officer-anki-deck": {
     title: "Armed Security Anki | Planned 120 Cards + Free Mock",

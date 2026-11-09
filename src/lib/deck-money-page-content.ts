@@ -141,7 +141,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cosmetology-state-anki-deck":
     "Planned 60-card NIC-style cosmetology theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC theory is typically 110 (100 scored) / 90 min; state CIBs vary.",
   "cdl-general-knowledge-anki-deck":
-    "Planned 60-card CDL General Knowledge Anki. 60Q / 75 min diagnostic live now (free 25-question version) — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
+    "Planned 120-card CDL General Knowledge Anki, not a live download. The 60Q / 75 min diagnostic (free 25-question version) is drawn from that 120-item bank — typical state GK is ~50Q / 80%; skills/road and endorsements are separate.",
   "armed-security-officer-anki-deck":
     "Planned 120-card armed security Anki. 60Q / 75 min written diagnostic live now (free 25-question version) — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
@@ -252,7 +252,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cosmetology-state-anki-deck":
     "Planned NIC-style cosmetology theory Anki for scientific concepts & safety, hair services, skin & nails, and salon/infection-control themes. 60-question / 75-minute readiness check (free 25-question version) is live; NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes — verify your state CIB. Theory only — practical exam is separate.",
   "cdl-general-knowledge-anki-deck":
-    "Planned CDL General Knowledge Anki for vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules. 60-question / 75-minute readiness check (free 25-question version) is live; typical state GK sittings are ~50Q / 80% — verify your DMV manual. Knowledge only — not skills/road or endorsement tests.",
+    "Planned 120-card CDL General Knowledge Anki for vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules. Not a live download. The 60-question / 75-minute readiness check (free 25-question version) is drawn from that 120-item bank; typical state GK sittings are ~50Q / 80% — verify your DMV manual. Knowledge only — not skills/road or endorsement tests.",
   "armed-security-officer-anki-deck":
     "Planned armed security Anki for use of force & law, weapons safety, patrol & emergencies, and ethics. 60-question / 75-minute written readiness check (free 25-question version) is live; licensing is state-specific — range qualification and unarmed credentials are separate.",
   "veterinary-assistant-anki-deck":
@@ -718,8 +718,8 @@ export const positioningOverrides: Partial<
   },
   "cdl-general-knowledge-anki-deck": {
     ourEdge: [
-      "Planned 60-card CDL General Knowledge Anki",
-      "60Q / 75 min timed diagnostic live now (free 25-question version)",
+      "Planned 120-card CDL General Knowledge Anki, not a live download",
+      "60Q / 75 min timed diagnostic drawn from the same 120-item bank (free 25-question version)",
       "Honest: typical state GK is ~50Q / 80% — our mock is a longer diagnostic",
       "Knowledge only — ≠ skills/road test; endorsements separate",
     ],
@@ -1326,11 +1326,11 @@ Your state Candidate Information Bulletin, school hours, or the practical exam. 
 
   "cdl-general-knowledge-anki-deck": `### What is inside
 
-Planned **60** flashcards across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — the same four topic buckets as the free readiness check. Mapped to FMCSA Commercial Driver’s Manual General Knowledge themes.
+Planned **120** flashcards across vehicle systems & inspection, safe driving & space management, cargo securement & weight, and emergencies/hours/rules — the same four topic buckets as the free readiness check, 30 cards in each. Mapped to FMCSA Commercial Driver’s Manual General Knowledge themes. Not a live download.
 
 ### Plan with the free CDL mock (live now)
 
-**Start:** Take the [60-question CDL General Knowledge readiness check (free 25-question version)](/mock-exams/cdl-general-knowledge-readiness-check) (75 minutes / 70% diagnostic). **Then:** Study your **state CDL manual** and re-drill weak topics. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+**Start:** Take the [60-question CDL General Knowledge readiness check (free 25-question version)](/mock-exams/cdl-general-knowledge-readiness-check) (75 minutes / 70% diagnostic, drawn from this 120-item bank). **Then:** Study your **state CDL manual** and re-drill weak topics. **When Anki ships:** 15–20 cards/day on the weakest topic only.
 
 Typical state General Knowledge sittings are **~50 questions / 80% (40 correct)** — confirm with your DMV. Our mock is a longer diagnostic — not a DMV form. **Skills/road testing is separate.** Air Brakes, Combination, HazMat, Passenger, and other endorsements have their own knowledge tests.
 

@@ -3377,10 +3377,10 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     high_yield_facts: [
       "Typical General Knowledge form: ~50 questions / 80% (40 correct) — verify your state.",
-      "UniPrep2Go’s check is a longer 60-question / 75-minute diagnostic (free 25-question version) with four topic buckets — not a DMV form.",
+      "UniPrep2Go’s check is a longer 60-question / 75-minute diagnostic drawn from a 120-item bank (free 25-question version) with four topic buckets — not a DMV form.",
       "General Knowledge is not the skills/road test (vehicle inspection, basic controls, road).",
       "Class A applicants usually also need Combination Vehicles knowledge; air-brake vehicles need the Air Brakes knowledge test.",
-      "Study your state’s official CDL manual first — free third-party banks (CristCDL, US Permit Prep, state DMV practice) win on volume; UniPrep wins on a no-signup timed diagnostic + planned Anki waitlist.",
+      "Study your state’s official CDL manual first — free third-party banks (CristCDL, US Permit Prep, state DMV practice) win on volume; UniPrep wins on a no-signup timed diagnostic plus a planned 120-card Anki waitlist, not a live download.",
     ],
     candidate_qa: [
       {
@@ -3389,7 +3389,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s CDL readiness check the official DMV exam?",
-        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not a state DMV or FMCSA exam.",
+        a: "No. The 60-question / 75-minute check is drawn from a 120-item bank (free 25-question version). The matching Anki deck is planned at 120 cards and is not a live download. Not a state DMV or FMCSA exam.",
       },
       {
         q: "Does this include the skills test or HazMat?",

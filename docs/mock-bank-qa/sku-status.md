@@ -1,17 +1,17 @@
 # SKU status board
 
-Generated 2026-11-08 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-09 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 86 | 48 |
+| ok | 87 | 48 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 14 | 0 |
 | point-fix | 0 | 0 |
-| rewrite | 77 | 18 |
+| rewrite | 76 | 18 |
 | civic | 19 | 19 |
 | **total live mocks** | **196** | **85** |
 
@@ -45,7 +45,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `cdl-air-brakes-readiness-check` | planned | 60 / 60 | — | FAIL (45 items + bank-level): template/thin distractor notes, thin/template explanations, each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cdl-combination-readiness-check` | planned | 60 / 60 | — | FAIL (45 items): thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cdl-doubles-triples-readiness-check` | planned | 60 / 60 | — | FAIL (42 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `cdl-general-knowledge-readiness-check` | planned | 60 / 60 | — | FAIL (0 items + bank-level): each key letter 15-35% (n>=40); bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cdl-passenger-readiness-check` | planned | 60 / 60 | — | FAIL (26 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cdl-tankers-readiness-check` | planned | 60 / 60 | — | FAIL (51 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `cosmetology-state-readiness-check` | planned | 60 / 60 | — | FAIL (8 items): template/thin distractor notes; bank 60 for 60Q session; no content review in ledger |
@@ -171,6 +170,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `capm-readiness-check` | planned | 60 / 120 | 2026-10-28 | — |
 | ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `cda-childcare-readiness-check` | planned | 60 / 120 | 2026-10-23 | — |
+| ok | `cdl-general-knowledge-readiness-check` | planned | 60 / 120 | 2026-11-09 | — |
 | ok | `cdl-hazmat-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `cdl-school-bus-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `cscs-nsca-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |

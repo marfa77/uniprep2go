@@ -70,11 +70,11 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "emergencies-rules", label: "Emergencies, hours & rules" },
     ]),
     officialSourceNote:
-      "Most state CDL General Knowledge sittings are ~50 questions / 80% (40 correct) from the FMCSA Commercial Driver’s Manual — verify your state DMV. This UniPrep check is a longer 60Q / 75 min diagnostic. Skills/road testing and endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.) are separate.",
+      "Most state CDL General Knowledge sittings are ~50 questions / 80% (40 correct) from the FMCSA Commercial Driver’s Manual — verify your state DMV. This UniPrep check is a longer 60Q / 75 min diagnostic drawn from a 120-item bank. Skills/road testing and endorsement knowledge tests (Air Brakes, Combination, HazMat, etc.) are separate.",
     description:
-      "A 60-question / 75-minute CDL General Knowledge readiness check (free 25-question version) with topic scoring across vehicle systems, safe driving, cargo, and rules — for CLP / Class A–B knowledge prep. Typical state GK forms are ~50Q / 80%; this is a longer diagnostic, not a DMV exam.",
+      "A 60-question / 75-minute CDL General Knowledge readiness check (free 25-question version), drawn from a 120-item bank, with topic scoring across vehicle systems, safe driving, cargo, and rules — for CLP / Class A–B knowledge prep. Typical state GK forms are ~50Q / 80%; this is a longer diagnostic, not a DMV exam.",
     examBody: "State DMV / FMCSA",
-    questionSourceNote: "Original UniPrep2Go local bank aligned to FMCSA handbook topics.",
+    questionSourceNote: "120 questions, 30 per topic. Each session draws 60.",
   }),
   readinessConfig({
     slug: "nha-ccma-readiness-check",
