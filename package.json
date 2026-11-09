@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run admin-bot:knowledge && npm run check:boilerplate && next build --webpack",
+    "build": "npm run admin-bot:knowledge && npm run check:boilerplate && next build",
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
