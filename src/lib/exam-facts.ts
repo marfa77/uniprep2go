@@ -4560,11 +4560,11 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "electrical-journeyman",
     pageHeading: "Electrical Journeyman — Facts & Prep",
     intro:
-      "Journeyman electrician licensing exams are state- or locality-specific (NEC cycle year, open-book rules, and vendor differ). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic (free 25-question version). Independent prep — not a license. Not a master electrician exam.",
+      "Journeyman electrician licensing exams are state- or locality-specific (NEC cycle year, open-book rules, and vendor differ). There is no single national Q-count. UniPrep’s check is a 60-question / 75-minute diagnostic drawn from a 120-item bank (free 25-question version). The matching Anki deck is planned at 120 cards and is not a live download. Independent prep — not a license. Not a master electrician exam.",
     exam_facts: {
       exam_name: "Journeyman electrician written exam (state / local)",
       administered_by: "State or local electrical boards (often PSI / Prometric)",
-      question_count: "No national published Q-count — UniPrep diagnostic is 60 multiple-choice",
+      question_count: "No national published Q-count — UniPrep diagnostic is 60 multiple-choice drawn from 120",
       time_limit: "Set by the board; UniPrep diagnostic is 75 minutes",
       passing_score: "Set by the board; UniPrep diagnostic target 70%",
       delivery: "State/local written exam — often open-book NEC",
@@ -4575,23 +4575,23 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { label: "NFPA — National Electrical Code", url: "https://www.nfpa.org/codes-and-standards/nfpa-70-standard-development/70" },
     ],
     domain_weights: [
-      { domain: "UniPrep buckets", weight: "NEC, wiring, services, safety/motors — 15 each" },
+      { domain: "UniPrep buckets", weight: "NEC, wiring, services, safety/motors — 30 in the bank; a session draws 15 each" },
     ],
     whats_changed: [
       "Master electrician and contractor exams are separate.",
     ],
     high_yield_facts: [
-      "State-specific NEC exam. UniPrep: 60Q / 75 min / 70%.",
+      "State-specific NEC exam. UniPrep: 60Q / 75 min / 70%, drawn from a 120-item bank.",
       "≠ master electrician / contractor license.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the journeyman electrician exam?",
-        a: "It depends on the state. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) — not your board’s form.",
+        a: "It depends on the state. There is no national count. UniPrep’s check is 60 questions / 75 minutes drawn from a 120-item bank (free 25-question version) — not your board’s form.",
       },
       {
         q: "Is this the master electrician exam?",
-        a: "No. This check is journeyman-level. Matching Anki is planned. Independent prep — not NFPA or board material.",
+        a: "No. This check is journeyman-level. The matching Anki deck is planned at 120 cards and is not a live download. Independent prep — not NFPA or board material.",
       },
     ],
     trademark_note:

@@ -777,11 +777,11 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       { id: "services", label: "Services & feeders" },
       { id: "safety", label: "Safety & motors" }
     ]),
-    officialSourceNote: "Mapped to State electrical boards themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question Electrical Journeyman readiness check (free 25-question version) with topic scoring.",
+    officialSourceNote: "Mapped to State electrical boards themes. Independent UniPrep2Go readiness check — not an official exam. The 60-question / 75-minute session is drawn from a 120-item bank. There is no national question count.",
+    description: "60-question / 75-minute Electrical Journeyman readiness check (free 25-question version), drawn from a 120-item bank, with topic scoring. State-specific NEC exam — not a master electrician test.",
     examBody: "State electrical boards",
-    lastUpdated: "2026-10-04",
-    questionSourceNote: "Original UniPrep2Go local bank rewritten 2026-10-04 (Wave-template pass).",
+    lastUpdated: "2026-11-10",
+    questionSourceNote: "120 questions, 30 per topic. Each session draws 60.",
     searchAliases: ["journeyman electrician exam", "electrician license test"],
   }),
   nicheReadinessConfig({

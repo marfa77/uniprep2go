@@ -887,6 +887,7 @@ describe("llm visibility", () => {
         "shrm-scp-readiness-check",
         "medicare-counseling-readiness-check",
         "al-real-estate-readiness-check",
+        "electrical-journeyman-readiness-check",
       ]);
       expect(getQuestionBank(config.slug)).toHaveLength(
         bank240.has(config.slug) ? 240 : expandedWave4.has(config.slug) ? 120 : 60,

@@ -133,7 +133,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "wastewater-operator-1-anki-deck":
     "Planned 120-card wastewater operator Anki. 60Q / 75 min diagnostic from a 120-item bank (free 25-question version) — state-specific; not a live download; ≠ drinking-water treatment.",
   "electrical-journeyman-anki-deck":
-    "Planned 60-card journeyman electrician Anki. 60Q / 75 min diagnostic live now (free 25-question version) — state-specific NEC; ≠ master electrician.",
+    "Planned 120-card journeyman electrician Anki, not a live download. The 60Q / 75 min diagnostic (free 25-question version) is drawn from that 120-item bank — state-specific NEC; ≠ master electrician.",
   "nate-core-anki-deck":
     "Planned 60-card NATE Core Anki. 60Q / 75 min diagnostic live now (free 25-question version) — HVAC/R knowledge; ≠ specialty NATE and ≠ EPA 608.",
   "plumbing-journeyman-anki-deck":
@@ -668,8 +668,8 @@ export const positioningOverrides: Partial<
   },
   "electrical-journeyman-anki-deck": {
     ourEdge: [
-      "Planned 60-card journeyman electrician Anki for NEC, wiring, services, motors",
-      "60Q / 75 min timed diagnostic live now (free 25-question version)",
+      "Planned 120-card journeyman electrician Anki, not a live download",
+      "60Q / 75 min timed diagnostic drawn from the same 120-item bank (free 25-question version)",
       "Honest: state/local NEC exam — no national Q-count",
       "≠ master electrician / contractor",
     ],
@@ -2451,13 +2451,13 @@ State operator certification. Anki is **planned**. Independent prep — not a st
 
   "electrical-journeyman-anki-deck": `### What is inside
 
-Planned **60** flashcards across NEC theory, wiring methods, services/feeders, and motors/safety — the same four buckets as the free readiness check. Built for **journeyman** written exams, not master electrician.
+Planned **120** flashcards across NEC theory, wiring methods, services/feeders, and motors/safety — the same four buckets as the free readiness check, 30 cards in each. Not a live download. Built for **journeyman** written exams, not master electrician.
 
 ### Plan with the free Electrical Journeyman mock (live now)
 
-**Start:** Take the [60-question Electrical Journeyman readiness check (free 25-question version)](/mock-exams/electrical-journeyman-readiness-check) (75 minutes / 70% diagnostic). **Then:** Tab the adopted NEC cycle for your board. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+**Start:** Take the [60-question Electrical Journeyman readiness check (free 25-question version)](/mock-exams/electrical-journeyman-readiness-check) (75 minutes / 70% diagnostic, drawn from this 120-item bank). **Then:** Tab the adopted NEC cycle for your board. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
 
-Licensing is **state-specific**. Our mock is a 60-question diagnostic.
+Licensing is **state-specific**. There is no national question count. Our mock draws 60 questions from a 120-item bank.
 
 ### Pitfalls this deck targets (when live)
 
