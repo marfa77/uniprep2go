@@ -877,9 +877,11 @@ describe("llm visibility", () => {
       expect(config.status).toBe("live");
       expect(config.accessMode).toBe("free_demand_test");
       expect(isMockExamRunnable(config.slug)).toBe(true);
-      const bank240 = new Set(["cfp-certification-readiness-check"]);
-      const expandedWave4 = new Set([
+      const bank240 = new Set([
+        "cfp-certification-readiness-check",
         "series-79-readiness-check",
+      ]);
+      const expandedWave4 = new Set([
         "series-99-readiness-check",
         "armed-security-officer-readiness-check",
         "nremt-emr-readiness-check",

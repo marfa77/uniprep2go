@@ -106,7 +106,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Series 79 practice test free",
     mockSlug: "series-79-readiness-check",
     disambiguation:
-      "FINRA Series 79 (Investment Banking Representative) readiness check — independent UniPrep2Go diagnostic, not FINRA exam material.",
+      "FINRA Series 79 (Investment Banking Representative): 75 scored questions plus 5 unscored pretest items, 2 hours 30 minutes, scaled passing score 73, SIE corequisite. UniPrep2Go draws 120 questions in 120 minutes from a 240-item bank (free 25-question version). The linked deck is a live 240-card Anki file. Independent prep, not FINRA exam material.",
   },
   {
     query: "Series 99 practice test free",

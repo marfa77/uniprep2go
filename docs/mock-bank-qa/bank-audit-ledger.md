@@ -7,11 +7,12 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 ## In progress
 
 | Started | Slugs | Work | Status / blocker |
-|---|---|---|---|
+|---|---|---|---|---|
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-11 | `series-79-readiness-check` | `series-79-anki-deck` | audit 0 FAIL · triage clean · 240 · keys 60/60/60/60 · ops ready | Four topics reviewed by separate reviewers. Keys on 001–030 unchanged. Mid-year note now raises present value. 506(b) purchasers must be sophisticated. Classical duty is to shareholders. 13D is not the passive report | `Series_79_FULL_240.apkg` on Gumroad. 3 samples from that file. Landing copy 240. Sample CDN for this deck returns 200 | Session stays 120 / 120. Official exam stays 75 scored + 5 pretest / 2 hours 30 minutes / scaled 73 |
 | 2026-11-10 | `electrical-journeyman-readiness-check` | `electrical-journeyman-anki-deck` | audit 0 FAIL · triage clean · 120 · keys a29/b32/c29/d30 · ops ready | Four topics reviewed. Overload stems split. Bushing wording widened. Garage item left without a freezer exception | Planned deck cardCount 120. No apkg and no Gumroad | Session stays 60 / 75 from 120. No national question count. Not a master electrician exam |
 | 2026-11-09 | `cdl-general-knowledge-readiness-check` | `cdl-general-knowledge-anki-deck` | audit 0 FAIL · triage clean · 120 · keys a28/b32/c28/d32 · ops ready | Four topics reviewed. ABS lamp split from the steering item. Hours, triangles, alcohol, cargo recheck, and left-turn tracking checked | Planned deck cardCount 120. No apkg and no Gumroad | Session stays 60 / 75 from 120. Typical state form stays ~50 / 80%. Not the skills test |
 | 2026-11-08 | `cfa-level-2-readiness-check` | `cfa-level-2-anki-deck` | Copy and list price only — bank untouched | — | Catalog override $29. Deck hero, meta, FAQ, and Gumroad summary name 495 vignette cards, typeset formulas, and Kaplan Schweser Level II flashcards at $159. L1 deck and both formula PDFs stay $19. `llms:export` | Price step from the flat $19 shelf. Watch checkouts before any move to $39 |

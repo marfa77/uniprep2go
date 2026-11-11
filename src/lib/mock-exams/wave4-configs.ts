@@ -671,10 +671,13 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to FINRA Series 79 (Investment Banking Representative) themes. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
-    description: "120-question Series 79 readiness check (free 25-question version) with topic scoring.",
+      "Mapped to FINRA Series 79 (Investment Banking Representative) themes. The official exam is 75 scored questions plus 5 unscored pretest items, 2 hours 30 minutes, scaled passing score 73. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target, drawn from a 240-item bank. Independent prep — not an official exam.",
+    description:
+      "120-question / 120-minute Series 79 readiness check (free first 25) drawn from a 240-item bank.",
     examBody: "FINRA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
+    lastUpdated: "2026-11-11",
     searchAliases: ["Series 79", "Investment Banking Representative"],
   }),
   nicheReadinessConfig({
