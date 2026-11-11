@@ -82,13 +82,13 @@ export function premiumCatalogPriceLine(): string {
  */
 export function fillProductPriceMentions(text: string, priceLabel: string): string {
   if (!text) return text;
-  let out = text
-    .replaceAll(PRICE_PLACEHOLDER, priceLabel)
-    .replace(LEGACY_UNIPREP_PRODUCT_PRICE_RE, priceLabel);
-  if (priceLabel !== "$9.99") {
+  // Rewrite leftover $9.99 before {PRICE}. A label like "$9.99 USD" contains
+  // "$9.99", so rewriting after the placeholder turns it into "$9.99 USD USD".
+  let out = text.replace(LEGACY_UNIPREP_PRODUCT_PRICE_RE, priceLabel);
+  if (!priceLabel.startsWith("$9.99")) {
     out = out.replace(/\$9\.99\b/g, priceLabel);
   }
-  return out;
+  return out.replaceAll(PRICE_PLACEHOLDER, priceLabel);
 }
 
 /** Fill marketing copy from catalog list price (override → Gumroad default). */

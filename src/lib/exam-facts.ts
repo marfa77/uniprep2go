@@ -1658,12 +1658,12 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       passing_score: "Minimum 18 of 25 correct (72%) in each section taken; Core must pass for any certification",
       delivery: "Closed-book proctored exam at approved testing organizations (in-person or online proctored — verify with your certifier)",
       outline_effective_date: "Section 608 refrigerant management regulations (verify current AIM Act / HFC rules at epa.gov)",
-      verify_at_url: "https://www.epa.gov/section608/technician-certification",
+      verify_at_url: "https://www.epa.gov/section608/section-608-technician-certification",
     },
     official_sources: [
       {
         label: "EPA — Section 608 technician certification",
-        url: "https://www.epa.gov/section608/technician-certification",
+        url: "https://www.epa.gov/section608/section-608-technician-certification",
       },
       {
         label: "EPA — Stationary Refrigeration and Air Conditioning",
@@ -1671,7 +1671,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         label: "EPA Section 608 preparatory manual (reference outline)",
-        url: "https://www.epa.gov/section608/technician-certification",
+        url: "https://www.epa.gov/section608/section-608-technician-certification",
       },
     ],
     domain_weights: [

@@ -27,6 +27,13 @@ describe("catalog-price", () => {
     );
   });
 
+  it("does not double the currency when the label is already $9.99 USD", () => {
+    expect(fillProductPriceMentions("for {PRICE} through Gumroad", "$9.99 USD")).toBe(
+      "for $9.99 USD through Gumroad",
+    );
+    expect(fillProductPriceMentions("was $9.99, now {PRICE}", "$19")).toBe("was $19, now $19");
+  });
+
   it("does not rewrite exam-math decimals like $16.80", () => {
     expect(withCatalogProductPrices("Honey $16.80 and tins $10.00")).toBe(
       "Honey $16.80 and tins $10.00",
