@@ -1,15 +1,15 @@
 # SKU status board
 
-Generated 2026-11-11 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-12 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 89 | 49 |
+| ok | 90 | 49 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
-| small-bank | 13 | 0 |
+| small-bank | 12 | 0 |
 | point-fix | 0 | 0 |
 | rewrite | 75 | 17 |
 | civic | 19 | 19 |
@@ -101,7 +101,6 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `nail-technician-state-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `nate-core-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `nha-ccma-readiness-check` | planned | 60 / 60 | — | bank 60 for 60Q session; no content review in ledger |
-| small-bank | `nsca-cpt-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `phr-hrci-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `physical-therapy-aide-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `plumbing-journeyman-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
@@ -190,6 +189,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nremt-aemt-readiness-check` | planned | 60 / 120 | 2026-10-28 | — |
 | ok | `nremt-emr-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nremt-emt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
+| ok | `nsca-cpt-readiness-check` | planned | 60 / 120 | 2026-11-12 | — |
 | ok | `parapro-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pest-control-applicator-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |

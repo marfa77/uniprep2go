@@ -117,7 +117,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nail-technician-state-anki-deck":
     "Planned 60-card NIC-style nail theory Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NIC Nail Technology Theory is 110 (100 scored) / 90 min; practical separate. ≠ Cosmetology / Barber Theory.",
   "nsca-cpt-anki-deck":
-    "Planned 60-card NSCA-CPT Anki (assessment, program design, technique, safety). 60Q / 75 min text diagnostic live now (free 25-question version) — official NSCA-CPT is 155Q (140+15) / 3h / scaled 70 with video items. ≠ CSCS.",
+    "Planned 120-card NSCA-CPT Anki (assessment, program design, technique, safety), not a live download. 60Q / 75 min text diagnostic drawn from that 120-item bank (free 25-question version) — official NSCA-CPT is 155Q (140+15) / 3h / scaled 70 with video items. ≠ CSCS.",
   "phr-hrci-anki-deck":
     "Planned 60-card HRCI PHR Anki (talent, employee relations, total rewards, compliance). 60Q / 75 min diagnostic live now (free 25-question version) — official PHR is 90 scored + 25 pretest / 2h / scaled 500. ≠ SPHR / SHRM-CP.",
   "physical-therapy-aide-anki-deck":
@@ -236,7 +236,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "nail-technician-state-anki-deck":
     "Planned NIC-style nail technician theory Anki for infection control, anatomy, services, and chemistry. 60-question / 75-minute readiness check (free 25-question version) is live; official NIC Nail Technology Theory is 110 items (100 scored) / 90 minutes. Practical exam is separate. Not Cosmetology Theory and not Barber Theory.",
   "nsca-cpt-anki-deck":
-    "Planned NSCA-CPT Anki for assessment, program design, technique, and safety. 60-question / 75-minute text readiness check (free 25-question version) is live; official NSCA-CPT is 155 questions (140 scored + 15 pretest) / 3 hours / scaled 70, including 25–35 video/image items. Not CSCS and not NASM/ACE/ACSM CPT.",
+    "Planned 120-card NSCA-CPT Anki, not a live download. 60-question / 75-minute text readiness check (free 25-question version) is drawn from that bank; official NSCA-CPT is 155 questions (140 scored + 15 pretest) / 3 hours / scaled 70, including 25–35 video/image items. Not CSCS and not NASM/ACE/ACSM CPT.",
   "phr-hrci-anki-deck":
     "Planned HRCI PHR Anki for talent, employee relations, total rewards, and compliance. 60-question / 75-minute readiness check (free 25-question version) is live; official PHR is 90 scored + 25 pretest / 2 hours / scaled 500. Not SPHR and not SHRM-CP.",
   "physical-therapy-aide-anki-deck":
@@ -588,7 +588,7 @@ export const positioningOverrides: Partial<
   },
   "nsca-cpt-anki-deck": {
     ourEdge: [
-      "Planned 60-card NSCA-CPT Anki for assessment, program design, technique, safety",
+      "Planned 120-card NSCA-CPT Anki for assessment, program design, technique, safety",
       "60Q / 75 min timed text diagnostic live now (free 25-question version)",
       "Honest: official NSCA-CPT is 155Q / 3h / scaled 70 with video items",
       "≠ CSCS and ≠ NASM/ACE/ACSM CPT",
@@ -2309,11 +2309,11 @@ NIC/state registration or the practical exam. Anki is **planned**. Independent p
 
   "nsca-cpt-anki-deck": `### What is inside
 
-Planned **60** flashcards across assessment, program design, technique, and safety — the same four buckets as the free readiness check. Built for **NSCA-CPT**, not CSCS and not NASM/ACE/ACSM CPT.
+Planned **120** flashcards across assessment, program design, technique, and safety — the same four buckets as the free readiness check. Built for **NSCA-CPT**, not CSCS and not NASM/ACE/ACSM CPT. Not a live download yet.
 
 ### Plan with the free NSCA-CPT mock (live now)
 
-**Start:** Take the [60-question NSCA-CPT readiness check (free 25-question version)](/mock-exams/nsca-cpt-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use NSCA’s official resources for video-item stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
+**Start:** Take the [60-question NSCA-CPT readiness check (free 25-question version)](/mock-exams/nsca-cpt-readiness-check) (75 minutes / 70% diagnostic, drawn from a 120-item bank). **Then:** Use NSCA’s official resources for video-item stamina. **When Anki ships:** 15–20 cards/day on the weakest topic row only.
 
 Official NSCA-CPT: **155 questions (140 scored + 15 pretest) / 3 hours / scaled 70**, including 25–35 video/image items. Our mock is text-only and shorter.
 

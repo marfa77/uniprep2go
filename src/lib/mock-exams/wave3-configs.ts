@@ -610,12 +610,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "safety", label: "Safety & client consult" }
     ]),
     officialSourceNote:
-      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check is a shorter 60-question / 75-minute text diagnostic (free 25-question version) — not CSCS (two papers) and not NASM/ACE/ACSM CPT. Independent UniPrep2Go practice — not NSCA exam material.",
+      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check is a 60-question / 75-minute text diagnostic (free 25-question version) drawn from a 120-item bank — not CSCS (two papers) and not NASM/ACE/ACSM CPT. Independent UniPrep2Go practice — not NSCA exam material.",
     description:
-      "60-question / 75-minute NSCA-CPT readiness check (free 25-question version) with topic scoring — shorter than the official 155-question / 3-hour sitting.",
-    lastUpdated: "2026-10-04",
+      "60-question / 75-minute NSCA-CPT readiness check (free 25-question version) drawn from a 120-item bank — shorter than the official 155-question / 3-hour sitting, and text only.",
+    lastUpdated: "2026-11-12",
     examBody: "NSCA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions, 30 per topic. Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
     searchAliases: ["NSCA-CPT", "NSCA personal trainer"],
   }),
   nicheReadinessConfig({

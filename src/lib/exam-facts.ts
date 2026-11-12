@@ -4215,7 +4215,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "nsca-cpt",
     pageHeading: "NSCA-CPT Exam — Facts & Prep",
     intro:
-      "The NSCA Certified Personal Trainer (NSCA-CPT) exam is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: client consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. UniPrep’s check is a 60-question / 75-minute text diagnostic (free 25-question version). Independent prep — not NSCA exam material. Not CSCS (two papers) and not NASM/ACE/ACSM CPT.",
+      "The NSCA Certified Personal Trainer (NSCA-CPT) exam is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: client consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. UniPrep’s check is 60 questions in 75 minutes, drawn from a 120-item text bank (free 25-question version). The linked deck is planned, not a live download. Independent prep — not NSCA exam material. Not CSCS (two papers) and not NASM/ACE/ACSM CPT.",
     exam_facts: {
       exam_name: "NSCA Certified Personal Trainer (NSCA-CPT®)",
       administered_by: "National Strength and Conditioning Association (NSCA)",
@@ -4237,17 +4237,17 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     ],
     whats_changed: [
       "NSCA-CPT is one 3-hour paper with video items — CSCS is two separately scored papers.",
-      "UniPrep mock is 60Q / 75 min text-only — no video items.",
+      "UniPrep mock is 60Q / 75 min text-only, drawn from a 120-item bank — no video items. The Anki file is planned, not a live download.",
     ],
     high_yield_facts: [
       "Official NSCA-CPT: 155Q / 3h / scaled 70.",
-      "UniPrep: 60Q / 75 min / 70% diagnostic, text only.",
+      "UniPrep: 60Q / 75 min / 70% diagnostic from a 120-item text bank. Deck is planned.",
       "≠ CSCS and ≠ NASM/ACE/ACSM CPT.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the NSCA-CPT exam?",
-        a: "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) with no video items.",
+        a: "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions in 75 minutes, drawn from a 120-item bank (free 25-question version), with no video items. The linked deck is planned.",
       },
       {
         q: "Is NSCA-CPT the same as CSCS?",

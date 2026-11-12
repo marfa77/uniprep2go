@@ -1978,5 +1978,1985 @@
     },
     "difficulty": "medium",
     "sourceNote": "Ops rewrite 2026-10-04: Wave-template content audit — template notes and meta items removed."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-061",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "A first session includes seated blood pressure, a submaximal cycle test that estimates aerobic fitness from heart rate, and a heavy leg-press test. Which order keeps the resting and heart-rate results honest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seated pressure, then the cycle test, then the heavy leg press"
+      },
+      {
+        "id": "b",
+        "text": "Leg press to near failure first so the cycle test can double as a cool-down"
+      },
+      {
+        "id": "c",
+        "text": "Cycle test as she walks in from the lobby, then pressure, then the leg press"
+      },
+      {
+        "id": "d",
+        "text": "Cycle test first, then the heavy leg press, then seated pressure at the end"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Resting blood pressure has to be taken before work, and a heart-rate submaximal cycle estimate assumes the pulse was not already lifted by a heavy set. Pressing first leaves the aerobic heart rates inflated, so fitness looks worse than it is. Quiet measures, then the cycle test, then strength.",
+    "distractorExplanations": {
+      "b": "Confuses a cool-down with a valid baseline; heavy pressing first elevates heart rate and biases the cycle estimate.",
+      "c": "Confuses arrival order with rested data; pressure and a heart-rate test need a quiet start, not a walk in from the lobby.",
+      "d": "Puts seated pressure last, after both work bouts; a post-exercise reading is not a resting blood pressure."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-062",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "hard",
+    "prompt": "A healthy adult finishes a submaximal cycle test. The printout says VO2 36. She asks if that number is a lab-measured maximal oxygen uptake from gas analysis. How should you treat it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a direct gas-analysis maximum, because the test was done on a commercial gym bike"
+      },
+      {
+        "id": "b",
+        "text": "As an estimate from submaximal heart rate, not a measured gas maximum"
+      },
+      {
+        "id": "c",
+        "text": "As a verified maximum, because the last-stage heart rate was high enough to prove it"
+      },
+      {
+        "id": "d",
+        "text": "As an exact laboratory value, because the bike printed one number and then the test ended"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A submaximal cycle protocol estimates aerobic fitness by extrapolating heart rate, usually toward an age-predicted maximum. It does not collect expired gas and it does not take the client to a verified maximum, so the printout is an estimate with error, not a laboratory VO2max.",
+    "distractorExplanations": {
+      "a": "Confuses a gym bike with laboratory gas analysis; a submaximal test does not measure maximal oxygen uptake directly.",
+      "c": "Confuses a high submaximal heart rate with a verified maximum; this protocol never confirms a true max or collects gas.",
+      "d": "Ignores prediction error; one printed estimate from heart rate is not an exact laboratory oxygen-uptake measurement."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-063",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "hard",
+    "prompt": "You are taking a standard three-site skinfold on an adult woman, with every site on the right side. How should you measure the triceps site?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A horizontal pinch across the biceps while she holds the elbow firmly flexed"
+      },
+      {
+        "id": "b",
+        "text": "A diagonal fold under the left scapula so the side follows her writing hand"
+      },
+      {
+        "id": "c",
+        "text": "A vertical fold on the posterior midline of the upper arm, midway, arm hanging relaxed"
+      },
+      {
+        "id": "d",
+        "text": "A vertical fold on the back of the upper arm at the elbow crease, with the elbow held flexed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "On a standard right-side skinfold protocol the triceps site is a vertical fold on the posterior midline of the upper arm, halfway between the shoulder and elbow, with the arm relaxed and the elbow extended. A flexed biceps pinch, the left scapula, or a fold at the elbow crease samples the wrong tissue.",
+    "distractorExplanations": {
+      "a": "Confuses the triceps site with a biceps pinch and flexes the elbow, which thickens the fold and samples the wrong muscle.",
+      "b": "Confuses protocol side and site; the fold is on the right posterior arm, not a diagonal pinch under the left scapula.",
+      "d": "Confuses the upper-arm midpoint with the elbow crease and flexes the arm, which shifts the fold off the triceps site."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-064",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "easy",
+    "prompt": "A sedentary 68-year-old has clearance for moderate exercise and no positive symptom answers. He wants an aerobic baseline at the gym. Which test should you choose first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An all-out 1.5-mile run so the score can stand in for a laboratory maximum"
+      },
+      {
+        "id": "b",
+        "text": "A one-mile walk performed as a jog, so the finish time comes out faster"
+      },
+      {
+        "id": "c",
+        "text": "A one-mile walk scored from finish time only, with the heart rate left off the card"
+      },
+      {
+        "id": "d",
+        "text": "A walking test that uses finish time and heart rate, not a maximal run"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A sedentary older adult cleared for moderate work needs a submaximal walking test that uses both finish time and heart rate, not a near-maximal run. Jogging the mile invalidates a walk protocol, and finish time alone leaves out the heart-rate term that test uses.",
+    "distractorExplanations": {
+      "a": "Confuses a near-maximal run with a safe first test; a sedentary older adult cleared for moderate work should not start with an all-out 1.5-mile.",
+      "b": "Turns a walking test into a jog; running the mile invalidates the protocol and is too hard for this cleared client.",
+      "c": "Drops heart rate from a walking test that needs it; finish time alone is not the aerobic result this protocol produces."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-065",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "easy",
+    "prompt": "A client arrives for her assessment with a fever of 101°F (38.3°C), chills, and a request to sweat it out on the bike. What should you do with today’s test battery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Postpone the battery until the fever and the acute illness have cleared"
+      },
+      {
+        "id": "b",
+        "text": "Shorten the bike to one stage and file that stage as a normal baseline"
+      },
+      {
+        "id": "c",
+        "text": "Switch the visit to heavy maximal lifts so the fever affects the cardio less"
+      },
+      {
+        "id": "d",
+        "text": "Run every planned test after she initials a waiver saying she feels able to start"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Fever with an acute illness is a reason to postpone fitness testing. A short stage, a switch to heavy lifts, or a waiver does not make the session safe or the numbers usable. Reschedule for when she is afebrile and feeling well.",
+    "distractorExplanations": {
+      "b": "Confuses a shortened stage with a valid baseline; fever makes the result unusable and the exercise unsafe.",
+      "c": "Confuses test mode with illness status; moving from the bike to heavy lifts does not clear an acute fever.",
+      "d": "Confuses a waiver with fitness to test; saying she feels able does not override a febrile illness."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-066",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "hard",
+    "prompt": "Midway through an easy cycle stage you ask for effort on the 6–20 Borg scale. The client answers 7 and is speaking in full sentences. How should you read that 7?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Near-maximal effort, because a 7 already counts as hard on the 0–10 scale"
+      },
+      {
+        "id": "b",
+        "text": "Extremely light effort, just above no exertion on the 6–20 scale"
+      },
+      {
+        "id": "c",
+        "text": "About 70 percent of maximal effort, so the stage already counts as vigorous work"
+      },
+      {
+        "id": "d",
+        "text": "A reason to stop the stage now, because 7 is the termination point on the 6–20 scale"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "On the 6–20 Borg scale, 6 is no exertion and 7 is extremely light. Full sentences match that easy effort. The 0–10 scale is a different ruler, where 7 would feel hard. A 7 is not 70 percent of maximum and not a reason to stop the stage.",
+    "distractorExplanations": {
+      "a": "Confuses the 6–20 Borg scale with the 0–10 scale, where 7 would feel hard; on 6–20, a 7 is extremely light.",
+      "c": "Reads the Borg number as a percent of maximum; on the 6–20 scale a 7 is extremely light, not 70 percent effort.",
+      "d": "Invents a stop at 7; that rating is extremely light on the 6–20 scale, not a test-termination point."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-067",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "Seated blood pressure on a client with a large upper arm is much higher than the monitor he uses at home. The gym cuff barely wraps, and the bladder looks short for the arm. What is the best reading of that setup?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A too-narrow cuff is likely pushing the gym number falsely downward"
+      },
+      {
+        "id": "b",
+        "text": "Cuff size can be ignored because five quiet minutes already make any reading valid"
+      },
+      {
+        "id": "c",
+        "text": "A too-narrow cuff is the likely reason the gym reading runs high"
+      },
+      {
+        "id": "d",
+        "text": "Average the gym and home numbers and file that mean without changing the cuff"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A cuff bladder that is too narrow for the arm commonly overestimates blood pressure. Quiet sitting does not repair a cuff that barely wraps. Replace the cuff and remeasure; do not average the high gym number with the home reading.",
+    "distractorExplanations": {
+      "a": "Reverses the cuff-size error; a bladder that is too narrow reads high, it does not push the pressure down.",
+      "b": "Confuses quiet sitting with proper equipment; five seated minutes do not fix a cuff that cannot wrap the arm.",
+      "d": "Blends a biased gym reading with the home number; a cuff that barely wraps has to be replaced, not averaged away."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-068",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "During an overhead reach screen, a client winces and grabs the front of her left shoulder as the arm nears the ear. She still wants barbell overhead presses in the same session. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add load so the shoulder can warm through the pinch across the working sets"
+      },
+      {
+        "id": "b",
+        "text": "Score the reach as full and start a heavy overhead-press loading plan today"
+      },
+      {
+        "id": "c",
+        "text": "Push the arm farther into the painful arc, then test a one-rep overhead press"
+      },
+      {
+        "id": "d",
+        "text": "Stop that screen, do not load overhead, and refer the painful shoulder"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Joint pain during a screen ends that test. Do not stretch into the pain or load the same overhead pattern. The trainer does not diagnose the shoulder; refer her to a qualified clinician and train only patterns that are pain-free.",
+    "distractorExplanations": {
+      "a": "Confuses load with a warm-up; adding weight trains into a painful shoulder instead of stopping that pattern.",
+      "b": "Confuses a painful reach with usable range and would load the same overhead pattern the screen just flagged.",
+      "c": "Confuses forcing range with an assessment; pushing into the pain and then max-pressing ignores the stop."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-069",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "A 26-year-old marks yes for unexplained shortness of breath while seated at her desk. She says she is too young to need a physician and asks to start a step test for a campus job. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop testing and require medical clearance before any fitness test"
+      },
+      {
+        "id": "b",
+        "text": "Run the step test, because age 26 cancels a yes on that breathing item"
+      },
+      {
+        "id": "c",
+        "text": "Start the step test at a low height, because a mild protocol does not need clearance"
+      },
+      {
+        "id": "d",
+        "text": "Rest her for five quiet minutes, then run the step test if the breathing eases"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unexplained shortness of breath, including at rest, stops the assessment until a physician clears her. Age does not erase a positive symptom answer. A lower step or a short rest in the gym is not a workaround for that medical screen.",
+    "distractorExplanations": {
+      "b": "Confuses youth with a negative screen; age does not cancel unexplained shortness of breath.",
+      "c": "Confuses a lower step with clearance; a mild protocol still tests a client with unexplained shortness of breath.",
+      "d": "Confuses a short gym rest with a physician’s clearance; easier breathing in the chair does not erase the yes."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-070",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "easy",
+    "prompt": "A client is seated on the cycle ergometer for a submaximal test. His health questionnaire is finished, but the informed-consent form is still blank. What should you do before stage one?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Begin stage one now and collect the signature once he is in the cool-down"
+      },
+      {
+        "id": "b",
+        "text": "Skip the form, because a finished health questionnaire already stands in for consent"
+      },
+      {
+        "id": "c",
+        "text": "Finish informed consent, then start the first stage of the cycle test"
+      },
+      {
+        "id": "d",
+        "text": "Treat the easy warm-up minutes as consent, since he stayed seated on the bike"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Informed consent comes before the test battery, not after the client has already started. A completed health questionnaire flags risk; it does not explain the procedure, the foreseeable risks, or the right to stop. Staying on the bike is not a signature.",
+    "distractorExplanations": {
+      "a": "Confuses consent with a cool-down signature; he has to agree before stage one, not after the work is done.",
+      "b": "Confuses a health questionnaire with informed consent; the screen does not by itself document agreement to the test.",
+      "d": "Confuses staying on the bike with consent; presence is not a documented agreement to the procedure."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-071",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "hard",
+    "prompt": "A novice wants a bench-press one-rep max. You are the only person on the floor, and the rack has no spotter arms. He just finished a smooth set of eight with a steady bar path. How should you record strength today?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load a true single and have him tilt the bar toward his waist if the press stalls"
+      },
+      {
+        "id": "b",
+        "text": "Attempt the single while you stand well clear and call cues if the bar starts to slow"
+      },
+      {
+        "id": "c",
+        "text": "Predict the max from a bounced set of twenty partial reps instead of the smooth eight"
+      },
+      {
+        "id": "d",
+        "text": "Estimate a max from that clean eight-rep set rather than attempt a true single"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Without a spotter or spotter arms, a true bench max is the wrong test. A smooth set of eight is a usable submaximal estimate, with the usual prediction error stated as an estimate. A dump-bar plan, verbal cues from across the floor, or bounced partials do not make the max safer or more accurate.",
+    "distractorExplanations": {
+      "a": "Confuses tilting a stalled bar toward the waist with a spot; that dump is an injury risk, not a safety system.",
+      "b": "Confuses verbal cues from across the floor with spotting; a failed single still has nobody to take the bar.",
+      "c": "Confuses any hard set with a clean predictor; bounced partials and very high reps add too much error."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-072",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "easy",
+    "prompt": "A client steps off a gym scale that prints BMI 23 and tells the room she is 23 percent body fat. She wants a fat-loss plan built on that figure. How should you use the 23?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a height-weight index, not a field measure of percent body fat"
+      },
+      {
+        "id": "b",
+        "text": "As a three-site skinfold total she can drop straight into a percent-fat equation"
+      },
+      {
+        "id": "c",
+        "text": "As a waist-to-hip ratio low enough to clear her cardiometabolic risk today"
+      },
+      {
+        "id": "d",
+        "text": "As 23 percent body fat, because the scale’s BMI figure is already a fat percentage"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "BMI is body mass divided by height squared. A printout of 23 means 23 kg/m², not 23 percent fat, not a skinfold sum, and not a waist-to-hip ratio. Fat-loss decisions need a composition method if percent fat is the question she actually asked.",
+    "distractorExplanations": {
+      "b": "Confuses BMI with a skinfold sum; 23 points on a height-weight index are not caliper millimeters.",
+      "c": "Confuses BMI with waist-to-hip ratio; the scale did not measure a waist or a hip girth.",
+      "d": "Treats the BMI numeral as percent fat; a printout of 23 means 23 kg/m², not 23 percent body fat."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-073",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "A client with physician-diagnosed knee osteoarthritis is cleared for moderate aerobic work. Jogging on the treadmill makes that knee ache within a minute, and you still need an aerobic baseline. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Switch her to a maximal treadmill run so the aerobic score includes impact"
+      },
+      {
+        "id": "b",
+        "text": "Use a stair-climb test even if that knee aches, and file the time as her aerobic result"
+      },
+      {
+        "id": "c",
+        "text": "Move to a seated cycle test, and stop that too if the knee ache returns"
+      },
+      {
+        "id": "d",
+        "text": "Slow the treadmill jog until the ache is mild, then file that heart rate as her baseline"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Stop the jogging mode that provokes the knee. A seated cycle test can still give a submaximal aerobic baseline if the knee tolerates pedaling, and it should end if the ache returns. Do not chase a score with a max run, a stair climb, or a slower jog that still hurts.",
+    "distractorExplanations": {
+      "a": "Confuses impact with a valid aerobic score; a maximal run continues the jogging that already makes the knee ache.",
+      "b": "Swaps jogging for stairs, which still loads the aching knee, and keeps a score from a mode that provokes pain.",
+      "d": "Confuses a slower jog with a tolerated mode; impact is still there, and a pain-limited heart rate is not a clean baseline."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-074",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "medium",
+    "prompt": "A client completes a YMCA bench-press test at the fixed load used for her sex, staying with a metronome until she cannot keep the beat. You record the repetitions. What does that score mainly represent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Her true one-repetition maximum on a competition-style bench press"
+      },
+      {
+        "id": "b",
+        "text": "Upper-body muscular endurance at one fixed load and cadence"
+      },
+      {
+        "id": "c",
+        "text": "Upper-body peak power, because the metronome makes every press a fast explosive rep"
+      },
+      {
+        "id": "d",
+        "text": "A one-rep max you can calculate by putting that rep count into a prediction formula"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The YMCA bench-press test holds the load and the cadence constant and counts how many presses she can complete on the beat. That is muscular endurance of the pressing muscles, not a one-rep max, not peak power, and not a formula that turns the count into a max.",
+    "distractorExplanations": {
+      "a": "Confuses a fixed-load cadence test with a one-repetition maximum; the bar weight never approaches a true max attempt.",
+      "c": "Confuses a set cadence with power; the metronome standardizes the lift and does not turn the test into a power assessment.",
+      "d": "Confuses an endurance count with a strength prediction; high reps at the fixed test load are a poor one-rep-max formula input."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-assessment-075",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "assessment",
+    "difficulty": "hard",
+    "prompt": "A client at 20 weeks of pregnancy feels well and has her clinician’s approval to keep training. She wants a long set of crunches lying flat on her back. What is the best adjustment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop every lift until after delivery, including the machines she already tolerates"
+      },
+      {
+        "id": "b",
+        "text": "Add a heavy flat bench day, because the second trimester raises maximal strength"
+      },
+      {
+        "id": "c",
+        "text": "Keep the long flat crunch set, because lying supine gets safer after the first trimester"
+      },
+      {
+        "id": "d",
+        "text": "Move the abdominal work off a flat-back position and keep the approved lifting"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "After the first trimester, a long set lying flat on the back can compress venous return. She already has approval to train, so change the crunch (incline, seated, or side-lying) instead of canceling lifting. The second trimester does not make prolonged supine work safer and does not raise her max.",
+    "distractorExplanations": {
+      "a": "Confuses a flat-back limit with a ban on lifting; she is cleared to train, so the session continues with the position changed.",
+      "b": "Invents a strength gain from the second trimester and keeps her flat under a bar, which is the position to avoid for long sets.",
+      "c": "Reverses the supine caution; after the first trimester, a long flat crunch is the pattern to change, not to extend."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-076",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A new client’s only stated goal is to get toned before a beach trip sometime. What should the trainer write so the program has a real target?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A weekly session count plus a named date to review progress"
+      },
+      {
+        "id": "b",
+        "text": "Leave the goal worded as get toned, with no count and no date"
+      },
+      {
+        "id": "c",
+        "text": "Use a guessed scale weight and leave session attendance untracked"
+      },
+      {
+        "id": "d",
+        "text": "Hold off on any training target until post-trip photos stand in for a check-in"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Program design starts from a target you can schedule and review. A weekly session count plus a named review date tells you what to put on the calendar and when to judge it. Get toned names a look, not a dose. A guessed scale weight ignores the training you control, and waiting for photos after the trip gives the current weeks no standard.",
+    "distractorExplanations": {
+      "b": "Treats a vague look-slogan as the program target, so there is no session count or date to judge progress against.",
+      "c": "Swaps the training plan for an unverified scale number and drops the attendance the program can actually assign.",
+      "d": "Delays every programming decision until a photo after the trip, so the weeks before the trip have no check."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-077",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A parent wants to lift a 30 lb toddler from the floor and carry the child up one flight of stairs. Which work should anchor the program?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wrist curls, machine flyes, and seated calf raises as the full plan"
+      },
+      {
+        "id": "b",
+        "text": "A floor-to-stand lift and a loaded stair carry as the main work"
+      },
+      {
+        "id": "c",
+        "text": "Easy cycling alone, with the floor lift and the stairs left untrained"
+      },
+      {
+        "id": "d",
+        "text": "A snatch-and-jerk peaking block as this parent’s main training cycle"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Needs analysis matches the program to the task the client named. Getting a child off the floor is a squat or hinge to a stand, and the stairs are a loaded carry. Those patterns should be the main work. Small-muscle machines do not rehearse the lift, cycling leaves the strength task out, and a snatch-and-jerk peak is athlete contest prep, not this parent’s job.",
+    "distractorExplanations": {
+      "a": "Fills the week with small-muscle machines and never practices the floor-to-stand lift or the stair carry.",
+      "c": "Assigns an unrelated aerobic mode and leaves both the floor lift and the stairs untrained.",
+      "d": "Imports a contest peaking cycle of Olympic lifts instead of the parent’s actual daily lifting task."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-078",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "Today’s upper-body sheet is written as concentration curls, then dumbbell lateral raises, then a one-arm row, then a lat pulldown. What order fits standard exercise-order rules?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Curl first so the arms are fresh, then follow the rest of the sheet"
+      },
+      {
+        "id": "b",
+        "text": "Keep this sheet, because the single-joint moves should lead the session"
+      },
+      {
+        "id": "c",
+        "text": "One-arm row and lat pulldown before the curl and the lateral raise"
+      },
+      {
+        "id": "d",
+        "text": "Take the lateral raise and the curl to failure, then skip the row and the pulldown"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Exercise order puts multi-joint, larger-muscle lifts before single-joint assistance so the big pulls are done fresh. The one-arm row and lat pulldown should come before the concentration curl and the lateral raise. Curling first tires the elbow flexors that the pulls need. Skipping the row and pulldown removes the core exercises of the session.",
+    "distractorExplanations": {
+      "a": "Puts the single-joint curl first and pre-fatigues the arms before the multi-joint pulls.",
+      "b": "Reverses exercise order by treating single-joint isolation as the lead work of the session.",
+      "d": "Drops the row and pulldown after isolation work, so the session never trains the multi-joint pulls."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-079",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A general client’s upper-body week is bench press, incline dumbbell press, dips, and overhead press. No pulling is written. What should you add?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A second bench variation so the horizontal pressing volume goes up"
+      },
+      {
+        "id": "b",
+        "text": "Another overhead-press day, with pulling still left out of the week"
+      },
+      {
+        "id": "c",
+        "text": "Chest flyes and lateral raises so the week stays a press-only plan"
+      },
+      {
+        "id": "d",
+        "text": "Rows and a pulldown to cover horizontal and vertical pulling"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A general upper-body week needs both pushing and pulling. Four press patterns and no rows or pulldowns leave horizontal and vertical pulling untrained. Add a row and a pulldown (or similar pulls) rather than another press, flye, or raise. Do not invent a numeric push-to-pull ratio; the gap here is that pulling is missing.",
+    "distractorExplanations": {
+      "a": "Adds more horizontal pressing and leaves the missing pulling patterns out of the week.",
+      "b": "Stacks another overhead-press day and still never assigns a horizontal or vertical pull.",
+      "c": "Keeps the week press-only by adding chest and shoulder isolation instead of rows or pulldowns."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-080",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "On a rear-foot-elevated split squat, the client completes 10 solid reps on the right leg and only 6 on the left before the knee caves. How should the next session’s reps be set?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match both sides to the left leg’s clean reps and start on the left"
+      },
+      {
+        "id": "b",
+        "text": "Add load on the right leg and leave the left leg’s reps where they are"
+      },
+      {
+        "id": "c",
+        "text": "Switch to a bilateral leg press so the right leg can carry more of the load"
+      },
+      {
+        "id": "d",
+        "text": "Keep assigning 10 reps each side and let the left knee cave so the count matches the right"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unilateral work should not widen a side-to-side gap. Set both legs to the reps the left leg can finish with a clean knee, and start with the left so it is not already tired. Extra load on the right, or forcing 10 reps as the left knee caves, trains the imbalance. A bilateral leg press lets the right leg take over and hides the side you are trying to bring up.",
+    "distractorExplanations": {
+      "b": "Loads the stronger leg further and leaves the weaker leg behind, which widens the gap.",
+      "c": "Switches to a bilateral machine so the stronger leg can dominate and the left-side limit disappears from the set.",
+      "d": "Chases the right leg’s rep count with a caving left knee instead of stopping at clean reps."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-081",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A client’s dumbbell row is 2 sets of 8 at 40 lb. Which change raises the volume-load without a large load jump?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jump to a 60 lb dumbbell and cut the work down to one set"
+      },
+      {
+        "id": "b",
+        "text": "Add a third work set at the same 40 lb and the same 8 reps"
+      },
+      {
+        "id": "c",
+        "text": "Drop to one work set and count the light warm-up as the added volume"
+      },
+      {
+        "id": "d",
+        "text": "Double to 80 lb dumbbells for both sets because the 40s felt easy today"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Volume-load is sets times reps times load. Two sets of 8 at 40 lb is 640 lb of work; a third set at the same load and reps raises that to 960 lb without a load jump. Moving to 60 or 80 lb is a large load increase, not the volume change you asked for, and cutting a work set lowers volume even if a warm-up is written in the log.",
+    "distractorExplanations": {
+      "a": "Raises the dumbbell by half and cuts a set, which is a large load jump rather than a clean volume increase.",
+      "c": "Removes a work set and pretends the warm-up replaces it, so working volume-load goes down.",
+      "d": "Doubles the load after one easy day, the opposite of a small step, and does not add a set."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-082",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "Seated cable rows are already planned as 3 sets of 8-12. Today the client completed 12, 12, and 12 with clean form. What should change next session?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the load and extend every set well past 12 reps"
+      },
+      {
+        "id": "b",
+        "text": "Drop the cable row now that the top of the range has been reached"
+      },
+      {
+        "id": "c",
+        "text": "Add a small load and begin the next session near 8 reps"
+      },
+      {
+        "id": "d",
+        "text": "Raise the stack by about half and still require 12 reps on every set"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Inside an assigned rep range, hitting the top on every work set earns a load increase. Add a small step, about 2.5-10% on an upper-body pull, and let the next session start near 8 reps in the same 8-12 range. Do not stretch the range with a pile of extra reps, retire the lift, or take half the stack because one session looked easy.",
+    "distractorExplanations": {
+      "a": "Keeps the load and blows past the top of the assigned range instead of progressing the weight.",
+      "b": "Removes the exercise at the moment the client has earned a small load increase.",
+      "d": "Takes about a 50% stack jump and still demands the top of the range, which is too large after one good day."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-083",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "Before 3 planned work sets of leg press, the client does 2 easy sets of 8 with a light sled to groove the setup. How should those light sets be recorded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As extra work sets that already satisfy today’s volume goal"
+      },
+      {
+        "id": "b",
+        "text": "As the sets that count, so the three heavier sets can be skipped"
+      },
+      {
+        "id": "c",
+        "text": "As proof that the planned work-set load is already too heavy to use"
+      },
+      {
+        "id": "d",
+        "text": "As specific warm-up sets, kept separate from the planned work sets"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A specific warm-up uses light sets of the same pattern to rehearse the setup. Those sets are not the work sets assigned for the day. Record the 3 heavier sets as the working volume and leave the light sled sets as preparation. Counting the warm-up as the prescription, or skipping the heavy sets, means the planned stimulus never happens.",
+    "distractorExplanations": {
+      "a": "Counts light preparation sets as if they already completed the assigned work-set volume.",
+      "b": "Lets the warm-up replace the session and skips the three sets that were supposed to be the stimulus.",
+      "c": "Reads a planned light warm-up as evidence to cut the work-set load before the heavy sets start."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-084",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "An intermediate client recovers well, can train four days a week, and wants general strength rather than a contest peak. Which weekly structure fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An upper/lower split across the four days, each region about twice"
+      },
+      {
+        "id": "b",
+        "text": "A single full-body day, with the other three available days left empty"
+      },
+      {
+        "id": "c",
+        "text": "The same heavy full-body session on four days in a row"
+      },
+      {
+        "id": "d",
+        "text": "A seven-day body-part split with a different muscle each day and no rest day between sessions"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Four available days for a general-strength client fit a simple upper/lower split: each region is trained about twice in the week, with other work on the days between. Using only one of the four days wastes attendance. Repeating the same heavy full-body session four days in a row, or running a body-part split every day with no rest, stacks heavy work without recovery. This is not a contest taper.",
+    "distractorExplanations": {
+      "b": "Uses one of the four available days and leaves the client’s weekly frequency far below what they can recover from.",
+      "c": "Repeats heavy full-body work on consecutive days, so the same patterns never get a recovery day.",
+      "d": "Spreads a body-part plan across all seven days and removes the rest day a general client still needs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-085",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A client squatted heavy on Monday and wants the same heavy squat session again on Tuesday. What change protects recovery for that pattern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep Tuesday and add a third heavy squat session on Wednesday"
+      },
+      {
+        "id": "b",
+        "text": "Move the second squat to Wednesday so a full day separates them"
+      },
+      {
+        "id": "c",
+        "text": "Move the second squat to Monday evening so both heavy sessions land the same day"
+      },
+      {
+        "id": "d",
+        "text": "Keep the Tuesday squat and only shorten the rests inside Monday’s workout"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The same heavy pattern needs time before it is loaded again. Spacing the second squat to Wednesday puts at least about 48 hours between sessions, which is the usual minimum for a general client. Tuesday is the next day, Monday evening is the same day, and a shorter rest between Monday’s sets does not replace a day off from that pattern. Adding Wednesday on top of Tuesday piles on a third heavy day.",
+    "distractorExplanations": {
+      "a": "Keeps the back-to-back squat and adds a third heavy day, so recovery time gets shorter, not longer.",
+      "c": "Stacks both heavy squat sessions on Monday, which is less recovery than waiting until Wednesday.",
+      "d": "Shortens rest inside Monday’s workout and still squats heavy again on Tuesday."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-086",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A client wants a heavier Romanian deadlift today and longer hamstring flexibility this month. They plan a several-minute static hamstring stretch immediately before the heavy sets. What should you change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the long static stretch immediately before the heavy pulls"
+      },
+      {
+        "id": "b",
+        "text": "Drop flexibility for the month and train the deadlift goal alone"
+      },
+      {
+        "id": "c",
+        "text": "Use a dynamic warm-up first and do the long static stretch after the lifts"
+      },
+      {
+        "id": "d",
+        "text": "Hold that static stretch to a hard discomfort, then add load to today’s pulls"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A several-minute static hamstring stretch right before a heavy Romanian deadlift can blunt the force you are trying to train. Warm up dynamically, do the heavy pulls, and place the long static stretch after the strength work or on a separate easier day. Flexibility for the month still gets trained. Canceling all stretching ignores the range-of-motion goal, and adding load on top of a hard pre-lift hold stacks the two mistakes.",
+    "distractorExplanations": {
+      "a": "Leaves a several-minute static hold in front of the heavy pulls, where it can reduce the force of the lift.",
+      "b": "Cancels the month’s flexibility goal instead of moving the long static stretch to after the strength work.",
+      "d": "Pushes the pre-lift stretch into discomfort and adds load the same day, which is the wrong time for that hold."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-087",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A new walker has finished two weeks of moderate walking, 20 minutes a session, three days a week, and recovers well. What is the best next step among these choices?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the walks with all-out 30-second sprints in today’s session"
+      },
+      {
+        "id": "b",
+        "text": "Cut the walks to 10 minutes and raise the grade to a maximal effort"
+      },
+      {
+        "id": "c",
+        "text": "Leave every walk at 20 minutes for the rest of the year with no further change"
+      },
+      {
+        "id": "d",
+        "text": "Extend those walks by a few minutes at the same moderate effort"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Once a new walker tolerates the current moderate bout, change one FITT variable in a small step. Among these choices, add a few minutes at the same effort before you introduce sprints or a maximal grade. Hard intervals and a max grade jump intensity past the adaptation you have. Leaving the walk frozen for the rest of the year removes overload after the bout has become tolerable.",
+    "distractorExplanations": {
+      "a": "Replaces a tolerable moderate walk with all-out sprints, a large intensity jump for this stage.",
+      "b": "Cuts duration and pushes the grade to maximal, so both the dose and the effort move the wrong way.",
+      "c": "Freezes the first tolerable bout for the rest of the year and never applies a small overload."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-088",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "A client’s main goal is a four-hour hill hike with a light daypack in ten weeks. Bigger arms are a side wish. How should the week be biased?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Most conditioning minutes on incline walks with the daypack, lifting in support"
+      },
+      {
+        "id": "b",
+        "text": "Most minutes on flat easy cycling, and hike only if time happens to remain"
+      },
+      {
+        "id": "c",
+        "text": "Most minutes on seated arm isolation, with hike practice left off the week"
+      },
+      {
+        "id": "d",
+        "text": "Most minutes on an arm split, plus an optional flat treadmill walk with no pack and no hills"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Specificity means the goal task gets the main practice. A hill hike with a daypack is loaded uphill walking, so packed incline walks or stair work should take most of the conditioning minutes, with lifting there to support the legs and trunk. A flat bike week, an arm split, or an optional flat walk without the pack does not rehearse the hike that is the actual goal.",
+    "distractorExplanations": {
+      "b": "Gives the main minutes to flat cycling and treats hike practice as leftover time.",
+      "c": "Builds the week around arm isolation and never schedules the hill-and-pack task.",
+      "d": "Keeps an arm-split focus and offers only an optional flat walk, with no pack and no grade."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-089",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "The client’s priority is a stronger machine leg press. The sheet starts with leg extensions taken to form failure, then the leg press. What should you reorder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep extensions to failure first so the press feels harder"
+      },
+      {
+        "id": "b",
+        "text": "Do the leg press first, then the extensions as assistance work"
+      },
+      {
+        "id": "c",
+        "text": "Drop the leg press and keep the extensions as the only lower-body strength lift"
+      },
+      {
+        "id": "d",
+        "text": "Start with a hard stair climb and extensions to failure, and place the leg press last"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When a multi-joint lift is the priority, do it before single-joint assistance and before hard conditioning. Leg extensions to failure first tire the quads and cut the load and quality of the press. Keep the extensions after the press if you still want that assistance work. A hard stair climb plus extensions before the press fatigues the same muscles the priority lift needs.",
+    "distractorExplanations": {
+      "a": "Uses pre-exhaust on purpose, so the priority press is limited by already-fatigued quads.",
+      "c": "Deletes the priority multi-joint lift and leaves a single-joint extension as the strength work.",
+      "d": "Puts a hard stair climb and extensions ahead of the press, so the priority lift is done last and tired."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-program-design-090",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "program-design",
+    "prompt": "Next week a general client can reach the gym only on Tuesday and Friday. The usual week has four lifting days. How should you rewrite that week?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stack all four usual workouts onto Tuesday and take Friday off"
+      },
+      {
+        "id": "b",
+        "text": "Skip both available days and take the whole week off by default"
+      },
+      {
+        "id": "c",
+        "text": "Two full-body sessions spaced on Tuesday and on Friday"
+      },
+      {
+        "id": "d",
+        "text": "Five shortened body-part sessions crammed into the Tuesday and Friday visits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A short week is still a training week. Two full-body sessions on Tuesday and Friday keep a stimulus for the major patterns and leave days between them. Cramming four or five body-part workouts into those visits sacrifices set quality and recovery. A full week off is not required when the client can still train twice.",
+    "distractorExplanations": {
+      "a": "Crams four workouts into Tuesday and wastes Friday, so one visit is overloaded and the other is empty.",
+      "b": "Cancels a week the client can still train, instead of using the two days that are actually open.",
+      "d": "Splits the body into five mini-sessions across two visits, which is too much work for the days available."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-091",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "A client’s knees cave inward on the way up from a barbell front squat. They ask you to add weight so the knees “have to stay out.” What should you change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cue knee tracking or regress the squat; do not add load"
+      },
+      {
+        "id": "b",
+        "text": "Add the weight they asked for and cue a harder knees-out drive"
+      },
+      {
+        "id": "c",
+        "text": "Turn the set into jump squats so speed cleans up the valgus"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the knees and cue a faster lockout"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Knees that cave on a front squat need a tracking cue or an easier squat, not more weight. Adding load puts more force on the collapse. Cue the knees over the feet, or cut depth or load, until the pattern is quiet. Jumping or rushing the lockout does not put the knees back over the feet.",
+    "distractorExplanations": {
+      "b": "Adds the load they asked for and a harder knees-out cue; extra weight magnifies the valgus instead of cueing or regressing the squat first.",
+      "c": "Confuses a jump squat with a fix for knee valgus; jumping is a harder pattern, not a regression of the cave.",
+      "d": "Ignores the caving knees and chases lockout speed, which does not return the knees over the feet."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-092",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "A client deadlifts a pair of dumbbells. Every rep starts with the bells in front of the toes and the low back rounded so the hands can reach them. What should the next setup be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the bells in front of the toes and round the low back farther so the hands can reach without moving the feet"
+      },
+      {
+        "id": "b",
+        "text": "Bells over mid-foot, with a braced neutral spine"
+      },
+      {
+        "id": "c",
+        "text": "Heels up, bells over the toes, and a loose low back"
+      },
+      {
+        "id": "d",
+        "text": "A deep squat with the bells parked in front of the knees"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A pull from the floor follows the conventional deadlift start: the load begins over the mid-foot and the spine is braced neutral. Bells parked over the toes are what the client is rounding to reach. Move the feet or the bells, brace, and then pull. Heels-up and a deep squat both leave the load off the mid-foot.",
+    "distractorExplanations": {
+      "a": "Leaves the bells over the toes and uses more lumbar rounding to reach them, which is the setup fault you are removing.",
+      "c": "Raises the heels and keeps a loose back, so the bells stay on the toes instead of a braced mid-foot start.",
+      "d": "Turns the pull into a deep squat with the bells in front of the knees, which moves the load off the mid-foot."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-093",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "You have been spotting a barbell bench press by standing at the sleeves and holding the plates. The bar stalls and starts to tip. What should the spot be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay on the plates and yank the heavy sleeve up after the bar has already started to tip toward one side"
+      },
+      {
+        "id": "b",
+        "text": "Step back from the bench and grab the plates only after a full miss"
+      },
+      {
+        "id": "c",
+        "text": "Be ready at the bar, not holding the plates"
+      },
+      {
+        "id": "d",
+        "text": "Spot by cupping the elbows from the side of the bench"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Spot a barbell bench by being ready at the bar, so a stall or a tip can be caught at the shaft. Holding the plates is not the default: the sleeves are a poor place to save a tipping bar, and waiting for a miss is already late. Elbows from the side cannot steer the bar either.",
+    "distractorExplanations": {
+      "a": "Keeps the hands on the plates and reacts after the bar tips, which is the late plate-grab the spot is supposed to replace.",
+      "b": "Steps away and waits for a full miss before touching the plates, so nobody is on the bar when it stalls.",
+      "d": "Cups the elbows from the side, which cannot control a tipping bar the way hands ready at the bar can."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-094",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "A client steps down from a low box and the knees collapse as the foot lands. They want a taller box next set to “toughen the landing.” What do you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise the box now and add a weighted vest so the harder, heavier landing forces the knees to stop collapsing"
+      },
+      {
+        "id": "b",
+        "text": "Progress to a drop jump from a higher box"
+      },
+      {
+        "id": "c",
+        "text": "Speed up the step-down and cut time in the bottom"
+      },
+      {
+        "id": "d",
+        "text": "Regress the landing height before any taller box"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Valgus on a step-down landing is a reason to make the landing easier, not higher. Drop the box, or shorten the step, until the knees track over the feet. A taller box, a vest, a drop jump, or a faster step adds force or speed to a collapse you have not fixed.",
+    "distractorExplanations": {
+      "a": "Adds box height and a vest to a landing that already caves, which puts more force on the valgus pattern.",
+      "b": "Swaps the step-down for a higher drop jump, which adds landing speed and height to a knee that is already collapsing.",
+      "c": "Rushes the step-down to cut time in the bottom; a faster descent does not put the collapsing knee back over the foot, and the box stays too high."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-095",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "On Romanian deadlifts, the client sets the bar on the floor, relaxes the back, and rips the next rep from a dead stop. What should they do instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start from the top and load the hinge"
+      },
+      {
+        "id": "b",
+        "text": "Keep setting the bar down and relaxing the back, because a dead-stop rip from the floor is what a Romanian deadlift is for"
+      },
+      {
+        "id": "c",
+        "text": "Squat it with a vertical torso and a bounce off the plates"
+      },
+      {
+        "id": "d",
+        "text": "Use a snatch-grip yank from the floor with squat-depth hips"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A Romanian deadlift starts standing and lowers by hinging, so the posterior chain stays loaded. Parking the bar, relaxing, and ripping from the floor turns it into a dead-stop pull. Have them start each rep from the top. A squat bounce or a snatch-grip floor yank is still not that hinge.",
+    "distractorExplanations": {
+      "b": "Calls a dead-stop floor rip the Romanian deadlift, which drops the top-down hinge the exercise is meant to load.",
+      "c": "Replaces the hinge with a squat and a plate bounce, so the bar still leaves a dead stop instead of starting from the top.",
+      "d": "Uses a snatch-grip floor yank and squat-depth hips, which is a different pull, not a standing Romanian deadlift."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-096",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "During push-ups, the client’s hips sag on rep 6, then pike up so they can keep moving. They want the set to run until 15 reps. When should you end it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "When a full minute is up, even if the hips have already left the straight line you set"
+      },
+      {
+        "id": "b",
+        "text": "When the hips sag or pike off the line"
+      },
+      {
+        "id": "c",
+        "text": "When the arms shake a little, even if the body line still holds"
+      },
+      {
+        "id": "d",
+        "text": "After 15 reps, counting every sag and pike as a good rep"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A push-up counts while the body stays on the line you cued. Hips that sag or pike are a broken position, the same stop you would use on a plank, so the set ends there. A clock, a little arm shake, or a rep target does not keep a collapsed rep on the board.",
+    "distractorExplanations": {
+      "a": "Lets the clock override a broken body line, so sagging and piking push-ups keep counting toward the minute.",
+      "c": "Treats a little arm shake as the fail while the line still holds; shake is fatigue, and sagging or piking is the miss.",
+      "d": "Counts sagging and piking reps toward 15, which scores the broken line as a finished set."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-097",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "Seated dumbbell presses finish with the ribs flung forward and a big lumbar arch, and the low back leaves the pad. The client asks for heavier dumbbells. What do you change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give them the heavier dumbbells and tell them to arch harder so the bells can still lock out overhead"
+      },
+      {
+        "id": "b",
+        "text": "Move the press behind the neck so the arch is no longer the finish"
+      },
+      {
+        "id": "c",
+        "text": "Cue the ribs down, or use less load"
+      },
+      {
+        "id": "d",
+        "text": "Pin the shoulder blades down and block upward rotation"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An overhead press that finishes by flinging the ribs into a big lumbar arch needs a ribs-down cue or less load. Heavier dumbbells reward the arch that is letting the back leave the pad. A behind-the-neck path and pinned shoulder blades do not stack the ribs back over the pelvis.",
+    "distractorExplanations": {
+      "a": "Adds load and asks for a bigger arch, which is the lumbar finish you are trying to take out of the press.",
+      "b": "Swaps in a behind-the-neck path, which does not fix the rib flare and asks more of shoulders that are already escaping the pad.",
+      "d": "Pins the shoulder blades down and blocks upward rotation, a shoulder fault that does not correct the arch."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-098",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "On a seated cable row, the client leans forward and then stands the torso bolt upright to move the stack. The handle arrives as the chest comes up. What is the main fault?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The grip is too narrow for the elbows to travel"
+      },
+      {
+        "id": "b",
+        "text": "The load is too light for the back to feel the pull"
+      },
+      {
+        "id": "c",
+        "text": "The elbows stay too close to the ribs on a still torso"
+      },
+      {
+        "id": "d",
+        "text": "The torso stood up, so this is no longer a row"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A row keeps the torso where you set it and lets the arms pull. Once the client stands the torso up and the handle comes along for the ride, the set is trunk extension, not a row. Grip width and elbow path do not explain a torso that leaves the start. If they cannot stay put, the load is too heavy, not too light.",
+    "distractorExplanations": {
+      "a": "Blames a narrow grip, which this set does not show; the handle arrives because the torso stands up, not because the hands are too close.",
+      "b": "Says the stack is too light; a torso that stands up to move the weight is usually too much load, not too little.",
+      "c": "Treats elbows near the ribs as the miss even on a still torso; the fault here is the torso standing up."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-099",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "Cable pull-throughs look like a deep squat followed by an arm raise. The hips barely shift, and the rope comes up because the shoulders lift it. What pattern do you restore?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A hip hinge, with the arms guiding the rope"
+      },
+      {
+        "id": "b",
+        "text": "A deeper squat plus a higher arm raise"
+      },
+      {
+        "id": "c",
+        "text": "A crunch that rounds the low back to yank the rope through"
+      },
+      {
+        "id": "d",
+        "text": "A front raise with the hips locked"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A cable pull-through is a hip hinge, the same coaching idea as a kettlebell swing: the hips load and extend, and the arms guide the implement instead of raising it. A deeper squat, a locked-hip front raise, or a rounded yank does not restore that hinge.",
+    "distractorExplanations": {
+      "b": "Makes the squat deeper and the arm raise higher, so the shoulders keep lifting the rope instead of restoring a hip hinge.",
+      "c": "Uses lumbar rounding to move the rope, which loads spinal flexion instead of a braced hip hinge.",
+      "d": "Locks the hips and raises the rope with the shoulders, which is a front raise, not the hip hinge a pull-through is for."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-100",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "Mid-pull on a conventional deadlift, the bar drifts forward of the mid-foot and the heels get light. What does that usually mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lean the chest farther forward and let the bar swing away from the body"
+      },
+      {
+        "id": "b",
+        "text": "The weight left the mid-foot"
+      },
+      {
+        "id": "c",
+        "text": "The bar is supposed to finish in front of the toes"
+      },
+      {
+        "id": "d",
+        "text": "They are sitting too far back on the heels"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A bar that drifts forward of the mid-foot has left the mid-foot. Light heels are that same shift toward the toes. Bring the bar back close to the body and reset pressure through the mid-foot. More forward lean, or calling a bar in front of the toes the finish, pushes the load farther off the foot.",
+    "distractorExplanations": {
+      "a": "Cues more forward lean and lets the bar swing away from the body, which moves even more of the load off the mid-foot and onto the toes.",
+      "c": "Treats a bar in front of the toes as the intended finish; the bar should stay over the mid-foot, close to the body.",
+      "d": "Describes a shift onto the heels, which would pull the bar back, not forward of the mid-foot."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-101",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "A reverse lunge is unsteady enough that the front knee hunts from side to side. The client asks for a weighted vest next. What do you change first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add the weighted vest and lengthen the stride so the extra load and the longer step steady the knee that is hunting"
+      },
+      {
+        "id": "b",
+        "text": "Lengthen the stride and drop the back knee lower"
+      },
+      {
+        "id": "c",
+        "text": "Progress to a jumping lunge so the landing steadies the knee"
+      },
+      {
+        "id": "d",
+        "text": "Less range, a support, or less load"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A lunge whose front knee hunts side to side is already too hard. Cut the range, offer a hand on a rack or dowel, or take load off before you add anything. A vest, a longer stride, or a jump asks for more balance while this rep is still wandering.",
+    "distractorExplanations": {
+      "a": "Adds a vest and a longer stride to a knee that is already hunting, which raises the demand instead of regressing it.",
+      "b": "Lengthens the stride and asks for more depth, the opposite of less range on an unsteady reverse lunge.",
+      "c": "Jumps a pattern that cannot stay quiet on the ground, so the landing inherits the same side-to-side hunt."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-102",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "You already screened this client out for uncontrolled high blood pressure. They want a hard breath-hold on today’s heavy leg-press sets, “the way strong people brace.” What should you coach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No breath-hold; this client was screened out"
+      },
+      {
+        "id": "b",
+        "text": "Teach a long breath-hold anyway, because every heavy set uses that brace even after you screened out uncontrolled high blood pressure"
+      },
+      {
+        "id": "c",
+        "text": "Allow a brief hold only at the sticking point"
+      },
+      {
+        "id": "d",
+        "text": "Ignore the screen and load the heaviest grind they can finish"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A healthy adult may use a brief breath-hold on a heavy set. That hold is not the cue for someone you have already screened out for uncontrolled high blood pressure, even at the sticking point. Do not prescribe it on the leg press. A longer hold or a heavier grind does not cancel the screen.",
+    "distractorExplanations": {
+      "b": "Prescribes a long breath-hold after an uncontrolled blood-pressure screen, which is the cue you are supposed to withhold.",
+      "c": "Allows a short sticking-point hold after an uncontrolled blood-pressure screen; this client should not be coached to hold the breath at all.",
+      "d": "Drops the blood-pressure screen and chases a heavier grind, ignoring the limit you already found."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-103",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "On an assisted pull-up, a client with limited shoulder external rotation pulls the bar behind the neck and the shoulders crank. A video told them that path is “more lats.” What do you switch to?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the behind-the-neck path and add load because a video called it more lats"
+      },
+      {
+        "id": "b",
+        "text": "A front, neutral, or supinated path"
+      },
+      {
+        "id": "c",
+        "text": "A kipping pull-up so momentum replaces the shoulder position"
+      },
+      {
+        "id": "d",
+        "text": "A behind-the-neck press that uses the same crank overhead"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Behind-the-neck pulling is a poor choice when shoulder external rotation is limited. The crank is a reason to leave that path, not a sign to add load because a video said “more lats.” Switch to a front, neutral, or supinated pull they can control. A kip or a behind-the-neck press keeps the same shoulder problem.",
+    "distractorExplanations": {
+      "a": "Keeps the behind-the-neck pull and adds load because a video called it more lats, which ignores the limited external rotation and the shoulder crank.",
+      "c": "Swaps in a kip, so momentum hides the shoulder position instead of moving the pull to a front, neutral, or supinated path.",
+      "d": "Moves the same behind-the-neck crank into a press, which still asks for external rotation the client does not have."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-104",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "A conventional deadlift has just left the floor and the lumbar spine is rounding. The client says, “Don’t dump it — I’ll grind the lockout.” What do you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let them grind the lockout, since the bar has already left the floor and stopping now would waste the rep they started"
+      },
+      {
+        "id": "b",
+        "text": "Cue a faster yank so they pull through the round before it worsens"
+      },
+      {
+        "id": "c",
+        "text": "Stop and reset lighter; do not pull through the round"
+      },
+      {
+        "id": "d",
+        "text": "Have them round more so the bar travels a shorter path"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "If the lumbar spine rounds as a deadlift leaves the floor, that rep is over. Set the bar down and reset with a lighter load and a braced spine. Grinding the lockout, yanking faster, or rounding more all mean pulling through the round you were supposed to stop.",
+    "distractorExplanations": {
+      "a": "Finishes a rounded pull because the bar is already moving, which is pulling through the round instead of stopping the rep.",
+      "b": "Uses a faster yank to get through lumbar rounding, so speed replaces the stop and the lighter reset.",
+      "d": "Asks for more rounding to shorten the pull, which increases the flexion you stopped the rep to avoid."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-technique-105",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "technique",
+    "prompt": "On the leg press, the client’s low back rounds and lifts off the pad at the bottom. They want the next set deeper, with more plates. What should you change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Go deeper and add plates on the next set"
+      },
+      {
+        "id": "b",
+        "text": "Bounce out of the bottom so the back spends less time off the pad"
+      },
+      {
+        "id": "c",
+        "text": "Lift the hips farther off the pad and take a longer stroke"
+      },
+      {
+        "id": "d",
+        "text": "Shorten the range or the load so the back stays on the pad"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When the low back rounds and leaves the leg-press pad, the lumbar spine is no longer supported. Shorten the range or reduce the load until the back stays on the pad. A deeper press, more plates, a bounce, or a bigger hip lift all train the set through the position you just lost.",
+    "distractorExplanations": {
+      "a": "Adds depth and plates to a back that has already left the pad, so the next set presses through an unsupported round.",
+      "b": "Bounces out of the bottom to hide how long the back is off the pad, which does not put the back back on the pad.",
+      "c": "Lifts the hips farther off the pad and treats that longer stroke as useful range, which is a bigger version of the same fault."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-106",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "A client shows you a photo of an ankle that swelled after a weekend trail hike and asks you to say whether it is a sprain or a fracture so they can back-squat today. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Call it a sprain from the photo and load the back squat today"
+      },
+      {
+        "id": "b",
+        "text": "Do not diagnose it; hold the squat and refer them to a clinician"
+      },
+      {
+        "id": "c",
+        "text": "Enter a fracture diagnosis in the training notes and still train the other leg today so the hour is not lost"
+      },
+      {
+        "id": "d",
+        "text": "Design a torn-ligament rehab plan and start those exercises now"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A personal trainer does not diagnose. A photo cannot establish a sprain versus a fracture, so the squat stays unloaded and the client sees a clinician who can examine the ankle.",
+    "distractorExplanations": {
+      "a": "Calling the ankle a sprain from a photo is a diagnosis, and loading the squat on that guess is outside a personal trainer's scope.",
+      "c": "Writing a fracture into the training notes is a diagnosis, which a personal trainer does not make. Training the other leg anyway does not move that diagnosis into the trainer's scope.",
+      "d": "A trainer does not design treatment for a suspected torn ligament. That rehab plan is clinical care, not a personal-training session."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-107",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A client takes blood-pressure medicine their physician prescribed. They ask you to tell them to skip it on lifting days because it \"blunts the workout.\" What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tell them to skip the prescribed medicine on lifting days"
+      },
+      {
+        "id": "b",
+        "text": "Replace that prescribed medicine with a pre-workout product you sell"
+      },
+      {
+        "id": "c",
+        "text": "Leave the prescription unchanged and send the dosing question to the prescriber"
+      },
+      {
+        "id": "d",
+        "text": "Instruct them to split the tablet on lifting days and record the dose change as your decision"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A personal trainer does not change a prescription. Skipping or splitting blood-pressure medicine is the prescriber's decision, so the dose stays as written and the question goes back to that clinician.",
+    "distractorExplanations": {
+      "a": "Telling the client to skip a prescribed medicine on lifting days is a change to the prescription, and a personal trainer does not make that change.",
+      "b": "Swapping a prescribed medicine for a product you sell replaces the physician's order. That substitution is outside the trainer's scope.",
+      "d": "Splitting the tablet is a dose change. Logging it as your decision does not move that change inside a personal trainer's scope."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-108",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A client with physician-diagnosed hypertension asks you to write a meal plan whose purpose is to treat the high blood pressure. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write that treatment meal plan and present it as care for the blood pressure"
+      },
+      {
+        "id": "b",
+        "text": "Build a seven-day menu and call it medical nutrition therapy for the hypertension"
+      },
+      {
+        "id": "c",
+        "text": "Write the treatment menus and portions yourself, then tell the client they do not need a dietitian or a physician for this plan"
+      },
+      {
+        "id": "d",
+        "text": "Decline the treatment meal plan and refer them to a dietitian or their physician"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A personal trainer does not write a meal plan whose purpose is to treat a disease. A plan aimed at treating hypertension is a referral to a dietitian or the physician, not a service the trainer authors.",
+    "distractorExplanations": {
+      "a": "Authoring a meal plan to treat high blood pressure is medical nutrition therapy, which a personal trainer does not provide.",
+      "b": "Renaming the menus as medical nutrition therapy does not bring a disease-treatment meal plan into a personal trainer's scope.",
+      "c": "Writing the menus yourself and dismissing a dietitian or physician still leaves you treating hypertension with a meal plan, which a trainer does not do."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-109",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "hard",
+    "prompt": "A client who has never resistance trained wants session one to be partner-forced negative leg extensions, every set continued after failure, for the full hour. What is the main problem with that request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Novel, very high-volume work taken to failure raises exertional rhabdomyolysis risk"
+      },
+      {
+        "id": "b",
+        "text": "The leg-extension machine is the hazard, so that same hour is fine with a barbell"
+      },
+      {
+        "id": "c",
+        "text": "It is a reasonable first session when the client wants fast results and is willing to accept severe soreness afterward"
+      },
+      {
+        "id": "d",
+        "text": "Water breaks between the forced sets remove the exertional rhabdomyolysis risk"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A first session that is novel, very high in volume, and taken to failure raises exertional rhabdomyolysis risk. Partner-forced negatives for a full hour in someone who has never trained fits that pattern, so the dose is cut back before it is coached.",
+    "distractorExplanations": {
+      "b": "The machine is not the hazard. That same hour of new work taken past failure is still the rhabdomyolysis risk with a barbell.",
+      "c": "Wanting fast results does not make a novel, failure-based first hour appropriate. Agreeing to severe soreness is not a safe first dose.",
+      "d": "Drinking water does not cancel the rhabdomyolysis risk of a brand-new, very high-volume session that is taken to failure."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-110",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A client at 24 weeks of pregnancy has written clearance to keep training with you. She asks to test a new back-squat max today because the note \"says exercise is allowed.\" What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop all lifting for the rest of the pregnancy even though she is cleared"
+      },
+      {
+        "id": "b",
+        "text": "Continue the cleared program at appropriate loads and do not max today"
+      },
+      {
+        "id": "c",
+        "text": "Test the new one-rep max today because written clearance removes every limit on load"
+      },
+      {
+        "id": "d",
+        "text": "Set the clearance note aside and max the squat if she says she feels ready"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pregnancy training continues only with clearance and appropriate loads. The note supports staying with suitable work. It does not mean all lifting must stop, and it does not mean a new max is appropriate today.",
+    "distractorExplanations": {
+      "a": "Clearance is not a ban on lifting. Stopping every lift for the rest of the pregnancy misreads a note that allows continued training.",
+      "c": "Clearance is not permission to max. A new one-rep-max attempt is a higher-risk load than the appropriate training the note supports.",
+      "d": "Feeling ready does not replace the clearance boundary. Ignoring the note and testing a max is not training with appropriate loads."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-111",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "After a heavy front squat, a client wants to drop the loaded bar onto the walkway that leads to the water fountain. Other members are walking through that path. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow the drop if the client shouts a warning first"
+      },
+      {
+        "id": "b",
+        "text": "Allow the drop because bumper plates make a busy walkway safe"
+      },
+      {
+        "id": "c",
+        "text": "Stop the drop and rerack; people are walking through the landing area"
+      },
+      {
+        "id": "d",
+        "text": "Let them drop it there after stepping back, because bumpers and a shout make a loaded drop safe among people who are walking"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A loaded barbell is not dropped where people are walking. The fountain walkway is a traffic path, so the bar is reracked rather than dumped into that landing area.",
+    "distractorExplanations": {
+      "a": "A warning shout does not make a loaded drop safe when members are walking through the bar's landing path.",
+      "b": "Bumper plates reduce floor damage and noise. They do not make it acceptable to drop a loaded bar where people are walking.",
+      "d": "Stepping back, shouting, and using bumpers still leaves a loaded bar falling into a path other members are using."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-112",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "In a humid indoor cycling room, a client becomes confused, the skin is hot, and sweating has stopped. They ask to finish the interval. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let them finish the interval, then stretch and recheck how they feel"
+      },
+      {
+        "id": "b",
+        "text": "Walk them to the lobby and have them drink a sports drink"
+      },
+      {
+        "id": "c",
+        "text": "Have them pedal easy so circulation can dump the extra heat"
+      },
+      {
+        "id": "d",
+        "text": "Stop the session, start cooling, and activate emergency services"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Confusion, hot skin, and sweating that has stopped are heat-stroke signs. The interval ends, cooling starts, and EMS is activated. Finishing the set is not the response.",
+    "distractorExplanations": {
+      "a": "Finishing the interval delays cooling and emergency care while heat stroke is in progress. Stretching afterward does not treat that emergency.",
+      "b": "A sports drink in the lobby does not replace cooling and EMS when the client is confused, hot, and no longer sweating.",
+      "c": "Easy pedaling adds heat when the client is already confused, hot, and no longer sweating. That delays cooling and emergency services."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-113",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "hard",
+    "prompt": "Mid-warmup, a client says their blood pressure has been high and no clinician is treating it. They have already taken a pre-workout plus a separate high-caffeine pill, and they want to begin heavy squats. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop the session and refer them instead of endorsing that stimulant use"
+      },
+      {
+        "id": "b",
+        "text": "Let the heavy squats start and revisit the blood pressure next week"
+      },
+      {
+        "id": "c",
+        "text": "Endorse the pill plus pre-workout as their usual pre-session habit"
+      },
+      {
+        "id": "d",
+        "text": "Start the heavy squats and accept the stacked caffeine because the high blood pressure has never been formally treated"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A pre-workout plus a separate high-caffeine pill, on top of untreated high blood pressure, means stop the session and refer the client to a clinician. Do not endorse that stack, and do not start the heavy squats.",
+    "distractorExplanations": {
+      "b": "Putting the blood-pressure issue off until next week leaves today's heavy session on top of untreated high pressure and the pre-workout plus caffeine pill.",
+      "c": "Endorsing the pill plus pre-workout as a usual habit is the response this situation rules out. The trainer does not bless that stack.",
+      "d": "Lack of treatment is not a reason to accept the extra caffeine pill. Untreated high blood pressure plus that stack is a reason to stop and refer."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-114",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "You are writing the emergency plan for 7 a.m. sessions with a 13-year-old whose parent waits in the car. Which elements must that plan name?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The parent's mobile number and the parking spot where the car is waiting"
+      },
+      {
+        "id": "b",
+        "text": "How staff reach EMS and where the AED is kept"
+      },
+      {
+        "id": "c",
+        "text": "The front-desk staffer's name and which desk they sit at"
+      },
+      {
+        "id": "d",
+        "text": "The morning's exercise list, because a parent is already waiting in the car"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An emergency plan for sessions with minors names how to reach EMS and where the AED is. A parent waiting in the car does not replace those two facts, and a staffer's name and desk do not either.",
+    "distractorExplanations": {
+      "a": "A parent phone number and a parking spot can help after you call, but they leave out how staff reach EMS and where the AED is kept.",
+      "c": "A staffer's name and desk do not say how to reach EMS or where the AED is kept.",
+      "d": "The exercise list is not an emergency plan. A parent in the parking lot does not remove the need to name EMS access and the AED location."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-115",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A new adult signs the facility liability waiver and says that signature is their health-history review. They want to deadlift heavy in this first session. What is still required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing further, because the signed waiver is the health-history review"
+      },
+      {
+        "id": "b",
+        "text": "A second waiver on paper, which can stand in for the health questionnaire"
+      },
+      {
+        "id": "c",
+        "text": "A health-history review, because a waiver does not provide one"
+      },
+      {
+        "id": "d",
+        "text": "A copy of a photo ID only, since the waiver already served as the medical history and the health questionnaire can be skipped"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A waiver is not a health-history review. The signature may address liability, but the trainer still needs a health-history review before a heavy first deadlift session.",
+    "distractorExplanations": {
+      "a": "Treating the waiver as the health history skips the review of conditions, symptoms, and medications that a waiver signature does not collect.",
+      "b": "Signing a second waiver, on paper or on a tablet, still does not review health history. Another liability form is not a questionnaire.",
+      "d": "A photo ID confirms identity. It does not review health history, and a signed waiver does not become that review."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-116",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "A medicine ball rebounds off the wall and strikes a client's forehead. They never lose consciousness, but they feel foggy and nauseated and want to finish the circuit. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finish the circuit if the client can still count the reps"
+      },
+      {
+        "id": "b",
+        "text": "Give a five-minute break, then resume because consciousness was never lost"
+      },
+      {
+        "id": "c",
+        "text": "Continue the circuit, because a head blow requires a stop only when consciousness is lost and fogginess can wait until the end"
+      },
+      {
+        "id": "d",
+        "text": "Stop the session now and arrange a prompt medical evaluation"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Any blow to the head with fogginess or nausea stops the session, even when the client never loses consciousness. The circuit does not continue while those symptoms are present, and the client needs a medical evaluation.",
+    "distractorExplanations": {
+      "a": "Being able to count reps does not clear fogginess and nausea after a blow to the head. The session stops even though consciousness was not lost.",
+      "b": "A short break does not clear a symptomatic head strike. Staying conscious does not make it safe to resume the circuit.",
+      "c": "Loss of consciousness is not required. Fogginess and nausea after a blow to the head are enough to stop the session and seek a medical evaluation."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-117",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "easy",
+    "prompt": "A bumper plate nicks a client's shin and leaves blood on the turf. Another member starts wiping the spot with a sweaty towel from the hamper. What should the cleanup be?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Gloves and a proper disinfectant, not the sweaty towel"
+      },
+      {
+        "id": "b",
+        "text": "Leave the blood in place until the night cleaning crew arrives"
+      },
+      {
+        "id": "c",
+        "text": "Finish the wipe with that sweaty towel and reopen the station"
+      },
+      {
+        "id": "d",
+        "text": "Scrub the turf with dish soap and a wet rag, then reopen the station"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Blood on a training surface is cleaned with gloves and a proper disinfectant. A sweaty towel from the hamper spreads the spill and does not disinfect the turf.",
+    "distractorExplanations": {
+      "b": "Waiting for the night crew leaves blood on a surface other members will use. The spill needs gloves and a proper disinfectant, not a delay.",
+      "c": "A sweaty towel is not a disinfectant. Finishing that wipe and reopening the station leaves the blood cleanup incomplete.",
+      "d": "Dish soap and a wet rag can fade the stain and still leave blood on a shared surface. The cleanup calls for gloves and a proper disinfectant."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-118",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A 14-year-old asks you to film their squat for a shared training log that other gym members can open. A parent has not given permission. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Film the set, because the minor asked for the video"
+      },
+      {
+        "id": "b",
+        "text": "Do not film it for that shared log until a parent gives permission"
+      },
+      {
+        "id": "c",
+        "text": "Film and upload it now, then message the parent after the session"
+      },
+      {
+        "id": "d",
+        "text": "Film it after the 14-year-old signs a photo release, and treat that signature as parent permission"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Do not film a minor for a shared log without a parent's permission. The 14-year-old's request does not authorize a video that other members can open.",
+    "distractorExplanations": {
+      "a": "A minor's request is not a parent's permission. Filming for a log other members can open still needs the parent to agree first.",
+      "c": "Uploading first and telling the parent later still shares the minor's video without permission. Notice after the fact does not replace that permission.",
+      "d": "A photo release signed by the 14-year-old is not a parent's permission. Filming that shared log still waits until the parent agrees."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-119",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "hard",
+    "prompt": "The morning after a first-ever session of forced, high-volume eccentric curls and back extensions, a client reports cola-colored urine and muscle pain so severe they cannot lift a coffee mug. They ask whether an easy bike ride is fine. What should the NSCA-CPT do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Approve the easy bike ride so the pedaling can flush the soreness"
+      },
+      {
+        "id": "b",
+        "text": "Treat the dark urine as ordinary soreness and keep the planned session"
+      },
+      {
+        "id": "c",
+        "text": "Stop training and send them for urgent medical care"
+      },
+      {
+        "id": "d",
+        "text": "Have them drink extra water, complete the easy bike ride, and decide about medical care only if the urine is still dark afterward"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cola-colored urine plus severe pain after a brutal new session is urgent medical care, and training stops. An easy bike ride is still training and does not belong in that response.",
+    "distractorExplanations": {
+      "a": "An easy ride does not make cola-colored urine and severe pain safe. Approving any session delays urgent care after that brutal first dose of new work.",
+      "b": "Dark cola urine with pain this severe is not ordinary soreness. Keeping the planned session leaves an urgent medical problem unaddressed.",
+      "d": "Extra water and a bike ride postpone care. Cola-colored urine plus severe pain after that new session means stop training and get urgent medical care now."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
+  },
+  {
+    "id": "nsca-cpt-readiness-check-safety-120",
+    "examSlug": "nsca-cpt-readiness-check",
+    "topicId": "safety",
+    "difficulty": "medium",
+    "prompt": "A client wants a coached first lesson on the barbell power clean, with load added today. You have been taught to teach squats, presses, and deadlifts, and you have never been taught to teach the power clean. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Coach the loaded singles from a video you watched last night"
+      },
+      {
+        "id": "b",
+        "text": "Let them try a max-effort single while you stand beside the bar"
+      },
+      {
+        "id": "c",
+        "text": "Teach the power clean from a wall chart and add load once the first reps look smooth"
+      },
+      {
+        "id": "d",
+        "text": "Decline to coach the power clean until you have been taught to teach it"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Do not coach a lift you have not been taught to teach. A video, a wall chart, or standing nearby does not prepare you to load someone's first power clean. Decline until you are taught, or send them to a coach who has been.",
+    "distractorExplanations": {
+      "a": "Watching a video the night before is not the same as being taught to teach the power clean. Coaching loaded singles from that viewing is still coaching a lift you were not taught to teach.",
+      "b": "Standing beside a max-effort single is not teaching competence. A lift you have never been taught to teach should not be loaded in your session.",
+      "c": "A wall chart does not replace being taught to teach the lift. Adding load once the reps look smooth still means you are coaching a skill you have not been taught to teach."
+    },
+    "sourceNote": "Original UniPrep2Go local bank, 2026-11-12."
   }
 ]

@@ -661,12 +661,12 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whatIsExam: "The NSCA-CPT certifies personal trainers through the National Strength and Conditioning Association with emphasis on safe program design.",
     administeredBy: "NSCA",
     officialFormat:
-      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. This UniPrep2Go session is a 60-question / 75-minute text-only diagnostic (free 25-question version) — shorter than the official sitting and without video items.",
+      "Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. Domain weights: consultation/assessment 23%, program planning 29%, program execution 36%, safety/legal 12%. This UniPrep2Go session is 60 questions in 75 minutes, drawn from a 120-item text bank (free 25-question version) — shorter than the official sitting and without video items.",
     examFaqs: [
       {
         question: "How many questions are on the NSCA-CPT exam?",
         answer:
-          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions / 75 minutes (free 25-question version) with no video items.",
+          "155 questions (140 scored + 15 pretest) in 3 hours, including 25–35 video/image items. Scaled pass is 70. UniPrep’s check is 60 questions in 75 minutes, drawn from a 120-item bank (free 25-question version), with no video items.",
       },
       {
         question: "Is NSCA-CPT the same as CSCS?",

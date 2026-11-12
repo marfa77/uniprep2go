@@ -741,7 +741,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "nsca-cpt-readiness-check": {
     title: "Free NSCA-CPT Practice Test 2026 | 60-Question Mock",
     description:
-      "NSCA-CPT practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. Official NSCA-CPT is 155Q / 3h / scaled 70. Independent — not NSCA. Not CSCS.",
+      "NSCA-CPT practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, drawn from a 120-item bank, 70% readiness. Official NSCA-CPT is 155Q / 3h / scaled 70. Independent — not NSCA. Not CSCS.",
     keywords: [
       "nsca-cpt practice test",
       "nsca personal trainer practice test",
@@ -750,7 +750,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "NSCA-CPT Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 75-minute text diagnostic for NSCA-CPT — assessment, program design, technique, and safety. Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check has no video. Planned 60-card Anki waitlist. Not CSCS and not NASM/ACE/ACSM CPT.",
+      "A timed 60-question / 75-minute text diagnostic for NSCA-CPT, drawn from a 120-item bank — assessment, program design, technique, and safety. Official NSCA-CPT is 155 questions (140 scored + 15 pretest) in 3 hours with a scaled pass of 70, including 25–35 video/image items. This check has no video. Planned 120-card Anki, not a live download. Not CSCS and not NASM/ACE/ACSM CPT.",
     audience:
       "Personal-trainer candidates sitting NSCA-CPT — not CSCS strength coaches and not NASM/ACE/ACSM CPT candidates.",
     practiceTestLabel: "NSCA-CPT practice test",

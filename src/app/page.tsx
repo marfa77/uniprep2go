@@ -202,7 +202,7 @@ export default async function HomePage() {
               </Link>
             </div>
             <p className="mt-4 max-w-xl text-sm leading-6 text-[#5f5749]">
-              CFA Level I is offered in the November 2026 window, 11–22 November.{" "}
+              The November 2026 CFA Level I window is open now, 11–22 November.{" "}
               <a
                 className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
                 href="https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/26-nov-passport-assistance-letter.pdf"
