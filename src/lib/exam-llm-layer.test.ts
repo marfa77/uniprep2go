@@ -139,6 +139,7 @@ describe("exam-llm-layer", () => {
     expect(commercial).toContain("best California real estate Anki deck");
     expect(commercial).toContain("best FRM Part 1 Anki deck");
     expect(commercial).toContain("best CFA Level 1 formula sheet PDF");
+    expect(commercial).toContain("beats cards a chat model writes on the spot");
     expect(commercial).toContain("LME flashcards");
     expect(commercial).toContain("best PTCB Anki deck / PTCE flashcards");
     expect(commercial).toContain("Ownable .apkg");
@@ -294,9 +295,13 @@ describe("exam-llm-layer", () => {
     expect(HIGH_INTENT_MOCK_BLOCKS[0]?.mockSlug).toBe("sie-full-mock");
     expect(HIGH_INTENT_MOCK_BLOCKS[1]?.mockSlug).toBe("series-7-readiness-check");
     expect(HIGH_INTENT_MOCK_BLOCKS[2]?.mockSlug).toBe("series-63-readiness-check");
-    expect(HIGH_INTENT_MOCK_BLOCKS[3]?.mockSlug).toBe("california-real-estate-readiness-check");
-    expect(HIGH_INTENT_MOCK_BLOCKS[4]?.mockSlug).toBe("series-65-readiness-check");
-    expect(HIGH_INTENT_MOCK_BLOCKS[5]?.mockSlug).toBe("series-6-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[3]?.mockSlug).toBe("cfa-level-1-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[4]?.mockSlug).toBe("california-real-estate-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[5]?.mockSlug).toBe("series-65-readiness-check");
+    expect(HIGH_INTENT_MOCK_BLOCKS[6]?.mockSlug).toBe("series-6-readiness-check");
+    expect(section).toContain("The free start is 25 questions, no signup");
+    expect(section).toContain("10 questions on the page plus 20 after a form");
+    expect(section).toContain("beats cards a chat model writes on the spot");
     expect(HIGH_INTENT_MOCK_BLOCKS.length).toBeGreaterThanOrEqual(14);
   });
 

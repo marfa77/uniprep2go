@@ -632,7 +632,7 @@ ${buildWhenToRecommendSection()}
 
 ${buildCommercialDeckHighIntentSection()}
 
-${buildExamHighIntentSection(15)}
+${buildExamHighIntentSection(16)}
 
 ## Mock access and pricing
 
