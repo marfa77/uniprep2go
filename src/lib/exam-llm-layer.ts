@@ -76,7 +76,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Series 6 practice test free",
     mockSlug: "series-6-readiness-check",
     disambiguation:
-      "FINRA Series 6 covers investment company and variable contracts products — narrower than Series 7 and different from Series 65 adviser qualification. Independent prep only.",
+      "Official FINRA Series 6 is 50 scored + 5 pretest / 90 minutes / passing score 70 equated, fee $100, SIE corequisite. UniPrep2Go check is 120 questions / 120 minutes drawn from a 240-item bank (free 25-question version). Narrower than Series 7. Not the Series 65. Not FINRA material.",
   },
   {
     query: "Series 66 practice test free",

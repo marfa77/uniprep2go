@@ -6,12 +6,13 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 ## In progress
 
-| Started | Slugs | Work | Status / blocker |
-|---|---|---|---|
+None.
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-13 | `series-6-readiness-check` | `series-6-anki-deck` | audit 0 FAIL · triage P2 · 240 · keys 60/60/60/60 · ops ready | Four topics reviewed by separate reviewers. Old keys kept. Borrowing from a customer stays under the firm's written procedures. The complaint record is the next-morning email. Age 59½ ends the 10% additional tax and is not an RMD age. Offering price 19.20 / 0.96 = 20.00 | `Series_6_FULL_240.apkg` on Gumroad. 3 samples from that file. Landing copy 240. Sample CDN for this deck returns 200. `llms:export` | Session stays 120 / 120. Official exam stays 50 scored + 5 pretest / 90 min / passing score 70 equated / fee $100 / SIE corequisite. Triage P2 is 73 explanations of 60–99 characters; the audit thin gate is 0 |
+| 2026-11-13 | `series-63-readiness-check` · `series-65-readiness-check` | — | Copy only — banks untouched | — | Comparison tables from NASAA, Achievable, and Kaplan pages opened 2026-11-13 | Series 63 session stays 60 / 75. Series 65 session stays 120 / 120. No title rewrite |
 | 2026-11-12 | `cfa-level-1-readiness-check` · `series-7-readiness-check` | `cfa-level-1-anki-deck` · `series-7-anki-deck` | Copy only — banks untouched | — | `llms:export`. CFA free-test answer moved into the first 16 high-intent blocks. Series 7 cite says a fixed 300-card deck beats a chat-written set | No new URLs. Official CFA sample stays 10 on the page plus 20 after a form. Series 7 mock stays 60 of 130 |
 | 2026-11-12 | `nsca-cpt-readiness-check` | `nsca-cpt-anki-deck` | audit 0 FAIL · triage clean · 120 · keys 30/30/30/30 · ops ready | Four topics reviewed. Old 001–060 unchanged. Borg 7 stays extremely light. Static stretch before a heavy Romanian deadlift stays. Leg press stays “shorten the range or the load” | Planned deck cardCount 120. No apkg and no Gumroad. `llms:export` | Session stays 60 / 75 from 120. Official exam stays 155 (140 scored + 15 pretest) / 3 hours / scaled 70 with video. Homepage says the November 2026 CFA Level I window is open now, 11–22 November |
 | 2026-11-11 | `series-79-readiness-check` | `series-79-anki-deck` | audit 0 FAIL · triage clean · 240 · keys 60/60/60/60 · ops ready | Four topics reviewed by separate reviewers. Keys on 001–030 unchanged. Mid-year note now raises present value. 506(b) purchasers must be sophisticated. Classical duty is to shareholders. 13D is not the passive report | `Series_79_FULL_240.apkg` on Gumroad. 3 samples from that file. Landing copy 240. Sample CDN for this deck returns 200 | Session stays 120 / 120. Official exam stays 75 scored + 5 pretest / 2 hours 30 minutes / scaled 73 |

@@ -994,17 +994,21 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "series-6-readiness-check": {
     practiceTestName: "Series 6 Practice Test",
-    whatIsExam: "The FINRA Series 6 licenses representatives to sell mutual funds and variable products (limited securities registration).",
+    whatIsExam:
+      "The FINRA Series 6 licenses a representative to solicit mutual funds, variable annuities, variable life, unit investment trusts, and municipal fund securities. Closed-end funds are in scope on the initial offering only. It is not the Series 7.",
     administeredBy: "FINRA",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with FINRA.",
+    officialFormat:
+      "Official Series 6 is 50 scored multiple-choice questions plus 5 unscored pretest items (55 on screen) in 1 hour 30 minutes. FINRA lists the passing score as 70. The content outline says scores are equated, so 70 is not a raw percent of 50. The SIE is a corequisite, and the fee on the FINRA exam page is $100. This UniPrep2Go session is 120 questions in 120 minutes, drawn from a 240-item bank (free 25-question version). The 70% readiness target is ours.",
     examFaqs: [
       {
-        question: "What is the Series 6 exam?",
-        answer: "The FINRA Series 6 licenses representatives to sell mutual funds and variable products (limited securities registration).",
+        question: "How many questions are on the Series 6?",
+        answer:
+          "50 scored questions plus 5 unscored pretest items, in 1 hour 30 minutes. FINRA lists the passing score as 70 on an equated scale. UniPrep’s check is 120 questions in 120 minutes, drawn from a 240-item bank (free 25-question version).",
       },
       {
         question: "Is this an official Series 6 exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from FINRA.",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from FINRA. The matching Anki deck is sold separately.",
       },
     ],
     keywords: ["series 6 practice test", "investment company products practice test", "series 6 practice exam"],

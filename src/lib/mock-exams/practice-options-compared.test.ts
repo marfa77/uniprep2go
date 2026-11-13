@@ -73,6 +73,32 @@ describe("getPracticeOptionsCompared", () => {
     expect(table!.sources.some((s) => s.url.includes("SSFS-Examinee-Handbook.pdf"))).toBe(true);
   });
 
+  it("returns Series 63 and Series 65 tables from pages checked 2026-11-13", () => {
+    const series63 = getPracticeOptionsCompared("series-63-readiness-check");
+    expect(series63).not.toBeNull();
+    expect(series63!.checkedDate).toBe("2026-11-13");
+    expect(series63!.rows.some((r) => r.name.includes("Series 63 practice test") && /60 questions/.test(r.format))).toBe(
+      true,
+    );
+    expect(series63!.rows.some((r) => /Achievable/.test(r.name) && /60 questions/.test(r.format))).toBe(true);
+    expect(series63!.rows.some((r) => /Kaplan/.test(r.name) && /\$129/.test(r.access))).toBe(true);
+    expect(series63!.rows.some((r) => /NASAA/.test(r.name) && /\$147/.test(r.access))).toBe(true);
+    expect(series63!.sources.some((s) => s.url.includes("series-63-exam-content-outline"))).toBe(true);
+
+    const series65 = getPracticeOptionsCompared("series-65-readiness-check");
+    expect(series65).not.toBeNull();
+    expect(series65!.checkedDate).toBe("2026-11-13");
+    expect(series65!.rows.some((r) => r.name.includes("Series 65 practice test") && /120 questions/.test(r.format))).toBe(
+      true,
+    );
+    expect(series65!.rows.some((r) => /Achievable/.test(r.name) && /130 questions/.test(r.format))).toBe(true);
+    expect(series65!.rows.some((r) => /Kaplan/.test(r.name) && /\$289/.test(r.access) && /\$49/.test(r.access))).toBe(
+      true,
+    );
+    expect(series65!.rows.some((r) => /NASAA/.test(r.name) && /\$187/.test(r.access))).toBe(true);
+    expect(series65!.sources.some((s) => s.url.includes("series-65-exam-content-outline"))).toBe(true);
+  });
+
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });

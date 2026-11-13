@@ -530,6 +530,117 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       { label: "GOV.UK — Life in the UK Test", url: "https://www.gov.uk/life-in-the-uk-test" },
     ],
   },
+  "series-63-readiness-check": {
+    mockSlug: "series-63-readiness-check",
+    examLabel: "NASAA Series 63",
+    heading: "Free Series 63 practice options compared",
+    checkedDate: "2026-11-13",
+    lead:
+      "NASAA’s Series 63 is 65 questions (60 scored plus 5 unscored) in 75 minutes, and the pass is 43 of the 60 scored questions. UniPrep2Go is an independent timed diagnostic in that same scored mix. Not NASAA or FINRA material.",
+    rows: [
+      {
+        name: "UniPrep2Go Series 63 practice test",
+        href: "/mock-exams/series-63-readiness-check",
+        format: "25 free, no signup; full timed mock 60 questions / 75 minutes in NASAA’s scored area mix",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic drawn from a 120-item bank. Readiness target is 72%, matching 43 of 60. The 5 pretest items are not in this session.",
+      },
+      {
+        name: "Achievable — free Series 63 practice exam",
+        href: "https://achievable.me/exams/finra-series-63/free-practice-exam/",
+        format: "60 questions, 1 hour 15 minutes, explanations after each answer",
+        access: "100% free (Achievable page, checked 2026-11-13)",
+        notes:
+          "Matches the 60 scored items and the 75-minute clock. A candidate also sees 5 unscored pretest items, which this free exam does not add.",
+      },
+      {
+        name: "Kaplan — Series 63 packages",
+        href: "https://www.kaplanfinancial.com/securities/series-63",
+        format:
+          "A Practice Exam that can be taken once, plus a SecuritiesPro QBank that builds exams of a length the candidate chooses",
+        access: "Packages listed at $59–$159; Premium OnDemand $129 and Live Online $159 (Kaplan page, checked 2026-11-13)",
+        notes: "Kaplan does not publish how many questions are in that one-time Practice Exam.",
+      },
+      {
+        name: "NASAA — Series 63 content outline",
+        href: "https://www.nasaa.org/exams/general-exam-information/series-63-exam-content-outline/",
+        format: "Official map: 65 questions, 60 scored, 75 minutes, pass at 43 of 60",
+        access: "Free outline. Exam fee on that page is $147, paid to FINRA",
+        notes: "Study map, not a quiz. FINRA administers the exam. The 5 pretest questions are not identified.",
+      },
+    ],
+    sources: [
+      {
+        label: "NASAA — Series 63 content outline",
+        url: "https://www.nasaa.org/exams/general-exam-information/series-63-exam-content-outline/",
+      },
+      {
+        label: "Achievable — free Series 63 practice exam",
+        url: "https://achievable.me/exams/finra-series-63/free-practice-exam/",
+      },
+      {
+        label: "Kaplan — Series 63 exam prep",
+        url: "https://www.kaplanfinancial.com/securities/series-63",
+      },
+    ],
+  },
+  "series-65-readiness-check": {
+    mockSlug: "series-65-readiness-check",
+    examLabel: "NASAA Series 65",
+    heading: "Free Series 65 practice options compared",
+    checkedDate: "2026-11-13",
+    lead:
+      "NASAA’s Series 65 is 130 questions plus 10 pretest items, 180 minutes, and a candidate needs at least 92 correct. UniPrep2Go is the shorter free diagnostic: 25 questions with no signup, then 120 timed questions. Not NASAA or FINRA material.",
+    rows: [
+      {
+        name: "UniPrep2Go Series 65 practice test",
+        href: "/mock-exams/series-65-readiness-check",
+        format: "25 free, no signup; full timed mock 120 questions / 120 minutes with topic scores",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic drawn from a 240-item bank. Shorter than the 140-item sitting. Readiness target is 70%, which is ours, not the 92-correct line.",
+      },
+      {
+        name: "Achievable — free Series 65 practice exam",
+        href: "https://achievable.me/exams/finra-series-65/free-practice-exam/",
+        format: "130 questions, 3 hours, explanations after each answer",
+        access: "100% free (Achievable page, checked 2026-11-13)",
+        notes:
+          "Matches the 130 scored items and the 180-minute clock. A candidate also sees 10 unscored pretest items, which this free exam does not add.",
+      },
+      {
+        name: "Kaplan — Series 65 packages",
+        href: "https://www.kaplanfinancial.com/securities/series-65",
+        format:
+          "A Practice Exam that can be taken once, plus a SecuritiesPro QBank that builds exams of a length the candidate chooses",
+        access:
+          "Packages listed at $159–$319; Premium OnDemand $289 and Live Online $319. Online access is 5 months, and a 5-month extension is $49 (Kaplan page, checked 2026-11-13)",
+        notes: "Kaplan does not publish how many questions are in that one-time Practice Exam.",
+      },
+      {
+        name: "NASAA — Series 65 content outline",
+        href: "https://www.nasaa.org/exams/general-exam-information/series-65-exam-content-outline/",
+        format: "Official map: 130 questions plus 10 pretest items, 180 minutes, at least 92 correct",
+        access: "Free outline. Exam fee on that page is $187, paid to FINRA",
+        notes: "Study map, not a quiz. FINRA administers the exam. The 10 pretest questions are not identified.",
+      },
+    ],
+    sources: [
+      {
+        label: "NASAA — Series 65 content outline",
+        url: "https://www.nasaa.org/exams/general-exam-information/series-65-exam-content-outline/",
+      },
+      {
+        label: "Achievable — free Series 65 practice exam",
+        url: "https://achievable.me/exams/finra-series-65/free-practice-exam/",
+      },
+      {
+        label: "Kaplan — Series 65 exam prep",
+        url: "https://www.kaplanfinancial.com/securities/series-65",
+      },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(
