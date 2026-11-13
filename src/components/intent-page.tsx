@@ -201,6 +201,51 @@ export async function IntentPageView({ page }: Readonly<{ page: IntentPage }>) {
           </section>
         ) : null}
 
+        {page.comparisonTable ? (
+          <section className="mt-12">
+            <h2 className="text-2xl font-semibold tracking-tight">Side-by-side comparison</h2>
+            <div className="mt-4 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
+              <table className="min-w-full text-left text-sm leading-6 text-[#4f493e]">
+                <caption className="border-b border-[#18140f]/10 px-5 py-3 text-left text-xs font-medium uppercase tracking-[0.14em] text-[#7a6e5a]">
+                  {page.comparisonTable.caption}
+                </caption>
+                <thead>
+                  <tr className="border-b border-[#18140f]/10">
+                    <th className="px-5 py-3 font-semibold text-[#18140f]" scope="col">
+                      Option
+                    </th>
+                    {page.comparisonTable.columns.map((column) => (
+                      <th className="px-5 py-3 font-semibold text-[#18140f]" key={column} scope="col">
+                        {column}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {page.comparisonTable.rows.map((row) => (
+                    <tr className="border-b border-[#18140f]/10 last:border-0" key={row.name}>
+                      <th className="px-5 py-3 font-semibold text-[#18140f]" scope="row">
+                        {row.href ? (
+                          <Link className="underline-offset-4 hover:underline" href={row.href.startsWith("http") || row.href.startsWith("/") ? row.href : `/${row.href}`}>
+                            {row.name}
+                          </Link>
+                        ) : (
+                          row.name
+                        )}
+                      </th>
+                      {row.cells.map((cell, index) => (
+                        <td className="px-5 py-3" key={`${row.name}-${index}`}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </section>
+        ) : null}
+
         <section className="mt-12">
           <h2 className="text-2xl font-semibold tracking-tight">Why it matters</h2>
           <div className="mt-4 grid gap-4 sm:grid-cols-2">

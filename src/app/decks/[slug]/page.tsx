@@ -57,7 +57,7 @@ import {
   type AvailableDeck,
   type Deck,
 } from "@/lib/decks";
-import { formatDeckPriceLabel, getDeckCheckoutCtaLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
+import { formatCompactUsdAmount, formatDeckPriceLabel, getDeckCheckoutCtaLabel, getPricedDeckBySlug } from "@/lib/checkout-pricing";
 import {
   buildDeckSeoDescription,
   buildDeckSeoHeadline,
@@ -290,7 +290,16 @@ export default async function DeckPage({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       ) : null}
-      <SiteHeader />
+      <SiteHeader
+        cta={
+          availableDeck && !availableDeck.pricePending && availableDeck.price.amount > 0
+            ? {
+                href: `/decks/${deck.slug}`,
+                label: `Get Deck — ${formatCompactUsdAmount(availableDeck.price.amount)}`,
+              }
+            : { href: `/decks/${deck.slug}`, label: "View this deck" }
+        }
+      />
       <FunnelTracker deckSlug={deck.slug} sectionEvents={sectionEvents} source="deck_page" />
 
       <article
@@ -734,6 +743,20 @@ export default async function DeckPage({
           deckSlug={deck.slug}
           heading={`Guides for ${deck.shortName}`}
         />
+
+        {deck.slug === "frm-part-1-anki-deck" ? (
+          <p className="mt-10 max-w-3xl text-sm leading-6 text-[#4f493e]">
+            Compare this $9.99 Part 1 Anki file with AnkiWeb, Examius, Bionic Turtle, and
+            AnalystPrep:{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/frm-part-1-anki-compared"
+            >
+              FRM Part 1 Anki compared
+            </Link>
+            . Facts checked 13 November 2026.
+          </p>
+        ) : null}
 
         <DeckRelatedDecks deck={deck} />
 

@@ -6,6 +6,7 @@ import {
   isBuildingCertDeckSlug,
 } from "@/lib/building-cert-clusters";
 import { categoryLabels, getRelatedDecks, type Deck } from "@/lib/decks";
+import { feederDeckSlugForPassPack } from "@/lib/mock-exams/pass-pack-for-deck";
 
 type DeckRelatedDecksProps = {
   deck: Deck;
@@ -45,6 +46,12 @@ export function DeckRelatedDecks({ deck }: DeckRelatedDecksProps) {
             >
               <p className="font-medium text-[#18140f]">{relatedDeck.title}</p>
               <p className="mt-1 text-sm leading-6 text-[#5f5749]">{relatedDeck.subtitle}</p>
+              {feederDeckSlugForPassPack(relatedDeck.slug) &&
+              feederDeckSlugForPassPack(relatedDeck.slug) !== deck.slug ? (
+                <p className="mt-1 text-xs font-medium leading-5 text-[#7a6e5a]">
+                  Different exam — {relatedDeck.shortName} is not this product.
+                </p>
+              ) : null}
             </Link>
           </li>
         ))}

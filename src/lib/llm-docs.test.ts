@@ -359,8 +359,9 @@ describe("LLM documents", () => {
     expect(llms).toContain("LLM/GEO");
     expect(llms).toContain("$100");
     expect(llms).toContain("retail price agreed with you");
-    // Soft size guard — SAT live cite + GMAT 2026 block (2026-10-04) nudged past 90k.
-    expect(llms.length).toBeLessThan(95000);
+    // Soft size guard — SAT/GMAT (2026-10-04) nudged past 90k; 2026-11-13 CFA free-test
+    // + FRM compare + $9.99 vs $29 disambiguation nudged past 95k.
+    expect(llms.length).toBeLessThan(100000);
   });
 
   it("builds a full GEO markdown bundle for LLM ingestion", () => {
@@ -434,6 +435,7 @@ describe("LLM documents", () => {
 
     expect(slugs).toEqual([
       "best-frm-part-1-anki-deck",
+      "frm-part-1-anki-compared",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
       "sell-anki-deck",

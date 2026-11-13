@@ -19,7 +19,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cat4-level-d-anki-deck-printable-pdf":
     "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
-    "444 cards across FRM Part 1 foundations, quant, markets, and valuation. The free start is 25 questions. The full timed readiness check is 50 questions.",
+    "FRM Part 1 Anki is $9.99 one-time — not the CFA Level 1 Pass Pack ($29) and not the CFA Level 2 Anki deck ($29). 444 cards across FRM Part 1 foundations, quant, markets, and valuation. The free start is 25 questions. The full timed readiness check is 50 questions.",
   "bench-energy-metal-trader-anki-deck":
     "202 metals-desk cards: LME, cash/3M carry, contango/backwardation, base and precious metals vocabulary.",
   "sie-exam-anki-deck":
@@ -166,7 +166,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-formula-reference-2026":
     "221 formulas grouped by the 2026 learning modules — FSA and Fixed Income (36 each), Quant (31), Equity (26), Portfolio Management (22), Economics and Derivatives (20 each), Alternatives (16), Corporate Issuers (14) — plus all 22 Standards. Every row says when to use the formula and names the exam trap. The 80-question drill tests see-the-formula/name-the-concept recall. The 348-card Anki deck is a separate scenario deck weighted to the 2026 topic ranges, for daily recall after you look things up here.",
   "frm-part-1-anki-deck":
-    "Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
+    "This FRM Part 1 deck is $9.99 one-time. The $29 prices you may see nearby are the CFA Level 1 Pass Pack and the CFA Level 2 Anki deck — different exams. Cards track GARP Part 1 structure: risk governance, VaR and Expected Shortfall, credit and operational risk, fixed income and derivatives Greeks. The free FRM mock scores topic gaps so you drill valuation models and market mechanics — not random card volume.",
   "sie-exam-anki-deck":
     "FINRA weights drive the deck: capital markets, products and risks, trading, customer accounts, and prohibited activities. Start with the free 25-question quick diagnostic (~35 min) to find weak domains, or run the full 75-question / 105-minute mock before you schedule the real exam.",
   "series-7-anki-deck":

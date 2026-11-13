@@ -37,6 +37,15 @@ export type IntentPage = {
     question: string;
     answer: string;
   }>;
+  comparisonTable?: {
+    caption: string;
+    columns: string[];
+    rows: Array<{
+      name: string;
+      href?: string;
+      cells: string[];
+    }>;
+  };
 };
 
 export const intentPages: IntentPage[] = [
@@ -81,6 +90,122 @@ export const intentPages: IntentPage[] = [
         question: "Is this deck affiliated with GARP?",
         answer:
           "No. UniPrep2Go is independent and is not affiliated with, endorsed by, or sponsored by GARP.",
+      },
+      {
+        question: "How does this deck compare with AnkiWeb, Examius, Bionic Turtle, or AnalystPrep?",
+        answer:
+          "See the side-by-side on /frm-part-1-anki-compared. Facts there were checked on 13 November 2026.",
+      },
+    ],
+  },
+  {
+    slug: "frm-part-1-anki-compared",
+    title: "FRM Part 1 Anki Compared: UniPrep, AnkiWeb, Examius, Bionic Turtle, AnalystPrep",
+    eyebrow: "FRM Part 1 comparison",
+    description:
+      "Compare FRM Part 1 Anki and study options: UniPrep2Go $9.99 / 444-card .apkg, AnkiWeb’s 40-card UniPrep LITE sample, Examius flashcards, Bionic Turtle, and AnalystPrep. Prices and formats checked 13 November 2026.",
+    directAnswer:
+      "If you want an ownable FRM Part 1 Anki file, UniPrep2Go’s deck is $9.99 one-time for 444 Part 1 cards, with a free 25-question start and a 50-question timed mock. That $9.99 is not the CFA Level 1 Pass Pack ($29) or the CFA Level 2 Anki deck ($29). AnkiWeb hosts a free UniPrep LITE sample of 40 cards, updated 13 October 2026. Examius lists 443 flashcards across 8 subjects covering Part 1 and Part 2; the free tier is one exam plus cards, and the Pro price is a one-time in-app purchase not listed on examius.com. Bionic Turtle’s Part 1 packages are not Anki: Foundation is $519.00 and Mastery is $949.00 for one year. AnalystPrep’s FRM Part 1 packages are Practice $349, Learn + Practice $499, and Unlimited I+II $799, typically 12 months, with no standalone Anki deck. Facts checked 13 November 2026. We do not invent AnkiWeb card counts or quote an Examius dollar price that the official site does not publish.",
+    deckSlugs: ["frm-part-1-anki-deck"],
+    primaryDeckSlug: "frm-part-1-anki-deck",
+    mockSlug: "frm-part-1-readiness-check",
+    indexInSitemap: true,
+    proofPoints: [
+      "UniPrep FRM Part 1 Anki: $9.99, 444 cards, Part 1 only",
+      "Free 25-question start, then a 50-question timed mock",
+      "AnkiWeb UniPrep LITE sample: 40 cards, updated 13 October 2026",
+      "Competitor prices below are from official pages on 13 November 2026",
+    ],
+    comparisonTable: {
+      caption: "FRM Part 1 study options compared — facts checked 13 November 2026",
+      columns: ["Price", "Format", "FRM coverage", "What to know"],
+      rows: [
+        {
+          name: "UniPrep2Go FRM Part 1 Anki",
+          href: "/decks/frm-part-1-anki-deck",
+          cells: [
+            "$9.99 one-time",
+            "Anki .apkg, 444 cards",
+            "Part 1 only",
+            "Free 25-question start, then a 50-question timed mock. Not the CFA L1 Pass Pack ($29).",
+          ],
+        },
+        {
+          name: "AnkiWeb UniPrep LITE sample",
+          href: "https://ankiweb.net/shared/info/1074067149",
+          cells: [
+            "Free",
+            "Shared Anki deck, 40 cards",
+            "Part 1 sample",
+            "Updated 13 October 2026. Other community decks exist; we do not invent their card counts.",
+          ],
+        },
+        {
+          name: "Examius FRM",
+          href: "https://examius.com/exam/financial-risk-manager-frm/",
+          cells: [
+            "Pro is a one-time in-app purchase; no dollar price on examius.com",
+            "443 flashcards across 8 subjects",
+            "Part 1 and Part 2",
+            "Free tier is one exam plus cards. We do not quote a third-party IAP price.",
+          ],
+        },
+        {
+          name: "Bionic Turtle",
+          href: "https://www.bionicturtle.com/product-category/frm/frm-part-1/",
+          cells: [
+            "Foundation $519.00; Mastery $949.00; one year",
+            "Not Anki",
+            "Part 1 packages",
+            "Checked 13 November 2026 on official Part 1 product pages.",
+          ],
+        },
+        {
+          name: "AnalystPrep FRM Part 1",
+          href: "https://analystprep.com/frm-part-1/",
+          cells: [
+            "Practice $349; Learn + Practice $499; Unlimited I+II $799",
+            "Question bank; no standalone Anki",
+            "Part 1 packages (Unlimited includes I and II)",
+            "12-month access on Part 1 packages. The official page lists both “4,000+” and “1,800+” questions, so we do not pick one count.",
+          ],
+        },
+      ],
+    },
+    sections: [
+      {
+        title: "When UniPrep is the better fit",
+        body: "Choose the $9.99 UniPrep .apkg when you want daily spaced repetition on Part 1 formulas and definitions, plus one free timed diagnostic. Q-bank subscriptions still win if you need thousands of practice items or a full video course.",
+      },
+      {
+        title: "Prices we will not invent",
+        body: "Examius Pro is sold as an in-app purchase and examius.com does not list a dollar price — so this page does not invent one. Community AnkiWeb decks other than the 40-card UniPrep LITE sample are not given card counts here unless we loaded the deck. AnalystPrep question counts conflict on the same official page, so both figures are left aside.",
+      },
+      {
+        title: "The $29 confusion",
+        body: "UniPrep’s FRM Part 1 Anki is $9.99. The $29 prices on the site are the CFA Level 1 Pass Pack (Anki + formula PDF) and the CFA Level 2 Anki deck. Those are different exams.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Is the UniPrep FRM Part 1 Anki deck $29?",
+        answer:
+          "No. It is $9.99 one-time for 444 Part 1 cards. The $29 products are the CFA Level 1 Pass Pack and the CFA Level 2 Anki deck.",
+      },
+      {
+        question: "Does Examius cost $8.99?",
+        answer:
+          "We do not list an Examius dollar price. The official Examius FRM page says Pro is a one-time in-app purchase and does not publish that price on examius.com (checked 13 November 2026).",
+      },
+      {
+        question: "Is Bionic Turtle an Anki deck?",
+        answer:
+          "No. Bionic Turtle’s official Part 1 Foundation and Mastery packages are $519.00 and $949.00 for one year and are not Anki files (checked 13 November 2026).",
+      },
+      {
+        question: "Is this comparison affiliated with GARP?",
+        answer:
+          "No. UniPrep2Go is independent and is not affiliated with, endorsed by, or sponsored by GARP, Examius, Bionic Turtle, or AnalystPrep.",
       },
     ],
   },

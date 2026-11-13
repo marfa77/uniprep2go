@@ -10,7 +10,17 @@ const headerLinks = [
   { href: "/faq", label: "Questions" },
 ] as const;
 
-export function SiteHeader() {
+export type SiteHeaderCta = {
+  href: string;
+  label: string;
+};
+
+const DEFAULT_HEADER_CTA: SiteHeaderCta = {
+  href: "/decks/cfa-level-1-anki-deck",
+  label: "Get Deck — $19",
+};
+
+export function SiteHeader({ cta = DEFAULT_HEADER_CTA }: { cta?: SiteHeaderCta }) {
   return (
     <header className="border-b border-line bg-paper">
       <div className="h-1 bg-navy" />
@@ -28,8 +38,8 @@ export function SiteHeader() {
               {link.label}
             </Link>
           ))}
-          <Link className={btnPrimarySm} href="/decks/cfa-level-1-anki-deck">
-            Get Deck — $19
+          <Link className={btnPrimarySm} href={cta.href}>
+            {cta.label}
           </Link>
         </div>
         <MobileSiteNav />

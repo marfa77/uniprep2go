@@ -256,7 +256,12 @@ export default async function MockExamPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <SiteHeader />
+      <SiteHeader
+        cta={{
+          href: `/mock-exams/${config.slug}`,
+          label: "Free practice test",
+        }}
+      />
       <FunnelTracker
         deckSlug={config.linkedDeckSlug}
         sectionEvents={[
@@ -295,15 +300,63 @@ export default async function MockExamPage({
         ) : null}
         <p className="mt-4 max-w-3xl text-lg leading-8 text-[#4f493e]">{heroLead}</p>
         {config.slug === "cfa-level-1-readiness-check" ? (
+          <>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
+              This is a free CFA Level 1 practice test: 25 questions, no signup, then 60
+              questions in 90 minutes with topic scores. After the report, drill weak topics
+              in the{" "}
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/decks/cfa-level-1-anki-deck"
+              >
+                348-card CFA L1 Anki deck ($19)
+              </Link>{" "}
+              or get both the deck and the formula PDF in the{" "}
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/decks/cfa-level-1-pass-pack"
+              >
+                CFA Level 1 Pass Pack ($29)
+              </Link>
+              .
+            </p>
+            <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
+              Already through Level I? Sit the{" "}
+              <Link
+                className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/mock-exams/cfa-level-2-readiness-check"
+              >
+                CFA Level 2 practice exam
+              </Link>
+              .
+            </p>
+          </>
+        ) : null}
+        {config.slug === "frm-part-1-readiness-check" ? (
           <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
-            Already through Level I? Sit the{" "}
+            This FRM Level 1 mock test (GARP names it Part 1) starts free with 25 questions,
+            then a 50-question timed check. Repair gaps with the{" "}
             <Link
               className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-              href="/mock-exams/cfa-level-2-readiness-check"
+              href="/decks/frm-part-1-anki-deck"
             >
-              CFA Level 2 practice exam
+              FRM Part 1 Anki deck ($9.99)
             </Link>
-            .
+            . Compare Anki and Q-bank options on{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/frm-part-1-anki-compared"
+            >
+              FRM Part 1 Anki compared
+            </Link>
+            . Looking for CFA Level 1 instead? The{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/cfa-level-1-pass-pack"
+            >
+              CFA L1 Pass Pack ($29)
+            </Link>{" "}
+            is a different exam, not this FRM mock.
           </p>
         ) : null}
         {config.slug === "cfa-level-2-readiness-check" ? (

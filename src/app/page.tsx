@@ -26,6 +26,8 @@ const HOME_CATALOG_DECKS_PER_GROUP = 6;
 
 /** Compact homepage index-boost — Tier A money only. */
 const popularDeckBoostLinks = [
+  { href: "/decks/cfa-level-1-pass-pack", label: "CFA L1 Pass Pack" },
+  { href: "/decks/ptcb-2026-pass-pack", label: "PTCB 2026 Pass Pack" },
   { href: "/decks/ptcb-study-guide-2026", label: "PTCB study guide" },
   { href: "/decks/series-63-anki-deck", label: "Series 63" },
   { href: "/decks/sie-exam-anki-deck", label: "SIE" },
