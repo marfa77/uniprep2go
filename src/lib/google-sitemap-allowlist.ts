@@ -38,6 +38,8 @@ export const GOOGLE_SITEMAP_INTENT_SLUGS = [
   "sell-anki-deck",
   "which-citizenship-anki-deck",
   "language-exam-vs-citizenship-civics-anki",
+  "best-frm-part-1-anki-deck",
+  "frm-part-1-anki-compared",
 ] as const;
 
 export const GOOGLE_SITEMAP_EXCLUDED_PATH_PREFIXES = [

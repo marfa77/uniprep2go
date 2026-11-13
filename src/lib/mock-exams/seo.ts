@@ -212,7 +212,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "CFA Level 1 Practice Test",
     intro:
-      "This CFA Level 1 practice test starts free: 25 questions, no signup, then 60 questions in 90 minutes across all 10 topics, with topic scores and full answer review. The official Level I exam is 180 questions in two 135-minute sessions, three choices, and CFA Institute sets the minimum passing score after each sitting rather than publishing a fixed percentage. This page is that shorter diagnostic. Close weak topics with the linked Anki deck ($19, 348 cards) and the formula PDF. Not CFA Institute material.",
+      "This CFA Level 1 practice test starts free: 25 questions, no signup, then 60 questions in 90 minutes across all 10 topics, with topic scores and full answer review. The official Level I exam is 180 questions in two 135-minute sessions, three choices, and CFA Institute sets the minimum passing score after each sitting rather than publishing a fixed percentage. CFA Institute’s public sample is 10 questions on the page plus 20 after a form, not a timed mock. This page is that shorter diagnostic. Close weak topics with the linked Anki deck ($19, 348 cards), the formula PDF, or the CFA Level 1 Pass Pack ($29) that includes both files. Not CFA Institute material.",
     audience: "CFA Level 1 candidates who want a free topic-scored practice test before a full-length mock.",
     practiceTestLabel: "CFA Level 1 practice test",
     examFaqs: [
@@ -350,8 +350,10 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "frm-part-1-readiness-check": {
     title: "FRM Part 1 Practice Questions — 25Q Free, 50Q Mock 2026",
     description:
-      "FRM Part 1 practice questions: the free start is 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $5 for 5 full attempts.",
+      "FRM Level 1 mock test and FRM Part 1 mock test: free 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $5 for 5 full attempts.",
     keywords: [
+      "frm level 1 mock test",
+      "frm part 1 mock test",
       "frm part 1 practice test",
       "frm mock exam",
       "free frm practice questions",
@@ -361,7 +363,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "FRM Part 1 Practice Questions — 25 Free, 50Q Full Mock",
     intro:
-      "A timed FRM Part 1 diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $9.99 / 444-card Anki deck.",
+      "FRM Level 1 mock test (GARP names the exam Part 1): a timed diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $9.99 / 444-card Anki deck.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
     practiceTestLabel: "FRM Part 1 practice test",
   },

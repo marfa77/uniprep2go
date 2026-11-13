@@ -13,6 +13,7 @@ describe("intent pages visibility", () => {
   it("defines the initial high-intent visibility pages", () => {
     expect(intentPages.map((page) => page.slug)).toEqual([
       "best-frm-part-1-anki-deck",
+      "frm-part-1-anki-compared",
       "language-exam-vs-citizenship-civics-anki",
       "which-citizenship-anki-deck",
       "sell-anki-deck",
@@ -71,6 +72,8 @@ describe("intent pages visibility", () => {
     expect(urls).toContain(absoluteUrl("/sell-anki-deck"));
     expect(urls).toContain(absoluteUrl("/which-citizenship-anki-deck"));
     expect(urls).toContain(absoluteUrl("/language-exam-vs-citizenship-civics-anki"));
+    expect(urls).toContain(absoluteUrl("/best-frm-part-1-anki-deck"));
+    expect(urls).toContain(absoluteUrl("/frm-part-1-anki-compared"));
     expect(urls).not.toContain(absoluteUrl("/cursor-rules-for-indie-hackers"));
 
     expect(urls).toContain(absoluteUrl("/decks/frm-part-1-anki-deck"));
@@ -134,5 +137,27 @@ describe("intent pages visibility", () => {
         .filter((mock) => mock.status === "live")
         .every((mock) => isMockExamRunnable(mock.slug)),
     ).toBe(true);
+  });
+
+  it("frm-part-1-anki-compared keeps live-checked competitor facts", () => {
+    const page = intentPages.find((item) => item.slug === "frm-part-1-anki-compared");
+    expect(page).toBeDefined();
+    expect(page?.indexInSitemap).toBe(true);
+    expect(page?.directAnswer).toContain("$9.99");
+    expect(page?.directAnswer).toContain("CFA Level 1 Pass Pack ($29)");
+    expect(page?.directAnswer).toContain("40 cards");
+    expect(page?.directAnswer).toContain("13 October 2026");
+    expect(page?.directAnswer).toMatch(/\$519\.00/);
+    expect(page?.directAnswer).toMatch(/\$949\.00/);
+    expect(page?.directAnswer).toContain("Practice $349");
+    expect(page?.directAnswer).not.toMatch(/\$8\.99/);
+    expect(page?.comparisonTable?.rows.map((row) => row.name)).toEqual([
+      "UniPrep2Go FRM Part 1 Anki",
+      "AnkiWeb UniPrep LITE sample",
+      "Examius FRM",
+      "Bionic Turtle",
+      "AnalystPrep FRM Part 1",
+    ]);
+    expect(page?.comparisonTable?.rows.some((row) => /8\.99/.test(row.cells.join(" ")))).toBe(false);
   });
 });

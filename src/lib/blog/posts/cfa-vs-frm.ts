@@ -154,7 +154,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($9.99, 444 cards).",
+          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($9.99, 444 cards). A side-by-side with AnkiWeb, Examius, Bionic Turtle, and AnalystPrep is on [FRM Part 1 Anki compared](/frm-part-1-anki-compared) (facts checked 13 November 2026).",
         },
         {
           type: "p",

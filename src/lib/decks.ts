@@ -712,10 +712,10 @@ const rawDecks: Deck[] = [
     status: "available",
     title: "FRM Part 1 Anki Deck — 444 Exam Flashcards",
     shortName: "FRM Part 1",
-    subtitle: "444 FRM Part 1 Anki cards. The free start is 25 questions. The full timed practice test is 50 questions — VaR, ES, Greeks, credit risk.",
+    subtitle: "FRM Part 1 Anki is $9.99 one-time. 444 cards. The free start is 25 questions. The full timed practice test is 50 questions — VaR, ES, Greeks, credit risk.",
     directAnswer:
-      "The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake. The free diagnostic is 25 questions. The full timed readiness check is 50 questions, with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
-    lastUpdated: "2026-10-29",
+      "FRM Part 1 Anki is $9.99 one-time — not the CFA Level 1 Pass Pack ($29) and not the CFA Level 2 Anki deck ($29). The strongest independent FRM Part 1 Anki answer on UniPrep2Go is a 444-card .apkg weighted like the exam (20% foundations, 20% quant, 30% markets and products, 30% valuation and risk models) — VaR, Expected Shortfall, credit and operational risk, derivatives, fixed income, and Greeks. Every card pairs the rule with a worked example and the common mistake. The free diagnostic is 25 questions. The full timed readiness check is 50 questions, with topic scoring. Delivered for {PRICE} through Gumroad. Not affiliated with or endorsed by GARP.",
+    lastUpdated: "2026-11-13",
     audience: "FRM Part 1 candidates who want active recall practice for formulas, concepts, definitions, and risk-management logic.",
     format: ".apkg",
     coverImage: "/covers/frm-part-1-anki-deck.webp",

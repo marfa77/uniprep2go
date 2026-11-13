@@ -214,6 +214,10 @@ export function resolveDeckPriceLabel(
   return formatCatalogListPrice(deck.slug, formatKey);
 }
 
+export function formatCompactUsdAmount(amount: number) {
+  return amount % 1 === 0 ? `$${amount}` : `$${amount.toFixed(2)}`;
+}
+
 export function formatDeckPriceLabel(
   deck: Pick<PricedDeck, "price" | "checkoutProvider" | "pricePending">,
 ) {

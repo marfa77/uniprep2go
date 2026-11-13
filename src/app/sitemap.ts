@@ -59,12 +59,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority,
   }));
 
+  const intentLastModified: Record<string, Date> = {
+    "frm-part-1-anki-compared": parseSitemapDate("2026-11-13"),
+    "best-frm-part-1-anki-deck": parseSitemapDate("2026-11-13"),
+  };
   const intentPages = GOOGLE_SITEMAP_INTENT_SLUGS.map((slug) => ({
     url: `${siteUrl}/${slug}`,
-    lastModified: supportLastModified,
+    lastModified: intentLastModified[slug] ?? supportLastModified,
     changeFrequency: "monthly" as const,
     priority:
-      slug === "which-citizenship-anki-deck" || slug === "language-exam-vs-citizenship-civics-anki"
+      slug === "frm-part-1-anki-compared" || slug === "best-frm-part-1-anki-deck"
+        ? 0.86
+        : slug === "which-citizenship-anki-deck" || slug === "language-exam-vs-citizenship-civics-anki"
         ? 0.84
         : 0.7,
   }));
