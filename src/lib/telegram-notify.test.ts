@@ -62,6 +62,26 @@ describe("telegram checkout alerts", () => {
     expect(languageMessage).toContain(
       "https://pixidstudio.gumroad.com/l/leben-in-deutschland-anki-deck?wanted=true",
     );
+    expect(languageMessage).not.toContain("Click #:");
+  });
+
+  it("includes the deck checkout ordinal when provided", () => {
+    const deck = getCatalogDeckBySlug("ptcb-pharmacy-technician-anki-deck");
+    expect(deck).toBeDefined();
+
+    const message = toCheckoutClickMessage(
+      createFunnelEvent({
+        name: "checkout_click",
+        deckSlug: deck!.slug,
+        source: "mock:ptcb-pharmacy-technician-mock:hero:deck",
+        path: "/mock-exams/ptcb-pharmacy-technician-mock",
+      }),
+      deck,
+      { n: 3, since: "2026-11-13T18:04:48.338Z" },
+    );
+
+    expect(message).toContain("Click #: 3rd for this deck (since 2026-11-13)");
+    expect(message).toContain("Slug: ptcb-pharmacy-technician-anki-deck");
   });
 });
 

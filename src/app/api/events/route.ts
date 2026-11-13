@@ -7,6 +7,10 @@ import { isSpoofedBrowserFingerprint } from "@/lib/traffic-bot";
 import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { isAgentUserAgent } from "@/lib/mock-exams/miss-cohort";
 import {
+  recordCheckoutClickObservation,
+  type CheckoutClickObservation,
+} from "@/lib/checkout-click-count-store";
+import {
   recordMockStartObservation,
   recordUniqueMockStart,
   type MockStartObservation,
@@ -60,24 +64,6 @@ export async function POST(request: Request) {
       return new Response(null, { status: 204 });
     }
 
-    if (event.name === "checkout_click") {
-      const deck =
-        (await getPricedDeckBySlug(event.deckSlug)) ?? getCatalogDeckBySlug(event.deckSlug);
-
-      try {
-        const sent = await notifyCheckoutClick(event, deck);
-
-        if (!sent) {
-          console.warn("[telegram_notify] checkout alert not sent", {
-            deckSlug: event.deckSlug,
-            source: event.source,
-          });
-        }
-      } catch (error) {
-        console.error("[telegram_notify] checkout alert failed", error);
-      }
-    }
-
     if (
       event.name === "mock_paywall_view" ||
       event.name === "mock_pass_checkout_click" ||
@@ -105,10 +91,18 @@ export async function POST(request: Request) {
     }
 
     let mockStartObservation: MockStartObservation | null = null;
+    let checkoutClickObservation: CheckoutClickObservation | null = null;
 
     if (shouldRecordFunnelEvent(event, request)) {
       console.info("[funnel_event]", JSON.stringify(event));
       await recordFunnelEvent(event);
+      if (event.name === "checkout_click" && event.deckSlug) {
+        try {
+          checkoutClickObservation = await recordCheckoutClickObservation(event.deckSlug);
+        } catch (error) {
+          console.error("[checkout_click_obs] record failed", error);
+        }
+      }
       if (event.name === "mock_started" && !isAgentUserAgent(event.userAgent)) {
         const startSlug = parseMockSlugFromSource(event.source);
         if (startSlug) {
@@ -128,7 +122,25 @@ export async function POST(request: Request) {
       }
     }
 
-    // After funnel + observation count so Telegram can show “Nth start since …”
+    // After the observation count so Telegram can show “Nth click / Nth start since …”
+    if (event.name === "checkout_click") {
+      const deck =
+        (await getPricedDeckBySlug(event.deckSlug)) ?? getCatalogDeckBySlug(event.deckSlug);
+
+      try {
+        const sent = await notifyCheckoutClick(event, deck, checkoutClickObservation);
+
+        if (!sent) {
+          console.warn("[telegram_notify] checkout alert not sent", {
+            deckSlug: event.deckSlug,
+            source: event.source,
+          });
+        }
+      } catch (error) {
+        console.error("[telegram_notify] checkout alert failed", error);
+      }
+    }
+
     if (event.name === "mock_started") {
       const mockSlug = parseMockSlugFromSource(event.source);
       const mock = mockSlug ? getMockExamConfig(mockSlug) : undefined;

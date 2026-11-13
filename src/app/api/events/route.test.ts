@@ -154,6 +154,7 @@ describe("POST /api/events", () => {
 
     expect(response.status).toBe(204);
     expect(notifyCheckoutClick).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick.mock.calls[0]?.[2]).toBeNull();
     expect(notifyCheckoutClick.mock.calls[0]?.[0]).toMatchObject({
       country: "PT",
       acceptLanguage: "pt-PT,pt;q=0.9,en;q=0.8",
@@ -172,6 +173,32 @@ describe("POST /api/events", () => {
     ).toBe(false);
 
     delete process.env.FUNNEL_EXCLUDE_IPS;
+  });
+
+  it("counts a recorded deck checkout click before the Telegram alert", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const response = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-forwarded-for": "203.0.113.50",
+          "x-vercel-ip-country": "GB",
+        },
+        body: JSON.stringify({
+          name: "checkout_click",
+          deckSlug: "ptcb-pharmacy-technician-anki-deck",
+          source: "mock:ptcb-pharmacy-technician-mock:hero:deck",
+          path: "/mock-exams/ptcb-pharmacy-technician-mock",
+          destinationUrl: "https://pixidstudio.gumroad.com/l/yvifxh?wanted=true",
+        }),
+      }),
+    );
+
+    expect(response.status).toBe(204);
+    expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick.mock.calls[0]?.[2]).toMatchObject({ n: 1 });
   });
 
   it("sends Telegram alerts for recorded mock starts", async () => {

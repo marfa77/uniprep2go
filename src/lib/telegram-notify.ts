@@ -1,4 +1,5 @@
 import type { FunnelEvent } from "./analytics";
+import type { CheckoutClickObservation } from "./checkout-click-count-store";
 import type { AvailableDeck, CatalogAvailableDeck } from "./decks";
 import { formatDeckPriceLabel } from "./checkout-pricing";
 import type { MockStartObservation } from "./mock-exams/mock-start-count-store";
@@ -66,7 +67,11 @@ export async function getTelegramNotifyChatId() {
   return getMemoryNotifyChatId();
 }
 
-export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck | CatalogAvailableDeck) {
+export function toCheckoutClickMessage(
+  event: FunnelEvent,
+  deck?: AvailableDeck | CatalogAvailableDeck,
+  observation?: CheckoutClickObservation | null,
+) {
   const provider = deck?.checkoutProvider ?? "Checkout";
   const title = deck?.title ?? event.deckSlug;
   const price =
@@ -75,13 +80,23 @@ export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck 
       : "n/a";
   const checkoutUrl = deck?.checkoutUrl ?? "n/a";
 
-  return [
+  const lines = [
     "UniPrep2Go checkout click",
     "",
     `Deck: ${title}`,
     `Slug: ${event.deckSlug}`,
     `Provider: ${provider}`,
     `Price: ${price}`,
+  ];
+
+  if (observation && observation.n >= 1) {
+    const sinceDay = observation.since.slice(0, 10);
+    lines.push(
+      `Click #: ${formatMockStartOrdinal(observation.n)} for this deck (since ${sinceDay})`,
+    );
+  }
+
+  lines.push(
     `Source: ${event.source ?? "unknown"}`,
     `Path: ${event.path ?? "n/a"}`,
     `Destination: ${event.destinationUrl ?? checkoutUrl}`,
@@ -92,7 +107,9 @@ export function toCheckoutClickMessage(event: FunnelEvent, deck?: AvailableDeck 
     `Referrer: ${event.referrer ?? "direct"}`,
     `Checkout: ${checkoutUrl}`,
     `Time: ${event.occurredAt}`,
-  ].join("\n");
+  );
+
+  return lines.join("\n");
 }
 
 export function toMockStartedMessage(
@@ -143,6 +160,7 @@ export function toMockStartedMessage(
 export async function notifyCheckoutClick(
   event: FunnelEvent,
   deck?: AvailableDeck | CatalogAvailableDeck,
+  observation?: CheckoutClickObservation | null,
 ) {
   const chatId = await getTelegramNotifyChatId();
 
@@ -151,7 +169,7 @@ export async function notifyCheckoutClick(
     return false;
   }
 
-  return sendTelegramMessage(chatId, toCheckoutClickMessage(event, deck));
+  return sendTelegramMessage(chatId, toCheckoutClickMessage(event, deck, observation));
 }
 
 export async function notifyMockStarted(
