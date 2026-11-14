@@ -209,12 +209,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 9, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Each attempt draws 60 questions from a 120-item original bank covering all ten 2026 CFA Level I topics within the official weight ranges (bank: Ethics 20; FSA, Equity and Fixed Income 14 each; Portfolio Management 12; Quant, Economics and Alternatives 10 each; Corporate Issuers and Derivatives 8 each), so Mock Pass retakes see new items. Official exam: 180 three-option multiple-choice questions in two 135-minute sessions (4.5 hours); CFA Institute sets the minimum passing score (MPS) after each administration and does not publish a fixed percentage. Our items use four options at the same 90-second pace. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
+      "Each attempt draws 60 questions from a 300-item original bank covering all ten 2026 CFA Level I topics within the official weight ranges (bank: Ethics 50; FSA, Equity and Fixed Income 35 each; Portfolio Management 30; Quant, Economics and Alternatives 25 each; Corporate Issuers and Derivatives 20 each), so Mock Pass retakes see new items. Official exam: 180 three-option multiple-choice questions in two 135-minute sessions (4.5 hours); CFA Institute sets the minimum passing score (MPS) after each administration and does not publish a fixed percentage. Our items use four options at the same 90-second pace. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question CFA Level 1 readiness diagnostic (free 25-question version) with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "cfa-level-2-readiness-check",
@@ -248,12 +248,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "portfolio", label: "Portfolio Management", questionCount: 6, weightPercent: 10, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Readiness check with six mini-vignette questions in each of the ten 2026 CFA Level II topics (2 minutes per question), drawn from a 120-question bank (12 per topic) so retakes see new cases. Official exam: 88 item-set questions in 22 vignettes across two 132-minute sessions (4h24 total); topic weights run 5-15%; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
+      "Readiness check with six mini-vignette questions in each of the ten 2026 CFA Level II topics (2 minutes per question), drawn from a 250-question bank (25 per topic) so retakes see new cases. Official exam: 88 item-set questions in 22 vignettes across two 132-minute sessions (4h24 total); topic weights run 5-15%; CFA Institute sets the minimum passing score (MPS) after each administration. UniPrep2Go readiness target: 70%. Not a full CFA Institute mock exam.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question, 120-minute CFA Level 2 readiness diagnostic: short case vignettes with calculations and judgment calls, scored per topic across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "us-citizenship-readiness-check",
@@ -317,12 +317,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     officialSourceNote:
       "Readiness check aligned to 2026 FRM Part 1 topic weights. Official exam: 100 multiple-choice questions, 4 hours; GARP does not publish a fixed passing score and sets the cutoff each cycle. UniPrep2Go readiness target: 70%. Not official GARP exam material.",
     questionSourceNote:
-      "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 120-item bank weighted 24 Foundations / 24 Quantitative Analysis / 36 Financial Markets and Products / 36 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Most were written for the mock; the rest are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50 in the topic mix, so retakes see new questions.",
+      "Original UniPrep2Go questions for the FRM Part 1 readiness check: a 250-item bank weighted 50 Foundations / 50 Quantitative Analysis / 75 Financial Markets and Products / 75 Valuation and Risk Models, mostly calculation and scenario questions with a teaching note on every wrong answer. Most were written for the mock; the rest are converted from worked examples in the 444-card FRM Part 1 Anki deck. Each attempt draws 50 in the topic mix, so retakes see new questions.",
     disclaimer: financeDisclaimer,
     description:
-      "FRM Part 1 readiness diagnostic. The free start is 25 questions. The full check is 50 questions drawn from a 120-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
+      "FRM Part 1 readiness diagnostic. The free start is 25 questions. The full check is 50 questions drawn from a 250-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "series-7-readiness-check",
@@ -350,12 +350,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s7-f4", label: "Obtains and Verifies Customer Instructions", questionCount: 8, weightPercent: 11, targetPercent: 72 },
     ],
     officialSourceNote:
-      "Each attempt draws 60 questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions) from a 120-question bank of original scenario and calculation items, so Mock Pass retakes see new questions. Every wrong answer has a teaching note. Official Series 7 Top-Off: 130 questions (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale, FINRA fee $395. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
+      "Each attempt draws 60 questions weighted like FINRA's Series 7 outline (4 Seeks Business / 6 Opens Accounts / 42 Investment Recommendations / 8 Customer Instructions) from a 250-question bank of original scenario and calculation items, so Mock Pass retakes see new questions. Every wrong answer has a teaching note. Official Series 7 Top-Off: 130 questions (125 scored + 5 unscored pretest), 3 hours 45 minutes, passing score 72 on FINRA's equated scale, FINRA fee $395. UniPrep2Go readiness target: 72%. Not a full official FINRA practice exam.",
     disclaimer: financeDisclaimer,
     description:
-      "A 60-question Series 7 readiness diagnostic (free 25-question version) drawn from a 120-question bank: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
+      "A 60-question Series 7 readiness diagnostic (free 25-question version) drawn from a 250-question bank: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "series-63-readiness-check",
@@ -387,12 +387,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "s63-iar", label: "Investment Adviser Representatives", weightPercent: 5, targetPercent: 72, questionCount: 3 },
     ],
     officialSourceNote:
-      "Each 60-question session is drawn from a bank of 120 original scenario questions with the same per-area counts as NASAA's scored Series 63 (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs), so retakes see new questions; every wrong answer has a teaching note. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
+      "Each 60-question session is drawn from a bank of 250 original scenario questions. The session keeps NASAA's scored Series 63 mix (15 ethics, 12 communications, 8 agents, 7 broker-dealers, 7 remedies, 5 securities, 3 investment advisers, 3 IARs), so retakes see new questions; every wrong answer has a teaching note. Official exam: 65 questions (60 scored + 5 unscored pretest) in 75 minutes; pass = 43 of 60 scored (72%). Not official NASAA exam material.",
     disclaimer: financeDisclaimer,
     description:
       "A 60-question Series 63 readiness diagnostic (free 25-question version) on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
     examBody: "NASAA",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "california-real-estate-readiness-check",
@@ -461,12 +461,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "ins-disability-ltc", label: "Disability and Long-Term Care", weightPercent: 9, questionCount: 5, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Each attempt draws 60 questions in this topic mix from a bank of 120 original items, so retakes see new questions. Life & Health licensing exams are set by each state, and length varies; check your state's candidate handbook for its outline, length and pass score.",
+      "Each attempt draws 60 questions in this topic mix from a bank of 250 original items, so retakes see new questions. Life & Health licensing exams are set by each state, and length varies; check your state's candidate handbook for its outline, length and pass score.",
     disclaimer: financeDisclaimer,
     description:
-      "A timed 60-question Life & Health insurance licensing readiness diagnostic drawn from a 120-item original bank: health plans, life policies, provisions and riders, annuities, taxation, regulation, disability and long-term care.",
+      "A timed 60-question Life & Health insurance licensing readiness diagnostic drawn from a 250-item original bank: health plans, life policies, provisions and riders, annuities, taxation, regulation, disability and long-term care.",
     examBody: "State insurance licensing authorities",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "property-casualty-insurance-readiness-check",
@@ -497,12 +497,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       { id: "pc-policy-regulation", label: "Policy Conditions and Regulation", weightPercent: 7, questionCount: 4, targetPercent: 70 },
     ],
     officialSourceNote:
-      "Each attempt draws 60 questions in this topic mix from a bank of 120 original items, so retakes see new questions. Property & Casualty licensing exams are set by each state, and length varies; check your state's candidate handbook for its outline, length and pass score.",
+      "Each attempt draws 60 questions in this topic mix from a bank of 250 original items, so retakes see new questions. Property & Casualty licensing exams are set by each state, and length varies; check your state's candidate handbook for its outline, length and pass score.",
     disclaimer: financeDisclaimer,
     description:
-      "A timed 60-question Property & Casualty insurance licensing readiness diagnostic drawn from a 120-item original bank: dwelling and homeowners, casualty and liability, personal and commercial auto, property basics, commercial property, general concepts, and policy conditions.",
+      "A timed 60-question Property & Casualty insurance licensing readiness diagnostic drawn from a 250-item original bank: dwelling and homeowners, casualty and liability, personal and commercial auto, property basics, commercial property, general concepts, and policy conditions.",
     examBody: "State insurance licensing authorities",
-    lastUpdated: "2026-11-04",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "servsafe-manager-mock",

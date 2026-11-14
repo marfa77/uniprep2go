@@ -769,7 +769,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free FRM Part 1 practice test?",
         answer:
-          "The free start is 25 questions, no signup. The full FRM Part 1 readiness check is 50 questions at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each full attempt draws from a 100-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
+          "The free start is 25 questions, no signup. The full FRM Part 1 readiness check is 50 questions at uniprep2go.study/mock-exams/frm-part-1-readiness-check. Each full attempt draws from a 250-question bank in the exam's topic weights, then you drill weak topics in this Anki deck.",
       },
       {
         question: "Is this a question bank?",

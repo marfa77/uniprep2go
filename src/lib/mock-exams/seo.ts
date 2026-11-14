@@ -343,7 +343,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Life & Health Insurance Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A Life & Health insurance licensing practice test — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic drawn from a 120-item original bank so retakes differ, with topic scoring — free 25-question diagnostic, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
+      "A Life & Health insurance licensing practice test — health insurance, life basics, provisions, annuities, disability, LTC, and regulation. Timed 60-question diagnostic drawn from a 250-item original bank so retakes differ, with topic scoring — free 25-question diagnostic, no signup. Drill weak areas in the 250-card Life & Health Anki deck between sittings.",
     audience: "Insurance producer candidates preparing for state Life & Health licensing exams.",
     practiceTestLabel: "Life & Health insurance practice test",
   },
@@ -416,7 +416,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Property & Casualty Insurance Readiness Check",
     intro:
-      "A timed 60-question P&C licensing diagnostic drawn from a 120-item bank: homeowners and dwelling, personal and commercial auto, commercial property, liability, and regulation. State exams set their own length and pass score.",
+      "A timed 60-question P&C licensing diagnostic drawn from a 250-item bank: homeowners and dwelling, personal and commercial auto, commercial property, liability, and regulation. State exams set their own length and pass score.",
     audience: "Property & Casualty insurance producer candidates preparing for state licensing exams.",
     practiceTestLabel: "Property & Casualty insurance practice test",
   },
