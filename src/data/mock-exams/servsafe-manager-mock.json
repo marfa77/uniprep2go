@@ -3465,6 +3465,501 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "servsafe-manager-mock-foodborne-illness-201",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "During pre-shift lineup, the chef describes a prep cook's situation from this morning. Which situation must the manager report to the regulatory authority?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A doctor's diagnosis of Salmonella Typhi in this cook."
+      },
+      {
+        "id": "b",
+        "text": "A head cold with a runny nose and no fever, vomiting, diarrhea, or jaundice."
+      },
+      {
+        "id": "c",
+        "text": "A sore throat with fever that started before the prep cook came in to work."
+      },
+      {
+        "id": "d",
+        "text": "An infected cut on the hand, covered with a finger cot and a single-use glove."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Salmonella Typhi is one of six illnesses the manager must report to the regulatory authority: Norovirus, hepatitis A, Salmonella Typhi, nontyphoidal Salmonella, Shigella spp., and Shiga toxin-producing E. coli. A runny nose, a sore throat with fever, or a covered cut on the hand is not that call. A handler diagnosed with Salmonella Typhi must also be excluded from the operation.",
+    "distractorExplanations": {
+      "b": "A runny nose means the cook stays off exposed food, clean equipment, and utensils. It is not one of the six illnesses the manager reports to the regulatory authority.",
+      "c": "The cook tells the manager about a sore throat with fever. The manager then restricts work with exposed food, or excludes the cook in a high-risk operation. That symptom is not reported to the regulatory authority.",
+      "d": "A hand wound covered with a finger cot and a single-use glove can stay in the operation. It is not a diagnosed illness the manager reports to the regulatory authority."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-202",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "A bartender's coworker points out yellow skin and yellow eyes that appeared yesterday, while they restock the service well before dinner. The bartender has not vomited. What should the manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the bartender finish the shift because there is no vomiting or diarrhea."
+      },
+      {
+        "id": "b",
+        "text": "Exclude the bartender from the operation and report the jaundice."
+      },
+      {
+        "id": "c",
+        "text": "Move the bartender to polishing glassware, since that station stays away from drinks."
+      },
+      {
+        "id": "d",
+        "text": "Wait for a doctor visit next week before changing the bartender's duties tonight."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Jaundice that appeared yesterday, yellow skin and eyes, requires exclusion from the operation even when the bartender has not vomited. The manager must report it to the regulatory authority because jaundice can signal hepatitis A. Polishing glassware is still work in the operation, and waiting for a later visit delays the exclusion and the report.",
+    "distractorExplanations": {
+      "a": "Absence of vomiting does not cancel the rule. Jaundice by itself excludes the bartender and must be reported.",
+      "c": "Exclusion means leaving the operation. Polishing glassware keeps the bartender at work and does not meet the rule.",
+      "d": "The manager acts when jaundice is seen. Waiting for a later appointment leaves a reportable symptom in the operation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-203",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Mid-shift, a dishwasher says diarrhea started before work and has continued through the lunch rush. No doctor has named an illness. What must the manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the dishwasher stay if they switch to a hand sink and wash more often than usual."
+      },
+      {
+        "id": "b",
+        "text": "Move the dishwasher to dry storage, where they will not touch plates, glasses, or food."
+      },
+      {
+        "id": "c",
+        "text": "Exclude the dishwasher from the operation rather than moving stations."
+      },
+      {
+        "id": "d",
+        "text": "Allow the rest of the shift if the dishwasher takes an anti-diarrheal tablet first."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Diarrhea excludes a food handler from the operation even before a doctor names an illness. The dishwasher cannot finish the shift, move to dry storage, or rely on medicine that hides the symptom. Those choices leave a sick person in the operation, where the illness can spread to surfaces and food.",
+    "distractorExplanations": {
+      "a": "Extra handwashing does not lift an exclusion. Diarrhea means the dishwasher must leave the operation.",
+      "b": "Dry storage is still part of the operation. Exclusion is not a transfer to another station.",
+      "d": "Medicine that hides diarrhea does not make it safe to keep working. The dishwasher must be excluded."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-204",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "A busser leaves the dining room and vomits into a trash can beside the dish machine. The busser wants to wipe tables for the rest of dinner service. What is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the busser wipe tables if they wear gloves and stay out of the kitchen line."
+      },
+      {
+        "id": "b",
+        "text": "Assign the busser to rolling silverware, because that task is away from the guests."
+      },
+      {
+        "id": "c",
+        "text": "Allow the busser to keep wiping tables if they feel steady for the rest of dinner."
+      },
+      {
+        "id": "d",
+        "text": "Exclude the busser from the operation rather than reassigning the work."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Vomiting excludes a food handler from the operation right away, with or without a named diagnosis. Wiping tables, rolling silverware, and staying because the nausea seems to have passed are still work inside the operation. The busser must leave so the illness is not spread to tables, utensils, or food.",
+    "distractorExplanations": {
+      "a": "Gloves and staying out of the kitchen do not replace exclusion. Someone who has vomited cannot keep working the dining room.",
+      "b": "Rolling silverware is still a task in the operation. Vomiting requires the busser to be excluded, not reassigned.",
+      "c": "Feeling steady after vomiting does not clear the busser to keep wiping tables. Vomiting excludes a food handler from the operation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-205",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "One pot of mushroom sauce is split in two. The cook stirs a heavy splash of vinegar into the first pan and leaves the second pan plain. Which FAT TOM condition changed, and which pan favors bacterial growth?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acidity; the plain pan, with little or no acid, favors bacterial growth."
+      },
+      {
+        "id": "b",
+        "text": "Oxygen; the plain pan, because it was not stirred and more air stays in that sauce."
+      },
+      {
+        "id": "c",
+        "text": "Moisture; the vinegar pan, because the splash of vinegar adds water that bacteria can use to grow."
+      },
+      {
+        "id": "d",
+        "text": "Food; the plain pan, because the mushroom sauce feeds bacteria when vinegar is left out of it."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In FAT TOM, A is acidity. Bacteria grow best in food with little or no acid, so the plain mushroom sauce favors growth more than the pan the cook soured with vinegar. The splash changed acidity. It did not change how much air or water the sauce has, and both pans are still food.",
+    "distractorExplanations": {
+      "b": "Leaving the plain pan unstirred does not change its oxygen. Vinegar changes acidity, and the low-acid pan is the one that favors bacterial growth.",
+      "c": "A splash of vinegar does not turn this into a moisture problem, and it does not make the vinegar pan the riskier one. The condition that changed is acidity.",
+      "d": "Both pans are still food. Leaving vinegar out of the plain pan changes acidity, not the food condition in FAT TOM."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-206",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Cooled beef stock is ladled into jars, the air is pressed out, and the lids are sealed. The jars then sit on a speed rack in the kitchen. Which FAT TOM condition did sealing change, and what remains true?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Food changed; the sealed lid blocks bacteria from reaching the nutrients in the stock."
+      },
+      {
+        "id": "b",
+        "text": "Oxygen changed; some bacteria keep growing when the air in the jar is limited."
+      },
+      {
+        "id": "c",
+        "text": "Moisture changed; the sealed jars hold the water in, so bacteria keep growing in the stock."
+      },
+      {
+        "id": "d",
+        "text": "Temperature changed; a sealed lid keeps the cooled stock from warming on the speed rack."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "O in FAT TOM is oxygen. Pressing air out of a jar and sealing it limits the oxygen in the stock. Some bacteria keep growing when oxygen is limited or absent, so a tight lid does not make the stock safe while it sits on a speed rack. Sealing does not block the nutrients, change the water already in the stock, or hold its temperature.",
+    "distractorExplanations": {
+      "a": "The sealed stock still has its nutrients. A lid does not change the food condition in FAT TOM; it changes how much oxygen is in the jar.",
+      "c": "Moisture did not change when the jars were sealed. The water was already in the stock. Sealing changes oxygen, and some bacteria grow when that air is limited.",
+      "d": "A lid does not hold the stock's temperature. Sealing changes oxygen, and some bacteria keep growing when that air is limited."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-207",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Dried chickpeas sit in dry storage beside a hotel pan of those same chickpeas, cooked this morning and held for the salad station. Which FAT TOM condition explains why the pan supports bacterial growth and the dried chickpeas do not?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Time: the cooked chickpeas have sat since morning, and the dried ones have not had that time to grow."
+      },
+      {
+        "id": "b",
+        "text": "Food: the dried chickpeas are no longer a food that supports bacterial growth, and the cooked pan is."
+      },
+      {
+        "id": "c",
+        "text": "Moisture: the cooked chickpeas hold available water that lets bacteria grow."
+      },
+      {
+        "id": "d",
+        "text": "Oxygen: the open hotel pan gives the cooked chickpeas the air that dried chickpeas in storage do not get."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "M in FAT TOM is moisture. Bacteria grow well when water is available in the food, as in chickpeas cooked and held for the salad station. Dried chickpeas lack that available water, so they do not support the same growth while they stay dry. They are still food, and time in storage is not what keeps them stable.",
+    "distractorExplanations": {
+      "a": "Time is not the difference. Dried chickpeas can sit in storage without bacterial growth because water is not available. The cooked pan supports growth because of moisture.",
+      "b": "Dried chickpeas do not support growth, but they are still food. The condition that explains the difference is moisture, the available water in the cooked pan.",
+      "d": "An open pan has air, but that is not why these cooked chickpeas support growth and the dried ones do not. The difference is available water."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-208",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Fluid from an infected finger drips into a bowl of mixed greens while a salad cook tosses them. The cook had left the cut uncovered. What type of contamination is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Physical contamination, because the fluid from the cut is a foreign object in the greens."
+      },
+      {
+        "id": "b",
+        "text": "Chemical contamination, because wound fluid belongs with cleaners and sanitizers."
+      },
+      {
+        "id": "c",
+        "text": "Physical contamination, because an uncovered wound counts as a bandage or other foreign object in the greens."
+      },
+      {
+        "id": "d",
+        "text": "Biological contamination from pathogens carried in the uncovered wound."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Fluid from an infected wound can carry pathogens, so the greens have biological contamination. Biological hazards are bacteria, viruses, and parasites. A bandage, glass, or metal fragment would be physical contamination, and a cleaner or sanitizer would be chemical. Discard the greens.",
+    "distractorExplanations": {
+      "a": "The hazard in the fluid is a pathogen, not a visible object. Foreign objects such as glass or metal shavings are physical contamination.",
+      "b": "Fluid from an infected wound is not a cleaner or sanitizer. Pathogens in that fluid make this biological contamination.",
+      "c": "A bandage that falls into food is a physical hazard. The drip from this uncovered infected cut carries pathogens, so the greens are biologically contaminated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-209",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Drops of glass cleaner fall from a bottle stored above the salad station onto lettuce that was just washed. What type of contamination is this, and what should happen to the lettuce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chemical contamination from the cleaner, so discard the lettuce."
+      },
+      {
+        "id": "b",
+        "text": "Biological contamination; rinse the lettuce once more and put it back on the station for service."
+      },
+      {
+        "id": "c",
+        "text": "Physical contamination; shake the drops off the leaves and serve the rest of the lettuce."
+      },
+      {
+        "id": "d",
+        "text": "Chemical contamination; wipe the lettuce with a sanitized cloth and return it to the station."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Glass cleaner is a chemical hazard. Lettuce that cleaner has dripped on is chemically contaminated and must be discarded. Rinsing it, shaking the drops off, or wiping it with a sanitized cloth does not make a chemical spill on ready-to-eat food safe to serve.",
+    "distractorExplanations": {
+      "b": "Glass cleaner is not a pathogen. A rinse does not turn chemically contaminated lettuce into food that can go back on the station.",
+      "c": "The drops are a chemical, not a physical object that can be shaken off. The lettuce has to be thrown away.",
+      "d": "The cleaner is a chemical hazard, but wiping the leaves does not clear it. Ready-to-eat lettuce that glass cleaner has dripped on has to be discarded."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-210",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "A diner sends back a bowl of penne because a plastic bread-bag clip is buried in the noodles. The clip fell in while a cook opened a bag over the sauté pan. What type of contamination is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Biological contamination, because an object that falls into the pasta brings pathogens with it."
+      },
+      {
+        "id": "b",
+        "text": "Physical contamination from a foreign object that fell into the pasta."
+      },
+      {
+        "id": "c",
+        "text": "Chemical contamination, because a plastic clip is grouped with cleaners and sanitizers."
+      },
+      {
+        "id": "d",
+        "text": "Biological contamination from the cook's hands that opened the bag over the sauté pan."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A bread-bag clip is a foreign object, so this is physical contamination. Physical hazards include plastic, glass, metal, jewelry, bones, and bandages that get into food. The clip is not a pathogen, and it is not a cleaner or sanitizer. The penne should not be served.",
+    "distractorExplanations": {
+      "a": "A foreign object does not become biological contamination just because it fell into the pasta. The clip is a physical hazard.",
+      "c": "Plastic in food is a physical hazard, not a chemical cleaner or sanitizer. The contamination type is physical.",
+      "d": "Hands can transfer pathogens in other situations, but the hazard the diner found is the plastic clip, a physical object."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-211",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "The garde manger hands over a doctor's note that confirms hepatitis A and asks to work the dish machine instead of the cold station. What is the correct action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the employee wash dishes, because the cold station is where hepatitis A creates the risk."
+      },
+      {
+        "id": "b",
+        "text": "Restrict the employee to boxed ingredients until yellow skin or yellow eyes show up."
+      },
+      {
+        "id": "c",
+        "text": "Exclude the employee from the operation and notify the regulatory authority."
+      },
+      {
+        "id": "d",
+        "text": "Keep the employee on shift if they wear gloves and file the doctor's note after the weekend."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Hepatitis A is one of the six reportable illnesses. A food handler diagnosed with it must be excluded from the whole operation, not moved to the dish machine or to boxed ingredients. The manager notifies the regulatory authority. Gloves do not make it acceptable to stay at work, and the manager does not wait for jaundice before acting on the diagnosis.",
+    "distractorExplanations": {
+      "a": "The dish machine is still inside the operation. Hepatitis A requires exclusion from the operation, not a move off the cold station.",
+      "b": "The manager does not wait for jaundice. A hepatitis A diagnosis itself requires exclusion and a report to the regulatory authority.",
+      "d": "Gloves do not control a diagnosed case of hepatitis A. The employee is excluded, and the regulatory authority is notified now."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-212",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Clinic paperwork for the grill cook names nontyphoidal Salmonella, and the cook has had diarrhea since last night. The cook says they can still grill burgers through dinner. What should the manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the cook grill, because nontyphoidal Salmonella sits outside the illnesses a manager must report."
+      },
+      {
+        "id": "b",
+        "text": "Keep the cook on the grill but away from plates, since this diarrhea does not require leaving the restaurant."
+      },
+      {
+        "id": "c",
+        "text": "Wait for yellow skin before excluding the cook or calling the regulatory authority about the paperwork."
+      },
+      {
+        "id": "d",
+        "text": "Exclude the cook from the operation and report the diagnosis to the authority."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Nontyphoidal Salmonella is one of the six illnesses that must be reported to the regulatory authority, along with Norovirus, hepatitis A, Salmonella Typhi, Shigella spp., and Shiga toxin-producing E. coli. Diarrhea already excludes the cook from the operation. The diagnosis adds the duty to report. Jaundice is a different symptom and is not a reason to delay.",
+    "distractorExplanations": {
+      "a": "Nontyphoidal Salmonella is on the reportable list. The manager does not leave the cook on the grill.",
+      "b": "Diarrhea requires exclusion from the operation. Staying on the grill, even away from plates, is still working while symptomatic.",
+      "c": "Jaundice is not the cue for nontyphoidal Salmonella. Diarrhea plus this diagnosis already requires exclusion and a report."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-213",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Houseflies are crawling across potato salad on a buffet the restaurant is catering. The manager knows flies can move feces onto ready-to-eat food. Which reportable illness is most closely tied to that route?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Shigella spp., linked with ready-to-eat salads that people have handled."
+      },
+      {
+        "id": "b",
+        "text": "Salmonella Typhi, the illness carried in the human bloodstream and intestinal tract."
+      },
+      {
+        "id": "c",
+        "text": "Nontyphoidal Salmonella, the illness linked with poultry, eggs, meat, and dairy."
+      },
+      {
+        "id": "d",
+        "text": "Hepatitis A, the virus linked with shellfish and with ready-to-eat food handled while sick."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Shigella spp. is spread through feces, and flies that land on food are a route linked with this illness. People also transfer it when unwashed hands touch ready-to-eat food such as potato salad. Salmonella Typhi, nontyphoidal Salmonella, and hepatitis A are reportable too, but they are not the fly-associated illness. Discard the salad the flies crawled on.",
+    "distractorExplanations": {
+      "b": "Salmonella Typhi is carried in people and is linked with ready-to-eat food and beverages. Flies moving feces onto potato salad point to Shigella spp.",
+      "c": "Nontyphoidal Salmonella is linked with poultry, eggs, meat, dairy, and produce. The fly route in this lesson is Shigella spp.",
+      "d": "Hepatitis A spreads through feces, often by ready-to-eat food and contaminated water or shellfish. Flies on a salad are taught with Shigella spp."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-214",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "Bagged romaine for the steakhouse salads is recalled because the fields were irrigated with water running off a cattle feedlot. No guest is sick yet. Which reportable illness fits this recall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Norovirus, the illness a vomiting guest spreads to ready-to-eat pastries and to shellfish."
+      },
+      {
+        "id": "b",
+        "text": "Shiga toxin-producing E. coli, the illness linked with cattle and with produce."
+      },
+      {
+        "id": "c",
+        "text": "Salmonella Typhi, the illness carried in people and linked with beverages handled by a sick cook."
+      },
+      {
+        "id": "d",
+        "text": "Hepatitis A, the virus a food handler can spread before yellow skin or yellow eyes appear."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Shiga toxin-producing E. coli lives in the intestines of cattle and is linked with contaminated produce as well as ground beef. Romaine irrigated with water running off a cattle feedlot fits that illness. Norovirus, Salmonella Typhi, and hepatitis A are reportable, but they are not the cattle-and-produce illness. Do not serve the recalled romaine.",
+    "distractorExplanations": {
+      "a": "Norovirus is spread by people, often through vomit and ready-to-eat food or shellfish. Cattle runoff onto romaine points to Shiga toxin-producing E. coli.",
+      "c": "Salmonella Typhi lives in people, not in cattle. Beverages handled by a carrier are its usual link, not a feedlot-runoff recall.",
+      "d": "Hepatitis A comes from human feces, often through a food handler or shellfish. Feedlot water on romaine fits Shiga toxin-producing E. coli."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-foodborne-illness-215",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "foodborne-illness",
+    "prompt": "A child vomits next to the dessert station, and droplets land on uncovered fruit tarts. Which reportable illness is the main concern, and what should happen to those tarts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Salmonella Typhi; wipe each tart with a sanitized cloth and put it back on the stand."
+      },
+      {
+        "id": "b",
+        "text": "Shiga toxin-producing E. coli; move the tarts to a clean platter and keep selling them tonight."
+      },
+      {
+        "id": "c",
+        "text": "Norovirus; discard the fruit tarts that vomit droplets may have reached."
+      },
+      {
+        "id": "d",
+        "text": "Nontyphoidal Salmonella; cover the tarts and sell them after the dessert station is wiped down."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Norovirus is the reportable illness most often spread when an infected person vomits. Very small amounts of vomit can contaminate nearby ready-to-eat food, so uncovered tarts that droplets may have reached must be discarded. Wiping the tarts, moving them to a clean platter, or covering them after the station is wiped leaves the virus on the food. The other three illnesses are reportable, but this scene points to Norovirus.",
+    "distractorExplanations": {
+      "a": "Salmonella Typhi is not the illness this vomit scene points to, and a sanitized cloth does not make droplet-hit tarts safe to put back.",
+      "b": "Shiga toxin-producing E. coli is linked with cattle, ground beef, and contaminated produce. Replating tarts does not remove vomit droplets.",
+      "d": "Nontyphoidal Salmonella is linked with poultry, eggs, meat, and produce, not with vomit droplets. Covering the tarts and wiping the station leaves Norovirus on the food."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "servsafe-manager-mock-106",
     "examSlug": "servsafe-manager-mock",
     "topicId": "time-temperature",
@@ -3960,6 +4455,501 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "servsafe-manager-mock-time-temperature-201",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A roast cook pulls a whole turkey breast from the oven, and the center of the meat reads 158°F. What should happen before the turkey is carved for the buffet?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep roasting until the center reaches 165°F."
+      },
+      {
+        "id": "b",
+        "text": "Carve it now, because poultry is safe once the center passes 145°F."
+      },
+      {
+        "id": "c",
+        "text": "Move it to the steam table, since 135°F is enough to finish poultry."
+      },
+      {
+        "id": "d",
+        "text": "Carve it for the buffet; 158°F is already past the 155°F ground-meat line."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Poultry, including this turkey breast, must reach 165°F before service. The center is only 158°F, so roasting continues until the probe reads 165°F.",
+    "distractorExplanations": {
+      "b": "145°F is the cooking line for seafood, steaks, chops, and eggs served immediately, not for a turkey breast.",
+      "c": "135°F is the hot-holding minimum. It does not finish cooking poultry that is still at 158°F.",
+      "d": "155°F is the ground-meat line, not the finish temperature for poultry. A turkey breast at 158°F still has to reach 165°F before it is carved."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-202",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Sheet-pan meatballs made from ground pork come out of the oven, and a probe in the center of one meatball reads 149°F. What minimum must the meatballs reach?",
+    "options": [
+      {
+        "id": "a",
+        "text": "145°F, the same minimum used for a whole pork chop served immediately."
+      },
+      {
+        "id": "b",
+        "text": "155°F, the minimum for ground meat."
+      },
+      {
+        "id": "c",
+        "text": "165°F, because pork is cooked to the same temperature as poultry."
+      },
+      {
+        "id": "d",
+        "text": "135°F, so they can go straight onto the steam table."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Ground meat, including these pork meatballs, must reach 155°F. A center temperature of 149°F is still short, so cooking continues until a meatball reads 155°F.",
+    "distractorExplanations": {
+      "a": "145°F fits a whole chop or steak for immediate service. Grinding the pork raises the required temperature to 155°F.",
+      "c": "165°F is for poultry and stuffing. Ground pork is ground meat and stops at 155°F, which these meatballs have not reached.",
+      "d": "135°F is hot holding, not the cooking minimum. The meatballs are still at 149°F and are not ready to hold."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-203",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A grill cook plates a salmon fillet for a guest who is waiting at the table, and the thickest part of the fillet reads 145°F. What should the cook do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep grilling until the fillet reaches 165°F, the temperature used for poultry."
+      },
+      {
+        "id": "b",
+        "text": "Keep grilling until the fillet reaches 155°F, the temperature used for ground meat."
+      },
+      {
+        "id": "c",
+        "text": "Serve the fillet; seafood for immediate service is done at 145°F."
+      },
+      {
+        "id": "d",
+        "text": "Leave the fillet under the heat lamp; at 145°F it should be hot-held, not plated for the guest."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Seafood cooked for immediate service, including this salmon fillet, must reach 145°F. The thickest part already reads 145°F, so the fillet can be served.",
+    "distractorExplanations": {
+      "a": "165°F is the poultry and stuffing minimum. This salmon fillet is seafood for immediate service and is done at 145°F.",
+      "b": "155°F is the ground-meat minimum. A salmon fillet served immediately is cooked to 145°F, which it has reached.",
+      "d": "Hot holding is 135°F or above for food that is being held. This salmon is for immediate service, it already reads 145°F, and the guest is waiting, so it is plated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-204",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "During breakfast service, a cook finishes two fried eggs for a plated order, and the thickest part of the eggs reads 145°F. How should the order be handled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Return the eggs to the pan until they reach 165°F, the poultry temperature."
+      },
+      {
+        "id": "b",
+        "text": "Return the eggs to the pan until they reach 155°F, the ground-meat temperature."
+      },
+      {
+        "id": "c",
+        "text": "Hold the eggs on the steam table at 135°F before the plate goes out."
+      },
+      {
+        "id": "d",
+        "text": "Serve the eggs; eggs for immediate service are done at 145°F."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Eggs cooked for immediate service, such as these fried eggs for a plated order, must reach 145°F. The thickest part already reads 145°F, so the order can go out.",
+    "distractorExplanations": {
+      "a": "165°F is for poultry and stuffing, not for eggs cooked and served right away at 145°F.",
+      "b": "155°F is the ground-meat line. These eggs are for immediate service and are done at 145°F.",
+      "c": "135°F is a hot-holding temperature. The eggs were cooked to order and already meet 145°F."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-205",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A pantry cook checks sliced turkey in the sandwich-station cold well, and the turkey reads 39°F. What does that reading allow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep it in the well; cold holding is 41°F or below."
+      },
+      {
+        "id": "b",
+        "text": "Discard it, because any temperature under 135°F puts turkey in the danger zone."
+      },
+      {
+        "id": "c",
+        "text": "Reheat the turkey to 165°F before it is used on sandwiches."
+      },
+      {
+        "id": "d",
+        "text": "Move it to the steam table, because 39°F is too cold to serve."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cold TCS food must be held at 41°F or below. Sliced turkey at 39°F meets that cold-holding limit and can stay in the well.",
+    "distractorExplanations": {
+      "b": "The danger zone runs from 41°F to 135°F. Turkey at 39°F is below 41°F, so it is in cold holding, not in the danger zone.",
+      "c": "165°F is the cooking temperature for poultry. This turkey is already cooked and is being cold-held at 39°F.",
+      "d": "39°F is an acceptable cold-holding temperature. The steam table is for food held at 135°F or above."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-206",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Just before the dinner line opens, a pan of mashed potatoes on the steam table reads 138°F. What should the cook do with the potatoes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reheat them to 165°F, because every hot-held food must reach the poultry temperature."
+      },
+      {
+        "id": "b",
+        "text": "Leave them; 138°F meets hot holding."
+      },
+      {
+        "id": "c",
+        "text": "Bring them up to 145°F before service, the temperature used for chops and seafood."
+      },
+      {
+        "id": "d",
+        "text": "Discard them, because 138°F still sits inside the danger zone."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Hot TCS food must be held at 135°F or above. Mashed potatoes at 138°F meet that line and can stay on the steam table.",
+    "distractorExplanations": {
+      "a": "165°F is for cooking poultry and stuffing, and for reheating leftovers. These potatoes are already at 138°F, which meets hot holding.",
+      "c": "145°F is the cooking temperature for seafood, steaks, chops, and eggs for immediate service. Potatoes at 138°F already meet hot holding at 135°F or above.",
+      "d": "The danger zone is 41°F to 135°F. At 138°F the potatoes are above 135°F, so hot holding is met."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-207",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Beside the range a saucepan of cheese sauce has been sitting through the rush, and the sauce reads 98°F. Where does that temperature fall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a safe cold-holding range, because the sauce is under 135°F."
+      },
+      {
+        "id": "b",
+        "text": "Above the hot-holding minimum, so the sauce can stay beside the range."
+      },
+      {
+        "id": "c",
+        "text": "Inside the danger zone of 41°F to 135°F."
+      },
+      {
+        "id": "d",
+        "text": "Above the danger zone, because that zone ends at 41°F and warmer food has left it."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The temperature danger zone is 41°F to 135°F. Cheese sauce at 98°F sits inside that range, where pathogens can grow, and it is not being cold-held or hot-held.",
+    "distractorExplanations": {
+      "a": "Cold holding is 41°F or below. Cheese sauce at 98°F is far above 41°F, so it is not in cold holding.",
+      "b": "Hot holding starts at 135°F or above. Sauce at 98°F has not reached 135°F.",
+      "d": "The danger zone does not end at 41°F. It runs from 41°F to 135°F, and cheese sauce at 98°F is inside that range, not above it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-208",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A kettle of lentil soup left the stove at 135°F to cool in an ice bath. Two hours later the soup reads 78°F. What should the manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep cooling it, because the second stage still allows 4 hours to reach 41°F."
+      },
+      {
+        "id": "b",
+        "text": "Serve the soup, because 78°F is below the 135°F hot-holding line."
+      },
+      {
+        "id": "c",
+        "text": "Set it on the steam table at its current temperature for the lunch line."
+      },
+      {
+        "id": "d",
+        "text": "Throw it out, or reheat it to 165°F for 15 seconds and cool it again."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Cooling must bring TCS food from 135°F to 70°F within 2 hours. Lentil soup that is still 78°F after 2 hours missed that stage, so it is thrown out or reheated to 165°F for 15 seconds and cooled again.",
+    "distractorExplanations": {
+      "a": "The extra 4 hours apply only after the food has already reached 70°F within the first 2 hours. This soup is still at 78°F.",
+      "b": "78°F is inside the danger zone of 41°F to 135°F, and the soup has already missed the 2-hour drop to 70°F.",
+      "c": "78°F is below the 135°F hot-holding minimum, and the failed cooling step is not fixed by putting the soup on the line."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-209",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Clam chowder cooled from 135°F to 70°F in 2 hours, and the kettle now reads 70°F. What is the next cooling requirement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Get the chowder to 41°F within 4 more hours."
+      },
+      {
+        "id": "b",
+        "text": "Get the chowder to 41°F within 2 more hours, then stop checking."
+      },
+      {
+        "id": "c",
+        "text": "Leave it at 70°F, because the danger zone ends once food reaches 70°F."
+      },
+      {
+        "id": "d",
+        "text": "Reheat it to 145°F and move it to hot holding, since cooling is done."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After TCS food cools from 135°F to 70°F within 2 hours, it must then cool from 70°F to 41°F within 4 more hours. This chowder has finished the first stage and still has the second stage ahead of it.",
+    "distractorExplanations": {
+      "b": "The second stage is 4 hours, not 2. The chowder is at 70°F and must reach 41°F within 4 more hours.",
+      "c": "70°F is still inside the danger zone of 41°F to 135°F. Cooling is not finished until the chowder reaches 41°F.",
+      "d": "145°F is a cooking temperature for seafood and chops. The chowder is in the middle of cooling and next must reach 41°F."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-210",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Leftover meatloaf from last night is reheated for the lunch steam table. After 90 minutes in the oven, the center reads 160°F. What still has to happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plate it now, because 160°F is already past the 155°F ground-meat line."
+      },
+      {
+        "id": "b",
+        "text": "Continue reheating to 165°F for 15 seconds."
+      },
+      {
+        "id": "c",
+        "text": "Move it to the steam table now, because it is already above 135°F."
+      },
+      {
+        "id": "d",
+        "text": "Hold the center at 160°F for 15 seconds; that completes the reheating rule."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "TCS leftovers reheated for hot holding must reach 165°F for 15 seconds within 2 hours. This meatloaf is at 160°F after 90 minutes, so reheating continues until it hits 165°F for 15 seconds.",
+    "distractorExplanations": {
+      "a": "155°F is the cooking temperature for raw ground meat. Leftover meatloaf reheated for hot holding must reach 165°F, and it is only at 160°F.",
+      "c": "135°F is the hot-holding minimum after reheating is finished. The meatloaf still has to reach 165°F, and it is at 160°F.",
+      "d": "The 15-second hold has to be at 165°F. Holding the center at 160°F does not finish reheating, and 90 minutes is still inside the 2-hour limit."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-211",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A baker pulls a hotel pan of bread stuffing, made with stock and sausage, from the oven, and the center of the stuffing reads 160°F. What should happen next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Serve the pan; stuffing is done once it passes the 145°F line used for chops."
+      },
+      {
+        "id": "b",
+        "text": "Serve the pan; 160°F is past the 155°F ground-meat line, so the stuffing is done."
+      },
+      {
+        "id": "c",
+        "text": "Return the pan until the center reaches 165°F."
+      },
+      {
+        "id": "d",
+        "text": "Hot-hold the pan at 135°F, which will finish the cooking on the line."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Stuffing made with TCS ingredients must reach 165°F. This bread stuffing is at 160°F in the center, so it goes back in the oven until it reads 165°F.",
+    "distractorExplanations": {
+      "a": "145°F is for seafood, steaks, chops, and eggs for immediate service. Stuffing must reach 165°F, and this pan is at 160°F.",
+      "b": "155°F is the ground-meat cooking temperature. Stuffing is held to the poultry line of 165°F, which this pan has not reached.",
+      "d": "135°F is hot holding, not a cooking step. Stuffing at 160°F still has to reach 165°F before it is held."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-212",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A broiler cook checks a lamb chop cooked for a guest's plate, and the center of the chop reads 145°F. What is the right call?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep broiling until the chop reaches 165°F, the temperature used for poultry."
+      },
+      {
+        "id": "b",
+        "text": "Keep broiling until the chop reaches 155°F, the temperature used for ground meat."
+      },
+      {
+        "id": "c",
+        "text": "Put the chop on the steam table and hot-hold it at 135°F before it is plated."
+      },
+      {
+        "id": "d",
+        "text": "Serve the chop; it is done at 145°F."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Steaks and chops cooked for immediate service must reach 145°F. This lamb chop already reads 145°F in the center, so it can be served.",
+    "distractorExplanations": {
+      "a": "165°F is the poultry and stuffing minimum. A lamb chop for immediate service is done at 145°F, which this chop has reached.",
+      "b": "155°F is for ground meat. A whole lamb chop served immediately is cooked to 145°F, and this one is there.",
+      "c": "135°F is hot holding for food kept on a line. This lamb chop was cooked for a guest and already reads 145°F, so it is served rather than held."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-213",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "A garde manger checks a hotel pan of pasta salad in the reach-in cooler, and the salad reads 50°F. Which decision fits that reading?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove it from service; cold holding is 41°F or below."
+      },
+      {
+        "id": "b",
+        "text": "Keep serving it, because 50°F is under 135°F and therefore cold enough."
+      },
+      {
+        "id": "c",
+        "text": "Keep serving it; 50°F is below 70°F, so it has left the danger zone."
+      },
+      {
+        "id": "d",
+        "text": "Give it 4 more hours in service; food between 70°F and 41°F may be held while it cools."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cold TCS food must be held at 41°F or below. Pasta salad at 50°F is above 41°F and inside the danger zone of 41°F to 135°F, so it does not meet cold holding.",
+    "distractorExplanations": {
+      "b": "Being under 135°F does not make food cold. Cold holding stops at 41°F, and this salad is at 50°F.",
+      "c": "70°F is the checkpoint between cooling stages, not the end of the danger zone. Pasta salad at 50°F is still above 41°F, so cold holding has failed.",
+      "d": "The 4 extra hours apply after food has cooled from 135°F to 70°F within 2 hours. Salad found at 50°F is not in that stage, and cold holding is 41°F or below."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-214",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Midway through dinner service, a steam-table inset of brown gravy reads 122°F. What does that reading show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The gravy is safe to hold, because 122°F is well above the 41°F cold-holding line."
+      },
+      {
+        "id": "b",
+        "text": "Hot holding has failed at 122°F."
+      },
+      {
+        "id": "c",
+        "text": "Cooking is finished, because 122°F is close to the 145°F line for chops."
+      },
+      {
+        "id": "d",
+        "text": "Service can continue; 122°F has cleared 70°F, where the dangerous part of cooling ends."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Hot TCS food must be held at 135°F or above. Brown gravy at 122°F is below 135°F and inside the danger zone of 41°F to 135°F, so hot holding has failed.",
+    "distractorExplanations": {
+      "a": "41°F is the cold-holding limit, not a floor for hot food. Gravy at 122°F is below the 135°F hot-holding minimum.",
+      "c": "145°F is a cooking temperature for chops and seafood, and 122°F has not reached it. The failure here is hot holding below 135°F.",
+      "d": "70°F is a cooling checkpoint, not a safe line for hot food. Gravy at 122°F is below the 135°F hot-holding minimum, so service cannot continue on that reading."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-time-temperature-215",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "time-temperature",
+    "prompt": "Leftover chicken curry is reheated for hot holding. Two hours after reheating started, the center still reads 150°F. What should the cook do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep heating past the 2-hour mark until the curry finally reaches 165°F."
+      },
+      {
+        "id": "b",
+        "text": "Serve it, because 150°F is above the 145°F line for seafood and chops."
+      },
+      {
+        "id": "c",
+        "text": "Move it to the steam table, because 150°F is already above the 135°F hot-holding line."
+      },
+      {
+        "id": "d",
+        "text": "Discard it; the 2-hour reheat did not reach 165°F."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "TCS leftovers reheated for hot holding must reach 165°F for 15 seconds within 2 hours. This curry is still at 150°F when the 2 hours are up, so it is discarded.",
+    "distractorExplanations": {
+      "a": "The 2-hour limit has already ended at 150°F. Continuing toward 165°F after that window does not meet the reheating rule.",
+      "b": "145°F is a cooking temperature for seafood, steaks, chops, and eggs for immediate service. Reheated curry must hit 165°F, and this batch is at 150°F.",
+      "c": "135°F is hot holding only after a proper reheat. Leftovers must reach 165°F within 2 hours, and this curry stopped at 150°F."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "servsafe-manager-mock-121",
     "examSlug": "servsafe-manager-mock",
     "topicId": "personal-hygiene-contamination",
@@ -4453,6 +5443,501 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-201",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A pantry cook uses the staff restroom during prep, washes her hands at the restroom sink, and returns to portion ready-to-eat melon for the breakfast bar. What must she do before she touches the melon?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wash her hands again at the kitchen handwashing sink."
+      },
+      {
+        "id": "b",
+        "text": "Put on single-use gloves immediately, since the restroom wash already counts as her handwash."
+      },
+      {
+        "id": "c",
+        "text": "Rinse her hands in the food-prep sink, which is closer to the melon than the handwashing station."
+      },
+      {
+        "id": "d",
+        "text": "Dry her hands on a clean apron and start portioning so the melon is not left sitting out."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After using the toilet, a food handler washes at the restroom sink and then washes again at a handwashing sink in the prep area before touching food. The restroom wash does not replace that second wash. Gloves, a prep sink, or an apron are not substitutes for it.",
+    "distractorExplanations": {
+      "b": "Gloves do not erase the need for the second wash. She must wash again in the prep area before she puts gloves on or touches the melon.",
+      "c": "Hands are washed only at a handwashing sink. The food-prep sink is for food, and a rinse there is not the required wash after returning from the restroom.",
+      "d": "An apron is not a way to dry hands, and she has not yet washed again in the kitchen. Dry with a single-use towel or a hand dryer after that wash."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-202",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A grill cook sets raw chicken breasts on the grate with gloved hands. The next plate needs washed lettuce, and he reaches for it with those same gloves. What should he do before he touches the lettuce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe both gloves on a dry side towel and keep using them for the lettuce."
+      },
+      {
+        "id": "b",
+        "text": "Discard the gloves, wash his hands, and put on a new pair."
+      },
+      {
+        "id": "c",
+        "text": "Rinse the gloves under warm water and keep them on while he plates the lettuce."
+      },
+      {
+        "id": "d",
+        "text": "Put on a new pair without washing his hands, since fresh gloves will cover the chicken residue."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Gloves that touch raw chicken are contaminated. He throws them away, washes his hands, and puts on new gloves before ready-to-eat lettuce. Wiping the gloves, rinsing them, or changing them without a handwash does not make the next contact safe.",
+    "distractorExplanations": {
+      "a": "A towel does not remove pathogens from gloves that handled raw poultry. Single-use gloves are discarded, not wiped and reused.",
+      "c": "Single-use gloves are not rinsed and kept. Raw-chicken gloves go in the trash, then he washes his hands and puts on a new pair.",
+      "d": "The hands are contaminated when raw-chicken gloves come off. A new pair put on without a handwash carries that contamination onto the lettuce."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-203",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "The glove box at the sandwich station is empty during a lunch rush. A cook starts placing sliced turkey and cheese on bread with bare hands so the tickets keep moving. What should he do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep building sandwiches if he washed his hands just before the glove box ran out."
+      },
+      {
+        "id": "b",
+        "text": "Wipe his palms on a sanitizer towel between sandwiches and continue with bare hands."
+      },
+      {
+        "id": "c",
+        "text": "Stop and use deli tissue, tongs, or gloves put on after a handwash."
+      },
+      {
+        "id": "d",
+        "text": "Use a spatula for the turkey and cheese, then press the sandwiches closed with his bare palms."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sliced turkey, cheese, and bread are ready-to-eat, so bare hands must not touch them. He should use deli tissue, tongs, or another utensil for the food, or put on gloves after washing his hands. A recent wash does not allow bare-hand contact, and a spatula does not help if his palms still press the bread.",
+    "distractorExplanations": {
+      "a": "Washed hands can still contaminate ready-to-eat food. Bare-hand contact with the turkey, cheese, and bread is not allowed.",
+      "b": "A sanitizer towel is not a glove, tissue, or utensil, and wiping his palms between orders does not make bare-hand contact safe.",
+      "d": "The spatula keeps his fingers off the turkey and cheese, but his bare palms still touch ready-to-eat bread. The bread needs a glove, tissue, or utensil too."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-204",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A line cook with a full beard wears a clean baseball cap while plating exposed pasta. The hair on his head is covered. What else does he need while he works with that food?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing more, because the cap already covers the hair on his head."
+      },
+      {
+        "id": "b",
+        "text": "To tuck the beard inside his chef coat so it stays off the pasta."
+      },
+      {
+        "id": "c",
+        "text": "To shave before the next shift, because facial hair is not allowed in the kitchen."
+      },
+      {
+        "id": "d",
+        "text": "A beard restraint that covers the beard."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Food handlers wear a hair restraint, and a beard restraint when they have facial hair, so hair does not fall into exposed food. A baseball cap covers the head but not the beard. He needs a beard restraint while he plates the pasta.",
+    "distractorExplanations": {
+      "a": "The cap restrains the hair on his head only. Facial hair still needs its own restraint while he handles exposed pasta.",
+      "b": "Tucking a beard into a coat does not restrain it. A beard restraint has to cover the beard so it cannot shed into the food.",
+      "c": "Facial hair is allowed when a beard restraint covers it. He does not have to shave in order to plate food."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-205",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A server asks whether the tahini in a new house sauce belongs on the major-allergen chart. The recipe uses tahini and lists no other seeds or nuts. What should the manager tell her?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tahini is sesame, so the sauce belongs on the chart."
+      },
+      {
+        "id": "b",
+        "text": "Tahini is a nut butter, so list it as a tree nut rather than as a seed."
+      },
+      {
+        "id": "c",
+        "text": "Tahini can stay off the chart, because sesame shows up as bun seeds and not as a paste."
+      },
+      {
+        "id": "d",
+        "text": "Tahini is just a flavoring, so it is too small an ingredient to treat as an allergen."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tahini is a paste made from sesame seeds. Sesame is a major food allergen in the United States, together with milk, eggs, fish, crustacean shellfish, tree nuts, peanuts, wheat, and soybeans. The sauce contains sesame and belongs on the allergen chart.",
+    "distractorExplanations": {
+      "b": "Tahini is ground sesame, not a tree-nut butter. Sesame is its own major allergen, separate from tree nuts and peanuts.",
+      "c": "Sesame counts whether it is whole seeds or a paste. Leaving tahini off the chart hides a major allergen from guests and staff.",
+      "d": "A small amount of a major allergen can still cause a reaction. Tahini is sesame and has to be identified, not skipped as a flavoring."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-206",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A guest tells her server she has a sesame allergy and asks for a seedless bun, toasted. The grill was just used to toast buns covered with sesame seeds, and the tongs still have seeds on them. What should the kitchen do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Scrape the grill with those tongs and toast her bun in the spot that was scraped."
+      },
+      {
+        "id": "b",
+        "text": "Toast her bun with clean utensils on a surface free of sesame."
+      },
+      {
+        "id": "c",
+        "text": "Toast the seedless bun on that grill, because the bun recipe itself contains no sesame."
+      },
+      {
+        "id": "d",
+        "text": "Brush the loose seeds into the grease trough and reuse the same tongs for her bun."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sesame seeds left on the grill or tongs can transfer to a seedless bun. That transfer is cross-contact, and a seedless recipe does not prevent it. Her bun should be toasted with clean utensils on a surface that has been cleaned and has not touched sesame.",
+    "distractorExplanations": {
+      "a": "Scraping with the contaminated tongs leaves sesame on the grill and on the tool that will touch her bun.",
+      "c": "A seedless bun is not safe if the grill or tongs still carry sesame from the previous buns. The allergen can move onto her order.",
+      "d": "Brushing seeds into the trough does not clean the tongs. Those tongs can still transfer sesame to her bun."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-207",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A prep cook has to move washed sliced melon and raw pork chops from the walk-in to the sauté station. He puts the melon in a hotel pan and lays the pork chops on top of the fruit. What should he do instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep them stacked if each pork chop is wrapped tightly in plastic film."
+      },
+      {
+        "id": "b",
+        "text": "Set the melon on top of the pork so the fruit sits above the raw meat."
+      },
+      {
+        "id": "c",
+        "text": "Carry the melon and the raw pork in separate containers."
+      },
+      {
+        "id": "d",
+        "text": "Line that same hotel pan with a clean towel and carry both foods together in it."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Raw pork juices can drip onto ready-to-eat melon and contaminate it. The washed melon and the raw chops need separate containers so the meat cannot touch or drip onto the fruit. Plastic wrap or a towel in one shared pan does not replace that separation.",
+    "distractorExplanations": {
+      "a": "Wrapped meat can still leak. Stacking raw pork above ready-to-eat melon in one pan lets juices reach the fruit.",
+      "b": "Putting the melon on top of the pork still lets the two foods share a container and touch. The melon can pick up contamination where they meet.",
+      "d": "A towel in a shared pan absorbs juices and spreads them. It is not a barrier between raw pork and ready-to-eat fruit."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-208",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A server clears dirty plates and silverware from a dining table, then goes to the service station to put lemon wedges on water glasses. What must she do before she handles the wedges?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe her fingers on a clean side towel and then place the lemon wedges."
+      },
+      {
+        "id": "b",
+        "text": "Apply hand sanitizer at the service station and then place the lemon wedges with her bare fingers."
+      },
+      {
+        "id": "c",
+        "text": "Put single-use gloves on over her unwashed hands and then handle the wedges."
+      },
+      {
+        "id": "d",
+        "text": "Wash her hands, then pick up the wedges with gloves or tongs."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Clearing dirty tableware contaminates the hands, and lemon wedges are ready-to-eat. She washes at a handwashing sink, then uses gloves or a utensil so bare hands do not touch the wedges. A towel, hand sanitizer, or gloves over dirty hands will not do both steps.",
+    "distractorExplanations": {
+      "a": "A side towel spreads soil. It does not replace handwashing after dirty dishes, and bare hands still should not touch the ready-to-eat wedges.",
+      "b": "Hand sanitizer does not replace washing after dirty tableware, and bare fingers still must not touch ready-to-eat lemon wedges.",
+      "c": "Gloves put on over unwashed hands transfer soil to the outside of the gloves and then to the lemons. She has to wash before the gloves go on."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-209",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A pantry cook has worn the same single-use gloves for 4 hours while she assembles garden salads. The gloves are not torn, and she has not switched tasks. What should she do now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wash her hands and put on a new pair of gloves."
+      },
+      {
+        "id": "b",
+        "text": "Keep the same gloves, because they are intact and she is still making the same salads."
+      },
+      {
+        "id": "c",
+        "text": "Wash the gloves with soap at the handwashing sink and dry them so she can keep using them."
+      },
+      {
+        "id": "d",
+        "text": "Spray the gloves with sanitizer and leave them on while they air-dry."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Single-use gloves used for the same task are changed at least every 4 hours, even when they are intact and the task has not changed. She discards them, washes her hands, and puts on a new pair before she makes more salads.",
+    "distractorExplanations": {
+      "b": "Intact gloves and an unchanged task do not extend the time. After 4 hours of continuous use she still needs a handwash and a new pair.",
+      "c": "Single-use gloves are not washed and reused. Soap on the gloves does not reset the 4-hour limit or make them safe.",
+      "d": "Spraying sanitizer on gloves is not a way to renew them. She removes them, washes her hands, and puts on a new pair."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-210",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A sauté cook sneezes into his cupped hands during dinner service, then turns back to a pan of roasted vegetables that are ready to plate. What should he do before he touches that food?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe his hands on his apron and continue plating the roasted vegetables."
+      },
+      {
+        "id": "b",
+        "text": "Wash his hands with soap and running water, then dry them."
+      },
+      {
+        "id": "c",
+        "text": "Apply hand sanitizer and go back to the vegetables without a handwash."
+      },
+      {
+        "id": "d",
+        "text": "Rinse his hands in the sanitizer bucket and dry them on a kitchen towel."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sneezing into the hands contaminates them. He must wash with soap and running water at a handwashing sink and dry with a single-use towel or a dryer before he touches ready-to-eat vegetables. Sanitizer and a wipe do not replace that wash.",
+    "distractorExplanations": {
+      "a": "An apron is not a handwashing step. Wiping a sneeze on it soils the apron and leaves contamination on his hands.",
+      "c": "Hand sanitizer does not replace handwashing. If an antiseptic is used, it is applied after a correct wash, and the hands are dried first.",
+      "d": "A sanitizer bucket is for wiping cloths, not for hands. Dipping his hands in it soils the solution and does not clean them."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-211",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A prep cook slices roast beef for cold sandwiches while wearing a visor. The visor leaves the hair on the top of her head uncovered. What is the problem with this setup?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A visor is forbidden in the kitchen even when a hairnet is worn underneath it."
+      },
+      {
+        "id": "b",
+        "text": "Hair restraints are for cooks on the hot line, so cold prep of roast beef does not need one."
+      },
+      {
+        "id": "c",
+        "text": "The visor leaves her hair uncovered, so it is not a proper restraint."
+      },
+      {
+        "id": "d",
+        "text": "Uncovered hair is fine when it is tied in a ponytail away from the cutting board."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A hair restraint has to cover the hair so it cannot fall into exposed food. A visor that leaves the top of the head bare does not do that. She needs a hat, hairnet, or other covering that covers her hair while she slices ready-to-eat roast beef.",
+    "distractorExplanations": {
+      "a": "A visor may be worn with a hairnet or cap that covers the hair. The failure here is the uncovered hair, not the visor by itself.",
+      "b": "Anyone handling exposed food needs a hair restraint, including a prep cook slicing cold roast beef. The rule is not limited to the hot line.",
+      "d": "A ponytail does not replace a covering. Tied hair can still shed into the roast beef if it is not restrained."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-212",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A dishwasher shows the manager a boil with pus on his wrist. Bandages will not stay on it, and no glove in the kitchen reaches high enough to cover the boil. What should the manager do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exclude him from the operation and notify the regulatory authority, as with a Big Six illness."
+      },
+      {
+        "id": "b",
+        "text": "Let him put away clean plates if he keeps the boil turned away from the dishes."
+      },
+      {
+        "id": "c",
+        "text": "Wrap the wrist in a paper towel and send him back to the clean-dish table."
+      },
+      {
+        "id": "d",
+        "text": "Restrict him from exposed food, clean equipment, utensils, and linens."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A boil with pus on the wrist has to be covered with an impermeable cover and then a single-use glove. Bandages that will not stay, and gloves that cannot reach the boil, mean it is not covered. He is restricted from exposed food, clean equipment, utensils, and linens. That restriction is not exclusion, and it is not a call to the regulatory authority.",
+    "distractorExplanations": {
+      "a": "Exclusion plus notice to the regulatory authority is the response to jaundice or a diagnosed Big Six illness. An uncovered boil on the wrist is a restriction from exposed food, clean equipment, utensils, and linens.",
+      "b": "Keeping the wrist turned away does not cover the boil. He can still contaminate clean plates, so he must be restricted from that work.",
+      "c": "A paper towel is not an impermeable cover, and it does not include a glove over the wrist. He cannot keep handling clean dishes."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-213",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A guest with a milk allergy orders a fruit smoothie at the bar. The blender jar was just used for a milkshake, and the bartender rinsed it with water. What should happen before the smoothie is made?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give the jar another water rinse, then blend the fruit smoothie in it."
+      },
+      {
+        "id": "b",
+        "text": "Blend the fruit in that jar, because the smoothie will dilute any milk left inside."
+      },
+      {
+        "id": "c",
+        "text": "Wash, rinse, and sanitize the jar, then blend the smoothie."
+      },
+      {
+        "id": "d",
+        "text": "Wipe the jar with a dry towel and blend the order so the guest is not kept waiting."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Milk is a major food allergen, and a water rinse can leave residue that cross-contacts the smoothie. The jar and blade need to be washed, rinsed, and sanitized before the milk-free drink is made. A towel wipe does not remove the allergen.",
+    "distractorExplanations": {
+      "a": "Another water rinse can still leave milk on the jar and blade. The equipment needs a full wash, rinse, and sanitize before the smoothie.",
+      "b": "Diluting leftover milk does not make the drink safe for a guest with a milk allergy. The residue can still cause a reaction.",
+      "d": "A dry towel spreads milk residue and does not clean the jar. The allergy requires the blender to be washed, rinsed, and sanitized."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-214",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "This kitchen uses a red board for raw poultry and a green board for washed produce. A cook cubes raw chicken on the red board, flips it, and dices celery for a ready-to-eat salad on the other side without cleaning it. What should he have done with the celery?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the flipped side of the red board, since that side did not touch the chicken."
+      },
+      {
+        "id": "b",
+        "text": "Wipe the red board with a dry towel, then dice the celery on it."
+      },
+      {
+        "id": "c",
+        "text": "Rinse the red board under cold water, then dice the celery on it."
+      },
+      {
+        "id": "d",
+        "text": "Cut the celery on the clean green board."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Ready-to-eat celery must not be cut on a board that just held raw chicken, including the reverse side. The green board is the one set aside for washed produce. The red board stays with raw poultry until it is cleaned and sanitized.",
+    "distractorExplanations": {
+      "a": "The reverse side of a raw-chicken board is not clean. Juices can reach it, and flipping the board does not make it safe for a salad.",
+      "b": "A dry towel does not clean and sanitize a raw-poultry board. Celery for a ready-to-eat salad needs the clean produce board.",
+      "c": "A cold-water rinse without washing and sanitizing leaves contamination on the red board. He should cut the celery on the clean green board."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-personal-hygiene-contamination-215",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "personal-hygiene-contamination",
+    "prompt": "A new cook pulls on single-use gloves as soon as he reaches the cheese station and starts portioning ready-to-eat slices. He has not washed his hands since he arrived. What is wrong with this start?",
+    "options": [
+      {
+        "id": "a",
+        "text": "He must wash and dry his hands before the gloves go on."
+      },
+      {
+        "id": "b",
+        "text": "Clean gloves replace the handwash at the start of a shift, so he can portion the cheese this way."
+      },
+      {
+        "id": "c",
+        "text": "He should rinse the new gloves in the handwashing sink before they touch the cheese."
+      },
+      {
+        "id": "d",
+        "text": "He can wash after the cheese is portioned if his hands begin to feel sticky."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Hands are washed and dried before single-use gloves are put on. Otherwise soil on the hands moves to the outside of the gloves and then onto ready-to-eat cheese. Gloves do not replace that wash, and they are not rinsed in the handwashing sink.",
+    "distractorExplanations": {
+      "b": "Gloves do not replace handwashing. Skipping the wash lets contamination move onto the gloves and then onto the cheese.",
+      "c": "The handwashing sink is for hands, not for rinsing gloves. Single-use gloves are not washed. He should remove them, wash, and put on a new pair.",
+      "d": "Waiting until his hands feel sticky leaves the cheese unprotected. The wash has to happen before the gloves go on."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "servsafe-manager-mock-136",
@@ -5146,6 +6631,699 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-201",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the walk-in, a storeroom clerk has ground beef, raw chicken, whole pork loins, raw salmon fillets, and ready-to-eat pasta salad to place on the shelves. Where should the raw chicken go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On the bottom shelf, below the ground beef"
+      },
+      {
+        "id": "b",
+        "text": "On the top shelf, above the ready-to-eat pasta salad"
+      },
+      {
+        "id": "c",
+        "text": "On the salmon shelf, above the whole pork loins"
+      },
+      {
+        "id": "d",
+        "text": "Between the whole pork loins and the ground beef"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Store food top to bottom in this order: ready-to-eat food, then seafood, then whole cuts of beef and pork, then ground meat, then poultry. Raw chicken is poultry, so it goes on the bottom shelf, below the ground beef, where its juices cannot drip onto the pasta salad, the salmon, the pork, or the ground beef.",
+    "distractorExplanations": {
+      "b": "The top shelf is for the ready-to-eat pasta salad. Raw chicken stored there can drip onto food that will not be cooked again.",
+      "c": "The salmon shelf is the seafood level, below ready-to-eat food and above whole cuts. Poultry does not belong on that shelf.",
+      "d": "That spot is still above the ground beef. Poultry is stored below ground meat, not between whole pork and ground beef."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-202",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A receiver sets a case of bagged rice on the dry-storeroom floor while the bottom shelf is being mopped. This operation stores food at least 6 inches off the floor. What should the receiver do with the case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the case on the floor until the mopped shelf is dry"
+      },
+      {
+        "id": "b",
+        "text": "Move the case to a spot at least 6 inches off the floor"
+      },
+      {
+        "id": "c",
+        "text": "Tuck the case under the shelf being mopped so the bags stay out of the aisle"
+      },
+      {
+        "id": "d",
+        "text": "Open the bag and date-mark the rice before it goes on a shelf"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Food must be stored at least 6 inches off the floor so it stays clear of splashes, dirt, and pests. A shelf that is being mopped is not a reason to leave the rice on the floor. The receiver moves the case to another shelf or a rack that is still at least 6 inches up.",
+    "distractorExplanations": {
+      "a": "A wet shelf does not make the floor an acceptable holding spot. The case still has to sit at least 6 inches off the floor.",
+      "c": "Tucking the case under the shelf still leaves the rice on the floor. The shelf being mopped does not create an exception; the case has to sit at least 6 inches off the floor.",
+      "d": "An unopened case of dry rice does not need a prepared-food date mark. The problem is the case sitting on the floor."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-203",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In dry storage, cases of canned corn packed on March 2 sit behind cases packed on April 9. The clerk is resetting that shelf before service. How should the cases be arranged?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the April 9 cases in front so the newer pack date is used first"
+      },
+      {
+        "id": "b",
+        "text": "Discard the March 2 cases and keep the April 9 corn on the shelf"
+      },
+      {
+        "id": "c",
+        "text": "Move the March 2 cases in front of the April 9 cases"
+      },
+      {
+        "id": "d",
+        "text": "Empty both pack dates into one unlabeled bin and throw out the cases"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "First in, first out means the older stock is used first. The March 2 corn is the earlier pack date, so those cases go in front of the April 9 cases. The older corn is not discarded just because a newer pack date arrived, and the two dates are not dumped into one unlabeled bin.",
+    "distractorExplanations": {
+      "a": "April 9 is the newer pack date. Leaving it in front causes the March 2 corn to be used last, which is the reverse of first in, first out.",
+      "b": "An earlier pack date is a reason to use the corn first, not to discard it. The March 2 cases have not been described as damaged or expired.",
+      "d": "Combining both dates in an unlabeled bin erases which corn is older. The cases should stay separate, with March 2 in front of April 9."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-204",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the storeroom receiving area, a clerk finds a can of tomato puree with a deep dent across the top seam and rust along that seam. The other cans in the case look intact. What should the clerk do with the damaged can?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe off the rust and store that can with the intact cans"
+      },
+      {
+        "id": "b",
+        "text": "Place the can in the walk-in so the dented seam stays cold"
+      },
+      {
+        "id": "c",
+        "text": "Open the can and keep the puree if the odor seems normal"
+      },
+      {
+        "id": "d",
+        "text": "Reject that can and keep it out of dry storage"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A deep dent on the seam and rust along that seam are reasons to reject the can. The seal may no longer protect the food inside. Wiping off the rust, chilling the can, or opening it to smell the puree does not make it safe, and the intact cans in the case do not save this one.",
+    "distractorExplanations": {
+      "a": "Rust on the seam is not a dirt smear to wipe away. The dented, rusted seam is a reason to reject the can, not to store it.",
+      "b": "Refrigerating a damaged can does not repair a seam. The can is rejected rather than held in the walk-in.",
+      "c": "Opening a suspect can to check the odor can expose staff to unsafe food. A deep seam dent with rust is rejected unopened."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-205",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the dish room, a chlorine sanitizer solution for the third compartment tests at 120 ppm. The operation's procedure for this chlorine solution is 50 to 99 ppm. What should the dishwasher do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dump it and mix a fresh batch inside 50 to 99 ppm"
+      },
+      {
+        "id": "b",
+        "text": "Keep the 120 ppm solution because stronger chlorine sanitizes better"
+      },
+      {
+        "id": "c",
+        "text": "Retest the same solution with an iodine kit and then accept the 120 ppm reading"
+      },
+      {
+        "id": "d",
+        "text": "Stir detergent into the compartment until the chlorine reading starts to drop"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The chlorine solution tests at 120 ppm, which is above the operation's 50 to 99 ppm procedure for this compartment. Chlorine that is too strong can be harmful on food-contact surfaces and can corrode metal. The dishwasher dumps it, mixes a fresh chlorine solution inside 50 to 99 ppm, and checks the new mix with a chlorine test kit.",
+    "distractorExplanations": {
+      "b": "A stronger reading is not a better sanitizer. At 120 ppm the solution is above the operation's 50 to 99 ppm procedure and should be remade.",
+      "c": "An iodine test kit does not measure a chlorine solution, and it does not bring 120 ppm down into the 50 to 99 ppm procedure.",
+      "d": "Detergent reacts with chlorine and weakens it in an uncontrolled way. The fix is a fresh mix inside 50 to 99 ppm, checked with a chlorine kit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-206",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A storeroom clerk is loading the walk-in with an open pan of sliced cantaloupe. Raw cod, whole beef roasts, and raw duck are already in that cooler. Where should the cantaloupe go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On the lowest shelf, underneath the raw duck already stored there"
+      },
+      {
+        "id": "b",
+        "text": "On the top shelf, directly above the raw cod"
+      },
+      {
+        "id": "c",
+        "text": "On the same shelf as the whole beef roasts, toward the back of the walk-in"
+      },
+      {
+        "id": "d",
+        "text": "On the open shelf between the beef roasts and the raw duck"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sliced cantaloupe is ready-to-eat, so it goes on the top shelf, above raw food. Top to bottom, the order is ready-to-eat food, then seafood, then whole cuts of beef and pork, then ground meat, then poultry. The cod, the beef roasts, and the duck stay below the melon.",
+    "distractorExplanations": {
+      "a": "The lowest shelf is for poultry such as duck. Ready-to-eat cantaloupe stored there would sit under raw poultry and catch drips.",
+      "c": "Whole beef roasts are whole cuts and are stored below seafood. Ready-to-eat melon does not share that shelf.",
+      "d": "The shelf between whole cuts and poultry is the ground-meat level. Sliced cantaloupe is ready-to-eat and belongs above the cod."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-207",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the storeroom, a delivery of vacuum-packed raw beef includes several packages that are bloated, with the plastic puffed tight and rounded. What should the receiver do with those packages?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pierce the plastic, let the gas out, and store the beef in the walk-in"
+      },
+      {
+        "id": "b",
+        "text": "Move the bloated packages to the freezer and store the beef once it is frozen solid"
+      },
+      {
+        "id": "c",
+        "text": "Reject the bloated packages and do not put them into storage"
+      },
+      {
+        "id": "d",
+        "text": "Accept the beef if it still looks red through the stretched plastic"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Bloated vacuum packaging is a reason to reject raw beef. Gas stretched tight in the package can mean the food is unsafe. Piercing the bag, freezing it, or judging the color through the plastic does not make those packages acceptable to store.",
+    "distractorExplanations": {
+      "a": "Puncturing a bloated package releases gas and can contaminate the area. The package is rejected, not vented and stored.",
+      "b": "Freezing the beef solid does not undo the gas in a bloated package. Those packages are rejected and are not moved into freezer storage.",
+      "d": "A red color seen through the plastic is not a receiving test. Bloated vacuum packaging is rejected without being stored."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-208",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A clerk measures the bottom shelf in dry storage. Cans of peaches sit 3 inches above the floor. The operation requires food to be stored at least 6 inches off the floor. What should the clerk do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the peaches at 3 inches because the labels are easy to read from the aisle"
+      },
+      {
+        "id": "b",
+        "text": "Pull the cans off the 3-inch shelf and line them up on the floor until a taller rack arrives"
+      },
+      {
+        "id": "c",
+        "text": "Move the front cans onto a higher shelf and leave the back row sitting at 3 inches"
+      },
+      {
+        "id": "d",
+        "text": "Move the cans up to a shelf at least 6 inches off the floor"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The peaches are 3 inches above the floor, short of the operation's requirement of at least 6 inches. Food stored that low is harder to clean under and easier to splash or soil. The clerk moves the cans to a shelf that is at least 6 inches off the floor.",
+    "distractorExplanations": {
+      "a": "Readable labels do not change the height rule. The cans are at 3 inches, and this operation requires at least 6 inches off the floor.",
+      "b": "Lining the cans up on the floor puts them even lower than 3 inches. Waiting for a taller rack does not make the floor acceptable; the peaches need a shelf at least 6 inches off the floor.",
+      "c": "Moving only the front cans leaves the back row at 3 inches. Every can has to sit on a shelf at least 6 inches off the floor."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-209",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the walk-in, a clerk slides a newly received case of shredded cheese with a use-by date of May 11 in front of an older case dated May 4. What should be changed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Put the May 4 case in front of the May 11 case"
+      },
+      {
+        "id": "b",
+        "text": "Leave the May 11 case in front because the later use-by date should be served first"
+      },
+      {
+        "id": "c",
+        "text": "Rewrite the May 4 use-by date so both cases show May 11"
+      },
+      {
+        "id": "d",
+        "text": "Set the May 4 case on the walk-in floor, directly in front of the shelf"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "First in, first out uses the earliest use-by date first. The May 4 cheese must be in front of the May 11 cheese so staff reach the older case first. The date is not rewritten, and the older case is not set on the floor to make it visible.",
+    "distractorExplanations": {
+      "b": "A later use-by date can wait. May 11 in front would leave the May 4 case, which expires sooner, sitting unused behind it.",
+      "c": "Changing May 4 to May 11 hides the real use-by date. The older date stays on the case and that case is rotated to the front.",
+      "d": "Putting the May 4 case on the floor breaks the storage-height rule. It belongs on the shelf, in front of the May 11 case."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-210",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "The dish room uses a quaternary ammonium sanitizer. The product label, which this operation follows, requires 30 seconds of contact. A dishwasher dunks hotel pans and sets them on a rack after 10 seconds. What is wrong with this step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pans were set on a rack to air-dry instead of being towel-dried"
+      },
+      {
+        "id": "b",
+        "text": "The pans were removed before the label's 30 seconds of contact"
+      },
+      {
+        "id": "c",
+        "text": "A quaternary ammonium sanitizer was used instead of a chlorine sanitizer"
+      },
+      {
+        "id": "d",
+        "text": "Ten seconds meets this label because the pans were dunked rather than sprayed"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "This quaternary ammonium label requires 30 seconds of contact, and the operation follows that label. The pans were removed after 10 seconds, so the sanitizer did not stay on them long enough. Racking them to air-dry is the normal next step only after the full contact time.",
+    "distractorExplanations": {
+      "a": "Air-drying on a rack is what should happen after sanitizing. Towel-drying is the practice to avoid, and it is not the error in this 10-second dunk.",
+      "c": "Quaternary ammonium sanitizer is an appropriate sanitizer for these pans when the label is followed. The error is the 10-second contact, not the chemical chosen.",
+      "d": "A dunk does not shorten the time on the label. The pans needed 30 seconds of contact and were removed at 10 seconds."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-211",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "During a dry-storeroom delivery, a clerk sees a bag of rice with a gnawed hole and droppings stuck to the carton. What should happen to that bag?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brush the droppings off and pour the rice into a clean, labeled bin"
+      },
+      {
+        "id": "b",
+        "text": "Tape the gnawed hole and slide the bag to the back of the dry shelf"
+      },
+      {
+        "id": "c",
+        "text": "Reject the bag and do not bring the rice into storage"
+      },
+      {
+        "id": "d",
+        "text": "Freeze the rice overnight, then return the bag to the dry-storage shelf"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A gnawed hole and droppings on the carton mean pests have been in the package. That rice may be contaminated, so the bag is rejected and is not poured into a clean bin, taped, or held and then stored.",
+    "distractorExplanations": {
+      "a": "Brushing off droppings and transferring the rice spreads contamination into a clean bin. The bag is rejected.",
+      "b": "Tape does not undo pest damage. A gnawed bag with droppings is rejected instead of being rotated to the back of the shelf.",
+      "d": "Freezing does not make pest-damaged rice safe. The bag stays out of dry storage."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-212",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "The walk-in already holds raw scallops on an upper shelf and whole chickens on the bottom shelf. A storeroom clerk has a whole pork shoulder and a tray of ground pork to store. Which placement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ground pork directly under the scallops, and the shoulder beside the chickens"
+      },
+      {
+        "id": "b",
+        "text": "Both the pork shoulder and the ground pork on the shelf above the scallops"
+      },
+      {
+        "id": "c",
+        "text": "The shoulder on the bottom shelf and the ground pork above the scallops"
+      },
+      {
+        "id": "d",
+        "text": "Scallops, then the shoulder, then ground pork, with the chickens last"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Top to bottom, store ready-to-eat food, then seafood, then whole cuts of beef and pork, then ground meat, then poultry. Scallops are seafood, so they stay above the pork shoulder, which is a whole cut. Ground pork goes below that shoulder, and the chickens stay last because poultry is stored at the bottom.",
+    "distractorExplanations": {
+      "a": "Ground pork belongs below whole cuts, not directly under seafood, and a whole pork shoulder does not belong beside chickens on the bottom shelf.",
+      "b": "That placement puts raw pork above seafood. Scallops stay above whole cuts of beef and pork, not below them.",
+      "c": "This inverts the order. The whole shoulder would sit on the poultry shelf, and ground pork would be stored above the scallops."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-213",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "An iodine sanitizer in the dish room is inside the operation's concentration range, but the solution is 60°F. The operation's iodine procedure requires the water to be at least 68°F. What should staff do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mix a fresh iodine solution at 68°F or warmer"
+      },
+      {
+        "id": "b",
+        "text": "Use the 60°F iodine, since the concentration already passed its test"
+      },
+      {
+        "id": "c",
+        "text": "Check the 60°F solution with a chlorine test kit and then put it into use"
+      },
+      {
+        "id": "d",
+        "text": "Add a second dose of iodine to the 60°F bucket and put that solution into use"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An iodine solution can be inside the operation's concentration range and still be too cold to use. This solution is 60°F, below the operation's minimum of 68°F. Staff mix a fresh iodine solution at 68°F or warmer and test it again before sanitizing.",
+    "distractorExplanations": {
+      "b": "A passing concentration does not cancel the temperature rule. The solution is 60°F, and this operation requires iodine water of at least 68°F.",
+      "c": "A chlorine test kit does not check iodine, and it does not warm a 60°F solution up to 68°F.",
+      "d": "The concentration is already inside this operation's range. A second dose of iodine does not warm 60°F water to the 68°F minimum, and it can push the solution out of that range."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-214",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A pallet of oatmeal cases arrives in dry storage while cases with an earlier packing date are still on the shelf. A clerk wants the new cartons in front because they look cleaner. Where should the new cases go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In front of the older cases, because the new cartons look cleaner to staff"
+      },
+      {
+        "id": "b",
+        "text": "Behind the cases that carry the earlier packing date"
+      },
+      {
+        "id": "c",
+        "text": "On the dry-storeroom floor until every older case has been used"
+      },
+      {
+        "id": "d",
+        "text": "In the dish room, beside the sanitizer, until a front spot on the shelf opens"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "First in, first out puts the earlier packing date where staff will use it first. The new oatmeal goes behind those older cases, even when the new cartons look cleaner. It is not stored on the floor or parked beside sanitizer in the dish room.",
+    "distractorExplanations": {
+      "a": "Cleaner-looking cartons are not the rotation rule. Putting the new cases in front hides the earlier packing date and delays its use.",
+      "c": "The floor is not a holding spot for a new delivery. The cases belong on the shelf, behind the earlier packing date.",
+      "d": "Oatmeal does not belong beside sanitizer in the dish room. It goes on the dry-storage shelf, behind the older cases."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-215",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A delivery of fresh tuna steaks is checked in the storeroom. The internal temperature is 47°F. The operation accepts this refrigerated fish when it is at 41°F or lower. What should the receiver do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept the tuna and cool it to 41°F in the walk-in before service"
+      },
+      {
+        "id": "b",
+        "text": "Accept the tuna, because 47°F is close to the limit after a short trip"
+      },
+      {
+        "id": "c",
+        "text": "Reject the tuna and do not place it in the walk-in"
+      },
+      {
+        "id": "d",
+        "text": "Rinse the steaks under cold water until the surface feels cold, then store them"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The tuna arrived at 47°F, which is above this operation's limit of 41°F for this refrigerated fish. The receiver rejects it. Cooling the steaks in the walk-in, or rinsing them until they feel cold, does not correct a receiving temperature that is already above 41°F.",
+    "distractorExplanations": {
+      "a": "Cooling the tuna to 41°F after delivery does not undo a 47°F receipt. This operation accepts this fish at 41°F or lower, and these steaks are above that.",
+      "b": "Being close to the limit is not the standard. The internal temperature is 47°F, and the stated limit for this fish is 41°F.",
+      "d": "A cold rinse does not make a 47°F delivery acceptable, and it can spread contamination. The tuna is rejected rather than stored."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-216",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "Dish-room staff are sanitizing mixing bowls in a chlorine solution that already meets the operation's concentration. The operation requires at least 7 seconds of chlorine contact. A dishwasher lifts the bowls out after 3 seconds. What should change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add a splash of detergent to the chlorine so the 3-second lift still counts"
+      },
+      {
+        "id": "b",
+        "text": "Wipe each bowl with a clean towel and rack it after the 3-second dip"
+      },
+      {
+        "id": "c",
+        "text": "Send the bowls back to the wash compartment and skip any further contact"
+      },
+      {
+        "id": "d",
+        "text": "Submerge the bowls again for at least 7 seconds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "This operation requires at least 7 seconds of contact for the chlorine solution, and the concentration is already acceptable. The bowls were lifted out after 3 seconds, so they are submerged again for at least 7 seconds. Detergent, a towel, or a return to the wash compartment does not replace that contact time.",
+    "distractorExplanations": {
+      "a": "Detergent in the sanitizer works against the chlorine. It does not make a 3-second dip equal the required 7 seconds of contact.",
+      "b": "Wiping with a towel, even a clean one, can put contamination back on the bowls, and it does not extend a 3-second dip to the required 7 seconds of contact.",
+      "c": "The wash compartment is for detergent and soil, not for finishing a short sanitizer dip. The bowls still need at least 7 seconds of chlorine contact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-217",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In dry storage, a labeled spray bottle of glass cleaner sits on the shelf directly above an open bin of flour. What should the storeroom clerk do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move the cleaner to a chemical shelf away from the flour"
+      },
+      {
+        "id": "b",
+        "text": "Leave the bottle above the flour, since the spray bottle is already labeled"
+      },
+      {
+        "id": "c",
+        "text": "Keep the cleaner on that shelf after wiping the bottle and sliding it against the bin"
+      },
+      {
+        "id": "d",
+        "text": "Cover the flour bin and leave it on the shelf directly under the labeled cleaner"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Chemicals are stored away from food and below it, so a leak cannot drip into the flour. A correct label does not make the shelf above an open flour bin acceptable. The clerk moves the glass cleaner to the chemical shelf, away from food.",
+    "distractorExplanations": {
+      "b": "A label tells staff what is in the bottle. It does not make storage above an open bin of flour safe if the cleaner drips.",
+      "c": "Wiping the bottle and pushing it against the flour still leaves a chemical on the food shelf. The cleaner has to leave that shelf.",
+      "d": "A cover on the flour bin does not make a chemical stored above food acceptable. The labeled cleaner has to move to a chemical shelf away from the flour."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-218",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "In the dish room, sanitized drinking glasses are nested together while they are still wet so the stack fits on a short shelf. Why is that storage a problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The glasses should have been stored rim-up while they were still wet"
+      },
+      {
+        "id": "b",
+        "text": "Water trapped between the glasses stops them from air-drying"
+      },
+      {
+        "id": "c",
+        "text": "Each glass should be towel-dried, then nested again while it is still warm"
+      },
+      {
+        "id": "d",
+        "text": "The nested stack should go back through the wash sink before any glass is stored"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Sanitized glasses and other tableware must air-dry. Nesting them while they are wet traps water where the glasses touch, so they stay damp and can pick up contamination. After they air-dry, glasses are stored upside down, not stacked wet.",
+    "distractorExplanations": {
+      "a": "Glasses are stored rim-down once they are dry. Turning a wet nested stack rim-up does not let the trapped surfaces air-dry.",
+      "c": "Towel-drying can move contamination back onto sanitized glasses. They need to air-dry, separated, rather than be wiped and nested warm.",
+      "d": "The glasses have already been sanitized. Sending the wet stack back to the wash sink is not the fix; separating them so they air-dry is."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-219",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "After closing, a dish-room employee leaves a wet mop standing in a bucket of dirty water beside the clean-dish table. What should the employee do instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the mop soaking so the morning crew can start without mixing a new bucket"
+      },
+      {
+        "id": "b",
+        "text": "Pour the dirty water into the handwashing sink and leave the mop standing in that sink"
+      },
+      {
+        "id": "c",
+        "text": "Empty the bucket in the service sink, then hang the mop to air-dry"
+      },
+      {
+        "id": "d",
+        "text": "Rinse the mop in the three-compartment sink and park the bucket beside the clean plates"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Dirty mop water is emptied in a service sink, not in a handwashing sink or a warewashing sink. The mop is then hung so it air-dries, away from clean dishes. Leaving it standing in dirty water beside the clean-dish table keeps soil next to sanitized tableware.",
+    "distractorExplanations": {
+      "a": "A mop left overnight in dirty water stays soiled and sits beside clean dishes. It should be emptied, then hung to air-dry.",
+      "b": "The handwashing sink is for hands. Pouring dirty mop water there contaminates that sink, and leaving the mop standing in it does not let the mop air-dry.",
+      "d": "The three-compartment sink is for tableware, not for rinsing a dirty mop, and the bucket should not stay beside the clean plates."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-220",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A case of raw chicken is checked in the storeroom with torn packaging and poultry juice leaking onto the other foods in the shipment. What should the receiver do with that case?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rinse the torn packages in the prep sink and then refrigerate the chicken"
+      },
+      {
+        "id": "b",
+        "text": "Rewrap the chicken in plastic and store the case above the ready-to-eat food"
+      },
+      {
+        "id": "c",
+        "text": "Wipe the leaked juice off the other foods and accept the shipment as delivered"
+      },
+      {
+        "id": "d",
+        "text": "Reject the leaking case and keep it out of the walk-in"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Torn packaging and leaking poultry juice are reasons to reject that case. Rewrapping it or rinsing it does not undo the damage, and storing raw chicken above ready-to-eat food would let juices drip onto food that will not be cooked again. The leaking case stays out of the walk-in.",
+    "distractorExplanations": {
+      "a": "Rinsing raw chicken in the prep sink spreads contamination and does not repair torn packaging. The leaking case is rejected.",
+      "b": "A new wrap does not make a leaking case acceptable, and raw chicken stored above ready-to-eat food can drip onto that food.",
+      "c": "Wiping juice off the other foods does not make a torn, leaking chicken case acceptable to receive. That case is rejected."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-cleaning-storage-221",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "cleaning-storage",
+    "prompt": "A chlorine wiping-cloth bucket in the dish room reads 75 ppm, inside the operation's 50 to 99 ppm procedure, but food bits and grease are floating in the bucket. What should staff do with this bucket?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the bucket in use until the reading falls below 50 ppm"
+      },
+      {
+        "id": "b",
+        "text": "Dump the soiled solution and mix a fresh chlorine bucket"
+      },
+      {
+        "id": "c",
+        "text": "Strain out the food bits and keep using this same 75 ppm solution"
+      },
+      {
+        "id": "d",
+        "text": "Replace the cloths and keep the same 75 ppm solution for the rest of the shift"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The bucket reads 75 ppm, inside the operation's 50 to 99 ppm chlorine procedure, but food bits and grease are in the solution. Soil uses up sanitizer and can shield pathogens, so a dirty solution is dumped even when the reading is still in range. Staff mix a fresh chlorine bucket and retest it so the new reading is still inside 50 to 99 ppm.",
+    "distractorExplanations": {
+      "a": "Waiting until the reading falls below 50 ppm leaves a greasy solution in use. The reading is already 75 ppm, inside 50 to 99, and the soil is the reason to remake it.",
+      "c": "Straining out visible bits does not restore a greasy chlorine solution. A 75 ppm reading does not make this dirty bucket safe to keep.",
+      "d": "Clean cloths placed back in a soiled 75 ppm solution become dirty at once. The solution has to be replaced, not just the cloths."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "servsafe-manager-mock-157",
@@ -5938,5 +8116,797 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-201",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "The dinner chef starts a HACCP plan for house-made meatloaf and has not listed any hazards yet. Which principle must the team complete first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Conduct a hazard analysis at each step of the meatloaf"
+      },
+      {
+        "id": "b",
+        "text": "Determine the critical control points for cooking and cooling the loaf"
+      },
+      {
+        "id": "c",
+        "text": "Establish monitoring procedures for the cook temperature of the loaf"
+      },
+      {
+        "id": "d",
+        "text": "Verify the meatloaf plan by checking cook logs against the written steps"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The seven HACCP principles run in a fixed order, and the first is a hazard analysis. The team lists biological, chemical, and physical hazards at each step of the meatloaf, from raw ground beef through cooking, cooling, and reheating. Control points, limits, and checks are chosen after those hazards are named.",
+    "distractorExplanations": {
+      "b": "Critical control points are principle 2. Choosing them first skips the hazard analysis that has to name what the meatloaf steps must control.",
+      "c": "Monitoring is principle 4. It checks a cook limit, and this new meatloaf plan has not established that limit yet.",
+      "d": "Verification is principle 6. Checking logs against the written steps reviews a plan that is already running, so it cannot be the first step."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-202",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Prep staff listed the hazards for pan-seared salmon, including parasites in the fish and bacteria that survive if a fillet is undercooked. Which HACCP principle comes next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set up record keeping so each salmon cook time is filed after service"
+      },
+      {
+        "id": "b",
+        "text": "Determine which salmon steps are critical control points"
+      },
+      {
+        "id": "c",
+        "text": "Establish monitoring procedures that say how each fillet will be probed"
+      },
+      {
+        "id": "d",
+        "text": "Identify the corrective action if a salmon fillet is still undercooked"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "After the hazard analysis, principle 2 is to determine critical control points: the steps where a control can prevent, eliminate, or reduce a hazard to a safe level. For this salmon, cooking is the step that kills parasites and bacteria. Limits and monitoring are written after those points are chosen.",
+    "distractorExplanations": {
+      "a": "Record keeping is principle 7, the last step. Salmon cook times are filed after the control points, limits, and checks are already in place.",
+      "c": "Monitoring is principle 4. It describes how each fillet will be probed after the critical control points and their limits exist.",
+      "d": "Corrective actions are principle 5. They respond to a critical limit, which is written after the salmon control points are chosen."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-203",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Cooking each pork chop is already named as a critical control point. The team writes that every chop must reach 145°F for 15 seconds. Which principle is that written value?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monitoring, because a cook will use a thermometer at the grill later tonight"
+      },
+      {
+        "id": "b",
+        "text": "Verification, because a manager will read this number on a log after service"
+      },
+      {
+        "id": "c",
+        "text": "Establish the critical limit each pork chop must meet"
+      },
+      {
+        "id": "d",
+        "text": "The corrective action the grill uses when a pork chop misses 145°F"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A critical limit is the measurable minimum or maximum a critical control point must meet. Requiring each pork chop to reach 145°F for 15 seconds is that limit, which is principle 3. Monitoring is the later act of taking the temperature, not the 145°F value itself.",
+    "distractorExplanations": {
+      "a": "Monitoring is principle 4, the check that the limit was met. This sentence sets the 145°F for 15 seconds value.",
+      "b": "Verification reviews records to confirm the plan works. It is not the 145°F limit written for the chop.",
+      "d": "A corrective action is what the grill does when a chop misses its limit. The written 145°F for 15 seconds is the critical limit itself, principle 3."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-204",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "The shrimp scampi plan says each batch must hit 145°F for 15 seconds, and it assigns the saute cook to probe shrimp from each pan and write the time. Which principle is that assignment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hazard analysis, which lists what could go wrong with the shrimp in the pan"
+      },
+      {
+        "id": "b",
+        "text": "Record keeping, which is the binder where the finished saute logs are stored"
+      },
+      {
+        "id": "c",
+        "text": "Corrective action, which applies when a shrimp batch misses 145°F"
+      },
+      {
+        "id": "d",
+        "text": "Establish how the saute cook probes and records each pan"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Monitoring procedures state what will be measured, how, how often, and by whom, so the kitchen knows whether a critical limit is met. Assigning the saute cook to probe the shrimp and record the time is monitoring of the 145°F for 15 seconds limit.",
+    "distractorExplanations": {
+      "a": "Hazard analysis identifies hazards in the shrimp. It does not assign who probes each pan or how the time is written down.",
+      "b": "Record keeping stores the documents. The assignment of who probes the shrimp is the monitoring procedure, not the binder.",
+      "c": "A corrective action is the response when a batch misses 145°F, not the routine probe of shrimp from each pan."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-205",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Before service, the HACCP plan for meat-stuffed shells states what staff will do if a pan is still below 165°F when the oven timer ends. Writing that response ahead of time is which principle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identify the corrective action for a missed limit"
+      },
+      {
+        "id": "b",
+        "text": "Monitoring procedures for taking the temperature of each shell"
+      },
+      {
+        "id": "c",
+        "text": "Determine the critical control point for the baking step"
+      },
+      {
+        "id": "d",
+        "text": "Verify the system by reviewing last month's stuffed-shell baking logs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Corrective actions are principle 5, and they are written before service so staff know the response when a critical limit is missed. Stating what to do if stuffed shells are still below 165°F is that planned response. Taking the temperature would be monitoring, not this principle.",
+    "distractorExplanations": {
+      "b": "Monitoring is the temperature check itself. The plan language here is the response for when that check fails at 165°F.",
+      "c": "Naming baking as a control point is principle 2. The response to a missed limit comes later, as principle 5.",
+      "d": "Reviewing last month's logs is verification, principle 6, not the response written ahead of time for a failed pan."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-206",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Once a month the chef compares a week of corn chowder cooling charts with the written plan and watches a cook carry out the cooling steps. She does not probe the chowder during production. Which principle is her review?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monitoring, because looking at a cooling chart counts as the line check itself"
+      },
+      {
+        "id": "b",
+        "text": "Verify that the cooling steps match the written plan"
+      },
+      {
+        "id": "c",
+        "text": "Hazard analysis that lists the bacteria able to grow in cooling chowder"
+      },
+      {
+        "id": "d",
+        "text": "Establish the critical limits the chowder cooling step has to meet"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Verification, principle 6, confirms that the HACCP system works as designed. Comparing corn chowder cooling charts with the plan and watching the cook follow the steps are verification. Monitoring would be the cook measuring the chowder while it cools, which she is not doing here.",
+    "distractorExplanations": {
+      "a": "Monitoring is the real-time measurement at the control point. The chef's monthly chart review is not that production check.",
+      "c": "Hazard analysis identifies hazards while the plan is being built. Comparing finished cooling charts with the plan does not create a new hazard list.",
+      "d": "Critical limits are set when the plan is written. This monthly review checks cooling work against a limit the plan already contains."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-207",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "After each batch of garlic mashed potatoes finishes cooling, the cook signs the sheet and files it in that day's HACCP binder. Which principle does filing the sheet carry out?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monitoring, which is satisfied once the cooling sheet is signed and filed"
+      },
+      {
+        "id": "b",
+        "text": "Verification, because filing the sheet proves the cooling plan is working"
+      },
+      {
+        "id": "c",
+        "text": "Record keeping and documentation of the cooling sheet"
+      },
+      {
+        "id": "d",
+        "text": "Hazard analysis for the potatoes, completed when this cooling sheet is filed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Principle 7 is record keeping and documentation: monitoring sheets, corrective-action notes, and the plan itself. Filing the signed cooling sheet creates the record that the mashed potatoes were checked. Probing the potatoes was the earlier monitoring step, not the act of filing. A later review of that file would be verification, and filing does not take the place of the hazard analysis.",
+    "distractorExplanations": {
+      "a": "Monitoring is the temperature check while the potatoes cool. Signing and filing the finished sheet is record keeping, principle 7, not that check.",
+      "b": "Verification reviews records to confirm the system works. Filing the sheet creates the record a manager might review later; the filing itself is not that review.",
+      "d": "Hazard analysis is principle 1, done when the plan is built. Filing a cooling sheet documents a check; it does not list the potato hazards."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-208",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "At the grill station, cooks must wash hands and sanitize boards before breaking down raw tuna, and each tuna steak must reach 145°F for 15 seconds. Which statement sorts these controls correctly?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Handwashing and board sanitizing are the critical control point, while cooking the tuna to 145°F is a prerequisite program"
+      },
+      {
+        "id": "b",
+        "text": "Handwashing and cooking the tuna to 145°F are both critical control points at this grill station"
+      },
+      {
+        "id": "c",
+        "text": "Handwashing and cooking the tuna to 145°F are both prerequisite programs at this busy grill station"
+      },
+      {
+        "id": "d",
+        "text": "The 145°F cook step is the critical control point; handwashing and sanitizing are prerequisites"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A critical control point is a specific step where a hazard can be prevented, eliminated, or reduced to a safe level. Cooking the tuna to 145°F for 15 seconds is that step. Handwashing and sanitizing boards are prerequisite programs: foundation practices that support the plan but do not kill pathogens in the steak.",
+    "distractorExplanations": {
+      "a": "This swaps the two controls. Handwashing and sanitizing are prerequisites, not the step that makes the tuna steak safe at 145°F.",
+      "b": "Handwashing is a prerequisite program, not a critical control point. The 145°F cook step is the control point.",
+      "c": "The 145°F cook step is a critical control point. It is not a general prerequisite the way handwashing and sanitizing are."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-209",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "While a stockpot of turkey gravy cools, a cook writes down the time it reaches 70°F. The next morning a supervisor checks that same thermometer in ice water and does not look at the gravy. Which activity is monitoring?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The cook writing the time the gravy reaches 70°F"
+      },
+      {
+        "id": "b",
+        "text": "The supervisor's next-morning ice-water check of that same thermometer"
+      },
+      {
+        "id": "c",
+        "text": "Both the cook's note and the ice-water check, since both use the thermometer"
+      },
+      {
+        "id": "d",
+        "text": "Establishing the critical limit by writing down the gravy's 70°F time"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Monitoring is the planned measurement while the process runs. The cook recording when the gravy reaches 70°F is monitoring. The next morning's ice-water check tests whether the thermometer is accurate, which is verification, and it is not a measurement of the gravy. Writing down 70°F does not establish the critical limit.",
+    "distractorExplanations": {
+      "b": "An ice-water check the next morning confirms thermometer accuracy. That is verification, not monitoring of the gravy at 70°F.",
+      "c": "The two activities are different. The cook's cooling measurement is monitoring; the ice-water check is verification.",
+      "d": "Writing the time the gravy reaches 70°F measures the batch. That measurement is monitoring. It does not establish the critical limit, which the plan already set."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-210",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "The HACCP plan says each tray of shepherd's pie must reach 165°F for 15 seconds. A tray reads 148°F when the oven cycle ends. What corrective action should the cook take?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Serve the tray, because 148°F is close to the 165°F limit written in the plan"
+      },
+      {
+        "id": "b",
+        "text": "Continue baking to 165°F for 15 seconds and record the action"
+      },
+      {
+        "id": "c",
+        "text": "Move the 148°F tray onto the steam table and serve the pie from there"
+      },
+      {
+        "id": "d",
+        "text": "Enter 165°F on the log without more baking, then send the tray out"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When a cooking critical limit is missed and the food can still be cooked, the corrective action is to keep cooking until the limit is met and to record what happened. This tray is 148°F, short of 165°F for 15 seconds, so it is not safe to serve, to move onto the steam table, or to cover with a false log entry.",
+    "distractorExplanations": {
+      "a": "A critical limit is a minimum. At 148°F the tray has not reached the plan's 165°F for 15 seconds, so it cannot be served.",
+      "c": "The steam table holds food that has already reached its limit. At 148°F the tray has not reached the plan's 165°F for 15 seconds, so serving it from there does not finish the bake.",
+      "d": "Writing 165°F without more baking falsifies the record and hides a tray that is still at 148°F."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-211",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "While building the hazard analysis for a shrimp boil, the team notes sulfites on the peel-and-eat shrimp and a serving bowl with a chipped glass rim. Which hazard types are those two findings?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both biological, because either finding can make a guest sick after the boil"
+      },
+      {
+        "id": "b",
+        "text": "Physical for the sulfites and biological for the chipped rim of the bowl"
+      },
+      {
+        "id": "c",
+        "text": "Chemical for the sulfites and physical for the chipped glass"
+      },
+      {
+        "id": "d",
+        "text": "Biological for the sulfites and chemical for the chipped glass rim"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A hazard analysis includes biological, chemical, and physical hazards. Sulfites on the shrimp are a chemical hazard. A chipped glass rim can put glass in the food, which is a physical hazard. Pathogens in undercooked shrimp would be the biological hazard, and that is not what these two findings are.",
+    "distractorExplanations": {
+      "a": "Neither finding is biological. Biological hazards are pathogens such as bacteria, viruses, parasites, and fungi.",
+      "b": "This swaps the types. Sulfites are a chemical hazard, and glass from the chipped bowl is a physical hazard.",
+      "d": "This pairs the wrong types. Sulfites on the shrimp are a chemical hazard, not a biological one, and glass from the chipped rim is physical, not chemical."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-212",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "French onion soup is held on the steam table at or above 135°F. A cook says stirring in the croutons matters more for safety than that holding temperature. Which statement corrects the cook?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The cook is right, because croutons are the step that stops bacteria in this soup"
+      },
+      {
+        "id": "b",
+        "text": "The crock the soup is served in is the critical control point for this station"
+      },
+      {
+        "id": "c",
+        "text": "Hot holding can be skipped, because a soup that was cooked has no hazard left in it"
+      },
+      {
+        "id": "d",
+        "text": "Hot holding is the critical control point that keeps bacteria from growing"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A critical control point is a step where a hazard can be prevented, eliminated, or reduced to a safe level. Hot holding this soup at or above 135°F is that step, because it keeps bacteria from growing. Croutons and the serving crock do not control the hazard, and cooking the soup earlier does not remove the need to hold it hot.",
+    "distractorExplanations": {
+      "a": "Croutons do not control bacterial growth. This names a garnish step instead of hot holding at or above 135°F.",
+      "b": "The crock is serviceware. It does not keep the soup at or above 135°F or out of the temperature danger zone.",
+      "c": "Cooking does not replace hot holding. TCS soup held for service still needs a control point at 135°F."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-213",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "An hour before Saturday service, the person in charge assigns a cook to check every cold well and to pull any pan that is too warm before guests are seated. Which practice is that assignment?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Active managerial control before guests arrive"
+      },
+      {
+        "id": "b",
+        "text": "Waiting until a guest sends a dish back before anyone checks a well"
+      },
+      {
+        "id": "c",
+        "text": "Leaving temperature problems for a later health inspection to discover"
+      },
+      {
+        "id": "d",
+        "text": "Filing a cold-holding policy that nobody on the shift is assigned to use"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Active managerial control means the person in charge anticipates foodborne-illness risks and puts monitoring and a corrective step in place before food reaches a guest. Assigning a cold-well check and a pull of any warm pan before seating is that preventive practice.",
+    "distractorExplanations": {
+      "b": "Waiting for a returned dish is reactive. Active managerial control checks the cold well before guests are served.",
+      "c": "A later inspection does not replace the manager's own monitoring. The assignment is there to control the risk during this service.",
+      "d": "A filed policy that nobody carries out does not check the wells. Active managerial control assigns the person and the correction before guests are seated."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-214",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Ants are crossing the dry-storage floor beside open bags of rice. A dishwasher offers to spray a store-bought bug killer along the wall while the rice stays in place. What should the person in charge require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let the dishwasher spray the baseboard and wipe it with a dry towel"
+      },
+      {
+        "id": "b",
+        "text": "Have a licensed pest control operator apply the pesticide"
+      },
+      {
+        "id": "c",
+        "text": "Ask a server to dust home ant powder around the door after moving the rice"
+      },
+      {
+        "id": "d",
+        "text": "Have the dishwasher spray once the bags are covered with a clean apron"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pesticides in a food operation are applied by a licensed pest control operator, not by dishwashers or servers. A store-bought spray beside open rice can contaminate food. Food is removed or covered for the treatment, and food-contact surfaces are cleaned and sanitized afterward.",
+    "distractorExplanations": {
+      "a": "A dishwasher is not a licensed pest control operator, and spraying next to open rice can contaminate the food.",
+      "c": "Home ant powder applied by a server is not a licensed application, and shifting the rice does not make it one.",
+      "d": "An apron over the bags does not authorize a dishwasher to apply pesticide. That job belongs to a licensed pest control operator."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-215",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "The chef wants to cure pork bellies and sell the bacon. The regulatory authority will allow that process only after it issues a written waiver of the usual requirement. What is that document called?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A consumer advisory describing the bacon as a house specialty"
+      },
+      {
+        "id": "b",
+        "text": "A HACCP plan the chef writes and files with the authority"
+      },
+      {
+        "id": "c",
+        "text": "A variance issued by the regulatory authority"
+      },
+      {
+        "id": "d",
+        "text": "The operation's existing permit for routine kitchen work"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A variance is the written document the regulatory authority issues to waive or modify a Food Code requirement. Curing food is a specialized process, so that variance is required before the bacon is sold. The chef must also submit a HACCP plan with the variance request, but the plan is not the waiver itself. A consumer advisory and the ordinary operating permit do not authorize curing.",
+    "distractorExplanations": {
+      "a": "A consumer advisory discloses raw or undercooked items. It does not waive the rule against curing without approval.",
+      "b": "The chef's HACCP plan is filed with the variance request. It is not the waiver the regulatory authority issues.",
+      "d": "The existing permit covers routine kitchen work. Curing is a specialized process and still needs a variance."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-216",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "The salad cook wants to sprout mung beans in the kitchen and toss them into cold bowls. Sprouting is not routine prep. What must the operation have in place before those beans are sprouted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A HACCP plan the kitchen writes with no variance from the authority"
+      },
+      {
+        "id": "b",
+        "text": "The same wash-and-serve steps used for whole heads of lettuce"
+      },
+      {
+        "id": "c",
+        "text": "A variance from the authority with no HACCP plan for the sprouting"
+      },
+      {
+        "id": "d",
+        "text": "A variance plus a HACCP plan for the sprouting"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Sprouting seeds or beans is a specialized process linked to serious outbreaks. The regulatory authority must approve a variance, and the operation must have a HACCP plan, before the beans are sprouted. A plan with no variance, a variance with no plan, or the wash used for whole lettuce does not take the place of that approval.",
+    "distractorExplanations": {
+      "a": "A HACCP plan with no variance leaves sprouting unapproved. The regulatory authority must issue the variance before the beans are sprouted.",
+      "b": "Washing lettuce does not control the hazard of on-site sprouting. Sprouting needs a variance and a HACCP plan.",
+      "c": "A variance with no HACCP plan is incomplete. Sprouting requires both the variance and the plan before it starts."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-217",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Two new dishwashers will wash pots on tonight's shift. Nobody has shown them how to test sanitizer strength or how to report vomiting. What should the person in charge do before they handle ware?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Train them on sanitizer testing and illness reporting before the shift"
+      },
+      {
+        "id": "b",
+        "text": "Let them start the shift and review their work if a guest complains later in the week"
+      },
+      {
+        "id": "c",
+        "text": "Have them watch one closer and skip the sanitizer and illness lessons"
+      },
+      {
+        "id": "d",
+        "text": "Save the sanitizer and illness lessons for the staff meeting next week"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The person in charge must train food handlers in the food-safety tasks they will do, including how to test sanitizer and how to report symptoms such as vomiting, before they do that work. Training is part of active managerial control and is not delayed until a complaint or a later meeting.",
+    "distractorExplanations": {
+      "b": "Starting without instruction leaves sanitizer strength and illness reporting uncontrolled. Training comes before the task.",
+      "c": "Watching one closer does not teach sanitizer testing or illness reporting. Those tasks are trained before the dishwashers handle ware.",
+      "d": "A meeting next week is too late for tonight's shift. The person in charge trains sanitizer testing and illness reporting before they wash ware."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-218",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Halfway through dinner, a grill cook vomits in the staff restroom and then says he can finish the remaining tickets. He names no diagnosis. What should the person in charge do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep him cooking if he changes gloves and avoids the salad station"
+      },
+      {
+        "id": "b",
+        "text": "Exclude him from the operation right away"
+      },
+      {
+        "id": "c",
+        "text": "Move him to garnishing desserts until the last ticket is plated"
+      },
+      {
+        "id": "d",
+        "text": "Let him finish the shift and suggest he phone a clinic in the morning"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Vomiting requires exclusion even when the cook has no named diagnosis. The person in charge has the authority to send him home at once and does not wait for the end of the shift or a clinic call. A glove change or a move to desserts still leaves a symptomatic handler in the operation.",
+    "distractorExplanations": {
+      "a": "Gloves do not make vomiting acceptable. The Food Code action is exclusion from the operation, not a limit on which station he works.",
+      "c": "Garnishing desserts is still food handling. Vomiting calls for exclusion, not a transfer to another food task.",
+      "d": "Waiting out the shift delays exclusion. The person in charge acts when the vomiting is known, without a diagnosis first."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-219",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "A prep cook at a neighborhood cafe reports a sore throat with a fever. The cafe does not serve a highly susceptible population, and she has no diagnosed illness. How should the person in charge respond?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Exclude her from the building until a physician clears this sore throat and fever"
+      },
+      {
+        "id": "b",
+        "text": "Let her keep chopping salads if she takes fever medicine before the lunch rush"
+      },
+      {
+        "id": "c",
+        "text": "Restrict her from exposed food, clean equipment, utensils, and linens"
+      },
+      {
+        "id": "d",
+        "text": "Send her back to prep because a sore throat with fever need not be reported"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Food handlers must report a sore throat with fever. In an operation that does not serve a highly susceptible population, the person in charge restricts her from exposed food, clean equipment, utensils, and linens. Exclusion for this symptom is for places such as a hospital or nursing home. Medicine does not lift the restriction.",
+    "distractorExplanations": {
+      "a": "Exclusion for a sore throat with fever applies in a highly susceptible population. This cafe restricts her duties instead of sending her off the property.",
+      "b": "Fever medicine does not remove the restriction. She cannot keep working with exposed salads while the symptom continues.",
+      "d": "A sore throat with fever is a symptom staff must report. The person in charge acts on it without waiting for a named diagnosis."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-220",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "On a line check, the person in charge sees the new garde manger slice melons on the board she just used for raw chicken, weeks after orientation. What is the right management response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip further teaching because orientation already covered cutting boards"
+      },
+      {
+        "id": "b",
+        "text": "Issue a written warning and skip a new board demonstration"
+      },
+      {
+        "id": "c",
+        "text": "Leave the habit in place for an inspector to cite on a future visit"
+      },
+      {
+        "id": "d",
+        "text": "Retrain her on separate boards and watch the task"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When monitoring shows a food handler is cross-contaminating, the person in charge retrains her on that task and then watches her do it correctly. An earlier orientation does not end the training duty. A written warning, or leaving the habit for an inspector, does not replace that correction.",
+    "distractorExplanations": {
+      "a": "Orientation does not close training. A repeated board mistake means retrain the task and verify it on the line.",
+      "b": "A written warning without a new demonstration leaves the board habit in place. The person in charge retrains separate boards and watches the task.",
+      "c": "An inspector is not the control step. The person in charge retrains when monitoring shows the task is done wrong."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-221",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "This barbecue pit smokes brisket for flavor, cooks it through, and hot-holds it for same-day service. A cook claims any smoking needs a waiver, the same waiver used when meat is smoked so it keeps without further cooking. What does this brisket service require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ordinary cooking and hot-holding controls"
+      },
+      {
+        "id": "b",
+        "text": "A variance, since any smoking of meat counts as preservation no matter the service plan"
+      },
+      {
+        "id": "c",
+        "text": "A consumer advisory that treats the brisket as raw or undercooked"
+      },
+      {
+        "id": "d",
+        "text": "A HACCP plan treating this flavor smoking as a specialized process"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A variance and a HACCP plan are required when smoking is used to preserve food. They are not required when meat is smoked for flavor, cooked through, and hot-held for same-day service under ordinary cooking and hot-holding rules. This brisket is not offered raw, so a consumer advisory does not apply.",
+    "distractorExplanations": {
+      "b": "Preservation smoking is the process that needs a variance. Flavor smoking followed by cooking and hot holding does not.",
+      "c": "The brisket is cooked and hot-held, so it is not a raw or undercooked item that needs a consumer advisory.",
+      "d": "Flavor smoking that is cooked and hot-held is not a specialized preservation process. It does not require a HACCP plan."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-222",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "Hunters ask the shop to break down their deer and wrap the meat for their own home use. The shop will not sell that meat. What must the person in charge have approved before this custom processing starts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A note from each hunter saying the deer looked healthy in the field"
+      },
+      {
+        "id": "b",
+        "text": "An approved variance and a HACCP plan"
+      },
+      {
+        "id": "c",
+        "text": "A HACCP plan the shop writes, with no variance from the authority"
+      },
+      {
+        "id": "d",
+        "text": "No added approval, because unsold meat falls outside specialized-process rules"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Custom-processing animals for a customer's personal use is a specialized process even when the meat is not sold. The person in charge needs a variance approved by the regulatory authority and a HACCP plan before the shop dresses and wraps the deer. A hunter's field note is not that approval, and a HACCP plan with no variance is incomplete.",
+    "distractorExplanations": {
+      "a": "A hunter's note about the deer is not a variance. Custom processing is approved by the regulatory authority.",
+      "c": "A HACCP plan with no variance is incomplete. Custom processing needs the regulatory authority's variance as well as the plan.",
+      "d": "Personal-use processing is still a specialized process. Whether the meat is sold is not what removes the variance and HACCP plan."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-223",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "At pre-shift, a server says the whites of his eyes turned yellow within the last 7 days. He feels fine and wants his usual tables. What must the person in charge do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Let him work the floor if he stays away from the pass and the garnishes"
+      },
+      {
+        "id": "b",
+        "text": "Restrict him to bar service that includes cutting citrus for drinks"
+      },
+      {
+        "id": "c",
+        "text": "Exclude him and notify the regulatory authority"
+      },
+      {
+        "id": "d",
+        "text": "Keep him on the schedule and mention the yellow eyes at the next inspection"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Jaundice with onset within the last 7 days requires exclusion and a report to the regulatory authority, because it may be hepatitis A. The person in charge has the authority to keep the server out of the operation immediately. He returns with regulatory approval and a written medical release.",
+    "distractorExplanations": {
+      "a": "Staying off the pass is still working. Jaundice in this 7-day window requires exclusion, not a smaller section of the floor.",
+      "b": "Cutting citrus is food handling. This symptom is not handled by a bar restriction; the server is excluded and the regulatory authority is notified.",
+      "d": "Waiting for the next inspection delays both the exclusion and the required notice to the regulatory authority."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "servsafe-manager-mock-management-haccp-224",
+    "examSlug": "servsafe-manager-mock",
+    "topicId": "management-haccp",
+    "prompt": "New servers will answer guests who ask whether a dish contains a major food allergen. The owner wonders who prepares those servers. What is the person in charge required to do before the servers take tables?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tell them to infer the allergen answer from the name of the dish if they feel unsure"
+      },
+      {
+        "id": "b",
+        "text": "Post a notice that the kitchen will not discuss ingredients with guests"
+      },
+      {
+        "id": "c",
+        "text": "Wait to cover allergens until after a guest reports a reaction in the dining room"
+      },
+      {
+        "id": "d",
+        "text": "Train them on the allergens in the dishes they will describe"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The person in charge must train food handlers in the duties they perform, including food-allergy awareness. Servers who describe dishes need to know which items contain the major allergens and must pass on questions they cannot answer. Guessing from the name, or waiting for a reaction, does not meet that duty.",
+    "distractorExplanations": {
+      "a": "Inferring an allergen from the dish name can miss a hidden ingredient. Training has to cover the real menu items.",
+      "b": "A notice that refuses ingredient questions leaves guests without the information staff are supposed to be trained to give.",
+      "c": "Waiting for a reaction in the dining room is too late. Allergy training happens before the servers take tables."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   }
 ]

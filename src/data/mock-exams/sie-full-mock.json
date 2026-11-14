@@ -2875,6 +2875,534 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "sie-full-mock-capital-markets-201",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A regional bakery files to sell newly issued common stock. The lead underwriter signs a firm-commitment agreement, and several institutions then decline the shares. Who must still purchase the unsold portion?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The underwriters that signed the firm-commitment contract"
+      },
+      {
+        "id": "b",
+        "text": "Institutions that submitted indications of interest, which bind them to buy"
+      },
+      {
+        "id": "c",
+        "text": "The bakery itself, which must repurchase shares the syndicate cannot place"
+      },
+      {
+        "id": "d",
+        "text": "Existing bakery shareholders, who must buy the unsold shares in proportion to their holdings"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Under a firm-commitment agreement the underwriters buy the new issue from the issuer and then resell it. If institutions decline shares, those shares stay with the underwriters. The issuer has already sold the offering to them.",
+    "distractorExplanations": {
+      "b": "An indication of interest is not a purchase contract. Those institutions may walk away, and the firm-commitment obligation remains with the underwriters.",
+      "c": "In a firm commitment the issuer sells the shares to the underwriters at the start. It does not buy them back when later buyers decline.",
+      "d": "Existing shareholders do not have to buy shares the syndicate cannot place. A purchase in proportion to current holdings belongs to a rights offering, and this contract is a firm commitment by the underwriters."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-202",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "During a rights offering, current shareholders may buy new shares in proportion to the holdings they already have. The issuer also hires an underwriter to purchase shares those shareholders leave unsubscribed. What role is that underwriter taking?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firm-commitment manager of an initial public offering marketed to new investors"
+      },
+      {
+        "id": "b",
+        "text": "Standby underwriter for the shares the rights holders do not take"
+      },
+      {
+        "id": "c",
+        "text": "Best-efforts dealer that may send rejected shares back to the issuer"
+      },
+      {
+        "id": "d",
+        "text": "Transfer agent whose assignment is to record which holders still own stock"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A standby underwriter agrees, in a rights offering, to buy the new shares that current shareholders do not subscribe. The duty to purchase that unsubscribed remainder is what the standby role adds.",
+    "distractorExplanations": {
+      "a": "The company is not selling an initial public offering to new investors. The underwriter buys the shares current rights holders leave unsubscribed, and that role is a standby.",
+      "c": "Best efforts lets the dealer send unsold shares back to the issuer. Here the underwriter is hired to purchase the unsubscribed shares, which is a standby.",
+      "d": "A transfer agent keeps the shareholder register. It does not agree to purchase shares that rights holders leave unsubscribed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-203",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A biotech issuer hires a syndicate to market newly issued shares but rejects a contract that would force the syndicate to buy shares the public turns down. Unsold shares go back to the issuer. Which underwriting arrangement is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Firm commitment, because the syndicate must purchase whatever buyers reject"
+      },
+      {
+        "id": "b",
+        "text": "A standby rights deal, because current owners left subscription rights unexercised"
+      },
+      {
+        "id": "c",
+        "text": "Best efforts, with unsold shares returned and no duty to buy them"
+      },
+      {
+        "id": "d",
+        "text": "A secondary distribution of shares the syndicate already held in inventory"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Best-efforts underwriting means the syndicate tries to sell the new shares but is not obligated to purchase what the public turns down. Unsold shares go back to the issuer, which receives proceeds for the shares that actually sold.",
+    "distractorExplanations": {
+      "a": "Firm commitment would require the syndicate to buy the shares the public rejects. This issuer refused that purchase duty, and the unsold shares return to the issuer.",
+      "b": "Standby underwriting is used when shareholders receive rights and the underwriter buys what they do not take. This scenario has no rights offering and no purchase duty.",
+      "d": "A secondary distribution sells shares that are already outstanding. These shares are newly issued, and any that remain unsold go back to the issuer."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-204",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Shares of a listed manufacturer trade on an exchange between two investors. The company issued those shares in a prior period and is not selling stock in this trade. Which market is this, and who receives the sale proceeds?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The primary market, and the manufacturer receives the cash as new capital"
+      },
+      {
+        "id": "b",
+        "text": "The primary market, and the broker who handled the trade keeps the sale proceeds"
+      },
+      {
+        "id": "c",
+        "text": "The secondary market, and the manufacturer still collects the seller's cash"
+      },
+      {
+        "id": "d",
+        "text": "The secondary market, and the selling investor receives the proceeds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A trade between investors in shares the company issued earlier takes place in the secondary market. The selling investor receives the proceeds. The manufacturer does not raise new capital from that resale.",
+    "distractorExplanations": {
+      "a": "The primary market is the issuer's sale of new securities. This trade is between two investors, and the company is not selling stock.",
+      "b": "The shares were issued in a prior period and two investors are trading them, so this is the secondary market. The selling investor receives the proceeds. A commission to the broker is not those proceeds.",
+      "c": "The secondary-market label is right, but the cash belongs to the selling investor. The manufacturer does not collect proceeds from a trade between investors."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-205",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A city utility issues brand-new bonds through a syndicate so it can build a treatment plant. Investors buy those bonds from the syndicate during the offering. Which market is this, and where do the net proceeds go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primary market, with the net proceeds paid to the utility"
+      },
+      {
+        "id": "b",
+        "text": "Secondary market, with the net proceeds paid to people who bought these bonds earlier"
+      },
+      {
+        "id": "c",
+        "text": "Secondary market, with the syndicate keeping the cash as profit on old inventory"
+      },
+      {
+        "id": "d",
+        "text": "Primary market, but the syndicate retains the net proceeds instead of the utility"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Investors are buying bonds the utility is issuing for the first time, through the syndicate. That is a primary-market sale. The net proceeds of the offering go to the utility to pay for the plant, after the underwriting compensation.",
+    "distractorExplanations": {
+      "b": "Earlier bondholders would receive cash if they were selling bonds they already owned. These bonds are brand-new and are coming from the utility.",
+      "c": "Profit on old inventory would describe a secondary trade out of the syndicate's trading account. This is a distribution of a new issue.",
+      "d": "The syndicate is paid through the underwriting spread. The net proceeds of a primary offering are paid to the issuer, which is the utility."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-206",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Counsel for a new mutual fund must identify the federal statute that covers investment-company registration, shareholder voting, and limits on transactions with affiliated persons. Which statute is the counsel seeking?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Securities Act of 1933, which registers fund shares sold to the public"
+      },
+      {
+        "id": "b",
+        "text": "The Investment Company Act of 1940, on funds and affiliated persons"
+      },
+      {
+        "id": "c",
+        "text": "The Securities Exchange Act of 1934, which governs trading once shares are outstanding"
+      },
+      {
+        "id": "d",
+        "text": "The Investment Advisers Act of 1940, which regulates people paid to give advice"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The Investment Company Act of 1940 regulates investment companies, including mutual funds. It covers registration of the company, shareholder voting, and limits on transactions with affiliated persons. The 1933 Act can govern the public offer of the shares, and the Advisers Act regulates advisers rather than the fund.",
+    "distractorExplanations": {
+      "a": "The Securities Act of 1933 can require registration when fund shares are publicly offered. It does not set the fund's voting rules or limits on affiliated-person transactions.",
+      "c": "The Securities Exchange Act of 1934 regulates secondary-market trading and broker-dealers. Fund structure and deals with affiliates are the subject of the 1940 Act.",
+      "d": "The Investment Advisers Act of 1940 regulates persons who give advice for compensation. It is not the statute on fund registration, voting, and affiliated-person transactions."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-207",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Before a follow-on offering of newly issued common stock, counsel requires each buyer to receive a document describing the business, the risks, and how the company will use the money. Which statute is the main source of that registration and prospectus duty?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Investment Company Act of 1940, because this follow-on makes the issuer an investment company"
+      },
+      {
+        "id": "b",
+        "text": "The Securities Exchange Act of 1934, because the shares will trade after they are issued"
+      },
+      {
+        "id": "c",
+        "text": "The Securities Act of 1933, which imposes the prospectus duty on this new issue"
+      },
+      {
+        "id": "d",
+        "text": "The Investment Advisers Act of 1940, because the prospectus is investment advice to the buyers"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The Securities Act of 1933 requires registration of a public offering of securities and delivery of a prospectus that discloses the business, the risks, and the use of proceeds. A follow-on sale of newly issued common stock is that kind of primary distribution.",
+    "distractorExplanations": {
+      "a": "The Investment Company Act of 1940 regulates funds. An operating company selling its own new common stock does not become an investment company by making that offering.",
+      "b": "The Securities Exchange Act of 1934 governs trading after securities are outstanding, plus exchanges and broker-dealers. The prospectus duty for this new offering comes from the 1933 Act.",
+      "d": "A prospectus is the issuer's disclosure document under the 1933 Act. It is not investment advice, so the Investment Advisers Act of 1940 is not the source of this registration duty."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-208",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A trader reports a pattern of wash trades in a listed common stock. The compliance desk looks for the federal statute that addresses manipulation in the secondary market and registration of broker-dealers. Which statute fits that search?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The Securities Act of 1933, treating the wash trades as new-issue prospectus fraud"
+      },
+      {
+        "id": "b",
+        "text": "The Investment Company Act of 1940, treating the listed stock as shares of a fund"
+      },
+      {
+        "id": "c",
+        "text": "The Trust Indenture Act of 1939, because the issuer has securities in public hands"
+      },
+      {
+        "id": "d",
+        "text": "The Securities Exchange Act of 1934, on secondary trading and broker-dealers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Securities Exchange Act of 1934 regulates trading in the secondary market, bars manipulative devices such as wash trades, and requires broker-dealers to register. A pattern of wash trades in an already listed stock is addressed under that statute.",
+    "distractorExplanations": {
+      "a": "The Securities Act of 1933 deals with offers of securities and the prospectus. Wash trades in a listed stock are secondary-market manipulation, not a new-issue disclosure failure.",
+      "b": "The listed common stock of an operating company is not a share of an investment company. The Investment Company Act of 1940 is the wrong statute for this report.",
+      "c": "The Trust Indenture Act of 1939 sets requirements for trustees on certain debt issues. It does not police wash trades or broker-dealer registration."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-209",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "An investor comparing a new stock offering holds a long disclosure booklet and has also seen a short boxed notice that names the issuer and the underwriters. The investor wants the document that states the risks and the use of proceeds. Which document is that?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The prospectus, which states the risks and the use of proceeds"
+      },
+      {
+        "id": "b",
+        "text": "The tombstone, which is the disclosure an investor must read before buying"
+      },
+      {
+        "id": "c",
+        "text": "The trade confirmation, which takes the place of the prospectus after the order"
+      },
+      {
+        "id": "d",
+        "text": "The boxed notice, which becomes the risk disclosure once the offering is filed"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The prospectus is the disclosure document investors use for a registered offering. It describes the risks and how the issuer will use the proceeds. A short boxed notice that names the issuer and the underwriters is a tombstone, not that disclosure.",
+    "distractorExplanations": {
+      "b": "A tombstone may name the issuer and the underwriters. It does not set out the risks or the use of proceeds, so it is not the document the investor should use for those facts.",
+      "c": "A trade confirmation reports an executed order. It does not replace the prospectus as the source of risk and proceeds disclosure.",
+      "d": "Filing the offering does not turn the boxed notice into the risk disclosure. The prospectus remains the document that states the risks and the use of proceeds."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-210",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A newspaper runs a boxed announcement of a registered common-stock offering. The box names the issuer, the amount, and the syndicate, and it states that the announcement is not an offer to sell. What is that box, and may an investor buy from it alone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A final prospectus, so the investor may buy using the box as complete disclosure"
+      },
+      {
+        "id": "b",
+        "text": "A tombstone, and the box is not an offer the investor can accept"
+      },
+      {
+        "id": "c",
+        "text": "The registration statement, printed in the paper so the investor can purchase from it"
+      },
+      {
+        "id": "d",
+        "text": "A private-placement memorandum that also serves as the investor's subscription form"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A tombstone is a brief announcement of a registered offering. It may name the issuer, the amount, and the syndicate, and it states that it is not an offer to sell. An investor cannot purchase the shares from the tombstone alone.",
+    "distractorExplanations": {
+      "a": "A prospectus is the disclosure document for the offering. A boxed announcement that says it is not an offer to sell is a tombstone, not the final prospectus.",
+      "c": "The registration statement is filed with the SEC. A newspaper box that says it is not an offer is a tombstone, and the investor cannot buy from that box.",
+      "d": "The announcement describes a registered offering and says it is not an offer to sell. That is a tombstone, not a private-placement subscription form."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-211",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Congress raises income-tax rates and cuts federal spending in order to cool an economy that officials call overheated. A customer asks the representative to classify that pair of actions. Which classification is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Monetary policy, because a tax change acts like an open-market sale of securities"
+      },
+      {
+        "id": "b",
+        "text": "Monetary policy, because tax laws are the way Congress steers the Federal Reserve"
+      },
+      {
+        "id": "c",
+        "text": "Fiscal policy, carried out through taxation and government spending"
+      },
+      {
+        "id": "d",
+        "text": "Central-bank policy, because cooling an expansion belongs on the Fed's trading desk"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Fiscal policy is Congress using taxes and government spending to influence the economy. Raising income-tax rates and cutting federal spending are fiscal actions aimed at cooling demand. Monetary policy is the Federal Reserve's control of money and credit.",
+    "distractorExplanations": {
+      "a": "An open-market sale is a Federal Reserve monetary tool. A tax increase can also cool demand, but it is fiscal policy, not an open-market operation.",
+      "b": "Congress does not run monetary policy by changing tax rates. Tax and spending decisions are fiscal policy and are separate from the Fed's tools.",
+      "d": "The Federal Reserve can cool the economy with monetary tools. Congress can cool it as well by raising taxes and cutting spending, and that combination is fiscal policy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-212",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "The Federal Reserve sells Treasury securities from its portfolio in the open market in order to tighten credit. A customer who already holds corporate bonds asks what that step tends to do to market yields and to the price of those bonds. What is the expected effect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yields tend to fall, and the prices of the customer's bonds tend to rise"
+      },
+      {
+        "id": "b",
+        "text": "Yields tend to rise, and the prices of the customer's bonds tend to rise too"
+      },
+      {
+        "id": "c",
+        "text": "Yields stay the same, because these sales affect new auctions rather than bonds already trading"
+      },
+      {
+        "id": "d",
+        "text": "Yields tend to rise, and the prices of the customer's bonds tend to fall"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When the Federal Reserve sells Treasury securities in the open market, it absorbs cash and tightens credit, which tends to push market yields higher. Bond prices move in the opposite direction from yields, so the customer's existing bonds tend to fall in price.",
+    "distractorExplanations": {
+      "a": "A Fed sale of securities is a tightening step. It tends to lift yields, not lower them, so the price effect is not an increase.",
+      "b": "The yield direction matches a tightening sale, but prices do not rise along with yields. Existing bond prices move the other way.",
+      "c": "Open-market sales change reserves and the yields investors demand on outstanding bonds. They are not confined to new Treasury auctions, and existing bond prices respond."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-213",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Building permits and initial claims for unemployment benefits have shifted several months before the output figures. A client asks how economists usually classify those two series when they move ahead of the broader economy. Which classification fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leading indicators, which tend to turn before the broad economy"
+      },
+      {
+        "id": "b",
+        "text": "Lagging indicators, because initial claims are classified with unemployment duration"
+      },
+      {
+        "id": "c",
+        "text": "Coincident indicators, because building permits are counted inside current production"
+      },
+      {
+        "id": "d",
+        "text": "Lagging indicators, because building permits are counted after the projects finish"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Building permits and initial claims for unemployment benefits are leading indicators. They tend to change before the broader economy turns, which is why a move in those series ahead of the output figures is classified as leading.",
+    "distractorExplanations": {
+      "b": "Initial claims for unemployment benefits are a leading series. The average duration of unemployment is the lagging labor series. Classifying the claims with that duration figure swaps the two.",
+      "c": "Coincident indicators, such as industrial production, move with the current economy. Permits and initial jobless claims are watched because they turn earlier.",
+      "d": "Building permits are issued before construction is finished, and they lead the economy. Counting them after projects finish gives a leading series the lagging label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-214",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Average duration of unemployment keeps rising after output and payroll employment have already begun to recover. A portfolio manager asks which indicator category that delayed labor series belongs in. Which category fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leading, because labor statistics are published earlier than the GDP report"
+      },
+      {
+        "id": "b",
+        "text": "Lagging, because the series confirms a turn after it has taken place"
+      },
+      {
+        "id": "c",
+        "text": "Coincident, because unemployment figures are treated as a reading of current output"
+      },
+      {
+        "id": "d",
+        "text": "Leading, because a rising duration of unemployment forecasts the next expansion"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The average duration of unemployment is a lagging indicator. It often keeps rising after output and payrolls have begun to recover, so it confirms a turn that has already started rather than calling the turn in advance.",
+    "distractorExplanations": {
+      "a": "The release calendar is not the test. A series that changes after the economy has turned is lagging, even if a labor report is published on an earlier date than GDP.",
+      "c": "Payroll employment is a coincident labor series. The average duration of unemployment responds later and is classified as lagging.",
+      "d": "A duration figure that is still rising during a recovery is delayed confirmation of the prior downturn. It is not a leading forecast of the next expansion."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-215",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "Industrial production and personal income, excluding transfer payments, are rising along with the current expansion. An analyst asks which category describes series that track the economy as it stands today. Which category is that?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leading indicators, because production and income turn well ahead of the cycle"
+      },
+      {
+        "id": "b",
+        "text": "Lagging indicators, because later revisions mean the series confirms an older turn"
+      },
+      {
+        "id": "c",
+        "text": "Coincident indicators, which move together with the economy as it is now"
+      },
+      {
+        "id": "d",
+        "text": "Lagging indicators, because these series confirm a turn after the economy has moved"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Industrial production and personal income excluding transfer payments are coincident indicators. They tend to rise and fall at the same time as the broader economy, so series that track the expansion as it is happening are coincident.",
+    "distractorExplanations": {
+      "a": "These two series do not characteristically turn well before the cycle. Indicators that move with current conditions are coincident, while leading series move earlier.",
+      "b": "A later statistical revision does not make the activity lagging. Classification follows when the production and income occur, and here they occur with the expansion.",
+      "d": "Industrial production and personal income excluding transfer payments move with the economy as it happens. They are coincident. A series that confirms a turn after the economy has moved is lagging."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-capital-markets-216",
+    "examSlug": "sie-full-mock",
+    "topicId": "capital-markets",
+    "prompt": "A customer notices that the market yield investors demand on bonds comparable to the corporate bond she holds has risen. Her account statement shows a lower price, and the issuer has not missed a payment. Why did the price fall?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The issuer called the bond, and the statement wrote the remaining principal down"
+      },
+      {
+        "id": "b",
+        "text": "The coupon was reduced so the bond would match the higher yield investors demand"
+      },
+      {
+        "id": "c",
+        "text": "Price and yield move together, so the higher yield should have raised the statement price"
+      },
+      {
+        "id": "d",
+        "text": "Prices move opposite yields, so the higher yield lowered the market price"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The bond's stated coupon does not change when market yields change. If investors demand a higher yield on comparable bonds, they pay less for that fixed coupon, so the price falls. Bond prices and yields move in opposite directions, and a missed payment is not required for the markdown.",
+    "distractorExplanations": {
+      "a": "A call would retire the bond under its call terms. The customer still holds the bond, and the lower statement price is the market's response to a higher yield.",
+      "b": "The issuer does not cut the stated coupon because market yields rise. The price changes so that the same coupon equates to the new higher yield.",
+      "c": "Price and yield move in opposite directions. A higher required yield lowers the present value of the bond's cash flows, so the statement price falls."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "sie-full-mock-regulatory-framework-008",
     "examSlug": "sie-full-mock",
     "topicId": "regulatory-framework",
@@ -3104,6 +3632,303 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-201",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A customer's broker-dealer has failed, and securities shown on the account statement cannot be located. She asks which program protects customers in that kind of failure, as distinct from insurance on deposits at a bank. Which description of the roles is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SIPC protects customers if a member broker fails and their securities or cash are missing."
+      },
+      {
+        "id": "b",
+        "text": "FDIC insures depositors when a bank fails, and it also replaces securities a failed broker cannot find for its customers."
+      },
+      {
+        "id": "c",
+        "text": "SIPC repays a drop in market value even when the broker is still open and the securities remain credited to the account."
+      },
+      {
+        "id": "d",
+        "text": "FDIC covers securities missing at a failed broker, while SIPC's role is to insure checking and savings deposits held at banks."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "SIPC's role is to protect customers when a member broker-dealer fails and customer securities or cash are missing. It does not insure market losses. FDIC insures deposits at banks. A failed broker with missing securities is an SIPC situation, not an FDIC deposit claim.",
+    "distractorExplanations": {
+      "b": "This assigns SIPC's failed-broker role to the FDIC. FDIC insures bank deposits and does not replace securities missing at a broker-dealer.",
+      "c": "SIPC does not insure a decline in market value. Its role is customer property that is missing after a member broker-dealer fails.",
+      "d": "This reverses the two roles. FDIC insures bank deposits. SIPC addresses missing customer property at a failed broker-dealer."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-202",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A new hire at a FINRA member must register before she contacts the public. She asks which form carries her registration disclosures and which form the firm files when someone's association ends. Which pairing is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Form U5 is the application that starts her registration, and Form U4 is the notice filed when her association with the member ends."
+      },
+      {
+        "id": "b",
+        "text": "Form U4 is the registration application with her disclosures; Form U5 is the firm's termination notice."
+      },
+      {
+        "id": "c",
+        "text": "Form CRS is the registration application she submits to FINRA, and Form U4 is the relationship summary given to a new retail customer."
+      },
+      {
+        "id": "d",
+        "text": "Form U4 carries her disclosures and is the form the firm files again when the association ends, while Form U5 is an internal copy of that same application."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Form U4, the Uniform Application for Securities Industry Registration or Transfer, registers an associated person and carries the disclosure questions. Form U5, the Uniform Termination Notice, is what the member files when that association ends. The new hire's disclosures belong on Form U4.",
+    "distractorExplanations": {
+      "a": "This swaps the forms. Form U4 starts registration and holds the disclosures. Form U5 is the termination notice, not the application that registers her.",
+      "c": "Form CRS is a customer relationship summary, not a registration application. Form U4 is not the summary delivered to a retail customer.",
+      "d": "This uses Form U4 to end the association and treats Form U5 as a spare copy. Form U4 is the registration application. The member files Form U5 as the termination notice."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-203",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A principal reviewing a hiring packet sees that the applicant was expelled by a self-regulatory organization. The applicant still wants to join the member and accept customer orders. What does that expulsion mean for the hire?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a closed comment from a prior termination filing, so the member may register him and let him accept customer orders immediately."
+      },
+      {
+        "id": "b",
+        "text": "It is a statutory disqualification when a court has entered a felony conviction, so the expulsion on its own does not stop the member from associating him."
+      },
+      {
+        "id": "c",
+        "text": "It is a statutory disqualification, so the firm needs eligibility relief before it associates him."
+      },
+      {
+        "id": "d",
+        "text": "It bars him from any association permanently, and the member has no eligibility process that can allow the firm to hire him."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Expulsion by a self-regulatory organization is a statutory-disqualification category. A person in that category generally may not associate with a FINRA member unless eligibility relief is granted. The firm cannot treat the expulsion as routine hiring paperwork.",
+    "distractorExplanations": {
+      "a": "An SRO expulsion is not a closed termination comment the new firm can ignore. It places the applicant in a statutory-disqualification category.",
+      "b": "This limits statutory disqualification to a felony conviction. Expulsion by a self-regulatory organization is its own category, and the firm needs eligibility relief even when no felony is involved.",
+      "d": "This treats the expulsion as a permanent bar with no eligibility process. The expulsion is a statutory disqualification, and the firm may associate him if eligibility relief is granted."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-204",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A registered representative finished the product workshops her firm assigned this quarter and told her supervisor that continuing education was therefore done. What remains true about the Regulatory Element?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Those workshops are the Regulatory Element, so her continuing-education duty to FINRA is already satisfied by the product sessions."
+      },
+      {
+        "id": "b",
+        "text": "The Regulatory Element drops away once a person passes a representative-level exam and joins a member firm as a registered person."
+      },
+      {
+        "id": "c",
+        "text": "She must retake the Securities Industry Essentials exam to satisfy the Regulatory Element, because the product workshops do not count toward that session."
+      },
+      {
+        "id": "d",
+        "text": "She still must complete FINRA's Regulatory Element, which is separate from the firm's product training."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The Regulatory Element is FINRA continuing education on industry rules, and registered persons must complete it annually. Product workshops are part of the Firm Element, which the member designs. Finishing those workshops does not complete the Regulatory Element.",
+    "distractorExplanations": {
+      "a": "Firm product workshops belong to the Firm Element, which the member designs. They do not substitute for FINRA's Regulatory Element.",
+      "b": "Passing a qualification exam does not retire the Regulatory Element. Registered persons continue to owe that continuing-education requirement.",
+      "c": "This substitutes a new Securities Industry Essentials exam for the Regulatory Element. The product workshops do not complete that element, and the element is not a retake of the SIE."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-205",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A former representative, whose registration has already ended, asks whether the Maintaining Qualifications Program would let her keep accepting customer orders while she stays out of the industry. What is that program actually for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It maintains qualifications through continuing education after registration ends. It does not keep her registered."
+      },
+      {
+        "id": "b",
+        "text": "It keeps her registration active, so she may solicit customers and accept orders while she is away from any member firm."
+      },
+      {
+        "id": "c",
+        "text": "It stands in for the registration application, so a later firm can associate her without submitting a disclosure filing."
+      },
+      {
+        "id": "d",
+        "text": "It preserves her qualifications on its own once she leaves, with no continuing education, for as long as she stays away from a member firm."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The Maintaining Qualifications Program lets a person whose registration has ended maintain exam qualifications by completing the program's continuing education. It does not keep her registered, and it does not authorize her to accept customer orders while she is out of the industry.",
+    "distractorExplanations": {
+      "b": "The program does not keep a registration alive and does not authorize customer orders while the person is unregistered and away from a firm.",
+      "c": "Maintaining qualifications does not replace the registration application or its disclosure questions when she later associates with a firm.",
+      "d": "This treats the program as automatic preservation, with no education, while she stays away. The program maintains qualifications through its continuing education, and it does not keep her registered."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-206",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A representative wants to email a customer's account balances and Social Security number to an unaffiliated company that markets products this broker-dealer does not sell. The customer has not agreed to that sharing. What does Regulation S-P require here?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The representative may send the file, because Regulation S-P protects the signed account agreement and does not cover account balances or a Social Security number."
+      },
+      {
+        "id": "b",
+        "text": "The firm must protect that nonpublic information and follow its privacy notice and opt-out rules before sharing it that way."
+      },
+      {
+        "id": "c",
+        "text": "The representative may send the file because Regulation S-P covers FDIC-insured banks and does not apply to broker-dealers or their customers."
+      },
+      {
+        "id": "d",
+        "text": "The representative may send the file now and deliver the privacy notice afterward, because Regulation S-P is satisfied when the customer is told about a share that already happened."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Regulation S-P requires a broker-dealer to protect customers' nonpublic personal information, give a privacy notice, and follow opt-out rules before sharing that information with a nonaffiliated third party. Account balances and a Social Security number are that kind of information, so this marketing email is not a casual send.",
+    "distractorExplanations": {
+      "a": "This limits Regulation S-P to the signed agreement. Account balances and a Social Security number are nonpublic personal information, and the rule covers sharing them with an unaffiliated marketer.",
+      "c": "Regulation S-P applies to broker-dealers. It is not a bank-only rule, and it does not permit this sharing with an unaffiliated marketer.",
+      "d": "This lets the firm share first and notify later. Regulation S-P requires the privacy notice and a chance to opt out before that nonpublic information is shared with a nonaffiliated marketer."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-207",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A customer emails her representative that a trade in the account was unauthorized and that she wants the loss reversed. The representative plans to repay her from a personal bank account and delete the email so the supervisor will not see it. What should happen instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repaying the customer personally and deleting the email ends the issue, so the firm has no written complaint left to record or review."
+      },
+      {
+        "id": "b",
+        "text": "An email becomes a complaint after the customer also telephones, so she may settle the loss from personal funds without telling her supervisor."
+      },
+      {
+        "id": "c",
+        "text": "The email is a written complaint the firm must record and handle. She must not hide it or repay the customer herself."
+      },
+      {
+        "id": "d",
+        "text": "A message to the representative is not a complaint the firm must record unless the customer also submitted the firm's own complaint form."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An email alleging an unauthorized trade is a written customer complaint. The representative must turn it over to the firm so the firm can record it, supervise the response, and make any required regulatory report. Hiding the email or repaying the customer personally to keep it off the books is not allowed.",
+    "distractorExplanations": {
+      "a": "A personal repayment and a deleted email conceal a written complaint. The representative cannot erase the firm's duty to record and handle it.",
+      "b": "A customer's email alleging an unauthorized trade is already a written complaint. A telephone call is not required before the firm must take it up.",
+      "d": "This requires the firm's own complaint form before a record is kept. An email to the representative that alleges an unauthorized trade is already a written complaint the firm must record."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-208",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "A retail client holds a listed stock at a broker-dealer that is open for business, and the shares are still credited to her account. The market price fell, and she demands an insurance claim for that decline. Which statement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "SIPC must restore the lost market value, because its job is to insure customers against falling prices while the broker-dealer remains open."
+      },
+      {
+        "id": "b",
+        "text": "FDIC must restore the lost market value, because a stock held at a broker is an insured bank deposit whenever the market price falls."
+      },
+      {
+        "id": "c",
+        "text": "SIPC and FDIC each restore the same decline, with SIPC covering the shares and FDIC treating the brokerage loss as an insured deposit."
+      },
+      {
+        "id": "d",
+        "text": "Neither one pays a market loss. SIPC covers missing property at a failed broker, and FDIC insures bank deposits."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "SIPC protects customers against missing cash and securities when a member broker-dealer fails. It does not insure a drop in the market price of shares the client still holds at a solvent firm. FDIC insures deposits at banks, not that brokerage market loss.",
+    "distractorExplanations": {
+      "a": "SIPC does not insure market-price declines at a solvent broker. It addresses missing customer property when a member broker-dealer fails.",
+      "b": "FDIC insures deposits at banks. A fallen stock price in a brokerage account is not a claim on deposit insurance.",
+      "c": "The two programs do not stack on a market loss. A decline in the price of securities the client still holds is not what either program pays."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-regulatory-framework-209",
+    "examSlug": "sie-full-mock",
+    "topicId": "regulatory-framework",
+    "prompt": "An associated person resigns and tells the office she will file Form U4 herself to end her registration, so the firm need not send anything. A colleague adds that Form U5 is what a new firm uses to start a registration. Which description is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She files Form U4 to end the registration, and a later firm files Form U5 to begin her next association with a member."
+      },
+      {
+        "id": "b",
+        "text": "Form U5 is filed by the person who is leaving, and the member confirms the resignation in its personnel file rather than making that filing."
+      },
+      {
+        "id": "c",
+        "text": "A resignation does not call for a termination notice, so the next member may register her without any filing that this association has ended."
+      },
+      {
+        "id": "d",
+        "text": "The member files Form U5 to end her registration. Form U4 is the application used to register or transfer a person."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When she resigns, the member files Form U5, the Uniform Termination Notice, to end the registration. Form U4 is the Uniform Application for Securities Industry Registration or Transfer, used to register or transfer a person. She does not terminate registration by filing Form U4, and a new firm does not start a registration with Form U5.",
+    "distractorExplanations": {
+      "a": "This reverses the filings. Form U4 is the registration application. The member files Form U5 to terminate a registration, and she does not end it by filing Form U4.",
+      "b": "This has the departing person file Form U5. The member files that termination notice, and a note in the personnel file does not take the place of the filing.",
+      "c": "This treats a resignation as a departure with no termination notice. The member still files Form U5 when the association ends, and the next firm's registration does not replace that notice."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "sie-full-mock-products-risks-034",
@@ -4195,6 +5020,1458 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "sie-full-mock-products-risks-201",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Maya owns common shares and straight preferred shares of the same company. She is going to the annual meeting and wants to vote for the directors. Which of her shares can she vote?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The common shares, which elect the directors in the ordinary case"
+      },
+      {
+        "id": "b",
+        "text": "The straight preferred shares, because a senior dividend claim also elects the board of directors"
+      },
+      {
+        "id": "c",
+        "text": "Both the common and the preferred, one vote per share, since both classes are equity of the same issuer"
+      },
+      {
+        "id": "d",
+        "text": "Neither the common nor the preferred, because the sitting board fills the director seats and shareholders vote on a merger instead"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Common stock is the voting ownership. Straight preferred ordinarily does not vote for directors; its advantage is a stated dividend ahead of the common. Maya votes the common shares. Preferred seniority is about dividends and liquidation, not about electing the board.",
+    "distractorExplanations": {
+      "b": "A senior claim on dividends does not give straight preferred a vote for the directors.",
+      "c": "The two classes do not vote as equals. Straight preferred ordinarily has no vote at the annual meeting.",
+      "d": "Common stockholders elect the directors. The sitting board does not fill those seats in their place, and a vote on a merger is a separate corporate action."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-202",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Harbor Tools missed its preferred dividend in each of the past two years. The board now wants to pay a dividend on the common stock. The preferred shares are cumulative. What must be paid before any common dividend?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The common dividend first, because missed preferred dividends are settled in a liquidation and do not block a common dividend"
+      },
+      {
+        "id": "b",
+        "text": "The unpaid preferred dividends, both the current one and the missed ones"
+      },
+      {
+        "id": "c",
+        "text": "No further amount to the preferred holders, because a missed dividend is forfeited on cumulative preferred"
+      },
+      {
+        "id": "d",
+        "text": "An extra dividend to the common holders matching the missed preferred amounts, with the preferred left unpaid"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cumulative preferred carries unpaid dividends forward. Before Harbor Tools pays anything on the common, it must pay the preferred dividends that were missed and the current preferred dividend. Common stock does not jump ahead of that cumulative claim.",
+    "distractorExplanations": {
+      "a": "Unpaid cumulative dividends are not held back for a liquidation. They stand ahead of the common, so Harbor Tools cannot pay the common while those dividends remain unpaid.",
+      "c": "Forfeiture of a skipped dividend is the non-cumulative case. Cumulative preferred keeps the unpaid dividends alive.",
+      "d": "The missed amounts belong to the preferred holders. They are not redirected to the common holders as a bonus."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-203",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Lena owns one share of convertible preferred that converts into 2 shares of the company's common stock. The common stock trades at $40, and the preferred trades at $70. What is the conversion value of her preferred share?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The preferred's own $70 market price, treated as the conversion value"
+      },
+      {
+        "id": "b",
+        "text": "The $40 price of one common share, with the 2-share conversion terms ignored"
+      },
+      {
+        "id": "c",
+        "text": "$80, equal to 2 common shares at the $40 market price"
+      },
+      {
+        "id": "d",
+        "text": "$110, found by adding the $70 preferred price to the $40 common price"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Conversion value equals the common shares received times the common stock's market price. Lena converts into 2 shares at $40, so the conversion value is $80. The $70 trading price of the preferred is the market price of the preferred, not the conversion value.",
+    "distractorExplanations": {
+      "a": "The $70 figure is what the preferred currently trades for. Conversion value is computed from the common stock, not from that preferred price.",
+      "b": "Each preferred share converts into 2 common shares, not 1. Using $40 alone drops half of the conversion terms.",
+      "d": "Adding $70 and $40 mixes the preferred's market price into the calculation. Those two prices are not added."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-204",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Market yields have fallen, and Northwind calls its callable preferred stock. A holder who wanted to keep collecting the high stated dividend asks what the call does to her position.",
+    "options": [
+      {
+        "id": "a",
+        "text": "She may decline the call and keep the old dividend for as long as she chooses to hold the preferred"
+      },
+      {
+        "id": "b",
+        "text": "Her stated dividend rises, because an issuer calls preferred stock in order to pay holders a higher rate"
+      },
+      {
+        "id": "c",
+        "text": "The preferred becomes common stock, because calling an issue and converting it are the same corporate action"
+      },
+      {
+        "id": "d",
+        "text": "She must return the shares at the call price and may have to reinvest at a lower yield"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An issuer calls preferred after market yields fall so it can stop paying the higher stated dividend. The holder must surrender the shares at the call price. She then faces reinvestment risk if newly issued preferred pays less. A call redeems the shares; it does not convert them into common.",
+    "distractorExplanations": {
+      "a": "A call is not optional for the holder. She cannot refuse the redemption and keep the old dividend.",
+      "b": "Issuers call high-dividend preferred to replace it more cheaply. The call does not increase her stated dividend.",
+      "c": "A call redeems the preferred for cash at the call price. Conversion into common is a separate feature she was not given here."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-205",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Diego owns 4% of a company's common stock. The company is issuing additional common shares and sends him subscription rights. He asks what those rights let him protect.",
+    "options": [
+      {
+        "id": "a",
+        "text": "His 4% stake, if he buys his portion of the new common shares"
+      },
+      {
+        "id": "b",
+        "text": "A preferred dividend, because exercising the rights swaps his common shares into preferred stock"
+      },
+      {
+        "id": "c",
+        "text": "A multi-year claim, because subscription rights stay exercisable for as long as warrants do"
+      },
+      {
+        "id": "d",
+        "text": "A free block of new shares, because a rights holder keeps his percentage without paying for the shares"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Preemptive rights let an existing common holder buy a proportionate part of a new common issue. Diego can subscribe for enough new shares to keep his 4% stake. The rights do not convert his common into preferred, they are not free shares, and they do not last for the term of a warrant.",
+    "distractorExplanations": {
+      "b": "Exercising rights buys more common stock. It does not exchange his existing common shares for preferred stock.",
+      "c": "Subscription rights are short-term. They do not remain open for the multi-year life of a warrant.",
+      "d": "A rights holder must pay the subscription price. The new shares are not delivered free."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-206",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Kara received subscription rights that expire in 30 days. She also holds warrants on the same company's common stock that she can still exercise for several years. She asks which instrument she has to decide on sooner.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The warrants, because a warrant reaches its end before a subscription right on the same company's stock"
+      },
+      {
+        "id": "b",
+        "text": "The rights, which end in 30 days while the warrants still have years left"
+      },
+      {
+        "id": "c",
+        "text": "Neither instrument, because a right and a warrant both stay open until she sells her shares of the common stock"
+      },
+      {
+        "id": "d",
+        "text": "Both on the same date, because rights and warrants from one issuer share a single expiration"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Stock rights are a short-term privilege. Kara's rights expire in 30 days, so that is the decision she must make first. Warrants are long-term instruments issued by the company, and hers still have several years remaining. The warrant deadline is not the rights deadline.",
+    "distractorExplanations": {
+      "a": "Warrants are the long-term instrument. They do not expire ahead of subscription rights that end in 30 days.",
+      "c": "Selling the common stock is not the expiration event. Her rights end in 30 days whether she holds the shares or not, and the warrants keep their own later expiration.",
+      "d": "Rights and warrants are issued on different clocks. Sharing an issuer does not give them one expiration date."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-207",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Theo holds warrants that allow him to buy his company's common stock at $30 a share. The common stock is trading at $22. He asks whether he is required to exercise the warrants this month.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes. A warrant holder must exercise during any month in which the stock trades below the exercise price"
+      },
+      {
+        "id": "b",
+        "text": "Yes. The warrant is a purchase contract he must honor, so he owes $30 a share while the stock is at $22"
+      },
+      {
+        "id": "c",
+        "text": "No. Exercise is optional, and paying $30 for stock worth $22 does not benefit him"
+      },
+      {
+        "id": "d",
+        "text": "No. The warrants already expired, because a warrant ends as soon as the stock falls below the $30 exercise price"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A warrant gives Theo a long-term right to buy, not a duty to buy. He can let the warrants sit. With the stock at $22 and the exercise price at $30, exercising would mean paying more than the shares are worth, so the warrants have no intrinsic value. Trading below the exercise price does not cancel them.",
+    "distractorExplanations": {
+      "a": "Nothing in a warrant forces exercise when the stock is below the exercise price. Exercise is the holder's choice.",
+      "b": "A warrant is not an obligation to purchase. Theo does not owe the company $30 a share merely because he holds it.",
+      "d": "An out-of-the-money warrant is still alive until its own expiration. A $22 stock price does not extinguish a $30 warrant."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-208",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Greenline's warrants are deep in the money, and people who do not already own the common stock are exercising them. A shareholder who owns common stock but no warrants asks what those exercises do to her percentage of the company.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Her percentage rises, because exercised warrants are cancelled and the company creates no new common shares"
+      },
+      {
+        "id": "b",
+        "text": "Her percentage is unchanged, because an exercise transfers existing shares from one holder to another and creates no new issue"
+      },
+      {
+        "id": "c",
+        "text": "Her shares are cashed out, because a warrant exercise requires the company to buy back the common stock already outstanding"
+      },
+      {
+        "id": "d",
+        "text": "Her percentage falls, because the company issues new common shares to the holders who exercise"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A warrant is a right to buy shares from the company itself. When holders exercise, the company issues new common shares. The share count rises, so a stockholder who holds no warrants is diluted and owns a smaller percentage of Greenline.",
+    "distractorExplanations": {
+      "a": "Exercise does not retire equity. The company issues new common shares, so her slice of the company gets smaller, not larger.",
+      "b": "This describes a sale of shares already in the market. A warrant exercise is a new issue by the company, so the percentage changes.",
+      "c": "The company is selling new shares to the warrant holders, not redeeming the common stock she already owns."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-209",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Priya holds sponsored American depositary receipts on a Japanese company. The company declares a cash dividend in yen. She asks how that dividend will show up in her U.S. brokerage account.",
+    "options": [
+      {
+        "id": "a",
+        "text": "In U.S. dollars from the depositary, after any foreign tax withheld on the dividend"
+      },
+      {
+        "id": "b",
+        "text": "In yen, sent by the Japanese company straight to her U.S. brokerage account with no depositary in the path"
+      },
+      {
+        "id": "c",
+        "text": "It does not show up, because a dividend on the foreign shares is not passed through to holders of the receipts"
+      },
+      {
+        "id": "d",
+        "text": "As extra receipts, because a cash dividend on the foreign shares is automatically converted into more ADRs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A sponsored ADR stands for foreign shares held at a depositary bank. The bank converts the yen cash dividend into U.S. dollars and credits Priya. Foreign tax can be withheld before that credit arrives. The Japanese issuer does not wire yen directly into her brokerage account.",
+    "distractorExplanations": {
+      "b": "The depositary, not the foreign issuer, handles the payment to ADR holders, and it pays U.S. dollars rather than yen.",
+      "c": "Sponsored ADRs do pass foreign dividends through. A declared yen dividend is converted and paid to the ADR holder.",
+      "d": "A cash dividend is paid as cash. It is not automatically turned into additional ADR shares."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-210",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Helena owns an ADR on a Brazilian company. The local shares rose in reais, but her ADR did not rise in dollars. She asks which risk can offset a gain in the local share price.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Business risk of the Brazilian company, which by itself converts a rise in the local shares into a dollar loss"
+      },
+      {
+        "id": "b",
+        "text": "Currency risk, if the real weakened and reduced the dollar value of that local gain"
+      },
+      {
+        "id": "c",
+        "text": "Liquidity risk on the U.S. listing, which freezes the ADR's dollar price on a day the local shares rise"
+      },
+      {
+        "id": "d",
+        "text": "Purchasing-power risk in the United States, which pins the ADR's dollar price after the foreign shares have risen"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An ADR holder has currency risk as well as the foreign company's business risk. If the real weakens against the dollar, the dollar price of Helena's ADR can stay flat even though the shares rose in reais. The exchange rate can offset the local-currency gain.",
+    "distractorExplanations": {
+      "a": "Business risk would show up in the local share price. Those shares rose, so business risk does not explain a flat dollar ADR.",
+      "c": "A thin U.S. listing can widen spreads. It does not freeze the dollar price whenever the local shares go up.",
+      "d": "U.S. inflation risk is about purchasing power over time. It does not hold today's ADR price flat after a gain in reais."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-211",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Orbit common stock trades at $46. A customer holds one Orbit 40 call that she bought for a $9 premium. She asks whether the call is in the money and what intrinsic value it has.",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is out of the money, and the $9 premium is treated as its intrinsic value"
+      },
+      {
+        "id": "b",
+        "text": "It is at the money, because the $46 stock price is treated as the same as the $40 strike"
+      },
+      {
+        "id": "c",
+        "text": "It is in the money, and the intrinsic value is $6"
+      },
+      {
+        "id": "d",
+        "text": "It is in the money, and the intrinsic value equals the full $9 premium she paid"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A call is in the money when the stock price is above the strike. Intrinsic value is $46 minus $40, which is $6. The $9 premium she paid includes that $6 plus time value, so the premium is not the intrinsic value.",
+    "distractorExplanations": {
+      "a": "The stock at $46 is above the $40 strike, so the call is in the money. The $9 premium is not the intrinsic value.",
+      "b": "At the money means the stock price and the strike are equal. A $46 stock price and a $40 strike are not equal.",
+      "d": "The $9 premium mixes intrinsic value and time value. Intrinsic value is only the $6 by which the stock exceeds the strike."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-212",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Nile common stock trades at $63. A customer holds one Nile 55 put and asks whether that put has any intrinsic value at today's price.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Intrinsic value of $8, computed by subtracting the $55 strike from the $63 stock price"
+      },
+      {
+        "id": "b",
+        "text": "Intrinsic value of $63, because a put's intrinsic value is the current price of the stock"
+      },
+      {
+        "id": "c",
+        "text": "Intrinsic value of $55, because a put's intrinsic value is equal to its strike price"
+      },
+      {
+        "id": "d",
+        "text": "No intrinsic value, because the $55 put is out of the money with the stock at $63"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A put has intrinsic value when the strike is above the stock price. Nile trades at $63, which is above the $55 strike, so the put is out of the money and its intrinsic value is $0. Subtracting the strike from the stock price is how a call's intrinsic value is measured, not a put's.",
+    "distractorExplanations": {
+      "a": "Stock price minus strike is the intrinsic value of a call. This put is out of the money, so that $8 figure is not intrinsic value.",
+      "b": "The stock price is not the put's intrinsic value. With the stock above the strike, intrinsic value is $0.",
+      "c": "The strike is the exercise price, not the intrinsic value. This put's intrinsic value is $0 while the stock is at $63."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-213",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Chris bought 100 shares of Maple at $40. He writes one Maple 45 call and receives a $3 premium. Maple later trades at $52, and the call is exercised. What is his effective selling price per share, including the premium?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$48 a share, the $45 strike plus the $3 premium"
+      },
+      {
+        "id": "b",
+        "text": "$55, the $52 market price at exercise plus the $3 premium he was paid"
+      },
+      {
+        "id": "c",
+        "text": "$43, the $40 purchase price plus the $3 premium he was paid"
+      },
+      {
+        "id": "d",
+        "text": "$52, the market price when the call is exercised, with the $3 premium left out"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assignment on a covered call sells the stock at the strike. Chris delivers the Maple shares at $45 and keeps the $3 premium, so his effective selling price is $48 a share. He does not receive the $52 price at which the stock is trading.",
+    "distractorExplanations": {
+      "b": "The writer does not sell at the $52 market price. Assignment pays the $45 strike, and adding the premium to $52 double-counts the upside he gave away.",
+      "c": "Adding the premium to the $40 cost is not the sale price. The sale is at the $45 strike, and the premium is added to that strike.",
+      "d": "The $52 print is the market price he does not receive. Leaving out the $3 premium also drops cash he was paid for writing the call."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-214",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Dana bought 100 shares of Quarry at $28 and wrote one Quarry 30 call for a $2 premium. She asks for the breakeven price per share on this covered call.",
+    "options": [
+      {
+        "id": "a",
+        "text": "$32 a share, the $30 strike plus the $2 premium received for writing the call"
+      },
+      {
+        "id": "b",
+        "text": "$26 a share, her $28 purchase price minus the $2 premium"
+      },
+      {
+        "id": "c",
+        "text": "$30 a share, because the breakeven on a covered call equals the strike of the call she wrote"
+      },
+      {
+        "id": "d",
+        "text": "$28 a share, because the premium is income and does not change the price at which she breaks even"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Breakeven on a covered call is the price paid for the stock minus the premium received. Dana paid $28 and collected $2, so she breaks even if the shares fall to $26. The $30 strike is the price she is paid if assigned, not the breakeven.",
+    "distractorExplanations": {
+      "a": "Strike plus premium is the breakeven of a call buyer. Dana wrote the call, so her breakeven falls by the $2 premium, to $26.",
+      "c": "The $30 strike is where the stock would be called away. Her breakeven is lower than that strike by the premium she collected.",
+      "d": "The premium reduces her net cost. Leaving the $2 out keeps the breakeven at the $28 purchase price, which is too high."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-215",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "At 11 a.m. Eastern time, a customer tells her representative to sell shares of an open-end mutual fund at the price showing on a quote screen at that minute. How will that sale be priced?",
+    "options": [
+      {
+        "id": "a",
+        "text": "At the 11 a.m. screen price, because open-end fund shares trade continuously the way listed stocks do"
+      },
+      {
+        "id": "b",
+        "text": "At the prior session's closing net asset value, because an open-end sell order is priced looking backward"
+      },
+      {
+        "id": "c",
+        "text": "At the next net asset value the fund computes after it accepts her sell order"
+      },
+      {
+        "id": "d",
+        "text": "At a price she negotiates with another shareholder, because open-end shares are auctioned on an exchange"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Open-end shares are redeemed by the fund. They are not sold at an intraday quote between investors. The sale uses forward pricing: the next NAV the fund computes after it accepts the order. The price on the screen at 11 a.m. is not her fill.",
+    "distractorExplanations": {
+      "a": "Open-end funds do not trade continuously at a screen price. A redemption is filled at the next computed NAV, not at the 11 a.m. quote.",
+      "b": "Pricing an open-end order off yesterday's NAV would be backward pricing. The order looks forward to the next NAV.",
+      "d": "Retail open-end shares are not auctioned between shareholders on an exchange. The fund itself redeems them at NAV."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-216",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A closed-end fund reports a net asset value of $15 a share. Its shares last traded on the exchange at $16.50. A buyer asks why she might pay more than that NAV.",
+    "options": [
+      {
+        "id": "a",
+        "text": "The fund has to redeem her purchase at $16.50, so the last trade is a required daily redemption price"
+      },
+      {
+        "id": "b",
+        "text": "Listing rules hold a closed-end fund at a fixed gap of $1.50 above the reported net asset value"
+      },
+      {
+        "id": "c",
+        "text": "The $16.50 trade is the fund's NAV, and the $15 figure is the cash balance held inside the portfolio"
+      },
+      {
+        "id": "d",
+        "text": "Buyers and sellers set the exchange price, which can stand above the $15 NAV"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Closed-end shares trade on an exchange and are not redeemed at NAV through the day. Buyers and sellers can push the price to a premium. The $16.50 trade is above the $15 NAV, and that premium is possible because the fund is not standing ready to redeem each share at NAV.",
+    "distractorExplanations": {
+      "a": "A closed-end fund does not redeem shares on demand at the last trade. The buyer pays the exchange price, not a daily redemption price of $16.50.",
+      "b": "No listing rule fixes a $1.50 premium. The gap between $16.50 and $15 is just where supply and demand put this trade.",
+      "c": "NAV is the $15 figure. The $16.50 print is the market price, not a second NAV and not the cash in the portfolio."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-217",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "During the trading day, an ETF changes hands a few cents above the value of the stocks in its basket. A large broker-dealer delivers that basket to the fund and takes back newly created ETF shares. What is that delivery meant to do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase the supply of ETF shares so selling them can draw the price back toward the basket"
+      },
+      {
+        "id": "b",
+        "text": "Lock the ETF above the basket for the rest of the day, because newly created shares have to keep that premium"
+      },
+      {
+        "id": "c",
+        "text": "Change the ETF into a closed-end fund so the number of shares stays fixed after this delivery"
+      },
+      {
+        "id": "d",
+        "text": "Cash the basket out at the previous session's net asset value instead of creating shares while the market is open"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When an ETF trades rich to its basket, a large broker-dealer can deliver the underlying stocks and receive new ETF shares. Selling those shares adds supply and tends to pull the market price back toward the basket. The delivery does not freeze the premium or turn the ETF into a closed-end fund.",
+    "distractorExplanations": {
+      "b": "Creation is used to relieve a premium, not to freeze it. The new shares are there to be sold, which works against the premium.",
+      "c": "Creating shares changes the share count. It does not convert the ETF into a closed-end fund with a fixed number of shares.",
+      "d": "This step is an in-kind creation during market hours. It is not a cash redemption priced off the previous session's NAV."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-218",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A customer bought a unit investment trust several years ago. She asks her representative to have the portfolio manager replace two lagging stocks with different companies. What should the representative tell her?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The manager can replace those stocks this week, because a unit investment trust is managed the way an open-end fund is"
+      },
+      {
+        "id": "b",
+        "text": "The trust cannot swap those stocks, because the portfolio is fixed for the life of the trust"
+      },
+      {
+        "id": "c",
+        "text": "The trust can be converted into a closed-end fund so a manager gains freedom to trade the holdings"
+      },
+      {
+        "id": "d",
+        "text": "The trust will sell the laggards and pay out the cash, because it rebalances whenever a holding falls behind"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A unit investment trust holds a fixed portfolio for its life. Nobody is hired to sell two lagging stocks and replace them with different companies, which is what an open-end fund manager may do. The representative should tell her the holdings stay as they are.",
+    "distractorExplanations": {
+      "a": "A unit investment trust is not actively managed. It cannot swap holdings the way an open-end fund manager can.",
+      "c": "There is no conversion feature that turns her units into a closed-end fund so the portfolio can be traded.",
+      "d": "Lagging performance does not trigger a sale and a cash payout. The portfolio was fixed when the trust was created."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-219",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A mutual fund holds $40 million of securities and $2 million of cash. It owes $2 million of liabilities and has 4 million shares outstanding. What is the NAV per share?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$10.50, dividing securities plus cash by the shares and leaving the liabilities out"
+      },
+      {
+        "id": "b",
+        "text": "$9.50, subtracting the liabilities from the securities and leaving the cash out of the assets"
+      },
+      {
+        "id": "c",
+        "text": "$10, from $40 million of net assets divided by 4 million shares"
+      },
+      {
+        "id": "d",
+        "text": "$11, adding the securities, the cash, and the liabilities before dividing by the shares"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "NAV per share equals assets minus liabilities, divided by shares outstanding. Assets are $40 million of securities plus $2 million of cash, which is $42 million. Subtract $2 million of liabilities to reach $40 million of net assets. Divided by 4 million shares, the NAV is $10.",
+    "distractorExplanations": {
+      "a": "Skipping the liabilities counts $42 million of assets and divides by 4 million shares to get $10.50. Liabilities have to be subtracted.",
+      "b": "Leaving out the cash and subtracting the liabilities uses $38 million, which is $9.50 a share. Cash is an asset and belongs in the total.",
+      "d": "Liabilities are subtracted, not added. Adding all three figures produces $44 million, or $11 a share, which overstates the NAV."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-220",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A front-end-load mutual fund has a NAV of $18 and a public offering price of $20. A buyer asks what percentage sales charge she will pay to purchase shares.",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 11.1%, because the $2 gap is divided by the $18 net asset value"
+      },
+      {
+        "id": "b",
+        "text": "A $2 charge with no percentage, because the load is the dollar gap and is not quoted as a percent of price"
+      },
+      {
+        "id": "c",
+        "text": "2%, because the $2 gap between the offering price and the NAV is taken as the percentage sales charge"
+      },
+      {
+        "id": "d",
+        "text": "10%, because the $2 gap is divided by the $20 offering price"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The percentage sales charge is the dollar load divided by the public offering price, not by the NAV. The load is $20 minus $18, which is $2, and $2 divided by $20 equals 10%. Dividing that $2 by the $18 NAV comes out near 11.1% and overstates the charge.",
+    "distractorExplanations": {
+      "a": "Dividing the $2 load by the $18 NAV is the wrong base. The percentage uses the $20 offering price, and that result is 10%.",
+      "b": "The question asks for the percentage. The $2 gap is real, and as a percent of the $20 offering price it is 10%.",
+      "c": "The $2 figure is the dollar load, not a 2% charge. Divide $2 by the $20 offering price and the sales charge is 10%, not 2%."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-221",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A fund prospectus charges 5% on purchases below $25,000 and 3% on purchases of $25,000 or more. Nora places one purchase of $25,000 in that fund. Which sales charge does she pay?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 3% charge, because her purchase meets the $25,000 breakpoint"
+      },
+      {
+        "id": "b",
+        "text": "The 5% charge, because the 3% rate is reserved for purchases larger than $25,000 and hers is not larger"
+      },
+      {
+        "id": "c",
+        "text": "A zero sales charge, because arriving at the breakpoint eliminates the load on this purchase"
+      },
+      {
+        "id": "d",
+        "text": "An 8% sales charge, because the 5% rate and the 3% rate stack on the same purchase"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The prospectus states a 3% sales charge on purchases of $25,000 or more. Nora's purchase is $25,000, so she pays 3% rather than the 5% charge on smaller purchases. Hitting the breakpoint reduces the charge. It does not remove the charge, and the two rates are not added to make 8%.",
+    "distractorExplanations": {
+      "b": "The lower rate starts at $25,000 or more, and her purchase is $25,000. It does not have to be larger than $25,000.",
+      "c": "A breakpoint reduces the sales charge to the 3% rate stated in the prospectus. It does not cut this purchase's charge to zero.",
+      "d": "She pays one rate, the 3% rate. The 5% schedule and the 3% schedule are alternatives, not layers that sum to 8%."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-222",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Sam already holds $18,000 in one fund of a family. The prospectus lowers the sales charge once holdings in the family reach $25,000, and the family offers rights of accumulation. He adds $8,000 in that same fund. Which sales charge applies to the new money?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The higher charge, because rights of accumulation leave out the $18,000 he already holds in the fund"
+      },
+      {
+        "id": "b",
+        "text": "The lower charge, because $18,000 plus $8,000 reaches $26,000"
+      },
+      {
+        "id": "c",
+        "text": "No sales charge on the older holding or the new money, because passing $25,000 erases the load already paid"
+      },
+      {
+        "id": "d",
+        "text": "The higher charge on part of the new $8,000, because the lower charge reaches just the dollars above $25,000"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rights of accumulation add the new purchase to the amount Sam already holds in the family. His $18,000 plus $8,000 is $26,000, which meets the $25,000 level, so the lower sales charge applies to the whole new $8,000. It does not apply only to the dollars above $25,000, and it does not refund the load he already paid on the older holding.",
+    "distractorExplanations": {
+      "a": "Rights of accumulation exist to count shares he already holds. Leaving out the $18,000 would ignore the feature the family offers.",
+      "c": "Crossing $25,000 does not wipe out the load on the older $18,000 or make the new money free. It lowers the charge on the new purchase.",
+      "d": "The breakpoint is not a marginal bracket. Once his $18,000 plus the new $8,000 reaches $25,000, the lower sales charge applies to the entire new purchase."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-223",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A portfolio manager holds a long-term corporate bond. Comparable yields in that market move higher, and the issuer's credit rating does not change. What should happen to the bond's market price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It falls, because the fixed coupon is now less attractive than new higher-yielding bonds."
+      },
+      {
+        "id": "b",
+        "text": "It rises, because a higher market yield increases the cash this existing bond will pay its holder."
+      },
+      {
+        "id": "c",
+        "text": "It stays put until maturity, because an unchanged rating and coupon lock the market price in place."
+      },
+      {
+        "id": "d",
+        "text": "It falls only after a missed coupon, because a yield change cannot reprice a bond that is still paying."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bond prices and yields move in opposite directions. When the yield investors require rises, an existing fixed coupon is worth less, so the market price falls even though the issuer's rating and the coupon itself did not change.",
+    "distractorExplanations": {
+      "b": "Confuses the market yield with the coupon. A higher required yield does not increase the cash this bond pays; buyers simply pay less for that fixed cash flow.",
+      "c": "An unchanged credit rating does not freeze the price. The bond is repriced whenever the yield demanded for that maturity and credit moves.",
+      "d": "A missed coupon would be a credit event. Here the issuer is still paying; the price change comes from the higher yield available on comparable bonds."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-224",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "On the morning of a new corporate issue, the bond is offered below its par amount. The coupon, the maturity, and the issuer's credit standing are already fixed. What does that below-par price tell a buyer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The issuer will repay less than par at maturity, because the discount permanently cuts the amount due."
+      },
+      {
+        "id": "b",
+        "text": "The coupon is below the yield buyers currently require for that credit and maturity."
+      },
+      {
+        "id": "c",
+        "text": "The issuer has already failed to pay, because a price under par appears only after a default."
+      },
+      {
+        "id": "d",
+        "text": "The bond is a premium bond, because any price other than par is labeled a premium in the market."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A bond priced below par is a discount bond. Buyers will not pay par when the coupon is lower than the yield they require for that risk and time, so the lower price raises the buyer's yield. If the issuer does not default, it still owes par at maturity.",
+    "distractorExplanations": {
+      "a": "Confuses the purchase price with the maturity payoff. A discount bond still matures at par; the buyer who holds it earns the discount as part of the return.",
+      "c": "A discount is not evidence of default. New issues and seasoned bonds both trade below par whenever the coupon is short of the required yield.",
+      "d": "Reverses the labels. A price above par is a premium, and a price below par is a discount. Par means the price equals the face amount."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-225",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A corporate treasurer needs interest paid twice a year and a maturity of about seven years, and wants that exposure in a U.S. Treasury. Which instrument matches those terms?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Treasury bill, which pays a coupon twice a year and matures in less than one year."
+      },
+      {
+        "id": "b",
+        "text": "A Treasury bond, the label for every coupon Treasury whose maturity is under ten years."
+      },
+      {
+        "id": "c",
+        "text": "A Treasury note, which pays interest twice a year and matures in two to ten years."
+      },
+      {
+        "id": "d",
+        "text": "A Treasury STRIP, which pays cash interest twice a year and lets the holder choose the maturity date."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Treasury notes have original maturities from two to ten years and pay interest every six months. A seven-year coupon Treasury is a note. Bills are short-term discount instruments and pay no coupon, while Treasury bonds are the longer coupon issues. A STRIP does not pay cash interest along the way.",
+    "distractorExplanations": {
+      "a": "A Treasury bill is a discount instrument with no coupon, and it matures in one year or less. It fails both the semiannual interest need and the seven-year maturity.",
+      "b": "Coupon Treasuries maturing in two to ten years are notes, not bonds. The bond label is for the much longer coupon issues.",
+      "d": "A STRIP is a zero-coupon instrument created from Treasury interest or principal. It does not pay cash interest twice a year, and the holder does not pick the maturity date."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-226",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A client fears a long rise in consumer prices and asks for a Treasury whose principal itself adjusts with inflation, still backed by the U.S. government. Which security is she describing, and how does its interest work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Treasury bill, whose discount widens on its own whenever the consumer price index rises."
+      },
+      {
+        "id": "b",
+        "text": "A Series EE savings bond, whose rate is rewritten each month to match the latest inflation print."
+      },
+      {
+        "id": "c",
+        "text": "A conventional Treasury note, whose stated coupon rate is increased each time consumer prices rise."
+      },
+      {
+        "id": "d",
+        "text": "TIPS, whose principal adjusts with inflation and whose fixed coupon is paid on that principal."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Treasury Inflation-Protected Securities adjust principal with the consumer price index. The coupon rate stays fixed, but each interest payment is that rate times the inflation-adjusted principal, so the cash interest rises when principal is adjusted up. At maturity the Treasury pays at least the original par if deflation has reduced the principal.",
+    "distractorExplanations": {
+      "a": "Treasury bills are discount instruments with a set maturity value. Their discount reflects short-term rates, not an automatic widening when the consumer price index rises.",
+      "b": "Series EE savings bonds earn a fixed rate set for that bond. They are not reset each month to inflation, and they are not TIPS.",
+      "c": "On a conventional note both the coupon rate and the par amount stay fixed. TIPS keep the coupon rate fixed and adjust the principal instead."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-227",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A public hospital authority is borrowing to renovate its building. The bonds will be repaid from patient fees and other operating receipts, and the documents pledge no city taxes. A client assumes every municipal bond is a general obligation. What is the right correction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "These are revenue bonds, repaid from hospital receipts rather than from a tax pledge."
+      },
+      {
+        "id": "b",
+        "text": "The client is right, because any bond a public authority issues is backed by local taxes."
+      },
+      {
+        "id": "c",
+        "text": "These are moral-obligation bonds, because the hospital's fee pledge is a legislature's nonbinding promise to cover a shortfall."
+      },
+      {
+        "id": "d",
+        "text": "These are double-barreled bonds, because hospital fees and an unlimited tax pledge both secure them."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "These are revenue bonds. Repayment comes from the hospital's fees and operating receipts, and the city has not pledged taxes. A general-obligation bond is backed by taxing power. A double-barreled bond would add that tax pledge to the project revenue. A moral-obligation bond would add a nonbinding statement that a legislature may appropriate if fees fall short. These documents do not contain that statement, and a moral obligation is not a legal duty to tax.",
+    "distractorExplanations": {
+      "b": "Treats every public-authority issue as tax-backed. The pledge here is hospital receipts, not the city's taxing power, so the bond is not a general obligation.",
+      "c": "Confuses a revenue bond with a moral-obligation bond. A moral obligation is a legislature's nonbinding intention to appropriate if revenues fall short, not a legal duty to levy taxes. Here the pledge is the hospital's receipts, and the documents add no appropriation promise.",
+      "d": "A double-barreled bond has two pledges: project revenue and taxing power. The documents give only the hospital's receipts, so there is no tax pledge."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-228",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Inside a money-market strategy meeting, a colleague says a negotiable bank certificate of deposit cannot be sold before it matures, so it does not belong beside Treasury bills and commercial paper. What is the accurate correction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The colleague is right, because every bank certificate of deposit must be held to maturity and cannot be traded."
+      },
+      {
+        "id": "b",
+        "text": "A negotiable certificate of deposit can be sold before maturity and is a standard money-market instrument."
+      },
+      {
+        "id": "c",
+        "text": "Negotiable certificates of deposit are ownership shares of the bank, so they belong in an equity portfolio instead."
+      },
+      {
+        "id": "d",
+        "text": "Negotiable certificates of deposit are too long-dated for the money market, so they do not belong beside bills and commercial paper."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A negotiable certificate of deposit is a bank's short-term debt that another investor can buy in the secondary market before maturity. That tradability is what separates it from a retail CD the depositor holds or redeems at the bank. Short-term negotiable CDs sit with Treasury bills, commercial paper, and other money-market instruments.",
+    "distractorExplanations": {
+      "a": "Confuses a retail CD, which the depositor generally holds or redeems at the bank, with a negotiable CD, which is issued so it can be sold to another buyer.",
+      "c": "A certificate of deposit is the bank's promise to repay a deposit. It is debt, not an ownership share, so it is not an equity security.",
+      "d": "Treats the negotiable certificate of deposit as long-term debt that fails a money-market test. The certificates used beside Treasury bills and commercial paper are short-term, and they can be sold before maturity. A long maturity is not what defines this instrument."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-229",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Seeking real-estate exposure and tax losses she can use on her own return, an investor is offered a listed equity REIT and a real-estate limited partnership. Which vehicle can pass losses through to her?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The listed equity REIT, because a REIT distributes both its taxable income and its operating losses to shareholders."
+      },
+      {
+        "id": "b",
+        "text": "Either vehicle, because holding real estate in any public wrapper creates a personal loss pass-through for the owner."
+      },
+      {
+        "id": "c",
+        "text": "The limited partnership, a direct participation program that passes income and losses through."
+      },
+      {
+        "id": "d",
+        "text": "Neither vehicle, because real-estate losses stay with the sponsor and cannot reach an investor's own tax return."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A real-estate limited partnership is a direct participation program. Income and losses flow through to the partners, who may use losses only under the passive-activity rules. A REIT does not pass losses through. Its shareholders receive distributions, and a listed REIT trades on an exchange rather than as a partnership unit.",
+    "distractorExplanations": {
+      "a": "Reverses the REIT rule. A REIT avoids entity-level tax by distributing income. It does not pass operating losses through to shareholders the way a partnership does.",
+      "b": "The legal wrapper matters. Real estate inside a REIT does not create a partner-style loss pass-through. That feature belongs to the direct participation program.",
+      "d": "Losses of a direct participation program do reach the limited partners, subject to the passive-activity limits. They do not remain solely with the sponsor."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-230",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Before signing, a variable-annuity buyer asks whether the stock and bond subaccounts would be pooled with the insurer's own assets if the insurer later became insolvent. How is the separate account treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Those assets sit in the general account, so the insurer's other creditors can claim them with the company's reserves."
+      },
+      {
+        "id": "b",
+        "text": "The separate account is a bookkeeping label, and the subaccount assets are commingled with the insurer's surplus."
+      },
+      {
+        "id": "c",
+        "text": "The separate account promises that unit values will not fall, because the insurer backs each unit with surplus."
+      },
+      {
+        "id": "d",
+        "text": "Subaccount assets are held apart from the general account and are not available to the insurer's general creditors."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A variable annuity's investment options live in a separate account, segregated from the insurer's general account. Those assets support the variable contracts and are not available to the insurer's general creditors. The contract owner, not the insurer, bears the market risk, so the unit values move with the chosen subaccounts.",
+    "distractorExplanations": {
+      "a": "Describes the general account, which backs fixed contracts and the insurer's traditional liabilities. Variable subaccounts are not housed there.",
+      "b": "The separate account is a legal segregation, not a label. Its assets are kept apart from the surplus and the other assets of the insurance company.",
+      "c": "Confuses a fixed annuity with a variable contract. Subaccount values move with the market, and the insurer does not promise that those units will keep their price."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-231",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "After spreading money across many companies and industries, a client watches a recession pull the whole stock market down. Her diversified mix falls with it. Which risk is still at work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systematic risk, because a market-wide downturn is not removed by owning many different stocks."
+      },
+      {
+        "id": "b",
+        "text": "Unsystematic risk, because a recession is a separate event at each company and diversification erases it."
+      },
+      {
+        "id": "c",
+        "text": "Credit risk alone, because a falling stock market means each company has failed to pay its debts."
+      },
+      {
+        "id": "d",
+        "text": "Liquidity risk, because a broad decline means listed shares can no longer be sold on an exchange."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Systematic, or market, risk comes from forces that move the whole market, such as a recession. Spreading money across companies and industries reduces unsystematic risk, the risk of one firm's own fortunes, but it does not remove systematic risk. A diversified stock portfolio still falls when the market falls.",
+    "distractorExplanations": {
+      "b": "Names the risk diversification does remove, then applies it to the wrong event. A recession is market-wide, so it is systematic, and holding many stocks does not erase it.",
+      "c": "A market decline is not a wave of defaults. Credit risk is the chance an issuer misses interest or principal. Stocks can fall while the companies keep paying their debts.",
+      "d": "Liquidity risk is the inability to sell quickly near the recent value. A broad decline changes prices; listed shares can still be sold, just at lower prices."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-232",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Side by side, a Treasury and a corporate bond share the same maturity and the same coupon schedule. Investors still demand a richer yield to own the corporate. What does that extra yield mainly pay them for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inflation risk, because rising prices cut the corporate coupons' purchasing power and leave the Treasury coupons intact."
+      },
+      {
+        "id": "b",
+        "text": "Credit risk, the chance the company fails to pay interest or principal as promised."
+      },
+      {
+        "id": "c",
+        "text": "Reinvestment risk, because the extra yield pays the buyer for the rate earned when the corporate's coupons are invested again."
+      },
+      {
+        "id": "d",
+        "text": "Currency risk, because a domestic corporate bond is repaid in a foreign currency and the Treasury is not."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Investors demand a higher yield on the corporate than on a Treasury of the same maturity because the company can default, while the Treasury is backed by the U.S. government. That gap is the credit spread. Inflation reduces the purchasing power of both fixed coupons, and the two bonds share a coupon schedule, so neither inflation nor reinvestment risk explains the extra yield.",
+    "distractorExplanations": {
+      "a": "Treats inflation as if it hit the corporate and spared the Treasury. Rising prices reduce the purchasing power of both bonds' fixed coupons, and that shared exposure does not create the yield gap.",
+      "c": "Confuses the credit spread with reinvestment risk. Reinvestment risk is the rate earned when coupons are invested again. These bonds share a coupon schedule, so that risk does not explain why the corporate yields more.",
+      "d": "Assumes a currency mismatch the comparison does not contain. Currency risk applies when repayment is in another currency. The yield gap between these same-maturity bonds pays for credit risk."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-233",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Coupons keep arriving after market yields have fallen. An investor who lives on a non-callable bond must place each coupon into new bonds at the new, lower yields. Which risk has become more pressing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Call risk, because falling yields lead the issuer to redeem the bond early and force the holder to reinvest the principal."
+      },
+      {
+        "id": "b",
+        "text": "Credit risk, because lower market yields make this issuer more likely to miss its next scheduled payment."
+      },
+      {
+        "id": "c",
+        "text": "Reinvestment risk, because the new bonds she can buy yield less than the coupons she is receiving."
+      },
+      {
+        "id": "d",
+        "text": "Inflation risk, because a fall in market yields is the same event as a rise in consumer prices."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Reinvestment risk is the chance that coupons must be invested at lower yields. When market yields fall, each coupon on this non-callable bond buys a smaller yield than before. The bond itself cannot be called. The pressure is on the rate earned when the coupon cash is put back to work.",
+    "distractorExplanations": {
+      "a": "Names call risk for a bond the stem says cannot be called. A drop in yields does not let the issuer redeem a non-callable bond. Call risk belongs to bonds the issuer may retire early when refinancing is cheaper.",
+      "b": "Lower yields are a market-rate event, not a sign the issuer is closer to default. Credit risk is about the issuer's ability and willingness to pay.",
+      "d": "A drop in yields is not itself a rise in the consumer price index. Purchasing-power risk is a different exposure from the rate earned on reinvested coupons."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-234",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Years remain on a corporate bond during which the issuer is barred from redeeming it early. Yields on similar new bonds have fallen well below this bond's coupon. What is that waiting period worth to the holder?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A put right, which lets the holder force the issuer to buy the bond back now that yields have fallen."
+      },
+      {
+        "id": "b",
+        "text": "A conversion privilege, which turns the bond into common stock because the coupon now exceeds the market yield."
+      },
+      {
+        "id": "c",
+        "text": "Sinking-fund relief, which cancels the issuer's duty to repay principal when the bond finally matures."
+      },
+      {
+        "id": "d",
+        "text": "Call protection, which keeps the issuer from retiring the high coupon while that bar lasts."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Call protection is the period during which the issuer may not call the bond. While it lasts, the issuer cannot take the high coupon away and force the holder to reinvest at the new, lower yields. It is not a put, not a conversion right, and it does not cancel repayment of principal at maturity.",
+    "distractorExplanations": {
+      "a": "A put lets the holder sell the bond back to the issuer. Call protection restrains the issuer. After yields fall, a put at par is less useful to a holder whose bond is worth more than par.",
+      "b": "Conversion exchanges the bond for shares at a set price. A coupon that is high relative to current yields does not by itself turn the bond into stock.",
+      "c": "A sinking fund sets aside money toward repayment. It does not erase the debt at maturity, and it is not the clause that blocks an early redemption."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-235",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Each month a retiree receives the same fixed annuity payment from an insurer's general account. She worries that groceries and rent will cost more as the years pass. Which risk is she describing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inflation risk, because a fixed number of dollars buys less as consumer prices rise."
+      },
+      {
+        "id": "b",
+        "text": "Credit risk, because rising grocery and rent prices mean the insurer will default on the annuity contract."
+      },
+      {
+        "id": "c",
+        "text": "Reinvestment risk, because a level lifetime payment leaves her with coupons she must invest again at new rates."
+      },
+      {
+        "id": "d",
+        "text": "Call risk, because the insurer can stop the monthly payment whenever the cost of groceries and rent rises."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Inflation risk, also called purchasing-power risk, is the chance that a fixed dollar payment buys fewer goods and services as prices rise. This annuity check does not grow with the cost of living. The retiree bears that risk even though the insurer bears the investment risk of the general account.",
+    "distractorExplanations": {
+      "b": "Higher consumer prices are not a default. Credit risk would be the insurer failing to pay the contracted dollars. She is worried about what those dollars will buy.",
+      "c": "There is no coupon to reinvest. The contract pays a set amount for life. Reinvestment risk is the problem of putting interim cash flows back to work at a new rate.",
+      "d": "A rise in consumer prices does not let the insurer stop a fixed annuity. Call risk is the chance a bond issuer redeems debt early when refinancing is cheaper."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-236",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Cash is needed, but buyers are scarce. An investor holds units of a private real-estate program that are not listed on any exchange, and the only bids are far below the last stated value. Which risk has shown up?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systematic risk, because a scarce bid for this private program is a market-wide loss other holdings would not soften."
+      },
+      {
+        "id": "b",
+        "text": "Liquidity risk, the chance she cannot sell quickly at a price near the recent value."
+      },
+      {
+        "id": "c",
+        "text": "Call risk, because the sponsor can force an early redemption whenever the investor asks to raise cash."
+      },
+      {
+        "id": "d",
+        "text": "Interest-rate risk, because a thin market for these units is the same thing as a rise in bond yields."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Liquidity risk is the chance an investor cannot sell quickly without a large price concession. Units of a private real-estate program have no exchange market, so a seller who needs cash may have to accept a bid well below the last stated value. That is different from a market-wide decline or a move in yields.",
+    "distractorExplanations": {
+      "a": "Confuses a missing bid for one unlisted program with systematic risk. Systematic risk is a broad market move. The stem describes liquidity risk in a single private holding, not a decline across the market.",
+      "c": "Call risk is an issuer's right to redeem a security early, usually when rates fall. A sponsor is not exercising a call merely because the investor cannot find a buyer.",
+      "d": "Interest-rate risk is the sensitivity of a price to changes in market yields. A lack of buyers for unlisted units is liquidity risk even if bond yields have not moved."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-237",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Sector yields slip while an issuer's credit rating stays exactly where it was. A trader holds that issuer's existing fixed-coupon bonds. What should she expect the market price to do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fall, because a lower yield reduces the interest dollars this existing bond is required to pay its holder."
+      },
+      {
+        "id": "b",
+        "text": "Stay put, because a rating that did not change freezes the bond's price until the next coupon is paid."
+      },
+      {
+        "id": "c",
+        "text": "Rise, because the fixed coupon is now more attractive than new bonds issued at lower yields."
+      },
+      {
+        "id": "d",
+        "text": "Rise, but only on the next coupon date, because a bond's price cannot change between its payment dates."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Prices and yields move inversely. When the yield investors require on comparable bonds falls, and the issuer's credit has not changed, the existing higher coupon becomes more valuable, so the market price rises. The coupon dollars themselves do not shrink just because the market yield did.",
+    "distractorExplanations": {
+      "a": "Reverses the price-yield relationship and treats the coupon as if it were reset. The coupon stays fixed; the price is what adjusts when required yields change.",
+      "b": "A credit rating does not freeze the quote between coupon dates. A lower required yield reprices the bond even when the rating is unchanged.",
+      "d": "Bond prices change in the market between coupon dates. The response to lower yields does not wait for the next payment."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-238",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Holding to maturity, a buyer who paid more than par for a bond wants to know how that premium behaves as the maturity date approaches. Assume the issuer pays as agreed. What happens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The premium keeps growing, and at maturity the issuer repays more than par to reward the buyer for paying up."
+      },
+      {
+        "id": "b",
+        "text": "The bond flips to a discount on the next coupon date, and the issuer then repays less than the face amount."
+      },
+      {
+        "id": "c",
+        "text": "The price remains at the purchase price until the final morning, then resets to that day's new market yield."
+      },
+      {
+        "id": "d",
+        "text": "She is repaid par at maturity, not the premium price, so the issuer does not return that premium."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A price above par means the coupon was above the yield required when she bought the bond. Day to day the price can still move if yields change. Held to maturity, the issuer pays par, not the premium price. That pull to par is why a premium bond's yield to maturity sits below its coupon.",
+    "distractorExplanations": {
+      "a": "The issuer does not repay the premium. The contract pays par at maturity. The buyer who paid above par gives up that premium over the remaining life.",
+      "b": "Paying above par does not turn the bond into a discount bond on the next coupon date, and the issuer does not repay less than face if it performs.",
+      "c": "The bond does not sit at the purchase price until the last day and then jump to a new yield. At maturity the payoff is par, whatever yields are that morning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-239",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "A new desk trainee calls every Treasury a bill, including a thirty-year Treasury that pays interest twice a year. How should that long coupon instrument be classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a Treasury bond, the coupon Treasury whose original maturity runs well past ten years."
+      },
+      {
+        "id": "b",
+        "text": "As a Treasury bill, because that label covers every Treasury no matter the maturity or whether it pays a coupon."
+      },
+      {
+        "id": "c",
+        "text": "As commercial paper, because a coupon obligation of the federal government is classified with a corporation's unsecured notes."
+      },
+      {
+        "id": "d",
+        "text": "As a municipal revenue bond, because long Treasuries are repaid from the fees of one named public project."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Treasury bonds are the long coupon issues, with original maturities beyond ten years, and they pay interest twice a year. This thirty-year coupon Treasury is a bond. Treasury bills are short-term discount instruments and pay no coupon. The instrument is not commercial paper, and it is not a municipal revenue bond repaid from a project's fees.",
+    "distractorExplanations": {
+      "b": "Bills are the short-term discount Treasuries. A coupon instrument with a thirty-year maturity is outside that category even though it is still a Treasury.",
+      "c": "Confuses a Treasury bond with commercial paper. Commercial paper is a corporation's short-term unsecured debt. A thirty-year coupon obligation of the U.S. government is a Treasury bond.",
+      "d": "Revenue bonds are municipal debt repaid from a project's receipts. A Treasury bond is backed by the federal government, not by a toll or another project."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-240",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Tax season surprises a TIPS holder. The principal was adjusted up with consumer prices, but she received no cash for that adjustment this year, and her tax reporting still shows income from it. What is she seeing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing taxable yet, because the principal adjustment is taxed only when she receives the cash at maturity or sale."
+      },
+      {
+        "id": "b",
+        "text": "Taxable accretion: the inflation adjustment is income in the year it accrues, with no cash paid yet."
+      },
+      {
+        "id": "c",
+        "text": "Evidence of a Treasury default, because inflation adjustments are supposed to arrive as a separate check each month."
+      },
+      {
+        "id": "d",
+        "text": "A state income tax on the Treasury, because the inflation adjustment escapes federal tax and is taxed locally instead."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The inflation adjustment that increases TIPS principal is taxable income in the year it accrues, even though the holder receives no cash for that increase until maturity or sale. That is why a taxable account can show income she did not collect. The coupon rate stays fixed and is applied to the adjusted principal.",
+    "distractorExplanations": {
+      "a": "Delays the tax until cash arrives. The inflation adjustment is reportable income in the year the principal is increased, so tax can be due before that principal is paid out.",
+      "c": "The Treasury has not defaulted. The inflation adjustment increases principal and is paid at maturity or sale, rather than as an extra monthly check for the adjustment alone.",
+      "d": "Reverses the tax rule. The adjustment is subject to federal income tax. Treasury interest is generally exempt from state and local income tax, not the other way around."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-241",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Overnight, a dealer raises cash by selling Treasury bills to a money-market fund and agreeing to buy those same bills back the next day at a slightly higher price. What is this arrangement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A long-term Treasury bond, because selling the bills and buying them back turns those bills into long-term government debt."
+      },
+      {
+        "id": "b",
+        "text": "A rights offering, because the fund is acquiring a short-lived claim on the dealer's common shares."
+      },
+      {
+        "id": "c",
+        "text": "A repurchase agreement, a short-term collateralized borrowing by the dealer against the bills."
+      },
+      {
+        "id": "d",
+        "text": "Commercial paper, because the dealer is placing short-term high-quality paper with a money-market fund overnight."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In a repurchase agreement the dealer sells securities and agrees to buy them back, often the next day, at a higher price. The price difference is the interest on a short-term loan, and the securities are the collateral. Money-market funds commonly stand on the other side of that trade. The trade does not turn the bills into a long-term Treasury, a stock right, or commercial paper.",
+    "distractorExplanations": {
+      "a": "The bills remain bills. The dealer is borrowing against them until the next day, not converting that sale into a long-term Treasury bond or a new issue of government debt.",
+      "b": "A rights offering gives shareholders a short-lived right to buy new common stock. The fund is buying Treasury bills subject to a buyback, not a claim on the dealer's shares.",
+      "d": "Confuses the trade with commercial paper. Commercial paper is a corporation's unsecured short-term note sold outright. Here the dealer sells Treasury bills and agrees to repurchase them the next day, which is a collateralized borrowing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-242",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "One drug company's stock plunges after it loses a patent case, while the broad market finishes slightly higher that day. A shareholder who owned only that company absorbs the drop. Which risk hit her?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Systematic risk, because a patent ruling moves the whole market and cannot be reduced by owning other stocks."
+      },
+      {
+        "id": "b",
+        "text": "Inflation risk, because the decline in this stock is a loss of purchasing power in the money she invested."
+      },
+      {
+        "id": "c",
+        "text": "Call risk, because the company may redeem her common shares at par once a lawsuit has been decided."
+      },
+      {
+        "id": "d",
+        "text": "Unsystematic risk, from one company's legal outcome, which other holdings could have softened."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Unsystematic risk is specific to one company or industry, such as a lost patent case that hits a single drug maker while the rest of the market rises. A mix of other issuers can soften that kind of loss. Systematic risk would have taken the broad market down with it, which did not happen here.",
+    "distractorExplanations": {
+      "a": "The broad market finished higher, so this was not a market-wide move. Systematic risk is what diversification cannot remove; this loss was specific to one firm.",
+      "b": "Confuses a loss on one stock with inflation risk. A patent ruling does not change what a fixed sum of cash will buy. Purchasing-power risk is about rising consumer prices, and the broad market finished higher.",
+      "c": "Common stock is not a callable bond, and a lawsuit does not let the company redeem shares at par. Call risk belongs to debt the issuer can retire early."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-243",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "News of a rating cut reaches the market. Investors now require a higher yield to hold a manufacturer's bonds, while Treasury yields that day are unchanged. What happens to the manufacturer's bond price?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It rises, because a lower rating requires the issuer to increase the bond's coupon before the next payment date."
+      },
+      {
+        "id": "b",
+        "text": "It is unchanged, because a corporate bond's price can move only when Treasury yields move that same day."
+      },
+      {
+        "id": "c",
+        "text": "It falls, because buyers want a higher yield for the weaker credit, and price moves opposite yield."
+      },
+      {
+        "id": "d",
+        "text": "It falls from inflation risk, since the fixed coupons now buy fewer goods than they did before the rating cut."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A rating downgrade signals greater credit risk. If investors demand a higher yield and Treasury yields have not moved, the credit spread has widened and the bond's price falls, because price and yield move in opposite directions. The coupon is not rewritten just because the rating changed.",
+    "distractorExplanations": {
+      "a": "A downgrade does not rewrite the coupon. The issuer keeps paying the original coupon; the market pays a lower price so the buyer's yield matches the new required yield.",
+      "b": "Treasury yields are a benchmark, not the sole driver of a corporate price. A wider credit spread reprices the corporate even on a day when the Treasury yield is flat.",
+      "d": "Confuses a credit downgrade with inflation. A rating cut is not a rise in consumer prices. The price falls because buyers demand a higher yield for the weaker credit, while Treasury yields that day are unchanged."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-products-risks-244",
+    "examSlug": "sie-full-mock",
+    "topicId": "products-risks",
+    "prompt": "Tuition is due, and a retail client must sell a small block of a thinly traded municipal revenue bond. The bid is well below recent prices for similar bonds, and the issuer is current on its payments. What should the representative explain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Credit risk explains the gap, because a lower bid means the issuer has already missed a payment to bondholders."
+      },
+      {
+        "id": "b",
+        "text": "Reinvestment risk explains the gap, because the concession is the cost of investing the coupons at a new market rate."
+      },
+      {
+        "id": "c",
+        "text": "Systematic risk explains the gap, because the weak bid is a broad market move that holding other bonds would not have avoided."
+      },
+      {
+        "id": "d",
+        "text": "Liquidity risk explains the gap: a thin municipal market can force a concession to sell quickly."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Liquidity risk is the chance of selling only by accepting a meaningful price concession, especially in a thin market such as a small block of a municipal revenue bond. The issuer is current on its payments, so this gap is not a missed coupon. The client who needs cash for tuition may have to give up price to get the trade done.",
+    "distractorExplanations": {
+      "a": "The stem says the issuer is current on its payments, so there is no default to point to. Credit risk is the chance of a missed payment, not the mere fact that a bid is weak.",
+      "b": "Reinvestment risk appears when cash flows must be invested at a new yield. A weak bid on a small block is about finding a buyer, not about reinvesting a coupon.",
+      "c": "Confuses a thin bid for one revenue bond with systematic risk. Systematic risk is a market-wide move. The concession on a small, thinly traded block, while the issuer is current, is liquidity risk in that bond."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "sie-full-mock-trading-accounts-024",
     "examSlug": "sie-full-mock",
     "topicId": "trading-accounts",
@@ -4952,5 +7229,1028 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-201",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Nora owns 400 shares of a listed stock and wants the sale done before today's close. She tells her representative to sell the position immediately and says she will take the next available price. Which order should the representative enter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A market order to sell the 400 shares"
+      },
+      {
+        "id": "b",
+        "text": "A sell limit priced above the quote so the sale waits for a rise"
+      },
+      {
+        "id": "c",
+        "text": "A sell stop placed under the market so the sale waits for a drop"
+      },
+      {
+        "id": "d",
+        "text": "A good-till-canceled order to buy 400 additional shares"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Nora wants all 400 shares sold before the close and has accepted the next available price. A market order seeks that immediate execution. A limit or a stop would wait for a price move, and a buy order would add shares.",
+    "distractorExplanations": {
+      "b": "A sell limit above the current quote waits for a higher price and may never trade before the close. Nora accepted the next price.",
+      "c": "A sell stop under the market is elected only after a decline, then becomes a market order. It is not an instruction to sell immediately.",
+      "d": "A buy would increase the position. Nora needs to sell the 400 shares she already owns."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-202",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Nilo's screen shows a 41.00 bid and a 41.20 ask for a listed stock. A customer enters a limit order to buy at 41.00, joining that bid. Why is it possible for this order to sit unfilled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is marketable and should already have filled at the 41.00 bid"
+      },
+      {
+        "id": "b",
+        "text": "The 41.20 ask leaves a 41.00 bid unmarketable for now"
+      },
+      {
+        "id": "c",
+        "text": "A limit buy fills after a trade prints above the ask price"
+      },
+      {
+        "id": "d",
+        "text": "The bid is the dealer's selling price, so 41.00 cannot be joined"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A buy limit at 41.00 can execute at 41.00 or lower. The best offer is 41.20, so no one is currently willing to sell at the customer's price. The order joins the bid and can rest there until a seller hits 41.00.",
+    "distractorExplanations": {
+      "a": "This is a limit at the bid, not a market buy. With the ask at 41.20, a 41.00 bid does not trade against the displayed offer.",
+      "c": "A buy limit does not wait for a print above the ask. It is an attempt to buy at 41.00 or lower, which is beneath the 41.20 offer.",
+      "d": "The bid is the buying side and the ask is the selling side. Joining 41.00 is correct for a buyer; the order is simply not marketable yet."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-203",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Eli borrowed 150 shares of PQR and sold them at $46. PQR has since fallen to $39, and Eli wants to close the trade and keep that gain. What should Eli do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sell another 150 shares and enlarge the short position"
+      },
+      {
+        "id": "b",
+        "text": "Enter a sell stop that would sell more shares if the price drops"
+      },
+      {
+        "id": "c",
+        "text": "Buy 150 shares to close the short"
+      },
+      {
+        "id": "d",
+        "text": "Stay short and keep the next cash dividend on the borrowed shares"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Eli is short 150 shares sold at $46. With PQR at $39, buying 150 shares closes the short and locks in the $7 per-share difference. A short position is closed by a purchase, not by another sale.",
+    "distractorExplanations": {
+      "a": "Selling more shares would increase the short. Closing it requires Eli to buy the 150 shares back.",
+      "b": "A sell stop would add another sale if the price falls. The closing trade for a short is a purchase.",
+      "d": "The short seller owes any cash dividend to the lender of the shares. Staying short does not let Eli keep that dividend."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-204",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "On Monday a customer instructs the representative to sell exactly 250 shares of DEF, but to wait until Thursday and choose the price. The customer has not signed a discretionary authorization. May the representative accept that timing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes. Naming DEF and the 250 shares is enough on its own"
+      },
+      {
+        "id": "b",
+        "text": "Yes. Picking the price lets the representative delay the sale until Thursday"
+      },
+      {
+        "id": "c",
+        "text": "Yes. The same-day exception also covers a sale the representative delays until Thursday"
+      },
+      {
+        "id": "d",
+        "text": "No. Waiting until Thursday to choose the price needs written authority"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The customer named DEF, specified 250 shares, and chose to sell. Letting the representative pick the price is permitted through the end of Monday, the day of the instruction. Carrying that price choice until Thursday requires the customer's written authorization.",
+    "distractorExplanations": {
+      "a": "Naming the security and the 250-share amount is necessary, but it does not let the representative carry a price choice past the day the order was given.",
+      "b": "Choosing the price on the same day can fall under time-and-price discretion. Delaying the execution until Thursday does not.",
+      "c": "The time-and-price exception ends with the business day on which the customer gave it. It does not stretch the representative's price choice to Thursday."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-205",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "KAP trades at $64. A customer who holds 200 shares wants to sell them if the price rises to $68 or higher, and does not want the order to become a market order after a trigger. Which order fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sell limit order at $68"
+      },
+      {
+        "id": "b",
+        "text": "A sell stop at $68 that becomes a market order when elected"
+      },
+      {
+        "id": "c",
+        "text": "A buy limit under the $64 market that adds shares on a decline"
+      },
+      {
+        "id": "d",
+        "text": "A market sell of the 200 shares at the next available price"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A sell limit at $68 rests above the $64 market and can execute only at $68 or higher. It does not turn into a market order. That matches a holder of 200 shares who wants a higher sale price rather than an immediate sale.",
+    "distractorExplanations": {
+      "b": "A sell stop belongs below the market. With KAP at $64, a sell stop at $68 is already through and, once elected, becomes a market order, which this customer does not want.",
+      "c": "A buy limit under the $64 market would buy more shares if the price falls. The customer wants to sell the 200 shares already held at $68 or higher.",
+      "d": "A market sell would trade now near $64. The customer wants a sale at $68 or higher, not an immediate exit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-206",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Vera calls and asks for an immediate sale of her RST shares. The dealer working the stock is bidding 51.20 and offering shares at 51.35. At which price should her market sell be filled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "51.35, the price shown on the dealer's offer"
+      },
+      {
+        "id": "b",
+        "text": "51.20, the price the dealer is bidding"
+      },
+      {
+        "id": "c",
+        "text": "51.275, the average of the bid and the offer"
+      },
+      {
+        "id": "d",
+        "text": "The dealer chooses between the 51.20 bid and the 51.35 offer"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A market sell hits the bid, the price at which the dealer is willing to buy. Vera receives 51.20. The 51.35 offer is the price a buyer would pay the dealer.",
+    "distractorExplanations": {
+      "a": "The offer is the dealer's selling price. A customer selling at market receives the bid, 51.20, not the 51.35 offer.",
+      "c": "A market sale does not fill at the midpoint. Vera's sell takes the displayed bid of 51.20.",
+      "d": "The dealer does not choose between the two prices after the call. A market sell is filled at the 51.20 bid, and 51.35 is the dealer's offer to buyers."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-207",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Priya bought 80 shares of MEO last spring and still holds them in her cash account. The share price is higher than her purchase price. How is the position described, and when is her gain realized?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Short, and the gain is realized because the quote is higher"
+      },
+      {
+        "id": "b",
+        "text": "Short, so a further rise in MEO would add to her profit"
+      },
+      {
+        "id": "c",
+        "text": "Long, and the gain stays unrealized until she sells"
+      },
+      {
+        "id": "d",
+        "text": "Long, and the gain is realized each day the quote is marked higher"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Priya owns the 80 shares, so the position is long. A long position benefits when the price rises. In her cash account the gain stays unrealized until she sells the shares.",
+    "distractorExplanations": {
+      "a": "A short position profits when the price falls. Priya bought the shares and still holds them, so she is long, and a higher quote alone does not realize the gain.",
+      "b": "A further rise helps the owner of the shares. It would hurt a short seller, who must later buy shares back at the higher price.",
+      "d": "A higher mark updates an unrealized gain. Realization occurs when the 80 shares are sold, not merely because the quote moved."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-208",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "On Friday a customer buys a corporate bond in a regular-way trade. The following Monday is a business day, and neither Friday nor Monday is a market holiday. When does that bond trade settle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Friday, because corporate bonds use same-day cash settlement"
+      },
+      {
+        "id": "b",
+        "text": "Tuesday, two business days after Friday's trade"
+      },
+      {
+        "id": "c",
+        "text": "Saturday, the calendar day after the Friday trade"
+      },
+      {
+        "id": "d",
+        "text": "Monday, the next business day"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Regular-way settlement for corporate debt is T+1, one business day after the trade. Friday's purchase settles on Monday. The weekend is not a business day, so settlement does not fall on Saturday or Sunday.",
+    "distractorExplanations": {
+      "a": "Same-day cash settlement has to be agreed by the parties. A regular-way corporate bond trade does not settle on Friday, the trade date.",
+      "b": "Tuesday would be two business days after Friday. Corporate debt settles on the next business day, which is Monday.",
+      "c": "Settlement counts business days. Saturday is not a business day, so this Friday corporate bond trade settles on Monday."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-209",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "JHL trades at $22. A customer wants to purchase 100 shares once a trade prints at $25, and is willing to pay whatever price comes next after that print. Which order should be entered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A buy stop order at $25"
+      },
+      {
+        "id": "b",
+        "text": "A buy limit order at $25"
+      },
+      {
+        "id": "c",
+        "text": "A sell stop order at $25 meant to exit an existing long"
+      },
+      {
+        "id": "d",
+        "text": "A sell limit at the current $22 price that offers shares now"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A buy stop is placed above the market. If JHL trades at $25, the stop is triggered and becomes a market order to buy the 100 shares. That matches a customer who will pay the next price after a $25 print. The stock is now $22, so the stop can rest.",
+    "distractorExplanations": {
+      "b": "A buy limit at $25 with JHL at $22 is marketable immediately, because $22 is a better price than $25. It does not wait for a $25 print.",
+      "c": "A sell stop would sell shares, and it is used below the market to protect a long. This customer wants to buy after $25.",
+      "d": "A sell limit at $22 would sell shares at the current price or higher. The customer wants to buy 100 shares after a print at $25."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-210",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Before sending a marketable order, Chris looks up WIQ. A dealer is bidding $18.10 and offering the shares at $18.25. What is the bid-ask spread on that quote?",
+    "options": [
+      {
+        "id": "a",
+        "text": "$18.10, the price a selling customer would receive"
+      },
+      {
+        "id": "b",
+        "text": "$0.15, the ask minus the bid"
+      },
+      {
+        "id": "c",
+        "text": "$18.25, the price a buying customer would pay"
+      },
+      {
+        "id": "d",
+        "text": "The quote itself, $18.10 bid and $18.25 ask"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The spread is the ask minus the bid. On this quote, $18.25 minus $18.10 equals $0.15. That is the gap between what a buyer pays and what a seller receives.",
+    "distractorExplanations": {
+      "a": "The $18.10 bid is one side of the quote, the price a seller would receive. The spread is the $0.15 difference between the two prices.",
+      "c": "The $18.25 ask is the dealer's selling price, not the spread. Subtract the $18.10 bid from the $18.25 ask.",
+      "d": "Those two prices are the quote, not the spread. Subtract the $18.10 bid from the $18.25 ask, which leaves $0.15."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-211",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "A trading desk wants 900 shares of BND right away. It will accept a smaller fill if the market cannot sell 900, and it wants any unfilled remainder canceled immediately. Which order qualifier fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "All-or-none, which can wait until the full 900 shares trade"
+      },
+      {
+        "id": "b",
+        "text": "Fill-or-kill, which drops the order unless the 900 shares fill at once"
+      },
+      {
+        "id": "c",
+        "text": "Immediate-or-cancel, which takes a partial fill"
+      },
+      {
+        "id": "d",
+        "text": "Good-till-canceled, which keeps any remainder working beyond today"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An immediate-or-cancel order fills what it can at once and cancels the rest. The desk will accept fewer than 900 shares and does not want a leftover order working. Fill-or-kill would refuse a partial fill, and all-or-none could wait for the full 900.",
+    "distractorExplanations": {
+      "a": "All-or-none requires the full 900 shares and may wait for them. This desk will accept a partial fill and wants the rest canceled now.",
+      "b": "Fill-or-kill demands the entire 900 shares immediately or cancels the whole order. A partial fill would not be kept, and this desk will take one.",
+      "d": "A good-till-canceled remainder stays open past the current attempt. The desk wants any unfilled shares canceled immediately."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-212",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Last month a customer signed a written discretionary authorization, and a principal accepted the account in writing. Today the customer cannot be reached, and the representative buys 120 shares of a stock the customer never named. Which statement is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The purchase is unauthorized because the customer did not name the stock today"
+      },
+      {
+        "id": "b",
+        "text": "The purchase is unauthorized because discretion covers time and price, not the security"
+      },
+      {
+        "id": "c",
+        "text": "The purchase would be allowed even if no written authorization were on file"
+      },
+      {
+        "id": "d",
+        "text": "The purchase is allowed under the written discretionary authorization"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Written discretionary authority lets the representative choose the security and the amount without a same-day call. The customer signed that authorization, a principal accepted the account, and the representative bought 120 shares of an unnamed stock, which the grant permits.",
+    "distractorExplanations": {
+      "a": "Once written discretion is in place, the customer does not have to name the stock on the day of the order. Selecting the security is part of what the authorization covers.",
+      "b": "Time and price discretion is the narrow same-day exception used when the customer already chose the security. Full written discretion includes selecting the stock.",
+      "c": "Choosing the security without written authorization would be unauthorized. The signed authorization is what makes this purchase of 120 shares permitted."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-213",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "BLU trades at $30. A customer will buy 100 shares if the price rises to $34, but will not pay more than $35 for them. Which order matches that instruction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A buy stop-limit, stop $34 and limit $35"
+      },
+      {
+        "id": "b",
+        "text": "A buy stop at $34, which becomes a market order after the trigger"
+      },
+      {
+        "id": "c",
+        "text": "A buy limit at $34, which can execute immediately near $30"
+      },
+      {
+        "id": "d",
+        "text": "A sell stop-limit, stop $34 and limit $35"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A buy stop-limit with a $34 stop and a $35 limit stays dormant while BLU is at $30. A print at $34 triggers it and turns it into a limit to buy the 100 shares at $35 or better, so the customer does not pay above $35.",
+    "distractorExplanations": {
+      "b": "A plain buy stop at $34 becomes a market order and could fill above $35. The customer set a $35 ceiling, which a stop-limit captures and a market stop does not.",
+      "c": "A buy limit at $34 with BLU at $30 is marketable now, because $30 is better than $34. It does not wait for a rise to $34.",
+      "d": "A sell stop-limit would sell shares. The customer wants to buy 100 shares after a rise to $34, and will not pay more than $35."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-214",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "A customer owns no shares of PLM and holds no convertible security or warrant that would produce PLM shares. The customer tells the representative to sell 200 PLM. How should that order be marked?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Long, because a later purchase in the account will cover the sale"
+      },
+      {
+        "id": "b",
+        "text": "Short, because the customer does not own the shares"
+      },
+      {
+        "id": "c",
+        "text": "Long, because equity sales stay marked long until settlement"
+      },
+      {
+        "id": "d",
+        "text": "Blank, because the exchange locates borrowable shares after the trade"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A sale is marked long when the customer already owns the shares or has a right, such as a conversion or a warrant exercise, that will produce them. This customer owns no PLM and has no such right, so the sale of 200 shares is marked short.",
+    "distractorExplanations": {
+      "a": "Planning to buy later does not make the sale long. If the 200 shares are not owned or locked in by a conversion or warrant, the ticket is a short sale.",
+      "c": "The long or short mark depends on ownership when the order is entered, not on the settlement cycle. This seller does not own the shares.",
+      "d": "The broker-dealer must mark the order. Leaving the ticket blank, and leaving a locate to the exchange after the trade, is not how a short sale is identified."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-215",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "An institution needs the purchased shares and the payment to change hands today, not on the ordinary settlement date. Buyer and seller agree to that timing before the trade is done. Which form of settlement is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regular-way settlement on the next business day"
+      },
+      {
+        "id": "b",
+        "text": "A seller's option that gives the seller more time to deliver"
+      },
+      {
+        "id": "c",
+        "text": "Cash settlement on the same business day"
+      },
+      {
+        "id": "d",
+        "text": "When-issued settlement for shares that are not out yet"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cash settlement means the trade settles the same business day, which is the timing these parties agreed to before they traded. Regular-way settlement for equities is the next business day, so it would not move the shares and the payment today.",
+    "distractorExplanations": {
+      "a": "Regular-way equity settlement is T+1, the next business day. That misses the requirement that the shares and the payment move today.",
+      "b": "A seller's option lengthens the seller's delivery time beyond regular-way settlement. It does not pull the exchange of shares and payment forward to today.",
+      "d": "When-issued trading is for securities that have been authorized but not yet issued. These parties are arranging same-day settlement of a trade they are ready to complete."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-216",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "A pension plan tells its broker-dealer to buy corporate bonds and to deliver those bonds to the plan's custodian bank in exchange for payment. The plan does not want the broker-dealer to keep the bonds. Which settlement instruction is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regular-way settlement with the broker-dealer keeping the bonds"
+      },
+      {
+        "id": "b",
+        "text": "Same-day cash settlement left inside the brokerage account"
+      },
+      {
+        "id": "c",
+        "text": "Street-name settlement that leaves the bonds at the broker-dealer"
+      },
+      {
+        "id": "d",
+        "text": "Delivery versus payment to the custodian bank"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Delivery versus payment sends the corporate bonds to the plan's custodian bank, which pays for them against that delivery. The broker-dealer does not keep the bonds. That is the instruction the pension plan gave.",
+    "distractorExplanations": {
+      "a": "Regular-way settlement sets the timing of the exchange, but leaving the bonds with the broker-dealer ignores the request to deliver them to the custodian bank.",
+      "b": "Cash settlement moves the trade to the same day. It does not, by itself, deliver the bonds to a custodian bank in exchange for payment.",
+      "c": "Street name means the broker-dealer's nominee holds the bonds. The plan asked for delivery to its bank against payment, not for the broker-dealer to retain them."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-217",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "A father and his adult daughter register a brokerage account as joint tenants with right of survivorship. His later will leaves every asset to his son. After the father dies, who owns the account?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The daughter owns the entire account by survivorship"
+      },
+      {
+        "id": "b",
+        "text": "The son owns the entire account because the later will controls"
+      },
+      {
+        "id": "c",
+        "text": "The son and the daughter each keep a share because the will and survivorship apply together"
+      },
+      {
+        "id": "d",
+        "text": "The father's estate holds the account until probate names an heir"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Joint tenants with right of survivorship take the deceased tenant's interest through the account registration. The father's will does not redirect that interest to his son. The daughter, as the surviving joint tenant, owns the entire account.",
+    "distractorExplanations": {
+      "b": "A later will does not override the survivorship feature of a joint tenants with right of survivorship registration.",
+      "c": "The mistake is applying the will and survivorship together so the son keeps an interest. The surviving daughter takes the whole account.",
+      "d": "The deceased tenant's interest passes to the surviving joint tenant and does not remain in the estate for probate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-218",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Two business partners title a brokerage account as tenants in common, with a 70% interest for one partner and a 30% interest for the other. The partner who holds 70% dies. What happens to that 70% interest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The surviving partner absorbs the 70% stake and owns the whole account"
+      },
+      {
+        "id": "b",
+        "text": "The estate takes the 70% stake and the survivor keeps 30%"
+      },
+      {
+        "id": "c",
+        "text": "The 70% stake is rewritten so the survivor and the estate each hold 50%"
+      },
+      {
+        "id": "d",
+        "text": "The estate takes the whole account, including the survivor's separate 30% stake"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Tenants in common have no right of survivorship. The deceased partner's 70% interest passes to that partner's estate. The surviving partner keeps the separate 30% interest and does not absorb the rest of the account.",
+    "distractorExplanations": {
+      "a": "Passing the deceased owner's interest straight to the survivor is the joint-tenants result, not the tenants-in-common result.",
+      "c": "The stated 70% and 30% shares are not rewritten into equal 50% halves when one tenant dies.",
+      "d": "The estate receives only the deceased partner's 70% interest. The survivor's separate 30% stake does not pass into the estate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-219",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "After funding her grandson's UGMA account with shares of a mutual fund, a grandmother asks the firm to move those shares back into her own individual account to pay a hospital bill. What should the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Return the shares, because the grandmother still controls her gift"
+      },
+      {
+        "id": "b",
+        "text": "Move the shares if the custodian labels the bill a family expense"
+      },
+      {
+        "id": "c",
+        "text": "Refuse, because the grandson already owns those shares"
+      },
+      {
+        "id": "d",
+        "text": "Return the shares, because the gift is revocable until the grandson is an adult"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An UGMA gift is irrevocable. Once the mutual-fund shares are in the custodial account, they belong to the grandson, not to the grandmother who donated them. The firm cannot move the shares back to her to pay her hospital bill.",
+    "distractorExplanations": {
+      "a": "The donor gives up ownership when the UGMA contribution is made and cannot reclaim the shares for a personal bill.",
+      "b": "Describing the hospital bill as a family expense does not restore the donor's ownership of an irrevocable custodial gift.",
+      "d": "The mistake is treating the gift as revocable until adulthood. The shares became the grandson's when they were contributed, and the grandmother cannot take them back."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-220",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "A widow has named her nephew as the transfer-on-death beneficiary of her individual brokerage account. While she is alive in the hospital, the nephew calls and tells the firm to sell every position. What should the firm do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Accept the sale, because a hospital stay activates the nephew's power"
+      },
+      {
+        "id": "b",
+        "text": "Accept the sale, because the beneficiary form already authorizes the nephew to trade"
+      },
+      {
+        "id": "c",
+        "text": "Retitle the account into the nephew's name, then enter his sale"
+      },
+      {
+        "id": "d",
+        "text": "Refuse the sale, because the nephew has no authority yet"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A transfer-on-death designation takes effect at the account owner's death. Until then the widow is the sole owner, and the nephew has no right to direct trades or take the assets. The firm should refuse his sell order.",
+    "distractorExplanations": {
+      "a": "A hospital stay does not give a transfer-on-death beneficiary trading authority. The designation becomes effective at death.",
+      "b": "The mistake is reading the beneficiary form as trading authority. It names who takes the account at death and does not let the nephew enter a sale while the widow is alive.",
+      "c": "The firm cannot retitle the account into the beneficiary's name while the widow is still alive."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-221",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Inside a discretionary account, a representative keeps buying and selling the same large-cap stocks for a retired client who asked to hold a conservative bond portfolio. The commissions are large next to the account and conflict with that request. Which practice is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Churning, given the commissions and the client's stated goal"
+      },
+      {
+        "id": "b",
+        "text": "Front running, because the representative picked stocks before asking"
+      },
+      {
+        "id": "c",
+        "text": "Freeriding, because the trades started before new cash was deposited"
+      },
+      {
+        "id": "d",
+        "text": "Backing away, because the representative left the requested bond mix"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Churning is excessive trading that generates commissions and ignores the customer's stated objectives. Turning a discretionary account over in stocks, for a retiree who asked for a conservative bond portfolio, is churning.",
+    "distractorExplanations": {
+      "b": "Front running is placing a personal or firm trade ahead of a customer order already in hand, which is not this pattern of turnover.",
+      "c": "Freeriding is selling securities in a cash account before paying for the purchase, not a series of discretionary stock trades.",
+      "d": "Backing away is a market maker's refusal to honor a published firm quote, not a drift away from a bond portfolio."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-222",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Hoping for a higher payout, a representative splits one customer's $60,000 mutual-fund purchase into two $30,000 purchases in different fund families. Each family reduces its sales charge at $50,000. What practice is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A proper use of rights of accumulation across separate fund families"
+      },
+      {
+        "id": "b",
+        "text": "A breakpoint sale that keeps each ticket under $50,000"
+      },
+      {
+        "id": "c",
+        "text": "Front running, because the two fund orders were entered minutes apart"
+      },
+      {
+        "id": "d",
+        "text": "Churning, because two purchases for one customer on one day are excessive"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A breakpoint sale is structuring mutual-fund purchases so they stay under a reduced sales-charge level and the representative keeps a higher commission. The customer had $60,000, and each family reduces the charge at $50,000, but the representative used two $30,000 tickets in different families so neither purchase received the reduction.",
+    "distractorExplanations": {
+      "a": "Rights of accumulation combine holdings inside one fund family. They do not merge purchases placed at unrelated fund families.",
+      "c": "Front running is trading ahead of a customer order. Splitting a purchase below a sales-charge breakpoint is a different violation.",
+      "d": "Two purchases that a customer plans to make are not churning. The harm is avoiding the $50,000 reduced sales charge."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-223",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Before a customer's buy ticket for 20,000 shares is released to the market, a desk trader buys call options on that same stock in the trader's personal account. Which violation is this?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Backing away, because the trader bought calls in the same direction as the customer"
+      },
+      {
+        "id": "b",
+        "text": "Freeriding, by buying calls before the customer pays for the shares"
+      },
+      {
+        "id": "c",
+        "text": "Front running, by buying calls ahead of the customer's buy"
+      },
+      {
+        "id": "d",
+        "text": "Churning, by combining a personal options trade with the customer order"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Front running is trading in a personal or firm account ahead of a customer order that has not yet been executed, so the trader can benefit from the order's market impact. Buying calls before the customer's 20,000-share buy ticket is released is front running.",
+    "distractorExplanations": {
+      "a": "Backing away is a refusal to honor a published firm quote. The mistake is using that label for a personal call purchase in the same direction as the customer's buy.",
+      "b": "Freeriding is selling a cash-account purchase before paying for it. The trader's call purchase is a different act.",
+      "d": "Churning is excessive trading inside a customer's account for commissions. One personal options trade is not churning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-224",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Another dealer tries to hit a market maker's published firm bid and sell stock at that price. The market maker refuses, saying the bid was only a casual indication and not a real market. What is this refusal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Front running, because the market maker saw the sell and then refused the bid"
+      },
+      {
+        "id": "b",
+        "text": "Freeriding, because the market maker will not pay for the stock"
+      },
+      {
+        "id": "c",
+        "text": "Churning, because the market maker is avoiding a losing inventory trade"
+      },
+      {
+        "id": "d",
+        "text": "Backing away, a refusal to honor the firm bid"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A published firm quote obligates the market maker to buy or sell at that price in at least the size it displayed. Refusing the dealer's sell order by calling the bid a casual indication is backing away.",
+    "distractorExplanations": {
+      "a": "The mistake is calling a refusal to honor the bid front running. Front running is a trade placed ahead of a customer order, and this market maker did not trade.",
+      "b": "Freeriding is a cash-account customer selling securities before paying for them. It is not a market maker rejecting its own bid.",
+      "c": "Churning is excessive trading in a customer's account for commissions. Walking away from a firm quote is a different violation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-225",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Shares bought in a cash account were sold three days later, and the customer never deposited payment for the purchase. The firm then restricted new purchases in that account. Which practice caused the restriction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freeriding, for selling the shares before paying"
+      },
+      {
+        "id": "b",
+        "text": "Backing away, because the firm blocked the customer's later purchases"
+      },
+      {
+        "id": "c",
+        "text": "Front running, because the sale jumped ahead of other customers"
+      },
+      {
+        "id": "d",
+        "text": "A breakpoint sale, because the buy and the sale were on different days"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Freeriding is buying securities in a cash account and selling them before paying for the purchase. The customer did that here, and that unpaid sale is why the firm restricted further purchases in the account.",
+    "distractorExplanations": {
+      "b": "Backing away is a market maker's refusal to honor a published firm quote, not an unpaid purchase in a customer's cash account.",
+      "c": "Front running is trading ahead of a customer order. This customer sold shares that had not been paid for.",
+      "d": "A breakpoint sale avoids a mutual-fund sales-charge reduction. It is unrelated to an unpaid stock purchase."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-226",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Over a single 30-day period, a representative emails one written fund update to 18 retail clients and to no one else. Staff guidance says 25 or fewer retail investors in that period is correspondence, and more than 25 is a retail communication. What is this email?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A retail communication, because a client fund update is retail"
+      },
+      {
+        "id": "b",
+        "text": "Correspondence, based on the 18 retail clients"
+      },
+      {
+        "id": "c",
+        "text": "An institutional communication, because the recipients already have accounts"
+      },
+      {
+        "id": "d",
+        "text": "A retail communication, because 18 clients in 30 days is too many"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The email went to 18 retail clients in a 30-day period and to nobody else. Staff guidance classifies 25 or fewer retail investors in that period as correspondence, and more than 25 as a retail communication. Because 18 is not more than 25, the email is correspondence.",
+    "distractorExplanations": {
+      "a": "A fund update is not automatically a retail communication. The count of retail investors in the 30-day period decides the category.",
+      "c": "Existing customers who are retail clients remain retail investors. An institutional communication is sent to institutional investors.",
+      "d": "Eighteen retail recipients in 30 days does not pass the 25-investor line that separates correspondence from a retail communication."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-227",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "From a Chicago desk at 8:30 p.m. Chicago time, a representative wants to cold-call a new prospect who lives in Seattle, where it is 6:30 p.m. Cold calls are allowed only from 8 a.m. to 9 p.m. local time of the person called. May the representative call now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No, because 8:30 p.m. Chicago time ends the cold-call day"
+      },
+      {
+        "id": "b",
+        "text": "No, because the representative must follow the Chicago office clock"
+      },
+      {
+        "id": "c",
+        "text": "Yes, because 6:30 p.m. in Seattle is inside the allowed window"
+      },
+      {
+        "id": "d",
+        "text": "Yes, because a first call to a new prospect is exempt from the 8 a.m. to 9 p.m. window"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The cold-call window runs from 8 a.m. to 9 p.m. in the local time of the person called, not the caller's city. It is 6:30 p.m. in Seattle, which sits inside that window, even though the Chicago clock reads 8:30 p.m. The representative may place this call.",
+    "distractorExplanations": {
+      "a": "Chicago's 8:30 p.m. does not close the window. The prospect's Seattle time controls, and 6:30 p.m. there is still allowed.",
+      "b": "The office clock does not set the limit. The rule uses the local time of the person being called.",
+      "d": "The mistake is treating a first call to a new prospect as exempt. That call still has to fall between 8 a.m. and 9 p.m. local time of the person called."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-228",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Cash has built up in the joint tenants with right of survivorship account of a married couple. One spouse asks the firm to issue the distribution check in that spouse's name alone. How should the check be drawn?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Payable to the spouse who called, because either tenant may withdraw"
+      },
+      {
+        "id": "b",
+        "text": "Payable to the spouse who called, if that spouse contributed most of the cash"
+      },
+      {
+        "id": "c",
+        "text": "Payable to the couple's estate, since living owners cannot take the cash"
+      },
+      {
+        "id": "d",
+        "text": "Payable jointly to both spouses on the account"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "On a joint tenants with right of survivorship account, a cash distribution check is drawn payable to both owners together. One spouse's request does not make that spouse the only payee on the check.",
+    "distractorExplanations": {
+      "a": "Either joint tenant can generally enter orders, but a distribution check is still payable to both owners rather than to the caller alone.",
+      "b": "Which spouse contributed the cash does not change the payee. A joint-account distribution check names both owners.",
+      "c": "Both owners are alive, so the check is not payable to an estate. It is payable to the two joint owners."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-229",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "The custodian of a nephew's UGMA account is asked by the nephew's parents to withdraw cash and pay off the parents' car loan. The nephew is the minor on the account. What may the custodian do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse to pay the parents' car loan from the account"
+      },
+      {
+        "id": "b",
+        "text": "Pay the loan, because parents may spend custodial cash on household bills"
+      },
+      {
+        "id": "c",
+        "text": "Pay the loan if the withdrawn cash is replaced before adulthood"
+      },
+      {
+        "id": "d",
+        "text": "Pay the loan if the parents use the car to take the nephew to school"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Assets in an UGMA account are an irrevocable gift belonging to the minor. The custodian must use them for the nephew's benefit and may not withdraw them to pay off the parents' car loan.",
+    "distractorExplanations": {
+      "b": "Custodial assets are the minor's property. The parents may not spend them on their own car loan or other household debt.",
+      "c": "A plan to replace the cash later does not allow the custodian to use the minor's assets for the parents' debt.",
+      "d": "The mistake is treating use of the car for the nephew as his expense. The custodian cannot pay the parents' car loan from the minor's account."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-230",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "Visitors can read a new sector-ETF article on the firm's public website with no login and no limit on who opens it. The firm wrote the article. Under FINRA communications rules, what is the article?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Correspondence, because each visitor chooses whether to open it"
+      },
+      {
+        "id": "b",
+        "text": "A retail communication available to the public"
+      },
+      {
+        "id": "c",
+        "text": "An institutional communication aimed at professionals who use the site"
+      },
+      {
+        "id": "d",
+        "text": "Correspondence, because posting on a website is not a written piece"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A piece the firm wrote and posted on a public website, where retail visitors can read it without a login, is a retail communication. Correspondence is a written message directed to a limited group of retail investors, not an open web page.",
+    "distractorExplanations": {
+      "a": "A visitor choosing to click does not turn a public website posting into correspondence. The article is offered to retail investors generally.",
+      "c": "A public website is not limited to institutional investors, so the article is not an institutional communication.",
+      "d": "Content the firm posts on its website is a written communication under FINRA's communications rules."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "sie-full-mock-trading-accounts-231",
+    "examSlug": "sie-full-mock",
+    "topicId": "trading-accounts",
+    "prompt": "At 7:15 a.m. Miami time, a representative in Denver cold-calls a Miami prospect about a new municipal bond fund. It is 5:15 a.m. in Denver. The allowed cold-call window is 8 a.m. to 9 p.m. local time of the person called. Is this call permitted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes, a morning call on the East Coast is a normal way to reach a prospect"
+      },
+      {
+        "id": "b",
+        "text": "Yes, 7:15 a.m. is near enough to 8 a.m. that the call can be placed"
+      },
+      {
+        "id": "c",
+        "text": "No, 7:15 a.m. Miami time falls before the 8 a.m. start"
+      },
+      {
+        "id": "d",
+        "text": "No, because Denver's 5:15 a.m. clock is the time that controls the call"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cold calls may be placed from 8 a.m. to 9 p.m. in the local time of the person called. This call reached the Miami prospect at 7:15 a.m. Miami time, which is before 8 a.m. there, so it is not permitted. The Denver time of 5:15 a.m. is not the clock that matters.",
+    "distractorExplanations": {
+      "a": "Reaching a prospect before the workday does not open the window early. The prospect's local time must be 8 a.m. or later.",
+      "b": "7:15 a.m. is outside the window. The representative must wait until 8 a.m. local time of the person called.",
+      "d": "The Denver office clock does not control the call. Miami time governs, and 7:15 a.m. there is still too early."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   }
 ]

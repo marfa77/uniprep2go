@@ -4026,6 +4026,1062 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "ptcb-pharmacy-technician-mock-medications-201",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A community pharmacy fills scopolamine patches (Transderm Scop), one patch every 3 days, for motion sickness. Which description of this dosage form and route is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A skin patch worn behind the ear for 3 days."
+      },
+      {
+        "id": "b",
+        "text": "A sublingual tablet dissolved under the tongue every 3 hours."
+      },
+      {
+        "id": "c",
+        "text": "An oral capsule swallowed with a full glass of water every 3 days."
+      },
+      {
+        "id": "d",
+        "text": "A small insert placed in the lower eyelid and replaced each morning."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Scopolamine (Transderm Scop) is an anticholinergic transdermal patch used to prevent motion sickness. The patch is applied to hairless skin behind the ear and worn for 3 days, then replaced. It is not a sublingual tablet, an oral capsule, or an ophthalmic insert.",
+    "distractorExplanations": {
+      "b": "Sublingual tablets dissolve under the tongue. Transderm Scop is a patch that releases scopolamine through the skin behind the ear.",
+      "c": "An oral capsule is swallowed. This scopolamine product is a skin patch changed every 3 days, not a capsule taken by mouth.",
+      "d": "An ophthalmic insert sits in the eye. The scopolamine patch is applied behind the ear, and drug on the fingers can dilate a pupil if it reaches the eye."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-202",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A hospital discharge list includes duloxetine (Cymbalta) 60 mg capsules once daily. Which drug class should be saved on the medication profile?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Selective serotonin reuptake inhibitor, the same class as sertraline."
+      },
+      {
+        "id": "b",
+        "text": "Serotonin-norepinephrine reuptake inhibitor."
+      },
+      {
+        "id": "c",
+        "text": "Tricyclic antidepressant with strong antihistamine effects."
+      },
+      {
+        "id": "d",
+        "text": "Monoamine oxidase inhibitor saved for treatment-resistant depression."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Duloxetine (Cymbalta) 60 mg blocks reuptake of both serotonin and norepinephrine, so the profile class is SNRI. Sertraline blocks serotonin alone, amitriptyline is a tricyclic, and phenelzine inhibits monoamine oxidase. Those are different antidepressant classes.",
+    "distractorExplanations": {
+      "a": "Sertraline is an SSRI and affects serotonin reuptake. Duloxetine also blocks norepinephrine reuptake, which is why it is coded as an SNRI.",
+      "c": "Tricyclics such as amitriptyline have a different structure and more antihistamine effects. Duloxetine is not a tricyclic antidepressant.",
+      "d": "MAOIs such as phenelzine block monoamine oxidase. Duloxetine does not, so it must not be filed in that class."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-203",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A community pharmacy types a label for nystatin oral suspension, 4 mL swished in the mouth 4 times daily, for oral thrush. Which use of this dosage form is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apply the suspension to the skin the way topical nystatin is used."
+      },
+      {
+        "id": "b",
+        "text": "Swish the dose through the mouth, then spit it out."
+      },
+      {
+        "id": "c",
+        "text": "Swish so it coats the mouth, then swallow."
+      },
+      {
+        "id": "d",
+        "text": "Stir the dose into a full glass of water and drink it at once."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Nystatin oral suspension treats thrush by contact with the mouth. Each 4 mL dose is swished so it coats the lining, then swallowed, and the labeled schedule is 4 times daily. It is not rubbed on the skin, spit out after swishing, or diluted in a full glass.",
+    "distractorExplanations": {
+      "a": "Topical nystatin is a skin product for a rash. This prescription is the oral suspension, and thrush is treated by coating the mouth.",
+      "b": "Spitting the dose out skips the labeled swallow step. Nystatin suspension is held in the mouth and then swallowed so it coats the tract.",
+      "d": "Diluting 4 mL in a full glass and drinking it quickly washes the drug past the mouth. Thrush treatment depends on local contact from swishing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-204",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "On a hospital floor, the order is vancomycin capsules 125 mg by mouth 4 times daily for Clostridioides difficile colitis. Which description of this route is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Give it intravenously, because an oral capsule cannot reach the colon."
+      },
+      {
+        "id": "b",
+        "text": "It is fully absorbed and is appropriate for a bloodstream infection."
+      },
+      {
+        "id": "c",
+        "text": "It is absorbed into the blood and then secreted back into the colon."
+      },
+      {
+        "id": "d",
+        "text": "It remains in the intestine because it is poorly absorbed."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Oral vancomycin 125 mg, given 4 times daily, is poorly absorbed, so the doses stay in the intestine and treat C. difficile colitis. Intravenous vancomycin does not reach the colon well, and absorption is too poor for these capsules to treat a bloodstream infection.",
+    "distractorExplanations": {
+      "a": "The oral route is chosen because the drug needs to reach the colon lumen. Intravenous vancomycin does not treat C. difficile colitis effectively.",
+      "b": "Oral vancomycin is poorly absorbed, so it does not treat a bloodstream infection. Systemic infections need a parenteral route.",
+      "c": "Oral vancomycin is not absorbed and then sent back to the colon. The 125 mg capsules remain in the intestine because they are poorly absorbed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-205",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "While entering a community prescription for empagliflozin (Jardiance) 10 mg tablets once daily, the technician must choose a drug class. Which class is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sodium-glucose cotransporter 2 inhibitor."
+      },
+      {
+        "id": "b",
+        "text": "Dipeptidyl peptidase-4 inhibitor, like sitagliptin tablets."
+      },
+      {
+        "id": "c",
+        "text": "Thiazolidinedione that makes tissues more sensitive to insulin."
+      },
+      {
+        "id": "d",
+        "text": "Sulfonylurea that stimulates the pancreas to release insulin."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Empagliflozin (Jardiance) 10 mg is a sodium-glucose cotransporter 2 inhibitor. It lowers glucose by blocking reabsorption in the kidney so more glucose leaves in the urine. Sitagliptin, pioglitazone, and glipizide belong to three other diabetes classes.",
+    "distractorExplanations": {
+      "b": "Sitagliptin is a DPP-4 inhibitor and raises incretin levels. Empagliflozin works in the kidney as an SGLT2 inhibitor, not as a DPP-4 inhibitor.",
+      "c": "Thiazolidinediones such as pioglitazone increase insulin sensitivity. Empagliflozin does not use that mechanism.",
+      "d": "Sulfonylureas such as glipizide push the pancreas to release insulin. Empagliflozin does not stimulate insulin release."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-206",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A patient picks up fluticasone/salmeterol (Advair Diskus) from the community pharmacy. Which description of this dosage form is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A pressurized canister that is shaken and sprayed during a slow breath."
+      },
+      {
+        "id": "b",
+        "text": "A dry-powder inhaler taken with a quick, deep breath."
+      },
+      {
+        "id": "c",
+        "text": "A liquid poured into a nebulizer and inhaled as a mist for several minutes."
+      },
+      {
+        "id": "d",
+        "text": "A nasal spray aimed into the nostril and sniffed for allergy symptoms."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Advair Diskus is fluticasone plus salmeterol in a dry-powder inhaler. The dose is breathed in quickly and deeply, and the device is not shaken like a pressurized inhaler, poured into a nebulizer, or sprayed into the nose. The mouth is rinsed afterward because fluticasone is an inhaled corticosteroid.",
+    "distractorExplanations": {
+      "a": "Shaking a canister and inhaling slowly describes a metered-dose inhaler. Advair Diskus is a dry-powder device and is not shaken.",
+      "c": "A nebulizer uses a liquid turned into a mist. Advair Diskus delivers dry powder from the inhaler, not a solution in a nebulizer cup.",
+      "d": "A nasal spray is aimed into the nose. This combination is an oral inhalation product for the lungs, not an intranasal spray."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-207",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Ofloxacin otic solution (Floxin Otic) is dispensed for a 2-year-old with an ear infection. Which administration fact belongs with this route at that age?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pull the outer ear up and back, which is the adult position."
+      },
+      {
+        "id": "b",
+        "text": "Tilt the head back and place the drops in the eye on that side."
+      },
+      {
+        "id": "c",
+        "text": "Pull the outer ear down and back, then give the drops."
+      },
+      {
+        "id": "d",
+        "text": "Push the dropper tip into the canal so the drops reach the eardrum."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Floxin Otic is ofloxacin solution for the ear. For a child younger than 3 years, including this 2-year-old, the outer ear is pulled down and back to straighten the canal. Up and back is the adult position. These drops are not placed in the eye, and the dropper tip is not pushed into the canal.",
+    "distractorExplanations": {
+      "a": "Pulling the outer ear up and back straightens an adult canal. A 2-year-old needs the pinna pulled down and back.",
+      "b": "The eye is the ophthalmic route. Floxin Otic is an otic solution and the drops belong in the ear canal.",
+      "d": "Pushing the dropper tip into the canal can injure the ear and contaminate the bottle. For this 2-year-old the outer ear is pulled down and back instead."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-208",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Ipratropium bromide HFA (Atrovent HFA) is filled for a patient with COPD. Which class and route should the profile show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inhaled corticosteroid taken on a schedule as a daily controller."
+      },
+      {
+        "id": "b",
+        "text": "Oral leukotriene receptor antagonist swallowed as a bedtime tablet."
+      },
+      {
+        "id": "c",
+        "text": "Short-acting beta agonist inhaled when wheezing starts suddenly."
+      },
+      {
+        "id": "d",
+        "text": "Short-acting anticholinergic breathed into the lungs."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Atrovent HFA is ipratropium, a short-acting muscarinic antagonist, and the route is oral inhalation into the lungs. Inhaled anticholinergics are a COPD bronchodilator class. Fluticasone is a corticosteroid, montelukast is an oral leukotriene blocker, and albuterol is a beta agonist.",
+    "distractorExplanations": {
+      "a": "Inhaled corticosteroids such as fluticasone reduce airway inflammation. Ipratropium is an anticholinergic bronchodilator, not a steroid controller.",
+      "b": "Montelukast is a leukotriene receptor antagonist taken by mouth. Atrovent HFA is inhaled and blocks muscarinic receptors in the airway.",
+      "c": "Albuterol is the short-acting beta agonist used for sudden wheezing. Ipratropium bronchodilates by blocking acetylcholine, not by stimulating beta receptors."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-209",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A hospital asks the pharmacy for promethazine suppositories (Phenergan) because the patient cannot stop vomiting. Which route matches this dosage form?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rectal insertion when an oral dose will not stay down."
+      },
+      {
+        "id": "b",
+        "text": "Vaginal insertion, using this suppository as a vaginal dose."
+      },
+      {
+        "id": "c",
+        "text": "Intramuscular injection, dispensing the injectable product instead."
+      },
+      {
+        "id": "d",
+        "text": "Oral use, swallowing the suppository whole with a glass of water."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Phenergan suppositories contain promethazine, a phenothiazine antiemetic, and they are inserted rectally. That route is used when vomiting keeps an oral dose from staying down. It is not inserted vaginally, it is not the intramuscular injection, and it is not swallowed.",
+    "distractorExplanations": {
+      "b": "Vaginal suppositories are meant for the vagina and are a different product type. This promethazine suppository is inserted into the rectum.",
+      "c": "The promethazine injection is a separate sterile product and a different route. This order is for the rectal suppository, not the injection.",
+      "d": "Swallowing is the oral route. A Phenergan suppository is inserted into the rectum when vomiting keeps an oral dose from staying down."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-210",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Pioglitazone (Actos) 30 mg tablets are added to a community pharmacy profile for type 2 diabetes. Which class is this drug?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sodium-glucose cotransporter 2 inhibitor that spills glucose into urine."
+      },
+      {
+        "id": "b",
+        "text": "Thiazolidinedione (glitazone) that increases insulin sensitivity."
+      },
+      {
+        "id": "c",
+        "text": "Biguanide that lowers glucose production by the liver, like metformin."
+      },
+      {
+        "id": "d",
+        "text": "Dipeptidyl peptidase-4 inhibitor that raises incretin hormone levels."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Pioglitazone (Actos) 30 mg is a thiazolidinedione, also called a glitazone. This class improves insulin sensitivity in type 2 diabetes. It is not an SGLT2 inhibitor, a biguanide like metformin, or a DPP-4 inhibitor like sitagliptin.",
+    "distractorExplanations": {
+      "a": "SGLT2 inhibitors such as empagliflozin increase glucose in the urine. Pioglitazone works by increasing how tissues respond to insulin.",
+      "c": "Metformin is the biguanide and it lowers hepatic glucose production. Pioglitazone is a thiazolidinedione, not a biguanide.",
+      "d": "DPP-4 inhibitors such as sitagliptin raise incretin activity. Pioglitazone does not belong to that class."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-211",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A cardiology clinic orders a nitroglycerin transdermal patch, applied each morning, for prevention of angina. Which feature of this dosage form is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the dose under the tongue when chest pain first begins."
+      },
+      {
+        "id": "b",
+        "text": "Spread a measured ointment ribbon on paper and apply it to the chest."
+      },
+      {
+        "id": "c",
+        "text": "Nitrate crosses the skin, with a daily patch-free interval."
+      },
+      {
+        "id": "d",
+        "text": "Swallow the dose whole so a coating opens later in the intestine."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A nitroglycerin transdermal patch delivers nitrate through the skin to prevent angina. Continuous exposure causes tolerance, so the patch comes off for a patch-free interval each day. Sublingual tablets are a different form for an acute episode. The patch is not an ointment ribbon and it is not swallowed.",
+    "distractorExplanations": {
+      "a": "Under-the-tongue placement describes nitroglycerin sublingual tablets for an acute chest-pain episode. This order is a skin patch for prevention.",
+      "b": "Nitroglycerin ointment is a different topical product, spread as a measured ribbon on application paper. This order is a transdermal patch, not ointment.",
+      "d": "Swallowing a coated tablet is an oral delayed-release form. A transdermal patch stays on the skin and is not swallowed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-212",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Atomoxetine capsules (Strattera) 40 mg each morning are prescribed for a child with ADHD. Which class description is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A methylphenidate extended-release stimulant, in the same class as Concerta."
+      },
+      {
+        "id": "b",
+        "text": "An amphetamine mixed-salt stimulant taken once each morning for attention."
+      },
+      {
+        "id": "c",
+        "text": "A central alpha-2 agonist given as a weekly clonidine-style patch."
+      },
+      {
+        "id": "d",
+        "text": "A selective norepinephrine reuptake inhibitor, not a stimulant."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Atomoxetine (Strattera) 40 mg is a selective norepinephrine reuptake inhibitor used for ADHD. It does not block serotonin the way duloxetine does, and it is not methylphenidate, an amphetamine, or a clonidine-type alpha-2 agonist. The profile should not code it as a stimulant.",
+    "distractorExplanations": {
+      "a": "Concerta is methylphenidate, a stimulant. Atomoxetine is a norepinephrine reuptake inhibitor and is not in the methylphenidate class.",
+      "b": "Mixed amphetamine salts are stimulants. Strattera 40 mg does not contain amphetamine and is not coded as one.",
+      "c": "Clonidine is a central alpha-2 agonist and the patch is a weekly transdermal form. Atomoxetine is an oral capsule with a different mechanism."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-213",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Delayed-release aspirin tablets (Ecotrin) 81 mg are dispensed from a community pharmacy. Which description of this dosage form is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enteric-coated, and the tablet should not be crushed."
+      },
+      {
+        "id": "b",
+        "text": "A chewable tablet that is chewed completely before swallowing."
+      },
+      {
+        "id": "c",
+        "text": "An orally disintegrating tablet that melts on the tongue."
+      },
+      {
+        "id": "d",
+        "text": "A capsule that may be opened and sprinkled on applesauce."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Ecotrin 81 mg is delayed-release aspirin. At 81 mg the drug is used for its antiplatelet effect. The enteric coating delays release until the intestine, so crushing or chewing the tablet destroys that dosage form. It is not a chewable, a melting tablet, or a sprinkle capsule.",
+    "distractorExplanations": {
+      "b": "Chewable aspirin is a different product that is meant to be chewed. Ecotrin is enteric-coated and chewing it would break the coating.",
+      "c": "An orally disintegrating tablet is designed to melt on the tongue. Delayed-release aspirin is swallowed whole so the coating stays intact.",
+      "d": "Sprinkle capsules are opened and the beads are mixed with food. Ecotrin is a coated tablet, not a capsule that is opened."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-214",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Timolol eye drops (Timoptic) 0.5% are filled for glaucoma, one drop in the affected eye. Which class and route are correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Prostaglandin analog eye drop that increases fluid leaving the eye."
+      },
+      {
+        "id": "b",
+        "text": "Nonselective beta blocker administered in the eye."
+      },
+      {
+        "id": "c",
+        "text": "Selective beta blocker swallowed as a tablet each morning."
+      },
+      {
+        "id": "d",
+        "text": "Carbonic anhydrase inhibitor swallowed as a tablet for eye pressure."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Timoptic 0.5% is timolol, a nonselective beta blocker, given as an ophthalmic drop for glaucoma. It lowers eye pressure by decreasing aqueous humor production. Latanoprost is a prostaglandin analog, oral metoprolol is a swallowed beta blocker, and oral acetazolamide is a carbonic anhydrase inhibitor.",
+    "distractorExplanations": {
+      "a": "Prostaglandin analogs such as latanoprost increase outflow of aqueous humor. Timolol is a beta blocker and reduces production of that fluid.",
+      "c": "Swallowed metoprolol is an oral selective beta blocker for heart rate and blood pressure. This order is timolol solution for the eye.",
+      "d": "Acetazolamide is an oral carbonic anhydrase inhibitor. Timoptic is timolol eye drops, not that tablet class."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-215",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "NPH insulin suspension (Humulin N) is on a hospital medication list. A nurse asks which dosage-form description fits this insulin. Which description is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A clear rapid-acting solution injected when a meal is starting."
+      },
+      {
+        "id": "b",
+        "text": "A clear long-acting solution that is kept unmixed with other insulins."
+      },
+      {
+        "id": "c",
+        "text": "A cloudy suspension that is rolled before the dose is drawn."
+      },
+      {
+        "id": "d",
+        "text": "A clear short-acting solution that may be given intravenously."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Humulin N is NPH, or isophane, insulin, an intermediate-acting cloudy suspension. The vial is rolled so the particles mix evenly before a dose is drawn. Rapid-acting analogs and insulin glargine are clear solutions. Regular insulin may be given intravenously, and NPH may not.",
+    "distractorExplanations": {
+      "a": "Insulin lispro and insulin aspart are clear rapid-acting solutions timed to meals. Humulin N is a cloudy intermediate-acting suspension.",
+      "b": "Insulin glargine is a clear long-acting solution that is not mixed with other insulins. NPH is cloudy and is a different insulin.",
+      "d": "Regular insulin is a clear short-acting solution and may be given intravenously. Humulin N is cloudy NPH and is not given into a vein."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-216",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A parent wants an alcohol-free liquid for a toddler, but the community prescription is written as an elixir. What should the technician recognize about this dosage form before calling the pharmacist?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An elixir is a dry powder that is reconstituted with water."
+      },
+      {
+        "id": "b",
+        "text": "An elixir is a suspension of particles and needs shaking before use."
+      },
+      {
+        "id": "c",
+        "text": "An elixir is a sugar solution in water and contains no alcohol."
+      },
+      {
+        "id": "d",
+        "text": "An elixir is a sweetened liquid that contains alcohol."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An elixir is a clear, sweetened hydroalcoholic liquid, so it contains alcohol. A request for an alcohol-free liquid for a toddler is a reason to call the pharmacist, who can decide whether a syrup or another alcohol-free form is appropriate. An elixir is not a dry powder, a particle suspension, or an alcohol-free syrup.",
+    "distractorExplanations": {
+      "a": "A powder for reconstitution is mixed with water to make a suspension or solution. An elixir is already a clear liquid, and its defining feature here is alcohol.",
+      "b": "A suspension has undissolved particles and is shaken. An elixir is a clear hydroalcoholic solution, not a particle suspension.",
+      "c": "A syrup is a sweetened solution in water and is the liquid usually chosen when alcohol must be avoided. An elixir contains alcohol, so it is not that alcohol-free form."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-217",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "In a community pharmacy, a prescription reads metformin 500 mg tablets, 1 tablet by mouth 2 times daily, dispense 60 tablets. What days' supply should be entered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 days, from 60 tablets used at 2 per day"
+      },
+      {
+        "id": "b",
+        "text": "60 days, from counting 1 tablet each day"
+      },
+      {
+        "id": "c",
+        "text": "15 days, from counting 4 tablets each day"
+      },
+      {
+        "id": "d",
+        "text": "120 days, from multiplying the 60 tablets by 2"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The sig is 1 tablet of metformin 500 mg taken 2 times daily, so the patient uses 2 tablets each day. The quantity dispensed is 60 tablets, and 60 divided by 2 equals 30 days.",
+    "distractorExplanations": {
+      "b": "60 days counts 1 tablet each day and leaves out the 2 times daily written in the sig.",
+      "c": "15 days assumes 4 tablets each day, which is twice the 2 times daily the sig actually states.",
+      "d": "120 days multiplies the 60 dispensed tablets by 2 instead of dividing 60 by the daily amount."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-218",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "At the outpatient counter, a handwritten order says clonidine 0.1 mg for blood pressure, but the shelf bottle in hand reads clonazepam 0.5 mg. Which product matches the order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clonazepam 0.5 mg, the bottle already pulled from the shelf"
+      },
+      {
+        "id": "b",
+        "text": "Clonidine 0.1 mg, the drug named on the handwritten order"
+      },
+      {
+        "id": "c",
+        "text": "Either product, because the two names look almost the same"
+      },
+      {
+        "id": "d",
+        "text": "Clopidogrel tablets, because the name starts with the same letters"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The order names clonidine 0.1 mg for blood pressure. Clonazepam 0.5 mg is a look-alike name that was pulled from the shelf by mistake. Similar spelling does not make the products interchangeable, so the bottle that matches the order is clonidine 0.1 mg.",
+    "distractorExplanations": {
+      "a": "Clonazepam 0.5 mg is the look-alike bottle already in hand, not the drug named on the order.",
+      "c": "Names that look almost the same are why this pair is confused; they are not the same product.",
+      "d": "Clopidogrel shares an opening prefix with clonidine, but it is not the drug written on this order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-219",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Discharge paperwork from the hospital states take ibuprofen 400 mg with food. Which auxiliary label matches that written instruction?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take on an empty stomach before meals"
+      },
+      {
+        "id": "b",
+        "text": "Avoid sunlight for the whole course of therapy"
+      },
+      {
+        "id": "c",
+        "text": "Take with food, as the paperwork states"
+      },
+      {
+        "id": "d",
+        "text": "Shake well and keep the bottle refrigerated"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The discharge paperwork says to take ibuprofen 400 mg with food. The auxiliary label should carry that same instruction. An empty-stomach label says the opposite, and a sunlight warning or a shake-and-refrigerate label was not part of the written note.",
+    "distractorExplanations": {
+      "a": "An empty-stomach label is the opposite of the written instruction to take ibuprofen 400 mg with food.",
+      "b": "A sunlight warning is a different auxiliary label and is not the instruction in this discharge note.",
+      "d": "A shake-well and refrigerate label fits some liquids, not this written direction to take the dose with food."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-220",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A carton of varicella vaccine states store frozen between -50 °C and -15 °C. Which storage step follows that statement when the delivery is put away?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the carton on the counter until the next receiving shift begins"
+      },
+      {
+        "id": "b",
+        "text": "Move the carton into a refrigerator when the delivery is put away"
+      },
+      {
+        "id": "c",
+        "text": "Thaw the carton in warm water, then place it in a refrigerator"
+      },
+      {
+        "id": "d",
+        "text": "Move the carton into a freezer held between -50 °C and -15 °C"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The carton states store frozen between -50 °C and -15 °C. Putting the delivery away on a counter does not meet that range. A refrigerator, with or without a warm-water thaw first, is not the frozen range printed on the carton. The step that follows the statement is a freezer held between -50 °C and -15 °C.",
+    "distractorExplanations": {
+      "a": "A counter does not meet the carton statement to store this vaccine frozen between -50 °C and -15 °C.",
+      "b": "Moving the carton into a refrigerator does not follow the carton, which says to store this vaccine frozen between -50 °C and -15 °C.",
+      "c": "Thawing the carton in warm water and then refrigerating it does not follow the frozen storage statement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-221",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "The pediatric unit orders phenytoin 100 mg as a single intravenous dose. The vial on hand is labeled 50 mg per 1 mL. How many mL equal this dose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2 mL, from dividing 100 mg by 50 mg per 1 mL"
+      },
+      {
+        "id": "b",
+        "text": "1 mL, copying the 1 mL figure on the vial label"
+      },
+      {
+        "id": "c",
+        "text": "4 mL, from dividing 100 by 50 and then doubling that result"
+      },
+      {
+        "id": "d",
+        "text": "50 mL, copying the 50 mg strength as the volume"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The ordered dose is phenytoin 100 mg, and the vial is labeled 50 mg per 1 mL. Dividing 100 mg by 50 mg per 1 mL gives 2 mL for this dose.",
+    "distractorExplanations": {
+      "b": "1 mL copies the 1 mL on the label and does not apply the 100 mg dose to the 50 mg strength.",
+      "c": "4 mL divides 100 by 50 correctly and then doubles that result, which the order does not say to do.",
+      "d": "50 mL treats the 50 mg strength as if it were already a volume in milliliters."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-222",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Stock bottles of buPROPion and busPIRone sit in neighboring bins. The prescription reads buspirone 10 mg 2 times daily. Which bottle should the technician use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The bupropion bottle, because its tall-man letters stand out on the bin"
+      },
+      {
+        "id": "b",
+        "text": "The buspirone 10 mg bottle named in the prescription"
+      },
+      {
+        "id": "c",
+        "text": "Whichever neighboring bottle is already open on the counter"
+      },
+      {
+        "id": "d",
+        "text": "A buprenorphine bottle, because the prefix looks similar"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The prescription names buspirone 10 mg taken 2 times daily. Bupropion is the look-alike stored in the next bin. Tall-man letters highlight the difference between the names; they do not change the name that was ordered. The bottle to use is buspirone 10 mg.",
+    "distractorExplanations": {
+      "a": "Bupropion is the neighboring look-alike. Tall-man letters mark the difference; they do not make it the ordered drug.",
+      "c": "An open bottle on the counter is not a match for the name buspirone written on the prescription.",
+      "d": "Buprenorphine shares a prefix with bupropion, but it is not the drug named buspirone 10 mg on this order."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-223",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "The prescriber added a note reading separate this levofloxacin 500 mg dose from antacids by 2 hours. Which auxiliary label fits that note?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take this dose with a large glass of milk"
+      },
+      {
+        "id": "b",
+        "text": "Avoid alcohol while this medicine is being used"
+      },
+      {
+        "id": "c",
+        "text": "Separate antacids from this dose by 2 hours"
+      },
+      {
+        "id": "d",
+        "text": "Take the dose at bedtime on an empty stomach"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The prescriber's note says to separate the levofloxacin 500 mg dose from antacids by 2 hours. The auxiliary label should state that 2-hour separation. Milk, an alcohol warning, and a bedtime instruction are different labels and do not restate the note.",
+    "distractorExplanations": {
+      "a": "A take-with-milk label does not restate the note to separate the 500 mg dose from antacids by 2 hours.",
+      "b": "An alcohol warning is a different auxiliary label and is not the 2-hour antacid note the prescriber wrote.",
+      "d": "A bedtime, empty-stomach label does not restate the written note to separate this dose from antacids by 2 hours."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-224",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A community delivery of recombinant zoster vaccine states on the carton refrigerate at 2 °C to 8 °C; do not freeze. Which storage step matches the carton?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Freeze the carton with other vaccines so the delivery stays in one place"
+      },
+      {
+        "id": "b",
+        "text": "Leave the carton on a room-temperature shelf in the pharmacy"
+      },
+      {
+        "id": "c",
+        "text": "Leave the carton in the delivery tote until the next business day"
+      },
+      {
+        "id": "d",
+        "text": "Place the carton in a refrigerator held at 2 °C to 8 °C, not frozen"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The carton states refrigerate at 2 °C to 8 °C and do not freeze. The matching step is a refrigerator held at 2 °C to 8 °C. Freezing contradicts the carton, and a room-temperature shelf or a delivery tote is not that refrigerated range.",
+    "distractorExplanations": {
+      "a": "Freezing the carton contradicts the printed statement to refrigerate at 2 °C to 8 °C and not to freeze.",
+      "b": "A room-temperature shelf is not the refrigerated range of 2 °C to 8 °C stated on this carton.",
+      "c": "A delivery tote is not a refrigerator held at 2 °C to 8 °C, which is the storage the carton states."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-225",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "An otic prescription is written for 10 mL of ofloxacin drops, 4 drops in the right ear 2 times daily. Using 20 drops per mL, what days' supply should be entered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "25 days, from 200 drops used at 8 drops each day"
+      },
+      {
+        "id": "b",
+        "text": "10 days, using the 10 mL bottle size as the full days' supply"
+      },
+      {
+        "id": "c",
+        "text": "20 days, using the 20 drops per mL as the days' supply"
+      },
+      {
+        "id": "d",
+        "text": "40 days, multiplying the 10 mL bottle by the 4 drops"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The bottle holds 10 mL, and the pharmacy uses 20 drops per mL, so 10 times 20 equals 200 drops. The sig is 4 drops in the right ear 2 times daily, which is 8 drops a day. Then 200 divided by 8 equals 25 days.",
+    "distractorExplanations": {
+      "b": "10 days copies the 10 mL bottle size and skips the 20 drops per mL and the daily drop count.",
+      "c": "20 days copies the 20 drops per mL figure and never divides the total drops by the daily use.",
+      "d": "40 days multiplies the 10 mL bottle by the 4 drops and ignores both the 20 drops per mL and the 2 times daily."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-226",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Two adjacent bins in the hospital pharmacy are labeled vinCRIStine and vinBLAStine. The unit order reads vincristine. Which bin should the technician pull from?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The vinblastine bin, because the two bins sit side by side"
+      },
+      {
+        "id": "b",
+        "text": "The vincristine bin that the unit order actually names"
+      },
+      {
+        "id": "c",
+        "text": "Either bin, because both names begin with vin and end alike"
+      },
+      {
+        "id": "d",
+        "text": "A vinorelbine bin, because that name also begins with vin"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The unit order reads vincristine. Vinblastine is the look-alike stored in the adjacent bin. Tall-man letters show where the names differ so the two drugs are not treated as one product. The technician pulls from the vincristine bin that matches the order.",
+    "distractorExplanations": {
+      "a": "Vinblastine is the look-alike in the next bin. Sitting beside vincristine does not make it the drug that was ordered.",
+      "c": "A shared beginning and a similar ending are why these names are dangerous to confuse; the order names vincristine.",
+      "d": "Vinorelbine also begins with vin, but the unit order does not name vinorelbine."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-227",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A topical prescription for the skin reads apply to the affected area 2 times daily and adds for external use. Which auxiliary label matches?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For the eye, to be instilled exactly as the prescriber directs"
+      },
+      {
+        "id": "b",
+        "text": "For rectal use, following the 2 times daily written on the prescription"
+      },
+      {
+        "id": "c",
+        "text": "For external use on the skin, as the prescription states"
+      },
+      {
+        "id": "d",
+        "text": "Shake well before each of the 2 daily uses of this product"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The prescription says to apply the product to the affected skin 2 times daily and states for external use. The auxiliary label that matches is for external use on the skin. An eye label, a rectal-use label, or a shake-well label adds a route or a step the prescription does not state.",
+    "distractorExplanations": {
+      "a": "An eye label would send this skin product into the eye, which is not the external-use direction on the prescription.",
+      "b": "A rectal-use label is the wrong route. The prescription says to apply the product to the affected skin and states for external use.",
+      "d": "A shake-well label adds a direction this prescription does not state. The prescription says for external use on the skin, 2 times daily."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-228",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A package insert excerpt taped to the bin says store at 20 °C to 25 °C, with excursions permitted from 15 °C to 30 °C. The shelf log reads 22 °C. Which action matches the insert?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move the product into the freezer so it stays colder than the shelf"
+      },
+      {
+        "id": "b",
+        "text": "Move the product into the refrigerator because cooler storage is safer"
+      },
+      {
+        "id": "c",
+        "text": "Discard the product because 22 °C is not the midpoint of the range"
+      },
+      {
+        "id": "d",
+        "text": "Leave the product on this shelf, where the log reads 22 °C"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The insert says store at 20 °C to 25 °C, with excursions permitted from 15 °C to 30 °C. The shelf log reads 22 °C, and 22 °C sits inside 20 °C to 25 °C, so the product stays on that shelf. Freezing, refrigerating, or discarding is not what the insert says at 22 °C.",
+    "distractorExplanations": {
+      "a": "A freezer is far outside the stated 20 °C to 25 °C range, and the log reading of 22 °C does not call for freezing.",
+      "b": "Cooler storage in a refrigerator is not what the insert says when the shelf is already at 22 °C, inside 20 °C to 25 °C.",
+      "c": "22 °C does not have to be the midpoint of 20 °C and 25 °C. It is already inside the stated range, so discarding it does not follow the insert."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-229",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Pump settings are needed for sodium chloride 1000 mL to infuse over 8 hours on the hospital floor. How many mL per hour should be entered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "125 mL per hour, from dividing 1000 mL by 8 hours"
+      },
+      {
+        "id": "b",
+        "text": "1000 mL per hour, entering the full bag volume as the rate"
+      },
+      {
+        "id": "c",
+        "text": "8 mL per hour, entering the hours as the hourly rate"
+      },
+      {
+        "id": "d",
+        "text": "8000 mL per hour, from multiplying 1000 mL by the 8 hours"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The order is sodium chloride 1000 mL infused over 8 hours. Dividing 1000 mL by 8 hours gives 125 mL per hour, which is the rate to enter on the pump.",
+    "distractorExplanations": {
+      "b": "1000 mL per hour copies the bag volume and never divides that 1000 mL by the 8 hours.",
+      "c": "8 mL per hour copies the 8 hours as if the hours were already the rate in milliliters.",
+      "d": "8000 mL per hour comes from multiplying 1000 mL by 8. An hourly rate divides the 1000 mL bag by the 8 hours."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-230",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A filled bottle was labeled traMADol, but the prescription reads trazodone 50 mg at bedtime. What should happen before the patient picks it up?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hand out the tramadol bottle, because the tablets are already counted"
+      },
+      {
+        "id": "b",
+        "text": "Replace the filled bottle with trazodone 50 mg before pickup"
+      },
+      {
+        "id": "c",
+        "text": "Give either drug, because both names are used for an evening dose"
+      },
+      {
+        "id": "d",
+        "text": "Rewrite the prescription so it matches the tramadol already in the bottle"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The prescription reads trazodone 50 mg at bedtime. Tramadol is a look-alike that was placed on the label by mistake. A finished count does not correct the wrong name. Before pickup, the bottle should be replaced with trazodone 50 mg, the drug the prescription names.",
+    "distractorExplanations": {
+      "a": "A finished tablet count does not fix a label that says tramadol when the prescription reads trazodone 50 mg.",
+      "c": "Both names can appear on evening prescriptions, which is why they are confused; they are not interchangeable here.",
+      "d": "Changing the prescription to match the tramadol bottle would hide the selection error instead of correcting it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-231",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "Ear drops and eye drops are both in this hospital discharge bag. The new order says neomycin otic, for the ear. Which auxiliary label belongs on that bottle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "For the eye, like the other drops sitting in the same bag"
+      },
+      {
+        "id": "b",
+        "text": "For the nose, to be placed in the nostril as directed"
+      },
+      {
+        "id": "c",
+        "text": "For the ear, matching the words written on the order"
+      },
+      {
+        "id": "d",
+        "text": "For external use on the skin surrounding the outer ear"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The order says neomycin otic, for the ear, and the bag also holds eye drops. The auxiliary label on the otic bottle should say for the ear so the drops are not used in the eye, in the nose, or on the skin. An eye label, a nose label, or an external-skin label sends this product by a different route.",
+    "distractorExplanations": {
+      "a": "An eye label is the mix-up this bottle needs to prevent, because eye drops are already in the same discharge bag.",
+      "b": "A nose label would place these drops in a nostril. The order says neomycin otic, for the ear.",
+      "d": "An external-use label for the skin around the ear does not match an otic order. The order says neomycin otic, for the ear."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-medications-232",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "medications",
+    "prompt": "A manufacturer bottle in the community pharmacy states protect from light; do not repackage. A caregiver wants a 30-day supply poured into a clear pill organizer. Which step matches the bottle?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Split the tablets into daily baggies kept inside a dark cabinet"
+      },
+      {
+        "id": "b",
+        "text": "Pour the 30-day supply into the clear organizer the caregiver brought"
+      },
+      {
+        "id": "c",
+        "text": "Fill an amber vial for those 30 days and discard the manufacturer bottle"
+      },
+      {
+        "id": "d",
+        "text": "Leave the tablets in the manufacturer bottle and refer the request"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The bottle states protect from light and do not repackage. Pouring a 30-day supply into a clear organizer both repackages the tablets and exposes them to light. Daily baggies and a new amber vial are also repackaging. The step that matches the bottle is to leave the tablets in the manufacturer bottle and refer the caregiver's request to the pharmacist.",
+    "distractorExplanations": {
+      "a": "Daily baggies are a repackage, which the bottle says not to do, even if the cabinet is dark.",
+      "b": "A clear organizer exposes the tablets to light and repackages the 30-day supply, against both statements on the bottle.",
+      "c": "Moving the tablets into an amber vial for 30 days still repackages them and discards the container the bottle says to keep."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "ptcb-pharmacy-technician-mock-123",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "federal-requirements",
@@ -4585,6 +5641,567 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-201",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "The pharmacy's CSOS certificate will not authenticate this morning, and the pharmacist still needs to order methylphenidate tablets, which the invoice lists as Schedule II. A technician offers to email the wholesaler a plain purchase order. What should be used instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A paper DEA Form 222 signed for this Schedule II order"
+      },
+      {
+        "id": "b",
+        "text": "A plain emailed purchase order, because the CSOS outage blocks electronic Schedule II ordering"
+      },
+      {
+        "id": "c",
+        "text": "DEA Form 224a, because renewing the pharmacy registration also places this drug order"
+      },
+      {
+        "id": "d",
+        "text": "DEA Form 41, sent to the wholesaler so the new shipment can leave the warehouse"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CSOS is the electronic substitute for a paper DEA Form 222 when a pharmacy orders a Schedule II drug such as methylphenidate. When the certificate will not authenticate, staff use a paper Form 222 signed by the registrant or a person with power of attorney. A plain purchase order does not replace either method.",
+    "distractorExplanations": {
+      "b": "An emailed purchase order is not a Schedule II order. CSOS and Form 222 are the two valid methods, and a CSOS outage leaves the paper form.",
+      "c": "Form 224a renews a pharmacy's DEA registration. It does not order methylphenidate or any other controlled substance.",
+      "d": "Form 41 documents destruction of controlled substances. It does not authorize a wholesaler to ship new stock."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-202",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A patient asks to take home part of a new oxycodone prescription written today for 90 tablets. The pharmacist states the rule that applies: the drug is Schedule II, the patient is requesting less than the full amount, and this is not a stock shortage, so the rest may be supplied within 30 days of the written date as long as the portions together do not exceed 90 tablets. The patient wants 30 tablets today. Which action follows that rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn the patient away, because a Schedule II prescription cannot be split when the patient asks for fewer tablets"
+      },
+      {
+        "id": "b",
+        "text": "Dispense 30 today; the other 60 stay available within 30 days"
+      },
+      {
+        "id": "c",
+        "text": "Dispense 30 tablets now and cancel the remaining 60 before the pharmacy closes tonight"
+      },
+      {
+        "id": "d",
+        "text": "Fill the entire 90-tablet quantity today and file the request as a separate prescription"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The pharmacist stated the patient-requested partial-fill rule for this Schedule II prescription: the portions together cannot exceed the 90 tablets prescribed, and the rest may be supplied within 30 days of the written date. Dispensing 30 today leaves 60 that may still be supplied inside that 30-day window. A stock-shortage partial fill is a different rule and was not the one stated.",
+    "distractorExplanations": {
+      "a": "A patient may request a smaller Schedule II portion. Refusing the fill treats a patient request as if partial fills were prohibited.",
+      "c": "Canceling the other 60 tonight drops tablets the stated rule still allows. The window runs 30 days from the written date, not until closing.",
+      "d": "Dispensing the full 90 tablets ignores the request for 30 and files a second prescription the prescriber did not write."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-203",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Two factory-sealed prescription bottles arrive from a wholesaler the pharmacy normally uses. The packing list names the drug, but the shipment has no transaction information and no transaction statement tying the lot to the seller. What should the technician do with those bottles?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place both bottles into saleable stock and file the packing list as a complete receiving record"
+      },
+      {
+        "id": "b",
+        "text": "Dispense from the bottles now and ask the wholesaler for the tracing papers after those prescriptions are sold"
+      },
+      {
+        "id": "c",
+        "text": "Quarantine both bottles and tell the pharmacist before dispensing either one"
+      },
+      {
+        "id": "d",
+        "text": "Assign a pharmacy lot number to each bottle and shelve them with the rest of that drug"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Under the Drug Supply Chain Security Act, a pharmacy must receive product-tracing records, including transaction information and a transaction statement, before prescription drugs enter saleable stock. Bottles that arrive without those records are quarantined, and the pharmacist investigates. They are not dispensed or given a new lot number.",
+    "distractorExplanations": {
+      "a": "A packing list is not transaction information plus a transaction statement. Putting the bottles into saleable stock skips product tracing.",
+      "b": "Dispensing first and requesting papers later releases product that cannot be traced to the seller. The bottles stay quarantined.",
+      "d": "The pharmacy does not invent a lot number to replace missing tracing records. The seller's lot has to be documented before the bottles are shelved."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-204",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A coupon vendor asks the technician for the names, addresses, and medication lists of patients who take atorvastatin, so the vendor can mail discount cards. The vendor is not treating the patients. What does HIPAA's minimum-necessary standard require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send the full medication lists, because a coupon mailing counts as treatment of those patients"
+      },
+      {
+        "id": "b",
+        "text": "Give the names and the drug name, but strip out addresses, phone numbers, and birth dates"
+      },
+      {
+        "id": "c",
+        "text": "Release the list now and post a notice that patients may object after the cards are mailed"
+      },
+      {
+        "id": "d",
+        "text": "Do not release the list; this mailing is not a permitted disclosure"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "HIPAA's minimum-necessary standard limits protected health information to the least amount needed for a permitted purpose. A coupon vendor's mailing is marketing, not treatment, payment, or pharmacy operations, so there is no permitted disclosure to minimize. The technician refuses the list and tells the pharmacist.",
+    "distractorExplanations": {
+      "a": "Mailing discount cards is marketing. Calling it treatment would open the medication lists to a vendor that is not caring for the patients.",
+      "b": "Removing a few identifiers still discloses who takes atorvastatin. Minimum necessary does not authorize a marketing list.",
+      "c": "An after-the-fact opt-out notice does not make the disclosure permitted. The list is not released for this mailing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-205",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "While bagging a new Medicaid prescription, the technician is asked how the medicine should be taken and which side effects matter. The patient wants that explanation before leaving. Under OBRA-90, who provides the counseling?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pharmacist provides the counseling the patient requested"
+      },
+      {
+        "id": "b",
+        "text": "The technician gives it, because the patient asked a technician at the pickup window"
+      },
+      {
+        "id": "c",
+        "text": "Nobody, if a printed information leaflet is already inside the bag"
+      },
+      {
+        "id": "d",
+        "text": "Any staff member, as long as a Medication Guide is stapled to the receipt"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "OBRA-90 requires an offer to counsel Medicaid patients and a prospective drug-use review. The patient has asked how to take a new medicine and which side effects matter. That counseling is the pharmacist's duty. The technician does not give it, and a leaflet or Medication Guide does not take the pharmacist's place.",
+    "distractorExplanations": {
+      "b": "A question asked of the technician is still counseling. OBRA-90 places that duty on the pharmacist, not on whoever is standing at the window.",
+      "c": "A printed leaflet does not satisfy the counseling duty. The patient asked for an explanation, and the pharmacist provides it.",
+      "d": "A Medication Guide is an FDA handout for specific drugs. It does not transfer OBRA-90 counseling to the cashier or another staff member."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-206",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "The recall letter describes a misspelled word in the manufacturer's address on the carton. It states that use of the tablets is not likely to cause an adverse health consequence. Which recall class matches that hazard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Class I, the class used when serious harm or death is a reasonable probability"
+      },
+      {
+        "id": "b",
+        "text": "Class III, because an adverse health consequence is unlikely"
+      },
+      {
+        "id": "c",
+        "text": "Class II, because a carton typo is classified as temporary, medically reversible harm"
+      },
+      {
+        "id": "d",
+        "text": "A market withdrawal, because an address typo is outside the FDA recall classes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "FDA recall class follows the health hazard in the notice. Class III applies when use of the product is not likely to cause an adverse health consequence, which is what this letter says about a misspelled manufacturer address. Class I requires a reasonable probability of serious harm or death, and Class II covers temporary or medically reversible effects.",
+    "distractorExplanations": {
+      "a": "Class I is the serious-harm class. This letter says an adverse health consequence is unlikely, so the hazard is not Class I.",
+      "c": "Class II is for temporary or medically reversible effects, or a remote chance of serious harm. A misspelled address with no expected health effect is not that hazard.",
+      "d": "The FDA still assigns a recall class to a minor labeling defect. An unlikely health effect is Class III, not a classification the agency skips."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-207",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Before a restricted drug can leave the pharmacy, its labeling requires the prescriber to be enrolled, the pharmacy to be certified, and the patient to sign a program agreement. The pharmacist asks which kind of FDA program imposes those conditions. What is it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An Orange Book rating that shows a generic may be substituted for this product"
+      },
+      {
+        "id": "b",
+        "text": "A Class I recall that holds the lot until the FDA says the pharmacy may ship it"
+      },
+      {
+        "id": "c",
+        "text": "A REMS program that restricts how the drug is dispensed"
+      },
+      {
+        "id": "d",
+        "text": "A DSCSA transaction statement that traces the bottle back to the wholesaler"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A Risk Evaluation and Mitigation Strategy (REMS) is an FDA drug-safety program. When it includes elements to assure safe use, the drug may leave the pharmacy only after conditions such as prescriber enrollment, pharmacy certification, and a patient agreement are met. Those conditions are not an Orange Book rating, a recall class, or a supply-chain tracing document. The technician does not bypass them.",
+    "distractorExplanations": {
+      "a": "The Orange Book rates therapeutic equivalence for substitution. It does not enroll prescribers or require a patient agreement before dispensing.",
+      "b": "A Class I recall removes a hazardous lot from use. Enrollment and a patient agreement are ongoing dispensing conditions, not a recall.",
+      "d": "A DSCSA transaction statement traces ownership of the product. It does not certify the pharmacy or enroll the prescriber."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-208",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A long-term care nurse faxes a prescriber's morphine prescription and notes that the patient resides in that facility. The technician sees that the drug is Schedule II and that no paper original is on file. How may this fax be treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a refill, because a facility chart lets a Schedule II prescription be refilled from the nurse's fax"
+      },
+      {
+        "id": "b",
+        "text": "As void, because a fax is not acceptable as the original prescription for a Schedule II drug in a facility"
+      },
+      {
+        "id": "c",
+        "text": "As an emergency oral order that still needs a signed follow-up prescription from the prescriber"
+      },
+      {
+        "id": "d",
+        "text": "As the original prescription for this long-term care resident"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Federal law allows a prescription for a Schedule II drug, written for a resident of a long-term care facility, to be faxed by the practitioner or the practitioner's agent. That fax serves as the original prescription. It is not a refill, and it is not an emergency oral order. The pharmacist still verifies it before dispensing.",
+    "distractorExplanations": {
+      "a": "A Schedule II prescription cannot be refilled. This fax is an original transmission for a long-term care resident, not a refill of a chart order.",
+      "b": "The long-term care setting is an exception. For a resident of that facility, the fax of a Schedule II prescription is the original.",
+      "c": "This fax is not an emergency oral order. That pathway is a phone order that still needs a signed follow-up, while a Schedule II fax for a long-term care resident already is the original prescription."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-209",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A patient with a Schedule IV prescription for clonazepam asks the technician to add two more refills because the label shows zero remaining. The prescriber has not authorized more. What may the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask for a new prescriber authorization before any refill is entered"
+      },
+      {
+        "id": "b",
+        "text": "Enter two refills now, because the patient may authorize more refills on a Schedule IV prescription when the label shows zero remaining"
+      },
+      {
+        "id": "c",
+        "text": "Add a fresh set of refills during data entry, because pharmacy staff may rebuild a Schedule IV refill count when the label shows zero remaining"
+      },
+      {
+        "id": "d",
+        "text": "Process one refill from the empty label, treating Schedule IV like a noncontrolled maintenance drug"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Refills on this Schedule IV prescription exist only when the prescriber authorizes them. The label shows zero remaining, and the prescriber has not authorized more, so the technician cannot add the two refills the patient requested. A new authorization is required before another fill is entered.",
+    "distractorExplanations": {
+      "b": "The patient cannot authorize the two refills. A Schedule IV refill exists only when the prescriber has approved it, and this prescriber has not.",
+      "c": "Data entry cannot rebuild a refill count the prescriber did not write. Adding a fresh set of refills invents an authorization that is not on this prescription.",
+      "d": "An empty Schedule IV label is not a new refill. Schedule IV is still a controlled substance, and this prescription has no refills left."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-210",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Asked to sign the Schedule II purchase document while the pharmacist is at lunch, the technician finds a paper DEA Form 222 on the counter. The technician has no power of attorney on file. What is the right action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sign the Form 222, because a certified technician may execute Schedule II orders during the pharmacist's meal break"
+      },
+      {
+        "id": "b",
+        "text": "Leave it unsigned for the registrant or a power-of-attorney holder"
+      },
+      {
+        "id": "c",
+        "text": "Sign the form, then submit DEA Form 106 so the lunchtime order is confirmed to the DEA"
+      },
+      {
+        "id": "d",
+        "text": "Send the same order through CSOS with the technician's personal login and skip the paper form"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A paper DEA Form 222 for a Schedule II order may be signed by the registrant or by a person to whom the registrant has granted power of attorney. This technician has no power of attorney on file, so the form stays unsigned until an authorized person signs it. A personal CSOS login is not that authority, and Form 106 does not confirm a purchase.",
+    "distractorExplanations": {
+      "a": "Certification does not confer power of attorney. A technician who is not on the power-of-attorney file does not sign Form 222, including during lunch.",
+      "c": "Form 106 reports theft or significant loss. Signing the order form and filing a loss report does not create authority to purchase Schedule II stock.",
+      "d": "CSOS ordering requires the registrant's digital certificate or a granted CSOS certificate. The technician's personal login is not a substitute signature."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-211",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A shopper wants pseudoephedrine but will not show a photo identification or sign the sales log. The package is kept behind the counter, and this sale requires the Combat Methamphetamine Epidemic Act log. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sell one package and write that the shopper refused to show identification or to sign"
+      },
+      {
+        "id": "b",
+        "text": "Sell the package for cash, because the identification and logbook steps apply to credit-card purchases"
+      },
+      {
+        "id": "c",
+        "text": "Refuse the sale until the shopper shows photo ID and signs the log"
+      },
+      {
+        "id": "d",
+        "text": "Finish the sale with no log entry, because nonprescription status removes the identification step"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The Combat Methamphetamine Epidemic Act requires the seller to review a photo identification and to obtain the purchaser's signature in the logbook before this behind-the-counter pseudoephedrine sale. The shopper has refused both steps, so the technician does not complete the sale. Paying cash does not waive either step.",
+    "distractorExplanations": {
+      "a": "A note that the shopper refused is not a photo identification or a signature. The sale cannot be completed on that note.",
+      "b": "Cash versus a card does not change the rule. The identification check and the signed log entry are required for the sale itself.",
+      "d": "Keeping pseudoephedrine behind the counter does not make it prescription-only, but this sale still requires identification and a signed log entry."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-212",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "According to the notice, affected tablets may cause temporary, medically reversible stomach upset, and the probability of serious health consequences is remote. The pharmacy has that lot in the back room. Which recall class fits the hazard the notice describes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Class I, because stomach upset is treated as a reasonable probability of serious harm or death"
+      },
+      {
+        "id": "b",
+        "text": "Class III, because medically reversible effects mean an adverse consequence is unlikely"
+      },
+      {
+        "id": "c",
+        "text": "No numbered class, because a remote chance of serious harm is recorded as a market withdrawal"
+      },
+      {
+        "id": "d",
+        "text": "Class II, for temporary or reversible harm with remote serious risk"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A Class II recall fits when use may cause temporary or medically reversible adverse health consequences, or when the probability of serious adverse health consequences is remote. This notice describes both, so the lot is Class II. Class I requires a reasonable probability of serious harm or death. Class III is for a product not likely to cause an adverse health consequence.",
+    "distractorExplanations": {
+      "a": "Stomach upset that the notice calls temporary and reversible is not a reasonable probability of serious harm or death. That description is not Class I.",
+      "b": "Class III is for harm that is unlikely. Temporary, medically reversible upset is the Class II hazard, not Class III.",
+      "c": "A remote chance of serious harm is part of the Class II definition. It is not reclassified as a market withdrawal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-213",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "A prescriber's office phones in a new prescription for buprenorphine/naloxone and states that the product is Schedule III, with refills authorized. No paper copy has arrived. What is the federal status of this oral order?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pharmacist may accept the oral order and reduce it to writing"
+      },
+      {
+        "id": "b",
+        "text": "It cannot be filled, because a controlled substance needs a paper prescription in hand before data entry"
+      },
+      {
+        "id": "c",
+        "text": "It must be copied onto DEA Form 222 before the pharmacist is allowed to verify the fill"
+      },
+      {
+        "id": "d",
+        "text": "It is an emergency Schedule II order, so the refills the office authorized have to be deleted"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Federal law permits a Schedule III prescription to be issued orally. The pharmacist promptly reduces the oral order to writing and verifies it before dispensing. The office stated Schedule III and authorized refills, so this call is not an emergency Schedule II order. Form 222 is a stock-order form, not a prescription blank.",
+    "distractorExplanations": {
+      "b": "A paper original is not required before a Schedule III oral order can be taken. The pharmacist reduces the phone order to writing.",
+      "c": "DEA Form 222 orders Schedule I and II stock from a supplier. It is not the form used to transcribe a Schedule III prescription.",
+      "d": "The office stated Schedule III and authorized refills. Deleting those refills treats the call as a Schedule II emergency order, which it is not."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-214",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "After hearing the counseling offer, the patient says no thank you and reaches for a new Medicaid prescription. The technician knows OBRA-90 put that offer in the workflow. What should the technician do next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Review the side effects anyway, because OBRA-90 does not accept a patient's refusal of counseling"
+      },
+      {
+        "id": "b",
+        "text": "Record the refusal, then hand the prescription to the patient"
+      },
+      {
+        "id": "c",
+        "text": "Hold the bag until the pharmacist completes a counseling session the patient has already declined"
+      },
+      {
+        "id": "d",
+        "text": "Ask the patient to sign the Medication Guide and count that signature as the counseling"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "OBRA-90 requires pharmacies serving Medicaid patients to offer counseling and requires the pharmacist to be available for it. This patient declined the offer. The technician records the refusal, releases the prescription, and does not counsel. A Medication Guide signature is not a counseling session.",
+    "distractorExplanations": {
+      "a": "The patient may decline. Continuing into side effects would be the technician counseling after a refusal, which OBRA-90 does not require.",
+      "c": "OBRA-90 requires the offer, not a forced session. Holding the prescription punishes a patient who has already declined counseling.",
+      "d": "Signing a Medication Guide shows the patient received an FDA handout. It does not convert that handout into the pharmacist's counseling."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-215",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Three Schedule II prescriptions were issued today for one patient. Each prescription carries its own do-not-fill-until date. The pharmacist states that federal law permits this arrangement when the combined supply does not exceed 90 days. One do-not-fill date is today, and the other two dates are later. Which prescription may be dispensed now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The full set of three, so the patient will not need to make another trip for the later dates"
+      },
+      {
+        "id": "b",
+        "text": "Hold every prescription, because a Schedule II order is invalid once it shows a future fill date"
+      },
+      {
+        "id": "c",
+        "text": "Dispense the prescription whose do-not-fill date is today"
+      },
+      {
+        "id": "d",
+        "text": "The prescription with the latest date, after the two earlier prescriptions are canceled"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A prescriber may issue multiple Schedule II prescriptions on the same day, each showing the earliest date it may be filled, when the total does not exceed a 90-day supply. The pharmacist has already stated that limit. The prescription whose do-not-fill date is today may be dispensed after pharmacist verification. The two later prescriptions wait until their written dates.",
+    "distractorExplanations": {
+      "a": "Filling the full set today ignores the later do-not-fill dates. Each prescription waits until its own date arrives.",
+      "b": "A future do-not-fill date does not void a Schedule II prescription issued this way. The one dated for today may be dispensed now.",
+      "d": "The latest date is not the one that is fillable today. Canceling the earlier prescriptions throws away quantity the prescriber authorized."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-216",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Stock of a Schedule IV benzodiazepine is low. A technician starts a paper DEA Form 222 so the wholesaler will ship more tablets. The pharmacy normally orders this drug on its regular invoice. Which order path is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finish the Form 222, because each controlled schedule is purchased from the wholesaler on that form"
+      },
+      {
+        "id": "b",
+        "text": "Submit DEA Form 41, using the destruction record as the wholesaler's authorization to ship"
+      },
+      {
+        "id": "c",
+        "text": "File DEA Form 106 for the low shelf count, then wait for the DEA to replace the missing tablets"
+      },
+      {
+        "id": "d",
+        "text": "Use the regular invoice; paper Form 222 orders Schedules I and II"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Paper DEA Form 222 is the form used to order Schedule I and Schedule II controlled substances. This benzodiazepine is Schedule IV, and the pharmacy already buys it on a regular invoice, which is the appropriate path. Form 41 documents destruction. Form 106 reports theft or significant loss, and a low but expected shelf count is not a loss.",
+    "distractorExplanations": {
+      "a": "Paper Form 222 is not the purchase form for Schedule IV. That schedule is ordered on an ordinary invoice, which is how this pharmacy already buys the drug.",
+      "b": "Form 41 records controlled substances that are destroyed. It does not authorize a wholesaler to ship replacement tablets.",
+      "c": "Form 106 is for theft or significant loss. Needing to reorder a Schedule IV drug is a purchase, not a loss report to the DEA."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-federal-requirements-217",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "federal-requirements",
+    "prompt": "Fifteen of the 60 prescribed tablets were dispensed this morning. The drug is Schedule II, and the pharmacist states the shortage rule in use: because the pharmacy could not supply the full quantity, the remainder must be dispensed within 72 hours or it can no longer be supplied on this prescription. The missing 45 tablets arrive the next morning. What does that stated rule allow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No further tablets, because a Schedule II remainder expires on the same day the partial fill was started"
+      },
+      {
+        "id": "b",
+        "text": "Ask the prescriber for a new prescription covering the 45 tablets still owed, because a shortage fill cannot be finished on a later calendar day"
+      },
+      {
+        "id": "c",
+        "text": "Dispense another 60 tablets when the stock arrives, treating this morning's 15 tablets as a completed supply of their own"
+      },
+      {
+        "id": "d",
+        "text": "The remaining 45 tablets, because the next morning is still inside 72 hours"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The pharmacist stated the shortage rule: when the pharmacy cannot supply the full Schedule II quantity, the remainder must be dispensed within 72 hours. The other 45 of the 60 tablets arrived the next morning, which is inside that 72-hour window, so they may be dispensed on this prescription. The pharmacist verifies the completed fill.",
+    "distractorExplanations": {
+      "a": "The stated rule does not expire the remainder at the end of the first day. The next morning is still inside the 72 hours the pharmacist described.",
+      "b": "A later calendar day does not close the remainder while the pharmacist's 72-hour window is open. The next morning is still inside that window, so the 45 tablets do not need a new prescription.",
+      "c": "Another 60 tablets would go past the 60 prescribed, because 15 were already dispensed this morning. The stated rule allows the remaining 45 on this same prescription."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "ptcb-pharmacy-technician-mock-140",
@@ -5280,6 +6897,699 @@
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
   },
   {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-201",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "Holding a prednisolone bottle for a prednisone order, a technician sees shelf labels written as predniSONE and prednisoLONE, with the unlike syllables capitalized. What should she do before counting tablets?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Put it back and pull the predniSONE bottle"
+      },
+      {
+        "id": "b",
+        "text": "Count prednisolone, because the names are close enough to interchange"
+      },
+      {
+        "id": "c",
+        "text": "Relabel the order as prednisolone so it matches the bottle in hand"
+      },
+      {
+        "id": "d",
+        "text": "Scan any corticosteroid, since the drug class is what the order requires"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tall-man lettering capitalizes the unlike syllables in predniSONE and prednisoLONE so those look-alike names are harder to swap. The bottle in hand is prednisolone, and the order is prednisone, so she puts it back and pulls the predniSONE bottle before counting. The names are not interchangeable, the order is not rewritten to match the wrong bottle, and the drug class is not specific enough to scan either product.",
+    "distractorExplanations": {
+      "b": "Prednisone and prednisolone are different corticosteroids. Tall-man lettering warns against interchanging them; it does not mean a close spelling is close enough.",
+      "c": "Rewriting the order to match the bottle in hand would dispense the wrong drug. The label and the product have to follow the prednisone order.",
+      "d": "The order names prednisone, not the corticosteroid class. Scanning whichever steroid is in reach defeats the tall-man warning on the shelf."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-202",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "While loading a medical-unit cabinet, a technician is about to place a vial of concentrated potassium chloride injection into an open drawer. What should happen with this high-alert vial?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave it in the drawer so nurses can dilute each dose at the bedside"
+      },
+      {
+        "id": "b",
+        "text": "Keep it in the pharmacy and dispense a diluted infusion"
+      },
+      {
+        "id": "c",
+        "text": "Store it with the heparin so high-alert drugs share one drawer"
+      },
+      {
+        "id": "d",
+        "text": "Lock it in the unit narcotic cabinet and record it as a controlled drug"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Concentrated potassium chloride injection is an ISMP high-alert medication because an undiluted or too-rapid dose can cause cardiac arrest. The vial stays in the pharmacy, which dispenses a diluted, labeled infusion, instead of sitting in a unit drawer for bedside dilution. Grouping it with heparin or locking it in a narcotic cabinet still leaves the concentrated vial on the unit.",
+    "distractorExplanations": {
+      "a": "Bedside dilution of concentrated potassium chloride is a known cause of serious errors, which is why the vial is not left in the unit drawer.",
+      "c": "Sharing a drawer with heparin keeps a concentrated electrolyte on the unit and adds a selection risk. The vial belongs in the pharmacy.",
+      "d": "This injection is high-alert because of the harm from an undiluted dose, not because it is recorded and stored as a controlled drug."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-203",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "Staff have been overriding NDC mismatch alerts this month because the counter scanner often fails to read curved bottles. No wrong drug has left the pharmacy yet. The technician who pulled the override log asks what the team should do with that pattern.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wait until a mismatched drug reaches a patient before opening a report"
+      },
+      {
+        "id": "b",
+        "text": "Skip a report because the curved bottles already explain the overrides"
+      },
+      {
+        "id": "c",
+        "text": "Report the pattern so the scanner problem is fixed"
+      },
+      {
+        "id": "d",
+        "text": "Keep overriding the alert until a replacement scanner arrives"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Repeated overrides of an NDC mismatch alert are a hazard even when no wrong drug has left the pharmacy. The team should report the pattern through the pharmacy's error process so the scanner or the workflow is fixed before a mismatch is dispensed. Waiting for harm, skipping the report because the bottles are curved, or continuing to override leaves that gap in place.",
+    "distractorExplanations": {
+      "a": "Waiting until a patient receives the wrong drug discards the warning the override log already shows and lets the same bypass continue.",
+      "b": "Curved bottles explain why the scanner failed. They do not make the override pattern safe to leave unreported, and the bypass can still let a wrong NDC through.",
+      "d": "Continuing to override a mismatch alert leaves the failed scan in the workflow, where a wrong NDC can pass through."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-204",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "After counting warfarin 5 mg tablets into a vial and scanning the stock bottle, a technician initials the fill log. The patient is at the register, and the pharmacist is still on a clinical call. What should the technician do with the bag?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Release the bag because the barcode scan and the count already match"
+      },
+      {
+        "id": "b",
+        "text": "Ask the patient to confirm the tablet imprint, then hand over the bag"
+      },
+      {
+        "id": "c",
+        "text": "Have a second technician sign the verification line and release the bag"
+      },
+      {
+        "id": "d",
+        "text": "Hold the bag for the pharmacist's final verification"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The technician's count, barcode scan, and initials prepare warfarin 5 mg for review. Final verification of the drug, strength, directions, and patient is the pharmacist's step, so the bag stays put while that call finishes. A second technician's signature, or the patient's look at the tablet, does not close the check.",
+    "distractorExplanations": {
+      "a": "A matching scan and an initialed count are preparation steps. They do not replace the pharmacist's final verification of warfarin 5 mg.",
+      "b": "The patient is not the final checker. Confirming a tablet imprint at the register does not verify the prescription.",
+      "c": "Another technician's signature on the verification line is not the pharmacist's final check, which is still required before release."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-205",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "Two adjacent bins in the IV room are labeled DOPamine and DOBUTamine, with different syllables in capitals. A technician reaches toward the dobutamine bin for a dopamine infusion. What should those capital letters make her do before she pulls a bag?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read the full name on the bin against the order"
+      },
+      {
+        "id": "b",
+        "text": "Treat dopamine and dobutamine as interchangeable infusions"
+      },
+      {
+        "id": "c",
+        "text": "Skip the barcode scan because the names were already styled"
+      },
+      {
+        "id": "d",
+        "text": "Accept the bin she reached, because the capitals confirm it"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tall-man lettering puts the unlike syllables of DOPamine and DOBUTamine in capitals so a reach into the neighboring bin is easier to stop. She should read the full name on the bin against the dopamine order before pulling a bag, then scan the barcode. The infusions are not interchangeable, the capitals do not replace the barcode scan, and they do not confirm the bin she reached.",
+    "distractorExplanations": {
+      "b": "Dopamine and dobutamine are different infusions. Similar names and adjacent bins do not make them interchangeable.",
+      "c": "Tall-man lettering is an added warning. It does not replace reading the full name or scanning the barcode on the bag.",
+      "d": "The capitals on DOPamine and DOBUTamine are a cue to read the full name against the order. They do not confirm that the dobutamine bin she reached is the right product."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-206",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A prescription reads methotrexate 2.5 mg tablets, take 6 tablets by mouth once weekly. The directions a technician typed say to take 6 tablets every day. Before this high-alert order is verified, what is the danger in the typed directions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 2.5 mg strength cannot be used when the dose is given weekly"
+      },
+      {
+        "id": "b",
+        "text": "Six tablets every day can cause severe toxicity"
+      },
+      {
+        "id": "c",
+        "text": "Weekly methotrexate should be entered with the directions left blank"
+      },
+      {
+        "id": "d",
+        "text": "The typed daily sig is safer because patients are less likely to forget a dose"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Oral methotrexate is an ISMP high-alert medication because taking a weekly dose every day has caused severe toxicity. This order is methotrexate 2.5 mg tablets, 6 tablets once weekly. Directions to take 6 tablets every day would repeat that weekly quantity each day. The 2.5 mg strength fits the order; blank directions or a daily sig would not make the typing safe.",
+    "distractorExplanations": {
+      "a": "Methotrexate 2.5 mg tablets are a usual strength for low-dose weekly therapy. The hazard is the daily direction, not the 2.5 mg tablet.",
+      "c": "Leaving the directions blank does not protect the patient. The sig has to say that the 6 tablets are taken once weekly.",
+      "d": "A daily sig is not safer here. Taking those 6 tablets every day, instead of once weekly, is what leads to severe toxicity."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-207",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A patient calls from home and says the bottle he picked up contains cyclobenzaprine instead of cyproheptadine. He noticed the tablet name before taking any and is bringing the bottle back. What should the technician do about reporting?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip the report because the patient did not swallow a tablet"
+      },
+      {
+        "id": "b",
+        "text": "File an adverse-reaction report for cyproheptadine instead of a dispensing error"
+      },
+      {
+        "id": "c",
+        "text": "File a report because the wrong drug was dispensed"
+      },
+      {
+        "id": "d",
+        "text": "File the returned bottle with the hard copy and skip a separate error report"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Dispensing cyclobenzaprine instead of cyproheptadine is a medication error once the wrong bottle leaves the pharmacy, even when the patient swallows nothing. The technician tells the pharmacist and files the pharmacy's error report so the selection cause is reviewed. Skipping that report, classifying the event as an adverse reaction, or filing only the bottle with the hard copy leaves the mix-up unexamined.",
+    "distractorExplanations": {
+      "a": "The wrong drug was dispensed to the patient, so this is a medication error even though no tablet was swallowed and the bottle is coming back.",
+      "b": "An adverse reaction is harm from a drug used as intended. He swallowed nothing, and cyclobenzaprine was in the bottle instead of cyproheptadine, so this is a dispensing error.",
+      "d": "Keeping the returned bottle with the hard copy preserves the evidence. It does not replace the error report for dispensing cyclobenzaprine instead of cyproheptadine."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-208",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A hospital technician has compounded a heparin infusion, and a second technician has matched the label to the worksheet. A nurse is waiting at the window to carry the bag to the unit. What must still occur before the bag leaves the pharmacy?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The nurse's signature on the pickup log replaces pharmacist verification"
+      },
+      {
+        "id": "b",
+        "text": "The second technician's worksheet check is enough to release the bag"
+      },
+      {
+        "id": "c",
+        "text": "The compounding technician explains the rate to the nurse, then releases the bag"
+      },
+      {
+        "id": "d",
+        "text": "A pharmacist verifies the bag before release"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Heparin infusions are high-alert, and the pharmacist verifies the drug, diluent, and calculations before the bag is released. A second technician's match of the label to the worksheet can support that check, but it does not replace it. A nurse's pickup signature, or a rate explanation from the compounding technician, is not final verification. The technician does not counsel the nurse.",
+    "distractorExplanations": {
+      "a": "A nurse's signature on the pickup log documents that the bag was handed off. It does not verify the heparin infusion.",
+      "b": "A second technician's comparison of the label to the worksheet can support accuracy, but it is not the pharmacist's final verification.",
+      "c": "Explaining the infusion rate is counseling, which the compounding technician does not provide, and it does not authorize release of the bag."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-209",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "The dispensing screen suggests glipizide while the prescription image reads glyburide, and the shelf labels read glipiZIDE and glyBURIDE with the unlike syllables capitalized. What should the technician select?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Glyburide, matching the image and the glyBURIDE label"
+      },
+      {
+        "id": "b",
+        "text": "Glipizide, because the dispensing screen suggested it first"
+      },
+      {
+        "id": "c",
+        "text": "Either sulfonylurea, then change the label to fit the bottle that is open"
+      },
+      {
+        "id": "d",
+        "text": "Whichever name the patient says looks familiar from bottles at home"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Tall-man lettering on glipiZIDE and glyBURIDE marks the syllables that keep these sulfonylureas from being swapped. The prescription image reads glyburide, so the technician selects glyburide and the glyBURIDE label, not the screen's glipizide suggestion. The two drugs are not interchangeable, and the patient is not asked to choose the product.",
+    "distractorExplanations": {
+      "b": "A screen suggestion can offer a look-alike name. The prescription image reads glyburide, so accepting glipizide would select the wrong drug.",
+      "c": "Glipizide and glyburide are different sulfonylureas. Changing the label to match an open bottle does not correct the selection.",
+      "d": "The patient should not pick between look-alike names. The image specifies glyburide, and the glyBURIDE shelf label is the one that matches."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-210",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "After the pharmacist catches an insulin lispro pen pulled for an insulin glargine order, the technician files a near-miss report. A coworker says the report makes the staff look careless and should be withdrawn. Why should the report stay on file?",
+    "options": [
+      {
+        "id": "a",
+        "text": "So leaders can rank technicians by the number of reports each person files"
+      },
+      {
+        "id": "b",
+        "text": "So the cause of the pen mix-up can be fixed"
+      },
+      {
+        "id": "c",
+        "text": "So filing the report can stand in place of separating the pens"
+      },
+      {
+        "id": "d",
+        "text": "So the next insulin pen can be released without a second look"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Insulin lispro and insulin glargine are high-alert products, and a pen pulled for the wrong order is a near miss even though the pharmacist caught it. The report stays on file so the pharmacy can fix the cause, such as how the pens are stored or labeled. It is not a ranking of who files reports, a substitute for separating the pens, or a reason to check the next pen less carefully.",
+    "distractorExplanations": {
+      "a": "A near-miss report is for fixing the selection process. Ranking staff by how many reports they file discourages reporting and misses the pen mix-up.",
+      "c": "Filing the report does not replace a storage change. The report is how the team learns that insulin lispro and insulin glargine pens should be separated.",
+      "d": "A filed near miss does not loosen the check on the next insulin pen. The report stays so the lispro-for-glargine selection can be fixed."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-211",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A patient waiting at pickup says she is late for work and asks a technician to bag a new oxycodone prescription that is still sitting in the pharmacist review queue. The pharmacist has not opened the image or the filled vial. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bag the prescription now and note that the patient could not stay"
+      },
+      {
+        "id": "b",
+        "text": "Let her sign a statement that she waives the pharmacist's verification"
+      },
+      {
+        "id": "c",
+        "text": "Leave the prescription in the queue for the pharmacist"
+      },
+      {
+        "id": "d",
+        "text": "Counsel her about drowsiness, then hand her the vial so she can leave"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A prescription still in the pharmacist review queue has not had final verification. The technician leaves the oxycodone prescription there until the pharmacist checks the drug, strength, directions, and patient. A note about the wait, a signed waiver, or counseling by the technician does not move that step, and the technician does not counsel.",
+    "distractorExplanations": {
+      "a": "A note that the patient was in a hurry does not finish verification. The oxycodone prescription stays in the pharmacist's queue.",
+      "b": "The patient cannot waive the pharmacist's final verification by signing a statement at the pickup counter.",
+      "d": "Counseling about drowsiness is the pharmacist's role, and handing over an unverified vial skips the check the queue is waiting on."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-212",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "During a morning fill, a reconstituted cephalexin suspension is labeled discard after 03/18/2026. The dry-powder expiration had been 11/2027, and today is 03/21/2026. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove it from active stock and do not fill from it."
+      },
+      {
+        "id": "b",
+        "text": "Dispense it, because the dry powder was still dated 11/2027."
+      },
+      {
+        "id": "c",
+        "text": "Fill from it through the end of March, treating 03/18/2026 like a month-and-year date."
+      },
+      {
+        "id": "d",
+        "text": "Change the discard date on the label to 11/2027 and fill it."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The reconstituted bottle is labeled discard after 03/18/2026, and today is 03/21/2026, so the suspension is past the beyond-use date written on it. The 11/2027 date belonged to the dry powder before mixing and does not extend the mixed product. The technician removes it from active stock and does not fill from it.",
+    "distractorExplanations": {
+      "b": "The 11/2027 date was the dry powder's manufacturer expiration. After mixing, the discard date of 03/18/2026 controls, and that date has passed.",
+      "c": "03/18/2026 is a discard-after date, not a month-and-year expiration. On 03/21/2026 the suspension is already past that date, so the end of March does not keep it in use.",
+      "d": "Changing the discard date from 03/18/2026 to 11/2027 would extend the beyond-use date. The technician must not relabel it that way."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-213",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "At hospital admission, a patient hands over a home bottle of apixaban 5 mg and says last night's dose was taken. The admission orders list aspirin and metoprolol but do not list apixaban. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tell the patient to keep taking the home apixaban until a nurse says to stop."
+      },
+      {
+        "id": "b",
+        "text": "Record the apixaban on the home list and alert the pharmacist."
+      },
+      {
+        "id": "c",
+        "text": "Leave apixaban off the list, since the admission orders did not include it."
+      },
+      {
+        "id": "d",
+        "text": "Add apixaban as an active inpatient order so the next dose is not missed."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Admission reconciliation compares home therapy with the new orders. The home bottle is apixaban 5 mg, and the orders omit it, so the technician records that medication and alerts the pharmacist to the gap. The technician does not tell the patient to continue the dose and does not create an order.",
+    "distractorExplanations": {
+      "a": "Telling the patient to continue apixaban 5 mg is counseling and a clinical decision, which is outside the technician's role.",
+      "c": "Dropping a home medication because the orders omitted it hides the discrepancy that reconciliation is meant to catch.",
+      "d": "Creating an inpatient order is prescribing. The technician flags the missing apixaban 5 mg for the pharmacist rather than adding it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-214",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A supplier tote marked hazardous arrives with the regular wholesaler delivery and contains sealed vials of cyclophosphamide. The tote is dry and intact. Where should the technician unpack it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On the outpatient will-call counter, beside prescription bags already waiting for pickup."
+      },
+      {
+        "id": "b",
+        "text": "In the positive-pressure sterile compounding room, before the daily cleaning."
+      },
+      {
+        "id": "c",
+        "text": "In the designated hazardous-drug receiving area, wearing chemotherapy gloves."
+      },
+      {
+        "id": "d",
+        "text": "On the regular wholesaler bench with the other totes, because the tote is dry and intact."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cyclophosphamide is an antineoplastic hazardous drug. An intact tote is unpacked in the designated receiving area while the technician wears chemotherapy gloves, with the spill kit for that area kept within reach. A dry, intact package is not checked in at will-call, in a positive-pressure sterile room, or on the regular wholesaler bench.",
+    "distractorExplanations": {
+      "a": "The will-call counter is a patient-pickup area. Unpacking a hazardous tote there can contaminate other patients' bags.",
+      "b": "This confuses the positive-pressure sterile compounding room with hazardous-drug receiving. An intact cyclophosphamide tote is unpacked in a neutral or negative-pressure receiving area, not in that sterile room.",
+      "d": "A dry, intact tote does not turn cyclophosphamide into ordinary stock. It is still unpacked in the designated hazardous-drug receiving area with chemotherapy gloves."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-215",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "While labeling unit-dose packs, a technician repackages ondansetron tablets from a stock bottle that expires on 05/02/2026. The pharmacy's usual date for this kind of pack would read 08/15/2026. Which date belongs on the unit-dose label?",
+    "options": [
+      {
+        "id": "a",
+        "text": "08/15/2026, because that is the pharmacy's usual date for this kind of pack."
+      },
+      {
+        "id": "b",
+        "text": "08/15/2026 on the label, with 05/02/2026 written in the repackaging log."
+      },
+      {
+        "id": "c",
+        "text": "No calendar date, and a note telling the nurse to check the stock bottle."
+      },
+      {
+        "id": "d",
+        "text": "05/02/2026, since that manufacturer expiration is the earlier date."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A beyond-use date on a repackaged unit-dose pack cannot fall after the manufacturer expiration. The stock bottle expires on 05/02/2026, which is earlier than the usual pack date of 08/15/2026, so the label uses 05/02/2026. The date has to be on the pack itself.",
+    "distractorExplanations": {
+      "a": "08/15/2026 is later than the stock bottle's expiration of 05/02/2026, so the usual pack date cannot go on the label.",
+      "b": "Recording 05/02/2026 in the log does not let the label show 08/15/2026. The pack the nurse uses has to carry the earlier date.",
+      "c": "Leaving the date off the unit-dose pack forces the nurse to hunt for the stock bottle. The label itself must show 05/02/2026."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-216",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "While collecting a home medication history, a patient reports a daily fish-oil capsule and ibuprofen 200 mg tablets that are missing from the admission orders. What should the technician put on the reconciliation list?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Record the fish-oil capsule and the ibuprofen, then alert the pharmacist."
+      },
+      {
+        "id": "b",
+        "text": "Neither product, because the admission orders did not include them."
+      },
+      {
+        "id": "c",
+        "text": "The ibuprofen tablets, leaving off the fish-oil capsule as a food supplement."
+      },
+      {
+        "id": "d",
+        "text": "A note that the patient can buy both products again after going home."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The home list includes nonprescription products the patient is taking now, here ibuprofen 200 mg and a fish-oil capsule, even though the admission orders left them off. The technician records both and flags them so the pharmacist can judge the effect on therapy. Dropping them, or postponing them to a later purchase, hides current use.",
+    "distractorExplanations": {
+      "b": "Admission orders are not the full home list. Reconciliation has to capture the ibuprofen 200 mg and the fish oil the patient is actually taking.",
+      "c": "A fish-oil capsule is part of the home list along with the ibuprofen 200 mg. Leaving the supplement off can hide a problem the pharmacist needs to see.",
+      "d": "A note about buying products later does not document current use. The technician records what the patient takes now and flags the pharmacist."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-217",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "At discharge pickup, the hospital medication list shows carvedilol 12.5 mg twice daily. The home bottle the patient brought shows carvedilol 6.25 mg twice daily. How should the technician handle the difference?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tell the patient to discard the 6.25 mg bottle and start the 12.5 mg tablets."
+      },
+      {
+        "id": "b",
+        "text": "Document both strengths and ask the pharmacist to reconcile them."
+      },
+      {
+        "id": "c",
+        "text": "Replace the profile dose with 12.5 mg and do not involve the pharmacist."
+      },
+      {
+        "id": "d",
+        "text": "Dispense whichever carvedilol strength is on the shelf so the patient can leave."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Discharge reconciliation has to account for a dose difference. The hospital list says carvedilol 12.5 mg and the home bottle says 6.25 mg, so the technician documents both strengths and brings the mismatch to the pharmacist. Telling the patient which bottle to discard, or silently changing the profile, decides therapy the technician does not decide.",
+    "distractorExplanations": {
+      "a": "Advising the patient to discard the 6.25 mg bottle and start 12.5 mg is counseling, not a technician task.",
+      "c": "Overwriting the profile with 12.5 mg and skipping the pharmacist hides the 6.25 mg home dose that still needs review.",
+      "d": "The strength on the shelf does not choose between 12.5 mg and 6.25 mg. The discrepancy is reconciled before a bottle is selected."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-218",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A wholesaler carton of etoposide capsules is dented and its tape is split, but no powder is visible. The other cartons in the delivery are intact and are not hazardous. What should the technician do with the etoposide carton?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Open it beside the non-hazardous cartons and shelve any containers that look intact."
+      },
+      {
+        "id": "b",
+        "text": "Move the dented carton into regular storage so the shipment stays complete."
+      },
+      {
+        "id": "c",
+        "text": "Leave it unopened, separate it from the other stock, and notify the pharmacist."
+      },
+      {
+        "id": "d",
+        "text": "Open it in the negative-pressure hazardous-drug room and place any dry capsules into stock."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A dented, split carton of etoposide, an antineoplastic hazardous drug, is not ordinary check-in even though no powder is showing. The technician leaves it unopened, keeps it away from the intact non-hazardous cartons, and notifies the pharmacist, who directs the next handling step. It is not opened on the regular line or opened so dry capsules can be put into stock.",
+    "distractorExplanations": {
+      "a": "Opening a damaged hazardous carton beside ordinary stock and shelving bottles that look intact can spread residue and puts a suspect product into use.",
+      "b": "Moving the dented carton into regular storage to keep the shipment complete skips the hold a compromised hazardous package needs.",
+      "d": "The negative-pressure room is for hazardous-drug storage and compounding, not for opening a dented carton and stocking capsules. The carton stays unopened and the pharmacist is notified."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-219",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "During a unit transfer, the departing unit lists enoxaparin 40 mg each evening, and the receiving unit's orders list enoxaparin 40 mg each morning. What should the technician do with those two entries?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Delete the evening entry, because the new unit's morning time replaces it."
+      },
+      {
+        "id": "b",
+        "text": "Enter the morning 40 mg dose and the evening 40 mg dose together so coverage is not lost."
+      },
+      {
+        "id": "c",
+        "text": "Ask the patient which time is easier and keep the time the patient prefers."
+      },
+      {
+        "id": "d",
+        "text": "Flag both entries for the pharmacist before a dose is given."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Transfer reconciliation compares the departing list with the new orders. Enoxaparin 40 mg is listed each evening and each morning, which may be one order with a time change or two doses. The technician flags both entries for the pharmacist before either is given, and does not cancel, stack, or let the patient pick the schedule.",
+    "distractorExplanations": {
+      "a": "Deleting the evening 40 mg entry assumes the morning time fully replaces it. That clinical call belongs to the pharmacist, not the technician.",
+      "b": "Entering both the morning and the evening 40 mg doses could give the patient two doses. The technician must not stack them.",
+      "c": "Asking the patient to pick a convenient time leaves the 40 mg conflict unresolved and is not medication reconciliation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-220",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "A technician reaches for sealed losartan 50 mg bottles and finds one dated 04/03/2026 and another dated 04/03/2027. Today is 05/01/2026. Which bottle should be used for the fill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 04/03/2027 bottle, and remove the 04/03/2026 bottle from the shelf."
+      },
+      {
+        "id": "b",
+        "text": "The 04/03/2026 bottle, so the older sealed stock is used before the newer one."
+      },
+      {
+        "id": "c",
+        "text": "Either sealed bottle, because a 2026 date and a 2027 date can both be filled."
+      },
+      {
+        "id": "d",
+        "text": "The 04/03/2026 bottle, because an unbroken seal keeps those tablets usable."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Today is 05/01/2026, so the bottle dated 04/03/2026 is past its expiration and cannot be dispensed. The bottle dated 04/03/2027 is still in date and is the one to use. The expired bottle comes off the active shelf. Older-first rotation does not keep an expired bottle in use, and a sealed cap does not extend 04/03/2026.",
+    "distractorExplanations": {
+      "b": "Older-first rotation applies to in-date stock. On 05/01/2026 the 04/03/2026 bottle is already expired, so it is not the bottle to use.",
+      "c": "A year of 2026 does not keep the bottle in date. 04/03/2026 is before today, 05/01/2026, while 04/03/2027 is still usable.",
+      "d": "An unbroken seal does not extend a printed expiration. The 04/03/2026 bottle is expired on 05/01/2026 regardless of the seal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-patient-safety-221",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "patient-safety",
+    "prompt": "After an intact shipment of cisplatin vials is unpacked in the receiving area, where should the technician take the vials before any doses are prepared?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Onto the regular alphabetical shelf, mixed with the non-hazardous injections."
+      },
+      {
+        "id": "b",
+        "text": "To the segregated negative-pressure room used for hazardous drugs."
+      },
+      {
+        "id": "c",
+        "text": "Leave them on the receiving counter until the first cisplatin dose is needed."
+      },
+      {
+        "id": "d",
+        "text": "To the positive-pressure sterile buffer room, beside the plain intravenous bags."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Cisplatin is an antineoplastic hazardous drug that will be manipulated when intravenous doses are prepared. Right after the intact shipment is unpacked, the vials go to segregated negative-pressure hazardous-drug storage. They do not stay on the receiving counter, go onto the regular shelf, or go into the positive-pressure sterile buffer room.",
+    "distractorExplanations": {
+      "a": "Alphabetical storage with non-hazardous injections mixes cisplatin into ordinary stock after receiving.",
+      "c": "Unpacking is not finished when the vials stay on the receiving counter. After an intact cisplatin shipment is unpacked, the vials go to segregated negative-pressure storage before any dose is prepared.",
+      "d": "This stores cisplatin, which will be manipulated for intravenous doses, in positive pressure beside non-hazardous bags. That shipment belongs in segregated negative-pressure hazardous-drug storage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
     "id": "ptcb-pharmacy-technician-mock-161",
     "examSlug": "ptcb-pharmacy-technician-mock",
     "topicId": "order-entry",
@@ -5938,5 +8248,665 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item (Tier A bank expansion 2026-10-15)."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-201",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "At the counter, a technician enters atorvastatin with the sig 1 tablet by mouth at bedtime and a dispensed quantity of 90 tablets. What days' supply should be submitted on the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "90 days"
+      },
+      {
+        "id": "b",
+        "text": "30 days, using a default one-month supply"
+      },
+      {
+        "id": "c",
+        "text": "45 days, dividing the 90 tablets by 2"
+      },
+      {
+        "id": "d",
+        "text": "180 days, multiplying the 90 tablets by 2"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The bedtime sig uses 1 tablet per day. Days' supply is the dispensed quantity divided by that daily amount: 90 / 1 = 90 days.",
+    "distractorExplanations": {
+      "b": "A default 30-day month ignores the 90 tablets dispensed and the sig of 1 tablet per day.",
+      "c": "Dividing 90 by 2 gives 45, but the patient takes 1 tablet daily, so 90 / 1 = 90 days.",
+      "d": "Multiplying 90 by 2 gives 180. Bedtime dosing here is 1 tablet per day, not 2."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-202",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A prescriber's cephalexin order is dropped off at the counter: 1 capsule by mouth 4 times daily for 7 days. Which quantity should the technician enter to fill that course?",
+    "options": [
+      {
+        "id": "a",
+        "text": "7 capsules, counting 1 capsule for each of the 7 days"
+      },
+      {
+        "id": "b",
+        "text": "28 capsules"
+      },
+      {
+        "id": "c",
+        "text": "21 capsules, using 3 doses a day across 7 days"
+      },
+      {
+        "id": "d",
+        "text": "14 capsules, using 2 doses a day across 7 days"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Each day uses 1 capsule taken 4 times, and the course lasts 7 days. The quantity to enter is 1 x 4 x 7 = 28 capsules.",
+    "distractorExplanations": {
+      "a": "7 capsules uses only the 7 days and drops the 4 daily doses, so it misses 1 x 4 x 7.",
+      "c": "21 capsules uses 3 doses a day, not the written 4. The product is 1 x 4 x 7 = 28.",
+      "d": "14 capsules uses 2 doses a day. Four times daily for 7 days is 1 x 4 x 7 = 28 capsules."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-203",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A patient at the pickup window asks what the sig ii tabs po qam means before leaving with a new bottle. Which direction matches that sig?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take 2 tablets by mouth at bedtime each night."
+      },
+      {
+        "id": "b",
+        "text": "Take 1 tablet by mouth every morning."
+      },
+      {
+        "id": "c",
+        "text": "Take 2 tablets by mouth every morning."
+      },
+      {
+        "id": "d",
+        "text": "Take 2 tablets by mouth every 12 hours, including overnight."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In this sig, ii means 2 tablets, po means by mouth, and qam means every morning. The label should say to take 2 tablets by mouth every morning.",
+    "distractorExplanations": {
+      "a": "Bedtime is qhs, not qam. Qam places both tablets in the morning.",
+      "b": "One tablet would be sig i, not ii. This sig calls for 2 tablets.",
+      "d": "Every 12 hours is q12h. Qam is a morning dose, not an around-the-clock interval."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-204",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "Substitution is permitted on a brand-name prescription, and the generic product is in stock. The patient at the counter asks for the brand anyway. Which DAW code fits this request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "DAW 1, because the prescriber blocked substitution on the hard copy."
+      },
+      {
+        "id": "b",
+        "text": "DAW 0, because no one selected a particular product for this fill."
+      },
+      {
+        "id": "c",
+        "text": "DAW 4, because the generic product was unavailable on the shelf."
+      },
+      {
+        "id": "d",
+        "text": "DAW 2, patient requested the brand."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "DAW 2 is used when substitution is allowed and the patient requests the brand. DAW 1 is a prescriber's dispense-as-written order, and DAW 4 is a local generic stock-out. Neither of those fits, because the generic is in stock and the patient made the request.",
+    "distractorExplanations": {
+      "a": "DAW 1 means the prescriber did not allow substitution. This hard copy permits substitution.",
+      "b": "DAW 0 means no product selection was indicated. The patient did select the brand.",
+      "c": "DAW 4 is a generic that is not in stock. The stem says the generic is in stock."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-205",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A losartan claim rejects at the counter. The plan pays a refill after 75% of the last days' supply has elapsed, and the profile shows a 30-day supply sold 18 days ago. Which rejection do these facts support?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refill too soon: 18 days is under 75% of 30."
+      },
+      {
+        "id": "b",
+        "text": "Prior authorization, because the prescriber has not obtained plan approval."
+      },
+      {
+        "id": "c",
+        "text": "Product not covered, so this plan excludes the billed losartan product."
+      },
+      {
+        "id": "d",
+        "text": "No refills remain, so the plan closed the prescription after the last sale."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The plan's stated rule is 75% of the last days' supply. Convert 75% to 0.75 and multiply by the 30-day supply: 0.75 x 30 = 22.5 days. The new claim is 18 days after the last sale, and 18 is less than 22.5, so the facts support refill too soon.",
+    "distractorExplanations": {
+      "b": "Nothing in the profile says the plan wants prescriber approval. The elapsed-day math is a refill-too-soon problem.",
+      "c": "Product not covered is a formulary rejection. These facts compare 18 days with 75% of 30.",
+      "d": "The stem does not say the refills are exhausted. It gives a 30-day supply sold 18 days ago."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-206",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "While billing a new duloxetine prescription, the screen returns the rejection prior authorization required. The patient at the counter asks what that message means. What is the accurate reply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The refill is too soon, so the last bottle has to be used up first."
+      },
+      {
+        "id": "b",
+        "text": "The plan will not cover it until the prescriber obtains approval."
+      },
+      {
+        "id": "c",
+        "text": "The product is not covered, so a different drug must be chosen today."
+      },
+      {
+        "id": "d",
+        "text": "The days' supply was entered too high, so the same product should be rebilled for fewer days."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Prior authorization required means the plan will not pay for the prescription until the prescriber obtains approval. It is a coverage hold, not a refill-too-soon reject and not a statement that the product is absent from the formulary.",
+    "distractorExplanations": {
+      "a": "Refill too soon is a different rejection about the timing of the last fill. This screen says prior authorization.",
+      "c": "Product not covered means the plan excludes that product. Prior authorization means the plan may cover it after approval.",
+      "d": "The message does not say the days' supply is wrong. Changing the day count does not create an approval."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-207",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A claim for brand Synthroid rejects with the message product not covered. Substitution is permitted, and the patient is waiting at the counter. What is the appropriate technician step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rebill the claim as refill too soon and ask the patient to come back later."
+      },
+      {
+        "id": "b",
+        "text": "Type an approved prior authorization and send the same brand product again."
+      },
+      {
+        "id": "c",
+        "text": "Alert the pharmacist that the billed product is not covered."
+      },
+      {
+        "id": "d",
+        "text": "Change the billed drug to generic levothyroxine without the pharmacist."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Product not covered means the plan refused the product that was billed. The technician should alert the pharmacist, who decides whether a permitted substitution is appropriate. Relabeling the reject or changing the drug alone does not fix the claim.",
+    "distractorExplanations": {
+      "a": "Refill too soon is a timing rejection. This screen says the product is not covered.",
+      "b": "No prior-authorization approval is stated, and the message is not a request for one.",
+      "d": "A technician does not change the billed drug without the pharmacist, even when substitution is permitted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-208",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "During intake, the hard copy authorizes 5 refills beyond the original fill. The original fill and 3 of those refills have already been sold. How many refills remain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "3 refills, equal to the refills already sold"
+      },
+      {
+        "id": "b",
+        "text": "5 refills, because the written authorization does not change"
+      },
+      {
+        "id": "c",
+        "text": "6 refills, adding 1 original fill onto the 5"
+      },
+      {
+        "id": "d",
+        "text": "2 refills"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The hard copy authorizes 5 refills beyond the original fill, and 3 of those refills have been sold. Refills remaining are 5 - 3 = 2. The original fill is not one of the 5 refills.",
+    "distractorExplanations": {
+      "a": "3 is the number already sold, not the number left. Subtract: 5 - 3 = 2.",
+      "b": "5 is the original refill authorization. After 3 refill sales, 5 - 3 = 2 remain.",
+      "c": "Adding the original fill to 5 counts a fill the stem placed outside the refill count."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-209",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A parent picks up cephalexin suspension with the sig 10 mL by mouth 2 times daily. The pharmacy dispenses a 200 mL bottle. What days' supply should be entered?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 days"
+      },
+      {
+        "id": "b",
+        "text": "20 days, from 200 mL divided by one 10 mL dose"
+      },
+      {
+        "id": "c",
+        "text": "40 days, from 10 mL times 2 times 2"
+      },
+      {
+        "id": "d",
+        "text": "5 days, from 200 mL divided by 40 mL per day"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The sig uses 10 mL, 2 times daily, so the daily volume is 10 x 2 = 20 mL. The 200 mL bottle lasts 200 / 20 = 10 days.",
+    "distractorExplanations": {
+      "b": "Dividing 200 mL by one 10 mL dose ignores the second daily dose. Daily use is 10 x 2 = 20 mL, and 200 / 20 = 10.",
+      "c": "Multiplying 10 x 2 x 2 gives 40 and never divides the 200 mL bottle by the daily volume.",
+      "d": "40 mL per day is twice the real daily volume. The sig is 10 x 2 = 20 mL per day, and 200 / 20 = 10 days."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-210",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "Using a 24-hour day, an order at the counter reads ibuprofen, 1 tablet by mouth every 8 hours for 10 days. What quantity should be dispensed for that course?",
+    "options": [
+      {
+        "id": "a",
+        "text": "10 tablets, counting 1 tablet for each of the 10 days"
+      },
+      {
+        "id": "b",
+        "text": "30 tablets"
+      },
+      {
+        "id": "c",
+        "text": "80 tablets, multiplying the 8-hour interval by the 10 days"
+      },
+      {
+        "id": "d",
+        "text": "24 tablets, using the hours in the day as the tablet count"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Divide the 24-hour day by the every-8-hour interval: 24 / 8 = 3 doses per day. Each dose is 1 tablet, and the course is 10 days, so 1 x 3 x 10 = 30 tablets.",
+    "distractorExplanations": {
+      "a": "10 tablets keeps the 10 days and drops the interval. Every 8 hours in a 24-hour day is 3 tablets a day, not 1.",
+      "c": "Multiplying 8 hours by 10 days gives 80, which is not a dose count. Dose count is 24 / 8 = 3, then 3 x 10 = 30.",
+      "d": "24 is the length of the day in the stem, not the quantity. The doses per day are 24 / 8 = 3, then 3 x 10 = 30."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-211",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A new prescription at intake has the sig 1 supp pr qhs. The patient asks how the label should read before the pharmacist checks the order. Which wording is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Swallow 1 suppository by mouth at bedtime each night."
+      },
+      {
+        "id": "b",
+        "text": "Insert 1 suppository into the rectum every morning."
+      },
+      {
+        "id": "c",
+        "text": "Insert 1 suppository rectally at bedtime."
+      },
+      {
+        "id": "d",
+        "text": "Insert 1 suppository into the rectum four times during the day."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Supp means suppository, pr means rectally, and qhs means at bedtime. The patient should insert 1 suppository rectally at bedtime.",
+    "distractorExplanations": {
+      "a": "By mouth is po. The sig says pr, so the suppository is inserted rectally, not swallowed.",
+      "b": "Every morning is qam. Qhs means at bedtime, so this 1-suppository dose is a bedtime dose.",
+      "d": "Four times during the day is qid. Qhs is one bedtime dose of 1 suppository."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-212",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "Substitution is allowed, but the generic is not on the shelf today. The pharmacist dispenses the brand product for this counter fill. Which DAW code should the claim use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "DAW 1, because the prescriber prohibited a generic on this prescription."
+      },
+      {
+        "id": "b",
+        "text": "DAW 2, because the patient at the counter requested the brand by name."
+      },
+      {
+        "id": "c",
+        "text": "DAW 8, because manufacturers have no generic available in the marketplace."
+      },
+      {
+        "id": "d",
+        "text": "DAW 4, generic not in stock."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "DAW 4 means substitution was allowed, but the generic was not in stock, so the brand was dispensed for this fill. DAW 8 is reserved for a generic the marketplace cannot supply, which is a different situation from an empty shelf today.",
+    "distractorExplanations": {
+      "a": "DAW 1 is a prescriber block on substitution. This prescription allows substitution.",
+      "b": "DAW 2 is a patient request for the brand. Here the brand is used because the generic is not on the shelf.",
+      "c": "DAW 8 means the generic is unavailable in the marketplace. A one-day shelf stock-out is DAW 4."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-213",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "At the pickup counter, a plan accepts a refill after 80% of the days' supply has elapsed. The last paid fill was a 30-day supply. How many days after that sale is the earliest paid refill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "24 days"
+      },
+      {
+        "id": "b",
+        "text": "30 days, waiting out the whole supply from the last sale"
+      },
+      {
+        "id": "c",
+        "text": "6 days, using the leftover portion of the 30-day supply"
+      },
+      {
+        "id": "d",
+        "text": "54 days, adding an extra 24 days on top of the 30"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The plan stated that 80% of the days' supply must elapse. Convert 80% to 0.80 and multiply by the 30-day supply: 0.80 x 30 = 24 days. The earliest paid refill is 24 days after that sale.",
+    "distractorExplanations": {
+      "b": "30 days waits for the entire supply. The plan's stated threshold is 80% of 30, which is 24 days.",
+      "c": "6 days is the unelapsed part, 30 - 24 = 6. The plan wants 80% elapsed, and 0.80 x 30 = 24 days.",
+      "d": "Adding 24 to 30 double-counts the supply. The earliest paid refill is 24 days after the sale, not 54."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-214",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A patient is at the counter when a new apixaban claim rejects for prior authorization. No approval is on file. What should the technician do next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Override the rejection and charge the copay from the patient's last fill."
+      },
+      {
+        "id": "b",
+        "text": "Tell the pharmacist the plan needs prescriber approval."
+      },
+      {
+        "id": "c",
+        "text": "Substitute a different anticoagulant and bill that product to the plan today."
+      },
+      {
+        "id": "d",
+        "text": "Recode the rejection as product not covered and cancel the prescription."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The screen says prior authorization, and no approval is on file. The technician should tell the pharmacist so the prescriber can be asked for approval before the plan will pay. A different anticoagulant is a new therapy decision, not a billing code the technician may swap.",
+    "distractorExplanations": {
+      "a": "There is no approval on file to apply, and a prior-authorization rejection is not cleared by reusing an old copay.",
+      "c": "Substituting another anticoagulant changes therapy. The rejection asks for prescriber approval of the drug that was billed.",
+      "d": "Product not covered is a different message. This claim rejected for prior authorization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-215",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A rosuvastatin claim at the counter shows the text product/service not covered. The profile still lists 2 refills remaining, and the last fill was 28 days ago on a 30-day supply. What should the technician tell the patient about this rejection?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is refill too soon, because 28 days have not reached the full 30-day supply."
+      },
+      {
+        "id": "b",
+        "text": "The prescriber must still approve it, even though 2 refills remain on the profile."
+      },
+      {
+        "id": "c",
+        "text": "The plan will not pay for the product that was billed."
+      },
+      {
+        "id": "d",
+        "text": "No refills remain, because the 30-day supply ended the prescription."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The rejection text says the product is not covered, so the patient should hear that the plan will not pay for the product that was billed. The profile still shows 2 refills, and the last fill was 28 days ago on a 30-day supply. Those facts do not change this message into refill too soon or prior authorization.",
+    "distractorExplanations": {
+      "a": "Refill too soon is not the text on the screen. Being 28 days into a 30-day supply does not rename a product-not-covered rejection.",
+      "b": "Prior authorization is a different rejection. This screen says the product is not covered, and 2 refills are still listed.",
+      "d": "The profile lists 2 refills remaining. A 30-day supply does not erase those refills."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-216",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "While entering refill history at the counter, the image shows 2 refills beyond the original fill. Today that original fill is sold, and 0 refills have been dispensed. How many refills remain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "0 refills, because today's sale uses up the authorization"
+      },
+      {
+        "id": "b",
+        "text": "1 refill, subtracting today's sale from the 2 refills"
+      },
+      {
+        "id": "c",
+        "text": "3 refills, adding today's original fill to the 2 refills"
+      },
+      {
+        "id": "d",
+        "text": "2 refills"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The image authorizes 2 refills beyond the original fill, and 0 of those refills have been dispensed. Today's sale is the original fill, so the refills remaining are 2 - 0 = 2.",
+    "distractorExplanations": {
+      "a": "Today's sale is the original fill, not a refill. With 0 refills dispensed, 2 - 0 = 2 remain.",
+      "b": "Subtracting 1 treats the original fill as a refill. The stem says 0 refills have been dispensed, so 2 remain.",
+      "c": "Adding the original fill to the 2 refills invents a third refill the image does not authorize."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-217",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A fluticasone inhaler brought to the counter contains 120 actuations. The sig is 2 puffs by mouth 2 times daily. What days' supply should be billed for this inhaler?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 days"
+      },
+      {
+        "id": "b",
+        "text": "60 days, from 120 actuations divided by 2 puffs"
+      },
+      {
+        "id": "c",
+        "text": "120 days, counting 1 day for each actuation"
+      },
+      {
+        "id": "d",
+        "text": "15 days, from 120 actuations divided by 8 puffs"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Daily use is 2 puffs taken 2 times, which is 2 x 2 = 4 actuations per day. The inhaler contains 120 actuations, so the days' supply is 120 / 4 = 30 days.",
+    "distractorExplanations": {
+      "b": "Dividing 120 by 2 uses only one of the 2's in the sig. Daily use is 2 x 2 = 4, and 120 / 4 = 30 days.",
+      "c": "Counting 1 day per actuation ignores the sig. The patient uses 4 actuations a day, so 120 / 4 = 30 days.",
+      "d": "Eight puffs a day adds an extra factor of 2. The sig is 2 x 2 = 4 per day, and 120 / 4 = 30 days."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-218",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "A counter prescription for metformin reads take 2 tablets by mouth every morning for 30 days. Which quantity should be entered so the course matches the sig?",
+    "options": [
+      {
+        "id": "a",
+        "text": "30 tablets, counting 1 tablet for each of the 30 days"
+      },
+      {
+        "id": "b",
+        "text": "60 tablets"
+      },
+      {
+        "id": "c",
+        "text": "15 tablets, dividing the 30 days by 2 tablets"
+      },
+      {
+        "id": "d",
+        "text": "90 tablets, using 3 tablets each morning for 30 days"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The sig is 2 tablets every morning for 30 days. The quantity that matches the course is 2 x 30 = 60 tablets.",
+    "distractorExplanations": {
+      "a": "30 tablets would be 1 tablet a day. The sig says 2 tablets each morning, so 2 x 30 = 60.",
+      "c": "Dividing 30 by 2 reverses the calculation. The patient takes 2 tablets on each of 30 days: 2 x 30 = 60.",
+      "d": "Three tablets each morning is not the sig. Two tablets for 30 days is 2 x 30 = 60 tablets."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-219",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "At verification, an eye-drop sig reads 3 gtts OS bid. Which patient direction should the printed label carry?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Instill 3 drops in the right eye twice daily."
+      },
+      {
+        "id": "b",
+        "text": "Instill 3 drops in both eyes twice daily."
+      },
+      {
+        "id": "c",
+        "text": "Instill 3 drops in the left eye twice daily."
+      },
+      {
+        "id": "d",
+        "text": "Place 3 drops in the left ear three times throughout the day."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The sig 3 gtts OS bid means 3 drops in the left eye 2 times daily. OS is the left eye. OD would be the right eye, OU both eyes, and AS the left ear.",
+    "distractorExplanations": {
+      "a": "The right eye is OD. OS is the left eye, so these 3 drops do not go in the right eye.",
+      "b": "Both eyes would be OU. OS names the left eye only, still at 3 drops 2 times daily.",
+      "d": "The left ear is AS, and three times daily is tid. This sig is OS bid: left eye, 2 times daily, 3 drops."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "ptcb-pharmacy-technician-mock-order-entry-220",
+    "examSlug": "ptcb-pharmacy-technician-mock",
+    "topicId": "order-entry",
+    "prompt": "At the counter, 30 of the 90 prescribed sertraline tablets are in stock. The sig is 1 tablet by mouth daily, and the patient takes those 30 today. What days' supply is entered for today's partial fill?",
+    "options": [
+      {
+        "id": "a",
+        "text": "90 days, matching the full written quantity"
+      },
+      {
+        "id": "b",
+        "text": "60 days, billing the tablets that are still on order"
+      },
+      {
+        "id": "c",
+        "text": "120 days, adding the 90 written to the 30 dispensed"
+      },
+      {
+        "id": "d",
+        "text": "30 days"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Days' supply follows the tablets actually dispensed. Today's partial is 30 tablets at 1 tablet per day, so 30 / 1 = 30 days. The written quantity is 90, and 90 - 30 = 60 tablets are still outstanding, so those 60 are not today's supply.",
+    "distractorExplanations": {
+      "a": "90 days uses the written quantity. Today's sale is 30 tablets at 1 tablet per day, which is 30 days.",
+      "b": "60 days is 90 - 30, the amount still on order. The amount leaving today is 30 tablets, so the supply is 30 / 1 = 30 days.",
+      "c": "Adding 90 and 30 gives 120 and bills tablets that were not combined into one fill. Today's quantity is 30."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   }
 ]

@@ -111,12 +111,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Official SIE: 80 items (75 scored + 5 unscored pretest), 105 minutes, passing score 70 on FINRA's equated scale. This 75-question diagnostic mirrors the scored portion with a UniPrep2Go readiness target of 70%. Each attempt draws 75 questions in FINRA's section mix (12 / 33 / 23 / 7) from a 150-question original bank, so Mock Pass retakes see new questions.",
+      "Official SIE: 80 items (75 scored + 5 unscored pretest), 105 minutes, passing score 70 on FINRA's equated scale. This 75-question diagnostic mirrors the scored portion with a UniPrep2Go readiness target of 70%. Each attempt draws 75 questions in FINRA's section mix (12 / 33 / 23 / 7) from a 250-question original bank, so Mock Pass retakes see new questions.",
     disclaimer: financeDisclaimer,
     description:
-      "A timed 75-question SIE diagnostic drawn from a 150-question bank, with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
+      "A timed 75-question SIE diagnostic drawn from a 250-question bank, with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
     examBody: "FINRA",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "sie-quick-diagnostic",
@@ -168,12 +168,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Topic-weighted 25-question diagnostic sampled from the same 150-question FINRA SIE outline bank as the full 75-question mock. Not a full-length exam simulation.",
+      "Topic-weighted 25-question diagnostic sampled from the same 250-question FINRA SIE outline bank as the full 75-question mock. Not a full-length exam simulation.",
     disclaimer: financeDisclaimer,
     description:
-      "A free 25-question SIE diagnostic (about 35 minutes) with topic-weighted scoring and a pass/no-pass readiness verdict — same outline bank as the full mock, built for candidates who want a fast gap check first.",
+      "A free 25-question SIE diagnostic (about 35 minutes) with topic-weighted scoring and a pass/no-pass readiness verdict — same 250-question outline bank as the full mock, built for candidates who want a fast gap check first.",
     examBody: "FINRA",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
     questionSourceNote:
       "Stratified sample from the UniPrep2Go SIE full-mock bank (same FINRA outline domains).",
   },
@@ -556,12 +556,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Official pass 70% (56/80 scored) per current ServSafe FAQ; our mock uses 75% as a UniPrep2Go readiness target (margin above the official standard). Older 2020 Examinee Handbook PDF still prints 75%. Each attempt draws 90 questions in the topic mix from a bank of 180 original items, so retakes see new questions.",
+      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Official pass 70% (56/80 scored) per current ServSafe FAQ; our mock uses 75% as a UniPrep2Go readiness target (margin above the official standard). Older 2020 Examinee Handbook PDF still prints 75%. Each attempt draws 90 questions in the topic mix from a bank of 270 original items, so retakes see new questions.",
     disclaimer: servSafeDisclaimer,
     description:
       "A timed 90-question ServSafe Manager mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official exam format.",
     examBody: "ServSafe / National Restaurant Association",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "ptcb-pharmacy-technician-mock",
@@ -613,12 +613,12 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the January 2026 PTCE outline: 90 questions (80 scored + 10 unscored pretest), 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled 1,400 — this mock scores all 90 items at a 70% diagnostic threshold. Each attempt draws 90 questions in the outline's domain mix from a bank of 180, so retakes see new questions. Pearson VUE in-person (online PTCE suspended Dec 2025). Compounding/alligation are not standalone 2026 knowledge areas.",
+      "Modeled on the January 2026 PTCE outline: 90 questions (80 scored + 10 unscored pretest), 110 minutes, domain weights (Medications 35%, Federal Requirements 18.75%, Patient Safety 23.75%, Order Entry 22.5%). Official PTCE pass is a scaled 1,400 — this mock scores all 90 items at a 70% diagnostic threshold. Each attempt draws 90 questions in the outline's domain mix from a bank of 270, so retakes see new questions. Pearson VUE in-person (online PTCE suspended Dec 2025). Compounding/alligation are not standalone 2026 knowledge areas.",
     disclaimer: ptcbDisclaimer,
     description:
       "A timed 90-question PTCB / PTCE mock with 2026 domain-weighted scoring, full question review, and a pass/no-pass readiness verdict before you drill the linked Anki deck.",
     examBody: "PTCB / PTCE",
-    lastUpdated: "2026-10-15",
+    lastUpdated: "2026-11-14",
   },
   {
     slug: "gmat-focus-readiness-check",

@@ -6,13 +6,14 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 ## In progress
 
-| Started | Slugs | Work | Status / blocker |
-|---|---|---|---|
-| 2026-11-14 | `sie-full-mock`, `ptcb-pharmacy-technician-mock`, `servsafe-manager-mock` | SIE 150→250 (session stays 75 / 105). PTCB and ServSafe Manager 180→270 (sessions stay 90). Decks stay as sold and are not rebuilt. | Writers running. Not merged. |
+None.
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-14 | `sie-full-mock` | `sie-exam-anki-deck` | audit 0 FAIL · 250 · keys 63/63/62/62 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt (300 / $9.99). `llms:export` | Session stays 75 / 105, pass 70, mix 12/33/23/7. Official SIE stays 80 items (75 scored + 5 pretest), 105 minutes, passing score 70. `sie-quick-diagnostic` stays 25 / 35 and draws from the same 250-question bank. |
+| 2026-11-14 | `ptcb-pharmacy-technician-mock` | `ptcb-pharmacy-technician-anki-deck` | audit 0 FAIL · 270 · keys 68/68/67/67 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt (300 / $9.99). `llms:export` | Session stays 90 / 110. Official PTCE stays 90 questions (80 scored + 10 pretest), 110 minutes, scaled 1,400. |
+| 2026-11-14 | `servsafe-manager-mock` | `servsafe-manager-anki-deck` | audit 0 FAIL · 270 · keys 68/68/67/67 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt (300 / $9.99). `llms:export` | Session stays 90 / 120. Official exam stays 90 questions (80 scored + 10 pilot), 120 minutes, pass 70% (56/80). 75% is ours. |
 | 2026-11-14 | `cfa-level-1-readiness-check` | `cfa-level-1-anki-deck` | audit 0 FAIL · 300 · keys 75/75/75/75 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt (348 / $19). Ops ready. `llms:export` | Session stays 60 / 90. Official exam stays 180 three-option questions in two 135-minute sessions. MPS unpublished. 70% is ours. |
 | 2026-11-14 | `cfa-level-2-readiness-check` | `cfa-level-2-anki-deck` | audit 0 FAIL · 250 · keys 63/63/62/62 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt (495 / $29). Ops ready. `llms:export` | Session stays 60 / 120. Official exam stays 88 item-set questions in 22 vignettes. |
 | 2026-11-14 | `series-7-readiness-check` | `series-7-anki-deck` | audit 0 FAIL · 250 · keys 63/63/62/62 · triage clean | Separate reviewers. Old keys kept. | Deck not rebuilt. Ops ready. `llms:export` | Session stays 60 / 90, pass 72. Official Series 7 Top-Off stays 130 (125 scored + 5 pretest), 3h45, passing score 72. |
