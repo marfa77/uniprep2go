@@ -641,6 +641,117 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       },
     ],
   },
+  "pmp-readiness-check": {
+    mockSlug: "pmp-readiness-check",
+    examLabel: "PMI PMP",
+    heading: "Free PMP practice options compared",
+    checkedDate: "2026-11-14",
+    lead:
+      "PMI’s exam-day page lists 180 questions in 240 minutes, with People 33%, Process 41%, and Business Environment 26%, plus two 10-minute breaks. UniPrep2Go is the shorter free diagnostic: 25 questions with no signup, then 51 timed questions. Not PMI material.",
+    rows: [
+      {
+        name: "UniPrep2Go PMP practice test",
+        href: "/mock-exams/pmp-readiness-check",
+        format: "25 free, no signup; full timed mock 51 questions / 70 minutes, all three domains must hit 70%",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic in the 33/41/26 mix. The 70% line is ours. The linked deck is the separate 346-card product.",
+      },
+      {
+        name: "PMAspirant — free PMP exam simulator",
+        href: "https://pmaspirant.com/free-pmp-exam-simulator",
+        format: "One 180-question simulator, split 60 / 74 / 46",
+        access: "Free on that page",
+        notes:
+          "Questions stay in a fixed order. The page dates the set 3 October 2026 and maps it to the 2026 outline weights.",
+      },
+      {
+        name: "PMI — PMP Practice Exam",
+        href: "https://www.pmi.org/shop/p-/elearning/project-management-professional-pmp-practice-exam-/el329",
+        format: "One 180-question exam in three timed sections, unlimited retakes",
+        access: "PMI product. Price was not on the page text",
+        notes:
+          "PMI’s product page says the simulation follows the exam outline and returns domain results plus explanations.",
+      },
+      {
+        name: "PMI — exam day",
+        href: "https://www.pmi.org/certifications/project-management-pmp",
+        format: "180 questions, 240 minutes, two 10-minute breaks",
+        access: "Up to three attempts in one year. Fee not on this page",
+        notes:
+          "People 33%, Process 41%, Business Environment 26%. The page does not publish a percent cut score or a scored-versus-pretest split.",
+      },
+    ],
+    sources: [
+      {
+        label: "PMI — PMP certification",
+        url: "https://www.pmi.org/certifications/project-management-pmp",
+      },
+      {
+        label: "PMI — PMP Practice Exam",
+        url: "https://www.pmi.org/shop/p-/elearning/project-management-professional-pmp-practice-exam-/el329",
+      },
+      {
+        label: "PMAspirant — free PMP exam simulator",
+        url: "https://pmaspirant.com/free-pmp-exam-simulator",
+      },
+    ],
+  },
+  "leed-green-associate-readiness-check": {
+    mockSlug: "leed-green-associate-readiness-check",
+    examLabel: "LEED Green Associate",
+    heading: "Free LEED Green Associate practice options compared",
+    checkedDate: "2026-11-14",
+    lead:
+      "USGBC’s exam-prep page lists 100 multiple-choice questions, 2 hours, and a passing score of 170 out of 200. UniPrep2Go is the shorter free diagnostic: 25 questions with no signup, then 60 timed questions. Not USGBC or GBCI material.",
+    rows: [
+      {
+        name: "UniPrep2Go LEED Green Associate practice test",
+        href: "/mock-exams/leed-green-associate-readiness-check",
+        format: "25 free, no signup; full timed mock 60 questions / 75 minutes from a 120-item bank",
+        access: "Free start; Mock Pass for retakes",
+        notes:
+          "Independent diagnostic. The 70% readiness target is ours, not 170 out of 200. The linked deck is the separate 120-card product.",
+      },
+      {
+        name: "Projectific — free LEED Green Associate questions",
+        href: "https://projectific.com/blogs/projectific-blog/free-leed-green-associate-practice-exam",
+        format: "Free questions on the page, with answers in the same article",
+        access: "Free to read",
+        notes:
+          "A question list, not a timed sitting. The page says it was updated 15 September 2026. It does not publish a clock or a question total.",
+      },
+      {
+        name: "USGBC — 2019 practice exam listing",
+        href: "https://www.usgbc.org/credentials/exam-preparation",
+        format: "Catalog item: 2019 Practice Exam, LEED Green Associate, 100 questions",
+        access: "Listed in the USGBC study catalog. Price was not on the page",
+        notes: "Named as a study-catalog product, not as a free public mock.",
+      },
+      {
+        name: "USGBC — LEED Green Associate exam",
+        href: "https://www.usgbc.org/credentials/exam-preparation",
+        format: "100 multiple-choice questions, 2 hours, passing score 170 out of 200",
+        access: "$250, or $200 for USGBC members, or $100 for students. No prerequisites",
+        notes:
+          "Prometric center or remote. The same page lists knowledge-domain counts that add to 85 and still cites LEED v4 references. It does not publish a scored-versus-pretest split.",
+      },
+    ],
+    sources: [
+      {
+        label: "USGBC — LEED exam prep",
+        url: "https://www.usgbc.org/credentials/exam-preparation",
+      },
+      {
+        label: "USGBC — LEED Green Associate",
+        url: "https://www.usgbc.org/credentials/leed-green-associate",
+      },
+      {
+        label: "Projectific — free LEED Green Associate questions",
+        url: "https://projectific.com/blogs/projectific-blog/free-leed-green-associate-practice-exam",
+      },
+    ],
+  },
 };
 
 export function getPracticeOptionsCompared(

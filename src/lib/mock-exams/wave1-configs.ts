@@ -299,11 +299,13 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "storage-distribution", label: "Storage, distribution & quality" },
     ]),
     officialSourceNote:
-      "Readiness check aligned to HSPA CRCST knowledge themes. Not an HSPA/IAHCSMM exam.",
+      "HSPA CRCST (2026 handbook; content outline revised November 2023): 125 scored multiple-choice questions plus 25 unscored pretest items, 3 hours, fee $140. The pass score is criterion-referenced and HSPA does not publish a number. Full certification also requires 400 hours of hands-on work. This UniPrep2Go check is 60 questions / 60 minutes, drawn from a 120-item bank, with a 70% readiness target that is ours. The four topics are a study split, not the seven outline sections. The linked deck is planned, not a live download. Not HSPA or IAHCSMM material.",
     description:
-      "60-question CRCST sterile processing readiness check (free 25-question version) with domain scoring.",
+      "60-question / 60-minute CRCST readiness check (free 25-question version) drawn from a 120-item bank. HSPA does not publish a numeric cut score.",
     examBody: "HSPA (IAHCSMM)",
-    questionSourceNote: "Original UniPrep2Go local bank for CRCST topics.",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions (30 per topic), expanded 2026-11-14; each timed attempt draws 60. Deck is planned, not a live download.",
+    lastUpdated: "2026-11-14",
   }),
   readinessConfig({
     slug: "nha-cmaa-readiness-check",

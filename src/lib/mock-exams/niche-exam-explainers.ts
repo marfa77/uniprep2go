@@ -959,13 +959,29 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "crcst-readiness-check": explainer({
     practiceTestName: "CRCST Practice Test",
     whatIsExam:
-      "The Certified Registered Central Service Technician (CRCST) credential from HSPA (formerly IAHCSMM) certifies sterile processing / central service technicians who clean, disinfect, sterilize, and store surgical instruments.",
-    administeredBy: "Healthcare Sterile Processing Association (HSPA)",
+      "The Certified Registered Central Service Technician (CRCST) credential from HSPA (formerly IAHCSMM) certifies sterile processing technicians who clean, assemble, sterilize, and store surgical instruments. The computer exam is 150 multiple-choice questions: 125 scored and 25 unscored pretest items, in 3 hours. The fee is $140. Full CRCST also requires 400 hours of hands-on experience. HSPA does not publish a numeric cut score.",
+    administeredBy: "Healthcare Sterile Processing Association (HSPA), delivered at Prometric",
+    officialFormat:
+      "150 multiple-choice questions on screen (125 scored + 25 unscored pretest), 3 hours. Fee $140 for the initial exam and for a retake. The pass decision is criterion-referenced; no numeric cut is published. Full certification requires 400 hours of hands-on experience. UniPrep2Go draws 60 questions in 60 minutes from a 120-item bank. The 70% readiness target is ours. The linked deck is planned, not a live download.",
+    whoFor:
+      "Sterile processing technicians preparing for the HSPA CRCST exam, including candidates logging the 400 hands-on hours.",
+    howToPrepare:
+      "Follow device instructions for use, then take the free UniPrep2Go CRCST readiness check and review the weak topic. The linked Anki deck is planned and is not a download yet.",
     examFaqs: [
       {
-        question: "What is the CRCST certification?",
+        question: "What is the CRCST exam format?",
         answer:
-          "CRCST certifies sterile processing technicians who manage the instrument reprocessing cycle in hospitals and surgery centers.",
+          "HSPA's CRCST exam is 150 multiple-choice questions: 125 scored and 25 unscored pretest items that are not marked as such. You have 3 hours. The fee is $140. The pass score is set by a criterion-referenced method and is not published as a percent or a raw number.",
+      },
+      {
+        question: "Does CRCST require work experience?",
+        answer:
+          "Full CRCST requires 400 hours of hands-on experience. A provisional path lets you submit those hours within 6 months of passing. The exam itself does not replace the hours.",
+      },
+      {
+        question: "Is this an official HSPA CRCST exam?",
+        answer:
+          "No. UniPrep2Go is an independent 60-question, 60-minute diagnostic drawn from a 120-item bank. The 70% readiness target is ours. It is not HSPA or IAHCSMM material, and the linked deck is planned rather than a live download.",
       },
     ],
     keywords: ["crcst practice test", "sterile processing practice test", "iahcsmm practice exam"],

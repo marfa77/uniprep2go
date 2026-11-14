@@ -118,7 +118,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Series 99 practice test free",
     mockSlug: "series-99-readiness-check",
     disambiguation:
-      "FINRA Series 99 (Operations Professional) readiness check — independent UniPrep2Go diagnostic, not FINRA exam material.",
+      "Official FINRA Series 99 is 50 scored + 5 pretest / 90 minutes / passing score 68 equated, fee $100, SIE corequisite. UniPrep2Go check is 120 questions / 120 minutes drawn from a 240-item bank (free 25-question version). The linked deck is a live 240-card Anki file. Not Series 7. Not FINRA material.",
   },
   {
     query: "ServSafe Manager practice test free",

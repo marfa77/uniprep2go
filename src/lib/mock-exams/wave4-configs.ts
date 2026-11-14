@@ -943,10 +943,13 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
       30,
     ),
     officialSourceNote:
-      "Mapped to FINRA Series 99 (Operations Professional) themes. Official Series 99: 50 scored questions / 90 minutes / scaled passing score 68, SIE corequisite. This UniPrep2Go check is 120 questions / 120 minutes / 70% readiness target. Independent prep — not an official exam.",
-    description: "120-question Series 99 readiness check (free 25-question version) with topic scoring.",
+      "FINRA Series 99 (Operations Professional): 50 scored questions plus 5 unscored pretest items, 1 hour 30 minutes, passing score 68 on an equated scale, fee $100, SIE corequisite. From 19 January 2027, retake waits are 15 days after a first or second failure and 60 days after a third. This UniPrep2Go check is 120 questions / 120 minutes, drawn from a 240-item bank, with a 70% readiness target that is ours. The four topics are a study split, not FINRA's two functions. Not Series 7. Not FINRA exam material.",
+    description:
+      "120-question / 120-minute Series 99 readiness check (free 25-question version) drawn from a 240-item bank.",
     examBody: "FINRA",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 4).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 240 questions (60 per topic), expanded 2026-11-14; each timed attempt draws 120.",
+    lastUpdated: "2026-11-14",
     searchAliases: ["Series 99", "Operations Professional"],
   }),
   nicheReadinessConfig({

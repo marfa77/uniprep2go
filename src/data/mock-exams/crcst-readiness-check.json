@@ -52,11 +52,11 @@
       },
       {
         "id": "d",
-        "text": "Lab coat, nitrile exam gloves, and safety glasses as used in the prep and pack area"
+        "text": "Lab coat, nitrile exam gloves, and safety glasses as used in the prep and pack work area"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Decontam is the dirtiest area—dress for splash/sharps hazards.",
+    "explanation": "Decontamination is the dirty side, so the technician wears a fluid-resistant gown, gloves, a mask with eye protection, and footwear that keeps splash off the skin. A cloth scrub top, sterile operating-room attire, and the lighter coat used in prep and pack do not cover that splash.",
     "distractorExplanations": {
       "a": "Omits eye/face protection and uses a non-fluid-resistant cloth top; decontam splash risk requires fluid-resistant attire and eye protection.",
       "c": "Sterile OR attire protects the patient, not the worker; decontam needs fluid-resistant, heavy-duty PPE, not sterile gloves and gowns.",
@@ -106,7 +106,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Flushing with tap water only, since brushes can scratch the inner channel"
+        "text": "Flushing with tap water, since brushes can scratch the inner channel wall"
       },
       {
         "id": "b",
@@ -122,9 +122,9 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Biofilm in lumens is a major failure point (e.g., endoscopes/complex instruments)",
+    "explanation": "Biofilm and debris cling inside lumens. Brushing and flushing follow the device IFU, including the brush diameter that actually contacts the channel wall.",
     "distractorExplanations": {
-      "a": "Flushing alone does not remove adherent biofilm; the IFU requires brushing with the correct-diameter brush plus flushing.",
+      "a": "Worry about scratching is not a reason to skip the brush. Flushing alone leaves biofilm in the lumen; the IFU requires the correct-diameter brush plus flushing.",
       "b": "An oversized brush cannot pass or contact the lumen properly; brush diameter must match the channel as the IFU specifies.",
       "c": "Capping ends stops solution flow, and soaking replaces neither brushing nor flushing; lumens must be brushed and irrigated."
     },
@@ -151,11 +151,11 @@
       },
       {
         "id": "d",
-        "text": "Work fastest in very hot water above 140 °F (60 °C)"
+        "text": "Work fastest in very hot water straight from the tap"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Follow concentration, temp, and time; rinse thoroughly to remove residues. They work only at the correct temperature and contact time.",
+    "explanation": "Enzymatic detergents break down organic soil such as protein, fat, and carbohydrate so it can be rinsed away. They are mixed and used as the label and the device instructions say, then rinsed off. They do not disinfect the instrument, and they do not remove rust.",
     "distractorExplanations": {
       "b": "Enzymes digest organic soil but are not disinfectants; instruments remain contaminated until cleaned and disinfected or sterilized.",
       "c": "Rust and scale removal needs acid or descaling products; enzymes target organic soil such as blood and protein.",
@@ -271,11 +271,11 @@
     "options": [
       {
         "id": "a",
-        "text": "Degassing, proper dilution, basket loading without overstacking, and rinsing after"
+        "text": "Degassing, dilution per the label, basket loading without stacking, and rinsing after"
       },
       {
         "id": "b",
-        "text": "Filling the tank fresh and starting immediately without degassing, then rinsing"
+        "text": "Filling the tank fresh and starting the cycle immediately without degassing, then rinsing"
       },
       {
         "id": "c",
@@ -287,7 +287,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Follow ultrasonic IFU; some devices cannot be ultrasonicated.",
+    "explanation": "Ultrasonic cleaning works by cavitation, which dissolved gas in a fresh fill will dampen until the tank is degassed. The detergent is diluted as its label directs, instruments sit unstacked in a basket, and they are rinsed when the cycle ends. A device the IFU excludes stays out of the tank.",
     "distractorExplanations": {
       "b": "Fresh solution contains dissolved gas that dampens cavitation; the tank must be degassed per the manufacturer before use.",
       "c": "Instruments must be open and dissimilar metals separated; closed boxlocks block cavitation and mixed metals cause galvanic etching.",
@@ -312,7 +312,7 @@
       },
       {
         "id": "c",
-        "text": "Noncritical items that touch only intact skin"
+        "text": "Noncritical items that contact intact skin on the patient"
       },
       {
         "id": "d",
@@ -320,7 +320,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Critical items require sterilization; HLD is not a sterilant unless a sterilant cycle/claim applies. Per Spaulding and IFU, HLD is used when sterilization isn't feasible.",
+    "explanation": "Spaulding classifies devices by the tissue they contact, not by a soak time. Semicritical items contact mucous membranes or nonintact skin. They receive high-level disinfection, or sterilization when that device IFU requires sterilization. Critical items, including implants, are sterilized. Noncritical items that contact intact skin receive low- or intermediate-level disinfection.",
     "distractorExplanations": {
       "a": "Critical items require sterilization under Spaulding; HLD is reserved for semicritical items such as flexible endoscopes.",
       "c": "Noncritical items such as BP cuffs need low- or intermediate-level disinfection, not high-level disinfection.",
@@ -337,7 +337,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Sterilization in a short-cycle IUSS to make the set safe to handle before cleaning"
+        "text": "Sterilization in a short-cycle IUSS run to make the set safe to handle before cleaning"
       },
       {
         "id": "b",
@@ -353,7 +353,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Soil must be removed; sterilization cannot compensate for inadequate cleaning.",
+    "explanation": "After point-of-use treatment, the next step is cleaning. Soil left on an instrument blocks disinfection and sterilization. A short sterilization cycle, inspection in prep and pack, or lubricant before a rinse does not remove that soil.",
     "distractorExplanations": {
       "a": "Sterilizing before cleaning bakes soil on and fails; IUSS still requires full cleaning first.",
       "c": "Inspection and assembly follow cleaning; sending dirty sets to prep and pack reverses the workflow and contaminates the clean area.",
@@ -403,27 +403,27 @@
     "options": [
       {
         "id": "a",
-        "text": "Sterilize instruments in 30 seconds"
+        "text": "Sterilize the instruments so they can be released for patient use"
       },
       {
         "id": "b",
-        "text": "Break down organic soil such as blood and protein"
+        "text": "Break down organic soil such as blood and protein on the device"
       },
       {
         "id": "c",
-        "text": "Replace biological indicators"
+        "text": "Replace brushing when the soil on the device is blood or protein"
       },
       {
         "id": "d",
-        "text": "Raise sterilizer chamber temperature"
+        "text": "Remain on the instruments through sterilization without a rinse"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Enzymes help digest organic soils to improve cleaning efficacy.",
+    "explanation": "Enzymatic detergents break down organic soil such as blood and protein so that soil can be rinsed away. They do not sterilize instruments, they do not take the place of the brushing the device IFU requires, and they are rinsed off rather than left on through sterilization.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Break down organic soil such as blood and protein”.",
-      "c": "Not the best answer here; the right answer is “Break down organic soil such as blood and protein”.",
-      "d": "Not the best answer here; the right answer is “Break down organic soil such as blood and protein”."
+      "a": "Enzymatic detergent does not sterilize instruments or make them safe to release for use. It digests organic soil, which then has to be rinsed away.",
+      "c": "Enzymes help loosen blood and protein, but they do not replace brushing. The device IFU still requires mechanical cleaning of hinges, box locks, and lumens.",
+      "d": "Enzymatic detergent is rinsed off after the contact its label describes. Leaving it through sterilization treats a cleaner as a coating and can leave residue on the device."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -436,7 +436,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Flushing cools the lumen so it is not damaged by the hot washer cycle"
+        "text": "A clear flush shows the lumen is open, so the channel does not need a brush"
       },
       {
         "id": "b",
@@ -452,9 +452,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Lumens trap soil; IFU-directed flushing/brushing is critical.",
+    "explanation": "A lumen hides soil that a surface wipe never reaches. Flushing and brushing follow the device instructions so the channel is actually clean. A clear flush does not prove the wall is clean, and water left inside is not a help to the sterilizer.",
     "distractorExplanations": {
-      "a": "Flushing is done to remove soil from channels, not to protect the device from washer temperatures.",
+      "a": "A flush that shows the channel is open does not remove adherent soil. The IFU still requires brushing with the correct-diameter brush as well as flushing.",
       "c": "Detergent flushing cleans but does not disinfect, and sterilization parameters are set by the IFU, not shortened after flushing.",
       "d": "Residual water in lumens causes wet packs and can impede sterilant contact; lumens must be dried after irrigation."
     },
@@ -469,7 +469,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Reduce the weight of trays so they can be transported in closed carts"
+        "text": "Start chemical disinfection on the field so the washer cycle can be shortened"
       },
       {
         "id": "b",
@@ -485,14 +485,509 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Point-of-use removal/keeping instruments moist improves subsequent decontamination.",
+    "explanation": "Gross soil left to dry bonds to the instrument and is harder to remove later. Point-of-use removal, and keeping that soil moist, is done so decontamination works. It does not disinfect the set, and it does not let the set skip decontamination.",
     "distractorExplanations": {
-      "a": "Transport weight is not the reason; point-of-use treatment keeps soil moist so it does not dry and harden on instruments.",
+      "a": "Point-of-use treatment does not disinfect the instruments or authorize a shorter washer cycle. It keeps soil from drying so decontamination can remove it.",
       "c": "Point-of-use treatment does not replace decontamination; every used instrument still goes through full cleaning in decontam.",
       "d": "Enzymatic or detergent cleaning is still required in decontam; point-of-use wiping removes gross soil only."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-016",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "During a long orthopedic case, the scrub person asks whether used rasps and osteotomes can sit in a basin of saline until the procedure ends. What point-of-use treatment is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove gross soil and keep the instruments moist with water or an approved pretreatment product."
+      },
+      {
+        "id": "b",
+        "text": "Leave them dry on the back table so the soil is easier to identify when the set reaches decontamination."
+      },
+      {
+        "id": "c",
+        "text": "Leave them immersed in saline until pickup, because saline matches body fluid and will not harm stainless steel."
+      },
+      {
+        "id": "d",
+        "text": "Send the saline basin through the washer and skip the sink, because the soak has already completed cleaning."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Point-of-use treatment removes gross soil and keeps it from drying before decontamination. Saline pits and corrodes stainless steel, so it is not the holding fluid. Water or a facility-approved pretreatment keeps the set moist, and full cleaning still happens in decontamination.",
+    "distractorExplanations": {
+      "b": "Letting soil dry hardens bioburden and makes later cleaning less effective; point-of-use treatment keeps soil moist instead of waiting for decontamination.",
+      "c": "Saline is not a safe holding fluid; prolonged contact pits and corrodes stainless steel, which is why the moisture used is water or an approved pretreatment.",
+      "d": "A saline soak does not finish cleaning, and point-of-use treatment does not replace the decontamination sink or the washer."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-017",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "The soiled case cart is at the department entrance. A soiled corridor leads to decontamination, but the shorter walk to the sink crosses prep and pack. Which route should the cart take?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wheel the covered cart through prep and pack, because a cover protects the clean assembly area from the soiled load."
+      },
+      {
+        "id": "b",
+        "text": "Park the cart in sterile storage until a washer is free, then cross prep and pack on the way to the sink."
+      },
+      {
+        "id": "c",
+        "text": "Use the soiled corridor that leads into decontamination so the cart does not cross prep and pack."
+      },
+      {
+        "id": "d",
+        "text": "Unload the sets onto a prep table and hand-carry the loose instruments through the clean area to the sink."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Contaminated items move one way, from the soiled side toward clean assembly. A soiled cart uses the soiled corridor into decontamination. A cover, a stop in sterile storage, or a hand-carry through prep and pack still brings contamination into the clean area.",
+    "distractorExplanations": {
+      "a": "A cover does not make a soiled cart safe to push through prep and pack; contaminated items stay on the soiled route into decontamination.",
+      "b": "Sterile storage is a clean area; parking a soiled cart there, then crossing prep and pack, reverses one-way flow.",
+      "d": "Hand-carrying soiled instruments through clean assembly spreads contamination; the cart belongs on the soiled corridor."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-018",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "Hair cover and shoe covers are already on. The technician is about to handle soiled instruments at the decontamination sink. Which sequence completes donning?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Don utility gloves first, then the gown, mask, and face shield, so the gloves stay clean while the gown is tied."
+      },
+      {
+        "id": "b",
+        "text": "Put on the mask and face shield now, and add the gown and utility gloves after the first splash at the sink."
+      },
+      {
+        "id": "c",
+        "text": "Don the fluid-resistant gown, mask, and eye protection, then utility gloves last so the cuff covers the sleeve."
+      },
+      {
+        "id": "d",
+        "text": "Use sterile gloves and a sterile gown, with the closed-glove method used by the scrub person in the operating room."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Decontamination attire is on before any soiled instrument is handled. With hair cover and shoe covers already on, the technician dons the fluid-resistant gown, mask, and eye protection, then utility gloves last so the cuff covers the gown sleeve.",
+    "distractorExplanations": {
+      "a": "Gloves donned first do not cover the gown cuff, and they are contaminated while the rest of the attire is put on.",
+      "b": "The gown, eye and face protection, and gloves are required before soiled instruments are handled; waiting for a splash leaves the technician unprotected.",
+      "d": "Sterile operating-room gown and gloves protect the surgical field; decontamination uses fluid-resistant attire and utility gloves, with gloves donned last."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-019",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "A powered surgical handpiece arrives with an IFU that says to remove the immersible attachments, brush those parts, and keep the motor housing out of fluid. The technician is about to submerge the assembled handpiece. What should be done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Submerge the assembled handpiece in the sink, because the housing is sealed and detergent cannot reach the motor inside."
+      },
+      {
+        "id": "b",
+        "text": "Place the assembled handpiece in the ultrasonic cleaner, treating that bath as acceptable for this motor."
+      },
+      {
+        "id": "c",
+        "text": "Skip the sink and run the assembled handpiece in the washer-disinfector on the instrument cycle."
+      },
+      {
+        "id": "d",
+        "text": "Detach the immersible parts, clean them as the IFU describes, and keep the motor housing out of fluid."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Manual cleaning follows the device IFU. On this handpiece the attachments come off and are brushed, and the motor housing stays out of fluid. The sink, the ultrasonic cleaner, and the washer-disinfector all use fluid, so none is a workaround for the assembled motor.",
+    "distractorExplanations": {
+      "a": "This IFU keeps the motor housing out of fluid; assuming the housing is sealed does not override that, and submerging the assembled handpiece can drive fluid into the motor.",
+      "b": "An ultrasonic bath still immerses the assembled motor, which this IFU does not allow.",
+      "c": "A washer-disinfector cycle is still fluid exposure and does not replace the IFU limit on immersing this motor."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-020",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "Needle holders are clicked shut and stacked in two layers in an ultrasonic cleaner that was just filled and has not been degassed. How should this load be corrected before the cycle starts?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Degas the tank, open the ratchets, and set a single unstacked layer in the basket so the jaws are exposed."
+      },
+      {
+        "id": "b",
+        "text": "Start the cycle now with the ratchets shut and the holders stacked, because a fresh fill has no dissolved gas."
+      },
+      {
+        "id": "c",
+        "text": "Lay the closed holders on the tank floor so they sit closer to the transducers than they would in a basket."
+      },
+      {
+        "id": "d",
+        "text": "Leave the ratchets shut and skip degassing, because this load does not have dried blood on the box locks."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Cavitation has to reach the surfaces being cleaned. Dissolved gas in a fresh fill is removed by degassing, ratchets are opened, and the holders sit in one unstacked layer in the basket. Stacking, closed box locks, and contact with the tank floor block that contact or damage the tank.",
+    "distractorExplanations": {
+      "b": "A fresh fill still holds dissolved gas that dampens cavitation, and closed, stacked ratchets block energy from reaching the box locks.",
+      "c": "Instruments belong in a basket rather than on the tank floor, and shut ratchets keep cavitation away from the jaws.",
+      "d": "Degassing and an open, unstacked load are part of preparing this cycle; dried blood is not the condition that turns those steps on."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-021",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "A washer-disinfector rack holds ratcheted instruments, a tight stack of nested basins, and a suction tube whose IFU says to connect it to an irrigation port. The tube is lying loose. Which load is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the ratchets closed, keep the basins nested, and lay the suction tube across the top of the stack."
+      },
+      {
+        "id": "b",
+        "text": "Open the hinges, but leave the basins nested and the tube off the port, because spray alone is supposed to reach them."
+      },
+      {
+        "id": "c",
+        "text": "Open the hinges, separate the basins so they do not nest, and connect the suction tube to an irrigation port."
+      },
+      {
+        "id": "d",
+        "text": "Take the spray arms out to make room for the nested basins, and cap the suction tube so water stays inside."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A washer-disinfector cleans by spray contact, and this suction-tube IFU adds a connection to an irrigation port. Hinges are opened, basins are separated so they do not nest, and the lumen is connected. Closed ratchets, a nested stack, or a capped lumen block that contact.",
+    "distractorExplanations": {
+      "a": "Closed ratchets, nested basins, and an unconnected lumen all block cleaning contact; moving the tube to the top of the stack does not connect it.",
+      "b": "Opening the hinges fixes only part of the load; nested basins still hide surfaces, and the IFU requires the lumen on an irrigation port.",
+      "d": "Removing the spray arms disables the washer, and capping the lumen keeps fluid from flowing through the channel the IFU wants irrigated."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-022",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "After a procedure, staff want to wipe a reusable vaginal speculum with the low-level disinfectant used on blood-pressure cuffs. The speculum contacted mucous membrane and did not enter sterile tissue. How should Spaulding classification guide processing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Call it critical because it was used in a procedure, and require steam even when the IFU allows another process."
+      },
+      {
+        "id": "b",
+        "text": "Call it noncritical once visible soil is wiped away, and use the same disinfectant as on a blood-pressure cuff."
+      },
+      {
+        "id": "c",
+        "text": "Class it as semicritical: high-level disinfection or sterilization, as the device IFU directs."
+      },
+      {
+        "id": "d",
+        "text": "Choose the class from how stained the speculum looks after the case, rather than from the tissue it contacted."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Spaulding class follows the tissue a device contacts. Critical items enter sterile tissue or the vascular system and are sterilized. Semicritical items contact mucous membrane and are high-level disinfected or sterilized per the IFU. This speculum contacted mucous membrane, so a low-level cuff wipe is the wrong process.",
+    "distractorExplanations": {
+      "a": "Use during a procedure does not make a device critical; critical means entry into sterile tissue or the vascular system, and the IFU still selects the process.",
+      "b": "Wiping soil off does not change the class. Mucous-membrane contact is semicritical, while a blood-pressure cuff that touches intact skin is noncritical.",
+      "d": "Spaulding class follows the tissue contacted, not how stained the device looks after the case."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-023",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "The label on a disinfectant for noncritical equipment says intermediate-level. A technician asks which soak time that level assigns to devices. How should that label be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat intermediate-level as a briefer contact step than high-level, and wet the surface without any further directions."
+      },
+      {
+        "id": "b",
+        "text": "Assign one contact time to each of the three level names, and set aside the contact directions printed on the product."
+      },
+      {
+        "id": "c",
+        "text": "Treat this intermediate-level product as a sterilant that can process a critical implant."
+      },
+      {
+        "id": "d",
+        "text": "Treat the level name as a germicidal class, and take the contact conditions from that product IFU."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "High-level, intermediate-level, and low-level name germicidal classes, not soak times. High-level kills microorganisms other than large numbers of bacterial spores. Intermediate-level kills vegetative bacteria, mycobacteria, most fungi, and most viruses, but not spores. Low-level kills most vegetative bacteria and some fungi and viruses, but not mycobacteria or spores. Contact conditions come from the product IFU.",
+    "distractorExplanations": {
+      "a": "The level names do not rank soak times; calling intermediate-level a briefer contact step invents a timing rule the classification does not contain.",
+      "b": "The three level names are classes of germicidal activity, not three substitute contact times that replace the product IFU.",
+      "c": "An intermediate-level disinfectant does not kill bacterial spores and is not a sterilant for a critical implant."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-024",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "A flexible endoscope that already passed its leak test sat overnight with moisture in the biopsy channel. The exterior looks clean, so a technician plans a disinfectant soak and no brushing. What does that biofilm risk require?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brush and flush the channel with the IFU detergent; a disinfectant soak does not remove biofilm."
+      },
+      {
+        "id": "b",
+        "text": "Skip brushing, because biofilm forms on the outer surface and that surface already looks clean."
+      },
+      {
+        "id": "c",
+        "text": "Soak the endoscope in disinfectant until the channel biofilm loosens, then brush if residue is still visible."
+      },
+      {
+        "id": "d",
+        "text": "Flush the channel once with plain water and place the endoscope in the clean cabinet, with no brush step."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Biofilm is microorganisms in a matrix that sticks to a surface, including the inside of an endoscope channel. The matrix shields the organisms, so a disinfectant soak does not replace mechanical cleaning. After a passed leak test, the channel is brushed and flushed with the detergent the IFU names.",
+    "distractorExplanations": {
+      "b": "Biofilm is a particular risk inside channels, and a clean-looking exterior does not show that the biopsy channel is clear.",
+      "c": "Disinfectant does not reliably penetrate an established biofilm matrix, so brushing is not postponed until residue is visible.",
+      "d": "One plain-water flush does not remove biofilm, and a passed leak test does not cancel the brush-and-flush step."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-025",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "Before immersion, a flexible endoscope fails the leak test its IFU requires. Residue from the procedure is still in the channel. Which action comes next?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Immerse the endoscope now so the residue does not dry, and arrange repair after the cleaning cycle is finished."
+      },
+      {
+        "id": "b",
+        "text": "Continue cleaning in the sink, because a failed leak test can be set aside when the outer sheath looks intact."
+      },
+      {
+        "id": "c",
+        "text": "Do not immerse the endoscope; remove it from service and follow the IFU for a failed leak test."
+      },
+      {
+        "id": "d",
+        "text": "Rinse the channel at the faucet and load the reprocessor, which will run its own leak test during the cycle."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When the IFU requires a leak test before immersion, a failure means fluid can enter the endoscope and damage it. The scope is not placed in the sink or a reprocessor. It is removed from service and handled as the IFU directs for a failed test.",
+    "distractorExplanations": {
+      "a": "Immersing a scope that failed its leak test lets fluid inside; keeping residue from drying does not justify that damage.",
+      "b": "An intact-looking sheath does not override a failed leak test, and sink cleaning would immerse the scope the test just failed.",
+      "d": "A faucet rinse and a reprocessor cycle both put the scope in fluid after a failed leak test, which is the exposure to avoid."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-026",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "Cannulas from a cataract set are still coated with detergent when a technician loads them for sterilization, expecting the cycle to take care of whatever remains in the lumen. What should happen first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load the cannulas as they are, because steam breaks residual detergent down during the sterilization cycle."
+      },
+      {
+        "id": "b",
+        "text": "Sterilize the damp cannulas if the cycle printout is complete, treating a wet pack as the issue to watch."
+      },
+      {
+        "id": "c",
+        "text": "Complete the required IFU rinse before sterilization so detergent is not left in the cannulas."
+      },
+      {
+        "id": "d",
+        "text": "Skip the rinse on this cataract set, because detergent residue is a concern for bone sets rather than eye cannulas."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Toxic anterior segment syndrome is an inflammatory injury to the front of the eye linked to residues on ophthalmic instruments, including detergent left in cannulas. Sterilization does not remove that residue. The cannulas are rinsed as the IFU directs before they are sterilized.",
+    "distractorExplanations": {
+      "a": "Steam sterilization does not remove detergent left in a lumen; the residue can remain and irritate the anterior chamber.",
+      "b": "A wet pack is a packaging failure. Toxic anterior segment syndrome comes from residue, and a complete printout does not show that the cannulas were rinsed.",
+      "d": "Detergent left on ophthalmic cannulas is the toxic anterior segment risk; this swaps that concern onto bone sets and skips the eye-set rinse."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-027",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "The minimum-effective-concentration test on a reused high-level disinfectant fails before the first case of the day. The container has not reached the manufacturer's discard date. What is the appropriate action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep using the solution until the printed discard date, and file the failed result without changing the basin."
+      },
+      {
+        "id": "b",
+        "text": "Add unused concentrate without a new passing test, and leave the failed result out of the record."
+      },
+      {
+        "id": "c",
+        "text": "Set the test aside, because minimum effective concentration is storage advice rather than a condition of use."
+      },
+      {
+        "id": "d",
+        "text": "Do not use the solution; discard it per the IFU and document the failed test and the action taken."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Reused high-level disinfectant stays in service while it meets its minimum effective concentration and its labeled reuse period. A failed test means the solution is below that concentration, so the printed date does not keep it in use. It is discarded per the IFU, and the failed test and the action are documented.",
+    "distractorExplanations": {
+      "a": "A printed discard date does not keep a failed solution in use; the test already shows it is below the minimum effective concentration.",
+      "b": "Pouring in more concentrate without a new passing test does not correct the failure, and leaving that result out of the record hides it.",
+      "c": "Minimum effective concentration is a condition for using reused high-level disinfectant, not storage advice that can be skipped."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-028",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "A closed, leak-proof container is available, but an orderly wants to carry an open basin of bloody instruments through a public hallway to save a trip. How should the instruments move?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move them in that closed, leak-proof container, marked as soiled, along the soiled route."
+      },
+      {
+        "id": "b",
+        "text": "Carry the open basin if a dry towel covers the instruments and the basin stays at waist height in the hallway."
+      },
+      {
+        "id": "c",
+        "text": "Rinse the instruments at a scrub sink, then carry the open basin through the hallway to decontamination."
+      },
+      {
+        "id": "d",
+        "text": "Leave the open basin in sterile storage until the usual closed cart returns from the operating room."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Soiled instruments travel in a closed, leak-proof container marked as contaminated, along the soiled route. An open basin, a towel cover, a rinse in a scrub sink, or a wait in sterile storage spreads blood and body fluid outside decontamination.",
+    "distractorExplanations": {
+      "b": "A dry towel on an open basin does not contain blood or body fluid in a public hallway; the closed, leak-proof container is what keeps the load confined.",
+      "c": "Rinsing in a scrub sink contaminates a clinical sink and still sends soiled instruments down the hall in an open basin.",
+      "d": "Sterile storage is a clean area; an open basin of bloody instruments does not wait there for a cart."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-029",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "In a three-sink manual cleaning line, a technician brushes instruments in the last sink and leaves the detergent sink empty because the water looks clear. How should the sinks be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Brush in the last sink when the water looks clear, and save the detergent sink for instruments that still show blood."
+      },
+      {
+        "id": "b",
+        "text": "Use one sink for detergent, brushing, and the final rinse so the instruments are picked up fewer times."
+      },
+      {
+        "id": "c",
+        "text": "Fill all three sinks with detergent and brush in whichever sink happens to be free."
+      },
+      {
+        "id": "d",
+        "text": "Brush in the detergent sink, then rinse in the following sinks so soil and detergent come off."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The three-sink line separates washing from rinsing. Instruments are brushed in the detergent sink so soil is loosened, then rinsed in the following sinks so soil and detergent are carried off. Clear rinse water is not a sign that the wash step can be skipped.",
+    "distractorExplanations": {
+      "a": "Clear-looking water is not a reason to brush in the rinse sink; the detergent sink is the wash step even when blood is no longer obvious.",
+      "b": "Combining wash and rinse in one sink leaves detergent and loosened soil on the instruments instead of carrying them away.",
+      "c": "Detergent in every sink removes the rinse steps, so soil and chemical remain on the devices no matter which sink is free."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-decontamination-030",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "decontamination",
+    "prompt": "Instruments unload from the washer-disinfector on the clean side while incoming soiled trays still cover the receiving counter. Where should the washed instruments be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set them on the soiled receiving counter so they can be inspected beside the incoming trays."
+      },
+      {
+        "id": "b",
+        "text": "Return them to the operating-room cart that delivered the set and inspect them in that room."
+      },
+      {
+        "id": "c",
+        "text": "Keep the washed instruments on the clean side and send them on toward prep and pack."
+      },
+      {
+        "id": "d",
+        "text": "Hold them in a basin of water on the soiled side until a prep-and-pack table is free."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Work in decontamination moves from soiled to clean and does not turn back. Instruments that unload on the clean side stay there and continue toward prep and pack. Putting them with incoming soiled trays, back on the case cart, or into a basin on the soiled side recontaminates them.",
+    "distractorExplanations": {
+      "a": "The receiving counter holds incoming contaminated trays; setting washed instruments there recontaminates a load the washer just cleaned.",
+      "b": "Washed sets are not inspected in the operating room, and returning them on the case cart sends clean items back into the soiled stream.",
+      "d": "A water basin on the soiled side puts washed instruments back into contaminated work and undoes the separation the washer provided."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "crcst-readiness-check-assembly-packaging-001",
@@ -518,7 +1013,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Assembly is a quality checkpoint; repair/replace defective instruments.",
+    "explanation": "At assembly, before packaging, instruments are inspected for cleanliness, function, alignment, corrosion, and a complete set. Items that fail are repaired or replaced in sterile processing, not passed on for the surgeon to find.",
     "distractorExplanations": {
       "b": "Functional testing (scissor sharpness, jaw alignment, ratchets) is SPD's job at assembly, not the surgeon's at point of use.",
       "c": "Package and CI checks occur after sterilization; instrument inspection for soil and function must happen before packaging.",
@@ -551,7 +1046,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Containers fail if seals/filters compromised; follow load weight limits. Place internal chemical indicators as required.",
+    "explanation": "A rigid container remains a sterile barrier only when its filter or valve, gasket, and locks are intact and match that container's instructions. A missing filter, a torn gasket, or a lock that does not seat lets air in after the cycle, so the set is not released.",
     "distractorExplanations": {
       "a": "Disposable filters are replaced each cycle and gaskets are checked at every assembly per IFU, not annually by a vendor.",
       "c": "Containers still need an internal CI where policy or IFU requires; an external indicator shows exposure, not internal conditions.",
@@ -650,7 +1145,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Incomplete trays delay surgery and risk counts.",
+    "explanation": "A count sheet lists every instrument that belongs in the tray so assembly and the operating room can confirm the set is complete. Packaging a short set delays the case and breaks the surgical count, so the sheet is a completeness record, not the sterilizer log.",
     "distractorExplanations": {
       "b": "Cycle and load data go on the load sticker and sterilizer record; the count sheet lists tray contents for completeness.",
       "c": "Lubrication follows IFU and inspection checks, not the count sheet, which lists instruments to confirm completeness.",
@@ -716,7 +1211,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Use protectors validated for sterilization compatibility.",
+    "explanation": "Tip protectors shield sharp or delicate tips from damage during handling. They must be validated for the sterilization method, and permeable when the design depends on that, so sterilant still reaches the metal under the guard.",
     "distractorExplanations": {
       "a": "Tip protectors must allow sterilant contact; airtight sealing would prevent sterilization of the protected tip.",
       "b": "A tip guard is not a sterile barrier; the instrument still needs a validated package such as a pouch or wrap.",
@@ -749,7 +1244,7 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Follow sterilizer and container IFU for maximum weights.",
+    "explanation": "Extra metal mass holds heat and sheds more condensate, so an overweight tray dries poorly and can fail sterilization. The limit that applies is the one in the container IFU and the sterilizer IFU, not a weight guessed at the bench.",
     "distractorExplanations": {
       "a": "CIs respond to process conditions, not tray weight; overweight trays condense more steam and cause wet packs.",
       "b": "Heavy metal mass acts as a heat sink and slows heat-up; it does not shorten the required exposure time.",
@@ -774,19 +1269,19 @@
       },
       {
         "id": "c",
-        "text": "Kept at the same pressure as decontam, with doors left open for flow"
+        "text": "Kept at the same pressure as decontam, with doors left open so air can mix freely"
       },
       {
         "id": "d",
-        "text": "Kept above 75% relative humidity to keep lint from floating"
+        "text": "Kept at high relative humidity so airborne lint settles out of the work area"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Protect clean instruments during assembly/packaging.",
+    "explanation": "Prep and pack is a clean area held at positive pressure relative to decontamination so air flows toward the dirty side instead of carrying contaminants in. Lint and dust are controlled because particles can be packaged with the instruments.",
     "distractorExplanations": {
       "b": "A negative clean area would draw contaminated air in from decontam; prep and pack must be positive to dirty areas.",
       "c": "Neutral pressure with open doors lets contaminated air migrate; clean areas are positive and doors stay closed.",
-      "d": "AAMI ST79 limits relative humidity in prep and pack to 60% or less; high humidity promotes microbial growth."
+      "d": "Raising humidity does not keep lint out of a set. Humidity in prep and pack follows the facility standard; the control for particles is positive pressure, closed doors, and clean work surfaces."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -815,7 +1310,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Incomplete sets are patient safety issues.",
+    "explanation": "A missing instrument is a patient-safety problem because the procedure and the surgical count both depend on a complete set. The gap is documented and filled from processed stock before the tray is sterilized or sent to the operating room.",
     "distractorExplanations": {
       "a": "Sending an incomplete set shifts the problem to the OR; missing items are resolved in SPD before sterilization per policy.",
       "c": "Robbing another set creates a second incomplete tray; replacements come from processed stock and are documented.",
@@ -869,7 +1364,7 @@
       },
       {
         "id": "b",
-        "text": "Filters/valves and gaskets must never be intact and used per IFU"
+        "text": "A lid that locks is enough even when the filter itself is missing"
       },
       {
         "id": "c",
@@ -881,11 +1376,11 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Container integrity (filters, seals, locks) is required for sterility maintenance.",
+    "explanation": "A rigid container keeps a set sterile only when the filter or valve, the gasket, and the locks are intact and match that container's instructions. A missing filter, a cut gasket, or a valve that does not seat lets air in after the cycle, so the set is not released.",
     "distractorExplanations": {
-      "b": "Not the best answer here; the right answer is “Filters/valves and gaskets must be intact and used per IFU”.",
-      "c": "Not the best answer here; the right answer is “Filters/valves and gaskets must be intact and used per IFU”.",
-      "d": "Not the best answer here; the right answer is “Filters/valves and gaskets must be intact and used per IFU”."
+      "b": "A locked lid does not replace the filter. The filter or valve is the path the sterilant uses and the barrier afterward. A missing filter means the container is not assembled to its instructions.",
+      "c": "Tape does not restore a damaged filter or the validated path for sterilant and air. A torn, missing, or clogged filter is replaced according to the container IFU before the set is sterilized.",
+      "d": "Rigid containers collect soil and have to be cleaned and inspected between uses. Skipping that step leaves debris on the lid, gasket, and filter seat that can break the seal on the next cycle."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -980,7 +1475,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Count sheets support accurate assembly and OR counts.",
+    "explanation": "The count sheet is the checklist assembly uses, and the same list supports the count at the point of use. It confirms the set is complete. It is not the sterilizer load record, and it does not replace the internal chemical indicator.",
     "distractorExplanations": {
       "a": "Load numbers are on the load label and sterilizer log; count sheets list set contents for completeness checks.",
       "c": "Count sheets do not monitor sterilization; trays still require internal chemical indicators.",
@@ -988,6 +1483,501 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-016",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "During assembly of a laparotomy set, the count sheet lists a ribbon retractor that is not on the stringer. The afternoon case is already posted.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Replace the missing retractor from processed stock and keep the count sheet with the tray."
+      },
+      {
+        "id": "b",
+        "text": "Package the short set and write a note outside so the operating room can adjust its count."
+      },
+      {
+        "id": "c",
+        "text": "Discard the count sheet because the tracking-system photo already documents the tray contents."
+      },
+      {
+        "id": "d",
+        "text": "Take a ribbon retractor from a finished sterile set on the shelf and drop it into this tray."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The count sheet is the contents list for assembly and for the operating-room count. A missing instrument is replaced from processed stock, and the sheet stays with the set so sterile processing and the surgical team are accounting for the same instruments.",
+    "distractorExplanations": {
+      "b": "Sending a short set pushes the missing retractor into the case. The count sheet is used to complete the tray before packaging, not to warn the operating room after the set is closed.",
+      "c": "A tracking photo does not replace the count sheet. Assembly and the operating room use the sheet to verify that every listed instrument is actually in the set.",
+      "d": "Taking an instrument from a finished sterile set contaminates that piece and leaves the other set incomplete. Replacements come from processed, unpackaged stock and are written on the count sheet."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-017",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "At the lighted magnifier, a clamp that looked clean under room light shows brown residue packed into the box lock.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe the box lock with alcohol, let it flash dry, and set the clamp back on the stringer."
+      },
+      {
+        "id": "b",
+        "text": "Package the clamp with a second internal indicator resting against the stained lock."
+      },
+      {
+        "id": "c",
+        "text": "Send the clamp back to decontamination so the soiled box lock is cleaned before packaging."
+      },
+      {
+        "id": "d",
+        "text": "Note the stain on the count sheet, package the set, and let the operating room decide whether the residue matters."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Lighted magnification is part of assembly inspection because room light misses soil in box locks, serrations, and jaws. Retained soil means the instrument goes back to decontamination. It is not wiped, packaged, or left for the operating room to discover.",
+    "distractorExplanations": {
+      "a": "An alcohol wipe is not a cleaning process and can smear soil deeper into the box lock. Residue found under magnification means the clamp returns to decontamination.",
+      "b": "A chemical indicator shows process conditions at its location. It does not remove bioburden, and soil in the box lock can shield microbes from the sterilant.",
+      "d": "Writing the stain on the count sheet and sterilizing anyway sends a dirty instrument forward. Magnified inspection is the stop point; the clamp is not packaged until the soil is gone."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-018",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A heat-sensitive camera is cleared only for hydrogen peroxide sterilization. The pouches stocked on this bench are paper-plastic peel pouches used for steam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use a paper-plastic pouch, because a peel pouch of any material can run in any sterilizer."
+      },
+      {
+        "id": "b",
+        "text": "Lay the camera on the rack with no pouch so the vapor reaches the lens faster."
+      },
+      {
+        "id": "c",
+        "text": "Select packaging that both the device IFU and the hydrogen peroxide sterilizer IFU allow."
+      },
+      {
+        "id": "d",
+        "text": "Wrap the camera in reusable cotton towels, treating textile wrap as a barrier this sterilizer accepts."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Packaging has to follow the device IFU and the sterilization method together. Paper and other cellulose materials absorb hydrogen peroxide, so steam peel pouches on the bench are not assumed to be compatible. The package is part of the validated cycle.",
+    "distractorExplanations": {
+      "a": "Confuses a steam peel pouch with hydrogen peroxide packaging. Cellulose paper can absorb that sterilant, so the pouch has to be one both IFUs actually allow.",
+      "b": "Leaving the camera unpackaged removes the sterile barrier. A low-temperature cycle still needs packaging validated for that sterilizer when the device will be held as a sterile item.",
+      "d": "Cotton towels are cellulose and are not the validated barrier for this hydrogen peroxide process. They can absorb sterilant instead of maintaining a sterile package."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-019",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "Building a dense cardiac tray, a technician sets the internal chemical indicator on top of the instruments, just under the lid, because the operating room will see it first.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Move the indicator to the outside latch and leave the inside of the container with no internal indicator."
+      },
+      {
+        "id": "b",
+        "text": "Set the indicator on the cart over the chamber drain and run this container with no indicator inside."
+      },
+      {
+        "id": "c",
+        "text": "Leave the indicator out, because a new filter already shows that sterilant entered the container."
+      },
+      {
+        "id": "d",
+        "text": "Move the indicator to the hardest-to-reach place named in policy and the container IFU."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An internal chemical indicator belongs where sterilant has the hardest time reaching, often the center or densest part of the set, as packaging policy and the container IFU describe. A spot chosen only because it is easy to see can change while the middle of the tray did not see the same conditions.",
+    "distractorExplanations": {
+      "a": "An external indicator shows that the outside of the package was exposed. It does not replace the internal indicator placed where penetration is most difficult.",
+      "b": "The chamber drain is a load-challenge location, not this tray's chemical-indicator spot. The container still needs its own internal indicator among the instruments.",
+      "c": "A filter allows sterilant through when it is intact, but it is not a chemical indicator and does not show that conditions were met in the dense part of the tray."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-020",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A peel-pouched clamp is ready for the steam load. The technician wants to write the name, load number, and initials after the cycle so the marker ink is never heated.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Label the pouch before the cycle on the plastic side, or on a label the pouch IFU allows."
+      },
+      {
+        "id": "b",
+        "text": "Wait until the pouch is cool, confirm the indicator changed, and then write the details on the paper side."
+      },
+      {
+        "id": "c",
+        "text": "Press a ballpoint name across the paper half so the ink soaks into the porous sheet."
+      },
+      {
+        "id": "d",
+        "text": "Leave the pouch unlabeled because the card sealed inside is the record the operating room will use."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Packages are labeled before sterilization so the contents, load identity, and assembler are already tied to that cycle. Writing afterward means handling a finished barrier and leaves the pack unidentified during the process. On a peel pouch the mark goes on the plastic side or on a label the pouch IFU allows.",
+    "distractorExplanations": {
+      "b": "Checking the indicator after the cycle is a release step, not a reason to delay the label. Writing on the paper side can also puncture or wick through the sterile barrier.",
+      "c": "Forcing ink into the paper side can damage the porous barrier. Peel pouches are marked on the plastic side or with an approved label before they are sterilized.",
+      "d": "A card inside the pouch is hidden until someone opens it. The outside label identifies the package and links it to the load while the seal is still intact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-021",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A sales representative delivers a loaned spine set and says the vendor sterilized it this morning, so the containers can go straight to the case.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the vendor containers on the sterile shelf because the representative signed the packing list."
+      },
+      {
+        "id": "b",
+        "text": "Wipe the container lids and release the set to the operating room as ready for use."
+      },
+      {
+        "id": "c",
+        "text": "Receive the set as contaminated, inventory it, and reprocess it completely per the IFU."
+      },
+      {
+        "id": "d",
+        "text": "Run one immediate-use cycle on the closed containers and skip inspection to catch the case."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A loaned set is received as contaminated, no matter what the representative says about an earlier cycle. Staff inventory it against the vendor list, then clean, inspect, assemble, and sterilize it according to the device and container IFUs before it is used.",
+    "distractorExplanations": {
+      "a": "A signed packing list does not prove this facility processed the set or that the vendor cycle can be trusted. Loaned containers are not placed in sterile storage on the representative's word.",
+      "b": "Wiping the lids is not inspection, cleaning, or sterilization. A loaned set still goes through the full preparation and packaging path before anyone uses it.",
+      "d": "Immediate-use sterilization does not replace inspection and complete reprocessing of loaners. Closed vendor containers also have to match a cycle the sterilizer IFU allows."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-022",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "An orthopedic container feels heavier than the sets this technician usually builds. A coworker says any set under a pound limit remembered from class is fine for every steam sterilizer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the set together if one person can lift the closed container onto the carriage."
+      },
+      {
+        "id": "b",
+        "text": "Lay extra absorbent towels across the top so the heavier container will dry in the cycle."
+      },
+      {
+        "id": "c",
+        "text": "Follow the container IFU and the sterilizer IFU instead of a remembered universal number."
+      },
+      {
+        "id": "d",
+        "text": "Apply that same remembered pound limit to this container and to every other brand in the department."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Excess mass in a container leads to condensate, wet packs, and sterilization failure. The maximum weight is whatever that container's IFU and that sterilizer's IFU state. A single number remembered from class is not a substitute for those two instructions.",
+    "distractorExplanations": {
+      "a": "Whether one person can lift the container is not the weight limit. A set can be easy to carry and still be too heavy for drying and sterilization under the IFUs.",
+      "b": "Extra towels add bulk that can block sterilant and hold moisture. They do not bring a heavy container inside the limit written in the container and sterilizer IFUs.",
+      "d": "There is no one pound limit to copy onto every brand. Each container system and each sterilizer states its own maximum, and the set has to meet both."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-023",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "Two trays come off the steam cart with internal indicators that changed. One wrap has a torn corner, and the other has water droplets inside the package.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Put both on the sterile shelf because a changed indicator overrides the tear and the moisture."
+      },
+      {
+        "id": "b",
+        "text": "Blot the wet tray with a clean towel, tape the torn corner shut, and shelve both sets."
+      },
+      {
+        "id": "c",
+        "text": "Shelve the torn tray if the hole looks small, and shelve the wet tray after the droplets disappear on their own."
+      },
+      {
+        "id": "d",
+        "text": "Keep both trays out of sterile storage stock and send each one to be reprocessed."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A changed chemical indicator does not rescue a broken or wet barrier. A tear leaves the contents exposed, and moisture can wick microorganisms through the package. Neither tray is sterile storage stock. Both are reprocessed, and the wet pack is investigated for the cause.",
+    "distractorExplanations": {
+      "a": "Treats a chemical indicator as proof the packs are sterile. The color change does not cancel a torn wrap or water inside the package, so neither set belongs in sterile storage.",
+      "b": "Tape and blotting do not restore a sterile barrier. A torn pack and a wet pack are kept out of storage stock and reprocessed.",
+      "c": "Hole size and waiting for droplets to vanish do not make these packs sterile. A torn package and a wet package are both unacceptable as sterile storage stock."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-024",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A lumen set leaves the washer still dripping. The technician wants to pouch it immediately so it makes the next steam load.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dry the instruments and lumens as the IFU describes before packaging the set."
+      },
+      {
+        "id": "b",
+        "text": "Pouch the wet channels, because steam sterilization needs water left inside the lumens."
+      },
+      {
+        "id": "c",
+        "text": "Tuck a dry towel into the pouch so it pulls the water out of the lumens during the cycle."
+      },
+      {
+        "id": "d",
+        "text": "Pouch the dripping lumens and rely on the sterilizer drying phase to finish the job."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Instruments, including lumens, are dried before they are packaged for steam. Water left in a lumen becomes extra condensate, so the set comes out a wet pack and cannot go to sterile storage. The sterilizer drying phase does not replace drying the device first, and drying follows the device instructions.",
+    "distractorExplanations": {
+      "b": "Confuses steam in the chamber with water left in the device. Retained water prevents drying and leaves a wet pack, so lumens are dried before packaging.",
+      "c": "A towel in the pouch does not replace drying and can hold moisture or block the sterilant. The lumens have to be dry, per the IFU, before the set is packaged.",
+      "d": "The drying phase removes condensate the cycle itself creates. It does not dry a lumen that was packaged dripping, and that set comes out a wet pack."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-025",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "Device instructions require double pouching this steam-compatible clamp in paper-plastic pouches. The technician is nesting the inner pouch now.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fold the inner pouch in half so it fits a smaller outer pouch that is already open on the bench."
+      },
+      {
+        "id": "b",
+        "text": "Align the pouches plastic to plastic and paper to paper, without folding the inner pouch."
+      },
+      {
+        "id": "c",
+        "text": "Face the plastic sides in opposite directions so each paper panel is on the outside."
+      },
+      {
+        "id": "d",
+        "text": "Skip the inner pouch and write that the clamp was double pouched on the outer label."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When paper-plastic pouches are doubled, the plastic sides face the same way so paper meets paper. Sterilant passes through the paper of each pouch. The inner pouch lies flat, because a fold can block penetration and stress the seals. Double pouching is done only when the device IFU allows it.",
+    "distractorExplanations": {
+      "a": "Folding the inner pouch creates a thick path the sterilant may not penetrate and can wrinkle a seal. The inner pouch stays flat, and the outer pouch has to be large enough to hold it.",
+      "c": "Facing the plastic sides opposite each other puts paper against plastic and blocks the paper-to-paper path. Both plastic faces point the same way so each paper panel stays open to the sterilant.",
+      "d": "A label cannot stand in for the inner pouch the device IFU requires. Double pouching means two pouches, aligned and sealed as the pouch instructions describe."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-026",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "Scissors open and close, yet lighted magnification shows a chip in the cutting edge and tips that do not meet.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Package them, because the magnifier is meant for spotting blood rather than a chipped edge."
+      },
+      {
+        "id": "b",
+        "text": "File the chip smooth on the assembly table and put the scissors back on the stringer."
+      },
+      {
+        "id": "c",
+        "text": "Remove the scissors for repair because the chip and mismatched tips fail inspection."
+      },
+      {
+        "id": "d",
+        "text": "Swap in a pair taken from a sterile set that is already sitting on the storage shelf."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Assembly inspection covers edges, alignment, and cracks, not just leftover blood. Lighted magnification is how a chip or tips that do not meet are seen. The damaged scissors come out for repair and are replaced from processed stock.",
+    "distractorExplanations": {
+      "a": "Limits the magnifier to a search for blood. Lighted inspection is also how technicians find chipped blades, cracks, and tips that do not meet before an instrument is packaged.",
+      "b": "Repair is not done by filing at the assembly table. A chipped edge is removed from the set so a proper repair can restore it.",
+      "d": "Opening a sterile set to borrow scissors contaminates that instrument and leaves another set short. The replacement comes from clean, unpackaged stock."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-027",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A wrapped cystoscopy set is marked only with the word cysto. The sterilizer, cycle, date, and assembler are missing from the outside.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the label as it is, because the sterilizer printout in the log is the trace record."
+      },
+      {
+        "id": "b",
+        "text": "Add the cycle number after sterilization by writing it across the wrap with a ballpoint pen."
+      },
+      {
+        "id": "c",
+        "text": "Copy the sterilizer, cycle, date, and assembler onto the count sheet inside, and leave the outside label as cysto."
+      },
+      {
+        "id": "d",
+        "text": "Finish the outside label before the cycle so the closed set can be traced to its load."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Labeling is finished before sterilization and has to identify the package from the outside: what it is, which load it belongs to, and who assembled it, as department policy requires. A one-word name, with the real record only in a log or inside the set, cannot be checked without opening the barrier.",
+    "distractorExplanations": {
+      "a": "A printout in the log does not identify this package on the shelf. The label on the set is what ties that specific pack to the load before anyone opens it.",
+      "b": "A ballpoint pressed into the wrap after the cycle can punch a hole in the barrier. The label is completed before sterilization, using a method that does not damage the package.",
+      "c": "An internal count sheet stays hidden until the set is opened. Load identification belongs on the outside label so staff can trace the pack while the barrier is intact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-028",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "While wrapping a basin set, the technician finds a hole in the nonwoven sheet that is narrower than a pencil tip.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reject the damaged sheet and finish the basin wrap in intact nonwoven material."
+      },
+      {
+        "id": "b",
+        "text": "Cover the hole with chemical indicator tape and continue wrapping in the same sheet."
+      },
+      {
+        "id": "c",
+        "text": "Use the punctured sheet as the inner layer and rely on the outer sheet alone for the barrier."
+      },
+      {
+        "id": "d",
+        "text": "Sterilize the basin with no wrap, then put a dust cover on it before it is shelved."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The wrap is the sterile barrier, so a hole of any size makes that sheet unusable. Indicator tape does not patch a barrier, and a dust cover only protects a pack that was sterilized in an intact package. The basin is wrapped in intact material.",
+    "distractorExplanations": {
+      "b": "Indicator tape shows that a pack was exposed to a cycle. It does not repair a hole, so a punctured sheet is discarded rather than taped and used.",
+      "c": "A known hole in the inner layer is still a break in the packaging. Both sheets of a sequential wrap have to be intact, and the damaged sheet is not used.",
+      "d": "An unwrapped basin has no sterile barrier, and a dust cover added later does not create one. The basin has to be wrapped in intact material before sterilization."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-029",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "After a loaned trauma tray is cleaned, the vendor count sheet lists eight implants and the tray holds seven. The representative says the eighth implant is optional.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Change the count sheet to seven so the operating-room count will match the tray."
+      },
+      {
+        "id": "b",
+        "text": "Add a hospital implant of about the same size and package the set against the vendor list."
+      },
+      {
+        "id": "c",
+        "text": "Package the seven implants and let the surgeon decide during the case whether the loaner is complete."
+      },
+      {
+        "id": "d",
+        "text": "Stop packaging and reconcile the missing implant with the vendor sheet and facility policy."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A loaned set is checked against the vendor count sheet before it is packaged. A missing implant is reconciled and documented. The sheet is not rewritten to hide the gap, and a hospital look-alike is not dropped in. The set is not sterilized as a complete loaner until the contents match what was received and approved.",
+    "distractorExplanations": {
+      "a": "Changing the count sheet to match a short tray hides a missing implant. The vendor list is the receiving record, and the discrepancy has to be reconciled rather than erased.",
+      "b": "A hospital implant is not an automatic stand-in for a missing loaned implant. Substituting one without the approved process breaks the set record.",
+      "c": "Leaving the decision until the case packages an incomplete loaner. The vendor sheet and the tray are matched during preparation, before sterilization."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-assembly-packaging-030",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "assembly-packaging",
+    "prompt": "A reusable suction tip arrives at packaging with its stylet still seated. The technician wants both pieces kept together exactly as they left decontamination.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the stylet seated and add a second pouch so the extra layer makes up for the closed lumen."
+      },
+      {
+        "id": "b",
+        "text": "Pouch the handle for sterilization and send the stylet for high-level disinfection instead."
+      },
+      {
+        "id": "c",
+        "text": "Cap both ends of the suction tip so any leftover moisture stays in the lumen for the cycle."
+      },
+      {
+        "id": "d",
+        "text": "Remove the stylet per the IFU, then pouch both parts loose so each surface can be reached."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Multi-part devices are taken apart for sterilization when the IFU requires it, because a seated stylet blocks the lumen. The separated parts can still travel in one package so the operating room receives a complete device, but each surface has to be open to the sterilant.",
+    "distractorExplanations": {
+      "a": "A second pouch does not open a lumen blocked by a seated stylet. Extra packaging cannot substitute for taking the device apart so sterilant can enter.",
+      "b": "Splits one sterile-field device into two different processes. Both parts that enter the field are sterilized, and high-level disinfection is not the packaging step for the stylet.",
+      "c": "Caps close the lumen, keep sterilant out, and trap water that leads to a wet pack. The stylet comes out and the channel is left open as the IFU directs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   },
   {
     "id": "crcst-readiness-check-sterilization-001",
@@ -1001,23 +1991,23 @@
       },
       {
         "id": "b",
-        "text": "Freezing cells"
+        "text": "Alkylation of microbial DNA and proteins, which is how ethylene oxide kills"
       },
       {
         "id": "c",
-        "text": "Only UV light inside every autoclave load"
+        "text": "Oxidation of cell components by hot dry air, as in a dry-heat sterilizer"
       },
       {
         "id": "d",
-        "text": "Desiccation alone at room temp"
+        "text": "Crushing of microbial cells by chamber pressure, with heat as a side effect"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Saturated steam transfers heat efficiently; air removal critical in prevac systems.",
+    "explanation": "Steam sterilization kills by denaturing microbial proteins with saturated steam under pressure. The pressure keeps that steam saturated; it does not crush the cells. Ethylene oxide alkylates DNA and proteins, and dry heat oxidizes cell components. Those are different processes, not the steam mechanism.",
     "distractorExplanations": {
-      "b": "Not freezing.",
-      "c": "UV not the autoclave mechanism.",
-      "d": "Dry room temp not sterilization."
+      "b": "Confuses steam with ethylene oxide. Ethylene oxide alkylates DNA and proteins. Steam denatures proteins with moist heat under pressure.",
+      "c": "Confuses steam with dry-heat sterilization. Dry heat oxidizes cell components. Steam uses moist heat, not hot dry air.",
+      "d": "Treats chamber pressure as the killing force. Pressure holds steam in the saturated state. The kill is denaturation of proteins by moist heat."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1079,7 +2069,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Match BI organism to sterilant: stearothermophilus for steam; subtilis/niger historically for EO/dry heat variants—know current IFU.",
+    "explanation": "Geobacillus stearothermophilus spores are the biological indicator for steam sterilization. Ethylene oxide and dry heat are monitored with Bacillus atrophaeus spores. Industrial radiation has used Bacillus pumilus. The organism has to match the sterilant.",
     "distractorExplanations": {
       "a": "EO cycles are monitored with Bacillus atrophaeus spores, not Geobacillus stearothermophilus.",
       "b": "Dry heat is also monitored with Bacillus atrophaeus spores; G. stearothermophilus is the steam indicator organism.",
@@ -1145,7 +2135,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "EO is toxic/flammable concerns historically; aeration removes residuals; BI monitoring required.",
+    "explanation": "Ethylene oxide is chosen when the device instructions specify it for an item that cannot take steam heat or moisture. Residuals are toxic, so the load is aerated before use. It is not a faster substitute for heat-stable stainless steel, and linen that can tolerate steam is not a reason to use it.",
     "distractorExplanations": {
       "b": "EO residuals are toxic to patients and staff; aeration per IFU is required before use, even for urgent cases.",
       "c": "EO cycles plus aeration take many hours; heat-stable stainless steel should be steam sterilized.",
@@ -1244,11 +2234,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Implants are high risk—await BI before release when feasible. CDC and AAMI recommend quarantine when possible.",
+    "explanation": "An implant is quarantined until the biological indicator for that load is read. A Class 5 integrator shows exposure to cycle conditions and does not show microbial kill, so the implant is not released on it. A Bowie-Dick test checks air removal in a prevacuum sterilizer and is not a sterility test. Immediate-use steam sterilization is not the release path for an implant.",
     "distractorExplanations": {
-      "a": "AAMI permits early release on a Type 5 integrator only in documented emergencies; routine implant loads await the BI.",
-      "b": "IUSS is not recommended for implants; implant loads are processed in a full cycle with BI monitoring and quarantine.",
-      "c": "Bowie-Dick tests air removal in an empty chamber; it does not verify spore kill in an implant load."
+      "a": "A Class 5 integrator is a chemical indicator. It records exposure, not microbial kill, and an implant is not released on that result.",
+      "b": "Immediate-use steam sterilization does not release an implant. The implant still has to wait for a biological indicator from a full cycle.",
+      "c": "A Bowie-Dick test checks air removal in an empty prevacuum chamber. It does not show spore kill and does not clear an implant."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1265,23 +2255,23 @@
       },
       {
         "id": "b",
-        "text": "Packages are correctly moist with saturated steam conditions"
+        "text": "Condensate pools on the packs from steam that is carrying too much water"
       },
       {
         "id": "c",
-        "text": "BI passes prove superheating always desirable"
+        "text": "A negative biological indicator is read as proof that drier steam was the aim"
       },
       {
         "id": "d",
-        "text": "Air is perfectly removed and steam saturated ideally as the definition of superheat"
+        "text": "Air removal is complete and the chamber holds fully saturated steam"
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Saturated steam is required; superheated steam behaves more like dry heat at that temperature.",
+    "explanation": "Superheating happens when steam is too dry. Saturated steam has to contact the device so moist heat can denature proteins. Dried-out steam behaves more like dry heat and sterilizes poorly. Condensate, a negative biological indicator, and properly saturated steam are not signs that superheating occurred or that it helps.",
     "distractorExplanations": {
-      "b": "Saturated steam is desired.",
-      "c": "BI pass doesn't define superheat as good.",
-      "d": "Proper saturated conditions aren't superheat."
+      "b": "Confuses superheated steam with wet steam. Heavy condensate means the steam carried too much water, not that the steam was dried out.",
+      "c": "A negative biological indicator does not show that superheating occurred, and drier steam is not a goal. Superheated steam sterilizes poorly.",
+      "d": "Complete air removal and saturated steam are what the cycle needs. Superheat is steam heated beyond saturation until it is too dry to sterilize well."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1310,7 +2300,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Gravity cycles need proper loading to avoid air trapping; longer times often than prevac.",
+    "explanation": "In a gravity-displacement sterilizer, incoming steam pushes cooler, heavier air down and out through the chamber drain. The cycle does not pull air out with vacuum pulses, and it is not a steam-flush pressure-pulse design. Heating the chamber dry is not how the air leaves. The load still has to be arranged so pockets of air are not trapped.",
     "distractorExplanations": {
       "a": "Vacuum pulses describe dynamic-air-removal (prevacuum) sterilizers, not gravity displacement.",
       "c": "Steam-flush pressure-pulse is a separate dynamic air-removal design, not passive gravity displacement.",
@@ -1485,34 +2475,529 @@
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
   },
   {
-    "id": "crcst-readiness-check-storage-distribution-001",
+    "id": "crcst-readiness-check-sterilization-016",
     "examSlug": "crcst-readiness-check",
-    "topicId": "storage-distribution",
-    "prompt": "Sterile storage should be",
+    "topicId": "sterilization",
+    "prompt": "A wrapped basin set leaves the steam sterilizer with fully changed external indicator tape. The technician tells the circulator that the color change proves the instruments are sterile. What is the right interpretation?",
     "options": [
       {
         "id": "a",
-        "text": "Clean, dry, well-ventilated, above the floor, away from sinks/windows moisture"
+        "text": "The tape change stands in for a biological indicator and is enough to call the set sterile."
       },
       {
         "id": "b",
-        "text": "Closed cabinets or open wire shelving with the bottom shelf resting on the floor"
+        "text": "The tape change shows that residual air was removed from the prevacuum chamber."
       },
       {
         "id": "c",
-        "text": "Kept above 75% relative humidity to prevent packages from drying out"
+        "text": "The tape shows exposure to a cycle condition, not that microbes were killed."
       },
       {
         "id": "d",
-        "text": "Next to the sterilizer unload area so warm packs can finish drying"
+        "text": "The tape change clears the set for sterile storage even when the load record is missing."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An external chemical indicator shows that the package was exposed to a condition of the cycle. It does not show that microorganisms were killed. Microbial kill is shown by a biological indicator, which is a different monitor from the tape on the wrap.",
+    "distractorExplanations": {
+      "a": "A color-change tape cannot stand in for a biological indicator. The tape records exposure, and the biological indicator is the monitor that challenges the cycle with resistant spores.",
+      "b": "Air removal in a prevacuum sterilizer is checked with a Bowie-Dick test. External tape on a pack does not show whether residual air left the chamber.",
+      "d": "A changed indicator does not complete the load record or prove sterility. Exposure of the wrap is not a reason to skip documentation and place the set in storage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-017",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "Printout parameters were met and the internal integrator changed, but the biological indicator from this steam load is still incubating. What has been shown so far?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The load is sterile, because an integrator combines time and steam exposure into proof of microbial kill."
+      },
+      {
+        "id": "b",
+        "text": "Incubation can be skipped, because a complete printout and a passed integrator close the monitoring steps."
+      },
+      {
+        "id": "c",
+        "text": "Recorded physical and chemical results do not show that the microorganisms were killed."
+      },
+      {
+        "id": "d",
+        "text": "The printout and integrator together are the monitor that shows resistant spores were killed."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A sterilizer printout is a physical monitor, and an integrator is a chemical indicator. Both can show that cycle conditions occurred. A biological indicator is the only monitor that shows whether resistant microorganisms were killed, and that result is not known while the indicator is still incubating.",
+    "distractorExplanations": {
+      "a": "An integrator responds to exposure conditions. It does not contain spores, so a color change is not proof that microorganisms were killed.",
+      "b": "Skipping incubation drops the biological reading. A quiet printout and a passed integrator do not show microbial kill on their own.",
+      "d": "Physical and chemical monitors support the cycle record. They still do not show that resistant spores were killed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-018",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "The morning readout shows a positive biological indicator from yesterday's steam load, and two trays from that load are already in the operating room. What should staff do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave those trays in use, because the internal chemical indicators in the trays had already changed color."
+      },
+      {
+        "id": "b",
+        "text": "Wait for the next routine biological indicator before deciding whether this load is affected."
+      },
+      {
+        "id": "c",
+        "text": "Recall every item from that load, including the trays already in the operating room."
+      },
+      {
+        "id": "d",
+        "text": "Take back the two issued trays, and leave the unopened packs from that load in sterile storage."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A positive processed biological indicator means the cycle did not kill the test microorganisms. Every item from that load is suspect, including items already delivered and packs still in storage. Staff recall the load and reprocess the items, and the cause is investigated before that sterilizer returns to routine use.",
+    "distractorExplanations": {
+      "a": "A changed chemical indicator shows exposure to a condition. It does not override a biological indicator that shows the test microorganisms survived.",
+      "b": "A failed biological indicator is handled for that load at once. Waiting for a later cycle leaves suspect items available for use.",
+      "d": "The failure belongs to the whole load, not only the trays that already left the department. Unopened packs from the same load are recalled too."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-019",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "The coordinator wants three laparoscopy sets run on an immediate-use steam cycle tonight and staged on tomorrow morning's case carts because wrapped stock is short. What is the right response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Run the immediate-use cycle and date the sets for sterile storage, because the steam matches a terminal cycle."
+      },
+      {
+        "id": "b",
+        "text": "Use immediate-use steam sterilization to rebuild inventory whenever the terminal sterilizers are already booked."
+      },
+      {
+        "id": "c",
+        "text": "Process the sets unwrapped tonight and keep them in a covered basin until the first case tomorrow morning."
+      },
+      {
+        "id": "d",
+        "text": "Turn down the request. Immediate-use steam sterilization covers an urgent need, not stock for later."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Immediate-use steam sterilization is for an urgent need, when a cleaned item will be used right away. It is not how inventory is terminally sterilized and then held for a later case. Sets needed tomorrow are cleaned, packaged, and run on a full cycle intended for storage.",
+    "distractorExplanations": {
+      "a": "Using steam does not turn an immediate-use cycle into terminal stock. Immediate-use items are not packaged and dated for later sterile storage.",
+      "b": "A full terminal sterilizer that is already booked is a schedule problem. Immediate-use processing is not the routine way to rebuild wrapped inventory.",
+      "c": "Holding an unwrapped item overnight is storage. Immediate-use sterilization does not create a sterile item that can wait until morning."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-020",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "During a case, a nurse asks the department to release a loaner implant because a Class 5 indicator passed on an earlier cycle in the same sterilizer. How should that implant be handled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold it for its own biological indicator instead of releasing it on that chemical result."
+      },
+      {
+        "id": "b",
+        "text": "Release it, because a Class 5 indicator from the same sterilizer already showed microbial kill for the day."
+      },
+      {
+        "id": "c",
+        "text": "Run it immediate-use and send it as soon as the external indicator tape on the container changes."
+      },
+      {
+        "id": "d",
+        "text": "Accept the earlier Class 5 result, skip a new biological indicator, and still document the implant as quarantined."
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Maintain package integrity; positive pressure clean areas preferred.",
+    "explanation": "An implant needs a biological indicator in its own load. A Class 5 indicator is a chemical indicator, and a result from an earlier cycle does not cover this implant. The implant should not be released on a chemical indicator alone.",
     "distractorExplanations": {
-      "b": "The bottom shelf must be solid and raised 8–10 inches off the floor to protect packs from floor-cleaning splash.",
-      "c": "Sterile storage humidity should not exceed 60%; high humidity can compromise packaging and promote growth.",
-      "d": "Packs must be cool and dry before storage; storage is separate from unloading and packs are not dried on shelves."
+      "b": "A Class 5 indicator shows exposure to cycle conditions. It does not show microbial kill, and an earlier cycle does not monitor this implant load.",
+      "c": "Immediate-use steam sterilization is not the routine process for an implant, and a tape change does not replace the biological indicator.",
+      "d": "Quarantine means the implant waits for its own biological indicator. Writing quarantine on the record while skipping that indicator does not meet the requirement."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-021",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "A new camera's instructions specify one low-temperature cycle. The technician runs the department's shortest scope cycle instead, because that cycle usually finishes first. What is wrong with that choice?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing is wrong if the shortest cycle uses the sterilant family named in another camera's instructions."
+      },
+      {
+        "id": "b",
+        "text": "The shortest cycle is acceptable once the sterilizer printout shows that the chosen parameters were met."
+      },
+      {
+        "id": "c",
+        "text": "This camera's cycle has to come from its own instructions and the sterilizer instructions."
+      },
+      {
+        "id": "d",
+        "text": "The camera should go to steam whenever the low-temperature sterilizer queue is longer than the steam queue."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Sterilization parameters come from the device instructions for use and the sterilizer instructions for use. A cycle that is familiar or fast does not replace those instructions when this camera specifies a different cycle. Staff match both documents before the item is processed.",
+    "distractorExplanations": {
+      "a": "Another device's instructions do not transfer to this camera. The cycle has to be one this camera's instructions and the sterilizer instructions both allow.",
+      "b": "A complete printout shows what the selected cycle did. It does not make an unapproved cycle acceptable for this camera.",
+      "d": "Queue time does not choose the method. If steam is not a method this camera's instructions allow, the item waits for the correct low-temperature cycle."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-022",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "A uniform Bowie-Dick sheet is recorded at the start of the shift, and the technician says the result proves the first wrapped load will come out sterile. What does that test show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It shows that resistant spores inside a process challenge device were killed on this sterilizer."
+      },
+      {
+        "id": "b",
+        "text": "It shows that every package in the first wrapped load reached sterilizing conditions under the wrap."
+      },
+      {
+        "id": "c",
+        "text": "It shows whether air was removed in the prevacuum sterilizer, and it is not a sterility test."
+      },
+      {
+        "id": "d",
+        "text": "It shows that implants placed in the first load can be released without a biological indicator."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A Bowie-Dick test checks air removal in a prevacuum sterilizer. A uniform sheet supports that this air-removal test passed. It is not a sterility test, and it does not replace the biological indicator or the chemical indicators used with the wrapped load.",
+    "distractorExplanations": {
+      "a": "Spore kill is checked with a biological indicator in a process challenge device. A Bowie-Dick sheet does not show that those spores were killed.",
+      "b": "The test does not read conditions inside the first wrapped load. Air removal and in-pack exposure are separate checks.",
+      "d": "Implants still need a biological indicator. A passing air-removal test does not clear an implant for release."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-023",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "A fiber-optic light cord will be damaged by steam, and the technician must choose a sterilization method before the afternoon list. Which decision follows the instructions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Choose ethylene oxide, hydrogen peroxide gas plasma, or vaporized hydrogen peroxide, because a heat-sensitive cord can take any low-temperature method."
+      },
+      {
+        "id": "b",
+        "text": "Run an immediate-use steam cycle and shorten the exposure, because the cord is needed on the same day."
+      },
+      {
+        "id": "c",
+        "text": "Place the cord in a standard steam cycle and wrap it in a towel so condensate does not sit on the optics."
+      },
+      {
+        "id": "d",
+        "text": "Use the low-temperature method this cord's instructions name, not steam or a different method."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When steam would damage a device, the low-temperature method is taken from that device's instructions for use and must also be allowed by the sterilizer instructions. Ethylene oxide, hydrogen peroxide gas plasma, and vaporized hydrogen peroxide are not interchangeable just because each runs cooler than steam.",
+    "distractorExplanations": {
+      "a": "Those are different low-temperature processes. The cord's instructions name which method is compatible, and staff do not pick among them because the item is heat-sensitive.",
+      "b": "A shorter steam exposure does not make steam safe for a cord that steam will damage. Immediate-use processing does not fix a compatibility problem.",
+      "c": "A towel does not protect optics from steam. If the instructions say steam will damage the cord, a steam cycle is the wrong method."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-024",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "While assembling a basin set, the technician applies external indicator tape and skips an internal indicator, saying the tape will show that steam reached the instruments. What is missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An internal chemical indicator placed in the area of the set that steam reaches last."
+      },
+      {
+        "id": "b",
+        "text": "A Bowie-Dick test sheet inside the basin, because that sheet proves the finished set is sterile."
+      },
+      {
+        "id": "c",
+        "text": "Nothing is missing, because external tape changes after steam has reached the center of the tray."
+      },
+      {
+        "id": "d",
+        "text": "A second strip of external tape on the bottom of the wrap to confirm the chamber drain reading."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "External indicator tape shows that the outside of the package was exposed to a cycle condition. It does not show that steam reached the instruments. An internal chemical indicator goes in the area of the set that is hardest for the sterilant to reach. Neither indicator shows microbial kill.",
+    "distractorExplanations": {
+      "b": "A Bowie-Dick test checks air removal in a prevacuum sterilizer. It is not placed inside a basin, and it is not a sterility test for the set.",
+      "c": "External tape can change when steam has not contacted the hardest-to-reach part of a basin set. That is why an internal indicator is placed there.",
+      "d": "The chamber drain reading belongs to the sterilizer's physical monitors. Extra tape on the outside of the wrap does not show conditions inside the basin."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-025",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "To free space in the incubator, a technician discards the unprocessed control and incubates the biological indicator from the steam load by itself. The processed indicator reads negative. What is the problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is no problem, because a negative processed indicator is enough to show that the spores were killed."
+      },
+      {
+        "id": "b",
+        "text": "The processed indicator should have stayed at room temperature instead of going into the incubator."
+      },
+      {
+        "id": "c",
+        "text": "A negative processed result does not prove the test was valid without a positive control."
+      },
+      {
+        "id": "d",
+        "text": "Control indicators belong to ethylene oxide loads, so this steam load may skip the control."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A biological indicator test includes an unprocessed control from the same lot. That control must read positive, which shows the spores were able to react and the incubation conditions worked. If the control is discarded, a negative processed indicator cannot be trusted as evidence of microbial kill.",
+    "distractorExplanations": {
+      "a": "A negative test indicator is meaningful when the unprocessed control is positive. Without the control, a damaged indicator or a failed incubator can look like a pass.",
+      "b": "The indicator is incubated under the conditions its manufacturer specifies. Leaving it at room temperature is not a valid reading of the test.",
+      "d": "Steam loads and low-temperature loads both use a control biological indicator. The control is not limited to ethylene oxide."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-026",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "One peel pouch leaves a completed steam cycle with unchanged external indicator ink, even though the sterilizer printout shows no alarm. What should happen to that pouch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Issue the pouch, because a normal printout carries more weight than the ink on a single package."
+      },
+      {
+        "id": "b",
+        "text": "Issue the pouch if it is cool and dry, and record the unchanged ink as a printing defect."
+      },
+      {
+        "id": "c",
+        "text": "Stick fresh indicator tape on the pouch and send it to the operating room without another cycle."
+      },
+      {
+        "id": "d",
+        "text": "Do not issue the pouch, because its indicator did not show exposure to the cycle."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A chemical indicator that does not change has not shown that this pouch was exposed to a sterilization condition. The printout monitors the chamber cycle and does not override the indicator on the package. The pouch is not issued, and the reason the indicator failed is checked before the item is reprocessed.",
+    "distractorExplanations": {
+      "a": "A physical printout and the indicator on the package answer different questions. A quiet printout does not repair a pouch whose indicator never changed.",
+      "b": "Cool, dry packaging is checked before issue, but it does not replace a failed exposure indicator. Staff do not guess the ink was defective and then issue the pouch.",
+      "c": "New tape on a pouch that already left the sterilizer does not show what cycle this pouch received. The item needs reprocessing, not a new label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-027",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "Trying to finish the cart, a technician stacks peel pouches flat and nests closed basins together in the steam sterilizer. Why is that arrangement a problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is a problem for an ethylene oxide load, where flat pouch stacks let the gas pool between packages."
+      },
+      {
+        "id": "b",
+        "text": "Nested basins do well in steam because the metal holds heat, and flat pouch stacks dry faster."
+      },
+      {
+        "id": "c",
+        "text": "The arrangement is acceptable when each pouch has external tape and each basin holds an internal indicator."
+      },
+      {
+        "id": "d",
+        "text": "Flat pouch stacks and nested basins keep steam from contacting surfaces and trap air."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Steam has to contact surfaces, and air has to be able to leave the package. Peel pouches are stood on edge so the sterilant can circulate, and basins are placed so air and condensate are not trapped. Flat stacks and nested closed basins create pockets steam may not reach. Indicators cannot open a path the load arrangement blocked.",
+    "distractorExplanations": {
+      "a": "This error is in a steam load. Flat stacks do not help an ethylene oxide cycle by letting gas pool, and they are the wrong arrangement for steam contact.",
+      "b": "Metal mass does not make nested, closed basins acceptable. Flat stacks hold moisture and keep steam from reaching the pouch faces.",
+      "c": "Indicators show conditions where they sit. They do not create a path for steam through a flat stack or a nested basin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-028",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "An implant tray's cycle printout finished with no alarm, so the operator wants to release the tray while its biological indicator is still incubating. What is the correct hold?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep this implant quarantined until its own biological indicator result has been read."
+      },
+      {
+        "id": "b",
+        "text": "Release the implant now, because a finished printout is the monitor that shows microbial kill."
+      },
+      {
+        "id": "c",
+        "text": "Release the implant if the Class 5 integrator in the tray changed, and file the biological indicator as optional paperwork."
+      },
+      {
+        "id": "d",
+        "text": "Put the implant into sterile storage for tomorrow's case and correct the record when the biological indicator is read."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A sterilizer printout records physical cycle conditions. It does not show microbial kill. An implant needs a biological indicator and should not be released on the printout or on a chemical indicator alone. The tray stays quarantined until that biological result is known.",
+    "distractorExplanations": {
+      "b": "The printout shows that the cycle ran. Microbial kill is shown by the biological indicator, which has not been read yet.",
+      "c": "A Class 5 integrator is a chemical indicator. It does not replace the biological indicator, and the implant is not released on that chemical result alone.",
+      "d": "Moving the implant into storage for a later case releases it. Quarantine continues until the biological indicator result is known."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-029",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "A student plans to log 21 percent of the 400 hands-on hours in sterilization and disinfection so the hours will match the exam outline. What should the preceptor correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing needs correcting. The November 2023 outline weight is also the hands-on rule, so 21 percent of 400 hours is the requirement."
+      },
+      {
+        "id": "b",
+        "text": "Log 120 sterilization and disinfection hours. The 21 percent figure is the exam weight, not the hour rule."
+      },
+      {
+        "id": "c",
+        "text": "Log all 400 hours under sterilization and disinfection, because that work is the main block of the experience requirement."
+      },
+      {
+        "id": "d",
+        "text": "Drop the hour log. The exam publishes a cut score, and the outline percentage replaces the hands-on requirement."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The hands-on requirement is 400 hours, and 120 of those hours are in sterilization and disinfection. On the November 2023 outline, the sterilization process is 21 percent of the exam. Those measures are not the same. The student logs 120 hours, not 21 percent of 400.",
+    "distractorExplanations": {
+      "a": "Outline weight and clinical hours measure different things. Twenty-one percent of the exam is not the formula used to set the 400-hour experience.",
+      "c": "Sterilization and disinfection is 120 of the 400 hours, not the entire experience. The other hours belong to the remaining work areas.",
+      "d": "The hours are still required. The exam has no published cut score, and an outline percentage does not replace the 120 hours."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-sterilization-030",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "sterilization",
+    "prompt": "A stainless tray and a steam-sensitive cord are packaged as one set. The technician plans a single steam cycle because the tray is heat-stable metal. How should the set be processed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Steam the whole set. The heat-stable tray sets the cycle for every device packaged with it."
+      },
+      {
+        "id": "b",
+        "text": "Run the cord on an immediate-use steam cycle and the tray on a terminal steam cycle, then place both on the same case cart."
+      },
+      {
+        "id": "c",
+        "text": "Send the set through hydrogen peroxide gas plasma, which is the usual choice whenever a set contains metal instruments."
+      },
+      {
+        "id": "d",
+        "text": "Steam the tray, and sterilize the cord by the low-temperature method its instructions name."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Each device follows its own instructions for use, matched to the sterilizer instructions. Heat-stable stainless instruments are steamed. A cord that steam would damage is processed by a low-temperature method its instructions name, such as ethylene oxide, hydrogen peroxide gas plasma, or vaporized hydrogen peroxide. The metal tray does not choose the cycle for the cord.",
+    "distractorExplanations": {
+      "a": "Putting devices in one set does not let the heat-stable piece choose the method. If steam would damage the cord, the cord's instructions still rule out a steam cycle.",
+      "b": "Immediate-use steam sterilization is not the process for a steam-sensitive cord, and it is not a way to finish part of a set for later assembly on a cart.",
+      "c": "Hydrogen peroxide gas plasma is one low-temperature option, not the default for metal. The tray can be steamed, and the cord follows the method its instructions name."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-001",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "Cooled, dry sterile packs are ready to leave the sterilizer cart. The open wire cart under the hallway window has its bottom shelf on the floor, and the decontamination sink is across that hall. Which storage practice is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Store the packs clean and dry, raised off the floor, and away from the window and the sink."
+      },
+      {
+        "id": "b",
+        "text": "Use that wire cart, with the bottom shelf left on the floor under the window, so the packs are easy to reach."
+      },
+      {
+        "id": "c",
+        "text": "Move the packs into a humid room so the wraps do not dry out and become brittle."
+      },
+      {
+        "id": "d",
+        "text": "Leave the packs on the unload rack and let the remaining heat finish drying the wrap."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Sterile storage keeps packs clean and dry, off the floor, and away from windows, sinks, and other moisture. A shelf on the floor takes splash from cleaning. A window and a sink are moisture sources. Packs are already cool and dry before they are shelved, so the unload rack is not used to finish drying them.",
+    "distractorExplanations": {
+      "b": "A bottom shelf on the floor sits in cleaning splash, and a window adds moisture. Sterile packs are stored raised, clean, and dry, not on that cart.",
+      "c": "Raising the humidity so wraps do not dry out wets the barrier instead. Sterile storage stays dry; a humid room is the wrong control.",
+      "d": "Packs go into storage only after they are cool and dry. Residual heat on the unload rack is not a drying method, and that rack is not the shelf."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1541,7 +3026,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "FIFO reduces outdates and aging damage.",
+    "explanation": "First in, first out puts the oldest sterile stock ahead of newer stock of the same item, so the older pack is issued first. Last in, first out leaves those older packs at the back, where handling is more likely to damage them. Tray weight and which surgeon likes the set do not decide the order.",
     "distractorExplanations": {
       "a": "LIFO leaves older packs at the back to outdate or be damaged; sterile stock rotates first in, first out.",
       "c": "Weight has no bearing on stock rotation; date or lot order (FIFO) determines which packs are used first.",
@@ -1574,7 +3059,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "At-point inspection is the last safety net.",
+    "explanation": "Before a pack is issued, staff check that the packaging is intact and dry, that the external indicator shows the cycle was run, and that no event or facility dating rule has taken the pack out of service. The pack is not opened for that check. The internal indicator is read in the operating room, and a routine non-implant load is not held back for a biological reading.",
     "distractorExplanations": {
       "a": "Package integrity and dryness are checked before issue, not deferred to opening; the load label alone is insufficient.",
       "b": "Opening a pack to see the internal CI breaks sterility; the internal CI is read by the scrub person at point of use.",
@@ -1591,7 +3076,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Open arms stacking packs against scrub tops casually through rain"
+        "text": "Carrying the packs in your arms so they rest against your scrubs in an open corridor"
       },
       {
         "id": "b",
@@ -1607,11 +3092,11 @@
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Separate clean/soiled logistics; clean carts between uses.",
+    "explanation": "Sterile items travel in a covered or closed cart and are handled so the wrap stays dry and is not crushed. Clean deliveries and soiled returns are separate jobs. A cart that carried soiled instruments is cleaned before it carries sterile packs, and packs are not carried against scrubs through open traffic or set on the floor.",
     "distractorExplanations": {
-      "a": "Exposure contaminates.",
-      "b": "Floor is dirty.",
-      "c": "Case cart roles must not cross-contaminate."
+      "a": "Packs carried against scrub clothing through open traffic pick up soil from that contact. Sterile items stay on a covered or closed cart.",
+      "b": "The elevator floor is a soiled surface. A pack set there picks up contamination from that contact and cannot be issued as sterile.",
+      "c": "A cart used for decontamination cannot carry sterile packs until it has been cleaned. Switching roles without that cleaning cross-contaminates the load."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1640,7 +3125,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "Immediate-use items aren't inventory stock.",
+    "explanation": "Immediate-use steam sterilization supplies an item for the procedure at hand. The item is moved with aseptic technique and used for that case. It is not wrapped afterward, parked in sterile storage, or held on a cart until a biological indicator is read. That biological hold is for implant loads, not for immediate-use items.",
     "distractorExplanations": {
       "b": "IUSS items are not stored for later use; they are transported aseptically and used for the case at hand.",
       "c": "Wrapping after IUSS does not create a validated sterile package; IUSS items are used immediately.",
@@ -1690,7 +3175,7 @@
     "options": [
       {
         "id": "a",
-        "text": "The sterilization method, with steam packs expiring after 30 days"
+        "text": "The sterilization method used, with steam packs expiring after 30 days"
       },
       {
         "id": "b",
@@ -1706,7 +3191,7 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Even with dates, inspect for compromise events.",
+    "explanation": "Once the cycle is done, shelf life does not come from which sterilization method was used or from the chemical indicator inside the pack. It depends on how the pack is stored, whether an event has broken the barrier, and the dating practice the facility actually follows. The pack is still inspected when it is issued.",
     "distractorExplanations": {
       "a": "No fixed 30-day steam expiry applies; shelf life depends on events and storage conditions per facility policy.",
       "b": "The CI class shows how conditions were monitored; it does not determine how long the pack stays sterile.",
@@ -1719,31 +3204,31 @@
     "id": "crcst-readiness-check-storage-distribution-008",
     "examSlug": "crcst-readiness-check",
     "topicId": "storage-distribution",
-    "prompt": "If a sterile package is dropped on the floor",
+    "prompt": "Wrapped packs are dry but still hot when the sterilizer cart is unloaded. A technician wants the cart cleared before the packs have cooled. What should be done with these packs?",
     "options": [
       {
         "id": "a",
-        "text": "Use it if the outer wrap shows no tears"
+        "text": "Bag each hot pack so dust cannot settle, then place the closed bags on the sterile shelf."
       },
       {
         "id": "b",
-        "text": "Remove the outer wrap and use the inner pack"
+        "text": "Set the hot packs on the sterile shelf against an outside window so moving air cools them."
       },
       {
         "id": "c",
-        "text": "Wipe it down and return it to sterile storage"
+        "text": "Stack the hot packs on the sterile shelf now so the unload cart can go back into service."
       },
       {
         "id": "d",
-        "text": "Consider it contaminated and reprocess"
+        "text": "Leave the packs uncovered until they have cooled, then store them."
       }
     ],
     "correctOptionId": "d",
-    "explanation": "Floor contact contaminates wraps; rigid containers have specific IFU exceptions sometimes. A validated rigid container IFU may specify exceptions.",
+    "explanation": "Packs are placed in sterile storage only after they are cool and dry. Bagging or shelving a hot pack traps vapor and can wet the wrap, and that moisture compromises the barrier. An outside window is not a cooling station. The packs stay uncovered on the unload cart until they are cool and dry, and only then move into storage.",
     "distractorExplanations": {
-      "a": "Floor impact can force contaminated air through the wrap and cause unseen damage; an intact look does not clear it.",
-      "b": "Both wrap layers of a sequentially wrapped pack form one barrier; a dropped pack is contaminated, not unwrapped and used.",
-      "c": "Wiping the exterior cannot reverse contamination from floor contact; the item is reprocessed."
+      "a": "A dust cover or bag on a hot pack traps vapor against the wrap. Cover a pack only after it has cooled and is still dry.",
+      "b": "An outside window brings condensation and is not where hot packs cool. They cool uncovered on the unload cart, then move to dry storage.",
+      "c": "Putting hot packs on the shelf to free a cart stores them before they are cool and dry. Cooling belongs on the unload cart, not on the sterile shelf."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
@@ -1789,7 +3274,7 @@
     "options": [
       {
         "id": "a",
-        "text": "A package in sterile storage reaches its event-related expiration date"
+        "text": "A single package with a stained wrap is found on the sterile shelf and pulled for reprocessing"
       },
       {
         "id": "b",
@@ -1805,9 +3290,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Have a written recall procedure with risk assessment and OR notification.",
+    "explanation": "A recall starts when a biological indicator fails or another sterilizer malfunction may have affected items that were already released. The department uses its written recall steps, identifies those items, and tells the operating room. One pack that is out of service is pulled and reprocessed on its own. A negative biological result means the load passed and is not a recall.",
     "distractorExplanations": {
-      "a": "An expired or compromised package is pulled and reprocessed individually; a recall addresses a load-wide process failure.",
+      "a": "A stained wrap means that one package is compromised and is pulled for reprocessing by itself. Finding one damaged pack is not the start of a load recall.",
       "c": "A dull instrument is a repair and inspection issue, not evidence of sterilization failure needing a load recall.",
       "d": "A negative BI means no spore growth (a pass); recalls are triggered by positive BIs or other sterilizer malfunction."
     },
@@ -1822,7 +3307,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Kept at high humidity so packages do not become brittle and tear"
+        "text": "Kept at high humidity so packages do not become brittle and tear apart"
       },
       {
         "id": "b",
@@ -1838,9 +3323,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Environmental controls protect package integrity until use.",
+    "explanation": "A sterile storage room stays clean and dry, with ventilation and limited traffic, so moisture and casual handling do not compromise packs before they are issued. It is not placed against the decontamination pass-through, and it is not left open for anyone to browse.",
     "distractorExplanations": {
-      "a": "Humidity in sterile storage should stay at or below 60%; high humidity wets packaging and supports growth.",
+      "a": "High humidity wets packaging and is not the way to keep packs from tearing. Storage stays clean and dry under the facility's conditions; a humid room is the wrong control.",
       "c": "Sterile storage is separated from decontam and kept positive; proximity to soiled areas risks contamination.",
       "d": "Sterile storage has limited access for trained staff to reduce traffic and handling damage to packages."
     },
@@ -1867,15 +3352,15 @@
       },
       {
         "id": "d",
-        "text": "Thirty days pass for wrapped packs and six months for pouches"
+        "text": "The outside of an intact wrap is touched during ordinary handling"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Many facilities use event-related dating; integrity events outdate the item. Facility policy governs the details.",
+    "explanation": "Event-related sterility holds while the barrier stays intact. It ends when an event compromises the package, such as moisture, a tear, or handling that damages the pack. A printed expiration date, taking the sterilizer out of service, and a routine touch of an intact wrap do not end it.",
     "distractorExplanations": {
       "a": "Fixed calendar dating is time-related sterility; event-related sterility depends on package condition, not a date.",
       "c": "Equipment service does not outdate stored packages; a compromising event or facility policy does.",
-      "d": "These are arbitrary time limits; event-related practice holds sterility until an event such as moisture or tearing."
+      "d": "Touching the outside of an intact wrap during ordinary handling does not break the barrier. Event-related sterility ends on a real compromise, such as moisture, a tear, or a hole."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
@@ -1904,7 +3389,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Covered transport and careful handling prevent contamination and damage.",
+    "explanation": "Sterile packages travel in a clean covered or closed cart, placed so heavy trays do not crush peel packs or wrap. An open cart leaves them open to dust and contact. A cart that carried soiled instruments is cleaned before it is used for sterile packs. Wiping the shelves between those trips does not change a soiled cart into a clean one.",
     "distractorExplanations": {
       "a": "Open carts expose packs to dust and contact; sterile items move in covered or enclosed carts.",
       "c": "Heavy trays crush peel packs and stacking compresses wrap; packages are placed to avoid compression and punctures.",
@@ -1925,7 +3410,7 @@
       },
       {
         "id": "b",
-        "text": "Ensure newer stock is used first because it was sterilized more recently"
+        "text": "Ensure that newer stock is used first because it was sterilized more recently"
       },
       {
         "id": "c",
@@ -1937,7 +3422,7 @@
       }
     ],
     "correctOptionId": "a",
-    "explanation": "FIFO reduces outdates and supports inventory control.",
+    "explanation": "First in, first out issues older sterile stock before newer stock of the same item, inside whatever dating practice the facility uses. That rotation cuts the time packs spend being handled on the shelf. It does not replace the check of the package at issue, and it does not waive biological monitoring for implants.",
     "distractorExplanations": {
       "b": "That describes LIFO; FIFO rotates older stock forward so it is used before it expires or is damaged.",
       "c": "FIFO is about rotation; implant loads still require BI monitoring and quarantine whatever their shelf order.",
@@ -1954,7 +3439,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Wipe it with disinfectant and return it to sterile storage"
+        "text": "Wipe the outside with a hospital disinfectant and return the pack to sterile storage for the next case"
       },
       {
         "id": "b",
@@ -1970,7 +3455,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Dropped packages are treated as contaminated unless policy allows a validated exception.",
+    "explanation": "A sterile package that hits the floor is treated as contaminated and goes back for reprocessing. The impact can force soil through a wrap that still looks dry and untorn, so appearance does not clear it. A disinfectant wipe and a new load label do not reprocess the pack. Facility policy is the path for that reprocessing, not a reason to put the pack back on the shelf.",
     "distractorExplanations": {
       "a": "Disinfectant wiping cannot reverse contamination from floor contact; the pack must be reprocessed.",
       "c": "A dropped pack can have unseen damage, and impact can force contaminants through wrap; appearance does not clear it.",
@@ -1978,5 +3463,500 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-016",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A technician rotating the suture shelf finds a sealed pack that is dry, with no hole and no broken seal. A coworker wants it discarded because the sterilization date looks old. What should happen to that pack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the intact pack in sterile storage, and use the sterilization date to rotate stock."
+      },
+      {
+        "id": "b",
+        "text": "Discard the pack, because an old sterilization date ends shelf life even when the wrap and seal are intact."
+      },
+      {
+        "id": "c",
+        "text": "Wipe the wrap with disinfectant and move the pack in front of the newer suture stock."
+      },
+      {
+        "id": "d",
+        "text": "Open a corner to read the internal indicator, then tape the pack shut if the indicator changed."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Event-related sterility means the pack stays sterile until an event compromises it, such as a hole, moisture, or a broken seal. An older sterilization date, with the barrier still intact, is not that event. The date remains so staff can rotate first in, first out and trace the pack to its load.",
+    "distractorExplanations": {
+      "b": "An older sterilization date supports rotation and traceability. It does not, by itself, end sterility when the seal, wrap, and dryness are intact.",
+      "c": "Wiping a wrap with disinfectant does not decide sterility, and moving an older pack to the front reverses first-in, first-out rotation.",
+      "d": "Opening the pack breaks the barrier. Tape cannot make that pack sterile again, and the internal indicator is read at use, not in storage."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-017",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "Two sterile wrapped hernia sets sit on the same shelf, and the afternoon hernia repair needs one of them. Both sets are dry and sealed. The set at the back was sterilized before the set in front. Which set should go to the repair?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Issue the front set, because the more recently sterilized pack is the safer one to send into the operating room."
+      },
+      {
+        "id": "b",
+        "text": "Issue the lighter set, because rotation follows tray weight rather than which set was sterilized first."
+      },
+      {
+        "id": "c",
+        "text": "Issue the set that was sterilized earlier, not the one in front, so the older intact stock is used first."
+      },
+      {
+        "id": "d",
+        "text": "Issue either set, because event-related sterility makes sterilization order irrelevant to the pick."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "First in, first out issues the older sterile set before the newer one when both are dry and sealed. The set sterilized earlier is the one that goes to the hernia repair. Taking the front set because it is newer leaves the older intact set on the shelf.",
+    "distractorExplanations": {
+      "a": "Choosing the more recently sterilized set is last-in, first-out. It leaves the older intact set behind and defeats stock rotation.",
+      "b": "Tray weight has nothing to do with which sterile set is issued. Rotation follows which set was sterilized first when both have passed inspection.",
+      "d": "Event-related sterility decides whether a pack is still sterile, not which intact pack is issued first. First in, first out still selects the earlier set."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-018",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "While pulling a minor tray for the next case, the technician sees a small hole in the outer wrap of the tray just taken off the shelf. What is the correct next step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cover the hole with sterilization tape, initial the repair, and load the tray so the case is not delayed."
+      },
+      {
+        "id": "b",
+        "text": "Take off the outer wrap and issue the inner wrap if that layer has no hole of its own."
+      },
+      {
+        "id": "c",
+        "text": "Do not load the tray now. Slide it to the back of the same shelf and leave it in sterile storage."
+      },
+      {
+        "id": "d",
+        "text": "Do not issue the tray or leave it on the shelf. Send it back to decontamination for reprocessing."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A hole in the wrap is an event that ends sterility for that package. Both layers of a wrapped tray are part of the barrier, so a hole in the outer wrap is enough. Tape cannot close it, and unwrapping the tray in storage is not a way to issue it. The tray goes back to decontamination to be reprocessed.",
+    "distractorExplanations": {
+      "a": "Sterilization tape does not patch a hole in a wrap. A torn pack is compromised and is not loaded onto a case cart to save time.",
+      "b": "Both wrap layers form the barrier. A hole in the outer layer compromises the pack, and the inner layer is not issued from the storeroom.",
+      "c": "Moving the tray to the back of the shelf leaves a compromised pack in sterile storage, where someone else can pick it later."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-019",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "The afternoon runner reaches the service elevator with a closed cart of sterile packs and a second cart of uncovered soiled instruments from the same floor. How should the runner move the two loads?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stack the sterile packs on the soiled cart and take both loads up on one trip."
+      },
+      {
+        "id": "b",
+        "text": "Set the sterile packs on the elevator floor and use the closed cart for the soiled instruments."
+      },
+      {
+        "id": "c",
+        "text": "Route the closed sterile cart through decontamination so it can follow the soiled cart on one path."
+      },
+      {
+        "id": "d",
+        "text": "Take the closed sterile cart on its own trip, separate from the uncovered soiled cart."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Clean and soiled transport stay separate. Uncovered soiled instruments are not taken on the same trip as a sterile delivery, and sterile packs are not stacked onto the soiled cart or set on the elevator floor. The closed sterile cart goes by itself. The soiled cart returns by the soiled path, not by pulling the sterile cart through decontamination.",
+    "distractorExplanations": {
+      "a": "Sterile packs do not ride on a cart of uncovered soiled instruments. Combining the loads contaminates the delivery.",
+      "b": "The elevator floor is a dirty surface. Sterile packs are not set there so a cart can be reused for soiled instruments.",
+      "c": "A sterile delivery does not detour through decontamination to share a route with soiled instruments. The loads stay apart."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-020",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A knee case cart is nearly closed. The technician sees a shoulder arthroscopy set on it, while the pick list names the knee arthroscopy set. What should the technician do before closing the cart?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Remove the shoulder set, return it to stock, and load the knee set named on the pick list."
+      },
+      {
+        "id": "b",
+        "text": "Send the cart as it is and have the operating room call back if the shoulder set is not what the knee case needs."
+      },
+      {
+        "id": "c",
+        "text": "Send the shoulder set to decontamination and release the cart with whatever sets remain on it."
+      },
+      {
+        "id": "d",
+        "text": "Relabel the shoulder set with the knee set name so the ticket matches the tray that was picked."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A case cart is accurate when the sets on it match the pick list for that case. A shoulder arthroscopy set does not fill a line that names the knee set. The wrong set comes off and returns to stock, the named set is inspected and loaded, and the cart is closed only after that match.",
+    "distractorExplanations": {
+      "b": "The operating room should receive the set the pick list named. Sending the wrong tray and waiting for a callback is a case-cart error.",
+      "c": "The shoulder set is not compromised, so decontamination is the wrong destination, and releasing a cart that is missing the knee set is still inaccurate.",
+      "d": "Relabeling the wrong set makes the ticket lie. The cart has to hold the set the case actually requested."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-021",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A wrapped basin set shows a faint moisture stain on the outside wrap while the set is still sitting in sterile storage. What is the correct handling of this set?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Issue the set if the stain is faint and the load label can still be read without trouble."
+      },
+      {
+        "id": "b",
+        "text": "Do not involve decontamination. Blot the stain with a dry towel and put the set back on the shelf."
+      },
+      {
+        "id": "c",
+        "text": "Do not issue the stained set. Remove it from storage and send it to decontamination."
+      },
+      {
+        "id": "d",
+        "text": "Release the set, because an outside stain does not matter after the basins have already been sterilized."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Moisture on a sterile wrap is a compromising event, including a faint stain, because liquid can carry contamination through the barrier. The set is not blotted and returned to the shelf, and it is not issued because the basins were sterilized earlier. It comes out of storage and goes to decontamination.",
+    "distractorExplanations": {
+      "a": "A faint stain, or a label that can still be read, does not clear moisture on the wrap. Moisture is a compromising event.",
+      "b": "Blotting the wrap and putting the set back on the shelf leaves a compromised pack in sterile storage. Drying the outside does not undo the stain.",
+      "d": "An earlier sterilization cycle does not protect a pack after the barrier is wet. A moisture stain means the set is not issued."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-022",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "One corner of a peel pouch holding a light cord has a lifted seal. The pouch is still in its bin, and the rest of the pouch looks flat. What should staff do with this pouch?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Press the lifted corner shut with a finger and issue the pouch if the plastic stays down."
+      },
+      {
+        "id": "b",
+        "text": "Run the open corner through the heat sealer in sterile storage and return the pouch to its bin."
+      },
+      {
+        "id": "c",
+        "text": "Do not reseal or issue the pouch. Remove it from the bin and send it to decontamination."
+      },
+      {
+        "id": "d",
+        "text": "Put the pouch on the next case cart and tell the scrub person to watch that corner during opening."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A peel-pouch seal is part of the sterile barrier. A lifted corner means that barrier is open, even if the rest of the pouch looks flat. Pressing it shut or sealing it again in storage does not reprocess the cord. The pouch is removed and sent to decontamination rather than placed on a cart.",
+    "distractorExplanations": {
+      "a": "Finger pressure does not restore a peel-pouch seal. A lifted corner means the barrier is already open.",
+      "b": "Sealing the corner again, without cleaning the contents, does not reprocess the pouch. The open seal already compromised the item.",
+      "d": "Asking the scrub person to watch the corner still issues a pouch with a broken seal. That pouch does not leave the shelf."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-023",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "Freshly sterilized packs of the same gauze lot are cooled and ready for a shelf that already holds older intact packs of that lot. How should the new packs be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the new packs in front so the operating room receives the gauze that was sterilized most recently."
+      },
+      {
+        "id": "b",
+        "text": "Mix the new packs through the older packs so the shelf no longer shows which date should go first."
+      },
+      {
+        "id": "c",
+        "text": "Leave the new packs on the sterilizer rack until every older pack in the bin has been issued."
+      },
+      {
+        "id": "d",
+        "text": "Place the new packs behind the older intact packs so the older gauze is issued first."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "First in, first out is done on the shelf: newer packs of the same item go behind older intact packs, so the older packs are picked first. Putting the new packs in front, or mixing the dates, hides the older stock. Cooled packs are not left on the sterilizer rack instead of being rotated.",
+    "distractorExplanations": {
+      "a": "Putting the new packs in front issues the newest stock first. That is last-in, first-out, and the older packs stay buried.",
+      "b": "Mixing dates at random means the picker cannot tell which pack was sterilized first, so first-in, first-out fails.",
+      "c": "Cooled sterile packs belong in storage, behind the older packs of that item. Leaving them on the sterilizer rack is not stock rotation."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-024",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A cart that carried soiled instruments this morning was wiped with a dry cloth. It is the only free cart for a sterile delivery to labor and delivery. What is the correct use of this cart?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Load the sterile packs onto it, because a dry wipe is enough to switch the cart from a soiled trip to a clean one."
+      },
+      {
+        "id": "b",
+        "text": "Line the shelves with a clean sheet and then load the sterile packs onto that same cart for the trip."
+      },
+      {
+        "id": "c",
+        "text": "Put the sterile packs in open baskets on that cart so staff can see that the load itself is clean."
+      },
+      {
+        "id": "d",
+        "text": "Do not load this cart. Send it to be cleaned, and take the sterile packs on a clean closed cart."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A cart that carried soiled instruments stays a soiled cart until it has been cleaned for a clean role. A dry wipe, a sheet, or an open basket does not make that change. Sterile packs go out on a clean closed cart, and this cart is sent for cleaning instead of being loaded.",
+    "distractorExplanations": {
+      "a": "A dry cloth wipe does not clean a cart that carried soiled instruments. That cart is not ready for a sterile delivery.",
+      "b": "A clean sheet on a soiled cart does not change the cart's role. Soiled transport and sterile transport stay separate.",
+      "c": "Open baskets expose the packs, and the packs would still be riding on a cart that was used for soiled instruments."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-025",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "An assembled case cart sits at the storeroom door. The technician has not compared the sets on the cart with the pick ticket. What has to happen before the cart is released?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Match each loaded set to the pick ticket and correct any miss before the cart leaves."
+      },
+      {
+        "id": "b",
+        "text": "Send the cart now and let the circulating nurse reconcile the sets after the patient is in the room."
+      },
+      {
+        "id": "c",
+        "text": "Count the trays, and release the cart if that count equals the number of lines printed on the ticket."
+      },
+      {
+        "id": "d",
+        "text": "Sign the ticket complete, because an experienced technician assembled the cart earlier in the shift."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Case-cart accuracy means the sets on the cart are the sets on the pick ticket, checked before the cart leaves the storeroom. A tray count can match while the identities are wrong. The check is not skipped because of who built the cart, and it is not left for the circulating nurse to discover in the room.",
+    "distractorExplanations": {
+      "b": "Case-cart accuracy is checked before the cart leaves sterile storage. The circulating nurse should not be the first person to find a wrong set.",
+      "c": "A matching tray count can still hide the wrong set. Each line on the pick ticket has to match the set that was actually loaded.",
+      "d": "Who built the cart does not prove the contents. The ticket is compared with the sets on the cart before the cart is released."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-026",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A new employee is about to hand a sterile pack to the runner after checking only that a load label is on the wrap. What should the employee do before handing the pack over?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hand it over. The load label shows the pack was already inspected when the sterilizer was unloaded."
+      },
+      {
+        "id": "b",
+        "text": "Open a corner, read the internal indicator, tape the pack shut, and then hand it to the runner."
+      },
+      {
+        "id": "c",
+        "text": "Check the pack for holes, moisture, and a broken seal before it leaves the shelf."
+      },
+      {
+        "id": "d",
+        "text": "Hand it over now, because the operating room has already called and is waiting on this pack."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Before a pack leaves the shelf, the person issuing it looks for holes, moisture, and a broken seal. The load label ties the pack to its cycle, but it cannot show damage that happened in storage. The pack is not opened to read the internal indicator, and a rush call does not cancel the look.",
+    "distractorExplanations": {
+      "a": "The load label identifies the cycle. It does not show a hole, a wet spot, or a seal that failed after the pack was stored.",
+      "b": "Opening the pack in the storeroom breaks the barrier. The internal indicator is read at the point of use, not by unsealing the pack for the runner.",
+      "d": "A call from the room does not skip the inspection. A pack with a hole, moisture, or a broken seal is not issued to save time."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-027",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A coworker offers sterilization tape to close a torn corner on a wrapped pack the operating room says it needs within minutes. What is the correct response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tape the tear and issue the pack, because sterilization tape restores the barrier in time for the waiting case."
+      },
+      {
+        "id": "b",
+        "text": "Tape the tear, apply a new load label over the repair, and place the pack on the cart that is about to leave."
+      },
+      {
+        "id": "c",
+        "text": "Issue the pack with the tear left open, since the case cannot wait and the damage sits at the corner."
+      },
+      {
+        "id": "d",
+        "text": "Refuse the tape and do not issue the torn pack. Send it back to decontamination for reprocessing."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A torn wrap is a compromised pack. Sterilization tape does not rebuild that barrier, and a new label does not reprocess the set. Time pressure from the operating room does not justify issuing the tear, whether it is taped or left open. The pack goes back to decontamination.",
+    "distractorExplanations": {
+      "a": "Sterilization tape is an external process indicator and a closure aid when a pack is wrapped. It does not repair a tear in a pack that is already on the shelf.",
+      "b": "A new load label over tape does not reprocess a torn pack. The barrier is already broken, so the pack is not placed on the cart.",
+      "c": "Leaving the tear open and issuing the pack still sends a compromised barrier to the case. Urgency does not change the disposition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-028",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "A rigid container on the sterile shelf has an open latch and a broken tamper-evident seal. The container was not dropped. What should be done with this container?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Close the latch, apply a new seal, and leave the container in sterile storage for the next pick."
+      },
+      {
+        "id": "b",
+        "text": "Wipe the outside and issue the container if the filter housing on the lid looks undamaged."
+      },
+      {
+        "id": "c",
+        "text": "Issue the container for the waiting case, then send it for processing after that procedure ends."
+      },
+      {
+        "id": "d",
+        "text": "Do not issue the container. The broken seal sends the set back to decontamination."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The latch and the tamper-evident seal show that a rigid container stayed closed after sterilization. An open latch and a broken seal are a compromising event, whether or not the container was dropped. Relatching it in storage, wiping the outside, or sending it for this case does not restore sterility. The set goes back to decontamination.",
+    "distractorExplanations": {
+      "a": "Closing the latch and hanging a new seal in storage does not sterilize the set. The broken seal means the container was open after processing.",
+      "b": "Wiping the outside does not address an open latch and a broken tamper seal. The set is not issued in that condition.",
+      "c": "Using the container for the case and processing it afterward still sends a compromised set into the procedure."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-029",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "The cardiac case cart was labeled for operating room 4. The runner is told to leave it in room 6 because that room is closer to the elevator. Where should this cart go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave it in room 6 and change the cart label so the paperwork matches the closer room."
+      },
+      {
+        "id": "b",
+        "text": "Park it in the corridor between room 4 and room 6 so either circulating nurse can take it."
+      },
+      {
+        "id": "c",
+        "text": "Deliver the cart to operating room 4, the room named on the case-cart label."
+      },
+      {
+        "id": "d",
+        "text": "Take the cart back and rebuild those sets under a new pick ticket written for room 6."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Case-cart distribution is accurate when the cart reaches the case it was built for. This cart is labeled for room 4, so that is where it goes. Moving the label to room 6, leaving the cart in the corridor, or rebuilding it for the closer room assigns the sets to the wrong case.",
+    "distractorExplanations": {
+      "a": "Changing the label to room 6 sends the cardiac cart to the wrong case. A shorter walk does not reassign a cart that was already built.",
+      "b": "A cart parked in the corridor is not a delivery, and either room taking it can open another case's sets.",
+      "d": "Rebuilding the cart under a room 6 ticket assigns those sets to the wrong case. The label already names room 4."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
+  },
+  {
+    "id": "crcst-readiness-check-storage-distribution-030",
+    "examSlug": "crcst-readiness-check",
+    "topicId": "storage-distribution",
+    "prompt": "An unused pack comes back from the operating room with the outer wrap opened and then folded closed. The instruments inside were not used. What is the correct disposition of the pack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refold the wrap, close it with sterilization tape, and return the pack to the shelf location it came from."
+      },
+      {
+        "id": "b",
+        "text": "Put the pack back into sterile storage, because the instruments never touched the sterile field during the case."
+      },
+      {
+        "id": "c",
+        "text": "Place the unused pack on the next case cart without reprocessing, so the same preparation is not repeated."
+      },
+      {
+        "id": "d",
+        "text": "Send the pack to decontamination. Folding the opened wrap shut does not restore the barrier."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Once the outer wrap is opened, the sterile barrier is broken, even if the instruments were not used and someone folds the wrap closed again. Tape does not make that pack stock again. An unopened pack whose barrier is still intact can be inspected and returned; this wrap was opened, so reprocessing starts in decontamination.",
+    "distractorExplanations": {
+      "a": "Tape and a refold do not recreate a sterile barrier after the wrap has been opened. The pack is not returned to the shelf.",
+      "b": "Instruments that never touched the field are still treated as contaminated once the wrap is opened. Non-use does not keep the pack sterile.",
+      "c": "Moving the opened pack onto another cart skips reprocessing. An opened wrap is a compromised pack and does not stay in distribution."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go bank, expanded 2026-11-14."
   }
 ]

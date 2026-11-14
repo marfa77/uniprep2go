@@ -99,6 +99,23 @@ describe("getPracticeOptionsCompared", () => {
     expect(series65!.sources.some((s) => s.url.includes("series-65-exam-content-outline"))).toBe(true);
   });
 
+  it("returns PMP and LEED Green Associate tables from pages checked 2026-11-14", () => {
+    const pmp = getPracticeOptionsCompared("pmp-readiness-check");
+    expect(pmp).not.toBeNull();
+    expect(pmp!.checkedDate).toBe("2026-11-14");
+    expect(pmp!.rows.some((r) => /51 questions/.test(r.format) && /70 minutes/.test(r.format))).toBe(true);
+    expect(pmp!.rows.some((r) => /PMAspirant/.test(r.name) && /180-question/.test(r.format))).toBe(true);
+    expect(pmp!.rows.some((r) => /exam day/.test(r.name) && /240 minutes/.test(r.format))).toBe(true);
+    expect(pmp!.sources.some((s) => s.url.includes("pmi.org/certifications/project-management-pmp"))).toBe(true);
+
+    const leed = getPracticeOptionsCompared("leed-green-associate-readiness-check");
+    expect(leed).not.toBeNull();
+    expect(leed!.checkedDate).toBe("2026-11-14");
+    expect(leed!.rows.some((r) => /60 questions/.test(r.format) && /75 minutes/.test(r.format))).toBe(true);
+    expect(leed!.rows.some((r) => /170 out of 200/.test(r.format) && /\$250/.test(r.access))).toBe(true);
+    expect(leed!.sources.some((s) => s.url.includes("usgbc.org/credentials/exam-preparation"))).toBe(true);
+  });
+
   it("returns null for mocks without a table", () => {
     expect(getPracticeOptionsCompared("nha-cpct-readiness-check")).toBeNull();
   });
