@@ -8,7 +8,7 @@ import { absoluteUrl, siteConfig } from "@/lib/site";
 import { btnPrimary, ledgerList } from "@/lib/ui-button-classes";
 
 const description =
-  "Operating rules for the free 25-question diagnostic, the $5 Mock Pass, the CFA Level 1 deck, and what UniPrep2Go is not.";
+  "Operating rules for the free 25-question diagnostic, the $19 Mock Pass, the CFA Level 1 deck, and what UniPrep2Go is not.";
 
 export const metadata: Metadata = withAiMetadata(
   {

@@ -6,11 +6,16 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 ## In progress
 
-None.
+| Started | Slugs | Work | Status / blocker |
+|---|---|---|---|
+| 2026-11-14 | `cfa-level-1-readiness-check` | Expand the bank 120→300. Session stays 60 / 90. Authored deck stays 348 cards and is not rebuilt from the mock. | Writers running. |
+| 2026-11-14 | `cfa-level-2-readiness-check`, `series-7-readiness-check`, `series-63-readiness-check` | Expand each bank 120→250. Sessions stay 60. Authored decks are not rebuilt from the mocks. | Writers running. |
+| 2026-11-14 | `frm-part-1-readiness-check`, `life-and-health-insurance-readiness-check`, `property-casualty-insurance-readiness-check` | Expand each bank 120→250. FRM session stays 50 / 120 minutes. Life & Health and P&C sessions stay 60 / 90. Decks are not rebuilt from the mocks. | Foundations writer running. The other chunks wait for a free writer slot. |
 
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-14 | every live mock | — | pass credits + copy | — | Gumroad Mock Pass price $19, quantity cap 1, landing republished. `llms:export` | Free 25-question diagnostic stays. Full mocks are $19 unlimited on any exam. A redeemed key does not count down. |
 | 2026-11-14 | `series-99-readiness-check` | `series-99-anki-deck` | audit 0 FAIL · 240 · keys 60/60/60/60 · ops ready | Four topics reviewed by separate reviewers. Old keys kept. Retention years stayed out of the notes. Wash sale stays 30 days. Regular-way equity and corporate debt stay T+1 | `Series_99_FULL_240.apkg` on Gumroad. 3 samples from that file. Landing copy 240. Sample CDN for this deck returns 200. `llms:export` | Session stays 120 / 120. Official exam stays 50 scored + 5 pretest / 90 min / passing score 68 equated / fee $100 / SIE. From 19 January 2027 retake waits are 15 / 15 / 60 days |
 | 2026-11-14 | `crcst-readiness-check` | `crcst-anki-deck` | audit 0 FAIL · 120 · keys a30/b30/c31/d29 · ops ready | Four topics reviewed by separate reviewers. Old keys kept. No invented temperature, exposure time, humidity percent, or shelf-life day count | Planned deck cardCount 120. No apkg and no Gumroad | Session stays 60 / 60. Official exam stays 125 scored + 25 pretest / 3 hours / fee $140. No published numeric cut. 400 hands-on hours. 70% is ours |
 | 2026-11-14 | `pmp-readiness-check` · `leed-green-associate-readiness-check` | — | Copy only — banks untouched | — | Comparison tables from PMI, PMAspirant, and USGBC pages opened 2026-11-14 | PMP session stays 51 / 70. LEED session stays 60 / 75 from 120. USGBC exam-prep page opened today still describes 100 questions, 2 hours, and 170 out of 200, with v4 references. The site's v5 weight note was not rewritten |

@@ -302,7 +302,7 @@ export function toMockPassPaywallViewMessage(event: FunnelEvent, mock?: MockExam
 export function toMockPassCheckoutClickMessage(event: FunnelEvent, mock?: MockExamConfig) {
   const placement = event.source?.match(/:pass:checkout:([a-z]+)/)?.[1] ?? "n/a";
   return [
-    "💳 UniPrep2Go Mock Pass — pay click ($5 / 5 attempts)",
+    "💳 UniPrep2Go Mock Pass — pay click ($19 unlimited)",
     "",
     `Mock: ${mock?.title ?? "n/a"}`,
     `Mock slug: ${mock?.slug ?? mockSlugFromSource(event.source) ?? "n/a"}`,

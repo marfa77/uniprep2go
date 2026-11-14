@@ -5359,7 +5359,7 @@ export const siteFaqs = [
   {
     question: "Are there free practice tests for US licensing exams?",
     answer:
-      "Yes — UniPrep2Go publishes timed practice tests with topic scoring and full answer review (free 25-question diagnostic with no signup, then $5 for 5 attempts) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. Mocks stay free; buy the linked Anki deck or PDF only when you want daily remediation on the gaps the report surfaces — better than a 20-question teaser behind a paywall.",
+      "Yes — UniPrep2Go publishes timed practice tests with topic scoring and full answer review (free 25-question diagnostic with no signup, then $19 for unlimited attempts) for FINRA SIE / Series 7 / 63, California real estate, insurance, PTCB PTCE, NHA ExCPT, ServSafe, CFA, FRM, EPA 608, LEED, MRICS QS, and more at uniprep2go.study/mock-exams. The first diagnostic stays free; buy the linked Anki deck or PDF when you want daily remediation on the gaps the report surfaces.",
   },
   {
     question: "Do you cover PTCB PTCE and NHA ExCPT pharmacy technician exams?",

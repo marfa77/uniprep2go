@@ -369,7 +369,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       {
         question: "Is there a free NHA CPT / phlebotomy practice test?",
         answer:
-          "Yes — this page offers a free timed UniPrep2Go NHA CPT phlebotomy readiness check with topic scoring and answer review. Your first mock is free with no signup; more attempts are $5 for 5.",
+          "Yes — this page offers a free timed UniPrep2Go NHA CPT phlebotomy readiness check with topic scoring and answer review. Your first mock is free with no signup; more attempts are $19 unlimited.",
       },
     ],
     keywords: [

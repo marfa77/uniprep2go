@@ -65,7 +65,7 @@ export async function generateMetadata(): Promise<Metadata> {
     finalize({
       title: leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
       description:
-        "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — free 25-question diagnostic, then $5 for 5 full-length attempts. Topic scoring, answer review, no signup.",
+        "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — free 25-question diagnostic, then $19 for unlimited full-length attempts. Topic scoring, answer review, no signup.",
       keywords: [
         "free practice test",
         "free sie practice test",
@@ -81,7 +81,7 @@ export async function generateMetadata(): Promise<Metadata> {
       openGraph: {
         title: "Timed Mock Exams — First One Free | UniPrep2Go",
         description:
-          "Online timed practice tests for US licensing and finance with topic scoring and answer review. Free 25-question diagnostic; then $5 for 5 attempts.",
+          "Online timed practice tests for US licensing and finance with topic scoring and answer review. Free 25-question diagnostic; then $19 for unlimited attempts.",
         url: "/mock-exams",
         type: "website",
         images: [
@@ -122,7 +122,7 @@ export default function MockExamsIndexPage() {
         "@id": `${pageUrl}#webpage`,
         name: "Timed Mock Exams for US Licensing & Finance — First One Free",
         description:
-          "Timed practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate. Free 25-question diagnostic (any exam, either mode); then $5 for 5 attempts.",
+          "Timed practice tests for SIE, ServSafe, CFA, FRM, insurance, and California real estate. Free 25-question diagnostic (any exam, either mode); then $19 for unlimited attempts.",
         url: pageUrl,
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
@@ -157,7 +157,7 @@ export default function MockExamsIndexPage() {
       >
         <h1 className="text-5xl tracking-tight text-ink">Practice tests</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
-          The first attempt is a free 25-question diagnostic. Full mocks and retakes are the $5 Mock Pass, 5 attempts.
+          The first attempt is a free 25-question diagnostic. Full mocks and retakes are the $19 Mock Pass, unlimited attempts.
           Start with the{" "}
           <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
             CFA Level 1 practice test

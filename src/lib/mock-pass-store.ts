@@ -1,7 +1,5 @@
-import {
-  UNLIMITED_MOCK_PASS_ATTEMPTS,
-  isUnlimitedMockPassHash,
-} from "@/lib/gumroad-mock-pass-license";
+import { isUnlimitedMockPassHash } from "@/lib/gumroad-mock-pass-license";
+import { UNLIMITED_MOCK_PASS_ATTEMPTS, isUnlimitedMockPassBalance } from "@/lib/mock-exams/mock-pass";
 import { getRedisClient } from "@/lib/redis";
 
 type MockPassMeta = {
@@ -32,11 +30,13 @@ export function resetMockPassMemoryForTests() {
 const remainingKey = (hash: string) => `mockpass:remaining:${hash}`;
 const metaKey = (hash: string) => `mockpass:meta:${hash}`;
 
-/** Atomic decrement: -2 = never redeemed, -1 = no attempts left, else new remaining. */
+/** -2 = never redeemed, -1 = no attempts left, else remaining. Unlimited balances are not decremented. */
 const CONSUME_SCRIPT = `
 local v = redis.call('GET', KEYS[1])
 if not v then return -2 end
-if tonumber(v) <= 0 then return -1 end
+local n = tonumber(v)
+if n >= ${UNLIMITED_MOCK_PASS_ATTEMPTS} then return n end
+if n <= 0 then return -1 end
 return redis.call('DECR', KEYS[1])
 `;
 
@@ -78,7 +78,7 @@ export async function getMockPassState(
     : { remaining: 0, granted: 0, exists: false };
 }
 
-/** Grants attempts once per license; re-redeeming on another device reuses the same balance. */
+/** Grants access once per license. An unlimited grant overwrites a previous finite balance. */
 export async function redeemMockPass(params: {
   licenseHash: string;
   attempts: number;
@@ -86,12 +86,15 @@ export async function redeemMockPass(params: {
   saleId: string | null;
 }): Promise<{ remaining: number; granted: number; alreadyRedeemed: boolean }> {
   const { licenseHash, email, saleId } = params;
-  if (isUnlimitedMockPassHash(licenseHash)) {
-    return { remaining: UNLIMITED_MOCK_PASS_ATTEMPTS, granted: UNLIMITED_MOCK_PASS_ATTEMPTS, alreadyRedeemed: true };
-  }
-
-  const attempts = Math.max(1, Math.floor(params.attempts));
+  const attempts = isUnlimitedMockPassHash(licenseHash)
+    ? UNLIMITED_MOCK_PASS_ATTEMPTS
+    : Math.max(1, Math.floor(params.attempts));
+  const unlimited = isUnlimitedMockPassBalance(attempts);
   const meta: MockPassMeta = { granted: attempts, email, saleId, redeemedAt: new Date().toISOString() };
+
+  if (unlimited) {
+    return grantUnlimited(licenseHash, meta);
+  }
 
   const client = getRedisClient();
   if (client) {
@@ -140,7 +143,40 @@ export async function consumeMockPassAttempt(
 
   const row = devStore().get(licenseHash);
   if (!row) return { ok: false, reason: "missing" };
+  if (isUnlimitedMockPassBalance(row.remaining)) return { ok: true, remaining: UNLIMITED_MOCK_PASS_ATTEMPTS };
   if (row.remaining <= 0) return { ok: false, reason: "empty" };
   row.remaining -= 1;
   return { ok: true, remaining: row.remaining };
+}
+
+async function grantUnlimited(
+  licenseHash: string,
+  meta: MockPassMeta,
+): Promise<{ remaining: number; granted: number; alreadyRedeemed: boolean }> {
+  const unlimitedMeta: MockPassMeta = { ...meta, granted: UNLIMITED_MOCK_PASS_ATTEMPTS };
+  const client = getRedisClient();
+  if (client) {
+    try {
+      const existing = await client.get(remainingKey(licenseHash));
+      await client.set(remainingKey(licenseHash), UNLIMITED_MOCK_PASS_ATTEMPTS);
+      await client.set(metaKey(licenseHash), unlimitedMeta);
+      return {
+        remaining: UNLIMITED_MOCK_PASS_ATTEMPTS,
+        granted: UNLIMITED_MOCK_PASS_ATTEMPTS,
+        alreadyRedeemed: existing !== null && existing !== undefined,
+      };
+    } catch (error) {
+      console.error("[mock-pass] redis unlimited grant failed", error);
+      if (process.env.NODE_ENV === "production") storeUnavailable();
+    }
+  }
+
+  const store = devStore();
+  const existing = store.get(licenseHash);
+  store.set(licenseHash, { ...unlimitedMeta, remaining: UNLIMITED_MOCK_PASS_ATTEMPTS });
+  return {
+    remaining: UNLIMITED_MOCK_PASS_ATTEMPTS,
+    granted: UNLIMITED_MOCK_PASS_ATTEMPTS,
+    alreadyRedeemed: Boolean(existing),
+  };
 }

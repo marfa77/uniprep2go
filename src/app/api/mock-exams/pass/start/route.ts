@@ -22,7 +22,7 @@ export async function POST(request: Request) {
     const session = verifyMockPassSession(jar.get(MOCK_PASS_COOKIE)?.value);
     if (!session) {
       return Response.json(
-        { ok: false, code: "no_pass", message: "Your free mock is used. Unlock 5 more attempts to continue.", remaining: 0 },
+        { ok: false, code: "no_pass", message: "Your free mock is used. Unlock unlimited attempts to continue.", remaining: 0 },
         { status: 402 },
       );
     }
@@ -36,7 +36,7 @@ export async function POST(request: Request) {
         );
       }
       return Response.json(
-        { ok: false, code: "no_attempts", message: "All attempts on this Mock Pass are used. Get 5 more to continue.", remaining: 0 },
+        { ok: false, code: "no_attempts", message: "This key has no attempts left. Paste it again to turn on unlimited access.", remaining: 0 },
         { status: 402 },
       );
     }

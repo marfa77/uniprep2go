@@ -1,9 +1,12 @@
 import { createHash } from "crypto";
 import {
   MOCK_PASS_PRODUCT_ID,
+  UNLIMITED_MOCK_PASS_ATTEMPTS,
   clampMockPassQuantity,
   mockPassAttemptsForQuantity,
 } from "@/lib/mock-exams/mock-pass";
+
+export { UNLIMITED_MOCK_PASS_ATTEMPTS };
 
 export type MockPassVerifyResult =
   | {
@@ -16,9 +19,6 @@ export type MockPassVerifyResult =
       unlimited: boolean;
     }
   | { ok: false; message: string };
-
-/** Attempts reported for internal keys listed in MOCK_PASS_UNLIMITED_KEYS. */
-export const UNLIMITED_MOCK_PASS_ATTEMPTS = 999;
 
 export function hashMockPassKey(licenseKey: string): string {
   return createHash("sha256").update(licenseKey.trim().toLowerCase()).digest("hex");
@@ -79,7 +79,7 @@ async function postLicenseVerify(licenseKey: string, productId: string): Promise
   }
 }
 
-/** Verify a Gumroad license against the Mock Pass product (1 unit = 5 attempts). */
+/** Verify a Gumroad license against the Mock Pass product. A valid key is unlimited. */
 export async function verifyMockPassLicense(licenseKey: string): Promise<MockPassVerifyResult> {
   const trimmed = licenseKey.trim();
   if (!trimmed || trimmed.length > 200) {
@@ -122,6 +122,6 @@ export async function verifyMockPassLicense(licenseKey: string): Promise<MockPas
     test: Boolean(purchase.test),
     quantity,
     attempts: mockPassAttemptsForQuantity(quantity),
-    unlimited: false,
+    unlimited: true,
   };
 }

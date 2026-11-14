@@ -70,8 +70,8 @@ const ledgerFacts = [
     body: "Decks and printable formula sheets for the topics the mock marks as weak.",
   },
   {
-    title: "Mock Pass $5 for 5 attempts",
-    body: "The first attempt is a free 25-question diagnostic. Five more scored attempts are $5.",
+    title: "Mock Pass $19 unlimited",
+    body: "The first attempt is a free 25-question diagnostic. Full mocks after that are $19, with no attempt limit.",
   },
 ] as const;
 

@@ -1,11 +1,11 @@
 import { FREE_DIAGNOSTIC_QUESTIONS } from "./free-diagnostic";
-import { MOCK_ACCESS_RULE, MOCK_PASS_ATTEMPTS, MOCK_PASS_PRICE_USD } from "./mock-pass";
+import { MOCK_ACCESS_RULE, MOCK_PASS_OFFER } from "./mock-pass";
 
 /** Public price label for timed mocks: short free diagnostic, then Mock Pass for full length. */
-export const mockFreeAccessPriceLabel = `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic, then $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} full attempts`;
+export const mockFreeAccessPriceLabel = `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic, then ${MOCK_PASS_OFFER}`;
 
 /**
- * Hub / generic funnel copy: one free mock per visitor, then the $5 Mock Pass;
+ * Hub / generic funnel copy: one free mock per visitor, then the $19 Mock Pass;
  * the linked Anki deck repairs weak topics.
  */
 export const mockFreeAccessNotice = `${MOCK_ACCESS_RULE} Every attempt ends with a full topic report; drill weak topics with the linked Anki deck.`;

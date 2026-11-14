@@ -4,10 +4,11 @@ import Link from "next/link";
 import type { MockAccessState, MockExamConfig, MockQuestion, MockReport } from "@/lib/mock-exams/types";
 import { getMockCta } from "@/lib/mock-exams/mock-cta";
 import {
-  MOCK_PASS_ATTEMPTS,
   MOCK_PASS_CHECKOUT_URL,
+  MOCK_PASS_OFFER,
   MOCK_PASS_PRICE_USD,
   decideMockStart,
+  isUnlimitedMockPassBalance,
 } from "@/lib/mock-exams/mock-pass";
 import {
   browserStorage,
@@ -535,10 +536,12 @@ export function MockExamClient({
           {paywallEnabled && startDecision !== "open" ? (
             <p className="text-sm leading-6 text-[#5f5749]">
               {startDecision === "paid"
-                ? `Mock Pass: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, either mode.`
+                ? isUnlimitedMockPassBalance(pass.remaining)
+                  ? "Mock Pass active — unlimited attempts, any mock, either mode."
+                  : `Mock Pass: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, either mode.`
                 : freeIsShort
-                  ? `Your free diagnostic is done. Full ${config.questionCount}-question mocks and retakes: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
-                  : `Your free mock is done. Retakes and other mocks: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`}
+                  ? `Your free diagnostic is done. Full ${config.questionCount}-question mocks and retakes: ${MOCK_PASS_OFFER}.`
+                  : `Your free mock is done. Retakes and other mocks: ${MOCK_PASS_OFFER}.`}
             </p>
           ) : null}
           {paywallOpen ? (
@@ -581,7 +584,9 @@ export function MockExamClient({
     : startDecision === "free"
       ? " · first mock free"
       : startDecision === "paid"
-        ? ` · 1 of ${pass.remaining} attempts`
+        ? isUnlimitedMockPassBalance(pass.remaining)
+          ? ""
+          : ` · 1 of ${pass.remaining} attempts`
         : needsPaywall
           ? ` · Mock Pass $${MOCK_PASS_PRICE_USD}`
           : "";
@@ -590,14 +595,16 @@ export function MockExamClient({
     !paywallEnabled
       ? null
       : startDecision === "paid"
-        ? `Mock Pass active: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, Exam or Learn mode.`
+        ? isUnlimitedMockPassBalance(pass.remaining)
+          ? "Mock Pass active — unlimited attempts on any mock, Exam or Learn mode."
+          : `Mock Pass active: ${pass.remaining} attempt${pass.remaining === 1 ? "" : "s"} left — any mock, Exam or Learn mode.`
         : needsPaywall
-          ? `Free diagnostic on this browser is used. Press Start to unlock full mocks — $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
+          ? `Free diagnostic on this browser is used. Press Start to unlock full mocks — ${MOCK_PASS_OFFER}.`
         : showFreeDiagnostic
-          ? `Free ${landingConfig.questionCount}-question diagnostic, no signup — same topic report. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
+          ? `Free ${landingConfig.questionCount}-question diagnostic, no signup — same topic report. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock: ${MOCK_PASS_OFFER}.`
           : freeIsShort
-            ? `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic on your first attempt. The full ${config.questionCount}-question mock and retakes: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`
-            : `First mock free — any exam, Exam or Learn mode, no signup. After that: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts.`;
+            ? `Free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic on your first attempt. The full ${config.questionCount}-question mock and retakes: ${MOCK_PASS_OFFER}.`
+            : `First mock free — any exam, Exam or Learn mode, no signup. After that: ${MOCK_PASS_OFFER}.`;
   const startButtonClass = (primary: boolean) =>
     primary
       ? "inline-flex min-h-12 w-full items-center justify-center rounded-full bg-[#18140f] px-6 text-sm font-semibold text-[#fffaf0] transition hover:bg-[#1f3a5f] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f3a5f] disabled:opacity-50 sm:w-auto"

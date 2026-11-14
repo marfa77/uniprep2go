@@ -1,5 +1,5 @@
 import type { ExamFactsFields } from "../exam-facts";
-import { MOCK_PASS_ATTEMPTS, MOCK_PASS_PRICE_USD } from "./mock-pass";
+import { MOCK_PASS_OFFER, isUnlimitedMockPassBalance } from "./mock-pass";
 import type { MockReport } from "./types";
 
 /** Official pass line shown on the result screen; only concrete published thresholds qualify. */
@@ -176,9 +176,11 @@ export function buildResultUpsell(input: ResultUpsellInput): ResultUpsell {
   const fullMockVerb = pass && isFreeDiagnostic ? "Confirm on" : "Take";
   const mockCtaLabel = !input.paywallEnabled
     ? `Retake the ${fullQuestionCount}-question mock`
-    : input.passRemaining > 0
-      ? `${fullMockVerb} the full ${fullQuestionCount}-question mock · ${input.passRemaining} attempt${input.passRemaining === 1 ? "" : "s"} left`
-      : `${fullMockVerb} the full ${fullQuestionCount}-question mock · $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts`;
+    : isUnlimitedMockPassBalance(input.passRemaining)
+      ? `${fullMockVerb} the full ${fullQuestionCount}-question mock`
+      : input.passRemaining > 0
+        ? `${fullMockVerb} the full ${fullQuestionCount}-question mock · ${input.passRemaining} attempt${input.passRemaining === 1 ? "" : "s"} left`
+        : `${fullMockVerb} the full ${fullQuestionCount}-question mock · ${MOCK_PASS_OFFER}`;
 
   return {
     tone: pass ? "pass" : isFreeDiagnostic || report.verdict === "BORDERLINE RISK" ? "risk" : "fail",

@@ -3,7 +3,7 @@ import { TrackedCheckoutLink } from "@/components/funnel-tracker";
 import type { LinkedDeckCheckout } from "@/components/mock-exams/mock-report-handoff";
 import type { Deck } from "@/lib/decks";
 import { FREE_DIAGNOSTIC_QUESTIONS, hasShortFreeDiagnostic } from "@/lib/mock-exams/free-diagnostic";
-import { MOCK_PASS_ATTEMPTS, MOCK_PASS_CHECKOUT_URL, MOCK_PASS_PRICE_USD } from "@/lib/mock-exams/mock-pass";
+import { MOCK_PASS_CHECKOUT_URL, MOCK_PASS_OFFER } from "@/lib/mock-exams/mock-pass";
 import { mockFreeAccessPriceLabel } from "@/lib/mock-exams/pricing";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -58,7 +58,7 @@ export function MockHeroAccessCta({ config, linkedCheckout, linkedDeck }: MockHe
             rel="noopener noreferrer"
             target="_blank"
           >
-            Mock Pass · ${MOCK_PASS_PRICE_USD} for {MOCK_PASS_ATTEMPTS} attempts
+            Mock Pass · {MOCK_PASS_OFFER}
           </a>
         ) : null}
         {actions.showWaitlist && linkedDeck ? (

@@ -10,8 +10,8 @@ import {
 } from "./free-diagnostic";
 import {
   MOCK_ACCESS_RULE,
-  MOCK_PASS_ATTEMPTS,
   MOCK_PASS_NAME,
+  MOCK_PASS_OFFER,
   MOCK_PASS_PRICE_USD,
 } from "./mock-pass";
 import { withMockAccessDisclosure } from "./mock-access-faq";
@@ -86,7 +86,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
   }
 
   const fullMockClause = hasShortFreeDiagnostic(config)
-    ? `Full mock: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target ($${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts).`
+    ? `Full mock: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target (${MOCK_PASS_OFFER}).`
     : `${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target.`;
 
   return {
@@ -183,7 +183,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "pharmacy-technician-excpt-readiness-check": {
     title: "NHA ExCPT Practice Test | 60Q Mock, 25Q Free",
     description:
-      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, no signup; full mock 60 timed questions, 75 minutes, topic scoring for orders & dispensing, inventory & storage, safety & quality, and law & ethics — full answer review, then $5 for 5 attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, no signup; full mock 60 timed questions, 75 minutes, topic scoring for orders & dispensing, inventory & storage, safety & quality, and law & ethics — full answer review, then $19 for unlimited attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
     keywords: [
       "free nha excpt practice test",
       "nha excpt practice test",
@@ -350,7 +350,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "frm-part-1-readiness-check": {
     title: "FRM Part 1 Practice Questions — 25Q Free, 50Q Mock 2026",
     description:
-      "FRM Level 1 mock test and FRM Part 1 mock test: free 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $5 for 5 full attempts.",
+      "FRM Level 1 mock test and FRM Part 1 mock test: free 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $19 for unlimited full attempts.",
     keywords: [
       "frm level 1 mock test",
       "frm part 1 mock test",
@@ -1676,8 +1676,8 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
       answer: waitlist
         ? `A free ${profile.practiceTestLabel} is coming soon on ${siteConfig.name}: planned ${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% pass target, and topic scoring. Use Notify me when this launches on this page.`
         : hasShortFreeDiagnostic(config)
-          ? `Yes — your first ${siteConfig.name} attempt is free, and it can be this one: a ${FREE_DIAGNOSTIC_QUESTIONS}-question / ${freeDiagnosticMinutes(config)}-minute timed diagnostic drawn by the same topic weights, a ${config.passRule.passPercent}% readiness target, topic scoring, and a full answer review report. No signup, Exam or Learn mode. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock runs on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (${MOCK_PASS_ATTEMPTS} attempts on any mock).`
-          : `Yes — your first ${siteConfig.name} mock is free, and it can be this one: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. The free attempt covers any one mock in Exam or Learn mode, with no signup; after that, the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} unlocks ${MOCK_PASS_ATTEMPTS} more attempts on any mock.`,
+          ? `Yes — your first ${siteConfig.name} attempt is free, and it can be this one: a ${FREE_DIAGNOSTIC_QUESTIONS}-question / ${freeDiagnosticMinutes(config)}-minute timed diagnostic drawn by the same topic weights, a ${config.passRule.passPercent}% readiness target, topic scoring, and a full answer review report. No signup, Exam or Learn mode. The full ${config.questionCount}-question / ${config.durationMinutes}-minute mock runs on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (unlimited attempts on any mock).`
+          : `Yes — your first ${siteConfig.name} mock is free, and it can be this one: ${config.questionCount} timed questions, ${config.durationMinutes} minutes, a ${config.passRule.passPercent}% pass target, topic scoring, and a full answer review report. The free attempt covers any one mock in Exam or Learn mode, with no signup; after that, the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} unlocks unlimited attempts on any mock.`,
     },
     ...(waitlist
       ? []
@@ -1702,7 +1702,7 @@ export function buildMockSearchFaqs(config: MockExamConfig) {
           },
           {
             question: `What do I get for $${MOCK_PASS_PRICE_USD}?`,
-            answer: `The ${MOCK_PASS_NAME}: ${MOCK_PASS_ATTEMPTS} full timed attempts on any ${siteConfig.name} mock, including the ${config.questionCount}-question ${config.shortTitle} session, in Exam or Learn mode. It is a one-time Gumroad license key that works on any device — no subscription. Every attempt ends with the full topic report and answer review.`,
+            answer: `The ${MOCK_PASS_NAME}: unlimited full timed attempts on any ${siteConfig.name} mock, including the ${config.questionCount}-question ${config.shortTitle} session, in Exam or Learn mode. It is a one-time $${MOCK_PASS_PRICE_USD} Gumroad license key that works on any device — no subscription, no attempt counter. Every attempt ends with the full topic report and answer review.`,
           },
         ]),
     {
@@ -1763,7 +1763,7 @@ export function buildMockAnswerBlock(config: MockExamConfig) {
   if (!hasShortFreeDiagnostic(config)) {
     return `${siteConfig.name}'s free ${label} is a ${config.questionCount}-question, ${config.durationMinutes}-minute timed mock with a free topic report and answer review — no email, no account.`;
   }
-  return `${siteConfig.name}'s free ${label} is a ${FREE_DIAGNOSTIC_QUESTIONS}-question, ${freeDiagnosticMinutes(config)}-minute timed diagnostic with a free topic report and answer review — no email, no account. The full mock is ${config.questionCount} questions / ${config.durationMinutes} minutes on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (${MOCK_PASS_ATTEMPTS} attempts on any mock).`;
+  return `${siteConfig.name}'s free ${label} is a ${FREE_DIAGNOSTIC_QUESTIONS}-question, ${freeDiagnosticMinutes(config)}-minute timed diagnostic with a free topic report and answer review — no email, no account. The full mock is ${config.questionCount} questions / ${config.durationMinutes} minutes on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} (unlimited attempts on any mock).`;
 }
 
 export function buildMockSeoPageCopy(config: MockExamConfig) {

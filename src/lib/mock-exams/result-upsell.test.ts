@@ -80,7 +80,7 @@ describe("result upsell", () => {
     );
     expect(upsell.deckCtaLabel).toBe("Lock it in: 300 cards — $11");
     expect(upsell.packCtaLabel).toBeNull();
-    expect(upsell.mockCtaLabel).toBe("Confirm on the full 90-question mock · $5 for 5 attempts");
+    expect(upsell.mockCtaLabel).toBe("Confirm on the full 90-question mock · $19 for unlimited attempts");
     expect(upsell.mockPathEyebrow).toBe("Confirm the score");
     expect(upsell.studyPathEyebrow).toBe("Fix weak topics");
   });
@@ -101,7 +101,7 @@ describe("result upsell", () => {
     expect(upsell.close).toBe(
       "Next step: drill these exact topics with 300 spaced-repetition flashcards for $11, then confirm on the full 90-question mock.",
     );
-    expect(upsell.mockCtaLabel).toBe("Take the full 90-question mock · $5 for 5 attempts");
+    expect(upsell.mockCtaLabel).toBe("Take the full 90-question mock · $19 for unlimited attempts");
   });
 
   it("prefers the Pass Pack as the study path when both Anki and pack are on sale", () => {

@@ -2,8 +2,8 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import {
-  MOCK_PASS_ATTEMPTS,
   MOCK_PASS_CHECKOUT_URL,
+  MOCK_PASS_OFFER,
   MOCK_PASS_PRICE_USD,
 } from "@/lib/mock-exams/mock-pass";
 import type { FreeAttemptRecord } from "@/lib/mock-exams/free-attempt";
@@ -28,7 +28,7 @@ const benefits = [
   "Any UniPrep2Go mock — FINRA, CFA, FRM, PTCB, ServSafe, insurance, real estate, citizenship and more",
   "Exam mode or Learn mode — you choose on each attempt",
   "Full topic readiness report and answer review every time",
-  "One-time $5 · no subscription · no account · key works on any device",
+  "One-time $19 · unlimited attempts · no subscription · no account · key works on any device",
 ] as const;
 
 function formatFreeAttempt(record: FreeAttemptRecord | null) {
@@ -168,10 +168,10 @@ export function MockPassPaywall({
           </h3>
           <p className="mt-2 text-sm leading-6 text-[#4f493e]">
             {passExhausted
-              ? `Get ${MOCK_PASS_ATTEMPTS} more attempts for $${MOCK_PASS_PRICE_USD} to keep practicing.`
+              ? `Paste the same key again to switch it to unlimited access, or get ${MOCK_PASS_OFFER}.`
               : `The first attempt is a free ${FREE_DIAGNOSTIC_QUESTIONS}-question diagnostic — one on any exam, in either mode${
                   freeAttemptLabel ? ` (yours: ${freeAttemptLabel})` : ""
-                }. Run full-length mocks and retakes with ${MOCK_PASS_ATTEMPTS} attempts for $${MOCK_PASS_PRICE_USD}.`}
+                }. Full-length mocks and retakes are ${MOCK_PASS_OFFER}.`}
           </p>
         </div>
         {onClose ? (
@@ -212,7 +212,7 @@ export function MockPassPaywall({
           }
         >
           <span className="text-left">
-            <span className="block text-base font-semibold">Get {MOCK_PASS_ATTEMPTS} mock attempts</span>
+            <span className="block text-base font-semibold">Get unlimited mocks</span>
             <span className="mt-0.5 block text-xs text-[#fffaf0]/80">Secure checkout on Gumroad</span>
           </span>
           <span className="text-2xl font-bold tabular-nums tracking-tight">${MOCK_PASS_PRICE_USD}</span>

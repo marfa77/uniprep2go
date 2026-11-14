@@ -15,6 +15,7 @@ import { signMockPassSession, verifyMockPassSession } from "./mock-pass-token";
 import {
   MOCK_ACCESS_RULE,
   MOCK_PASS_CHECKOUT_URL,
+  UNLIMITED_MOCK_PASS_ATTEMPTS,
   decideMockStart,
   isMockPaywallEnabled,
   mockPassAttemptsForQuantity,
@@ -40,13 +41,14 @@ describe("mock pass rules", () => {
     expect(decideMockStart({ paywallEnabled: false, freeAttemptUsed: true, remaining: 0 })).toBe("open");
   });
 
-  it("grants 5 attempts per $5 unit and checks out directly", () => {
-    expect(mockPassAttemptsForQuantity(1)).toBe(5);
-    expect(mockPassAttemptsForQuantity(2)).toBe(10);
-    expect(mockPassAttemptsForQuantity(undefined)).toBe(5);
+  it("grants unlimited attempts for any quantity and checks out directly", () => {
+    expect(mockPassAttemptsForQuantity(1)).toBe(UNLIMITED_MOCK_PASS_ATTEMPTS);
+    expect(mockPassAttemptsForQuantity(2)).toBe(UNLIMITED_MOCK_PASS_ATTEMPTS);
+    expect(mockPassAttemptsForQuantity(undefined)).toBe(UNLIMITED_MOCK_PASS_ATTEMPTS);
     expect(MOCK_PASS_CHECKOUT_URL).toContain("wanted=true");
     expect(MOCK_ACCESS_RULE).toMatch(/first UniPrep2Go attempt is free: a 25-question timed diagnostic/);
-    expect(MOCK_ACCESS_RULE).toMatch(/\$5/);
+    expect(MOCK_ACCESS_RULE).toMatch(/\$19/);
+    expect(MOCK_ACCESS_RULE).toMatch(/unlimited attempts/);
   });
 });
 
@@ -94,6 +96,28 @@ describe("mock pass store (memory)", () => {
     expect(await getMockPassState(licenseHash)).toEqual({ remaining: 0, granted: 2, exists: true });
   });
 
+  it("does not spend an unlimited grant and upgrades a finite key", async () => {
+    const licenseHash = hashMockPassKey("unlimited-key-0001");
+    await redeemMockPass({ licenseHash, attempts: 2, email: null, saleId: null });
+    await consumeMockPassAttempt(licenseHash);
+    const upgraded = await redeemMockPass({
+      licenseHash,
+      attempts: UNLIMITED_MOCK_PASS_ATTEMPTS,
+      email: null,
+      saleId: null,
+    });
+    expect(upgraded.alreadyRedeemed).toBe(true);
+    expect(upgraded.remaining).toBe(UNLIMITED_MOCK_PASS_ATTEMPTS);
+    expect(await consumeMockPassAttempt(licenseHash)).toEqual({
+      ok: true,
+      remaining: UNLIMITED_MOCK_PASS_ATTEMPTS,
+    });
+    expect(await consumeMockPassAttempt(licenseHash)).toEqual({
+      ok: true,
+      remaining: UNLIMITED_MOCK_PASS_ATTEMPTS,
+    });
+  });
+
   it("refuses attempts for keys that were never redeemed", async () => {
     expect(await consumeMockPassAttempt(hashMockPassKey("never-redeemed-key"))).toEqual({
       ok: false,
@@ -134,7 +158,7 @@ describe("mock pass license", () => {
 
     expect((await verifyMockPassLicense("refunded-key-1")).ok).toBe(false);
     const ok = await verifyMockPassLicense("paid-key-2");
-    expect(ok.ok && ok.attempts).toBe(10);
+    expect(ok.ok && ok.unlimited && ok.attempts).toBe(UNLIMITED_MOCK_PASS_ATTEMPTS);
   });
 
   it("rejects empty keys", async () => {

@@ -15,7 +15,7 @@ import { getVerticalDefinition } from "./taxonomy";
 import { shouldIndexMockExam } from "../seo";
 import { mockFreeAccessPriceLabel, mockFunnelNoticeForLinkedDeck } from "./pricing";
 import {
-  MOCK_PASS_ATTEMPTS,
+  MOCK_PASS_OFFER,
   MOCK_PASS_NAME,
   MOCK_PASS_PRICE_USD,
   MOCK_PASS_PRODUCT_URL,
@@ -84,7 +84,7 @@ export function buildMockExamFacts(config: MockExamConfig) {
     mock_pass: {
       name: MOCK_PASS_NAME,
       price_usd: MOCK_PASS_PRICE_USD,
-      attempts: MOCK_PASS_ATTEMPTS,
+      attempts: "unlimited",
       scope: "Any UniPrep2Go mock, Exam or Learn mode; Gumroad license key works on any device",
       checkout_url: MOCK_PASS_PRODUCT_URL,
     },
@@ -197,7 +197,7 @@ ${officialLinks}
 - Pass threshold: ${config.passRule.passPercent}%
 - Price: ${mockFreeAccessPriceLabel}
 - Pricing note: ${facts.pricing_note}
-- Mock Pass: $${MOCK_PASS_PRICE_USD} for ${MOCK_PASS_ATTEMPTS} attempts on any mock — ${MOCK_PASS_PRODUCT_URL}
+- Mock Pass: ${MOCK_PASS_OFFER} on any mock — ${MOCK_PASS_PRODUCT_URL}
 - Exam body: ${config.examBody}
 - Search aliases: ${(config.searchAliases ?? []).join(", ") || "n/a"}
 - Landing page: ${absoluteUrl(`/mock-exams/${config.slug}`)}
@@ -311,8 +311,8 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
             ? [
                 {
                   "@type": "Offer",
-                  name: `${MOCK_PASS_NAME} — ${MOCK_PASS_ATTEMPTS} attempts`,
-                  description: `${MOCK_PASS_ATTEMPTS} more attempts on any UniPrep2Go mock, Exam or Learn mode, via a Gumroad license key.`,
+                  name: `${MOCK_PASS_NAME} — unlimited attempts`,
+                  description: `Unlimited attempts on any UniPrep2Go mock, Exam or Learn mode, via a one-time $${MOCK_PASS_PRICE_USD} Gumroad license key.`,
                   price: MOCK_PASS_PRICE_USD,
                   priceCurrency: "USD",
                   availability: "https://schema.org/InStock",

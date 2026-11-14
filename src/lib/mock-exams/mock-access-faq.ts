@@ -1,9 +1,9 @@
 import { FREE_DIAGNOSTIC_QUESTIONS } from "./free-diagnostic";
-import { MOCK_PASS_ATTEMPTS, MOCK_PASS_NAME, MOCK_PASS_PRICE_USD } from "./mock-pass";
+import { MOCK_PASS_NAME, MOCK_PASS_PRICE_USD } from "./mock-pass";
 
 const MOCK_ACCESS_TAIL =
   `is a free ${FREE_DIAGNOSTIC_QUESTIONS}-question timed diagnostic (any exam, Exam or Learn mode, no signup); ` +
-  `full-length mocks and retakes run on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} — ${MOCK_PASS_ATTEMPTS} attempts on any mock.`;
+  `full-length mocks and retakes run on the $${MOCK_PASS_PRICE_USD} ${MOCK_PASS_NAME} — unlimited attempts on any mock.`;
 
 export const MOCK_ACCESS_FAQ_SUFFIX = `Your first UniPrep2Go mock ${MOCK_ACCESS_TAIL}`;
 

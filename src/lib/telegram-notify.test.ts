@@ -220,7 +220,7 @@ describe("telegram mock pass alerts", () => {
       }),
       mock,
     );
-    expect(text).toContain("Mock Pass — pay click ($5 / 5 attempts)");
+    expect(text).toContain("Mock Pass — pay click ($19 unlimited)");
     expect(text).toContain("Mock slug: series-63-readiness-check");
     expect(text).toContain("Paywall: results → retake");
     expect(text).toContain("Country: US");

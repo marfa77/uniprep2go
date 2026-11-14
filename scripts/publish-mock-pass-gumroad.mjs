@@ -26,19 +26,19 @@ const PRODUCT_ID = "4oP7OGKWPk4Tlp2ayeOQ7w==";
 const PERMALINK = "uniprep-mock-pass";
 const PRODUCT_URL = `https://pixidstudio.gumroad.com/l/${PERMALINK}`;
 const SITE = "https://uniprep2go.study";
-const NAME = "UniPrep2Go Mock Pass — 5 Timed Practice Test Attempts (Any Exam)";
+const NAME = "UniPrep2Go Mock Pass — Unlimited Timed Practice Tests (Any Exam)";
 const SUMMARY =
-  "5 attempts on any UniPrep2Go timed mock — Exam or Learn mode, full readiness report every time. Your first mock is always free.";
+  "Unlimited attempts on any UniPrep2Go timed mock — Exam or Learn mode, full readiness report every time. Your first mock is always free. $19, one time.";
 const TAGS = ["practice test", "mock exam", "exam prep", "finra", "cfa", "ptcb", "servsafe", "license exam"];
 const EDUCATION_TAXONOMY_ID = "177";
 
-const RECEIPT = `How to unlock your 5 mock attempts:
+const RECEIPT = `How to unlock unlimited mocks:
 
 1. Copy the license key shown on this receipt.
 2. Open any mock at ${SITE}/mock-exams (or go back to the tab you came from) and press Start.
 3. Paste the key into "Have a key? Paste your Gumroad license key" and press Unlock attempts.
 
-Each start of a mock, in Exam or Learn mode, uses one attempt. The topic readiness report and answer review are included every time. Attempts do not expire. On another phone or browser, paste the same key again: the attempts are shared, not doubled.
+The key does not run out. Exam mode and Learn mode are both included, and every start ends with the topic readiness report and answer review. On another phone or browser, paste the same key again.
 
 Questions or a key that will not unlock: support@uniprep2go.study`;
 
@@ -55,20 +55,16 @@ const FAQ = [
     "Yes. Your first UniPrep2Go mock is free on any exam, in Exam or Learn mode, with no signup. The Mock Pass is only for attempts after that: retakes, a second exam, or switching modes.",
   ],
   [
-    "What counts as one attempt?",
-    "Starting a mock session, in Exam or Learn mode, uses one attempt. Reading your report or reviewing answers afterwards does not use another one. Leaving a session midway still counts as the attempt you started.",
+    "Do attempts run out?",
+    "No. One purchase is unlimited full-length mocks on any live UniPrep2Go exam, in Exam or Learn mode. Reading the report does not start another mock.",
   ],
   [
     "Which exams can I use it on?",
     "Any live UniPrep2Go mock (190+): FINRA SIE, Series 7 and Series 63, CFA Level 1, FRM Part 1, PTCB, ServSafe, Life & Health insurance, state real estate, EPA 608, LEED, citizenship tests and more. One key covers all of them.",
   ],
   [
-    "Do attempts expire? Can I use another device?",
-    "Attempts do not expire. Paste the same key on your phone or another browser and the remaining attempts follow you: they are shared, not doubled. No account is needed.",
-  ],
-  [
-    "Can I buy more than 5 attempts?",
-    "Yes. Set the quantity at checkout: 2 = 10 attempts, 3 = 15 attempts, and so on. One key holds all of them.",
+    "Does it expire? Can I use another device?",
+    "The key does not expire. Paste the same key on your phone or another browser. No account is needed. Buy one — quantity does not add a second pass.",
   ],
   [
     "Is this official exam material?",
@@ -127,10 +123,10 @@ h1{font-size:76px;line-height:1.02;font-weight:700;letter-spacing:-.02em;max-wid
 .free{display:inline-block;margin-top:26px;background:#e3efe4;border:1.5px solid #9cc3a2;color:#22502c;border-radius:12px;padding:10px 18px;font-size:21px;font-weight:600}
 </style></head><body><div class="grid"></div><div class="wrap">
 <div><p class="mono" style="font-size:18px">UniPrep2Go · Mock Pass</p>
-<h1 style="margin-top:20px">5 timed mock attempts.<br/>Any exam.</h1>
+<h1 style="margin-top:20px">Unlimited timed mocks.<br/>Any exam.</h1>
 <p class="sub">Exam or Learn mode · full topic readiness report and answer review every time</p>
 <p class="free">First mock always free on uniprep2go.study</p></div>
-<div class="price"><b>$5</b><span>5 attempts</span></div>
+<div class="price"><b>$19</b><span>unlimited</span></div>
 <div class="chips">${exams.map((e) => `<span class="chip">${e}</span>`).join("")}<span class="chip" style="background:#18140f;color:#fffaf0;border-color:#18140f">190+ mocks</span></div>
 </div></body></html>`;
 }
@@ -144,7 +140,7 @@ function thumbHtml() {
 h1{margin-top:34px;font-size:46px;font-weight:700;letter-spacing:-.01em}
 p{margin-top:10px;font-size:24px;color:#4f493e}
 </style></head><body><div class="grid"></div><div class="wrap">
-<div class="badge"><b>$5</b><span>5 attempts</span></div>
+<div class="badge"><b>$19</b><span>unlimited</span></div>
 <h1>Mock Pass</h1><p>Any UniPrep2Go mock · Exam or Learn</p>
 </div></body></html>`;
 }
@@ -189,7 +185,7 @@ const GALLERY = [
     fit: "contain",
     eyebrow: "Unlock in seconds",
     title: "Paste your key, keep going",
-    body: "Your Gumroad license key unlocks 5 attempts on any UniPrep2Go mock. No account, works on any device.",
+    body: "Your Gumroad license key unlocks unlimited UniPrep2Go mocks. No account, works on any device.",
   },
 ];
 
@@ -224,10 +220,10 @@ async function renderAssets() {
 }
 
 function descriptionHtml() {
-  return `<p><strong>UniPrep2Go Mock Pass</strong>: 5 attempts on any UniPrep2Go timed practice test for $5. Your first mock on <a href="${SITE}/mock-exams">uniprep2go.study</a> is always free. The Mock Pass covers everything after that: a retake, a second exam, or switching between Exam and Learn mode.</p>
+  return `<p><strong>UniPrep2Go Mock Pass</strong>: unlimited attempts on any UniPrep2Go timed practice test for $19. Your first mock on <a href="${SITE}/mock-exams">uniprep2go.study</a> is always free. The Mock Pass covers everything after that: retakes, a second exam, or switching between Exam and Learn mode.</p>
 <h3>What you get</h3>
 <ul>
-<li><strong>5 mock attempts</strong> (quantity 2 = 10 attempts, and so on)</li>
+<li><strong>Unlimited mock attempts</strong> on one license key. One purchase — quantity does not add a second pass.</li>
 <li><strong>Any live mock (190+)</strong>: FINRA SIE, Series 7 and Series 63, CFA Level 1, FRM Part 1, PTCB, ServSafe, Life &amp; Health insurance, state real estate, EPA 608, LEED, citizenship tests and more</li>
 <li><strong>Exam mode</strong> (timed, scored against the readiness target) or <strong>Learn mode</strong> (an explanation after every answer)</li>
 <li><strong>Full topic readiness report and answer review</strong> after every attempt</li>
@@ -237,7 +233,7 @@ function descriptionHtml() {
 <ol>
 <li>Buy. Your license key appears instantly on the receipt and in the email.</li>
 <li>Open any mock at <a href="${SITE}/mock-exams">uniprep2go.study/mock-exams</a> and press Start.</li>
-<li>Paste the key into <em>Have a key?</em> and press <em>Unlock attempts</em>. Each start uses one attempt.</li>
+<li>Paste the key into <em>Have a key?</em> and press <em>Unlock attempts</em>. The key does not run out.</li>
 </ol>
 <h3>FAQ</h3>
 ${FAQ.map(([q, a]) => `<p><strong>${escapeHtml(q)}</strong><br>${escapeHtml(a)}</p>`).join("\n")}
@@ -258,7 +254,7 @@ function landingHtml({ coverUrl, galleryUrls }) {
         url: PRODUCT_URL,
         brand: { "@type": "Brand", name: "UniPrep2Go" },
         image: coverUrl || undefined,
-        offers: { "@type": "Offer", url: PRODUCT_URL, availability: "https://schema.org/InStock", priceCurrency: "USD", price: "5" },
+        offers: { "@type": "Offer", url: PRODUCT_URL, availability: "https://schema.org/InStock", priceCurrency: "USD", price: "19" },
       },
       {
         "@type": "FAQPage",
@@ -286,12 +282,12 @@ function landingHtml({ coverUrl, galleryUrls }) {
   <header class="sticky top-0 z-50 border-b backdrop-blur-md" style="background:color-mix(in srgb,var(--bg) 88%,transparent);border-color:var(--border)">
     <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between gap-4">
       <p class="font-semibold text-sm truncate" data-gumroad-field="name">${escapeHtml(NAME)}</p>
-      ${buy(`Buy — <span data-gumroad-field="price">$5</span>`, "px-5 py-2.5 text-sm shrink-0")}
+      ${buy(`Buy — <span data-gumroad-field="price">$19</span>`, "px-5 py-2.5 text-sm shrink-0")}
     </div>
   </header>
   <main id="main" class="max-w-4xl mx-auto px-6 py-10">
     <p class="label-mono">UniPrep2Go · Mock Pass</p>
-    <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">5 timed mock attempts on any exam, for $5</h1>
+    <h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-semibold tracking-tight leading-tight">Unlimited timed mocks on any exam, for $19</h1>
     <p class="mt-5 text-lg sm:text-xl leading-8 max-w-3xl">Your first UniPrep2Go mock is free. The Mock Pass is for everything after: retake the same exam, try a second one, or switch between Exam and Learn mode. Full topic readiness report and answer review every time.</p>
     <div class="mt-8 grid lg:grid-cols-2 gap-8 items-center">
       <div class="space-y-4">
@@ -301,16 +297,16 @@ function landingHtml({ coverUrl, galleryUrls }) {
           <li class="flex gap-3"><span class="text-accent font-bold">✓</span><span>Readiness report and answer review on every attempt</span></li>
           <li class="flex gap-3"><span class="text-accent font-bold">✓</span><span>One key, any device · no account · no subscription · no expiry</span></li>
         </ul>
-        ${buy(`Get 5 attempts — <span data-gumroad-field="price">$5</span>`, "px-6 py-3 text-sm")}
+        ${buy(`Get unlimited mocks — <span data-gumroad-field="price">$19</span>`, "px-6 py-3 text-sm")}
       </div>
-      ${coverUrl ? `<figure class="overflow-hidden rounded-3xl theme-card shadow-lg"><img src="${coverUrl}" alt="UniPrep2Go Mock Pass — 5 attempts, any exam" class="w-full h-auto object-cover" loading="eager"></figure>` : ""}
+      ${coverUrl ? `<figure class="overflow-hidden rounded-3xl theme-card shadow-lg"><img src="${coverUrl}" alt="UniPrep2Go Mock Pass — unlimited, any exam" class="w-full h-auto object-cover" loading="eager"></figure>` : ""}
     </div>
     <section class="mt-12" aria-labelledby="steps-heading">
       <h2 id="steps-heading" class="text-2xl font-semibold tracking-tight">How it works</h2>
       <div class="mt-4 grid sm:grid-cols-3 gap-3">
         <div class="theme-card rounded-2xl p-5"><p class="label-mono">Step 1</p><p class="mt-2 font-medium">Buy: the license key appears instantly on your receipt</p></div>
         <div class="theme-card rounded-2xl p-5"><p class="label-mono">Step 2</p><p class="mt-2 font-medium">Open any mock at uniprep2go.study/mock-exams and press Start</p></div>
-        <div class="theme-card rounded-2xl p-5"><p class="label-mono">Step 3</p><p class="mt-2 font-medium">Paste the key under “Have a key?”: each start uses one attempt</p></div>
+        <div class="theme-card rounded-2xl p-5"><p class="label-mono">Step 3</p><p class="mt-2 font-medium">Paste the key under “Have a key?”. It does not run out</p></div>
       </div>
     </section>
     <section class="mt-12" aria-labelledby="inside-heading">
@@ -321,7 +317,7 @@ function landingHtml({ coverUrl, galleryUrls }) {
     <section class="mt-12" aria-labelledby="facts-heading">
       <h2 id="facts-heading" class="text-2xl font-semibold tracking-tight">At a glance</h2>
       <dl class="mt-4 grid sm:grid-cols-2 gap-px rounded-3xl overflow-hidden" style="background:var(--border);border:1px solid var(--border)">
-        <div class="theme-card px-5 py-4" style="border:0"><dt class="label-mono">Price</dt><dd class="mt-2 font-medium"><span data-gumroad-field="price">$5</span> for 5 attempts</dd></div>
+        <div class="theme-card px-5 py-4" style="border:0"><dt class="label-mono">Price</dt><dd class="mt-2 font-medium"><span data-gumroad-field="price">$19</span> unlimited</dd></div>
         <div class="theme-card px-5 py-4" style="border:0"><dt class="label-mono">Free</dt><dd class="mt-2 font-medium">Your first mock, any exam, either mode</dd></div>
         <div class="theme-card px-5 py-4" style="border:0"><dt class="label-mono">Delivery</dt><dd class="mt-2 font-medium">Gumroad license key, instant</dd></div>
         <div class="theme-card px-5 py-4" style="border:0"><dt class="label-mono">Expiry</dt><dd class="mt-2 font-medium">None · shared across your devices</dd></div>
@@ -336,10 +332,10 @@ ${FAQ.map(([q, a]) => `<details class="theme-card rounded-2xl p-5 group"><summar
     <section class="mt-12 mb-6" aria-labelledby="pricing-heading">
       <div class="theme-card rounded-3xl p-8 sm:p-10 text-center">
         <h2 id="pricing-heading" class="text-2xl font-semibold">Keep practicing</h2>
-        <p class="mt-2 text-4xl font-semibold"><span data-gumroad-field="price">$5</span></p>
-        <p class="mt-2 text-muted">5 attempts · any UniPrep2Go mock · Exam or Learn mode</p>
+        <p class="mt-2 text-4xl font-semibold"><span data-gumroad-field="price">$19</span></p>
+        <p class="mt-2 text-muted">Unlimited · any UniPrep2Go mock · Exam or Learn mode</p>
         <p class="hidden" data-gumroad-field="description" aria-hidden="true">${escapeHtml(SUMMARY)}</p>
-        ${buy("Get my 5 attempts", "mt-6 px-8 py-3.5 text-sm")}
+        ${buy("Get unlimited mocks", "mt-6 px-8 py-3.5 text-sm")}
         <p class="mt-4 text-xs text-muted">Independent practice tests · not official exam material · first mock free at <a class="underline" href="${SITE}/mock-exams">uniprep2go.study/mock-exams</a></p>
       </div>
     </section>
@@ -373,11 +369,68 @@ function publishLanding(urls) {
 async function main() {
   const args = new Set(process.argv.slice(2));
   const dryRun = args.has("--dry-run");
-  if (args.has("--landing-only")) {
+  if (args.has("--landing-only") || args.has("--copy-only")) {
     loadLocalEnvFiles();
     ensureGumroadAccessToken({ persist: true });
+    if (args.has("--copy-only")) {
+      const description = descriptionHtml();
+      execFileSync(
+        "gumroad",
+        [
+          "products", "update", PRODUCT_ID,
+          "--name", NAME,
+          "--custom-permalink", PERMALINK,
+          "--custom-summary", SUMMARY,
+          "--custom-receipt", RECEIPT,
+          "--description", description,
+          "--price", "19",
+          "--currency", "usd",
+          "--max-purchase-count", "1",
+          "--taxonomy-id", EDUCATION_TAXONOMY_ID,
+          ...TAGS.flatMap((t) => ["--tag", t]),
+          "--non-interactive",
+          "--yes",
+        ],
+        { stdio: "inherit" },
+      );
+    }
+    if (args.has("--copy-only")) {
+      try {
+        mkdirSync(OUT, { recursive: true });
+        const coverHtmlPath = join(OUT, "cover.html");
+        const thumbHtmlPath = join(OUT, "thumbnail.html");
+        const coverJpg = join(OUT, "cover.jpg");
+        const thumbJpg = join(OUT, "thumbnail.jpg");
+        writeFileSync(coverHtmlPath, coverHtml());
+        writeFileSync(thumbHtmlPath, thumbHtml());
+        await shoot(coverHtmlPath, join(OUT, "cover.png"), 1280, 720);
+        await shoot(thumbHtmlPath, join(OUT, "thumbnail.png"), 600, 600);
+        execSync(`magick "${join(OUT, "cover.png")}" -resize 2560x1440 -quality 90 "${coverJpg}"`);
+        execSync(`magick "${join(OUT, "thumbnail.png")}" -resize 1200x1200 -quality 90 "${thumbJpg}"`);
+        const beforeIds = new Set((viewProduct().covers ?? []).map((cover) => cover.id));
+        execFileSync(
+          "gumroad",
+          ["products", "update", PRODUCT_ID, "--cover-image", coverJpg, "--thumbnail", thumbJpg, "--non-interactive", "--yes"],
+          { stdio: "inherit" },
+        );
+        const after = viewProduct();
+        const added = (after.covers ?? []).filter((cover) => !beforeIds.has(cover.id));
+        const stalePriceCover = (after.covers ?? []).find((cover) => beforeIds.has(cover.id) && coverUrl(cover).includes("d979sm651w3tuxvznqysqixin9d0"));
+        if (added.length && stalePriceCover) {
+          execFileSync(
+            "gumroad",
+            ["products", "covers", "remove", "--non-interactive", "--yes", "--", PRODUCT_ID, stalePriceCover.id],
+            { stdio: "inherit" },
+          );
+        }
+      } catch (error) {
+        console.error("Cover refresh skipped:", error instanceof Error ? error.message : error);
+      }
+    }
     const urls = (viewProduct().covers ?? []).map(coverUrl);
     publishLanding(urls);
+    const final = viewProduct();
+    console.log(JSON.stringify({ name: final.name, price: final.formatted_price, max_purchase_count: final.max_purchase_count }, null, 2));
     return;
   }
   const files = await renderAssets();
@@ -398,6 +451,9 @@ async function main() {
     "--custom-summary", SUMMARY,
     "--custom-receipt", RECEIPT,
     "--description", description,
+    "--price", "19",
+    "--currency", "usd",
+    "--max-purchase-count", "1",
     "--taxonomy-id", EDUCATION_TAXONOMY_ID,
     ...TAGS.flatMap((t) => ["--tag", t]),
     "--thumbnail", files.thumbnail,

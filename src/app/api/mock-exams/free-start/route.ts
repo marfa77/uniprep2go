@@ -21,7 +21,7 @@ export async function POST(request: Request) {
         {
           ok: false,
           code: "free_used",
-          message: "Your free mock is used. Unlock 5 more attempts to continue.",
+          message: "Your free mock is used. Unlock unlimited attempts to continue.",
         },
         { status: 402 },
       );
