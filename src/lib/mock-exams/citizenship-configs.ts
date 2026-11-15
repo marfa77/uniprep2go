@@ -477,15 +477,15 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       70,
     ),
     officialSourceNote:
-      "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path: Dutch (NT2) plus Maatschappelijke Oriëntatie. Official standaardtest MO is 41 digital MCQ / 120 minutes (11 sokkelvragen) after a ~60-hour course; test 60% + process 40%. This 60Q / 45 min check is independent MO-theme practice — not AgII material. A federal civic test has been proposed, not assumed live.",
+      "Flanders has no single federal civics MCQ like BAMF/LITUK. Live path: Dutch (NT2) plus Maatschappelijke Oriëntatie. Official standaardtest MO is 41 digital MCQ / 120 minutes (11 sokkelvragen) after a ~60-hour course; test 60% + process 40%. This 60Q / 45 min check draws from a 220-question bank and is independent MO-theme practice — not AgII material. A federal civic test has been proposed, not assumed live.",
     description:
-      "60-question Flanders MO / social-orientation diagnostic (free 25-question version). Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 165-card Anki on Gumroad. Independent prep.",
+      "60-question Flanders MO / social-orientation diagnostic (free 25-question version) from a 220-question bank. Not an official national citizenship MCQ (Belgium’s civic test is proposed). Live 220-card Anki on Gumroad. Independent prep.",
     examBody:
       "Belgium Flanders — Maatschappelijke oriëntatie (no single federal MCQ; proposed national test separate)",
     questionSourceNote:
       "Questions rewritten from Prep2Go Belgium Flanders MO (maatschappelijke oriëntatie) themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Flemish government material.",
-    ankiDeckCardCount: 165,
-    lastUpdated: "2026-10-24",
+    ankiDeckCardCount: 220,
+    lastUpdated: "2026-11-15",
     searchAliases: ["maatschappelijke oriëntatie", "Flanders MO test", "inburgering Vlaanderen"],
   }),
   nicheReadinessConfig({

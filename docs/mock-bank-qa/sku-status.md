@@ -1,6 +1,6 @@
 # SKU status board
 
-Generated 2026-11-14 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-15 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
@@ -199,7 +199,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `wastewater-operator-1-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | 2026-11-03 | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
-| civic | `belgium-flanders-mo-readiness-check` | live | 60 / 120 | 2026-10-24 | — |
+| civic | `belgium-flanders-mo-readiness-check` | live | 60 / 220 | 2026-11-15 | — |
 | civic | `belgium-wallonie-citoyennete-readiness-check` | live | 60 / 60 | — | FAIL (0 items + bank-level): correct; bank 60 for 60Q session; no content review in ledger |
 | civic | `canadian-citizenship-readiness-check` | live | 60 / 200 | 2026-11-03 | FAIL (177 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
 | civic | `ccse-espana-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (45 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |

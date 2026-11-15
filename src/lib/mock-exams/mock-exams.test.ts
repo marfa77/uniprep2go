@@ -260,12 +260,13 @@ describe("mock exam configs", () => {
       const expectedBank =
         slug === "luxembourg-vivre-ensemble-readiness-check"
           ? 168
-      : slug === "belgium-flanders-mo-readiness-check" ||
-          slug === "finland-kansalaisuuskoe-readiness-check"
-            ? 120
-            : 60;
+          : slug === "belgium-flanders-mo-readiness-check"
+            ? 220
+            : slug === "finland-kansalaisuuskoe-readiness-check"
+              ? 120
+              : 60;
       expect(questions, slug).toHaveLength(expectedBank);
-      if (expectedBank === 120) {
+      if (expectedBank === 120 || expectedBank === 220) {
         expect(getMockExamConfig(slug)?.questionCount).toBe(60);
       }
       expect(questions[0]?.sourceNote, slug).toContain(note);

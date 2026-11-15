@@ -503,11 +503,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "belgium-flanders-mo-anki-deck": {
-    title: "Flanders MO Anki | 165 Dutch Cards + Free 60Q Mock",
-    headline: "Belgium Flanders MO — 165 Dutch Civics Flashcards",
+    title: "Flanders MO Anki | 220 Dutch Cards + Free 60Q Mock",
+    headline: "Belgium Flanders MO — 220 Dutch Civics Flashcards",
     studyLabel: "Flanders MO Anki",
     description:
-      "Flanders maatschappelijke oriëntatie Anki: 165 Dutch cards with a teaching line on every card, AgII pathway honesty (official standaardtest 41Q / 120 min), plus a 60-question Dutch diagnostic (free 25-question version). $9 one-time .apkg — not NT2 language vocab, not AgII material.",
+      "Flanders maatschappelijke oriëntatie Anki: 220 Dutch cards with a teaching line on every card, AgII pathway honesty (official standaardtest 41Q / 120 min), plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. $9 one-time .apkg — not NT2 language vocab, not AgII material.",
     keywords: [
       "flanders mo anki",
       "maatschappelijke orientatie flashcards",

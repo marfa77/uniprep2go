@@ -43,7 +43,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
   "belgium-flanders-mo-anki-deck":
-    "165 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $9 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version). Not NT2 language vocab.",
+    "220 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $9 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. Not NT2 language vocab.",
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a 40-question, 60-minute exam simulation (free 25-question version). Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
@@ -367,7 +367,7 @@ export const positioningOverrides: Partial<
   },
   "belgium-flanders-mo-anki-deck": {
     ourEdge: [
-      "165 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
+      "220 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
       "Covers institutions, rights/values, daily services, and AgII pathway honesty vs the official 41Q / 120 min standaardtest",
       "Pairs with a free 60-question Dutch diagnostic (free 25-question version) scored by topic",
       "$9 one-time ownable .apkg — separate from NT2 language vocabulary",
@@ -1236,7 +1236,7 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one 
 
 **Inburgering** is the civic integration language track for many Dutch residency cases. Official Inburgering is **five modules** (KNM civics, ONA, plus speaking, writing, and listening/reading) — this deck is the **language lexicon**, not a single MCQ substitute for the whole path. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
 
-This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and the separate 165-card Flanders MO Anki deck.
+This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and the separate 220-card Flanders MO Anki deck.
 
 Cards emphasize practical Dutch for work, housing, government services, and daily interaction — the vocabulary integration exams and real life both reward.
 

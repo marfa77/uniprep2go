@@ -64,7 +64,7 @@ export const citizenshipPlannedDecks: PlannedDeck[] = [
     slug: "belgium-flanders-mo-anki-deck",
     shortName: "Belgium Flanders MO",
     title: "Belgium Flanders MO Anki Deck — Maatschappelijke Oriëntatie",
-    subtitle: "Anki deck for Flanders maatschappelijke oriëntatie (165 Dutch civics cards).",
+    subtitle: "Anki deck for Flanders maatschappelijke oriëntatie (220 Dutch civics cards).",
     audience: "Applicants preparing Flanders maatschappelijke oriëntatie / integration civics.",
     examLabel: "Flemish integration / citizenship authorities",
     mockSlug: "belgium-flanders-mo-readiness-check",
