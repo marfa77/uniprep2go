@@ -2984,7 +2984,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s Belgium Flanders MO readiness check the official test?",
-        a: "No. It is an independent 60-question / 45-minute Dutch diagnostic (free 25-question version) from a 220-question bank on MO-style themes, not the official 41-question / 120-minute standaardtest. The live Flanders MO Anki deck ($9 / 220 Dutch cards with a teaching line on every card) is separate spaced-repetition prep — not AgII material.",
+        a: "No. It is an independent 60-question / 45-minute Dutch diagnostic (free 25-question version) from a 220-question bank on MO-style themes, not the official 41-question / 120-minute standaardtest. The live Flanders MO Anki deck ($19 / 220 Dutch cards with a teaching line on every card) is separate spaced-repetition prep — not AgII material.",
       },
     ],
     trademark_note:

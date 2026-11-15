@@ -299,7 +299,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "EU and Nordic civics decks",
-        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Flanders MO, Belgium Wallonie, and Luxembourg Vivre ensemble each have a free readiness check plus a live Anki deck ($9; Luxembourg is a $16 French + English pair). They are not language decks and are not in the six-country bundle.",
+        body: "Denmark Indfødsretsprøven, Portugal nacionalidade, Norway Statsborgerprøven, Sweden Medborgarskapsprov, Belgium Wallonie, and Luxembourg Vivre ensemble each have a free readiness check plus a live Anki deck ($9; Luxembourg is a $16 French + English pair). Belgium Flanders MO is a $19 deck. They are not language decks and are not in the six-country bundle.",
       },
     ],
     faqs: [

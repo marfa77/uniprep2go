@@ -72,7 +72,7 @@ export const PREMIUM_CATALOG_SLUGS = [
 ] as const;
 
 export function premiumCatalogPriceLine(): string {
-  return `${PREMIUM_CATALOG_SLUGS.length} premium products at $19 — CFA Level 1 deck and formula PDF, CFA Level 2 formula PDF, Series 7, Series 63, SIE, PTCB, Life & Health, and Property & Casualty. CFA Level 2 Anki is $29. Other decks ${formatCatalogListPrice()}.`;
+  return `${PREMIUM_CATALOG_SLUGS.length} premium products at $19 — CFA Level 1 deck and formula PDF, CFA Level 2 formula PDF, Series 7, Series 63, SIE, PTCB, Life & Health, and Property & Casualty. CFA Level 2 Anki is $29. Belgium Flanders MO Anki is $19. Other decks ${formatCatalogListPrice()}.`;
 }
 
 /**

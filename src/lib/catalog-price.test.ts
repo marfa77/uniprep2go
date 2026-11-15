@@ -46,7 +46,7 @@ describe("catalog-price", () => {
     );
   });
 
-  it("prices the nine premium Anki and PDF products at $19, and nothing else at that price", () => {
+  it("prices the nine premium Anki and PDF products at $19, plus Flanders MO", () => {
     expect(PREMIUM_CATALOG_SLUGS).toHaveLength(9);
     for (const slug of PREMIUM_CATALOG_SLUGS) {
       expect(getCatalogListPriceUsd(slug)).toBe(PREMIUM_CATALOG_USD);
@@ -55,8 +55,13 @@ describe("catalog-price", () => {
       .filter(([, price]) => price === PREMIUM_CATALOG_USD)
       .map(([slug]) => slug)
       .sort();
-    expect(atPremium).toEqual([...PREMIUM_CATALOG_SLUGS].sort());
+    expect(atPremium).toEqual(
+      [...PREMIUM_CATALOG_SLUGS, "belgium-flanders-mo-anki-deck"].sort(),
+    );
+    expect(getCatalogListPriceUsd("belgium-flanders-mo-anki-deck")).toBe(19);
+    expect(formatCatalogListPrice("belgium-flanders-mo-anki-deck")).toBe("$19");
     expect(premiumCatalogPriceLine()).toContain("9 premium products");
+    expect(premiumCatalogPriceLine()).toContain("Belgium Flanders MO Anki is $19");
     expect(premiumCatalogPriceLine()).toContain("CFA Level 2 Anki is $29");
     expect(premiumCatalogPriceLine()).toContain("Other decks $9.99");
     expect(getCatalogListPriceUsd("cfa-level-2-anki-deck")).toBe(29);

@@ -43,7 +43,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
   "belgium-flanders-mo-anki-deck":
-    "220 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $9 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. Not NT2 language vocab.",
+    "220 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $19 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. Not NT2 language vocab.",
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a 40-question, 60-minute exam simulation (free 25-question version). Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
@@ -370,7 +370,7 @@ export const positioningOverrides: Partial<
       "220 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
       "Covers institutions, rights/values, daily services, and AgII pathway honesty vs the official 41Q / 120 min standaardtest",
       "Pairs with a free 60-question Dutch diagnostic (free 25-question version) scored by topic",
-      "$9 one-time ownable .apkg — separate from NT2 language vocabulary",
+      "$19 one-time ownable .apkg — separate from NT2 language vocabulary",
     ],
     summaryProse:
       "Flanders MO is course + standaardtest under AgII, not a public free 41-question bank. This deck drills Dutch civics themes with a why on every card, then you diagnose gaps on the timed mock — independent prep, not AgII material.",
@@ -967,13 +967,13 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
   "belgium-flanders-mo-anki-deck": `### What is inside
 
-One ownable Dutch .apkg with 165 maatschappelijke oriëntatie civics cards: Belgian and Flemish institutions, rights and values, nationality themes, work/housing/school/health, culture, and daily participation. Every card shows a short answer plus a teaching line — the trap, the AgII distinction, or why the fact matters on the MO path.
+One ownable Dutch .apkg with 220 maatschappelijke oriëntatie civics cards: Belgian and Flemish institutions, rights and values, nationality themes, work/housing/school/health, culture, and daily participation. Every card shows a short answer plus a teaching line — the trap, the AgII distinction, or why the fact matters on the MO path.
 
 ### Why this beats the alternatives
 
-Coverage: 165 unique Dutch prompts with explanations, not a one-word capital/language trivia list. Honesty: the official AgII standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen) after a ~60-hour course; the combined MO result is test 60% + process 40%. This deck is spaced-repetition theme drill — not that form and not AgII items.
+Coverage: 220 unique Dutch prompts with explanations, not a one-word capital/language trivia list. Honesty: the official AgII standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen) after a ~60-hour course; the combined MO result is test 60% + process 40%. This deck is spaced-repetition theme drill — not that form and not AgII items.
 
-Price and ownership: $9 once, offline in Anki. NT2 Dutch lexicon for the language pillar is a separate Prep2Go deck — do not confuse language vocab with MO civics.
+Price and ownership: $19 once, offline in Anki. NT2 Dutch lexicon for the language pillar is a separate Prep2Go deck — do not confuse language vocab with MO civics.
 
 ### Plan with the free Flanders MO mock
 
