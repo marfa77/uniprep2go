@@ -253,6 +253,14 @@ Already in code (do not redo):
 
 ## Run log
 
+### 2026-11-16 — weekly automation ABORT (missing OPENROUTER_API_KEY)
+
+**Why:** Secrets gate failed on the cron automation VM and on a fresh `marfa77/uniprep2go` cloud VM. Missing: `OPENROUTER_API_KEY` (blocking), `TELEGRAM_*`, `GOOGLE_SERVICE_ACCOUNT_JSON`, `GSC_SITE_PROPERTY`, IndexNow. No GSC numbers invented.  
+**Audits / edits:** Not run. No page copy edits. No IndexNow. No Telegram DM.  
+**Strategy note:** Locked CFA L1/L2 pair (Weeks 5–8 Hold) still overrides outdated USCIS/FINRA weekly prompt lists. Next real measure remains `npm run gsc:export` ~2026-11-21 once GSC secrets are attached.  
+**Unblock:** Attach secrets in https://cursor.com/dashboard/cloud-agents to the UniPrep2Go Cloud Environment (`GSC_SITE_PROPERTY=sc-domain:uniprep2go.study`) and point this automation at that environment.  
+**Recheck:** next Monday cron after secrets are present.
+
 ### 2026-10-24 — CFA pair becomes the only weekly push
 
 **Why:** 28d export 2026-10-18: CFA L1 mock 152 impr @ 14.1 and L2 mock 59 @ 23.3, both 0 clicks, on `cfa level 1 practice test` (pos 11.4) and `cfa level 2 practice exam` (pos 23.8). Series 63 and PTCB sit at pos 2–4 with 2 and 9 impressions.  
