@@ -19,7 +19,7 @@ import { withCatalogProductPrices } from "../catalog-price";
 import { getDeckBySlug } from "../decks";
 import { headTermFaqForSchema } from "./head-term-program";
 import { questionCountFaqForSchema } from "./mock-question-count-aeo";
-import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
+import { fitMetaDescription, fitSeoTitle, SEO_META_DESCRIPTION_MAX, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
 
 type MockSeoProfile = {
@@ -1615,10 +1615,36 @@ const MOCK_META_DESCRIPTION_FROZEN = new Set([
   "unarmed-security-officer-readiness-check",
 ]);
 
-function mockSnippetLead(config: MockExamConfig): string {
+function mockSnippetExamLabel(config: MockExamConfig): string {
   const profile = getMockSeoProfile(config);
-  const exam = profile.practiceTestLabel.replace(/\s+practice test$/i, "").trim();
-  return `Free ${exam} practice test 2026: 25 questions free, no signup`;
+  return profile.practiceTestLabel
+    .replace(/\s+practice\s+(?:test|tests|questions|exam)$/i, "")
+    .replace(/\s+(?:mock test|mock exam|mock)$/i, "")
+    .trim();
+}
+
+function mockSnippetLead(config: MockExamConfig): string {
+  return `Free ${mockSnippetExamLabel(config)} practice test 2026: 25 questions free, no signup`;
+}
+
+/**
+ * Removes the part of a hand-written mock description that repeats the snippet lead
+ * ("{Exam} practice test — free 25-question diagnostic, no signup; full mock: …").
+ * Returns the remaining specifics, starting with a capital letter.
+ */
+function stripRepeatedLead(description: string): string {
+  let body = description.trim();
+  const intro = body.match(/^([^:;—.]{3,80}?)\s*(?::|—|–)\s+/);
+  if (intro && /(practice|mock|diagnostic|questions|test|simulation|exam|prep)/i.test(intro[1])) {
+    body = body.slice(intro[0].length);
+  }
+  body = body
+    .replace(/^(?:a\s+)?free\s+25[- ]question(?:s)?(?:\s+(?:diagnostic|start))?(?:,?\s*no signup)?\s*[;,.]?\s*/i, "")
+    .replace(/^free\s+25\s+questions?(?:,?\s*no signup)?\s*[;,.]?\s*/i, "")
+    .replace(/^(?:first mock free|no signup)\s*[;,.]?\s*/i, "")
+    .replace(/^then\s+/i, "")
+    .replace(/^full mock\s*:?\s*/i, "Full mock: ");
+  return body ? body.charAt(0).toUpperCase() + body.slice(1) : body;
 }
 
 function ensureMockMetaLead(config: MockExamConfig, description: string): string {
@@ -1630,7 +1656,42 @@ function ensureMockMetaLead(config: MockExamConfig, description: string): string
   if (description.toLowerCase().startsWith(lead.slice(0, 30).toLowerCase())) {
     return description;
   }
-  return `${lead}. ${description}`;
+  // Hand-written lead for this exam already in place (e.g. "Free CFA Level 2 practice exam: …").
+  if (description.toLowerCase().startsWith(`free ${mockSnippetExamLabel(config)}`.toLowerCase())) {
+    return description;
+  }
+  const body = stripRepeatedLead(description);
+  if (!body) return `${lead}.`;
+  const combined = `${lead}. ${body}`;
+  if (combined.length <= SEO_META_DESCRIPTION_MAX) return combined;
+  // Keep the specifics after the lead: a sentence-only trim would drop everything but the lead.
+  const sentenceFit = fitMetaDescription(combined);
+  if (sentenceFit.length >= lead.length + 40 && /[.!?]$/.test(sentenceFit)) return sentenceFit;
+  return `${lead}. ${fitMockMetaBody(body, SEO_META_DESCRIPTION_MAX - lead.length - 2)}`;
+}
+
+/** Whole clauses only, no unbalanced "(" — ends with a full stop. */
+function fitMockMetaBody(body: string, max: number): string {
+  const clauses = body.split(/(?<=[.;,])\s+|\s+(?=[—–]\s)/);
+  let out = "";
+  for (const clause of clauses) {
+    const next = out ? `${out} ${clause}` : clause;
+    if (next.length > max - 1) break;
+    out = next;
+  }
+  if (!out) {
+    const window = body.slice(0, max - 1);
+    let cut = -1;
+    for (const match of window.matchAll(/\s(?:\/|across|with|on|for|from|in)\s/g)) {
+      if ((match.index ?? 0) >= Math.floor(max * 0.4)) cut = match.index ?? -1;
+    }
+    out = cut > 0 ? window.slice(0, cut) : fitSeoTitle(body, max - 1);
+  }
+  const open = out.lastIndexOf("(");
+  if (open !== -1 && out.indexOf(")", open) === -1) out = out.slice(0, open);
+  out = out.replace(/(?:\s*[|,:;(—–&+/-]+|\s+(?:and|or|to|for|the|a|an|of|with|in|on|at|by|from|across|then|is|are))+$/i, "").trim();
+  out = out.replace(/[.;,]+$/, "");
+  return `${out}.`;
 }
 
 /** Drops a half-cut trailing " | " segment instead of leaving "| 60" or "(80" in the SERP title. */

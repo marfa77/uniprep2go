@@ -95,7 +95,28 @@ export const defaultMetadata: Metadata = {
   },
 };
 
-/** Trim to max length on a word boundary — no ellipsis (clean SERP display). */
+/**
+ * Words and punctuation that leave a cut SERP title or snippet visibly unfinished
+ * ("… Fingerprinting &", "… $653 & How to", "… Comparison & First", "… 250 DRE Cards + Free").
+ */
+const DANGLING_TAIL =
+  /(?:\s*[|,:;(—–&+/·-]+|\s+(?:and|or|to|for|the|a|an|of|with|in|on|at|by|from|vs\.?|how|what|why|which|when|your|first|free|best|new|full|top|more|plus))+$/i;
+
+function stripDanglingTail(text: string): string {
+  let out = text.trim();
+  for (let guard = 0; guard < 8; guard += 1) {
+    const next = out.replace(DANGLING_TAIL, "").trim();
+    if (next === out) break;
+    out = next;
+  }
+  return out;
+}
+
+/**
+ * Trim to max length on a word boundary — no ellipsis (clean SERP display).
+ * A cut never ends on a connector ("&", "How to", "First", "Free", trailing comma) or
+ * inside an unclosed parenthesis.
+ */
 export function fitSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   const trimmed = title.trim();
   if (trimmed.length <= max) {
@@ -106,7 +127,15 @@ export function fitSeoTitle(title: string, max = SEO_TITLE_MAX): string {
   if (lastSpace > Math.floor(max * 0.55)) {
     cut = cut.slice(0, lastSpace);
   }
-  return cut.trim();
+  const minKeep = Math.floor(max * 0.55);
+  let cleaned = stripDanglingTail(cut);
+  const openParen = cleaned.lastIndexOf("(");
+  if (openParen !== -1 && cleaned.indexOf(")", openParen) === -1) {
+    const beforeParen = stripDanglingTail(cleaned.slice(0, openParen));
+    if (beforeParen.length >= minKeep) cleaned = beforeParen;
+    else if (cleaned.length < max) cleaned = `${cleaned})`;
+  }
+  return cleaned.length >= minKeep ? cleaned : cut.trim();
 }
 
 /** Google SERP meta description sweet spot (~70–155 chars). */

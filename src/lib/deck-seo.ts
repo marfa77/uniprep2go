@@ -92,22 +92,42 @@ function defaultHeadline(deck: SeoDeck, mock?: MockExamConfig): string {
   return `${prefix}${deck.shortName} Exam Prep — ${content}`;
 }
 
+/** Leading determiners that read better lower-cased mid-sentence ("for all 10 CFA Level 1 topic ranges"). */
+const LOWERABLE_LEAD_WORDS = new Set(["all", "the", "every", "each", "both"]);
+
+/**
+ * Lower-case only a leading determiner. Everything else keeps its source casing, so proper
+ * nouns, months, list items and acronyms (CFA, PTCE, DSCSA, USCIS, BAMF, Canadian, January,
+ * Anki, PDF) stay correct in the SERP snippet.
+ */
+function lowerFirstWord(text: string): string {
+  const first = text.match(/^[A-Za-z]+/)?.[0] ?? "";
+  return LOWERABLE_LEAD_WORDS.has(first.toLowerCase())
+    ? text.charAt(0).toLowerCase() + text.slice(1)
+    : text;
+}
+
+function formatLabel(format: string): string {
+  return format.startsWith(".") ? `Anki ${format}` : format;
+}
+
 function defaultDescription(deck: SeoDeck, mock?: MockExamConfig): string {
   const content = contentLabel(deck);
-  const topics = deck.facts.topics;
+  const topics = lowerFirstWord(deck.facts.topics.trim().replace(/\.+$/, ""));
+  const format = formatLabel(deck.format);
   const mockLine = mock
     ? ` Includes a linked ${mockQuestionPhrase(mock.questionCount, mock.status === "live" ? "practice test" : "readiness check")} with topic scoring.`
     : "";
 
   if (deck.category === "finance" || deck.category === "professional") {
-    return `${deck.shortName} exam prep with ${content.toLowerCase()} for ${topics.toLowerCase()}. ${deck.format} download for active recall and spaced repetition.${mockLine} Independent study aid — not official exam material.`;
+    return `${deck.shortName} exam prep with ${content} for ${topics}. ${format} download for active recall and spaced repetition.${mockLine} Independent study aid — not official exam material.`;
   }
 
   if (deck.format === "App") {
-    return `${deck.shortName} exam prep in the Prep2Go Immigration app: ${topics}. Independent survival guide and citizenship test study aid.`;
+    return `${deck.shortName} exam prep in the Prep2Go Immigration app: ${deck.facts.topics}. Independent survival guide and citizenship test study aid.`;
   }
 
-  return `${deck.shortName} exam prep with ${content.toLowerCase()} covering ${topics.toLowerCase()}. ${deck.format} format for daily spaced-repetition review. Independent study aid.`;
+  return `${deck.shortName} exam prep with ${content} covering ${topics}. ${format} format for daily spaced-repetition review. Independent study aid.`;
 }
 
 function defaultKeywords(deck: SeoDeck, mock?: MockExamConfig): string[] {
