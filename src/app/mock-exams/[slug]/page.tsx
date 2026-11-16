@@ -15,6 +15,8 @@ import {
   MockRelatedExamsSection,
 } from "@/components/mock-exams/mock-page-enrichment";
 import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
+import { MockHeadTermBlock } from "@/components/mock-exams/mock-head-term-block";
+import { MockQuestionCountBlock } from "@/components/mock-exams/mock-question-count-block";
 import {
   MockExamAboutVisibleSection,
   MockExamFeaturedFaqSection,
@@ -84,7 +86,7 @@ import { getCitizenshipGuideContent } from "@/lib/mock-exams/citizenship-guide-c
 import { getPracticeOptionsCompared } from "@/lib/mock-exams/practice-options-compared";
 import { PracticeOptionsComparedSection } from "@/components/mock-exams/practice-options-compared";
 import { buildSocialMetadata } from "@/lib/social-metadata";
-import { finalize, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
+import { finalize, fitMetaDescription, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
 
 export const revalidate = 3600;
@@ -107,7 +109,7 @@ export async function generateMetadata({
 
   const seoTitle = buildMockSeoTitle(config);
   const title = leafPageTitle(seoTitle);
-  const description = buildMockSeoDescription(config);
+  const description = fitMetaDescription(buildMockSeoDescription(config));
   const keywords = buildMockSeoKeywords(config);
   const localeMeta = getMockLocaleMeta(config, "nl-BE");
 
@@ -359,6 +361,25 @@ export default async function MockExamPage({
             is a different exam, not this FRM mock.
           </p>
         ) : null}
+        {config.slug === "ptcb-pharmacy-technician-mock" ? (
+          <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Want Anki + the 2026 outline PDF together? See the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/ptcb-2026-pass-pack"
+            >
+              PTCB 2026 Pass Pack
+            </Link>{" "}
+            or the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/ptcb-pharmacy-technician-anki-deck"
+            >
+              PTCB Anki deck
+            </Link>
+            .
+          </p>
+        ) : null}
         {config.slug === "cfa-level-2-readiness-check" ? (
           <p className="mt-3 max-w-3xl text-base leading-7 text-[#4f493e]">
             Still on Level I? Start with the{" "}
@@ -378,6 +399,9 @@ export default async function MockExamPage({
           certifier={official.certifier}
           verifyAtUrl={official.verifyAtUrl}
         />
+
+        <MockHeadTermBlock config={config} />
+        <MockQuestionCountBlock config={config} />
 
         {citizenshipGuide ? (
           <>

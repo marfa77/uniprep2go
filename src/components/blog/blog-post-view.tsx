@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { TrackedCheckoutLink } from "@/components/funnel-tracker";
+import { BlogClusterMoneyLinks } from "@/components/blog/blog-cluster-money-links";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import {
@@ -398,6 +399,8 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
         ) : (
           <CtaBand deck={deck} post={post} />
         )}
+
+        <BlogClusterMoneyLinks slug={post.slug} />
 
         {post.sections.map((section, sectionIndex) => (
           <section className="mt-12" key={section.heading}>

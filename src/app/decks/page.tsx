@@ -12,6 +12,7 @@ import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
+import { getVerticalSummaries } from "@/lib/mock-exams/hub-clusters";
 import { btnChip, ledgerList } from "@/lib/ui-button-classes";
 import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "@/lib/retired-language-decks";
 
@@ -44,6 +45,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function DecksHubPage() {
   const groups = await getPricedDecksByCategory();
   const allDecks = groups.flatMap((group) => group.decks);
+  const examPaths = getVerticalSummaries();
 
   const jsonLd = {
         "@context": "https://schema.org",
@@ -89,6 +91,9 @@ export default async function DecksHubPage() {
         </p>
 
         <div className="mt-6 flex flex-wrap gap-3 text-sm">
+          <Link className={btnChip} href="/mock-exams">
+            Free practice tests
+          </Link>
           <Link className={btnChip} href="/finance-anki-decks">
             Finance hub
           </Link>
@@ -98,6 +103,23 @@ export default async function DecksHubPage() {
           <Link className={btnChip} href="/language-certification-decks">
             Language hub
           </Link>
+          <Link className={btnChip} href="/decks/cfa-level-1-pass-pack">
+            CFA L1 Pass Pack
+          </Link>
+          <Link className={btnChip} href="/decks/ptcb-2026-pass-pack">
+            PTCB 2026 Pass Pack
+          </Link>
+        </div>
+        <div className="mt-4 flex flex-wrap gap-2 text-sm text-[#1f3a5f]">
+          {examPaths.map((vertical) => (
+            <Link
+              key={vertical.id}
+              className="underline-offset-4 hover:underline"
+              href={`/mock-exams/v/${vertical.id}`}
+            >
+              {vertical.label} mocks
+            </Link>
+          ))}
         </div>
 
         {groups.map((group) =>

@@ -187,6 +187,24 @@ export default function MockExamsIndexPage() {
           />
         </Suspense>
 
+        <section className="mt-10">
+          <h2 className="text-lg font-semibold">Pass Packs</h2>
+          <p className="mt-2 text-sm text-[#5f5749]">
+            Bundle the matching Anki deck with a formula sheet or study guide after your mock report.
+          </p>
+          <div className="mt-3 flex flex-wrap gap-4 text-sm font-medium text-[#1f3a5f]">
+            <Link className="underline-offset-4 hover:underline" href="/decks/cfa-level-1-pass-pack">
+              CFA Level 1 Pass Pack
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/decks/ptcb-2026-pass-pack">
+              PTCB 2026 Pass Pack
+            </Link>
+            <Link className="underline-offset-4 hover:underline" href="/decks">
+              Full deck catalog
+            </Link>
+          </div>
+        </section>
+
         <section className="mt-12 rounded-3xl border border-[#18140f]/10 bg-[#18140f]/5 p-5">
           <h2 className="text-lg font-semibold">Browse all Anki decks</h2>
           <p className="mt-2 text-sm text-[#5f5749]">

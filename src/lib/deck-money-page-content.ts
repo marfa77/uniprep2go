@@ -311,7 +311,7 @@ export const positioningOverrides: Partial<
   },
   "frm-part-1-anki-deck": {
     ourEdge: [
-      "Ownable 444-card .apkg — not a monthly AnalystPrep / Bionic Turtle subscription",
+      "Ownable 444-card .apkg — not a 12-month AnalystPrep / Bionic Turtle package",
       "Weighted 20/20/30/30 like the exam; every card has a worked example and the common mistake",
       "Free start is 25 questions. The full FRM Part 1 timed practice test is 50 questions, with topic scoring",
       "Current-cycle Part 1 only — drill weak pillars after the mock, not random volume",

@@ -112,11 +112,30 @@ export function fitSeoTitle(title: string, max = SEO_TITLE_MAX): string {
 /** Google SERP meta description sweet spot (~70–155 chars). */
 export const SEO_META_DESCRIPTION_MAX = 155;
 
+/** Trim meta description to max length, ending on a full sentence when possible. */
 export function fitMetaDescription(
   description: string,
   max = SEO_META_DESCRIPTION_MAX,
 ): string {
-  return fitSeoTitle(description, max);
+  const trimmed = description.trim();
+  if (trimmed.length <= max) {
+    return trimmed;
+  }
+
+  const window = trimmed.slice(0, max + 1);
+  const sentencePattern = /[.!?](?=\s|$)/g;
+  let lastSentenceEnd = -1;
+  for (const match of window.matchAll(sentencePattern)) {
+    const end = (match.index ?? 0) + 1;
+    if (end <= max) {
+      lastSentenceEnd = end;
+    }
+  }
+  if (lastSentenceEnd >= Math.floor(max * 0.45)) {
+    return trimmed.slice(0, lastSentenceEnd).trim();
+  }
+
+  return fitSeoTitle(trimmed, max);
 }
 
 /** @deprecated Prefer fitSeoTitle — kept for tests and hub pages with title template suffix. */
@@ -224,12 +243,21 @@ export function finalize(meta: Metadata): Metadata {
   };
 }
 
-export function homeMetadata(): Metadata {
-  // Keep absolute title ≤57 chars (Ahrefs / audit TITLE_MAX).
-  // 2026-10-24: homepage query anchor is the CFA Level 1 practice test.
-  const title = "CFA Level 1 Practice Test | 25Q Free";
-  const description =
-    "Free CFA Level 1 practice test: 25 questions, no signup, then 60 in 90 minutes with topic scores. Next: the CFA Level 2 practice exam.";
+export type HomeCatalogCounts = {
+  /** Indexable live mocks (shouldIndexMockExam). */
+  indexedMockCount: number;
+  /** Live catalog decks (excludes planned). */
+  availableDeckCount: number;
+};
+
+export function buildHomeMetadata(counts: HomeCatalogCounts): Metadata {
+  const title = fitSeoTitle(
+    `UniPrep2Go — Free Practice Tests & Anki Decks for ${counts.indexedMockCount}+ Exams`,
+    SERP_TITLE_ABSOLUTE_MAX,
+  );
+  const description = fitMetaDescription(
+    `${counts.indexedMockCount} free timed practice tests and ${counts.availableDeckCount} Anki decks and PDFs on UniPrep2Go. Start with 25 questions free, no signup, topic scoring, then drill weak topics in the matching deck.`,
+  );
 
   return finalize({
     title: {
@@ -253,9 +281,13 @@ export function homeMetadata(): Metadata {
     twitter: {
       card: "summary_large_image",
       title,
-      description:
-        "Free CFA Level 1 practice test, 25 questions, no signup. Topic scores, then the CFA Level 2 practice exam.",
+      description,
       images: ["/home/hero.webp"],
     },
   });
+}
+
+/** @deprecated Use buildHomeMetadata with live catalog counts. */
+export function homeMetadata(): Metadata {
+  return buildHomeMetadata({ indexedMockCount: 150, availableDeckCount: 111 });
 }

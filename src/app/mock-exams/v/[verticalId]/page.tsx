@@ -17,7 +17,8 @@ import { MOCK_VERTICALS } from "@/lib/mock-exams/taxonomy";
 import type { MockVerticalId } from "@/lib/mock-exams/types";
 import { getVerticalSeoCopy } from "@/lib/mock-exams/vertical-seo";
 import { withAiMetadata } from "@/lib/llm-meta";
-import { finalize, fitMetaDescription, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
+import { buildMockVerticalMetaDescription } from "@/lib/mock-exams/hub-meta";
+import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { getCatalogDeckBySlug, getDeckBySlug } from "@/lib/decks";
 
@@ -43,9 +44,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const mocks = getMocksByVertical(verticalId);
   const path = `/mock-exams/v/${verticalId}`;
   const seo = getVerticalSeoCopy(verticalId);
-  const description = fitMetaDescription(
-    `${vertical.seoTitle}: ${mocks.length} free timed UniPrep2Go readiness checks with topic scoring and linked Anki repair. Independent practice — not official exam material.`,
-  );
+  const description = buildMockVerticalMetaDescription(vertical.label, mocks.length);
   const indexedCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
 
   return withAiMetadata(

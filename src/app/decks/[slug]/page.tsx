@@ -62,6 +62,7 @@ import {
   buildDeckSeoDescription,
   buildDeckSeoHeadline,
   buildDeckSeoKeywords,
+  buildDeckSeoMetaDescription,
   buildDeckSeoTitle,
   getDeckLinkedMock,
 } from "@/lib/deck-seo";
@@ -117,7 +118,7 @@ export async function generateMetadata({
   const image = getDeckCoverUrl(deck);
   const seoTitle = buildDeckSeoTitle(deck);
   const title = leafPageTitle(seoTitle);
-  const description = buildDeckSeoDescription(deck);
+  const description = buildDeckSeoMetaDescription(deck);
   const keywords = buildDeckSeoKeywords(deck);
   const examProfile = getExamFactsProfileForDeck(deck.slug);
   const linkedMockForMeta = getDeckLinkedMock(deck.slug);
@@ -333,6 +334,74 @@ export default async function DeckPage({
         <h1 className="mt-4 text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
           {buildDeckSeoHeadline(deck)}
         </h1>
+
+        {deck.slug === "nebosh-anki-deck" ? (
+          <p className="mt-6 max-w-3xl">
+            <Link
+              className={btnPrimary}
+              href="/mock-exams/nebosh-readiness-check"
+            >
+              NEBOSH IGC mock test — free readiness check
+            </Link>
+          </p>
+        ) : null}
+        {deck.slug === "cfa-level-1-anki-deck" ? (
+          <p className="mt-6 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Start with the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams/cfa-level-1-readiness-check"
+            >
+              CFA Level 1 practice test
+            </Link>{" "}
+            (25 questions free, no signup) before you buy the deck. Bundle deck + formula PDF in the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/cfa-level-1-pass-pack"
+            >
+              CFA Level 1 Pass Pack
+            </Link>
+            .
+          </p>
+        ) : null}
+        {deck.slug === "cfa-level-1-pass-pack" ? (
+          <p className="mt-6 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Run the{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams/cfa-level-1-readiness-check"
+            >
+              CFA Level 1 practice test
+            </Link>{" "}
+            first for topic scores, then download both files in this pack. Singles:{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/cfa-level-1-anki-deck"
+            >
+              CFA L1 Anki deck
+            </Link>
+            .
+          </p>
+        ) : null}
+        {deck.slug === "ptcb-2026-pass-pack" ? (
+          <p className="mt-6 max-w-3xl text-base leading-7 text-[#4f493e]">
+            Timed PTCE readiness:{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/mock-exams/ptcb-pharmacy-technician-mock"
+            >
+              PTCB practice test
+            </Link>
+            . Singles:{" "}
+            <Link
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+              href="/decks/ptcb-pharmacy-technician-anki-deck"
+            >
+              PTCB Anki deck
+            </Link>
+            .
+          </p>
+        ) : null}
 
         <div className="mt-6 max-w-3xl">
             <p className="text-xl leading-8 text-[#18140f]">{shortPitch}</p>

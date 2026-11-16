@@ -9,7 +9,11 @@ import {
 import { getAllMockExams } from "./mock-exams/configs";
 import { buildMockSeoTitle } from "./mock-exams/seo";
 import type { MockExamConfig } from "./mock-exams/types";
-import { fitSeoTitle, SEO_TITLE_MAX } from "./seo";
+import {
+  formatCatalogListPrice,
+  getCatalogListPriceUsd,
+} from "./catalog-price";
+import { fitMetaDescription, fitSeoTitle, SEO_META_DESCRIPTION_MAX, SEO_TITLE_MAX } from "./seo";
 import { absoluteUrl, siteConfig } from "./site";
 
 /** Available or planned catalog deck — SEO helpers only need shared BaseDeck fields. */
@@ -782,7 +786,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $9.99. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than monthly AnalystPrep/Bionic Turtle when you want spaced repetition plus one diagnostic. Not GARP material.",
+      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $9.99. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than AnalystPrep/Bionic Turtle 12-month packages when you want spaced repetition plus one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",
@@ -868,6 +872,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     ],
     intro:
       "Food-service managers need TCS temperature and HACCP recall under the clock — use the 90-question timed mock (free 25-question version), then drill weak domains in the $9.99 / 300-card Anki (PDF guide sold separately).",
+  },
+  "ptcb-2026-pass-pack": {
+    title: "PTCB 2026 Pass Pack — 300 Anki + Outline Study Guide PDF",
+    headline: "PTCB 2026 Pass Pack — Anki + Outline Study Guide",
+    studyLabel: "PTCB 2026 Pass Pack",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     title: "PTCB Anki Deck 2026 — 300 PTCE Flashcards, $19",
@@ -1316,8 +1325,31 @@ export function buildDeckSeoTitle(deck: SeoDeck) {
   return fitSeoTitle(getDeckSeoProfile(deck).title, SEO_TITLE_MAX);
 }
 
+function deckMetaHasPriceInLead(title: string, description: string): boolean {
+  return /\$\d/.test(description.slice(0, 120)) || /\$\d/.test(title);
+}
+
+function withDeckSnippetPrice(deck: SeoDeck, description: string): string {
+  const profile = getDeckSeoProfile(deck);
+  if (deckMetaHasPriceInLead(profile.title, description)) {
+    return description;
+  }
+  const format = deck.format === "PDF" ? "PDF" : "apkg";
+  if (getCatalogListPriceUsd(deck.slug, format) <= 0) {
+    return description;
+  }
+  const priceLabel = formatCatalogListPrice(deck.slug, format);
+  return `${priceLabel} one-time — ${description}`;
+}
+
 export function buildDeckSeoDescription(deck: SeoDeck) {
-  return getDeckSeoProfile(deck).description;
+  return withDeckSnippetPrice(deck, getDeckSeoProfile(deck).description);
+}
+
+/** SERP meta — sentence-safe trim after price lead injection. */
+export function buildDeckSeoMetaDescription(deck: SeoDeck): string {
+  const full = buildDeckSeoDescription(deck);
+  return full.length > SEO_META_DESCRIPTION_MAX ? fitMetaDescription(full) : full;
 }
 
 export function buildDeckSeoKeywords(deck: SeoDeck) {
