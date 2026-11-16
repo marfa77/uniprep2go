@@ -1,19 +1,19 @@
 # SKU status board
 
-Generated 2026-11-15 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-16 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 93 | 51 |
+| ok | 93 | 52 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 12 | 0 |
 | point-fix | 0 | 0 |
 | rewrite | 72 | 15 |
 | civic | 19 | 19 |
-| **total live mocks** | **196** | **85** |
+| **total live mocks** | **196** | **86** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -114,6 +114,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `aspt-phlebotomy-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | ok | `bms-bas-readiness-check` | live | 60 / 120 | 2026-10-31 | — |
 | ok | `california-real-estate-readiness-check` | live | 60 / 120 | 2026-11-03 | — |
+| ok | `ccht-dialysis-readiness-check` | live | 60 / 220 | 2026-11-16 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-11-07 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
 | ok | `cfa-level-1-readiness-check` | live | 60 / 300 | 2026-11-14 | — |
@@ -165,7 +166,6 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ascp-mlt-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `barber-state-readiness-check` | planned | 60 / 120 | 2026-10-21 | — |
 | ok | `capm-readiness-check` | planned | 60 / 120 | 2026-10-28 | — |
-| ok | `ccht-dialysis-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `cda-childcare-readiness-check` | planned | 60 / 120 | 2026-10-23 | — |
 | ok | `cdl-general-knowledge-readiness-check` | planned | 60 / 120 | 2026-11-09 | — |
 | ok | `cdl-hazmat-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
@@ -223,10 +223,10 @@ Products without a mock and catalog totals: bottom of this file.
 | Line | Count |
 |---|---|
 | Live mocks | 196 |
-| … with a live Anki / PDF pair | 85 |
-| … with a planned Anki pair | 111 |
+| … with a live Anki / PDF pair | 86 |
+| … with a planned Anki pair | 110 |
 | Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
-| Catalog decks total (`decks.ts`) | 235 (available 110) |
+| Catalog decks total (`decks.ts`) | 235 (available 111) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 28 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.

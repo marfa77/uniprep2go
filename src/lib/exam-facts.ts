@@ -2305,6 +2305,74 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     trademark_note:
       "CDCP is a registered certification mark of EPI. EXIN is an independent exam and certification institute.",
   },
+  ccht: {
+    examKey: "ccht",
+    pageHeading: "CCHT Dialysis Technician Exam — Facts, Topics & Prep",
+    intro:
+      "The Certified Clinical Hemodialysis Technician (CCHT) exam is the entry-level credential from the Nephrology Nursing Certification Commission (NNCC). UniPrep2Go’s 220-card Anki deck is $9.99, and the timed check is 60 questions in 75 minutes from that same bank. Neither is an NNCC exam.",
+    exam_facts: {
+      exam_name: "Certified Clinical Hemodialysis Technician (CCHT)",
+      administered_by: "Nephrology Nursing Certification Commission (NNCC)",
+      question_count: "150 multiple-choice",
+      scored_count: "About 125 (the preparation guide says about 25 of the 150 are unscored pilot items)",
+      time_limit: "3 hours",
+      passing_score: "Standard score of 95, which NNCC says is reached by answering 74% of the questions correctly",
+      registration_fee: "$225 exam fee",
+      delivery: "Computer-based at a testing center after C-NET issues the permit",
+      outline_effective_date: "Blueprint adopted through 2018 and effective 2019 (preparation guide)",
+      verify_at_url: "https://www.nncc-exam.org/certification/ccht",
+    },
+    official_sources: [
+      {
+        label: "NNCC CCHT certification page",
+        url: "https://www.nncc-exam.org/certification/ccht",
+      },
+      {
+        label: "CCHT preparation guide (PDF)",
+        url: "https://www.nncc-exam.org/sites/default/files/prepguide/cchtPrepGuide.pdf",
+      },
+      {
+        label: "CCHT test blueprint (PDF)",
+        url: "https://www.nncc-exam.org/sites/default/files/blueprints/cchtExamBlueprint.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Clinical", weight: "71–78 items (48–52%)" },
+      { domain: "Technical", weight: "32–38 items (21–25%)" },
+      { domain: "Environment", weight: "19–25 items (13–17%)" },
+      { domain: "Role responsibilities", weight: "15–20 items (10–14%)" },
+    ],
+    whats_changed: [
+      "Opened the NNCC CCHT page on 2026-11-16: 150 questions, 3 hours, standard score 95, exam fee $225.",
+      "The preparation guide still describes about 25 unscored pilot items inside the 150.",
+      "UniPrep2Go’s check stays 60 questions in 75 minutes with a 70% readiness target. That 70% is ours, not the standard score of 95.",
+    ],
+    high_yield_facts: [
+      "The credential is entry-level CCHT. CCHT-A is a separate advanced exam for technicians with at least 5 years and 5,000 hours.",
+      "NNCC recommends, and does not require, 6 months or 1,000 hours of clinical experience before the first exam.",
+      "The four official areas are clinical, technical, environment, and role. UniPrep2Go’s deck uses four equal groups and does not copy those weights.",
+      "The NNCC online practice exam is 50 questions, $30, and 90 days of access. It is a different product from this deck.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CCHT exam?",
+        a: "NNCC’s certification page says 150 questions, completed in 3 hours. The preparation guide says about 25 of those are unscored pilot items.",
+      },
+      {
+        q: "What score do you need to pass the CCHT exam?",
+        a: "A standard score of 95. NNCC says that score is reached by answering 74% of the questions correctly.",
+      },
+      {
+        q: "How is the UniPrep2Go CCHT check different?",
+        a: "It is 60 questions in 75 minutes, drawn from a 220-question bank, with a 70% readiness target. The linked Anki deck is those 220 cards at $9.99.",
+      },
+      {
+        q: "Is this deck official NNCC material?",
+        a: "No. It is an independent study aid. NNCC does not write or sell it.",
+      },
+    ],
+    trademark_note: "CCHT is a credential of the Nephrology Nursing Certification Commission.",
+  },
   nebosh: {
     examKey: "nebosh",
     pageHeading: "NEBOSH International General Certificate (IGC) — Exam Facts, Syllabus & Prep",
@@ -4721,6 +4789,7 @@ const deckExamKeyMap: Record<string, string> = {
   "mrics-anki-deck": "mrics",
   "mrics-quantity-surveying-anki-deck": "mrics-quantity-surveying",
   "ace-cpt-anki-deck": "ace-cpt",
+  "ccht-dialysis-anki-deck": "ccht",
   "acsm-cpt-anki-deck": "acsm-cpt",
   "rd-exam-anki-deck": "rd-exam",
   "luxembourg-vivre-ensemble-anki-deck": "luxembourg-vivre-ensemble",

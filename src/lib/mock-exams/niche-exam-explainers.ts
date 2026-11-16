@@ -512,7 +512,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "ccht-dialysis-readiness-check": explainer({
     practiceTestName: "CCHT Dialysis Practice Test",
     whatIsExam:
-      "The Certified Clinical Hemodialysis Technician (CCHT) credential (Nephrology Nursing Certification Commission) validates dialysis technicians who set up machines, monitor treatments, and follow infection-control and patient-safety protocols in hemodialysis clinics.",
+      "The Certified Clinical Hemodialysis Technician (CCHT) credential from the Nephrology Nursing Certification Commission is the entry-level exam for technicians who set up machines, monitor treatments, and follow infection-control and patient-safety protocols. NNCC’s page says 150 questions in 3 hours, with a standard score of 95. This check is a shorter 60-question diagnostic.",
     administeredBy: "Nephrology Nursing Certification Commission (NNCC)",
     examFaqs: [
       {

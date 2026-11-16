@@ -794,7 +794,8 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
   {
     query: "CCHT dialysis practice test free",
     mockSlug: "ccht-dialysis-readiness-check",
-    disambiguation: "CCHT dialysis technician themes are not NHA CPT phlebotomy — independent prep only.",
+    disambiguation:
+      "CCHT dialysis technician themes are not NHA CPT phlebotomy — independent prep only. The 220-card Anki deck is $9.99.",
   },
   {
     query: "AAMA CMA practice test free",

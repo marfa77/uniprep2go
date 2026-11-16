@@ -8,6 +8,8 @@ import { getDeckLinkedMock } from "./deck-seo";
 import { getDeckPracticeMock } from "./deck-funnel";
 
 export const pitchOverrides: Partial<Record<string, string>> = {
+  "ccht-dialysis-anki-deck":
+    "220 scenario cards for hemodialysis technicians. The NNCC exam is 150 questions in 3 hours; this deck pairs with a 60-question, 75-minute check. $9.99 once.",
   "cfa-level-1-anki-deck":
     "348 scenario and calculation cards weighted to the 2026 CFA Level 1 topic ranges — Ethics is the largest section — each with a worked example and the common mistake.",
   "cfa-level-1-formula-reference-2026":
@@ -855,6 +857,17 @@ export const positioningOverrides: Partial<
 };
 
 const uniqueContentBySlug: Partial<Record<string, string>> = {
+  "ccht-dialysis-anki-deck": `### What is inside
+
+220 scenario cards in four equal groups: dialysis principles and machines, patient care and complications, water treatment and infection control, and safety documentation. Each card has the correct action and a note on the specific mistake in every other option. The [60-question CCHT readiness check](/mock-exams/ccht-dialysis-readiness-check) draws from this same bank (free 25-question start, 75 minutes, 70% readiness target).
+
+### How this differs from the NNCC exam
+
+NNCC’s CCHT page, opened 2026-11-16, says the exam is 150 questions in 3 hours, with a standard score of 95. The preparation guide says about 25 of the 150 are unscored pilot items, and the blueprint weights clinical work much more heavily than role responsibilities. This deck’s four groups are equal. They are a study split, not that blueprint.
+
+### What this does not replace
+
+Employer training, the CMS conditions for dialysis facilities, or the NNCC exam. The deck is $9.99 once and is an independent study aid.`,
   "well-ap-anki-deck": `### What is inside
 
 250 MCQ cards across WELL v2 concept groups used on the IWBI WELL AP exam: Air/Water/Nourishment, Light/Movement/Thermal Comfort, Sound/Materials, Mind/Community, and WELL Certification & Portfolio. Every card includes a correct explanation and short notes on why the other options fail — the same bank as the free timed readiness check.

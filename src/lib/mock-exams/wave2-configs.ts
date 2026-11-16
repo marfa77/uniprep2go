@@ -47,10 +47,12 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "water-infection", label: "Water treatment & infection control" },
       { id: "safety-docs", label: "Safety, docs & professional practice" },
     ]),
-    officialSourceNote: "Mapped to NNCC CCHT knowledge themes. Not an NNCC exam.",
-    description: "60-question CCHT dialysis technician readiness check (free 25-question version).",
+    officialSourceNote:
+      "NNCC’s CCHT exam is 150 questions in 3 hours, standard score 95 (NNCC page, 2026-11-16). This check draws 60 questions in 75 minutes from a 220-question bank and uses a 70% readiness target. Not an NNCC exam.",
+    description: "60-question CCHT dialysis technician readiness check (free 25-question version) from a 220-question bank.",
     examBody: "NNCC",
-    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
+    questionSourceNote: "Original UniPrep2Go bank: 220 questions (55 per topic), reviewed and expanded 2026-11-16; each timed attempt draws 60.",
+    lastUpdated: "2026-11-16",
   }),
   nicheReadinessConfig({
     slug: "aha-bls-provider-readiness-check",

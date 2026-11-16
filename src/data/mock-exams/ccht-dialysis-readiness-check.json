@@ -2475,6 +2475,831 @@
     "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
   },
   {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-031",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Halfway through treatment the patient starts shivering and asks for a blanket. The dialysate temperature is reading well below the set point. What is this cold bath doing, and which danger does it not pose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is making the patient shiver"
+      },
+      {
+        "id": "b",
+        "text": "It is hemolyzing red cells, the same hazard as a bath that has run too hot"
+      },
+      {
+        "id": "c",
+        "text": "It is a conductivity failure, so the shivering means the bath ions are unsafe"
+      },
+      {
+        "id": "d",
+        "text": "It means rinseback started early and the saline, not the temperature, caused the chill"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Dialysate that is too cold makes the patient shiver and feel chilled. Hemolysis is the risk of a hot bath, above about 42°C, not of a cold one. Restore the prescribed temperature and help the patient warm up.",
+    "distractorExplanations": {
+      "b": "Assigns hemolysis to a cold bath; red-cell breakdown of that kind is the risk when dialysate is too hot, not when the patient is shivering from cold.",
+      "c": "Blames the conductivity cell for shivering; a low temperature reading explains the chill, and it is not an ion-strength failure.",
+      "d": "Ties the chill to early rinseback; rinseback returns blood at the end of treatment and does not explain a bath that is too cold."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-032",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Foam reaches the venous air detector in the second hour, and bubbles are visible in the return line. What should the machine do, and should dialysis keep going?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the blood pump running and tap the chamber until the bubbles float away"
+      },
+      {
+        "id": "b",
+        "text": "Stop the blood pump and clamp the line"
+      },
+      {
+        "id": "c",
+        "text": "Switch to bypass, silence the alarm, and keep returning blood with the air still in the line"
+      },
+      {
+        "id": "d",
+        "text": "Switch the air detector off for the rest of the session so the alarm cannot stop the pump"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When the venous air detector sees air, it stops the blood pump and clamps the venous line so air is not returned to the patient. The treatment is not continued until that air is removed and the line is safe. Air returned to the bloodstream can cause an air embolism.",
+    "distractorExplanations": {
+      "a": "Leaves the pump running with air in the return path; the detector is there to stop the pump and clamp the line, not to be tapped past.",
+      "c": "Keeps blood returning after air is sensed; bypass and a silenced alarm do not make venous air safe, and the treatment does not continue.",
+      "d": "Switches the detector off so the pump can keep running; when foam reaches it, the detector has to stay armed, stop the blood pump, and clamp the line."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-033",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Two patients have similar pre-dialysis potassium. One prescription is a 2 mEq/L potassium bath and the other is a 3 mEq/L bath. Which bath removes potassium faster?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The 3 mEq/L bath, because a higher bath number pulls more potassium out of the blood"
+      },
+      {
+        "id": "b",
+        "text": "Both baths remove potassium at the same speed, since each one sits below a typical serum level"
+      },
+      {
+        "id": "c",
+        "text": "The 2 mEq/L bath"
+      },
+      {
+        "id": "d",
+        "text": "Neither bath removes potassium; the number on the jug is a label and does not set a gradient"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Potassium diffuses out of the blood when the serum level is higher than the bath. A 2 mEq/L bath sits farther below the serum potassium than a 3 mEq/L bath, so the gradient is steeper and potassium comes off faster. A higher bath number is not a larger removal dose.",
+    "distractorExplanations": {
+      "a": "Reverses the gradient; a 3 mEq/L bath is closer to the serum level, so it removes potassium more slowly than a 2 mEq/L bath.",
+      "b": "Treats every below-serum bath as equal; both can remove potassium, but the lower 2 mEq/L bath removes it faster.",
+      "d": "Denies diffusion; the bath concentration is what sets the gradient, and potassium does cross into the lower bath."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-034",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "While setting up, a student asks why calcium is written on the dialysate order if treatment is meant to clear wastes. What is calcium in the bath there to do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pull calcium out of the blood the way a low-potassium bath pulls potassium"
+      },
+      {
+        "id": "b",
+        "text": "Give the conductivity cell a calcium value it can display as the patient's blood pressure"
+      },
+      {
+        "id": "c",
+        "text": "Replace heparin, because calcium in the bath is what keeps the dialyzer from clotting"
+      },
+      {
+        "id": "d",
+        "text": "Keep blood calcium from falling"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Calcium is in the dialysate so the patient's blood calcium does not fall during treatment. If the bath had no calcium, calcium would diffuse out of the blood and the patient could become hypocalcemic. The technician uses the prescribed bath and does not choose a calcium level at the chair.",
+    "distractorExplanations": {
+      "a": "Treats calcium like potassium removal; calcium is in the bath so blood calcium does not fall, not so the bath can strip it out.",
+      "b": "Mixes bath calcium with conductivity and with blood pressure; conductivity is total ion strength, not a pressure reading.",
+      "c": "Confuses bath calcium with anticoagulation; heparin, when ordered, limits clotting, and calcium in the bath is not a substitute for it."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-035",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Transmembrane pressure has been climbing for most of this hour, and the ultrafiltration goal on the screen is still the value set at the start. What does that rise suggest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fibers are clotting"
+      },
+      {
+        "id": "b",
+        "text": "Someone raised the fluid-removal order, so the machine is taking off a larger volume than before"
+      },
+      {
+        "id": "c",
+        "text": "The patient drank in the chair and the machine raised the goal on its own"
+      },
+      {
+        "id": "d",
+        "text": "The bath cooled, and a colder dialysate is what pushed transmembrane pressure up"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A rising transmembrane pressure with an unchanged ultrafiltration goal means the membrane is harder to push fluid through, which suggests fibers are clotting. It does not mean someone ordered more fluid removal. Check the circuit for clotting and tell the nurse.",
+    "distractorExplanations": {
+      "b": "Reads the pressure rise as a new fluid order; the ultrafiltration goal was not changed, so the rise points to clotting in the fibers.",
+      "c": "Invents a drink the machine added to the goal; the goal on the screen is unchanged, and the pressure rose because resistance increased.",
+      "d": "Blames a cold bath for the pressure change; cold dialysate makes the patient shiver and does not explain this rise with a fixed goal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-036",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Rinseback has started and saline is entering the arterial line. A new coworker says the leftover blood should go down the drain. What is the saline actually for?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Washing the patient's remaining blood into the waste drain so the circuit can be thrown out empty"
+      },
+      {
+        "id": "b",
+        "text": "Returning the patient's blood"
+      },
+      {
+        "id": "c",
+        "text": "Clearing air from the fibers, the same job as the saline prime done before the patient was connected"
+      },
+      {
+        "id": "d",
+        "text": "Carrying a heparin dose the nephrologist did not write, so the needle sites will seal faster"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Rinseback uses saline to push the patient's blood out of the dialyzer and bloodlines and back into the patient. The purpose is to return that blood, not to throw it away. The saline volume is fluid the treatment has to account for.",
+    "distractorExplanations": {
+      "a": "Reverses rinseback; saline is used to return the patient's blood, and that blood is not discarded down the drain.",
+      "c": "Confuses rinseback with the pre-treatment prime; this saline run is returning the patient's blood, not clearing air from a circuit already in use.",
+      "d": "Turns rinseback saline into an unordered heparin dose; anticoagulation is given when the prescription orders it, not at rinseback by habit."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-037",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Conductivity is far under the set point because the bath was mixed far too dilute. The temperature alarm is quiet. If that hypotonic dialysate reaches the dialyzer, what can it do to red cells?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave them unharmed, because a dilute bath is gentler than the prescribed bath"
+      },
+      {
+        "id": "b",
+        "text": "Trigger the high-temperature alarm, since a low conductivity reading means the bath is overheating"
+      },
+      {
+        "id": "c",
+        "text": "Hemolyze them"
+      },
+      {
+        "id": "d",
+        "text": "Clot them in the fibers, because a weak bath behaves like a missed heparin dose"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A hypotonic, low-conductivity bath is dilute compared with blood. Water moves into red cells and can burst them, which is hemolysis. That is a bath-strength problem, not the high-temperature alarm. That dialysate should not be sent to the dialyzer.",
+    "distractorExplanations": {
+      "a": "Treats a dilute bath as gentler; a hypotonic bath is the one that can hemolyze red cells, so it is not a safer mix.",
+      "b": "Imports the hot-bath alarm; this scene is a low-conductivity, hypotonic bath, and hemolysis here comes from low tonicity, not from heat.",
+      "d": "Confuses conductivity with anticoagulation; a dilute bath threatens red cells by being hypotonic, and it is not a missed heparin dose."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-038",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The patient wants to leave early and asks the technician to turn the blood pump above the prescribed speed so the session ends sooner. How should that request be handled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise the pump speed, because a faster pump shortens the ordered time without changing the dose"
+      },
+      {
+        "id": "b",
+        "text": "Raise the pump speed and cut the fluid goal so the patient can still leave early"
+      },
+      {
+        "id": "c",
+        "text": "Raise the pump speed for the last part of treatment, then chart that the order was unchanged"
+      },
+      {
+        "id": "d",
+        "text": "Leave the pump at the prescribed speed"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The prescribed blood-pump speed is an order. The technician does not raise it just so the treatment can finish sooner. Turning the pump up would deliver a different treatment than the one that was written, and the session time is its own order.",
+    "distractorExplanations": {
+      "a": "Treats pump speed as a way to shorten the visit; the prescribed speed is an order, and turning it up is not how the treatment is ended.",
+      "b": "Changes the pump speed and the fluid goal so the patient can leave; neither change is the technician's to make on request.",
+      "c": "Still raises the pump above the order and then charts it as unchanged; the prescribed speed has to be followed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-039",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Cleaned blood is flowing back into the arterial needle instead of through the body, and the delivered dose is falling. A coworker says this finding is the same test as a URR. What is actually going on?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recirculation is cutting the dose"
+      },
+      {
+        "id": "b",
+        "text": "A URR tube is being filled, so the dose falls until the lab posts the urea result"
+      },
+      {
+        "id": "c",
+        "text": "The venous air detector has clamped the line, which is why cleaned blood reenters the arterial needle"
+      },
+      {
+        "id": "d",
+        "text": "The post-urea sample was drawn at full pump speed, and that draw is what recirculation means"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Recirculation sends already-cleaned blood back into the arterial needle, so the dialyzer keeps treating the same blood and the delivered dose falls. A URR compares urea before and after dialysis. It is not the same test as an access recirculation finding.",
+    "distractorExplanations": {
+      "b": "Confuses recirculation with a URR; a URR is a urea blood test, and this scene is cleaned blood reentering the arterial needle.",
+      "c": "Blames the air detector; that detector stops the pump and clamps when it sees air, and it does not define recirculation.",
+      "d": "Mixes the post-urea draw with recirculation; drawing at full flow is how a sample gets contaminated, and it is not the name of this finding."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-040",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Two dialyzers are run at the same blood flow and the same dialysate flow. The second has a larger membrane surface area. What should happen to urea clearance?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Urea clearance falls, because a larger surface slows blood and lets the gradient collapse"
+      },
+      {
+        "id": "b",
+        "text": "Urea clearance rises"
+      },
+      {
+        "id": "c",
+        "text": "Urea clearance stays the same, because surface area matters for beta-2 microglobulin and not for urea"
+      },
+      {
+        "id": "d",
+        "text": "Urea clearance rises if the blood pump is also turned up, since area cannot clear more at the same flow"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "At the same blood flow and the same dialysate flow, a larger membrane surface area gives a small solute such as urea more area to diffuse across, so clearance of that solute rises. The larger surface is not a reason to change the prescribed flows.",
+    "distractorExplanations": {
+      "a": "Reverses the surface-area effect; more membrane area clears more small solute at the same flows, and it does not collapse the gradient.",
+      "c": "Limits surface area to middle molecules; a larger surface also clears more urea, a small solute, at the same blood and dialysate flow.",
+      "d": "Requires a pump-speed change that was not ordered; the larger surface itself clears more urea at the same blood and dialysate flow."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-041",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Blood pressure is falling halfway through the session. The ultrafiltration goal matches the weight gain, but fluid is coming off faster than the tissues can refill the bloodstream. Why is the pressure down?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The goal is larger than the weight gain, so too much fluid was programmed"
+      },
+      {
+        "id": "b",
+        "text": "Heparin was stopped far too early, and a clotting dialyzer is what dropped the pressure"
+      },
+      {
+        "id": "c",
+        "text": "The rate outruns tissue refill"
+      },
+      {
+        "id": "d",
+        "text": "The venous line is clamped, and the cuff is reading that occlusion as a low blood pressure"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An ultrafiltration rate faster than the tissues can refill drops the blood pressure even when the total goal matches the weight gain. The problem is how fast fluid is coming off, not a goal that disagrees with the gain. Slow the rate per facility procedure and tell the nurse.",
+    "distractorExplanations": {
+      "a": "Misstates the goal; the total matches the weight gain, and the pressure drop comes from a rate the tissues cannot refill.",
+      "b": "Blames an early heparin stop; this scene is a refill problem, and clotting would show up in the pressures and the fibers, not as this rate mismatch.",
+      "d": "Confuses a clamped venous line with a refill problem; a clamp raises venous pressure and alarms, which is not why this blood pressure fell."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-042",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The post-dialysis urea sample is due. Facility procedure says to slow or stop the blood pump before that tube is drawn. Why is that step required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "So the lab can add the rinseback volume into the urea result and report a higher number"
+      },
+      {
+        "id": "b",
+        "text": "So the tube fills with recirculated blood that just left the dialyzer and looks fully cleared"
+      },
+      {
+        "id": "c",
+        "text": "So the arterial and venous lines can be reversed for the draw, which is how a post sample is defined"
+      },
+      {
+        "id": "d",
+        "text": "So the sample is not recirculated blood"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A post-dialysis urea sample is drawn after the blood pump is slowed or stopped by the facility procedure, so the tube fills with the patient's blood rather than recirculated blood the dialyzer just cleaned. Drawing while cleaned blood is still looping through the access misstates the result.",
+    "distractorExplanations": {
+      "a": "Adds rinseback into the lab result; the pump is slowed or stopped so the sample is not recirculated blood, not so the lab can inflate the urea value.",
+      "b": "Wants the cleaned, recirculated blood in the tube; that is the sample the procedure is written to avoid, because it does not represent the patient.",
+      "c": "Reverses the lines for the draw; line reversal increases recirculation, and the step here is to slow or stop the pump so the sample is not that blood."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-043",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Blood is about to go back to the patient, and the technician is watching the drip chamber on that return line. What does this venous chamber do that the arterial chamber does not?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It traps air before blood returns"
+      },
+      {
+        "id": "b",
+        "text": "It measures dialysate conductivity and will bypass the dialyzer if the ions drift"
+      },
+      {
+        "id": "c",
+        "text": "It sits on the pre-pump side, the same place and job as the arterial chamber"
+      },
+      {
+        "id": "d",
+        "text": "It lets air travel back to the patient, while the arterial chamber is the one that traps air"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The venous drip chamber traps air before blood returns to the patient, and the air detector watches that part of the path. The arterial chamber is on the pre-pump side, where it catches air coming from the access before the pump. The two chambers do not do the same job.",
+    "distractorExplanations": {
+      "b": "Assigns the conductivity monitor's job to the drip chamber; the venous chamber traps air in the blood path, and conductivity is a dialysate measurement.",
+      "c": "Swaps the chambers; the arterial chamber is the pre-pump chamber, and the venous chamber is on the return side after the dialyzer.",
+      "d": "Reverses which chamber traps air; the venous chamber keeps air from returning to the patient, and the arterial chamber is pre-pump."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-044",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The nephrologist did not order heparin today, and the anticoagulant line on the prescription is blank. The circuit looks patent. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start a routine heparin infusion, because a hemodialysis circuit is expected to get heparin"
+      },
+      {
+        "id": "b",
+        "text": "Do not start heparin"
+      },
+      {
+        "id": "c",
+        "text": "Stop heparin before the end, applying the early-cutoff rule to an infusion the nephrologist did not order"
+      },
+      {
+        "id": "d",
+        "text": "Draw up the dose used for the patient in the next chair and start that dose on this circuit"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Heparin runs because the prescription orders it. The technician does not start a dose the nephrologist did not order. If the circuit later shows clotting, the technician tells the nurse rather than adding an anticoagulant. This is not an ordered infusion being stopped before the end.",
+    "distractorExplanations": {
+      "a": "Starts an anticoagulant the nephrologist did not order; heparin is given because the prescription says so, not because the circuit is a hemodialysis circuit.",
+      "c": "Applies the early heparin cutoff to a dose that was not ordered; that stop belongs to an infusion the prescription actually started, and this order is blank.",
+      "d": "Copies another patient's dose onto this circuit; anticoagulation has to be this patient's order, and this order is blank."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-045",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "A new dialyzer still holds factory sterilant. The blood compartment is already full of saline and no air is left in the fibers. Why does the rinse still matter before the patient is connected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "To push out air that is still trapped in the header, which is the reason a new dialyzer is rinsed"
+      },
+      {
+        "id": "b",
+        "text": "To bring the dialyzer to body temperature before blood is allowed to enter the fibers"
+      },
+      {
+        "id": "c",
+        "text": "To keep leftover sterilant off the patient"
+      },
+      {
+        "id": "d",
+        "text": "No further rinse is needed, because a saline-filled dialyzer with no air left is ready for the patient"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A new dialyzer is rinsed so leftover sterilant does not reach the patient. In this setup the air has already been cleared, so the rinse still to do is about chemical residue, not about priming air out of the fibers. Sterilant left in the blood compartment can make the patient sick.",
+    "distractorExplanations": {
+      "a": "Repeats the prime-to-remove-air reason after the fibers are already free of air; this rinse is about leftover sterilant.",
+      "b": "Treats the rinse as a warm-up; the machine heater sets dialysate temperature, and this rinse is what keeps leftover sterilant from reaching the patient.",
+      "d": "Treats an air-free saline fill as the end of preparation; the rinse still has to remove manufacturing sterilant before the patient is connected."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-046",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "A coworker sets dialysate flow equal to the blood flow and asks if that is enough. Why is dialysate flow kept higher than blood flow?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Equal flows are enough, because the gradient stays wide when dialysate flow matches blood flow"
+      },
+      {
+        "id": "b",
+        "text": "Dialysate flow should sit below blood flow so the gradient has more time to form along the fibers"
+      },
+      {
+        "id": "c",
+        "text": "The gradient depends on which needle is arterial, not on which of the two flows is higher"
+      },
+      {
+        "id": "d",
+        "text": "So the gradient does not collapse"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Dialysate flow is kept higher than blood flow so fresh dialysate keeps meeting the blood and the concentration gradient does not collapse. When dialysate flow falls to the blood flow or below it, spent dialysate lingers along the membrane and diffusion of small solutes falls off.",
+    "distractorExplanations": {
+      "a": "Treats matched flows as enough; once dialysate flow is no longer higher than blood flow, the concentration gradient can collapse and clearance drops.",
+      "b": "Puts dialysate flow below blood flow; that is the arrangement that lets the gradient fade, which is why dialysate flow is kept higher.",
+      "c": "Moves the gradient question onto needle direction; which flow is higher is what keeps fresh dialysate meeting the blood."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-047",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "This month's dialysate sodium bath is higher than last month's, and it stays at that higher level for the whole treatment. The patient is much thirstier between sessions. What explains the thirst?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The higher sodium bath"
+      },
+      {
+        "id": "b",
+        "text": "A lower sodium bath than last month, which the patient is remembering in reverse"
+      },
+      {
+        "id": "c",
+        "text": "An ultrafiltration goal larger than the weight gain, which is what leaves patients thirsty the next day"
+      },
+      {
+        "id": "d",
+        "text": "A rise in beta-2 microglobulin clearance, and that loss is what drives thirst between treatments"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A higher dialysate sodium bath leaves the patient thirstier between treatments, because sodium is higher afterward and thirst pushes them to drink. This bath stays at that higher level for the whole session. The thirst follows the sodium level, not heparin timing or membrane size.",
+    "distractorExplanations": {
+      "b": "Reverses the change; the bath is higher than last month, and a higher sodium bath is what leaves the patient thirstier.",
+      "c": "Blames a fluid goal that exceeds the weight gain; the change in this scene is the higher sodium bath, which is what drives the thirst.",
+      "d": "Credits beta-2 microglobulin removal with the thirst; middle-molecule clearance is a membrane property, and the thirst here follows the higher sodium bath."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-048",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "During a plan-of-care huddle the nurse notes that the dialyzer already in use is a low-flux membrane. Which clearance pattern fits that membrane?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It clears large amounts of beta-2 microglobulin and holds urea back in the blood"
+      },
+      {
+        "id": "b",
+        "text": "It clears urea and little beta-2 microglobulin"
+      },
+      {
+        "id": "c",
+        "text": "It clears neither urea nor beta-2 microglobulin, so the session is for fluid removal alone"
+      },
+      {
+        "id": "d",
+        "text": "It clears beta-2 microglobulin by convection, because low-flux means online hemodiafiltration"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A low-flux membrane clears small solutes such as urea and clears little beta-2 microglobulin. That split is what low-flux means: small-solute diffusion with limited middle-molecule passage. The membrane already in use was not changed to a high-flux dialyzer.",
+    "distractorExplanations": {
+      "a": "Swaps the two solutes; low-flux clears urea and clears little beta-2 microglobulin, rather than holding urea back and clearing the larger molecule.",
+      "c": "Says the membrane clears no urea; urea is a small solute that a low-flux membrane does clear, and the weak clearance is beta-2 microglobulin.",
+      "d": "Turns low-flux into hemodiafiltration; low-flux is a less permeable membrane, not a convection treatment, and it clears little beta-2 microglobulin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-049",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The venous bloodline is clamped shut and the blood pump is still turning. Venous pressure is climbing and the machine is alarming. What should happen to the pump?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the pump running so the clamp can be worked loose without losing the prescribed blood flow"
+      },
+      {
+        "id": "b",
+        "text": "Leave the pump running and raise the ultrafiltration rate to make use of the higher pressure"
+      },
+      {
+        "id": "c",
+        "text": "Stop the pump"
+      },
+      {
+        "id": "d",
+        "text": "Leave the pump running and open the saline line so the pressure vents into the rinse bag"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "With the venous line clamped and the blood pump still running, blood has nowhere to go, venous pressure rises, and the machine alarms. Stop the pump. Leaving it running against a closed venous line can rupture the circuit. Do not keep the pump turning while the clamp is on.",
+    "distractorExplanations": {
+      "a": "Keeps the pump running against the clamp; pressure is already rising, and the pump has to be stopped rather than left on while the clamp is worked loose.",
+      "b": "Uses the pressure spike as extra ultrafiltration; a clamped venous line is an occlusion, and the pump should be stopped, not the fluid rate raised.",
+      "d": "Vents pressure into a saline bag while the pump keeps turning; the safe step is to stop the pump when the venous line is clamped."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-050",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "A new teammate looks at the conductivity display and calls it the patient's blood pressure, then calls it the dialysate temperature. What does that reading actually measure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient's blood pressure in the arterial line, which the conductivity cell records"
+      },
+      {
+        "id": "b",
+        "text": "Dialysate temperature, because the conductivity cell is the machine's thermometer"
+      },
+      {
+        "id": "c",
+        "text": "The venous drip-chamber level, which falls whenever the conductivity reading falls"
+      },
+      {
+        "id": "d",
+        "text": "Total ion strength of the dialysate"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Conductivity measures the total ion strength of the dialysate, which is how the machine watches whether the proportioned bath matches the intended mix. It is not the temperature, and it is not the patient's blood pressure. Those are separate readings on the screen.",
+    "distractorExplanations": {
+      "a": "Calls conductivity a blood pressure; blood pressure is measured on the patient, and conductivity is the total ion strength of the dialysate.",
+      "b": "Calls conductivity a temperature; the temperature monitor is separate, and conductivity is about ions in the bath, not heat.",
+      "c": "Ties conductivity to the drip-chamber level; that chamber traps air on the venous line, and conductivity does not describe the level."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-051",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The patient feels well and asks to end the session before the prescribed treatment time is finished. What does stopping now do to the delivered dose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It under-delivers the dose"
+      },
+      {
+        "id": "b",
+        "text": "It meets the dose, because feeling well means small-solute removal is already finished"
+      },
+      {
+        "id": "c",
+        "text": "It raises the dose, because a shorter session packs the same removal into less time"
+      },
+      {
+        "id": "d",
+        "text": "It leaves the dose unchanged, because dialysate flow, not time on the machine, removes urea"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The prescribed treatment time is an order. Ending early because the patient feels well under-delivers the dose, since small-solute removal accumulates over the time that was ordered. Feeling well does not mean urea removal is finished. The session should not be cut short on that request.",
+    "distractorExplanations": {
+      "b": "Treats feeling well as a completed dose; how the patient feels and how much solute has been cleared are different, and cutting the ordered time under-delivers.",
+      "c": "Claims a shorter session concentrates removal; less time on the dialyzer removes less small solute, so the delivered dose falls.",
+      "d": "Drops time out of the dose; treatment time is part of the order, and ending early under-delivers even when dialysate flow was correct."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-052",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The acid concentrate wand is attached, and the bicarbonate container was never connected. Proportioning is started anyway. What is wrong with the bath the machine will mix?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing is wrong, because acid concentrate already contains the bicarbonate the order calls for"
+      },
+      {
+        "id": "b",
+        "text": "The mixed bath will not match the prescription"
+      },
+      {
+        "id": "c",
+        "text": "The bath will match the order once temperature is at the set point, even with bicarbonate missing"
+      },
+      {
+        "id": "d",
+        "text": "The bath is complete, because a conductivity cell treats acid alone as the full prescription"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Acid concentrate and bicarbonate both have to reach the proportioning system for the mixed dialysate to match the prescription. With the bicarbonate container not connected, the mixed bath will not match the order. A normal temperature does not replace the missing concentrate.",
+    "distractorExplanations": {
+      "a": "Assumes acid concentrate includes the bicarbonate; the two concentrates are separate, and a missing bicarbonate container means the bath is not the one ordered.",
+      "c": "Substitutes a normal temperature for a complete bath; heat does not add bicarbonate, and the mix still fails the prescription.",
+      "d": "Trusts conductivity to accept acid alone; the ion mix is incomplete without bicarbonate, so the bath does not match the order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-053",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The pre-dialysis weight is 68.5 kg, the target weight is 66.0 kg, and rinseback is 0.4 L. Which ultrafiltration goal should be programmed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "2.5 L, the gain with the 0.4 L rinseback left out"
+      },
+      {
+        "id": "b",
+        "text": "66.0 L, using the target weight itself as the fluid goal"
+      },
+      {
+        "id": "c",
+        "text": "2.9 L"
+      },
+      {
+        "id": "d",
+        "text": "2.1 L, the gain after the 0.4 L rinseback is subtracted"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The ultrafiltration goal is weight gain plus rinseback, not the target weight. Gain is 68.5 − 66.0 = 2.5 kg, about 2.5 L. Adding rinseback gives 2.5 + 0.4 = 2.9 L. The 66.0 kg target is the weight to land on, not the volume to program.",
+    "distractorExplanations": {
+      "a": "Stops at the 2.5 L gain from 68.5 minus 66.0 and leaves out the 0.4 L rinseback that must also be removed.",
+      "b": "Programs the 66.0 kg target weight as if it were the fluid goal; the goal is the gain plus rinseback, which is 2.9 L.",
+      "d": "Subtracts the 0.4 L rinseback from the 2.5 L gain and gets 2.1 L; rinseback is added, because that saline also has to come off."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-054",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "Mid-treatment the acid pump is still running and the bicarbonate pump has stopped. The order needs both concentrates. What happens to the dialysate while one pump is down?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It still matches the order, because the jugs are stored apart and that storage is what proportions the bath"
+      },
+      {
+        "id": "b",
+        "text": "It becomes an overheated bath, because a stopped bicarbonate pump is the high-temperature alarm"
+      },
+      {
+        "id": "c",
+        "text": "It stays on the prescription, because the acid pump can carry bicarbonate from the acid jug"
+      },
+      {
+        "id": "d",
+        "text": "It will not match the order"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The acid pump and the bicarbonate pump both have to run for the mixed dialysate to match the order. With the bicarbonate pump stopped, bicarbonate is no longer being proportioned in, so the bath drifts off the prescription. Do not keep delivering that incomplete mix.",
+    "distractorExplanations": {
+      "a": "Answers with the storage rule; keeping the jugs apart prevents precipitation in the containers, and it does not replace a bicarbonate pump that has stopped.",
+      "b": "Calls a stopped pump a temperature alarm; heat is a separate monitor, and a dead bicarbonate pump means the ion mix no longer matches the order.",
+      "c": "Expects the acid pump to supply bicarbonate; bicarbonate comes from its own pump and jug, so one running pump cannot finish the ordered mix."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-dialysis-principles-055",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "dialysis-principles",
+    "prompt": "The care team wants more small-solute removal for this patient and is choosing one change. Which change would actually increase that removal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lengthen the prescribed treatment time"
+      },
+      {
+        "id": "b",
+        "text": "Cool the dialysate until the patient shivers, and leave the ordered time as it is"
+      },
+      {
+        "id": "c",
+        "text": "Lower the heparin rate, expecting the fibers to clear more urea because less anticoagulant is running"
+      },
+      {
+        "id": "d",
+        "text": "Clamp the venous line during the session so pressure pushes extra solute across the membrane"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Lengthening the prescribed treatment time increases small-solute removal because urea keeps diffusing for more of the session. A colder bath makes the patient shiver and does not add that removal. A lower heparin rate does not increase urea removal, and clamping the venous line raises pressure and alarms instead of removing more solute.",
+    "distractorExplanations": {
+      "b": "Uses a colder bath as a removal tool; cold dialysate makes the patient shiver, and it does not increase small-solute removal the way extra time does.",
+      "c": "Expects less heparin to remove more urea; heparin limits clotting when it is ordered, and lowering the rate does not raise small-solute removal.",
+      "d": "Clamps the venous line to force more solute across; that clamp makes venous pressure rise and the machine alarm, and it does not increase solute removal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
     "id": "ccht-dialysis-readiness-check-patient-care-016",
     "examSlug": "ccht-dialysis-readiness-check",
     "topicId": "patient-care",
@@ -2968,6 +3793,831 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-031",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Palpation and auscultation of a mature fistula find neither a thrill nor a bruit. What should the technician do before any needle is placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do not cannulate, and tell the nurse the access has no flow."
+      },
+      {
+        "id": "b",
+        "text": "Cannulate the usual sites anyway, because the patient says this fistula has felt quiet for weeks and still supports a full run."
+      },
+      {
+        "id": "c",
+        "text": "Warm the arm, then stick if the skin color looks unchanged."
+      },
+      {
+        "id": "d",
+        "text": "Have a second technician listen, and cannulate if they also hear nothing."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "No thrill and no bruit means blood is not moving through the access, which usually means the fistula has clotted. A needle in a clotted vessel will not start treatment and can injure the site. The technician leaves it unstuck and tells the nurse immediately so the access can be evaluated.",
+    "distractorExplanations": {
+      "b": "A patient's report that a quiet fistula still runs does not replace the thrill and bruit check; absent flow means do not cannulate.",
+      "c": "Warming the arm does not reopen a clotted fistula, and normal skin color does not prove the vessel is patent.",
+      "d": "A second listener who also hears nothing confirms the loss of flow; the next step is to tell the nurse, not to stick."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-032",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Redness, warmth, and drainage are present over the segment where this fistula is usually cannulated. How should the technician proceed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clean the drainage and cannulate just above the red area."
+      },
+      {
+        "id": "b",
+        "text": "Do not cannulate, and tell the nurse about the site."
+      },
+      {
+        "id": "c",
+        "text": "Cover the drainage with gauze, move to a nearby spot that looks cleaner, and start without a nurse assessment."
+      },
+      {
+        "id": "d",
+        "text": "Cannulate as usual if the patient feels well today."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Redness, warmth, and drainage over a fistula are signs of access infection. Putting a needle into that access can push bacteria into the bloodstream. The technician does not cannulate it and tells the nurse so the care team can assess the site before any stick.",
+    "distractorExplanations": {
+      "a": "Cleaning the skin and sticking just above the drainage still places a needle in an infected access and can seed the blood.",
+      "c": "Gauze and a nearby stick hide the drainage from the nurse; the access needs assessment before any cannulation.",
+      "d": "Feeling well does not clear an access that is red, warm, and draining; those signs are reported before a needle is placed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-033",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Both needles are out, pressure has been held for the unit's usual time, and the sites are still bleeding. The ride is waiting outside. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send the patient to the car with extra gauze to press on the way."
+      },
+      {
+        "id": "b",
+        "text": "Tape on a bulky dressing and free the chair for the next patient."
+      },
+      {
+        "id": "c",
+        "text": "Do not send the patient home, and tell the nurse."
+      },
+      {
+        "id": "d",
+        "text": "Walk the patient to the scale for a post weight, then have them wait in the lobby until the ride pulls up."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Bleeding that continues after the usual hold is not a routine discharge. The patient stays in the chair and the nurse is told so the cause can be assessed before anyone leaves. Sending a still-bleeding patient to a car or a lobby risks hemorrhage away from staff who can help.",
+    "distractorExplanations": {
+      "a": "Leaving with gauze while the sites are still open can lead to bleeding in the car, away from staff who can respond.",
+      "b": "A bulky dressing and a chair turnover do not stop an ongoing bleed; the patient is not discharged until the nurse is involved.",
+      "d": "Walking to the scale and sitting in the lobby takes a still-bleeding patient away from immediate care at the chair."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-034",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Partway through treatment a patient develops chest pain that is new for them on dialysis. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Finish the session, because chest discomfort from fluid removal often eases."
+      },
+      {
+        "id": "b",
+        "text": "Hand over the nitroglycerin tablets from the patient's own bag and let them take one while the blood pump and ultrafiltration both keep running."
+      },
+      {
+        "id": "c",
+        "text": "Raise the ultrafiltration rate so the treatment ends sooner."
+      },
+      {
+        "id": "d",
+        "text": "Stop ultrafiltration, call the nurse, and do not give nitroglycerin unless the nurse directs it."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "New chest pain during dialysis can be cardiac ischemia or another emergency. Ultrafiltration is stopped so fluid removal does not add strain, and the nurse is called immediately. The technician does not give the patient's own nitroglycerin unless the nurse directs it, because that medication decision is not a technician task.",
+    "distractorExplanations": {
+      "a": "Waiting out new chest pain until the session ends delays care for possible cardiac ischemia.",
+      "b": "Giving the patient's own nitroglycerin without the nurse's direction is outside the technician role and can drop the blood pressure.",
+      "c": "Raising ultrafiltration adds strain and does not treat chest pain; fluid removal is stopped while the nurse is called."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-035",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "From the unit refrigerator, a patient on the machine requests a banana and a glass of orange juice. What is the main concern with that snack?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The banana and the juice are both high in potassium."
+      },
+      {
+        "id": "b",
+        "text": "The juice is a fluid-volume problem to add into the ultrafiltration goal, and the banana is a healthy snack with no dialysis concern."
+      },
+      {
+        "id": "c",
+        "text": "The juice is a sugar problem for patients with diabetes, and the banana is fine."
+      },
+      {
+        "id": "d",
+        "text": "Fruit is encouraged on the machine to replace potassium the bath removes."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bananas and orange juice are both high in potassium. For a person on dialysis the danger is that potassium load, which failing kidneys do not clear, not merely the fluid in the glass. Extra potassium can cause weakness and dangerous heart rhythms, so this snack is not given on the machine.",
+    "distractorExplanations": {
+      "b": "Counting the juice as fluid and waving off the banana misses the potassium in both foods, which is the larger danger.",
+      "c": "Treating the juice as a diabetes-only sugar issue ignores the potassium load, which matters for dialysis patients generally.",
+      "d": "The bath is removing potassium; replacing it with high-potassium fruit during treatment works against that removal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-036",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient says they took their phosphate binders with breakfast, so today's hemodialysis can be cancelled. What should you explain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cancel today's run, because phosphate binders remove phosphorus, fluid, and potassium the same way hemodialysis does."
+      },
+      {
+        "id": "b",
+        "text": "Binders are taken with meals and do not replace a dialysis treatment."
+      },
+      {
+        "id": "c",
+        "text": "Double tomorrow's binder dose to make up for skipping today."
+      },
+      {
+        "id": "d",
+        "text": "Binders replace dialysis on days the patient eats, so breakfast means this session can be skipped."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Phosphate binders are taken with meals so they can bind phosphorus from food in the gut. They do not remove fluid, urea, or potassium, and they do not stand in for a hemodialysis treatment. A request to cancel is told to the nurse; the session is not dropped because binders were swallowed.",
+    "distractorExplanations": {
+      "a": "Binders do not clear fluid, urea, or potassium; treating them as a substitute for hemodialysis leaves those wastes in the patient.",
+      "c": "Doubling the next binder dose does not replace a skipped treatment, and the technician does not change the prescribed dose.",
+      "d": "Eating is the reason to take a binder with food, not a reason to cancel dialysis; the two do different jobs."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-037",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient with a central venous catheter wants the exit-site dressing peeled off so the skin can air out between connections. What is the right response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peel the dressing off now and leave the exit site open for the rest of the treatment so the skin can air out."
+      },
+      {
+        "id": "b",
+        "text": "Swap it for loose gauze the patient can lift when the skin feels damp."
+      },
+      {
+        "id": "c",
+        "text": "Keep a dry occlusive dressing on, and tell the nurse if it is wet or loose."
+      },
+      {
+        "id": "d",
+        "text": "Take it off after connection and put the same dressing back at the end."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A catheter exit-site dressing must stay dry and occlusive so bacteria and moisture stay off the tract. Peeling it off to air the skin leaves the site exposed. If the dressing is wet, loose, or soiled, the nurse replaces it with a new one; the technician does not remove it for airing.",
+    "distractorExplanations": {
+      "a": "Leaving the exit site open so it can air out lets bacteria reach the tract; that is not a safe way to care for a catheter.",
+      "b": "Loose gauze the patient can lift is not an occlusive cover and lets contamination reach the exit site.",
+      "d": "Taking the dressing down and putting the same one back brings the used surface onto the site instead of keeping it covered correctly."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-038",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "The blood has been returned and the patient stands up from the chair, then says they feel faint. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Walk them to the scale before they sit, so the post weight is not missed."
+      },
+      {
+        "id": "b",
+        "text": "Have them stay on their feet and sip water until the faintness passes, then send them to the lobby to wait for the ride."
+      },
+      {
+        "id": "c",
+        "text": "Restart ultrafiltration briefly to remove the fluid causing the faintness."
+      },
+      {
+        "id": "d",
+        "text": "Sit the patient back down and tell the nurse."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Feeling faint on standing after the blood is back is a drop in blood pressure from fluid removal and the position change. The patient is sat back down at once so they do not fall, and the nurse is told. They are not walked to the scale or the lobby while faint, and fluid removal is not restarted.",
+    "distractorExplanations": {
+      "a": "Walking a faint patient to the scale can cause a fall; they sit back down before any further movement.",
+      "b": "Keeping a faint patient standing, even with a sip of water, risks collapse; they need to sit and be assessed by the nurse.",
+      "c": "Restarting ultrafiltration would remove more fluid from someone who is already faint, and the treatment is already over."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-039",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "The saline infusion bag runs dry, air hisses into the arterial line, and the patient becomes confused and reports a sense of doom. Air embolism is suspected. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stop the pump, clamp the lines, call for help, and place the patient on the left side with the head down."
+      },
+      {
+        "id": "b",
+        "text": "Keep the blood pump running so the air detector can clear the line."
+      },
+      {
+        "id": "c",
+        "text": "Leave the blood pump running, return the circuit with a saline rinse, sit the patient fully upright with the head raised, and call the nurse after the blood is back."
+      },
+      {
+        "id": "d",
+        "text": "Slow the pump and watch to see if the confusion eases before calling anyone."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "An empty saline infusion bag can let air into the arterial line, and the blood pump will push that air toward the patient. Sudden confusion and a sense of doom can mean the air has reached the bloodstream. The pump is stopped and the lines are clamped so no more air is pushed in, help is called at once, and the patient is placed on the left side with the head down so the air stays in the right side of the heart instead of moving into the lungs. Leaving the pump running does not clear that air.",
+    "distractorExplanations": {
+      "b": "Keeping the blood pump running continues to push air toward the patient; the pump is stopped and the lines are clamped.",
+      "c": "Returning the circuit and sitting the patient head-up can drive more air into the lungs; the pump stops, the lines are clamped, and the patient is placed on the left side with the head down.",
+      "d": "Watching to see if confusion eases, while the pump still runs, delays clamping; suspected air embolism is treated by stopping the pump and calling for help."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-040",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Needle sites on this graft have been bleeding much longer than usual after the last several treatments. What should the technician recognize and do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep cannulating the same easy spots, hold pressure a bit longer, and mention the pattern if the patient complains of soreness."
+      },
+      {
+        "id": "b",
+        "text": "Tell the nurse about a likely outflow problem, and do not keep using the site unchanged."
+      },
+      {
+        "id": "c",
+        "text": "Use a larger needle next time and skip telling the nurse."
+      },
+      {
+        "id": "d",
+        "text": "Read it as healthy maturation, so site selection can stay the same."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Bleeding that lasts much longer than usual after needles are removed suggests venous outflow stenosis: blood cannot leave the access easily, so the puncture does not seal. The nurse is told so the access can be checked. Continuing to use that site as if the pattern were normal misses a problem that can lead to clotting.",
+    "distractorExplanations": {
+      "a": "Staying on the same easy spots and waiting for a pain complaint treats a new bleeding pattern as routine instead of reporting an outflow problem.",
+      "c": "A larger needle does not explain repeated prolonged bleeding; the concern is venous outflow, which is reported rather than worked around.",
+      "d": "Longer bleeding is not a sign of healthy maturation; it points to an outflow problem the nurse needs to hear about."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-041",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A competent patient refuses today's hemodialysis before setup and says they will come back another day. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cannulate and start anyway, because a missed treatment is dangerous and the patient can file a complaint after the session."
+      },
+      {
+        "id": "b",
+        "text": "Chart a no-show and leave the refusal out of the record."
+      },
+      {
+        "id": "c",
+        "text": "Tell the nurse, document the refusal, and do not start treatment."
+      },
+      {
+        "id": "d",
+        "text": "Begin treatment, and stop if the patient refuses again once blood is circulating."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A competent patient may refuse hemodialysis, and the technician does not start the treatment anyway. The nurse is told so a licensed clinician can discuss the risks, and the refusal is documented per facility policy. Charting a silent no-show hides a refusal the team needs to know about.",
+    "distractorExplanations": {
+      "a": "Cannulating after a clear refusal starts treatment without consent; the nurse handles the discussion of risk, and the session is not begun.",
+      "b": "A stated refusal is not a silent no-show; it is reported to the nurse and written in the record.",
+      "d": "Waiting until blood is circulating ignores a refusal that was already clear; treatment is not started in the hope the patient will change their mind."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-042",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Itching starts on the patient's trunk during treatment and was not present when they sat down. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase the heparin rate so dialyzer clotting does not make the itch worse."
+      },
+      {
+        "id": "b",
+        "text": "Raise the heparin rate, give an extra saline flush, and wait until rinseback to report the itching if it has not gone away."
+      },
+      {
+        "id": "c",
+        "text": "Discard the circuit at once and assume the itch is a severe dialyzer reaction."
+      },
+      {
+        "id": "d",
+        "text": "Tell the nurse, and do not change the heparin rate yourself."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Itching that starts during dialysis can be a reaction or another problem the nurse needs to assess. The technician reports it when it starts and does not increase the heparin rate. Heparin is ordered to limit clotting in the circuit; raising it does not treat itching and can increase bleeding.",
+    "distractorExplanations": {
+      "a": "Heparin limits clotting in the circuit; increasing the rate does not treat itching and is a prescription change the technician does not make.",
+      "b": "Raising heparin and waiting until rinseback both miss the point; itching is reported now and the heparin rate stays as ordered.",
+      "c": "Discarding the circuit before the nurse assesses assumes a severe reaction the technician has not been directed to treat that way."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-043",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient who attended the last scheduled session now reports new muscle weakness and a pounding heartbeat. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report possible high potassium to the nurse now."
+      },
+      {
+        "id": "b",
+        "text": "Call it anxiety from being on the machine, and plan to mention the pounding heartbeat at the next monthly lab visit."
+      },
+      {
+        "id": "c",
+        "text": "Offer orange juice for energy and recheck after the session ends."
+      },
+      {
+        "id": "d",
+        "text": "Cut the ultrafiltration goal, because weakness means the target weight is too low."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "New muscle weakness with a pounding heartbeat can be a sign of high potassium, which can progress to a dangerous heart rhythm. It is reported to the nurse now, including when the patient kept their usual schedule. The technician does not wait for a later lab draw or offer a potassium-rich drink.",
+    "distractorExplanations": {
+      "b": "Labeling a pounding heartbeat as anxiety and waiting for a monthly lab delays care for a possible high-potassium emergency.",
+      "c": "Orange juice adds potassium, which is the wrong offer for a patient who may already have too much potassium.",
+      "d": "Weakness with a pounding heartbeat is not a reason to cut the fluid goal; the symptom is reported as a potassium concern, and the care team sets the target weight."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-044",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "While a patient who has diabetes is getting seated, you see an open sore on the top of the foot. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trim the nearby toenail so it will not rub, cover the sore with a supply-cart bandage, and move on unless the patient reports pain."
+      },
+      {
+        "id": "b",
+        "text": "Report the open sore to the nurse."
+      },
+      {
+        "id": "c",
+        "text": "Wash the foot and leave the sore open to dry during treatment."
+      },
+      {
+        "id": "d",
+        "text": "Leave it alone, because foot sores are followed at the podiatry clinic."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "An open sore on the foot of a patient with diabetes can become a serious infection because circulation and sensation are often reduced. The technician reports it to the nurse and does not trim the toenail or cover it and continue as if it were handled. Wound care and nail trimming are not technician tasks.",
+    "distractorExplanations": {
+      "a": "Trimming a toenail beside an open sore can injure the skin further, and bandaging it without a report hides a wound the nurse needs to see.",
+      "c": "Washing the foot and leaving the sore to dry is not a substitute for reporting it; the nurse decides how the wound is handled.",
+      "d": "Podiatry may follow the foot later, but an open sore seen in the unit is still reported to the nurse the same day."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-045",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient on the machine asks for a second cup of ice chips and says ice is free because it is not a liquid. What is the correct teaching?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agree, because ice is a solid and is left out of the fluid count."
+      },
+      {
+        "id": "b",
+        "text": "Allow the ice chips freely, because the machine removes whatever fluid the patient takes in during the treatment."
+      },
+      {
+        "id": "c",
+        "text": "Ice chips count toward the fluid limit, because they melt to water."
+      },
+      {
+        "id": "d",
+        "text": "Skip ice chips in the fluid count when the patient still makes some urine."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Ice chips melt into water and count toward the fluid limit the care team sets. Treating a cup of ice as free because it looks solid is a common reason patients take in more fluid than they planned. The technician does not offer unlimited ice on the machine.",
+    "distractorExplanations": {
+      "a": "Calling ice a solid ignores that the chips melt to water and add the same fluid as a drink of the same volume.",
+      "b": "The machine does not erase unlimited intake; ice still counts, and a large intake makes safe fluid removal harder.",
+      "d": "Making some urine does not make ice chips free; the chips still count toward the fluid limit the care team set."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-046",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient says they feel dry and asks you to raise the target weight before you program ultrafiltration. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raise the target weight by the amount the patient asks for, so today's ultrafiltration is smaller and the dry feeling stops."
+      },
+      {
+        "id": "b",
+        "text": "Lower the target weight, since feeling dry means fluid was left on last time."
+      },
+      {
+        "id": "c",
+        "text": "Turn ultrafiltration off and chart the target weight the patient requested."
+      },
+      {
+        "id": "d",
+        "text": "Keep the ordered target weight and tell the nurse the patient feels dry."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Target weight is set by the care team. The technician does not raise it because a patient feels dry at the chair. That feeling is reported to the nurse, who can assess the patient and ask the provider if a change is needed. Programming a higher target would leave extra fluid on.",
+    "distractorExplanations": {
+      "a": "Raising the target weight to match a chairside request is outside the technician role; the care team sets that weight.",
+      "b": "Feeling dry is not a reason for the technician to lower the target either; any change belongs to the care team.",
+      "c": "Turning ultrafiltration off and writing in a patient-chosen target bypasses the weight the care team ordered."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-047",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "This fistula is on a rope-ladder plan with sharp needles, not a buttonhole plan. Where do today's punctures go?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In a new spot along the vessel for this treatment."
+      },
+      {
+        "id": "b",
+        "text": "Through the same holes used at the last treatment."
+      },
+      {
+        "id": "c",
+        "text": "In the exact same two places as last time, so repeated sharp-needle punctures there can form a lasting track."
+      },
+      {
+        "id": "d",
+        "text": "Into the widest aneurysm, where the needle is easiest to place."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rope-ladder cannulation uses a new site each treatment, moving along the vessel so one spot is not punctured again and again with sharp needles. Repeating the same hole is buttonhole cannulation, and this patient is not on that plan. Sharp sticks in one spot weaken the wall and can form an aneurysm.",
+    "distractorExplanations": {
+      "b": "Reusing the same holes with sharp needles is not rope-ladder rotation; that repeat-site method is a separate plan this patient is not on.",
+      "c": "Sharp needles are not used to build a track by repeating one spot; rope-ladder moves to a new site each treatment.",
+      "d": "An aneurysm is avoided rather than chosen because it is wide; rope-ladder sites stay in healthier vessel."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-048",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Yawning and restlessness show up while the blood pressure is still close to the reading taken at the start. What should the technician treat this as?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ordinary restlessness on a long treatment, so offer a blanket and wait for the next scheduled blood-pressure reading before doing anything."
+      },
+      {
+        "id": "b",
+        "text": "Early hypotension; tell the nurse and do not wait for the patient to pass out."
+      },
+      {
+        "id": "c",
+        "text": "A cue to raise ultrafiltration, because restlessness means fluid remains."
+      },
+      {
+        "id": "d",
+        "text": "Have the patient sit fully upright and breathe deeply until the yawning stops, and leave the ultrafiltration rate where it is."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Yawning and restlessness often appear before the blood-pressure number falls. They are treated as early hypotension: the nurse is told, and the technician does not wait until the patient loses consciousness. Waiting for a later scheduled reading can miss the drop until the patient is fainting.",
+    "distractorExplanations": {
+      "a": "Treating yawning and restlessness as boredom and waiting for the next scheduled reading can miss hypotension until the patient passes out.",
+      "c": "Restlessness here is an early low-pressure sign; raising ultrafiltration would remove more fluid and make it worse.",
+      "d": "Sitting the patient upright can drop blood flow to the brain as pressure falls, and leaving ultrafiltration unchanged ignores yawning and restlessness as early hypotension that the nurse must hear about now."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-049",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Catheter hubs are exposed while you step away to bring a forgotten supply from the cart. What should the clamps be doing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay open so the lumens do not clot while you are at the cart, with the caps set on a towel by the chair."
+      },
+      {
+        "id": "b",
+        "text": "Stay open on the venous side while the arterial clamp is shut."
+      },
+      {
+        "id": "c",
+        "text": "Stay closed except during the connection you are actually doing."
+      },
+      {
+        "id": "d",
+        "text": "Come off for the whole setup so both lumens are ready to flush later."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Catheter clamps stay closed except during the connection or aspiration you are actually performing. Leaving them open while you walk away can let air in or blood out, and uncapped hubs can be contaminated. Each clamp is opened only for the step in front of you, then closed again.",
+    "distractorExplanations": {
+      "a": "Open clamps and caps left on a towel while you leave the chair risk air, bleeding, and contamination; clamps stay closed until you are doing the connection.",
+      "b": "Both lumens stay clamped when you are not using them; an open venous clamp is not a safe shortcut while you step away.",
+      "d": "Taking the clamps off for the whole setup leaves the lumens open between steps; each clamp stays closed except during the connection being done."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-050",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Nausea starts, and the patient then vomits while ultrafiltration is still running. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Increase ultrafiltration so the fluid causing the nausea comes off faster."
+      },
+      {
+        "id": "b",
+        "text": "Lay the patient flat on their back, raise the ultrafiltration rate, and offer a large drink of water after the vomiting stops."
+      },
+      {
+        "id": "c",
+        "text": "Leave ultrafiltration unchanged and tell the nurse at the next scheduled pressure check."
+      },
+      {
+        "id": "d",
+        "text": "Turn the head to the side, stop ultrafiltration, and call the nurse."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Vomiting on dialysis can mean a falling blood pressure, and it also risks aspiration. The head is turned to the side so vomit does not enter the airway, ultrafiltration is stopped rather than increased, and the nurse is called. Pulling fluid faster makes nausea and low blood pressure worse.",
+    "distractorExplanations": {
+      "a": "Increasing ultrafiltration removes fluid faster and can worsen the nausea and a drop in blood pressure.",
+      "b": "Laying the patient flat on the back during vomiting risks aspiration, and raising ultrafiltration plus a large drink does not treat the cause.",
+      "c": "Waiting for the next pressure check delays help; vomiting is reported when it happens and ultrafiltration is stopped."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-051",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A seizure starts while the patient is in the dialysis chair, with jerking movements and loss of awareness. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Protect the head, call for help, and put nothing in the mouth."
+      },
+      {
+        "id": "b",
+        "text": "Insert a bite block so the patient does not bite the tongue."
+      },
+      {
+        "id": "c",
+        "text": "Pry the mouth open, put your fingers in to hold the tongue forward, and pin the arms to the armrests until the jerking stops."
+      },
+      {
+        "id": "d",
+        "text": "Raise ultrafiltration to finish the session, then move the patient after rinseback."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "During a seizure the technician protects the head from striking the chair, calls for help, and does not put a bite block or fingers in the mouth. Objects in the mouth break teeth and get bitten, and they do not stop the seizure. Pinning the arms down and raising ultrafiltration are not the response.",
+    "distractorExplanations": {
+      "b": "A bite block between the teeth can break teeth and injure the mouth; nothing is placed in the mouth during a seizure.",
+      "c": "Fingers in the mouth get bitten, and pinning the arms to the armrests can cause injury; protect the head and call for help instead.",
+      "d": "Raising ultrafiltration does not treat a seizure, and waiting until rinseback to move the patient delays help."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-052",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A new patient asks what makes their synthetic graft different from a neighbor's fistula. Which explanation is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A graft is the patient's own artery sewn directly to their own vein, and a fistula is a neck catheter used for a few treatments."
+      },
+      {
+        "id": "b",
+        "text": "A graft is a synthetic tube between an artery and a vein; a fistula uses the patient's own vessels."
+      },
+      {
+        "id": "c",
+        "text": "Graft and fistula are two names for the same native-vessel access."
+      },
+      {
+        "id": "d",
+        "text": "A graft joins two veins, and a fistula joins two arteries."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A graft is synthetic tubing sewn from an artery to a vein, and the needles enter that tube. A fistula is the patient's own artery joined to their own vein, with no synthetic tube; the vein has to enlarge before it is cannulated, and it is not a neck catheter. The names mark those different builds, so a graft is not another word for a fistula, and neither access is a join of two veins or of two arteries.",
+    "distractorExplanations": {
+      "a": "That swaps the definitions and calls a fistula a neck catheter; a fistula is the patient's own vessels, and a graft is the synthetic tube.",
+      "c": "Graft and fistula are not two names for one native access; a graft uses a synthetic tube and a fistula uses the patient's own vessels.",
+      "d": "A graft bridges an artery and a vein, not two veins, and a fistula also joins an artery to a vein using the patient's own vessels."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-053",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "Fistula needles are taped loosely so the patient can move that arm freely during treatment, and a blanket covers the sites. What is the problem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Loose tape is better for comfort, and a blanket over the needles is fine when the venous pressure alarm is turned on."
+      },
+      {
+        "id": "b",
+        "text": "The blanket should come off, but loose tape is acceptable so the arm can move."
+      },
+      {
+        "id": "c",
+        "text": "Needles must be taped securely, and the access must stay visible."
+      },
+      {
+        "id": "d",
+        "text": "Secure tape would block blood return, so loose tape is the safer setup."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Needles are taped securely so they do not pull out when the arm moves, and the access stays visible so a dislodged needle is seen at once. Loose tape left for free movement lets a needle slip, and a blanket hides bleeding. A venous pressure alarm cannot be relied on to catch that.",
+    "distractorExplanations": {
+      "a": "Comfort and an armed venous pressure alarm do not make loose tape or a covered access safe; a slipped needle can bleed with little alarm warning.",
+      "b": "Removing the blanket still leaves loose tape, which lets the needle pull out when the patient moves the arm.",
+      "d": "Secure tape holds the needles in place; it does not block blood return, and loose tape is the setup that risks a needle coming out."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-054",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A patient ate a large salty meal, is well above target weight, breathes comfortably, and can lie flat. How should the technician handle this gain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Start a very high ultrafiltration rate without telling the nurse, and treat the patient as if they cannot breathe while lying flat."
+      },
+      {
+        "id": "b",
+        "text": "Cancel treatment and send them home, because comfortable breathing means the gain can wait."
+      },
+      {
+        "id": "c",
+        "text": "Set the target weight equal to today's scale weight so no fluid needs to come off."
+      },
+      {
+        "id": "d",
+        "text": "Have the nurse plan the fluid removal; this gain is not an emergency."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A large gain after a salty meal, with comfortable breathing and the ability to lie flat, is a fluid-removal planning problem for the nurse. It is not the emergency in which the patient is short of breath and cannot lie flat. The technician does not change the target weight or start an unplanned high removal rate.",
+    "distractorExplanations": {
+      "a": "Treating a patient who can lie flat and breathe comfortably as a breathing emergency, and starting a high rate without the nurse, is the wrong path.",
+      "b": "Comfortable breathing does not mean the extra fluid can be skipped; the gain still needs a nurse's plan for removal.",
+      "c": "Matching the target weight to today's scale weight hides the gain; the care team sets the target, and the nurse plans the fluid removal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-patient-care-055",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "patient-care",
+    "prompt": "A family member in the waiting room asks what the patient's potassium was this morning. What should you say?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read the potassium aloud from the flowsheet, because the family member is already in the clinic and knows the patient dialyzes here."
+      },
+      {
+        "id": "b",
+        "text": "Do not give the lab result in the waiting room."
+      },
+      {
+        "id": "c",
+        "text": "Write the potassium on a note and hand it over without saying it."
+      },
+      {
+        "id": "d",
+        "text": "Give the result if the family member can recite the patient's birth date."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A potassium result is protected health information. It is not given to a family member in the waiting room, even when they know the patient. Lab results are shared only with people the patient has authorized, and that check is done privately under the unit's privacy rules, not at the waiting-room door.",
+    "distractorExplanations": {
+      "a": "Knowing the patient dialyzes at the clinic does not authorize a family member to hear a lab result in a public waiting room.",
+      "c": "Writing the potassium on a note still discloses the lab value to someone who has not been cleared to receive it.",
+      "d": "Reciting a birth date is not permission to release a lab result; authorization is confirmed under the unit's privacy rules, not at the waiting-room door."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
   },
   {
     "id": "ccht-dialysis-readiness-check-water-infection-016",
@@ -3465,6 +5115,831 @@
     "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
   },
   {
+    "id": "ccht-dialysis-readiness-check-water-infection-031",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "During morning rounds a technician finds the carbon tanks were refilled overnight and says the fresh carbon will also clear bacteria and endotoxin from the loop. What is the correct response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carbon removes chlorine and chloramine, not bacteria or endotoxin."
+      },
+      {
+        "id": "b",
+        "text": "A fresh carbon fill sterilizes the loop, so reverse osmosis, disinfection, and dialysate ultrafilters can be skipped this week."
+      },
+      {
+        "id": "c",
+        "text": "Carbon is the main barrier against endotoxin, and reverse osmosis is a chemical polisher."
+      },
+      {
+        "id": "d",
+        "text": "Refilling carbon replaces routine disinfection of the distribution loop."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Activated carbon adsorbs chlorine and chloramine. It does not remove bacteria or endotoxin, and a carbon bed can support bacterial growth. Microbial control depends on reverse osmosis, scheduled disinfection, and dialysate ultrafilters.",
+    "distractorExplanations": {
+      "b": "A new carbon fill does not sterilize water. Skipping reverse osmosis and disinfection leaves bacteria and endotoxin in the loop.",
+      "c": "Endotoxin is not carbon's job. Carbon targets chlorine and chloramine, while reverse osmosis rejects microbes.",
+      "d": "Refilling carbon does not disinfect the loop. Biofilm control still requires the scheduled disinfection program."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-032",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The polisher deionizer has been online past its expected capacity, and product-water conductivity is climbing. A coworker says the tanks can stay in service because deionization replaces reverse osmosis. What is the risk?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A rising conductivity means the deionizer is working harder and should stay online so it can finish polishing past the reverse osmosis unit."
+      },
+      {
+        "id": "b",
+        "text": "An exhausted bed can release ions it captured, and it does not replace reverse osmosis."
+      },
+      {
+        "id": "c",
+        "text": "Deionizers remove bacteria, so rising conductivity means the bed is still protecting patients."
+      },
+      {
+        "id": "d",
+        "text": "Swap the deionizer for a carbon tank, which rejects dissolved ions the same way."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A deionizer holds ions on its resin until the bed is exhausted, and then those captured ions can be released back into the product water. Deionization is not a substitute for reverse osmosis, which remains the main barrier for dissolved contaminants.",
+    "distractorExplanations": {
+      "a": "Climbing conductivity means the bed is failing, not working harder. Leaving an exhausted deionizer online can dump ions into product water.",
+      "c": "Deionization exchanges ions. It does not remove bacteria, and rising conductivity is a sign the resin is exhausted.",
+      "d": "Carbon removes chlorine and chloramine. It does not reject the dissolved ions a deionizer was holding."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-033",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A nurse asks to fill a medication syringe with product water straight from the reverse osmosis faucet because the water looks clear and the rejection reading is high. What should the technician say?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High rejection means the product water is sterile and safe to draw into a syringe for injection or a catheter flush."
+      },
+      {
+        "id": "b",
+        "text": "Clear loop water meets sterile-water standards once conductivity is in range."
+      },
+      {
+        "id": "c",
+        "text": "Reverse osmosis product water is highly purified, but it is not sterile."
+      },
+      {
+        "id": "d",
+        "text": "Collect it in a clean cup and it can be used as a sterile diluent."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Reverse osmosis produces high-purity water by rejecting most dissolved contaminants, but the product is not sterile. It must not be drawn into a syringe or used as sterile water for injection or a catheter flush.",
+    "distractorExplanations": {
+      "a": "A high rejection reading shows chemical purity, not sterility. Product water is not safe to inject or to flush a catheter.",
+      "b": "Looking clear and having in-range conductivity does not make reverse osmosis water sterile.",
+      "d": "A clean cup does not sterilize product water. It still cannot be used as a sterile diluent."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-034",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "Yesterday's bicarbonate jugs are still on the cart, mixed and left at room temperature. A technician wants to use them for today's first patients to save time. What should happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the jugs if they still look clear, because mixed bicarbonate does not support bacterial growth."
+      },
+      {
+        "id": "b",
+        "text": "Warm the jugs and stir them, then use them if the caps stayed on overnight."
+      },
+      {
+        "id": "c",
+        "text": "Add a splash of acid concentrate to stop growth, then use the jugs."
+      },
+      {
+        "id": "d",
+        "text": "Discard them and mix a fresh batch for use under the facility time rule."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bicarbonate concentrate is a growth medium for bacteria, so it is mixed and used on the facility's time rule. Leftover jugs from the day before are discarded, and a fresh batch is mixed rather than stretched into the next shift.",
+    "distractorExplanations": {
+      "a": "A clear jug is not proof it is safe. Bicarbonate concentrate supports bacterial growth even when it looks unchanged.",
+      "b": "Warming and stirring leftover bicarbonate does not make it usable. Overnight jugs are discarded, not rescued.",
+      "c": "Adding acid concentrate to a bicarbonate jug does not make leftover concentrate safe, and it mixes two concentrates that stay separate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-035",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "Before the first patients of the shift, total chlorine measured after the polisher carbon tank is above 0.1 mg/L. The worker tank was changed last week. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold all treatments until total chlorine is no longer above 0.1 mg/L."
+      },
+      {
+        "id": "b",
+        "text": "Start the morning patients and repeat the test at lunch, since a result just over 0.1 mg/L can be used for one shift."
+      },
+      {
+        "id": "c",
+        "text": "Bypass both carbon tanks and send feed water straight to the machines."
+      },
+      {
+        "id": "d",
+        "text": "Move the sample to the city tap and start if that reading is lower."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Total chlorine above the commonly cited limit of 0.1 mg/L after the polisher carbon tank means chloramine can reach patients and cause hemolysis. Treatments do not start until the carbon system is corrected and a new test is no longer above 0.1 mg/L.",
+    "distractorExplanations": {
+      "b": "A result above 0.1 mg/L after the polisher is not usable for a shift. Waiting until lunch leaves patients exposed to chloramine.",
+      "c": "Bypassing carbon sends chlorinated feed water to the machines. That is the exposure the carbon tanks are there to stop.",
+      "d": "A lower city-tap reading does not clear water that already failed after the polisher. The failed polisher result stops the shift."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-036",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A reused dialyzer fails the pressure-hold test. Its fiber-bundle volume is still above 80% of the original volume, and the label matches the patient waiting in the chair. What should be done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use it, because a fiber-bundle volume still above 80% of the original overrides a failed pressure-hold test."
+      },
+      {
+        "id": "b",
+        "text": "Discard it. A failed pressure-hold test means the dialyzer leaks."
+      },
+      {
+        "id": "c",
+        "text": "Re-prime it with saline and repeat the volume test instead of the pressure test."
+      },
+      {
+        "id": "d",
+        "text": "Soak it again and put it on without another pressure check."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Fiber-bundle volume above 80% of the original shows enough fibers remain, but a failed pressure-hold test means the dialyzer leaks. Blood and dialysate can cross a leak, so the dialyzer is discarded even when the 80% volume test still passes.",
+    "distractorExplanations": {
+      "a": "The volume test and the pressure-hold test are separate. A volume still above 80% does not excuse a leak.",
+      "c": "Repeating the volume test does not repair a failed pressure-hold. The leak is the reason to discard the dialyzer.",
+      "d": "Another soak without a passing pressure-hold leaves a leaking dialyzer in service. It is discarded."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-037",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "While checking a reprocessed dialyzer for the afternoon setup, the technician sees another patient's name on the label. The volume note on the tag looks acceptable. What is the right action?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use it when the volume note looks acceptable, because the volume result matters more than the printed name."
+      },
+      {
+        "id": "b",
+        "text": "Relabel it with the current patient's name and proceed with the setup."
+      },
+      {
+        "id": "c",
+        "text": "Do not use it. The name on the label does not match this patient."
+      },
+      {
+        "id": "d",
+        "text": "Rinse the header and use it, since reprocessing removes any prior patient's blood."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A reprocessed dialyzer is assigned to one patient. A label with another patient's name is an identity failure, so the dialyzer is not used. An acceptable volume note does not override a wrong name.",
+    "distractorExplanations": {
+      "a": "An acceptable volume note does not make a dialyzer safe for a different patient. The printed name has to match.",
+      "b": "Relabeling a reused dialyzer for someone else assigns one patient's dialyzer to another. That is not allowed.",
+      "d": "Reprocessing does not make a dialyzer transferable. A mismatched name means it is not used."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-038",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The monthly water cultures are due. A new technician opens a hose end at the back of the treatment floor and fills the culture bottle from that stream. What is wrong with that sample?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The sample should be taken from a patient's dialysate line during treatment."
+      },
+      {
+        "id": "b",
+        "text": "Nothing is wrong if the water looks clear, because any flowing outlet represents the whole distribution loop."
+      },
+      {
+        "id": "c",
+        "text": "Fill the bottle from the city water tap so the result includes chlorine."
+      },
+      {
+        "id": "d",
+        "text": "Draw cultures from the designated sample ports, not an open hose end."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Routine water cultures are collected aseptically from the designated sample ports so the result reflects the distribution system. An open hose end can contaminate the sample and the system, and it is not the specified collection point.",
+    "distractorExplanations": {
+      "a": "A patient's dialysate line is not the collection point for routine water cultures. Designated sample ports are used.",
+      "b": "Clear water from a random hose end is not a valid culture. The sample has to come from the designated port.",
+      "c": "City tap water is feed water, not the product being monitored, and the culture is not a chlorine test."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-039",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "This month's product-water bacterial culture is reported as acceptable. No endotoxin result is attached. A coworker says the culture pass is enough to release the system. What is the correct view?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The culture pass does not prove the endotoxin test passed."
+      },
+      {
+        "id": "b",
+        "text": "Skip the endotoxin test this month and add it to the next quarterly panel."
+      },
+      {
+        "id": "c",
+        "text": "An acceptable bacterial culture also clears endotoxin, so the missing endotoxin report can be filed as a pass."
+      },
+      {
+        "id": "d",
+        "text": "Repeat the same culture bottle on a second incubator and treat that as the endotoxin test."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Bacterial culture and endotoxin testing answer different questions. A culture looks for viable bacteria, while an endotoxin assay looks for bacterial cell-wall fragments that can cause pyrogenic reactions. A pass on one does not show that the other passed.",
+    "distractorExplanations": {
+      "b": "A missing endotoxin result is not deferred to a later panel. The culture pass does not stand in for that test.",
+      "c": "An acceptable culture does not clear endotoxin. The two tests measure different contaminants.",
+      "d": "A second incubator still grows bacteria. It is not an endotoxin assay, so it cannot replace the missing result."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-040",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The distribution-loop pump was switched off at closing and left off all night. In the morning the pipes are full, but the water has not been moving. What is the concern before patients are connected?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No concern, because a full loop keeps bacteria from growing as long as the pipes were disinfected sometime this month."
+      },
+      {
+        "id": "b",
+        "text": "Stagnant water lets bacteria multiply. Restore flow before patients are connected."
+      },
+      {
+        "id": "c",
+        "text": "The risk is chlorine returning from the city main, so add a carbon tank at the chair."
+      },
+      {
+        "id": "d",
+        "text": "Stagnant water removes endotoxin, so the loop is cleaner after a night without flow."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When distribution-loop flow stops overnight, water sits still and bacteria can multiply on the pipe walls. Patients are not connected until flow is restored and the facility startup flush or recirculation is done. This is a flow problem, not a question of how the loop was built.",
+    "distractorExplanations": {
+      "a": "A full pipe that is not moving is stagnant, and bacteria grow in it. Last month's disinfection does not cover a night without flow.",
+      "c": "Overnight stagnation is a bacterial-growth problem, not chlorine returning from the city main. A chair-side carbon tank is not the fix.",
+      "d": "Sitting still does not remove endotoxin. Stagnant water gives bacteria time to grow and shed more of it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-041",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "After wiping a bloody prime bucket, the technician's hands are visibly soiled. The alcohol gel dispenser is closer than the sink. Which hand hygiene is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Skip hygiene because gloves will be the next thing put on."
+      },
+      {
+        "id": "b",
+        "text": "Rinse with product water from the reverse osmosis faucet."
+      },
+      {
+        "id": "c",
+        "text": "Soap and water, because the hands are visibly soiled."
+      },
+      {
+        "id": "d",
+        "text": "Alcohol gel is enough, and it is preferred over soap whenever a dispenser is closer than the sink."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Visibly soiled hands are washed with soap and water so dirt and blood are physically removed. Alcohol gel does not clean visible soil. It is used when hands are not visibly soiled, and gloves do not replace the wash.",
+    "distractorExplanations": {
+      "a": "Gloves put on over visibly soiled hands do not replace washing. Soil stays on the skin under the glove.",
+      "b": "Reverse osmosis product water is not a hand wash, and it is not sterile. Soap and water are required for visible soil.",
+      "d": "A closer gel dispenser does not change the rule. Visibly soiled hands need soap and water, not alcohol gel."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-042",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A patient arrives coughing, feverish, and complaining of body aches. The hepatitis B isolation room is empty this morning. Where should this patient be seated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seat the patient in the hepatitis B isolation room, because fever and body aches belong in that separate area with its dedicated station."
+      },
+      {
+        "id": "b",
+        "text": "Seat the patient in the usual chair and skip a mask, because a cough is not hepatitis B and needs no added precaution."
+      },
+      {
+        "id": "c",
+        "text": "Bring the dedicated hepatitis B machine to the patient's usual chair, because an empty isolation room means that machine is free."
+      },
+      {
+        "id": "d",
+        "text": "Follow the facility mask policy. A cough does not place the patient in the hepatitis B room."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A cough with fever and body aches is handled with the facility mask and respiratory policy, and the nurse is told. The hepatitis B isolation room and its dedicated machine are for an HBsAg-positive patient. A respiratory illness does not move this patient into that room, and it does not bring that machine out to a usual chair.",
+    "distractorExplanations": {
+      "a": "The hepatitis B room is for an HBsAg-positive patient, not for fever or body aches. A cough follows the facility mask policy instead.",
+      "b": "Skipping a mask ignores the facility respiratory policy. A cough still needs that step, and the patient still does not belong in the hepatitis B room.",
+      "c": "The dedicated hepatitis B machine stays with the isolation station. An empty room does not free that machine for a patient who is coughing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-043",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A staff member completed the hepatitis B vaccine series, but the latest anti-HBs result is below 10 mIU/mL. The charge nurse is assigning staff to the HBsAg-positive station. How should this result be treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat the staff member as susceptible. Anti-HBs below 10 mIU/mL is not immunity."
+      },
+      {
+        "id": "b",
+        "text": "Assign them to the HBsAg-positive station, because finishing the vaccine series means they are immune even when anti-HBs is below 10 mIU/mL."
+      },
+      {
+        "id": "c",
+        "text": "Count them as immune at a result below 10 mIU/mL if the series was completed on schedule."
+      },
+      {
+        "id": "d",
+        "text": "Repeat the anti-HBs test next year and assign them to that station in the meantime."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Immunity after hepatitis B vaccination is generally an anti-HBs level of at least 10 mIU/mL. A result below 10 mIU/mL means the staff member is still susceptible, even after a completed series, and is not assigned as if the vaccine had worked.",
+    "distractorExplanations": {
+      "b": "Finishing the series is not immunity by itself. Anti-HBs below 10 mIU/mL means the staff member is still susceptible.",
+      "c": "A result below 10 mIU/mL is not immunity, whether or not the series was completed on schedule.",
+      "d": "Waiting until next year leaves a susceptible staff member on the HBsAg-positive station. The current result below 10 mIU/mL already answers the question."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-044",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A new hire tries to attach the bicarbonate jug to the wall-box port, and the connector will not seat. The acid jug fits that same port easily. Why are the two connectors different?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The ports differ by accident. Force the bicarbonate connector on, or use an adapter so either jug can feed either line."
+      },
+      {
+        "id": "b",
+        "text": "Different fittings stop the acid and bicarbonate jugs from being swapped."
+      },
+      {
+        "id": "c",
+        "text": "Bicarbonate must go through the acid port so the machine can mix both concentrates in the jug."
+      },
+      {
+        "id": "d",
+        "text": "The mismatch means the wall box is broken, and both jugs should be poured into one container."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Acid and bicarbonate connectors at the wall box are deliberately different so the jugs cannot be attached to the wrong port. Swapping them would send the wrong concentrate to the machine. Forcing a fit or using an adapter defeats that safeguard.",
+    "distractorExplanations": {
+      "a": "The different fittings are intentional. Forcing the connector or adding an adapter would let the jugs be swapped.",
+      "c": "Acid and bicarbonate are not mixed in a jug. Each concentrate has its own port for that reason.",
+      "d": "A connector that will not seat is the safeguard working, not a broken wall box. The two concentrates are not poured together."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-045",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The prime is finished at one station, and the bucket holds leftover saline plus a small amount of blood-tinged fluid. The next patient is two chairs away and that station has no bucket yet. What should be done with this bucket?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set the bucket on the clean supply cart so the next technician can grab it."
+      },
+      {
+        "id": "b",
+        "text": "Pour the waste into the sink at the nurses' station and reuse the bucket there."
+      },
+      {
+        "id": "c",
+        "text": "Leave the waste at this station. Do not carry the bucket to the next patient."
+      },
+      {
+        "id": "d",
+        "text": "Carry the same bucket to the next station and use the leftover saline to prime the next patient's circuit."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A priming bucket and its waste stay with that station. Carrying them to the next chair can move blood and contaminated fluid to another patient. The next setup gets its own supplies, and this waste is discarded where it was used.",
+    "distractorExplanations": {
+      "a": "A used prime bucket does not go on the clean supply cart. That spreads station waste into the clean supply area.",
+      "b": "Hauling the waste to the nurses' station still moves contaminated fluid out of the station. It is handled where it was used.",
+      "d": "Leftover prime fluid is not used for the next patient. The bucket and its waste stay at the first station."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-046",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A technician wipes the station with the facility disinfectant, but the surface dries at once. The label says the product must stay wet for its printed contact time. What is required?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A wipe that dries at once still counts, because any contact with the disinfectant completes the job."
+      },
+      {
+        "id": "b",
+        "text": "Rinse the surface with water right away so patients are not exposed to the chemical."
+      },
+      {
+        "id": "c",
+        "text": "Skip the label and buff the surface with a second dry cloth until it shines."
+      },
+      {
+        "id": "d",
+        "text": "Rewet the surface and keep it wet for the time printed on the label."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A surface disinfectant has to stay wet for the contact time printed on its label. A wipe that dries at once does not complete that time, so the surface is covered again and left wet for the labeled period. The time comes from the product label.",
+    "distractorExplanations": {
+      "a": "Touching the surface is not enough. If the disinfectant dries at once, the labeled wet contact time was not met.",
+      "b": "Rinsing the disinfectant off right away ends the contact time. The surface has to stay wet for the time on the label.",
+      "c": "Buffing the surface dry skips the labeled wet time. The disinfectant has to remain wet, not be wiped off at once."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-047",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The hepatitis B dedicated machine finished an HBsAg-positive treatment this morning. A susceptible patient needs a chair this afternoon, and the machine has had a routine exterior wipe. What has to happen before that patient uses it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do not use it for a susceptible patient until the facility's required terminal disinfection is done."
+      },
+      {
+        "id": "b",
+        "text": "Move the machine to the main floor and use it for anyone, since the morning patient has already left."
+      },
+      {
+        "id": "c",
+        "text": "Seat the susceptible patient now, because an exterior wipe between treatments is the same thing as the terminal disinfection used after hepatitis B."
+      },
+      {
+        "id": "d",
+        "text": "Use it for the susceptible patient and run terminal disinfection at the end of the week."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A machine dedicated to an HBsAg-positive patient is not used for a susceptible patient on the same day until it has had the terminal disinfection the facility requires. A routine exterior wipe is not that step. Hepatitis C does not use this same separation.",
+    "distractorExplanations": {
+      "b": "The morning patient leaving does not return a hepatitis B machine to the general pool. Terminal disinfection is still required first.",
+      "c": "An exterior wipe between treatments is not the terminal disinfection the facility requires after hepatitis B.",
+      "d": "Waiting until the end of the week leaves a susceptible patient on a machine that has not had the required terminal disinfection."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-048",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "At the end of the shift a technician finds leftover acid concentrate in a jug and a bucket of bleach beside it. The plan is to pour the bleach into the acid jug to empty both at once. What is the hazard?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mixture is safe and saves a disposal step, because bleach neutralizes acid concentrate without producing a gas."
+      },
+      {
+        "id": "b",
+        "text": "The mixture can release chlorine gas. Do not combine bleach and acid concentrate."
+      },
+      {
+        "id": "c",
+        "text": "Pour the bleach into the acid jug, then cap it and leave it in the sink room."
+      },
+      {
+        "id": "d",
+        "text": "Add the acid to the bicarbonate jug first, then add the bleach."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Bleach and leftover acid concentrate must not be mixed. The combination releases chlorine gas, which can injure anyone nearby. The two chemicals are kept apart and handled under facility policy without being combined.",
+    "distractorExplanations": {
+      "a": "Bleach does not safely neutralize acid concentrate. Combining them releases chlorine gas rather than a harmless mix.",
+      "c": "Capping the jug after the pour does not stop chlorine gas from forming. The chemicals are not combined.",
+      "d": "Adding bicarbonate and then bleach still brings bleach together with acid. That mixture can release chlorine gas."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-049",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "Blood from a dropped line has pooled on the station counter. The plan is to spray the facility disinfectant and immediately wipe the surface dry so the next patient can sit down. What is missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Soap and water is enough once the visible blood is gone."
+      },
+      {
+        "id": "b",
+        "text": "Wipe it dry at once so the chair can turn over. Wet time applies to floors, not to a station counter."
+      },
+      {
+        "id": "c",
+        "text": "Leave the facility disinfectant wet for the contact time printed on the label."
+      },
+      {
+        "id": "d",
+        "text": "Mix a stronger solution than the label lists and leave the counter soaking."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "After a blood spill, the surface is cleaned with the facility disinfectant and left wet for the contact time printed on the label. Wiping it dry at once cuts that time short. No homemade strength replaces the labeled product and its labeled wet time.",
+    "distractorExplanations": {
+      "a": "Soap and water removes soil but does not replace the facility disinfectant left wet for its labeled contact time.",
+      "b": "Wet contact time applies to the station counter as well as the floor. Drying the surface at once does not finish the job.",
+      "d": "A stronger homemade mix is not the facility product. Use the labeled disinfectant and keep it wet for the time on the label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-050",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "While priming, saline splashes onto the external transducer protector. No blood has reached it. The protector looks wet but intact, and a coworker suggests waving it dry and continuing. What should be done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wave it dry and reuse it, because saline is clean and the protector is a problem after blood soaks it."
+      },
+      {
+        "id": "b",
+        "text": "Rinse the protector with more saline and snap it back onto the transducer."
+      },
+      {
+        "id": "c",
+        "text": "Turn the protector around so the wet side faces away from the transducer."
+      },
+      {
+        "id": "d",
+        "text": "Replace the wetted protector rather than drying it and continuing."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The external transducer protector is a one-way barrier between the bloodline and the pressure transducer. Saline that wets it can break that barrier, so a protector splashed with saline is replaced. It is not dried and put back.",
+    "distractorExplanations": {
+      "a": "Saline alone is enough to wet the barrier. Drying a saline-splashed protector and reusing it leaves a failed one-way barrier in place.",
+      "b": "More saline wets the protector further. Rinsing it does not restore the barrier, so it is replaced.",
+      "c": "Turning a wet protector around does not restore the one-way barrier. The wetted protector is replaced."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-051",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "After a valve repair, the softener is still in bypass, so hard water skips the resin and flows on to the reverse osmosis unit. What problem does that create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hard water that skips the softener can scale the reverse osmosis membrane."
+      },
+      {
+        "id": "b",
+        "text": "The carbon tanks will take the hardness out, so the bypass can stay open for the rest of the shift."
+      },
+      {
+        "id": "c",
+        "text": "Nothing important follows, because reverse osmosis rejects calcium and magnesium even better with the softener left in bypass."
+      },
+      {
+        "id": "d",
+        "text": "Leave the bypass open through this shift, then regenerate the resin with brine after the last patient leaves."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The softener sits ahead of reverse osmosis and exchanges calcium and magnesium so those ions do not scale the membrane. Carbon, upstream of the softener, removes chlorine and chloramine and does not remove hardness. Hard water that bypasses the softener can scale the membrane and lower rejection, so the bypass is closed and outlet hardness is checked before patients depend on that water.",
+    "distractorExplanations": {
+      "b": "Carbon removes chlorine and chloramine, not calcium and magnesium. An open softener bypass still sends hard water on to the membrane.",
+      "c": "Reverse osmosis is not a reason to leave the softener bypassed. Hardness that reaches the membrane can scale it and lower rejection.",
+      "d": "Brine regeneration after the last patient does not treat water that is bypassing the resin during the shift. Today's hard water still reaches the membrane."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-052",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "The first patients are about to be connected, and total chlorine has not been checked. A coworker says the test can wait until a patient complains of hemolysis, because a quiet start means the carbon tanks worked. When should that test be done?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After a patient reports hemolysis symptoms, because a quiet start proves the carbon tanks worked."
+      },
+      {
+        "id": "b",
+        "text": "Before the first treatments of the shift, not after a hemolysis complaint."
+      },
+      {
+        "id": "c",
+        "text": "Once a week on the day cultures are drawn, and skipped on ordinary treatment days."
+      },
+      {
+        "id": "d",
+        "text": "At the city water meter once a month, with no test on the treatment floor."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Total chlorine is tested before the first treatments of the shift so chloramine breakthrough is caught before any patient's blood is exposed. Waiting for a hemolysis complaint uses the test as a response after harm, not as the pre-shift check. A later complaint is a reason to stop treatment and recheck the water, but it is not when the first test of the shift is done.",
+    "distractorExplanations": {
+      "a": "Hemolysis symptoms are a late sign of chloramine exposure, not the cue for the first test. Total chlorine is checked before the first treatments.",
+      "c": "A weekly culture day is not the chlorine schedule. Total chlorine is checked before the first treatments of the shift.",
+      "d": "A monthly city-meter reading does not protect the shift. The test is done on the treatment system before patients are connected."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-053",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A clamp and a blood-pressure cuff from the hepatitis B isolation station are about to be carried out to a chair on the main floor. No fresh blood is visible on them. Why must they stay in that room?",
+    "options": [
+      {
+        "id": "a",
+        "text": "They may leave if no blood is visible, because hepatitis B dies as soon as the surface looks clean."
+      },
+      {
+        "id": "b",
+        "text": "Hepatitis B and hepatitis C use the same room rule, so every shared item on the main floor must be quarantined the same way."
+      },
+      {
+        "id": "c",
+        "text": "Hepatitis B can remain infectious on a surface for at least 7 days."
+      },
+      {
+        "id": "d",
+        "text": "A clamp and cuff are safe to share once they have been wiped with a dry towel."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Hepatitis B virus can remain infectious on a clinic surface for at least 7 days. A clamp or blood-pressure cuff from the isolation station is not carried to the main floor, even when no blood is visible. Hepatitis C does not use this same separate-room rule.",
+    "distractorExplanations": {
+      "a": "A clean-looking surface can still carry hepatitis B. The virus can remain infectious for at least 7 days, so these items stay in the room.",
+      "b": "Hepatitis C does not use the hepatitis B separate-room rule. This hold is about hepatitis B contamination leaving the isolation station.",
+      "d": "A dry towel wipe does not clear hepatitis B from a shared clamp or cuff. Items from that station are not carried to the main floor."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-054",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "Gloves come off a patient contact with no blood visible on them. The technician, still gloved, reaches for the supply cart, then the machine keypad, then the next patient. What should have happened first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the gloves on, because gloves with no visible blood are clean enough for the cart, the keypad, and the next patient."
+      },
+      {
+        "id": "b",
+        "text": "Change gloves at the cart but skip hand cleaning when no blood was seen."
+      },
+      {
+        "id": "c",
+        "text": "Touch the machine keypad with the same gloves, then wash before the next patient."
+      },
+      {
+        "id": "d",
+        "text": "Remove the gloves and clean the hands before the cart, the machine, or the next patient."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Gloves are treated as contaminated after patient contact even when no blood is visible. Staff remove them and clean their hands before touching the machine, the supply cart, or the next patient. Clean-looking gloves still move organisms onto shared surfaces.",
+    "distractorExplanations": {
+      "a": "No visible blood does not make gloves clean. They come off, and hands are cleaned, before the cart, the machine, or the next patient.",
+      "b": "Changing gloves without cleaning the hands skips the step that matters. Hands are cleaned even when the gloves looked clean.",
+      "c": "The keypad is a shared machine surface. Gloves come off and hands are cleaned before it is touched, not after."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-water-infection-055",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "water-infection",
+    "prompt": "A reused dialyzer's fiber-bundle volume is above 80% of the original, so it passes that test. The header is cracked, and the patient name on the label cannot be read. Can it be used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes. A fiber-bundle volume above 80% of the original means the dialyzer is safe even with a cracked header and a label that cannot be read."
+      },
+      {
+        "id": "b",
+        "text": "Yes, if the crack is on the header and the fibers themselves look dry."
+      },
+      {
+        "id": "c",
+        "text": "No. Check the header and the label as well as the 80% volume result."
+      },
+      {
+        "id": "d",
+        "text": "No. Discard it for the volume result, and ignore the header and the label."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A fiber-bundle volume at or above 80% of the original meets that one reuse limit, but it is not the whole check. A cracked header can leak, and an unreadable label means the dialyzer's identity is unknown. Appearance and identity are checked along with the 80% volume rule, so this dialyzer is discarded.",
+    "distractorExplanations": {
+      "a": "Passing the 80% volume test does not excuse a cracked header or an unreadable label. Those failures still mean the dialyzer is discarded.",
+      "b": "A cracked header is not safe because the fibers look dry. The crack can leak, and the unreadable label fails the identity check.",
+      "d": "The volume result passed, since it is above 80% of the original. The dialyzer is discarded for the cracked header and the unreadable label."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
     "id": "ccht-dialysis-readiness-check-safety-docs-016",
     "examSlug": "ccht-dialysis-readiness-check",
     "topicId": "safety-docs",
@@ -3958,5 +6433,830 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go item; review + expansion 2026-10-14."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-031",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A machine alarm is silenced, and the technician walks away to set up another chair without finding the cause. What should the technician do instead?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay, find the cause, and correct it before leaving"
+      },
+      {
+        "id": "b",
+        "text": "Leave the alarm silenced and set up the next chair, since a quiet machine means the problem has already cleared"
+      },
+      {
+        "id": "c",
+        "text": "Turn the alarm volume off for the rest of the shift so the bay stays quiet"
+      },
+      {
+        "id": "d",
+        "text": "Clear the alarm screen and continue without looking for the cause"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Silence on a dialysis alarm is temporary. It stops the sound for a short time and does not fix the fault that set it off. The technician stays at the chair, finds the cause, and corrects it before walking away. An unattended machine with an unresolved alarm is not safe just because the sound is off.",
+    "distractorExplanations": {
+      "b": "A quiet machine is not a cleared fault. The mute expires, and the cause is still there if no one found it.",
+      "c": "Turning the volume off for the shift removes the warning instead of correcting the cause.",
+      "d": "Clearing the screen without a search leaves the fault in place and the station unattended."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-032",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "Both needles are still in the fistula when the patient stands and tries to leave the chair. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pull both needles at once so the patient can leave, even though they are pulling the arm away and will not hold still"
+      },
+      {
+        "id": "b",
+        "text": "Stay with the patient and call the nurse"
+      },
+      {
+        "id": "c",
+        "text": "Clamp the lines and let the patient walk out with the needles taped in"
+      },
+      {
+        "id": "d",
+        "text": "Have the patient sign a form, then pull the needles yourself while they struggle"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A patient leaving with both fistula needles still in can bleed heavily if a needle pulls free during a struggle. The technician stays with the patient and calls the nurse. Pulling the needles alone while the patient is fighting risks a torn access, a needle-stick, and bleeding with no one holding both sites.",
+    "distractorExplanations": {
+      "a": "Pulling both needles during a struggle can tear the access and leaves no one able to hold pressure safely.",
+      "c": "Walking out with needles still taped in the fistula can dislodge a needle and cause a hemorrhage.",
+      "d": "A signed form does not make it safe to pull needles alone while the patient is struggling. The nurse is called."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-033",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A coworker asks you to sign that you watched a medication being drawn up. You were at another station and did not see the syringe filled. What should you do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sign, because that coworker has drawn this medication many times before"
+      },
+      {
+        "id": "b",
+        "text": "Sign now so the treatment is not delayed, and plan to watch that coworker draw the next dose"
+      },
+      {
+        "id": "c",
+        "text": "Do not sign for a draw you did not see"
+      },
+      {
+        "id": "d",
+        "text": "Sign, and add a note that the nurse checked the syringe"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A witness signature means you personally saw that medication drawn up. Signing for a syringe you did not watch makes a false medication record and can hide an error in the drug or the amount. Decline, and let the coworker find someone who actually saw the draw.",
+    "distractorExplanations": {
+      "a": "Familiarity with the coworker does not replace seeing this draw. The signature says you watched it.",
+      "b": "Watching a later dose does not make this signature true. Signing now still attests to a draw you missed.",
+      "d": "Writing that the nurse checked the syringe, when you saw neither the draw nor a nurse check, is a false entry."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-034",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The prescription is 4 hours. The patient signs off and treatment stops at 3 hours. What time is entered in the treatment record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enter 4 hours, because the record should show the time the nephrologist ordered rather than the time the patient actually stayed"
+      },
+      {
+        "id": "b",
+        "text": "Enter 4 hours, and mention the early sign-off only in a side conversation with the nurse"
+      },
+      {
+        "id": "c",
+        "text": "Leave the time blank so the order and the sign-off are both omitted"
+      },
+      {
+        "id": "d",
+        "text": "Enter the 3 hours that were actually delivered"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Charted treatment time is the time actually delivered. This patient signed off and treatment stopped at 3 hours, so the record shows 3 hours. It does not show the prescribed 4 hours. Recording 4 hours would claim a treatment that was not given.",
+    "distractorExplanations": {
+      "a": "The ordered 4 hours is not the time delivered. Entering 4 hours after a 3-hour sign-off overstates the treatment.",
+      "b": "A side conversation does not fix the chart. The record itself has to show the 3 hours that were delivered, not 4.",
+      "c": "A blank time hides the session. The chart needs the 3 hours that were actually delivered."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-035",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "While priming one station, the technician finds a frayed power cord on that dialysis machine. What should be done with the machine?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Take that machine out of service and tag the cord"
+      },
+      {
+        "id": "b",
+        "text": "Wrap electrical tape around the frayed section and keep the machine in use for the rest of the shift"
+      },
+      {
+        "id": "c",
+        "text": "Plug the machine into a different outlet and finish priming"
+      },
+      {
+        "id": "d",
+        "text": "Keep using it if the copper wires are not yet showing"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A frayed power cord can spark, shock, or start a fire, especially where dialysate can spill. That machine is taken out of service and the cord is tagged so no one puts a patient on it. Tape does not repair the cord, and the machine stays out until the cord is replaced.",
+    "distractorExplanations": {
+      "b": "Tape covers the fray and leaves a damaged cord in service. The machine is tagged out until the cord is repaired.",
+      "c": "A different outlet does not fix a frayed cord. The hazard is the cord on that machine.",
+      "d": "A frayed jacket is already damage. Waiting until copper shows keeps an unsafe machine in use."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-036",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A patient's daughter phones the unit and asks the technician to read today's lab results. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Read the results after she states the patient's date of birth"
+      },
+      {
+        "id": "b",
+        "text": "Do not give the lab results over the phone"
+      },
+      {
+        "id": "c",
+        "text": "Read today's values because she is the emergency contact on the face sheet and already knows the patient is dialyzing here"
+      },
+      {
+        "id": "d",
+        "text": "Text the results to the mobile number she provides"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Today's lab results are protected health information. A phone call from a daughter, even one listed as the emergency contact, is not permission to disclose them. The technician does not read the results over the phone and takes a message so the nurse can follow the facility's release process.",
+    "distractorExplanations": {
+      "a": "Stating a date of birth shows the caller knows an identifier. It does not authorize reading today's labs over the phone.",
+      "c": "An emergency-contact listing, or knowing the patient is here, is not permission to disclose lab results by phone.",
+      "d": "Texting the results to a number the caller gives is still a disclosure of today's labs, sent to an unverified phone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-037",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "Blood from a disconnected venous line splashes into the technician's eye during rinseback. What is the right response?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe the eye with an alcohol pad and return to the chair"
+      },
+      {
+        "id": "b",
+        "text": "Finish the patient's rinseback first, then wash the eye at the hand sink if it still stings"
+      },
+      {
+        "id": "c",
+        "text": "Flush the eye at the eyewash and report the exposure"
+      },
+      {
+        "id": "d",
+        "text": "Skip the eyewash, because that station is reserved for chemical splashes"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Blood in the eye is a mucous-membrane exposure, and the eyewash is used to flush it. The technician flushes the eye and reports the exposure so evaluation can start. A blood splash is not turned away from the eyewash on the idea that the station is only for chemicals.",
+    "distractorExplanations": {
+      "a": "An alcohol pad does not flush blood out of the eye and can injure the cornea. The eye goes to the eyewash.",
+      "b": "Finishing rinseback before any flush leaves blood in the eye. Someone else can cover the patient while you flush and report.",
+      "d": "Reserving the eyewash for chemicals skips the right flush for a blood splash. Blood in the eye is flushed and reported."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-038",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient refuses the last hour of treatment and asks for the blood to be returned now. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the blood pump running while explaining why the last hour matters"
+      },
+      {
+        "id": "b",
+        "text": "Raise the ultrafiltration rate so the fluid goal is finished sooner, and tell the nurse after the patient is off"
+      },
+      {
+        "id": "c",
+        "text": "Slow the blood pump and finish the hour quietly so the refusal does not come up again"
+      },
+      {
+        "id": "d",
+        "text": "Tell the nurse and document the refusal"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Once the patient refuses the last hour, the treatment is not continued against that refusal. The technician does not keep the blood pump running or raise the ultrafiltration rate to chase the fluid goal. The nurse is told, the refusal is documented, and a licensed clinician discusses the risks.",
+    "distractorExplanations": {
+      "a": "Leaving the blood pump running while you explain keeps treatment going after the patient has refused the last hour.",
+      "b": "Raising the ultrafiltration rate continues treatment and changes the prescription after a refusal. The nurse is told when the patient refuses, not after the patient is off.",
+      "c": "Slowing the pump and finishing the hour overrides the refusal instead of stopping to tell the nurse and document it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-039",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "Unexplained bruises are visible on the patient's arms, and the patient goes quiet when the person who brought them steps close. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report it through the facility process, away from that person"
+      },
+      {
+        "id": "b",
+        "text": "Ask, in front of the person who brought them, who caused the bruises so the answer can be charted before they leave"
+      },
+      {
+        "id": "c",
+        "text": "Wait until the patient mentions the bruises on a later visit"
+      },
+      {
+        "id": "d",
+        "text": "Photograph the bruises on a personal phone and text the charge nurse"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Unexplained bruises plus a patient who goes quiet around the person who brought them are reported through the facility process, to the nurse or social worker, and not discussed in that person's hearing. Questioning the patient in front of them can silence the patient and can increase the risk. The technician reports; they do not investigate there.",
+    "distractorExplanations": {
+      "b": "Asking about the bruises in front of the person who brought the patient is the interview to avoid. The patient may not be able to speak safely.",
+      "c": "Waiting for a later visit leaves the concern unreported. The facility process is used when the bruises are noticed.",
+      "d": "A personal-phone photo is not the facility process and sends protected images outside the record."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-040",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "Cannulation is about to begin. The technician has not yet matched the patient, the access, and the dialysate prescription on the screen to the order. What is the correct step?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the needles now and compare the bath once the blood pump has been running"
+      },
+      {
+        "id": "b",
+        "text": "Match the patient, the access, and the screen to the order before the needles go in"
+      },
+      {
+        "id": "c",
+        "text": "Trust the chair card from the previous treatment, because the machine usually keeps the same dialysate prescription unless someone changed it overnight"
+      },
+      {
+        "id": "d",
+        "text": "Confirm the name, then cannulate without opening the bath screen"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Before the needles go in, the technician matches the patient, the access, and the dialysate prescription on the screen to the current order. That pre-start check is what stops the wrong bath or the wrong access from being used. Finding a mismatch after blood has been running is too late for this step.",
+    "distractorExplanations": {
+      "a": "Comparing the bath after the blood pump is running means the wrong dialysate may already be in use. The match comes before cannulation.",
+      "c": "Yesterday's chair card is not today's order. The screen is matched to the current prescription before the needles go in.",
+      "d": "A name check does not confirm the access or the bath. Those are matched to the order before cannulation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-041",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The sharps container at the station is filled past the marked fill line, and another pair of fistula needles is ready to discard. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Push the needles down with a gloved hand until the lid will close"
+      },
+      {
+        "id": "b",
+        "text": "Shake the container and force one more pair inside"
+      },
+      {
+        "id": "c",
+        "text": "Replace the container before adding those needles"
+      },
+      {
+        "id": "d",
+        "text": "Carry the uncapped needles in a kidney basin to a container farther down the row, holding the basin against the gown"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A sharps container past the marked fill line is full. Forcing more fistula needles in, especially by pushing with a hand, causes needle-sticks. The technician replaces that container and discards the needles in one that is not past the line.",
+    "distractorExplanations": {
+      "a": "Pushing needles down by hand puts the hand on exposed sharps. A container past the fill line is replaced, not packed tighter.",
+      "b": "Shaking the container and forcing another pair past the fill line is how staff get stuck. The container comes out of use.",
+      "d": "Carrying uncapped needles away in a basin, even to another container, risks a stick on the way. Replace the full container at the station."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-042",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "During treatment the patient begins to seize, and the nurse is not at the chair. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the chair and look for the nurse in the medication room"
+      },
+      {
+        "id": "b",
+        "text": "Place a padded tongue blade between the teeth"
+      },
+      {
+        "id": "c",
+        "text": "Hold the arms and legs down against the chair so the fistula needles cannot move until the shaking stops completely"
+      },
+      {
+        "id": "d",
+        "text": "Stay with the patient and call for help"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "During a seizure the technician stays with the patient, protects them from injury, keeps the access in view, and calls for help. Leaving the chair to look for a nurse leaves a seizing patient alone with needles in place. Nothing is forced into the mouth, and the limbs are not held down.",
+    "distractorExplanations": {
+      "a": "Leaving to search the medication room leaves the patient alone during the seizure. Call for help and stay at the chair.",
+      "b": "Forcing a tongue blade into the mouth can break teeth and block the airway. It is not part of seizure care.",
+      "c": "Holding the limbs down can injure the patient. Protect them and the access, and call for help without restraining them."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-043",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient cannot stand, and the dialysis chair has to be exchanged for a wheelchair. What is the safe way to make that move?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use two people, or a lift, for the transfer"
+      },
+      {
+        "id": "b",
+        "text": "Drag the patient alone from the dialysis chair across to the wheelchair, using a gait belt as a handle"
+      },
+      {
+        "id": "c",
+        "text": "Lock both brakes and stand-pivot the patient from one chair to the other alone"
+      },
+      {
+        "id": "d",
+        "text": "Ask the patient to scoot to the edge and slide down into the wheelchair while you guide the hips"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A patient who cannot stand is moved by two people or a lift so no one person carries the full weight. Dragging them, pivoting them alone, or having them scoot and slide down can cause a fall, a skin tear, or a staff injury. The technician gets that help before the chairs are exchanged.",
+    "distractorExplanations": {
+      "b": "Dragging a patient who cannot stand, even with a gait belt used as a handle, is a one-person move that can drop the patient.",
+      "c": "A one-person stand-pivot puts a patient who cannot stand onto their own feet. The move needs two people or a lift so the weight is shared.",
+      "d": "Asking a patient who cannot stand to scoot forward and slide down can drop them between the chairs. Two people or a lift are used for this move."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-044",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A reused dialyzer is labeled with a name and birth date that do not match the patient in the chair. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Connect it if the fiber-bundle volume test has already passed"
+      },
+      {
+        "id": "b",
+        "text": "Do not connect a dialyzer whose label does not match"
+      },
+      {
+        "id": "c",
+        "text": "Connect it when the first name matches and the birth date is off by one digit, then correct the label after the treatment ends"
+      },
+      {
+        "id": "d",
+        "text": "Relabel it with this patient's name and birth date, then connect it"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The reuse label has to match this patient's name and birth date before the dialyzer is connected. A mismatch can mean another patient's dialyzer. The technician does not connect it. A passed fiber-bundle volume test checks the fiber volume, not whose name is on the label.",
+    "distractorExplanations": {
+      "a": "A passed fiber-bundle volume test says nothing about identity. A name and birth-date mismatch means the dialyzer is not connected.",
+      "c": "A birth date that is off by one digit is still the wrong patient. The label is not fixed after the dialyzer has been used.",
+      "d": "Writing this patient's name on someone else's dialyzer assigns the wrong dialyzer and hides the mismatch."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-045",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient says, \"Do not tell anyone I asked to stop early,\" and asks you to chart a full treatment. What do you chart?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chart the full prescribed time, because the patient asked you to"
+      },
+      {
+        "id": "b",
+        "text": "Chart a full treatment in the official record and keep the early stop in a private note that never enters the chart"
+      },
+      {
+        "id": "c",
+        "text": "Chart the early stop that actually happened"
+      },
+      {
+        "id": "d",
+        "text": "Leave the treatment time blank so the request stays off the record"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The chart shows what happened. The patient asked to stop early, so the early stop is what is recorded, and the nurse is told. A full-treatment entry, written because the patient asked that the request be kept quiet, would be a false record.",
+    "distractorExplanations": {
+      "a": "Charting the full prescribed time because the patient asked hides the early stop and makes the treatment record false.",
+      "b": "A private note does not rescue a full-treatment entry. The official chart would still claim time that was not delivered.",
+      "d": "Leaving the time blank conceals the early stop. The record has to show the treatment that actually happened."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-046",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "After the hand crank has returned the blood, power is back and both pumps are able to run. What has to happen before treatment is restarted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn the blood pump and the dialysate pump back on"
+      },
+      {
+        "id": "b",
+        "text": "Restart as soon as the blood is back in the patient"
+      },
+      {
+        "id": "c",
+        "text": "Ask if the patient feels well and, if they nod, start both pumps without another look at the bath"
+      },
+      {
+        "id": "d",
+        "text": "The nurse checks the patient and the bath first"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The hand crank returned the blood. It did not decide that treatment can start again. Before the pumps are turned back on, the nurse checks the patient and the bath is verified. Restarting because power is back can send dialysate that has not been confirmed safe.",
+    "distractorExplanations": {
+      "a": "Turning both pumps on as soon as they can run skips the nurse's check of the patient and the bath.",
+      "b": "Blood back in the patient means the circuit was cleared. It does not mean the bath is ready for a restart.",
+      "c": "A nod from the patient does not confirm the bath and does not replace the nurse's check before treatment restarts."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-047",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A puddle of saline is on the floor beside a machine, and no one has walked through it yet. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mop the puddle and mark the wet floor"
+      },
+      {
+        "id": "b",
+        "text": "Leave it until the shift ends, since the patients are seated"
+      },
+      {
+        "id": "c",
+        "text": "Drop a towel over the puddle and keep working around it"
+      },
+      {
+        "id": "d",
+        "text": "Tell the next person who comes that way to step wide, and leave the saline until housekeeping makes rounds"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The saline is mopped and the wet floor is marked before anyone walks through it. Patients getting out of a chair are unsteady, and saline is slippery. Cleaning and marking the floor is how the spill is handled while it is still only a puddle.",
+    "distractorExplanations": {
+      "b": "Leaving the puddle because patients are seated ignores everyone who will walk past that machine during the shift.",
+      "c": "A towel hides the saline and can slide. The floor is mopped and marked, not covered.",
+      "d": "A verbal warning does not remove the puddle. The saline is cleaned up and the wet floor is marked."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-048",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient takes a blood-pressure pill from a shirt pocket and asks the technician to hand it over to swallow. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hand over the pill, because the patient takes it at home for blood pressure"
+      },
+      {
+        "id": "b",
+        "text": "Do not give the pill; call the nurse"
+      },
+      {
+        "id": "c",
+        "text": "Give the pill now, then mention it to the nurse at the next vital-sign round so the timing can be written down"
+      },
+      {
+        "id": "d",
+        "text": "Tell the patient to swallow it before the nurse gets back to the chair"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A pill from the patient's pocket, including a blood-pressure pill, is still a medication. The technician does not give it on their own decision. The nurse is called so a licensed clinician can decide whether that pill should be taken during this treatment.",
+    "distractorExplanations": {
+      "a": "Taking the pill at home does not authorize the technician to hand it over during treatment. The nurse decides.",
+      "c": "Giving the pill first and telling the nurse later still means the technician gave a medication without direction.",
+      "d": "Having the patient swallow it before the nurse arrives hides the pill from the person who should decide."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-049",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A machine still shows a blood-leak alarm that has not been cleared, and the next patient is ready to sit down. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Seat the next patient and clear the alarm after the lines are connected"
+      },
+      {
+        "id": "b",
+        "text": "Override the alarm if the spent dialysate looks clear"
+      },
+      {
+        "id": "c",
+        "text": "Do not assign this machine until that alarm is cleared"
+      },
+      {
+        "id": "d",
+        "text": "Rinse the dialysate path with saline, silence the alarm, and assign the station so the shift stays on schedule"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An uncleared blood-leak alarm means the machine has not been released. A true leak can leave the detector path contaminated, and a false alarm still has to be resolved before anyone else is seated. That machine is not assigned to the next patient until the alarm is cleared.",
+    "distractorExplanations": {
+      "a": "Connecting the next patient on an uncleared blood-leak alarm puts them on a machine that has not been cleared.",
+      "b": "Dialysate that looks clear does not clear the alarm. The alarm is resolved before the machine is assigned.",
+      "d": "A saline rinse and the silence button do not clear a blood-leak alarm. The station stays unassigned until it is resolved."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-050",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient hands the technician a written grievance and asks where it should be filed. What should the technician say?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Say that filing the form will not change anything about the care"
+      },
+      {
+        "id": "b",
+        "text": "Offer to rewrite the grievance in milder words before it is turned in"
+      },
+      {
+        "id": "c",
+        "text": "Suggest waiting a few treatments, until the patient feels less upset, and then deciding whether the grievance is still worth filing"
+      },
+      {
+        "id": "d",
+        "text": "Direct the patient to the facility grievance process"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A written grievance belongs to the facility's grievance process. The technician tells the patient how to file it there and does not discourage the filing. Saying that a complaint will not change anything interferes with the patient's right to use that process.",
+    "distractorExplanations": {
+      "a": "Telling the patient the grievance will not change care discourages a filing the facility process is there to receive.",
+      "b": "Rewriting the grievance in milder words changes what the patient wrote. The form goes in as the patient prepared it.",
+      "c": "Asking the patient to wait and reconsider discourages the filing. The process is available when they hand the form over."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-051",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The patient looks short of breath and points at the wall oxygen. The nurse has not given any direction. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Call the nurse, and start oxygen only on the nurse's direction"
+      },
+      {
+        "id": "b",
+        "text": "Turn the wall oxygen on at a high flow because the patient looks short of breath, then return to the other station without reporting it"
+      },
+      {
+        "id": "c",
+        "text": "Watch for a few minutes to see if the breathing eases before telling anyone"
+      },
+      {
+        "id": "d",
+        "text": "Start the oxygen and chart it as if the nurse had already ordered it"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Oxygen is started on the nurse's direction. The technician calls the nurse about the shortness of breath and does not turn on a high flow and walk away. Starting oxygen without direction, then leaving it unreported, means no one has assessed the patient or set the flow.",
+    "distractorExplanations": {
+      "b": "A high flow started because the patient looks short of breath, then left unreported, is oxygen without the nurse's direction.",
+      "c": "Waiting to see if the breathing eases delays the report. Shortness of breath is called to the nurse.",
+      "d": "Charting a nurse order that was never given falsifies the record. Oxygen starts when the nurse directs it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-052",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A coworker wants the original post-weight rubbed out so the chart shows one tidy number. How is that correction written?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Erase the original post-weight and write the new number with no trace of the first entry"
+      },
+      {
+        "id": "b",
+        "text": "Write an addendum that still shows the old entry"
+      },
+      {
+        "id": "c",
+        "text": "Replace the page with a fresh copy that contains only the corrected post-weight and no sign that another figure was there"
+      },
+      {
+        "id": "d",
+        "text": "Cover the first number with correction fluid and write the new one on top"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A correction is written as an addendum that leaves the original post-weight readable and adds the corrected value, with who made the change and when. Rubbing out the first number and writing a new one with no trace hides what was originally entered and makes the record look altered.",
+    "distractorExplanations": {
+      "a": "Erasing the original post-weight leaves no trace of the first entry. The addendum has to keep that old entry visible.",
+      "c": "A fresh page that drops the first figure destroys the original entry instead of correcting it with an addendum.",
+      "d": "Correction fluid covers the original post-weight. The old entry has to remain readable in the addendum."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-053",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "The air detector alarms again and again during the same treatment. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Turn the air detector off for the rest of the treatment"
+      },
+      {
+        "id": "b",
+        "text": "Silence each alarm and keep the blood pump running without looking for air"
+      },
+      {
+        "id": "c",
+        "text": "Find the cause of the repeated air alarms"
+      },
+      {
+        "id": "d",
+        "text": "Drop the blood-flow rate until the beeping stops, and leave the detector muted so the treatment can finish on time"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Repeated air-detector alarms mean air is entering the circuit or the sensor cannot be trusted. The technician finds that cause and corrects it. Turning the detector off for the rest of the treatment removes the clamp that is there to stop air from reaching the patient.",
+    "distractorExplanations": {
+      "a": "Turning the air detector off for the rest of the treatment removes air protection instead of finding why it keeps alarming.",
+      "b": "Silencing each alarm and leaving the pump running does not look for the air leak or the sensor fault.",
+      "d": "Lowering the blood flow and muting the detector hides the alarm. It does not find where the air is coming from."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-054",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A patient's name and Kt/V are written on a whiteboard that visitors walking through the unit can read. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the board up if the last name is shortened"
+      },
+      {
+        "id": "b",
+        "text": "Leave it, because an adequacy number is not a diagnosis"
+      },
+      {
+        "id": "c",
+        "text": "Move that same board into the waiting room so staff can still see the results when they walk families back to the chairs"
+      },
+      {
+        "id": "d",
+        "text": "Take the name and the Kt/V off the board"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A name written next to a Kt/V is a patient's adequacy result. On a whiteboard visitors can read, that is a public posting of health information. The technician takes the name and the Kt/V down. Adequacy results are not left where people outside the care team can read them.",
+    "distractorExplanations": {
+      "a": "A shortened last name can still identify the patient in a small unit. The name and the Kt/V come off the board.",
+      "b": "An adequacy result is health information even though it is not labeled as a diagnosis. It is not posted for visitors.",
+      "c": "The waiting room is more public than the treatment floor. Moving the board shows the name and Kt/V to more visitors."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
+  },
+  {
+    "id": "ccht-dialysis-readiness-check-safety-docs-055",
+    "examSlug": "ccht-dialysis-readiness-check",
+    "topicId": "safety-docs",
+    "prompt": "A sharp smell rises where bleach and acid concentrate have spilled together on the floor. What should the technician do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Wipe the spill up with bare hands and paper towels"
+      },
+      {
+        "id": "b",
+        "text": "Mop it as a routine floor spill and let people back into the area"
+      },
+      {
+        "id": "c",
+        "text": "Stay at the station until the sharp smell fades, then mop the floor and bring patients back"
+      },
+      {
+        "id": "d",
+        "text": "Keep people away and report the hazardous smell"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Bleach mixed with acid concentrate releases chlorine gas, which injures the lungs and the eyes. A sharp smell at that spill means people leave the area and the release is reported. Wiping it by hand, mopping it as a routine spill, or waiting in the room for the smell to pass keeps people in the gas.",
+    "distractorExplanations": {
+      "a": "Wiping a bleach-and-acid spill with bare hands exposes skin and lungs to the chlorine gas that mixture releases.",
+      "b": "Mopping it as a routine floor spill keeps people in a chlorine-gas release. The response is to keep them away and report it.",
+      "c": "Staying at the station while a bleach-and-acid smell fades means breathing chlorine gas. People leave the area and the release is reported."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go CCHT dialysis bank, expanded 2026-11-16."
   }
 ]

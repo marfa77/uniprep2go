@@ -24,6 +24,8 @@ type BodyResource = {
   certifier: string;
   verifyAtUrl: string;
   sources?: OfficialResourceLink[];
+  /** Replaces the generic “weights and timing follow the outline” line. */
+  trustLine?: string;
 };
 
 /** National / multi-state exam bodies — matched via includes() on examBody. */
@@ -587,6 +589,22 @@ const BODY_RESOURCES: Array<{ match: RegExp | string; resource: BodyResource }> 
 
 /** Slug-specific official pages when the body map is too generic. */
 const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
+  "ccht-dialysis-readiness-check": {
+    certifier: "Nephrology Nursing Certification Commission (NNCC)",
+    verifyAtUrl: "https://www.nncc-exam.org/certification/ccht",
+    trustLine:
+      "NNCC’s CCHT exam is 150 questions in 3 hours, with a standard score of 95. This check is 60 questions in 75 minutes from a 220-question bank, scored at a 70% readiness target, with equal topic groups. Confirm the handbook on nncc-exam.org.",
+    sources: [
+      {
+        label: "NNCC CCHT certification page",
+        url: "https://www.nncc-exam.org/certification/ccht",
+      },
+      {
+        label: "CCHT preparation guide (PDF)",
+        url: "https://www.nncc-exam.org/sites/default/files/prepguide/cchtPrepGuide.pdf",
+      },
+    ],
+  },
   "sie-full-mock": {
     certifier: "FINRA",
     verifyAtUrl:
@@ -1195,9 +1213,11 @@ export function getMockOfficialResources(config: MockExamConfig): MockOfficialRe
       : []),
   ]).slice(0, 5);
 
-  const trustLine = verifyAtUrl
-    ? `Topic weights and timing follow published ${certifier} outlines. Verify fees and scheduling on the official site — UniPrep2Go questions are independent study aids.`
-    : `Topic weights and timing follow published ${certifier} outlines and candidate handbooks. UniPrep2Go questions are independent study aids — not official exam material.`;
+  const trustLine =
+    slugHit?.trustLine ??
+    (verifyAtUrl
+      ? `Topic weights and timing follow published ${certifier} outlines. Verify fees and scheduling on the official site — UniPrep2Go questions are independent study aids.`
+      : `Topic weights and timing follow published ${certifier} outlines and candidate handbooks. UniPrep2Go questions are independent study aids — not official exam material.`);
 
   return {
     certifier,

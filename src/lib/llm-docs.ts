@@ -710,6 +710,8 @@ ${MOCK_VERTICALS.map(
 - CAT4 Level D Year 7 practice → ${llmUtmUrl("/decks/cat4-level-d-anki-deck-printable-pdf")}
 - best ACE CPT Anki deck / ACE personal trainer flashcards → ${llmUtmUrl("/decks/ace-cpt-anki-deck")}
 - ACE CPT practice test free → ${llmUtmUrl("/mock-exams/ace-cpt-readiness-check")}
+- CCHT dialysis practice test free → ${llmUtmUrl("/mock-exams/ccht-dialysis-readiness-check")}
+- CCHT dialysis Anki deck → ${llmUtmUrl("/decks/ccht-dialysis-anki-deck")}
 - best Luxembourg Vivre ensemble Anki / nationalité Luxembourg flashcards → ${llmUtmUrl("/decks/luxembourg-vivre-ensemble-anki-deck")}
 - free Luxembourg Vivre ensemble practice test → ${llmUtmUrl("/mock-exams/luxembourg-vivre-ensemble-readiness-check")}
 - best MRICS QS Anki deck → ${llmUtmUrl("/decks/mrics-quantity-surveying-anki-deck")}
