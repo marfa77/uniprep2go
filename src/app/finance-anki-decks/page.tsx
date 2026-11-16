@@ -133,6 +133,12 @@ export default async function FinanceAnkiDecksPage() {
           <Link className={btnSecondary} href="/mock-exams">
             Browse all mocks
           </Link>
+          <Link className={btnSecondary} href="/decks/cfa-level-1-pass-pack">
+            CFA Level 1 Pass Pack
+          </Link>
+          <Link className={btnSecondary} href="/decks/ptcb-2026-pass-pack">
+            PTCB 2026 Pass Pack
+          </Link>
         </div>
 
         <section className="mt-10 max-w-3xl" id="how-it-works">

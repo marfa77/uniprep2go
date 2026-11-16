@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getDeckBySlug } from "./decks";
+import { getCatalogDeckBySlug, getDeckBySlug } from "./decks";
 import {
   buildDeckSeoDescription,
   buildDeckSeoHeadline,
@@ -8,6 +8,19 @@ import {
 } from "./deck-seo";
 
 describe("deck SEO magnets", () => {
+  it("prefixes deck meta description with catalog list price when title omits dollar", () => {
+    const deck = getCatalogDeckBySlug("nebosh-anki-deck");
+    expect(deck).toBeDefined();
+    const description = buildDeckSeoDescription(deck!);
+    expect(description.slice(0, 24)).toMatch(/\$\d/);
+  });
+
+  it("does not duplicate 2026 in PTCB pass pack SEO title", () => {
+    const deck = getCatalogDeckBySlug("ptcb-2026-pass-pack");
+    expect(deck).toBeDefined();
+    expect(buildDeckSeoTitle(deck!)).not.toMatch(/2026 PTCB 2026/);
+  });
+
   it("pairs the FRM deck with the free mock in title and headline", () => {
     const deck = getDeckBySlug("frm-part-1-anki-deck");
     expect(deck).toBeDefined();

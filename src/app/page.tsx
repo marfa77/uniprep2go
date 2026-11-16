@@ -9,7 +9,8 @@ import {
   buildSiteAiDescription,
 } from "@/lib/exam-llm-layer";
 import { withAiMetadata } from "@/lib/llm-meta";
-import { homeMetadata, shouldIndexMockExam } from "@/lib/seo";
+import { getHomeCatalogCounts } from "@/lib/catalog-stats";
+import { buildHomeMetadata, shouldIndexMockExam } from "@/lib/seo";
 import { getPricedDecks, getPricedDecksByCategory } from "@/lib/checkout-pricing";
 import { siteFaqs } from "@/lib/decks";
 import { buildCatalogItemListJsonLd, buildSiteOrganizationJsonLd } from "@/lib/product-jsonld";
@@ -91,7 +92,7 @@ const featuredMockSlugs = [
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
-  return withAiMetadata(homeMetadata(), {
+  return withAiMetadata(buildHomeMetadata(getHomeCatalogCounts()), {
     aiDescription: buildSiteAiDescription(),
     aiCategory: buildSiteAiCategory(),
     path: "/",
@@ -278,6 +279,17 @@ export default async function HomePage() {
             <p className="mt-6 text-sm text-muted">
               <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/mock-exams">
                 All practice tests
+              </Link>
+              {" · "}
+              <Link
+                className="font-medium text-navy underline-offset-4 hover:underline"
+                href="/mock-exams/cfa-level-1-readiness-check"
+              >
+                CFA Level 1 practice test
+              </Link>
+              {" · "}
+              <Link className="font-medium text-navy underline-offset-4 hover:underline" href="/finance-anki-decks">
+                Finance mocks hub
               </Link>
             </p>
           </div>

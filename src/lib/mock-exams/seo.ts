@@ -17,6 +17,8 @@ import {
 import { withMockAccessDisclosure } from "./mock-access-faq";
 import { withCatalogProductPrices } from "../catalog-price";
 import { getDeckBySlug } from "../decks";
+import { headTermFaqForSchema } from "./head-term-program";
+import { questionCountFaqForSchema } from "./mock-question-count-aeo";
 import { fitSeoTitle, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
 
@@ -1607,6 +1609,30 @@ const MOCK_TITLE_FROZEN = new Set([
   "series-63-readiness-check",
 ]);
 
+/** 2026-11-05 freeze: do not rewrite title/H1/meta templates for these slugs. */
+const MOCK_META_DESCRIPTION_FROZEN = new Set([
+  "life-in-the-uk-readiness-check",
+  "unarmed-security-officer-readiness-check",
+]);
+
+function mockSnippetLead(config: MockExamConfig): string {
+  const profile = getMockSeoProfile(config);
+  const exam = profile.practiceTestLabel.replace(/\s+practice test$/i, "").trim();
+  return `Free ${exam} practice test 2026: 25 questions free, no signup`;
+}
+
+function ensureMockMetaLead(config: MockExamConfig, description: string): string {
+  const lead = mockSnippetLead(config);
+  const head = description.slice(0, 120).toLowerCase();
+  if (head.includes("practice test") && head.includes("25") && head.includes("no signup")) {
+    return description;
+  }
+  if (description.toLowerCase().startsWith(lead.slice(0, 30).toLowerCase())) {
+    return description;
+  }
+  return `${lead}. ${description}`;
+}
+
 /** Drops a half-cut trailing " | " segment instead of leaving "| 60" or "(80" in the SERP title. */
 function fitMockTitle(title: string) {
   const trimmed = title.trim();
@@ -1652,7 +1678,11 @@ export function buildMockSeoTitle(config: MockExamConfig) {
 }
 
 export function buildMockSeoDescription(config: MockExamConfig) {
-  return getMockSeoProfile(config).description;
+  const raw = getMockSeoProfile(config).description;
+  const body = MOCK_META_DESCRIPTION_FROZEN.has(config.slug)
+    ? raw
+    : ensureMockMetaLead(config, raw);
+  return body;
 }
 
 export function buildMockSeoKeywords(config: MockExamConfig) {
@@ -1725,8 +1755,12 @@ export function buildMockExamFaqs(config: MockExamConfig) {
   const bankNote = config.questionSourceNote
     ? config.questionSourceNote
     : "Questions are original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.";
+  const headTermFaq = headTermFaqForSchema(config);
+  const qCountFaq = questionCountFaqForSchema(config);
 
   const faqs = [
+    ...(headTermFaq ? [headTermFaq] : []),
+    ...(qCountFaq ? [qCountFaq] : []),
     ...buildMockSearchFaqs(config),
     {
       question: `Where can I take a ${profile.practiceTestLabel} online?`,

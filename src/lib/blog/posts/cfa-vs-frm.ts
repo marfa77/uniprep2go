@@ -24,6 +24,10 @@ export const cfaVsFrmPost: BlogPostDraft = {
       "Not sure where your quantitative gaps are? The free start on either exam is 25 questions. Then drill weak topics in the matching Anki deck before you commit $1,000+ to registration.",
     extraLinks: [
       {
+        href: "/mock-exams/cfa-level-1-readiness-check",
+        label: "CFA Level 1 practice test — free 25 questions, no signup",
+      },
+      {
         href: "/decks/cfa-level-1-pass-pack",
         label: "CFA L1 Pass Pack — Anki + formula PDF ($29)",
       },

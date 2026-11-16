@@ -8,6 +8,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { getCatalogDeckBySlug } from "@/lib/decks";
 import { getMocksByVertical } from "@/lib/mock-exams/hub-clusters";
+import { shouldIndexMockExam } from "@/lib/seo";
 import { getMockOfficialResources, type MockOfficialResources } from "@/lib/mock-exams/official-resources";
 import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import type { MockExamConfig } from "@/lib/mock-exams/types";
@@ -147,8 +148,9 @@ export function MockOfficialResourcesPanel({
 
 export function MockRelatedExamsSection({ config }: { config: MockExamConfig }) {
   const siblings = getMocksByVertical(config.verticalId)
-    .filter((mock) => mock.slug !== config.slug)
+    .filter((mock) => mock.slug !== config.slug && shouldIndexMockExam(mock.slug))
     .slice(0, 6);
+  if (siblings.length < 3) return null;
   if (siblings.length === 0) return null;
 
   const vertical = getVerticalDefinition(config.verticalId);

@@ -8,8 +8,10 @@ import {
 } from "./mock-exams/hub-clusters";
 import { isMockExamRunnable } from "./mock-exams/question-bank";
 import {
+  buildHomeMetadata,
   deckRobots,
   finalize,
+  fitMetaDescription,
   geoMarkdownHeaders,
   INDEXABLE_STATE_RE_SLUGS,
   mockExamRobots,
@@ -18,9 +20,31 @@ import {
   shouldIndexMockExam,
   truncateSeoTitle,
 } from "./seo";
+import { getHomeCatalogCounts } from "./catalog-stats";
 import { absoluteUrl } from "./site";
 
 describe("seo utilities (Barakhlo patterns)", () => {
+  it("ends truncated meta descriptions on a sentence boundary when possible", () => {
+    const fitted = fitMetaDescription(
+      "Alpha bravo charlie delta. Echo foxtrot golf hotel india juliet.",
+      40,
+    );
+    expect(fitted.length).toBeLessThanOrEqual(40);
+    expect(fitted.endsWith(".")).toBe(true);
+    expect(fitted).toBe("Alpha bravo charlie delta.");
+  });
+
+  it("builds homepage metadata from live catalog counts without CFA title cannibalization", () => {
+    const counts = getHomeCatalogCounts();
+    const meta = buildHomeMetadata(counts);
+    const title =
+      typeof meta.title === "object" && meta.title && "absolute" in meta.title
+        ? meta.title.absolute
+        : String(meta.title);
+    expect(title).toContain(String(counts.indexedMockCount));
+    expect(title.toLowerCase()).not.toContain("cfa level 1 practice test");
+  });
+
   it("truncates long titles for Ahrefs-safe length without ellipsis", () => {
     const long =
       "Free MRICS Quantity Surveying APC Readiness Check Practice Test Online";
