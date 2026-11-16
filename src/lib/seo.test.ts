@@ -18,6 +18,7 @@ import {
   mockExamSitemapPriority,
   shouldIndexDeck,
   shouldIndexMockExam,
+  fitSeoTitle,
   truncateSeoTitle,
 } from "./seo";
 import { getHomeCatalogCounts } from "./catalog-stats";
@@ -51,6 +52,29 @@ describe("seo utilities (Barakhlo patterns)", () => {
     const truncated = truncateSeoTitle(long);
     expect(truncated.length).toBeLessThanOrEqual(57);
     expect(truncated.endsWith("…")).toBe(false);
+  });
+
+  it("never ends a cut title on a connector, a half phrase, or an open parenthesis", () => {
+    expect(fitSeoTitle("CDL HazMat Endorsement: State-by-State Fingerprinting & Background Check Guide", 60)).toBe(
+      "CDL HazMat Endorsement: State-by-State Fingerprinting",
+    );
+    expect(fitSeoTitle("Canada Citizenship Test 2026: 20 Questions, $653 & How to Pass", 60)).toBe(
+      "Canada Citizenship Test 2026: 20 Questions, $653",
+    );
+    expect(fitSeoTitle("CDCP vs DCDC: Data Center Certification Comparison & First Step", 60)).toBe(
+      "CDCP vs DCDC: Data Center Certification Comparison",
+    );
+    expect(fitSeoTitle("France Naturalization 2026: Civic Exam + B2 Language Test Guide", 60)).toBe(
+      "France Naturalization 2026: Civic Exam + B2 Language Test",
+    );
+    expect(fitSeoTitle("CA Real Estate Salesperson Anki | 250 DRE Cards + Free Mock Test", 57)).toBe(
+      "CA Real Estate Salesperson Anki | 250 DRE Cards",
+    );
+    const paren = fitSeoTitle(
+      "$19 one-time — Series 7 flashcards for FINRA Top-Off: 300 Anki cards (suitability, products, options, order flow) plus more",
+      100,
+    );
+    expect(paren.split("(").length).toBe(paren.split(")").length);
   });
 
   it("enriches Open Graph with absolute URLs and site defaults", () => {

@@ -5,9 +5,25 @@ import {
   buildDeckSeoHeadline,
   buildDeckSeoTitle,
   buildDeckSearchFaqs,
+  buildDeckSeoMetaDescription,
 } from "./deck-seo";
 
 describe("deck SEO magnets", () => {
+  it("keeps acronyms and proper nouns cased in the default deck meta", () => {
+    const pack = buildDeckSeoMetaDescription(getDeckBySlug("cfa-level-1-pass-pack")!);
+    expect(pack).toContain("$29 one-time");
+    expect(pack).toContain("Anki");
+    expect(pack).toContain("CFA Level 1");
+    expect(pack).not.toMatch(/\b(anki|pdf|cfa level)\b/);
+    const ptcb = buildDeckSeoMetaDescription(getDeckBySlug("ptcb-2026-pass-pack")!);
+    expect(ptcb).toContain("$24 one-time");
+    expect(ptcb).toContain("PTCE");
+    expect(ptcb).toContain("DSCSA");
+    const uscis = buildDeckSeoMetaDescription(getDeckBySlug("us-citizenship-anki-deck")!);
+    expect(uscis).toContain("USCIS");
+    expect(uscis).not.toContain(". .apkg");
+  });
+
   it("prefixes deck meta description with catalog list price when title omits dollar", () => {
     const deck = getCatalogDeckBySlug("nebosh-anki-deck");
     expect(deck).toBeDefined();

@@ -1,8 +1,39 @@
 import { describe, expect, it } from "vitest";
 import { getMockExamConfig } from "./configs";
 import { buildMockExamFaqs, buildMockSeoDescription, buildMockSeoTitle } from "./seo";
+import { fitMetaDescription } from "../seo";
 
 describe("mock exam SEO", () => {
+  it("keeps exam specifics after the snippet lead instead of repeating the lead", () => {
+    for (const slug of [
+      "frm-part-1-readiness-check",
+      "ptcb-pharmacy-technician-mock",
+      "gre-readiness-check",
+      "california-real-estate-readiness-check",
+      "mrics-readiness-check",
+      "epa-608-readiness-check",
+    ]) {
+      const config = getMockExamConfig(slug)!;
+      const meta = fitMetaDescription(buildMockSeoDescription(config));
+      expect(meta.length).toBeLessThanOrEqual(155);
+      expect(meta.toLowerCase().split("no signup").length - 1).toBeLessThanOrEqual(1);
+      expect(meta).not.toMatch(/practice (questions|exam) practice test/i);
+      expect(meta.length).toBeGreaterThan(95);
+    }
+  });
+
+  it("leaves the CFA pair and the 5 Nov frozen mocks untouched", () => {
+    for (const slug of [
+      "cfa-level-1-readiness-check",
+      "cfa-level-2-readiness-check",
+      "life-in-the-uk-readiness-check",
+      "unarmed-security-officer-readiness-check",
+    ]) {
+      const meta = buildMockSeoDescription(getMockExamConfig(slug)!);
+      expect(meta).not.toMatch(/^Free .* practice test 2026: 25 questions free, no signup\. /);
+    }
+  });
+
   it("targets practice-test keywords for priority mocks", () => {
     const servSafe = getMockExamConfig("servsafe-manager-mock");
     const sie = getMockExamConfig("sie-full-mock");
