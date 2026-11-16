@@ -504,21 +504,27 @@ export default async function DeckPage({
                       className={
                         deck.format === "PDF"
                           ? "flex max-h-[700px] items-start justify-center overflow-hidden bg-[#f6efe8] p-3 sm:p-5"
-                          : "flex items-center justify-center bg-[#f6efe8] px-3 pt-3 sm:px-4 sm:pt-4"
+                          : "bg-[#f6efe8] p-3 sm:p-4"
                       }
                     >
-                      <Image
-                        alt={deck.format === "PDF" ? `PDF preview: ${card.question}` : `Sample Anki card: ${card.question}`}
-                        className={
-                          deck.format === "PDF"
-                            ? "h-auto w-full rounded-2xl"
-                            : "h-auto max-h-36 w-auto max-w-full rounded-xl object-contain sm:max-h-40"
-                        }
-                        height={deck.format === "PDF" ? 1780 : 550}
-                        sizes={deck.format === "PDF" ? "(max-width: 1024px) 100vw, 896px" : "(max-width: 640px) 70vw, 220px"}
-                        src={card.imageUrl}
-                        width={deck.format === "PDF" ? 2200 : 976}
-                      />
+                      {deck.format === "PDF" ? (
+                        <Image
+                          alt={`PDF preview: ${card.question}`}
+                          className="h-auto w-full rounded-2xl"
+                          height={1780}
+                          sizes="(max-width: 1024px) 100vw, 896px"
+                          src={card.imageUrl}
+                          width={2200}
+                        />
+                      ) : (
+                        <img
+                          alt={`Sample Anki card: ${card.question}`}
+                          className="mx-auto h-auto w-full rounded-xl"
+                          decoding="async"
+                          loading="lazy"
+                          src={card.imageUrl}
+                        />
+                      )}
                     </div>
                   ) : (
                     <div className="flex min-h-48 items-center justify-center bg-gradient-to-br from-[#f4dccf] via-[#fff8f0] to-[#f6efe8] px-6 py-10 text-center">

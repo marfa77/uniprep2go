@@ -708,10 +708,10 @@ const TABLES: Record<string, PracticeOptionsCompared> = {
       {
         name: "UniPrep2Go LEED Green Associate practice test",
         href: "/mock-exams/leed-green-associate-readiness-check",
-        format: "25 free, no signup; full timed mock 60 questions / 75 minutes from a 120-item bank",
+        format: "25 free, no signup; full timed mock 60 questions / 75 minutes from a 210-item bank",
         access: "Free start; Mock Pass for retakes",
         notes:
-          "Independent diagnostic. The 70% readiness target is ours, not 170 out of 200. The linked deck is the separate 120-card product.",
+          "Independent diagnostic. The 70% readiness target is ours, not 170 out of 200. The linked deck is the separate 210-card product.",
       },
       {
         name: "Projectific — free LEED Green Associate questions",

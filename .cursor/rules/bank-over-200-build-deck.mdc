@@ -1,0 +1,28 @@
+---
+description: A unique mock bank above 200 questions always ships with its Anki deck in the same pass
+alwaysApply: true
+---
+
+# Bank above 200 → build the Anki deck
+
+User, 2026-11-16: if the unique bank is **more than 200** questions, always build the linked Anki deck in the same pass. A planned deck, a waitlist page, or “cascade later” is not done.
+
+200 itself does not trigger this. 201 and above does.
+
+## Same pass
+
+1. Finish the bank (gates, separate review, ops) first. Then build the deck from that bank.
+2. Advertised card count = unique content cards. Sync spec `cardCount`, Gumroad name, site copy, and `llms` to that count.
+3. Build the `.apkg` in the canonical vault `/Users/pavelveselov/Projects/Anki Generator`. Wave: `wave_deck_pipeline`. Building: `building_deck_pipeline`. Authored CSV: rewrite or extend the CSV, keep note GUIDs on 1:1 replacements, then rebuild.
+4. Real samples from the shipped file: `refresh:sold-samples` → `render:sample-shots` → review the PNGs → `--write --publish`. Gumroad gets the description and the 3 screenshots. Classic product page.
+5. The mock page must stop saying the deck is a waitlist. Price stays the current list price for that slug.
+6. Ledger row names both slugs, then `npm run sku:status`.
+
+A deck that already exists is rebuilt to the new count. Do not leave the old card count in the title, spec, or Gumroad name.
+
+## Stay put
+
+- Session length, time, and pass target stay. Do not stretch the session because the bank grew.
+- Do not invent official exam length, time, or pass score.
+- Commit and `git push origin main` only when the user says to ship.
+- Civic and language decks are still not rebuilt for an ordinary mock wording fix. They are rebuilt when this rule applies: the unique bank those cards come from is above 200.

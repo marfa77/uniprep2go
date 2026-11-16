@@ -6,11 +6,10 @@ Current per-SKU status + last-work date: `sku-status.md` (`npm run sku:status`).
 
 ## In progress
 
-None.
-
 ## Done
 
 | Date | Mock slug | Deck slug | Gates | Content review | Cascade | Notes |
+| 2026-11-16 | `leed-green-associate-readiness-check` | `leed-green-associate-anki-deck` | audit 0 FAIL · 210 · keys 53/52/52/53 · triage clean · certification gate | Separate reviewers. Old keys kept. Location and sites passed. Integrative 037, energy 035/036/038, and materials 032/033/036/040/041/044 rewritten. | `LEED_Green_Associate_FULL_210.apkg` on Gumroad. 3 samples from that file. Classic page, $9.99. `llms:export` | Session stays 60 / 75 / 70%. Official exam stays 100 questions, 2 hours, scaled 170 of 200. |
 | 2026-11-16 | `ccht-dialysis-readiness-check` | `ccht-dialysis-anki-deck` | audit 0 FAIL · 220 · keys 55/55/55/55 · triage clean · wave gate READY | Separate reviewers. Old keys kept. 14 items rewritten. | `Ccht_Dialysis_FULL_220.apkg` on Gumroad. 3 samples from that file. Classic page, $9.99. `llms:export` | Session stays 60 / 75 / 70%. NNCC page opened 2026-11-16: 150 questions, 3 hours, standard score 95. The preparation guide says about 25 of the 150 are unscored. Deck groups are equal, not the blueprint. |
 | 2026-11-15 | `belgium-flanders-mo-readiness-check` | `belgium-flanders-mo-anki-deck` | catalog $19 · Gumroad 1900 cents | — | Price $9.99 → $19 on the deck page, mock cite, and landing. Bank unchanged. `llms:export` | Session stays 60 / 45. Official standaardtest stays 41 / 120. Other civic decks stay $9.99. Luxembourg stays $16. |
 | 2026-11-15 | `belgium-flanders-mo-readiness-check` | `belgium-flanders-mo-anki-deck` | audit 0 FAIL · 220 · keys 55/55/55/55 · triage clean | Separate reviewers. Old keys and old Anki fronts kept. | Authored CSV 165→220, apkg rebuilt. Samples stay the existing three cards. `llms:export` | Session stays 60 / 45. Official standaardtest stays 41 digital MCQ / 120 minutes. Turnout note: compulsory for federal, Flemish and European elections; not for Flemish municipal and provincial elections since 2024. Price at this ship was $9.99; raised to $19 the same day. |

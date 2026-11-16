@@ -67,7 +67,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "mrics-anki-deck":
     "$11 / 250+ cross-pathway MRICS APC cards + 50Q timed mock (free 25-question version) — ownable .apkg vs Brainscape packs. Official APC is interview + written evidence, not MCQ.",
   "leed-green-associate-anki-deck":
-    "$11 / 120 LEED GA cards (LEED v5) + 60Q timed mock (free 25-question version) — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
+    "$9.99 / 210 LEED GA cards (LEED v5) + 60Q timed mock (free 25-question version) — ownable .apkg vs free 100–700Q lead-gen banks. Official GA is 100Q / 2h / scaled 170.",
   "pmp-anki-deck":
     "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
   "parapro-anki-deck":
@@ -200,7 +200,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "mrics-anki-deck":
     "Cross-pathway MRICS APC cards for mandatory competencies, ethics/Rules of Conduct, Level 2/3 application, and interview structure — paired with the 50-question APC readiness check (free 25-question version). Ownable $11 .apkg; official route remains written submission + 60-minute interview (not MCQ). QS NRM/JCT depth lives on the separate MRICS QS deck.",
   "leed-green-associate-anki-deck":
-    "LEED GA domain cards: integrative process, location/transportation, sites & water, energy & atmosphere, materials & IEQ — same bank themes as the 60-question timed check (free 25-question version). Ownable $11 .apkg; official GBCI form is 100Q / 2 hours / scaled 170. Not USGBC material.",
+    "LEED GA domain cards: integrative process, location/transportation, sites & water, energy & atmosphere, materials & IEQ — same bank themes as the 60-question timed check (free 25-question version). Ownable $9.99 / 210-card .apkg; official GBCI form is 100Q / 2 hours / scaled 170. Not USGBC material.",
   "pmp-anki-deck":
     "346+ ECO-aligned cards across People (33%), Process (41%), and Business Environment (26%) for the 2026 PMP outline — paired with the free domain-weighted readiness check. Ownable $11 .apkg vs AnkiWeb dumps; official sitting is 180Q / 240 minutes. Not PMI material.",
   "parapro-anki-deck":
@@ -430,13 +430,13 @@ export const positioningOverrides: Partial<
   },
   "leed-green-associate-anki-deck": {
     ourEdge: [
-      "120 LEED v5 GA domain cards from the same bank as the 60Q mock (free 25-question version)",
+      "210 LEED v5 GA domain cards from the same bank as the 60Q mock (free 25-question version)",
       "Official honesty: GBCI form is 100Q / 2h / scaled 170 — our mock is a shorter diagnostic",
-      "Ownable $11 .apkg — not a free 100–700Q lead-gen bank",
+      "Ownable $9.99 .apkg — not a free 100–700Q lead-gen bank",
       "Independent prep — not USGBC/GBCI exam material",
     ],
     summaryProse:
-      "Free LEED GA Q-banks (Archiroots, CareerEmployer, Projectific) chase volume. UniPrep wins when you want a timed 60-question diagnostic (free 25-question version) plus an ownable $11 Anki .apkg mapped to the same domains — then sit the real 100Q / 2h / 170 exam.",
+      "Free LEED GA Q-banks (Archiroots, CareerEmployer, Projectific) chase volume. UniPrep wins when you want a timed 60-question diagnostic (free 25-question version) plus an ownable $9.99 Anki .apkg mapped to the same domains — then sit the real 100Q / 2h / 170 exam.",
   },
   "pmp-anki-deck": {
     ourEdge: [
@@ -2042,7 +2042,7 @@ RICS APC registration, pathway guides, written submissions, or the final intervi
 
   "leed-green-associate-anki-deck": `### What is inside
 
-120 LEED Green Associate (v5) cards across integrative process, location & transportation, sustainable sites & water, energy & atmosphere, and materials/IEQ — the same domain bank as the free timed readiness check. Built for spaced recall of credit intents and high-yield GA terminology, not a 700-question lead-gen dump.
+210 LEED Green Associate (v5) cards across integrative process, location & transportation, sustainable sites & water, energy & atmosphere, and materials/IEQ — the same domain bank as the free timed readiness check. Built for spaced recall of credit intents and high-yield GA terminology, not a 700-question lead-gen dump.
 
 ### Plan with the free LEED GA mock
 

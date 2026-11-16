@@ -4090,21 +4090,21 @@ const rawDecks: Deck[] = [
     ],
     sampleCards: [
       {
-        question: "A mixed-use project team wants its development to strengthen the surrounding neighborhood economy, one of the aims of equitable development in LEED. Which action best supports that aim?",
+        question: "A hospital board has already approved an energy retrofit and asks what LEED certification would add for the people inside the building. Which benefit best answers the board?",
         answer:
-          "Correct: (a) Prioritizing local hiring, locally owned ground-floor tenants, and nearby suppliers Supporting the local economy means the project's spending and activity stay in the community: hiring local workers, leasing to local businesses, and buying from nearby suppliers. This keeps economic benefits close to existing residents and complements walkable, mixed-use street life.",
+          "Correct: (a) Healthier indoor air, daylight and comfort that support occupant wellbeing and recovery Beyond cost savings, LEED's indoor environmental quality and quality-of-life focus delivers benefits for occupants: better ventilation, low-emitting materials, daylight and thermal comfort. For a hospital, those health and wellbeing outcomes are the added benefit the board is asking about, separate from the energy savings already approved.",
         imageUrl: "/samples/leed-green-associate-anki-deck-sample-1.webp",
-      },
-      {
-        question: "A developer is choosing between publishing its own green building checklist and pursuing LEED certification. Which benefit does LEED offer that a self-declared checklist cannot?",
-        answer:
-          "Correct: (b) Independent third-party review confirming the project met published LEED requirements LEED's market value rests on verification: GBCI reviews project documentation against published requirements, so owners, tenants and investors can trust the claim. A self-written checklist has no independent reviewer, which is why it carries less credibility in leasing, financing and public disclosure.",
-        imageUrl: "/samples/leed-green-associate-anki-deck-sample-2.webp",
       },
       {
         question: "Early in design, a team wants to cut the size and cost of the HVAC plant for a new office building. Which sequence of decisions follows the load-reduction approach that LEED encourages?",
         answer:
           "Correct: (a) Improve envelope and reduce internal loads first, then size efficient equipment, then add renewables Loads come first: a better envelope, shading, and lower lighting and plug loads shrink heating and cooling demand, so the mechanical plant can be smaller and cheaper. Efficient equipment then serves the reduced load, and renewable energy or green power covers what remains, so less capacity has to be bought.",
+        imageUrl: "/samples/leed-green-associate-anki-deck-sample-2.webp",
+      },
+      {
+        question: "A building owner wants to reduce occupants' and custodians' exposure to harmful chemicals during routine cleaning. Which approach reflects a green cleaning program?",
+        answer:
+          "Correct: (d) Using third-party certified cleaning products, efficient equipment, and staff training Green cleaning combines a written policy, cleaning products certified by third parties such as Green Seal or UL ECOLOGO, efficient equipment such as HEPA-filtered vacuums, controlled dilution systems, and custodian training. Together these reduce chemical exposure for both occupants and cleaning staff while maintaining hygiene.",
         imageUrl: "/samples/leed-green-associate-anki-deck-sample-3.webp",
       },
     ],

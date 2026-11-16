@@ -57,7 +57,7 @@ WARN: absolute-word giveaways > 10% · short definition stems > 20% · NOT/EXCEP
 |---|---|
 | **Wave / building** (apkg built from the bank) | Rebuild the apkg in the canonical vault (`wave_deck_pipeline` / `building_deck_pipeline --deck-slug {slug}`) → `node scripts/replace-gumroad-apkg-files.mjs --slug {slug}` → `npm run check:gumroad-sample-cdn` → sync card count in `decks.ts` / specs if it changed |
 | **Authored CSV** (FINRA SIE/7/63, CFA, FRM, PTCB, ServSafe: `internal_deck_generator/*/*_authored.csv`) | apkg does not change with the bank, but the deck is part of the same audit. Read every card; if it is below standard (label fronts like "Topic: X?", backs under ~120 chars, near-duplicate pairs, no example/mistake, domain mix off the official outline), **rewrite the CSV in the same pass** — never just flag it in the ledger. Keep old note GUIDs via a `Note GUID` column for 1:1 rewrites, rebuild the apkg, replace the Gumroad file, re-render samples, fix site/Gumroad copy that no longer matches the deck. Only skip when the user explicitly says so |
-| **Civic / language** | Never rebuilt from a mock fix |
+| **Civic / language** | Never rebuilt from an ordinary mock wording fix. A unique bank **above 200** still gets its Anki deck in the same pass (`bank-over-200-build-deck.mdc`) |
 
 Always: refresh samples (section 5) · `npm run llms:export` · focused tests · Gumroad description or landing re-publish if samples or facts changed. Commit/push only on user OK; mock pages pick up ops within 1 h (ISR).
 
