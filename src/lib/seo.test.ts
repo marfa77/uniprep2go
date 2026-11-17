@@ -46,6 +46,16 @@ describe("seo utilities (Barakhlo patterns)", () => {
     expect(title.toLowerCase()).not.toContain("cfa level 1 practice test");
   });
 
+  it("homepage meta description deck count matches priced catalog (excludes Prep2Go app guides)", () => {
+    const counts = getHomeCatalogCounts();
+    const meta = buildHomeMetadata(counts);
+    const deckPhrase = `${counts.availableDeckCount} Anki decks and PDFs on UniPrep2Go.`;
+    expect(meta.description).toContain(deckPhrase);
+    expect(meta.openGraph?.description).toContain(deckPhrase);
+    expect(meta.twitter?.description).toContain(deckPhrase);
+    expect(meta.description).not.toContain("111 Anki");
+  });
+
   it("truncates long titles for Ahrefs-safe length without ellipsis", () => {
     const long =
       "Free MRICS Quantity Surveying APC Readiness Check Practice Test Online";

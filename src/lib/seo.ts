@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { getHomeCatalogCounts } from "./catalog-stats";
 import type { Deck } from "./decks";
 import { getMockExamConfig } from "./mock-exams/configs";
 import {
@@ -318,5 +319,5 @@ export function buildHomeMetadata(counts: HomeCatalogCounts): Metadata {
 
 /** @deprecated Use buildHomeMetadata with live catalog counts. */
 export function homeMetadata(): Metadata {
-  return buildHomeMetadata({ indexedMockCount: 150, availableDeckCount: 111 });
+  return buildHomeMetadata(getHomeCatalogCounts());
 }
