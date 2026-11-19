@@ -41,6 +41,8 @@ export type BlogPost = {
   titleTag: string;
   metaDescription: string;
   publishedAt: string;
+  /** Visible + sitemap lastmod when content is refreshed without a new publish date */
+  contentUpdated?: string;
   eyebrow: string;
   intro: string;
   /** Content cluster id for related guides (e.g. "servsafe", "epa-608") */

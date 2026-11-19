@@ -123,7 +123,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
 const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "sie-full-mock": {
     // CTR pattern: Prep2Go (exam + concrete need + year) + PixID (specific offer in blue link)
-    title: "SIE Practice Test Free 2026 | 25Q Free, 75Q Timed",
+    title: "SIE Practice Test Free 2027 | 25Q Free, 75Q Timed",
     description:
       "SIE practice test online — free 25-question diagnostic, no signup; full mock: 75 timed questions, 105 minutes, 70% pass target, instant pass/no-pass report and full answer review. FINRA-topic-weighted. Then repair weak domains with the $9.99 / 300-card SIE Anki deck. Independent — not official FINRA material.",
     keywords: [
@@ -137,7 +137,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "SIE Practice Test — 75 Questions, Timed (Free 25-Question Version)",
     intro:
-      "A 75-question FINRA SIE diagnostic modeled on the scored portion of the official exam (the official SIE is 80 items — 75 scored + 5 unscored pretest — in 105 minutes). This mock runs 75 questions in 105 minutes with a UniPrep2Go readiness target of 70% (the official FINRA passing score is 70 on an equated scale, not a raw percentage), with weighted topic diagnosis across capital markets, products and risks, trading and accounts, and regulatory framework. No signup — your first mock is free, start when you are ready. If 105 minutes is too long for a first pass, use the 25-question SIE quick diagnostic first. After the report, drill weak topics in the linked $9.99 / 300-card Anki deck.",
+      "An SIE practice test on UniPrep2Go runs **75 timed questions in 105 minutes** (25-question free diagnostic available first) across FINRA’s four sections: knowledge of capital markets, products and risks, trading/customer accounts, and regulatory framework. FINRA’s official SIE is **80 items (75 scored + 5 pretest) in 105 minutes** with passing score **70 on an equated scale** (finra.org, checked 19 Nov 2026). Start with the [25-question SIE quick diagnostic](/mock-exams/sie-quick-diagnostic) if you need a shorter first pass, then drill the [$9.99 SIE Anki deck](/decks/sie-exam-anki-deck) and graduate to [Series 7](/mock-exams/series-7-readiness-check) after firm sponsorship.",
+    examFaqs: [
+      {
+        question: "Is the FINRA SIE practice test free?",
+        answer:
+          "Your first timed attempt is free (25-question diagnostic or full 75-question session depending on entry). Unlimited full mocks are $19 Mock Pass.",
+      },
+      {
+        question: "What is the SIE passing score?",
+        answer:
+          "FINRA lists a passing score of 70 on an equated scale for the 75 scored questions. This mock uses a 70% UniPrep readiness target for diagnosis only.",
+      },
+      {
+        question: "SIE vs Series 7 — which practice test first?",
+        answer:
+          "Pass the SIE first unless your firm instructs otherwise, then use Series 7 Top-Off prep. Both mocks live on UniPrep2Go.",
+      },
+    ],
     audience:
       "SIE candidates, finance students, and career changers entering brokerage and securities roles who need a timed baseline before paying for a prep course.",
     practiceTestLabel: "FINRA SIE practice test",
@@ -226,7 +243,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
   },
   "series-7-readiness-check": {
-    title: "Series 7 Practice Test 2026 | 60Q Timed, 25Q Free",
+    title: "Series 7 Practice Test Free 2027 | 60Q, 25Q Free",
     description:
       "Series 7 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions across FINRA job-function weights, 90 minutes, 72% UniPrep2Go readiness target, topic scoring — then repair with Series 7 flashcards ($19 / 300-card Anki). Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395; this check is shorter. Independent — not FINRA material.",
     keywords: [
@@ -239,7 +256,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Series 7 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed Series 7 Top-Off diagnostic across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions — then drill weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck) ($19 / 300 cards). Official FINRA Series 7 is 130 questions (125 scored + 5 pretest) / 3 hours 45 minutes / passing score 72 / FINRA fee $395; this free check is a shorter weighted diagnostic, not a full-length 125Q bank.",
+      "A Series 7 practice test starts with 25 FINRA-style questions free, no signup, then 60 timed questions across seeking business, opening accounts, recommendations and suitability, and obtaining customer instructions. Official FINRA Series 7 Top-Off is 130 questions (125 scored + 5 pretest) in 3 hours 45 minutes with passing score 72 (verify on finra.org). Repair weak job functions with [Series 7 flashcards](/decks/series-7-anki-deck), then stack [Series 63](/mock-exams/series-63-readiness-check) for state law or [SIE](/mock-exams/sie-full-mock) if you have not passed it yet.",
+    examFaqs: [
+      {
+        question: "Is there a free Series 7 practice test?",
+        answer:
+          "Yes. Start with 25 questions free, no signup, on this page. The full timed mock is 60 questions in 90 minutes with topic scoring; unlimited full mocks are $19 Mock Pass.",
+      },
+      {
+        question: "How many questions are on the real Series 7 exam?",
+        answer:
+          "FINRA lists the Series 7 Top-Off as 130 multiple-choice questions (125 scored + 5 pretest) in 3 hours 45 minutes. Passing score is 72 — confirm on FINRA before you schedule.",
+      },
+      {
+        question: "Do I need SIE before Series 7?",
+        answer:
+          "Most candidates pass the SIE first, then sit the Series 7 Top-Off with firm sponsorship. Use the [SIE practice test](/mock-exams/sie-full-mock) if SIE topics are still weak.",
+      },
+    ],
     audience: "Series 7 Top-Off candidates who want a timed diagnostic before drilling suitability and product questions.",
     practiceTestLabel: "Series 7 practice test",
   },
@@ -314,7 +348,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "New York real estate practice test",
   },
   "series-65-readiness-check": {
-    title: "Free Series 65 Practice Test | 120-Question Diagnostic",
+    title: "Series 65 Practice Test Free 2027 | 25Q + 120Q",
     description:
       "Series 65 practice test: free 25-question diagnostic, full mock 120 timed questions drawn from a 240-item bank, 120 minutes, topic scoring for NASAA IAR themes. Official Series 65 is 130 scored (+10 pretest) / 180 min / 92 correct — this mock is shorter. Independent — not NASAA/FINRA material.",
     keywords: [
@@ -326,10 +360,62 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free Series 65 Practice Test",
     intro:
-      "A NASAA Series 65 diagnostic across economics/analysis, investment products, client recommendations, and laws & ethics. Official exam requires 92 of 130 scored questions in 180 minutes; this 120-question timed mock (free 25-question version) draws from a 240-item bank so a retake is not the same paper.",
+      "A Series 65 practice test begins with **25 questions free, no signup**, then up to **120 timed questions in 120 minutes** across economics, products, recommendations, and laws & ethics (drawn from a 240-item bank). NASAA’s official exam is **130 scored questions (plus pretest) in 180 minutes — candidates need 92 correct on the scored portion** (verify on nasaa.org). Repair gaps in the [Series 65 Anki deck](/decks/series-65-anki-deck); if you still need broker-dealer registration, compare [Series 63](/mock-exams/series-63-readiness-check).",
     audience:
       "Investment adviser representative candidates preparing for the NASAA Series 65 who want a free timed baseline before a full-length Q-bank.",
     practiceTestLabel: "Series 65 practice test",
+    examFaqs: [
+      {
+        question: "What score do I need on Series 65?",
+        answer:
+          "NASAA historically requires 92 correct answers on the 130 scored questions. Confirm the current form on NASAA before exam day.",
+      },
+      {
+        question: "Is there a free Series 65 practice test?",
+        answer:
+          "Yes — 25 questions free on this page, then optional 120-question timed mocks with topic scoring.",
+      },
+      {
+        question: "Series 65 vs CFP — which exam first?",
+        answer:
+          "Series 65 licenses IAR registration; CFP is a separate comprehensive planning exam after education/experience. Use [CFP practice](/mock-exams/cfp-certification-readiness-check) only if CFP is your target.",
+      },
+    ],
+  },
+  "cfp-certification-readiness-check": {
+    title: "CFP Exam Practice Test Free 2027 | 25Q Free, 120Q",
+    description:
+      "CFP exam practice test: 25 questions free, then 120 timed questions in 120 minutes across planning, tax, retirement, investments, and ethics. Verify official format on cfp.net. Not CFP Board material.",
+    keywords: [
+      "cfp exam practice test",
+      "cfp practice test free",
+      "certified financial planner practice exam",
+      "cfp board exam prep",
+      "cfp mock exam",
+    ],
+    headline: "CFP Certification Practice Test — 120 Questions (Free 25-Question Version)",
+    intro:
+      "A CFP exam practice test here means **25 scenario-style questions free, no signup**, then **120 timed questions in 120 minutes** spanning Principal Knowledge Topics (planning process, investments, tax, retirement, estate, insurance, ethics), drawn from a 240-item bank. CFP Board administers the comprehensive CFP Certification Examination after education, experience, and ethics requirements — **confirm the current item count, time limit, and registration fees on cfp.net** before you book (checked 19 Nov 2026; this page does not list CFP exam fees because they vary by window). Stack [Series 65](/mock-exams/series-65-readiness-check) if you still need IAR registration, or [Series 7](/mock-exams/series-7-readiness-check) for broker-dealer roles.",
+    audience:
+      "Financial planning candidates finishing CFP Board-registered education who want a timed MCQ baseline before the full certification exam.",
+    practiceTestLabel: "CFP Certification practice test",
+    examFaqs: [
+      {
+        question: "Is there a free CFP practice test?",
+        answer:
+          "Yes — start with 25 questions free on this page. Full 120-question timed mocks unlock via Mock Pass ($19 unlimited).",
+      },
+      {
+        question: "What does the CFP exam cover?",
+        answer:
+          "CFP Board tests integrated financial planning across investments, tax, retirement, estate, risk management, and ethics. Use the live Principal Knowledge Topic outline on cfp.net for weights.",
+      },
+      {
+        question: "CFP exam vs Series 65 — do I need both?",
+        answer:
+          "Many planners hold both, but they serve different gates (comprehensive certification vs NASAA IAR registration). Run the mock that matches your next scheduled exam.",
+      },
+    ],
   },
   "life-and-health-insurance-readiness-check": {
     title: "Life & Health Insurance Practice Test | 60Q, 25Q Free",
@@ -350,9 +436,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Life & Health insurance practice test",
   },
   "frm-part-1-readiness-check": {
-    title: "FRM Part 1 Practice Questions — 25Q Free, 50Q Mock 2026",
+    title: "FRM Part 1 Practice Test Free 2027 | 25Q + 50Q",
     description:
-      "FRM Level 1 mock test and FRM Part 1 mock test: free 25 questions, no signup. The full timed mock is 50 questions, 120 minutes, across all 4 GARP topics. Then $19 for unlimited full attempts.",
+      "FRM Part 1 practice test: free 25 questions, no signup; full mock 50 questions in 120 minutes across GARP’s four topics. Official Part 1 is 100 MCQs in 4 hours (garp.org). Then $19 Mock Pass.",
     keywords: [
       "frm level 1 mock test",
       "frm part 1 mock test",
@@ -365,9 +451,33 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "FRM Part 1 Practice Questions — 25 Free, 50Q Full Mock",
     intro:
-      "FRM Level 1 mock test (GARP names the exam Part 1): a timed diagnostic sampled across foundations of risk, quant, financial markets and products, and valuation and risk models — with weighted topic feedback, then spaced repair in the linked $9.99 / 444-card Anki deck.",
+      "An FRM Part 1 practice test on this page answers “how ready am I before GARP?” with 25 questions free, no signup, then 50 timed questions across foundations, quant, markets/products, and valuation/risk models. GARP’s official Part 1 is **100 equally weighted multiple-choice questions in 4 hours**; GARP does not publish a fixed percent pass (verify at garp.org/frm/program-exams, checked 19 Nov 2026). Repair weak topics in the [$9.99 FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck), compare pathways in [CFA vs FRM](/blog/cfa-level-1-vs-frm-part-1-which-to-choose), or cross-train [CFA Level 1](/mock-exams/cfa-level-1-readiness-check) ethics and quant if you are deciding between exams.",
+    officialFormat:
+      "Official (GARP, verify at garp.org): 100 MCQ / 4 hours / four topics at 20%–30% weights. UniPrep: 25Q free diagnostic, 50Q / 120 min / 70% readiness target.",
     audience: "FRM Part 1 candidates who want a timed baseline before committing to a full mock provider.",
     practiceTestLabel: "FRM Part 1 practice test",
+    examFaqs: [
+      {
+        question: "How many questions are on FRM Part 1?",
+        answer:
+          "GARP administers 100 equally weighted multiple-choice questions in 4 hours. This UniPrep2Go mock is a 50-question diagnostic (25-question free start) — not a full 100-question sitting.",
+      },
+      {
+        question: "What is the FRM Part 1 pass rate or passing score?",
+        answer:
+          "GARP does not publish a fixed passing percentage; it sets the cutoff after each exam cycle. Treat official results from GARP as the only pass/fail source.",
+      },
+      {
+        question: "Is there a free FRM Part 1 practice test?",
+        answer:
+          "Yes — start with 25 questions free on this page, then optionally unlock the 50-question timed mock via Mock Pass ($19 unlimited full mocks).",
+      },
+      {
+        question: "FRM Part 1 vs CFA Level 1 — which mock first?",
+        answer:
+          "If you are undecided, read the [CFA vs FRM guide](/blog/cfa-level-1-vs-frm-part-1-which-to-choose) and run whichever timed diagnostic matches your registered exam.",
+      },
+    ],
   },
   "nbrc-tmc-readiness-check": {
     title: "Free NBRC TMC Practice Test 2026 | 60Q + 2027 RT Exam",
@@ -387,7 +497,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NBRC TMC practice test",
   },
   "series-63-readiness-check": {
-    title: "Series 63 Practice Test 2026 | 60Q NASAA, 25Q Free",
+    title: "Series 63 Practice Test Free 2027 | 60Q, 25Q Free",
     description:
       "Series 63 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions on NASAA state law topics, 90 minutes, 72% target, topic readiness scoring — then fix weak law rows before the state sit. Independent — not official NASAA material.",
     keywords: [
@@ -401,9 +511,26 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Series 63 Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A Series 63 practice test built from UniPrep2Go deck content across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. Timed NASAA-topic diagnostic with a readiness report — free 25-question diagnostic, no signup — then repair only your weak law rows.",
+      "A Series 63 practice test starts with **25 NASAA state-law questions free, no signup**, then 60 timed questions in 90 minutes across broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics. NASAA’s official Series 63 is **60 scored questions (plus pretest items) in 75 minutes with passing score 72** — confirm on nasaa.org before you schedule (checked 19 Nov 2026). Drill weak Uniform Securities Act rows in the [Series 63 Anki deck](/decks/series-63-anki-deck) after [Series 7](/mock-exams/series-7-readiness-check) suitability prep.",
     audience: "Series 63 candidates who need a timed diagnostic after SIE and Series 7 prep.",
     practiceTestLabel: "Series 63 practice test",
+    examFaqs: [
+      {
+        question: "Is the Series 63 exam free to practice here?",
+        answer:
+          "Your first diagnostic is 25 questions free, no signup. Full 60-question timed mocks require Mock Pass ($19 unlimited).",
+      },
+      {
+        question: "How many questions are on the Series 63?",
+        answer:
+          "NASAA lists 60 scored multiple-choice questions in 75 minutes. Passing score is 72 — verify with NASAA for your exam form.",
+      },
+      {
+        question: "Series 63 vs Series 65 — which practice test?",
+        answer:
+          "Series 63 is for broker-dealer agents after SIE/7; Series 65 is for investment adviser representatives. Use [Series 65](/mock-exams/series-65-readiness-check) if you are on the IAR path.",
+      },
+    ],
   },
   "property-casualty-insurance-readiness-check": {
     title: "Free Property & Casualty Insurance Practice Test | 60 Questions",
@@ -1028,9 +1155,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "LEED AP O+M practice test",
   },
   "well-ap-readiness-check": {
-    title: "Free WELL AP Practice Test 2026 | 50 Timed Questions + Topic Report",
+    title: "WELL AP Practice Test Free 2027 | 25Q + 50Q Mock",
     description:
-      "WELL AP practice: free 25-question diagnostic, full mock 50 timed questions / 100 minutes / 70% diagnostic — then repair with the $9.99 / 250-card WELL AP Anki deck. Official GBCI/IWBI exam is 115 items / 2.5h / scaled 170. Independent — not IWBI material.",
+      "WELL AP practice test: 25 questions free, then 50 timed questions / 100 minutes with topic scores. Official exam: 115 MCQ (100 scored) in 2h30, pass 170 scaled (IWBI/GBCI). Not IWBI material.",
     keywords: [
       "well ap practice test",
       "well ap free mock exam",
@@ -1045,10 +1172,34 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free WELL Accredited Professional (WELL AP) Readiness Check",
     intro:
-      "A timed WELL AP readiness diagnostic across WELL v2 knowledge domains — then drill weak concept groups in the linked $9.99 / 250-card Anki deck. Official exam (verify on IWBI): 115 questions (100 scored + 15 unscored), 2.5 hours, scaled pass 170 on a 125–200 scale, Prometric delivery by GBCI for IWBI — with embedded scenario/reference PDFs.",
+      "A WELL AP practice test starts here with **25 questions free, no signup**, then 50 timed questions across WELL v2 concept domains (Air, Water, Nourishment, Light, Movement, and the rest of the IWBI knowledge areas). GBCI delivers the official exam for IWBI: **115 multiple-choice questions (100 scored + 15 unscored), 2 hours 30 minutes, scaled pass 170 on a 125–200 scale** — verify the current handbook at support.wellcertified.com (checked 19 Nov 2026). Drill misses in the [$9.99 WELL AP Anki deck](/decks/well-ap-anki-deck), cross-train [LEED Green Associate](/mock-exams/leed-green-associate-readiness-check) if you are stacking green-building credentials, or open the [building certification mock hub](/mock-exams/v/building).",
+    officialFormat:
+      "Official (IWBI/GBCI): 115 MCQ / 2h30 / scaled pass 170. UniPrep: 25Q free, 50Q / 100 min / 70% diagnostic.",
     audience:
       "Architects, designers, building operators, HR/wellness professionals, and sustainability consultants preparing for the WELL Accredited Professional credential.",
     practiceTestLabel: "WELL AP practice test",
+    examFaqs: [
+      {
+        question: "How many questions are on the WELL AP exam?",
+        answer:
+          "IWBI’s overview lists 115 multiple-choice questions (100 scored + 15 unscored pilot) in 2 hours 30 minutes with a scaled passing score of 170.",
+      },
+      {
+        question: "Is there a free WELL AP practice test?",
+        answer:
+          "Yes — 25 questions free on this page, with a 50-question timed mock available after your first diagnostic (Mock Pass $19 for unlimited full mocks).",
+      },
+      {
+        question: "WELL AP vs LEED — which practice test first?",
+        answer:
+          "LEED Green Associate is the usual first green-building credential; WELL AP stresses human health in buildings. Try [LEED Green Associate](/mock-exams/leed-green-associate-readiness-check) or WELL based on the job description you are targeting.",
+      },
+      {
+        question: "Does this mock include IWBI reference PDFs?",
+        answer:
+          "No. The live exam embeds scenario PDFs. This timed text-only diagnostic is for topic scoring — pair it with the official WELL AP candidate handbook.",
+      },
+    ],
   },
   "cem-readiness-check": {
     title: "Free CEM Practice Test | 50-Question Certified Energy Manager Readiness Check",
@@ -1166,9 +1317,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CDA practice test",
   },
   "nebosh-readiness-check": {
-    title: "Free NEBOSH Practice Test | 50-Question IGC Diagnostic",
+    title: "NEBOSH IGC Practice Test Free 2027 | 50Q Diagnostic",
     description:
-      "Free NEBOSH IGC practice: 50 timed MCQs / 100 minutes / 70% diagnostic — then repair with the $9.99 / 250-card Anki deck. Official GIC1 is open-book (5h within a 24-hour window / 45% provisional pass), GIC2 is a 4h practical — this mock is knowledge-only. Independent — not NEBOSH material.",
+      "NEBOSH IGC practice test: 25 questions free, then 50 MCQs in 100 minutes with topic scores. Official GIC1 is open-book (5h in 24h / 45% pass); GIC2 is 4h practical — not MCQ. Not NEBOSH material.",
     keywords: [
       "nebosh practice test",
       "nebosh igc exam",
@@ -1181,10 +1332,29 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free NEBOSH IGC Practice Test (Knowledge Diagnostic)",
     intro:
-      "A timed MCQ readiness diagnostic across NEBOSH IGC syllabus elements — GIC1 Elements 1–4 (management/monitoring) and GIC2 Elements 5–11 hazards plus risk-assessment skills. Official assessments are GIC1 scenario open-book (5 hours within a 24-hour window, 45% provisional pass) and GIC2 practical (4 hours) — use this 50-question mock (free 25-question version) to find weak domains, then drill the linked $9.99 / 250-card Anki deck.",
+      "A NEBOSH IGC practice test on UniPrep2Go is a **knowledge-only MCQ diagnostic**: 25 questions free, no signup, then 50 timed questions across management systems, workplace hazards, and risk-assessment themes from the IGC syllabus. The real IGC is **not** this format — GIC1 is an open-book scenario exam (**5 hours of assessment within a 24-hour window, 45% provisional pass**) and GIC2 is a **4-hour practical risk assessment** (verify in your Learning Partner materials and nebosh.org). Use this mock to find weak domains, then drill the [$9.99 NEBOSH Anki deck](/decks/nebosh-anki-deck), compare [NEBOSH IGC vs Diploma](/blog/nebosh-igc-vs-international-diploma-employers), or pair with [CFPS](/mock-exams/cfps-readiness-check) if fire protection is your adjacent path.",
+    officialFormat:
+      "Official IGC: GIC1 open-book scenario (5h / 24h window / 45% provisional) + GIC2 practical (4h). UniPrep: 25Q free, 50Q / 100 min MCQ diagnostic only.",
     audience:
       "Health and safety officers, supervisors, managers, and career changers preparing for the NEBOSH International General Certificate (IGC) through an accredited Learning Partner.",
     practiceTestLabel: "NEBOSH practice test",
+    examFaqs: [
+      {
+        question: "Is there a free NEBOSH practice test?",
+        answer:
+          "Yes — 25 multiple-choice questions free on this page, then optional 50-question timed sessions. This is MCQ prep, not a copy of GIC1 open-book scenarios.",
+      },
+      {
+        question: "How is the real NEBOSH IGC assessed?",
+        answer:
+          "Unit GIC1 is an open-book scenario exam with 5 hours of assessment time in a 24-hour window (45% provisional pass). Unit GIC2 is a practical risk assessment over 4 hours.",
+      },
+      {
+        question: "Can I pass NEBOSH with multiple-choice only?",
+        answer:
+          "No. You need GIC1 scenario writing and a GIC2 practical submission. Use this mock to prioritize reading, then practice risk-assessment narratives with your Learning Partner.",
+      },
+    ],
   },
   "cfps-readiness-check": {
     title: "Free CFPS Practice Test | 50-Question Certified Fire Protection Specialist Readiness Check",
@@ -1261,7 +1431,24 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "CFA Level 2 Practice Exam",
     intro:
-      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is 88 item-set questions in 22 vignettes across two 132-minute sessions (4 hours 24 minutes). CFA Institute sets the minimum passing score after each sitting and does not publish a fixed percentage. This page is the shorter diagnostic. Repair weak item sets with the linked Anki deck ($29, 495 cards). Not CFA Institute material.",
+      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is **88 item-set questions in 22 vignettes** across two 132-minute sessions (**4 hours 24 minutes total**; CFA Institute sets MPS after each sitting — cfainstitute.org). Repair weak item sets with the [Level 2 Anki deck](/decks/cfa-level-2-anki-deck) and printable [Level 2 formula reference](/decks/cfa-level-2-formula-reference-2026). After Level 1, confirm you passed before booking — [Level 1 practice test](/mock-exams/cfa-level-1-readiness-check). Not CFA Institute material.",
+    examFaqs: [
+      {
+        question: "Is there a free CFA Level 2 practice exam?",
+        answer:
+          "Yes — 25 vignette questions free, no signup, on this page. The timed mock is 60 vignettes in 120 minutes.",
+      },
+      {
+        question: "How many questions are on CFA Level 2?",
+        answer:
+          "CFA Institute administers 88 item-set questions grouped into 22 vignettes. This diagnostic is shorter by design.",
+      },
+      {
+        question: "CFA Level 2 practice test vs item-set books?",
+        answer:
+          "Use this mock for pacing and topic scores; use the formula PDF and Anki deck for equation recall between attempts.",
+      },
+    ],
     audience: "CFA Level 2 candidates who passed Level 1 and want a free vignette practice exam before a full item-set mock.",
     practiceTestLabel: "CFA Level 2 practice exam",
   },

@@ -59,10 +59,10 @@ describe("mock exam SEO", () => {
     const l1Faqs = buildMockExamFaqs(cfaL1!);
     const l2Faqs = buildMockExamFaqs(cfaL2!);
     expect(l1Faqs.some((faq) => faq.question === "Is this the full CFA Level 1 exam?")).toBe(true);
-    expect(l2Faqs.some((faq) => faq.question === "Is this a full CFA Level 2 item-set mock?")).toBe(true);
-    const officialL2 = l2Faqs.find((faq) => faq.question.includes("official CFA Institute mock"));
-    expect(officialL2?.answer).toContain("120 minutes");
-    expect(officialL2?.answer).not.toContain("90 minutes");
+    expect(l2Faqs.some((faq) => faq.question === "How many questions are on CFA Level 2?")).toBe(true);
+    const officialL2 = l2Faqs.find((faq) => faq.question === "How many questions are on CFA Level 2?");
+    expect(officialL2?.answer).toContain("88 item-set");
+    expect(officialL2?.answer).toContain("22 vignettes");
 
     expect(buildMockSeoTitle(sie!)).toContain("SIE Practice Test");
     expect(buildMockSeoDescription(sie!)).toContain("75 timed questions");

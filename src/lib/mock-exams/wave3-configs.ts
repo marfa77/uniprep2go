@@ -889,7 +889,7 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
     examBody: "NASAA / FINRA delivery",
     questionSourceNote:
       "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
-    lastUpdated: "2026-11-07",
+    lastUpdated: "2026-11-19",
     searchAliases: ["Series 65", "investment adviser exam"],
   }),
   nicheReadinessConfig({

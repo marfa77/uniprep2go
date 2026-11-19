@@ -182,9 +182,17 @@ export default async function HomePage() {
               Free · no signup
             </p>
             <h1 className="mt-3 max-w-3xl text-5xl text-balance text-[#18140f] sm:text-6xl">
-              CFA Level 1 Practice Test
+              Free practice tests and Anki decks for finance, licensing and healthcare exams
             </h1>
-            <p className="mt-5 max-w-2xl text-xl leading-8 text-[#5f5749]">
+            <h2 className="mt-6 max-w-3xl text-3xl text-balance text-[#18140f] sm:text-4xl">
+              <Link
+                className="font-semibold text-[#1f3a5f] underline-offset-4 hover:underline"
+                href="/mock-exams/cfa-level-1-readiness-check"
+              >
+                CFA Level 1 Practice Test
+              </Link>
+            </h2>
+            <p className="mt-4 max-w-2xl text-xl leading-8 text-[#5f5749]">
               25 questions free, no signup. The full timed mock is 60 questions in 90 minutes
               and scores every topic. The matching Anki deck drills only the weak ones.
             </p>
@@ -205,14 +213,15 @@ export default async function HomePage() {
               </Link>
             </div>
             <p className="mt-4 max-w-xl text-sm leading-6 text-[#5f5749]">
-              The November 2026 CFA Level I window is open now, 11–22 November.{" "}
+              Next CFA Level I exam window on CFA Institute’s calendar: 22–28 February 2027
+              (registration for that window closes 5 November 2026, US Eastern).{" "}
               <a
                 className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-                href="https://www.cfainstitute.org/sites/default/files/docs/programs/cfa-program/candidate-resources/26-nov-passport-assistance-letter.pdf"
+                href="https://www.cfainstitute.org/programs/cfa-program/dates-fees"
                 rel="noreferrer"
                 target="_blank"
               >
-                CFA Institute
+                Verify dates on CFA Institute
               </a>
             </p>
             <p className="mt-5 text-sm text-[#5f5749]">

@@ -704,7 +704,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     examBody: "CFP Board",
     questionSourceNote:
       "Original UniPrep2Go bank: 240 questions, 60 per topic. Each session is still 120 questions / 120 minutes and draws 30 from each topic.",
-    lastUpdated: "2026-11-07",
+    lastUpdated: "2026-11-19",
     searchAliases: ["CFP exam", "Certified Financial Planner"],
   }),
   nicheReadinessConfig({

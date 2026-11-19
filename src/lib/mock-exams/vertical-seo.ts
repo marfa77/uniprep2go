@@ -65,7 +65,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         heading: "Where to go after the mock",
         body:
-          "After your topic report, open /building-certification-anki-decks for Gumroad decks that match this hub, or read /blog/epa-608-practice-test-what-to-expect when refrigerants are your weak cluster. Keep the official candidate handbook open beside Anki — the mock diagnoses gaps; flashcards repair them.",
+          "After your topic report, open [building certification Anki decks](/building-certification-anki-decks) for Gumroad products that match this hub, run the [NEBOSH IGC practice test](/mock-exams/nebosh-readiness-check) before GIC1/GIC2, the [WELL AP practice test](/mock-exams/well-ap-readiness-check) for wellness credentials, or read [EPA 608 practice test expectations](/blog/epa-608-practice-test-what-to-expect) when refrigerants are the weak cluster. Keep the official candidate handbook open beside Anki — the mock diagnoses gaps; flashcards repair them.",
       },
     ],
     faqs: [
@@ -208,6 +208,11 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
         heading: "How to study after an allied-health readiness check",
         body:
           "Use the topic report to prioritize clinical procedures, safety, or admin domains you missed. Repair those areas with the linked Anki deck, then retake a timed session. Pair study with your official candidate handbook — mocks do not redistribute live exam items.",
+      },
+      {
+        heading: "High-traffic diagnostics on this path",
+        body:
+          "Start with the [ARDMS SPI practice test](/mock-exams/ardms-spi-readiness-check) if physics is your bottleneck, the [NBRC TMC readiness check](/mock-exams/nbrc-tmc-readiness-check) before the 2027 RT exam transition, the [medical scribe practice test](/mock-exams/medical-scribe-readiness-check) for documentation pathways, or the [ABO optician practice test](/mock-exams/abo-optician-readiness-check) for NOCE themes. Pair each mock with the matching Anki deck after the topic report.",
       },
     ],
     faqs: [
@@ -657,6 +662,11 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
         body:
           "Sit one timed mock, repair weak domains with the linked Anki deck, and confirm current candidate bulletins before you schedule with the official vendor.",
       },
+      {
+        heading: "Security and CDL add-ons",
+        body:
+          "Guard-card candidates can run the [unarmed security officer practice test](/mock-exams/unarmed-security-officer-readiness-check) for state-law themes (confirm your state’s exam vendor). CDL drivers adding HazMat should read the [CDL HazMat fingerprinting guide](/blog/cdl-hazmat-endorsement-state-fingerprinting-background-check) then drill the [CDL HazMat practice test](/mock-exams/cdl-hazmat-readiness-check).",
+      },
     ],
     faqs: [
       {
@@ -684,6 +694,11 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
         heading: "How to use these free finance practice tests",
         body:
           "Sit a timed session under exam-like conditions, repair weak domains with the linked Anki deck, and confirm current curriculum weights on the official program site before you register.",
+      },
+      {
+        heading: "Linked mocks and formula tools",
+        body:
+          "Charter candidates: [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check), [CFA Level 2 practice exam](/mock-exams/cfa-level-2-readiness-check), and the [CFA Level 2 formula reference](/decks/cfa-level-2-formula-reference-2026) PDF. Risk candidates: [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check). Securities: [SIE practice test](/mock-exams/sie-full-mock), [Series 7](/mock-exams/series-7-readiness-check), [Series 63](/mock-exams/series-63-readiness-check), [Series 65](/mock-exams/series-65-readiness-check), and [CFP exam practice](/mock-exams/cfp-certification-readiness-check).",
       },
     ],
     faqs: [

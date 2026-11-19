@@ -2,12 +2,12 @@ import type { BlogPostDraft } from "../types";
 
 export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   slug: "cdl-hazmat-endorsement-state-fingerprinting-background-check",
-  title: "CDL HazMat Endorsement: The State-by-State Fingerprinting Guide",
-  titleTag:
-    "CDL HazMat Endorsement: State-by-State Fingerprinting & Background Check 2026",
+  title: "CDL HazMat fingerprinting: TSA HME fee and agent vs DMV states",
+  titleTag: "CDL HazMat: TSA $88.25 HME fee & fingerprints",
   metaDescription:
-    "Not every state fingerprints you at a TSA center. Some use the DMV. Others add training. Here is the exact process for your state, the fee breakdown, and why your HazMat application gets rejected.",
+    "New or renewing CDL HazMat HME applicants pay $88.25 to TSA ($41 with a valid TWIC). Fingerprints are required at enrollment and each 5-year renewal — agent states use TSA centers.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-19",
   eyebrow: "CDL HazMat · TSA & DMV fingerprinting",
   clusterId: "cdl-hazmat",
   relatedSlugs: [
@@ -16,7 +16,7 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
     "epa-608-type-1-vs-type-2-which-first",
   ],
   intro:
-    "Most guides tell you to \"go to a TSA enrollment center and get fingerprinted.\" That is wrong for seventeen states. If you live in Texas, Florida, or New York, you do not go to TSA. You go to your DMV. If you live in Washington, you need a state-approved training course before you can even sit for the knowledge test. If you show up at the wrong place with the wrong documents, you lose a day and the appointment fee. This guide maps the two systems, the extra-step states, and the exact documents you need so you do not get sent home.",
+    "**Before the HazMat endorsement reaches your CDL, most drivers need a TSA Hazardous Materials Endorsement security threat assessment: $88.25 for new and renewing applicants, or $41 if you already hold a valid TWIC (fees published on tsa.gov/for-industry/hazmat-endorsement, checked 19 Nov 2026).** You submit fingerprints for a federal background check; TSA generally requires **new fingerprints when you renew the HME every five years** (your state may add its own knowledge test). **Agent states** fingerprint at TSA enrollment centers after pre-enrollment; **non-agent states** (including Florida, Texas, and New York) collect prints at the DMV — walking into the wrong office costs a wasted trip. This guide maps who does what where, ELDT HazMat theory when it applies, and the documents that stop rejections at the door.",
   mockSlug: "cdl-hazmat-readiness-check",
   deckSlug: "cdl-hazmat-anki-deck",
   cta: {

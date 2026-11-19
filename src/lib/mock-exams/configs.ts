@@ -116,7 +116,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A timed 75-question SIE diagnostic drawn from a 250-question bank, with topic-weighted scoring, full question review, and a readiness verdict aligned to the official outline.",
     examBody: "FINRA",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-19",
   },
   {
     slug: "sie-quick-diagnostic",
@@ -253,7 +253,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 60-question, 120-minute CFA Level 2 readiness diagnostic: short case vignettes with calculations and judgment calls, scored per topic across all ten curriculum areas. Independent prep — not CFA Institute material.",
     examBody: "CFA Institute",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-19",
   },
   {
     slug: "us-citizenship-readiness-check",
@@ -322,7 +322,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "FRM Part 1 readiness diagnostic. The free start is 25 questions. The full check is 50 questions drawn from a 250-question bank, with weighted topic scoring, answer review, and a linked Anki deck repair plan for weak topics.",
     examBody: "GARP",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-19",
   },
   {
     slug: "series-7-readiness-check",
@@ -355,7 +355,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 60-question Series 7 readiness diagnostic (free 25-question version) drawn from a 250-question bank: options, muni, margin, tax and Reg BI scenarios weighted by FINRA job function, with answer review and a linked Anki deck repair plan.",
     examBody: "FINRA",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-19",
   },
   {
     slug: "series-63-readiness-check",
@@ -392,7 +392,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 60-question Series 63 readiness diagnostic (free 25-question version) on the Uniform Securities Act: registration, ethics, communications and remedies scenarios in NASAA's scored mix, with full answer review.",
     examBody: "NASAA",
-    lastUpdated: "2026-11-14",
+    lastUpdated: "2026-11-19",
   },
   {
     slug: "california-real-estate-readiness-check",
@@ -1204,7 +1204,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "50-question WELL AP readiness check (free 25-question version) across WELL v2 concepts — air, water, nourishment, light, movement, materials, mind, community, and certification process. Independent prep, not IWBI material.",
     examBody: "IWBI / GBCI (International WELL Building Institute)",
-    lastUpdated: "2026-08-15",
+    lastUpdated: "2026-11-19",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the WELL AP readiness check (250 cards across five WELL v2 concept groups; 50-question timed session). Distractor notes locally thickened August 2026.",
     ankiDeckCardCount: 250,
@@ -1470,7 +1470,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 50-question NEBOSH IGC readiness diagnostic across management systems, workplace hazards, and risk assessment skills. Independent prep, not NEBOSH material.",
     examBody: "NEBOSH (National Examination Board in Occupational Safety and Health)",
-    lastUpdated: "2026-07-24",
+    lastUpdated: "2026-11-19",
     questionSourceNote:
       "Original UniPrep2Go questions authored for the NEBOSH IGC readiness check (250 cards across five syllabus groups; 50-question timed session).",
   },
