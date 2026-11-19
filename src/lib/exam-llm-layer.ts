@@ -185,7 +185,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "AAPC CPC practice test free",
     mockSlug: "aapc-cpc-readiness-check",
     disambiguation:
-      "AAPC CPC certifies outpatient medical coding — free UniPrep2Go practice test covers coding guidelines and concepts; not an AAPC certification exam.",
+      "AAPC CPC is 100 questions / 4 hours / 70 percent with code books. UniPrep2Go draws 60 questions / 75 minutes (free 25-question version) from a 120-item text bank, no code books. Not an AAPC exam.",
   },
   {
     query: "MBLEx practice test free",
@@ -473,7 +473,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "Australian citizenship practice test free",
     mockSlug: "australian-citizenship-readiness-check",
     disambiguation:
-      "Australian citizenship diagnostic (60Q). Official test is 20Q + values dual-gate — this page does not enforce that gate.",
+      "Official Home Affairs test: 20 computer-based questions in English, 45 minutes, at least 15 of 20 (75%) and all 5 Australian values questions correct. UniPrep2Go draws 60 questions in 45 minutes (free 25-question version) with one 75% mark and does not apply the values rule. Not a Home Affairs exam.",
   },
   {
     query: "CCSE practice test free España",

@@ -15,7 +15,7 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
     "us-naturalization-civics-test-100-questions-only-10",
   ],
   intro:
-    "**The Australian citizenship test is not a language exam and not a personal interview.** It is a **computer-based, multiple-choice test of 20 questions** drawn from the Department of Home Affairs booklet *Australian Citizenship: Our Common Bond* (OCB). You have **45 minutes**, need **15/20 (75%)**, and face the rule that destroys unprepared candidates: **5 of those 20 are Australian values questions, and you must get all 5 correct.** Miss one values item and you fail — even at 19/20 overall. This guide covers format, the four OCB categories, values traps, and a first-attempt prep plan mapped to UniPrep2Go’s free readiness check and Citizenship Anki Bundle.",
+    "**The Australian citizenship test is a computer-based, multiple-choice test of 20 questions, in English.** Home Affairs says a pass shows a basic knowledge of English, knowledge of Australia, and a commitment to Australian values. Questions come from *Australian Citizenship: Our Common Bond* (OCB). You have **45 minutes**, need **15 of 20 (75%)**, and **all 5 Australian values questions correct**. Miss one values item and you fail, even with 19 of 20 overall. This guide covers the format read on the Home Affairs test page on 19 November 2026, the OCB themes, values traps, and a prep plan mapped to UniPrep2Go’s free readiness check and the Australian Citizenship Anki deck.",
   mockSlug: "australian-citizenship-readiness-check",
   deckSlug: "australian-citizenship-anki-deck",
   cta: {

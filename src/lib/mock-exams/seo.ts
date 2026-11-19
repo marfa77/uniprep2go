@@ -1526,11 +1526,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "australian-citizenship-readiness-check": {
     title: "Free Australian Citizenship Practice Test | 60 Questions",
     description:
-      "Australian citizenship practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official test is 20Q/45min with a values dual-gate — this diagnostic does not enforce that gate. Citizenship Anki Bundle.",
+      "Australian citizenship practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official test is 20 questions, 45 minutes, 15 of 20, and all 5 values questions correct. This diagnostic uses one 75% mark. Citizenship Anki deck $9.99.",
     keywords: ["Australian citizenship practice test", "Aussie citizenship quiz", "citizenship test Australia"],
     headline: "Free Australian Citizenship Readiness Check",
     intro:
-      "Timed Our Common Bond diagnostic. Official exam needs 75% plus all five values questions correct; this 60-question check is longer theme practice without that dual-gate.",
+      "Timed Our Common Bond diagnostic. Official test: 20 questions, 45 minutes, 15 of 20, and all 5 values questions correct. This check is 60 questions in 45 minutes with one 75% mark.",
     audience:
       "Permanent residents preparing for the Australian citizenship test.",
     practiceTestLabel: "Australian citizenship practice test",

@@ -147,7 +147,7 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
     examBody:
       "Australia Home Affairs — citizenship test (20Q + values gate; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-11-19",
     searchAliases: ["Australian citizenship test", "Aussie citizenship practice"],
   }),
   nicheReadinessConfig({

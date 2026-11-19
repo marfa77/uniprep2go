@@ -802,38 +802,45 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "australian-citizenship",
     pageHeading: "Australian Citizenship Test — Facts & Prep",
     intro:
-      "The Australian citizenship test assesses knowledge of Australia using Our Common Bond study resources. This page summarizes public format themes plus independent UniPrep2Go products — not Department of Home Affairs exam material.",
+      "The Australian citizenship test is a computer-based test in English. Home Affairs says a pass shows a basic knowledge of English, knowledge of Australia, and a commitment to Australian values. This page states the format read on the Home Affairs test page on 19 November 2026, plus independent UniPrep2Go products. It is not Department of Home Affairs exam material.",
     exam_facts: {
       exam_name: "Australian Citizenship Test",
       administered_by: "Department of Home Affairs (Australia)",
-      question_count: "20 multiple-choice (typical published format)",
-      time_limit: "45 minutes (typical published format)",
-      passing_score: "75% overall with mandatory values questions correct (verify current Home Affairs rules)",
-      delivery: "Computer-based at Department of Home Affairs appointments",
-      verify_at_url: "https://immi.homeaffairs.gov.au/citizenship",
+      question_count: "20 multiple-choice questions, in English, on a computer",
+      time_limit: "45 minutes",
+      passing_score: "At least 15 of 20 (75%), and all 5 Australian values questions correct",
+      delivery:
+        "Computer-based. Most applicants aged 18 to 59 sit it for citizenship by conferral. The application fee includes the test; there is no extra test fee.",
+      verify_at_url:
+        "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
     },
     official_sources: [
-      { label: "Home Affairs — citizenship", url: "https://immi.homeaffairs.gov.au/citizenship" },
+      {
+        label: "Home Affairs — citizenship test",
+        url: "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test",
+      },
+      { label: "Home Affairs — Our Common Bond", url: "https://immi.homeaffairs.gov.au/citizenship/test-and-interview/our-common-bond" },
     ],
     domain_weights: [
       { domain: "Australia and its people", weight: "Our Common Bond theme" },
-      { domain: "Democratic beliefs and rights", weight: "Our Common Bond theme" },
+      { domain: "Democratic beliefs, rights and liberties", weight: "Our Common Bond theme" },
       { domain: "Government and the law", weight: "Our Common Bond theme" },
+      { domain: "Australian values", weight: "5 questions; all 5 must be correct" },
     ],
     high_yield_facts: [
-      "Study Australian Citizenship: Our Common Bond — the official resource named by Home Affairs.",
-      "Some values questions may be mandatory — verify the current pass rules before sitting.",
-      "This is a civics knowledge test, not an English certificate exam.",
-      "UniPrep2Go readiness checks are independent prep, not Home Affairs live items.",
+      "Read on 19 November 2026: 20 multiple-choice questions, 45 minutes, at least 15 of 20, and all 5 Australian values questions correct.",
+      "Study Australian Citizenship: Our Common Bond. Home Affairs says the testable section has what you need, and the test is in English.",
+      "Passing shows a basic knowledge of English. This is not a separate English certificate such as IELTS, and it is not the citizenship interview.",
+      "UniPrep2Go draws 60 questions in 45 minutes from a longer bank, with one 75% mark. It does not apply the 5-of-5 values rule.",
     ],
     candidate_qa: [
       {
-        q: "Is the Australian citizenship test an English exam?",
-        a: "No. It is a civics knowledge test based on Our Common Bond. English requirements, if any, follow your visa/citizenship pathway rules separately.",
+        q: "Does the Australian citizenship test check English?",
+        a: "Yes. The test is in English. Home Affairs says passing it shows a basic knowledge of the English language, along with knowledge of Australia and Australian values. It is not a separate English certificate such as IELTS.",
       },
       {
-        q: "Where do I verify official Australian citizenship test rules?",
-        a: "Use immi.homeaffairs.gov.au/citizenship and the current Our Common Bond resource.",
+        q: "Where are the official Australian citizenship test rules?",
+        a: "The Home Affairs citizenship test page: 20 questions, 45 minutes, 15 of 20, and all 5 values questions correct. Study Our Common Bond on the same site.",
       },
     ],
     trademark_note:

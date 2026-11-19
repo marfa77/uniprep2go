@@ -1017,11 +1017,11 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "australian-citizenship-readiness-check": {
     practiceTestName: "Australian Citizenship Readiness Check",
     whatIsExam:
-      "Australia’s citizenship test is the live Department of Home Affairs knowledge exam for most applicants. Officially it is typically 20 questions in 45 minutes with a 75% overall pass mark plus a mandatory Australian values subsection that must also be passed (dual-style gate — confirm current Home Affairs rules). Themes cover Australian values, history, government and democracy, and Australia/Australians. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 75% single pass mark) on overlapping themes — it does not enforce a separate values gate like the official sitting, is not Home Affairs material, and is not a substitute for the official 20-question paper.",
+      "Australia’s citizenship test is the Department of Home Affairs test for most citizenship-by-conferral applicants aged 18 to 59. Read on the Home Affairs test page on 19 November 2026: 20 computer-based multiple-choice questions in English, 45 minutes, at least 15 of 20 (75%), and all 5 Australian values questions correct. There is no extra test fee. Themes come from Australian Citizenship: Our Common Bond. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, one 75% mark). It does not require the 5 values questions to be perfect, it is not Home Affairs material, and it is not the official 20-question test.",
     administeredBy:
-      "Australian Department of Home Affairs as part of the citizenship application process. Confirm current test rules, values requirements, and booking steps on homeaffairs.gov.au.",
+      "Australian Department of Home Affairs, as part of citizenship by conferral. The application fee includes the test.",
     officialFormat:
-      "Official Australian citizenship test: typically 20 questions, 45 minutes, 75% overall PLUS a mandatory values gate. UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 75% single diagnostic pass — no separate values gate; finish with official-style practice that includes values items.",
+      "Official Australian citizenship test, read 19 November 2026: 20 questions, 45 minutes, 15 of 20, and 5 of 5 Australian values questions correct. UniPrep2Go on this page: 60 timed questions, 45 minutes, one 75% mark. Practice the values questions until all 5 are right before the appointment.",
     whoFor:
       "Permanent residents preparing the Australian citizenship test; applicants who need practice beyond the official 20 questions; and learners who must not forget the official values subsection. Not legal advice and not Home Affairs material.",
     howToPrepare:
@@ -1061,7 +1061,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is the official Australian citizenship test format?",
         answer:
-          "Typically 20 questions in 45 minutes with a 75% overall pass mark and a mandatory values subsection that must also be passed. Confirm current rules on homeaffairs.gov.au.",
+          "20 computer-based multiple-choice questions in English, 45 minutes. Pass with at least 15 of 20 and all 5 Australian values questions correct. Read on the Home Affairs citizenship test page on 19 November 2026.",
       },
       {
         question: "Does this UniPrep2Go mock include the values gate?",

@@ -495,6 +495,501 @@
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
   },
   {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-016",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "During chart review, a dermatology visit lists two skin conditions. The tabular entry for the first condition carries an Excludes1 note naming the second. A separate pair of findings on the same chart carries an Excludes2 note. Which application of those notes is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excludes1 bars the two codes together; Excludes2 still permits both when each condition is present."
+      },
+      {
+        "id": "b",
+        "text": "Excludes1 permits both codes when each condition is present, and Excludes2 is the note that bars those two codes from being reported together."
+      },
+      {
+        "id": "c",
+        "text": "Both notes bar the pair, so the coder drops the second condition in each pair."
+      },
+      {
+        "id": "d",
+        "text": "Both notes are sequencing hints, so every condition in each pair is reported with the earlier one listed first."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excludes1 means the two conditions cannot be coded together. Excludes2 means the second condition is not included in the first, but both may be coded when the record shows that each one is present.",
+    "distractorExplanations": {
+      "b": "This swaps the notes. Excludes1 is the mutual exclusion, while Excludes2 still allows both codes when both conditions are present.",
+      "c": "The notes are not the same rule. Excludes2 does not tell the coder to drop the second condition.",
+      "d": "Excludes notes decide whether the two codes may be used together, not the order in which to list them."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-017",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "An orthopedist documents pain in the left wrist after a fall at home. The coder selects a wrist-pain diagnosis that names no side. Which choice follows the laterality rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the unspecified-side diagnosis, because a wrist-pain code that names no side is acceptable once any wrist entry exists."
+      },
+      {
+        "id": "b",
+        "text": "Assign bilateral wrist pain, because documentation of one painful wrist is enough to support both sides."
+      },
+      {
+        "id": "c",
+        "text": "Code the left wrist, because an unspecified side is wrong once the record has named the left side."
+      },
+      {
+        "id": "d",
+        "text": "Hold the diagnosis until imaging names the side, because the physician's sentence cannot establish laterality."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Laterality has to match the record. Once the note says left or right, an unspecified-side code is the wrong choice even if it sits in the same diagnosis family.",
+    "distractorExplanations": {
+      "a": "An unspecified side is not acceptable after the orthopedist has already written that the pain is in the left wrist.",
+      "b": "The opposite wrist is not in this note, so bilateral coding adds a side the record does not support.",
+      "d": "The physician already named the left side, so the coder does not wait for imaging before assigning left."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-018",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Three injury encounters sit in one family-practice chart. Today a fresh ankle sprain is wrapped and treated. Next month that sprain is healing and the wrap is checked. A year later the patient still has stiffness from the old sprain. Which 7th-character map fits the three visits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Initial for all three visits, because any later mention of the sprain keeps the active-treatment character until the practice closes the problem."
+      },
+      {
+        "id": "b",
+        "text": "Subsequent for the wrapping visit, initial for the healing check, and sequela once a specialist dictates a late-effect addendum."
+      },
+      {
+        "id": "c",
+        "text": "Sequela for the wrapping visit, subsequent for the healing check, and initial for the stiffness visit."
+      },
+      {
+        "id": "d",
+        "text": "Initial for today's treatment, subsequent for the healing check, and sequela for the later stiffness."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The 7th character tracks the phase of care. Initial is active treatment, subsequent is routine healing, and sequela is the late effect that remains after the acute injury.",
+    "distractorExplanations": {
+      "a": "The active-treatment character does not stay on every later visit; healing and late effects use different 7th characters.",
+      "b": "This reverses the first two phases and invents a specialist addendum the 7th-character rule does not require.",
+      "c": "This runs the phases backward: the visit where the sprain is treated is initial, not sequela."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-019",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "In a clinic, the physician writes probable pneumonia after hearing a cough and measuring a fever. No test has confirmed an infection. Which outpatient diagnosis coding is correct for this visit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Code the cough and the fever, not the unconfirmed pneumonia."
+      },
+      {
+        "id": "b",
+        "text": "Code pneumonia as confirmed, because the physician placed that disease name in the assessment."
+      },
+      {
+        "id": "c",
+        "text": "Code pneumonia together with the cough and the fever, so the claim shows the suspected disease and each symptom."
+      },
+      {
+        "id": "d",
+        "text": "Use the hospital approach for a possible diagnosis and code probable pneumonia the way an inpatient stay would."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "On an outpatient encounter, a probable or otherwise unconfirmed diagnosis is not coded. The coder reports the signs and symptoms, here the cough and the fever, instead of the unconfirmed pneumonia.",
+    "distractorExplanations": {
+      "b": "Putting a probable disease in the assessment does not confirm it, so pneumonia is not coded for this clinic visit.",
+      "c": "The unconfirmed pneumonia is not added next to the symptoms; the symptoms stand in its place until it is confirmed.",
+      "d": "The inpatient approach to a possible diagnosis does not apply to this outpatient visit, so probable pneumonia stays off the claim."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-020",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A record shows diabetes with a named kidney complication. The classification already offers one code that contains both the diabetes and that complication. The coder plans to send that code and a second code for the kidney problem by itself. What should go on the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send separate diabetes and kidney codes, because a combined entry is background and not the reportable code."
+      },
+      {
+        "id": "b",
+        "text": "Send the combined code plus a diabetes code plus a kidney code, so the claim repeats each component beside the combined entry."
+      },
+      {
+        "id": "c",
+        "text": "Send the combination code alone, without extra codes for the parts it already contains."
+      },
+      {
+        "id": "d",
+        "text": "Send nothing until endocrinology writes that the kidney problem is due to the diabetes."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A combination code is used when the classification gives one code for the linked conditions. The coder does not also report the component conditions that the combination code already includes.",
+    "distractorExplanations": {
+      "a": "The combination code is the reportable code, not optional background beside two separate condition codes.",
+      "b": "Listing the components again double-counts the diabetes and the kidney problem already captured by the combination code.",
+      "d": "The record and the classification already link these conditions, so the claim does not wait for an endocrinology addendum."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-021",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A manifestation is documented with the disease that caused it. The tabular entry under the manifestation carries a code-first note. How does the coder order the two diagnoses?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place the manifestation ahead of the underlying condition, because the manifestation brought the patient in."
+      },
+      {
+        "id": "b",
+        "text": "Report the manifestation and leave off the underlying condition, because the note replaces that condition."
+      },
+      {
+        "id": "c",
+        "text": "Order the titles alphabetically, because a code-first instruction does not set sequence."
+      },
+      {
+        "id": "d",
+        "text": "Place the underlying condition ahead of the manifestation."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A code-first note means the underlying condition is sequenced before the manifestation. The manifestation stays on the claim, but it follows the etiology rather than leading it.",
+    "distractorExplanations": {
+      "a": "The reason for the visit does not override the instruction to sequence the underlying condition before the manifestation.",
+      "b": "Code first does not delete the underlying condition; it requires that condition to be listed before the manifestation.",
+      "c": "Alphabetical order ignores a code-first note, which sets the underlying condition ahead of the manifestation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-022",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A category requires a 7th character, yet the code built so far is shorter than seven characters. The coder has to decide what the letter X is doing in that code. Which use of that letter is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The letter X fills the empty spots so the 7th character stays in the 7th position."
+      },
+      {
+        "id": "b",
+        "text": "X means the code is unspecified, so the coder stops there and leaves the encounter character off the code."
+      },
+      {
+        "id": "c",
+        "text": "X itself is the encounter character, so nothing further is added after it."
+      },
+      {
+        "id": "d",
+        "text": "X flags an external cause and belongs in the first position of the code."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The letter X fills empty character positions when a code that needs a 7th character is shorter than 7 characters. That keeps the 7th character in the 7th position. X is not itself the encounter character.",
+    "distractorExplanations": {
+      "b": "The letter X does not mean unspecified, and it does not excuse leaving off the 7th character.",
+      "c": "X occupies empty slots so the encounter character can stay in the 7th position; X is not that encounter character.",
+      "d": "The letter X is not an external-cause marker and is not shifted to the front of the code."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-023",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A patient is treated for a rib fracture after a bicycle crash on the way to work. The coder holds a fracture code and a separate external-cause code for the crash. Which statement about the external-cause code is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It leads the claim as the principal diagnosis, because the crash explains how the rib was injured and therefore outranks the fracture."
+      },
+      {
+        "id": "b",
+        "text": "It replaces the fracture code, because the cause is the reason for the visit."
+      },
+      {
+        "id": "c",
+        "text": "It is never the principal diagnosis; the fracture code is listed first."
+      },
+      {
+        "id": "d",
+        "text": "It is left off the claim whenever a fracture code is already present."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An external-cause code describes how an injury happened. It is never reported as the principal or first-listed diagnosis. The injury code, here the rib fracture, holds that place.",
+    "distractorExplanations": {
+      "a": "Explaining the crash does not make the external-cause code the principal diagnosis ahead of the fracture.",
+      "b": "The external-cause code supplements the fracture code; it does not replace the injury on the claim.",
+      "d": "Having a fracture code does not remove the external-cause code; it keeps that code from being principal."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-024",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A surgeon performs the same procedure on both hands during one session. One payer instructs the practice to report that bilateral work on a single claim line. Another payer instructs the practice to report each hand on its own line. Which reporting follows those payer instructions?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refuse modifier 50 and also refuse RT and LT, then send the operative note with no side indicator and let each payer infer that both hands were treated."
+      },
+      {
+        "id": "b",
+        "text": "Put modifier 50, RT, and LT on the same single line for both payers."
+      },
+      {
+        "id": "c",
+        "text": "Report one line and no side modifier, because a paired hand procedure needs no bilateral indicator."
+      },
+      {
+        "id": "d",
+        "text": "Use modifier 50 on one line for the bilateral procedure, and use RT and LT on two lines when the payer wants the sides separate."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Modifier 50 is one line for a bilateral procedure. RT and LT are two lines when the payer wants the sides separated. The coder uses the pattern that payer requested; neither pattern is wrong for every payer.",
+    "distractorExplanations": {
+      "a": "Throwing out both patterns ignores a payer that wants the bilateral work on one line and a payer that wants each hand on its own line.",
+      "b": "Stacking 50 together with RT and LT on one line follows neither payer instruction for how to show the two hands.",
+      "c": "A line with no side indicator misses modifier 50 for the first payer and misses RT and LT for the second payer."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-025",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A hospital owns the scanner and employs the technologist. An independent radiologist interprets the study and writes the report. The radiologist will bill the read. The hospital will bill the equipment and the technical staff. Which component split is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The radiologist reports 26 for the read, the hospital reports TC, and a global service uses neither modifier."
+      },
+      {
+        "id": "b",
+        "text": "The radiologist reports TC because interpreting the image is technical work, and the hospital reports 26 because owning the scanner is treated as the professional component."
+      },
+      {
+        "id": "c",
+        "text": "Both parties report 26, because each one did professional work connected to the same study."
+      },
+      {
+        "id": "d",
+        "text": "Neither party uses a component modifier, because professional and technical splits belong to inpatient operations."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 26 is the professional component, the physician interpretation. TC is the technical component, the equipment and technical staff. The global service, when one provider performs both parts, takes neither modifier.",
+    "distractorExplanations": {
+      "b": "This reverses the components: the read is professional work reported with 26, and the scanner plus staff are the technical component.",
+      "c": "The hospital supplied equipment and staff, not the interpretation, so it does not report modifier 26 for this study.",
+      "d": "Component modifiers apply to this professional-technical split; they are not reserved for inpatient operations."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-026",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "An operative note describes a technique that matches no specific procedure entry. A nearby entry is similar but describes a different technique. The coder still has to report the service that was performed. Which path is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the nearby code and describe the different technique in a comment, because a similar entry is close enough when the exact one is missing."
+      },
+      {
+        "id": "b",
+        "text": "Create a new code number patterned on the nearby entry and explain the difference in a comment."
+      },
+      {
+        "id": "c",
+        "text": "Use the unlisted code for that family, because no specific code describes the service."
+      },
+      {
+        "id": "d",
+        "text": "Omit the service, because work without its own specific entry cannot be reported."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An unlisted code is reported when no specific code describes the service that was performed. The coder does not substitute a merely similar code and does not invent a code number.",
+    "distractorExplanations": {
+      "a": "A nearby entry that describes a different technique is not the code for the service, even if it is the closest title.",
+      "b": "Creating a new code number is not an option; the unlisted code exists for a service that has no specific code.",
+      "d": "The service was performed, so it is reported with the unlisted code rather than left off the claim."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-027",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "The consent form is titled exploration of the gallbladder. The operative report states that the surgeon removed the gallbladder. Which suffix family fits the work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Follow the consent title and code an exploration, because the form the patient signed controls the family even when the report describes removal."
+      },
+      {
+        "id": "b",
+        "text": "Use an -ostomy, because surgery on this organ means a new opening was made."
+      },
+      {
+        "id": "c",
+        "text": "Use an -otomy, because cutting into the organ is the same family as taking it out."
+      },
+      {
+        "id": "d",
+        "text": "Removal is an -ectomy, chosen from the operative words rather than the consent title."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The coder picks the family from the operative words. An -ectomy removes the structure, an -otomy cuts into it, and an -ostomy creates an opening. A consent title that says exploration does not change a removal into a different family.",
+    "distractorExplanations": {
+      "a": "The consent title says exploration, but the operative report documents removal, and the suffix family follows those operative words.",
+      "b": "An -ostomy would mean a new opening was created; the report says the gallbladder was removed, which is an -ectomy.",
+      "c": "An -otomy is an incision into the organ, not removal of the organ, so it does not match this operative report."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-028",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Two services were both performed at one session. Under the first service, a parenthetical note reads do not report the second service with the first. The coder wants both codes because both were done. Which instruction controls the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The parenthetical note blocks the second code even though both services were performed."
+      },
+      {
+        "id": "b",
+        "text": "Report both codes, because a parenthetical note gives way when the record proves both services were done."
+      },
+      {
+        "id": "c",
+        "text": "Report the second code with a modifier that overrides parenthetical exclusions of this kind."
+      },
+      {
+        "id": "d",
+        "text": "Drop the first service and report the second, because the note is about which code should lead the claim."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A parenthetical note that says do not report with blocks the second code. Performing both services does not lift that exclusion, so the second code stays off the claim.",
+    "distractorExplanations": {
+      "b": "Proof that both services were performed does not override a parenthetical note that says not to report them together.",
+      "c": "A modifier is not a blanket override of a do-not-report-with note that excludes the second code.",
+      "d": "The note does not demote the first service; it blocks adding the second code beside the first."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-029",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "A confirmed migraine is documented, and the same note lists the headache and nausea that the migraine produced. The coder is deciding whether those complaints belong on the claim beside the migraine. What should be coded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Code the headache and nausea instead of the migraine, because the complaints are more specific than the disease name."
+      },
+      {
+        "id": "b",
+        "text": "Code the migraine plus the headache plus the nausea, because every complaint in the note needs its own code."
+      },
+      {
+        "id": "c",
+        "text": "Code the migraine alone; the headache and nausea it explains are not added."
+      },
+      {
+        "id": "d",
+        "text": "Code the nausea by itself, because a stomach complaint replaces a headache syndrome."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Signs and symptoms are not coded in addition when a confirmed diagnosis explains them. The migraine accounts for the headache and the nausea, so those symptoms are not reported beside it.",
+    "distractorExplanations": {
+      "a": "Replacing the migraine with headache and nausea drops the confirmed diagnosis that explains those symptoms.",
+      "b": "Symptom codes are not stacked on a confirmed migraine that already explains the headache and the nausea.",
+      "d": "Nausea is part of the migraine picture here, not a separate condition that replaces the migraine."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-coding-guidelines-030",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "coding-guidelines",
+    "prompt": "Labs remain pending after an outpatient assessment of fatigue and heat intolerance. The note calls the picture suspected thyroid disease. The coder wants a confirmed thyroid-disease code on the theory that tomorrow's panel will prove it. Which assignment follows the certainty rule?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assign confirmed thyroid disease now, because a suspected label plus an expected positive panel is enough to lock the definitive code."
+      },
+      {
+        "id": "b",
+        "text": "Assign no findings at all, because a pending panel cancels both the symptoms and the suspected wording."
+      },
+      {
+        "id": "c",
+        "text": "Assign confirmed thyroid disease and the suspected wording together so the claim shows the hoped-for result and the note."
+      },
+      {
+        "id": "d",
+        "text": "Code to the certainty the note already documents, not a disease the pending panel has not proved."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An outpatient encounter is coded to the highest certainty already documented. The coder does not assign a definitive disease in the hope that a later test will prove it.",
+    "distractorExplanations": {
+      "a": "An expected positive panel is not documentation, so suspected thyroid disease is not upgraded to a confirmed code today.",
+      "b": "A pending panel does not erase findings already written, and it does not mean the visit has nothing to code.",
+      "c": "Reporting a confirmed disease beside the suspected wording claims a certainty the record has not reached."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
     "id": "aapc-cpc-readiness-check-evaluation-management-001",
     "examSlug": "aapc-cpc-readiness-check",
     "topicId": "evaluation-management",
@@ -817,9 +1312,9 @@
     "correctOptionId": "b",
     "explanation": "Payers scrutinize same-day E/M + procedure; modifier 25 and solid documentation are key.",
     "distractorExplanations": {
-      "a": "E/M needs support.",
-      "c": "Procedure must have been done if billed.",
-      "d": "Cloning wrong-patient notes is fraud risk."
+      "a": "An E/M billed with modifier 25 still needs its own history, exam, or medical decision making. Saying no history or MDM is ever required removes the support the modifier needs.",
+      "c": "If the procedure code is billed, the procedure was performed. Saying it was not performed does not justify a same-day E/M.",
+      "d": "A note cloned from another patient is not a record of this encounter. It does not show an E/M that is separately identifiable from the procedure."
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -850,9 +1345,9 @@
     "correctOptionId": "b",
     "explanation": "Prolonged services depend on documented total time beyond the coded E/M threshold.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Meeting time thresholds beyond the primary E/M level when using time-based prolonged codes”.",
-      "c": "Not the best answer here; the right answer is “Meeting time thresholds beyond the primary E/M level when using time-based prolonged codes”.",
-      "d": "Not the best answer here; the right answer is “Meeting time thresholds beyond the primary E/M level when using time-based prolonged codes”."
+      "a": "Prolonged services are time-based. Without documented total time past the primary E/M threshold, the prolonged code is not supported.",
+      "c": "Critical care is a different code family for a critically ill or injured patient. It does not replace a prolonged office or outpatient visit.",
+      "d": "Prolonged service is added when time exceeds the level already chosen. Dropping to the lowest E/M level does not report that extra time."
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -865,7 +1360,7 @@
     "options": [
       {
         "id": "a",
-        "text": "Number of family members in the waiting room"
+        "text": "The history and exam bullet counts from the 1995 and 1997 documentation guidelines"
       },
       {
         "id": "b",
@@ -873,19 +1368,19 @@
       },
       {
         "id": "c",
-        "text": "Color of the clinic walls"
+        "text": "The number of body areas listed in the review of systems, counted as its own MDM element"
       },
       {
         "id": "d",
-        "text": "Whether the patient arrived early"
+        "text": "Whether a chief complaint was copied forward from the previous visit"
       }
     ],
     "correctOptionId": "b",
-    "explanation": "MDM includes problems addressed, data, and risk of management.",
+    "explanation": "Current office and outpatient medical decision making has three elements: the number and complexity of problems addressed, the amount and complexity of data reviewed and analyzed, and the risk of complications and morbidity of patient management. History and exam bullet counts, a review-of-systems tally, and a copied chief complaint are not those elements.",
     "distractorExplanations": {
-      "a": "Not the best answer here; the right answer is “Number and complexity of problems addressed”.",
-      "c": "Not the best answer here; the right answer is “Number and complexity of problems addressed”.",
-      "d": "Not the best answer here; the right answer is “Number and complexity of problems addressed”."
+      "a": "History and exam bullet counts were the old office E/M scoring method. Current office and outpatient MDM uses problems, data, and risk.",
+      "c": "A review of systems is not one of the three MDM elements. Listing more body areas does not raise the MDM level by itself.",
+      "d": "Copying a chief complaint forward does not measure the problems addressed, the data reviewed, or the risk of management."
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
@@ -988,6 +1483,501 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1)."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-016",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A family-practice coder is told to tally review-of-systems bullets and organ-system exam boxes before assigning the level for a sore-throat encounter. The note already supports a moderate decision. Which basis actually sets that office level?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Score every review-of-systems bullet and every organ-system exam box on the retired documentation grid, then let that grid assign the office level."
+      },
+      {
+        "id": "b",
+        "text": "Apply the old counseling-threshold method and set aside the decision whenever talking fills most of the encounter."
+      },
+      {
+        "id": "c",
+        "text": "Use medical decision making or total time, not a bullet count."
+      },
+      {
+        "id": "d",
+        "text": "Require a complete history plus a comprehensive exam before any moderate level is allowed."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The office level is selected by medical decision making or by total time. Counting history and exam bullets does not set the level; those parts of the note are recorded as medically appropriate for the encounter.",
+    "distractorExplanations": {
+      "a": "The retired bullet grid no longer assigns the office level; history and exam boxes are not the selection method.",
+      "b": "The old counseling-threshold method is not how the current office level is chosen; the decision or total time is used.",
+      "d": "A complete history and a comprehensive exam are not gates that must be passed before a moderate level is allowed."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-017",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Ms. Alvarez last received care from this cardiology group 3 years and 2 months ago. A partner she has never met now evaluates new chest pain. Which statement correctly classifies this encounter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "She is established, because a chart opened by anyone in the group keeps that status for as long as the record remains on file, whatever the gap since the last service."
+      },
+      {
+        "id": "b",
+        "text": "She is established, because a first meeting with a different partner cannot be new while any group chart exists."
+      },
+      {
+        "id": "c",
+        "text": "She is established, because the lookback period is five years and the specialty of the prior clinician does not matter."
+      },
+      {
+        "id": "d",
+        "text": "She is new, because this specialty in this group has not furnished a professional service within the past 3 years."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "She is new because the same specialty in the same group has not provided professional services within the past 3 years. A different partner does not reset that test, and a gap of 3 years and 2 months sits outside the window.",
+    "distractorExplanations": {
+      "a": "An old chart does not freeze established status; after 3 years without a service from that specialty and group, the patient is new.",
+      "b": "A stranger partner is not what sets the status; the 3-year specialty-and-group window is the test, and that window has lapsed.",
+      "c": "Five years is the wrong interval, and specialty does matter; the interval is 3 years within the same specialty and group."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-018",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "An acute abdomen brings Mr. Chen to the surgeon on Tuesday. That afternoon the surgeon decides on a major operation carrying a 90-day global period, performed Wednesday morning. Which modifier belongs on the Tuesday visit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 57, because the visit is the decision for major surgery on the day before a 90-day global procedure."
+      },
+      {
+        "id": "b",
+        "text": "Modifier 25, because an evaluation on the day of or the day before any operation is appended with the minor-procedure modifier regardless of how long the global period lasts."
+      },
+      {
+        "id": "c",
+        "text": "No modifier is added, because the decision visit is absorbed into the global package and is not listed."
+      },
+      {
+        "id": "d",
+        "text": "Modifier 24, because Tuesday is already postoperative even though the operation has not yet occurred."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 57 reports the decision for major surgery when that decision is made on the day of, or the day before, a procedure with a 90-day global period. Modifier 25 does not identify that major-surgery decision.",
+    "distractorExplanations": {
+      "b": "Modifier 25 is the separate-visit concept used with a minor procedure, not the flag for a decision for 90-day major surgery.",
+      "c": "The visit that decided on major surgery is separately reportable with modifier 57; the 90-day package does not erase that decision visit.",
+      "d": "Modifier 24 fits an unrelated visit during an existing postoperative period, and this operation has not started, so that period does not exist yet."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-019",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "During a scheduled adult preventive exam, the clinician also evaluates a new migraine pattern, orders imaging, and writes a treatment plan in a separate section of the note. Which reporting stance is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Drop the preventive exam and keep only the migraine work, because a preventive service and a problem-oriented service are not allowed to share one date."
+      },
+      {
+        "id": "b",
+        "text": "Report the preventive exam and give the migraine work away, because a preventive exam already covers any problem found that day."
+      },
+      {
+        "id": "c",
+        "text": "Report the preventive exam and the problem-oriented visit, because the migraine work is significant and separately documented."
+      },
+      {
+        "id": "d",
+        "text": "Postpone the migraine work to another date, because a problem discovered during prevention cannot be reported the same day."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A preventive visit and a significant, separately identifiable problem-oriented visit can both be reported on the same day when the problem work is documented. The migraine service is not free merely because the preventive exam occurred.",
+    "distractorExplanations": {
+      "a": "The preventive exam stays reportable; finding a migraine does not force the coder to discard the preventive service.",
+      "b": "Documented migraine work that is significant and separately identifiable is not given away because a preventive exam was also done.",
+      "d": "The migraine work does not have to wait for another date; same-day problem work can be reported when it is separately documented."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-020",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "After routine knee arthroscopy, Mr. Patel is awake and comfortable in the recovery bay, sipping water. The surgeon's brief check finds no life-threatening failure. A coworker still labels the check critical care because the bay shares a corridor with an intensive-care unit. Which statement is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The shared corridor with the intensive-care unit is enough by itself, so this brief check is critical care even though Mr. Patel is awake, comfortable, and has no life-threatening failure."
+      },
+      {
+        "id": "b",
+        "text": "The minutes in the recovery bay qualify as critical care once they reach the time minimum, even though Mr. Patel is awake and stable."
+      },
+      {
+        "id": "c",
+        "text": "Post-anesthesia monitoring is critical care until the patient is cleared to leave the recovery bay, because that bay is a high-acuity setting."
+      },
+      {
+        "id": "d",
+        "text": "It is time-based care of a critically ill or injured patient with a life-threatening condition; the corridor does not qualify the check."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Critical care requires a critically ill or injured patient with a life-threatening condition, and the service is reported by time. Reaching a time minimum in the recovery bay does not create the service when the patient is stable, and the bay itself does not either. Sharing a corridor with an intensive-care unit does not turn this brief check into critical care.",
+    "distractorExplanations": {
+      "a": "A nearby intensive-care corridor does not create critical care. The patient must be critically ill or injured with a life-threatening condition.",
+      "b": "A time minimum does not turn a stable recovery check into critical care. Mr. Patel is awake and comfortable, with no life-threatening failure.",
+      "c": "Staying in the recovery bay until clearance is ordinary post-anesthesia care. That setting does not make a stable patient critically ill or injured."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-021",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Dr. Shah sends an endocrinologist a chart message asking what an unexpected thyroid result means for the dose Dr. Shah is managing. The endocrinologist sees the patient, writes an interpretation, and sends that note to Dr. Shah. Dr. Shah then changes the dose. The endocrinologist does not schedule further thyroid visits. Which label fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A transfer of care, because any request from another clinician moves ongoing management to the receiving physician and ends the requester's responsibility."
+      },
+      {
+        "id": "b",
+        "text": "A new-patient office visit, because the endocrinologist has never met this patient."
+      },
+      {
+        "id": "c",
+        "text": "A consultation, because a provider requested an opinion and a report back, and care stayed with the requester."
+      },
+      {
+        "id": "d",
+        "text": "A patient-requested second opinion, because the interpretation counts when the patient, rather than Dr. Shah, is the one who asks for it."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A consultation needs a request from another provider, a professional opinion, and a report back to that provider. Dr. Shah asked what the thyroid result meant, received the interpretation, and kept adjusting the dose, so the endocrinologist did not take over care. The encounter is not a transfer of care, and the patient did not have to be the one who asked.",
+    "distractorExplanations": {
+      "a": "A transfer of care moves ongoing management to the receiver. Dr. Shah kept adjusting the dose, so this visit is not a handoff.",
+      "b": "A first meeting does not define a consultation. The request, the opinion, and the report back are what define it.",
+      "d": "The request has to come from a provider who wants an opinion. A visit the patient starts is not this consultation, and Dr. Shah is the clinician who asked."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-022",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "The clinician examines Ms. Brooks in her room at a skilled nursing facility, reviews the facility record, and writes the note at the bedside. Billers want an office-visit family because the clinic stores the chart. Which pairing fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nursing-facility visit family, with a place of service matching the facility where the encounter happened."
+      },
+      {
+        "id": "b",
+        "text": "Office-visit family with a clinic place of service, because the clinic that stores the chart counts as the site even though the exam occurred in the facility room."
+      },
+      {
+        "id": "c",
+        "text": "Office-visit family paired with a nursing-facility place of service, so the family and the site disagree."
+      },
+      {
+        "id": "d",
+        "text": "Leave the place of service blank, because the code family already tells the payer where the patient was seen."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Nursing-facility evaluation and management and office evaluation and management are different code families. The place of service has to match the nursing facility, where this encounter happened, not the clinic that stores the chart.",
+    "distractorExplanations": {
+      "b": "Chart storage at the clinic does not relocate the encounter; the patient was examined in the nursing facility, so the office family is the wrong family.",
+      "c": "An office code family with a facility place of service splits the site from the family; both should reflect the nursing facility.",
+      "d": "Place of service is how the claim shows where the encounter happened; the code family does not substitute for it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-023",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A nurse coordinator logs phone check-ins, medication reconciliation, and care-plan updates across the month for a patient who lives with several chronic conditions. The physician also saw the patient once in clinic this month. Staff want the log renamed as that clinic visit. Which description fits the log?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A second copy of that clinic visit, because a care-plan update during the month means the phone log is billed again as the face-to-face encounter."
+      },
+      {
+        "id": "b",
+        "text": "Principal care management, because several chronic conditions are reported as monthly management of one disease."
+      },
+      {
+        "id": "c",
+        "text": "It replaces the clinic visit for that month, because the phone log and the face-to-face encounter cannot both be reported."
+      },
+      {
+        "id": "d",
+        "text": "Monthly non-face-to-face chronic care management for multiple chronic conditions, kept separate from the clinic visit."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Chronic care management is monthly non-face-to-face work for a patient with multiple chronic conditions. It is not principal care management of a single disease, and it does not replace the office visit from the same month. That clinic encounter stands on its own when its own requirements are met.",
+    "distractorExplanations": {
+      "a": "A care-plan update in the monthly log does not duplicate the clinic encounter or turn the calls into that face-to-face visit.",
+      "b": "Principal care management is monthly work for one complex chronic condition. Several chronic conditions addressed in this non-face-to-face log fit chronic care management, which stays separate from the clinic visit.",
+      "c": "Chronic care management does not cancel the clinic visit. The monthly non-face-to-face work and the office encounter are reported separately when each one is supported."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-024",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "The nurse spends several minutes rooming Mr. Ortiz and recording vitals before the physician comes in. That afternoon the physician finishes personal charting on this same patient and asks which of those two blocks belongs in total time for the office level. Which answer is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both blocks belong in the physician's total time, because minutes the nurse spends rooming the patient without the physician still roll up to whoever bills the visit."
+      },
+      {
+        "id": "b",
+        "text": "Only the face-to-face minutes inside the room belong, so afternoon charting by the physician is left out."
+      },
+      {
+        "id": "c",
+        "text": "The physician's own same-day charting belongs; rooming by the nurse without that physician does not."
+      },
+      {
+        "id": "d",
+        "text": "Neither block belongs, because afternoon charting is treated as clerical and is excluded from the physician's time."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Time for an office visit includes the coder-eligible same-day activities the billing provider spends on that patient, including the physician's own afternoon charting. Time the nurse spends rooming the patient without the billing provider is not the provider's time.",
+    "distractorExplanations": {
+      "a": "Nursing time spent rooming the patient without the billing provider does not roll up into that provider's visit time.",
+      "b": "Limiting the clock to face-to-face minutes inside the room drops same-day charting the physician personally did for this patient.",
+      "d": "Afternoon charting the physician personally performs for this patient can count; treating that charting as excluded clerical work is the mistake."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-025",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Two issues are managed at one clinic encounter: a mild rash on the first assessment line, and a worsening heart-failure flare with outside-record review plus a high-risk drug change on the following line. The level is being chosen from the decision, not the clock. What sets it?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The problems, the data, and the risk together, rather than which issue was typed first."
+      },
+      {
+        "id": "b",
+        "text": "Whichever issue is typed on the first assessment line, because list order is the scoring rule when two problems are addressed at one encounter."
+      },
+      {
+        "id": "c",
+        "text": "The mild rash, because the level is capped by the least serious problem on the list."
+      },
+      {
+        "id": "d",
+        "text": "The drug change by itself, because risk replaces the problems and the data."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When two problems are addressed and medical decision making is used, the level follows the problems, the data, and the risk. It does not follow which problem was listed first.",
+    "distractorExplanations": {
+      "b": "Assessment-list order is a writing habit, not the rule that sets the level when more than one problem is addressed.",
+      "c": "The level is not capped by the milder rash; both problems are weighed together with the data and the risk.",
+      "d": "A high-risk drug change does not replace the other parts of the decision; the problems and the data still count."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-026",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A physician and a nurse practitioner are both named on a facility note. The nurse practitioner performed the history, exam, and plan. The physician's mark is a typed name in the signature block, with no statement of work the physician performed. May the physician bill this shared visit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Yes. A typed name in the signature block creates substantive participation even when the note describes no task the physician performed."
+      },
+      {
+        "id": "b",
+        "text": "Yes. Two names on a facility note let the practice bill under the physician without further detail about who did the work."
+      },
+      {
+        "id": "c",
+        "text": "Yes. Working in the same group assigns the nurse practitioner's effort to the physician for billing."
+      },
+      {
+        "id": "d",
+        "text": "No. Substantive participation by the billing provider must be documented; a signature name alone does not create it."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A shared or split visit still needs the billing provider's substantive participation documented. Putting the physician's name in the signature block alone does not create that participation, so this note does not support billing under the physician.",
+    "distractorExplanations": {
+      "a": "A signature-block name shows who signed, not the substantive work the billing provider has to have performed and documented.",
+      "b": "Two names on the note do not authorize billing under the physician; that provider's own substantive participation must be in the record.",
+      "c": "Group employment does not reassign the nurse practitioner's work to the physician when the physician's participation is undocumented."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-027",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "Mr. Hale walks into the emergency department with a twisted ankle and no scheduled slot. He has no chart at the attached clinic. The coder reaches for a new-patient office visit for that reason. Which family fits the encounter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A new-patient office visit, because the missing appointment and the missing clinic chart are what place an emergency-department arrival in the office new-patient family."
+      },
+      {
+        "id": "b",
+        "text": "An established office visit, because the hospital and the clinic share a billing entity."
+      },
+      {
+        "id": "c",
+        "text": "An emergency-department visit; that family is separate, and the lack of an appointment does not make this an office new patient."
+      },
+      {
+        "id": "d",
+        "text": "Initial hospital inpatient care, because an emergency-department arrival is treated as the start of an inpatient admission."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Emergency-department evaluation and management is a different family from office evaluation and management and from initial hospital inpatient care. An emergency-department visit is not coded as a new-patient office visit because the patient had no appointment, and this walk-in ankle injury is not an inpatient admission.",
+    "distractorExplanations": {
+      "a": "Lack of an appointment does not move an emergency-department encounter into the new-patient office family. The families are different.",
+      "b": "A shared billing entity does not convert this emergency-department encounter into an established office visit.",
+      "d": "A walk-in emergency-department encounter is not initial hospital inpatient care. Admission to a ward is a different service, and this visit stays in the emergency-department family."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-028",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "The admitting physician meets Ms. Iqbal for the first time on the medical ward after she leaves the emergency department. No office chart exists. The coder wants a new-patient office visit for that first ward meeting. What should be reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A new-patient office visit, because the physician has never seen her before this admission."
+      },
+      {
+        "id": "b",
+        "text": "An established office visit, because the emergency-department record already makes her an established office patient of this hospital."
+      },
+      {
+        "id": "c",
+        "text": "Initial nursing-facility care, because the first meeting of any stay uses the facility family."
+      },
+      {
+        "id": "d",
+        "text": "Initial hospital inpatient care, because a first meeting on the ward is not an office new-patient visit."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Hospital inpatient initial care is its own service. It is not an office new-patient visit merely because the admitting physician, or the coder, has not seen the patient before the ward meeting.",
+    "distractorExplanations": {
+      "a": "A first meeting does not turn inpatient admission care into a new-patient office visit; the setting is the hospital ward.",
+      "b": "An emergency-department record does not make the admission an established office visit; the service is initial hospital inpatient care.",
+      "c": "A medical-ward admission is not nursing-facility care; the code family has to match the hospital inpatient encounter."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-029",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A healthy teenager comes in solely for counseling on diet, exercise, and tobacco avoidance. No illness, injury, or other problem is assessed or managed. The slot was labeled a routine office visit. How should the encounter be reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a problem-oriented office visit, because lifestyle counseling always stands in for a diagnosed problem."
+      },
+      {
+        "id": "b",
+        "text": "As a new-patient office visit, because preventive counseling cannot stand on its own and must be forced into the office new-patient family."
+      },
+      {
+        "id": "c",
+        "text": "As preventive medicine counseling, because that was the purpose and no problem was addressed."
+      },
+      {
+        "id": "d",
+        "text": "As a periodic preventive medicine visit, because diet and tobacco counseling in a healthy patient is reported with the age-specific preventive exam."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "When preventive medicine counseling is the purpose of the visit and no problem is addressed, the encounter is reported as that counseling. It is not reported as a problem-oriented office visit, and it is not a periodic preventive exam that was not performed.",
+    "distractorExplanations": {
+      "a": "Diet, exercise, and tobacco counseling do not create a problem when no illness or injury was assessed or managed.",
+      "b": "Preventive counseling can stand on its own. The lack of a problem is why the problem-oriented office family is not used.",
+      "d": "A periodic preventive visit includes the age-specific history and exam. This encounter was counseling alone, so it is preventive medicine counseling rather than that comprehensive preventive visit."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-evaluation-management-030",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "evaluation-management",
+    "prompt": "A clinician sees a wheezing child in the office late on a Sunday evening, during the practice's posted special hours. An after-hours adjunct is available. The coder asks if that adjunct can stand in for the visit level. How is the adjunct used?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add it to the office visit; the adjunct does not replace the visit level."
+      },
+      {
+        "id": "b",
+        "text": "Report the after-hours adjunct alone and drop the office visit, because a Sunday evening encounter lets the adjunct stand in for the visit level."
+      },
+      {
+        "id": "c",
+        "text": "Raise the office level one step for the weekend and leave the adjunct off the claim."
+      },
+      {
+        "id": "d",
+        "text": "Report an emergency-department visit, because Sunday evening moves an office encounter into the emergency family."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "After-hours or weekend adjunct codes, when used, are added to the evaluation and management service. They do not replace the visit level, which is still chosen for the office encounter itself.",
+    "distractorExplanations": {
+      "b": "The Sunday evening adjunct supplements the office visit; it does not stand in for the level or erase the visit.",
+      "c": "A weekend does not raise the office level by one step, and leaving the adjunct off ignores its role as an addition to the visit.",
+      "d": "Posted weekend hours in the office do not convert the encounter into an emergency-department visit."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
   },
   {
     "id": "aapc-cpc-readiness-check-surgery-anesthesia-001",
@@ -1323,7 +2313,7 @@
     "id": "aapc-cpc-readiness-check-surgery-anesthesia-011",
     "examSlug": "aapc-cpc-readiness-check",
     "topicId": "surgery-anesthesia",
-    "prompt": "The surgical package (global surgery) typically includes:",
+    "prompt": "A general surgeon repairs an inguinal hernia in the morning and will see the patient for the usual wound checks. A separate anesthesiologist bills the anesthesia. Which services sit inside the surgeon's global surgical package?",
     "options": [
       {
         "id": "a",
@@ -1422,7 +2412,7 @@
     "id": "aapc-cpc-readiness-check-surgery-anesthesia-014",
     "examSlug": "aapc-cpc-readiness-check",
     "topicId": "surgery-anesthesia",
-    "prompt": "Separate procedure designation in CPT means the service is",
+    "prompt": "A laparoscopic cholecystectomy includes a smaller related service that CPT labels a separate procedure, done through the same approach for the same problem. How should the coder report that smaller service?",
     "options": [
       {
         "id": "a",
@@ -1483,6 +2473,501 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local QA repair (stems/distractors)"
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-016",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "10 days after an open appendectomy, the same surgeon brings the patient back to the operating room to control bleeding at the operative site. Which modifier belongs on the return procedure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 79, because a later operation in the postoperative period is treated as unrelated to the appendectomy."
+      },
+      {
+        "id": "b",
+        "text": "Modifier 58, because stopping bleeding at the operative site is coded as a planned staged procedure."
+      },
+      {
+        "id": "c",
+        "text": "No additional modifier, because a complication handled in the operating room generates no second procedure code."
+      },
+      {
+        "id": "d",
+        "text": "Modifier 78 for a related return to the operating room to treat a complication."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Modifier 78 is a related return to the operating room for a complication during the global period. Bleeding control 10 days after the appendectomy is that return, so 78 is the modifier. Modifier 79 would be an unrelated procedure, which this same-site bleeding is not.",
+    "distractorExplanations": {
+      "a": "Modifier 79 reports an unrelated procedure during the postoperative period, and this bleeding is a related complication at the operative site.",
+      "b": "Modifier 58 is a staged or more extensive related procedure, including one that was planned, not an unplanned return for bleeding.",
+      "c": "A related return to the operating room for a complication is reported with modifier 78 rather than omitted as if no second procedure occurred."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-017",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "21 days after a right carpal tunnel release, the same hand surgeon fixes a new left distal radius fracture from a fall on ice. How should that fracture repair be modified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 78, because a second operation by the same surgeon in a postoperative period is a complication return."
+      },
+      {
+        "id": "b",
+        "text": "Modifier 58, because fixation of the radius is a staged continuation of the carpal tunnel release."
+      },
+      {
+        "id": "c",
+        "text": "Modifier 79, because the fracture repair is unrelated to the carpal tunnel surgery."
+      },
+      {
+        "id": "d",
+        "text": "No fracture code, because any operation inside a postoperative period is included in the first procedure."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Modifier 79 reports an unrelated procedure during the global period of another procedure. The radius fracture from a new fall 21 days after carpal tunnel release is unrelated, so 79 is appended to the fracture repair.",
+    "distractorExplanations": {
+      "a": "Modifier 78 is a related return for a complication of the original surgery, and this radius fracture is a new injury from a fall.",
+      "b": "Modifier 58 covers a staged or more extensive procedure related to the first surgery, not fixation of a new fracture on the other limb.",
+      "d": "An unrelated procedure during another procedure's postoperative period is reported with modifier 79; it is not dropped from the claim."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-018",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A planned wider excision of the same breast lesion is performed by the original surgeon during the postoperative period after a diagnostic biopsy. Which modifier matches that second operation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 58 for a planned, more extensive procedure related to the biopsy."
+      },
+      {
+        "id": "b",
+        "text": "Modifier 78, because a second trip to the operating room in the postoperative period is a complication return."
+      },
+      {
+        "id": "c",
+        "text": "Modifier 79, because a wider excision of the same lesion is unrelated to the biopsy."
+      },
+      {
+        "id": "d",
+        "text": "Modifier 24, because the second operation is an evaluation and management visit."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 58 reports a staged or more extensive related procedure during the global period, including one that was planned. The wider excision of the same breast lesion fits 58. It is not a complication return, which would be modifier 78.",
+    "distractorExplanations": {
+      "b": "Modifier 78 reports an unplanned return to the operating room for a complication, not a planned wider excision of the same lesion.",
+      "c": "Modifier 79 is an unrelated procedure, and a wider excision of the same breast lesion is related to the biopsy.",
+      "d": "Modifier 24 is an unrelated evaluation and management service, and this encounter is a second operation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-019",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "While a thyroidectomy is still in its postoperative period, the operating surgeon evaluates acute sinusitis that is unrelated to the neck wound. How should that visit be coded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a routine wound check included with the thyroidectomy, with no separate visit code."
+      },
+      {
+        "id": "b",
+        "text": "With modifier 78, treating the sinusitis visit as a complication return to the operating room."
+      },
+      {
+        "id": "c",
+        "text": "With modifier 24, because the sinusitis visit is unrelated to the thyroidectomy."
+      },
+      {
+        "id": "d",
+        "text": "With modifier 25, as a significant visit on the same day as a minor procedure."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Modifier 24 is an unrelated evaluation and management service by the same surgeon during the global period. Acute sinusitis is unrelated to the thyroidectomy, so the visit takes 24. Routine wound checks stay in the package and are not billed this way.",
+    "distractorExplanations": {
+      "a": "A routine wound check stays in the package, but this visit addresses new acute sinusitis unrelated to the neck wound.",
+      "b": "Modifier 78 is a related return to the operating room for a complication, not an office visit for sinusitis.",
+      "d": "Modifier 25 is a significant, separately identifiable visit on the same day as a procedure, which is not the visit described here."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-020",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A lumbar laminectomy note also describes an additional vertebral segment, and the codebook marks that extra segment as an add-on service. How is the extra segment reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As a stand-alone service that replaces the laminectomy, with the primary code left off the claim."
+      },
+      {
+        "id": "b",
+        "text": "With modifier 51 on the extra segment, because it is a second procedure at the same session."
+      },
+      {
+        "id": "c",
+        "text": "With modifier 59, treating the extra segment as a distinct procedural service chosen on its own."
+      },
+      {
+        "id": "d",
+        "text": "With the primary laminectomy, and not reported by itself, without modifier 51."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An add-on code is not reported by itself and does not take modifier 51. The additional vertebral segment is reported with the primary lumbar laminectomy, without 51.",
+    "distractorExplanations": {
+      "a": "An add-on code describes an additional service and cannot replace the primary laminectomy it is reported with.",
+      "b": "Modifier 51 is not appended to add-on codes, so the extra vertebral segment does not take that modifier.",
+      "c": "Modifier 59 does not let an add-on segment stand without its primary code; the segment still needs the laminectomy."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-021",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "During one session, a single orthopedic surgeon repairs a ruptured Achilles tendon and excises a ganglion from the opposite foot, two distinct operations. Which modifier marks the second operation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Modifier 51, for multiple distinct procedures by the same provider."
+      },
+      {
+        "id": "b",
+        "text": "Modifier 51 attached to an add-on code, because each extra service at a session takes that modifier."
+      },
+      {
+        "id": "c",
+        "text": "No modifier, because a second operation by the same surgeon is absorbed into the first code."
+      },
+      {
+        "id": "d",
+        "text": "Modifier 50, because the Achilles repair and the ganglion excision are reported as one bilateral foot procedure."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 51 indicates multiple distinct procedures by the same provider. The Achilles repair and the ganglion excision are distinct procedures at one session, so 51 may be placed on the second. Modifier 51 is not appended to add-on codes.",
+    "distractorExplanations": {
+      "b": "Modifier 51 is not appended to add-on codes, and this session is two distinct primary procedures rather than an add-on.",
+      "c": "A distinct second procedure is not absorbed into the first code; modifier 51 signals multiple procedures by the same provider.",
+      "d": "Modifier 50 reports the same procedure on both sides. An Achilles repair and a ganglion excision are different operations, so the second procedure is not bilateral."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-022",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A 90-minute anesthetic is billed from the procedure's base units. Which other units are added when the payment is built?",
+    "options": [
+      {
+        "id": "a",
+        "text": "One time unit for each of the 90 minutes, leaving modifying units out."
+      },
+      {
+        "id": "b",
+        "text": "Time units by themselves, replacing the base units once the case runs long."
+      },
+      {
+        "id": "c",
+        "text": "Time units plus modifying units such as physical status."
+      },
+      {
+        "id": "d",
+        "text": "Qualifying-circumstance units substituted for the base units when the patient is very old."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Anesthesia payment adds base units, time units, and modifying units such as physical status. Time is commonly counted in 15-minute units, so this 90-minute anesthetic contributes time on that 15-minute basis, added to the base rather than replacing it.",
+    "distractorExplanations": {
+      "a": "Anesthesia time is commonly counted in 15-minute units added with modifying units; each minute is not its own time unit, and modifying units stay in the total.",
+      "b": "Time units are added to the base units; they do not replace those base units when the anesthetic runs long.",
+      "d": "Qualifying circumstances are additional units; they do not take the place of the base anesthesia units."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-023",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Before a rotator cuff repair, the anesthesia record classifies the patient as physical status P3. What does that classification mean?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The patient has mild systemic disease."
+      },
+      {
+        "id": "b",
+        "text": "The patient has severe systemic disease that is a constant threat to life."
+      },
+      {
+        "id": "c",
+        "text": "The case was an emergency that began outside usual staffing hours."
+      },
+      {
+        "id": "d",
+        "text": "The patient has severe systemic disease."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Physical status P3 means severe systemic disease. It describes the patient's condition before the rotator cuff repair. Mild disease is a lower class, disease that constantly threatens life is a higher class, and an emergency is a qualifying circumstance rather than P3.",
+    "distractorExplanations": {
+      "a": "Mild systemic disease is physical status P2. P3 means the systemic disease is severe.",
+      "b": "Severe systemic disease that is a constant threat to life is physical status P4, not P3.",
+      "c": "An emergency is a qualifying circumstance, not the definition of physical status P3."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-024",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "During an elective cataract extraction, the anesthesia note documents controlled hypotension as a qualifying circumstance. How is that circumstance reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "In place of the base anesthesia code, because a qualifying circumstance replaces the anesthetic."
+      },
+      {
+        "id": "b",
+        "text": "As a surgical add-on placed on the cataract procedure rather than on the anesthesia."
+      },
+      {
+        "id": "c",
+        "text": "As an add-on listed with the base anesthesia code."
+      },
+      {
+        "id": "d",
+        "text": "As physical status P3, because controlled hypotension means severe systemic disease."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Qualifying circumstances, including extreme age, emergency, hypotension, and hypothermia, are add-on services to the anesthesia. Controlled hypotension is reported with the base anesthesia code, not as a replacement for that code.",
+    "distractorExplanations": {
+      "a": "A qualifying circumstance does not replace the base anesthesia code; it is reported in addition to that code.",
+      "b": "Qualifying circumstances are reported with the anesthesia, not as add-on codes on the cataract procedure.",
+      "d": "Physical status P3 means severe systemic disease; controlled hypotension is a qualifying circumstance, not that status."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-025",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A clinic note measures a cheek lesion at 1.2 cm and records an excised diameter of 1.8 cm once the narrowest required margins are included. Which figure should be used to choose the excision size?",
+    "options": [
+      {
+        "id": "a",
+        "text": "1.8 cm, the lesion plus the narrowest margins required."
+      },
+      {
+        "id": "b",
+        "text": "1.2 cm, the lesion by itself, leaving the margins out of the coded size."
+      },
+      {
+        "id": "c",
+        "text": "The sutured closure length, because closure length replaces excised diameter when both are written down."
+      },
+      {
+        "id": "d",
+        "text": "The widest margin on a single side, leaving the lesion diameter out of the figure."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Excision size for coding includes the lesion plus the narrowest margins needed. The cheek lesion measures 1.2 cm, and the excised diameter with those margins is 1.8 cm, so 1.8 cm is used. Coding the lesion alone at 1.2 cm understates the excision.",
+    "distractorExplanations": {
+      "b": "Using the 1.2 cm lesion alone understates the excision, because the narrowest margins required are part of the coded size.",
+      "c": "Closure length measures a repair; excision size uses the excised diameter, including the narrowest margins.",
+      "d": "A margin by itself, without the lesion, is not the excised diameter; lesion and narrowest margins are combined."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-026",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "During colonoscopy, a diagnostic pass finds a polyp and the physician removes it with a snare through the same scope. How should the diagnostic pass be treated?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Report both a diagnostic colonoscopy and the snare polypectomy, because the physician looked and then removed tissue through that scope."
+      },
+      {
+        "id": "b",
+        "text": "Report the diagnostic colonoscopy and drop the polypectomy, treating removal as part of the look."
+      },
+      {
+        "id": "c",
+        "text": "Report the snare removal as a biopsy, because tissue taken through the scope is coded as a specimen collection."
+      },
+      {
+        "id": "d",
+        "text": "Report the snare polypectomy and not a separate diagnostic endoscopy through the same scope."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When a diagnostic endoscopy becomes a therapeutic procedure through the same approach, the surgical endoscopy rule bundles the diagnostic look. The snare polypectomy is reported, and a separate diagnostic colonoscopy through that same scope is not also reported.",
+    "distractorExplanations": {
+      "a": "Reporting the diagnostic look and the therapy through the same scope counts the look twice when the surgical endoscopy rule bundles it.",
+      "b": "The therapeutic removal is the service to keep; dropping it and billing the diagnostic look reverses the bundling rule.",
+      "c": "Snare removal of the polyp is a therapeutic polypectomy. A biopsy code is a sample of tissue and does not take the place of that removal."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-027",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A pressure-injury note states that necrotic skin was cut away and that muscle was neither exposed nor removed. Which debridement description fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Debridement down to muscle, because necrotic tissue means the work went beneath the skin."
+      },
+      {
+        "id": "b",
+        "text": "Debridement that includes bone, because surgical cleaning of a wound is taken to reach bone."
+      },
+      {
+        "id": "c",
+        "text": "Debridement of skin, matching removal that stopped at skin."
+      },
+      {
+        "id": "d",
+        "text": "Excision of a lesion, because cutting away necrotic skin is coded in the excision family."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Debridement that removes skin only is not coded as debridement down to muscle. This pressure injury had necrotic skin removed and muscle was neither exposed nor removed, so depth stops at skin.",
+    "distractorExplanations": {
+      "a": "Calling the work debridement down to muscle overstates the depth; the note says muscle was neither exposed nor removed.",
+      "b": "Bone debridement requires work that involves bone, and this note stops at skin.",
+      "d": "The note describes debridement of necrotic skin, not excision of a lesion, so the excision family does not fit."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-028",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "Cryotherapy is applied to a plantar wart during an office visit. The note names the freezing technique and states that no specimen was submitted to pathology. Which procedure family should be coded?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Excision, because destroying a wart and cutting it out belong to one code family."
+      },
+      {
+        "id": "b",
+        "text": "Biopsy, because wart treatment is coded as collection of a tissue sample."
+      },
+      {
+        "id": "c",
+        "text": "Paring, because a plantar wart treated this way is coded as cutting a callus."
+      },
+      {
+        "id": "d",
+        "text": "Destruction, because cryotherapy of the wart belongs to that family."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Destruction, including cryotherapy, is a different family from excision. The plantar wart was treated by freezing and no specimen was submitted, so the coder reports destruction. Cutting the lesion out would be excision, which this note does not describe.",
+    "distractorExplanations": {
+      "a": "Excision cuts the lesion out and is a different family from destruction; this note documents cryotherapy destruction.",
+      "b": "A biopsy obtains tissue for pathology; cryotherapy that destroys the wart and submits nothing is not a biopsy.",
+      "c": "Paring cuts a corn or callus and is not the family for cryotherapy. Freezing a wart is destruction of the lesion."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-029",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "A scalp lesion is excised, and the surgeon then harvests a split-thickness graft from the thigh to cover the defect, described as a separate step. What should be done with the graft?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Omit the graft, assuming a skin graft is included whenever a lesion is excised."
+      },
+      {
+        "id": "b",
+        "text": "Report the graft and drop the excision, treating the graft as a substitute for the excision."
+      },
+      {
+        "id": "c",
+        "text": "Look for a graft code, because the note describes a separate graft."
+      },
+      {
+        "id": "d",
+        "text": "Report an intermediate repair of the scalp and skip a graft code, because covering the defect is a layered closure."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A skin graft is not automatically included in every excision. This note describes a separate split-thickness graft from the thigh to the scalp, so the coder looks for a graft code rather than assuming the excision covers the graft.",
+    "distractorExplanations": {
+      "a": "Treating a graft as automatic with every excision drops a step the note describes separately.",
+      "b": "The graft does not replace the excision; the lesion removal and the separate graft are both considered.",
+      "d": "A split-thickness graft is not reported as an intermediate repair. Covering the defect with a graft is a graft service, not a layered closure."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-surgery-anesthesia-030",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "surgery-anesthesia",
+    "prompt": "To remove a forearm lipoma, the surgeon injects lidocaine and no anesthesia professional attends. How is that local anesthetic reported?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It stays in the surgical package, because the surgeon gave the local anesthetic."
+      },
+      {
+        "id": "b",
+        "text": "The surgeon bills a separate anesthesia service for the lidocaine in addition to the lipoma removal."
+      },
+      {
+        "id": "c",
+        "text": "With modifier 47, because the surgeon's lidocaine injection is billed as anesthesia by the surgeon."
+      },
+      {
+        "id": "d",
+        "text": "It is reported as a qualifying circumstance added to a base anesthesia code."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Local anesthesia given by the surgeon is inside the surgical package, so the lidocaine for this forearm lipoma is not billed separately by the surgeon. An anesthesia professional who provides the anesthesia bills that service separately.",
+    "distractorExplanations": {
+      "b": "Local anesthetic given by the operating surgeon is part of the surgical package, not a second anesthesia bill from that surgeon.",
+      "c": "Modifier 47 reports regional or general anesthesia by the surgeon and excludes local infiltration, which stays in the surgical package.",
+      "d": "Qualifying circumstances such as extreme age or hypotension are anesthesia add-ons, not the surgeon's lidocaine."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
   },
   {
     "id": "aapc-cpc-readiness-check-compliance-billing-001",
@@ -1978,5 +3463,500 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go local bank (Wave 1). · Local short-stem expansion"
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-016",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "During a quarterly edit review, the coder finds a column-two procedure paired with a column-one service under modifier indicator 0. A coworker wants to append a distinct-service modifier so both lines pay. Which reading of indicator 0 should stop that workaround?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Indicator 0 still allows a distinct-service modifier when the chart says the two services were separate."
+      },
+      {
+        "id": "b",
+        "text": "Indicator 0 means the edit is not applicable, so the pair needs no modifier review."
+      },
+      {
+        "id": "c",
+        "text": "Indicator 0 drops the column-one line and leaves the column-two line to be paid alone."
+      },
+      {
+        "id": "d",
+        "text": "The column-two code cannot be unbundled with a modifier."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "NCCI modifier indicator 0 means the column-two code cannot be unbundled with a modifier. Indicator 1 may allow a modifier when the services are distinct. Indicator 9 means the edit is not applicable.",
+    "distractorExplanations": {
+      "a": "Allowing a distinct-service modifier is indicator 1, and only when the services are distinct. Indicator 0 does not permit that bypass.",
+      "b": "An edit that is not applicable is indicator 9. Indicator 0 is an active edit that a modifier cannot bypass.",
+      "c": "Indicator 0 does not drop the column-one code or leave the column-two code as the payable line."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-017",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "A dermatologist removes a lesion from the left thigh during a morning session and a lesion from the right thigh during a later session the same day. That procedure pair carries modifier indicator 1. Which use of modifier 59 or an X modifier fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Append the modifier, because indicator 1 allows a bypass and the thighs and sessions differ."
+      },
+      {
+        "id": "b",
+        "text": "Append the modifier so both lines pay, whether or not the edit allows a bypass and whether or not the two excisions are distinct."
+      },
+      {
+        "id": "c",
+        "text": "Leave the modifier off. Indicator 1 keeps the column-two code bundled and does not allow a bypass."
+      },
+      {
+        "id": "d",
+        "text": "Leave the modifier off. Lesions on two thighs make this edit inapplicable, so no bypass is reported."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Modifier 59 or an X modifier is used when the edit allows a bypass and the service is distinct. Indicator 1 may allow that modifier. These excisions differ by limb and by session, so the modifier is appropriate. It is not a device for forcing payment of a pair that is not distinct, and indicator 1 is not a prohibition on the modifier.",
+    "distractorExplanations": {
+      "b": "Forcing both lines to pay without an edit that allows the bypass, or without a distinct service, misuses modifier 59. Indicator 1 allows it for distinct work.",
+      "c": "A modifier ban is indicator 0. Indicator 1 may allow modifier 59 or an X modifier when the services are distinct, as these two sessions are.",
+      "d": "An edit that is not applicable is indicator 9. Indicator 1 still applies, so different thighs are reported with the modifier rather than with the edit ignored."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-018",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Medicare has already denied a therapy visit the clinic expected to be noncovered. The receptionist asks the beneficiary to sign an Advance Beneficiary Notice the next morning so the clinic can bill the patient. When should that notice have been obtained?",
+    "options": [
+      {
+        "id": "a",
+        "text": "After the remittance posts, so the notice can quote the denial reason and the dollar amount."
+      },
+      {
+        "id": "b",
+        "text": "When the patient requests a full chart copy for a disability application."
+      },
+      {
+        "id": "c",
+        "text": "Before the service, when a Medicare denial is expected."
+      },
+      {
+        "id": "d",
+        "text": "After the patient pays cash and asks for a written receipt."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An Advance Beneficiary Notice is given before a Medicare service the practice expects Medicare to deny. It is not signed after the denial arrives, which is what the receptionist proposed.",
+    "distractorExplanations": {
+      "a": "Waiting for the remittance puts the signature after the denial. The notice has to be given before the service.",
+      "b": "A disability chart request is a records release. It is not the moment an Advance Beneficiary Notice is required.",
+      "d": "A cash receipt after payment is not an Advance Beneficiary Notice, and it comes too late to warn the patient."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-019",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "A release clerk wants a payer auditor to receive every page of the record. A coworker says the minimum-necessary standard will also pick the procedure code on the claim. What does that standard actually govern?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It picks the procedure code the auditor is allowed to see on the claim."
+      },
+      {
+        "id": "b",
+        "text": "It sets the encryption and access-log requirements for the auditor's electronic copy."
+      },
+      {
+        "id": "c",
+        "text": "It takes the place of medical-necessity review for the outpatient tests on the claim."
+      },
+      {
+        "id": "d",
+        "text": "It limits how much information is used or disclosed."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The HIPAA minimum necessary standard is a privacy rule about how much information is used or disclosed. It can keep the auditor from receiving the entire record. It does not select the procedure code, it does not set encryption or access logs, and it does not replace medical-necessity review.",
+    "distractorExplanations": {
+      "a": "Choosing the procedure code is a coding step. Minimum necessary limits how much information is disclosed; it does not assign the code on the claim.",
+      "b": "Encryption and access logs are security safeguards. Minimum necessary is the privacy limit on how much information is used or disclosed.",
+      "c": "Medical-necessity review asks whether a test is covered. The privacy standard does not perform that review or choose the test."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-020",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Today's note records a quick hypertension recheck and no broader work. A clerk pastes a detailed plan from a different person's chart into this record so the service will look richer. The pasted plan describes the other person's problems. Which description fits the richer service?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The pasted plan supports the richer service, because those sentences describe complex problems from a detailed chart."
+      },
+      {
+        "id": "b",
+        "text": "The richer service is supported, because the pasted plan makes today's note longer than a quick recheck."
+      },
+      {
+        "id": "c",
+        "text": "This is upcoding, because the richer service is a level today's recheck does not support."
+      },
+      {
+        "id": "d",
+        "text": "This is a charge for a service that was not performed, because the plan describes someone else's problems."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Upcoding is billing a level the note for this encounter does not support. Pasting another person's plan into the chart does not document today's recheck, so the richer service is upcoding. The recheck did take place, which is different from charging for a service that was not performed.",
+    "distractorExplanations": {
+      "a": "Sentences about another person's problems do not document this recheck, so they cannot support a richer level on today's note.",
+      "b": "A longer note created by pasting someone else's plan is not support for a richer level on this recheck.",
+      "d": "The recheck was performed. Inflating its level is upcoding, not a charge for a service that did not occur."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-021",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The clinician examines the patient in an exam room at the physician's clinic, and the patient goes home the same hour. Billers entered a hospital-admission site on the professional claim. Which place of service matches the encounter?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place of service 11, the office."
+      },
+      {
+        "id": "b",
+        "text": "Place of service 21, the inpatient hospital, because a face-to-face exam can use a hospital-admission site when the claim needs a facility location."
+      },
+      {
+        "id": "c",
+        "text": "Place of service 23, the emergency department, because the patient was treated and went home the same day."
+      },
+      {
+        "id": "d",
+        "text": "Place of service 22, the on-campus outpatient hospital, because the practice employs the clinician who performed the exam."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Place of service 11 is the office. An exam in the physician's clinic, with the patient going home the same hour, is reported with 11. Place of service 21 is the inpatient hospital, 22 is the on-campus outpatient hospital, and 23 is the emergency department.",
+    "distractorExplanations": {
+      "b": "Place of service 21 is the inpatient hospital. The patient was examined in the clinic and went home, so a hospital-admission site does not match this encounter.",
+      "c": "Going home the same day does not make a clinic exam an emergency department encounter. That site is place of service 23, and this visit is the office, place of service 11.",
+      "d": "Employment of the clinician does not turn a clinic exam into an on-campus outpatient hospital, which is place of service 22."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-022",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Utilization review lists inpatient status. The patient spends the night in a hospital bed, and the physician writes the note at that bedside. Staff reported code 22 as the site on the professional claim. Which place of service belongs on that claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place of service 22, because every professional service on a hospital campus during an overnight stay uses the on-campus outpatient hospital code."
+      },
+      {
+        "id": "b",
+        "text": "Either 21 or 22, because both codes mean care inside a hospital and payers treat the two sites as interchangeable."
+      },
+      {
+        "id": "c",
+        "text": "Place of service 22 on the claim, with the bedside unit described in a comment rather than as the location code."
+      },
+      {
+        "id": "d",
+        "text": "Place of service 21."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Place of service 21 is the inpatient hospital. Place of service 22 is the on-campus outpatient hospital. A bedside note for a patient in inpatient status who spends the night is reported with 21, not 22. A comment cannot replace the location code, and the two codes are not interchangeable.",
+    "distractorExplanations": {
+      "a": "An overnight stay does not convert inpatient status to place of service 22. That code is the on-campus outpatient hospital; the inpatient hospital is 21.",
+      "b": "Codes 21 and 22 are different sites. Inpatient hospital is 21, and on-campus outpatient hospital is 22. Payers do not treat them as the same site.",
+      "c": "A comment does not set the location. This professional claim needs place of service 21, not 22."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-023",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "Care is given in the emergency department, place of service 23. The biller changes the visit to an office-visit family and leaves place of service 11 on the claim. Which problem does that change create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "There is no problem when the history and exam would also fit an office visit."
+      },
+      {
+        "id": "b",
+        "text": "The office-visit family is acceptable while place of service 11 remains, because the code family by itself shows where the patient was treated."
+      },
+      {
+        "id": "c",
+        "text": "The claim reports an office visit and place of service 11 for care given in the emergency department"
+      },
+      {
+        "id": "d",
+        "text": "Keep the office-visit family and move the location to the inpatient hospital."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Place of service 23 is the emergency department. Care given there is not an office visit, and leaving place of service 11 on the claim reports the wrong site. The code family and the place of service both have to match the emergency department.",
+    "distractorExplanations": {
+      "a": "History and exam that resemble office work do not change an emergency department encounter at place of service 23 into an office visit.",
+      "b": "Switching the code family and leaving place of service 11 misstates the emergency department encounter, which is place of service 23.",
+      "d": "The inpatient hospital is a different site. This care was in the emergency department, place of service 23, not an office visit."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-024",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "A cataract is removed in a freestanding center licensed for same-day operations. The patient leaves that afternoon. The professional claim names the clinic as the site. Which place of service belongs on the claim?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Place of service 11, because the surgeon's professional services follow the clinic address on the enrollment file."
+      },
+      {
+        "id": "b",
+        "text": "Place of service 21, because an operation performed outside the clinic is billed as an inpatient hospital admission."
+      },
+      {
+        "id": "c",
+        "text": "Place of service 22, because a same-day operation is billed as an on-campus outpatient hospital service."
+      },
+      {
+        "id": "d",
+        "text": "Place of service 24, the ambulatory surgical center."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Place of service 24 is an ambulatory surgical center. A cataract removed in a freestanding center licensed for same-day operations is reported with 24. It is not the office at place of service 11, an inpatient admission at 21, or an on-campus outpatient hospital service at 22.",
+    "distractorExplanations": {
+      "a": "The clinic address on enrollment does not move this operation to the office. The freestanding center is place of service 24, not 11.",
+      "b": "An operation outside the clinic is not automatically an inpatient admission. The patient left a freestanding center the same day, which is place of service 24, not 21.",
+      "c": "Same-day surgery in a freestanding center is not an on-campus outpatient hospital service. That hospital site is place of service 22; this center is 24."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-025",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The operative note documents removal of a cyst from the forearm. Charge entry deletes that operative line and forwards a code for the opened instrument pack. Which line should carry the removal?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The surgery code for the cyst removal."
+      },
+      {
+        "id": "b",
+        "text": "The instrument-pack code by itself, because that supply code replaces the removal when the payer is commercial and a pack was opened."
+      },
+      {
+        "id": "c",
+        "text": "No operative line, because the pack code already includes the surgeon's work on the cyst."
+      },
+      {
+        "id": "d",
+        "text": "A Level II code in place of the surgery code, because Level II is the code set that reports operations."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "HCPCS Level II reports supplies, drugs, and some services that are not surgery codes. It does not replace the surgery code when the surgeon removes a cyst and a surgery code reports that operation. The instrument-pack code may report the pack. It does not report the removal, and it does not include the surgeon's work.",
+    "distractorExplanations": {
+      "b": "A commercial payer and an opened pack do not let the supply code replace the surgery code. The removal is still reported with the surgery code.",
+      "c": "The pack code does not include the surgeon's work. Dropping the operative line omits the cyst removal that was performed.",
+      "d": "Level II is not the code set for this operation. A surgery code reports the cyst removal; a Level II code does not take its place."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-026",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "A coverage policy limits a nerve-conduction test to patients who have listed symptoms. The coder treats the policy as a rewrite of the procedure code's definition. Which effect can that policy have?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It rewrites the procedure code so the code's meaning becomes the symptom list in the policy."
+      },
+      {
+        "id": "b",
+        "text": "It removes the procedure code from the code set for patients who fall outside the symptom list."
+      },
+      {
+        "id": "c",
+        "text": "It forces a different procedure family whenever a policy discusses medical necessity."
+      },
+      {
+        "id": "d",
+        "text": "It can limit coverage for medical necessity, not the code's meaning."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An LCD or NCD can limit medical necessity for coverage of the nerve test. It does not change what the procedure code means.",
+    "distractorExplanations": {
+      "a": "The policy does not rewrite the procedure code. The code still means the nerve test; the policy may limit coverage.",
+      "b": "Lack of coverage for some patients does not delete the procedure code from the code set.",
+      "c": "A medical-necessity limit does not force a different procedure family. The same code still describes the test."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-027",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The fee tool lists an RVU beside a consultation. A manager copies that figure into the cash-posting field as the amount the payer owes. Which statement about the figure is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is the dollar amount the payer must send, because the fee-tool figure is already the payment."
+      },
+      {
+        "id": "b",
+        "text": "It is a geographic adjustment that replaces the conversion factor and the other payment factors."
+      },
+      {
+        "id": "c",
+        "text": "It is a relative weight, not the payment in dollars."
+      },
+      {
+        "id": "d",
+        "text": "It is the patient's coinsurance, entered before the claim is transmitted."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An RVU is a relative weight, not the dollar amount the payer owes. A conversion factor and other adjustments turn that weight into a payment, so the cash-posting field should not treat the figure as money already due. It is not a geographic adjustment, and it is not the patient's coinsurance.",
+    "distractorExplanations": {
+      "a": "Posting the fee-tool figure as cash treats a relative weight as the payer's dollar payment. The weight is not that payment.",
+      "b": "A geographic adjustment is a separate fee-schedule factor. The figure copied here is a relative weight, not that adjustment and not the payment.",
+      "d": "Coinsurance is the patient's share of allowed dollars. A relative weight is not that coinsurance amount."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-028",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "The hospital facility charges for an inpatient stay are routed to the Medicare part that pays professional fees, and the surgeon professional claim is routed to the part that pays inpatient facility services. Which assignment is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Send both the facility bill and the surgeon's bill to the part that pays professional fees, since the surgeon ordered the stay."
+      },
+      {
+        "id": "b",
+        "text": "Send both bills to the part that pays inpatient facility services, since the patient was admitted to a bed."
+      },
+      {
+        "id": "c",
+        "text": "Send the facility charges to the professional part and the surgeon's claim to the facility part."
+      },
+      {
+        "id": "d",
+        "text": "Inpatient facility charges to Part A; the surgeon's professional claim to Part B."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Medicare Part A covers inpatient facility services, so the hospital stay belongs there. Medicare Part B covers professional services, so the surgeon's claim belongs on Part B. The two parts were swapped.",
+    "distractorExplanations": {
+      "a": "The surgeon's order does not move inpatient facility charges onto the part that pays professional fees. Those facility charges are Part A.",
+      "b": "The admission does not place the surgeon's professional claim on the facility part. That professional claim is Part B.",
+      "c": "This choice swaps the parts. Inpatient facility charges belong to Part A, and the surgeon's professional claim belongs to Part B."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-029",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "An intra-articular injection was reserved on the morning schedule. The patient phoned before arrival, the reservation was cleared, and the procedure room stayed closed. Staff still want the injection on the claim because the reservation existed. Which claim action is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do not bill the injection, because it was not performed."
+      },
+      {
+        "id": "b",
+        "text": "Bill the injection, because a reservation on the schedule proves the service took place and the cancellation call can be set aside."
+      },
+      {
+        "id": "c",
+        "text": "Bill the injection at a reduced fee, because a same-day cancellation is still reported as a partial performance of the planned service."
+      },
+      {
+        "id": "d",
+        "text": "Bill the injection if the dose was drawn up, even though it was not administered to the patient."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A service that was not performed is not billed. The patient canceled before arrival and the procedure room stayed closed, so there is no injection to submit. A reservation is a plan, a reduced fee does not turn a cancellation into a partial injection, and drawing a dose without giving it does not mean the injection was performed.",
+    "distractorExplanations": {
+      "b": "A reservation shows a plan, not a completed injection. The canceled service was not performed and is not billed.",
+      "c": "A reduced fee does not convert a cancellation into a partial injection. No injection was given, so there is no injection claim.",
+      "d": "Drawing a dose without administering it does not mean the injection was performed, so the injection is not billed."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
+  },
+  {
+    "id": "aapc-cpc-readiness-check-compliance-billing-030",
+    "examSlug": "aapc-cpc-readiness-check",
+    "topicId": "compliance-billing",
+    "prompt": "In a teaching hospital, a resident performs and documents the full procedure. The teaching physician was absent for the key portion and added no participation note. Which conclusion about that physician's claim is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Submit it. The resident's full note is enough for the teaching physician even without presence or a participation statement."
+      },
+      {
+        "id": "b",
+        "text": "Submit it if the teaching physician is listed on the hospital medical staff for that date."
+      },
+      {
+        "id": "c",
+        "text": "Do not submit it. Presence for the key portion and a participation note are missing."
+      },
+      {
+        "id": "d",
+        "text": "Submit it after the resident reviews the findings with the teaching physician later that week."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Teaching-physician billing needs the teaching physician's presence for the key or critical portion and a note of that participation. A resident's note alone, with no teaching-physician participation, does not support the claim.",
+    "distractorExplanations": {
+      "a": "The resident's note alone, without the teaching physician's presence for the key portion and a participation note, does not support the claim.",
+      "b": "A medical-staff listing does not show presence for the key portion or a note that the teaching physician participated.",
+      "d": "A later discussion, without presence for the key portion and a participation note, does not support the teaching-physician claim."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go AAPC CPC bank, expanded 2026-11-19."
   }
 ]

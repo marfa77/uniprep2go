@@ -192,11 +192,13 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "compliance-billing", label: "Compliance, HCPCS & billing" },
     ]),
     officialSourceNote:
-      "Readiness check mapped to AAPC CPC knowledge domains (text scenarios; no code books required for this diagnostic). Not an AAPC certification exam.",
+      "AAPC's CPC exam page states 100 multiple-choice questions in four hours, one sitting, with a passing score of 70 percent (at least 70 of 100). Candidates use approved CPT, ICD-10-CM, and HCPCS Level II code books, and the exam ends with 10 medical-record cases. This UniPrep2Go check is a shorter 60-question / 75-minute text diagnostic (free 25-question version) in four equal topics. It does not use code books and it is not those area weights. Not an AAPC certification exam.",
     description:
-      "60-question AAPC CPC readiness check (free 25-question version) with domain scoring for medical coding candidates.",
+      "60-question / 75-minute AAPC CPC readiness check (free 25-question version) drawn from a 120-item bank. Official CPC exam: 100 questions in 4 hours, pass 70 percent.",
     examBody: "AAPC",
-    questionSourceNote: "Original UniPrep2Go local bank for CPC concept/guideline topics.",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-11-19; each timed attempt draws 60.",
+    lastUpdated: "2026-11-19",
   }),
   readinessConfig({
     slug: "mblex-readiness-check",

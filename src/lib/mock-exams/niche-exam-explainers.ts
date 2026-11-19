@@ -889,13 +889,20 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "aapc-cpc-readiness-check": explainer({
     practiceTestName: "AAPC CPC Practice Test",
     whatIsExam:
-      "The AAPC Certified Professional Coder (CPC) exam is a leading medical coding certification for outpatient/physician coding. It tests CPT, ICD-10-CM, and HCPCS coding accuracy plus coding guidelines and compliance.",
+      "The AAPC Certified Professional Coder (CPC) exam certifies outpatient and physician coding. AAPC's exam page states 100 multiple-choice questions in four hours, with a passing score of 70 percent, using approved CPT, ICD-10-CM, and HCPCS Level II code books. The exam includes 10 medical-record cases. This UniPrep2Go check is a shorter text diagnostic and does not use code books.",
     administeredBy: "AAPC",
+    officialFormat:
+      "Official AAPC CPC exam: 100 multiple-choice questions, 4 hours, one sitting, pass 70 percent (at least 70 of 100), open book with approved CPT, ICD-10-CM, and HCPCS Level II books, plus 10 cases. This UniPrep2Go session is 60 questions / 75 minutes (free 25-question version) in four equal topics, without code books.",
     examFaqs: [
       {
         question: "What is the AAPC CPC exam?",
         answer:
-          "CPC certifies professional medical coders, focusing on physician/outpatient coding with CPT, ICD-10-CM, and HCPCS.",
+          "CPC certifies professional medical coders on physician and outpatient coding with CPT, ICD-10-CM, and HCPCS Level II.",
+      },
+      {
+        question: "How many questions are on the CPC exam, and what score passes?",
+        answer:
+          "AAPC states 100 multiple-choice questions in four hours. A passing score is 70 percent, which is at least 70 of 100 correct.",
       },
     ],
     keywords: ["aapc cpc practice test", "cpc practice exam", "medical coding practice test"],
