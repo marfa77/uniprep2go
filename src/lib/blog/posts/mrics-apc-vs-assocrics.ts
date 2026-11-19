@@ -2,11 +2,12 @@ import type { BlogPostDraft } from "../types";
 
 export const mricsApcVsAssocricsPost: BlogPostDraft = {
   slug: "mrics-apc-vs-assocrics-pathway-cost",
-  title: "AssocRICS vs MRICS APC: Cost, Timeline, and Pathway (2026)",
-  titleTag: "AssocRICS vs MRICS 2026: Cost, Time & Pathway Compared",
+  title: "APC vs AssocRICS: UK RICS fees and how long each path takes (2027)",
+  titleTag: "APC vs AssocRICS: £520 vs £362 UK RICS fees",
   metaDescription:
-    "AssocRICS vs MRICS: AssocRICS takes about 6 months and £1,000; the MRICS APC 2+ years and £3,000+. Which to choose, and how to move up later.",
+    "UK MRICS APC enrolment is £520 + £173 subscription at enrolment; AssocRICS is £362 + £134. APC needs ~24 months structured training; Associate is shorter.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-19",
   eyebrow: "RICS · Chartered surveying",
   clusterId: "mrics",
   relatedSlugs: [
@@ -14,7 +15,7 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
     "well-ap-vs-fitwel-certification-2026",
   ],
   intro:
-    "**RICS offers two professional membership grades that sound similar but function differently: AssocRICS and MRICS (via the Assessment of Professional Competence, or APC).** One is a stepping stone. The other is the destination. Many candidates treat them as interchangeable, waste money on the wrong path, or get stuck in AssocRICS because they never planned the jump to MRICS. This guide maps cost, time, employer perception, and the hidden rule that blocks some AssocRICS holders from ever becoming Chartered.",
+    "**For UK candidates on RICS’s 2026 fee table, MRICS APC costs £520 enrolment + £173 candidate subscription paid at enrolment; AssocRICS costs £362 + £134 at the same point — about £177 less upfront on the Associate route (fees verified on rics.org/join-rics/join-fees, 19 Nov 2026).** Time differs more than the invoice: APC is built around roughly **24 months of structured training**, a 2,000-word submission, and a final interview; AssocRICS is typically a **shorter Associate assessment** (case study plus interview) when you already have about a year of relevant experience. One path buys Chartered status; the other buys Associate membership faster. Below: employer filters, upgrade rules, and when skipping AssocRICS is smarter.",
   mockSlug: "mrics-readiness-check",
   deckSlug: "mrics-anki-deck",
   cta: {

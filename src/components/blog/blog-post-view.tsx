@@ -314,7 +314,7 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
         headline: post.title,
         description: post.metaDescription,
         datePublished: post.publishedAt,
-        dateModified: post.publishedAt,
+        dateModified: post.contentUpdated ?? post.publishedAt,
         author: {
           "@type": "Organization",
           name: siteConfig.name,
@@ -390,6 +390,16 @@ export async function BlogPostView({ post }: Readonly<{ post: BlogPost }>) {
         </p>
         <p className="mt-6 text-xs font-semibold uppercase tracking-[0.14em] text-navy">Guide</p>
         <h1 className="mt-3 text-4xl tracking-tight text-balance sm:text-5xl">{post.title}</h1>
+        {post.contentUpdated ? (
+          <p className="mt-2 text-sm text-[#5f5749]">
+            Updated{" "}
+            {new Date(`${post.contentUpdated}T12:00:00Z`).toLocaleDateString("en-GB", {
+              day: "numeric",
+              month: "short",
+              year: "numeric",
+            })}
+          </p>
+        ) : null}
         <p className="mt-6 text-lg leading-8 text-[#4f493e]">
           <RichText text={post.intro} />
         </p>

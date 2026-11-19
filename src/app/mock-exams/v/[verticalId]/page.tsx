@@ -19,6 +19,7 @@ import { getVerticalSeoCopy } from "@/lib/mock-exams/vertical-seo";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { buildMockVerticalMetaDescription } from "@/lib/mock-exams/hub-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
+import { renderInlineMarkdown } from "@/lib/simple-markdown";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 import { getCatalogDeckBySlug, getDeckBySlug } from "@/lib/decks";
 
@@ -211,7 +212,7 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
         </div>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
-          {seo.lead}
+          {renderInlineMarkdown(seo.lead)}
         </p>
         <p className="mt-2 text-sm text-[#5f5749]">
           {query
@@ -266,7 +267,9 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
         {seo.sections.map((section) => (
           <section className="mt-10" key={section.heading}>
             <h2 className="text-2xl font-semibold tracking-tight">{section.heading}</h2>
-            <p className="mt-4 text-base leading-8 text-[#4f493e]">{section.body}</p>
+            <p className="mt-4 text-base leading-8 text-[#4f493e]">
+              {renderInlineMarkdown(section.body)}
+            </p>
           </section>
         ))}
 
