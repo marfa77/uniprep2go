@@ -1392,7 +1392,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free MRICS (Chartered Member) APC Readiness Check",
     intro:
-      "A timed 50-question APC knowledge diagnostic (100 minutes, 70% target) for mandatory competencies, ethics/Rules of Conduct, technical pathway themes, and interview prep — then drill weak rows in the linked $9.99 / 250 Anki deck. Official MRICS route: written submission plus a 60-minute final assessment interview (not a multiple-choice licensure exam). Cross-pathway prep — for QS-specific NRM/JCT/NEC use the separate MRICS QS mock and deck.",
+      "A timed 50-question APC knowledge diagnostic (100 minutes, 70% target) for mandatory competencies, ethics/Rules of Conduct, technical pathway themes, and interview prep — then drill weak rows in the linked $9.99 / 250 Anki deck. Official MRICS route: written submission plus a 60-minute final assessment interview (not a multiple-choice licensure exam). Cross-pathway prep — for QS-specific NRM/JCT/NEC use the separate MRICS QS mock and deck. Compare grades and live UK join fees in [AssocRICS vs MRICS](/blog/mrics-apc-vs-assocrics-pathway-cost).",
     audience:
       "Quantity surveyors, building surveyors, commercial property professionals, project managers, and valuers preparing for RICS APC and MRICS chartered membership.",
     practiceTestLabel: "MRICS APC practice questions",
@@ -1413,7 +1413,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free MRICS Quantity Surveying APC Practice Test",
     intro:
-      "A timed QS-pathway diagnostic with competency scoring — six core Level 3 topics, ethics, and interview prep — then drill weak rows in the linked MRICS QS Anki deck. Official RICS route remains written submission plus a 60-minute assessment interview.",
+      "A timed QS-pathway diagnostic with competency scoring — six core Level 3 topics, ethics, and interview prep — then drill weak rows in the linked MRICS QS Anki deck. Official RICS route remains written submission plus a 60-minute assessment interview. For AssocRICS vs MRICS and UK APC joining fees, see [AssocRICS vs MRICS](/blog/mrics-apc-vs-assocrics-pathway-cost).",
     audience:
       "Assistant quantity surveyors, cost consultants, commercial managers, and QS graduates preparing for MRICS on the Quantity Surveying and Construction pathway.",
     practiceTestLabel: "MRICS Quantity Surveying practice test",
