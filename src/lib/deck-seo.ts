@@ -1234,7 +1234,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free armed security practice test",
     ],
     intro:
-      "Guards upgrading to armed posts who want a free timed written diagnostic before state firearms training — then a planned 60-card .apkg. Written only; live-fire qualification is separate.",
+      "Guards upgrading to armed posts who want a free timed written diagnostic before state firearms training — then a planned 120-card .apkg. Written only; live-fire qualification is separate.",
   },
   "veterinary-assistant-anki-deck": {
     title: "Veterinary Assistant Anki | Planned 120 Cards + Free Mock",

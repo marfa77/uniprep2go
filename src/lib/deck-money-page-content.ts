@@ -1357,7 +1357,7 @@ Your state CDL manual, ELDT theory/behind-the-wheel requirements, or DMV schedul
 
   "armed-security-officer-anki-deck": `### What is inside
 
-Planned **60** flashcards across use of force & law, weapons safety, patrol & emergencies, and ethics & professionalism — the same four topic buckets as the free readiness check.
+Planned **120** flashcards across use of force & law, weapons safety, patrol & emergencies, and ethics & professionalism — the same four topic buckets as the free readiness check.
 
 ### Plan with the free armed security mock (live now)
 
@@ -1375,7 +1375,7 @@ Your state board bulletin, instructor-led firearms hours, or range qualification
 
   "veterinary-assistant-anki-deck": `### What is inside
 
-Planned **60** flashcards across animal restraint, nursing assist, hospital procedures, and safety & zoonosis — the same four topic buckets as the free readiness check. Mapped to NAVTA AVA-style assistant themes (NAVTA does not publish domain weights).
+Planned **120** flashcards across animal restraint, nursing assist, hospital procedures, and safety & zoonosis — the same four topic buckets as the free readiness check. Mapped to NAVTA AVA-style assistant themes (NAVTA does not publish domain weights).
 
 ### Plan with the free veterinary assistant mock (live now)
 
@@ -2154,7 +2154,7 @@ MV ČR / NPI registration, the official databank/model test, or the B1 language 
 
   "aha-bls-provider-anki-deck": `### What is inside
 
-Planned **60** flashcards across adult CPR & AED, child & infant CPR, choking & opioid emergency, and team dynamics — the same four buckets as the free cognitive check. Built for 2025 AHA BLS science (heel of 1 hand or 2 thumbs for infants; 5 back blows then 5 abdominal thrusts for severe adult/child FBAO), not Heartsaver lay-rescuer or ACLS.
+Planned **120** flashcards across adult CPR & AED, child & infant CPR, choking & opioid emergency, and team dynamics — the same four buckets as the free cognitive check. Built for 2025 AHA BLS science (heel of 1 hand or 2 thumbs for infants; 5 back blows then 5 abdominal thrusts for severe adult/child FBAO), not Heartsaver lay-rescuer or ACLS.
 
 ### Plan with the free BLS mock (live now)
 
@@ -2196,7 +2196,7 @@ ARDMS/Inteleos registration or a full 110-item sitting. Independent prep — not
 
   "ascp-mls-anki-deck": `### What is inside
 
-Planned **60** flashcards across blood bank, chemistry, hematology, and microbiology/immunology — the same four buckets as the free readiness check. Built for ASCP BOC **MLS** scientist judgment (antibody ID, transfusion practice, hemolysis flags, CBC smear holds, cultures), not MLT-only technician dumps and not phlebotomy-only PBT.
+Planned **120** flashcards across blood bank, chemistry, hematology, and microbiology/immunology — the same four buckets as the free readiness check. Built for ASCP BOC **MLS** scientist judgment (antibody ID, transfusion practice, hemolysis flags, CBC smear holds, cultures), not MLT-only technician dumps and not phlebotomy-only PBT.
 
 ### Plan with the free MLS mock (live now)
 
@@ -2286,7 +2286,7 @@ NIC/state registration or the practical exam. Anki is **planned**. Independent p
 
   "medication-aide-anki-deck": `### What is inside
 
-Planned **60** flashcards across six rights, routes, safety, and documentation — the same four buckets as the free readiness check. Built for **medication aide / MACE** under nurse supervision, not LPN/RN independent practice.
+Planned **120** flashcards across six rights, routes, safety, and documentation — the same four buckets as the free readiness check. Built for **medication aide / MACE** under nurse supervision, not LPN/RN independent practice.
 
 ### Plan with the free Medication Aide mock (live now)
 
@@ -2518,7 +2518,7 @@ State/local plumbing board registration. Anki is **planned**. Independent prep.`
 
   "nha-cbcs-anki-deck": `### What is inside
 
-Planned **60** flashcards across coding guidelines & ICD/CPT concepts, claims & reimbursement, compliance/HIPAA/fraud, and revenue-cycle & front office — the same four topic buckets as the free readiness check. Built for NHA CBCS spaced repair, not AAPC CPC exam dumps.
+Planned **120** flashcards across coding guidelines & ICD/CPT concepts, claims & reimbursement, compliance/HIPAA/fraud, and revenue-cycle & front office — the same four topic buckets as the free readiness check. Built for NHA CBCS spaced repair, not AAPC CPC exam dumps.
 
 ### Plan with the free CBCS mock (live now)
 

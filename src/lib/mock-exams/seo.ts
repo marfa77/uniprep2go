@@ -809,7 +809,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Barber Practice Test — 60 Theory Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 75-minute theory diagnostic for NIC-style barber licensing — infection control, cutting/shaving, chemical services, and board-law themes. Official NIC National Barber Theory is 60 items (50 scored) in 90 minutes. This check is 15 minutes shorter and is not the practical. Planned 60-card Anki waitlist. Not NIC Cosmetology Theory.",
+      "A timed 60-question / 75-minute theory diagnostic for NIC-style barber licensing — infection control, cutting/shaving, chemical services, and board-law themes. Official NIC National Barber Theory is 60 items (50 scored) in 90 minutes. This check is 15 minutes shorter and is not the practical. Planned 120-card Anki waitlist. Not NIC Cosmetology Theory.",
     audience:
       "Barber students sitting a NIC-style written exam — not cosmetology theory and not the skills sitting.",
     practiceTestLabel: "Barber practice test",
@@ -1048,7 +1048,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "armed-security-officer-readiness-check": {
     title: "Free Armed Security Practice Test 2026 | 60Q Written Mock",
     description:
-      "Armed security officer practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
+      "Armed security officer practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 120-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
     keywords: [
       "armed security practice test",
       "free armed security guard exam",
@@ -1058,7 +1058,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Armed Security Officer Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed written diagnostic across use of force & law, weapons safety, patrol & emergencies, and ethics — then join the planned 60-card Anki waitlist. Armed licensing is state-specific (e.g. FL Class G, TX Level III); most pathways need unarmed credentials first plus separate firearms training and range qualification. This free check is a shorter written diagnostic only — not a live-fire test and not OpenExamPrep’s multi-state volume banks.",
+      "A timed written diagnostic across use of force & law, weapons safety, patrol & emergencies, and ethics — then join the planned 120-card Anki waitlist. Armed licensing is state-specific (e.g. FL Class G, TX Level III); most pathways need unarmed credentials first plus separate firearms training and range qualification. This free check is a shorter written diagnostic only — not a live-fire test and not OpenExamPrep’s multi-state volume banks.",
     audience:
       "Security professionals upgrading to armed posts who want a free timed written baseline before state-required firearms training and board exams.",
     practiceTestLabel: "Armed security practice test",

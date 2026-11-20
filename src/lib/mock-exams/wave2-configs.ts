@@ -405,10 +405,14 @@ export const wave2MockExamConfigs: MockExamConfig[] = [
       { id: "patient-care", label: "Patient care & prevention" },
       { id: "office", label: "Office operations & ethics" },
     ]),
-    officialSourceNote: "DANB GC / CDA pathway themes. Not a DANB exam.",
-    description: "60-question DANB General Chairside readiness check (free 25-question version).",
+    officialSourceNote:
+      "DANB GC Exam Outline (effective 2022-07-01): 95 multiple-choice questions, 75 minutes, computer-adaptive, passing scaled score 400 (range 100–900). Domain weights: Evaluation 17%, Patient Management and Administration 17%, Chairside Dentistry 50%, Dental Materials 16%. This UniPrep2Go check is 60 questions / 75 minutes (free 25-question version) from a 120-item bank, in four equal topics, with a 70% diagnostic mark. That 70% is ours. It is not the DANB scaled score and not those domain weights. Not a DANB exam.",
+    description:
+      "60-question / 75-minute DANB GC readiness check (free 25-question version) drawn from a 120-item bank. Official GC exam: 95 questions in 75 minutes, computer-adaptive, scaled pass 400.",
     examBody: "DANB",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 2).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-11-20; each timed attempt draws 60.",
+    lastUpdated: "2026-11-20",
   }),
   nicheReadinessConfig({
     slug: "nbdhe-readiness-check",

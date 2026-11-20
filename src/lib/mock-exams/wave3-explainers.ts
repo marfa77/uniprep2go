@@ -448,7 +448,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
     whoFor:
       "MLT students and working technicians sitting national MLT(ASCP) — not MLS candidates and not phlebotomy-only PBT.",
     howToPrepare:
-      "Run this 60-question timed check (free 25-question version) for a topic report, then repair missed benches with the planned 60-card Anki waitlist and the official BOC content guideline. Add a full-length CAT-style bank before exam day.",
+      "Run this 60-question timed check (free 25-question version) for a topic report, then repair missed benches with the planned 120-card Anki waitlist and the official BOC content guideline. Add a full-length CAT-style bank before exam day.",
     examFaqs: [
       {
         question: "How many questions are on the ASCP MLT exam?",

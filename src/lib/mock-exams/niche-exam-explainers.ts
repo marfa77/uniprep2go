@@ -938,13 +938,20 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "danb-gc-readiness-check": explainer({
     practiceTestName: "DANB GC Practice Test",
     whatIsExam:
-      "DANB’s General Chairside (GC) exam covers clinical dental assisting chairside duties, instruments, materials, and patient care. It is a core component of the CDA pathway.",
-    administeredBy: "Dental Assisting National Board (DANB)",
+      "DANB’s General Chairside Assisting (GC) exam is one component of the Certified Dental Assistant (CDA) pathway, with Radiation Health and Safety and Infection Control. The GC Exam Outline effective 1 July 2022 states 95 multiple-choice questions in 75 minutes. DANB gives it as a computer-adaptive test. A passing scaled score is 400, on a scale from 100 to 900. That score is not a percent correct. Domain weights are Evaluation 17%, Patient Management and Administration 17%, Chairside Dentistry 50%, and Dental Materials 16%. This UniPrep2Go page is a shorter text diagnostic.",
+    administeredBy: "Dental Assisting National Board (DANB). In-person test center or remote online proctoring. The exam page lists a 60-day test window.",
+    officialFormat:
+      "Official DANB GC: 95 questions, 75 minutes, computer-adaptive, scaled pass 400 (100–900), weights 17/17/50/16. UniPrep2Go on this page: 60 questions, 75 minutes, free 25-question start, drawn from 120 items in four equal topics, 70% diagnostic mark. The 70% is ours, not DANB’s scaled score.",
     examFaqs: [
       {
         question: "What is the DANB GC exam?",
         answer:
-          "General Chairside (GC) is DANB’s exam on clinical chairside dental assisting knowledge.",
+          "General Chairside Assisting (GC) is DANB’s clinical chairside component of the CDA pathway. It is not the Child Development Associate exam.",
+      },
+      {
+        question: "How many questions are on the GC exam, and what score passes?",
+        answer:
+          "The GC Exam Outline states 95 multiple-choice questions in 75 minutes. DANB uses computer-adaptive testing. A passing scaled score is 400, with scores from 100 to 900. The outline says the average candidate answers about half the questions correctly. That is not the passing score.",
       },
     ],
     keywords: ["danb gc practice test", "general chairside practice test"],
