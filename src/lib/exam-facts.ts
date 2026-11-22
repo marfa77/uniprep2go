@@ -537,12 +537,16 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       time_limit: "Oral interview portion — no fixed written timer for the civics Q&A",
       passing_score: "12 of 20 correct (2025 test); 6 of 10 (2008 test); 60% either way",
       delivery: "In-person naturalization interview with a USCIS officer",
-      verify_at_url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
+      verify_at_url: "https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test",
     },
     official_sources: [
       {
-        label: "USCIS citizenship study materials",
-        url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
+        label: "USCIS 2025 civics test",
+        url: "https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test",
+      },
+      {
+        label: "USCIS civics test updates",
+        url: "https://www.uscis.gov/citizenship/find-study-materials-and-resources/check-for-test-updates",
       },
     ],
     domain_weights: [
@@ -758,20 +762,29 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "canadian-citizenship",
     pageHeading: "Canadian Citizenship Test — Facts & Prep",
     intro:
-      "The Canadian citizenship test assesses knowledge of Canada based on Discover Canada. This page summarizes public format themes plus independent UniPrep2Go products — not IRCC exam material.",
+      "The Canadian citizenship test assesses knowledge of Canada from Discover Canada. This page states the format read on the IRCC study and results pages on 21 November 2026, plus independent UniPrep2Go products. It is not IRCC exam material.",
     exam_facts: {
       exam_name: "Canadian Citizenship Test",
       administered_by: "Immigration, Refugees and Citizenship Canada (IRCC)",
-      question_count: "20 multiple-choice or true/false questions",
+      question_count: "20 questions, multiple choice or true/false, in English or French",
       time_limit: "45 minutes",
-      passing_score: "15 of 20 correct (75%); up to 3 attempts",
-      delivery: "In-person or online as scheduled by IRCC for your application",
+      passing_score: "At least 15 of 20 (75%). Up to 3 attempts in the 30-day period on the invitation.",
+      delivery:
+        "Online, in person, or on Microsoft Teams, as IRCC schedules. An online score is unofficial until an officer reviews it. In person and on Teams, the official score is given right after the test.",
       verify_at_url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html",
     },
     official_sources: [
       {
         label: "IRCC — Canadian citizenship",
         url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship.html",
+      },
+      {
+        label: "IRCC — study for the test",
+        url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/study.html",
+      },
+      {
+        label: "IRCC — test results",
+        url: "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/test/results.html",
       },
     ],
     domain_weights: [
@@ -781,19 +794,19 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Geography and regions", weight: "Discover Canada theme" },
     ],
     high_yield_facts: [
-      "The citizenship test is based on Discover Canada — study the official guide IRCC names for your application.",
-      "Proof of language ability (for example IELTS/CELPIP where required) is separate from the civics test.",
-      "Pass thresholds and delivery mode can change — verify on canada.ca before exam day.",
-      "UniPrep2Go readiness checks are independent prep, not IRCC live items.",
+      "Read on 21 November 2026: 20 multiple-choice or true/false questions, 45 minutes, at least 15 of 20, in English or French.",
+      "Up to 3 attempts inside the 30-day period on the invitation, whether online, on Microsoft Teams, or in person. Fail all 3 and IRCC invites you to a hearing.",
+      "The knowledge test does not assess English or French. Language proof is a separate requirement. At a hearing, the oral knowledge test is again 20 questions with 15 to pass, and a language check can be up to 9 questions with 6 to pass.",
+      "UniPrep2Go draws 60 questions in 45 minutes from a longer bank, with one 75% mark. It is not the IRCC test.",
     ],
     candidate_qa: [
       {
         q: "Does IELTS replace the Canadian citizenship test?",
-        a: "No. Language proof and the citizenship knowledge test are different requirements. Confirm both on your IRCC application pathway.",
+        a: "No. The citizenship test does not assess language. Proof of English or French, where IRCC requires it, is a separate step from the Discover Canada knowledge test.",
       },
       {
         q: "Where do I verify official Canadian citizenship test rules?",
-        a: "Use canada.ca IRCC citizenship pages and the Discover Canada study guide named for your case.",
+        a: "The IRCC study page: 20 questions, 45 minutes, 15 of 20, and up to 3 attempts. Study Discover Canada, the guide IRCC names.",
       },
     ],
     trademark_note: "IRCC and Government of Canada marks belong to the Crown. Not affiliated with or endorsed by IRCC.",
@@ -3789,7 +3802,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "abo-ncle-noce",
     pageHeading: "ABO Optician (NOCE) Exam — Facts & Prep",
     intro:
-      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 120 unique bank, paired with a live $9.99 / 120-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 210 unique bank, paired with a live $9.99 / 210-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
     exam_facts: {
       exam_name: "National Opticianry Competency Examination (NOCE / ABO Basic)",
       administered_by: "ABO-NCLE (Prometric delivery)",
@@ -3815,17 +3828,17 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "Confirm current NOCE item count and seating rules in the live Basic Examination Handbook.",
       "NCLE contact-lens exam is a separate credential — do not mix CLRE content into NOCE prep.",
-      "Linked Anki is live at $11 / 120 unique cards from the same bank as the timed 60Q diagnostic (free 25-question version).",
+      "Linked Anki is live at $9.99 / 210 unique cards from the same bank as the timed 60Q diagnostic (free 25-question version).",
     ],
     high_yield_facts: [
-      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep check is 60Q / 75m / 70% (free 25-question version) from a 120 unique bank + $11 / 120 Anki.",
+      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep check is 60Q / 75m / 70% (free 25-question version) from a 210 unique bank + $9.99 / 210 Anki.",
       "Index of refraction governs how much light slows/bends; Abbe number tracks dispersion.",
       "Vertex distance changes effective power for higher prescriptions.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the ABO NOCE?",
-        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
+        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
       },
       {
         q: "Is this the NCLE contact-lens exam?",

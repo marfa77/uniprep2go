@@ -681,15 +681,15 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "belgium-wallonie-citoyennete-readiness-check": {
     practiceTestName: "Belgium Wallonie Citoyenneté Readiness Check",
     whatIsExam:
-      "Wallonia does not currently run a single Walloon QCM “citizenship exam” equivalent to CCSE or Life in the UK. For many newcomers the live hurdles are French language (often around A2 in integration frameworks) plus parcours d’intégration / citoyenneté course and municipal steps — not one regional multiple-choice passport paper. Belgium has also discussed a future federal citizenship knowledge test; until enacted, treat federal Q-counts as proposed only. This UniPrep2Go readiness check is an independent French-language diagnostic (60 questions, 45 minutes, 70% pass) on Wallonie citoyenneté-style themes — institutions/integration, history/geography/EU, rights/nationality, and society/daily life — for civic literacy and future-proofing, not an official Walloon government exam booklet.",
+      "Wallonia does not currently run a single Walloon QCM “citizenship exam” equivalent to CCSE or Life in the UK. For many newcomers the live hurdles are French language (often around A2 in integration frameworks) plus parcours d’intégration / citoyenneté course and municipal steps — not one regional multiple-choice passport paper. Belgium has also discussed a future federal citizenship knowledge test; until enacted, treat federal Q-counts as proposed only. This UniPrep2Go readiness check is an independent French-language diagnostic (60 questions drawn from a 120-question bank, 45 minutes, 70% pass) on Wallonie citoyenneté-style themes — institutions/integration, history/geography/EU, rights/nationality, and society/daily life — for civic literacy and future-proofing, not an official Walloon government exam booklet.",
     administeredBy:
       "Wallonia: parcours d’intégration / citoyenneté partners and municipal services. Naturalisation: federal / municipal pathways. Proposed federal test: not a stable bookable national MCQ yet — verify on official Walloon and Belgian pages.",
     officialFormat:
-      "No Walloon citizenship QCM in force as a single official MCQ passport exam. Live path: French language evidence + integration / citoyenneté course steps (confirm locally). Proposed federal knowledge test: format unpublished. UniPrep2Go mock: independent 60/45/70 diagnostic only.",
+      "No Walloon citizenship QCM. Live parcours, pages read 22 Nov 2026: free; citizenship training at least 60 hours; French at least 400 hours unless a placement test shows A2, which dispenses that course. A score below A2 is not a sanction. wallonie.be (updated 23 July 2026) says 18 months from the residence-permit order, extendable. The CRI site also shows 3 months to make contact and 36 months on its diagram. Confirm the deadline with the CRI. UniPrep2Go mock: 60 questions drawn from a 120-question bank, 45 minutes, 70%.",
     whoFor:
       "Newcomers in Wallonia preparing integration / citoyenneté and French A2-style requirements; applicants who wrongly expect a regional MCQ; and learners future-proofing against a proposed federal test. Not legal advice and not official Walloon material.",
     howToPrepare:
-      "1) Confirm your parcours d’intégration contract and French language proofs with the correct Walloon body. 2) Prioritise course attendance and language evidence that actually appear on your checklist. 3) Build civic literacy on Belgian/Walloon institutions, rights, history, EU, and daily life. 4) Use this 60-question check (free 25-question version) to find weak domains. 5) If a federal test is enacted, switch to that official bank. Repair weak topics with the live Belgium Wallonie Citoyenneté Anki deck.",
+      "1) Confirm your parcours contract with the CRI, including the 60-hour citizenship course and whether A2 already dispenses the French hours. 2) Use this 60-question check, drawn from 120 (free 25-question version), to find weak themes. 3) Drill those themes with the live 165-card Belgium Wallonie Citoyenneté Anki deck. 4) If a federal test is enacted, switch to that official bank.",
     topicBlurbs: [
       {
         id: "institutions-integration",
@@ -933,15 +933,15 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "canadian-citizenship-readiness-check": {
     practiceTestName: "Canadian Citizenship Readiness Check",
     whatIsExam:
-      "Canada’s citizenship test is the live IRCC knowledge exam for most adult applicants. Officially it is 20 multiple-choice or true/false questions in 45 minutes with a 75% pass mark (15 of 20), based on the Discover Canada study guide — history, government and politics, rights and responsibilities, and symbols/regions/geography. Language ability and the citizenship interview/hearing steps are separate parts of the process. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 75% pass) on overlapping Discover Canada themes — not IRCC material and not a substitute for the official 20-question / 45-minute sitting.",
+      "Canada’s citizenship test is the IRCC knowledge exam for most adult applicants. Read on 21 November 2026: 20 multiple-choice or true/false questions in English or French, 45 minutes, 15 of 20 to pass, and up to 3 attempts in the 30-day period on the invitation. Questions come from Discover Canada. The test does not assess language. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, one 75% mark) on the same themes. It is not IRCC material.",
     administeredBy:
-      "Immigration, Refugees and Citizenship Canada (IRCC). Tests are scheduled as part of the citizenship application process; confirm current rules on canada.ca.",
+      "Immigration, Refugees and Citizenship Canada (IRCC). The invitation sets the sitting: online, in person, or Microsoft Teams.",
     officialFormat:
-      "Official IRCC citizenship test: 20 questions, 45 minutes, 15 correct (75%) to pass (Discover Canada). UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 75% diagnostic pass — use for topic scoring, then drill official study-guide length sets before your IRCC sitting.",
+      "Official IRCC citizenship test: 20 questions, 45 minutes, 15 of 20, up to 3 attempts in the 30-day period. UniPrep2Go on this page: 60 questions, 45 minutes, free 25-question start, one 75% mark. That mark is ours. It is not a second official attempt.",
     whoFor:
       "Permanent residents preparing the Canadian citizenship test; applicants who want longer timed practice than the official 20 questions; and learners pairing mocks with the Citizenship & Naturalization Anki Bundle. Not legal advice and not IRCC material.",
     howToPrepare:
-      "1) Study Discover Canada cover to cover — rights, government, history, symbols, regions. 2) Memorise Crown/Parliament roles, Charter basics, and provinces/territories. 3) Take this 60-question readiness check (free 25-question version) for topic scoring. 4) Drill several 20-question / 30-minute / 75% sets. 5) Prepare language and interview readiness in parallel. Use the Citizenship & Naturalization Anki Bundle for spaced repetition.",
+      "1) Study Discover Canada cover to cover — rights, government, history, symbols, regions. 2) Memorise Crown and Parliament roles, Charter basics, and provinces and territories. 3) Take this 60-question readiness check (free 25-question version) for topic scoring. 4) Drill 20-question sets against the same 15-of-20 bar. 5) Keep language proof separate. The $9.99 Canadian Citizenship Anki deck is the spaced-repetition set for the same guide.",
     topicBlurbs: [
       {
         id: "history",
@@ -977,12 +977,12 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is the official Canadian citizenship test format?",
         answer:
-          "20 multiple-choice or true/false questions in 45 minutes; you need 15 of 20 (75%) and get up to 3 attempts. Confirm current delivery mode and rules on canada.ca for your invitation letter.",
+          "20 multiple-choice or true/false questions in 45 minutes. You need 15 of 20. You get up to 3 attempts in the 30-day period on the invitation, online, in person, or on Microsoft Teams.",
       },
       {
         question: "Is this UniPrep2Go test the official IRCC exam?",
         answer:
-          "No. This is an independent 60-question readiness diagnostic (45 minutes, 75% pass). The official test is shorter (20/30/75) — not this page.",
+          "No. This is an independent 60-question readiness diagnostic in 45 minutes with one 75% mark. The official test is 20 questions in 45 minutes, and 15 of 20 passes.",
       },
       {
         question: "Is the citizenship test the same as the language requirement?",

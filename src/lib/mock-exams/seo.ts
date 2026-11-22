@@ -1514,11 +1514,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "canadian-citizenship-readiness-check": {
     title: "Free Canadian Citizenship Practice Test | 60 Questions",
     description:
-      "Free Canadian citizenship practice: 60 timed Discover Canada questions (45 min, 75%). Official IRCC test is 20Q/30min/75% — this page is longer diagnostic practice. Citizenship Anki Bundle.",
+      "Canadian citizenship practice: free 25-question diagnostic, full mock 60 timed questions (45 min, 75%). Official IRCC test is 20 questions, 45 minutes, 15 of 20, with up to 3 attempts in the 30-day window. This diagnostic uses one 75% mark. Citizenship Anki deck $9.99.",
     keywords: ["Canadian citizenship practice test", "Discover Canada quiz", "IRCC citizenship test"],
     headline: "Free Canadian Citizenship Readiness Check",
     intro:
-      "Timed Discover Canada diagnostic. Format note: official IRCC test is 20 questions / 45 minutes / 15/20; this check is 60 / 45 / 75%.",
+      "Timed Discover Canada diagnostic. Official test: 20 questions, 45 minutes, 15 of 20, and up to 3 attempts in the 30-day window on the invitation. This check is 60 questions in 45 minutes with one 75% mark.",
     audience:
       "Permanent residents preparing for the Canadian citizenship test.",
     practiceTestLabel: "Canadian citizenship practice test",
@@ -1715,11 +1715,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-wallonie-citoyennete-readiness-check": {
     title: "Free Belgium Wallonie Citoyenneté Practice Test | 60 Questions",
     description:
-      "Wallonie citoyenneté theme practice: free 25-question diagnostic, full mock 60 timed questions. No official Walloon civics QCM today — live hurdles are usually French A2 + integration proof. Live Anki deck. Independent prep.",
+      "Wallonie citoyenneté theme practice: free 25-question diagnostic, full mock 60 timed questions from a 120-question bank. No official Walloon civics QCM. The free parcours includes 60 hours of citizenship training and French classes unless a placement test shows A2. Live 165-card Anki deck. Independent prep.",
     keywords: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium Wallonia citizenship"],
     headline: "Free Belgium Wallonie Citoyenneté Readiness Check",
     intro:
-      "Timed French-language Wallonia citoyenneté diagnostic. Honesty note: Wallonia does not publish a standardised citizenship MCQ bank — language + parcours d’intégration are the live gates; a federal civic test is only proposed.",
+      "Timed French-language Wallonia citoyenneté diagnostic: 60 questions drawn from a 120-question bank. Honesty note: Wallonia has no civics MCQ. The free parcours (pages read 22 Nov 2026) includes at least 60 hours of citizenship training and at least 400 hours of French unless a placement test shows A2. wallonie.be, updated 23 July 2026, says 18 months from the residence-permit order, extendable. The CRI site also shows 36 months on its diagram, so confirm the deadline with the CRI.",
     audience:
       "Applicants preparing Wallonia integration / citoyenneté themes (not a substitute for DELF/TCF A2).",
     practiceTestLabel: "Wallonie citoyenneté practice test",

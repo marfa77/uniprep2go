@@ -43,15 +43,15 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
             ["Time limit", "45 minutes"],
             ["Passing score", "15/20 (75%)"],
             ["Languages", "English or French"],
-            ["Delivery", "Test centre computer; some applicants invited online"],
+            ["Delivery", "Online, in person, or Microsoft Teams, as the invitation sets"],
             ["Cost", "CAD $653 total from 31 Mar 2026 (processing + right of citizenship)"],
             ["Study material", "Free Discover Canada guide from IRCC"],
-            ["Results", "Immediate at some centres; official notice by mail"],
+            ["Results", "Online score is unofficial until an officer reviews it. In person and on Teams, the official score is given right after the test"],
           ],
         },
         {
           type: "p",
-          text: "**Fee structure:** CAD $653 (from 31 March 2026) is the adult **application** package, not a separate test ticket. The test is included. Retests/interviews usually add no fee — but a refused application does not refund you. Confirm live fees on canada.ca. **Online vs in-person:** IRCC assigns the method; you do not choose.",
+          text: "**Fee structure:** CAD $653 (from 31 March 2026) is the adult **application** package, not a separate test ticket. The test is included. Confirm the live fee table on canada.ca. **How you sit it:** IRCC assigns online, in person, or Microsoft Teams. You do not pick the method.",
         },
       ],
     },
@@ -123,14 +123,14 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "IRCC does not publish a clean official pass rate; field estimates often put first-time passes around 80–85%. Failures usually skip the official guide, skim geography, or overthink under the clock.",
+          text: "IRCC does not publish a pass rate. On the results page read 21 November 2026, you have up to 3 attempts in the 30-day period on the invitation. Fail all 3 and IRCC invites you to a hearing.",
         },
         {
           type: "ol",
           items: [
-            "Near miss → often a second test",
-            "Low score → citizenship interview (oral questions from the same guide)",
-            "Fail interview → possible refusal; reapply from scratch",
+            "Up to 3 attempts in the 30-day period, online, on Microsoft Teams, or in person",
+            "Fail all 3 and IRCC invites you to a hearing of 30 to 90 minutes",
+            "The oral knowledge check at that hearing is 20 questions, and 15 must be correct. A language check there can be up to 9 questions, with 6 to pass. Fail the hearing and the application is refused",
           ],
         },
       ],
@@ -139,7 +139,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   faqs: [
     {
       question: "How many questions are on the Canada citizenship test?",
-      answer: "20 multiple-choice and true/false questions in 45 minutes. You need 15 correct (75%) and get up to 3 attempts.",
+      answer: "20 multiple-choice or true/false questions in 45 minutes. You need 15 correct (75%). You get up to 3 attempts in the 30-day period on the invitation.",
     },
     {
       question: "What is the passing score for the Canadian citizenship test?",

@@ -20,6 +20,17 @@ exec(weekly_src.split(marker)[0], ns)
 todo, civic, standalone, prep2go, dups = ns["todo"], ns["civic"], ns["standalone"], ns["prep2go"], ns["dups"]
 DUPLICATES, DECK_NO_CHECKOUT, board = ns["DUPLICATES"], ns["DECK_NO_CHECKOUT"], ns["board"]
 
+# SEO freeze: thin state real estate outside CA/FL/TX/NY stays live and noindex. Do not schedule it.
+INDEXED_STATE_RE = {
+    "california-real-estate-readiness-check",
+    "fl-real-estate-readiness-check",
+    "ny-real-estate-readiness-check",
+    "tx-real-estate-readiness-check",
+}
+frozen_re = [r for r in todo if "-real-estate-" in r["slug"] and r["slug"] not in INDEXED_STATE_RE]
+todo = [r for r in todo if r not in frozen_re]
+civic = [s for s in civic if s != "belgium-flanders-mo-readiness-check"]
+
 START = dt.date.today()  # morning regen includes today; a Sunday run still starts on that Sunday's ops row
 END = START + dt.timedelta(days=91)
 DAYS = [START + dt.timedelta(days=i) for i in range((END - START).days + 1)]
@@ -31,22 +42,24 @@ EXTRAS = [
     # Done 2026-10-19: Have a key? + Mock Pass hero. Done 2026-10-16: planned cardCount 60→120. Done 2026-10-15: three duplicate SKUs 301.
     # Done tables: CFA L1, SIE, PTCB, Series 7, ServSafe Manager, Life in the UK, CFA L2.
     # Done 2026-11-07: S3 report layout is the empty-bar component already on mock pages. No fake scores.
+    # Done 2026-11-12: CFA L1 window strip. Done 2026-11-13: Series 63 + Series 65 tables. Done 2026-11-14: PMP + LEED GA tables.
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "
     + ", ".join(f"`{s}`" for s, _ in DECK_NO_CHECKOUT[:3]),
     "Деки с просмотрами и 0 checkout: питч / FAQ / Gumroad — "
     + ", ".join(f"`{s}`" for s, _ in DECK_NO_CHECKOUT[3:]),
     "Таблица compared: FRM P1 (GARP 2×100Q для зарегистрированных)",
-    "Urgency strip с verify-ссылкой: CFA L1 окно (сверить на cfainstitute.org)",
-    "Таблица compared: Series 63 + Series 65",
-    "Таблица compared: PMP + LEED GA",
 ]
 SIDE = (
     [("civic", s) for s in civic]
     + [("продукт", s) for s in standalone]
     + [("Prep2Go дека", s) for s in prep2go]
 )
-SUNDAY = ("Неделя: ledger-строки → `npm run sku:status` → push + live check · `npm run gsc:export`, Layer A ≤10 "
-          "Request indexing, Layer B 1 URL · `python3 scripts/sku-daily-plan.py`")
+SUNDAY = ("Неделя: ledger и выкладка уже в main. Пересчёт — `python3 scripts/sku-daily-plan.py`, если доска сдвинулась.")
+CFA_MEASURE = dt.date(2026, 11, 21)
+CFA_MEASURE_NOTE = (
+    "`npm run gsc:export`. Читать только `cfa level 1 practice test` и `cfa level 2 practice exam`. "
+    "Заголовок не менять до этой строки"
+)
 
 CASCADE_EFFORT = 60  # apkg rebuild + Gumroad file + samples render/publish for a live deck
 for r in todo:
@@ -77,6 +90,15 @@ for r in todo:
     load += r["effort"]
     if load >= cap:
         day, load = day + 1, 0.0
+LEED_MAIN = (
+    "`leed-green-associate` расширить 120→210 + каскад live-деки (apkg, Gumroad, samples). "
+    "Сессия остаётся 60 / 75"
+)
+FLANDERS_MAIN = (
+    "`belgium-flanders-mo` расширить банк 120→220 и Anki 165→220. "
+    "Сессия остаётся 60 / 45. Официальный standaardtest остаётся 41 / 120"
+)
+main = [[LEED_MAIN], [FLANDERS_MAIN]] + main[:-2]
 left = [r for r in todo if not any(f"`{r['slug'].replace('-readiness-check', '')}`" in x for d in main for x in d)]
 
 side_queue = list(EXTRAS) + [f"{k}: `{s}` — сверка фактов, копирайт, samples, checkout" for k, s in SIDE]
@@ -87,9 +109,17 @@ L = [
     f"({board['generated'][:10]}). Порядок: трафик → Tier A → финансы → live → семейства. "
     "Каждое воскресенье пересчитывать: готовые SKU выпадают, остальное сдвигается.",
     "",
-    f"- Банков к `ok`: **{len(todo)}**. День закрыт, когда каждый SKU в строке сдан целиком: гейты, построчный review, ops, ledger, и для live-деки каскад (apkg, Gumroad, samples).",
+    f"- Банков к `ok`: **{len(todo)}**, плюс закреплённые LEED и Flanders MO. День закрыт, когда каждый SKU в строке сдан целиком: гейты, построчный review, ops, ledger, и для live-деки каскад (apkg, Gumroad, samples).",
     f"- Ориентир нагрузки ~{cap:.0f} единиц (1 = новый вопрос, 0.5 = проверенный). Банк больше дня всё равно один день и один результат, без «день 1/2».",
     "- «Плюс немного»: сначала лендинги/воронка из бэклога, потом civic, продукты, Prep2Go деки.",
+    f"- Тонкие штаты недвижимости вне CA/FL/TX/NY заморожены и в эти 3 месяца не ставятся: **{len(frozen_re)}** банков. CA, FL, NY и TX уже `ok`.",
+    "",
+    "## Закреплено",
+    "",
+    "| SKU | Сейчас | Цель | Когда |",
+    "|---|---|---|---|",
+    f"| `leed-green-associate-readiness-check` + `leed-green-associate-anki-deck` | ok · 60 / 120 · live $9.99 | банк 120→210, сессия 60 | {WD[WORK[0].weekday()]} {WORK[0]:%d.%m} |",
+    f"| `belgium-flanders-mo-readiness-check` + `belgium-flanders-mo-anki-deck` | civic · 60 / 220 · Anki 220 / $19 | сделано 15.11 | {WD[WORK[1].weekday()]} {WORK[1]:%d.%m} |",
     "",
 ]
 w = 0
@@ -102,6 +132,8 @@ for d in DAYS:
     i = WORK.index(d)
     m = "; ".join(main[i]) if main[i] else "Буфер: доделать хвосты недели"
     s = side_queue.pop(0) if side_queue else "—"
+    if d == CFA_MEASURE:
+        s = f"{CFA_MEASURE_NOTE}. Ещё: {s}"
     L.append(f"| {d:%d.%m} | {WD[d.weekday()]} | {m} | {s} |")
 if left or side_queue:
     L += ["", "## Не влезло в 3 месяца", ""]

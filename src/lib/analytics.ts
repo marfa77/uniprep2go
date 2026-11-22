@@ -50,6 +50,7 @@ export type FunnelEvent = {
   screen?: string;
   userAgent?: string;
   clientIp?: string;
+  webdriver?: boolean;
   internal?: boolean;
 };
 
@@ -74,6 +75,7 @@ type FunnelEventInput = {
   screen?: string;
   userAgent?: string;
   clientIp?: string;
+  webdriver?: boolean;
   internal?: boolean;
 };
 
@@ -122,6 +124,7 @@ export function parseFunnelEvent(payload: unknown): FunnelEvent {
     screen: optionalString(candidate.screen),
     userAgent: optionalString(candidate.userAgent),
     clientIp: optionalString(candidate.clientIp),
+    webdriver: candidate.webdriver === true ? true : undefined,
     internal: candidate.internal === true,
   });
 }

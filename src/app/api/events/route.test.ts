@@ -2,6 +2,7 @@ import { describe, expect, it, vi, beforeEach } from "vitest";
 import { createFunnelEvent } from "@/lib/analytics";
 import { FUNNEL_EXCLUDE_COOKIE } from "@/lib/funnel-exclude";
 import { shouldRecordFunnelEvent } from "@/lib/funnel-filter";
+import { rememberFirstPageView, resetFirstPageViewsForTests } from "@/lib/visitor-first-view";
 
 const notifyCheckoutClick = vi.fn(async () => true);
 const notifyMockStarted = vi.fn(async () => true);
@@ -44,6 +45,7 @@ describe("POST /api/events", () => {
     notifyMockPassPaywallView.mockClear();
     notifyMockPassRedeem.mockClear();
     recordFunnelEvent.mockClear();
+    resetFirstPageViewsForTests();
   });
 
   it("drops the SG data-center Chrome fingerprint before stats and Telegram alerts", async () => {
@@ -286,5 +288,125 @@ describe("POST /api/events", () => {
 
     expect(response.status).toBe(204);
     expect(recordFunnelEvent).not.toHaveBeenCalled();
+  });
+
+  it("drops headless, Hetzner, and instant checkout clicks before stats and Telegram", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const postCheckout = (body: Record<string, unknown>, ip: string) =>
+      POST(
+        new Request("https://uniprep2go.study/api/events", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+            "x-forwarded-for": ip,
+            "x-vercel-ip-country": "DE",
+            "user-agent":
+              "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36",
+          },
+          body: JSON.stringify(body),
+        }),
+      );
+
+    await rememberFirstPageView({
+      name: "page_view",
+      visitorId: "vis_webdriver",
+      occurredAt: new Date(Date.now() - 60_000).toISOString(),
+    });
+    const webdriver = await postCheckout(
+      {
+        name: "checkout_click",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_webdriver",
+        webdriver: true,
+      },
+      "151.200.1.2",
+    );
+    expect(webdriver.status).toBe(204);
+
+    await rememberFirstPageView({
+      name: "page_view",
+      visitorId: "vis_hetzner",
+      occurredAt: new Date(Date.now() - 60_000).toISOString(),
+    });
+    const hetzner = await postCheckout(
+      {
+        name: "checkout_intent",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_hetzner",
+      },
+      "95.217.10.10",
+    );
+    expect(hetzner.status).toBe(204);
+
+    await rememberFirstPageView({
+      name: "page_view",
+      visitorId: "vis_fast",
+      occurredAt: new Date(Date.now() - 1000).toISOString(),
+    });
+    const fast = await postCheckout(
+      {
+        name: "checkout_click",
+        deckSlug: "cfa-level-1-anki-deck",
+        visitorId: "vis_fast",
+      },
+      "151.200.1.2",
+    );
+    expect(fast.status).toBe(204);
+
+    expect(recordFunnelEvent).not.toHaveBeenCalled();
+    expect(notifyCheckoutClick).not.toHaveBeenCalled();
+  });
+
+  it("records a checkout after the visitor has been on the page", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    await rememberFirstPageView({
+      name: "page_view",
+      visitorId: "vis_human",
+      occurredAt: new Date(Date.now() - 20_000).toISOString(),
+    });
+
+    const response = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-forwarded-for": "151.200.1.2",
+          "x-vercel-ip-country": "US",
+        },
+        body: JSON.stringify({
+          name: "checkout_click",
+          deckSlug: "cfa-level-1-anki-deck",
+          visitorId: "vis_human",
+          source: "deck_page_cta",
+        }),
+      }),
+    );
+
+    expect(response.status).toBe(204);
+    expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick).toHaveBeenCalledTimes(1);
+  });
+
+  it("still records a Hetzner page view", async () => {
+    const { POST } = await import("@/app/api/events/route");
+    const response = await POST(
+      new Request("https://uniprep2go.study/api/events", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "x-forwarded-for": "95.217.10.10",
+          "x-vercel-ip-country": "DE",
+        },
+        body: JSON.stringify({
+          name: "page_view",
+          deckSlug: "cfa-level-1-anki-deck",
+          visitorId: "vis_hetzner_view",
+        }),
+      }),
+    );
+
+    expect(response.status).toBe(204);
+    expect(recordFunnelEvent).toHaveBeenCalledTimes(1);
+    expect(notifyCheckoutClick).not.toHaveBeenCalled();
   });
 });

@@ -21,9 +21,9 @@ export const wallonieCitoyenneteParcoursIntegrationPost: BlogPostDraft = {
   deckSlug: "belgium-wallonie-citoyennete-anki-deck",
   cta: {
     mockLabel: "Passer le readiness check Wallonie Citoyenneté (gratuit)",
-    deckLabel: "Rejoindre la liste d'attente Anki Wallonie Citoyenneté",
+    deckLabel: "Anki Wallonie Citoyenneté, 165 cartes",
     summary:
-      "Entraînez-vous aux thèmes institutions / droits / vie quotidienne avec le readiness check gratuit Wallonie. Rejoignez la waitlist Anki civique, puis sécurisez votre preuve de français A2 (DELF, TCF, EPS ou attestation CRI) avant de payer les 1 030 €.",
+      "Entraînez-vous aux thèmes institutions / droits / vie quotidienne avec le readiness check gratuit Wallonie, puis la deck Anki de 165 cartes. Sécurisez votre preuve de français (A2 dispense les 400 heures) avant le dépôt. Le montant des frais fédéraux est à confirmer sur le texte en vigueur.",
     extraLinks: [
       {
         href: "/blog/belgium-citizenship-test-flanders-vs-wallonia",
@@ -270,7 +270,7 @@ export const wallonieCitoyenneteParcoursIntegrationPost: BlogPostDraft = {
             "Ignorer les 468 jours et les périodes sans affiliation",
             "Sous-estimer apostilles + traductions assermentées (souvent 200–500 €)",
             "Attendre un examen civique wallon qui n'existe pas encore",
-            "Sous-estimer le délai CRI (jusqu'à ~36 mois pour le public concerné)",
+            "Sous-estimer le délai : wallonie.be (mis à jour le 23 juillet 2026) dit 18 mois, prolongeables, à compter de la commande du titre de séjour ; le site des CRI affiche aussi 3 mois pour prendre contact et 36 mois sur son schéma. Les deux pages officielles ne donnent pas le même chiffre.",
             "Croire qu'un quiz en ligne remplace une attestation CRI ou un DELF",
           ],
         },
@@ -312,7 +312,7 @@ export const wallonieCitoyenneteParcoursIntegrationPost: BlogPostDraft = {
     {
       question: "Qu'est-ce que le parcours d'intégration / CRI ?",
       answer:
-        "Un dispositif wallon (accueil, formation citoyenneté, français si besoin, orientation sociopro) qui peut déboucher sur une attestation utilisable pour la nationalité. Public obligé et public volontaire n'ont pas les mêmes contraintes — renseignez-vous auprès de votre CRI.",
+        "Un parcours gratuit : module d'accueil, au moins 60 heures de citoyenneté, français (au moins 400 heures, dispensées si le test de positionnement donne A2 ; un score plus bas n'est pas une sanction, mais les 400 heures restent à prouver) et orientation socioprofessionnelle si elle est requise. wallonie.be, mis à jour le 23 juillet 2026, indique 18 mois prolongeables. Le site des CRI affiche aussi 36 mois sur son schéma. Confirmez le délai avec votre CRI.",
     },
     {
       question: "Puis-je utiliser le néerlandais si je vis en Wallonie ?",
@@ -341,5 +341,5 @@ export const wallonieCitoyenneteParcoursIntegrationPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Aujourd'hui, la nationalité en Wallonie est une **course de fond administrative**, pas un sprint de mémorisation QCM : **français A2 certifié**, preuve d'intégration (CRI ou équivalent), participation économique, et frais fédéraux. Demain, B1 et/ou un test civique fédéral peuvent durcir le jeu — déposez si vous êtes prêt, et utilisez le readiness check + waitlist Anki UniPrep2Go pour rester future-proof sans confondre Wallonie et Flandre.",
+    "Aujourd'hui, la nationalité en Wallonie est une **course de fond administrative**, pas un sprint de mémorisation QCM : français (A2 dispense les heures de cours), preuve d'intégration (CRI ou équivalent), participation économique, et frais fédéraux à confirmer. Le readiness check et la deck Anki de 165 cartes couvrent les thèmes du parcours. Ils ne remplacent ni l'attestation CRI, ni la Flandre.",
 };

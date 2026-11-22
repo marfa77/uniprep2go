@@ -114,13 +114,13 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       75,
     ),
     officialSourceNote:
-      "Independent readiness check on Discover Canada themes. Official IRCC test: 20 questions / 45 minutes / 15/20 (75%). This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
+      "Independent readiness check on Discover Canada themes. Official IRCC test, read 21 November 2026: 20 multiple-choice or true/false questions, 45 minutes, 15 of 20, up to 3 attempts in the 30-day period on the invitation. This diagnostic is 60 questions / 45 minutes / 75%. Not official IRCC material.",
     description:
       `60-question Canadian citizenship diagnostic (free 25-question version) — longer than the official 20-question IRCC test. Pairs with the ${CIVIC_PRICE} country Anki deck. Independent prep.`,
     examBody:
       "IRCC — Discover Canada citizenship test (20Q official; this page is a longer diagnostic)",
     questionSourceNote: NOTE,
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-11-21",
     searchAliases: ["Canadian citizenship test", "Discover Canada", "IRCC citizenship"],
   }),
   nicheReadinessConfig({
@@ -506,14 +506,14 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       70,
     ),
     officialSourceNote:
-      "Wallonia has no standardised citizenship civics QCM today — live hurdles are usually French A2 + social integration proof. A federal civic test is proposed, not assumed live. This 60Q check is independent theme practice — not official Walloon/CRI material.",
+      "Wallonia has no civics multiple-choice exam. The parcours d'intégration (decree in force 1 January 2025) is free. Pages read 22 Nov 2026: a welcome module, at least 60 hours of citizenship training, French classes of at least 400 hours unless a placement test shows A2 (A2 dispenses the French course; a lower score is not a sanction, but the 400 hours still have to be shown), and socio-professional orientation when required. wallonie.be, updated 23 July 2026, says a primo-arrivant finishes within 18 months of the residence-permit order, and that deadline can be extended. parcoursintegration.be also shows 3 months to contact the CRI and 36 months on its diagram. Those two official pages do not use the same deadline; confirm it with the CRI. This independent diagnostic is 60 questions / 45 minutes / 70%, drawn from a 120-question bank. The 165-card Anki deck is live. Not official CRI material.",
     description:
-      "60-question Wallonie citoyenneté theme diagnostic (free 25-question version). Official Wallonia path is language + integration, not a published civics MCQ bank. Waitlist Anki. Independent prep.",
+      "60-question Wallonie citoyenneté theme diagnostic (free 25-question version) drawn from a 120-question bank. Wallonia has no civics MCQ: the live path is the free parcours, with 60 hours of citizenship training and French classes unless a placement test shows A2. Live 165-card Anki deck. Independent prep.",
     examBody:
       "Belgium Wallonia — citoyenneté / parcours (no official QCM bank; proposed federal test separate)",
     questionSourceNote:
-      "Questions rewritten from Prep2Go Belgium Wallonie Citoyenneté themes as full-stem MCQs with parallel-form near-miss distractors. Independent readiness check — not official Walloon government material.",
-    lastUpdated: "2026-08-04",
+      "120 French questions on Wallonie citoyenneté themes. Each timed attempt draws 60. Not official Walloon government material.",
+    lastUpdated: "2026-11-22",
     searchAliases: ["citoyenneté Wallonie", "parcours d'intégration", "Belgium citizenship Wallonia"],
   }),
   nicheReadinessConfig({

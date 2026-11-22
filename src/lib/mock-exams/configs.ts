@@ -285,9 +285,9 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     description:
       "A 30-question U.S. citizenship civics readiness check covering government, history, and geography — pairs with the $9.99 U.S. Citizenship Anki deck. Independent prep — not USCIS material.",
     examBody: "USCIS",
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-11-22",
     questionSourceNote:
-      "Questions sourced from the Prep2Go U.S. Citizenship bank (2025 USCIS civics Q&A converted to MCQ with in-deck distractors) — same bank as the $9.99 U.S. Citizenship Anki deck.",
+      "Original UniPrep2Go bank: the 128 official 2025 USCIS civics questions as MCQs, rewritten 2026-11-22. Each timed attempt draws 30. The Anki deck remains the 128-card official list.",
   },
   {
     slug: "frm-part-1-readiness-check",

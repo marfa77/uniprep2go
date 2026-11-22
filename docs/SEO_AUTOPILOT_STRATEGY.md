@@ -257,7 +257,7 @@ Already in code (do not redo):
 
 **Why:** 28d export 2026-10-18: CFA L1 mock 152 impr @ 14.1 and L2 mock 59 @ 23.3, both 0 clicks, on `cfa level 1 practice test` (pos 11.4) and `cfa level 2 practice exam` (pos 23.8). Series 63 and PTCB sit at pos 2–4 with 2 and 9 impressions.  
 **Shipped (repo):** strategy § CFA pair, cursor rule, and the week-1 + week-2 page pass (titles, H1s, homepage hero, query anchors, comparison tables, three worked samples, FAQs).  
-**Next:** `npm run gsc:export` on 2026-11-21. Measure positions, not the November impression spike. External mention only if Level 1 is still 11–14.
+**Measured 2026-11-21** (`tmp/gsc-export-2026-11-21`, windows end 2026-11-20). The two locked queries are absent from the 28-day query file. In the 90-day file they are unchanged: `cfa level 1 practice test` 20 impressions at 11.4, `cfa level 2 practice exam` 21 at 23.8, both 0 clicks. Page rows for the last 28 days: Level 1 mock 1 impression at 7.0, Level 2 mock 5 at 36.8, 0 clicks. Titles stay. Week-4 line for Level 1 still at 11–14: stop title edits. The next lever is one external mention, not another meta pass.
 
 ### 2026-10-06 — Four-layer index audit (not catalog size)
 

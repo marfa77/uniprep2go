@@ -272,7 +272,7 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
     title: "DANB ICE Infection Control Readiness Check",
     shortTitle: "DANB ICE",
     linkedDeckSlug: "danb-ice-anki-deck",
-    durationMinutes: 45,
+    durationMinutes: 60,
     questionCount: WAVE1_SESSION_QUESTIONS,
     topics: fourTopics([
       { id: "standard-precautions", label: "Standard precautions & PPE" },
@@ -281,11 +281,13 @@ export const wave1MockExamConfigs: MockExamConfig[] = [
       { id: "occupational", label: "Occupational safety & regulations" },
     ]),
     officialSourceNote:
-      "Readiness check mapped to DANB ICE infection-control themes. Not a DANB exam.",
+      "DANB ICE Exam Outline (effective 2025-03-12): 75 multiple-choice questions, 60 minutes, computer-adaptive, passing scaled score 400 (range 100–900). Domain weights: Prevention of Disease Transmission 20%, Prevention of Cross-contamination 34%, Process Instruments and Devices 26%, Occupational Safety and Administration Protocols 20%. This UniPrep2Go check is 60 questions / 60 minutes (free 25-question version) from a 120-item bank, in four equal topics, with a 70% diagnostic mark. That 70% is ours. It is not the DANB scaled score and not those domain weights. Not a DANB exam.",
     description:
-      "60-question DANB ICE infection control readiness check (free 25-question version) for dental assisting candidates.",
+      "60-question / 60-minute DANB ICE readiness check (free 25-question version) drawn from a 120-item bank. Official ICE exam: 75 questions in 60 minutes, computer-adaptive, scaled pass 400.",
     examBody: "DANB",
-    questionSourceNote: "Original UniPrep2Go local bank for ICE topics.",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-11-21; each timed attempt draws 60.",
+    lastUpdated: "2026-11-21",
   }),
   readinessConfig({
     slug: "crcst-readiness-check",

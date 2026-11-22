@@ -83,6 +83,14 @@ FULL thickened (`sie_300_authored.csv` + backup `sie_300_authored.csv.bak-2026-1
 |---|---|---|---:|---|---|
 | 2026-10-23 | SIE Exam — FINRA Application Deck (40 cards) | [1857756031](https://ankiweb.net/shared/info/1857756031) | 40 | `/decks/sie-exam-anki-deck` | New |
 
+## 2026-11-06 — Portuguese Speaking Patterns sample 15 (user override)
+
+Language LITE normally skipped; user asked to share after a failed Desktop-Share attempt. Moved 15 FULL notes (picks by `ConstructionId`) into `prep2go · Portuguese Speaking Patterns (pt-PT) · 15 constructions`, AnkiConnect sync, browser ` /decks/share/{deckId}`. FULL conversion = email `support@uniprep2go.study` (no Gumroad slug yet). Title has no word LITE. Public listing delayed 24h by AnkiWeb copyright hold.
+
+| Date | AnkiWeb title | Shared ID | Notes | Link | Decision |
+|---|---|---|---:|---|---|
+| 2026-11-06 | Portuguese Speaking Patterns — European Portuguese (15 constructions) | [1189187070](https://ankiweb.net/shared/info/1189187070) | 15 | email FULL via support@ | New — user override; 0.06MB |
+
 ## 2026-10-24 — Portuguese Survival sample 40 (user override)
 
 Language LITE normally skipped (0–3 dl measured); user asked to share Survival v2 Day-1 speaking moves. Built 40 from FULL GUIDs (`out/ankiweb_lite/language/portuguese_survival/`), GUID-moved out of FULL stamp deck, synced, shared. Title has no word LITE. Public listing delayed 24h by AnkiWeb copyright hold.

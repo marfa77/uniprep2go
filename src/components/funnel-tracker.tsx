@@ -11,7 +11,10 @@ import {
   captureFirstTouchAttribution,
   resolveAttributionReferrer,
 } from "@/lib/traffic-attribution";
+import { CHECKOUT_MIN_ACTION_MS, shouldSendCheckoutEvent } from "@/lib/checkout-guard";
 import { getOrCreateVisitorId } from "@/lib/visitor-id";
+
+const FIRST_VIEW_KEY = "uniprep2go:first-view-at";
 
 type FunnelTrackerProps = {
   deckSlug: string;
@@ -68,7 +71,27 @@ function sendImmediateEvent(payload: Record<string, unknown>) {
   });
 }
 
+function millisSinceFirstView() {
+  try {
+    const existing = window.sessionStorage.getItem(FIRST_VIEW_KEY);
+    const started = existing ? Number(existing) : Date.now();
+    if (!existing || !Number.isFinite(started)) {
+      window.sessionStorage.setItem(FIRST_VIEW_KEY, String(Date.now()));
+      return 0;
+    }
+    return Date.now() - started;
+  } catch {
+    return CHECKOUT_MIN_ACTION_MS;
+  }
+}
+
 export function trackFunnelEvent(input: TrackEventInput) {
+  const webdriver = navigator.webdriver === true;
+  const millis = millisSinceFirstView();
+  if (!shouldSendCheckoutEvent({ name: input.name, webdriver, millisSinceFirstView: millis })) {
+    return;
+  }
+
   const excluded = isFunnelExcluded();
   const firstTouch = captureFirstTouchAttribution({
     search: window.location.search,
@@ -89,6 +112,7 @@ export function trackFunnelEvent(input: TrackEventInput) {
     browserLanguages: Array.from(navigator.languages ?? []),
     timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
     screen: `${window.screen.width}x${window.screen.height}`,
+    ...(webdriver ? { webdriver: true } : {}),
     internal: false,
   };
 

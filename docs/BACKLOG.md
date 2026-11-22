@@ -2,7 +2,21 @@
 
 Приоритизированный список задач по продукту, сайту и каталогу колод.
 
-Обновлено: 2026-10-15
+Обновлено: 2026-11-19
+
+---
+
+## Статистика — не считать headless-клики победой (2026-11-19)
+
+Агенты Cursor открывают сайт обычным Chrome. User-Agent не содержит `Headless` / `Playwright` / `Cursor/`, поэтому `isBotUserAgent` и `isAgentUserAgent` их не видят. `trackFunnelEvent` шлёт `checkout_intent` и `checkout_click` сразу, до `isFunnelExcluded()`. Сервер пишет событие, и Telegram зовёт это кликом в оплату. В статистике это выглядит как интерес к колоде.
+
+Сделать один фильтр на клиенте и на `POST /api/events`, до `recordFunnelEvent` и до Telegram. Не писать отдельный пайплайн.
+
+- [x] **`navigator.webdriver`.** Клиент в `src/components/funnel-tracker.tsx` не отправляет `checkout_intent` / `checkout_click`, если `navigator.webdriver === true`. Тот же флаг в payload, сервер отбрасывает событие, даже если клиент старый.
+- [x] **Дата-центры по ASN.** Сервер отбрасывает checkout с IP внутри префиксов Hetzner AS24940 (`src/lib/hetzner-as24940.ts`, снимок RIPE 2026-11-19). Просмотр страницы с того же IP по-прежнему пишется. Жилые адреса не в этом списке.
+- [x] **Минимальное время до клика.** `CHECKOUT_MIN_ACTION_MS` = 8 секунд в `src/lib/checkout-guard.ts`. Клиент не шлёт клик раньше. Сервер не пишет `checkout_intent` / `checkout_click`, если от первого `page_view` этого `visitorId` прошло меньше порога. Сбой чтения Redis клик не прячет.
+
+Проверка: событие с `webdriver`, с Hetzner-IP и с кликом быстрее порога не попадает в Redis и не шлёт Telegram. Обычный клик с жилого IP после порога пишется как сейчас.
 
 ---
 
@@ -238,6 +252,7 @@
 ### LEED, WELL AP & CEM
 
 - [x] LEED GA, LEED AP BD+C, WELL AP, CEM — mock + deck + Gumroad
+- [ ] **LEED GA bank 120→210** (user 2026-11-08) — mock `leed-green-associate-readiness-check` + deck `leed-green-associate-anki-deck`; session stays 60Q; full cascade (apkg / Gumroad / samples / GEO). In `docs/mock-bank-qa/daily-plan.md` § Закреплено + 16.11.
 
 ### ASHRAE, CDCP, NEBOSH, CFPS, MRICS, GMAT
 

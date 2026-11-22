@@ -924,13 +924,21 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
   "danb-ice-readiness-check": explainer({
     practiceTestName: "DANB ICE Practice Test",
     whatIsExam:
-      "DANB’s Infection Control (ICE) exam is a dental assisting component exam on infection prevention, sterilization, and OSHA/CDC-style safety in dental settings. Many dental assistants take ICE as part of CDA or state requirements.",
-    administeredBy: "Dental Assisting National Board (DANB)",
+      "DANB’s Infection Control (ICE) exam is a component of NELDA, CDA, and COA. The ICE Exam Outline effective 12 March 2025 states 75 multiple-choice questions in 60 minutes. DANB gives it as a computer-adaptive test. A passing scaled score is 400, on a scale from 100 to 900. That score is not a percent correct. Domain weights are Prevention of Disease Transmission 20%, Prevention of Cross-contamination 34%, Process Instruments and Devices 26%, and Occupational Safety and Administration Protocols 20%. This UniPrep2Go page is a shorter text diagnostic.",
+    administeredBy:
+      "Dental Assisting National Board (DANB). In-person test center or remote online proctoring. The exam page lists a 60-day test window. There are no eligibility requirements to take ICE.",
+    officialFormat:
+      "Official DANB ICE: 75 questions, 60 minutes, computer-adaptive, scaled pass 400 (100–900), weights 20/34/26/20. UniPrep2Go on this page: 60 questions, 60 minutes, free 25-question start, drawn from 120 items in four equal topics, 70% diagnostic mark. The 70% is ours, not DANB’s scaled score.",
     examFaqs: [
       {
         question: "What is the DANB ICE exam?",
         answer:
-          "ICE is DANB’s Infection Control exam for dental assistants, covering sterilization, PPE, and infection-prevention protocols.",
+          "Infection Control (ICE) is DANB’s dental infection-prevention component of the NELDA, CDA, and COA pathways. It is not a state dental-board law exam.",
+      },
+      {
+        question: "How many questions are on the ICE exam, and what score passes?",
+        answer:
+          "The ICE Exam Outline states 75 multiple-choice questions in 60 minutes. DANB uses computer-adaptive testing. A passing scaled score is 400, with scores from 100 to 900. The outline says the average candidate answers about half the questions correctly. That is not the passing score.",
       },
     ],
     keywords: ["danb ice practice test", "dental infection control practice test"],

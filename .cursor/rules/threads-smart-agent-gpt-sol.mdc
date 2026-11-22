@@ -14,3 +14,52 @@ Threads banks (UniPrep US, Prep2Go/CIPLE, Barakhlo, Emigro):
 - Review / fix-first: Task model **`inherit`** only. No third-party models (user, 2026-10-15) — see `subagent-model-picker.mdc`.
 - Live farm on the VPS is write-locked (`/opt/farm-lock`). Do not rsync or unlock farm files from this UniPrep repo. Unlock only from the farm HQ chat that created the lock.
 - **Warn, don’t decide:** anything that might hurt reach, trust, measurement honesty, brand, or funnel (mismatched image/text, skipped answers, sparse dest while bio link dies, volume spikes on weak accounts, observe-only experiment arms, language mismatch, overlapping tests on one handle) — flag to the user first and wait for OK. Do not ship “good enough” shortcuts that confound a live experiment.
+- **Ops DM** (user, 2026-10-29). The morning stats digest stays. Личка also gets a missed slot, a publish error, a reply that never landed, a missing token or state, a blocked duplicate, a stuck stage, or a p0 audit. No success receipt, no empty approval card («черновика нет»), no experiment readout.
+
+## Fast loop (Barakhlo lab voice) — no one-off SSH scripts
+
+Calendar `/adapt` **excludes** `stream=lab` on purpose (experiments must not pollute medians). While cities run on `threads_lab_days.json` (gifts_only / voice series), use the lab pulse instead of reinventing analysis:
+
+1. On the farm: `cd /opt/barakhlo/parser && sudo -u www-data .venv/bin/python threads_lab_pulse.py report`
+2. Queue: `… threads_lab_pulse.py queue` (or `--json` for inherit handoff)
+3. Recipe cache: `… threads_lab_pulse.py recipe` → `var/threads_lab_recipe.json` (keep/avoid + winner examples)
+4. Telegram: `/lab` (voice only) or `/adapt` (calendar candidates **+** lab pulse)
+5. Point-edit **only** unpublished slots in the queue (or the full unpublished voice window if the user asked to adapt); leave bot days and already-posted roots; `validate_plan` → unlock/deploy → relock
+6. Do **not** write a new 28-day bank file; do **not** auto-rewrite from the pulse output
+
+## Polish bar (adapt = every word, not a shape patch)
+
+A shape fix (`named_board` + ratio + question) is **not** done. Before marking a slot adapted:
+
+1. **Read the whole post aloud** in the city’s voice. Cut anything that sounds like a caption, a template, or an AI aside («без морали», «без подкола», «без нравоучения», «характер дурной, могу признаться»).
+2. **Every word earns its place** — no filler, no double setup, no «Ах да» under an opening that already named the board, no broken CTA («Подписка и сохранить» → «подпишитесь и сохраните»).
+3. **Grammar and stress** — gender of барахолка (feminine), city demonym, numbers that match the reply URL topic, no invented counts.
+4. **Stranger test** — a random reader must get who is speaking and why it matters in the first two lines; the question must be answerable in one word.
+5. **Diversity** — openings must not share the same first 6 words (or Jaccard ≥ 0.5 on long words) with another unpublished slot on the same account.
+6. Inherit writer returns only after a second pass on the same chunk; main chat spot-reads every changed line before deploy.
+
+## 1000 followers — live post, one account first (user, 2026-10-29)
+
+Goal is +1000 followers on an account in 30 days, from posts, without ads. No prewritten bank.
+
+Live accounts: `@barakhlo_armenia` and `@barakhlo_thailand` (user, 2026-10-29). Same slot, different models. Other cities stay on their current schedule until this test is read.
+
+Armenia posts come only from a free writer-agent. The writer speaks as a person, in living Russian, and chooses the shape. Context limits the writer. A board pull and a fixed gift template are not the task. Writer model: `anthropic/claude-opus-5.5` on OpenRouter. The writer is given the account's already published posts and must not repeat a scene, an opening, or the same point. The checker rejects a repeat. A second agent, not the writer, checks whether the post would collect followers and sets `viral`. Checker model: `x-ai/grok-4.7` on OpenRouter. The timer publishes that row only, on the day a post was already due, and does not fall back to `build_gift_post`. The writer cannot stamp their own row. Thailand uses the same slot: writer `openai/gpt-5.6-sol`, checker `google/gemini-2.5-pro`.
+
+UniPrep (`@uniprep2go`, market `us`) is the same free slot, aimed at site traffic (user, 2026-10-29). Writer `anthropic/claude-opus-5.5`, checker `x-ai/grok-4.7`. American English. The writer chooses the form and names one exam from `threads_uniprep_days.json`. The post appends the real `/mock-exams/…` URL. The checker decides whether a stranger would open the practice test, and cannot be the writer. Do not publish the prewritten bank, including unstamped day 42. Due is `last_posted_on != today`. Do not advance `last_day`. Do not set `gifts_only_ran_on` on a skip. UniPrep publishes without a DM card. Publications are off (user, 2026-10-31): `paused_until` `2099-01-01` in `threads_schedule_overrides.json`. Do not clear that pause unless the user asks to turn UniPrep posts back on.
+
+Prep2Go (`@prep2go_study`) is the same free slot, aimed at site traffic (user, 2026-10-30). Writer `anthropic/claude-opus-5.5`, checker `x-ai/grok-4.7`. Plain English, European Portuguese if a word is quoted. The writer chooses the form and names one live practice page: `/ciple-a2-mock-test`, `/practice-exam`, or `/pla-companion/drills`. The post appends that URL on `https://www.prep2go.study`. The checker decides whether a stranger would open the page, and cannot be the writer. Do not turn the Vercel calendar back on (`THREADS_POST` stays `0`). Due is `last_posted_on != today`. Do not advance `last_day`. Do not set `gifts_only_ran_on`. Prep2Go publishes without a DM card. DELE, NL, CCE, and EL stay off this slot.
+
+Barakhlo and Emigro root posts publish only after a yes on the ops DM card (user, 2026-10-30). Reject closes that day; the same post can be asked again the next day. Do not send a second card while one is waiting. `@barakhlo_portugal` publications are off (user, 2026-11-02): `paused_until` `2099-01-01` on market `portugal`. Do not clear that pause unless the user asks to turn those posts back on.
+
+A publish failure, a missed check, or a missing token DMs the ops chat once and holds that account until the next local day (user, 2026-10-30). The 10-minute dispatcher skips it. It does not retry the post or send a second message the same day. `--force` is the manual retry.
+
+Barakhlo calendar banks for Georgia, Spain, Berlin and Dubai are the pre-rewrite copies again (user, 2026-11-06). Portugal keeps the rewritten week. Next unpublished month hand-written 2026-11-06 (georgia 50–79, spain 48–77, berlin 34–63, dubai 30–59, thailand 24–53; armenia continues its bank).
+
+Barakhlo publications are on again except Portugal (user, 2026-11-06): georgia, spain, armenia, berlin, dubai, thailand — pause cleared. `@barakhlo_portugal` stays `paused_until` `2099-01-01`. Prep2Go and UniPrep stay paused. User 2026-11-07: **all active Barakhlo cities publish from the calendar bank the same way** — no owner DM wait, no viral-stamp wait, no free-writer path for Armenia/Thailand, no gifts_only hold. Dubai day 30 is a normal bank row. Emigro roots also publish from bank directly. `emigro-threads-satellites`, `emigro-threads-sos`, `emigro-threads-replies`, and `barakhlo-threads-lab.timer` stay disabled/masked. The morning ops digest stays. Telegram `@predictpng` stays. UniPrep (`us`) Threads token is dead (OAuth 190, 2026-11-07): refresh/replies for `us` skipped; `replies` false; do not re-enable until a new token is exchanged. `prep2go_dele` token also dead — left out of replies allowlist.
+
+`@dubaiofferverdict` publications are off (user, 2026-11-03): Threads post and folio timers disabled, `UAE_THREADS_AUTO_PUBLISH=0`, fleet account `dov` replies false. The site and the Telegram bot stay on. Do not turn that Threads account back on unless the user asks.
+
+`@trendsniperadvisor` publications are off (user, 2026-11-03): `THREADS_AUTO_PUBLISH=0` in `/opt/predictpng-telegram/.env`, and `replies` is false on fleet account `predictpng`. Telegram `@predictpng` stays on. Do not turn the Threads account back on unless the user asks.
+
+Emigro has no flea-market board. Emigro roots publish from the calendar banks directly (user, 2026-11-07): no owner DM wait, no viral-stamp wait. Timers stay every 2 days at a random time 08:00–19:00 local. SOS / shared satellites / replies stay off until asked.

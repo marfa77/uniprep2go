@@ -639,7 +639,7 @@ describe("deck catalog", () => {
       "ma-real-estate-anki-deck": "Massachusetts Real Estate Anki Deck — 60 Flashcards",
       "medical-scribe-anki-deck": "Medical Scribe Anki Deck — 120 Flashcards",
       "ardms-spi-anki-deck": "ARDMS SPI Anki Deck — 120 Flashcards",
-      "abo-optician-anki-deck": "ABO Optician Anki Deck — 120 Flashcards",
+      "abo-optician-anki-deck": "ABO Optician Anki Deck — 210 Flashcards",
       "mi-real-estate-anki-deck": "Michigan Real Estate Anki Deck — 60 Flashcards",
       "nc-real-estate-anki-deck": "North Carolina Real Estate Anki Deck — 60 Flashcards",
       "nj-real-estate-anki-deck": "New Jersey Real Estate Anki Deck — 60 Flashcards",

@@ -566,13 +566,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "instruments", label: "Instruments & regulations" }
     ]),
     officialSourceNote:
-      "Independent diagnostic on ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) themes — optics, lenses, fitting, instruments/regs. Official NOCE is typically 125 MCQ / 2 hours (about 100 scored + pretest); pass is criterion-referenced (Modified Angoff) and ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target. Spectacle NOCE only — not NCLE contact lenses and not optometry. Not ABO-NCLE exam material.",
+      "Independent diagnostic on ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) themes — optics, lenses, fitting, instruments/regs. Official NOCE is typically 125 MCQ / 2 hours (about 100 scored + pretest); pass is criterion-referenced (Modified Angoff) and ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target, drawn from a 210-question bank. Spectacle NOCE only — not NCLE contact lenses and not optometry. Not ABO-NCLE exam material.",
     description:
-      "60-question ABO Optician (NOCE) readiness check (free 25-question version) with topic scoring — shorter than the official ~125Q / 2h form.",
+      "60-question / 75-minute ABO Optician (NOCE) readiness check (free 25-question version) drawn from a 210-question bank — shorter than the official ~125Q / 2h form.",
     examBody: "ABO-NCLE (NOCE / ABO Basic)",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 210 questions (optics 53, lenses 53, fitting 52, instruments 52). Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
     searchAliases: ["ABO", "optician exam", "ABO-NCLE", "NOCE practice test"],
-    lastUpdated: "2026-10-07",
+    lastUpdated: "2026-11-22",
   }),
   nicheReadinessConfig({
     slug: "acsm-cpt-readiness-check",

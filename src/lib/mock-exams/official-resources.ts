@@ -75,7 +75,7 @@ const BODY_RESOURCES: Array<{ match: RegExp | string; resource: BodyResource }> 
     match: /^USCIS$/i,
     resource: {
       certifier: "U.S. Citizenship and Immigration Services (USCIS)",
-      verifyAtUrl: "https://www.uscis.gov/citizenship/find-study-materials-and-resources",
+      verifyAtUrl: "https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test",
     },
   },
   {
@@ -1064,7 +1064,7 @@ const SLUG_RESOURCES: Partial<Record<string, BodyResource>> = {
   },
   "belgium-wallonie-citoyennete-readiness-check": {
     certifier: "Wallonia — parcours d'intégration / citoyenneté",
-    verifyAtUrl: "https://www.wallonie.be/",
+    verifyAtUrl: "https://www.wallonie.be/fr/demarches/beneficier-dun-parcours-dintegration-en-tant-que-primo-arrivant",
   },
   "luxembourg-vivre-ensemble-readiness-check": {
     certifier: "Luxembourg — Guichet.lu (Vivre ensemble au Grand-Duché)",

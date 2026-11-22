@@ -604,7 +604,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians on ophthalmic optics, lenses, fitting/dispensing, instruments, and related regulations — separate from the NCLE contact-lens exam.",
     administeredBy: "ABO-NCLE",
     officialFormat:
-      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a 60-question / 75-minute diagnostic (free 25-question version).",
+      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
     examFaqs: [
       {
         question: "What is the ABO Optician (NOCE) exam?",
@@ -614,7 +614,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official ABO NOCE?",
         answer:
-          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version).",
+          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
       },
       {
         question: "Is this an official ABO Optician exam?",

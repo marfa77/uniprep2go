@@ -1,0 +1,18 @@
+---
+description: Keep the free readiness-check links on every public CFA/FRM formula-sheet surface
+alwaysApply: true
+---
+
+# Formula sheets → readiness checks
+
+GitHub formula sheets are a US traffic source. Every public surface of `marfa77/cfa-frm-formula-sheets` carries this block, ahead of the deck links. Copy the same block into any new public gist or repo made from this dataset.
+
+- CFA Level I: 60 questions, 90 minutes, free 25-question start — `https://uniprep2go.study/mock-exams/cfa-level-1-readiness-check`
+- CFA Level II: 60 questions, 120 minutes, free 25-question start — `https://uniprep2go.study/mock-exams/cfa-level-2-readiness-check`
+- FRM Part I: 50 questions, 120 minutes, free 25-question start — `https://uniprep2go.study/mock-exams/frm-part-1-readiness-check`
+
+Surfaces: `README.template.md` (README is generated), `scripts/make_docs.py` output (`FORMULAS.md`, `docs/index.html`), `huggingface/README.md`. After a template or generator edit, run `python scripts/make_docs.py`.
+
+Do not paste the block into an unrelated gist. The Cognitive Class Python notebook gist is not a formula sheet.
+
+Do not republish PyPI, npm, or the Zenodo DOI just to add the links. If a package description is republished for another reason, include this block.

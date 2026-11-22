@@ -990,6 +990,765 @@
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
   },
   {
+    "id": "abo-optician-readiness-check-optics-031",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "During a morning huddle, an apprentice points at the power stamp on a trial lens and asks what a diopter actually measures. Which definition should the optician give?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A diopter is the reciprocal of the focal length in meters."
+      },
+      {
+        "id": "b",
+        "text": "A diopter is the focal length itself, stated in meters."
+      },
+      {
+        "id": "c",
+        "text": "A diopter is the reciprocal of the focal length in centimeters."
+      },
+      {
+        "id": "d",
+        "text": "A diopter is the focal length in centimeters multiplied by one hundred, with no reciprocal taken."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A diopter is the reciprocal of focal length when that length is expressed in meters. A lens that focuses parallel light at 0.25 m is 4.00 D, because 1 divided by 0.25 equals 4. Leaving out the reciprocal, or taking it in centimeters, gives the wrong power stamp.",
+    "distractorExplanations": {
+      "b": "This drops the reciprocal and treats the diopter as the focal length in meters, which inverts the definition.",
+      "c": "This keeps the reciprocal but changes the unit to centimeters, so the power stamp comes out far too small.",
+      "d": "This skips the reciprocal and scales centimeters by one hundred, mixing a unit conversion into the definition."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-032",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "An apprentice aims a minus trial lens at a distant window and holds a sheet of paper behind it, trying to catch a picture of the street. What image does that lens form?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An inverted real image that can be caught on a screen behind the lens."
+      },
+      {
+        "id": "b",
+        "text": "An upright virtual image that cannot be caught on a screen."
+      },
+      {
+        "id": "c",
+        "text": "An inverted virtual image that can be caught on a screen behind the lens."
+      },
+      {
+        "id": "d",
+        "text": "An inverted real image in front of the lens that can be caught on a card held beside the object."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A minus lens diverges rays from a distant object, so those rays do not meet behind the lens. Tracing them backward gives an upright virtual image on the object side. A sheet of paper cannot catch that image, because a virtual image is not a place where light actually converges.",
+    "distractorExplanations": {
+      "a": "This is the real inverted image a plus lens can throw on a screen, not the image formed by a minus lens.",
+      "c": "The distant-object image of a minus lens is upright, not inverted, and a virtual image cannot be caught on a screen.",
+      "d": "Putting an inverted real image in front of the lens mixes the object side of a virtual image with the screen test for a real image."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-033",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "While hand-neutralizing over a crossword, the optician slides the lens to the right and the print slides to the right with it. What does that with motion indicate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "With motion means the lens is plus."
+      },
+      {
+        "id": "b",
+        "text": "With motion means the lens has prism and no sphere."
+      },
+      {
+        "id": "c",
+        "text": "With motion means the lens is minus."
+      },
+      {
+        "id": "d",
+        "text": "With motion means a plus spherocylinder whose axis follows the movement of the hand."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In hand neutralization the optician moves the lens and watches the image. When the image travels the same way as the lens, the motion is called with motion, and the lens is minus. Against motion, where the image travels the opposite way, is the plus-lens finding. The test is reading sphere sign, not prism base or cylinder axis.",
+    "distractorExplanations": {
+      "a": "This swaps the hand-neutralization signs. With motion belongs to a minus lens, and against motion belongs to a plus lens.",
+      "b": "With motion is a sphere-power finding. It does not mean the lens has prism and lacks sphere power.",
+      "d": "With motion identifies a minus lens. It does not identify a plus spherocylinder or show that the axis follows the hand."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-034",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "Over a letter chart, the optician moves a lens to the left and the letters shift to the right, opposite the hand. What does that against motion indicate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Against motion means the lens is minus."
+      },
+      {
+        "id": "b",
+        "text": "Against motion means the cylinder axis is horizontal."
+      },
+      {
+        "id": "c",
+        "text": "Against motion means a plano lens that carries base-down prism and no sphere."
+      },
+      {
+        "id": "d",
+        "text": "Against motion means the lens is plus."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Against motion means the chart image moves opposite the lens. That behavior belongs to a plus lens, which shifts the image against the hand. A minus lens does the reverse and shows with motion. The direction of the motion does not name a cylinder axis or a prism base.",
+    "distractorExplanations": {
+      "a": "This swaps the signs. Against motion is the plus-lens finding, and with motion is the minus-lens finding.",
+      "b": "Against motion is about plus sphere power. It does not tell the optician that the cylinder axis is horizontal.",
+      "c": "A plano prism does not produce the against-motion sphere test. Against motion means the lens is plus."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-035",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A high-minus wearer says door frames bow outward at the lens edge. The high-plus wearer beside them says straight lines bow inward. Which off-axis shape errors match those two complaints?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Barrel distortion for a minus lens and pincushion for a plus lens."
+      },
+      {
+        "id": "b",
+        "text": "Pincushion for a minus lens and barrel distortion for a plus lens."
+      },
+      {
+        "id": "c",
+        "text": "Barrel distortion for both the minus lens and the plus lens."
+      },
+      {
+        "id": "d",
+        "text": "Pincushion for a minus lens and barrel distortion for a plus lens, with color fringes added at the edge."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Barrel distortion is the usual off-axis shape error of a minus lens, so straight lines bow outward like the staves of a barrel. Pincushion is the usual off-axis shape error of a plus lens, so straight lines bow inward. Swapping the names is a common bench mix-up. These shape errors are separate from colored fringes.",
+    "distractorExplanations": {
+      "b": "This swaps the two shape errors. Barrel belongs with the minus lens, and pincushion belongs with the plus lens.",
+      "c": "Barrel distortion is the usual minus-lens error. A plus lens usually shows pincushion, not a second case of barrel.",
+      "d": "This swaps barrel and pincushion, then adds color fringes, which are chromatic aberration rather than distortion."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-036",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A spherocylinder on the optical bench turns a distant point into two separated line foci. Where should the optician look for the circle of least confusion?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The circle of least confusion lies in front of both line foci."
+      },
+      {
+        "id": "b",
+        "text": "The circle of least confusion lies between the two line foci."
+      },
+      {
+        "id": "c",
+        "text": "The circle of least confusion lies beyond both line foci."
+      },
+      {
+        "id": "d",
+        "text": "The circle of least confusion lies on the nearer line focus, at the start of the interval of Sturm."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A spherocylinder brings one object point to two line foci, one for each principal power, with the interval of Sturm between them. The circle of least confusion, where the blur is roundest, lies between those two line foci. It is not parked on either line, and it is not outside the interval.",
+    "distractorExplanations": {
+      "a": "The circle sits inside the interval of Sturm. Placing it in front of both line foci puts it on the lens side of the nearer line.",
+      "c": "The circle lies between the line foci. Placing it beyond the farther line puts the round blur outside the interval of Sturm.",
+      "d": "A line focus is one end of the interval. The circle of least confusion lies between the two lines, not on the nearer line."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-037",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A trainer sketches an optical cross while explaining a compound lens to a new hire. What is that cross meant to show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An optical cross shows the prism base at the optical center."
+      },
+      {
+        "id": "b",
+        "text": "An optical cross shows the Abbe value of the lens material."
+      },
+      {
+        "id": "c",
+        "text": "An optical cross shows the power in each principal meridian."
+      },
+      {
+        "id": "d",
+        "text": "An optical cross shows the frame pupillary distance and the decentration for each eye."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An optical cross is a sketch of the two principal meridians with the power written on each arm. For a spherocylinder, one arm is the sphere alone and the arm at a right angle is sphere plus cylinder. The drawing is not a prism-base mark, an Abbe number, or a frame pupillary-distance layout.",
+    "distractorExplanations": {
+      "a": "An optical cross records meridional power. The prism base at the optical center is a different mark on a layout.",
+      "b": "Abbe value is a material dispersion number. It is not what the two arms of an optical cross are drawn to display.",
+      "d": "Frame pupillary distance and decentration are fitting numbers. The cross shows lens power in each principal meridian."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-038",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "Before ordering a ground prism, the optician presses a thin flexible wafer of repeated tiny wedges onto a lens for a temporary trial. What is that wafer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A conventional prism ground as one thick wedge through the full lens blank."
+      },
+      {
+        "id": "b",
+        "text": "A slab-off grind used to balance vertical prism in the reading position."
+      },
+      {
+        "id": "c",
+        "text": "A Fresnel lens of concentric rings that adds sphere power rather than prism."
+      },
+      {
+        "id": "d",
+        "text": "A Fresnel prism, made of many facets that share one base direction."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A Fresnel prism is a thin wafer whose face is divided into many small prisms of the same base direction. The wearer gets the prescribed prism without the thickness and weight of one large ground wedge. Slab-off is a different prism grind, and a Fresnel lens uses rings to add power rather than prism.",
+    "distractorExplanations": {
+      "a": "A conventional ground prism is one thick wedge. A Fresnel prism repeats that wedge as many small prisms on a thin wafer.",
+      "b": "Slab-off is a bicentric grind for vertical imbalance at near. It is not the temporary thin wafer of small prisms.",
+      "c": "This names the Fresnel idea but swaps in a lens of concentric rings. The wafer on the lens is a prism, not added sphere power."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-039",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A lined-bifocal wearer says the page jumps as the eye crosses into the near portion. The lab asks for that jump in prism diopters. Which calculation is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add power times the centimeters from the segment top to the segment optical center."
+      },
+      {
+        "id": "b",
+        "text": "Add power times the millimeters from the segment top to the segment optical center."
+      },
+      {
+        "id": "c",
+        "text": "Distance power times the centimeters from the segment top to the segment optical center."
+      },
+      {
+        "id": "d",
+        "text": "Distance power times the millimeters from the segment top to the distance optical center, then counted again for the other eye."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Image jump is the sudden prism shift as the line of sight crosses the top of a lined segment. In prism diopters it equals the add power times the distance in centimeters from the segment top to the segment optical center. Millimeters would multiply the result by ten, and the distance power is not the power that creates the jump.",
+    "distractorExplanations": {
+      "b": "The distance in the jump formula is in centimeters. Using millimeters multiplies the prism result by ten.",
+      "c": "Jump uses the add, because the sudden prism comes from the segment. Distance power is the wrong power in this formula.",
+      "d": "This uses distance power, millimeters, and the distance optical center, then counts the other eye. Jump uses the add, centimeters, and the segment center."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-040",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A customer holds a plus lens over a parts label, keeping the label closer than the focal length, and uses the lens as a magnifier. Which image does that close hold produce?",
+    "options": [
+      {
+        "id": "a",
+        "text": "An inverted diminished real image from an object beyond twice the focal length."
+      },
+      {
+        "id": "b",
+        "text": "An upright magnified virtual image from a plus lens used inside its focal length."
+      },
+      {
+        "id": "c",
+        "text": "An inverted magnified real image from an object between the focal length and twice that distance."
+      },
+      {
+        "id": "d",
+        "text": "An upright diminished real image caught on a card behind a plus lens used inside its focal length."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Used as a magnifier, a plus lens holds the object inside its focal length. The lens then cannot form a real image on the far side. The eye sees an upright, magnified virtual image on the same side as the object. Objects past the focal length produce real images instead, and those real images are inverted.",
+    "distractorExplanations": {
+      "a": "An object beyond twice the focal length gives a diminished inverted real image. A magnifier holds the object inside the focal length.",
+      "c": "Between one and two focal lengths the plus lens gives an inverted magnified real image. Inside the focal length the image is virtual and upright.",
+      "d": "Inside the focal length the image is virtual, upright, and magnified. It is not a diminished real image, and a card behind the lens cannot catch it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-041",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A spherical single-vision lens reads clear at the center, yet the wearer reports blur when looking well away from the center. The blur shows no color. Which off-axis error fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transverse chromatic aberration from a low-Abbe lens viewed off center."
+      },
+      {
+        "id": "b",
+        "text": "Barrel distortion that bends straight lines while the wearer looks off center."
+      },
+      {
+        "id": "c",
+        "text": "Oblique astigmatism from looking away from the optical center of a spherical lens."
+      },
+      {
+        "id": "d",
+        "text": "Image jump at a segment top, applied here even though the lens is single-vision and has no segment line."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Oblique astigmatism is an off-axis error that appears when the eye looks away from the optical center of a spherical lens. Oblique bundles fail to meet in one focus, so the edge view blurs even though the lensometer reading at the center is clear. Color fringes would point to chromatic aberration, and a bent but sharp line would point to distortion.",
+    "distractorExplanations": {
+      "a": "Transverse chromatic aberration shows color fringes and tracks Abbe value. This blur has no color, so it is not that dispersion effect.",
+      "b": "Barrel distortion warps the shape of a sharp image. The complaint here is blur off the optical center, which is oblique astigmatism.",
+      "d": "Image jump needs a segment boundary. This single-vision spherical lens has no segment, so the off-center blur is oblique astigmatism."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-042",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "The surfacing lab describes one side of a cylinder lens as toric. Which surface description should the optician expect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A toric surface has one curve that stays the same in every meridian."
+      },
+      {
+        "id": "b",
+        "text": "A toric surface has two principal curves that are equal to each other."
+      },
+      {
+        "id": "c",
+        "text": "A toric surface is a flat face with prism thickening one edge of the blank."
+      },
+      {
+        "id": "d",
+        "text": "A toric surface has two different principal curves."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A toric surface is ground with two different principal curves, so the two meridians have different surface powers. That difference is the surface cylinder a lens clock reads between its two principal settings. A spherical surface keeps one curve in every meridian. Equal curves would not produce cylinder.",
+    "distractorExplanations": {
+      "a": "One curve in every meridian describes a spherical surface. A toric surface is the one with two different principal curves.",
+      "b": "The two principal curves of a toric surface are different. Equal curves at right angles would not create cylinder power.",
+      "c": "A flat face with thickness growing toward one edge describes a prism. Toric refers to two different principal curves."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-043",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "Two clear blanks of equal thickness sit on the bench, one at index 1.67 and one at index 1.50. A trainee asks which blank slows a light ray more. What is the correct comparison?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Light travels more slowly in a higher-index material than in a lower-index material."
+      },
+      {
+        "id": "b",
+        "text": "Light travels more slowly in a lower-index material than in a higher-index material."
+      },
+      {
+        "id": "c",
+        "text": "Light travels at the same speed in both materials because both blanks are clear plastic."
+      },
+      {
+        "id": "d",
+        "text": "Light travels faster in a higher-index material than in a lower-index material, so the 1.67 blank is the quicker path."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Refractive index compares the speed of light in air with the speed in the material. A higher index means the ray travels more slowly, so the 1.67 blank slows light more than the 1.50 blank. Equal thickness and a clear appearance do not override that speed difference.",
+    "distractorExplanations": {
+      "b": "This reverses the speed comparison. The higher-index material is the slower one, not the lower-index material.",
+      "c": "Being clear plastic does not set the speed. Index does, and the higher index slows the ray more.",
+      "d": "This reverses the rule and treats the 1.67 blank as a faster path. Higher index means a slower speed in the material."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-044",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "White light is sent along the axis of a single lens on the bench. Blue focus and red focus land at different distances, with no sideways color spread. Which aberration is showing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transverse chromatic aberration puts different wavelengths side by side at one shared focus off the axis."
+      },
+      {
+        "id": "b",
+        "text": "Longitudinal chromatic aberration puts different wavelengths at different foci along the axis."
+      },
+      {
+        "id": "c",
+        "text": "Oblique astigmatism puts one wavelength at two foci because the eye looks away from the optical center."
+      },
+      {
+        "id": "d",
+        "text": "Barrel distortion puts different wavelengths at different foci and also bends the shape of the image off axis."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Longitudinal chromatic aberration places different wavelengths at different distances along the optical axis, so blue and red come to focus in different planes. Transverse chromatic aberration is the sideways color fringe seen when looking off axis. The bench result here has no sideways spread, so it is the longitudinal form.",
+    "distractorExplanations": {
+      "a": "Sideways color at one shared focus is transverse chromatic aberration. Different foci along the axis are the longitudinal form.",
+      "c": "Oblique astigmatism comes from looking off the optical center. It is not the axial split between blue focus and red focus.",
+      "d": "Barrel distortion changes image shape. It does not place different wavelengths at different foci along the axis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-045",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "An instructor asks which images from the morning bench demonstration can be shown on a screen. Which distinction should the apprentice apply?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A virtual image can be projected onto a screen, while a real image cannot."
+      },
+      {
+        "id": "b",
+        "text": "Both a real image and a virtual image can be projected onto a screen if the room lights are turned down for the demonstration."
+      },
+      {
+        "id": "c",
+        "text": "A real image can be projected onto a screen. A virtual image cannot."
+      },
+      {
+        "id": "d",
+        "text": "A real image stays on the object side and cannot reach a screen, while a virtual image is the one the screen catches."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A real image is formed where rays actually converge, so a screen placed there can show it. A virtual image is a place from which rays appear to come, but the rays do not meet there. No screen can catch a virtual image. Looking through a lens and seeing a picture does not by itself make that image real.",
+    "distractorExplanations": {
+      "a": "This reverses the screen test. The image that can be projected is the real image, and the virtual image cannot be caught.",
+      "b": "Dimming the room does not let a screen catch a virtual image. Rays do not actually meet at a virtual image.",
+      "d": "This swaps where the images sit and which one a screen can catch. A real image can be projected. A virtual image cannot."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-046",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A base-down prism is held over a letter on the lensometer chart. The optician follows the light path and also notes where the letter appears to move. Which pair of directions is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A prism deviates light toward its apex. The image appears shifted toward the base, so both directions are reversed."
+      },
+      {
+        "id": "b",
+        "text": "A prism deviates light toward its base. The image also appears shifted toward the base."
+      },
+      {
+        "id": "c",
+        "text": "A prism deviates light toward its apex. The image also appears shifted toward the apex, with the ray and the image traveling together."
+      },
+      {
+        "id": "d",
+        "text": "A prism deviates light toward its base. The image appears shifted toward the apex."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A prism bends the ray toward its base. The eye, looking back along the outgoing ray, sees the image displaced toward the apex. The light and the apparent image therefore move in opposite directions. Remembering the base rule for the ray and then sending the image the same way is the usual mix-up.",
+    "distractorExplanations": {
+      "a": "This reverses both directions. The ray goes toward the base, and the apparent image goes toward the apex.",
+      "b": "The ray does go toward the base, but the image does not follow it. The image appears shifted toward the apex.",
+      "c": "The ray and the image do not travel together toward the apex. The ray goes to the base, and the image appears toward the apex."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-047",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "The finisher shifts the optical center of a plus distance lens toward the nasal side of the pupil before the lens is cut. Which horizontal prism appears at the pupil?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moving the optical center of a plus lens nasally produces base-in prism."
+      },
+      {
+        "id": "b",
+        "text": "Moving the optical center of a plus lens nasally produces base-out prism."
+      },
+      {
+        "id": "c",
+        "text": "Moving the optical center of a plus lens nasally produces base-up prism."
+      },
+      {
+        "id": "d",
+        "text": "Moving the optical center of a plus lens nasally produces base-down prism at distance and base-up prism at near."
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "On a plus lens the base points toward the thicker optical center. Moving that center nasal to the pupil produces base-in prism at the eye. Base-out would mean the plus center was moved toward the temple, or that the lens was minus. A nasal center shift is horizontal prism, not a vertical base that changes from distance to near.",
+    "distractorExplanations": {
+      "b": "Base-out is the nasal-center result for a minus lens, or for a plus lens whose center moves temporally. A plus lens moved nasally is base-in.",
+      "c": "A nasal shift of the optical center produces horizontal prism. Base-up is a vertical base, which this move does not create.",
+      "d": "Nasal decentration of a plus lens is horizontal base-in. It does not create base-down at distance and base-up at near."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-048",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "In one trial clip, the optician stacks a base-in wedge of 2.00 prism diopters on an equal base-out wedge. What net prism should remain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Two equal prisms with opposite bases add to twice the power base-in when stacked."
+      },
+      {
+        "id": "b",
+        "text": "Two equal prisms with opposite bases cancel when they are stacked."
+      },
+      {
+        "id": "c",
+        "text": "Two equal prisms with opposite bases add to twice the power base-out when stacked."
+      },
+      {
+        "id": "d",
+        "text": "Two equal prisms with opposite bases turn into vertical prism when stacked, because the two bases rotate."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Equal prisms stacked with bases in opposite directions produce equal deviations that point opposite ways. Those deviations cancel, so the lensometer should read no net prism from the pair. If the bases pointed the same way, the powers would add. Opposite horizontal bases do not rotate into vertical prism.",
+    "distractorExplanations": {
+      "a": "Opposite bases do not add as base-in. Equal prisms with opposite bases cancel rather than stacking to twice the power.",
+      "c": "Opposite bases do not add as base-out. Equal and opposite prisms cancel, so the net prism from the stack is gone.",
+      "d": "Opposite horizontal bases cancel in the horizontal direction. They do not rotate into a vertical prism when stacked."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-049",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A new hire reads a spherocylinder and asks which meridian carries the sphere by itself. Which power rule answers the question?",
+    "options": [
+      {
+        "id": "a",
+        "text": "On the cylinder axis the power is sphere plus cylinder. Ninety degrees away it is the sphere alone."
+      },
+      {
+        "id": "b",
+        "text": "Both meridians carry the sphere plus half the cylinder, which is the spherical equivalent of the lens."
+      },
+      {
+        "id": "c",
+        "text": "On the cylinder axis the power is the sphere alone. Ninety degrees away it is sphere plus cylinder."
+      },
+      {
+        "id": "d",
+        "text": "On the cylinder axis the power is the sphere alone. Ninety degrees away it is the sphere minus the cylinder, with the sign reversed."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In a spherocylinder the meridian of the cylinder axis carries the sphere power alone, because cylinder power is zero along its axis. Ninety degrees away the cylinder is fully in effect, so the power is the sphere plus the cylinder. Swapping those meridians, or subtracting the cylinder, misstates both principal powers.",
+    "distractorExplanations": {
+      "a": "This swaps the meridians. The axis meridian is the sphere alone, and the meridian ninety degrees away is sphere plus cylinder.",
+      "b": "The spherical equivalent averages the two principal powers. It is not the power actually present in either meridian.",
+      "d": "Ninety degrees from the axis the cylinder is added to the sphere. Subtracting it, or flipping its sign there, is the wrong combination."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-050",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A patient choosing a tint asks which wavelengths the optician means by visible light. Which range is the appropriate shop answer?",
+    "options": [
+      {
+        "id": "a",
+        "text": "About 400 nm at the red end to about 700 nm at the violet end."
+      },
+      {
+        "id": "b",
+        "text": "About 200 nm at the violet end to about 400 nm at the red end."
+      },
+      {
+        "id": "c",
+        "text": "About 700 nm at the violet end to about 1400 nm at the red end, which moves the window into the infrared."
+      },
+      {
+        "id": "d",
+        "text": "About 400 nm at the violet end to about 700 nm at the red end."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For shop explanations, visible light runs from about 400 nm at the violet end to about 700 nm at the red end. Wavelengths shorter than that violet end are ultraviolet, and wavelengths longer than that red end are infrared. The ends are not swapped, and this approximate window should not be tightened into a false official cutoff.",
+    "distractorExplanations": {
+      "a": "This swaps the ends of the spectrum. Violet is the short end near 400 nm, and red is the long end near 700 nm.",
+      "b": "A span from about 200 nm to about 400 nm is ultraviolet. It is not the visible window from violet to red.",
+      "c": "Starting near 700 nm and running well past it moves into the infrared. Visible light is the approximate 400 nm to 700 nm window."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-051",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A minus single-vision job comes back with its optical center sitting nasal to the pupil. Which horizontal prism is in front of that eye?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Moving the optical center of a minus lens nasally produces base-in prism."
+      },
+      {
+        "id": "b",
+        "text": "Moving the optical center of a minus lens nasally produces base-out prism."
+      },
+      {
+        "id": "c",
+        "text": "Moving the optical center of a minus lens nasally produces base-up prism."
+      },
+      {
+        "id": "d",
+        "text": "Moving the optical center of a minus lens nasally produces no prism, since a center shift changes thickness but not the base."
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "On a minus lens the base points away from the thin center, toward the thicker edge. Moving the optical center nasal to the pupil leaves the eye on the temporal side of that center, so the base there is temporal, which is base-out. The same nasal move on a plus lens produces base-in prism, the opposite result.",
+    "distractorExplanations": {
+      "a": "Base-in is what a plus lens gives when its optical center moves nasally. A minus lens moved nasally gives base-out prism.",
+      "c": "A nasal center shift is horizontal prism. Base-up is a vertical base, which this decentration does not produce.",
+      "d": "Decentering a powered minus lens does induce prism. A nasal optical center on a minus lens produces base-out, not zero prism."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-052",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A layout beam strikes a lens surface head-on, traveling along the normal rather than at a slant. What does refraction do to that ray?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ray that strikes a surface along the normal bends toward that normal."
+      },
+      {
+        "id": "b",
+        "text": "A ray that strikes a surface along the normal bends away from that normal."
+      },
+      {
+        "id": "c",
+        "text": "A ray that strikes a surface along the normal is not bent."
+      },
+      {
+        "id": "d",
+        "text": "A ray that strikes a surface along the normal reflects at a right angle and fails to enter the material."
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Refraction changes direction according to the angle between the ray and the normal. Along the normal that angle is zero, so the refracted angle is zero too. The ray is not bent. It may change speed if the index changes, but bending toward or away from the normal requires an oblique hit.",
+    "distractorExplanations": {
+      "a": "Bending toward the normal is what an oblique ray does when it enters a denser medium. A ray already on the normal has no angle left to close.",
+      "b": "Bending away from the normal belongs to an oblique ray entering a lower index. Along the normal the ray is not bent in either direction.",
+      "d": "Normal incidence is not a right-angle reflection. The ray continues straight and is not turned aside at the surface."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-053",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A plus lens on the bench is forming a real image of a near target placed beyond the focal length. The optician then slides that target farther from the lens. What happens to the image?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Raising the object distance moves the image farther beyond the focal plane."
+      },
+      {
+        "id": "b",
+        "text": "Raising the object distance leaves the image fixed, because object distance does not change a plus lens."
+      },
+      {
+        "id": "c",
+        "text": "Raising the object distance puts the image on the object side as an upright virtual image."
+      },
+      {
+        "id": "d",
+        "text": "Raising the object distance moves the image closer to the focal plane."
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For a plus lens that is already forming a real image, a farther object sends less divergent vergence into the lens. The image distance then shortens toward the focal length. Sliding the target out, toward the distance case, walks the image in toward the focal plane. It does not push the image farther out or flip it to a virtual image.",
+    "distractorExplanations": {
+      "a": "A farther real object moves the real image inward toward the focal plane, not farther beyond that plane.",
+      "b": "Object distance does change image distance on a plus lens. As the object moves out, the image moves closer to the focal plane.",
+      "c": "An upright virtual image appears when a real object is inside the focal length. Moving this target farther out does not create that case."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
     "id": "abo-optician-readiness-check-lenses-001",
     "examSlug": "abo-optician-readiness-check",
     "topicId": "lenses",
@@ -1978,6 +2737,765 @@
     },
     "difficulty": "hard",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-031",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "At pickup, an office worker holding an old crown-glass pair asks what is true of a new everyday pair made in CR-39, including how that plastic compares with a polycarbonate sports spare. Which comparison is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CR-39 is lighter than crown glass, scratches more easily, and resists impact less than polycarbonate"
+      },
+      {
+        "id": "b",
+        "text": "CR-39 is heavier than crown glass, harder to scratch than glass, and more impact resistant than polycarbonate for sports use"
+      },
+      {
+        "id": "c",
+        "text": "CR-39 matches crown glass in weight and scratch hardness, and it exceeds polycarbonate in impact resistance for daily wear"
+      },
+      {
+        "id": "d",
+        "text": "CR-39 is lighter than polycarbonate, harder to scratch than crown glass, and the preferred shatter-resistant choice ahead of both"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "CR-39 is less dense than crown glass, so the pair feels lighter, but its softer surface scratches more readily than glass. Its impact resistance still falls short of polycarbonate.",
+    "distractorExplanations": {
+      "b": "Confuses CR-39 with a heavier, harder, more impact-resistant material. It is lighter than crown glass, scratches more easily, and trails polycarbonate on impact.",
+      "c": "Mixes CR-39 up with crown glass on weight and scratch behavior, and mixes it up with polycarbonate on impact resistance.",
+      "d": "Assigns glass-like scratch hardness and a leading shatter-resistant role to CR-39, reversing the usual comparison with glass and polycarbonate."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-032",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A golfer replacing a three-piece mounting wants less off-axis color than a previous polycarbonate pair, while keeping a light lens that holds at the mounting holes. Which description fits?",
+    "options": [
+      {
+        "id": "a",
+        "text": "CR-39, because a higher Abbe value also gives it greater toughness than Trivex around the mounting holes"
+      },
+      {
+        "id": "b",
+        "text": "Trivex, light and impact resistant, with a higher Abbe value than polycarbonate"
+      },
+      {
+        "id": "c",
+        "text": "Crown glass, because low weight and a high Abbe value make it the steadiest choice around mounting holes"
+      },
+      {
+        "id": "d",
+        "text": "A 1.74 plastic, because the highest index also supplies the highest Abbe value and the best hold at the holes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Trivex stays light and impact resistant, including around the holes of a three-piece mounting, and its Abbe value is higher than polycarbonate, so off-axis color is less pronounced.",
+    "distractorExplanations": {
+      "a": "Confuses CR-39 clarity with Trivex-level toughness around mounting holes. CR-39 is the weaker choice at those attachment points.",
+      "c": "Mixes crown glass up with a light impact-resistant plastic. Glass is heavier and can break around mounting holes.",
+      "d": "Confuses a high refractive index with a high Abbe value and with toughness at the mounting holes."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-033",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A -6.50 D wearer remaking a spare pair asks whether a 1.67 or 1.74 plastic will be thinner than CR-39 and what that change does to color fringes. Which expectation is sound?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The higher-index plastic is thicker than CR-39 in this power and usually shows a higher Abbe value with fewer color fringes"
+      },
+      {
+        "id": "b",
+        "text": "The higher-index plastic matches CR-39 thickness in this power, and its Abbe value stays the same so color fringes do not change"
+      },
+      {
+        "id": "c",
+        "text": "The higher-index plastic is thinner than CR-39, and its Abbe value is usually lower"
+      },
+      {
+        "id": "d",
+        "text": "The higher-index plastic is thinner than CR-39 and usually has a higher Abbe value, so color fringes become less noticeable"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A 1.67 or 1.74 plastic bends light more than CR-39, so this high minus power can be made thinner. Those materials usually have a lower Abbe value, which means more color fringes off axis.",
+    "distractorExplanations": {
+      "a": "Reverses both results. A 1.67 or 1.74 plastic is thinner than CR-39 in a high power, and its Abbe value is usually lower, not higher.",
+      "b": "Misses the thickness benefit of the higher index and treats the Abbe value as unchanged, so the color-fringe tradeoff disappears.",
+      "d": "Gets the thinner profile right but reverses the Abbe change. Higher-index plastics usually disperse color more, not less."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-034",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A parent whose child plays outdoor sports asks for crown glass because the surface is hard to scratch. Which counseling point is sound?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crown glass is lighter than plastic and resists shattering, so it is a reasonable first lens for an active child"
+      },
+      {
+        "id": "b",
+        "text": "Crown glass weighs about the same as plastic and will not shatter, so scratch hardness makes it the first choice for play"
+      },
+      {
+        "id": "c",
+        "text": "Crown glass is heavier than plastic but cannot shatter, so surface hardness makes it suitable for sports"
+      },
+      {
+        "id": "d",
+        "text": "Crown glass is heavier than plastic and can shatter, so it is a poor first lens for an active child"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Crown glass is denser than spectacle plastic, so it weighs more, and it can shatter on impact. Scratch hardness does not make it the first lens for a child who plays sports.",
+    "distractorExplanations": {
+      "a": "Reverses the weight and shatter facts, treating crown glass as a light, break-resistant first choice for a child at play.",
+      "b": "Confuses crown glass with a plastic of similar weight and treats shatter resistance as something glass provides.",
+      "c": "Accepts that glass is heavier but denies that it can shatter, so scratch hardness is mistaken for sports suitability."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-035",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A stockroom employee asks for a scratch-resistant coat on fashion CR-39 lenses and believes that coat turns the pair into impact-rated safety eyewear. Which reply is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A scratch-resistant coat does not make a dress lens into impact-rated safety eyewear"
+      },
+      {
+        "id": "b",
+        "text": "A scratch-resistant coat turns a dress lens into impact-rated safety eyewear because surface hardness equals an impact rating"
+      },
+      {
+        "id": "c",
+        "text": "A scratch-resistant coat leaves lens impact unchanged but qualifies the fashion frame as rated protective equipment"
+      },
+      {
+        "id": "d",
+        "text": "A scratch-resistant coat on CR-39 gives the same impact standing as a certified safety lens and frame used in industry"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A scratch-resistant coating improves resistance to abrasion on a dress lens. It does not convert that lens, or the fashion frame around it, into impact-rated safety eyewear.",
+    "distractorExplanations": {
+      "b": "Confuses abrasion resistance from a hard coat with an impact rating. Surface hardness is not an impact rating for safety eyewear.",
+      "c": "Leaves the lens unrated, then still treats the fashion frame as rated protective equipment because a coat was added.",
+      "d": "Equates a coated dress CR-39 lens with a certified safety lens and frame. The coat does not create that standing."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-036",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A customer ordering a mirrored sun lens says the shiny front already works as an antireflective treatment and asks to skip any other reflection control. Which distinction is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A mirror coating and an antireflective coating are the same treatment listed under two catalog names"
+      },
+      {
+        "id": "b",
+        "text": "A mirror coating is a reflective layer, not an antireflective coating"
+      },
+      {
+        "id": "c",
+        "text": "A mirror coating removes surface reflections the way a multilayer antireflective coating does, so a second treatment is redundant"
+      },
+      {
+        "id": "d",
+        "text": "A mirror coating is an absorptive tint, so it neither reflects light nor stands in for an antireflective coating"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A mirror coating is built to reflect a portion of incoming light, which is why the front looks shiny. An antireflective coating does the opposite: it reduces surface reflections.",
+    "distractorExplanations": {
+      "a": "Treats a mirror coating and an antireflective coating as two names for one treatment. One reflects light and the other reduces reflections.",
+      "c": "Confuses a mirror's added reflection with the reflection reduction an antireflective coating is meant to provide.",
+      "d": "Misreads a mirror coating as an absorptive tint. A mirror is a reflective layer, not a dye that soaks up light."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-037",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A commuter wants sun lenses darker overhead and lighter toward the lower rim so the dashboard stays easier to see. Which tint pattern matches that request?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A solid tint of equal density from the top of the lens to the bottom"
+      },
+      {
+        "id": "b",
+        "text": "A gradient that is darker at the bottom than at the top"
+      },
+      {
+        "id": "c",
+        "text": "A gradient that is darker at the top than at the bottom"
+      },
+      {
+        "id": "d",
+        "text": "A double gradient that is darkest at the top and the bottom, with a pale band across the middle of the lens"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A standard gradient sun tint is dyed darker at the top and lighter toward the bottom. That layout shades the overhead view and leaves the lower lens clearer for a dashboard.",
+    "distractorExplanations": {
+      "a": "Describes a solid tint of even density. The request is a gradient that is darker at the top than at the bottom.",
+      "b": "Inverts the gradient, putting the dark portion at the bottom instead of at the top where the commuter asked for shade.",
+      "d": "Describes a double gradient with dark bands at both edges. A standard gradient sun tint is darker at the top than at the bottom."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-038",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A traveler wearing polarized sun lenses rotates a tablet and watches the display go dark. Which interaction explains that blackout?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The tablet emits no light that a polarized lens can transmit, whatever way the tablet is rotated"
+      },
+      {
+        "id": "b",
+        "text": "The darkening comes from ultraviolet absorption in the sun tint and does not depend on rotating the screen"
+      },
+      {
+        "id": "c",
+        "text": "A mirror coating on the sun lens blacks out the tablet by reflecting the entire display away from the wearer"
+      },
+      {
+        "id": "d",
+        "text": "The polarized lens can blacken an LCD when its polarization is crossed with the screen"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An LCD uses polarized light. When a polarized sunglass lens is rotated so its axis is crossed with the screen, the display can go dark even though the screen is still on.",
+    "distractorExplanations": {
+      "a": "Claims the tablet emits nothing a polarized lens can pass. The blackout happens when the screen polarization is crossed with the lens.",
+      "b": "Blames ultraviolet absorption in the tint. Rotation of an LCD against a polarized lens is a polarization effect, not an ultraviolet effect.",
+      "c": "Invokes a mirror coating this pair was not given. Crossed polarization with the LCD is what darkens the display."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-039",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A student ordering clear polycarbonate distance lenses worries that ultraviolet blocking requires a dark sunglass color. Which point is accurate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clear polycarbonate blocks most ultraviolet even when the lens is not a dark sunglass"
+      },
+      {
+        "id": "b",
+        "text": "Clear polycarbonate passes most ultraviolet unless a dark sunglass dye is added to the material"
+      },
+      {
+        "id": "c",
+        "text": "Clear polycarbonate blocks ultraviolet at the front surface and passes it through the back of a dress lens"
+      },
+      {
+        "id": "d",
+        "text": "Clear polycarbonate cannot block ultraviolet, because that blocking appears in a dark sunglass color"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Polycarbonate absorbs most ultraviolet in the lens material itself. That blocking is present in a clear dress lens and does not depend on adding a dark sunglass dye.",
+    "distractorExplanations": {
+      "b": "Confuses ultraviolet blocking with a dark sunglass dye. Clear polycarbonate blocks most ultraviolet in the material itself.",
+      "c": "Splits ultraviolet blocking by surface. Absorption is a property of the polycarbonate, not of the front surface apart from the back.",
+      "d": "Concludes that a clear lens cannot block ultraviolet if a dark sunglass can. Clear polycarbonate still blocks most ultraviolet."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-040",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "During a surfacing consult, the technician asks which lens of an unequal-power pair receives conventional slab-off and which base direction is applied in the near portion. Which answer is correct?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Base-down prism on the lens with the most plus, applied across the distance portion rather than the near portion"
+      },
+      {
+        "id": "b",
+        "text": "Base-up prism on the lens with the least plus or the most minus, in the reading area"
+      },
+      {
+        "id": "c",
+        "text": "Base-up prism on the lens with the most plus, ground through the distance portion rather than the near area"
+      },
+      {
+        "id": "d",
+        "text": "Equal base-down prism on both lenses, placed at the distance centers to cancel the imbalance that shows up at near"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Conventional slab-off is ground base-up in the reading area of the lens with the least plus or the most minus. That near prism counters the vertical imbalance that appears below the distance centers.",
+    "distractorExplanations": {
+      "a": "Reverses the base direction and the lens choice, and moves the prism out of the reading area into the distance portion.",
+      "c": "Puts base-up prism on the most-plus lens and extends it through the distance portion, which is not conventional slab-off.",
+      "d": "Confuses slab-off with equal prism on both lenses at the distance centers. Slab-off is base-up on the least-plus or most-minus lens in the reading area."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-041",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A longtime flat-top wearer moving to a no-line lens asks whether gaze will still jump abruptly on entering the near zone. What should be explained?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A progressive creates a larger image jump than a flat-top because the add is spread over a long corridor"
+      },
+      {
+        "id": "b",
+        "text": "A progressive removes image jump at the fitting cross but keeps a sudden jump where the near zone begins"
+      },
+      {
+        "id": "c",
+        "text": "A progressive has no image jump because power changes without a sudden segment line"
+      },
+      {
+        "id": "d",
+        "text": "A progressive has no image jump because the add sits entirely in the distance zone above the fitting cross"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Image jump is the sudden image shift at a lined segment, where prism changes abruptly. A progressive changes power gradually and has no segment line, so that jump does not occur.",
+    "distractorExplanations": {
+      "a": "Claims a progressive creates more image jump than a flat-top. The lack of a sudden segment line is why a progressive has no image jump.",
+      "b": "Keeps a sudden jump at the start of the near zone. Progressive power changes without a segment line, so that jump is absent.",
+      "d": "Misplaces the add in the distance zone. Near power still develops below, but it does so without a sudden segment line."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-042",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "The lab calls about a +8.00 D order and a -8.00 D order and asks which thickness limit dominates each form. Which answer should the optician give?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both forms are limited by edge thickness, so center thickness can be set aside when either the strong plus or the strong minus is surfaced"
+      },
+      {
+        "id": "b",
+        "text": "A high-plus lens is limited by edge thickness, and a high-minus lens is limited by center thickness"
+      },
+      {
+        "id": "c",
+        "text": "Both forms are limited by center thickness, so edge thickness is a cosmetic leftover on the plus blank and the minus blank"
+      },
+      {
+        "id": "d",
+        "text": "A high-plus lens is limited by center thickness, and a high-minus lens is limited by edge thickness"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Plus power is thickest at the center, so a high-plus lens is limited by center thickness. Minus power is thinnest at the center and thickens toward the edge, so a high-minus lens is limited by edge thickness.",
+    "distractorExplanations": {
+      "a": "Applies the minus-lens edge limit to both forms. A high-plus lens is limited by center thickness, not by the edge.",
+      "b": "Swaps the two limits. Center thickness constrains a high-plus lens, and edge thickness constrains a high-minus lens.",
+      "c": "Applies the plus-lens center limit to both forms. A high-minus lens is limited by edge thickness, not by the center."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-043",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A wearer comparing crown glass, CR-39, and polycarbonate on an invoice asks which refractive-index trio is the usual textbook set. Which set is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crown glass about 1.523, CR-39 about 1.498, polycarbonate about 1.586"
+      },
+      {
+        "id": "b",
+        "text": "Crown glass about 1.498, CR-39 about 1.586, polycarbonate about 1.523, swapping the usual plastic and glass places"
+      },
+      {
+        "id": "c",
+        "text": "Crown glass about 1.586, CR-39 about 1.523, polycarbonate about 1.498, giving glass the highest of the three figures"
+      },
+      {
+        "id": "d",
+        "text": "Crown glass about 1.498, CR-39 about 1.523, polycarbonate about 1.586, placing CR-39 above crown glass"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Usual textbook refractive indexes are about 1.523 for crown glass, about 1.498 for CR-39, and about 1.586 for polycarbonate. The other sets swap those figures among the three materials.",
+    "distractorExplanations": {
+      "b": "Swaps the indexes, giving CR-39 the polycarbonate figure and crown glass the CR-39 figure.",
+      "c": "Assigns the highest of these indexes to crown glass and the lowest to polycarbonate, reversing the usual order.",
+      "d": "Places CR-39 above crown glass. Usual textbook values put crown glass near 1.523 and CR-39 near 1.498."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-044",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A round-segment wearer dislikes the visible shelf and asks for a blended segment, hoping the blend also erases image jump. What does blending actually do?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Blending removes image jump and also erases any visible sign of the segment boundary"
+      },
+      {
+        "id": "b",
+        "text": "Blending softens the look of the segment line and does not remove image jump"
+      },
+      {
+        "id": "c",
+        "text": "Blending removes image jump while leaving the segment line as sharp as an unblended round segment"
+      },
+      {
+        "id": "d",
+        "text": "Blending increases image jump because the softened boundary adds a second optical center below the segment top"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A blended bifocal feathers the visible segment line so the shelf looks softer. The segment optical center is still away from that boundary, so image jump remains.",
+    "distractorExplanations": {
+      "a": "Confuses a cosmetic blend with removal of image jump. Blending softens the look of the line and leaves the jump in place.",
+      "c": "Claims the blend removes jump while the line stays sharp. Blending softens the line and does not remove the jump.",
+      "d": "Treats the blend as a second optical center that increases jump. The jump comes from segment drop, which the blend does not erase."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-045",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "After the prescription is verified, a patient requests a solid gray color on both lenses and asks whether that color will alter the measured power. What is true of the tint?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A tint raises plus power because a darker lens bends light more strongly than a clear lens"
+      },
+      {
+        "id": "b",
+        "text": "A tint adds minus power in proportion to how much light the gray dye removes from the verified lens"
+      },
+      {
+        "id": "c",
+        "text": "A tint changes transmission and does not change the prescription power"
+      },
+      {
+        "id": "d",
+        "text": "A tint changes transmission and also shifts the prescribed sphere, cylinder, and axis by a small equal amount"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A uniform tint changes how much light the lens transmits. It does not change the sphere, cylinder, or axis that was already verified as the prescription power.",
+    "distractorExplanations": {
+      "a": "Confuses a change in transmission with a change in plus power. A gray tint does not alter the verified prescription.",
+      "b": "Treats light loss from the dye as added minus power. Transmission changes, and the prescription power does not.",
+      "d": "Extends a transmission change into sphere, cylinder, and axis. Those prescription elements stay as verified."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-046",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A patient comparing Trivex with polycarbonate asks which material disperses color less, using usual textbook Abbe figures. Which pairing is right?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Both materials are usually listed at about 30, so neither disperses color less than the other"
+      },
+      {
+        "id": "b",
+        "text": "Trivex about 30 and polycarbonate about 45, so polycarbonate disperses color less"
+      },
+      {
+        "id": "c",
+        "text": "Both materials are usually listed at about 45, so color dispersion is treated as the same"
+      },
+      {
+        "id": "d",
+        "text": "Trivex about 45 and polycarbonate about 30"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Usual textbook Abbe figures place Trivex near 45 and polycarbonate near 30. The higher Abbe value means Trivex disperses colors less than polycarbonate.",
+    "distractorExplanations": {
+      "a": "Assigns the polycarbonate Abbe figure of about 30 to both materials. Trivex is usually about 45, so it disperses color less.",
+      "b": "Swaps the figures, giving the higher Abbe value to polycarbonate. Trivex is about 45 and polycarbonate is about 30.",
+      "c": "Assigns the Trivex Abbe figure of about 45 to both materials. Polycarbonate is usually about 30, so it disperses color more."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-047",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A minus-lens wearer asks the finisher to roll and polish the cut edge so it looks smoother in a thin metal rim. What does that finishing step change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The appearance of the edge, not the prescribed power"
+      },
+      {
+        "id": "b",
+        "text": "The prescribed sphere, because rolling removes material from the optical surfaces and changes lens power"
+      },
+      {
+        "id": "c",
+        "text": "The prescribed cylinder axis, because polishing shifts the principal meridians of the finished lens"
+      },
+      {
+        "id": "d",
+        "text": "Both the edge appearance and the prescribed power, because edge work alters the lens curves"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Rolling and polishing reshape and shine the cut edge so it looks smoother in the rim. Those steps do not alter the optical surfaces that produce the prescribed power.",
+    "distractorExplanations": {
+      "b": "Confuses edge finishing with a change to the optical surfaces. Rolling the edge does not change the prescribed sphere.",
+      "c": "Confuses a polished edge with a rotation of the cylinder axis. Edge finishing does not move the principal meridians.",
+      "d": "Allows that the edge looks different, then adds a power change. Edge work of this kind leaves the prescribed power as ordered."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-048",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "After a clear pair is remade in 1.67 plastic instead of CR-39, the wearer notices brighter glare spots on the surfaces. Why does an antireflective coating matter more now?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High-index plastic reflects less than CR-39, so the coating is mainly a cosmetic color on an already dim surface"
+      },
+      {
+        "id": "b",
+        "text": "High-index plastics reflect more than CR-39, so an antireflective coating matters more"
+      },
+      {
+        "id": "c",
+        "text": "High-index plastic and CR-39 reflect the same amount, so the brighter spots must come from a darker tint in the new pair"
+      },
+      {
+        "id": "d",
+        "text": "High-index plastic reflects more because its Abbe value is higher, and the coating is used to raise that Abbe value further"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Surface reflectance rises as refractive index rises, so a 1.67 plastic reflects more light than CR-39. An antireflective coating therefore makes a larger difference on the higher-index lens.",
+    "distractorExplanations": {
+      "a": "Reverses the reflectance comparison. High-index plastics reflect more than CR-39, which is why the coating matters more on them.",
+      "c": "Treats reflectance as equal and blames a tint these clear lenses do not have. The higher index is what increases surface reflection.",
+      "d": "Confuses higher reflectance with a higher Abbe value and treats the coating as a way to raise Abbe. The coating reduces reflections."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-049",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A patient with a distance power of -1.50 D and a +2.00 D add asks what a lined bifocal provides in the near zone. How is that near power produced?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The add replaces the distance power, so the near zone is +2.00 D and the -1.50 D is dropped"
+      },
+      {
+        "id": "b",
+        "text": "The add is minus power subtracted from the distance power, so the near zone becomes -3.50 D"
+      },
+      {
+        "id": "c",
+        "text": "The add is plus power combined with the distance power in the near zone"
+      },
+      {
+        "id": "d",
+        "text": "The add is placed in the distance zone, so the near zone stays -1.50 D and distance becomes +0.50 D"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "In a lined bifocal the near zone combines the distance power with the add. Here -1.50 D plus a +2.00 D add gives +0.50 D at near. The add does not replace the distance power.",
+    "distractorExplanations": {
+      "a": "Replaces the distance power with the add. The near zone combines the plus add with the distance power instead of dropping it.",
+      "b": "Treats the add as minus power subtracted from distance. The add is plus power combined with the distance power.",
+      "d": "Places the add in the distance zone and leaves the near zone unchanged. The add combines with distance power in the near zone."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-050",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "At the lensometer, a trainee begins reading a flat-top distance sphere through the near segment. Where should that distance power be read?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Through the segment, because the segment contains the distance power and the near power together"
+      },
+      {
+        "id": "b",
+        "text": "Through the segment top, because image jump is judged at the same point used for the distance reading"
+      },
+      {
+        "id": "c",
+        "text": "At the segment optical center, because that point carries the distance prescription for a lined bifocal"
+      },
+      {
+        "id": "d",
+        "text": "Through the distance portion, not through the segment"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The distance portion of a lined bifocal carries the distance prescription. Reading through the segment includes the add, so that reading is the near power rather than the distance power.",
+    "distractorExplanations": {
+      "a": "Reads distance power through the segment, where the add is included. Distance power is read through the distance portion.",
+      "b": "Mixes up the segment top, where image jump is judged, with the area used to read distance power.",
+      "c": "Uses the segment optical center, a near reference, as if it held the distance prescription."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-051",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A shopper selects a mirror-front sun lens and treats the reflective layer as proof of an ultraviolet specification. What limit should the optician state?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The mirror layer is an ultraviolet rating by itself, so no further ultraviolet specification is needed on the order"
+      },
+      {
+        "id": "b",
+        "text": "The mirror layer blocks ultraviolet by reflecting every ultraviolet wavelength back out of the lens"
+      },
+      {
+        "id": "c",
+        "text": "A mirror coating is not, by itself, an ultraviolet rating"
+      },
+      {
+        "id": "d",
+        "text": "A mirror coating is an ultraviolet rating on a dark lens and is not a rating on a light fashion mirror"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A mirror coating is a reflective cosmetic layer. Ultraviolet performance has to come from the lens material or a stated ultraviolet treatment. The mirror by itself is not that rating.",
+    "distractorExplanations": {
+      "a": "Treats the mirror layer itself as an ultraviolet rating. A mirror coating does not supply that rating on its own.",
+      "b": "Confuses a cosmetic reflection with blocking every ultraviolet wavelength. The mirror is not an ultraviolet rating.",
+      "d": "Makes the ultraviolet claim depend on how dark the mirror looks. Darkness of a mirror is not an ultraviolet rating."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-052",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "In a sunglass demonstration, two polarized lenses are stacked and one is turned until its axis sits 90 degrees from the other. What happens to light each lens would have passed alone?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The crossed pair transmits more light than either lens would have passed on its own"
+      },
+      {
+        "id": "b",
+        "text": "The crossed pair transmits the same light each lens would have passed on its own"
+      },
+      {
+        "id": "c",
+        "text": "The crossed pair blocks light when the axes differ by 45 degrees and transmits it fully when they differ by 90 degrees"
+      },
+      {
+        "id": "d",
+        "text": "Crossed at 90 degrees, they block the light each would have passed alone"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Each polarized lens passes light aligned with its own axis. When the two axes are crossed at 90 degrees, each blocks the orientation the other would have passed, and the stack goes dark.",
+    "distractorExplanations": {
+      "a": "Predicts more transmission from the pair than from either lens. Crossed at 90 degrees, the lenses block the light each would have passed alone.",
+      "b": "Expects the pair to pass the same light each lens would pass alone. At 90 degrees those transmissions are blocked.",
+      "c": "Reverses the angle effect, blocking at 45 degrees and passing light at 90 degrees. A 90-degree cross blocks that light."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-053",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A metalworker asks to wear photochromic everyday glasses as the viewing filter while arc welding. Which response is appropriate?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Photochromic lenses darken outdoors, so they meet the need for a welding filter in the shop"
+      },
+      {
+        "id": "b",
+        "text": "Photochromic lenses become welding filters once they reach their darkest outdoor state"
+      },
+      {
+        "id": "c",
+        "text": "A photochromic lens can stand in for a welding filter when the job is brief and the lenses are glass"
+      },
+      {
+        "id": "d",
+        "text": "A photochromic lens is not a welding filter"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A photochromic lens darkens in ordinary sunlight for dress and sun wear. It is not a welding filter, and a short job or a glass lens does not turn it into one.",
+    "distractorExplanations": {
+      "a": "Confuses ordinary outdoor darkening with a welding filter. A photochromic dress lens is not a filter for arc welding.",
+      "b": "Treats the darkest photochromic state as a welding specification. Photochromic darkening is not a welding filter.",
+      "c": "Adds a short job and a glass lens as if those details created a welding filter. A photochromic lens still is not one."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
   },
   {
     "id": "abo-optician-readiness-check-fitting-001",
@@ -2970,6 +4488,732 @@
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
   },
   {
+    "id": "abo-optician-readiness-check-fitting-031",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A presbyope is dotted for a lined pair. Far separation was marked while the customer watched a wall chart. When attention moves to a book at habitual reading range, the two pupil dots sit closer together. What should be recorded for that reading separation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A smaller near separation, because the eyes turn inward"
+      },
+      {
+        "id": "b",
+        "text": "A larger near separation, because the eyes swing outward when a book is held close to the face"
+      },
+      {
+        "id": "c",
+        "text": "The same separation as the wall-chart marks, because looking at a book does not change pupil spacing"
+      },
+      {
+        "id": "d",
+        "text": "A smaller separation caused by the bridge squeezing inward while the customer reads"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "When gaze moves from a distant chart to a near book, the eyes converge and the pupils move closer together. The near PD is therefore smaller than the distance PD, and the closer reading separation should be recorded. The bridge is not what pulls the dots inward.",
+    "distractorExplanations": {
+      "b": "Confuses convergence with divergence. At near the eyes turn inward, so the reading separation gets smaller rather than larger.",
+      "c": "Confuses the far separation with the near one. Convergence does change pupil spacing, so the book reading is not a copy of the wall-chart marks.",
+      "d": "Confuses ocular convergence with the frame bridge. The closer dots come from the eyes turning inward, not from the bridge squeezing during reading."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-032",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A first lined pair is being dotted. Each distance reference sits on a pupil, and the reading window still needs a horizontal shift. In which direction should that reading window move from the distance reference?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toward the ear, because the eyes diverge when gaze drops into the reading window for close work"
+      },
+      {
+        "id": "b",
+        "text": "Nasally, toward the nose"
+      },
+      {
+        "id": "c",
+        "text": "Straight down, with no sideways shift from the distance reference at all"
+      },
+      {
+        "id": "d",
+        "text": "Up into the distance portion so the reading window stays above the pupil"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "The near zone of a multifocal is inset nasally because the eyes converge when the wearer looks down to read. Moving that window toward the ear, leaving it unshifted, or lifting it into the distance portion misses the converged visual axes.",
+    "distractorExplanations": {
+      "a": "Confuses nasal inset with a temporal shift. Convergence carries the eyes toward the nose, so the reading window follows them nasally rather than toward the ear.",
+      "c": "Confuses the vertical drop into the near zone with the horizontal inset. The window also moves toward the nose, not straight down with no sideways shift.",
+      "d": "Confuses the near zone with the distance portion. The reading window belongs below the distance reference and toward the nose, not above the pupil."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-033",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A routine single-vision job arrives with no special prism note and no height note. The dispenser is marking both lenses before edging. Where should each optical center be placed?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Several millimeters above the pupil so distance gaze passes through the lower half of the lens"
+      },
+      {
+        "id": "b",
+        "text": "At the lower lid, borrowing the lined-segment landmark even though no segment was ordered"
+      },
+      {
+        "id": "c",
+        "text": "At the pupil center"
+      },
+      {
+        "id": "d",
+        "text": "On the boxed center of the rim, with no regard for where the pupil actually sits"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "For ordinary single vision, each optical center is placed at the pupil center unless the order asks for something else. This job has no special prism or height note, so the pupil center is the target. A bifocal lid landmark or the boxed center of the rim is a different layout.",
+    "distractorExplanations": {
+      "a": "Confuses standard single-vision centration with a raised optical center. Without a special order, the center belongs on the pupil, not several millimeters above it.",
+      "b": "Confuses single-vision layout with a flat-top segment height. The lower lid is a segment landmark, and this job has no segment.",
+      "d": "Confuses the pupil center with the boxed geometric center. Those points match when the frame matches the PD, and they differ when it does not."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-034",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A shopper insists on a front whose boxed centers sit much farther apart than the measured far separation. Each lens is edged with its optical center left on the boxed center. Relative to the pupils, what decentration results?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inward decentration from each pupil, because a wider front pulls both boxed centers toward the nose"
+      },
+      {
+        "id": "b",
+        "text": "No horizontal shift, because eye size and the measured separation become unrelated once the bridge feels comfortable"
+      },
+      {
+        "id": "c",
+        "text": "Downward decentration, because a wide front drops both optical centers onto the cheeks"
+      },
+      {
+        "id": "d",
+        "text": "Outward decentration from each pupil"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A frame much wider than the PD places the boxed centers outward of the pupils. Leaving each optical center on that boxed center produces outward decentration relative to where the eyes look. Width does not pull those centers toward the nose or drop them onto the cheeks.",
+    "distractorExplanations": {
+      "a": "Confuses the outward result with an inward move. Left on the boxed centers of a wide front, the optical centers fall outside the pupils, not toward the nose.",
+      "b": "Confuses frame width with a claim that the measured separation does not matter. A front much wider than that separation does shift the boxed centers relative to the pupils.",
+      "c": "Confuses horizontal decentration with a vertical drop. A wider front changes the side-to-side relationship, not a downward one onto the cheeks."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-035",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "During a fit check the bent portion of the left temple is digging into the bony area behind the ear instead of curving across the top of the ear. Where should that bend rest?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Over the ear, not against the bone behind it"
+      },
+      {
+        "id": "b",
+        "text": "Against the bony area behind the ear so the front cannot slide when the wearer looks down"
+      },
+      {
+        "id": "c",
+        "text": "Halfway down the mastoid so the bend grips the side of the head behind the ear"
+      },
+      {
+        "id": "d",
+        "text": "In front of the ear, pressing the temple tip into the cheek before the ear is reached"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The temple bend should rest over the ear, curving across the top rather than digging into the bone behind it. A bend parked on the mastoid or stopped in front of the ear does not give that ear rest and will feel wrong.",
+    "distractorExplanations": {
+      "b": "Confuses a secure bend with pressure on the bone behind the ear. The bend should lie over the ear rather than dig into that bone to stop a slide.",
+      "c": "Confuses the mastoid grip with the proper ear rest. The bend belongs over the ear, not halfway down the bone behind it.",
+      "d": "Confuses the crest of the ear with a bend placed in front of the ear. The temple should reach over the ear rather than press the tip into the cheek."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-036",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A strong minus wearer asks for a dramatic extra tip of the lower rims toward the cheeks at delivery. No new power was written. What unwanted effect can that extra tip add away from the lens center?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A thinner edge, because extra tip removes off-axis power from a strong minus lens"
+      },
+      {
+        "id": "b",
+        "text": "Unwanted off-axis power"
+      },
+      {
+        "id": "c",
+        "text": "A clearer periphery, because extra tip cancels oblique aberrations on a strong lens"
+      },
+      {
+        "id": "d",
+        "text": "Loss of the prescribed sphere, because tip replaces the written power with prism"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Too much pantoscopic tilt on a strong lens adds unwanted off-axis power, so gaze away from the center no longer matches the intended optics. The extra tip does not thin the edge by canceling that power, clear the periphery, or replace the written sphere with prism.",
+    "distractorExplanations": {
+      "a": "Confuses unwanted off-axis power with edge thinning. Extra tilt does not remove off-axis power from a strong minus lens.",
+      "c": "Confuses oblique power error with a clearer periphery. Extra tilt adds unwanted off-axis power rather than canceling aberrations.",
+      "d": "Confuses tilt-induced power error with loss of the prescribed sphere. The written power remains, and the extra tip adds unwanted off-axis effects."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-037",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A customer has just picked a metal front for no-line lenses. Factory pad spread and an unformed skull curve are still in place. A coworker reaches for the pupil-height gauge at once. What has to be finished before those heights are written down?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tint selection, because height dots are valid as soon as the customer names a lens color"
+      },
+      {
+        "id": "b",
+        "text": "Payment, because heights taken on a loose front stay valid after the front is later aligned"
+      },
+      {
+        "id": "c",
+        "text": "Adjusting the front on the face"
+      },
+      {
+        "id": "d",
+        "text": "Edging both lenses, because heights should be copied from the uncut blanks before any fitting"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Progressive heights are taken after the frame is adjusted on the face. Pad spread, pantoscopic tilt, and the skull curve all move the pupil relative to the rim, so dots on a loose factory front will not match the aligned pair.",
+    "distractorExplanations": {
+      "a": "Confuses lens color choice with fitting height. Naming a tint does not make heights valid on a front that has not been adjusted.",
+      "b": "Confuses payment with the measuring sequence. Heights taken before the front is aligned do not stay valid after alignment.",
+      "d": "Confuses edging with the height measurement. Heights are taken on the adjusted frame, not copied from uncut blanks before fitting."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-038",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "While setting hinge alignment, the dispenser opens the left temple much wider than the right temple. With the glasses worn, which side of the front sits farther from the face?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The left side, because a wider temple opening pushes that lens away from the cheek"
+      },
+      {
+        "id": "b",
+        "text": "Neither side, because temple opening changes height but leaves face clearance equal on both sides"
+      },
+      {
+        "id": "c",
+        "text": "Both sides equally, because one wide temple spreads the entire front off the face"
+      },
+      {
+        "id": "d",
+        "text": "The right side sits farther out"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When one temple is opened wider than the other, the lens on that more widely spread side sits closer to the eye. Opening the left temple therefore brings the left side closer, and the right side is the one that sits farther from the face. A wider opening does not push its own side out, and the two sides do not move by the same amount.",
+    "distractorExplanations": {
+      "a": "Confuses which side sits farther out. The lens on the more widely opened temple sits closer to the eye, so the opposite side is the one farther from the face.",
+      "b": "Confuses unequal temple spread with a height change that leaves both sides the same distance from the face. The wider temple changes face clearance on its own side.",
+      "c": "Confuses a one-sided opening with an equal shift of both sides. The wider temple brings its own side closer rather than moving the entire front off the face."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-039",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "At delivery of a metal front, each pad meets the skin along a thin edge rather than across its broad face. There is no rash. How should the pads contact the nose?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Flat on the nose, not on edge"
+      },
+      {
+        "id": "b",
+        "text": "On their thin edge, because an edge contact keeps the front from slipping down the nose"
+      },
+      {
+        "id": "c",
+        "text": "Lifted off the skin, because pads are meant to hover once the temples hold the front"
+      },
+      {
+        "id": "d",
+        "text": "Rolled outward so the pad backs, rather than the pad faces, press into the nose"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Nose pads should sit flat on the nose so contact is spread across the pad face. A pad rocking on its edge, lifted off the skin, or rolled so the back presses in concentrates pressure and will not hold the way a flat seat does.",
+    "distractorExplanations": {
+      "b": "Confuses flat contact with an edge grip. An edge does not keep the front up better. Pads should meet the nose flat, not on edge.",
+      "c": "Confuses pad contact with the temples holding the front alone. Pads are meant to rest on the nose, not hover above the skin.",
+      "d": "Confuses the pad face with the pad back. The face of the pad should lie flat on the nose rather than the back rolling into the skin."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-040",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A straight-top segment sits well below the lower lid and is partly cut off by the bottom rim. What problem does that low placement create for close work?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It blocks distance gaze while walking, the problem seen when a segment line rides above the lower lid"
+      },
+      {
+        "id": "b",
+        "text": "The wearer loses the near field"
+      },
+      {
+        "id": "c",
+        "text": "It adds base-down prism at distance, because a low segment relocates the distance optical center"
+      },
+      {
+        "id": "d",
+        "text": "It widens the near field, because a lower segment gives a taller reading window inside the rim"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A flat-top segment set too low drops the reading area below a useful gaze and can cut it off at the lower rim, so the wearer loses the near field. That is separate from a line that rides high and blocks distance, and it does not add distance prism or enlarge the reading window.",
+    "distractorExplanations": {
+      "a": "Confuses a segment that is too low with a line that is too high. A high line blocks walking vision. This low segment takes away the near field.",
+      "c": "Confuses segment height with induced prism at the distance center. The complaint here is loss of the reading window, not a new distance prism.",
+      "d": "Confuses a lost near field with a larger one. Dropping the segment until the rim cuts it off shrinks the reading area."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-041",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "The B dimension of a chosen acetate front is very short. A long-corridor no-line design is proposed for that front. What happens to the reading portion if that long design is cut into this short vertical box?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distance zone is removed and the reading portion expands to fill the whole lens"
+      },
+      {
+        "id": "b",
+        "text": "Nothing changes, because corridor length is independent of the vertical box of the front"
+      },
+      {
+        "id": "c",
+        "text": "The near zone gets cut off"
+      },
+      {
+        "id": "d",
+        "text": "The segment line rises above the pupil, because a short B measurement converts the lens to a flat-top"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A short B measurement does not have enough vertical room for a long-corridor progressive. Forcing that corridor into the frame cuts into the near zone. The distance area is not removed, corridor length is not independent of the vertical box, and a short B does not turn the lens into a flat-top.",
+    "distractorExplanations": {
+      "a": "Confuses loss of the near zone with loss of the distance zone. A short vertical box cuts into the long corridor reading area.",
+      "b": "Confuses frame size with a claim that corridor length does not matter. A short B measurement cannot hold a long corridor without cutting the near zone.",
+      "d": "Confuses a short progressive corridor with a flat-top segment line. The problem is the near zone being cut, not a line rising above the pupil."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-042",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A trainee lines each pupil up with the small verification circle used for prism, ignoring the separate cross printed for pupil placement. Which mark is the fitting target?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The prism reference point, because that circle is the manufacturer pupil target on a no-line lens"
+      },
+      {
+        "id": "b",
+        "text": "The distance optical center of a lined segment, because every no-line lens is dotted like a flat-top"
+      },
+      {
+        "id": "c",
+        "text": "The geometric center of the rim, because fitting ignores both the cross and the prism circle"
+      },
+      {
+        "id": "d",
+        "text": "The fitting cross"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "On a progressive, the pupil is aligned with the fitting cross. The prism reference point is where prism is verified, and it is not the fitting target. The boxed center of the rim and a lined-segment layout are different marks.",
+    "distractorExplanations": {
+      "a": "Confuses the fitting cross with the prism reference point. The small verification circle is for prism, and the pupil belongs on the fitting cross.",
+      "b": "Confuses progressive layout with a flat-top segment. The pupil target on this lens is the fitting cross, not a lined-segment optical center.",
+      "c": "Confuses the fitting cross with the geometric center of the rim. Pupil placement follows the fitting cross, not the boxed center."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-043",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "The lab slip lists a 29 mm right value and a 32 mm left value. A coworker wants one shared binocular inset for both lenses. What decentration should be specified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Each lens by its own per-eye amount"
+      },
+      {
+        "id": "b",
+        "text": "One binocular total split evenly, because unequal per-eye values are averaged before edging"
+      },
+      {
+        "id": "c",
+        "text": "The full binocular sum on the right lens and zero on the left, because the right value is smaller"
+      },
+      {
+        "id": "d",
+        "text": "No decentration on either lens, because those values are used for height rather than inset"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Each lens is decentered to its own per-eye PD. A 29 mm right value and a 32 mm left value call for two different insets. Averaging them into one binocular total, loading the whole sum onto one lens, or skipping decentration ignores that difference.",
+    "distractorExplanations": {
+      "b": "Confuses per-eye decentration with one shared binocular total. Unequal per-eye values are not averaged into a single inset for both lenses.",
+      "c": "Confuses two separate insets with putting the entire binocular sum on the smaller eye. Each lens gets its own amount.",
+      "d": "Confuses per-eye PD with fitting height. Those values are the horizontal decentration for each lens, not a height."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-044",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A coworker holds the millimeter scale several centimeters in front of the demo lenses while the customer views a far target. The marks are easy to see, but the scale is not where the lenses will sit. What error does that placement create?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No error, because a scale held off the face reads the same as a scale held in the lens plane"
+      },
+      {
+        "id": "b",
+        "text": "A misplaced reading from leaving the spectacle plane"
+      },
+      {
+        "id": "c",
+        "text": "A correct near value, because holding the scale off the face substitutes for convergence"
+      },
+      {
+        "id": "d",
+        "text": "An axis error, because scale distance rotates the cylinder without changing the separation"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A PD scale should be held in the spectacle plane, where the lenses will sit. Holding it several centimeters off the face changes the geometry of the reading and misplaces the result. It does not produce a near value, and it does not rotate the cylinder axis.",
+    "distractorExplanations": {
+      "a": "Confuses a scale in the spectacle plane with a scale held off the face. Those two positions do not give the same reading.",
+      "c": "Confuses a distance-plane error with a near measurement. Holding the scale away from the face does not substitute for convergence.",
+      "d": "Confuses a placement error with cylinder axis. Scale distance misplaces the reading and does not rotate the axis."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-045",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "Before a blank is chosen for an odd rim, the dispenser measures from the boxed center out to the farthest edge point. How is effective diameter obtained from that single measurement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It equals that farthest distance, because effective diameter is the radius from the boxed center"
+      },
+      {
+        "id": "b",
+        "text": "It equals the A dimension plus the bridge, because effective diameter is another name for frame PD"
+      },
+      {
+        "id": "c",
+        "text": "Twice that longest distance"
+      },
+      {
+        "id": "d",
+        "text": "It equals the vertical box, because the farthest edge point is replaced by the B dimension"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Effective diameter is twice the longest distance from the boxed center to the lens edge. That farthest measurement is a radius, so the diameter is twice the radius. It is not the radius itself, not the frame PD, and not the B measurement.",
+    "distractorExplanations": {
+      "a": "Confuses diameter with radius. The farthest distance from the boxed center is half of the effective diameter, so the diameter is twice that distance.",
+      "b": "Confuses effective diameter with frame PD. Adding the A measurement to the bridge gives the distance between centers, not effective diameter.",
+      "d": "Confuses the longest edge distance with the vertical box. Effective diameter uses the farthest point from the boxed center, then doubles it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-046",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A rimless pattern is clamped in the edger rotated away from the marked horizontal. The order calls for cylinder at 090. What can that rotated pattern do to the finished lens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the shape and the cylinder axis unchanged, because pattern rotation affects polish but not layout"
+      },
+      {
+        "id": "b",
+        "text": "Change the add power, because a rotated pattern moves the reading window without turning the axis"
+      },
+      {
+        "id": "c",
+        "text": "Reverse the sphere sign, because pattern rotation swaps plus and minus while keeping the axis"
+      },
+      {
+        "id": "d",
+        "text": "Turn the lens shape and shift the cylinder axis"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A rotated trace or pattern turns the lens shape in the edger and can place the cylinder axis off the ordered meridian. Cylinder at 090 will not stay on axis if the pattern horizontal is rotated. Rotation does not leave layout untouched, change the add by itself, or reverse the sphere sign.",
+    "distractorExplanations": {
+      "a": "Confuses pattern rotation with a polish step. Rotating the pattern turns the shape and can take the cylinder axis off the order.",
+      "b": "Confuses axis error with a change in add power. The rotated pattern threatens the cylinder axis and the shape, not the add.",
+      "c": "Confuses axis misplacement with a reversed sphere sign. Pattern rotation does not swap plus and minus."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-047",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "While setting a metal front, the dispenser raises the right pad so it sits higher than the left pad. The front was level before that pad moved. What happens to the right lens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The right lens sits lower"
+      },
+      {
+        "id": "b",
+        "text": "The right lens is raised, because a higher pad lifts that lens toward the brow"
+      },
+      {
+        "id": "c",
+        "text": "Both lenses rise equally, because one high pad lifts the whole front by the same amount"
+      },
+      {
+        "id": "d",
+        "text": "The right lens moves closer to the cheek without a height change, as if the front were twisted"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Raising one nose pad lowers that side of the frame. A right pad moved higher than the left drops the right lens. The higher pad does not lift that lens toward the brow, does not raise both lenses by the same amount, and does not change cheek clearance without a height change.",
+    "distractorExplanations": {
+      "b": "Confuses the direction a raised pad moves the lens. Moving that pad higher lowers the right side of the frame rather than lifting the lens toward the brow.",
+      "c": "Confuses a one-pad change with an equal lift of both lenses. The higher pad lowers its own side instead of raising the whole front.",
+      "d": "Confuses a raised pad with a twist that changes cheek clearance without a height change. Raising the pad lowers that lens."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-048",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "The same written powers are compared in two fittings. In the second fitting both lenses sit farther from the corneas than in the first. How does that greater separation change effective power at the eyes?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Plus becomes weaker and minus becomes stronger when the lenses sit farther from the eyes"
+      },
+      {
+        "id": "b",
+        "text": "Plus stronger, minus weaker"
+      },
+      {
+        "id": "c",
+        "text": "Both signs become stronger by the same amount, because greater separation adds plus to every lens"
+      },
+      {
+        "id": "d",
+        "text": "Neither sign changes, because effective power depends on the written prescription rather than lens position"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Increasing vertex distance makes a plus lens effectively stronger at the eye and a minus lens effectively weaker. A greater lens-to-cornea separation does not weaken plus, strengthen minus, add the same plus to both signs, or leave effective power unchanged.",
+    "distractorExplanations": {
+      "a": "Confuses the vertex effect by reversing both signs. Farther from the eye, plus becomes stronger and minus becomes weaker.",
+      "c": "Confuses a sign-specific vertex change with added plus on every lens. Minus becomes effectively weaker, not stronger.",
+      "d": "Confuses the written prescription with effective power at the eye. Moving the lenses farther changes effective power even when the written powers stay the same."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-049",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "At a follow-up, bridge supports on a high-powered pair were exchanged and the lenses now sit at a new corneal clearance. The customer calls the chart soft and wants the written powers changed. What should be repeated before those powers are treated as the cause?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The tint density, because a support exchange changes lens color and that color shift explains the soft chart"
+      },
+      {
+        "id": "b",
+        "text": "The cylinder axis, because a support exchange rotates both lenses inside the rims"
+      },
+      {
+        "id": "c",
+        "text": "Vision at the new vertex distance"
+      },
+      {
+        "id": "d",
+        "text": "The frame formula of A plus the bridge, because a support exchange changes that sum and explains the blur"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A pad change that moves vertex distance on a strong prescription can change effective power at the eye and make the chart look soft. Vision should be rechecked at the new vertex distance before the written powers are blamed. Tint, an axis jump, and the frame sum of A and the bridge do not explain that shift.",
+    "distractorExplanations": {
+      "a": "Confuses a vertex-distance change with lens color. Exchanging bridge supports does not tint the lenses or explain the soft chart that way.",
+      "b": "Confuses vertex distance with a rotated cylinder axis. A support change that moves the lenses in or out is a vertex issue, not an axis change.",
+      "d": "Confuses vertex distance with the frame sum of A and the bridge. Support position changes lens-to-eye distance, not that frame formula."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-050",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "An adult distance wearer tips the head back and sights over the top rims to read a wall chart, even though the front stays put. Where should that distance gaze pass?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Over the top rims, because distance optical centers are placed above the frame on purpose"
+      },
+      {
+        "id": "b",
+        "text": "Through the lower rim, because distance gaze is supposed to leave the lens near the cheek"
+      },
+      {
+        "id": "c",
+        "text": "Through a lined segment, because distance clarity for this wearer depends on the reading window"
+      },
+      {
+        "id": "d",
+        "text": "Through the optical centers"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "For distance, the wearer should look through the optical centers, which were placed for that gaze. Sighting over the top rims, through the lower rim, or through a reading segment uses a part of the lens that was not set for distance.",
+    "distractorExplanations": {
+      "a": "Confuses gaze through the optical centers with looking over the frame. Distance centers are in the lenses, not above the rims.",
+      "b": "Confuses the optical centers with the lower rim. Distance gaze should pass through the centers rather than leave the lens near the cheek.",
+      "c": "Confuses distance gaze with the reading portion of a lined lens. This wearer needs the distance optical centers, not the segment."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-051",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A lined bifocal wearer lifts the chin a long way before newspaper print through the segment turns clear. The front is not sliding down the nose. What does that long chin lift say about segment placement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The segment sits too high and is blocking distance, so the wearer is dodging the line"
+      },
+      {
+        "id": "b",
+        "text": "The segment is placed well and the chin lift is the ordinary reading posture for a bifocal"
+      },
+      {
+        "id": "c",
+        "text": "The segment sits too low"
+      },
+      {
+        "id": "d",
+        "text": "The segment is inset toward the ear, so the chin lift is a sideways alignment problem rather than height"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A bifocal wearer who must lift the chin a long way before print through the segment turns clear is bringing a segment that sits too low up into the reading gaze. The front is stable, so the frame is not sliding. This is not a high line being dodged for distance, not the ordinary posture of a well-placed segment, and not a temporal inset.",
+    "distractorExplanations": {
+      "a": "Confuses a low segment with a line that is too high. Lifting the chin to find the reading segment means the near area sits too low. Dropping the chin to look over a line is the distance complaint of a high segment.",
+      "b": "Confuses a fitting error with ordinary reading posture. A long chin lift to find clear print means the segment sits too low.",
+      "d": "Confuses vertical segment height with a horizontal inset. The chin lift is about a low segment, not a shift of the segment toward the ear."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-052",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A new sport pair was calculated for the wrap angle recorded when it was ordered. At delivery someone bends the front straighter so the lenses look less bowed. The calculated compensation is still in the lenses. What mismatch has been created?",
+    "options": [
+      {
+        "id": "a",
+        "text": "No mismatch, because straightening the front at delivery erases compensation that was surfaced into the lenses"
+      },
+      {
+        "id": "b",
+        "text": "The compensation is still correct, because flattening the front increases the wrap the lenses were made for"
+      },
+      {
+        "id": "c",
+        "text": "The written sphere has reversed sign, because a straighter front substitutes for a new refraction"
+      },
+      {
+        "id": "d",
+        "text": "Compensation for a curve the front no longer has"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "These lenses were surfaced with compensation for the wrap angle recorded at order. Flattening the front at pickup leaves that compensation in lenses that are now worn flatter, so the compensation no longer matches the fit. Straightening the front does not erase the compensation, does not make the old compensation more appropriate, and does not reverse the sphere sign.",
+    "distractorExplanations": {
+      "a": "Confuses a frame adjustment with a change to the surfaced lenses. Bending the front flatter does not remove wrap compensation already in the lenses.",
+      "b": "Confuses flattening with an increase in wrap. A straighter front reduces the curve the lenses were compensated for, so the compensation is now wrong.",
+      "c": "Confuses face-form mismatch with a reversed sphere. The problem is compensation for a curve the front no longer has, not a new refraction."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
     "id": "abo-optician-readiness-check-instruments-001",
     "examSlug": "abo-optician-readiness-check",
     "topicId": "instruments",
@@ -3958,5 +6202,731 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (rewritten + expanded to 120 unique 2026-10-07)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-031",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A trainee has a sphero-cylinder lens in a manual lensometer. One set of mires comes sharp at the first power-drum reading, and the second set comes sharp after the power is changed to the other principal meridian. How are sphere, cylinder, and axis taken from that procedure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sphere from the first focus, cylinder as the drum difference, axis from the protractor"
+      },
+      {
+        "id": "b",
+        "text": "Sphere from the second focus, cylinder from the protractor degrees, and axis from the first drum reading on that lens"
+      },
+      {
+        "id": "c",
+        "text": "Sphere from the frame eye size, cylinder from the bridge stamp, and axis from the pupillometer lever"
+      },
+      {
+        "id": "d",
+        "text": "Sphere, cylinder, and axis all copied from the add engraving on a progressive blank"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "On a lensometer, sphere is the power-drum reading in the first focused meridian. Cylinder is the difference between that reading and the second focus. Axis is read from the protractor at the cylinder meridian. Frame stamps and add engravings are not those three readings.",
+    "distractorExplanations": {
+      "b": "This swaps the meridians and the protractor. The first drum focus is sphere, cylinder is the change to the second focus, and the protractor supplies axis.",
+      "c": "This mixes lensometer findings with frame boxing numbers and a pupillometer control, which do not supply sphere, cylinder, or axis.",
+      "d": "This confuses a progressive add engraving with the three lensometer readings taken from the two foci and the protractor."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-032",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The optician slides a single-vision lens across the lensometer stage until the illuminated target sits in the center of the reticle. What does that centered target show?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Base-down prism equal to the sphere, with the optical center still somewhere off the lens stop"
+      },
+      {
+        "id": "b",
+        "text": "The lens is at its optical center and measured prism is zero"
+      },
+      {
+        "id": "c",
+        "text": "The add power and the fitting height have both been confirmed along a progressive corridor"
+      },
+      {
+        "id": "d",
+        "text": "The front-surface index has been measured and the lens is cleared for impact testing"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "When the lensometer target is centered in the reticle, the reading is through the optical center of the lens. At that point measured prism is zero. A target that sits off the reticle center is prism, so the centered view is the no-prism reference for that lens.",
+    "distractorExplanations": {
+      "a": "This mixes a centered target with induced prism. Centering shows the optical center, where measured prism is zero, not a base-down amount tied to the sphere.",
+      "c": "This confuses a single-vision optical-center check with progressive add power and fitting height, which this reticle view does not give.",
+      "d": "This mixes a prism check with index measurement and impact testing. A centered target does not read index or clear a lens for impact use."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-033",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A lens clock seated on a 1.67 front surface reads 6.00, and the trainee records 6.00 as the true surface power. What is wrong with that record?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nothing is wrong, because a lens clock reports true surface power on a 1.67 lens the same way it does for any other plastic index in the lab"
+      },
+      {
+        "id": "b",
+        "text": "The dial should be doubled before it is written as the power of a 1.67 surface"
+      },
+      {
+        "id": "c",
+        "text": "The clock is scaled for index 1.53, so 6.00 is not the true power of this 1.67 surface"
+      },
+      {
+        "id": "d",
+        "text": "The clock was reading center thickness, so 6.00 is a millimeter value rather than a curve"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A lens clock is calibrated for one assumed index, commonly 1.53. The dial converts sag into power with that index. On a 1.67 surface the same curve has a different true power, so the dial figure is not the true power of that surface and should not be recorded as if it were.",
+    "distractorExplanations": {
+      "a": "This mixes the dial reading with true power in every index. The clock assumes one index, commonly 1.53, and its number is not the true power of a 1.67 surface.",
+      "b": "This invents a doubling step. The mismatch is the index the clock was calibrated for, not a factor of two applied to the dial.",
+      "d": "This confuses a lens clock with a thickness caliper. The dial estimates curvature for its calibration index, not center thickness in millimeters."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-034",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The refraction has been paid, and the patient asks the prescriber for the written prescription before any frame is chosen. The prescriber prefers to release it after a glasses purchase. What does the FTC Eyeglass Rule require here?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hold the prescription until the patient buys glasses and the office closes the sale"
+      },
+      {
+        "id": "b",
+        "text": "Trade the prescription for a signed waiver that gives up the exam the patient already paid"
+      },
+      {
+        "id": "c",
+        "text": "Send the patient for a second paid refraction before any written copy leaves the office"
+      },
+      {
+        "id": "d",
+        "text": "Release the prescription after the paid exam, without waiting for a glasses sale"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Under the FTC Eyeglass Rule, once the exam is paid the prescriber gives the patient the prescription. The prescriber cannot hold that prescription until the patient buys glasses. Choosing a frame is separate from handing over the refraction the patient has already paid for.",
+    "distractorExplanations": {
+      "a": "This reverses the rule. Holding the prescription until a glasses purchase is the practice the FTC Eyeglass Rule rejects after the exam is paid.",
+      "b": "This mixes release of the prescription with a waiver of the exam. A paid exam already entitles the patient to the prescription without a glasses sale.",
+      "c": "This confuses a completed paid exam with a new refraction. The rule is about releasing the prescription already paid for, not ordering another exam."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-035",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A technician remembers last month's edger coolant as mild and starts to pour from a new jug of a laboratory chemical. Where is the hazard information for this jug supposed to come from?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The safety data sheet for that chemical"
+      },
+      {
+        "id": "b",
+        "text": "The technician's memory of how the earlier coolant smelled and whether it irritated skin"
+      },
+      {
+        "id": "c",
+        "text": "The edger manual section on changing wheels, read as if it listed this chemical's hazards"
+      },
+      {
+        "id": "d",
+        "text": "The spectacle order form, read as if it carried the laboratory warnings for this jug"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "The safety data sheet, not a memory of a similar product, is the source for a laboratory chemical's hazards. An edger manual and a spectacle order do not replace that sheet when the technician needs to know how the chemical can cause harm.",
+    "distractorExplanations": {
+      "b": "This substitutes memory for the safety data sheet. Recalling an earlier coolant does not establish the hazards of the chemical now being poured.",
+      "c": "This confuses the edger manual with chemical hazard information. Hazards for a laboratory chemical come from its safety data sheet.",
+      "d": "This mixes a spectacle order with chemical safety. The order does not catalog laboratory hazards; the safety data sheet does."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-036",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "Two lenses miss the ordered axis by the same amount. One cylinder is weak and the other is strong. How should those axis misses be judged?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Judge both misses as identical failures, because cylinder strength has no role in how far the axis may sit from the order"
+      },
+      {
+        "id": "b",
+        "text": "The allowed axis error is wider for the weak cylinder than for the strong one"
+      },
+      {
+        "id": "c",
+        "text": "Accept the strong cylinder and reject the weak one, because a large cylinder hides an axis miss"
+      },
+      {
+        "id": "d",
+        "text": "Judge the axis against the add engraving and ignore the cylinder power written on the order"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Allowed axis error is judged together with cylinder power. The allowed axis error is wider for a weak cylinder than for a strong one. The same protractor miss is therefore judged more loosely on the weak cylinder and more tightly on the strong one.",
+    "distractorExplanations": {
+      "a": "This ignores cylinder power. The allowed axis error is wider for a weak cylinder than for a strong one, so equal axis misses are not judged the same way.",
+      "c": "This reverses the relationship. A strong cylinder is held to a tighter axis error, while a weak cylinder is allowed a wider axis error.",
+      "d": "This confuses axis tolerance with the add engraving. Axis error is judged from the cylinder power, not from the near add stamped on the lens."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-037",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The reticle rings look soft through the lensometer eyepiece, and the lens is still on the bench, not yet on the stop. What should the optician do before that lens is inserted?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Put the lens on the stop and turn the power drum until the rings sharpen"
+      },
+      {
+        "id": "b",
+        "text": "Set the protractor to the written axis and record the drum without using the eyepiece"
+      },
+      {
+        "id": "c",
+        "text": "Focus the eyepiece on the reticle before inserting the lens"
+      },
+      {
+        "id": "d",
+        "text": "Read the front curve with a lens clock and treat that curve as the focused reticle"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The lensometer eyepiece is focused on the reticle while the instrument is empty, before the lens is inserted. If that step is skipped, later blur can belong to the observer rather than to the lens, and the drum reading will not be trustworthy.",
+    "distractorExplanations": {
+      "a": "This mixes eyepiece focus with the power drum. The reticle is sharpened with the eyepiece before the lens is inserted, not by turning the drum after the lens is in.",
+      "b": "This skips the eyepiece. Setting the protractor to the written axis does not replace focusing the reticle before the lens is inserted.",
+      "d": "This confuses a lens-clock curve with eyepiece focus. The reticle is inside the lensometer and is focused before the lens is inserted."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-038",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "Layout ink is gone from a progressive, but a temporal engraving still reads 2.00. A coworker writes 2.00 mm as the fitting-cross height. What does that engraving report?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The monocular distance separation, in millimeters, for the engraved eye"
+      },
+      {
+        "id": "b",
+        "text": "The corridor length from the fitting cross down to the full near zone of that blank"
+      },
+      {
+        "id": "c",
+        "text": "The boxed vertical eye size that was used when the blank was edged"
+      },
+      {
+        "id": "d",
+        "text": "The add power, separate from fitting-cross height"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The add engraving on the temporal side of a progressive states the add power. A stamp that reads 2.00 is that add, not a fitting-cross height in millimeters. The nasal mark identifies the design. Height is measured on the wearer from the fitting cross to the frame.",
+    "distractorExplanations": {
+      "a": "This confuses an add engraving with monocular pupillary distance. The stamped number states near power, not the millimeter distance from the bridge to the pupil.",
+      "b": "This mixes the add stamp with corridor length. The engraving reports add power, while corridor length is a design distance measured in millimeters.",
+      "c": "This confuses the add engraving with the frame's vertical eye size. Boxing height is a frame measurement, not the number engraved as the add."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-039",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A frame sheet prints boxing A, boxing B, and a bridge value on three separate lines. A new hire adds A to B and calls the total the eye size. What does boxing A name by itself?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The horizontal eye size of one lens"
+      },
+      {
+        "id": "b",
+        "text": "The vertical eye size of one lens, from the top of the box to the bottom"
+      },
+      {
+        "id": "c",
+        "text": "The bridge gap between the two lenses, treated as if it were the frame pupillary distance"
+      },
+      {
+        "id": "d",
+        "text": "The patient's binocular pupillary distance measured at a far fixation"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "In the boxing system, A is the horizontal eye size of one lens, the width of the rectangle around that lens shape. B is the vertical size of the same box. Adding A to B does not name an eye size, and A alone is not the bridge or the patient's pupillary distance.",
+    "distractorExplanations": {
+      "b": "This swaps A with B. Boxing A is the horizontal eye size of one lens, while B is the vertical size of that boxed lens.",
+      "c": "This confuses A with the bridge gap and then misnames that gap as the frame pupillary distance. A is the horizontal eye size of one lens.",
+      "d": "This mixes a frame boxing dimension with a patient measurement. Boxing A describes one lens outline, not the distance between the pupils."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-040",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The bridge of a metal frame is stamped DBL 17. A fitter copies 17 onto the ticket as the frame pupillary distance. What does the stamped DBL actually measure?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The frame pupillary distance itself, because the stamp already includes each eye size plus the bridge"
+      },
+      {
+        "id": "b",
+        "text": "The distance between the two lenses at the bridge"
+      },
+      {
+        "id": "c",
+        "text": "The vertical boxed height of the right lens from the top eyewire to the bottom eyewire"
+      },
+      {
+        "id": "d",
+        "text": "The temple length from the hinge screw back to the bend over the ear"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "DBL is the distance between the two lenses at the bridge. It is not the frame pupillary distance. The distance between geometric centers is the horizontal eye size plus the DBL, so copying the bridge stamp alone understates that center-to-center figure.",
+    "distractorExplanations": {
+      "a": "This confuses DBL with frame pupillary distance. The stamp is the gap between the lenses at the bridge, while the frame figure also includes the horizontal eye size.",
+      "c": "This swaps DBL with boxing B. DBL is the distance between the two lenses at the bridge, not the vertical size of one lens.",
+      "d": "This confuses a bridge stamp with temple length. DBL is measured between the lenses at the bridge, not along the temple."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-041",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "Both principal meridians of a lens have been focused on the lensometer. The power drum reads -2.00 in one meridian and -3.50 in the meridian 90 degrees away. Which figure is the cylinder power?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The protractor setting, written down as if those degrees were diopters of cylinder"
+      },
+      {
+        "id": "b",
+        "text": "The average of -2.00 and -3.50, recorded as the cylinder power of the lens"
+      },
+      {
+        "id": "c",
+        "text": "The difference between the two drum readings"
+      },
+      {
+        "id": "d",
+        "text": "The -3.50 drum reading copied unchanged and labeled as the add"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Cylinder power is the difference between the two lensometer drum readings taken 90 degrees apart. Here the drums differ by 1.50 D, so the cylinder magnitude is 1.50 D. Each drum reading alone is a principal power, and the protractor supplies axis rather than that difference.",
+    "distractorExplanations": {
+      "a": "This confuses the protractor with cylinder power. Axis comes from the degree scale; cylinder power is the difference between the two drum readings 90 degrees apart.",
+      "b": "This mixes cylinder with an average of the principal powers. Cylinder is the difference between those drum readings, not their mean.",
+      "d": "This confuses the more minus principal power with both cylinder and add. Cylinder is the difference between the two drum readings, and add is a separate near power."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-042",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A dress lens chips along the edge while it is being mounted. It still neutralizes to the ordered power. A coworker argues that the power match makes the chipped lens safe to dispense. What follows from that chip?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The chip can be ignored, because a lensometer match to the order is what makes a dress lens safe to wear"
+      },
+      {
+        "id": "b",
+        "text": "Stamp the chipped dress lens as high impact, since the drum still agrees with the written sphere and cylinder"
+      },
+      {
+        "id": "c",
+        "text": "The chip no longer matters once the target is centered, because zero prism restores safe wear"
+      },
+      {
+        "id": "d",
+        "text": "A correct power reading does not make the chipped dress lens safe"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Neutralizing to the ordered power shows that the optics still match the order. It does not repair a chip or turn a dress lens into impact-rated eyewear. A dress lens that chips is not made safe by still reading the correct power, so the lensometer result alone is not a reason to dispense it.",
+    "distractorExplanations": {
+      "a": "This treats a power match as a safety finding. A correct lensometer reading does not make a chipped dress lens safe to dispense.",
+      "b": "This confuses a damaged dress lens with marked safety eyewear. A high-impact stamp is not earned by a power reading, and the chip remains damage.",
+      "c": "This mixes a centered, zero-prism reading with impact performance. Prism at the optical center says nothing about a chipped edge."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-043",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The optician dots the reading level of each bifocal lens and measures prism at those two dots. Which result is the vertical imbalance at near?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The difference in vertical prism between the two eyes at the reading level"
+      },
+      {
+        "id": "b",
+        "text": "The total of both distance spheres, converted from diopters of power into one shared prism number"
+      },
+      {
+        "id": "c",
+        "text": "The horizontal prism created by using the near separation at the distance optical centers"
+      },
+      {
+        "id": "d",
+        "text": "The add engraved on one progressive, treated as vertical prism for both eyes together"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Vertical imbalance at near is the difference in vertical prism between the two eyes at the reading level. Each lens is dotted where the patient reads, vertical prism is measured at each dot, and one reading is subtracted from the other. Sphere totals, horizontal prism, and the add stamp are different quantities.",
+    "distractorExplanations": {
+      "b": "This confuses vertical prism imbalance with the sum of the distance spheres. Imbalance at near is the difference in vertical prism between the eyes at the reading level.",
+      "c": "This mixes vertical imbalance with horizontal prism from a pupillary-distance error. The near finding is the vertical prism difference at the reading level.",
+      "d": "This confuses an add engraving with measured prism. Vertical imbalance is the difference in vertical prism between the two eyes, not the stamped add."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-044",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "Distance vision feels too strong to the wearer, but the neutralized sphere matches the written order. The optician is tempted to reduce that sphere on the remake ticket. What is the proper limit?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rewrite the sphere on the remake ticket to the power the wearer says feels easier, then edge that new number"
+      },
+      {
+        "id": "b",
+        "text": "Keep the prescribed sphere unless the prescriber changes it"
+      },
+      {
+        "id": "c",
+        "text": "Replace the written sphere with whatever the lens clock shows on the front surface of the old pair"
+      },
+      {
+        "id": "d",
+        "text": "Raise the add engraving so the near power cancels the distance sphere the wearer dislikes"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A comfort complaint does not authorize the optician to rewrite the prescribed sphere. The lensometer has already shown that the finished sphere matches the order. Any change to that sphere has to come from the prescriber, who can reconsider the refraction.",
+    "distractorExplanations": {
+      "a": "This lets the optician rewrite the prescribed sphere to soothe a complaint. That change belongs to the prescriber, not to a number written on the remake ticket.",
+      "c": "This confuses a lens-clock curve with the prescribed sphere. The written sphere is changed by the prescriber, not replaced by a clock reading from the old pair.",
+      "d": "This mixes a distance-sphere complaint with the add. Raising the near add does not authorize rewriting the prescribed distance sphere."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-045",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The optician is facing the patient and holding two loose lenses whose powers differ. The order lists one power on the OD line and another on the OS line. How is the patient's right lens identified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the lens on the optician's own right, treating that side as the patient's right while the two people face each other"
+      },
+      {
+        "id": "b",
+        "text": "Match the OS line to the patient's right side of the frame and leave the OD line for the other eye"
+      },
+      {
+        "id": "c",
+        "text": "OD is the patient's right eye, on the optician's left when the two face each other"
+      },
+      {
+        "id": "d",
+        "text": "Give the stronger lens to the patient's right eye, treating OD as the dominant eye"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "OD means the patient's right eye and OS the patient's left. Facing the patient puts that right eye on the optician's left, so the lens matching the OD line is identified on that side rather than on the optician's own right.",
+    "distractorExplanations": {
+      "a": "This swaps the patient's right with the optician's right while the two face each other. OD is the patient's right eye, which lies on the optician's left in that position.",
+      "b": "This swaps OD and OS. The OS line is the patient's left eye, not the lens that belongs on the patient's right.",
+      "d": "This confuses OD with a dominant eye. OD names the patient's right eye, on the optician's left when the two people face each other, not the stronger lens."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-046",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "Lined bifocals require a near pupillary distance. The pupillometer has a distance lever and a separate near lever. Which lever is set for this measurement?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distance lever, because a near pupillary distance is captured while the patient looks across the room"
+      },
+      {
+        "id": "b",
+        "text": "The distance lever, with the add power later subtracted from that reading to create a near result"
+      },
+      {
+        "id": "c",
+        "text": "Either lever, because the two settings store the same pupil separation for every working distance"
+      },
+      {
+        "id": "d",
+        "text": "The near setting, which is the one used for near pupillary distance"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A pupillometer's near setting is used when the measurement needed is near pupillary distance. The distance setting holds the eyes at a far posture and is not the control for that near measurement. Near work lets the eyes converge, so the near lever is the one that matches the bifocal.",
+    "distractorExplanations": {
+      "a": "This uses the distance setting for a near pupillary distance. The near setting is the pupillometer control for near measurement; looking far is the distance posture.",
+      "b": "This confuses pupillary distance with add power. Near pupillary distance comes from the near setting, not from subtracting the add from a distance reading.",
+      "c": "This treats the two levers as interchangeable. The near setting is used for near pupillary distance, and the distance setting is a different fixation."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-047",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "At pickup the patient asks the dispenser to drop-ball test a finished dress pair and then mark the fashion frame high-impact. How is that request handled?",
+    "options": [
+      {
+        "id": "a",
+        "text": "High-impact marks belong on safety frames and safety lenses, not a drop-ball test of this dress pair"
+      },
+      {
+        "id": "b",
+        "text": "Drop-ball test the dress pair in the dispensing room and stamp the fashion frame high-impact if both lenses survive the weight"
+      },
+      {
+        "id": "c",
+        "text": "Test one dress lens with a drop ball and file that result as workplace certification for the patient's employer"
+      },
+      {
+        "id": "d",
+        "text": "Mark the frame high-impact when the lens clock shows a steep front curve on the dress lenses"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "High-impact marking belongs on safety frames and safety lenses that were made for that use. The dispenser does not drop-ball test a patient's dress pair and then add a high-impact mark. A fashion frame and dress lenses do not become safety eyewear through a counter demonstration.",
+    "distractorExplanations": {
+      "b": "This treats a counter drop-ball test as a way to create high-impact status. That marking belongs on safety frames and safety lenses, not on a dress pair.",
+      "c": "This confuses a dress-lens demonstration with workplace certification. The dispenser does not drop-ball test the patient's dress pair to produce that record.",
+      "d": "This mixes a lens-clock curve with impact marking. High-impact marks belong on safety frames and safety lenses, not on a steep dress curve."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-048",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A returned progressive sits in the tray with a nearly blank job ticket. Before the shop calls the blur a lab error, which measurements should that ticket already contain?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The edger wheel grit and the lens-clock index used while the blank was surfaced"
+      },
+      {
+        "id": "b",
+        "text": "The measured heights and both monocular pupillary distances"
+      },
+      {
+        "id": "c",
+        "text": "One binocular pupillary distance and the frame color, with the heights left off the ticket"
+      },
+      {
+        "id": "d",
+        "text": "The warmer temperature and the tint-bath chemical named on the safety data sheet"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A job ticket for a returned progressive should show the measured fitting heights and both monocular pupillary distances. Those numbers are what the layout was built from. Without them the shop cannot separate a lab cut from a measuring error.",
+    "distractorExplanations": {
+      "a": "This substitutes machine setup for the patient measurements. A returned progressive ticket needs the measured heights and both monocular pupillary distances.",
+      "c": "This leaves out the heights and collapses the two monocular distances into one binocular number. The ticket should show both monocular values and the heights.",
+      "d": "This confuses chemical and warmer notes with progressive layout data. The needed ticket entries are the measured heights and both monocular pupillary distances."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-049",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "On final check the right-eye lens matches the OS power and misses the OD power. The two lines of the order are different. Which comparison is the right one for that lens?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Verify the right-eye lens against the OS line, since that line happened to match the drum"
+      },
+      {
+        "id": "b",
+        "text": "Average the OD and OS sphere powers and accept the right-eye lens if the drum lands between those two powers"
+      },
+      {
+        "id": "c",
+        "text": "Verify the right-eye lens against the OD line of the order"
+      },
+      {
+        "id": "d",
+        "text": "Verify the right-eye lens against the add engraving and set the OD line aside"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "The right-eye lens is verified against the OD line of the order, not against the OS line. A match to the fellow eye is a swap of the two eyes, not a passed check. When the two lines differ, each lens has to agree with its own line before the pair is released.",
+    "distractorExplanations": {
+      "a": "This accepts a match to the wrong eye. The right-eye lens is checked against the OD line, even when the OS numbers happen to agree with the drum.",
+      "b": "This invents an average of the two eyes. The right-eye lens is verified against the OD line, not against a blend of the OD and OS powers.",
+      "d": "This confuses the distance-power check with the add engraving. The right-eye lens is compared with the OD line of the order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-050",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "The lensometer stop is under the progressive corridor. The target is sharp, and the drum reads well plus of the ordered distance sphere. How is that drum reading classified?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The distance power, because any sharp target above the lower eyewire can replace the ordered sphere"
+      },
+      {
+        "id": "b",
+        "text": "The cylinder axis, so the plus drum figure is copied onto the protractor as degrees"
+      },
+      {
+        "id": "c",
+        "text": "Proof of the frame pupillary distance, because corridor power equals the binocular measurement"
+      },
+      {
+        "id": "d",
+        "text": "A corridor reading, not the distance power"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A lensometer reading taken through a progressive corridor is not the distance power. Power changes along the corridor as the add builds, so a plus drum there can look like extra sphere even when the distance zone is correct. Distance power is read in the distance portion, not partway down the corridor.",
+    "distractorExplanations": {
+      "a": "This treats a corridor focus as distance power. A reading through the progressive corridor is not the distance sphere, even when the target is sharp.",
+      "b": "This confuses the power drum with the axis protractor. The plus reading is corridor power, not a degree of axis, and it is not the distance power.",
+      "c": "This mixes corridor power with frame pupillary distance. A drum reading through the corridor is not the distance power and does not confirm the binocular measurement."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-051",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A progressive blank is engraved add 2.50. The signed order says add 1.75. The tracer file is ready and the edger is open. What happens before the lens is cut?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cut the blank to the 2.50 engraving and change the signed order so the paperwork agrees with the lens"
+      },
+      {
+        "id": "b",
+        "text": "Cut the blank to 1.75 and remove the engraving so the two add figures no longer disagree"
+      },
+      {
+        "id": "c",
+        "text": "Stop and reconcile the written add with the engraving before edging"
+      },
+      {
+        "id": "d",
+        "text": "Split the difference between 2.50 and 1.75 and edge the lens to that middle add"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "If the written add and the progressive add engraving disagree, the job stops until those two figures are reconciled. Edging first would lock in the wrong near power or destroy the mark on the blank. The two adds are not averaged, and neither figure is rewritten just to force a match.",
+    "distractorExplanations": {
+      "a": "This edges first and then alters the order. When the written add and the engraving disagree, they are reconciled before the lens is cut.",
+      "b": "This destroys the engraving instead of resolving the conflict. The written add and the engraving have to be reconciled before edging.",
+      "d": "This invents a midpoint add that neither the order nor the blank calls for. The disagreement is reconciled before edging, not averaged away."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-052",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A prescription the patient wants filled today has a stale date and a blank add line. What does the optician do before the order is made?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Write in a customary add and a new date so the lenses can be edged this afternoon"
+      },
+      {
+        "id": "b",
+        "text": "Order the distance powers now and let the patient pick an add when the glasses are dispensed"
+      },
+      {
+        "id": "c",
+        "text": "Copy an add from the old pair's lensometer reading and treat the stale date as settled"
+      },
+      {
+        "id": "d",
+        "text": "Confirm the expired or incomplete prescription with the prescriber"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "An expired or incomplete prescription is confirmed with the prescriber before the order is made. A blank add and a stale date are gaps the optician does not fill from habit, from the old pair, or from the patient's wish to have lenses started today.",
+    "distractorExplanations": {
+      "a": "This completes an incomplete prescription inside the shop. A stale date and a blank add are confirmed with the prescriber before the order is made.",
+      "b": "This splits the order and lets the patient choose the add. An incomplete prescription is confirmed with the prescriber before lenses are ordered.",
+      "c": "This substitutes an old lensometer reading for the missing add and ignores the stale date. Both gaps are confirmed with the prescriber before the order is made."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
   }
 ]
