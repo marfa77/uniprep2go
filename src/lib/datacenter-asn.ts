@@ -45,7 +45,11 @@ function parseV6Prefix(cidr: string): V6Prefix | null {
   const base = ipv6ToBig(baseText ?? "");
   const bits = Number(bitsText);
   if (base === null || !Number.isInteger(bits) || bits < 0 || bits > 128) return null;
-  const mask = bits === 0 ? 0n : ((1n << 128n) - 1n) ^ ((1n << BigInt(128 - bits)) - 1n);
+  const one = BigInt(1);
+  const mask =
+    bits === 0
+      ? BigInt(0)
+      : ((one << BigInt(128)) - one) ^ ((one << BigInt(128 - bits)) - one);
   return { base, mask };
 }
 
@@ -79,10 +83,11 @@ function ipv6ToBig(ip: string) {
   const groups = halves.length === 2 ? [...left, ...Array(missing).fill("0"), ...right] : left;
   if (groups.length !== 8) return null;
 
-  let value = 0n;
+  let value = BigInt(0);
+  const shift = BigInt(16);
   for (const group of groups) {
     if (!/^[0-9a-f]{1,4}$/.test(group)) return null;
-    value = (value << 16n) + BigInt(Number.parseInt(group, 16));
+    value = (value << shift) + BigInt(Number.parseInt(group, 16));
   }
   return value;
 }
