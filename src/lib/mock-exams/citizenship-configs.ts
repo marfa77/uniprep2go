@@ -168,14 +168,14 @@ export const citizenshipMockExamConfigs: MockExamConfig[] = [
       60,
     ),
     officialSourceNote:
-      "Independent readiness check on CCSE themes. Official Instituto Cervantes CCSE: 25 items / 45 minutes / 15/25 (60%) from a published ~300-item bank. This diagnostic is 60 questions / 45 minutes / 60%. DELE A2 language is a separate exam. Not Cervantes material.",
+      "Independent readiness check on CCSE themes. Instituto Cervantes (Rome exam page, read 2026-11-23): 25 questions in 5 tasks, 45 minutes, 15 of 25. Tasks are 3-option items or true/false. Wrong and blank answers score 0 and are not subtracted. About 60% of the items are government, legislation, and civic participation, and about 40% are culture, history, and society. The current exams page still points to the CCSE 2026 manual. This diagnostic is 60 questions / 45 minutes / 60%. DELE A2 is a separate exam. Not Cervantes material.",
     description:
-      `60-question CCSE diagnostic (free 25-question version) for Spanish nationality civics — longer than the official 25-question Cervantes exam. DELE A2 is separate. Pairs with the ${CIVIC_PRICE} CCSE España Anki deck.`,
+      `60-question CCSE diagnostic (free 25-question version) for Spanish nationality civics — longer than the official 25-question, 5-task Cervantes exam. DELE A2 is separate. Pairs with the ${CIVIC_PRICE} CCSE España Anki deck.`,
     examBody:
       "Instituto Cervantes — CCSE (25Q official; DELE A2 separate)",
     questionSourceNote:
       "Questions sourced from the Prep2Go Immigration app CCSE (España) deck (Q&A converted to MCQ with distractors sampled from the same deck). Independent readiness check — not official Instituto Cervantes material.",
-    lastUpdated: "2026-07-26",
+    lastUpdated: "2026-11-23",
     searchAliases: [
       "CCSE",
       "CCSE España",

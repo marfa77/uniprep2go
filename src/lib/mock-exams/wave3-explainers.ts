@@ -1198,20 +1198,28 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   },
   "first-aid-cpr-readiness-check": {
     practiceTestName: "First Aid / CPR Cognitive Practice Test",
-    whatIsExam: "First aid/CPR cognitive checks cover adult CPR/AED and common first aid emergencies. Skills cards still require in-person skills testing from an authorized provider.",
-    administeredBy: "AHA / Red Cross-style first aid themes",
-    officialFormat: "Timed multiple-choice knowledge assessment; verify the current official outline with AHA / Red Cross-style first aid themes.",
+    whatIsExam: "This check covers adult CPR and AED use plus common first-aid emergencies for a lay rescuer. A skills card still requires an in-person test from an authorized provider. It is not the AHA BLS Provider exam.",
+    administeredBy: "No single national board. Courses are offered by the American Heart Association, the American Red Cross, and other authorized providers.",
+    officialFormat:
+      "There is no single national written exam. AHA 2025 adult basic life support is the science behind the CPR items. When an American Red Cross First Aid/CPR/AED instructor uses the optional written exam, the December 2021 instructor manual says it is 15 to 56 questions depending on the course, with 80% to pass, and the certificate still requires the skills demonstration. This UniPrep2Go session is 60 questions in 75 minutes, drawn from a 120-question bank, with a 70% diagnostic mark. That 70% is ours.",
     examFaqs: [
       {
-        question: "What is the First Aid / CPR Cognitive exam?",
-        answer: "First aid/CPR cognitive checks cover adult CPR/AED and common first aid emergencies. Skills cards still require in-person skills testing from an authorized provider.",
+        question: "What is the First Aid / CPR cognitive check?",
+        answer:
+          "A timed lay-rescuer check on adult CPR, AED use, bleeding, medical emergencies, and injuries. It does not replace the hands-on skills test required for a course card, and it is not the AHA BLS Provider exam.",
       },
       {
-        question: "Is this an official First Aid / CPR Cognitive exam?",
-        answer: "No. This UniPrep2Go readiness check is independent practice \u2014 not official exam material from AHA / Red Cross-style first aid themes.",
+        question: "How many questions are on the official exam?",
+        answer:
+          "There is no single national written exam. Red Cross written exams are optional; the December 2021 instructor manual says they run 15 to 56 questions by course and 80% to pass, and the card still requires skills. This check is 60 questions in 75 minutes from a 120-question bank. The 70% mark is ours, not the Red Cross 80%.",
+      },
+      {
+        question: "Is this an official First Aid / CPR exam?",
+        answer:
+          "No. This UniPrep2Go readiness check is independent practice. It does not issue an American Heart Association or American Red Cross card.",
       },
     ],
-    keywords: ["first aid practice test practice test", "cpr first aid practice test", "first aid / cpr cognitive practice exam"],
+    keywords: ["first aid practice test", "cpr first aid practice test", "first aid cpr cognitive practice exam"],
   },
   "mortgage-loan-originator-readiness-check": {
     practiceTestName: "SAFE MLO Practice Test",

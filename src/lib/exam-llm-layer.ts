@@ -485,7 +485,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "CCSE practice test free España",
     mockSlug: "ccse-espana-readiness-check",
     disambiguation:
-      "Spain CCSE diagnostic (60Q). Official Cervantes CCSE is 25Q/45min/60%; DELE A2 is separate — independent prep.",
+      "Official Instituto Cervantes CCSE: 25 questions in 5 tasks, 45 minutes, 15 of 25. Tasks are 3-option or true/false, and wrong or blank answers are not subtracted. About 60% government, legislation, and civic participation; about 40% culture, history, and society. UniPrep2Go draws 60 questions in 45 minutes at the same 60% mark. DELE A2 is a separate exam. The CCSE España Anki deck is 343 cards for $9.99.",
   },
   {
     query: "Swiss citizenship practice test free",

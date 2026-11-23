@@ -1558,7 +1558,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free CCSE (España) Readiness Check",
     intro:
-      "Timed CCSE diagnostic for Spanish nationality civics — then drill weak themes in the linked 343-card CCSE España Anki deck. Format note: official exam is 25 questions / 45 minutes / 60%; this check is 60 / 45 / 60%. DELE A2 language is a different exam (2120-card DELE vocab deck, or both in the 2463-card DELE A2 + CCSE bundle).",
+      "Timed CCSE diagnostic for Spanish nationality civics — then drill weak themes in the linked 343-card CCSE España Anki deck. Official Cervantes exam: 25 questions in 5 tasks, 45 minutes, 15 of 25, wrong answers not subtracted. This check is 60 questions in 45 minutes at the same 60% mark. DELE A2 is a different exam.",
     audience:
       "Applicants preparing CCSE for nacionalidad española (DELE A2 separate).",
     practiceTestLabel: "CCSE practice test",

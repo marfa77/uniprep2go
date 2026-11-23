@@ -849,11 +849,11 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
   "ccse-espana-readiness-check": {
     practiceTestName: "CCSE (España) Readiness Check",
     whatIsExam:
-      "Spain’s CCSE (conocimientos constitucionales y socioculturales de España) is the live Instituto Cervantes civics exam required for most nacionalidad española applications by residence. Officially it is 25 multiple-choice questions in 45 minutes with a 60% pass mark (typically 15/25), covering government/constitution, institutions/elections/rights, geography/history/culture, and everyday life/procedures. DELE A2 (or equivalent Spanish language evidence) is a separate exam — CCSE is not a language test. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 60% pass) on overlapping CCSE themes — not Cervantes material and not a substitute for the official 25-question paper. Pair weak topics with the DELE + CCSE Spanish nationality Anki bundle.",
+      "Spain’s CCSE (conocimientos constitucionales y socioculturales de España) is the live Instituto Cervantes civics exam required for most nacionalidad española applications by residence. The Cervantes exam page describes 25 questions in 5 tasks, 45 minutes, and a pass at 15 of 25. Tasks are 3-option items or true/false. Wrong and blank answers are not subtracted. About 60% of the items are government, legislation, and civic participation, and about 40% are culture, history, and society. DELE A2 is a separate language exam. This UniPrep2Go page is an independent longer diagnostic (60 questions, 45 minutes, 60% pass) — not Cervantes material and not a substitute for the official 25-question paper. Pair weak topics with the 343-card CCSE España Anki deck.",
     administeredBy:
       "Instituto Cervantes exam centres worldwide for CCSE; nationality decisions via Spanish Ministry of Justice / civil registry pathways. Language: DELE or recognised equivalents separately.",
     officialFormat:
-      "Official CCSE: 25 MCQs, 45 minutes, 60% pass (Instituto Cervantes). DELE A2 (or equivalent) is separate. UniPrep2Go readiness check on this page: 60 timed questions, 45 minutes, 60% diagnostic pass — use for topic scoring, then drill official Cervantes samples for 25-question fidelity.",
+      "Official CCSE, from the Cervantes exam page read 2026-11-23: 25 questions in 5 tasks, 45 minutes, 15 of 25. Items are 3-option or true/false, and wrong or blank answers are not subtracted. About 60% cover government, legislation, and civic participation; about 40% cover culture, history, and society. DELE A2 is separate. This UniPrep2Go check is 60 questions in 45 minutes with the same 60% mark.",
     whoFor:
       "Residence-route nationality applicants who need CCSE plus DESE/DELE language evidence; learners who confuse CCSE with DELE A2; and anyone wanting a longer timed diagnostic before booking Cervantes. Not legal advice and not the official CCSE.",
     howToPrepare:
@@ -893,7 +893,7 @@ export const citizenshipExamExplainers: Record<string, NicheExamExplainer> = {
       {
         question: "What is the official CCSE format?",
         answer:
-          "25 multiple-choice questions in 45 minutes with a 60% pass mark (typically 15/25). Confirm current manuals and fees on examenes.cervantes.es.",
+          "25 questions in 5 tasks, 45 minutes, 15 of 25. Tasks are 3-option items or true/false, and a wrong or blank answer is not subtracted. About 60% of the paper is government, legislation, and civic participation. Confirm the current manual and fee on examenes.cervantes.es. The exams page still offers the CCSE 2026 manual.",
       },
       {
         question: "Is CCSE the same as DELE A2?",

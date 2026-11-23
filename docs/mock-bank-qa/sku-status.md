@@ -1,17 +1,17 @@
 # SKU status board
 
-Generated 2026-11-22 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-23 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 97 | 53 |
+| ok | 98 | 53 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 12 | 0 |
 | point-fix | 0 | 0 |
-| rewrite | 68 | 14 |
+| rewrite | 67 | 14 |
 | civic | 19 | 19 |
 | **total live mocks** | **196** | **86** |
 
@@ -46,7 +46,6 @@ Products without a mock and catalog totals: bottom of this file.
 | rewrite | `ct-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `de-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `esthetician-state-readiness-check` | planned | 60 / 60 | — | FAIL (13 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
-| rewrite | `first-aid-cpr-readiness-check` | planned | 60 / 60 | — | FAIL (58 items): template/thin distractor notes, thin/template explanations, boilerplate stem wrappers; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `hi-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (16 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `ia-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (14 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
 | rewrite | `id-real-estate-readiness-check` | planned | 60 / 60 | — | FAIL (15 items): template/thin distractor notes, thin/template explanations; bank 60 for 60Q session; no content review in ledger |
@@ -113,7 +112,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `ccht-dialysis-readiness-check` | live | 60 / 220 | 2026-11-16 | — |
 | ok | `cdcp-readiness-check` | live | 40 / 250 | 2026-11-07 | — |
 | ok | `cem-readiness-check` | live | 50 / 250 | 2026-10-15 | — |
-| ok | `cfa-level-1-readiness-check` | live | 60 / 300 | 2026-11-14 | — |
+| ok | `cfa-level-1-readiness-check` | live | 60 / 300 | 2026-11-23 | — |
 | ok | `cfa-level-2-readiness-check` | live | 60 / 250 | 2026-11-14 | — |
 | ok | `cfp-certification-readiness-check` | live | 120 / 240 | 2026-11-07 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
@@ -173,6 +172,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `danb-gc-readiness-check` | planned | 60 / 120 | 2026-11-20 | — |
 | ok | `danb-ice-readiness-check` | planned | 60 / 120 | 2026-11-21 | — |
 | ok | `electrical-journeyman-readiness-check` | planned | 60 / 120 | 2026-11-10 | — |
+| ok | `first-aid-cpr-readiness-check` | planned | 60 / 120 | 2026-11-23 | — |
 | ok | `forklift-operator-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `funeral-service-arts-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `home-health-aide-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
@@ -202,7 +202,7 @@ Products without a mock and catalog totals: bottom of this file.
 | civic | `belgium-flanders-mo-readiness-check` | live | 60 / 220 | 2026-11-15 | — |
 | civic | `belgium-wallonie-citoyennete-readiness-check` | live | 60 / 120 | 2026-11-22 | — |
 | civic | `canadian-citizenship-readiness-check` | live | 60 / 200 | 2026-11-21 | FAIL (177 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
-| civic | `ccse-espana-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (45 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |
+| civic | `ccse-espana-readiness-check` | live | 60 / 60 | 2026-11-23 | FAIL (45 items + bank-level): thin/template explanations, distractor, correct; bank 60 for 60Q session |
 | civic | `czech-citizenship-readiness-check` | live | 60 / 60 | — | FAIL (14 items + bank-level): correct, correct >40% longer than every distractor; bank 60 for 60Q session; no content review in ledger |
 | civic | `denmark-indfoedsretsproeven-readiness-check` | live | 60 / 60 | 2026-11-03 | FAIL (15 items + bank-level): template/thin distractor notes, thin/template explanations, correct; bank 60 for 60Q session |
 | civic | `finland-kansalaisuuskoe-readiness-check` | live | 60 / 120 | 2026-11-07 | — |

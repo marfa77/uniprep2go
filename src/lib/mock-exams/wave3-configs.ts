@@ -1143,10 +1143,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "medical", label: "Medical emergencies" },
       { id: "injury", label: "Injury & environment" }
     ]),
-    officialSourceNote: "Mapped to AHA / Red Cross-style first aid themes themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question First Aid / CPR Cognitive readiness check (free 25-question version) with topic scoring.",
-    examBody: "AHA / Red Cross-style first aid themes",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    officialSourceNote:
+      "Lay first aid and CPR themes from the AHA 2025 adult basic life support guidance and Red Cross-style first aid. There is no single national written exam. When an American Red Cross First Aid/CPR/AED instructor gives the optional written exam, the December 2021 instructor manual says it runs 15 to 56 questions depending on the course and 80% to pass, and the certificate still requires the skills test. This UniPrep2Go check is 60 questions / 75 minutes / 70% drawn from a 120-question bank. The 70% mark is ours. It is not an AHA BLS Provider exam and it does not issue a skills card.",
+    description:
+      "60-question / 75-minute First Aid / CPR cognitive check (free 25-question version) drawn from a 120-question bank. Not a skills card.",
+    examBody: "AHA 2025 lay rescuer / Red Cross-style first aid",
+    questionSourceNote:
+      "120 questions (CPR & AED 30, bleeding & shock 30, medical emergencies 30, injury & environment 30). Each session is still 60 questions / 75 minutes and draws 15 from each topic. Rewritten 2026-11-23.",
+    lastUpdated: "2026-11-23",
     searchAliases: ["first aid practice test", "CPR first aid"],
   }),
   nicheReadinessConfig({
