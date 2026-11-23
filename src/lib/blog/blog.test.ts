@@ -602,4 +602,19 @@ describe("overnight WP2/WP3 blog rewrites", () => {
     expect(body).toContain("19 January 2027");
     expect(body).not.toMatch(/industry consensus|four-function calculator|\$35/);
   });
+
+  it("Czech realities post adds NPI booking, results, retake and exemption facts", () => {
+    const post = getBlogPostBySlug("czech-citizenship-exam-zkouska-z-realii-complete-guide")!;
+    expect(post.faqs.map((f) => f.question)).toContain("Who is exempt from the Czech realities exam?");
+    const body = text(post.slug);
+    expect(body).toContain("online after 30 days");
+    expect(body).not.toMatch(/6–12 months|8–14 months|≈1–160/);
+  });
+
+  it("EPA 608 practice-test post uses appendix D and 82.156/82.157 values", () => {
+    const body = text("epa-608-practice-test-what-to-expect");
+    expect(body).toContain("**70%**");
+    expect(body).toContain("25 mm Hg absolute");
+    expect(body).not.toMatch(/industry consensus|72%|exceeds 35%|25 inches|with a retrofit plan|\$25 and \$150/);
+  });
 });

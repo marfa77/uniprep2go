@@ -7,6 +7,7 @@ export const epa608PracticeTestPost: BlogPostDraft = {
   metaDescription:
     "Taking an EPA 608 practice test? Here is exactly what shows up on the real exam, how the scoring works, and the mistakes that make people fail twice.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-23",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
   relatedSlugs: [
@@ -19,7 +20,7 @@ export const epa608PracticeTestPost: BlogPostDraft = {
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
     mockLabel: "Take the free EPA 608 mock",
-    deckLabel: "EPA 608 Anki deck — 200 flashcards",
+    deckLabel: "EPA 608 Anki deck",
     summary:
       "Take the free 25-question EPA 608 mock → get your pass/no-pass report → drill weak topics with the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
   },
@@ -72,11 +73,11 @@ export const epa608PracticeTestPost: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "EPA does not publish exact passing scores, but industry consensus puts it at **72%** based on field reports from Pearson VUE and PSI testing centers. You get 25 questions on Core and 25 per type section. That means you can miss roughly 7 questions per section and still pass.",
+          text: "The passing score is set in federal rules, not by consensus. Appendix D to 40 CFR part 82, subpart F says closed-book Type I, Type II, Type III and Universal tests pass at **70%**, and Type I tests in the mail-in format at **84%**. Each test has 25 questions from the Core group and 25 from each technical group you take, so 70% means 18 of 25 in every group. A Universal test has 100 questions.",
         },
         {
           type: "p",
-          text: "The exam is closed-book. No calculators with memory functions. No phones. You get scratch paper and a basic calculator if needed.",
+          text: "Type II, Type III and Universal tests must be closed-book and proctored in a secure environment, and proctors must make sure you use no notes or training materials. Type I-only programs may use an on-site or mail-in format, but a mail-in Type I test does not count toward Universal, and neither does an open-book Core test. Tests are given by EPA-approved certifying organizations, which issue a wallet card within 30 days.",
         },
       ],
     },
@@ -94,18 +95,18 @@ export const epa608PracticeTestPost: BlogPostDraft = {
               title: "1. Leak repair deadlines",
               body: "",
               bullets: [
-                "Commercial refrigeration: repair within 30 days if charge is 50+ lbs and leak rate exceeds 35%",
-                "Comfort cooling: 30 days, leak rate threshold is 10%",
-                "Industrial process refrigeration: 30 days, but up to 120 days with a retrofit plan",
+                "Applies to appliances with a full charge of 50 lb or more (40 CFR 82.157)",
+                "Leak-rate thresholds: 20% commercial refrigeration, 30% industrial process refrigeration, 10% comfort cooling and other appliances",
+                "Repair within 30 days of adding refrigerant to an appliance over its threshold, or 120 days if an industrial process shutdown is required",
               ],
             },
             {
               title: "2. Recovery requirements",
               body: "",
               bullets: [
-                "Type I (small appliances): recover to 0 psi before disposal",
-                "Type II (high-pressure): recover to 15 inches of vacuum (or 0 psi if leaking)",
-                "Type III (low-pressure): recover to 25 inches of vacuum",
+                "Small appliances (Type I): recover 90% of the refrigerant (80% if the compressor is not working or the recovery equipment predates 15 Nov 1993), or evacuate to 4 in Hg vacuum",
+                "High- and medium-pressure appliances (Type II): evacuate to the Table 1 level for the pressure class and charge size before opening (see the table below)",
+                "Low-pressure appliances (Type III): 25 mm Hg absolute",
               ],
             },
             {
@@ -119,24 +120,22 @@ export const epa608PracticeTestPost: BlogPostDraft = {
             },
             {
               title: "4. The dates",
-              body: "",
-              bullets: [
-                "1993: Ban on venting CFCs and HCFCs",
-                "2010: Ban on production of R-22 for new equipment",
-                "2015: 90% reduction in HCFC production baseline",
-                "2020: Total phase-out of R-22 production",
-              ],
+              body: "EPA's Core test topics include Clean Air Act and Montreal Protocol phaseout dates and the venting prohibition. Learn them from EPA's Section 608 pages rather than from memory aids, and drill them in cards.",
             },
           ],
         },
         {
           type: "table",
-          caption: "EPA 608 recovery targets by type",
-          headers: ["Section", "Appliance type", "Recovery target"],
+          caption: "Required evacuation levels, 40 CFR 82.156 Table 1 (recovery equipment made on or after 15 Nov 1993)",
+          headers: ["Appliance", "Evacuation level"],
           rows: [
-            ["Type I", "Small appliances", "0 psi before disposal"],
-            ["Type II", "High-pressure", "15 in. vacuum (or 0 psi if leaking)"],
-            ["Type III", "Low-pressure", "25 in. vacuum"],
+            ["Very high-pressure", "0 in Hg"],
+            ["High-pressure, full charge under 200 lb", "0 in Hg"],
+            ["High-pressure, 200 lb or more", "10 in Hg"],
+            ["Medium-pressure, under 200 lb", "10 in Hg"],
+            ["Medium-pressure, 200 lb or more", "15 in Hg"],
+            ["Low-pressure", "25 mm Hg absolute"],
+            ["Small appliance", "90% / 80% recovery, or 4 in Hg"],
           ],
         },
       ],
@@ -179,7 +178,7 @@ export const epa608PracticeTestPost: BlogPostDraft = {
           type: "ul",
           items: [
             "**Rushing through Core.** It is only 25 questions, but it is mandatory. Fail Core and you fail everything. Do not treat it as a warm-up.",
-            "**Ignoring the test-center rules.** PSI centers enforce a strict no-phone policy. If your Apple Watch buzzes, they can invalidate your score.",
+            "**Ignoring the proctor's rules.** Closed-book tests mean no notes or training materials at your desk; follow your certifying program's rules on phones and devices.",
             "**Guessing on leak-rate math.** If a question asks whether 15% annual leak rate triggers repair on a 100-pound comfort cooling system, work it out. The threshold is 10%. 15% is over. The answer is yes.",
           ],
         },
@@ -194,29 +193,29 @@ export const epa608PracticeTestPost: BlogPostDraft = {
     },
     {
       question: "How many questions are on the EPA 608 Core exam?",
-      answer: "25 multiple-choice questions. You need roughly 18 correct to pass.",
+      answer: "25 questions from the Core group on every test. At the 70% passing score, that is 18 of 25 (40 CFR part 82, subpart F, appendix D).",
     },
     {
       question: "Can I take the EPA 608 exam online?",
       answer:
-        "Yes, through approved online proctoring services. You still need a webcam and a clean workspace.",
+        "It depends on the certifying program. Type I-only tests may be mail-in or on-site; Type II, Type III and Universal must be closed-book and proctored in a secure environment. Check what your EPA-approved program offers.",
     },
     {
       question: "What is the difference between Type II and Type III?",
       answer:
-        "Type II covers high-pressure appliances like residential AC and supermarket refrigeration. Type III covers low-pressure appliances like chillers. The evacuation requirements differ: 15 inches of vacuum for Type II, 25 inches for Type III.",
+        "Type II covers medium-, high- and very-high-pressure appliances; Type III covers low-pressure appliances. Evacuation levels differ: Type II levels range from 0 to 15 in Hg by pressure class and charge size, while low-pressure appliances go to 25 mm Hg absolute (40 CFR 82.156).",
     },
     {
       question: "How much does the EPA 608 exam cost?",
       answer:
-        "Between $25 and $150 depending on the proctor and whether you bundle sections. Retakes usually cost the same as the original.",
+        "Each EPA-approved certifying organization sets its own fee; EPA does not set a price. Compare programs on EPA's list of certifying organizations.",
     },
     {
       question: "How long is EPA 608 certification good for?",
       answer:
-        "There is no expiration date on the certification itself. However, if the EPA updates regulations significantly, you may need continuing education to stay compliant.",
+        "EPA states that Section 608 technician certifications do not expire. Keep a copy of your certificate at your place of business.",
     },
   ],
   bottomLine:
-    "Passing the EPA 608 on the first try is about knowing the regulations cold, not being the best technician in the shop. Take a practice test early, find your gaps, then drill the numbers in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) until they are automatic. The exam does not test your hands. It tests whether you read the rulebook.",
+    "Passing the EPA 608 on the first try is about knowing the regulations cold, not being the best technician in the shop. Take a practice test early, find your gaps, then drill the numbers in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) until they are automatic. Sources: [40 CFR 82.156](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.156), [40 CFR 82.157](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.157), [appendix D](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/appendix-Appendix%20D%20to%20Subpart%20F%20of%20Part%2082) and [EPA Section 608 requirements](https://www.epa.gov/section608/section-608-technician-certification-requirements), checked 23 Nov 2026.",
 };

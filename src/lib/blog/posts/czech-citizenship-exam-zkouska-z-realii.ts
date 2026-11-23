@@ -7,6 +7,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
   metaDescription:
     "Czech citizenship: B1 Czech + zkouška z reálií — 30 MCQs in 30 min, 60% pass, CZK 2,000. NPI 300-question pool, 30 topics, costs, exemptions, prep.",
   publishedAt: "2026-08-04",
+  contentUpdated: "2026-11-23",
   eyebrow: "Czechia · Zkouška z reálií",
   clusterId: "czech-citizenship",
   relatedSlugs: [
@@ -22,7 +23,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
     mockLabel: "Take the free Czech Citizenship readiness check",
     deckLabel: "Get the Czech CCE deck on Prep2Go",
     summary:
-      "Drill civic themes with the 60-question Czech Citizenship readiness check (free 25-question version). For B1/A2 language evidence, use the Czech CCE deck on Prep2Go. Drill reálie with the $9.99 Czech Citizenship Anki deck.",
+      "Drill civic themes with the 60-question Czech Citizenship readiness check (free 25-question version). For B1/A2 language evidence, use the Czech CCE deck on Prep2Go. Drill reálie with the [Czech Citizenship Anki deck](/decks/czech-citizenship-anki-deck).",
     extraLinks: [
       {
         href: "/decks/czech-citizenship-anki-deck",
@@ -183,7 +184,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
             },
             {
               title: "Weeks 2–5 — Systematic coverage",
-              body: "Work the 300-item bank by domain: civic (≈1–160), geography (≈161–220), history/culture (≈221–300), then mixed review of misses.",
+              body: "Work the 300-item bank by domain: civic fundamentals, then geography, then history and culture, then a mixed review of misses.",
             },
             {
               title: "Week 6 — Timed simulation",
@@ -217,24 +218,39 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
       ],
     },
     {
-      heading: "From Exam to Passport: Realistic Timeline",
+      heading: "Booking, exam day, results and retakes",
       blocks: [
         {
-          type: "table",
-          headers: ["Step", "Typical duration"],
-          rows: [
-            ["Prepare & register for exams", "2–3 months"],
-            ["Sit language + reálie", "Separate dates or same centre booking"],
-            ["Results", "About 2–4 weeks"],
-            ["Gather documents", "1–2 months"],
-            ["File citizenship application", "1 day at the office + fee"],
-            ["Ministry processing", "Often 6–12 months"],
-            ["Oath / completion", "After approval"],
+          type: "ul",
+          items: [
+            "**Prerequisite:** NPI ČR says you need Czech at **B1** before you sit the realities exam. The language exam is a separate exam with four subtests.",
+            "**Fees:** CZK 2,000 for the realities exam, CZK 3,700 for the language exam, CZK 5,700 for both, paid by bank transfer within 7 days of the confirmation e-mail.",
+            "**Exam days:** Wednesdays or Saturdays from 10:00; arrive at least 30 minutes early. Prague hosts most dates; Saturday sessions also run in Brno, Plzeň, Liberec, Poděbrady, České Budějovice, Hradec Králové, Olomouc and Ostrava. You register online and are placed in a queue by preferred centre and day.",
+            "**Format on the day:** 30 minutes with no break, after about 10 minutes of instructions; one point per correct answer.",
+            "**Results:** online after 30 days; the certificate arrives by post within 7 weeks and does not expire.",
+            "**Retakes:** unlimited, but each attempt means registering and paying again.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "Who is exempt from the realities exam?",
+      blocks: [
+        {
+          type: "p",
+          text: "Under Act 186/2013, § 14(5), as quoted by NPI ČR, you do not need the realities exam if you:",
+        },
+        {
+          type: "ul",
+          items: [
+            "completed at least 3 school years taught in Czech",
+            "are under 15 or over 65 when you apply",
+            "have a disability that prevents you from learning Czech",
           ],
         },
         {
           type: "p",
-          text: "Plan roughly **8–14 months** from first serious study to passport — confirm current fees and processing on official Interior Ministry and exam-centre sites before you pay.",
+          text: "Recognition of other documents is decided by the Ministry of the Interior, not the exam centre, and the Ministry can waive the requirement for serious reasons. Practise first with the free [Czech citizenship readiness check](/mock-exams/czech-citizenship-readiness-check).",
         },
       ],
     },
@@ -243,7 +259,7 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
     {
       question: "What is the Czech citizenship realities exam?",
       answer:
-        "The zkouška z českých reálií is a written multiple-choice civics test for naturalisation: 30 questions in 30 minutes, four options each, 60% (18/30) to pass, typically CZK 2,000 per attempt. Questions are drawn from NPI ČR’s published 300-item pool across 30 topics.",
+        "The zkouška z českých reálií is a written multiple-choice civics test for naturalisation: 30 questions in 30 minutes, four options each, at least 18 of 30 (60%) to pass, CZK 2,000 per attempt. Questions come from NPI ČR’s published 300-item bank across 30 topics (cestina-pro-cizince.cz, checked 23 Nov 2026).",
     },
     {
       question: "Is the language exam the same as the reálie exam?",
@@ -271,11 +287,20 @@ export const czechCitizenshipExamZkouskaZRealiiPost: BlogPostDraft = {
         "Aim consistently for about 22–25/30 on timed 30-question drills — a safety margin above the 18/30 pass line — especially on numbers, institutions, and “NOT” questions.",
     },
     {
+      question: "When do I get my Czech realities exam result?",
+      answer: "Results are online after 30 days, and the certificate arrives by post within 7 weeks. It does not expire.",
+    },
+    {
+      question: "Who is exempt from the Czech realities exam?",
+      answer:
+        "People who completed at least 3 school years taught in Czech, applicants under 15 or over 65, and people whose disability prevents them from learning Czech (Act 186/2013, § 14(5)). The Ministry of the Interior decides other cases.",
+    },
+    {
       question: "Is UniPrep2Go official NPI or Interior Ministry material?",
       answer:
         "No. UniPrep2Go is an independent study aid. Pair it with the official NPI question bank and current government guidance.",
     },
   ],
   bottomLine:
-    "The zkouška z reálií is a structured memorisation challenge with a known question pool — not an IQ test. Pass language and civics as separate products, drill the 300 NPI items under a timer, confirm exemptions before you book, and use the free UniPrep2Go readiness check plus CCE Anki / civics waitlist so you don’t pay CZK 2,000 to retake a bank you never finished.",
+    "The zkouška z reálií is a structured memorisation challenge with a known question pool — not an IQ test. Pass language and civics as separate products, drill the 300 NPI items under a timer, confirm exemptions before you book, and use the free readiness check so you don’t pay CZK 2,000 to retake a bank you never finished. Sources: [NPI ČR — realities exam information](https://cestina-pro-cizince.cz/obcanstvi/zkouska-z-ceskych-realii/informace-o-zkousce-realie/), [exam dates](https://cestina-pro-cizince.cz/obcanstvi/terminy-zkousky-z-realii/) and [fees and FAQ](https://cestina-pro-cizince.cz/obcanstvi/), checked 23 Nov 2026.",
 };
