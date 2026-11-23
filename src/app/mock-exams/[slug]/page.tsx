@@ -85,6 +85,8 @@ import { getVerticalDefinition } from "@/lib/mock-exams/taxonomy";
 import { getCitizenshipGuideContent } from "@/lib/mock-exams/citizenship-guide-content";
 import { getPracticeOptionsCompared } from "@/lib/mock-exams/practice-options-compared";
 import { PracticeOptionsComparedSection } from "@/components/mock-exams/practice-options-compared";
+import { MockExamEditorialSection } from "@/components/mock-exams/mock-exam-editorial-section";
+import { getMockEditorialBundle } from "@/lib/mock-exams/editorial";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { finalize, fitMetaDescription, leafPageTitle, mockExamRobots, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl } from "@/lib/site";
@@ -246,6 +248,7 @@ export default async function MockExamPage({
       : seoCopy.whatIsExam);
   const citizenshipGuide = getCitizenshipGuideContent(config.slug);
   const practiceOptionsCompared = getPracticeOptionsCompared(config.slug);
+  const editorialBundle = getMockEditorialBundle(config.slug);
   const missCohort = await getPublicMissCohort(config.slug);
   const showHeroAccessCta =
     Boolean(accessState) && config.status !== "coming_soon" && runnable && isMockPaywallEnabled();
@@ -490,7 +493,12 @@ export default async function MockExamPage({
 
         <MockExamWhatIsSection config={config} />
         <MockExamWhoForSection config={config} />
-        <MockExamHowToPrepareSection config={config} />
+        {editorialBundle?.howToPrepare ? null : (
+          <MockExamHowToPrepareSection config={config} />
+        )}
+        {editorialBundle ? (
+          <MockExamEditorialSection bundle={editorialBundle} config={config} />
+        ) : null}
         {config.slug === "cfa-level-1-readiness-check" ? (
           <ReportLayoutPreview />
         ) : (
@@ -514,6 +522,7 @@ export default async function MockExamPage({
               <DeckExamFactsSection
                 profile={examFactsProfile}
                 compact
+                hideDomainWeights={Boolean(editorialBundle?.replaceExamFactsDomainWeights)}
                 sessionQuestions={
                   config.slug === "cfa-level-1-readiness-check"
                     ? config.topics.map((topic) => ({

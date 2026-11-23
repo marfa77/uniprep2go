@@ -116,7 +116,7 @@ export const nicheGooglePageLeads: Partial<Record<(typeof nicheGooglePrioritySlu
   "sie-full-mock":
     "This free FINRA SIE practice test mirrors the Securities Industry Essentials gate exam for brokerage candidates who do not yet need a firm sponsor. Timed questions cover capital markets, products, trading, customer accounts, and prohibited activities — then the report shows which SIE domains to repair with Anki before you schedule Prometric.",
   "sie-quick-diagnostic":
-    "This shorter FINRA SIE diagnostic is for candidates who want a fast capital-markets and products check before committing to a full-length timed mock. Use the topic report to queue Anki repairs, then sit the full SIE mock when you are ready for exam-length pacing.",
+    "This shorter FINRA SIE diagnostic is for candidates who want a fast capital-markets and products check before committing to a full-length timed mock. Use the topic report to queue Anki repairs, then sit the [full 75-question SIE practice test](/mock-exams/sie-full-mock) when you are ready for exam-length pacing.",
   "series-7-readiness-check":
     "Use this free Series 7 readiness check after SIE to stress-test General Securities Representative judgment on equities, debt, options, packaged products, and customer suitability. It is built for sponsored candidates climbing the FINRA license ladder — not a recycled SIE quiz — so you can see which Series 7 topics still need daily drill.",
   "series-63-readiness-check":
