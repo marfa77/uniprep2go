@@ -17,6 +17,8 @@ import { DeckApkgPendingNotice } from "@/components/decks/deck-apkg-pending-noti
 import { DeckCompanionProductSection } from "@/components/decks/deck-companion-product-section";
 import { DeckExamVersionBlock } from "@/components/decks/deck-exam-version-block";
 import { DeckExamFactsSection } from "@/components/decks/deck-exam-facts-section";
+import { DeckEditorialSection } from "@/components/decks/deck-editorial-section";
+import { getDeckEditorialBundle } from "@/lib/deck-editorial";
 import { DeckHeroBuyBlock } from "@/components/decks/deck-hero-buy-block";
 import { DeckPositioningSection } from "@/components/decks/deck-positioning-section";
 import { DeckPassPackUpgradeSection } from "@/components/decks/deck-pass-pack-upgrade-section";
@@ -235,6 +237,7 @@ export default async function DeckPage({
     examFactsProfile ? VISIBLE_FAQ_COUNT_WITH_EXAM : VISIBLE_FAQ_COUNT,
   );
   const shortPitch = getDeckShortPitch(deck);
+  const deckEditorial = getDeckEditorialBundle(deck.slug);
   const productNoun = formatProductNoun(deck);
   const showPracticeMockSection = practiceMock && shouldShowDeckPracticeMockSection(deck.slug);
   const deckExamVersion = buildDeckExamVersionModel(deck, examFactsProfile);
@@ -760,6 +763,8 @@ export default async function DeckPage({
         {examFactsProfile ? (
           <DeckExamFactsSection deck={deck} profile={examFactsProfile} />
         ) : null}
+
+        {deckEditorial ? <DeckEditorialSection bundle={deckEditorial} /> : null}
 
         <CollapsibleDetails
           hint={deckMoreAboutHint(deck)}
