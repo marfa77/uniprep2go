@@ -1,6 +1,7 @@
 import type { Deck } from "@/lib/decks";
 import { getDeckPositioning } from "@/lib/deck-positioning";
 import { formatExamFocusedContent, formatProductNoun } from "@/lib/deck-page-copy";
+import { renderInlineMarkdown } from "@/lib/simple-markdown";
 
 type DeckPositioningSectionProps = {
   deck: Deck;
@@ -17,7 +18,9 @@ export function DeckPositioningSection({ deck }: DeckPositioningSectionProps) {
       <h2 className="text-2xl font-semibold tracking-tight">
         {productNoun === "PDF" ? "How this PDF compares" : `How this ${productNoun} compares`}
       </h2>
-      <p className="mt-3 max-w-3xl text-sm leading-7 text-[#4f493e]">{positioning.summaryProse}</p>
+      <p className="mt-3 max-w-3xl text-sm leading-7 text-[#4f493e]">
+        {renderInlineMarkdown(positioning.summaryProse)}
+      </p>
 
       <div className="mt-6 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
         <table className="w-full min-w-[720px] border-collapse text-left text-sm">
