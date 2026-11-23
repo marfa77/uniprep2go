@@ -10,6 +10,11 @@ import { gmatDeckEditorial } from "./gmat-focus-anki-deck";
 import { cemDeckEditorial } from "./cem-anki-deck";
 import { mricsQsDeckEditorial } from "./mrics-quantity-surveying-anki-deck";
 import { ptcbDeckEditorial } from "./ptcb-pharmacy-technician-anki-deck";
+import { greDeckEditorial } from "./gre-anki-deck";
+import { servsafeDeckEditorial } from "./servsafe-manager-anki-deck";
+import { epa608DeckEditorial } from "./hvac-epa-608-anki-deck";
+import { leedGaDeckEditorial } from "./leed-green-associate-anki-deck";
+import { sieDeckEditorial } from "./sie-exam-anki-deck";
 import { cdcpDeckEditorial } from "./cdcp-anki-deck";
 import { series63DeckEditorial } from "./series-63-anki-deck";
 import { cfpDeckEditorial } from "./cfp-certification-anki-deck";
@@ -35,6 +40,11 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "cem-anki-deck": cemDeckEditorial,
   "mrics-quantity-surveying-anki-deck": mricsQsDeckEditorial,
   "ptcb-pharmacy-technician-anki-deck": ptcbDeckEditorial,
+  "gre-anki-deck": greDeckEditorial,
+  "servsafe-manager-anki-deck": servsafeDeckEditorial,
+  "hvac-epa-608-anki-deck": epa608DeckEditorial,
+  "leed-green-associate-anki-deck": leedGaDeckEditorial,
+  "sie-exam-anki-deck": sieDeckEditorial,
   "cdcp-anki-deck": cdcpDeckEditorial,
   "series-63-anki-deck": series63DeckEditorial,
   "cfp-certification-anki-deck": cfpDeckEditorial,
