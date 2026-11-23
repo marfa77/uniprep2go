@@ -101,7 +101,7 @@ describe("buildMockExamVersionModel", () => {
     const model = buildMockExamVersionModel(config, getExamFactsProfileForDeck(config.linkedDeckSlug))!;
     expect(model.passRule).toMatch(/MPS/);
     expect(model.passRule).toContain("UniPrep2Go mock: 70% readiness target");
-    expect(model.version).toContain("2026");
+    expect(model.version).toContain("2027");
   });
 
   it("labels the SIE full mock as a 75-question diagnostic", () => {

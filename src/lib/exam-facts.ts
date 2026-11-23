@@ -1016,7 +1016,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "cfa-level-1",
     pageHeading: "CFA Level 1 Exam — Facts, Topic Weights & Prep",
     intro:
-      "The CFA Level 1 exam is administered by CFA Institute for investment professionals. This page summarizes structure, 2026 topic weights, and independent UniPrep2Go study products (not official CFA Institute material).",
+      "The CFA Level 1 exam is administered by CFA Institute for investment professionals. This page summarizes structure, the 2027 topic weights read on cfainstitute.org on 23 November 2026, and independent UniPrep2Go study products (not official CFA Institute material).",
     exam_facts: {
       exam_name: "CFA Level 1",
       administered_by: "CFA Institute",
@@ -1026,7 +1026,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
         "4 hours 30 minutes total — two 135-minute sessions of 90 questions each, optional break",
       passing_score: "No fixed passing score published; CFA Institute sets the MPS each cycle",
       delivery: "Computer-based at Prometric test centers",
-      outline_effective_date: "2026 Level I topic outline (CFA Institute)",
+      outline_effective_date: "2027 Level I topic outline (CFA Institute)",
       verify_at_url: "https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam",
     },
     official_sources: [
@@ -1040,19 +1040,19 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
     ],
     domain_weights: [
-      { domain: "Ethical and Professional Standards", weight: "15–20%" },
-      { domain: "Quantitative Methods", weight: "6–9%" },
+      { domain: "Ethical and Professional Standards", weight: "10–15%" },
+      { domain: "Quantitative Methods", weight: "11–14%" },
       { domain: "Economics", weight: "6–9%" },
       { domain: "Financial Statement Analysis", weight: "11–14%" },
-      { domain: "Corporate Issuers", weight: "6–9%" },
-      { domain: "Equity Investments", weight: "11–14%" },
+      { domain: "Corporate Finance", weight: "6–9%" },
+      { domain: "Equities", weight: "11–14%" },
       { domain: "Fixed Income", weight: "11–14%" },
-      { domain: "Derivatives", weight: "5–8%" },
-      { domain: "Alternative Investments", weight: "7–10%" },
-      { domain: "Portfolio Management", weight: "8–12%" },
+      { domain: "Derivatives and Risk Management", weight: "6–9%" },
+      { domain: "Alternative Investments", weight: "6–9%" },
+      { domain: "Portfolio Construction", weight: "8–12%" },
     ],
     high_yield_facts: [
-      "Ethics and Professional Standards is heavily weighted and can determine pass/fail for borderline candidates.",
+      "In the 2027 Level I outline, Ethical and Professional Standards is 10–15%, down from 15–20%. Quantitative Methods is 11–14%, up from 6–9%.",
       "FIFO assumes the first units purchased are sold first; LIFO is not permitted under IFRS.",
       "Duration measures the sensitivity of a bond's price to a change in yield.",
       "The CAPM relates expected return to systematic risk (beta).",
@@ -1065,7 +1065,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What are the CFA Level 1 topic weights?",
-        a: "Ten topics ranging from 5–8% (Derivatives) to 15–20% (Ethics); see cfainstitute.org for the current cycle.",
+        a: "2027 Level I weights, read on cfainstitute.org on 23 November 2026: Ethical and Professional Standards 10–15%, Quantitative Methods 11–14%, Economics 6–9%, Financial Statement Analysis 11–14%, Corporate Finance 6–9%, Equities 11–14%, Fixed Income 11–14%, Derivatives and Risk Management 6–9%, Alternative Investments 6–9%, Portfolio Construction 8–12%.",
       },
       {
         q: "Is there a fixed passing score for CFA Level 1?",

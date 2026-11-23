@@ -166,7 +166,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
 
 export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
-    "Cards are short cases, not definitions: apply Standard III(C) to an unsolicited trade, convert LIFO to FIFO, price a callable bond with effective duration, or decide whether a 15% depreciation improves the trade balance. Ethics has 58 cards because it is 15-20% of the exam. Use the 60-question readiness check (free 25-question version) for topic scoring, then filter the deck to your weakest topics.",
+    "Cards are short cases, not definitions: apply Standard III(C) to an unsolicited trade, convert LIFO to FIFO, price a callable bond with effective duration, or decide whether a 15% depreciation improves the trade balance. Ethics still has 58 cards, sized for the old 15-20% weight. The 2027 exam weight is 10-15%, and this deck was not rebuilt for that shift. Use the 60-question readiness check (free 25-question version) for topic scoring, then filter the deck to your weakest topics.",
   "cfa-level-1-formula-reference-2026":
     "221 formulas grouped by the 2026 learning modules — FSA and Fixed Income (36 each), Quant (31), Equity (26), Portfolio Management (22), Economics and Derivatives (20 each), Alternatives (16), Corporate Issuers (14) — plus all 22 Standards. Every row says when to use the formula and names the exam trap. The 80-question drill tests see-the-formula/name-the-concept recall. The 348-card Anki deck is a separate scenario deck weighted to the 2026 topic ranges, for daily recall after you look things up here.",
   "frm-part-1-anki-deck":
@@ -1110,7 +1110,7 @@ Candidates confuse CRAH vs CRAC, mix UPS topology tiers with marketing “N+1”
 Accredited EPI CDCP training is mandatory on the official exam path. This deck is independent spaced-repetition drill — not EXIN or EPI exam material.`,
   "cfa-level-1-anki-deck": `### What is inside
 
-348 cards weighted to the 2026 CFA Institute topic ranges: Ethics 58, Equity 45, Financial Statement Analysis 42, Fixed Income 42, Portfolio Management 33, Alternatives 30, Quantitative Methods 26, Economics 26, Corporate Issuers 24 and Derivatives 22. Every front is a short case or calculation, never a bare "What is X?". Every back explains the rule, works a number and names the mistake that costs points; 150 cards add a typeset formula.
+348 cards still counted on the 2026 topic ranges: Ethics 58, Equities 45, Financial Statement Analysis 42, Fixed Income 42, Portfolio Construction 33, Alternative Investments 30, Quantitative Methods 26, Economics 26, Corporate Finance 24 and Derivatives and Risk Management 22. The 2027 exam weights differ (Ethics 10–15%, Quantitative Methods 11–14%), and the file was not rebuilt for that shift. Every front is a short case or calculation, never a bare "What is X?". Every back explains the rule, works a number and names the mistake that costs points; 150 cards add a typeset formula.
 
 Ethics cards apply each Standard from I(A) to VII(B), the decision framework and GIPS to short cases. FSA cards convert LIFO to FIFO, capitalise versus expense and read cash-flow statements. Fixed Income works yields, duration, convexity and credit spreads; Equity runs DDM, multiples, margin and order types; Derivatives covers forward pricing, put-call parity and swaps at Level I depth.
 

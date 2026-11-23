@@ -129,16 +129,16 @@ export type PlannedDeck = BaseDeck & {
 export type Deck = CatalogAvailableDeck | PlannedDeck;
 
 export const cfaLevelOneTopics: TopicCoverage[] = [
-  { name: "Ethical and Professional Standards", examWeight: "15-20%", cards: "58" },
-  { name: "Equity Investments", examWeight: "11-14%", cards: "45" },
+  { name: "Ethical and Professional Standards", examWeight: "10-15%", cards: "58" },
+  { name: "Equities", examWeight: "11-14%", cards: "45" },
   { name: "Financial Statement Analysis", examWeight: "11-14%", cards: "42" },
   { name: "Fixed Income", examWeight: "11-14%", cards: "42" },
-  { name: "Portfolio Management", examWeight: "8-12%", cards: "33" },
-  { name: "Alternative Investments", examWeight: "7-10%", cards: "30" },
-  { name: "Quantitative Methods", examWeight: "6-9%", cards: "26" },
+  { name: "Portfolio Construction", examWeight: "8-12%", cards: "33" },
+  { name: "Alternative Investments", examWeight: "6-9%", cards: "30" },
+  { name: "Quantitative Methods", examWeight: "11-14%", cards: "26" },
   { name: "Economics", examWeight: "6-9%", cards: "26" },
-  { name: "Corporate Issuers", examWeight: "6-9%", cards: "24" },
-  { name: "Derivatives", examWeight: "5-8%", cards: "22" },
+  { name: "Corporate Finance", examWeight: "6-9%", cards: "24" },
+  { name: "Derivatives and Risk Management", examWeight: "6-9%", cards: "22" },
 ];
 
 export const cfaLevelTwoTopics: TopicCoverage[] = [
@@ -433,7 +433,7 @@ const rawDecks: Deck[] = [
       {
         question: "What is included in the CFA Level 1 Anki deck?",
         answer:
-          "348 Anki cards weighted to the 2026 topic ranges: Ethics 58, Equity 45, FSA 42, Fixed Income 42, Portfolio Management 33, Alternatives 30, Quant 26, Economics 26, Corporate Issuers 24, Derivatives 22. Every front is a short case or calculation (for example, applying Standard III(C) to an unsolicited trade), every back gives a worked example and the common mistake, and 150 cards add a typeset formula. A linked 60-question timed mock (free 25-question version) scores your weak topics first.",
+          "348 Anki cards, still counted on the 2026 topic ranges: Ethics 58, Equities 45, FSA 42, Fixed Income 42, Portfolio Construction 33, Alternative Investments 30, Quant 26, Economics 26, Corporate Finance 24, Derivatives and Risk Management 22. The 2027 exam weights differ, and this file was not rebuilt. Every front is a short case or calculation (for example, applying Standard III(C) to an unsolicited trade), every back gives a worked example and the common mistake, and 150 cards add a typeset formula. A linked 60-question timed mock (free 25-question version) scores your weak topics on the 2027 weights.",
       },
       {
         question: "Does the deck cover the Standards of Practice or only formulas?",
