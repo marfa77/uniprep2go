@@ -212,7 +212,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         heading: "High-traffic diagnostics on this path",
         body:
-          "Start with the [ARDMS SPI practice test](/mock-exams/ardms-spi-readiness-check) if physics is your bottleneck, the [NBRC TMC readiness check](/mock-exams/nbrc-tmc-readiness-check) before the 2027 RT exam transition, the [medical scribe practice test](/mock-exams/medical-scribe-readiness-check) for documentation pathways, or the [ABO optician practice test](/mock-exams/abo-optician-readiness-check) for NOCE themes. Pair each mock with the matching Anki deck after the topic report.",
+          "Pharmacy technician candidates: start with the [PTCB practice test](/mock-exams/ptcb-pharmacy-technician-mock) (January 2026 outline, domain-weighted scoring). Otherwise try the [ARDMS SPI practice test](/mock-exams/ardms-spi-readiness-check) if physics is your bottleneck, the [NBRC TMC readiness check](/mock-exams/nbrc-tmc-readiness-check) before the 2027 RT exam transition, the [medical scribe practice test](/mock-exams/medical-scribe-readiness-check) for documentation pathways, or the [ABO optician practice test](/mock-exams/abo-optician-readiness-check) for NOCE themes. Pair each mock with the matching Anki deck after the topic report.",
       },
     ],
     faqs: [
@@ -655,7 +655,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         heading: "Which licensing practice tests belong here?",
         body:
-          "Securities candidates start with SIE then add the Series exam that matches their registration goal. Insurance and food-safety candidates use the matching readiness checks. These mocks are independent diagnostics — FINRA, state DOI, and ServSafe administer official exams.",
+          "Securities candidates start with the [full 75-question SIE practice test](/mock-exams/sie-full-mock), then add the Series exam that matches their registration goal. Insurance and food-safety candidates use the matching readiness checks. These mocks are independent diagnostics — FINRA, state DOI, and ServSafe administer official exams.",
       },
       {
         heading: "How to use these free licensing practice tests",

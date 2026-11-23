@@ -57,6 +57,13 @@ export default function HowToImportPage() {
         </h1>
 
         <p className="mt-6 text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
+        <p className="mt-4 text-base leading-7 text-[#4f493e]">
+          After import, benchmark recall with the{" "}
+          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
+            CFA Level 1 practice test
+          </Link>{" "}
+          (25 questions free, no signup) before you book the official sitting.
+        </p>
 
         <ol className="mt-10 space-y-6">
           {steps.map((step, index) => (

@@ -11,7 +11,7 @@ export const finraOptionsQuestionsPost: BlogPostDraft = {
   clusterId: "finra-sie",
   relatedSlugs: ["finra-sie-exam-prep-why-people-fail"],
   intro:
-    "**Options questions are among the highest-weighted trap categories on the FINRA SIE and Series 7 — and where most first-time candidates bleed points.** Not because the math is hard (breakeven is strike ± premium), but because they misread “short,” mix call formulas into put stems, or forget the 100-share multiplier. FINRA writes these items to reward careful reading, not a memorized formula sheet. This guide gives a four-step reading protocol, formulas for every basic position, six traps that show up on nearly every form, and a practice loop that pairs with UniPrep2Go’s free timed SIE mock.",
+    "**Options questions are among the highest-weighted trap categories on the FINRA SIE and Series 7 — and where most first-time candidates bleed points.** Not because the math is hard (breakeven is strike ± premium), but because they misread “short,” mix call formulas into put stems, or forget the 100-share multiplier. FINRA writes these items to reward careful reading, not a memorized formula sheet. This guide gives a four-step reading protocol, formulas for every basic position, six traps that show up on nearly every form, and a practice loop that pairs with the [full 75-question SIE practice test](/mock-exams/sie-full-mock).",
   mockSlug: "sie-full-mock",
   deckSlug: "sie-exam-anki-deck",
   cta: {

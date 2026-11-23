@@ -13,7 +13,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cfa-level-1-anki-deck":
     "348 scenario and calculation cards weighted to the 2026 CFA Level 1 topic ranges — Ethics is the largest section — each with a worked example and the common mistake.",
   "cfa-level-1-formula-reference-2026":
-    "48-page 2026 formula reference: 221 typeset formulas with when to use each and the exam trap, 146 definitions, all 22 Standards, and an 80-question recall drill with answer key.",
+    "48-page 2026 formula reference: 221 typeset formulas with when to use each and the exam trap, 146 definitions, all 22 Standards, and an 80-question recall drill — pair with the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) for timed topic scores.",
   "cfa-level-2-anki-deck":
     "495 vignette cards with typeset formulas. {PRICE} once. Kaplan Schweser CFA Level II flashcards are $159.",
   "cfa-level-2-formula-reference-2026":
@@ -21,7 +21,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "cat4-level-d-anki-deck-printable-pdf":
     "200 Anki cards + 49-page PDF for CAT4 Level D verbal and quantitative subtests (Year 7) — not the spatial or figure batteries.",
   "frm-part-1-anki-deck":
-    "FRM Part 1 Anki is $9.99 one-time — not the CFA Level 1 Pass Pack ($29) and not the CFA Level 2 Anki deck ($29). 444 cards across FRM Part 1 foundations, quant, markets, and valuation. The free start is 25 questions. The full timed readiness check is 50 questions.",
+    "FRM Part 1 Anki is $9.99 one-time — not the CFA Level 1 Pass Pack ($29) and not the CFA Level 2 Anki deck ($29). 444 cards across FRM Part 1 foundations, quant, markets, and valuation. Benchmark gaps on the [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check) (25 free, then 50 timed).",
   "bench-energy-metal-trader-anki-deck":
     "202 metals-desk cards: LME, cash/3M carry, contango/backwardation, base and precious metals vocabulary.",
   "sie-exam-anki-deck":
@@ -43,7 +43,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "sat-anki-deck":
     "$11 / 160 unique Digital SAT cards (88 Reading and Writing + 72 Math) + 49-question / 70-minute timed check (free 25-question version) scored on both official axes. Live Gumroad .apkg — not waitlist.",
   "ptcb-pharmacy-technician-anki-deck":
-    "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — pairs with the 2026 printable study guide PDF.",
+    "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — drill after the [PTCB practice test](/mock-exams/ptcb-pharmacy-technician-mock) scores your weak domains.",
   "belgium-flanders-mo-anki-deck":
     "220 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $19 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. Not NT2 language vocab.",
   "luxembourg-vivre-ensemble-anki-deck":
@@ -61,7 +61,9 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "nha-cpct-anki-deck":
     "240 NHA CPCT/A cards for ADLs/patient care, safety/infection, phlebotomy+EKG text, and professional practice — plus a 120-question / 120-minute readiness check (free 25-question version) drawn from the same 240-item bank. Official exam is 100 scored + 20 pretest / 2 hours / scaled 390.",
   "ptcb-study-guide-2026":
-    "PTCB outline 2026 printable blueprint — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets + free 25Q / full 90Q online mock; Anki alone or $24 Pass Pack.",
+    "PTCB outline 2026 printable blueprint — DSCSA-weighted Federal Requirements, 80-question exam, cheat sheets; run the [timed PTCB practice test](/mock-exams/ptcb-pharmacy-technician-mock) (25Q free / 90Q full) before exam day; Anki alone or $24 Pass Pack.",
+  "ptcb-2026-pass-pack":
+    "Anki deck plus the January 2026 outline study guide PDF ($24) — score weak domains first on the [PTCB practice test](/mock-exams/ptcb-pharmacy-technician-mock) (25 questions free, then 90 timed).",
   "mrics-quantity-surveying-anki-deck":
     "Focused MRICS QS APC Anki — NRM, JCT/NEC, cost planning — plus a 50-question QS competency mock (free 25-question version).",
   "mrics-anki-deck":
@@ -286,7 +288,7 @@ export const positioningOverrides: Partial<
       "60-question CFA Level 1 readiness check (free 25-question version) with topic scoring",
     ],
     summaryProse:
-      "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1, as long as each card makes you apply the rule. Ethics, FSA, Equity and Fixed Income carry about half the exam, so they carry about half the deck. Run the free mock to see where your daily 25-card session should focus.",
+      "Fewer than 400 weighted flashcards beat a 3,000-card dump for CFA Level 1, as long as each card makes you apply the rule. Ethics, FSA, Equity and Fixed Income carry about half the exam, so they carry about half the deck. Run the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) against **2027 topic weights** to see where your daily 25-card session should focus.",
   },
   "cfa-level-2-anki-deck": {
     ourEdge: [

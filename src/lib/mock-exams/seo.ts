@@ -21,6 +21,15 @@ import { headTermFaqForSchema } from "./head-term-program";
 import { questionCountFaqForSchema } from "./mock-question-count-aeo";
 import { fitMetaDescription, fitSeoTitle, SEO_META_DESCRIPTION_MAX, SEO_TITLE_MAX } from "../seo";
 import { absoluteUrl, siteConfig } from "../site";
+import {
+  getMockEditorialDropFaqQuestions,
+  getMockEditorialFaqs,
+  getMockEditorialMetaDescriptionOverride,
+} from "./editorial";
+
+function normalizeFaqQuestionKey(question: string): string {
+  return question.trim().toLowerCase().replace(/[^a-z0-9]+/g, " ");
+}
 
 type MockSeoProfile = {
   title: string;
@@ -139,11 +148,6 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     intro:
       "An SIE practice test on UniPrep2Go runs **75 timed questions in 105 minutes** (25-question free diagnostic available first) across FINRA’s four sections: knowledge of capital markets, products and risks, trading/customer accounts, and regulatory framework. FINRA’s official SIE is **80 items (75 scored + 5 pretest) in 105 minutes** with passing score **70 on an equated scale** (finra.org, checked 19 Nov 2026). Start with the [25-question SIE quick diagnostic](/mock-exams/sie-quick-diagnostic) if you need a shorter first pass, then drill the [$9.99 SIE Anki deck](/decks/sie-exam-anki-deck) and graduate to [Series 7](/mock-exams/series-7-readiness-check) after firm sponsorship.",
     examFaqs: [
-      {
-        question: "Is the FINRA SIE practice test free?",
-        answer:
-          "Your first timed attempt is free (25-question diagnostic or full 75-question session depending on entry). Unlimited full mocks are $19 Mock Pass.",
-      },
       {
         question: "What is the SIE passing score?",
         answer:
@@ -1931,6 +1935,10 @@ export function buildMockSeoTitle(config: MockExamConfig) {
 }
 
 export function buildMockSeoDescription(config: MockExamConfig) {
+  const editorialMeta = getMockEditorialMetaDescriptionOverride(config.slug);
+  if (editorialMeta) {
+    return fitMetaDescription(editorialMeta);
+  }
   const raw = getMockSeoProfile(config).description;
   const body = MOCK_META_DESCRIPTION_FROZEN.has(config.slug)
     ? raw
@@ -2010,10 +2018,15 @@ export function buildMockExamFaqs(config: MockExamConfig) {
     : "Questions are original UniPrep2Go practice items aligned to published topic outlines — not leaked official exam questions.";
   const headTermFaq = headTermFaqForSchema(config);
   const qCountFaq = questionCountFaqForSchema(config);
+  const editorialFaqs = getMockEditorialFaqs(config.slug);
+  const editorialDropKeys = new Set(
+    getMockEditorialDropFaqQuestions(config.slug).map(normalizeFaqQuestionKey),
+  );
 
   const faqs = [
     ...(headTermFaq ? [headTermFaq] : []),
     ...(qCountFaq ? [qCountFaq] : []),
+    ...editorialFaqs,
     ...buildMockSearchFaqs(config),
     {
       question: `Where can I take a ${profile.practiceTestLabel} online?`,
@@ -2036,7 +2049,8 @@ export function buildMockExamFaqs(config: MockExamConfig) {
   ];
   const seen = new Set<string>();
   return faqs.filter((faq) => {
-    const key = faq.question.trim().toLowerCase().replace(/[^a-z0-9]+/g, " ");
+    const key = normalizeFaqQuestionKey(faq.question);
+    if (editorialDropKeys.has(key)) return false;
     if (seen.has(key)) return false;
     seen.add(key);
     return true;

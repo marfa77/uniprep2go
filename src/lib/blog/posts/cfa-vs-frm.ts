@@ -87,7 +87,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "The key difference is destination, not format. CFA Level 1 teaches you to read a balance sheet and calculate WACC. FRM Part 1 teaches VaR and credit default probability. Investment banking or asset management → CFA language. Risk analytics, treasury, or model validation → FRM language.",
+          text: "The key difference is destination, not format. CFA Level 1 teaches you to read a balance sheet and calculate WACC. FRM Part 1 teaches VaR and credit default probability. Investment banking or asset management → CFA language. Risk analytics, treasury, or model validation → FRM language. Before you commit fees, run the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) or [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check) for topic-scored diagnostics.",
         },
       ],
     },

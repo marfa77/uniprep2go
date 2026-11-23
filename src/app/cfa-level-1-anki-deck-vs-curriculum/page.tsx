@@ -47,6 +47,13 @@ export default async function ComparisonPage() {
         </h1>
 
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
+        <p className="mt-4 max-w-3xl text-base leading-7 text-[#4f493e]">
+          Run the{" "}
+          <Link className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline" href="/mock-exams/cfa-level-1-readiness-check">
+            CFA Level 1 practice test
+          </Link>{" "}
+          after curriculum blocks to see which 2027 topic weights still score below your readiness target.
+        </p>
 
         <div className="mt-10 overflow-x-auto rounded-3xl border border-[#18140f]/15 bg-[#fffaf0]/70">
           <table className="w-full min-w-[640px] border-collapse text-left">

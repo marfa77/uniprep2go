@@ -3,15 +3,15 @@ import type { BlogPostDraft } from "../types";
 export const finraSieExamPrepPost: BlogPostDraft = {
   slug: "finra-sie-exam-prep-why-people-fail",
   title: "FINRA SIE Exam Prep: Why Most People Fail and How to Avoid It",
-  titleTag: "SIE Exam Fail Rate 2026 | Why People Fail + How to Pass",
+  titleTag: "SIE Exam Prep | Why People Fail + How to Pass",
   metaDescription:
-    "SIE exam pass rate is ~70% with retakes — first-timers fail for the same three reasons. What the exam tests, a 4-week study plan, plus 75Q timed mock (free 25-question version).",
+    "Why first-time SIE candidates fail: math gaps, term memorization without understanding, and pacing. What the exam tests, a 4-week study plan, plus 75Q timed mock (free 25-question version).",
   publishedAt: "2026-07-27",
   eyebrow: "FINRA SIE · Securities licensing",
   clusterId: "finra-sie",
   relatedSlugs: ["finra-options-questions-read-without-getting-tricked"],
   intro:
-    "The FINRA Securities Industry Essentials (SIE) exam is the gatekeeper. Pass it, and you can register with a broker-dealer. Fail it, and you are stuck explaining to hiring managers why your resume has a gap. The pass rate hovers around **70%**, but that number is inflated by retakes. First-time pass rates are lower, and the people who fail usually fail for the same three reasons: they underestimated the math, they memorized terms without understanding them, and they ran out of time.",
+    "The FINRA Securities Industry Essentials (SIE) exam is the gatekeeper. Pass it, and you can register with a broker-dealer. Fail it, and you are stuck explaining to hiring managers why your resume has a gap. FINRA publishes a **passing score of 70** on the scored items, not a candidate pass-rate statistic on the public SIE page. The people who fail usually fail for the same three reasons: they underestimated the math, they memorized terms without understanding them, and they ran out of time. For timed practice aligned to FINRA section weights, use the [full 75-question SIE practice test](/mock-exams/sie-full-mock).",
   mockSlug: "sie-full-mock",
   deckSlug: "sie-exam-anki-deck",
   cta: {

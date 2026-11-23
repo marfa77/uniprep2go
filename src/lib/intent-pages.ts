@@ -72,7 +72,7 @@ export const intentPages: IntentPage[] = [
       },
       {
         title: "Where this deck fits",
-        body: "Use the deck after reading or watching a topic explanation, then let Anki schedule reviews so formulas, Greeks, VaR concepts, credit risk terms, and market mechanics stay fresh between longer study sessions.",
+        body: "Use the deck after reading or watching a topic explanation, then let Anki schedule reviews so formulas, Greeks, VaR concepts, credit risk terms, and market mechanics stay fresh between longer study sessions. Start with the free [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check) so daily reviews target your weakest topic.",
       },
     ],
     faqs: [

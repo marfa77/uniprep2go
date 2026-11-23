@@ -11,6 +11,7 @@ type DeckExamFactsSectionProps = {
    * questions this check draws. Used when a separate topic-outline list would repeat it.
    */
   sessionQuestions?: Array<{ domain: string; questions: number }>;
+  hideDomainWeights?: boolean;
 };
 
 export function DeckExamFactsSection({
@@ -18,6 +19,7 @@ export function DeckExamFactsSection({
   profile: profileProp,
   compact = false,
   sessionQuestions,
+  hideDomainWeights = false,
 }: DeckExamFactsSectionProps) {
   const profile =
     profileProp ?? (deck ? getExamFactsProfileForDeck(deck.slug) : null);
@@ -59,7 +61,9 @@ export function DeckExamFactsSection({
           ))}
       </dl>
 
-      {profile.domain_weights.length > 0 && deck?.slug !== "cfa-level-1-anki-deck" ? (
+      {profile.domain_weights.length > 0 &&
+      !hideDomainWeights &&
+      deck?.slug !== "cfa-level-1-anki-deck" ? (
         <div className="mt-8">
           <h3 className="text-lg font-semibold tracking-tight">
             {sessionQuestions ? "Topics, official weights, and this check" : "Knowledge domains and weights"}
