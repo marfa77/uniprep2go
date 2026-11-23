@@ -60,4 +60,11 @@ describe("deck editorial blocks", () => {
     expect(deckText("cfa-level-1-anki-deck").join(" ")).toContain("Ethical and Professional Standards (10–15%)");
     expect(deckText("mrics-anki-deck").join(" ")).toContain("60-minute interview");
   });
+
+  it("NBRC deck block maps cards to the RT outline areas", () => {
+    const text = deckText("nbrc-tmc-anki-deck").join(" ");
+    expect(text).toContain("Patient Data");
+    expect(text).toContain("Initiation and Modification of Interventions");
+    expect(text).toContain("/blog/nbrc-tmc-to-rt-exam-2027");
+  });
 });

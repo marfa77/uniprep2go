@@ -20,6 +20,7 @@ import { leedGreenAssociateEditorial } from "./leed-green-associate-readiness-ch
 import { cfpEditorial } from "./cfp-certification-readiness-check";
 import { epa608Editorial } from "./epa-608-readiness-check";
 import { enrolledAgentEditorial } from "./enrolled-agent-readiness-check";
+import { nbrcTmcEditorial } from "./nbrc-tmc-readiness-check";
 
 export type { MockEditorialBundle, EditorialFaq, EditorialSection, EditorialSource } from "./types";
 export { resolveWeightTableQuestions } from "./resolve-weight-table";
@@ -47,6 +48,7 @@ const ENRICHMENT_SLUGS = [
   "cfp-certification-readiness-check",
   "epa-608-readiness-check",
   "enrolled-agent-readiness-check",
+  "nbrc-tmc-readiness-check",
 ] as const;
 
 export type EnrichmentMockSlug = (typeof ENRICHMENT_SLUGS)[number];
@@ -73,6 +75,7 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "cfp-certification-readiness-check": cfpEditorial,
   "epa-608-readiness-check": epa608Editorial,
   "enrolled-agent-readiness-check": enrolledAgentEditorial,
+  "nbrc-tmc-readiness-check": nbrcTmcEditorial,
 };
 
 export function getMockEditorialBundle(slug: string): MockEditorialBundle | null {

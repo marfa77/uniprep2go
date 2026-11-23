@@ -75,6 +75,7 @@ describe("mock exam editorial enrichment", () => {
     expect(bundle!.replaceExamFactsDomainWeights).toBe(true);
   });
 });
+
 const BATCH_2_SLUGS = [
   "series-7-readiness-check",
   "series-63-readiness-check",
@@ -237,5 +238,41 @@ describe("mock exam editorial enrichment — batch 2", () => {
     expect(all).toContain("Process — 41%");
     expect(all).toContain("Business Environment — 26%");
     expect(all).toContain("up to three times");
+  });
+});
+
+describe("NBRC TMC → RT transition editorial (WP0)", () => {
+  const bundle = () => getMockEditorialBundle("nbrc-tmc-readiness-check")!;
+  const text = () =>
+    [
+      bundle().howToPrepare ?? "",
+      ...bundle().sections.flatMap((s) => [...s.paragraphs, ...(s.bullets ?? [])]),
+      ...bundle().faqs.map((f) => f.answer),
+    ].join(" ");
+
+  it("states the official transition dates and RT format", () => {
+    const all = text();
+    for (const fact of ["15 Dec 2026", "31 Dec 2026", "4 Jan 2027", "31 Dec 2027", "160 are scored", "120 days", "$360", "$300"]) {
+      expect(all, fact).toContain(fact);
+    }
+  });
+
+  it("renders transition headings without 2026 and merges FAQs into JSON-LD", () => {
+    const headings = bundle().sections.map((s) => s.heading);
+    expect(headings).toContain("When does the TMC end, and what replaces it?");
+    expect(headings).toContain("If you have already passed the TMC");
+    expect(headings.every((h) => !h.includes("2026"))).toBe(true);
+    const config = getMockExamConfig("nbrc-tmc-readiness-check")!;
+    const jsonLd = buildMockExamPageJsonLd(config);
+    const faqEntity = jsonLd["@graph"].find(
+      (node) => typeof node === "object" && node !== null && "@type" in node && node["@type"] === "FAQPage",
+    ) as { mainEntity: Array<{ name: string }> } | undefined;
+    for (const faq of bundle().faqs) {
+      expect(faqEntity?.mainEntity.map((q) => q.name)).toContain(faq.question);
+    }
+  });
+
+  it("is honest that the check is not an RT Examination simulation", () => {
+    expect(text()).toContain("**not** an RT Examination simulation");
   });
 });

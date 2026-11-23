@@ -66,6 +66,7 @@ describe("blog guides", () => {
       "servsafe-manager-exam-study-guide-2026",
       "finra-sie-exam-prep-why-people-fail",
       "finra-exam-retake-waiting-period-2027",
+      "nbrc-tmc-to-rt-exam-2027",
     ]);
 
     for (const post of posts) {
@@ -224,6 +225,8 @@ describe("blog guides", () => {
       "finra-options-questions-read-without-getting-tricked",
       "finra-sie-exam-prep-why-people-fail",
     ]);
+
+    expect(getBlogPostsByCluster("nbrc").map((post) => post.slug)).toEqual(["nbrc-tmc-to-rt-exam-2027"]);
 
     const florida = getBlogPostBySlug("servsafe-manager-florida-requirements-2026");
     expect(getRelatedBlogPosts(florida!).map((post) => post.slug)).toContain(
@@ -469,6 +472,9 @@ describe("blog guides", () => {
     expect(getBlogPostsForMockSlug("belgium-wallonie-citoyennete-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("luxembourg-vivre-ensemble-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("ccse-espana-readiness-check")).toHaveLength(1);
+    expect(getBlogPostsForMockSlug("nbrc-tmc-readiness-check").map((p) => p.slug)).toEqual([
+      "nbrc-tmc-to-rt-exam-2027",
+    ]);
     expect(getBlogPostsForDeckSlug("celi-b1-italian-anki-deck").map((p) => p.slug)).toContain(
       "italy-citizenship-b1-test-cils-celi-not-civics",
     );

@@ -1142,6 +1142,25 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "nbrc-tmc-to-rt-exam-2027": {
+    // Reuses existing files (no new download); regenerate with a respiratory-care photo via the Pexels script.
+    hero: {
+      id: "anki-shelf-life-hero",
+      alt: "Calendar and study books on a desk for tracking exam syllabus updates",
+      caption: "TMC applications close 15 Dec 2026; the RT Examination starts 4 Jan 2027",
+      queries: ["respiratory therapist hospital ventilator", "respiratory therapy equipment hospital"],
+      mustInclude: ["respiratory", "ventilator", "hospital", "therapist"],
+    },
+    inline: [
+      {
+        id: "exam-prep-tools-hub-hero",
+        alt: "Desk with laptop, notebook, and flashcards for professional exam prep comparison",
+        caption: "Use the free official RT practice exam alongside topic drills",
+        queries: ["nursing student studying notes laptop", "medical exam study desk notes"],
+        mustInclude: ["study", "notes", "laptop", "desk"],
+      },
+    ],
+  },
   "finra-sie-exam-prep-why-people-fail": {
     hero: {
       id: "finra-sie-hero",
