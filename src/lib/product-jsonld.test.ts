@@ -3,11 +3,14 @@ import { getCatalogDeckBySlug } from "./decks";
 import {
   buildCatalogItemListJsonLd,
   buildDeckPageJsonLd,
+  buildDeckEducationQuizJsonLd,
   buildProductJsonLd,
   buildProductOffer,
   buildSiteOrganizationJsonLd,
   getProductImages,
+  isDeckEducationQaEligible,
 } from "./product-jsonld";
+import { getDeckBySlug } from "./decks";
 import { applyPendingPriceToDeck, applyPriceRecordToDeck } from "./checkout-pricing";
 
 describe("product json-ld", () => {
@@ -46,11 +49,13 @@ describe("product json-ld", () => {
   it("omits product schema when price is pending", () => {
     expect(buildProductOffer(pendingDeck)).toBeNull();
     expect(buildProductJsonLd(pendingDeck)).toBeNull();
-    expect(buildDeckPageJsonLd(pendingDeck)["@graph"].map((node) => node["@type"])).toEqual([
-      "WebPage",
-      "FAQPage",
-      "BreadcrumbList",
-    ]);
+    const graphTypes = buildDeckPageJsonLd(pendingDeck)["@graph"].map((node) => node["@type"]);
+    expect(graphTypes).toEqual(
+      expect.arrayContaining(["WebPage", "FAQPage", "BreadcrumbList"]),
+    );
+    if (isDeckEducationQaEligible(pendingDeck)) {
+      expect(graphTypes).toContain("Quiz");
+    }
   });
 
   it("requires at least one image for merchant product schema", () => {
@@ -101,6 +106,50 @@ describe("product json-ld", () => {
         expect.objectContaining({ position: 3, name: pricedDeck.shortName }),
       ]),
     });
+  });
+
+  it("adds Education Q&A Quiz JSON-LD for eligible English finance decks", () => {
+    const series7 = getCatalogDeckBySlug("series-7-anki-deck");
+    if (!series7) {
+      throw new Error("Missing series-7 fixture");
+    }
+    const priced = applyPriceRecordToDeck(series7, {
+      amount: 19,
+      currency: "USD",
+      syncedAt: "2026-06-01T00:00:00.000Z",
+      source: "gumroad",
+    });
+    expect(isDeckEducationQaEligible(priced)).toBe(true);
+    const quiz = buildDeckEducationQuizJsonLd(priced);
+    expect(quiz).toMatchObject({
+      "@type": "Quiz",
+      hasPart: expect.arrayContaining([
+        expect.objectContaining({
+          "@type": "Question",
+          eduQuestionType: "Flashcard",
+          text: expect.any(String),
+        }),
+      ]),
+    });
+    const graph = buildDeckPageJsonLd(priced)["@graph"];
+    expect(graph.some((node) => node["@type"] === "Quiz")).toBe(true);
+  });
+
+  it("skips Education Q&A for PDF decks and non-eligible language decks", () => {
+    const pdf = getDeckBySlug("cfa-level-1-formula-reference-2026");
+    if (pdf) {
+      expect(isDeckEducationQaEligible(pdf)).toBe(false);
+    }
+    const french = getDeckBySlug("naturalisation-francaise-anki-deck");
+    if (french && french.status === "available") {
+      const priced = applyPriceRecordToDeck(french as typeof catalogDeck, {
+        amount: 9.99,
+        currency: "USD",
+        syncedAt: "2026-06-01T00:00:00.000Z",
+        source: "gumroad",
+      });
+      expect(isDeckEducationQaEligible(priced)).toBe(false);
+    }
   });
 
   it("publishes US-first organization context for search and LLMs", () => {

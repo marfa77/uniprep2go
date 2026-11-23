@@ -2,8 +2,8 @@ import { SimpleMarkdownBlock } from "@/lib/simple-markdown";
 import type { HubFaq } from "@/lib/hub-intros";
 import { renderInlineMarkdown } from "@/lib/simple-markdown";
 
-export function mergeHubFaqs(existing: HubFaq[], extra?: HubFaq[]): HubFaq[] {
-  if (!extra?.length) return existing;
+export function mergeHubFaqs(existing: readonly HubFaq[], extra?: readonly HubFaq[]): HubFaq[] {
+  if (!extra?.length) return [...existing];
   const seen = new Set(existing.map((faq) => faq.question.trim()));
   const merged = [...existing];
   for (const faq of extra) {
@@ -59,6 +59,18 @@ export type HubAboutSectionProps = {
   additionalFaqs?: HubFaq[];
 };
 
+/** Intro block only — FAQs are merged on the host page when one #faq section already exists. */
+export function HubAboutIntro({ introMarkdown }: { introMarkdown: string }) {
+  return (
+    <section className="mt-10" id="about-these-exams">
+      <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">About these exams</h2>
+      <div className="mt-4">
+        <IntroSections introMarkdown={introMarkdown} />
+      </div>
+    </section>
+  );
+}
+
 export function HubAboutSection({
   introMarkdown,
   pageFaqs = [],
@@ -68,12 +80,7 @@ export function HubAboutSection({
 
   return (
     <>
-      <section className="mt-10" id="about-these-exams">
-        <h2 className="text-2xl font-semibold tracking-tight text-[#18140f]">About these exams</h2>
-        <div className="mt-4">
-          <IntroSections introMarkdown={introMarkdown} />
-        </div>
-      </section>
+      <HubAboutIntro introMarkdown={introMarkdown} />
 
       {faqs.length > 0 ? (
         <section className="mt-12" id="hub-supplemental-faq">

@@ -2,7 +2,12 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { LlmFactsStrip } from "@/components/llm/llm-facts-strip";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { mergeHubFaqs } from "@/components/hubs/hub-about-section";
+import { MockExamsFamilyIndex } from "@/components/mock-exams/mock-exams-family-index";
 import { MockExamsHubCatalog } from "@/components/mock-exams/mock-exams-hub-catalog";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro } from "@/lib/hub-intros";
 import { OfficialSourceTrustStrip } from "@/components/official-source-trust";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -108,7 +113,9 @@ export const revalidate = 3600;
 export default function MockExamsIndexPage() {
   const mocks = getAllMockExams();
   const indexedCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
-  const hubFaqs = buildMockExamHubFaqs(indexedCount, mocks.length);
+  const hubIntro = getHubIntro("/mock-exams");
+  const baseHubFaqs = buildMockExamHubFaqs(indexedCount, mocks.length);
+  const hubFaqs = mergeHubFaqs(baseHubFaqs, hubIntro.faqs);
   const pageUrl = absoluteUrl("/mock-exams");
   const featured = buildFeaturedCards();
   const verticals = getVerticalSummaries();
@@ -139,6 +146,7 @@ export default function MockExamsIndexPage() {
           },
         })),
       },
+      buildHubBreadcrumbJsonLd("/mock-exams"),
     ],
   };
 
@@ -174,6 +182,7 @@ export default function MockExamsIndexPage() {
         </p>
         <OfficialSourceTrustStrip className="mt-6 max-w-3xl" />
         <LlmFactsStrip mockCount={mocks.length} variant="mock-index" />
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
 
         <Suspense
           fallback={
@@ -186,6 +195,8 @@ export default function MockExamsIndexPage() {
             verticals={verticals}
           />
         </Suspense>
+
+        <MockExamsFamilyIndex />
 
         <section className="mt-10">
           <h2 className="text-lg font-semibold">Pass Packs</h2>

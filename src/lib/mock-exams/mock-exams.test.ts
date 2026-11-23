@@ -905,21 +905,15 @@ describe("llm visibility", () => {
     expect(config).not.toBeNull();
 
     const graph = buildMockExamPageJsonLd(config!)["@graph"];
-    const course = graph.find((node) => node["@type"] === "Course");
     const breadcrumb = graph.find((node) => node["@type"] === "BreadcrumbList");
 
     expect(graph.map((node) => node["@type"])).toEqual([
       "WebPage",
       "Quiz",
-      "Course",
       "FAQPage",
       "BreadcrumbList",
     ]);
-    expect(course).toMatchObject({
-      "@id": "https://uniprep2go.study/mock-exams/cfa-level-1-readiness-check#course",
-      isAccessibleForFree: true,
-    });
-    expect(course?.teaches).toContain("Ethical and Professional Standards");
+    expect(graph.some((node) => node["@type"] === "Course")).toBe(false);
     expect(buildMockSeoDescription(config!)).toContain("60 questions, 90 minutes");
     expect(breadcrumb).toMatchObject({
       itemListElement: expect.arrayContaining([

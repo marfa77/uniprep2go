@@ -13,6 +13,10 @@ import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle, shouldIndexMockExam } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { mergeHubFaqs } from "@/components/hubs/hub-about-section";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro } from "@/lib/hub-intros";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { btnPrimary, btnSecondary, ledgerList } from "@/lib/ui-button-classes";
 
@@ -88,6 +92,26 @@ export default async function FinanceAnkiDecksPage() {
     .map((slug) => getMockExamConfig(slug))
     .filter((mock) => mock !== undefined);
 
+  const hubIntro = getHubIntro("/finance-anki-decks");
+  const legacyFaqs = [
+    {
+      question: "Should I buy the deck or take the mock first?",
+      answer:
+        "Take the free mock first. Use the topic report to decide whether Anki (or a formula PDF) is worth buying for your weak domains.",
+    },
+    {
+      question: "Are these official CFA / FINRA / GARP materials?",
+      answer:
+        "No. UniPrep2Go products are independent study aids aligned to published outlines — not endorsed by CFA Institute, FINRA, GARP, or ETS.",
+    },
+    {
+      question: "Which exam should I start with?",
+      answer:
+        "Brokerage entrants usually start with the free SIE mock. CFA / FRM candidates start with the matching readiness check, then the Level/Part Anki deck. MBA admissions candidates use GMAT Focus or GRE readiness checks before flashcards.",
+    },
+  ];
+  const hubFaqs = mergeHubFaqs(legacyFaqs, hubIntro.faqs);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -99,6 +123,16 @@ export default async function FinanceAnkiDecksPage() {
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
       buildCatalogItemListJsonLd(financeDecks),
+      {
+        "@type": "FAQPage",
+        "@id": `${absoluteUrl("/finance-anki-decks")}#faq`,
+        mainEntity: hubFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      },
+      buildHubBreadcrumbJsonLd("/finance-anki-decks"),
     ],
   };
 
@@ -147,6 +181,8 @@ export default async function FinanceAnkiDecksPage() {
             PTCB 2026 Pass Pack
           </Link>
         </div>
+
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
 
         <section className="mt-10 max-w-3xl" id="how-it-works">
           <h2 className="text-2xl font-semibold tracking-tight">How finance prep works here</h2>
@@ -200,28 +236,12 @@ export default async function FinanceAnkiDecksPage() {
         <section className="mt-12 max-w-3xl" id="faq">
           <h2 className="text-2xl font-semibold tracking-tight">Finance deck FAQ</h2>
           <dl className="mt-6 space-y-5">
-            <div>
-              <dt className="font-semibold tracking-tight">Should I buy the deck or take the mock first?</dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                Take the free mock first. Use the topic report to decide whether Anki (or a formula
-                PDF) is worth buying for your weak domains.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold tracking-tight">Are these official CFA / FINRA / GARP materials?</dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                No. UniPrep2Go products are independent study aids aligned to published outlines —
-                not endorsed by CFA Institute, FINRA, GARP, or ETS.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold tracking-tight">Which exam should I start with?</dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                Brokerage entrants usually start with the free SIE mock. CFA / FRM candidates start
-                with the matching readiness check, then the Level/Part Anki deck. MBA admissions
-                candidates use GMAT Focus or GRE readiness checks before flashcards.
-              </dd>
-            </div>
+            {hubFaqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-semibold tracking-tight">{faq.question}</dt>
+                <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
+              </div>
+            ))}
           </dl>
         </section>
 

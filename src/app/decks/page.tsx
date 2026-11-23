@@ -11,6 +11,9 @@ import { categoryLabels, formatDeckContentLabel } from "@/lib/decks";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro } from "@/lib/hub-intros";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { getVerticalSummaries } from "@/lib/mock-exams/hub-clusters";
 import { btnChip, ledgerList } from "@/lib/ui-button-classes";
@@ -46,6 +49,8 @@ export default async function DecksHubPage() {
   const groups = await getPricedDecksByCategory();
   const allDecks = groups.flatMap((group) => group.decks);
   const examPaths = getVerticalSummaries();
+  const hubIntro = getHubIntro("/decks");
+  const hubFaqs = hubIntro.faqs ?? [];
 
   const jsonLd = {
         "@context": "https://schema.org",
@@ -58,6 +63,20 @@ export default async function DecksHubPage() {
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
       buildCatalogItemListJsonLd(allDecks),
+      ...(hubFaqs.length > 0
+        ? [
+            {
+              "@type": "FAQPage" as const,
+              "@id": `${absoluteUrl("/decks")}#faq`,
+              mainEntity: hubFaqs.map((faq) => ({
+                "@type": "Question" as const,
+                name: faq.question,
+                acceptedAnswer: { "@type": "Answer" as const, text: faq.answer },
+              })),
+            },
+          ]
+        : []),
+      buildHubBreadcrumbJsonLd("/decks"),
     ],
   };
 
@@ -89,6 +108,8 @@ export default async function DecksHubPage() {
           </Link>
           .
         </p>
+
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
 
         <div className="mt-6 flex flex-wrap gap-3 text-sm">
           <Link className={btnChip} href="/mock-exams">
@@ -164,6 +185,20 @@ export default async function DecksHubPage() {
             </section>
           ) : null,
         )}
+
+        {hubFaqs.length > 0 ? (
+          <section className="mt-12" id="faq">
+            <h2 className="text-2xl font-semibold tracking-tight">Deck catalog FAQ</h2>
+            <dl className="mt-6 space-y-5">
+              {hubFaqs.map((faq) => (
+                <div key={faq.question}>
+                  <dt className="font-semibold tracking-tight">{faq.question}</dt>
+                  <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
       </article>
       <SiteFooter />
     </main>

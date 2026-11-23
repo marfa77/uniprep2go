@@ -6,7 +6,11 @@ import {
 } from "@/lib/mock-exams/free-diagnostic";
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { getCatalogDeckBySlug } from "@/lib/decks";
+import {
+  getExamFamilyForMock,
+  getFamilyHubLinkForMock,
+  getRelatedForMock,
+} from "@/lib/exam-families";
 import { getMocksByVertical } from "@/lib/mock-exams/hub-clusters";
 import { shouldIndexMockExam } from "@/lib/seo";
 import { getMockOfficialResources, type MockOfficialResources } from "@/lib/mock-exams/official-resources";
@@ -147,52 +151,72 @@ export function MockOfficialResourcesPanel({
 }
 
 export function MockRelatedExamsSection({ config }: { config: MockExamConfig }) {
-  const siblings = getMocksByVertical(config.verticalId)
-    .filter((mock) => mock.slug !== config.slug && shouldIndexMockExam(mock.slug))
-    .slice(0, 6);
-  if (siblings.length < 3) return null;
-  if (siblings.length === 0) return null;
+  const family = getExamFamilyForMock(config.slug);
+  const familyLinks = getRelatedForMock(config.slug);
+  const verticalFallback =
+    familyLinks.length < 4
+      ? getMocksByVertical(config.verticalId)
+          .filter((mock) => mock.slug !== config.slug && shouldIndexMockExam(mock.slug))
+          .slice(0, 6)
+          .map((mock) => ({
+            href: `/mock-exams/${mock.slug}`,
+            anchor: mock.shortTitle,
+          }))
+      : [];
 
+  const seen = new Set(familyLinks.map((link) => link.href));
+  for (const link of verticalFallback) {
+    if (familyLinks.length >= 6) {
+      break;
+    }
+    if (!seen.has(link.href)) {
+      seen.add(link.href);
+      familyLinks.push(link);
+    }
+  }
+
+  if (familyLinks.length < 3) {
+    return null;
+  }
+
+  const hubLink = getFamilyHubLinkForMock(config.slug);
   const vertical = getVerticalDefinition(config.verticalId);
-  const deck = getCatalogDeckBySlug(config.linkedDeckSlug);
 
   return (
     <section className="mt-12" id="related-exams">
       <h2 className="text-2xl font-semibold tracking-tight">
-        More {vertical?.label ?? "related"} practice tests
-      </h2>
-      <p className="mt-3 text-sm leading-7 text-[#4f493e]">
-        Same exam path on UniPrep2Go — timed diagnostics with topic scoring.
-        {deck ? (
-          <>
-            {" "}
-            After you finish, drill gaps with the{" "}
-            <Link
-              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
-              href={`/decks/${config.linkedDeckSlug}`}
-            >
-              {deck.shortName} Anki deck
-            </Link>
-            .
-          </>
+        Related exams in this path
+        {family ? (
+          <span className="mt-1 block text-base font-normal text-[#5f5749]">{family.label}</span>
+        ) : vertical ? (
+          <span className="mt-1 block text-base font-normal text-[#5f5749]">{vertical.label}</span>
         ) : null}
-      </p>
+      </h2>
       <ul className="mt-5 divide-y divide-[#18140f]/10 border-y border-[#18140f]/10">
-        {siblings.map((mock) => (
-          <li key={mock.slug}>
+        {familyLinks.map((link) => (
+          <li key={link.href}>
             <Link
-              className="flex flex-wrap items-baseline justify-between gap-2 py-3 transition hover:bg-[#fffaf0]/60"
-              href={`/mock-exams/${mock.slug}`}
+              className="block py-3 transition hover:bg-[#fffaf0]/60"
+              href={link.href}
             >
-              <span className="font-medium text-[#18140f]">{mock.shortTitle}</span>
-              <span className="text-sm text-[#5f5749]">
-                {mock.questionCount} Q · {mock.durationMinutes} min · {mock.examBody}
-              </span>
+              <span className="font-medium text-[#18140f]">{link.anchor}</span>
+              {link.relation ? (
+                <span className="mt-1 block text-sm text-[#5f5749]">{link.relation}</span>
+              ) : null}
             </Link>
           </li>
         ))}
       </ul>
-      {vertical ? (
+      {hubLink ? (
+        <p className="mt-4 text-sm">
+          <Link
+            className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+            href={hubLink.href}
+          >
+            {hubLink.anchor}
+          </Link>
+        </p>
+      ) : vertical ? (
         <p className="mt-4 text-sm">
           <Link
             className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"

@@ -17,6 +17,10 @@ import { getMockExamConfig } from "@/lib/mock-exams/configs";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { mergeHubFaqs } from "@/components/hubs/hub-about-section";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro } from "@/lib/hub-intros";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
 
 const directAnswer =
@@ -81,7 +85,8 @@ export default async function BuildingCertificationHubPage() {
     }),
   );
 
-  const hubFaqs = [
+  const hubIntro = getHubIntro("/building-certification-anki-decks");
+  const baseHubFaqs = [
     {
       question: "Which building certifications have free practice tests?",
       answer:
@@ -103,6 +108,7 @@ export default async function BuildingCertificationHubPage() {
         "HVAC refrigerant technicians usually start with EPA 608 (and BMS/BAS if you work controls). Design and sustainability roles usually start with LEED Green Associate, then LEED AP BD+C or WELL AP. Safety careers use NEBOSH or CFPS; surveyors use MRICS pathways.",
     },
   ] as const;
+  const hubFaqs = mergeHubFaqs([...baseHubFaqs], hubIntro.faqs);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -134,6 +140,7 @@ export default async function BuildingCertificationHubPage() {
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
       },
+      buildHubBreadcrumbJsonLd("/building-certification-anki-decks"),
     ],
   };
 
@@ -163,6 +170,7 @@ export default async function BuildingCertificationHubPage() {
           Building, safety & sustainability certification prep
         </h1>
         <p className="mt-5 max-w-3xl text-lg leading-8 text-[#4f493e]">{directAnswer}</p>
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
         <div className="mt-6 flex flex-wrap gap-3">
           <Link className={btnPrimary} href="/mock-exams">
             All practice tests
