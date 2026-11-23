@@ -15,6 +15,11 @@ import { series63DeckEditorial } from "./series-63-anki-deck";
 import { cfpDeckEditorial } from "./cfp-certification-anki-deck";
 import { pcDeckEditorial } from "./property-casualty-insurance-exam-anki-deck";
 import { eaDeckEditorial } from "./enrolled-agent-anki-deck";
+import { series6DeckEditorial } from "./series-6-anki-deck";
+import { series65DeckEditorial } from "./series-65-anki-deck";
+import { series66DeckEditorial } from "./series-66-anki-deck";
+import { lhDeckEditorial } from "./life-and-health-insurance-exam-anki-deck";
+import { frmDeckEditorial } from "./frm-part-1-anki-deck";
 
 export type { DeckEditorialBundle } from "./types";
 
@@ -35,6 +40,11 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "cfp-certification-anki-deck": cfpDeckEditorial,
   "property-casualty-insurance-exam-anki-deck": pcDeckEditorial,
   "enrolled-agent-anki-deck": eaDeckEditorial,
+  "series-6-anki-deck": series6DeckEditorial,
+  "series-65-anki-deck": series65DeckEditorial,
+  "series-66-anki-deck": series66DeckEditorial,
+  "life-and-health-insurance-exam-anki-deck": lhDeckEditorial,
+  "frm-part-1-anki-deck": frmDeckEditorial,
 };
 
 export function getDeckEditorialBundle(slug: string): DeckEditorialBundle | null {

@@ -83,4 +83,12 @@ describe("deck editorial blocks", () => {
     expect(deckText("property-casualty-insurance-exam-anki-deck").join(" ")).toContain("state's candidate handbook");
     expect(deckText("enrolled-agent-anki-deck").join(" ")).toContain("31 Dec 2025");
   });
+
+  it("batch 5 deck blocks map cards to each official outline", () => {
+    expect(deckText("series-6-anki-deck").join(" ")).toContain("(25 items)");
+    expect(deckText("series-65-anki-deck").join(" ")).toContain("92 correct");
+    expect(deckText("series-66-anki-deck").join(" ")).toContain("73 correct");
+    expect(deckText("life-and-health-insurance-exam-anki-deck").join(" ")).toContain("state's candidate handbook");
+    expect(deckText("frm-part-1-anki-deck").join(" ")).toContain("about 240 hours");
+  });
 });
