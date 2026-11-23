@@ -276,3 +276,61 @@ describe("NBRC TMC → RT transition editorial (WP0)", () => {
     expect(text()).toContain("**not** an RT Examination simulation");
   });
 });
+
+const WP1_MOCKS_1 = [
+  "ace-cpt-readiness-check",
+  "rd-exam-readiness-check",
+  "leed-ap-om-readiness-check",
+  "cdcp-readiness-check",
+  "cem-readiness-check",
+] as const;
+
+function wp1Text(slug: string): string {
+  const b = getMockEditorialBundle(slug)!;
+  return [b.howToPrepare ?? "", ...b.sections.flatMap((s) => [...s.paragraphs, ...(s.bullets ?? [])]), ...b.faqs.map((f) => f.answer)].join(" ");
+}
+
+function wp1Words(slug: string): number {
+  const b = getMockEditorialBundle(slug)!;
+  return [b.howToPrepare ?? "", ...b.sections.flatMap((s) => [s.heading, ...s.paragraphs, ...(s.bullets ?? [])]), ...b.faqs.flatMap((f) => [f.question, f.answer])]
+    .join(" ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*\*/g, "")
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
+describe("WP1 mock editorial — ACE CPT, RD, LEED AP O+M, CDCP, CEM", () => {
+  it.each(WP1_MOCKS_1)("%s: 600–900 words, 5–7 FAQs in JSON-LD, sources, config-driven length", (slug) => {
+    const bundle = getMockEditorialBundle(slug)!;
+    const words = wp1Words(slug);
+    expect(words).toBeGreaterThanOrEqual(600);
+    expect(words).toBeLessThanOrEqual(900);
+    expect(bundle.faqs.length).toBeGreaterThanOrEqual(5);
+    expect(bundle.faqs.length).toBeLessThanOrEqual(7);
+    expect(bundle.sources.length).toBeGreaterThanOrEqual(2);
+    expect(bundle.sections.every((s) => !s.heading.includes("2026"))).toBe(true);
+    const config = getMockExamConfig(slug)!;
+    const jsonLd = buildMockExamPageJsonLd(config);
+    const faqEntity = jsonLd["@graph"].find(
+      (node) => typeof node === "object" && node !== null && "@type" in node && node["@type"] === "FAQPage",
+    ) as { mainEntity: Array<{ name: string }> } | undefined;
+    for (const faq of bundle.faqs) expect(faqEntity?.mainEntity.map((q) => q.name)).toContain(faq.question);
+    const lengthFaq = bundle.faqs.find((f) => /UniPrep2Go/.test(f.question))!;
+    expect(lengthFaq.answer).toContain(`${config.questionCount} questions in ${config.durationMinutes} minutes`);
+  });
+
+  it.each(WP1_MOCKS_1)("%s links only to existing pages", (slug) => {
+    for (const [, href] of wp1Text(slug).matchAll(/\]\((\/[^)\s]+)\)/g)) {
+      const [, kind, target] = href.split("/");
+      if (kind === "mock-exams") expect(getMockExamConfig(target), href).toBeTruthy();
+      else if (kind === "decks") expect(getDeckBySlug(target), href).toBeTruthy();
+      else if (kind === "blog") expect(getBlogPost(target), href).toBeTruthy();
+      else throw new Error(href);
+    }
+  });
+
+  it("RD page carries the dated 1 Jan 2027 CDR outline change", () => {
+    expect(wp1Text("rd-exam-readiness-check")).toContain("Human Nutrition and Medical Nutrition Therapy — 40%");
+  });
+});
