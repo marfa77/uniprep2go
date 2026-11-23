@@ -11,6 +11,10 @@ import { formatDeckContentLabel } from "@/lib/decks";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { finalize, leafPageTitle } from "@/lib/seo";
 import { absoluteUrl, siteConfig } from "@/lib/site";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { mergeHubFaqs } from "@/components/hubs/hub-about-section";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro } from "@/lib/hub-intros";
 import { buildCatalogItemListJsonLd } from "@/lib/product-jsonld";
 import { PREP2GO_SHOP_URL, RETIRED_LANGUAGE_DECKS_NOTE } from "@/lib/retired-language-decks";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -43,6 +47,24 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function LanguageCertificationDecksPage() {
   const groups = await getPricedDecksByCategory();
   const languageDecks = groups.find((group) => group.category === "language")?.decks ?? [];
+  const hubIntro = getHubIntro("/language-certification-decks");
+  const legacyFaqs = [
+    {
+      question: "Are these official exam materials?",
+      answer:
+        "No. UniPrep2Go / PixID Studio decks are independent study aids. They are not affiliated with any government, immigration authority, or exam body.",
+    },
+    {
+      question: "Where are the CIPLE, DELE, DELF, and IELTS decks?",
+      answer: `Language-exam Anki decks moved to Prep2Go. Browse the full lineup at ${PREP2GO_SHOP_URL}.`,
+    },
+    {
+      question: "What is the Citizenship & Naturalization bundle?",
+      answer:
+        "A Gumroad download with separate civics decks for several countries — text-first recall, not language media decks.",
+    },
+  ];
+  const hubFaqs = mergeHubFaqs(legacyFaqs, hubIntro.faqs);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -55,6 +77,16 @@ export default async function LanguageCertificationDecksPage() {
         isPartOf: { "@id": `${siteConfig.url}/#website` },
       },
       buildCatalogItemListJsonLd(languageDecks),
+      {
+        "@type": "FAQPage",
+        "@id": `${absoluteUrl("/language-certification-decks")}#faq`,
+        mainEntity: hubFaqs.map((faq) => ({
+          "@type": "Question",
+          name: faq.question,
+          acceptedAnswer: { "@type": "Answer", text: faq.answer },
+        })),
+      },
+      buildHubBreadcrumbJsonLd("/language-certification-decks"),
     ],
   };
 
@@ -95,6 +127,7 @@ export default async function LanguageCertificationDecksPage() {
           </a>
           .
         </p>
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
         <div className="mt-6 flex flex-wrap gap-3">
           <a className={btnPrimary} href={PREP2GO_SHOP_URL} rel="noopener">
             Language-exam decks on Prep2Go
@@ -132,34 +165,12 @@ export default async function LanguageCertificationDecksPage() {
         <section className="mt-12 max-w-3xl" id="faq">
           <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
           <dl className="mt-6 space-y-5">
-            <div>
-              <dt className="font-semibold tracking-tight">Are these official exam materials?</dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                No. UniPrep2Go / PixID Studio decks are independent study aids. They are not
-                affiliated with any government, immigration authority, or exam body.
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold tracking-tight">Where are the CIPLE, DELE, DELF, and IELTS decks?</dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                Language-exam Anki decks moved to Prep2Go. Old UniPrep2Go deck links redirect to the
-                matching Prep2Go page; browse the full lineup at{" "}
-                <a className="underline underline-offset-2" href={PREP2GO_SHOP_URL} rel="noopener">
-                  prep2go.study/shop
-                </a>
-                .
-              </dd>
-            </div>
-            <div>
-              <dt className="font-semibold tracking-tight">
-                What is the Citizenship &amp; Naturalization bundle?
-              </dt>
-              <dd className="mt-2 text-base leading-8 text-[#4f493e]">
-                A $20 Gumroad download with six separate civics \`.apkg\` files for Germany, France,
-                the UK, Canada, Australia, and the U.S. — text-first recall, not language media
-                decks.
-              </dd>
-            </div>
+            {hubFaqs.map((faq) => (
+              <div key={faq.question}>
+                <dt className="font-semibold tracking-tight">{faq.question}</dt>
+                <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
+              </div>
+            ))}
           </dl>
         </section>
       </article>

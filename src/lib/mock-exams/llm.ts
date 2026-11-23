@@ -368,22 +368,6 @@ export function buildMockExamPageJsonLd(config: MockExamConfig) {
         offers: mockOffers,
       },
       {
-        "@type": "Course",
-        "@id": `${pageUrl}#course`,
-        name: config.title,
-        description: seoDescription,
-        provider: {
-          "@type": "Organization",
-          name: siteConfig.name,
-          url: siteConfig.url,
-        },
-        url: pageUrl,
-        educationalLevel: "Professional certification prep",
-        isAccessibleForFree: config.accessMode === "free_demand_test",
-        teaches: config.topics.map((topic) => topic.label),
-        about: certifierOrg,
-      },
-      {
         "@type": "FAQPage",
         "@id": `${pageUrl}#faq`,
         mainEntity: faqs.map((faq) => ({

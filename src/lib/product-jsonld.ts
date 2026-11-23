@@ -3,6 +3,78 @@ import { categoryLabels, type DeckCategory } from "./decks";
 import { buildMergedDeckFaqs } from "./deck-faq";
 import { absoluteUrl, siteConfig } from "./site";
 
+const EDUCATION_QA_DISALLOWED_SCRIPTS =
+  /[\u0400-\u04FF\u0600-\u06FF\u0900-\u097F\u3040-\u30FF\u4E00-\u9FFF\uAC00-\uD7AF]/;
+
+function stripMarkupForSchema(text: string): string {
+  return text
+    .replace(/<[^>]+>/g, " ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/[*_`#]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function isEnglishOrPortugueseCardText(text: string): boolean {
+  if (!text.trim()) {
+    return false;
+  }
+  return !EDUCATION_QA_DISALLOWED_SCRIPTS.test(text);
+}
+
+export function isDeckEducationQaEligible(
+  deck: Pick<AvailableDeck, "format" | "category" | "slug" | "sampleCards">,
+): boolean {
+  if (deck.format === "PDF" || deck.format === "App") {
+    return false;
+  }
+  if (deck.category === "language" && deck.slug !== "portuguese-survival-anki-deck") {
+    return false;
+  }
+  const cards = deck.sampleCards.filter(
+    (card) => card.question?.trim() && card.answer?.trim(),
+  );
+  if (cards.length === 0) {
+    return false;
+  }
+  return cards.every(
+    (card) =>
+      isEnglishOrPortugueseCardText(card.question) &&
+      isEnglishOrPortugueseCardText(card.answer),
+  );
+}
+
+export function buildDeckEducationQuizJsonLd(deck: AvailableDeck) {
+  if (!isDeckEducationQaEligible(deck)) {
+    return null;
+  }
+  const deckUrl = absoluteUrl(`/decks/${deck.slug}`);
+  const hasPart = deck.sampleCards
+    .filter((card) => card.question?.trim() && card.answer?.trim())
+    .map((card) => ({
+      "@type": "Question" as const,
+      eduQuestionType: "Flashcard",
+      text: stripMarkupForSchema(card.question),
+      acceptedAnswer: {
+        "@type": "Answer" as const,
+        text: stripMarkupForSchema(card.answer),
+      },
+    }));
+
+  if (hasPart.length === 0) {
+    return null;
+  }
+
+  return {
+    "@type": "Quiz" as const,
+    "@id": `${deckUrl}#education-quiz`,
+    name: `${deck.shortName} sample flashcards`,
+    url: `${deckUrl}#sample-cards`,
+    educationalLevel: "Professional certification prep",
+    hasPart,
+  };
+}
+
 type ProductOfferInput = Pick<
   AvailableDeck,
   "checkoutUrl" | "checkoutSeller" | "price" | "pricePending"
@@ -102,6 +174,8 @@ export function buildDeckPageJsonLd(deck: AvailableDeck) {
   const deckUrl = absoluteUrl(`/decks/${deck.slug}`);
   const mergedFaqs = buildMergedDeckFaqs(deck);
 
+  const educationQuiz = buildDeckEducationQuizJsonLd(deck);
+
   return {
     "@context": "https://schema.org",
     "@graph": [
@@ -138,6 +212,7 @@ export function buildDeckPageJsonLd(deck: AvailableDeck) {
           acceptedAnswer: { "@type": "Answer" as const, text: faq.answer },
         })),
       },
+      ...(educationQuiz ? [educationQuiz] : []),
       {
         "@type": "BreadcrumbList" as const,
         "@id": `${deckUrl}#breadcrumb`,

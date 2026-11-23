@@ -15,6 +15,10 @@ import {
 import { filterMockSearchIndex, toMockSearchIndexItem } from "@/lib/mock-exams/search-index";
 import { MOCK_VERTICALS } from "@/lib/mock-exams/taxonomy";
 import type { MockVerticalId } from "@/lib/mock-exams/types";
+import { HubAboutIntro } from "@/components/hubs/hub-about-section";
+import { mergeHubFaqs } from "@/components/hubs/hub-about-section";
+import { buildHubBreadcrumbJsonLd } from "@/lib/hub-breadcrumb-jsonld";
+import { getHubIntro, mockVerticalHubPath, type HubPath } from "@/lib/hub-intros";
 import { getVerticalSeoCopy } from "@/lib/mock-exams/vertical-seo";
 import { withAiMetadata } from "@/lib/llm-meta";
 import { buildMockVerticalMetaDescription } from "@/lib/mock-exams/hub-meta";
@@ -109,6 +113,9 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
   const pageUrl = absoluteUrl(`/mock-exams/v/${verticalId}`);
   const indexableCount = mocks.filter((mock) => shouldIndexMockExam(mock.slug)).length;
   const seo = getVerticalSeoCopy(verticalId);
+  const hubPath = mockVerticalHubPath(verticalId) as HubPath;
+  const hubIntro = getHubIntro(hubPath);
+  const faqs = mergeHubFaqs(seo.faqs, hubIntro.faqs);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -133,12 +140,13 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
       },
       {
         "@type": "FAQPage",
-        mainEntity: seo.faqs.map((faq) => ({
+        mainEntity: faqs.map((faq) => ({
           "@type": "Question",
           name: faq.question,
           acceptedAnswer: { "@type": "Answer", text: faq.answer },
         })),
       },
+      buildHubBreadcrumbJsonLd(hubPath),
     ],
   };
 
@@ -214,6 +222,7 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
         <p className="mt-6 max-w-3xl text-lg leading-8 text-[#4f493e]">
           {renderInlineMarkdown(seo.lead)}
         </p>
+        <HubAboutIntro introMarkdown={hubIntro.intro} />
         <p className="mt-2 text-sm text-[#5f5749]">
           {query
             ? `${mocks.length} match${mocks.length === 1 ? "" : "es"} for “${query}”`
@@ -276,7 +285,7 @@ export default async function MockVerticalPage({ params, searchParams }: PagePro
         <section className="mt-10" id="faq">
           <h2 className="text-2xl font-semibold tracking-tight">FAQ</h2>
           <dl className="mt-6 space-y-5">
-            {seo.faqs.map((faq) => (
+            {faqs.map((faq) => (
               <div key={faq.question}>
                 <dt className="font-semibold tracking-tight">{faq.question}</dt>
                 <dd className="mt-2 text-base leading-8 text-[#4f493e]">{faq.answer}</dd>
