@@ -84,6 +84,16 @@ describe("deck SEO magnets", () => {
     expect(buildDeckSeoTitle(deck!)).not.toContain("UniPrep2Go");
   });
 
+  it("drops the year from CFA Level 2 formula sheet title", () => {
+    const deck = getDeckBySlug("cfa-level-2-formula-reference-2026");
+    expect(deck).toBeDefined();
+    expect(buildDeckSeoTitle(deck!)).toBe(
+      "CFA Level 2 Formula Sheet — 281 Formulas, Free Preview",
+    );
+    expect(buildDeckSeoHeadline(deck!)).toContain("Free Preview");
+    expect(buildDeckSeoHeadline(deck!)).not.toMatch(/2026/);
+  });
+
   it("uses a stable CAT4 exam prep description and keywords", () => {
     const deck = getDeckBySlug("cat4-level-d-anki-deck-printable-pdf");
     expect(deck).toBeDefined();

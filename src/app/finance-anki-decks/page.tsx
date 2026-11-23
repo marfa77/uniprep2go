@@ -122,9 +122,16 @@ export default async function FinanceAnkiDecksPage() {
         />
         <h1 className="text-5xl tracking-tight text-ink">Finance</h1>
         <p className="mt-4 max-w-3xl text-lg leading-8 text-muted">
-          CFA, FRM, and the formula sheets. Each exam has a timed mock and a deck. The first mock
-          attempt is 25 questions free. CFA Level 1 leads. Independent prep — not CFA Institute, GARP,
-          FINRA, CFP Board, NMLS, IRS, or ETS material.
+          CFA, FRM, and the formula sheets — browse the{" "}
+          <Link
+            className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
+            href="/decks/cfa-level-2-formula-reference-2026"
+          >
+            CFA Level 2 formula sheet
+          </Link>{" "}
+          with a free HTML preview. Each exam has a timed mock and a deck. The first mock attempt is
+          25 questions free. CFA Level 1 leads. Independent prep — not CFA Institute, GARP, FINRA,
+          CFP Board, NMLS, IRS, or ETS material.
         </p>
         <div className="mt-6 flex flex-wrap gap-3">
           <Link className={btnPrimary} href="/mock-exams/cfa-level-1-readiness-check">

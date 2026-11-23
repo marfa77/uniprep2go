@@ -33,7 +33,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
       },
       {
         href: "/mock-exams/frm-part-1-readiness-check",
-        label: "Free FRM Part 1 mock — 25 questions, no signup",
+        label: "FRM Part 1 mock test — 25 questions free, no signup",
       },
       {
         href: "/decks/frm-part-1-anki-deck",

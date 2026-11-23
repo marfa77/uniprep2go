@@ -1472,6 +1472,11 @@ const rawDecks: Deck[] = [
     ],
     faqs: [
       {
+        question: "Is there an official CFA Level 2 formula sheet?",
+        answer:
+          "CFA Institute's Level II exam page lists the format (22 item sets, 88 questions, two 2 h 12 min sessions) and tells you to know your calculator for curriculum formulas; it does not list a formula sheet among exam materials. This PDF is independent recall prep from our 2026-curriculum sheet — not CFA Institute material.",
+      },
+      {
         question: "What does the CFA Level 2 Formula Reference include?",
         answer:
           "A 51-page printable PDF: 281 typeset formulas and 133 definitions across the 10 Level 2 topics, each formula with when to use it and the exam trap; all 22 Standards with what each requires; an 80-question Formula Recall Drill with an explained answer key; and a clickable table of contents.",

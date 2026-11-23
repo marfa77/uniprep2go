@@ -59,7 +59,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
 
   if (waitlist) {
     return {
-      title: `Free ${practiceName} 2026 | Coming Soon`,
+      title: `Free ${practiceName} 2027 | Coming Soon`,
       description: niche
         ? `${practiceName} coming soon on UniPrep2Go: planned ${config.questionCount}-question timed diagnostic (${config.durationMinutes} min, ${config.passRule.passPercent}% target) with topic scoring. Notify when it launches. ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
         : `${config.shortTitle} free practice test coming soon: planned ${config.questionCount} timed questions, notify when live. Independent prep — not official exam material.`,
@@ -92,7 +92,7 @@ function defaultProfile(config: MockExamConfig): MockSeoProfile {
     : `${config.questionCount} timed questions, ${config.durationMinutes} minutes, ${config.passRule.passPercent}% target.`;
 
   return {
-    title: `Free ${practiceName} 2026 | ${config.questionCount} Questions Online`,
+    title: `Free ${practiceName} 2027 | ${config.questionCount} Questions Online`,
     description: niche
       ? `${practiceName.replace(/^Free\s+/i, "")}: ${freeAccessClause(config)}, no signup, full topic report and answer review. ${fullMockClause} ${niche.administeredBy.replace(/\.+$/, "")}. Independent prep — not official exam material.`
       : `${examLabel} ${type}: ${freeAccessClause(config)}, no signup, full topic report and answer review. ${fullMockClause} Independent prep — not official exam material.`,
@@ -160,7 +160,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "FINRA SIE practice test",
   },
   "servsafe-manager-mock": {
-    title: "Free ServSafe Manager Practice Test 2026 | 90-Question Mock Exam",
+    title: "Free ServSafe Manager Practice Test 2027 | 90-Question Mock Exam",
     description:
       "ServSafe Manager practice test — free 25-question diagnostic, no signup; full mock: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked $9.99 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
     keywords: [
@@ -458,6 +458,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "FRM Part 1 practice test",
     examFaqs: [
       {
+        question: "Is there an official GARP FRM Part 1 mock?",
+        answer:
+          "Yes — GARP gives registered Part I candidates practice exams and GARP Learning at no extra cost, until the last day of their exam window (garp.org/frm/study-materials, checked 23 Nov 2026). This free 25-question FRM Part 1 mock test is independent: use it before you register or between GARP practice exams to find weak topics.",
+      },
+      {
         question: "How many questions are on FRM Part 1?",
         answer:
           "GARP administers 100 equally weighted multiple-choice questions in 4 hours. This UniPrep2Go mock is a 50-question diagnostic (25-question free start) — not a full 100-question sitting.",
@@ -480,7 +485,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
   },
   "nbrc-tmc-readiness-check": {
-    title: "Free NBRC TMC Practice Test 2026 | 60Q + 2027 RT Exam",
+    title: "Free NBRC TMC & 2027 RT Exam Practice Test | 25Q Free",
     description:
       "Free NBRC TMC practice test: 60 timed scenario questions from a 120-question bank (ABGs, ventilators, equipment, neonatal and emergency care) with a weak-topic report. TMC ends Dec 31, 2026; the content carries into the 2027 RT Exam. Not NBRC material.",
     keywords: [
@@ -685,7 +690,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NHA CPCT practice test",
   },
   "aha-bls-provider-readiness-check": {
-    title: "Free AHA BLS Practice Test 2026 | 60Q Cognitive Mock",
+    title: "Free AHA BLS Practice Test 2027 | 60Q Cognitive Mock",
     description:
       "AHA BLS practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 45 minutes, 84% readiness target. Official HeartCode BLS cognitive is ~25Q / 84% plus skills. 2025 infant + FBAO science. Independent — not an AHA card.",
     keywords: [
@@ -704,7 +709,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "AHA BLS practice test",
   },
   "ardms-spi-readiness-check": {
-    title: "Free ARDMS SPI Practice Test 2026 | 60Q Ultrasound Physics",
+    title: "Free ARDMS SPI Practice Test 2027 | 60Q Ultrasound Physics",
     description:
       "ARDMS SPI practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target. Official SPI is ~110Q / 2h / scaled 555. Text/physics only. Independent — not ARDMS material.",
     keywords: [
@@ -723,7 +728,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "ARDMS SPI practice test",
   },
   "ascp-mls-readiness-check": {
-    title: "Free ASCP MLS Practice Test 2026 | 60Q Lab Mock",
+    title: "Free ASCP MLS Practice Test 2027 | 60Q Lab Mock",
     description:
       "ASCP MLS practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 90 minutes, 70% readiness target. Official BOC MLS is 100Q CAT / 2h30 / scaled 400. Independent — not ASCP material. Not MLT.",
     keywords: [
@@ -742,7 +747,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "ASCP MLS practice test",
   },
   "ascp-mlt-readiness-check": {
-    title: "Free ASCP MLT Practice Test 2026 | 60Q Lab Mock",
+    title: "Free ASCP MLT Practice Test 2027 | 60Q Lab Mock",
     description:
       "ASCP MLT practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target. Official BOC MLT is 100Q CAT / 2h30 / scaled 400. Independent — not ASCP material. Not MLS.",
     keywords: [
@@ -797,7 +802,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "ASWB Clinical practice test",
   },
   "barber-state-readiness-check": {
-    title: "Free Barber Practice Test 2026 | 60Q NIC Theory Mock",
+    title: "Free Barber Practice Test 2027 | 60Q NIC Theory Mock",
     description:
       "Barber theory practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. Official NIC Barber theory is 60 items (50 scored) / 90 min. Independent — not NIC. Practical separate.",
     keywords: [
@@ -815,7 +820,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Barber practice test",
   },
   "medication-aide-readiness-check": {
-    title: "Free Medication Aide Practice Test 2026 | 60Q MACE Mock",
+    title: "Free Medication Aide Practice Test 2027 | 60Q MACE Mock",
     description:
       "Medication aide practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. Typical MACE is 60Q / 2h. Independent — not NCSBN. Not CNA/NNAAP.",
     keywords: [
@@ -833,7 +838,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Medication Aide practice test",
   },
   "home-health-aide-readiness-check": {
-    title: "Free Home Health Aide Practice Test 2026 | 60Q Timed HHA Mock",
+    title: "Free Home Health Aide Practice Test 2027 | 60Q Timed HHA Mock",
     description:
       "HHA practice test: free 25-question diagnostic, full mock 60 timed questions (75 min) from a 120-item bank, scored by topic, with a teaching note on every wrong answer. Written to the 42 CFR 484.80 competency subjects. Independent — not a state or agency exam.",
     keywords: [
@@ -852,7 +857,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Home Health Aide practice test",
   },
   "nail-technician-state-readiness-check": {
-    title: "Free Nail Technician Practice Test 2026 | 60Q NIC Mock",
+    title: "Free Nail Technician Practice Test 2027 | 60Q NIC Mock",
     description:
       "Nail technician practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. Official NIC Nail Theory is 110 (100 scored) / 90 min. Independent — not NIC. Not Cosmetology or Barber Theory.",
     keywords: [
@@ -870,7 +875,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Nail Technician practice test",
   },
   "nsca-cpt-readiness-check": {
-    title: "Free NSCA-CPT Practice Test 2026 | 60-Question Mock",
+    title: "Free NSCA-CPT Practice Test 2027 | 60-Question Mock",
     description:
       "NSCA-CPT practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, drawn from a 120-item bank, 70% readiness. Official NSCA-CPT is 155Q / 3h / scaled 70. Independent — not NSCA. Not CSCS.",
     keywords: [
@@ -904,7 +909,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "PHR practice test",
   },
   "physical-therapy-aide-readiness-check": {
-    title: "Free Physical Therapy Aide Practice Test 2026 | 60Q Mock",
+    title: "Free Physical Therapy Aide Practice Test 2027 | 60Q Mock",
     description:
       "PT aide practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. No national PT aide exam. Independent. Not NPTE or PTA.",
     keywords: [
@@ -1008,7 +1013,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "NHA CBCS practice test",
   },
   "cosmetology-state-readiness-check": {
-    title: "Free Cosmetology Practice Test 2026 | 60Q NIC Theory Mock",
+    title: "Free Cosmetology Practice Test 2027 | 60Q NIC Theory Mock",
     description:
       "Cosmetology state-board practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 60-card Anki. NIC Cosmetology Theory is typically 110 items (100 scored) / 90 minutes; state CIBs vary. Independent — not NIC/PSI material.",
     keywords: [
@@ -1027,7 +1032,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Cosmetology practice test",
   },
   "cdl-general-knowledge-readiness-check": {
-    title: "Free CDL General Knowledge Practice Test 2026 | 60Q Mock",
+    title: "Free CDL General Knowledge Practice Test 2027 | 60Q Mock",
     description:
       "CDL General Knowledge practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, drawn from a 120-item bank, 70% readiness target, topic scoring — then waitlist for the planned 120-card Anki. Most state GK forms are ~50Q / 80%; this is a longer diagnostic. Independent — not a DMV/FMCSA exam.",
     keywords: [
@@ -1046,7 +1051,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CDL General Knowledge practice test",
   },
   "armed-security-officer-readiness-check": {
-    title: "Free Armed Security Practice Test 2026 | 60Q Written Mock",
+    title: "Free Armed Security Practice Test 2027 | 60Q Written Mock",
     description:
       "Armed security officer practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 120-card Anki. State-specific (≠ unarmed card; range qualification separate). Independent — not a state board exam.",
     keywords: [
@@ -1064,7 +1069,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Armed security practice test",
   },
   "veterinary-assistant-readiness-check": {
-    title: "Free Veterinary Assistant Practice Test 2026 | 60Q AVA Mock",
+    title: "Free Veterinary Assistant Practice Test 2027 | 60Q AVA Mock",
     description:
       "Veterinary assistant / AVA-style practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 120-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
     keywords: [
@@ -1082,7 +1087,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Veterinary assistant practice test",
   },
   "medical-scribe-readiness-check": {
-    title: "Free Medical Scribe Practice Test 2026 | 60Q Timed Mock",
+    title: "Free Medical Scribe Practice Test 2027 | 60Q Timed Mock",
     description:
       "Medical scribe practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions from a 120 unique bank, 75 minutes, 70% readiness target across documentation, terminology, EHR workflow, and HIPAA — then drill weak topics in the $9.99 / 120-card Anki. AHDPG MSCE is 100Q / 75 min / 80%. Independent — not AHDPG or ACMSS material. Not CCMA or CMA.",
     keywords: [
@@ -1262,7 +1267,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CDCP practice test",
   },
   "rd-exam-readiness-check": {
-    title: "Free RD Exam Practice Test 2026 | 120 Questions Online",
+    title: "Free RD Exam Practice Test 2027 | 120 Questions Online",
     description:
       "Free RD / RDN practice test — free 25-question diagnostic, no signup; full mock: 120 timed questions, 120 minutes, 70% readiness target, four CDR domain scores. Official exam is CAT 125–145 items / 3 hours / scaled 25. Then repair with the $9.99 / 240-card Anki deck. Independent — not CDR material.",
     keywords: [
@@ -1281,7 +1286,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "RD Exam practice test",
   },
   "acsm-cpt-readiness-check": {
-    title: "Free ACSM CPT Practice Test 2026 | 60Q Timed Mock",
+    title: "Free ACSM CPT Practice Test 2027 | 60Q Timed Mock",
     description:
       "ACSM CPT practice test: free 25-question diagnostic, full mock 60 timed questions / 75 min from a 120-item bank, topic scores, answer review — then the $9.99 / 120-card Anki deck. Official ACSM-CPT: 135 items / 150 min / scaled 550. Not ACSM material.",
     keywords: [
@@ -1431,7 +1436,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "CFA Level 2 Practice Exam",
     intro:
-      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is **88 item-set questions in 22 vignettes** across two 132-minute sessions (**4 hours 24 minutes total**; CFA Institute sets MPS after each sitting — cfainstitute.org). Repair weak item sets with the [Level 2 Anki deck](/decks/cfa-level-2-anki-deck) and printable [Level 2 formula reference](/decks/cfa-level-2-formula-reference-2026). After Level 1, confirm you passed before booking — [Level 1 practice test](/mock-exams/cfa-level-1-readiness-check). Not CFA Institute material.",
+      "This CFA Level 2 practice exam starts free: 25 vignette questions, no signup, then 60 vignette questions in 120 minutes across all 10 topics, with topic scores. The official Level II exam is **88 item-set questions in 22 vignettes** across two 132-minute sessions (**4 hours 24 minutes total**; CFA Institute sets MPS after each sitting — cfainstitute.org). Repair weak item sets with the [Level 2 Anki deck](/decks/cfa-level-2-anki-deck) and the printable [CFA Level 2 formula sheet](/decks/cfa-level-2-formula-reference-2026). After Level 1, confirm you passed before booking — [Level 1 practice test](/mock-exams/cfa-level-1-readiness-check). Not CFA Institute material.",
     examFaqs: [
       {
         question: "Is there a free CFA Level 2 practice exam?",
@@ -1902,7 +1907,7 @@ function mockOfferTitle(head: string, config: MockExamConfig) {
         `${FREE_DIAGNOSTIC_QUESTIONS}Q Free`,
       ]
     : [`${config.questionCount}Q Free, Timed`];
-  const withoutYear = head.replace(/\s+2026\b/, "");
+  const withoutYear = head.replace(/\s+20(?:26|27)\b/, "");
   const heads = [...new Set([head, withoutYear, withoutYear.replace(/^Free\s+/i, "")])];
   for (const candidateHead of heads) {
     for (const tail of tails) {

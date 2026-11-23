@@ -698,7 +698,7 @@ export const verticalSeoCopy: Record<MockVerticalId, VerticalSeoCopy> = {
       {
         heading: "Linked mocks and formula tools",
         body:
-          "Charter candidates: [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check), [CFA Level 2 practice exam](/mock-exams/cfa-level-2-readiness-check), and the [CFA Level 2 formula reference](/decks/cfa-level-2-formula-reference-2026) PDF. Risk candidates: [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check). Securities: [SIE practice test](/mock-exams/sie-full-mock), [Series 7](/mock-exams/series-7-readiness-check), [Series 63](/mock-exams/series-63-readiness-check), [Series 65](/mock-exams/series-65-readiness-check), and [CFP exam practice](/mock-exams/cfp-certification-readiness-check).",
+          "Charter candidates: [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check), [CFA Level 2 practice exam](/mock-exams/cfa-level-2-readiness-check), and the [CFA Level 2 formula sheet](/decks/cfa-level-2-formula-reference-2026) PDF. Risk candidates: [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check). Securities: [SIE practice test](/mock-exams/sie-full-mock), [Series 7](/mock-exams/series-7-readiness-check), [Series 63](/mock-exams/series-63-readiness-check), [Series 65](/mock-exams/series-65-readiness-check), and [CFP exam practice](/mock-exams/cfp-certification-readiness-check).",
       },
     ],
     faqs: [
