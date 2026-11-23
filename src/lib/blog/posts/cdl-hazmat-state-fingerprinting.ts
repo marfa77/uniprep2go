@@ -1,5 +1,7 @@
 import type { BlogPostDraft } from "../types";
 
+const CHECKED = "23 Nov 2026";
+
 export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   slug: "cdl-hazmat-endorsement-state-fingerprinting-background-check",
   title: "CDL HazMat fingerprinting: TSA HME fee and agent vs DMV states",
@@ -7,7 +9,7 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   metaDescription:
     "New or renewing CDL HazMat HME applicants pay $88.25 to TSA ($41 with a valid TWIC). Fingerprints are required at enrollment and each 5-year renewal — agent states use TSA centers.",
   publishedAt: "2026-07-27",
-  contentUpdated: "2026-11-19",
+  contentUpdated: "2026-11-23",
   eyebrow: "CDL HazMat · TSA & DMV fingerprinting",
   clusterId: "cdl-hazmat",
   relatedSlugs: [
@@ -16,257 +18,137 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
     "epa-608-type-1-vs-type-2-which-first",
   ],
   intro:
-    "**Before the HazMat endorsement reaches your CDL, most drivers need a TSA Hazardous Materials Endorsement security threat assessment: $88.25 for new and renewing applicants, or $41 if you already hold a valid TWIC (fees published on tsa.gov/for-industry/hazmat-endorsement, checked 19 Nov 2026).** You submit fingerprints for a federal background check; TSA generally requires **new fingerprints when you renew the HME every five years** (your state may add its own knowledge test). **Agent states** fingerprint at TSA enrollment centers after pre-enrollment; **non-agent states** (including Florida, Texas, and New York) collect prints at the DMV — walking into the wrong office costs a wasted trip. This guide maps who does what where, ELDT HazMat theory when it applies, and the documents that stop rejections at the door.",
+    "**Before a HazMat endorsement (HME) goes on your CDL, TSA has to clear you through a security threat assessment. New and renewing applicants pay $88.25, or $41 with a qualifying TWIC, and give fingerprints at enrollment and again at each renewal.** Most drivers enroll with TSA's enrollment provider; drivers licensed in eight states go through their state instead. Every figure below is from TSA's HazMat endorsement and disqualifying-offenses pages, checked " +
+    CHECKED +
+    ". The knowledge test is a separate state exam; practise it with the [CDL HazMat readiness check](/mock-exams/cdl-hazmat-readiness-check).",
   mockSlug: "cdl-hazmat-readiness-check",
   deckSlug: "cdl-hazmat-anki-deck",
   cta: {
     mockLabel: "Take the free CDL HazMat readiness check",
     deckLabel: "View the CDL HazMat Anki deck (notify when live)",
     summary:
-      "Take the free CDL HazMat readiness check — placarding, shipping papers, and emergency response — then join the Anki deck waitlist / drill weak topics before you pay for fingerprinting and state fees.",
+      "While TSA processes your threat assessment, prepare for your state's HazMat knowledge test with the free [CDL HazMat readiness check](/mock-exams/cdl-hazmat-readiness-check): placarding, shipping papers and emergency response.",
   },
   sections: [
     {
-      heading: "There Are Two Types of States. Know Which One You Live In.",
+      heading: "Where do you enroll: TSA center or your state?",
       blocks: [
         {
           type: "p",
-          text: "The TSA runs the HazMat background check federally, but states choose how you submit your fingerprints. There are two categories:",
-        },
-        {
-          type: "topics",
-          items: [
-            {
-              title: "TSA Agent States (34 states + DC)",
-              body: "You pre-enroll online at the TSA Universal Enrollment Services (UES) website or by phone, then visit a TSA-approved enrollment center for fingerprinting and identity verification. The TSA agent collects your prints, your documents, and your fee. The TSA processes everything.",
-            },
-            {
-              title: "Non-TSA Agent States (17 states)",
-              body: "Your state DMV collects your fingerprints and application data itself, then forwards everything to TSA. You do not visit a TSA enrollment center. You visit a DMV office. The states are:",
-              bullets: [
-                "Florida, Illinois, Indiana, Iowa, Kansas, Kentucky, Maryland",
-                "Mississippi, New Mexico, New York, Pennsylvania, South Carolina, Tennessee",
-                "Texas, Vermont, Virginia, Wisconsin",
-              ],
-            },
-          ],
+          text: "TSA runs the threat assessment for every state, but eight states handle application and fingerprinting themselves. TSA's page says drivers in **Florida, Kentucky, Maryland, New York, Pennsylvania, Texas, Virginia and Wisconsin** should go to their state Department of Motor Vehicles for application and fingerprinting information.",
         },
         {
           type: "p",
-          text: "If you are in a Non-TSA Agent state and walk into a TSA center, they will turn you away. If you are in a TSA Agent state and go to the DMV for fingerprints, the DMV will turn you away. Check your category before you schedule anything. Confirm current lists with FMCSA/TSA — state participation can change.",
+          text: "Everywhere else, you pre-enroll online or by phone with TSA's enrollment provider, then finish at an enrollment center with your documents and fingerprints. Appointments can be booked online or by calling (855) 347-8371, weekdays 8 a.m. to 10 p.m. Eastern; walk-ins are accepted, but appointments come first.",
+        },
+        {
+          type: "p",
+          text: "**New York changes on 1 Dec 2026:** applicants must visit two enrollment centers and give fingerprints at each, one set for the New York HME and one for the TSA HME.",
         },
       ],
     },
     {
-      heading: "TSA Agent States: The Exact Process",
+      heading: "How much does the TSA HazMat threat assessment cost?",
       blocks: [
-        {
-          type: "steps",
-          items: [
-            {
-              title: "Step 1: Complete ELDT HazMat theory (if required)",
-              body: "Complete FMCSA-approved Entry-Level Driver Training (ELDT) HazMat theory if you are a first-time applicant. The provider reports your completion to the FMCSA Training Provider Registry. Drivers who held HazMat before February 7, 2022 are typically exempt.",
-            },
-            {
-              title: "Step 2: Pass your state’s HazMat knowledge test",
-              body: "Some states let you take this before TSA clearance; others require TSA pre-enrollment first. Check locally.",
-            },
-            {
-              title: "Step 3: Pre-enroll for the TSA Security Threat Assessment",
-              body: "Pre-enroll online at the UES website or call 855-347-8371.",
-            },
-            {
-              title: "Step 4: Visit a TSA enrollment center",
-              body: "Bring a valid CDL or commercial learner permit (CLP), proof of citizenship or lawful permanent resident status (passport, birth certificate, or green card), identity document (driver's license), and the federal fee. Fee amounts change — verify current TSA pricing before you go (TWIC holders may get a reduced assessment fee).",
-            },
-            {
-              title: "Step 5: Wait for TSA processing",
-              body: "Timeline: 30–45 days, sometimes 60+ during busy periods. TSA notifies your state directly. You do not get a letter.",
-            },
-            {
-              title: "Step 6: Return to the DMV for the endorsement",
-              body: "Pay the state endorsement fee ($5–$20 typically) and receive your updated CDL.",
-            },
-          ],
-        },
         {
           type: "table",
-          caption: "Typical federal fee components (TSA Agent states — verify current amounts)",
-          headers: ["Component", "What it covers"],
+          caption: "TSA HME fees (tsa.gov/for-industry/hazmat-endorsement, checked " + CHECKED + ")",
+          headers: ["Applicant", "Fee"],
           rows: [
-            ["Information collection and transmission", "Enrollment / fingerprint capture"],
-            ["Threat assessment", "TSA Security Threat Assessment"],
-            ["FBI criminal history check", "Fingerprint-based FBI check"],
-            ["Total", "Often quoted near $85–$94 before state endorsement fees"],
-          ],
-        },
-      ],
-    },
-    {
-      heading: "Non-TSA Agent States: The DMV Runs the Show",
-      blocks: [
-        {
-          type: "p",
-          text: "In these 17 states, the process looks similar but the entry point is different:",
-        },
-        {
-          type: "steps",
-          items: [
-            {
-              title: "Step 1: Complete ELDT HazMat theory",
-              body: "Same federal ELDT rule as above when it applies.",
-            },
-            {
-              title: "Step 2: Start at your state DMV or BMV",
-              body: "You do not use the TSA UES website or visit a TSA center for fingerprinting.",
-            },
-            {
-              title: "Step 3: Submit fingerprints, identity documents, and fees at the DMV",
-              body: "The state collects a processing fee on top of the federal charges. The exact amount varies by state because each state sets its own collection and transmission fee.",
-            },
-            {
-              title: "Step 4: State forwards data to TSA",
-              body: "TSA still runs the threat assessment and FBI check.",
-            },
-            {
-              title: "Step 5: Get cleared, then finish at the DMV",
-              body: "TSA notifies the state of your clearance. You return to the DMV for the knowledge test (if you have not taken it yet) and endorsement issuance.",
-            },
+            ["New or renewing applicant", "$88.25"],
+            ["Reduced fee: valid TWIC, licensed in a state that accepts the TWIC threat assessment", "$41.00"],
           ],
         },
         {
           type: "p",
-          text: "**Critical document warning:** Non-TSA Agent states enforce strict identity matching. The name on your application must match your documents exactly unless you have a court-ordered name change document. The combination of driver’s license + Social Security card is no longer accepted as a valid document pair for HazMat enrollment in many Non-TSA Agent states. Bring a passport or birth certificate.",
+          text: "The fee is non-refundable and covers a threat assessment valid for five years. TSA lists the states that accept a TWIC for the reduced fee; some need at least one year left on the TWIC threat assessment and others at least four years, so check your state on TSA's page before paying the lower rate. Your state's own CDL and endorsement fees are separate and set by the state.",
         },
       ],
     },
     {
-      heading: "The States That Add Extra Steps",
-      blocks: [
-        {
-          type: "topics",
-          items: [
-            {
-              title: "Washington State",
-              body: "You must complete a **Washington-approved HazMat training course** before you take the knowledge test. Not just any FMCSA-approved ELDT course — a Washington-approved one. If your training provider is not on Washington’s approved list, the DMV will not let you test.",
-            },
-            {
-              title: "California",
-              body: "You must start the TSA background check **after** you apply for your CDL and pass the appropriate knowledge tests. The DMV may issue a CLP or temporary license that says «Not valid for carrying hazardous materials.» You then begin TSA pre-enrollment. You also need a valid CLP or CDL in hand before you can start fingerprinting at a TSA center.",
-            },
-            {
-              title: "New York, Florida, Texas, Pennsylvania, Virginia, Wisconsin, Kentucky, Maryland",
-              body: "These Non-TSA Agent states require you to start the process at the DMV, not online. Do not pre-enroll through the TSA UES website if you live here.",
-            },
-            {
-              title: "States requiring TSA clearance before the knowledge test",
-              body: "Some jurisdictions will not let you sit for the HazMat knowledge test until the TSA threat assessment is already on file. Others let you test first and wait for TSA clearance before issuing the endorsement. Call your DMV and ask: «Do I need TSA clearance before I test, or can I test first?» The answer determines your scheduling order.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "What the TSA Background Check Actually Looks For",
+      heading: "Who can apply, and what can disqualify you?",
       blocks: [
         {
           type: "p",
-          text: "The TSA runs your fingerprints through FBI criminal history databases and checks immigration status, terrorist watchlists, and outstanding warrants.",
+          text: "You may apply if you are a U.S. citizen, lawful permanent resident, naturalized citizen, or a nonimmigrant, asylee or refugee in lawful status, and hold a CDL issued by a U.S. state. States can set stricter citizenship or lawful-presence rules.",
         },
         {
           type: "topics",
           items: [
             {
-              title: "Permanent disqualifications (examples)",
-              body: "",
+              title: "Permanent disqualifying offenses (Part A)",
+              body: "A conviction, guilty or no-contest plea, or not-guilty-by-reason-of-insanity finding, whenever it occurred, for offenses such as:",
               bullets: [
-                "Espionage, sedition, treason",
-                "Terrorism or transportation security incidents",
+                "Espionage, sedition or treason, and federal crimes of terrorism",
+                "A crime involving a transportation security incident",
                 "Improper transportation of hazardous materials",
-                "Murder",
-                "Threats involving explosives or lethal devices",
-                "Certain RICO violations where the predicate act is a permanent disqualifier",
+                "Unlawful possession, use or sale of an explosive; threats involving explosives or lethal devices",
+                "Murder; certain RICO violations; attempts or conspiracies to commit these",
               ],
             },
             {
-              title: "Temporary disqualifications (typical lookback windows)",
-              body: "Often framed as about 7 years from conviction or 5 years from prison release — confirm current TSA rules for your case:",
+              title: "Interim disqualifying offenses (Part B)",
+              body: "Disqualifying if convicted (or similar finding) within 7 years of applying, or released from incarceration within 5 years of applying. Examples:",
               bullets: [
-                "Unlawful firearms possession, use, or sale",
-                "Extortion, fraud, bribery, smuggling",
-                "Immigration violations",
-                "Drug distribution or intent to distribute",
-                "Arson, kidnapping, rape, aggravated sexual abuse",
-                "Assault with intent to murder, robbery",
-                "Fraudulent entry into a seaport",
-                "Certain non-permanent RICO violations",
+                "Unlawful dealing in firearms; extortion; bribery; smuggling",
+                "Fraud and misrepresentation, including identity fraud and money laundering",
+                "Immigration violations; controlled-substance distribution",
+                "Arson, kidnapping, robbery, rape, assault with intent to kill, voluntary manslaughter",
               ],
             },
           ],
         },
         {
           type: "p",
-          text: "If TSA finds potentially disqualifying information, they send a Preliminary Determination of Ineligibility (PDI). You can appeal or request a waiver in writing to the TSA HazMat Processing Center. The DMV does not handle appeals.",
+          text: "Being wanted or under indictment for a Part A or Part B felony also disqualifies you until it is resolved (Part C).",
         },
       ],
     },
     {
-      heading: "Moving States: Do You Need New Fingerprints?",
+      heading: "How long does TSA take, and when should you start?",
       blocks: [
-        {
-          type: "p",
-          text: "If you transfer your HazMat endorsement to a new state, you generally **do not** need a new TSA background check or fingerprinting — provided your new state can issue an endorsement that expires within five years of your last assessment.",
-        },
         {
           type: "ul",
           items: [
-            "You must retake the HazMat knowledge test in the new state.",
-            "If your new state is a Non-TSA Agent state and your old state was a TSA Agent state, the new state may still require you to appear in person at the DMV to verify identity and pay state fees.",
-            "If your last TSA assessment was more than five years ago, you must complete a new full background check with fingerprinting.",
+            "**Recommendation:** enroll at least **60 days** before you need an eligibility decision, including for renewals. TSA says some applicants wait more than 45 days.",
+            "**Goal:** TSA aims to give a status within 60 days of receiving your enrollment information; missing data or hard-to-read fingerprints can add time.",
+            "**No letter:** TSA notifies your state licensing agency, and the state shows the result when it issues the CDL with the HME.",
+            "**Status checks:** online, except in the eight state-run states, where you check with the state or call 1-833-848-4759.",
           ],
         },
       ],
     },
     {
-      heading: "Timeline and Cost Summary",
+      heading: "Renewals, TWIC holders and moving states",
       blocks: [
         {
-          type: "table",
-          caption: "TSA Agent vs Non-TSA Agent path (approximate)",
-          headers: ["Step", "TSA Agent State", "Non-TSA Agent State"],
-          rows: [
-            ["ELDT training", "$50–$100", "$50–$100"],
-            ["DMV knowledge test", "$10–$50", "$10–$50"],
-            ["Fingerprinting location", "TSA enrollment center", "DMV office"],
-            [
-              "Background check fee",
-              "Federal package (~$85–$94 typical)",
-              "Federal portion + state collection fee",
-            ],
-            [
-              "TWIC discount",
-              "Often available for TSA enrollment portion",
-              "Usually not available the same way",
-            ],
-            ["TSA processing time", "30–45 days", "30–45 days (state forwards prints)"],
-            ["State endorsement fee", "$5–$20", "$5–$20"],
-            ["Total first-time cost", "$150–$275", "$120–$250+"],
-            ["Total timeline", "30–60 days", "30–60 days"],
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Most Common Rejection Reasons",
-      blocks: [
-        {
-          type: "ol",
+          type: "ul",
           items: [
-            "**Wrong fingerprinting location.** Showing up at a TSA center in Texas or at a DMV office in a TSA Agent state.",
-            "**Document mismatch.** Names do not match across ID, Social Security card, and CDL. Bring a passport or court order.",
-            "**Expired TWIC.** You claim a reduced fee but your TWIC expired. TSA charges the full assessment fee.",
-            "**Starting TSA too late.** You need the endorsement for a job starting Monday. TSA takes 30–45 days. Start 60 days before your deadline.",
-            "**Not checking if your state requires TSA clearance before the knowledge test.** You study, show up at the DMV, and they tell you to come back after TSA clears you.",
+            "**Renewal:** generally every five years, with new fingerprints. Some states review more often because of shorter license cycles, and states may require written tests.",
+            "**TWIC holders:** an HME issued on the basis of a TWIC threat assessment carries the same expiration date as that TWIC assessment, and the state must verify the TWIC before issuing.",
+            "**Moving states:** you may not need a new threat assessment if your new state can issue an HME that expires within five years of your last completed one.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What to do while you wait for TSA",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            {
+              title: "Confirm your state's order of steps",
+              body: "Ask your licensing agency whether you can take the HazMat knowledge test before TSA clears you; states differ.",
+            },
+            {
+              title: "Study for the knowledge test",
+              body: "Use the wait to practise placarding, shipping papers, loading and emergency response with the [CDL HazMat readiness check](/mock-exams/cdl-hazmat-readiness-check).",
+            },
+            {
+              title: "Keep your CDL basics current",
+              body: "If you are still building general knowledge, the [CDL general knowledge guide](/blog/cdl-general-knowledge-test-50-questions-what-to-expect) covers the core test.",
+            },
           ],
         },
       ],
@@ -274,56 +156,42 @@ export const cdlHazmatStateFingerprintingPost: BlogPostDraft = {
   ],
   faqs: [
     {
-      question: "Do all states use TSA enrollment centers for HazMat fingerprinting?",
+      question: "How much does the TSA HazMat endorsement cost?",
       answer:
-        "No. Seventeen states are Non-TSA Agent states where fingerprinting is done at the DMV or BMV: Florida, Illinois, Indiana, Iowa, Kansas, Kentucky, Maryland, Mississippi, New Mexico, New York, Pennsylvania, South Carolina, Tennessee, Texas, Vermont, Virginia, and Wisconsin.",
+        "$88.25 for new and renewing applicants, or $41 if you hold a valid TWIC and are licensed in a state that accepts the TWIC threat assessment (TSA, checked 23 Nov 2026). State fees are extra.",
     },
     {
-      question: "How much does the HazMat background check cost?",
+      question: "Which states do HazMat fingerprinting at the DMV instead of a TSA center?",
       answer:
-        "In TSA Agent states, the federal enrollment package is often quoted near $85–$94 before state endorsement fees. In Non-TSA Agent states, you pay the TSA threat assessment and FBI portions plus whatever the state charges for collection. Total first-time cost including training, testing, and endorsement fees commonly ranges from about $150 to $275.",
-    },
-    {
-      question: "Can I get a discount on the HazMat background check?",
-      answer:
-        "Yes, if you hold a valid Transportation Worker Identification Credential (TWIC). TSA Agent states often reduce the enrollment fee for TWIC holders. This discount generally does not apply the same way in Non-TSA Agent states.",
+        "TSA lists Florida, Kentucky, Maryland, New York, Pennsylvania, Texas, Virginia and Wisconsin. Drivers in those states go to their state DMV for application and fingerprinting information.",
     },
     {
       question: "How long does the TSA HazMat background check take?",
       answer:
-        "Typically 30 to 45 days. During busy periods it can stretch to 60+ days. Start the process at least 60 days before you need the endorsement.",
+        "TSA aims to give a status within 60 days of enrollment and recommends enrolling at least 60 days before you need the endorsement; some applicants wait more than 45 days.",
     },
     {
-      question: "Do I need to retake the HazMat knowledge test if I move to another state?",
-      answer:
-        "Yes. Each state requires you to pass its own HazMat knowledge test. However, you usually do not need a new TSA background check if your last assessment was within five years.",
+      question: "How long is the HazMat threat assessment valid?",
+      answer: "Five years. Renewal generally needs new fingerprints, and some states review more often.",
     },
     {
-      question: "What documents do I need for HazMat fingerprinting?",
+      question: "Will TSA send me an approval letter?",
       answer:
-        "A valid CDL or CLP, proof of citizenship or lawful permanent residence (passport, birth certificate, or green card), and a government-issued photo ID. In Non-TSA Agent states, a driver’s license plus Social Security card is often no longer sufficient — bring a passport or birth certificate.",
+        "No. TSA notifies your state licensing agency, and your state shows the result when it issues your CDL with the HazMat endorsement.",
     },
     {
-      question: "How often do I need to get fingerprinted for HazMat?",
+      question: "Can I get a HazMat endorsement with a criminal record?",
       answer:
-        "Every five years, or whenever your CDL and endorsement expire, whichever comes first. Renewal requires a new TSA security threat assessment and fingerprinting.",
+        "It depends on the offense. Some offenses disqualify permanently; others disqualify only if the conviction was within 7 years or release from prison within 5 years of applying. TSA's disqualifying-offenses page lists them.",
     },
     {
-      question: "Can I get HazMat endorsement with a felony?",
+      question: "Do I need a new background check if I move to another state?",
       answer:
-        "It depends. Permanent disqualifiers include terrorism, murder, espionage, and improper transport of hazardous materials. Temporary disqualifiers include certain firearms offenses, drug distribution, arson, kidnapping, and robbery, typically with multi-year lookbacks. You can appeal or request a waiver from TSA.",
-    },
-    {
-      question: "Does Washington State require extra training for HazMat?",
-      answer:
-        "Yes. Washington requires completion of a state-approved HazMat training course before you can take the knowledge test. Not all FMCSA-approved ELDT providers qualify — check Washington’s approved list.",
-    },
-    {
-      question: "Can I take the HazMat knowledge test before my TSA background check clears?",
-      answer:
-        "It depends on the state. Some states require TSA clearance on file before testing; others let you test first and hold the endorsement until TSA clears you. Call your DMV before scheduling.",
+        "Not always. If your new state can issue an HME that expires within five years of your last completed threat assessment, a new one may not be needed.",
     },
   ],
   bottomLine:
-    "The HazMat endorsement process is federal in name only. Where you get fingerprinted, how much you pay, and whether you need extra training depends entirely on your state. TSA Agent states send you to a TSA center. Non-TSA Agent states send you to the DMV and add their own fee. Washington adds a training gate. California makes you get a CLP first. Check your state’s category before you spend money on the wrong appointment.",
+    "Pay $88.25 (or $41 with a qualifying TWIC), enroll at least 60 days ahead, and check whether your state is one of the eight that run enrollment themselves. Sources: [TSA HazMat endorsement](https://www.tsa.gov/for-industry/hazmat-endorsement) and [TSA disqualifying offenses](https://www.tsa.gov/Disqualifying-Offenses-Factors), checked " +
+    CHECKED +
+    ".",
 };

@@ -1123,6 +1123,25 @@ export const BLOG_STOCK_IMAGE_CONFIG: Record<
       },
     ],
   },
+  "finra-exam-retake-waiting-period-2027": {
+    // Reuses the SIE post images (no new download).
+    hero: {
+      id: "finra-sie-hero",
+      alt: "Wall Street financial district buildings representing securities careers",
+      caption: "FINRA retake waits shorten on 19 Jan 2027",
+      queries: ["wall street new york financial district"],
+      mustInclude: ["wall street", "financial", "new york"],
+    },
+    inline: [
+      {
+        id: "finra-sie-charts",
+        alt: "Stock market candlestick charts on a trading monitor",
+        caption: "Use the wait to rebuild your weakest sections",
+        queries: ["stock market candlestick charts monitor"],
+        mustInclude: ["chart", "stock", "trading"],
+      },
+    ],
+  },
   "finra-sie-exam-prep-why-people-fail": {
     hero: {
       id: "finra-sie-hero",
