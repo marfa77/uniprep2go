@@ -7,6 +7,7 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
   metaDescription:
     "Type I is open-book. Type II is not. But if you take Type I open-book first, you cannot use it toward Universal. Here is the exact order that saves you time and money.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-23",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
   relatedSlugs: ["epa-608-practice-test-what-to-expect", "memorize-epa-608-refrigerant-numbers-method"],
@@ -101,11 +102,11 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "**Type I** is the easiest section because the equipment is simple. You are dealing with factory-sealed systems that hold 5 pounds or less of refrigerant. The recovery requirement is straightforward: recover to 0 psi before disposal. Leak repair rules are minimal because small appliances are exempt from the leak rate thresholds that apply to larger systems.",
+          text: "**Type I** is the easiest section because the equipment is simple. You are dealing with factory-sealed systems that hold 5 pounds or less of refrigerant. Before opening or disposing of a small appliance, 40 CFR 82.156(b) requires you to recover 90% of the refrigerant (80% if the compressor is not working, or if your recovery equipment predates 15 November 1993), or evacuate to 4 inches of mercury vacuum. The leak-repair thresholds in 82.157 apply to appliances with a full charge of 50 pounds or more, not to small appliances.",
         },
         {
           type: "p",
-          text: "**Type II** is where most technicians struggle. The material adds leak detection and repair requirements (30-day repair timeline for comfort cooling, 120 days for industrial process refrigeration), evacuation levels (15 inches of vacuum for high-pressure systems, or 0 psi if leaking), recovery techniques that minimize loss and cross-contamination, and charging/servicing protocols for systems opened during repair.",
+          text: "**Type II** is where most technicians struggle. The material adds leak-repair rules for appliances with 50 pounds or more of refrigerant (repair within 30 days, or 120 days if an industrial process shutdown is needed, once a leak exceeds 10% for comfort cooling, 20% for commercial refrigeration or 30% for industrial process refrigeration), the required evacuation levels before opening equipment, and recovery and charging practice.",
         },
         {
           type: "p",
@@ -126,7 +127,7 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "Even then, the cost difference between Type I and Universal is usually $20–$40 at most testing centers. For that price, you buy the option to work on any system later without retesting.",
+          text: "Fees are set by each EPA-approved certifying organization, so compare what your program charges for Type I alone and for Universal before you choose.",
         },
       ],
     },
@@ -144,7 +145,7 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "The Universal exam is Core + Type I + Type II + Type III in one sitting — about 100 questions instead of 50. The pass rate is roughly 70% for prepared candidates.",
+          text: "A Universal test has 100 questions: 25 each from Core, Type I, Type II and Type III. Each group needs 70% on a closed-book, proctored test, and you can also build Universal by combining passing scores on separate tests.",
         },
         {
           type: "p",
@@ -192,11 +193,11 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
           items: [
             {
               title: "Type I-specific",
-              body: "Recovery: 0 psi before disposal. Equipment: factory-sealed, ≤5 lbs refrigerant. No leak repair thresholds (small appliances are exempt).",
+              body: "Equipment: factory-sealed with 5 lb or less of refrigerant. Recovery before opening or disposal: 90% (80% with a non-working compressor or pre-15 Nov 1993 equipment) or 4 in Hg vacuum. Leak-repair thresholds apply only from a 50 lb full charge.",
             },
             {
               title: "Type II-specific",
-              body: "Recovery: 15 inches of vacuum (or 0 psi if leaking). Leak repair: 30 days for comfort cooling (10% leak rate threshold), 120 days for industrial process refrigeration. High-pressure = above 170 psig (R-410A, R-22); very-high-pressure = above 355 psig. Cannot work on motor vehicle AC (that is EPA 609).",
+              body: "Evacuation before opening (Table 1, equipment made on or after 15 Nov 1993): very-high-pressure 0 in Hg; high-pressure under 200 lb 0; high-pressure 200 lb or more 10; medium-pressure under 200 lb 10; 200 lb or more 15. Leak repair: within 30 days (120 with an industrial process shutdown) once the leak rate passes 10% comfort cooling, 20% commercial refrigeration or 30% industrial process. Motor vehicle AC is certified separately under 40 CFR part 82, subpart B.",
             },
           ],
         },
@@ -226,17 +227,17 @@ export const epa608Type1VsType2Post: BlogPostDraft = {
     {
       question: "How many questions are on the EPA 608 Universal exam?",
       answer:
-        "Approximately 100 multiple-choice questions: 25 Core + 25 Type I + 25 Type II + 25 Type III. Each section is scored separately. You must pass Core plus each Type section to earn Universal.",
+        "100 questions: 25 Core + 25 Type I + 25 Type II + 25 Type III (40 CFR part 82, subpart F, appendix D). Each group needs 70%, and Universal can also be built from separate passing tests.",
     },
     {
       question: "What is the passing score for EPA 608?",
       answer:
-        "Most testing organizations require approximately 70% per section. For Type I, that is roughly 18 out of 25 correct. For Universal, you need ~18 correct in each of the four sections.",
+        "70% on closed-book Type I, Type II, Type III and Universal tests, which is 18 of 25 per group. Type I tests taken in the mail-in format need 84% (appendix D, checked 23 Nov 2026).",
     },
     {
       question: "Can I take the EPA 608 exam online?",
       answer:
-        "Type I can be taken online in an open-book format through some providers. Type II, Type III, and Universal must be taken in a proctored environment — either in-person or via remote proctoring.",
+        "Type I-only programs may use an on-site or mail-in format. Type II, Type III and Universal require a closed-book, proctored test in a secure environment, and a mail-in Type I test cannot count toward Universal.",
     },
     {
       question: "Does EPA 608 certification expire?",
