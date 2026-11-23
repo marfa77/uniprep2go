@@ -16,7 +16,12 @@ export type ExamFamilyMember = {
 export type ExamFamily = {
   id: string;
   label: string;
+  /** Default hub when mock/deck-specific hubs are not set. */
   hubHref: string;
+  /** Mock pages: usually `/mock-exams/v/{verticalId}`. */
+  mockHubHref?: string;
+  /** Deck pages: finance → `/finance-anki-decks`, else often same as mock vertical hub. */
+  deckHubHref?: string;
   intro?: string;
   members: ExamFamilyMember[];
 };
@@ -38,17 +43,21 @@ const RELATED_MAX = 6;
 /** Hub paths keyed by exam-family id (existing URLs only). */
 const FAMILY_HUB_HREF: Record<string, string> = {
   finra: "/mock-exams/v/licensing",
-  "finance-credentials": "/finance-anki-decks",
+  "finance-credentials": "/mock-exams/v/finance",
   admissions: "/mock-exams/v/finance",
   insurance: "/mock-exams/v/licensing",
   "real-estate": "/mock-exams/v/real-estate",
-  "project-hr": "/mock-exams/v/building",
+  "project-management": "/mock-exams/v/building",
+  "hr-certification": "/mock-exams/v/licensing",
   nursing: "/mock-exams/v/nursing",
   pharmacy: "/mock-exams/v/allied-health",
   "phlebotomy-lab": "/mock-exams/v/lab",
   "medical-assisting": "/mock-exams/v/allied-health",
   coding: "/mock-exams/v/health-admin",
-  "imaging-resp-surg": "/mock-exams/v/allied-health",
+  "diagnostic-imaging": "/mock-exams/v/imaging",
+  "allied-clinical-specialty": "/mock-exams/v/allied-health",
+  "surgical-sterile": "/mock-exams/v/surgical",
+  dietetics: "/mock-exams/v/nutrition",
   dental: "/mock-exams/v/dental",
   ems: "/mock-exams/v/ems",
   building: "/mock-exams/v/building",
@@ -66,6 +75,50 @@ const FAMILY_HUB_HREF: Record<string, string> = {
   veterinary: "/mock-exams/v/veterinary",
   citizenship: "/mock-exams/v/citizenship",
 };
+
+const FAMILY_HUB_OVERRIDES: Record<
+  string,
+  Pick<ExamFamily, "mockHubHref" | "deckHubHref">
+> = {
+  "finance-credentials": {
+    mockHubHref: "/mock-exams/v/finance",
+    deckHubHref: "/finance-anki-decks",
+  },
+  insurance: {
+    deckHubHref: "/finance-anki-decks",
+  },
+  "project-management": {
+    deckHubHref: "/mock-exams/v/building",
+  },
+  commodity: {
+    deckHubHref: "/finance-anki-decks",
+  },
+  "phlebotomy-lab": {
+    deckHubHref: "/mock-exams/v/allied-health",
+  },
+};
+
+const DECK_CATEGORY_HUB: Partial<Record<string, string>> = {
+  finance: "/finance-anki-decks",
+  language: "/language-certification-decks",
+};
+
+/** Hub path used for deck-page family CTAs (exported for tests). */
+export function expectedDeckMemberHub(deckSlug: string): string {
+  const deck = getDeckBySlug(deckSlug);
+  if (!deck) {
+    return "/decks";
+  }
+  const categoryHub = DECK_CATEGORY_HUB[deck.category];
+  if (categoryHub) {
+    return categoryHub;
+  }
+  const mock = getLinkedMockForDeck(deckSlug) ?? getDeckPracticeMock(deckSlug);
+  if (mock) {
+    return `/mock-exams/v/${mock.verticalId}`;
+  }
+  return "/decks";
+}
 
 const ANCHOR_OVERRIDES: Record<string, string> = {
   "sie-full-mock": "FINRA SIE full practice test",
@@ -170,10 +223,14 @@ function defineFamily(
   members: ExamFamilyMember[],
   intro?: string,
 ): ExamFamily {
+  const hubHref = FAMILY_HUB_HREF[id];
+  const hubOverrides = FAMILY_HUB_OVERRIDES[id];
   return {
     id,
     label,
-    hubHref: FAMILY_HUB_HREF[id],
+    hubHref,
+    mockHubHref: hubOverrides?.mockHubHref,
+    deckHubHref: hubOverrides?.deckHubHref,
     intro,
     members,
   };
@@ -247,12 +304,14 @@ export const EXAM_FAMILIES: ExamFamily[] = [
     mm("mortgage-loan-originator-readiness-check"),
     dd("mortgage-loan-originator-anki-deck"),
   ]),
-  defineFamily("project-hr", "Project management & HR credentials", [
+  defineFamily("project-management", "Project management credentials", [
     mm("pmp-readiness-check"),
     dd("pmp-anki-deck"),
     mm("capm-readiness-check"),
     mm("six-sigma-green-belt-readiness-check"),
     dd("six-sigma-green-belt-anki-deck"),
+  ]),
+  defineFamily("hr-certification", "HR certification (SHRM & HRCI)", [
     mm("shrm-cp-readiness-check"),
     mm("shrm-scp-readiness-check"),
     mm("phr-hrci-readiness-check"),
@@ -296,16 +355,22 @@ export const EXAM_FAMILIES: ExamFamily[] = [
     mm("nha-cbcs-readiness-check"),
     mm("medical-billing-specialist-readiness-check"),
   ]),
-  defineFamily("imaging-resp-surg", "Imaging, respiratory, surgical & nutrition", [
+  defineFamily("diagnostic-imaging", "Diagnostic imaging (ARDMS SPI)", [
     mm("ardms-spi-readiness-check"),
     dd("ardms-spi-anki-deck"),
+  ]),
+  defineFamily("allied-clinical-specialty", "Respiratory, dialysis & optician", [
     mm("nbrc-tmc-readiness-check"),
-    mm("nbstsa-cst-readiness-check"),
-    mm("crcst-readiness-check"),
     mm("ccht-dialysis-readiness-check"),
     dd("ccht-dialysis-anki-deck"),
     mm("abo-optician-readiness-check"),
     dd("abo-optician-anki-deck"),
+  ]),
+  defineFamily("surgical-sterile", "Surgical & sterile processing", [
+    mm("nbstsa-cst-readiness-check"),
+    mm("crcst-readiness-check"),
+  ]),
+  defineFamily("dietetics", "Registered dietitian (RD)", [
     mm("rd-exam-readiness-check"),
     dd("rd-exam-anki-deck"),
   ]),
@@ -544,6 +609,9 @@ function addUnique(
 
 const VERTICAL_FILL_NEIGHBORS: Partial<Record<MockVerticalId, MockVerticalId[]>> = {
   dental: ["allied-health", "surgical"],
+  surgical: ["allied-health"],
+  imaging: ["allied-health"],
+  nutrition: ["allied-health"],
   veterinary: ["allied-health"],
 };
 
@@ -766,19 +834,29 @@ export function getRelatedForDeck(slug: string): RelatedLink[] {
   return buildRelatedLinks(getExamFamilyForDeck(slug), slug, "deck");
 }
 
-function hubLinkLabel(family: ExamFamily): string {
-  if (family.hubHref.includes("anki-decks") || family.hubHref === "/decks") {
+function hubLinkLabel(family: ExamFamily, href: string): string {
+  if (href.includes("anki-decks") || href === "/decks") {
     return `All ${family.label} →`;
   }
   return `All ${family.label} practice tests →`;
 }
 
+function mockHubForFamily(family: ExamFamily): string {
+  return family.mockHubHref ?? family.hubHref;
+}
+
+function deckHubForFamily(family: ExamFamily): string {
+  return family.deckHubHref ?? family.hubHref;
+}
+
 export function getFamilyHubLinkForMock(slug: string): FamilyHubLink | undefined {
   const family = getExamFamilyForMock(slug);
-  if (!family) {
+  const config = getMockExamConfig(slug);
+  if (!family || !config) {
     return undefined;
   }
-  return { href: family.hubHref, anchor: hubLinkLabel(family) };
+  const href = family.mockHubHref ?? `/mock-exams/v/${config.verticalId}`;
+  return { href, anchor: hubLinkLabel(family, href) };
 }
 
 export function getFamilyHubLinkForDeck(slug: string): FamilyHubLink | undefined {
@@ -786,5 +864,6 @@ export function getFamilyHubLinkForDeck(slug: string): FamilyHubLink | undefined
   if (!family) {
     return undefined;
   }
-  return { href: family.hubHref, anchor: hubLinkLabel(family) };
+  const href = family.deckHubHref ?? expectedDeckMemberHub(slug);
+  return { href, anchor: hubLinkLabel(family, href) };
 }
