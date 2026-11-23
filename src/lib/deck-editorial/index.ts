@@ -10,6 +10,11 @@ import { gmatDeckEditorial } from "./gmat-focus-anki-deck";
 import { cemDeckEditorial } from "./cem-anki-deck";
 import { mricsQsDeckEditorial } from "./mrics-quantity-surveying-anki-deck";
 import { ptcbDeckEditorial } from "./ptcb-pharmacy-technician-anki-deck";
+import { cdcpDeckEditorial } from "./cdcp-anki-deck";
+import { series63DeckEditorial } from "./series-63-anki-deck";
+import { cfpDeckEditorial } from "./cfp-certification-anki-deck";
+import { pcDeckEditorial } from "./property-casualty-insurance-exam-anki-deck";
+import { eaDeckEditorial } from "./enrolled-agent-anki-deck";
 
 export type { DeckEditorialBundle } from "./types";
 
@@ -25,6 +30,11 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "cem-anki-deck": cemDeckEditorial,
   "mrics-quantity-surveying-anki-deck": mricsQsDeckEditorial,
   "ptcb-pharmacy-technician-anki-deck": ptcbDeckEditorial,
+  "cdcp-anki-deck": cdcpDeckEditorial,
+  "series-63-anki-deck": series63DeckEditorial,
+  "cfp-certification-anki-deck": cfpDeckEditorial,
+  "property-casualty-insurance-exam-anki-deck": pcDeckEditorial,
+  "enrolled-agent-anki-deck": eaDeckEditorial,
 };
 
 export function getDeckEditorialBundle(slug: string): DeckEditorialBundle | null {
