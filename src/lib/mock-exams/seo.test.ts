@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { getMockExamConfig } from "./configs";
-import { buildMockExamFaqs, buildMockSeoDescription, buildMockSeoTitle } from "./seo";
+import { buildMockExamFaqs, buildMockSeoDescription, buildMockSeoTitle, getMockSeoProfile } from "./seo";
 import { fitMetaDescription } from "../seo";
 
 describe("mock exam SEO", () => {
@@ -73,6 +73,32 @@ describe("mock exam SEO", () => {
     expect(buildMockSeoDescription(rd!)).toContain("120 timed questions");
     expect(buildMockSeoDescription(rd!)).not.toContain("60 timed questions");
     expect(buildMockSeoDescription(rd!)).toContain("$9.99");
+  });
+
+  it("uses 2027 in default medical mock titles and leaves frozen mocks on 2026", () => {
+    const abo = getMockExamConfig("abo-optician-readiness-check");
+    const nbrc = getMockExamConfig("nbrc-tmc-readiness-check");
+    const unarmed = getMockExamConfig("unarmed-security-officer-readiness-check");
+    const ptcb = getMockExamConfig("ptcb-pharmacy-technician-mock");
+    expect(abo).toBeDefined();
+    expect(nbrc).toBeDefined();
+    expect(unarmed).toBeDefined();
+    expect(ptcb).toBeDefined();
+    expect(buildMockSeoTitle(abo!)).toContain("2027");
+    expect(buildMockSeoTitle(nbrc!)).toContain("2027");
+    expect(getMockSeoProfile(unarmed!).title).toContain("2026");
+    expect(getMockSeoProfile(unarmed!).title).not.toContain("2027");
+    expect(buildMockSeoTitle(ptcb!)).toContain("2026");
+  });
+
+  it("answers GARP official mock on FRM Part 1 FAQ", () => {
+    const config = getMockExamConfig("frm-part-1-readiness-check");
+    expect(config).toBeDefined();
+    const faqs = buildMockExamFaqs(config!);
+    const garpFaq = faqs.find((faq) => faq.question === "Is there an official GARP FRM Part 1 mock?");
+    expect(garpFaq?.answer).toContain("GARP Learning");
+    expect(garpFaq?.answer).toContain("garp.org");
+    expect(garpFaq?.answer).not.toMatch(/\d+-question GARP practice/);
   });
 
   it("exposes search-intent FAQs on the HTML page and in JSON-LD", () => {

@@ -28,6 +28,7 @@ import { DeckStickyCheckoutBar } from "@/components/decks/deck-sticky-checkout-b
 import { DeckPurchaseCountNote } from "@/components/decks/deck-purchase-count";
 import { ReportLayoutPreview } from "@/components/mock-exams/report-layout-preview";
 import { DeckWaitlistCta } from "@/components/decks/deck-waitlist-cta";
+import { CfaLevel2FormulaPreviewSection } from "@/components/decks/cfa-level-2-formula-preview-section";
 import { RelatedExamGuidesSection } from "@/components/blog/related-exam-guides";
 import { CollapsibleDetails } from "@/components/ui/collapsible-details";
 import { btnPrimary, btnSecondary } from "@/lib/ui-button-classes";
@@ -503,6 +504,10 @@ export default async function DeckPage({
               <DeckPurchaseCountNote slug={deck.slug} />
             ) : null}
         </div>
+
+        {deck.slug === "cfa-level-2-formula-reference-2026" ? (
+          <CfaLevel2FormulaPreviewSection />
+        ) : null}
 
         {deck.slug === "cfa-level-1-anki-deck" ? <ReportLayoutPreview /> : null}
 

@@ -769,8 +769,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Level 2 is item sets. These 495 cards carry typeset formulas — FCFF vs FCFE, OAS, residual income — for daily Anki review at {PRICE}. Kaplan Schweser CFA Level II flashcards are $159 printed and online. Sit the 60-question / 120-minute mock (free 25-question version) to pick weak topics before 22 official vignettes.",
   },
   "cfa-level-2-formula-reference-2026": {
-    title: "CFA Level 2 Formula Sheet 2026 — 281 Formulas PDF, $19",
-    headline: "CFA Level 2 Formula Sheet PDF 2026 — 281 Formulas + Free Mock",
+    title: "CFA Level 2 Formula Sheet — 281 Formulas, Free Preview",
+    headline: "CFA Level 2 Formula Sheet PDF — 281 Formulas + Free Preview & Mock",
     studyLabel: "CFA Level 2 exam prep",
     description:
       "CFA Level 2 formula sheet PDF for 2026: 281 formulas with exam traps, all 22 Standards, 80-question recall drill, 51 printable pages. $19. Not CFA Institute material.",
