@@ -43,7 +43,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
           headers: ["", "WELL AP", "Fitwel Ambassador"],
           rows: [
             ["Issued by", "IWBI", "Fitwel"],
-            ["How you earn it", "Pass the WELL AP exam", "Complete the Ambassador course (90-minute pre-recorded video plus the Fitwel Reference Guides), then pass a 100-question online multiple-choice exam"],
+            ["How you earn it", "Pass the WELL AP exam: 115 multiple-choice questions in 2.5 hours, closed book with some embedded reference content; 170 to pass on a 125–200 range", "Complete the Ambassador course (90-minute pre-recorded video plus the Fitwel Reference Guides), then pass a 100-question online multiple-choice exam"],
             ["Price", "$299 exam registration; $150 for college students, educators and recent graduates", "$300 course; 50% off for enrolled college or university students; 30% off for groups of 10 or more"],
             ["Where", "At a testing centre or online with ProProctor", "Online"],
             ["Included", "WELL AP Handbook, basic study resources, articles and webcasts", "Certificate, listing on fitwel.org and an introductory presentation"],
@@ -53,7 +53,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "IWBI does not publish the number of questions or the pass mark on its WELL AP page, and Fitwel does not publish a pass mark or time limit for its exam, so this guide does not quote them.",
+          text: "Fitwel does not publish a pass mark or time limit for its exam, so this guide does not quote them. IWBI recommends 2 to 3 months to prepare for WELL AP.",
         },
       ],
     },
@@ -76,7 +76,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
           rows: [
             ["Focus", "Health and well-being in buildings (WELL Standard)", "General green building practice and the LEED process"],
             ["Exam fee", "$299; $150 for students, educators and recent graduates", "$250; $200 for USGBC members; $100 for students"],
-            ["Exam", "Testing centre or online (ProProctor)", "100 questions in 2 hours, 170 of 200 to pass; Prometric centre or online"],
+            ["Exam", "115 questions in 2.5 hours, 170 to pass (125–200 range); testing centre or online (ProProctor)", "100 questions in 2 hours, 170 of 200 to pass; Prometric centre or online"],
             ["Upkeep", "30 CE hours every two years", "15 CE hours within 2 years"],
           ],
         },
@@ -131,5 +131,5 @@ export const wellApVsFitwelPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Pick WELL AP for depth on building health, Fitwel Ambassador for a short project-focused credential, and check the upkeep before you commit. Sources: [IWBI — WELL AP](https://www.wellcertified.com/well-ap/), [Fitwel Ambassadors](https://www.fitwel.org/ambassadors), [Fitwel Ambassador course](https://www.fitwel.org/resources/p/fitwel-ambassador-course-1-6rx52) and [USGBC — LEED Green Associate](https://www.usgbc.org/credentials/leed-green-associate), checked 24 Nov 2026.",
+    "Pick WELL AP for depth on building health, Fitwel Ambassador for a short project-focused credential, and check the upkeep before you commit. Sources: [IWBI — WELL AP](https://www.wellcertified.com/well-ap/), [IWBI — WELL AP exam](https://www.wellcertified.com/well-ap-exam/), [Fitwel Ambassadors](https://www.fitwel.org/ambassadors), [Fitwel Ambassador course](https://www.fitwel.org/resources/p/fitwel-ambassador-course-1-6rx52) and [USGBC — LEED Green Associate](https://www.usgbc.org/credentials/leed-green-associate), checked 24 Nov 2026.",
 };
