@@ -78,6 +78,7 @@ import {
 } from "@/lib/page-layout";
 import { deckRobots, finalize, leafPageTitle } from "@/lib/seo";
 import { buildSocialMetadata } from "@/lib/social-metadata";
+import { renderInlineMarkdown } from "@/lib/simple-markdown";
 import {
   FREE_DIAGNOSTIC_QUESTIONS,
   freeMockLinkNote,
@@ -405,7 +406,7 @@ export default async function DeckPage({
         ) : null}
 
         <div className="mt-6 max-w-3xl">
-            <p className="text-xl leading-8 text-[#18140f]">{shortPitch}</p>
+            <p className="text-xl leading-8 text-[#18140f]">{renderInlineMarkdown(shortPitch)}</p>
             {availableDeck && availableDeck.checkoutProvider !== "App Store" ? (
               <DeckHeroBuyBlock
                 checkoutCtaLabel={checkoutCtaLabel}

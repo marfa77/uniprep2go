@@ -337,7 +337,7 @@ export const positioningOverrides: Partial<
       "Official Top-Off is 130 questions (125 scored + 5 pretest) / 3h45 / passing score 72 / FINRA fee $395 — our mock is a shorter diagnostic, not a FreeFellow-scale bank",
     ],
     summaryProse:
-      "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $9.99 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump.",
+      "Full-length no-cost 125Q banks win on volume. UniPrep Series 7 flashcards win when you want a timed 60Q job-function diagnostic (free 25-question version) plus an ownable $9.99 / 300-card .apkg for daily suitability repair after SIE — not Series 63 state law and not another browser-only Q dump. Exam facts, FINRA job-function weights and the 19 Jan 2027 retake change are on the [Series 7 practice test](/mock-exams/series-7-readiness-check) page.",
   },
   "ptcb-pharmacy-technician-anki-deck": {
     ourEdge: [
@@ -448,7 +448,7 @@ export const positioningOverrides: Partial<
       "Independent prep — not PMI exam material",
     ],
     summaryProse:
-      "Full-length PMP sims matter late. Start with UniPrep’s free domain diagnostic and $11 ECO-aligned Anki — then move to a 180-question / 240-minute simulator when domain scores stabilize.",
+      "Full-length PMP sims matter late. Start with UniPrep’s free domain diagnostic and $11 ECO-aligned Anki — then move to a 180-question / 240-minute simulator when domain scores stabilize. Eligibility, ECO domain weights and retake rules are on the [PMP practice test](/mock-exams/pmp-readiness-check) page.",
   },
   "parapro-anki-deck": {
     ourEdge: [
