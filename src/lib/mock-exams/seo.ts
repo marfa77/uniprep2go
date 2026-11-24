@@ -569,7 +569,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "free gmat practice questions",
       "gmat 2026 practice test",
     ],
-    headline: "Free GMAT Readiness Check (2026 exam)",
+    headline: "Free GMAT Readiness Check (2027 exam)",
     intro:
       "A timed diagnostic on the current GMAT: Quantitative Reasoning, Verbal Reasoning, and Data Insights with equal section weights. Official sitting is 64 questions / 2 hours 15 minutes / 205–805. This 45-question check uses a bank rewritten October 2026 — not Sentence Correction or Quant geometry leftovers.",
     audience:
@@ -1140,7 +1140,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED AP BD+C Readiness Check",
     intro:
-      "A timed 60-question / 75-minute LEED AP BD+C diagnostic written to the LEED v5 specialty specifications — process and integrative assessments, location, sites and water, energy and commissioning, embodied carbon and materials, and IEQ — drawn from a 120-item bank so retakes differ. The official exam moved to LEED v5 (v4 testing ended June 28, 2026). Requires LEED Green Associate for the official AP credential.",
+      "A timed 60-question / 75-minute LEED AP BD+C diagnostic written to the LEED v5 specialty specifications — process and integrative assessments, location, sites and water, energy and commissioning, embodied carbon and materials, and IEQ — drawn from a 120-item bank so retakes differ. The official exam moved to LEED v5. Requires LEED Green Associate for the official AP credential.",
     audience:
       "Design professionals, sustainability consultants, and LEED GA holders preparing for the LEED AP BD+C specialty exam.",
     practiceTestLabel: "LEED AP BD+C practice test",
@@ -1158,7 +1158,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED AP O+M Readiness Check",
     intro:
-      "A timed 60-question / 75-minute LEED AP Operations + Maintenance diagnostic written to the LEED v5 O+M specifications — assessments and O+M plans, transportation performance, water metering, energy, GHG and refrigerant performance, waste, and IEQ operations — drawn from a 120-item bank so retakes differ. The official specialty exam moved to LEED v5 (v4 testing ended June 28, 2026).",
+      "A timed 60-question / 75-minute LEED AP Operations + Maintenance diagnostic written to the LEED v5 O+M specifications — assessments and O+M plans, transportation performance, water metering, energy, GHG and refrigerant performance, waste, and IEQ operations — drawn from a 120-item bank so retakes differ. The official specialty exam moved to LEED v5.",
     audience:
       "Facility managers, sustainability leads, and LEED Green Associates preparing for the LEED AP O+M specialty exam on existing buildings.",
     practiceTestLabel: "LEED AP O+M practice test",

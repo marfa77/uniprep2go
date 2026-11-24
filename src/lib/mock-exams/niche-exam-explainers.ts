@@ -1508,7 +1508,7 @@ export const nicheExamExplainers: Partial<Record<string, NicheExamExplainer>> = 
       "LEED AP Building Design and Construction (BD+C) is the specialty LEED credential for professionals applying LEED to design and construction projects. It goes beyond Green Associate literacy into credit application, documentation, and rating-system judgment for BD+C project types. Candidates generally must hold LEED GA first. Confirm prerequisites and handbook details with GBCI.",
     administeredBy: "Green Business Certification Inc. (GBCI) / USGBC",
     officialFormat:
-      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. LEED v4 testing ended June 28, 2026; the v5 beta continues until the final v5 exam (expected February 2027). UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $9.99 / 120-card Anki deck.",
+      "Official GBCI LEED AP BD+C specialty: 100 multiple-choice questions / 2 hours / scaled pass 170 (125–200), English only during the LEED v5 beta. USGBC says exams are now available for LEED v5. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes from a 120-item v5 bank weighted to the blueprint / 70% diagnostic — then drill weak credit categories in the linked $9.99 / 120-card Anki deck.",
     whoFor:
       "LEED GA holders on design and construction teams — architects, engineers, consultants, and sustainability managers preparing for AP-level BD+C project responsibilities.",
     howToPrepare:

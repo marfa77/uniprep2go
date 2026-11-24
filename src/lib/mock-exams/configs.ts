@@ -1066,7 +1066,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Official GBCI LEED AP BD+C specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170; requires an active LEED Green Associate. v4 testing ended June 28, 2026; the LEED v5 beta runs until the final v5 exam (expected February 2027). v5 blueprint: 85 scored items — LEED Process 7, Integrative Process 8, Location and Transportation 8, Sustainable Sites 9, Water Efficiency 9, Energy and Atmosphere 18, Materials and Resources 13, Indoor Environmental Quality 13. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target.",
+      "Official GBCI LEED AP BD+C specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170; requires an active LEED Green Associate. USGBC says exams are now available for LEED v5. v5 blueprint: 85 scored items — LEED Process 7, Integrative Process 8, Location and Transportation 8, Sustainable Sites 9, Water Efficiency 9, Energy and Atmosphere 18, Materials and Resources 13, Indoor Environmental Quality 13. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target.",
     disclaimer: usgbcDisclaimer,
     description:
       "A 60-question LEED AP BD+C (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — integrative process and location, sites and water, energy, materials, and IEQ. Independent prep, not USGBC material.",
@@ -1132,7 +1132,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Official GBCI LEED AP O+M specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; requires an active LEED Green Associate. v4 testing ended June 28, 2026; the LEED v5 beta runs until the final v5 exam (expected early 2027). v5 blueprint: 85 scored items — LEED Process 10, Integrative Process 10, Location and Transportation 8, Sustainable Sites 5, Water Efficiency 7, Energy and Atmosphere 21, Materials and Resources 7, Indoor Environmental Quality 17. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
+      "Official GBCI LEED AP O+M specialty exam: 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; requires an active LEED Green Associate. USGBC says exams are now available for LEED v5. v5 blueprint: 85 scored items — LEED Process 10, Integrative Process 10, Location and Transportation 8, Sustainable Sites 5, Water Efficiency 7, Energy and Atmosphere 21, Materials and Resources 7, Indoor Environmental Quality 17. This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 120-item v5-aligned bank weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
     disclaimer: usgbcDisclaimer,
     description:
       "A 60-question LEED AP O+M (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 120-item bank weighted to the GBCI blueprint — process and assessments, transportation and sites, water metering, energy and refrigerant performance, waste, and IEQ operations. Independent prep, not USGBC material.",

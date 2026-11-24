@@ -5,7 +5,7 @@ export const cdlGeneralKnowledgePost: BlogPostDraft = {
   title: "CDL General Knowledge: The 50-Question Exam Every Trucker Fails at Least Once",
   titleTag: "CDL General Knowledge Test 2027: 50 Questions, 80% Pass & What to Expect",
   metaDescription:
-    "50 questions. 60 minutes. 80% to pass. Every CDL applicant takes it, but half fail on the first try. Exact topic split — and why air brakes are not on this test.",
+    "80% to pass by federal rule; states set length and time. Every CDL applicant takes it. What it covers, how it leads to your CLP — and why air brakes are tested separately.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "CDL · General Knowledge",

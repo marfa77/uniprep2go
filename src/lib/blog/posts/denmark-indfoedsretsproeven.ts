@@ -5,7 +5,7 @@ export const denmarkIndfoedsretsproevenPost: BlogPostDraft = {
   title: "Denmark Indfødsretsprøven",
   titleTag: "Denmark Indfødsretsprøven: How to Pass 2027",
   metaDescription:
-    "The November 2025 Danish citizenship test had a 47% pass rate. You need 36 of 45 questions AND 4 of 5 values questions. Here is the exact format and the study material that matters.",
+    "The Danish citizenship test has two gates: 36 of 45 questions AND 4 of 5 values questions, in 45 minutes. Here is the exact format and the study material that matters.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Denmark · Indfødsretsprøven",

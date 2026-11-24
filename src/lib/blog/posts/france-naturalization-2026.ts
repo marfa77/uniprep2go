@@ -2,7 +2,7 @@ import type { BlogPostDraft } from "../types";
 
 export const franceNaturalization2026Post: BlogPostDraft = {
   slug: "france-naturalization-2026-civic-exam-b2-language-test",
-  title: "France Naturalization 2026: Two Exams, Not One",
+  title: "France Naturalization 2027: Two Exams, Not One",
   titleTag: "France Naturalization 2026: Civic Exam + B2 Language Test Guide",
   metaDescription:
     "Since January 1, 2026, France requires a civic exam AND a B2 language test. The civic exam is 40 questions in 45 minutes. The language test is TCF IRN at B2. Here is how both work.",

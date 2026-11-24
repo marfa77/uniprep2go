@@ -383,7 +383,7 @@ export const HIGH_INTENT_MOCK_BLOCKS: HighIntentMockBlock[] = [
     query: "LEED AP O+M practice test free",
     mockSlug: "leed-ap-om-readiness-check",
     disambiguation:
-      "Official GBCI LEED AP O+M specialty is 100 questions in 2 hours (scaled pass 170/200) for existing-building operations, now on LEED v5 (v4 testing ended June 28, 2026) — this 60-question / 75-minute check (free 25-question version) draws from a 120-item v5 bank and is a diagnostic baseline, not USGBC/GBCI exam material.",
+      "Official GBCI LEED AP O+M specialty is 100 questions in 2 hours (scaled pass 170/200) for existing-building operations, now on LEED v5 — this 60-question / 75-minute check (free 25-question version) draws from a 120-item v5 bank and is a diagnostic baseline, not USGBC/GBCI exam material.",
   },
   {
     query: "GRE practice test free",

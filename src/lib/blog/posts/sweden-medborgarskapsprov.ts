@@ -2,7 +2,7 @@ import type { BlogPostDraft } from "../types";
 
 export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   slug: "sweden-medborgarskapsprov-2026-new-test",
-  title: "Sweden Medborgarskapsprov: The August 2026 Test That Does Not Exist Yet",
+  title: "Sweden Medborgarskapsprov: How the New Citizenship Test Works",
   titleTag: "Sweden Citizenship Test 2027: Medborgarskapsprov Format & Prep",
   metaDescription:
     "Sweden introduces a citizenship test in August 2026. Nobody knows the exact format yet. Here is what the law says, what UHR is building, and how to get ready without official materials.",
