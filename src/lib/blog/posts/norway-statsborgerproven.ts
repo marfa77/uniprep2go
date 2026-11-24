@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const norwayStatsborgerprovenPost: BlogPostDraft = {
   slug: "norway-statsborgerproven-format-questions-pass",
   title: "Norway Statsborgerprøven: The 36-Question Filter Between You and a Norwegian Passport",
-  titleTag: "Norway Statsborgerprøven 2026: Format, Questions & How to Pass",
+  titleTag: "Norway Statsborgerprøven 2027: Format, Questions & How to Pass",
   metaDescription:
     "36 questions. 32 scored. 24 correct to pass. The Norwegian citizenship test is in bokmål or nynorsk only. Here is the exact syllabus and why HK-dir runs it, not UDI.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Norway · Statsborgerprøven",
   clusterId: "norway-citizenship",
   relatedSlugs: [
@@ -15,7 +16,7 @@ export const norwayStatsborgerprovenPost: BlogPostDraft = {
     "portugal-nationality-test-2026-new-civic-exam",
   ],
   intro:
-    "**Norway does not give citizenship away.** You need roughly 7–8 years of legal residence, B1 Norwegian, a clean record, and — since 2020 — a passing score on the Statsborgerprøven. It is not an interview. It is a 60-minute, 36-question multiple-choice exam in Norwegian only. No English. No exemptions for speakers of other languages. This guide covers the format, five topic areas, free official study material, and the score you need to stay out of the retake queue.",
+    "**The Statsborgerprøven is a multiple-choice test in Norwegian: 36 questions, 32 of them scored, and you need at least 24 right within 60 minutes.** Most citizenship applicants also need an oral Norwegian test at B1. This guide covers the official format from HK-dir, the free syllabus the questions come from, and how the test fits UDI's citizenship requirements.",
   mockSlug: "norway-statsborgerproven-readiness-check",
   deckSlug: "norwegian-a2-norskprove-anki-deck",
   cta: {
@@ -36,180 +37,79 @@ export const norwayStatsborgerprovenPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "What the Exam Actually Looks Like",
+      heading: "What does the Statsborgerprøven look like?",
       blocks: [
         {
           type: "table",
-          caption: "Statsborgerprøven specs",
-          headers: ["Detail", "Specification"],
+          caption: "Statsborgerprøven (HK-dir, checked 24 Nov 2026)",
+          headers: ["Detail", "Official rule"],
           rows: [
-            ["Total questions", "36 multiple-choice"],
-            ["Scored questions", "32 (4 unscored pilots)"],
-            ["Answer options", "3 per question"],
-            ["Time limit", "60 minutes"],
-            ["Passing score", "24 of 32 scored (75%)"],
-            ["Languages", "Norwegian only (bokmål or nynorsk)"],
-            ["Delivery", "Computer-based at approved centers"],
-            ["Administered by", "HK-dir (not UDI)"],
-            ["Exam fee", "Varies by municipality; ~NOK 750"],
-            [
-              "Results",
-              "Immediate pass/fail at some centers; certificate by post ~2 weeks",
-            ],
+            ["Format", "Multiple choice"],
+            ["Questions", "36, of which 32 count; 4 are new questions being piloted"],
+            ["To pass", "At least 24 correct answers"],
+            ["Time", "Up to 60 minutes; the test centre keeps time"],
+            ["Language", "Norwegian only, in bokmål or nynorsk; also available as an audio recording in both"],
           ],
         },
         {
           type: "p",
-          text: "Pilot questions are unmarked — treat all 36 as scored. A hard pilot still burns time and focus.",
+          text: "Because only 32 questions count and you cannot tell which four are pilots, treat every question as scored. Practise with the [Norway Statsborgerprøven readiness check](/mock-exams/norway-statsborgerproven-readiness-check).",
         },
       ],
     },
     {
-      heading: "The Five Topic Areas (With Weightings)",
+      heading: "What is the syllabus?",
       blocks: [
         {
           type: "p",
-          text: "The exam draws from the official Samfunnskunnskap curriculum. Rough distribution:",
-        },
-        {
-          type: "table",
-          caption: "Topic weights",
-          headers: ["Topic area", "Weight", "What it covers"],
-          rows: [
-            [
-              "Democracy, rights & obligations",
-              "~25%",
-              "Political system, constitution, elections, courts, human rights, rule of law",
-            ],
-            [
-              "History & geography",
-              "~20%",
-              "Vikings to present; geography; counties; climate",
-            ],
-            [
-              "Society & culture",
-              "~20%",
-              "National identity, values, traditions, religion, media, arts",
-            ],
-            [
-              "Everyday life & work",
-              "~20%",
-              "Education, healthcare, labour market, family life, welfare state",
-            ],
-            [
-              "New in Norway",
-              "~15%",
-              "Immigration pathways, integration services, NAV, language training",
-            ],
-          ],
-        },
-        {
-          type: "p",
-          text: "**Heavy hitters:** Democracy and rights. Know the Constitution of 1814, the Storting (169 members, 4-year terms), the King’s role, and the courts. Expect specifics: Storting size, constitution date, voting age.",
+          text: "HK-dir (the Directorate for Higher Education and Skills) says the content is set by the goals of the **75-hour social studies curriculum** for adult immigrants. The free learning resource **samfunnskunnskap.no** covers the syllabus, and HK-dir says the answers to the test questions can be found there. Study it in Norwegian, because the test is only in Norwegian.",
         },
       ],
     },
     {
-      heading: "The Official Study Material (Free)",
+      heading: "Where does the test fit in a citizenship application?",
       blocks: [
         {
           type: "p",
-          text: "The government publishes the syllabus at **samfunnskunnskap.no** — free, comprehensive, and available in multiple languages for study, though the exam itself is Norwegian-only. HK-dir provides an **official sample test** at prove.hkdir.no. Take it first. Pass comfortably → likely ready. Struggle → drill by topic.",
-        },
-        {
-          type: "ol",
-          items: [
-            "Read the Norwegian version — not only the English translation. The exam tests civic vocabulary in Norwegian.",
-            "Flashcard proper nouns: Stortinget, Grunnloven, Eidsvoll, Syttende mai, Sámediggi, NAV, UDI.",
-            "Memorise dates: 1814 (Constitution), 1905 (independence from Sweden), 1940–1945 (occupation), 1972 and 1994 (EU referendums — both “no”).",
-            "Geography: 11 counties (fylker), Glomma, Galdhøpiggen, Oslo, Sámi areas.",
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Language Barrier",
-      blocks: [
-        {
-          type: "p",
-          text: "Statsborgerprøven is not a language test, but it is a test *in* a language. Aim for at least A2 reading; B1 is safer. Civic words rarely appear in daily chat: *Grunnloven, stortingsrepresentant, valgkrets, rettssak, velferdsstat, arbeidsliv.*",
-        },
-        {
-          type: "p",
-          text: "If Norwegian is borderline A2, learn concepts in your native language first, then read the Norwegian curriculum for terminology. Do not sit the exam if you cannot read a politics article in Norwegian without a dictionary.",
-        },
-      ],
-    },
-    {
-      heading: "Registration and Logistics",
-      blocks: [
-        {
-          type: "p",
-          text: "Register via the HK-dir portal at **prove.hkdir.no**. Pick municipality and date. Oslo, Bergen, and Trondheim often book 2–3 months ahead.",
+          text: "For applications submitted on or after **1 October 2022**, UDI lists these knowledge requirements:",
         },
         {
           type: "ul",
           items: [
-            "Arrive 30 minutes early with photo ID",
-            "Phones off and put away",
-            "Personal login + daily password to start",
-            "Most finish in 20–40 minutes; you have 60",
-            "Some centers confirm pass/fail before you leave",
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Companion Requirement: Norskprøven",
-      blocks: [
-        {
-          type: "p",
-          text: "Civics is only half the knowledge stack. You also need **Norskprøven** at B1 (or higher) across listening, reading, writing, and speaking.",
-        },
-        {
-          type: "table",
-          caption: "Civics vs language",
-          headers: ["Test", "Purpose", "Level", "Frequency"],
-          rows: [
-            [
-              "Statsborgerprøven",
-              "Civic knowledge for citizenship",
-              "Content test in Norwegian",
-              "Multiple times per year",
-            ],
-            [
-              "Norskprøven",
-              "Language for citizenship/residency",
-              "B1 required for citizenship",
-              "Typically 4 times per year",
-            ],
+            "Pass an **oral Norwegian test at B1** or higher. Level A2 is enough if you are stateless, or over 55 and came to Norway as a protection applicant or resettled refugee, or over 55 and receive disability benefits.",
+            "**And** pass the citizenship test **or** the Norwegian social studies test (samfunnskunnskapsprøven) in Norwegian.",
           ],
         },
         {
           type: "p",
-          text: "Either order works; most candidates finish Norskprøven first because language takes longer than civics.",
+          text: "UDI also lists ways to be exempted from the oral test, for example through Norwegian or Sámi grades from school in Norway or 30 credits of university study in Norwegian or Sámi. Residence and other requirements are set out on UDI's citizenship pages.",
         },
       ],
     },
     {
-      heading: "Study Timeline",
+      heading: "How do you register?",
       blocks: [
         {
-          type: "topics",
+          type: "p",
+          text: "HK-dir runs a separate website for candidates, **prove.hkdir.no**, with everything about the tests and registration, including dates, fees and test centres. HK-dir also publishes results for the citizenship test since 2020 in its statistics tool, if you want to see the official figures.",
+        },
+      ],
+    },
+    {
+      heading: "How should you prepare?",
+      blocks: [
+        {
+          type: "steps",
           items: [
-            {
-              title: "Month 1: Language foundation",
-              body: "Below A2? Do not start heavy civics yet — build Norskprøve first. Read NRK / Aftenposten 3× per week.",
-            },
-            {
-              title: "Month 2: Curriculum",
-              body: "Read samfunnskunnskap.no in Norwegian. Take the official HK-dir sample. Below 24? Map weak topics.",
-            },
-            {
-              title: "Month 3: Drill and mock",
-              body: "Flashcards on weak areas. 2–3 full timed 36-question mocks. Target 28+/32 before you book.",
-            },
+            { title: "Build reading Norwegian first", body: "The questions are only in Norwegian. If reading is slow, work on vocabulary with the [Norwegian A2 Norskprøve deck](/decks/norwegian-a2-norskprove-anki-deck)." },
+            { title: "Work through samfunnskunnskap.no", body: "It covers the curriculum and contains the answers. Take notes in Norwegian." },
+            { title: "Practise under the time limit", body: "36 questions in up to 60 minutes; aim comfortably above 24 correct before you register." },
+            { title: "Plan the oral B1 test too", body: "Most applicants need both the citizenship test and an oral Norwegian test at B1." },
           ],
+        },
+        {
+          type: "p",
+          text: "Also applying in another Nordic country? See the [Denmark citizenship test guide](/blog/denmark-indfoedsretsproeven-47-percent-pass-rate).",
         },
       ],
     },
@@ -217,56 +117,29 @@ export const norwayStatsborgerprovenPost: BlogPostDraft = {
   faqs: [
     {
       question: "How many questions are on the Norwegian citizenship test?",
-      answer:
-        "36 multiple-choice. 32 are scored; 4 are unscored pilots. You need 24 of 32 correct (75%).",
+      answer: "36 multiple-choice questions, of which 32 count towards your result (HK-dir, checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for Statsborgerprøven?",
-      answer:
-        "24 out of 32 scored questions (75%). Pilots do not count toward the score.",
+      question: "What is the passing score for the Statsborgerprøven?",
+      answer: "At least 24 correct answers.",
     },
     {
-      question: "Is the Norwegian citizenship test in English?",
-      answer:
-        "No. Norwegian only — bokmål or nynorsk. You choose the variant at registration.",
-    },
-    {
-      question: "How much does the Statsborgerprøven cost?",
-      answer:
-        "Fees vary by municipality — often around NOK 750 in larger cities. Confirm with your local center.",
+      question: "Is the Norwegian citizenship test available in English?",
+      answer: "No. It is only in Norwegian, in bokmål or nynorsk, and is also available as an audio recording.",
     },
     {
       question: "Where can I find the official study material?",
-      answer:
-        "Free curriculum: samfunnskunnskap.no. Official sample test: prove.hkdir.no.",
+      answer: "samfunnskunnskap.no covers the syllabus, and HK-dir says the answers to the test questions are found there.",
     },
     {
-      question: "How long does it take to get results?",
-      answer:
-        "Many centers confirm pass/fail immediately after submission. The official certificate typically arrives by post within about two weeks.",
+      question: "Can I take the social studies test instead?",
+      answer: "UDI accepts either the citizenship test or the Norwegian social studies test taken in Norwegian.",
     },
     {
-      question: "Can I retake the Statsborgerprøven if I fail?",
-      answer:
-        "Yes. There is generally no retake limit. Offerings are multiple times per year in most municipalities.",
-    },
-    {
-      question:
-        "Do I need Statsborgerprøven if I took the social studies course (Samfunnskunnskap)?",
-      answer:
-        "If you completed the 75-hour adult immigrant social studies course and passed the course exam, you may not need Statsborgerprøven. Confirm your case with UDI.",
-    },
-    {
-      question: "How long should I study for the Norwegian citizenship test?",
-      answer:
-        "About 2–3 months part-time if Norwegian is A2+. Add 3–6 months of language work if you are below A2.",
-    },
-    {
-      question: "What is the hardest part of the Statsborgerprøven?",
-      answer:
-        "Civic vocabulary in Norwegian. Words like Grunnloven, stortingsrepresentant, and velferdsstat are not everyday speech. Concepts alone are not enough under time pressure.",
+      question: "What Norwegian level do I need for citizenship?",
+      answer: "For applications from 1 October 2022, an oral test at B1 or higher, with A2 accepted for some groups (UDI).",
     },
   ],
   bottomLine:
-    "Statsborgerprøven is a reading test dressed as a civics test. Solid Norwegian makes the content manageable. Weak Norwegian cannot be rescued by general knowledge. Read samfunnskunnskap.no in Norwegian, take the official sample, and drill until Storting questions need no translation pause — that is the gap between 23 and 24.",
+    "Learn the samfunnskunnskap.no syllabus in Norwegian, aim well above 24 correct, and plan the oral B1 test alongside it. Sources: [HK-dir — content of the tests](https://hkdir.no/voksenopplaering/norsk-og-samfunnskunnskap/administrere-og-gjennomfore-prover/praktisk-informasjon-til-provestedene/innhold-i-provene), [HK-dir candidate site](https://prove.hkdir.no/) and [UDI — Norwegian language requirements for citizenship](https://www.udi.no/en/important-messages/changes-in-requirements-for-norwegian-skills-to-obtain-norwegian-citizenship/), checked 24 Nov 2026.",
 };

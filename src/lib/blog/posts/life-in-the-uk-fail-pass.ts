@@ -2,11 +2,12 @@ import type { BlogPostDraft } from "../types";
 
 export const lifeInTheUkFailPassPost: BlogPostDraft = {
   slug: "life-in-the-uk-test-why-one-in-three-fail",
-  title: "Life in the UK Test: Why 1 in 3 People Fail",
-  titleTag: "Life in the UK Test 2026: Why 1 in 3 Fail | Free Mock",
+  title: "Life in the UK Test: Why People Fail",
+  titleTag: "Life in the UK Test 2027: Why People Fail | Free Mock",
   metaDescription:
     "24Q / 45 min / £50 per attempt — ~25% fail. Official handbook trap, Chapter 3 dates, and a 60Q Life in the UK mock (free 25-question version) + Citizenship Anki bundle before you book.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "UK · Life in the UK Test",
   clusterId: "life-in-the-uk",
   relatedSlugs: [
@@ -15,122 +16,118 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
     "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
   ],
   intro:
-    "**The Life in the UK Test is the most taken citizenship exam in Europe.** Since 2005, millions have sat it. The pass rate hovers around 70–75% — generous until you realise roughly 1 in 3 candidates leave £50 lighter with a fail. It is a memory test on British history, government, and daily life. Volume of facts, date specificity, and false confidence from practice apps create the trap. This guide covers format, where to spend study time, 2026 policy context, and a method that targets 20+/24 on mocks before you book.",
+    "**The Life in the UK Test is 24 questions in 45 minutes, and you need 75% to pass.** That leaves room for six mistakes. GOV.UK does not publish a pass rate, so this guide sticks to what it does publish: the rules, the exemptions, the ID problems that stop people sitting the test at all, and the one handbook every question comes from.",
   mockSlug: "life-in-the-uk-readiness-check",
   deckSlug: "life-in-the-uk-anki-deck",
   cta: {
     mockLabel: "Take the free Life in the UK readiness check",
-    deckLabel: "Get the Life in the UK Anki deck ($9.99)",
+    deckLabel: "Get the Life in the UK Anki deck",
     summary:
-      "Run the 60-question Life in the UK readiness check (free 25-question diagnostic, no signup; $19 for unlimited attempts) until timed mocks hit ~20/24. Then lock Chapter 3 dates and civics facts with the $9.99 Life in the UK Anki deck before you pay £50 on gov.uk.",
+      "Start with the free Life in the UK readiness check (UniPrep Mock Pass $19, unlimited mocks) and keep going until you are well clear of 18 of 24. Then review handbook dates and facts daily with the Life in the UK Anki deck before you pay £50 on GOV.UK.",
   },
   sections: [
     {
-      heading: "The Format (Exactly What Happens at the Test Centre)",
+      heading: "What are the official rules for the test?",
       blocks: [
         {
           type: "table",
-          caption: "Official format",
-          headers: ["Detail", "Specification"],
+          caption: "Life in the UK Test (GOV.UK, checked 24 Nov 2026)",
+          headers: ["Rule", "Detail"],
           rows: [
-            ["Questions", "24 multiple-choice"],
-            ["Some questions", "Require 2 correct answers (select all that apply)"],
-            ["Time limit", "45 minutes"],
-            ["Passing score", "75% — 18/24 correct"],
-            ["Cost", "£50 per attempt"],
-            ["Booking", "gov.uk only — third-party bookers are scams"],
-            ["Delivery", "Computer-based at approved centres"],
-            ["Languages", "English; Welsh in Wales; Scottish Gaelic in Scotland"],
-            ["Results", "Immediate on screen"],
-            ["Certificate", "URN — generally valid indefinitely"],
+            ["Questions and time", "24 questions in 45 minutes"],
+            ["Pass mark", "75% or more"],
+            ["Fee", "£50, paid each time you book"],
+            ["Booking", "Online through GOV.UK, at least 3 days in advance; the only official booking service"],
+            ["Centres", "Over 30 test centres in the UK; you choose when you book"],
+            ["If you pass", "You get a unique reference number for your citizenship or settlement application"],
+            ["If you fail", "You can rebook as many times as you need, paying each time"],
+            ["Cancelling", "Refund if you cancel at least 3 days (72 hours) before; none within 3 days"],
           ],
         },
         {
           type: "p",
-          text: "**Booking trap:** sites charging £100–£200 to “book” when the fee is £50 are scams. **Practice trap:** a short on-screen practice before the real test does **not** count toward your score.",
+          text: "Seventy-five per cent of 24 is 18 correct answers, so you can afford at most six mistakes. Practise until you score well above that line on the [Life in the UK readiness check](/mock-exams/life-in-the-uk-readiness-check).",
         },
       ],
     },
     {
-      heading: "The Five Chapters and Where the Points Live",
+      heading: "Who has to take it?",
       blocks: [
         {
           type: "p",
-          text: "Every question comes from *Life in the United Kingdom: A Guide for New Residents* (3rd Edition). Chapters are not equally weighted.",
+          text: "You may need the test for British citizenship or for settlement; the guidance and form for your application say whether you do. GOV.UK says you do not need to take it if you:",
         },
         {
-          type: "table",
-          caption: "Chapter weights",
-          headers: ["Chapter", "Topic", "Weight", "Why it matters"],
-          rows: [
-            ["1", "Values and Principles", "Low", "Short; easy points"],
-            ["2", "What Is the UK?", "Low", "Geography/flags — quick to memorise"],
-            ["3", "A Long and Illustrious History", "High", "Dates, monarchs, battles — where scores die"],
-            ["4", "A Modern, Thriving Society", "Medium", "Government, elections, devolution"],
-            ["5", "Government, Law & Your Role", "High", "Parliament, voting, courts, taxes"],
+          type: "ul",
+          items: [
+            "are under 18",
+            "are 65 or over",
+            "have passed it before, for example for settlement before applying for citizenship",
+            "have a long-term physical or mental condition, with an exemption form or a doctor's letter",
           ],
-        },
-        {
-          type: "p",
-          text: "**Chapter 3 strategy:** do not read linearly. Extract ~30 key events and ~30 figures into flashcards. The exam rewards Hastings 1066, Henry VIII’s six wives, and equal suffrage in 1928 — not nuance essays.",
         },
       ],
     },
     {
-      heading: "The Pass Rate Data (and What It Tells You)",
+      heading: "Which mistakes stop people before the first question?",
       blocks: [
         {
           type: "ul",
           items: [
-            "Overall ~75% (Home Office historical data often cited ~75%)",
-            "EU nationals historically higher (~86%); non-EU lower (~68%)",
-            "English-speaking origins often 95%+",
-            "Some origins historically below 50%",
-          ],
-        },
-        {
-          type: "p",
-          text: "The test is in English. Below B1 reading, language load eats your timing. Fix English before deep handbook drilling.",
-        },
-      ],
-    },
-    {
-      heading: "The 2026 Context: Proposed Changes (Not Yet Live)",
-      blocks: [
-        {
-          type: "p",
-          text: "A May 2025 White Paper floated shifting toward British values, ESOL alignment, stronger English requirements, and digital verification. **As of mid-2026 these changes are not live.** Study the 3rd edition handbook until the Home Office publishes a new edition — ignore third-party sites claiming the test already changed.",
-        },
-      ],
-    },
-    {
-      heading: "How to Study (The Method That Beats the Averages)",
-      blocks: [
-        {
-          type: "ol",
-          items: [
-            "Buy the official handbook (TSO) — not random apps",
-            "Read once fast for narrative; mark dense sections",
-            "Extract dates, monarchs, PMs, Acts, and key numbers",
-            "Chapter quizzes before full mocks — re-drill Ch. 3/4 under 80%",
-            "Timed 24Q mocks targeting 20/24 before booking",
+            "**Wrong ID.** Bring the same original ID you booked with, not a copy or screenshot. The name on your booking must exactly match your ID.",
+            "**Refusing the photo.** Your photo is taken on the day. Without the right ID or the photo, you cannot sit the test and get no refund.",
+            "**Old documents.** If you have an eVisa, book with a share code from your UKVI account. A biometric residence permit or card can be used only if your test is no later than 24 months after its printed expiry date or before 31 December 2026, whichever comes first.",
+            "**Unofficial booking sites.** GOV.UK is the only official booking service.",
           ],
         },
       ],
     },
     {
-      heading: "The Numbers That Kill (Common Mistakes)",
+      heading: "What is actually tested?",
       blocks: [
+        {
+          type: "p",
+          text: "GOV.UK says you are tested **only** on the official *Guide for New Residents*. It comes as a book, eBook or audio, with an official e-learning subscription and practice app sold through the official Life in the UK Test shop. Facts from unofficial sources that are not in the handbook will not be tested, and differences in wording can cost you a point.",
+        },
+        {
+          type: "p",
+          text: "Expect dates and institutions. Two examples, confirmed by UK Parliament: **Magna Carta** was issued in June **1215** at Runnymede; the **1918** Representation of the People Act let women over 30 who met a property qualification vote, and the **1928** Equal Franchise Act gave women the same voting rights as men.",
+        },
+      ],
+    },
+    {
+      heading: "So why do people fail?",
+      blocks: [
+        {
+          type: "p",
+          text: "GOV.UK does not publish a pass rate, so this guide does not quote one. The format itself explains most failures:",
+        },
         {
           type: "ul",
           items: [
-            "Magna Carta: **1215** at Runnymede (King John)",
-            "Hastings: **1066** — William / Norman Conquest",
-            "Women’s suffrage: 1918 / 1928 / voting age 18 from 1969",
-            "NHS: **1948**; EU referendum **2016**; Brexit **2020**",
-            "Devolution / Good Friday: **1998**",
-            "Commons: **650** MPs; criminal responsibility ages differ by nation",
+            "**A narrow margin:** six wrong answers is the limit.",
+            "**One source:** studying from apps or summaries instead of the handbook leaves gaps and teaches wording the test does not use.",
+            "**Detail questions:** history dates, numbers and names are easy to mix up without regular review.",
+            "**Reading load:** 24 questions in 45 minutes in English; slow reading eats into checking time.",
           ],
+        },
+      ],
+    },
+    {
+      heading: "How should you prepare?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Read the handbook once for the story", body: "Then go back and mark the dates, people, numbers and institutions." },
+            { title: "Turn facts into cards", body: "Review them daily with the [Life in the UK Anki deck](/decks/life-in-the-uk-anki-deck)." },
+            { title: "Take timed practice", body: "Sit 24 questions in 45 minutes and review every miss against the handbook." },
+            { title: "Book when you are clear of the line", body: "Book at least 3 days ahead with the ID you will bring on the day." },
+          ],
+        },
+        {
+          type: "p",
+          text: "Comparing countries? See the [Germany Leben in Deutschland guide](/blog/germany-einbuergerungstest-vs-leben-in-deutschland-difference).",
         },
       ],
     },
@@ -138,64 +135,29 @@ export const lifeInTheUkFailPassPost: BlogPostDraft = {
   faqs: [
     {
       question: "How many questions are on the Life in the UK Test?",
-      answer:
-        "24 multiple-choice questions in 45 minutes. Some items require selecting two answers.",
+      answer: "24 questions in 45 minutes, based on the official Guide for New Residents (GOV.UK, checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for the Life in the UK Test?",
-      answer: "75% — at least 18 correct out of 24.",
+      question: "What is the pass mark?",
+      answer: "75% or more, which is 18 of the 24 questions.",
     },
     {
       question: "How much does the Life in the UK Test cost?",
-      answer:
-        "£50 per attempt. Book only through gov.uk. Third-party sites charging more are scams.",
+      answer: "£50, and you pay again each time you rebook after a fail.",
     },
     {
-      question: "What is the pass rate for the Life in the UK Test?",
-      answer:
-        "Roughly 70–75% overall historically, with large gaps by nationality and English proficiency.",
+      question: "Can I retake the test if I fail?",
+      answer: "Yes. GOV.UK says you can rebook as many times as you need, paying each time.",
     },
     {
-      question: "Does the Life in the UK Test pass expire?",
-      answer:
-        "Generally no — the pass (URN) is used indefinitely for ILR and later citizenship pathways.",
+      question: "Who does not need to take the test?",
+      answer: "People under 18, people aged 65 or over, people who have passed it before, and people with a long-term physical or mental condition who provide an exemption form or doctor's letter.",
     },
     {
-      question: "Can I retake the Life in the UK Test if I fail?",
-      answer:
-        "Yes, unlimited retakes at £50 each. No fixed waiting period; availability depends on centres.",
-    },
-    {
-      question: "Is the Life in the UK Test changing in 2026?",
-      answer:
-        "Reforms were proposed in 2025, but as of mid-2026 the live test still uses the 3rd edition handbook. Wait for an official new edition before changing materials.",
-    },
-    {
-      question: "Who is exempt from the Life in the UK Test?",
-      answer:
-        "Typically under 18, over 65, or medically exempt with evidence. Prior pass holders do not retake.",
-    },
-    {
-      question: "How long should I study for the Life in the UK Test?",
-      answer:
-        "About 2–4 weeks daily for most; 4–6 weeks if English is not strong. Prioritise Chapters 3 and 4/5.",
-    },
-    {
-      question: "Can I take the Life in the UK Test online?",
-      answer:
-        "No. It is in-person at an approved centre. A short on-screen practice does not count toward the score.",
-    },
-    {
-      question: "Is there a free Life in the UK practice test?",
-      answer:
-        "Yes. UniPrep2Go offers a 60-question / 45-minute Life in the UK readiness check (free 25-question version) with topic scoring — a longer diagnostic, not the official 24-question format. Use it to find weak handbook areas before booking.",
-    },
-    {
-      question: "What Anki deck helps with Life in the UK prep?",
-      answer:
-        "The $9.99 Life in the UK Anki deck is 201 civics cards for dates, monarchs, and government facts from the official handbook.",
+      question: "What happens if I bring the wrong ID?",
+      answer: "You cannot take the test and you do not get a refund. Bring the original ID you used to book.",
     },
   ],
   bottomLine:
-    "Life in the UK is a £50 memory exam, not an IQ test. Failures usually skip the official handbook, trust bad apps, or lack English under time pressure. Buy the handbook, flashcard Chapter 3, and do not book until timed mocks hit ~20/24. The certificate lasts; the retake fee does not.",
+    "Study only the official handbook, aim well above 18 of 24 in timed practice, and bring the exact ID you booked with. Sources: [GOV.UK Life in the UK Test](https://www.gov.uk/life-in-the-uk-test) and [full guide](https://www.gov.uk/life-in-the-uk-test/print), [UK Parliament: Magna Carta](https://www.parliament.uk/about/living-heritage/evolutionofparliament/originsofparliament/birthofparliament/overview/magnacarta/) and [UK Parliament: women get the vote](https://www.parliament.uk/about/living-heritage/transformingsociety/electionsvoting/womenvote/overview/thevote/), checked 24 Nov 2026.",
 };

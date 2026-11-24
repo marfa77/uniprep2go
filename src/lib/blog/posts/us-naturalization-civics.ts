@@ -2,11 +2,12 @@ import type { BlogPostDraft } from "../types";
 
 export const usNaturalizationCivicsPost: BlogPostDraft = {
   slug: "us-naturalization-civics-test-100-questions-only-10",
-  title: "US Naturalization Civics Test 2026: 128 Questions, Up to 20 Asked",
-  titleTag: "US Citizenship Civics Test 2026: 128 Questions, 12 to Pass",
+  title: "US Naturalization Civics Test 2027: 128 Questions, Up to 20 Asked",
+  titleTag: "US Citizenship Civics Test 2027: 128 Questions, 12 to Pass",
   metaDescription:
     "USCIS 2025 civics test for 2026 interviews: 128 published questions, up to 20 asked, 12 correct to pass (2008 test: 6 of 10 if you filed before Oct 20, 2025). Format, topic weights, 65/20 list, free timed check + Anki.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "USA · USCIS Naturalization Civics",
   clusterId: "us-citizenship",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
     "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
   ],
   intro:
-    "**If you file Form N-400 on or after October 20, 2025, you take the 2025 civics test: USCIS publishes 128 questions, the officer asks up to 20, and you need 12 correct.** The officer stops once you reach 12 right or 9 wrong. Filed before that date? You keep the 2008 test — up to 10 questions from 100, pass at 6. Either way you never hear most of the list, but you cannot predict which ones come up. This guide covers both formats, the three topic buckets, the 65/20 shortcut, and a study method that works out loud.",
+    "**If you file Form N-400 on or after 20 October 2025, you take the 2025 civics test: 20 questions from a published list of 128, and you need 12 correct.** The officer stops once you reach 12 right or 9 wrong. Filed earlier? You take the 2008 test: up to 10 questions from 100, with 6 to pass. This guide covers both versions, the English test, the 65/20 rule and what happens if you fail, all from USCIS.",
   mockSlug: "us-citizenship-readiness-check",
   deckSlug: "us-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free US Citizenship readiness check",
-    deckLabel: "Get the U.S. Citizenship Anki deck ($9.99)",
+    deckLabel: "Get the U.S. Citizenship Anki deck",
     summary:
-      "Take the free U.S. Citizenship practice test (30 timed civics questions), then lock the 128-question 2025 list with the $9.99 U.S. Citizenship Anki deck (128 cards) before your N-400 interview. Related language decks also live on Prep2Go.",
+      "Take the free U.S. Citizenship practice test, then review the 128-question 2025 list daily with the U.S. Citizenship Anki deck before your N-400 interview. Related language decks also live on Prep2Go.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",
@@ -32,98 +33,86 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Real Format (Not What the Pamphlet Says)",
+      heading: "Which civics test will you take?",
       blocks: [
         {
           type: "table",
-          caption: "2025 test vs 2008 test vs 65/20 track",
-          headers: ["Detail", "2025 test (N-400 filed on/after Oct 20, 2025)", "2008 test (filed before Oct 20, 2025)", "65/20 (age 65+, 20+ years LPR)"],
+          caption: "USCIS civics tests (uscis.gov, checked 24 Nov 2026)",
+          headers: ["", "2008 test", "2025 test"],
           rows: [
-            ["Published list", "128 questions", "100 questions", "20 starred questions"],
-            ["Questions asked", "Up to 20", "Up to 10", "10"],
-            ["Passing score", "12 correct (60%)", "6 correct (60%)", "6 correct (60%)"],
-            ["Stops when", "12 correct or 9 wrong", "6 correct", "6 correct"],
-            ["Language", "English", "English", "Language of your choice"],
-            ["Medical exemption", "Form N-648", "Form N-648", "Form N-648"],
+            ["Applies if you filed Form N-400", "Before 20 October 2025", "On or after 20 October 2025"],
+            ["Question list", "100 questions", "128 questions"],
+            ["Questions asked", "Up to 10", "20"],
+            ["To pass", "6 correct", "12 correct"],
+            ["You fail at", "5 wrong", "9 wrong"],
           ],
         },
         {
           type: "p",
-          text: "**Stopping rule:** on the 2025 test civics ends at 12 correct (pass) or 9 wrong (fail), then the officer moves to English reading/writing. Accuracy on a streak of answers matters more than breadth — but any of the 128 can come up. Seniors 65+ with 20+ years as permanent residents study only the 20 starred questions, get 10 of them, need 6, and may take the test in their own language.",
+          text: "Both tests are oral. The officer stops as soon as you reach the pass number or the fail number, so many interviews end before the last question. USCIS says the 2025 test is based on the 2020 test with some changes to how it is given.",
         },
       ],
     },
     {
-      heading: "The Three Categories (and Where to Spend Your Time)",
+      heading: "How do you answer questions whose answers change?",
       blocks: [
         {
-          type: "table",
-          caption: "2025 list structure (128 questions)",
-          headers: ["Category", "Questions", "Weight", "What USCIS tests"],
-          rows: [
-            [
-              "American Government",
-              "72",
-              "~56%",
-              "Constitution, branches, federalism, rights",
-            ],
-            [
-              "American History",
-              "46",
-              "~36%",
-              "Colonial era, independence, Civil War, civil rights",
-            ],
-            [
-              "Symbols and Holidays",
-              "10",
-              "~8%",
-              "Capital, Statue of Liberty, flag, anthem, national holidays",
-            ],
-          ],
-        },
-        {
           type: "p",
-          text: "**Trap:** equal time on all 128. Government is more than half the list — weak answers on branches or “Who is your state’s Governor?” are expensive, and with up to 20 questions asked you will almost certainly get several. History grew to 46 questions in the 2025 version. Symbols and holidays feel easy; do not skip them, do not over-study them.",
+          text: "Some answers depend on elections or appointments. USCIS says you must give the name of the official serving **at the time of your interview**, and it lists those answers on its Civics Test Updates page. Check it in the week before your interview.",
         },
       ],
     },
     {
-      heading: "The English Test: Reading, Writing, and the Vocabulary List",
+      heading: "What is on the English test?",
       blocks: [
         {
           type: "ul",
           items: [
-            "**Reading:** read one sentence aloud from the USCIS reading vocabulary list",
-            "**Writing:** write one dictated sentence from the writing vocabulary list",
-            "Civics study overlaps the vocab lists — still practice **handwriting**, not typing",
+            "**Speaking:** the officer judges your spoken English during the N-400 eligibility interview.",
+            "**Reading:** read aloud 1 of 3 sentences correctly.",
+            "**Writing:** write 1 of 3 sentences correctly. USCIS publishes the official writing vocabulary list.",
           ],
         },
       ],
     },
     {
-      heading: "The N-648 Medical Exemption",
+      heading: "What is the 65/20 special consideration?",
       blocks: [
         {
           type: "p",
-          text: "A licensed medical professional can complete Form N-648 to waive English and/or civics when a disability prevents learning. USCIS wants clinical detail on **how** the impairment blocks learning — not a one-line GP note. Thin letters often get rejected.",
+          text: "If you are **65 or older** and have been a lawful permanent resident for **20 or more years**, USCIS gives you 10 questions from a special bank of 20 questions marked with an asterisk, from either the 2008 or the 2025 test. You may study just those 20, and you may take the test in the language of your choice. See USCIS's exceptions and accommodations page for medical and other exceptions.",
         },
       ],
     },
     {
-      heading: "Study Method: Flashcards, Not Apps",
+      heading: "What happens if you fail part of the test?",
       blocks: [
         {
-          type: "ol",
+          type: "ul",
           items: [
-            "Build oral flashcards (question → short answer, no multiple choice)",
-            "Practice aloud daily — family member asks 20 random questions",
-            "Simulate pressure: stand, face a wall, no phone prompts",
-            "Drill streaks of 12 correct answers (6 on the 2008 test)",
+            "You have **two opportunities**: the first interview and a re-examination.",
+            "If you fail any portion, USCIS reschedules you **between 60 and 90 days** after the first interview.",
+            "At the re-examination you are tested **only on the portion you failed**, with a different test form.",
+            "Missing the re-examination without USCIS excusing you counts as a failed attempt.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "How should you study?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Use the official list for your test", body: "Download the 128 Civics Questions and Answers (2025 test) or the 100 questions (2008 test) from USCIS, plus the free study guide *One Nation, One People*." },
+            { title: "Answer out loud", body: "The test is oral. Say each answer aloud so it comes out under interview pressure." },
+            { title: "Review daily", body: "Spaced review with the [US citizenship Anki deck](/decks/us-citizenship-anki-deck) keeps all 128 answers fresh." },
+            { title: "Test yourself", body: "Use the [US citizenship readiness check](/mock-exams/us-citizenship-readiness-check), then check the Civics Test Updates page before your interview." },
           ],
         },
         {
           type: "p",
-          text: "Most apps are multiple-choice. The real interview is oral. Train the format you will face.",
+          text: "Comparing with other countries? See the [Life in the UK Test guide](/blog/life-in-the-uk-test-why-one-in-three-fail).",
         },
       ],
     },
@@ -131,54 +120,29 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
   faqs: [
     {
       question: "How many questions are on the US citizenship civics test?",
-      answer:
-        "On the 2025 test (N-400 filed on or after Oct 20, 2025): up to 20 from a published list of 128; you need 12 correct, and civics ends at 12 right or 9 wrong. If you filed earlier, the 2008 test asks up to 10 from 100 and you need 6.",
+      answer: "If you filed Form N-400 on or after 20 October 2025, the 2025 test asks 20 questions from a list of 128 and you need 12 correct (USCIS, checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for the US civics test?",
-      answer: "60% either way: 12 of 20 on the 2025 test, 6 of 10 on the 2008 test.",
+      question: "Which test do I take if I filed before 20 October 2025?",
+      answer: "The 2008 test: up to 10 questions from a list of 100, and you need 6 correct.",
+    },
+    {
+      question: "When does the officer stop asking questions?",
+      answer: "On the 2025 test, once you answer 12 correctly or 9 incorrectly. On the 2008 test, at 6 correct or 5 incorrect.",
     },
     {
       question: "Do seniors have to study the whole list?",
-      answer:
-        "No. Applicants 65+ with at least 20 years as permanent residents study only the 20 starred questions. The officer asks 10 of them, you need 6, and you may take the civics test in your own language.",
+      answer: "Not if you are 65 or older with 20 or more years as a permanent resident: you may study the 20 asterisked questions, are asked 10, and may test in your chosen language.",
     },
     {
-      question: "Is the US citizenship test in English?",
-      answer:
-        "Yes, unless you have an approved Form N-648 medical exemption or qualify for an age/residence language exemption (for example 65/20, 50/20, or 55/15). Reading and writing are in English.",
+      question: "What happens if I fail the civics test?",
+      answer: "You get a re-examination between 60 and 90 days later, tested only on the portion you failed.",
     },
     {
-      question: "How much does the US naturalization application cost?",
-      answer:
-        "Typically about $710–$760 (N-400 plus biometrics; fees change). Fee waivers may apply for low-income applicants.",
-    },
-    {
-      question: "Can I fail the civics test and retake it?",
-      answer:
-        "Yes. USCIS usually schedules a second interview within about 60–90 days. Fail again and the N-400 is denied — you must reapply.",
-    },
-    {
-      question: "How long does US naturalization take?",
-      answer:
-        "Field-office dependent; often roughly 8–14 months from filing to oath ceremony.",
-    },
-    {
-      question: "What are the three categories of civics questions?",
-      answer:
-        "On the 2025 list: American Government (72), American History (46), and Symbols and Holidays (10). The 2008 list splits 100 questions into Government, History, and Integrated Civics.",
-    },
-    {
-      question: "Do I need to answer in complete sentences?",
-      answer:
-        "Civics answers can be short (“The President”). Reading and writing require complete sentences as dictated.",
-    },
-    {
-      question: "Is the civics test multiple choice?",
-      answer:
-        "No. The officer asks orally; you answer orally. No printed options.",
+      question: "How many sentences must I read and write?",
+      answer: "Read aloud 1 of 3 sentences correctly and write 1 of 3 sentences correctly.",
     },
   ],
   bottomLine:
-    "USCIS hands you 128 questions and asks up to 20. The job is producing 12 correct answers under interview pressure without prompts — before you miss 9. Check your test version by filing date, weight government hardest, practise out loud, and simulate the room. The certificate is worth the drill.",
+    "Know which test your filing date gives you, study the official list out loud, and check the updates page before your interview. Sources: [USCIS 2025 Civics Test](https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test), [USCIS Study for the Test](https://www.uscis.gov/citizenship/find-study-materials-and-resources/study-for-the-test) and [USCIS Policy Manual, Vol. 12, Part E, Ch. 2](https://www.uscis.gov/policy-manual/volume-12-part-e-chapter-2), checked 24 Nov 2026.",
 };
