@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
   slug: "memorize-epa-608-refrigerant-numbers-method",
   title: "How to Memorize Refrigerant Numbers for EPA 608: A Method That Actually Works",
-  titleTag: "Memorize EPA 608 Refrigerant Numbers: Method That Works 2026",
+  titleTag: "Memorize EPA 608 Refrigerant Numbers: Method That Works 2027",
   metaDescription:
     "R-22, R-410A, R-134a, R-404A — the EPA 608 exam throws 20+ refrigerant numbers at you. Here is the ASHRAE numbering system decoded, plus the grouping trick that makes them stick.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "EPA 608 · HVAC certification",
   clusterId: "epa-608",
   relatedSlugs: [
@@ -14,7 +15,7 @@ export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
     "epa-608-practice-test-what-to-expect",
   ],
   intro:
-    "**The EPA 608 Type II exam lists refrigerants by the dozen: R-22, R-410A, R-404A, R-134a, R-402A, R-407C, R-500, R-502, R-123, R-11.** Most technicians flashcard them raw — “R-22 = HCFC” — and forget half by exam day. There is a better way. The ASHRAE numbering system encodes chemical structure into digits. Learn the code once, group by family, and you can classify refrigerants without memorizing a random list.",
+    "**EPA 608 tests refrigerants by family and pressure class, not as a list of numbers.** The federal rules set 25 questions per section and a 70% pass mark, and EPA's own test topics include phaseout dates and the R-123 sensor rule. This guide shows how to decode an R-number, group refrigerants into families, and attach the pressure classes EPA defines in 40 CFR 82.152, so you can classify any refrigerant on the exam.",
   mockSlug: "epa-608-readiness-check",
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
@@ -26,236 +27,166 @@ export const memorizeEpa608RefrigerantsPost: BlogPostDraft = {
 
   sections: [
     {
-      heading: "The ASHRAE Numbering System (The Code Behind the R-Number)",
+      heading: "What does the EPA 608 exam actually test about refrigerants?",
       blocks: [
         {
           type: "p",
-          text: "Every refrigerant number follows ASHRAE Standard 34. Digits are calculated from the chemical formula, reading from right to left:",
+          text: "The federal rules for certifying programs (40 CFR part 82, subpart F, appendix D) fix the structure of the test:",
         },
         {
-          type: "table",
-          caption: "ASHRAE digit positions",
-          headers: ["Position", "Rule"],
-          rows: [
-            ["First digit from the right", "Number of fluorine (F) atoms"],
-            ["Second digit from the right", "Number of hydrogen (H) atoms + 1"],
-            [
-              "Third digit from the right",
-              "Number of carbon (C) atoms – 1 (omitted if zero)",
-            ],
-            [
-              "Fourth digit from the right",
-              "Number of unsaturated carbon-carbon bonds (omitted if zero)",
-            ],
+          type: "ul",
+          items: [
+            "**25 questions** from the Core group plus **25** from each technical group you take (Type I, II or III). Universal is **100 questions** and can be passed all at once or by combining passing scores on separate sections.",
+            "**Passing score: 70%** on the closed-book Type I, II, III and Universal tests. A Type I test in mail-in format needs **84%**.",
+            "**Type II and Type III** must be closed-book, proctored tests in a secure environment.",
+            "**Certification does not expire** (EPA).",
           ],
         },
         {
           type: "p",
-          text: "If bromine is present, a capital **B** follows with the bromine count. Isomers use lowercase **a, b, c** (most symmetrical = no letter).",
+          text: "EPA's published test topics include the R-22 and CFC phaseout dates in Core, and an equipment-room refrigerant sensor for R-123 under ASHRAE Standard 15 in Type III. So you need to know which family a refrigerant belongs to and which pressure class its equipment falls in, not just recognise the number. Check yourself on the [EPA 608 readiness check](/mock-exams/epa-608-readiness-check).",
+        },
+      ],
+    },
+    {
+      heading: "How do you decode an R-number?",
+      blocks: [
+        {
+          type: "p",
+          text: "Refrigerant numbers follow the ASHRAE Standard 34 naming convention for simple molecules. Read the digits from right to left:",
+        },
+        {
+          type: "table",
+          caption: "Digit positions for single-compound refrigerants",
+          headers: ["Digit (from the right)", "Meaning"],
+          rows: [
+            ["First", "Number of fluorine atoms"],
+            ["Second", "Number of hydrogen atoms + 1"],
+            ["Third", "Number of carbon atoms − 1 (left off when zero)"],
+          ],
         },
         {
           type: "topics",
           items: [
-            {
-              title: "Example: R-134a",
-              body: "Digits 1–3–4 → 4 fluorine, 2 hydrogen (3−1), 2 carbon (1+1) → C₂H₂F₄. No chlorine → HFC. The lowercase “a” is the isomer label.",
-            },
-            {
-              title: "Example: R-22",
-              body: "Digits 2–2 → 2 fluorine, 1 hydrogen (2−1), 1 carbon → CHClF₂. Chlorine + hydrogen → HCFC.",
-            },
-            {
-              title: "Example: R-12",
-              body: "Digits 1–2 → 2 fluorine, 0 hydrogen (1−1), 1 carbon → CCl₂F₂. Chlorine, no hydrogen → CFC.",
-            },
+            { title: "R-12", body: "2 fluorine, 0 hydrogen, 1 carbon: CCl₂F₂. Chlorine and no hydrogen, so a CFC." },
+            { title: "R-22", body: "2 fluorine, 1 hydrogen, 1 carbon: CHClF₂. Hydrogen and chlorine, so an HCFC." },
+            { title: "R-134a", body: "4 fluorine, 2 hydrogen, 2 carbon: C₂H₂F₄. No chlorine, so an HFC. The lowercase \"a\" marks an isomer, not a different family." },
           ],
         },
         {
           type: "p",
-          text: "You do not need to calculate formulas on the EPA exam. Knowing digits encode fluorine and hydrogen helps you see patterns instead of random numbers.",
+          text: "Blends in the 400 and 500 series (R-410A, R-407C, R-500) do not decode this way. Learn their family and pressure class directly. You will not be asked to calculate formulas; the code just turns a list of random numbers into a pattern.",
         },
       ],
     },
     {
-      heading: "The Grouping Method: Stop Memorizing Individual Numbers",
+      heading: "Which families should you learn first?",
       blocks: [
-        {
-          type: "p",
-          text: "The exam tests family membership more than isolated recall — because each family has different environmental rules, recovery requirements, and phase-out dates. Group by family first. Memorize family characteristics. Then attach numbers.",
-        },
         {
           type: "topics",
           items: [
-            {
-              title: "CFCs — no hydrogen, high ozone depletion",
-              body: "R-11, R-12, R-113, R-114, R-115, R-500, R-502. Production banned; existing stock can be reclaimed. Hook: “CFC = Completely Fazed Out.”",
-            },
-            {
-              title: "HCFCs — has hydrogen, moderate ozone depletion",
-              body: "R-22, R-123, R-124. R-22 phased out for new equipment in 2010; production ban in 2020. Hook: “Has Chlorine, Has Hydrogen, Halfway Out.” R-123 is a common Type III low-pressure chiller refrigerant.",
-            },
-            {
-              title: "HFCs — no chlorine, no ODP but high GWP",
-              body: "R-134a, R-410A, R-404A, R-407A/B/C, R-402A/B. Common modern replacements for R-22 and R-12. Hook: “High-tech, Future Coolant.”",
-            },
-            {
-              title: "Very-high-pressure",
-              body: "R-13, R-23, R-503. Hook: “13, 23, 503 — small molecules, extreme pressure.”",
-            },
-            {
-              title: "Low-pressure (Type III)",
-              body: "R-11, R-123. Hook: “11 and 123 — chillers, low pressure, big systems.”",
-            },
+            { title: "CFCs: chlorine, no hydrogen", body: "R-11, R-12, R-113, R-114. The original high-ozone-depleting refrigerants." },
+            { title: "HCFCs: hydrogen and chlorine", body: "R-22, R-123, R-124. EPA rules: no production or import of HCFC-22 since 2020, and of any HCFC from 2030." },
+            { title: "HFCs: no chlorine", body: "R-134a, R-410A, R-407C, R-404A. No ozone depletion, but now restricted by GWP under EPA's Technology Transitions rule." },
+          ],
+        },
+        {
+          type: "table",
+          caption: "EPA dates worth knowing (epa.gov, checked 24 Nov 2026)",
+          headers: ["Date", "What changed"],
+          rows: [
+            ["1 Jan 2010", "No production or import of HCFC-22 except for equipment made before 2010"],
+            ["1 Jan 2020", "No production or import of HCFC-22"],
+            ["1 Jan 2025", "New residential and light commercial AC and heat pump systems must use refrigerant under 700 GWP (installation compliance date; systems with all components made or imported before then are exempt)"],
+            ["1 Jan 2030", "No production or import of any HCFC"],
           ],
         },
       ],
     },
     {
-      heading: "The Pressure Classification Table (What the EPA Actually Tests)",
+      heading: "How does pressure class work?",
       blocks: [
         {
+          type: "p",
+          text: "EPA defines appliance pressure classes by the refrigerant's liquid-phase saturation pressure at 104 °F (40 CFR 82.152). This table uses EPA's own examples:",
+        },
+        {
           type: "table",
-          caption: "Pressure classes commonly drilled on Type II",
-          headers: ["Pressure class", "Refrigerants", "Equipment type"],
+          caption: "Pressure classes in 40 CFR 82.152 (checked 24 Nov 2026)",
+          headers: ["Class", "Saturation pressure at 104 °F", "EPA examples"],
           rows: [
-            [
-              "Medium-pressure",
-              "R-12, R-114, R-134a, R-401A, R-500",
-              "Older commercial systems",
-            ],
-            [
-              "High-pressure",
-              "R-22, R-502, R-402A/B, R-404A, R-407A/B/C, R-410A",
-              "Residential AC, commercial refrigeration, heat pumps",
-            ],
-            [
-              "Very-high-pressure",
-              "R-13, R-23, R-503",
-              "Specialized industrial systems",
-            ],
+            ["Low", "Below 45 psia", "R-11, R-123, R-113, R-245fa"],
+            ["Medium", "45–170 psia", "R-114, R-124, R-12, R-134a, R-500"],
+            ["High", "170–355 psia", "R-22, R-407A, R-407C, R-410A, R-502"],
+            ["Very high", "Above 355 psia, or critical temperature below 104 °F", "R-13, R-23, R-503, R-508A, R-508B"],
           ],
         },
         {
           type: "p",
-          text: "**Memory trick:** no hundreds digit or 1xx → often medium/low; 4xx/5xx/7xx blends → high-pressure; 13, 23, 503 → very high.",
+          text: "Type II covers high- and very-high-pressure appliances (except small appliances and motor vehicle AC); Type III covers low-pressure appliances; Type I covers small appliances, factory-sealed with 5 lb of refrigerant or less.",
         },
       ],
     },
     {
-      heading: "Cylinder Color Codes (Secondary Confirmation)",
-      blocks: [
-        {
-          type: "table",
-          caption: "Classic cylinder colors the exam may test",
-          headers: ["Color", "Refrigerant"],
-          rows: [
-            ["Green", "R-22 (HCFC-22)"],
-            ["Light blue", "R-134a (HFC-134a)"],
-            ["White", "R-12 (CFC-12)"],
-          ],
-        },
-        {
-          type: "p",
-          text: "Hook: “Green means go — R-22 was the long-time standard.” “Light blue means newer — R-134a replaced R-12 in many systems.” “White means old — R-12 is the grandfather refrigerant.” Mixing refrigerants contaminates reclaim stock — that is why colors get tested.",
-        },
-      ],
-    },
-    {
-      heading: "The 5-Step Study Method",
+      heading: "What is the study method?",
       blocks: [
         {
           type: "steps",
           items: [
-            {
-              title: "Step 1: Learn family rules, not numbers",
-              body: "Spend 20 minutes on why CFCs have no hydrogen, HCFCs have hydrogen + chlorine, and HFCs have hydrogen but no chlorine.",
-            },
-            {
-              title: "Step 2: Build family-tree flashcards",
-              body: "One card per family — front: “CFC — no hydrogen, high ODP, banned”; back: the member list. Do not make one card per refrigerant. Or drill the same families in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
-            },
-
-            {
-              title: "Step 3: Attach the pressure layer",
-              body: "Add fields like “High-pressure HFCs: R-410A, R-404A, R-407C…” and “Medium-pressure: R-134a, R-401A.”",
-            },
-            {
-              title: "Step 4: Drill with mixed practice",
-              body: "On every number, classify aloud: “R-407C — HFC, high-pressure, blend.” Saying it forces retrieval, not recognition.",
-            },
-            {
-              title: "Step 5: Test under time pressure",
-              body: "Aim for under 2 seconds per classification. On a timed Type II section, hesitation on “Is R-123 CFC or HCFC?” burns the clock.",
-            },
+            { title: "Learn the three family rules", body: "Chlorine without hydrogen is a CFC; hydrogen with chlorine is an HCFC; no chlorine is an HFC." },
+            { title: "Make one card per family, not per refrigerant", body: "Front: the family rule. Back: its members and the EPA dates. The [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) drills the same groupings." },
+            { title: "Add the pressure layer", body: "Attach each number to its 82.152 class and the certification type that covers it." },
+            { title: "Say it out loud", body: "\"R-410A: HFC, high pressure, Type II.\" Saying all three forces recall instead of recognition." },
+            { title: "Test under exam conditions", body: "Take 25 questions per section at the 70% line, closed book, and review every miss." },
           ],
         },
       ],
     },
     {
-      heading: "The Most Common Exam Traps",
+      heading: "Which mix-ups cost the most points?",
       blocks: [
         {
-          type: "topics",
+          type: "ul",
           items: [
-            {
-              title: "Trap 1: R-500 and R-502 look like modern blends",
-              body: "They are regulated as CFCs because they contain CFC components (R-12 / R-115). The EPA tests this specifically.",
-            },
-            {
-              title: "Trap 2: R-134a’s lowercase “a”",
-              body: "It marks the isomer. Family stays HFC; pressure stays medium. Do not let the letter confuse you.",
-            },
-            {
-              title: "Trap 3: R-410A vs R-22 pressures",
-              body: "R-410A is a high-pressure HFC replacement for R-22 and runs roughly 60% higher pressure. Know the class and role even if you are not asked for blend components.",
-            },
+            "**R-123 vs R-12x:** R-123 is a low-pressure HCFC (Type III); R-12 and R-124 are medium pressure.",
+            "**R-134a vs R-410A:** both HFCs, but R-134a is medium pressure and R-410A is high pressure.",
+            "**R-500 and R-502:** blends, but listed by EPA in the medium and high classes respectively, so do not lump them with the 400-series HFC blends.",
+            "**Type I mail-in vs proctored:** the 84% pass mark applies only to the mail-in Type I format.",
           ],
+        },
+        {
+          type: "p",
+          text: "Deciding which type to take first? See [EPA 608 Type I vs Type II](/blog/epa-608-type-1-vs-type-2-which-first).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "How does the ASHRAE refrigerant numbering system work?",
-      answer:
-        "The rightmost digit is fluorine atoms. The second digit from the right is hydrogen atoms + 1. The third is carbon atoms − 1 (omitted if zero). The fourth is unsaturated bonds (omitted if zero). Letters indicate isomers or bromine content.",
+      question: "How does the refrigerant numbering system work?",
+      answer: "For single compounds, read the digits from the right: fluorine atoms, then hydrogen atoms + 1, then carbon atoms − 1 (left off when zero). Blends in the 400 and 500 series do not decode this way.",
     },
     {
-      question: "Is R-22 a CFC or HCFC?",
-      answer:
-        "HCFC. It contains hydrogen, chlorine, and fluorine. CFCs contain no hydrogen. HFCs contain no chlorine.",
+      question: "Is R-22 a CFC or an HCFC?",
+      answer: "An HCFC: it contains hydrogen, chlorine and fluorine. EPA ended production and import of HCFC-22 on 1 January 2020.",
     },
     {
       question: "What pressure class is R-410A?",
-      answer:
-        "High-pressure. It is an HFC blend used in modern residential and light commercial air conditioning.",
+      answer: "High pressure. 40 CFR 82.152 lists R-410A as an example of a high-pressure appliance refrigerant (170–355 psia at 104 °F), covered by Type II.",
     },
     {
-      question: "What color is the R-22 cylinder?",
-      answer:
-        "Green. R-134a cylinders are light blue. R-12 cylinders are white.",
+      question: "What pressure class is R-123?",
+      answer: "Low pressure (below 45 psia at 104 °F), so R-123 chillers fall under Type III.",
     },
     {
-      question: "Are R-500 and R-502 CFCs?",
-      answer:
-        "Yes. Although they are blends, they contain CFC components and are regulated as CFCs.",
+      question: "How many questions are on the EPA 608 test and what is the passing score?",
+      answer: "25 questions for Core and 25 for each type, 100 for Universal. The passing score is 70%, or 84% for a mail-in Type I test (40 CFR part 82, subpart F, appendix D).",
     },
     {
-      question: "What is the difference between R-407A, R-407B, and R-407C?",
-      answer:
-        "They are HFC blends with different proportions of R-32, R-125, and R-134a. For EPA 608 purposes, they are all high-pressure HFCs. The exam does not usually test blend composition ratios.",
-    },
-    {
-      question: "How many refrigerant numbers do I need to know for EPA 608?",
-      answer:
-        "Approximately 15–20 core refrigerants appear regularly. Focus on families (CFC, HCFC, HFC) and pressure classes rather than memorizing every number in isolation.",
-    },
-    {
-      question: "What is the best way to memorize refrigerant numbers?",
-      answer:
-        "Group by family, attach pressure class, and use cylinder color codes as visual anchors. Make family cards and drill classification speed — not one flashcard per refrigerant. The EPA 608 Anki deck at uniprep2go.study/decks/hvac-epa-608-anki-deck is built for that drill.",
+      question: "Does EPA 608 certification expire?",
+      answer: "No. EPA states that Section 608 technician certification credentials do not expire.",
     },
   ],
   bottomLine:
-    "Refrigerant numbers are not phone numbers. The ASHRAE system encodes chemistry into digits, and the EPA exam encodes regulatory logic into families. Stop memorizing R-22, R-410A, and R-134a as isolated facts. Learn the family rules, attach pressure classes, and drill them in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) until you can classify any refrigerant in under 2 seconds — that speed is the difference between finishing with review time and guessing on the last five questions.",
+    "Learn the family rule, attach the EPA pressure class, and know the phaseout dates EPA lists in its test topics. Sources: [EPA 608 certification requirements](https://www.epa.gov/section608/section-608-technician-certification-requirements), [EPA 608 test topics](https://www.epa.gov/section608/test-topics), [40 CFR 82.152](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/section-82.152), [40 CFR part 82 subpart F appendix D](https://www.ecfr.gov/current/title-40/chapter-I/subchapter-C/part-82/subpart-F/appendix-Appendix%20D%20to%20Subpart%20F%20of%20Part%2082), [EPA HCFC phaseout](https://www.epa.gov/ods-phaseout/phaseout-class-ii-ozone-depleting-substances) and [EPA Technology Transitions sector tables](https://www.epa.gov/climate-hfcs-reduction/sector-tables), checked 24 Nov 2026.",
 };
