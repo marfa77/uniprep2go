@@ -5,7 +5,7 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   title: "Belgium Citizenship: Flanders Makes You Take a Test. Wallonia Does Not (Yet)",
   titleTag: "Belgium Citizenship Test: Flanders MO vs Wallonie — What You Actually Face",
   metaDescription:
-    "Flanders has a social orientation test. Wallonia does not. Brussels is a mix. Here is the exact integration requirement by region, the language level hike to B1, and why Belgium has three citizenship systems in one country.",
+    "Flanders has a social orientation test. Wallonia does not. Brussels is a mix. Here is the exact integration requirement by region, what each course costs, and why Belgium has three integration systems under one nationality law.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Belgium · Flanders vs Wallonia",

@@ -1887,7 +1887,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       scoring_scale: "125–200 scaled score",
       passing_score: "170 out of 200",
       delivery: "Prometric test center or online remote proctoring — verify current options at usgbc.org / gbci.org",
-      outline_effective_date: "LEED v5: v4 AP testing ended June 28, 2026; v5 beta data collection June 30–October 27, 2026, then a testing-only beta until the final v5 exam (expected early 2027)",
+      outline_effective_date: "LEED v5: USGBC says exams are now available for LEED v5 (usgbc.org gives no v4 end or v5 beta dates)",
       verify_at_url: "https://www.usgbc.org/credentials/leed-ap",
     },
     official_sources: [
@@ -1915,7 +1915,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       { domain: "Indoor Environmental Quality", weight: "17 questions — ventilation, IAQ, green cleaning, IPM, occupant experience" },
     ],
     whats_changed: [
-      "The LEED AP O+M exam is moving to LEED v5: v4 testing ended June 28, 2026; the v5 beta (English only, no combined GA + AP format) runs until the final v5 exam, expected early 2027. Domain question counts sum to 85; the rest of the 100 items are unscored.",
+      "The LEED AP O+M exam is moving to LEED v5; USGBC says exams are now available for LEED v5. Domain question counts sum to 85; the rest of the 100 items are unscored.",
       "O+M emphasizes performance periods, ongoing reporting, and existing-building operations rather than new-construction design credits.",
       "Energy and Atmosphere and Indoor Environmental Quality remain the heaviest specialty domains for O+M.",
     ],
@@ -1956,7 +1956,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       scoring_scale: "125–200 scaled score",
       passing_score: "170 scaled score on the specialty exam (and on GA if taking combined exam)",
       delivery: "Prometric test center or online remote proctored",
-      outline_effective_date: "LEED v5: v4 BD+C testing ended June 28, 2026; v5 beta data collection June 30–October 27, 2026, then a testing-only beta until the final v5 exam (expected February 2027)",
+      outline_effective_date: "LEED v5: USGBC says exams are now available for LEED v5 (usgbc.org gives no v4 end or v5 beta dates)",
       verify_at_url: "https://www.usgbc.org/credentials/leed-ap-build-design-construction",
     },
     official_sources: [

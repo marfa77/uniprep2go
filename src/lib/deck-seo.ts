@@ -1114,6 +1114,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
   "nebosh-anki-deck": {
     title: "NEBOSH IGC Prep | 250+ Cards + Free Mock",
+    // H1: per-slug override so only the year token changes (template output was "2026 NEBOSH IGC Exam Prep — 250 cards + Free Mock").
+    headline: "2027 NEBOSH IGC Exam Prep — 250 cards + Free Mock",
   },
   "cfps-anki-deck": {
     title: "CFPS Exam Prep | 400+ Cards + Free Mock",
@@ -1302,6 +1304,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   // WP-D 24 Nov 2026: per-slug override so only the year token changes (template output was "2026 PMP Exam Prep | 346 cards + Free Practice Test").
   "pmp-anki-deck": {
     title: "2027 PMP Exam Prep | 346 cards + Free Practice Test",
+    // H1: per-slug override so only the year token changes (template output was "2026 PMP Exam Prep — 346 cards + Free Mock").
+    headline: "2027 PMP Exam Prep — 346 cards + Free Mock",
   },
   "bench-energy-oil-trader-anki-deck": {
     title: "Oil Trader Lexicon | 211 Crude Oil Anki Cards",

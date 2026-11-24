@@ -5,7 +5,7 @@ export const servsafePracticeTestsCountPost: BlogPostDraft = {
   title: "How Many Practice Tests Should You Take Before the Real ServSafe Manager Exam?",
   titleTag: "How Many Practice Tests Before ServSafe Manager? The Real Number",
   metaDescription:
-    "Most people take one practice test and hope. ServSafe data says candidates who pass typically take 2–3 full mocks. Here is the exact number, the score to hit, and why 85% matters.",
+    "Most people take one practice test and hope. ServSafe sets no official number of mocks. Here is a clear readiness test instead, the 70% pass mark to beat, and how to use full timed mocks.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "ServSafe Manager · Practice strategy",

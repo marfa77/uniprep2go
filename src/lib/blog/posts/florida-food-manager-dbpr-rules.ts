@@ -6,7 +6,7 @@ export const floridaFoodManagerDbprRulesPost: BlogPostDraft = {
   titleTag:
     "Florida Food Manager Certification: DBPR Rules, ServSafe Alternatives & 30-Day Rule",
   metaDescription:
-    "Florida does not require ServSafe. It requires an ANAB-CFP accredited exam. Here is the 30-day rule, the 4-employee rule, and why most people overpay for training they do not need.",
+    "Florida does not require ServSafe. It requires a CFP-approved manager exam. Here is the 30-day rule, what DBPR's rule covers, and why you may not need to pay for training.",
   publishedAt: "2026-07-27",
   contentUpdated: "2026-11-24",
   eyebrow: "Florida DBPR · Food manager certification",
