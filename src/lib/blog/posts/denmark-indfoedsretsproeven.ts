@@ -2,7 +2,7 @@ import type { BlogPostDraft } from "../types";
 
 export const denmarkIndfoedsretsproevenPost: BlogPostDraft = {
   slug: "denmark-indfoedsretsproeven-47-percent-pass-rate",
-  title: "Denmark Indfødsretsprøven",
+  title: "Denmark Indfødsretsprøven: Format, Pass Rules and How to Prepare",
   titleTag: "Denmark Indfødsretsprøven: How to Pass 2027",
   metaDescription:
     "The Danish citizenship test has two gates: 36 of 45 questions AND 4 of 5 values questions, in 45 minutes. Here is the exact format and the study material that matters.",

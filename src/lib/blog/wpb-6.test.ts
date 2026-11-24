@@ -9,7 +9,7 @@ const body = (slug: string) => {
 describe("WP-B 6 — Denmark, Germany; WP-E Denmark + Leben in Deutschland titles", () => {
   it("Denmark: unsourced 47% removed from title/titleTag/body (WP-E); official SIRI facts; 2027", () => {
     const p = getBlogPostBySlug("denmark-indfoedsretsproeven-47-percent-pass-rate")!;
-    expect(p.title).toBe("Denmark Indfødsretsprøven");
+    expect(p.title).toBe("Denmark Indfødsretsprøven: Format, Pass Rules and How to Prepare");
     expect(p.titleTag).toBe("Denmark Indfødsretsprøven: How to Pass 2027");
     const b = body(p.slug);
     expect(b).not.toMatch(/47%|\$9\.99|October 21/);

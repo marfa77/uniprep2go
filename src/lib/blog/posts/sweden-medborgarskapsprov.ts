@@ -5,7 +5,7 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   title: "Sweden Medborgarskapsprov: How the New Citizenship Test Works",
   titleTag: "Sweden Citizenship Test 2027: Medborgarskapsprov Format & Prep",
   metaDescription:
-    "Sweden introduces a citizenship test in August 2026. Nobody knows the exact format yet. Here is what the law says, what UHR is building, and how to get ready without official materials.",
+    "Sweden's citizenship test began with a trial sitting in August 2026; the next is planned for April–May 2027. Here is what the law says, what UHR has published, and how to study.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Sweden · Medborgarskapsprov",
