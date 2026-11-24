@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const netherlandsInburgeringsexamenPost: BlogPostDraft = {
   slug: "netherlands-inburgeringsexamen-five-exams-pass-guide",
   title: "Netherlands Inburgeringsexamen: The Five-Part Gauntlet",
-  titleTag: "Netherlands Inburgeringsexamen 2026: 5 Exams, Cost & How to Pass",
+  titleTag: "Netherlands Inburgeringsexamen 2027: 5 Exams, Cost & How to Pass",
   metaDescription:
     "The Dutch integration exam is not one test. It is five. A2 or B1 language, KNM videos, and a labour market module. Here is the fee breakdown and why most people fail speaking.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Netherlands · Inburgeringsexamen",
   clusterId: "netherlands-inburgering",
   relatedSlugs: [
@@ -15,7 +16,7 @@ export const netherlandsInburgeringsexamenPost: BlogPostDraft = {
     "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
   ],
   intro:
-    "**Most people think the Dutch integration exam is a language test. It is not.** It is five separate exams — four language skills plus a society module — that you must pass within three years. Some candidates need A2. Others need B1. Some must complete a labour-market portfolio. Others sign a participation statement at city hall. Get one requirement wrong and your residence permit is at risk. This guide maps the five parts, who needs A2 versus B1, the €250–€350 cost, and the speaking section that eliminates many candidates.",
+    "**The Dutch inburgeringsexamen under the Wet inburgering 2021 has five paid exams: writing, speaking, listening, reading and knowledge of Dutch society (KNM), each €50.** Your route decides the level, from A1 to B1, and naturalisation needs A2. This guide covers the exams, fees, routes, what the IND asks for naturalisation, and the change the government announced in November 2026.",
   deckSlug: "dutch-a2-inburgering-anki-deck",
   cta: {
     deckLabel: "Get the Dutch Inburgering deck on Prep2Go",
@@ -34,201 +35,112 @@ export const netherlandsInburgeringsexamenPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Five Exams (Not One)",
+      heading: "Which exams make up the inburgeringsexamen?",
       blocks: [
         {
           type: "p",
-          text: "The inburgeringsexamen has five independent modules. You can take them in any order across your three-year integration period.",
+          text: "Under the Wet inburgering 2021, the exam on DUO's price list has five parts, each paid and taken separately:",
         },
         {
           type: "table",
-          caption: "Core modules",
-          headers: ["Module", "What it tests", "Format", "Level"],
+          caption: "Inburgeringsexamen under the Wet 2021 (inburgeren.nl, checked 24 Nov 2026)",
+          headers: ["Exam", "Fee"],
           rows: [
-            [
-              "Lezen (Reading)",
-              "Short texts, emails, ads, letters",
-              "MCQ on computer",
-              "A2 or B1",
-            ],
-            [
-              "Luisteren (Listening)",
-              "Announcements, conversations, instructions",
-              "MCQ on computer",
-              "A2 or B1",
-            ],
-            [
-              "Schrijven (Writing)",
-              "Short emails, forms, messages",
-              "Typed responses",
-              "A2 or B1",
-            ],
-            [
-              "Spreken (Speaking)",
-              "Describe situations, give opinions",
-              "Recorded spoken answers",
-              "A2 or B1",
-            ],
-            [
-              "KNM (Dutch Society)",
-              "Customs, laws, healthcare, work, education",
-              "Videos + MCQ",
-              "Content in Dutch",
-            ],
+            ["Schrijven (writing)", "€50"],
+            ["Spreken (speaking)", "€50"],
+            ["Luisteren (listening)", "€50"],
+            ["Lezen (reading)", "€50"],
+            ["Kennis van de Nederlandse Maatschappij (KNM)", "€50"],
+            ["Total", "€250"],
           ],
         },
         {
           type: "p",
-          text: "**A2 vs B1 trap:** level depends on when you **started** integration, not when you sit. Before 1 Jan 2022 → usually A2. On/after that date → usually B1. Verify with DUO before you register.",
+          text: "The **Module Arbeidsmarkt en Participatie (MAP)** is done with your municipality and is free, and the **participatieverklaringstraject (PVT)** is free under the Wet 2021. Mijn Inburgering shows which exams you have to take.",
         },
       ],
     },
     {
-      heading: "The Hidden Sixth and Seventh Requirements",
-      blocks: [
-        {
-          type: "topics",
-          items: [
-            {
-              title: "ONA (2013 Act)",
-              body: "Portfolio of CV, applications, and interview practice plus a DUO assessor interview — months of work, not a single sitting.",
-            },
-            {
-              title: "MAP (2021 Act)",
-              body: "Job-market and participation module via your municipality instead of ONA. Confirm which act applies in your integration letter.",
-            },
-            {
-              title: "PVT — Participation Statement",
-              body: "Some applicants must sign at city hall acknowledging Dutch values (speech, equality, tolerance, participation). Not a test, but mandatory when required.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "Cost Breakdown",
-      blocks: [
-        {
-          type: "table",
-          caption: "Typical fees",
-          headers: ["Item", "Cost"],
-          rows: [
-            ["Lezen", "€50"],
-            ["Luisteren", "€50"],
-            ["Schrijven", "€50"],
-            ["Spreken", "€50"],
-            ["KNM", "€50"],
-            ["ONA (if required)", "€40–€100"],
-            ["MAP (if required)", "Varies by municipality"],
-            ["Total minimum (5 modules)", "~€250"],
-            ["Total with ONA/MAP", "~€350+"],
-          ],
-        },
-        {
-          type: "p",
-          text: "Fail a module → pay that module’s fee again. No partial retakes.",
-        },
-      ],
-    },
-    {
-      heading: "Why Most People Fail Speaking",
+      heading: "Which route and level apply to you?",
       blocks: [
         {
           type: "ul",
           items: [
-            "Computer + headphones; timed recorded responses (often 15–30 seconds)",
-            "No “can you repeat?”, no human examiner reading body language",
-            "**Silence** after freeze = fail",
-            "**Off-topic** answers score zero regardless of intent",
-            "**Too short** — A2 needs multi-sentence answers",
-            "**Grammar overload** — hesitation burns the clock; fluency beats perfection",
+            "**B1 route** (language and work or volunteering): speaking and writing Dutch at **B1** within at most **3 years**.",
+            "**Education route** (onderwijsroute): B1 or higher, through education.",
+            "**Self-reliance route** (Z-route): A1 level.",
+            "**KNM** is part of all routes; **MAP** applies to the B1 and Z-routes.",
           ],
         },
         {
           type: "p",
-          text: "**Fix:** timer drills. Record ~50 prompts. If average responses stay under ~25 words at A2, keep practising before booking Spreken.",
+          text: "For asylum status holders, DUO says the first 2 attempts at each exam are free, unless you take an exam at a lower level than in your personal plan (PIP).",
         },
       ],
     },
     {
-      heading: "KNM: The Society Module",
+      heading: "What do you need for naturalisation?",
       blocks: [
         {
           type: "p",
-          text: "Short videos of everyday Dutch situations (doctor, renting, school enrolment) plus MCQs. Topics: geography, government, healthcare, education, work/taxes, housing, norms and holidays.",
-        },
-        {
-          type: "p",
-          text: "Videos run at A2/B1 Dutch. Weak listening turns KNM into a listening exam in disguise.",
+          text: "The IND says naturalisation requires passing the inburgeringsexamen at **language level A2** (the naturalisatietoets): reading, listening, writing and speaking, plus knowledge of Dutch society and, in the Netherlands, the labour-market orientation (ONA or MAP depending on your law), and the participation statement. You register with DUO, and passing gives you the digital inburgeringsdiploma. Many exemptions apply, for example an NT2 diploma or a Dutch diploma, and the option procedure (optie) needs no exam.",
         },
       ],
     },
     {
-      heading: "Registration and Logistics",
+      heading: "What is changing?",
       blocks: [
         {
-          type: "ul",
+          type: "p",
+          text: "On 5 November 2026 the government announced a **plan** to give people who work (at least 28 hours a week) up to 3 extra years to complete inburgering, and parents of young children without childcare up to 1 extra year, with the new rules to apply in 2027. It is a plan, not yet law; check rijksoverheid.nl before relying on it.",
+        },
+      ],
+    },
+    {
+      heading: "How should you prepare?",
+      blocks: [
+        {
+          type: "steps",
           items: [
-            "**Register:** mijn.inburgering.nl (DUO)",
-            "**Centres:** approved sites in NL and some embassies abroad",
-            "**Prep:** free DUO materials on inburgeren.nl; third-party courses for structured feedback",
-            "**Timeline:** most spread modules over 6–12 months; 3-year obligation window — miss it and face fines or residence consequences",
+            { title: "Check Mijn Inburgering", body: "See your route, which exams you need and your deadline." },
+            { title: "Use DUO's practice exams", body: "inburgeren.nl offers practice material for each exam." },
+            { title: "Build vocabulary every day", body: "The [Dutch inburgering Anki deck](/decks/dutch-a2-inburgering-anki-deck) covers everyday words for reading and listening." },
+            { title: "Book one exam at a time", body: "Each exam is separate, so you can pass them one by one." },
           ],
+        },
+        {
+          type: "p",
+          text: "Comparing countries? See the [Belgium citizenship guide](/blog/belgium-citizenship-test-flanders-vs-wallonia).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "How many exams are in the Dutch inburgeringsexamen?",
-      answer:
-        "Five core modules: Lezen, Luisteren, Schrijven, Spreken, and KNM. Some candidates also need ONA or MAP depending on which integration act applies.",
-    },
-    {
-      question: "What language level do I need for the Dutch integration exam?",
-      answer:
-        "Usually A2 if you started before 1 January 2022, and B1 if you started on or after that date. Confirm with DUO.",
+      question: "How many exams are in the inburgeringsexamen?",
+      answer: "Under the Wet 2021, DUO lists five paid exams: writing, speaking, listening, reading and KNM. MAP and the PVT are separate and free.",
     },
     {
       question: "How much does the inburgeringsexamen cost?",
-      answer:
-        "About €250 for the five core modules (€50 each). ONA/MAP can add €40–€100+. Each retake is a full module fee.",
+      answer: "€50 per exam, €250 for all five under the Wet 2021 (DUO, checked 24 Nov 2026).",
     },
     {
-      question: "What is the hardest part of the Dutch integration exam?",
-      answer:
-        "Speaking (Spreken) — timed recordings and short answers fail many candidates. KNM is hard if listening is weak.",
+      question: "What level do I need for naturalisation?",
+      answer: "A2, according to the IND.",
     },
     {
-      question: "How long do I have to pass all modules?",
-      answer:
-        "Three years from the start of your integration obligation. Missing the window can mean fines or residence consequences.",
+      question: "What level does the B1 route require?",
+      answer: "Speaking and writing Dutch at B1 within at most 3 years.",
     },
     {
-      question: "Can I take the inburgeringsexamen in English?",
-      answer: "No. All modules are in Dutch, including KNM videos and questions.",
+      question: "Are retakes free?",
+      answer: "For asylum status holders, the first 2 attempts at each exam are free; after that, extra attempts must be paid. Others pay for each exam they take.",
     },
     {
-      question: "What is KNM?",
-      answer:
-        "Kennis van de Nederlandse Maatschappij — videos and MCQs on Dutch society, laws, healthcare, education, and work.",
-    },
-    {
-      question: "Do I need ONA or MAP?",
-      answer:
-        "ONA for many under the 2013 act; MAP for many under the 2021 act. Check your DUO or municipality letter.",
-    },
-    {
-      question: "How do I register for the inburgeringsexamen?",
-      answer:
-        "Through the DUO portal at mijn.inburgering.nl. Book modules individually or together.",
-    },
-    {
-      question: "Can I retake a failed module?",
-      answer:
-        "Yes — pay again and rebook. No fixed retake limit inside your three-year window.",
+      question: "Is the 3-year deadline changing?",
+      answer: "The government announced a plan on 5 November 2026 to extend it for people who work, from 2027. It is not law yet.",
     },
   ],
   bottomLine:
-    "Dutch integration is a marathon: five modules, €250–€350, three-year deadline. Speaking fails people who never timed a recording. KNM fails people who treat it as trivia instead of listening-plus-culture. Practice under exam conditions and spread sittings — do not cram all five into one month.",
+    "Check your route in Mijn Inburgering, budget €50 per exam, and remember naturalisation needs A2. Sources: [DUO — Hoeveel kost inburgeren?](https://www.inburgeren.nl/inburgeren-betalen/), [IND — inburgering voor naturalisatie](https://ind.nl/nl/nederlanderschap/inburgering-voor-naturalisatie), [Rijksoverheid — Wet inburgering 2021](https://www.rijksoverheid.nl/themas/migratie-en-reizen/inburgeren-in-nederland/nieuwe-wet-inburgering) and [Rijksoverheid news, 5 Nov 2026](https://www.rijksoverheid.nl/actueel/nieuws/2026/11/05/kabinet-zet-werk-centraal-in-de-inburgering-wie-werkt-krijgt-meer-tijd-om-in-te-burgeren), checked 24 Nov 2026.",
 };

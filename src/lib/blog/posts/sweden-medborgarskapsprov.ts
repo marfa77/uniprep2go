@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   slug: "sweden-medborgarskapsprov-2026-new-test",
   title: "Sweden Medborgarskapsprov: The August 2026 Test That Does Not Exist Yet",
-  titleTag: "Sweden Citizenship Test 2026: Medborgarskapsprov Format & Prep",
+  titleTag: "Sweden Citizenship Test 2027: Medborgarskapsprov Format & Prep",
   metaDescription:
     "Sweden introduces a citizenship test in August 2026. Nobody knows the exact format yet. Here is what the law says, what UHR is building, and how to get ready without official materials.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Sweden · Medborgarskapsprov",
   clusterId: "sweden-citizenship",
   relatedSlugs: [
@@ -15,7 +16,7 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
     "portugal-nationality-test-2026-new-civic-exam",
   ],
   intro:
-    "**On June 6, 2026, Sweden changed its citizenship rules.** For the first time in modern history, most applicants aged 16–66 must demonstrate knowledge of Swedish society — via school grades, completed courses, or a new citizenship test. The Medborgarskapsprov launches in **August 2026**. As of July 2026, no one has taken it. There is no official question bank, and question count, time limit, and passing score are unpublished. This guide covers what the law confirms, what UHR is building, and how to prep from the Samhällskunskap curriculum while you wait.",
+    "**Sweden now has a citizenship test.** The Citizenship Act changed on 6 June 2026, UHR held a first trial society test on 15 August 2026, and the next sitting is planned for April–May 2027. Most applicants also need eight years of residence under the new rules. This guide sets out what UHR and Migrationsverket have published, what is still to be announced, and how to study the official material.",
   mockSlug: "sweden-medborgarskapsprov-readiness-check",
   deckSlug: "swedish-a2-sfi-anki-deck",
   cta: {
@@ -36,224 +37,103 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "What Changed on June 6, 2026",
+      heading: "Has Sweden's citizenship test started?",
       blocks: [
         {
           type: "p",
-          text: "The new rules introduced a **knowledge requirement**. Applicants must show:",
-        },
-        {
-          type: "ol",
-          items: [
-            "Knowledge of the **Swedish language**",
-            "Knowledge of **Swedish society**",
-          ],
-        },
-        {
-          type: "p",
-          text: "Both apply to applicants aged 16–66.",
-        },
-        {
-          type: "table",
-          caption: "How to demonstrate knowledge",
-          headers: ["Method", "Language", "Society"],
-          rows: [
-            ["Swedish school grades (grundskola/gymnasium)", "Yes", "Yes"],
-            ["SFI course D or higher", "Yes", "Partial"],
-            ["Municipal adult education (Komvux)", "Yes", "Yes"],
-            ["Folk high school (Folkhögskola)", "Yes", "Yes"],
-            ["Citizenship test (Medborgarskapsprov)", "Later", "August 2026"],
-          ],
-        },
-        {
-          type: "p",
-          text: "If you cannot prove knowledge through education, you will be offered the citizenship test. Society launches August 2026; the language test comes later.",
+          text: "Yes, in stages. Sweden's Citizenship Act changed on **6 June 2026**, and the Swedish Council for Higher Education (**UHR**) now runs the citizenship test. The first society test (samhällskunskap) was held on **15 August 2026** as a trial sitting: it had 60 questions, of which 40 could count. UHR says the next society test is planned for **April–May 2027**, with dates, places, fees and the number of questions still to be announced. A Swedish language test will be introduced later.",
         },
       ],
     },
     {
-      heading: "What We Know About the Test Format",
+      heading: "What changed on 6 June 2026?",
       blocks: [
         {
           type: "p",
-          text: "UHR (Swedish Council for Higher Education) is developing the exam. Migrationsverket will instruct applicants to register.",
+          text: "Migrationsverket says the new rules apply from 6 June 2026 to all undecided applications, with no transitional arrangements. Among them:",
         },
         {
           type: "ul",
           items: [
-            "**Confirmed:** covers Swedish society (Samhällskunskap); administered by UHR; for applicants who cannot prove knowledge otherwise; uses UHR test infrastructure",
-            "**Not confirmed:** question count, time limit, passing score, language of administration, cost, frequency, MCQ vs oral vs mix",
+            "**Residence:** at least **eight years** for adults as a general rule (previously five), with shorter periods for some groups, such as 2 years for Nordic citizens and 7 years for refugees.",
+            "**Self-support:** income of at least three income base amounts a year, about SEK 20,000 a month before tax, with exemptions.",
+            "**Knowledge of Swedish language and society** for applicants aged 16 to 66. You can show it through school grades, municipal adult education or folk high school, or a pass in SFI course D; otherwise you take the citizenship test.",
           ],
-        },
-        {
-          type: "p",
-          text: "UHR has published preliminary info on uhr.se (Swedish). Final format should land closer to the August 2026 launch.",
         },
       ],
     },
     {
-      heading: "The Samhällskunskap Curriculum: Your Study Material Until the Test Exists",
+      heading: "How does the test work?",
       blocks: [
-        {
-          type: "p",
-          text: "Until UHR releases samples, use the standard Samhällskunskap curriculum from SFI and adult education:",
-        },
         {
           type: "table",
-          caption: "Core topic map",
-          headers: ["Topic area", "Key content"],
+          caption: "Medborgarskapsprovet (UHR, checked 24 Nov 2026)",
+          headers: ["Detail", "What UHR says"],
           rows: [
-            [
-              "Swedish political system",
-              "Riksdag, government, municipalities, counties, elections, constitution",
-            ],
-            [
-              "History",
-              "Viking Age, Gustav Vasa, Swedish Empire, neutrality, welfare state",
-            ],
-            [
-              "Society and culture",
-              "Equality, secularism, free speech, Allemansrätten, fika, traditions",
-            ],
-            [
-              "Rights and obligations",
-              "Voting, taxes, military service (expanded), human rights",
-            ],
-            [
-              "Economy and labour market",
-              "Unions, collective bargaining, social insurance, pensions",
-            ],
-            [
-              "Geography and environment",
-              "Counties, regions, climate, environmental policy",
-            ],
-            [
-              "International relations",
-              "EU membership, NATO (2024), UN, Nordic cooperation",
-            ],
+            ["Who runs it", "UHR; Migrationsverket decides who must take it and sends an invitation"],
+            ["Registration", "Only after a letter from Migrationsverket, through a UHR account; currently closed"],
+            ["Language", "Swedish only"],
+            ["Format", "On paper, multiple choice, four options with one correct answer"],
+            ["Pass mark", "Set by UHR and shown with your result; not published in advance"],
+            ["Results", "In your UHR account and sent automatically to Migrationsverket"],
+            ["Adjustments", "An adapted test or adapted room for disability or other needs"],
           ],
+        },
+        {
+          type: "p",
+          text: "UHR does not run Swedex or Tisus; those are separate Swedish tests from other providers.",
         },
       ],
     },
     {
-      heading: "The 2026 Context: What Is Different Now",
+      heading: "What should you study?",
       blocks: [
         {
-          type: "topics",
-          items: [
-            {
-              title: "NATO membership (March 2024)",
-              body: "Sweden ended ~200 years of military non-alignment. Expect NATO, Article 5, and Sweden’s alliance role as likely testable themes.",
-            },
-            {
-              title: "Expanded conscription",
-              body: "Conscription returned in 2017 and expanded. Male and female citizens may be called up — a civic obligation that did not exist a decade ago.",
-            },
-            {
-              title: "Welfare state under pressure",
-              body: "Housing, integration, and pension debates are live. Social-policy questions are plausible.",
-            },
-          ],
+          type: "p",
+          text: "UHR and Skolverket published the official learning material **\"Sverige i fokus\"** (1st edition, corrected 10 August 2026), as a PDF and as 14 audio chapters. UHR warns that practice tests from other providers are not checked by UHR or any authority, so use them only to practise, and treat the official material as the source.",
         },
-      ],
-    },
-    {
-      heading: "How to Prepare Without Official Materials",
-      blocks: [
         {
           type: "steps",
           items: [
-            {
-              title: "1. Study SFI / Komvux Samhällskunskap",
-              body: "Closest content proxy. Textbooks like Samhällskunskap för sfi structure politics, history, and rights.",
-            },
-            {
-              title: "2. Read Swedish news",
-              body: "SVT, Dagens Nyheter, Sveriges Radio — elections, policy, NATO, social debates. 2–3 articles per week.",
-            },
-            {
-              title: "3. Learn specific vocabulary",
-              body: "Riksdagen (349 members, 4-year terms); Grundlagarna; Kung Carl XVI Gustaf; Allemansrätten; lagom, Jantelagen, fika; Migrationsverket, Skatteverket, Försäkringskassan.",
-            },
-            {
-              title: "4. Build flashcards now",
-              body: "Political system, timeline, rights/obligations — even without official items. When UHR publishes format, add test-specific practice.",
-            },
-            {
-              title: "5. Monitor uhr.se",
-              body: "Format, samples, and registration will land there. Check monthly from mid-2026.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Language Requirement (Separate from the Society Test)",
-      blocks: [
-        {
-          type: "table",
-          caption: "Society vs language",
-          headers: ["Test", "Purpose", "Timing / level"],
-          rows: [
-            ["Medborgarskapsprov (society)", "Civic knowledge", "August 2026"],
-            ["Medborgarskapsprov (language)", "Swedish proficiency", "TBD"],
-            ["SFI D", "Language course completion", "Often treated as equivalent pathway"],
+            { title: "Read Sverige i fokus chapter by chapter", body: "Listen to the audio version too; the test is in Swedish." },
+            { title: "Build your Swedish", body: "Reading speed matters; the [Swedish SFI deck](/decks/swedish-a2-sfi-anki-deck) helps with everyday vocabulary." },
+            { title: "Practise society questions", body: "Use the [Sweden medborgarskapsprov readiness check](/mock-exams/sweden-medborgarskapsprov-readiness-check) and check every answer against Sverige i fokus." },
+            { title: "Watch for UHR's announcement", body: "Dates, fees and the number of questions for the April–May 2027 test will appear on uhr.se." },
           ],
         },
         {
           type: "p",
-          text: "If you are early in the journey, prioritise language. Society is a 2–3 month project for many; language often takes 1–2 years for adult learners.",
+          text: "Comparing Nordic tests? See [Norway's statsborgerprøven](/blog/norway-statsborgerproven-format-questions-pass) and [Finland's kansalaisuuskoe](/blog/finland-kansalaisuuskoe-2027-new-test).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "When does the Swedish citizenship test start?",
-      answer:
-        "The society part of Medborgarskapsprov launches in August 2026. The language test comes later.",
+      question: "Does Sweden have a citizenship test now?",
+      answer: "Yes. UHR held the first society test on 15 August 2026 as a trial sitting, and plans the next one for April–May 2027 (UHR, checked 24 Nov 2026).",
     },
     {
-      question: "Who needs to take the Swedish citizenship test?",
-      answer:
-        "Applicants aged 16–66 who cannot demonstrate Swedish society knowledge via school grades, SFI D, Komvux, or folk high school.",
+      question: "Who has to take it?",
+      answer: "Applicants aged 16 to 66 who cannot show knowledge of Swedish language and society another way, for example through school grades or a pass in SFI course D. Migrationsverket sends the invitation.",
     },
     {
-      question: "What is the passing score for the Medborgarskapsprov?",
-      answer:
-        "Unknown. UHR has not published format, question count, or cut score. Watch uhr.se.",
+      question: "Can I take the test in English?",
+      answer: "No. UHR says the citizenship test can only be taken in Swedish.",
     },
     {
-      question: "Is the Swedish citizenship test in English?",
-      answer:
-        "Unknown. Likely Swedish; UHR may clarify support materials or languages in the official announcement.",
+      question: "What is the pass mark?",
+      answer: "UHR sets it and shows it with your result. It has not been published in advance, and the format of the next sitting is still to be announced.",
     },
     {
-      question: "How much will the Swedish citizenship test cost?",
-      answer:
-        "Unknown. Expect a fee in the range of other UHR tests (often speculated SEK 500–1,000) — confirm when published.",
+      question: "How long must I live in Sweden before applying?",
+      answer: "Since 6 June 2026, generally at least eight years for adults, with shorter periods for some groups (Migrationsverket).",
     },
     {
-      question: "How do I register for the Medborgarskapsprov?",
-      answer:
-        "Migrationsverket will instruct eligible applicants. UHR administers the test; registration will likely run through uhr.se or an affiliated portal.",
-    },
-    {
-      question: "Can I use old Swedish civics study books to prepare?",
-      answer:
-        "Yes for foundations. Update for NATO (2024), conscription, and any post-2024 constitutional or social changes.",
-    },
-    {
-      question: "How long should I study for the Swedish citizenship test?",
-      answer:
-        "About 2–3 months part-time if you already know Swedish society. Add 6–12 months if you need both language and civics from scratch.",
-    },
-    {
-      question: "What is the hardest part of the Medborgarskapsprov?",
-      answer:
-        "Until launch: uncertainty. After launch: reading civic Swedish under time pressure — the same Nordic pattern as Norway and Denmark.",
+      question: "What is the official study material?",
+      answer: "\"Sverige i fokus\", published by UHR with Skolverket as a PDF and 14 audio chapters.",
     },
   ],
   bottomLine:
-    "Medborgarskapsprov is a ghost exam — required by law, dated for August 2026, not yet born. You cannot sit a practice form that does not exist. You can study Samhällskunskap, read Swedish news, learn political vocabulary, and watch uhr.se. When it opens, six-month preparers pass; August starters scramble.",
+    "Sweden's test is real but still being rolled out: study Sverige i fokus in Swedish and watch uhr.se for the 2027 sitting details. Sources: [UHR — om medborgarskapsprovet](https://www.uhr.se/medborgarskapsprovet/om-medborgarskapsprovet/), [UHR — frågor och svar](https://www.uhr.se/medborgarskapsprovet/fragor-och-svar/), [UHR — utbildningsmaterial](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/) and [Migrationsverket — new rules from 6 June 2026](https://www.migrationsverket.se/nyheter/news-archive/2026-05-06-new-rules-for-swedish-citizenship-from-6-june-2026.html), checked 24 Nov 2026.",
 };
