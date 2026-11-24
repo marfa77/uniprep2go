@@ -28,6 +28,9 @@ import { cdcpMockEditorial } from "./cdcp-readiness-check";
 import { cemEditorial } from "./cem-readiness-check";
 import { electricalJourneymanEditorial } from "./electrical-journeyman-readiness-check";
 import { nnaapCnaEditorial } from "./nnaap-cna-readiness-check";
+import { sieQuickDiagnosticEditorial } from "./sie-quick-diagnostic";
+import { cdlGeneralKnowledgeEditorial } from "./cdl-general-knowledge-readiness-check";
+import { leedApBdcEditorial } from "./leed-ap-bd-c-readiness-check";
 import { cdlCombinationEditorial } from "./cdl-combination-readiness-check";
 import { ardmsSpiEditorial } from "./ardms-spi-readiness-check";
 import { crcstEditorial } from "./crcst-readiness-check";
@@ -73,6 +76,9 @@ const ENRICHMENT_SLUGS = [
   "cem-readiness-check",
   "electrical-journeyman-readiness-check",
   "nnaap-cna-readiness-check",
+  "sie-quick-diagnostic",
+  "cdl-general-knowledge-readiness-check",
+  "leed-ap-bd-c-readiness-check",
   "cdl-combination-readiness-check",
   "ardms-spi-readiness-check",
   "crcst-readiness-check",
@@ -117,6 +123,9 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "cem-readiness-check": cemEditorial,
   "electrical-journeyman-readiness-check": electricalJourneymanEditorial,
   "nnaap-cna-readiness-check": nnaapCnaEditorial,
+  "sie-quick-diagnostic": sieQuickDiagnosticEditorial,
+  "cdl-general-knowledge-readiness-check": cdlGeneralKnowledgeEditorial,
+  "leed-ap-bd-c-readiness-check": leedApBdcEditorial,
   "cdl-combination-readiness-check": cdlCombinationEditorial,
   "ardms-spi-readiness-check": ardmsSpiEditorial,
   "crcst-readiness-check": crcstEditorial,
