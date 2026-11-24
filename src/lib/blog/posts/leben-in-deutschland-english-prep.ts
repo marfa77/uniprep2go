@@ -3,7 +3,7 @@ import type { BlogPostDraft } from "../types";
 export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
   slug: "leben-in-deutschland-test-english-preparation-guide",
   title: "Leben in Deutschland Test: The English Preparation Guide",
-  titleTag: "Leben in Deutschland Test 2026: English Prep Guide, Questions & Pass Rate",
+  titleTag: "Leben in Deutschland Test 2027: English Prep Guide & Questions",
   metaDescription:
     "The German citizenship test is in German, but most preparation resources are too. Here is how to study for the Leben in Deutschland test if your German is borderline B1.",
   publishedAt: "2026-07-27",
