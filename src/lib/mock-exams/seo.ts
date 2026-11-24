@@ -1271,7 +1271,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "CDCP practice test",
   },
   "rd-exam-readiness-check": {
-    title: "Free RD Exam Practice Test 2027 | 120 Questions Online",
+    title: "Free RD Exam Practice Test 2026 | 120 Questions Online",
     description:
       "Free RD / RDN practice test — free 25-question diagnostic, no signup; full mock: 120 timed questions, 120 minutes, 70% readiness target, four CDR domain scores. Official exam is CAT 125–145 items / 3 hours / scaled 25. Then repair with the $9.99 / 240-card Anki deck. Independent — not CDR material.",
     keywords: [

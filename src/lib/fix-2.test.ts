@@ -7,7 +7,7 @@ import { getMockExamConfig } from "./mock-exams/configs";
 
 describe("Fix pass 2 (24 Nov 2026)", () => {
   it("RD deck title year token, Sweden meta, Denmark H1", () => {
-    expect(buildDeckSeoTitle(getDeckBySlug("rd-exam-anki-deck")! as never)).toContain("RD Exam Anki Deck 2027");
+    expect(buildDeckSeoTitle(getDeckBySlug("rd-exam-anki-deck")! as never)).toContain("RD Exam Anki Deck 2026");
     expect(getBlogPostBySlug("sweden-medborgarskapsprov-2026-new-test")!.metaDescription).not.toMatch(/introduces a citizenship test in August 2026|Nobody knows/);
     expect(getBlogPostBySlug("denmark-indfoedsretsproeven-47-percent-pass-rate")!.title).toBe("Denmark Indfødsretsprøven: Format, Pass Rules and How to Prepare");
   });
