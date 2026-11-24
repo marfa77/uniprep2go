@@ -30,6 +30,9 @@ import { neboshDeckEditorial } from "./nebosh-anki-deck";
 import { series99DeckEditorial } from "./series-99-anki-deck";
 import { leedApBdcDeckEditorial } from "./leed-ap-bd-c-anki-deck";
 import { mloDeckEditorial } from "./mortgage-loan-originator-anki-deck";
+import { wellApDeckEditorial } from "./well-ap-anki-deck";
+import { leedApOmDeckEditorial } from "./leed-ap-om-anki-deck";
+import { series79DeckEditorial } from "./series-79-anki-deck";
 
 export type { DeckEditorialBundle } from "./types";
 
@@ -65,6 +68,9 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "series-99-anki-deck": series99DeckEditorial,
   "leed-ap-bd-c-anki-deck": leedApBdcDeckEditorial,
   "mortgage-loan-originator-anki-deck": mloDeckEditorial,
+  "well-ap-anki-deck": wellApDeckEditorial,
+  "leed-ap-om-anki-deck": leedApOmDeckEditorial,
+  "series-79-anki-deck": series79DeckEditorial,
 };
 
 export function getDeckEditorialBundle(slug: string): DeckEditorialBundle | null {
