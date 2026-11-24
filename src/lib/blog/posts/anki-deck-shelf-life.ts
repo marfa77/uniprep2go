@@ -3,281 +3,129 @@ import type { BlogPostDraft } from "../types";
 export const ankiDeckShelfLifePost: BlogPostDraft = {
   slug: "how-long-anki-decks-stay-current-exam-shelf-life",
   title: "How Long Do Anki Decks Stay Current?",
-  titleTag: "How Long Do Anki Decks Stay Current? Exam-by-Exam Shelf Life 2026",
+  titleTag: "How Long Do Anki Decks Stay Current? Exam-by-Exam Shelf Life 2027",
   metaDescription:
     "A 2023 LEED deck is worthless in 2026. A 2020 FINRA deck is still fine. Here is the exact shelf life for every major exam and how to spot a stale deck before you waste 200 hours on it.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Study tools · Deck freshness",
   clusterId: "anki-study",
   relatedSlugs: ["anki-vs-quizlet-professional-exam-prep"],
   intro:
-    "**Anki decks do not rot like milk — they rot like bread: slowly at first, then all at once when the exam body updates the syllabus.** Most sellers never put an expiration date on the product. A student buys a “LEED GA 2024” deck in March 2026, studies six weeks, and sits for LEED v5 — which launched two months earlier — and fails because roughly 40% of the content changed. This guide maps real shelf life by credential, the red flags of a stale deck, and the checkpoints to run before you import a single `.apkg`.",
+    "**An Anki deck does not expire on a timer. It goes stale when the official source changes:** a new outline, a rule that changes an answer, or revised study material. This guide lists the official change signals for the exams we cover, with dates from the exam bodies, and shows how to check a deck and decide whether to patch or replace it.",
   mockSlug: "epa-608-readiness-check",
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
     mockLabel: "Try a free readiness check",
     deckLabel: "Browse dated Anki decks in the catalog",
     summary:
-      "Buying for a 2026 exam? UniPrep2Go decks are mapped to current content outlines. Browse the catalog, then verify with a free readiness check — no guesswork on version.",
+      "Check your exam body's latest outline or study material first, then browse the deck catalogue and verify your recall with a free readiness check.",
   },
   sections: [
     {
-      heading: "The Shelf Life Spectrum: Stable vs. Volatile Exams",
+      heading: "What makes a deck go stale?",
       blocks: [
         {
           type: "p",
-          text: "Not all exams change at the same speed. Some bodies rewrite tests every decade. Others update annually.",
+          text: "A flashcard deck is only as current as the source it was built from. Three kinds of change make cards wrong:",
         },
+        {
+          type: "ul",
+          items: [
+            "**Outline changes:** the exam body publishes a new content outline or switches versions.",
+            "**Rule changes:** a law or regulation changes the right answer, even if the exam outline stays the same.",
+            "**Material updates:** the official study material is revised, so questions follow the new text.",
+          ],
+        },
+        {
+          type: "p",
+          text: "There is no fixed shelf life. The useful habit is to know which of these signals your exam's official body publishes, and to check them before you study.",
+        },
+      ],
+    },
+    {
+      heading: "What are the official change signals, exam by exam?",
+      blocks: [
         {
           type: "table",
-          caption: "Typical Anki deck shelf life by exam",
-          headers: ["Exam", "Typical deck shelf life", "Why it changes"],
+          caption: "Official change signals (checked 24 Nov 2026)",
+          headers: ["Exam", "What changed or what to watch", "Source"],
           rows: [
-            [
-              "FINRA SIE / Series 7",
-              "3–4 years",
-              "FINRA tweaks content outlines slowly. The SIE launched in 2018 with only minor updates since.",
-            ],
-            [
-              "LEED Green Associate",
-              "1–2 years",
-              "USGBC launched LEED v5 in 2025. The v4 exam ended April 26, 2026; v5 beta launched April 28, 2026. A v4 deck is obsolete.",
-            ],
-            [
-              "EPA 608",
-              "2–3 years",
-              "The 2025 A2L refrigerant transition (R-454B, R-32 replacing R-410A) and new GWP limits require updated safety protocols. 2023 decks miss this.",
-            ],
-            [
-              "ServSafe Manager",
-              "2–3 years",
-              "9th Edition (2026) added sesame as the 9th major allergen, expanded Active Managerial Control, and replaced ALERT with Employees FIRST.",
-            ],
-            [
-              "NEBOSH IGC",
-              "3–5 years",
-              "Syllabi update periodically, not annually. Core framework (plan-do-check-act, legal requirements) is stable.",
-            ],
-            [
-              "CFA Level 1",
-              "1 year",
-              "CFA Institute updates the curriculum every year. A prior-cycle deck is usable but will have gaps.",
-            ],
-            [
-              "Real estate (state-specific)",
-              "1–2 years",
-              "State laws shift faster than national content — California disclosures, Florida DBPR, Texas licensing acts.",
-            ],
+            ["LEED Green Associate", "LEED v5 is available for BD+C, ID+C and O+M; the Green Associate credential page still links the LEED v4 candidate handbook", "usgbc.org"],
+            ["EPA 608", "EPA's test topics page was last updated on 5 December 2025; Technology Transitions rules set a 700 GWP limit for new residential and light commercial AC systems from 1 January 2025", "epa.gov"],
+            ["ServSafe Manager", "Content follows the FDA Food Code; FDA now lists a 2026 edition as its most recent full Food Code (the 2022 edition was the 10th)", "fda.gov, servsafe.com"],
+            ["FINRA SIE and Series 7", "Retake waiting periods change on 19 January 2027 (not an outline change); the SIE outline is published as a PDF on finra.org", "finra.org"],
+            ["US citizenship civics", "The 2025 test (128 questions) applies to N-400s filed from 20 October 2025; answers about current officials change with elections", "uscis.gov"],
+            ["Denmark Indfødsretsprøven", "SIRI updates the learning material every year; the August 2026 update covers the latest elections and government", "danskogproever.dk"],
+            ["Sweden medborgarskapsprov", "New test from 2026; the official material \"Sverige i fokus\" was corrected on 10 August 2026", "uhr.se"],
           ],
         },
       ],
     },
     {
-      heading: "The LEED v5 Example: What Obsolescence Looks Like",
+      heading: "Which exams change most often?",
       blocks: [
-        {
-          type: "p",
-          text: "LEED is the clearest case of deck death. Timeline:",
-        },
         {
           type: "ul",
           items: [
-            "**April 26, 2026:** last day to take the LEED v4 Green Associate exam",
-            "**April 28, 2026:** LEED v5 beta exam launches",
-            "**October 2026:** LEED v5 final exam goes live",
+            "**Civics tests with current-affairs content** change every year or every election: Denmark has five current-affairs questions per test, and US answers about officials follow elections.",
+            "**Rating-system exams** change when the system does: LEED's move to v5 is the example to watch.",
+            "**Regulation-driven exams** change when the rules do, sometimes without a new outline: EPA's refrigerant rules and the FDA Food Code are the drivers for EPA 608 and ServSafe.",
+            "**Securities exams** have published outlines and section weights; check the outline date on finra.org before you trust older material.",
           ],
         },
-        {
-          type: "p",
-          text: "v5 is a restructuring, not a refresh. Content moved from the familiar credit categories (Location & Transportation, Sustainable Sites, Water Efficiency, and so on) to three new pillars: **Decarbonization (~50%)**, **Quality of Life (~30%)**, and **Environmental Stewardship (~20%)**. Carbon lifecycle assessment, embodied carbon, and electrification are heavily tested. A v4 deck has almost no cards on those topics. If you bought a LEED GA deck in 2024–2025 and never checked the version, you are studying for an exam that no longer exists.",
-        },
       ],
     },
     {
-      heading: "The EPA 608 A2L Transition: Regulation-Driven Obsolescence",
+      heading: "How do you check whether your deck is stale?",
       blocks: [
-        {
-          type: "p",
-          text: "EPA 608 decks from 2023 or earlier are partially stale because of the 2025 refrigerant phase-down:",
-        },
-        {
-          type: "ul",
-          items: [
-            "**January 1, 2025:** ban on manufacturing new equipment with refrigerants above 750 GWP — R-410A (GWP 2,088) is out for new units",
-            "**2025–2026:** A2L refrigerants (R-454B, R-32) enter the market — mildly flammable, needing detection systems, spark-proof wiring, and specialized recovery gear",
-            "**Ongoing:** technicians need updated training and certification for A2L handling",
-          ],
-        },
-        {
-          type: "p",
-          text: "An old deck still teaches R-410A as the standard R-22 replacement. It skips A2L classification, GWP limits, and the new safety requirements. On a 2026 exam, that is lost points.",
-        },
-      ],
-    },
-    {
-      heading: "The ServSafe 9th Edition: Small Changes, Big Consequences",
-      blocks: [
-        {
-          type: "p",
-          text: "The 2026 ServSafe Manager exam (9th Edition) made three updates that invalidate many pre-2024 decks:",
-        },
-        {
-          type: "ol",
-          items: [
-            "**Sesame is the 9th major food allergen.** The list was eight; it is now nine. A deck that says “the eight major allergens…” is wrong.",
-            "**Active Managerial Control (AMC) has a larger footprint.** Old decks may name AMC in passing without drilling it.",
-            "**Employees FIRST replaces ALERT** as the food defense framework. Any ALERT card is outdated.",
-          ],
-        },
-        {
-          type: "p",
-          text: "These are tested directly. A 2022 deck can cost 3–5 questions — enough to drop below a 75% pass threshold.",
-        },
-      ],
-    },
-    {
-      heading: "FINRA SIE: The Stable Exception",
-      blocks: [
-        {
-          type: "p",
-          text: "The SIE is the opposite of LEED. FINRA launched it in 2018 and has made only incremental changes. The October 2025 update reduced unscored questions from 10 to 5 and refined some regulatory content, but core topics — capital markets, products, trading, regulations — have not shifted.",
-        },
-        {
-          type: "p",
-          text: "A well-built SIE deck from 2022 is still roughly 90%+ accurate in 2026. Formulas, product definitions, and frameworks are stable. Patch for new rules (T+1 settlement replacing T+2 in May 2024) and minor thresholds. You can add 10–15 cards yourself. You cannot patch a LEED v4 deck for the v5 exam.",
-        },
-      ],
-    },
-    {
-      heading: "How to Check If Your Deck Is Stale (The 3-Minute Audit)",
-      blocks: [
-        {
-          type: "p",
-          text: "Before you study a single card, run this checklist:",
-        },
         {
           type: "steps",
           items: [
-            {
-              title: "1. Check the exam body’s official content outline",
-              body: "Download the latest outline (FINRA, USGBC, EPA, NRA, etc.). Compare it to your deck’s table of contents. A missing outline section is a gap.",
-            },
-            {
-              title: "2. Check the deck’s last update date",
-              body: "Reputable sellers list it. If missing, ask. If they cannot give a date, assume the deck is old.",
-            },
-            {
-              title: "3. Check regulatory changes in the last 18 months",
-              body: "Search “[Exam name] changes 2025 2026.” Major updates (LEED v5, EPA A2L, ServSafe 9th Edition) that post-date your deck mean it is stale.",
-            },
-            {
-              title: "4. Spot-check 10 random cards",
-              body: "Pick high-risk topics (regulations, temperatures, allergen lists, refrigerant numbers). Verify against official sources. Two or more wrong → compromised.",
-            },
-            {
-              title: "5. Look for version numbers in the title",
-              body: "“LEED GA v4” and “EPA 608 2023” are warnings. “FINRA SIE 2024” is probably fine. “ServSafe Manager 7th Edition” is a red flag if the exam is now 9th Edition.",
-            },
+            { title: "Find the official source", body: "The exam body's outline, handbook or study material, and its update date." },
+            { title: "Compare versions", body: "If your deck was built before the latest version or update, mark it for review." },
+            { title: "Check the rule-sensitive cards", body: "Dates, thresholds, fees, officials and refrigerant or temperature values are the cards most likely to be wrong." },
+            { title: "Test with current questions", body: "A timed check such as the [EPA 608 readiness check](/mock-exams/epa-608-readiness-check) shows whether your recall matches the current exam." },
           ],
         },
       ],
     },
     {
-      heading: "When to Patch vs. When to Replace",
-      blocks: [
-        {
-          type: "table",
-          caption: "Patch or replace?",
-          headers: ["Situation", "Action"],
-          rows: [
-            [
-              "1–2 minor regulatory changes (e.g. T+1 settlement, new FINRA fee)",
-              "Patch — add 5–10 new cards",
-            ],
-            [
-              "New edition of exam (e.g. ServSafe 8th → 9th)",
-              "Replace — framework may be similar, tested details shift",
-            ],
-            [
-              "Complete syllabus rewrite (e.g. LEED v4 → v5)",
-              "Replace immediately — do not try to patch",
-            ],
-            [
-              "New technology or safety standard (e.g. EPA A2L refrigerants)",
-              "Replace or heavy patch (20+ new cards)",
-            ],
-            [
-              "No changes in 3+ years (e.g. NEBOSH IGC)",
-              "Likely fine — confirm with a 10-card spot-check",
-            ],
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Cost of a Stale Deck",
+      heading: "Should you patch a deck or replace it?",
       blocks: [
         {
           type: "p",
-          text: "A stale deck wastes money and time — the only resource you cannot replace.",
-        },
-        {
-          type: "ul",
-          items: [
-            "**LEED v4 deck + 6 weeks + ~$250 exam fee = fail.** Restudy with v5 and pay again → ~12 weeks and ~$500.",
-            "**ServSafe old deck + 2 weeks + ~$100 exam fee = fail.** Restudy and retake → ~4 weeks and ~$200.",
-            "**FINRA SIE old deck + 4 weeks + ~$100 exam fee = probably pass.** You might miss a few new-rule items and still clear 70%.",
-          ],
-        },
-        {
-          type: "p",
-          text: "Volatile exams demand current decks. Stable exams tolerate older ones.",
+          text: "**Patch** when the outline is the same and only a few facts changed: edit or suspend the affected cards and add new ones from the official source. **Replace** when the exam moves to a new version or outline, as with a rating-system change, because the structure of what is tested changes, not just individual answers. Anki can update notes when you re-import a newer version of the same shared deck (see [Anki vs Quizlet](/blog/anki-vs-quizlet-professional-exam-prep)). For EPA 608 specifically, the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck) is organised around refrigerant families and pressure classes.",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "How long do Anki decks last for professional exams?",
-      answer:
-        "It depends on the exam. Stable exams like FINRA SIE can use 3–4 year-old decks. Volatile exams like LEED or EPA 608 need decks updated within 12–18 months of major regulatory changes. Always check the exam body’s latest content outline before buying.",
+      question: "How long does an Anki deck stay current?",
+      answer: "There is no fixed period. A deck stays current until the exam body changes the outline, the rules change an answer, or the official study material is revised.",
     },
     {
-      question: "Is a 2023 LEED GA deck still good in 2026?",
-      answer:
-        "No. LEED v4 exams ended April 26, 2026. LEED v5 launched April 28, 2026, with a restructured syllabus focused on decarbonization. A v4 deck will not cover roughly 40–50% of v5 content.",
+      question: "Has the LEED Green Associate exam moved to v5?",
+      answer: "USGBC's credential page does not say so; LEED v5 is available for BD+C, ID+C and O+M, and the page links the v4 candidate handbook (checked 24 Nov 2026).",
     },
     {
-      question: "Do EPA 608 decks need updating for A2L refrigerants?",
-      answer:
-        "Yes. The 2025 phase-down of high-GWP refrigerants and introduction of A2L refrigerants (R-454B, R-32) changed safety protocols and equipment requirements. Decks from before 2024 will not cover this material.",
+      question: "When did EPA last update its 608 test topics?",
+      answer: "EPA's test topics page shows a last update of 5 December 2025.",
     },
     {
-      question: "Can I use an old ServSafe deck for the 2026 exam?",
-      answer:
-        "Only if it covers the 9th Edition. The 2026 exam added sesame as the 9th allergen, expanded Active Managerial Control, and replaced ALERT with Employees FIRST. Pre-2024 decks will have gaps.",
+      question: "Which civics tests change every year?",
+      answer: "Denmark's, for example: SIRI updates the learning material annually, and five questions cover current affairs. US civics answers about current officials change with elections.",
     },
     {
-      question: "How do I know if my Anki deck is outdated?",
-      answer:
-        "Check three things: (1) the deck’s last update date, (2) the exam body’s current content outline, and (3) regulatory changes in the last 18 months. If the deck predates a major exam revision, it is outdated.",
+      question: "Which cards go out of date first?",
+      answer: "Cards with dates, thresholds, fees, office holders and regulated values.",
     },
     {
-      question: "Should I buy a new deck for every exam retake?",
-      answer:
-        "Not necessarily. If you failed from anxiety or timing, the deck may be fine. If you failed from content gaps, check freshness before restudying. If the exam changed since your last attempt, buy a new deck.",
-    },
-    {
-      question: "Can I update an old deck myself instead of buying a new one?",
-      answer:
-        "Yes, for minor changes — a threshold shift or one new topic can be 10–20 new cards. For major syllabus rewrites (LEED v4 → v5), a professionally updated deck is faster and more reliable.",
-    },
-    {
-      question: "Do NEBOSH decks go out of date?",
-      answer:
-        "Rarely. NEBOSH updates syllabi every 3–5 years. The core framework (management systems, risk assessment, legal requirements) is stable. A 2022 NEBOSH IGC deck is likely still accurate in 2026.",
+      question: "Should I patch or replace an outdated deck?",
+      answer: "Patch for a few changed facts; replace when the exam moves to a new version or outline.",
     },
   ],
   bottomLine:
-    "Anki decks are snapshots of an exam at a specific moment — not timeless. A LEED v4 deck was excellent in 2024 and worthless in 2026. A FINRA SIE deck from 2022 is still useful today. Before you commit 100+ hours to spaced repetition, spend 10 minutes verifying the exam has not moved on without you. The $30 you save on a discounted old deck is not worth the exam fee and weeks of restudy after a fail.",
+    "Decks do not expire on a timer; they expire when the official source changes. Sources: [USGBC — LEED Green Associate](https://www.usgbc.org/credentials/leed-green-associate), [EPA 608 test topics](https://www.epa.gov/section608/test-topics), [EPA Technology Transitions sector tables](https://www.epa.gov/climate-hfcs-reduction/sector-tables), [FDA Food Code](https://www.fda.gov/food/retail-food-protection/fda-food-code), [FINRA SIE](https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam), [USCIS 2025 civics test](https://www.uscis.gov/citizenship-resource-center/naturalization-test-and-study-resources/2025-civics-test), [SIRI learning material update](https://danskogproever.dk/nyheder/2026/laeremateriale-til-indfoedsretsproeven-er-opdateret/) and [UHR study material](https://www.uhr.se/medborgarskapsprovet/utbildningsmaterial/), checked 24 Nov 2026.",
 };
