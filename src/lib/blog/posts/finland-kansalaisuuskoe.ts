@@ -7,6 +7,7 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
   metaDescription:
     "From 1 March 2027, many Finnish citizenship applications need a society knowledge test. Migri runs it; Helsinki University writes the study pack. No official question bank yet — here is what is confirmed.",
   publishedAt: "2026-11-07",
+  contentUpdated: "2026-11-24",
   eyebrow: "Finland · Kansalaisuuskoe",
   clusterId: "finland-citizenship",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
     "denmark-indfoedsretsproeven-47-percent-pass-rate",
   ],
   intro:
-    "**Finland is adding a citizenship knowledge test.** The amended Citizenship Act takes effect on **1 January 2027**, and applications submitted from **1 March 2027** must generally pass kansalaisuuskoe unless an exemption applies (a Finnish or Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons). Maahanmuuttovirasto (Migri) will organise a digital multiple-choice test, taken on site in **Finnish or Swedish**, for applicants aged **18–64**. The University of Helsinki writes the learning material and questions; the material is due around the turn of 2026–2027. The amended Act (SäädK 552/2026) says you pass by answering **most** questions correctly; government communications have cited roughly **20–40 multiple-choice questions** and about **70%** — treat those numbers as provisional until Migri locks the format. As of October 2026, there is no official public question bank. This guide covers confirmed dates, who is affected, and how to prep with the free Finnish mock while you wait.",
+    "**Finland's citizenship test (kansalaisuuskoe) arrives in 2027.** The law changes on 1 January 2027, the test applies to applications from 1 March 2027, and Migri expects the first sitting in March 2027. It will be a supervised digital multiple-choice test in Finnish or Swedish. This guide covers what Migri and the Ministry of the Interior have announced, what is not yet published, and how to prepare now.",
   mockSlug: "finland-kansalaisuuskoe-readiness-check",
   deckSlug: "finland-kansalaisuuskoe-anki-deck",
   cta: {
     mockLabel: "Take the free Finland kansalaisuuskoe readiness check (Finnish)",
     deckLabel: "Finland kansalaisuuskoe Anki deck — 120 cards",
     summary:
-      "Practice Migri theme areas with the 60-question Finnish kansalaisuuskoe readiness check (free 25-question version), then spaced-recall weak themes in the 120-card Anki deck from the same bank. When Migri publishes the official learning package, layer that on top — independent prep, not Migri material.",
+      "Practise the announced theme areas with the free Finnish kansalaisuuskoe readiness check, then review weak themes with the Anki deck from the same bank. When Migri publishes the official learning material, make that your main source: this is independent prep, not Migri material.",
     extraLinks: [
       {
         href: "https://migri.fi/en/citizenship",
@@ -36,103 +37,110 @@ export const finlandKansalaisuuskoePost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "What changed and when it bites",
+      heading: "When does Finland's citizenship test start?",
+      blocks: [
+        {
+          type: "p",
+          text: "The amendments to Finland's Citizenship Act enter into force on **1 January 2027** and apply to applications submitted **on or after 1 March 2027**. Migri expects the **first test in March 2027**. Applications submitted between 1 January and 28 February 2027 are not covered by the new civic-knowledge requirement.",
+        },
+      ],
+    },
+    {
+      heading: "What will the test look like?",
       blocks: [
         {
           type: "table",
-          caption: "Key dates (confirm on migri.fi)",
-          headers: ["Milestone", "Date"],
+          caption: "Kansalaisuuskoe (Migri and Ministry of the Interior, checked 24 Nov 2026)",
+          headers: ["Detail", "What has been announced"],
           rows: [
-            ["Citizenship Act amendment effective", "1 January 2027"],
-            ["Applications requiring kansalaisuuskoe", "Submitted from 1 March 2027"],
-            ["Transition window ends", "28 February 2027 (earlier filings under prior rules)"],
-            ["Official learning materials", "Around the turn of 2026–2027 on migri.fi (University of Helsinki)"],
-            ["First test sittings", "Expected around March 2027"],
+            ["Format", "Multiple choice, taken digitally on site under supervision"],
+            ["Language", "Finnish or Swedish"],
+            ["Topics", "Key legislation on Finnish society, fundamental and human rights, equality including gender equality, and Finnish history and culture"],
+            ["To pass", "Most of the answers must be correct; no number has been published"],
+            ["Organiser", "Migri, which will commission another body, such as a university, to prepare the test"],
+            ["Special arrangements", "Possible for illness or disability, for example extra time or an oral test"],
           ],
         },
         {
           type: "p",
-          text: "If you file before 1 March 2027, you may be processed under the old pathway — but verify your personal timeline with Migri. Do not assume English is an exam language: the live test is **Finnish or Swedish**.",
+          text: "The number of questions, time limit, fee and registration have not been published yet.",
         },
       ],
     },
     {
-      heading: "What we know about the format",
+      heading: "Who must take it?",
       blocks: [
-        {
-          type: "p",
-          text: "Migri has described a computer-based society knowledge test covering legislation, fundamental and human rights, equality, Finnish history, and culture. Press and government briefings have floated **~20–40 MCQs** and **~70% to pass** — not yet a stable public spec with fees, booking URLs, and retake rules.",
-        },
         {
           type: "ul",
           items: [
-            "Organiser: Maahanmuuttovirasto (Migri)",
-            "Learning material and questions: University of Helsinki → migri.fi",
-            "Languages: Finnish or Swedish",
-            "Applies to applicants aged 18–64",
-            "Format: digital multiple-choice, taken on site (capital region, Tampere, Turku, Oulu, Vaasa, Kuopio, Rovaniemi)",
-            "Exemptions: matriculation exam or a Finland-completed degree in Finnish or Swedish, or very weighty reasons",
+            "Applicants aged **18 to 64** applying for citizenship by application, for applications from 1 March 2027.",
+            "You can meet the requirement instead with a Finnish- or Swedish-language **matriculation examination** in Finland, or a Finnish- or Swedish-language **higher education degree** from Finland.",
+            "Migri can make an exception for state of health, disability or another very serious reason.",
           ],
         },
       ],
     },
     {
-      heading: "How to prepare before the official bank ships",
+      heading: "What else does citizenship require now?",
       blocks: [
         {
-          type: "ol",
+          type: "ul",
           items: [
-            "Bookmark migri.fi/citizenship and migri.fi/kansalaisuuskoe — refresh weekly as 2027 approaches.",
-            "Build Finnish civic vocabulary: eduskunta, hallitus, presidentti, perusoikeudet, tasa-arvo.",
-            "Study institutions, EU membership (1995), neighbours, and everyday services (Kela, 112, police passports).",
-            "Take the UniPrep2Go 60-question Finnish mock (free 25-question version) for topic scoring.",
-            "Import the 120-card Finnish Anki deck for daily recall on weak themes.",
-            "When Migri publishes samples, prioritise the official materials over third-party drills.",
+            "**Residence:** since 1 October 2024, generally **8 years** of legal residence in Finland, with shorter periods in some cases (for example 5 years if you meet the language requirement or are married to a Finnish citizen, under conditions). You may spend up to 365 days abroad in that time, at most 90 in the year before applying.",
+            "**Language:** at least satisfactory spoken and written Finnish or Swedish, shown for example with a **YKI certificate at level 3** or higher. The citizenship test does not replace this requirement.",
           ],
         },
       ],
     },
     {
-      heading: "Nordic comparison: why Finland feels late but strict",
+      heading: "How can you prepare before the material is published?",
       blocks: [
         {
           type: "p",
-          text: "Norway already runs Statsborgerprøven; Sweden is launching Medborgarskapsprov in 2026; Denmark tightened Indfødsretsprøven pass rates. Finland waited until 2027 but ties the test to **application date**, not vague “eventually”. If you are comparing Nordic pathways, language evidence and residence years still matter — kansalaisuuskoe is an extra gate, not a shortcut.",
+          text: "The questions will be based on predefined, publicly available learning material built from existing civic orientation material. Migri says it will publish it well before the first test. Until then:",
+        },
+        {
+          type: "steps",
+          items: [
+            { title: "Secure your language certificate", body: "YKI level 3 or other accepted proof is needed whatever happens with the test." },
+            { title: "Learn the announced topics in Finnish or Swedish", body: "Society, rights, equality, history and culture." },
+            { title: "Practise the themes", body: "Use the [Finland kansalaisuuskoe readiness check](/mock-exams/finland-kansalaisuuskoe-readiness-check) and the [kansalaisuuskoe Anki deck](/decks/finland-kansalaisuuskoe-anki-deck); this is independent practice, not Migri material." },
+            { title: "Switch to the official material", body: "When Migri publishes it, make it your main source." },
+          ],
+        },
+        {
+          type: "p",
+          text: "For a Nordic comparison, see [Sweden's medborgarskapsprov](/blog/sweden-medborgarskapsprov-2026-new-test).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "Is Finland’s citizenship test live today?",
-      answer:
-        "No. It applies to applications from 1 March 2027 onward. Learning materials and booking rules are still rolling out.",
+      question: "When is the first Finnish citizenship test?",
+      answer: "Migri expects the first test in March 2027. The requirement applies to applications submitted on or after 1 March 2027 (checked 24 Nov 2026).",
     },
     {
-      question: "Can I take the test in English?",
-      answer: "No. Migri specifies Finnish or Swedish for kansalaisuuskoe.",
+      question: "What language is the test in?",
+      answer: "Finnish or Swedish.",
     },
     {
-      question: "Is there a free practice test?",
-      answer:
-        "UniPrep2Go hosts a 60-question Finnish diagnostic (free 25-question version) at /mock-exams/finland-kansalaisuuskoe-readiness-check, drawn from 120 unique questions so retakes show new items. It is independent prep, not Migri material.",
+      question: "What is the pass mark?",
+      answer: "Migri says most of the answers must be correct. A numeric pass mark has not been published.",
     },
     {
-      question: "Is there a Finland kansalaisuuskoe Anki deck?",
-      answer:
-        "Yes — a 120-card Finnish Anki deck built from the same items as the free readiness check. Take the mock for theme scores, then drill weak themes in Anki. Gumroad checkout may still be rolling out; the deck page lists current status.",
+      question: "Who is exempt?",
+      answer: "People with a Finnish- or Swedish-language matriculation examination or higher education degree from Finland meet the requirement another way, and Migri can make exceptions for health, disability or another very serious reason. The test applies to applicants aged 18 to 64.",
     },
     {
-      question: "Who is exempt from kansalaisuuskoe?",
-      answer:
-        "Migri lists a Finnish or Swedish matriculation exam, a higher-education degree completed in Finland in Finnish or Swedish, or very weighty reasons. Applicants under 18 or aged 65+ are outside the test requirement — confirm your case officially.",
+      question: "Does the test replace the language requirement?",
+      answer: "No. You still need at least satisfactory Finnish or Swedish, for example YKI level 3.",
     },
     {
-      question: "Where will official study materials appear?",
-      answer:
-        "On migri.fi, prepared by the University of Helsinki before the first test sitting.",
+      question: "How long must I live in Finland?",
+      answer: "Generally 8 years since the amendment of 1 October 2024, with shorter periods in some cases.",
     },
   ],
   bottomLine:
-    "Kansalaisuuskoe is real on the calendar but still a moving target on format. The winners in 2027 will be applicants who watched migri.fi, studied in Finnish, and drilled civic themes early — not those who memorised rumoured Q-counts from blogs.",
+    "Finland's test starts in 2027: get your language certificate now and switch to Migri's official material when it is published. Sources: [Migri — amendments to the Citizenship Act 2027](https://migri.fi/en/amendments-to-the-citizenship-act-2027), [Ministry of the Interior press release](https://intermin.fi/en/-/citizenship-test-to-be-introduced-in-early-2027), [Ministry FAQ](https://intermin.fi/en/projects/reform-of-the-citizenship-act/faq), [Migri — period of residence](https://migri.fi/en/period-of-residence) and [Migri — language skills](https://migri.fi/en/language-skills), checked 24 Nov 2026.",
 };
