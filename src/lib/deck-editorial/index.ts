@@ -28,6 +28,7 @@ import { frmDeckEditorial } from "./frm-part-1-anki-deck";
 import { aceCptDeckEditorial } from "./ace-cpt-anki-deck";
 import { neboshDeckEditorial } from "./nebosh-anki-deck";
 import { series99DeckEditorial } from "./series-99-anki-deck";
+import { rdExamDeckEditorial } from "./rd-exam-anki-deck";
 import { leedApBdcDeckEditorial } from "./leed-ap-bd-c-anki-deck";
 import { mloDeckEditorial } from "./mortgage-loan-originator-anki-deck";
 import { wellApDeckEditorial } from "./well-ap-anki-deck";
@@ -66,6 +67,7 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "ace-cpt-anki-deck": aceCptDeckEditorial,
   "nebosh-anki-deck": neboshDeckEditorial,
   "series-99-anki-deck": series99DeckEditorial,
+  "rd-exam-anki-deck": rdExamDeckEditorial,
   "leed-ap-bd-c-anki-deck": leedApBdcDeckEditorial,
   "mortgage-loan-originator-anki-deck": mloDeckEditorial,
   "well-ap-anki-deck": wellApDeckEditorial,

@@ -28,6 +28,10 @@ import { cdcpMockEditorial } from "./cdcp-readiness-check";
 import { cemEditorial } from "./cem-readiness-check";
 import { electricalJourneymanEditorial } from "./electrical-journeyman-readiness-check";
 import { nnaapCnaEditorial } from "./nnaap-cna-readiness-check";
+import { cdlCombinationEditorial } from "./cdl-combination-readiness-check";
+import { ardmsSpiEditorial } from "./ardms-spi-readiness-check";
+import { crcstEditorial } from "./crcst-readiness-check";
+import { nabcepAssociateEditorial } from "./nabcep-associate-readiness-check";
 import { neboshEditorial } from "./nebosh-readiness-check";
 import { californiaRealEstateEditorial } from "./california-real-estate-readiness-check";
 import { greEditorial } from "./gre-readiness-check";
@@ -69,6 +73,10 @@ const ENRICHMENT_SLUGS = [
   "cem-readiness-check",
   "electrical-journeyman-readiness-check",
   "nnaap-cna-readiness-check",
+  "cdl-combination-readiness-check",
+  "ardms-spi-readiness-check",
+  "crcst-readiness-check",
+  "nabcep-associate-readiness-check",
   "nebosh-readiness-check",
   "california-real-estate-readiness-check",
   "gre-readiness-check",
@@ -109,6 +117,10 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "cem-readiness-check": cemEditorial,
   "electrical-journeyman-readiness-check": electricalJourneymanEditorial,
   "nnaap-cna-readiness-check": nnaapCnaEditorial,
+  "cdl-combination-readiness-check": cdlCombinationEditorial,
+  "ardms-spi-readiness-check": ardmsSpiEditorial,
+  "crcst-readiness-check": crcstEditorial,
+  "nabcep-associate-readiness-check": nabcepAssociateEditorial,
   "nebosh-readiness-check": neboshEditorial,
   "california-real-estate-readiness-check": californiaRealEstateEditorial,
   "gre-readiness-check": greEditorial,
