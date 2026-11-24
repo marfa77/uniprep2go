@@ -166,7 +166,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "servsafe-manager-mock": {
     title: "Free ServSafe Manager Practice Test 2027 | 90-Question Mock Exam",
     description:
-      "ServSafe Manager practice test — free 25-question diagnostic, no signup; full mock: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked $9.99 / 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
+      "ServSafe Manager practice test — free 25-question diagnostic, no signup; full mock: 90 timed questions, 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target, food-safety topic scoring — then repair with the linked 300-card Anki deck. Official form is 90Q (80 scored + 10 pilot) / 2 hours. Independent — not NRA/ServSafe material.",
     keywords: [
       "servsafe manager practice test",
       "servsafe manager mock exam",
@@ -177,7 +177,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free ServSafe Manager Practice Test",
     intro:
-      "A full-length ServSafe Manager / CFPM-style mock: 90 questions drawn from a 270-question original bank (retakes see new questions), 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target with topic scoring — then drill weak domains in the linked $9.99 / 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
+      "A full-length ServSafe Manager / CFPM-style mock: 90 questions drawn from a 270-question original bank (retakes see new questions), 120 minutes, official pass 70% (56/80 scored) · 75% UniPrep2Go readiness target with topic scoring — then drill weak domains in the linked 300-card Anki deck (PDF study guide sold separately). Official exam is 90 multiple-choice (80 scored + 10 unscored pilot) in 2 hours. Topics: foodborne illness, time/temperature, hygiene, cleaning/sanitizing, receiving/storage, HACCP, and manager duties.",
     audience:
       "Restaurant managers, kitchen supervisors, hospitality students, and CFPM candidates who need a timed food safety baseline before exam day.",
     practiceTestLabel: "ServSafe Manager practice test",
@@ -964,7 +964,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Praxis Special Education practice test",
   },
   "precision-nutrition-l1-readiness-check": {
-    title: "Free Precision Nutrition L1 Practice Test 2026 | 60Q Mock",
+    title: "Free Precision Nutrition L1 Practice Test 2027 | 60Q Mock",
     description:
       "PN Level 1 practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness. Coaching cert — not RDN, not CPT. Independent — not Precision Nutrition.",
     keywords: [
@@ -1308,7 +1308,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "ACSM CPT practice test",
   },
   "cda-childcare-readiness-check": {
-    title: "Free CDA Practice Test 2026 | Child Development Associate",
+    title: "Free CDA Practice Test 2027 | Child Development Associate",
     description:
       "Free CDA practice test: 60 timed childcare scenarios from a 120-question bank with topic scores — free 25-question diagnostic, no signup. Official CDA Exam: 65 questions, 1 hr 45 min, pass/fail. Not Council material.",
     keywords: [
