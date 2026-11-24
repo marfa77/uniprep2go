@@ -26,6 +26,8 @@ import { rdExamEditorial } from "./rd-exam-readiness-check";
 import { leedApOmEditorial } from "./leed-ap-om-readiness-check";
 import { cdcpMockEditorial } from "./cdcp-readiness-check";
 import { cemEditorial } from "./cem-readiness-check";
+import { electricalJourneymanEditorial } from "./electrical-journeyman-readiness-check";
+import { nnaapCnaEditorial } from "./nnaap-cna-readiness-check";
 
 export type { MockEditorialBundle, EditorialFaq, EditorialSection, EditorialSource } from "./types";
 export { resolveWeightTableQuestions } from "./resolve-weight-table";
@@ -59,6 +61,8 @@ const ENRICHMENT_SLUGS = [
   "leed-ap-om-readiness-check",
   "cdcp-readiness-check",
   "cem-readiness-check",
+  "electrical-journeyman-readiness-check",
+  "nnaap-cna-readiness-check",
 ] as const;
 
 export type EnrichmentMockSlug = (typeof ENRICHMENT_SLUGS)[number];
@@ -91,6 +95,8 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "leed-ap-om-readiness-check": leedApOmEditorial,
   "cdcp-readiness-check": cdcpMockEditorial,
   "cem-readiness-check": cemEditorial,
+  "electrical-journeyman-readiness-check": electricalJourneymanEditorial,
+  "nnaap-cna-readiness-check": nnaapCnaEditorial,
 };
 
 export function getMockEditorialBundle(slug: string): MockEditorialBundle | null {
