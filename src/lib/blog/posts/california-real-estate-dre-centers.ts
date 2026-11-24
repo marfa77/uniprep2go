@@ -3,15 +3,16 @@ import type { BlogPostDraft } from "../types";
 export const californiaRealEstateDreCentersPost: BlogPostDraft = {
   slug: "california-real-estate-exam-dre-test-centers",
   title: "California Real Estate Exam: What the DRE Test Centers Actually Look Like",
-  titleTag: "California Real Estate Exam: DRE Test Centers, Format & Pass Rate 2026",
+  titleTag: "California Real Estate Exam: DRE Test Centers & Format 2027",
   metaDescription:
     "The California real estate exam has a 51% first-time pass rate. Here is exactly what happens at DRE test centers, what to bring, and the California-specific laws that kill most scores.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-24",
   eyebrow: "California DRE · Real estate licensing",
   clusterId: "california-real-estate",
   relatedSlugs: ["california-real-estate-exam-psi-vs-pearson-vue"],
   intro:
-    'Most real estate exam prep sites tell you to "just study hard." They do not tell you that the California Department of Real Estate runs its own exam centers — not PSI, not Pearson VUE — and that the fail rate is nearly **50%**. This guide covers what actually happens on test day, where you go, and the California-specific rules that show up on a quarter of your exam.',
+    'Most real estate exam prep sites tell you to "just study hard." They do not tell you that the California Department of Real Estate runs its own exam centers — not PSI, not Pearson VUE. All figures below are from dre.ca.gov, checked 24 Nov 2026. This guide covers what actually happens on test day, where you go, and the California-specific rules that show up on a quarter of your exam.',
   mockSlug: "california-real-estate-readiness-check",
   deckSlug: "california-real-estate-exam-anki-deck",
   cta: {
@@ -40,7 +41,7 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "You schedule through the DRE eLicensing portal after your application and 135 hours of pre-license education are approved. There is no online proctoring option. If you live in Redding or Eureka, you are driving to Sacramento or Oakland. Confirm current addresses on dre.ca.gov before you travel — centers can move.",
+          text: "You schedule through DRE eLicensing once your application is accepted. DRE says exams at all five centers are currently electronic, locations within an area may vary, and requests for a specific site cannot be granted. Arrive 30 minutes early; sessions start on time. Confirm addresses on dre.ca.gov before you travel.",
         },
       ],
     },
@@ -54,14 +55,13 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
           rows: [
             ["Questions", "150 multiple-choice", "200 multiple-choice"],
             ["Time limit", "3 hours (180 minutes)", "4 hours"],
-            ["Passing score", "70% (105 correct)", "75% (150 correct)"],
-            ["Results", "Immediate on screen", "Immediate on screen"],
+            ["Passing score", "70% of the questions", "75% of the questions"],
             ["Exam fee", "$100", "$150"],
           ],
         },
         {
           type: "p",
-          text: "The fee went up on July 1, 2024 — the first increase since 1997. If you see old guides quoting $60, they are outdated.",
+          text: "A re-examination costs the same as the first exam ($100 / $150); rescheduling costs $40 (salesperson) or $45 (broker). DRE fees are non-refundable under Business and Professions Code § 10207.",
         },
       ],
     },
@@ -75,10 +75,10 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
         {
           type: "ol",
           items: [
-            "**Practice of Real Estate & Disclosures — 25%**",
-            "**Property Ownership & Land Use Controls — 17%**",
-            "**Laws of Agency & Fiduciary Duties — 14%**",
-            "**Property Valuation & Financial Analysis — 14%**",
+            "**Practice of Real Estate and Disclosures (including specialty areas) — 25%**",
+            "**Laws of Agency and Fiduciary Duties — 17%**",
+            "**Property Ownership and Land Use Controls and Regulations — 15%**",
+            "**Property Valuation and Financial Analysis — 14%**",
             "**Contracts — 12%**",
             "**Financing — 9%**",
             "**Transfer of Property — 8%**",
@@ -179,33 +179,28 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
         {
           type: "ul",
           items: [
-            "**Waiting period:** You must wait approximately 2.5 weeks (18 calendar days) after a failed attempt before you can reschedule.",
+            "**When:** you can apply to retake after you are notified that you failed; DRE states no other waiting period.",
             "**Cost:** $100 per retake.",
             "**Limit:** Unlimited retakes within two years of your original application date. After two years, your application lapses and you must reapply from scratch.",
-            "**Critical rule:** Do NOT submit a new application or try to reschedule before you receive your official failure notice. If you do, DRE flags your record, withholds your results, and assesses additional fees.",
+            "**Critical rule:** do not submit a new application, fee or exam-change form before your results are released, or the fee is forfeited.",
           ],
         },
       ],
     },
     {
-      heading: "Why the Pass Rate Is Only 51%",
+      heading: "Why does the California exam feel hard?",
       blocks: [
-        {
-          type: "p",
-          text: "California has one of the lowest first-time pass rates in the country. The reasons are specific:",
-        },
         {
           type: "ul",
           items: [
-            "**150 questions** — more than most states, which run 100–120.",
-            "**No online option** — you cannot take a familiar at-home test. You sit in a state building.",
-            "**Heavy state law load** — generic prep courses do not cover Mello-Roos, Prop 13, or California disclosure timelines in enough depth.",
-            "**Time pressure** — 3 hours sounds generous until you hit a 5-part scenario question on agency disclosure with four similar answer choices.",
+            "**Length:** 150 questions in 3 hours for salespersons, 200 in 4 hours for brokers.",
+            "**In person only:** exams run at DRE's five centers, not online.",
+            "**State law:** a quarter of the exam is practice and disclosures, much of it California-specific.",
           ],
         },
         {
           type: "p",
-          text: "Candidates who pass typically complete 3–5 full-length timed practice exams and score above 80% before sitting for the real thing.",
+          text: "DRE publishes monthly counts of exams administered, not pass rates, so this guide does not quote one. Practise with the [California real estate practice test](/mock-exams/california-real-estate-readiness-check) until you score comfortably above 70% on every topic.",
         },
       ],
     },
@@ -217,7 +212,7 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
           items: [
             {
               title: "Week 1: Disclosures and agency law",
-              body: "39% of the exam combined. Do not touch financing yet.",
+              body: "Together 42% of the exam (25% + 17%). Leave financing for later.",
             },
             {
               title: "Week 2: Property ownership, land use, contracts, valuation",
@@ -235,7 +230,7 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: 'If more than 30% of your misses are "forgot the California rule," you need state-specific flashcards, not a national prep book.',
+          text: 'If many of your misses are "forgot the California rule," drill state rules with the [California real estate deck](/decks/california-real-estate-exam-anki-deck) rather than a national prep book.',
         },
       ],
     },
@@ -244,22 +239,22 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
     {
       question: "Can I take the California real estate exam online?",
       answer:
-        "No. The DRE does not offer online or remote proctoring. All exams are in-person at the five state exam centers.",
+        "No. DRE administers the exams at its five exam centers (Fresno, La Palma, Oakland, Sacramento and San Diego), in an electronic format.",
     },
     {
       question: "How many times can I retake the California real estate exam?",
       answer:
-        "Unlimited times within two years of your application. Each retake costs $100. You must wait about 18 calendar days between attempts.",
+        "There is no limit within two years of filing your original application. Each re-examination costs $100 (salesperson) or $150 (broker), and you apply after you receive your failing result (DRE, checked 24 Nov 2026).",
     },
     {
       question: "What score do I need to pass the California real estate salesperson exam?",
       answer:
-        "70%. That is 105 correct answers out of 150. You do not get a numeric score if you pass — only a PASS notification.",
+        "70% of the 150 questions. If you pass you are not told your score; if you fail you get your score and per-subject percentages.",
     },
     {
       question: "How long does it take to get California real estate exam results?",
       answer:
-        "Immediate for electronic exams. You see PASS or FAIL on screen before you leave the center.",
+        "DRE sends a result notice; check DRE's Taking the Exam page and your eLicensing account for how results are released.",
     },
     {
       question: "What should I bring to the California real estate exam?",
@@ -269,7 +264,7 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
     {
       question: "Is the California real estate exam harder than other states?",
       answer:
-        "Yes — objectively. The 51% first-time pass rate is lower than the national average, the exam has more questions than most states, and the California-specific content requires extra study.",
+        "It is long (150 questions in 3 hours) and heavy on California practice and disclosure rules. DRE does not publish pass rates on its statistics pages, only counts of exams given.",
     },
     {
       question: "What is the hardest part of the California real estate exam?",
@@ -278,5 +273,5 @@ export const californiaRealEstateDreCentersPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "The California real estate exam is not a memorization test. It is a reading comprehension test about California law with a timer. The people who pass do not necessarily know more real estate — they know more *California* real estate. Drill the disclosures, take timed mocks, and respect the 18-day retake rule. The license is worth the work.",
+    "The California real estate exam is not a memorization test. It is a reading comprehension test about California law with a timer. The people who pass do not necessarily know more real estate — they know more *California* real estate. Drill the disclosures and take timed mocks. Sources: [DRE — taking the exam](https://www.dre.ca.gov/Examinees/TakingExam.html), [exam sites](https://www.dre.ca.gov/examinees/ExamSites.html), [salesperson exam content](https://www.dre.ca.gov/examinees/SalesExamContent.html), [fees](https://www.dre.ca.gov/Licensees/Fees.html) and [statistics](https://www.dre.ca.gov/Stats), checked 24 Nov 2026.",
 };

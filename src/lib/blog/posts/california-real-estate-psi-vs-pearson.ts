@@ -7,6 +7,7 @@ export const californiaRealEstatePsiVsPearsonPost: BlogPostDraft = {
   metaDescription:
     "Neither. California DRE runs its own salesperson and broker exams at state centers. Here is how scheduling actually works and what to study before you book.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-24",
   eyebrow: "California DRE · Real estate licensing",
   clusterId: "california-real-estate",
   relatedSlugs: ["california-real-estate-exam-dre-test-centers"],
@@ -56,11 +57,67 @@ export const californiaRealEstatePsiVsPearsonPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "DRE testing areas include Sacramento, Oakland, Fresno, the Los Angeles vicinity (e.g. La Palma), and San Diego. Exact site addresses and formats are listed on DRE’s examinee pages — confirm there before you travel.",
+          text: "DRE says it administers tests at five exam centers: **Fresno, La Palma (Los Angeles area), Oakland, Sacramento and San Diego**, all currently in an electronic format. Locations within an area may vary, and DRE does not grant requests for a specific site.",
         },
         {
           type: "p",
-          text: "Qualified examinees can often self-schedule into an open seat via eLicensing close to the exam date (DRE has allowed scheduling as late as the morning of the exam when seats exist). Do not assume a last-minute seat will be available in your preferred city.",
+          text: "Arrive 30 minutes early; sessions begin promptly as scheduled.",
+        },
+      ],
+    },
+    {
+      heading: "What are the California exam facts?",
+      blocks: [
+        {
+          type: "table",
+          caption: "California DRE exams (dre.ca.gov, checked 24 Nov 2026)",
+          headers: ["", "Salesperson", "Broker"],
+          rows: [
+            ["Questions", "150 multiple choice", "200 multiple choice"],
+            ["Time", "3 hours", "4 hours"],
+            ["Passing score", "70% of the questions", "75% of the questions"],
+            ["Exam fee", "$100", "$150"],
+            ["Re-examination fee", "$100", "$150"],
+            ["Rescheduling fee", "$40", "$45"],
+          ],
+        },
+        {
+          type: "p",
+          text: "Each question has four answer choices. The exam is qualifying: if you pass you are not told your score; if you fail you get your score and a percentage for each subject area. Fees are non-refundable under Business and Professions Code § 10207.",
+        },
+      ],
+    },
+    {
+      heading: "What does the California exam cover?",
+      blocks: [
+        {
+          type: "p",
+          text: "DRE publishes approximate weights, the same for both exams (broker questions go deeper):",
+        },
+        {
+          type: "ul",
+          items: [
+            "Practice of Real Estate and Disclosures (including specialty areas) — 25%",
+            "Laws of Agency and Fiduciary Duties — 17%",
+            "Property Ownership and Land Use Controls and Regulations — 15%",
+            "Property Valuation and Financial Analysis — 14%",
+            "Contracts — 12%",
+            "Financing — 9%",
+            "Transfer of Property — 8%",
+          ],
+        },
+        {
+          type: "p",
+          text: "Time your practice against these weights with the [California real estate practice test](/mock-exams/california-real-estate-readiness-check) and drill state rules with the [California real estate deck](/decks/california-real-estate-exam-anki-deck).",
+        },
+      ],
+    },
+    {
+      heading: "How do retakes work in California?",
+      blocks: [
+        {
+          type: "p",
+          text: "You can apply to retake after you are notified that you failed. Do not send a new application or fee before you get your result, or the fee is forfeited. You can take the exam as many times as you need within **two years** of filing your original application; after that you need a new application and fee. Reapply through eLicensing or with the examination result notice.",
         },
       ],
     },
@@ -125,6 +182,14 @@ export const californiaRealEstatePsiVsPearsonPost: BlogPostDraft = {
   ],
   faqs: [
     {
+      question: "How many questions are on the California real estate salesperson exam?",
+      answer: "150 multiple-choice questions in 3 hours; you need 70% to pass. The broker exam is 200 questions in 4 hours at 75% (DRE, checked 24 Nov 2026).",
+    },
+    {
+      question: "How much does the California real estate exam cost?",
+      answer: "$100 for the salesperson exam and $150 for the broker exam; re-examinations cost the same. Rescheduling is $40 or $45. Fees are non-refundable.",
+    },
+    {
       question: "Do I register with PSI for the California real estate exam?",
       answer:
         "No. California DRE administers and schedules the salesperson and broker exams through its own eLicensing system and state exam centers.",
@@ -156,5 +221,5 @@ export const californiaRealEstatePsiVsPearsonPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "Stop comparing PSI and Pearson for California. Open DRE eLicensing, book a state center, and spend your energy on California law and practice questions. The candidates who fail are rarely the ones who picked the wrong vendor — they picked the wrong study plan.",
+    "Stop comparing PSI and Pearson for California. Open DRE eLicensing, book a state center, and spend your energy on California law and practice questions. The candidates who fail are rarely the ones who picked the wrong vendor — they picked the wrong study plan. Sources: [DRE — taking the exam](https://www.dre.ca.gov/Examinees/TakingExam.html), [exam sites](https://www.dre.ca.gov/examinees/ExamSites.html), [salesperson exam content](https://www.dre.ca.gov/examinees/SalesExamContent.html) and [fees](https://www.dre.ca.gov/Licensees/Fees.html), checked 24 Nov 2026.",
 };
