@@ -30,6 +30,7 @@ import { lifeInTheUkFailPassPost } from "./posts/life-in-the-uk-fail-pass";
 import { luxembourgVivreEnsemblePost } from "./posts/luxembourg-vivre-ensemble";
 import { memorizeEpa608RefrigerantsPost } from "./posts/memorize-epa-608-refrigerants";
 import { mricsApcVsAssocricsPost } from "./posts/mrics-apc-vs-assocrics";
+import { nbrcTmcToRtExamPost } from "./posts/nbrc-tmc-to-rt-exam";
 import { neboshIgcVsDiplomaPost } from "./posts/nebosh-igc-vs-diploma";
 import { netherlandsInburgeringsexamenPost } from "./posts/netherlands-inburgeringsexamen";
 import { norwayStatsborgerprovenPost } from "./posts/norway-statsborgerproven";
@@ -128,6 +129,7 @@ const blogPostDrafts: BlogPostDraft[] = [
   servsafeManagerStudyGuidePost,
   finraSieExamPrepPost,
   finraRetakeWaitingPeriodPost,
+  nbrcTmcToRtExamPost,
 ];
 
 /** Newest first — used by /blog index, sitemap, and llms.txt. */
