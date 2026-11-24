@@ -28,6 +28,11 @@ import { frmDeckEditorial } from "./frm-part-1-anki-deck";
 import { aceCptDeckEditorial } from "./ace-cpt-anki-deck";
 import { neboshDeckEditorial } from "./nebosh-anki-deck";
 import { series99DeckEditorial } from "./series-99-anki-deck";
+import { waRealEstateDeckEditorial } from "./wa-real-estate-anki-deck";
+import { gaRealEstateDeckEditorial } from "./ga-real-estate-anki-deck";
+import { ilRealEstateDeckEditorial } from "./il-real-estate-anki-deck";
+import { ncRealEstateDeckEditorial } from "./nc-real-estate-anki-deck";
+import { coRealEstateDeckEditorial } from "./co-real-estate-anki-deck";
 import { txRealEstateDeckEditorial } from "./tx-real-estate-anki-deck";
 import { cchtDialysisDeckEditorial } from "./ccht-dialysis-anki-deck";
 import { asptPhlebotomyDeckEditorial } from "./aspt-phlebotomy-anki-deck";
@@ -72,6 +77,11 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "ace-cpt-anki-deck": aceCptDeckEditorial,
   "nebosh-anki-deck": neboshDeckEditorial,
   "series-99-anki-deck": series99DeckEditorial,
+  "wa-real-estate-anki-deck": waRealEstateDeckEditorial,
+  "ga-real-estate-anki-deck": gaRealEstateDeckEditorial,
+  "il-real-estate-anki-deck": ilRealEstateDeckEditorial,
+  "nc-real-estate-anki-deck": ncRealEstateDeckEditorial,
+  "co-real-estate-anki-deck": coRealEstateDeckEditorial,
   "tx-real-estate-anki-deck": txRealEstateDeckEditorial,
   "ccht-dialysis-anki-deck": cchtDialysisDeckEditorial,
   "aspt-phlebotomy-anki-deck": asptPhlebotomyDeckEditorial,
