@@ -493,7 +493,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
   },
 
   "rd-exam-anki-deck": {
-    title: "RD Exam Anki Deck 2027 | 240 CDR Flashcards + Free Mock",
+    title: "RD Exam Anki Deck 2026 | 240 CDR Flashcards + Free Mock",
     headline: "RD / RDN Exam Prep — 240 CDR Domain Flashcards",
     studyLabel: "RD exam Anki flashcards",
     description:

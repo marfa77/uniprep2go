@@ -3,6 +3,31 @@ import { wave2MockExamConfigs } from "./mock-exams/wave2-configs";
 import { plannedDeckFromMock } from "./planned-deck-from-mock";
 
 const plannedDeckOverrides: Record<string, (deck: PlannedDeck) => PlannedDeck> = {
+  "rd-exam-readiness-check": (deck) => ({
+    ...deck,
+    topicCoverage: [
+      {
+        name: "Principles of dietetics",
+        examWeight: "21%",
+        cards: "50",
+      },
+      {
+        name: "Nutrition care for individuals and groups",
+        examWeight: "45%",
+        cards: "108",
+      },
+      {
+        name: "Management of food and nutrition programs",
+        examWeight: "21%",
+        cards: "50",
+      },
+      {
+        name: "Foodservice systems",
+        examWeight: "13%",
+        cards: "32",
+      },
+    ],
+  }),
   "nbrc-tmc-readiness-check": (deck) => ({
     ...deck,
     directAnswer:
