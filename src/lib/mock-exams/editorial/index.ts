@@ -35,6 +35,7 @@ import { satEditorial } from "./sat-readiness-check";
 import { nremtParamedicEditorial } from "./nremt-paramedic-readiness-check";
 import { nremtAemtEditorial } from "./nremt-aemt-readiness-check";
 import { homeHealthAideEditorial } from "./home-health-aide-readiness-check";
+import { aamaCmaEditorial } from "./aama-cma-readiness-check";
 import { sieQuickDiagnosticEditorial } from "./sie-quick-diagnostic";
 import { cdlGeneralKnowledgeEditorial } from "./cdl-general-knowledge-readiness-check";
 import { leedApBdcEditorial } from "./leed-ap-bd-c-readiness-check";
@@ -90,6 +91,7 @@ const ENRICHMENT_SLUGS = [
   "nremt-paramedic-readiness-check",
   "nremt-aemt-readiness-check",
   "home-health-aide-readiness-check",
+  "aama-cma-readiness-check",
   "sie-quick-diagnostic",
   "cdl-general-knowledge-readiness-check",
   "leed-ap-bd-c-readiness-check",
@@ -144,6 +146,7 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "nremt-paramedic-readiness-check": nremtParamedicEditorial,
   "nremt-aemt-readiness-check": nremtAemtEditorial,
   "home-health-aide-readiness-check": homeHealthAideEditorial,
+  "aama-cma-readiness-check": aamaCmaEditorial,
   "sie-quick-diagnostic": sieQuickDiagnosticEditorial,
   "cdl-general-knowledge-readiness-check": cdlGeneralKnowledgeEditorial,
   "leed-ap-bd-c-readiness-check": leedApBdcEditorial,

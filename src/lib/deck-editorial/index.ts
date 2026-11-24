@@ -28,6 +28,10 @@ import { frmDeckEditorial } from "./frm-part-1-anki-deck";
 import { aceCptDeckEditorial } from "./ace-cpt-anki-deck";
 import { neboshDeckEditorial } from "./nebosh-anki-deck";
 import { series99DeckEditorial } from "./series-99-anki-deck";
+import { arRealEstateDeckEditorial } from "./ar-real-estate-anki-deck";
+import { medicalScribeDeckEditorial } from "./medical-scribe-anki-deck";
+import { sixSigmaGreenBeltDeckEditorial } from "./six-sigma-green-belt-anki-deck";
+import { realEstateAppraiserDeckEditorial } from "./real-estate-appraiser-anki-deck";
 import { nyRealEstateDeckEditorial } from "./ny-real-estate-anki-deck";
 import { njRealEstateDeckEditorial } from "./nj-real-estate-anki-deck";
 import { paRealEstateDeckEditorial } from "./pa-real-estate-anki-deck";
@@ -82,6 +86,10 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "ace-cpt-anki-deck": aceCptDeckEditorial,
   "nebosh-anki-deck": neboshDeckEditorial,
   "series-99-anki-deck": series99DeckEditorial,
+  "ar-real-estate-anki-deck": arRealEstateDeckEditorial,
+  "medical-scribe-anki-deck": medicalScribeDeckEditorial,
+  "six-sigma-green-belt-anki-deck": sixSigmaGreenBeltDeckEditorial,
+  "real-estate-appraiser-anki-deck": realEstateAppraiserDeckEditorial,
   "ny-real-estate-anki-deck": nyRealEstateDeckEditorial,
   "nj-real-estate-anki-deck": njRealEstateDeckEditorial,
   "pa-real-estate-anki-deck": paRealEstateDeckEditorial,
