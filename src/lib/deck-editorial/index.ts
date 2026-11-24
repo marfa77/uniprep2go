@@ -28,6 +28,8 @@ import { frmDeckEditorial } from "./frm-part-1-anki-deck";
 import { aceCptDeckEditorial } from "./ace-cpt-anki-deck";
 import { neboshDeckEditorial } from "./nebosh-anki-deck";
 import { series99DeckEditorial } from "./series-99-anki-deck";
+import { txRealEstateDeckEditorial } from "./tx-real-estate-anki-deck";
+import { cchtDialysisDeckEditorial } from "./ccht-dialysis-anki-deck";
 import { asptPhlebotomyDeckEditorial } from "./aspt-phlebotomy-anki-deck";
 import { californiaRealEstateDeckEditorial } from "./california-real-estate-exam-anki-deck";
 import { ardmsSpiDeckEditorial } from "./ardms-spi-anki-deck";
@@ -70,6 +72,8 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "ace-cpt-anki-deck": aceCptDeckEditorial,
   "nebosh-anki-deck": neboshDeckEditorial,
   "series-99-anki-deck": series99DeckEditorial,
+  "tx-real-estate-anki-deck": txRealEstateDeckEditorial,
+  "ccht-dialysis-anki-deck": cchtDialysisDeckEditorial,
   "aspt-phlebotomy-anki-deck": asptPhlebotomyDeckEditorial,
   "california-real-estate-exam-anki-deck": californiaRealEstateDeckEditorial,
   "ardms-spi-anki-deck": ardmsSpiDeckEditorial,

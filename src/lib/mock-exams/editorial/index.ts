@@ -28,6 +28,9 @@ import { cdcpMockEditorial } from "./cdcp-readiness-check";
 import { cemEditorial } from "./cem-readiness-check";
 import { electricalJourneymanEditorial } from "./electrical-journeyman-readiness-check";
 import { nnaapCnaEditorial } from "./nnaap-cna-readiness-check";
+import { nasmCptEditorial } from "./nasm-cpt-readiness-check";
+import { cdaChildcareEditorial } from "./cda-childcare-readiness-check";
+import { precisionNutritionL1Editorial } from "./precision-nutrition-l1-readiness-check";
 import { satEditorial } from "./sat-readiness-check";
 import { nremtParamedicEditorial } from "./nremt-paramedic-readiness-check";
 import { nremtAemtEditorial } from "./nremt-aemt-readiness-check";
@@ -80,6 +83,9 @@ const ENRICHMENT_SLUGS = [
   "cem-readiness-check",
   "electrical-journeyman-readiness-check",
   "nnaap-cna-readiness-check",
+  "nasm-cpt-readiness-check",
+  "cda-childcare-readiness-check",
+  "precision-nutrition-l1-readiness-check",
   "sat-readiness-check",
   "nremt-paramedic-readiness-check",
   "nremt-aemt-readiness-check",
@@ -131,6 +137,9 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "cem-readiness-check": cemEditorial,
   "electrical-journeyman-readiness-check": electricalJourneymanEditorial,
   "nnaap-cna-readiness-check": nnaapCnaEditorial,
+  "nasm-cpt-readiness-check": nasmCptEditorial,
+  "cda-childcare-readiness-check": cdaChildcareEditorial,
+  "precision-nutrition-l1-readiness-check": precisionNutritionL1Editorial,
   "sat-readiness-check": satEditorial,
   "nremt-paramedic-readiness-check": nremtParamedicEditorial,
   "nremt-aemt-readiness-check": nremtAemtEditorial,
