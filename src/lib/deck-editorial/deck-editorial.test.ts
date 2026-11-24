@@ -67,4 +67,12 @@ describe("deck editorial blocks", () => {
     expect(text).toContain("Initiation and Modification of Interventions");
     expect(text).toContain("/blog/nbrc-tmc-to-rt-exam-2027");
   });
+
+  it("batch 2 deck blocks map cards to each official outline", () => {
+    expect(deckText("cfa-level-2-anki-deck").join(" ")).toContain("22 vignettes");
+    expect(deckText("gmat-focus-anki-deck").join(" ")).toContain("Data Sufficiency");
+    expect(deckText("cem-anki-deck").join(" ")).toContain("**minimum score of 700**");
+    expect(deckText("mrics-quantity-surveying-anki-deck").join(" ")).toContain("4,000-word");
+    expect(deckText("ptcb-pharmacy-technician-anki-deck").join(" ")).toContain("**Medications (35%):**");
+  });
 });
