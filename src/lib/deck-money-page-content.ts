@@ -1914,7 +1914,7 @@ Representatives mix suitability standards for elderly clients, options exercise 
 
 Food safety manager prompts: TCS temperature danger zone (41°F–135°F), cooking temperatures for poultry and ground meat, HACCP principles, hand-washing sequence, cross-contamination controls, Big 6 pathogens, and manager verification duties. Cards mirror ServSafe Manager domain language.
 
-Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The current ServSafe FAQ sets the pass mark at **70% (56 of 80 scored)**; the older 2020 Examinee Handbook PDF still prints **75%**. Our full mock matches the 90Q / 120 min form (the free first run is a 25-question diagnostic) and uses **75%** as a UniPrep2Go readiness target (margin above the official standard).
+Official exam is **90 questions (80 scored + 10 unscored pilot) / 2 hours**. The current ServSafe FAQ sets the pass mark at **70% (56 of 80 scored)**. Our full mock matches the 90Q / 120 min form (the free first run is a 25-question diagnostic) and uses **75%** as a UniPrep2Go readiness target (margin above the official standard).
 
 ### Plan with the 90-question mock (free 25-question version)
 

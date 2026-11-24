@@ -959,7 +959,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       scored_count: "80",
       time_limit: "2 hours",
       passing_score:
-        "70% (56 of 80 scored questions) per current ServSafe Manager FAQ; older 2020 Examinee Handbook PDF still prints 75%",
+        "70% (56 of 80 scored questions) per current ServSafe Manager FAQ",
       delivery: "Computer-based at approved test providers or online proctoring (where available)",
       verify_at_url: "https://www.servsafe.com/ServSafe-Manager/Get-Certified",
     },
@@ -1004,7 +1004,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What score do you need to pass ServSafe Manager?",
-        a: "The current ServSafe FAQ sets the pass mark at 70% (56 of 80 scored questions). The older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com before scheduling.",
+        a: "The current ServSafe FAQ sets the pass mark at 70% (56 of 80 scored questions). Verify at servsafe.com before scheduling.",
       },
       {
         q: "What is the food temperature danger zone?",

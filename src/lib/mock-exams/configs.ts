@@ -556,7 +556,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Official pass 70% (56/80 scored) per current ServSafe FAQ; our mock uses 75% as a UniPrep2Go readiness target (margin above the official standard). Older 2020 Examinee Handbook PDF still prints 75%. Each attempt draws 90 questions in the topic mix from a bank of 270 original items, so retakes see new questions.",
+      "Modeled on the ServSafe Manager exam: 90 questions (80 scored + 10 unscored pilot), 120 minutes. Official pass 70% (56/80 scored) per current ServSafe FAQ; our mock uses 75% as a UniPrep2Go readiness target (margin above the official standard). Each attempt draws 90 questions in the topic mix from a bank of 270 original items, so retakes see new questions.",
     disclaimer: servSafeDisclaimer,
     description:
       "A timed 90-question ServSafe Manager mock with topic-weighted scoring, full question review, and a pass/no-pass readiness verdict aligned to the official exam format.",
