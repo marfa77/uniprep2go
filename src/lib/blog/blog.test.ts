@@ -561,4 +561,22 @@ describe("overnight WP2/WP3 blog rewrites", () => {
     expect(body).toContain("8–13 May");
     expect(body).toContain("Ethical and Professional Standards 10–15%");
   });
+
+  it("Australian citizenship post uses Home Affairs retake and exemption rules", () => {
+    const post = getBlogPostBySlug("australian-citizenship-test-our-common-bond-complete-guide")!;
+    expect(post.faqs.map((f) => f.question)).toContain("Who is exempt from the Australian citizenship test?");
+    expect(post.sections.map((s) => s.heading)).toContain("Who has to sit the test, and who doesn't?");
+    const body = text(post.slug);
+    expect(body).toContain("after three unsuccessful appointments");
+    expect(body).not.toMatch(/~1 month|under 20 minutes|12–24 months|CZK/);
+  });
+
+  it("CDCP vs DCDC post uses BICSI's three eligibility options", () => {
+    const post = getBlogPostBySlug("cdcp-vs-dcdc-data-center-certification-first-step")!;
+    expect(post.faqs.map((f) => f.question)).toContain("How long is the DCDC exam?");
+    const body = text(post.slug);
+    expect(body).toContain("Hold a current RCDD");
+    expect(body).toContain("$725");
+    expect(body).not.toMatch(/\$800–\$1,200|Arup|Equinix/);
+  });
 });

@@ -7,6 +7,7 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
   metaDescription:
     "Australian citizenship test: 20 MCQs, 45 min, 75% pass. All 5 values questions must be correct. Our Common Bond topics, traps, and prep.",
   publishedAt: "2026-08-04",
+  contentUpdated: "2026-11-23",
   eyebrow: "Australia · Our Common Bond",
   clusterId: "australian-citizenship",
   relatedSlugs: [
@@ -20,9 +21,9 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
   deckSlug: "australian-citizenship-anki-deck",
   cta: {
     mockLabel: "Take the free Australian Citizenship readiness check",
-    deckLabel: "Get the Australian Citizenship Anki deck ($9.99)",
+    deckLabel: "Get the Australian Citizenship Anki deck",
     summary:
-      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the $9.99 Australian Citizenship Anki deck before ceremony day.",
+      "Drill Our Common Bond themes — especially values — with the free Australian Citizenship readiness check. Then lock government, history, and values with the [Australian Citizenship Anki deck](/decks/australian-citizenship-anki-deck) before your appointment.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",
@@ -40,7 +41,7 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "Sitting the test is **included in the citizenship application fee**. Fail and you can usually retake after a waiting period (~1 month is commonly cited); repeated fails may trigger an officer interview. Typical cohort: applicants **aged 18–59** for citizenship by conferral — confirm current exemptions on official pages before you book.",
+          text: "Sitting the test is **included in the citizenship application fee**. Most applicants for citizenship by conferral who are **aged 18 to 59** on the day Home Affairs receives their application have to sit it. Home Affairs sends a letter with the date, time and place, and you sit the test on a computer or tablet after your identity is confirmed. If you fail, Home Affairs books another appointment at no extra cost; after three unsuccessful appointments it may refuse the application.",
         },
       ],
     },
@@ -55,18 +56,17 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
             ["Format", "Computer-based multiple choice"],
             ["Questions", "20"],
             ["Time", "45 minutes"],
-            ["Options", "Typically 3 per question (A, B, C)"],
             ["Pass mark", "75% (15/20)"],
             ["Values questions", "5 mandatory — **all 5 must be correct**"],
             ["Cost to sit", "Included in application fee"],
             ["Language", "English only"],
-            ["Where", "Department of Home Affairs service centres"],
-            ["Retakes", "Allowed; waiting period between attempts"],
+            ["Where", "Departmental offices in most capital cities and some Services Australia offices"],
+            ["If you fail", "Another appointment at no extra cost; refusal possible after three unsuccessful appointments"],
           ],
         },
         {
           type: "p",
-          text: "Most candidates finish under 20 minutes. Use leftover time to re-read values items carefully — that is where one careless click fails the sitting.",
+          text: "Use any time left to re-read the values items carefully; one wrong values answer fails the test even with 19 of 20 correct. Phones, smart watches, notes and talking to anyone other than the Test Facilitator are not allowed, and breaking the rules can lead to refusal.",
         },
       ],
     },
@@ -120,21 +120,24 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
       ],
     },
     {
-      heading: "Language vs Civics: The Australian Difference",
+      heading: "Who has to sit the test, and who doesn't?",
       blocks: [
         {
-          type: "table",
-          headers: ["", "Australia", "Czechia", "Poland (current)"],
-          rows: [
-            ["Civics test", "20 MCQs + values rule", "30 MCQs, known pool", "None yet (proposed)"],
-            ["Separate language exam", "No (English assumed)", "B1 Czech", "B1 Polish (PaF)"],
-            ["Language support", "AMEP / AMEPOnline", "Self-funded", "Self-funded"],
-            ["Retake fee", "Included in application path", "CZK 2,000 typical", "PaF fee per sitting"],
+          type: "p",
+          text: "You generally sit the test if you are 18 to 59 on the day Home Affairs receives your conferral application. You generally do not sit it if you:",
+        },
+        {
+          type: "ul",
+          items: [
+            "are 17 or younger, or 60 or over, when you apply",
+            "have a permanent or enduring physical or mental incapacity, or a permanent loss or substantial impairment of hearing, speech or sight",
+            "are the child of a former Australian citizen who lost citizenship in specific circumstances",
+            "were born in Papua before 16 September 1975 to an Australian citizen born in Australia, or were born in Australia and are stateless",
           ],
         },
         {
           type: "p",
-          text: "If you can read OCB in English, you can sit. If not, use free AMEP prep — preparatory, not a formal second exam.",
+          text: "Applicants who don't sit the test may be asked to an interview to confirm identity and discuss the application. An assisted test and other accommodations can be requested with a form completed by a registered health practitioner.",
         },
       ],
     },
@@ -165,15 +168,15 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
             },
             {
               title: "Days 4–7 — Drill by category",
-              body: "People → government/law → rights → values. Use official practice material plus timed third-party mocks. Push each category to ~90%+ before full sims.",
+              body: "People → government/law → rights → values. Use the official Home Affairs practice test, the Our Common Bond podcast, then the [Australian citizenship readiness check](/mock-exams/australian-citizenship-readiness-check) for timed runs.",
             },
             {
               title: "Days 8–10 — Full 20Q simulations",
-              body: "45-minute timer, no notes. Target consistent 18–19/20 with **5/5 values** every time.",
+              body: "45-minute timer, no notes. Aim well above 15/20 with **5/5 values** every time.",
             },
             {
               title: "Final 2 days — Polish only",
-              body: "Revisit wrong answers and values wording. Lock numbers (12 senators, 3-year House cycle, 60,000+ years) and constitutional roles — do not cram new topics.",
+              body: "Revisit wrong answers and values wording. Lock key facts from Our Common Bond and constitutional roles; do not cram new topics.",
             },
           ],
         },
@@ -196,23 +199,16 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
       ],
     },
     {
-      heading: "Timeline: Test to Certificate",
+      heading: "What happens after the test?",
       blocks: [
         {
-          type: "table",
-          headers: ["Step", "Typical timing"],
-          rows: [
-            ["Meet residence rules", "Confirm current Home Affairs criteria (lawful residence + PR periods)"],
-            ["Prepare for the test", "1–2 weeks if English is solid; longer with AMEP"],
-            ["Submit application", "ImmiAccount + fee"],
-            ["Test appointment", "Often months after lodge — varies by caseload"],
-            ["Sit the test", "45 minutes; often immediate preliminary result"],
-            ["Ceremony + pledge", "After approval — certificate at ceremony"],
+          type: "ul",
+          items: [
+            "Home Affairs keeps processing your application and writes if it needs more information or when it decides.",
+            "If you pass and are approved, you must attend a citizenship ceremony to become a citizen; the invitation letter arrives about four weeks before the ceremony.",
+            "If you fail, your visa is not affected, Home Affairs books another appointment at no extra cost, and after three unsuccessful appointments it may refuse the application.",
+            "Appointment and ceremony wait times vary; Home Affairs publishes current processing times.",
           ],
-        },
-        {
-          type: "p",
-          text: "Budget roughly **12–24 months** from eligibility to certificate depending on processing. Always verify residence clocks and fees on official Home Affairs pages — proposals change faster than blogs.",
         },
       ],
     },
@@ -244,6 +240,15 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
         "Each state has 12 senators; each mainland territory has 2. House seats are based on population — do not mix the two.",
     },
     {
+      question: "Who is exempt from the Australian citizenship test?",
+      answer:
+        "Generally applicants aged 17 or under or 60 or over when they apply, people with a permanent or enduring physical or mental incapacity or serious hearing, speech or sight impairment, and some specific groups. They may have an interview instead.",
+    },
+    {
+      question: "How long is the Australian citizenship test?",
+      answer: "45 minutes for 20 multiple-choice questions, in English, on a computer or tablet.",
+    },
+    {
       question: "Does UniPrep2Go use official Home Affairs questions?",
       answer:
         "No. The free Australian Citizenship readiness check and Citizenship Anki Bundle are independent study aids based on Our Common Bond themes — not official Department material.",
@@ -251,9 +256,9 @@ export const australianCitizenshipTestPost: BlogPostDraft = {
     {
       question: "What if I fail the citizenship test?",
       answer:
-        "You can usually retake after a waiting period. Repeated failures may lead to an interview with a Home Affairs officer. Confirm current retake rules when you book.",
+        "Home Affairs books another appointment for you at no extra cost, and your visa is not affected. If you do not pass after three appointments, Home Affairs may refuse your application (immi.homeaffairs.gov.au, checked 23 Nov 2026).",
     },
   ],
   bottomLine:
-    "Australia’s citizenship test is short, free to sit within the application, and unforgiving on **values**. Read *Our Common Bond*, drill until you are **5/5 on values** and 18–19/20 overall, then use UniPrep2Go’s free readiness check and Citizenship Anki Bundle to lock weak categories before ceremony day.",
+    "Australia’s citizenship test is short, free to sit within the application, and unforgiving on **values**. Read *Our Common Bond*, drill until you are **5/5 on values** and comfortably above 15/20, then use the free [readiness check](/mock-exams/australian-citizenship-readiness-check) and the [Anki deck](/decks/australian-citizenship-anki-deck) for weak categories. Sources: [Home Affairs — citizenship test](https://immi.homeaffairs.gov.au/citizenship/test-and-interview/learn-about-citizenship-interview-and-test/learn-about-citizenship-test) and [Prepare for the test](https://immi.homeaffairs.gov.au/citizenship/test-and-interview/prepare-for-test), checked 23 Nov 2026.",
 };
