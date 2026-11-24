@@ -32,6 +32,8 @@ import { neboshEditorial } from "./nebosh-readiness-check";
 import { californiaRealEstateEditorial } from "./california-real-estate-readiness-check";
 import { greEditorial } from "./gre-readiness-check";
 import { asptPhlebotomyEditorial } from "./aspt-phlebotomy-readiness-check";
+import { wellApEditorial } from "./well-ap-readiness-check";
+import { cdlDoublesTriplesEditorial } from "./cdl-doubles-triples-readiness-check";
 
 export type { MockEditorialBundle, EditorialFaq, EditorialSection, EditorialSource } from "./types";
 export { resolveWeightTableQuestions } from "./resolve-weight-table";
@@ -71,6 +73,8 @@ const ENRICHMENT_SLUGS = [
   "california-real-estate-readiness-check",
   "gre-readiness-check",
   "aspt-phlebotomy-readiness-check",
+  "well-ap-readiness-check",
+  "cdl-doubles-triples-readiness-check",
 ] as const;
 
 export type EnrichmentMockSlug = (typeof ENRICHMENT_SLUGS)[number];
@@ -109,6 +113,8 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "california-real-estate-readiness-check": californiaRealEstateEditorial,
   "gre-readiness-check": greEditorial,
   "aspt-phlebotomy-readiness-check": asptPhlebotomyEditorial,
+  "well-ap-readiness-check": wellApEditorial,
+  "cdl-doubles-triples-readiness-check": cdlDoublesTriplesEditorial,
 };
 
 export function getMockEditorialBundle(slug: string): MockEditorialBundle | null {
