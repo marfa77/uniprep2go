@@ -7,11 +7,12 @@ export const ankiVsQuizletExamPrepPost: BlogPostDraft = {
   metaDescription:
     "Quizlet is easier. Anki is free. But for licensing exams like FINRA, LEED, and EPA 608, one tool builds long-term memory and the other builds short-term recognition. Here is the difference.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-24",
   eyebrow: "Study tools · Spaced repetition",
   clusterId: "anki-study",
   relatedSlugs: ["how-long-anki-decks-stay-current-exam-shelf-life"],
   intro:
-    "**If you are studying for a professional licensing exam — FINRA SIE, LEED GA, EPA 608, ServSafe Manager — you need facts to stick for weeks or months, not hours.** The tool you choose determines whether you pass the exam or recognize the answer in the app and draw a blank at the testing center. Anki and Quizlet are not interchangeable: one is built for long-term retention through spaced repetition; the other is built for quick review and classroom sharing.",
+    "**If you are studying for a professional licensing exam such as the FINRA SIE, LEED Green Associate or EPA 608, you need facts to stay with you for weeks, not hours.** What matters is whether a tool makes you recall answers and spaces your reviews across days. This guide sets out what Anki's own documentation says it does, what to check in Quizlet or any other app, and how to tie flashcards to an official exam outline.",
   mockSlug: "epa-608-readiness-check",
   deckSlug: "hvac-epa-608-anki-deck",
   cta: {
@@ -22,199 +23,86 @@ export const ankiVsQuizletExamPrepPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Core Difference: Algorithm vs Interface",
+      heading: "What actually makes exam facts stick?",
       blocks: [
         {
-          type: "table",
-          caption: "Anki vs Quizlet at a glance",
-          headers: ["", "Anki", "Quizlet"],
-          rows: [
-            [
-              "Spaced repetition",
-              "Genuine SM-2 / FSRS. Each card has its own schedule based on your performance.",
-              "“Learn” mode mimics spaced repetition but resets every session. Does not track performance across days.",
-            ],
-            [
-              "Cost",
-              "Free on desktop, Android, and web. $24.99 one-time for iOS.",
-              "Free tier is limited; full features need Quizlet Plus (~$36/year).",
-            ],
-            [
-              "Card creation",
-              "Manual or import (.apkg, .csv). Steep learning curve.",
-              "Fast, intuitive, millions of pre-made sets.",
-            ],
-            [
-              "Offline access",
-              "Full offline after sync.",
-              "Requires internet for most features.",
-            ],
-            ["Collaboration", "None. Solo tool.", "Built for sharing sets with classmates."],
-            [
-              "Best for",
-              "Long-term retention over months. Licensing exams.",
-              "Short-term cramming, group study, quick vocabulary.",
-            ],
-          ],
+          type: "p",
+          text: "The Anki manual builds on two ideas. **Active recall**: trying to remember an answer before you see it strengthens memory far more than rereading, and a failed attempt tells you what to review. **Spaced repetition**: each card comes back just before you are likely to forget it, and the gaps grow as the card gets easier. The manual traces this from Ebbinghaus's spacing effect (1885) through Leitner's box system to SuperMemo's adaptive scheduling.",
         },
         {
           type: "p",
-          text: "A 2023 cohort study in Cureus found that medical students using Anki’s spaced repetition scored 6–13% higher on standardized exams than those who did not. The reason is not the app itself — it is the algorithm that surfaces cards precisely when you are about to forget them.",
+          text: "For a licensing exam weeks or months away, those two features matter more than how fast you can make cards. Whatever tool you use, check that it does both.",
         },
       ],
     },
     {
-      heading: "Why Quizlet Fails Licensing Exams",
+      heading: "What does Anki offer, according to its own documentation?",
       blocks: [
         {
-          type: "topics",
-          items: [
-            {
-              title: "1. The algorithm resets",
-              body: "Quizlet’s Learn mode schedules cards within a single study session. Close the app and come back tomorrow, and the schedule starts over. For a licensing exam in 6 weeks, you are not spacing repetition — you are cycling through cards.",
-            },
-            {
-              title: "2. Recognition masquerades as knowledge",
-              body: "Match, Gravity, and Flashcards test recognition speed, not recall. You see the answer and think “I knew that.” At the testing center, with no prompts, you draw a blank. Anki’s default mode shows the question, hides the answer, and forces retrieval.",
-            },
-            {
-              title: "3. The free tier is gutted",
-              body: "As of 2026, Quizlet has paywalled Learn mode, Test mode, and offline access behind Quizlet Plus (~$36/year). The free version is basic flipping with ads. At that price, Anki’s one-time $25 iOS fee looks cheap.",
-            },
+          type: "table",
+          caption: "Anki facts from apps.ankiweb.net and docs.ankiweb.net (checked 24 Nov 2026)",
+          headers: ["Feature", "What Anki says"],
+          rows: [
+            ["Desktop app", "Free, for Windows, macOS and Linux"],
+            ["Android", "AnkiDroid, free and developed by contributors"],
+            ["iOS", "AnkiMobile, the official iOS app; purchases help fund Anki's development"],
+            ["Sync", "AnkiWeb, a free service that keeps your collection in sync across devices"],
+            ["Schedulers", "The legacy SuperMemo 2 (SM-2) algorithm, or FSRS (supported in Anki 23.10+, AnkiMobile 23.10+, AnkiWeb and AnkiDroid 2.17+)"],
+            ["Desired retention (FSRS)", "The share of cards you recall when they are due; the default is 90%, and higher values mean shorter intervals and more reviews"],
+            ["Shared decks", ".apkg packages import decks, notes, note types and cards, optionally with scheduling"],
           ],
         },
       ],
     },
     {
-      heading: "Why Anki Wins for Licensing Exams",
-      blocks: [
-        {
-          type: "topics",
-          items: [
-            {
-              title: "Spaced repetition that scales",
-              body: "Anki tracks every card individually. “Hard” returns in ~1 day; “Good” stretches further; “Easy” stretches more. By exam day you have seen every card at the moment your brain was about to forget it.",
-            },
-            {
-              title: "Offline and portable",
-              body: "Decks are .apkg files. Sync once to AnkiDroid or AnkiMobile and study on the subway without Wi-Fi. Quizlet needs a connection for most free-tier features.",
-            },
-            {
-              title: "No vendor lock-in",
-              body: "Your cards are your property. Export anytime. Quizlet sets can be deleted by the creator or locked behind a paywall. For a $250 LEED exam or a $100 EPA 608 sitting, you do not want study material held hostage by a subscription.",
-            },
-            {
-              title: "Cloze deletion for dense material",
-              body: "Licensing exams love fill-in-the-blank: “The cold holding temperature for TCS foods is ___°F.” Anki’s cloze format fits this. Quizlet has cloze but buries it behind Plus and does not integrate it with real spaced scheduling.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Honest Downsides of Anki",
+      heading: "What should you check before you rely on Quizlet or any other app?",
       blocks: [
         {
           type: "ul",
           items: [
-            "**Steep learning curve** — the interface looks dated; setup takes 2–3 hours of upfront investment",
-            "**No collaboration** — study groups that share Quizlet sets must export/import Anki decks manually",
-            "**Card creation is manual** — unless you buy a pre-made deck, typing a 500-card EPA 608 deck is 3–4 hours of data entry",
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The Hybrid Workflow That Most Candidates Actually Use",
-      blocks: [
-        {
-          type: "steps",
-          items: [
-            {
-              title: "Phase 1: Discovery (Quizlet)",
-              body: "Search Quizlet for existing sets on your exam. Flip for ~20 minutes to see what concepts matter. Do not study from Quizlet — just browse.",
-            },
-            {
-              title: "Phase 2: Active learning (Anki)",
-              body: "Build or import your deck into Anki. Set a daily limit (20–30 new cards). Study 15–20 minutes every morning. Let the algorithm schedule.",
-            },
-            {
-              title: "Phase 3: Final cram",
-              body: "3 days before the exam, run a filtered Anki deck of only “Again” and “Hard” cards. Or use Quizlet Test mode for a quick confidence check — only if you already paid for Plus.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "Cost Comparison for Licensing Exam Prep",
-      blocks: [
-        {
-          type: "table",
-          caption: "3-year cost snapshot",
-          headers: ["Cost item", "Anki", "Quizlet"],
-          rows: [
-            ["Desktop app", "Free", "Free (limited)"],
-            ["Mobile app", "Free (Android) / $24.99 one-time (iOS)", "Free with ads"],
-            ["Full study features", "Free", "~$36/year (Quizlet Plus)"],
-            [
-              "Pre-made professional decks",
-              "$4.99–$39 (third-party)",
-              "Free (community) or included in Plus",
-            ],
-            ["3-year total cost", "$24.99 (iOS only)", "~$108"],
-            ["Offline access", "Yes", "No (free) / Yes (Plus)"],
+            "**Per-card scheduling across days.** Does the app track each card separately and bring it back on a schedule based on your answers, even after you close it?",
+            "**Recall before reveal.** Do you have to produce the answer before seeing it, or only pick from options? Recognition is easier than recall, and the exam room gives you no prompts.",
+            "**Offline study.** Can you review on a train or in a building with no signal?",
+            "**What is free and what is paid.** Plans change; read the app's own current pricing page rather than a blog post, including this one.",
           ],
         },
         {
           type: "p",
-          text: "On Android, Anki is free forever. On iOS, the $24.99 one-time fee pays for itself in about 8 months versus Quizlet Plus.",
+          text: "We could not read Quizlet's help centre to confirm how its study modes schedule cards or which features are on its free plan, so this guide does not make claims about them. Quizlet is popular for sharing sets and quick class review; test it against the checklist above for your exam.",
         },
       ],
     },
     {
-      heading: "Which Tool for Which Exam?",
+      heading: "How do you tie flashcards to a licensing exam?",
       blocks: [
         {
-          type: "table",
-          caption: "Recommended tool by exam type",
-          headers: ["Exam type", "Best tool", "Why"],
-          rows: [
-            [
-              "FINRA SIE / Series 7",
-              "Anki",
-              "Hundreds of formulas, definitions, and regulatory thresholds over 4–6 weeks",
-            ],
-            [
-              "LEED GA / WELL AP",
-              "Anki",
-              "Numeric standards (temperatures, ppm, ASHRAE references) need precise recall",
-            ],
-            [
-              "EPA 608",
-              "Anki",
-              "Refrigerant numbers, evacuation levels, and leak-rate thresholds are pure memorization",
-            ],
-            [
-              "ServSafe Manager",
-              "Anki",
-              "Temperatures, pathogen names, and HACCP principles are high-volume facts",
-            ],
-            [
-              "NEBOSH IGC",
-              "Anki",
-              "Command words, legal citations, and risk assessment steps need long-term retention",
-            ],
-            [
-              "Quick vocabulary review",
-              "Quizlet",
-              "If you just need to match terms for 48 hours before a quiz",
-            ],
-            [
-              "Study group collaboration",
-              "Quizlet",
-              "Sharing sets with classmates is frictionless",
-            ],
+          type: "p",
+          text: "Professional exams publish outlines, and your cards should follow them. A few examples:",
+        },
+        {
+          type: "ul",
+          items: [
+            "**EPA 608:** federal rules set 25 questions for Core and for each type, with a 70% passing score. Build cards around refrigerant families, pressure classes and dates, as in the [EPA 608 Anki deck](/decks/hvac-epa-608-anki-deck).",
+            "**FINRA SIE:** 75 questions in 1 hour 45 minutes; 44% of them come from Understanding Products and Their Risks. Drill products and rules with the [SIE Anki deck](/decks/sie-exam-anki-deck).",
+            "**LEED Green Associate:** build cards from the exam content in GBCI's candidate handbook, or start from the [LEED Green Associate deck](/decks/leed-green-associate-anki-deck).",
+          ],
+        },
+        {
+          type: "p",
+          text: "When an outline changes, cards built on the old one go stale. See [how long Anki decks stay current](/blog/how-long-anki-decks-stay-current-exam-shelf-life).",
+        },
+      ],
+    },
+    {
+      heading: "What does a good Anki workflow look like?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Import without someone else's history", body: "When you import a shared .apkg in Anki 23.10 or later, leave \"Import any learning progress\" unticked. The manual notes you rarely want another person's intervals." },
+            { title: "Choose a scheduler and retention", body: "If you turn on FSRS, start at the 90% default desired retention; raising it means more daily reviews." },
+            { title: "Review every day", body: "Spacing only works if you clear due cards. Short daily sessions beat long weekend ones." },
+            { title: "Check with timed questions", body: "Flashcards build recall; a timed mock shows whether you can apply it. Try the [EPA 608 readiness check](/mock-exams/epa-608-readiness-check) or the [SIE practice exam](/mock-exams/sie-full-mock)." },
           ],
         },
       ],
@@ -222,51 +110,30 @@ export const ankiVsQuizletExamPrepPost: BlogPostDraft = {
   ],
   faqs: [
     {
-      question: "Is Anki better than Quizlet for professional exams?",
-      answer:
-        "Yes, for any exam where you need to retain information longer than one week. Anki’s spaced repetition algorithm is built for long-term retention. Quizlet is better for short-term cramming and group study.",
-    },
-    {
-      question: "Is Quizlet’s spaced repetition as good as Anki’s?",
-      answer:
-        "No. Quizlet’s Learn mode mimics spaced repetition within a single session but does not track performance across days and weeks. Anki’s SM-2 / FSRS algorithm schedules each card individually based on your entire history with it.",
-    },
-    {
       question: "Is Anki free?",
-      answer:
-        "Anki is free on desktop (Windows, Mac, Linux), Android (AnkiDroid), and web (AnkiWeb). The iOS app (AnkiMobile) costs $24.99 as a one-time purchase. There are no subscriptions.",
+      answer: "The desktop app and AnkiDroid for Android are free, and AnkiWeb sync is a free service. AnkiMobile is the official iOS app; Anki says purchases help fund development (apps.ankiweb.net, checked 24 Nov 2026).",
     },
     {
-      question: "How much does Quizlet cost in 2026?",
-      answer:
-        "Quizlet Plus is approximately $36 per year (or ~$8/month). The free tier includes basic flashcard flipping and Match mode with ads. Learn mode, Test mode, and offline access are paywalled.",
+      question: "What is FSRS in Anki?",
+      answer: "An alternative to Anki's legacy SM-2 scheduler. It is supported in Anki 23.10+, AnkiMobile 23.10+, AnkiWeb and AnkiDroid 2.17+, and schedules cards to a desired retention you set.",
     },
     {
-      question: "Can I use Quizlet and Anki together?",
-      answer:
-        "Yes. A common workflow is to use Quizlet to find and preview pre-made sets, then export or recreate the material in Anki for long-term spaced repetition review.",
+      question: "What desired retention should I use?",
+      answer: "Anki's default is 90%. Higher retention gives shorter intervals and more reviews per day; the manual advises keeping it below 97%.",
     },
     {
-      question: "Does Anki work offline?",
-      answer:
-        "Yes. After syncing with AnkiWeb, your decks are available offline on desktop and mobile. This is a major advantage over Quizlet, which requires an internet connection for most features on the free tier.",
+      question: "Should I keep the scheduling when I import a shared deck?",
+      answer: "Usually not. The Anki manual says you typically do not want another user's intervals or review history; leave \"Import any learning progress\" unticked.",
     },
     {
-      question: "Is Anki hard to learn?",
-      answer:
-        "Relatively yes. The interface is dated and setup takes 2–3 hours. Once configured, daily review is simple: open the app, click “Study Now,” and answer cards until the queue is empty.",
+      question: "Is Quizlet bad for licensing exams?",
+      answer: "That depends on how you use it. Check whether it schedules each card across days, makes you recall answers, and works offline, using Quizlet's own current help and pricing pages.",
     },
     {
-      question: "Can I import Quizlet sets into Anki?",
-      answer:
-        "Yes. Tools like Knowt and browser extensions allow one-click import of Quizlet sets into Anki format. Alternatively, export Quizlet sets as CSV and import them into Anki manually.",
-    },
-    {
-      question: "Which is better for memorizing numbers and formulas?",
-      answer:
-        "Anki. The cloze deletion format is ideal for numeric thresholds, dates, and formulas. Quizlet’s basic flashcard format works but lacks the scheduling precision that makes numbers stick long-term.",
+      question: "Are flashcards enough to pass?",
+      answer: "Flashcards build recall of facts; you still need timed practice on full questions. Pair a deck with a readiness check for the same exam.",
     },
   ],
   bottomLine:
-    "For professional licensing exams, Anki is the tool and Quizlet is the toy. Quizlet is fine for browsing pre-made sets and quick group study. But if you are paying $100–$250 to sit for an exam that determines your career, you need a tool that puts the material in your head on test day — not just in the app. That tool is Anki. Spend 2 hours learning it, build or import your deck, and let the algorithm do the rest.",
+    "Pick the tool that makes you recall and spaces reviews across days, tie your cards to the official outline, and test yourself under time. Sources: [Anki apps](https://apps.ankiweb.net/), [Anki manual: background](https://docs.ankiweb.net/background.html), [deck options (FSRS)](https://docs.ankiweb.net/deck-options.html), [packaged decks](https://docs.ankiweb.net/importing/packaged-decks.html) and [syncing](https://docs.ankiweb.net/syncing.html), checked 24 Nov 2026.",
 };

@@ -3,15 +3,16 @@ import type { BlogPostDraft } from "../types";
 export const finraOptionsQuestionsPost: BlogPostDraft = {
   slug: "finra-options-questions-read-without-getting-tricked",
   title: "How to Read a FINRA Options Question Without Getting Tricked",
-  titleTag: "SIE Options Question Traps 2026 | 4-Step Reading Method",
+  titleTag: "SIE Options Question Traps 2027 | 4-Step Reading Method",
   metaDescription:
     "SIE and Series 7 options items are reading traps: long vs short, call vs put, 100× multiplier. Use this 4-step protocol, formula table, and six traps — then take the 75Q SIE mock (free 25-question version).",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "FINRA SIE · Options",
   clusterId: "finra-sie",
-  relatedSlugs: ["finra-sie-exam-prep-why-people-fail"],
+  relatedSlugs: ["finra-sie-exam-prep-why-people-fail", "finra-exam-retake-waiting-period-2027"],
   intro:
-    "**Options questions are among the highest-weighted trap categories on the FINRA SIE and Series 7 — and where most first-time candidates bleed points.** Not because the math is hard (breakeven is strike ± premium), but because they misread “short,” mix call formulas into put stems, or forget the 100-share multiplier. FINRA writes these items to reward careful reading, not a memorized formula sheet. This guide gives a four-step reading protocol, formulas for every basic position, six traps that show up on nearly every form, and a practice loop that pairs with the [full 75-question SIE practice test](/mock-exams/sie-full-mock).",
+    "**Options questions on the FINRA SIE and Series 7 test careful reading as much as arithmetic.** Breakeven is just strike plus or minus premium; the errors come from misreading long vs short, mixing call and put formulas, or forgetting that one contract covers 100 shares. This guide shows where options sit in the official content outlines, a four-step way to read each item, the formulas for basic positions, spreads and straddles, and how to practise.",
   mockSlug: "sie-full-mock",
   deckSlug: "sie-exam-anki-deck",
   cta: {
@@ -22,65 +23,39 @@ export const finraOptionsQuestionsPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Four-Step Reading Protocol",
+      heading: "Where do options questions sit on the SIE and Series 7?",
       blocks: [
         {
-          type: "p",
-          text: "Before you touch a calculator or write a formula, do this:",
+          type: "table",
+          caption: "SIE content outline (finra.org, checked 24 Nov 2026)",
+          headers: ["Section", "Share of questions", "Questions"],
+          rows: [
+            ["1. Knowledge of Capital Markets", "16%", "12"],
+            ["2. Understanding Products and Their Risks", "44%", "33"],
+            ["3. Understanding Trading, Customer Accounts and Prohibited Activities", "31%", "23"],
+            ["4. Overview of Regulatory Framework", "9%", "7"],
+          ],
         },
         {
-          type: "steps",
-          items: [
-            {
-              title: "Step 1: Circle the position",
-              body: "Is the investor **long** or **short**? A long call has unlimited gain; a short call has unlimited loss. Miss “short” and you pick the opposite of the correct answer.",
-            },
-            {
-              title: "Step 2: Circle the option type",
-              body: "Is it a **call** or a **put**? Calls go up (“call up”); puts go down (“put down”). Call breakeven = strike + premium. Put breakeven = strike − premium. Mix them and every calculation is wrong.",
-            },
-            {
-              title: "Step 3: Separate the story from the question",
-              body: "FINRA loves scenarios: “A 65-year-old widow has $500,000 and wants income with limited risk. She buys 100 shares of XYZ at $50 and writes 1 XYZ Dec 55 call at $3.” Age and $500,000 are noise. The question is a **covered call**: long stock $50, short call $55, premium $3.",
-            },
-            {
-              title: "Step 4: Read all four answer choices before selecting",
-              body: "Never stop at B because it looks right. Attractive distractors sit early. Often two answers are clearly wrong and two are plausible — the difference is one word (“unlimited” vs “premium received,” or strike + vs strike −).",
-            },
-          ],
+          type: "p",
+          text: "The SIE has **75 multiple-choice questions** in **1 hour 45 minutes**, with a passing score of **70**, and costs **$100**. Options are one of the products in section 2, so expect them alongside equities, debt, packaged products and their risks, not as a section of their own.",
+        },
+        {
+          type: "p",
+          text: "The **Series 7** goes deeper. Its 125 scored items are split by job function, and F3 (providing information about investments, making recommendations, transferring assets and keeping records) carries **91** of them. FINRA lists options among the products a Series 7 holder may sell, and the SIE is a corequisite: you need both to get the General Securities registration.",
         },
       ],
     },
     {
-      heading: "The Six Traps That Appear on Every Exam",
+      heading: "How should you read an options question?",
       blocks: [
         {
-          type: "topics",
+          type: "steps",
           items: [
-            {
-              title: "Trap 1: EXCEPT and NOT",
-              body: "“All of the following are true EXCEPT…” — miss EXCEPT and you pick the one correct statement among three wrong ones. Rephrase: “Which one is false?”",
-            },
-            {
-              title: "Trap 2: The attractive distractor",
-              body: "A primary-market question with a perfect secondary-market description. Primary = new issues; secondary = existing securities. Read every word.",
-            },
-            {
-              title: "Trap 3: Absolute words — ALWAYS and NEVER",
-              body: "In securities law, absolutes are rarely correct. Do not auto-eliminate them, but treat them with extreme suspicion.",
-            },
-            {
-              title: "Trap 4: Confusing breakeven with max gain",
-              body: "Numbers look close. Label your answer before you look at choices: “This is the breakeven.”",
-            },
-            {
-              title: "Trap 5: Forgetting the multiplier",
-              body: "Premiums are per share; one contract = 100 shares. A $5 premium is $500. FINRA loves answers off by exactly 100×.",
-            },
-            {
-              title: "Trap 6: The covered call bait",
-              body: "The stem describes a covered call but asks for maximum loss. Candidates quote naked short-call risk (unlimited) instead of covered-call loss (stock cost − premium). “Covered” changes the risk profile completely.",
-            },
+            { title: "Mark the position", body: "Is the investor **long** or **short**? A long call has unlimited gain; a short call has unlimited loss. Swap them and you pick the mirror-image answer." },
+            { title: "Mark the option type", body: "**Call** or **put**? Call breakeven is strike + premium; put breakeven is strike − premium." },
+            { title: "Strip the story", body: "Ages, account sizes and goals often frame a suitability question; for a calculation, write down only the positions: long stock at $50, short 1 Dec 55 call at $3 is a covered call." },
+            { title: "Read all four answers", body: "Two choices are often close (breakeven vs maximum gain, strike + vs strike −). Label what you calculated before you look." },
           ],
         },
       ],
@@ -182,76 +157,59 @@ export const finraOptionsQuestionsPost: BlogPostDraft = {
       ],
     },
     {
-      heading: "Index Options vs. Equity Options",
+      heading: "Which reading slips cost the most?",
       blocks: [
         {
-          type: "p",
-          text: "Index options are **cash-settled** and typically **European-style** (exercisable only at expiration). Equity options are **physically settled** and usually **American-style** (exercisable anytime). If the stem mentions the S&P 500 or NYSE Composite, think index — cash settlement, not share delivery.",
+          type: "topics",
+          items: [
+            { title: "EXCEPT and NOT", body: "\"All of the following are true EXCEPT\" asks for the one false statement. Rephrase the stem before you answer." },
+            { title: "The 100-share multiplier", body: "Premiums are quoted per share and a standard equity option covers 100 shares, so a $5 premium is $500 per contract. Check whether the question asks per share or per contract." },
+            { title: "Covered vs naked", body: "A covered call's maximum loss is the stock cost minus the premium, not unlimited. \"Covered\" changes the risk completely." },
+            { title: "Breakeven vs maximum gain", body: "The numbers are often close. Decide which one the stem asks for before calculating." },
+          ],
         },
       ],
     },
     {
-      heading: "How to Practice Without Memorizing Answers",
+      heading: "How should you practise, and what if you fail?",
       blocks: [
         {
           type: "p",
-          text: "The worst habit is repeating the same 50-question quiz until “the covered-call answer is C.” On the real exam the wording changes; the concept does not.",
+          text: "Repeating the same quiz until you remember the letter teaches the letter. Mix new items, time yourself, and review every options miss by asking which of the four steps broke. Use the [full SIE practice exam](/mock-exams/sie-full-mock) for the products section and the [Series 7 readiness check](/mock-exams/series-7-readiness-check) for deeper options work, and drill the formulas with the [SIE Anki deck](/decks/sie-exam-anki-deck).",
         },
         {
-          type: "ol",
-          items: [
-            "Do the question. Time yourself: ~90 seconds per options item.",
-            "If wrong, do not read the explanation yet — re-solve from scratch.",
-            "Still wrong? Read the explanation and name the trap (long/short, call/put, multiplier).",
-            "Log the trap type. After 50 questions, your pattern is obvious.",
-            "Prefer unused questions. Repeated items inflate scores artificially.",
-          ],
+          type: "p",
+          text: "FINRA says that from **19 January 2027** the wait after a first or second failed attempt drops to **15 days** (from 30), and after a third to **60 days** (from 180). The [FINRA retake waiting period guide](/blog/finra-exam-retake-waiting-period-2027) covers the details.",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "What is the most common mistake on FINRA options questions?",
-      answer:
-        "Misreading “long” vs “short” or “call” vs “put.” Those four words determine the entire calculation. One error and every number is wrong.",
+      question: "How many questions are on the SIE, and what is the passing score?",
+      answer: "75 multiple-choice questions in 1 hour 45 minutes, with a passing score of 70 (FINRA, checked 24 Nov 2026).",
     },
     {
-      question: "How much time should I spend per options question?",
-      answer:
-        "About 90 seconds. Options items are calculation-heavy. If you are spending 3 minutes, you do not know the formula well enough — flag it and move on.",
+      question: "Where are options in the SIE content outline?",
+      answer: "Options are among the products in section 2, Understanding Products and Their Risks, which is 44% of the exam (33 of 75 questions).",
     },
     {
-      question: "Do I need to memorize all options formulas?",
-      answer:
-        "Yes. The four basic positions, spread acronyms (CAL, PSH, DEW, CVN), and straddle breakevens must be automatic. You do not have time to derive them during the exam.",
+      question: "What is the breakeven for a long call and a long put?",
+      answer: "Long call: strike + premium. Long put: strike − premium. The same breakevens apply to the short side of each position.",
     },
     {
       question: "What is the breakeven for a covered call?",
-      answer:
-        "Effective cost basis of the stock minus premium received. Buy stock at $50 and sell a $55 call for $3 → breakeven $47. Max gain is capped at $8 per share ($5 appreciation + $3 premium).",
+      answer: "The stock purchase price minus the premium received. Maximum loss is that same amount (per share), and maximum gain is the strike minus the stock price plus the premium.",
     },
     {
-      question: "Are there many math questions on the SIE exam?",
-      answer:
-        "The SIE trends toward fewer calculations and more conceptual items. Options still require math for max gain/loss/breakeven. Do not skip the formulas.",
+      question: "Do I need the SIE to take the Series 7?",
+      answer: "Yes. FINRA makes the SIE a corequisite: you must pass both to get the General Securities Representative registration.",
     },
     {
-      question: "What does “cash-settled” mean for index options?",
-      answer:
-        "No shares change hands. If an index option expires in-the-money, the writer pays the holder the cash difference between the strike and the index value.",
-    },
-    {
-      question: "What is the difference between American and European-style options?",
-      answer:
-        "American-style (most equity options) can be exercised anytime before expiration. European-style (most index options) only at expiration. That affects early exercise strategy and time value.",
-    },
-    {
-      question: "How do I avoid the “EXCEPT” trap?",
-      answer:
-        "When you see EXCEPT or NOT, rephrase before reading answers: “Which of the following is false?” That forces you to look for the outlier.",
+      question: "How long do I wait to retake a FINRA exam?",
+      answer: "Currently 30 days after the first and second failed attempts and 180 days after the third. From 19 January 2027 FINRA reduces these to 15 and 60 days.",
     },
   ],
   bottomLine:
-    "FINRA options questions are reading comprehension tests with numbers. The math is simple addition and subtraction. The trap is in the wording. Read the position first, the option type second, ignore the story, and label your calculation before you look at the choices. Do that every time and you separate yourself from candidates who rush, guess, and retake.",
+    "Mark long or short, mark call or put, strip the story, and label your answer before you read the choices. Sources: [FINRA SIE exam](https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam) and [FINRA Series 7 exam](https://www.finra.org/registration-exams-ce/qualification-exams/series7), checked 24 Nov 2026.",
 };
