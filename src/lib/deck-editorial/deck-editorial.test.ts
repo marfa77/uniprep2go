@@ -1,0 +1,63 @@
+import { describe, expect, it } from "vitest";
+import { getDeckBySlug } from "@/lib/decks";
+import { getBlogPostBySlug } from "@/lib/blog";
+import { getMockExamConfig } from "@/lib/mock-exams/configs";
+import { getMockEditorialBundle } from "@/lib/mock-exams/editorial";
+import { deckEditorialSlugs, getDeckEditorialBundle } from "./index";
+
+function deckText(slug: string): string[] {
+  const bundle = getDeckEditorialBundle(slug)!;
+  return bundle.sections.flatMap((s) => [...s.paragraphs, ...(s.bullets ?? [])]);
+}
+
+function wordCount(parts: string[]): number {
+  return parts
+    .join(" ")
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/\*+/g, "")
+    .split(/\s+/)
+    .filter(Boolean).length;
+}
+
+describe("deck editorial blocks", () => {
+  it.each(deckEditorialSlugs())("%s is a 250–400 word deck block on an existing deck", (slug) => {
+    const bundle = getDeckEditorialBundle(slug)!;
+    expect(getDeckBySlug(slug), slug).toBeTruthy();
+    const headings = bundle.sections.map((s) => s.heading);
+    const words = wordCount([...headings, ...deckText(slug)]);
+    expect(words).toBeGreaterThanOrEqual(250);
+    expect(words).toBeLessThanOrEqual(400);
+    expect(headings.every((h) => !h.includes("2026"))).toBe(true);
+    expect(bundle.sources.length).toBeGreaterThanOrEqual(1);
+  });
+
+  it.each(deckEditorialSlugs())("%s links to the mock for exam facts and only to real pages", (slug) => {
+    const bundle = getDeckEditorialBundle(slug)!;
+    const links = [...deckText(slug).join(" ").matchAll(/\]\((\/[^)\s]+)\)/g)].map((m) => m[1]);
+    if (bundle.mockSlug) expect(links).toContain(`/mock-exams/${bundle.mockSlug}`);
+    for (const href of links) {
+      const [, kind, target] = href.split("/");
+      if (kind === "mock-exams") expect(getMockExamConfig(target), href).toBeTruthy();
+      else if (kind === "decks") expect(getDeckBySlug(target), href).toBeTruthy();
+      else if (kind === "blog") expect(getBlogPostBySlug(target), href).toBeTruthy();
+      else throw new Error(`Unexpected internal link ${href}`);
+    }
+  });
+
+  it.each(deckEditorialSlugs())("%s never repeats a mock-page paragraph", (slug) => {
+    const bundle = getDeckEditorialBundle(slug)!;
+    if (!bundle.mockSlug) return;
+    const mock = getMockEditorialBundle(bundle.mockSlug);
+    if (!mock) return;
+    const mockParts = new Set(mock.sections.flatMap((s) => [...s.paragraphs, ...(s.bullets ?? [])]));
+    for (const part of deckText(slug)) expect(mockParts.has(part)).toBe(false);
+  });
+
+  it("batch 1 deck blocks map cards to each official outline", () => {
+    expect(deckText("sat-anki-deck").join(" ")).toContain("Standard English Conventions");
+    expect(deckText("series-7-anki-deck").join(" ")).toContain("**Function 3 (91 items):**");
+    expect(deckText("pmp-anki-deck").join(" ")).toContain("**Process (41%):**");
+    expect(deckText("cfa-level-1-anki-deck").join(" ")).toContain("Ethical and Professional Standards (10–15%)");
+    expect(deckText("mrics-anki-deck").join(" ")).toContain("60-minute interview");
+  });
+});
