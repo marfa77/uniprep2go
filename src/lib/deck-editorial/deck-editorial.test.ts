@@ -76,6 +76,14 @@ describe("deck editorial blocks", () => {
     expect(deckText("ptcb-pharmacy-technician-anki-deck").join(" ")).toContain("**Medications (35%):**");
   });
 
+  it("batch 3 deck blocks map cards to each official outline", () => {
+    expect(deckText("gre-anki-deck").join(" ")).toContain("1 hour 58 minutes");
+    expect(deckText("servsafe-manager-anki-deck").join(" ")).toContain("56 correct");
+    expect(deckText("hvac-epa-608-anki-deck").join(" ")).toContain("25 questions from the Core group");
+    expect(deckText("leed-green-associate-anki-deck").join(" ")).toContain("LEED v5");
+    expect(deckText("sie-exam-anki-deck").join(" ")).toContain("Understanding Products and Their Risks");
+  });
+
   it("batch 4 deck blocks map cards to each official outline", () => {
     expect(deckText("cdcp-anki-deck").join(" ")).toContain("27 correct");
     expect(deckText("series-63-anki-deck").join(" ")).toContain("43 correct");
