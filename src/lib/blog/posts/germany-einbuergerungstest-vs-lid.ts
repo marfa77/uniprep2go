@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
   slug: "germany-einbuergerungstest-vs-leben-in-deutschland-difference",
   title: "Germany Einbürgerungstest vs Leben in Deutschland: Same Test, Different Paperwork",
-  titleTag: "Germany Einbürgerungstest vs Leben in Deutschland: Difference & Format 2026",
+  titleTag: "Germany Einbürgerungstest vs Leben in Deutschland: Difference & Format 2027",
   metaDescription:
     "They are the same 33 questions. But one gets you citizenship. The other gets you a residence permit. Here is the exact difference, the €25 fee, and why your test centre matters.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Germany · Einbürgerungstest / Leben in Deutschland",
   clusterId: "leben-in-deutschland",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
     "spain-citizenship-ccse-dele-a2-two-exams",
   ],
   intro:
-    "**Search for the German citizenship test and you will find two names: Einbürgerungstest and Leben in Deutschland.** Same ~300-question BAMF bank. Same 33-question format. Same administrator. They are still not interchangeable paperwork. One is framed for citizenship; the other for permanent residence / integration courses. Sign up under the wrong title and you may spend weeks explaining to a Beamter why your certificate says the “wrong” name. This guide covers the exact difference, the registration trap, and how to study when most questions come from a free public database.",
+    "**Germany has two names for its civics test: the Einbürgerungstest and Leben in Deutschland.** Both use the same BAMF question catalogue, and both can prove the civics knowledge you need for naturalisation with at least 17 of 33. The difference is the route: one is the naturalisation test at a BAMF test centre, the other the final test of the integration course. This guide sets out what is the same, what differs, and how to study, all from BAMF.",
   mockSlug: "leben-in-deutschland-readiness-check",
   deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Leben in Deutschland Anki deck ($9.99)",
+    deckLabel: "Get the Leben in Deutschland Anki deck",
     summary:
-      "Drill BAMF themes with the free Leben in Deutschland readiness check (Prep2Go-sourced). Then lock the catalog with the $9.99 Leben in Deutschland Anki deck before your VHS sitting — and browse Prep2Go for related immigration decks.",
+      "Drill BAMF themes with the free Leben in Deutschland readiness check. Then review the catalogue daily with the Leben in Deutschland Anki deck before your test, and browse Prep2Go for related immigration decks.",
     extraLinks: [
       {
         href: "https://www.prep2go.study",
@@ -40,195 +41,131 @@ export const germanyEinbuergerungstestVsLidPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "What Is Actually the Same",
+      heading: "What do the two tests have in common?",
       blocks: [
         {
-          type: "table",
-          caption: "Shared mechanics",
-          headers: ["Detail", "Specification"],
-          rows: [
-            ["Total questions", "33 multiple-choice (4 options, 1 correct)"],
-            ["Breakdown", "30 general + 3 state-specific (Bundesland)"],
-            ["Time limit", "60 minutes"],
-            ["Passing score", "17 correct out of 33 (~52%) for citizenship"],
-            ["Exam fee", "~€25"],
-            ["Language", "German only (B1 reading level)"],
-            ["Question bank", "~300 general + ~10 per state, published free by BAMF"],
-            ["Administered by", "BAMF (Federal Office for Migration and Refugees)"],
-          ],
+          type: "p",
+          text: "Both draw on the same BAMF question catalogue, the **Gesamtfragenkatalog** for \"Leben in Deutschland\" and the Einbürgerungstest. BAMF describes the Einbürgerungstest like this:",
         },
         {
-          type: "p",
-          text: "The 30 general questions cover politics and democracy, the Basic Law (Grundgesetz), history (National Socialism, division/reunification, Berlin Wall), rights and duties, society and daily life, federalism, and the EU. The 3 state questions come from a pool of roughly 10 per Bundesland — local government, geography, and regional specifics.",
+          type: "table",
+          caption: "Einbürgerungstest (BAMF, checked 24 Nov 2026)",
+          headers: ["Detail", "Rule"],
+          rows: [
+            ["Questions", "33, each with four answer options"],
+            ["Time", "60 minutes"],
+            ["To pass", "At least 17 correct"],
+            ["Content", "30 questions on \"Leben in der Demokratie\", \"Geschichte und Verantwortung\" and \"Mensch und Gesellschaft\", plus 3 on your federal state"],
+            ["Question pool", "310 per test: 300 general and 10 for your federal state"],
+            ["Fee", "€25"],
+          ],
         },
       ],
     },
     {
-      heading: "What Is Actually Different",
+      heading: "So what is different?",
       blocks: [
         {
           type: "table",
           caption: "Einbürgerungstest vs Leben in Deutschland",
           headers: ["", "Einbürgerungstest", "Leben in Deutschland"],
           rows: [
-            ["Purpose", "Citizenship (Einbürgerung)", "Permanent residence (Niederlassungserlaubnis)"],
-            ["Who takes it", "Naturalisation applicants", "Integration course participants seeking PR"],
-            ["Registration", "Individual, any time", "Through your integration course provider"],
-            [
-              "Certificate title",
-              "«Einbürgerungstest bestanden»",
-              "«Leben in Deutschland — bestanden»",
-            ],
-            ["Use for citizenship?", "Yes", "Yes (content identical)"],
-            ["Use for PR?", "Yes", "Yes"],
-            [
-              "Integration course certificate",
-              "No",
-              "Yes (if taken as part of the course)",
-            ],
+            ["Purpose", "The naturalisation test", "The final test of the integration course's orientation part"],
+            ["Where you take it", "BAMF test centres (Prüfstellen) in your federal state", "As part of the integration course"],
+            ["What you get", "A BAMF certificate (Bescheinigung) with your result", "The result counts towards the Zertifikat Integrationskurs"],
+            ["Counts for naturalisation", "Yes, with at least 17 correct", "Yes, via the Zertifikat Integrationskurs, with at least 17 of 33 points"],
           ],
         },
         {
           type: "p",
-          text: "**Critical:** Leben in Deutschland is tied to the Integrationskurs. Passing via your course provider contributes to course completion. Einbürgerungstest is standalone — you register yourself at a Volkshochschule (VHS) or authorised centre.",
-        },
-        {
-          type: "p",
-          text: "**Paperwork trap:** many offices accept either certificate because the questions match. A picky Ausländerbehörde may still ask why your file shows «Leben in Deutschland» instead of «Einbürgerungstest.» Naturalisation applicants should register under **Einbürgerungstest** when they have a choice.",
+          text: "If you have already taken the integration course and scored at least 17 of 33 in Leben in Deutschland, BAMF says your Zertifikat Integrationskurs can prove the civics knowledge for naturalisation; you do not need a separate Einbürgerungstest. The same certificate proves B1 German if you reached B1 in the Deutsch-Test für Zuwanderer.",
         },
       ],
     },
     {
-      heading: "Who Needs Which Test",
-      blocks: [
-        {
-          type: "table",
-          caption: "Situation → test",
-          headers: ["Your situation", "Test required", "Notes"],
-          rows: [
-            [
-              "Applying for citizenship",
-              "Einbürgerungstest",
-              "Mandatory unless exempt",
-            ],
-            [
-              "Applying for permanent residence",
-              "Leben in Deutschland or Einbürgerungstest",
-              "Either is usually accepted",
-            ],
-            [
-              "Completed integration course",
-              "Leben in Deutschland",
-              "Usually taken as course finale",
-            ],
-            [
-              "Did not attend integration course",
-              "Einbürgerungstest",
-              "Register individually at VHS",
-            ],
-          ],
-        },
-      ],
-    },
-    {
-      heading: "The B1 Language Requirement (Separate and Harder)",
+      heading: "Who has to take the Einbürgerungstest?",
       blocks: [
         {
           type: "p",
-          text: "This is a **content** test in German, not a language exam. You need B1 reading to understand the questions — but citizenship still requires a separate B1 certificate (Goethe, telc, ÖSD, TestDaF, DSH, etc.). Passing Einbürgerungstest does **not** replace the language certificate. You need both.",
+          text: "Everyone applying for German citizenship must show knowledge of the legal and social order and living conditions in Germany, normally through the test. BAMF lists two exceptions:",
         },
-        {
-          type: "p",
-          text: "**Exception:** a German school-leaving certificate (Hauptschulabschluss or higher) may exempt you from both language proof and the civics test. Confirm with your local Einbürgerungsbehörde.",
-        },
-      ],
-    },
-    {
-      heading: "How to Study: The Free Database",
-      blocks: [
-        {
-          type: "p",
-          text: "BAMF publishes the complete question catalog free online — the actual pool, not a summary. Roughly 300 general questions plus ~10 state-specific items per Bundesland.",
-        },
-        {
-          type: "ol",
-          items: [
-            "Download the BAMF question catalog in German",
-            "Read through all ~300 general questions once",
-            "Build flashcards for every question you miss on the first pass",
-            "Drill your state’s ~10 questions until automatic",
-            "Take 2–3 timed 33-question mocks (60 minutes, no notes)",
-          ],
-        },
-        {
-          type: "p",
-          text: "**The ~52% pass mark is deceptive.** State and history items are specific: Basic Law adopted in 1949; 5% hurdle for the Bundestag; Chancellor elected by the Bundestag. Hover at 15–16 correct and you fail by one question.",
-        },
-      ],
-    },
-    {
-      heading: "Registration and Logistics",
-      blocks: [
         {
           type: "ul",
           items: [
-            "**Where:** Volkshochschule (VHS), BAMF-authorised adult education centres, some municipal centres",
-            "**Bring:** valid photo ID (passport or residence permit), registration confirmation, ~€25 fee",
-            "**Results:** often immediate on computer-based sittings; official certificate by post within ~2–4 weeks",
+            "you have a German school-leaving qualification, or",
+            "you cannot meet the requirement because of a physical, mental or psychological illness, a disability, or your age.",
           ],
+        },
+      ],
+    },
+    {
+      heading: "What else does naturalisation require?",
+      blocks: [
+        {
+          type: "p",
+          text: "The test is one of several conditions BAMF lists for a legal right to naturalisation, including:",
+        },
+        {
+          type: "ul",
+          items: [
+            "**five years** of habitual, regular residence in Germany",
+            "**German at B1** level",
+            "a clarified identity and nationality, and a suitable residence status",
+            "supporting yourself without Bürgergeld or other SGB II or XII benefits",
+            "no criminal conviction, and commitments to the free democratic basic order and to Germany's historical responsibility",
+          ],
+        },
+        {
+          type: "p",
+          text: "Naturalisation costs **€255 per person**, or **€51** for a minor child naturalised with their parents. Your local naturalisation authority (Einbürgerungsbehörde) can advise on exceptions.",
+        },
+      ],
+    },
+    {
+      heading: "How should you study and register?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Work through the official catalogue", body: "BAMF's Online-Testcenter shows the correct answer after each question. The full catalogue and a sample paper (Mustertestbogen) are free as PDFs." },
+            { title: "Learn your state's 10 questions", body: "Three of your 33 questions come from the federal state where your main residence is registered." },
+            { title: "Practise under time", body: "Take the [Leben in Deutschland readiness check](/mock-exams/leben-in-deutschland-readiness-check) and review with the [Leben in Deutschland Anki deck](/decks/leben-in-deutschland-anki-deck)." },
+            { title: "Register at a Prüfstelle", body: "Your naturalisation authority can name test centres nearby; BAMF lists them by state. Bring valid photo ID. If you score under 17, you can retake the test." },
+          ],
+        },
+        {
+          type: "p",
+          text: "Studying in English? See the [Leben in Deutschland English preparation guide](/blog/leben-in-deutschland-test-english-preparation-guide).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "What is the difference between Einbürgerungstest and Leben in Deutschland?",
-      answer:
-        "Same questions, different administrative contexts. Einbürgerungstest is the individual citizenship registration path. Leben in Deutschland is typically taken through an integration course. Both certificates are generally valid for citizenship and permanent residence — local offices may still prefer the Einbürgerungstest title for naturalisation.",
+      question: "What is the difference between the Einbürgerungstest and Leben in Deutschland?",
+      answer: "The Einbürgerungstest is the naturalisation test taken at a BAMF test centre; Leben in Deutschland is the final test of the integration course. Both use the same BAMF catalogue, and both can count for naturalisation with at least 17 of 33.",
     },
     {
-      question: "How many questions are on the German citizenship test?",
-      answer:
-        "33 multiple-choice: 30 general German civics and 3 specific to your federal state. Time limit is 60 minutes.",
+      question: "How many questions are on the Einbürgerungstest?",
+      answer: "33 questions with four answer options each, in 60 minutes (BAMF, checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for the Einbürgerungstest?",
-      answer: "17 correct answers out of 33 (~52%) for citizenship applications.",
+      question: "What score do I need?",
+      answer: "At least 17 of 33 correct.",
     },
     {
-      question: "How much does the German citizenship test cost?",
-      answer: "Approximately €25. Some centres add a small administrative fee.",
+      question: "How much does the test cost?",
+      answer: "The Einbürgerungstest costs €25. Naturalisation itself costs €255 per person, or €51 for a minor naturalised with their parents.",
     },
     {
-      question: "Is the German citizenship test in English?",
-      answer:
-        "No. German only. You need B1 reading comprehension to understand the questions.",
+      question: "Can I use my Leben in Deutschland result for citizenship?",
+      answer: "Yes. BAMF says the Zertifikat Integrationskurs proves the civics knowledge if you scored at least 17 of 33 points in Leben in Deutschland.",
     },
     {
-      question: "Can I use a Leben in Deutschland certificate for citizenship?",
-      answer:
-        "Usually yes, because the content matches. Some local offices prefer an Einbürgerungstest certificate — if you can choose, register under that name for naturalisation.",
-    },
-    {
-      question: "How long is the Einbürgerungstest certificate valid?",
-      answer: "There is generally no expiration date once you pass.",
-    },
-    {
-      question: "Can I retake the Einbürgerungstest if I fail?",
-      answer:
-        "Yes. No fixed retake limit. Pay again and book the next available date.",
-    },
-    {
-      question: "Where can I find the official questions?",
-      answer:
-        "BAMF publishes the complete catalog free. Search for «Fragenkatalog Einbürgerungstest BAMF.»",
-    },
-    {
-      question: "How long should I study for the German citizenship test?",
-      answer:
-        "About 2–4 weeks part-time if your German is already B1. Add language study time if you are below B1. Content is manageable; legal vocabulary needs familiarity.",
+      question: "Can I retake the Einbürgerungstest?",
+      answer: "Yes. BAMF says that if you answer fewer than 17 questions correctly, you can repeat the test.",
     },
   ],
   bottomLine:
-    "Einbürgerungstest and Leben in Deutschland are twins with different birth certificates. Same questions; different titles. Applying for citizenship? Prefer Einbürgerungstest to avoid paperwork friction. In an integration course? Take Leben in Deutschland as the course finale. Either way: study the free BAMF catalog, memorise your state’s questions, and do not let the 52% pass mark fool you — one state miss can mean a retake instead of a passport.",
+    "Same catalogue, different route: take the Einbürgerungstest at a BAMF test centre, or use a Leben in Deutschland result of at least 17 of 33 from your integration course. Sources: [BAMF — Einbürgerung](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html), [BAMF Online-Testcenter](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/OnlineTestcenter/online-testcenter-node.html) and [Gesamtfragenkatalog](https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html), checked 24 Nov 2026.",
 };
