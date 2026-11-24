@@ -3,10 +3,11 @@ import type { BlogPostDraft } from "../types";
 export const spainCitizenshipCcseDelePost: BlogPostDraft = {
   slug: "spain-citizenship-ccse-dele-a2-two-exams",
   title: "Spain Citizenship: Two Exams, Not One",
-  titleTag: "Spain Citizenship Exams 2026: CCSE vs DELE A2 & How to Pass Both",
+  titleTag: "Spain Citizenship Exams 2027: CCSE vs DELE A2 & How to Pass Both",
   metaDescription:
     "Spain makes you pass two separate exams: CCSE for civics and DELE A2 for language. Here is the exact format, the €85 vs €130 cost, and why failing one skill on DELE forces a full retake.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Spain · CCSE + DELE A2",
   clusterId: "spain-citizenship",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const spainCitizenshipCcseDelePost: BlogPostDraft = {
     "belgium-citizenship-test-flanders-vs-wallonia",
   ],
   intro:
-    "**Most European countries ask for one gate: language, civics, or a course. Spain asks for two** — both under Instituto Cervantes. CCSE proves constitution, history, and culture. DELE A2 proves basic Spanish. Different formats, fees, calendars, and retake rules. Mix them up and your file stalls for months. This guide puts both exams side by side, lists common exemptions, and explains the DELE scoring trap that forces full retakes.",
+    "**Spanish nationality by residence usually means two Instituto Cervantes exams: the CCSE on the Constitution and Spanish society, and the DELE in Spanish.** Registration for the ten 2027 CCSE sittings opened on 23 November 2026. This guide covers what the CCSE tests, the official 2027 calendar, the official preparation material, and where the DELE fits.",
   mockSlug: "ccse-espana-readiness-check",
   deckSlug: "dele-a2-spanish-anki-deck",
   cta: {
     mockLabel: "Take the free CCSE España readiness check",
     deckLabel: "Get the DELE A2 deck on Prep2Go",
     summary:
-      "Drill civics with the free CCSE readiness check (Prep2Go-sourced). Build DELE A2 vocabulary with the DELE A2 deck on Prep2Go and drill CCSE civics with the CCSE España Anki deck before you pay ~€215 for both official exams.",
+      "Drill civics with the free CCSE readiness check. Build Spanish vocabulary with the DELE A2 deck on Prep2Go, and review CCSE themes with the CCSE España Anki deck before your Instituto Cervantes sitting.",
     extraLinks: [
       {
         href: "/decks/ccse-espana-anki-deck",
@@ -40,219 +41,103 @@ export const spainCitizenshipCcseDelePost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Two-Exam Requirement",
+      heading: "What are the two exams?",
       blocks: [
+        {
+          type: "p",
+          text: "Spanish nationality by residence usually involves two separate proofs from the Instituto Cervantes: the **CCSE** (Conocimientos Constitucionales y Socioculturales de España), and the **DELE** Spanish language diploma. The Instituto Cervantes says passing the CCSE is a legal requirement for acquiring nationality for residents of Spain, in certain cases. Which proofs apply to you, and any exemptions, are set by Spain's Ministry of Justice, so check its nationality pages for your situation.",
+        },
+      ],
+    },
+    {
+      heading: "What does the CCSE test?",
+      blocks: [
+        {
+          type: "p",
+          text: "The CCSE is written by the Instituto Cervantes and assesses, through different tasks, knowledge of the Spanish Constitution and of Spain's social and cultural reality. Its content draws on the Common European Framework of Reference, the Spanish Constitution and other public-administration sources, and the cultural inventories in the Instituto Cervantes curriculum plan.",
+        },
+      ],
+    },
+    {
+      heading: "When are the CCSE sittings in 2027?",
+      blocks: [
+        {
+          type: "p",
+          text: "Registration for the 2027 exams opened on **23 November 2026**. Each sitting has a registration deadline, then an appointment window ending on the official exam date:",
+        },
         {
           type: "table",
-          caption: "CCSE vs DELE A2",
-          headers: ["", "CCSE", "DELE A2"],
+          caption: "CCSE 2027 calendar (Instituto Cervantes, checked 24 Nov 2026)",
+          headers: ["Sitting", "Registration closes", "Appointments", "Official date"],
           rows: [
-            [
-              "Full name",
-              "Conocimientos Constitucionales y Socioculturales de España",
-              "Diploma de Español como Lengua Extranjera",
-            ],
-            [
-              "What it tests",
-              "Constitution, government, culture, history, daily life",
-              "Spanish: reading, writing, listening, speaking",
-            ],
-            [
-              "Format",
-              "25 MCQ / true-false",
-              "4 sections with multiple tasks",
-            ],
-            ["Duration", "45 minutes", "~2.5–3 hours"],
-            [
-              "Passing score",
-              "15/25 (60%)",
-              "104/200 overall + group mins + per-skill mins",
-            ],
-            [
-              "Cost",
-              "€85 (includes 2 attempts)",
-              "~€130–€138 (1 attempt)",
-            ],
-            [
-              "Frequency",
-              "Last Thursday most months (not Aug/Dec)",
-              "Fixed dates through the year",
-            ],
-            ["Validity", "4 years", "Lifetime"],
-            [
-              "Exemptions",
-              "Minors, legal incapacity, ESO in Spain",
-              "Spanish-speaking nationals, higher DELE, ESO in Spain",
-            ],
+            ["January", "7 Jan", "14–28 Jan", "28 Jan"],
+            ["February", "4 Feb", "11–25 Feb", "25 Feb"],
+            ["March", "25 Feb", "4–18 Mar", "18 Mar"],
+            ["April", "8 Apr", "15–29 Apr", "29 Apr"],
+            ["May", "6 May", "13–27 May", "27 May"],
+            ["June", "3 Jun", "10–24 Jun", "24 Jun"],
+            ["July", "8 Jul", "15–29 Jul", "29 Jul"],
+            ["September", "9 Sep", "16–30 Sep", "30 Sep"],
+            ["October", "7 Oct", "14–28 Oct", "28 Oct"],
+            ["November", "4 Nov", "11–25 Nov", "25 Nov"],
           ],
         },
         {
           type: "p",
-          text: "**Critical:** CCSE includes a free second attempt within ~18 months. DELE does not. Schedule DELE first — higher retake cost and longer score wait.",
+          text: "There is no August or December sitting in 2027. The last 2026 sitting is on 26 November 2026.",
         },
       ],
     },
     {
-      heading: "CCSE: The Easier Half",
+      heading: "How should you prepare for the CCSE?",
       blocks: [
         {
-          type: "p",
-          text: "CCSE draws from a published bank of roughly 300 questions. Instituto Cervantes publishes the Manual CCSE free — study it and you will recognise exam items.",
-        },
-        {
-          type: "ul",
+          type: "steps",
           items: [
-            "~60% government, constitution, rights and duties",
-            "~40% culture, history, and society",
-            "Sample: “What is the name of the Spanish Parliament?” → Las Cortes Generales",
-            "Pass: 15/25. Most prepared candidates pass first try",
-            "Register at examenes.cervantes.es; book 4–5 weeks ahead",
+            { title: "Use the official manual", body: "The Instituto Cervantes publishes a CCSE preparation manual (the current one is the 2026 manual)." },
+            { title: "Practise on the official app", body: "\"CCSE Nacionalidad Española\" is the Instituto Cervantes' free app for Android and iOS." },
+            { title: "Test yourself under time", body: "Try the [CCSE España readiness check](/mock-exams/ccse-espana-readiness-check) and review your misses against the manual." },
+            { title: "Book early", body: "Registration closes about three weeks before each official date." },
           ],
         },
       ],
     },
     {
-      heading: "DELE A2: The Trap Is in the Scoring",
+      heading: "What about the DELE?",
       blocks: [
-        {
-          type: "table",
-          caption: "DELE A2 sections",
-          headers: ["Section", "Time", "Points", "Minimum to pass"],
-          rows: [
-            ["Reading comprehension", "60 min", "25", "6.25"],
-            ["Written expression", "45 min", "25", "6.25"],
-            ["Listening comprehension", "40 min", "25", "6.25"],
-            ["Oral expression", "~15 min", "25", "6.25"],
-          ],
-        },
         {
           type: "p",
-          text: "**Three gates:** (1) overall 104/200, (2) 30/50 in Grupo 1 (Reading+Listening) and 30/50 in Grupo 2 (Writing+Speaking), (3) 6.25/25 in every skill. Fail any gate → fail the exam. Score 24/25 on three skills and 5/25 on speaking → fail.",
-        },
-        {
-          type: "p",
-          text: "**Listening trap:** distractors reuse audio keywords in the wrong context. Keyword-matching without meaning fails. Results often take 2–3 months; physical diplomas longer. Book DELE ~6 months before your filing target.",
-        },
-      ],
-    },
-    {
-      heading: "Who Is Exempt (And Who Is Not)",
-      blocks: [
-        {
-          type: "topics",
-          items: [
-            {
-              title: "Exempt from DELE A2",
-              body: "Nationals of Spanish-speaking countries (Ibero-America list), holders of DELE B1+, and ESO completers in Spain.",
-            },
-            {
-              title: "Exempt from both CCSE and DELE",
-              body: "Minors under 18, people with documented modified legal capacity, ESO completers in Spain.",
-            },
-            {
-              title: "Not exempt from CCSE",
-              body: "Ibero-American nationals still take CCSE even when DELE is waived. A Latin American passport does not skip both exams.",
-            },
-          ],
-        },
-      ],
-    },
-    {
-      heading: "Residency Rules Before You Book Exams",
-      blocks: [
-        {
-          type: "table",
-          caption: "Residence clocks",
-          headers: ["Category", "Residency required"],
-          rows: [
-            ["Standard naturalisation", "10 years"],
-            ["Refugees", "5 years"],
-            [
-              "Ibero-American, Andorra, Philippines, Equatorial Guinea, Portugal, Sephardic origin",
-              "2 years",
-            ],
-          ],
-        },
-        {
-          type: "p",
-          text: "Do not sit exams years early without a plan — CCSE expires in 4 years; DELE is lifetime. The 2-year path requires legal, continued residency immediately prior to filing. Student/tourist gaps can reset the clock — verify with counsel.",
-        },
-      ],
-    },
-    {
-      heading: "Study Timeline",
-      blocks: [
-        {
-          type: "topics",
-          items: [
-            {
-              title: "Month 1: DELE A2",
-              body: "Below A1? Study Spanish first. At A1–A2, book DELE for Month 3. Spend ~40% of time on Listening. Tutor speaking 2×/week.",
-            },
-            {
-              title: "Month 2: CCSE + DELE polish",
-              body: "Read the free CCSE Manual. 3–4 practice tests targeting 20/25. DELE timed mock — every skill above 6.25/25.",
-            },
-            {
-              title: "Month 3: Exams",
-              body: "DELE first, CCSE 2–4 weeks later. Pass both, then assemble the file.",
-            },
-          ],
+          text: "The DELE is the Instituto Cervantes' Spanish diploma, run separately from the CCSE. Check with the Ministry of Justice which level you need and whether you are exempt, then book a DELE session through the Instituto Cervantes. For vocabulary, use the [DELE A2 Spanish deck](/decks/dele-a2-spanish-anki-deck).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "Do I need to pass both CCSE and DELE A2 for Spanish citizenship?",
-      answer:
-        "Yes in most cases. CCSE is civics; DELE A2 is language. They are independent — retake only the one you fail.",
+      question: "What is the CCSE?",
+      answer: "The Instituto Cervantes' test of knowledge of the Spanish Constitution and of Spain's social and cultural reality, required for nationality by residence in certain cases (checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for the CCSE exam?",
-      answer:
-        "15 of 25 (60%) in 45 minutes. Results often appear ~20 days after the sitting.",
+      question: "When can I take the CCSE in 2027?",
+      answer: "Ten sittings, from 28 January to 25 November 2027, with none in August or December. Registration for 2027 opened on 23 November 2026.",
     },
     {
-      question: "What is the passing score for DELE A2?",
-      answer:
-        "104/200 overall, plus 30/50 in each group, plus 6.25/25 in every skill. One weak skill fails the exam.",
+      question: "How far ahead must I register?",
+      answer: "Registration closes about three weeks before each official date; for example, 7 January for the 28 January sitting.",
     },
     {
-      question: "How much do the Spanish citizenship exams cost?",
-      answer:
-        "CCSE ~€85 (includes a free second attempt within ~18 months). DELE A2 ~€130–€138 per attempt.",
+      question: "What official study material is there?",
+      answer: "The Instituto Cervantes' CCSE preparation manual (2026 edition) and its free app, CCSE Nacionalidad Española.",
     },
     {
-      question: "Can I take the CCSE exam in English?",
-      answer:
-        "No. Both exams are in Spanish. CCSE uses simpler Spanish, but you still need basic reading comprehension.",
+      question: "Do I need both the CCSE and the DELE?",
+      answer: "Often, but the Ministry of Justice sets who must take which and who is exempt. Check its nationality pages for your case.",
     },
     {
-      question: "How long are CCSE and DELE results valid?",
-      answer: "CCSE ~4 years. DELE A2 generally lifetime.",
-    },
-    {
-      question: "Do Spanish-speaking Latin Americans need DELE A2?",
-      answer:
-        "Usually no for DELE. They still need CCSE unless exempt (e.g. ESO in Spain).",
-    },
-    {
-      question: "What happens if I fail the CCSE?",
-      answer:
-        "The fee typically includes a second attempt at the same centre within ~18 months. After two fails, re-register and pay again.",
-    },
-    {
-      question: "What happens if I fail the DELE A2?",
-      answer:
-        "Re-register for a future date and pay the full fee again. No free retake.",
-    },
-    {
-      question: "How long does it take to get DELE A2 results?",
-      answer:
-        "Often 2–3 months online; physical diploma can take longer. Plan filing around that lag.",
+      question: "Where do I see my CCSE results?",
+      answer: "In your personal space on the Instituto Cervantes website, where you can also download certificates.",
     },
   ],
   bottomLine:
-    "Spain runs two gauntlets. CCSE is a memory test with a published bank — easy if you study the manual. DELE A2 has three scoring gates — hard if one skill is weak. Book DELE first. Pass both, then file. Bureaucracy does not accept “I am taking the test next month” as proof.",
+    "Book your CCSE sitting early, study the official manual and app, and confirm your DELE requirement with the Ministry of Justice. Sources: [Instituto Cervantes — Prueba CCSE](https://cervantes.org/es/examenes/ccse) and [Instituto Cervantes FAQ](https://cervantes.org/es/preguntas-frecuentes), checked 24 Nov 2026.",
 };
