@@ -7,6 +7,7 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   metaDescription:
     "Flanders has a social orientation test. Wallonia does not. Brussels is a mix. Here is the exact integration requirement by region, the language level hike to B1, and why Belgium has three citizenship systems in one country.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "Belgium · Flanders vs Wallonia",
   clusterId: "belgium-citizenship",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
     "france-naturalization-2026-civic-exam-b2-language-test",
   ],
   intro:
-    "**Belgium is not one country when it comes to citizenship — it is three.** The federal government writes nationality law; the regions run integration, and they disagree on what “integration” means. Flanders: social orientation course + Dutch test. Wallonia: French certificate, no standardised civic exam. Brussels: you choose. And as of 2026 the federal government is pushing tighter rules: B1 language, a possible national civic test, and a €1,030 fee. This guide maps the regional maze today, what is coming, and what you need to file in your commune.",
+    "**In Belgium, integration is regional.** Flanders' inburgeringstraject includes a 60-hour social orientation (MO) course that ends with a test. Wallonia's parcours d'intégration is free and includes at least 60 hours of citizenship training, with no written test described. This guide compares the two from the official regional sources.",
   mockSlug: "belgium-flanders-mo-readiness-check",
   deckSlug: "dutch-a2-inburgering-anki-deck",
   cta: {
     mockLabel: "Take the free Belgium Flanders MO readiness check",
     deckLabel: "Get the Dutch A2 Inburgering deck on Prep2Go",
     summary:
-      "Flanders track? Drill civic themes with the free Flanders MO readiness check, then lock Dutch with the Inburgering deck on Prep2Go. Wallonia track? Use the Wallonie Citoyenneté readiness check. Join the civics Anki waitlists before you pay the €1,030 fee.",
+      "Flanders track? Drill civic themes with the free Flanders MO readiness check, then build Dutch with the Inburgering deck on Prep2Go. Wallonia track? Use the Wallonie Citoyenneté readiness check. Check the federal nationality conditions and fees with your municipality before you apply.",
     extraLinks: [
       {
         href: "/mock-exams/belgium-wallonie-citoyennete-readiness-check",
@@ -44,148 +45,83 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Federal Baseline (What Every Applicant Needs)",
+      heading: "Why do Flanders and Wallonia differ?",
       blocks: [
         {
           type: "p",
-          text: "Regardless of region, Belgian nationality through declaration (Article 12bis) currently requires:",
-        },
-        {
-          type: "table",
-          caption: "Federal baseline vs proposed changes",
-          headers: ["Requirement", "Current rule", "Change coming"],
-          rows: [
-            ["Residence", "5 years uninterrupted legal residence", "Likely unchanged"],
-            [
-              "Language",
-              "A2 in the region’s language",
-              "B1 (proposed 2025–2029 government)",
-            ],
-            [
-              "Economic participation",
-              "468 days of salaried work or self-employment in last 5 years",
-              "Unchanged",
-            ],
-            [
-              "Social integration",
-              "Varies by region (see below)",
-              "Proposed national civic test",
-            ],
-            ["Application fee", "€1,030 (indexed 2026)", "Already enacted"],
-            ["Criminal record", "Clean", "Expanded exclusions proposed"],
-          ],
-        },
-        {
-          type: "p",
-          text: "Language is the big shift. The “Arizona” federal coalition has proposed raising A2 → B1 and making a civic test mandatory nationwide. As of mid-2026 no bill is before Parliament, but the coalition agreement commits to these changes in the 2025–2029 term.",
+          text: "Belgian nationality is federal, but integration programmes are regional. That is why a newcomer in Flanders and one in Wallonia face different courses before they apply. The regional integration certificate can support a nationality application, but the Flemish integration agency notes there are other conditions too, set at federal level.",
         },
       ],
     },
     {
-      heading: "Flanders: The Strictest Path",
+      heading: "What does the Flemish inburgeringstraject involve?",
       blocks: [
         {
           type: "p",
-          text: "Flanders treats integration as a moral obligation, not a checkbox — via Agentschap Integratie en Inburgering (AGII) and city agencies such as Atlas (Antwerp) and Amal (Ghent).",
-        },
-        {
-          type: "ol",
-          items: [
-            "**Social orientation (Maatschappelijke Oriëntatie / MO)** — life, work, norms, values. Attend at least ~80% of classes.",
-            "**Dutch language course** — up to A2 (1.1 + 1.2). Pass the certifying test.",
-            "**Civic integration certificate** — only after MO + Dutch.",
-          ],
-        },
-        {
-          type: "p",
-          text: "**Catch for nationality:** a certificate obtained **without** the MO course (language-only path) **does not count** for citizenship. MO is mandatory for nationality purposes.",
-        },
-        {
-          type: "p",
-          text: "**Alternative:** a separate social orientation test + certifying Dutch test. Fail the orientation test and you must enrol in the full programme. Flanders’ *inburgering* model emphasises language and cultural norms — language is the primary gatekeeper.",
-        },
-      ],
-    },
-    {
-      heading: "Wallonia: The Lighter Touch",
-      blocks: [
-        {
-          type: "p",
-          text: "Wallonia leans toward a French republican model: access to rights and services more than cultural assimilation. No standardised Walloon citizenship MCQ.",
-        },
-        {
-          type: "ol",
-          items: [
-            "**French at A2** — DELF A2, TCF A2, or approved adult education (EPS, CRI, CRIPEL, etc.).",
-            "**Social integration proof** — CRI integration course, recognised Belgian diploma, 5 years legal work, or 400+ hours vocational training.",
-          ],
-        },
-        {
-          type: "p",
-          text: "The integration course is optional for many; language proof is the hard requirement. **Brussels** runs BAPA — closer to Wallonia in philosophy, with Dutch and French course options.",
-        },
-      ],
-    },
-    {
-      heading: "The Language Trap: Region Determines Language",
-      blocks: [
-        {
-          type: "table",
-          caption: "Language by region",
-          headers: ["Region", "Language test", "Accepted certificates"],
-          rows: [
-            ["Flanders", "Dutch", "Certifying A2 (moving toward B1)"],
-            ["Wallonia", "French", "DELF A2, TCF A2, EPS, CRI"],
-            ["Brussels", "Dutch or French", "Either, depending on your course"],
-            ["German-speaking Community", "German", "Local certificates"],
-          ],
-        },
-        {
-          type: "p",
-          text: "**Critical:** you cannot pick the language for convenience. Under current practice some applicants near Brussels have used French while living near Dutch municipalities. Proposed 2025–2029 reforms would end shopping: test in the language of the region where you reside.",
-        },
-      ],
-    },
-    {
-      heading: "The Coming National Civic Test",
-      blocks: [
-        {
-          type: "p",
-          text: "The 2025–2029 coalition agreement proposes a nationality exam with (1) a citizenship knowledge test and (2) language raised to B1 — on top of regional integration. Content must be agreed across linguistic communities (historically slow).",
+          text: "The Flemish government and the Agentschap Integratie en Inburgering list **four parts**:",
         },
         {
           type: "ul",
           items: [
-            "Eligible now → file soon; current rules are softer",
-            "Not yet eligible → plan for B1 and a possible civic exam in 2027–2028",
-            "€1,030 fee already in effect (up from €150 in July 2025)",
+            "**Dutch** as the shared language",
+            "**Maatschappelijke oriëntatie (MO)**: learning about living, housing and working in Belgium",
+            "registration with **VDAB** (or Actiris in Brussels) for work",
+            "a **participation and network** track",
           ],
+        },
+        {
+          type: "p",
+          text: "The programme is compulsory for some newcomers, and not complying can lead to a fine.",
         },
       ],
     },
     {
-      heading: "Timeline and Cost by Region",
+      heading: "How does the MO test work?",
       blocks: [
         {
           type: "table",
-          caption: "Regional comparison",
-          headers: ["Step", "Flanders", "Wallonia", "Brussels"],
+          caption: "Maatschappelijke oriëntatie (integratie-inburgering.be, checked 24 Nov 2026)",
+          headers: ["Detail", "Official rule"],
           rows: [
-            [
-              "Integration / civic",
-              "Mandatory MO + Dutch",
-              "Optional CRI course",
-              "BAPA course (optional)",
-            ],
-            [
-              "Language test",
-              "Certifying Dutch A2 (B1 soon)",
-              "DELF A2 / TCF A2 / EPS",
-              "Dutch or French A2",
-            ],
-            ["Work requirement", "468 days in 5 years", "468 days in 5 years", "468 days in 5 years"],
-            ["Application fee", "€1,030", "€1,030", "€1,030"],
-            ["Processing time", "4–8 months", "4–8 months", "4–8 months"],
+            ["Course length", "About 60 hours over five to seven weeks, in most cases"],
+            ["Assessment", "A test after the course; classroom evaluation also counts"],
+            ["Cost", "€180 for the lessons and the test together; €90 to retake the test"],
+            ["Exemption", "If you took an MO course before, or pass an exemption test (vrijstellingstest)"],
+          ],
+        },
+        {
+          type: "p",
+          text: "The agency does not publish the number of questions or a pass mark. In Brussels the programme is free.",
+        },
+      ],
+    },
+    {
+      heading: "What does Wallonia's parcours d'intégration involve?",
+      blocks: [
+        {
+          type: "ul",
+          items: [
+            "A **welcome module**: information on rights and duties, a social assessment, a French placement test, and help with paperwork.",
+            "**Citizenship training** of at least **60 hours**.",
+            "**French lessons** of at least **400 hours**, if needed.",
+            "Guidance towards **socio-professional integration**, if needed.",
+          ],
+        },
+        {
+          type: "p",
+          text: "The whole parcours is **free**. It covers foreign nationals who have been in Belgium for less than three years with a residence permit of more than three months; EU, EEA and Swiss nationals are excluded. Those obliged to follow it must complete it within 3 years. The Walloon government's page describes no written civics test. For details, see [citoyenneté Wallonie](/blog/wallonie-citoyennete-francais-a2-parcours-integration).",
+        },
+      ],
+    },
+    {
+      heading: "How should you prepare?",
+      blocks: [
+        {
+          type: "steps",
+          items: [
+            { title: "Flanders", body: "Work on Dutch with the [Dutch A2 inburgering deck](/decks/dutch-a2-inburgering-anki-deck) and practise MO themes with the [Flanders MO readiness check](/mock-exams/belgium-flanders-mo-readiness-check)." },
+            { title: "Wallonia", body: "Follow the welcome module, then the citizenship training; review themes with the [Wallonie citoyenneté readiness check](/mock-exams/belgium-wallonie-citoyennete-readiness-check)." },
+            { title: "Nationality", body: "Check the federal conditions with your municipality before applying; the regional certificate is only one part." },
           ],
         },
       ],
@@ -193,46 +129,30 @@ export const belgiumCitizenshipFlandersWalloniaPost: BlogPostDraft = {
   ],
   faqs: [
     {
-      question: "Does Belgium have a citizenship test?",
-      answer:
-        "Not at the federal level yet. Flanders has MO as part of integration. Wallonia and Brussels lack a comparable standardised civic MCQ. A federal civic exam is proposed for 2025–2029 but not enacted.",
+      question: "Is there a citizenship test in Flanders?",
+      answer: "The maatschappelijke oriëntatie course of about 60 hours ends with a test, and classroom evaluation also counts (Agentschap Integratie en Inburgering, checked 24 Nov 2026).",
     },
     {
-      question: "What language level do I need for Belgian citizenship?",
-      answer:
-        "Currently A2 in your region’s language (Dutch in Flanders, French in Wallonia, either in Brussels). Federal proposals would raise this to B1.",
+      question: "How much does MO cost in Flanders?",
+      answer: "€180 for the lessons and the test together; a retake of the test costs €90. In Brussels the programme is free.",
     },
     {
-      question: "Can I take the French test if I live in Flanders?",
-      answer:
-        "Some near-Brussels applicants have done so under current practice. Proposed reforms would require the language of your region of residence — Flanders means Dutch.",
+      question: "Is there a written civics test in Wallonia?",
+      answer: "The Walloon government's page on the parcours d'intégration describes no written civics test. It lists a welcome module, at least 60 hours of citizenship training, French lessons if needed, and socio-professional guidance.",
     },
     {
-      question: "How much does Belgian citizenship cost?",
-      answer:
-        "Application fee €1,030 as of 2026, plus language tests (~€90–€130), translations, and certified copies.",
+      question: "Is the Wallonia parcours free?",
+      answer: "Yes. The Walloon government says the whole parcours d'intégration is free.",
     },
     {
-      question: "Is the Flanders integration certificate valid for citizenship?",
-      answer:
-        "Only if it includes the social orientation (MO) course. Language-only certificates without MO do not satisfy the nationality requirement.",
+      question: "Who must follow the Wallonia parcours?",
+      answer: "Foreign nationals in Belgium for less than three years with a residence permit of more than three months, as defined in the Walloon social action code; EU, EEA and Swiss nationals are excluded.",
     },
     {
-      question: "How long does Belgian citizenship take?",
-      answer:
-        "About 4–8 months for a clean file after submission. The Procureur du Roi typically has ~4 months for an opinion; the commune finalises in 1–2 months.",
-    },
-    {
-      question: "What is the difference between Flemish and Walloon integration policy?",
-      answer:
-        "Flanders emphasises language, norms, and mandatory civic integration (cultural-nationalism model). Wallonia emphasises rights, services access, and language proof without a mandatory civic exam (republican model).",
-    },
-    {
-      question: "Will Belgium introduce a national citizenship test?",
-      answer:
-        "The 2025–2029 coalition agreement proposes one, but no bill is before Parliament yet. Expect citizenship knowledge plus B1 language if enacted.",
+      question: "Does the integration certificate give me Belgian nationality?",
+      answer: "No. It can help, but federal nationality conditions also apply.",
     },
   ],
   bottomLine:
-    "Belgium runs three citizenship systems. Flanders makes you earn it through language and civic orientation. Wallonia asks for language and participation proof. Brussels lets you choose. The federal government is pushing a higher bar. Flanders: start MO now. Wallonia: secure DELF A2 before B1 hits. Eligible today: file this month — tomorrow’s rules get harder.",
+    "Flanders ends its 60-hour MO course with a test; Wallonia's free parcours has citizenship training but no written test. Sources: [Vlaanderen — inburgering](https://www.vlaanderen.be/inburgering), [Agentschap Integratie en Inburgering — inburgering](https://www.integratie-inburgering.be/nl/inburgering), [maatschappelijke oriëntatie](https://www.integratie-inburgering.be/nl/inburgering/maatschappelijke-orientatie) and [SPW Action sociale — parcours d'intégration](https://actionsociale.wallonie.be/home/thematiques/integration-des-personnes-etrangeres/parcours-d-integration.html), checked 24 Nov 2026.",
 };
