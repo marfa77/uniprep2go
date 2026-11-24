@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "eslint",
     "test": "vitest run",
+    "typecheck:ci": "tsc --noEmit -p tsconfig.ci.json",
     "check:boilerplate": "node scripts/check-boilerplate.mjs",
     "build:mock-banks": "python3 scripts/build-mock-banks.py",
     "generate:mock-banks": "node scripts/generate-mock-banks-openrouter.mjs",
