@@ -21,6 +21,11 @@ import { cfpEditorial } from "./cfp-certification-readiness-check";
 import { epa608Editorial } from "./epa-608-readiness-check";
 import { enrolledAgentEditorial } from "./enrolled-agent-readiness-check";
 import { nbrcTmcEditorial } from "./nbrc-tmc-readiness-check";
+import { aceCptEditorial } from "./ace-cpt-readiness-check";
+import { rdExamEditorial } from "./rd-exam-readiness-check";
+import { leedApOmEditorial } from "./leed-ap-om-readiness-check";
+import { cdcpMockEditorial } from "./cdcp-readiness-check";
+import { cemEditorial } from "./cem-readiness-check";
 
 export type { MockEditorialBundle, EditorialFaq, EditorialSection, EditorialSource } from "./types";
 export { resolveWeightTableQuestions } from "./resolve-weight-table";
@@ -49,6 +54,11 @@ const ENRICHMENT_SLUGS = [
   "epa-608-readiness-check",
   "enrolled-agent-readiness-check",
   "nbrc-tmc-readiness-check",
+  "ace-cpt-readiness-check",
+  "rd-exam-readiness-check",
+  "leed-ap-om-readiness-check",
+  "cdcp-readiness-check",
+  "cem-readiness-check",
 ] as const;
 
 export type EnrichmentMockSlug = (typeof ENRICHMENT_SLUGS)[number];
@@ -76,6 +86,11 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "epa-608-readiness-check": epa608Editorial,
   "enrolled-agent-readiness-check": enrolledAgentEditorial,
   "nbrc-tmc-readiness-check": nbrcTmcEditorial,
+  "ace-cpt-readiness-check": aceCptEditorial,
+  "rd-exam-readiness-check": rdExamEditorial,
+  "leed-ap-om-readiness-check": leedApOmEditorial,
+  "cdcp-readiness-check": cdcpMockEditorial,
+  "cem-readiness-check": cemEditorial,
 };
 
 export function getMockEditorialBundle(slug: string): MockEditorialBundle | null {
