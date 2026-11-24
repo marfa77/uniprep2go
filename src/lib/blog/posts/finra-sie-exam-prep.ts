@@ -7,6 +7,7 @@ export const finraSieExamPrepPost: BlogPostDraft = {
   metaDescription:
     "Why first-time SIE candidates fail: math gaps, term memorization without understanding, and pacing. What the exam tests, a 4-week study plan, plus 75Q timed mock (free 25-question version).",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-23",
   eyebrow: "FINRA SIE · Securities licensing",
   clusterId: "finra-sie",
   relatedSlugs: ["finra-options-questions-read-without-getting-tricked"],
@@ -180,44 +181,70 @@ export const finraSieExamPrepPost: BlogPostDraft = {
         },
       ],
     },
+    {
+      heading: "SIE vs Series 7: how do they fit together?",
+      blocks: [
+        {
+          type: "table",
+          caption: "SIE vs Series 7 (finra.org, checked 23 Nov 2026)",
+          headers: ["", "SIE", "Series 7"],
+          rows: [
+            ["Questions", "75 multiple choice", "125 scored + 5 unscored pretest (130)"],
+            ["Time", "1 hour 45 minutes", "3 hours 45 minutes"],
+            ["Passing score", "70", "72"],
+            ["Fee", "$100", "$395"],
+            ["Sponsor needed?", "No; anyone 18 or older", "Yes; a FINRA member firm (or other applicable SRO member)"],
+            ["Role", "General knowledge corequisite", "Representative-level qualification exam"],
+          ],
+        },
+        {
+          type: "p",
+          text: "To register as a General Securities Representative you must pass **both**: the SIE is the corequisite, and the Series 7 is the qualification exam. A passed SIE stays valid for four years, so you can take it before you have a job. The Series 7 then goes deeper on recommendations: Function 3 alone is 91 of its 125 scored items. Practise each with the [SIE practice test](/mock-exams/sie-full-mock) and the [Series 7 practice test](/mock-exams/series-7-readiness-check).",
+        },
+      ],
+    },
+    {
+      heading: "How long do you wait to retake the SIE?",
+      blocks: [
+        {
+          type: "p",
+          text: "Today FINRA requires 30 days after a first or second failed attempt and 180 days after a third or later failure within two years. **From 19 January 2027** (FINRA Regulatory Notice 26-18) those waits drop to **15 days** and **60 days**. The wait applies only to the exam you failed, so failing the SIE does not stop you sitting the Series 7, and failures more than two years old don't count.",
+        },
+      ],
+    },
   ],
   faqs: [
     {
       question: "What is the passing score for the SIE exam?",
       answer:
-        "FINRA does not publish the exact passing score, but industry consensus and candidate feedback place it at 70% (roughly 53 out of 75 questions).",
+        "FINRA's SIE page lists the passing score as 70 for the 75-question, 1 hour 45 minute exam (finra.org, checked 23 Nov 2026).",
     },
     {
       question: "How long should I study for the SIE exam?",
       answer:
-        "4–6 weeks of part-time study (10–15 hours per week) is the sweet spot. Less than 3 weeks and you are cramming. More than 8 weeks and you start forgetting the early material.",
+        "FINRA does not set a study time. The 4-week plan above works for many part-time schedules; use a timed practice test in week one to decide whether you need longer.",
     },
     {
       question: "Can I take the SIE exam without a sponsor?",
       answer:
-        "Yes. The SIE is the only FINRA exam you can take without being sponsored by a member firm. You register directly through FINRA.",
+        "Yes. Anyone 18 or older can take the SIE without a sponsor. Qualification exams such as the Series 7 require association with a member firm.",
     },
     {
       question: "How much does the SIE exam cost?",
       answer:
-        "$100 as of 2026 (FINRA). Rescheduling costs $35 if done within 10 days of the exam. No-shows forfeit the fee. Confirm the live fee on finra.org.",
+        "$100 (FINRA, checked 23 Nov 2026). Results stay valid for four years.",
     },
     {
       question: "What happens if I fail the SIE exam?",
       answer:
-        "You must wait 30 days before retaking. If you fail three times, you must wait 180 days before a fourth attempt. There is no lifetime limit, but the waiting periods are enforced.",
+        "Today: 30 days after a first or second failure and 180 days after a third within two years. From 19 Jan 2027: 15 days and 60 days (FINRA Regulatory Notice 26-18).",
     },
     {
       question: "Is the SIE exam harder than the Series 7?",
       answer:
         "No. The Series 7 is longer (130 questions: 125 scored + 5 pretest), deeper on suitability and options strategies, and requires sponsorship. The SIE is broader and more foundational. Most people find the Series 7 harder because of the volume, not the complexity.",
     },
-    {
-      question: "Do I need a calculator for the SIE exam?",
-      answer:
-        "No. The testing center provides a basic four-function calculator. You cannot bring your own.",
-    },
   ],
   bottomLine:
-    "The SIE is not an intelligence test. It is a reading comprehension and memorization test with a timer. Most people fail because they did not respect the clock or they tried to memorize without understanding. Run a timed practice test in week one, find your worst section, and beat it to death with flashcards. Pass the SIE, and the door to the industry opens.",
+    "The SIE is not an intelligence test. It is a reading comprehension and memorization test with a timer. Most people fail because they did not respect the clock or they tried to memorize without understanding. Run a timed practice test in week one, find your worst section, and beat it to death with flashcards. Pass the SIE, then add the qualification exam for your role. Sources: [FINRA SIE](https://www.finra.org/registration-exams-ce/qualification-exams/securities-industry-essentials-exam), [FINRA Series 7](https://www.finra.org/registration-exams-ce/qualification-exams/series7) and [Regulatory Notice 26-18](https://www.finra.org/rules-guidance/notices/26-18), checked 23 Nov 2026.",
 };

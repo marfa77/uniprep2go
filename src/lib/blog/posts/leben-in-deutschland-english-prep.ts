@@ -7,6 +7,7 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
   metaDescription:
     "The German citizenship test is in German, but most preparation resources are too. Here is how to study for the Leben in Deutschland test if your German is borderline B1.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-23",
   eyebrow: "Leben in Deutschland · Einbürgerungstest",
   clusterId: "leben-in-deutschland",
   relatedSlugs: [
@@ -15,14 +16,14 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
     "france-naturalization-2026-civic-exam-b2-language-test",
   ],
   intro:
-    "The Leben in Deutschland test — also called the Einbürgerungstest — is the mandatory knowledge exam for German citizenship and permanent residence. It is administered in **German** at roughly B1 level. If your German is functional but not fluent, studying from German-only resources is inefficient. You spend half your time translating instead of learning the content. This guide explains the test structure, the 300 official questions, how to study with English support, and the exact score you need for citizenship versus permanent residence.",
+    "The Leben in Deutschland test — also called the Einbürgerungstest — is the knowledge test BAMF uses for German naturalisation and at the end of the integration course. It is in **German**. If your German is functional but not fluent, studying from German-only resources is inefficient. You spend half your time translating instead of learning the content. This guide explains the test structure, the 300 official questions, how to study with English support, and the score BAMF sets, using BAMF's own pages checked 23 Nov 2026.",
   mockSlug: "leben-in-deutschland-readiness-check",
   deckSlug: "leben-in-deutschland-anki-deck",
   cta: {
     mockLabel: "Take the free Leben in Deutschland readiness check",
-    deckLabel: "Get the Leben in Deutschland Anki deck ($9.99)",
+    deckLabel: "Get the Leben in Deutschland Anki deck",
     summary:
-      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the $9.99 Leben in Deutschland Anki deck before your VHS test date.",
+      "Take the free Leben in Deutschland readiness check — exam-format topics across constitution, history, society, and federal life — then drill weak areas with the [Leben in Deutschland Anki deck](/decks/leben-in-deutschland-anki-deck) before your test date.",
   },
   sections: [
     {
@@ -40,18 +41,17 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
             ["Questions", "33 multiple-choice (4 options each)"],
             ["Breakdown", "30 general + 3 state-specific (Bundesland)"],
             ["Time limit", "60 minutes"],
-            [
-              "Passing score",
-              "17 correct for citizenship / 15 correct for permanent residence (Niederlassungserlaubnis)",
-            ],
-            ["Exam fee", "~€25"],
-            ["Location", "Volkshochschule (VHS) or authorized test center"],
+            ["Answers", "Four options per question; choose one"],
+            ["Passing score", "At least 17 of 33 correct"],
+            ["Fee (Einbürgerungstest)", "€25"],
+            ["Where", "BAMF test centres (Prüfstellen) listed by federal state; bring valid photo ID"],
+            ["Result", "A BAMF certificate (Bescheinigung) with your personal result"],
             ["Language", "German only"],
           ],
         },
         {
           type: "p",
-          text: "The 15-vs-17 distinction is critical. If you are applying for permanent residence, 15 correct answers is enough. If you are applying for citizenship (Einbürgerung), you need 17. Some test-takers have been caught off guard because they aimed for 15 and later decided to apply for citizenship.",
+          text: "BAMF's naturalisation page sets the pass mark at **17 of 33**. It also says that passing the \"Leben in Deutschland\" test with at least 17 of 33 points counts for the integration-course certificate route. Below 17, you can repeat the test. Naturalisation itself is a separate application with its own fee (€255 per person, per the same BAMF page).",
         },
       ],
     },
@@ -60,53 +60,24 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "BAMF maintains a public database of all possible questions. As of 2026, the catalog contains roughly 310 questions: 300 general-knowledge questions plus approximately 10 state-specific questions for each of the 16 federal states. On exam day, 33 are drawn at random: 30 from the general pool and 3 from your state's pool.",
+          text: "BAMF maintains a public database of all possible questions. Each test draws on 310 questions: 300 general questions and 10 for the federal state where you live. Across all 16 states, BAMF's full catalogue (Gesamtfragenkatalog, dated 26 May 2025) has 300 national and 160 state questions. On test day you answer 30 general questions and 3 about the state where your main residence is registered.",
         },
         {
           type: "p",
-          text: "The questions are available free on the BAMF website in German. Some third-party sites offer English translations, but the official test is administered in German only. You must learn the German phrasing, not just the English meaning.",
+          text: "The catalogue is free on the BAMF website, and BAMF's Online-Testcenter lets you browse it and try a sample paper. Some third-party sites offer English translations, but the test is in German only. You must learn the German phrasing, not just the English meaning.",
         },
       ],
     },
     {
-      heading: "Topic Breakdown and Heavy Hitters",
+      heading: "Who has to take the test, and who is exempt?",
       blocks: [
         {
-          type: "table",
-          caption: "Approximate content weights",
-          headers: ["Category", "Share", "Example topics"],
-          rows: [
-            [
-              "Politics & democracy",
-              "~30%",
-              "Bundestag, Bundesrat, Bundeskanzler, elections, 5% hurdle",
-            ],
-            [
-              "Basic Law (Grundgesetz)",
-              "~20%",
-              "Human dignity, freedom of speech, equality, religious freedom",
-            ],
-            [
-              "History",
-              "~15%",
-              "National Socialism, Holocaust, division/reunification, Berlin Wall",
-            ],
-            [
-              "Rights & duties",
-              "~15%",
-              "Voting, assembly, conscientious objection, taxes",
-            ],
-            [
-              "Society & daily life",
-              "~10%",
-              "Education, healthcare, social insurance, gender equality",
-            ],
-            ["Federalism & EU", "~10%", "16 Bundesländer, EU role, Schengen, NATO"],
-          ],
+          type: "p",
+          text: "If you apply for German citizenship, you must show knowledge of the legal and social order and living conditions in Germany, which the Einbürgerungstest proves. BAMF lists two exemptions: a German school-leaving certificate (deutscher Schulabschluss), or being unable to meet the requirement because of a physical, mental or psychological illness, a disability, or age.",
         },
         {
           type: "p",
-          text: "The heaviest sections are politics and the Basic Law. If you are short on time, memorize the structure of the federal government, the three branches, and the key articles of the Grundgesetz first.",
+          text: "To register, contact a BAMF test centre in your federal state; your local naturalisation authority (Einbürgerungsbehörde) can tell you which centres are nearby. Practise first with the free [Leben in Deutschland readiness check](/mock-exams/leben-in-deutschland-readiness-check).",
         },
       ],
     },
@@ -130,11 +101,11 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
             },
             {
               title: "Step 4: Drill state-specific questions separately",
-              body: "Your 3 state questions come from a pool of ~10. That is a 30% chance per question if you know all 10. Memorize your state's 10 questions cold. They are free points.",
+              body: "Your 3 state questions come from the 10 published for your federal state. Learn all 10 in German; they are the smallest part of the catalogue to master.",
             },
             {
               title: "Step 5: Take timed practice tests in German",
-              body: "60 minutes for 33 questions sounds generous until you are parsing German legal vocabulary under stress. Practice with a timer. If you consistently finish in 40 minutes with 17+ correct, you are ready.",
+              body: "60 minutes for 33 questions leaves time, but German legal vocabulary slows reading. Practise with a timer on BAMF's sample paper and aim comfortably above 17 correct.",
             },
           ],
         },
@@ -146,8 +117,7 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
         {
           type: "ul",
           items: [
-            "«Nennen Sie zwei…» means «Name two…» Some questions ask for two correct answers from four options. If you only select one, the question is wrong.",
-            "«Was ist richtig? / Was ist falsch?» — «What is correct? / What is false?» Read carefully. A question may ask which statement is not true.",
+                        "«Was ist richtig? / Was ist falsch?» — «What is correct? / What is false?» Read carefully. A question may ask which statement is not true.",
             "Dates and names — The test loves specific years: 1949 (Grundgesetz), 1989 (fall of the Berlin Wall), 1990 (reunification). Know them in German numerals.",
           ],
         },
@@ -158,18 +128,18 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "Technically, they are the same test. «Leben in Deutschland» is the name used for the integration course final exam. «Einbürgerungstest» is the name used for citizenship applications. The format, question pool, and passing threshold are identical. The only difference is the certificate issued and the score required:",
+          text: "They are separate tests built from the same kind of catalogue: BAMF says each has 310 questions to draw from, 300 general and 10 for your federal state. «Leben in Deutschland» is the test at the end of the integration course's orientation part; the «Einbürgerungstest» is the naturalisation test. For naturalisation, BAMF accepts either:",
         },
         {
           type: "ul",
           items: [
-            "Integration course / permanent residence: **15** correct",
-            "Citizenship: **17** correct",
+            "a passed Einbürgerungstest (at least **17 of 33**), or",
+            "the «Leben in Deutschland» test passed with at least **17 of 33** points, via the integration-course certificate",
           ],
         },
         {
           type: "p",
-          text: "If there is any chance you will apply for citizenship later, study for 17. The extra margin costs nothing and saves you from retaking.",
+          text: "Either way, 17 is the number to beat. The fuller comparison is in [Einbürgerungstest vs Leben in Deutschland](/blog/germany-einbuergerungstest-vs-leben-in-deutschland-difference).",
         },
       ],
     },
@@ -183,17 +153,17 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
     {
       question: "What score do I need to pass?",
       answer:
-        "15 out of 33 for permanent residence (Niederlassungserlaubnis). 17 out of 33 for citizenship (Einbürgerung). Aim for 17 regardless of your current application type.",
+        "At least 17 of 33 correct (BAMF, checked 23 Nov 2026). The same 17-of-33 mark applies when a Leben in Deutschland result is used for naturalisation.",
     },
     {
       question: "Is the Leben in Deutschland test in English?",
       answer:
-        "No. The test is administered in German at approximately B1 level. You must pass a separate B1 language exam before you can even take the citizenship test.",
+        "No. The test is in German. German language skills for naturalisation are a separate requirement from this knowledge test.",
     },
     {
       question: "How much does the Leben in Deutschland test cost?",
       answer:
-        "Approximately €25. Some integration course providers include it in the course fee. External participants pay the exam fee plus a registration fee (often €20) at the test center.",
+        "The Einbürgerungstest costs €25 (BAMF). Naturalisation itself is a separate €255 per person.",
     },
     {
       question: "Where can I find the official questions?",
@@ -203,22 +173,22 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
     {
       question: "Can I retake the Leben in Deutschland test if I fail?",
       answer:
-        "Yes. There is no limit on retakes. You must pay the exam fee again and wait for the next available test date.",
+        "Yes. BAMF says that if you answer fewer than 17 questions correctly, you can repeat the test.",
     },
     {
       question: "How long does it take to get results?",
       answer:
-        "BAMF assesses the tests centrally. Results typically take 4–6 weeks. You can check the processing status on the BAMF website.",
+        "BAMF issues a certificate (Bescheinigung) with your personal result; it does not publish a fixed turnaround time on its naturalisation page.",
     },
     {
       question: "Do I need to take the Leben in Deutschland test if I have a German university degree?",
       answer:
-        "Generally yes, unless you qualify for an exemption. Some applicants with specific educational backgrounds or long-term residence may be exempt. Check with your local Einbürgerungsbehörde.",
+        "A university degree is not listed as an exemption. BAMF exempts holders of a German school-leaving certificate (deutscher Schulabschluss) and people who cannot meet the requirement because of illness, disability or age. Ask your Einbürgerungsbehörde about your case.",
     },
     {
       question: "How many state-specific questions are there?",
       answer:
-        "3 out of 33. They are drawn from a pool of approximately 10 questions for your specific federal state. Memorizing all 10 state questions gives you a significant advantage.",
+        "3 of the 33, drawn from the 10 questions published for the federal state where your main residence is registered.",
     },
     {
       question: "What is the hardest part of the Leben in Deutschland test?",
@@ -227,5 +197,5 @@ export const lebenInDeutschlandEnglishPrepPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "The Leben in Deutschland test is a vocabulary test disguised as a civics test. If your German is B1, you already know enough grammar. What you need is domain-specific vocabulary: government structures, legal terms, and historical dates in German. Study the BAMF catalog in German, use English only for concept mapping, and drill until you can read a question about the Bundesrat without pausing to translate. That is the difference between 16 correct answers and 17.",
+    "The Leben in Deutschland test is a vocabulary test disguised as a civics test. If your German is B1, you already know enough grammar. What you need is domain-specific vocabulary: government structures, legal terms, and historical dates in German. Study the BAMF catalog in German, use English only for concept mapping, and drill until you can read a question about the Bundesrat without pausing to translate. Sources: [BAMF — Einbürgerung](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/Einbuergerung/einbuergerung-node.html), [Gesamtfragenkatalog](https://www.bamf.de/SharedDocs/Anlagen/DE/Integration/Einbuergerung/gesamtfragenkatalog-lebenindeutschland.html) and [Online-Testcenter](https://www.bamf.de/DE/Themen/Integration/ZugewanderteTeilnehmende/OnlineTestcenter/online-testcenter-node.html), checked 23 Nov 2026.",
 };

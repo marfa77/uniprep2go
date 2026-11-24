@@ -579,4 +579,27 @@ describe("overnight WP2/WP3 blog rewrites", () => {
     expect(body).toContain("$725");
     expect(body).not.toMatch(/\$800–\$1,200|Arup|Equinix/);
   });
+
+  it("Leben in Deutschland post uses BAMF's 17-of-33 rule and exemptions", () => {
+    const post = getBlogPostBySlug("leben-in-deutschland-test-english-preparation-guide")!;
+    expect(post.sections.map((s) => s.heading)).toContain("Who has to take the test, and who is exempt?");
+    const body = text(post.slug);
+    expect(body).toContain("17 of 33");
+    expect(body).not.toMatch(/15 correct|~30%|4–6 weeks|often €20|Nennen Sie zwei/);
+  });
+
+  it("EPA 608 Type I vs II post uses 40 CFR 82.156/82.157 values", () => {
+    const body = text("epa-608-type-1-vs-type-2-which-first");
+    expect(body).toContain("4 inches of mercury vacuum");
+    expect(body).toContain("120 days if an industrial process shutdown is needed");
+    expect(body).not.toMatch(/recover to 0 psi|170 psig|355 psig|\$20–\$40|pass rate is roughly/);
+  });
+
+  it("SIE post adds the SIE vs Series 7 section and the 2027 retake change", () => {
+    const post = getBlogPostBySlug("finra-sie-exam-prep-why-people-fail")!;
+    expect(post.sections.map((s) => s.heading)).toContain("SIE vs Series 7: how do they fit together?");
+    const body = text(post.slug);
+    expect(body).toContain("19 January 2027");
+    expect(body).not.toMatch(/industry consensus|four-function calculator|\$35/);
+  });
 });
