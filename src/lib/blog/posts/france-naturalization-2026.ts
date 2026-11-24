@@ -7,6 +7,7 @@ export const franceNaturalization2026Post: BlogPostDraft = {
   metaDescription:
     "Since January 1, 2026, France requires a civic exam AND a B2 language test. The civic exam is 40 questions in 45 minutes. The language test is TCF IRN at B2. Here is how both work.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-24",
   eyebrow: "France · Examen civique + B2",
   clusterId: "france-naturalisation",
   relatedSlugs: [
@@ -15,18 +16,18 @@ export const franceNaturalization2026Post: BlogPostDraft = {
     "belgium-citizenship-test-flanders-vs-wallonia",
   ],
   intro:
-    "**On 1 January 2026, France changed the rules.** Naturalisation used to mean a B1 French certificate plus an interview with a préfet. Now you need two standardised exams first: the **Examen civique** (civic knowledge) and **B2 French** (typically via TCF IRN, DELF B2, or equivalent). The interview still happens — but only after both certificates. Walk in with a 2025 B1 DELF and no civic exam, and the file dies at the window. This guide covers both exams, the 80% civic threshold, and why the B1→B2 jump is the real killer.",
+    "**French naturalisation now means two separate proofs: a pass on the examen civique (40 questions, 32 to pass) and French at B2 or above.** The same civic exam has applied to first multi-year residence cards and first resident cards since 1 January 2026. This guide covers both proofs, who is exempt, and how to prepare, all from Service Public.",
   mockSlug: "naturalisation-francaise-readiness-check",
   deckSlug: "delf-b2-french-anki-deck",
   cta: {
     mockLabel: "Take the free Naturalisation française readiness check",
     deckLabel: "Get the French DELF deck on Prep2Go",
     summary:
-      "Drill republican civics with the free Naturalisation française readiness check, then the $9.99 Naturalisation française Anki deck. Bridge B1→B2 with the French language deck on Prep2Go.",
+      "Drill republican civics with the free Naturalisation française readiness check, then review with the Naturalisation française Anki deck. Bridge B1 to B2 with the French language deck on Prep2Go.",
     extraLinks: [
       {
         href: "/decks/naturalisation-francaise-anki-deck",
-        label: "Naturalisation française Anki deck ($9.99)",
+        label: "Naturalisation française Anki deck",
       },
       {
         href: "https://www.prep2go.study",
@@ -36,202 +37,109 @@ export const franceNaturalization2026Post: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "The Two-Exam Requirement (New for 2026)",
+      heading: "What are the two exams?",
+      blocks: [
+        {
+          type: "p",
+          text: "For naturalisation by decree (and reintegration), Service Public lists two separate requirements: passing the **examen civique**, checked alongside your assimilation interview, and proving French at **at least B2**, oral and written. Nationality by declaration, for example through marriage to a French national, is not covered by the civic exam.",
+        },
+      ],
+    },
+    {
+      heading: "How does the examen civique work?",
       blocks: [
         {
           type: "table",
-          caption: "Examen civique vs TCF IRN",
-          headers: ["", "Examen civique", "TCF IRN (language)"],
+          caption: "Examen civique (service-public.gouv.fr, checked 24 Nov 2026)",
+          headers: ["Detail", "Official rule"],
           rows: [
-            [
-              "What it tests",
-              "Republican values, institutions, history, daily life",
-              "French: listening, reading, writing, speaking",
-            ],
-            [
-              "Format",
-              "40 multiple-choice on computer",
-              "4 sections: listening (25q/20m), reading (25q/35m), writing (3 tasks/30m), speaking (3 tasks/10m)",
-            ],
-            ["Duration", "45 minutes", "~1 hour 35 minutes"],
-            ["Passing score", "32/40 (80%)", "B2 level for naturalisation"],
-            ["Cost", "~€69", "~€100–€150"],
-            ["Frequency", "Multiple dates/month at approved centres", "2+ sessions/month"],
-            ["Validity", "Lifetime", "2 years (TCF IRN)"],
-            ["Language", "French only", "French only"],
+            ["Format", "40 multiple-choice questions in French, mixing knowledge and situation questions"],
+            ["Pass mark", "32 correct answers (80%)"],
+            ["Time", "Up to 45 minutes, on a digital device; extra time only for a medical accommodation"],
+            ["Where", "An approved centre of the CCI Paris Île-de-France or France Éducation International; abroad, ask a French institute, Alliance française or consulate"],
+            ["Validity", "The success certificate has no expiry date"],
+            ["Fraud", "A 2-year ban on retaking"],
           ],
         },
         {
           type: "p",
-          text: "**Critical:** both exams are in French. The civic exam is not a grammar test, but you must read well enough to answer 40 items in 45 minutes. Weak French turns the civic paper into a de facto language test.",
+          text: "For naturalisation, the questions cover four areas: key moments of French history; principles, symbols and institutions of the Republic; exercising citizenship, based on the charter of rights and duties; and France in Europe and the world. Service Public does not list an exam fee; ask your centre.",
         },
       ],
     },
     {
-      heading: "The Civic Exam: 40 Questions, 12 Scenarios, 80% to Pass",
-      blocks: [
-        {
-          type: "p",
-          text: "Computer-based MCQ with two question types:",
-        },
-        {
-          type: "ul",
-          items: [
-            "**28 knowledge questions** from a published bank: Republic principles (liberty, equality, fraternity, laïcité), institutions, rights/duties, history/geography/culture, daily life (healthcare, work, housing, school)",
-            "**12 scenario questions** applying republican norms — e.g. neighbour noise at 2 AM, workplace discrimination, sick child on a school day",
-          ],
-        },
-        {
-          type: "p",
-          text: "**80% rule:** 32/40. No negative marking — answer everything. Scenarios catch candidates who memorise facts without social norms.",
-        },
-        {
-          type: "table",
-          caption: "Three difficulty tracks",
-          headers: ["Application", "French level", "Question bank"],
-          rows: [
-            ["Multi-year residence permit (CSP)", "A2", "~190 published questions"],
-            ["10-year resident card (CR)", "B1", "~210 published questions"],
-            ["Naturalisation", "B2", "~233 published questions"],
-          ],
-        },
-        {
-          type: "p",
-          text: "Naturalisation uses denser French and deeper institutional questions — e.g. role of the Conseil Constitutionnel, not only “Who is Head of State?”",
-        },
-      ],
-    },
-    {
-      heading: "The Language Trap: B2 Is Not B1 + One Level",
+      heading: "What French level do you need?",
       blocks: [
         {
           type: "table",
-          caption: "B1 vs B2 for naturalisation",
-          headers: ["Level", "What you can do", "Naturalisation use"],
+          caption: "French level by procedure (service-public.gouv.fr)",
+          headers: ["Procedure", "Level"],
           rows: [
-            [
-              "B1",
-              "Main points of standard input; simple connected text",
-              "Enough until 31 Dec 2025",
-            ],
-            [
-              "B2",
-              "Complex text; fluent interaction; clear detailed text",
-              "Required from 1 Jan 2026",
-            ],
-          ],
-        },
-        {
-          type: "ul",
-          items: [
-            "**Listening:** radio interviews, news, extended discussion without subtitles",
-            "**Reading:** newspaper articles — implicit meaning and argument structure",
-            "**Writing:** ~150-word formal letter/essay with connectors and register",
-            "**Speaking:** ~10-minute structured talk on abstract topics — not just introductions",
+            ["Naturalisation", "At least B2, oral and written"],
+            ["First carte de résident (under 65)", "B1 or above, since 1 January 2026"],
+            ["First multi-year residence card (under 65)", "A2, since 1 January 2026"],
           ],
         },
         {
           type: "p",
-          text: "TCF IRN covers all four skills. Weak speaking is not rescued by strong reading — you need an overall B2 result. Results often take 4–6 weeks (summer can hit ~6). DELF B2 and equivalent certificates are also used where accepted — confirm with your préfecture.",
+          text: "For naturalisation you can prove B2 with a **TCF** (France Éducation International) or **TEF** (CCI Paris Île-de-France) result less than 2 years old, a French diploma at RNCP level 3 or the diplôme national du brevet, or another diploma showing at least B2. Exemptions include a medical certificate and refugees over 70 who have lived in France for 15 years or more.",
         },
       ],
     },
     {
-      heading: "Who Is Exempt",
+      heading: "Does the civic exam apply to residence cards too?",
       blocks: [
         {
-          type: "topics",
-          items: [
-            {
-              title: "Often exempt from the civic exam",
-              body: "Beneficiaries of international protection; some bilateral-agreement nationals; renewals of existing permits (first-time applications); minors under 18 — always verify locally.",
-            },
-            {
-              title: "Often exempt from B2 language proof",
-              body: "French secondary education (baccalauréat); certain French university degrees; some French-speaking nationals (verify); documented medical exemptions.",
-            },
-            {
-              title: "Everyone else",
-              body: "Both exams. No informal “my French is fine” waiver at the préfecture window.",
-            },
-          ],
+          type: "p",
+          text: "Yes. Since **1 January 2026** it also applies to a first multi-year residence card and a first carte de résident, with the same 40 questions and 32 to pass, but a different topic list. Renewals are not covered, people over 65 are exempt, and EU, EEA and Swiss nationals are outside its scope.",
         },
       ],
     },
     {
-      heading: "Study Timeline",
+      heading: "How should you prepare?",
       blocks: [
         {
-          type: "topics",
+          type: "steps",
           items: [
-            {
-              title: "Month 1: Language B2 focus",
-              body: "Still at B1? Do not book TCF IRN yet — budget 3–6 months intensive. Radio France, podcasts, formal writing. Confirm level with a B2 placement mock.",
-            },
-            {
-              title: "Month 2: Civic exam content",
-              body: "Official themes at formation-civique.interieur.gouv.fr. Drill the naturalisation bank (~233). Practice scenarios — many are not published; use prep platforms that simulate them.",
-            },
-            {
-              title: "Month 3–4: Mocks and sittings",
-              body: "2–3 timed 40-question civic mocks (target 36/40). B2 language mock confirmed. Book language first (longer score wait), civic 2–3 weeks later. File only with both certificates in hand.",
-            },
+            { title: "Get the language certificate first", body: "B2 takes longest. The [French DELF deck](/decks/delf-b2-french-anki-deck) helps with vocabulary while you study for the TCF or TEF." },
+            { title: "Learn the four civic areas", body: "History, the Republic's principles and institutions, citizenship rights and duties, and France in Europe and the world." },
+            { title: "Practise under time", body: "40 questions in 45 minutes with 32 to pass: try the [naturalisation française readiness check](/mock-exams/naturalisation-francaise-readiness-check)." },
+            { title: "Book an approved centre", body: "Pre-register online with France Éducation International or find a CCI Paris Île-de-France centre." },
           ],
+        },
+        {
+          type: "p",
+          text: "The naturalisation application itself costs **€255** in tax stamps (€127.50 in French Guiana). Comparing systems? See [Belgium: Flanders vs Wallonia](/blog/belgium-citizenship-test-flanders-vs-wallonia).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "Do I need both the civic exam and a language test for French naturalisation?",
-      answer:
-        "Yes, since 1 January 2026 in the standard pathway. Civic knowledge plus B2 French (TCF IRN, DELF B2, or equivalent accepted by the préfecture).",
+      question: "How many questions are on the French civic exam?",
+      answer: "40 multiple-choice questions in French, in up to 45 minutes (Service Public, checked 24 Nov 2026).",
     },
     {
-      question: "What is the passing score for the French civic exam?",
-      answer:
-        "32 of 40 (80%): 28 knowledge + 12 scenario questions. No negative marking.",
+      question: "What is the pass mark?",
+      answer: "32 correct answers out of 40, which is 80%.",
     },
     {
-      question: "What French level do I need for naturalisation in 2026?",
-      answer:
-        "B2. Raised from B1 on 1 January 2026. Prove it with an official exam such as TCF IRN or DELF B2.",
+      question: "What French level do I need for naturalisation?",
+      answer: "At least B2, oral and written, for example shown by a TCF or TEF result less than 2 years old.",
     },
     {
-      question: "How much do the French naturalisation exams cost?",
-      answer:
-        "Civic exam ~€69. TCF IRN ~€100–€150 depending on centre. DELF B2 fees vary by centre.",
+      question: "Does the civic exam apply if I apply by marriage?",
+      answer: "No. Service Public says it applies to naturalisation by decree and reintegration, not to nationality by declaration such as marriage.",
     },
     {
-      question: "Is the French civic exam in English?",
-      answer:
-        "No. Civic exam and language tests are entirely in French. No dictionaries or translators.",
+      question: "Where do I take the exam?",
+      answer: "At an approved centre of the CCI Paris Île-de-France or France Éducation International; abroad, ask a French institute, Alliance française or consulate.",
     },
     {
-      question: "How long is the civic exam certificate valid?",
-      answer: "Lifetime — it does not expire once issued.",
-    },
-    {
-      question: "How long are TCF IRN results valid?",
-      answer:
-        "Typically 2 years from issue. Long naturalisation queues can force a language retake — plan filing around validity.",
-    },
-    {
-      question: "Can I retake the civic exam if I fail?",
-      answer:
-        "Yes, with no fixed attempt limit — except a multi-year ban if caught cheating.",
-    },
-    {
-      question: "How long does it take to get TCF IRN results?",
-      answer:
-        "Often 4–6 weeks; summer sittings can stretch toward 6 weeks. Build that lag into your filing plan.",
-    },
-    {
-      question: "What is the hardest part of French naturalisation in 2026?",
-      answer:
-        "The B2 language gate. Candidates with 2024–2025 B1 certificates must bridge a full CEFR level — abstract discussion, formal writing, and complex listening, not everyday chitchat.",
+      question: "Does the civic exam certificate expire?",
+      answer: "No. The success certificate has no expiry date.",
     },
   ],
   bottomLine:
-    "France used to ask for B1 and a chat with a préfet. Now it asks for B2 plus a 40-question civic exam at 80%. Civics is manageable with the published bank and scenario practice. B2 is the real gatekeeper. Still at B1? Do not book TCF IRN yet — study, confirm with a mock, then register. A failed language sitting costs ~€150 and weeks of waiting; a failed civic sitting costs ~€69 and days. Budget risk accordingly.",
+    "Plan two separate proofs: a B2 language result and a pass of 32 out of 40 on the civic exam. Sources: [Service Public — naturalisation](https://www.service-public.gouv.fr/particuliers/vosdroits/F2213), [examen civique for naturalisation](https://www.service-public.gouv.fr/particuliers/vosdroits/F39426), [French level for naturalisation](https://www.service-public.gouv.fr/particuliers/vosdroits/F11926), [examen civique for residence cards](https://www.service-public.gouv.fr/particuliers/vosdroits/F39530) and [French level for residence cards](https://www.service-public.gouv.fr/particuliers/vosdroits/F34501), checked 24 Nov 2026.",
 };
