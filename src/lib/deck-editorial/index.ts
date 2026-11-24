@@ -25,6 +25,9 @@ import { series65DeckEditorial } from "./series-65-anki-deck";
 import { series66DeckEditorial } from "./series-66-anki-deck";
 import { lhDeckEditorial } from "./life-and-health-insurance-exam-anki-deck";
 import { frmDeckEditorial } from "./frm-part-1-anki-deck";
+import { aceCptDeckEditorial } from "./ace-cpt-anki-deck";
+import { neboshDeckEditorial } from "./nebosh-anki-deck";
+import { series99DeckEditorial } from "./series-99-anki-deck";
 
 export type { DeckEditorialBundle } from "./types";
 
@@ -55,6 +58,9 @@ const bundles: Record<string, DeckEditorialBundle> = {
   "series-66-anki-deck": series66DeckEditorial,
   "life-and-health-insurance-exam-anki-deck": lhDeckEditorial,
   "frm-part-1-anki-deck": frmDeckEditorial,
+  "ace-cpt-anki-deck": aceCptDeckEditorial,
+  "nebosh-anki-deck": neboshDeckEditorial,
+  "series-99-anki-deck": series99DeckEditorial,
 };
 
 export function getDeckEditorialBundle(slug: string): DeckEditorialBundle | null {
