@@ -2,11 +2,12 @@ import type { BlogPostDraft } from "../types";
 
 export const servsafeManagerStudyGuidePost: BlogPostDraft = {
   slug: "servsafe-manager-exam-study-guide-2026",
-  title: "ServSafe Manager Exam: The Study Guide That Actually Works (2026)",
-  titleTag: "ServSafe Manager Exam Study Guide 2026: Pass on First Try",
+  title: "ServSafe Manager Exam: The Study Guide That Actually Works (2027)",
+  titleTag: "ServSafe Manager Exam Study Guide 2027: Pass on First Try",
   metaDescription:
     "Most people fail ServSafe Manager because they study the wrong chapters. Here is the exact 7-day plan, the topics that matter, and the practice test strategy that works.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-24",
   eyebrow: "ServSafe Manager · Food safety",
   clusterId: "servsafe",
   relatedSlugs: [
@@ -30,15 +31,15 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
       blocks: [
         {
           type: "p",
-          text: "You get **90 questions** in **120 minutes**. Only 80 are scored; 10 are pilot questions that do not count toward your grade. You will not know which is which.",
+          text: "You get **90 multiple-choice questions**. Only 80 are scored; 10 are pilot questions that do not count toward your grade. You will not know which is which.",
         },
         {
           type: "p",
-          text: "The current ServSafe FAQ sets the passing score at **70%** (56 of 80 scored questions correct). The older 2020 Examinee Handbook PDF still prints 75%. The exam is available in paper, computer, and online proctored formats.",
+          text: "The ServSafe FAQ sets the passing score at **70%** (56 of 80 scored questions correct). You take it on paper or online, always with a Registered ServSafe Proctor; online exams go through ProctorU. Online languages are English, Spanish and Chinese.",
         },
         {
           type: "p",
-          text: "The content breaks down into seven sections:",
+          text: "ServSafe's Manager Exam Blueprint (linked from its FAQ) sets out the content areas. They cover topics such as:",
         },
         {
           type: "ol",
@@ -54,7 +55,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
         },
         {
           type: "p",
-          text: "Sections 1, 4, and 5 carry the most weight. If you are short on time, study those first.",
+          text: "Check the current blueprint for how the areas are weighted before you plan your time.",
         },
       ],
     },
@@ -70,25 +71,25 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
               bullets: [
                 "Cold holding: 41°F (5°C) or below",
                 "Hot holding: 135°F (57°C) or above",
-                "Ground beef, pork, lamb: 155°F for 15 seconds",
+                "Ground (comminuted) meats: 155°F for 17 seconds",
                 "Poultry, stuffed meats, casseroles: 165°F for less than 1 second (instantaneous)",
-                "Whole cuts of beef, pork, lamb, fish: 145°F for 15 seconds",
-                "Reheating for hot holding: 165°F within 2 hours",
-                "TCS foods in the Danger Zone: 41°F to 135°F (discard after 4 hours, or 6 hours with time as a control)",
+                "Fish and intact meats: 145°F for 15 seconds",
+                "Reheating for hot holding: 165°F for 15 seconds, reached within 2 hours",
+                "Time as a public health control: up to 4 hours, or up to 6 hours for cold food that stays at 70°F or below (FDA Food Code 3-501.19)",
               ],
             },
             {
               title: "pH and Water Activity",
               body: "",
               bullets: [
-                "Pathogens grow best at pH 4.6 to 7.5",
-                "Most bacteria need water activity (aw) above 0.85",
-                "These numbers show up in questions about preservation and shelf stability",
+                "The FDA Food Code decides whether a food needs time/temperature control from its pH and water activity together (the tables in its TCS food definition)",
+                "pH 4.6 is a key cut-off in those tables",
+                "Expect questions about preservation and shelf stability",
               ],
             },
             {
               title: "The Big Six Pathogens",
-              body: "The exam loves these. Know which ones require exclusion from the operation (Salmonella Typhi, Shigella, E. coli O157:H7, Hepatitis A) and which require restriction (Norovirus, Nontyphoidal Salmonella).",
+              body: "Know when the FDA Food Code (§ 2-201.12) requires excluding a sick employee versus restricting them. It depends on the symptoms, the diagnosis and whether you serve a highly susceptible population.",
               bullets: [
                 "Salmonella Typhi",
                 "Shigella spp.",
@@ -120,10 +121,10 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
           rows: [
             ["Cold holding", "41°F (5°C) or below", "Continuous"],
             ["Hot holding", "135°F (57°C) or above", "Continuous"],
-            ["Ground meats", "155°F", "15 seconds"],
-            ["Poultry / stuffed foods", "165°F", "15 seconds"],
-            ["Whole cuts / fish", "145°F", "15 seconds"],
-            ["Reheat for hot holding", "165°F", "Within 2 hours"],
+            ["Ground meats", "155°F", "17 seconds"],
+            ["Poultry / stuffed foods", "165°F", "< 1 second"],
+            ["Fish / intact meats", "145°F", "15 seconds"],
+            ["Reheat for hot holding", "165°F for 15 seconds", "Within 2 hours"],
           ],
         },
       ],
@@ -148,7 +149,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
             },
             {
               title: "Day 4: Cleaning, Sanitizing, and Pest Control",
-              body: "Know the difference between cleaning (removing visible soil) and sanitizing (reducing pathogens to safe levels). Three-compartment sink order: wash, rinse, sanitize, air dry. Chemical sanitizer concentrations: chlorine 50–100 ppm, quaternary ammonium 200 ppm, iodine 12.5–25 ppm.",
+              body: "Know the difference between cleaning (removing visible soil) and sanitizing (reducing pathogens to safe levels). Three-compartment sink order: wash, rinse, sanitize, air dry. Use sanitizer at the concentration on the label and check it with test strips; the correct range depends on the chemical, the water temperature and the pH.",
             },
             {
               title: "Day 5: HACCP and Management Systems",
@@ -215,7 +216,7 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
     {
       question: "How long is the ServSafe Manager certification valid?",
       answer:
-        "5 years. Some states or employers require renewal sooner. Check your local health department rules.",
+        "Check the date on your certificate and your state or local rules; ServSafe lets you retest when your certification is expiring.",
     },
     {
       question: "Can I take the ServSafe Manager exam without the course?",
@@ -230,14 +231,14 @@ export const servsafeManagerStudyGuidePost: BlogPostDraft = {
     {
       question: "How many times can I retake the ServSafe Manager exam?",
       answer:
-        "There is no lifetime limit, but you must wait 24 hours between attempts and pay the exam fee each time.",
+        "You can take it twice within 30 days. After a second fail you must wait 60 days, and no more than 4 attempts are allowed in 12 months. Each retake needs a new exam purchase (ServSafe FAQ, checked 24 Nov 2026).",
     },
     {
       question: "Is the ServSafe exam the same in every state?",
       answer:
-        "The national exam is standardized, but some states (California, Texas, Florida) have additional requirements or accept only specific proctors. Verify with your local health department.",
+        "The exam is the same, but requirements differ by state. ServSafe points you to its regulatory requirements map; for Florida, see the Florida requirements guide.",
     },
   ],
   bottomLine:
-    "ServSafe Manager is a test of memorization dressed up as a test of judgment. Know your temperatures, know the Big Six, know HACCP, and you will pass. Use a practice test to find your holes, then patch them with flashcards. Do not study what you already know.",
+    "ServSafe Manager is a test of memorization dressed up as a test of judgment. Know your temperatures, know the Big Six, know HACCP, and you will pass. Use a practice test to find your holes, then patch them with flashcards. Do not study what you already know. Sources: [ServSafe Manager FAQs](https://www.servsafe.com/ServSafe-Manager/FAQs) and [FDA Food Code 2022](https://www.fda.gov/food/fda-food-code/food-code-2022), checked 24 Nov 2026.",
 };

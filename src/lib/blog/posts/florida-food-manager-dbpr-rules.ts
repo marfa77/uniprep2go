@@ -8,6 +8,7 @@ export const floridaFoodManagerDbprRulesPost: BlogPostDraft = {
   metaDescription:
     "Florida does not require ServSafe. It requires an ANAB-CFP accredited exam. Here is the 30-day rule, the 4-employee rule, and why most people overpay for training they do not need.",
   publishedAt: "2026-07-27",
+  contentUpdated: "2026-11-24",
   eyebrow: "Florida DBPR · Food manager certification",
   clusterId: "servsafe",
   relatedSlugs: [
@@ -16,7 +17,7 @@ export const floridaFoodManagerDbprRulesPost: BlogPostDraft = {
     "servsafe-manager-exam-study-guide-2026",
   ],
   intro:
-    "If you search \"Florida food manager certification,\" every result tells you to buy ServSafe. That is wrong. The Florida Department of Business and Professional Regulation (DBPR) does not require ServSafe. It requires a **Certified Food Protection Manager (CFPM)** credential from **any** ANAB-CFP accredited exam provider. ServSafe is one of about thirteen. This guide clears up the five things that cost Florida food service workers time and money: the 30-day rule, the 4-employee rule, the training myth, the accreditation trap, and what actually happens during a DBPR inspection.",
+    "Many guides tell Florida managers to buy ServSafe. The law does not say that. Section 509.039 of the Florida Statutes requires every manager of a chapter 509 food service establishment to pass a test approved by the Conference for Food Protection within 30 days of starting. ServSafe Manager is one such test, not the only one. This guide reads the statute line by line, shows what it leaves to DBPR's rule, and lists the questions to ask any accredited provider.",
   mockSlug: "servsafe-manager-mock",
   deckSlug: "servsafe-manager-anki-deck",
   cta: {
@@ -27,325 +28,113 @@ export const floridaFoodManagerDbprRulesPost: BlogPostDraft = {
   },
   sections: [
     {
-      heading: "What Florida Actually Requires",
+      heading: "What does section 509.039 actually say?",
       blocks: [
         {
           type: "p",
-          text: "Florida law is specific. Here is the breakdown without the sales pitch:",
-        },
-        {
-          type: "table",
-          caption: "Florida CFPM requirements at a glance",
-          headers: ["Requirement", "Rule", "Source"],
-          rows: [
-            [
-              "Who needs it",
-              "Every licensed food service establishment must have at least one CFPM",
-              "Section 509.039, Florida Statutes",
-            ],
-            [
-              "When",
-              "Within 30 days of employment (new managers) or before opening (new establishments)",
-              "Rule 61C-4.023, F.A.C.",
-            ],
-            [
-              "Presence rule",
-              "CFPM must be on-site when 4 or more employees are working",
-              "DBPR / Rule 61C-4.023",
-            ],
-            [
-              "Exam standard",
-              "ANAB-CFP accredited Food Protection Manager exam",
-              "DBPR approved list",
-            ],
-            [
-              "Training required?",
-              "No. Only the exam is mandatory.",
-              "Florida Department of Health",
-            ],
-            ["Validity", "5 years", "DBPR"],
-          ],
-        },
-        {
-          type: "p",
-          text: "That is it. No state-mandated classroom hours. No required ServSafe course. No DBPR-approved training curriculum. Pass an accredited exam, get your certificate, hang it where the inspector can see it. Always verify the current DBPR accredited list before you buy.",
-        },
-      ],
-    },
-    {
-      heading: "The ServSafe Myth",
-      blocks: [
-        {
-          type: "p",
-          text: "Most Florida managers believe ServSafe is the only option because:",
-        },
-        {
-          type: "ol",
-          items: [
-            "**Employers ask for it by name.** They do not know the law. They see \"ServSafe\" on other resumes and copy it.",
-            "**ServSafe markets aggressively** to restaurants through the National Restaurant Association.",
-            '**Competitor sites** rank for "Florida ServSafe" and never mention alternatives.',
-          ],
-        },
-        {
-          type: "p",
-          text: "Here is the reality: DBPR publishes a list of accredited examination programs. As of 2026, it includes ServSafe, National Registry of Food Safety Professionals (NRFSP), 360training/Learn2Serve, Always Food Safe, State Food Safety, AAA Food Handler, and others.",
-        },
-        {
-          type: "p",
-          text: "The exam content is standardized through ANAB-CFP accreditation. A manager who passes the NRFSP exam knows the same food safety principles as a manager who passes ServSafe. The certificate carries identical legal weight in Florida.",
-        },
-        {
-          type: "p",
-          text: "**What this means for you:** If you are confident in your food safety knowledge, you can sit for an exam-only option through an alternative provider for roughly $60–$80 instead of buying a $179 ServSafe bundle.",
-        },
-      ],
-    },
-    {
-      heading: "The 30-Day Rule (and What Happens If You Miss It)",
-      blocks: [
-        {
-          type: "p",
-          text: "Florida gives new managers **30 days** from the date of hire to become certified. New establishments get 30 days from opening.",
-        },
-        {
-          type: "p",
-          text: "This is not a suggestion. During a DBPR Division of Hotels and Restaurants inspection, the inspector will ask for:",
+          text: "**Florida only.** The statute behind Florida's food manager requirement is short. Read line by line, it sets out six things:",
         },
         {
           type: "ul",
           items: [
-            "The name of your CFPM",
-            "The certificate (original or copy)",
-            "Proof that the CFPM was on site during operational hours (if 4+ employees were present)",
+            "**Standards:** DBPR's Division of Hotels and Restaurants must adopt, by rule, training and certification standards for food service managers that are consistent with the Conference for Food Protection's accreditation standards.",
+            "**The test:** passing a test **approved by the Conference for Food Protection** shows a manager knows basic food protection practices.",
+            "**Who certifies:** the division may contract with one organization and may also accept other organizations whose programs meet the same requirements.",
+            "**Who must pass:** all managers employed by an establishment regulated under chapter 509.",
+            "**Deadline:** **30 days after employment**.",
+            "**Proof:** establishments must provide proof of certification on request, including at a division inspection.",
           ],
         },
         {
           type: "p",
-          text: "If you do not have a certified manager within 30 days, the violation goes on your inspection report. Repeated violations can lead to fines or license suspension.",
-        },
-        {
-          type: "p",
-          text: "**The workaround no one tells you:** If you have already passed an ANAB-CFP accredited exam in another state, that certificate is typically valid in Florida. DBPR accepts out-of-state CFPM credentials as long as they meet the accreditation standard — confirm with DBPR if your certificate is older or from an unusual provider.",
+          text: "The statute also lets the division charge the contracted organization up to **$5 per certified test** for administration. That is a fee between the division and the provider, not the exam price you pay.",
         },
       ],
     },
     {
-      heading: "The 4-Employee Rule",
+      heading: "So do you need ServSafe?",
       blocks: [
         {
           type: "p",
-          text: "This is where most establishments get cited.",
-        },
-        {
-          type: "p",
-          text: "DBPR requires that a CFPM be **physically present** whenever **four or more employees** are simultaneously engaged in food preparation, storage, or service.",
-        },
-        {
-          type: "p",
-          text: "If you have three employees on the line, no CFPM is required on site. The moment a fourth person clocks in — including dishwashers, prep cooks, or servers handling food — a certified manager must be there.",
-        },
-        {
-          type: "ul",
-          items: [
-            "A CFPM who works opening shift cannot leave before the lunch rush if that pushes the floor staff above three people.",
-            "A single CFPM covering two locations violates the rule if both locations hit 4+ employees at the same time.",
-            "Bars and lounges that only serve pre-packaged, non-hazardous foods may be exempt from the CFPM requirement — verify your license type with DBPR.",
-          ],
+          text: "No brand is named in the law. What counts is a **CFP-approved** manager test from a program the division accepts. ServSafe Manager is one: ServSafe says its certification is accredited by the ANSI National Accreditation Board under CFP standards. Others exist, so compare what your employer accepts, how soon you can test, and whether you can test online.",
         },
       ],
     },
     {
-      heading: "Do You Need the Class or Just the Exam?",
+      heading: "What does the statute leave to DBPR's rule?",
       blocks: [
         {
           type: "p",
-          text: "Florida does not require training. The Department of Health explicitly states that individuals are not required to attend an examination preparation or training course.",
-        },
-        {
-          type: "p",
-          text: "However, the exam is proctored and closed-book. Accredited Manager exams typically use around 90 multiple-choice questions with a 70–75% pass bar depending on the provider. If you fail, you pay again.",
-        },
-        {
-          type: "topics",
-          items: [
-            {
-              title: "When to skip training",
-              body: "",
-              bullets: [
-                "You have managed food service before and know HACCP, temperatures, and sanitizing cold.",
-                "You are renewing an expired certificate and need a refresher, not a lecture.",
-              ],
-            },
-            {
-              title: "When to take training",
-              body: "",
-              bullets: [
-                "You are new to food management.",
-                "You have failed the exam before.",
-                "Your employer reimburses the cost.",
-              ],
-            },
-          ],
-        },
-        {
-          type: "p",
-          text: "**The math:** Training + exam bundles run $129–$179. Exam-only options run $69–$99. If you are confident, buy the exam. If you are not confident, buy the bundle. Do not let a provider tell you the state requires the course. It does not.",
+          text: "Details such as how many certified managers an establishment needs on duty, which records to keep, and employee food safety training sit in the division's rule, **Florida Administrative Code 61C-4.023** (\"Food Protection Manager Certification and Public Food Service Employee Training\"), last amended 29 April 2015. Read the current text on flrules.org or ask DBPR rather than relying on summaries; we could not open DBPR's own pages to confirm them when we checked.",
         },
       ],
     },
     {
-      heading: "What the DBPR Inspector Actually Checks",
-      blocks: [
-        {
-          type: "p",
-          text: "During a routine inspection, the DBPR inspector uses Form HR 5030-080 to verify food manager compliance. They check:",
-        },
-        {
-          type: "ol",
-          items: [
-            "**Certificate on file.** Is there a current CFPM certificate for the establishment? Digital copies are accepted.",
-            "**Name match.** Does the certificate name match the person listed as the manager on duty?",
-            "**Date valid.** Is the certificate less than 5 years old?",
-            "**Presence log.** If cited previously, do time cards show the CFPM was present during 4+ employee shifts?",
-          ],
-        },
-        {
-          type: "p",
-          text: "They do **not** check which provider issued the certificate, whether you took a training course, or your exam score (as long as you passed). A $79 NRFSP certificate and a $179 ServSafe certificate look identical to the inspector.",
-        },
-      ],
-    },
-    {
-      heading: "The Three-Agency Confusion",
+      heading: "How do you compare accredited exam providers?",
       blocks: [
         {
           type: "table",
-          caption: "Which Florida agency licenses your workplace?",
-          headers: ["Agency", "Jurisdiction", "What they require"],
+          caption: "What to check, with ServSafe Manager as the example (servsafe.com, checked 24 Nov 2026)",
+          headers: ["Question to ask", "ServSafe Manager answer"],
           rows: [
-            [
-              "DBPR",
-              "Hotels, restaurants, most food service",
-              "CFPM (ANAB-CFP exam)",
-            ],
-            [
-              "Florida Department of Health",
-              "Schools, hospitals, civic organizations",
-              "Food manager certification; training optional",
-            ],
-            [
-              "FDA (adopted via state law)",
-              "Baseline standards",
-              "Food Code baseline used by accredited exams",
-            ],
+            ["Is it ANAB-accredited under CFP?", "Yes"],
+            ["What is the pass mark?", "70%: 56 of 80 scored questions (90 asked, 10 pilots)"],
+            ["Can I test online?", "Only through ProctorU; other proctors must be physically present"],
+            ["What if I fail?", "Two attempts in 30 days, then a 60-day wait; at most 4 attempts in 12 months"],
+            ["Which languages?", "Online: English, Spanish, Chinese; more on paper"],
           ],
         },
         {
           type: "p",
-          text: "This creates chaos. A manager moving from a hospital (DOH) to a restaurant (DBPR) may assume the rules are the same. They are not. DBPR has stricter presence requirements and a specific accredited-exam list. Always verify which agency licenses your establishment before you schedule an exam.",
+          text: "Ask every provider the same questions. With a 30-day deadline, the retake rules matter as much as the price.",
         },
       ],
     },
     {
-      heading: "How to Pass the Florida Food Manager Exam on the First Try",
+      heading: "How should you prepare?",
       blocks: [
         {
-          type: "p",
-          text: "Whether you choose ServSafe, NRFSP, or another provider, the exam content is nearly identical because the ANAB-CFP standard is national. The heavy topics are:",
-        },
-        {
-          type: "topics",
+          type: "steps",
           items: [
-            {
-              title: "Temperatures (highest yield)",
-              body: "",
-              bullets: [
-                "Cold holding: 41°F or below",
-                "Hot holding: 135°F or above",
-                "Ground meat: 155°F for 15 seconds",
-                "Poultry and stuffed items: 165°F for less than 1 second (instantaneous)",
-                "Reheating: 165°F within 2 hours",
-              ],
-            },
-            {
-              title: "The Big Six Pathogens",
-              body: "Salmonella Typhi, Shigella, E. coli O157:H7, Hepatitis A, Norovirus, Nontyphoidal Salmonella. Know which require exclusion from the operation versus restriction.",
-            },
-            {
-              title: "HACCP",
-              body: "All seven principles in order. At least one question will ask you to identify the Critical Control Point in a scenario.",
-            },
-            {
-              title: "Chemical Sanitizer Concentrations",
-              body: "",
-              bullets: [
-                "Chlorine: 50–100 ppm",
-                "Quaternary ammonium: 200 ppm",
-                "Iodine: 12.5–25 ppm",
-              ],
-            },
+            { title: "Start on day one of the job", body: "The 30 days run from employment, so book a date early." },
+            { title: "Find your gaps", body: "Take the free [ServSafe Manager mock](/mock-exams/servsafe-manager-mock) cold and note weak topics." },
+            { title: "Drill and retest", body: "Use the [ServSafe Manager Anki deck](/decks/servsafe-manager-anki-deck), then take another timed mock until you are clearly above 70%." },
+            { title: "Keep proof on site", body: "Have the certificate ready for inspection." },
           ],
         },
         {
           type: "p",
-          text: "Study strategy: Run a free timed practice test cold. Score below 70%? You have content gaps. Drill weak topics with flashcards for 3 days, then retake. Do not memorize answers — understand why the distractors are wrong.",
+          text: "Deciding between a course and exam-only? See [ServSafe Manager Florida requirements](/blog/servsafe-manager-florida-requirements-2026).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "Does Florida require ServSafe specifically?",
-      answer:
-        "No. Florida requires an ANAB-CFP accredited Certified Food Protection Manager exam. ServSafe is one of about thirteen accredited providers accepted by DBPR.",
+      question: "Does Florida require ServSafe?",
+      answer: "No. Section 509.039 requires a test approved by the Conference for Food Protection; it does not name a provider (checked 24 Nov 2026).",
     },
     {
-      question: "How long do I have to get certified after being hired as a manager in Florida?",
-      answer:
-        "30 days. New establishments also have 30 days from opening. After that, DBPR can cite you during inspection.",
+      question: "How long do I have to get certified in Florida?",
+      answer: "30 days after employment, under section 509.039 of the Florida Statutes.",
     },
     {
-      question: "Can I take the Florida food manager exam online?",
-      answer:
-        "Yes, through accredited providers that offer remote proctoring. The exam itself is online, but a live proctor monitors you via webcam. In-person testing is also available.",
+      question: "Who must be certified?",
+      answer: "All managers employed by a food service establishment regulated under chapter 509 of the Florida Statutes.",
     },
     {
-      question: "Is food manager training required by Florida law?",
-      answer:
-        "No. Only the exam is required. Training is optional but recommended if you are new to food safety management.",
+      question: "Where are the staffing and training rules?",
+      answer: "In DBPR's rule, Florida Administrative Code 61C-4.023, last amended 29 April 2015. Check the current text on flrules.org or with DBPR.",
     },
     {
-      question: "What is the passing score for the Florida food manager exam?",
-      answer:
-        "Typically 70–75% depending on the accredited provider. Most Manager exams use around 90 questions and a timed sitting.",
+      question: "What is the $5 fee in the statute?",
+      answer: "The division may charge the organization it contracts with up to $5 per certified test to cover its administrative costs. It is not the candidate's exam fee.",
     },
     {
-      question: "How long is a Florida food manager certification valid?",
-      answer:
-        "5 years from the date you pass the exam. Renewal requires retaking and passing the same type of accredited exam.",
-    },
-    {
-      question: "Does my food manager certification from another state work in Florida?",
-      answer:
-        "Yes, if it was issued through an ANAB-CFP accredited exam. DBPR accepts out-of-state CFPM certificates that meet the national accreditation standard.",
-    },
-    {
-      question: "What happens if I fail the food manager exam in Florida?",
-      answer:
-        "You must pay the exam fee again and reschedule. Some providers include a free retake in their bundle; others charge full price. Check before you buy.",
-    },
-    {
-      question: "Who is exempt from Florida food manager certification?",
-      answer:
-        "Temporary food service vendors, vending machine operators, and establishments that only serve pre-packaged, non-hazardous foods are commonly cited as exempt — confirm your license type with DBPR.",
-    },
-    {
-      question: "How many employees can work without a certified manager present in Florida?",
-      answer:
-        "Three. The moment a fourth employee is engaged in food activities, a CFPM must be physically present.",
+      question: "What score do I need?",
+      answer: "That depends on the provider. For ServSafe Manager it is 70%, or 56 of 80 scored questions.",
     },
   ],
   bottomLine:
-    "Florida food manager certification is a regulatory checkbox, not a brand loyalty program. The state cares about the ANAB-CFP accreditation, not the logo on your certificate. Buy the exam, pass it within 30 days, keep a copy on file, and make sure you are on the floor when the fourth employee clocks in. Everything else is upsell.",
+    "Florida asks for a CFP-approved manager test passed within 30 days, not a brand. Sources: [Florida Statutes § 509.039](http://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0509/Sections/0509.039.html), [FAC 61C-4.023 on flrules.org](https://www.flrules.org/gateway/ruleNo.asp?id=61C-4.023), [ServSafe Manager](https://www.servsafe.com/ServSafe-Manager) and [ServSafe Manager FAQs](https://www.servsafe.com/ServSafe-Manager/FAQs), checked 24 Nov 2026.",
 };
