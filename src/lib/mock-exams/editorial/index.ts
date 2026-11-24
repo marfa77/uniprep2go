@@ -28,6 +28,10 @@ import { cdcpMockEditorial } from "./cdcp-readiness-check";
 import { cemEditorial } from "./cem-readiness-check";
 import { electricalJourneymanEditorial } from "./electrical-journeyman-readiness-check";
 import { nnaapCnaEditorial } from "./nnaap-cna-readiness-check";
+import { neboshEditorial } from "./nebosh-readiness-check";
+import { californiaRealEstateEditorial } from "./california-real-estate-readiness-check";
+import { greEditorial } from "./gre-readiness-check";
+import { asptPhlebotomyEditorial } from "./aspt-phlebotomy-readiness-check";
 
 export type { MockEditorialBundle, EditorialFaq, EditorialSection, EditorialSource } from "./types";
 export { resolveWeightTableQuestions } from "./resolve-weight-table";
@@ -63,6 +67,10 @@ const ENRICHMENT_SLUGS = [
   "cem-readiness-check",
   "electrical-journeyman-readiness-check",
   "nnaap-cna-readiness-check",
+  "nebosh-readiness-check",
+  "california-real-estate-readiness-check",
+  "gre-readiness-check",
+  "aspt-phlebotomy-readiness-check",
 ] as const;
 
 export type EnrichmentMockSlug = (typeof ENRICHMENT_SLUGS)[number];
@@ -97,6 +105,10 @@ const bundles: Partial<Record<EnrichmentMockSlug, MockEditorialBundle>> = {
   "cem-readiness-check": cemEditorial,
   "electrical-journeyman-readiness-check": electricalJourneymanEditorial,
   "nnaap-cna-readiness-check": nnaapCnaEditorial,
+  "nebosh-readiness-check": neboshEditorial,
+  "california-real-estate-readiness-check": californiaRealEstateEditorial,
+  "gre-readiness-check": greEditorial,
+  "aspt-phlebotomy-readiness-check": asptPhlebotomyEditorial,
 };
 
 export function getMockEditorialBundle(slug: string): MockEditorialBundle | null {
