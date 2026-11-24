@@ -8,7 +8,7 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
   metaDescription:
     "AssocRICS vs MRICS: what each grade lets you do, UK fees at joining (APC £699, Associate £499, RICS, Nov 2026) and how to move from AssocRICS to MRICS.",
   publishedAt: "2026-07-27",
-  contentUpdated: "2026-11-20",
+  contentUpdated: "2026-11-23",
   eyebrow: "RICS · Chartered surveying",
   clusterId: "mrics",
   relatedSlugs: [
@@ -81,6 +81,66 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
       ],
     },
     {
+      heading: "What goes into the APC written submission?",
+      blocks: [
+        {
+          type: "p",
+          text: "RICS's APC submission guidance (APC Candidate Guide published 10 August 2026) sets these requirements before the final interview:",
+        },
+        {
+          type: "ul",
+          items: [
+            "**Summary of experience:** a statement for each competency at your pathway's level. Mandatory competencies are limited to **1,500 words**; technical (core and optional) competencies to **4,000 words maximum**.",
+            "**Case study:** **3,000 words maximum**, on a project you were personally involved in during the **24 months** before your submission date.",
+            "**CPD record:** at least **50% formal** on every route; **96 hours** (48 a year) on APC 24 and **48 hours** on APC 12, non-structured and preliminary-review routes.",
+            "**Professionalism module:** completed before the assessment.",
+            "**Proposer and seconders:** three Chartered Surveyors (MRICS or FRICS), at least one from a different firm.",
+            "**Work experience record:** diary and logbook for APC 12 and APC 24 candidates.",
+          ],
+        },
+        {
+          type: "p",
+          text: "Competencies are assessed at Level 1 (knowledge and understanding), Level 2 (application) and Level 3 (reasoned advice). You can make up to **five attempts** at the assessment; attempts before 1 January 2026 don't count.",
+        },
+      ],
+    },
+    {
+      heading: "What happens in the 60-minute APC interview?",
+      blocks: [
+        {
+          type: "table",
+          caption: "APC final assessment interview structure (RICS)",
+          headers: ["Part", "Minutes"],
+          rows: [
+            ["Your case study presentation (exactly 10 minutes)", "10"],
+            ["Questions on the presentation", "10"],
+            ["Overall experience, CPD, technical competencies, Rules of Conduct and professional practice", "30"],
+            ["Chair's questions and close", "10"],
+          ],
+        },
+        {
+          type: "p",
+          text: "Rehearse the presentation to time and test your knowledge before interview with the [MRICS APC practice test](/mock-exams/mrics-readiness-check), or the [MRICS QS practice test](/mock-exams/mrics-quantity-surveying-readiness-check) on the Quantity Surveying pathway. For daily recall, use the [MRICS deck](/decks/mrics-anki-deck) or the [MRICS QS deck](/decks/mrics-quantity-surveying-anki-deck).",
+        },
+      ],
+    },
+    {
+      heading: "Which APC route fits your experience?",
+      blocks: [
+        {
+          type: "table",
+          caption: "Minimum experience by APC route (RICS)",
+          headers: ["Route", "Minimum experience"],
+          rows: [
+            ["APC 24 (structured training)", "2 years at final assessment"],
+            ["APC 12 (structured training)", "5 years at final assessment"],
+            ["APC Preliminary (preliminary review)", "5 years at final assessment"],
+            ["APC Non-Structured Training", "10 years on enrolment"],
+          ],
+        },
+      ],
+    },
+    {
       heading: "What each grade lets you do",
       blocks: [
         {
@@ -92,11 +152,11 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
           items: [
             {
               title: "AssocRICS pathway",
-              body: "Typically about one year of relevant experience → Associate assessment (online case study and interview) → election fee after pass. Paid at enrolment as £362 + £137 in the UK (2027 candidate subscription table).",
+              body: "Associate assessment (online case study and interview) → election fee after pass. Paid at enrolment as £362 + £137 in the UK (2027 candidate subscription table).",
             },
             {
               title: "MRICS APC pathway",
-              body: "Employment with RICS-approved training support → APC registration → structured training (often ~24 months) → written APC submission → final assessment interview with RICS assessors. UK joining total £520 + £179 at enrolment on standard APC routes.",
+              body: "Employment with RICS-approved training support → APC registration → structured training (12 or 24 months on the APC 12 and APC 24 routes) → written APC submission → final assessment interview with RICS assessors. UK joining total £520 + £179 at enrolment on standard APC routes.",
             },
           ],
         },
@@ -146,7 +206,7 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
           type: "ul",
           items: [
             "Technical, non-valuation role (building pathology, property management, rural practice)",
-            "About one year of experience and need RICS membership for a job requirement",
+            "Need RICS membership for a job requirement sooner than an APC route would allow",
             "Employer asks for \"RICS membership\" without specifying MRICS",
             "You accept Associate limits on chartered signing authority",
           ],
@@ -193,7 +253,21 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
     {
       question: "How long does the MRICS APC take?",
       answer:
-        "Most candidates on structured training allow roughly two to three years from APC registration to final interview, depending on pathway and employer support. Senior Professional and Specialist routes have different timelines — confirm your route on rics.org.",
+        "RICS sets minimum experience by route rather than a fixed duration: APC 24 needs at least 2 years of experience at final assessment, APC 12 and APC Preliminary at least 5 years, and APC Non-Structured Training at least 10 years on enrolment (RICS, checked 23 Nov 2026).",
+    },
+    {
+      question: "What is the APC case study word limit?",
+      answer:
+        "3,000 words maximum, on a project from the 24 months before your submission date. The summary of experience allows 1,500 words for mandatory competencies and up to 4,000 for technical competencies (RICS, checked 23 Nov 2026).",
+    },
+    {
+      question: "How long is the APC final assessment interview?",
+      answer:
+        "60 minutes: a 10-minute case study presentation, 10 minutes of questions on it, 30 minutes on your wider experience, CPD and ethics, and 10 minutes with the chair.",
+    },
+    {
+      question: "How many times can I attempt the RICS assessment?",
+      answer: "Up to five attempts. Attempts made before 1 January 2026 do not count toward the limit.",
     },
     {
       question: "Is AssocRICS worth it if I plan to get MRICS later?",
@@ -207,5 +281,5 @@ export const mricsApcVsAssocricsPost: BlogPostDraft = {
     },
   ],
   bottomLine:
-    "AssocRICS is faster and cheaper at joining (£499 on RICS's UK table) but stops short of Chartered Surveyor status. MRICS costs more upfront at enrolment (£699 on the same table) and takes longer through structured APC training, but it is the grade most employers name for valuation and senior consultancy. If MRICS is the destination, treat AssocRICS as a deliberate pause — not a discount APC.",
+    "AssocRICS is faster and cheaper at joining (£499 on RICS's UK table) but stops short of Chartered Surveyor status. MRICS costs more upfront at enrolment (£699 on the same table) and takes longer through structured APC training, but it is the grade most employers name for valuation and senior consultancy. If MRICS is the destination, treat AssocRICS as a deliberate pause — not a discount APC. Sources: [RICS join fees](https://www.rics.org/join-rics/join-fees) (checked 20 Nov 2026), [APC submissions and assessment](https://www.rics.org/candidates/assessment-information/apc-submissions-assessment) and [CPD for candidates](https://www.rics.org/candidates/recording-cpd-activities-for-candidates) (checked 23 Nov 2026).",
 };

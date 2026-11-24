@@ -65,6 +65,7 @@ describe("blog guides", () => {
       "epa-608-practice-test-what-to-expect",
       "servsafe-manager-exam-study-guide-2026",
       "finra-sie-exam-prep-why-people-fail",
+      "finra-exam-retake-waiting-period-2027",
     ]);
 
     for (const post of posts) {
@@ -219,6 +220,7 @@ describe("blog guides", () => {
       "cfa-level-1-vs-frm-part-1-which-to-choose",
     ]);
     expect(getBlogPostsByCluster("finra-sie").map((post) => post.slug).sort()).toEqual([
+      "finra-exam-retake-waiting-period-2027",
       "finra-options-questions-read-without-getting-tricked",
       "finra-sie-exam-prep-why-people-fail",
     ]);
@@ -445,6 +447,7 @@ describe("blog guides", () => {
     );
     expect(getBlogPostsForMockSlug("cdcp-readiness-check")).toHaveLength(1);
     expect(getBlogPostsForMockSlug("sie-full-mock").map((p) => p.slug).sort()).toEqual([
+      "finra-exam-retake-waiting-period-2027",
       "finra-options-questions-read-without-getting-tricked",
       "finra-sie-exam-prep-why-people-fail",
     ]);
@@ -515,5 +518,41 @@ describe("blog guides", () => {
     expect(
       fitSeoTitle("Exam Prep Guides | Citizenship, SIE, ServSafe", 60).length,
     ).toBeLessThanOrEqual(60);
+  });
+});
+
+describe("overnight WP2/WP3 blog rewrites", () => {
+  const text = (slug: string) => {
+    const post = getBlogPostBySlug(slug)!;
+    return JSON.stringify([post.intro, post.sections, post.faqs, post.bottomLine]);
+  };
+
+  it("adds the FINRA retake post with FINRA-only scope and FAQ entries (FAQPage JSON-LD source)", () => {
+    const post = getBlogPostBySlug("finra-exam-retake-waiting-period-2027")!;
+    expect(post.faqs.map((f) => f.question)).toContain("Does the change apply to the Series 63, 65 or 66?");
+    expect(text(post.slug)).toContain("4 Jan 2027");
+    expect(text(post.slug)).toContain("https://www.finra.org/rules-guidance/notices/26-18");
+    expect(fitSeoTitle(post.titleTag, 60)).toBe("FINRA Exam Retake Wait Drops to 15 Days on Jan 19, 2027");
+  });
+
+  it("MRICS post carries the RICS APC submission and interview facts", () => {
+    const post = getBlogPostBySlug("mrics-apc-vs-assocrics-pathway-cost")!;
+    expect(post.sections.map((s) => s.heading)).toContain("What happens in the 60-minute APC interview?");
+    expect(post.faqs.map((f) => f.question)).toContain("What is the APC case study word limit?");
+    expect(text(post.slug)).toContain("/mock-exams/mrics-quantity-surveying-readiness-check");
+    expect(text(post.slug)).not.toMatch(/two to three years|about one year of relevant experience/);
+  });
+
+  it("CDL HazMat post uses TSA's eight state-run states and 60-day guidance", () => {
+    const body = text("cdl-hazmat-endorsement-state-fingerprinting-background-check");
+    expect(body).toContain("Florida, Kentucky, Maryland, New York, Pennsylvania, Texas, Virginia and Wisconsin");
+    expect(body).not.toMatch(/Seventeen states|Illinois, Indiana|30–45 days|\$150–\$275/);
+  });
+
+  it("CFA vs FRM post drops pass rates and unsourced estimates", () => {
+    const body = text("cfa-level-1-vs-frm-part-1-which-to-choose");
+    expect(body).not.toMatch(/pass rate|~36|~45|estimated ~|\$5,000|1,500 hours/i);
+    expect(body).toContain("8–13 May");
+    expect(body).toContain("Ethical and Professional Standards 10–15%");
   });
 });

@@ -18,6 +18,7 @@ import { epa608PracticeTestPost } from "./posts/epa-608-practice-test";
 import { epa608Type1VsType2Post } from "./posts/epa-608-type-1-vs-type-2";
 import { finraOptionsQuestionsPost } from "./posts/finra-options-questions";
 import { finraSieExamPrepPost } from "./posts/finra-sie-exam-prep";
+import { finraRetakeWaitingPeriodPost } from "./posts/finra-exam-retake-waiting-period";
 import { finlandKansalaisuuskoePost } from "./posts/finland-kansalaisuuskoe";
 import { floridaFoodManagerDbprRulesPost } from "./posts/florida-food-manager-dbpr-rules";
 import { lebenInDeutschlandEnglishPrepPost } from "./posts/leben-in-deutschland-english-prep";
@@ -126,6 +127,7 @@ const blogPostDrafts: BlogPostDraft[] = [
   epa608PracticeTestPost,
   servsafeManagerStudyGuidePost,
   finraSieExamPrepPost,
+  finraRetakeWaitingPeriodPost,
 ];
 
 /** Newest first — used by /blog index, sitemap, and llms.txt. */

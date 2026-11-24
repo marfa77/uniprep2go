@@ -1,5 +1,7 @@
 import type { BlogPostDraft } from "../types";
 
+const CHECKED = "23 Nov 2026";
+
 export const cfaVsFrmPost: BlogPostDraft = {
   slug: "cfa-level-1-vs-frm-part-1-which-to-choose",
   title: "CFA Level 1 vs FRM Part 1: If You Can Only Study for One",
@@ -7,6 +9,7 @@ export const cfaVsFrmPost: BlogPostDraft = {
   metaDescription:
     "CFA Level 1 registration is $1,140 (early) or $1,490 (standard) in 2026 — no enrollment fee — and takes ~300 hours. FRM Part 1 costs $1,000 and takes 200 hours. Here is which one moves your resume, and which one is a half-finished credential.",
   publishedAt: "2026-07-28",
+  contentUpdated: "2026-11-23",
   eyebrow: "Finance credentials · CFA vs FRM",
   clusterId: "cfa-frm",
   relatedSlugs: [
@@ -14,235 +17,191 @@ export const cfaVsFrmPost: BlogPostDraft = {
     "finra-sie-exam-prep-why-people-fail",
   ],
   intro:
-    "**Most finance professionals do not have 1,500 hours and $5,000 for both the CFA charter and the FRM.** They have one slot — one exam, one credential, one resume line — and it needs to count. CFA Level 1 and FRM Part 1 look similar on paper: multiple-choice, computer-based, quantitative. They lead to different doors. CFA Level 1 starts a three-level marathon toward portfolio management and equity research. FRM Part 1 starts a two-part sprint toward risk management and regulatory compliance. One is generalist; the other is specialist. Stop after Level 1 or Part 1 and the market treats them very differently. This guide covers real cost, time, pass rates, and employer filters so you do not waste six months on the wrong building.",
+    "**CFA Level I and FRM Part I are both computer-based, multiple-choice and quantitative, but they start different credentials.** Level I is the first of three CFA Program exams, built around investment analysis across ten topics. FRM Part I is the first of two GARP exams, built around risk measurement across four topics. Below: format, 2027 dates and fees, what each tests, and how each leads to the full credential, using CFA Institute and GARP figures checked " +
+    CHECKED +
+    ". To see where your gaps are before you pay, try the [CFA Level I practice test](/mock-exams/cfa-level-1-readiness-check) or the [FRM Part I practice test](/mock-exams/frm-part-1-readiness-check).",
   mockSlug: "cfa-level-1-readiness-check",
   deckSlug: "cfa-level-1-anki-deck",
   cta: {
     mockLabel: "CFA Level 1 practice test",
     deckLabel: "Drill CFA Level 1 with Anki",
     summary:
-      "Not sure where your quantitative gaps are? The free start on either exam is 25 questions. Then drill weak topics in the matching Anki deck before you commit $1,000+ to registration.",
+      "Not sure which exam fits? Take the free start of both practice tests, then drill weak topics in the matching deck before you register.",
     extraLinks: [
       {
         href: "/mock-exams/cfa-level-1-readiness-check",
         label: "CFA Level 1 practice test — free 25 questions, no signup",
       },
       {
-        href: "/decks/cfa-level-1-pass-pack",
-        label: "CFA L1 Pass Pack — Anki + formula PDF ($29)",
+        href: "/decks/cfa-level-1-anki-deck",
+        label: "CFA Level 1 Anki deck",
       },
       {
         href: "/mock-exams/frm-part-1-readiness-check",
-        label: "FRM Part 1 mock test — 25 questions free, no signup",
+        label: "FRM Part 1 practice test — free 25 questions, no signup",
       },
       {
         href: "/decks/frm-part-1-anki-deck",
-        label: "FRM Part 1 Anki deck — 444 cards, $9.99",
+        label: "FRM Part 1 Anki deck",
       },
     ],
   },
   sections: [
     {
-      heading: "What Each Exam Actually Tests",
+      heading: "How do the two exams compare on format?",
       blocks: [
         {
           type: "table",
-          caption: "CFA Level 1 vs FRM Part 1 at a glance",
-          headers: ["", "CFA Level 1", "FRM Part 1"],
+          caption: "CFA Level I vs FRM Part I (CFA Institute and GARP, checked " + CHECKED + ")",
+          headers: ["", "CFA Level I", "FRM Part I"],
           rows: [
-            [
-              "Focus",
-              "Investment analysis, financial reporting, equity, fixed income, derivatives, portfolio management, ethics",
-              "Risk foundations, quantitative analysis, financial markets and products, valuation and risk models",
-            ],
-            [
-              "Questions",
-              "180 multiple-choice (two sessions of 2h 15m)",
-              "100 multiple-choice (one 4-hour session)",
-            ],
-            ["Time limit", "4 hours 30 minutes total", "4 hours"],
-            [
-              "Passing score",
-              "Not published; estimated ~70%",
-              "Not published; estimated ~60–65%",
-            ],
-            ["Pass rate", "~36–43%", "~45–50%"],
-            [
-              "Exam fee",
-              "$1,140 early / $1,490 standard. $1,590 is Level III standard, not Level I. Confirm on the CFA Institute fee tool before you register.",
-              "$400 enrollment + $600–$800 exam fee",
-            ],
-            ["Study hours", "300+ hours", "200–250 hours"],
-            [
-              "Prerequisites",
-              "Final-year bachelor’s or equivalent",
-              "None",
-            ],
-            [
-              "Work experience for full credential",
-              "4,000 hours (for charter)",
-              "2 years (for certification)",
-            ],
+            ["Set by", "CFA Institute", "GARP"],
+            ["Questions", "180 three-option multiple choice", "100 equally weighted multiple choice"],
+            ["Time", "Two 135-minute sessions of 90 questions", "4 hours"],
+            ["Topics", "10", "4"],
+            ["Passing score", "Minimum passing score set by CFA Institute; no fixed published percentage", "Pass/fail with quartile feedback; no fixed published percentage"],
+            ["Results", "By email within about 5–7 weeks of the window", "Within 8 weeks of the window closing"],
+            ["Exam fee", "USD 1,140 early / 1,490 standard; no enrollment fee since 29 Apr 2025", "USD 600 early / 800 standard, plus a one-time USD 400 enrollment fee"],
           ],
         },
         {
           type: "p",
-          text: "The key difference is destination, not format. CFA Level 1 teaches you to read a balance sheet and calculate WACC. FRM Part 1 teaches VaR and credit default probability. Investment banking or asset management → CFA language. Risk analytics, treasury, or model validation → FRM language. Before you commit fees, run the [CFA Level 1 practice test](/mock-exams/cfa-level-1-readiness-check) or [FRM Part 1 practice test](/mock-exams/frm-part-1-readiness-check) for topic-scored diagnostics.",
+          text: "CFA Level I has no penalty for wrong answers. You must also complete one Practical Skills Module (PSM) at each CFA level before results are released.",
         },
       ],
     },
     {
-      heading: "The Time and Money Reality",
+      heading: "When can you sit each exam in 2027?",
       blocks: [
         {
           type: "ul",
           items: [
-            "**CFA Level 1 first-year cost:** $1,140 early / $1,490 standard exam + $300–$500 materials ≈ **$1,440–$1,990**",
-            "**FRM Part 1 first-year cost:** $400 enrollment + $600–$800 exam + $200–$400 materials ≈ **$1,200–$1,600**",
+            "**CFA Level I:** four windows a year (typically February, May, August and November). You may sit at most twice per calendar year, not in consecutive windows and not within six months of each other. Check exact dates in CFA Institute's dates-and-fees tool.",
+            "**FRM Part I:** 8–13 May, 13–14 August (morning sessions) and 13–18 November 2027, at Pearson VUE test centers. Early registration for May opens 1 December; for August, 1 March; for November, 1 May.",
+          ],
+        },
+      ],
+    },
+    {
+      heading: "What does each exam test?",
+      blocks: [
+        {
+          type: "topics",
+          items: [
+            {
+              title: "CFA Level I topic weights (2027 exams)",
+              body: "Ten topics, each with an official weight range:",
+              bullets: [
+                "Ethical and Professional Standards 10–15%",
+                "Quantitative Methods, Financial Statement Analysis, Equity Investments and Fixed Income 11–14% each",
+                "Portfolio Construction 8–12%",
+                "Economics, Corporate Issuers, Derivatives and Alternative Investments 6–9% each",
+              ],
+            },
+            {
+              title: "FRM Part I topics",
+              body: "Four topics appear on every sitting:",
+              bullets: [
+                "Foundations of Risk Management",
+                "Quantitative Analysis",
+                "Financial Markets and Products",
+                "Valuation and Risk Models",
+              ],
+            },
           ],
         },
         {
           type: "p",
-          text: "CFA is more expensive but not dramatically so. The real cost is time: 300 hours vs ~200. On a 50-hour work week, that is roughly 15 weeks vs 10 weeks of serious study.",
-        },
-        {
-          type: "p",
-          text: "**Hidden cost:** Neither is a terminal credential. CFA Level 1 alone does not make you a charterholder; FRM Part 1 alone does not make you an FRM. Pass and stop and you get “CFA Level I Candidate” or “FRM Part I Passed” — intent signals, not senior-role openers. Full CFA: ~2.5–4 years and ~900 hours. Full FRM: ~1–2 years and ~500 hours.",
+          text: "Both cover quantitative methods, fixed income and derivatives, but with different aims: Level I spends more time on financial statements, equity and ethics; Part I goes deeper into risk measurement and models. The practice tests score you by these topics: [CFA Level I](/mock-exams/cfa-level-1-readiness-check) and [FRM Part I](/mock-exams/frm-part-1-readiness-check).",
         },
       ],
     },
     {
-      heading: "Pass Rates: Why CFA Level 1 Looks Harder",
+      heading: "How much study time does each take?",
       blocks: [
         {
           type: "p",
-          text: "CFA Level 1 pass rates sit around 36–43%; FRM Part 1 around 45–50%. CFA looks harder on paper. The pool explains more than the content.",
-        },
-        {
-          type: "p",
-          text: "CFA’s enormous candidate pool includes students, career-changers, and people who underestimated volume. FRM self-selects for quantitative aptitude — many already work in risk or have strong math backgrounds. Comfortable with statistics, probability, and calculus-style thinking? FRM Part 1 often feels easier. Stronger in accounting, economics, and qualitative analysis? CFA Level 1 feels more natural.",
+          text: "CFA Institute says successful candidates report **over 300 hours** of study per level on average. GARP reports that FRM Part I candidates spend **about 240 hours** on average, with survey answers ranging from under 100 to more than 400 hours. Your background matters: strong statistics helps most on FRM Part I, strong accounting on CFA Level I.",
         },
       ],
     },
     {
-      heading: "Who Should Choose CFA Level 1",
+      heading: "What does each lead to after you pass?",
       blocks: [
         {
           type: "ul",
           items: [
-            "You want equity research, portfolio management, IB, wealth management, or corporate finance",
-            "Target JDs say “CFA preferred” or “progress toward CFA charter”",
-            "You can commit to the full program — or at least Level 2 — because Level 1 alone is not a differentiator in competitive roles",
-            "You prefer breadth: CFA covers 10 topic areas; FRM Part 1 covers 4",
-            "You work at an asset manager, hedge fund, pension fund, or sell-side research desk",
+            "**CFA:** Level I is followed by Levels II and III. A PSM is required at each level, and the charter has further requirements set by CFA Institute.",
+            "**FRM:** pass Part II within four years of passing Part I, and submit two years of relevant full-time work experience within ten years of sitting Part II; experience can come before or after the exams.",
           ],
         },
         {
           type: "p",
-          text: "**The risk:** Many pass Level 1, fail Level 2, and stall. First-attempt passage of all three levels is uncommon. Unsure you can commit ~900 hours over ~3 years? FRM is often the safer bet.",
+          text: "On its own, a passed Level I or Part I is a step toward the credential rather than the credential itself. Choose the program whose full credential matches the roles you want: investment analysis and portfolio management for the CFA, risk management for the FRM.",
         },
       ],
     },
     {
-      heading: "Who Should Choose FRM Part 1",
+      heading: "Who should start with which?",
       blocks: [
         {
-          type: "ul",
+          type: "topics",
           items: [
-            "You want risk management, model validation, quant analysis, treasury, or regulatory compliance",
-            "Target JDs say “FRM preferred” or mention Basel, VaR, stress testing, or credit risk",
-            "You need a credential fast — full FRM can be done in about a year; full CFA cannot",
-            "Strong quantitative background (math, engineering, physics, statistics)",
-            "You work at a bank, insurer, consulting firm, or corporate treasury",
+            {
+              title: "Start with CFA Level I if…",
+              body: "you are aiming at equity research, portfolio management, wealth management or corporate finance, want the broader ten-topic curriculum, and can plan for three exams.",
+            },
+            {
+              title: "Start with FRM Part I if…",
+              body: "you are aiming at risk management, model validation, treasury or regulatory work, are comfortable with statistics, and want a two-exam path.",
+            },
           ],
         },
         {
           type: "p",
-          text: "If risk is the path, start with the [free FRM Part 1 mock](/mock-exams/frm-part-1-readiness-check) — 25 questions, no signup; the full timed check is 50 questions. Then drill the gaps in the [FRM Part 1 Anki deck](/decks/frm-part-1-anki-deck) ($9.99, 444 cards). A side-by-side with AnkiWeb, Examius, Bionic Turtle, and AnalystPrep is on [FRM Part 1 Anki compared](/frm-part-1-anki-compared) (facts checked 13 November 2026).",
-        },
-        {
-          type: "p",
-          text: "**The risk:** FRM is narrower. Later move into portfolio management and you still need equity valuation and financial statement analysis via CFA or self-study.",
-        },
-      ],
-    },
-    {
-      heading: "The Overlap Trap",
-      blocks: [
-        {
-          type: "p",
-          text: "CFA and FRM share roughly 30–40% conceptual overlap: quantitative methods, fixed income, derivatives, basic portfolio theory. That tempts people to study both at once.",
-        },
-        {
-          type: "p",
-          text: "Do not. Overlap is conceptual, not exam-question identical. CFA tests WACC and dividend discount models; FRM tests VaR and expected shortfall. Both use duration — CFA prices the bond; FRM models default. Vocabulary, notation, and depth differ. Pick the exam that matches your current or next job. Do not split the difference.",
-        },
-      ],
-    },
-    {
-      heading: "What Employers Actually Filter For",
-      blocks: [
-        {
-          type: "ul",
-          items: [
-            "**“CFA Level 1” / “CFA candidate”** shows up in entry-level equity research, PM associate, and IB analyst roles — nice-to-have. Must-haves are usually “charterholder” or “Level II candidate.”",
-            "**“FRM Part 1”** rarely stands alone. Employers who care want the full FRM or Part 2 passed. “FRM” / “progress toward FRM” appears often in risk analyst, model validation, and treasury roles.",
-          ],
-        },
-        {
-          type: "p",
-          text: "**Salary ceilings (illustrative senior ranges):** CFA charterholders often $100k–$300k+ in PM and equity research; FRM holders $80k–$250k+ in risk and quant; dual holders can see 25–40% premiums in hybrid roles. As a one-off Level 1 / Part 1, neither moves salary much — they signal intent. The full charter or certification pays.",
+          text: "Studying both entry exams at once rarely works: the overlap is in concepts, not in the questions, notation or depth. Drill the one you pick with the [CFA Level 1 deck](/decks/cfa-level-1-anki-deck) or the [FRM Part 1 deck](/decks/frm-part-1-anki-deck).",
         },
       ],
     },
   ],
   faqs: [
     {
-      question: "Is CFA Level 1 harder than FRM Part 1?",
+      question: "How many questions are on CFA Level 1 and FRM Part 1?",
       answer:
-        "CFA Level 1 has a lower pass rate (~36–43% vs ~45–50%), largely from a broader, less-prepared pool. FRM Part 1 is more intensely quantitative. Strong in math → FRM often feels easier. Strong in accounting → CFA often feels easier.",
+        "CFA Level I has 180 questions in two 135-minute sessions. FRM Part I has 100 questions in 4 hours (CFA Institute and GARP, checked 23 Nov 2026).",
     },
     {
       question: "How much does CFA Level 1 cost vs. FRM Part 1?",
       answer:
-        "CFA Level 1: $1,140 early / $1,490 standard exam + $300–$500 materials ≈ $1,440–$1,990. FRM Part 1: $400 enrollment + $600–$800 exam + $200–$400 materials ≈ $1,200–$1,600.",
+        "CFA Level I is USD 1,140 early or 1,490 standard, with no enrollment fee. FRM Part I is USD 600 early or 800 standard, plus a one-time USD 400 enrollment fee for new candidates.",
     },
     {
-      question: "How long does it take to study for CFA Level 1?",
-      answer:
-        "300+ hours. Most candidates spread this over 4–6 months part-time.",
+      question: "When are the 2027 FRM Part 1 exam dates?",
+      answer: "8–13 May, 13–14 August (morning sessions) and 13–18 November 2027.",
     },
     {
-      question: "How long does it take to study for FRM Part 1?",
+      question: "What are the CFA Level 1 topic weights for 2027?",
       answer:
-        "200–250 hours. Most candidates spread this over 2–3 months part-time.",
+        "Ethics 10–15%; Quantitative Methods, FSA, Equity and Fixed Income 11–14% each; Portfolio Construction 8–12%; Economics, Corporate Issuers, Derivatives and Alternative Investments 6–9% each.",
     },
     {
-      question: "Can I put CFA Level 1 on my resume?",
+      question: "How long does it take to study for CFA Level 1 or FRM Part 1?",
       answer:
-        "Yes — as “CFA Level I Candidate” or “Passed CFA Level I.” It signals intent but does not carry charter weight. Some employers filter for Level II or higher.",
+        "CFA Institute reports over 300 hours per level for successful candidates; GARP reports about 240 hours on average for FRM Part I.",
     },
     {
-      question: "Can I put FRM Part 1 on my resume?",
+      question: "Do CFA Level 1 and FRM Part 1 publish a passing score?",
       answer:
-        "Yes — as “FRM Part I Passed” or “FRM Candidate.” Risk-focused employers value it more than generalist employers.",
+        "Neither publishes a fixed percentage. CFA Institute sets a minimum passing score; GARP reports pass/fail with quartile feedback.",
     },
     {
-      question: "Should I do both CFA and FRM?",
+      question: "What do I need after passing FRM Part 1?",
       answer:
-        "Eventually, yes, if you target senior roles that bridge investment and risk (CIO, CRO, multi-asset head). Do not sit both entry exams at once. Finish one, then use the 30–40% overlap to accelerate the second.",
-    },
-    {
-      question: "Which has better salary potential: CFA or FRM?",
-      answer:
-        "CFA has a higher ceiling in many front-office PM and equity research roles. FRM has a strong ceiling in risk and quant. Dual holders often command the highest premiums in hybrid seats.",
-    },
-    {
-      question: "What if I fail CFA Level 1 or FRM Part 1?",
-      answer:
-        "CFA Level 1 is typically offered four times per year (Feb, May, Aug, Nov). FRM Part 1 is typically offered three times (May, Aug, Nov). Both allow retakes; you pay registration again. Confirm current windows with CFA Institute and GARP.",
+        "Pass Part II within four years, then submit two years of relevant full-time work experience within ten years of sitting Part II.",
     },
   ],
   bottomLine:
-    "If you can only study for one, choose the credential that matches your job — not the one that sounds more prestigious. CFA Level 1 is the right first step for investment and research roles. FRM Part 1 is the right first step for risk and quantitative roles. Neither is a destination; both are entry points. The wrong entry point costs six months and about $1,500 to learn you are in the wrong building.",
+    "Pick the program whose full credential matches your target roles: CFA for investment analysis, FRM for risk. Sources: [CFA Institute Level I exam](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/level-i-exam), [CFA Program dates and fees](https://www.cfainstitute.org/programs/cfa-program/dates-fees), [CFA exam results](https://www.cfainstitute.org/programs/cfa-program/candidate-resources/exam-results), [GARP FRM program and exams](https://www.garp.org/frm/program-exams) and [GARP fees and payments](https://www.garp.org/frm/fees-payments), checked " +
+    CHECKED +
+    ".",
 };
