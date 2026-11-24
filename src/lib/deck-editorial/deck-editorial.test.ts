@@ -75,4 +75,12 @@ describe("deck editorial blocks", () => {
     expect(deckText("mrics-quantity-surveying-anki-deck").join(" ")).toContain("4,000-word");
     expect(deckText("ptcb-pharmacy-technician-anki-deck").join(" ")).toContain("**Medications (35%):**");
   });
+
+  it("batch 4 deck blocks map cards to each official outline", () => {
+    expect(deckText("cdcp-anki-deck").join(" ")).toContain("27 correct");
+    expect(deckText("series-63-anki-deck").join(" ")).toContain("43 correct");
+    expect(deckText("cfp-certification-anki-deck").join(" ")).toContain("Retirement Savings and Income Planning (18%)");
+    expect(deckText("property-casualty-insurance-exam-anki-deck").join(" ")).toContain("state's candidate handbook");
+    expect(deckText("enrolled-agent-anki-deck").join(" ")).toContain("31 Dec 2025");
+  });
 });
