@@ -4585,7 +4585,7 @@ const rawDecks: Deck[] = [
       {
         question: "Is there a free ServSafe Manager practice test?",
         answer:
-          "Yes. UniPrep2Go hosts a 90-question / 120-minute ServSafe Manager mock (free 25-question version) with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; current ServSafe FAQ pass is 70% (56/80 scored). The mock uses 75% as a readiness target; the older 2020 Examinee Handbook PDF still prints 75% — verify at servsafe.com.",
+          "Yes. UniPrep2Go hosts a 90-question / 120-minute ServSafe Manager mock (free 25-question version) with topic scoring at /mock-exams/servsafe-manager-mock. Official exam is 90 questions (80 scored + 10 pilot) in 2 hours; ServSafe’s FAQ lists a passing score of 70% (56/80 scored). This mock uses 75% as a UniPrep2Go readiness target — see servsafe.com/ServSafe-Manager/FAQs for official pass rules.",
       },
       {
         question: "Does this replace the official course or exam practice?",
