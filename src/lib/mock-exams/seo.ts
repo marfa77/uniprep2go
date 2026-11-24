@@ -559,7 +559,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Property & Casualty insurance practice test",
   },
   "gmat-focus-readiness-check": {
-    title: "Free GMAT Practice Test 2026 | 45-Question Mock",
+    title: "Free GMAT Practice Test 2027 | 45-Question Mock",
     description:
       "Current-GMAT practice: free 25-question diagnostic, full mock 45 timed questions across Quant, Verbal, and Data Insights. Official exam is 64Q / 2h15 / 205–805. SuperScore live since Aug 2026. UniPrep bank rewritten October 2026 (no SC, no Quant geometry). Independent — not GMAC material.",
     keywords: [
@@ -596,7 +596,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     practiceTestLabel: "Digital SAT practice test",
   },
   "pmp-readiness-check": {
-    title: "Free PMP Practice Test 2026 | 51Q People / Process / BE",
+    title: "Free PMP Practice Test 2027 | 51Q People / Process / BE",
     description:
       "PMP domain diagnostic: free 25-question diagnostic, full mock 51 questions, 70 minutes, 17 People / 21 Process / 13 Business Environment (2026 ECO 33/41/26). All three domains must clear 70%. Official PMI exam is 180Q (170 scored) / 240 min with no published % cut. Then $9.99 / 346 Anki. Independent — not PMI material.",
     keywords: [

@@ -736,7 +736,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "DELF / DALF diploma candidates, Canada immigration applicants (TCF Canada / TEF Canada), French naturalization (TCF ANF), French university applicants (TCF général), and fide / Swiss residency French language learners.",
   },
   "cfa-level-1-anki-deck": {
-    title: "CFA Level 1 Anki Deck 2026 — 348 Cards, $19 | UniPrep2Go",
+    title: "CFA Level 1 Anki Deck 2027 — 348 Cards, $19 | UniPrep2Go",
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
@@ -835,7 +835,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Americans entering brokerage and securities roles start with the SIE — this deck covers FINRA topic weights for daily recall. Use the free 25-question diagnostic for a fast gap check, or the full 75-question / 105-minute mock before exam day.",
   },
   "series-7-anki-deck": {
-    title: "Series 7 Flashcards 2026 | 300 Cards + Free Mock",
+    title: "Series 7 Flashcards 2027 | 300 Cards + Free Mock",
     headline: "Series 7 Flashcards — 300 Top-Off Cards + 60Q Mock (25Q Free)",
     studyLabel: "Series 7 flashcards",
     description:
@@ -1298,6 +1298,10 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "commodity trading vocabulary",
       "base metals lexicon",
     ],
+  },
+  // WP-D 24 Nov 2026: per-slug override so only the year token changes (template output was "2026 PMP Exam Prep | 346 cards + Free Practice Test").
+  "pmp-anki-deck": {
+    title: "2027 PMP Exam Prep | 346 cards + Free Practice Test",
   },
   "bench-energy-oil-trader-anki-deck": {
     title: "Oil Trader Lexicon | 211 Crude Oil Anki Cards",
