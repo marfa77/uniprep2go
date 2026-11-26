@@ -75,6 +75,22 @@ describe("mock exam SEO", () => {
     expect(buildMockSeoDescription(rd!)).toContain("$9.99");
   });
 
+  it("matches meta snippet year to the title year token for 2027 mocks", () => {
+    for (const slug of [
+      "gmat-focus-readiness-check",
+      "pmp-readiness-check",
+      "nebosh-readiness-check",
+      "acsm-cpt-readiness-check",
+    ]) {
+      const config = getMockExamConfig(slug)!;
+      expect(buildMockSeoTitle(config)).toContain("2027");
+      const meta = buildMockSeoDescription(config);
+      expect(meta).toContain("practice test 2027:");
+      expect(meta).not.toContain("practice test 2026:");
+      expect(meta.toLowerCase().split("25 questions free").length - 1).toBeLessThanOrEqual(1);
+    }
+  });
+
   it("uses 2027 in default medical mock titles and leaves frozen mocks on 2026", () => {
     const abo = getMockExamConfig("abo-optician-readiness-check");
     const nbrc = getMockExamConfig("nbrc-tmc-readiness-check");

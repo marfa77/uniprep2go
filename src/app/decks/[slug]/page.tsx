@@ -341,13 +341,15 @@ export default async function DeckPage({
         </h1>
 
         {deck.slug === "nebosh-anki-deck" ? (
-          <p className="mt-6 max-w-3xl">
+          <p className="mt-6 max-w-3xl text-base leading-7 text-[#4f493e]">
             <Link
-              className={btnPrimary}
+              className="font-medium text-[#1f3a5f] underline-offset-4 hover:underline"
               href="/mock-exams/nebosh-readiness-check"
             >
-              NEBOSH IGC mock test — free readiness check
+              Free NEBOSH IGC mock test (25 questions)
             </Link>
+            {" "}
+            — knowledge-only MCQ diagnostic, not an official GIC1 open-book paper or GIC2 practical.
           </p>
         ) : null}
         {deck.slug === "cfa-level-1-anki-deck" ? (
