@@ -1082,7 +1082,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "veterinary-assistant-readiness-check": {
     title: "Free Veterinary Assistant Practice Test 2027 | 60Q AVA Mock",
     description:
-      "Veterinary assistant / AVA-style practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target — then waitlist for the planned 120-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
+      "Veterinary assistant / AVA-style practice test — free 25-question diagnostic, no signup; full mock: 60 timed questions, 75 minutes, 70% readiness target, from a 220-item bank — then the $9.99 / 220-card Anki. Official NAVTA AVA is typically 100Q / 150 min / 75%. Independent — not NAVTA material. Not VTNE.",
     keywords: [
       "veterinary assistant practice test",
       "navta ava practice test",
@@ -1092,7 +1092,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Veterinary Assistant Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis — then join the planned 120-card Anki waitlist. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% (confirm current fee on VetMedTeam) for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
+      "A timed AVA-style diagnostic across animal restraint, nursing assist, hospital procedures, and safety/zoonosis, drawn from a 220-item bank — then the $9.99 / 220-card Anki. Official NAVTA AVA via VetMedTeam is typically 100 questions / 150 minutes / 75% (confirm current fee on VetMedTeam) for graduates of a NAVTA-approved program. This free check is a shorter diagnostic — not a full-length AVA form and not the VTNE technician exam.",
     audience:
       "Veterinary assistant students and graduates preparing for NAVTA AVA-style themes who want a free timed baseline before VetMedTeam’s official exam.",
     practiceTestLabel: "Veterinary assistant practice test",

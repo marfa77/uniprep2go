@@ -1287,8 +1287,8 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       "A 60-question / 75-minute veterinary assistant readiness check (free 25-question version) with topic scoring across restraint, nursing assist, hospital procedures, and safety/zoonosis — for AVA-style prep. Official AVA is typically 100Q / 150 min / 75%; not VTNE.",
     examBody: "NAVTA / employer VA competencies",
     questionSourceNote:
-      "120 original clinic-scenario questions (60 drawn per attempt, 15 per area: restraint, nursing assist, hospital procedures, safety and zoonosis), with a specific note on every wrong option. Reviewed against low-stress handling (AAFP/ISFM, Fear Free), standard VA nursing and lab practice, and OSHA hazard-communication and zoonosis precautions.",
-    lastUpdated: "2026-10-15",
+      "220 original clinic-scenario questions (60 drawn per attempt, 15 per area: restraint, nursing assist, hospital procedures, and safety and zoonosis — 55 items in each area), with a specific note on every wrong option. Reviewed against low-stress handling (AAFP/ISFM, Fear Free), standard VA nursing and lab practice, and OSHA hazard-communication and zoonosis precautions. Expanded 2026-11-26.",
+    lastUpdated: "2026-11-26",
     searchAliases: ["veterinary assistant", "AVA"],
   }),
 ];

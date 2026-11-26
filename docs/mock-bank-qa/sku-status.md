@@ -6,14 +6,14 @@ Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the 
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 98 | 55 |
+| ok | 98 | 56 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 12 | 0 |
 | point-fix | 0 | 0 |
 | rewrite | 67 | 14 |
 | civic | 19 | 19 |
-| **total live mocks** | **196** | **88** |
+| **total live mocks** | **196** | **89** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -154,6 +154,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `six-sigma-green-belt-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
 | ok | `tx-real-estate-readiness-check` | live | 60 / 120 | 2026-10-14 | — |
 | ok | `us-citizenship-readiness-check` | live | 30 / 128 | 2026-11-22 | — |
+| ok | `veterinary-assistant-readiness-check` | live | 60 / 220 | 2026-11-26 | — |
 | ok | `well-ap-readiness-check` | live | 50 / 250 | 2026-10-13 | — |
 | ok | `aama-cma-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `aapc-ccs-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
@@ -196,7 +197,6 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `rbt-behavior-technician-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
-| ok | `veterinary-assistant-readiness-check` | planned | 60 / 120 | 2026-11-20 | — |
 | ok | `wastewater-operator-1-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | civic | `australian-citizenship-readiness-check` | live | 60 / 199 | 2026-11-19 | FAIL (176 items + bank-level): near-duplicate / templated stems (>=0.8), thin/template explanations, distractor, correct |
 | civic | `belgium-flanders-mo-readiness-check` | live | 60 / 220 | 2026-11-15 | — |
@@ -223,10 +223,10 @@ Products without a mock and catalog totals: bottom of this file.
 | Line | Count |
 |---|---|
 | Live mocks | 196 |
-| … with a live Anki / PDF pair | 88 |
-| … with a planned Anki pair | 108 |
+| … with a live Anki / PDF pair | 89 |
+| … with a planned Anki pair | 107 |
 | Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
-| Catalog decks total (`decks.ts`) | 235 (available 113) |
+| Catalog decks total (`decks.ts`) | 235 (available 114) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 28 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.

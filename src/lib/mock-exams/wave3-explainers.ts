@@ -1349,7 +1349,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is this an official Veterinary Assistant exam?",
         answer:
-          "No. UniPrep2Go provides an independent 60-question / 75-minute diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
+          "No. UniPrep2Go provides an independent 60-question / 75-minute diagnostic from a 220-item bank, plus a 220-card Anki deck. Not NAVTA or VetMedTeam material.",
       },
       {
         question: "Who can sit the official AVA exam?",

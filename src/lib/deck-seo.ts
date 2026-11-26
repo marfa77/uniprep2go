@@ -1239,11 +1239,11 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Guards upgrading to armed posts who want a free timed written diagnostic before state firearms training — then a planned 120-card .apkg. Written only; live-fire qualification is separate.",
   },
   "veterinary-assistant-anki-deck": {
-    title: "Veterinary Assistant Anki | Planned 120 Cards + Free Mock",
-    headline: "Veterinary Assistant / AVA Prep — Planned Cards + 60Q Test (25Q Free)",
+    title: "Veterinary Assistant Anki | 220 Cards + Free Mock",
+    headline: "Veterinary Assistant / AVA Prep — 220 Cards + 60Q Test (25Q Free)",
     studyLabel: "NAVTA AVA veterinary assistant exam prep",
     description:
-      "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety — plus a 60-question timed practice test (free 25-question version). Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
+      "Veterinary assistant Anki: 220 flashcards for restraint, nursing assist, hospital procedures, and safety — plus a 60-question timed practice test (free 25-question version). Official NAVTA AVA is typically 100Q / 150 min / 75%. Not VTNE. Independent — not NAVTA material.",
     keywords: [
       "veterinary assistant anki",
       "navta ava flashcards",
@@ -1252,7 +1252,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "free veterinary assistant practice test",
     ],
     intro:
-      "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a planned 120-card .apkg. Not the VTNE technician pathway.",
+      "VA students who want a free timed AVA-style diagnostic before VetMedTeam’s official exam — then a $9.99 / 220-card .apkg. Not the VTNE technician pathway.",
   },
   "medical-scribe-anki-deck": {
     title: "Medical Scribe Anki | 120 Cards + 60Q Mock (25Q Free)",

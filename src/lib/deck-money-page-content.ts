@@ -149,7 +149,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "armed-security-officer-anki-deck":
     "Planned 120-card armed security Anki. 60Q / 75 min written diagnostic live now (free 25-question version) — state-specific; ≠ unarmed card; range qualification separate.",
   "veterinary-assistant-anki-deck":
-    "Planned 120-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic live now (free 25-question version) — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
+    "$9.99 / 220-card veterinary assistant / AVA Anki. 60Q / 75 min diagnostic (free 25-question version) from that 220-item bank — official NAVTA AVA typically 100Q / 150 min / 75%. ≠ VTNE.",
   "medical-scribe-anki-deck":
     "$11 / 120 medical scribe cards (SOAP/HPI, terminology, EHR workflow, HIPAA) + 60Q / 75 min diagnostic (free 25-question version) from a 120 unique bank — AHDPG MSCE is typically ~100Q / 75 min / 80%; ≠ CCMA/CMA.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
@@ -260,7 +260,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "armed-security-officer-anki-deck":
     "Planned armed security Anki for use of force & law, weapons safety, patrol & emergencies, and ethics. 60-question / 75-minute written readiness check (free 25-question version) is live; licensing is state-specific — range qualification and unarmed credentials are separate.",
   "veterinary-assistant-anki-deck":
-    "Planned veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety/zoonosis. 60-question / 75-minute readiness check (free 25-question version) is live; official NAVTA AVA via VetMedTeam is typically 100Q / 150 min / 75%. Not VTNE.",
+    "220-card veterinary assistant Anki for restraint, nursing assist, hospital procedures, and safety/zoonosis. The 60-question / 75-minute readiness check (free 25-question version) is drawn from that 220-item bank; official NAVTA AVA via VetMedTeam is typically 100Q / 150 min / 75%. Not VTNE.",
   "medical-scribe-anki-deck":
     "Planned medical scribe Anki for SOAP/HPI documentation, terminology & abbreviations, EHR workflow, and HIPAA. 60-question / 75-minute readiness check (free 25-question version) is live; AHDPG MSCE is typically ~100Q / 75 min / 80% (AMSP; CMSP adds hours). Not CCMA/CMA clinical assistant.",
   "ielts-toefl-english-for-russian-speakers-anki-deck":
@@ -742,13 +742,13 @@ export const positioningOverrides: Partial<
   },
   "veterinary-assistant-anki-deck": {
     ourEdge: [
-      "Planned 120-card veterinary assistant / AVA Anki",
-      "60Q / 75 min timed diagnostic live now (free 25-question version)",
+      "220-card veterinary assistant / AVA Anki, $9.99",
+      "60Q / 75 min timed diagnostic from the same 220-item bank (free 25-question version)",
       "Honest: official NAVTA AVA typically 100Q / 150 min / 75%",
       "≠ VTNE (veterinary technician)",
     ],
     summaryProse:
-      "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) plus a planned ownable Anki waitlist — not a full 100-item AVA substitute and not VTNE.",
+      "OpenExamPrep and VetMedTeam practice options win on AVA-length volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) plus an ownable 220-card Anki — not a full 100-item AVA substitute and not VTNE.",
   },
   "medical-scribe-anki-deck": {
     ourEdge: [
@@ -1377,21 +1377,21 @@ Your state board bulletin, instructor-led firearms hours, or range qualification
 
   "veterinary-assistant-anki-deck": `### What is inside
 
-Planned **120** flashcards across animal restraint, nursing assist, hospital procedures, and safety & zoonosis — the same four topic buckets as the free readiness check. Mapped to NAVTA AVA-style assistant themes (NAVTA does not publish domain weights).
+**220** flashcards across animal restraint, nursing assist, hospital procedures, and safety and zoonosis — 55 cards in each area, the same four topics as the free readiness check. Mapped to NAVTA AVA-style assistant themes (NAVTA does not publish domain weights).
 
-### Plan with the free veterinary assistant mock (live now)
+### Plan with the free veterinary assistant mock
 
-**Start:** Take the [60-question Veterinary Assistant readiness check (free 25-question version)](/mock-exams/veterinary-assistant-readiness-check) (75 minutes / 70% diagnostic). **Then:** Use your NAVTA-approved program materials and VetMedTeam practice options. **When Anki ships:** 15–20 cards/day on the weakest topic only.
+**Start:** Take the [60-question Veterinary Assistant readiness check (free 25-question version)](/mock-exams/veterinary-assistant-readiness-check) (75 minutes / 70% diagnostic) from the same 220-item bank. **Then:** 15–20 new cards a day on the weakest topic, using your NAVTA-approved program materials beside the deck.
 
-Official NAVTA AVA via VetMedTeam: typically **100 questions / 150 minutes / 75% / $100** for graduates of a NAVTA-approved program. Our mock is a shorter diagnostic — not a full-length AVA form. **Not the VTNE** (veterinary technician).
+Official NAVTA AVA via VetMedTeam: typically **100 questions / 150 minutes / 75% / $100** for graduates of a NAVTA-approved program. Our mock is a shorter diagnostic — not a full-length AVA form. **Not the VTNE** (veterinary technician). The deck is **$9.99**.
 
-### Pitfalls this deck targets (when live)
+### Pitfalls this deck targets
 
 Candidates treat a 60Q free check as the full AVA form, skip approved-program eligibility, or confuse AVA with VTNE technician prep.
 
 ### What this does not replace
 
-NAVTA-approved program completion, VetMedTeam enrollment, or an exam mentor/proctor. Anki is **planned** on UniPrep — not a live Gumroad SKU yet. Independent prep — not NAVTA/VetMedTeam material.`,
+NAVTA-approved program completion, VetMedTeam enrollment, or an exam mentor/proctor. Independent prep — not NAVTA/VetMedTeam material.`,
 
   "medical-scribe-anki-deck": `### What this page is
 
