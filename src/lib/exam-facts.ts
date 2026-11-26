@@ -3661,7 +3661,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "Is UniPrep2Go’s veterinary assistant check the official AVA exam?",
-        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic. The matching Anki deck is planned (waitlist). Not NAVTA or VetMedTeam material.",
+        a: "No. The 60-question / 75-minute check (free 25-question version) is an independent diagnostic from a 220-item bank. The matching Anki deck is $9.99 for 220 cards. Not NAVTA or VetMedTeam material.",
       },
     ],
     trademark_note:
