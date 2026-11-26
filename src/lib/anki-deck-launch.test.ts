@@ -138,7 +138,7 @@ describe("anki-deck-launch", () => {
 
   it("estimates card count from linked mock topics", () => {
     expect(estimateAnkiDeckCardCount("hvac-epa-608-anki-deck")).toBe(200);
-    expect(estimateAnkiDeckCardCount("leed-green-associate-anki-deck")).toBe(210);
+    expect(estimateAnkiDeckCardCount("leed-green-associate-anki-deck")).toBe(220);
   });
 
   it("launches planned building decks as available with ready apkg when uploaded", () => {
@@ -171,7 +171,7 @@ describe("anki-deck-launch", () => {
       expect(launched.apkgStatus).toBe("ready");
       expect(launched.checkoutUrl).toContain("leed-green-associate-anki-deck");
       expect(launched.checkoutProvider).toBe("Gumroad");
-      expect(launched.facts.cards).toBe("210");
+      expect(launched.facts.cards).toBe("220");
       expect(launched.facts.delivery).toContain("instant download");
       expect(launched.importSteps?.length).toBeGreaterThan(0);
     }

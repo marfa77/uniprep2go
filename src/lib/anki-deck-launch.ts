@@ -474,9 +474,10 @@ export function applyAnkiDeckLaunch(deck: Deck): Deck {
                   ? "2026-10-06"
                 : deck.slug === "cdcp-anki-deck"
                   ? "2026-11-07"
-                : deck.slug === "ccht-dialysis-anki-deck" ||
-                    deck.slug === "leed-green-associate-anki-deck"
+                : deck.slug === "ccht-dialysis-anki-deck"
                   ? "2026-11-16"
+                : deck.slug === "leed-green-associate-anki-deck"
+                  ? "2026-11-26"
                 : deck.slug === "ny-real-estate-anki-deck" ||
                     deck.slug === "enrolled-agent-anki-deck"
                   ? "2026-11-07"
