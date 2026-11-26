@@ -707,10 +707,17 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "AHA BLS Provider Cognitive Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 120-card Anki waitlist. Not Heartsaver and not an AHA course card.",
+      "Use this page as a BLS provider test warm-up: a timed 60-question / 45-minute cognitive diagnostic for AHA BLS Provider — adult CPR/AED, child & infant CPR, choking & opioid emergency, and team dynamics. Official HeartCode BLS cognitive is about 25 open-resource questions with an 84% pass plus in-person skills; this check is longer and cognitive-only. 2025 science: infant compressions are heel of 1 hand or 2 thumbs, not two fingers; severe adult/child FBAO uses 5 back blows then 5 abdominal thrusts. Planned 120-card Anki waitlist. Not Heartsaver and not an AHA course card.",
     audience:
       "Healthcare students and clinicians booking BLS Provider who want a 2025-aligned cognitive baseline before skills — not lay Heartsaver CPR and not ACLS.",
     practiceTestLabel: "AHA BLS practice test",
+    examFaqs: [
+      {
+        question: "Does the AHA have a mock exam for the BLS written test?",
+        answer:
+          "The American Heart Association does not publish a separate public “mock exam” for BLS Provider candidates. For instructor-led BLS Provider training, the cognitive portion is measured with the BLS Online Exam for Instructor-led Training, which an AHA Instructor administers at an authorized Training Center at the end of the course (product description: shopcpr.heart.org/bls-online-exam-for-instructor-led-training, checked 26 Nov 2026). HeartCode BLS builds the cognitive assessment into the online eLearning portion; after that certificate, students complete a hands-on skills session with an Instructor (cpr.heart.org/en/courses/basic-life-support-course-options, checked 26 Nov 2026). AHA’s 2025 BLS Product and Course Orientation states students must pass the course exam with a minimum score of 84% (heart.org PDF, checked 26 Nov 2026). UniPrep2Go’s timed practice test is independent — not affiliated with the AHA and not a substitute for an AHA course, skills check, or eCard.",
+      },
+    ],
   },
   "ardms-spi-readiness-check": {
     title: "Free ARDMS SPI Practice Test 2027 | 60Q Ultrasound Physics",
@@ -1339,7 +1346,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nebosh anki",
       "health and safety exam prep",
     ],
-    headline: "Free NEBOSH IGC Practice Test (Knowledge Diagnostic)",
+    headline: "Free NEBOSH IGC Mock Test and Practice Questions (Knowledge Diagnostic)",
     intro:
       "A NEBOSH IGC practice test on UniPrep2Go is a **knowledge-only MCQ diagnostic**: 25 questions free, no signup, then 50 timed questions across management systems, workplace hazards, and risk-assessment themes from the IGC syllabus. The real IGC is **not** this format — GIC1 is an open-book scenario exam (**5 hours of assessment within a 24-hour window, 45% provisional pass**) and GIC2 is a **4-hour practical risk assessment** (verify in your Learning Partner materials and nebosh.org). Use this mock to find weak domains, then drill the [$9.99 NEBOSH Anki deck](/decks/nebosh-anki-deck), compare [NEBOSH IGC vs Diploma](/blog/nebosh-igc-vs-international-diploma-employers), or pair with [CFPS](/mock-exams/cfps-readiness-check) if fire protection is your adjacent path.",
     officialFormat:
@@ -1819,8 +1826,18 @@ function mockSnippetExamLabel(config: MockExamConfig): string {
     .trim();
 }
 
+/** Match the year token in the mock SERP title (2026 vs 2027); omit year when the title has none. */
+function mockSnippetYear(config: MockExamConfig): string | null {
+  const title = getMockSeoProfile(config).title;
+  const match = title.match(/\b(20(?:26|27))\b/);
+  return match ? match[1] : null;
+}
+
 function mockSnippetLead(config: MockExamConfig): string {
-  return `Free ${mockSnippetExamLabel(config)} practice test 2026: 25 questions free, no signup`;
+  const label = mockSnippetExamLabel(config);
+  const year = mockSnippetYear(config);
+  const yearSegment = year ? ` ${year}` : "";
+  return `Free ${label} practice test${yearSegment}: 25 questions free, no signup`;
 }
 
 /**
@@ -1837,6 +1854,7 @@ function stripRepeatedLead(description: string): string {
   body = body
     .replace(/^(?:a\s+)?free\s+25[- ]question(?:s)?(?:\s+(?:diagnostic|start))?(?:,?\s*no signup)?\s*[;,.]?\s*/i, "")
     .replace(/^free\s+25\s+questions?(?:,?\s*no signup)?\s*[;,.]?\s*/i, "")
+    .replace(/^25\s+questions?\s+free(?:,?\s*no signup)?(?:,?\s*then\s+)?/i, "")
     .replace(/^(?:first mock free|no signup)\s*[;,.]?\s*/i, "")
     .replace(/^then\s+/i, "")
     .replace(/^full mock\s*:?\s*/i, "Full mock: ");

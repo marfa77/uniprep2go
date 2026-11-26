@@ -740,7 +740,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "CFA Level 1 Anki Deck — 348 Flashcards + Free Mock",
     studyLabel: "CFA Level 1 exam prep",
     description:
-      "CFA Level 1 Anki deck for 2026: 348 scenario cards weighted to all 10 topic ranges, worked example on every card, $19 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
+      "CFA Level 1 Anki deck: 348 scenario cards weighted to all 10 CFA Level I topic ranges, worked example on every card, $19 one-time. Plus a 60-question timed mock (free 25-question version). Not CFA Institute material.",
     keywords: [
       "best cfa level 1 anki deck",
       "cfa level 1 anki deck",
