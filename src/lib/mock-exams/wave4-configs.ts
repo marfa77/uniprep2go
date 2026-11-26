@@ -847,7 +847,7 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     examBody: "NHA",
     questionSourceNote:
       "128 questions retagged to the 2023 ExCPT domains on 2026-11-23 (role and general duties 20, laws 36, drugs and drug therapy 16, dispensing process 36, medication safety and quality 20). Each session is still 60 questions / 75 minutes.",
-    lastUpdated: "2026-11-23",
+    lastUpdated: "2026-11-26",
     searchAliases: ["ExCPT", "NHA pharmacy technician"],
   }),
   nicheReadinessConfig({
