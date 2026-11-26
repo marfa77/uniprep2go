@@ -951,7 +951,7 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
     accessMode: "free_demand_test",
     durationMinutes: 75,
     questionCount: 60,
-    ankiDeckCardCount: 210,
+    ankiDeckCardCount: 220,
     passRule: {
       type: "readiness_check",
       passPercent: 70,
@@ -1000,14 +1000,14 @@ const mockExamConfigDrafts: MockExamConfigDraft[] = [
       },
     ],
     officialSourceNote:
-      "Official GBCI LEED Green Associate exam (LEED v5 since 2026): 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; 85 scored items across LEED Process (15), Integrative Process (6), Location and Transportation (9), Sustainable Sites (8), Water Efficiency (10), Energy and Atmosphere (15), Materials and Resources (11), and Indoor Environmental Quality (11). This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 210-item v5-aligned bank, weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
+      "Official GBCI LEED Green Associate exam (LEED v5 since 2026): 100 multiple-choice questions, 2 hours, scaled pass 170 on a 125–200 scale; 85 scored items across LEED Process (15), Integrative Process (6), Location and Transportation (9), Sustainable Sites (8), Water Efficiency (10), Energy and Atmosphere (15), Materials and Resources (11), and Indoor Environmental Quality (11). This UniPrep2Go check is a 60-question / 75-minute diagnostic drawn from a 220-item v5-aligned bank, weighted by that blueprint, with a 70% readiness target. Not USGBC or GBCI exam material.",
     disclaimer: usgbcDisclaimer,
     description:
-      "A 60-question LEED Green Associate (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 210-item bank, weighted to the GBCI blueprint: LEED process, integrative process, location, sites, water, energy, materials, and IEQ. Independent prep, not USGBC material.",
+      "A 60-question LEED Green Associate (v5) readiness diagnostic (free 25-question version) (75 minutes) drawn from a 220-item bank, weighted to the GBCI blueprint: LEED process, integrative process, location, sites, water, energy, materials, and IEQ. Independent prep, not USGBC material.",
     examBody: "USGBC / GBCI",
-    lastUpdated: "2026-11-16",
+    lastUpdated: "2026-11-26",
     questionSourceNote:
-      "Original UniPrep2Go 210-item bank written to the LEED v5 Green Associate test specifications (content-reviewed 2026-10-13, expanded 2026-11-16); 60-question timed session.",
+      "Original UniPrep2Go 220-item bank written to the LEED v5 Green Associate test specifications (content-reviewed 2026-10-13, expanded 2026-11-16 and 2026-11-26). Topics: integrative process 55, location and transportation 22, sites and water 48, energy and atmosphere 40, materials and indoor environmental quality 55. Each session is still 60 questions / 75 minutes.",
   },
   {
     slug: "leed-ap-bd-c-readiness-check",

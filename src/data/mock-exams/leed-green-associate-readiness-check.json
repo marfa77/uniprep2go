@@ -4379,7 +4379,7 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "Benchmarking compares a building's measured energy performance with peer buildings or with its own history, usually normalized as energy use intensity per square foot. Portfolio Manager produces a 1–100 ENERGY STAR score for eligible building types, which helps owners spot underperformers and track progress.",
+    "explanation": "Benchmarking compares a building's measured energy performance with peer buildings or with its own history, usually normalized as energy use intensity per square foot. Portfolio Manager produces a 1\u2013100 ENERGY STAR score for eligible building types, which helps owners spot underperformers and track progress.",
     "distractorExplanations": {
       "a": "Commissioning verifies that systems are installed and perform to the owner's requirements; it tests systems rather than ranking utility data against peers.",
       "c": "Energy modeling simulates predicted energy use from design inputs; benchmarking uses measured utility bills from actual operation.",
@@ -5283,7 +5283,7 @@
     "id": "leed-green-associate-readiness-check-materials-ieq-003",
     "examSlug": "leed-green-associate-readiness-check",
     "topicId": "materials-ieq",
-    "prompt": "A manufacturer's EPD for insulation states that it is cradle-to-gate and reports life-cycle modules A1–A3. Which stages does that data cover?",
+    "prompt": "A manufacturer's EPD for insulation states that it is cradle-to-gate and reports life-cycle modules A1\u2013A3. Which stages does that data cover?",
     "options": [
       {
         "id": "a",
@@ -5303,9 +5303,9 @@
       }
     ],
     "correctOptionId": "b",
-    "explanation": "In the standard life-cycle module scheme used for construction products (EN 15804 / ISO 21930), A1–A3 is the product stage: A1 raw material supply, A2 transport to the manufacturer, and A3 manufacturing. Cradle-to-gate means the data stops at the factory gate, so later stages must come from other sources or assumptions in a whole-building LCA.",
+    "explanation": "In the standard life-cycle module scheme used for construction products (EN 15804 / ISO 21930), A1\u2013A3 is the product stage: A1 raw material supply, A2 transport to the manufacturer, and A3 manufacturing. Cradle-to-gate means the data stops at the factory gate, so later stages must come from other sources or assumptions in a whole-building LCA.",
     "distractorExplanations": {
-      "a": "Transport to site and installation are modules A4–A5, the construction stage, which begins after the product leaves the factory gate.",
+      "a": "Transport to site and installation are modules A4\u2013A5, the construction stage, which begins after the product leaves the factory gate.",
       "c": "Maintenance, repair, and replacement fall in the B use-stage modules, which lie outside a cradle-to-gate declaration.",
       "d": "Deconstruction, waste processing, and disposal are end-of-life C modules, which a cradle-to-gate EPD does not report."
     },
@@ -5633,10 +5633,10 @@
       }
     ],
     "correctOptionId": "c",
-    "explanation": "Diversion rate equals the waste diverted from landfill divided by the total waste generated: 300 ÷ 400 = 75%. The denominator must be the full 400 tons, not only the landfilled portion, so the rate reflects the share of all project waste kept out of disposal.",
+    "explanation": "Diversion rate equals the waste diverted from landfill divided by the total waste generated: 300 \u00f7 400 = 75%. The denominator must be the full 400 tons, not only the landfilled portion, so the rate reflects the share of all project waste kept out of disposal.",
     "distractorExplanations": {
-      "a": "25% is the landfilled share (100 ÷ 400); the diversion rate measures material kept out of landfill, not the portion sent there.",
-      "b": "33% comes from dividing landfilled waste by diverted waste (100 ÷ 300), which uses the wrong numerator and the wrong denominator.",
+      "a": "25% is the landfilled share (100 \u00f7 400); the diversion rate measures material kept out of landfill, not the portion sent there.",
+      "b": "33% comes from dividing landfilled waste by diverted waste (100 \u00f7 300), which uses the wrong numerator and the wrong denominator.",
       "d": "80% does not follow from these quantities; 300 diverted tons out of 400 total tons yields exactly 75%, not a rounded-up figure."
     },
     "difficulty": "easy",
@@ -6928,5 +6928,335 @@
     },
     "difficulty": "easy",
     "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-16."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-integrative-process-054",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "integrative-process",
+    "prompt": "A hospital registered under one LEED v5 rating system. A designer wants to import a credit that exists only in a different rating system and to drop a prerequisite of the system the hospital registered under. What should the coordinator say?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Stay with the registered rating system, including its prerequisites"
+      },
+      {
+        "id": "b",
+        "text": "Swap credits and prerequisites across rating systems if the point band stays the same"
+      },
+      {
+        "id": "c",
+        "text": "Drop the registered prerequisite because a hospital may borrow another system's credit"
+      },
+      {
+        "id": "d",
+        "text": "Ignore registration and use whichever rating system produces the higher point total"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A project is reviewed against the rating system it registered under. That includes the prerequisites of that system. A credit from a different rating system is not a trade for a prerequisite the registered system still requires.",
+    "distractorExplanations": {
+      "b": "Keeping the same point band does not let a team trade a prerequisite away. Prerequisites are not optional points.",
+      "c": "Healthcare occupancy does not create a right to skip a prerequisite of the registered rating system.",
+      "d": "Registration selects the rating system for the review. The team does not switch to a higher-scoring system at the end."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-integrative-process-055",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "integrative-process",
+    "prompt": "Two weeks before the final review, the architect pastes a credit narrative from a certified warehouse into the hospital submission. The warehouse text describes rack storage, no patient rooms, and a different air system. What is wrong with that documentation?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A certified project's narrative may be pasted into any later project"
+      },
+      {
+        "id": "b",
+        "text": "The pasted narrative describes a warehouse, not this hospital"
+      },
+      {
+        "id": "c",
+        "text": "Shared ownership lets a warehouse narrative stand in for a hospital"
+      },
+      {
+        "id": "d",
+        "text": "Final review does not need a narrative once drawings were uploaded at registration"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Credit documentation has to describe the project under review. A warehouse narrative about rack storage and a different air system does not show how this hospital meets the credit. Certification of the other building does not transfer its text.",
+    "distractorExplanations": {
+      "a": "Another project's certification does not make its narrative true for a different building type and a different air system.",
+      "c": "A shared owner does not make a warehouse description evidence for a hospital.",
+      "d": "Drawings uploaded at registration do not replace a narrative that still has to match this building at final review."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-location-transportation-022",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "location-transportation",
+    "prompt": "An office park wants 200 new free parking spaces and calls the garage a Location and Transportation strategy because more people could drive there. The site already exceeds the zoning minimum for parking. Which response fits the intent?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Add the free stalls so drivers spend less time searching for a space"
+      },
+      {
+        "id": "b",
+        "text": "Count the new garage as transit access because a garage is transportation"
+      },
+      {
+        "id": "c",
+        "text": "Do not treat extra free parking as the transportation strategy"
+      },
+      {
+        "id": "d",
+        "text": "Reserve the new stalls for people who drive alone so the garage turns over"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Location and Transportation works to reduce driving, not to make driving easier. Extra free stalls, on a site that already has more parking than zoning requires, invite more single-occupant trips. A garage is not transit access.",
+    "distractorExplanations": {
+      "a": "A shorter hunt for a free stall rewards driving. It does not reduce the number of cars that come to the site.",
+      "b": "A parking garage stores cars. It is not a bus, rail, or other transit service.",
+      "d": "Reserving new stalls for people who drive alone does the opposite of a carpool preference."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-sites-water-046",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "sites-water",
+    "prompt": "The irrigation clock runs every morning, including days when rain is already falling on established beds. The controller has no rain sensor and no weather shutoff. What should the grounds plan change?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the fixed clock, because a fixed schedule is efficient irrigation"
+      },
+      {
+        "id": "b",
+        "text": "Lengthen the morning run so rain and spray count as one efficient cycle"
+      },
+      {
+        "id": "c",
+        "text": "Switch the spray to drinking water so a rain shutoff is unnecessary"
+      },
+      {
+        "id": "d",
+        "text": "Hold the irrigation when rain is already watering the beds"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "Water falling from the sky is already meeting the plants' need. Running the spray at the same time wastes water. A rain sensor or a weather shutoff is how the schedule stops during rain. A fixed clock alone does not know that it is raining.",
+    "distractorExplanations": {
+      "a": "A clock that cannot see the weather keeps spraying in the rain. That is not efficient irrigation.",
+      "b": "Adding spray on top of rainfall uses more water, not less.",
+      "c": "Changing the source to drinking water does not stop the waste. The system is still irrigating in the rain."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-sites-water-047",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "sites-water",
+    "prompt": "A cistern collects roof runoff, and the only pipe out of it feeds an ornamental pond that overflows to the storm sewer. The team reports the cistern as a cut in indoor drinking-water use. What is missing?",
+    "options": [
+      {
+        "id": "a",
+        "text": "The stored water has to serve a real use, such as flushing or irrigation"
+      },
+      {
+        "id": "b",
+        "text": "The overflowing pond already counts as indoor savings because it sits inside the boundary"
+      },
+      {
+        "id": "c",
+        "text": "The drawing alone creates the savings, even though every gallon overflows"
+      },
+      {
+        "id": "d",
+        "text": "Roof runoff cannot be stored, so the pond itself should be claimed as a fixture"
+      }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Alternative water reduces drinking-water use only when it supplies a demand that would otherwise use drinking water, such as toilet flushing, irrigation, or cooling-tower makeup. Water that only overflows from a pond to the storm sewer never replaces that demand.",
+    "distractorExplanations": {
+      "b": "An ornamental pond inside the boundary is not an indoor fixture. Overflow to the sewer is not a measured indoor saving.",
+      "c": "A symbol on the drawing does not save water if the collected gallons never reach a fixture.",
+      "d": "Roof runoff can be stored. The gap is the missing connection to a real use, not a ban on cisterns."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-sites-water-048",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "sites-water",
+    "prompt": "Each morning the crew hoses the plaza with municipal drinking water to push leaves into the drain. Irrigation for the planted beds is already efficient. Which change cuts that drinking-water use?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Hose longer so the leaves move in a single pass"
+      },
+      {
+        "id": "b",
+        "text": "Sweep the leaves instead of washing the plaza with drinking water"
+      },
+      {
+        "id": "c",
+        "text": "Count the hose-down as irrigation because the plaza is outdoors"
+      },
+      {
+        "id": "d",
+        "text": "Add a second hose so the wash-down finishes in half the time"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Washing a plaza with drinking water is a discretionary outdoor use. Sweeping or blowing the leaves removes them without that water. A longer hose-down, a second hose, or a new label of irrigation still uses drinking water on hardscape.",
+    "distractorExplanations": {
+      "a": "A longer wash uses more drinking water, even if the crew finishes in one pass.",
+      "c": "Calling a hose-down irrigation does not make it irrigation of the planting, and it does not reduce the volume.",
+      "d": "Two hoses can finish faster while using the same or more drinking water."
+    },
+    "difficulty": "easy",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-energy-atmosphere-040",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "energy-atmosphere",
+    "prompt": "Functional testing finds the outdoor-air economizer damper stuck shut, so the air handler cannot use cool outside air. The contractor points to the energy model, which assumed the economizer would run, and says the strategy is already earned. What has to happen?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Leave the damper shut because the model already assumed it would open"
+      },
+      {
+        "id": "b",
+        "text": "Open the damper for a photo, then shut it again so the model stays the record"
+      },
+      {
+        "id": "c",
+        "text": "Repair the damper so the economizer can use outside air"
+      },
+      {
+        "id": "d",
+        "text": "Delete the economizer from the drawings and keep the stuck damper"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "An energy model records an assumption. It does not move a damper. The stuck-shut damper means the installed economizer cannot use cool outside air, so the team repairs it and confirms that it operates. A photo of a briefly opened damper is not ongoing operation.",
+    "distractorExplanations": {
+      "a": "The model assumed a working economizer. Leaving the damper shut means the building does not do what the model assumed.",
+      "b": "Opening the damper only for a photograph leaves it stuck shut for actual operation.",
+      "d": "Erasing the economizer from the drawings hides the strategy. It does not fix the damper or deliver the outside-air cooling."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-materials-ieq-053",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "materials-ieq",
+    "prompt": "A renovation takes out solid-core wood doors that are still square and undamaged. The waste hauler will chip them into particleboard, and if the chipper is booked the doors go to the landfill. What should happen to those doors first?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Landfill them, because only metal may be reused whole"
+      },
+      {
+        "id": "b",
+        "text": "Chip them or landfill them, because a whole door counts only after it is remanufactured"
+      },
+      {
+        "id": "c",
+        "text": "Book them as recycled content now, even if this project landfills them"
+      },
+      {
+        "id": "d",
+        "text": "Reuse the sound doors as doors before crushing or landfilling them"
+      }
+    ],
+    "correctOptionId": "d",
+    "explanation": "A sound door can go back into service as a door. That reuse avoids both the landfill and the energy of chipping it into a new product. Landfilling it because the chipper is busy wastes the product. Recycled content is not claimed for material this project throws away.",
+    "distractorExplanations": {
+      "a": "Reuse is not limited to metal. An undamaged wood door can be rehung.",
+      "b": "Remanufacturing is one path. It is not a reason to skip reuse of a door that is already a finished product.",
+      "c": "A landfill load is not recycled content. Recycled content is material already in a product this project installs, not a label for doors it throws away."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-materials-ieq-054",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "materials-ieq",
+    "prompt": "The specification tightens emissions limits for paints and adhesives. The same package buys conventional task chairs that off-gas beside the person seated in them, and the team says furniture is outside indoor air quality. What is the gap?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Only paints and adhesives affect indoor air, so the chairs can be ignored"
+      },
+      {
+        "id": "b",
+        "text": "The chairs off-gas where people sit, so furniture belongs in the emissions limits"
+      },
+      {
+        "id": "c",
+        "text": "Task chairs are an acoustics product, so an emissions limit is the wrong family"
+      },
+      {
+        "id": "d",
+        "text": "Chair off-gassing is an energy-model input, not an indoor-air question"
+      }
+    ],
+    "correctOptionId": "b",
+    "explanation": "People breathe next to the chair for hours. Emissions limits that stop at paints and adhesives leave that source out. Furniture is an indoor-air product, not an acoustics-only product and not an energy-model input.",
+    "distractorExplanations": {
+      "a": "Finishes are not the only source. A chair that off-gasses in the breathing zone is an indoor-air source too.",
+      "c": "A chair can affect acoustics. That does not cancel the emissions from its materials.",
+      "d": "Chemical emissions from a chair are an indoor-air question. They are not entered as an energy-model load."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
+  },
+  {
+    "id": "leed-green-associate-readiness-check-materials-ieq-055",
+    "examSlug": "leed-green-associate-readiness-check",
+    "topicId": "materials-ieq",
+    "prompt": "After move-in, staff seal the outdoor-air intakes to cut fan energy. By midafternoon people in the open office report stale air and headaches. The filters were replaced last week. What should be restored?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the intakes sealed, because last week's new filters replace outdoor air"
+      },
+      {
+        "id": "b",
+        "text": "Seal the return grilles too, so the fans recirculate a smaller volume"
+      },
+      {
+        "id": "c",
+        "text": "Reopen the outdoor-air intakes so outside air can enter again"
+      },
+      {
+        "id": "d",
+        "text": "Use a stronger recirculating filter and leave the intakes sealed"
+      }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Filters clean particles in air that is already inside. They do not bring in outdoor air or flush the contaminants that make the office stale. Sealing the intakes cuts off that outdoor air. The intakes have to be open again so the system can supply it.",
+    "distractorExplanations": {
+      "a": "A new filter is not a supply of outdoor air. The stale-air complaints show the ventilation path is still closed.",
+      "b": "Sealing the returns traps the same indoor air. It does not replace the outdoor air the intakes were built to bring in.",
+      "d": "A stronger recirculating filter still cleans only indoor air. It does not reopen the path for outside air."
+    },
+    "difficulty": "hard",
+    "sourceNote": "Original UniPrep2Go LEED Green Associate bank, expanded 2026-11-26."
   }
 ]

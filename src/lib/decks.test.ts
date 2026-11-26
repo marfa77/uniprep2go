@@ -672,7 +672,7 @@ describe("deck catalog", () => {
       "uk-survival-guide-prep2go-app": "UK Survival Guide — Prep2Go Immigration App",
       "portugal-survival-guide-prep2go-app": "Portugal Survival Guide — Prep2Go Immigration App",
       "leed-ap-bd-c-anki-deck": "LEED AP BD+C Anki Deck — 120 Flashcards",
-      "leed-green-associate-anki-deck": "LEED GA Anki Deck — 210 Flashcards",
+      "leed-green-associate-anki-deck": "LEED GA Anki Deck — 220 Flashcards",
       "mrics-anki-deck": "MRICS / APC Anki Deck — 250 Flashcards",
       "mrics-quantity-surveying-anki-deck":
         "MRICS QS Anki Deck — 250 Flashcards",

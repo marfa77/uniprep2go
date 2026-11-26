@@ -1111,7 +1111,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "leed-green-associate-readiness-check": {
     title: "Free LEED Green Associate Practice Test | 60-Question v5 Readiness Check",
     description:
-      "Free LEED GA (v5) practice: 60 timed questions / 75 minutes from a 210-item bank, weighted to the GBCI blueprint, 70% diagnostic — then repair with the $9.99 / 210-card LEED GA Anki deck. Official GBCI exam is 100Q / 2h / scaled 170. Independent — not USGBC material.",
+      "Free LEED GA (v5) practice: 60 timed questions / 75 minutes from a 220-item bank, weighted to the GBCI blueprint, 70% diagnostic — then repair with the $9.99 / 220-card LEED GA Anki deck. Official GBCI exam is 100Q / 2h / scaled 170. Independent — not USGBC material.",
     keywords: [
       "leed green associate practice test",
       "leed ga exam questions",
@@ -1122,7 +1122,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "Free LEED Green Associate Readiness Check",
     intro:
-      "A timed 60-question LEED GA diagnostic (75 minutes, 70% readiness target) drawn from a 210-item bank written to the LEED v5 test specifications and weighted like the GBCI blueprint — then drill weak domains in the linked $9.99 / 210-card Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200), based on LEED v5 since 2026. Not a free 700-question lead-gen bank.",
+      "A timed 60-question LEED GA diagnostic (75 minutes, 70% readiness target) drawn from a 220-item bank written to the LEED v5 test specifications and weighted like the GBCI blueprint — then drill weak domains in the linked $9.99 / 220-card Anki deck. Official LEED GA is 100 questions / 2 hours / scaled 170 (125–200), based on LEED v5 since 2026. Not a free 700-question lead-gen bank.",
     audience:
       "Architects, engineers, sustainability consultants, and students entering green building who want a baseline before USGBC exam registration.",
     practiceTestLabel: "LEED Green Associate practice test",
