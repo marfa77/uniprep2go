@@ -6928,5 +6928,215 @@
     },
     "difficulty": "medium",
     "sourceNote": "Original UniPrep2Go local bank for ABO-NCLE NOCE themes (expanded to 210 unique 2026-11-22)."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-054",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A trial puts a 1.00 prism-diopter base-down Fresnel on a lens that already has 1.50 prism diopters base down ground in. While both are in place, what vertical prism does that eye look through?",
+    "options": [
+      { "id": "a", "text": "2.50 prism diopters base down, because the two base-down prisms add" },
+      { "id": "b", "text": "0.50 prism diopters base down, because the Fresnel cancels part of the ground prism" },
+      { "id": "c", "text": "1.50 prism diopters base down, because a Fresnel does not change ground prism" },
+      { "id": "d", "text": "2.50 prism diopters base up, because stacking flips the ground base" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "Prism in front of one eye adds when the bases point the same way. A 1.50 base-down ground prism plus a 1.00 base-down Fresnel is 2.50 base down while both are in the line of sight. Opposite bases would cancel. A Fresnel does not erase the prism already ground into the lens, and stacking it does not flip that base.",
+    "distractorExplanations": {
+      "b": "Treats same-direction bases as if they opposed each other. Base-down on base-down adds; cancellation needs opposite bases.",
+      "c": "Ignores the Fresnel the eye is actually looking through. The wafer adds its own prism on top of the ground prism.",
+      "d": "Keeps the sum but reverses the base. Nothing in the stack turns base down into base up."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-optics-055",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "optics",
+    "prompt": "A bulb sits 20 cm in front of a +5.00 D thin lens, at that lens's focal point. An apprentice holds a card behind the lens to catch a picture of the bulb. What leaves the lens?",
+    "options": [
+      { "id": "a", "text": "A real image on the card, the same size as the bulb and 20 cm behind the lens" },
+      { "id": "b", "text": "Parallel rays, so the image is at infinity and the card shows no sharp picture" },
+      { "id": "c", "text": "A virtual image on the same side as the bulb, which the card can still catch" },
+      { "id": "d", "text": "A real image 5 cm behind the lens, because power in diopters sets that distance" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A +5.00 D lens has a focal length of 20 cm. An object at that focal point sends parallel rays out the other side, so the image is at infinity. A card behind the lens has no finite place where those rays form a sharp picture. A real image would need the object beyond the focal point, and a virtual image would need the object inside it.",
+    "distractorExplanations": {
+      "a": "Places a real image at the focal length. That layout is for an object beyond the focal point, not for an object sitting on it.",
+      "c": "Describes an object inside the focal length. At the focal point the rays leave parallel rather than forming a virtual image the card could catch.",
+      "d": "Reads the diopter number as a centimeter distance. The focal length of a +5.00 D lens is 20 cm, and the image from an object there is at infinity."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-054",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A -1.50 D wearer with a small, well-centered frame asks for 1.74 plastic because a higher index is always thinner. The edges are already slim. What should the optician explain?",
+    "options": [
+      { "id": "a", "text": "1.74 is required once any minus power is ordered, whatever the frame size" },
+      { "id": "b", "text": "1.74 also raises the Abbe value, so night driving gets clearer as the lens thins" },
+      { "id": "c", "text": "This low power in a small frame gains little thinness, and 1.74 lowers Abbe" },
+      { "id": "d", "text": "1.74 is an impact rating, so it should be saved for safety frames only" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "Index reduces thickness most when the power and the blank size are large. A -1.50 D lens in a small centered frame is already thin, so 1.74 buys little edge change and brings a lower Abbe value, which means more color fringe off center. Higher index is not an impact rating and is not required for every minus power.",
+    "distractorExplanations": {
+      "a": "Turns a cosmetic option into a rule. Low minus powers in small frames do not need a 1.74 index.",
+      "b": "Reverses the Abbe tradeoff. Higher-index plastics usually have lower Abbe values, so off-center color fringe gets worse, not better.",
+      "d": "Confuses refractive index with an impact standard. 1.74 describes bending of light, not a safety rating."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-lenses-055",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "lenses",
+    "prompt": "A patient has useful vision in one eye only and wants new dress glasses. The written power could be made in several plastics. Which material choice protects that eye first?",
+    "options": [
+      { "id": "a", "text": "CR-39, because its higher Abbe value matters more than impact for a dress pair" },
+      { "id": "b", "text": "Glass, because a heavier lens is steadier and therefore safer in daily wear" },
+      { "id": "c", "text": "The highest index available, because a thinner lens is the safety choice" },
+      { "id": "d", "text": "An impact-resistant plastic such as polycarbonate or Trivex" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "When only one eye has useful vision, that eye is protected with an impact-resistant spectacle lens. Polycarbonate and Trivex are the usual dress-lens choices for that duty. A higher Abbe value, extra weight, or a higher index does not take the place of impact resistance.",
+    "distractorExplanations": {
+      "a": "Puts optical clarity ahead of impact. CR-39 has a higher Abbe value and weaker impact resistance than polycarbonate or Trivex.",
+      "b": "Treats weight as safety. Dress glass breaks more readily than polycarbonate or Trivex.",
+      "c": "Treats thickness as safety. Index changes how thin the lens is, not whether it resists impact."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-053",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A patient orders reading-only single-vision glasses. The distance PD on the old driving pair is 66 mm. Where should the new optical centers be placed?",
+    "options": [
+      { "id": "a", "text": "On the measured near PD, which is narrower than the 66 mm distance PD" },
+      { "id": "b", "text": "On the 66 mm distance PD, because single vision never uses a near PD" },
+      { "id": "c", "text": "Wider than 66 mm, because reading convergence moves the pupils outward" },
+      { "id": "d", "text": "On the frame's boxed centers, because a reading pair is not decentered" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "At a reading distance the eyes converge, so the near PD is narrower than the distance PD. Reading-only single vision is centered on that near measurement. Leaving the centers on the 66 mm driving PD puts them too wide for the reading gaze. Convergence does not move the pupils outward, and the frame's boxed centers are not the patient's PD.",
+    "distractorExplanations": {
+      "b": "Keeps the distance PD for a near-only pair. Single vision used for reading is centered on the near PD.",
+      "c": "Reverses convergence. The pupils move in at near, so the near PD is smaller, not larger.",
+      "d": "Substitutes the frame's geometry for the patient's near PD. Boxed centers still have to be decentered to the reading gaze."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-054",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "A metal frame rocks on the nose. The right pad lies flat on the skin, and the left pad does not touch at all. The temples already hold. What adjustment comes first?",
+    "options": [
+      { "id": "a", "text": "Bend both temples tighter so the rock is squeezed out at the ears" },
+      { "id": "b", "text": "Seat the left pad on the skin so both pads share the load" },
+      { "id": "c", "text": "Raise the right pad off the skin until neither pad is touching" },
+      { "id": "d", "text": "Spread the eye wire until the rocking stops without moving either pad" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "A rocking metal frame with one pad in the air is a pad-contact problem. The floating pad is brought onto the skin so both pads carry the frame. Tightening temples that already hold does not put that pad on the nose. Lifting the good pad or spreading the eye wire leaves the contact uneven.",
+    "distractorExplanations": {
+      "a": "Moves the adjustment to the ears. The temples already hold, and the left pad is the part that is not touching.",
+      "c": "Takes the working pad off the skin. Both pads need contact, so the floating pad is seated rather than the good one lifted.",
+      "d": "Changes the eye wire and leaves the left pad in the air. Pad contact is corrected at the pad."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-fitting-055",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "fitting",
+    "prompt": "Skull temples keep sliding off when a patient works looking down, even after the ear bend matches the ear. Which temple style holds that posture better?",
+    "options": [
+      { "id": "a", "text": "Library temples, because a straighter ear piece grips more when the head tips down" },
+      { "id": "b", "text": "The same skull temples opened wider, because a loose fit stops the slide" },
+      { "id": "c", "text": "Riding-bow cable temples, which curl around the ear and stay on" },
+      { "id": "d", "text": "No temples, because a rimless mount cannot slide during downgaze" }
+    ],
+    "correctOptionId": "c",
+    "explanation": "A riding-bow, or cable, temple curls behind the ear, so the frame stays on when the patient looks down for long periods. Library temples are straighter and meant to slip on and off, so they hold less. Opening skull temples that already match the ear makes the slide worse, and removing the temples does not keep a frame on.",
+    "distractorExplanations": {
+      "a": "Picks the temple made for easy removal. Library temples hold less than a cable that curls around the ear.",
+      "b": "Loosens a fit that is already sliding. A wider opening does not replace a temple that wraps the ear.",
+      "d": "Drops the retaining part of the frame. Downgaze slip is a temple problem, and a mount with no temples will not stay on."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-053",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "On a manual lensometer, one meridian of a lined bifocal reads +1.25 through the distance portion and +3.25 through the segment. What is the add?",
+    "options": [
+      { "id": "a", "text": "+3.25 D, because the segment reading is the add by itself" },
+      { "id": "b", "text": "+1.25 D, because the distance reading is copied onto the add line" },
+      { "id": "c", "text": "+4.50 D, because the two drum readings are added together" },
+      { "id": "d", "text": "+2.00 D, the segment reading minus the distance reading" }
+    ],
+    "correctOptionId": "d",
+    "explanation": "The add is the extra plus in the segment, not the total near power. Subtract the distance reading from the segment reading in the same meridian: +3.25 minus +1.25 is +2.00 D. The +3.25 figure is the full near power, and adding the two drum readings double-counts the distance power.",
+    "distractorExplanations": {
+      "a": "Calls the total near power the add. +3.25 D already includes the +1.25 D distance power.",
+      "b": "Copies the distance power onto the add line. The add is the difference, not the distance reading.",
+      "c": "Adds the two readings. That counts the distance power twice instead of subtracting it."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-054",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "To save a trip, a coworker stacks the patient's old right lens on the new right lens and neutralizes them together. What does that drum reading mean?",
+    "options": [
+      { "id": "a", "text": "The sum of the two lenses, not the power of either lens alone" },
+      { "id": "b", "text": "The new lens only, because the lensometer ignores the upper lens" },
+      { "id": "c", "text": "The old lens only, because the stop always reads the lens farthest from it" },
+      { "id": "d", "text": "The prescribed power, because two lenses from one patient must match" }
+    ],
+    "correctOptionId": "a",
+    "explanation": "A lensometer reads the lenses that are in the path as one combination. Two lenses stacked on the stop give the sum of their powers, so the drum does not report either lens alone. Each lens is neutralized by itself and compared with its own line on the order.",
+    "distractorExplanations": {
+      "b": "Assumes the upper lens disappears. Both lenses are in the light path, so both powers are in the reading.",
+      "c": "Assigns the reading to whichever lens is farther from the stop. A stack is read as a combination, not as the far lens only.",
+      "d": "Treats a personal match as a measurement. The drum shows combined power, and each lens still has to be read alone against the order."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
+  },
+  {
+    "id": "abo-optician-readiness-check-instruments-055",
+    "examSlug": "abo-optician-readiness-check",
+    "topicId": "instruments",
+    "prompt": "A teaching lab orders plano visitor spectacles and requires side coverage for impact. A buyer suggests ordinary fashion planos. Which standard is the lab pair supposed to meet?",
+    "options": [
+      { "id": "a", "text": "ANSI Z80.1, because every plano lens used indoors is a dress ophthalmic lens" },
+      { "id": "b", "text": "ANSI/ISEA Z87.1, the impact standard for protective spectacles" },
+      { "id": "c", "text": "The FTC Eyeglass Rule, because visitor planos are released like a prescription" },
+      { "id": "d", "text": "No standard, because a plano lens has no power to verify" }
+    ],
+    "correctOptionId": "b",
+    "explanation": "Visitor spectacles ordered for impact, with side coverage, are protective eyewear. That duty is ANSI/ISEA Z87.1, not the Z80.1 tolerance standard used for ordinary dress prescription eyewear. A zero-power lens still has to meet the impact standard the lab asked for, and the FTC Eyeglass Rule is about releasing a prescription, not about impact rating.",
+    "distractorExplanations": {
+      "a": "Applies the dress-eyewear standard to a protective order. Z80.1 does not make fashion planos into impact-rated visitor spectacles.",
+      "c": "Uses the prescription-release rule as a product standard. The FTC Eyeglass Rule does not rate impact or side shields.",
+      "d": "Treats zero power as zero requirement. Plano protectors are still impact-rated eyewear when the lab requires that protection."
+    },
+    "difficulty": "medium",
+    "sourceNote": "Original UniPrep2Go item for the ABO optician bank, added 2026-11-23."
   }
 ]

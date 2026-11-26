@@ -51,7 +51,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "aspt-phlebotomy-anki-deck":
     "Planned 120-card ASPT phlebotomy Anki (venipuncture, order of draw, safety, processing). Take the 60-question diagnostic (free 25-question version) now. ASPT does not publish an item count. ASPT is not NHA CPT and not ASCP PBT. The deck is not a live download.",
   "cscs-nsca-anki-deck":
-    "Planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, organization). Take the 60-question diagnostic (free 25-question version) from a 120-item bank — official CSCS is two papers / scaled 70 each. The deck is not a live download. CSCS is not a personal-trainer CPT exam.",
+    "$9.99 / 250 NSCA CSCS cards (exercise science, nutrition, program design, organization) from the same 250-question bank as the 60-question diagnostic (free 25-question version). Official CSCS is two papers; scaled 70 on each is not 70 percent correct. CSCS is not a personal-trainer CPT exam.",
   "rd-exam-anki-deck":
     "240 CDR-domain cards (Principles 50, Nutrition Care 108, Management 50, Foodservice 32) with explanations — pairs with the 120-question RD readiness check (free 25-question version), drawn from the same bank, before Pearson VUE.",
   "enrolled-agent-anki-deck":
@@ -73,7 +73,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "pmp-anki-deck":
     "$11 / 346+ PMP cards for 2026 ECO (People / Process / Business Environment) + free domain readiness check. Official exam is 180Q / 240 min.",
   "parapro-anki-deck":
-    "Planned 120-card ParaPro Anki (reading, writing, math, classroom application). Take the 60Q / 75 min diagnostic (free 25-question version) now — official ETS ParaPro is 90Q / 150 min.",
+    "$9.99 / 220 ParaPro cards (reading, writing, math, classroom application) from the same 220-question bank as the 60Q / 75 min diagnostic (free 25-question version). Official ETS ParaPro is 90Q / 150 min.",
   "acsm-cpt-anki-deck":
     "$11 / 120 ACSM-CPT cards + 60Q / 75-min timed check (free 25-question version) from the same 120-item bank — official 135 items / 150 min / scaled 550. Ownable .apkg vs Mometrix volume banks.",
   "ashrae-certifications-anki-deck":
@@ -206,7 +206,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "pmp-anki-deck":
     "346+ ECO-aligned cards across People (33%), Process (41%), and Business Environment (26%) for the 2026 PMP outline — paired with the free domain-weighted readiness check. Ownable $11 .apkg vs AnkiWeb dumps; official sitting is 180Q / 240 minutes. Not PMI material.",
   "parapro-anki-deck":
-    "Planned ParaPro spaced-repetition deck for ETS Assessment 1755 themes (reading, writing, math, classroom application). The 60-question / 75-minute readiness check (free 25-question version) is live now; the official exam is 90 selected-response / 150 minutes. Not ETS material.",
+    "220 ParaPro cards for ETS Assessment 1755 themes (reading, writing, math, classroom application), from the same bank as the 60-question / 75-minute readiness check (free 25-question version). The official exam is 90 selected-response / 150 minutes. Not ETS material.",
   "series-63-anki-deck":
     "Series 63 flashcards for NASAA state law: broker-dealer regulation, agent registration, ethics, communications, and investment adviser basics — paired with the 60-question timed readiness check (free 25-question version). Ownable .apkg after SIE/Series 7; not NASAA material.",
   "medicare-counseling-anki-deck":
@@ -224,7 +224,7 @@ export const longDescriptionOverrides: Partial<Record<string, string>> = {
   "ardms-spi-anki-deck":
     "$11 ARDMS SPI Anki (120 unique cards) for ultrasound physics, transducers/beam, Doppler, and artifacts/safety. 60-question / 75-minute readiness check (free 25-question version) from the same 120 bank; official SPI is about 110 questions / 2 hours / scaled 555. Text/physics only — not ABD/OB image interpretation.",
   "abo-optician-anki-deck":
-    "$9.99 ABO Optician (NOCE) Anki (210 unique cards) for basic optics, lenses/materials, fitting/adjustments, and instruments/regs. 60-question / 75-minute readiness check (free 25-question version) from the same 210 bank; official ABO-NCLE NOCE is typically 125 questions / 2 hours with a criterion-referenced pass. Spectacle only — not NCLE contacts and not optometry.",
+    "$9.99 ABO Optician (NOCE) Anki (220 unique cards) for basic optics, lenses/materials, fitting/adjustments, and instruments/regs. 60-question / 75-minute readiness check (free 25-question version) from the same 220 bank; official ABO-NCLE NOCE is typically 125 questions / 2 hours with a criterion-referenced pass. Spectacle only — not NCLE contacts and not optometry.",
   "ascp-mls-anki-deck":
     "Planned ASCP MLS Anki for blood bank, chemistry, hematology, and microbiology/immunology. 60-question / 90-minute readiness check (free 25-question version) is live; official BOC MLS is 100 CAT questions / 2 hours 30 minutes / scaled pass 400. Not MLT.",
   "ascp-mlt-anki-deck":
@@ -452,13 +452,13 @@ export const positioningOverrides: Partial<
   },
   "parapro-anki-deck": {
     ourEdge: [
-      "Planned 120-card ParaPro Anki for reading, writing, math, classroom application",
-      "60Q / 75 min diagnostic live now (free 25-question version) — official ETS form is 90Q / 150 min",
-      "Honest cut-score note: many districts use 460 — verify locally",
+      "220 ParaPro cards for reading, writing, math, and classroom application",
+      "60Q / 75 min diagnostic from the same 220-question bank (free 25-question version) — official ETS form is 90Q / 150 min",
+      "The cut score is set by the state or district — verify locally",
       "Independent prep — not ETS exam material",
     ],
     summaryProse:
-      "ETS Study Companion and paid interactive practice tests own official format. UniPrep’s free shorter diagnostic (and planned Anki) is for topic scoring before you schedule Assessment 1755.",
+      "ETS Study Companion and paid interactive practice tests own official format. UniPrep’s free shorter diagnostic and the $9.99 / 220-card Anki are for topic scoring before you schedule Assessment 1755.",
   },
   "series-63-anki-deck": {
     ourEdge: [
@@ -512,13 +512,13 @@ export const positioningOverrides: Partial<
   },
   "abo-optician-anki-deck": {
     ourEdge: [
-      "$9.99 / 210 unique ABO NOCE Anki cards for optics, lenses, fitting, instruments/regs",
-      "60Q / 75 min timed diagnostic (free 25-question version) from the same 210 bank (Mock Pass retakes are not a 60-stem shuffle)",
+      "$9.99 / 220 unique ABO NOCE Anki cards for optics, lenses, fitting, instruments/regs",
+      "60Q / 75 min timed diagnostic (free 25-question version) from the same 220 bank (Mock Pass retakes are not a 60-stem shuffle)",
       "Honest: official NOCE is typically 125Q / 2h, criterion-referenced pass — our mock is shorter",
       "Spectacle NOCE only — ≠ NCLE contacts, ≠ optometry",
     ],
     summaryProse:
-      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus an ownable $9.99 / 210-card Anki — not a full 125-item NOCE substitute and not NCLE.",
+      "EveryExamPrep/ExamByExam untimed lists and PracticeTestGeeks flashcard dumps own volume. UniPrep wins when you want a no-signup timed 60Q diagnostic (free 25-question version) with topic scoring plus an ownable $9.99 / 220-card Anki — not a full 125-item NOCE substitute and not NCLE.",
   },
   "ascp-mls-anki-deck": {
     ourEdge: [
@@ -950,7 +950,7 @@ ASPT registration, clinical training, or NHA/ASCP exams. Independent diagnostic 
 
   "cscs-nsca-anki-deck": `### What this page is
 
-A planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, organization & admin) paired with a **live 60-question** timed readiness check drawn from a 120-item bank (free 25-question version). The deck is **not a live Gumroad SKU** yet — do not treat this page as a buyable .apkg.
+A 250-card NSCA CSCS Anki (exercise science, nutrition, program design, organization and admin) paired with a **live 60-question** timed readiness check drawn from the same 250-question bank (free 25-question version). The file is a $9.99 .apkg.
 
 ### CSCS vs personal-trainer CPT
 
@@ -958,7 +958,7 @@ A planned 120-card NSCA CSCS Anki (exercise science, nutrition, program design, 
 
 ### Plan with the free mock
 
-Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-check). Use the topic report to see science vs programming gaps. This 60-question diagnostic is drawn from a 120-item bank, is shorter than either official paper, and has no video items. Join the waitlist when the Anki ships.
+Start with the [free NSCA CSCS readiness check](/mock-exams/cscs-nsca-readiness-check). Use the topic report to see science vs programming gaps. This 60-question diagnostic is drawn from a 250-question bank, is shorter than either official paper, and has no video items. Then drill the weak topic in the 250-card deck.
 
 ### What this does not replace
 
@@ -2076,19 +2076,19 @@ PMI eligibility hours, authorized training, or the official Pearson VUE / online
 
   "parapro-anki-deck": `### What is inside
 
-Planned 120-card ParaPro Anki for ETS Assessment 1755 themes: reading skills, writing skills, mathematics, and classroom application. Same topic map as the free timed readiness check.
+220 ParaPro cards for ETS Assessment 1755 themes: reading skills, writing skills, mathematics, and classroom application. Same 220-question bank as the free timed readiness check.
 
 ### Plan with the free ParaPro mock (live now)
 
-**Phase 1:** Sit the [60-question ParaPro readiness check (free 25-question version)](/mock-exams/parapro-readiness-check) (75 min diagnostic). **Phase 2:** Drill weak subjects with ETS Study Companion samples and (when live) this Anki deck. **Phase 3:** Schedule Assessment **1755** — official form is **90 selected-response / 150 minutes**. Many districts use a **460** scaled cut — verify your employer/state requirement.
+**Phase 1:** Sit the [60-question ParaPro readiness check (free 25-question version)](/mock-exams/parapro-readiness-check) (75 min diagnostic). **Phase 2:** Drill the weak subject in this 220-card deck. **Phase 3:** Schedule Assessment **1755** — official form is **90 selected-response / 150 minutes**. The cut score is set by the state or district.
 
 ### Pitfalls this deck targets
 
-Candidates treat a shorter free diagnostic as a full ETS form, or ignore classroom-application items (~1/3 of each subject). Cards (when shipped) force skills + application framing.
+Candidates treat a shorter free diagnostic as a full ETS form, or ignore classroom-application items (about one-third of each subject). The cards keep skills and classroom application in the same bank.
 
 ### What this does not replace
 
-ETS registration, the free Study Companion PDF, or paid ETS interactive practice. Anki is planned on UniPrep — not a live Gumroad SKU yet. Independent prep — not ETS material.`,
+ETS registration, the free Study Companion PDF, or paid ETS interactive practice. Independent prep — not ETS material.`,
 
   "series-63-anki-deck": `### What is inside
 
@@ -2660,7 +2660,7 @@ NMLS enrollment or the official SAFE MLO national test. Independent prep — not
 
   "abo-optician-anki-deck": `### What is inside
 
-210 ABO Optician (NOCE) MCQ cards across basic optics, lenses & materials, fitting & adjustments, and instruments & regulations — built from the same 210 unique bank as the free timed readiness check.
+220 ABO Optician (NOCE) MCQ cards across basic optics, lenses & materials, fitting & adjustments, and instruments & regulations — built from the same 220 unique bank as the free timed readiness check.
 
 ### Plan with the free ABO mock
 

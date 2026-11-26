@@ -833,16 +833,21 @@ export const wave4MockExamConfigs: MockExamConfig[] = [
     linkedDeckSlug: "pharmacy-technician-excpt-anki-deck",
     durationMinutes: 75,
     questionCount: NICHE_SESSION_QUESTIONS,
-    topics: fourNicheTopics([
-      { id: "orders", label: "Orders & dispensing" },
-      { id: "inventory", label: "Inventory & storage" },
-      { id: "safety", label: "Safety & quality" },
-      { id: "law", label: "Law & ethics" }
-    ]),
-    officialSourceNote: "Mapped to NHA themes. Independent UniPrep2Go readiness check — not an official exam.",
-    description: "60-question ExCPT Pharmacy Technician readiness check (free 25-question version) with topic scoring.",
+    topics: [
+      { id: "role", label: "Role and general duties", questionCount: 9, weightPercent: 15, targetPercent: 70 },
+      { id: "law", label: "Laws", questionCount: 9, weightPercent: 15, targetPercent: 70 },
+      { id: "drugs", label: "Drugs and drug therapy", questionCount: 8, weightPercent: 13, targetPercent: 70 },
+      { id: "dispensing", label: "Dispensing process", questionCount: 26, weightPercent: 43, targetPercent: 70 },
+      { id: "safety", label: "Medication safety and quality", questionCount: 8, weightPercent: 14, targetPercent: 70 },
+    ],
+    officialSourceNote:
+      "NHA ExCPT test plan from the 2023 job analysis, still the plan linked from the NHA candidate handbook updated 19 November 2026: 100 scored items plus 20 unscored pretest items, 2 hours 10 minutes, scaled score 200–500, pass 390. Scored weights are role and general duties 15, laws 15, drugs and drug therapy 13, dispensing process 43, and medication safety and quality assurance 14. This check draws 60 questions in 75 minutes on those weights (9 / 9 / 8 / 26 / 8) from a 128-item bank (role 20, laws 36, drugs 16, dispensing 36, safety 20). The stored pool is still heavier on laws and lighter on dispensing than the 100 scored items. The 70% mark is UniPrep2Go's readiness target, not the scaled 390. Not an NHA exam.",
+    description:
+      "60-question / 75-minute ExCPT readiness check (free 25-question version) drawn on the five 2023 NHA domain weights. Official exam is 100 scored plus 20 pretest items, 2 hours 10 minutes, scaled pass 390.",
     examBody: "NHA",
-    questionSourceNote: "Original UniPrep2Go bank: 120 questions (30 per topic), reviewed and expanded 2026-10-14; each timed attempt draws 60.",
+    questionSourceNote:
+      "128 questions retagged to the 2023 ExCPT domains on 2026-11-23 (role and general duties 20, laws 36, drugs and drug therapy 16, dispensing process 36, medication safety and quality 20). Each session is still 60 questions / 75 minutes.",
+    lastUpdated: "2026-11-23",
     searchAliases: ["ExCPT", "NHA pharmacy technician"],
   }),
   nicheReadinessConfig({

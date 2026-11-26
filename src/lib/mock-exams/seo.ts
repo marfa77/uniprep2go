@@ -206,7 +206,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "pharmacy-technician-excpt-readiness-check": {
     title: "NHA ExCPT Practice Test | 60Q Mock, 25Q Free",
     description:
-      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, no signup; full mock 60 timed questions, 75 minutes, topic scoring for orders & dispensing, inventory & storage, safety & quality, and law & ethics — full answer review, then $19 for unlimited attempts. Distinct from PTCB PTCE. Independent prep — not NHA exam material.",
+      "NHA ExCPT pharmacy technician practice test: free 25-question diagnostic, no signup; full mock 60 timed questions in 75 minutes on the five 2023 domain weights. Official ExCPT is 100 scored plus 20 pretest items, 2 hours 10 minutes, scaled pass 390. Distinct from PTCB PTCE. Not NHA material.",
     keywords: [
       "free nha excpt practice test",
       "nha excpt practice test",
@@ -217,7 +217,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
     ],
     headline: "NHA ExCPT Pharmacy Technician Practice Test — 60 Questions (Free 25-Question Version)",
     intro:
-      "A timed ExCPT-pathway diagnostic with topic scoring — orders and dispensing, inventory and storage, safety and quality, and pharmacy law and ethics — built for candidates who chose NHA rather than PTCB. Each full attempt draws 60 of 120 original items; the free first run is a 25-question diagnostic, no signup, with full answer review. Independent prep — not retired NHA items.",
+      "A timed ExCPT diagnostic for candidates who chose NHA rather than PTCB. Each full attempt draws 60 of 128 items on the 2023 test-plan weights: role and general duties 9, laws 9, drugs and drug therapy 8, dispensing process 26, medication safety and quality 8. The official exam is 100 scored questions plus 20 unscored pretest questions, 2 hours 10 minutes, scaled 200–500 with a pass at 390. The free first run is 25 questions, no signup. The 70% mark on this check is UniPrep2Go's, not the scaled 390. Not NHA material.",
     audience:
       "Pharmacy technician candidates targeting NHA ExCPT (not PTCB PTCE) who want a timed baseline with topic scoring before paying for a question bank.",
     practiceTestLabel: "NHA ExCPT practice test",

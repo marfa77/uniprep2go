@@ -1,0 +1,30 @@
+---
+description: Organic search arrival requires a unique bank of at least 220 and a live Gumroad deck
+alwaysApply: true
+---
+
+# Organic arrival → bank of at least 220 and a Gumroad deck
+
+User, 2026-11-23: the daily calendar in `docs/mock-bank-qa/daily-plan.md` is closed. Do not start its next row. Do not run `sku-daily-plan.py` to refill it.
+
+If a SKU has an organic search arrival, it is not done until both are true:
+
+1. Unique question bank is **at least 220**. 219 does not pass.
+2. The linked Anki deck is a **live Gumroad product**, not planned and not a waitlist.
+
+## What counts as organic
+
+On-site visit whose referrer is a search engine: Google, Bing, Yahoo, DuckDuckGo, Yandex, Brave, Ecosia, Qwant, and the same hosts. Page attribution exists for Google and Bing. Yahoo, DuckDuckGo, Yandex, Brave, and Ecosia are sitewide totals only — they do not by themselves name a SKU.
+
+Not organic: ChatGPT, other LLM hosts, social, direct, GSC impressions with no visit.
+
+## How to work
+
+The queue is `docs/mock-bank-qa/organic-plan.md`. Before starting the next untouched SKU, recount the last 28 days and insert any new arrival above untouched rows. A SKU already started stays until the bank is at least 220 and the Gumroad deck matches. A SKU that already passes stays off the queue.
+
+- One SKU at a time unless the user names a batch. Highest Google/Bing uniques in that 28-day window first. On a tie: Google, then no Gumroad deck, then slug. A visit older than the window waits behind it.
+- Session length, time, and pass target stay. Do not stretch the session because the bank grew.
+- Do not invent official exam length, time, or pass score.
+- Bring the bank to at least 220, then build or rebuild the deck in the same pass (`bank-over-200-build-deck.mdc`). A deck already on Gumroad is rebuilt to the new count, not left at the old card count.
+- Civic and language decks follow that same-pass rebuild when this rule pushes their source bank to 220.
+- Commit and `git push origin main` only when the user says to ship.

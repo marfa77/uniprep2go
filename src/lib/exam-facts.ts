@@ -1541,7 +1541,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       time_limit: "150 minutes",
       scoring_scale: "Scaled score reported by ETS",
       passing_score:
-        "Cut scores are set by states/districts — many employers use 460 as a common threshold; verify your local requirement",
+        "Cut scores are set by states and districts, not by ETS. Verify the score your employer or state requires",
       delivery: "Computer-delivered (in-person or at-home options — verify at ets.org/parapro)",
       outline_effective_date: "ParaPro Assessment Study Companion (verify current PDF at ets.org)",
       verify_at_url: "https://www.ets.org/parapro/test-takers/about/prepare.htm.html",
@@ -1578,15 +1578,77 @@ const examProfiles: Record<string, ExamFactsProfile> = {
       },
       {
         q: "What is a passing ParaPro score?",
-        a: "ETS reports a scaled score; many districts use 460 as a common cut — confirm the score your employer or state requires.",
+        a: "ETS reports a scaled score. The passing score is set by the state or district, so confirm the score your employer requires.",
       },
       {
         q: "Is UniPrep2Go's ParaPro check the official exam?",
-        a: "No. The UniPrep2Go 60-question readiness check (free 25-question version) is independent practice — not ETS exam material. The Anki deck is planned, not a live purchase SKU yet.",
+        a: "No. The UniPrep2Go 60-question readiness check (free 25-question version) is drawn from a 220-question bank and is independent practice — not ETS exam material. The Anki deck is $9.99 for 220 cards from that bank.",
       },
     ],
     trademark_note:
       "ParaPro® and Praxis® are trademarks of ETS. UniPrep2Go is not affiliated with or endorsed by ETS.",
+  },
+  "cscs": {
+    examKey: "cscs",
+    pageHeading: "NSCA CSCS — Exam Facts & Prep",
+    intro:
+      "The NSCA Certified Strength and Conditioning Specialist (CSCS) exam is two separately scored sections for people who program training for athletes. This page summarizes the handbook effective 1 July 2026. UniPrep2Go products are independent prep (not NSCA exam material) and are not a personal-trainer CPT exam.",
+    exam_facts: {
+      exam_name: "Certified Strength and Conditioning Specialist (CSCS)",
+      administered_by: "National Strength and Conditioning Association (NSCA)",
+      question_count:
+        "Two sections: Scientific Foundations 95 items (80 scored + 15 non-scored) and Practical/Applied 125 items (110 scored + 15 non-scored)",
+      scored_count: "80 on Scientific Foundations and 110 on Practical/Applied",
+      time_limit: "1.5 hours for Scientific Foundations and 2.5 hours for Practical/Applied",
+      scoring_scale: "Scaled score from 1 to 100 on each section",
+      passing_score:
+        "Scaled score of 70 or higher on each section. A scaled 70 is not 70 percent of the items correct.",
+      delivery: "Computer-based. Practical/Applied includes 30–40 video or image items.",
+      outline_effective_date: "NSCA Certification Handbook effective 1 July 2026",
+      verify_at_url:
+        "https://www.nsca.com/certification/cscs/certified-strength-and-conditioning-specialist-exam-description/",
+    },
+    official_sources: [
+      {
+        label: "NSCA — CSCS exam description",
+        url: "https://www.nsca.com/certification/cscs/certified-strength-and-conditioning-specialist-exam-description/",
+      },
+      {
+        label: "NSCA — Certification Handbook (PDF)",
+        url: "https://www.nsca.com/globalassets/certification/certification-pdfs/certification-handbook.pdf",
+      },
+    ],
+    domain_weights: [
+      { domain: "Exercise science", weight: "48 of 80 scored Scientific Foundations items" },
+      { domain: "Sport psychology", weight: "20 of 80 scored Scientific Foundations items" },
+      { domain: "Nutrition", weight: "12 of 80 scored Scientific Foundations items" },
+      { domain: "Program design", weight: "44 of 110 scored Practical/Applied items" },
+      { domain: "Exercise technique", weight: "28 of 110 scored Practical/Applied items" },
+      { domain: "Program implementation", weight: "22 of 110 scored Practical/Applied items" },
+      { domain: "Organization and administration", weight: "16 of 110 scored Practical/Applied items" },
+    ],
+    high_yield_facts: [
+      "Both sections must be passed. A failed section is retaken within one year of the first exam date.",
+      "Practical/Applied includes 30–40 video or image items. The UniPrep check is text only.",
+      "UniPrep’s 60-question / 75-minute session draws equally from four topics, not at the official domain weights.",
+      "The 70% mark on the UniPrep check is a readiness target. It is not the official scaled score of 70.",
+    ],
+    candidate_qa: [
+      {
+        q: "How many questions are on the CSCS exam?",
+        a: "Scientific Foundations has 95 items in 1.5 hours. Practical/Applied has 125 items in 2.5 hours. Each section includes 15 non-scored items.",
+      },
+      {
+        q: "What is a passing CSCS score?",
+        a: "A scaled score of 70 or higher on each section. The scale runs from 1 to 100 and is not a percent correct.",
+      },
+      {
+        q: "Is UniPrep2Go's CSCS check the official exam?",
+        a: "No. The UniPrep2Go 60-question readiness check (free 25-question version) is drawn from a 250-question bank and has no video items. The Anki deck is $9.99 for 250 cards from that bank. Neither is NSCA exam material.",
+      },
+    ],
+    trademark_note:
+      "CSCS® is a trademark of the National Strength and Conditioning Association. UniPrep2Go is not affiliated with or endorsed by the NSCA.",
   },
   "pmp": {
     examKey: "pmp",
@@ -3802,7 +3864,7 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     examKey: "abo-ncle-noce",
     pageHeading: "ABO Optician (NOCE) Exam — Facts & Prep",
     intro:
-      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 210 unique bank, paired with a live $9.99 / 210-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
+      "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians. Official sittings are typically 125 multiple-choice questions in 2 hours (about 100 scored + pretest) with a criterion-referenced Modified Angoff pass — ABO-NCLE does not publish a percent cut. UniPrep2Go’s check is a 60-question / 75-minute / 70% diagnostic (free 25-question version) from a 220 unique bank, paired with a live $9.99 / 220-card Anki. Spectacle NOCE only — not NCLE contacts and not optometry. Independent prep — not ABO-NCLE material.",
     exam_facts: {
       exam_name: "National Opticianry Competency Examination (NOCE / ABO Basic)",
       administered_by: "ABO-NCLE (Prometric delivery)",
@@ -3828,17 +3890,17 @@ const examProfiles: Record<string, ExamFactsProfile> = {
     whats_changed: [
       "Confirm current NOCE item count and seating rules in the live Basic Examination Handbook.",
       "NCLE contact-lens exam is a separate credential — do not mix CLRE content into NOCE prep.",
-      "Linked Anki is live at $9.99 / 210 unique cards from the same bank as the timed 60Q diagnostic (free 25-question version).",
+      "Linked Anki is live at $9.99 / 220 unique cards from the same bank as the timed 60Q diagnostic (free 25-question version).",
     ],
     high_yield_facts: [
-      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep check is 60Q / 75m / 70% (free 25-question version) from a 210 unique bank + $9.99 / 210 Anki.",
+      "Official NOCE ≈ 125Q / 2h, criterion-referenced pass; UniPrep check is 60Q / 75m / 70% (free 25-question version) from a 220 unique bank + $9.99 / 220 Anki.",
       "Index of refraction governs how much light slows/bends; Abbe number tracks dispersion.",
       "Vertex distance changes effective power for higher prescriptions.",
     ],
     candidate_qa: [
       {
         q: "How many questions are on the ABO NOCE?",
-        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
+        a: "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. Pass is criterion-referenced. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 220-question bank.",
       },
       {
         q: "Is this the NCLE contact-lens exam?",
@@ -4794,6 +4856,7 @@ const deckExamKeyMap: Record<string, string> = {
   "sat-anki-deck": "sat",
   "pmp-anki-deck": "pmp",
   "parapro-anki-deck": "parapro",
+  "cscs-nsca-anki-deck": "cscs",
   "gre-anki-deck": "gre",
   "hvac-epa-608-anki-deck": "epa-608",
   "bms-building-automation-anki-deck": "bms-bas",

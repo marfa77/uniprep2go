@@ -566,14 +566,14 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "instruments", label: "Instruments & regulations" }
     ]),
     officialSourceNote:
-      "Independent diagnostic on ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) themes — optics, lenses, fitting, instruments/regs. Official NOCE is typically 125 MCQ / 2 hours (about 100 scored + pretest); pass is criterion-referenced (Modified Angoff) and ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target, drawn from a 210-question bank. Spectacle NOCE only — not NCLE contact lenses and not optometry. Not ABO-NCLE exam material.",
+      "Independent diagnostic on ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) themes — optics, lenses, fitting, instruments/regs. Official NOCE is typically 125 MCQ / 2 hours (about 100 scored + pretest); pass is criterion-referenced (Modified Angoff) and ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go check is 60 questions / 75 minutes / 70% readiness target, drawn from a 220-question bank. Spectacle NOCE only — not NCLE contact lenses and not optometry. Not ABO-NCLE exam material.",
     description:
-      "60-question / 75-minute ABO Optician (NOCE) readiness check (free 25-question version) drawn from a 210-question bank — shorter than the official ~125Q / 2h form.",
+      "60-question / 75-minute ABO Optician (NOCE) readiness check (free 25-question version) drawn from a 220-question bank — shorter than the official ~125Q / 2h form.",
     examBody: "ABO-NCLE (NOCE / ABO Basic)",
     questionSourceNote:
-      "Original UniPrep2Go bank: 210 questions (optics 53, lenses 53, fitting 52, instruments 52). Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
+      "Original UniPrep2Go bank: 220 questions (optics 55, lenses 55, fitting 55, instruments 55). Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
     searchAliases: ["ABO", "optician exam", "ABO-NCLE", "NOCE practice test"],
-    lastUpdated: "2026-11-22",
+    lastUpdated: "2026-11-23",
   }),
   nicheReadinessConfig({
     slug: "acsm-cpt-readiness-check",
@@ -656,12 +656,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "organization", label: "Organization & admin" }
     ]),
     officialSourceNote:
-      "Independent UniPrep2Go diagnostic on NSCA CSCS themes. Official CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 pretest / 1.5h) and Practical/Applied (110 scored + 15 pretest / 2.5h, including 30–40 video/image items); scaled pass 70 on each (verify nsca.com). This 60-question / 75-minute check is drawn from a 120-item bank, is shorter than either paper, and has no video items. CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. Not official NSCA exam material. Anki deck is planned, not a live Gumroad SKU.",
+      "Independent UniPrep2Go diagnostic on NSCA CSCS themes. Official CSCS is two separately scored papers — Scientific Foundations (80 scored + 15 non-scored / 1.5h; exercise science 48, sport psychology 20, nutrition 12) and Practical/Applied (110 scored + 15 non-scored / 2.5h; program design 44, exercise technique 28, program implementation 22, organization 16, including 30–40 video/image items). Scaled pass is 70 or higher on each section, and a scaled 70 is not 70 percent correct (verify nsca.com). This 60-question / 75-minute check is drawn from a 250-question bank, is shorter than either paper, and has no video items. The four topics are drawn equally, not at the official domain weights. CSCS is not NASM/ACE/ACSM CPT and not NSCA-CPT. Not official NSCA exam material.",
     description:
-      "60-question / 75-minute NSCA CSCS check (free first 25) from a 120-item bank. Official exam is two papers; this one is shorter and has no video.",
-    lastUpdated: "2026-10-29",
+      "60-question / 75-minute NSCA CSCS check (free first 25) from a 250-question bank. Official exam is two papers; this one is shorter and has no video.",
+    lastUpdated: "2026-11-25",
     examBody: "NSCA",
-    questionSourceNote: "Original UniPrep2Go local bank rewritten and expanded 2026-10-29.",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 250 questions (exercise science 63, nutrition 62, program design 63, organization 62). Each session is still 60 questions / 75 minutes and draws 15 from each topic. Expanded 2026-11-25.",
     searchAliases: ["CSCS", "NSCA CSCS", "strength coach"],
   }),
   nicheReadinessConfig({
@@ -982,10 +983,13 @@ export const wave3MockExamConfigs: MockExamConfig[] = [
       { id: "application", label: "Classroom application" }
     ]),
     officialSourceNote:
-      "Official ETS ParaPro (1755): 90 selected-response / 150 minutes (reading, writing, math). This UniPrep2Go check is a shorter 60Q / 75 min diagnostic — independent practice, not ETS material.",
-    description: "60-question ParaPro readiness check (free 25-question version) with topic scoring.",
+      "Official ETS ParaPro (1755): 90 selected-response questions in 150 minutes, about 30 each in reading, writing, and mathematics. About two-thirds of each subject test skills and about one-third apply them in class. Some items may be unscored. States and districts set the cut; there is no national percent. This UniPrep2Go check is 60 questions / 75 minutes drawn from a 220-question bank (reading 55, writing 55, math 55, classroom application 55). Independent practice, not ETS material.",
+    description:
+      "60-question / 75-minute ParaPro readiness check (free 25-question version) drawn from a 220-question bank. Official ETS form is 90 questions / 150 minutes.",
     examBody: "ETS",
-    questionSourceNote: "Original UniPrep2Go local bank (Wave 3 quality).",
+    questionSourceNote:
+      "Original UniPrep2Go bank: 220 questions (reading 55, writing 55, math 55, classroom application 55). Each session is still 60 questions / 75 minutes and draws 15 from each topic.",
+    lastUpdated: "2026-11-25",
     searchAliases: ["ParaPro", "paraprofessional exam"],
   }),
   nicheReadinessConfig({

@@ -604,7 +604,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The ABO-NCLE National Opticianry Competency Exam (NOCE / ABO Basic) certifies spectacle-dispensing opticians on ophthalmic optics, lenses, fitting/dispensing, instruments, and related regulations — separate from the NCLE contact-lens exam.",
     administeredBy: "ABO-NCLE",
     officialFormat:
-      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
+      "Official NOCE: typically 125 multiple-choice items in 2 hours (about 100 scored + pretest). Pass is criterion-referenced (Modified Angoff); ABO-NCLE does not publish a percent cut — verify the Basic Exam Handbook at abo-ncle.org. This UniPrep2Go session is a 60-question / 75-minute diagnostic (free 25-question version) drawn from a 220-question bank.",
     examFaqs: [
       {
         question: "What is the ABO Optician (NOCE) exam?",
@@ -614,7 +614,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official ABO NOCE?",
         answer:
-          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 210-question bank.",
+          "Typically 125 multiple-choice questions in 2 hours, with about 100 scored. UniPrep’s check is a shorter 60-question / 75-minute diagnostic (free 25-question version) drawn from a 220-question bank.",
       },
       {
         question: "Is this an official ABO Optician exam?",
@@ -712,7 +712,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       "The NSCA Certified Strength and Conditioning Specialist (CSCS) credential is for professionals who design training programs for athletes. It is not a personal-trainer CPT (NASM, ACE, ACSM, or NSCA-CPT). Candidates typically need a bachelor’s degree and current CPR/AED, then must pass both CSCS exam sections.",
     administeredBy: "National Strength and Conditioning Association (NSCA)",
     officialFormat:
-      "Official CSCS is two separately scored computer-based sections (verify the current handbook at nsca.com): Scientific Foundations — 80 scored + 15 pretest items in 1.5 hours (exercise science ~60%, sport psychology ~25%, nutrition ~15%); Practical/Applied — 110 scored + 15 pretest items in 2.5 hours (program design ~40%, exercise technique ~25%, program implementation ~20%, organization & administration ~15%), including 30–40 video/image items. Scaled pass is 70 or higher on each section. This UniPrep2Go session is 60 questions in 75 minutes from a 120-item bank — shorter than either official paper and without video items.",
+      "Official CSCS is two separately scored computer-based sections (NSCA Certification Handbook, effective 1 July 2026): Scientific Foundations — 80 scored + 15 non-scored items in 1.5 hours (exercise science 48, sport psychology 20, nutrition 12); Practical/Applied — 110 scored + 15 non-scored items in 2.5 hours (program design 44, exercise technique 28, program implementation 22, organization and administration 16), including 30–40 video/image items. Scaled pass is 70 or higher on each section, and that scale is not a percent correct. This UniPrep2Go session is 60 questions in 75 minutes from a 250-item bank — shorter than either official paper, drawn equally across four topics, and without video items.",
     examFaqs: [
       {
         question: "What is the NSCA CSCS exam?",
@@ -722,7 +722,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "How many questions are on the official CSCS exam?",
         answer:
-          "Two sections: Scientific Foundations has 95 items (80 scored + 15 pretest) in 1.5 hours; Practical/Applied has 125 items (110 scored + 15 pretest) in 2.5 hours. You must pass both (scaled score 70+ each). Verify at nsca.com before scheduling.",
+          "Two sections: Scientific Foundations has 95 items (80 scored + 15 non-scored) in 1.5 hours; Practical/Applied has 125 items (110 scored + 15 non-scored) in 2.5 hours. You must pass both with a scaled score of 70 or higher on each. A scaled 70 is not 70 percent correct. Verify at nsca.com before scheduling.",
       },
       {
         question: "Is CSCS the same as a personal trainer CPT exam?",
@@ -732,7 +732,7 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
       {
         question: "Is this an official NSCA CSCS exam?",
         answer:
-          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. It is 60 questions in 75 minutes from a 120-item bank, shorter than either official section, and it has no video items. The matching Anki deck is planned, not a live product.",
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from NSCA. It is 60 questions in 75 minutes from a 250-question bank, shorter than either official section, and it has no video items. The matching Anki deck is 250 cards from the same bank.",
       },
     ],
     keywords: ["cscs practice test", "nsca cscs practice test", "strength coach practice test", "nsca cscs practice exam"],
@@ -1041,20 +1041,20 @@ export const wave3ExamExplainers: Record<string, Wave3Explainer> = {
   "parapro-readiness-check": {
     practiceTestName: "ParaPro Practice Test",
     whatIsExam:
-      "The ETS ParaPro Assessment (1755) is a 90-question / 150-minute selected-response exam covering reading, writing, and math for instructional paraprofessionals. About two-thirds of items test basic skills and about one-third apply them in classroom contexts. Many districts use a 460 scaled cut — verify locally.",
+      "The ETS ParaPro Assessment (1755) is a 90-question / 150-minute selected-response exam covering reading, writing, and math for instructional paraprofessionals. About two-thirds of items test basic skills and about one-third apply them in classroom contexts. States and districts set the cut score — verify locally.",
     administeredBy: "ETS",
     officialFormat:
-      "Official: 90 selected-response / 150 minutes. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes with topic scoring — shorter diagnostic, not a full ETS form.",
+      "Official: 90 selected-response / 150 minutes. UniPrep2Go check: free 25-question diagnostic, full mock 60 questions / 75 minutes drawn from a 220-question bank — shorter diagnostic, not a full ETS form.",
     examFaqs: [
       {
         question: "What is the ParaPro exam?",
         answer:
-          "The ETS ParaPro Assessment (1755) measures reading, writing, and math for instructional paraprofessionals — 90 questions in 150 minutes. Confirm your local passing score (often 460).",
+          "The ETS ParaPro Assessment (1755) measures reading, writing, and math for instructional paraprofessionals — 90 questions in 150 minutes. The cut score is set by the state or district, not by ETS.",
       },
       {
         question: "Is this an official ParaPro exam?",
         answer:
-          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ETS. The linked Anki deck is planned, not a live Gumroad product yet.",
+          "No. This UniPrep2Go readiness check is independent practice — not official exam material from ETS. The linked Anki deck is 220 cards from the same bank.",
       },
     ],
     keywords: [

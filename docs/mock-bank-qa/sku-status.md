@@ -1,19 +1,19 @@
 # SKU status board
 
-Generated 2026-11-23 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
+Generated 2026-11-26 by `npm run sku:status` from the live mock configs, the git bank exports, `audit:bank-quality` and the dated rows in `bank-audit-ledger.md`. Do not edit by hand: add a ledger row for the work, then re-run.
 
 Status: **ok** = 0 FAIL gates, no padding, bank at floor, content review in the ledger · **thin-bank** = clean and reviewed but bank below the 2× floor · **unreviewed** = mechanically clean, never content-reviewed · **small-bank** = clean gates but the unique bank is too small for Mock Pass retakes (60-from-60, 75-from-75…) · **point-fix** = FAIL gates on ≤10% of items (or ≤6), fixable in place · **civic** = citizenship test built on the official question pool (separate standard; never rebuilt from mock fixes; gates shown for reference) · **rewrite** = FAIL on >10% of items, a bank-level FAIL (key bias, longest-correct rate) or length padding. Small banks also list “bank N for NQ session” under issues.
 
 | Status | SKUs | with live Anki |
 |---|---|---|
-| ok | 98 | 53 |
+| ok | 98 | 55 |
 | thin-bank | 0 | 0 |
 | unreviewed | 0 | 0 |
 | small-bank | 12 | 0 |
 | point-fix | 0 | 0 |
 | rewrite | 67 | 14 |
 | civic | 19 | 19 |
-| **total live mocks** | **196** | **86** |
+| **total live mocks** | **196** | **88** |
 
 Products without a mock and catalog totals: bottom of this file.
 
@@ -100,7 +100,7 @@ Products without a mock and catalog totals: bottom of this file.
 | small-bank | `precision-nutrition-l1-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
 | small-bank | `servsafe-food-handler-readiness-check` | planned | 60 / 60 | 2026-10-02 | bank 60 for 60Q session |
 | small-bank | `unarmed-security-officer-readiness-check` | planned | 60 / 60 | 2026-10-04 | bank 60 for 60Q session |
-| ok | `abo-optician-readiness-check` | live | 60 / 210 | 2026-11-22 | — |
+| ok | `abo-optician-readiness-check` | live | 60 / 220 | 2026-11-23 | — |
 | ok | `ace-cpt-readiness-check` | live | 60 / 300 | 2026-10-14 | — |
 | ok | `acsm-cpt-readiness-check` | live | 60 / 120 | 2026-10-18 | — |
 | ok | `al-real-estate-readiness-check` | live | 60 / 120 | 2026-10-20 | — |
@@ -116,6 +116,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cfa-level-2-readiness-check` | live | 60 / 250 | 2026-11-14 | — |
 | ok | `cfp-certification-readiness-check` | live | 120 / 240 | 2026-11-07 | — |
 | ok | `cfps-readiness-check` | live | 80 / 400 | 2026-10-14 | — |
+| ok | `cscs-nsca-readiness-check` | live | 60 / 250 | 2026-11-25 | — |
 | ok | `enrolled-agent-readiness-check` | live | 120 / 240 | 2026-11-07 | — |
 | ok | `epa-608-readiness-check` | live | 40 / 200 | 2026-10-13 | — |
 | ok | `fl-real-estate-readiness-check` | live | 60 / 120 | 2026-10-19 | — |
@@ -133,6 +134,7 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nebosh-readiness-check` | live | 50 / 250 | 2026-10-14 | — |
 | ok | `nha-cpct-readiness-check` | live | 120 / 240 | 2026-10-22 | — |
 | ok | `ny-real-estate-readiness-check` | live | 60 / 120 | 2026-11-07 | — |
+| ok | `parapro-readiness-check` | live | 60 / 220 | 2026-11-25 | — |
 | ok | `pmp-readiness-check` | live | 51 / 346 | 2026-11-14 | — |
 | ok | `property-casualty-insurance-readiness-check` | live | 60 / 250 | 2026-11-14 | — |
 | ok | `ptcb-pharmacy-technician-mock` | live | 90 / 270 | 2026-11-14 | — |
@@ -168,7 +170,6 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `cdl-hazmat-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `cdl-school-bus-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `crcst-readiness-check` | planned | 60 / 120 | 2026-11-14 | — |
-| ok | `cscs-nsca-readiness-check` | planned | 60 / 120 | 2026-10-29 | — |
 | ok | `danb-gc-readiness-check` | planned | 60 / 120 | 2026-11-20 | — |
 | ok | `danb-ice-readiness-check` | planned | 60 / 120 | 2026-11-21 | — |
 | ok | `electrical-journeyman-readiness-check` | planned | 60 / 120 | 2026-11-10 | — |
@@ -190,9 +191,8 @@ Products without a mock and catalog totals: bottom of this file.
 | ok | `nremt-emr-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `nremt-emt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
 | ok | `nsca-cpt-readiness-check` | planned | 60 / 120 | 2026-11-12 | — |
-| ok | `parapro-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `pest-control-applicator-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
-| ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 120 | 2026-10-15 | — |
+| ok | `pharmacy-technician-excpt-readiness-check` | planned | 60 / 128 | 2026-11-23 | — |
 | ok | `rbt-behavior-technician-readiness-check` | planned | 60 / 120 | 2026-10-27 | — |
 | ok | `shrm-cp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
 | ok | `shrm-scp-readiness-check` | planned | 60 / 120 | 2026-10-14 | — |
@@ -223,10 +223,10 @@ Products without a mock and catalog totals: bottom of this file.
 | Line | Count |
 |---|---|
 | Live mocks | 196 |
-| … with a live Anki / PDF pair | 86 |
-| … with a planned Anki pair | 110 |
+| … with a live Anki / PDF pair | 88 |
+| … with a planned Anki pair | 108 |
 | Products without a mock (Anki, PDF, app, bundle) | 40 (available 26, planned 14) |
-| Catalog decks total (`decks.ts`) | 235 (available 111) |
+| Catalog decks total (`decks.ts`) | 235 (available 113) |
 | Language decks moved to Prep2Go (Gumroad file, Lemon pending) | 28 |
 
 Gaivota comics, Prep2Go mock packs and Pro live in the CIPLE repo and are not on this board.
