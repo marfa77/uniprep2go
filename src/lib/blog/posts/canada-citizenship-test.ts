@@ -5,7 +5,7 @@ export const canadaCitizenshipTestPost: BlogPostDraft = {
   title: "Canada Citizenship Test: The 20-Question Exam That Costs $653",
   titleTag: "Canada Citizenship Test 2027: 20 Questions, $653 & How to Pass",
   metaDescription:
-    "20 questions. 15 correct to pass. 45 minutes. Canada’s citizenship test is short but expensive (CAD $653 from 31 Mar 2026). Topic split, fee breakdown, and why geography kills scores.",
+    "Canada citizenship test 2027 prep: 20 questions, 15 correct to pass, 45 minutes. Application fee CAD $653 (from 31 Mar 2026). Topic split, fee breakdown, and why geography kills scores.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Canada · Discover Canada / IRCC",

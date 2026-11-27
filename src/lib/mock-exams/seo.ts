@@ -567,7 +567,7 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "gmat focus practice test",
       "gmat mock exam",
       "free gmat practice questions",
-      "gmat 2026 practice test",
+      "gmat 2027 practice test",
     ],
     headline: "Free GMAT Readiness Check (2027 exam)",
     intro:

@@ -52,7 +52,7 @@ const securitiesMoneyDeckSlugs = [
 ] as const;
 
 export async function generateMetadata(): Promise<Metadata> {
-  const title = leafPageTitle("Finance Anki Decks 2026 | CFA, FRM, SIE, Series 7");
+  const title = leafPageTitle("Finance Anki Decks 2027 | CFA, FRM, SIE, Series 7");
 
   return withAiMetadata(
     finalize({
