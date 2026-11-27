@@ -5,7 +5,7 @@ export const usNaturalizationCivicsPost: BlogPostDraft = {
   title: "US Naturalization Civics Test 2027: 128 Questions, Up to 20 Asked",
   titleTag: "US Citizenship Civics Test 2027: 128 Questions, 12 to Pass",
   metaDescription:
-    "USCIS 2025 civics test for 2026 interviews: 128 published questions, up to 20 asked, 12 correct to pass (2008 test: 6 of 10 if you filed before Oct 20, 2025). Format, topic weights, 65/20 list, free timed check + Anki.",
+    "US citizenship civics test 2027 prep: USCIS 2025 test for new filings — 128 published questions, up to 20 asked, 12 correct to pass (2008 test: 6 of 10 if filed before Oct 20, 2025). Format, 65/20 rule, free timed check + Anki.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "USA · USCIS Naturalization Civics",

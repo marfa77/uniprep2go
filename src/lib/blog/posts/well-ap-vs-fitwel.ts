@@ -5,7 +5,7 @@ export const wellApVsFitwelPost: BlogPostDraft = {
   title: "WELL AP vs Fitwel: Which Wellness Certification Is Worth It in 2027?",
   titleTag: "WELL AP vs Fitwel 2027: Cost, Difficulty & Employer Demand",
   metaDescription:
-    "WELL AP vs Fitwel in 2026: exam format (115Q / 2.5h / scaled pass 170), credential difficulty, project cost, and which wellness cert employers actually ask for.",
+    "WELL AP vs Fitwel in 2027: exam format (115Q / 2.5h / scaled pass 170), credential difficulty, project cost, and which wellness cert employers actually ask for.",
   publishedAt: "2026-07-27",
   contentUpdated: "2026-11-24",
   eyebrow: "WELL · Building wellness",

@@ -5,7 +5,7 @@ export const ankiDeckShelfLifePost: BlogPostDraft = {
   title: "How Long Do Anki Decks Stay Current?",
   titleTag: "How Long Do Anki Decks Stay Current? Exam-by-Exam Shelf Life 2027",
   metaDescription:
-    "A 2023 LEED deck is worthless in 2026. A 2020 FINRA deck is still fine. Here is the exact shelf life for every major exam and how to spot a stale deck before you waste 200 hours on it.",
+    "Anki deck shelf life in 2027: when a LEED or outline change makes an old deck worthless versus when FINRA-style banks stay usable. Official change signals by exam and how to spot a stale deck early.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Study tools · Deck freshness",

@@ -5,7 +5,7 @@ export const swedenMedborgarskapsprovPost: BlogPostDraft = {
   title: "Sweden Medborgarskapsprov: How the New Citizenship Test Works",
   titleTag: "Sweden Citizenship Test 2027: Medborgarskapsprov Format & Prep",
   metaDescription:
-    "Sweden's citizenship test began with a trial sitting in August 2026; the next is planned for April–May 2027. Here is what the law says, what UHR has published, and how to study.",
+    "Sweden citizenship test 2027 prep: trial sitting held August 2026; next planned April–May 2027. What the law says, what UHR has published, and how to study before the medborgarskapsprov.",
   publishedAt: "2026-07-28",
   contentUpdated: "2026-11-24",
   eyebrow: "Sweden · Medborgarskapsprov",

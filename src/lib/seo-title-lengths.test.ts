@@ -32,7 +32,7 @@ describe("SERP title lengths", () => {
   it("keeps absolute leaf titles within SERP_TITLE_ABSOLUTE_MAX", () => {
     const leafTitles: Metadata["title"][] = [
       leafPageTitle("Exam Prep Guides | Citizenship, SIE, ServSafe"),
-      leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
+      leafPageTitle("Free Mock Exams 2027 | SIE, CFA, FRM, ServSafe & More"),
       leafPageTitle("Language Exam Anki Decks | CIPLE, DELE, DELF, NT2"),
       leafPageTitle("Anki Starter Kit | Use Prep2Go Deck in 15 Min"),
       leafPageTitle("Cursor Rules for Indie Hackers | .mdc Ship Kit"),

@@ -806,7 +806,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
     headline: "Best FRM Part 1 Anki — 444 Cards + Free Timed Mock",
     studyLabel: "FRM Part 1 exam prep",
     description:
-      "Best independent FRM Part 1 Anki for 2026: ownable 444-card .apkg (VaR, ES, Greeks, credit), $9.99. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than AnalystPrep/Bionic Turtle 12-month packages when you want spaced repetition plus one diagnostic. Not GARP material.",
+      "Best independent FRM Part 1 Anki: ownable 444-card .apkg (VaR, ES, Greeks, credit), $9.99. The free start is 25 questions. The full timed mock is 50 questions. Cheaper than AnalystPrep/Bionic Turtle 12-month packages when you want spaced repetition plus one diagnostic. Not GARP material.",
     keywords: [
       "best frm part 1 anki deck",
       "frm part 1 anki deck",
@@ -819,8 +819,8 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Monthly FRM Q-bank subscriptions help for volume practice. If you want an ownable Anki .apkg plus a free timed diagnostic before you pay for more mocks, start here — then drill only the weak Part 1 pillars.",
   },
   "sie-exam-anki-deck": {
-    title: "SIE Anki Deck 2026 | 300 Cards + 75Q Mock (25Q Free)",
-    headline: "SIE Exam Prep — 300 Flashcards + 75Q Mock (25Q Free)",
+    title: "SIE Anki Deck 2027 | 300 Cards + 75Q Mock (25Q Free)",
+    headline: "2027 SIE Exam Prep — 300 Flashcards + 75Q Mock (25Q Free)",
     studyLabel: "FINRA SIE exam prep",
     description:
       "SIE exam prep: 300 Anki flashcards + 75-question timed mock (free 25-question version; or 25Q diagnostic). Topic-weighted to FINRA blueprint. Ownable .apkg — independent study aid, not official FINRA material.",
@@ -852,7 +852,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Looking for Series 7 flashcards after the SIE? Start with the 60-question timed readiness check (free 25-question version), then drill only weak job functions in this 300-card deck before the 125-question sit — not a Series 63 state-law pack.",
   },
   "series-63-anki-deck": {
-    title: "Series 63 Flashcards 2026 — 250 NASAA Cards + Free Mock",
+    title: "Series 63 Flashcards 2027 — 250 NASAA Cards + Free Mock",
     headline: "Series 63 Flashcards — 250 NASAA Cards + Free Timed Mock",
     studyLabel: "Series 63 flashcards",
     description:
@@ -869,13 +869,13 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Searching Series 63 flashcards after SIE or Series 7? Take the free 25-question diagnostic first, then drill only the weak NASAA topics in this 250-card Anki before the 60-scored-question state sit — not a Series 7 Top-Off dump.",
   },
   "series-65-anki-deck": {
-    title: "Series 65 Prep 2026 | 240 Cards + 120Q Mock (25Q Free)",
+    title: "Series 65 Prep 2027 | 240 Cards + 120Q Mock (25Q Free)",
   },
   "series-66-anki-deck": {
-    title: "Series 66 Prep 2026 | 120 Cards + 60Q Mock (25Q Free)",
+    title: "Series 66 Prep 2027 | 120 Cards + 60Q Mock (25Q Free)",
   },
   "cfp-certification-anki-deck": {
-    title: "CFP Exam Prep 2026 | 240 Cards + 120Q Mock (25Q Free)",
+    title: "CFP Exam Prep 2027 | 240 Cards + 120Q Mock (25Q Free)",
   },
   "servsafe-manager-anki-deck": {
     title: "ServSafe Manager Prep | 300 Cards + Free Mock",
@@ -950,7 +950,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "National real estate Anki packs miss California disclosure timelines and DRE agency traps. Two hundred fifty state-specific cards plus a 60-question mock from a 120-item bank (free 25-question version) beat a Quizlet national dump before you buy a full Aceable-style course.",
   },
   "life-and-health-insurance-exam-anki-deck": {
-    title: "Life & Health Insurance Prep 2026 | 250 Cards + Mock",
+    title: "Life & Health Insurance Prep 2027 | 250 Cards + Mock",
     headline: "Life & Health Insurance Exam Prep — 250 Flashcards + Free Mock",
     studyLabel: "Life & Health insurance exam prep",
     description:
@@ -1017,21 +1017,21 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Parents and tutors preparing Year 7 / Grade 7 CAT4 Level D verbal and quantitative subtests — not a full four-battery GL Assessment pack.",
   },
   "gmat-focus-anki-deck": {
-    title: "GMAT Anki Deck 2026 | 200 Unique Cards + Free Mock",
-    headline: "GMAT Exam Prep — 200 Unique Flashcards (rewritten Oct 2026)",
+    title: "GMAT Anki Deck 2027 | 200 Unique Cards + Free Mock",
+    headline: "2027 GMAT Exam Prep — 200 Unique Flashcards (rewritten Oct 2026)",
     studyLabel: "GMAT exam prep",
     description:
       "Current GMAT Anki: 200 unique cards for Quant, Verbal, and Data Insights — rewritten October 2026 (no Sentence Correction, no Quant geometry, Data Sufficiency only in DI). Plus a 45-question timed mock (free 25-question version). Independent MBA prep — not GMAC material.",
     keywords: [
       "gmat anki deck",
       "gmat focus anki deck",
-      "gmat flashcards 2026",
+      "gmat flashcards 2027",
       "gmat practice test",
       "data insights gmat",
       "gmat diagnostic test",
     ],
     intro:
-      "MBA applicants drill the current GMAT (2026 SuperScore era) on Anki, then validate weak sections with the free timed readiness check. Bank rewritten October 2026 — not a 10th Edition or padded 400-card dump.",
+      "MBA applicants drill the current GMAT on Anki (SuperScore live since Aug 2026), then validate weak sections with the free timed readiness check. Bank rewritten October 2026 — not a 10th Edition or padded 400-card dump.",
     audience:
       "MBA and business master's applicants using spaced repetition alongside official GMAC materials.",
   },
@@ -1271,7 +1271,7 @@ const deckSeoProfiles: Partial<Record<string, Partial<DeckSeoProfile>>> = {
       "Scribes and scribe candidates who want a free timed documentation-and-HIPAA diagnostic before an employer check or AHDPG MSCE — then a 120-card .apkg for weak topics. Not a CCMA/CMA clinical-skills pathway.",
   },
   "ardms-spi-anki-deck": {
-    title: "ARDMS SPI Anki 2026 | 120 Cards + 60Q Mock (25Q Free)",
+    title: "ARDMS SPI Anki 2027 | 120 Cards + 60Q Mock (25Q Free)",
     headline: "ARDMS SPI Exam Prep — 120 Flashcards + Free Mock",
     studyLabel: "ARDMS SPI ultrasound physics exam prep",
     description:

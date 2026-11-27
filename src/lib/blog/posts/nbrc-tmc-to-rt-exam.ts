@@ -7,7 +7,7 @@ export const nbrcTmcToRtExamPost: BlogPostDraft = {
   title: "NBRC TMC to RT Exam in 2027: What Changes and When",
   titleTag: "NBRC TMC to RT Exam 2027: Dates, CSE and Attempts",
   metaDescription:
-    "The NBRC TMC ends 31 Dec 2026; the RT Examination starts 4 Jan 2027. Last dates, the CSE window, attempts, fees and 2027 eligibility, from NBRC.",
+    "NBRC TMC to RT exam 2027 transition: TMC ends 31 Dec 2026; RT Examination starts 4 Jan 2027. Last application dates, CSE window, attempts, fees and eligibility, from NBRC.",
   publishedAt: "2026-11-23",
   eyebrow: "NBRC · Respiratory therapy credentials",
   clusterId: "nbrc",

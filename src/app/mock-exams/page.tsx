@@ -68,7 +68,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return withAiMetadata(
     finalize({
-      title: leafPageTitle("Free Mock Exams 2026 | SIE, CFA, FRM, ServSafe & More"),
+      title: leafPageTitle("Free Mock Exams 2027 | SIE, CFA, FRM, ServSafe & More"),
       description:
         "Timed mock exams for SIE, CFA, FRM, ServSafe, PTCB, insurance, and real estate — free 25-question diagnostic, then $19 for unlimited full-length attempts. Topic scoring, answer review, no signup.",
       keywords: [
