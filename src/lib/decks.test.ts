@@ -590,7 +590,7 @@ describe("deck catalog", () => {
       "pmp-anki-deck": "PMP Anki Deck — 346 Flashcards",
       "gre-anki-deck": "GRE Anki Deck — 350 Flashcards",
       "leed-ap-om-anki-deck": "LEED AP O+M Anki Deck — 120 Flashcards",
-      "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 220 Flashcards",
+      "belgium-flanders-mo-anki-deck": "Belgium Flanders MO Anki Deck — 300 Flashcards",
       "hvac-epa-608-anki-deck": "EPA 608 Anki Deck — 200 Flashcards",
 
       "ib-biology-sl-anki-deck": "IB Biology SL Anki Deck — 149 Smart Flashcards",

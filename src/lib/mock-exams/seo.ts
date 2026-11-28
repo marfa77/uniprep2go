@@ -1710,11 +1710,11 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
   "belgium-flanders-mo-readiness-check": {
     title: "Flanders MO Practice Test: 60Q, 25Q Free",
     description:
-      "Flanders MO Dutch diagnostic: free 25-question start, full mock 60 timed questions from a 220-question bank, topic scores. Official AgII standaardtest is 41 MCQ / 120 min after the MO course — this page is independent. Live 220-card Anki ($19) on Gumroad.",
+      "Flanders MO Dutch diagnostic: free 25-question start, full mock 60 timed questions from a 300-question bank, topic scores. Official AgII standaardtest is 41 MCQ / 120 min after the MO course — this page is independent. Live 300-card Anki ($19) on Gumroad.",
     keywords: ["maatschappelijke oriëntatie", "Flanders MO", "inburgering Vlaanderen"],
     headline: "Belgium Flanders MO Readiness Check (60 Questions; Free 25-Question Version)",
     intro:
-      "Timed Dutch-language Flanders maatschappelijke oriëntatie diagnostic drawn from 220 unique items across institutions, history/EU, rights, and daily life. Honesty: no nationwide Belgian citizenship MCQ like BAMF/LITUK — official AgII standaardtest is 41 digital MCQ / 120 minutes after the ~60-hour course (test 60% + process 40%). Use this page for MO themes; confirm AgII/commune rules for your file.",
+      "Timed Dutch-language Flanders maatschappelijke oriëntatie diagnostic drawn from 300 unique items across institutions, history/EU, rights, and daily life. Honesty: no nationwide Belgian citizenship MCQ like BAMF/LITUK — official AgII standaardtest is 41 digital MCQ / 120 minutes after the ~60-hour course (test 60% + process 40%). Use this page for MO themes; confirm AgII/commune rules for your file.",
     audience:
       "Applicants preparing Flanders social orientation / integration civics themes.",
     practiceTestLabel: "Flanders MO practice test",
@@ -1722,9 +1722,9 @@ const mockSeoProfiles: Partial<Record<string, MockSeoProfileOverride>> = {
       "nl-BE": {
         title: "MO-oefentest Vlaanderen: 60 vragen, 25 gratis",
         description:
-          "MO-oefentest Vlaanderen: gratis 25 vragen, volledige mock 60 getimede vragen uit 220. Officiële AgII-standaardtest = 41 MCQ / 120 min na de cursus — deze pagina is onafhankelijk. Live 220-card Anki ($19) op Gumroad.",
+          "MO-oefentest Vlaanderen: gratis 25 vragen, volledige mock 60 getimede vragen uit 300. Officiële AgII-standaardtest = 41 MCQ / 120 min na de cursus — deze pagina is onafhankelijk. Live 300-card Anki ($19) op Gumroad.",
         intro:
-          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen (220 unieke vragen). Officieel traject = ~60u MO-cursus + standaardtest van 41 vragen / 120 minuten (60% test / 40% proces) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
+          "Nederstalige oefentest voor maatschappelijke oriëntatie in Vlaanderen (300 unieke vragen). Officieel traject = ~60u MO-cursus + standaardtest van 41 vragen / 120 minuten (60% test / 40% proces) via Agentschap Integratie & Inburgering — deze pagina is extra oefening, geen AgII-materiaal.",
       },
     },
   },

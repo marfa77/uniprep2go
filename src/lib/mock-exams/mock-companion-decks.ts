@@ -25,9 +25,9 @@ const MOCK_COMPANION_DECKS: Partial<Record<string, MockCompanionDeckLink[]>> = {
       deckSlug: "belgium-flanders-mo-anki-deck",
       role: "civics",
       eyebrow: "MO civics · spaced repetition",
-      title: "Belgium Flanders MO Anki — 220 civics cards",
+      title: "Belgium Flanders MO Anki — 300 civics cards",
       body:
-        "220 Dutch civics cards on the same MO themes (institutions, history/EU, rights, daily life), written as recall cards rather than copies of the mock. Ownable .apkg for daily drill after your topic report.",
+        "300 Dutch civics cards on the same MO themes (institutions, history/EU, rights, daily life), written as recall cards rather than copies of the mock. Ownable .apkg for daily drill after your topic report.",
       ctaLabel: "Open MO Anki deck — $19",
     },
   ],

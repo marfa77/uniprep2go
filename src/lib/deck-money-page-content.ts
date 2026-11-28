@@ -45,7 +45,7 @@ export const pitchOverrides: Partial<Record<string, string>> = {
   "ptcb-pharmacy-technician-anki-deck":
     "300 PTCE cards weighted to the 2026 outline — drugs, law, safety, sigs, and math — drill after the [PTCB practice test](/mock-exams/ptcb-pharmacy-technician-mock) scores your weak domains.",
   "belgium-flanders-mo-anki-deck":
-    "220 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $19 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 220-question bank. Not NT2 language vocab.",
+    "300 Dutch MO civics cards with a teaching line on every card — institutions, rights, daily life, and AgII pathway honesty (official standaardtest is 41 MCQ / 120 min after the course). $19 one-time .apkg, plus a 60-question Dutch diagnostic (free 25-question version) from a 300-question bank. Not NT2 language vocab.",
   "luxembourg-vivre-ensemble-anki-deck":
     "239 French + 239 English Vivre ensemble cards in subdecks for the 3 official exam modules, each with a key-point explanation — facts checked against the 2023 Constitution. $16 one-time for both languages, plus a 40-question, 60-minute exam simulation (free 25-question version). Not Sproochentest.",
   "aspt-phlebotomy-anki-deck":
@@ -371,7 +371,7 @@ export const positioningOverrides: Partial<
   },
   "belgium-flanders-mo-anki-deck": {
     ourEdge: [
-      "220 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
+      "300 Dutch MO civics cards with a teaching line on every card — not one-word trivia",
       "Covers institutions, rights/values, daily services, and AgII pathway honesty vs the official 41Q / 120 min standaardtest",
       "Pairs with a free 60-question Dutch diagnostic (free 25-question version) scored by topic",
       "$19 one-time ownable .apkg — separate from NT2 language vocabulary",
@@ -982,11 +982,11 @@ NHA registration, the official practice test, or a skills lab. Ownable .apkg onl
 
   "belgium-flanders-mo-anki-deck": `### What is inside
 
-One ownable Dutch .apkg with 220 maatschappelijke oriëntatie civics cards: Belgian and Flemish institutions, rights and values, nationality themes, work/housing/school/health, culture, and daily participation. Every card shows a short answer plus a teaching line — the trap, the AgII distinction, or why the fact matters on the MO path.
+One ownable Dutch .apkg with 300 maatschappelijke oriëntatie civics cards: Belgian and Flemish institutions, rights and values, nationality themes, work/housing/school/health, culture, and daily participation. Every card shows a short answer plus a teaching line — the trap, the AgII distinction, or why the fact matters on the MO path.
 
 ### Why this beats the alternatives
 
-Coverage: 220 unique Dutch prompts with explanations, not a one-word capital/language trivia list. Honesty: the official AgII standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen) after a ~60-hour course; the combined MO result is test 60% + process 40%. This deck is spaced-repetition theme drill — not that form and not AgII items.
+Coverage: 300 unique Dutch prompts with explanations, not a one-word capital/language trivia list. Honesty: the official AgII standaardtest MO is 41 digital MCQ in max 120 minutes (11 sokkelvragen) after a ~60-hour course; the combined MO result is test 60% + process 40%. This deck is spaced-repetition theme drill — not that form and not AgII items.
 
 Price and ownership: $19 once, offline in Anki. NT2 Dutch lexicon for the language pillar is a separate Prep2Go deck — do not confuse language vocab with MO civics.
 
@@ -1251,7 +1251,7 @@ PixID Studio Gumroad fulfillment with UniPrep2Go multi-exam French framing: one 
 
 **Inburgering** is the civic integration language track for many Dutch residency cases. Official Inburgering is **five modules** (KNM civics, ONA, plus speaking, writing, and listening/reading) — this deck is the **language lexicon**, not a single MCQ substitute for the whole path. **Staatsexamen NT2** (A2-range overlap) shares a large high-frequency Dutch core. The same lexicon supports everyday communication toward **naturalisatie** language expectations. Exam names and cut scores differ by municipality and year — confirm your required module officially.
 
-This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and the separate 220-card Flanders MO Anki deck.
+This is **Netherlands language** prep — not Belgium Flanders **maatschappelijke oriëntatie** civics. For Flanders MO, use the free readiness check and the separate 300-card Flanders MO Anki deck.
 
 Cards emphasize practical Dutch for work, housing, government services, and daily interaction — the vocabulary integration exams and real life both reward.
 
